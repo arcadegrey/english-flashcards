@@ -98,6 +98,9 @@ function Card({ word, onNext, onPrev, onMarkLearned, onMarkMastered, isLearned, 
               <p className="text-3xl font-bold leading-relaxed">{word.meaning}</p>
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mt-4 border border-white/10">
                 <p className="text-white/95 text-lg italic leading-relaxed">"{word.example}"</p>
+                {word.exampleCn && (
+                  <p className="text-white/80 text-base mt-3 leading-relaxed">{word.exampleCn}</p>
+                )}
                 <button
                   onClick={speakExample}
                   className="mt-6 px-8 py-4 min-h-[50px] bg-white/25 hover:bg-white/35 rounded-full font-black text-2xl transition-all flex items-center gap-3 mx-auto"
