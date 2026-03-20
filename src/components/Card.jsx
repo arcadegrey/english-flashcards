@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function Card({ word, onNext, onPrev, onMarkLearned, onMarkMastered, isLearned, isMastered }) {
+function Card({ word, total, onNext, onPrev, onMarkLearned, onMarkMastered, isLearned, isMastered }) {
   const [isFlipped, setIsFlipped] = useState(false)
 
   if (!word) return <div className="text-white text-center">加载中...</div>
@@ -39,7 +39,7 @@ function Card({ word, onNext, onPrev, onMarkLearned, onMarkMastered, isLearned, 
       {/* 卡片进度 - 顶部独立行 */}
       <div className="flex justify-between items-center bg-white/5 rounded-xl px-6 py-4">
         <span className="text-white/70">
-          单词 <span className="text-white font-bold text-lg">{word.id}</span> / 200
+          单词 <span className="text-white font-bold text-lg">{word.id}</span> / {total}
         </span>
         <span className={`px-4 py-2 rounded-full text-sm font-medium ${
           isMastered 

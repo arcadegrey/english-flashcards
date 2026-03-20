@@ -1,4 +1,4 @@
-function Progress({ total, learned, mastered, onReset }) {
+function Progress({ total, learned, mastered, categoryName, onReset }) {
   const learnedPercent = Math.round((learned / total) * 100)
   const masteredPercent = Math.round((mastered / total) * 100)
 
@@ -6,7 +6,7 @@ function Progress({ total, learned, mastered, onReset }) {
     <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-200">
       <h3 className="text-gray-800 font-bold text-2xl mb-6 flex items-center gap-3">
         <span>📊</span>
-        <span>学习进度</span>
+        <span>学习进度 {categoryName && <span className="text-purple-500">· {categoryName}</span>}</span>
       </h3>
       
       {/* 进度条 */}
