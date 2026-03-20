@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { speak } from '../utils/speech'
 
 function Quiz({ vocabulary, masteredWords, onAddMastered }) {
   const [currentQuestion, setCurrentQuestion] = useState(null)
@@ -110,9 +111,7 @@ function Quiz({ vocabulary, masteredWords, onAddMastered }) {
         <button
           onClick={(e) => {
             e.stopPropagation()
-            const utterance = new SpeechSynthesisUtterance(currentQuestion.word)
-            utterance.lang = 'en-US'
-            speechSynthesis.speak(utterance)
+            speak(currentQuestion.word, { rate: 0.8 })
           }}
           className="mt-8 mx-auto block px-11 py-5 min-h-[56px] bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-full hover:from-purple-600 hover:to-indigo-600 transition-all shadow-xl hover:shadow-2xl font-black text-3xl flex items-center gap-4"
         >

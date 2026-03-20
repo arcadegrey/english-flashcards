@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { speak } from '../utils/speech'
 
 function Card({ word, total, onNext, onPrev, onMarkLearned, onMarkMastered, isLearned, isMastered }) {
   const [isFlipped, setIsFlipped] = useState(false)
@@ -10,10 +11,7 @@ function Card({ word, total, onNext, onPrev, onMarkLearned, onMarkMastered, isLe
     if (navigator.vibrate) {
       navigator.vibrate(10)
     }
-    const utterance = new SpeechSynthesisUtterance(word.word)
-    utterance.lang = 'en-US'
-    utterance.rate = 0.8
-    speechSynthesis.speak(utterance)
+    speak(word.word, { rate: 0.8 })
   }
 
   const speakExample = (e) => {
@@ -21,10 +19,7 @@ function Card({ word, total, onNext, onPrev, onMarkLearned, onMarkMastered, isLe
     if (navigator.vibrate) {
       navigator.vibrate(10)
     }
-    const utterance = new SpeechSynthesisUtterance(word.example)
-    utterance.lang = 'en-US'
-    utterance.rate = 0.9
-    speechSynthesis.speak(utterance)
+    speak(word.example, { rate: 0.9 })
   }
 
   const handleFlip = () => {
