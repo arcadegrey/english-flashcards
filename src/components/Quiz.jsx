@@ -20,28 +20,7 @@ function Quiz({ vocabulary, optionVocabulary = [], sourceLabel = '题库测验',
     () => vocabulary.reduce((count, word) => count + (masteredWordSet.has(word.id) ? 1 : 0), 0),
     [vocabulary, masteredWordSet]
   );
-  const masteredPercent = vocabulary.length > 0 ? (masteredCount / vocabulary.length) * 100 : 0;
-
-  const metrics = useMemo(
-    () => [
-      {
-        label: '得分',
-        value: score,
-        helper: `${questionCount} 题`,
-      },
-      {
-        label: '连击',
-        value: streak,
-        helper: streak >= 5 ? '状态很好' : '继续保持',
-      },
-      {
-        label: '正确率',
-        value: `${accuracy}%`,
-        helper: questionCount === 0 ? '开始答题' : accuracy >= 80 ? '表现优秀' : '继续练习',
-      },
-    ],
-    [score, questionCount, streak, accuracy]
-  );
+  const masteredPercent = vocabulary.length > 0 ? Math.round((masteredCount / vocabulary.length) * 100) : 0;
 
   const generateQuestion = useCallback(() => {
     if (vocabulary.length === 0) {
@@ -117,104 +96,94 @@ function Quiz({ vocabulary, optionVocabulary = [], sourceLabel = '题库测验',
 
     nextQuestionTimer.current = setTimeout(() => {
       generateQuestion();
-    }, 1100);
+    }, 1600);
   };
 
   if (!currentQuestion) {
     return (
-      <div className="rounded-2xl bg-white/80 px-6 py-10 text-center text-slate-500 shadow-[0_12px_35px_rgba(15,23,42,0.08)]">
-        词库加载中...
+      <div className="text-gray-500 text-center py-12">
+        <p className="text-xl">词库加载中...</p>
       </div>
     );
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       <CorrectAnswerCelebration trigger={celebrationTrigger} />
 
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
-        {metrics.map((metric) => (
-          <div
-            key={metric.label}
-            className="rounded-2xl border border-slate-200/80 bg-white/85 px-4 py-4 shadow-[0_8px_25px_rgba(15,23,42,0.06)] backdrop-blur-sm"
-          >
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">{metric.label}</p>
-            <p className="mt-2 text-3xl font-semibold tracking-tight text-slate-900">{metric.value}</p>
-            <p className="mt-1 text-sm text-slate-500">{metric.helper}</p>
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+        <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-5 border-2 border-blue-300 shadow-lg">
+          <div className="flex items-center gap-3 mb-2">
+            <span className="text-3xl">📊</span>
+            <span className="text-gray-700 font-bold text-lg">得分</span>
           </div>
-        ))}
+          <p className="text-4xl font-black text-blue-600">{score}</p>
+          <p className="text-gray-600 font-bold text-xs mt-1">/ {questionCount} 题</p>
+        </div>
+
+        <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-5 border-2 border-orange-300 shadow-lg">
+          <div className="flex items-center gap-3 mb-2">
+            <span className="text-3xl">🔥</span>
+            <span className="text-gray-700 font-bold text-lg">连击</span>
+          </div>
+          <p className={`text-4xl font-black ${streak >= 5 ? 'text-yellow-600' : 'text-orange-600'}`}>
+            {streak} 连对
+          </p>
+          <p className="text-gray-600 font-bold text-xs mt-1">
+            {streak >= 10 ? '🔥🔥🔥 太厉害了！' : streak >= 5 ? '🔥 继续加油！' : '再接再厉！'}
+          </p>
+        </div>
+
+        <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-5 border-2 border-green-300 shadow-lg">
+          <div className="flex items-center gap-3 mb-2">
+            <span className="text-3xl">🎯</span>
+            <span className="text-gray-700 font-bold text-lg">正确率</span>
+          </div>
+          <p className="text-4xl font-black text-green-600">{accuracy}%</p>
+          <p className="text-gray-600 font-bold text-xs mt-1">
+            {questionCount > 0 ? (accuracy >= 80 ? '太棒了！' : '继续练习！') : '开始答题吧！'}
+          </p>
+        </div>
       </div>
 
-      <div className="rounded-[28px] border border-slate-200/80 bg-white px-6 py-8 shadow-[0_16px_45px_rgba(15,23,42,0.08)] md:px-8">
-        <div className="mb-7 flex items-center justify-between gap-3">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
-              选择题
-            </span>
-            <span className="inline-flex items-center rounded-full bg-cyan-50 px-3 py-1 text-xs font-semibold tracking-[0.06em] text-cyan-700">
-              {sourceLabel}
-            </span>
-          </div>
+      <div className="bg-white rounded-3xl shadow-2xl p-10 border border-gray-200">
+        <p className="text-gray-500 text-center mb-5 text-3xl font-bold">请选择正确的释义</p>
+
+        <div className="flex justify-center mb-4">
+          <span className="inline-flex px-5 py-2 rounded-full bg-purple-50 text-purple-700 border border-purple-200 font-bold text-sm tracking-wide">
+            {sourceLabel}
+          </span>
+        </div>
+
+        <h2 className="text-6xl md:text-7xl font-bold text-gray-800 text-center mb-6 tracking-tight">
+          {currentQuestion.word}
+        </h2>
+        <p className="text-2xl text-gray-500 text-center font-mono bg-gray-100 inline-block mx-auto px-8 py-3 rounded-full">
+          {currentQuestion.phonetic || 'N/A'}
+        </p>
+
+        <div className="flex justify-center mt-8">
           <button
             onClick={() => speak(currentQuestion.word, { rate: 0.8 })}
-            className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-700 active:scale-[0.98]"
+            className="inline-flex items-center gap-3 px-12 py-6 bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-full hover:from-purple-600 hover:to-indigo-600 transition-all shadow-xl hover:shadow-2xl font-bold text-2xl"
           >
-            <span>🔊</span>
+            <span className="text-3xl">🔊</span>
             <span>听发音</span>
           </button>
         </div>
-
-        <p className="text-center text-sm tracking-[0.08em] text-slate-500 md:text-base">请选择正确的中文释义</p>
-        <h2 className="mt-4 text-center text-5xl font-semibold tracking-tight text-slate-900 sm:text-6xl">
-          {currentQuestion.word}
-        </h2>
-        <p className="mx-auto mt-4 w-fit rounded-full border border-cyan-100 bg-cyan-50 px-4 py-1.5 font-mono text-lg text-cyan-700">
-          {currentQuestion.phonetic || 'N/A'}
-        </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
         {options.map((option, index) => {
-          const isSelected = selectedAnswer?.id === option.id;
-          const isCurrentCorrect = option.id === currentQuestion.id;
-          const optionPalette = [
-            {
-              option:
-                'border-cyan-200 bg-gradient-to-br from-cyan-50 via-white to-sky-100/80 text-cyan-900 hover:border-cyan-300 hover:from-cyan-100 hover:to-sky-100',
-              badge: 'bg-gradient-to-br from-cyan-500 to-sky-500 text-white',
-            },
-            {
-              option:
-                'border-violet-200 bg-gradient-to-br from-violet-50 via-white to-indigo-100/80 text-violet-900 hover:border-violet-300 hover:from-violet-100 hover:to-indigo-100',
-              badge: 'bg-gradient-to-br from-violet-500 to-indigo-500 text-white',
-            },
-            {
-              option:
-                'border-emerald-200 bg-gradient-to-br from-emerald-50 via-white to-teal-100/80 text-emerald-900 hover:border-emerald-300 hover:from-emerald-100 hover:to-teal-100',
-              badge: 'bg-gradient-to-br from-emerald-500 to-teal-500 text-white',
-            },
-            {
-              option:
-                'border-amber-200 bg-gradient-to-br from-amber-50 via-white to-orange-100/80 text-amber-900 hover:border-amber-300 hover:from-amber-100 hover:to-orange-100',
-              badge: 'bg-gradient-to-br from-amber-500 to-orange-500 text-white',
-            },
-          ][index % 4];
-
-          let optionClass = `${optionPalette.option} hover:-translate-y-0.5`;
-          let badgeClass = `${optionPalette.badge} group-hover:brightness-105`;
+          let buttonClass = 'bg-white hover:bg-gray-50 text-gray-800 border-2 border-gray-200 hover:border-purple-300';
 
           if (selectedAnswer) {
-            if (isCurrentCorrect) {
-              optionClass =
-                'border-emerald-300 bg-gradient-to-br from-emerald-100 to-green-50 text-emerald-900 shadow-[0_12px_30px_rgba(16,185,129,0.2)]';
-              badgeClass = 'bg-emerald-500 text-white';
-            } else if (isSelected) {
-              optionClass =
-                'border-rose-300 bg-gradient-to-br from-rose-100 to-red-50 text-rose-900 shadow-[0_12px_30px_rgba(244,63,94,0.18)]';
-              badgeClass = 'bg-rose-500 text-white';
+            if (option.id === currentQuestion.id) {
+              buttonClass = 'bg-green-500 text-white border-green-400 shadow-xl';
+            } else if (option.id === selectedAnswer.id) {
+              buttonClass = 'bg-red-500 text-white border-red-400 shadow-xl';
             } else {
-              optionClass = 'border-slate-200 bg-slate-50 text-slate-400';
-              badgeClass = 'bg-slate-300 text-slate-100';
+              buttonClass = 'bg-gray-100 text-gray-400';
             }
           }
 
@@ -223,17 +192,19 @@ function Quiz({ vocabulary, optionVocabulary = [], sourceLabel = '题库测验',
               key={option.id}
               onClick={() => handleAnswer(option)}
               disabled={selectedAnswer !== null}
-              className={`group w-full rounded-2xl border px-4 py-4 text-left transition-all duration-200 ${optionClass} ${
-                selectedAnswer ? 'cursor-default' : 'shadow-[0_12px_30px_rgba(15,23,42,0.08)]'
+              className={`px-8 py-10 rounded-2xl font-bold text-2xl transition-colors duration-200 text-center shadow-xl ${buttonClass} ${
+                !selectedAnswer ? 'hover:-translate-y-1 active:translate-y-0' : ''
               }`}
             >
-              <div className="flex items-start gap-4">
+              <div className="flex flex-col items-center gap-4">
                 <span
-                  className={`inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-sm font-semibold transition ${badgeClass}`}
+                  className={`inline-flex w-20 h-20 rounded-full font-black text-4xl items-center justify-center ${
+                    selectedAnswer ? 'bg-white/20' : 'bg-gradient-to-br from-purple-500 to-indigo-500 text-white shadow-lg'
+                  }`}
                 >
                   {String.fromCharCode(65 + index)}
                 </span>
-                <span className="pt-1 text-lg leading-relaxed">{option.meaning}</span>
+                <p className="text-3xl leading-snug">{option.meaning}</p>
               </div>
             </button>
           );
@@ -241,28 +212,29 @@ function Quiz({ vocabulary, optionVocabulary = [], sourceLabel = '题库测验',
       </div>
 
       {selectedAnswer && (
-        <div
-          className={`rounded-2xl border px-5 py-4 text-center shadow-[0_10px_28px_rgba(15,23,42,0.06)] ${
-            isCorrect ? 'border-emerald-200 bg-emerald-50' : 'border-rose-200 bg-rose-50'
-          }`}
-        >
-          <p className={`text-lg font-semibold ${isCorrect ? 'text-emerald-700' : 'text-rose-700'}`}>
-            {isCorrect ? '回答正确，继续保持。' : '答案不对，下一题继续。'}
+        <div className={`text-center p-6 rounded-2xl border ${isCorrect ? 'bg-green-100 border-green-300' : 'bg-red-100 border-red-300'}`}>
+          <p className={`text-3xl font-bold mb-2 ${isCorrect ? 'text-green-600' : 'text-red-600'}`}>
+            {isCorrect ? '🎉 回答正确！' : '❌ 回答错误'}
           </p>
-          {!isCorrect && <p className="mt-1 text-sm text-slate-600">正确答案：{currentQuestion.meaning}</p>}
+          {!isCorrect && (
+            <p className="text-gray-600 text-lg">
+              <span className="opacity-70">正确答案：</span>
+              <span className="font-bold"> {currentQuestion.meaning}</span>
+            </p>
+          )}
         </div>
       )}
 
-      <div className="rounded-2xl bg-slate-900 px-5 py-5 text-white shadow-[0_16px_36px_rgba(15,23,42,0.26)]">
-        <div className="mb-3 flex items-center justify-between">
-          <p className="text-sm text-white/75">掌握进度</p>
-          <p className="text-sm font-semibold">
+      <div className="bg-white rounded-3xl p-6 border border-gray-200 shadow-xl">
+        <div className="flex items-center justify-between mb-3">
+          <span className="text-gray-600 font-bold">📚 学习池掌握进度</span>
+          <span className="text-gray-700 font-black text-lg">
             {masteredCount} / {vocabulary.length}
-          </p>
+          </span>
         </div>
-        <div className="h-2.5 overflow-hidden rounded-full bg-white/15">
+        <div className="h-4 bg-gray-200 rounded-full overflow-hidden">
           <div
-            className="h-full rounded-full bg-gradient-to-r from-cyan-300 to-emerald-300 transition-all duration-500"
+            className="h-full bg-gradient-to-r from-green-400 to-emerald-400 transition-all duration-500"
             style={{ width: `${masteredPercent}%` }}
           />
         </div>

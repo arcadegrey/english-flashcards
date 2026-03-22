@@ -1,54 +1,65 @@
-import { useState } from 'react'
-import { speak } from '../utils/speech'
+import { useState } from 'react';
+import { speak } from '../utils/speech';
+import { useTheme } from '../context/ThemeContext';
 
 function Card({ word, total, currentIndex, onNext, onPrev, onMarkLearned, onMarkMastered, isLearned, isMastered }) {
-  const [isFlipped, setIsFlipped] = useState(false)
+  const [isFlipped, setIsFlipped] = useState(false);
+  const { isDark } = useTheme();
 
-  if (!word) return <div className="text-white text-center">加载中...</div>
+  if (!word) return <div className="text-gray-500 text-center">加载中...</div>;
 
   const speakWord = (e) => {
-    e.stopPropagation()
+    e.stopPropagation();
     if (navigator.vibrate) {
-      navigator.vibrate(10)
+      navigator.vibrate(10);
     }
-    speak(word.word, { rate: 0.8 })
-  }
+    speak(word.word, { rate: 0.8 });
+  };
 
   const speakExample = (e) => {
-    e.stopPropagation()
+    e.stopPropagation();
     if (navigator.vibrate) {
-      navigator.vibrate(10)
+      navigator.vibrate(10);
     }
-    speak(word.example, { rate: 0.9 })
-  }
+    speak(word.example, { rate: 0.9 });
+  };
 
   const handleFlip = () => {
     if (navigator.vibrate) {
-      navigator.vibrate(5)
+      navigator.vibrate(5);
     }
-    setIsFlipped(!isFlipped)
-  }
+    setIsFlipped(!isFlipped);
+  };
 
   return (
     <div className="space-y-8">
       <div className="flex flex-col items-center">
         <div className="flex items-center gap-3 mb-3">
-          <span className="text-white/80 text-lg">学习进度</span>
-          <span className="text-white font-bold text-xl">{currentIndex + 1} / {total}</span>
+          <span className={`text-lg ${isDark ? 'text-white/80' : 'text-gray-600'}`}>学习进度</span>
+          <span className={`font-bold text-xl ${isDark ? 'text-white' : 'text-gray-800'}`}>
+            {currentIndex + 1} / {total}
+          </span>
         </div>
-        <div className="w-full max-w-md h-3 bg-white/20 rounded-full overflow-hidden">
+        <div className={`w-full max-w-md h-3 rounded-full overflow-hidden ${isDark ? 'bg-white/20' : 'bg-gray-200'}`}>
           <div
             className="h-full bg-gradient-to-r from-purple-400 to-pink-400 transition-all duration-500 rounded-full"
             style={{ width: `${((currentIndex + 1) / total) * 100}%` }}
           />
         </div>
         <div className="flex items-center gap-4 mt-3">
-          <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-            isMastered 
-              ? 'bg-green-500/30 text-green-300' 
-              : isLearned 
-                ? 'bg-blue-500/30 text-blue-300' 
-                : 'bg-purple-500/30 text-purple-300'
+          <span
+            className={`px-3 py-1 rounded-full text-sm font-medium ${
+              isMastered
+                ? isDark
+                  ? 'bg-green-500/30 text-green-300'
+                  : 'bg-green-100 text-green-700'
+                : isLearned
+                  ? isDark
+                    ? 'bg-blue-500/30 text-blue-300'
+                    : 'bg-blue-100 text-blue-700'
+                  : isDark
+                    ? 'bg-purple-500/30 text-purple-300'
+                    : 'bg-purple-100 text-purple-700'
           }`}>
             {isMastered ? '✅ 已掌握' : isLearned ? '📖 已学习' : '🆕 新单词'}
           </span>
@@ -65,7 +76,7 @@ function Card({ word, total, currentIndex, onNext, onPrev, onMarkLearned, onMark
           }`}
           style={{
             transformStyle: 'preserve-3d',
-            transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)'
+            transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
           }}
         >
           <div
@@ -79,7 +90,7 @@ function Card({ word, total, currentIndex, onNext, onPrev, onMarkLearned, onMark
               onClick={speakWord}
               className="mt-8 px-10 py-5 min-h-[60px] bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-full hover:from-purple-600 hover:to-indigo-600 transition-all shadow-xl hover:shadow-2xl font-bold text-2xl flex items-center gap-3"
             >
-              <span class="text-3xl">🔊</span>
+              <span className="text-3xl">🔊</span>
               <span>听发音</span>
             </button>
           </div>
@@ -105,7 +116,7 @@ function Card({ word, total, currentIndex, onNext, onPrev, onMarkLearned, onMark
                   onClick={speakExample}
                   className="mt-6 px-8 py-4 min-h-[50px] bg-white/25 hover:bg-white/35 rounded-full font-bold text-xl transition-all flex items-center gap-3 mx-auto"
                 >
-                  <span class="text-2xl">🔊</span>
+                  <span className="text-2xl">🔊</span>
                   <span>听例句</span>
                 </button>
               </div>
@@ -120,14 +131,14 @@ function Card({ word, total, currentIndex, onNext, onPrev, onMarkLearned, onMark
             onClick={onPrev}
             className="flex-1 max-w-[200px] px-8 py-5 min-h-[70px] bg-gray-200 text-gray-700 rounded-2xl hover:bg-gray-300 transition-all font-bold text-2xl flex items-center justify-center gap-3 shadow-xl"
           >
-            <span class="text-3xl">⬅️</span>
+            <span className="text-3xl">⬅️</span>
             <span>上一个</span>
           </button>
           <button
             onClick={() => setIsFlipped(!isFlipped)}
             className="flex-1 max-w-[200px] px-8 py-5 min-h-[70px] bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-2xl hover:from-purple-600 hover:to-pink-600 transition-all font-bold text-2xl flex items-center justify-center gap-3 shadow-2xl"
           >
-            <span class="text-3xl">🔄</span>
+            <span className="text-3xl">🔄</span>
             <span>翻转</span>
           </button>
           <button
@@ -135,7 +146,7 @@ function Card({ word, total, currentIndex, onNext, onPrev, onMarkLearned, onMark
             className="flex-1 max-w-[200px] px-8 py-5 min-h-[70px] bg-gray-200 text-gray-700 rounded-2xl hover:bg-gray-300 transition-all font-bold text-2xl flex items-center justify-center gap-3 shadow-xl"
           >
             <span>下一个</span>
-            <span class="text-3xl">➡️</span>
+            <span className="text-3xl">➡️</span>
           </button>
         </div>
 
@@ -165,7 +176,7 @@ function Card({ word, total, currentIndex, onNext, onPrev, onMarkLearned, onMark
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Card
+export default Card;

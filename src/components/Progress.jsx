@@ -8,21 +8,21 @@ function Progress({ total, learned, mastered, categoryName, onReset }) {
 
   const shellClass = isDark
     ? 'border-slate-800 bg-slate-900/86 text-slate-100 shadow-[0_18px_50px_rgba(2,6,23,0.45)]'
-    : 'border-slate-200/85 bg-white/86 text-slate-700 shadow-[0_18px_45px_rgba(15,23,42,0.09)]';
+    : 'border-slate-300 bg-white text-slate-800 shadow-[0_18px_45px_rgba(15,23,42,0.11)]';
   const barTrackClass = isDark ? 'bg-slate-800' : 'bg-slate-200/85';
   const statCardClass = isDark
     ? 'border-slate-800 bg-slate-950/70 text-slate-200'
-    : 'border-slate-200 bg-slate-50/80 text-slate-700';
-  const subtleTextClass = isDark ? 'text-slate-400' : 'text-slate-500';
+    : 'border-slate-300 bg-slate-50 text-slate-800';
+  const subtleTextClass = isDark ? 'text-slate-400' : 'text-slate-600';
   const resetButtonClass = isDark
     ? 'border-slate-700 bg-slate-800 text-slate-200 hover:border-slate-600 hover:bg-slate-700'
-    : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300 hover:bg-slate-100';
+    : 'border-slate-300 bg-slate-100 text-slate-800 hover:border-slate-400 hover:bg-slate-200';
 
   return (
     <section className={`rounded-[30px] border px-5 py-6 md:px-7 md:py-7 ${shellClass}`}>
       <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="text-xs uppercase tracking-[0.18em] text-cyan-500">Progress</p>
+          <p className="text-xs uppercase tracking-[0.18em] text-cyan-600">Progress</p>
           <h3 className="mt-1 text-2xl font-semibold tracking-tight">学习进度 · {categoryName}</h3>
         </div>
         <div className={`text-sm ${subtleTextClass}`}>

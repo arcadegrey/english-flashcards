@@ -10,6 +10,7 @@ import HomeScreen from './components/HomeScreen'
 import LearningView from './components/LearningView'
 import Statistics from './components/Statistics'
 import Calendar from './components/Calendar'
+import WordCollectionView from './components/WordCollectionView'
 import { storage } from './utils/storage'
 
 function AppContent() {
@@ -107,6 +108,22 @@ function AppContent() {
     return cat ? cat.name : '全部单词'
   }, [selectedCategory])
 
+  const vocabularyMap = useMemo(() => {
+    const map = new Map()
+    vocabulary.forEach((word) => map.set(word.id, word))
+    return map
+  }, [])
+
+  const learnedWordList = useMemo(
+    () => learnedWords.map((id) => vocabularyMap.get(id)).filter(Boolean),
+    [learnedWords, vocabularyMap]
+  )
+
+  const masteredWordList = useMemo(
+    () => masteredWords.map((id) => vocabularyMap.get(id)).filter(Boolean),
+    [masteredWords, vocabularyMap]
+  )
+
   const appBackground = useMemo(() => {
     if (view === 'home') {
       return isDark
@@ -126,6 +143,10 @@ function AppContent() {
           <HomeScreen 
             onCategorySelect={handleCategorySelect}
             wordCounts={wordCounts}
+            learnedWordIds={learnedWords}
+            masteredWordIds={masteredWords}
+            onOpenLearnedWords={() => setView('learnedWords')}
+            onOpenMasteredWords={() => setView('masteredWords')}
           />
         )
       case 'learn':
@@ -185,6 +206,26 @@ function AppContent() {
             </div>
           </div>
         )
+      case 'learnedWords':
+        return (
+          <WordCollectionView
+            title="📖 已学习单词"
+            subtitle="这里会展示你标记为“已学习”的所有单词"
+            words={learnedWordList}
+            emptyHint="你还没有已学习单词，先进入学习模式标记一些吧。"
+            onBack={handleBackToHome}
+          />
+        )
+      case 'masteredWords':
+        return (
+          <WordCollectionView
+            title="✅ 已掌握单词"
+            subtitle="这里会展示你已经掌握的单词"
+            words={masteredWordList}
+            emptyHint="你还没有已掌握单词，继续练习后会出现在这里。"
+            onBack={handleBackToHome}
+          />
+        )
       default:
         return null
     }
@@ -193,7 +234,7 @@ function AppContent() {
   return (
     <div className={`min-h-screen ${appBackground} py-8 px-4`}>
       {view === 'home' && (
-        <div className="max-w-7xl mx-auto mb-8 flex justify-center gap-4">
+        <div className="max-w-7xl mx-auto mb-8 flex justify-center gap-4 flex-wrap">
           <button
             onClick={() => setView('statistics')}
             className="px-6 py-3 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white rounded-2xl transition-all font-bold text-lg flex items-center gap-2 border border-white/20"

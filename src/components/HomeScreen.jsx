@@ -2,7 +2,36 @@ import { useState, useEffect, useMemo } from 'react';
 import categories from '../data/categories';
 import vocabulary from '../data/vocabulary';
 
-function HomeScreen({ onCategorySelect, wordCounts }) {
+const collectionCategories = [
+  {
+    id: 'learnedWords',
+    name: '已学习单词',
+    icon: '📖',
+    color: 'from-sky-500 to-blue-600',
+    type: 'collection',
+  },
+  {
+    id: 'masteredWords',
+    name: '已掌握单词',
+    icon: '✅',
+    color: 'from-emerald-500 to-teal-600',
+    type: 'collection',
+  },
+];
+
+const matchesWordQuery = (word, query) =>
+  word.word.toLowerCase().includes(query) ||
+  word.meaning.toLowerCase().includes(query) ||
+  (word.phonetic || '').toLowerCase().includes(query);
+
+function HomeScreen({
+  onCategorySelect,
+  wordCounts,
+  learnedWordIds = [],
+  masteredWordIds = [],
+  onOpenLearnedWords,
+  onOpenMasteredWords,
+}) {
   const [searchQuery, setSearchQuery] = useState('');
   const [debouncedQuery, setDebouncedQuery] = useState('');
 
@@ -14,55 +43,109 @@ function HomeScreen({ onCategorySelect, wordCounts }) {
     return () => clearTimeout(timer);
   }, [searchQuery]);
 
-  const filteredCategories = useMemo(() => {
-    if (!debouncedQuery) {
-      return categories;
+  const learnedIdSet = useMemo(() => new Set(learnedWordIds), [learnedWordIds]);
+  const masteredIdSet = useMemo(() => new Set(masteredWordIds), [masteredWordIds]);
+
+  const categoriesWithCollections = useMemo(() => {
+    const ieltsIndex = categories.findIndex((category) => category.id === 'ielts');
+    if (ieltsIndex === -1) {
+      return [...categories, ...collectionCategories];
     }
 
-    return categories.filter((category) => {
+    return [
+      ...categories.slice(0, ieltsIndex + 1),
+      ...collectionCategories,
+      ...categories.slice(ieltsIndex + 1),
+    ];
+  }, []);
+
+  const filteredCategories = useMemo(() => {
+    if (!debouncedQuery) {
+      return categoriesWithCollections;
+    }
+
+    return categoriesWithCollections.filter((category) => {
       if (category.name.toLowerCase().includes(debouncedQuery)) {
         return true;
       }
 
-      if (category.id !== 'all') {
-        const categoryWords = vocabulary.filter(
-          (word) =>
-            word.category === category.id &&
-            (word.word.toLowerCase().includes(debouncedQuery) ||
-              word.meaning.toLowerCase().includes(debouncedQuery))
-        );
-        return categoryWords.length > 0;
+      if (category.id === 'all') {
+        return vocabulary.some((word) => matchesWordQuery(word, debouncedQuery));
       }
 
-      return false;
+      if (category.type === 'collection') {
+        const targetSet = category.id === 'learnedWords' ? learnedIdSet : masteredIdSet;
+        return vocabulary.some((word) => targetSet.has(word.id) && matchesWordQuery(word, debouncedQuery));
+      }
+
+      return vocabulary.some(
+        (word) => word.category === category.id && matchesWordQuery(word, debouncedQuery)
+      );
     });
-  }, [debouncedQuery]);
+  }, [categoriesWithCollections, debouncedQuery, learnedIdSet, masteredIdSet]);
 
   const filteredWordCounts = useMemo(() => {
+    const counts = {
+      ...wordCounts,
+      learnedWords: learnedWordIds.length,
+      masteredWords: masteredWordIds.length,
+    };
+
     if (!debouncedQuery) {
-      return wordCounts;
+      return counts;
     }
 
-    const counts = {};
     filteredCategories.forEach((category) => {
       if (category.id === 'all') {
-        counts.all = vocabulary.filter(
-          (word) =>
-            word.word.toLowerCase().includes(debouncedQuery) ||
-            word.meaning.toLowerCase().includes(debouncedQuery)
-        ).length;
-      } else {
-        counts[category.id] = vocabulary.filter(
-          (word) =>
-            word.category === category.id &&
-            (word.word.toLowerCase().includes(debouncedQuery) ||
-              word.meaning.toLowerCase().includes(debouncedQuery))
-        ).length;
+        counts.all = vocabulary.filter((word) => matchesWordQuery(word, debouncedQuery)).length;
+        return;
       }
+
+      if (category.type === 'collection') {
+        const targetSet = category.id === 'learnedWords' ? learnedIdSet : masteredIdSet;
+        counts[category.id] = vocabulary.filter(
+          (word) => targetSet.has(word.id) && matchesWordQuery(word, debouncedQuery)
+        ).length;
+        return;
+      }
+
+      counts[category.id] = vocabulary.filter(
+        (word) => word.category === category.id && matchesWordQuery(word, debouncedQuery)
+      ).length;
     });
 
     return counts;
-  }, [debouncedQuery, filteredCategories]);
+  }, [
+    debouncedQuery,
+    filteredCategories,
+    learnedIdSet,
+    learnedWordIds.length,
+    masteredIdSet,
+    masteredWordIds.length,
+    wordCounts,
+  ]);
+
+  const totalMatchedWords = useMemo(() => {
+    if (!debouncedQuery) {
+      return wordCounts.all || 0;
+    }
+
+    return vocabulary.filter((word) => matchesWordQuery(word, debouncedQuery)).length;
+  }, [debouncedQuery, wordCounts.all]);
+
+  const handleCategoryClick = (category) => {
+    if (category.id === 'learnedWords') {
+      onOpenLearnedWords?.();
+      return;
+    }
+
+    if (category.id === 'masteredWords') {
+      onOpenMasteredWords?.();
+      return;
+    }
+
+    onCategorySelect(category.id);
+  };
 
   return (
     <div className="min-h-screen">
@@ -102,7 +185,7 @@ function HomeScreen({ onCategorySelect, wordCounts }) {
           {debouncedQuery && (
             <p className="text-center text-white/60 mt-3">
               找到 {filteredCategories.length} 个分类，共{' '}
-              <span className="font-bold text-white">{filteredWordCounts.all || 0}</span> 个匹配单词
+              <span className="font-bold text-white">{totalMatchedWords}</span> 个匹配单词
             </p>
           )}
         </div>
@@ -115,7 +198,7 @@ function HomeScreen({ onCategorySelect, wordCounts }) {
             <p className="text-white/60 text-lg">
               {debouncedQuery
                 ? `共 ${filteredCategories.length} 个匹配分类`
-                : `共 ${categories.length} 个分类，开始你的词汇之旅`}
+                : `共 ${categoriesWithCollections.length} 个分类，开始你的词汇之旅`}
             </p>
           </div>
 
@@ -132,7 +215,7 @@ function HomeScreen({ onCategorySelect, wordCounts }) {
                 return (
                   <button
                     key={category.id}
-                    onClick={() => onCategorySelect(category.id)}
+                    onClick={() => handleCategoryClick(category)}
                     className={`group relative p-6 md:p-7 rounded-3xl transition-all duration-500 text-center overflow-hidden ${
                       category.id === 'all'
                         ? 'bg-gradient-to-br from-purple-500 via-indigo-500 to-purple-600'
@@ -197,7 +280,7 @@ function HomeScreen({ onCategorySelect, wordCounts }) {
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center border border-white/20">
               <p className="text-3xl md:text-4xl font-black text-white mb-1">
-                {categories.length}
+                {categoriesWithCollections.length}
               </p>
               <p className="text-white/60 text-sm">学习分类</p>
             </div>
