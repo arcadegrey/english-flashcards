@@ -107,6 +107,18 @@ function AppContent() {
     return cat ? cat.name : '全部单词'
   }, [selectedCategory])
 
+  const appBackground = useMemo(() => {
+    if (view === 'home') {
+      return isDark
+        ? 'bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800'
+        : 'bg-gradient-to-br from-indigo-900 via-violet-900 to-fuchsia-900'
+    }
+
+    return isDark
+      ? 'bg-gradient-to-br from-slate-950 via-slate-900 to-slate-900'
+      : 'bg-gradient-to-br from-slate-100 via-sky-50 to-indigo-100'
+  }, [isDark, view])
+
   const renderView = () => {
     switch (view) {
       case 'home':
@@ -121,6 +133,7 @@ function AppContent() {
           <LearningView
             mode={mode}
             setMode={setMode}
+            allVocabulary={vocabulary}
             currentWord={currentWord}
             filteredVocabulary={filteredVocabulary}
             currentIndex={currentIndex}
@@ -178,7 +191,7 @@ function AppContent() {
   }
 
   return (
-    <div className={`min-h-screen ${isDark ? 'bg-gradient-to-br from-gray-950 via-slate-900 to-gray-800' : 'bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900'} py-8 px-4`}>
+    <div className={`min-h-screen ${appBackground} py-8 px-4`}>
       {view === 'home' && (
         <div className="max-w-7xl mx-auto mb-8 flex justify-center gap-4">
           <button

@@ -1,5 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { speak } from '../utils/speech';
+import { playSuccessChime } from '../utils/feedback';
+import CorrectAnswerCelebration from './CorrectAnswerCelebration';
 
 function FillBlank({ vocabulary }) {
   const [currentQuestion, setCurrentQuestion] = useState(null);
@@ -10,9 +12,14 @@ function FillBlank({ vocabulary }) {
   const [questionCount, setQuestionCount] = useState(0);
   const [streak, setStreak] = useState(0);
   const [sentence, setSentence] = useState('');
-  const [hiddenWord, setHiddenWord] = useState('');
+  const [celebrationTrigger, setCelebrationTrigger] = useState(0);
+  const nextQuestionTimer = useRef(null);
 
-  const generateQuestion = () => {
+  const generateQuestion = useCallback(() => {
+    if (vocabulary.length === 0) {
+      return;
+    }
+
     const randomIndex = Math.floor(Math.random() * vocabulary.length);
     const word = vocabulary[randomIndex];
 
@@ -41,34 +48,50 @@ function FillBlank({ vocabulary }) {
     setSelectedAnswer(null);
     setIsCorrect(null);
     setSentence(hiddenSentence);
-    setHiddenWord(wordInSentence);
-  };
+  }, [vocabulary]);
 
   useEffect(() => {
-    if (vocabulary.length > 0) {
-      generateQuestion();
-    }
-  }, []);
+    const initTimer = setTimeout(() => {
+      if (vocabulary.length > 0) {
+        generateQuestion();
+      }
+    }, 0);
+
+    return () => {
+      clearTimeout(initTimer);
+      if (nextQuestionTimer.current) {
+        clearTimeout(nextQuestionTimer.current);
+      }
+    };
+  }, [generateQuestion, vocabulary.length]);
 
   const handleAnswer = (word) => {
-    if (selectedAnswer) return;
+    if (selectedAnswer || !currentQuestion) {
+      return;
+    }
 
     setSelectedAnswer(word);
     const correct = word.id === currentQuestion.id;
     setIsCorrect(correct);
 
     if (correct) {
-      setScore(score + 1);
-      setStreak(streak + 1);
+      setScore((prev) => prev + 1);
+      setStreak((prev) => prev + 1);
+      setCelebrationTrigger((prev) => prev + 1);
+      playSuccessChime();
     } else {
       setStreak(0);
     }
 
-    setQuestionCount(questionCount + 1);
+    setQuestionCount((prev) => prev + 1);
 
-    setTimeout(() => {
+    if (nextQuestionTimer.current) {
+      clearTimeout(nextQuestionTimer.current);
+    }
+
+    nextQuestionTimer.current = setTimeout(() => {
       generateQuestion();
-    }, 2000);
+    }, 1800);
   };
 
   const handleSpeakSentence = () => {
@@ -87,6 +110,8 @@ function FillBlank({ vocabulary }) {
 
   return (
     <div className="space-y-8">
+      <CorrectAnswerCelebration trigger={celebrationTrigger} />
+
       <div className="grid grid-cols-3 gap-4">
         <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-5 border-2 border-blue-300 shadow-lg">
           <div className="flex items-center gap-3 mb-2">
@@ -138,13 +163,15 @@ function FillBlank({ vocabulary }) {
           </p>
         </div>
 
-        <button
-          onClick={handleSpeakSentence}
-          className="mx-auto block px-12 py-6 bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-full hover:from-purple-600 hover:to-indigo-600 transition-all shadow-xl hover:shadow-2xl font-bold text-2xl flex items-center gap-3"
-        >
-          <span className="text-3xl">🔊</span>
-          <span>听例句</span>
-        </button>
+        <div className="flex justify-center">
+          <button
+            onClick={handleSpeakSentence}
+            className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 px-12 py-6 text-2xl font-bold text-white shadow-xl transition-all hover:from-purple-600 hover:to-indigo-600 hover:shadow-2xl"
+          >
+            <span className="text-3xl">🔊</span>
+            <span>听例句</span>
+          </button>
+        </div>
       </div>
 
       <div className="grid grid-cols-2 gap-5">

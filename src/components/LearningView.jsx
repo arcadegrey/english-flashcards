@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import Card from './Card';
 import Quiz from './Quiz';
 import Progress from './Progress';
@@ -7,122 +7,132 @@ import SpellingTest from './SpellingTest';
 import VoiceSettings from './VoiceSettings';
 import { useTheme } from '../context/ThemeContext';
 
-function LearningView({ 
-  mode, 
-  setMode, 
-  currentWord, 
-  filteredVocabulary, 
+const MODE_OPTIONS = [
+  { id: 'learn', icon: '🎯', label: '学习' },
+  { id: 'quiz', icon: '✏️', label: '测验' },
+  { id: 'fillblank', icon: '🧩', label: '填空' },
+  { id: 'spelling', icon: '🔤', label: '拼写' },
+];
+
+function LearningView({
+  mode,
+  setMode,
+  allVocabulary,
+  currentWord,
+  filteredVocabulary,
   currentIndex,
-  onNext, 
-  onPrev, 
-  onMarkLearned, 
-  onMarkMastered, 
-  isLearned, 
+  onNext,
+  onPrev,
+  onMarkLearned,
+  onMarkMastered,
+  isLearned,
   isMastered,
   masteredWords,
   onAddMastered,
   categoryName,
   learnedWords,
   resetProgress,
-  onBack 
+  onBack,
 }) {
   const [showVoiceSettings, setShowVoiceSettings] = useState(false);
   const { isDark, toggleTheme } = useTheme();
 
-  return (
-    <div className="min-h-screen">
-      <header className={`max-w-5xl mx-auto px-4 py-6 ${isDark ? 'bg-gray-900/50' : ''} rounded-xl`}>
-        <div className="flex items-center justify-between gap-4">
-          <button
-            onClick={onBack}
-            className={`group flex items-center gap-2 px-5 py-3 rounded-2xl transition-all border ${
-              isDark 
-                ? 'bg-gray-800/50 border-gray-700 hover:bg-gray-700 text-white' 
-                : 'bg-white/10 backdrop-blur-md hover:bg-white/20 text-white border-white/20'
-            }`}
-          >
-            <span className="text-xl group-hover:-translate-x-1 transition-transform">←</span>
-            <span className="font-bold">返回首页</span>
-          </button>
+  const learnedWordSet = useMemo(() => new Set(learnedWords), [learnedWords]);
+  const learnedVocabulary = useMemo(
+    () => allVocabulary.filter((word) => learnedWordSet.has(word.id)),
+    [allVocabulary, learnedWordSet]
+  );
+  const useLearnedPool = learnedVocabulary.length > 0;
+  const quizVocabulary = useLearnedPool ? learnedVocabulary : allVocabulary;
+  const quizSourceLabel = useLearnedPool ? '已学习词库' : '随机测验 · 全词库';
 
-          <div className={`hidden sm:flex items-center gap-2 px-5 py-3 rounded-2xl border ${
-            isDark ? 'bg-gray-800/50 border-gray-700' : 'bg-white/10 backdrop-blur-md border-white/20'
-          }`}>
-            <span className={`${isDark ? 'text-gray-300' : 'text-white/70'}`}>当前分类：</span>
-            <span className="font-bold text-white">{categoryName}</span>
-            <span className={`${isDark ? 'text-gray-500' : 'text-white/50'}`}>({filteredVocabulary.length} 词)</span>
+  const shellClass = isDark
+    ? 'border-slate-800 bg-slate-900/86 text-slate-100 shadow-[0_18px_60px_rgba(2,6,23,0.55)]'
+    : 'border-slate-200/85 bg-white/86 text-slate-700 shadow-[0_20px_55px_rgba(15,23,42,0.12)]';
+  const actionButtonClass = isDark
+    ? 'border-slate-700 bg-slate-800/80 text-slate-200 hover:border-slate-600 hover:bg-slate-800'
+    : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300 hover:bg-slate-50';
+  const tabShellClass = isDark
+    ? 'border-slate-800 bg-slate-950/65'
+    : 'border-slate-200/85 bg-slate-100/90';
+  const activeTabClass = isDark
+    ? 'bg-cyan-300 text-slate-900 shadow-[0_10px_24px_rgba(34,211,238,0.38)]'
+    : 'bg-slate-900 text-white shadow-[0_10px_24px_rgba(15,23,42,0.26)]';
+  const idleTabClass = isDark
+    ? 'text-slate-300 hover:bg-slate-800 hover:text-white'
+    : 'text-slate-500 hover:bg-white hover:text-slate-900';
+
+  return (
+    <div className="min-h-screen pb-12">
+      <header className="mx-auto max-w-6xl px-4 pt-5 md:pt-7">
+        <div className={`rounded-[28px] border px-4 py-4 backdrop-blur-xl md:px-6 md:py-5 ${shellClass}`}>
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div className="flex flex-wrap items-center gap-3">
+              <button
+                onClick={onBack}
+                className={`inline-flex items-center gap-2 rounded-xl border px-4 py-2.5 text-sm font-semibold transition ${actionButtonClass}`}
+              >
+                <span>←</span>
+                <span>返回首页</span>
+              </button>
+
+              <div
+                className={`inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-sm ${
+                  isDark ? 'border-slate-700 bg-slate-800/70 text-slate-200' : 'border-slate-200 bg-white text-slate-600'
+                }`}
+              >
+                <span className="uppercase tracking-[0.15em] text-xs opacity-75">Category</span>
+                <span className="font-semibold text-base">{categoryName}</span>
+                <span className={`text-xs ${isDark ? 'text-slate-400' : 'text-slate-400'}`}>
+                  {filteredVocabulary.length} 词
+                </span>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => setShowVoiceSettings(true)}
+                className={`inline-flex items-center gap-2 rounded-xl border px-4 py-2.5 text-sm font-semibold transition ${actionButtonClass}`}
+                title="语音设置"
+              >
+                <span>🔊</span>
+                <span>语音</span>
+              </button>
+              <button
+                onClick={toggleTheme}
+                className={`inline-flex items-center gap-2 rounded-xl border px-4 py-2.5 text-sm font-semibold transition ${actionButtonClass}`}
+                title={isDark ? '切换到浅色模式' : '切换到深色模式'}
+              >
+                <span>{isDark ? '☀️' : '🌙'}</span>
+                <span>{isDark ? '浅色' : '深色'}</span>
+              </button>
+            </div>
           </div>
 
-          <div className="flex items-center gap-2">
-            <button
-              onClick={toggleTheme}
-              className="flex items-center justify-center w-12 h-12 bg-white/10 backdrop-blur-md hover:bg-white/20 rounded-2xl transition-all border border-white/20"
-              title={isDark ? '切换到浅色模式' : '切换到深色模式'}
-            >
-              <span className="text-2xl">{isDark ? '☀️' : '🌙'}</span>
-            </button>
-            <button
-              onClick={() => setShowVoiceSettings(true)}
-              className="flex items-center justify-center w-12 h-12 bg-white/10 backdrop-blur-md hover:bg-white/20 rounded-2xl transition-all border border-white/20"
-              title="语音设置"
-            >
-              <span className="text-2xl">⚙️</span>
-            </button>
+          <div className={`mt-4 rounded-2xl border p-1.5 ${tabShellClass}`}>
+            <div className="grid grid-cols-2 gap-2 md:grid-cols-4">
+              {MODE_OPTIONS.map((item) => {
+                const isActive = mode === item.id;
+                return (
+                  <button
+                    key={item.id}
+                    onClick={() => setMode(item.id)}
+                    className={`inline-flex items-center justify-center gap-2 rounded-xl px-3 py-2.5 text-sm font-semibold transition ${
+                      isActive ? activeTabClass : idleTabClass
+                    }`}
+                  >
+                    <span>{item.icon}</span>
+                    <span>{item.label}</span>
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </div>
       </header>
 
-      <div className="flex justify-center mb-8 px-4">
-        <div className={`rounded-3xl p-2 inline-flex gap-2 shadow-xl border ${
-          isDark ? 'bg-gray-800/60 border-gray-700' : 'bg-white/10 backdrop-blur-md border-white/20'
-        }`}>
-          <button
-            onClick={() => setMode('learn')}
-            className={`px-5 py-3 rounded-2xl font-bold text-lg transition-all ${
-              mode === 'learn'
-                ? 'bg-gradient-to-r from-purple-500 to-indigo-500 text-white shadow-lg'
-                : 'text-white/70 hover:bg-white/10'
-            }`}
-          >
-            🎯 学习
-          </button>
-          <button
-            onClick={() => setMode('quiz')}
-            className={`px-5 py-3 rounded-2xl font-bold text-lg transition-all ${
-              mode === 'quiz'
-                ? 'bg-gradient-to-r from-purple-500 to-indigo-500 text-white shadow-lg'
-                : 'text-white/70 hover:bg-white/10'
-            }`}
-          >
-            ✏️ 测验
-          </button>
-          <button
-            onClick={() => setMode('fillblank')}
-            className={`px-5 py-3 rounded-2xl font-bold text-lg transition-all ${
-              mode === 'fillblank'
-                ? 'bg-gradient-to-r from-purple-500 to-indigo-500 text-white shadow-lg'
-                : 'text-white/70 hover:bg-white/10'
-            }`}
-          >
-            📝 填空
-          </button>
-          <button
-            onClick={() => setMode('spelling')}
-            className={`px-5 py-3 rounded-2xl font-bold text-lg transition-all ${
-              mode === 'spelling'
-                ? 'bg-gradient-to-r from-purple-500 to-indigo-500 text-white shadow-lg'
-                : 'text-white/70 hover:bg-white/10'
-            }`}
-          >
-            🔤 拼写
-          </button>
-        </div>
-      </div>
-
-      <div className="max-w-5xl mx-auto px-4 pb-12">
-        <div className={`rounded-3xl p-8 md:p-12 shadow-2xl border mb-8 ${
-          isDark ? 'bg-gray-800/60 border-gray-700' : 'bg-white/10 backdrop-blur-md border-white/20'
-        }`}>
+      <div className="mx-auto mt-6 max-w-6xl px-4">
+        <div className={`rounded-[30px] border p-4 backdrop-blur-xl md:p-8 ${shellClass}`}>
           {mode === 'learn' ? (
             <Card
               word={currentWord}
@@ -136,8 +146,10 @@ function LearningView({
               isMastered={isMastered}
             />
           ) : mode === 'quiz' ? (
-            <Quiz 
-              vocabulary={filteredVocabulary} 
+            <Quiz
+              vocabulary={quizVocabulary}
+              optionVocabulary={allVocabulary}
+              sourceLabel={quizSourceLabel}
               masteredWords={masteredWords}
               onAddMastered={onAddMastered}
             />
@@ -148,18 +160,18 @@ function LearningView({
           ) : null}
         </div>
 
-        <Progress
-          total={filteredVocabulary.length}
-          learned={learnedWords.filter(id => filteredVocabulary.some(w => w.id === id)).length}
-          mastered={masteredWords.filter(id => filteredVocabulary.some(w => w.id === id)).length}
-          categoryName={categoryName}
-          onReset={resetProgress}
-        />
+        <div className="mt-6">
+          <Progress
+            total={filteredVocabulary.length}
+            learned={learnedWords.filter((id) => filteredVocabulary.some((w) => w.id === id)).length}
+            mastered={masteredWords.filter((id) => filteredVocabulary.some((w) => w.id === id)).length}
+            categoryName={categoryName}
+            onReset={resetProgress}
+          />
+        </div>
       </div>
 
-      {showVoiceSettings && (
-        <VoiceSettings onClose={() => setShowVoiceSettings(false)} />
-      )}
+      {showVoiceSettings && <VoiceSettings onClose={() => setShowVoiceSettings(false)} />}
     </div>
   );
 }
