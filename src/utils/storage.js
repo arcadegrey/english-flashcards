@@ -5,6 +5,7 @@ const STORAGE_KEYS = {
   THEME: 'flashcards_theme',
   SELECTED_VOICE: 'flashcards_selected_voice',
   WORD_PROGRESS: 'flashcards_word_progress',
+  CUSTOM_WORDS: 'flashcards_custom_words',
 };
 
 export const storage = {
@@ -42,6 +43,24 @@ export const storage = {
       localStorage.setItem(STORAGE_KEYS.MASTERED_WORDS, JSON.stringify(words));
     } catch (error) {
       console.error('Failed to save mastered words:', error);
+    }
+  },
+
+  getCustomWords: () => {
+    try {
+      const data = localStorage.getItem(STORAGE_KEYS.CUSTOM_WORDS);
+      return data ? JSON.parse(data) : [];
+    } catch (error) {
+      console.error('Failed to load custom words:', error);
+      return [];
+    }
+  },
+
+  setCustomWords: (words) => {
+    try {
+      localStorage.setItem(STORAGE_KEYS.CUSTOM_WORDS, JSON.stringify(words));
+    } catch (error) {
+      console.error('Failed to save custom words:', error);
     }
   },
 

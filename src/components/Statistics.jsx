@@ -1,12 +1,10 @@
 import { useMemo } from 'react';
 import { storage } from '../utils/storage';
-import vocabulary from '../data/vocabulary';
 
-function Statistics({ learnedWords, masteredWords }) {
+const DAY_NAMES_CN = ['日', '一', '二', '三', '四', '五', '六'];
+
+function Statistics({ learnedWords, masteredWords, totalWords }) {
   const studyHistory = useMemo(() => storage.getStudyHistory(), []);
-  const totalWords = vocabulary.length;
-
-  const dayNamesCN = ['日', '一', '二', '三', '四', '五', '六'];
 
   const last7Days = useMemo(() => {
     const days = [];
@@ -16,7 +14,7 @@ function Statistics({ learnedWords, masteredWords }) {
       const date = new Date(today);
       date.setDate(date.getDate() - i);
       const dateStr = date.toISOString().split('T')[0];
-      const dayName = dayNamesCN[date.getDay()];
+      const dayName = DAY_NAMES_CN[date.getDay()];
 
       const dayData = studyHistory.find((h) => h.date === dateStr) || {
         wordsLearned: 0,
@@ -49,7 +47,6 @@ function Statistics({ learnedWords, masteredWords }) {
   const minutesSpent = totalTimeSpent % 60;
 
   const totalLearned = studyHistory.reduce((acc, h) => acc + h.wordsLearned, 0);
-  const totalMastered = studyHistory.reduce((acc, h) => acc + h.wordsMastered, 0);
 
   const pieCircumference = 2 * Math.PI * 45;
   const learnedArc = (learnedPercent / 100) * pieCircumference;

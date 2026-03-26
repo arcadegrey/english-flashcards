@@ -112,13 +112,15 @@ function Card({ word, total, currentIndex, onNext, onPrev, onMarkLearned, onMark
                 {word.exampleCn && (
                   <p className="text-white/80 text-lg md:text-xl mt-4 leading-relaxed">{word.exampleCn}</p>
                 )}
-                <button
-                  onClick={speakExample}
-                  className="mt-6 px-8 py-4 min-h-[50px] bg-white/25 hover:bg-white/35 rounded-full font-bold text-xl transition-all flex items-center gap-3 mx-auto"
-                >
-                  <span className="text-2xl">🔊</span>
-                  <span>听例句</span>
-                </button>
+                <div className="mt-6 flex justify-center">
+                  <button
+                    onClick={speakExample}
+                    className="px-8 py-4 min-h-[50px] bg-white/25 hover:bg-white/35 rounded-full font-bold text-xl transition-all inline-flex items-center gap-3"
+                  >
+                    <span className="text-2xl">🔊</span>
+                    <span>听例句</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>

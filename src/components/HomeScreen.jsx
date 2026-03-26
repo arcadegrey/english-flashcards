@@ -1,6 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
 import categories from '../data/categories';
-import vocabulary from '../data/vocabulary';
 
 const collectionCategories = [
   {
@@ -27,6 +26,7 @@ const matchesWordQuery = (word, query) =>
 function HomeScreen({
   onCategorySelect,
   wordCounts,
+  vocabularyData = [],
   learnedWordIds = [],
   masteredWordIds = [],
   onOpenLearnedWords,
@@ -70,19 +70,19 @@ function HomeScreen({
       }
 
       if (category.id === 'all') {
-        return vocabulary.some((word) => matchesWordQuery(word, debouncedQuery));
+        return vocabularyData.some((word) => matchesWordQuery(word, debouncedQuery));
       }
 
       if (category.type === 'collection') {
         const targetSet = category.id === 'learnedWords' ? learnedIdSet : masteredIdSet;
-        return vocabulary.some((word) => targetSet.has(word.id) && matchesWordQuery(word, debouncedQuery));
+        return vocabularyData.some((word) => targetSet.has(word.id) && matchesWordQuery(word, debouncedQuery));
       }
 
-      return vocabulary.some(
+      return vocabularyData.some(
         (word) => word.category === category.id && matchesWordQuery(word, debouncedQuery)
       );
     });
-  }, [categoriesWithCollections, debouncedQuery, learnedIdSet, masteredIdSet]);
+  }, [categoriesWithCollections, debouncedQuery, learnedIdSet, masteredIdSet, vocabularyData]);
 
   const filteredWordCounts = useMemo(() => {
     const counts = {
@@ -97,19 +97,19 @@ function HomeScreen({
 
     filteredCategories.forEach((category) => {
       if (category.id === 'all') {
-        counts.all = vocabulary.filter((word) => matchesWordQuery(word, debouncedQuery)).length;
+        counts.all = vocabularyData.filter((word) => matchesWordQuery(word, debouncedQuery)).length;
         return;
       }
 
       if (category.type === 'collection') {
         const targetSet = category.id === 'learnedWords' ? learnedIdSet : masteredIdSet;
-        counts[category.id] = vocabulary.filter(
+        counts[category.id] = vocabularyData.filter(
           (word) => targetSet.has(word.id) && matchesWordQuery(word, debouncedQuery)
         ).length;
         return;
       }
 
-      counts[category.id] = vocabulary.filter(
+      counts[category.id] = vocabularyData.filter(
         (word) => word.category === category.id && matchesWordQuery(word, debouncedQuery)
       ).length;
     });
@@ -122,6 +122,7 @@ function HomeScreen({
     learnedWordIds.length,
     masteredIdSet,
     masteredWordIds.length,
+    vocabularyData,
     wordCounts,
   ]);
 
@@ -130,8 +131,8 @@ function HomeScreen({
       return wordCounts.all || 0;
     }
 
-    return vocabulary.filter((word) => matchesWordQuery(word, debouncedQuery)).length;
-  }, [debouncedQuery, wordCounts.all]);
+    return vocabularyData.filter((word) => matchesWordQuery(word, debouncedQuery)).length;
+  }, [debouncedQuery, vocabularyData, wordCounts.all]);
 
   const handleCategoryClick = (category) => {
     if (category.id === 'learnedWords') {

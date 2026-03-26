@@ -1,44 +1,49 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo, useRef } from 'react'
 import { ThemeProvider, useTheme } from './context/ThemeContext'
 import vocabulary from './data/vocabulary'
 import categories from './data/categories'
-import Card from './components/Card'
-import Quiz from './components/Quiz'
-import Progress from './components/Progress'
-import CategorySelector from './components/CategorySelector'
 import HomeScreen from './components/HomeScreen'
 import LearningView from './components/LearningView'
 import Statistics from './components/Statistics'
 import Calendar from './components/Calendar'
 import WordCollectionView from './components/WordCollectionView'
 import { storage } from './utils/storage'
+import { parseVocabularyCsv, getVocabularyCsvTemplate } from './utils/csvImport'
 
 function AppContent() {
   const { isDark } = useTheme()
+  const fileInputRef = useRef(null)
+
   const [view, setView] = useState('home')
   const [mode, setMode] = useState('learn')
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [currentIndex, setCurrentIndex] = useState(0)
   const [learnedWords, setLearnedWords] = useState([])
   const [masteredWords, setMasteredWords] = useState([])
+  const [customWords, setCustomWords] = useState([])
   const [shuffledWords, setShuffledWords] = useState([])
+  const [importFeedback, setImportFeedback] = useState(null)
+  const [isImporting, setIsImporting] = useState(false)
+
+  const allVocabulary = useMemo(() => [...vocabulary, ...customWords], [customWords])
+  const categoryIds = useMemo(() => categories.map((item) => item.id), [])
 
   const wordCounts = useMemo(() => {
-    const counts = { all: vocabulary.length }
-    vocabulary.forEach(word => {
+    const counts = { all: allVocabulary.length }
+    allVocabulary.forEach((word) => {
       if (word.category) {
         counts[word.category] = (counts[word.category] || 0) + 1
       }
     })
     return counts
-  }, [])
+  }, [allVocabulary])
 
   const filteredVocabulary = useMemo(() => {
     if (selectedCategory === 'all') {
-      return vocabulary
+      return allVocabulary
     }
-    return vocabulary.filter(word => word.category === selectedCategory)
-  }, [selectedCategory])
+    return allVocabulary.filter((word) => word.category === selectedCategory)
+  }, [allVocabulary, selectedCategory])
 
   useEffect(() => {
     const shuffled = [...filteredVocabulary].sort(() => Math.random() - 0.5)
@@ -49,8 +54,11 @@ function AppContent() {
   useEffect(() => {
     const savedLearned = storage.getLearnedWords()
     const savedMastered = storage.getMasteredWords()
+    const savedCustomWords = storage.getCustomWords()
+
     setLearnedWords(savedLearned)
     setMasteredWords(savedMastered)
+    setCustomWords(Array.isArray(savedCustomWords) ? savedCustomWords : [])
   }, [])
 
   useEffect(() => {
@@ -60,6 +68,22 @@ function AppContent() {
   useEffect(() => {
     storage.setMasteredWords(masteredWords)
   }, [masteredWords])
+
+  useEffect(() => {
+    storage.setCustomWords(customWords)
+  }, [customWords])
+
+  useEffect(() => {
+    if (!importFeedback) {
+      return undefined
+    }
+
+    const timer = setTimeout(() => {
+      setImportFeedback(null)
+    }, 7000)
+
+    return () => clearTimeout(timer)
+  }, [importFeedback])
 
   const currentWord = shuffledWords[currentIndex]
 
@@ -87,10 +111,12 @@ function AppContent() {
   }
 
   const nextCard = () => {
+    if (shuffledWords.length === 0) return
     setCurrentIndex((prev) => (prev + 1) % shuffledWords.length)
   }
 
   const prevCard = () => {
+    if (shuffledWords.length === 0) return
     setCurrentIndex((prev) => (prev - 1 + shuffledWords.length) % shuffledWords.length)
   }
 
@@ -104,15 +130,15 @@ function AppContent() {
   }
 
   const currentCategoryName = useMemo(() => {
-    const cat = categories.find(c => c.id === selectedCategory)
+    const cat = categories.find((c) => c.id === selectedCategory)
     return cat ? cat.name : '全部单词'
   }, [selectedCategory])
 
   const vocabularyMap = useMemo(() => {
     const map = new Map()
-    vocabulary.forEach((word) => map.set(word.id, word))
+    allVocabulary.forEach((word) => map.set(word.id, word))
     return map
-  }, [])
+  }, [allVocabulary])
 
   const learnedWordList = useMemo(
     () => learnedWords.map((id) => vocabularyMap.get(id)).filter(Boolean),
@@ -123,6 +149,60 @@ function AppContent() {
     () => masteredWords.map((id) => vocabularyMap.get(id)).filter(Boolean),
     [masteredWords, vocabularyMap]
   )
+
+  const openCsvPicker = () => {
+    fileInputRef.current?.click()
+  }
+
+  const handleDownloadTemplate = () => {
+    const blob = new Blob([getVocabularyCsvTemplate()], { type: 'text/csv;charset=utf-8;' })
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = 'flashcards-import-template.csv'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+    URL.revokeObjectURL(url)
+  }
+
+  const handleCsvImport = async (event) => {
+    const file = event.target.files?.[0]
+    if (!file) return
+
+    setIsImporting(true)
+
+    try {
+      const csvText = await file.text()
+      const { importedWords, summary } = parseVocabularyCsv({
+        csvText,
+        existingWords: allVocabulary,
+        validCategoryIds: categoryIds,
+      })
+
+      if (importedWords.length === 0) {
+        setImportFeedback({
+          type: 'warning',
+          text: `没有导入新单词。共 ${summary.totalRows} 行，跳过 ${summary.skippedInvalid} 行无效数据，${summary.skippedDuplicate} 行重复。`,
+        })
+        return
+      }
+
+      setCustomWords((prev) => [...prev, ...importedWords])
+      setImportFeedback({
+        type: 'success',
+        text: `已导入 ${summary.importedCount} 个单词，跳过 ${summary.skippedInvalid} 行无效数据，${summary.skippedDuplicate} 行重复。`,
+      })
+    } catch (error) {
+      setImportFeedback({
+        type: 'error',
+        text: `导入失败：${error?.message || 'CSV 格式不正确'}`,
+      })
+    } finally {
+      setIsImporting(false)
+      event.target.value = ''
+    }
+  }
 
   const appBackground = useMemo(() => {
     if (view === 'home') {
@@ -140,9 +220,10 @@ function AppContent() {
     switch (view) {
       case 'home':
         return (
-          <HomeScreen 
+          <HomeScreen
             onCategorySelect={handleCategorySelect}
             wordCounts={wordCounts}
+            vocabularyData={allVocabulary}
             learnedWordIds={learnedWords}
             masteredWordIds={masteredWords}
             onOpenLearnedWords={() => setView('learnedWords')}
@@ -154,7 +235,7 @@ function AppContent() {
           <LearningView
             mode={mode}
             setMode={setMode}
-            allVocabulary={vocabulary}
+            allVocabulary={allVocabulary}
             currentWord={currentWord}
             filteredVocabulary={filteredVocabulary}
             currentIndex={currentIndex}
@@ -187,7 +268,11 @@ function AppContent() {
                 <span className="text-2xl">←</span>
                 <span className="text-white font-bold text-lg">返回首页</span>
               </button>
-              <Statistics learnedWords={learnedWords} masteredWords={masteredWords} />
+              <Statistics
+                learnedWords={learnedWords}
+                masteredWords={masteredWords}
+                totalWords={allVocabulary.length}
+              />
             </div>
           </div>
         )
@@ -234,21 +319,64 @@ function AppContent() {
   return (
     <div className={`min-h-screen ${appBackground} py-8 px-4`}>
       {view === 'home' && (
-        <div className="max-w-7xl mx-auto mb-8 flex justify-center gap-4 flex-wrap">
-          <button
-            onClick={() => setView('statistics')}
-            className="px-6 py-3 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white rounded-2xl transition-all font-bold text-lg flex items-center gap-2 border border-white/20"
-          >
-            <span>📊</span>
-            <span>统计</span>
-          </button>
-          <button
-            onClick={() => setView('calendar')}
-            className="px-6 py-3 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white rounded-2xl transition-all font-bold text-lg flex items-center gap-2 border border-white/20"
-          >
-            <span>📅</span>
-            <span>日历</span>
-          </button>
+        <div className="max-w-7xl mx-auto mb-8">
+          <div className="flex justify-center gap-4 flex-wrap">
+            <button
+              onClick={() => setView('statistics')}
+              className="px-6 py-3 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white rounded-2xl transition-all font-bold text-lg flex items-center gap-2 border border-white/20"
+            >
+              <span>📊</span>
+              <span>统计</span>
+            </button>
+            <button
+              onClick={() => setView('calendar')}
+              className="px-6 py-3 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white rounded-2xl transition-all font-bold text-lg flex items-center gap-2 border border-white/20"
+            >
+              <span>📅</span>
+              <span>日历</span>
+            </button>
+            <button
+              onClick={openCsvPicker}
+              disabled={isImporting}
+              className="px-6 py-3 bg-white/10 backdrop-blur-md hover:bg-white/20 disabled:opacity-60 text-white rounded-2xl transition-all font-bold text-lg flex items-center gap-2 border border-white/20"
+            >
+              <span>📥</span>
+              <span>{isImporting ? '导入中...' : '导入CSV'}</span>
+            </button>
+            <button
+              onClick={handleDownloadTemplate}
+              className="px-6 py-3 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white rounded-2xl transition-all font-bold text-lg flex items-center gap-2 border border-white/20"
+            >
+              <span>📄</span>
+              <span>下载模板</span>
+            </button>
+          </div>
+
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept=".csv,text/csv"
+            className="hidden"
+            onChange={handleCsvImport}
+          />
+
+          {importFeedback && (
+            <div
+              className={`mt-4 rounded-2xl border px-4 py-3 text-center font-semibold ${
+                importFeedback.type === 'success'
+                  ? 'bg-emerald-500/20 text-emerald-100 border-emerald-300/40'
+                  : importFeedback.type === 'warning'
+                    ? 'bg-amber-500/20 text-amber-100 border-amber-300/40'
+                    : 'bg-rose-500/20 text-rose-100 border-rose-300/40'
+              }`}
+            >
+              {importFeedback.text}
+            </div>
+          )}
+
+          <p className="mt-2 text-center text-white/70 text-sm">
+            CSV 列名支持：`word, phonetic, pos, meaning, example, exampleCn, category`，其中 `word` 和 `meaning` 必填。
+          </p>
         </div>
       )}
       {renderView()}
