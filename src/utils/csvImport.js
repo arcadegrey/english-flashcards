@@ -1,7 +1,19 @@
-const DEFAULT_HEADERS = ['word', 'phonetic', 'pos', 'meaning', 'example', 'exampleCn', 'category'];
+const DEFAULT_HEADERS = ['word', 'phonetic', 'pos', 'meaning', 'example', 'exampleCn', 'category', 'level', 'list'];
 const REQUIRED_FIELDS = ['word', 'meaning'];
 
 const normalizeText = (value) => (value || '').trim();
+const normalizeNumericTag = (value) => {
+  const text = normalizeText(value);
+  if (!text) return '';
+
+  const match = text.match(/\d+/);
+  if (!match) return '';
+
+  const parsed = Number(match[0]);
+  if (!Number.isFinite(parsed) || parsed <= 0) return '';
+  return String(parsed);
+};
+
 const normalizeHeaderKey = (header) => {
   const normalized = (header || '').trim().toLowerCase().replace(/[\s_-]+/g, '');
 
@@ -12,6 +24,17 @@ const normalizeHeaderKey = (header) => {
   if (normalized === 'example' || normalized === 'sentence') return 'example';
   if (normalized === 'examplecn' || normalized === 'examplechinese') return 'exampleCn';
   if (normalized === 'category' || normalized === 'tag') return 'category';
+  if (normalized === 'level' || normalized === 'lv' || normalized === 'toefllevel' || normalized === 'booklevel') {
+    return 'level';
+  }
+  if (
+    normalized === 'list' ||
+    normalized === 'toefllist' ||
+    normalized === 'listno' ||
+    normalized === 'listnumber'
+  ) {
+    return 'list';
+  }
 
   return normalized;
 };
@@ -99,7 +122,7 @@ export const parseVocabularyCsv = ({
   const existingWordSet = new Set(
     existingWords.map((item) => normalizeText(item.word).toLowerCase()).filter(Boolean)
   );
-  const categorySet = new Set(validCategoryIds);
+  const categorySet = new Set((validCategoryIds || []).map((id) => String(id).toLowerCase()));
 
   let skippedInvalid = 0;
   let skippedDuplicate = 0;
@@ -128,8 +151,10 @@ export const parseVocabularyCsv = ({
       return;
     }
 
-    const normalizedCategory = normalizeText(record.category);
+    const normalizedCategory = normalizeText(record.category).toLowerCase();
     const category = categorySet.has(normalizedCategory) ? normalizedCategory : 'daily';
+    const level = normalizeNumericTag(record.level);
+    const list = normalizeNumericTag(record.list);
 
     const normalizedWord = {
       id: nextId,
@@ -141,6 +166,14 @@ export const parseVocabularyCsv = ({
       exampleCn: normalizeText(record.exampleCn),
       category,
     };
+    if (category === 'toefl') {
+      if (level) {
+        normalizedWord.level = level;
+      }
+      if (list) {
+        normalizedWord.list = list;
+      }
+    }
 
     importedWords.push(normalizedWord);
     existingWordSet.add(duplicateKey);
@@ -161,6 +194,6 @@ export const parseVocabularyCsv = ({
 };
 
 export const getVocabularyCsvTemplate = () =>
-  'word,phonetic,pos,meaning,example,exampleCn,category\n' +
-  'collaborate,/kəˈlæbəreɪt/,v.,合作，协作,We collaborate closely with clients.,我们与客户紧密合作。,business\n' +
-  'itinerary,/aɪˈtɪnəˌreri/,n.,行程安排,Please send me your itinerary.,请把你的行程安排发给我。,travel\n';
+  'word,phonetic,pos,meaning,example,exampleCn,category,level,list\n' +
+  'collaborate,/kəˈlæbəreɪt/,v.,合作，协作,We collaborate closely with clients.,我们与客户紧密合作。,business,,\n' +
+  'daunt,/dɔːnt/,v.,使气馁,The complexity of the project did not daunt her.,这个项目的复杂性并没有吓倒她。,toefl,3,1\n';

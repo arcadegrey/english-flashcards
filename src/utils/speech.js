@@ -1,10 +1,17 @@
-// 语音合成工具 - 解决跨设备语音不一致问题
+import { storage } from './storage';
+
+const browserTtsAvailable =
+  typeof window !== 'undefined' && typeof window.speechSynthesis !== 'undefined';
+
+const getSpeechSynthesis = () => (browserTtsAvailable ? window.speechSynthesis : null);
 
 // 获取最佳英语语音
 const getBestEnglishVoice = () => {
-  const voices = speechSynthesis.getVoices()
-  
-  // 优先级排序的语音列表（从高到低）
+  if (!browserTtsAvailable) return null;
+
+  const speech = getSpeechSynthesis();
+  const voices = speech.getVoices();
+
   const preferredVoices = [
     'Google US English',
     'Google UK English Female',
@@ -18,150 +25,300 @@ const getBestEnglishVoice = () => {
     'Moira',
     'Tessa',
     'Veena',
-    'Fiona'
-  ]
-  
-  // 查找第一个可用的优先语音
-  for (const preferred of preferredVoices) {
-    const voice = voices.find(v => 
-      v.name.includes(preferred) || 
-      v.name === preferred
-    )
-    if (voice) return voice
-  }
-  
-  // 如果没有找到优先语音，查找任何美国英语语音
-  const usVoice = voices.find(v => 
-    v.lang === 'en-US' || v.lang.startsWith('en-US')
-  )
-  if (usVoice) return usVoice
-  
-  // 查找任何英语语音
-  const anyEnglish = voices.find(v => 
-    v.lang.startsWith('en')
-  )
-  if (anyEnglish) return anyEnglish
-  
-  // 返回第一个可用语音
-  return voices[0] || null
-}
+    'Fiona',
+  ];
 
-// 初始化语音（解决某些浏览器首次加载问题）
-let voicesLoaded = false
-let selectedVoice = null
+  for (const preferred of preferredVoices) {
+    const voice = voices.find((v) => v.name.includes(preferred) || v.name === preferred);
+    if (voice) return voice;
+  }
+
+  const usVoice = voices.find((v) => v.lang === 'en-US' || v.lang.startsWith('en-US'));
+  if (usVoice) return usVoice;
+
+  const anyEnglish = voices.find((v) => v.lang.startsWith('en'));
+  if (anyEnglish) return anyEnglish;
+
+  return voices[0] || null;
+};
+
+let voicesLoaded = false;
+let selectedVoice = null;
+let currentAudio = null;
+let currentAudioUrl = '';
+let ttsProvider = storage.getTtsProvider();
 
 const initVoices = () => {
+  if (!browserTtsAvailable) {
+    return Promise.resolve(null);
+  }
+
+  const speech = getSpeechSynthesis();
+
   return new Promise((resolve) => {
-    const voices = speechSynthesis.getVoices()
-    
+    const voices = speech.getVoices();
+
     if (voices.length > 0) {
-      voicesLoaded = true
-      selectedVoice = getBestEnglishVoice()
-      resolve(selectedVoice)
-      return
+      voicesLoaded = true;
+      selectedVoice = getBestEnglishVoice();
+      resolve(selectedVoice);
+      return;
     }
-    
-    // 某些浏览器需要等待 voiceschanged 事件
-    speechSynthesis.onvoiceschanged = () => {
-      voicesLoaded = true
-      selectedVoice = getBestEnglishVoice()
-      resolve(selectedVoice)
-    }
-    
-    // 超时处理
+
+    speech.onvoiceschanged = () => {
+      voicesLoaded = true;
+      selectedVoice = getBestEnglishVoice();
+      resolve(selectedVoice);
+    };
+
     setTimeout(() => {
       if (!voicesLoaded) {
-        selectedVoice = getBestEnglishVoice()
-        resolve(selectedVoice)
+        selectedVoice = getBestEnglishVoice();
+        resolve(selectedVoice);
       }
-    }, 1000)
-  })
-}
+    }, 1000);
+  });
+};
 
-// 获取所有可用的英语语音
-export const getAvailableVoices = () => {
-  const voices = speechSynthesis.getVoices()
-  return voices.filter(v => v.lang.startsWith('en'))
-}
+const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 
-// 设置选中的语音
-export const setVoice = (voice) => {
-  selectedVoice = voice
-  // 保存到 localStorage
-  try {
-    localStorage.setItem('selectedVoice', voice?.name || '')
-  } catch (e) {
-    // ignore
+const getKokoroEndpoint = () => {
+  const fromStorage = storage.getKokoroEndpoint();
+  if (fromStorage) return fromStorage.trim();
+  return (import.meta.env.VITE_KOKORO_TTS_URL || '').trim();
+};
+
+const base64ToBlob = (base64, mimeType = 'audio/mpeg') => {
+  const binary = atob(base64);
+  const len = binary.length;
+  const bytes = new Uint8Array(len);
+  for (let i = 0; i < len; i += 1) {
+    bytes[i] = binary.charCodeAt(i);
   }
-}
+  return new Blob([bytes], { type: mimeType });
+};
 
-// 获取当前选中的语音
-export const getCurrentVoice = () => selectedVoice
+const extractAudioBlobFromJson = (data) => {
+  if (!data || typeof data !== 'object') return null;
 
-// 语音合成主函数
-export const speak = async (text, options = {}) => {
-  const {
-    rate = 0.8,
-    pitch = 1,
-    volume = 1
-  } = options
-  
-  // 取消之前的语音
-  speechSynthesis.cancel()
-  
-  // 确保语音已加载
+  const directBase64 =
+    data.audio || data.audio_base64 || data.b64_audio || data.base64 || data.output;
+  if (typeof directBase64 === 'string' && directBase64.length > 0) {
+    return base64ToBlob(directBase64);
+  }
+
+  const openAiStyle = data?.data?.[0]?.b64_json;
+  if (typeof openAiStyle === 'string' && openAiStyle.length > 0) {
+    return base64ToBlob(openAiStyle);
+  }
+
+  return null;
+};
+
+const playAudioBlob = async (blob) => {
+  if (!(blob instanceof Blob)) {
+    throw new Error('Kokoro 返回的音频格式无效');
+  }
+
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+  }
+  if (currentAudioUrl) {
+    URL.revokeObjectURL(currentAudioUrl);
+    currentAudioUrl = '';
+  }
+
+  const audio = new Audio();
+  const objectUrl = URL.createObjectURL(blob);
+
+  currentAudio = audio;
+  currentAudioUrl = objectUrl;
+  audio.src = objectUrl;
+
+  return new Promise((resolve) => {
+    audio.onended = () => {
+      resolve();
+    };
+    audio.onerror = () => {
+      resolve();
+    };
+    audio.play().catch(() => resolve());
+  });
+};
+
+const speakWithKokoro = async (text, options = {}) => {
+  const endpoint = getKokoroEndpoint();
+  if (!endpoint) {
+    throw new Error('未配置 Kokoro 接口地址');
+  }
+
+  const savedSpeed = storage.getKokoroSpeed();
+  const rate = Number.isFinite(Number(options.rate)) ? Number(options.rate) : 1;
+  const speed = clamp(savedSpeed * rate, 0.5, 1.5);
+
+  const payload = {
+    input: text,
+    text,
+    voice: storage.getKokoroVoice(),
+    speed,
+    format: 'mp3',
+  };
+
+  const response = await fetch(endpoint, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(payload),
+  });
+
+  if (!response.ok) {
+    throw new Error(`Kokoro 接口请求失败: ${response.status}`);
+  }
+
+  const contentType = response.headers.get('content-type') || '';
+
+  if (contentType.includes('audio/')) {
+    const blob = await response.blob();
+    await playAudioBlob(blob);
+    return;
+  }
+
+  const data = await response.json();
+  const blob = extractAudioBlobFromJson(data);
+  if (blob) {
+    await playAudioBlob(blob);
+    return;
+  }
+
+  const audioUrl = data?.url || data?.audio_url;
+  if (typeof audioUrl === 'string' && audioUrl) {
+    const fileRes = await fetch(audioUrl);
+    if (!fileRes.ok) {
+      throw new Error(`Kokoro 音频地址不可用: ${fileRes.status}`);
+    }
+    const audioBlob = await fileRes.blob();
+    await playAudioBlob(audioBlob);
+    return;
+  }
+
+  throw new Error('Kokoro 接口返回中未找到可播放音频');
+};
+
+const speakWithBrowser = async (text, options = {}) => {
+  if (!browserTtsAvailable) {
+    throw new Error('当前环境不支持浏览器语音合成');
+  }
+
+  const { rate = 0.8, pitch = 1, volume = 1 } = options;
+  const speech = getSpeechSynthesis();
+
+  speech.cancel();
+
   if (!voicesLoaded) {
-    await initVoices()
+    await initVoices();
   }
-  
-  // 尝试从 localStorage 恢复语音选择
+
   if (!selectedVoice) {
-    try {
-      const savedVoiceName = localStorage.getItem('selectedVoice')
-      if (savedVoiceName) {
-        const voices = speechSynthesis.getVoices()
-        selectedVoice = voices.find(v => v.name === savedVoiceName)
-      }
-    } catch (e) {
-      // ignore
+    const savedVoiceName = storage.getSelectedVoice();
+    if (savedVoiceName) {
+      const voices = speech.getVoices();
+      selectedVoice = voices.find((v) => v.name === savedVoiceName) || null;
     }
   }
-  
-  // 如果还是没有语音，初始化
+
   if (!selectedVoice) {
-    selectedVoice = getBestEnglishVoice()
+    selectedVoice = getBestEnglishVoice();
   }
-  
-  const utterance = new SpeechSynthesisUtterance(text)
-  utterance.lang = 'en-US'
-  utterance.rate = rate
-  utterance.pitch = pitch
-  utterance.volume = volume
-  
+
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = 'en-US';
+  utterance.rate = rate;
+  utterance.pitch = pitch;
+  utterance.volume = volume;
+
   if (selectedVoice) {
-    utterance.voice = selectedVoice
+    utterance.voice = selectedVoice;
   }
-  
-  speechSynthesis.speak(utterance)
-  
+
+  speech.speak(utterance);
+
   return new Promise((resolve) => {
-    utterance.onend = resolve
-    utterance.onerror = resolve
-  })
-}
+    utterance.onend = resolve;
+    utterance.onerror = resolve;
+  });
+};
 
-// 停止语音
+export const getAvailableVoices = () => {
+  if (!browserTtsAvailable) return [];
+  const speech = getSpeechSynthesis();
+  return speech.getVoices().filter((v) => v.lang.startsWith('en'));
+};
+
+export const setVoice = (voice) => {
+  selectedVoice = voice;
+  storage.setSelectedVoice(voice?.name || '');
+};
+
+export const getCurrentVoice = () => selectedVoice;
+
+export const setTtsProvider = (provider) => {
+  const nextProvider = provider === 'kokoro' ? 'kokoro' : 'browser';
+  ttsProvider = nextProvider;
+  storage.setTtsProvider(nextProvider);
+};
+
+export const getTtsProvider = () => ttsProvider;
+
+export const speak = async (text, options = {}) => {
+  const safeText = (text || '').trim();
+  if (!safeText) return;
+
+  stopSpeak();
+
+  if (ttsProvider === 'kokoro') {
+    try {
+      await speakWithKokoro(safeText, options);
+      return;
+    } catch (error) {
+      console.warn('[TTS] Kokoro failed, fallback to browser:', error);
+      if (!browserTtsAvailable) {
+        throw error;
+      }
+    }
+  }
+
+  await speakWithBrowser(safeText, options);
+};
+
 export const stopSpeak = () => {
-  speechSynthesis.cancel()
-}
+  if (browserTtsAvailable) {
+    const speech = getSpeechSynthesis();
+    speech.cancel();
+  }
 
-// 初始化
-initVoices()
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+    currentAudio = null;
+  }
+  if (currentAudioUrl) {
+    URL.revokeObjectURL(currentAudioUrl);
+    currentAudioUrl = '';
+  }
+};
+
+if (browserTtsAvailable) {
+  initVoices();
+}
 
 export default {
   speak,
   stopSpeak,
   getAvailableVoices,
   setVoice,
-  getCurrentVoice
-}
+  getCurrentVoice,
+  setTtsProvider,
+  getTtsProvider,
+};

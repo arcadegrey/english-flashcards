@@ -31,6 +31,7 @@ function HomeScreen({
   masteredWordIds = [],
   onOpenLearnedWords,
   onOpenMasteredWords,
+  onOpenToeflLevels,
 }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [debouncedQuery, setDebouncedQuery] = useState('');
@@ -142,6 +143,11 @@ function HomeScreen({
 
     if (category.id === 'masteredWords') {
       onOpenMasteredWords?.();
+      return;
+    }
+
+    if (category.id === 'toefl') {
+      onOpenToeflLevels?.();
       return;
     }
 

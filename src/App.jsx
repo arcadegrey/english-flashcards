@@ -7,8 +7,72 @@ import LearningView from './components/LearningView'
 import Statistics from './components/Statistics'
 import Calendar from './components/Calendar'
 import WordCollectionView from './components/WordCollectionView'
+import ToeflSelectionView from './components/ToeflSelectionView'
 import { storage } from './utils/storage'
 import { parseVocabularyCsv, getVocabularyCsvTemplate } from './utils/csvImport'
+
+const TOEFL_UNKNOWN_LEVEL = 'unknown'
+const TOEFL_UNKNOWN_LIST = 'unknown'
+
+const extractNumericTag = (value) => {
+  const text = String(value ?? '').trim()
+  if (!text) return null
+
+  const match = text.match(/\d+/)
+  if (!match) return null
+
+  const parsed = Number(match[0])
+  if (!Number.isFinite(parsed) || parsed <= 0) return null
+  return parsed
+}
+
+const getToeflMeta = (word) => {
+  if (!word || word.category !== 'toefl') {
+    return { level: null, list: null }
+  }
+
+  const wordId = Number(word.id)
+  let level = extractNumericTag(word.level)
+  let list = extractNumericTag(word.list)
+
+  // Backward compatibility for the previously imported 300 TOEFL words (id 501-800).
+  if (!level && Number.isInteger(wordId) && wordId >= 501 && wordId <= 800) {
+    level = 3
+  }
+  if (!list && level === 3 && Number.isInteger(wordId) && wordId >= 501 && wordId <= 800) {
+    list = Math.ceil((wordId - 500) / 30)
+  }
+
+  return { level, list }
+}
+
+const matchesToeflLevel = (word, selectedLevel) => {
+  const { level } = getToeflMeta(word)
+  if (selectedLevel === TOEFL_UNKNOWN_LEVEL) {
+    return level == null
+  }
+  return String(level) === String(selectedLevel)
+}
+
+const matchesToeflList = (word, selectedList) => {
+  const { list } = getToeflMeta(word)
+  if (selectedList === TOEFL_UNKNOWN_LIST) {
+    return list == null
+  }
+  return String(list) === String(selectedList)
+}
+
+const sortNumericKeyWithUnknownLast = (a, b, unknownKey) => {
+  if (a === unknownKey && b !== unknownKey) return 1
+  if (b === unknownKey && a !== unknownKey) return -1
+
+  const aNum = Number(a)
+  const bNum = Number(b)
+  if (Number.isFinite(aNum) && Number.isFinite(bNum)) {
+    return aNum - bNum
+  }
+  return String(a).localeCompare(String(b))
+}
 
 function AppContent() {
   const { isDark } = useTheme()
@@ -17,6 +81,8 @@ function AppContent() {
   const [view, setView] = useState('home')
   const [mode, setMode] = useState('learn')
   const [selectedCategory, setSelectedCategory] = useState('all')
+  const [selectedToeflLevel, setSelectedToeflLevel] = useState('')
+  const [selectedToeflList, setSelectedToeflList] = useState('')
   const [currentIndex, setCurrentIndex] = useState(0)
   const [learnedWords, setLearnedWords] = useState([])
   const [masteredWords, setMasteredWords] = useState([])
@@ -42,8 +108,79 @@ function AppContent() {
     if (selectedCategory === 'all') {
       return allVocabulary
     }
-    return allVocabulary.filter((word) => word.category === selectedCategory)
-  }, [allVocabulary, selectedCategory])
+
+    let filtered = allVocabulary.filter((word) => word.category === selectedCategory)
+    if (selectedCategory !== 'toefl') {
+      return filtered
+    }
+
+    if (selectedToeflLevel) {
+      filtered = filtered.filter((word) => matchesToeflLevel(word, selectedToeflLevel))
+    }
+
+    if (selectedToeflList) {
+      filtered = filtered.filter((word) => matchesToeflList(word, selectedToeflList))
+    }
+
+    return filtered
+  }, [allVocabulary, selectedCategory, selectedToeflLevel, selectedToeflList])
+
+  const toeflGrouping = useMemo(() => {
+    const levelBuckets = new Map()
+
+    allVocabulary.forEach((word) => {
+      if (word.category !== 'toefl') return
+
+      const { level, list } = getToeflMeta(word)
+      const levelKey = level ? String(level) : TOEFL_UNKNOWN_LEVEL
+      const listKey = list ? String(list) : TOEFL_UNKNOWN_LIST
+
+      if (!levelBuckets.has(levelKey)) {
+        levelBuckets.set(levelKey, {
+          key: levelKey,
+          count: 0,
+          lists: new Map(),
+        })
+      }
+
+      const levelEntry = levelBuckets.get(levelKey)
+      levelEntry.count += 1
+      levelEntry.lists.set(listKey, (levelEntry.lists.get(listKey) || 0) + 1)
+    })
+
+    const levels = Array.from(levelBuckets.values())
+      .map((entry) => ({
+        key: entry.key,
+        label: entry.key === TOEFL_UNKNOWN_LEVEL ? '未分级' : `Level ${entry.key}`,
+        count: entry.count,
+        meta: `${entry.lists.size} 个 List`,
+      }))
+      .sort((a, b) => sortNumericKeyWithUnknownLast(a.key, b.key, TOEFL_UNKNOWN_LEVEL))
+
+    const listsByLevel = {}
+    levelBuckets.forEach((entry, levelKey) => {
+      listsByLevel[levelKey] = Array.from(entry.lists.entries())
+        .map(([listKey, count]) => ({
+          key: listKey,
+          label: listKey === TOEFL_UNKNOWN_LIST ? '未分 List' : `List ${listKey}`,
+          count,
+        }))
+        .sort((a, b) => sortNumericKeyWithUnknownLast(a.key, b.key, TOEFL_UNKNOWN_LIST))
+    })
+
+    return {
+      total: levels.reduce((sum, item) => sum + item.count, 0),
+      levels,
+      listsByLevel,
+    }
+  }, [allVocabulary])
+
+  const toeflListsForSelectedLevel = useMemo(() => {
+    if (!selectedToeflLevel) {
+      return []
+    }
+    return toeflGrouping.listsByLevel[selectedToeflLevel] || []
+  }, [selectedToeflLevel, toeflGrouping.listsByLevel])
 
   useEffect(() => {
     const shuffled = [...filteredVocabulary].sort(() => Math.random() - 0.5)
@@ -89,6 +226,45 @@ function AppContent() {
 
   const handleCategorySelect = (categoryId) => {
     setSelectedCategory(categoryId)
+    if (categoryId !== 'toefl') {
+      setSelectedToeflLevel('')
+      setSelectedToeflList('')
+    }
+    setView('learn')
+  }
+
+  const openToeflLevels = () => {
+    setSelectedCategory('toefl')
+    setSelectedToeflLevel('')
+    setSelectedToeflList('')
+    setView('toeflLevels')
+  }
+
+  const handleToeflLevelSelect = (levelKey) => {
+    setSelectedCategory('toefl')
+    setSelectedToeflLevel(levelKey)
+    setSelectedToeflList('')
+
+    const nextLists = toeflGrouping.listsByLevel[levelKey] || []
+    setView(nextLists.length > 0 ? 'toeflLists' : 'learn')
+  }
+
+  const handleToeflListSelect = (listKey) => {
+    setSelectedCategory('toefl')
+    setSelectedToeflList(listKey)
+    setView('learn')
+  }
+
+  const handleStartAllToefl = () => {
+    setSelectedCategory('toefl')
+    setSelectedToeflLevel('')
+    setSelectedToeflList('')
+    setView('learn')
+  }
+
+  const handleStartCurrentLevel = () => {
+    setSelectedCategory('toefl')
+    setSelectedToeflList('')
     setView('learn')
   }
 
@@ -130,9 +306,26 @@ function AppContent() {
   }
 
   const currentCategoryName = useMemo(() => {
+    if (selectedCategory === 'toefl') {
+      const levelLabel =
+        selectedToeflLevel === TOEFL_UNKNOWN_LEVEL
+          ? '未分级'
+          : selectedToeflLevel
+            ? `Level ${selectedToeflLevel}`
+            : ''
+      const listLabel =
+        selectedToeflList === TOEFL_UNKNOWN_LIST
+          ? '未分 List'
+          : selectedToeflList
+            ? `List ${selectedToeflList}`
+            : ''
+
+      return ['托福词汇', levelLabel, listLabel].filter(Boolean).join(' · ')
+    }
+
     const cat = categories.find((c) => c.id === selectedCategory)
     return cat ? cat.name : '全部单词'
-  }, [selectedCategory])
+  }, [selectedCategory, selectedToeflLevel, selectedToeflList])
 
   const vocabularyMap = useMemo(() => {
     const map = new Map()
@@ -228,8 +421,42 @@ function AppContent() {
             masteredWordIds={masteredWords}
             onOpenLearnedWords={() => setView('learnedWords')}
             onOpenMasteredWords={() => setView('masteredWords')}
+            onOpenToeflLevels={openToeflLevels}
           />
         )
+      case 'toeflLevels':
+        return (
+          <ToeflSelectionView
+            mode="level"
+            title="🌍 托福词汇分级"
+            subtitle="先选择 Level，再进入对应 List；也可以直接学习全部托福词汇。"
+            items={toeflGrouping.levels}
+            totalCount={toeflGrouping.total}
+            onBack={handleBackToHome}
+            onSelect={handleToeflLevelSelect}
+            onSelectAll={handleStartAllToefl}
+            selectAllLabel="学习全部托福词汇"
+          />
+        )
+      case 'toeflLists': {
+        const levelLabel =
+          selectedToeflLevel === TOEFL_UNKNOWN_LEVEL ? '未分级' : `Level ${selectedToeflLevel}`
+        const totalForLevel = toeflListsForSelectedLevel.reduce((sum, item) => sum + item.count, 0)
+
+        return (
+          <ToeflSelectionView
+            mode="list"
+            title={`📘 ${levelLabel}`}
+            subtitle="选择 List 开始学习，或者直接学习当前 Level 全部词汇。"
+            items={toeflListsForSelectedLevel}
+            totalCount={totalForLevel}
+            onBack={() => setView('toeflLevels')}
+            onSelect={handleToeflListSelect}
+            onSelectAll={handleStartCurrentLevel}
+            selectAllLabel={`学习${levelLabel}全部词汇`}
+          />
+        )
+      }
       case 'learn':
         return (
           <LearningView
@@ -375,7 +602,8 @@ function AppContent() {
           )}
 
           <p className="mt-2 text-center text-white/70 text-sm">
-            CSV 列名支持：`word, phonetic, pos, meaning, example, exampleCn, category`，其中 `word` 和 `meaning` 必填。
+            CSV 列名支持：`word, phonetic, pos, meaning, example, exampleCn, category, level, list`，其中
+            `word` 和 `meaning` 必填（`level/list` 主要用于托福分级）。
           </p>
         </div>
       )}

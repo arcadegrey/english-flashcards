@@ -4,6 +4,10 @@ const STORAGE_KEYS = {
   STUDY_HISTORY: 'flashcards_study_history',
   THEME: 'flashcards_theme',
   SELECTED_VOICE: 'flashcards_selected_voice',
+  TTS_PROVIDER: 'flashcards_tts_provider',
+  KOKORO_ENDPOINT: 'flashcards_kokoro_endpoint',
+  KOKORO_VOICE: 'flashcards_kokoro_voice',
+  KOKORO_SPEED: 'flashcards_kokoro_speed',
   WORD_PROGRESS: 'flashcards_word_progress',
   CUSTOM_WORDS: 'flashcards_custom_words',
 };
@@ -127,6 +131,80 @@ export const storage = {
       localStorage.setItem(STORAGE_KEYS.SELECTED_VOICE, voiceName);
     } catch (error) {
       console.error('Failed to save selected voice:', error);
+    }
+  },
+
+  // TTS Provider: 'browser' | 'kokoro'
+  getTtsProvider: () => {
+    try {
+      return localStorage.getItem(STORAGE_KEYS.TTS_PROVIDER) || 'browser';
+    } catch (error) {
+      console.error('Failed to load TTS provider:', error);
+      return 'browser';
+    }
+  },
+
+  setTtsProvider: (provider) => {
+    try {
+      localStorage.setItem(STORAGE_KEYS.TTS_PROVIDER, provider || 'browser');
+    } catch (error) {
+      console.error('Failed to save TTS provider:', error);
+    }
+  },
+
+  // Kokoro endpoint, e.g. http://127.0.0.1:8880/v1/audio/speech
+  getKokoroEndpoint: () => {
+    try {
+      return localStorage.getItem(STORAGE_KEYS.KOKORO_ENDPOINT) || '';
+    } catch (error) {
+      console.error('Failed to load Kokoro endpoint:', error);
+      return '';
+    }
+  },
+
+  setKokoroEndpoint: (endpoint) => {
+    try {
+      localStorage.setItem(STORAGE_KEYS.KOKORO_ENDPOINT, endpoint || '');
+    } catch (error) {
+      console.error('Failed to save Kokoro endpoint:', error);
+    }
+  },
+
+  getKokoroVoice: () => {
+    try {
+      return localStorage.getItem(STORAGE_KEYS.KOKORO_VOICE) || 'af_bella';
+    } catch (error) {
+      console.error('Failed to load Kokoro voice:', error);
+      return 'af_bella';
+    }
+  },
+
+  setKokoroVoice: (voice) => {
+    try {
+      localStorage.setItem(STORAGE_KEYS.KOKORO_VOICE, voice || 'af_bella');
+    } catch (error) {
+      console.error('Failed to save Kokoro voice:', error);
+    }
+  },
+
+  getKokoroSpeed: () => {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEYS.KOKORO_SPEED);
+      const parsed = raw ? Number(raw) : 1;
+      if (Number.isNaN(parsed)) return 1;
+      return Math.max(0.5, Math.min(1.5, parsed));
+    } catch (error) {
+      console.error('Failed to load Kokoro speed:', error);
+      return 1;
+    }
+  },
+
+  setKokoroSpeed: (speed) => {
+    try {
+      const safe = Number.isFinite(Number(speed)) ? Number(speed) : 1;
+      localStorage.setItem(STORAGE_KEYS.KOKORO_SPEED, String(Math.max(0.5, Math.min(1.5, safe))));
+    } catch (error) {
+      console.error('Failed to save Kokoro speed:', error);
     }
   },
 

@@ -28,11 +28,41 @@ const parseArgs = () => {
 };
 
 const escapeValue = (value) => JSON.stringify(value ?? '');
+const hasText = (value) => String(value ?? '').trim().length > 0;
+const normalizeNumericTag = (value) => {
+  const text = String(value ?? '').trim();
+  if (!text) return '';
+
+  const match = text.match(/\d+/);
+  if (!match) return '';
+
+  const parsed = Number(match[0]);
+  if (!Number.isFinite(parsed) || parsed <= 0) return '';
+  return String(parsed);
+};
 
 const serializeVocabulary = (list) => {
   const lines = list.map((word) => {
     const id = Number(word.id);
-    return `  { id: ${id}, word: ${escapeValue(word.word)}, phonetic: ${escapeValue(word.phonetic)}, pos: ${escapeValue(word.pos)}, meaning: ${escapeValue(word.meaning)}, example: ${escapeValue(word.example)}, exampleCn: ${escapeValue(word.exampleCn)}, category: ${escapeValue(word.category)} },`;
+    const fields = [
+      `id: ${id}`,
+      `word: ${escapeValue(word.word)}`,
+      `phonetic: ${escapeValue(word.phonetic)}`,
+      `pos: ${escapeValue(word.pos)}`,
+      `meaning: ${escapeValue(word.meaning)}`,
+      `example: ${escapeValue(word.example)}`,
+      `exampleCn: ${escapeValue(word.exampleCn)}`,
+      `category: ${escapeValue(word.category)}`,
+    ];
+
+    if (hasText(word.level)) {
+      fields.push(`level: ${escapeValue(normalizeNumericTag(word.level) || String(word.level).trim())}`);
+    }
+    if (hasText(word.list)) {
+      fields.push(`list: ${escapeValue(normalizeNumericTag(word.list) || String(word.list).trim())}`);
+    }
+
+    return `  { ${fields.join(', ')} },`;
   });
 
   return `export const vocabulary = [\n${lines.join('\n')}\n];\n\nexport default vocabulary;\n`;
@@ -83,21 +113,51 @@ const main = async () => {
       if (byWord.has(key)) {
         const idx = byWord.get(key);
         const current = merged[idx];
-        merged[idx] = {
+        const mergedCategory = incoming.category || current.category || 'daily';
+        const nextWord = {
           ...current,
           phonetic: incoming.phonetic || current.phonetic || '',
           pos: incoming.pos || current.pos || '',
           meaning: incoming.meaning || current.meaning || '',
           example: incoming.example || current.example || '',
           exampleCn: incoming.exampleCn || current.exampleCn || '',
-          category: incoming.category || current.category || 'daily',
+          category: mergedCategory,
         };
+
+        if (mergedCategory === 'toefl') {
+          const nextLevel = normalizeNumericTag(incoming.level) || normalizeNumericTag(current.level);
+          const nextList = normalizeNumericTag(incoming.list) || normalizeNumericTag(current.list);
+
+          if (nextLevel) {
+            nextWord.level = nextLevel;
+          } else {
+            delete nextWord.level;
+          }
+
+          if (nextList) {
+            nextWord.list = nextList;
+          } else {
+            delete nextWord.list;
+          }
+        } else {
+          delete nextWord.level;
+          delete nextWord.list;
+        }
+
+        merged[idx] = nextWord;
         updated += 1;
       } else {
-        merged.push({
+        const nextWord = {
           ...incoming,
           id: nextId,
-        });
+        };
+
+        if (nextWord.category !== 'toefl') {
+          delete nextWord.level;
+          delete nextWord.list;
+        }
+
+        merged.push(nextWord);
         byWord.set(key, merged.length - 1);
         nextId += 1;
         inserted += 1;
