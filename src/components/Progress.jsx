@@ -19,8 +19,8 @@ function Progress({ total, learned, mastered, categoryName, onReset }) {
     : 'border-slate-300 bg-slate-100 text-slate-800 hover:border-slate-400 hover:bg-slate-200';
 
   return (
-    <section className={`rounded-[30px] border px-5 py-6 md:px-7 md:py-7 ${shellClass}`}>
-      <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+    <section className={`rounded-[30px] border px-5 py-6 md:px-7 md:py-7 text-center ${shellClass}`}>
+      <div className="flex flex-col items-center gap-2">
         <div>
           <p className="text-xs uppercase tracking-[0.18em] text-cyan-600">Progress</p>
           <h3 className="mt-1 text-2xl font-semibold tracking-tight">学习进度 · {categoryName}</h3>
@@ -32,7 +32,7 @@ function Progress({ total, learned, mastered, categoryName, onReset }) {
 
       <div className="mt-6 space-y-5">
         <div>
-          <div className="mb-2 flex items-center justify-between">
+          <div className="mb-2 flex items-center justify-center gap-3">
             <p className={`text-sm font-medium ${subtleTextClass}`}>已学习</p>
             <p className="text-sm font-semibold">{learnedPercent}%</p>
           </div>
@@ -45,7 +45,7 @@ function Progress({ total, learned, mastered, categoryName, onReset }) {
         </div>
 
         <div>
-          <div className="mb-2 flex items-center justify-between">
+          <div className="mb-2 flex items-center justify-center gap-3">
             <p className={`text-sm font-medium ${subtleTextClass}`}>已掌握</p>
             <p className="text-sm font-semibold">{masteredPercent}%</p>
           </div>
@@ -59,15 +59,15 @@ function Progress({ total, learned, mastered, categoryName, onReset }) {
       </div>
 
       <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3">
-        <div className={`rounded-2xl border px-4 py-3 ${statCardClass}`}>
+        <div className={`rounded-2xl border px-4 py-3 text-center ${statCardClass}`}>
           <p className="text-3xl font-semibold tracking-tight">{total}</p>
           <p className={`mt-1 text-xs uppercase tracking-[0.14em] ${subtleTextClass}`}>总词汇量</p>
         </div>
-        <div className={`rounded-2xl border px-4 py-3 ${statCardClass}`}>
+        <div className={`rounded-2xl border px-4 py-3 text-center ${statCardClass}`}>
           <p className="text-3xl font-semibold tracking-tight">{learned}</p>
           <p className={`mt-1 text-xs uppercase tracking-[0.14em] ${subtleTextClass}`}>已学习</p>
         </div>
-        <div className={`rounded-2xl border px-4 py-3 ${statCardClass}`}>
+        <div className={`rounded-2xl border px-4 py-3 text-center ${statCardClass}`}>
           <p className="text-3xl font-semibold tracking-tight">{mastered}</p>
           <p className={`mt-1 text-xs uppercase tracking-[0.14em] ${subtleTextClass}`}>已掌握</p>
         </div>

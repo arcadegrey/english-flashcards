@@ -5,15 +5,22 @@ import {
   getAvailableVoices,
   setTtsProvider as setGlobalProvider,
   getTtsProvider,
+  DEFAULT_KOKORO_TTS_ENDPOINT,
 } from '../utils/speech';
 import { storage } from '../utils/storage';
+
+const GLOBAL_KOKORO_ENDPOINT = (
+  import.meta.env.VITE_KOKORO_TTS_URL || DEFAULT_KOKORO_TTS_ENDPOINT
+).trim();
 
 function VoiceSettings({ onClose }) {
   const [voices, setVoices] = useState([]);
   const [selectedVoice, setSelectedVoiceState] = useState('');
   const [isPlaying, setIsPlaying] = useState(null);
   const [ttsProvider, setTtsProviderState] = useState(getTtsProvider());
-  const [kokoroEndpoint, setKokoroEndpointState] = useState(storage.getKokoroEndpoint());
+  const [kokoroEndpoint, setKokoroEndpointState] = useState(
+    storage.getKokoroEndpoint() || GLOBAL_KOKORO_ENDPOINT
+  );
   const [kokoroVoice, setKokoroVoiceState] = useState(storage.getKokoroVoice());
   const [kokoroSpeed, setKokoroSpeedState] = useState(storage.getKokoroSpeed());
   const [kokoroHint, setKokoroHint] = useState('');
@@ -83,7 +90,8 @@ function VoiceSettings({ onClose }) {
   };
 
   const handleKokoroPreview = async () => {
-    if (!kokoroEndpoint.trim()) {
+    const resolvedEndpoint = kokoroEndpoint.trim() || GLOBAL_KOKORO_ENDPOINT;
+    if (!resolvedEndpoint) {
       setKokoroHint('请先填写 Kokoro 接口地址');
       return;
     }
@@ -217,9 +225,14 @@ function VoiceSettings({ onClose }) {
             <div className="space-y-4">
               <div className="rounded-2xl border border-indigo-200 bg-indigo-50 p-4">
                 <p className="text-indigo-700 text-sm leading-relaxed">
-                  接入方式：请把本地或云端 Kokoro API 地址填在下面，例如
-                  `http://127.0.0.1:8880/v1/audio/speech`。
+                  接入方式：请把本地或云端 Kokoro API 地址填在下面（未填写时会尝试使用全站默认地址），例如
+                  `http://127.0.0.1:8880/v1/audio/speech` 或 `https://your-app.up.railway.app/v1/audio/speech`。
                 </p>
+                {GLOBAL_KOKORO_ENDPOINT && (
+                  <p className="mt-2 text-xs text-indigo-700/90 break-all">
+                    当前全站默认地址：{GLOBAL_KOKORO_ENDPOINT}
+                  </p>
+                )}
               </div>
 
               <div>

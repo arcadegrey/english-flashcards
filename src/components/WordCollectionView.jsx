@@ -121,6 +121,11 @@ function WordCollectionView({ title, subtitle, words, onBack, emptyHint }) {
                           例句：{word.example}
                         </p>
                       )}
+                      {word.exampleCn && (
+                        <p className={`text-sm md:text-base mt-1 ${isDark ? 'text-cyan-200/90' : 'text-cyan-800'}`}>
+                          中文：{word.exampleCn}
+                        </p>
+                      )}
                     </div>
                     <button
                       onClick={() => speak(word.word, { rate: 0.8 })}

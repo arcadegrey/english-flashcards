@@ -175,11 +175,22 @@ function HomeScreen({
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="搜索分类或单词..."
-              className="w-full px-6 py-5 pl-14 bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent text-lg transition-all"
+              className="w-full px-6 py-5 pl-14 pr-14 bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent text-lg transition-all"
             />
-            <span className="absolute left-5 top-1/2 -translate-y-1/2 text-2xl">
-              🔍
-            </span>
+            <div className="pointer-events-none absolute left-5 top-1/2 -translate-y-1/2 text-white/70">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.2"
+                className="h-5 w-5"
+                aria-hidden="true"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <path d="M20 20l-3.5-3.5" />
+              </svg>
+            </div>
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}

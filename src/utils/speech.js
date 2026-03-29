@@ -1,5 +1,8 @@
 import { storage } from './storage';
 
+export const DEFAULT_KOKORO_TTS_ENDPOINT =
+  'https://kokoro-api-production-9ea1.up.railway.app/v1/audio/speech';
+
 const browserTtsAvailable =
   typeof window !== 'undefined' && typeof window.speechSynthesis !== 'undefined';
 
@@ -85,7 +88,11 @@ const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 const getKokoroEndpoint = () => {
   const fromStorage = storage.getKokoroEndpoint();
   if (fromStorage) return fromStorage.trim();
-  return (import.meta.env.VITE_KOKORO_TTS_URL || '').trim();
+
+  const fromEnv = (import.meta.env.VITE_KOKORO_TTS_URL || '').trim();
+  if (fromEnv) return fromEnv;
+
+  return DEFAULT_KOKORO_TTS_ENDPOINT;
 };
 
 const base64ToBlob = (base64, mimeType = 'audio/mpeg') => {
@@ -158,11 +165,13 @@ const speakWithKokoro = async (text, options = {}) => {
   const speed = clamp(savedSpeed * rate, 0.5, 1.5);
 
   const payload = {
+    model: 'kokoro',
     input: text,
     text,
     voice: storage.getKokoroVoice(),
     speed,
     format: 'mp3',
+    response_format: 'mp3',
   };
 
   const response = await fetch(endpoint, {

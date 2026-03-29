@@ -42,7 +42,7 @@ function ToeflSelectionView({
         </button>
 
         <section className={`rounded-3xl border p-6 md:p-8 shadow-xl ${shellClass}`}>
-          <header className="mb-6 md:mb-8">
+          <header className="mb-6 text-center md:mb-8">
             <h2 className={`text-3xl md:text-4xl font-black tracking-tight ${isDark ? 'text-white' : 'text-slate-900'}`}>
               {title}
             </h2>
@@ -65,7 +65,7 @@ function ToeflSelectionView({
               {onSelectAll && (
                 <button
                   onClick={onSelectAll}
-                  className="w-full rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-4 text-left text-white shadow-lg transition hover:from-cyan-600 hover:to-blue-700"
+                  className="w-full rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-4 text-center text-white shadow-lg transition hover:from-cyan-600 hover:to-blue-700"
                 >
                   <p className="text-lg font-black">{selectAllLabel}</p>
                   <p className="text-sm text-white/90">{totalCount} 词</p>
@@ -77,7 +77,7 @@ function ToeflSelectionView({
                   <button
                     key={item.key}
                     onClick={() => onSelect?.(item.key)}
-                    className={`rounded-2xl border p-4 text-left transition ${cardClass}`}
+                    className={`rounded-2xl border p-4 text-center transition ${cardClass}`}
                   >
                     <p className={`text-xl font-black ${isDark ? 'text-white' : 'text-slate-900'}`}>{item.label}</p>
                     <p className={`mt-1 text-sm font-semibold ${isDark ? 'text-cyan-300' : 'text-cyan-700'}`}>
