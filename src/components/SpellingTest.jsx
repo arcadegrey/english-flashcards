@@ -84,7 +84,6 @@ function SpellingTest({ vocabulary }) {
     );
   }
 
-  const accuracy = questionCount > 0 ? Math.round((score / questionCount) * 100) : 0;
   const firstLetter = currentWord.word.charAt(0);
   const lastLetter = currentWord.word.charAt(currentWord.word.length - 1);
   const middleLength = Math.max(currentWord.word.length - 2, 0);
@@ -95,7 +94,7 @@ function SpellingTest({ vocabulary }) {
     <div className="space-y-8">
       <CorrectAnswerCelebration trigger={celebrationTrigger} />
 
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+      <div className="grid grid-cols-3 gap-4">
         <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-5 border-2 border-blue-300 shadow-lg">
           <div className="flex items-center gap-3 mb-2">
             <span className="text-3xl">📊</span>
@@ -123,9 +122,11 @@ function SpellingTest({ vocabulary }) {
             <span className="text-3xl">🎯</span>
             <span className="text-gray-700 font-bold text-lg">正确率</span>
           </div>
-          <p className="text-4xl font-black text-green-600">{accuracy}%</p>
+          <p className="text-4xl font-black text-green-600">
+            {questionCount > 0 ? Math.round((score / questionCount) * 100) : 0}%
+          </p>
           <p className="text-gray-600 font-bold text-xs mt-1">
-            {questionCount > 0 ? (accuracy >= 80 ? '太棒了！' : '继续练习！') : '开始答题吧！'}
+            {questionCount > 0 ? (score / questionCount >= 0.8 ? '太棒了！' : '继续练习！') : '开始答题吧！'}
           </p>
         </div>
       </div>

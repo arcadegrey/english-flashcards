@@ -3,7 +3,31 @@ import { speak } from '../utils/speech';
 import { playSuccessChime } from '../utils/feedback';
 import CorrectAnswerCelebration from './CorrectAnswerCelebration';
 
-function FillBlank({ vocabulary }) {
+const BLANK_TOKEN = '______';
+
+const escapeRegExp = (value = '') => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+const buildHiddenSentence = (example = '', answerWord = '') => {
+  const safeExample = String(example || '').trim();
+  const safeWord = String(answerWord || '').trim();
+  if (!safeExample || !safeWord) return '';
+
+  const escapedWord = escapeRegExp(safeWord);
+  const exactRegex = new RegExp(`\\b${escapedWord}\\b`, 'i');
+  if (exactRegex.test(safeExample)) {
+    return safeExample.replace(exactRegex, BLANK_TOKEN);
+  }
+
+  // Fallback for simple inflections: word + s/es/ed/ing.
+  const inflectionRegex = new RegExp(`\\b${escapedWord}(s|es|ed|ing)?\\b`, 'i');
+  if (inflectionRegex.test(safeExample)) {
+    return safeExample.replace(inflectionRegex, BLANK_TOKEN);
+  }
+
+  return '';
+};
+
+function FillBlank({ vocabulary, sourceLabel = '' }) {
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [options, setOptions] = useState([]);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -12,38 +36,59 @@ function FillBlank({ vocabulary }) {
   const [questionCount, setQuestionCount] = useState(0);
   const [streak, setStreak] = useState(0);
   const [sentence, setSentence] = useState('');
+  const [questionError, setQuestionError] = useState('');
   const [celebrationTrigger, setCelebrationTrigger] = useState(0);
   const nextQuestionTimer = useRef(null);
 
   const generateQuestion = useCallback(() => {
-    if (vocabulary.length === 0) {
+    if (!Array.isArray(vocabulary) || vocabulary.length === 0) {
+      setQuestionError('当前词库为空，暂时无法生成填空题。');
+      setCurrentQuestion(null);
+      setOptions([]);
+      setSentence('');
       return;
     }
 
-    const randomIndex = Math.floor(Math.random() * vocabulary.length);
-    const word = vocabulary[randomIndex];
+    const candidates = vocabulary.filter((item) => item?.word && item?.example);
+    if (candidates.length === 0) {
+      setQuestionError('当前词库缺少可用例句，暂时无法生成填空题。');
+      setCurrentQuestion(null);
+      setOptions([]);
+      setSentence('');
+      return;
+    }
 
-    const sentence = word.example;
-    const wordInSentence = word.word;
-    
-    const regex = new RegExp(`\\b${wordInSentence}\\b`, 'i');
-    const hiddenSentence = sentence.replace(regex, '______');
+    const shuffledCandidates = [...candidates].sort(() => Math.random() - 0.5);
 
-    const wrongOptions = [];
-    while (wrongOptions.length < 3) {
-      const randomIndex = Math.floor(Math.random() * vocabulary.length);
-      const wrongWord = vocabulary[randomIndex];
-      if (
-        wrongWord.id !== word.id &&
-        !wrongOptions.find((w) => w.id === wrongWord.id)
-      ) {
-        wrongOptions.push(wrongWord);
+    let selectedWord = null;
+    let hiddenSentence = '';
+
+    for (const item of shuffledCandidates) {
+      const nextHiddenSentence = buildHiddenSentence(item.example, item.word);
+      if (nextHiddenSentence && nextHiddenSentence !== item.example) {
+        selectedWord = item;
+        hiddenSentence = nextHiddenSentence;
+        break;
       }
     }
 
-    const allOptions = [word, ...wrongOptions].sort(() => Math.random() - 0.5);
+    if (!selectedWord) {
+      setQuestionError('当前例句中无法自动挖空目标词，请切换词库后重试。');
+      setCurrentQuestion(null);
+      setOptions([]);
+      setSentence('');
+      return;
+    }
 
-    setCurrentQuestion(word);
+    const distractorPool = vocabulary.filter((item) => item.id !== selectedWord.id);
+    const wrongOptions = [...distractorPool]
+      .sort(() => Math.random() - 0.5)
+      .slice(0, Math.min(3, distractorPool.length));
+
+    const allOptions = [selectedWord, ...wrongOptions].sort(() => Math.random() - 0.5);
+
+    setQuestionError('');
+    setCurrentQuestion(selectedWord);
     setOptions(allOptions);
     setSelectedAnswer(null);
     setIsCorrect(null);
@@ -100,6 +145,14 @@ function FillBlank({ vocabulary }) {
     }
   };
 
+  if (questionError) {
+    return (
+      <div className="text-center py-12">
+        <p className="text-2xl font-bold text-rose-500">{questionError}</p>
+      </div>
+    );
+  }
+
   if (!currentQuestion || !sentence) {
     return (
       <div className="text-gray-500 text-center py-12">
@@ -153,6 +206,11 @@ function FillBlank({ vocabulary }) {
         <p className="text-gray-500 text-center mb-6 text-3xl font-bold">
           用正确的单词填空
         </p>
+        {sourceLabel && (
+          <p className="text-center mb-6 text-sm font-semibold text-cyan-600">
+            题目来源：{sourceLabel}
+          </p>
+        )}
         
         <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-10 border-2 border-purple-200 mb-8">
           <p className="text-4xl md:text-5xl font-bold text-gray-800 leading-relaxed text-center">

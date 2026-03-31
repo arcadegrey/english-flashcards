@@ -45,6 +45,8 @@ function LearningView({
   const useLearnedPool = learnedVocabulary.length > 0;
   const quizVocabulary = useLearnedPool ? learnedVocabulary : allVocabulary;
   const quizSourceLabel = useLearnedPool ? '已学习词库' : '随机测验 · 全词库';
+  const fillBlankVocabulary = useLearnedPool ? learnedVocabulary : allVocabulary;
+  const fillBlankSourceLabel = useLearnedPool ? '已学习词库' : '随机测验 · 全词库';
 
   const shellClass = isDark
     ? 'border-slate-800 bg-slate-900/86 text-slate-100 shadow-[0_18px_60px_rgba(2,6,23,0.55)]'
@@ -154,7 +156,10 @@ function LearningView({
               onAddMastered={onAddMastered}
             />
           ) : mode === 'fillblank' ? (
-            <FillBlank vocabulary={filteredVocabulary} />
+            <FillBlank
+              vocabulary={fillBlankVocabulary}
+              sourceLabel={fillBlankSourceLabel}
+            />
           ) : mode === 'spelling' ? (
             <SpellingTest vocabulary={filteredVocabulary} />
           ) : null}
