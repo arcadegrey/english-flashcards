@@ -232,7 +232,7 @@ function FillBlank({ vocabulary, sourceLabel = '' }) {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
         {options.map((option, index) => {
           let buttonClass = 'bg-white hover:bg-gray-50 text-gray-800 border-2 border-gray-200 hover:border-purple-300';
 
@@ -251,7 +251,7 @@ function FillBlank({ vocabulary, sourceLabel = '' }) {
               key={option.id}
               onClick={() => handleAnswer(option)}
               disabled={selectedAnswer !== null}
-              className={`px-8 py-12 rounded-2xl font-bold text-2xl transition-colors duration-200 text-center shadow-xl ${buttonClass} ${
+              className={`px-8 py-10 rounded-2xl font-bold text-2xl transition-colors duration-200 text-center shadow-xl ${buttonClass} ${
                 !selectedAnswer ? 'hover:-translate-y-1 active:translate-y-0' : ''
               }`}
             >
@@ -262,8 +262,8 @@ function FillBlank({ vocabulary, sourceLabel = '' }) {
                   {String.fromCharCode(65 + index)}
                 </span>
                 <div>
-                  <p className="text-5xl font-bold">{option.word}</p>
-                  <p className="text-gray-500 text-2xl mt-2">{option.phonetic}</p>
+                  <p className="text-3xl leading-snug">{option.word}</p>
+                  <p className="text-gray-500 text-lg mt-2">{option.phonetic || ''}</p>
                 </div>
               </div>
             </button>
