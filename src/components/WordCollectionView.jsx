@@ -22,10 +22,10 @@ function WordCollectionView({ title, subtitle, words, onBack, emptyHint }) {
 
   return (
     <div className="min-h-screen py-8 px-4">
-      <div className="max-w-5xl mx-auto">
+      <div className="w-full" style={{ maxWidth: '960px', marginInline: 'auto' }}>
         <button
           onClick={onBack}
-          className={`mb-6 flex items-center gap-2 px-5 py-3 rounded-2xl transition-all border font-bold ${
+          className={`mx-auto mb-6 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl transition-all border font-bold ${
             isDark
               ? 'bg-white/10 backdrop-blur-md hover:bg-white/20 border-white/20 hover:border-white/40 text-white'
               : 'bg-white/90 hover:bg-white border-slate-200 text-slate-800 shadow-sm'
@@ -42,7 +42,7 @@ function WordCollectionView({ title, subtitle, words, onBack, emptyHint }) {
               : 'border-slate-200 bg-white/95'
           }`}
         >
-          <div className="mb-6">
+          <div className="mb-6 text-center">
             <h2
               className={`text-3xl md:text-4xl font-black tracking-tight ${
                 isDark ? 'text-white' : 'text-slate-900'
@@ -63,7 +63,7 @@ function WordCollectionView({ title, subtitle, words, onBack, emptyHint }) {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="搜索单词、释义或音标..."
-              className={`w-full rounded-2xl border px-5 py-4 focus:outline-none focus:ring-2 ${
+              className={`w-full rounded-2xl border px-5 py-4 text-center focus:outline-none focus:ring-2 ${
                 isDark
                   ? 'border-white/30 bg-white/15 text-white placeholder:text-white/50 focus:ring-white/40'
                   : 'border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 focus:ring-sky-300'
@@ -94,13 +94,13 @@ function WordCollectionView({ title, subtitle, words, onBack, emptyHint }) {
               {filteredWords.map((word) => (
                 <article
                   key={word.id}
-                  className={`rounded-2xl border px-4 py-4 md:px-5 md:py-5 shadow-lg ${
+                  className={`rounded-2xl border px-4 py-4 text-center md:px-5 md:py-5 shadow-lg ${
                     isDark ? 'border-slate-700 bg-slate-900/75' : 'border-slate-200 bg-slate-50'
                   }`}
                 >
-                  <div className="flex items-start justify-between gap-4">
+                  <div className="flex flex-col items-center justify-center gap-3">
                     <div className="min-w-0">
-                      <div className="flex flex-wrap items-center gap-3">
+                      <div className="flex flex-wrap items-center justify-center gap-3">
                         <h3
                           className={`text-2xl md:text-3xl font-black tracking-tight ${
                             isDark ? 'text-white' : 'text-slate-900'

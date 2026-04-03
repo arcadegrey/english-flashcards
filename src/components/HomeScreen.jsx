@@ -154,159 +154,125 @@ function HomeScreen({
     onCategorySelect(category.id);
   };
 
-  return (
-    <div className="min-h-screen">
-      <header className="text-center py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight leading-tight">
-            📚 英语单词卡片
-          </h1>
-          <p className="text-white/80 text-xl md:text-2xl font-light max-w-2xl mx-auto leading-relaxed">
-            四六级核心词汇 · 高效记忆 · 成就流利英语
-          </p>
-        </div>
-      </header>
+  const cardClass =
+    'rounded-[14px] border border-[#e5e7eb] bg-white shadow-[0_1px_3px_rgba(15,23,42,0.08)]';
 
-      <div className="max-w-7xl mx-auto px-4 pb-16">
-        <div className="mb-8">
-          <div className="relative max-w-2xl mx-auto">
+  const iconStyleById = {
+    learnedWords: 'bg-sky-100 text-sky-700',
+    masteredWords: 'bg-emerald-100 text-emerald-700',
+    all: 'bg-indigo-100 text-indigo-700',
+  };
+
+  return (
+    <div className="min-h-screen bg-[#f8fafc] font-sans text-base leading-[1.6] text-[#111827]">
+      <div className="w-full px-4 py-8 space-y-14" style={{ maxWidth: '960px', marginInline: 'auto' }}>
+        <header className="space-y-4">
+          <div className={`${cardClass} p-5 md:p-6`}>
+            <div className="text-center">
+              <div>
+                <h1 className="text-[32px] font-bold leading-tight text-[#111827]">英语单词卡片</h1>
+                <p className="mt-2 text-base leading-[1.6] text-[#6b7280]">
+                  四六级核心词汇 · 结构化学习路径 · 更轻松的词汇复习体验
+                </p>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section className="rounded-[14px] border border-[#e5e7eb] bg-[#f5f5f7] p-5 shadow-[0_1px_3px_rgba(15,23,42,0.08)] md:p-6">
+          <div className="relative">
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="搜索分类或单词..."
-              className="w-full px-6 py-5 pl-14 pr-14 bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/50 focus:border-transparent text-lg transition-all"
+              className="w-full min-h-[44px] rounded-[10px] border border-[#e5e7eb] bg-white px-4 py-3 pr-11 text-center text-[#111827] placeholder:text-[#9ca3af] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/20 focus:border-[#4f46e5]"
             />
-            <div className="pointer-events-none absolute left-5 top-1/2 -translate-y-1/2 text-white/70">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.2"
-                className="h-5 w-5"
-                aria-hidden="true"
-              >
-                <circle cx="11" cy="11" r="7" />
-                <path d="M20 20l-3.5-3.5" />
-              </svg>
-            </div>
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
-                className="absolute right-5 top-1/2 -translate-y-1/2 text-white/60 hover:text-white transition-colors"
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-[#9ca3af] transition hover:text-[#6b7280]"
               >
                 ✕
               </button>
             )}
           </div>
+
           {debouncedQuery && (
-            <p className="text-center text-white/60 mt-3">
-              找到 {filteredCategories.length} 个分类，共{' '}
-              <span className="font-bold text-white">{totalMatchedWords}</span> 个匹配单词
+            <p className="mt-3 text-center text-sm text-[#6b7280]">
+              找到 {filteredCategories.length} 个分类，共 <span className="font-semibold text-[#111827]">{totalMatchedWords}</span>{' '}
+              个匹配单词
             </p>
           )}
-        </div>
+        </section>
 
-        <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl border border-white/20">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
-              {debouncedQuery ? '搜索结果' : '选择你的学习分类'}
+        <section className={`${cardClass} p-5 md:p-6`}>
+          <div className="mb-5 space-y-1 text-center">
+            <h2 className="text-2xl font-semibold text-[#111827]">
+              {debouncedQuery ? '搜索结果' : '选择学习分类'}
             </h2>
-            <p className="text-white/60 text-lg">
+            <p className="text-sm text-[#6b7280]">
               {debouncedQuery
                 ? `共 ${filteredCategories.length} 个匹配分类`
-                : `共 ${categoriesWithCollections.length} 个分类，开始你的词汇之旅`}
+                : `共 ${categoriesWithCollections.length} 个分类`}
             </p>
           </div>
 
           {filteredCategories.length === 0 ? (
-            <div className="text-center py-12">
-              <p className="text-white/60 text-xl">未找到匹配的分类或单词</p>
-              <p className="text-white/40 text-sm mt-2">尝试其他搜索词</p>
+            <div className={`p-6 text-center ${cardClass}`}>
+              <p className="text-base text-[#6b7280]">未找到匹配的分类或单词</p>
+              <p className="mt-1 text-sm text-[#9ca3af]">尝试其他搜索词</p>
             </div>
           ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-5">
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
               {filteredCategories.map((category) => {
                 const count = filteredWordCounts[category.id] || 0;
+                const iconStyle = iconStyleById[category.id] || 'bg-slate-100 text-slate-600';
 
                 return (
                   <button
                     key={category.id}
                     onClick={() => handleCategoryClick(category)}
-                    className={`group relative p-6 md:p-7 rounded-3xl transition-all duration-500 text-center overflow-hidden ${
-                      category.id === 'all'
-                        ? 'bg-gradient-to-br from-purple-500 via-indigo-500 to-purple-600'
-                        : 'bg-white/80 hover:bg-white backdrop-blur-sm'
-                    } shadow-xl hover:shadow-2xl hover:-translate-y-1 active:translate-y-0`}
+                    className="group min-h-[44px] rounded-[14px] border border-[#e5e7eb] bg-white p-4 text-center shadow-[0_1px_3px_rgba(15,23,42,0.08)] transition duration-200 hover:-translate-y-[2px] hover:border-[#0071e3] hover:bg-[#0071e3]"
                   >
-                    <div
-                      className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-gradient-to-br ${category.color}`}
-                    />
-
-                    <div
-                      className={`absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 ${
-                        category.id === 'all'
-                          ? 'bg-gradient-to-r from-purple-300 to-indigo-300'
-                          : `bg-gradient-to-br ${category.color}`
-                      }`}
-                      style={{ filter: 'blur(20px)' }}
-                    />
-
-                    <div className="relative z-10">
-                      <div className="text-5xl md:text-6xl mb-4 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+                    <div className="flex flex-col items-center justify-center gap-2">
+                      <span
+                        className={`inline-flex h-9 w-9 items-center justify-center rounded-[10px] text-lg transition-colors duration-200 ${iconStyle} group-hover:bg-white/20 group-hover:text-white`}
+                        aria-hidden="true"
+                      >
                         {category.icon}
-                      </div>
-
-                      <h3
-                        className={`font-bold text-sm md:text-base mb-2 leading-tight ${
-                          category.id === 'all' ? 'text-white' : 'text-gray-800'
-                        }`}
-                      >
-                        {category.name}
-                      </h3>
-
-                      <div
-                        className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-bold ${
-                          category.id === 'all'
-                            ? 'bg-white/20 text-white'
-                            : `bg-gradient-to-r ${category.color} text-white shadow-lg`
-                        }`}
-                      >
-                        <span>📖</span>
-                        <span>{count} 词</span>
+                      </span>
+                      <div className="min-w-0 text-center">
+                        <p className="truncate text-base font-semibold text-[#111827] transition-colors duration-200 group-hover:text-white">
+                          {category.name}
+                        </p>
+                        <p className="text-sm text-[#6b7280] transition-colors duration-200 group-hover:text-white/90">
+                          {count} 词
+                        </p>
                       </div>
                     </div>
-
-                    <div
-                      className={`absolute -bottom-2 -right-2 w-16 h-16 rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-500 bg-gradient-to-br ${category.color}`}
-                    />
                   </button>
                 );
               })}
             </div>
           )}
-        </div>
+        </section>
 
         {!debouncedQuery && (
-          <div className="mt-8 grid grid-cols-3 gap-4 max-w-3xl mx-auto">
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center border border-white/20">
-              <p className="text-3xl md:text-4xl font-black text-white mb-1">
-                {wordCounts.all || 0}
-              </p>
-              <p className="text-white/60 text-sm">总词汇量</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center border border-white/20">
-              <p className="text-3xl md:text-4xl font-black text-white mb-1">
-                {categoriesWithCollections.length}
-              </p>
-              <p className="text-white/60 text-sm">学习分类</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 text-center border border-white/20">
-              <p className="text-3xl md:text-4xl font-black text-white mb-1">∞</p>
-              <p className="text-white/60 text-sm">学习可能</p>
-            </div>
-          </div>
+          <section className="grid grid-cols-1 gap-3 md:grid-cols-3">
+            <article className={`${cardClass} p-4 text-center`}>
+              <p className="text-2xl font-semibold text-[#111827]">{wordCounts.all || 0}</p>
+              <p className="text-sm text-[#6b7280]">总词汇量</p>
+            </article>
+            <article className={`${cardClass} p-4 text-center`}>
+              <p className="text-2xl font-semibold text-[#111827]">{categoriesWithCollections.length}</p>
+              <p className="text-sm text-[#6b7280]">学习分类</p>
+            </article>
+            <article className={`${cardClass} p-4 text-center`}>
+              <p className="text-2xl font-semibold text-[#111827]">持续更新</p>
+              <p className="text-sm text-[#6b7280]">更多词库可导入</p>
+            </article>
+          </section>
         )}
       </div>
     </div>
