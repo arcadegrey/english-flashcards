@@ -1,183 +1,102 @@
-import { useState } from 'react';
+import { useMemo } from 'react';
 import { speak } from '../utils/speech';
-import { useTheme } from '../context/ThemeContext';
 
-function Card({ word, total, currentIndex, onNext, onPrev, onMarkLearned, onMarkMastered, isLearned, isMastered }) {
-  const [isFlipped, setIsFlipped] = useState(false);
-  const { isDark } = useTheme();
-
-  if (!word) return <div className="text-gray-500 text-center">加载中...</div>;
-
-  const speakWord = (e) => {
-    e.stopPropagation();
-    if (navigator.vibrate) {
-      navigator.vibrate(10);
+function Card({ word, showHint = false }) {
+  const hints = useMemo(() => {
+    if (!word) {
+      return {
+        synonymHint: '暂无近义词数据',
+        rootHint: '暂无词根词缀数据',
+        extraExampleHint: '暂无更多例句数据',
+      };
     }
-    speak(word.word, { rate: 0.8 });
-  };
 
-  const speakExample = (e) => {
-    e.stopPropagation();
-    if (navigator.vibrate) {
-      navigator.vibrate(10);
-    }
-    speak(word.example, { rate: 0.9 });
-  };
+    const meaningParts = String(word.meaning || '')
+      .split(/[；;，,、]/)
+      .map((item) => item.trim())
+      .filter(Boolean);
 
-  const handleFlip = () => {
-    if (navigator.vibrate) {
-      navigator.vibrate(5);
-    }
-    setIsFlipped(!isFlipped);
-  };
+    const synonymHint = meaningParts.length > 1 ? meaningParts.slice(0, 2).join(' / ') : '暂无近义词数据';
+
+    const cleanWord = String(word.word || '').replace(/[^a-zA-Z]/g, '');
+    const rootHint =
+      cleanWord.length >= 6
+        ? `可拆分记忆：${cleanWord.slice(0, 3)} + ${cleanWord.slice(3)}`
+        : '暂无词根词缀数据';
+
+    const extraExampleHint = word.example
+      ? '尝试改写例句主语（I / We / They）并朗读一遍。'
+      : '暂无更多例句数据';
+
+    return { synonymHint, rootHint, extraExampleHint };
+  }, [word]);
+
+  if (!word) {
+    return (
+      <article className="learn-refresh-card learn-refresh-card-enter">
+        <p className="learn-refresh-empty">当前没有可学习的单词，请先选择词库。</p>
+      </article>
+    );
+  }
+
+  const meaningLine = word.pos ? `${word.pos} ${word.meaning}` : word.meaning;
 
   return (
-    <div className="space-y-8">
-      <div className="flex flex-col items-center">
-        <div className="flex items-center gap-3 mb-3">
-          <span className={`text-lg ${isDark ? 'text-white/80' : 'text-gray-600'}`}>学习进度</span>
-          <span className={`font-bold text-xl ${isDark ? 'text-white' : 'text-gray-800'}`}>
-            {currentIndex + 1} / {total}
-          </span>
+    <article className="learn-refresh-card learn-refresh-card-enter" aria-live="polite">
+      <header className="learn-refresh-word-block">
+        <h1 className="learn-refresh-word">{word.word}</h1>
+        <div className="learn-refresh-phonetic-row">
+          <p className="learn-refresh-phonetic">{word.phonetic || '暂无音标'}</p>
+          <button
+            type="button"
+            className="learn-refresh-inline-audio"
+            aria-label="播放发音"
+            onClick={() => speak(word.word, { rate: 0.8 })}
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 9v6h4l5 4V5L7 9H3z" />
+              <path d="M16.5 8.5a4.5 4.5 0 010 7" />
+              <path d="M19.5 6a8 8 0 010 12" />
+            </svg>
+          </button>
         </div>
-        <div className={`w-full max-w-md h-3 rounded-full overflow-hidden ${isDark ? 'bg-white/20' : 'bg-gray-200'}`}>
-          <div
-            className="h-full bg-gradient-to-r from-purple-400 to-pink-400 transition-all duration-500 rounded-full"
-            style={{ width: `${((currentIndex + 1) / total) * 100}%` }}
-          />
-        </div>
-        <div className="flex items-center gap-4 mt-3">
-          <span
-            className={`px-3 py-1 rounded-full text-sm font-medium ${
-              isMastered
-                ? isDark
-                  ? 'bg-green-500/30 text-green-300'
-                  : 'bg-green-100 text-green-700'
-                : isLearned
-                  ? isDark
-                    ? 'bg-blue-500/30 text-blue-300'
-                    : 'bg-blue-100 text-blue-700'
-                  : isDark
-                    ? 'bg-purple-500/30 text-purple-300'
-                    : 'bg-purple-100 text-purple-700'
-          }`}>
-            {isMastered ? '✅ 已掌握' : isLearned ? '📖 已学习' : '🆕 新单词'}
-          </span>
-        </div>
-      </div>
+      </header>
 
-      <div
-        className="relative h-[450px] cursor-pointer perspective-1000"
-        onClick={handleFlip}
-      >
-        <div
-          className={`relative w-full h-full transition-transform duration-700 transform-style-3d ${
-            isFlipped ? 'rotate-y-180' : ''
-          }`}
-          style={{
-            transformStyle: 'preserve-3d',
-            transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
-          }}
-        >
-          <div
-            className="absolute w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-2xl p-10 flex flex-col items-center justify-center backface-hidden border border-white/20"
-            style={{ backfaceVisibility: 'hidden' }}
-          >
-            <p className="text-base text-gray-400 mb-4">点击卡片翻转</p>
-            <h2 className="text-7xl md:text-8xl font-black text-gray-800 mb-6 tracking-tight">{word.word}</h2>
-            <p className="text-3xl text-gray-500 font-mono bg-gray-100 px-10 py-4 rounded-full">{word.phonetic}</p>
-            <button
-              onClick={speakWord}
-              className="mt-8 px-10 py-5 min-h-[60px] bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-full hover:from-purple-600 hover:to-indigo-600 transition-all shadow-xl hover:shadow-2xl font-bold text-2xl flex items-center gap-3"
-            >
-              <span className="text-3xl">🔊</span>
-              <span>听发音</span>
-            </button>
-          </div>
+      <p className="learn-refresh-meaning">{meaningLine || '暂无释义'}</p>
 
-          <div
-            className="absolute w-full h-full bg-gradient-to-br from-violet-600 via-purple-600 to-indigo-600 rounded-3xl shadow-2xl p-8 flex flex-col items-center justify-center backface-hidden"
-            style={{ 
-              backfaceVisibility: 'hidden',
-              transform: 'rotateY(180deg)'
-            }}
-          >
-            <div className="text-white text-center space-y-5 w-full px-4">
-              <span className="inline-block px-5 py-3 bg-white/15 backdrop-blur-sm rounded-full text-lg font-medium">
-                {word.pos}
-              </span>
-              <p className="text-4xl md:text-5xl font-black leading-snug">{word.meaning}</p>
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 w-full">
-                <p className="text-white/95 text-xl md:text-2xl leading-relaxed">"{word.example}"</p>
-                {word.exampleCn && (
-                  <p className="text-white/80 text-lg md:text-xl mt-4 leading-relaxed">{word.exampleCn}</p>
-                )}
-                <div className="mt-6 flex justify-center">
-                  <button
-                    onClick={speakExample}
-                    className="px-8 py-4 min-h-[50px] bg-white/25 hover:bg-white/35 rounded-full font-bold text-xl transition-all inline-flex items-center gap-3"
-                  >
-                    <span className="text-2xl">🔊</span>
-                    <span>听例句</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="space-y-6">
-        <div className="flex justify-center gap-4">
+      <section className="learn-refresh-example-block" aria-label="例句">
+        <div className="learn-refresh-example-head">
+          <span className="learn-refresh-example-label">例句</span>
           <button
-            onClick={onPrev}
-            className="flex-1 max-w-[200px] px-8 py-5 min-h-[70px] bg-gray-200 text-gray-700 rounded-2xl hover:bg-gray-300 transition-all font-bold text-2xl flex items-center justify-center gap-3 shadow-xl"
+            type="button"
+            className="learn-refresh-example-audio"
+            onClick={() => speak(word.example, { rate: 0.82 })}
+            disabled={!word.example}
+            aria-label="播放例句"
           >
-            <span className="text-3xl">⬅️</span>
-            <span>上一个</span>
-          </button>
-          <button
-            onClick={() => setIsFlipped(!isFlipped)}
-            className="flex-1 max-w-[200px] px-8 py-5 min-h-[70px] bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-2xl hover:from-purple-600 hover:to-pink-600 transition-all font-bold text-2xl flex items-center justify-center gap-3 shadow-2xl"
-          >
-            <span className="text-3xl">🔄</span>
-            <span>翻转</span>
-          </button>
-          <button
-            onClick={onNext}
-            className="flex-1 max-w-[200px] px-8 py-5 min-h-[70px] bg-gray-200 text-gray-700 rounded-2xl hover:bg-gray-300 transition-all font-bold text-2xl flex items-center justify-center gap-3 shadow-xl"
-          >
-            <span>下一个</span>
-            <span className="text-3xl">➡️</span>
+            播放例句
           </button>
         </div>
+        <p className="learn-refresh-example-en">{word.example || '暂无英文例句。'}</p>
+        <p className="learn-refresh-example-cn">{word.exampleCn || '暂无中文例句。'}</p>
+      </section>
 
-        <div className="flex justify-center gap-4 pt-4">
-          <button
-            onClick={onMarkLearned}
-            disabled={isLearned || isMastered}
-            className={`flex-1 max-w-[250px] px-8 py-5 min-h-[70px] rounded-2xl font-bold text-2xl transition-all ${
-              isLearned || isMastered
-                ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                : 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white hover:from-blue-600 hover:to-cyan-600 shadow-2xl'
-            }`}
-          >
-            {isLearned ? '✓ 已学习' : '📖 标记为已学习'}
-          </button>
-          <button
-            onClick={onMarkMastered}
-            disabled={isMastered}
-            className={`flex-1 max-w-[250px] px-8 py-5 min-h-[70px] rounded-2xl font-bold text-2xl transition-all ${
-              isMastered
-                ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                : 'bg-gradient-to-r from-green-500 to-emerald-500 text-white hover:from-green-600 hover:to-emerald-600 shadow-2xl'
-            }`}
-          >
-            {isMastered ? '✓ 已掌握' : '✅ 标记为已掌握'}
-          </button>
+      <section className={`learn-refresh-expandable ${showHint ? 'is-open' : ''}`}>
+        <h2 className="learn-refresh-expandable-title">学习提示</h2>
+        <div className="learn-refresh-hint-item">
+          <span className="learn-refresh-hint-label">近义提示</span>
+          <p className="learn-refresh-hint-text">{hints.synonymHint}</p>
         </div>
-      </div>
-    </div>
+        <div className="learn-refresh-hint-item">
+          <span className="learn-refresh-hint-label">词根词缀</span>
+          <p className="learn-refresh-hint-text">{hints.rootHint}</p>
+        </div>
+        <div className="learn-refresh-hint-item">
+          <span className="learn-refresh-hint-label">更多练习</span>
+          <p className="learn-refresh-hint-text">{hints.extraExampleHint}</p>
+        </div>
+      </section>
+    </article>
   );
 }
 

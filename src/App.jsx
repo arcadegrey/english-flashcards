@@ -213,6 +213,7 @@ function AppContent() {
       setSelectedToeflLevel('')
       setSelectedToeflList('')
     }
+    setMode('learn')
     setView('learn')
   }
 
@@ -229,12 +230,16 @@ function AppContent() {
     setSelectedToeflList('')
 
     const nextLists = toeflGrouping.listsByLevel[levelKey] || []
+    if (nextLists.length === 0) {
+      setMode('learn')
+    }
     setView(nextLists.length > 0 ? 'toeflLists' : 'learn')
   }
 
   const handleToeflListSelect = (listKey) => {
     setSelectedCategory('toefl')
     setSelectedToeflList(listKey)
+    setMode('learn')
     setView('learn')
   }
 
@@ -242,12 +247,14 @@ function AppContent() {
     setSelectedCategory('toefl')
     setSelectedToeflLevel('')
     setSelectedToeflList('')
+    setMode('learn')
     setView('learn')
   }
 
   const handleStartCurrentLevel = () => {
     setSelectedCategory('toefl')
     setSelectedToeflList('')
+    setMode('learn')
     setView('learn')
   }
 
@@ -272,11 +279,6 @@ function AppContent() {
   const nextCard = () => {
     if (shuffledWords.length === 0) return
     setCurrentIndex((prev) => (prev + 1) % shuffledWords.length)
-  }
-
-  const prevCard = () => {
-    if (shuffledWords.length === 0) return
-    setCurrentIndex((prev) => (prev - 1 + shuffledWords.length) % shuffledWords.length)
   }
 
   const resetProgress = () => {
@@ -329,6 +331,10 @@ function AppContent() {
   const appBackground = useMemo(() => {
     if (view === 'home') {
       return 'bg-[#f8fafc]'
+    }
+
+    if (view === 'learn') {
+      return 'bg-[#fbfbfd]'
     }
 
     return isDark
@@ -393,12 +399,8 @@ function AppContent() {
             currentWord={currentWord}
             filteredVocabulary={filteredVocabulary}
             currentIndex={currentIndex}
-            onNext={nextCard}
-            onPrev={prevCard}
             onMarkLearned={markAsLearned}
             onMarkMastered={markAsMastered}
-            isLearned={learnedWords.includes(currentWord?.id)}
-            isMastered={masteredWords.includes(currentWord?.id)}
             masteredWords={masteredWords}
             onAddMastered={(id) => {
               if (!masteredWords.includes(id)) {
@@ -470,13 +472,17 @@ function AppContent() {
     }
   }
 
+  if (view === 'learn') {
+    return <div className={`min-h-screen ${appBackground}`}>{renderView()}</div>
+  }
+
   return (
     <div className={`min-h-screen ${appBackground} py-8 px-4`}>
       <div className="w-full" style={{ maxWidth: '1200px', marginInline: 'auto' }}>
         {view === 'home' && (
           <div className="mb-8 w-full" style={{ maxWidth: '960px', marginInline: 'auto' }}>
             <div className="rounded-[14px] border border-[#e5e7eb] bg-white p-4 shadow-[0_1px_3px_rgba(15,23,42,0.08)]">
-              <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+              <div className="grid grid-cols-2 gap-3">
                 <button
                   onClick={() => setView('statistics')}
                   className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] border border-[#d1d5db] bg-white px-4 py-2 text-base font-semibold text-[#111827] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white"

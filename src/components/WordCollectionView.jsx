@@ -102,27 +102,27 @@ function WordCollectionView({ title, subtitle, words, onBack, emptyHint }) {
                     <div className="min-w-0">
                       <div className="flex flex-wrap items-center justify-center gap-3">
                         <h3
-                          className={`text-2xl md:text-3xl font-black tracking-tight ${
+                          className={`text-2xl md:text-3xl font-black tracking-tight break-all ${
                             isDark ? 'text-white' : 'text-slate-900'
                           }`}
                         >
                           {word.word}
                         </h3>
-                        <span className={`${isDark ? 'text-sky-300' : 'text-cyan-700'} font-mono text-sm md:text-base`}>
+                        <span className={`${isDark ? 'text-sky-300' : 'text-cyan-700'} font-mono text-sm md:text-base break-all`}>
                           {word.phonetic || 'N/A'}
                         </span>
                         <span className={`${isDark ? 'text-slate-300' : 'text-slate-500'} text-sm`}>{word.pos}</span>
                       </div>
-                      <p className={`text-base md:text-lg mt-2 ${isDark ? 'text-slate-100' : 'text-slate-700'}`}>
+                      <p className={`text-base md:text-lg mt-2 break-words ${isDark ? 'text-slate-100' : 'text-slate-700'}`}>
                         {word.meaning}
                       </p>
                       {word.example && (
-                        <p className={`text-sm md:text-base mt-2 ${isDark ? 'text-slate-300' : 'text-slate-500'}`}>
+                        <p className={`text-sm md:text-base mt-2 break-words ${isDark ? 'text-slate-300' : 'text-slate-500'}`}>
                           例句：{word.example}
                         </p>
                       )}
                       {word.exampleCn && (
-                        <p className={`text-sm md:text-base mt-1 ${isDark ? 'text-cyan-200/90' : 'text-cyan-800'}`}>
+                        <p className={`text-sm md:text-base mt-1 break-words ${isDark ? 'text-cyan-200/90' : 'text-cyan-800'}`}>
                           中文：{word.exampleCn}
                         </p>
                       )}

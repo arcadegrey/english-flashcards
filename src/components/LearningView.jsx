@@ -1,11 +1,11 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import Card from './Card';
 import Quiz from './Quiz';
-import Progress from './Progress';
 import FillBlank from './FillBlank';
 import SpellingTest from './SpellingTest';
 import VoiceSettings from './VoiceSettings';
-import { useTheme } from '../context/ThemeContext';
+import { speak } from '../utils/speech';
+import '../styles/word-learning-refresh.css';
 
 const MODE_OPTIONS = [
   { id: 'learn', icon: '🎯', label: '学习' },
@@ -21,21 +21,18 @@ function LearningView({
   currentWord,
   filteredVocabulary,
   currentIndex,
-  onNext,
-  onPrev,
   onMarkLearned,
   onMarkMastered,
-  isLearned,
-  isMastered,
   masteredWords,
   onAddMastered,
-  categoryName,
   learnedWords,
-  resetProgress,
   onBack,
 }) {
   const [showVoiceSettings, setShowVoiceSettings] = useState(false);
-  const { isDark, toggleTheme } = useTheme();
+  const [showHint, setShowHint] = useState(false);
+  const [showModeMenu, setShowModeMenu] = useState(false);
+  const [toast, setToast] = useState('');
+  const menuRef = useRef(null);
 
   const learnedWordSet = useMemo(() => new Set(learnedWords), [learnedWords]);
   const learnedVocabulary = useMemo(
@@ -48,133 +45,213 @@ function LearningView({
   const fillBlankVocabulary = useLearnedPool ? learnedVocabulary : allVocabulary;
   const fillBlankSourceLabel = useLearnedPool ? '已学习词库' : '随机测验 · 全词库';
 
-  const shellClass = isDark
-    ? 'border-slate-800 bg-slate-900/86 text-slate-100 shadow-[0_18px_60px_rgba(2,6,23,0.55)]'
-    : 'border-slate-200/85 bg-white/86 text-slate-700 shadow-[0_20px_55px_rgba(15,23,42,0.12)]';
-  const actionButtonClass = isDark
-    ? 'border-slate-700 bg-slate-800/80 text-slate-200 hover:border-slate-600 hover:bg-slate-800'
-    : 'border-slate-200 bg-white text-slate-700 hover:border-slate-300 hover:bg-slate-50';
-  const tabShellClass = isDark
-    ? 'border-slate-800 bg-slate-950/65'
-    : 'border-slate-200/85 bg-slate-100/90';
-  const activeTabClass = isDark
-    ? 'bg-cyan-300 text-slate-900 shadow-[0_10px_24px_rgba(34,211,238,0.38)]'
-    : 'bg-slate-900 text-white shadow-[0_10px_24px_rgba(15,23,42,0.26)]';
-  const idleTabClass = isDark
-    ? 'text-slate-300 hover:bg-slate-800 hover:text-white'
-    : 'text-slate-500 hover:bg-white hover:text-slate-900';
+  const totalCount = filteredVocabulary.length;
+  const progressCurrent = totalCount > 0 ? Math.min(currentIndex + 1, totalCount) : 0;
+  const currentModeMeta = MODE_OPTIONS.find((item) => item.id === mode) || MODE_OPTIONS[0];
+
+  useEffect(() => {
+    setShowHint(false);
+  }, [currentWord?.id]);
+
+  useEffect(() => {
+    if (!toast) {
+      return undefined;
+    }
+
+    const timer = setTimeout(() => {
+      setToast('');
+    }, 1600);
+
+    return () => clearTimeout(timer);
+  }, [toast]);
+
+  useEffect(() => {
+    if (!showModeMenu) {
+      return undefined;
+    }
+
+    const handlePointerDown = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setShowModeMenu(false);
+      }
+    };
+
+    const handleEsc = (event) => {
+      if (event.key === 'Escape') {
+        setShowModeMenu(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handlePointerDown);
+    document.addEventListener('touchstart', handlePointerDown, { passive: true });
+    document.addEventListener('keydown', handleEsc);
+
+    return () => {
+      document.removeEventListener('mousedown', handlePointerDown);
+      document.removeEventListener('touchstart', handlePointerDown);
+      document.removeEventListener('keydown', handleEsc);
+    };
+  }, [showModeMenu]);
+
+  const handleSelectMode = (nextMode) => {
+    setMode(nextMode);
+    setShowModeMenu(false);
+  };
+
+  const handleOpenVoiceSettings = () => {
+    setShowModeMenu(false);
+    setShowVoiceSettings(true);
+  };
+
+  const handleSpeakCurrentWord = () => {
+    if (!currentWord?.word) {
+      return;
+    }
+
+    speak(currentWord.word, { rate: 0.8 });
+  };
+
+  const handleMarkUnknown = () => {
+    onMarkLearned();
+    setToast('已加入复习队列');
+    setShowHint(false);
+  };
+
+  const handleMarkKnown = () => {
+    onMarkMastered();
+    setToast('已标记为“认识”');
+    setShowHint(false);
+  };
+
+  const progressSubText = mode === 'learn' ? `今日目标 ${totalCount}` : `当前模式 ${currentModeMeta.label}`;
 
   return (
-    <div className="min-h-screen pb-12">
-      <header className="mx-auto max-w-6xl px-4 pt-5 md:pt-7">
-        <div className={`rounded-[28px] border px-4 py-4 backdrop-blur-xl md:px-6 md:py-5 ${shellClass}`}>
-          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-            <div className="flex flex-wrap items-center gap-3">
-              <button
-                onClick={onBack}
-                className={`inline-flex items-center gap-2 rounded-xl border px-4 py-2.5 text-sm font-semibold transition ${actionButtonClass}`}
-              >
-                <span>←</span>
-                <span>返回首页</span>
-              </button>
+    <div className={`learn-refresh-page ${mode === 'learn' ? '' : 'learn-refresh-page--assessment'}`}>
+      <header className="learn-refresh-topbar">
+        <div className="learn-refresh-topbar-inner">
+          <button type="button" className="learn-refresh-back" onClick={onBack} aria-label="返回首页">
+            <span aria-hidden="true">←</span>
+            <span>返回</span>
+          </button>
 
-              <div
-                className={`inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-sm ${
-                  isDark ? 'border-slate-700 bg-slate-800/70 text-slate-200' : 'border-slate-200 bg-white text-slate-600'
-                }`}
-              >
-                <span className="uppercase tracking-[0.15em] text-xs opacity-75">Category</span>
-                <span className="font-semibold text-base">{categoryName}</span>
-                <span className={`text-xs ${isDark ? 'text-slate-400' : 'text-slate-400'}`}>
-                  {filteredVocabulary.length} 词
-                </span>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setShowVoiceSettings(true)}
-                className={`inline-flex items-center gap-2 rounded-xl border px-4 py-2.5 text-sm font-semibold transition ${actionButtonClass}`}
-                title="语音设置"
-              >
-                <span>🔊</span>
-                <span>语音</span>
-              </button>
-              <button
-                onClick={toggleTheme}
-                className={`inline-flex items-center gap-2 rounded-xl border px-4 py-2.5 text-sm font-semibold transition ${actionButtonClass}`}
-                title={isDark ? '切换到浅色模式' : '切换到深色模式'}
-              >
-                <span>{isDark ? '☀️' : '🌙'}</span>
-                <span>{isDark ? '浅色' : '深色'}</span>
-              </button>
-            </div>
+          <div className="learn-refresh-progress">
+            <p className="learn-refresh-progress-main">
+              {progressCurrent} / {totalCount}
+            </p>
+            <p className="learn-refresh-progress-sub">{progressSubText}</p>
           </div>
 
-          <div className={`mt-4 rounded-2xl border p-1.5 ${tabShellClass}`}>
-            <div className="grid grid-cols-2 gap-2 md:grid-cols-4">
-              {MODE_OPTIONS.map((item) => {
-                const isActive = mode === item.id;
-                return (
+          <div className="learn-refresh-top-actions">
+            <button
+              type="button"
+              className="learn-refresh-icon-btn"
+              onClick={handleSpeakCurrentWord}
+              aria-label="播放发音"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 9v6h4l5 4V5L7 9H3z" />
+                <path d="M16.5 8.5a4.5 4.5 0 010 7" />
+                <path d="M19.5 6a8 8 0 010 12" />
+              </svg>
+            </button>
+
+            <div className="learn-refresh-menu-wrap" ref={menuRef}>
+              <button
+                type="button"
+                className="learn-refresh-icon-btn"
+                onClick={() => setShowModeMenu((prev) => !prev)}
+                aria-haspopup="menu"
+                aria-expanded={showModeMenu}
+                aria-label="打开模式菜单"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 8.75a3.25 3.25 0 100 6.5 3.25 3.25 0 000-6.5z" />
+                  <path d="M4 12a8 8 0 011.1-4.03l1.72.99a6 6 0 000 6.08l-1.72.99A8 8 0 014 12zm15.9-4.03A8 8 0 0120 12a8 8 0 01-1.1 4.03l-1.72-.99a6 6 0 000-6.08l1.72-.99zM12 4a8 8 0 014.03 1.1l-.99 1.72a6 6 0 00-6.08 0l-.99-1.72A8 8 0 0112 4zm4.03 14.9A8 8 0 0112 20a8 8 0 01-4.03-1.1l.99-1.72a6 6 0 006.08 0l.99 1.72z" />
+                </svg>
+              </button>
+
+              {showModeMenu && (
+                <div className="learn-refresh-menu" role="menu" aria-label="学习模式菜单">
+                  {MODE_OPTIONS.map((item) => (
+                    <button
+                      key={item.id}
+                      type="button"
+                      role="menuitem"
+                      className={`learn-refresh-menu-item ${mode === item.id ? 'is-active' : ''}`}
+                      onClick={() => handleSelectMode(item.id)}
+                    >
+                      <span>{item.icon}</span>
+                      <span>{item.label}</span>
+                    </button>
+                  ))}
+                  <div className="learn-refresh-menu-divider" />
                   <button
-                    key={item.id}
-                    onClick={() => setMode(item.id)}
-                    className={`inline-flex items-center justify-center gap-2 rounded-xl px-3 py-2.5 text-sm font-semibold transition ${
-                      isActive ? activeTabClass : idleTabClass
-                    }`}
+                    type="button"
+                    role="menuitem"
+                    className="learn-refresh-menu-item"
+                    onClick={handleOpenVoiceSettings}
                   >
-                    <span>{item.icon}</span>
-                    <span>{item.label}</span>
+                    <span>🔊</span>
+                    <span>语音设置</span>
                   </button>
-                );
-              })}
+                </div>
+              )}
             </div>
           </div>
         </div>
       </header>
 
-      <div className="mx-auto mt-6 max-w-6xl px-4">
-        <div className={`rounded-[30px] border p-4 backdrop-blur-xl md:p-8 ${shellClass}`}>
-          {mode === 'learn' ? (
-            <Card
-              word={currentWord}
-              total={filteredVocabulary.length}
-              currentIndex={currentIndex}
-              onNext={onNext}
-              onPrev={onPrev}
-              onMarkLearned={onMarkLearned}
-              onMarkMastered={onMarkMastered}
-              isLearned={isLearned}
-              isMastered={isMastered}
-            />
-          ) : mode === 'quiz' ? (
-            <Quiz
-              vocabulary={quizVocabulary}
-              optionVocabulary={allVocabulary}
-              sourceLabel={quizSourceLabel}
-              masteredWords={masteredWords}
-              onAddMastered={onAddMastered}
-            />
-          ) : mode === 'fillblank' ? (
-            <FillBlank
-              vocabulary={fillBlankVocabulary}
-              sourceLabel={fillBlankSourceLabel}
-            />
-          ) : mode === 'spelling' ? (
-            <SpellingTest vocabulary={filteredVocabulary} />
-          ) : null}
-        </div>
-
-        <div className="mt-6">
-          <Progress
-            total={filteredVocabulary.length}
-            learned={learnedWords.filter((id) => filteredVocabulary.some((w) => w.id === id)).length}
-            mastered={masteredWords.filter((id) => filteredVocabulary.some((w) => w.id === id)).length}
-            categoryName={categoryName}
-            onReset={resetProgress}
+      <main className={`learn-refresh-main ${mode === 'learn' ? '' : 'learn-refresh-main--assessment'}`}>
+        {mode === 'learn' ? (
+          <Card key={currentWord?.id || 'learn-empty'} word={currentWord} showHint={showHint} />
+        ) : mode === 'quiz' ? (
+          <Quiz
+            vocabulary={quizVocabulary}
+            optionVocabulary={allVocabulary}
+            sourceLabel={quizSourceLabel}
+            masteredWords={masteredWords}
+            onAddMastered={onAddMastered}
           />
+        ) : mode === 'fillblank' ? (
+          <FillBlank vocabulary={fillBlankVocabulary} sourceLabel={fillBlankSourceLabel} />
+        ) : mode === 'spelling' ? (
+          <SpellingTest vocabulary={filteredVocabulary} />
+        ) : null}
+      </main>
+
+      {mode === 'learn' && (
+        <footer className="learn-refresh-bottombar">
+          <div className="learn-refresh-bottombar-inner">
+            <button
+              type="button"
+              className="learn-refresh-action learn-refresh-action-secondary"
+              onClick={handleMarkUnknown}
+            >
+              不认识
+            </button>
+            <button
+              type="button"
+              className="learn-refresh-action learn-refresh-action-ghost"
+              onClick={() => setShowHint((prev) => !prev)}
+            >
+              {showHint ? '收起提示' : '显示提示'}
+            </button>
+            <button
+              type="button"
+              className="learn-refresh-action learn-refresh-action-primary"
+              onClick={handleMarkKnown}
+            >
+              认识了
+            </button>
+          </div>
+        </footer>
+      )}
+
+      {toast && (
+        <div className="learn-refresh-toast" role="status" aria-live="polite">
+          {toast}
         </div>
-      </div>
+      )}
 
       {showVoiceSettings && <VoiceSettings onClose={() => setShowVoiceSettings(false)} />}
     </div>

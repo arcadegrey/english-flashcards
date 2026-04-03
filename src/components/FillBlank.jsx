@@ -18,7 +18,6 @@ const buildHiddenSentence = (example = '', answerWord = '') => {
     return safeExample.replace(exactRegex, BLANK_TOKEN);
   }
 
-  // Fallback for simple inflections: word + s/es/ed/ing.
   const inflectionRegex = new RegExp(`\\b${escapedWord}(s|es|ed|ing)?\\b`, 'i');
   if (inflectionRegex.test(safeExample)) {
     return safeExample.replace(inflectionRegex, BLANK_TOKEN);
@@ -147,123 +146,103 @@ function FillBlank({ vocabulary, sourceLabel = '' }) {
 
   if (questionError) {
     return (
-      <div className="text-center py-12">
-        <p className="text-2xl font-bold text-rose-500">{questionError}</p>
+      <div className="rounded-[20px] border border-[#fecaca] bg-[#fef2f2] p-8 text-center text-[#b91c1c]">
+        {questionError}
       </div>
     );
   }
 
   if (!currentQuestion || !sentence) {
     return (
-      <div className="text-gray-500 text-center py-12">
-        <p className="text-xl">加载中...</p>
+      <div className="rounded-[20px] border border-[#e8e8ed] bg-white p-8 text-center text-[#6e6e73]">
+        题目加载中...
       </div>
     );
   }
 
+  const accuracy = questionCount > 0 ? Math.round((score / questionCount) * 100) : 0;
+
   return (
-    <div className="space-y-8">
+    <div className="space-y-5 md:space-y-6">
       <CorrectAnswerCelebration trigger={celebrationTrigger} />
 
-      <div className="grid grid-cols-3 gap-4">
-        <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-5 border-2 border-blue-300 shadow-lg">
-          <div className="flex items-center gap-3 mb-2">
-            <span className="text-3xl">📊</span>
-            <span className="text-gray-700 font-bold text-lg">得分</span>
-          </div>
-          <p className="text-4xl font-black text-blue-600">{score}</p>
-          <p className="text-gray-600 font-bold text-xs mt-1">/ {questionCount} 题</p>
-        </div>
-
-        <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-5 border-2 border-orange-300 shadow-lg">
-          <div className="flex items-center gap-3 mb-2">
-            <span className="text-3xl">🔥</span>
-            <span className="text-gray-700 font-bold text-lg">连击</span>
-          </div>
-          <p className={`text-4xl font-black ${streak >= 5 ? 'text-yellow-600' : 'text-orange-600'}`}>
-            {streak} 连对
-          </p>
-          <p className="text-gray-600 font-bold text-xs mt-1">
-            {streak >= 10 ? '🔥🔥🔥 太厉害了！' : streak >= 5 ? '🔥 继续加油！' : '再接再厉！'}
-          </p>
-        </div>
-
-        <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-5 border-2 border-green-300 shadow-lg">
-          <div className="flex items-center gap-3 mb-2">
-            <span className="text-3xl">🎯</span>
-            <span className="text-gray-700 font-bold text-lg">正确率</span>
-          </div>
-          <p className="text-4xl font-black text-green-600">
-            {questionCount > 0 ? Math.round((score / questionCount) * 100) : 0}%
-          </p>
-          <p className="text-gray-600 font-bold text-xs mt-1">
-            {questionCount > 0 ? (score / questionCount >= 0.8 ? '太棒了！' : '继续练习！') : '开始答题吧！'}
-          </p>
-        </div>
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
+        <article className="rounded-[16px] border border-[#e8e8ed] bg-white p-4 text-center shadow-[0_8px_24px_rgba(15,23,42,0.06)]">
+          <p className="text-xs font-medium text-[#6e6e73]">得分</p>
+          <p className="mt-1 text-3xl font-semibold text-[#1d1d1f]">{score}</p>
+          <p className="mt-1 text-xs text-[#6e6e73]">共 {questionCount} 题</p>
+        </article>
+        <article className="rounded-[16px] border border-[#e8e8ed] bg-white p-4 text-center shadow-[0_8px_24px_rgba(15,23,42,0.06)]">
+          <p className="text-xs font-medium text-[#6e6e73]">连击</p>
+          <p className="mt-1 text-3xl font-semibold text-[#1d1d1f]">{streak}</p>
+          <p className="mt-1 text-xs text-[#6e6e73]">连续答对题数</p>
+        </article>
+        <article className="rounded-[16px] border border-[#e8e8ed] bg-white p-4 text-center shadow-[0_8px_24px_rgba(15,23,42,0.06)]">
+          <p className="text-xs font-medium text-[#6e6e73]">正确率</p>
+          <p className="mt-1 text-3xl font-semibold text-[#1d1d1f]">{accuracy}%</p>
+          <p className="mt-1 text-xs text-[#6e6e73]">当前答题表现</p>
+        </article>
       </div>
 
-      <div className="bg-white rounded-3xl shadow-2xl p-10 border border-gray-200">
-        <p className="text-gray-500 text-center mb-6 text-3xl font-bold">
-          用正确的单词填空
-        </p>
-        {sourceLabel && (
-          <p className="text-center mb-6 text-sm font-semibold text-cyan-600">
-            题目来源：{sourceLabel}
-          </p>
-        )}
-        
-        <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-10 border-2 border-purple-200 mb-8">
-          <p className="text-4xl md:text-5xl font-bold text-gray-800 leading-relaxed text-center">
-            "{sentence}"
-          </p>
-          <p className="text-gray-500 text-center mt-4 text-2xl">
-            {currentQuestion.meaning}
-          </p>
-        </div>
+      <section className="rounded-[20px] border border-[#e8e8ed] bg-white p-6 shadow-[0_10px_28px_rgba(15,23,42,0.06)] md:p-8">
+        <p className="text-center text-sm font-medium text-[#6e6e73]">听例句并完成填空</p>
 
-        <div className="flex justify-center">
+        {sourceLabel && (
+          <div className="mt-3 flex justify-center">
+            <span className="inline-flex rounded-full border border-[#e8e8ed] bg-[#f5f5f7] px-3 py-1 text-xs font-medium text-[#6e6e73]">
+              {sourceLabel}
+            </span>
+          </div>
+        )}
+
+        <blockquote className="mt-5 rounded-[16px] border border-[#e8e8ed] bg-[#fcfcfd] px-5 py-5 text-center text-2xl leading-[1.6] text-[#1d1d1f] md:text-3xl">
+          “{sentence}”
+        </blockquote>
+
+        <p className="mt-3 text-center text-base text-[#6e6e73] md:text-lg">{currentQuestion.meaning}</p>
+
+        <div className="mt-6 flex justify-center">
           <button
+            type="button"
             onClick={handleSpeakSentence}
-            className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 px-12 py-6 text-2xl font-bold text-white shadow-xl transition-all hover:from-purple-600 hover:to-indigo-600 hover:shadow-2xl"
+            className="inline-flex min-h-[46px] items-center gap-2 rounded-[10px] border border-[#0071e3] bg-[#0071e3] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#0066ce]"
           >
-            <span className="text-3xl">🔊</span>
-            <span>听例句</span>
+            <span>🔊</span>
+            <span>播放例句</span>
           </button>
         </div>
-      </div>
+      </section>
 
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-3">
         {options.map((option, index) => {
-          let buttonClass = 'bg-white hover:bg-gray-50 text-gray-800 border-2 border-gray-200 hover:border-purple-300';
+          let stateClass =
+            'border-[#e8e8ed] bg-white text-[#1d1d1f] hover:border-[#0071e3] hover:bg-[#eef5ff] hover:text-[#005bb6]';
 
           if (selectedAnswer) {
             if (option.id === currentQuestion.id) {
-              buttonClass = 'bg-green-500 text-white border-green-400 shadow-xl';
+              stateClass = 'border-[#0071e3] bg-[#eef5ff] text-[#005bb6]';
             } else if (option.id === selectedAnswer.id) {
-              buttonClass = 'bg-red-500 text-white border-red-400 shadow-xl';
+              stateClass = 'border-[#ef4444] bg-[#fff1f2] text-[#b91c1c]';
             } else {
-              buttonClass = 'bg-gray-100 text-gray-400';
+              stateClass = 'border-[#e8e8ed] bg-[#f7f7f8] text-[#9ca3af]';
             }
           }
 
           return (
             <button
               key={option.id}
+              type="button"
               onClick={() => handleAnswer(option)}
               disabled={selectedAnswer !== null}
-              className={`px-8 py-10 rounded-2xl font-bold text-2xl transition-colors duration-200 text-center shadow-xl ${buttonClass} ${
-                !selectedAnswer ? 'hover:-translate-y-1 active:translate-y-0' : ''
-              }`}
+              className={`rounded-[14px] border px-5 py-5 text-left transition duration-200 md:px-7 md:py-10 ${stateClass}`}
             >
-              <div className="flex flex-col items-center gap-4">
-                <span className={`inline-flex w-20 h-20 rounded-full font-black text-4xl items-center justify-center ${
-                  selectedAnswer ? 'bg-white/20' : 'bg-gradient-to-br from-purple-500 to-indigo-500 text-white shadow-lg'
-                }`}>
+              <div className="flex items-start gap-3">
+                <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#d7d9df] text-sm font-semibold text-[#6e6e73] md:h-10 md:w-10 md:text-base">
                   {String.fromCharCode(65 + index)}
                 </span>
                 <div>
-                  <p className="text-3xl leading-snug">{option.word}</p>
-                  <p className="text-gray-500 text-lg mt-2">{option.phonetic || ''}</p>
+                  <p className="break-all text-base leading-[1.5] md:text-2xl">{option.word}</p>
+                  <p className="mt-1 break-all text-sm text-[#6e6e73] md:text-lg">{option.phonetic || ''}</p>
                 </div>
               </div>
             </button>
@@ -272,19 +251,15 @@ function FillBlank({ vocabulary, sourceLabel = '' }) {
       </div>
 
       {selectedAnswer && (
-        <div className={`text-center p-6 rounded-2xl border ${
-          isCorrect ? 'bg-green-100 border-green-300' : 'bg-red-100 border-red-300'
-        }`}>
-          <p className={`text-3xl font-bold mb-2 ${isCorrect ? 'text-green-600' : 'text-red-600'}`}>
-            {isCorrect ? '🎉 回答正确！' : '❌ 回答错误'}
-          </p>
-          {!isCorrect && (
-            <p className="text-gray-600 text-lg">
-              <span className="opacity-70">正确答案：</span>{' '}
-              <span className="font-bold">{currentQuestion.word}</span>
-            </p>
-          )}
-          <p className="text-gray-500 text-sm mt-2">{currentQuestion.example}</p>
+        <div
+          className={`rounded-[14px] border px-4 py-3 text-sm ${
+            isCorrect
+              ? 'border-[#b7ddc6] bg-[#f0fdf4] text-[#166534]'
+              : 'border-[#fecaca] bg-[#fef2f2] text-[#b91c1c]'
+          }`}
+        >
+          {isCorrect ? '回答正确。' : `回答错误，正确答案：${currentQuestion.word}`}
+          <p className="mt-1 text-xs opacity-80">{currentQuestion.example}</p>
         </div>
       )}
     </div>

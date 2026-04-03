@@ -224,7 +224,7 @@ function HomeScreen({
               <p className="mt-1 text-sm text-[#9ca3af]">尝试其他搜索词</p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+            <div className="grid grid-cols-2 gap-2 md:gap-3">
               {filteredCategories.map((category) => {
                 const count = filteredWordCounts[category.id] || 0;
                 const iconStyle = iconStyleById[category.id] || 'bg-slate-100 text-slate-600';
@@ -233,20 +233,20 @@ function HomeScreen({
                   <button
                     key={category.id}
                     onClick={() => handleCategoryClick(category)}
-                    className="group min-h-[44px] rounded-[14px] border border-[#e5e7eb] bg-white p-4 text-center shadow-[0_1px_3px_rgba(15,23,42,0.08)] transition duration-200 hover:-translate-y-[2px] hover:border-[#0071e3] hover:bg-[#0071e3]"
+                    className="group min-h-[44px] rounded-[14px] border border-[#e5e7eb] bg-white p-3 text-center shadow-[0_1px_3px_rgba(15,23,42,0.08)] transition duration-200 hover:-translate-y-[2px] hover:border-[#0071e3] hover:bg-[#0071e3] md:p-4"
                   >
                     <div className="flex flex-col items-center justify-center gap-2">
                       <span
-                        className={`inline-flex h-9 w-9 items-center justify-center rounded-[10px] text-lg transition-colors duration-200 ${iconStyle} group-hover:bg-white/20 group-hover:text-white`}
+                        className={`inline-flex h-8 w-8 items-center justify-center rounded-[10px] text-base transition-colors duration-200 ${iconStyle} group-hover:bg-white/20 group-hover:text-white sm:h-9 sm:w-9 sm:text-lg`}
                         aria-hidden="true"
                       >
                         {category.icon}
                       </span>
                       <div className="min-w-0 text-center">
-                        <p className="truncate text-base font-semibold text-[#111827] transition-colors duration-200 group-hover:text-white">
+                        <p className="text-sm font-semibold leading-tight text-[#111827] transition-colors duration-200 group-hover:text-white sm:text-base">
                           {category.name}
                         </p>
-                        <p className="text-sm text-[#6b7280] transition-colors duration-200 group-hover:text-white/90">
+                        <p className="text-xs text-[#6b7280] transition-colors duration-200 group-hover:text-white/90 sm:text-sm">
                           {count} 词
                         </p>
                       </div>
@@ -259,7 +259,7 @@ function HomeScreen({
         </section>
 
         {!debouncedQuery && (
-          <section className="grid grid-cols-1 gap-3 md:grid-cols-3">
+          <section className="grid grid-cols-2 gap-3 md:grid-cols-3">
             <article className={`${cardClass} p-4 text-center`}>
               <p className="text-2xl font-semibold text-[#111827]">{wordCounts.all || 0}</p>
               <p className="text-sm text-[#6b7280]">总词汇量</p>
@@ -268,7 +268,7 @@ function HomeScreen({
               <p className="text-2xl font-semibold text-[#111827]">{categoriesWithCollections.length}</p>
               <p className="text-sm text-[#6b7280]">学习分类</p>
             </article>
-            <article className={`${cardClass} p-4 text-center`}>
+            <article className={`${cardClass} col-span-2 p-4 text-center md:col-span-1`}>
               <p className="text-2xl font-semibold text-[#111827]">持续更新</p>
               <p className="text-sm text-[#6b7280]">更多词库可导入</p>
             </article>
