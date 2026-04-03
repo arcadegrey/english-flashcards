@@ -172,24 +172,29 @@ function LearningView({
 
               {showModeMenu && (
                 <div className="learn-refresh-menu" role="menu" aria-label="学习模式菜单">
-                  {MODE_OPTIONS.map((item) => (
+                  {MODE_OPTIONS.map((item, index) => (
                     <button
                       key={item.id}
                       type="button"
                       role="menuitem"
                       className={`learn-refresh-menu-item ${mode === item.id ? 'is-active' : ''}`}
                       onClick={() => handleSelectMode(item.id)}
+                      style={{ '--menu-index': index }}
                     >
                       <span>{item.icon}</span>
                       <span>{item.label}</span>
                     </button>
                   ))}
-                  <div className="learn-refresh-menu-divider" />
+                  <div
+                    className="learn-refresh-menu-divider"
+                    style={{ '--menu-index': MODE_OPTIONS.length }}
+                  />
                   <button
                     type="button"
                     role="menuitem"
                     className="learn-refresh-menu-item"
                     onClick={handleOpenVoiceSettings}
+                    style={{ '--menu-index': MODE_OPTIONS.length + 1 }}
                   >
                     <span>🔊</span>
                     <span>语音设置</span>
@@ -203,7 +208,11 @@ function LearningView({
 
       <main className={`learn-refresh-main ${mode === 'learn' ? '' : 'learn-refresh-main--assessment'}`}>
         {mode === 'learn' ? (
-          <Card key={currentWord?.id || 'learn-empty'} word={currentWord} showHint={showHint} />
+          <Card
+            key={`${currentWord?.id || 'learn-empty'}-${currentIndex}`}
+            word={currentWord}
+            showHint={showHint}
+          />
         ) : mode === 'quiz' ? (
           <Quiz
             vocabulary={quizVocabulary}
