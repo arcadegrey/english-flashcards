@@ -82,18 +82,20 @@ function Card({ word, showHint = false }) {
       </section>
 
       <section className={`learn-refresh-expandable ${showHint ? 'is-open' : ''}`}>
-        <h2 className="learn-refresh-expandable-title">学习提示</h2>
-        <div className="learn-refresh-hint-item">
-          <span className="learn-refresh-hint-label">近义提示</span>
-          <p className="learn-refresh-hint-text">{hints.synonymHint}</p>
-        </div>
-        <div className="learn-refresh-hint-item">
-          <span className="learn-refresh-hint-label">词根词缀</span>
-          <p className="learn-refresh-hint-text">{hints.rootHint}</p>
-        </div>
-        <div className="learn-refresh-hint-item">
-          <span className="learn-refresh-hint-label">更多练习</span>
-          <p className="learn-refresh-hint-text">{hints.extraExampleHint}</p>
+        <div className="learn-refresh-expandable-inner">
+          <h2 className="learn-refresh-expandable-title">学习提示</h2>
+          <div className="learn-refresh-hint-item" style={{ '--hint-index': 0 }}>
+            <span className="learn-refresh-hint-label">近义提示</span>
+            <p className="learn-refresh-hint-text">{hints.synonymHint}</p>
+          </div>
+          <div className="learn-refresh-hint-item" style={{ '--hint-index': 1 }}>
+            <span className="learn-refresh-hint-label">词根词缀</span>
+            <p className="learn-refresh-hint-text">{hints.rootHint}</p>
+          </div>
+          <div className="learn-refresh-hint-item" style={{ '--hint-index': 2 }}>
+            <span className="learn-refresh-hint-label">更多练习</span>
+            <p className="learn-refresh-hint-text">{hints.extraExampleHint}</p>
+          </div>
         </div>
       </section>
     </article>

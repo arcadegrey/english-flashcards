@@ -13,6 +13,7 @@ const MODE_OPTIONS = [
   { id: 'fillblank', icon: '🧩', label: '填空' },
   { id: 'spelling', icon: '🔤', label: '拼写' },
 ];
+const MENU_CLOSE_DURATION_MS = 220;
 
 function LearningView({
   mode,
@@ -30,9 +31,11 @@ function LearningView({
 }) {
   const [showVoiceSettings, setShowVoiceSettings] = useState(false);
   const [showHint, setShowHint] = useState(false);
-  const [showModeMenu, setShowModeMenu] = useState(false);
+  const [isModeMenuMounted, setIsModeMenuMounted] = useState(false);
+  const [isModeMenuOpen, setIsModeMenuOpen] = useState(false);
   const [toast, setToast] = useState('');
   const menuRef = useRef(null);
+  const menuCloseTimerRef = useRef(null);
 
   const learnedWordSet = useMemo(() => new Set(learnedWords), [learnedWords]);
   const learnedVocabulary = useMemo(
@@ -48,6 +51,7 @@ function LearningView({
   const totalCount = filteredVocabulary.length;
   const progressCurrent = totalCount > 0 ? Math.min(currentIndex + 1, totalCount) : 0;
   const currentModeMeta = MODE_OPTIONS.find((item) => item.id === mode) || MODE_OPTIONS[0];
+  const totalMenuSlots = MODE_OPTIONS.length + 2;
 
   useEffect(() => {
     setShowHint(false);
@@ -66,19 +70,19 @@ function LearningView({
   }, [toast]);
 
   useEffect(() => {
-    if (!showModeMenu) {
+    if (!isModeMenuMounted) {
       return undefined;
     }
 
     const handlePointerDown = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setShowModeMenu(false);
+        setIsModeMenuOpen(false);
       }
     };
 
     const handleEsc = (event) => {
       if (event.key === 'Escape') {
-        setShowModeMenu(false);
+        setIsModeMenuOpen(false);
       }
     };
 
@@ -91,15 +95,72 @@ function LearningView({
       document.removeEventListener('touchstart', handlePointerDown);
       document.removeEventListener('keydown', handleEsc);
     };
-  }, [showModeMenu]);
+  }, [isModeMenuMounted]);
+
+  useEffect(() => {
+    if (isModeMenuOpen) {
+      if (menuCloseTimerRef.current) {
+        clearTimeout(menuCloseTimerRef.current);
+        menuCloseTimerRef.current = null;
+      }
+      return undefined;
+    }
+
+    if (!isModeMenuMounted) {
+      return undefined;
+    }
+
+    menuCloseTimerRef.current = setTimeout(() => {
+      setIsModeMenuMounted(false);
+      menuCloseTimerRef.current = null;
+    }, MENU_CLOSE_DURATION_MS);
+
+    return () => {
+      if (menuCloseTimerRef.current) {
+        clearTimeout(menuCloseTimerRef.current);
+        menuCloseTimerRef.current = null;
+      }
+    };
+  }, [isModeMenuOpen, isModeMenuMounted]);
+
+  useEffect(() => {
+    return () => {
+      if (menuCloseTimerRef.current) {
+        clearTimeout(menuCloseTimerRef.current);
+      }
+    };
+  }, []);
+
+  const openModeMenu = () => {
+    if (menuCloseTimerRef.current) {
+      clearTimeout(menuCloseTimerRef.current);
+      menuCloseTimerRef.current = null;
+    }
+    setIsModeMenuMounted(true);
+    requestAnimationFrame(() => {
+      setIsModeMenuOpen(true);
+    });
+  };
+
+  const closeModeMenu = () => {
+    setIsModeMenuOpen(false);
+  };
+
+  const toggleModeMenu = () => {
+    if (isModeMenuOpen) {
+      closeModeMenu();
+      return;
+    }
+    openModeMenu();
+  };
 
   const handleSelectMode = (nextMode) => {
     setMode(nextMode);
-    setShowModeMenu(false);
+    closeModeMenu();
   };
 
   const handleOpenVoiceSettings = () => {
-    setShowModeMenu(false);
+    closeModeMenu();
     setShowVoiceSettings(true);
   };
 
@@ -159,9 +220,9 @@ function LearningView({
               <button
                 type="button"
                 className="learn-refresh-icon-btn"
-                onClick={() => setShowModeMenu((prev) => !prev)}
+                onClick={toggleModeMenu}
                 aria-haspopup="menu"
-                aria-expanded={showModeMenu}
+                aria-expanded={isModeMenuOpen}
                 aria-label="打开模式菜单"
               >
                 <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -170,8 +231,12 @@ function LearningView({
                 </svg>
               </button>
 
-              {showModeMenu && (
-                <div className="learn-refresh-menu" role="menu" aria-label="学习模式菜单">
+              {isModeMenuMounted && (
+                <div
+                  className={`learn-refresh-menu ${isModeMenuOpen ? 'is-open' : 'is-closing'}`}
+                  role="menu"
+                  aria-label="学习模式菜单"
+                >
                   {MODE_OPTIONS.map((item, index) => (
                     <button
                       key={item.id}
@@ -179,7 +244,10 @@ function LearningView({
                       role="menuitem"
                       className={`learn-refresh-menu-item ${mode === item.id ? 'is-active' : ''}`}
                       onClick={() => handleSelectMode(item.id)}
-                      style={{ '--menu-index': index }}
+                      style={{
+                        '--menu-index': index,
+                        '--menu-reverse-index': totalMenuSlots - 1 - index,
+                      }}
                     >
                       <span>{item.icon}</span>
                       <span>{item.label}</span>
@@ -187,14 +255,20 @@ function LearningView({
                   ))}
                   <div
                     className="learn-refresh-menu-divider"
-                    style={{ '--menu-index': MODE_OPTIONS.length }}
+                    style={{
+                      '--menu-index': MODE_OPTIONS.length,
+                      '--menu-reverse-index': totalMenuSlots - 1 - MODE_OPTIONS.length,
+                    }}
                   />
                   <button
                     type="button"
                     role="menuitem"
                     className="learn-refresh-menu-item"
                     onClick={handleOpenVoiceSettings}
-                    style={{ '--menu-index': MODE_OPTIONS.length + 1 }}
+                    style={{
+                      '--menu-index': MODE_OPTIONS.length + 1,
+                      '--menu-reverse-index': totalMenuSlots - 1 - (MODE_OPTIONS.length + 1),
+                    }}
                   >
                     <span>🔊</span>
                     <span>语音设置</span>

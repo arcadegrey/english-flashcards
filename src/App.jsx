@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo, useRef } from 'react'
 import { ThemeProvider, useTheme } from './context/ThemeContext'
 import vocabulary from './data/vocabulary'
 import categories from './data/categories'
@@ -12,6 +12,7 @@ import { storage } from './utils/storage'
 
 const TOEFL_UNKNOWN_LEVEL = 'unknown'
 const TOEFL_UNKNOWN_LIST = 'unknown'
+const NAVIGATION_STATE_KEY = 'english_flashcards_navigation_v1'
 
 const extractNumericTag = (value) => {
   const text = String(value ?? '').trim()
@@ -86,6 +87,8 @@ function AppContent() {
   const [masteredWords, setMasteredWords] = useState([])
   const [customWords, setCustomWords] = useState([])
   const [shuffledWords, setShuffledWords] = useState([])
+  const historyReadyRef = useRef(false)
+  const restoringFromHistoryRef = useRef(false)
 
   const allVocabulary = useMemo(() => [...vocabulary, ...customWords], [customWords])
 
@@ -204,6 +207,85 @@ function AppContent() {
   useEffect(() => {
     storage.setCustomWords(customWords)
   }, [customWords])
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return undefined
+
+    const initialState = {
+      __appNavigation: NAVIGATION_STATE_KEY,
+      view,
+      mode,
+      selectedCategory,
+      selectedToeflLevel,
+      selectedToeflList,
+    }
+
+    window.history.replaceState(initialState, '', window.location.href)
+    historyReadyRef.current = true
+
+    const handlePopState = (event) => {
+      const state = event.state
+      restoringFromHistoryRef.current = true
+
+      if (!state || state.__appNavigation !== NAVIGATION_STATE_KEY) {
+        setView('home')
+        setMode('learn')
+        setSelectedCategory('all')
+        setSelectedToeflLevel('')
+        setSelectedToeflList('')
+        return
+      }
+
+      setView(typeof state.view === 'string' ? state.view : 'home')
+      setMode(typeof state.mode === 'string' ? state.mode : 'learn')
+      setSelectedCategory(typeof state.selectedCategory === 'string' ? state.selectedCategory : 'all')
+      setSelectedToeflLevel(
+        typeof state.selectedToeflLevel === 'string' ? state.selectedToeflLevel : ''
+      )
+      setSelectedToeflList(typeof state.selectedToeflList === 'string' ? state.selectedToeflList : '')
+    }
+
+    window.addEventListener('popstate', handlePopState)
+    return () => {
+      window.removeEventListener('popstate', handlePopState)
+    }
+  }, [])
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || !historyReadyRef.current) return
+
+    const nextState = {
+      __appNavigation: NAVIGATION_STATE_KEY,
+      view,
+      mode,
+      selectedCategory,
+      selectedToeflLevel,
+      selectedToeflList,
+    }
+
+    if (restoringFromHistoryRef.current) {
+      restoringFromHistoryRef.current = false
+
+      const currentState = window.history.state
+      if (!currentState || currentState.__appNavigation !== NAVIGATION_STATE_KEY) {
+        window.history.replaceState(nextState, '', window.location.href)
+      }
+      return
+    }
+
+    const currentState = window.history.state
+    const isSameState =
+      currentState &&
+      currentState.__appNavigation === NAVIGATION_STATE_KEY &&
+      currentState.view === nextState.view &&
+      currentState.mode === nextState.mode &&
+      currentState.selectedCategory === nextState.selectedCategory &&
+      currentState.selectedToeflLevel === nextState.selectedToeflLevel &&
+      currentState.selectedToeflList === nextState.selectedToeflList
+
+    if (isSameState) return
+    window.history.pushState(nextState, '', window.location.href)
+  }, [view, mode, selectedCategory, selectedToeflLevel, selectedToeflList])
 
   const currentWord = shuffledWords[currentIndex]
 
