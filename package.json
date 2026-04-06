@@ -7,8 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "words:import": "node scripts/import-global-vocabulary.mjs"
+    "preview": "npm run build && wrangler dev",
+    "words:import": "node scripts/import-global-vocabulary.mjs",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@cloudbase/js-sdk": "^2.27.2",
@@ -16,6 +17,7 @@
     "react-dom": "^19.2.4"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.31.0",
     "@eslint/js": "^9.39.4",
     "@tailwindcss/postcss": "^4.2.1",
     "@types/react": "^19.2.14",
@@ -29,6 +31,7 @@
     "postcss": "^8.5.8",
     "tailwindcss": "^4.2.1",
     "vite": "^8.0.0",
-    "vite-plugin-pwa": "^1.2.0"
+    "vite-plugin-pwa": "^1.2.0",
+    "wrangler": "^4.80.0"
   }
 }
