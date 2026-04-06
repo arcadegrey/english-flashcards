@@ -139,6 +139,12 @@ const toProgressDocId = (rawUserId) => {
   return `uid_${Date.now()}`
 }
 
+const getProgressDocCandidates = (rawUserId) => {
+  const safeUserId = sanitizeUserId(rawUserId)
+  const primaryDocId = toProgressDocId(safeUserId)
+  return Array.from(new Set([primaryDocId, safeUserId])).filter(Boolean)
+}
+
 const getDocId = (doc) =>
   String(doc?._id || doc?.id || doc?.docId || doc?._docId || '').trim()
 
@@ -156,21 +162,41 @@ const loadByUserId = async (collection, userId) => {
   return extractDocFromResponse(response)
 }
 
-const findExistingProgressDoc = async (collection, userId) => {
-  const byUserId = await loadByUserId(collection, userId)
-  if (byUserId) return byUserId
+const isPermissionError = (error) => {
+  const text = getErrorMessage(error, '').toLowerCase()
+  return (
+    text.includes('permission') ||
+    text.includes('unauthorized') ||
+    text.includes('forbidden') ||
+    text.includes('auth failed') ||
+    text.includes('no auth') ||
+    text.includes('权限')
+  )
+}
 
-  // Backward compatibility for legacy doc-id strategy.
-  const legacyDocIds = Array.from(new Set([toProgressDocId(userId), userId])).filter(Boolean)
-  for (const legacyDocId of legacyDocIds) {
+const findExistingProgressDoc = async (collection, userId) => {
+  // Prefer deterministic doc id lookup, avoids list/query permission issues.
+  const docCandidates = getProgressDocCandidates(userId)
+  for (const docId of docCandidates) {
     try {
-      const legacy = await loadByDocId(collection, legacyDocId)
-      if (legacy) return legacy
+      const directDoc = await loadByDocId(collection, docId)
+      if (directDoc) return directDoc
     } catch (error) {
       if (!isNotFoundError(error)) {
         throw error
       }
     }
+  }
+
+  // Fallback: query by userId for historical docs created with random _id.
+  try {
+    const byUserId = await loadByUserId(collection, userId)
+    if (byUserId) return byUserId
+  } catch (error) {
+    if (!isPermissionError(error) && !isNotFoundError(error)) {
+      throw error
+    }
+    // Ignore permission errors here; write path will use deterministic doc id.
   }
 
   return null
@@ -521,8 +547,12 @@ export const loadCloudProgress = async ({ userId, accessToken, refreshToken }) =
 
 export const upsertCloudProgress = async ({ userId, accessToken, refreshToken, progress }) => {
   const safeUserId = sanitizeUserId(userId)
+  const fallbackDocId = toProgressDocId(safeUserId)
   if (!safeUserId) {
     throw new Error('同步失败：缺少用户 ID。')
+  }
+  if (!fallbackDocId) {
+    throw new Error('同步失败：用户 ID 格式无效。')
   }
 
   await ensureSdkSession({ accessToken, refreshToken })
@@ -532,7 +562,7 @@ export const upsertCloudProgress = async ({ userId, accessToken, refreshToken, p
 
   try {
     const existingDoc = await findExistingProgressDoc(collection, safeUserId)
-    const existingDocId = getDocId(existingDoc)
+    const existingDocId = getDocId(existingDoc) || fallbackDocId
     const payload = {
       userId: safeUserId,
       ...normalized,
