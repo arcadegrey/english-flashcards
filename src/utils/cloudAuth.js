@@ -142,7 +142,15 @@ const toProgressDocId = (rawUserId) => {
 const getProgressDocCandidates = (rawUserId) => {
   const safeUserId = sanitizeUserId(rawUserId)
   const primaryDocId = toProgressDocId(safeUserId)
-  return Array.from(new Set([primaryDocId, safeUserId])).filter(Boolean)
+  // Prefer raw uid first for common rules like `doc._id == auth.uid`.
+  return Array.from(new Set([safeUserId, primaryDocId])).filter(Boolean)
+}
+
+const resolveUserIdCandidates = (rawUserId, accessToken = '') => {
+  const tokenUser = normalizeUser({}, accessToken)
+  const tokenUserId = sanitizeUserId(tokenUser?.id)
+  const fallbackUserId = sanitizeUserId(rawUserId)
+  return Array.from(new Set([tokenUserId, fallbackUserId])).filter(Boolean)
 }
 
 const getDocId = (doc) =>
@@ -171,6 +179,17 @@ const isPermissionError = (error) => {
     text.includes('auth failed') ||
     text.includes('no auth') ||
     text.includes('权限')
+  )
+}
+
+const isRecoverableDocIdError = (error) => {
+  const text = getErrorMessage(error, '').toLowerCase()
+  return (
+    text.includes('invalid _id') ||
+    text.includes('invalid id') ||
+    text.includes('invalid document id') ||
+    text.includes('illegal') ||
+    text.includes('bad key')
   )
 }
 
@@ -243,17 +262,22 @@ const normalizeUser = (user, fallbackToken = '') => {
   const source = isObject(user) ? { ...user } : {}
   const jwtPayload = fallbackToken ? decodeJwtPayload(fallbackToken) : null
 
+  // Prefer provider UID-style fields; generic `id` can vary across SDK responses.
   const id =
-    source.id ||
     source.uid ||
-    source.ID ||
     source.user_id ||
-    source.uuid ||
     source.sub ||
+    source._openid ||
+    source.openid ||
     source._id ||
-    jwtPayload?.sub ||
     jwtPayload?.uid ||
     jwtPayload?.user_id ||
+    jwtPayload?.sub ||
+    jwtPayload?._openid ||
+    jwtPayload?.openid ||
+    source.id ||
+    source.ID ||
+    source.uuid ||
     ''
 
   if (!id) return null
@@ -526,17 +550,27 @@ export const fetchCurrentUser = async (accessToken, refreshToken) => {
 }
 
 export const loadCloudProgress = async ({ userId, accessToken, refreshToken }) => {
-  const safeUserId = sanitizeUserId(userId)
-  if (!safeUserId) return { ...EMPTY_PROGRESS }
+  const userIdCandidates = resolveUserIdCandidates(userId, accessToken)
+  if (userIdCandidates.length === 0) return { ...EMPTY_PROGRESS }
 
   await ensureSdkSession({ accessToken, refreshToken })
   const collection = getDatabase().collection(CLOUDBASE_PROGRESS_COLLECTION)
 
   try {
-    const doc = await findExistingProgressDoc(collection, safeUserId)
-    if (!doc) return { ...EMPTY_PROGRESS }
-
-    return normalizeProgressPayload(doc)
+    for (const candidateId of userIdCandidates) {
+      try {
+        const doc = await findExistingProgressDoc(collection, candidateId)
+        if (doc) {
+          return normalizeProgressPayload(doc)
+        }
+      } catch (candidateError) {
+        if (isNotFoundError(candidateError) || isPermissionError(candidateError)) {
+          continue
+        }
+        throw candidateError
+      }
+    }
+    return { ...EMPTY_PROGRESS }
   } catch (error) {
     if (isNotFoundError(error)) {
       return { ...EMPTY_PROGRESS }
@@ -546,11 +580,12 @@ export const loadCloudProgress = async ({ userId, accessToken, refreshToken }) =
 }
 
 export const upsertCloudProgress = async ({ userId, accessToken, refreshToken, progress }) => {
-  const safeUserId = sanitizeUserId(userId)
-  const fallbackDocId = toProgressDocId(safeUserId)
+  const userIdCandidates = resolveUserIdCandidates(userId, accessToken)
+  const safeUserId = userIdCandidates[0] || ''
   if (!safeUserId) {
     throw new Error('同步失败：缺少用户 ID。')
   }
+  const fallbackDocId = toProgressDocId(safeUserId)
   if (!fallbackDocId) {
     throw new Error('同步失败：用户 ID 格式无效。')
   }
@@ -561,22 +596,58 @@ export const upsertCloudProgress = async ({ userId, accessToken, refreshToken, p
   const updatedAt = new Date().toISOString()
 
   try {
-    const existingDoc = await findExistingProgressDoc(collection, safeUserId)
-    const existingDocId = getDocId(existingDoc) || fallbackDocId
+    let existingDoc = null
+    for (const candidateId of userIdCandidates) {
+      try {
+        existingDoc = await findExistingProgressDoc(collection, candidateId)
+      } catch (candidateError) {
+        if (!isNotFoundError(candidateError) && !isPermissionError(candidateError)) {
+          throw candidateError
+        }
+      }
+      if (existingDoc) break
+    }
+
+    const existingDocId = getDocId(existingDoc)
     const payload = {
       userId: safeUserId,
       ...normalized,
       updatedAt,
     }
 
-    if (existingDocId) {
-      await collection.doc(existingDocId).set(payload)
-    } else {
+    const writeDocIds = Array.from(
+      new Set([existingDocId, ...getProgressDocCandidates(safeUserId)])
+    ).filter(Boolean)
+
+    let lastWriteError = null
+    for (const writeDocId of writeDocIds) {
+      try {
+        await collection.doc(writeDocId).set(payload)
+        return updatedAt
+      } catch (writeError) {
+        lastWriteError = writeError
+        if (
+          isPermissionError(writeError) ||
+          isNotFoundError(writeError) ||
+          isRecoverableDocIdError(writeError)
+        ) {
+          continue
+        }
+        throw writeError
+      }
+    }
+
+    // Final fallback for permission models preferring add/create semantics.
+    try {
       await collection.add(payload)
+      return updatedAt
+    } catch (addError) {
+      if (lastWriteError) {
+        throw lastWriteError
+      }
+      throw addError
     }
   } catch (error) {
     throw new Error(getErrorMessage(error, '写入云端进度失败'))
   }
-
-  return updatedAt
 }
