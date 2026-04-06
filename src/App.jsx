@@ -8,6 +8,7 @@ import Statistics from './components/Statistics'
 import Calendar from './components/Calendar'
 import WordCollectionView from './components/WordCollectionView'
 import ToeflSelectionView from './components/ToeflSelectionView'
+import AuthPanel from './components/AuthPanel'
 import { storage } from './utils/storage'
 import {
   fetchCurrentUser,
@@ -175,6 +176,9 @@ function AppContent() {
   const cloudHydratedRef = useRef(false)
   const skipNextCloudPushRef = useRef(false)
   const cloudSyncTimerRef = useRef(null)
+  const [showAuthModal, setShowAuthModal] = useState(false)
+  const [homeAccountNotice, setHomeAccountNotice] = useState(null)
+  const homeNoticeTimerRef = useRef(null)
 
   const allVocabulary = useMemo(() => [...vocabulary, ...customWords], [customWords])
 
@@ -319,6 +323,9 @@ function AppContent() {
     return () => {
       if (cloudSyncTimerRef.current) {
         clearTimeout(cloudSyncTimerRef.current)
+      }
+      if (homeNoticeTimerRef.current) {
+        clearTimeout(homeNoticeTimerRef.current)
       }
     }
   }, [])
@@ -563,6 +570,69 @@ function AppContent() {
       customWords,
     })
     return { message: syncedAtText ? `同步完成（${syncedAtText}）` : '同步完成。' }
+  }
+
+  const showNotice = (message, type = 'info') => {
+    if (!message) return
+    setHomeAccountNotice({ message, type })
+    if (homeNoticeTimerRef.current) {
+      clearTimeout(homeNoticeTimerRef.current)
+    }
+    homeNoticeTimerRef.current = setTimeout(() => {
+      setHomeAccountNotice(null)
+    }, 3200)
+  }
+
+  const handleHomeSync = async () => {
+    if (!cloudEnabled) {
+      showNotice('未配置 CloudBase，暂时无法同步账号。', 'error')
+      return
+    }
+
+    if (authLoading) {
+      showNotice('账号初始化中，请稍后再试。', 'info')
+      return
+    }
+
+    if (!authUser?.id) {
+      setShowAuthModal(true)
+      showNotice('请先登录账号，再执行同步。', 'error')
+      return
+    }
+
+    try {
+      const result = await handleManualSync()
+      showNotice(result?.message || '同步完成。', 'success')
+    } catch (error) {
+      showNotice(error?.message || '同步失败，请稍后重试。', 'error')
+    }
+  }
+
+  const handleModalLogin = async (payload) => {
+    const result = await handleAuthLogin(payload)
+    setShowAuthModal(false)
+    showNotice(result?.message || '登录成功，进度已同步。', 'success')
+    return result
+  }
+
+  const handleModalRegister = async (payload) => {
+    const result = await handleAuthRegister(payload)
+    if (result?.sessionReady) {
+      setShowAuthModal(false)
+      showNotice(result?.message || '注册并登录成功，进度已同步。', 'success')
+    }
+    return result
+  }
+
+  const handleModalLogout = async () => {
+    await handleAuthLogout()
+    showNotice('已退出登录。', 'info')
+  }
+
+  const handleModalSyncNow = async () => {
+    const result = await handleManualSync()
+    showNotice(result?.message || '同步完成。', 'success')
+    return result
   }
 
   useEffect(() => {
@@ -814,6 +884,7 @@ function AppContent() {
             onAuthRegister={handleAuthRegister}
             onAuthLogout={handleAuthLogout}
             onAuthSyncNow={handleManualSync}
+            showAuthPanel={false}
           />
         )
       case 'toeflLevels':
@@ -943,25 +1014,92 @@ function AppContent() {
             <div className="rounded-[14px] border border-[#e5e7eb] bg-white p-4 shadow-[0_1px_3px_rgba(15,23,42,0.08)]">
               <div className="grid grid-cols-2 gap-3">
                 <button
-                  onClick={() => setView('statistics')}
+                  onClick={() => setShowAuthModal(true)}
                   className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] border border-[#d1d5db] bg-white px-4 py-2 text-base font-semibold text-[#111827] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white"
                 >
-                  <span>📊</span>
-                  <span>统计</span>
+                  <span>👤</span>
+                  <span>登录/注册账号</span>
                 </button>
                 <button
-                  onClick={() => setView('calendar')}
+                  onClick={handleHomeSync}
                   className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] border border-[#d1d5db] bg-white px-4 py-2 text-base font-semibold text-[#111827] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white"
                 >
-                  <span>📅</span>
-                  <span>日历</span>
+                  <span>🔄</span>
+                  <span>同步账号</span>
                 </button>
               </div>
+              <p className="mt-3 text-center text-sm text-[#6b7280]">
+                {authUser?.email ? `当前账号：${authUser.email}` : '当前未登录'}
+              </p>
+              {homeAccountNotice && (
+                <p
+                  className={`mt-2 text-center text-sm ${
+                    homeAccountNotice.type === 'success'
+                      ? 'text-emerald-600'
+                      : homeAccountNotice.type === 'error'
+                        ? 'text-rose-600'
+                        : 'text-[#6b7280]'
+                  }`}
+                >
+                  {homeAccountNotice.message}
+                </p>
+              )}
             </div>
           </div>
         )}
         {renderView()}
       </div>
+
+      {view === 'home' && showAuthModal && (
+        <div className="fixed inset-0 z-[80] flex items-center justify-center p-4">
+          <button
+            type="button"
+            aria-label="关闭登录弹窗"
+            className="absolute inset-0 bg-black/30"
+            onClick={() => setShowAuthModal(false)}
+          />
+          <div className="relative w-full max-w-[680px] rounded-[16px] border border-[#e5e7eb] bg-white p-4 shadow-[0_20px_45px_rgba(15,23,42,0.2)] md:p-6">
+            <div className="mb-4 flex items-center justify-between">
+              <h3 className="text-xl font-semibold text-[#111827]">登录信息</h3>
+              <button
+                type="button"
+                onClick={() => setShowAuthModal(false)}
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#d1d5db] text-[#6b7280] transition hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white"
+              >
+                ✕
+              </button>
+            </div>
+
+            <div className="mb-4 grid grid-cols-2 gap-3">
+              <div className="rounded-[12px] border border-[#e5e7eb] bg-[#f8fafc] p-3 text-center">
+                <p className="text-2xl font-semibold text-[#111827]">{learnedWords.length}</p>
+                <p className="text-sm text-[#6b7280]">已学习单词</p>
+              </div>
+              <div className="rounded-[12px] border border-[#0071e3]/30 bg-[#0071e3] p-3 text-center">
+                <p className="text-2xl font-semibold text-white">{masteredWords.length}</p>
+                <p className="text-sm text-white/90">已掌握单词</p>
+              </div>
+            </div>
+
+            <AuthPanel
+              enabled={cloudEnabled}
+              loading={authLoading}
+              user={authUser}
+              syncStatusText={getSyncStatusText({
+                authLoading,
+                hasUser: Boolean(authUser?.id),
+                syncState,
+                lastSyncedAt,
+              })}
+              syncError={syncError || authError}
+              onLogin={handleModalLogin}
+              onRegister={handleModalRegister}
+              onLogout={handleModalLogout}
+              onSyncNow={handleModalSyncNow}
+            />
+          </div>
+        </div>
+      )}
     </div>
   )
 }

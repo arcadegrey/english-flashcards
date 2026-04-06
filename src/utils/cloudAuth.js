@@ -2,6 +2,9 @@ import cloudbase from '@cloudbase/js-sdk'
 
 const CLOUDBASE_ENV_ID = String(import.meta.env.VITE_CLOUDBASE_ENV_ID || '').trim()
 const CLOUDBASE_REGION = String(import.meta.env.VITE_CLOUDBASE_REGION || 'ap-shanghai').trim()
+const CLOUDBASE_PUBLISHABLE_KEY = String(
+  import.meta.env.VITE_CLOUDBASE_PUBLISHABLE_KEY || import.meta.env.VITE_CLOUDBASE_ACCESS_KEY || ''
+).trim()
 const CLOUDBASE_PROGRESS_COLLECTION = String(
   import.meta.env.VITE_CLOUDBASE_PROGRESS_COLLECTION || 'user_progress'
 ).trim()
@@ -36,6 +39,11 @@ const getApp = () => {
     auth: {
       detectSessionInUrl: true,
     },
+  }
+
+  // CloudBase Web SDK init field is `accessKey`; here we accept publishable key from env.
+  if (CLOUDBASE_PUBLISHABLE_KEY) {
+    initOptions.accessKey = CLOUDBASE_PUBLISHABLE_KEY
   }
 
   appInstance = cloudbase.init(initOptions)

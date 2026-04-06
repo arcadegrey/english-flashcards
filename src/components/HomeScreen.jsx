@@ -42,6 +42,7 @@ function HomeScreen({
   onAuthRegister,
   onAuthLogout,
   onAuthSyncNow,
+  showAuthPanel = true,
 }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [debouncedQuery, setDebouncedQuery] = useState('');
@@ -216,17 +217,19 @@ function HomeScreen({
           </div>
         </header>
 
-        <AuthPanel
-          enabled={authEnabled}
-          loading={authLoading}
-          user={authUser}
-          syncStatusText={syncStatusText}
-          syncError={syncError}
-          onLogin={onAuthLogin}
-          onRegister={onAuthRegister}
-          onLogout={onAuthLogout}
-          onSyncNow={onAuthSyncNow}
-        />
+        {showAuthPanel && (
+          <AuthPanel
+            enabled={authEnabled}
+            loading={authLoading}
+            user={authUser}
+            syncStatusText={syncStatusText}
+            syncError={syncError}
+            onLogin={onAuthLogin}
+            onRegister={onAuthRegister}
+            onLogout={onAuthLogout}
+            onSyncNow={onAuthSyncNow}
+          />
+        )}
 
         <section className="rounded-[14px] border border-[#e5e7eb] bg-[#f5f5f7] p-5 shadow-[0_1px_3px_rgba(15,23,42,0.08)] md:p-6">
           <div className="relative">

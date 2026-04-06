@@ -11,16 +11,18 @@ npm install @cloudbase/js-sdk
 ```bash
 VITE_CLOUDBASE_ENV_ID=<你的 CloudBase 环境 ID>
 VITE_CLOUDBASE_REGION=ap-shanghai
+VITE_CLOUDBASE_PUBLISHABLE_KEY=<可选：Publishable Key>
 VITE_CLOUDBASE_PROGRESS_COLLECTION=user_progress
 ```
 
 - `VITE_CLOUDBASE_ENV_ID` 必填。
+- `VITE_CLOUDBASE_PUBLISHABLE_KEY` 可选（部分环境推荐配置）。
 - 配置后重启前端开发服务。
 
 ## 2.1 安全要求（重要）
 - 不要把 `SecretId`、`SecretKey` 或任何管理凭证放到前端 `.env`。
 - `VITE_` 开头变量会被打包到浏览器代码，用户可见。
-- 前端只保留公开配置（如 `ENV_ID`、区域、集合名）。
+- 前端只保留公开配置（如 `ENV_ID`、`Publishable Key`、区域、集合名）。
 - 需要管理权限的操作应放在服务端（Cloud Functions / Node API）执行。
 
 ## 3. 创建进度集合

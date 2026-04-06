@@ -19,6 +19,12 @@ const normalizeError = (error) => {
   ) {
     return '验证码无效或已过期，请重新发送后再试。';
   }
+  if (
+    lower.includes('provider email not found from endpoint') ||
+    (lower.includes('provider') && lower.includes('email') && lower.includes('not found'))
+  ) {
+    return 'CloudBase 未开启邮箱认证，请到控制台「身份认证/登录方式」启用邮箱相关登录。';
+  }
   if (lower.includes('access key') || lower.includes('cloudbase') || lower.includes('env_id')) {
     return 'CloudBase 配置不完整，请检查环境变量。';
   }
@@ -118,7 +124,7 @@ function AuthPanel({
             还未配置云端账号服务。配置后可注册登录并在网站更新后保留学习进度。
           </p>
           <p className="mt-1 text-xs text-[#9ca3af]">
-            需要在环境变量中设置 `VITE_CLOUDBASE_ENV_ID`。
+            需要设置 `VITE_CLOUDBASE_ENV_ID`（可选 `VITE_CLOUDBASE_PUBLISHABLE_KEY`）。
           </p>
         </div>
       </section>
