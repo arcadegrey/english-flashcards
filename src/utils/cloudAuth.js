@@ -198,6 +198,16 @@ const isRecoverableDocIdError = (error) => {
   )
 }
 
+const isNetworkError = (error) => {
+  const text = getErrorMessage(error, '').toLowerCase()
+  return (
+    text.includes('network request error') ||
+    text.includes('network error') ||
+    text.includes('failed to fetch') ||
+    text.includes('load failed')
+  )
+}
+
 const findExistingProgressDoc = async (collection, userId) => {
   // Prefer deterministic doc id lookup, avoids list/query permission issues.
   const docCandidates = getProgressDocCandidates(userId)
@@ -206,8 +216,13 @@ const findExistingProgressDoc = async (collection, userId) => {
       const directDoc = await loadByDocId(collection, docId)
       if (directDoc) return directDoc
     } catch (error) {
-      if (!isNotFoundError(error) && !isRecoverableDocIdError(error)) {
-        throw error
+      if (
+        !isNotFoundError(error) &&
+        !isRecoverableDocIdError(error) &&
+        !isPermissionError(error) &&
+        !isNetworkError(error)
+      ) {
+        console.warn('[cloud-sync] doc lookup skipped:', getErrorMessage(error, 'doc lookup failed'))
       }
     }
   }
@@ -570,14 +585,8 @@ export const loadCloudProgress = async ({ userId, accessToken, refreshToken }) =
           return normalizeProgressPayload(doc)
         }
       } catch (candidateError) {
-        if (
-          isNotFoundError(candidateError) ||
-          isPermissionError(candidateError) ||
-          isRecoverableDocIdError(candidateError)
-        ) {
-          continue
-        }
-        throw candidateError
+        console.warn('[cloud-sync] load candidate skipped:', getErrorMessage(candidateError, 'load failed'))
+        continue
       }
     }
     return { ...EMPTY_PROGRESS }
@@ -614,13 +623,7 @@ export const upsertCloudProgress = async ({ userId, accessToken, refreshToken, p
       try {
         existingDoc = await findExistingProgressDoc(collection, candidateId)
       } catch (candidateError) {
-        if (
-          !isNotFoundError(candidateError) &&
-          !isPermissionError(candidateError) &&
-          !isRecoverableDocIdError(candidateError)
-        ) {
-          throw candidateError
-        }
+        console.warn('[cloud-sync] existing doc lookup skipped:', getErrorMessage(candidateError, 'lookup failed'))
       }
       if (existingDoc) break
     }
@@ -646,7 +649,8 @@ export const upsertCloudProgress = async ({ userId, accessToken, refreshToken, p
         if (
           isPermissionError(writeError) ||
           isNotFoundError(writeError) ||
-          isRecoverableDocIdError(writeError)
+          isRecoverableDocIdError(writeError) ||
+          isNetworkError(writeError)
         ) {
           continue
         }
