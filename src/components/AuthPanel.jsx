@@ -25,6 +25,9 @@ const normalizeError = (error) => {
   ) {
     return 'CloudBase 未开启邮箱认证，请到控制台「身份认证/登录方式」启用邮箱相关登录。';
   }
+  if (lower.includes('network request error') || lower.includes('network error')) {
+    return '云同步请求失败，请检查 CloudBase 数据库「权限设置」是否允许当前登录用户读写。';
+  }
   if (lower.includes('access key') || lower.includes('cloudbase') || lower.includes('env_id')) {
     return 'CloudBase 配置不完整，请检查环境变量。';
   }

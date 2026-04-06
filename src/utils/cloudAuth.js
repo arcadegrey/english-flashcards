@@ -139,6 +139,43 @@ const toProgressDocId = (rawUserId) => {
   return `uid_${Date.now()}`
 }
 
+const getDocId = (doc) =>
+  String(doc?._id || doc?.id || doc?.docId || doc?._docId || '').trim()
+
+const loadByDocId = async (collection, docId) => {
+  if (!docId) return null
+  const response = await collection.doc(docId).get()
+  return extractDocFromResponse(response)
+}
+
+const loadByUserId = async (collection, userId) => {
+  if (!userId) return null
+  const response = await collection.where({ userId }).limit(1).get()
+  const data = Array.isArray(response?.data) ? response.data : []
+  if (data.length > 0) return data[0]
+  return extractDocFromResponse(response)
+}
+
+const findExistingProgressDoc = async (collection, userId) => {
+  const byUserId = await loadByUserId(collection, userId)
+  if (byUserId) return byUserId
+
+  // Backward compatibility for legacy doc-id strategy.
+  const legacyDocIds = Array.from(new Set([toProgressDocId(userId), userId])).filter(Boolean)
+  for (const legacyDocId of legacyDocIds) {
+    try {
+      const legacy = await loadByDocId(collection, legacyDocId)
+      if (legacy) return legacy
+    } catch (error) {
+      if (!isNotFoundError(error)) {
+        throw error
+      }
+    }
+  }
+
+  return null
+}
+
 const normalizeSession = (session) => {
   if (!isObject(session)) return null
 
@@ -464,15 +501,13 @@ export const fetchCurrentUser = async (accessToken, refreshToken) => {
 
 export const loadCloudProgress = async ({ userId, accessToken, refreshToken }) => {
   const safeUserId = sanitizeUserId(userId)
-  const progressDocId = toProgressDocId(safeUserId)
-  if (!safeUserId || !progressDocId) return { ...EMPTY_PROGRESS }
+  if (!safeUserId) return { ...EMPTY_PROGRESS }
 
   await ensureSdkSession({ accessToken, refreshToken })
-  const db = getDatabase()
+  const collection = getDatabase().collection(CLOUDBASE_PROGRESS_COLLECTION)
 
   try {
-    const response = await db.collection(CLOUDBASE_PROGRESS_COLLECTION).doc(progressDocId).get()
-    const doc = extractDocFromResponse(response)
+    const doc = await findExistingProgressDoc(collection, safeUserId)
     if (!doc) return { ...EMPTY_PROGRESS }
 
     return normalizeProgressPayload(doc)
@@ -486,25 +521,29 @@ export const loadCloudProgress = async ({ userId, accessToken, refreshToken }) =
 
 export const upsertCloudProgress = async ({ userId, accessToken, refreshToken, progress }) => {
   const safeUserId = sanitizeUserId(userId)
-  const progressDocId = toProgressDocId(safeUserId)
   if (!safeUserId) {
     throw new Error('同步失败：缺少用户 ID。')
   }
-  if (!progressDocId) {
-    throw new Error('同步失败：用户 ID 格式无效。')
-  }
 
   await ensureSdkSession({ accessToken, refreshToken })
-  const db = getDatabase()
+  const collection = getDatabase().collection(CLOUDBASE_PROGRESS_COLLECTION)
   const normalized = normalizeProgressPayload(progress)
   const updatedAt = new Date().toISOString()
 
   try {
-    await db.collection(CLOUDBASE_PROGRESS_COLLECTION).doc(progressDocId).set({
+    const existingDoc = await findExistingProgressDoc(collection, safeUserId)
+    const existingDocId = getDocId(existingDoc)
+    const payload = {
       userId: safeUserId,
       ...normalized,
       updatedAt,
-    })
+    }
+
+    if (existingDocId) {
+      await collection.doc(existingDocId).set(payload)
+    } else {
+      await collection.add(payload)
+    }
   } catch (error) {
     throw new Error(getErrorMessage(error, '写入云端进度失败'))
   }
