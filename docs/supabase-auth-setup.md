@@ -46,10 +46,10 @@ VITE_CLOUDBASE_PROGRESS_COLLECTION=user_progress
 
 ```json
 {
-  "read": "auth.uid != null && doc.userId == auth.uid",
+  "read": "auth.uid != null && doc._id == auth.uid",
   "create": "auth.uid != null && request.data.userId == auth.uid",
-  "update": "auth.uid != null && doc.userId == auth.uid",
-  "delete": "auth.uid != null && doc.userId == auth.uid"
+  "update": "auth.uid != null && doc._id == auth.uid && request.data.userId == auth.uid",
+  "delete": "auth.uid != null && doc._id == auth.uid"
 }
 ```
 

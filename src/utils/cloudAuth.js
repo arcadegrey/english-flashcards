@@ -110,6 +110,35 @@ const ensureNoAuthError = (response, fallback) => {
 
 const sanitizeUserId = (userId) => String(userId || '').trim()
 
+const toBase64Url = (text) => {
+  try {
+    return btoa(unescape(encodeURIComponent(text)))
+      .replace(/\+/g, '-')
+      .replace(/\//g, '_')
+      .replace(/=+$/g, '')
+  } catch {
+    return ''
+  }
+}
+
+const toProgressDocId = (rawUserId) => {
+  const userId = sanitizeUserId(rawUserId)
+  if (!userId) return ''
+
+  // Keep simple IDs unchanged for backward compatibility.
+  if (/^[A-Za-z0-9_-]{1,64}$/.test(userId)) {
+    return userId
+  }
+
+  // Fallback for provider UIDs containing reserved chars.
+  const encoded = toBase64Url(userId)
+  if (encoded) {
+    return `uid_${encoded}`.slice(0, 120)
+  }
+
+  return `uid_${Date.now()}`
+}
+
 const normalizeSession = (session) => {
   if (!isObject(session)) return null
 
@@ -435,13 +464,14 @@ export const fetchCurrentUser = async (accessToken, refreshToken) => {
 
 export const loadCloudProgress = async ({ userId, accessToken, refreshToken }) => {
   const safeUserId = sanitizeUserId(userId)
-  if (!safeUserId) return { ...EMPTY_PROGRESS }
+  const progressDocId = toProgressDocId(safeUserId)
+  if (!safeUserId || !progressDocId) return { ...EMPTY_PROGRESS }
 
   await ensureSdkSession({ accessToken, refreshToken })
   const db = getDatabase()
 
   try {
-    const response = await db.collection(CLOUDBASE_PROGRESS_COLLECTION).doc(safeUserId).get()
+    const response = await db.collection(CLOUDBASE_PROGRESS_COLLECTION).doc(progressDocId).get()
     const doc = extractDocFromResponse(response)
     if (!doc) return { ...EMPTY_PROGRESS }
 
@@ -456,8 +486,12 @@ export const loadCloudProgress = async ({ userId, accessToken, refreshToken }) =
 
 export const upsertCloudProgress = async ({ userId, accessToken, refreshToken, progress }) => {
   const safeUserId = sanitizeUserId(userId)
+  const progressDocId = toProgressDocId(safeUserId)
   if (!safeUserId) {
     throw new Error('同步失败：缺少用户 ID。')
+  }
+  if (!progressDocId) {
+    throw new Error('同步失败：用户 ID 格式无效。')
   }
 
   await ensureSdkSession({ accessToken, refreshToken })
@@ -466,7 +500,7 @@ export const upsertCloudProgress = async ({ userId, accessToken, refreshToken, p
   const updatedAt = new Date().toISOString()
 
   try {
-    await db.collection(CLOUDBASE_PROGRESS_COLLECTION).doc(safeUserId).set({
+    await db.collection(CLOUDBASE_PROGRESS_COLLECTION).doc(progressDocId).set({
       userId: safeUserId,
       ...normalized,
       updatedAt,
