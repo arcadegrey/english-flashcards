@@ -101,6 +101,11 @@ const getErrorMessage = (error, fallback = '请求失败，请稍后重试。') 
   return error.message || error.code || fallback
 }
 
+const getErrorCode = (error) => {
+  if (!error || typeof error === 'string') return ''
+  return String(error.code || error.errCode || error.statusCode || '').trim()
+}
+
 const ensureNoAuthError = (response, fallback) => {
   if (response?.error) {
     throw new Error(getErrorMessage(response.error, fallback))
@@ -212,10 +217,11 @@ const findExistingProgressDoc = async (collection, userId) => {
     const byUserId = await loadByUserId(collection, userId)
     if (byUserId) return byUserId
   } catch (error) {
+    // Query can fail under some rule/index/network combinations.
+    // Don't block sync: write path still has deterministic doc-id + add fallback.
     if (!isPermissionError(error) && !isNotFoundError(error)) {
-      throw error
+      console.warn('[cloud-sync] query fallback skipped:', getErrorMessage(error, 'query failed'))
     }
-    // Ignore permission errors here; write path will use deterministic doc id.
   }
 
   return null
@@ -579,7 +585,10 @@ export const loadCloudProgress = async ({ userId, accessToken, refreshToken }) =
     if (isNotFoundError(error)) {
       return { ...EMPTY_PROGRESS }
     }
-    throw new Error(getErrorMessage(error, '读取云端进度失败'))
+    const detail = getErrorMessage(error, '读取云端进度失败')
+    const code = getErrorCode(error)
+    const uidHint = userIdCandidates[0] ? ` uid=${userIdCandidates[0]}` : ''
+    throw new Error(`${detail}${code ? ` (code=${code})` : ''}${uidHint}`)
   }
 }
 
@@ -656,6 +665,8 @@ export const upsertCloudProgress = async ({ userId, accessToken, refreshToken, p
       throw addError
     }
   } catch (error) {
-    throw new Error(getErrorMessage(error, '写入云端进度失败'))
+    const detail = getErrorMessage(error, '写入云端进度失败')
+    const code = getErrorCode(error)
+    throw new Error(`${detail}${code ? ` (code=${code})` : ''} uid=${safeUserId}`)
   }
 }
