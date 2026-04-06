@@ -10,6 +10,7 @@ const STORAGE_KEYS = {
   KOKORO_SPEED: 'flashcards_kokoro_speed',
   WORD_PROGRESS: 'flashcards_word_progress',
   CUSTOM_WORDS: 'flashcards_custom_words',
+  AUTH_SESSION: 'flashcards_auth_session',
 };
 
 export const storage = {
@@ -74,6 +75,36 @@ export const storage = {
       localStorage.removeItem(STORAGE_KEYS.MASTERED_WORDS);
     } catch (error) {
       console.error('Failed to clear storage:', error);
+    }
+  },
+
+  getAuthSession: () => {
+    try {
+      const data = localStorage.getItem(STORAGE_KEYS.AUTH_SESSION);
+      return data ? JSON.parse(data) : null;
+    } catch (error) {
+      console.error('Failed to load auth session:', error);
+      return null;
+    }
+  },
+
+  setAuthSession: (session) => {
+    try {
+      if (!session) {
+        localStorage.removeItem(STORAGE_KEYS.AUTH_SESSION);
+        return;
+      }
+      localStorage.setItem(STORAGE_KEYS.AUTH_SESSION, JSON.stringify(session));
+    } catch (error) {
+      console.error('Failed to save auth session:', error);
+    }
+  },
+
+  clearAuthSession: () => {
+    try {
+      localStorage.removeItem(STORAGE_KEYS.AUTH_SESSION);
+    } catch (error) {
+      console.error('Failed to clear auth session:', error);
     }
   },
 

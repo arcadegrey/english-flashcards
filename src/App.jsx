@@ -9,10 +9,82 @@ import Calendar from './components/Calendar'
 import WordCollectionView from './components/WordCollectionView'
 import ToeflSelectionView from './components/ToeflSelectionView'
 import { storage } from './utils/storage'
+import {
+  fetchCurrentUser,
+  isCloudAuthConfigured,
+  loadCloudProgress,
+  refreshSession,
+  signInWithEmail,
+  signOut,
+  signUpWithEmail,
+  upsertCloudProgress,
+} from './utils/cloudAuth'
 
 const TOEFL_UNKNOWN_LEVEL = 'unknown'
 const TOEFL_UNKNOWN_LIST = 'unknown'
 const NAVIGATION_STATE_KEY = 'english_flashcards_navigation_v1'
+
+const dedupeIdList = (list) => {
+  const safeList = Array.isArray(list) ? list : []
+  const seen = new Set()
+  const result = []
+
+  safeList.forEach((item) => {
+    if (item === null || item === undefined) return
+    const key = String(item)
+    if (seen.has(key)) return
+    seen.add(key)
+    result.push(item)
+  })
+
+  return result
+}
+
+const countFilledFields = (word) => {
+  if (!word || typeof word !== 'object') return 0
+  const keys = ['phonetic', 'pos', 'meaning', 'example', 'exampleCn', 'category', 'level', 'list']
+  return keys.reduce((count, key) => {
+    const value = String(word[key] ?? '').trim()
+    return value ? count + 1 : count
+  }, 0)
+}
+
+const pickRicherWord = (currentWord, incomingWord) => {
+  if (!currentWord) return incomingWord
+  if (!incomingWord) return currentWord
+  return countFilledFields(incomingWord) >= countFilledFields(currentWord) ? incomingWord : currentWord
+}
+
+const mergeCustomWordList = (baseList, extraList) => {
+  const map = new Map()
+  const applyList = (list) => {
+    const safeList = Array.isArray(list) ? list : []
+    safeList.forEach((word) => {
+      const key = String(word?.word || '').trim().toLowerCase()
+      if (!key) return
+      map.set(key, pickRicherWord(map.get(key), word))
+    })
+  }
+
+  applyList(baseList)
+  applyList(extraList)
+  return Array.from(map.values())
+}
+
+const mergeProgress = (localProgress, cloudProgress) => ({
+  learnedWords: dedupeIdList([...(cloudProgress.learnedWords || []), ...(localProgress.learnedWords || [])]),
+  masteredWords: dedupeIdList([...(cloudProgress.masteredWords || []), ...(localProgress.masteredWords || [])]),
+  customWords: mergeCustomWordList(cloudProgress.customWords || [], localProgress.customWords || []),
+})
+
+const getSyncStatusText = ({ authLoading, hasUser, syncState, lastSyncedAt }) => {
+  if (authLoading) return '初始化中'
+  if (!hasUser) return '未登录'
+  if (syncState === 'syncing') return '同步中'
+  if (syncState === 'error') return '同步失败'
+  if (syncState === 'synced' && lastSyncedAt) return `已同步 ${lastSyncedAt}`
+  return '已连接'
+}
 
 const extractNumericTag = (value) => {
   const text = String(value ?? '').trim()
@@ -89,6 +161,20 @@ function AppContent() {
   const [shuffledWords, setShuffledWords] = useState([])
   const historyReadyRef = useRef(false)
   const restoringFromHistoryRef = useRef(false)
+  const pendingStartWordIdRef = useRef(null)
+  const cloudEnabled = isCloudAuthConfigured()
+  const [localDataLoaded, setLocalDataLoaded] = useState(false)
+  const [authLoading, setAuthLoading] = useState(cloudEnabled)
+  const [authUser, setAuthUser] = useState(null)
+  const [authSession, setAuthSession] = useState(null)
+  const [authError, setAuthError] = useState('')
+  const [syncState, setSyncState] = useState('idle')
+  const [syncError, setSyncError] = useState('')
+  const [lastSyncedAt, setLastSyncedAt] = useState('')
+  const authBootstrappedRef = useRef(false)
+  const cloudHydratedRef = useRef(false)
+  const skipNextCloudPushRef = useRef(false)
+  const cloudSyncTimerRef = useRef(null)
 
   const allVocabulary = useMemo(() => [...vocabulary, ...customWords], [customWords])
 
@@ -181,6 +267,26 @@ function AppContent() {
   }, [selectedToeflLevel, toeflGrouping.listsByLevel])
 
   useEffect(() => {
+    const pendingStartWordId = pendingStartWordIdRef.current
+    pendingStartWordIdRef.current = null
+
+    if (pendingStartWordId != null) {
+      const startWordIndex = filteredVocabulary.findIndex(
+        (word) => String(word.id) === String(pendingStartWordId)
+      )
+
+      if (startWordIndex >= 0) {
+        const startWord = filteredVocabulary[startWordIndex]
+        const restWords = filteredVocabulary
+          .filter((_, index) => index !== startWordIndex)
+          .sort(() => Math.random() - 0.5)
+
+        setShuffledWords([startWord, ...restWords])
+        setCurrentIndex(0)
+        return
+      }
+    }
+
     const shuffled = [...filteredVocabulary].sort(() => Math.random() - 0.5)
     setShuffledWords(shuffled)
     setCurrentIndex(0)
@@ -194,6 +300,7 @@ function AppContent() {
     setLearnedWords(savedLearned)
     setMasteredWords(savedMastered)
     setCustomWords(Array.isArray(savedCustomWords) ? savedCustomWords : [])
+    setLocalDataLoaded(true)
   }, [])
 
   useEffect(() => {
@@ -207,6 +314,256 @@ function AppContent() {
   useEffect(() => {
     storage.setCustomWords(customWords)
   }, [customWords])
+
+  useEffect(() => {
+    return () => {
+      if (cloudSyncTimerRef.current) {
+        clearTimeout(cloudSyncTimerRef.current)
+      }
+    }
+  }, [])
+
+  const applyMergedProgress = (mergedProgress, { skipNextPush = false } = {}) => {
+    if (skipNextPush) {
+      skipNextCloudPushRef.current = true
+    }
+
+    setLearnedWords(mergedProgress.learnedWords)
+    setMasteredWords(mergedProgress.masteredWords)
+    setCustomWords(mergedProgress.customWords)
+
+    storage.setLearnedWords(mergedProgress.learnedWords)
+    storage.setMasteredWords(mergedProgress.masteredWords)
+    storage.setCustomWords(mergedProgress.customWords)
+  }
+
+  const pushProgressToCloud = async (session, user, progress) => {
+    if (!cloudEnabled || !session?.access_token || !user?.id) return ''
+
+    setSyncState('syncing')
+    setSyncError('')
+
+    const syncedAtIso = await upsertCloudProgress({
+      userId: user.id,
+      accessToken: session.access_token,
+      refreshToken: session.refresh_token,
+      progress,
+    })
+
+    const syncedAtText = new Date(syncedAtIso).toLocaleString('zh-CN', {
+      hour12: false,
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+    })
+
+    setSyncState('synced')
+    setLastSyncedAt(syncedAtText)
+    setSyncError('')
+    return syncedAtText
+  }
+
+  const hydrateFromCloud = async ({ session, user }) => {
+    if (!cloudEnabled || !session?.access_token || !user?.id) return
+
+    const cloudProgress = await loadCloudProgress({
+      userId: user.id,
+      accessToken: session.access_token,
+      refreshToken: session.refresh_token,
+    })
+
+    const merged = mergeProgress(
+      {
+        learnedWords,
+        masteredWords,
+        customWords,
+      },
+      cloudProgress
+    )
+
+    applyMergedProgress(merged, { skipNextPush: true })
+    cloudHydratedRef.current = true
+    await pushProgressToCloud(session, user, merged)
+  }
+
+  const ensureFreshSession = async (session) => {
+    if (!session?.access_token) return null
+
+    const now = Math.floor(Date.now() / 1000)
+    const expiresAt = Number(session.expires_at || 0)
+    if (expiresAt && expiresAt - now > 60) {
+      return session
+    }
+
+    if (!session.refresh_token) {
+      return null
+    }
+
+    const refreshed = await refreshSession(session.refresh_token)
+    return refreshed.session
+  }
+
+  useEffect(() => {
+    if (!localDataLoaded || authBootstrappedRef.current) {
+      return
+    }
+
+    authBootstrappedRef.current = true
+    if (!cloudEnabled) {
+      setAuthLoading(false)
+      return
+    }
+
+    const bootstrap = async () => {
+      setAuthLoading(true)
+      setAuthError('')
+      const savedSession = storage.getAuthSession()
+      if (!savedSession) {
+        setAuthLoading(false)
+        setSyncState('idle')
+        return
+      }
+
+      try {
+        const activeSession = await ensureFreshSession(savedSession)
+        if (!activeSession) {
+          throw new Error('登录已过期，请重新登录。')
+        }
+
+        storage.setAuthSession(activeSession)
+        const user =
+          activeSession.user ||
+          (await fetchCurrentUser(activeSession.access_token, activeSession.refresh_token))
+
+        setAuthSession(activeSession)
+        setAuthUser(user)
+        await hydrateFromCloud({ session: activeSession, user })
+      } catch (error) {
+        storage.clearAuthSession()
+        setAuthSession(null)
+        setAuthUser(null)
+        setAuthError(error?.message || '恢复登录失败')
+        setSyncState('error')
+        setSyncError(error?.message || '恢复登录失败')
+      } finally {
+        setAuthLoading(false)
+      }
+    }
+
+    bootstrap()
+  }, [cloudEnabled, customWords, learnedWords, localDataLoaded, masteredWords])
+
+  useEffect(() => {
+    if (!cloudEnabled || authLoading || !cloudHydratedRef.current) {
+      return
+    }
+
+    if (!authSession?.access_token || !authUser?.id) {
+      return
+    }
+
+    if (skipNextCloudPushRef.current) {
+      skipNextCloudPushRef.current = false
+      return
+    }
+
+    if (cloudSyncTimerRef.current) {
+      clearTimeout(cloudSyncTimerRef.current)
+    }
+
+    cloudSyncTimerRef.current = setTimeout(() => {
+      pushProgressToCloud(authSession, authUser, {
+        learnedWords,
+        masteredWords,
+        customWords,
+      }).catch((error) => {
+        setSyncState('error')
+        setSyncError(error?.message || '自动同步失败')
+      })
+    }, 800)
+
+    return () => {
+      if (cloudSyncTimerRef.current) {
+        clearTimeout(cloudSyncTimerRef.current)
+      }
+    }
+  }, [authLoading, authSession, authUser, cloudEnabled, customWords, learnedWords, masteredWords])
+
+  const handleAuthLogin = async ({ email, password }) => {
+    if (!cloudEnabled) {
+      throw new Error('云端账号服务未配置')
+    }
+
+    setAuthError('')
+    const { session, user } = await signInWithEmail({ email, password })
+    storage.setAuthSession(session)
+    setAuthSession(session)
+    setAuthUser(user)
+    await hydrateFromCloud({ session, user })
+    return { message: '登录成功，进度已同步。', sessionReady: true }
+  }
+
+  const handleAuthRegister = async ({ email, password, verificationCode }) => {
+    if (!cloudEnabled) {
+      throw new Error('云端账号服务未配置')
+    }
+
+    setAuthError('')
+    const { session, user, emailConfirmationRequired, message } = await signUpWithEmail({
+      email,
+      password,
+      verificationCode,
+    })
+    if (!session) {
+      return {
+        message:
+          message ||
+          (emailConfirmationRequired
+            ? '验证码已发送，请输入验证码完成注册。'
+            : '注册成功，请登录。'),
+        sessionReady: false,
+      }
+    }
+
+    storage.setAuthSession(session)
+    setAuthSession(session)
+    setAuthUser(user || session.user)
+    await hydrateFromCloud({ session, user: user || session.user })
+    return { message: message || '注册并登录成功，进度已同步。', sessionReady: true }
+  }
+
+  const handleAuthLogout = async () => {
+    if (authSession?.access_token) {
+      try {
+        await signOut(authSession.access_token)
+      } catch {
+        // Logout failure does not block local sign-out.
+      }
+    }
+
+    storage.clearAuthSession()
+    setAuthSession(null)
+    setAuthUser(null)
+    setAuthError('')
+    setSyncState('idle')
+    setSyncError('')
+    setLastSyncedAt('')
+    cloudHydratedRef.current = false
+  }
+
+  const handleManualSync = async () => {
+    if (!authSession?.access_token || !authUser?.id) {
+      throw new Error('请先登录账号')
+    }
+
+    const syncedAtText = await pushProgressToCloud(authSession, authUser, {
+      learnedWords,
+      masteredWords,
+      customWords,
+    })
+    return { message: syncedAtText ? `同步完成（${syncedAtText}）` : '同步完成。' }
+  }
 
   useEffect(() => {
     if (typeof window === 'undefined') return undefined
@@ -289,7 +646,8 @@ function AppContent() {
 
   const currentWord = shuffledWords[currentIndex]
 
-  const handleCategorySelect = (categoryId) => {
+  const handleCategorySelect = (categoryId, options = {}) => {
+    pendingStartWordIdRef.current = options.focusWordId ?? null
     setSelectedCategory(categoryId)
     if (categoryId !== 'toefl') {
       setSelectedToeflLevel('')
@@ -300,6 +658,7 @@ function AppContent() {
   }
 
   const openToeflLevels = () => {
+    pendingStartWordIdRef.current = null
     setSelectedCategory('toefl')
     setSelectedToeflLevel('')
     setSelectedToeflList('')
@@ -307,6 +666,7 @@ function AppContent() {
   }
 
   const handleToeflLevelSelect = (levelKey) => {
+    pendingStartWordIdRef.current = null
     setSelectedCategory('toefl')
     setSelectedToeflLevel(levelKey)
     setSelectedToeflList('')
@@ -319,6 +679,7 @@ function AppContent() {
   }
 
   const handleToeflListSelect = (listKey) => {
+    pendingStartWordIdRef.current = null
     setSelectedCategory('toefl')
     setSelectedToeflList(listKey)
     setMode('learn')
@@ -326,6 +687,7 @@ function AppContent() {
   }
 
   const handleStartAllToefl = () => {
+    pendingStartWordIdRef.current = null
     setSelectedCategory('toefl')
     setSelectedToeflLevel('')
     setSelectedToeflList('')
@@ -334,6 +696,7 @@ function AppContent() {
   }
 
   const handleStartCurrentLevel = () => {
+    pendingStartWordIdRef.current = null
     setSelectedCategory('toefl')
     setSelectedToeflList('')
     setMode('learn')
@@ -411,7 +774,7 @@ function AppContent() {
   )
 
   const appBackground = useMemo(() => {
-    if (view === 'home') {
+    if (view === 'home' || view === 'toeflLevels' || view === 'toeflLists') {
       return 'bg-[#f8fafc]'
     }
 
@@ -437,6 +800,20 @@ function AppContent() {
             onOpenLearnedWords={() => setView('learnedWords')}
             onOpenMasteredWords={() => setView('masteredWords')}
             onOpenToeflLevels={openToeflLevels}
+            authEnabled={cloudEnabled}
+            authLoading={authLoading}
+            authUser={authUser}
+            syncStatusText={getSyncStatusText({
+              authLoading,
+              hasUser: Boolean(authUser?.id),
+              syncState,
+              lastSyncedAt,
+            })}
+            syncError={syncError || authError}
+            onAuthLogin={handleAuthLogin}
+            onAuthRegister={handleAuthRegister}
+            onAuthLogout={handleAuthLogout}
+            onAuthSyncNow={handleManualSync}
           />
         )
       case 'toeflLevels':

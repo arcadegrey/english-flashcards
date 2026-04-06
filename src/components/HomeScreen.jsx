@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import categories from '../data/categories';
+import AuthPanel from './AuthPanel';
 
 const collectionCategories = [
   {
@@ -32,6 +33,15 @@ function HomeScreen({
   onOpenLearnedWords,
   onOpenMasteredWords,
   onOpenToeflLevels,
+  authEnabled = false,
+  authLoading = false,
+  authUser = null,
+  syncStatusText = '',
+  syncError = '',
+  onAuthLogin,
+  onAuthRegister,
+  onAuthLogout,
+  onAuthSyncNow,
 }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [debouncedQuery, setDebouncedQuery] = useState('');
@@ -135,6 +145,32 @@ function HomeScreen({
     return vocabularyData.filter((word) => matchesWordQuery(word, debouncedQuery)).length;
   }, [debouncedQuery, vocabularyData, wordCounts.all]);
 
+  const focusWordIdByCategory = useMemo(() => {
+    if (!debouncedQuery) {
+      return new Map();
+    }
+
+    const map = new Map();
+    categoriesWithCollections.forEach((category) => {
+      if (category.type === 'collection' || category.id === 'toefl') {
+        return;
+      }
+
+      const matchedWord =
+        category.id === 'all'
+          ? vocabularyData.find((word) => matchesWordQuery(word, debouncedQuery))
+          : vocabularyData.find(
+              (word) => word.category === category.id && matchesWordQuery(word, debouncedQuery)
+            );
+
+      if (matchedWord) {
+        map.set(category.id, matchedWord.id);
+      }
+    });
+
+    return map;
+  }, [categoriesWithCollections, debouncedQuery, vocabularyData]);
+
   const handleCategoryClick = (category) => {
     if (category.id === 'learnedWords') {
       onOpenLearnedWords?.();
@@ -151,7 +187,8 @@ function HomeScreen({
       return;
     }
 
-    onCategorySelect(category.id);
+    const focusWordId = focusWordIdByCategory.get(category.id) ?? null;
+    onCategorySelect(category.id, { focusWordId });
   };
 
   const cardClass =
@@ -178,6 +215,18 @@ function HomeScreen({
             </div>
           </div>
         </header>
+
+        <AuthPanel
+          enabled={authEnabled}
+          loading={authLoading}
+          user={authUser}
+          syncStatusText={syncStatusText}
+          syncError={syncError}
+          onLogin={onAuthLogin}
+          onRegister={onAuthRegister}
+          onLogout={onAuthLogout}
+          onSyncNow={onAuthSyncNow}
+        />
 
         <section className="rounded-[14px] border border-[#e5e7eb] bg-[#f5f5f7] p-5 shadow-[0_1px_3px_rgba(15,23,42,0.08)] md:p-6">
           <div className="relative">
