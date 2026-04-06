@@ -1,0 +1,42 @@
+name: Deploy To Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      # Build-time public vars for Vite
+      VITE_KOKORO_TTS_URL: ${{ secrets.VITE_KOKORO_TTS_URL }}
+      VITE_CLOUDBASE_ENV_ID: ${{ secrets.VITE_CLOUDBASE_ENV_ID }}
+      VITE_CLOUDBASE_REGION: ${{ secrets.VITE_CLOUDBASE_REGION }}
+      VITE_CLOUDBASE_PUBLISHABLE_KEY: ${{ secrets.VITE_CLOUDBASE_PUBLISHABLE_KEY }}
+      VITE_CLOUDBASE_PROGRESS_COLLECTION: ${{ secrets.VITE_CLOUDBASE_PROGRESS_COLLECTION }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy To Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=english-flashcards --branch=${{ github.ref_name }}
