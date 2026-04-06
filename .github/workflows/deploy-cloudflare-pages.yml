@@ -1,4 +1,4 @@
-name: Deploy To Cloudflare Pages
+name: Deploy To Cloudflare Worker
 
 on:
   push:
@@ -12,7 +12,6 @@ jobs:
     permissions:
       contents: read
     env:
-      CF_PAGES_PROJECT: ${{ secrets.CF_PAGES_PROJECT }}
       # Build-time public vars for Vite
       VITE_KOKORO_TTS_URL: ${{ secrets.VITE_KOKORO_TTS_URL }}
       VITE_CLOUDBASE_ENV_ID: ${{ secrets.VITE_CLOUDBASE_ENV_ID }}
@@ -50,9 +49,8 @@ jobs:
       - name: Install Wrangler CLI
         run: npm i -g wrangler@4
 
-      - name: Deploy To Cloudflare Pages
+      - name: Deploy To Cloudflare Worker
         run: |
           set -euo pipefail
-          PROJECT="${CF_PAGES_PROJECT:-english-flashcards}"
-          echo "Deploying project: ${PROJECT}"
-          wrangler pages deploy dist --project-name="${PROJECT}" --branch="${{ github.ref_name }}"
+          echo "Deploying Worker + static assets with wrangler.toml"
+          wrangler deploy

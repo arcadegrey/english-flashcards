@@ -1,6 +1,6 @@
-# Cloudflare 静态站点改为 Git 驱动构建与部署
+# Cloudflare Worker（Static Assets）改为 Git 驱动构建与部署
 
-如果你在 Cloudflare 后台遇到“Static Assets 不走构建”的限制，可以改成 GitHub Actions 构建后再部署到 Pages。
+如果你当前项目是 Worker + Static Assets（不是 Pages 项目），可以用 GitHub Actions 构建后执行 `wrangler deploy`。
 
 ## 已添加的仓库配置
 - Workflow: `.github/workflows/deploy-cloudflare-pages.yml`
@@ -10,7 +10,7 @@
 进入：`GitHub Repo -> Settings -> Secrets and variables -> Actions -> New repository secret`
 
 必填：
-- `CF_API_TOKEN`：Cloudflare API Token（需包含 Pages 编辑权限）
+- `CF_API_TOKEN`：Cloudflare API Token（需包含 Workers 编辑权限）
 - `CF_ACCOUNT_ID`：Cloudflare Account ID
 
 构建用公开变量（Vite 会在打包时注入）：
@@ -22,8 +22,8 @@
 
 ## 触发方式
 - 推送到 `main` 自动触发部署
-- 或手动触发：`Actions -> Deploy To Cloudflare Pages -> Run workflow`
+- 或手动触发：`Actions -> Deploy To Cloudflare Worker -> Run workflow`
 
 ## 说明
-- 这套方式由 GitHub 完成 `npm ci && npm run build`，再把 `dist/` 上传到 Cloudflare Pages。
-- 不依赖 Cloudflare 后台的构建开关。
+- 这套方式由 GitHub 完成 `npm ci && npm run build`，再通过 `wrangler deploy` 上传 Worker 与 `dist/` 静态资源。
+- 不依赖 Cloudflare Pages 项目名配置。
