@@ -201,7 +201,7 @@ const findExistingProgressDoc = async (collection, userId) => {
       const directDoc = await loadByDocId(collection, docId)
       if (directDoc) return directDoc
     } catch (error) {
-      if (!isNotFoundError(error)) {
+      if (!isNotFoundError(error) && !isRecoverableDocIdError(error)) {
         throw error
       }
     }
@@ -564,7 +564,11 @@ export const loadCloudProgress = async ({ userId, accessToken, refreshToken }) =
           return normalizeProgressPayload(doc)
         }
       } catch (candidateError) {
-        if (isNotFoundError(candidateError) || isPermissionError(candidateError)) {
+        if (
+          isNotFoundError(candidateError) ||
+          isPermissionError(candidateError) ||
+          isRecoverableDocIdError(candidateError)
+        ) {
           continue
         }
         throw candidateError
@@ -601,7 +605,11 @@ export const upsertCloudProgress = async ({ userId, accessToken, refreshToken, p
       try {
         existingDoc = await findExistingProgressDoc(collection, candidateId)
       } catch (candidateError) {
-        if (!isNotFoundError(candidateError) && !isPermissionError(candidateError)) {
+        if (
+          !isNotFoundError(candidateError) &&
+          !isPermissionError(candidateError) &&
+          !isRecoverableDocIdError(candidateError)
+        ) {
           throw candidateError
         }
       }
