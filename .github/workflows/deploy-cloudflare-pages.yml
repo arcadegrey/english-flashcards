@@ -14,12 +14,14 @@ jobs:
     env:
       # Build-time public vars for Vite
       VITE_KOKORO_TTS_URL: ${{ secrets.VITE_KOKORO_TTS_URL }}
-      VITE_CLOUDBASE_ENV_ID: ${{ secrets.VITE_CLOUDBASE_ENV_ID }}
-      VITE_CLOUDBASE_REGION: ${{ secrets.VITE_CLOUDBASE_REGION }}
-      VITE_CLOUDBASE_PUBLISHABLE_KEY: ${{ secrets.VITE_CLOUDBASE_PUBLISHABLE_KEY }}
-      VITE_CLOUDBASE_PROGRESS_COLLECTION: ${{ secrets.VITE_CLOUDBASE_PROGRESS_COLLECTION }}
+      VITE_API_BASE: /api
       CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+      D1_DATABASE_ID: ${{ secrets.D1_DATABASE_ID }}
+      D1_DATABASE_NAME: ${{ secrets.D1_DATABASE_NAME }}
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      RESEND_FROM_EMAIL: ${{ secrets.RESEND_FROM_EMAIL }}
+      SESSION_SECRET: ${{ secrets.SESSION_SECRET }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -35,10 +37,11 @@ jobs:
           set -e
           [ -n "$CLOUDFLARE_API_TOKEN" ] || (echo "Missing secret: CF_API_TOKEN" && exit 1)
           [ -n "$CLOUDFLARE_ACCOUNT_ID" ] || (echo "Missing secret: CF_ACCOUNT_ID" && exit 1)
-          [ -n "$VITE_CLOUDBASE_ENV_ID" ] || (echo "Missing secret: VITE_CLOUDBASE_ENV_ID" && exit 1)
-          [ -n "$VITE_CLOUDBASE_REGION" ] || (echo "Missing secret: VITE_CLOUDBASE_REGION" && exit 1)
-          [ -n "$VITE_CLOUDBASE_PUBLISHABLE_KEY" ] || (echo "Missing secret: VITE_CLOUDBASE_PUBLISHABLE_KEY" && exit 1)
-          [ -n "$VITE_CLOUDBASE_PROGRESS_COLLECTION" ] || (echo "Missing secret: VITE_CLOUDBASE_PROGRESS_COLLECTION" && exit 1)
+          [ -n "$D1_DATABASE_ID" ] || (echo "Missing secret: D1_DATABASE_ID" && exit 1)
+          [ -n "$D1_DATABASE_NAME" ] || (echo "Missing secret: D1_DATABASE_NAME" && exit 1)
+          [ -n "$RESEND_API_KEY" ] || (echo "Missing secret: RESEND_API_KEY" && exit 1)
+          [ -n "$RESEND_FROM_EMAIL" ] || (echo "Missing secret: RESEND_FROM_EMAIL" && exit 1)
+          [ -n "$SESSION_SECRET" ] || (echo "Missing secret: SESSION_SECRET" && exit 1)
 
       - name: Install Dependencies
         run: npm ci
@@ -48,6 +51,32 @@ jobs:
 
       - name: Install Wrangler CLI
         run: npm i -g wrangler@4
+
+      - name: Inject Deploy-Time Vars
+        run: |
+          node --input-type=module -e '
+            import fs from "node:fs";
+            const escapeTomlString = (value) =>
+              String(value).replace(/\\/g, "\\\\").replace(/"/g, "\\\"");
+            const replacements = {
+              "__D1_DATABASE_ID__": process.env.D1_DATABASE_ID,
+              "__D1_DATABASE_NAME__": process.env.D1_DATABASE_NAME,
+              "__RESEND_API_KEY__": process.env.RESEND_API_KEY,
+              "__RESEND_FROM_EMAIL__": process.env.RESEND_FROM_EMAIL,
+              "__SESSION_SECRET__": process.env.SESSION_SECRET,
+            };
+            let content = fs.readFileSync("wrangler.toml", "utf8");
+            for (const [placeholder, value] of Object.entries(replacements)) {
+              if (!value) throw new Error(`Missing value for ${placeholder}`);
+              content = content.replaceAll(placeholder, escapeTomlString(value));
+            }
+            fs.writeFileSync("wrangler.toml", content);
+          '
+
+      - name: Apply D1 Schema
+        run: |
+          set -euo pipefail
+          wrangler d1 execute "$D1_DATABASE_NAME" --remote --file ./worker/schema.sql
 
       - name: Deploy To Cloudflare Worker
         run: |

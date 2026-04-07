@@ -5,13 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "worker:dev": "wrangler dev",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "words:import": "node scripts/import-global-vocabulary.mjs"
   },
   "dependencies": {
-    "@cloudbase/js-sdk": "^2.27.2",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },

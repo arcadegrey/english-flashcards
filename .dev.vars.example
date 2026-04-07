@@ -1,0 +1,9 @@
+# Local worker runtime vars for `wrangler dev`
+D1_DATABASE_ID=your-d1-database-id
+D1_DATABASE_NAME=english-flashcards
+RESEND_API_KEY=your-resend-api-key
+RESEND_FROM_EMAIL=English Flashcards <no-reply@your-domain.com>
+SESSION_SECRET=replace-with-long-random-string
+LOGIN_CODE_TTL_SECONDS=600
+LOGIN_CODE_SEND_INTERVAL_SECONDS=60
+SESSION_TTL_SECONDS=2592000

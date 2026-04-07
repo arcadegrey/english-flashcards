@@ -19,7 +19,7 @@ import {
   signOut,
   signUpWithEmail,
   upsertCloudProgress,
-} from './utils/cloudAuth'
+} from './utils/workerAuth'
 
 const TOEFL_UNKNOWN_LEVEL = 'unknown'
 const TOEFL_UNKNOWN_LIST = 'unknown'
@@ -404,7 +404,8 @@ function AppContent() {
     }
 
     if (!session.refresh_token) {
-      return null
+      const refreshed = await refreshSession()
+      return refreshed.session
     }
 
     const refreshed = await refreshSession(session.refresh_token)
@@ -497,21 +498,31 @@ function AppContent() {
     }
   }, [authLoading, authSession, authUser, cloudEnabled, customWords, learnedWords, masteredWords])
 
-  const handleAuthLogin = async ({ email, password }) => {
+  const handleAuthLogin = async ({ email, password, verificationCode }) => {
     if (!cloudEnabled) {
       throw new Error('云端账号服务未配置')
     }
 
     setAuthError('')
-    const { session, user } = await signInWithEmail({ email, password })
+    const { session, user, pendingVerification, message } = await signInWithEmail({
+      email,
+      password,
+      verificationCode,
+    })
+    if (!session || pendingVerification) {
+      return {
+        message: message || '登录验证码已发送，请输入验证码完成登录。',
+        sessionReady: false,
+      }
+    }
     storage.setAuthSession(session)
     setAuthSession(session)
     setAuthUser(user)
     await hydrateFromCloud({ session, user })
-    return { message: '登录成功，进度已同步。', sessionReady: true }
+    return { message: message || '登录成功，进度已同步。', sessionReady: true }
   }
 
-  const handleAuthRegister = async ({ email, password, verificationCode }) => {
+  const handleAuthRegister = async ({ email, verificationCode }) => {
     if (!cloudEnabled) {
       throw new Error('云端账号服务未配置')
     }
@@ -519,7 +530,6 @@ function AppContent() {
     setAuthError('')
     const { session, user, emailConfirmationRequired, message } = await signUpWithEmail({
       email,
-      password,
       verificationCode,
     })
     if (!session) {
@@ -585,7 +595,7 @@ function AppContent() {
 
   const handleHomeSync = async () => {
     if (!cloudEnabled) {
-      showNotice('未配置 CloudBase，暂时无法同步账号。', 'error')
+      showNotice('未配置云端账号服务，暂时无法同步账号。', 'error')
       return
     }
 
@@ -610,8 +620,12 @@ function AppContent() {
 
   const handleModalLogin = async (payload) => {
     const result = await handleAuthLogin(payload)
-    setShowAuthModal(false)
-    showNotice(result?.message || '登录成功，进度已同步。', 'success')
+    if (result?.sessionReady) {
+      setShowAuthModal(false)
+      showNotice(result?.message || '登录成功，进度已同步。', 'success')
+    } else {
+      showNotice(result?.message || '验证码已发送，请输入后完成登录。', 'info')
+    }
     return result
   }
 

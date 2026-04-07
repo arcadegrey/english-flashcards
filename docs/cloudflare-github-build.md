@@ -1,29 +1,41 @@
-# Cloudflare Worker（Static Assets）改为 Git 驱动构建与部署
+# Cloudflare Worker（Static Assets + API）GitHub Actions 部署
 
-如果你当前项目是 Worker + Static Assets（不是 Pages 项目），可以用 GitHub Actions 构建后执行 `wrangler deploy`。
+本项目使用 `wrangler deploy` 同时部署：
+- 前端静态资源（`dist/`）
+- Worker API（`/api/*`）
 
-## 已添加的仓库配置
+## 已配置文件
 - Workflow: `.github/workflows/deploy-cloudflare-pages.yml`
-- Wrangler 配置: `wrangler.toml`
+- Worker 配置: `wrangler.toml`
+- D1 建表脚本: `worker/schema.sql`
 
-## 你需要在 GitHub 仓库 Secrets 里新增
-进入：`GitHub Repo -> Settings -> Secrets and variables -> Actions -> New repository secret`
+## 需要在 GitHub Secrets 配置
+进入：`Repo -> Settings -> Secrets and variables -> Actions -> New repository secret`
 
 必填：
-- `CF_API_TOKEN`：Cloudflare API Token（需包含 Workers 编辑权限）
-- `CF_ACCOUNT_ID`：Cloudflare Account ID
+- `CF_API_TOKEN`
+- `CF_ACCOUNT_ID`
+- `D1_DATABASE_ID`
+- `D1_DATABASE_NAME`
+- `RESEND_API_KEY`
+- `RESEND_FROM_EMAIL`
+- `SESSION_SECRET`
 
-构建用公开变量（Vite 会在打包时注入）：
-- `VITE_CLOUDBASE_ENV_ID`
-- `VITE_CLOUDBASE_REGION`
-- `VITE_CLOUDBASE_PUBLISHABLE_KEY`
-- `VITE_CLOUDBASE_PROGRESS_COLLECTION`
-- `VITE_KOKORO_TTS_URL`（可选）
+可选：
+- `VITE_KOKORO_TTS_URL`
 
-## 触发方式
-- 推送到 `main` 自动触发部署
-- 或手动触发：`Actions -> Deploy To Cloudflare Worker -> Run workflow`
+## 部署流程
+- push 到 `main` 自动部署
+- 或 Actions 页面手动触发 `Deploy To Cloudflare Worker`
+
+工作流会自动：
+1. `npm ci`
+2. `npm run build`
+3. 注入 wrangler 部署变量
+4. `wrangler d1 execute ... --file ./worker/schema.sql`
+5. `wrangler deploy`
 
 ## 说明
-- 这套方式由 GitHub 完成 `npm ci && npm run build`，再通过 `wrangler deploy` 上传 Worker 与 `dist/` 静态资源。
-- 不依赖 Cloudflare Pages 项目名配置。
+- 线上 API 默认同源：`/api`
+- 不再依赖 CloudBase 配置
+- 如需本地调试 API，建议用 `wrangler dev` 与 Vite 联调

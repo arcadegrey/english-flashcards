@@ -5,32 +5,25 @@ const normalizeError = (error) => {
   const text = String(error);
   const lower = text.toLowerCase();
 
-  if (text.includes('Invalid login credentials') || lower.includes('invalid credentials')) {
-    return '邮箱或密码错误。';
+  if (lower.includes('too many requests') || lower.includes('频繁')) {
+    return '操作过于频繁，请稍后再试。';
   }
-  if (text.includes('User already registered') || lower.includes('already') || lower.includes('exists')) {
+  if (lower.includes('user not found') || text.includes('账号不存在')) {
+    return '账号不存在，请先注册。';
+  }
+  if (lower.includes('email exists') || lower.includes('already') || text.includes('已注册')) {
     return '该邮箱已注册，请直接登录。';
   }
-  if (
-    lower.includes('email not confirmed') ||
-    lower.includes('otp') ||
-    lower.includes('verification') ||
-    lower.includes('验证码')
-  ) {
-    return '验证码无效或已过期，请重新发送后再试。';
+  if (lower.includes('code') || lower.includes('verification') || text.includes('验证码')) {
+    return text;
   }
-  if (
-    lower.includes('provider email not found from endpoint') ||
-    (lower.includes('provider') && lower.includes('email') && lower.includes('not found'))
-  ) {
-    return 'CloudBase 未开启邮箱认证，请到控制台「身份认证/登录方式」启用邮箱相关登录。';
+  if (lower.includes('network request error') || lower.includes('network error') || lower.includes('failed to fetch')) {
+    return '网络连接失败，请稍后重试。';
   }
-  if (lower.includes('network request error') || lower.includes('network error')) {
-    return `云同步请求失败：${text}`;
+  if (lower.includes('session_secret') || lower.includes('resend') || lower.includes('d1')) {
+    return `服务端配置不完整：${text}`;
   }
-  if (lower.includes('access key') || lower.includes('cloudbase') || lower.includes('env_id')) {
-    return 'CloudBase 配置不完整，请检查环境变量。';
-  }
+
   return text;
 };
 
@@ -47,7 +40,6 @@ function AuthPanel({
 }) {
   const [mode, setMode] = useState('login');
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
   const [verificationCode, setVerificationCode] = useState('');
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState('');
@@ -57,8 +49,9 @@ function AuthPanel({
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    if (!email.trim() || !password.trim()) {
-      setError('请填写邮箱和密码。');
+
+    if (!email.trim()) {
+      setError('请填写邮箱地址。');
       return;
     }
 
@@ -70,12 +63,10 @@ function AuthPanel({
       const action = mode === 'register' ? onRegister : onLogin;
       const result = await action?.({
         email: email.trim(),
-        password: password.trim(),
-        verificationCode: mode === 'register' ? verificationCode.trim() : '',
+        verificationCode: verificationCode.trim(),
       });
       setMessage(result?.message || (mode === 'register' ? '注册成功。' : '登录成功。'));
       if (result?.sessionReady) {
-        setPassword('');
         setVerificationCode('');
       }
     } catch (submitError) {
@@ -108,7 +99,6 @@ function AuthPanel({
     try {
       await onLogout();
       setEmail('');
-      setPassword('');
       setVerificationCode('');
       setMessage('已退出登录。');
     } catch (logoutError) {
@@ -123,12 +113,8 @@ function AuthPanel({
       <section className="rounded-[14px] border border-[#e5e7eb] bg-[#f5f5f7] p-5 shadow-[0_1px_3px_rgba(15,23,42,0.08)] md:p-6">
         <div className="text-center">
           <h3 className="text-xl font-semibold text-[#111827]">账号与云同步</h3>
-          <p className="mt-2 text-sm text-[#6b7280]">
-            还未配置云端账号服务。配置后可注册登录并在网站更新后保留学习进度。
-          </p>
-          <p className="mt-1 text-xs text-[#9ca3af]">
-            需要设置 `VITE_CLOUDBASE_ENV_ID`（可选 `VITE_CLOUDBASE_PUBLISHABLE_KEY`）。
-          </p>
+          <p className="mt-2 text-sm text-[#6b7280]">还未配置账号服务。配置后可注册登录并在更新后保留学习进度。</p>
+          <p className="mt-1 text-xs text-[#9ca3af]">请检查 Worker 与 D1 部署，并确认前端可访问 `/api`。</p>
         </div>
       </section>
     );
@@ -205,6 +191,7 @@ function AuthPanel({
                 注册
               </button>
             </div>
+
             <input
               type="email"
               value={email}
@@ -212,22 +199,15 @@ function AuthPanel({
               placeholder="邮箱"
               className="w-full min-h-[44px] rounded-[10px] border border-[#e5e7eb] bg-white px-4 py-2 text-[#111827] placeholder:text-[#9ca3af] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/20 focus:border-[#4f46e5]"
             />
+
             <input
-              type="password"
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
-              placeholder="密码（至少 6 位）"
+              type="text"
+              value={verificationCode}
+              onChange={(event) => setVerificationCode(event.target.value)}
+              placeholder={mode === 'register' ? '输入注册验证码（可留空先发送）' : '输入登录验证码（可留空先发送）'}
               className="w-full min-h-[44px] rounded-[10px] border border-[#e5e7eb] bg-white px-4 py-2 text-[#111827] placeholder:text-[#9ca3af] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/20 focus:border-[#4f46e5]"
             />
-            {mode === 'register' && (
-              <input
-                type="text"
-                value={verificationCode}
-                onChange={(event) => setVerificationCode(event.target.value)}
-                placeholder="邮箱验证码（先点击一次“注册账号”发送）"
-                className="w-full min-h-[44px] rounded-[10px] border border-[#e5e7eb] bg-white px-4 py-2 text-[#111827] placeholder:text-[#9ca3af] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/20 focus:border-[#4f46e5]"
-              />
-            )}
+
             <button
               type="submit"
               disabled={busy}
@@ -235,17 +215,20 @@ function AuthPanel({
             >
               {busy
                 ? '处理中...'
-                : mode === 'register'
-                  ? verificationCode.trim()
+                : verificationCode.trim()
+                  ? mode === 'register'
                     ? '完成注册'
-                    : '注册账号'
-                  : '登录账号'}
+                    : '完成登录'
+                  : mode === 'register'
+                    ? '发送注册验证码'
+                    : '发送登录验证码'}
             </button>
-            {mode === 'register' && (
-              <p className="text-center text-xs text-[#6b7280]">
-                注册流程：先提交邮箱和密码发送验证码，再输入验证码点“完成注册”
-              </p>
-            )}
+
+            <p className="text-center text-xs text-[#6b7280]">
+              {mode === 'register'
+                ? '先发送注册验证码，再输入验证码完成注册并自动登录'
+                : '先发送登录验证码，再输入验证码完成登录'}
+            </p>
           </form>
         )}
 
