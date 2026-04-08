@@ -1006,7 +1006,7 @@ function AppContent() {
             emptyHint="你还没有已学习单词，先进入学习模式标记一些吧。"
             onBack={handleBackToHome}
             onMarkAsMastered={markLearnedWordAsMastered}
-            masteredActionLabel="学会了"
+            masteredActionLabel="认识了"
           />
         )
       case 'masteredWords':

@@ -9,7 +9,7 @@ function WordCollectionView({
   onBack,
   emptyHint,
   onMarkAsMastered,
-  masteredActionLabel = '学会了',
+  masteredActionLabel = '认识了',
 }) {
   const { isDark } = useTheme();
   const [query, setQuery] = useState('');
@@ -135,19 +135,23 @@ function WordCollectionView({
                         </p>
                       )}
                     </div>
-                    <div className="flex flex-wrap items-center justify-center gap-2">
+                    <div className="flex flex-wrap items-center justify-center gap-3">
                       <button
                         onClick={() => speak(word.word, { rate: 0.8 })}
-                        className="shrink-0 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 px-4 py-2 text-white font-bold hover:from-sky-600 hover:to-indigo-600 transition-all"
+                        className={`shrink-0 inline-flex min-w-[100px] items-center justify-center rounded-2xl border px-5 py-2.5 text-base font-semibold transition-colors ${
+                          isDark
+                            ? 'border-slate-600 bg-slate-800 text-slate-100 hover:border-slate-500 hover:bg-slate-700'
+                            : 'border-[#d2d5dc] bg-[#f7f7fa] text-[#5f6470] hover:border-[#bcc6d8] hover:bg-[#f0f2f7]'
+                        }`}
                       >
-                        🔊 发音
+                        发音
                       </button>
                       {typeof onMarkAsMastered === 'function' && (
                         <button
                           onClick={() => onMarkAsMastered(word.id)}
-                          className="shrink-0 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 px-4 py-2 text-white font-bold hover:from-emerald-600 hover:to-teal-600 transition-all"
+                          className="shrink-0 inline-flex min-w-[132px] items-center justify-center rounded-2xl border border-[#0071e3] bg-[#0071e3] px-7 py-3 text-base font-semibold text-white transition-colors hover:border-[#0065cc] hover:bg-[#0065cc]"
                         >
-                          ✅ {masteredActionLabel}
+                          {masteredActionLabel}
                         </button>
                       )}
                     </div>
