@@ -2,7 +2,15 @@ import { useMemo, useState } from 'react';
 import { useTheme } from '../context/ThemeContext';
 import { speak } from '../utils/speech';
 
-function WordCollectionView({ title, subtitle, words, onBack, emptyHint }) {
+function WordCollectionView({
+  title,
+  subtitle,
+  words,
+  onBack,
+  emptyHint,
+  onMarkAsMastered,
+  masteredActionLabel = '学会了',
+}) {
   const { isDark } = useTheme();
   const [query, setQuery] = useState('');
 
@@ -90,7 +98,7 @@ function WordCollectionView({ title, subtitle, words, onBack, emptyHint }) {
               </p>
             </div>
           ) : (
-            <div className="space-y-3 max-h-[68vh] overflow-y-auto pr-1">
+            <div className="space-y-3">
               {filteredWords.map((word) => (
                 <article
                   key={word.id}
@@ -127,12 +135,22 @@ function WordCollectionView({ title, subtitle, words, onBack, emptyHint }) {
                         </p>
                       )}
                     </div>
-                    <button
-                      onClick={() => speak(word.word, { rate: 0.8 })}
-                      className="shrink-0 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 px-4 py-2 text-white font-bold hover:from-sky-600 hover:to-indigo-600 transition-all"
-                    >
-                      🔊 发音
-                    </button>
+                    <div className="flex flex-wrap items-center justify-center gap-2">
+                      <button
+                        onClick={() => speak(word.word, { rate: 0.8 })}
+                        className="shrink-0 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 px-4 py-2 text-white font-bold hover:from-sky-600 hover:to-indigo-600 transition-all"
+                      >
+                        🔊 发音
+                      </button>
+                      {typeof onMarkAsMastered === 'function' && (
+                        <button
+                          onClick={() => onMarkAsMastered(word.id)}
+                          className="shrink-0 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 px-4 py-2 text-white font-bold hover:from-emerald-600 hover:to-teal-600 transition-all"
+                        >
+                          ✅ {masteredActionLabel}
+                        </button>
+                      )}
+                    </div>
                   </div>
                 </article>
               ))}

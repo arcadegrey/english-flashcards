@@ -805,6 +805,12 @@ function AppContent() {
     nextCard()
   }
 
+  const markLearnedWordAsMastered = (wordId) => {
+    if (wordId == null) return
+    setLearnedWords((prev) => prev.filter((id) => String(id) !== String(wordId)))
+    setMasteredWords((prev) => (prev.some((id) => String(id) === String(wordId)) ? prev : [...prev, wordId]))
+  }
+
   const nextCard = () => {
     if (shuffledWords.length === 0) return
     setCurrentIndex((prev) => (prev + 1) % shuffledWords.length)
@@ -999,6 +1005,8 @@ function AppContent() {
             words={learnedWordList}
             emptyHint="你还没有已学习单词，先进入学习模式标记一些吧。"
             onBack={handleBackToHome}
+            onMarkAsMastered={markLearnedWordAsMastered}
+            masteredActionLabel="学会了"
           />
         )
       case 'masteredWords':
