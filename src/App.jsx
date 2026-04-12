@@ -816,6 +816,12 @@ function AppContent() {
     setMasteredWords((prev) => (prev.some((id) => String(id) === String(wordId)) ? prev : [...prev, wordId]))
   }
 
+  const markMasteredWordAsLearned = (wordId) => {
+    if (wordId == null) return
+    setMasteredWords((prev) => prev.filter((id) => String(id) !== String(wordId)))
+    setLearnedWords((prev) => (prev.some((id) => String(id) === String(wordId)) ? prev : [...prev, wordId]))
+  }
+
   const nextCard = () => {
     if (shuffledWords.length === 0) return
     setCurrentIndex((prev) => (prev + 1) % shuffledWords.length)
@@ -1026,6 +1032,7 @@ function AppContent() {
             emptyHint="你还没有已掌握单词，继续练习后会出现在这里。"
             onBack={handleBackToHome}
             onOpenMode={handleOpenModeFromCollection}
+            onMarkAsUnknown={markMasteredWordAsLearned}
           />
         )
       default:

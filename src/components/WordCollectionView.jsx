@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { useTheme } from '../context/ThemeContext';
-import { speak } from '../utils/speech';
+import Card from './Card';
 import VoiceSettings from './VoiceSettings';
+import { speak } from '../utils/speech';
 
 const MENU_CLOSE_DURATION_MS = 220;
 const MODE_OPTIONS = [
@@ -13,30 +13,30 @@ const MODE_OPTIONS = [
 
 function WordCollectionView({
   title,
-  subtitle,
   words,
   onBack,
   mode = 'learn',
   onOpenMode,
   emptyHint,
   onMarkAsMastered,
+  onMarkAsUnknown,
   masteredActionLabel = '认识了',
 }) {
-  const { isDark } = useTheme();
   const [query, setQuery] = useState('');
-  const [showTopSection, setShowTopSection] = useState(true);
+  const [showSearch, setShowSearch] = useState(false);
+  const [showHint, setShowHint] = useState(false);
   const [showVoiceSettings, setShowVoiceSettings] = useState(false);
   const [isMenuMounted, setIsMenuMounted] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [toast, setToast] = useState('');
   const menuRef = useRef(null);
   const menuCloseTimerRef = useRef(null);
   const totalMenuSlots = MODE_OPTIONS.length + 4;
 
   const filteredWords = useMemo(() => {
     const keyword = query.trim().toLowerCase();
-    if (!keyword) {
-      return words;
-    }
+    if (!keyword) return words;
 
     return words.filter(
       (word) =>
@@ -46,7 +46,30 @@ function WordCollectionView({
     );
   }, [query, words]);
 
-  const topbarSubtext = title.replace(/^[^\u4e00-\u9fa5A-Za-z0-9]+/, '');
+  const currentWord = filteredWords[currentIndex] || null;
+  const progressCurrent = filteredWords.length > 0 ? Math.min(currentIndex + 1, filteredWords.length) : 0;
+
+  useEffect(() => {
+    if (filteredWords.length === 0) {
+      setCurrentIndex(0);
+      return;
+    }
+
+    if (currentIndex >= filteredWords.length) {
+      setCurrentIndex(filteredWords.length - 1);
+    }
+  }, [filteredWords.length, currentIndex]);
+
+  useEffect(() => {
+    setShowHint(false);
+  }, [currentWord?.id]);
+
+  useEffect(() => {
+    if (!toast) return undefined;
+
+    const timer = setTimeout(() => setToast(''), 1600);
+    return () => clearTimeout(timer);
+  }, [toast]);
 
   useEffect(() => {
     if (!isMenuMounted) return undefined;
@@ -127,6 +150,11 @@ function WordCollectionView({
     openMenu();
   };
 
+  const nextCard = () => {
+    if (filteredWords.length <= 1) return;
+    setCurrentIndex((prev) => (prev + 1) % filteredWords.length);
+  };
+
   const handleSelectMode = (nextMode) => {
     onOpenMode?.(nextMode);
     closeMenu();
@@ -137,16 +165,48 @@ function WordCollectionView({
     closeMenu();
   };
 
-  const handleToggleTopSection = () => {
-    setShowTopSection((prev) => !prev);
+  const handleToggleSearch = () => {
+    setShowSearch((prev) => !prev);
     closeMenu();
   };
 
+  const handleSpeakCurrentWord = () => {
+    if (!currentWord?.word) return;
+    speak(currentWord.word, { rate: 0.8 });
+  };
+
+  const handleMarkUnknown = () => {
+    if (!currentWord) return;
+
+    if (typeof onMarkAsUnknown === 'function') {
+      onMarkAsUnknown(currentWord.id);
+      setToast('已移回已学习');
+      setShowHint(false);
+      return;
+    }
+
+    setToast('已加入复习队列');
+    setShowHint(false);
+    nextCard();
+  };
+
+  const handleMarkKnown = () => {
+    if (!currentWord) return;
+
+    if (typeof onMarkAsMastered === 'function') {
+      onMarkAsMastered(currentWord.id);
+      setToast('已标记为“认识”');
+      setShowHint(false);
+      return;
+    }
+
+    setToast('已保持为已掌握');
+    setShowHint(false);
+    nextCard();
+  };
+
   return (
-    <div
-      className="min-h-screen px-4 pb-8"
-      style={{ paddingTop: 'calc(108px + env(safe-area-inset-top))' }}
-    >
+    <div className="learn-refresh-page">
       <header className="learn-refresh-topbar">
         <div className="learn-refresh-topbar-inner" style={{ maxWidth: '960px' }}>
           <button type="button" className="learn-refresh-back" onClick={onBack} aria-label="返回首页">
@@ -156,12 +216,25 @@ function WordCollectionView({
 
           <div className="learn-refresh-progress">
             <p className="learn-refresh-progress-main">
-              {filteredWords.length} / {words.length}
+              {progressCurrent} / {filteredWords.length}
             </p>
-            <p className="learn-refresh-progress-sub">{topbarSubtext}</p>
+            <p className="learn-refresh-progress-sub">今日目标 {filteredWords.length}</p>
           </div>
 
           <div className="learn-refresh-top-actions">
+            <button
+              type="button"
+              className="learn-refresh-icon-btn"
+              onClick={handleSpeakCurrentWord}
+              aria-label="播放发音"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 9v6h4l5 4V5L7 9H3z" />
+                <path d="M16.5 8.5a4.5 4.5 0 010 7" />
+                <path d="M19.5 6a8 8 0 010 12" />
+              </svg>
+            </button>
+
             <div className="learn-refresh-menu-wrap" ref={menuRef}>
               <button
                 type="button"
@@ -169,7 +242,7 @@ function WordCollectionView({
                 onClick={toggleMenu}
                 aria-haspopup="menu"
                 aria-expanded={isMenuOpen}
-                aria-label="打开功能菜单"
+                aria-label="打开模式菜单"
               >
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M12 8.75a3.25 3.25 0 100 6.5 3.25 3.25 0 000-6.5z" />
@@ -181,7 +254,7 @@ function WordCollectionView({
                 <div
                   className={`learn-refresh-menu ${isMenuOpen ? 'is-open' : 'is-closing'}`}
                   role="menu"
-                  aria-label="功能菜单"
+                  aria-label="学习模式菜单"
                 >
                   {MODE_OPTIONS.map((item, index) => (
                     <button
@@ -230,14 +303,14 @@ function WordCollectionView({
                     type="button"
                     role="menuitem"
                     className="learn-refresh-menu-item"
-                    onClick={handleToggleTopSection}
+                    onClick={handleToggleSearch}
                     style={{
                       '--menu-index': MODE_OPTIONS.length + 3,
                       '--menu-reverse-index': totalMenuSlots - 1 - (MODE_OPTIONS.length + 3),
                     }}
                   >
-                    <span>{showTopSection ? '🙈' : '🔎'}</span>
-                    <span>{showTopSection ? '隐藏顶部区域' : '显示顶部区域'}</span>
+                    <span>{showSearch ? '🙈' : '🔎'}</span>
+                    <span>{showSearch ? '隐藏搜索栏' : '显示搜索栏'}</span>
                   </button>
                 </div>
               )}
@@ -246,130 +319,68 @@ function WordCollectionView({
         </div>
       </header>
 
-      <div className="w-full" style={{ maxWidth: '960px', marginInline: 'auto' }}>
-        <section
-          className={`rounded-3xl p-6 md:p-8 shadow-2xl border ${
-            isDark
-              ? 'border-white/25 bg-white/12 backdrop-blur-md'
-              : 'border-slate-200 bg-white/95'
-          }`}
-        >
-          {showTopSection && (
-            <div className="mb-6 text-center">
-              <h2
-                className={`text-3xl md:text-4xl font-black tracking-tight ${
-                  isDark ? 'text-white' : 'text-slate-900'
-                }`}
-              >
-                {title}
-              </h2>
-              <p className={`mt-2 ${isDark ? 'text-white/70' : 'text-slate-600'}`}>{subtitle}</p>
-              <p className={`mt-2 ${isDark ? 'text-white/80' : 'text-slate-700'}`}>
-                共 <span className={`font-bold ${isDark ? 'text-white' : 'text-slate-900'}`}>{words.length}</span>{' '}
-                个单词
-              </p>
-            </div>
-          )}
+      <main className="learn-refresh-main" style={{ maxWidth: '960px' }}>
+        {showSearch && (
+          <section className="mb-4 rounded-[16px] border border-[#e8e8ed] bg-white px-4 py-4">
+            <input
+              type="text"
+              value={query}
+              onChange={(event) => {
+                setCurrentIndex(0);
+                setQuery(event.target.value);
+              }}
+              placeholder={`搜索${title.replace(/^[^\u4e00-\u9fa5A-Za-z0-9]+/, '')}...`}
+              className="w-full min-h-[46px] rounded-[12px] border border-[#e8e8ed] bg-white px-4 text-center text-base text-[#1d1d1f] placeholder:text-[#9ca3af] outline-none transition focus:border-[#0071e3] focus:ring-2 focus:ring-[#0071e3]/20"
+            />
+          </section>
+        )}
 
-          {showTopSection && (
-            <div className="mb-6">
-              <input
-                type="text"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="搜索单词、释义或音标..."
-                className={`w-full rounded-2xl border px-5 py-4 text-center focus:outline-none focus:ring-2 ${
-                  isDark
-                    ? 'border-white/30 bg-white/15 text-white placeholder:text-white/50 focus:ring-white/40'
-                    : 'border-slate-300 bg-white text-slate-900 placeholder:text-slate-400 focus:ring-sky-300'
-                }`}
-              />
-            </div>
-          )}
+        {words.length === 0 ? (
+          <article className="learn-refresh-card learn-refresh-card-enter">
+            <p className="learn-refresh-empty">{emptyHint}</p>
+          </article>
+        ) : filteredWords.length === 0 ? (
+          <article className="learn-refresh-card learn-refresh-card-enter">
+            <p className="learn-refresh-empty">没有匹配结果，试试别的关键词。</p>
+          </article>
+        ) : (
+          <Card key={`${currentWord?.id || 'collection-empty'}-${currentIndex}`} word={currentWord} showHint={showHint} />
+        )}
+      </main>
 
-          {words.length === 0 ? (
-            <div
-              className={`rounded-2xl border border-dashed p-8 text-center ${
-                isDark ? 'border-white/30 bg-white/5' : 'border-slate-300 bg-slate-50'
-              }`}
+      {filteredWords.length > 0 && (
+        <footer className="learn-refresh-bottombar">
+          <div className="learn-refresh-bottombar-inner" style={{ maxWidth: '960px' }}>
+            <button
+              type="button"
+              className="learn-refresh-action learn-refresh-action-secondary"
+              onClick={handleMarkUnknown}
             >
-              <p className={`text-lg ${isDark ? 'text-white/70' : 'text-slate-600'}`}>{emptyHint}</p>
-            </div>
-          ) : filteredWords.length === 0 ? (
-            <div
-              className={`rounded-2xl border border-dashed p-8 text-center ${
-                isDark ? 'border-white/30 bg-white/5' : 'border-slate-300 bg-slate-50'
-              }`}
+              不认识
+            </button>
+            <button
+              type="button"
+              className="learn-refresh-action learn-refresh-action-ghost"
+              onClick={() => setShowHint((prev) => !prev)}
             >
-              <p className={`text-lg ${isDark ? 'text-white/70' : 'text-slate-600'}`}>
-                没有匹配结果，试试别的关键词
-              </p>
-            </div>
-          ) : (
-            <div className="space-y-3">
-              {filteredWords.map((word) => (
-                <article
-                  key={word.id}
-                  className={`rounded-2xl border px-4 py-4 text-center md:px-5 md:py-5 shadow-lg ${
-                    isDark ? 'border-slate-700 bg-slate-900/75' : 'border-slate-200 bg-slate-50'
-                  }`}
-                >
-                  <div className="flex flex-col items-center justify-center gap-3">
-                    <div className="min-w-0">
-                      <div className="flex flex-wrap items-center justify-center gap-3">
-                        <h3
-                          className={`text-2xl md:text-3xl font-black tracking-tight break-all ${
-                            isDark ? 'text-white' : 'text-slate-900'
-                          }`}
-                        >
-                          {word.word}
-                        </h3>
-                        <span className={`${isDark ? 'text-sky-300' : 'text-cyan-700'} font-mono text-sm md:text-base break-all`}>
-                          {word.phonetic || 'N/A'}
-                        </span>
-                        <span className={`${isDark ? 'text-slate-300' : 'text-slate-500'} text-sm`}>{word.pos}</span>
-                      </div>
-                      <p className={`text-base md:text-lg mt-2 break-words ${isDark ? 'text-slate-100' : 'text-slate-700'}`}>
-                        {word.meaning}
-                      </p>
-                      {word.example && (
-                        <p className={`text-sm md:text-base mt-2 break-words ${isDark ? 'text-slate-300' : 'text-slate-500'}`}>
-                          例句：{word.example}
-                        </p>
-                      )}
-                      {word.exampleCn && (
-                        <p className={`text-sm md:text-base mt-1 break-words ${isDark ? 'text-cyan-200/90' : 'text-cyan-800'}`}>
-                          中文：{word.exampleCn}
-                        </p>
-                      )}
-                    </div>
-                    <div className="flex flex-wrap items-center justify-center gap-3">
-                      <button
-                        onClick={() => speak(word.word, { rate: 0.8 })}
-                        className={`shrink-0 inline-flex min-w-[100px] items-center justify-center rounded-2xl border px-5 py-2.5 text-base font-semibold transition-colors ${
-                          isDark
-                            ? 'border-slate-600 bg-slate-800 text-slate-100 hover:border-slate-500 hover:bg-slate-700'
-                            : 'border-[#d2d5dc] bg-[#f7f7fa] text-[#5f6470] hover:border-[#bcc6d8] hover:bg-[#f0f2f7]'
-                        }`}
-                      >
-                        发音
-                      </button>
-                      {typeof onMarkAsMastered === 'function' && (
-                        <button
-                          onClick={() => onMarkAsMastered(word.id)}
-                          className="shrink-0 inline-flex min-w-[132px] items-center justify-center rounded-2xl border border-[#0071e3] bg-[#0071e3] px-7 py-3 text-base font-semibold text-white transition-colors hover:border-[#0065cc] hover:bg-[#0065cc]"
-                        >
-                          {masteredActionLabel}
-                        </button>
-                      )}
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
-          )}
-        </section>
-      </div>
+              {showHint ? '收起提示' : '显示提示'}
+            </button>
+            <button
+              type="button"
+              className="learn-refresh-action learn-refresh-action-primary"
+              onClick={handleMarkKnown}
+            >
+              {masteredActionLabel}
+            </button>
+          </div>
+        </footer>
+      )}
+
+      {toast && (
+        <div className="learn-refresh-toast" role="status" aria-live="polite">
+          {toast}
+        </div>
+      )}
 
       {showVoiceSettings && <VoiceSettings onClose={() => setShowVoiceSettings(false)} />}
     </div>
