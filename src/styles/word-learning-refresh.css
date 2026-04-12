@@ -18,7 +18,8 @@
   right: 0;
   left: 0;
   z-index: 60;
-  height: 64px;
+  height: calc(64px + env(safe-area-inset-top));
+  padding-top: env(safe-area-inset-top);
   border-bottom: 1px solid var(--wl-line);
   background: rgba(255, 255, 255, 0.88);
   backdrop-filter: saturate(180%) blur(14px);
@@ -226,7 +227,7 @@
   width: 100%;
   max-width: 880px;
   margin: 0 auto;
-  padding: 108px 24px 24px;
+  padding: calc(108px + env(safe-area-inset-top)) 24px 24px;
 }
 
 .learn-refresh-page--assessment {
@@ -607,7 +608,7 @@
   }
 
   .learn-refresh-topbar {
-    height: 56px;
+    height: calc(56px + env(safe-area-inset-top));
   }
 
   .learn-refresh-back {
@@ -648,7 +649,7 @@
 
   .learn-refresh-main {
     max-width: 100%;
-    padding: 76px 16px 16px;
+    padding: calc(76px + env(safe-area-inset-top)) 16px 16px;
   }
 
   .learn-refresh-main--assessment {
