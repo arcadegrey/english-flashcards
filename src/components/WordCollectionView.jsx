@@ -208,7 +208,7 @@ function WordCollectionView({
   return (
     <div className="learn-refresh-page">
       <header className="learn-refresh-topbar">
-        <div className="learn-refresh-topbar-inner" style={{ maxWidth: '960px' }}>
+        <div className="learn-refresh-topbar-inner">
           <button type="button" className="learn-refresh-back" onClick={onBack} aria-label="返回首页">
             <span aria-hidden="true">←</span>
             <span>返回</span>
@@ -319,7 +319,7 @@ function WordCollectionView({
         </div>
       </header>
 
-      <main className="learn-refresh-main" style={{ maxWidth: '960px' }}>
+      <main className="learn-refresh-main">
         {showSearch && (
           <section className="mb-4 rounded-[16px] border border-[#e8e8ed] bg-white px-4 py-4">
             <input
@@ -350,7 +350,7 @@ function WordCollectionView({
 
       {filteredWords.length > 0 && (
         <footer className="learn-refresh-bottombar">
-          <div className="learn-refresh-bottombar-inner" style={{ maxWidth: '960px' }}>
+          <div className="learn-refresh-bottombar-inner">
             <button
               type="button"
               className="learn-refresh-action learn-refresh-action-secondary"
