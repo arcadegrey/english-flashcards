@@ -791,6 +791,11 @@ function AppContent() {
     setView('home')
   }
 
+  const handleOpenModeFromCollection = (nextMode) => {
+    setMode(nextMode)
+    setView('learn')
+  }
+
   const markAsLearned = () => {
     if (currentWord && !learnedWords.includes(currentWord.id)) {
       setLearnedWords([...learnedWords, currentWord.id])
@@ -1003,8 +1008,10 @@ function AppContent() {
             title="📖 已学习单词"
             subtitle="这里会展示你标记为“已学习”的所有单词"
             words={learnedWordList}
+            mode={mode}
             emptyHint="你还没有已学习单词，先进入学习模式标记一些吧。"
             onBack={handleBackToHome}
+            onOpenMode={handleOpenModeFromCollection}
             onMarkAsMastered={markLearnedWordAsMastered}
             masteredActionLabel="认识了"
           />
@@ -1015,8 +1022,10 @@ function AppContent() {
             title="✅ 已掌握单词"
             subtitle="这里会展示你已经掌握的单词"
             words={masteredWordList}
+            mode={mode}
             emptyHint="你还没有已掌握单词，继续练习后会出现在这里。"
             onBack={handleBackToHome}
+            onOpenMode={handleOpenModeFromCollection}
           />
         )
       default:
