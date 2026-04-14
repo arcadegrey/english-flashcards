@@ -48,7 +48,7 @@ function SpellingTest({ vocabulary }) {
 
   const handleSpeak = () => {
     if (currentWord) {
-      speak(currentWord.word, { rate: 0.7 });
+      speak(currentWord.word, { rate: 1 });
     }
   };
 

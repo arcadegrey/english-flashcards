@@ -4,7 +4,13 @@ import Quiz from './Quiz';
 import FillBlank from './FillBlank';
 import SpellingTest from './SpellingTest';
 import VoiceSettings from './VoiceSettings';
-import { speak } from '../utils/speech';
+import {
+  DEFAULT_SPEECH_RATE,
+  SLOW_SPEECH_RATE,
+  getSpeechRate,
+  setSpeechRate,
+  speak,
+} from '../utils/speech';
 import '../styles/word-learning-refresh.css';
 
 const MODE_OPTIONS = [
@@ -34,6 +40,7 @@ function LearningView({
   const [isModeMenuMounted, setIsModeMenuMounted] = useState(false);
   const [isModeMenuOpen, setIsModeMenuOpen] = useState(false);
   const [toast, setToast] = useState('');
+  const [speechRate, setSpeechRateState] = useState(() => getSpeechRate());
   const menuRef = useRef(null);
   const menuCloseTimerRef = useRef(null);
 
@@ -51,7 +58,8 @@ function LearningView({
   const totalCount = filteredVocabulary.length;
   const progressCurrent = totalCount > 0 ? Math.min(currentIndex + 1, totalCount) : 0;
   const currentModeMeta = MODE_OPTIONS.find((item) => item.id === mode) || MODE_OPTIONS[0];
-  const totalMenuSlots = MODE_OPTIONS.length + 2;
+  const totalMenuSlots = MODE_OPTIONS.length + 3;
+  const isSlowSpeech = Math.abs(speechRate - SLOW_SPEECH_RATE) < 0.001;
 
   useEffect(() => {
     setShowHint(false);
@@ -169,7 +177,15 @@ function LearningView({
       return;
     }
 
-    speak(currentWord.word, { rate: 0.8 });
+    speak(currentWord.word, { rate: 1 });
+  };
+
+  const handleToggleSlowSpeech = () => {
+    const nextRate = isSlowSpeech ? DEFAULT_SPEECH_RATE : SLOW_SPEECH_RATE;
+    setSpeechRate(nextRate);
+    setSpeechRateState(nextRate);
+    setToast(isSlowSpeech ? '已切换为标准语速 1.0x' : '已切换为慢速发音 0.8x');
+    closeModeMenu();
   };
 
   const handleMarkUnknown = () => {
@@ -272,6 +288,19 @@ function LearningView({
                   >
                     <span>🔊</span>
                     <span>语音设置</span>
+                  </button>
+                  <button
+                    type="button"
+                    role="menuitem"
+                    className={`learn-refresh-menu-item ${isSlowSpeech ? 'is-active' : ''}`}
+                    onClick={handleToggleSlowSpeech}
+                    style={{
+                      '--menu-index': MODE_OPTIONS.length + 2,
+                      '--menu-reverse-index': totalMenuSlots - 1 - (MODE_OPTIONS.length + 2),
+                    }}
+                  >
+                    <span>🐢</span>
+                    <span>{isSlowSpeech ? '慢速发音 0.8x（已开）' : '慢速发音 0.8x'}</span>
                   </button>
                 </div>
               )}

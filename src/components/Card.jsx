@@ -51,7 +51,7 @@ function Card({ word, showHint = false }) {
             type="button"
             className="learn-refresh-inline-audio"
             aria-label="播放发音"
-            onClick={() => speak(word.word, { rate: 0.8 })}
+            onClick={() => speak(word.word, { rate: 1 })}
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M3 9v6h4l5 4V5L7 9H3z" />
@@ -70,7 +70,7 @@ function Card({ word, showHint = false }) {
           <button
             type="button"
             className="learn-refresh-example-audio"
-            onClick={() => speak(word.example, { rate: 0.82 })}
+            onClick={() => speak(word.example, { rate: 1 })}
             disabled={!word.example}
             aria-label="播放例句"
           >

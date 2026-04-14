@@ -879,7 +879,7 @@ function AppContent() {
       return 'bg-[#f8fafc]'
     }
 
-    if (view === 'learn') {
+    if (view === 'learn' || view === 'learnedWords' || view === 'masteredWords') {
       return 'bg-[#fbfbfd]'
     }
 
@@ -1040,7 +1040,7 @@ function AppContent() {
     }
   }
 
-  if (view === 'learn') {
+  if (view === 'learn' || view === 'learnedWords' || view === 'masteredWords') {
     return <div className={`min-h-screen ${appBackground}`}>{renderView()}</div>
   }
 

@@ -1,7 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Card from './Card';
 import VoiceSettings from './VoiceSettings';
-import { speak } from '../utils/speech';
+import {
+  DEFAULT_SPEECH_RATE,
+  SLOW_SPEECH_RATE,
+  getSpeechRate,
+  setSpeechRate,
+  speak,
+} from '../utils/speech';
 
 const MENU_CLOSE_DURATION_MS = 220;
 const MODE_OPTIONS = [
@@ -30,9 +36,10 @@ function WordCollectionView({
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [toast, setToast] = useState('');
+  const [speechRate, setSpeechRateState] = useState(() => getSpeechRate());
   const menuRef = useRef(null);
   const menuCloseTimerRef = useRef(null);
-  const totalMenuSlots = MODE_OPTIONS.length + 4;
+  const totalMenuSlots = MODE_OPTIONS.length + 5;
 
   const filteredWords = useMemo(() => {
     const keyword = query.trim().toLowerCase();
@@ -48,6 +55,7 @@ function WordCollectionView({
 
   const currentWord = filteredWords[currentIndex] || null;
   const progressCurrent = filteredWords.length > 0 ? Math.min(currentIndex + 1, filteredWords.length) : 0;
+  const isSlowSpeech = Math.abs(speechRate - SLOW_SPEECH_RATE) < 0.001;
 
   useEffect(() => {
     if (filteredWords.length === 0) {
@@ -172,7 +180,15 @@ function WordCollectionView({
 
   const handleSpeakCurrentWord = () => {
     if (!currentWord?.word) return;
-    speak(currentWord.word, { rate: 0.8 });
+    speak(currentWord.word, { rate: 1 });
+  };
+
+  const handleToggleSlowSpeech = () => {
+    const nextRate = isSlowSpeech ? DEFAULT_SPEECH_RATE : SLOW_SPEECH_RATE;
+    setSpeechRate(nextRate);
+    setSpeechRateState(nextRate);
+    setToast(isSlowSpeech ? '已切换为标准语速 1.0x' : '已切换为慢速发音 0.8x');
+    closeMenu();
   };
 
   const handleMarkUnknown = () => {
@@ -292,11 +308,24 @@ function WordCollectionView({
                     <span>🔊</span>
                     <span>语音设置</span>
                   </button>
-                  <div
-                    className="learn-refresh-menu-divider"
+                  <button
+                    type="button"
+                    role="menuitem"
+                    className={`learn-refresh-menu-item ${isSlowSpeech ? 'is-active' : ''}`}
+                    onClick={handleToggleSlowSpeech}
                     style={{
                       '--menu-index': MODE_OPTIONS.length + 2,
                       '--menu-reverse-index': totalMenuSlots - 1 - (MODE_OPTIONS.length + 2),
+                    }}
+                  >
+                    <span>🐢</span>
+                    <span>{isSlowSpeech ? '慢速发音 0.8x（已开）' : '慢速发音 0.8x'}</span>
+                  </button>
+                  <div
+                    className="learn-refresh-menu-divider"
+                    style={{
+                      '--menu-index': MODE_OPTIONS.length + 3,
+                      '--menu-reverse-index': totalMenuSlots - 1 - (MODE_OPTIONS.length + 3),
                     }}
                   />
                   <button
@@ -305,8 +334,8 @@ function WordCollectionView({
                     className="learn-refresh-menu-item"
                     onClick={handleToggleSearch}
                     style={{
-                      '--menu-index': MODE_OPTIONS.length + 3,
-                      '--menu-reverse-index': totalMenuSlots - 1 - (MODE_OPTIONS.length + 3),
+                      '--menu-index': MODE_OPTIONS.length + 4,
+                      '--menu-reverse-index': totalMenuSlots - 1 - (MODE_OPTIONS.length + 4),
                     }}
                   >
                     <span>{showSearch ? '🙈' : '🔎'}</span>

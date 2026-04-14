@@ -2,6 +2,8 @@ import { storage } from './storage';
 
 export const DEFAULT_KOKORO_TTS_ENDPOINT =
   'https://kokoro-api-production-9ea1.up.railway.app/v1/audio/speech';
+export const DEFAULT_SPEECH_RATE = 1;
+export const SLOW_SPEECH_RATE = 0.8;
 
 const browserTtsAvailable =
   typeof window !== 'undefined' && typeof window.speechSynthesis !== 'undefined';
@@ -84,6 +86,10 @@ const initVoices = () => {
 };
 
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+const getSpeechRateMultiplier = () => {
+  const rate = storage.getSpeechRate();
+  return clamp(rate, 0.5, 1.5);
+};
 
 const getKokoroEndpoint = () => {
   const fromStorage = storage.getKokoroEndpoint();
@@ -220,7 +226,7 @@ const speakWithBrowser = async (text, options = {}) => {
     throw new Error('当前环境不支持浏览器语音合成');
   }
 
-  const { rate = 0.8, pitch = 1, volume = 1 } = options;
+  const { rate = 1, pitch = 1, volume = 1 } = options;
   const speech = getSpeechSynthesis();
 
   speech.cancel();
@@ -280,15 +286,26 @@ export const setTtsProvider = (provider) => {
 
 export const getTtsProvider = () => ttsProvider;
 
+export const getSpeechRate = () => getSpeechRateMultiplier();
+
+export const setSpeechRate = (rate) => {
+  storage.setSpeechRate(rate);
+};
+
 export const speak = async (text, options = {}) => {
   const safeText = (text || '').trim();
   if (!safeText) return;
 
   stopSpeak();
+  const baseRate = Number.isFinite(Number(options.rate)) ? Number(options.rate) : 1;
+  const mergedOptions = {
+    ...options,
+    rate: clamp(baseRate * getSpeechRateMultiplier(), 0.5, 1.5),
+  };
 
   if (ttsProvider === 'kokoro') {
     try {
-      await speakWithKokoro(safeText, options);
+      await speakWithKokoro(safeText, mergedOptions);
       return;
     } catch (error) {
       console.warn('[TTS] Kokoro failed, fallback to browser:', error);
@@ -298,7 +315,7 @@ export const speak = async (text, options = {}) => {
     }
   }
 
-  await speakWithBrowser(safeText, options);
+  await speakWithBrowser(safeText, mergedOptions);
 };
 
 export const stopSpeak = () => {

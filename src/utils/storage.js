@@ -8,6 +8,7 @@ const STORAGE_KEYS = {
   KOKORO_ENDPOINT: 'flashcards_kokoro_endpoint',
   KOKORO_VOICE: 'flashcards_kokoro_voice',
   KOKORO_SPEED: 'flashcards_kokoro_speed',
+  SPEECH_RATE: 'flashcards_speech_rate',
   WORD_PROGRESS: 'flashcards_word_progress',
   CUSTOM_WORDS: 'flashcards_custom_words',
   AUTH_SESSION: 'flashcards_auth_session',
@@ -236,6 +237,27 @@ export const storage = {
       localStorage.setItem(STORAGE_KEYS.KOKORO_SPEED, String(Math.max(0.5, Math.min(1.5, safe))));
     } catch (error) {
       console.error('Failed to save Kokoro speed:', error);
+    }
+  },
+
+  getSpeechRate: () => {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEYS.SPEECH_RATE);
+      const parsed = raw ? Number(raw) : 1;
+      if (Number.isNaN(parsed)) return 1;
+      return Math.max(0.5, Math.min(1.5, parsed));
+    } catch (error) {
+      console.error('Failed to load speech rate:', error);
+      return 1;
+    }
+  },
+
+  setSpeechRate: (rate) => {
+    try {
+      const safe = Number.isFinite(Number(rate)) ? Number(rate) : 1;
+      localStorage.setItem(STORAGE_KEYS.SPEECH_RATE, String(Math.max(0.5, Math.min(1.5, safe))));
+    } catch (error) {
+      console.error('Failed to save speech rate:', error);
     }
   },
 

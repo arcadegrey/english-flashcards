@@ -140,7 +140,7 @@ function FillBlank({ vocabulary, sourceLabel = '' }) {
 
   const handleSpeakSentence = () => {
     if (currentQuestion) {
-      speak(currentQuestion.example, { rate: 0.9 });
+      speak(currentQuestion.example, { rate: 1 });
     }
   };
 

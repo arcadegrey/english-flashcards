@@ -149,7 +149,7 @@ function Quiz({ vocabulary, optionVocabulary = [], sourceLabel = '题库测验',
         <div className="mt-6 flex justify-center">
           <button
             type="button"
-            onClick={() => speak(currentQuestion.word, { rate: 0.8 })}
+            onClick={() => speak(currentQuestion.word, { rate: 1 })}
             className="inline-flex min-h-[46px] items-center gap-2 rounded-[10px] border border-[#0071e3] bg-[#0071e3] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#0066ce]"
           >
             <span>🔊</span>
