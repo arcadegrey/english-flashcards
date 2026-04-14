@@ -103,11 +103,61 @@ const normalizeCustomWords = (value) => {
   return list.filter((item) => item && typeof item === 'object' && String(item.word || '').trim());
 };
 
+const countFilledFields = (word) => {
+  if (!word || typeof word !== 'object') return 0;
+  const keys = ['phonetic', 'pos', 'meaning', 'example', 'exampleCn', 'category', 'level', 'list'];
+  return keys.reduce((count, key) => {
+    const value = String(word[key] ?? '').trim();
+    return value ? count + 1 : count;
+  }, 0);
+};
+
+const pickRicherWord = (currentWord, incomingWord) => {
+  if (!currentWord) return incomingWord;
+  if (!incomingWord) return currentWord;
+  return countFilledFields(incomingWord) >= countFilledFields(currentWord) ? incomingWord : currentWord;
+};
+
+const mergeCustomWordList = (baseList, extraList) => {
+  const map = new Map();
+  const applyList = (list) => {
+    const safeList = Array.isArray(list) ? list : [];
+    safeList.forEach((word) => {
+      const key = String(word?.word || '').trim().toLowerCase();
+      if (!key) return;
+      map.set(key, pickRicherWord(map.get(key), word));
+    });
+  };
+
+  applyList(baseList);
+  applyList(extraList);
+  return Array.from(map.values());
+};
+
 const normalizeProgress = (progress) => ({
   learnedWords: normalizeIdArray(progress?.learnedWords),
   masteredWords: normalizeIdArray(progress?.masteredWords),
   customWords: normalizeCustomWords(progress?.customWords),
 });
+
+const mergeProgress = (baseProgress, incomingProgress) => {
+  const base = normalizeProgress(baseProgress);
+  const incoming = normalizeProgress(incomingProgress);
+
+  const masteredWords = normalizeIdArray([...(base.masteredWords || []), ...(incoming.masteredWords || [])]);
+  const masteredSet = new Set(masteredWords.map((item) => String(item)));
+  const learnedWords = normalizeIdArray([
+    ...(base.learnedWords || []),
+    ...(incoming.learnedWords || []),
+  ]).filter((item) => !masteredSet.has(String(item)));
+  const customWords = mergeCustomWordList(base.customWords || [], incoming.customWords || []);
+
+  return {
+    learnedWords,
+    masteredWords,
+    customWords,
+  };
+};
 
 const parseProgressText = (value) => {
   if (!value) return [];
@@ -417,7 +467,7 @@ const handleGetProgress = async (request, env) => {
     .first();
 
   if (!row) {
-    return json({ progress: EMPTY_PROGRESS });
+    return json({ progress: EMPTY_PROGRESS, updatedAt: '' });
   }
 
   return json({
@@ -426,6 +476,7 @@ const handleGetProgress = async (request, env) => {
       masteredWords: parseProgressText(row.mastered_words),
       customWords: parseProgressText(row.custom_words),
     },
+    updatedAt: String(row.updated_at || ''),
   });
 };
 
@@ -437,6 +488,34 @@ const handlePutProgress = async (request, env) => {
 
   const body = await parseJsonBody(request);
   const normalized = normalizeProgress(body?.progress || body || EMPTY_PROGRESS);
+  const baseUpdatedAt = String(body?.baseUpdatedAt || '').trim();
+  const existing = await env.DB.prepare(
+    `SELECT learned_words, mastered_words, custom_words, updated_at
+     FROM user_progress
+     WHERE user_id = ?
+     LIMIT 1`
+  )
+    .bind(user.id)
+    .first();
+
+  let finalProgress = normalized;
+  let conflictResolved = false;
+
+  if (existing) {
+    const existingProgress = {
+      learnedWords: parseProgressText(existing.learned_words),
+      masteredWords: parseProgressText(existing.mastered_words),
+      customWords: parseProgressText(existing.custom_words),
+    };
+    const currentUpdatedAt = String(existing.updated_at || '');
+    const canReplaceDirectly = Boolean(baseUpdatedAt) && baseUpdatedAt === currentUpdatedAt;
+
+    if (!canReplaceDirectly) {
+      finalProgress = mergeProgress(existingProgress, normalized);
+      conflictResolved = true;
+    }
+  }
+
   const updatedAt = nowIso();
 
   await env.DB.prepare(
@@ -450,14 +529,18 @@ const handlePutProgress = async (request, env) => {
   )
     .bind(
       user.id,
-      JSON.stringify(normalized.learnedWords),
-      JSON.stringify(normalized.masteredWords),
-      JSON.stringify(normalized.customWords),
+      JSON.stringify(finalProgress.learnedWords),
+      JSON.stringify(finalProgress.masteredWords),
+      JSON.stringify(finalProgress.customWords),
       updatedAt
     )
     .run();
 
-  return json({ updatedAt });
+  return json({
+    updatedAt,
+    progress: finalProgress,
+    conflictResolved,
+  });
 };
 
 const handleApi = async (request, env) => {

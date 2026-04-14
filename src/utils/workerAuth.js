@@ -206,16 +206,24 @@ export const fetchCurrentUser = async () => {
 
 export const loadCloudProgress = async () => {
   const payload = await requestApi('/progress');
-  return normalizeProgress(payload?.progress || EMPTY_PROGRESS);
+  return {
+    progress: normalizeProgress(payload?.progress || EMPTY_PROGRESS),
+    updatedAt: String(payload?.updatedAt || ''),
+  };
 };
 
-export const upsertCloudProgress = async ({ progress }) => {
+export const upsertCloudProgress = async ({ progress, baseUpdatedAt = '' }) => {
   const payload = await requestApi('/progress', {
     method: 'PUT',
     body: {
       progress: normalizeProgress(progress),
+      baseUpdatedAt: String(baseUpdatedAt || ''),
     },
   });
 
-  return payload?.updatedAt || new Date().toISOString();
+  return {
+    updatedAt: payload?.updatedAt || new Date().toISOString(),
+    progress: normalizeProgress(payload?.progress || progress || EMPTY_PROGRESS),
+    conflictResolved: Boolean(payload?.conflictResolved),
+  };
 };

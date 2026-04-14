@@ -72,11 +72,36 @@ const mergeCustomWordList = (baseList, extraList) => {
   return Array.from(map.values())
 }
 
-const mergeProgress = (localProgress, cloudProgress) => ({
-  learnedWords: dedupeIdList([...(cloudProgress.learnedWords || []), ...(localProgress.learnedWords || [])]),
-  masteredWords: dedupeIdList([...(cloudProgress.masteredWords || []), ...(localProgress.masteredWords || [])]),
-  customWords: mergeCustomWordList(cloudProgress.customWords || [], localProgress.customWords || []),
-})
+const normalizeProgressState = (progress) => {
+  const masteredWords = dedupeIdList(progress?.masteredWords || [])
+  const masteredSet = new Set(masteredWords.map((item) => String(item)))
+  const learnedWords = dedupeIdList(progress?.learnedWords || []).filter(
+    (item) => !masteredSet.has(String(item))
+  )
+
+  return {
+    learnedWords,
+    masteredWords,
+    customWords: mergeCustomWordList([], progress?.customWords || []),
+  }
+}
+
+const mergeProgress = (localProgress, cloudProgress) =>
+  normalizeProgressState({
+    learnedWords: [...(cloudProgress.learnedWords || []), ...(localProgress.learnedWords || [])],
+    masteredWords: [...(cloudProgress.masteredWords || []), ...(localProgress.masteredWords || [])],
+    customWords: mergeCustomWordList(cloudProgress.customWords || [], localProgress.customWords || []),
+  })
+
+const areProgressStatesEqual = (left, right) => {
+  const l = normalizeProgressState(left)
+  const r = normalizeProgressState(right)
+  return (
+    JSON.stringify(l.learnedWords) === JSON.stringify(r.learnedWords) &&
+    JSON.stringify(l.masteredWords) === JSON.stringify(r.masteredWords) &&
+    JSON.stringify(l.customWords) === JSON.stringify(r.customWords)
+  )
+}
 
 const getSyncStatusText = ({ authLoading, hasUser, syncState, lastSyncedAt }) => {
   if (authLoading) return '初始化中'
@@ -176,6 +201,7 @@ function AppContent() {
   const cloudHydratedRef = useRef(false)
   const skipNextCloudPushRef = useRef(false)
   const cloudSyncTimerRef = useRef(null)
+  const cloudProgressVersionRef = useRef('')
   const [showAuthModal, setShowAuthModal] = useState(false)
   const [homeAccountNotice, setHomeAccountNotice] = useState(null)
   const homeNoticeTimerRef = useRef(null)
@@ -331,31 +357,53 @@ function AppContent() {
   }, [])
 
   const applyMergedProgress = (mergedProgress, { skipNextPush = false } = {}) => {
+    const normalized = normalizeProgressState(mergedProgress)
+
     if (skipNextPush) {
       skipNextCloudPushRef.current = true
     }
 
-    setLearnedWords(mergedProgress.learnedWords)
-    setMasteredWords(mergedProgress.masteredWords)
-    setCustomWords(mergedProgress.customWords)
+    setLearnedWords(normalized.learnedWords)
+    setMasteredWords(normalized.masteredWords)
+    setCustomWords(normalized.customWords)
 
-    storage.setLearnedWords(mergedProgress.learnedWords)
-    storage.setMasteredWords(mergedProgress.masteredWords)
-    storage.setCustomWords(mergedProgress.customWords)
+    storage.setLearnedWords(normalized.learnedWords)
+    storage.setMasteredWords(normalized.masteredWords)
+    storage.setCustomWords(normalized.customWords)
   }
 
-  const pushProgressToCloud = async (session, user, progress) => {
+  const pushProgressToCloud = async (session, user, progress, options = {}) => {
     if (!cloudEnabled || !session?.access_token || !user?.id) return ''
 
     setSyncState('syncing')
     setSyncError('')
 
-    const syncedAtIso = await upsertCloudProgress({
+    const syncResult = await upsertCloudProgress({
       userId: user.id,
       accessToken: session.access_token,
       refreshToken: session.refresh_token,
       progress,
+      baseUpdatedAt:
+        typeof options.baseUpdatedAt === 'string'
+          ? options.baseUpdatedAt
+          : cloudProgressVersionRef.current,
     })
+    const syncedAtIso = syncResult?.updatedAt || new Date().toISOString()
+    cloudProgressVersionRef.current = syncedAtIso
+
+    if (syncResult?.conflictResolved && syncResult?.progress) {
+      const hasDiff = !areProgressStatesEqual(
+        {
+          learnedWords,
+          masteredWords,
+          customWords,
+        },
+        syncResult.progress
+      )
+      if (hasDiff) {
+        applyMergedProgress(syncResult.progress, { skipNextPush: true })
+      }
+    }
 
     const syncedAtText = new Date(syncedAtIso).toLocaleString('zh-CN', {
       hour12: false,
@@ -374,7 +422,7 @@ function AppContent() {
   const hydrateFromCloud = async ({ session, user }) => {
     if (!cloudEnabled || !session?.access_token || !user?.id) return
 
-    const cloudProgress = await loadCloudProgress({
+    const { progress: cloudProgress, updatedAt } = await loadCloudProgress({
       userId: user.id,
       accessToken: session.access_token,
       refreshToken: session.refresh_token,
@@ -391,7 +439,7 @@ function AppContent() {
 
     applyMergedProgress(merged, { skipNextPush: true })
     cloudHydratedRef.current = true
-    await pushProgressToCloud(session, user, merged)
+    await pushProgressToCloud(session, user, merged, { baseUpdatedAt: updatedAt })
   }
 
   const ensureFreshSession = async (session) => {
@@ -430,6 +478,7 @@ function AppContent() {
       if (!savedSession) {
         setAuthLoading(false)
         setSyncState('idle')
+        cloudProgressVersionRef.current = ''
         return
       }
 
@@ -454,6 +503,7 @@ function AppContent() {
         setAuthError(error?.message || '恢复登录失败')
         setSyncState('error')
         setSyncError(error?.message || '恢复登录失败')
+        cloudProgressVersionRef.current = ''
       } finally {
         setAuthLoading(false)
       }
@@ -566,6 +616,7 @@ function AppContent() {
     setSyncState('idle')
     setSyncError('')
     setLastSyncedAt('')
+    cloudProgressVersionRef.current = ''
     cloudHydratedRef.current = false
   }
 
