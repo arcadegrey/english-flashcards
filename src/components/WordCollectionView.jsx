@@ -55,7 +55,7 @@ function WordCollectionView({
 
   const currentWord = filteredWords[currentIndex] || null;
   const progressCurrent = filteredWords.length > 0 ? Math.min(currentIndex + 1, filteredWords.length) : 0;
-  const isSlowSpeech = Math.abs(speechRate - SLOW_SPEECH_RATE) < 0.001;
+  const isSlowSpeech = speechRate < DEFAULT_SPEECH_RATE - 0.01;
 
   useEffect(() => {
     if (filteredWords.length === 0) {
@@ -187,7 +187,7 @@ function WordCollectionView({
     const nextRate = isSlowSpeech ? DEFAULT_SPEECH_RATE : SLOW_SPEECH_RATE;
     setSpeechRate(nextRate);
     setSpeechRateState(nextRate);
-    setToast(isSlowSpeech ? '已切换为标准语速 1.0x' : '已切换为慢速发音 0.8x');
+    setToast(isSlowSpeech ? '已切换为标准语速 1.0x' : '已切换为慢速发音 0.5x');
     closeMenu();
   };
 
@@ -319,7 +319,7 @@ function WordCollectionView({
                     }}
                   >
                     <span>🐢</span>
-                    <span>{isSlowSpeech ? '慢速发音 0.8x（已开）' : '慢速发音 0.8x'}</span>
+                    <span>{isSlowSpeech ? '慢速发音 0.5x（已开）' : '慢速发音 0.5x'}</span>
                   </button>
                   <div
                     className="learn-refresh-menu-divider"

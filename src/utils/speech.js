@@ -3,7 +3,7 @@ import { storage } from './storage';
 export const DEFAULT_KOKORO_TTS_ENDPOINT =
   'https://kokoro-api-production-9ea1.up.railway.app/v1/audio/speech';
 export const DEFAULT_SPEECH_RATE = 1;
-export const SLOW_SPEECH_RATE = 0.8;
+export const SLOW_SPEECH_RATE = 0.5;
 
 const browserTtsAvailable =
   typeof window !== 'undefined' && typeof window.speechSynthesis !== 'undefined';
