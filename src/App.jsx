@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo, useRef } from 'react'
-import { ThemeProvider, useTheme } from './context/ThemeContext'
+import { ThemeProvider } from './context/ThemeContext'
+import { useTheme } from './context/theme-context'
 import vocabulary from './data/vocabulary'
 import categories from './data/categories'
 import HomeScreen from './components/HomeScreen'

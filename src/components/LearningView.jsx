@@ -36,7 +36,7 @@ function LearningView({
   onBack,
 }) {
   const [showVoiceSettings, setShowVoiceSettings] = useState(false);
-  const [showHint, setShowHint] = useState(false);
+  const [hintOpenForWordId, setHintOpenForWordId] = useState(null);
   const [isModeMenuMounted, setIsModeMenuMounted] = useState(false);
   const [isModeMenuOpen, setIsModeMenuOpen] = useState(false);
   const [toast, setToast] = useState('');
@@ -59,11 +59,9 @@ function LearningView({
   const progressCurrent = totalCount > 0 ? Math.min(currentIndex + 1, totalCount) : 0;
   const currentModeMeta = MODE_OPTIONS.find((item) => item.id === mode) || MODE_OPTIONS[0];
   const totalMenuSlots = MODE_OPTIONS.length + 3;
+  const currentWordId = currentWord?.id ?? null;
+  const showHint = currentWordId != null && String(hintOpenForWordId) === String(currentWordId);
   const isSlowSpeech = speechRate < DEFAULT_SPEECH_RATE - 0.01;
-
-  useEffect(() => {
-    setShowHint(false);
-  }, [currentWord?.id]);
 
   useEffect(() => {
     if (!toast) {
@@ -191,13 +189,20 @@ function LearningView({
   const handleMarkUnknown = () => {
     onMarkLearned();
     setToast('已加入复习队列');
-    setShowHint(false);
+    setHintOpenForWordId(null);
   };
 
   const handleMarkKnown = () => {
     onMarkMastered();
     setToast('已标记为“认识”');
-    setShowHint(false);
+    setHintOpenForWordId(null);
+  };
+
+  const handleToggleHint = () => {
+    if (currentWordId == null) {
+      return;
+    }
+    setHintOpenForWordId((prev) => (String(prev) === String(currentWordId) ? null : currentWordId));
   };
 
   const progressSubText = mode === 'learn' ? `今日目标 ${totalCount}` : `当前模式 ${currentModeMeta.label}`;
@@ -344,7 +349,7 @@ function LearningView({
             <button
               type="button"
               className="learn-refresh-action learn-refresh-action-ghost"
-              onClick={() => setShowHint((prev) => !prev)}
+              onClick={handleToggleHint}
             >
               {showHint ? '收起提示' : '显示提示'}
             </button>

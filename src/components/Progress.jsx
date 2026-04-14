@@ -1,4 +1,4 @@
-import { useTheme } from '../context/ThemeContext';
+import { useTheme } from '../context/theme-context';
 
 function Progress({ total, learned, mastered, categoryName, onReset }) {
   const { isDark } = useTheme();

@@ -30,7 +30,7 @@ function WordCollectionView({
 }) {
   const [query, setQuery] = useState('');
   const [showSearch, setShowSearch] = useState(false);
-  const [showHint, setShowHint] = useState(false);
+  const [hintOpenForWordId, setHintOpenForWordId] = useState(null);
   const [showVoiceSettings, setShowVoiceSettings] = useState(false);
   const [isMenuMounted, setIsMenuMounted] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,24 +53,13 @@ function WordCollectionView({
     );
   }, [query, words]);
 
-  const currentWord = filteredWords[currentIndex] || null;
-  const progressCurrent = filteredWords.length > 0 ? Math.min(currentIndex + 1, filteredWords.length) : 0;
+  const safeCurrentIndex =
+    filteredWords.length > 0 ? Math.min(currentIndex, filteredWords.length - 1) : 0;
+  const currentWord = filteredWords[safeCurrentIndex] || null;
+  const progressCurrent = filteredWords.length > 0 ? safeCurrentIndex + 1 : 0;
+  const currentWordId = currentWord?.id ?? null;
+  const showHint = currentWordId != null && String(hintOpenForWordId) === String(currentWordId);
   const isSlowSpeech = speechRate < DEFAULT_SPEECH_RATE - 0.01;
-
-  useEffect(() => {
-    if (filteredWords.length === 0) {
-      setCurrentIndex(0);
-      return;
-    }
-
-    if (currentIndex >= filteredWords.length) {
-      setCurrentIndex(filteredWords.length - 1);
-    }
-  }, [filteredWords.length, currentIndex]);
-
-  useEffect(() => {
-    setShowHint(false);
-  }, [currentWord?.id]);
 
   useEffect(() => {
     if (!toast) return undefined;
@@ -160,7 +149,10 @@ function WordCollectionView({
 
   const nextCard = () => {
     if (filteredWords.length <= 1) return;
-    setCurrentIndex((prev) => (prev + 1) % filteredWords.length);
+    setCurrentIndex((prev) => {
+      const normalized = Math.min(prev, filteredWords.length - 1);
+      return (normalized + 1) % filteredWords.length;
+    });
   };
 
   const handleSelectMode = (nextMode) => {
@@ -197,12 +189,12 @@ function WordCollectionView({
     if (typeof onMarkAsUnknown === 'function') {
       onMarkAsUnknown(currentWord.id);
       setToast('已移回已学习');
-      setShowHint(false);
+      setHintOpenForWordId(null);
       return;
     }
 
     setToast('已加入复习队列');
-    setShowHint(false);
+    setHintOpenForWordId(null);
     nextCard();
   };
 
@@ -212,13 +204,20 @@ function WordCollectionView({
     if (typeof onMarkAsMastered === 'function') {
       onMarkAsMastered(currentWord.id);
       setToast('已标记为“认识”');
-      setShowHint(false);
+      setHintOpenForWordId(null);
       return;
     }
 
     setToast('已保持为已掌握');
-    setShowHint(false);
+    setHintOpenForWordId(null);
     nextCard();
+  };
+
+  const handleToggleHint = () => {
+    if (currentWordId == null) {
+      return;
+    }
+    setHintOpenForWordId((prev) => (String(prev) === String(currentWordId) ? null : currentWordId));
   };
 
   return (
@@ -373,7 +372,11 @@ function WordCollectionView({
             <p className="learn-refresh-empty">没有匹配结果，试试别的关键词。</p>
           </article>
         ) : (
-          <Card key={`${currentWord?.id || 'collection-empty'}-${currentIndex}`} word={currentWord} showHint={showHint} />
+          <Card
+            key={`${currentWord?.id || 'collection-empty'}-${safeCurrentIndex}`}
+            word={currentWord}
+            showHint={showHint}
+          />
         )}
       </main>
 
@@ -390,7 +393,7 @@ function WordCollectionView({
             <button
               type="button"
               className="learn-refresh-action learn-refresh-action-ghost"
-              onClick={() => setShowHint((prev) => !prev)}
+              onClick={handleToggleHint}
             >
               {showHint ? '收起提示' : '显示提示'}
             </button>

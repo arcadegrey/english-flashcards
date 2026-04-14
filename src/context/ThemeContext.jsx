@@ -1,31 +1,25 @@
-import { createContext, useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { ThemeContext } from './theme-context';
 import { storage } from '../utils/storage';
 
-const ThemeContext = createContext();
-
-export const useTheme = () => {
-  const context = useContext(ThemeContext);
-  if (!context) {
-    throw new Error('useTheme must be used within a ThemeProvider');
+const getInitialTheme = () => {
+  if (typeof window === 'undefined') {
+    return 'light';
   }
-  return context;
+
+  const savedTheme = storage.getTheme();
+  if (savedTheme === 'dark' || savedTheme === 'light') {
+    return savedTheme;
+  }
+
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 };
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setThemeState] = useState('light');
-  const [isInitialized, setIsInitialized] = useState(false);
+  const [theme, setThemeState] = useState(getInitialTheme);
 
   useEffect(() => {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const savedTheme = storage.getTheme();
-    
-    const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
-    setThemeState(initialTheme);
-    setIsInitialized(true);
-  }, []);
-
-  useEffect(() => {
-    if (!isInitialized) return;
+    if (typeof document === 'undefined') return;
 
     const root = document.documentElement;
     if (theme === 'dark') {
@@ -35,7 +29,7 @@ export const ThemeProvider = ({ children }) => {
     }
 
     storage.setTheme(theme);
-  }, [theme, isInitialized]);
+  }, [theme]);
 
   const setTheme = (newTheme) => {
     setThemeState(newTheme);
@@ -51,5 +45,3 @@ export const ThemeProvider = ({ children }) => {
     </ThemeContext.Provider>
   );
 };
-
-export default ThemeContext;
