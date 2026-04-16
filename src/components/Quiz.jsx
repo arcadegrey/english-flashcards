@@ -3,15 +3,46 @@ import { speak } from '../utils/speech';
 import { playSuccessChime } from '../utils/feedback';
 import CorrectAnswerCelebration from './CorrectAnswerCelebration';
 
+const createQuizRound = (vocabulary = [], optionVocabulary = []) => {
+  if (!Array.isArray(vocabulary) || vocabulary.length === 0) {
+    return { question: null, options: [] };
+  }
+
+  const shuffled = [...vocabulary].sort(() => Math.random() - 0.5);
+  const correctWord = shuffled[0];
+
+  const distractorBase =
+    optionVocabulary.length > 0
+      ? optionVocabulary.filter((word) => word.id !== correctWord.id)
+      : vocabulary.filter((word) => word.id !== correctWord.id);
+
+  const shuffledDistractors = [...distractorBase].sort(() => Math.random() - 0.5);
+  const wrongOptions = shuffledDistractors.slice(0, 3);
+
+  if (wrongOptions.length < 3) {
+    const fallbackPool = vocabulary.filter(
+      (word) => word.id !== correctWord.id && !wrongOptions.some((wrong) => wrong.id === word.id)
+    );
+    wrongOptions.push(...fallbackPool.slice(0, 3 - wrongOptions.length));
+  }
+
+  return {
+    question: correctWord,
+    options: [correctWord, ...wrongOptions].sort(() => Math.random() - 0.5),
+  };
+};
+
 function Quiz({ vocabulary, optionVocabulary = [], sourceLabel = '题库测验', masteredWords, onAddMastered }) {
-  const [currentQuestion, setCurrentQuestion] = useState(null);
-  const [options, setOptions] = useState([]);
+  const initialRound = createQuizRound(vocabulary, optionVocabulary);
+  const [currentQuestion, setCurrentQuestion] = useState(() => initialRound.question);
+  const [options, setOptions] = useState(() => initialRound.options);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
   const [score, setScore] = useState(0);
   const [questionCount, setQuestionCount] = useState(0);
   const [streak, setStreak] = useState(0);
   const [celebrationTrigger, setCelebrationTrigger] = useState(0);
+  const isFirstRenderRef = useRef(true);
   const nextQuestionTimer = useRef(null);
   const masteredWordSet = useMemo(() => new Set(masteredWords), [masteredWords]);
 
@@ -22,41 +53,23 @@ function Quiz({ vocabulary, optionVocabulary = [], sourceLabel = '题库测验',
   const masteredPercent = vocabulary.length > 0 ? Math.round((masteredCount / vocabulary.length) * 100) : 0;
 
   const generateQuestion = useCallback(() => {
-    if (vocabulary.length === 0) {
-      setCurrentQuestion(null);
-      setOptions([]);
-      setSelectedAnswer(null);
-      setIsCorrect(null);
-      return;
-    }
-
-    const shuffled = [...vocabulary].sort(() => Math.random() - 0.5);
-    const correctWord = shuffled[0];
-
-    const distractorBase =
-      optionVocabulary.length > 0
-        ? optionVocabulary.filter((word) => word.id !== correctWord.id)
-        : vocabulary.filter((word) => word.id !== correctWord.id);
-
-    const shuffledDistractors = [...distractorBase].sort(() => Math.random() - 0.5);
-    const wrongOptions = shuffledDistractors.slice(0, 3);
-
-    if (wrongOptions.length < 3) {
-      const fallbackPool = vocabulary.filter(
-        (word) => word.id !== correctWord.id && !wrongOptions.some((wrong) => wrong.id === word.id)
-      );
-      wrongOptions.push(...fallbackPool.slice(0, 3 - wrongOptions.length));
-    }
-
-    const allOptions = [correctWord, ...wrongOptions].sort(() => Math.random() - 0.5);
-
-    setCurrentQuestion(correctWord);
-    setOptions(allOptions);
+    const nextRound = createQuizRound(vocabulary, optionVocabulary);
+    setCurrentQuestion(nextRound.question);
+    setOptions(nextRound.options);
     setSelectedAnswer(null);
     setIsCorrect(null);
   }, [vocabulary, optionVocabulary]);
 
   useEffect(() => {
+    if (isFirstRenderRef.current) {
+      isFirstRenderRef.current = false;
+      return () => {
+        if (nextQuestionTimer.current) {
+          clearTimeout(nextQuestionTimer.current);
+        }
+      };
+    }
+
     const initTimer = setTimeout(() => {
       generateQuestion();
     }, 0);

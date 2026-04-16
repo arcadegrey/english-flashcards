@@ -26,75 +26,97 @@ const buildHiddenSentence = (example = '', answerWord = '') => {
   return '';
 };
 
+const createFillBlankRound = (vocabulary = []) => {
+  if (!Array.isArray(vocabulary) || vocabulary.length === 0) {
+    return {
+      error: '当前词库为空，暂时无法生成填空题。',
+      question: null,
+      options: [],
+      sentence: '',
+    };
+  }
+
+  const candidates = vocabulary.filter((item) => item?.word && item?.example);
+  if (candidates.length === 0) {
+    return {
+      error: '当前词库缺少可用例句，暂时无法生成填空题。',
+      question: null,
+      options: [],
+      sentence: '',
+    };
+  }
+
+  const shuffledCandidates = [...candidates].sort(() => Math.random() - 0.5);
+
+  let selectedWord = null;
+  let hiddenSentence = '';
+
+  for (const item of shuffledCandidates) {
+    const nextHiddenSentence = buildHiddenSentence(item.example, item.word);
+    if (nextHiddenSentence && nextHiddenSentence !== item.example) {
+      selectedWord = item;
+      hiddenSentence = nextHiddenSentence;
+      break;
+    }
+  }
+
+  if (!selectedWord) {
+    return {
+      error: '当前例句中无法自动挖空目标词，请切换词库后重试。',
+      question: null,
+      options: [],
+      sentence: '',
+    };
+  }
+
+  const distractorPool = vocabulary.filter((item) => item.id !== selectedWord.id);
+  const wrongOptions = [...distractorPool]
+    .sort(() => Math.random() - 0.5)
+    .slice(0, Math.min(3, distractorPool.length));
+
+  return {
+    error: '',
+    question: selectedWord,
+    options: [selectedWord, ...wrongOptions].sort(() => Math.random() - 0.5),
+    sentence: hiddenSentence,
+  };
+};
+
 function FillBlank({ vocabulary, sourceLabel = '' }) {
-  const [currentQuestion, setCurrentQuestion] = useState(null);
-  const [options, setOptions] = useState([]);
+  const initialRound = createFillBlankRound(vocabulary);
+  const [currentQuestion, setCurrentQuestion] = useState(() => initialRound.question);
+  const [options, setOptions] = useState(() => initialRound.options);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
   const [score, setScore] = useState(0);
   const [questionCount, setQuestionCount] = useState(0);
   const [streak, setStreak] = useState(0);
-  const [sentence, setSentence] = useState('');
-  const [questionError, setQuestionError] = useState('');
+  const [sentence, setSentence] = useState(() => initialRound.sentence);
+  const [questionError, setQuestionError] = useState(() => initialRound.error);
   const [celebrationTrigger, setCelebrationTrigger] = useState(0);
+  const isFirstRenderRef = useRef(true);
   const nextQuestionTimer = useRef(null);
 
   const generateQuestion = useCallback(() => {
-    if (!Array.isArray(vocabulary) || vocabulary.length === 0) {
-      setQuestionError('当前词库为空，暂时无法生成填空题。');
-      setCurrentQuestion(null);
-      setOptions([]);
-      setSentence('');
-      return;
-    }
-
-    const candidates = vocabulary.filter((item) => item?.word && item?.example);
-    if (candidates.length === 0) {
-      setQuestionError('当前词库缺少可用例句，暂时无法生成填空题。');
-      setCurrentQuestion(null);
-      setOptions([]);
-      setSentence('');
-      return;
-    }
-
-    const shuffledCandidates = [...candidates].sort(() => Math.random() - 0.5);
-
-    let selectedWord = null;
-    let hiddenSentence = '';
-
-    for (const item of shuffledCandidates) {
-      const nextHiddenSentence = buildHiddenSentence(item.example, item.word);
-      if (nextHiddenSentence && nextHiddenSentence !== item.example) {
-        selectedWord = item;
-        hiddenSentence = nextHiddenSentence;
-        break;
-      }
-    }
-
-    if (!selectedWord) {
-      setQuestionError('当前例句中无法自动挖空目标词，请切换词库后重试。');
-      setCurrentQuestion(null);
-      setOptions([]);
-      setSentence('');
-      return;
-    }
-
-    const distractorPool = vocabulary.filter((item) => item.id !== selectedWord.id);
-    const wrongOptions = [...distractorPool]
-      .sort(() => Math.random() - 0.5)
-      .slice(0, Math.min(3, distractorPool.length));
-
-    const allOptions = [selectedWord, ...wrongOptions].sort(() => Math.random() - 0.5);
-
-    setQuestionError('');
-    setCurrentQuestion(selectedWord);
-    setOptions(allOptions);
+    const nextRound = createFillBlankRound(vocabulary);
+    setQuestionError(nextRound.error);
+    setCurrentQuestion(nextRound.question);
+    setOptions(nextRound.options);
     setSelectedAnswer(null);
     setIsCorrect(null);
-    setSentence(hiddenSentence);
+    setSentence(nextRound.sentence);
   }, [vocabulary]);
 
   useEffect(() => {
+    if (isFirstRenderRef.current) {
+      isFirstRenderRef.current = false;
+      return () => {
+        if (nextQuestionTimer.current) {
+          clearTimeout(nextQuestionTimer.current);
+        }
+      };
+    }
+
     const initTimer = setTimeout(() => {
       if (vocabulary.length > 0) {
         generateQuestion();

@@ -3,8 +3,16 @@ import { speak } from '../utils/speech';
 import { playSuccessChime } from '../utils/feedback';
 import CorrectAnswerCelebration from './CorrectAnswerCelebration';
 
+const pickRandomWord = (vocabulary = []) => {
+  if (!Array.isArray(vocabulary) || vocabulary.length === 0) {
+    return null;
+  }
+  const randomIndex = Math.floor(Math.random() * vocabulary.length);
+  return vocabulary[randomIndex] || null;
+};
+
 function SpellingTest({ vocabulary }) {
-  const [currentWord, setCurrentWord] = useState(null);
+  const [currentWord, setCurrentWord] = useState(() => pickRandomWord(vocabulary));
   const [userInput, setUserInput] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
@@ -13,15 +21,12 @@ function SpellingTest({ vocabulary }) {
   const [streak, setStreak] = useState(0);
   const [showHint, setShowHint] = useState(false);
   const [celebrationTrigger, setCelebrationTrigger] = useState(0);
+  const isFirstRenderRef = useRef(true);
   const inputRef = useRef(null);
 
   const generateWord = useCallback(() => {
-    if (vocabulary.length === 0) {
-      return;
-    }
-
-    const randomIndex = Math.floor(Math.random() * vocabulary.length);
-    setCurrentWord(vocabulary[randomIndex]);
+    const nextWord = pickRandomWord(vocabulary);
+    setCurrentWord(nextWord);
     setUserInput('');
     setIsSubmitted(false);
     setIsCorrect(false);
@@ -29,6 +34,11 @@ function SpellingTest({ vocabulary }) {
   }, [vocabulary]);
 
   useEffect(() => {
+    if (isFirstRenderRef.current) {
+      isFirstRenderRef.current = false;
+      return undefined;
+    }
+
     if (vocabulary.length > 0) {
       const initTimer = setTimeout(() => {
         generateWord();
