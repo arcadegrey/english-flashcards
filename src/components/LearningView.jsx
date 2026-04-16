@@ -19,6 +19,11 @@ const MODE_OPTIONS = [
   { id: 'fillblank', icon: '🧩', label: '填空' },
   { id: 'spelling', icon: '🔤', label: '拼写' },
 ];
+const MODE_SUBTITLE = {
+  quiz: '选择正确释义',
+  fillblank: '听例句并完成填空',
+  spelling: '听发音拼写单词',
+};
 const MENU_CLOSE_DURATION_MS = 220;
 
 function LearningView({
@@ -205,7 +210,7 @@ function LearningView({
     setHintOpenForWordId((prev) => (String(prev) === String(currentWordId) ? null : currentWordId));
   };
 
-  const progressSubText = mode === 'learn' ? `今日目标 ${totalCount}` : `当前模式 ${currentModeMeta.label}`;
+  const progressSubText = mode === 'learn' ? `今日目标 ${totalCount}` : MODE_SUBTITLE[mode] || currentModeMeta.label;
 
   return (
     <div className={`learn-refresh-page ${mode === 'learn' ? '' : 'learn-refresh-page--assessment'}`}>

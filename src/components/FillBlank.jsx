@@ -163,28 +163,10 @@ function FillBlank({ vocabulary, sourceLabel = '' }) {
   const accuracy = questionCount > 0 ? Math.round((score / questionCount) * 100) : 0;
 
   return (
-    <div className="space-y-5 md:space-y-6">
+    <div className="space-y-4 pb-[108px] md:space-y-5 md:pb-[124px]">
       <CorrectAnswerCelebration trigger={celebrationTrigger} />
 
-      <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
-        <article className="rounded-[16px] border border-[#e8e8ed] bg-white p-4 text-center shadow-[0_8px_24px_rgba(15,23,42,0.06)]">
-          <p className="text-xs font-medium text-[#6e6e73]">得分</p>
-          <p className="mt-1 text-3xl font-semibold text-[#1d1d1f]">{score}</p>
-          <p className="mt-1 text-xs text-[#6e6e73]">共 {questionCount} 题</p>
-        </article>
-        <article className="rounded-[16px] border border-[#e8e8ed] bg-white p-4 text-center shadow-[0_8px_24px_rgba(15,23,42,0.06)]">
-          <p className="text-xs font-medium text-[#6e6e73]">连击</p>
-          <p className="mt-1 text-3xl font-semibold text-[#1d1d1f]">{streak}</p>
-          <p className="mt-1 text-xs text-[#6e6e73]">连续答对题数</p>
-        </article>
-        <article className="rounded-[16px] border border-[#e8e8ed] bg-white p-4 text-center shadow-[0_8px_24px_rgba(15,23,42,0.06)]">
-          <p className="text-xs font-medium text-[#6e6e73]">正确率</p>
-          <p className="mt-1 text-3xl font-semibold text-[#1d1d1f]">{accuracy}%</p>
-          <p className="mt-1 text-xs text-[#6e6e73]">当前答题表现</p>
-        </article>
-      </div>
-
-      <section className="rounded-[20px] border border-[#e8e8ed] bg-white p-6 shadow-[0_10px_28px_rgba(15,23,42,0.06)] md:p-8">
+      <section className="learn-refresh-card learn-refresh-card-enter">
         <p className="text-center text-sm font-medium text-[#6e6e73]">听例句并完成填空</p>
 
         {sourceLabel && (
@@ -195,73 +177,88 @@ function FillBlank({ vocabulary, sourceLabel = '' }) {
           </div>
         )}
 
-        <blockquote className="mt-5 rounded-[16px] border border-[#e8e8ed] bg-[#fcfcfd] px-5 py-5 text-center text-2xl leading-[1.6] text-[#1d1d1f] md:text-3xl">
-          “{sentence}”
-        </blockquote>
+        <section className="learn-refresh-example-block mt-6" aria-label="填空例句">
+          <div className="learn-refresh-example-head">
+            <span className="learn-refresh-example-label">例句</span>
+            <button
+              type="button"
+              onClick={handleSpeakSentence}
+              className="learn-refresh-example-audio"
+              aria-label="播放例句"
+            >
+              播放例句
+            </button>
+          </div>
+          <p className="learn-refresh-example-en">“{sentence}”</p>
+          <p className="learn-refresh-example-cn">{currentQuestion.meaning}</p>
+        </section>
 
-        <p className="mt-3 text-center text-base text-[#6e6e73] md:text-lg">{currentQuestion.meaning}</p>
+        <div className="learn-refresh-quiz-options">
+          {options.map((option, index) => {
+            let stateClass = '';
 
-        <div className="mt-6 flex justify-center">
-          <button
-            type="button"
-            onClick={handleSpeakSentence}
-            className="inline-flex min-h-[46px] items-center gap-2 rounded-[10px] border border-[#0071e3] bg-[#0071e3] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#0066ce]"
-          >
-            <span>🔊</span>
-            <span>播放例句</span>
-          </button>
+            if (selectedAnswer) {
+              if (option.id === currentQuestion.id) {
+                stateClass = 'is-correct';
+              } else if (option.id === selectedAnswer.id) {
+                stateClass = 'is-wrong';
+              } else {
+                stateClass = 'is-muted';
+              }
+            }
+
+            return (
+              <button
+                key={option.id}
+                type="button"
+                onClick={() => handleAnswer(option)}
+                disabled={selectedAnswer !== null}
+                className={`learn-refresh-quiz-option ${stateClass}`}
+              >
+                <div className="flex items-start gap-3">
+                  <span className="learn-refresh-quiz-option-index">
+                    {String.fromCharCode(65 + index)}
+                  </span>
+                  <div className="min-w-0">
+                    <p className="learn-refresh-quiz-option-meaning break-all">{option.word}</p>
+                    <p className="learn-refresh-quiz-option-sub">{option.phonetic || ''}</p>
+                  </div>
+                </div>
+              </button>
+            );
+          })}
         </div>
+
+        {selectedAnswer && (
+          <div
+            className={`mt-4 rounded-[14px] border px-4 py-3 text-sm ${
+              isCorrect
+                ? 'border-[#b7ddc6] bg-[#f0fdf4] text-[#166534]'
+                : 'border-[#fecaca] bg-[#fef2f2] text-[#b91c1c]'
+            }`}
+          >
+            {isCorrect ? '回答正确。' : `回答错误，正确答案：${currentQuestion.word}`}
+            <p className="mt-1 text-xs opacity-80">{currentQuestion.example}</p>
+          </div>
+        )}
       </section>
 
-      <div className="grid grid-cols-1 gap-3">
-        {options.map((option, index) => {
-          let stateClass =
-            'border-[#e8e8ed] bg-white text-[#1d1d1f] hover:border-[#0071e3] hover:bg-[#eef5ff] hover:text-[#005bb6]';
-
-          if (selectedAnswer) {
-            if (option.id === currentQuestion.id) {
-              stateClass = 'border-[#0071e3] bg-[#eef5ff] text-[#005bb6]';
-            } else if (option.id === selectedAnswer.id) {
-              stateClass = 'border-[#ef4444] bg-[#fff1f2] text-[#b91c1c]';
-            } else {
-              stateClass = 'border-[#e8e8ed] bg-[#f7f7f8] text-[#9ca3af]';
-            }
-          }
-
-          return (
-            <button
-              key={option.id}
-              type="button"
-              onClick={() => handleAnswer(option)}
-              disabled={selectedAnswer !== null}
-              className={`rounded-[14px] border px-5 py-5 text-left transition duration-200 md:px-7 md:py-10 ${stateClass}`}
-            >
-              <div className="flex items-start gap-3">
-                <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#d7d9df] text-sm font-semibold text-[#6e6e73] md:h-10 md:w-10 md:text-base">
-                  {String.fromCharCode(65 + index)}
-                </span>
-                <div>
-                  <p className="break-all text-base leading-[1.5] md:text-2xl">{option.word}</p>
-                  <p className="mt-1 break-all text-sm text-[#6e6e73] md:text-lg">{option.phonetic || ''}</p>
-                </div>
-              </div>
-            </button>
-          );
-        })}
-      </div>
-
-      {selectedAnswer && (
-        <div
-          className={`rounded-[14px] border px-4 py-3 text-sm ${
-            isCorrect
-              ? 'border-[#b7ddc6] bg-[#f0fdf4] text-[#166534]'
-              : 'border-[#fecaca] bg-[#fef2f2] text-[#b91c1c]'
-          }`}
-        >
-          {isCorrect ? '回答正确。' : `回答错误，正确答案：${currentQuestion.word}`}
-          <p className="mt-1 text-xs opacity-80">{currentQuestion.example}</p>
+      <footer className="learn-refresh-assessment-dock">
+        <div className="learn-refresh-assessment-dock-inner">
+          <div className="learn-refresh-assessment-stat">
+            <span className="learn-refresh-assessment-stat-label">得分</span>
+            <span className="learn-refresh-assessment-stat-value">{score}</span>
+          </div>
+          <div className="learn-refresh-assessment-stat">
+            <span className="learn-refresh-assessment-stat-label">连击</span>
+            <span className="learn-refresh-assessment-stat-value">{streak}</span>
+          </div>
+          <div className="learn-refresh-assessment-stat">
+            <span className="learn-refresh-assessment-stat-label">正确率</span>
+            <span className="learn-refresh-assessment-stat-value">{accuracy}%</span>
+          </div>
         </div>
-      )}
+      </footer>
     </div>
   );
 }

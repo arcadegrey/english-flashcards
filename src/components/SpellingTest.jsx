@@ -93,43 +93,32 @@ function SpellingTest({ vocabulary }) {
   const accuracy = questionCount > 0 ? Math.round((score / questionCount) * 100) : 0;
 
   return (
-    <div className="space-y-5 md:space-y-6">
+    <div className="space-y-4 pb-[108px] md:space-y-5 md:pb-[124px]">
       <CorrectAnswerCelebration trigger={celebrationTrigger} />
 
-      <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
-        <article className="rounded-[16px] border border-[#e8e8ed] bg-white p-4 text-center shadow-[0_8px_24px_rgba(15,23,42,0.06)]">
-          <p className="text-xs font-medium text-[#6e6e73]">得分</p>
-          <p className="mt-1 text-3xl font-semibold text-[#1d1d1f]">{score}</p>
-          <p className="mt-1 text-xs text-[#6e6e73]">共 {questionCount} 词</p>
-        </article>
-        <article className="rounded-[16px] border border-[#e8e8ed] bg-white p-4 text-center shadow-[0_8px_24px_rgba(15,23,42,0.06)]">
-          <p className="text-xs font-medium text-[#6e6e73]">连击</p>
-          <p className="mt-1 text-3xl font-semibold text-[#1d1d1f]">{streak}</p>
-          <p className="mt-1 text-xs text-[#6e6e73]">连续答对题数</p>
-        </article>
-        <article className="rounded-[16px] border border-[#e8e8ed] bg-white p-4 text-center shadow-[0_8px_24px_rgba(15,23,42,0.06)]">
-          <p className="text-xs font-medium text-[#6e6e73]">正确率</p>
-          <p className="mt-1 text-3xl font-semibold text-[#1d1d1f]">{accuracy}%</p>
-          <p className="mt-1 text-xs text-[#6e6e73]">当前答题表现</p>
-        </article>
-      </div>
-
-      <section className="rounded-[20px] border border-[#e8e8ed] bg-white p-6 shadow-[0_10px_28px_rgba(15,23,42,0.06)] md:p-8">
+      <section className="learn-refresh-card learn-refresh-card-enter">
         <p className="text-center text-sm font-medium text-[#6e6e73]">听发音并拼写完整单词</p>
 
-        <div className="mt-5 flex justify-center">
-          <button
-            type="button"
-            onClick={handleSpeak}
-            className="inline-flex min-h-[46px] items-center gap-2 rounded-[10px] border border-[#0071e3] bg-[#0071e3] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#0066ce]"
-          >
-            <span>🔊</span>
-            <span>播放发音</span>
-          </button>
+        <div className="learn-refresh-word-block mt-6">
+          <div className="learn-refresh-phonetic-row">
+            <p className="learn-refresh-phonetic">点击播放后输入单词</p>
+            <button
+              type="button"
+              className="learn-refresh-inline-audio"
+              onClick={handleSpeak}
+              aria-label="播放发音"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 9v6h4l5 4V5L7 9H3z" />
+                <path d="M16.5 8.5a4.5 4.5 0 010 7" />
+                <path d="M19.5 6a8 8 0 010 12" />
+              </svg>
+            </button>
+          </div>
         </div>
 
         {!isSubmitted ? (
-          <form onSubmit={handleSubmit} className="mt-6 space-y-5">
+          <form onSubmit={handleSubmit} className="mt-7 space-y-5">
             <input
               ref={inputRef}
               type="text"
@@ -199,6 +188,23 @@ function SpellingTest({ vocabulary }) {
           </div>
         )}
       </section>
+
+      <footer className="learn-refresh-assessment-dock">
+        <div className="learn-refresh-assessment-dock-inner">
+          <div className="learn-refresh-assessment-stat">
+            <span className="learn-refresh-assessment-stat-label">得分</span>
+            <span className="learn-refresh-assessment-stat-value">{score}</span>
+          </div>
+          <div className="learn-refresh-assessment-stat">
+            <span className="learn-refresh-assessment-stat-label">连击</span>
+            <span className="learn-refresh-assessment-stat-value">{streak}</span>
+          </div>
+          <div className="learn-refresh-assessment-stat">
+            <span className="learn-refresh-assessment-stat-label">正确率</span>
+            <span className="learn-refresh-assessment-stat-value">{accuracy}%</span>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

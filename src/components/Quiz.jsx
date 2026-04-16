@@ -109,29 +109,26 @@ function Quiz({ vocabulary, optionVocabulary = [], sourceLabel = '题库测验',
   const accuracy = questionCount > 0 ? Math.round((score / questionCount) * 100) : 0;
 
   return (
-    <div className="space-y-5 md:space-y-6">
+    <div className="space-y-4 pb-[108px] md:space-y-5 md:pb-[124px]">
       <CorrectAnswerCelebration trigger={celebrationTrigger} />
 
-      <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
-        <article className="rounded-[16px] border border-[#e8e8ed] bg-white p-4 text-center shadow-[0_8px_24px_rgba(15,23,42,0.06)]">
-          <p className="text-xs font-medium text-[#6e6e73]">得分</p>
-          <p className="mt-1 text-3xl font-semibold text-[#1d1d1f]">{score}</p>
-          <p className="mt-1 text-xs text-[#6e6e73]">共 {questionCount} 题</p>
-        </article>
-        <article className="rounded-[16px] border border-[#e8e8ed] bg-white p-4 text-center shadow-[0_8px_24px_rgba(15,23,42,0.06)]">
-          <p className="text-xs font-medium text-[#6e6e73]">连击</p>
-          <p className="mt-1 text-3xl font-semibold text-[#1d1d1f]">{streak}</p>
-          <p className="mt-1 text-xs text-[#6e6e73]">连续答对题数</p>
-        </article>
-        <article className="rounded-[16px] border border-[#e8e8ed] bg-white p-4 text-center shadow-[0_8px_24px_rgba(15,23,42,0.06)]">
-          <p className="text-xs font-medium text-[#6e6e73]">正确率</p>
-          <p className="mt-1 text-3xl font-semibold text-[#1d1d1f]">{accuracy}%</p>
-          <p className="mt-1 text-xs text-[#6e6e73]">当前答题表现</p>
-        </article>
-      </div>
-
-      <section className="rounded-[20px] border border-[#e8e8ed] bg-white p-6 shadow-[0_10px_28px_rgba(15,23,42,0.06)] md:p-8">
+      <section className="learn-refresh-card learn-refresh-card-enter">
         <p className="text-center text-sm font-medium text-[#6e6e73]">请选择正确释义</p>
+
+        <div className="learn-refresh-quiz-stats" aria-label="测验统计">
+          <p className="learn-refresh-quiz-stat">
+            <span className="learn-refresh-quiz-stat-label">得分</span>
+            <span className="learn-refresh-quiz-stat-value">{score}</span>
+          </p>
+          <p className="learn-refresh-quiz-stat">
+            <span className="learn-refresh-quiz-stat-label">连击</span>
+            <span className="learn-refresh-quiz-stat-value">{streak}</span>
+          </p>
+          <p className="learn-refresh-quiz-stat">
+            <span className="learn-refresh-quiz-stat-label">正确率</span>
+            <span className="learn-refresh-quiz-stat-value">{accuracy}%</span>
+          </p>
+        </div>
 
         <div className="mt-3 flex justify-center">
           <span className="inline-flex rounded-full border border-[#e8e8ed] bg-[#f5f5f7] px-3 py-1 text-xs font-medium text-[#6e6e73]">
@@ -139,85 +136,88 @@ function Quiz({ vocabulary, optionVocabulary = [], sourceLabel = '题库测验',
           </span>
         </div>
 
-        <h2 className="mt-6 break-all text-center text-4xl font-semibold leading-[1.15] text-[#1d1d1f] md:text-6xl">
-          {currentQuestion.word}
-        </h2>
-        <p className="mt-3 break-all text-center font-mono text-lg text-[#6e6e73] md:text-xl">
-          {currentQuestion.phonetic || 'N/A'}
-        </p>
-
-        <div className="mt-6 flex justify-center">
-          <button
-            type="button"
-            onClick={() => speak(currentQuestion.word, { rate: 1 })}
-            className="inline-flex min-h-[46px] items-center gap-2 rounded-[10px] border border-[#0071e3] bg-[#0071e3] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#0066ce]"
-          >
-            <span>🔊</span>
-            <span>播放发音</span>
-          </button>
-        </div>
-      </section>
-
-      <div className="grid grid-cols-1 gap-3">
-        {options.map((option, index) => {
-          let stateClass =
-            'border-[#e8e8ed] bg-white text-[#1d1d1f] hover:border-[#0071e3] hover:bg-[#eef5ff] hover:text-[#005bb6]';
-
-          if (selectedAnswer) {
-            if (option.id === currentQuestion.id) {
-              stateClass = 'border-[#0071e3] bg-[#eef5ff] text-[#005bb6]';
-            } else if (option.id === selectedAnswer.id) {
-              stateClass = 'border-[#ef4444] bg-[#fff1f2] text-[#b91c1c]';
-            } else {
-              stateClass = 'border-[#e8e8ed] bg-[#f7f7f8] text-[#9ca3af]';
-            }
-          }
-
-          return (
+        <div className="learn-refresh-word-block mt-6">
+          <h2 className="learn-refresh-word text-[52px] md:text-[72px]">{currentQuestion.word}</h2>
+          <div className="learn-refresh-phonetic-row">
+            <p className="learn-refresh-phonetic">{currentQuestion.phonetic || 'N/A'}</p>
             <button
-              key={option.id}
               type="button"
-              onClick={() => handleAnswer(option)}
-              disabled={selectedAnswer !== null}
-              className={`rounded-[14px] border px-5 py-5 text-left transition duration-200 md:px-7 md:py-10 ${stateClass}`}
+              className="learn-refresh-inline-audio"
+              onClick={() => speak(currentQuestion.word, { rate: 1 })}
+              aria-label="播放发音"
             >
-              <div className="flex items-start gap-3">
-                <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#d7d9df] text-sm font-semibold text-[#6e6e73] md:h-10 md:w-10 md:text-base">
-                  {String.fromCharCode(65 + index)}
-                </span>
-                <p className="text-base leading-[1.6] md:text-2xl">{option.meaning}</p>
-              </div>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 9v6h4l5 4V5L7 9H3z" />
+                <path d="M16.5 8.5a4.5 4.5 0 010 7" />
+                <path d="M19.5 6a8 8 0 010 12" />
+              </svg>
             </button>
-          );
-        })}
-      </div>
-
-      {selectedAnswer && (
-        <div
-          className={`rounded-[14px] border px-4 py-3 text-sm ${
-            isCorrect
-              ? 'border-[#b7ddc6] bg-[#f0fdf4] text-[#166534]'
-              : 'border-[#fecaca] bg-[#fef2f2] text-[#b91c1c]'
-          }`}
-        >
-          {isCorrect ? '回答正确。' : `回答错误，正确答案：${currentQuestion.meaning}`}
+          </div>
         </div>
-      )}
 
-      <section className="rounded-[16px] border border-[#e8e8ed] bg-white p-4 shadow-[0_8px_24px_rgba(15,23,42,0.06)]">
-        <div className="mb-2 flex items-center justify-between text-sm text-[#6e6e73]">
-          <span>学习池掌握进度</span>
-          <span className="font-medium text-[#1d1d1f]">
-            {masteredCount} / {vocabulary.length}
-          </span>
+        <div className="learn-refresh-quiz-options">
+          {options.map((option, index) => {
+            let stateClass = '';
+
+            if (selectedAnswer) {
+              if (option.id === currentQuestion.id) {
+                stateClass = 'is-correct';
+              } else if (option.id === selectedAnswer.id) {
+                stateClass = 'is-wrong';
+              } else {
+                stateClass = 'is-muted';
+              }
+            }
+
+            return (
+              <button
+                key={option.id}
+                type="button"
+                onClick={() => handleAnswer(option)}
+                disabled={selectedAnswer !== null}
+                className={`learn-refresh-quiz-option ${stateClass}`}
+              >
+                <div className="flex items-start gap-3">
+                  <span className="learn-refresh-quiz-option-index">
+                    {String.fromCharCode(65 + index)}
+                  </span>
+                  <p className="learn-refresh-quiz-option-meaning">{option.meaning}</p>
+                </div>
+              </button>
+            );
+          })}
         </div>
-        <div className="h-2 overflow-hidden rounded-full bg-[#eceef3]">
+
+        {selectedAnswer && (
           <div
-            className="h-full rounded-full bg-[#0071e3] transition-all duration-300"
-            style={{ width: `${masteredPercent}%` }}
-          />
-        </div>
+            className={`mt-4 rounded-[14px] border px-4 py-3 text-sm ${
+              isCorrect
+                ? 'border-[#b7ddc6] bg-[#f0fdf4] text-[#166534]'
+                : 'border-[#fecaca] bg-[#fef2f2] text-[#b91c1c]'
+            }`}
+          >
+            {isCorrect ? '回答正确。' : `回答错误，正确答案：${currentQuestion.meaning}`}
+          </div>
+        )}
+
       </section>
+
+      <footer className="learn-refresh-quiz-progress-dock">
+        <div className="learn-refresh-quiz-progress-dock-inner">
+          <div className="learn-refresh-quiz-progress-row">
+            <span>学习池掌握进度</span>
+            <span className="font-medium text-[#1d1d1f]">
+              {masteredCount} / {vocabulary.length}
+            </span>
+          </div>
+          <div className="learn-refresh-quiz-progress-track">
+            <div
+              className="learn-refresh-quiz-progress-fill"
+              style={{ width: `${masteredPercent}%` }}
+            />
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
