@@ -2,15 +2,20 @@ import { useState, useEffect, useMemo, useRef } from 'react'
 import { ThemeProvider } from './context/ThemeContext'
 import { useTheme } from './context/theme-context'
 import vocabulary from './data/vocabulary'
+import readings from './data/readings'
 import categories from './data/categories'
+import StudyHub from './components/StudyHub'
 import HomeScreen from './components/HomeScreen'
 import LearningView from './components/LearningView'
 import Statistics from './components/Statistics'
 import Calendar from './components/Calendar'
 import WordCollectionView from './components/WordCollectionView'
 import ToeflSelectionView from './components/ToeflSelectionView'
+import ReadingListView from './components/ReadingListView'
+import ReadingSessionView from './components/ReadingSessionView'
 import AuthPanel from './components/AuthPanel'
 import { storage } from './utils/storage'
+import { buildWordLookup, isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from './utils/readingText'
 import {
   fetchCurrentUser,
   isCloudAuthConfigured,
@@ -176,11 +181,12 @@ const sortNumericKeyWithUnknownLast = (a, b, unknownKey) => {
 function AppContent() {
   const { isDark } = useTheme()
 
-  const [view, setView] = useState('home')
+  const [view, setView] = useState('studyHub')
   const [mode, setMode] = useState('learn')
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [selectedToeflLevel, setSelectedToeflLevel] = useState('')
   const [selectedToeflList, setSelectedToeflList] = useState('')
+  const [selectedReadingId, setSelectedReadingId] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [learnedWords, setLearnedWords] = useState([])
   const [masteredWords, setMasteredWords] = useState([])
@@ -208,6 +214,46 @@ function AppContent() {
   const homeNoticeTimerRef = useRef(null)
 
   const allVocabulary = useMemo(() => [...vocabulary, ...customWords], [customWords])
+  const vocabularyLookup = useMemo(() => buildWordLookup(allVocabulary), [allVocabulary])
+  const masteredWordIdSet = useMemo(
+    () => new Set(masteredWords.map((item) => String(item))),
+    [masteredWords]
+  )
+  const readingLibrary = useMemo(
+    () =>
+      readings.map((item) => {
+        const tokens = tokenizeReadingText(item.content)
+        let englishWordCount = 0
+        const trackedWords = new Set()
+        const unmasteredWords = new Set()
+
+        tokens.forEach((token) => {
+          if (!isEnglishWordToken(token)) return
+          englishWordCount += 1
+          const matchedWord = resolveVocabularyWord(token, vocabularyLookup)
+          if (!matchedWord?.id) return
+          const idKey = String(matchedWord.id)
+          trackedWords.add(idKey)
+          if (!masteredWordIdSet.has(idKey)) {
+            unmasteredWords.add(idKey)
+          }
+        })
+
+        const estimatedMinutes = Math.max(1, Math.round(englishWordCount / 180))
+
+        return {
+          ...item,
+          estimatedMinutes,
+          trackedWordCount: trackedWords.size,
+          unmasteredCount: unmasteredWords.size,
+        }
+      }),
+    [masteredWordIdSet, vocabularyLookup]
+  )
+  const selectedReading = useMemo(
+    () => readingLibrary.find((item) => String(item.id) === String(selectedReadingId)) || null,
+    [readingLibrary, selectedReadingId]
+  )
 
   const wordCounts = useMemo(() => {
     const counts = { all: allVocabulary.length }
@@ -711,6 +757,7 @@ function AppContent() {
       selectedCategory,
       selectedToeflLevel,
       selectedToeflList,
+      selectedReadingId,
     }
 
     window.history.replaceState(initialState, '', window.location.href)
@@ -721,21 +768,23 @@ function AppContent() {
       restoringFromHistoryRef.current = true
 
       if (!state || state.__appNavigation !== NAVIGATION_STATE_KEY) {
-        setView('home')
+        setView('studyHub')
         setMode('learn')
         setSelectedCategory('all')
         setSelectedToeflLevel('')
         setSelectedToeflList('')
+        setSelectedReadingId(null)
         return
       }
 
-      setView(typeof state.view === 'string' ? state.view : 'home')
+      setView(typeof state.view === 'string' ? state.view : 'studyHub')
       setMode(typeof state.mode === 'string' ? state.mode : 'learn')
       setSelectedCategory(typeof state.selectedCategory === 'string' ? state.selectedCategory : 'all')
       setSelectedToeflLevel(
         typeof state.selectedToeflLevel === 'string' ? state.selectedToeflLevel : ''
       )
       setSelectedToeflList(typeof state.selectedToeflList === 'string' ? state.selectedToeflList : '')
+      setSelectedReadingId(state.selectedReadingId ?? null)
     }
 
     window.addEventListener('popstate', handlePopState)
@@ -754,6 +803,7 @@ function AppContent() {
       selectedCategory,
       selectedToeflLevel,
       selectedToeflList,
+      selectedReadingId,
     }
 
     if (restoringFromHistoryRef.current) {
@@ -774,13 +824,26 @@ function AppContent() {
       currentState.mode === nextState.mode &&
       currentState.selectedCategory === nextState.selectedCategory &&
       currentState.selectedToeflLevel === nextState.selectedToeflLevel &&
-      currentState.selectedToeflList === nextState.selectedToeflList
+      currentState.selectedToeflList === nextState.selectedToeflList &&
+      currentState.selectedReadingId === nextState.selectedReadingId
 
     if (isSameState) return
     window.history.pushState(nextState, '', window.location.href)
-  }, [view, mode, selectedCategory, selectedToeflLevel, selectedToeflList])
+  }, [view, mode, selectedCategory, selectedToeflLevel, selectedToeflList, selectedReadingId])
 
   const currentWord = shuffledWords[currentIndex]
+
+  const setWordAsLearned = (wordId) => {
+    if (wordId == null) return
+    setMasteredWords((prev) => prev.filter((id) => String(id) !== String(wordId)))
+    setLearnedWords((prev) => (prev.some((id) => String(id) === String(wordId)) ? prev : [...prev, wordId]))
+  }
+
+  const setWordAsMastered = (wordId) => {
+    if (wordId == null) return
+    setLearnedWords((prev) => prev.filter((id) => String(id) !== String(wordId)))
+    setMasteredWords((prev) => (prev.some((id) => String(id) === String(wordId)) ? prev : [...prev, wordId]))
+  }
 
   const handleCategorySelect = (categoryId, options = {}) => {
     pendingStartWordIdRef.current = options.focusWordId ?? null
@@ -843,35 +906,58 @@ function AppContent() {
     setView('home')
   }
 
+  const handleOpenWordStudy = () => {
+    setView('home')
+  }
+
+  const handleOpenReadingList = () => {
+    setSelectedReadingId(null)
+    setView('readingList')
+  }
+
+  const handleOpenReadingSession = (readingId) => {
+    setSelectedReadingId(readingId)
+    setView('readingSession')
+  }
+
+  const handleBackToStudyHub = () => {
+    setView('studyHub')
+  }
+
+  const handleBackToReadingList = () => {
+    setView('readingList')
+  }
+
+  const handleOpenModeFromReading = (nextMode) => {
+    setMode(nextMode)
+    setView('learn')
+  }
+
   const handleOpenModeFromCollection = (nextMode) => {
     setMode(nextMode)
     setView('learn')
   }
 
   const markAsLearned = () => {
-    if (currentWord && !learnedWords.includes(currentWord.id)) {
-      setLearnedWords([...learnedWords, currentWord.id])
+    if (currentWord?.id != null) {
+      setWordAsLearned(currentWord.id)
     }
     nextCard()
   }
 
   const markAsMastered = () => {
-    if (currentWord && !masteredWords.includes(currentWord.id)) {
-      setMasteredWords([...masteredWords, currentWord.id])
+    if (currentWord?.id != null) {
+      setWordAsMastered(currentWord.id)
     }
     nextCard()
   }
 
   const markLearnedWordAsMastered = (wordId) => {
-    if (wordId == null) return
-    setLearnedWords((prev) => prev.filter((id) => String(id) !== String(wordId)))
-    setMasteredWords((prev) => (prev.some((id) => String(id) === String(wordId)) ? prev : [...prev, wordId]))
+    setWordAsMastered(wordId)
   }
 
   const markMasteredWordAsLearned = (wordId) => {
-    if (wordId == null) return
-    setMasteredWords((prev) => prev.filter((id) => String(id) !== String(wordId)))
-    setLearnedWords((prev) => (prev.some((id) => String(id) === String(wordId)) ? prev : [...prev, wordId]))
+    setWordAsLearned(wordId)
   }
 
   const nextCard = () => {
@@ -927,11 +1013,17 @@ function AppContent() {
   )
 
   const appBackground = useMemo(() => {
-    if (view === 'home' || view === 'toeflLevels' || view === 'toeflLists') {
+    if (view === 'studyHub' || view === 'home' || view === 'toeflLevels' || view === 'toeflLists') {
       return 'bg-[#f8fafc]'
     }
 
-    if (view === 'learn' || view === 'learnedWords' || view === 'masteredWords') {
+    if (
+      view === 'learn' ||
+      view === 'learnedWords' ||
+      view === 'masteredWords' ||
+      view === 'readingList' ||
+      view === 'readingSession'
+    ) {
       return 'bg-[#fbfbfd]'
     }
 
@@ -942,6 +1034,15 @@ function AppContent() {
 
   const renderView = () => {
     switch (view) {
+      case 'studyHub':
+        return (
+          <StudyHub
+            onOpenWordStudy={handleOpenWordStudy}
+            onOpenReading={handleOpenReadingList}
+            wordCount={allVocabulary.length}
+            readingCount={readingLibrary.length}
+          />
+        )
       case 'home':
         return (
           <HomeScreen
@@ -968,6 +1069,29 @@ function AppContent() {
             onAuthLogout={handleAuthLogout}
             onAuthSyncNow={handleManualSync}
             showAuthPanel={false}
+          />
+        )
+      case 'readingList':
+        return (
+          <ReadingListView
+            readings={readingLibrary}
+            mode={mode}
+            onBack={handleBackToStudyHub}
+            onOpenReading={handleOpenReadingSession}
+            onOpenMode={handleOpenModeFromReading}
+          />
+        )
+      case 'readingSession':
+        return (
+          <ReadingSessionView
+            article={selectedReading}
+            mode={mode}
+            onBack={handleBackToReadingList}
+            onOpenMode={handleOpenModeFromReading}
+            masteredWords={masteredWords}
+            wordLookup={vocabularyLookup}
+            onMarkAsLearned={setWordAsLearned}
+            onMarkAsMastered={setWordAsMastered}
           />
         )
       case 'toeflLevels':
@@ -1092,7 +1216,14 @@ function AppContent() {
     }
   }
 
-  if (view === 'learn' || view === 'learnedWords' || view === 'masteredWords') {
+  if (
+    view === 'studyHub' ||
+    view === 'learn' ||
+    view === 'learnedWords' ||
+    view === 'masteredWords' ||
+    view === 'readingList' ||
+    view === 'readingSession'
+  ) {
     return <div className={`min-h-screen ${appBackground}`}>{renderView()}</div>
   }
 
@@ -1102,17 +1233,24 @@ function AppContent() {
         {view === 'home' && (
           <div className="mb-8 w-full" style={{ maxWidth: '960px', marginInline: 'auto' }}>
             <div className="rounded-[14px] border border-[#e5e7eb] bg-white p-4 shadow-[0_1px_3px_rgba(15,23,42,0.08)]">
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-3 gap-3">
+                <button
+                  onClick={handleBackToStudyHub}
+                  className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] border border-[#d1d5db] bg-white px-3 py-2 text-sm font-semibold text-[#111827] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white"
+                >
+                  <span>←</span>
+                  <span>返回</span>
+                </button>
                 <button
                   onClick={() => setShowAuthModal(true)}
-                  className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] border border-[#d1d5db] bg-white px-4 py-2 text-base font-semibold text-[#111827] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white"
+                  className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] border border-[#d1d5db] bg-white px-3 py-2 text-sm font-semibold text-[#111827] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white"
                 >
                   <span>👤</span>
-                  <span>登录/注册账号</span>
+                  <span>登录账号</span>
                 </button>
                 <button
                   onClick={handleHomeSync}
-                  className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] border border-[#d1d5db] bg-white px-4 py-2 text-base font-semibold text-[#111827] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white"
+                  className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] border border-[#d1d5db] bg-white px-3 py-2 text-sm font-semibold text-[#111827] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white"
                 >
                   <span>🔄</span>
                   <span>同步账号</span>

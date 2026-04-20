@@ -9,7 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "words:import": "node scripts/import-global-vocabulary.mjs"
+    "words:import": "node scripts/import-global-vocabulary.mjs",
+    "readings:import": "node scripts/import-global-reading.mjs"
   },
   "dependencies": {
     "react": "^19.2.4",
