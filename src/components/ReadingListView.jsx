@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import VoiceSettings from './VoiceSettings';
 import {
   DEFAULT_SPEECH_RATE,
@@ -16,17 +16,95 @@ const MODE_OPTIONS = [
 ];
 
 const MENU_CLOSE_DURATION_MS = 220;
+const CATEGORY_META = {
+  all: { label: '全部文章', icon: '📚' },
+  'study-skills': { label: '学习方法', icon: '🧠' },
+  'self-improvement': { label: '自我提升', icon: '🚀' },
+  'health-learning': { label: '健康学习', icon: '💤' },
+  culture: { label: '文化历史', icon: '🏛️' },
+  environment: { label: '环境城市', icon: '🌿' },
+  thinking: { label: '思维创新', icon: '💡' },
+  lifestyle: { label: '生活方式', icon: '🧭' },
+  economics: { label: '经济决策', icon: '📈' },
+  education: { label: '教育科技', icon: '🎓' },
+  mindset: { label: '心态成长', icon: '🧩' },
+  productivity: { label: '效率专注', icon: '⏱️' },
+};
+
+const formatCategoryLabel = (category) => {
+  const key = String(category || '').trim().toLowerCase();
+  if (!key) return '未分类';
+  if (CATEGORY_META[key]?.label) return CATEGORY_META[key].label;
+  return key
+    .split(/[-_]+/)
+    .filter(Boolean)
+    .map((segment) => segment.charAt(0).toUpperCase() + segment.slice(1))
+    .join(' ');
+};
+
+const getCategoryIcon = (category) => {
+  const key = String(category || '').trim().toLowerCase();
+  if (CATEGORY_META[key]?.icon) return CATEGORY_META[key].icon;
+  return '📝';
+};
 
 function ReadingListView({ readings = [], mode = 'learn', onBack, onOpenReading, onOpenMode }) {
   const [showVoiceSettings, setShowVoiceSettings] = useState(false);
   const [isMenuMounted, setIsMenuMounted] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState('');
   const [toast, setToast] = useState('');
   const [speechRate, setSpeechRateState] = useState(() => getSpeechRate());
   const menuRef = useRef(null);
   const menuCloseTimerRef = useRef(null);
   const totalMenuSlots = MODE_OPTIONS.length + 3;
   const isSlowSpeech = speechRate < DEFAULT_SPEECH_RATE - 0.01;
+  const categoryOptions = useMemo(() => {
+    const map = new Map();
+    readings.forEach((article) => {
+      const categoryKey = String(article?.category || '').trim().toLowerCase() || 'uncategorized';
+      map.set(categoryKey, (map.get(categoryKey) || 0) + 1);
+    });
+
+    const items = Array.from(map.entries())
+      .map(([key, count]) => ({
+        id: key,
+        label: formatCategoryLabel(key),
+        icon: getCategoryIcon(key),
+        count,
+      }))
+      .sort((a, b) => a.label.localeCompare(b.label, 'zh-CN'));
+
+    return [
+      {
+        id: 'all',
+        label: CATEGORY_META.all.label,
+        icon: CATEGORY_META.all.icon,
+        count: readings.length,
+      },
+      ...items,
+    ];
+  }, [readings]);
+
+  const filteredReadings = useMemo(() => {
+    if (!selectedCategory || selectedCategory === 'all') return readings;
+    return readings.filter(
+      (article) => String(article?.category || '').trim().toLowerCase() === selectedCategory
+    );
+  }, [readings, selectedCategory]);
+
+  const selectedCategoryLabel = useMemo(
+    () => categoryOptions.find((item) => item.id === selectedCategory)?.label || CATEGORY_META.all.label,
+    [categoryOptions, selectedCategory]
+  );
+
+  const isCategoryStage = !selectedCategory;
+
+  useEffect(() => {
+    if (selectedCategory && !categoryOptions.some((item) => item.id === selectedCategory)) {
+      setSelectedCategory('');
+    }
+  }, [categoryOptions, selectedCategory]);
 
   useEffect(() => {
     if (!toast) return undefined;
@@ -145,8 +223,17 @@ function ReadingListView({ readings = [], mode = 'learn', onBack, onOpenReading,
           </button>
 
           <div className="learn-refresh-progress">
-            <p className="learn-refresh-progress-main">{readings.length} 篇</p>
-            <p className="learn-refresh-progress-sub">阅读文章库</p>
+            {isCategoryStage ? (
+              <>
+                <p className="learn-refresh-progress-main">{Math.max(categoryOptions.length - 1, 0)} 类</p>
+                <p className="learn-refresh-progress-sub">阅读分类</p>
+              </>
+            ) : (
+              <>
+                <p className="learn-refresh-progress-main">{filteredReadings.length} 篇</p>
+                <p className="learn-refresh-progress-sub">{selectedCategoryLabel}</p>
+              </>
+            )}
           </div>
 
           <div className="learn-refresh-top-actions">
@@ -241,32 +328,76 @@ function ReadingListView({ readings = [], mode = 'learn', onBack, onOpenReading,
       </header>
 
       <main className="learn-refresh-main">
-        <section className="learn-refresh-card learn-refresh-card-enter reading-list-card">
-          <header className="reading-list-header">
-            <h1 className="reading-list-title">阅读训练</h1>
-            <p className="reading-list-subtitle">点击文章开始阅读，难词会根据你的掌握状态自动高亮。</p>
-          </header>
+        {isCategoryStage ? (
+          <section key="category-stage" className="learn-refresh-card learn-refresh-card-enter reading-list-card">
+            <header className="reading-list-header">
+              <h1 className="reading-list-title">阅读训练</h1>
+              <p className="reading-list-subtitle">先选择分类，再开始阅读。难词会根据你的掌握状态自动高亮。</p>
+            </header>
 
-          <div className="reading-list-grid">
-            {readings.map((article) => (
-              <button
-                key={article.id}
-                type="button"
-                className="reading-list-item"
-                onClick={() => onOpenReading?.(article.id)}
-              >
-                <p className="reading-list-item-title">{article.title}</p>
-                <div className="reading-list-item-meta">
-                  <span>{article.level || 'B1'}</span>
-                  <span>{article.estimatedMinutes || 1} 分钟</span>
-                  <span>{article.unmasteredCount || 0} 个难词</span>
-                </div>
+            <section className="reading-category-section" aria-label="阅读分类">
+              <div className="reading-category-head">
+                <h2 className="reading-category-title">选择阅读分类</h2>
+                <p className="reading-category-sub">共 {Math.max(categoryOptions.length - 1, 0)} 个分类</p>
+              </div>
+              <div className="reading-category-grid">
+                {categoryOptions.map((item) => (
+                  <button
+                    key={item.id}
+                    type="button"
+                    className="reading-category-card"
+                    onClick={() => setSelectedCategory(item.id)}
+                  >
+                    <span className="reading-category-icon" aria-hidden="true">
+                      {item.icon}
+                    </span>
+                    <span className="reading-category-name">{item.label}</span>
+                    <span className="reading-category-count">{item.count} 篇</span>
+                  </button>
+                ))}
+              </div>
+            </section>
+
+            {readings.length === 0 && <p className="learn-refresh-empty">暂无阅读文章，请先导入 CSV。</p>}
+          </section>
+        ) : (
+          <section key="list-stage" className="learn-refresh-card learn-refresh-card-enter reading-list-card">
+            <header className="reading-list-header">
+              <h1 className="reading-list-title">{selectedCategoryLabel}</h1>
+              <p className="reading-list-subtitle">点击文章开始阅读。</p>
+            </header>
+
+            <div className="reading-list-back-row">
+              <button type="button" className="reading-list-back-btn" onClick={() => setSelectedCategory('')}>
+                ← 返回分类
               </button>
-            ))}
-          </div>
+            </div>
 
-          {readings.length === 0 && <p className="learn-refresh-empty">暂无阅读文章，请先导入 CSV。</p>}
-        </section>
+            <div className="reading-list-block-head">
+              <p className="reading-list-block-sub">{filteredReadings.length} 篇文章</p>
+            </div>
+
+            <div className="reading-list-grid">
+              {filteredReadings.map((article) => (
+                <button
+                  key={article.id}
+                  type="button"
+                  className="reading-list-item"
+                  onClick={() => onOpenReading?.(article.id)}
+                >
+                  <p className="reading-list-item-title">{article.title}</p>
+                  <div className="reading-list-item-meta">
+                    <span>{article.level || 'B1'}</span>
+                    <span>{article.estimatedMinutes || 1} 分钟</span>
+                    <span>{article.unmasteredCount || 0} 个难词</span>
+                  </div>
+                </button>
+              ))}
+            </div>
+
+            {filteredReadings.length === 0 && <p className="learn-refresh-empty">当前分类暂无文章。</p>}
+          </section>
+        )}
       </main>
 
       {toast && (
