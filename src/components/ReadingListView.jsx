@@ -48,7 +48,14 @@ const getCategoryIcon = (category) => {
   return '📝';
 };
 
-function ReadingListView({ readings = [], mode = 'learn', onBack, onOpenReading, onOpenMode }) {
+function ReadingListView({
+  readings = [],
+  mode = 'learn',
+  onBack,
+  onOpenReading,
+  onOpenMode,
+  onSyncAccount,
+}) {
   const [showVoiceSettings, setShowVoiceSettings] = useState(false);
   const [isMenuMounted, setIsMenuMounted] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -86,25 +93,24 @@ function ReadingListView({ readings = [], mode = 'learn', onBack, onOpenReading,
     ];
   }, [readings]);
 
-  const filteredReadings = useMemo(() => {
-    if (!selectedCategory || selectedCategory === 'all') return readings;
-    return readings.filter(
-      (article) => String(article?.category || '').trim().toLowerCase() === selectedCategory
-    );
-  }, [readings, selectedCategory]);
-
-  const selectedCategoryLabel = useMemo(
-    () => categoryOptions.find((item) => item.id === selectedCategory)?.label || CATEGORY_META.all.label,
+  const activeCategory = useMemo(
+    () => (selectedCategory && categoryOptions.some((item) => item.id === selectedCategory) ? selectedCategory : ''),
     [categoryOptions, selectedCategory]
   );
 
-  const isCategoryStage = !selectedCategory;
+  const filteredReadings = useMemo(() => {
+    if (!activeCategory || activeCategory === 'all') return readings;
+    return readings.filter(
+      (article) => String(article?.category || '').trim().toLowerCase() === activeCategory
+    );
+  }, [readings, activeCategory]);
 
-  useEffect(() => {
-    if (selectedCategory && !categoryOptions.some((item) => item.id === selectedCategory)) {
-      setSelectedCategory('');
-    }
-  }, [categoryOptions, selectedCategory]);
+  const selectedCategoryLabel = useMemo(
+    () => categoryOptions.find((item) => item.id === activeCategory)?.label || CATEGORY_META.all.label,
+    [categoryOptions, activeCategory]
+  );
+
+  const isCategoryStage = !activeCategory;
 
   useEffect(() => {
     if (!toast) return undefined;
@@ -195,6 +201,21 @@ function ReadingListView({ readings = [], mode = 'learn', onBack, onOpenReading,
     speak('Reading mode. Choose one article to start.', { rate: 1 });
   };
 
+  const handleSyncAccount = async () => {
+    if (typeof onSyncAccount !== 'function') {
+      setToast('当前页面暂不可同步');
+      return;
+    }
+
+    setToast('正在同步账号...');
+    try {
+      const result = await onSyncAccount();
+      setToast(result?.message || '同步请求已完成');
+    } catch (error) {
+      setToast(error?.message || '同步失败，请稍后重试');
+    }
+  };
+
   const handleToggleSlowSpeech = () => {
     const nextRate = isSlowSpeech ? DEFAULT_SPEECH_RATE : SLOW_SPEECH_RATE;
     setSpeechRate(nextRate);
@@ -237,6 +258,19 @@ function ReadingListView({ readings = [], mode = 'learn', onBack, onOpenReading,
           </div>
 
           <div className="learn-refresh-top-actions">
+            <button
+              type="button"
+              className="learn-refresh-icon-btn"
+              onClick={handleSyncAccount}
+              aria-label="同步账号"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 6v5h-5" />
+                <path d="M4 18v-5h5" />
+                <path d="M6.2 9A7 7 0 0118.5 7.5L20 11" />
+                <path d="M17.8 15A7 7 0 015.5 16.5L4 13" />
+              </svg>
+            </button>
             <button
               type="button"
               className="learn-refresh-icon-btn"

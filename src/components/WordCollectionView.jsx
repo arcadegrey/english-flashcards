@@ -27,6 +27,9 @@ function WordCollectionView({
   onMarkAsMastered,
   onMarkAsUnknown,
   masteredActionLabel = '认识了',
+  unknownActionLabel = '不认识',
+  progressLabel,
+  onSyncAccount,
 }) {
   const [query, setQuery] = useState('');
   const [showSearch, setShowSearch] = useState(false);
@@ -175,6 +178,21 @@ function WordCollectionView({
     speak(currentWord.word, { rate: 1 });
   };
 
+  const handleSyncAccount = async () => {
+    if (typeof onSyncAccount !== 'function') {
+      setToast('当前页面暂不可同步');
+      return;
+    }
+
+    setToast('正在同步账号...');
+    try {
+      const result = await onSyncAccount();
+      setToast(result?.message || '同步请求已完成');
+    } catch (error) {
+      setToast(error?.message || '同步失败，请稍后重试');
+    }
+  };
+
   const handleToggleSlowSpeech = () => {
     const nextRate = isSlowSpeech ? DEFAULT_SPEECH_RATE : SLOW_SPEECH_RATE;
     setSpeechRate(nextRate);
@@ -190,6 +208,7 @@ function WordCollectionView({
       onMarkAsUnknown(currentWord.id);
       setToast('已移回已学习');
       setHintOpenForWordId(null);
+      nextCard();
       return;
     }
 
@@ -205,6 +224,7 @@ function WordCollectionView({
       onMarkAsMastered(currentWord.id);
       setToast('已标记为“认识”');
       setHintOpenForWordId(null);
+      nextCard();
       return;
     }
 
@@ -233,10 +253,23 @@ function WordCollectionView({
             <p className="learn-refresh-progress-main">
               {progressCurrent} / {filteredWords.length}
             </p>
-            <p className="learn-refresh-progress-sub">今日目标 {filteredWords.length}</p>
+            <p className="learn-refresh-progress-sub">{progressLabel || `今日目标 ${filteredWords.length}`}</p>
           </div>
 
           <div className="learn-refresh-top-actions">
+            <button
+              type="button"
+              className="learn-refresh-icon-btn"
+              onClick={handleSyncAccount}
+              aria-label="同步账号"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 6v5h-5" />
+                <path d="M4 18v-5h5" />
+                <path d="M6.2 9A7 7 0 0118.5 7.5L20 11" />
+                <path d="M17.8 15A7 7 0 015.5 16.5L4 13" />
+              </svg>
+            </button>
             <button
               type="button"
               className="learn-refresh-icon-btn"
@@ -388,7 +421,7 @@ function WordCollectionView({
               className="learn-refresh-action learn-refresh-action-secondary"
               onClick={handleMarkUnknown}
             >
-              不认识
+              {unknownActionLabel}
             </button>
             <button
               type="button"

@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import categories from '../data/categories';
 import AuthPanel from './AuthPanel';
 
@@ -17,6 +17,20 @@ const collectionCategories = [
     color: 'from-emerald-500 to-teal-600',
     type: 'collection',
   },
+  {
+    id: 'todayReview',
+    name: '今日复习',
+    icon: '🔁',
+    color: 'from-blue-500 to-indigo-600',
+    type: 'collection',
+  },
+  {
+    id: 'wrongWords',
+    name: '错题本',
+    icon: '🧯',
+    color: 'from-rose-500 to-orange-500',
+    type: 'collection',
+  },
 ];
 
 const matchesWordQuery = (word, query) =>
@@ -30,9 +44,16 @@ function HomeScreen({
   vocabularyData = [],
   learnedWordIds = [],
   masteredWordIds = [],
+  todayReviewWordIds = [],
+  wrongWordIds = [],
   onOpenLearnedWords,
   onOpenMasteredWords,
+  onOpenTodayReview,
+  onOpenWrongWords,
   onOpenToeflLevels,
+  onBack,
+  onSyncAccount,
+  onSpeakIntro,
   authEnabled = false,
   authLoading = false,
   authUser = null,
@@ -55,8 +76,18 @@ function HomeScreen({
     return () => clearTimeout(timer);
   }, [searchQuery]);
 
-  const learnedIdSet = useMemo(() => new Set(learnedWordIds), [learnedWordIds]);
-  const masteredIdSet = useMemo(() => new Set(masteredWordIds), [masteredWordIds]);
+  const learnedIdSet = useMemo(() => new Set(learnedWordIds.map(String)), [learnedWordIds]);
+  const masteredIdSet = useMemo(() => new Set(masteredWordIds.map(String)), [masteredWordIds]);
+  const todayReviewIdSet = useMemo(() => new Set(todayReviewWordIds.map(String)), [todayReviewWordIds]);
+  const wrongIdSet = useMemo(() => new Set(wrongWordIds.map(String)), [wrongWordIds]);
+
+  const getCollectionSet = useCallback((categoryId) => {
+    if (categoryId === 'learnedWords') return learnedIdSet;
+    if (categoryId === 'masteredWords') return masteredIdSet;
+    if (categoryId === 'todayReview') return todayReviewIdSet;
+    if (categoryId === 'wrongWords') return wrongIdSet;
+    return new Set();
+  }, [learnedIdSet, masteredIdSet, todayReviewIdSet, wrongIdSet]);
 
   const categoriesWithCollections = useMemo(() => {
     const ieltsIndex = categories.findIndex((category) => category.id === 'ielts');
@@ -86,21 +117,25 @@ function HomeScreen({
       }
 
       if (category.type === 'collection') {
-        const targetSet = category.id === 'learnedWords' ? learnedIdSet : masteredIdSet;
-        return vocabularyData.some((word) => targetSet.has(word.id) && matchesWordQuery(word, debouncedQuery));
+        const targetSet = getCollectionSet(category.id);
+        return vocabularyData.some(
+          (word) => targetSet.has(String(word.id)) && matchesWordQuery(word, debouncedQuery)
+        );
       }
 
       return vocabularyData.some(
         (word) => word.category === category.id && matchesWordQuery(word, debouncedQuery)
       );
     });
-  }, [categoriesWithCollections, debouncedQuery, learnedIdSet, masteredIdSet, vocabularyData]);
+  }, [categoriesWithCollections, debouncedQuery, getCollectionSet, vocabularyData]);
 
   const filteredWordCounts = useMemo(() => {
     const counts = {
       ...wordCounts,
       learnedWords: learnedWordIds.length,
       masteredWords: masteredWordIds.length,
+      todayReview: todayReviewWordIds.length,
+      wrongWords: wrongWordIds.length,
     };
 
     if (!debouncedQuery) {
@@ -114,9 +149,9 @@ function HomeScreen({
       }
 
       if (category.type === 'collection') {
-        const targetSet = category.id === 'learnedWords' ? learnedIdSet : masteredIdSet;
+        const targetSet = getCollectionSet(category.id);
         counts[category.id] = vocabularyData.filter(
-          (word) => targetSet.has(word.id) && matchesWordQuery(word, debouncedQuery)
+          (word) => targetSet.has(String(word.id)) && matchesWordQuery(word, debouncedQuery)
         ).length;
         return;
       }
@@ -130,10 +165,11 @@ function HomeScreen({
   }, [
     debouncedQuery,
     filteredCategories,
-    learnedIdSet,
+    getCollectionSet,
     learnedWordIds.length,
-    masteredIdSet,
     masteredWordIds.length,
+    todayReviewWordIds.length,
+    wrongWordIds.length,
     vocabularyData,
     wordCounts,
   ]);
@@ -183,6 +219,16 @@ function HomeScreen({
       return;
     }
 
+    if (category.id === 'todayReview') {
+      onOpenTodayReview?.();
+      return;
+    }
+
+    if (category.id === 'wrongWords') {
+      onOpenWrongWords?.();
+      return;
+    }
+
     if (category.id === 'toefl') {
       onOpenToeflLevels?.();
       return;
@@ -192,141 +238,159 @@ function HomeScreen({
     onCategorySelect(category.id, { focusWordId });
   };
 
-  const cardClass =
-    'rounded-[14px] border border-[#e5e7eb] bg-white shadow-[0_1px_3px_rgba(15,23,42,0.08)]';
-
-  const iconStyleById = {
-    learnedWords: 'bg-sky-100 text-sky-700',
-    masteredWords: 'bg-emerald-100 text-emerald-700',
-    all: 'bg-indigo-100 text-indigo-700',
-  };
-
   return (
-    <div className="min-h-screen bg-[#f8fafc] font-sans text-base leading-[1.6] text-[#111827]">
-      <div className="w-full px-4 py-8 space-y-14" style={{ maxWidth: '960px', marginInline: 'auto' }}>
-        <header className="space-y-4">
-          <div className={`${cardClass} p-5 md:p-6`}>
-            <div className="text-center">
-              <div>
-                <h1 className="text-[32px] font-bold leading-tight text-[#111827]">英语单词卡片</h1>
-                <p className="mt-2 text-base leading-[1.6] text-[#6b7280]">
-                  四六级核心词汇 · 结构化学习路径 · 更轻松的词汇复习体验
-                </p>
-              </div>
-            </div>
+    <div className="learn-refresh-page word-home-page">
+      <header className="learn-refresh-topbar">
+        <div className="learn-refresh-topbar-inner">
+          <button type="button" className="learn-refresh-back" onClick={onBack} aria-label="返回学习方式选择">
+            <span aria-hidden="true">←</span>
+            <span>返回</span>
+          </button>
+
+          <div className="learn-refresh-progress">
+            <p className="learn-refresh-progress-main">{categoriesWithCollections.length} 类</p>
+            <p className="learn-refresh-progress-sub">单词分类</p>
           </div>
-        </header>
 
-        {showAuthPanel && (
-          <AuthPanel
-            enabled={authEnabled}
-            loading={authLoading}
-            user={authUser}
-            syncStatusText={syncStatusText}
-            syncError={syncError}
-            onLogin={onAuthLogin}
-            onRegister={onAuthRegister}
-            onLogout={onAuthLogout}
-            onSyncNow={onAuthSyncNow}
-          />
-        )}
+          <div className="learn-refresh-top-actions">
+            <button
+              type="button"
+              className="learn-refresh-icon-btn"
+              onClick={onSyncAccount}
+              aria-label="同步账号"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 6v5h-5" />
+                <path d="M4 18v-5h5" />
+                <path d="M6.2 9A7 7 0 0118.5 7.5L20 11" />
+                <path d="M17.8 15A7 7 0 015.5 16.5L4 13" />
+              </svg>
+            </button>
+            <button
+              type="button"
+              className="learn-refresh-icon-btn"
+              onClick={onSpeakIntro}
+              aria-label="播放单词分类提示"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 9v6h4l5 4V5L7 9H3z" />
+                <path d="M16.5 8.5a4.5 4.5 0 010 7" />
+                <path d="M19.5 6a8 8 0 010 12" />
+              </svg>
+            </button>
+            <span className="learn-refresh-topbar-spacer" aria-hidden="true" />
+          </div>
+        </div>
+      </header>
 
-        <section className="rounded-[14px] border border-[#e5e7eb] bg-[#f5f5f7] p-5 shadow-[0_1px_3px_rgba(15,23,42,0.08)] md:p-6">
-          <div className="relative">
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="搜索分类或单词..."
-              className="w-full min-h-[44px] rounded-[10px] border border-[#e5e7eb] bg-white px-4 py-3 pr-11 text-center text-[#111827] placeholder:text-[#9ca3af] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/20 focus:border-[#4f46e5]"
+      <main className="learn-refresh-main word-home-main">
+        <section className="learn-refresh-card learn-refresh-card-enter reading-list-card">
+          <header className="reading-list-header">
+            <h1 className="reading-list-title">英语单词卡片</h1>
+            <p className="reading-list-subtitle">
+              四六级核心词汇 · 结构化学习路径 · 更轻松的词汇复习体验
+            </p>
+          </header>
+
+          {showAuthPanel && (
+            <AuthPanel
+              enabled={authEnabled}
+              loading={authLoading}
+              user={authUser}
+              syncStatusText={syncStatusText}
+              syncError={syncError}
+              onLogin={onAuthLogin}
+              onRegister={onAuthRegister}
+              onLogout={onAuthLogout}
+              onSyncNow={onAuthSyncNow}
             />
-            {searchQuery && (
-              <button
-                onClick={() => setSearchQuery('')}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-[#9ca3af] transition hover:text-[#6b7280]"
-              >
-                ✕
-              </button>
-            )}
-          </div>
-
-          {debouncedQuery && (
-            <p className="mt-3 text-center text-sm text-[#6b7280]">
-              找到 {filteredCategories.length} 个分类，共 <span className="font-semibold text-[#111827]">{totalMatchedWords}</span>{' '}
-              个匹配单词
-            </p>
           )}
-        </section>
 
-        <section className={`${cardClass} p-5 md:p-6`}>
-          <div className="mb-5 space-y-1 text-center">
-            <h2 className="text-2xl font-semibold text-[#111827]">
-              {debouncedQuery ? '搜索结果' : '选择学习分类'}
-            </h2>
-            <p className="text-sm text-[#6b7280]">
-              {debouncedQuery
-                ? `共 ${filteredCategories.length} 个匹配分类`
-                : `共 ${categoriesWithCollections.length} 个分类`}
-            </p>
-          </div>
-
-          {filteredCategories.length === 0 ? (
-            <div className={`p-6 text-center ${cardClass}`}>
-              <p className="text-base text-[#6b7280]">未找到匹配的分类或单词</p>
-              <p className="mt-1 text-sm text-[#9ca3af]">尝试其他搜索词</p>
+          <section className="word-home-search">
+            <div className="relative">
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="搜索分类或单词..."
+                className="w-full min-h-[44px] rounded-[10px] border border-[#e5e7eb] bg-white px-4 py-3 pr-11 text-center text-[#111827] placeholder:text-[#9ca3af] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/20 focus:border-[#4f46e5]"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-[#9ca3af] transition hover:text-[#6b7280]"
+                >
+                  ✕
+                </button>
+              )}
             </div>
-          ) : (
-            <div className="grid grid-cols-2 gap-2 md:gap-3">
-              {filteredCategories.map((category) => {
-                const count = filteredWordCounts[category.id] || 0;
-                const iconStyle = iconStyleById[category.id] || 'bg-slate-100 text-slate-600';
 
-                return (
-                  <button
-                    key={category.id}
-                    onClick={() => handleCategoryClick(category)}
-                    className="group min-h-[44px] rounded-[14px] border border-[#e5e7eb] bg-white p-3 text-center shadow-[0_1px_3px_rgba(15,23,42,0.08)] transition duration-200 hover:-translate-y-[2px] hover:border-[#0071e3] hover:bg-[#0071e3] md:p-4"
-                  >
-                    <div className="flex flex-col items-center justify-center gap-2">
-                      <span
-                        className={`inline-flex h-8 w-8 items-center justify-center rounded-[10px] text-base transition-colors duration-200 ${iconStyle} group-hover:bg-white/20 group-hover:text-white sm:h-9 sm:w-9 sm:text-lg`}
-                        aria-hidden="true"
-                      >
+            {debouncedQuery && (
+              <p className="mt-3 text-center text-sm text-[#6b7280]">
+                找到 {filteredCategories.length} 个分类，共 <span className="font-semibold text-[#111827]">{totalMatchedWords}</span>{' '}
+                个匹配单词
+              </p>
+            )}
+          </section>
+
+          <section className="reading-category-section" aria-label="单词分类">
+            <div className="reading-category-head">
+              <h2 className="reading-category-title">
+                {debouncedQuery ? '搜索结果' : '选择学习分类'}
+              </h2>
+              <p className="reading-category-sub">
+                {debouncedQuery
+                  ? `共 ${filteredCategories.length} 个匹配分类`
+                  : `共 ${categoriesWithCollections.length} 个分类`}
+              </p>
+            </div>
+
+            {filteredCategories.length === 0 ? (
+              <div className="word-home-empty">
+                <p className="text-base text-[#6b7280]">未找到匹配的分类或单词</p>
+                <p className="mt-1 text-sm text-[#9ca3af]">尝试其他搜索词</p>
+              </div>
+            ) : (
+              <div className="reading-category-grid">
+                {filteredCategories.map((category) => {
+                  const count = filteredWordCounts[category.id] || 0;
+
+                  return (
+                    <button
+                      key={category.id}
+                      onClick={() => handleCategoryClick(category)}
+                      className="reading-category-card"
+                    >
+                      <span className="reading-category-icon" aria-hidden="true">
                         {category.icon}
                       </span>
-                      <div className="min-w-0 text-center">
-                        <p className="text-sm font-semibold leading-tight text-[#111827] transition-colors duration-200 group-hover:text-white sm:text-base">
-                          {category.name}
-                        </p>
-                        <p className="text-xs text-[#6b7280] transition-colors duration-200 group-hover:text-white/90 sm:text-sm">
-                          {count} 词
-                        </p>
-                      </div>
-                    </div>
-                  </button>
-                );
-              })}
-            </div>
+                      <span className="reading-category-name">{category.name}</span>
+                      <span className="reading-category-count">{count} 词</span>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+          </section>
+
+          {!debouncedQuery && (
+            <section className="word-home-stats">
+              <article className="word-home-stat-card">
+                <p className="text-2xl font-semibold text-[#111827]">{wordCounts.all || 0}</p>
+                <p className="text-sm text-[#6b7280]">总词汇量</p>
+              </article>
+              <article className="word-home-stat-card">
+                <p className="text-2xl font-semibold text-[#111827]">{categoriesWithCollections.length}</p>
+                <p className="text-sm text-[#6b7280]">学习分类</p>
+              </article>
+              <article className="word-home-stat-card">
+                <p className="text-2xl font-semibold text-[#111827]">持续更新</p>
+                <p className="text-sm text-[#6b7280]">更多词库可导入</p>
+              </article>
+            </section>
           )}
         </section>
-
-        {!debouncedQuery && (
-          <section className="grid grid-cols-2 gap-3 md:grid-cols-3">
-            <article className={`${cardClass} p-4 text-center`}>
-              <p className="text-2xl font-semibold text-[#111827]">{wordCounts.all || 0}</p>
-              <p className="text-sm text-[#6b7280]">总词汇量</p>
-            </article>
-            <article className={`${cardClass} p-4 text-center`}>
-              <p className="text-2xl font-semibold text-[#111827]">{categoriesWithCollections.length}</p>
-              <p className="text-sm text-[#6b7280]">学习分类</p>
-            </article>
-            <article className={`${cardClass} col-span-2 p-4 text-center md:col-span-1`}>
-              <p className="text-2xl font-semibold text-[#111827]">持续更新</p>
-              <p className="text-sm text-[#6b7280]">更多词库可导入</p>
-            </article>
-          </section>
-        )}
-      </div>
+      </main>
     </div>
   );
 }

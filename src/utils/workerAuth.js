@@ -5,6 +5,9 @@ const EMPTY_PROGRESS = {
   learnedWords: [],
   masteredWords: [],
   customWords: [],
+  wordProgress: {},
+  wrongWords: [],
+  studyHistory: [],
 };
 
 const normalizeIds = (value) => {
@@ -26,10 +29,20 @@ const normalizeCustomWords = (value) => {
   return list.filter((item) => item && typeof item === 'object' && String(item.word || '').trim());
 };
 
+const normalizeRecord = (value) => (value && typeof value === 'object' && !Array.isArray(value) ? value : {});
+
+const normalizeStudyHistory = (value) => {
+  const list = Array.isArray(value) ? value : [];
+  return list.filter((item) => item && typeof item === 'object' && String(item.date || '').trim());
+};
+
 const normalizeProgress = (value) => ({
   learnedWords: normalizeIds(value?.learnedWords),
   masteredWords: normalizeIds(value?.masteredWords),
   customWords: normalizeCustomWords(value?.customWords),
+  wordProgress: normalizeRecord(value?.wordProgress),
+  wrongWords: normalizeIds(value?.wrongWords),
+  studyHistory: normalizeStudyHistory(value?.studyHistory),
 });
 
 const getErrorMessage = (payload, status) => {

@@ -37,6 +37,9 @@ CREATE TABLE IF NOT EXISTS user_progress (
   learned_words TEXT NOT NULL,
   mastered_words TEXT NOT NULL,
   custom_words TEXT NOT NULL,
+  word_progress TEXT NOT NULL DEFAULT '{}',
+  wrong_words TEXT NOT NULL DEFAULT '[]',
+  study_history TEXT NOT NULL DEFAULT '[]',
   updated_at TEXT NOT NULL,
   FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );

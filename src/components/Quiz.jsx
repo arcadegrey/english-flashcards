@@ -32,7 +32,14 @@ const createQuizRound = (vocabulary = [], optionVocabulary = []) => {
   };
 };
 
-function Quiz({ vocabulary, optionVocabulary = [], sourceLabel = '题库测验', masteredWords, onAddMastered }) {
+function Quiz({
+  vocabulary,
+  optionVocabulary = [],
+  sourceLabel = '题库测验',
+  masteredWords,
+  onAddMastered,
+  onWrongAnswer,
+}) {
   const initialRound = createQuizRound(vocabulary, optionVocabulary);
   const [currentQuestion, setCurrentQuestion] = useState(() => initialRound.question);
   const [options, setOptions] = useState(() => initialRound.options);
@@ -100,6 +107,7 @@ function Quiz({ vocabulary, optionVocabulary = [], sourceLabel = '题库测验',
       onAddMastered?.(currentQuestion.id);
     } else {
       setStreak(0);
+      onWrongAnswer?.(currentQuestion.id);
     }
 
     if (nextQuestionTimer.current) {

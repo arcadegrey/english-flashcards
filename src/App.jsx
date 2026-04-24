@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, useRef } from 'react'
+import { useState, useEffect, useMemo, useRef, useCallback } from 'react'
 import { ThemeProvider } from './context/ThemeContext'
 import { useTheme } from './context/theme-context'
 import vocabulary from './data/vocabulary'
@@ -16,6 +16,8 @@ import ReadingSessionView from './components/ReadingSessionView'
 import AuthPanel from './components/AuthPanel'
 import { storage } from './utils/storage'
 import { buildWordLookup, isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from './utils/readingText'
+import { calculateNextReview, getWordsForReview, initializeWordProgress } from './utils/spacedRepetition'
+import { speak } from './utils/speech'
 import {
   fetchCurrentUser,
   isCloudAuthConfigured,
@@ -78,10 +80,39 @@ const mergeCustomWordList = (baseList, extraList) => {
   return Array.from(map.values())
 }
 
+const normalizeRecord = (value) => (value && typeof value === 'object' && !Array.isArray(value) ? value : {})
+
+const normalizeStudyHistory = (value) => {
+  const safeList = Array.isArray(value) ? value : []
+  return safeList.filter((item) => item && typeof item === 'object' && String(item.date || '').trim())
+}
+
+const mergeStudyHistory = (baseList, extraList) => {
+  const map = new Map()
+  ;[...normalizeStudyHistory(baseList), ...normalizeStudyHistory(extraList)].forEach((item) => {
+    const date = String(item.date || '').trim()
+    if (!date) return
+    const current = map.get(date) || { date, wordsLearned: 0, wordsMastered: 0, timeSpent: 0 }
+    map.set(date, {
+      date,
+      wordsLearned: Math.max(Number(current.wordsLearned || 0), Number(item.wordsLearned || 0)),
+      wordsMastered: Math.max(Number(current.wordsMastered || 0), Number(item.wordsMastered || 0)),
+      timeSpent: Math.max(Number(current.timeSpent || 0), Number(item.timeSpent || 0)),
+    })
+  })
+
+  return Array.from(map.values())
+    .sort((a, b) => String(a.date).localeCompare(String(b.date)))
+    .slice(-90)
+}
+
 const normalizeProgressState = (progress) => {
   const masteredWords = dedupeIdList(progress?.masteredWords || [])
   const masteredSet = new Set(masteredWords.map((item) => String(item)))
   const learnedWords = dedupeIdList(progress?.learnedWords || []).filter(
+    (item) => !masteredSet.has(String(item))
+  )
+  const wrongWords = dedupeIdList(progress?.wrongWords || []).filter(
     (item) => !masteredSet.has(String(item))
   )
 
@@ -89,6 +120,9 @@ const normalizeProgressState = (progress) => {
     learnedWords,
     masteredWords,
     customWords: mergeCustomWordList([], progress?.customWords || []),
+    wordProgress: normalizeRecord(progress?.wordProgress),
+    wrongWords,
+    studyHistory: normalizeStudyHistory(progress?.studyHistory),
   }
 }
 
@@ -97,6 +131,12 @@ const mergeProgress = (localProgress, cloudProgress) =>
     learnedWords: [...(cloudProgress.learnedWords || []), ...(localProgress.learnedWords || [])],
     masteredWords: [...(cloudProgress.masteredWords || []), ...(localProgress.masteredWords || [])],
     customWords: mergeCustomWordList(cloudProgress.customWords || [], localProgress.customWords || []),
+    wordProgress: {
+      ...(cloudProgress.wordProgress || {}),
+      ...(localProgress.wordProgress || {}),
+    },
+    wrongWords: [...(cloudProgress.wrongWords || []), ...(localProgress.wrongWords || [])],
+    studyHistory: mergeStudyHistory(cloudProgress.studyHistory || [], localProgress.studyHistory || []),
   })
 
 const areProgressStatesEqual = (left, right) => {
@@ -105,7 +145,10 @@ const areProgressStatesEqual = (left, right) => {
   return (
     JSON.stringify(l.learnedWords) === JSON.stringify(r.learnedWords) &&
     JSON.stringify(l.masteredWords) === JSON.stringify(r.masteredWords) &&
-    JSON.stringify(l.customWords) === JSON.stringify(r.customWords)
+    JSON.stringify(l.customWords) === JSON.stringify(r.customWords) &&
+    JSON.stringify(l.wordProgress) === JSON.stringify(r.wordProgress) &&
+    JSON.stringify(l.wrongWords) === JSON.stringify(r.wrongWords) &&
+    JSON.stringify(l.studyHistory) === JSON.stringify(r.studyHistory)
   )
 }
 
@@ -190,6 +233,9 @@ function AppContent() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [learnedWords, setLearnedWords] = useState([])
   const [masteredWords, setMasteredWords] = useState([])
+  const [wrongWords, setWrongWords] = useState([])
+  const [wordProgress, setWordProgress] = useState({})
+  const [studyHistory, setStudyHistory] = useState([])
   const [customWords, setCustomWords] = useState([])
   const [shuffledWords, setShuffledWords] = useState([])
   const historyReadyRef = useRef(false)
@@ -373,10 +419,16 @@ function AppContent() {
     const savedLearned = storage.getLearnedWords()
     const savedMastered = storage.getMasteredWords()
     const savedCustomWords = storage.getCustomWords()
+    const savedWrongWords = storage.getWrongWords()
+    const savedWordProgress = storage.getWordProgress()
+    const savedStudyHistory = storage.getStudyHistory()
 
     setLearnedWords(savedLearned)
     setMasteredWords(savedMastered)
     setCustomWords(Array.isArray(savedCustomWords) ? savedCustomWords : [])
+    setWrongWords(Array.isArray(savedWrongWords) ? savedWrongWords : [])
+    setWordProgress(savedWordProgress && typeof savedWordProgress === 'object' ? savedWordProgress : {})
+    setStudyHistory(Array.isArray(savedStudyHistory) ? savedStudyHistory : [])
     setLocalDataLoaded(true)
   }, [])
 
@@ -393,6 +445,18 @@ function AppContent() {
   }, [customWords])
 
   useEffect(() => {
+    storage.setWrongWords(wrongWords)
+  }, [wrongWords])
+
+  useEffect(() => {
+    storage.setWordProgress(wordProgress)
+  }, [wordProgress])
+
+  useEffect(() => {
+    storage.setStudyHistory(studyHistory)
+  }, [studyHistory])
+
+  useEffect(() => {
     return () => {
       if (cloudSyncTimerRef.current) {
         clearTimeout(cloudSyncTimerRef.current)
@@ -403,7 +467,7 @@ function AppContent() {
     }
   }, [])
 
-  const applyMergedProgress = (mergedProgress, { skipNextPush = false } = {}) => {
+  const applyMergedProgress = useCallback((mergedProgress, { skipNextPush = false } = {}) => {
     const normalized = normalizeProgressState(mergedProgress)
 
     if (skipNextPush) {
@@ -413,13 +477,19 @@ function AppContent() {
     setLearnedWords(normalized.learnedWords)
     setMasteredWords(normalized.masteredWords)
     setCustomWords(normalized.customWords)
+    setWordProgress(normalized.wordProgress)
+    setWrongWords(normalized.wrongWords)
+    setStudyHistory(normalized.studyHistory)
 
     storage.setLearnedWords(normalized.learnedWords)
     storage.setMasteredWords(normalized.masteredWords)
     storage.setCustomWords(normalized.customWords)
-  }
+    storage.setWordProgress(normalized.wordProgress)
+    storage.setWrongWords(normalized.wrongWords)
+    storage.setStudyHistory(normalized.studyHistory)
+  }, [])
 
-  const pushProgressToCloud = async (session, user, progress, options = {}) => {
+  const pushProgressToCloud = useCallback(async (session, user, progress, options = {}) => {
     if (!cloudEnabled || !session?.access_token || !user?.id) return ''
 
     setSyncState('syncing')
@@ -444,6 +514,9 @@ function AppContent() {
           learnedWords,
           masteredWords,
           customWords,
+          wordProgress,
+          wrongWords,
+          studyHistory,
         },
         syncResult.progress
       )
@@ -464,9 +537,9 @@ function AppContent() {
     setLastSyncedAt(syncedAtText)
     setSyncError('')
     return syncedAtText
-  }
+  }, [applyMergedProgress, cloudEnabled, customWords, learnedWords, masteredWords, studyHistory, wordProgress, wrongWords])
 
-  const hydrateFromCloud = async ({ session, user }) => {
+  const hydrateFromCloud = useCallback(async ({ session, user }) => {
     if (!cloudEnabled || !session?.access_token || !user?.id) return
 
     const { progress: cloudProgress, updatedAt } = await loadCloudProgress({
@@ -480,6 +553,9 @@ function AppContent() {
         learnedWords,
         masteredWords,
         customWords,
+        wordProgress,
+        wrongWords,
+        studyHistory,
       },
       cloudProgress
     )
@@ -487,9 +563,19 @@ function AppContent() {
     applyMergedProgress(merged, { skipNextPush: true })
     cloudHydratedRef.current = true
     await pushProgressToCloud(session, user, merged, { baseUpdatedAt: updatedAt })
-  }
+  }, [
+    applyMergedProgress,
+    cloudEnabled,
+    customWords,
+    learnedWords,
+    masteredWords,
+    pushProgressToCloud,
+    studyHistory,
+    wordProgress,
+    wrongWords,
+  ])
 
-  const ensureFreshSession = async (session) => {
+  const ensureFreshSession = useCallback(async (session) => {
     if (!session?.access_token) return null
 
     const now = Math.floor(Date.now() / 1000)
@@ -505,7 +591,7 @@ function AppContent() {
 
     const refreshed = await refreshSession(session.refresh_token)
     return refreshed.session
-  }
+  }, [])
 
   useEffect(() => {
     if (!localDataLoaded || authBootstrappedRef.current) {
@@ -557,7 +643,7 @@ function AppContent() {
     }
 
     bootstrap()
-  }, [cloudEnabled, customWords, learnedWords, localDataLoaded, masteredWords])
+  }, [cloudEnabled, ensureFreshSession, hydrateFromCloud, localDataLoaded])
 
   useEffect(() => {
     if (!cloudEnabled || authLoading || !cloudHydratedRef.current) {
@@ -582,6 +668,9 @@ function AppContent() {
         learnedWords,
         masteredWords,
         customWords,
+        wordProgress,
+        wrongWords,
+        studyHistory,
       }).catch((error) => {
         setSyncState('error')
         setSyncError(error?.message || '自动同步失败')
@@ -593,7 +682,19 @@ function AppContent() {
         clearTimeout(cloudSyncTimerRef.current)
       }
     }
-  }, [authLoading, authSession, authUser, cloudEnabled, customWords, learnedWords, masteredWords])
+  }, [
+    authLoading,
+    authSession,
+    authUser,
+    cloudEnabled,
+    customWords,
+    learnedWords,
+    masteredWords,
+    wordProgress,
+    wrongWords,
+    studyHistory,
+    pushProgressToCloud,
+  ])
 
   const handleAuthLogin = async ({ email, password, verificationCode }) => {
     if (!cloudEnabled) {
@@ -676,6 +777,9 @@ function AppContent() {
       learnedWords,
       masteredWords,
       customWords,
+      wordProgress,
+      wrongWords,
+      studyHistory,
     })
     return { message: syncedAtText ? `同步完成（${syncedAtText}）` : '同步完成。' }
   }
@@ -694,25 +798,28 @@ function AppContent() {
   const handleHomeSync = async () => {
     if (!cloudEnabled) {
       showNotice('未配置云端账号服务，暂时无法同步账号。', 'error')
-      return
+      return { ok: false, message: '未配置云端账号服务，暂时无法同步账号。' }
     }
 
     if (authLoading) {
       showNotice('账号初始化中，请稍后再试。', 'info')
-      return
+      return { ok: false, message: '账号初始化中，请稍后再试。' }
     }
 
     if (!authUser?.id) {
       setShowAuthModal(true)
       showNotice('请先登录账号，再执行同步。', 'error')
-      return
+      return { ok: false, message: '请先登录账号，再执行同步。' }
     }
 
     try {
       const result = await handleManualSync()
       showNotice(result?.message || '同步完成。', 'success')
+      return { ok: true, message: result?.message || '同步完成。' }
     } catch (error) {
-      showNotice(error?.message || '同步失败，请稍后重试。', 'error')
+      const message = error?.message || '同步失败，请稍后重试。'
+      showNotice(message, 'error')
+      return { ok: false, message }
     }
   }
 
@@ -752,12 +859,12 @@ function AppContent() {
 
     const initialState = {
       __appNavigation: NAVIGATION_STATE_KEY,
-      view,
-      mode,
-      selectedCategory,
-      selectedToeflLevel,
-      selectedToeflList,
-      selectedReadingId,
+      view: 'studyHub',
+      mode: 'learn',
+      selectedCategory: 'all',
+      selectedToeflLevel: '',
+      selectedToeflList: '',
+      selectedReadingId: null,
     }
 
     window.history.replaceState(initialState, '', window.location.href)
@@ -833,16 +940,76 @@ function AppContent() {
 
   const currentWord = shuffledWords[currentIndex]
 
+  const recordStudyEvent = (wordsLearnedDelta = 0, wordsMasteredDelta = 0, timeSpentDelta = 0) => {
+    const today = new Date().toISOString().split('T')[0]
+    setStudyHistory((prev) => {
+      const safeList = normalizeStudyHistory(prev)
+      const index = safeList.findIndex((item) => item.date === today)
+      const nextList = [...safeList]
+      if (index >= 0) {
+        const item = nextList[index]
+        nextList[index] = {
+          ...item,
+          wordsLearned: Number(item.wordsLearned || 0) + wordsLearnedDelta,
+          wordsMastered: Number(item.wordsMastered || 0) + wordsMasteredDelta,
+          timeSpent: Number(item.timeSpent || 0) + timeSpentDelta,
+        }
+      } else {
+        nextList.push({
+          date: today,
+          wordsLearned: wordsLearnedDelta,
+          wordsMastered: wordsMasteredDelta,
+          timeSpent: timeSpentDelta,
+        })
+      }
+      return nextList.slice(-90)
+    })
+  }
+
+  const updateReviewProgress = (wordId, rating) => {
+    if (wordId == null) return
+    setWordProgress((prev) => {
+      const previousProgress = prev?.[wordId] || initializeWordProgress()
+      const nextProgress = calculateNextReview(previousProgress, rating)
+      return {
+        ...prev,
+        [wordId]: {
+          ...nextProgress,
+          nextReview:
+            nextProgress.nextReview instanceof Date
+              ? nextProgress.nextReview.toISOString()
+              : String(nextProgress.nextReview || new Date().toISOString()),
+          lastReviewed: new Date().toISOString(),
+        },
+      }
+    })
+  }
+
+  const addWrongWord = (wordId) => {
+    if (wordId == null) return
+    setWrongWords((prev) => (prev.some((id) => String(id) === String(wordId)) ? prev : [...prev, wordId]))
+  }
+
+  const removeWrongWord = (wordId) => {
+    if (wordId == null) return
+    setWrongWords((prev) => prev.filter((id) => String(id) !== String(wordId)))
+  }
+
   const setWordAsLearned = (wordId) => {
     if (wordId == null) return
     setMasteredWords((prev) => prev.filter((id) => String(id) !== String(wordId)))
     setLearnedWords((prev) => (prev.some((id) => String(id) === String(wordId)) ? prev : [...prev, wordId]))
+    updateReviewProgress(wordId, 2)
+    recordStudyEvent(1, 0, 1)
   }
 
   const setWordAsMastered = (wordId) => {
     if (wordId == null) return
     setLearnedWords((prev) => prev.filter((id) => String(id) !== String(wordId)))
     setMasteredWords((prev) => (prev.some((id) => String(id) === String(wordId)) ? prev : [...prev, wordId]))
+    removeWrongWord(wordId)
+    updateReviewProgress(wordId, 4)
+    recordStudyEvent(0, 1, 1)
   }
 
   const handleCategorySelect = (categoryId, options = {}) => {
@@ -913,6 +1080,22 @@ function AppContent() {
   const handleOpenReadingList = () => {
     setSelectedReadingId(null)
     setView('readingList')
+  }
+
+  const handleOpenTodayReview = () => {
+    setView('todayReview')
+  }
+
+  const handleOpenWrongWords = () => {
+    setView('wrongWords')
+  }
+
+  const handleOpenStatistics = () => {
+    setView('statistics')
+  }
+
+  const handleOpenCalendar = () => {
+    setView('calendar')
   }
 
   const handleOpenReadingSession = (readingId) => {
@@ -998,7 +1181,10 @@ function AppContent() {
 
   const vocabularyMap = useMemo(() => {
     const map = new Map()
-    allVocabulary.forEach((word) => map.set(word.id, word))
+    allVocabulary.forEach((word) => {
+      map.set(word.id, word)
+      map.set(String(word.id), word)
+    })
     return map
   }, [allVocabulary])
 
@@ -1012,6 +1198,83 @@ function AppContent() {
     [masteredWords, vocabularyMap]
   )
 
+  const reviewBaseWordList = useMemo(() => {
+    const ids = dedupeIdList([...learnedWords, ...masteredWords])
+    return ids.map((id) => vocabularyMap.get(id)).filter(Boolean)
+  }, [learnedWords, masteredWords, vocabularyMap])
+
+  const todayReviewWordList = useMemo(() => {
+    const dueWords = getWordsForReview(reviewBaseWordList, wordProgress)
+    const uninitializedWords = reviewBaseWordList.filter((word) => !wordProgress?.[word.id])
+    const seen = new Set()
+    return [...dueWords, ...uninitializedWords].filter((word) => {
+      const key = String(word.id)
+      if (seen.has(key)) return false
+      seen.add(key)
+      return true
+    })
+  }, [reviewBaseWordList, wordProgress])
+
+  const wrongWordList = useMemo(
+    () => wrongWords.map((id) => vocabularyMap.get(id)).filter(Boolean),
+    [wrongWords, vocabularyMap]
+  )
+
+  const renderAuthModal = () => {
+    if (!showAuthModal) return null
+
+    return (
+      <div className="fixed inset-0 z-[80] flex items-center justify-center p-4">
+        <button
+          type="button"
+          aria-label="关闭登录弹窗"
+          className="absolute inset-0 bg-black/30"
+          onClick={() => setShowAuthModal(false)}
+        />
+        <div className="relative w-full max-w-[680px] rounded-[16px] border border-[#e5e7eb] bg-white p-4 shadow-[0_20px_45px_rgba(15,23,42,0.2)] md:p-6">
+          <div className="mb-4 flex items-center justify-between">
+            <h3 className="text-xl font-semibold text-[#111827]">登录信息</h3>
+            <button
+              type="button"
+              onClick={() => setShowAuthModal(false)}
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#d1d5db] text-[#6b7280] transition hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white"
+            >
+              ✕
+            </button>
+          </div>
+
+          <div className="mb-4 grid grid-cols-2 gap-3">
+            <div className="rounded-[12px] border border-[#e5e7eb] bg-[#f8fafc] p-3 text-center">
+              <p className="text-2xl font-semibold text-[#111827]">{learnedWords.length}</p>
+              <p className="text-sm text-[#6b7280]">已学习单词</p>
+            </div>
+            <div className="rounded-[12px] border border-[#0071e3]/30 bg-[#0071e3] p-3 text-center">
+              <p className="text-2xl font-semibold text-white">{masteredWords.length}</p>
+              <p className="text-sm text-white/90">已掌握单词</p>
+            </div>
+          </div>
+
+          <AuthPanel
+            enabled={cloudEnabled}
+            loading={authLoading}
+            user={authUser}
+            syncStatusText={getSyncStatusText({
+              authLoading,
+              hasUser: Boolean(authUser?.id),
+              syncState,
+              lastSyncedAt,
+            })}
+            syncError={syncError || authError}
+            onLogin={handleModalLogin}
+            onRegister={handleModalRegister}
+            onLogout={handleModalLogout}
+            onSyncNow={handleModalSyncNow}
+          />
+        </div>
+      </div>
+    )
+  }
+
   const appBackground = useMemo(() => {
     if (view === 'studyHub' || view === 'home' || view === 'toeflLevels' || view === 'toeflLists') {
       return 'bg-[#f8fafc]'
@@ -1021,8 +1284,12 @@ function AppContent() {
       view === 'learn' ||
       view === 'learnedWords' ||
       view === 'masteredWords' ||
+      view === 'todayReview' ||
+      view === 'wrongWords' ||
       view === 'readingList' ||
-      view === 'readingSession'
+      view === 'readingSession' ||
+      view === 'statistics' ||
+      view === 'calendar'
     ) {
       return 'bg-[#fbfbfd]'
     }
@@ -1039,8 +1306,24 @@ function AppContent() {
           <StudyHub
             onOpenWordStudy={handleOpenWordStudy}
             onOpenReading={handleOpenReadingList}
+            onOpenTodayReview={handleOpenTodayReview}
+            onOpenWrongWords={handleOpenWrongWords}
+            onOpenStatistics={handleOpenStatistics}
+            onOpenCalendar={handleOpenCalendar}
+            onAuthOpen={() => setShowAuthModal(true)}
+            onAuthSync={handleHomeSync}
+            authUser={authUser}
+            syncStatusText={getSyncStatusText({
+              authLoading,
+              hasUser: Boolean(authUser?.id),
+              syncState,
+              lastSyncedAt,
+            })}
+            accountNotice={homeAccountNotice}
             wordCount={allVocabulary.length}
             readingCount={readingLibrary.length}
+            reviewCount={todayReviewWordList.length}
+            wrongCount={wrongWordList.length}
           />
         )
       case 'home':
@@ -1051,8 +1334,12 @@ function AppContent() {
             vocabularyData={allVocabulary}
             learnedWordIds={learnedWords}
             masteredWordIds={masteredWords}
+            todayReviewWordIds={todayReviewWordList.map((word) => word.id)}
+            wrongWordIds={wrongWords}
             onOpenLearnedWords={() => setView('learnedWords')}
             onOpenMasteredWords={() => setView('masteredWords')}
+            onOpenTodayReview={handleOpenTodayReview}
+            onOpenWrongWords={handleOpenWrongWords}
             onOpenToeflLevels={openToeflLevels}
             authEnabled={cloudEnabled}
             authLoading={authLoading}
@@ -1064,6 +1351,9 @@ function AppContent() {
               lastSyncedAt,
             })}
             syncError={syncError || authError}
+            onBack={handleBackToStudyHub}
+            onSyncAccount={handleHomeSync}
+            onSpeakIntro={() => speak('English flashcards. Choose a vocabulary category to start.', { rate: 1 })}
             onAuthLogin={handleAuthLogin}
             onAuthRegister={handleAuthRegister}
             onAuthLogout={handleAuthLogout}
@@ -1079,6 +1369,7 @@ function AppContent() {
             onBack={handleBackToStudyHub}
             onOpenReading={handleOpenReadingSession}
             onOpenMode={handleOpenModeFromReading}
+            onSyncAccount={handleHomeSync}
           />
         )
       case 'readingSession':
@@ -1092,6 +1383,7 @@ function AppContent() {
             wordLookup={vocabularyLookup}
             onMarkAsLearned={setWordAsLearned}
             onMarkAsMastered={setWordAsMastered}
+            onSyncAccount={handleHomeSync}
           />
         )
       case 'toeflLevels':
@@ -1139,50 +1431,128 @@ function AppContent() {
             onMarkLearned={markAsLearned}
             onMarkMastered={markAsMastered}
             masteredWords={masteredWords}
-            onAddMastered={(id) => {
-              if (!masteredWords.includes(id)) {
-                setMasteredWords([...masteredWords, id])
-              }
+            onAddMastered={setWordAsMastered}
+            onWrongAnswer={(id) => {
+              addWrongWord(id)
+              setWordAsLearned(id)
             }}
             categoryName={currentCategoryName}
             learnedWords={learnedWords}
             resetProgress={resetProgress}
             onBack={handleBackToHome}
+            onSyncAccount={handleHomeSync}
           />
         )
       case 'statistics':
         return (
-          <div className="min-h-screen py-8 px-4">
-            <div className="max-w-5xl mx-auto">
-              <button
-                onClick={handleBackToHome}
-                className="mb-6 flex items-center gap-3 px-6 py-4 bg-white/10 backdrop-blur-md hover:bg-white/20 rounded-2xl transition-all duration-300 border border-white/20 hover:border-white/40"
-              >
-                <span className="text-2xl">←</span>
-                <span className="text-white font-bold text-lg">返回首页</span>
-              </button>
+          <div className="learn-refresh-page learn-refresh-page--dashboard">
+            <header className="learn-refresh-topbar">
+              <div className="learn-refresh-topbar-inner">
+                <button type="button" onClick={handleBackToStudyHub} className="learn-refresh-back">
+                  <span>←</span>
+                  <span>返回</span>
+                </button>
+                <div className="learn-refresh-progress">
+                  <p className="learn-refresh-progress-main">学习统计</p>
+                  <p className="learn-refresh-progress-sub">学习闭环</p>
+                </div>
+                <div className="learn-refresh-top-actions">
+                  <button
+                    type="button"
+                    className="learn-refresh-icon-btn"
+                    onClick={handleHomeSync}
+                    aria-label="同步账号"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M20 6v5h-5" />
+                      <path d="M4 18v-5h5" />
+                      <path d="M6.2 9A7 7 0 0118.5 7.5L20 11" />
+                      <path d="M17.8 15A7 7 0 015.5 16.5L4 13" />
+                    </svg>
+                  </button>
+                  <span className="learn-refresh-topbar-spacer" aria-hidden="true" />
+                </div>
+              </div>
+            </header>
+            <main className="learn-refresh-main learn-refresh-main--dashboard">
               <Statistics
                 learnedWords={learnedWords}
                 masteredWords={masteredWords}
                 totalWords={allVocabulary.length}
+                wrongWords={wrongWords}
+                studyHistory={studyHistory}
+                dueReviewCount={todayReviewWordList.length}
               />
-            </div>
+            </main>
           </div>
         )
       case 'calendar':
         return (
-          <div className="min-h-screen py-8 px-4">
-            <div className="max-w-5xl mx-auto">
-              <button
-                onClick={handleBackToHome}
-                className="mb-6 flex items-center gap-3 px-6 py-4 bg-white/10 backdrop-blur-md hover:bg-white/20 rounded-2xl transition-all duration-300 border border-white/20 hover:border-white/40"
-              >
-                <span className="text-2xl">←</span>
-                <span className="text-white font-bold text-lg">返回首页</span>
-              </button>
-              <Calendar />
-            </div>
+          <div className="learn-refresh-page learn-refresh-page--dashboard">
+            <header className="learn-refresh-topbar">
+              <div className="learn-refresh-topbar-inner">
+                <button type="button" onClick={handleBackToStudyHub} className="learn-refresh-back">
+                  <span>←</span>
+                  <span>返回</span>
+                </button>
+                <div className="learn-refresh-progress">
+                  <p className="learn-refresh-progress-main">学习日历</p>
+                  <p className="learn-refresh-progress-sub">学习记录</p>
+                </div>
+                <div className="learn-refresh-top-actions">
+                  <button
+                    type="button"
+                    className="learn-refresh-icon-btn"
+                    onClick={handleHomeSync}
+                    aria-label="同步账号"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M20 6v5h-5" />
+                      <path d="M4 18v-5h5" />
+                      <path d="M6.2 9A7 7 0 0118.5 7.5L20 11" />
+                      <path d="M17.8 15A7 7 0 015.5 16.5L4 13" />
+                    </svg>
+                  </button>
+                  <span className="learn-refresh-topbar-spacer" aria-hidden="true" />
+                </div>
+              </div>
+            </header>
+            <main className="learn-refresh-main learn-refresh-main--dashboard">
+              <Calendar studyHistory={studyHistory} />
+            </main>
           </div>
+        )
+      case 'todayReview':
+        return (
+          <WordCollectionView
+            title="🔁 今日复习"
+            subtitle="这些是今天需要回顾的已学习或已掌握单词"
+            words={todayReviewWordList}
+            mode={mode}
+            emptyHint="今天没有到期复习词，保持得很好。"
+            onBack={handleBackToHome}
+            onOpenMode={handleOpenModeFromCollection}
+            onMarkAsUnknown={setWordAsLearned}
+            onMarkAsMastered={setWordAsMastered}
+            progressLabel="今日复习"
+            onSyncAccount={handleHomeSync}
+          />
+        )
+      case 'wrongWords':
+        return (
+          <WordCollectionView
+            title="🧯 错题本"
+            subtitle="这里会展示你在测验、填空、拼写中答错过的单词"
+            words={wrongWordList}
+            mode={mode}
+            emptyHint="错题本暂时是空的，答错的词会自动出现在这里。"
+            onBack={handleBackToHome}
+            onOpenMode={handleOpenModeFromCollection}
+            onMarkAsUnknown={setWordAsLearned}
+            onMarkAsMastered={setWordAsMastered}
+            progressLabel="待巩固"
+            onSyncAccount={handleHomeSync}
+          />
         )
       case 'learnedWords':
         return (
@@ -1196,6 +1566,7 @@ function AppContent() {
             onOpenMode={handleOpenModeFromCollection}
             onMarkAsMastered={markLearnedWordAsMastered}
             masteredActionLabel="认识了"
+            onSyncAccount={handleHomeSync}
           />
         )
       case 'masteredWords':
@@ -1209,6 +1580,7 @@ function AppContent() {
             onBack={handleBackToHome}
             onOpenMode={handleOpenModeFromCollection}
             onMarkAsUnknown={markMasteredWordAsLearned}
+            onSyncAccount={handleHomeSync}
           />
         )
       default:
@@ -1218,118 +1590,26 @@ function AppContent() {
 
   if (
     view === 'studyHub' ||
+    view === 'home' ||
     view === 'learn' ||
     view === 'learnedWords' ||
     view === 'masteredWords' ||
+    view === 'todayReview' ||
+    view === 'wrongWords' ||
     view === 'readingList' ||
-    view === 'readingSession'
+    view === 'readingSession' ||
+    view === 'statistics' ||
+    view === 'calendar'
   ) {
-    return <div className={`min-h-screen ${appBackground}`}>{renderView()}</div>
+    return (
+      <div className={`min-h-screen ${appBackground}`}>
+        {renderView()}
+        {(view === 'studyHub' || view === 'home') && renderAuthModal()}
+      </div>
+    )
   }
 
-  return (
-    <div className={`min-h-screen ${appBackground} py-8 px-4`}>
-      <div className="w-full" style={{ maxWidth: '1200px', marginInline: 'auto' }}>
-        {view === 'home' && (
-          <div className="mb-8 w-full" style={{ maxWidth: '960px', marginInline: 'auto' }}>
-            <div className="rounded-[14px] border border-[#e5e7eb] bg-white p-4 shadow-[0_1px_3px_rgba(15,23,42,0.08)]">
-              <div className="grid grid-cols-3 gap-3">
-                <button
-                  onClick={handleBackToStudyHub}
-                  className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] border border-[#d1d5db] bg-white px-3 py-2 text-sm font-semibold text-[#111827] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white"
-                >
-                  <span>←</span>
-                  <span>返回</span>
-                </button>
-                <button
-                  onClick={() => setShowAuthModal(true)}
-                  className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] border border-[#d1d5db] bg-white px-3 py-2 text-sm font-semibold text-[#111827] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white"
-                >
-                  <span>👤</span>
-                  <span>登录账号</span>
-                </button>
-                <button
-                  onClick={handleHomeSync}
-                  className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] border border-[#d1d5db] bg-white px-3 py-2 text-sm font-semibold text-[#111827] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white"
-                >
-                  <span>🔄</span>
-                  <span>同步账号</span>
-                </button>
-              </div>
-              <p className="mt-3 text-center text-sm text-[#6b7280]">
-                {authUser?.email ? `当前账号：${authUser.email}` : '当前未登录'}
-              </p>
-              {homeAccountNotice && (
-                <p
-                  className={`mt-2 text-center text-sm ${
-                    homeAccountNotice.type === 'success'
-                      ? 'text-emerald-600'
-                      : homeAccountNotice.type === 'error'
-                        ? 'text-rose-600'
-                        : 'text-[#6b7280]'
-                  }`}
-                >
-                  {homeAccountNotice.message}
-                </p>
-              )}
-            </div>
-          </div>
-        )}
-        {renderView()}
-      </div>
-
-      {view === 'home' && showAuthModal && (
-        <div className="fixed inset-0 z-[80] flex items-center justify-center p-4">
-          <button
-            type="button"
-            aria-label="关闭登录弹窗"
-            className="absolute inset-0 bg-black/30"
-            onClick={() => setShowAuthModal(false)}
-          />
-          <div className="relative w-full max-w-[680px] rounded-[16px] border border-[#e5e7eb] bg-white p-4 shadow-[0_20px_45px_rgba(15,23,42,0.2)] md:p-6">
-            <div className="mb-4 flex items-center justify-between">
-              <h3 className="text-xl font-semibold text-[#111827]">登录信息</h3>
-              <button
-                type="button"
-                onClick={() => setShowAuthModal(false)}
-                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#d1d5db] text-[#6b7280] transition hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white"
-              >
-                ✕
-              </button>
-            </div>
-
-            <div className="mb-4 grid grid-cols-2 gap-3">
-              <div className="rounded-[12px] border border-[#e5e7eb] bg-[#f8fafc] p-3 text-center">
-                <p className="text-2xl font-semibold text-[#111827]">{learnedWords.length}</p>
-                <p className="text-sm text-[#6b7280]">已学习单词</p>
-              </div>
-              <div className="rounded-[12px] border border-[#0071e3]/30 bg-[#0071e3] p-3 text-center">
-                <p className="text-2xl font-semibold text-white">{masteredWords.length}</p>
-                <p className="text-sm text-white/90">已掌握单词</p>
-              </div>
-            </div>
-
-            <AuthPanel
-              enabled={cloudEnabled}
-              loading={authLoading}
-              user={authUser}
-              syncStatusText={getSyncStatusText({
-                authLoading,
-                hasUser: Boolean(authUser?.id),
-                syncState,
-                lastSyncedAt,
-              })}
-              syncError={syncError || authError}
-              onLogin={handleModalLogin}
-              onRegister={handleModalRegister}
-              onLogout={handleModalLogout}
-              onSyncNow={handleModalSyncNow}
-            />
-          </div>
-        </div>
-      )}
-    </div>
-  )
+  return <div className={`min-h-screen ${appBackground}`}>{renderView()}</div>
 }
 
 function App() {

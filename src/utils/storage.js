@@ -10,6 +10,7 @@ const STORAGE_KEYS = {
   KOKORO_SPEED: 'flashcards_kokoro_speed',
   SPEECH_RATE: 'flashcards_speech_rate',
   WORD_PROGRESS: 'flashcards_word_progress',
+  WRONG_WORDS: 'flashcards_wrong_words',
   CUSTOM_WORDS: 'flashcards_custom_words',
   AUTH_SESSION: 'flashcards_auth_session',
 };
@@ -277,6 +278,24 @@ export const storage = {
       localStorage.setItem(STORAGE_KEYS.WORD_PROGRESS, JSON.stringify(data));
     } catch (error) {
       console.error('Failed to save word progress:', error);
+    }
+  },
+
+  getWrongWords: () => {
+    try {
+      const data = localStorage.getItem(STORAGE_KEYS.WRONG_WORDS);
+      return data ? JSON.parse(data) : [];
+    } catch (error) {
+      console.error('Failed to load wrong words:', error);
+      return [];
+    }
+  },
+
+  setWrongWords: (words) => {
+    try {
+      localStorage.setItem(STORAGE_KEYS.WRONG_WORDS, JSON.stringify(words));
+    } catch (error) {
+      console.error('Failed to save wrong words:', error);
     }
   },
 

@@ -76,7 +76,7 @@ jobs:
       - name: Apply D1 Schema
         run: |
           set -euo pipefail
-          wrangler d1 execute "$D1_DATABASE_NAME" --remote --file ./worker/schema.sql
+          npm run d1:migrate
 
       - name: Deploy To Cloudflare Worker
         run: |

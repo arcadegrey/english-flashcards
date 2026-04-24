@@ -82,7 +82,7 @@ const createFillBlankRound = (vocabulary = []) => {
   };
 };
 
-function FillBlank({ vocabulary, sourceLabel = '' }) {
+function FillBlank({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswer }) {
   const initialRound = createFillBlankRound(vocabulary);
   const [currentQuestion, setCurrentQuestion] = useState(() => initialRound.question);
   const [options, setOptions] = useState(() => initialRound.options);
@@ -145,8 +145,10 @@ function FillBlank({ vocabulary, sourceLabel = '' }) {
       setStreak((prev) => prev + 1);
       setCelebrationTrigger((prev) => prev + 1);
       playSuccessChime();
+      onCorrectAnswer?.(currentQuestion.id);
     } else {
       setStreak(0);
+      onWrongAnswer?.(currentQuestion.id);
     }
 
     setQuestionCount((prev) => prev + 1);

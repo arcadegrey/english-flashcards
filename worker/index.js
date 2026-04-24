@@ -4,6 +4,9 @@ const EMPTY_PROGRESS = {
   learnedWords: [],
   masteredWords: [],
   customWords: [],
+  wordProgress: {},
+  wrongWords: [],
+  studyHistory: [],
 };
 
 const json = (data, status = 200, headers = {}) =>
@@ -103,6 +106,13 @@ const normalizeCustomWords = (value) => {
   return list.filter((item) => item && typeof item === 'object' && String(item.word || '').trim());
 };
 
+const normalizeRecord = (value) => (value && typeof value === 'object' && !Array.isArray(value) ? value : {});
+
+const normalizeStudyHistory = (value) => {
+  const list = Array.isArray(value) ? value : [];
+  return list.filter((item) => item && typeof item === 'object' && String(item.date || '').trim());
+};
+
 const countFilledFields = (word) => {
   if (!word || typeof word !== 'object') return 0;
   const keys = ['phonetic', 'pos', 'meaning', 'example', 'exampleCn', 'category', 'level', 'list'];
@@ -138,7 +148,29 @@ const normalizeProgress = (progress) => ({
   learnedWords: normalizeIdArray(progress?.learnedWords),
   masteredWords: normalizeIdArray(progress?.masteredWords),
   customWords: normalizeCustomWords(progress?.customWords),
+  wordProgress: normalizeRecord(progress?.wordProgress),
+  wrongWords: normalizeIdArray(progress?.wrongWords),
+  studyHistory: normalizeStudyHistory(progress?.studyHistory),
 });
+
+const mergeStudyHistory = (baseList, incomingList) => {
+  const map = new Map();
+  [...normalizeStudyHistory(baseList), ...normalizeStudyHistory(incomingList)].forEach((item) => {
+    const date = String(item.date || '').trim();
+    if (!date) return;
+    const current = map.get(date) || { date, wordsLearned: 0, wordsMastered: 0, timeSpent: 0 };
+    map.set(date, {
+      date,
+      wordsLearned: Math.max(Number(current.wordsLearned || 0), Number(item.wordsLearned || 0)),
+      wordsMastered: Math.max(Number(current.wordsMastered || 0), Number(item.wordsMastered || 0)),
+      timeSpent: Math.max(Number(current.timeSpent || 0), Number(item.timeSpent || 0)),
+    });
+  });
+
+  return Array.from(map.values())
+    .sort((a, b) => String(a.date).localeCompare(String(b.date)))
+    .slice(-90);
+};
 
 const mergeProgress = (baseProgress, incomingProgress) => {
   const base = normalizeProgress(baseProgress);
@@ -151,11 +183,22 @@ const mergeProgress = (baseProgress, incomingProgress) => {
     ...(incoming.learnedWords || []),
   ]).filter((item) => !masteredSet.has(String(item)));
   const customWords = mergeCustomWordList(base.customWords || [], incoming.customWords || []);
+  const wordProgress = {
+    ...(base.wordProgress || {}),
+    ...(incoming.wordProgress || {}),
+  };
+  const wrongWords = normalizeIdArray([...(base.wrongWords || []), ...(incoming.wrongWords || [])]).filter(
+    (item) => !masteredSet.has(String(item))
+  );
+  const studyHistory = mergeStudyHistory(base.studyHistory || [], incoming.studyHistory || []);
 
   return {
     learnedWords,
     masteredWords,
     customWords,
+    wordProgress,
+    wrongWords,
+    studyHistory,
   };
 };
 
@@ -166,6 +209,16 @@ const parseProgressText = (value) => {
     return Array.isArray(parsed) ? parsed : [];
   } catch {
     return [];
+  }
+};
+
+const parseProgressObjectText = (value) => {
+  if (!value) return {};
+  try {
+    const parsed = JSON.parse(value);
+    return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
+  } catch {
+    return {};
   }
 };
 
@@ -458,7 +511,7 @@ const handleGetProgress = async (request, env) => {
   }
 
   const row = await env.DB.prepare(
-    `SELECT learned_words, mastered_words, custom_words
+    `SELECT learned_words, mastered_words, custom_words, word_progress, wrong_words, study_history
      FROM user_progress
      WHERE user_id = ?
      LIMIT 1`
@@ -475,6 +528,9 @@ const handleGetProgress = async (request, env) => {
       learnedWords: parseProgressText(row.learned_words),
       masteredWords: parseProgressText(row.mastered_words),
       customWords: parseProgressText(row.custom_words),
+      wordProgress: parseProgressObjectText(row.word_progress),
+      wrongWords: parseProgressText(row.wrong_words),
+      studyHistory: parseProgressText(row.study_history),
     },
     updatedAt: String(row.updated_at || ''),
   });
@@ -490,7 +546,7 @@ const handlePutProgress = async (request, env) => {
   const normalized = normalizeProgress(body?.progress || body || EMPTY_PROGRESS);
   const baseUpdatedAt = String(body?.baseUpdatedAt || '').trim();
   const existing = await env.DB.prepare(
-    `SELECT learned_words, mastered_words, custom_words, updated_at
+    `SELECT learned_words, mastered_words, custom_words, word_progress, wrong_words, study_history, updated_at
      FROM user_progress
      WHERE user_id = ?
      LIMIT 1`
@@ -506,6 +562,9 @@ const handlePutProgress = async (request, env) => {
       learnedWords: parseProgressText(existing.learned_words),
       masteredWords: parseProgressText(existing.mastered_words),
       customWords: parseProgressText(existing.custom_words),
+      wordProgress: parseProgressObjectText(existing.word_progress),
+      wrongWords: parseProgressText(existing.wrong_words),
+      studyHistory: parseProgressText(existing.study_history),
     };
     const currentUpdatedAt = String(existing.updated_at || '');
     const canReplaceDirectly = Boolean(baseUpdatedAt) && baseUpdatedAt === currentUpdatedAt;
@@ -519,12 +578,15 @@ const handlePutProgress = async (request, env) => {
   const updatedAt = nowIso();
 
   await env.DB.prepare(
-    `INSERT INTO user_progress (user_id, learned_words, mastered_words, custom_words, updated_at)
-     VALUES (?, ?, ?, ?, ?)
+    `INSERT INTO user_progress (user_id, learned_words, mastered_words, custom_words, word_progress, wrong_words, study_history, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?)
      ON CONFLICT(user_id) DO UPDATE SET
        learned_words = excluded.learned_words,
        mastered_words = excluded.mastered_words,
        custom_words = excluded.custom_words,
+       word_progress = excluded.word_progress,
+       wrong_words = excluded.wrong_words,
+       study_history = excluded.study_history,
        updated_at = excluded.updated_at`
   )
     .bind(
@@ -532,6 +594,9 @@ const handlePutProgress = async (request, env) => {
       JSON.stringify(finalProgress.learnedWords),
       JSON.stringify(finalProgress.masteredWords),
       JSON.stringify(finalProgress.customWords),
+      JSON.stringify(finalProgress.wordProgress),
+      JSON.stringify(finalProgress.wrongWords),
+      JSON.stringify(finalProgress.studyHistory),
       updatedAt
     )
     .run();

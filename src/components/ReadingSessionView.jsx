@@ -27,6 +27,7 @@ function ReadingSessionView({
   wordLookup,
   onMarkAsLearned,
   onMarkAsMastered,
+  onSyncAccount,
 }) {
   const [showVoiceSettings, setShowVoiceSettings] = useState(false);
   const [isMenuMounted, setIsMenuMounted] = useState(false);
@@ -176,6 +177,21 @@ function ReadingSessionView({
     speak(article.content, { rate: 1 });
   };
 
+  const handleSyncAccount = async () => {
+    if (typeof onSyncAccount !== 'function') {
+      setToast('当前页面暂不可同步');
+      return;
+    }
+
+    setToast('正在同步账号...');
+    try {
+      const result = await onSyncAccount();
+      setToast(result?.message || '同步请求已完成');
+    } catch (error) {
+      setToast(error?.message || '同步失败，请稍后重试');
+    }
+  };
+
   const handleSpeakActiveWord = () => {
     if (!activeWord?.word) return;
     speak(activeWord.word, { rate: 1 });
@@ -270,6 +286,19 @@ function ReadingSessionView({
           </div>
 
           <div className="learn-refresh-top-actions">
+            <button
+              type="button"
+              className="learn-refresh-icon-btn"
+              onClick={handleSyncAccount}
+              aria-label="同步账号"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 6v5h-5" />
+                <path d="M4 18v-5h5" />
+                <path d="M6.2 9A7 7 0 0118.5 7.5L20 11" />
+                <path d="M17.8 15A7 7 0 015.5 16.5L4 13" />
+              </svg>
+            </button>
             <button
               type="button"
               className="learn-refresh-icon-btn"

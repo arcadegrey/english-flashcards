@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "words:import": "node scripts/import-global-vocabulary.mjs",
-    "readings:import": "node scripts/import-global-reading.mjs"
+    "readings:import": "node scripts/import-global-reading.mjs",
+    "d1:migrate": "node scripts/apply-d1-schema.mjs"
   },
   "dependencies": {
     "react": "^19.2.4",
