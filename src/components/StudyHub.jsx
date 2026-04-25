@@ -4,7 +4,7 @@ function StudyHub({
   onOpenTodayReview,
   onOpenWrongWords,
   onOpenStatistics,
-  onOpenCalendar,
+  onOpenExamPractice,
   onAuthOpen,
   onAuthSync,
   authUser = null,
@@ -63,12 +63,12 @@ function StudyHub({
               <span className="study-hub-action-title">今日复习</span>
               <span className="study-hub-action-meta">{reviewCount} 个到期词</span>
             </button>
-            <button type="button" className="study-hub-action" onClick={onOpenWrongWords}>
+            <button type="button" className="study-hub-action" onClick={onOpenExamPractice}>
               <span className="study-hub-action-icon" aria-hidden="true">
-                🧯
+                🧪
               </span>
-              <span className="study-hub-action-title">错题本</span>
-              <span className="study-hub-action-meta">{wrongCount} 个待巩固词</span>
+              <span className="study-hub-action-title">考试巩固</span>
+              <span className="study-hub-action-meta">测验 · 填空 · 拼写</span>
             </button>
             <button type="button" className="study-hub-action" onClick={onOpenStatistics}>
               <span className="study-hub-action-icon" aria-hidden="true">
@@ -77,12 +77,12 @@ function StudyHub({
               <span className="study-hub-action-title">学习统计</span>
               <span className="study-hub-action-meta">查看学习闭环</span>
             </button>
-            <button type="button" className="study-hub-action" onClick={onOpenCalendar}>
+            <button type="button" className="study-hub-action" onClick={onOpenWrongWords}>
               <span className="study-hub-action-icon" aria-hidden="true">
-                📅
+                🧯
               </span>
-              <span className="study-hub-action-title">学习日历</span>
-              <span className="study-hub-action-meta">回顾每日记录</span>
+              <span className="study-hub-action-title">错题本</span>
+              <span className="study-hub-action-meta">{wrongCount} 个待巩固词</span>
             </button>
           </div>
         </section>

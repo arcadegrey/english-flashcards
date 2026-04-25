@@ -52,6 +52,7 @@ function HomeScreen({
   onOpenWrongWords,
   onOpenToeflLevels,
   onBack,
+  onHome,
   onSyncAccount,
   onSpeakIntro,
   authEnabled = false,
@@ -242,10 +243,15 @@ function HomeScreen({
     <div className="learn-refresh-page word-home-page">
       <header className="learn-refresh-topbar">
         <div className="learn-refresh-topbar-inner">
-          <button type="button" className="learn-refresh-back" onClick={onBack} aria-label="返回学习方式选择">
-            <span aria-hidden="true">←</span>
-            <span>返回</span>
-          </button>
+          <div className="learn-refresh-left-actions">
+            <button type="button" className="learn-refresh-back" onClick={onBack} aria-label="返回学习方式选择">
+              <span aria-hidden="true">←</span>
+              <span>返回</span>
+            </button>
+            <button type="button" className="learn-refresh-home-btn" onClick={onHome} aria-label="回到首页">
+              <span aria-hidden="true">🏠</span>
+            </button>
+          </div>
 
           <div className="learn-refresh-progress">
             <p className="learn-refresh-progress-main">{categoriesWithCollections.length} 类</p>

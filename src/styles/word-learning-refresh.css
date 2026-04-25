@@ -37,6 +37,13 @@
   padding: 0 24px;
 }
 
+.learn-refresh-left-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 136px;
+}
+
 .learn-refresh-back {
   display: inline-flex;
   align-items: center;
@@ -59,6 +66,33 @@
 .learn-refresh-back:hover {
   background: var(--wl-hover);
   border-color: var(--wl-line);
+  color: var(--wl-text);
+}
+
+.learn-refresh-home-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--wl-line);
+  background: #fff;
+  color: var(--wl-subtext);
+  font-size: 18px;
+  line-height: 1;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 240ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 240ms cubic-bezier(0.22, 1, 0.36, 1),
+    color 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.learn-refresh-home-btn:hover {
+  transform: translateY(-1px);
+  background: var(--wl-hover);
+  border-color: #d2d2d7;
   color: var(--wl-text);
 }
 
@@ -715,6 +749,60 @@
   gap: 10px;
 }
 
+.exam-practice-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.exam-scope-section {
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+}
+
+.exam-scope-tabs {
+  display: inline-grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  border-radius: 16px;
+  border: 1px solid var(--wl-line);
+  background: #f5f5f7;
+  padding: 6px;
+}
+
+.exam-scope-tab {
+  min-height: 42px;
+  min-width: 120px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--wl-subtext);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background-color 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    color 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.exam-scope-tab:hover,
+.exam-scope-tab.is-active {
+  border-color: #0071e3;
+  background: #0071e3;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 113, 227, 0.22);
+}
+
+.exam-scope-count {
+  font-size: 11px;
+  font-weight: 600;
+  opacity: 0.75;
+}
+
 .reading-category-card {
   min-height: 100px;
   border: 1px solid var(--wl-line);
@@ -738,6 +826,18 @@
   border-color: #0071e3;
   background: #0071e3;
   box-shadow: 0 14px 28px rgba(0, 113, 227, 0.24);
+}
+
+.reading-category-card:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.reading-category-card:disabled:hover {
+  transform: none;
+  border-color: var(--wl-line);
+  background: #fff;
+  box-shadow: none;
 }
 
 .reading-category-card.is-active {
@@ -769,6 +869,14 @@
 .reading-category-card.is-active .reading-category-name,
 .reading-category-card.is-active .reading-category-count {
   color: #ffffff;
+}
+
+.reading-category-card:disabled:hover .reading-category-name {
+  color: var(--wl-text);
+}
+
+.reading-category-card:disabled:hover .reading-category-count {
+  color: var(--wl-subtext);
 }
 
 .word-home-search {
@@ -1342,6 +1450,7 @@
 }
 
 .learn-refresh-back:focus-visible,
+.learn-refresh-home-btn:focus-visible,
 .learn-refresh-icon-btn:focus-visible,
 .learn-refresh-inline-audio:focus-visible,
 .learn-refresh-example-audio:focus-visible,
@@ -1406,6 +1515,11 @@
     padding: 0 16px;
   }
 
+  .learn-refresh-left-actions {
+    min-width: 118px;
+    gap: 6px;
+  }
+
   .learn-refresh-back {
     gap: 4px;
     min-width: 76px;
@@ -1426,6 +1540,14 @@
     width: 36px;
     height: 36px;
     min-width: 36px;
+  }
+
+  .learn-refresh-home-btn {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    border-radius: 11px;
+    font-size: 16px;
   }
 
   .learn-refresh-menu {
@@ -1530,6 +1652,19 @@
   .reading-category-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
+  }
+
+  .exam-practice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exam-scope-tabs {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .exam-scope-tab {
+    min-width: 0;
   }
 
   .word-home-stats {

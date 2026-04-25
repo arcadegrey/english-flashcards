@@ -36,10 +36,12 @@ function LearningView({
   onMarkLearned,
   onMarkMastered,
   masteredWords,
+  examScope = 'learned',
   onAddMastered,
   onWrongAnswer,
   learnedWords,
   onBack,
+  onHome,
   onSyncAccount,
 }) {
   const [showVoiceSettings, setShowVoiceSettings] = useState(false);
@@ -51,16 +53,27 @@ function LearningView({
   const menuRef = useRef(null);
   const menuCloseTimerRef = useRef(null);
 
-  const learnedWordSet = useMemo(() => new Set(learnedWords), [learnedWords]);
+  const learnedWordSet = useMemo(() => new Set(learnedWords.map(String)), [learnedWords]);
+  const masteredWordSet = useMemo(() => new Set(masteredWords.map(String)), [masteredWords]);
   const learnedVocabulary = useMemo(
-    () => allVocabulary.filter((word) => learnedWordSet.has(word.id)),
+    () => allVocabulary.filter((word) => learnedWordSet.has(String(word.id))),
     [allVocabulary, learnedWordSet]
   );
-  const useLearnedPool = learnedVocabulary.length > 0;
-  const quizVocabulary = useLearnedPool ? learnedVocabulary : allVocabulary;
-  const quizSourceLabel = useLearnedPool ? '已学习词库' : '随机测验 · 全词库';
-  const fillBlankVocabulary = useLearnedPool ? learnedVocabulary : allVocabulary;
-  const fillBlankSourceLabel = useLearnedPool ? '已学习词库' : '随机测验 · 全词库';
+  const masteredVocabulary = useMemo(
+    () => allVocabulary.filter((word) => masteredWordSet.has(String(word.id))),
+    [allVocabulary, masteredWordSet]
+  );
+  const examVocabulary = useMemo(() => {
+    if (examScope === 'mastered') return masteredVocabulary;
+    if (examScope === 'all') return allVocabulary;
+    return learnedVocabulary;
+  }, [allVocabulary, examScope, learnedVocabulary, masteredVocabulary]);
+  const examSourceLabel =
+    examScope === 'mastered'
+      ? '已掌握范围'
+      : examScope === 'all'
+        ? '全范围随机'
+        : '已学习范围';
 
   const totalCount = filteredVocabulary.length;
   const progressCurrent = totalCount > 0 ? Math.min(currentIndex + 1, totalCount) : 0;
@@ -233,10 +246,15 @@ function LearningView({
     <div className={`learn-refresh-page ${mode === 'learn' ? '' : 'learn-refresh-page--assessment'}`}>
       <header className="learn-refresh-topbar">
         <div className="learn-refresh-topbar-inner">
-          <button type="button" className="learn-refresh-back" onClick={onBack} aria-label="返回首页">
-            <span aria-hidden="true">←</span>
-            <span>返回</span>
-          </button>
+          <div className="learn-refresh-left-actions">
+            <button type="button" className="learn-refresh-back" onClick={onBack} aria-label="返回">
+              <span aria-hidden="true">←</span>
+              <span>返回</span>
+            </button>
+            <button type="button" className="learn-refresh-home-btn" onClick={onHome} aria-label="回到首页">
+              <span aria-hidden="true">🏠</span>
+            </button>
+          </div>
 
           <div className="learn-refresh-progress">
             <p className="learn-refresh-progress-main">
@@ -358,23 +376,23 @@ function LearningView({
           />
         ) : mode === 'quiz' ? (
           <Quiz
-            vocabulary={quizVocabulary}
+            vocabulary={examVocabulary}
             optionVocabulary={allVocabulary}
-            sourceLabel={quizSourceLabel}
+            sourceLabel={examSourceLabel}
             masteredWords={masteredWords}
             onAddMastered={onAddMastered}
             onWrongAnswer={onWrongAnswer}
           />
         ) : mode === 'fillblank' ? (
           <FillBlank
-            vocabulary={fillBlankVocabulary}
-            sourceLabel={fillBlankSourceLabel}
+            vocabulary={examVocabulary}
+            sourceLabel={examSourceLabel}
             onWrongAnswer={onWrongAnswer}
             onCorrectAnswer={onAddMastered}
           />
         ) : mode === 'spelling' ? (
           <SpellingTest
-            vocabulary={filteredVocabulary}
+            vocabulary={examVocabulary}
             onWrongAnswer={onWrongAnswer}
             onCorrectAnswer={onAddMastered}
           />

@@ -8,11 +8,11 @@ import StudyHub from './components/StudyHub'
 import HomeScreen from './components/HomeScreen'
 import LearningView from './components/LearningView'
 import Statistics from './components/Statistics'
-import Calendar from './components/Calendar'
 import WordCollectionView from './components/WordCollectionView'
 import ToeflSelectionView from './components/ToeflSelectionView'
 import ReadingListView from './components/ReadingListView'
 import ReadingSessionView from './components/ReadingSessionView'
+import ExamPracticeView from './components/ExamPracticeView'
 import AuthPanel from './components/AuthPanel'
 import { storage } from './utils/storage'
 import { buildWordLookup, isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from './utils/readingText'
@@ -226,6 +226,8 @@ function AppContent() {
 
   const [view, setView] = useState('studyHub')
   const [mode, setMode] = useState('learn')
+  const [examScope, setExamScope] = useState('learned')
+  const [assessmentBackTarget, setAssessmentBackTarget] = useState('home')
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [selectedToeflLevel, setSelectedToeflLevel] = useState('')
   const [selectedToeflList, setSelectedToeflList] = useState('')
@@ -1014,6 +1016,7 @@ function AppContent() {
 
   const handleCategorySelect = (categoryId, options = {}) => {
     pendingStartWordIdRef.current = options.focusWordId ?? null
+    setAssessmentBackTarget('home')
     setSelectedCategory(categoryId)
     if (categoryId !== 'toefl') {
       setSelectedToeflLevel('')
@@ -1025,6 +1028,7 @@ function AppContent() {
 
   const openToeflLevels = () => {
     pendingStartWordIdRef.current = null
+    setAssessmentBackTarget('home')
     setSelectedCategory('toefl')
     setSelectedToeflLevel('')
     setSelectedToeflList('')
@@ -1046,6 +1050,7 @@ function AppContent() {
 
   const handleToeflListSelect = (listKey) => {
     pendingStartWordIdRef.current = null
+    setAssessmentBackTarget('home')
     setSelectedCategory('toefl')
     setSelectedToeflList(listKey)
     setMode('learn')
@@ -1054,6 +1059,7 @@ function AppContent() {
 
   const handleStartAllToefl = () => {
     pendingStartWordIdRef.current = null
+    setAssessmentBackTarget('home')
     setSelectedCategory('toefl')
     setSelectedToeflLevel('')
     setSelectedToeflList('')
@@ -1063,6 +1069,7 @@ function AppContent() {
 
   const handleStartCurrentLevel = () => {
     pendingStartWordIdRef.current = null
+    setAssessmentBackTarget('home')
     setSelectedCategory('toefl')
     setSelectedToeflList('')
     setMode('learn')
@@ -1070,23 +1077,28 @@ function AppContent() {
   }
 
   const handleBackToHome = () => {
+    setAssessmentBackTarget('home')
     setView('home')
   }
 
   const handleOpenWordStudy = () => {
+    setAssessmentBackTarget('home')
     setView('home')
   }
 
   const handleOpenReadingList = () => {
+    setAssessmentBackTarget('home')
     setSelectedReadingId(null)
     setView('readingList')
   }
 
   const handleOpenTodayReview = () => {
+    setAssessmentBackTarget('home')
     setView('todayReview')
   }
 
   const handleOpenWrongWords = () => {
+    setAssessmentBackTarget('home')
     setView('wrongWords')
   }
 
@@ -1094,8 +1106,20 @@ function AppContent() {
     setView('statistics')
   }
 
-  const handleOpenCalendar = () => {
-    setView('calendar')
+  const handleOpenExamPractice = () => {
+    setView('examPractice')
+  }
+
+  const handleStartExamPractice = (nextMode, scope = examScope) => {
+    pendingStartWordIdRef.current = null
+    setAssessmentBackTarget('examPractice')
+    setExamScope(scope)
+    setSelectedCategory('all')
+    setSelectedToeflLevel('')
+    setSelectedToeflList('')
+    setCurrentIndex(0)
+    setMode(nextMode)
+    setView('learn')
   }
 
   const handleOpenReadingSession = (readingId) => {
@@ -1104,6 +1128,7 @@ function AppContent() {
   }
 
   const handleBackToStudyHub = () => {
+    setAssessmentBackTarget('home')
     setView('studyHub')
   }
 
@@ -1112,13 +1137,24 @@ function AppContent() {
   }
 
   const handleOpenModeFromReading = (nextMode) => {
+    setAssessmentBackTarget('home')
     setMode(nextMode)
     setView('learn')
   }
 
   const handleOpenModeFromCollection = (nextMode) => {
+    setAssessmentBackTarget('home')
     setMode(nextMode)
     setView('learn')
+  }
+
+  const handleLearningBack = () => {
+    if (mode !== 'learn' && assessmentBackTarget === 'examPractice') {
+      handleOpenExamPractice()
+      return
+    }
+
+    handleBackToHome()
   }
 
   const markAsLearned = () => {
@@ -1289,7 +1325,7 @@ function AppContent() {
       view === 'readingList' ||
       view === 'readingSession' ||
       view === 'statistics' ||
-      view === 'calendar'
+      view === 'examPractice'
     ) {
       return 'bg-[#fbfbfd]'
     }
@@ -1309,7 +1345,7 @@ function AppContent() {
             onOpenTodayReview={handleOpenTodayReview}
             onOpenWrongWords={handleOpenWrongWords}
             onOpenStatistics={handleOpenStatistics}
-            onOpenCalendar={handleOpenCalendar}
+            onOpenExamPractice={handleOpenExamPractice}
             onAuthOpen={() => setShowAuthModal(true)}
             onAuthSync={handleHomeSync}
             authUser={authUser}
@@ -1324,6 +1360,20 @@ function AppContent() {
             readingCount={readingLibrary.length}
             reviewCount={todayReviewWordList.length}
             wrongCount={wrongWordList.length}
+          />
+        )
+      case 'examPractice':
+        return (
+          <ExamPracticeView
+            onBack={handleBackToStudyHub}
+            onHome={handleBackToStudyHub}
+            onSelectMode={handleStartExamPractice}
+            selectedScope={examScope}
+            onSelectScope={setExamScope}
+            learnedCount={learnedWords.length}
+            masteredCount={masteredWords.length}
+            totalCount={allVocabulary.length}
+            onSyncAccount={handleHomeSync}
           />
         )
       case 'home':
@@ -1352,6 +1402,7 @@ function AppContent() {
             })}
             syncError={syncError || authError}
             onBack={handleBackToStudyHub}
+            onHome={handleBackToStudyHub}
             onSyncAccount={handleHomeSync}
             onSpeakIntro={() => speak('English flashcards. Choose a vocabulary category to start.', { rate: 1 })}
             onAuthLogin={handleAuthLogin}
@@ -1367,6 +1418,7 @@ function AppContent() {
             readings={readingLibrary}
             mode={mode}
             onBack={handleBackToStudyHub}
+            onHome={handleBackToStudyHub}
             onOpenReading={handleOpenReadingSession}
             onOpenMode={handleOpenModeFromReading}
             onSyncAccount={handleHomeSync}
@@ -1378,6 +1430,7 @@ function AppContent() {
             article={selectedReading}
             mode={mode}
             onBack={handleBackToReadingList}
+            onHome={handleBackToStudyHub}
             onOpenMode={handleOpenModeFromReading}
             masteredWords={masteredWords}
             wordLookup={vocabularyLookup}
@@ -1395,6 +1448,7 @@ function AppContent() {
             items={toeflGrouping.levels}
             totalCount={toeflGrouping.total}
             onBack={handleBackToHome}
+            onHome={handleBackToStudyHub}
             onSelect={handleToeflLevelSelect}
             onSelectAll={handleStartAllToefl}
             selectAllLabel="学习全部托福词汇"
@@ -1413,6 +1467,7 @@ function AppContent() {
             items={toeflListsForSelectedLevel}
             totalCount={totalForLevel}
             onBack={() => setView('toeflLevels')}
+            onHome={handleBackToStudyHub}
             onSelect={handleToeflListSelect}
             onSelectAll={handleStartCurrentLevel}
             selectAllLabel={`学习${levelLabel}全部词汇`}
@@ -1431,6 +1486,7 @@ function AppContent() {
             onMarkLearned={markAsLearned}
             onMarkMastered={markAsMastered}
             masteredWords={masteredWords}
+            examScope={examScope}
             onAddMastered={setWordAsMastered}
             onWrongAnswer={(id) => {
               addWrongWord(id)
@@ -1439,7 +1495,8 @@ function AppContent() {
             categoryName={currentCategoryName}
             learnedWords={learnedWords}
             resetProgress={resetProgress}
-            onBack={handleBackToHome}
+            onBack={handleLearningBack}
+            onHome={handleBackToStudyHub}
             onSyncAccount={handleHomeSync}
           />
         )
@@ -1448,10 +1505,20 @@ function AppContent() {
           <div className="learn-refresh-page learn-refresh-page--dashboard">
             <header className="learn-refresh-topbar">
               <div className="learn-refresh-topbar-inner">
-                <button type="button" onClick={handleBackToStudyHub} className="learn-refresh-back">
-                  <span>←</span>
-                  <span>返回</span>
-                </button>
+                <div className="learn-refresh-left-actions">
+                  <button type="button" onClick={handleBackToStudyHub} className="learn-refresh-back">
+                    <span>←</span>
+                    <span>返回</span>
+                  </button>
+                  <button
+                    type="button"
+                    className="learn-refresh-home-btn"
+                    onClick={handleBackToStudyHub}
+                    aria-label="回到首页"
+                  >
+                    <span aria-hidden="true">🏠</span>
+                  </button>
+                </div>
                 <div className="learn-refresh-progress">
                   <p className="learn-refresh-progress-main">学习统计</p>
                   <p className="learn-refresh-progress-sub">学习闭环</p>
@@ -1471,6 +1538,7 @@ function AppContent() {
                     </svg>
                   </button>
                   <span className="learn-refresh-topbar-spacer" aria-hidden="true" />
+                  <span className="learn-refresh-topbar-spacer" aria-hidden="true" />
                 </div>
               </div>
             </header>
@@ -1483,42 +1551,6 @@ function AppContent() {
                 studyHistory={studyHistory}
                 dueReviewCount={todayReviewWordList.length}
               />
-            </main>
-          </div>
-        )
-      case 'calendar':
-        return (
-          <div className="learn-refresh-page learn-refresh-page--dashboard">
-            <header className="learn-refresh-topbar">
-              <div className="learn-refresh-topbar-inner">
-                <button type="button" onClick={handleBackToStudyHub} className="learn-refresh-back">
-                  <span>←</span>
-                  <span>返回</span>
-                </button>
-                <div className="learn-refresh-progress">
-                  <p className="learn-refresh-progress-main">学习日历</p>
-                  <p className="learn-refresh-progress-sub">学习记录</p>
-                </div>
-                <div className="learn-refresh-top-actions">
-                  <button
-                    type="button"
-                    className="learn-refresh-icon-btn"
-                    onClick={handleHomeSync}
-                    aria-label="同步账号"
-                  >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M20 6v5h-5" />
-                      <path d="M4 18v-5h5" />
-                      <path d="M6.2 9A7 7 0 0118.5 7.5L20 11" />
-                      <path d="M17.8 15A7 7 0 015.5 16.5L4 13" />
-                    </svg>
-                  </button>
-                  <span className="learn-refresh-topbar-spacer" aria-hidden="true" />
-                </div>
-              </div>
-            </header>
-            <main className="learn-refresh-main learn-refresh-main--dashboard">
-              <Calendar studyHistory={studyHistory} />
             </main>
           </div>
         )
@@ -1535,6 +1567,7 @@ function AppContent() {
             onMarkAsUnknown={setWordAsLearned}
             onMarkAsMastered={setWordAsMastered}
             progressLabel="今日复习"
+            onHome={handleBackToStudyHub}
             onSyncAccount={handleHomeSync}
           />
         )
@@ -1551,6 +1584,7 @@ function AppContent() {
             onMarkAsUnknown={setWordAsLearned}
             onMarkAsMastered={setWordAsMastered}
             progressLabel="待巩固"
+            onHome={handleBackToStudyHub}
             onSyncAccount={handleHomeSync}
           />
         )
@@ -1566,6 +1600,7 @@ function AppContent() {
             onOpenMode={handleOpenModeFromCollection}
             onMarkAsMastered={markLearnedWordAsMastered}
             masteredActionLabel="认识了"
+            onHome={handleBackToStudyHub}
             onSyncAccount={handleHomeSync}
           />
         )
@@ -1580,6 +1615,7 @@ function AppContent() {
             onBack={handleBackToHome}
             onOpenMode={handleOpenModeFromCollection}
             onMarkAsUnknown={markMasteredWordAsLearned}
+            onHome={handleBackToStudyHub}
             onSyncAccount={handleHomeSync}
           />
         )
@@ -1599,7 +1635,7 @@ function AppContent() {
     view === 'readingList' ||
     view === 'readingSession' ||
     view === 'statistics' ||
-    view === 'calendar'
+    view === 'examPractice'
   ) {
     return (
       <div className={`min-h-screen ${appBackground}`}>

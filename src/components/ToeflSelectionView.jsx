@@ -7,6 +7,7 @@ function ToeflSelectionView({
   items = [],
   totalCount = 0,
   onBack,
+  onHome,
   onSelect,
   onSelectAll,
   selectAllLabel = '学习全部',
@@ -28,13 +29,21 @@ function ToeflSelectionView({
   return (
     <div className="min-h-screen bg-[#f8fafc] font-sans text-base leading-[1.6] text-[#111827]">
       <div className="w-full px-4 py-8 space-y-8" style={{ maxWidth: '960px', marginInline: 'auto' }}>
-        <div className="flex justify-start">
+        <div className="flex items-center justify-start gap-2">
           <button
             onClick={onBack}
             className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] border border-[#d1d5db] bg-white px-4 py-2 text-base font-semibold text-[#111827] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white"
           >
             <span aria-hidden="true">←</span>
             <span>返回</span>
+          </button>
+          <button
+            type="button"
+            onClick={onHome}
+            aria-label="回到首页"
+            className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-[10px] border border-[#d1d5db] bg-white text-lg text-[#111827] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white"
+          >
+            <span aria-hidden="true">🏠</span>
           </button>
         </div>
 

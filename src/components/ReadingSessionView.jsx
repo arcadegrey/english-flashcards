@@ -22,6 +22,7 @@ function ReadingSessionView({
   article,
   mode = 'learn',
   onBack,
+  onHome,
   onOpenMode,
   masteredWords = [],
   wordLookup,
@@ -273,10 +274,15 @@ function ReadingSessionView({
     <div className="learn-refresh-page">
       <header className="learn-refresh-topbar">
         <div className="learn-refresh-topbar-inner">
-          <button type="button" className="learn-refresh-back" onClick={onBack} aria-label="返回阅读列表">
-            <span aria-hidden="true">←</span>
-            <span>返回</span>
-          </button>
+          <div className="learn-refresh-left-actions">
+            <button type="button" className="learn-refresh-back" onClick={onBack} aria-label="返回阅读列表">
+              <span aria-hidden="true">←</span>
+              <span>返回</span>
+            </button>
+            <button type="button" className="learn-refresh-home-btn" onClick={onHome} aria-label="回到首页">
+              <span aria-hidden="true">🏠</span>
+            </button>
+          </div>
 
           <div className="learn-refresh-progress">
             <p className="learn-refresh-progress-main">
