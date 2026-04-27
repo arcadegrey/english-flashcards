@@ -1468,6 +1468,8 @@ function AppContent() {
             onHome={handleBackToStudyHub}
             onSelect={handleToeflLevelSelect}
             onSelectAll={handleStartAllToefl}
+            onSyncAccount={handleHomeSync}
+            onSpeakIntro={() => speak('TOEFL vocabulary. Choose a level, then choose a list to start.', { rate: 1 })}
             selectAllLabel="学习全部托福词汇"
           />
         )
@@ -1487,6 +1489,8 @@ function AppContent() {
             onHome={handleBackToStudyHub}
             onSelect={handleToeflListSelect}
             onSelectAll={handleStartCurrentLevel}
+            onSyncAccount={handleHomeSync}
+            onSpeakIntro={() => speak(`${levelLabel}. Choose a list to start, or study all words in this level.`, { rate: 1 })}
             selectAllLabel={`学习${levelLabel}全部词汇`}
           />
         )

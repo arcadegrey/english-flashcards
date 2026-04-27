@@ -871,6 +871,41 @@
   color: #ffffff;
 }
 
+.toefl-selection-total {
+  margin: 14px 0 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--wl-text);
+}
+
+.toefl-selection-all {
+  width: 100%;
+  min-height: 76px;
+}
+
+.toefl-selection-grid--single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.toefl-selection-card .reading-category-name {
+  font-size: 34px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.toefl-selection-meta {
+  display: block;
+  margin-top: 2px;
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--wl-subtext);
+  transition: color 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reading-category-card:hover .toefl-selection-meta {
+  color: rgba(255, 255, 255, 0.78);
+}
+
 .reading-category-card:disabled:hover .reading-category-name {
   color: var(--wl-text);
 }
