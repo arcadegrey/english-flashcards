@@ -19,6 +19,12 @@ import { buildWordLookup, isEnglishWordToken, resolveVocabularyWord, tokenizeRea
 import { calculateNextReview, getWordsForReview, initializeWordProgress } from './utils/spacedRepetition'
 import { speak } from './utils/speech'
 import {
+  getWordCategories,
+  mergeCategoryLists,
+  wordBelongsToCategory,
+  wordHasToeflCategory,
+} from './utils/wordCategories'
+import {
   fetchCurrentUser,
   isCloudAuthConfigured,
   loadCloudProgress,
@@ -51,9 +57,9 @@ const dedupeIdList = (list) => {
 
 const countFilledFields = (word) => {
   if (!word || typeof word !== 'object') return 0
-  const keys = ['phonetic', 'pos', 'meaning', 'example', 'exampleCn', 'category', 'level', 'list']
+  const keys = ['phonetic', 'pos', 'meaning', 'example', 'exampleCn', 'category', 'categories', 'level', 'list']
   return keys.reduce((count, key) => {
-    const value = String(word[key] ?? '').trim()
+    const value = Array.isArray(word[key]) ? word[key].join('|') : String(word[key] ?? '').trim()
     return value ? count + 1 : count
   }, 0)
 }
@@ -61,7 +67,18 @@ const countFilledFields = (word) => {
 const pickRicherWord = (currentWord, incomingWord) => {
   if (!currentWord) return incomingWord
   if (!incomingWord) return currentWord
-  return countFilledFields(incomingWord) >= countFilledFields(currentWord) ? incomingWord : currentWord
+  const pickedWord = countFilledFields(incomingWord) >= countFilledFields(currentWord) ? incomingWord : currentWord
+  const categories = mergeCategoryLists(currentWord.categories, currentWord.category, incomingWord.categories, incomingWord.category)
+
+  if (categories.length === 0) {
+    return pickedWord
+  }
+
+  return {
+    ...pickedWord,
+    category: pickedWord.category || categories[0],
+    categories,
+  }
 }
 
 const mergeCustomWordList = (baseList, extraList) => {
@@ -174,7 +191,7 @@ const extractNumericTag = (value) => {
 }
 
 const getToeflMeta = (word) => {
-  if (!word || word.category !== 'toefl') {
+  if (!word || !wordHasToeflCategory(word)) {
     return { level: null, list: null }
   }
 
@@ -306,9 +323,9 @@ function AppContent() {
   const wordCounts = useMemo(() => {
     const counts = { all: allVocabulary.length }
     allVocabulary.forEach((word) => {
-      if (word.category) {
-        counts[word.category] = (counts[word.category] || 0) + 1
-      }
+      getWordCategories(word).forEach((categoryId) => {
+        counts[categoryId] = (counts[categoryId] || 0) + 1
+      })
     })
     return counts
   }, [allVocabulary])
@@ -318,7 +335,7 @@ function AppContent() {
       return allVocabulary
     }
 
-    let filtered = allVocabulary.filter((word) => word.category === selectedCategory)
+    let filtered = allVocabulary.filter((word) => wordBelongsToCategory(word, selectedCategory))
     if (selectedCategory !== 'toefl') {
       return filtered
     }
@@ -338,7 +355,7 @@ function AppContent() {
     const levelBuckets = new Map()
 
     allVocabulary.forEach((word) => {
-      if (word.category !== 'toefl') return
+      if (!wordHasToeflCategory(word)) return
 
       const { level, list } = getToeflMeta(word)
       const levelKey = level ? String(level) : TOEFL_UNKNOWN_LEVEL

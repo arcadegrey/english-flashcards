@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import categories from '../data/categories';
 import AuthPanel from './AuthPanel';
+import { wordBelongsToCategory } from '../utils/wordCategories';
 
 const collectionCategories = [
   {
@@ -125,7 +126,7 @@ function HomeScreen({
       }
 
       return vocabularyData.some(
-        (word) => word.category === category.id && matchesWordQuery(word, debouncedQuery)
+        (word) => wordBelongsToCategory(word, category.id) && matchesWordQuery(word, debouncedQuery)
       );
     });
   }, [categoriesWithCollections, debouncedQuery, getCollectionSet, vocabularyData]);
@@ -158,7 +159,7 @@ function HomeScreen({
       }
 
       counts[category.id] = vocabularyData.filter(
-        (word) => word.category === category.id && matchesWordQuery(word, debouncedQuery)
+        (word) => wordBelongsToCategory(word, category.id) && matchesWordQuery(word, debouncedQuery)
       ).length;
     });
 
@@ -198,7 +199,7 @@ function HomeScreen({
         category.id === 'all'
           ? vocabularyData.find((word) => matchesWordQuery(word, debouncedQuery))
           : vocabularyData.find(
-              (word) => word.category === category.id && matchesWordQuery(word, debouncedQuery)
+              (word) => wordBelongsToCategory(word, category.id) && matchesWordQuery(word, debouncedQuery)
             );
 
       if (matchedWord) {

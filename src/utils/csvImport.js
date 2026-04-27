@@ -1,3 +1,5 @@
+import { parseCategoryList } from './wordCategories.js';
+
 const DEFAULT_HEADERS = ['word', 'phonetic', 'pos', 'meaning', 'example', 'exampleCn', 'category', 'level', 'list'];
 const REQUIRED_FIELDS = ['word', 'meaning'];
 const DEFAULT_READING_HEADERS = ['title', 'level', 'category', 'content', 'translation', 'source', 'tags'];
@@ -179,8 +181,11 @@ export const parseVocabularyCsv = ({
       return;
     }
 
-    const normalizedCategory = normalizeText(record.category).toLowerCase();
-    const category = categorySet.has(normalizedCategory) ? normalizedCategory : 'daily';
+    const parsedCategories = parseCategoryList(record.category).filter((categoryId) =>
+      categorySet.has(categoryId)
+    );
+    const categories = parsedCategories.length > 0 ? parsedCategories : ['daily'];
+    const category = categories[0];
     const level = normalizeNumericTag(record.level);
     const list = normalizeNumericTag(record.list);
 
@@ -193,8 +198,9 @@ export const parseVocabularyCsv = ({
       example: normalizeText(record.example),
       exampleCn: normalizeText(record.exampleCn),
       category,
+      categories,
     };
-    if (category === 'toefl') {
+    if (categories.includes('toefl')) {
       if (level) {
         normalizedWord.level = level;
       }
@@ -224,11 +230,11 @@ export const parseVocabularyCsv = ({
 export const getVocabularyCsvTemplate = () =>
   'word,phonetic,pos,meaning,example,exampleCn,category,level,list\n' +
   'collaborate,/kəˈlæbəreɪt/,v.,合作，协作,We collaborate closely with clients.,我们与客户紧密合作。,business,,\n' +
-  'daunt,/dɔːnt/,v.,使气馁,The complexity of the project did not daunt her.,这个项目的复杂性并没有吓倒她。,toefl,3,1\n';
+  'daunt,/dɔːnt/,v.,使气馁,The complexity of the project did not daunt her.,这个项目的复杂性并没有吓倒她。,cet4|toefl,3,1\n';
 
 const parseTagList = (value) =>
   String(value || '')
-    .split(/[|;/,]/)
+    .split(/[|,;，]+/)
     .map((item) => item.trim())
     .filter(Boolean);
 

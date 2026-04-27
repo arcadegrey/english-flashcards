@@ -2,6 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath, pathToFileURL } from 'url';
 import { parseVocabularyCsv } from '../src/utils/csvImport.js';
+import { getWordCategories, mergeCategoryLists, wordHasToeflCategory } from '../src/utils/wordCategories.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -44,6 +45,7 @@ const normalizeNumericTag = (value) => {
 const serializeVocabulary = (list) => {
   const lines = list.map((word) => {
     const id = Number(word.id);
+    const categories = getWordCategories(word);
     const fields = [
       `id: ${id}`,
       `word: ${escapeValue(word.word)}`,
@@ -54,6 +56,10 @@ const serializeVocabulary = (list) => {
       `exampleCn: ${escapeValue(word.exampleCn)}`,
       `category: ${escapeValue(word.category)}`,
     ];
+
+    if ((Array.isArray(word.categories) || categories.length > 1) && categories.length > 0) {
+      fields.push(`categories: ${JSON.stringify(categories)}`);
+    }
 
     if (hasText(word.level)) {
       fields.push(`level: ${escapeValue(normalizeNumericTag(word.level) || String(word.level).trim())}`);
@@ -113,7 +119,13 @@ const main = async () => {
       if (byWord.has(key)) {
         const idx = byWord.get(key);
         const current = merged[idx];
-        const mergedCategory = incoming.category || current.category || 'daily';
+        const categories = mergeCategoryLists(
+          current.categories,
+          current.category,
+          incoming.categories,
+          incoming.category
+        );
+        const mergedCategory = current.category || incoming.category || categories[0] || 'daily';
         const nextWord = {
           ...current,
           phonetic: incoming.phonetic || current.phonetic || '',
@@ -122,9 +134,10 @@ const main = async () => {
           example: incoming.example || current.example || '',
           exampleCn: incoming.exampleCn || current.exampleCn || '',
           category: mergedCategory,
+          categories: categories.length > 0 ? categories : [mergedCategory],
         };
 
-        if (mergedCategory === 'toefl') {
+        if (wordHasToeflCategory(nextWord)) {
           const nextLevel = normalizeNumericTag(incoming.level) || normalizeNumericTag(current.level);
           const nextList = normalizeNumericTag(incoming.list) || normalizeNumericTag(current.list);
 
@@ -152,7 +165,7 @@ const main = async () => {
           id: nextId,
         };
 
-        if (nextWord.category !== 'toefl') {
+        if (!wordHasToeflCategory(nextWord)) {
           delete nextWord.level;
           delete nextWord.list;
         }

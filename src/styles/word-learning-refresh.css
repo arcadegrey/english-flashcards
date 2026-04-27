@@ -1404,6 +1404,222 @@
   transition: width 300ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+.spelling-refresh-card {
+  max-width: 940px;
+  padding: 58px 42px 46px;
+}
+
+.spelling-refresh-header {
+  text-align: center;
+}
+
+.spelling-refresh-kicker {
+  margin: 0 0 14px;
+  color: #6f7480;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.spelling-refresh-title {
+  margin: 0;
+  color: var(--wl-text);
+  font-size: clamp(46px, 6vw, 76px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.spelling-refresh-subtitle {
+  margin: 22px 0 0;
+  color: var(--wl-subtext);
+  font-size: clamp(19px, 2vw, 26px);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.spelling-refresh-panel {
+  margin: 54px auto 0;
+  width: min(100%, 780px);
+  border-radius: 22px;
+  border: 1px solid #e1e4ea;
+  background: #f5f5f7;
+  padding: 24px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  animation: spelling-panel-in 260ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.spelling-refresh-panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+  color: var(--wl-subtext);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.spelling-refresh-input {
+  width: 100%;
+  min-height: 64px;
+  border-radius: 16px;
+  border: 1px solid #dfe3ea;
+  background: #ffffff;
+  color: var(--wl-text);
+  padding: 0 24px;
+  text-align: center;
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  outline: none;
+  transition: border-color 240ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 240ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.spelling-refresh-input::placeholder {
+  color: #a1a7b3;
+  font-weight: 600;
+}
+
+.spelling-refresh-input:focus {
+  border-color: var(--wl-blue);
+  box-shadow: 0 0 0 4px rgba(0, 113, 227, 0.12);
+  transform: translateY(-1px);
+}
+
+.spelling-refresh-actions {
+  display: grid;
+  grid-template-columns: minmax(140px, 0.42fr) minmax(180px, 0.58fr);
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.spelling-refresh-actions--center {
+  display: flex;
+  justify-content: center;
+}
+
+.spelling-refresh-primary,
+.spelling-refresh-secondary {
+  min-height: 50px;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  padding: 0 22px;
+  font-size: 15px;
+  font-weight: 700;
+  transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 240ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 240ms cubic-bezier(0.22, 1, 0.36, 1),
+    color 240ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.spelling-refresh-primary:hover:not(:disabled),
+.spelling-refresh-secondary:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.spelling-refresh-primary {
+  background: var(--wl-blue);
+  border-color: var(--wl-blue);
+  color: #ffffff;
+  box-shadow: 0 10px 22px rgba(0, 113, 227, 0.2);
+}
+
+.spelling-refresh-primary:hover:not(:disabled) {
+  background: #0066ce;
+  border-color: #0066ce;
+}
+
+.spelling-refresh-secondary {
+  background: #ffffff;
+  border-color: #dfe3ea;
+  color: var(--wl-text);
+}
+
+.spelling-refresh-secondary:hover:not(:disabled) {
+  background: #fdfdff;
+  border-color: #cfd6e2;
+}
+
+.spelling-refresh-primary:disabled,
+.spelling-refresh-secondary:disabled {
+  cursor: not-allowed;
+  opacity: 0.56;
+}
+
+.spelling-refresh-hint,
+.spelling-refresh-answer {
+  margin-top: 18px;
+  border-radius: 18px;
+  border: 1px solid #e1e4ea;
+  background: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.spelling-refresh-hint-pattern,
+.spelling-refresh-answer-word {
+  margin: 0;
+  color: var(--wl-text);
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  word-break: break-word;
+}
+
+.spelling-refresh-hint-meta,
+.spelling-refresh-answer-phonetic {
+  margin: 8px 0 0;
+  color: #007a9d;
+  font-size: 18px;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.spelling-refresh-hint-meaning,
+.spelling-refresh-answer-meaning {
+  margin: 10px 0 0;
+  color: var(--wl-subtext);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.spelling-refresh-result {
+  border-radius: 16px;
+  border: 1px solid;
+  padding: 14px 16px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.spelling-refresh-result--correct {
+  border-color: #b7ddc6;
+  background: #f0fdf4;
+  color: #166534;
+}
+
+.spelling-refresh-result--wrong {
+  border-color: #fecaca;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+@keyframes spelling-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .learn-refresh-assessment-dock {
   position: fixed;
   right: 0;
@@ -1454,6 +1670,9 @@
 .learn-refresh-icon-btn:focus-visible,
 .learn-refresh-inline-audio:focus-visible,
 .learn-refresh-example-audio:focus-visible,
+.spelling-refresh-primary:focus-visible,
+.spelling-refresh-secondary:focus-visible,
+.spelling-refresh-input:focus-visible,
 .learn-refresh-menu-item:focus-visible,
 .learn-refresh-action:focus-visible {
   outline: 2px solid var(--wl-blue);
@@ -1780,6 +1999,63 @@
 
   .learn-refresh-quiz-progress-track {
     margin-top: 7px;
+  }
+
+  .spelling-refresh-card {
+    padding: 34px 16px 22px;
+  }
+
+  .spelling-refresh-kicker {
+    margin-bottom: 10px;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+  }
+
+  .spelling-refresh-subtitle {
+    margin-top: 14px;
+  }
+
+  .spelling-refresh-panel {
+    margin-top: 30px;
+    border-radius: 18px;
+    padding: 14px;
+  }
+
+  .spelling-refresh-panel-head {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .spelling-refresh-panel-head .learn-refresh-example-audio {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .spelling-refresh-input {
+    min-height: 58px;
+    border-radius: 14px;
+    padding: 0 16px;
+  }
+
+  .spelling-refresh-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .spelling-refresh-actions--center {
+    display: grid;
+  }
+
+  .spelling-refresh-primary,
+  .spelling-refresh-secondary {
+    width: 100%;
+  }
+
+  .spelling-refresh-hint,
+  .spelling-refresh-answer {
+    border-radius: 16px;
+    padding: 16px;
   }
 
   .learn-refresh-assessment-dock {
