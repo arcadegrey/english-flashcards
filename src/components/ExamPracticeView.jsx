@@ -17,6 +17,12 @@ const EXAM_MODES = [
     title: '拼写',
     meta: '听发音拼写单词',
   },
+  {
+    id: 'matching',
+    icon: '🔗',
+    title: '连线',
+    meta: '单词和释义配对',
+  },
 ];
 
 const EXAM_SCOPES = [
@@ -78,7 +84,7 @@ function ExamPracticeView({
           </div>
 
           <div className="learn-refresh-progress">
-            <p className="learn-refresh-progress-main">3 种</p>
+            <p className="learn-refresh-progress-main">{EXAM_MODES.length} 种</p>
             <p className="learn-refresh-progress-sub">考试巩固</p>
           </div>
 

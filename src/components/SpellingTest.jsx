@@ -11,7 +11,7 @@ const pickRandomWord = (vocabulary = []) => {
   return vocabulary[randomIndex] || null;
 };
 
-function SpellingTest({ vocabulary, onWrongAnswer, onCorrectAnswer }) {
+function SpellingTest({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswer }) {
   const [currentWord, setCurrentWord] = useState(() => pickRandomWord(vocabulary));
   const [userInput, setUserInput] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -109,10 +109,13 @@ function SpellingTest({ vocabulary, onWrongAnswer, onCorrectAnswer }) {
       <CorrectAnswerCelebration trigger={celebrationTrigger} />
 
       <section className="learn-refresh-card learn-refresh-card-enter spelling-refresh-card">
-        <header className="spelling-refresh-header">
-          <p className="spelling-refresh-kicker">SPELLING PRACTICE</p>
-          <h1 className="spelling-refresh-title">听音拼写</h1>
-          <p className="spelling-refresh-subtitle">播放发音后输入你听到的英文单词。</p>
+        <header className="assessment-refresh-top">
+          <p className="assessment-refresh-prompt">听发音并完成拼写</p>
+          {sourceLabel && (
+            <div className="assessment-refresh-source">
+              <span>{sourceLabel}</span>
+            </div>
+          )}
         </header>
 
         {!isSubmitted ? (

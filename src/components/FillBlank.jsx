@@ -191,15 +191,14 @@ function FillBlank({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswe
       <CorrectAnswerCelebration trigger={celebrationTrigger} />
 
       <section className="learn-refresh-card learn-refresh-card-enter">
-        <p className="text-center text-sm font-medium text-[#6e6e73]">听例句并完成填空</p>
-
-        {sourceLabel && (
-          <div className="mt-3 flex justify-center">
-            <span className="inline-flex rounded-full border border-[#e8e8ed] bg-[#f5f5f7] px-3 py-1 text-xs font-medium text-[#6e6e73]">
-              {sourceLabel}
-            </span>
-          </div>
-        )}
+        <header className="assessment-refresh-top">
+          <p className="assessment-refresh-prompt">听例句并完成填空</p>
+          {sourceLabel && (
+            <div className="assessment-refresh-source">
+              <span>{sourceLabel}</span>
+            </div>
+          )}
+        </header>
 
         <section className="learn-refresh-example-block mt-6" aria-label="填空例句">
           <div className="learn-refresh-example-head">

@@ -3,6 +3,7 @@ import Card from './Card';
 import Quiz from './Quiz';
 import FillBlank from './FillBlank';
 import SpellingTest from './SpellingTest';
+import MatchingTest from './MatchingTest';
 import VoiceSettings from './VoiceSettings';
 import {
   DEFAULT_SPEECH_RATE,
@@ -18,11 +19,13 @@ const MODE_OPTIONS = [
   { id: 'quiz', icon: '✏️', label: '测验' },
   { id: 'fillblank', icon: '🧩', label: '填空' },
   { id: 'spelling', icon: '🔤', label: '拼写' },
+  { id: 'matching', icon: '🔗', label: '连线' },
 ];
 const MODE_SUBTITLE = {
   quiz: '选择正确释义',
   fillblank: '听例句并完成填空',
   spelling: '听发音拼写单词',
+  matching: '单词和释义配对',
 };
 const MENU_CLOSE_DURATION_MS = 220;
 
@@ -393,6 +396,14 @@ function LearningView({
         ) : mode === 'spelling' ? (
           <SpellingTest
             vocabulary={examVocabulary}
+            sourceLabel={examSourceLabel}
+            onWrongAnswer={onWrongAnswer}
+            onCorrectAnswer={onAddMastered}
+          />
+        ) : mode === 'matching' ? (
+          <MatchingTest
+            vocabulary={examVocabulary}
+            sourceLabel={examSourceLabel}
             onWrongAnswer={onWrongAnswer}
             onCorrectAnswer={onAddMastered}
           />

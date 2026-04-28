@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { speak } from '../utils/speech';
 import { playSuccessChime } from '../utils/feedback';
 import CorrectAnswerCelebration from './CorrectAnswerCelebration';
@@ -36,7 +36,6 @@ function Quiz({
   vocabulary,
   optionVocabulary = [],
   sourceLabel = '题库测验',
-  masteredWords,
   onAddMastered,
   onWrongAnswer,
 }) {
@@ -51,13 +50,6 @@ function Quiz({
   const [celebrationTrigger, setCelebrationTrigger] = useState(0);
   const isFirstRenderRef = useRef(true);
   const nextQuestionTimer = useRef(null);
-  const masteredWordSet = useMemo(() => new Set(masteredWords), [masteredWords]);
-
-  const masteredCount = useMemo(
-    () => vocabulary.reduce((count, word) => count + (masteredWordSet.has(word.id) ? 1 : 0), 0),
-    [vocabulary, masteredWordSet]
-  );
-  const masteredPercent = vocabulary.length > 0 ? Math.round((masteredCount / vocabulary.length) * 100) : 0;
 
   const generateQuestion = useCallback(() => {
     const nextRound = createQuizRound(vocabulary, optionVocabulary);
@@ -121,7 +113,7 @@ function Quiz({
 
   if (!currentQuestion) {
     return (
-      <div className="rounded-[20px] border border-[#e8e8ed] bg-white p-8 text-center text-[#6e6e73]">
+      <div className="learn-refresh-empty-state">
         词库加载中...
       </div>
     );
@@ -133,32 +125,16 @@ function Quiz({
     <div className="space-y-4 pb-[108px] md:space-y-5 md:pb-[124px]">
       <CorrectAnswerCelebration trigger={celebrationTrigger} />
 
-      <section className="learn-refresh-card learn-refresh-card-enter">
-        <p className="text-center text-sm font-medium text-[#6e6e73]">请选择正确释义</p>
+      <section className="learn-refresh-card learn-refresh-card-enter quiz-refresh-card">
+        <header className="assessment-refresh-top">
+          <p className="assessment-refresh-prompt">请选择正确释义</p>
+          <div className="assessment-refresh-source">
+            <span>{sourceLabel}</span>
+          </div>
+        </header>
 
-        <div className="learn-refresh-quiz-stats" aria-label="测验统计">
-          <p className="learn-refresh-quiz-stat">
-            <span className="learn-refresh-quiz-stat-label">得分</span>
-            <span className="learn-refresh-quiz-stat-value">{score}</span>
-          </p>
-          <p className="learn-refresh-quiz-stat">
-            <span className="learn-refresh-quiz-stat-label">连击</span>
-            <span className="learn-refresh-quiz-stat-value">{streak}</span>
-          </p>
-          <p className="learn-refresh-quiz-stat">
-            <span className="learn-refresh-quiz-stat-label">正确率</span>
-            <span className="learn-refresh-quiz-stat-value">{accuracy}%</span>
-          </p>
-        </div>
-
-        <div className="mt-3 flex justify-center">
-          <span className="inline-flex rounded-full border border-[#e8e8ed] bg-[#f5f5f7] px-3 py-1 text-xs font-medium text-[#6e6e73]">
-            {sourceLabel}
-          </span>
-        </div>
-
-        <div className="learn-refresh-word-block mt-6">
-          <h2 className="learn-refresh-word text-[52px] md:text-[72px]">{currentQuestion.word}</h2>
+        <section className="quiz-refresh-question" aria-label="当前题目">
+          <h2 className="quiz-refresh-word">{currentQuestion.word}</h2>
           <div className="learn-refresh-phonetic-row">
             <p className="learn-refresh-phonetic">{currentQuestion.phonetic || 'N/A'}</p>
             <button
@@ -174,7 +150,7 @@ function Quiz({
               </svg>
             </button>
           </div>
-        </div>
+        </section>
 
         <div className="learn-refresh-quiz-options">
           {options.map((option, index) => {
@@ -211,31 +187,28 @@ function Quiz({
 
         {selectedAnswer && (
           <div
-            className={`mt-4 rounded-[14px] border px-4 py-3 text-sm ${
-              isCorrect
-                ? 'border-[#b7ddc6] bg-[#f0fdf4] text-[#166534]'
-                : 'border-[#fecaca] bg-[#fef2f2] text-[#b91c1c]'
+            className={`quiz-refresh-result ${
+              isCorrect ? 'quiz-refresh-result--correct' : 'quiz-refresh-result--wrong'
             }`}
           >
             {isCorrect ? '回答正确。' : `回答错误，正确答案：${currentQuestion.meaning}`}
           </div>
         )}
-
       </section>
 
-      <footer className="learn-refresh-quiz-progress-dock">
-        <div className="learn-refresh-quiz-progress-dock-inner">
-          <div className="learn-refresh-quiz-progress-row">
-            <span>学习池掌握进度</span>
-            <span className="font-medium text-[#1d1d1f]">
-              {masteredCount} / {vocabulary.length}
-            </span>
+      <footer className="learn-refresh-assessment-dock">
+        <div className="learn-refresh-assessment-dock-inner">
+          <div className="learn-refresh-assessment-stat">
+            <span className="learn-refresh-assessment-stat-label">得分</span>
+            <span className="learn-refresh-assessment-stat-value">{score}</span>
           </div>
-          <div className="learn-refresh-quiz-progress-track">
-            <div
-              className="learn-refresh-quiz-progress-fill"
-              style={{ width: `${masteredPercent}%` }}
-            />
+          <div className="learn-refresh-assessment-stat">
+            <span className="learn-refresh-assessment-stat-label">连击</span>
+            <span className="learn-refresh-assessment-stat-value">{streak}</span>
+          </div>
+          <div className="learn-refresh-assessment-stat">
+            <span className="learn-refresh-assessment-stat-label">正确率</span>
+            <span className="learn-refresh-assessment-stat-value">{accuracy}%</span>
           </div>
         </div>
       </footer>
