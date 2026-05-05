@@ -3,7 +3,7 @@
 ## 项目用途
 
 - 一个 Vite + React 英语学习应用，用于单词卡片学习、测验、填空、拼写、阅读练习、错题复习和学习统计。
-- 内置词库与阅读材料来自 `src/data/*`，用户自定义词和学习进度保存在本地 storage，并可同步到 Cloudflare Worker + D1。
+- 内置词库来自 `public/data/vocabulary.json` 并在启动时异步加载；阅读材料来自 `src/data/readings.js`。用户自定义词和学习进度保存在本地 storage，并可同步到 Cloudflare Worker + D1。
 
 ## 启动命令
 

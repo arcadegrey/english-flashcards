@@ -1,7 +1,7 @@
 # 全站共享词库维护流程
 
 ## 目标
-把 CSV 单词表导入到项目词库文件 `src/data/vocabulary.js`，提交并部署后，全站用户可见。
+把 CSV 单词表导入到全站词库文件 `public/data/vocabulary.json`，提交并部署后，全站用户可见。
 
 ## CSV 列
 - 必填：`word`, `meaning`

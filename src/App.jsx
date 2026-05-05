@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react'
 import { ThemeProvider } from './context/ThemeContext'
 import { useTheme } from './context/theme-context'
-import vocabulary from './data/vocabulary'
+import { loadVocabulary } from './data/vocabulary'
 import readings from './data/readings'
 import categories from './data/categories'
 import StudyHub from './components/StudyHub'
@@ -256,6 +256,10 @@ function AppContent() {
   const [wordProgress, setWordProgress] = useState({})
   const [studyHistory, setStudyHistory] = useState([])
   const [customWords, setCustomWords] = useState([])
+  const [vocabulary, setVocabulary] = useState([])
+  const [vocabularyLoading, setVocabularyLoading] = useState(true)
+  const [vocabularyError, setVocabularyError] = useState('')
+  const [vocabularyReloadKey, setVocabularyReloadKey] = useState(0)
   const [shuffledWords, setShuffledWords] = useState([])
   const historyReadyRef = useRef(false)
   const restoringFromHistoryRef = useRef(false)
@@ -278,7 +282,7 @@ function AppContent() {
   const [homeAccountNotice, setHomeAccountNotice] = useState(null)
   const homeNoticeTimerRef = useRef(null)
 
-  const allVocabulary = useMemo(() => [...vocabulary, ...customWords], [customWords])
+  const allVocabulary = useMemo(() => [...vocabulary, ...customWords], [customWords, vocabulary])
   const vocabularyLookup = useMemo(() => buildWordLookup(allVocabulary), [allVocabulary])
   const masteredWordIdSet = useMemo(
     () => new Set(masteredWords.map((item) => String(item))),
@@ -407,6 +411,35 @@ function AppContent() {
     }
     return toeflGrouping.listsByLevel[selectedToeflLevel] || []
   }, [selectedToeflLevel, toeflGrouping.listsByLevel])
+
+  useEffect(() => {
+    let cancelled = false
+
+    const load = async () => {
+      setVocabularyLoading(true)
+      setVocabularyError('')
+
+      try {
+        const loadedVocabulary = await loadVocabulary()
+        if (cancelled) return
+        setVocabulary(loadedVocabulary)
+      } catch (error) {
+        if (cancelled) return
+        setVocabulary([])
+        setVocabularyError(error?.message || '词库加载失败')
+      } finally {
+        if (!cancelled) {
+          setVocabularyLoading(false)
+        }
+      }
+    }
+
+    load()
+
+    return () => {
+      cancelled = true
+    }
+  }, [vocabularyReloadKey])
 
   useEffect(() => {
     const pendingStartWordId = pendingStartWordIdRef.current
@@ -1351,6 +1384,35 @@ function AppContent() {
       ? 'bg-gradient-to-br from-slate-950 via-slate-900 to-slate-900'
       : 'bg-gradient-to-br from-slate-100 via-sky-50 to-indigo-100'
   }, [isDark, view])
+
+  if (vocabularyLoading) {
+    return (
+      <div className={`min-h-screen ${appBackground} flex items-center justify-center px-4`}>
+        <div className="w-full max-w-[360px] rounded-[16px] border border-[#e5e7eb] bg-white p-6 text-center shadow-[0_18px_45px_rgba(15,23,42,0.08)]">
+          <p className="text-lg font-semibold text-[#111827]">正在加载词库</p>
+          <p className="mt-2 text-sm text-[#6b7280]">首次打开会缓存到本机，之后会更快。</p>
+        </div>
+      </div>
+    )
+  }
+
+  if (vocabularyError) {
+    return (
+      <div className={`min-h-screen ${appBackground} flex items-center justify-center px-4`}>
+        <div className="w-full max-w-[380px] rounded-[16px] border border-[#fecaca] bg-white p-6 text-center shadow-[0_18px_45px_rgba(15,23,42,0.08)]">
+          <p className="text-lg font-semibold text-[#991b1b]">词库加载失败</p>
+          <p className="mt-2 text-sm text-[#6b7280]">{vocabularyError}</p>
+          <button
+            type="button"
+            className="mt-4 rounded-full bg-[#111827] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#374151]"
+            onClick={() => setVocabularyReloadKey((key) => key + 1)}
+          >
+            重新加载
+          </button>
+        </div>
+      </div>
+    )
+  }
 
   const renderView = () => {
     switch (view) {

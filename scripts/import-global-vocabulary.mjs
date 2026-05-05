@@ -7,7 +7,7 @@ import { getWordCategories, mergeCategoryLists, wordHasToeflCategory } from '../
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, '..');
-const vocabularyFilePath = path.resolve(projectRoot, 'src/data/vocabulary.js');
+const vocabularyFilePath = path.resolve(projectRoot, 'public/data/vocabulary.json');
 const categoriesFilePath = path.resolve(projectRoot, 'src/data/categories.js');
 
 const usage = `
@@ -28,8 +28,6 @@ const parseArgs = () => {
   return { csvPath, dryRun, upsert };
 };
 
-const escapeValue = (value) => JSON.stringify(value ?? '');
-const hasText = (value) => String(value ?? '').trim().length > 0;
 const normalizeNumericTag = (value) => {
   const text = String(value ?? '').trim();
   if (!text) return '';
@@ -42,37 +40,13 @@ const normalizeNumericTag = (value) => {
   return String(parsed);
 };
 
-const serializeVocabulary = (list) => {
-  const lines = list.map((word) => {
-    const id = Number(word.id);
-    const categories = getWordCategories(word);
-    const fields = [
-      `id: ${id}`,
-      `word: ${escapeValue(word.word)}`,
-      `phonetic: ${escapeValue(word.phonetic)}`,
-      `pos: ${escapeValue(word.pos)}`,
-      `meaning: ${escapeValue(word.meaning)}`,
-      `example: ${escapeValue(word.example)}`,
-      `exampleCn: ${escapeValue(word.exampleCn)}`,
-      `category: ${escapeValue(word.category)}`,
-    ];
-
-    if ((Array.isArray(word.categories) || categories.length > 1) && categories.length > 0) {
-      fields.push(`categories: ${JSON.stringify(categories)}`);
-    }
-
-    if (hasText(word.level)) {
-      fields.push(`level: ${escapeValue(normalizeNumericTag(word.level) || String(word.level).trim())}`);
-    }
-    if (hasText(word.list)) {
-      fields.push(`list: ${escapeValue(normalizeNumericTag(word.list) || String(word.list).trim())}`);
-    }
-
-    return `  { ${fields.join(', ')} },`;
-  });
-
-  return `export const vocabulary = [\n${lines.join('\n')}\n];\n\nexport default vocabulary;\n`;
+const loadExistingVocabulary = async () => {
+  const text = await fs.readFile(vocabularyFilePath, 'utf8');
+  const vocabulary = JSON.parse(text);
+  return Array.isArray(vocabulary) ? vocabulary : [];
 };
+
+const serializeVocabulary = (list) => `${JSON.stringify(list)}\n`;
 
 const main = async () => {
   const { csvPath, dryRun, upsert } = parseArgs();
@@ -84,10 +58,9 @@ const main = async () => {
   const absoluteCsvPath = path.resolve(projectRoot, csvPath);
   const csvText = await fs.readFile(absoluteCsvPath, 'utf8');
 
-  const vocabularyModule = await import(pathToFileURL(vocabularyFilePath).href);
   const categoriesModule = await import(pathToFileURL(categoriesFilePath).href);
 
-  const existingVocabulary = vocabularyModule.default || vocabularyModule.vocabulary || [];
+  const existingVocabulary = await loadExistingVocabulary();
   const categoryList = categoriesModule.default || categoriesModule.categories || [];
   const categoryIds = categoryList.map((item) => item.id);
 
@@ -220,7 +193,7 @@ const main = async () => {
   await fs.writeFile(vocabularyFilePath, output, 'utf8');
 
   console.log(
-    `Imported ${summary.importedCount} words into src/data/vocabulary.js (skippedInvalid=${summary.skippedInvalid}, skippedDuplicate=${summary.skippedDuplicate}, total=${merged.length}).`
+    `Imported ${summary.importedCount} words into public/data/vocabulary.json (skippedInvalid=${summary.skippedInvalid}, skippedDuplicate=${summary.skippedDuplicate}, total=${merged.length}).`
   );
 };
 
