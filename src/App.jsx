@@ -548,9 +548,6 @@ function AppContent() {
     setSyncError('')
 
     const syncResult = await upsertCloudProgress({
-      userId: user.id,
-      accessToken: session.access_token,
-      refreshToken: session.refresh_token,
       progress,
       baseUpdatedAt:
         typeof options.baseUpdatedAt === 'string'
@@ -594,11 +591,7 @@ function AppContent() {
   const hydrateFromCloud = useCallback(async ({ session, user }) => {
     if (!cloudEnabled || !session?.access_token || !user?.id) return
 
-    const { progress: cloudProgress, updatedAt } = await loadCloudProgress({
-      userId: user.id,
-      accessToken: session.access_token,
-      refreshToken: session.refresh_token,
-    })
+    const { progress: cloudProgress, updatedAt } = await loadCloudProgress()
 
     const merged = mergeProgress(
       {
@@ -636,12 +629,7 @@ function AppContent() {
       return session
     }
 
-    if (!session.refresh_token) {
-      const refreshed = await refreshSession()
-      return refreshed.session
-    }
-
-    const refreshed = await refreshSession(session.refresh_token)
+    const refreshed = await refreshSession()
     return refreshed.session
   }, [])
 
@@ -676,7 +664,7 @@ function AppContent() {
         storage.setAuthSession(activeSession)
         const user =
           activeSession.user ||
-          (await fetchCurrentUser(activeSession.access_token, activeSession.refresh_token))
+          (await fetchCurrentUser())
 
         setAuthSession(activeSession)
         setAuthUser(user)
@@ -803,7 +791,7 @@ function AppContent() {
   const handleAuthLogout = async () => {
     if (authSession?.access_token) {
       try {
-        await signOut(authSession.access_token)
+        await signOut()
       } catch {
         // Logout failure does not block local sign-out.
       }
@@ -1237,8 +1225,11 @@ function AppContent() {
   const resetProgress = () => {
     setLearnedWords([])
     setMasteredWords([])
+    setWrongWords([])
+    setWordProgress({})
+    setStudyHistory([])
     setCurrentIndex(0)
-    storage.clear()
+    storage.clearProgress()
     const shuffled = [...filteredVocabulary].sort(() => Math.random() - 0.5)
     setShuffledWords(shuffled)
   }

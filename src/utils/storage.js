@@ -71,13 +71,20 @@ export const storage = {
     }
   },
 
-  clear: () => {
+  clearProgress: () => {
     try {
       localStorage.removeItem(STORAGE_KEYS.LEARNED_WORDS);
       localStorage.removeItem(STORAGE_KEYS.MASTERED_WORDS);
+      localStorage.removeItem(STORAGE_KEYS.WORD_PROGRESS);
+      localStorage.removeItem(STORAGE_KEYS.WRONG_WORDS);
+      localStorage.removeItem(STORAGE_KEYS.STUDY_HISTORY);
     } catch (error) {
-      console.error('Failed to clear storage:', error);
+      console.error('Failed to clear progress:', error);
     }
+  },
+
+  clear: () => {
+    storage.clearProgress();
   },
 
   getAuthSession: () => {

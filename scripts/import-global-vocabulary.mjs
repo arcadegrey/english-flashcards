@@ -46,7 +46,7 @@ const loadExistingVocabulary = async () => {
   return Array.isArray(vocabulary) ? vocabulary : [];
 };
 
-const serializeVocabulary = (list) => `${JSON.stringify(list)}\n`;
+const serializeVocabulary = (list) => `${JSON.stringify(list, null, 2)}\n`;
 
 const main = async () => {
   const { csvPath, dryRun, upsert } = parseArgs();

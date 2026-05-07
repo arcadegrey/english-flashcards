@@ -172,7 +172,7 @@ const mergeStudyHistory = (baseList, incomingList) => {
     .slice(-90);
 };
 
-const mergeProgress = (baseProgress, incomingProgress) => {
+export const mergeProgress = (baseProgress, incomingProgress) => {
   const base = normalizeProgress(baseProgress);
   const incoming = normalizeProgress(incomingProgress);
 

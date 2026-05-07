@@ -10,6 +10,7 @@
 - 前端开发：`npm run dev`
 - Worker 本地开发：`npm run worker:dev`
 - 构建：`npm run build`
+- 测试：`npm test`
 - 预览构建产物：`npm run preview`
 - 代码检查：`npm run lint`
 - D1 迁移：`npm run d1:migrate`
@@ -59,17 +60,13 @@
 
 ## 当前已知风险
 
-- 指定文件 `src/components/QuizView.jsx` 不存在；当前 `LearningView` 实际引用的是 `./Quiz`。
-- `App.jsx` 调用部分 auth 函数时仍传入 access/refresh token，但 `workerAuth.js` 当前实现主要依赖 cookie；多余参数无效但容易造成维护误解。
-- `resetProgress` 会调用 `storage.clear()`，可能清除范围超过学习进度本身，需要确认 storage 实现。
+- `resetProgress` 会调用 `storage.clearProgress()` 清除学习进度、错题、复习计划和统计历史，但会保留账号、主题、语音设置和自定义词。
 - 进度合并以数组去重和对象浅合并为主，`wordProgress` 同一单词的冲突会以后写入对象覆盖。
 - Worker 发送验证码依赖 Resend；本地或测试环境若缺少环境变量，登录链路会直接失败。
 - CSV 解析器是自实现，不支持复杂 Excel 方言或分号分隔文件。
 
 ## 下一步建议
 
-- 明确 `QuizView.jsx` 是否应删除引用记录、补文件，还是统一命名为现有 `Quiz`。
-- 检查 `storage.clear()` 的影响范围，必要时拆成只清学习进度的清理函数。
-- 为 CSV 导入补充最小单元测试，覆盖重复、缺字段、TOEFL level/list、带引号换行内容。
-- 为 Worker 进度合并补测试，尤其是多端并发更新同一 `wordProgress` 的行为。
-- 整理前端 auth API 参数，让 cookie 会话模型和函数签名保持一致。
+- 继续加大量词库前，考虑把 `public/data/vocabulary.json` 按类别、Level 或 List 分片，减少 PWA 更新时必须重新预缓存的单文件体积。
+- 为阅读 CSV 导入补充最小单元测试，覆盖重复、缺字段、tags 分隔和带引号换行内容。
+- 如需更强多端同步语义，为 `wordProgress` 增加单词级 `updatedAt`，再按单词更新时间解决冲突。
