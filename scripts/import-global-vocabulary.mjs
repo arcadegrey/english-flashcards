@@ -3,6 +3,7 @@ import path from 'path';
 import { fileURLToPath, pathToFileURL } from 'url';
 import { parseVocabularyCsv } from '../src/utils/csvImport.js';
 import { getWordCategories, mergeCategoryLists, wordHasToeflCategory } from '../src/utils/wordCategories.js';
+import { splitVocabulary } from './split-vocabulary.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -161,8 +162,9 @@ const main = async () => {
     }
 
     await fs.writeFile(vocabularyFilePath, output, 'utf8');
+    await splitVocabulary(merged);
     console.log(
-      `Upsert complete: updated=${updated}, inserted=${inserted}, skippedInvalid=${summary.skippedInvalid}, total=${merged.length}.`
+      `Upsert complete: updated=${updated}, inserted=${inserted}, skippedInvalid=${summary.skippedInvalid}, total=${merged.length}. Split files refreshed.`
     );
     return;
   }
@@ -191,9 +193,10 @@ const main = async () => {
   }
 
   await fs.writeFile(vocabularyFilePath, output, 'utf8');
+  await splitVocabulary(merged);
 
   console.log(
-    `Imported ${summary.importedCount} words into public/data/vocabulary.json (skippedInvalid=${summary.skippedInvalid}, skippedDuplicate=${summary.skippedDuplicate}, total=${merged.length}).`
+    `Imported ${summary.importedCount} words into public/data/vocabulary.json (skippedInvalid=${summary.skippedInvalid}, skippedDuplicate=${summary.skippedDuplicate}, total=${merged.length}). Split files refreshed.`
   );
 };
 

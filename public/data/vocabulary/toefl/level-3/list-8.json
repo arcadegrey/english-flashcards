@@ -1,0 +1,1489 @@
+[
+  {
+    "id": 493,
+    "word": "column",
+    "phonetic": "/ˈkɑːləm/",
+    "pos": "n.",
+    "meaning": "柱；栏目；纵列",
+    "example": "Please write the results in the last column.",
+    "exampleCn": "请把结果写在最后一栏里。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "academic"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 499,
+    "word": "command",
+    "phonetic": "/kəˈmænd/",
+    "pos": "n./v.",
+    "meaning": "命令；指挥/命令；掌握",
+    "example": "She has a good command of academic English.",
+    "exampleCn": "她很好地掌握了学术英语。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet6"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1137,
+    "word": "labor",
+    "phonetic": "/ˈleɪbər/",
+    "pos": "n./v.",
+    "meaning": "劳动/劳工；努力工作",
+    "example": "The project required months of labor.",
+    "exampleCn": "这个项目需要数月的劳动。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1138,
+    "word": "comparative",
+    "phonetic": "/kəmˈpærətɪv/",
+    "pos": "adj.",
+    "meaning": "比较的；相对的",
+    "example": "The study offers a comparative analysis of the two systems.",
+    "exampleCn": "这项研究对这两个系统进行了比较分析。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1139,
+    "word": "considerate",
+    "phonetic": "/kənˈsɪdərət/",
+    "pos": "adj.",
+    "meaning": "体贴的；考虑周到的",
+    "example": "It was considerate of her to wait for the others.",
+    "exampleCn": "她等其他人真是很体贴。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1140,
+    "word": "comical",
+    "phonetic": "/ˈkɑːmɪkəl/",
+    "pos": "adj.",
+    "meaning": "滑稽的；好笑的",
+    "example": "His comical expression made the audience laugh.",
+    "exampleCn": "他滑稽的表情把观众逗笑了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1141,
+    "word": "preservation",
+    "phonetic": "/ˌprezərˈveɪʃən/",
+    "pos": "n.",
+    "meaning": "保护；保存",
+    "example": "The museum supports the preservation of ancient art.",
+    "exampleCn": "这家博物馆支持古代艺术的保护。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1142,
+    "word": "flatten",
+    "phonetic": "/ˈflætən/",
+    "pos": "v.",
+    "meaning": "使变平；压平",
+    "example": "The workers flattened the ground before construction.",
+    "exampleCn": "工人在施工前把地面压平了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1143,
+    "word": "concern",
+    "phonetic": "/kənˈsɜːrn/",
+    "pos": "n./v.",
+    "meaning": "担忧；关心/涉及；使担心",
+    "example": "Air pollution is a major public concern.",
+    "exampleCn": "空气污染是一个重大的公众担忧问题。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1144,
+    "word": "modernization",
+    "phonetic": "/ˌmɑːdərnəˈzeɪʃən/",
+    "pos": "n.",
+    "meaning": "现代化",
+    "example": "The modernization of the railway improved transportation.",
+    "exampleCn": "铁路的现代化改善了交通。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1145,
+    "word": "nutrient",
+    "phonetic": "/ˈnuːtriənt/",
+    "pos": "n.",
+    "meaning": "营养物；养分",
+    "example": "Plants absorb nutrients from the soil.",
+    "exampleCn": "植物从土壤中吸收养分。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1146,
+    "word": "pave",
+    "phonetic": "/peɪv/",
+    "pos": "v.",
+    "meaning": "铺设；为……铺平道路",
+    "example": "The city plans to pave the road next month.",
+    "exampleCn": "这座城市计划下个月铺设这条路。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1147,
+    "word": "nest",
+    "phonetic": "/nest/",
+    "pos": "n./v.",
+    "meaning": "巢；窝/筑巢",
+    "example": "The birds built a nest in the tree.",
+    "exampleCn": "鸟儿在树上筑了一个巢。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1148,
+    "word": "economical",
+    "phonetic": "/ˌiːkəˈnɑːmɪkəl/",
+    "pos": "adj.",
+    "meaning": "经济的；节省的",
+    "example": "This car is economical to operate.",
+    "exampleCn": "这辆车开起来很省钱。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1149,
+    "word": "micro",
+    "phonetic": "/ˈmaɪkroʊ/",
+    "pos": "adj./prefix",
+    "meaning": "极小的；微型的/微，小",
+    "example": "micro changes can have large effects over time.",
+    "exampleCn": "微小的变化随着时间可能产生巨大的影响。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1150,
+    "word": "invisible",
+    "phonetic": "/ɪnˈvɪzəbəl/",
+    "pos": "adj.",
+    "meaning": "看不见的；隐形的",
+    "example": "Some gases are invisible to the human eye.",
+    "exampleCn": "有些气体是人眼看不见的。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1151,
+    "word": "quantify",
+    "phonetic": "/ˈkwɑːntɪfaɪ/",
+    "pos": "v.",
+    "meaning": "量化；测定数量",
+    "example": "Researchers tried to quantify the economic impact.",
+    "exampleCn": "研究人员试图量化其经济影响。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1152,
+    "word": "defend",
+    "phonetic": "/dɪˈfend/",
+    "pos": "v.",
+    "meaning": "防御；辩护",
+    "example": "The lawyer worked hard to defend her client.",
+    "exampleCn": "律师努力为她的当事人辩护。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1153,
+    "word": "donate",
+    "phonetic": "/ˈdoʊneɪt/",
+    "pos": "v.",
+    "meaning": "捐赠；捐献",
+    "example": "Many citizens donated money after the disaster.",
+    "exampleCn": "灾难发生后许多市民捐了款。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1154,
+    "word": "outline",
+    "phonetic": "/ˈaʊtlaɪn/",
+    "pos": "n./v.",
+    "meaning": "提纲；轮廓/概述",
+    "example": "The professor gave an outline of the lecture.",
+    "exampleCn": "教授给出了讲座的提纲。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1155,
+    "word": "biographer",
+    "phonetic": "/baɪˈɑːɡrəfər/",
+    "pos": "n.",
+    "meaning": "传记作者",
+    "example": "The biographer spent years studying the writer’s life.",
+    "exampleCn": "这位传记作者花了多年研究这位作家的生平。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1156,
+    "word": "profile",
+    "phonetic": "/ˈproʊfaɪl/",
+    "pos": "n./v.",
+    "meaning": "简介；侧面轮廓/描绘……的特征",
+    "example": "The magazine published a profile of the scientist.",
+    "exampleCn": "这本杂志刊登了这位科学家的简介。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1157,
+    "word": "harvest",
+    "phonetic": "/ˈhɑːrvɪst/",
+    "pos": "n./v.",
+    "meaning": "收获；收成/收割",
+    "example": "Farmers expect a good harvest this year.",
+    "exampleCn": "农民预计今年会有好收成。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1158,
+    "word": "graceful",
+    "phonetic": "/ˈɡreɪsfəl/",
+    "pos": "adj.",
+    "meaning": "优雅的；优美的",
+    "example": "The dancer made a graceful movement across the stage.",
+    "exampleCn": "舞者优雅地穿过舞台。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1159,
+    "word": "regularize",
+    "phonetic": "/ˈreɡjələraɪz/",
+    "pos": "v.",
+    "meaning": "使规范化；使正常化",
+    "example": "The government tried to regularize informal trade.",
+    "exampleCn": "政府试图使非正式贸易规范化。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1160,
+    "word": "loner",
+    "phonetic": "/ˈloʊnər/",
+    "pos": "n.",
+    "meaning": "独来独往的人",
+    "example": "He was seen as a loner at school.",
+    "exampleCn": "他在学校里被看作一个独来独往的人。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1161,
+    "word": "significant",
+    "phonetic": "/sɪɡˈnɪfɪkənt/",
+    "pos": "adj.",
+    "meaning": "重要的；显著的",
+    "example": "The policy caused a significant decline in costs.",
+    "exampleCn": "这项政策导致成本显著下降。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1162,
+    "word": "concrete",
+    "phonetic": "/ˈkɑːnkriːt/",
+    "pos": "adj./n.",
+    "meaning": "具体的；有形的/混凝土",
+    "example": "We need concrete evidence before making a decision.",
+    "exampleCn": "在做决定前我们需要确凿的证据。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1163,
+    "word": "civilization",
+    "phonetic": "/ˌsɪvələˈzeɪʃən/",
+    "pos": "n.",
+    "meaning": "文明；文明社会",
+    "example": "Ancient Egypt was one of the earliest civilizations.",
+    "exampleCn": "古埃及是最早的文明之一。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1164,
+    "word": "incline",
+    "phonetic": "/ɪnˈklaɪn/",
+    "pos": "v./n.",
+    "meaning": "使倾斜；倾向于/斜坡",
+    "example": "I am inclined to agree with the proposal.",
+    "exampleCn": "我倾向于同意这个提议。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1165,
+    "word": "extreme",
+    "phonetic": "/ɪkˈstriːm/",
+    "pos": "adj./n.",
+    "meaning": "极端的；非常的/极端",
+    "example": "The desert has extreme temperatures during the day.",
+    "exampleCn": "沙漠白天气温极端。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1166,
+    "word": "spoil",
+    "phonetic": "/spɔɪl/",
+    "pos": "v.",
+    "meaning": "损坏；宠坏",
+    "example": "Too much rain can spoil the crops.",
+    "exampleCn": "过多的雨水会毁坏庄稼。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1167,
+    "word": "consideration",
+    "phonetic": "/kənˌsɪdəˈreɪʃən/",
+    "pos": "n.",
+    "meaning": "考虑；体谅",
+    "example": "The plan is under consideration by the committee.",
+    "exampleCn": "该计划正在委员会审议中。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1168,
+    "word": "considerable",
+    "phonetic": "/kənˈsɪdərəbəl/",
+    "pos": "adj.",
+    "meaning": "相当大的；相当多的",
+    "example": "The project requires considerable financial support.",
+    "exampleCn": "这个项目需要相当大的资金支持。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1169,
+    "word": "concentrate",
+    "phonetic": "/ˈkɑːnsəntreɪt/",
+    "pos": "v.",
+    "meaning": "集中；专心",
+    "example": "It is hard to concentrate in a noisy room.",
+    "exampleCn": "在嘈杂的房间里很难集中注意力。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1170,
+    "word": "object",
+    "phonetic": "/ˈɑːbdʒɪkt/;/əbˈdʒekt/",
+    "pos": "n./v.",
+    "meaning": "物体；目标/反对",
+    "example": "Some students objected to the new rule.",
+    "exampleCn": "一些学生反对这项新规定。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1171,
+    "word": "scale",
+    "phonetic": "/skeɪl/",
+    "pos": "n./v.",
+    "meaning": "规模；刻度/攀登；测量",
+    "example": "The company expanded on a global scale.",
+    "exampleCn": "公司以全球规模扩张了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1172,
+    "word": "predictive",
+    "phonetic": "/prɪˈdɪktɪv/",
+    "pos": "adj.",
+    "meaning": "预测性的",
+    "example": "Scientists use predictive models to study climate change.",
+    "exampleCn": "科学家使用预测模型研究气候变化。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1173,
+    "word": "divorce",
+    "phonetic": "/dɪˈvɔːrs/",
+    "pos": "n./v.",
+    "meaning": "离婚；分离/与……离婚",
+    "example": "The novel explores the emotional effects of divorce.",
+    "exampleCn": "这部小说探讨了离婚带来的情感影响。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1174,
+    "word": "fiction",
+    "phonetic": "/ˈfɪkʃən/",
+    "pos": "n.",
+    "meaning": "小说；虚构",
+    "example": "She prefers historical fiction to science fiction.",
+    "exampleCn": "比起科幻小说，她更喜欢历史小说。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1175,
+    "word": "tissue",
+    "phonetic": "/ˈtɪʃuː/",
+    "pos": "n.",
+    "meaning": "组织；纸巾",
+    "example": "Human tissue can be damaged by disease.",
+    "exampleCn": "人体组织可能会被疾病损伤。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1176,
+    "word": "wise",
+    "phonetic": "/waɪz/",
+    "pos": "adj.",
+    "meaning": "明智的；有智慧的",
+    "example": "It would be wise to save money for emergencies.",
+    "exampleCn": "为紧急情况存钱是明智的。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1177,
+    "word": "headquarters",
+    "phonetic": "/ˈhedˌkwɔːrtərz/",
+    "pos": "n.",
+    "meaning": "总部",
+    "example": "The company moved its headquarters to Shanghai.",
+    "exampleCn": "这家公司把总部迁到了上海。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1178,
+    "word": "comparison",
+    "phonetic": "/kəmˈpærɪsən/",
+    "pos": "n.",
+    "meaning": "比较，对照",
+    "example": "The comparison between the two methods was revealing.",
+    "exampleCn": "对这两种方法的比较很有启发性。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1179,
+    "word": "slip",
+    "phonetic": "/slɪp/",
+    "pos": "v./n.",
+    "meaning": "滑倒；滑落/小失误；纸条",
+    "example": "Be careful not to slip on the wet floor.",
+    "exampleCn": "小心别在湿地板上滑倒。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1180,
+    "word": "sue",
+    "phonetic": "/suː/",
+    "pos": "v.",
+    "meaning": "起诉；控告",
+    "example": "The company was sued for breaking the contract.",
+    "exampleCn": "这家公司因违反合同被起诉了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1181,
+    "word": "probable",
+    "phonetic": "/ˈprɑːbəbəl/",
+    "pos": "adj.",
+    "meaning": "很可能的；大概的",
+    "example": "It is probable that prices will rise again.",
+    "exampleCn": "价格很可能会再次上涨。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1182,
+    "word": "redefine",
+    "phonetic": "/ˌriːdɪˈfaɪn/",
+    "pos": "v.",
+    "meaning": "重新定义",
+    "example": "New technologies may redefine the way we learn.",
+    "exampleCn": "新技术可能会重新定义我们的学习方式。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1183,
+    "word": "preference",
+    "phonetic": "/ˈprefərəns/",
+    "pos": "n.",
+    "meaning": "偏爱；偏好",
+    "example": "Many students showed a preference for online courses.",
+    "exampleCn": "许多学生表现出对网课的偏好。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1184,
+    "word": "dependence",
+    "phonetic": "/dɪˈpendəns/",
+    "pos": "n.",
+    "meaning": "依赖；依靠",
+    "example": "Excessive dependence on technology can be risky.",
+    "exampleCn": "过度依赖技术可能有风险。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1185,
+    "word": "shipyard",
+    "phonetic": "/ˈʃɪpjɑːrd/",
+    "pos": "n.",
+    "meaning": "造船厂",
+    "example": "The old shipyard is now a cultural center.",
+    "exampleCn": "那座旧造船厂现在成了文化中心。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1186,
+    "word": "occupation",
+    "phonetic": "/ˌɑːkjəˈpeɪʃən/",
+    "pos": "n.",
+    "meaning": "职业；占领",
+    "example": "Please state your occupation on the form.",
+    "exampleCn": "请在表格上填写你的职业。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1187,
+    "word": "expand",
+    "phonetic": "/ɪkˈspænd/",
+    "pos": "v.",
+    "meaning": "扩大；扩展",
+    "example": "The university plans to expand its library.",
+    "exampleCn": "这所大学计划扩建图书馆。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1188,
+    "word": "migrate",
+    "phonetic": "/ˈmaɪɡreɪt/",
+    "pos": "v.",
+    "meaning": "迁移；迁徙",
+    "example": "Many birds migrate south in the winter.",
+    "exampleCn": "许多鸟在冬天向南迁徙。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1189,
+    "word": "buildup",
+    "phonetic": "/ˈbɪldˌʌp/",
+    "pos": "n.",
+    "meaning": "积累；增强",
+    "example": "A buildup of dust can damage the machine.",
+    "exampleCn": "灰尘的积累会损坏机器。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1190,
+    "word": "settlement",
+    "phonetic": "/ˈsetəlmənt/",
+    "pos": "n.",
+    "meaning": "定居点；解决",
+    "example": "A small settlement grew near the river.",
+    "exampleCn": "河边发展出了一个小型定居点。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1191,
+    "word": "simplicity",
+    "phonetic": "/sɪmˈplɪsəti/",
+    "pos": "n.",
+    "meaning": "简单；简朴",
+    "example": "The beauty of the design lies in its simplicity.",
+    "exampleCn": "这个设计的美在于它的简洁。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1192,
+    "word": "critique",
+    "phonetic": "/krɪˈtiːk/",
+    "pos": "n./v.",
+    "meaning": "评论；批评/评论，批判",
+    "example": "The article offers a critique of modern education.",
+    "exampleCn": "这篇文章对现代教育提出了评论。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1193,
+    "word": "intend",
+    "phonetic": "/ɪnˈtend/",
+    "pos": "v.",
+    "meaning": "打算；想要",
+    "example": "I intend to finish the report tonight.",
+    "exampleCn": "我打算今晚完成这份报告。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1194,
+    "word": "consult",
+    "phonetic": "/kənˈsʌlt/",
+    "pos": "v.",
+    "meaning": "咨询；查阅",
+    "example": "You should consult a doctor if the pain continues.",
+    "exampleCn": "如果疼痛持续，你应该咨询医生。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1195,
+    "word": "sort",
+    "phonetic": "/sɔːrt/",
+    "pos": "v./n.",
+    "meaning": "分类；整理/种类",
+    "example": "Please sort the files by date.",
+    "exampleCn": "请按日期整理这些文件。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1196,
+    "word": "harsh",
+    "phonetic": "/hɑːrʃ/",
+    "pos": "adj.",
+    "meaning": "严厉的；恶劣的",
+    "example": "The region has a harsh climate in winter.",
+    "exampleCn": "这个地区冬季气候恶劣。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1197,
+    "word": "construction",
+    "phonetic": "/kənˈstrʌkʃən/",
+    "pos": "n.",
+    "meaning": "建造；建筑",
+    "example": "The bridge is still under construction.",
+    "exampleCn": "这座桥仍在建设中。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1198,
+    "word": "stock",
+    "phonetic": "/stɑːk/",
+    "pos": "n./v.",
+    "meaning": "库存；股票/储备",
+    "example": "The store keeps a large stock of fresh fruit.",
+    "exampleCn": "这家商店储备了大量新鲜水果。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1199,
+    "word": "reflect",
+    "phonetic": "/rɪˈflekt/",
+    "pos": "v.",
+    "meaning": "反映；反射；深思",
+    "example": "These results reflect recent changes in society.",
+    "exampleCn": "这些结果反映了社会最近的变化。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1200,
+    "word": "spot",
+    "phonetic": "/spɑːt/",
+    "pos": "n./v.",
+    "meaning": "地点；斑点/发现，注意到",
+    "example": "We found a quiet spot to study.",
+    "exampleCn": "我们找到了一个安静的地方学习。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1201,
+    "word": "disregard",
+    "phonetic": "/ˌdɪsrɪˈɡɑːrd/",
+    "pos": "v./n.",
+    "meaning": "忽视；不理会/忽视",
+    "example": "They disregarded the warning signs.",
+    "exampleCn": "他们无视了警告标志。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1202,
+    "word": "somewhat",
+    "phonetic": "/ˈsʌmwʌt/",
+    "pos": "adv.",
+    "meaning": "有点；稍微",
+    "example": "The instructions were somewhat confusing at first.",
+    "exampleCn": "这些说明起初有点令人困惑。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1203,
+    "word": "prolong",
+    "phonetic": "/prəˈlɔːŋ/",
+    "pos": "v.",
+    "meaning": "延长；拖长",
+    "example": "The treatment may prolong the patient’s life.",
+    "exampleCn": "这种治疗可能延长病人的生命。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1204,
+    "word": "humanity",
+    "phonetic": "/hjuːˈmænəti/",
+    "pos": "n.",
+    "meaning": "人类；人性",
+    "example": "The museum explores the history of humanity.",
+    "exampleCn": "这家博物馆探索人类的历史。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1205,
+    "word": "magnet",
+    "phonetic": "/ˈmæɡnət/",
+    "pos": "n.",
+    "meaning": "磁铁；有吸引力的人或物",
+    "example": "Iron is attracted to a magnet.",
+    "exampleCn": "铁会被磁铁吸引。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1206,
+    "word": "perform",
+    "phonetic": "/pərˈfɔːrm/",
+    "pos": "v.",
+    "meaning": "执行；表演",
+    "example": "The machine can perform complex calculations.",
+    "exampleCn": "这台机器能执行复杂的计算。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1207,
+    "word": "portion",
+    "phonetic": "/ˈpɔːrʃən/",
+    "pos": "n.",
+    "meaning": "部分；一份",
+    "example": "A large portion of the budget goes to research.",
+    "exampleCn": "预算中很大一部分用于研究。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1208,
+    "word": "grant",
+    "phonetic": "/ɡrænt/",
+    "pos": "n./v.",
+    "meaning": "拨款；补助金/授予，同意",
+    "example": "She received a grant for her research project.",
+    "exampleCn": "她获得了一笔研究项目资助。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1209,
+    "word": "mobile",
+    "phonetic": "/ˈmoʊbəl/",
+    "pos": "adj./n.",
+    "meaning": "移动的；流动的/手机",
+    "example": "Young people rely heavily on mobile technology.",
+    "exampleCn": "年轻人非常依赖移动技术。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1210,
+    "word": "survey",
+    "phonetic": "/sərˈveɪ/;/ˈsɜːrveɪ/",
+    "pos": "n./v.",
+    "meaning": "调查/调查；审视",
+    "example": "The survey showed strong public support.",
+    "exampleCn": "这项调查显示公众支持度很高。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1211,
+    "word": "imperfection",
+    "phonetic": "/ˌɪmpərˈfekʃən/",
+    "pos": "n.",
+    "meaning": "不完美；缺点",
+    "example": "Small imperfections can make handmade items unique.",
+    "exampleCn": "小小的不完美会让手工制品更独特。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1212,
+    "word": "mythical",
+    "phonetic": "/ˈmɪθɪkəl/",
+    "pos": "adj.",
+    "meaning": "神话中的；虚构的",
+    "example": "The dragon is a mythical creature in many cultures.",
+    "exampleCn": "龙在许多文化中都是神话生物。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1213,
+    "word": "series",
+    "phonetic": "/ˈsɪriːz/",
+    "pos": "n.",
+    "meaning": "系列；连续",
+    "example": "The professor gave a series of lectures on climate policy.",
+    "exampleCn": "教授做了一系列关于气候政策的讲座。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1214,
+    "word": "theme",
+    "phonetic": "/θiːm/",
+    "pos": "n.",
+    "meaning": "主题；主旨",
+    "example": "The central theme of the novel is freedom.",
+    "exampleCn": "这部小说的中心主题是自由。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1215,
+    "word": "restless",
+    "phonetic": "/ˈrestləs/",
+    "pos": "adj.",
+    "meaning": "坐立不安的；不平静的",
+    "example": "The children became restless during the long trip.",
+    "exampleCn": "孩子们在长途旅行中变得坐立不安。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1216,
+    "word": "far-reaching",
+    "phonetic": "/ˌfɑːr ˈriːtʃɪŋ/",
+    "pos": "adj.",
+    "meaning": "影响深远的",
+    "example": "The decision had far-reaching consequences for the industry.",
+    "exampleCn": "这一决定对该行业产生了深远影响。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1217,
+    "word": "routine",
+    "phonetic": "/ruːˈtiːn/",
+    "pos": "n./adj.",
+    "meaning": "常规；例行公事/例行的",
+    "example": "Exercise has become part of her daily routine.",
+    "exampleCn": "锻炼已成为她日常生活的一部分。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1218,
+    "word": "inhabitant",
+    "phonetic": "/ɪnˈhæbɪtənt/",
+    "pos": "n.",
+    "meaning": "居民；栖居动物",
+    "example": "The island has fewer than one thousand inhabitants.",
+    "exampleCn": "这座岛上的居民不到一千人。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1219,
+    "word": "detect",
+    "phonetic": "/dɪˈtekt/",
+    "pos": "v.",
+    "meaning": "发现；察觉",
+    "example": "Scientists can detect tiny changes in temperature.",
+    "exampleCn": "科学家能够检测到温度的微小变化。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1220,
+    "word": "drip",
+    "phonetic": "/drɪp/",
+    "pos": "v./n.",
+    "meaning": "滴下；滴落/滴",
+    "example": "Water continued to drip from the ceiling.",
+    "exampleCn": "水继续从天花板上滴下来。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1221,
+    "word": "prime",
+    "phonetic": "/praɪm/",
+    "pos": "adj./n./v.",
+    "meaning": "主要的；最好的/全盛期/使准备好",
+    "example": "Food safety is of prime importance.",
+    "exampleCn": "食品安全至关重要。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1222,
+    "word": "physiological",
+    "phonetic": "/ˌfɪziəˈlɑːdʒɪkəl/",
+    "pos": "adj.",
+    "meaning": "生理的",
+    "example": "Stress can produce physiological changes in the body.",
+    "exampleCn": "压力会引起身体的生理变化。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1223,
+    "word": "reunite",
+    "phonetic": "/ˌriːjuːˈnaɪt/",
+    "pos": "v.",
+    "meaning": "（使）重聚；再联合",
+    "example": "The program helped reunite families after the war.",
+    "exampleCn": "这个项目帮助战后家庭重新团聚。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1224,
+    "word": "manufacture",
+    "phonetic": "/ˌmænjuˈfæktʃər/",
+    "pos": "v./n.",
+    "meaning": "制造；生产/制造业",
+    "example": "The factory manufactures medical equipment.",
+    "exampleCn": "这家工厂生产医疗设备。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1225,
+    "word": "harbor",
+    "phonetic": "/ˈhɑːrbər/",
+    "pos": "n./v.",
+    "meaning": "港口/怀有；庇护",
+    "example": "The ships returned safely to the harbor.",
+    "exampleCn": "船只安全返回了港口。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1226,
+    "word": "conceal",
+    "phonetic": "/kənˈsiːl/",
+    "pos": "v.",
+    "meaning": "隐藏；隐瞒",
+    "example": "He tried to conceal his disappointment.",
+    "exampleCn": "他试图掩饰自己的失望。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1227,
+    "word": "fame",
+    "phonetic": "/feɪm/",
+    "pos": "n.",
+    "meaning": "名声；名望",
+    "example": "The artist achieved international fame at a young age.",
+    "exampleCn": "这位艺术家年纪轻轻就获得了国际声誉。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1228,
+    "word": "reduction",
+    "phonetic": "/rɪˈdʌkʃən/",
+    "pos": "n.",
+    "meaning": "减少；缩小",
+    "example": "The policy led to a reduction in energy use.",
+    "exampleCn": "这项政策导致能源使用减少。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1229,
+    "word": "context",
+    "phonetic": "/ˈkɑːntekst/",
+    "pos": "n.",
+    "meaning": "背景；语境",
+    "example": "The meaning of the term depends on its context.",
+    "exampleCn": "这个术语的含义取决于其语境。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1230,
+    "word": "obtain",
+    "phonetic": "/əbˈteɪn/",
+    "pos": "v.",
+    "meaning": "获得；得到",
+    "example": "Students must obtain permission before entering the lab.",
+    "exampleCn": "学生进入实验室前必须获得许可。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1231,
+    "word": "rapid",
+    "phonetic": "/ˈræpɪd/",
+    "pos": "adj.",
+    "meaning": "迅速的；快速的",
+    "example": "The city experienced rapid population growth.",
+    "exampleCn": "这座城市经历了快速的人口增长。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1232,
+    "word": "draft",
+    "phonetic": "/dræft/",
+    "pos": "n./v.",
+    "meaning": "草稿；草案/起草",
+    "example": "She wrote the first draft of the essay last night.",
+    "exampleCn": "她昨晚写了这篇文章的初稿。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  },
+  {
+    "id": 1233,
+    "word": "output",
+    "phonetic": "/ˈaʊtpʊt/",
+    "pos": "n.",
+    "meaning": "产量；输出",
+    "example": "The factory increased its annual output.",
+    "exampleCn": "这家工厂提高了年产量。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "8"
+  }
+]

@@ -1,0 +1,1480 @@
+[
+  {
+    "id": 36,
+    "word": "agenda",
+    "phonetic": "/əˈdʒendə/",
+    "pos": "n.",
+    "meaning": "议程；议事日程",
+    "example": "The first item on the agenda is the budget.",
+    "exampleCn": "议程上的第一项是预算。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 62,
+    "word": "accordingly",
+    "phonetic": "/əˈkɔːdɪŋli/",
+    "pos": "adv.",
+    "meaning": "因此；相应地；于是",
+    "example": "The plan was changed accordingly.",
+    "exampleCn": "计划相应地改变了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 155,
+    "word": "appetite",
+    "phonetic": "/ˈæpɪtaɪt/",
+    "pos": "n.",
+    "meaning": "食欲；胃口；欲望",
+    "example": "The walk gave me a good appetite.",
+    "exampleCn": "散步让我胃口大开。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 218,
+    "word": "bear",
+    "phonetic": "/beə(r)/",
+    "pos": "v./n.",
+    "meaning": "承受；忍受；生（孩子）；熊",
+    "example": "I can't bear the pain.",
+    "exampleCn": "我忍受不了这疼痛。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 263,
+    "word": "block",
+    "phonetic": "/blɒk/",
+    "pos": "v./n.",
+    "meaning": "阻塞；街区；块",
+    "example": "The accident blocked the road.",
+    "exampleCn": "事故阻塞了道路。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 364,
+    "word": "candidate",
+    "phonetic": "/ˈkændɪdət/",
+    "pos": "n.",
+    "meaning": "候选人；应试者",
+    "example": "There are three candidates for the position.",
+    "exampleCn": "这个职位有三位候选人。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "business"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 483,
+    "word": "code",
+    "phonetic": "/koʊd/",
+    "pos": "n./v.",
+    "meaning": "代码；密码；编码",
+    "example": "He learned how to code in Python.",
+    "exampleCn": "他学会了用 Python 编程。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "technology"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 488,
+    "word": "colleague",
+    "phonetic": "/ˈkɒliːɡ/",
+    "pos": "n.",
+    "meaning": "同事；同僚",
+    "example": "My colleague helped me with the project.",
+    "exampleCn": "我的同事帮我完成了这个项目。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "business"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 501,
+    "word": "unwilling",
+    "phonetic": "/ʌnˈwɪlɪŋ/",
+    "pos": "adj.",
+    "meaning": "不情愿的；不愿意的",
+    "example": "He was unwilling to help with the housework.",
+    "exampleCn": "他不愿意帮忙做家务。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 502,
+    "word": "archaeology",
+    "phonetic": "/ˌɑːkiˈɒlədʒi/",
+    "pos": "n.",
+    "meaning": "考古学",
+    "example": "She studied archaeology at university.",
+    "exampleCn": "她在大学学习考古学。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 503,
+    "word": "unfortunate",
+    "phonetic": "/ʌnˈfɔːtʃənət/",
+    "pos": "adj.",
+    "meaning": "不幸的；遗憾的",
+    "example": "It was unfortunate that the event was cancelled.",
+    "exampleCn": "很遗憾活动被取消了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 504,
+    "word": "fairly",
+    "phonetic": "/ˈfeəli/",
+    "pos": "adv.",
+    "meaning": "相当；公平地",
+    "example": "The test was fairly difficult.",
+    "exampleCn": "这次考试相当难。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 505,
+    "word": "tremendous",
+    "phonetic": "/trɪˈmendəs/",
+    "pos": "adj.",
+    "meaning": "巨大的；极好的",
+    "example": "The project requires tremendous effort.",
+    "exampleCn": "这个项目需要巨大的努力。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 506,
+    "word": "principle",
+    "phonetic": "/ˈprɪnsəpl/",
+    "pos": "n.",
+    "meaning": "原则；原理",
+    "example": "He always sticks to his principles.",
+    "exampleCn": "他总是坚持自己的原则。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 507,
+    "word": "crime",
+    "phonetic": "/kraɪm/",
+    "pos": "n.",
+    "meaning": "犯罪；罪行",
+    "example": "The crime rate has decreased this year.",
+    "exampleCn": "今年的犯罪率下降了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 508,
+    "word": "commit",
+    "phonetic": "/kəˈmɪt/",
+    "pos": "v.",
+    "meaning": "犯罪；承诺；投入",
+    "example": "He committed a serious mistake.",
+    "exampleCn": "他犯了一个严重的错误。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 509,
+    "word": "satisfaction",
+    "phonetic": "/ˌsætɪsˈfækʃn/",
+    "pos": "n.",
+    "meaning": "满意；满足",
+    "example": "She felt satisfaction after completing the task.",
+    "exampleCn": "完成任务后她感到满意。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 510,
+    "word": "mysterious",
+    "phonetic": "/mɪˈstɪəriəs/",
+    "pos": "adj.",
+    "meaning": "神秘的；不可思议的",
+    "example": "The ancient ruins remain mysterious.",
+    "exampleCn": "这些古代遗迹仍然很神秘。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 511,
+    "word": "mental",
+    "phonetic": "/ˈmentl/",
+    "pos": "adj.",
+    "meaning": "精神的；心理的；智力的",
+    "example": "Mental health is as important as physical health.",
+    "exampleCn": "心理健康和身体健康一样重要。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 512,
+    "word": "substance",
+    "phonetic": "/ˈsʌbstəns/",
+    "pos": "n.",
+    "meaning": "物质；实质；要旨",
+    "example": "Water is a transparent substance.",
+    "exampleCn": "水是一种透明的物质。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 513,
+    "word": "sociologist",
+    "phonetic": "/ˌsəʊsiˈɒlədʒɪst/",
+    "pos": "n.",
+    "meaning": "社会学家",
+    "example": "The sociologist studied urban communities.",
+    "exampleCn": "这位社会学家研究城市社区。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 514,
+    "word": "anxious",
+    "phonetic": "/ˈæŋkʃəs/",
+    "pos": "adj.",
+    "meaning": "焦虑的；担忧的；渴望的",
+    "example": "She was anxious about the exam results.",
+    "exampleCn": "她对考试成绩感到焦虑。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 515,
+    "word": "essential",
+    "phonetic": "/ɪˈsenʃl/",
+    "pos": "adj.",
+    "meaning": "必要的；本质的；基本的",
+    "example": "Water is essential for life.",
+    "exampleCn": "水对生命是必不可少的。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 516,
+    "word": "strength",
+    "phonetic": "/streŋθ/",
+    "pos": "n.",
+    "meaning": "力量；优势；长处",
+    "example": "Physical strength is important for athletes.",
+    "exampleCn": "体能对运动员很重要。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 517,
+    "word": "refinement",
+    "phonetic": "/rɪˈfaɪnmənt/",
+    "pos": "n.",
+    "meaning": "精致；改进；精制",
+    "example": "The refinement of the design took months.",
+    "exampleCn": "设计的改进花了几个月时间。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 518,
+    "word": "sufficient",
+    "phonetic": "/səˈfɪʃnt/",
+    "pos": "adj.",
+    "meaning": "足够的；充分的",
+    "example": "We have sufficient time to finish.",
+    "exampleCn": "我们有足够的时间完成。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 519,
+    "word": "naked",
+    "phonetic": "/ˈneɪkɪd/",
+    "pos": "adj.",
+    "meaning": "裸体的；赤裸的；无遮蔽的",
+    "example": "The baby was naked and needed a bath.",
+    "exampleCn": "婴儿光着身子需要洗澡。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 520,
+    "word": "rescue",
+    "phonetic": "/ˈreskjuː/",
+    "pos": "v./n.",
+    "meaning": "救援；营救",
+    "example": "The firefighters rescued the trapped people.",
+    "exampleCn": "消防员救出了被困人员。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 521,
+    "word": "frustrate",
+    "phonetic": "/ˈfrʌstreɪt/",
+    "pos": "v.",
+    "meaning": "使沮丧；使受挫；阻挠",
+    "example": "The delay frustrated everyone.",
+    "exampleCn": "延误让每个人都很沮丧。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 522,
+    "word": "factor",
+    "phonetic": "/ˈfæktə(r)/",
+    "pos": "n.",
+    "meaning": "因素；要素",
+    "example": "Cost is an important factor in decision-making.",
+    "exampleCn": "成本是决策中的一个重要因素。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 523,
+    "word": "scratch",
+    "phonetic": "/skrætʃ/",
+    "pos": "v./n.",
+    "meaning": "抓；搔；起跑线",
+    "example": "Don't scratch the table with your keys.",
+    "exampleCn": "别用钥匙刮桌子。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 524,
+    "word": "hurricane",
+    "phonetic": "/ˈhʌrɪkən/",
+    "pos": "n.",
+    "meaning": "飓风",
+    "example": "The hurricane caused widespread damage.",
+    "exampleCn": "飓风造成了广泛的破坏。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 525,
+    "word": "prey",
+    "phonetic": "/preɪ/",
+    "pos": "n.",
+    "meaning": "猎物；牺牲品",
+    "example": "The lion hunted its prey.",
+    "exampleCn": "狮子捕猎它的猎物。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 526,
+    "word": "entertainment",
+    "phonetic": "/ˌentəˈteɪnmənt/",
+    "pos": "n.",
+    "meaning": "娱乐；消遣；娱乐节目",
+    "example": "The city offers many forms of entertainment.",
+    "exampleCn": "这座城市提供多种娱乐形式。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 527,
+    "word": "fore",
+    "phonetic": "/fɔː(r)/",
+    "pos": "adj.",
+    "meaning": "前面的；前部的",
+    "example": "The fore part of the ship was damaged.",
+    "exampleCn": "船的前部受损了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 528,
+    "word": "opposite",
+    "phonetic": "/ˈɒpəzɪt/",
+    "pos": "adj./n.",
+    "meaning": "相反的；对立面",
+    "example": "They sat opposite each other.",
+    "exampleCn": "他们面对面坐着。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 529,
+    "word": "conduct",
+    "phonetic": "/kənˈdʌkt/",
+    "pos": "v.",
+    "meaning": "进行；实施；引导",
+    "example": "The experiment was conducted carefully.",
+    "exampleCn": "实验被仔细地进行。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 530,
+    "word": "relief",
+    "phonetic": "/rɪˈliːf/",
+    "pos": "n.",
+    "meaning": "缓解；救济；宽慰",
+    "example": "The medicine brought relief from pain.",
+    "exampleCn": "药物缓解了疼痛。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 531,
+    "word": "polar",
+    "phonetic": "/ˈpəʊlə(r)/",
+    "pos": "adj.",
+    "meaning": "极地的；两极的；完全相反的",
+    "example": "Polar bears live in the Arctic.",
+    "exampleCn": "北极熊生活在北极。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 532,
+    "word": "dictation",
+    "phonetic": "/dɪkˈteɪʃn/",
+    "pos": "n.",
+    "meaning": "听写；口述",
+    "example": "The teacher gave us a dictation exercise.",
+    "exampleCn": "老师给我们做了听写练习。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 533,
+    "word": "meaty",
+    "phonetic": "/ˈmiːti/",
+    "pos": "adj.",
+    "meaning": "多肉的；内容充实的",
+    "example": "This is a meaty report with lots of data.",
+    "exampleCn": "这是一份内容充实的报告，有很多数据。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 534,
+    "word": "straightforward",
+    "phonetic": "/ˌstreɪtˈfɔːwəd/",
+    "pos": "adj.",
+    "meaning": "直接的；简单的；坦率的",
+    "example": "The instructions were straightforward.",
+    "exampleCn": "说明很简单明了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 535,
+    "word": "advanced",
+    "phonetic": "/ədˈvɑːnst/",
+    "pos": "adj.",
+    "meaning": "先进的；高级的；晚期的",
+    "example": "This is an advanced course in physics.",
+    "exampleCn": "这是一门高级物理课程。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 536,
+    "word": "contribute",
+    "phonetic": "/kənˈtrɪbjuːt/",
+    "pos": "v.",
+    "meaning": "贡献；捐赠；投稿",
+    "example": "Everyone should contribute to the discussion.",
+    "exampleCn": "每个人都应该为讨论做出贡献。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 537,
+    "word": "mechanic",
+    "phonetic": "/məˈkænɪk/",
+    "pos": "n.",
+    "meaning": "技工；机修工",
+    "example": "The mechanic fixed the car engine.",
+    "exampleCn": "机修工修好了汽车引擎。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 538,
+    "word": "assignment",
+    "phonetic": "/əˈsaɪnmənt/",
+    "pos": "n.",
+    "meaning": "任务；作业；分配",
+    "example": "The teacher gave us a writing assignment.",
+    "exampleCn": "老师给我们布置了写作作业。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 539,
+    "word": "self-sufficient",
+    "phonetic": "/ˌself səˈfɪʃnt/",
+    "pos": "adj.",
+    "meaning": "自给自足的；自立的",
+    "example": "The farm is self-sufficient in food.",
+    "exampleCn": "这个农场在食物上自给自足。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 540,
+    "word": "separation",
+    "phonetic": "/ˌsepəˈreɪʃn/",
+    "pos": "n.",
+    "meaning": "分离；分开；分居",
+    "example": "The separation of the two countries was peaceful.",
+    "exampleCn": "两国的分离是和平的。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 541,
+    "word": "so-called",
+    "phonetic": "/ˌsəʊ ˈkɔːld/",
+    "pos": "adj.",
+    "meaning": "所谓的；号称的",
+    "example": "The so-called expert knew very little.",
+    "exampleCn": "这位所谓的专家知道得很少。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 542,
+    "word": "isolate",
+    "phonetic": "/ˈaɪsəleɪt/",
+    "pos": "v.",
+    "meaning": "隔离；孤立；使分离",
+    "example": "The patient was isolated to prevent infection.",
+    "exampleCn": "病人被隔离以防止感染。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 543,
+    "word": "neglect",
+    "phonetic": "/nɪˈɡlekt/",
+    "pos": "v./n.",
+    "meaning": "忽视；忽略；疏忽",
+    "example": "Don't neglect your studies.",
+    "exampleCn": "不要忽视你的学业。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 544,
+    "word": "differ",
+    "phonetic": "/ˈdɪfə(r)/",
+    "pos": "v.",
+    "meaning": "不同；相异；有分歧",
+    "example": "Opinions differ on this issue.",
+    "exampleCn": "在这个问题上意见不一。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 545,
+    "word": "organization",
+    "phonetic": "/ˌɔːɡənaɪˈzeɪʃn/",
+    "pos": "n.",
+    "meaning": "组织；机构；安排",
+    "example": "The organization helps homeless people.",
+    "exampleCn": "这个组织帮助无家可归的人。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 546,
+    "word": "destine",
+    "phonetic": "/ˈdestɪn/",
+    "pos": "v.",
+    "meaning": "注定；预定；命运安排",
+    "example": "He was destined to become a great leader.",
+    "exampleCn": "他注定要成为伟大的领袖。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 547,
+    "word": "stress",
+    "phonetic": "/stres/",
+    "pos": "n./v.",
+    "meaning": "压力；强调；重音",
+    "example": "Work stress can affect your health.",
+    "exampleCn": "工作压力会影响你的健康。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 548,
+    "word": "impress",
+    "phonetic": "/ɪmˈpres/",
+    "pos": "v.",
+    "meaning": "给...留下印象；使钦佩",
+    "example": "His speech impressed the audience.",
+    "exampleCn": "他的演讲给观众留下了深刻印象。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 549,
+    "word": "naturalist",
+    "phonetic": "/ˈnætʃrəlɪst/",
+    "pos": "n.",
+    "meaning": "博物学家；自然主义者",
+    "example": "The naturalist studied wildlife in the forest.",
+    "exampleCn": "这位博物学家研究森林里的野生动物。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 550,
+    "word": "disturb",
+    "phonetic": "/dɪˈstɜːb/",
+    "pos": "v.",
+    "meaning": "打扰；扰乱；使不安",
+    "example": "Don't disturb him while he's working.",
+    "exampleCn": "他工作时不要打扰他。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 551,
+    "word": "evil",
+    "phonetic": "/ˈiːvl/",
+    "pos": "adj./n.",
+    "meaning": "邪恶的；罪恶；邪恶",
+    "example": "The evil witch cast a spell.",
+    "exampleCn": "邪恶的女巫施了魔法。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 552,
+    "word": "diverse",
+    "phonetic": "/daɪˈvɜːs/",
+    "pos": "adj.",
+    "meaning": "多样的；不同的；形形色色的",
+    "example": "The city has a diverse population.",
+    "exampleCn": "这座城市人口多样化。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 553,
+    "word": "applicant",
+    "phonetic": "/ˈæplɪkənt/",
+    "pos": "n.",
+    "meaning": "申请人",
+    "example": "There were many applicants for the job.",
+    "exampleCn": "有很多求职者申请这份工作。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 554,
+    "word": "imprisonment",
+    "phonetic": "/ɪmˈprɪznmənt/",
+    "pos": "n.",
+    "meaning": "监禁；关押",
+    "example": "He was sentenced to five years imprisonment.",
+    "exampleCn": "他被判处五年监禁。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 555,
+    "word": "undesirable",
+    "phonetic": "/ˌʌndɪˈzaɪərəbl/",
+    "pos": "adj.",
+    "meaning": "不受欢迎的；不良的；讨厌的",
+    "example": "Smoking has undesirable effects on health.",
+    "exampleCn": "吸烟对健康有不良影响。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 556,
+    "word": "yawn",
+    "phonetic": "/jɔːn/",
+    "pos": "v./n.",
+    "meaning": "打哈欠；呵欠",
+    "example": "She yawned because she was tired.",
+    "exampleCn": "她因为累了而打哈欠。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 557,
+    "word": "spiritual",
+    "phonetic": "/ˈspɪrɪtʃuəl/",
+    "pos": "adj.",
+    "meaning": "精神的；心灵的；宗教的",
+    "example": "Music can be a spiritual experience.",
+    "exampleCn": "音乐可以是一种精神体验。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 558,
+    "word": "impatient",
+    "phonetic": "/ɪmˈpeɪʃnt/",
+    "pos": "adj.",
+    "meaning": "不耐烦的；急切的",
+    "example": "He became impatient waiting in line.",
+    "exampleCn": "排队等候让他变得不耐烦。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 559,
+    "word": "roughly",
+    "phonetic": "/ˈrʌfli/",
+    "pos": "adv.",
+    "meaning": "粗略地；大致；粗暴地",
+    "example": "The project will cost roughly $1000.",
+    "exampleCn": "这个项目大约花费 1000 美元。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 560,
+    "word": "pour",
+    "phonetic": "/pɔː(r)/",
+    "pos": "v.",
+    "meaning": "倒；倾泻；涌流",
+    "example": "She poured water into the glass.",
+    "exampleCn": "她把水倒进杯子里。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 561,
+    "word": "seize",
+    "phonetic": "/siːz/",
+    "pos": "v.",
+    "meaning": "抓住；夺取； seized",
+    "example": "The police seized the illegal drugs.",
+    "exampleCn": "警察收缴了非法毒品。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 562,
+    "word": "signal",
+    "phonetic": "/ˈsɪɡnəl/",
+    "pos": "n./v.",
+    "meaning": "信号；发信号；标志着",
+    "example": "The traffic signal turned red.",
+    "exampleCn": "交通信号灯变红了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 563,
+    "word": "statement",
+    "phonetic": "/ˈsteɪtmənt/",
+    "pos": "n.",
+    "meaning": "声明；陈述；报表",
+    "example": "He made a statement to the police.",
+    "exampleCn": "他向警方作了陈述。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 564,
+    "word": "horizon",
+    "phonetic": "/həˈraɪzn/",
+    "pos": "n.",
+    "meaning": "地平线；视野；眼界",
+    "example": "The sun sank below the horizon.",
+    "exampleCn": "太阳落到了地平线以下。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 565,
+    "word": "offend",
+    "phonetic": "/əˈfend/",
+    "pos": "v.",
+    "meaning": "冒犯；得罪；违反",
+    "example": "He didn't mean to offend anyone.",
+    "exampleCn": "他并非有意冒犯任何人。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 566,
+    "word": "recommend",
+    "phonetic": "/ˌrekəˈmend/",
+    "pos": "v.",
+    "meaning": "推荐；建议；劝告",
+    "example": "I recommend this book to all students.",
+    "exampleCn": "我向所有学生推荐这本书。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 567,
+    "word": "contact",
+    "phonetic": "/ˈkɒntækt/",
+    "pos": "n./v.",
+    "meaning": "联系；接触；联络",
+    "example": "Please contact me by email.",
+    "exampleCn": "请通过电子邮件联系我。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 568,
+    "word": "household",
+    "phonetic": "/ˈhaʊshəʊld/",
+    "pos": "n.",
+    "meaning": "家庭；户；一家人",
+    "example": "Household expenses have increased.",
+    "exampleCn": "家庭开支增加了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 569,
+    "word": "expansion",
+    "phonetic": "/ɪkˈspænʃn/",
+    "pos": "n.",
+    "meaning": "扩张；扩大；膨胀",
+    "example": "The company plans expansion into Asia.",
+    "exampleCn": "公司计划向亚洲扩张。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 571,
+    "word": "incident",
+    "phonetic": "/ˈɪnsɪdənt/",
+    "pos": "n.",
+    "meaning": "事件；事变；插曲",
+    "example": "The incident was reported to the police.",
+    "exampleCn": "这起事件已向警方报告。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 572,
+    "word": "millimeter",
+    "phonetic": "/ˈmɪlimiːtə(r)/",
+    "pos": "n.",
+    "meaning": "毫米",
+    "example": "The thickness is about 5 millimeters.",
+    "exampleCn": "厚度大约 5 毫米。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 573,
+    "word": "anticipate",
+    "phonetic": "/ænˈtɪsɪpeɪt/",
+    "pos": "v.",
+    "meaning": "预期；期望；预料",
+    "example": "We anticipate good results.",
+    "exampleCn": "我们预期会有好结果。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 574,
+    "word": "instinct",
+    "phonetic": "/ˈɪnstɪŋkt/",
+    "pos": "n.",
+    "meaning": "本能；直觉；天性",
+    "example": "Birds learn to fly by instinct.",
+    "exampleCn": "鸟儿凭本能学会飞行。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 575,
+    "word": "reject",
+    "phonetic": "/rɪˈdʒekt/",
+    "pos": "v.",
+    "meaning": "拒绝；驳回；丢弃",
+    "example": "The proposal was rejected by the committee.",
+    "exampleCn": "提案被委员会驳回了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 576,
+    "word": "leap",
+    "phonetic": "/liːp/",
+    "pos": "v./n.",
+    "meaning": "跳跃；飞跃；剧增",
+    "example": "The cat leaped onto the table.",
+    "exampleCn": "猫跳上了桌子。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 577,
+    "word": "review",
+    "phonetic": "/rɪˈvjuː/",
+    "pos": "v./n.",
+    "meaning": "复习；回顾；审查",
+    "example": "Let's review what we learned today.",
+    "exampleCn": "让我们复习一下今天学的内容。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 578,
+    "word": "terminate",
+    "phonetic": "/ˈtɜːmɪneɪt/",
+    "pos": "v.",
+    "meaning": "终止；结束；解雇",
+    "example": "The contract was terminated early.",
+    "exampleCn": "合同被提前终止了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 579,
+    "word": "conform",
+    "phonetic": "/kənˈfɔːm/",
+    "pos": "v.",
+    "meaning": "符合；遵守；顺应",
+    "example": "The product must conform to safety standards.",
+    "exampleCn": "产品必须符合安全标准。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 580,
+    "word": "virus",
+    "phonetic": "/ˈvaɪrəs/",
+    "pos": "n.",
+    "meaning": "病毒；有害影响",
+    "example": "The computer virus damaged the files.",
+    "exampleCn": "电脑病毒损坏了文件。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 581,
+    "word": "numerous",
+    "phonetic": "/ˈnjuːmərəs/",
+    "pos": "adj.",
+    "meaning": "众多的；许多的",
+    "example": "There are numerous reasons for this.",
+    "exampleCn": "这有很多原因。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 582,
+    "word": "repeatedly",
+    "phonetic": "/rɪˈpiːtɪdli/",
+    "pos": "adv.",
+    "meaning": "反复地；再三地；重复地",
+    "example": "He knocked on the door repeatedly.",
+    "exampleCn": "他反复敲门。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 583,
+    "word": "weird",
+    "phonetic": "/wɪəd/",
+    "pos": "adj.",
+    "meaning": "怪异的；奇怪的；不可思议的",
+    "example": "That's a weird noise.",
+    "exampleCn": "那是个奇怪的声音。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 584,
+    "word": "informative",
+    "phonetic": "/ɪnˈfɔːmətɪv/",
+    "pos": "adj.",
+    "meaning": "提供信息的；增长知识的",
+    "example": "The documentary was very informative.",
+    "exampleCn": "这部纪录片很有知识性。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 585,
+    "word": "term",
+    "phonetic": "/tɜːm/",
+    "pos": "n.",
+    "meaning": "术语；学期；期限；条款",
+    "example": "The medical term was difficult to understand.",
+    "exampleCn": "这个医学术语很难理解。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 586,
+    "word": "incomplete",
+    "phonetic": "/ˌɪnkəmˈpliːt/",
+    "pos": "adj.",
+    "meaning": "不完整的；未完成的",
+    "example": "The project is still incomplete.",
+    "exampleCn": "这个项目还未完成。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 587,
+    "word": "Antarctic",
+    "phonetic": "/ænˈtɑːktɪk/",
+    "pos": "adj./n.",
+    "meaning": "南极的；南极洲",
+    "example": "The Antarctic is covered with ice.",
+    "exampleCn": "南极洲被冰雪覆盖。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 588,
+    "word": "necessarily",
+    "phonetic": "/ˌnesəˈserəli/",
+    "pos": "adv.",
+    "meaning": "必要地；必定；必然地",
+    "example": "Expensive doesn't necessarily mean better.",
+    "exampleCn": "贵的不一定更好。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 589,
+    "word": "unrelated",
+    "phonetic": "/ˌʌnrɪˈleɪtɪd/",
+    "pos": "adj.",
+    "meaning": "无关的；无亲缘关系的",
+    "example": "The two issues are unrelated.",
+    "exampleCn": "这两个问题无关。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 590,
+    "word": "fantasy",
+    "phonetic": "/ˈfæntəsi/",
+    "pos": "n.",
+    "meaning": "幻想；想象；白日梦",
+    "example": "The story is pure fantasy.",
+    "exampleCn": "这个故事纯属幻想。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  },
+  {
+    "id": 591,
+    "word": "practically",
+    "phonetic": "/ˈpræktɪkli/",
+    "pos": "adv.",
+    "meaning": "实际上；几乎；实用地",
+    "example": "The job is practically impossible.",
+    "exampleCn": "这工作实际上不可能完成。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "3",
+    "list": "1"
+  }
+]

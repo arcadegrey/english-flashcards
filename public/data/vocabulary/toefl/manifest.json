@@ -1,0 +1,175 @@
+{
+  "generatedAt": "2026-05-08T11:18:58.870Z",
+  "source": "/data/vocabulary.json",
+  "core": {
+    "path": "/data/vocabulary/core.json",
+    "count": 342
+  },
+  "toefl": {
+    "total": 2382,
+    "levels": [
+      {
+        "key": "3",
+        "label": "Level 3",
+        "count": 1010,
+        "lists": [
+          {
+            "key": "1",
+            "label": "List 1",
+            "count": 98,
+            "path": "/data/vocabulary/toefl/level-3/list-1.json"
+          },
+          {
+            "key": "2",
+            "label": "List 2",
+            "count": 100,
+            "path": "/data/vocabulary/toefl/level-3/list-2.json"
+          },
+          {
+            "key": "3",
+            "label": "List 3",
+            "count": 98,
+            "path": "/data/vocabulary/toefl/level-3/list-3.json"
+          },
+          {
+            "key": "4",
+            "label": "List 4",
+            "count": 99,
+            "path": "/data/vocabulary/toefl/level-3/list-4.json"
+          },
+          {
+            "key": "5",
+            "label": "List 5",
+            "count": 100,
+            "path": "/data/vocabulary/toefl/level-3/list-5.json"
+          },
+          {
+            "key": "6",
+            "label": "List 6",
+            "count": 100,
+            "path": "/data/vocabulary/toefl/level-3/list-6.json"
+          },
+          {
+            "key": "7",
+            "label": "List 7",
+            "count": 100,
+            "path": "/data/vocabulary/toefl/level-3/list-7.json"
+          },
+          {
+            "key": "8",
+            "label": "List 8",
+            "count": 99,
+            "path": "/data/vocabulary/toefl/level-3/list-8.json"
+          },
+          {
+            "key": "9",
+            "label": "List 9",
+            "count": 99,
+            "path": "/data/vocabulary/toefl/level-3/list-9.json"
+          },
+          {
+            "key": "10",
+            "label": "List 10",
+            "count": 117,
+            "path": "/data/vocabulary/toefl/level-3/list-10.json"
+          }
+        ],
+        "meta": "10 个 List"
+      },
+      {
+        "key": "4",
+        "label": "Level 4",
+        "count": 1072,
+        "lists": [
+          {
+            "key": "1",
+            "label": "List 1",
+            "count": 100,
+            "path": "/data/vocabulary/toefl/level-4/list-1.json"
+          },
+          {
+            "key": "2",
+            "label": "List 2",
+            "count": 100,
+            "path": "/data/vocabulary/toefl/level-4/list-2.json"
+          },
+          {
+            "key": "3",
+            "label": "List 3",
+            "count": 100,
+            "path": "/data/vocabulary/toefl/level-4/list-3.json"
+          },
+          {
+            "key": "4",
+            "label": "List 4",
+            "count": 100,
+            "path": "/data/vocabulary/toefl/level-4/list-4.json"
+          },
+          {
+            "key": "5",
+            "label": "List 5",
+            "count": 100,
+            "path": "/data/vocabulary/toefl/level-4/list-5.json"
+          },
+          {
+            "key": "6",
+            "label": "List 6",
+            "count": 100,
+            "path": "/data/vocabulary/toefl/level-4/list-6.json"
+          },
+          {
+            "key": "7",
+            "label": "List 7",
+            "count": 99,
+            "path": "/data/vocabulary/toefl/level-4/list-7.json"
+          },
+          {
+            "key": "8",
+            "label": "List 8",
+            "count": 100,
+            "path": "/data/vocabulary/toefl/level-4/list-8.json"
+          },
+          {
+            "key": "9",
+            "label": "List 9",
+            "count": 100,
+            "path": "/data/vocabulary/toefl/level-4/list-9.json"
+          },
+          {
+            "key": "10",
+            "label": "List 10",
+            "count": 173,
+            "path": "/data/vocabulary/toefl/level-4/list-10.json"
+          }
+        ],
+        "meta": "10 个 List"
+      },
+      {
+        "key": "5",
+        "label": "Level 5",
+        "count": 300,
+        "lists": [
+          {
+            "key": "1",
+            "label": "List 1",
+            "count": 100,
+            "path": "/data/vocabulary/toefl/level-5/list-1.json"
+          },
+          {
+            "key": "2",
+            "label": "List 2",
+            "count": 100,
+            "path": "/data/vocabulary/toefl/level-5/list-2.json"
+          },
+          {
+            "key": "3",
+            "label": "List 3",
+            "count": 100,
+            "path": "/data/vocabulary/toefl/level-5/list-3.json"
+          }
+        ],
+        "meta": "3 个 List"
+      }
+    ]
+  }
+}

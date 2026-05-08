@@ -1,0 +1,2606 @@
+[
+  {
+    "id": 37,
+    "word": "agent",
+    "phonetic": "/ˈeɪdʒənt/",
+    "pos": "n.",
+    "meaning": "代理人/因素/药剂",
+    "example": "The chemical agent was used to clean the water.",
+    "exampleCn": "这种化学药剂被用来净化水。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 105,
+    "word": "aisle",
+    "phonetic": "/aɪl/",
+    "pos": "n.",
+    "meaning": "过道/通道",
+    "example": "He walked down the aisle to find his seat.",
+    "exampleCn": "他沿着过道走去找座位。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 123,
+    "word": "aluminum",
+    "phonetic": "/əˈluːmɪnəm/",
+    "pos": "n.",
+    "meaning": "铝",
+    "example": "Aluminum is light and useful in aircraft construction.",
+    "exampleCn": "铝很轻，在飞机制造中很有用。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 178,
+    "word": "assess",
+    "phonetic": "/əˈses/",
+    "pos": "v.",
+    "meaning": "评估/估算",
+    "example": "Scientists assess the damage after a storm.",
+    "exampleCn": "科学家在暴风雨后评估损失。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 179,
+    "word": "assign",
+    "phonetic": "/əˈsaɪn/",
+    "pos": "v.",
+    "meaning": "分配/指定/布置",
+    "example": "The teacher assigned a research project to the class.",
+    "exampleCn": "老师给全班布置了一项研究项目。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 182,
+    "word": "assume",
+    "phonetic": "/əˈsuːm/",
+    "pos": "v.",
+    "meaning": "假设/承担/认为",
+    "example": "Do not assume that every source is reliable.",
+    "exampleCn": "不要认为每个来源都是可靠的。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 192,
+    "word": "attribute",
+    "phonetic": "/əˈtrɪbjuːt/",
+    "pos": "v./n.",
+    "meaning": "把……归因于/属性/特征",
+    "example": "Researchers attribute the change to rising temperatures.",
+    "exampleCn": "研究人员把这种变化归因于气温上升。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 209,
+    "word": "bargain",
+    "phonetic": "/ˈbɑːrɡən/",
+    "pos": "n./v.",
+    "meaning": "便宜货/交易/讨价还价",
+    "example": "The jacket was a bargain at half price.",
+    "exampleCn": "这件夹克半价出售，非常划算。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 231,
+    "word": "belly",
+    "phonetic": "/ˈbeli/",
+    "pos": "n.",
+    "meaning": "腹部/肚子",
+    "example": "The baby slept on his belly.",
+    "exampleCn": "婴儿趴着睡觉。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2270,
+    "word": "migrant",
+    "phonetic": "/ˈmaɪɡrənt/",
+    "pos": "n./adj.",
+    "meaning": "移民/迁徙者/迁移的",
+    "example": "Many migrant workers moved to the city to find jobs.",
+    "exampleCn": "许多移民工人搬到城市寻找工作。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2271,
+    "word": "critical",
+    "phonetic": "/ˈkrɪtɪkəl/",
+    "pos": "adj.",
+    "meaning": "关键的/批判性的/严重的",
+    "example": "Clean water is critical for public health.",
+    "exampleCn": "清洁的水对公共健康至关重要。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2272,
+    "word": "conceive",
+    "phonetic": "/kənˈsiːv/",
+    "pos": "v.",
+    "meaning": "构想/设想/怀孕",
+    "example": "The engineer conceived a new design for the bridge.",
+    "exampleCn": "这位工程师构想了一种新的桥梁设计。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2273,
+    "word": "decay",
+    "phonetic": "/dɪˈkeɪ/",
+    "pos": "v./n.",
+    "meaning": "腐烂/衰退/衰变",
+    "example": "The old building began to decay after years of neglect.",
+    "exampleCn": "这座旧建筑在多年无人维护后开始衰败。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2274,
+    "word": "avoidance",
+    "phonetic": "/əˈvɔɪdəns/",
+    "pos": "n.",
+    "meaning": "避免/回避",
+    "example": "Avoidance of difficult tasks can slow personal growth.",
+    "exampleCn": "回避困难任务会减缓个人成长。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2275,
+    "word": "apparatus",
+    "phonetic": "/ˌæpəˈrætəs/",
+    "pos": "n.",
+    "meaning": "仪器/装置/机构",
+    "example": "The laboratory apparatus was cleaned after the experiment.",
+    "exampleCn": "实验结束后，实验室仪器被清洗干净。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2276,
+    "word": "subscribe",
+    "phonetic": "/səbˈskraɪb/",
+    "pos": "v.",
+    "meaning": "订阅/同意/认购",
+    "example": "Students can subscribe to the science magazine online.",
+    "exampleCn": "学生可以在线订阅这本科学杂志。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2277,
+    "word": "oversimplification",
+    "phonetic": "/ˌoʊvərˌsɪmpləfəˈkeɪʃən/",
+    "pos": "n.",
+    "meaning": "过度简化",
+    "example": "Calling the issue simple is an oversimplification.",
+    "exampleCn": "把这个问题说成简单问题是一种过度简化。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2278,
+    "word": "explosion",
+    "phonetic": "/ɪkˈsploʊʒən/",
+    "pos": "n.",
+    "meaning": "爆炸/激增",
+    "example": "The explosion of online learning changed education quickly.",
+    "exampleCn": "在线学习的激增迅速改变了教育。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2279,
+    "word": "process",
+    "phonetic": "/ˈprɑːses/",
+    "pos": "n./v.",
+    "meaning": "过程/工序/处理",
+    "example": "Learning a language is a long process.",
+    "exampleCn": "学习一门语言是一个漫长的过程。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2280,
+    "word": "evaluate",
+    "phonetic": "/ɪˈvæljueɪt/",
+    "pos": "v.",
+    "meaning": "评估/评价",
+    "example": "Teachers evaluate students' writing based on clear criteria.",
+    "exampleCn": "老师根据明确标准评价学生的写作。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2281,
+    "word": "cluster",
+    "phonetic": "/ˈklʌstər/",
+    "pos": "n./v.",
+    "meaning": "群/簇/聚集",
+    "example": "A cluster of small villages lies near the river.",
+    "exampleCn": "一片小村庄聚集在河边。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2282,
+    "word": "intervention",
+    "phonetic": "/ˌɪntərˈvenʃən/",
+    "pos": "n.",
+    "meaning": "干预/介入",
+    "example": "Early intervention can help students improve their reading skills.",
+    "exampleCn": "早期干预可以帮助学生提高阅读能力。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2283,
+    "word": "suspicious",
+    "phonetic": "/səˈspɪʃəs/",
+    "pos": "adj.",
+    "meaning": "可疑的/怀疑的",
+    "example": "The guard noticed a suspicious package near the door.",
+    "exampleCn": "保安注意到门旁有一个可疑包裹。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2284,
+    "word": "fierce",
+    "phonetic": "/fɪrs/",
+    "pos": "adj.",
+    "meaning": "凶猛的/激烈的",
+    "example": "The two companies faced fierce competition.",
+    "exampleCn": "这两家公司面临激烈竞争。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2285,
+    "word": "large-scale",
+    "phonetic": "/ˌlɑːrdʒ ˈskeɪl/",
+    "pos": "adj.",
+    "meaning": "大规模的",
+    "example": "The city planned a large-scale transportation project.",
+    "exampleCn": "这座城市计划了一项大规模交通项目。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2286,
+    "word": "exhaust",
+    "phonetic": "/ɪɡˈzɔːst/",
+    "pos": "v./n.",
+    "meaning": "耗尽/使筋疲力尽/废气",
+    "example": "The long hike exhausted the group.",
+    "exampleCn": "长途徒步让这群人筋疲力尽。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2287,
+    "word": "excess",
+    "phonetic": "/ɪkˈses/",
+    "pos": "n./adj.",
+    "meaning": "过量/多余的/额外的",
+    "example": "Excess sugar can harm health.",
+    "exampleCn": "过量糖分会损害健康。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2288,
+    "word": "bust",
+    "phonetic": "/bʌst/",
+    "pos": "v./n.",
+    "meaning": "打破/突击搜查/半身像/失败",
+    "example": "Police busted the illegal operation last night.",
+    "exampleCn": "警方昨晚突击查处了这个非法行动。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2289,
+    "word": "mediate",
+    "phonetic": "/ˈmiːdieɪt/",
+    "pos": "v.",
+    "meaning": "调解/斡旋",
+    "example": "A teacher helped mediate the disagreement between students.",
+    "exampleCn": "一位老师帮助调解学生之间的分歧。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2290,
+    "word": "carve",
+    "phonetic": "/kɑːrv/",
+    "pos": "v.",
+    "meaning": "雕刻/切开",
+    "example": "The artist carved a bird from a piece of wood.",
+    "exampleCn": "艺术家用一块木头雕刻出一只鸟。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2291,
+    "word": "interdependence",
+    "phonetic": "/ˌɪntərdɪˈpendəns/",
+    "pos": "n.",
+    "meaning": "相互依赖",
+    "example": "Trade creates interdependence among countries.",
+    "exampleCn": "贸易在国家之间形成相互依赖。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2292,
+    "word": "trait",
+    "phonetic": "/treɪt/",
+    "pos": "n.",
+    "meaning": "特征/特点",
+    "example": "Patience is an important trait for a good teacher.",
+    "exampleCn": "耐心是一位好老师的重要特质。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2293,
+    "word": "justify",
+    "phonetic": "/ˈdʒʌstɪfaɪ/",
+    "pos": "v.",
+    "meaning": "证明……合理/为……辩护",
+    "example": "The researcher used data to justify her conclusion.",
+    "exampleCn": "研究人员用数据证明她的结论合理。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2294,
+    "word": "conception",
+    "phonetic": "/kənˈsepʃən/",
+    "pos": "n.",
+    "meaning": "概念/构想/怀孕",
+    "example": "His conception of freedom changed after the war.",
+    "exampleCn": "战后，他对自由的概念发生了变化。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2295,
+    "word": "forerunner",
+    "phonetic": "/ˈfɔːrrʌnər/",
+    "pos": "n.",
+    "meaning": "先驱/前身/预兆",
+    "example": "The early computer was a forerunner of modern laptops.",
+    "exampleCn": "早期电脑是现代笔记本电脑的前身。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2296,
+    "word": "autonomous",
+    "phonetic": "/ɔːˈtɑːnəməs/",
+    "pos": "adj.",
+    "meaning": "自治的/自主的",
+    "example": "Autonomous vehicles can operate without direct human control.",
+    "exampleCn": "自动驾驶车辆可以在无人直接控制下运行。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2297,
+    "word": "gymnastic",
+    "phonetic": "/dʒɪmˈnæstɪk/",
+    "pos": "adj.",
+    "meaning": "体操的/灵活的",
+    "example": "The athlete performed a gymnastic routine on the floor.",
+    "exampleCn": "运动员在地板上完成了一套体操动作。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2298,
+    "word": "unevenly",
+    "phonetic": "/ʌnˈiːvənli/",
+    "pos": "adv.",
+    "meaning": "不均匀地/不平坦地",
+    "example": "Rainfall is distributed unevenly across the region.",
+    "exampleCn": "降雨在该地区分布不均。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2299,
+    "word": "expenditure",
+    "phonetic": "/ɪkˈspendɪtʃər/",
+    "pos": "n.",
+    "meaning": "支出/花费",
+    "example": "Government expenditure on education increased this year.",
+    "exampleCn": "今年政府在教育上的支出增加了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2300,
+    "word": "splash",
+    "phonetic": "/splæʃ/",
+    "pos": "v./n.",
+    "meaning": "溅/泼/飞溅声",
+    "example": "The child made a splash when he jumped into the pool.",
+    "exampleCn": "孩子跳进泳池时溅起了水花。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2301,
+    "word": "hibernate",
+    "phonetic": "/ˈhaɪbərneɪt/",
+    "pos": "v.",
+    "meaning": "冬眠",
+    "example": "Bears hibernate during the coldest months.",
+    "exampleCn": "熊在最寒冷的月份冬眠。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2302,
+    "word": "predatory",
+    "phonetic": "/ˈpredətɔːri/",
+    "pos": "adj.",
+    "meaning": "掠食性的/掠夺性的",
+    "example": "Owls are predatory birds that hunt at night.",
+    "exampleCn": "猫头鹰是夜间捕猎的掠食性鸟类。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2303,
+    "word": "median",
+    "phonetic": "/ˈmiːdiən/",
+    "pos": "n./adj.",
+    "meaning": "中位数/中间的",
+    "example": "The median income in the town rose last year.",
+    "exampleCn": "去年这个城镇的收入中位数上升了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2304,
+    "word": "devastate",
+    "phonetic": "/ˈdevəsteɪt/",
+    "pos": "v.",
+    "meaning": "毁坏/使震惊",
+    "example": "The earthquake devastated several coastal towns.",
+    "exampleCn": "地震毁坏了几个沿海城镇。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2305,
+    "word": "revival",
+    "phonetic": "/rɪˈvaɪvəl/",
+    "pos": "n.",
+    "meaning": "复兴/恢复",
+    "example": "The city experienced a revival of traditional music.",
+    "exampleCn": "这座城市经历了传统音乐的复兴。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2306,
+    "word": "heredity",
+    "phonetic": "/həˈredəti/",
+    "pos": "n.",
+    "meaning": "遗传",
+    "example": "Heredity influences many physical traits.",
+    "exampleCn": "遗传会影响许多身体特征。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2307,
+    "word": "projection",
+    "phonetic": "/prəˈdʒekʃən/",
+    "pos": "n.",
+    "meaning": "预测/投影/投射",
+    "example": "The company's sales projection was too optimistic.",
+    "exampleCn": "公司的销售预测过于乐观。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2308,
+    "word": "spray",
+    "phonetic": "/spreɪ/",
+    "pos": "v./n.",
+    "meaning": "喷洒/喷雾",
+    "example": "Farmers spray water on the crops during dry weather.",
+    "exampleCn": "农民在干旱天气给作物喷水。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2309,
+    "word": "essence",
+    "phonetic": "/ˈesəns/",
+    "pos": "n.",
+    "meaning": "本质/精髓",
+    "example": "The essence of the argument is fairness.",
+    "exampleCn": "这个论点的本质是公平。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2310,
+    "word": "corruption",
+    "phonetic": "/kəˈrʌpʃən/",
+    "pos": "n.",
+    "meaning": "腐败/贪污/腐化",
+    "example": "Corruption can weaken public trust in government.",
+    "exampleCn": "腐败会削弱公众对政府的信任。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2311,
+    "word": "thereby",
+    "phonetic": "/ˌðerˈbaɪ/",
+    "pos": "adv.",
+    "meaning": "因此/由此",
+    "example": "The new policy reduced waste, thereby saving money.",
+    "exampleCn": "新政策减少了浪费，因此节省了资金。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2312,
+    "word": "exert",
+    "phonetic": "/ɪɡˈzɜːrt/",
+    "pos": "v.",
+    "meaning": "施加/运用/努力",
+    "example": "The moon exerts a force on Earth's oceans.",
+    "exampleCn": "月球对地球海洋施加引力。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2313,
+    "word": "skull",
+    "phonetic": "/skʌl/",
+    "pos": "n.",
+    "meaning": "头骨/颅骨",
+    "example": "The museum displayed the skull of an ancient animal.",
+    "exampleCn": "博物馆展出了一种古代动物的头骨。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2314,
+    "word": "rag",
+    "phonetic": "/ræɡ/",
+    "pos": "n.",
+    "meaning": "破布/抹布",
+    "example": "He used a rag to clean the window.",
+    "exampleCn": "他用一块抹布擦窗户。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2315,
+    "word": "questionnaire",
+    "phonetic": "/ˌkwestʃəˈner/",
+    "pos": "n.",
+    "meaning": "问卷/调查表",
+    "example": "Participants completed a questionnaire about their habits.",
+    "exampleCn": "参与者完成了一份关于他们习惯的问卷。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2316,
+    "word": "discredit",
+    "phonetic": "/dɪsˈkredɪt/",
+    "pos": "v./n.",
+    "meaning": "使不可信/败坏名声/怀疑",
+    "example": "False evidence can discredit a witness.",
+    "exampleCn": "虚假证据会使证人失去可信度。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2317,
+    "word": "suspect",
+    "phonetic": "/səˈspekt/",
+    "pos": "v./n./adj.",
+    "meaning": "怀疑/嫌疑人/可疑的",
+    "example": "Scientists suspect that pollution caused the decline.",
+    "exampleCn": "科学家怀疑污染导致了这种下降。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2318,
+    "word": "mold",
+    "phonetic": "/moʊld/",
+    "pos": "n./v.",
+    "meaning": "霉菌/模具/塑造",
+    "example": "Moisture caused mold to grow on the wall.",
+    "exampleCn": "潮湿导致墙上长出了霉菌。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2319,
+    "word": "timescale",
+    "phonetic": "/ˈtaɪmskeɪl/",
+    "pos": "n.",
+    "meaning": "时间尺度/时间范围",
+    "example": "Climate change occurs over a long timescale.",
+    "exampleCn": "气候变化发生在很长的时间尺度上。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2320,
+    "word": "tin",
+    "phonetic": "/tɪn/",
+    "pos": "n.",
+    "meaning": "锡/罐头/金属盒",
+    "example": "The food was stored in a tin container.",
+    "exampleCn": "食物被储存在一个锡制容器里。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2321,
+    "word": "endanger",
+    "phonetic": "/ɪnˈdeɪndʒər/",
+    "pos": "v.",
+    "meaning": "危及/使濒危",
+    "example": "Habitat loss can endanger many species.",
+    "exampleCn": "栖息地丧失会危及许多物种。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2322,
+    "word": "rebellion",
+    "phonetic": "/rɪˈbeljən/",
+    "pos": "n.",
+    "meaning": "叛乱/反抗",
+    "example": "The rebellion challenged the king's authority.",
+    "exampleCn": "这场叛乱挑战了国王的权威。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2323,
+    "word": "ensure",
+    "phonetic": "/ɪnˈʃʊr/",
+    "pos": "v.",
+    "meaning": "确保/保证",
+    "example": "Regular practice helps ensure steady progress.",
+    "exampleCn": "定期练习有助于确保稳定进步。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2324,
+    "word": "sculpture",
+    "phonetic": "/ˈskʌlptʃər/",
+    "pos": "n.",
+    "meaning": "雕塑/雕刻作品",
+    "example": "A stone sculpture stood in the center of the square.",
+    "exampleCn": "一座石雕矗立在广场中央。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2325,
+    "word": "enforce",
+    "phonetic": "/ɪnˈfɔːrs/",
+    "pos": "v.",
+    "meaning": "执行/强制实施",
+    "example": "The school must enforce safety rules.",
+    "exampleCn": "学校必须执行安全规定。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2326,
+    "word": "audition",
+    "phonetic": "/ɔːˈdɪʃən/",
+    "pos": "n./v.",
+    "meaning": "试镜/试演/参加试演",
+    "example": "She prepared a song for her audition.",
+    "exampleCn": "她为试镜准备了一首歌。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2327,
+    "word": "clearing",
+    "phonetic": "/ˈklɪrɪŋ/",
+    "pos": "n.",
+    "meaning": "林间空地/清理/结算",
+    "example": "The hikers rested in a clearing in the forest.",
+    "exampleCn": "徒步者在森林中的一片空地休息。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2328,
+    "word": "manual",
+    "phonetic": "/ˈmænjuəl/",
+    "pos": "n./adj.",
+    "meaning": "手册/手工的/体力的",
+    "example": "Read the manual before using the machine.",
+    "exampleCn": "使用机器前请阅读手册。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2329,
+    "word": "blacksmith",
+    "phonetic": "/ˈblæksmɪθ/",
+    "pos": "n.",
+    "meaning": "铁匠",
+    "example": "The blacksmith shaped the hot metal into a tool.",
+    "exampleCn": "铁匠把热金属打造成工具。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2330,
+    "word": "wander",
+    "phonetic": "/ˈwɑːndər/",
+    "pos": "v.",
+    "meaning": "漫步/徘徊/走神",
+    "example": "Tourists wandered through the old streets.",
+    "exampleCn": "游客们在古老的街道上漫步。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2331,
+    "word": "boom",
+    "phonetic": "/buːm/",
+    "pos": "n./v.",
+    "meaning": "繁荣/轰鸣声/迅速增长",
+    "example": "The technology industry experienced a boom.",
+    "exampleCn": "科技行业经历了一次繁荣。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2332,
+    "word": "phoenix",
+    "phonetic": "/ˈfiːnɪks/",
+    "pos": "n.",
+    "meaning": "凤凰/不死鸟",
+    "example": "The phoenix is a mythical bird that rises from ashes.",
+    "exampleCn": "凤凰是一种从灰烬中重生的神话鸟。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2333,
+    "word": "maximal",
+    "phonetic": "/ˈmæksɪməl/",
+    "pos": "adj.",
+    "meaning": "最大的/最高限度的",
+    "example": "The team worked with maximal effort.",
+    "exampleCn": "团队以最大努力工作。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2334,
+    "word": "physiology",
+    "phonetic": "/ˌfɪziˈɑːlədʒi/",
+    "pos": "n.",
+    "meaning": "生理学/生理机能",
+    "example": "Human physiology explains how the body functions.",
+    "exampleCn": "人体生理学解释身体如何运作。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2335,
+    "word": "virtual",
+    "phonetic": "/ˈvɜːrtʃuəl/",
+    "pos": "adj.",
+    "meaning": "虚拟的/事实上的",
+    "example": "Students attended a virtual lecture from home.",
+    "exampleCn": "学生们在家参加了一场虚拟讲座。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2336,
+    "word": "dim",
+    "phonetic": "/dɪm/",
+    "pos": "adj./v.",
+    "meaning": "昏暗的/暗淡的/使变暗",
+    "example": "The room was too dim for reading.",
+    "exampleCn": "房间太昏暗，不适合阅读。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2337,
+    "word": "conformity",
+    "phonetic": "/kənˈfɔːrməti/",
+    "pos": "n.",
+    "meaning": "遵从/一致/符合",
+    "example": "Conformity to social rules can shape behavior.",
+    "exampleCn": "对社会规则的遵从会塑造行为。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2338,
+    "word": "incur",
+    "phonetic": "/ɪnˈkɜːr/",
+    "pos": "v.",
+    "meaning": "招致/承担/遭受",
+    "example": "Companies may incur losses during a recession.",
+    "exampleCn": "公司在经济衰退期间可能遭受损失。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2339,
+    "word": "contradict",
+    "phonetic": "/ˌkɑːntrəˈdɪkt/",
+    "pos": "v.",
+    "meaning": "反驳/与……矛盾",
+    "example": "The new evidence seemed to contradict the old theory.",
+    "exampleCn": "新证据似乎与旧理论相矛盾。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2340,
+    "word": "rid",
+    "phonetic": "/rɪd/",
+    "pos": "v.",
+    "meaning": "使摆脱/去除",
+    "example": "The city tried to rid the river of pollution.",
+    "exampleCn": "这座城市试图清除河流污染。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2341,
+    "word": "lunar",
+    "phonetic": "/ˈluːnər/",
+    "pos": "adj.",
+    "meaning": "月球的/阴历的",
+    "example": "A lunar eclipse occurs when Earth blocks sunlight from the moon.",
+    "exampleCn": "月食发生在地球挡住照向月球的阳光时。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2342,
+    "word": "devotion",
+    "phonetic": "/dɪˈvoʊʃən/",
+    "pos": "n.",
+    "meaning": "奉献/忠诚/热爱",
+    "example": "Her devotion to music inspired her classmates.",
+    "exampleCn": "她对音乐的热爱激励了同学们。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2343,
+    "word": "undertake",
+    "phonetic": "/ˌʌndərˈteɪk/",
+    "pos": "v.",
+    "meaning": "承担/从事/开始进行",
+    "example": "The university will undertake a new research project.",
+    "exampleCn": "这所大学将开展一项新的研究项目。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2344,
+    "word": "dispute",
+    "phonetic": "/dɪˈspjuːt/",
+    "pos": "n./v.",
+    "meaning": "争论/争端/质疑",
+    "example": "The two neighbors had a dispute about the fence.",
+    "exampleCn": "两位邻居因围栏问题发生争执。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2345,
+    "word": "humiliate",
+    "phonetic": "/hjuːˈmɪlieɪt/",
+    "pos": "v.",
+    "meaning": "羞辱/使丢脸",
+    "example": "Public criticism can humiliate a young student.",
+    "exampleCn": "公开批评可能会羞辱一名年轻学生。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2346,
+    "word": "disruption",
+    "phonetic": "/dɪsˈrʌpʃən/",
+    "pos": "n.",
+    "meaning": "中断/扰乱/破坏",
+    "example": "Heavy snow caused major disruption to transportation.",
+    "exampleCn": "大雪严重扰乱了交通。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2347,
+    "word": "flaw",
+    "phonetic": "/flɔː/",
+    "pos": "n.",
+    "meaning": "缺陷/瑕疵",
+    "example": "The plan had one serious flaw.",
+    "exampleCn": "这个计划有一个严重缺陷。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2348,
+    "word": "granite",
+    "phonetic": "/ˈɡrænɪt/",
+    "pos": "n.",
+    "meaning": "花岗岩",
+    "example": "The monument was made of polished granite.",
+    "exampleCn": "这座纪念碑由抛光花岗岩制成。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2349,
+    "word": "quest",
+    "phonetic": "/kwest/",
+    "pos": "n.",
+    "meaning": "追求/探索/任务",
+    "example": "The scientist began a quest for a better cure.",
+    "exampleCn": "这位科学家开始寻找更好的治疗方法。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2350,
+    "word": "court",
+    "phonetic": "/kɔːrt/",
+    "pos": "n./v.",
+    "meaning": "法院/球场/宫廷/追求",
+    "example": "The case was settled in court.",
+    "exampleCn": "这个案件在法庭上解决了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2351,
+    "word": "posit",
+    "phonetic": "/ˈpɑːzɪt/",
+    "pos": "v.",
+    "meaning": "假定/提出",
+    "example": "The theory posits that language shapes thought.",
+    "exampleCn": "该理论假定语言会塑造思想。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2352,
+    "word": "frown",
+    "phonetic": "/fraʊn/",
+    "pos": "v./n.",
+    "meaning": "皱眉/不赞成",
+    "example": "The teacher frowned when students ignored the rules.",
+    "exampleCn": "当学生无视规则时，老师皱起了眉头。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2353,
+    "word": "hypothesis",
+    "phonetic": "/haɪˈpɑːθəsɪs/",
+    "pos": "n.",
+    "meaning": "假设/假说",
+    "example": "The experiment tested the scientist's hypothesis.",
+    "exampleCn": "实验检验了科学家的假设。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2354,
+    "word": "consolidate",
+    "phonetic": "/kənˈsɑːlɪdeɪt/",
+    "pos": "v.",
+    "meaning": "巩固/合并",
+    "example": "The company consolidated several small offices.",
+    "exampleCn": "公司合并了几个小办公室。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2355,
+    "word": "commute",
+    "phonetic": "/kəˈmjuːt/",
+    "pos": "v./n.",
+    "meaning": "通勤/减刑/通勤路程",
+    "example": "She commutes to school by train every day.",
+    "exampleCn": "她每天坐火车通勤去学校。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2356,
+    "word": "generalization",
+    "phonetic": "/ˌdʒenərələˈzeɪʃən/",
+    "pos": "n.",
+    "meaning": "概括/归纳/泛化",
+    "example": "A generalization based on one example may be weak.",
+    "exampleCn": "基于一个例子的概括可能很薄弱。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2357,
+    "word": "hybrid",
+    "phonetic": "/ˈhaɪbrɪd/",
+    "pos": "n./adj.",
+    "meaning": "混合物/杂交种/混合的",
+    "example": "The school uses a hybrid model of online and in-person classes.",
+    "exampleCn": "学校采用线上和线下结合的混合模式。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2358,
+    "word": "aggressiveness",
+    "phonetic": "/əˈɡresɪvnəs/",
+    "pos": "n.",
+    "meaning": "攻击性/进取性",
+    "example": "The animal's aggressiveness increased when it felt threatened.",
+    "exampleCn": "当这只动物感到受威胁时，它的攻击性增强了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2359,
+    "word": "deficit",
+    "phonetic": "/ˈdefɪsɪt/",
+    "pos": "n.",
+    "meaning": "赤字/不足/缺陷",
+    "example": "The government faced a large budget deficit.",
+    "exampleCn": "政府面临巨大的预算赤字。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2360,
+    "word": "ultimately",
+    "phonetic": "/ˈʌltɪmətli/",
+    "pos": "adv.",
+    "meaning": "最终/归根结底",
+    "example": "Ultimately, the evidence supported the theory.",
+    "exampleCn": "最终，证据支持了该理论。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2361,
+    "word": "rodent",
+    "phonetic": "/ˈroʊdənt/",
+    "pos": "n.",
+    "meaning": "啮齿动物",
+    "example": "A mouse is a common type of rodent.",
+    "exampleCn": "老鼠是一种常见的啮齿动物。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2362,
+    "word": "drown",
+    "phonetic": "/draʊn/",
+    "pos": "v.",
+    "meaning": "淹死/淹没/盖过",
+    "example": "Heavy rain can drown low fields.",
+    "exampleCn": "大雨可能会淹没低洼田地。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2363,
+    "word": "flock",
+    "phonetic": "/flɑːk/",
+    "pos": "n./v.",
+    "meaning": "鸟群/兽群/蜂拥而至",
+    "example": "A flock of birds flew over the lake.",
+    "exampleCn": "一群鸟飞过湖面。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2364,
+    "word": "problematic",
+    "phonetic": "/ˌprɑːbləˈmætɪk/",
+    "pos": "adj.",
+    "meaning": "有问题的/成问题的",
+    "example": "The results were problematic because the sample was too small.",
+    "exampleCn": "由于样本太小，结果存在问题。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2365,
+    "word": "restoration",
+    "phonetic": "/ˌrestəˈreɪʃən/",
+    "pos": "n.",
+    "meaning": "恢复/修复/复原",
+    "example": "The restoration of the old theater took two years.",
+    "exampleCn": "这座旧剧院的修复花了两年。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2366,
+    "word": "maritime",
+    "phonetic": "/ˈmærɪtaɪm/",
+    "pos": "adj.",
+    "meaning": "海事的/海洋的/沿海的",
+    "example": "The city has a long maritime history.",
+    "exampleCn": "这座城市有悠久的海事历史。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2367,
+    "word": "panic",
+    "phonetic": "/ˈpænɪk/",
+    "pos": "n./v.",
+    "meaning": "恐慌/惊慌",
+    "example": "People began to panic when the alarm sounded.",
+    "exampleCn": "警报响起时，人们开始恐慌。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2368,
+    "word": "encounter",
+    "phonetic": "/ɪnˈkaʊntər/",
+    "pos": "v./n.",
+    "meaning": "遇到/遭遇/相遇",
+    "example": "Hikers may encounter wild animals in the park.",
+    "exampleCn": "徒步者可能会在公园里遇到野生动物。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2369,
+    "word": "hostile",
+    "phonetic": "/ˈhɑːstl/",
+    "pos": "adj.",
+    "meaning": "敌对的/不友好的/恶劣的",
+    "example": "The explorers faced a hostile environment.",
+    "exampleCn": "探险者面临恶劣的环境。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2370,
+    "word": "reclaim",
+    "phonetic": "/rɪˈkleɪm/",
+    "pos": "v.",
+    "meaning": "收回/开垦/重新利用",
+    "example": "The city plans to reclaim abandoned land for parks.",
+    "exampleCn": "这座城市计划将废弃土地重新利用为公园。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2371,
+    "word": "dynasty",
+    "phonetic": "/ˈdaɪnəsti/",
+    "pos": "n.",
+    "meaning": "王朝/朝代",
+    "example": "The Tang dynasty was an important period in Chinese history.",
+    "exampleCn": "唐朝是中国历史上的重要时期。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2372,
+    "word": "eliminate",
+    "phonetic": "/ɪˈlɪmɪneɪt/",
+    "pos": "v.",
+    "meaning": "消除/淘汰",
+    "example": "Better sanitation helped eliminate the disease.",
+    "exampleCn": "更好的卫生条件帮助消除了这种疾病。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2373,
+    "word": "definite",
+    "phonetic": "/ˈdefɪnət/",
+    "pos": "adj.",
+    "meaning": "明确的/确定的",
+    "example": "The teacher gave a definite answer to the question.",
+    "exampleCn": "老师对这个问题给出了明确答案。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2374,
+    "word": "equator",
+    "phonetic": "/ɪˈkweɪtər/",
+    "pos": "n.",
+    "meaning": "赤道",
+    "example": "Countries near the equator often have warm climates.",
+    "exampleCn": "赤道附近的国家通常气候温暖。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2375,
+    "word": "twist",
+    "phonetic": "/twɪst/",
+    "pos": "v./n.",
+    "meaning": "扭转/转折/弯曲",
+    "example": "The story had an unexpected twist at the end.",
+    "exampleCn": "故事结尾有一个意想不到的转折。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2376,
+    "word": "mechanism",
+    "phonetic": "/ˈmekənɪzəm/",
+    "pos": "n.",
+    "meaning": "机制/机械装置",
+    "example": "Photosynthesis is a mechanism plants use to make food.",
+    "exampleCn": "光合作用是植物制造养分的一种机制。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2377,
+    "word": "identification",
+    "phonetic": "/aɪˌdentɪfɪˈkeɪʃən/",
+    "pos": "n.",
+    "meaning": "识别/身份证明",
+    "example": "Identification of the species required careful observation.",
+    "exampleCn": "识别这个物种需要仔细观察。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2378,
+    "word": "sighting",
+    "phonetic": "/ˈsaɪtɪŋ/",
+    "pos": "n.",
+    "meaning": "目击/看见",
+    "example": "There was a rare bird sighting near the lake.",
+    "exampleCn": "湖边有人目击到一种罕见鸟类。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2379,
+    "word": "procedure",
+    "phonetic": "/prəˈsiːdʒər/",
+    "pos": "n.",
+    "meaning": "程序/步骤/手续",
+    "example": "The safety procedure must be followed in the lab.",
+    "exampleCn": "实验室必须遵守安全程序。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2380,
+    "word": "radius",
+    "phonetic": "/ˈreɪdiəs/",
+    "pos": "n.",
+    "meaning": "半径/范围",
+    "example": "The radius of the circle is five centimeters.",
+    "exampleCn": "这个圆的半径是五厘米。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2381,
+    "word": "rectangle",
+    "phonetic": "/ˈrektæŋɡəl/",
+    "pos": "n.",
+    "meaning": "长方形/矩形",
+    "example": "A rectangle has four sides and four right angles.",
+    "exampleCn": "长方形有四条边和四个直角。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2382,
+    "word": "perimeter",
+    "phonetic": "/pəˈrɪmɪtər/",
+    "pos": "n.",
+    "meaning": "周长/边界",
+    "example": "The perimeter of the garden is marked by a fence.",
+    "exampleCn": "花园的周边由栅栏标出。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2383,
+    "word": "voltage",
+    "phonetic": "/ˈvoʊltɪdʒ/",
+    "pos": "n.",
+    "meaning": "电压",
+    "example": "High voltage can be dangerous.",
+    "exampleCn": "高电压可能很危险。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2384,
+    "word": "proverb",
+    "phonetic": "/ˈprɑːvɜːrb/",
+    "pos": "n.",
+    "meaning": "谚语/格言",
+    "example": "The proverb teaches people to value hard work.",
+    "exampleCn": "这句谚语教导人们重视努力。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2385,
+    "word": "memorial",
+    "phonetic": "/məˈmɔːriəl/",
+    "pos": "n./adj.",
+    "meaning": "纪念碑/纪念的",
+    "example": "The memorial honors soldiers who died in the war.",
+    "exampleCn": "这座纪念碑纪念战争中牺牲的士兵。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2386,
+    "word": "stir",
+    "phonetic": "/stɜːr/",
+    "pos": "v./n.",
+    "meaning": "搅拌/激起/轰动",
+    "example": "Stir the soup slowly while it cooks.",
+    "exampleCn": "煮汤时慢慢搅拌。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2387,
+    "word": "cart",
+    "phonetic": "/kɑːrt/",
+    "pos": "n.",
+    "meaning": "手推车/购物车",
+    "example": "She pushed the cart through the supermarket.",
+    "exampleCn": "她推着购物车穿过超市。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2388,
+    "word": "curtain",
+    "phonetic": "/ˈkɜːrtn/",
+    "pos": "n.",
+    "meaning": "窗帘/幕布",
+    "example": "The curtain blocked the bright sunlight.",
+    "exampleCn": "窗帘挡住了强烈的阳光。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2389,
+    "word": "lawn",
+    "phonetic": "/lɔːn/",
+    "pos": "n.",
+    "meaning": "草坪",
+    "example": "Children played on the lawn after school.",
+    "exampleCn": "放学后孩子们在草坪上玩耍。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2390,
+    "word": "tag",
+    "phonetic": "/tæɡ/",
+    "pos": "n./v.",
+    "meaning": "标签/标记/给……贴标签",
+    "example": "Each suitcase had a name tag.",
+    "exampleCn": "每个手提箱都有一个姓名标签。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2391,
+    "word": "dash",
+    "phonetic": "/dæʃ/",
+    "pos": "v./n.",
+    "meaning": "猛冲/破折号/少量",
+    "example": "He made a dash for the bus stop.",
+    "exampleCn": "他冲向公交车站。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2392,
+    "word": "domain",
+    "phonetic": "/doʊˈmeɪn/",
+    "pos": "n.",
+    "meaning": "领域/域名/范围",
+    "example": "Climate science is outside his main domain of study.",
+    "exampleCn": "气候科学不属于他的主要研究领域。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2393,
+    "word": "stove",
+    "phonetic": "/stoʊv/",
+    "pos": "n.",
+    "meaning": "炉子/火炉",
+    "example": "The soup was heating on the stove.",
+    "exampleCn": "汤正在炉子上加热。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2394,
+    "word": "necklace",
+    "phonetic": "/ˈnekləs/",
+    "pos": "n.",
+    "meaning": "项链",
+    "example": "She wore a silver necklace to the ceremony.",
+    "exampleCn": "她戴着一条银项链参加典礼。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2395,
+    "word": "installation",
+    "phonetic": "/ˌɪnstəˈleɪʃən/",
+    "pos": "n.",
+    "meaning": "安装/装置/设施",
+    "example": "The installation of the new software took an hour.",
+    "exampleCn": "新软件的安装花了一个小时。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2396,
+    "word": "parade",
+    "phonetic": "/pəˈreɪd/",
+    "pos": "n./v.",
+    "meaning": "游行/列队行进",
+    "example": "The parade moved slowly down the main street.",
+    "exampleCn": "游行队伍沿着主街缓慢前进。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2397,
+    "word": "tick",
+    "phonetic": "/tɪk/",
+    "pos": "n./v.",
+    "meaning": "滴答声/蜱虫/打勾",
+    "example": "The clock ticked quietly in the classroom.",
+    "exampleCn": "教室里的钟安静地滴答作响。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2398,
+    "word": "aroma",
+    "phonetic": "/əˈroʊmə/",
+    "pos": "n.",
+    "meaning": "香味/芳香",
+    "example": "The aroma of fresh bread filled the kitchen.",
+    "exampleCn": "新鲜面包的香味充满了厨房。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2399,
+    "word": "tribute",
+    "phonetic": "/ˈtrɪbjuːt/",
+    "pos": "n.",
+    "meaning": "致敬/贡品/悼念",
+    "example": "The concert was a tribute to the famous composer.",
+    "exampleCn": "这场音乐会是对那位著名作曲家的致敬。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2400,
+    "word": "energetic",
+    "phonetic": "/ˌenərˈdʒetɪk/",
+    "pos": "adj.",
+    "meaning": "精力充沛的/充满活力的",
+    "example": "The energetic teacher made the lesson exciting.",
+    "exampleCn": "这位精力充沛的老师让课堂变得有趣。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2401,
+    "word": "primate",
+    "phonetic": "/ˈpraɪmeɪt/",
+    "pos": "n.",
+    "meaning": "灵长类动物",
+    "example": "Humans and monkeys are both primates.",
+    "exampleCn": "人类和猴子都属于灵长类动物。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2402,
+    "word": "sneaker",
+    "phonetic": "/ˈsniːkər/",
+    "pos": "n.",
+    "meaning": "运动鞋",
+    "example": "He bought a new pair of sneakers for running.",
+    "exampleCn": "他买了一双新的跑鞋。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2403,
+    "word": "tattoo",
+    "phonetic": "/tæˈtuː/",
+    "pos": "n./v.",
+    "meaning": "纹身/给……纹身",
+    "example": "The tattoo on his arm showed a small bird.",
+    "exampleCn": "他手臂上的纹身是一只小鸟。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2404,
+    "word": "cancer",
+    "phonetic": "/ˈkænsər/",
+    "pos": "n.",
+    "meaning": "癌症",
+    "example": "Early detection can improve cancer treatment.",
+    "exampleCn": "早期发现可以改善癌症治疗效果。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2405,
+    "word": "cautious",
+    "phonetic": "/ˈkɔːʃəs/",
+    "pos": "adj.",
+    "meaning": "谨慎的/小心的",
+    "example": "Drivers should be cautious on icy roads.",
+    "exampleCn": "司机在结冰道路上应该谨慎。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2406,
+    "word": "tournament",
+    "phonetic": "/ˈtʊrnəmənt/",
+    "pos": "n.",
+    "meaning": "锦标赛/比赛",
+    "example": "Our school won the basketball tournament.",
+    "exampleCn": "我们学校赢得了篮球锦标赛。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2407,
+    "word": "waist",
+    "phonetic": "/weɪst/",
+    "pos": "n.",
+    "meaning": "腰/腰部",
+    "example": "The belt was too loose around his waist.",
+    "exampleCn": "这条腰带在他腰上太松了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2408,
+    "word": "accusation",
+    "phonetic": "/ˌækjəˈzeɪʃən/",
+    "pos": "n.",
+    "meaning": "指控/控告",
+    "example": "The accusation was not supported by evidence.",
+    "exampleCn": "这项指控没有证据支持。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2409,
+    "word": "extension",
+    "phonetic": "/ɪkˈstenʃən/",
+    "pos": "n.",
+    "meaning": "延长/扩展/分机",
+    "example": "The student asked for an extension on the essay.",
+    "exampleCn": "学生请求延长论文截止日期。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2410,
+    "word": "immigration",
+    "phonetic": "/ˌɪmɪˈɡreɪʃən/",
+    "pos": "n.",
+    "meaning": "移民/移居/入境管理",
+    "example": "Immigration changed the culture of the city.",
+    "exampleCn": "移民改变了这座城市的文化。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2411,
+    "word": "jealous",
+    "phonetic": "/ˈdʒeləs/",
+    "pos": "adj.",
+    "meaning": "嫉妒的/羡慕的",
+    "example": "He felt jealous when his friend won the prize.",
+    "exampleCn": "当朋友获奖时，他感到嫉妒。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2412,
+    "word": "medication",
+    "phonetic": "/ˌmedɪˈkeɪʃən/",
+    "pos": "n.",
+    "meaning": "药物/药剂",
+    "example": "Take the medication exactly as the doctor instructed.",
+    "exampleCn": "请完全按照医生的指示服用药物。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2413,
+    "word": "paraphrase",
+    "phonetic": "/ˈpærəfreɪz/",
+    "pos": "v./n.",
+    "meaning": "改述/释义",
+    "example": "Students should paraphrase information instead of copying it.",
+    "exampleCn": "学生应该改述信息，而不是直接复制。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2414,
+    "word": "receipt",
+    "phonetic": "/rɪˈsiːt/",
+    "pos": "n.",
+    "meaning": "收据/接收",
+    "example": "Keep the receipt in case you need to return the item.",
+    "exampleCn": "保留收据，以防需要退货。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2415,
+    "word": "scar",
+    "phonetic": "/skɑːr/",
+    "pos": "n./v.",
+    "meaning": "伤疤/创伤/留下伤痕",
+    "example": "The cut left a small scar on her hand.",
+    "exampleCn": "那道伤口在她手上留下了一小块疤痕。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2416,
+    "word": "audible",
+    "phonetic": "/ˈɔːdəbəl/",
+    "pos": "adj.",
+    "meaning": "听得见的",
+    "example": "His voice was barely audible in the large hall.",
+    "exampleCn": "在大厅里，他的声音几乎听不见。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2417,
+    "word": "fireworks",
+    "phonetic": "/ˈfaɪərwɜːrks/",
+    "pos": "n.",
+    "meaning": "烟花/烟火",
+    "example": "Fireworks lit up the sky during the celebration.",
+    "exampleCn": "庆祝活动中，烟花照亮了天空。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2418,
+    "word": "graphic",
+    "phonetic": "/ˈɡræfɪk/",
+    "pos": "adj./n.",
+    "meaning": "图表的/生动的/图像",
+    "example": "The report included a graphic showing population growth.",
+    "exampleCn": "报告中包含一张显示人口增长的图表。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2419,
+    "word": "license",
+    "phonetic": "/ˈlaɪsəns/",
+    "pos": "n./v.",
+    "meaning": "执照/许可证/授权",
+    "example": "You need a license to drive a car.",
+    "exampleCn": "开车需要驾照。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2420,
+    "word": "throne",
+    "phonetic": "/θroʊn/",
+    "pos": "n.",
+    "meaning": "王位/宝座",
+    "example": "The prince hoped to inherit the throne.",
+    "exampleCn": "王子希望继承王位。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2421,
+    "word": "awkward",
+    "phonetic": "/ˈɔːkwərd/",
+    "pos": "adj.",
+    "meaning": "尴尬的/笨拙的/棘手的",
+    "example": "There was an awkward silence after the question.",
+    "exampleCn": "问题之后出现了尴尬的沉默。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2422,
+    "word": "crisp",
+    "phonetic": "/krɪsp/",
+    "pos": "adj.",
+    "meaning": "脆的/清新的/清晰的",
+    "example": "The autumn air felt crisp and cool.",
+    "exampleCn": "秋天的空气清新而凉爽。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2423,
+    "word": "disclose",
+    "phonetic": "/dɪsˈkloʊz/",
+    "pos": "v.",
+    "meaning": "透露/公开",
+    "example": "The company must disclose important financial information.",
+    "exampleCn": "公司必须公开重要的财务信息。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2424,
+    "word": "earnest",
+    "phonetic": "/ˈɜːrnɪst/",
+    "pos": "adj.",
+    "meaning": "认真的/诚挚的",
+    "example": "She made an earnest effort to improve her English.",
+    "exampleCn": "她认真努力提高英语水平。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2425,
+    "word": "malfunction",
+    "phonetic": "/ˌmælˈfʌŋkʃən/",
+    "pos": "n./v.",
+    "meaning": "故障/发生故障",
+    "example": "A computer malfunction delayed the presentation.",
+    "exampleCn": "电脑故障耽误了演示。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2426,
+    "word": "medal",
+    "phonetic": "/ˈmedl/",
+    "pos": "n.",
+    "meaning": "奖牌/勋章",
+    "example": "The athlete won a gold medal.",
+    "exampleCn": "这名运动员赢得了一枚金牌。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2427,
+    "word": "newsletter",
+    "phonetic": "/ˈnuːzletər/",
+    "pos": "n.",
+    "meaning": "简报/通讯",
+    "example": "The school sends a newsletter to parents every month.",
+    "exampleCn": "学校每月给家长发送一份简报。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2428,
+    "word": "slot",
+    "phonetic": "/slɑːt/",
+    "pos": "n./v.",
+    "meaning": "位置/时段/狭槽/安排",
+    "example": "She booked a time slot for the interview.",
+    "exampleCn": "她预约了一个面试时间段。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2429,
+    "word": "sore",
+    "phonetic": "/sɔːr/",
+    "pos": "adj./n.",
+    "meaning": "疼痛的/酸痛的/痛处",
+    "example": "My legs were sore after the long run.",
+    "exampleCn": "长跑后我的腿很酸痛。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2430,
+    "word": "torrent",
+    "phonetic": "/ˈtɔːrənt/",
+    "pos": "n.",
+    "meaning": "急流/洪流/大量",
+    "example": "A torrent of rain flooded the street.",
+    "exampleCn": "倾盆大雨淹没了街道。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2431,
+    "word": "trademark",
+    "phonetic": "/ˈtreɪdmɑːrk/",
+    "pos": "n./v.",
+    "meaning": "商标/标志/注册商标",
+    "example": "The logo became the company's trademark.",
+    "exampleCn": "这个标志成了公司的商标。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2432,
+    "word": "visualize",
+    "phonetic": "/ˈvɪʒuəlaɪz/",
+    "pos": "v.",
+    "meaning": "想象/可视化",
+    "example": "Charts help students visualize complex data.",
+    "exampleCn": "图表帮助学生可视化复杂数据。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  },
+  {
+    "id": 2433,
+    "word": "wig",
+    "phonetic": "/wɪɡ/",
+    "pos": "n.",
+    "meaning": "假发",
+    "example": "The actor wore a wig for the historical play.",
+    "exampleCn": "演员在历史剧中戴了一顶假发。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "4",
+    "list": "10"
+  }
+]

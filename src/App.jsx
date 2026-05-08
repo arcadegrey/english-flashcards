@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react'
 import { ThemeProvider } from './context/ThemeContext'
 import { useTheme } from './context/theme-context'
-import { loadVocabulary } from './data/vocabulary'
+import { loadToeflListVocabulary, loadToeflManifest, loadVocabulary } from './data/vocabulary'
 import readings from './data/readings'
 import categories from './data/categories'
 import StudyHub from './components/StudyHub'
@@ -95,6 +95,39 @@ const mergeCustomWordList = (baseList, extraList) => {
   applyList(baseList)
   applyList(extraList)
   return Array.from(map.values())
+}
+
+const mergeVocabularyList = (baseList, extraList) => {
+  const byId = new Map()
+  const byWord = new Map()
+  const merged = []
+
+  const upsertWord = (word) => {
+    if (!word || typeof word !== 'object') return
+    const idKey = word.id == null ? '' : String(word.id)
+    const wordKey = String(word.word || '').trim().toLowerCase()
+    let existingIndex = idKey ? byId.get(idKey) : undefined
+    if (existingIndex === undefined && wordKey) {
+      existingIndex = byWord.get(wordKey)
+    }
+
+    if (existingIndex !== undefined) {
+      const current = merged[existingIndex]
+      const nextWord = pickRicherWord(current, word)
+      merged[existingIndex] = nextWord
+      if (nextWord.id != null) byId.set(String(nextWord.id), existingIndex)
+      if (nextWord.word) byWord.set(String(nextWord.word).trim().toLowerCase(), existingIndex)
+      return
+    }
+
+    const nextIndex = merged.length
+    merged.push(word)
+    if (idKey) byId.set(idKey, nextIndex)
+    if (wordKey) byWord.set(wordKey, nextIndex)
+  }
+
+  ;[...(Array.isArray(baseList) ? baseList : []), ...(Array.isArray(extraList) ? extraList : [])].forEach(upsertWord)
+  return merged.sort((a, b) => Number(a.id || 0) - Number(b.id || 0))
 }
 
 const normalizeRecord = (value) => (value && typeof value === 'object' && !Array.isArray(value) ? value : {})
@@ -260,10 +293,12 @@ function AppContent() {
   const [vocabularyLoading, setVocabularyLoading] = useState(true)
   const [vocabularyError, setVocabularyError] = useState('')
   const [vocabularyReloadKey, setVocabularyReloadKey] = useState(0)
+  const [toeflManifest, setToeflManifest] = useState(null)
   const [shuffledWords, setShuffledWords] = useState([])
   const historyReadyRef = useRef(false)
   const restoringFromHistoryRef = useRef(false)
   const pendingStartWordIdRef = useRef(null)
+  const loadingToeflListsRef = useRef(new Set())
   const cloudEnabled = isCloudAuthConfigured()
   const [localDataLoaded, setLocalDataLoaded] = useState(false)
   const [authLoading, setAuthLoading] = useState(cloudEnabled)
@@ -356,6 +391,35 @@ function AppContent() {
   }, [allVocabulary, selectedCategory, selectedToeflLevel, selectedToeflList])
 
   const toeflGrouping = useMemo(() => {
+    if (toeflManifest?.toefl?.levels?.length) {
+      const levels = toeflManifest.toefl.levels
+        .map((entry) => ({
+          key: String(entry.key),
+          label: entry.label || (String(entry.key) === TOEFL_UNKNOWN_LEVEL ? '未分级' : `Level ${entry.key}`),
+          count: Number(entry.count) || 0,
+          meta: entry.meta || `${entry.lists?.length || 0} 个 List`,
+        }))
+        .sort((a, b) => sortNumericKeyWithUnknownLast(a.key, b.key, TOEFL_UNKNOWN_LEVEL))
+
+      const listsByLevel = {}
+      toeflManifest.toefl.levels.forEach((entry) => {
+        listsByLevel[String(entry.key)] = (entry.lists || [])
+          .map((item) => ({
+            key: String(item.key),
+            label: item.label || (String(item.key) === TOEFL_UNKNOWN_LIST ? '未分 List' : `List ${item.key}`),
+            count: Number(item.count) || 0,
+            path: item.path,
+          }))
+          .sort((a, b) => sortNumericKeyWithUnknownLast(a.key, b.key, TOEFL_UNKNOWN_LIST))
+      })
+
+      return {
+        total: Number(toeflManifest.toefl.total) || levels.reduce((sum, item) => sum + item.count, 0),
+        levels,
+        listsByLevel,
+      }
+    }
+
     const levelBuckets = new Map()
 
     allVocabulary.forEach((word) => {
@@ -403,7 +467,7 @@ function AppContent() {
       levels,
       listsByLevel,
     }
-  }, [allVocabulary])
+  }, [allVocabulary, toeflManifest])
 
   const toeflListsForSelectedLevel = useMemo(() => {
     if (!selectedToeflLevel) {
@@ -420,12 +484,17 @@ function AppContent() {
       setVocabularyError('')
 
       try {
-        const loadedVocabulary = await loadVocabulary()
+        const [loadedVocabulary, loadedToeflManifest] = await Promise.all([
+          loadVocabulary(),
+          loadToeflManifest().catch(() => null),
+        ])
         if (cancelled) return
         setVocabulary(loadedVocabulary)
+        setToeflManifest(loadedToeflManifest)
       } catch (error) {
         if (cancelled) return
         setVocabulary([])
+        setToeflManifest(null)
         setVocabularyError(error?.message || '词库加载失败')
       } finally {
         if (!cancelled) {
@@ -1052,6 +1121,36 @@ function AppContent() {
     recordStudyEvent(0, 1, 1)
   }
 
+  const ensureToeflListLoaded = useCallback(
+    async (levelKey, listKey) => {
+      if (!toeflManifest || !levelKey || !listKey) return
+
+      const cacheKey = `${levelKey}::${listKey}`
+      if (loadingToeflListsRef.current.has(cacheKey)) return
+      loadingToeflListsRef.current.add(cacheKey)
+
+      try {
+        const listVocabulary = await loadToeflListVocabulary(toeflManifest, levelKey, listKey)
+        setVocabulary((prev) => mergeVocabularyList(prev, listVocabulary))
+      } catch (error) {
+        setVocabularyError(error?.message || '托福 List 加载失败')
+      } finally {
+        loadingToeflListsRef.current.delete(cacheKey)
+      }
+    },
+    [toeflManifest]
+  )
+
+  const ensureToeflLevelLoaded = useCallback(
+    (levelKey) => {
+      const lists = toeflGrouping.listsByLevel[levelKey] || []
+      lists.forEach((item) => {
+        ensureToeflListLoaded(levelKey, item.key)
+      })
+    },
+    [ensureToeflListLoaded, toeflGrouping.listsByLevel]
+  )
+
   const handleCategorySelect = (categoryId, options = {}) => {
     pendingStartWordIdRef.current = options.focusWordId ?? null
     setAssessmentBackTarget('home')
@@ -1091,6 +1190,7 @@ function AppContent() {
     setAssessmentBackTarget('home')
     setSelectedCategory('toefl')
     setSelectedToeflList(listKey)
+    ensureToeflListLoaded(selectedToeflLevel, listKey)
     setMode('learn')
     setView('learn')
   }
@@ -1110,6 +1210,7 @@ function AppContent() {
     setAssessmentBackTarget('home')
     setSelectedCategory('toefl')
     setSelectedToeflList('')
+    ensureToeflLevelLoaded(selectedToeflLevel)
     setMode('learn')
     setView('learn')
   }
