@@ -1,0 +1,1475 @@
+[
+  {
+    "id": 217,
+    "word": "beam",
+    "phonetic": "/biːm/",
+    "pos": "n./v.",
+    "meaning": "梁/光束/笑容满面/发射",
+    "example": "A beam of light entered through the window.",
+    "exampleCn": "一束光从窗户照进来。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 392,
+    "word": "cathedral",
+    "phonetic": "/kəˈθiːdrəl/",
+    "pos": "n.",
+    "meaning": "大教堂",
+    "example": "The medieval cathedral attracts thousands of visitors.",
+    "exampleCn": "这座中世纪大教堂吸引了成千上万的游客。",
+    "category": "travel",
+    "categories": [
+      "travel",
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 407,
+    "word": "chain",
+    "phonetic": "/tʃeɪn/",
+    "pos": "n./v.",
+    "meaning": "链条/连锁/束缚",
+    "example": "A chain of events led to the final decision.",
+    "exampleCn": "一连串事件导致了最终决定。",
+    "category": "business",
+    "categories": [
+      "business",
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2725,
+    "word": "dynamic",
+    "phonetic": "/daɪˈnæmɪk/",
+    "pos": "adj./n.",
+    "meaning": "动态的/有活力的/动力",
+    "example": "The city has a dynamic economy that changes quickly.",
+    "exampleCn": "这座城市有一个变化很快、充满活力的经济。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2726,
+    "word": "velocity",
+    "phonetic": "/vəˈlɑːsəti/",
+    "pos": "n.",
+    "meaning": "速度/速率",
+    "example": "The object increased its velocity as it fell.",
+    "exampleCn": "物体下落时速度增加了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2727,
+    "word": "surmise",
+    "phonetic": "/sərˈmaɪz/",
+    "pos": "v./n.",
+    "meaning": "推测/猜想/推测的结论",
+    "example": "Scientists surmise that the climate was once much warmer.",
+    "exampleCn": "科学家推测过去的气候曾经暖和得多。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2728,
+    "word": "ribbon",
+    "phonetic": "/ˈrɪbən/",
+    "pos": "n.",
+    "meaning": "缎带/带状物",
+    "example": "She tied the package with a red ribbon.",
+    "exampleCn": "她用一条红丝带把包裹系好。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2729,
+    "word": "unprecedented",
+    "phonetic": "/ʌnˈpresɪdentɪd/",
+    "pos": "adj.",
+    "meaning": "前所未有的/空前的",
+    "example": "The region experienced unprecedented rainfall this year.",
+    "exampleCn": "该地区今年经历了前所未有的降雨。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2730,
+    "word": "commemorate",
+    "phonetic": "/kəˈmeməreɪt/",
+    "pos": "v.",
+    "meaning": "纪念/庆祝",
+    "example": "The statue was built to commemorate the national hero.",
+    "exampleCn": "这座雕像是为纪念这位民族英雄而建的。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2731,
+    "word": "shimmer",
+    "phonetic": "/ˈʃɪmər/",
+    "pos": "v./n.",
+    "meaning": "闪烁/发微光/微光",
+    "example": "The lake shimmered in the morning sunlight.",
+    "exampleCn": "湖面在清晨的阳光下闪闪发光。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2732,
+    "word": "conflate",
+    "phonetic": "/kənˈfleɪt/",
+    "pos": "v.",
+    "meaning": "合并/混淆",
+    "example": "The article conflates two separate historical events.",
+    "exampleCn": "这篇文章把两个不同的历史事件混为一谈。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2733,
+    "word": "backtrack",
+    "phonetic": "/ˈbæktræk/",
+    "pos": "v.",
+    "meaning": "原路返回/改变说法/退缩",
+    "example": "After criticism, the official began to backtrack on his statement.",
+    "exampleCn": "受到批评后，这名官员开始收回自己的说法。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2734,
+    "word": "mania",
+    "phonetic": "/ˈmeɪniə/",
+    "pos": "n.",
+    "meaning": "狂热/躁狂",
+    "example": "The new game created a mania among teenagers.",
+    "exampleCn": "这款新游戏在青少年中引发了狂热。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2735,
+    "word": "isle",
+    "phonetic": "/aɪl/",
+    "pos": "n.",
+    "meaning": "小岛",
+    "example": "The small isle is home to many rare birds.",
+    "exampleCn": "这座小岛是许多珍稀鸟类的栖息地。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2736,
+    "word": "communal",
+    "phonetic": "/kəˈmjuːnəl/",
+    "pos": "adj.",
+    "meaning": "公共的/社区的/共有的",
+    "example": "The village has a communal garden for all residents.",
+    "exampleCn": "这个村庄有一个供所有居民使用的公共花园。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2737,
+    "word": "distill",
+    "phonetic": "/dɪˈstɪl/",
+    "pos": "v.",
+    "meaning": "蒸馏/提炼/浓缩",
+    "example": "The teacher distilled the complex theory into a simple explanation.",
+    "exampleCn": "老师把复杂的理论提炼成了简单的解释。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2738,
+    "word": "induce",
+    "phonetic": "/ɪnˈduːs/",
+    "pos": "v.",
+    "meaning": "引起/诱导/劝使",
+    "example": "Stress can induce headaches in some people.",
+    "exampleCn": "压力会引起一些人头痛。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2739,
+    "word": "nitrate",
+    "phonetic": "/ˈnaɪtreɪt/",
+    "pos": "n.",
+    "meaning": "硝酸盐",
+    "example": "High levels of nitrate in water can be harmful.",
+    "exampleCn": "水中高浓度的硝酸盐可能有害。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2740,
+    "word": "telltale",
+    "phonetic": "/ˈtelteɪl/",
+    "pos": "adj./n.",
+    "meaning": "泄露真相的/明显的/告密者",
+    "example": "The telltale marks showed that an animal had passed by.",
+    "exampleCn": "这些明显的痕迹表明有动物经过。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2741,
+    "word": "blemish",
+    "phonetic": "/ˈblemɪʃ/",
+    "pos": "n./v.",
+    "meaning": "瑕疵/污点/损害",
+    "example": "A small blemish appeared on the surface of the painting.",
+    "exampleCn": "画的表面出现了一个小瑕疵。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2742,
+    "word": "literacy",
+    "phonetic": "/ˈlɪtərəsi/",
+    "pos": "n.",
+    "meaning": "读写能力/文化素养",
+    "example": "Digital literacy is essential in modern education.",
+    "exampleCn": "数字素养在现代教育中十分重要。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2743,
+    "word": "mandarin",
+    "phonetic": "/ˈmændərɪn/",
+    "pos": "n.",
+    "meaning": "普通话/柑橘/高级官员",
+    "example": "Mandarin is spoken by hundreds of millions of people.",
+    "exampleCn": "普通话有数亿人使用。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2744,
+    "word": "silhouette",
+    "phonetic": "/ˌsɪluˈet/",
+    "pos": "n./v.",
+    "meaning": "轮廓/剪影/使呈现轮廓",
+    "example": "We saw the silhouette of a mountain at sunset.",
+    "exampleCn": "日落时我们看见了山的轮廓。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2745,
+    "word": "symphony",
+    "phonetic": "/ˈsɪmfəni/",
+    "pos": "n.",
+    "meaning": "交响乐/和谐组合",
+    "example": "The orchestra performed Beethoven’s fifth symphony.",
+    "exampleCn": "管弦乐队演奏了贝多芬第五交响曲。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2746,
+    "word": "radioactive",
+    "phonetic": "/ˌreɪdioʊˈæktɪv/",
+    "pos": "adj.",
+    "meaning": "放射性的",
+    "example": "Radioactive materials must be handled carefully.",
+    "exampleCn": "放射性材料必须小心处理。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2747,
+    "word": "entrepreneur",
+    "phonetic": "/ˌɑːntrəprəˈnɜːr/",
+    "pos": "n.",
+    "meaning": "企业家/创业者",
+    "example": "The entrepreneur launched a company while still in college.",
+    "exampleCn": "这位创业者还在大学时就创办了一家公司。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2748,
+    "word": "predetermine",
+    "phonetic": "/ˌpriːdɪˈtɜːrmɪn/",
+    "pos": "v.",
+    "meaning": "预先决定/预先确定",
+    "example": "Genetics may predetermine some physical traits.",
+    "exampleCn": "基因可能预先决定某些身体特征。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2749,
+    "word": "wagon",
+    "phonetic": "/ˈwæɡən/",
+    "pos": "n.",
+    "meaning": "四轮马车/货车/小推车",
+    "example": "The farmers loaded hay onto the wagon.",
+    "exampleCn": "农民把干草装上马车。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2750,
+    "word": "intermittent",
+    "phonetic": "/ˌɪntərˈmɪtənt/",
+    "pos": "adj.",
+    "meaning": "间歇的/断断续续的",
+    "example": "The hikers faced intermittent rain throughout the day.",
+    "exampleCn": "徒步者一整天都遇到断断续续的雨。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2751,
+    "word": "gland",
+    "phonetic": "/ɡlænd/",
+    "pos": "n.",
+    "meaning": "腺",
+    "example": "The thyroid gland helps regulate metabolism.",
+    "exampleCn": "甲状腺有助于调节新陈代谢。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2752,
+    "word": "respiration",
+    "phonetic": "/ˌrespəˈreɪʃən/",
+    "pos": "n.",
+    "meaning": "呼吸/呼吸作用",
+    "example": "Plants use oxygen during cellular respiration.",
+    "exampleCn": "植物在细胞呼吸过程中使用氧气。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2753,
+    "word": "remediation",
+    "phonetic": "/rɪˌmiːdiˈeɪʃən/",
+    "pos": "n.",
+    "meaning": "补救/修复/整治",
+    "example": "The company paid for the remediation of polluted soil.",
+    "exampleCn": "公司支付了污染土壤的修复费用。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2754,
+    "word": "paramount",
+    "phonetic": "/ˈpærəmaʊnt/",
+    "pos": "adj.",
+    "meaning": "最重要的/至高无上的",
+    "example": "Safety is of paramount importance in the laboratory.",
+    "exampleCn": "安全在实验室中是最重要的。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2755,
+    "word": "disproportionate",
+    "phonetic": "/ˌdɪsprəˈpɔːrʃənət/",
+    "pos": "adj.",
+    "meaning": "不成比例的/过大的",
+    "example": "The policy had a disproportionate effect on small businesses.",
+    "exampleCn": "这项政策对小企业产生了不成比例的影响。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2756,
+    "word": "incorporate",
+    "phonetic": "/ɪnˈkɔːrpəreɪt/",
+    "pos": "v.",
+    "meaning": "包含/合并/吸收",
+    "example": "The design incorporates elements from local culture.",
+    "exampleCn": "这个设计包含了当地文化元素。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2757,
+    "word": "horsepower",
+    "phonetic": "/ˈhɔːrspɑːər/",
+    "pos": "n.",
+    "meaning": "马力",
+    "example": "The engine produces more than 300 horsepower.",
+    "exampleCn": "这台发动机可产生三百多马力。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2758,
+    "word": "carrier",
+    "phonetic": "/ˈkæriər/",
+    "pos": "n.",
+    "meaning": "运输工具/携带者/运营商/载体",
+    "example": "Mosquitoes can act as carriers of disease.",
+    "exampleCn": "蚊子可能成为疾病的传播媒介。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2759,
+    "word": "indigenous",
+    "phonetic": "/ɪnˈdɪdʒənəs/",
+    "pos": "adj.",
+    "meaning": "本土的/土著的",
+    "example": "The museum displays art by indigenous communities.",
+    "exampleCn": "博物馆展出土著社区的艺术作品。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2760,
+    "word": "synthesize",
+    "phonetic": "/ˈsɪnθəsaɪz/",
+    "pos": "v.",
+    "meaning": "合成/综合",
+    "example": "Students must synthesize information from several sources.",
+    "exampleCn": "学生必须综合来自多个来源的信息。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2761,
+    "word": "puff",
+    "phonetic": "/pʌf/",
+    "pos": "n./v.",
+    "meaning": "一阵气/吹气/喘气/膨胀",
+    "example": "A puff of smoke rose from the chimney.",
+    "exampleCn": "一缕烟从烟囱升起。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2762,
+    "word": "hind",
+    "phonetic": "/haɪnd/",
+    "pos": "adj.",
+    "meaning": "后部的",
+    "example": "The horse stood on its hind legs.",
+    "exampleCn": "那匹马用后腿站了起来。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2763,
+    "word": "charcoal",
+    "phonetic": "/ˈtʃɑːrkoʊl/",
+    "pos": "n.",
+    "meaning": "木炭/炭笔/炭灰色",
+    "example": "Artists often use charcoal for quick sketches.",
+    "exampleCn": "艺术家常用炭笔进行快速素描。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2764,
+    "word": "rigor",
+    "phonetic": "/ˈrɪɡər/",
+    "pos": "n.",
+    "meaning": "严谨/严格/艰苦",
+    "example": "The experiment was conducted with scientific rigor.",
+    "exampleCn": "这个实验以科学严谨性进行。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2765,
+    "word": "compositional",
+    "phonetic": "/ˌkɑːmpəˈzɪʃənəl/",
+    "pos": "adj.",
+    "meaning": "组成的/构图的/作文的",
+    "example": "The artist made several compositional changes to the painting.",
+    "exampleCn": "艺术家对这幅画的构图做了几处修改。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2766,
+    "word": "molten",
+    "phonetic": "/ˈmoʊltən/",
+    "pos": "adj.",
+    "meaning": "熔化的/熔融的",
+    "example": "Molten rock flowed from the volcano.",
+    "exampleCn": "熔岩从火山中流出。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2767,
+    "word": "ornament",
+    "phonetic": "/ˈɔːrnəmənt/",
+    "pos": "n./v.",
+    "meaning": "装饰品/装饰",
+    "example": "The tree was covered with glass ornaments.",
+    "exampleCn": "树上挂满了玻璃装饰品。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2768,
+    "word": "prominent",
+    "phonetic": "/ˈprɑːmɪnənt/",
+    "pos": "adj.",
+    "meaning": "突出的/著名的/显眼的",
+    "example": "She became a prominent scientist in the field.",
+    "exampleCn": "她成为该领域一位著名的科学家。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2769,
+    "word": "tangle",
+    "phonetic": "/ˈtæŋɡəl/",
+    "pos": "n./v.",
+    "meaning": "纠结/缠结/使缠绕",
+    "example": "The wires formed a tangled mess behind the desk.",
+    "exampleCn": "桌子后面的电线缠成了一团。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2770,
+    "word": "fragment",
+    "phonetic": "/ˈfræɡmənt/",
+    "pos": "n./v.",
+    "meaning": "碎片/片段/破碎",
+    "example": "Researchers found a fragment of ancient pottery.",
+    "exampleCn": "研究人员发现了一块古代陶器碎片。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2771,
+    "word": "stiff",
+    "phonetic": "/stɪf/",
+    "pos": "adj.",
+    "meaning": "僵硬的/严格的/艰难的",
+    "example": "His neck felt stiff after the long flight.",
+    "exampleCn": "长途飞行后他的脖子感到僵硬。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2772,
+    "word": "gist",
+    "phonetic": "/dʒɪst/",
+    "pos": "n.",
+    "meaning": "主旨/要点",
+    "example": "I understood the gist of the lecture.",
+    "exampleCn": "我理解了讲座的主旨。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2773,
+    "word": "dictator",
+    "phonetic": "/ˈdɪkteɪtər/",
+    "pos": "n.",
+    "meaning": "独裁者",
+    "example": "The dictator controlled the country for decades.",
+    "exampleCn": "这位独裁者控制这个国家长达数十年。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2774,
+    "word": "micronutrient",
+    "phonetic": "/ˌmaɪkroʊˈnuːtriənt/",
+    "pos": "n.",
+    "meaning": "微量营养素",
+    "example": "Iron is an important micronutrient for the body.",
+    "exampleCn": "铁是人体重要的微量营养素。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2775,
+    "word": "unleash",
+    "phonetic": "/ʌnˈliːʃ/",
+    "pos": "v.",
+    "meaning": "释放/发动/发泄",
+    "example": "The storm unleashed heavy rain across the coast.",
+    "exampleCn": "风暴在海岸地区释放了强降雨。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2776,
+    "word": "gravel",
+    "phonetic": "/ˈɡrævəl/",
+    "pos": "n.",
+    "meaning": "砾石/碎石",
+    "example": "The road was covered with loose gravel.",
+    "exampleCn": "道路上覆盖着松散的碎石。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2777,
+    "word": "inventory",
+    "phonetic": "/ˈɪnvəntɔːri/",
+    "pos": "n./v.",
+    "meaning": "库存/清单/盘点",
+    "example": "The store updates its inventory every week.",
+    "exampleCn": "这家商店每周更新库存。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2778,
+    "word": "velvet",
+    "phonetic": "/ˈvelvɪt/",
+    "pos": "n./adj.",
+    "meaning": "天鹅绒/柔软光滑的",
+    "example": "The chair was covered in red velvet.",
+    "exampleCn": "椅子上覆盖着红色天鹅绒。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2779,
+    "word": "dispersion",
+    "phonetic": "/dɪˈspɜːrʒən/",
+    "pos": "n.",
+    "meaning": "分散/散布/色散",
+    "example": "The dispersion of seeds helps plants spread.",
+    "exampleCn": "种子的散布帮助植物扩展生长范围。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2780,
+    "word": "solitary",
+    "phonetic": "/ˈsɑːləteri/",
+    "pos": "adj.",
+    "meaning": "单独的/孤独的",
+    "example": "A solitary tree stood on the hill.",
+    "exampleCn": "山丘上孤零零地立着一棵树。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2781,
+    "word": "revitalize",
+    "phonetic": "/ˌriːˈvaɪtəlaɪz/",
+    "pos": "v.",
+    "meaning": "使复兴/使恢复活力",
+    "example": "The project aims to revitalize the old downtown area.",
+    "exampleCn": "该项目旨在使老市中心恢复活力。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2782,
+    "word": "nucleus",
+    "phonetic": "/ˈnuːkliəs/",
+    "pos": "n.",
+    "meaning": "细胞核/原子核/核心",
+    "example": "The nucleus controls many activities of the cell.",
+    "exampleCn": "细胞核控制细胞的许多活动。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2783,
+    "word": "propel",
+    "phonetic": "/prəˈpel/",
+    "pos": "v.",
+    "meaning": "推动/推进",
+    "example": "Wind can propel a sailboat across the water.",
+    "exampleCn": "风可以推动帆船在水面前进。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2784,
+    "word": "streak",
+    "phonetic": "/striːk/",
+    "pos": "n./v.",
+    "meaning": "条纹/一连串/飞奔",
+    "example": "A bright streak of lightning crossed the sky.",
+    "exampleCn": "一道明亮的闪电划过天空。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2785,
+    "word": "sodium",
+    "phonetic": "/ˈsoʊdiəm/",
+    "pos": "n.",
+    "meaning": "钠",
+    "example": "Sodium reacts strongly with water.",
+    "exampleCn": "钠会与水发生强烈反应。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2786,
+    "word": "subterranean",
+    "phonetic": "/ˌsʌbtəˈreɪniən/",
+    "pos": "adj.",
+    "meaning": "地下的",
+    "example": "The city has a network of subterranean tunnels.",
+    "exampleCn": "这座城市有一个地下隧道网络。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2787,
+    "word": "suppress",
+    "phonetic": "/səˈpres/",
+    "pos": "v.",
+    "meaning": "镇压/抑制/压制",
+    "example": "The medicine can suppress the symptoms.",
+    "exampleCn": "这种药可以抑制症状。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2788,
+    "word": "backdrop",
+    "phonetic": "/ˈbækdrɑːp/",
+    "pos": "n.",
+    "meaning": "背景/背景幕布",
+    "example": "The mountains formed a dramatic backdrop for the village.",
+    "exampleCn": "群山为村庄构成了壮观的背景。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2789,
+    "word": "humanitarian",
+    "phonetic": "/hjuːˌmænɪˈteriən/",
+    "pos": "adj./n.",
+    "meaning": "人道主义的/人道主义者",
+    "example": "Humanitarian aid was sent after the earthquake.",
+    "exampleCn": "地震后人道主义援助被送往灾区。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2790,
+    "word": "savory",
+    "phonetic": "/ˈseɪvəri/",
+    "pos": "adj./n.",
+    "meaning": "咸味的/可口的/咸味食物",
+    "example": "The chef prepared a savory pie with vegetables.",
+    "exampleCn": "厨师做了一个带蔬菜的咸味派。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2791,
+    "word": "inevitable",
+    "phonetic": "/ɪnˈevɪtəbl/",
+    "pos": "adj.",
+    "meaning": "不可避免的",
+    "example": "Some conflict was inevitable during the transition.",
+    "exampleCn": "过渡期间一些冲突是不可避免的。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2792,
+    "word": "deformity",
+    "phonetic": "/dɪˈfɔːrməti/",
+    "pos": "n.",
+    "meaning": "畸形/变形",
+    "example": "The disease can cause bone deformity.",
+    "exampleCn": "这种疾病可能导致骨骼畸形。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2793,
+    "word": "hail",
+    "phonetic": "/heɪl/",
+    "pos": "n./v.",
+    "meaning": "冰雹/欢呼/招呼/来自",
+    "example": "The crops were damaged by hail.",
+    "exampleCn": "庄稼被冰雹损坏了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2794,
+    "word": "dwindle",
+    "phonetic": "/ˈdwɪndl/",
+    "pos": "v.",
+    "meaning": "减少/缩小",
+    "example": "The food supply began to dwindle during the winter.",
+    "exampleCn": "冬季期间食物供应开始减少。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2795,
+    "word": "cache",
+    "phonetic": "/kæʃ/",
+    "pos": "n./v.",
+    "meaning": "储藏物/缓存/隐藏储存",
+    "example": "The explorers found a cache of ancient tools.",
+    "exampleCn": "探险者发现了一批隐藏的古代工具。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2796,
+    "word": "overt",
+    "phonetic": "/oʊˈvɜːrt/",
+    "pos": "adj.",
+    "meaning": "公开的/明显的",
+    "example": "There was no overt sign of disagreement.",
+    "exampleCn": "没有明显的分歧迹象。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2797,
+    "word": "fusion",
+    "phonetic": "/ˈfjuːʒən/",
+    "pos": "n.",
+    "meaning": "融合/核聚变",
+    "example": "The restaurant is known for its fusion of Asian and French cooking.",
+    "exampleCn": "这家餐厅以亚洲和法国烹饪的融合而闻名。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2798,
+    "word": "antiquity",
+    "phonetic": "/ænˈtɪkwəti/",
+    "pos": "n.",
+    "meaning": "古代/古物",
+    "example": "The vase dates back to classical antiquity.",
+    "exampleCn": "这个花瓶可以追溯到古典古代。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2799,
+    "word": "entwine",
+    "phonetic": "/ɪnˈtwaɪn/",
+    "pos": "v.",
+    "meaning": "缠绕/交织",
+    "example": "The vines entwine around the old fence.",
+    "exampleCn": "藤蔓缠绕在旧栅栏上。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2800,
+    "word": "hectare",
+    "phonetic": "/ˈhekteər/",
+    "pos": "n.",
+    "meaning": "公顷",
+    "example": "The farm covers more than fifty hectares.",
+    "exampleCn": "这个农场占地五十多公顷。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2801,
+    "word": "pictorial",
+    "phonetic": "/pɪkˈtɔːriəl/",
+    "pos": "adj.",
+    "meaning": "图片的/绘画的",
+    "example": "The book provides a pictorial history of the city.",
+    "exampleCn": "这本书用图片展示了这座城市的历史。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2802,
+    "word": "scarcity",
+    "phonetic": "/ˈskersəti/",
+    "pos": "n.",
+    "meaning": "缺乏/稀缺",
+    "example": "Water scarcity is a serious problem in dry regions.",
+    "exampleCn": "水资源短缺是干旱地区的严重问题。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2803,
+    "word": "analogue",
+    "phonetic": "/ˈænəlɔːɡ/",
+    "pos": "n./adj.",
+    "meaning": "类似物/模拟的",
+    "example": "The device is an analogue of an earlier invention.",
+    "exampleCn": "这个装置是早期发明的类似物。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2804,
+    "word": "interference",
+    "phonetic": "/ˌɪntərˈfɪrəns/",
+    "pos": "n.",
+    "meaning": "干涉/干扰",
+    "example": "Radio interference made the message hard to hear.",
+    "exampleCn": "无线电干扰使信息难以听清。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2805,
+    "word": "captive",
+    "phonetic": "/ˈkæptɪv/",
+    "pos": "adj./n.",
+    "meaning": "被俘虏的/受控制的/俘虏",
+    "example": "The animals were bred in captive conditions.",
+    "exampleCn": "这些动物是在圈养条件下繁殖的。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2806,
+    "word": "perennial",
+    "phonetic": "/pəˈreniəl/",
+    "pos": "adj./n.",
+    "meaning": "多年生的/长期存在的/多年生植物",
+    "example": "Drought is a perennial problem in the region.",
+    "exampleCn": "干旱是该地区长期存在的问题。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2807,
+    "word": "default",
+    "phonetic": "/dɪˈfɔːlt/",
+    "pos": "n./v./adj.",
+    "meaning": "默认/违约/未履行义务/默认的",
+    "example": "The program saves files in the default folder.",
+    "exampleCn": "该程序会把文件保存在默认文件夹中。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2808,
+    "word": "congestion",
+    "phonetic": "/kənˈdʒestʃən/",
+    "pos": "n.",
+    "meaning": "拥堵/充血",
+    "example": "Traffic congestion is common during rush hour.",
+    "exampleCn": "交通拥堵在高峰时段很常见。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2809,
+    "word": "wrinkle",
+    "phonetic": "/ˈrɪŋkəl/",
+    "pos": "n./v.",
+    "meaning": "皱纹/皱褶/使起皱",
+    "example": "The shirt had a wrinkle after being packed.",
+    "exampleCn": "这件衬衫打包后有一道皱褶。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2810,
+    "word": "animate",
+    "phonetic": "/ˈænəmeɪt/",
+    "pos": "v./adj.",
+    "meaning": "使有生命/使活跃/有生命的",
+    "example": "The speaker’s humor animated the discussion.",
+    "exampleCn": "演讲者的幽默使讨论活跃起来。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2811,
+    "word": "destabilize",
+    "phonetic": "/diːˈsteɪbəlaɪz/",
+    "pos": "v.",
+    "meaning": "使不稳定",
+    "example": "The sudden crisis could destabilize the economy.",
+    "exampleCn": "突发危机可能使经济不稳定。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2812,
+    "word": "frontal",
+    "phonetic": "/ˈfrʌntl/",
+    "pos": "adj.",
+    "meaning": "前面的/额部的/正面的",
+    "example": "The frontal part of the brain is linked to planning.",
+    "exampleCn": "大脑的额叶部分与计划能力有关。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2813,
+    "word": "immobile",
+    "phonetic": "/ɪˈmoʊbl/",
+    "pos": "adj.",
+    "meaning": "不能移动的/静止的",
+    "example": "The injured bird remained immobile on the ground.",
+    "exampleCn": "受伤的鸟在地上一动不动。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2814,
+    "word": "resemble",
+    "phonetic": "/rɪˈzembl/",
+    "pos": "v.",
+    "meaning": "像/类似",
+    "example": "The fossil closely resembles a modern fish.",
+    "exampleCn": "这块化石与现代鱼类非常相似。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2815,
+    "word": "meticulous",
+    "phonetic": "/məˈtɪkjələs/",
+    "pos": "adj.",
+    "meaning": "一丝不苟的/细致的",
+    "example": "The researcher kept meticulous notes during the experiment.",
+    "exampleCn": "研究人员在实验期间做了细致的记录。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2816,
+    "word": "dehydration",
+    "phonetic": "/ˌdiːhaɪˈdreɪʃən/",
+    "pos": "n.",
+    "meaning": "脱水/除水",
+    "example": "Athletes must drink water to avoid dehydration.",
+    "exampleCn": "运动员必须喝水以避免脱水。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2817,
+    "word": "gravitation",
+    "phonetic": "/ˌɡrævɪˈteɪʃən/",
+    "pos": "n.",
+    "meaning": "引力/万有引力",
+    "example": "Gravitation keeps planets in orbit around the sun.",
+    "exampleCn": "引力使行星围绕太阳运行。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2818,
+    "word": "elliptical",
+    "phonetic": "/ɪˈlɪptɪkəl/",
+    "pos": "adj.",
+    "meaning": "椭圆的/省略的",
+    "example": "Planets move in elliptical orbits.",
+    "exampleCn": "行星沿椭圆轨道运动。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  },
+  {
+    "id": 2819,
+    "word": "ridge",
+    "phonetic": "/rɪdʒ/",
+    "pos": "n.",
+    "meaning": "山脊/隆起/脊状物",
+    "example": "The hikers followed the ridge to the summit.",
+    "exampleCn": "徒步者沿着山脊走向山顶。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "4"
+  }
+]

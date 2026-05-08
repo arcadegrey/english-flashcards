@@ -611,19 +611,6 @@
     ]
   },
   {
-    "id": 88,
-    "word": "aesthetic",
-    "phonetic": "/esˈθetɪk/",
-    "pos": "adj.",
-    "meaning": "审美的，美学的",
-    "example": "The building has aesthetic appeal.",
-    "exampleCn": "这座建筑具有美感。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 89,
     "word": "affection",
     "phonetic": "/əˈfekʃn/",
@@ -852,19 +839,6 @@
     "meaning": "外国的；外星人",
     "example": "The concept seemed alien to them.",
     "exampleCn": "这个概念对他们来说很陌生。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 109,
-    "word": "align",
-    "phonetic": "/əˈlaɪn/",
-    "pos": "v.",
-    "meaning": "使一致；排列",
-    "example": "Align your goals with your values.",
-    "exampleCn": "让你的目标与你的价值观保持一致。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -1612,19 +1586,6 @@
     ]
   },
   {
-    "id": 217,
-    "word": "beam",
-    "phonetic": "/biːm/",
-    "pos": "n./v.",
-    "meaning": "梁；光线；微笑",
-    "example": "A beam of light shone through the window.",
-    "exampleCn": "一束光透过窗户照进来。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 219,
     "word": "beard",
     "phonetic": "/bɪrd/",
@@ -2064,19 +2025,6 @@
     "category": "academic",
     "categories": [
       "academic"
-    ]
-  },
-  {
-    "id": 255,
-    "word": "blade",
-    "phonetic": "/bleɪd/",
-    "pos": "n.",
-    "meaning": "刀片；叶片",
-    "example": "The blade of the knife is very sharp.",
-    "exampleCn": "刀刃非常锋利。",
-    "category": "daily",
-    "categories": [
-      "daily"
     ]
   },
   {
@@ -3017,19 +2965,6 @@
     ]
   },
   {
-    "id": 348,
-    "word": "cabin",
-    "phonetic": "/ˈkæbɪn/",
-    "pos": "n.",
-    "meaning": "小屋；机舱",
-    "example": "They stayed in a wooden cabin.",
-    "exampleCn": "他们住在一间木屋里。",
-    "category": "travel",
-    "categories": [
-      "travel"
-    ]
-  },
-  {
     "id": 349,
     "word": "cabinet",
     "phonetic": "/ˈkæbɪnət/",
@@ -3459,19 +3394,6 @@
     ]
   },
   {
-    "id": 392,
-    "word": "cathedral",
-    "phonetic": "/kəˈθiːdrəl/",
-    "pos": "n.",
-    "meaning": "大教堂",
-    "example": "The cathedral is 500 years old.",
-    "exampleCn": "这座大教堂有 500 年历史。",
-    "category": "travel",
-    "categories": [
-      "travel"
-    ]
-  },
-  {
     "id": 394,
     "word": "cause",
     "phonetic": "/kɔːz/",
@@ -3599,19 +3521,6 @@
     "category": "academic",
     "categories": [
       "academic"
-    ]
-  },
-  {
-    "id": 407,
-    "word": "chain",
-    "phonetic": "/tʃeɪn/",
-    "pos": "n.",
-    "meaning": "链；连锁店",
-    "example": "There's a chain of supermarkets nearby.",
-    "exampleCn": "附近有一连串超市。",
-    "category": "business",
-    "categories": [
-      "business"
     ]
   },
   {
