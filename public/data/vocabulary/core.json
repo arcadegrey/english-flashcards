@@ -520,19 +520,6 @@
     ]
   },
   {
-    "id": 76,
-    "word": "adjacent",
-    "phonetic": "/əˈdʒeɪsnt/",
-    "pos": "adj.",
-    "meaning": "邻近的，毗连的",
-    "example": "The hotel is adjacent to the airport.",
-    "exampleCn": "酒店毗邻机场。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 80,
     "word": "admirable",
     "phonetic": "/ˈædmərəbl/",
@@ -936,19 +923,6 @@
     ]
   },
   {
-    "id": 122,
-    "word": "altitude",
-    "phonetic": "/ˈæltɪtuːd/",
-    "pos": "n.",
-    "meaning": "高度，海拔",
-    "example": "The plane flew at high altitude.",
-    "exampleCn": "飞机在高空飞行。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 126,
     "word": "ambiguous",
     "phonetic": "/æmˈbɪɡjuəs/",
@@ -1021,19 +995,6 @@
     "meaning": "数量，总额",
     "example": "A large amount of money was spent.",
     "exampleCn": "花费了大量的钱。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 134,
-    "word": "analogy",
-    "phonetic": "/əˈnælədʒi/",
-    "pos": "n.",
-    "meaning": "类比，比拟",
-    "example": "He drew an analogy between war and chess.",
-    "exampleCn": "他做了一个战争和象棋之间的类比。",
     "category": "cet4",
     "categories": [
       "cet4"

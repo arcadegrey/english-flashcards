@@ -3,7 +3,8 @@
 ## 项目用途
 
 - 一个 Vite + React 英语学习应用，用于单词卡片学习、测验、填空、拼写、阅读练习、错题复习和学习统计。
-- 内置词库来自 `public/data/vocabulary.json` 并在启动时异步加载；阅读材料来自 `src/data/readings.js`。用户自定义词和学习进度保存在本地 storage，并可同步到 Cloudflare Worker + D1。
+- 内置主词库来自 `public/data/vocabulary.json` 并在启动时异步加载；阅读材料来自 `src/data/readings.js`。用户自定义词和学习进度保存在本地 storage，并可同步到 Cloudflare Worker + D1。
+- TOEFL 词库同时有按 Level/List 拆分的静态分片，位于 `public/data/vocabulary/toefl/`；`public/data/vocabulary/toefl/manifest.json` 记录每个 Level/List 的路径和数量。
 
 ## 启动命令
 
@@ -15,6 +16,7 @@
 - 代码检查：`npm run lint`
 - D1 迁移：`npm run d1:migrate`
 - 导入全局词库：`npm run words:import`
+- 刷新词库分片：`npm run words:split`
 - 导入阅读材料：`npm run readings:import`
 
 ## 主要页面
@@ -51,12 +53,40 @@
 - CSV 解析在 `src/utils/csvImport.js`，支持引号、转义双引号、CRLF、BOM 清理。
 - 单词 CSV 默认字段：`word, phonetic, pos, meaning, example, exampleCn, category, level, list`。
 - 单词必填字段：`word`、`meaning`。
+- 单词导入脚本是 `scripts/import-global-vocabulary.mjs`，当前读写目标是 `public/data/vocabulary.json`，不是旧版的 `src/data/vocabulary.js`。
+- 常用导入命令：
+  - 追加新词并跳过重复词：`npm run words:import -- /absolute/path/to/file.csv`
+  - 合并已有词并追加新词：`npm run words:import -- /absolute/path/to/file.csv --upsert`
+  - 预览导入结果：`npm run words:import -- /absolute/path/to/file.csv --dry-run`
 - 单词导入会按小写 word 去重；新 id 从现有最大 id + 1 开始。
 - 分类通过 `parseCategoryList` 解析，只保留有效分类；无有效分类时默认 `daily`。
 - 仅当分类包含 `toefl` 时才写入规范化后的 `level` / `list` 数字标签。
+- `--upsert` 行为边界：
+  - 不会丢掉旧分类。重复词会通过 `mergeCategoryLists` 合并旧 `category/categories` 和 CSV 的 `category/categories`，例如原本 `daily`、CSV 为 `toefl`，结果包含 `["daily", "toefl"]`。
+  - 会用 CSV 中的非空字段更新重复词的 `phonetic`、`pos`、`meaning`、`example`、`exampleCn`。
+  - 如果合并后词条属于 TOEFL，会用 CSV 的 `level/list` 优先更新 TOEFL 位置；CSV 没有时保留旧的规范化 `level/list`。
+  - 如果合并后词条不属于 TOEFL，会删除 `level/list`。
+- 每次非 dry-run 的 `words:import` 成功后，都会自动调用 `splitVocabulary()` 刷新分片文件。
+- 手动刷新分片可运行 `npm run words:split`。它会从 `public/data/vocabulary.json` 重新生成：
+  - `public/data/vocabulary/core.json`：非 TOEFL 词。
+  - `public/data/vocabulary/toefl/manifest.json`：TOEFL 分片目录。
+  - `public/data/vocabulary/toefl/level-{n}/list-{m}.json`：具体 TOEFL Level/List 分片。
+- 当前 Level 5 导入进度：List 1、2、3、5、7 各 100 个词，List 4 为 98 个词，List 6 为 99 个词；最近一次导入后总词库约 3111 个词。
 - 阅读 CSV 默认字段：`title, level, category, content, translation, source, tags`。
 - 阅读必填字段：`title`、`content`。
 - 阅读导入按 `title + level` 去重；tags 支持 `|`、`,`、`;`、`，` 分隔。
+
+## 词库加载与分片策略
+
+- `src/data/vocabulary.js` 暴露：
+  - `loadVocabulary()`：加载 `/data/vocabulary.json` 主词库。
+  - `loadToeflManifest()`：加载 `/data/vocabulary/toefl/manifest.json`。
+  - `loadToeflListVocabulary(manifest, levelKey, listKey)`：按 manifest 加载具体 TOEFL list 分片。
+- `src/App.jsx` 启动时仍加载完整 `vocabulary.json`，以保持首页、阅读高亮、全部词库和旧逻辑兼容。
+- TOEFL Level/List 页面优先使用 manifest 显示每个 Level/List 的数量，避免必须从内存扫描构造目录。
+- 用户进入具体 TOEFL List 时，`ensureToeflListLoaded(level, list)` 会按需加载对应分片，并用 `mergeVocabularyList` 合并进内存。
+- 用户选择“学习当前 Level 全部词汇”时，会触发 `ensureToeflLevelLoaded(level)` 预加载该 Level 下所有 List 分片。
+- `vite.config.js` 的 PWA `globIgnores` 排除了 `**/data/vocabulary/**/*.json`，避免分片目录被 Workbox 全量预缓存；主 `public/data/vocabulary.json` 仍会按普通 json 静态资源参与构建缓存。
 
 ## 当前已知风险
 
@@ -64,9 +94,11 @@
 - 进度合并以数组去重和对象浅合并为主，`wordProgress` 同一单词的冲突会以后写入对象覆盖。
 - Worker 发送验证码依赖 Resend；本地或测试环境若缺少环境变量，登录链路会直接失败。
 - CSV 解析器是自实现，不支持复杂 Excel 方言或分号分隔文件。
+- 目前仍然启动时加载完整 `public/data/vocabulary.json`，TOEFL 分片主要用于目录和具体 List 的按需补强加载；若未来词库继续变大，可以进一步改成“启动只加载 core + manifest，选择分类/列表时再加载分片”。
+- `--upsert` 会更新重复词的释义/例句等内容字段，若某些旧释义需要保留，导入前要先 dry-run 并人工检查重复词。
 
 ## 下一步建议
 
-- 继续加大量词库前，考虑把 `public/data/vocabulary.json` 按类别、Level 或 List 分片，减少 PWA 更新时必须重新预缓存的单文件体积。
+- 若继续扩展到更多 TOEFL Level，考虑把启动加载从全量 `vocabulary.json` 改为 `core.json + manifest`，再为普通分类补分片。
 - 为阅读 CSV 导入补充最小单元测试，覆盖重复、缺字段、tags 分隔和带引号换行内容。
 - 如需更强多端同步语义，为 `wordProgress` 增加单词级 `updatedAt`，再按单词更新时间解决冲突。

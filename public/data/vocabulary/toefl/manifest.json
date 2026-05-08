@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-05-08T11:43:42.832Z",
+  "generatedAt": "2026-05-08T12:34:27.242Z",
   "source": "/data/vocabulary.json",
   "core": {
     "path": "/data/vocabulary/core.json",
-    "count": 335
+    "count": 332
   },
   "toefl": {
-    "total": 2580,
+    "total": 2779,
     "levels": [
       {
         "key": "3",
@@ -147,7 +147,7 @@
       {
         "key": "5",
         "label": "Level 5",
-        "count": 498,
+        "count": 697,
         "lists": [
           {
             "key": "1",
@@ -178,9 +178,21 @@
             "label": "List 5",
             "count": 100,
             "path": "/data/vocabulary/toefl/level-5/list-5.json"
+          },
+          {
+            "key": "6",
+            "label": "List 6",
+            "count": 99,
+            "path": "/data/vocabulary/toefl/level-5/list-6.json"
+          },
+          {
+            "key": "7",
+            "label": "List 7",
+            "count": 100,
+            "path": "/data/vocabulary/toefl/level-5/list-7.json"
           }
         ],
-        "meta": "5 个 List"
+        "meta": "7 个 List"
       }
     ]
   }
