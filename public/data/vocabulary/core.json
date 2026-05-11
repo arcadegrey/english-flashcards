@@ -286,19 +286,6 @@
     ]
   },
   {
-    "id": 48,
-    "word": "alternative",
-    "phonetic": "/ɔːlˈtɜːrnətɪv/",
-    "pos": "adj./n.",
-    "meaning": "供选择的；替代品",
-    "example": "We need an alternative solution.",
-    "exampleCn": "我们需要一个替代方案。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 49,
     "word": "amaze",
     "phonetic": "/əˈmeɪz/",
@@ -423,19 +410,6 @@
     "meaning": "使认识，使了解",
     "example": "Let me acquaint you with the facts.",
     "exampleCn": "让我让你了解事实。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 68,
-    "word": "acquisition",
-    "phonetic": "/ˌækwiˈzɪʃn/",
-    "pos": "n.",
-    "meaning": "获得，取得；收购",
-    "example": "The acquisition of the company was completed.",
-    "exampleCn": "公司的收购已完成。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -696,19 +670,6 @@
     "meaning": "加重，恶化；激怒",
     "example": "The situation was aggravated by the storm.",
     "exampleCn": "局势因暴风雨而恶化。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 97,
-    "word": "aggregate",
-    "phonetic": "/ˈæɡrɪɡət/",
-    "pos": "n./adj.",
-    "meaning": "总数，合计；总的",
-    "example": "The aggregate score was 5-3.",
-    "exampleCn": "总比分是5比3。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -1453,19 +1414,6 @@
     "category": "medical",
     "categories": [
       "medical"
-    ]
-  },
-  {
-    "id": 206,
-    "word": "bankrupt",
-    "phonetic": "/ˈbæŋkrʌpt/",
-    "pos": "adj.",
-    "meaning": "破产的",
-    "example": "The company went bankrupt after the scandal.",
-    "exampleCn": "公司在丑闻后破产了。",
-    "category": "business",
-    "categories": [
-      "business"
     ]
   },
   {
@@ -2497,19 +2445,6 @@
     ]
   },
   {
-    "id": 307,
-    "word": "brew",
-    "phonetic": "/bruː/",
-    "pos": "v.",
-    "meaning": "酿造；冲泡",
-    "example": "Let me brew some coffee.",
-    "exampleCn": "让我冲泡一些咖啡。",
-    "category": "food",
-    "categories": [
-      "food"
-    ]
-  },
-  {
     "id": 308,
     "word": "brick",
     "phonetic": "/brɪk/",
@@ -2692,19 +2627,6 @@
     ]
   },
   {
-    "id": 325,
-    "word": "buffer",
-    "phonetic": "/ˈbʌfər/",
-    "pos": "n.",
-    "meaning": "缓冲器；缓冲区",
-    "example": "The buffer zone protects the area.",
-    "exampleCn": "缓冲区保护该地区。",
-    "category": "technology",
-    "categories": [
-      "technology"
-    ]
-  },
-  {
     "id": 326,
     "word": "build",
     "phonetic": "/bɪld/",
@@ -2728,19 +2650,6 @@
     "category": "cet4",
     "categories": [
       "cet4"
-    ]
-  },
-  {
-    "id": 329,
-    "word": "bulk",
-    "phonetic": "/bʌlk/",
-    "pos": "n.",
-    "meaning": "大量；主体",
-    "example": "The bulk of the work is done.",
-    "exampleCn": "大部分工作已完成。",
-    "category": "business",
-    "categories": [
-      "business"
     ]
   },
   {
@@ -3121,19 +3030,6 @@
     ]
   },
   {
-    "id": 369,
-    "word": "capsule",
-    "phonetic": "/ˈkæpsjuːl/",
-    "pos": "n.",
-    "meaning": "胶囊；太空舱",
-    "example": "Take two capsules after meals.",
-    "exampleCn": "饭后服用两粒胶囊。",
-    "category": "medical",
-    "categories": [
-      "medical"
-    ]
-  },
-  {
     "id": 370,
     "word": "captain",
     "phonetic": "/ˈkæptɪn/",
@@ -3222,19 +3118,6 @@
     "category": "cet4",
     "categories": [
       "cet4"
-    ]
-  },
-  {
-    "id": 378,
-    "word": "cargo",
-    "phonetic": "/ˈkɑːrɡoʊ/",
-    "pos": "n.",
-    "meaning": "货物",
-    "example": "The ship is carrying a large cargo.",
-    "exampleCn": "这艘船装载着大量货物。",
-    "category": "travel",
-    "categories": [
-      "travel"
     ]
   },
   {

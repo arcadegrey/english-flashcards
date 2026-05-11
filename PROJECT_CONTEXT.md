@@ -71,7 +71,7 @@
   - `public/data/vocabulary/core.json`：非 TOEFL 词。
   - `public/data/vocabulary/toefl/manifest.json`：TOEFL 分片目录。
   - `public/data/vocabulary/toefl/level-{n}/list-{m}.json`：具体 TOEFL Level/List 分片。
-- 当前 Level 5 导入进度：List 1、2、3、5、7 各 100 个词，List 4 为 98 个词，List 6 为 99 个词；最近一次导入后总词库约 3111 个词。
+- 当前 Level 5 导入进度：List 1、2、3、5、7 各 100 个词，List 4 为 98 个词，List 6、8、9 各 99 个词，List 10 为 29 个词；最近一次导入后总词库约 3329 个词。
 - 阅读 CSV 默认字段：`title, level, category, content, translation, source, tags`。
 - 阅读必填字段：`title`、`content`。
 - 阅读导入按 `title + level` 去重；tags 支持 `|`、`,`、`;`、`，` 分隔。

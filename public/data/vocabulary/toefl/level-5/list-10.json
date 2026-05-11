@@ -1,0 +1,437 @@
+[
+  {
+    "id": 3301,
+    "word": "excursion",
+    "phonetic": "/ɪkˈskɜːrʒn/",
+    "pos": "n.",
+    "meaning": "短途旅行/远足",
+    "example": "The class went on an excursion to the science museum.",
+    "exampleCn": "全班去科学博物馆短途旅行。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3302,
+    "word": "ferment",
+    "phonetic": "/fərˈment/",
+    "pos": "v./n.",
+    "meaning": "发酵/激起/骚动",
+    "example": "Yeast helps the dough ferment and rise.",
+    "exampleCn": "酵母帮助面团发酵并膨胀。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3303,
+    "word": "mower",
+    "phonetic": "/ˈmoʊər/",
+    "pos": "n.",
+    "meaning": "割草机",
+    "example": "He used a mower to cut the grass in the backyard.",
+    "exampleCn": "他用割草机修剪后院的草。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3304,
+    "word": "robust",
+    "phonetic": "/roʊˈbʌst/",
+    "pos": "adj.",
+    "meaning": "强健的/结实的/强大的",
+    "example": "The company built a robust system to handle heavy traffic.",
+    "exampleCn": "公司建立了一个强大的系统来处理大量流量。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3305,
+    "word": "sentiment",
+    "phonetic": "/ˈsentɪmənt/",
+    "pos": "n.",
+    "meaning": "情感/情绪/观点",
+    "example": "Public sentiment turned against the new policy.",
+    "exampleCn": "公众情绪转向反对这项新政策。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3306,
+    "word": "sparkle",
+    "phonetic": "/ˈspɑːrkl/",
+    "pos": "v./n.",
+    "meaning": "闪耀/闪光",
+    "example": "The stars sparkle brightly in the clear night sky.",
+    "exampleCn": "星星在晴朗的夜空中明亮地闪耀。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3307,
+    "word": "summon",
+    "phonetic": "/ˈsʌmən/",
+    "pos": "v.",
+    "meaning": "召唤/传唤/鼓起",
+    "example": "The principal summoned the students to his office.",
+    "exampleCn": "校长把学生叫到他的办公室。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3308,
+    "word": "unveil",
+    "phonetic": "/ʌnˈveɪl/",
+    "pos": "v.",
+    "meaning": "揭开/公布/推出",
+    "example": "The company will unveil its new phone next week.",
+    "exampleCn": "公司将在下周发布新手机。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3309,
+    "word": "adapter",
+    "phonetic": "/əˈdæptər/",
+    "pos": "n.",
+    "meaning": "适配器/转接器",
+    "example": "I need an adapter to charge my laptop overseas.",
+    "exampleCn": "我需要一个适配器在国外给笔记本电脑充电。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3310,
+    "word": "atlas",
+    "phonetic": "/ˈætləs/",
+    "pos": "n.",
+    "meaning": "地图集",
+    "example": "The student used an atlas to locate the country.",
+    "exampleCn": "学生用地图集找到那个国家的位置。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3311,
+    "word": "championship",
+    "phonetic": "/ˈtʃæmpiənʃɪp/",
+    "pos": "n.",
+    "meaning": "锦标赛/冠军称号",
+    "example": "Our team won the regional championship last year.",
+    "exampleCn": "我们队去年赢得了地区锦标赛冠军。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3312,
+    "word": "discourse",
+    "phonetic": "/ˈdɪskɔːrs/",
+    "pos": "n./v.",
+    "meaning": "论述/话语/演讲/谈论",
+    "example": "Academic discourse often requires clear evidence.",
+    "exampleCn": "学术论述通常需要清晰的证据。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3313,
+    "word": "famine",
+    "phonetic": "/ˈfæmɪn/",
+    "pos": "n.",
+    "meaning": "饥荒",
+    "example": "The drought caused a severe famine in the region.",
+    "exampleCn": "干旱导致该地区发生严重饥荒。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3314,
+    "word": "hospitable",
+    "phonetic": "/hɑːˈspɪtəbl/",
+    "pos": "adj.",
+    "meaning": "好客的/适宜的",
+    "example": "The villagers were hospitable to the travelers.",
+    "exampleCn": "村民们对旅行者很热情好客。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3315,
+    "word": "hospitality",
+    "phonetic": "/ˌhɑːspɪˈtæləti/",
+    "pos": "n.",
+    "meaning": "好客/款待",
+    "example": "We thanked them for their warm hospitality.",
+    "exampleCn": "我们感谢他们热情的款待。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3316,
+    "word": "overestimate",
+    "phonetic": "/ˌoʊvərˈestɪmeɪt/",
+    "pos": "v./n.",
+    "meaning": "高估/过高估计",
+    "example": "Do not overestimate how much time you have left.",
+    "exampleCn": "不要高估你剩下的时间。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3317,
+    "word": "oversimplify",
+    "phonetic": "/ˌoʊvərˈsɪmplɪfaɪ/",
+    "pos": "v.",
+    "meaning": "过度简化",
+    "example": "The article tends to oversimplify a complex issue.",
+    "exampleCn": "这篇文章倾向于过度简化一个复杂问题。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3318,
+    "word": "precauition",
+    "phonetic": "/prɪˈkɔːʃn/",
+    "pos": "n.",
+    "meaning": "预防措施/谨慎",
+    "example": "As a precaution, we backed up all the files.",
+    "exampleCn": "作为预防措施，我们备份了所有文件。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3319,
+    "word": "semiconductor",
+    "phonetic": "/ˌsemikənˈdʌktər/",
+    "pos": "n.",
+    "meaning": "半导体",
+    "example": "Silicon is widely used as a semiconductor in electronics.",
+    "exampleCn": "硅在电子产品中被广泛用作半导体。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3320,
+    "word": "sensational",
+    "phonetic": "/senˈseɪʃənl/",
+    "pos": "adj.",
+    "meaning": "轰动的/耸人听闻的/极好的",
+    "example": "The newspaper published a sensational story.",
+    "exampleCn": "这家报纸刊登了一篇耸人听闻的报道。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3321,
+    "word": "sip",
+    "phonetic": "/sɪp/",
+    "pos": "v./n.",
+    "meaning": "小口喝/一小口",
+    "example": "She took a sip of tea before speaking.",
+    "exampleCn": "她说话前小喝了一口茶。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3322,
+    "word": "steroid",
+    "phonetic": "/ˈsterɔɪd/",
+    "pos": "n.",
+    "meaning": "类固醇",
+    "example": "Some medicines contain a small amount of steroid.",
+    "exampleCn": "一些药物含有少量类固醇。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3323,
+    "word": "sympathy",
+    "phonetic": "/ˈsɪmpəθi/",
+    "pos": "n.",
+    "meaning": "同情/慰问/支持",
+    "example": "She expressed sympathy for the people affected by the flood.",
+    "exampleCn": "她对受洪水影响的人表示同情。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3324,
+    "word": "tranquil",
+    "phonetic": "/ˈtræŋkwəl/",
+    "pos": "adj.",
+    "meaning": "平静的/安宁的",
+    "example": "The lake looked tranquil in the early morning.",
+    "exampleCn": "清晨的湖面看起来很平静。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3325,
+    "word": "tranquilizer",
+    "phonetic": "/ˈtræŋkwəlaɪzər/",
+    "pos": "n.",
+    "meaning": "镇静剂",
+    "example": "The vet used a tranquilizer to calm the injured animal.",
+    "exampleCn": "兽医用镇静剂让受伤的动物平静下来。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3326,
+    "word": "underpin",
+    "phonetic": "/ˌʌndərˈpɪn/",
+    "pos": "v.",
+    "meaning": "支撑/巩固/构成基础",
+    "example": "Strong evidence should underpin any scientific argument.",
+    "exampleCn": "有力的证据应该支撑任何科学论证。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3327,
+    "word": "unearth",
+    "phonetic": "/ʌnˈɜːrθ/",
+    "pos": "v.",
+    "meaning": "发掘/发现",
+    "example": "Archaeologists unearthed ancient tools near the river.",
+    "exampleCn": "考古学家在河边发掘出古代工具。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3328,
+    "word": "vaccine",
+    "phonetic": "/vækˈsiːn/",
+    "pos": "n.",
+    "meaning": "疫苗",
+    "example": "The vaccine helps the body develop protection against disease.",
+    "exampleCn": "疫苗帮助身体形成对疾病的保护。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  },
+  {
+    "id": 3329,
+    "word": "vow",
+    "phonetic": "/vaʊ/",
+    "pos": "v./n.",
+    "meaning": "发誓/誓言",
+    "example": "He made a vow to finish the project on time.",
+    "exampleCn": "他发誓要按时完成这个项目。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "10"
+  }
+]
