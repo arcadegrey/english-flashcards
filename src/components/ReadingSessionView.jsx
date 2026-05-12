@@ -1,22 +1,41 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
-import VoiceSettings from './VoiceSettings';
-import {
-  DEFAULT_SPEECH_RATE,
-  SLOW_SPEECH_RATE,
-  getSpeechRate,
-  setSpeechRate,
-  speak,
-} from '../utils/speech';
+import { useEffect, useMemo, useState } from 'react';
+import QuickMenu from './QuickMenu';
+import { speak } from '../utils/speech';
 import { isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from '../utils/readingText';
 
-const MODE_OPTIONS = [
-  { id: 'learn', icon: '🎯', label: '学习' },
-  { id: 'quiz', icon: '✏️', label: '测验' },
-  { id: 'fillblank', icon: '🧩', label: '填空' },
-  { id: 'spelling', icon: '🔤', label: '拼写' },
-];
+const normalizeQuestionOption = (option, index) => {
+  if (typeof option === 'string') {
+    return {
+      id: String.fromCharCode(65 + index),
+      label: option,
+    };
+  }
 
-const MENU_CLOSE_DURATION_MS = 220;
+  return {
+    id: String(option?.id || option?.key || option?.value || String.fromCharCode(65 + index)),
+    label: String(option?.label || option?.text || option?.value || ''),
+  };
+};
+
+const normalizeReadingQuestions = (questions) => {
+  if (!Array.isArray(questions)) return [];
+
+  return questions
+    .map((question, index) => {
+      const options = Array.isArray(question?.options)
+        ? question.options.map((option, optionIndex) => normalizeQuestionOption(option, optionIndex))
+        : [];
+
+      return {
+        id: String(question?.id || `q-${index + 1}`),
+        prompt: String(question?.prompt || question?.question || '').trim(),
+        options: options.filter((option) => option.label),
+        answer: String(question?.answer || question?.correctAnswer || '').trim(),
+        explanation: String(question?.explanation || '').trim(),
+      };
+    })
+    .filter((question) => question.prompt && question.options.length > 0);
+};
 
 function ReadingSessionView({
   article,
@@ -30,85 +49,26 @@ function ReadingSessionView({
   onMarkAsMastered,
   onSyncAccount,
 }) {
-  const [showVoiceSettings, setShowVoiceSettings] = useState(false);
-  const [isMenuMounted, setIsMenuMounted] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showTranslation, setShowTranslation] = useState(false);
   const [activeWord, setActiveWord] = useState(null);
+  const [questionAnswersByArticle, setQuestionAnswersByArticle] = useState({});
   const [toast, setToast] = useState('');
-  const [speechRate, setSpeechRateState] = useState(() => getSpeechRate());
-  const menuRef = useRef(null);
-  const menuCloseTimerRef = useRef(null);
-  const totalMenuSlots = MODE_OPTIONS.length + 3;
   const masteredWordSet = useMemo(
     () => new Set((masteredWords || []).map((item) => String(item))),
     [masteredWords]
   );
-  const isSlowSpeech = speechRate < DEFAULT_SPEECH_RATE - 0.01;
+  const readingQuestions = useMemo(
+    () => normalizeReadingQuestions(article?.questions),
+    [article?.questions]
+  );
+  const questionAnswerKey = String(article?.id || 'unknown');
+  const questionAnswers = questionAnswersByArticle[questionAnswerKey] || {};
 
   useEffect(() => {
     if (!toast) return undefined;
     const timer = setTimeout(() => setToast(''), 1600);
     return () => clearTimeout(timer);
   }, [toast]);
-
-  useEffect(() => {
-    if (!isMenuMounted) return undefined;
-
-    const handlePointerDown = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setIsMenuOpen(false);
-      }
-    };
-
-    const handleEsc = (event) => {
-      if (event.key === 'Escape') {
-        setIsMenuOpen(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handlePointerDown);
-    document.addEventListener('touchstart', handlePointerDown, { passive: true });
-    document.addEventListener('keydown', handleEsc);
-
-    return () => {
-      document.removeEventListener('mousedown', handlePointerDown);
-      document.removeEventListener('touchstart', handlePointerDown);
-      document.removeEventListener('keydown', handleEsc);
-    };
-  }, [isMenuMounted]);
-
-  useEffect(() => {
-    if (isMenuOpen) {
-      if (menuCloseTimerRef.current) {
-        clearTimeout(menuCloseTimerRef.current);
-        menuCloseTimerRef.current = null;
-      }
-      return undefined;
-    }
-
-    if (!isMenuMounted) return undefined;
-
-    menuCloseTimerRef.current = setTimeout(() => {
-      setIsMenuMounted(false);
-      menuCloseTimerRef.current = null;
-    }, MENU_CLOSE_DURATION_MS);
-
-    return () => {
-      if (menuCloseTimerRef.current) {
-        clearTimeout(menuCloseTimerRef.current);
-        menuCloseTimerRef.current = null;
-      }
-    };
-  }, [isMenuOpen, isMenuMounted]);
-
-  useEffect(() => {
-    return () => {
-      if (menuCloseTimerRef.current) {
-        clearTimeout(menuCloseTimerRef.current);
-      }
-    };
-  }, []);
 
   const readingStats = useMemo(() => {
     const tokens = tokenizeReadingText(article?.content || '');
@@ -133,45 +93,6 @@ function ReadingSessionView({
       unmasteredCount: Math.max(totalTracked - masteredCount, 0),
     };
   }, [article?.content, masteredWordSet, wordLookup]);
-
-  const openMenu = () => {
-    if (menuCloseTimerRef.current) {
-      clearTimeout(menuCloseTimerRef.current);
-      menuCloseTimerRef.current = null;
-    }
-    setIsMenuMounted(true);
-    requestAnimationFrame(() => setIsMenuOpen(true));
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
-
-  const toggleMenu = () => {
-    if (isMenuOpen) {
-      closeMenu();
-      return;
-    }
-    openMenu();
-  };
-
-  const handleToggleSlowSpeech = () => {
-    const nextRate = isSlowSpeech ? DEFAULT_SPEECH_RATE : SLOW_SPEECH_RATE;
-    setSpeechRate(nextRate);
-    setSpeechRateState(nextRate);
-    setToast(isSlowSpeech ? '已切换为标准语速 1.0x' : '已切换为慢速发音 0.5x');
-    closeMenu();
-  };
-
-  const handleOpenVoiceSettings = () => {
-    setShowVoiceSettings(true);
-    closeMenu();
-  };
-
-  const handleSelectMode = (nextMode) => {
-    onOpenMode?.(nextMode);
-    closeMenu();
-  };
 
   const handleSpeakArticle = () => {
     if (!article?.content) return;
@@ -208,6 +129,19 @@ function ReadingSessionView({
     if (!activeWord?.id) return;
     onMarkAsMastered?.(activeWord.id);
     setToast(`已标记掌握：${activeWord.word}`);
+  };
+
+  const handleSelectQuestionOption = (questionId, optionId, answer) => {
+    setQuestionAnswersByArticle((prev) => ({
+      ...prev,
+      [questionAnswerKey]: {
+        ...(prev[questionAnswerKey] || {}),
+        [questionId]: {
+          selected: optionId,
+          isCorrect: answer ? optionId.toLowerCase() === answer.toLowerCase() : null,
+        },
+      },
+    }));
   };
 
   const contentBlocks = useMemo(() => {
@@ -318,79 +252,12 @@ function ReadingSessionView({
               </svg>
             </button>
 
-            <div className="learn-refresh-menu-wrap" ref={menuRef}>
-              <button
-                type="button"
-                className="learn-refresh-icon-btn"
-                onClick={toggleMenu}
-                aria-haspopup="menu"
-                aria-expanded={isMenuOpen}
-                aria-label="打开模式菜单"
-              >
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M12 8.75a3.25 3.25 0 100 6.5 3.25 3.25 0 000-6.5z" />
-                  <path d="M4 12a8 8 0 011.1-4.03l1.72.99a6 6 0 000 6.08l-1.72.99A8 8 0 014 12zm15.9-4.03A8 8 0 0120 12a8 8 0 01-1.1 4.03l-1.72-.99a6 6 0 000-6.08l1.72-.99zM12 4a8 8 0 014.03 1.1l-.99 1.72a6 6 0 00-6.08 0l-.99-1.72A8 8 0 0112 4zm4.03 14.9A8 8 0 0112 20a8 8 0 01-4.03-1.1l.99-1.72a6 6 0 006.08 0l.99 1.72z" />
-                </svg>
-              </button>
-
-              {isMenuMounted && (
-                <div
-                  className={`learn-refresh-menu ${isMenuOpen ? 'is-open' : 'is-closing'}`}
-                  role="menu"
-                  aria-label="学习模式菜单"
-                >
-                  {MODE_OPTIONS.map((item, index) => (
-                    <button
-                      key={item.id}
-                      type="button"
-                      role="menuitem"
-                      className={`learn-refresh-menu-item ${mode === item.id ? 'is-active' : ''}`}
-                      onClick={() => handleSelectMode(item.id)}
-                      style={{
-                        '--menu-index': index,
-                        '--menu-reverse-index': totalMenuSlots - 1 - index,
-                      }}
-                    >
-                      <span>{item.icon}</span>
-                      <span>{item.label}</span>
-                    </button>
-                  ))}
-                  <div
-                    className="learn-refresh-menu-divider"
-                    style={{
-                      '--menu-index': MODE_OPTIONS.length,
-                      '--menu-reverse-index': totalMenuSlots - 1 - MODE_OPTIONS.length,
-                    }}
-                  />
-                  <button
-                    type="button"
-                    role="menuitem"
-                    className="learn-refresh-menu-item"
-                    onClick={handleOpenVoiceSettings}
-                    style={{
-                      '--menu-index': MODE_OPTIONS.length + 1,
-                      '--menu-reverse-index': totalMenuSlots - 1 - (MODE_OPTIONS.length + 1),
-                    }}
-                  >
-                    <span>🔊</span>
-                    <span>语音设置</span>
-                  </button>
-                  <button
-                    type="button"
-                    role="menuitem"
-                    className={`learn-refresh-menu-item ${isSlowSpeech ? 'is-active' : ''}`}
-                    onClick={handleToggleSlowSpeech}
-                    style={{
-                      '--menu-index': MODE_OPTIONS.length + 2,
-                      '--menu-reverse-index': totalMenuSlots - 1 - (MODE_OPTIONS.length + 2),
-                    }}
-                  >
-                    <span>🐢</span>
-                    <span>{isSlowSpeech ? '切换标准语速 1.0x' : '切换慢速发音 0.5x'}</span>
-                  </button>
-                </div>
-              )}
-            </div>
+            <QuickMenu
+              mode={mode}
+              onOpenMode={onOpenMode}
+              onOpenReading={onBack}
+              onSlowSpeechChange={setToast}
+            />
           </div>
         </div>
       </header>
@@ -403,6 +270,9 @@ function ReadingSessionView({
               <span className="reading-session-chip">{article.level || 'B1'}</span>
               <span className="reading-session-chip">{article.estimatedMinutes || 1} 分钟</span>
               <span className="reading-session-chip">{readingStats.unmasteredCount} 个未掌握词</span>
+              {readingQuestions.length > 0 && (
+                <span className="reading-session-chip">{readingQuestions.length} 道阅读题</span>
+              )}
             </div>
           </header>
 
@@ -421,6 +291,65 @@ function ReadingSessionView({
                 </button>
               </div>
               {showTranslation && <p className="learn-refresh-example-cn">{article.translation}</p>}
+            </section>
+          )}
+
+          {readingQuestions.length > 0 && (
+            <section className="reading-question-section" aria-label="阅读题">
+              <div className="reading-question-head">
+                <h2 className="reading-question-title">阅读题</h2>
+                <p className="reading-question-sub">根据文章选择最合适的答案。</p>
+              </div>
+
+              <div className="reading-question-list">
+                {readingQuestions.map((question, questionIndex) => {
+                  const answerState = questionAnswers[question.id];
+
+                  return (
+                    <article key={question.id} className="reading-question-card">
+                      <p className="reading-question-prompt">
+                        {questionIndex + 1}. {question.prompt}
+                      </p>
+                      <div className="reading-question-options">
+                        {question.options.map((option) => {
+                          const isSelected = answerState?.selected === option.id;
+                          const isCorrectAnswer =
+                            Boolean(question.answer) &&
+                            option.id.toLowerCase() === question.answer.toLowerCase();
+
+                          return (
+                            <button
+                              key={option.id}
+                              type="button"
+                              className={[
+                                'reading-question-option',
+                                isSelected ? 'is-selected' : '',
+                                isSelected && answerState?.isCorrect === true ? 'is-correct' : '',
+                                isSelected && answerState?.isCorrect === false ? 'is-wrong' : '',
+                                answerState && isCorrectAnswer ? 'is-answer' : '',
+                              ]
+                                .filter(Boolean)
+                                .join(' ')}
+                              onClick={() =>
+                                handleSelectQuestionOption(question.id, option.id, question.answer)
+                              }
+                            >
+                              <span className="reading-question-option-key">{option.id}</span>
+                              <span>{option.label}</span>
+                            </button>
+                          );
+                        })}
+                      </div>
+                      {answerState && question.answer && (
+                        <p className="reading-question-feedback">
+                          {answerState.isCorrect ? '回答正确' : `正确答案：${question.answer}`}
+                          {question.explanation ? `。${question.explanation}` : ''}
+                        </p>
+                      )}
+                    </article>
+                  );
+                })}
+              </div>
             </section>
           )}
         </section>
@@ -487,7 +416,6 @@ function ReadingSessionView({
         </div>
       )}
 
-      {showVoiceSettings && <VoiceSettings onClose={() => setShowVoiceSettings(false)} />}
     </div>
   );
 }

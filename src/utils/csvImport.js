@@ -2,7 +2,7 @@ import { parseCategoryList } from './wordCategories.js';
 
 const DEFAULT_HEADERS = ['word', 'phonetic', 'pos', 'meaning', 'example', 'exampleCn', 'category', 'level', 'list'];
 const REQUIRED_FIELDS = ['word', 'meaning'];
-const DEFAULT_READING_HEADERS = ['title', 'level', 'category', 'content', 'translation', 'source', 'tags'];
+const DEFAULT_READING_HEADERS = ['title', 'level', 'category', 'content', 'translation', 'source', 'tags', 'examType', 'questions'];
 const REQUIRED_READING_FIELDS = ['title', 'content'];
 
 const normalizeText = (value) => (value || '').trim();
@@ -55,6 +55,10 @@ const normalizeReadingHeaderKey = (header) => {
   }
   if (normalized === 'source' || normalized === 'origin') return 'source';
   if (normalized === 'tags' || normalized === 'tag') return 'tags';
+  if (normalized === 'examtype' || normalized === 'exam' || normalized === 'testtype' || normalized === 'test') {
+    return 'examType';
+  }
+  if (normalized === 'questions' || normalized === 'questionjson') return 'questions';
 
   return normalized;
 };
@@ -238,6 +242,47 @@ const parseTagList = (value) =>
     .map((item) => item.trim())
     .filter(Boolean);
 
+const parseReadingQuestions = (value) => {
+  const text = String(value || '').trim();
+  if (!text) return [];
+
+  try {
+    const parsed = JSON.parse(text);
+    const list = Array.isArray(parsed) ? parsed : [parsed];
+    return list
+      .map((item, index) => {
+        const options = Array.isArray(item?.options)
+          ? item.options
+              .map((option, optionIndex) => {
+                if (typeof option === 'string') {
+                  return {
+                    id: String.fromCharCode(65 + optionIndex),
+                    label: option.trim(),
+                  };
+                }
+
+                return {
+                  id: normalizeText(option?.id || option?.key || option?.value || String.fromCharCode(65 + optionIndex)),
+                  label: normalizeText(option?.label || option?.text || option?.value),
+                };
+              })
+              .filter((option) => option.id && option.label)
+          : [];
+
+        return {
+          id: normalizeText(item?.id || `q-${index + 1}`),
+          prompt: normalizeText(item?.prompt || item?.question),
+          options,
+          answer: normalizeText(item?.answer || item?.correctAnswer),
+          explanation: normalizeText(item?.explanation),
+        };
+      })
+      .filter((item) => item.prompt && item.options.length > 0);
+  } catch {
+    return [];
+  }
+};
+
 const buildReadingKey = (item = {}) =>
   `${String(item.title || '').trim().toLowerCase()}::${String(item.level || '').trim().toLowerCase()}`;
 
@@ -292,6 +337,8 @@ export const parseReadingCsv = ({
       translation: normalizeText(record.translation),
       source: normalizeText(record.source),
       tags: parseTagList(record.tags),
+      examType: normalizeText(record.examType),
+      questions: parseReadingQuestions(record.questions),
     };
 
     const duplicateKey = buildReadingKey(normalized);
@@ -319,5 +366,5 @@ export const parseReadingCsv = ({
 };
 
 export const getReadingCsvTemplate = () =>
-  'title,level,category,content,translation,source,tags\n' +
-  'A Small Habit,B1,self-improvement,"Big goals are exciting, but tiny habits move you forward every day.","大目标令人兴奋，但微习惯让你每天持续前进。",english-flashcards,habit|study\n';
+  'title,level,category,content,translation,source,tags,examType,questions\n' +
+  'A Small Habit,B1,self-improvement,"Big goals are exciting, but tiny habits move you forward every day.","大目标令人兴奋，但微习惯让你每天持续前进。",english-flashcards,habit|study,,"[{""id"":""q1"",""prompt"":""What is the main idea?"",""options"":[""Small habits support steady progress"",""Big goals are unnecessary""],""answer"":""A""}]"\n';

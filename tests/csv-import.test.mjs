@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import { parseVocabularyCsv } from '../src/utils/csvImport.js'
+import { parseReadingCsv, parseVocabularyCsv } from '../src/utils/csvImport.js'
 
 const validCategoryIds = ['daily', 'cet4', 'toefl']
 
@@ -63,4 +63,33 @@ test('parseVocabularyCsv handles quoted commas, escaped quotes, and newlines', (
   assert.equal(summary.importedCount, 1)
   assert.equal(importedWords[0].meaning, '短语,表达')
   assert.equal(importedWords[0].example, 'He said "hello"\nagain.')
+})
+
+test('parseReadingCsv imports exam type and JSON questions', () => {
+  const questions = JSON.stringify([
+    {
+      id: 'q1',
+      prompt: 'What is the main idea?',
+      options: ['Small habits support progress', 'Sleep is unnecessary'],
+      answer: 'A',
+      explanation: 'The passage focuses on tiny repeatable actions.',
+    },
+  ]).replaceAll('"', '""')
+
+  const csvText = [
+    'title,level,category,content,translation,source,tags,examType,questions',
+    `"A Small Habit",B1,self-improvement,"Small habits move you forward.","微习惯推动你前进。",cambridge,habit|study,IELTS,"${questions}"`,
+  ].join('\n')
+
+  const { importedReadings, summary } = parseReadingCsv({
+    csvText,
+    existingReadings: [],
+  })
+
+  assert.equal(summary.importedCount, 1)
+  assert.equal(importedReadings[0].examType, 'IELTS')
+  assert.deepEqual(importedReadings[0].tags, ['habit', 'study'])
+  assert.equal(importedReadings[0].questions.length, 1)
+  assert.equal(importedReadings[0].questions[0].options[0].id, 'A')
+  assert.equal(importedReadings[0].questions[0].answer, 'A')
 })

@@ -1,3 +1,5 @@
+import QuickMenu from './QuickMenu';
+
 const EXAM_MODES = [
   {
     id: 'quiz',
@@ -59,6 +61,9 @@ function ExamPracticeView({
   onHome,
   onSelectMode,
   onSyncAccount,
+  mode = 'learn',
+  onOpenMode,
+  onOpenReading,
   selectedScope = 'learned',
   onSelectScope,
   learnedCount = 0,
@@ -97,8 +102,7 @@ function ExamPracticeView({
             >
               <SyncIcon />
             </button>
-            <span className="learn-refresh-topbar-spacer" aria-hidden="true" />
-            <span className="learn-refresh-topbar-spacer" aria-hidden="true" />
+            <QuickMenu mode={mode} onOpenMode={onOpenMode} onOpenReading={onOpenReading} />
           </div>
         </div>
       </header>

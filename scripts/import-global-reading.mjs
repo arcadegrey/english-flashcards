@@ -32,6 +32,38 @@ const normalizeTagList = (value) => {
   const list = Array.isArray(value) ? value : [];
   return list.map((item) => String(item || '').trim()).filter(Boolean);
 };
+const normalizeQuestionList = (value) => {
+  const list = Array.isArray(value) ? value : [];
+  return list
+    .map((item, index) => {
+      const options = Array.isArray(item?.options)
+        ? item.options
+            .map((option, optionIndex) => {
+              if (typeof option === 'string') {
+                return {
+                  id: String.fromCharCode(65 + optionIndex),
+                  label: option.trim(),
+                };
+              }
+
+              return {
+                id: String(option?.id || option?.key || option?.value || String.fromCharCode(65 + optionIndex)).trim(),
+                label: String(option?.label || option?.text || option?.value || '').trim(),
+              };
+            })
+            .filter((option) => option.id && option.label)
+        : [];
+
+      return {
+        id: String(item?.id || `q-${index + 1}`).trim(),
+        prompt: String(item?.prompt || item?.question || '').trim(),
+        options,
+        answer: String(item?.answer || item?.correctAnswer || '').trim(),
+        explanation: String(item?.explanation || '').trim(),
+      };
+    })
+    .filter((item) => item.prompt && item.options.length > 0);
+};
 const buildReadingKey = (item = {}) =>
   `${String(item.title || '').trim().toLowerCase()}::${String(item.level || '').trim().toLowerCase()}`;
 
@@ -46,6 +78,8 @@ const serializeReadings = (list) => {
       `translation: ${escapeValue(item.translation || '')}`,
       `source: ${escapeValue(item.source || '')}`,
       `tags: ${JSON.stringify(normalizeTagList(item.tags))}`,
+      `examType: ${escapeValue(item.examType || '')}`,
+      `questions: ${JSON.stringify(normalizeQuestionList(item.questions))}`,
     ];
     return `  { ${fields.join(', ')} },`;
   });
@@ -104,6 +138,10 @@ const main = async () => {
           translation: incoming.translation || current.translation || '',
           source: incoming.source || current.source || '',
           tags: mergeTagList(current.tags, incoming.tags),
+          examType: incoming.examType || current.examType || '',
+          questions: normalizeQuestionList(incoming.questions).length > 0
+            ? normalizeQuestionList(incoming.questions)
+            : normalizeQuestionList(current.questions),
         };
         updated += 1;
       } else {
@@ -111,6 +149,7 @@ const main = async () => {
           ...incoming,
           id: nextId,
           tags: normalizeTagList(incoming.tags),
+          questions: normalizeQuestionList(incoming.questions),
         });
         byKey.set(key, merged.length - 1);
         nextId += 1;
@@ -151,6 +190,7 @@ const main = async () => {
     .map((item) => ({
       ...item,
       tags: normalizeTagList(item.tags),
+      questions: normalizeQuestionList(item.questions),
     }))
     .sort((a, b) => Number(a.id) - Number(b.id));
   const output = serializeReadings(merged);

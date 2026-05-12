@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import categories from '../data/categories';
 import AuthPanel from './AuthPanel';
+import QuickMenu from './QuickMenu';
 import { wordBelongsToCategory } from '../utils/wordCategories';
 
 const collectionCategories = [
@@ -56,6 +57,9 @@ function HomeScreen({
   onHome,
   onSyncAccount,
   onSpeakIntro,
+  onOpenMode,
+  onOpenReading,
+  mode = 'learn',
   authEnabled = false,
   authLoading = false,
   authUser = null,
@@ -285,7 +289,8 @@ function HomeScreen({
                 <path d="M19.5 6a8 8 0 010 12" />
               </svg>
             </button>
-            <span className="learn-refresh-topbar-spacer" aria-hidden="true" />
+
+            <QuickMenu mode={mode} onOpenMode={onOpenMode} onOpenReading={onOpenReading} />
           </div>
         </div>
       </header>

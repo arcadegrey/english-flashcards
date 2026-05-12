@@ -1281,6 +1281,17 @@ function AppContent() {
     setView('learn')
   }
 
+  const handleOpenModeFromHome = (nextMode) => {
+    pendingStartWordIdRef.current = null
+    setAssessmentBackTarget('home')
+    setSelectedCategory('all')
+    setSelectedToeflLevel('')
+    setSelectedToeflList('')
+    setCurrentIndex(0)
+    setMode(nextMode)
+    setView('learn')
+  }
+
   const handleOpenModeFromCollection = (nextMode) => {
     setAssessmentBackTarget('home')
     setMode(nextMode)
@@ -1545,6 +1556,9 @@ function AppContent() {
             masteredCount={masteredWords.length}
             totalCount={allVocabulary.length}
             onSyncAccount={handleHomeSync}
+            mode={mode}
+            onOpenMode={(nextMode) => handleStartExamPractice(nextMode, examScope)}
+            onOpenReading={handleOpenReadingList}
           />
         )
       case 'home':
@@ -1576,6 +1590,9 @@ function AppContent() {
             onHome={handleBackToStudyHub}
             onSyncAccount={handleHomeSync}
             onSpeakIntro={() => speak('English flashcards. Choose a vocabulary category to start.', { rate: 1 })}
+            onOpenMode={handleOpenModeFromHome}
+            onOpenReading={handleOpenReadingList}
+            mode={mode}
             onAuthLogin={handleAuthLogin}
             onAuthRegister={handleAuthRegister}
             onAuthLogout={handleAuthLogout}
@@ -1673,6 +1690,7 @@ function AppContent() {
             onBack={handleLearningBack}
             onHome={handleBackToStudyHub}
             onSyncAccount={handleHomeSync}
+            onOpenReading={handleOpenReadingList}
           />
         )
       case 'statistics':
@@ -1744,6 +1762,7 @@ function AppContent() {
             progressLabel="今日复习"
             onHome={handleBackToStudyHub}
             onSyncAccount={handleHomeSync}
+            onOpenReading={handleOpenReadingList}
           />
         )
       case 'wrongWords':
@@ -1761,6 +1780,7 @@ function AppContent() {
             progressLabel="待巩固"
             onHome={handleBackToStudyHub}
             onSyncAccount={handleHomeSync}
+            onOpenReading={handleOpenReadingList}
           />
         )
       case 'learnedWords':
@@ -1777,6 +1797,7 @@ function AppContent() {
             masteredActionLabel="认识了"
             onHome={handleBackToStudyHub}
             onSyncAccount={handleHomeSync}
+            onOpenReading={handleOpenReadingList}
           />
         )
       case 'masteredWords':
@@ -1792,6 +1813,7 @@ function AppContent() {
             onMarkAsUnknown={markMasteredWordAsLearned}
             onHome={handleBackToStudyHub}
             onSyncAccount={handleHomeSync}
+            onOpenReading={handleOpenReadingList}
           />
         )
       default:
