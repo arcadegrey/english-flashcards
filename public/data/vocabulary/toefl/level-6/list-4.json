@@ -1,0 +1,752 @@
+[
+  {
+    "id": 3478,
+    "word": "farmstead",
+    "phonetic": "/ˈfɑːrmsted/",
+    "pos": "n.",
+    "meaning": "农庄/农场及其建筑",
+    "example": "The old farmstead stood beside a narrow country road.",
+    "exampleCn": "那座老农庄位于一条狭窄的乡村道路旁。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3479,
+    "word": "clove",
+    "phonetic": "/kloʊv/",
+    "pos": "n.",
+    "meaning": "丁香/蒜瓣",
+    "example": "She added a clove of garlic to the soup.",
+    "exampleCn": "她往汤里加了一瓣大蒜。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3480,
+    "word": "fortuitous",
+    "phonetic": "/fɔːrˈtuːɪtəs/",
+    "pos": "adj.",
+    "meaning": "偶然的/幸运的",
+    "example": "Their fortuitous meeting led to a long friendship.",
+    "exampleCn": "他们偶然的相遇促成了一段长久的友谊。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3481,
+    "word": "flutter",
+    "phonetic": "/ˈflʌtər/",
+    "pos": "v./n.",
+    "meaning": "拍动/飘动/颤动/一阵激动",
+    "example": "The bird began to flutter its wings.",
+    "exampleCn": "那只鸟开始拍动翅膀。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3482,
+    "word": "genus",
+    "phonetic": "/ˈdʒiːnəs/",
+    "pos": "n.",
+    "meaning": "属/类",
+    "example": "The animal belongs to the same genus as several related species.",
+    "exampleCn": "这种动物与几个相关物种属于同一属。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3483,
+    "word": "petrifaction",
+    "phonetic": "/ˌpetrɪˈfækʃən/",
+    "pos": "n.",
+    "meaning": "石化/吓呆",
+    "example": "Petrifaction can preserve ancient wood for millions of years.",
+    "exampleCn": "石化作用可以把古代木材保存数百万年。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3484,
+    "word": "democratization",
+    "phonetic": "/dɪˌmɑːkrətəˈzeɪʃən/",
+    "pos": "n.",
+    "meaning": "民主化/大众化",
+    "example": "The democratization of education gave more people access to schools.",
+    "exampleCn": "教育的大众化让更多人有机会接受学校教育。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3485,
+    "word": "deity",
+    "phonetic": "/ˈdiːəti/",
+    "pos": "n.",
+    "meaning": "神/神明",
+    "example": "The temple was built to honor an ancient deity.",
+    "exampleCn": "这座寺庙是为了纪念一位古代神明而建的。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3486,
+    "word": "ensemble",
+    "phonetic": "/ɑːnˈsɑːmbəl/",
+    "pos": "n.",
+    "meaning": "全体/合奏团/套装",
+    "example": "The jazz ensemble performed at the festival.",
+    "exampleCn": "这个爵士乐合奏团在节日上演出。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3487,
+    "word": "protract",
+    "phonetic": "/proʊˈtrækt/",
+    "pos": "v.",
+    "meaning": "延长/拖延",
+    "example": "The negotiations were protracted by disagreement over details.",
+    "exampleCn": "谈判因细节上的分歧而被拖延。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3488,
+    "word": "bushel",
+    "phonetic": "/ˈbʊʃəl/",
+    "pos": "n.",
+    "meaning": "蒲式耳/大量",
+    "example": "The farmer sold a bushel of apples at the market.",
+    "exampleCn": "农民在市场上卖了一蒲式耳苹果。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3489,
+    "word": "convulsion",
+    "phonetic": "/kənˈvʌlʃən/",
+    "pos": "n.",
+    "meaning": "抽搐/震动/动乱",
+    "example": "The earthquake caused a violent convulsion of the ground.",
+    "exampleCn": "地震造成了地面的剧烈震动。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3490,
+    "word": "harken",
+    "phonetic": "/ˈhɑːrkən/",
+    "pos": "v.",
+    "meaning": "倾听/回想起",
+    "example": "The song seems to harken back to an earlier era.",
+    "exampleCn": "这首歌似乎让人回想起更早的时代。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3491,
+    "word": "Caucasian",
+    "phonetic": "/kɔːˈkeɪʒən/",
+    "pos": "adj./n.",
+    "meaning": "高加索的/白种人的/白种人",
+    "example": "The study included participants of Caucasian and Asian backgrounds.",
+    "exampleCn": "这项研究包括白种人和亚洲背景的参与者。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3492,
+    "word": "scanty",
+    "phonetic": "/ˈskænti/",
+    "pos": "adj.",
+    "meaning": "不足的/缺乏的",
+    "example": "The hikers survived with only scanty supplies.",
+    "exampleCn": "徒步者只靠很少的补给生存下来。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3493,
+    "word": "custodian",
+    "phonetic": "/kʌˈstoʊdiən/",
+    "pos": "n.",
+    "meaning": "看管人/保管人/监护人",
+    "example": "The museum custodian carefully protected the artifacts.",
+    "exampleCn": "博物馆保管员仔细保护这些文物。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3494,
+    "word": "bowel",
+    "phonetic": "/ˈbaʊəl/",
+    "pos": "n.",
+    "meaning": "肠/内部深处",
+    "example": "Fiber helps keep the bowel healthy.",
+    "exampleCn": "纤维有助于保持肠道健康。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3495,
+    "word": "relic",
+    "phonetic": "/ˈrelɪk/",
+    "pos": "n.",
+    "meaning": "遗物/遗迹/遗风",
+    "example": "The coin is a relic of the Roman Empire.",
+    "exampleCn": "这枚硬币是罗马帝国的遗物。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3496,
+    "word": "fling",
+    "phonetic": "/flɪŋ/",
+    "pos": "v./n.",
+    "meaning": "猛扔/投掷/短暂尝试",
+    "example": "He flung the ball across the field.",
+    "exampleCn": "他把球猛地扔过了球场。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3497,
+    "word": "ion",
+    "phonetic": "/ˈaɪən/",
+    "pos": "n.",
+    "meaning": "离子",
+    "example": "A sodium ion has a positive charge.",
+    "exampleCn": "钠离子带正电荷。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3498,
+    "word": "fledgling",
+    "phonetic": "/ˈfledʒlɪŋ/",
+    "pos": "n./adj.",
+    "meaning": "刚会飞的幼鸟/新手/新兴的",
+    "example": "The fledgling company needed more investment.",
+    "exampleCn": "这家新兴公司需要更多投资。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3499,
+    "word": "excrete",
+    "phonetic": "/ɪkˈskriːt/",
+    "pos": "v.",
+    "meaning": "排泄/分泌",
+    "example": "The kidneys excrete waste from the blood.",
+    "exampleCn": "肾脏从血液中排泄废物。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3500,
+    "word": "deciduous",
+    "phonetic": "/dɪˈsɪdʒuəs/",
+    "pos": "adj.",
+    "meaning": "落叶的/脱落的",
+    "example": "Deciduous trees lose their leaves in autumn.",
+    "exampleCn": "落叶树在秋天会掉叶子。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3501,
+    "word": "hare",
+    "phonetic": "/her/",
+    "pos": "n.",
+    "meaning": "野兔",
+    "example": "A hare ran quickly across the field.",
+    "exampleCn": "一只野兔快速跑过田野。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3502,
+    "word": "legume",
+    "phonetic": "/ˈleɡjuːm/",
+    "pos": "n.",
+    "meaning": "豆科植物/豆类",
+    "example": "Beans and peas are common legumes.",
+    "exampleCn": "豆子和豌豆是常见的豆类。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3503,
+    "word": "mutualism",
+    "phonetic": "/ˈmjuːtʃuəlɪzəm/",
+    "pos": "n.",
+    "meaning": "互利共生",
+    "example": "Bees and flowers are often used as an example of mutualism.",
+    "exampleCn": "蜜蜂和花常被用作互利共生的例子。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3504,
+    "word": "epoch",
+    "phonetic": "/ˈepək/",
+    "pos": "n.",
+    "meaning": "时代/时期/世",
+    "example": "The discovery marked a new epoch in science.",
+    "exampleCn": "这一发现标志着科学上的新时代。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3505,
+    "word": "mustard",
+    "phonetic": "/ˈmʌstərd/",
+    "pos": "n.",
+    "meaning": "芥末/芥菜",
+    "example": "He spread mustard on the sandwich.",
+    "exampleCn": "他把芥末抹在三明治上。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3506,
+    "word": "pomegranate",
+    "phonetic": "/ˈpɑːmɪɡrænɪt/",
+    "pos": "n.",
+    "meaning": "石榴",
+    "example": "Pomegranate juice is rich in flavor.",
+    "exampleCn": "石榴汁味道很浓郁。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3507,
+    "word": "aria",
+    "phonetic": "/ˈɑːriə/",
+    "pos": "n.",
+    "meaning": "咏叹调",
+    "example": "The soprano sang a beautiful aria.",
+    "exampleCn": "女高音唱了一首优美的咏叹调。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3508,
+    "word": "flotation",
+    "phonetic": "/floʊˈteɪʃən/",
+    "pos": "n.",
+    "meaning": "漂浮/浮选/上市发行",
+    "example": "The life jacket provides flotation in deep water.",
+    "exampleCn": "救生衣在深水中提供浮力。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3509,
+    "word": "scrubland",
+    "phonetic": "/ˈskrʌblænd/",
+    "pos": "n.",
+    "meaning": "灌木丛地带",
+    "example": "Many small animals live in the dry scrubland.",
+    "exampleCn": "许多小动物生活在干燥的灌木丛地带。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3510,
+    "word": "fresco",
+    "phonetic": "/ˈfreskoʊ/",
+    "pos": "n.",
+    "meaning": "湿壁画/壁画",
+    "example": "The church ceiling was covered with a famous fresco.",
+    "exampleCn": "教堂天花板上覆盖着一幅著名的湿壁画。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3511,
+    "word": "caput",
+    "phonetic": "/ˈkæpʌt/",
+    "pos": "n.",
+    "meaning": "头/头状结构",
+    "example": "The caput is the headlike part of the structure.",
+    "exampleCn": "caput 是该结构中像头一样的部分。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3512,
+    "word": "hemlock",
+    "phonetic": "/ˈhemlɑːk/",
+    "pos": "n.",
+    "meaning": "毒芹/铁杉",
+    "example": "Hemlock is a poisonous plant mentioned in ancient history.",
+    "exampleCn": "毒芹是一种在古代历史中被提到的有毒植物。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3513,
+    "word": "detritus",
+    "phonetic": "/dɪˈtraɪtəs/",
+    "pos": "n.",
+    "meaning": "碎屑/残骸/岩屑",
+    "example": "Leaves and other detritus covered the forest floor.",
+    "exampleCn": "树叶和其他碎屑覆盖了森林地面。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3514,
+    "word": "intertidal",
+    "phonetic": "/ˌɪntərˈtaɪdəl/",
+    "pos": "adj.",
+    "meaning": "潮间带的",
+    "example": "Crabs often live in intertidal zones.",
+    "exampleCn": "螃蟹常生活在潮间带。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3515,
+    "word": "stratify",
+    "phonetic": "/ˈstrætɪfaɪ/",
+    "pos": "v.",
+    "meaning": "分层/使成层",
+    "example": "Temperature differences can stratify the water in a lake.",
+    "exampleCn": "温度差异会使湖水分层。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3516,
+    "word": "shale",
+    "phonetic": "/ʃeɪl/",
+    "pos": "n.",
+    "meaning": "页岩",
+    "example": "Shale forms from layers of compressed mud.",
+    "exampleCn": "页岩由被压实的泥层形成。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3517,
+    "word": "feud",
+    "phonetic": "/fjuːd/",
+    "pos": "n./v.",
+    "meaning": "长期争执/不和/长期争斗",
+    "example": "The two families had a feud that lasted for years.",
+    "exampleCn": "这两个家庭之间有持续多年的不和。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3518,
+    "word": "chondrite",
+    "phonetic": "/ˈkɑːndraɪt/",
+    "pos": "n.",
+    "meaning": "球粒陨石",
+    "example": "A chondrite can contain clues about the early solar system.",
+    "exampleCn": "球粒陨石可能含有关于早期太阳系的线索。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3519,
+    "word": "fortification",
+    "phonetic": "/ˌfɔːrtɪfɪˈkeɪʃən/",
+    "pos": "n.",
+    "meaning": "防御工事/加固",
+    "example": "The ancient wall served as a fortification against invaders.",
+    "exampleCn": "这堵古墙作为抵御入侵者的防御工事。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3520,
+    "word": "fern",
+    "phonetic": "/fɜːrn/",
+    "pos": "n.",
+    "meaning": "蕨类植物",
+    "example": "A fern grows well in moist and shady places.",
+    "exampleCn": "蕨类植物在潮湿阴凉的地方生长良好。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3521,
+    "word": "despondent",
+    "phonetic": "/dɪˈspɑːndənt/",
+    "pos": "adj.",
+    "meaning": "沮丧的/失望的",
+    "example": "She felt despondent after hearing the bad news.",
+    "exampleCn": "听到坏消息后她感到很沮丧。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3522,
+    "word": "clamor",
+    "phonetic": "/ˈklæmər/",
+    "pos": "n./v.",
+    "meaning": "喧闹/叫嚷/大声要求",
+    "example": "The clamor of the crowd could be heard outside the stadium.",
+    "exampleCn": "体育场外可以听到人群的喧闹声。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3523,
+    "word": "cascade",
+    "phonetic": "/kæˈskeɪd/",
+    "pos": "n./v.",
+    "meaning": "小瀑布/倾泻/大量涌出",
+    "example": "Water cascaded down the rocks after the rain.",
+    "exampleCn": "雨后水从岩石上倾泻而下。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3524,
+    "word": "chromosome",
+    "phonetic": "/ˈkroʊməsoʊm/",
+    "pos": "n.",
+    "meaning": "染色体",
+    "example": "A chromosome carries genetic information.",
+    "exampleCn": "染色体携带遗传信息。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3525,
+    "word": "nebula",
+    "phonetic": "/ˈnebjələ/",
+    "pos": "n.",
+    "meaning": "星云",
+    "example": "A nebula may be a birthplace of new stars.",
+    "exampleCn": "星云可能是新恒星诞生的地方。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3526,
+    "word": "loam",
+    "phonetic": "/loʊm/",
+    "pos": "n.",
+    "meaning": "壤土",
+    "example": "Loam is good soil for growing many crops.",
+    "exampleCn": "壤土是适合种植许多作物的好土壤。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  },
+  {
+    "id": 3527,
+    "word": "precipitate",
+    "phonetic": "/prɪˈsɪpɪteɪt/",
+    "pos": "v./n./adj.",
+    "meaning": "使沉淀/促成/沉淀物/仓促的",
+    "example": "A chemical reaction caused a white precipitate to form.",
+    "exampleCn": "化学反应产生了白色沉淀物。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "4"
+  }
+]

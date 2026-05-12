@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-05-11T11:55:48.306Z",
+  "generatedAt": "2026-05-12T07:05:58.800Z",
   "source": "/data/vocabulary.json",
   "core": {
     "path": "/data/vocabulary/core.json",
     "count": 323
   },
   "toefl": {
-    "total": 3006,
+    "total": 3254,
     "levels": [
       {
         "key": "3",
@@ -147,7 +147,7 @@
       {
         "key": "5",
         "label": "Level 5",
-        "count": 924,
+        "count": 923,
         "lists": [
           {
             "key": "1",
@@ -164,7 +164,7 @@
           {
             "key": "3",
             "label": "List 3",
-            "count": 100,
+            "count": 99,
             "path": "/data/vocabulary/toefl/level-5/list-3.json"
           },
           {
@@ -211,6 +211,44 @@
           }
         ],
         "meta": "10 个 List"
+      },
+      {
+        "key": "6",
+        "label": "Level 6",
+        "count": 249,
+        "lists": [
+          {
+            "key": "1",
+            "label": "List 1",
+            "count": 50,
+            "path": "/data/vocabulary/toefl/level-6/list-1.json"
+          },
+          {
+            "key": "2",
+            "label": "List 2",
+            "count": 50,
+            "path": "/data/vocabulary/toefl/level-6/list-2.json"
+          },
+          {
+            "key": "3",
+            "label": "List 3",
+            "count": 49,
+            "path": "/data/vocabulary/toefl/level-6/list-3.json"
+          },
+          {
+            "key": "4",
+            "label": "List 4",
+            "count": 50,
+            "path": "/data/vocabulary/toefl/level-6/list-4.json"
+          },
+          {
+            "key": "5",
+            "label": "List 5",
+            "count": 50,
+            "path": "/data/vocabulary/toefl/level-6/list-5.json"
+          }
+        ],
+        "meta": "5 个 List"
       }
     ]
   }

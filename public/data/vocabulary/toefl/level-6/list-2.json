@@ -1,0 +1,752 @@
+[
+  {
+    "id": 3379,
+    "word": "brusquely",
+    "phonetic": "/ˈbrʌskli/",
+    "pos": "adv.",
+    "meaning": "粗鲁地/唐突地",
+    "example": "The manager answered brusquely and ended the meeting early.",
+    "exampleCn": "经理粗鲁地回答后提前结束了会议。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3380,
+    "word": "goof",
+    "phonetic": "/ɡuːf/",
+    "pos": "n./v.",
+    "meaning": "傻瓜/错误/犯傻/搞砸",
+    "example": "I made a small goof in the calculation but fixed it quickly.",
+    "exampleCn": "我在计算中犯了一个小错误，但很快改好了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3381,
+    "word": "gripe",
+    "phonetic": "/ɡraɪp/",
+    "pos": "v./n.",
+    "meaning": "抱怨/牢骚",
+    "example": "Students often gripe about homework, but practice improves their skills.",
+    "exampleCn": "学生们经常抱怨作业，但练习能提高他们的技能。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3382,
+    "word": "fissure",
+    "phonetic": "/ˈfɪʃər/",
+    "pos": "n./v.",
+    "meaning": "裂缝/使裂开",
+    "example": "A narrow fissure appeared in the dry ground.",
+    "exampleCn": "干燥的地面上出现了一条窄裂缝。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3383,
+    "word": "confer",
+    "phonetic": "/kənˈfɜːr/",
+    "pos": "v.",
+    "meaning": "商议/授予",
+    "example": "The scientists conferred before announcing their results.",
+    "exampleCn": "科学家们在公布结果前进行了商议。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3384,
+    "word": "mortality",
+    "phonetic": "/mɔːrˈtæləti/",
+    "pos": "n.",
+    "meaning": "死亡率/死亡性",
+    "example": "Better medical care reduced infant mortality in the region.",
+    "exampleCn": "更好的医疗护理降低了该地区的婴儿死亡率。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3385,
+    "word": "crevice",
+    "phonetic": "/ˈkrevɪs/",
+    "pos": "n.",
+    "meaning": "裂缝/缝隙",
+    "example": "A tiny plant grew from a crevice in the rock.",
+    "exampleCn": "一株小植物从岩石缝隙中长了出来。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3386,
+    "word": "crevasse",
+    "phonetic": "/krəˈvæs/",
+    "pos": "n.",
+    "meaning": "冰裂缝/深裂缝",
+    "example": "Climbers avoided the deep crevasse on the glacier.",
+    "exampleCn": "登山者避开了冰川上的深裂缝。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3387,
+    "word": "fossilize",
+    "phonetic": "/ˈfɑːsəlaɪz/",
+    "pos": "v.",
+    "meaning": "使成化石/变得僵化",
+    "example": "Bones can fossilize when they are buried under sediment.",
+    "exampleCn": "骨骼被沉积物掩埋后可能会变成化石。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3388,
+    "word": "query",
+    "phonetic": "/ˈkwɪri/",
+    "pos": "n./v.",
+    "meaning": "疑问/询问/质疑",
+    "example": "The researcher sent a query about the missing data.",
+    "exampleCn": "研究人员就缺失的数据发出了一次询问。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3389,
+    "word": "harp",
+    "phonetic": "/hɑːrp/",
+    "pos": "n./v.",
+    "meaning": "竖琴/反复谈论",
+    "example": "She learned to play the harp for the school concert.",
+    "exampleCn": "她为了学校音乐会学习弹竖琴。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3390,
+    "word": "concur",
+    "phonetic": "/kənˈkɜːr/",
+    "pos": "v.",
+    "meaning": "同意/同时发生",
+    "example": "Most experts concur that clean water is essential for health.",
+    "exampleCn": "大多数专家同意清洁饮水对健康很重要。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3391,
+    "word": "cuticle",
+    "phonetic": "/ˈkjuːtɪkəl/",
+    "pos": "n.",
+    "meaning": "角质层/表皮/指甲根部皮肤",
+    "example": "The insect has a tough cuticle that protects its body.",
+    "exampleCn": "这种昆虫有坚硬的角质层来保护身体。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3392,
+    "word": "contour",
+    "phonetic": "/ˈkɑːntʊr/",
+    "pos": "n./v.",
+    "meaning": "轮廓/等高线/勾画轮廓",
+    "example": "The map shows the contour of the mountain clearly.",
+    "exampleCn": "这张地图清楚地显示了山体的等高线。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3393,
+    "word": "commonality",
+    "phonetic": "/ˌkɑːməˈnæləti/",
+    "pos": "n.",
+    "meaning": "共同点/共性",
+    "example": "The two cultures share a commonality in their respect for elders.",
+    "exampleCn": "这两种文化在尊敬长者方面有共同点。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3394,
+    "word": "crystalline",
+    "phonetic": "/ˈkrɪstəlaɪn/",
+    "pos": "adj.",
+    "meaning": "结晶的/晶体状的/清澈的",
+    "example": "Snowflakes have a delicate crystalline structure.",
+    "exampleCn": "雪花有精细的晶体结构。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3395,
+    "word": "amniotic",
+    "phonetic": "/ˌæmniˈɑːtɪk/",
+    "pos": "adj.",
+    "meaning": "羊膜的/羊水的",
+    "example": "The amniotic fluid protects the developing baby.",
+    "exampleCn": "羊水保护正在发育的胎儿。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3396,
+    "word": "marshal",
+    "phonetic": "/ˈmɑːrʃəl/",
+    "pos": "n./v.",
+    "meaning": "元帅/执法官/整理/安排",
+    "example": "The teacher marshaled the facts before the debate.",
+    "exampleCn": "老师在辩论前整理了事实。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3397,
+    "word": "encapsulate",
+    "phonetic": "/ɪnˈkæpsjuleɪt/",
+    "pos": "v.",
+    "meaning": "概括/封装/包住",
+    "example": "The final paragraph should encapsulate the main argument.",
+    "exampleCn": "最后一段应该概括主要论点。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3398,
+    "word": "zinc",
+    "phonetic": "/zɪŋk/",
+    "pos": "n.",
+    "meaning": "锌",
+    "example": "Zinc is often used to protect steel from rust.",
+    "exampleCn": "锌常被用来保护钢铁不生锈。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3399,
+    "word": "estivate",
+    "phonetic": "/ˈestɪveɪt/",
+    "pos": "v.",
+    "meaning": "夏眠",
+    "example": "Some animals estivate during extremely hot and dry months.",
+    "exampleCn": "一些动物会在极热干燥的月份夏眠。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3400,
+    "word": "gull",
+    "phonetic": "/ɡʌl/",
+    "pos": "n./v.",
+    "meaning": "海鸥/欺骗",
+    "example": "A gull circled above the fishing boat.",
+    "exampleCn": "一只海鸥在渔船上方盘旋。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3401,
+    "word": "outcrop",
+    "phonetic": "/ˈaʊtkrɑːp/",
+    "pos": "n./v.",
+    "meaning": "露头/露出地表",
+    "example": "The geologist studied an outcrop of ancient rock.",
+    "exampleCn": "地质学家研究了一处古老岩石的露头。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3402,
+    "word": "grasshopper",
+    "phonetic": "/ˈɡræshɑːpər/",
+    "pos": "n.",
+    "meaning": "蚱蜢/蝗虫",
+    "example": "A grasshopper jumped from the tall grass.",
+    "exampleCn": "一只蚱蜢从高草丛中跳了出来。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3403,
+    "word": "gusher",
+    "phonetic": "/ˈɡʌʃər/",
+    "pos": "n.",
+    "meaning": "喷油井/喷涌物",
+    "example": "The old oil well became a gusher after drilling.",
+    "exampleCn": "这口老油井在钻探后成了喷油井。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3404,
+    "word": "adobe",
+    "phonetic": "/əˈdoʊbi/",
+    "pos": "n./adj.",
+    "meaning": "土坯/土坯制的",
+    "example": "Many houses in the desert region were built with adobe.",
+    "exampleCn": "沙漠地区的许多房屋是用土坯建造的。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3405,
+    "word": "sulfate",
+    "phonetic": "/ˈsʌlfeɪt/",
+    "pos": "n.",
+    "meaning": "硫酸盐",
+    "example": "The water sample contained a high level of sulfate.",
+    "exampleCn": "水样中含有较高含量的硫酸盐。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3406,
+    "word": "brook",
+    "phonetic": "/brʊk/",
+    "pos": "n./v.",
+    "meaning": "小溪/容忍",
+    "example": "A clear brook flowed through the valley.",
+    "exampleCn": "一条清澈的小溪流过山谷。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3407,
+    "word": "demean",
+    "phonetic": "/dɪˈmiːn/",
+    "pos": "v.",
+    "meaning": "贬低/降低身份",
+    "example": "It is wrong to demean others because of their background.",
+    "exampleCn": "因为他人的背景而贬低他们是不对的。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3408,
+    "word": "precipitation",
+    "phonetic": "/prɪˌsɪpɪˈteɪʃən/",
+    "pos": "n.",
+    "meaning": "降水/沉淀",
+    "example": "Heavy precipitation caused flooding in the low areas.",
+    "exampleCn": "强降水导致低洼地区发生洪水。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3409,
+    "word": "phosphorus",
+    "phonetic": "/ˈfɑːsfərəs/",
+    "pos": "n.",
+    "meaning": "磷",
+    "example": "Phosphorus is an important nutrient for plant growth.",
+    "exampleCn": "磷是植物生长的重要营养元素。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3410,
+    "word": "grapple",
+    "phonetic": "/ˈɡræpəl/",
+    "pos": "v./n.",
+    "meaning": "努力解决/搏斗/抓钩",
+    "example": "The city must grapple with the problem of air pollution.",
+    "exampleCn": "这座城市必须努力解决空气污染问题。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3411,
+    "word": "rift",
+    "phonetic": "/rɪft/",
+    "pos": "n./v.",
+    "meaning": "裂缝/分歧/使裂开",
+    "example": "A rift formed between the two groups after the argument.",
+    "exampleCn": "争论后两个群体之间产生了分歧。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3412,
+    "word": "diffuser",
+    "phonetic": "/dɪˈfjuːzər/",
+    "pos": "n.",
+    "meaning": "扩散器/散布者",
+    "example": "The diffuser spread the scent evenly through the room.",
+    "exampleCn": "扩香器把香味均匀地散布到房间里。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3413,
+    "word": "excruciate",
+    "phonetic": "/ɪkˈskruːʃieɪt/",
+    "pos": "v.",
+    "meaning": "使剧痛/折磨",
+    "example": "The injury seemed to excruciate the athlete during the race.",
+    "exampleCn": "比赛中这处伤似乎让运动员非常痛苦。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3414,
+    "word": "eardrum",
+    "phonetic": "/ˈɪrdrʌm/",
+    "pos": "n.",
+    "meaning": "耳膜/鼓膜",
+    "example": "Loud noises can damage the eardrum.",
+    "exampleCn": "巨大的噪音可能损伤耳膜。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3415,
+    "word": "prairie",
+    "phonetic": "/ˈpreri/",
+    "pos": "n.",
+    "meaning": "大草原",
+    "example": "Bison once roamed widely across the prairie.",
+    "exampleCn": "野牛曾经在大草原上广泛游荡。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3416,
+    "word": "Himalayas",
+    "phonetic": "/ˌhɪməˈleɪəz/",
+    "pos": "n.",
+    "meaning": "喜马拉雅山脉",
+    "example": "The Himalayas contain some of the world’s highest mountains.",
+    "exampleCn": "喜马拉雅山脉包含世界上一些最高的山峰。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3417,
+    "word": "arboreal",
+    "phonetic": "/ɑːrˈbɔːriəl/",
+    "pos": "adj.",
+    "meaning": "树栖的/树木的",
+    "example": "Many monkeys are arboreal and spend most of their lives in trees.",
+    "exampleCn": "许多猴子是树栖动物，大部分时间生活在树上。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3418,
+    "word": "neurotransmitter",
+    "phonetic": "/ˌnʊroʊtrænzˈmɪtər/",
+    "pos": "n.",
+    "meaning": "神经递质",
+    "example": "Dopamine is a neurotransmitter involved in motivation and reward.",
+    "exampleCn": "多巴胺是一种与动机和奖励有关的神经递质。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3419,
+    "word": "ephemeral",
+    "phonetic": "/ɪˈfemərəl/",
+    "pos": "adj.",
+    "meaning": "短暂的/瞬息的",
+    "example": "The beauty of a sunset is often ephemeral.",
+    "exampleCn": "日落的美常常是短暂的。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3420,
+    "word": "folktale",
+    "phonetic": "/ˈfoʊkteɪl/",
+    "pos": "n.",
+    "meaning": "民间故事",
+    "example": "The folktale teaches a lesson about honesty.",
+    "exampleCn": "这个民间故事讲述了关于诚实的道理。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3421,
+    "word": "sludge",
+    "phonetic": "/slʌdʒ/",
+    "pos": "n.",
+    "meaning": "淤泥/污泥",
+    "example": "Thick sludge collected at the bottom of the tank.",
+    "exampleCn": "厚厚的污泥积在水箱底部。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3422,
+    "word": "hiccup",
+    "phonetic": "/ˈhɪkʌp/",
+    "pos": "n./v.",
+    "meaning": "打嗝/小问题/打嗝",
+    "example": "A small hiccup delayed the project for one day.",
+    "exampleCn": "一个小问题使项目推迟了一天。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3423,
+    "word": "entrench",
+    "phonetic": "/ɪnˈtrentʃ/",
+    "pos": "v.",
+    "meaning": "使根深蒂固/确立/挖壕沟防守",
+    "example": "Old habits can entrench themselves if people never question them.",
+    "exampleCn": "如果人们从不质疑，旧习惯就会变得根深蒂固。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3424,
+    "word": "figurine",
+    "phonetic": "/ˌfɪɡjəˈriːn/",
+    "pos": "n.",
+    "meaning": "小雕像/小塑像",
+    "example": "She placed a clay figurine on the shelf.",
+    "exampleCn": "她把一个陶土小雕像放在架子上。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3425,
+    "word": "constituency",
+    "phonetic": "/kənˈstɪtʃuənsi/",
+    "pos": "n.",
+    "meaning": "选区/支持者群体",
+    "example": "The candidate visited every town in her constituency.",
+    "exampleCn": "这位候选人走访了她选区的每个城镇。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3426,
+    "word": "conifer",
+    "phonetic": "/ˈkɑːnɪfər/",
+    "pos": "n.",
+    "meaning": "针叶树",
+    "example": "A pine tree is a common type of conifer.",
+    "exampleCn": "松树是一种常见的针叶树。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3427,
+    "word": "acorn",
+    "phonetic": "/ˈeɪkɔːrn/",
+    "pos": "n.",
+    "meaning": "橡子",
+    "example": "A squirrel buried an acorn under the leaves.",
+    "exampleCn": "一只松鼠把橡子埋在树叶下面。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3428,
+    "word": "cheep",
+    "phonetic": "/tʃiːp/",
+    "pos": "v./n.",
+    "meaning": "吱吱叫/鸟叫声",
+    "example": "The chicks began to cheep when their mother returned.",
+    "exampleCn": "小鸡在母鸡回来时开始吱吱叫。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  }
+]

@@ -1,0 +1,752 @@
+[
+  {
+    "id": 2678,
+    "word": "phenomenon",
+    "phonetic": "/fəˈnɑːmənən/",
+    "pos": "n.",
+    "meaning": "现象",
+    "example": "Migration is a natural phenomenon observed in many species.",
+    "exampleCn": "迁徙是在许多物种中观察到的自然现象。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3330,
+    "word": "curator",
+    "phonetic": "/kjʊˈreɪtər/",
+    "pos": "n.",
+    "meaning": "馆长/策展人",
+    "example": "The curator organized a new exhibition of ancient pottery.",
+    "exampleCn": "馆长组织了一场新的古代陶器展览。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3331,
+    "word": "congenital",
+    "phonetic": "/kənˈdʒenɪtəl/",
+    "pos": "adj.",
+    "meaning": "先天的/天生的",
+    "example": "The doctor explained that the condition was congenital.",
+    "exampleCn": "医生解释说这种状况是先天的。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3332,
+    "word": "guild",
+    "phonetic": "/ɡɪld/",
+    "pos": "n.",
+    "meaning": "行会/协会/同业公会",
+    "example": "Medieval craftsmen often joined a guild to protect their trade.",
+    "exampleCn": "中世纪的工匠常常加入行会来保护自己的行业。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3333,
+    "word": "gazelle",
+    "phonetic": "/ɡəˈzel/",
+    "pos": "n.",
+    "meaning": "瞪羚",
+    "example": "A gazelle can run quickly across the open grassland.",
+    "exampleCn": "瞪羚能在开阔的草原上快速奔跑。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3334,
+    "word": "elongate",
+    "phonetic": "/ɪˈlɔːŋɡeɪt/",
+    "pos": "v./adj.",
+    "meaning": "拉长/延长/细长的",
+    "example": "The artist chose to elongate the figure to create a graceful effect.",
+    "exampleCn": "艺术家选择拉长人物形体，以产生优雅的效果。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3335,
+    "word": "epitome",
+    "phonetic": "/ɪˈpɪtəmi/",
+    "pos": "n.",
+    "meaning": "典型/缩影/完美代表",
+    "example": "Her careful research is the epitome of academic discipline.",
+    "exampleCn": "她严谨的研究是学术自律的典型。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3336,
+    "word": "herder",
+    "phonetic": "/ˈhɜːrdər/",
+    "pos": "n.",
+    "meaning": "牧民/放牧者",
+    "example": "The herder moved the sheep toward a safer valley.",
+    "exampleCn": "牧民把羊群赶向一个更安全的山谷。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3337,
+    "word": "edifice",
+    "phonetic": "/ˈedɪfɪs/",
+    "pos": "n.",
+    "meaning": "大建筑物/宏伟建筑",
+    "example": "The stone edifice stood at the center of the old city.",
+    "exampleCn": "这座石头建筑矗立在老城中心。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3338,
+    "word": "niche",
+    "phonetic": "/nɪtʃ/",
+    "pos": "n.",
+    "meaning": "合适的位置/生态位/小众市场",
+    "example": "The species occupies a narrow ecological niche in the forest.",
+    "exampleCn": "这个物种在森林中占据一个很窄的生态位。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3339,
+    "word": "hem",
+    "phonetic": "/hem/",
+    "pos": "n./v.",
+    "meaning": "衣服下摆/边缘/给……缝边/包围",
+    "example": "She repaired the hem of her skirt before the ceremony.",
+    "exampleCn": "她在典礼前修好了裙子的下摆。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3340,
+    "word": "oscillate",
+    "phonetic": "/ˈɑːsəleɪt/",
+    "pos": "v.",
+    "meaning": "振荡/摆动/波动",
+    "example": "The needle began to oscillate as the machine started.",
+    "exampleCn": "机器启动时，指针开始摆动。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3341,
+    "word": "blockage",
+    "phonetic": "/ˈblɑːkɪdʒ/",
+    "pos": "n.",
+    "meaning": "堵塞/阻塞物",
+    "example": "A blockage in the pipe stopped the water from flowing.",
+    "exampleCn": "管道中的堵塞物阻止了水流动。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3342,
+    "word": "bison",
+    "phonetic": "/ˈbaɪsən/",
+    "pos": "n.",
+    "meaning": "野牛/美洲野牛",
+    "example": "Large herds of bison once roamed the plains.",
+    "exampleCn": "大群野牛曾经在平原上漫游。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3343,
+    "word": "mercantile",
+    "phonetic": "/ˈmɜːrkəntaɪl/",
+    "pos": "adj.",
+    "meaning": "商业的/贸易的/商人的",
+    "example": "The city developed a strong mercantile economy near the port.",
+    "exampleCn": "这座城市在港口附近发展出强大的商业经济。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3344,
+    "word": "clump",
+    "phonetic": "/klʌmp/",
+    "pos": "n./v.",
+    "meaning": "丛/块/聚集/沉重地走",
+    "example": "A clump of trees provided shade for the animals.",
+    "exampleCn": "一丛树为动物提供了阴凉。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3345,
+    "word": "viscera",
+    "phonetic": "/ˈvɪsərə/",
+    "pos": "n.",
+    "meaning": "内脏",
+    "example": "The biology lesson focused on the structure of the viscera.",
+    "exampleCn": "这节生物课重点讲解内脏的结构。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3346,
+    "word": "piston",
+    "phonetic": "/ˈpɪstən/",
+    "pos": "n.",
+    "meaning": "活塞",
+    "example": "The piston moves up and down inside the engine cylinder.",
+    "exampleCn": "活塞在发动机汽缸内上下运动。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3347,
+    "word": "incongruous",
+    "phonetic": "/ɪnˈkɑːŋɡruəs/",
+    "pos": "adj.",
+    "meaning": "不协调的/不合适的",
+    "example": "The modern glass tower looked incongruous among the old houses.",
+    "exampleCn": "这座现代玻璃塔在老房子之间显得很不协调。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3348,
+    "word": "hieroglyph",
+    "phonetic": "/ˈhaɪərəɡlɪf/",
+    "pos": "n.",
+    "meaning": "象形文字/象形符号",
+    "example": "The archaeologist copied a hieroglyph from the temple wall.",
+    "exampleCn": "考古学家从神庙墙上抄下一个象形文字。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3349,
+    "word": "ravage",
+    "phonetic": "/ˈrævɪdʒ/",
+    "pos": "v./n.",
+    "meaning": "严重破坏/毁坏/破坏造成的损害",
+    "example": "The storm continued to ravage the coastal villages.",
+    "exampleCn": "风暴继续严重破坏沿海村庄。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3350,
+    "word": "gorilla",
+    "phonetic": "/ɡəˈrɪlə/",
+    "pos": "n.",
+    "meaning": "大猩猩",
+    "example": "The gorilla used leaves to build a nest for the night.",
+    "exampleCn": "大猩猩用树叶搭了一个过夜的窝。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3351,
+    "word": "caravan",
+    "phonetic": "/ˈkærəvæn/",
+    "pos": "n.",
+    "meaning": "商队/旅行队/房车",
+    "example": "The caravan crossed the desert with supplies and camels.",
+    "exampleCn": "商队带着物资和骆驼穿越沙漠。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3352,
+    "word": "presage",
+    "phonetic": "/ˈpresɪdʒ/",
+    "pos": "v./n.",
+    "meaning": "预示/预兆",
+    "example": "Dark clouds may presage a heavy storm.",
+    "exampleCn": "乌云可能预示着一场大风暴。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3353,
+    "word": "choreographer",
+    "phonetic": "/ˌkɔːriˈɑːɡrəfər/",
+    "pos": "n.",
+    "meaning": "舞蹈编排者/编舞家",
+    "example": "The choreographer designed every movement in the performance.",
+    "exampleCn": "编舞家设计了演出中的每一个动作。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3354,
+    "word": "caravel",
+    "phonetic": "/ˈkærəvel/",
+    "pos": "n.",
+    "meaning": "轻快帆船/卡拉维尔帆船",
+    "example": "Explorers used the caravel for long ocean voyages.",
+    "exampleCn": "探险者使用卡拉维尔帆船进行长途海上航行。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3355,
+    "word": "conservatism",
+    "phonetic": "/kənˈsɜːrvətɪzəm/",
+    "pos": "n.",
+    "meaning": "保守主义/保守态度",
+    "example": "Political conservatism often emphasizes tradition and stability.",
+    "exampleCn": "政治保守主义通常强调传统和稳定。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3356,
+    "word": "interlock",
+    "phonetic": "/ˌɪntərˈlɑːk/",
+    "pos": "v./n.",
+    "meaning": "互锁/连锁/扣紧",
+    "example": "The pieces interlock to form a strong structure.",
+    "exampleCn": "这些部件相互扣合，形成坚固的结构。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3357,
+    "word": "nickel",
+    "phonetic": "/ˈnɪkəl/",
+    "pos": "n.",
+    "meaning": "镍/五美分硬币",
+    "example": "Nickel is often used in alloys to make metal stronger.",
+    "exampleCn": "镍常用于合金中，使金属更坚固。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3358,
+    "word": "guilder",
+    "phonetic": "/ˈɡɪldər/",
+    "pos": "n.",
+    "meaning": "荷兰盾/旧时货币单位",
+    "example": "The price was recorded in guilders in the old account book.",
+    "exampleCn": "价格在旧账本中以荷兰盾记录。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3359,
+    "word": "buzzer",
+    "phonetic": "/ˈbʌzər/",
+    "pos": "n.",
+    "meaning": "蜂鸣器/门铃/信号器",
+    "example": "The buzzer sounded when the game ended.",
+    "exampleCn": "比赛结束时蜂鸣器响了。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3360,
+    "word": "faunal",
+    "phonetic": "/ˈfɔːnəl/",
+    "pos": "adj.",
+    "meaning": "动物群的",
+    "example": "Scientists studied the faunal remains found in the cave.",
+    "exampleCn": "科学家研究了在洞穴中发现的动物群遗骸。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3361,
+    "word": "necrosis",
+    "phonetic": "/neˈkroʊsɪs/",
+    "pos": "n.",
+    "meaning": "坏死/组织死亡",
+    "example": "Severe infection can lead to tissue necrosis.",
+    "exampleCn": "严重感染可能导致组织坏死。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3362,
+    "word": "refractory",
+    "phonetic": "/rɪˈfræktəri/",
+    "pos": "adj.",
+    "meaning": "难治的/顽固的/耐火的",
+    "example": "The disease was refractory to standard treatment.",
+    "exampleCn": "这种疾病对标准治疗没有反应。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3363,
+    "word": "semisubsistence",
+    "phonetic": "/ˌsemi səbˈsɪstəns/",
+    "pos": "adj./n.",
+    "meaning": "半自给的/半自给生活方式",
+    "example": "The village relied on semisubsistence farming and small trade.",
+    "exampleCn": "这个村庄依靠半自给农业和小规模贸易生活。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3364,
+    "word": "empress",
+    "phonetic": "/ˈemprəs/",
+    "pos": "n.",
+    "meaning": "女皇/皇后",
+    "example": "The empress ruled the empire during a period of reform.",
+    "exampleCn": "女皇在改革时期统治这个帝国。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3365,
+    "word": "flange",
+    "phonetic": "/flændʒ/",
+    "pos": "n.",
+    "meaning": "凸缘/法兰",
+    "example": "The mechanic tightened the flange to connect the pipes securely.",
+    "exampleCn": "机械师拧紧法兰，以牢固连接管道。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3366,
+    "word": "pastoralism",
+    "phonetic": "/ˈpæstərəlɪzəm/",
+    "pos": "n.",
+    "meaning": "畜牧业/游牧畜牧生活",
+    "example": "Pastoralism is common in dry regions where farming is difficult.",
+    "exampleCn": "在农业困难的干旱地区，畜牧业很常见。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3367,
+    "word": "aborigine",
+    "phonetic": "/ˌæbəˈrɪdʒəni/",
+    "pos": "n.",
+    "meaning": "土著居民/原住民",
+    "example": "The museum displayed tools made by an aborigine community.",
+    "exampleCn": "博物馆展出了一个原住民群体制作的工具。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3368,
+    "word": "manganese",
+    "phonetic": "/ˈmæŋɡəniːz/",
+    "pos": "n.",
+    "meaning": "锰",
+    "example": "Manganese is an important element in steel production.",
+    "exampleCn": "锰是钢铁生产中的重要元素。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3369,
+    "word": "canopy",
+    "phonetic": "/ˈkænəpi/",
+    "pos": "n.",
+    "meaning": "天篷/树冠层",
+    "example": "Many birds live high in the forest canopy.",
+    "exampleCn": "许多鸟类生活在森林高处的树冠层。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3370,
+    "word": "gaseous",
+    "phonetic": "/ˈɡæsiəs/",
+    "pos": "adj.",
+    "meaning": "气体的/气态的",
+    "example": "Water vapor is the gaseous form of water.",
+    "exampleCn": "水蒸气是水的气态形式。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3371,
+    "word": "nectar",
+    "phonetic": "/ˈnektər/",
+    "pos": "n.",
+    "meaning": "花蜜/甘露",
+    "example": "Bees collect nectar from flowers to make honey.",
+    "exampleCn": "蜜蜂从花中采集花蜜来酿蜜。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3372,
+    "word": "brackish",
+    "phonetic": "/ˈbrækɪʃ/",
+    "pos": "adj.",
+    "meaning": "微咸的/半咸水的",
+    "example": "Some fish can survive in brackish water near river mouths.",
+    "exampleCn": "有些鱼能在河口附近的半咸水中生存。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3373,
+    "word": "chloride",
+    "phonetic": "/ˈklɔːraɪd/",
+    "pos": "n.",
+    "meaning": "氯化物",
+    "example": "Sodium chloride is commonly known as table salt.",
+    "exampleCn": "氯化钠通常被称为食盐。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3374,
+    "word": "bombard",
+    "phonetic": "/bɑːmˈbɑːrd/",
+    "pos": "v.",
+    "meaning": "轰炸/连续攻击/大量提问或提供信息",
+    "example": "Reporters began to bombard the scientist with questions.",
+    "exampleCn": "记者开始连续向科学家提问。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3375,
+    "word": "equilibrium",
+    "phonetic": "/ˌiːkwɪˈlɪbriəm/",
+    "pos": "n.",
+    "meaning": "平衡/均衡",
+    "example": "The ecosystem returned to equilibrium after the population stabilized.",
+    "exampleCn": "种群稳定后，生态系统恢复了平衡。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3376,
+    "word": "beau",
+    "phonetic": "/boʊ/",
+    "pos": "n.",
+    "meaning": "男友/追求者/花花公子",
+    "example": "Her beau brought flowers before the dance.",
+    "exampleCn": "她的男友在舞会前送来了花。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3377,
+    "word": "cobalt",
+    "phonetic": "/ˈkoʊbɔːlt/",
+    "pos": "n.",
+    "meaning": "钴/深蓝色",
+    "example": "Cobalt is used in batteries and blue pigments.",
+    "exampleCn": "钴用于电池和蓝色颜料。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  },
+  {
+    "id": 3378,
+    "word": "forager",
+    "phonetic": "/ˈfɔːrɪdʒər/",
+    "pos": "n.",
+    "meaning": "觅食者/采集者",
+    "example": "A forager searches the forest for edible plants.",
+    "exampleCn": "觅食者在森林中寻找可食用植物。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "1"
+  }
+]
