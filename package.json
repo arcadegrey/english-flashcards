@@ -13,6 +13,8 @@
     "words:import": "node scripts/import-global-vocabulary.mjs",
     "words:split": "node scripts/split-vocabulary.mjs",
     "readings:import": "node scripts/import-global-reading.mjs",
+    "tts:kokoro": "PYTORCH_ENABLE_MPS_FALLBACK=1 .venv-kokoro/bin/python -m uvicorn kokoro_tts_server:app --app-dir scripts --host 127.0.0.1 --port 8880",
+    "tts:generate-words": "PYTORCH_ENABLE_MPS_FALLBACK=1 .venv-kokoro/bin/python scripts/generate_kokoro_word_audio.py",
     "d1:migrate": "node scripts/apply-d1-schema.mjs"
   },
   "dependencies": {

@@ -1,9 +1,14 @@
 import { storage } from './storage';
 
 export const DEFAULT_KOKORO_TTS_ENDPOINT =
-  'https://kokoro-api-production-9ea1.up.railway.app/v1/audio/speech';
+  'http://127.0.0.1:8880/v1/audio/speech';
 export const DEFAULT_SPEECH_RATE = 1;
 export const SLOW_SPEECH_RATE = 0.5;
+export const KOKORO_WORD_AUDIO_VOICES = [
+  { id: 'af_bella', label: 'Bella · 美音女声' },
+  { id: 'am_michael', label: 'Michael · 美音男声' },
+  { id: 'bf_emma', label: 'Emma · 英音女声' },
+];
 
 const browserTtsAvailable =
   typeof window !== 'undefined' && typeof window.speechSynthesis !== 'undefined';
@@ -101,6 +106,11 @@ const getKokoroEndpoint = () => {
   return DEFAULT_KOKORO_TTS_ENDPOINT;
 };
 
+const getWordAudioBaseUrl = () => {
+  const fromEnv = (import.meta.env.VITE_WORD_AUDIO_BASE_URL || '').trim();
+  return fromEnv || '/audio/words';
+};
+
 const base64ToBlob = (base64, mimeType = 'audio/mpeg') => {
   const binary = atob(base64);
   const len = binary.length;
@@ -158,6 +168,44 @@ const playAudioBlob = async (blob) => {
     };
     audio.play().catch(() => resolve());
   });
+};
+
+const playAudioSource = async (src) => {
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+  }
+  if (currentAudioUrl) {
+    URL.revokeObjectURL(currentAudioUrl);
+    currentAudioUrl = '';
+  }
+
+  const audio = new Audio();
+  currentAudio = audio;
+  audio.src = src;
+
+  return new Promise((resolve, reject) => {
+    audio.onended = () => resolve();
+    audio.onerror = () => reject(new Error(`音频文件不可播放: ${src}`));
+    audio.play().catch(reject);
+  });
+};
+
+const getGeneratedKokoroVoiceIds = () => new Set(KOKORO_WORD_AUDIO_VOICES.map((voice) => voice.id));
+
+const speakWithStaticKokoroWordAudio = async (word) => {
+  const wordId = word?.id == null ? '' : String(word.id).trim();
+  if (!wordId) {
+    throw new Error('缺少单词音频 id');
+  }
+
+  const voice = storage.getKokoroVoice();
+  if (!getGeneratedKokoroVoiceIds().has(voice)) {
+    throw new Error(`未预生成音色: ${voice}`);
+  }
+
+  const baseUrl = getWordAudioBaseUrl().replace(/\/$/, '');
+  await playAudioSource(`${baseUrl}/${encodeURIComponent(voice)}/${encodeURIComponent(wordId)}.mp3`);
 };
 
 const speakWithKokoro = async (text, options = {}) => {
@@ -318,6 +366,30 @@ export const speak = async (text, options = {}) => {
   await speakWithBrowser(safeText, mergedOptions);
 };
 
+export const speakWord = async (word, options = {}) => {
+  const text = typeof word === 'string' ? word : word?.word;
+  const safeText = (text || '').trim();
+  if (!safeText) return;
+
+  stopSpeak();
+  const baseRate = Number.isFinite(Number(options.rate)) ? Number(options.rate) : 1;
+  const mergedOptions = {
+    ...options,
+    rate: clamp(baseRate * getSpeechRateMultiplier(), 0.5, 1.5),
+  };
+
+  if (ttsProvider === 'kokoro' && typeof word === 'object' && word?.id != null) {
+    try {
+      await speakWithStaticKokoroWordAudio(word);
+      return;
+    } catch (error) {
+      console.warn('[TTS] Static Kokoro word audio failed, fallback to generated speech:', error);
+    }
+  }
+
+  await speak(safeText, mergedOptions);
+};
+
 export const stopSpeak = () => {
   if (browserTtsAvailable) {
     const speech = getSpeechSynthesis();
@@ -341,6 +413,7 @@ if (browserTtsAvailable) {
 
 export default {
   speak,
+  speakWord,
   stopSpeak,
   getAvailableVoices,
   setVoice,

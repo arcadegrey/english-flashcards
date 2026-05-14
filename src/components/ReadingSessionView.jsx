@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import QuickMenu from './QuickMenu';
-import { speak } from '../utils/speech';
+import { speak, speakWord } from '../utils/speech';
 import { isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from '../utils/readingText';
 
 const normalizeQuestionOption = (option, index) => {
@@ -116,7 +116,7 @@ function ReadingSessionView({
 
   const handleSpeakActiveWord = () => {
     if (!activeWord?.word) return;
-    speak(activeWord.word, { rate: 1 });
+    speakWord(activeWord, { rate: 1 });
   };
 
   const handleMarkUnknown = () => {

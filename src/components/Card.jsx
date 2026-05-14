@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { speak } from '../utils/speech';
+import { speak, speakWord } from '../utils/speech';
 
 function Card({ word, showHint = false }) {
   const hints = useMemo(() => {
@@ -51,7 +51,7 @@ function Card({ word, showHint = false }) {
             type="button"
             className="learn-refresh-inline-audio"
             aria-label="播放发音"
-            onClick={() => speak(word.word, { rate: 1 })}
+            onClick={() => speakWord(word, { rate: 1 })}
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M3 9v6h4l5 4V5L7 9H3z" />

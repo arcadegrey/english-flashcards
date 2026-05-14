@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { speak } from '../utils/speech';
+import { speakWord } from '../utils/speech';
 import { playSuccessChime } from '../utils/feedback';
 import CorrectAnswerCelebration from './CorrectAnswerCelebration';
 
@@ -140,7 +140,7 @@ function Quiz({
             <button
               type="button"
               className="learn-refresh-inline-audio"
-              onClick={() => speak(currentQuestion.word, { rate: 1 })}
+              onClick={() => speakWord(currentQuestion, { rate: 1 })}
               aria-label="播放发音"
             >
               <svg viewBox="0 0 24 24" aria-hidden="true">

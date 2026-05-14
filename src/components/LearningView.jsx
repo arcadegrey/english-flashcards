@@ -6,7 +6,7 @@ import SpellingTest from './SpellingTest';
 import MatchingTest from './MatchingTest';
 import QuickMenu from './QuickMenu';
 import { QUICK_MENU_MODE_OPTIONS } from './quickMenuOptions';
-import { speak } from '../utils/speech';
+import { speakWord } from '../utils/speech';
 import '../styles/word-learning-refresh.css';
 
 const MODE_SUBTITLE = {
@@ -83,7 +83,7 @@ function LearningView({
       return;
     }
 
-    speak(currentWord.word, { rate: 1 });
+    speakWord(currentWord, { rate: 1 });
   };
 
   const handleSyncAccount = async () => {

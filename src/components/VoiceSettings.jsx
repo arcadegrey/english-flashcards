@@ -6,6 +6,7 @@ import {
   setTtsProvider as setGlobalProvider,
   getTtsProvider,
   DEFAULT_KOKORO_TTS_ENDPOINT,
+  KOKORO_WORD_AUDIO_VOICES,
 } from '../utils/speech';
 import { storage } from '../utils/storage';
 
@@ -226,7 +227,7 @@ function VoiceSettings({ onClose }) {
               <div className="rounded-2xl border border-indigo-200 bg-indigo-50 p-4">
                 <p className="text-indigo-700 text-sm leading-relaxed">
                   接入方式：请把本地或云端 Kokoro API 地址填在下面（未填写时会尝试使用全站默认地址），例如
-                  `http://127.0.0.1:8880/v1/audio/speech` 或 `https://your-app.up.railway.app/v1/audio/speech`。
+                  http://127.0.0.1:8880/v1/audio/speech 或 https://your-app.up.railway.app/v1/audio/speech。
                 </p>
                 {GLOBAL_KOKORO_ENDPOINT && (
                   <p className="mt-2 text-xs text-indigo-700/90 break-all">
@@ -253,6 +254,7 @@ function VoiceSettings({ onClose }) {
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">音色 ID</label>
                   <input
+                    list="kokoro-voice-options"
                     value={kokoroVoice}
                     onChange={(e) => {
                       const value = e.target.value;
@@ -262,6 +264,16 @@ function VoiceSettings({ onClose }) {
                     placeholder="af_bella"
                     className="w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-300"
                   />
+                  <datalist id="kokoro-voice-options">
+                    {KOKORO_WORD_AUDIO_VOICES.map((voice) => (
+                      <option key={voice.id} value={voice.id}>
+                        {voice.label}
+                      </option>
+                    ))}
+                  </datalist>
+                  <p className="mt-2 text-xs text-gray-500">
+                    已预生成：{KOKORO_WORD_AUDIO_VOICES.map((voice) => voice.id).join(' / ')}
+                  </p>
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">

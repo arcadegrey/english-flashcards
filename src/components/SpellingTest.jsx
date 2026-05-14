@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { speak } from '../utils/speech';
+import { speakWord } from '../utils/speech';
 import { playSuccessChime } from '../utils/feedback';
 import CorrectAnswerCelebration from './CorrectAnswerCelebration';
 
@@ -58,7 +58,7 @@ function SpellingTest({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAn
 
   const handleSpeak = () => {
     if (currentWord) {
-      speak(currentWord.word, { rate: 1 });
+      speakWord(currentWord, { rate: 1 });
     }
   };
 

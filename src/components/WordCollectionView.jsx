@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import Card from './Card';
 import QuickMenu from './QuickMenu';
-import { speak } from '../utils/speech';
+import { speakWord } from '../utils/speech';
 
 function WordCollectionView({
   title,
@@ -72,7 +72,7 @@ function WordCollectionView({
 
   const handleSpeakCurrentWord = () => {
     if (!currentWord?.word) return;
-    speak(currentWord.word, { rate: 1 });
+    speakWord(currentWord, { rate: 1 });
   };
 
   const handleSyncAccount = async () => {
