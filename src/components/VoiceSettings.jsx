@@ -1,19 +1,14 @@
 import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import {
-  speak,
+  speakStaticKokoroWordAudio,
   setVoice as setGlobalVoice,
   getAvailableVoices,
   setTtsProvider as setGlobalProvider,
   getTtsProvider,
-  DEFAULT_KOKORO_TTS_ENDPOINT,
   KOKORO_WORD_AUDIO_VOICES,
 } from '../utils/speech';
 import { storage } from '../utils/storage';
-
-const GLOBAL_KOKORO_ENDPOINT = (
-  import.meta.env.VITE_KOKORO_TTS_URL || DEFAULT_KOKORO_TTS_ENDPOINT
-).trim();
 
 const KOKORO_VOICE_DETAILS = {
   af_bella: '美音女声，清晰自然，适合默认单词发音',
@@ -26,9 +21,7 @@ function VoiceSettings({ onClose }) {
   const [selectedVoice, setSelectedVoiceState] = useState('');
   const [isPlaying, setIsPlaying] = useState(null);
   const [ttsProvider, setTtsProviderState] = useState(getTtsProvider());
-  const [kokoroEndpoint, setKokoroEndpointState] = useState(
-    storage.getKokoroEndpoint() || GLOBAL_KOKORO_ENDPOINT
-  );
+  const [kokoroEndpoint, setKokoroEndpointState] = useState(storage.getKokoroEndpoint());
   const [kokoroVoice, setKokoroVoiceState] = useState(storage.getKokoroVoice());
   const [kokoroSpeed, setKokoroSpeedState] = useState(storage.getKokoroSpeed());
   const [kokoroHint, setKokoroHint] = useState('');
@@ -102,20 +95,14 @@ function VoiceSettings({ onClose }) {
   };
 
   const handleKokoroPreview = async () => {
-    const resolvedEndpoint = kokoroEndpoint.trim() || GLOBAL_KOKORO_ENDPOINT;
-    if (!resolvedEndpoint) {
-      setKokoroHint('请先填写 Kokoro 接口地址');
-      return;
-    }
-
     setIsPlaying('kokoro');
     setKokoroHint('');
     handleProviderChange('kokoro');
 
     try {
-      await speak('Hello, this is a Kokoro voice preview.', { rate: 1 });
+      await speakStaticKokoroWordAudio({ id: 1, word: 'abandon' });
     } catch (error) {
-      setKokoroHint(`Kokoro 试听失败：${error?.message || '请检查接口地址'}`);
+      setKokoroHint(`Kokoro 试听失败：${error?.message || '静态音频暂不可用'}`);
     } finally {
       setIsPlaying(null);
     }
@@ -214,17 +201,6 @@ function VoiceSettings({ onClose }) {
             </div>
           ) : (
             <div className="voice-settings-section">
-              <div className="voice-settings-info">
-                <p>
-                  单词发音会优先使用已上传到 R2 的静态 MP3；长句或静态文件缺失时，再使用下面的 Kokoro 接口。
-                </p>
-                {GLOBAL_KOKORO_ENDPOINT && (
-                  <p className="voice-settings-global-endpoint">
-                    当前全站默认地址：{GLOBAL_KOKORO_ENDPOINT}
-                  </p>
-                )}
-              </div>
-
               <label className="voice-settings-field">
                 <span>Kokoro 接口地址</span>
                 <input

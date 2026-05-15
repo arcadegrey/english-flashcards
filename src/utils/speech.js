@@ -208,6 +208,11 @@ const speakWithStaticKokoroWordAudio = async (word) => {
   await playAudioSource(`${baseUrl}/${encodeURIComponent(voice)}/${encodeURIComponent(wordId)}.mp3`);
 };
 
+export const speakStaticKokoroWordAudio = async (word) => {
+  stopSpeak();
+  await speakWithStaticKokoroWordAudio(word);
+};
+
 const speakWithKokoro = async (text, options = {}) => {
   const endpoint = getKokoroEndpoint();
   if (!endpoint) {
@@ -414,6 +419,7 @@ if (browserTtsAvailable) {
 export default {
   speak,
   speakWord,
+  speakStaticKokoroWordAudio,
   stopSpeak,
   getAvailableVoices,
   setVoice,

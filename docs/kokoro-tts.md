@@ -254,6 +254,8 @@ npm run tts:generate-examples -- --voices am_michael,bf_emma
 npm run audio:upload-r2 -- --bucket english-flashcards-audio --source public/audio/examples --prefix audio/examples
 ```
 
+大量小文件建议保留默认小批次上传；脚本默认 `--batch-size 100 --concurrency 3 --retries 3`，如果网络不稳可以继续降低并发。
+
 上传后公开 URL 形如：
 
 ```text

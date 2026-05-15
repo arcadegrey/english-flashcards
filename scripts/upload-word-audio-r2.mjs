@@ -4,7 +4,10 @@ import path from 'node:path';
 
 const DEFAULT_SOURCE_DIR = 'public/audio/words';
 const DEFAULT_PREFIX = 'audio/words';
-const DEFAULT_CONCURRENCY = 6;
+const DEFAULT_CONCURRENCY = 3;
+const DEFAULT_BATCH_SIZE = 100;
+const DEFAULT_RETRIES = 3;
+const DEFAULT_BATCH_DELAY_MS = 1500;
 
 function parseArgs(argv) {
   const args = {
@@ -14,6 +17,9 @@ function parseArgs(argv) {
     dryRun: false,
     limit: 0,
     start: 0,
+    batchSize: DEFAULT_BATCH_SIZE,
+    retries: DEFAULT_RETRIES,
+    batchDelayMs: DEFAULT_BATCH_DELAY_MS,
     bucket: process.env.R2_AUDIO_BUCKET || '',
     wrangler: process.env.WRANGLER_CMD || 'npx wrangler@4',
   };
@@ -32,6 +38,9 @@ function parseArgs(argv) {
     else if (arg === '--source') args.sourceDir = next();
     else if (arg === '--prefix') args.prefix = next();
     else if (arg === '--concurrency') args.concurrency = Number(next());
+    else if (arg === '--batch-size') args.batchSize = Number(next());
+    else if (arg === '--retries') args.retries = Number(next());
+    else if (arg === '--batch-delay-ms') args.batchDelayMs = Number(next());
     else if (arg === '--limit') args.limit = Number(next());
     else if (arg === '--start') args.start = Number(next());
     else if (arg === '--wrangler') args.wrangler = next();
@@ -46,6 +55,18 @@ function parseArgs(argv) {
 
   if (!Number.isInteger(args.concurrency) || args.concurrency < 1) {
     throw new Error('--concurrency must be a positive integer');
+  }
+
+  if (!Number.isInteger(args.batchSize) || args.batchSize < 1) {
+    throw new Error('--batch-size must be a positive integer');
+  }
+
+  if (!Number.isInteger(args.retries) || args.retries < 1) {
+    throw new Error('--retries must be a positive integer');
+  }
+
+  if (!Number.isInteger(args.batchDelayMs) || args.batchDelayMs < 0) {
+    throw new Error('--batch-delay-ms must be a non-negative integer');
   }
 
   if (!Number.isInteger(args.limit) || args.limit < 0) {
@@ -71,6 +92,9 @@ Options:
   --source <dir>        Local audio root. Default: ${DEFAULT_SOURCE_DIR}
   --prefix <prefix>     R2 object prefix. Default: ${DEFAULT_PREFIX}
   --concurrency <n>     Parallel uploads. Default: ${DEFAULT_CONCURRENCY}
+  --batch-size <n>      MP3 files per r2 bulk put batch. Default: ${DEFAULT_BATCH_SIZE}
+  --retries <n>         Retry each MP3 batch up to n times. Default: ${DEFAULT_RETRIES}
+  --batch-delay-ms <n>  Delay between MP3 batches. Default: ${DEFAULT_BATCH_DELAY_MS}
   --start <n>           Skip the first n files after sorting.
   --limit <n>           Upload only the first n files.
   --wrangler <command>  Wrangler command. Default: npx wrangler@4
@@ -182,14 +206,14 @@ function runWrangler({ wrangler, args }) {
   });
 }
 
-async function bulkUploadMp3({ wrangler, bucket, items, concurrency }) {
+const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+async function bulkUploadMp3({ wrangler, bucket, items, concurrency, batchSize, retries, batchDelayMs }) {
   if (items.length === 0) return;
 
-  const BATCH_SIZE = 500;
-  const MAX_RETRIES = 3;
   const batches = [];
-  for (let i = 0; i < items.length; i += BATCH_SIZE) {
-    batches.push(items.slice(i, i + BATCH_SIZE));
+  for (let index = 0; index < items.length; index += batchSize) {
+    batches.push(items.slice(index, index + batchSize));
   }
 
   let uploaded = 0;
@@ -199,13 +223,17 @@ async function bulkUploadMp3({ wrangler, bucket, items, concurrency }) {
     const batch = batches[batchIndex];
     let success = false;
 
-    for (let attempt = 0; attempt < MAX_RETRIES && !success; attempt += 1) {
+    for (let attempt = 1; attempt <= retries && !success; attempt += 1) {
       const tempDir = await fs.mkdtemp(path.join('/private/tmp', 'word-audio-r2-'));
       const manifestPath = path.join(tempDir, 'bulk-manifest.json');
       const entries = batch.map((item) => ({ key: item.key, file: item.filePath }));
       await fs.writeFile(manifestPath, JSON.stringify(entries), 'utf8');
 
       try {
+        console.log(
+          `Batch ${batchIndex + 1}/${batches.length}: uploading ${batch.length} files ` +
+            `(${uploaded}/${items.length} done)`,
+        );
         await runWrangler({
           wrangler,
           args: [
@@ -226,30 +254,42 @@ async function bulkUploadMp3({ wrangler, bucket, items, concurrency }) {
           ],
         });
         uploaded += batch.length;
-        console.log(`Batch ${batchIndex + 1}/${batches.length} done (${uploaded}/${items.length} total)`);
+        console.log(`Batch ${batchIndex + 1}/${batches.length} done (${uploaded}/${items.length})`);
         success = true;
       } catch (error) {
-        if (attempt < MAX_RETRIES - 1) {
-          const wait = (attempt + 1) * 3000;
-          console.error(`Batch ${batchIndex + 1}/${batches.length} attempt ${attempt + 1} failed, retrying in ${wait / 1000}s: ${error.message}`);
-          await new Promise((resolve) => setTimeout(resolve, wait));
+        if (attempt < retries) {
+          const retryDelayMs = attempt * 5000;
+          console.error(
+            `Batch ${batchIndex + 1}/${batches.length} attempt ${attempt} failed, ` +
+              `retrying in ${retryDelayMs / 1000}s: ${error.message}`,
+          );
+          await wait(retryDelayMs);
         } else {
-          batchFailures.push({ batchIndex, count: batch.length, error: error.message });
-          uploaded += batch.length;
-          console.error(`Batch ${batchIndex + 1}/${batches.length} failed after ${MAX_RETRIES} attempts: ${error.message}`);
+          batchFailures.push({
+            batchIndex,
+            count: batch.length,
+            error: error.message,
+          });
+          console.error(
+            `Batch ${batchIndex + 1}/${batches.length} failed after ${retries} attempts: ${error.message}`,
+          );
         }
+      } finally {
+        await fs.rm(tempDir, { recursive: true, force: true });
       }
     }
 
-    // Small delay between batches to avoid rate limiting
-    if (batchIndex < batches.length - 1) {
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+    if (batchIndex < batches.length - 1 && batchDelayMs > 0) {
+      await wait(batchDelayMs);
     }
   }
 
   if (batchFailures.length > 0) {
-    const failedCount = batchFailures.reduce((sum, b) => sum + b.count, 0);
-    throw new Error(`${batchFailures.length} batch(es) failed (${failedCount} files total). First: ${batchFailures[0].error}`);
+    const failedCount = batchFailures.reduce((sum, batch) => sum + batch.count, 0);
+    throw new Error(
+      `${batchFailures.length} batch(es) failed (${failedCount} files total). ` +
+        `First: ${batchFailures[0].error}`,
+    );
   }
 }
 
@@ -323,6 +363,9 @@ async function main() {
     bucket: args.bucket,
     items: mp3Items,
     concurrency: args.concurrency,
+    batchSize: args.batchSize,
+    retries: args.retries,
+    batchDelayMs: args.batchDelayMs,
   });
 
   const failures = await runPool(metadataItems, args.concurrency, (item) =>
