@@ -216,6 +216,50 @@ VITE_WORD_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/aud
 - CORS 配置文件：`config/r2-word-audio-cors.json`
 - 线上 GitHub Actions 构建已设置 `VITE_WORD_AUDIO_BASE_URL`
 
+## 批量生成例句静态音频
+
+例句比单词长很多，建议先只生成一个默认音色，避免一开始把 R2 存储和生成时间放大到 3 倍。脚本默认使用 `af_bella`，读取 `public/data/vocabulary.json` 里的 `example` 字段，输出到：
+
+```text
+public/audio/examples/{voice}/{id}.mp3
+```
+
+先小批量试跑：
+
+```bash
+npm run tts:generate-examples -- --limit 20
+```
+
+正式生成全部例句：
+
+```bash
+npm run tts:generate-examples
+```
+
+如果中断，直接重新运行即可，脚本会跳过已存在的 MP3。需要重新生成时加 `--force`：
+
+```bash
+npm run tts:generate-examples -- --force
+```
+
+如果以后要补其他音色：
+
+```bash
+npm run tts:generate-examples -- --voices am_michael,bf_emma
+```
+
+上传例句音频到 R2 时复用同一个上传脚本，只改 source 和 prefix：
+
+```bash
+npm run audio:upload-r2 -- --bucket english-flashcards-audio --source public/audio/examples --prefix audio/examples
+```
+
+上传后公开 URL 形如：
+
+```text
+https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/examples/af_bella/1.mp3
+```
+
 ## 音色和语言
 
 - 默认音色：`af_bella`

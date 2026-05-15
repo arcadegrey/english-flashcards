@@ -13,6 +13,8 @@ node_modules
 .cache
 .venv*
 public/audio/words/**/*.mp3
+public/audio/examples/**/*.mp3
+public/audio/examples/manifest.json
 dist
 dist-ssr
 *.local

@@ -19,6 +19,7 @@
 - 刷新词库分片：`npm run words:split`
 - 导入阅读材料：`npm run readings:import`
 - 本地 Kokoro TTS：`npm run tts:kokoro`
+- 生成例句静态音频：`npm run tts:generate-examples`
 - 上传单词静态音频到 R2：`npm run audio:upload-r2`
 
 ## 主要页面
@@ -51,6 +52,7 @@
 - 当前机器已通过 Homebrew 安装 `python@3.11`、`espeak-ng`、`libsndfile`，并已创建项目虚拟环境 `.venv-kokoro`、安装 Python 依赖。
 - 已实测 `curl http://127.0.0.1:8880/health` 返回 `{"status":"ok"}`，并成功生成 `/private/tmp/kokoro-test.wav`（WAV，mono 24000 Hz）。
 - 批量静态单词音频脚本是 `scripts/generate_kokoro_word_audio.py`，启动命令是 `npm run tts:generate-words`。
+- 批量静态例句音频脚本是 `scripts/generate_kokoro_example_audio.py`，启动命令是 `npm run tts:generate-examples`；默认只生成 `af_bella`，输出到 `public/audio/examples/{voice}/{id}.mp3`，适合先把例句从 Railway 实时 TTS 迁到 R2 静态音频。
 - R2 同步脚本是 `scripts/upload-word-audio-r2.mjs`，启动命令是 `npm run audio:upload-r2`；默认把 `public/audio/words` 上传到 bucket 的 `audio/words/` 前缀，bucket 可通过 `R2_AUDIO_BUCKET` 或 `--bucket` 指定。脚本用 Wrangler `r2 bulk put` 批量上传 MP3，并单独上传 `manifest.json`。
 - 已生成 3 套单词 MP3：`af_bella`、`am_michael`、`bf_emma`；路径为 `public/audio/words/{voice}/{id}.mp3`，共 10731 个 MP3，0 失败，MP3 24 kbps / 24 kHz / mono，内容字节约 46.27 MB，目录占用约 73 MB。
 - 前端 `speakWord()` 在 Kokoro provider 下会优先播放静态单词音频；文件缺失或播放失败时 fallback 到实时 Kokoro / 浏览器 TTS。

@@ -185,30 +185,55 @@ function runWrangler({ wrangler, args }) {
 async function bulkUploadMp3({ wrangler, bucket, items, concurrency }) {
   if (items.length === 0) return;
 
-  const tempDir = await fs.mkdtemp(path.join('/private/tmp', 'word-audio-r2-'));
-  const manifestPath = path.join(tempDir, 'bulk-manifest.json');
-  const entries = items.map((item) => ({ key: item.key, file: item.filePath }));
-  await fs.writeFile(manifestPath, JSON.stringify(entries), 'utf8');
+  const BATCH_SIZE = 500;
+  const batches = [];
+  for (let i = 0; i < items.length; i += BATCH_SIZE) {
+    batches.push(items.slice(i, i + BATCH_SIZE));
+  }
 
-  await runWrangler({
-    wrangler,
-    args: [
-      'r2',
-      'bulk',
-      'put',
-      bucket,
-      '--filename',
-      manifestPath,
-      '--content-type',
-      'audio/mpeg',
-      '--cache-control',
-      'public, max-age=31536000, immutable',
-      '--concurrency',
-      String(concurrency),
-      '--remote',
-      '--force',
-    ],
-  });
+  let uploaded = 0;
+  const batchFailures = [];
+
+  for (let batchIndex = 0; batchIndex < batches.length; batchIndex += 1) {
+    const batch = batches[batchIndex];
+    const tempDir = await fs.mkdtemp(path.join('/private/tmp', 'word-audio-r2-'));
+    const manifestPath = path.join(tempDir, 'bulk-manifest.json');
+    const entries = batch.map((item) => ({ key: item.key, file: item.filePath }));
+    await fs.writeFile(manifestPath, JSON.stringify(entries), 'utf8');
+
+    try {
+      await runWrangler({
+        wrangler,
+        args: [
+          'r2',
+          'bulk',
+          'put',
+          bucket,
+          '--filename',
+          manifestPath,
+          '--content-type',
+          'audio/mpeg',
+          '--cache-control',
+          'public, max-age=31536000, immutable',
+          '--concurrency',
+          String(concurrency),
+          '--remote',
+          '--force',
+        ],
+      });
+      uploaded += batch.length;
+      console.log(`Batch ${batchIndex + 1}/${batches.length} done (${uploaded}/${items.length} total)`);
+    } catch (error) {
+      batchFailures.push({ batchIndex, count: batch.length, error });
+      uploaded += batch.length;
+      console.error(`Batch ${batchIndex + 1}/${batches.length} failed: ${error.message}`);
+    }
+  }
+
+  if (batchFailures.length > 0) {
+    const failedCount = batchFailures.reduce((sum, b) => sum + b.count, 0);
+    throw new Error(`${batchFailures.length} batch(es) failed (${failedCount} files total). First: ${batchFailures[0].error.message}`);
+  }
 }
 
 async function runPool(items, concurrency, worker) {
