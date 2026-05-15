@@ -186,6 +186,7 @@ async function bulkUploadMp3({ wrangler, bucket, items, concurrency }) {
   if (items.length === 0) return;
 
   const BATCH_SIZE = 500;
+  const MAX_RETRIES = 3;
   const batches = [];
   for (let i = 0; i < items.length; i += BATCH_SIZE) {
     batches.push(items.slice(i, i + BATCH_SIZE));
@@ -196,43 +197,59 @@ async function bulkUploadMp3({ wrangler, bucket, items, concurrency }) {
 
   for (let batchIndex = 0; batchIndex < batches.length; batchIndex += 1) {
     const batch = batches[batchIndex];
-    const tempDir = await fs.mkdtemp(path.join('/private/tmp', 'word-audio-r2-'));
-    const manifestPath = path.join(tempDir, 'bulk-manifest.json');
-    const entries = batch.map((item) => ({ key: item.key, file: item.filePath }));
-    await fs.writeFile(manifestPath, JSON.stringify(entries), 'utf8');
+    let success = false;
 
-    try {
-      await runWrangler({
-        wrangler,
-        args: [
-          'r2',
-          'bulk',
-          'put',
-          bucket,
-          '--filename',
-          manifestPath,
-          '--content-type',
-          'audio/mpeg',
-          '--cache-control',
-          'public, max-age=31536000, immutable',
-          '--concurrency',
-          String(concurrency),
-          '--remote',
-          '--force',
-        ],
-      });
-      uploaded += batch.length;
-      console.log(`Batch ${batchIndex + 1}/${batches.length} done (${uploaded}/${items.length} total)`);
-    } catch (error) {
-      batchFailures.push({ batchIndex, count: batch.length, error });
-      uploaded += batch.length;
-      console.error(`Batch ${batchIndex + 1}/${batches.length} failed: ${error.message}`);
+    for (let attempt = 0; attempt < MAX_RETRIES && !success; attempt += 1) {
+      const tempDir = await fs.mkdtemp(path.join('/private/tmp', 'word-audio-r2-'));
+      const manifestPath = path.join(tempDir, 'bulk-manifest.json');
+      const entries = batch.map((item) => ({ key: item.key, file: item.filePath }));
+      await fs.writeFile(manifestPath, JSON.stringify(entries), 'utf8');
+
+      try {
+        await runWrangler({
+          wrangler,
+          args: [
+            'r2',
+            'bulk',
+            'put',
+            bucket,
+            '--filename',
+            manifestPath,
+            '--content-type',
+            'audio/mpeg',
+            '--cache-control',
+            'public, max-age=31536000, immutable',
+            '--concurrency',
+            String(concurrency),
+            '--remote',
+            '--force',
+          ],
+        });
+        uploaded += batch.length;
+        console.log(`Batch ${batchIndex + 1}/${batches.length} done (${uploaded}/${items.length} total)`);
+        success = true;
+      } catch (error) {
+        if (attempt < MAX_RETRIES - 1) {
+          const wait = (attempt + 1) * 3000;
+          console.error(`Batch ${batchIndex + 1}/${batches.length} attempt ${attempt + 1} failed, retrying in ${wait / 1000}s: ${error.message}`);
+          await new Promise((resolve) => setTimeout(resolve, wait));
+        } else {
+          batchFailures.push({ batchIndex, count: batch.length, error: error.message });
+          uploaded += batch.length;
+          console.error(`Batch ${batchIndex + 1}/${batches.length} failed after ${MAX_RETRIES} attempts: ${error.message}`);
+        }
+      }
+    }
+
+    // Small delay between batches to avoid rate limiting
+    if (batchIndex < batches.length - 1) {
+      await new Promise((resolve) => setTimeout(resolve, 1500));
     }
   }
 
   if (batchFailures.length > 0) {
     const failedCount = batchFailures.reduce((sum, b) => sum + b.count, 0);
-    throw new Error(`${batchFailures.length} batch(es) failed (${failedCount} files total). First: ${batchFailures[0].error.message}`);
+    throw new Error(`${batchFailures.length} batch(es) failed (${failedCount} files total). First: ${batchFailures[0].error}`);
   }
 }
 
