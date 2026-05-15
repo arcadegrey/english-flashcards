@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import {
   speak,
   setVoice as setGlobalVoice,
@@ -13,6 +14,12 @@ import { storage } from '../utils/storage';
 const GLOBAL_KOKORO_ENDPOINT = (
   import.meta.env.VITE_KOKORO_TTS_URL || DEFAULT_KOKORO_TTS_ENDPOINT
 ).trim();
+
+const KOKORO_VOICE_DETAILS = {
+  af_bella: '美音女声，清晰自然，适合默认单词发音',
+  am_michael: '美音男声，语调稳定，适合对照复习',
+  bf_emma: '英音女声，发音圆润，适合英式口音练习',
+};
 
 function VoiceSettings({ onClose }) {
   const [voices, setVoices] = useState([]);
@@ -65,7 +72,6 @@ function VoiceSettings({ onClose }) {
     }
 
     handleSelect(voice.name);
-
     setIsPlaying(voice.name);
 
     window.speechSynthesis.cancel();
@@ -90,6 +96,11 @@ function VoiceSettings({ onClose }) {
     }
   };
 
+  const handleKokoroVoiceChange = (voiceId) => {
+    setKokoroVoiceState(voiceId);
+    storage.setKokoroVoice(voiceId);
+  };
+
   const handleKokoroPreview = async () => {
     const resolvedEndpoint = kokoroEndpoint.trim() || GLOBAL_KOKORO_ENDPOINT;
     if (!resolvedEndpoint) {
@@ -110,222 +121,206 @@ function VoiceSettings({ onClose }) {
     }
   };
 
-  const browserProviderClass =
-    ttsProvider === 'browser'
-      ? 'border-purple-500 bg-purple-50 text-purple-700'
-      : 'border-gray-200 text-gray-600 hover:border-purple-300';
-  const kokoroProviderClass =
-    ttsProvider === 'kokoro'
-      ? 'border-indigo-500 bg-indigo-50 text-indigo-700'
-      : 'border-gray-200 text-gray-600 hover:border-indigo-300';
+  const selectedKokoroVoice =
+    KOKORO_WORD_AUDIO_VOICES.find((voice) => voice.id === kokoroVoice) ||
+    KOKORO_WORD_AUDIO_VOICES[0];
 
-  return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
-      onClick={onClose}
-    >
-      <div
-        className="bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[82vh] overflow-hidden flex flex-col"
-        onClick={(e) => e.stopPropagation()}
+  const dialog = (
+    <div className="voice-settings-layer" onClick={onClose}>
+      <section
+        className="voice-settings-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="voice-settings-title"
+        onClick={(event) => event.stopPropagation()}
       >
-        <div className="p-6 border-b border-gray-200 flex items-center justify-between bg-gradient-to-r from-purple-500 to-indigo-500">
-          <h2 className="text-2xl font-black text-white flex items-center gap-3">
-            <span>🔊</span>
-            <span>语音设置</span>
-          </h2>
-          <button
-            onClick={onClose}
-            className="text-white/80 hover:text-white transition-colors text-3xl font-bold"
-          >
+        <header className="voice-settings-head">
+          <div>
+            <p className="voice-settings-kicker">Audio</p>
+            <h2 id="voice-settings-title" className="voice-settings-title">语音设置</h2>
+          </div>
+          <button type="button" className="voice-settings-close" onClick={onClose} aria-label="关闭语音设置">
             ✕
           </button>
-        </div>
+        </header>
 
-        <div className="p-6 overflow-y-auto flex-1 space-y-5">
-          <div className="grid grid-cols-2 gap-3">
+        <div className="voice-settings-body">
+          <div className="voice-settings-engine-switch" aria-label="语音引擎">
             <button
+              type="button"
               onClick={() => handleProviderChange('browser')}
-              className={`rounded-2xl border-2 px-4 py-3 font-bold transition-all ${browserProviderClass}`}
+              className={`voice-settings-engine ${ttsProvider === 'browser' ? 'is-active' : ''}`}
             >
-              浏览器 TTS
+              <span className="voice-settings-engine-name">浏览器 TTS</span>
+              <span className="voice-settings-engine-note">使用系统内置英语语音</span>
             </button>
             <button
+              type="button"
               onClick={() => handleProviderChange('kokoro')}
-              className={`rounded-2xl border-2 px-4 py-3 font-bold transition-all ${kokoroProviderClass}`}
+              className={`voice-settings-engine ${ttsProvider === 'kokoro' ? 'is-active' : ''}`}
             >
-              Kokoro TTS
+              <span className="voice-settings-engine-name">Kokoro TTS</span>
+              <span className="voice-settings-engine-note">使用已生成 MP3 和 Kokoro 接口</span>
             </button>
           </div>
 
           {ttsProvider === 'browser' ? (
-            <div>
+            <div className="voice-settings-section">
               {voices.length === 0 ? (
-                <div className="text-center py-12">
-                  <p className="text-gray-500 text-lg">当前浏览器暂无可用英语语音</p>
+                <div className="voice-settings-empty">
+                  <p>当前浏览器暂无可用英语语音</p>
                 </div>
               ) : (
-                <div className="space-y-3">
+                <div className="voice-settings-list">
                   {voices.map((voice) => {
                     const isSelected = selectedVoice === voice.name;
                     const isCurrentlyPlaying = isPlaying === voice.name;
 
                     return (
-                      <div
+                      <article
                         key={voice.name}
-                        className={`rounded-2xl border-2 transition-all duration-300 ${
-                          isSelected
-                            ? 'border-purple-500 bg-purple-50 shadow-lg'
-                            : 'border-gray-200 hover:border-purple-300 hover:bg-gray-50'
-                        }`}
+                        className={`voice-settings-browser-row ${isSelected ? 'is-selected' : ''}`}
                       >
-                        <div className="p-4 flex items-center gap-4">
-                          <button
-                            onClick={() => handleSelect(voice.name)}
-                            className={`w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all flex-shrink-0 ${
-                              isSelected
-                                ? 'border-purple-500 bg-purple-500'
-                                : 'border-gray-300 hover:border-purple-400'
-                            }`}
-                          >
-                            {isSelected && <span className="text-white text-sm">✓</span>}
-                          </button>
+                        <button
+                          type="button"
+                          onClick={() => handleSelect(voice.name)}
+                          className="voice-settings-radio"
+                          aria-label={`选择 ${voice.name}`}
+                          aria-pressed={isSelected}
+                        >
+                          {isSelected && <span>✓</span>}
+                        </button>
 
-                          <div className="flex-1 min-w-0">
-                            <p
-                              className={`font-bold text-lg truncate ${
-                                isSelected ? 'text-purple-700' : 'text-gray-800'
-                              }`}
-                            >
-                              {voice.name}
-                            </p>
-                            <p className="text-gray-500 text-sm">
-                              {voice.lang} {voice.default ? '• 默认' : ''}
-                            </p>
-                          </div>
-
-                          <button
-                            onClick={() => handlePreview(voice)}
-                            disabled={isPlaying && !isCurrentlyPlaying}
-                            className={`px-5 py-3 rounded-xl font-bold transition-all flex items-center gap-2 flex-shrink-0 ${
-                              isCurrentlyPlaying
-                                ? 'bg-red-500 text-white'
-                                : 'bg-gradient-to-r from-purple-500 to-indigo-500 text-white hover:from-purple-600 hover:to-indigo-600'
-                            } disabled:opacity-50 disabled:cursor-not-allowed`}
-                          >
-                            <span>{isCurrentlyPlaying ? '⏹' : '▶'}</span>
-                            <span>{isCurrentlyPlaying ? '停止' : '试听'}</span>
-                          </button>
+                        <div className="voice-settings-browser-meta">
+                          <p className="voice-settings-browser-name">{voice.name}</p>
+                          <p className="voice-settings-browser-lang">
+                            {voice.lang} {voice.default ? '· 默认' : ''}
+                          </p>
                         </div>
-                      </div>
+
+                        <button
+                          type="button"
+                          onClick={() => handlePreview(voice)}
+                          disabled={isPlaying && !isCurrentlyPlaying}
+                          className={`voice-settings-preview ${isCurrentlyPlaying ? 'is-playing' : ''}`}
+                        >
+                          {isCurrentlyPlaying ? '停止' : '试听'}
+                        </button>
+                      </article>
                     );
                   })}
                 </div>
               )}
             </div>
           ) : (
-            <div className="space-y-4">
-              <div className="rounded-2xl border border-indigo-200 bg-indigo-50 p-4">
-                <p className="text-indigo-700 text-sm leading-relaxed">
-                  接入方式：请把本地或云端 Kokoro API 地址填在下面（未填写时会尝试使用全站默认地址），例如
-                  http://127.0.0.1:8880/v1/audio/speech 或 https://your-app.up.railway.app/v1/audio/speech。
+            <div className="voice-settings-section">
+              <div className="voice-settings-info">
+                <p>
+                  单词发音会优先使用已上传到 R2 的静态 MP3；长句或静态文件缺失时，再使用下面的 Kokoro 接口。
                 </p>
                 {GLOBAL_KOKORO_ENDPOINT && (
-                  <p className="mt-2 text-xs text-indigo-700/90 break-all">
+                  <p className="voice-settings-global-endpoint">
                     当前全站默认地址：{GLOBAL_KOKORO_ENDPOINT}
                   </p>
                 )}
               </div>
 
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">Kokoro 接口地址</label>
+              <label className="voice-settings-field">
+                <span>Kokoro 接口地址</span>
                 <input
                   value={kokoroEndpoint}
-                  onChange={(e) => {
-                    const value = e.target.value;
+                  onChange={(event) => {
+                    const value = event.target.value;
                     setKokoroEndpointState(value);
                     storage.setKokoroEndpoint(value);
                   }}
                   placeholder="http://127.0.0.1:8880/v1/audio/speech"
-                  className="w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+                  className="voice-settings-input"
                 />
-              </div>
+              </label>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">音色 ID</label>
-                  <input
-                    list="kokoro-voice-options"
+              <div className="voice-settings-grid">
+                <label className="voice-settings-field">
+                  <span>音色</span>
+                  <select
                     value={kokoroVoice}
-                    onChange={(e) => {
-                      const value = e.target.value;
-                      setKokoroVoiceState(value);
-                      storage.setKokoroVoice(value);
-                    }}
-                    placeholder="af_bella"
-                    className="w-full rounded-xl border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-300"
-                  />
-                  <datalist id="kokoro-voice-options">
+                    onChange={(event) => handleKokoroVoiceChange(event.target.value)}
+                    className="voice-settings-select"
+                  >
                     {KOKORO_WORD_AUDIO_VOICES.map((voice) => (
                       <option key={voice.id} value={voice.id}>
-                        {voice.label}
+                        {voice.label} · {voice.id}
                       </option>
                     ))}
-                  </datalist>
-                  <p className="mt-2 text-xs text-gray-500">
-                    已预生成：{KOKORO_WORD_AUDIO_VOICES.map((voice) => voice.id).join(' / ')}
+                  </select>
+                  <p className="voice-settings-field-note">
+                    {selectedKokoroVoice.id} · {KOKORO_VOICE_DETAILS[selectedKokoroVoice.id]}
                   </p>
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    语速 ({kokoroSpeed.toFixed(2)})
-                  </label>
+                </label>
+
+                <label className="voice-settings-field">
+                  <span>语速 {kokoroSpeed.toFixed(2)}x</span>
                   <input
                     type="range"
                     min="0.5"
                     max="1.5"
                     step="0.05"
                     value={kokoroSpeed}
-                    onChange={(e) => {
-                      const value = Number(e.target.value);
+                    onChange={(event) => {
+                      const value = Number(event.target.value);
                       setKokoroSpeedState(value);
                       storage.setKokoroSpeed(value);
                     }}
-                    className="w-full accent-indigo-500"
+                    className="voice-settings-range"
                   />
-                </div>
+                </label>
               </div>
 
+              <div className="voice-settings-voice-cards">
+                {KOKORO_WORD_AUDIO_VOICES.map((voice) => (
+                  <button
+                    key={voice.id}
+                    type="button"
+                    className={`voice-settings-voice-card ${kokoroVoice === voice.id ? 'is-selected' : ''}`}
+                    onClick={() => handleKokoroVoiceChange(voice.id)}
+                  >
+                    <span className="voice-settings-voice-label">{voice.label}</span>
+                    <span className="voice-settings-voice-id">{voice.id}</span>
+                  </button>
+                ))}
+              </div>
+
+              {kokoroHint && <p className="voice-settings-error">{kokoroHint}</p>}
+
               <button
+                type="button"
                 onClick={handleKokoroPreview}
                 disabled={isPlaying === 'kokoro'}
-                className="px-5 py-3 rounded-xl font-bold bg-gradient-to-r from-indigo-500 to-violet-500 text-white hover:from-indigo-600 hover:to-violet-600 transition-all disabled:opacity-50"
+                className="voice-settings-primary"
               >
                 {isPlaying === 'kokoro' ? '试听中...' : '试听 Kokoro'}
               </button>
-
-              {kokoroHint && (
-                <p className="text-sm text-rose-600 bg-rose-50 border border-rose-200 rounded-xl px-3 py-2">
-                  {kokoroHint}
-                </p>
-              )}
             </div>
           )}
         </div>
 
-        <div className="p-6 border-t border-gray-200 bg-gray-50 flex items-center justify-between">
-          <p className="text-gray-600">
-            当前引擎：<span className="font-bold">{ttsProvider === 'kokoro' ? 'Kokoro TTS' : '浏览器 TTS'}</span>
+        <footer className="voice-settings-footer">
+          <p>
+            当前引擎：<strong>{ttsProvider === 'kokoro' ? 'Kokoro TTS' : '浏览器 TTS'}</strong>
           </p>
-          <button
-            onClick={onClose}
-            className="px-5 py-2 bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-xl font-bold hover:from-purple-600 hover:to-indigo-600 transition-all"
-          >
+          <button type="button" onClick={onClose} className="voice-settings-done">
             保存并关闭
           </button>
-        </div>
-      </div>
+        </footer>
+      </section>
     </div>
   );
+
+  if (typeof document === 'undefined') {
+    return dialog;
+  }
+
+  return createPortal(dialog, document.body);
 }
 
 export default VoiceSettings;

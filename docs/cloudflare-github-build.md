@@ -24,6 +24,9 @@
 可选：
 - `VITE_KOKORO_TTS_URL`
 
+公开构建变量：
+- `VITE_WORD_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/words`
+
 ## 部署流程
 - push 到 `main` 自动部署
 - 或 Actions 页面手动触发 `Deploy To Cloudflare Worker`

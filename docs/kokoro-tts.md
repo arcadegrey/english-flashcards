@@ -165,14 +165,56 @@ npm run tts:generate-words -- --limit 100
 如果音频上传到 R2/CDN，在 `.env` 或部署平台设置：
 
 ```bash
-VITE_WORD_AUDIO_BASE_URL=https://cdn.example.com/audio/words
+VITE_WORD_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/words
 ```
 
 这样 App 本体可以不携带全部音频，只按需从 CDN 加载：
 
 ```text
-https://cdn.example.com/audio/words/af_bella/1.mp3
+https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/words/af_bella/1.mp3
 ```
+
+### 同步到 Cloudflare R2
+
+本地生成的 MP3 不会提交到 Git。要让线上用户使用，把 `public/audio/words` 同步到 R2 bucket，再把 bucket 的公开域名配置成 `VITE_WORD_AUDIO_BASE_URL`。
+
+先准备 Cloudflare API token 和 bucket 名：
+
+```bash
+export CLOUDFLARE_API_TOKEN=你的_token
+export R2_AUDIO_BUCKET=english-flashcards-audio
+```
+
+试运行查看会上传哪些文件：
+
+```bash
+npm run audio:upload-r2 -- --dry-run
+```
+
+正式同步：
+
+```bash
+npm run audio:upload-r2
+```
+
+脚本默认使用 Wrangler 的 `r2 bulk put` 批量上传 MP3，并把 `manifest.json` 单独按 JSON 上传。对象会写入 R2 的 `audio/words/` 前缀，所以公开 URL 应类似：
+
+```text
+https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/words/af_bella/1.mp3
+```
+
+如果你的 bucket 公开域名直接指向 bucket 根目录，前端环境变量应设置为：
+
+```bash
+VITE_WORD_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/words
+```
+
+当前 R2 设置：
+
+- Bucket：`english-flashcards-audio`
+- 公开 r2.dev URL：`https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev`
+- CORS 配置文件：`config/r2-word-audio-cors.json`
+- 线上 GitHub Actions 构建已设置 `VITE_WORD_AUDIO_BASE_URL`
 
 ## 音色和语言
 
