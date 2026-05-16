@@ -66,6 +66,161 @@ body {
   animation-delay: var(--delay);
 }
 
+.auth-transition-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(20, 184, 166, 0.18), transparent 32%),
+    radial-gradient(circle at 82% 28%, rgba(245, 158, 11, 0.16), transparent 30%),
+    rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(16px);
+  animation: auth-overlay-in 220ms ease-out both;
+}
+
+.auth-transition-panel {
+  width: min(100%, 380px);
+  min-height: 360px;
+  border: 1px solid rgba(226, 232, 240, 0.92);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.28);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 34px 28px;
+  text-align: center;
+  animation: auth-panel-in 320ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.auth-transition-orbit {
+  position: relative;
+  width: 132px;
+  height: 132px;
+  border-radius: 9999px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  animation: auth-orbit-spin 1600ms linear infinite;
+}
+
+.auth-transition-orbit::before,
+.auth-transition-orbit::after {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border-radius: inherit;
+  border: 1px solid rgba(59, 130, 246, 0.18);
+}
+
+.auth-transition-orbit::after {
+  inset: 36px;
+  border-color: rgba(16, 185, 129, 0.22);
+}
+
+.auth-transition-core {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 38px;
+  height: 38px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #0f172a, #2563eb 55%, #10b981);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.28);
+  transform: translate(-50%, -50%);
+  animation: auth-core-pulse 1200ms ease-in-out infinite;
+}
+
+.auth-transition-dot {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  box-shadow: 0 0 18px currentColor;
+}
+
+.auth-transition-dot--blue {
+  left: 50%;
+  top: -7px;
+  color: #2563eb;
+  background: #2563eb;
+  transform: translateX(-50%);
+}
+
+.auth-transition-dot--green {
+  right: 8px;
+  bottom: 17px;
+  color: #10b981;
+  background: #10b981;
+}
+
+.auth-transition-dot--amber {
+  left: 7px;
+  bottom: 23px;
+  color: #f59e0b;
+  background: #f59e0b;
+}
+
+.auth-transition-copy {
+  display: grid;
+  gap: 6px;
+}
+
+.auth-transition-kicker {
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.auth-transition-copy h2 {
+  color: #111827;
+  font-size: 28px;
+  font-weight: 750;
+  line-height: 1.2;
+}
+
+.auth-transition-copy p:last-child {
+  color: #64748b;
+  font-size: 15px;
+}
+
+.auth-transition-steps {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.auth-transition-steps span {
+  height: 5px;
+  border-radius: 9999px;
+  background: #cbd5e1;
+  overflow: hidden;
+  position: relative;
+}
+
+.auth-transition-steps span::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #2563eb, #10b981);
+  transform: translateX(-105%);
+  animation: auth-step-fill 1300ms ease-in-out infinite;
+}
+
+.auth-transition-steps span:nth-child(2)::after {
+  animation-delay: 180ms;
+}
+
+.auth-transition-steps span:nth-child(3)::after {
+  animation-delay: 360ms;
+}
+
 input, textarea, button, select {
   font-size: 16px;
 }
@@ -106,5 +261,65 @@ button {
   100% {
     opacity: 0;
     transform: translate(-50%, -50%) scale(1.4);
+  }
+}
+
+@keyframes auth-overlay-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes auth-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes auth-orbit-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes auth-core-pulse {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(0.92);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+}
+
+@keyframes auth-step-fill {
+  0% {
+    transform: translateX(-105%);
+  }
+  45%,
+  65% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(105%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .auth-transition-overlay,
+  .auth-transition-panel,
+  .auth-transition-orbit,
+  .auth-transition-core,
+  .auth-transition-steps span::after {
+    animation-duration: 1ms;
+    animation-iteration-count: 1;
   }
 }

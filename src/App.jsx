@@ -38,6 +38,9 @@ import {
 const TOEFL_UNKNOWN_LEVEL = 'unknown'
 const TOEFL_UNKNOWN_LIST = 'unknown'
 const NAVIGATION_STATE_KEY = 'english_flashcards_navigation_v1'
+const AUTH_TRANSITION_MIN_MS = 900
+
+const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
 const dedupeIdList = (list) => {
   const safeList = Array.isArray(list) ? list : []
@@ -315,6 +318,7 @@ function AppContent() {
   const cloudProgressVersionRef = useRef('')
   const [showAuthModal, setShowAuthModal] = useState(false)
   const [homeAccountNotice, setHomeAccountNotice] = useState(null)
+  const [authTransition, setAuthTransition] = useState(null)
   const homeNoticeTimerRef = useRef(null)
 
   const allVocabulary = useMemo(() => [...vocabulary, ...customWords], [customWords, vocabulary])
@@ -811,22 +815,44 @@ function AppContent() {
     }
 
     setAuthError('')
-    const { session, user, pendingVerification, message } = await signInWithEmail({
-      email,
-      password,
-      verificationCode,
-    })
-    if (!session || pendingVerification) {
-      return {
-        message: message || '登录验证码已发送，请输入验证码完成登录。',
-        sessionReady: false,
+    const shouldShowTransition = Boolean(String(verificationCode || password || '').trim())
+    let transitionStartedAt = 0
+
+    if (shouldShowTransition) {
+      transitionStartedAt = Date.now()
+      setAuthTransition({
+        mode: 'login',
+        title: '正在登录',
+        detail: '正在同步你的学习进度',
+      })
+    }
+
+    try {
+      const { session, user, pendingVerification, message } = await signInWithEmail({
+        email,
+        password,
+        verificationCode,
+      })
+      if (!session || pendingVerification) {
+        return {
+          message: message || '登录验证码已发送，请输入验证码完成登录。',
+          sessionReady: false,
+        }
+      }
+      storage.setAuthSession(session)
+      setAuthSession(session)
+      setAuthUser(user)
+      await hydrateFromCloud({ session, user })
+      return { message: message || '登录成功，进度已同步。', sessionReady: true }
+    } finally {
+      if (shouldShowTransition) {
+        const elapsed = Date.now() - transitionStartedAt
+        if (elapsed < AUTH_TRANSITION_MIN_MS) {
+          await wait(AUTH_TRANSITION_MIN_MS - elapsed)
+        }
+        setAuthTransition(null)
       }
     }
-    storage.setAuthSession(session)
-    setAuthSession(session)
-    setAuthUser(user)
-    await hydrateFromCloud({ session, user })
-    return { message: message || '登录成功，进度已同步。', sessionReady: true }
   }
 
   const handleAuthRegister = async ({ email, verificationCode }) => {
@@ -835,26 +861,48 @@ function AppContent() {
     }
 
     setAuthError('')
-    const { session, user, emailConfirmationRequired, message } = await signUpWithEmail({
-      email,
-      verificationCode,
-    })
-    if (!session) {
-      return {
-        message:
-          message ||
-          (emailConfirmationRequired
-            ? '验证码已发送，请输入验证码完成注册。'
-            : '注册成功，请登录。'),
-        sessionReady: false,
-      }
+    const shouldShowTransition = Boolean(String(verificationCode || '').trim())
+    let transitionStartedAt = 0
+
+    if (shouldShowTransition) {
+      transitionStartedAt = Date.now()
+      setAuthTransition({
+        mode: 'register',
+        title: '正在创建账号',
+        detail: '正在准备你的学习空间',
+      })
     }
 
-    storage.setAuthSession(session)
-    setAuthSession(session)
-    setAuthUser(user || session.user)
-    await hydrateFromCloud({ session, user: user || session.user })
-    return { message: message || '注册并登录成功，进度已同步。', sessionReady: true }
+    try {
+      const { session, user, emailConfirmationRequired, message } = await signUpWithEmail({
+        email,
+        verificationCode,
+      })
+      if (!session) {
+        return {
+          message:
+            message ||
+            (emailConfirmationRequired
+              ? '验证码已发送，请输入验证码完成注册。'
+              : '注册成功，请登录。'),
+          sessionReady: false,
+        }
+      }
+
+      storage.setAuthSession(session)
+      setAuthSession(session)
+      setAuthUser(user || session.user)
+      await hydrateFromCloud({ session, user: user || session.user })
+      return { message: message || '注册并登录成功，进度已同步。', sessionReady: true }
+    } finally {
+      if (shouldShowTransition) {
+        const elapsed = Date.now() - transitionStartedAt
+        if (elapsed < AUTH_TRANSITION_MIN_MS) {
+          await wait(AUTH_TRANSITION_MIN_MS - elapsed)
+        }
+        setAuthTransition(null)
+      }
+    }
   }
 
   const handleAuthLogout = async () => {
@@ -1464,6 +1512,35 @@ function AppContent() {
     )
   }
 
+  const renderAuthTransitionOverlay = () => {
+    if (!authTransition) return null
+
+    return (
+      <div className="auth-transition-overlay" role="status" aria-live="polite" aria-busy="true">
+        <div className="auth-transition-panel">
+          <div className="auth-transition-orbit" aria-hidden="true">
+            <span className="auth-transition-dot auth-transition-dot--blue" />
+            <span className="auth-transition-dot auth-transition-dot--green" />
+            <span className="auth-transition-dot auth-transition-dot--amber" />
+            <span className="auth-transition-core" />
+          </div>
+          <div className="auth-transition-copy">
+            <p className="auth-transition-kicker">
+              {authTransition.mode === 'register' ? '欢迎加入' : '欢迎回来'}
+            </p>
+            <h2>{authTransition.title}</h2>
+            <p>{authTransition.detail}</p>
+          </div>
+          <div className="auth-transition-steps" aria-hidden="true">
+            <span />
+            <span />
+            <span />
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   const appBackground = useMemo(() => {
     if (view === 'studyHub' || view === 'home' || view === 'toeflLevels' || view === 'toeflLists') {
       return 'bg-[#f8fafc]'
@@ -1838,11 +1915,17 @@ function AppContent() {
       <div className={`min-h-screen ${appBackground}`}>
         {renderView()}
         {(view === 'studyHub' || view === 'home') && renderAuthModal()}
+        {renderAuthTransitionOverlay()}
       </div>
     )
   }
 
-  return <div className={`min-h-screen ${appBackground}`}>{renderView()}</div>
+  return (
+    <div className={`min-h-screen ${appBackground}`}>
+      {renderView()}
+      {renderAuthTransitionOverlay()}
+    </div>
+  )
 }
 
 function App() {
