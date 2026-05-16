@@ -11,6 +11,7 @@ __pycache__/
 
 node_modules
 .cache
+.wrangler
 .venv*
 public/audio/words/**/*.mp3
 public/audio/examples/**/*.mp3

@@ -56,7 +56,7 @@
 - 批量静态例句音频脚本是 `scripts/generate_kokoro_example_audio.py`，启动命令是 `npm run tts:generate-examples`；默认只生成 `af_bella`，输出到 `public/audio/examples/{voice}/{id}.mp3`，适合先把例句从 Railway 实时 TTS 迁到 R2 静态音频。若要补男声，可运行 `npm run tts:generate-examples -- --voices am_michael`。
 - R2 同步脚本是 `scripts/upload-word-audio-r2.mjs`，启动命令是 `npm run audio:upload-r2`；默认把 `public/audio/words` 上传到 bucket 的 `audio/words/` 前缀，bucket 可通过 `R2_AUDIO_BUCKET` 或 `--bucket` 指定。脚本默认使用 Wrangler `r2 bulk put` 小批量上传 MP3：`--batch-size 100 --concurrency 3 --retries 3 --batch-delay-ms 1500`，这是已验证过比逐文件上传更快、比 500 一批更稳的策略；也会单独上传 `manifest.json`。
 - 已生成 3 套单词 MP3：`af_bella`、`am_michael`、`bf_emma`；路径为 `public/audio/words/{voice}/{id}.mp3`，共 10731 个 MP3，0 失败，MP3 24 kbps / 24 kHz / mono，内容字节约 46.27 MB，目录占用约 73 MB。
-- 已生成例句 MP3：本地 `public/audio/examples/af_bella` 和 `public/audio/examples/am_michael` 各 3577 个 MP3。已确认 `af_bella` 女声例句全量上传到 R2：`audio/examples/af_bella/{id}.mp3`，抽查 `1.mp3` 和 `3577.mp3` 的公开 URL 返回 `200 OK`。`am_michael` 男声例句本地已生成，但 R2 全量上传状态未最终确认；之前 DeepSeek/Claude 尝试全量上传时多次断联，只能视为不可靠，后续应按音色单独上传并抽查。
+- 已生成例句 MP3：本地 `public/audio/examples/af_bella` 和 `public/audio/examples/am_michael` 各 3577 个 MP3。已确认 `af_bella` 女声例句全量上传到 R2：`audio/examples/af_bella/{id}.mp3`，抽查 `1.mp3` 和 `3577.mp3` 的公开 URL 返回 `200 OK`。已确认 `am_michael` 男声例句全量上传到 R2：`audio/examples/am_michael/{id}.mp3`，上传 3577/3577 个文件；抽查 `1.mp3`、`480.mp3`、`2406.mp3` 和 `3577.mp3` 的公开 URL 返回 `206 audio/mpeg`。
 - 前端 `speakWord()` 在 Kokoro provider 下会优先播放静态单词音频；文件缺失或播放失败时 fallback 到实时 Kokoro / 浏览器 TTS。
 - 静态单词音频默认 base URL 是 `/audio/words`；线上构建已在 GitHub Actions 设置 `VITE_WORD_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/words`，让远端 App 从 R2 读取音频，避免 App 本体携带全部 MP3。
 - 前端例句播放目前仍走 `speak(word.example)`，即 Kokoro provider 下会尝试实时 Kokoro 接口，失败再 fallback 浏览器 TTS；尚未接入 `audio/examples/{voice}/{id}.mp3` 静态例句优先播放。下一步如果要启用静态例句，需要在 `src/utils/speech.js` 增加 example audio base URL 和 `speakExample` 之类的入口，并在 `Card.jsx` / `FillBlank.jsx` / 阅读相关例句按钮改调用。
@@ -152,14 +152,14 @@
 - CSV 解析器是自实现，不支持复杂 Excel 方言或分号分隔文件。
 - 目前仍然启动时加载完整 `public/data/vocabulary.json`，TOEFL 分片主要用于目录和具体 List 的按需补强加载；若未来词库继续变大，可以进一步改成“启动只加载 core + manifest，选择分类/列表时再加载分片”。
 - `--upsert` 会更新重复词的释义/例句等内容字段，若某些旧释义需要保留，导入前要先 dry-run 并人工检查重复词。
-- `npm run worker:dev` 当前会因本地缺少 `wrangler` 而失败；需要先安装/恢复 Wrangler 依赖再跑 Worker 本地开发。
+- `npm run worker:dev` 缺少本地 `wrangler` 依赖的风险已处理：`wrangler` 已加入 devDependencies，当前版本为 4.92.0。已验证 Worker 可启动到 `http://localhost:8787`，`GET /api/auth/me` 在未登录状态下正常返回 401。
 - 本地前端 `npm run dev` 可正常启动；如果 `5173` 被占用，Vite 会自动切到下一个端口，例如 `5174`。
 - Codex 内置 Browser 连接本地页面时曾多次超时，但同一端口用 `curl -I` 返回 200；如果要做 UI 截图验证，可能需要先解决 Browser/reconnect 问题或改用其他验证方式。
 
 ## 下一步建议
 
 - 下一步最值得做的是接入静态例句音频播放：新增 `VITE_EXAMPLE_AUDIO_BASE_URL` 或复用 R2 根地址，Kokoro provider 下优先播放 `audio/examples/{voice}/{id}.mp3`；若当前音色没有例句音频（例如 `bf_emma`），可 fallback 到 `af_bella` 或实时 Kokoro。
-- 如需上传男声例句，建议只传 `am_michael` 目录并抽查公开 URL：`npm run audio:upload-r2 -- --bucket english-flashcards-audio --source public/audio/examples/am_michael --prefix audio/examples/am_michael`。
+- 男声例句 `am_michael` 已完成 R2 上传和公开 URL 抽查；后续无需再重复上传，除非本地重新生成了例句音频。
 - 若继续扩展到更多 TOEFL Level，考虑把启动加载从全量 `vocabulary.json` 改为 `core.json + manifest`，再为普通分类补分片。
 - 阅读 CSV 导入已覆盖 `examType` / `questions`，后续可继续补重复、缺字段、tags 分隔和带引号换行内容的测试。
 - 如需更强多端同步语义，为 `wordProgress` 增加单词级 `updatedAt`，再按单词更新时间解决冲突。
