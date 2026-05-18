@@ -4,37 +4,6 @@ import AuthPanel from './AuthPanel';
 import QuickMenu from './QuickMenu';
 import { wordBelongsToCategory } from '../utils/wordCategories';
 
-const collectionCategories = [
-  {
-    id: 'learnedWords',
-    name: '已学习单词',
-    icon: '📖',
-    color: 'from-sky-500 to-blue-600',
-    type: 'collection',
-  },
-  {
-    id: 'masteredWords',
-    name: '已掌握单词',
-    icon: '✅',
-    color: 'from-emerald-500 to-teal-600',
-    type: 'collection',
-  },
-  {
-    id: 'todayReview',
-    name: '今日复习',
-    icon: '🔁',
-    color: 'from-blue-500 to-indigo-600',
-    type: 'collection',
-  },
-  {
-    id: 'wrongWords',
-    name: '错题本',
-    icon: '🧯',
-    color: 'from-rose-500 to-orange-500',
-    type: 'collection',
-  },
-];
-
 const matchesWordQuery = (word, query) =>
   word.word.toLowerCase().includes(query) ||
   word.meaning.toLowerCase().includes(query) ||
@@ -95,18 +64,11 @@ function HomeScreen({
     return new Set();
   }, [learnedIdSet, masteredIdSet, todayReviewIdSet, wrongIdSet]);
 
-  const categoriesWithCollections = useMemo(() => {
-    const ieltsIndex = categories.findIndex((category) => category.id === 'ielts');
-    if (ieltsIndex === -1) {
-      return [...categories, ...collectionCategories];
-    }
-
-    return [
-      ...categories.slice(0, ieltsIndex + 1),
-      ...collectionCategories,
-      ...categories.slice(ieltsIndex + 1),
-    ];
-  }, []);
+  const categoriesWithCollections = useMemo(() => categories, []);
+  const vocabularyCategoryCount = useMemo(
+    () => categoriesWithCollections.filter((category) => category.id !== 'all' && category.type !== 'collection').length,
+    [categoriesWithCollections]
+  );
 
   const filteredCategories = useMemo(() => {
     if (!debouncedQuery) {
@@ -259,7 +221,7 @@ function HomeScreen({
           </div>
 
           <div className="learn-refresh-progress">
-            <p className="learn-refresh-progress-main">{categoriesWithCollections.length} 类</p>
+            <p className="learn-refresh-progress-main">{vocabularyCategoryCount} 类</p>
             <p className="learn-refresh-progress-sub">单词分类</p>
           </div>
 
@@ -353,7 +315,7 @@ function HomeScreen({
               <p className="reading-category-sub">
                 {debouncedQuery
                   ? `共 ${filteredCategories.length} 个匹配分类`
-                  : `共 ${categoriesWithCollections.length} 个分类`}
+                  : `共 ${vocabularyCategoryCount} 个词库分类`}
               </p>
             </div>
 
@@ -392,7 +354,7 @@ function HomeScreen({
                 <p className="text-sm text-[#6b7280]">总词汇量</p>
               </article>
               <article className="word-home-stat-card">
-                <p className="text-2xl font-semibold text-[#111827]">{categoriesWithCollections.length}</p>
+                <p className="text-2xl font-semibold text-[#111827]">{vocabularyCategoryCount}</p>
                 <p className="text-sm text-[#6b7280]">学习分类</p>
               </article>
               <article className="word-home-stat-card">

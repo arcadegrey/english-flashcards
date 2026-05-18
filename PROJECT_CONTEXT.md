@@ -92,11 +92,12 @@
   - 预览导入结果：`npm run words:import -- /absolute/path/to/file.csv --dry-run`
 - 单词导入会按小写 word 去重；新 id 从现有最大 id + 1 开始。
 - 分类通过 `parseCategoryList` 解析，只保留有效分类；无有效分类时默认 `daily`。
+- 当前词库分类已收敛为：`daily` 日常常用、`cet4` 四级核心、`cet6` 六级核心、`toefl` 托福词汇、`ielts` 雅思词汇；`all` 仅作为“全部单词”入口，不是实际词条分类。旧的 `academic/business/travel/food/emotion/technology/medical` 已合并到 `daily`。
 - 仅当分类包含 `toefl` 时才写入规范化后的 `level` / `list` 数字标签。
 - `--upsert` 行为边界：
   - 不会丢掉旧分类。重复词会通过 `mergeCategoryLists` 合并旧 `category/categories` 和 CSV 的 `category/categories`，例如原本 `daily`、CSV 为 `toefl`，结果包含 `["daily", "toefl"]`。
-  - 会用 CSV 中的非空字段更新重复词的 `phonetic`、`pos`、`meaning`、`example`、`exampleCn`。
-  - 如果合并后词条属于 TOEFL，会用 CSV 的 `level/list` 优先更新 TOEFL 位置；CSV 没有时保留旧的规范化 `level/list`。
+  - 重复词不会再用 CSV 覆盖已有 `phonetic`、`pos`、`meaning`、`example`、`exampleCn`，避免已录制的单词/例句音频因内容字段变化而需要重录。
+  - 如果合并后词条属于 TOEFL，会优先保留旧的 `level/list`；旧词缺少位置时才用 CSV 的 `level/list` 补全 TOEFL 位置。
   - 如果合并后词条不属于 TOEFL，会删除 `level/list`。
 - 每次非 dry-run 的 `words:import` 成功后，都会自动调用 `splitVocabulary()` 刷新分片文件。
 - 手动刷新分片可运行 `npm run words:split`。它会从 `public/data/vocabulary.json` 重新生成：
@@ -151,7 +152,7 @@
 - Worker 发送验证码依赖 Resend；本地或测试环境若缺少环境变量，登录链路会直接失败。
 - CSV 解析器是自实现，不支持复杂 Excel 方言或分号分隔文件。
 - 目前仍然启动时加载完整 `public/data/vocabulary.json`，TOEFL 分片主要用于目录和具体 List 的按需补强加载；若未来词库继续变大，可以进一步改成“启动只加载 core + manifest，选择分类/列表时再加载分片”。
-- `--upsert` 会更新重复词的释义/例句等内容字段，若某些旧释义需要保留，导入前要先 dry-run 并人工检查重复词。
+- `--upsert` 对重复词只合并分类，并只在旧词缺少 TOEFL 位置时补 `level/list`；不会覆盖已有释义、例句、音标或词性，因此不会因 CSV 重导入触发已录制音频内容变化。
 - `npm run worker:dev` 缺少本地 `wrangler` 依赖的风险已处理：`wrangler` 已加入 devDependencies，当前版本为 4.92.0。已验证 Worker 可启动到 `http://localhost:8787`，`GET /api/auth/me` 在未登录状态下正常返回 401。
 - 本地前端 `npm run dev` 可正常启动；如果 `5173` 被占用，Vite 会自动切到下一个端口，例如 `5174`。
 - Codex 内置 Browser 连接本地页面时曾多次超时，但同一端口用 `curl -I` 返回 200；如果要做 UI 截图验证，可能需要先解决 Browser/reconnect 问题或改用其他验证方式。

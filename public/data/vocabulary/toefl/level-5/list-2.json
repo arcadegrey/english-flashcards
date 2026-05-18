@@ -71,9 +71,9 @@
     "meaning": "砍/切/猪排",
     "example": "She used a knife to chop the vegetables.",
     "exampleCn": "她用刀切蔬菜。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food",
+      "daily",
       "toefl"
     ],
     "level": "5",
@@ -90,7 +90,7 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "business"
+      "daily"
     ],
     "level": "5",
     "list": "2"

@@ -41,6 +41,43 @@ const normalizeNumericTag = (value) => {
   return String(parsed);
 };
 
+export const mergeVocabularyUpsertWord = (current, incoming) => {
+  const categories = mergeCategoryLists(
+    current.categories,
+    current.category,
+    incoming.categories,
+    incoming.category
+  );
+  const mergedCategory = current.category || incoming.category || categories[0] || 'daily';
+  const nextWord = {
+    ...current,
+    category: mergedCategory,
+    categories: categories.length > 0 ? categories : [mergedCategory],
+  };
+
+  if (wordHasToeflCategory(nextWord)) {
+    const nextLevel = normalizeNumericTag(current.level) || normalizeNumericTag(incoming.level);
+    const nextList = normalizeNumericTag(current.list) || normalizeNumericTag(incoming.list);
+
+    if (nextLevel) {
+      nextWord.level = nextLevel;
+    } else {
+      delete nextWord.level;
+    }
+
+    if (nextList) {
+      nextWord.list = nextList;
+    } else {
+      delete nextWord.list;
+    }
+  } else {
+    delete nextWord.level;
+    delete nextWord.list;
+  }
+
+  return nextWord;
+};
+
 const loadExistingVocabulary = async () => {
   const text = await fs.readFile(vocabularyFilePath, 'utf8');
   const vocabulary = JSON.parse(text);
@@ -93,45 +130,7 @@ const main = async () => {
       if (byWord.has(key)) {
         const idx = byWord.get(key);
         const current = merged[idx];
-        const categories = mergeCategoryLists(
-          current.categories,
-          current.category,
-          incoming.categories,
-          incoming.category
-        );
-        const mergedCategory = current.category || incoming.category || categories[0] || 'daily';
-        const nextWord = {
-          ...current,
-          phonetic: incoming.phonetic || current.phonetic || '',
-          pos: incoming.pos || current.pos || '',
-          meaning: incoming.meaning || current.meaning || '',
-          example: incoming.example || current.example || '',
-          exampleCn: incoming.exampleCn || current.exampleCn || '',
-          category: mergedCategory,
-          categories: categories.length > 0 ? categories : [mergedCategory],
-        };
-
-        if (wordHasToeflCategory(nextWord)) {
-          const nextLevel = normalizeNumericTag(incoming.level) || normalizeNumericTag(current.level);
-          const nextList = normalizeNumericTag(incoming.list) || normalizeNumericTag(current.list);
-
-          if (nextLevel) {
-            nextWord.level = nextLevel;
-          } else {
-            delete nextWord.level;
-          }
-
-          if (nextList) {
-            nextWord.list = nextList;
-          } else {
-            delete nextWord.list;
-          }
-        } else {
-          delete nextWord.level;
-          delete nextWord.list;
-        }
-
-        merged[idx] = nextWord;
+        merged[idx] = mergeVocabularyUpsertWord(current, incoming);
         updated += 1;
       } else {
         const nextWord = {
@@ -200,7 +199,9 @@ const main = async () => {
   );
 };
 
-main().catch((error) => {
-  console.error('Import failed:', error.message || error);
-  process.exit(1);
-});
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((error) => {
+    console.error('Import failed:', error.message || error);
+    process.exit(1);
+  });
+}

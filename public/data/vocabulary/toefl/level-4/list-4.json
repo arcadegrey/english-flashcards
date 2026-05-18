@@ -71,9 +71,9 @@
     "meaning": "使厌烦/钻孔/令人厌烦的人",
     "example": "The drill can bore a hole through the rock.",
     "exampleCn": "钻头可以在岩石上钻孔。",
-    "category": "emotion",
+    "category": "daily",
     "categories": [
-      "emotion",
+      "daily",
       "toefl"
     ],
     "level": "4",
@@ -103,9 +103,9 @@
     "meaning": "类别",
     "example": "Each animal belongs to a different category.",
     "exampleCn": "每种动物属于不同的类别。",
-    "category": "academic",
+    "category": "daily",
     "categories": [
-      "academic",
+      "daily",
       "toefl"
     ],
     "level": "4",

@@ -119,9 +119,9 @@
     "meaning": "自夸/拥有/夸耀",
     "example": "The city boasts several excellent museums.",
     "exampleCn": "这座城市拥有几家很棒的博物馆。",
-    "category": "emotion",
+    "category": "daily",
     "categories": [
-      "emotion",
+      "daily",
       "toefl"
     ],
     "level": "4",
@@ -151,9 +151,9 @@
     "meaning": "目录/编目/登记",
     "example": "The library began to catalog its old maps.",
     "exampleCn": "图书馆开始为旧地图编目。",
-    "category": "business",
+    "category": "daily",
     "categories": [
-      "business",
+      "daily",
       "toefl"
     ],
     "level": "4",

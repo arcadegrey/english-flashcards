@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
+import { mergeVocabularyUpsertWord } from '../scripts/import-global-vocabulary.mjs'
 import { parseReadingCsv, parseVocabularyCsv } from '../src/utils/csvImport.js'
 
 const validCategoryIds = ['daily', 'cet4', 'toefl']
@@ -63,6 +64,45 @@ test('parseVocabularyCsv handles quoted commas, escaped quotes, and newlines', (
   assert.equal(summary.importedCount, 1)
   assert.equal(importedWords[0].meaning, '短语,表达')
   assert.equal(importedWords[0].example, 'He said "hello"\nagain.')
+})
+
+test('mergeVocabularyUpsertWord preserves existing content while adding categories', () => {
+  const current = {
+    id: 1,
+    word: 'abandon',
+    phonetic: '/əˈbændən/',
+    pos: 'v.',
+    meaning: '放弃；抛弃',
+    example: 'They had to abandon the plan.',
+    exampleCn: '他们不得不放弃这个计划。',
+    category: 'daily',
+    categories: ['daily'],
+  }
+
+  const incoming = {
+    word: 'abandon',
+    phonetic: '/new/',
+    pos: 'n.',
+    meaning: '新的释义',
+    example: 'A different sentence for TTS.',
+    exampleCn: '新的例句翻译。',
+    category: 'toefl',
+    categories: ['toefl'],
+    level: 'Level 3',
+    list: 'List 2',
+  }
+
+  const merged = mergeVocabularyUpsertWord(current, incoming)
+
+  assert.equal(merged.phonetic, current.phonetic)
+  assert.equal(merged.pos, current.pos)
+  assert.equal(merged.meaning, current.meaning)
+  assert.equal(merged.example, current.example)
+  assert.equal(merged.exampleCn, current.exampleCn)
+  assert.deepEqual(merged.categories, ['daily', 'toefl'])
+  assert.equal(merged.category, 'daily')
+  assert.equal(merged.level, '3')
+  assert.equal(merged.list, '2')
 })
 
 test('parseReadingCsv imports exam type and JSON questions', () => {

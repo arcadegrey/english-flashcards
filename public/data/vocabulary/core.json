@@ -1359,9 +1359,9 @@
     "meaning": "面包店",
     "example": "The bakery sells fresh bread every morning.",
     "exampleCn": "这家面包店每天早上卖新鲜面包。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -1411,9 +1411,9 @@
     "meaning": "绷带",
     "example": "The nurse wrapped a bandage around his arm.",
     "exampleCn": "护士用绷带包扎了他的手臂。",
-    "category": "medical",
+    "category": "daily",
     "categories": [
-      "medical"
+      "daily"
     ]
   },
   {
@@ -1424,9 +1424,9 @@
     "meaning": "宴会",
     "example": "The wedding banquet was held at a luxury hotel.",
     "exampleCn": "婚宴在一家豪华酒店举行。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -1476,9 +1476,9 @@
     "meaning": "电池",
     "example": "My phone battery is almost dead.",
     "exampleCn": "我的手机电池快没电了。",
-    "category": "technology",
+    "category": "daily",
     "categories": [
-      "technology"
+      "daily"
     ]
   },
   {
@@ -1489,9 +1489,9 @@
     "meaning": "海湾",
     "example": "The ship sailed into the bay.",
     "exampleCn": "船驶入海湾。",
-    "category": "travel",
+    "category": "daily",
     "categories": [
-      "travel"
+      "daily"
     ]
   },
   {
@@ -1554,9 +1554,9 @@
     "meaning": "牛肉",
     "example": "I ordered beef steak for dinner.",
     "exampleCn": "我晚餐点了牛肉牛排。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -1567,9 +1567,9 @@
     "meaning": "啤酒",
     "example": "He enjoys drinking beer with friends.",
     "exampleCn": "他喜欢和朋友一起喝啤酒。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -1593,9 +1593,9 @@
     "meaning": "乞求，请求",
     "example": "He begged her to forgive him.",
     "exampleCn": "他恳求她原谅他。",
-    "category": "emotion",
+    "category": "daily",
     "categories": [
-      "emotion"
+      "daily"
     ]
   },
   {
@@ -1619,9 +1619,9 @@
     "meaning": "代表",
     "example": "I'm speaking on behalf of the team.",
     "exampleCn": "我代表团队发言。",
-    "category": "business",
+    "category": "daily",
     "categories": [
-      "business"
+      "daily"
     ]
   },
   {
@@ -1671,9 +1671,9 @@
     "meaning": "腰带；带",
     "example": "Fasten your seat belt before takeoff.",
     "exampleCn": "起飞前系好安全带。",
-    "category": "travel",
+    "category": "daily",
     "categories": [
-      "travel"
+      "daily"
     ]
   },
   {
@@ -1710,9 +1710,9 @@
     "meaning": "有益的",
     "example": "Exercise is beneficial to health.",
     "exampleCn": "运动对健康有益。",
-    "category": "medical",
+    "category": "daily",
     "categories": [
-      "medical"
+      "daily"
     ]
   },
   {
@@ -1723,9 +1723,9 @@
     "meaning": "好处，利益；受益",
     "example": "The new policy will benefit everyone.",
     "exampleCn": "新政策将使每个人受益。",
-    "category": "business",
+    "category": "daily",
     "categories": [
-      "business"
+      "daily"
     ]
   },
   {
@@ -1736,9 +1736,9 @@
     "meaning": "浆果",
     "example": "Strawberries are my favorite berry.",
     "exampleCn": "草莓是我最喜欢的浆果。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -1762,9 +1762,9 @@
     "meaning": "背叛，出卖",
     "example": "He felt betrayed by his best friend.",
     "exampleCn": "他感到被他最好的朋友背叛了。",
-    "category": "emotion",
+    "category": "daily",
     "categories": [
-      "emotion"
+      "daily"
     ]
   },
   {
@@ -1775,9 +1775,9 @@
     "meaning": "饮料",
     "example": "Coffee is a popular beverage worldwide.",
     "exampleCn": "咖啡是一种全球流行的饮料。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -1853,9 +1853,9 @@
     "meaning": "生物学",
     "example": "Biology is the study of living organisms.",
     "exampleCn": "生物学是研究生物体的学科。",
-    "category": "academic",
+    "category": "daily",
     "categories": [
-      "academic"
+      "daily"
     ]
   },
   {
@@ -1892,9 +1892,9 @@
     "meaning": "饼干",
     "example": "She baked fresh biscuits for breakfast.",
     "exampleCn": "她烤了新鲜饼干当早餐。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -1918,9 +1918,9 @@
     "meaning": "苦的；痛苦的",
     "example": "The medicine tastes very bitter.",
     "exampleCn": "这药味道很苦。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -1931,9 +1931,9 @@
     "meaning": "黑板",
     "example": "The teacher wrote on the blackboard.",
     "exampleCn": "老师在黑板上写字。",
-    "category": "academic",
+    "category": "daily",
     "categories": [
-      "academic"
+      "daily"
     ]
   },
   {
@@ -1944,9 +1944,9 @@
     "meaning": "责备；责任",
     "example": "Don't blame others for your mistakes.",
     "exampleCn": "不要为你的错误责怪别人。",
-    "category": "emotion",
+    "category": "daily",
     "categories": [
-      "emotion"
+      "daily"
     ]
   },
   {
@@ -1970,9 +1970,9 @@
     "meaning": "流血",
     "example": "His nose started to bleed after the fall.",
     "exampleCn": "摔倒后他的鼻子开始流血。",
-    "category": "medical",
+    "category": "daily",
     "categories": [
-      "medical"
+      "daily"
     ]
   },
   {
@@ -1996,9 +1996,9 @@
     "meaning": "盲的；盲目的",
     "example": "He is blind in one eye.",
     "exampleCn": "他一只眼睛失明了。",
-    "category": "medical",
+    "category": "daily",
     "categories": [
-      "medical"
+      "daily"
     ]
   },
   {
@@ -2009,9 +2009,9 @@
     "meaning": "博客",
     "example": "She writes a blog about travel.",
     "exampleCn": "她写了一个关于旅行的博客。",
-    "category": "technology",
+    "category": "daily",
     "categories": [
-      "technology"
+      "daily"
     ]
   },
   {
@@ -2022,9 +2022,9 @@
     "meaning": "血，血液",
     "example": "Blood is essential for life.",
     "exampleCn": "血液对生命至关重要。",
-    "category": "medical",
+    "category": "daily",
     "categories": [
-      "medical"
+      "daily"
     ]
   },
   {
@@ -2061,9 +2061,9 @@
     "meaning": "蓝图，计划",
     "example": "The architect showed us the blueprint.",
     "exampleCn": "建筑师给我们看了蓝图。",
-    "category": "business",
+    "category": "daily",
     "categories": [
-      "business"
+      "daily"
     ]
   },
   {
@@ -2074,9 +2074,9 @@
     "meaning": "船，小船",
     "example": "We went fishing on a small boat.",
     "exampleCn": "我们乘小船去钓鱼。",
-    "category": "travel",
+    "category": "daily",
     "categories": [
-      "travel"
+      "daily"
     ]
   },
   {
@@ -2087,9 +2087,9 @@
     "meaning": "身体；主体",
     "example": "Regular exercise keeps your body healthy.",
     "exampleCn": "定期锻炼使你的身体保持健康。",
-    "category": "medical",
+    "category": "daily",
     "categories": [
-      "medical"
+      "daily"
     ]
   },
   {
@@ -2100,9 +2100,9 @@
     "meaning": "煮沸，沸腾",
     "example": "Boil the water before drinking.",
     "exampleCn": "饮用前把水煮沸。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -2126,9 +2126,9 @@
     "meaning": "骨头",
     "example": "The dog buried a bone in the yard.",
     "exampleCn": "狗在院子里埋了一根骨头。",
-    "category": "medical",
+    "category": "daily",
     "categories": [
-      "medical"
+      "daily"
     ]
   },
   {
@@ -2139,9 +2139,9 @@
     "meaning": "奖金；红利",
     "example": "Employees received a year-end bonus.",
     "exampleCn": "员工收到了年终奖金。",
-    "category": "business",
+    "category": "daily",
     "categories": [
-      "business"
+      "daily"
     ]
   },
   {
@@ -2165,9 +2165,9 @@
     "meaning": "靴子；后备箱",
     "example": "He put on his hiking boots.",
     "exampleCn": "他穿上了徒步靴。",
-    "category": "travel",
+    "category": "daily",
     "categories": [
-      "travel"
+      "daily"
     ]
   },
   {
@@ -2178,9 +2178,9 @@
     "meaning": "边界，边境",
     "example": "They crossed the border into France.",
     "exampleCn": "他们越过边境进入法国。",
-    "category": "travel",
+    "category": "daily",
     "categories": [
-      "travel"
+      "daily"
     ]
   },
   {
@@ -2191,9 +2191,9 @@
     "meaning": "无聊的",
     "example": "This movie is so boring.",
     "exampleCn": "这部电影太无聊了。",
-    "category": "emotion",
+    "category": "daily",
     "categories": [
-      "emotion"
+      "daily"
     ]
   },
   {
@@ -2270,9 +2270,9 @@
     "meaning": "碗",
     "example": "She served soup in a large bowl.",
     "exampleCn": "她用大碗盛汤。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -2309,9 +2309,9 @@
     "meaning": "大脑，脑筋",
     "example": "The brain controls the body.",
     "exampleCn": "大脑控制着身体。",
-    "category": "medical",
+    "category": "daily",
     "categories": [
-      "medical"
+      "daily"
     ]
   },
   {
@@ -2335,9 +2335,9 @@
     "meaning": "树枝；分支",
     "example": "The bank has a branch downtown.",
     "exampleCn": "这家银行在市中心有一个分行。",
-    "category": "business",
+    "category": "daily",
     "categories": [
-      "business"
+      "daily"
     ]
   },
   {
@@ -2348,9 +2348,9 @@
     "meaning": "品牌，商标",
     "example": "What brand of phone do you use?",
     "exampleCn": "你用什么品牌的手机？",
-    "category": "business",
+    "category": "daily",
     "categories": [
-      "business"
+      "daily"
     ]
   },
   {
@@ -2361,9 +2361,9 @@
     "meaning": "勇敢的",
     "example": "She is a brave firefighter.",
     "exampleCn": "她是一名勇敢的消防员。",
-    "category": "emotion",
+    "category": "daily",
     "categories": [
-      "emotion"
+      "daily"
     ]
   },
   {
@@ -2374,9 +2374,9 @@
     "meaning": "面包",
     "example": "Fresh bread smells wonderful.",
     "exampleCn": "新鲜面包闻起来很香。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -2400,9 +2400,9 @@
     "meaning": "早餐",
     "example": "I have cereal for breakfast.",
     "exampleCn": "我早餐吃麦片。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -2413,9 +2413,9 @@
     "meaning": "呼吸，气息",
     "example": "Take a deep breath and relax.",
     "exampleCn": "深呼吸，放松一下。",
-    "category": "medical",
+    "category": "daily",
     "categories": [
-      "medical"
+      "daily"
     ]
   },
   {
@@ -2426,9 +2426,9 @@
     "meaning": "呼吸",
     "example": "It's hard to breathe in this room.",
     "exampleCn": "在这个房间里很难呼吸。",
-    "category": "medical",
+    "category": "daily",
     "categories": [
-      "medical"
+      "daily"
     ]
   },
   {
@@ -2478,9 +2478,9 @@
     "meaning": "桥；桥梁",
     "example": "The Golden Gate Bridge is famous.",
     "exampleCn": "金门大桥很有名。",
-    "category": "travel",
+    "category": "daily",
     "categories": [
-      "travel"
+      "daily"
     ]
   },
   {
@@ -2543,9 +2543,9 @@
     "meaning": "广播；播送",
     "example": "The news was broadcast live.",
     "exampleCn": "新闻被现场直播。",
-    "category": "technology",
+    "category": "daily",
     "categories": [
-      "technology"
+      "daily"
     ]
   },
   {
@@ -2556,9 +2556,9 @@
     "meaning": "小册子",
     "example": "The travel brochure has useful information.",
     "exampleCn": "这本旅游手册有有用的信息。",
-    "category": "travel",
+    "category": "daily",
     "categories": [
-      "travel"
+      "daily"
     ]
   },
   {
@@ -2712,9 +2712,9 @@
     "meaning": "负担，重担",
     "example": "The debt was a heavy burden.",
     "exampleCn": "债务是一个沉重的负担。",
-    "category": "emotion",
+    "category": "daily",
     "categories": [
-      "emotion"
+      "daily"
     ]
   },
   {
@@ -2725,9 +2725,9 @@
     "meaning": "公共汽车",
     "example": "I take the bus to work every day.",
     "exampleCn": "我每天乘公共汽车上班。",
-    "category": "travel",
+    "category": "daily",
     "categories": [
-      "travel"
+      "daily"
     ]
   },
   {
@@ -2751,9 +2751,9 @@
     "meaning": "商业；生意；事务",
     "example": "He owns a small business.",
     "exampleCn": "他拥有一家小企业。",
-    "category": "business",
+    "category": "daily",
     "categories": [
-      "business"
+      "daily"
     ]
   },
   {
@@ -2777,9 +2777,9 @@
     "meaning": "黄油",
     "example": "She spread butter on the bread.",
     "exampleCn": "她把黄油涂在面包上。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -2790,9 +2790,9 @@
     "meaning": "按钮；纽扣",
     "example": "Press the red button to start.",
     "exampleCn": "按红色按钮启动。",
-    "category": "technology",
+    "category": "daily",
     "categories": [
-      "technology"
+      "daily"
     ]
   },
   {
@@ -2829,9 +2829,9 @@
     "meaning": "卷心菜",
     "example": "Cabbage is healthy and nutritious.",
     "exampleCn": "卷心菜健康有营养。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -2855,9 +2855,9 @@
     "meaning": "电缆；缆绳",
     "example": "The cable connects the computer to the printer.",
     "exampleCn": "这根电缆连接电脑和打印机。",
-    "category": "technology",
+    "category": "daily",
     "categories": [
-      "technology"
+      "daily"
     ]
   },
   {
@@ -2868,9 +2868,9 @@
     "meaning": "咖啡馆",
     "example": "Let's meet at the café for coffee.",
     "exampleCn": "我们在咖啡馆见面喝咖啡吧。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -2894,9 +2894,9 @@
     "meaning": "蛋糕",
     "example": "She baked a chocolate cake.",
     "exampleCn": "她烤了一个巧克力蛋糕。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -2920,9 +2920,9 @@
     "meaning": "平静的；冷静的",
     "example": "Stay calm in an emergency.",
     "exampleCn": "在紧急情况下保持冷静。",
-    "category": "emotion",
+    "category": "daily",
     "categories": [
-      "emotion"
+      "daily"
     ]
   },
   {
@@ -2933,9 +2933,9 @@
     "meaning": "照相机",
     "example": "She took photos with her camera.",
     "exampleCn": "她用相机拍照。",
-    "category": "technology",
+    "category": "daily",
     "categories": [
-      "technology"
+      "daily"
     ]
   },
   {
@@ -2946,9 +2946,9 @@
     "meaning": "营地；露营",
     "example": "We set up camp near the lake.",
     "exampleCn": "我们在湖边扎营。",
-    "category": "travel",
+    "category": "daily",
     "categories": [
-      "travel"
+      "daily"
     ]
   },
   {
@@ -2959,9 +2959,9 @@
     "meaning": "校园",
     "example": "The university has a beautiful campus.",
     "exampleCn": "这所大学有一个美丽的校园。",
-    "category": "academic",
+    "category": "daily",
     "categories": [
-      "academic"
+      "daily"
     ]
   },
   {
@@ -2998,9 +2998,9 @@
     "meaning": "糖果",
     "example": "Children love eating candy.",
     "exampleCn": "孩子们喜欢吃糖果。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -3063,9 +3063,9 @@
     "meaning": "碳",
     "example": "Carbon dioxide is a greenhouse gas.",
     "exampleCn": "二氧化碳是一种温室气体。",
-    "category": "academic",
+    "category": "daily",
     "categories": [
-      "academic"
+      "daily"
     ]
   },
   {
@@ -3102,9 +3102,9 @@
     "meaning": "职业，事业",
     "example": "She wants a career in medicine.",
     "exampleCn": "她想在医学领域发展事业。",
-    "category": "business",
+    "category": "daily",
     "categories": [
-      "business"
+      "daily"
     ]
   },
   {
@@ -3141,9 +3141,9 @@
     "meaning": "胡萝卜",
     "example": "Rabbits love eating carrots.",
     "exampleCn": "兔子喜欢吃胡萝卜。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -3193,9 +3193,9 @@
     "meaning": "现金",
     "example": "Do you accept cash payment?",
     "exampleCn": "你们接受现金支付吗？",
-    "category": "business",
+    "category": "daily",
     "categories": [
-      "business"
+      "daily"
     ]
   },
   {
@@ -3206,9 +3206,9 @@
     "meaning": "城堡",
     "example": "The old castle attracts many tourists.",
     "exampleCn": "古老的城堡吸引了许多游客。",
-    "category": "travel",
+    "category": "daily",
     "categories": [
-      "travel"
+      "daily"
     ]
   },
   {
@@ -3271,9 +3271,9 @@
     "meaning": "洞穴",
     "example": "Explorers discovered a hidden cave.",
     "exampleCn": "探险家发现了一个隐藏的洞穴。",
-    "category": "travel",
+    "category": "daily",
     "categories": [
-      "travel"
+      "daily"
     ]
   },
   {
@@ -3362,9 +3362,9 @@
     "meaning": "证书",
     "example": "She received a certificate of completion.",
     "exampleCn": "她获得了结业证书。",
-    "category": "academic",
+    "category": "daily",
     "categories": [
-      "academic"
+      "daily"
     ]
   },
   {
@@ -3427,9 +3427,9 @@
     "meaning": "章，回",
     "example": "Read chapter five for homework.",
     "exampleCn": "阅读第五章作为作业。",
-    "category": "academic",
+    "category": "daily",
     "categories": [
-      "academic"
+      "daily"
     ]
   },
   {
@@ -3453,9 +3453,9 @@
     "meaning": "魅力；符咒",
     "example": "Her charm attracted everyone.",
     "exampleCn": "她的魅力吸引了所有人。",
-    "category": "emotion",
+    "category": "daily",
     "categories": [
-      "emotion"
+      "daily"
     ]
   },
   {
@@ -3492,9 +3492,9 @@
     "meaning": "欺骗，作弊",
     "example": "He cheated on the exam.",
     "exampleCn": "他考试作弊。",
-    "category": "emotion",
+    "category": "daily",
     "categories": [
-      "emotion"
+      "daily"
     ]
   },
   {
@@ -3518,9 +3518,9 @@
     "meaning": "欢呼；使振奋",
     "example": "The crowd cheered loudly.",
     "exampleCn": "人群大声欢呼。",
-    "category": "emotion",
+    "category": "daily",
     "categories": [
-      "emotion"
+      "daily"
     ]
   },
   {
@@ -3531,9 +3531,9 @@
     "meaning": "奶酪",
     "example": "Would you like some cheese?",
     "exampleCn": "你想要一些奶酪吗？",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -3544,9 +3544,9 @@
     "meaning": "厨师长",
     "example": "The chef prepared a delicious meal.",
     "exampleCn": "厨师长准备了一顿美味的饭菜。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -3557,9 +3557,9 @@
     "meaning": "化学的；化学品",
     "example": "Chemical reactions occur in the body.",
     "exampleCn": "化学反应发生在体内。",
-    "category": "academic",
+    "category": "daily",
     "categories": [
-      "academic"
+      "daily"
     ]
   },
   {
@@ -3570,9 +3570,9 @@
     "meaning": "化学",
     "example": "Chemistry is my favorite subject.",
     "exampleCn": "化学是我最喜欢的科目。",
-    "category": "academic",
+    "category": "daily",
     "categories": [
-      "academic"
+      "daily"
     ]
   },
   {
@@ -3596,9 +3596,9 @@
     "meaning": "胸部；箱子",
     "example": "He has pain in his chest.",
     "exampleCn": "他胸部疼痛。",
-    "category": "medical",
+    "category": "daily",
     "categories": [
-      "medical"
+      "daily"
     ]
   },
   {
@@ -3609,9 +3609,9 @@
     "meaning": "鸡；鸡肉",
     "example": "We had roast chicken for dinner.",
     "exampleCn": "我们晚餐吃了烤鸡。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -3635,9 +3635,9 @@
     "meaning": "童年",
     "example": "My childhood was very happy.",
     "exampleCn": "我的童年很幸福。",
-    "category": "emotion",
+    "category": "daily",
     "categories": [
-      "emotion"
+      "daily"
     ]
   },
   {
@@ -3648,9 +3648,9 @@
     "meaning": "巧克力",
     "example": "I love eating chocolate.",
     "exampleCn": "我喜欢吃巧克力。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -3700,9 +3700,9 @@
     "meaning": "香烟",
     "example": "Smoking cigarettes is harmful to health.",
     "exampleCn": "吸烟有害健康。",
-    "category": "medical",
+    "category": "daily",
     "categories": [
-      "medical"
+      "daily"
     ]
   },
   {
@@ -3739,9 +3739,9 @@
     "meaning": "电路；巡回",
     "example": "The electrical circuit is broken.",
     "exampleCn": "电路断了。",
-    "category": "technology",
+    "category": "daily",
     "categories": [
-      "technology"
+      "daily"
     ]
   },
   {
@@ -3752,9 +3752,9 @@
     "meaning": "引用",
     "example": "Don't forget to cite your sources.",
     "exampleCn": "别忘了引用你的来源。",
-    "category": "academic",
+    "category": "daily",
     "categories": [
-      "academic"
+      "daily"
     ]
   },
   {
@@ -3817,9 +3817,9 @@
     "meaning": "教室",
     "example": "The classroom is full of students.",
     "exampleCn": "教室里坐满了学生。",
-    "category": "academic",
+    "category": "daily",
     "categories": [
-      "academic"
+      "daily"
     ]
   },
   {
@@ -3869,9 +3869,9 @@
     "meaning": "职员；店员",
     "example": "The clerk helped me find the product.",
     "exampleCn": "店员帮我找到了产品。",
-    "category": "business",
+    "category": "daily",
     "categories": [
-      "business"
+      "daily"
     ]
   },
   {
@@ -3895,9 +3895,9 @@
     "meaning": "点击；咔哒声",
     "example": "Click the button to continue.",
     "exampleCn": "点击按钮继续。",
-    "category": "technology",
+    "category": "daily",
     "categories": [
-      "technology"
+      "daily"
     ]
   },
   {
@@ -3908,9 +3908,9 @@
     "meaning": "客户",
     "example": "The client was satisfied with the service.",
     "exampleCn": "客户对服务很满意。",
-    "category": "business",
+    "category": "daily",
     "categories": [
-      "business"
+      "daily"
     ]
   },
   {
@@ -3921,9 +3921,9 @@
     "meaning": "气候",
     "example": "The climate here is mild.",
     "exampleCn": "这里的气候温和。",
-    "category": "academic",
+    "category": "daily",
     "categories": [
-      "academic"
+      "daily"
     ]
   },
   {
@@ -3947,9 +3947,9 @@
     "meaning": "诊所",
     "example": "She went to the clinic for a checkup.",
     "exampleCn": "她去诊所体检。",
-    "category": "medical",
+    "category": "daily",
     "categories": [
-      "medical"
+      "daily"
     ]
   },
   {
@@ -4064,9 +4064,9 @@
     "meaning": "海岸",
     "example": "They drove along the coast.",
     "exampleCn": "他们沿着海岸开车。",
-    "category": "travel",
+    "category": "daily",
     "categories": [
-      "travel"
+      "daily"
     ]
   },
   {
@@ -4090,9 +4090,9 @@
     "meaning": "咖啡",
     "example": "I need a cup of coffee in the morning.",
     "exampleCn": "我早上需要一杯咖啡。",
-    "category": "food",
+    "category": "daily",
     "categories": [
-      "food"
+      "daily"
     ]
   },
   {
@@ -4155,9 +4155,9 @@
     "meaning": "学院；大学",
     "example": "He goes to college in Boston.",
     "exampleCn": "他在波士顿上大学。",
-    "category": "academic",
+    "category": "daily",
     "categories": [
-      "academic"
+      "daily"
     ]
   },
   {
@@ -4194,9 +4194,9 @@
     "meaning": "舒适；安慰",
     "example": "The hotel offers comfort and luxury.",
     "exampleCn": "这家酒店提供舒适和奢华。",
-    "category": "emotion",
+    "category": "daily",
     "categories": [
-      "emotion"
+      "daily"
     ]
   }
 ]

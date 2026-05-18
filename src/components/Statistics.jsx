@@ -103,7 +103,7 @@ function Statistics({
             className={`rounded-[16px] border p-4 text-center ${
               card.tone === 'blue'
                 ? 'border-[#0071e3] bg-[#0071e3] text-white'
-                : 'border-[#e8e8ed] bg-[#fbfbfd] text-[#1d1d1f]'
+                : 'border-[#cfd4dc] bg-[#fbfbfd] text-[#1d1d1f] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.72)]'
             }`}
           >
             <p className={`text-sm ${card.tone === 'blue' ? 'text-white/80' : 'text-[#6e6e73]'}`}>

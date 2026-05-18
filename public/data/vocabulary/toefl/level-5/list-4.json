@@ -23,9 +23,9 @@
     "meaning": "大教堂",
     "example": "The medieval cathedral attracts thousands of visitors.",
     "exampleCn": "这座中世纪大教堂吸引了成千上万的游客。",
-    "category": "travel",
+    "category": "daily",
     "categories": [
-      "travel",
+      "daily",
       "toefl"
     ],
     "level": "5",
@@ -39,9 +39,9 @@
     "meaning": "链条/连锁/束缚",
     "example": "A chain of events led to the final decision.",
     "exampleCn": "一连串事件导致了最终决定。",
-    "category": "business",
+    "category": "daily",
     "categories": [
-      "business",
+      "daily",
       "toefl"
     ],
     "level": "5",

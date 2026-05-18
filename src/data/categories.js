@@ -10,57 +10,8 @@ export const categories = [
     id: 'daily', 
     name: '日常常用', 
     icon: '🏠', 
-    description: '日常生活中最常用的单词',
+    description: '日常、学术、商务、旅行、饮食、情感、科技和健康等基础场景词汇',
     color: 'from-green-500 to-emerald-500'
-  },
-  { 
-    id: 'academic', 
-    name: '学术词汇', 
-    icon: '🎓', 
-    description: '学术论文、研究报告常用词',
-    color: 'from-blue-500 to-cyan-500'
-  },
-  { 
-    id: 'business', 
-    name: '商务英语', 
-    icon: '💼', 
-    description: '职场、商务场景常用词',
-    color: 'from-orange-500 to-amber-500'
-  },
-  { 
-    id: 'travel', 
-    name: '旅游出行', 
-    icon: '✈️', 
-    description: '旅行、交通相关词汇',
-    color: 'from-sky-500 to-blue-500'
-  },
-  { 
-    id: 'food', 
-    name: '饮食文化', 
-    icon: '🍽️', 
-    description: '食物、饮料、餐饮词汇',
-    color: 'from-red-500 to-pink-500'
-  },
-  { 
-    id: 'emotion', 
-    name: '情感表达', 
-    icon: '💬', 
-    description: '表达情感、态度的词汇',
-    color: 'from-pink-500 to-rose-500'
-  },
-  { 
-    id: 'technology', 
-    name: '科技前沿', 
-    icon: '💻', 
-    description: '科技、互联网相关词汇',
-    color: 'from-violet-500 to-purple-500'
-  },
-  { 
-    id: 'medical', 
-    name: '医疗健康', 
-    icon: '🏥', 
-    description: '医疗、健康相关词汇',
-    color: 'from-teal-500 to-green-500'
   },
   { 
     id: 'cet4', 

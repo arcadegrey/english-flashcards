@@ -90,7 +90,7 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "emotion"
+      "daily"
     ],
     "level": "3",
     "list": "9"
@@ -106,7 +106,7 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "medical"
+      "daily"
     ],
     "level": "3",
     "list": "9"
