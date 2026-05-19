@@ -204,12 +204,15 @@ export const parseVocabularyCsv = ({
       category,
       categories,
     };
-    if (categories.includes('toefl')) {
-      if (level) {
+    if (categories.includes('toefl') || categories.includes('ielts')) {
+      if (categories.includes('toefl') && level) {
         normalizedWord.level = level;
       }
-      if (list) {
+      if (categories.includes('toefl') && list) {
         normalizedWord.list = list;
+      }
+      if (categories.includes('ielts') && list) {
+        normalizedWord.ieltsList = list;
       }
     }
 

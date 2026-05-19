@@ -1123,10 +1123,12 @@
     "exampleCn": "地壳被分成移动的板块。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "1"
   },
   {
     "id": 2891,

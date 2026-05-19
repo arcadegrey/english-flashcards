@@ -167,10 +167,12 @@
     "exampleCn": "肥沃的土壤常常堆积在河流三角洲。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "1"
   },
   {
     "id": 1719,
@@ -557,10 +559,12 @@
     "exampleCn": "清晨薄雾笼罩着山谷。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "1"
   },
   {
     "id": 1745,
@@ -1262,10 +1266,12 @@
     "exampleCn": "仙人掌在干旱气候中生长良好。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "2"
   },
   {
     "id": 1792,
@@ -1472,10 +1478,12 @@
     "exampleCn": "大雨会淹没河边的低洼地区。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "1"
   },
   {
     "id": 1806,

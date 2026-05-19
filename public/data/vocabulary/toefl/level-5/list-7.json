@@ -1165,10 +1165,12 @@
     "exampleCn": "她从海滩上捡起一块光滑的小石子。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "1"
   },
   {
     "id": 3090,

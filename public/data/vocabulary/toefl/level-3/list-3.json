@@ -294,10 +294,12 @@
     "exampleCn": "这座火山去年喷发了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "1"
   },
   {
     "id": 688,
@@ -849,10 +851,12 @@
     "exampleCn": "地震是一场灾难。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "1"
   },
   {
     "id": 725,

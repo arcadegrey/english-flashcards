@@ -335,10 +335,12 @@
     "exampleCn": "塑料在环境中可能会缓慢降解。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "2"
   },
   {
     "id": 2005,

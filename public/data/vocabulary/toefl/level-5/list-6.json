@@ -10,10 +10,12 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "1"
   },
   {
     "id": 134,

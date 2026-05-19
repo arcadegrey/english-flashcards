@@ -1376,8 +1376,10 @@
     "exampleCn": "局势因暴风雨而恶化。",
     "category": "cet4",
     "categories": [
-      "cet4"
-    ]
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "2"
   },
   {
     "id": 97,
@@ -1742,10 +1744,12 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "1"
   },
   {
     "id": 123,
@@ -2685,10 +2689,12 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "1"
   },
   {
     "id": 187,
@@ -4329,8 +4335,10 @@
     "exampleCn": "轻柔的微风吹自大海。",
     "category": "daily",
     "categories": [
-      "daily"
-    ]
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "1"
   },
   {
     "id": 307,
@@ -5577,8 +5585,10 @@
     "exampleCn": "探险家发现了一个隐藏的洞穴。",
     "category": "daily",
     "categories": [
-      "daily"
-    ]
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "1"
   },
   {
     "id": 397,
@@ -6563,8 +6573,10 @@
     "exampleCn": "这里的气候温和。",
     "category": "daily",
     "categories": [
-      "daily"
-    ]
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "2"
   },
   {
     "id": 468,
@@ -6754,8 +6766,10 @@
     "exampleCn": "他们沿着海岸开车。",
     "category": "daily",
     "categories": [
-      "daily"
-    ]
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "2"
   },
   {
     "id": 482,
@@ -7386,10 +7400,12 @@
     "exampleCn": "飓风造成了广泛的破坏。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "1"
   },
   {
     "id": 525,
@@ -7491,10 +7507,12 @@
     "exampleCn": "北极熊生活在北极。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "2"
   },
   {
     "id": 532,
@@ -7986,10 +8004,12 @@
     "exampleCn": "太阳落到了地平线以下。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "1"
   },
   {
     "id": 565,
@@ -8331,10 +8351,12 @@
     "exampleCn": "南极洲被冰雪覆盖。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "2"
   },
   {
     "id": 588,
@@ -9832,10 +9854,12 @@
     "exampleCn": "这座火山去年喷发了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "1"
   },
   {
     "id": 688,
@@ -10387,10 +10411,12 @@
     "exampleCn": "地震是一场灾难。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "1"
   },
   {
     "id": 725,
@@ -12847,10 +12873,12 @@
     "exampleCn": "这张桌子表面很光滑。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "2"
   },
   {
     "id": 889,
@@ -13162,10 +13190,12 @@
     "exampleCn": "清理后地板仍然是湿的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "2"
   },
   {
     "id": 910,
@@ -13942,10 +13972,12 @@
     "exampleCn": "河岸附近的河水很浅。/他对这个问题的理解很肤浅。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "2"
   },
   {
     "id": 962,
@@ -15232,10 +15264,12 @@
     "exampleCn": "中国位于北半球。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "2"
   },
   {
     "id": 1048,
@@ -15952,10 +15986,12 @@
     "exampleCn": "那栋房子矗立在悬崖边。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "1"
   },
   {
     "id": 1096,
@@ -17602,10 +17638,12 @@
     "exampleCn": "铁会被磁铁吸引。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "1"
   },
   {
     "id": 1206,
@@ -18937,10 +18975,12 @@
     "exampleCn": "这个地区去年夏天遭受了严重干旱。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "1"
   },
   {
     "id": 1295,
@@ -22102,10 +22142,12 @@
     "exampleCn": "小路在接近山顶时变得陡峭。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "2"
   },
   {
     "id": 1506,
@@ -22912,10 +22954,12 @@
     "exampleCn": "如果压力继续积累，火山可能会喷发。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "1"
   },
   {
     "id": 1560,
@@ -23152,10 +23196,12 @@
     "exampleCn": "这两条路彼此平行。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "2"
   },
   {
     "id": 1576,
@@ -25297,10 +25343,12 @@
     "exampleCn": "肥沃的土壤常常堆积在河流三角洲。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "1"
   },
   {
     "id": 1719,
@@ -25687,10 +25735,12 @@
     "exampleCn": "清晨薄雾笼罩着山谷。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "1"
   },
   {
     "id": 1745,
@@ -26392,10 +26442,12 @@
     "exampleCn": "仙人掌在干旱气候中生长良好。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "2"
   },
   {
     "id": 1792,
@@ -26602,10 +26654,12 @@
     "exampleCn": "大雨会淹没河边的低洼地区。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "1"
   },
   {
     "id": 1806,
@@ -26662,10 +26716,12 @@
     "exampleCn": "工厂向空气中释放了有害烟雾。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "1"
   },
   {
     "id": 1810,
@@ -27847,10 +27903,12 @@
     "exampleCn": "雨后空气又热又潮湿。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "2"
   },
   {
     "id": 1889,
@@ -28117,10 +28175,12 @@
     "exampleCn": "这个论点的核心有有力证据支持。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "1"
   },
   {
     "id": 1907,
@@ -28942,10 +29002,12 @@
     "exampleCn": "粗糙的表面使这块石头很难打磨。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "2"
   },
   {
     "id": 1962,
@@ -29317,10 +29379,12 @@
     "exampleCn": "铁锈是一种常见的氧化铁。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "1"
   },
   {
     "id": 1987,
@@ -29587,10 +29651,12 @@
     "exampleCn": "塑料在环境中可能会缓慢降解。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "2"
   },
   {
     "id": 2005,
@@ -31147,10 +31213,12 @@
     "exampleCn": "适度运动可以改善健康。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "2"
   },
   {
     "id": 2109,
@@ -31357,10 +31425,12 @@
     "exampleCn": "经度用于测量东西方向的位置。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "1"
   },
   {
     "id": 2123,
@@ -31432,10 +31502,12 @@
     "exampleCn": "纬度会影响气候和日照时间。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "1"
   },
   {
     "id": 2128,
@@ -32227,10 +32299,12 @@
     "exampleCn": "热能可以通过金属快速传递。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "2"
   },
   {
     "id": 2181,
@@ -33367,10 +33441,12 @@
     "exampleCn": "地中海气候夏季通常干燥。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "2"
   },
   {
     "id": 2257,
@@ -33532,10 +33608,12 @@
     "exampleCn": "冰川在陆地上缓慢移动。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "1"
   },
   {
     "id": 2268,
@@ -34342,10 +34420,12 @@
     "exampleCn": "栖息地丧失会危及许多物种。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "1"
   },
   {
     "id": 2322,
@@ -34747,10 +34827,12 @@
     "exampleCn": "这座纪念碑由抛光花岗岩制成。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "1"
   },
   {
     "id": 2349,
@@ -35137,10 +35219,12 @@
     "exampleCn": "赤道附近的国家通常气候温暖。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "2"
   },
   {
     "id": 2375,
@@ -35977,10 +36061,12 @@
     "exampleCn": "倾盆大雨淹没了街道。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "1"
   },
   {
     "id": 2431,
@@ -36607,10 +36693,12 @@
     "exampleCn": "铁矿石是钢铁的重要原料。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "1"
   },
   {
     "id": 2473,
@@ -37132,10 +37220,12 @@
     "exampleCn": "这张图有一条纵轴和一条横轴。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "2"
   },
   {
     "id": 2508,
@@ -37777,10 +37867,12 @@
     "exampleCn": "快速增长之后，销售额进入了稳定期。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "2"
   },
   {
     "id": 2551,
@@ -38002,10 +38094,12 @@
     "exampleCn": "这座城市位于一个狭窄的半岛上。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "2"
   },
   {
     "id": 2566,
@@ -39697,10 +39791,12 @@
     "exampleCn": "迁徙是在许多物种中观察到的自然现象。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "1"
   },
   {
     "id": 2679,
@@ -39817,10 +39913,12 @@
     "exampleCn": "种子在潮湿的土壤中生长良好。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "2"
   },
   {
     "id": 2687,
@@ -42877,10 +42975,12 @@
     "exampleCn": "地壳被分成移动的板块。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "1"
   },
   {
     "id": 2891,
@@ -45862,10 +45962,12 @@
     "exampleCn": "她从海滩上捡起一块光滑的小石子。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "1"
   },
   {
     "id": 3090,
@@ -46297,10 +46399,12 @@
     "exampleCn": "地球每二十四小时绕地轴自转一次。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "2"
   },
   {
     "id": 3119,
@@ -46432,10 +46536,12 @@
     "exampleCn": "风和水会慢慢侵蚀岩石表面。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "2"
   },
   {
     "id": 3128,
@@ -46747,10 +46853,12 @@
     "exampleCn": "多岩石的地形使旅程变得困难。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "1"
   },
   {
     "id": 3149,
@@ -47422,10 +47530,12 @@
     "exampleCn": "雪崩把山路埋在雪下。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "1"
   },
   {
     "id": 3194,
@@ -47797,10 +47907,12 @@
     "exampleCn": "这座雕像是用白色大理石雕刻成的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "1"
   },
   {
     "id": 3219,
@@ -47887,10 +47999,12 @@
     "exampleCn": "多年繁忙交通后，这条路开始破损。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "2"
   },
   {
     "id": 3225,
@@ -48982,10 +49096,12 @@
     "exampleCn": "这份报告只对问题作了肤浅的解释。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "2"
   },
   {
     "id": 3298,
@@ -50617,10 +50733,12 @@
     "exampleCn": "一条清澈的小溪流过山谷。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "2"
   },
   {
     "id": 3407,
@@ -52972,10 +53090,12 @@
     "exampleCn": "石英常用于手表和电子设备中。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "1"
   },
   {
     "id": 3564,
@@ -53047,10 +53167,12 @@
     "exampleCn": "大洋洲包括澳大利亚、新西兰和许多太平洋岛屿。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "2"
   },
   {
     "id": 3569,
@@ -53186,5 +53308,831 @@
     ],
     "level": "6",
     "list": "5"
+  },
+  {
+    "id": 3578,
+    "word": "hydrosphere",
+    "phonetic": "/ˈhaɪ.drə.sfɪər/",
+    "pos": "n.",
+    "meaning": "水圈",
+    "example": "Pollution in rivers can affect the whole hydrosphere.",
+    "exampleCn": "河流污染会影响整个水圈。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3579,
+    "word": "lithosphere",
+    "phonetic": "/ˈlɪθ.ə.sfɪər/",
+    "pos": "n.",
+    "meaning": "岩石圈",
+    "example": "The lithosphere is broken into several large plates.",
+    "exampleCn": "岩石圈分成了几个大的板块。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3580,
+    "word": "oxygen",
+    "phonetic": "/ˈɒk.sɪ.dʒən/",
+    "pos": "n.",
+    "meaning": "氧气",
+    "example": "Plants release oxygen during photosynthesis.",
+    "exampleCn": "植物在光合作用中释放氧气。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3581,
+    "word": "carbon dioxide",
+    "phonetic": "/ˌkɑː.bən daɪˈɒk.saɪd/",
+    "pos": "n.",
+    "meaning": "二氧化碳",
+    "example": "Burning coal produces carbon dioxide.",
+    "exampleCn": "燃烧煤会产生二氧化碳。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3582,
+    "word": "hydrogen",
+    "phonetic": "/ˈhaɪ.drə.dʒən/",
+    "pos": "n.",
+    "meaning": "氢",
+    "example": "Hydrogen is the lightest chemical element.",
+    "exampleCn": "氢是最轻的化学元素。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3583,
+    "word": "mantle",
+    "phonetic": "/ˈmæn.təl/",
+    "pos": "n.",
+    "meaning": "地幔/覆盖层",
+    "example": "Hot rock slowly moves inside the mantle.",
+    "exampleCn": "炽热的岩石在地幔中缓慢移动。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3584,
+    "word": "mishap",
+    "phonetic": "/ˈmɪs.hæp/",
+    "pos": "n.",
+    "meaning": "小事故/不幸事件",
+    "example": "A small mishap delayed the field trip.",
+    "exampleCn": "一个小意外耽误了实地考察。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3585,
+    "word": "catastrophic",
+    "phonetic": "/ˌkæt.əˈstrɒf.ɪk/",
+    "pos": "adj.",
+    "meaning": "灾难性的",
+    "example": "The oil spill had catastrophic effects on marine life.",
+    "exampleCn": "漏油对海洋生物造成了灾难性影响。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3586,
+    "word": "calamity",
+    "phonetic": "/kəˈlæm.ə.ti/",
+    "pos": "n.",
+    "meaning": "灾祸/灾难",
+    "example": "The drought became a calamity for local farmers.",
+    "exampleCn": "干旱成了当地农民的一场灾祸。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3587,
+    "word": "jeopardise",
+    "phonetic": "/ˈdʒep.ə.daɪz/",
+    "pos": "v.",
+    "meaning": "危害/使陷入危险",
+    "example": "Poor planning could jeopardise the whole project.",
+    "exampleCn": "糟糕的计划可能危及整个项目。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3588,
+    "word": "destructive",
+    "phonetic": "/dɪˈstrʌk.tɪv/",
+    "pos": "adj.",
+    "meaning": "破坏性的",
+    "example": "A destructive storm damaged hundreds of homes.",
+    "exampleCn": "一场破坏性风暴损坏了数百栋房屋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3589,
+    "word": "El Niño",
+    "phonetic": "/el ˈniːn.jəʊ/",
+    "pos": "n.",
+    "meaning": "厄尔尼诺现象",
+    "example": "El Niño can change rainfall patterns around the world.",
+    "exampleCn": "厄尔尼诺会改变世界各地的降雨模式。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3590,
+    "word": "greenhouse",
+    "phonetic": "/ˈɡriːn.haʊs/",
+    "pos": "n.",
+    "meaning": "温室",
+    "example": "The farmer grows tomatoes in a greenhouse.",
+    "exampleCn": "农民在温室里种植西红柿。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3591,
+    "word": "mineral",
+    "phonetic": "/ˈmɪn.ər.əl/",
+    "pos": "n.",
+    "meaning": "矿物",
+    "example": "Quartz is a common mineral in rocks.",
+    "exampleCn": "石英是岩石中常见的矿物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3592,
+    "word": "gust",
+    "phonetic": "/ɡʌst/",
+    "pos": "n.",
+    "meaning": "一阵强风",
+    "example": "A sudden gust blew the papers off the table.",
+    "exampleCn": "一阵突如其来的强风把桌上的纸吹走了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3593,
+    "word": "gale",
+    "phonetic": "/ɡeɪl/",
+    "pos": "n.",
+    "meaning": "大风",
+    "example": "The fishing boats stayed in the harbour during the gale.",
+    "exampleCn": "大风期间渔船停在港口里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3594,
+    "word": "tornado",
+    "phonetic": "/tɔːˈneɪ.dəʊ/",
+    "pos": "n.",
+    "meaning": "龙卷风",
+    "example": "A tornado destroyed several buildings in the town.",
+    "exampleCn": "龙卷风摧毁了镇上的几栋建筑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3595,
+    "word": "typhoon",
+    "phonetic": "/taɪˈfuːn/",
+    "pos": "n.",
+    "meaning": "台风",
+    "example": "Schools were closed as the typhoon approached.",
+    "exampleCn": "台风临近时学校停课了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3596,
+    "word": "monsoon",
+    "phonetic": "/mɒnˈsuːn/",
+    "pos": "n.",
+    "meaning": "季风/雨季",
+    "example": "The monsoon brings heavy rain to the region.",
+    "exampleCn": "季风给该地区带来强降雨。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3597,
+    "word": "magma",
+    "phonetic": "/ˈmæɡ.mə/",
+    "pos": "n.",
+    "meaning": "岩浆",
+    "example": "Magma rises through cracks in the rock.",
+    "exampleCn": "岩浆沿着岩石裂缝上升。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3598,
+    "word": "thermodynamic",
+    "phonetic": "/ˌθɜː.məʊ.daɪˈnæm.ɪk/",
+    "pos": "adj.",
+    "meaning": "热力学的",
+    "example": "Thermodynamic processes explain how heat moves through the system.",
+    "exampleCn": "热力学过程解释了热量如何在系统中传递。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3599,
+    "word": "smog",
+    "phonetic": "/smɒɡ/",
+    "pos": "n.",
+    "meaning": "烟雾/雾霾",
+    "example": "Thick smog covered the city in the morning.",
+    "exampleCn": "早晨浓重的雾霾笼罩了城市。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3600,
+    "word": "tsunami",
+    "phonetic": "/tsuːˈnɑː.mi/",
+    "pos": "n.",
+    "meaning": "海啸",
+    "example": "The tsunami reached the coast within an hour.",
+    "exampleCn": "海啸在一小时内到达海岸。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3601,
+    "word": "flooding",
+    "phonetic": "/ˈflʌd.ɪŋ/",
+    "pos": "n.",
+    "meaning": "洪水/水灾",
+    "example": "Heavy rain caused flooding in low areas.",
+    "exampleCn": "大雨导致低洼地区发生洪水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3602,
+    "word": "earthquake",
+    "phonetic": "/ˈɜːθ.kweɪk/",
+    "pos": "n.",
+    "meaning": "地震",
+    "example": "The earthquake shook buildings across the city.",
+    "exampleCn": "地震使全城的建筑物都发生摇晃。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3603,
+    "word": "seismic",
+    "phonetic": "/ˈsaɪz.mɪk/",
+    "pos": "adj.",
+    "meaning": "地震的/巨大的",
+    "example": "Seismic waves travel through the Earth.",
+    "exampleCn": "地震波会穿过地球传播。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3604,
+    "word": "landscape",
+    "phonetic": "/ˈlænd.skeɪp/",
+    "pos": "n./v.",
+    "meaning": "风景/地貌/美化景观",
+    "example": "The desert landscape looked beautiful at sunset.",
+    "exampleCn": "日落时沙漠景观看起来很美。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3605,
+    "word": "continent",
+    "phonetic": "/ˈkɒn.tɪ.nənt/",
+    "pos": "n.",
+    "meaning": "大陆/洲",
+    "example": "Africa is the second-largest continent.",
+    "exampleCn": "非洲是第二大洲。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "1"
+  },
+  {
+    "id": 3606,
+    "word": "plain",
+    "phonetic": "/pleɪn/",
+    "pos": "n./adj.",
+    "meaning": "平原/简单的/朴素的",
+    "example": "Cattle grazed on the open plain.",
+    "exampleCn": "牛群在开阔的平原上吃草。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3607,
+    "word": "oasis",
+    "phonetic": "/əʊˈeɪ.sɪs/",
+    "pos": "n.",
+    "meaning": "绿洲",
+    "example": "The travellers rested at an oasis in the desert.",
+    "exampleCn": "旅行者在沙漠中的绿洲休息。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3608,
+    "word": "globe",
+    "phonetic": "/ɡləʊb/",
+    "pos": "n.",
+    "meaning": "地球/球体",
+    "example": "Satellites send data to stations around the globe.",
+    "exampleCn": "卫星向全球各地的站点发送数据。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3609,
+    "word": "equal",
+    "phonetic": "/ˈiː.kwəl/",
+    "pos": "adj.",
+    "meaning": "相等的/平等的",
+    "example": "The two groups received equal amounts of water.",
+    "exampleCn": "两个小组得到了等量的水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3610,
+    "word": "Arctic",
+    "phonetic": "/ˈɑːk.tɪk/",
+    "pos": "n./adj.",
+    "meaning": "北极/北极的",
+    "example": "Arctic sea ice is thinner than it used to be.",
+    "exampleCn": "北极海冰比过去更薄。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3611,
+    "word": "pole",
+    "phonetic": "/pəʊl/",
+    "pos": "n.",
+    "meaning": "极点/杆",
+    "example": "Scientists collected samples near the South Pole.",
+    "exampleCn": "科学家在南极点附近采集了样本。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3612,
+    "word": "upgrade",
+    "phonetic": "/ˌʌpˈɡreɪd/",
+    "pos": "v.",
+    "meaning": "升级/改进",
+    "example": "The city plans to upgrade its drainage system.",
+    "exampleCn": "这座城市计划升级排水系统。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3613,
+    "word": "Atlantic",
+    "phonetic": "/ətˈlæn.tɪk/",
+    "pos": "n./adj.",
+    "meaning": "大西洋/大西洋的",
+    "example": "The ship crossed the Atlantic in six days.",
+    "exampleCn": "这艘船六天横渡了大西洋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3614,
+    "word": "ocean",
+    "phonetic": "/ˈəʊ.ʃən/",
+    "pos": "n.",
+    "meaning": "海洋",
+    "example": "The ocean absorbs a large amount of heat.",
+    "exampleCn": "海洋吸收大量热量。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3615,
+    "word": "Pacific",
+    "phonetic": "/pəˈsɪf.ɪk/",
+    "pos": "n./adj.",
+    "meaning": "太平洋/太平洋的",
+    "example": "Many islands are located in the Pacific.",
+    "exampleCn": "许多岛屿位于太平洋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3616,
+    "word": "marine",
+    "phonetic": "/məˈriːn/",
+    "pos": "n./adj.",
+    "meaning": "海洋的/海事的/海军陆战队员",
+    "example": "Marine animals are sensitive to water pollution.",
+    "exampleCn": "海洋动物对水污染很敏感。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3617,
+    "word": "navigation",
+    "phonetic": "/ˌnæv.ɪˈɡeɪ.ʃən/",
+    "pos": "n.",
+    "meaning": "导航/航行",
+    "example": "Good navigation is essential in open water.",
+    "exampleCn": "在开阔水域中良好的导航至关重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3618,
+    "word": "gulf",
+    "phonetic": "/ɡʌlf/",
+    "pos": "n.",
+    "meaning": "海湾/巨大差距",
+    "example": "The river flows into a large gulf.",
+    "exampleCn": "这条河流入一个大海湾。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3619,
+    "word": "beach",
+    "phonetic": "/biːtʃ/",
+    "pos": "n.",
+    "meaning": "海滩",
+    "example": "Children collected shells on the beach.",
+    "exampleCn": "孩子们在海滩上捡贝壳。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3620,
+    "word": "shore",
+    "phonetic": "/ʃɔːr/",
+    "pos": "n.",
+    "meaning": "岸/滨",
+    "example": "The boat moved slowly toward the shore.",
+    "exampleCn": "小船慢慢驶向岸边。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3621,
+    "word": "tide",
+    "phonetic": "/taɪd/",
+    "pos": "n.",
+    "meaning": "潮汐",
+    "example": "The tide rises quickly in this bay.",
+    "exampleCn": "这个海湾的潮水上涨得很快。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3622,
+    "word": "current",
+    "phonetic": "/ˈkʌr.ənt/",
+    "pos": "n.",
+    "meaning": "水流/气流/电流",
+    "example": "A strong current carried the boat downstream.",
+    "exampleCn": "一股强流把小船带向下游。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3623,
+    "word": "stream",
+    "phonetic": "/striːm/",
+    "pos": "n./v.",
+    "meaning": "小溪/流/流动",
+    "example": "Clear water streamed over the rocks.",
+    "exampleCn": "清澈的水流过岩石。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3624,
+    "word": "source",
+    "phonetic": "/sɔːs/",
+    "pos": "n.",
+    "meaning": "来源/源头",
+    "example": "The lake is the source of the river.",
+    "exampleCn": "这个湖是这条河的源头。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3625,
+    "word": "flat",
+    "phonetic": "/flæt/",
+    "pos": "adj./n.",
+    "meaning": "平坦的/公寓/轮胎瘪了",
+    "example": "The land is flat near the river.",
+    "exampleCn": "河边的土地很平坦。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3626,
+    "word": "sandy",
+    "phonetic": "/ˈsæn.di/",
+    "pos": "adj.",
+    "meaning": "多沙的/沙质的",
+    "example": "Cactus plants can grow in sandy soil.",
+    "exampleCn": "仙人掌可以在沙质土壤中生长。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3627,
+    "word": "stony",
+    "phonetic": "/ˈstəʊ.ni/",
+    "pos": "adj.",
+    "meaning": "多石的/冷漠的",
+    "example": "The path became stony near the hill.",
+    "exampleCn": "小路在靠近山丘时变得多石。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3628,
+    "word": "narrow",
+    "phonetic": "/ˈnær.əʊ/",
+    "pos": "n./adj./v.",
+    "meaning": "狭窄的/缩小/使变窄",
+    "example": "The path became narrow in the forest.",
+    "exampleCn": "小路在森林里变得狭窄。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3629,
+    "word": "mainland",
+    "phonetic": "/ˈmeɪn.lænd/",
+    "pos": "n.",
+    "meaning": "大陆/本土",
+    "example": "The island depends on supplies from the mainland.",
+    "exampleCn": "这个岛依赖来自大陆的物资。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3630,
+    "word": "weather",
+    "phonetic": "/ˈweð.ər/",
+    "pos": "n.",
+    "meaning": "天气",
+    "example": "The weather changed suddenly in the afternoon.",
+    "exampleCn": "下午天气突然变了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3631,
+    "word": "meteorology",
+    "phonetic": "/ˌmiː.ti.əˈrɒl.ə.dʒi/",
+    "pos": "n.",
+    "meaning": "气象学",
+    "example": "Meteorology helps scientists predict storms.",
+    "exampleCn": "气象学帮助科学家预测风暴。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3632,
+    "word": "mild",
+    "phonetic": "/maɪld/",
+    "pos": "adj.",
+    "meaning": "温和的/轻微的",
+    "example": "The island has mild winters.",
+    "exampleCn": "这个岛冬季温和。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3633,
+    "word": "heating",
+    "phonetic": "/ˈhiː.tɪŋ/",
+    "pos": "n.",
+    "meaning": "供暖/加热",
+    "example": "The school reduced heating to save energy.",
+    "exampleCn": "学校减少供暖以节约能源。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3634,
+    "word": "warm",
+    "phonetic": "/wɔːm/",
+    "pos": "adj./v.",
+    "meaning": "温暖的/使变暖",
+    "example": "The sun began to warm the room.",
+    "exampleCn": "太阳开始把房间照暖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3635,
+    "word": "tropics",
+    "phonetic": "/ˈtrɒp.ɪks/",
+    "pos": "n./adj.",
+    "meaning": "热带地区/热带的",
+    "example": "Many fruits grow well in the tropics.",
+    "exampleCn": "许多水果在热带地区生长良好。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3636,
+    "word": "snowy",
+    "phonetic": "/ˈsnəʊ.i/",
+    "pos": "adj.",
+    "meaning": "下雪的/多雪的",
+    "example": "Drivers moved slowly on the snowy road.",
+    "exampleCn": "司机们在积雪的路上缓慢行驶。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
   }
 ]

@@ -663,19 +663,6 @@
     ]
   },
   {
-    "id": 96,
-    "word": "aggravate",
-    "phonetic": "/ˈæɡrəveɪt/",
-    "pos": "v.",
-    "meaning": "加重，恶化；激怒",
-    "example": "The situation was aggravated by the storm.",
-    "exampleCn": "局势因暴风雨而恶化。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 98,
     "word": "agitation",
     "phonetic": "/ˌædʒɪˈteɪʃn/",
@@ -2432,19 +2419,6 @@
     ]
   },
   {
-    "id": 306,
-    "word": "breeze",
-    "phonetic": "/briːz/",
-    "pos": "n.",
-    "meaning": "微风",
-    "example": "A gentle breeze blew from the sea.",
-    "exampleCn": "轻柔的微风吹自大海。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 308,
     "word": "brick",
     "phonetic": "/brɪk/",
@@ -3264,19 +3238,6 @@
     ]
   },
   {
-    "id": 396,
-    "word": "cave",
-    "phonetic": "/keɪv/",
-    "pos": "n.",
-    "meaning": "洞穴",
-    "example": "Explorers discovered a hidden cave.",
-    "exampleCn": "探险家发现了一个隐藏的洞穴。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 397,
     "word": "ceiling",
     "phonetic": "/ˈsiːlɪŋ/",
@@ -3914,19 +3875,6 @@
     ]
   },
   {
-    "id": 467,
-    "word": "climate",
-    "phonetic": "/ˈklaɪmət/",
-    "pos": "n.",
-    "meaning": "气候",
-    "example": "The climate here is mild.",
-    "exampleCn": "这里的气候温和。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 468,
     "word": "climb",
     "phonetic": "/klaɪm/",
@@ -4051,19 +3999,6 @@
     "meaning": "煤",
     "example": "Coal is used for electricity.",
     "exampleCn": "煤用于发电。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 481,
-    "word": "coast",
-    "phonetic": "/koʊst/",
-    "pos": "n.",
-    "meaning": "海岸",
-    "example": "They drove along the coast.",
-    "exampleCn": "他们沿着海岸开车。",
     "category": "daily",
     "categories": [
       "daily"

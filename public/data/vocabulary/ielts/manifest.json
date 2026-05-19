@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-05-19T10:44:00.566Z",
+  "source": "/data/vocabulary.json",
+  "sourceTotal": 3636,
+  "core": {
+    "path": "/data/vocabulary/core.json",
+    "count": 318
+  },
+  "ielts": {
+    "total": 120,
+    "meta": "1 个主题",
+    "topics": [
+      {
+        "key": "nature-geography",
+        "label": "自然地理",
+        "count": 120,
+        "lists": [
+          {
+            "key": "1",
+            "label": "List 1",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-1.json",
+            "topicKey": "nature-geography",
+            "topicLabel": "自然地理"
+          },
+          {
+            "key": "2",
+            "label": "List 2",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-2.json",
+            "topicKey": "nature-geography",
+            "topicLabel": "自然地理"
+          }
+        ],
+        "meta": "2 个 List"
+      }
+    ],
+    "lists": [
+      {
+        "key": "1",
+        "label": "List 1",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-1.json",
+        "topicKey": "nature-geography",
+        "topicLabel": "自然地理"
+      },
+      {
+        "key": "2",
+        "label": "List 2",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-2.json",
+        "topicKey": "nature-geography",
+        "topicLabel": "自然地理"
+      }
+    ]
+  }
+}

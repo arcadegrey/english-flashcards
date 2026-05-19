@@ -22,6 +22,7 @@ function HomeScreen({
   onOpenTodayReview,
   onOpenWrongWords,
   onOpenToeflLevels,
+  onOpenIeltsLists,
   onBack,
   onHome,
   onSyncAccount,
@@ -157,7 +158,7 @@ function HomeScreen({
 
     const map = new Map();
     categoriesWithCollections.forEach((category) => {
-      if (category.type === 'collection' || category.id === 'toefl') {
+      if (category.type === 'collection' || category.id === 'toefl' || category.id === 'ielts') {
         return;
       }
 
@@ -199,6 +200,11 @@ function HomeScreen({
 
     if (category.id === 'toefl') {
       onOpenToeflLevels?.();
+      return;
+    }
+
+    if (category.id === 'ielts') {
+      onOpenIeltsLists?.();
       return;
     }
 

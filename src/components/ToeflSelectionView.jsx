@@ -21,6 +21,11 @@ function SpeakerIcon() {
   );
 }
 
+const getSelectionCardClassName = (item) =>
+  ['reading-category-card', 'toefl-selection-card', item?.key ? `selection-card--${item.key}` : '']
+    .filter(Boolean)
+    .join(' ');
+
 function ToeflSelectionView({
   mode = 'level',
   title,
@@ -34,8 +39,10 @@ function ToeflSelectionView({
   onSyncAccount,
   onSpeakIntro,
   selectAllLabel = '学习全部',
+  vocabularyLabel = '托福词汇',
+  listLabel = '托福 List',
 }) {
-  const emptyText = mode === 'level' ? '当前没有可用的托福分级数据。' : '这个 Level 暂时没有可用的 List。';
+  const emptyText = mode === 'level' ? `当前没有可用的${vocabularyLabel}分级数据。` : '当前暂时没有可用的 List。';
 
   const resolvedSubtitle = useMemo(() => {
     if (subtitle) {
@@ -45,7 +52,7 @@ function ToeflSelectionView({
   }, [mode, subtitle]);
 
   const progressLabel = mode === 'level' ? `${items.length} 个 Level` : `${items.length} 个 List`;
-  const progressSub = mode === 'level' ? '托福词汇' : '托福 List';
+  const progressSub = mode === 'level' ? vocabularyLabel : listLabel;
   const gridClass = items.length === 1 ? 'reading-category-grid toefl-selection-grid--single' : 'reading-category-grid';
 
   return (
@@ -80,7 +87,7 @@ function ToeflSelectionView({
               type="button"
               className="learn-refresh-icon-btn"
               onClick={onSpeakIntro}
-              aria-label="播放托福分级提示"
+              aria-label={`播放${vocabularyLabel}提示`}
             >
               <SpeakerIcon />
             </button>
@@ -97,7 +104,7 @@ function ToeflSelectionView({
             <p className="toefl-selection-total">共 {totalCount} 个单词</p>
           </header>
 
-          <section className="reading-category-section" aria-label="托福分级选择">
+          <section className="reading-category-section" aria-label={`${vocabularyLabel}选择`}>
             {items.length === 0 ? (
               <div className="word-home-empty">{emptyText}</div>
             ) : (
@@ -115,7 +122,7 @@ function ToeflSelectionView({
                       key={item.key}
                       type="button"
                       onClick={() => onSelect?.(item.key)}
-                      className="reading-category-card toefl-selection-card"
+                      className={getSelectionCardClassName(item)}
                     >
                       <span className="reading-category-name">{item.label}</span>
                       <span className="reading-category-count">{item.count} 词</span>

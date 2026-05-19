@@ -194,10 +194,12 @@
     "exampleCn": "这个论点的核心有有力证据支持。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "1"
   },
   {
     "id": 1907,
@@ -1019,10 +1021,12 @@
     "exampleCn": "粗糙的表面使这块石头很难打磨。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "2"
   },
   {
     "id": 1962,
@@ -1394,10 +1398,12 @@
     "exampleCn": "铁锈是一种常见的氧化铁。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "1"
   },
   {
     "id": 1987,

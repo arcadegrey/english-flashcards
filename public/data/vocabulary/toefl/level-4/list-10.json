@@ -918,10 +918,12 @@
     "exampleCn": "栖息地丧失会危及许多物种。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "1"
   },
   {
     "id": 2322,
@@ -1323,10 +1325,12 @@
     "exampleCn": "这座纪念碑由抛光花岗岩制成。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "1"
   },
   {
     "id": 2349,
@@ -1713,10 +1717,12 @@
     "exampleCn": "赤道附近的国家通常气候温暖。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "2"
   },
   {
     "id": 2375,
@@ -2553,10 +2559,12 @@
     "exampleCn": "倾盆大雨淹没了街道。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "1"
   },
   {
     "id": 2431,

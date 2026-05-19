@@ -254,10 +254,12 @@
     "exampleCn": "这座雕像是用白色大理石雕刻成的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "1"
   },
   {
     "id": 3219,
@@ -344,10 +346,12 @@
     "exampleCn": "多年繁忙交通后，这条路开始破损。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "2"
   },
   {
     "id": 3225,
@@ -1439,10 +1443,12 @@
     "exampleCn": "这份报告只对问题作了肤浅的解释。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "2"
   },
   {
     "id": 3298,

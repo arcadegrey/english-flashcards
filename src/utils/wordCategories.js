@@ -37,3 +37,6 @@ export const wordBelongsToCategory = (word, categoryId) => {
 };
 
 export const wordHasToeflCategory = (word) => wordBelongsToCategory(word, 'toefl');
+export const wordHasIeltsCategory = (word) => wordBelongsToCategory(word, 'ielts');
+export const wordHasExternalExamCategory = (word) =>
+  wordHasToeflCategory(word) || wordHasIeltsCategory(word);

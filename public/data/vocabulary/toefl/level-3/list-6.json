@@ -42,10 +42,12 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "1"
   },
   {
     "id": 189,
@@ -269,10 +271,12 @@
     "exampleCn": "河岸附近的河水很浅。/他对这个问题的理解很肤浅。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "2"
   },
   {
     "id": 962,

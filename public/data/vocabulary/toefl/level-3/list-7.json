@@ -166,10 +166,12 @@
     "exampleCn": "中国位于北半球。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "2"
   },
   {
     "id": 1048,
@@ -886,10 +888,12 @@
     "exampleCn": "那栋房子矗立在悬崖边。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "1"
   },
   {
     "id": 1096,

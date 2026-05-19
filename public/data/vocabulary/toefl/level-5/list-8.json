@@ -163,10 +163,12 @@
     "exampleCn": "地球每二十四小时绕地轴自转一次。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "2"
   },
   {
     "id": 3119,
@@ -298,10 +300,12 @@
     "exampleCn": "风和水会慢慢侵蚀岩石表面。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "2"
   },
   {
     "id": 3128,
@@ -613,10 +617,12 @@
     "exampleCn": "多岩石的地形使旅程变得困难。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "1"
   },
   {
     "id": 3149,
@@ -1288,10 +1294,12 @@
     "exampleCn": "雪崩把山路埋在雪下。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "1"
   },
   {
     "id": 3194,

@@ -360,10 +360,12 @@
     "exampleCn": "快速增长之后，销售额进入了稳定期。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "2"
   },
   {
     "id": 2551,
@@ -585,10 +587,12 @@
     "exampleCn": "这座城市位于一个狭窄的半岛上。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "2"
   },
   {
     "id": 2566,

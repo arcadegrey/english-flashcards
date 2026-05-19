@@ -463,10 +463,12 @@
     "exampleCn": "适度运动可以改善健康。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "2"
   },
   {
     "id": 2109,
@@ -673,10 +675,12 @@
     "exampleCn": "经度用于测量东西方向的位置。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "1"
   },
   {
     "id": 2123,
@@ -748,10 +752,12 @@
     "exampleCn": "纬度会影响气候和日照时间。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "1"
   },
   {
     "id": 2128,

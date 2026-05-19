@@ -541,10 +541,12 @@
     "exampleCn": "如果压力继续积累，火山可能会喷发。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "1"
   },
   {
     "id": 1560,
@@ -781,10 +783,12 @@
     "exampleCn": "这两条路彼此平行。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "2"
   },
   {
     "id": 1576,

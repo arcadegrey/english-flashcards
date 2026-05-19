@@ -9,10 +9,12 @@
     "exampleCn": "迁徙是在许多物种中观察到的自然现象。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "1"
   },
   {
     "id": 3330,

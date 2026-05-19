@@ -1,7 +1,13 @@
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react'
 import { ThemeProvider } from './context/ThemeContext'
 import { useTheme } from './context/theme-context'
-import { loadToeflListVocabulary, loadToeflManifest, loadVocabulary } from './data/vocabulary'
+import {
+  loadIeltsListVocabulary,
+  loadIeltsManifest,
+  loadToeflListVocabulary,
+  loadToeflManifest,
+  loadVocabulary,
+} from './data/vocabulary'
 import readings from './data/readings'
 import categories from './data/categories'
 import StudyHub from './components/StudyHub'
@@ -22,6 +28,7 @@ import {
   getWordCategories,
   mergeCategoryLists,
   wordBelongsToCategory,
+  wordHasIeltsCategory,
   wordHasToeflCategory,
 } from './utils/wordCategories'
 import {
@@ -37,6 +44,7 @@ import {
 
 const TOEFL_UNKNOWN_LEVEL = 'unknown'
 const TOEFL_UNKNOWN_LIST = 'unknown'
+const IELTS_UNKNOWN_TOPIC = 'unknown'
 const NAVIGATION_STATE_KEY = 'english_flashcards_navigation_v1'
 const AUTH_TRANSITION_MIN_MS = 900
 
@@ -60,7 +68,7 @@ const dedupeIdList = (list) => {
 
 const countFilledFields = (word) => {
   if (!word || typeof word !== 'object') return 0
-  const keys = ['phonetic', 'pos', 'meaning', 'example', 'exampleCn', 'category', 'categories', 'level', 'list']
+  const keys = ['phonetic', 'pos', 'meaning', 'example', 'exampleCn', 'category', 'categories', 'level', 'list', 'ieltsList']
   return keys.reduce((count, key) => {
     const value = Array.isArray(word[key]) ? word[key].join('|') : String(word[key] ?? '').trim()
     return value ? count + 1 : count
@@ -262,6 +270,51 @@ const matchesToeflList = (word, selectedList) => {
   return String(list) === String(selectedList)
 }
 
+const getIeltsMeta = (word) => {
+  if (!word || !wordHasIeltsCategory(word)) {
+    return { list: null }
+  }
+
+  return { list: extractNumericTag(word.ieltsList) || extractNumericTag(word.list) }
+}
+
+const matchesIeltsList = (word, selectedList) => {
+  const { list } = getIeltsMeta(word)
+  if (selectedList === TOEFL_UNKNOWN_LIST) {
+    return list == null
+  }
+  return String(list) === String(selectedList)
+}
+
+const getIeltsTopicKey = (list) => {
+  const numericList = Number(list)
+
+  if (Number.isFinite(numericList)) {
+    if (numericList >= 1 && numericList <= 4) return 'nature-geography'
+    if (numericList >= 5 && numericList <= 6) return 'plant-research'
+    if (numericList >= 7 && numericList <= 9) return 'animal-conservation'
+    if (numericList === 10) return 'space-exploration'
+  }
+
+  return IELTS_UNKNOWN_TOPIC
+}
+
+const getIeltsTopicLabel = (topicKey) => {
+  const labels = {
+    'nature-geography': '自然地理',
+    'plant-research': '植物研究',
+    'animal-conservation': '动物保护',
+    'space-exploration': '太空探索',
+    [IELTS_UNKNOWN_TOPIC]: '未分主题',
+  }
+  return labels[topicKey] || '未分主题'
+}
+
+const matchesIeltsTopic = (word, selectedTopic) => {
+  const { list } = getIeltsMeta(word)
+  return getIeltsTopicKey(list) === String(selectedTopic || IELTS_UNKNOWN_TOPIC)
+}
+
 const sortNumericKeyWithUnknownLast = (a, b, unknownKey) => {
   if (a === unknownKey && b !== unknownKey) return 1
   if (b === unknownKey && a !== unknownKey) return -1
@@ -284,6 +337,8 @@ function AppContent() {
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [selectedToeflLevel, setSelectedToeflLevel] = useState('')
   const [selectedToeflList, setSelectedToeflList] = useState('')
+  const [selectedIeltsTopic, setSelectedIeltsTopic] = useState('')
+  const [selectedIeltsList, setSelectedIeltsList] = useState('')
   const [selectedReadingId, setSelectedReadingId] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [learnedWords, setLearnedWords] = useState([])
@@ -297,11 +352,13 @@ function AppContent() {
   const [vocabularyError, setVocabularyError] = useState('')
   const [vocabularyReloadKey, setVocabularyReloadKey] = useState(0)
   const [toeflManifest, setToeflManifest] = useState(null)
+  const [ieltsManifest, setIeltsManifest] = useState(null)
   const [shuffledWords, setShuffledWords] = useState([])
   const historyReadyRef = useRef(false)
   const restoringFromHistoryRef = useRef(false)
   const pendingStartWordIdRef = useRef(null)
   const loadingToeflListsRef = useRef(new Set())
+  const loadingIeltsListsRef = useRef(new Set())
   const cloudEnabled = isCloudAuthConfigured()
   const [localDataLoaded, setLocalDataLoaded] = useState(false)
   const [authLoading, setAuthLoading] = useState(cloudEnabled)
@@ -370,8 +427,15 @@ function AppContent() {
         counts[categoryId] = (counts[categoryId] || 0) + 1
       })
     })
+    if (toeflManifest?.toefl?.total) {
+      counts.toefl = Number(toeflManifest.toefl.total) || counts.toefl || 0
+    }
+    if (ieltsManifest?.ielts?.total) {
+      counts.ielts = Number(ieltsManifest.ielts.total) || counts.ielts || 0
+    }
+    counts.all = Number(toeflManifest?.sourceTotal) || Number(ieltsManifest?.sourceTotal) || allVocabulary.length
     return counts
-  }, [allVocabulary])
+  }, [allVocabulary, ieltsManifest, toeflManifest])
 
   const filteredVocabulary = useMemo(() => {
     if (selectedCategory === 'all') {
@@ -379,6 +443,16 @@ function AppContent() {
     }
 
     let filtered = allVocabulary.filter((word) => wordBelongsToCategory(word, selectedCategory))
+    if (selectedCategory === 'ielts') {
+      if (selectedIeltsTopic) {
+        filtered = filtered.filter((word) => matchesIeltsTopic(word, selectedIeltsTopic))
+      }
+      if (selectedIeltsList) {
+        filtered = filtered.filter((word) => matchesIeltsList(word, selectedIeltsList))
+      }
+      return filtered
+    }
+
     if (selectedCategory !== 'toefl') {
       return filtered
     }
@@ -392,7 +466,7 @@ function AppContent() {
     }
 
     return filtered
-  }, [allVocabulary, selectedCategory, selectedToeflLevel, selectedToeflList])
+  }, [allVocabulary, selectedCategory, selectedIeltsList, selectedIeltsTopic, selectedToeflLevel, selectedToeflList])
 
   const toeflGrouping = useMemo(() => {
     if (toeflManifest?.toefl?.levels?.length) {
@@ -480,6 +554,126 @@ function AppContent() {
     return toeflGrouping.listsByLevel[selectedToeflLevel] || []
   }, [selectedToeflLevel, toeflGrouping.listsByLevel])
 
+  const ieltsGrouping = useMemo(() => {
+    if (ieltsManifest?.ielts?.lists?.length) {
+      const manifestTopics = Array.isArray(ieltsManifest.ielts.topics) ? ieltsManifest.ielts.topics : []
+      const lists = ieltsManifest.ielts.lists
+        .map((item) => ({
+          key: String(item.key),
+          label: item.label || (String(item.key) === TOEFL_UNKNOWN_LIST ? '未分 List' : `List ${item.key}`),
+          count: Number(item.count) || 0,
+          path: item.path,
+          topicKey: String(item.topicKey || getIeltsTopicKey(item.key)),
+          topicLabel: item.topicLabel,
+        }))
+        .sort((a, b) => sortNumericKeyWithUnknownLast(a.key, b.key, TOEFL_UNKNOWN_LIST))
+
+      const listsByTopic = {}
+      const topics =
+        manifestTopics.length > 0
+          ? manifestTopics
+              .map((topic) => ({
+                key: String(topic.key),
+                label: topic.label || (String(topic.key) === IELTS_UNKNOWN_TOPIC ? '未分主题' : String(topic.key)),
+                count: Number(topic.count) || 0,
+                meta: topic.meta || `${topic.lists?.length || 0} 个 List`,
+              }))
+          : []
+
+      if (manifestTopics.length > 0) {
+        manifestTopics.forEach((topic) => {
+          listsByTopic[String(topic.key)] = (topic.lists || [])
+            .map((item) => ({
+              key: String(item.key),
+              label: item.label || (String(item.key) === TOEFL_UNKNOWN_LIST ? '未分 List' : `List ${item.key}`),
+              count: Number(item.count) || 0,
+              path: item.path,
+              topicKey: String(topic.key),
+            }))
+            .sort((a, b) => sortNumericKeyWithUnknownLast(a.key, b.key, TOEFL_UNKNOWN_LIST))
+        })
+      } else {
+        lists.forEach((item) => {
+          const topicKey = item.topicKey
+          if (!listsByTopic[topicKey]) listsByTopic[topicKey] = []
+          listsByTopic[topicKey].push(item)
+        })
+        Object.entries(listsByTopic).forEach(([topicKey, topicLists]) => {
+          topics.push({
+            key: topicKey,
+            label: topicKey === IELTS_UNKNOWN_TOPIC ? '未分主题' : topicLists[0]?.topicLabel || getIeltsTopicLabel(topicKey),
+            count: topicLists.reduce((sum, item) => sum + item.count, 0),
+            meta: `${topicLists.length} 个 List`,
+          })
+        })
+      }
+
+      return {
+        total: Number(ieltsManifest.ielts.total) || lists.reduce((sum, item) => sum + item.count, 0),
+        topics,
+        listsByTopic,
+        lists,
+      }
+    }
+
+    const listBuckets = new Map()
+    allVocabulary.forEach((word) => {
+      if (!wordHasIeltsCategory(word)) return
+      const { list } = getIeltsMeta(word)
+      const listKey = list ? String(list) : TOEFL_UNKNOWN_LIST
+      listBuckets.set(listKey, (listBuckets.get(listKey) || 0) + 1)
+    })
+
+    const lists = Array.from(listBuckets.entries())
+      .map(([listKey, count]) => ({
+        key: listKey,
+        label: listKey === TOEFL_UNKNOWN_LIST ? '未分 List' : `List ${listKey}`,
+        count,
+      }))
+      .sort((a, b) => sortNumericKeyWithUnknownLast(a.key, b.key, TOEFL_UNKNOWN_LIST))
+
+    const topicBuckets = new Map()
+    lists.forEach((item) => {
+      const topicKey = getIeltsTopicKey(item.key)
+      if (!topicBuckets.has(topicKey)) {
+        topicBuckets.set(topicKey, {
+          key: topicKey,
+          label: getIeltsTopicLabel(topicKey),
+          count: 0,
+          lists: [],
+        })
+      }
+      const topic = topicBuckets.get(topicKey)
+      topic.count += item.count
+      topic.lists.push(item)
+    })
+
+    const topics = Array.from(topicBuckets.values()).map((topic) => ({
+      key: topic.key,
+      label: topic.label,
+      count: topic.count,
+      meta: `${topic.lists.length} 个 List`,
+    }))
+    const listsByTopic = {}
+    topicBuckets.forEach((topic) => {
+      listsByTopic[topic.key] = topic.lists
+    })
+
+    return {
+      total: lists.reduce((sum, item) => sum + item.count, 0),
+      topics,
+      listsByTopic,
+      lists,
+    }
+  }, [allVocabulary, ieltsManifest])
+
+  const ieltsListsForSelectedTopic = useMemo(() => {
+    if (!selectedIeltsTopic) {
+      return []
+    }
+    return ieltsGrouping.listsByTopic[selectedIeltsTopic] || []
+  }, [ieltsGrouping.listsByTopic, selectedIeltsTopic])
+
   useEffect(() => {
     let cancelled = false
 
@@ -488,17 +682,20 @@ function AppContent() {
       setVocabularyError('')
 
       try {
-        const [loadedVocabulary, loadedToeflManifest] = await Promise.all([
+        const [loadedVocabulary, loadedToeflManifest, loadedIeltsManifest] = await Promise.all([
           loadVocabulary(),
           loadToeflManifest().catch(() => null),
+          loadIeltsManifest().catch(() => null),
         ])
         if (cancelled) return
         setVocabulary(loadedVocabulary)
         setToeflManifest(loadedToeflManifest)
+        setIeltsManifest(loadedIeltsManifest)
       } catch (error) {
         if (cancelled) return
         setVocabulary([])
         setToeflManifest(null)
+        setIeltsManifest(null)
         setVocabularyError(error?.message || '词库加载失败')
       } finally {
         if (!cancelled) {
@@ -1021,6 +1218,8 @@ function AppContent() {
       selectedCategory: 'all',
       selectedToeflLevel: '',
       selectedToeflList: '',
+      selectedIeltsTopic: '',
+      selectedIeltsList: '',
       selectedReadingId: null,
     }
 
@@ -1037,6 +1236,8 @@ function AppContent() {
         setSelectedCategory('all')
         setSelectedToeflLevel('')
         setSelectedToeflList('')
+        setSelectedIeltsTopic('')
+        setSelectedIeltsList('')
         setSelectedReadingId(null)
         return
       }
@@ -1048,6 +1249,8 @@ function AppContent() {
         typeof state.selectedToeflLevel === 'string' ? state.selectedToeflLevel : ''
       )
       setSelectedToeflList(typeof state.selectedToeflList === 'string' ? state.selectedToeflList : '')
+      setSelectedIeltsTopic(typeof state.selectedIeltsTopic === 'string' ? state.selectedIeltsTopic : '')
+      setSelectedIeltsList(typeof state.selectedIeltsList === 'string' ? state.selectedIeltsList : '')
       setSelectedReadingId(state.selectedReadingId ?? null)
     }
 
@@ -1067,6 +1270,8 @@ function AppContent() {
       selectedCategory,
       selectedToeflLevel,
       selectedToeflList,
+      selectedIeltsTopic,
+      selectedIeltsList,
       selectedReadingId,
     }
 
@@ -1089,11 +1294,13 @@ function AppContent() {
       currentState.selectedCategory === nextState.selectedCategory &&
       currentState.selectedToeflLevel === nextState.selectedToeflLevel &&
       currentState.selectedToeflList === nextState.selectedToeflList &&
+      currentState.selectedIeltsTopic === nextState.selectedIeltsTopic &&
+      currentState.selectedIeltsList === nextState.selectedIeltsList &&
       currentState.selectedReadingId === nextState.selectedReadingId
 
     if (isSameState) return
     window.history.pushState(nextState, '', window.location.href)
-  }, [view, mode, selectedCategory, selectedToeflLevel, selectedToeflList, selectedReadingId])
+  }, [view, mode, selectedCategory, selectedToeflLevel, selectedToeflList, selectedIeltsTopic, selectedIeltsList, selectedReadingId])
 
   const currentWord = shuffledWords[currentIndex]
 
@@ -1199,6 +1406,47 @@ function AppContent() {
     [ensureToeflListLoaded, toeflGrouping.listsByLevel]
   )
 
+  const ensureAllToeflLoaded = useCallback(() => {
+    toeflGrouping.levels.forEach((level) => {
+      ensureToeflLevelLoaded(level.key)
+    })
+  }, [ensureToeflLevelLoaded, toeflGrouping.levels])
+
+  const ensureIeltsListLoaded = useCallback(
+    async (listKey) => {
+      if (!ieltsManifest || !listKey) return
+
+      if (loadingIeltsListsRef.current.has(listKey)) return
+      loadingIeltsListsRef.current.add(listKey)
+
+      try {
+        const listVocabulary = await loadIeltsListVocabulary(ieltsManifest, listKey)
+        setVocabulary((prev) => mergeVocabularyList(prev, listVocabulary))
+      } catch (error) {
+        setVocabularyError(error?.message || '雅思 List 加载失败')
+      } finally {
+        loadingIeltsListsRef.current.delete(listKey)
+      }
+    },
+    [ieltsManifest]
+  )
+
+  const ensureAllIeltsLoaded = useCallback(() => {
+    ieltsGrouping.lists.forEach((item) => {
+      ensureIeltsListLoaded(item.key)
+    })
+  }, [ensureIeltsListLoaded, ieltsGrouping.lists])
+
+  const ensureIeltsTopicLoaded = useCallback(
+    (topicKey) => {
+      const lists = ieltsGrouping.listsByTopic[topicKey] || []
+      lists.forEach((item) => {
+        ensureIeltsListLoaded(item.key)
+      })
+    },
+    [ensureIeltsListLoaded, ieltsGrouping.listsByTopic]
+  )
+
   const handleCategorySelect = (categoryId, options = {}) => {
     pendingStartWordIdRef.current = options.focusWordId ?? null
     setAssessmentBackTarget('home')
@@ -1206,6 +1454,10 @@ function AppContent() {
     if (categoryId !== 'toefl') {
       setSelectedToeflLevel('')
       setSelectedToeflList('')
+    }
+    if (categoryId !== 'ielts') {
+      setSelectedIeltsTopic('')
+      setSelectedIeltsList('')
     }
     setMode('learn')
     setView('learn')
@@ -1217,7 +1469,20 @@ function AppContent() {
     setSelectedCategory('toefl')
     setSelectedToeflLevel('')
     setSelectedToeflList('')
+    setSelectedIeltsTopic('')
+    setSelectedIeltsList('')
     setView('toeflLevels')
+  }
+
+  const openIeltsTopics = () => {
+    pendingStartWordIdRef.current = null
+    setAssessmentBackTarget('home')
+    setSelectedCategory('ielts')
+    setSelectedToeflLevel('')
+    setSelectedToeflList('')
+    setSelectedIeltsTopic('')
+    setSelectedIeltsList('')
+    setView('ieltsTopics')
   }
 
   const handleToeflLevelSelect = (levelKey) => {
@@ -1225,6 +1490,8 @@ function AppContent() {
     setSelectedCategory('toefl')
     setSelectedToeflLevel(levelKey)
     setSelectedToeflList('')
+    setSelectedIeltsTopic('')
+    setSelectedIeltsList('')
 
     const nextLists = toeflGrouping.listsByLevel[levelKey] || []
     if (nextLists.length === 0) {
@@ -1238,6 +1505,8 @@ function AppContent() {
     setAssessmentBackTarget('home')
     setSelectedCategory('toefl')
     setSelectedToeflList(listKey)
+    setSelectedIeltsTopic('')
+    setSelectedIeltsList('')
     ensureToeflListLoaded(selectedToeflLevel, listKey)
     setMode('learn')
     setView('learn')
@@ -1249,6 +1518,9 @@ function AppContent() {
     setSelectedCategory('toefl')
     setSelectedToeflLevel('')
     setSelectedToeflList('')
+    setSelectedIeltsTopic('')
+    setSelectedIeltsList('')
+    ensureAllToeflLoaded()
     setMode('learn')
     setView('learn')
   }
@@ -1258,7 +1530,64 @@ function AppContent() {
     setAssessmentBackTarget('home')
     setSelectedCategory('toefl')
     setSelectedToeflList('')
+    setSelectedIeltsTopic('')
+    setSelectedIeltsList('')
     ensureToeflLevelLoaded(selectedToeflLevel)
+    setMode('learn')
+    setView('learn')
+  }
+
+  const handleIeltsTopicSelect = (topicKey) => {
+    pendingStartWordIdRef.current = null
+    setSelectedCategory('ielts')
+    setSelectedToeflLevel('')
+    setSelectedToeflList('')
+    setSelectedIeltsTopic(topicKey)
+    setSelectedIeltsList('')
+
+    const nextLists = ieltsGrouping.listsByTopic[topicKey] || []
+    if (nextLists.length === 0) {
+      setMode('learn')
+    }
+    setView(nextLists.length > 0 ? 'ieltsLists' : 'learn')
+  }
+
+  const handleIeltsListSelect = (listKey) => {
+    pendingStartWordIdRef.current = null
+    setAssessmentBackTarget('home')
+    setSelectedCategory('ielts')
+    setSelectedToeflLevel('')
+    setSelectedToeflList('')
+    if (!selectedIeltsTopic) {
+      setSelectedIeltsTopic(getIeltsTopicKey(listKey))
+    }
+    setSelectedIeltsList(listKey)
+    ensureIeltsListLoaded(listKey)
+    setMode('learn')
+    setView('learn')
+  }
+
+  const handleStartAllIelts = () => {
+    pendingStartWordIdRef.current = null
+    setAssessmentBackTarget('home')
+    setSelectedCategory('ielts')
+    setSelectedToeflLevel('')
+    setSelectedToeflList('')
+    setSelectedIeltsTopic('')
+    setSelectedIeltsList('')
+    ensureAllIeltsLoaded()
+    setMode('learn')
+    setView('learn')
+  }
+
+  const handleStartCurrentIeltsTopic = () => {
+    pendingStartWordIdRef.current = null
+    setAssessmentBackTarget('home')
+    setSelectedCategory('ielts')
+    setSelectedToeflLevel('')
+    setSelectedToeflList('')
+    setSelectedIeltsList('')
+    ensureIeltsTopicLoaded(selectedIeltsTopic)
     setMode('learn')
     setView('learn')
   }
@@ -1304,6 +1633,8 @@ function AppContent() {
     setSelectedCategory('all')
     setSelectedToeflLevel('')
     setSelectedToeflList('')
+    setSelectedIeltsTopic('')
+    setSelectedIeltsList('')
     setCurrentIndex(0)
     setMode(nextMode)
     setView('learn')
@@ -1335,6 +1666,8 @@ function AppContent() {
     setSelectedCategory('all')
     setSelectedToeflLevel('')
     setSelectedToeflList('')
+    setSelectedIeltsTopic('')
+    setSelectedIeltsList('')
     setCurrentIndex(0)
     setMode(nextMode)
     setView('learn')
@@ -1412,9 +1745,23 @@ function AppContent() {
       return ['托福词汇', levelLabel, listLabel].filter(Boolean).join(' · ')
     }
 
+    if (selectedCategory === 'ielts') {
+      const topicLabel = selectedIeltsTopic
+        ? ieltsGrouping.topics.find((item) => item.key === selectedIeltsTopic)?.label || '未分主题'
+        : ''
+      const listLabel =
+        selectedIeltsList === TOEFL_UNKNOWN_LIST
+          ? '未分 List'
+          : selectedIeltsList
+            ? `List ${selectedIeltsList}`
+            : ''
+
+      return ['雅思词汇', topicLabel, listLabel].filter(Boolean).join(' · ')
+    }
+
     const cat = categories.find((c) => c.id === selectedCategory)
     return cat ? cat.name : '全部单词'
-  }, [selectedCategory, selectedToeflLevel, selectedToeflList])
+  }, [ieltsGrouping.topics, selectedCategory, selectedIeltsList, selectedIeltsTopic, selectedToeflLevel, selectedToeflList])
 
   const vocabularyMap = useMemo(() => {
     const map = new Map()
@@ -1542,7 +1889,14 @@ function AppContent() {
   }
 
   const appBackground = useMemo(() => {
-    if (view === 'studyHub' || view === 'home' || view === 'toeflLevels' || view === 'toeflLists') {
+    if (
+      view === 'studyHub' ||
+      view === 'home' ||
+      view === 'toeflLevels' ||
+      view === 'toeflLists' ||
+      view === 'ieltsTopics' ||
+      view === 'ieltsLists'
+    ) {
       return 'bg-[#f8fafc]'
     }
 
@@ -1615,7 +1969,7 @@ function AppContent() {
               lastSyncedAt,
             })}
             accountNotice={homeAccountNotice}
-            wordCount={allVocabulary.length}
+            wordCount={wordCounts.all}
             readingCount={readingLibrary.length}
             reviewCount={todayReviewWordList.length}
             wrongCount={wrongWordList.length}
@@ -1631,7 +1985,7 @@ function AppContent() {
             onSelectScope={setExamScope}
             learnedCount={learnedWords.length}
             masteredCount={masteredWords.length}
-            totalCount={allVocabulary.length}
+            totalCount={wordCounts.all}
             onSyncAccount={handleHomeSync}
             mode={mode}
             onOpenMode={(nextMode) => handleStartExamPractice(nextMode, examScope)}
@@ -1653,6 +2007,7 @@ function AppContent() {
             onOpenTodayReview={handleOpenTodayReview}
             onOpenWrongWords={handleOpenWrongWords}
             onOpenToeflLevels={openToeflLevels}
+            onOpenIeltsLists={openIeltsTopics}
             authEnabled={cloudEnabled}
             authLoading={authLoading}
             authUser={authUser}
@@ -1719,6 +2074,8 @@ function AppContent() {
             onSyncAccount={handleHomeSync}
             onSpeakIntro={() => speak('TOEFL vocabulary. Choose a level, then choose a list to start.', { rate: 1 })}
             selectAllLabel="学习全部托福词汇"
+            vocabularyLabel="托福词汇"
+            listLabel="托福 List"
           />
         )
       case 'toeflLists': {
@@ -1740,6 +2097,51 @@ function AppContent() {
             onSyncAccount={handleHomeSync}
             onSpeakIntro={() => speak(`${levelLabel}. Choose a list to start, or study all words in this level.`, { rate: 1 })}
             selectAllLabel={`学习${levelLabel}全部词汇`}
+            vocabularyLabel="托福词汇"
+            listLabel="托福 List"
+          />
+        )
+      }
+      case 'ieltsTopics':
+        return (
+          <ToeflSelectionView
+            mode="level"
+            title="🇬🇧 雅思词汇主题"
+            subtitle="先选择主题，再进入对应 List；也可以直接学习全部雅思词汇。"
+            items={ieltsGrouping.topics}
+            totalCount={ieltsGrouping.total}
+            onBack={handleBackToHome}
+            onHome={handleBackToStudyHub}
+            onSelect={handleIeltsTopicSelect}
+            onSelectAll={handleStartAllIelts}
+            onSyncAccount={handleHomeSync}
+            onSpeakIntro={() => speak('IELTS vocabulary. Choose a topic, then choose a list to start.', { rate: 1 })}
+            selectAllLabel="学习全部雅思词汇"
+            vocabularyLabel="雅思词汇"
+            listLabel="雅思主题"
+          />
+        )
+      case 'ieltsLists': {
+        const topicLabel =
+          ieltsGrouping.topics.find((item) => item.key === selectedIeltsTopic)?.label || '未分主题'
+        const totalForTopic = ieltsListsForSelectedTopic.reduce((sum, item) => sum + item.count, 0)
+
+        return (
+          <ToeflSelectionView
+            mode="list"
+            title={`📘 ${topicLabel}`}
+            subtitle="选择 List 开始学习，或者直接学习当前主题全部词汇。"
+            items={ieltsListsForSelectedTopic}
+            totalCount={totalForTopic}
+            onBack={() => setView('ieltsTopics')}
+            onHome={handleBackToStudyHub}
+            onSelect={handleIeltsListSelect}
+            onSelectAll={handleStartCurrentIeltsTopic}
+            onSyncAccount={handleHomeSync}
+            onSpeakIntro={() => speak(`${topicLabel}. Choose a list to start, or study all words in this topic.`, { rate: 1 })}
+            selectAllLabel={`学习${topicLabel}全部词汇`}
+            vocabularyLabel="雅思词汇"
+            listLabel="雅思 List"
           />
         )
       }

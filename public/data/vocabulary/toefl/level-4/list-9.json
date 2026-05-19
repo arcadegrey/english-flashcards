@@ -166,10 +166,12 @@
     "exampleCn": "热能可以通过金属快速传递。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "2"
   },
   {
     "id": 2181,
@@ -1306,10 +1308,12 @@
     "exampleCn": "地中海气候夏季通常干燥。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "2"
   },
   {
     "id": 2257,
@@ -1471,10 +1475,12 @@
     "exampleCn": "冰川在陆地上缓慢移动。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "1"
   },
   {
     "id": 2268,

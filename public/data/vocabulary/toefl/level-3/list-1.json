@@ -482,10 +482,12 @@
     "exampleCn": "飓风造成了广泛的破坏。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "1"
   },
   {
     "id": 525,
@@ -587,10 +589,12 @@
     "exampleCn": "北极熊生活在北极。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "2"
   },
   {
     "id": 532,
@@ -1082,10 +1086,12 @@
     "exampleCn": "太阳落到了地平线以下。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "1"
   },
   {
     "id": 565,
@@ -1412,10 +1418,12 @@
     "exampleCn": "南极洲被冰雪覆盖。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "2"
   },
   {
     "id": 588,

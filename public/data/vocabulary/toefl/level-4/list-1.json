@@ -1125,10 +1125,12 @@
     "exampleCn": "小路在接近山顶时变得陡峭。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "2"
   },
   {
     "id": 1506,

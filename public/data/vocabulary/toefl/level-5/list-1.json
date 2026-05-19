@@ -595,10 +595,12 @@
     "exampleCn": "铁矿石是钢铁的重要原料。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "1"
   },
   {
     "id": 2473,
@@ -1120,10 +1122,12 @@
     "exampleCn": "这张图有一条纵轴和一条横轴。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "2"
   },
   {
     "id": 2508,

@@ -1006,10 +1006,12 @@
     "exampleCn": "这个地区去年夏天遭受了严重干旱。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "1"
   },
   {
     "id": 1295,

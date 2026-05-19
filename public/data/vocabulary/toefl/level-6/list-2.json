@@ -414,10 +414,12 @@
     "exampleCn": "一条清澈的小溪流过山谷。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "2"
   },
   {
     "id": 3407,

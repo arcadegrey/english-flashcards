@@ -1061,10 +1061,12 @@
     "exampleCn": "铁会被磁铁吸引。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "1"
   },
   {
     "id": 1206,

@@ -2,7 +2,13 @@ import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath, pathToFileURL } from 'url';
 import { parseVocabularyCsv } from '../src/utils/csvImport.js';
-import { getWordCategories, mergeCategoryLists, wordHasToeflCategory } from '../src/utils/wordCategories.js';
+import {
+  getWordCategories,
+  mergeCategoryLists,
+  wordHasExternalExamCategory,
+  wordHasIeltsCategory,
+  wordHasToeflCategory,
+} from '../src/utils/wordCategories.js';
 import { splitVocabulary } from './split-vocabulary.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -55,24 +61,35 @@ export const mergeVocabularyUpsertWord = (current, incoming) => {
     categories: categories.length > 0 ? categories : [mergedCategory],
   };
 
-  if (wordHasToeflCategory(nextWord)) {
+  if (wordHasExternalExamCategory(nextWord)) {
     const nextLevel = normalizeNumericTag(current.level) || normalizeNumericTag(incoming.level);
     const nextList = normalizeNumericTag(current.list) || normalizeNumericTag(incoming.list);
+    const nextIeltsList =
+      normalizeNumericTag(incoming.ieltsList) ||
+      (wordHasIeltsCategory(incoming) ? normalizeNumericTag(incoming.list) : '') ||
+      normalizeNumericTag(current.ieltsList);
 
-    if (nextLevel) {
+    if (wordHasToeflCategory(nextWord) && nextLevel) {
       nextWord.level = nextLevel;
     } else {
       delete nextWord.level;
     }
 
-    if (nextList) {
+    if (wordHasToeflCategory(nextWord) && nextList) {
       nextWord.list = nextList;
     } else {
       delete nextWord.list;
     }
+
+    if (wordHasIeltsCategory(nextWord) && nextIeltsList) {
+      nextWord.ieltsList = nextIeltsList;
+    } else {
+      delete nextWord.ieltsList;
+    }
   } else {
     delete nextWord.level;
     delete nextWord.list;
+    delete nextWord.ieltsList;
   }
 
   return nextWord;
@@ -138,7 +155,11 @@ const main = async () => {
           id: nextId,
         };
 
-        if (!wordHasToeflCategory(nextWord)) {
+        if (!wordHasExternalExamCategory(nextWord)) {
+          delete nextWord.level;
+          delete nextWord.list;
+          delete nextWord.ieltsList;
+        } else if (!wordHasToeflCategory(nextWord)) {
           delete nextWord.level;
           delete nextWord.list;
         }

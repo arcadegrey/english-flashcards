@@ -534,10 +534,12 @@
     "exampleCn": "石英常用于手表和电子设备中。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "1"
   },
   {
     "id": 3564,
@@ -609,10 +611,12 @@
     "exampleCn": "大洋洲包括澳大利亚、新西兰和许多太平洋岛屿。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "2"
   },
   {
     "id": 3569,

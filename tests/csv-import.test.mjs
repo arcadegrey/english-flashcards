@@ -3,7 +3,7 @@ import test from 'node:test'
 import { mergeVocabularyUpsertWord } from '../scripts/import-global-vocabulary.mjs'
 import { parseReadingCsv, parseVocabularyCsv } from '../src/utils/csvImport.js'
 
-const validCategoryIds = ['daily', 'cet4', 'toefl']
+const validCategoryIds = ['daily', 'cet4', 'toefl', 'ielts']
 
 test('parseVocabularyCsv skips duplicates and invalid rows', () => {
   const csvText = [
@@ -46,6 +46,24 @@ test('parseVocabularyCsv normalizes TOEFL level and list only for TOEFL words', 
   assert.equal(importedWords[0].list, '10')
   assert.equal(importedWords[1].level, undefined)
   assert.equal(importedWords[1].list, undefined)
+})
+
+test('parseVocabularyCsv stores IELTS list separately from TOEFL list', () => {
+  const csvText = [
+    'word,meaning,category,level,list',
+    'atmosphere,大气,ielts,,List 1',
+  ].join('\n')
+
+  const { importedWords } = parseVocabularyCsv({
+    csvText,
+    existingWords: [],
+    validCategoryIds,
+  })
+
+  assert.deepEqual(importedWords[0].categories, ['ielts'])
+  assert.equal(importedWords[0].level, undefined)
+  assert.equal(importedWords[0].list, undefined)
+  assert.equal(importedWords[0].ieltsList, '1')
 })
 
 test('parseVocabularyCsv handles quoted commas, escaped quotes, and newlines', () => {
@@ -103,6 +121,33 @@ test('mergeVocabularyUpsertWord preserves existing content while adding categori
   assert.equal(merged.category, 'daily')
   assert.equal(merged.level, '3')
   assert.equal(merged.list, '2')
+})
+
+test('mergeVocabularyUpsertWord keeps TOEFL and IELTS list positions separate', () => {
+  const current = {
+    id: 1,
+    word: 'atmosphere',
+    meaning: '大气层',
+    category: 'toefl',
+    categories: ['toefl'],
+    level: '6',
+    list: '4',
+  }
+
+  const incoming = {
+    word: 'atmosphere',
+    meaning: '大气',
+    category: 'ielts',
+    categories: ['ielts'],
+    ieltsList: '1',
+  }
+
+  const merged = mergeVocabularyUpsertWord(current, incoming)
+
+  assert.deepEqual(merged.categories, ['toefl', 'ielts'])
+  assert.equal(merged.level, '6')
+  assert.equal(merged.list, '4')
+  assert.equal(merged.ieltsList, '1')
 })
 
 test('parseReadingCsv imports exam type and JSON questions', () => {

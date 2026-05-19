@@ -166,10 +166,12 @@
     "exampleCn": "工厂向空气中释放了有害烟雾。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "1"
   },
   {
     "id": 1810,
@@ -1351,10 +1353,12 @@
     "exampleCn": "雨后空气又热又潮湿。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "2"
   },
   {
     "id": 1889,

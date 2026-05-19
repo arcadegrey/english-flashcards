@@ -911,10 +911,12 @@
     "exampleCn": "种子在潮湿的土壤中生长良好。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "2"
   },
   {
     "id": 2687,

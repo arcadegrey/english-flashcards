@@ -603,10 +603,12 @@
     "exampleCn": "这张桌子表面很光滑。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "2"
   },
   {
     "id": 889,
@@ -918,10 +920,12 @@
     "exampleCn": "清理后地板仍然是湿的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "2"
   },
   {
     "id": 910,
