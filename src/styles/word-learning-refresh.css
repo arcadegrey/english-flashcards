@@ -1403,19 +1403,58 @@
   letter-spacing: -0.02em;
 }
 
-.selection-card--nature-geography {
+.selection-card--nature-geography,
+.selection-card--plant-research,
+.selection-card--animal-conservation,
+.selection-card--space-exploration {
   position: relative;
   min-height: 148px;
   overflow: hidden;
   isolation: isolate;
-  border-color: rgba(15, 87, 104, 0.22);
-  background:
-    linear-gradient(180deg, rgba(12, 40, 54, 0.24), rgba(5, 22, 31, 0.68)),
-    url('/images/ielts-nature-geography-bg.webp') center / cover no-repeat;
-  box-shadow: 0 16px 34px rgba(15, 87, 104, 0.18);
 }
 
-.selection-card--nature-geography::after {
+.selection-card--nature-geography {
+  border-color: rgba(15, 87, 104, 0.22);
+  --ielts-topic-bg: url('/images/ielts-nature-geography-bg.webp');
+  --ielts-topic-shadow: rgba(15, 87, 104, 0.18);
+  --ielts-topic-hover-shadow: rgba(15, 87, 104, 0.28);
+}
+
+.selection-card--plant-research {
+  border-color: rgba(38, 111, 65, 0.24);
+  --ielts-topic-bg: url('/images/ielts-plant-research-bg.webp');
+  --ielts-topic-shadow: rgba(38, 111, 65, 0.18);
+  --ielts-topic-hover-shadow: rgba(38, 111, 65, 0.28);
+}
+
+.selection-card--animal-conservation {
+  border-color: rgba(111, 92, 42, 0.26);
+  --ielts-topic-bg: url('/images/ielts-animal-conservation-bg.webp');
+  --ielts-topic-shadow: rgba(111, 92, 42, 0.18);
+  --ielts-topic-hover-shadow: rgba(111, 92, 42, 0.3);
+}
+
+.selection-card--space-exploration {
+  border-color: rgba(49, 83, 136, 0.26);
+  --ielts-topic-bg: url('/images/ielts-space-exploration-bg.webp');
+  --ielts-topic-shadow: rgba(49, 83, 136, 0.18);
+  --ielts-topic-hover-shadow: rgba(49, 83, 136, 0.3);
+}
+
+.selection-card--nature-geography,
+.selection-card--plant-research,
+.selection-card--animal-conservation,
+.selection-card--space-exploration {
+  background:
+    linear-gradient(180deg, rgba(12, 40, 54, 0.24), rgba(5, 22, 31, 0.68)),
+    var(--ielts-topic-bg) center / cover no-repeat;
+  box-shadow: 0 16px 34px var(--ielts-topic-shadow);
+}
+
+.selection-card--nature-geography::after,
+.selection-card--plant-research::after,
+.selection-card--animal-conservation::after,
+.selection-card--space-exploration::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -1424,22 +1463,40 @@
 }
 
 .selection-card--nature-geography:hover,
-.selection-card--nature-geography.is-active {
+.selection-card--nature-geography.is-active,
+.selection-card--plant-research:hover,
+.selection-card--plant-research.is-active,
+.selection-card--animal-conservation:hover,
+.selection-card--animal-conservation.is-active,
+.selection-card--space-exploration:hover,
+.selection-card--space-exploration.is-active {
   border-color: rgba(255, 255, 255, 0.48);
   background:
     linear-gradient(180deg, rgba(10, 34, 48, 0.18), rgba(3, 18, 27, 0.62)),
-    url('/images/ielts-nature-geography-bg.webp') center / cover no-repeat;
-  box-shadow: 0 18px 38px rgba(15, 87, 104, 0.28);
+    var(--ielts-topic-bg) center / cover no-repeat;
+  box-shadow: 0 18px 38px var(--ielts-topic-hover-shadow);
 }
 
 .selection-card--nature-geography .reading-category-name,
 .selection-card--nature-geography .reading-category-count,
-.selection-card--nature-geography .toefl-selection-meta {
+.selection-card--nature-geography .toefl-selection-meta,
+.selection-card--plant-research .reading-category-name,
+.selection-card--plant-research .reading-category-count,
+.selection-card--plant-research .toefl-selection-meta,
+.selection-card--animal-conservation .reading-category-name,
+.selection-card--animal-conservation .reading-category-count,
+.selection-card--animal-conservation .toefl-selection-meta,
+.selection-card--space-exploration .reading-category-name,
+.selection-card--space-exploration .reading-category-count,
+.selection-card--space-exploration .toefl-selection-meta {
   color: #ffffff;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.34);
 }
 
-.selection-card--nature-geography .toefl-selection-meta {
+.selection-card--nature-geography .toefl-selection-meta,
+.selection-card--plant-research .toefl-selection-meta,
+.selection-card--animal-conservation .toefl-selection-meta,
+.selection-card--space-exploration .toefl-selection-meta {
   color: rgba(255, 255, 255, 0.86);
 }
 

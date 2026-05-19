@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-19T10:44:00.564Z",
+  "generatedAt": "2026-05-19T13:05:11.153Z",
   "source": "/data/vocabulary.json",
-  "sourceTotal": 3636,
+  "sourceTotal": 3883,
   "core": {
     "path": "/data/vocabulary/core.json",
-    "count": 318
+    "count": 306
   },
   "toefl": {
     "total": 3254,

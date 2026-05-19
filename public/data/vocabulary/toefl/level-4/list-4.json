@@ -26,10 +26,12 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "9"
   },
   {
     "id": 208,
@@ -304,10 +306,12 @@
     "exampleCn": "导游带领游客参观了博物馆。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "9"
   },
   {
     "id": 1728,
@@ -576,10 +580,12 @@
     "exampleCn": "那种方法不适合这么小的样本。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "3"
   },
   {
     "id": 1746,
@@ -591,10 +597,16 @@
     "exampleCn": "树干在旱季储存水分。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6",
+      "8"
+    ]
   },
   {
     "id": 1747,
@@ -651,10 +663,12 @@
     "exampleCn": "光学仪器可以让远处物体看起来更近。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "9"
   },
   {
     "id": 1751,
@@ -1026,10 +1040,15 @@
     "exampleCn": "保护项目有助于保护濒危动物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 1776,

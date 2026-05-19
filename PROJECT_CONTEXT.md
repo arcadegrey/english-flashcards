@@ -3,8 +3,9 @@
 ## 项目用途
 
 - 一个 Vite + React 英语学习应用，用于单词卡片学习、测验、填空、拼写、连线、阅读练习、错题复习、考试巩固和学习统计。
-- 内置主词库来自 `public/data/vocabulary.json` 并在启动时异步加载；阅读材料来自 `src/data/readings.js`。用户自定义词和学习进度保存在本地 storage，并可同步到 Cloudflare Worker + D1。
-- TOEFL 词库同时有按 Level/List 拆分的静态分片，位于 `public/data/vocabulary/toefl/`；`public/data/vocabulary/toefl/manifest.json` 记录每个 Level/List 的路径和数量。
+- 完整主词库仍保存在 `public/data/vocabulary.json`，用于导入/分片/音频生成；前端启动时加载轻量的 `public/data/vocabulary/core.json`，再按需加载考试词库分片。阅读材料来自 `src/data/readings.js`。用户自定义词和学习进度保存在本地 storage，并可同步到 Cloudflare Worker + D1。
+- TOEFL 词库按 Level/List 拆分，位于 `public/data/vocabulary/toefl/`；`public/data/vocabulary/toefl/manifest.json` 记录每个 Level/List 的路径和数量。
+- IELTS 词库按“主题/List”拆分，位于 `public/data/vocabulary/ielts/`；`public/data/vocabulary/ielts/manifest.json` 记录主题、List、路径和数量。
 
 ## 启动命令
 
@@ -17,6 +18,7 @@
 - D1 迁移：`npm run d1:migrate`
 - 导入全局词库：`npm run words:import`
 - 刷新词库分片：`npm run words:split`
+- 从 IELTS PDF 提取纯单词表：`npm run ielts:extract-pdf`
 - 导入阅读材料：`npm run readings:import`
 - 本地 Kokoro TTS：`npm run tts:kokoro`
 - 生成例句静态音频：`npm run tts:generate-examples`
@@ -25,8 +27,9 @@
 ## 主要页面
 
 - `studyHub`：学习入口，展示词库、阅读、复习、错题、统计、考试练习和账号同步入口。
-- `home`：单词分类选择页，支持全部、分类和托福词汇入口。
+- `home`：单词分类选择页，支持全部、分类、托福词汇和雅思词汇入口。
 - `toeflLevels` / `toeflLists`：托福词汇按 Level / List 分层选择。
+- `ieltsTopics` / `ieltsLists`：雅思词汇按主题 / List 分层选择；当前已导入 List 1-10，按自然地理、植物研究、动物保护、太空探索分主题。
 - `learn`：统一学习容器，由 `LearningView` 根据 mode 渲染学习卡片、测验、填空、拼写或连线。
 - `readingList` / `readingSession`：阅读等级列表和文章阅读练习；文章页支持阅读题作答和反馈。
 - `todayReview` / `wrongWords` / `learnedWords` / `masteredWords`：复习、错题、已学习、已掌握集合页。
@@ -51,6 +54,7 @@
 - 本地服务提供 `POST /v1/audio/speech` 和 `POST /tts`，兼容 OpenAI 风格 payload：`input`、`voice`、`speed`、`response_format`。
 - 音频生成后会缓存到 `.cache/kokoro-tts/`，缓存目录和 `.venv-kokoro` 都被 `.gitignore` 排除。
 - 当前机器已通过 Homebrew 安装 `python@3.11`、`espeak-ng`、`libsndfile`，并已创建项目虚拟环境 `.venv-kokoro`、安装 Python 依赖。
+- `.venv-kokoro` 当前位于项目目录内，体积约 936 MB，其中 PyTorch 相关依赖是主要占用；暂时先保留不迁移。如果后续要瘦项目目录，建议在项目外重建到例如 `/Users/arcade/.venvs/english-flashcards-kokoro`，再把 `package.json` 的 Kokoro 命令改为外部 venv 路径或 `KOKORO_PYTHON` 环境变量。
 - 已实测 `curl http://127.0.0.1:8880/health` 返回 `{"status":"ok"}`，并成功生成 `/private/tmp/kokoro-test.wav`（WAV，mono 24000 Hz）。
 - 批量静态单词音频脚本是 `scripts/generate_kokoro_word_audio.py`，启动命令是 `npm run tts:generate-words`。
 - 批量静态例句音频脚本是 `scripts/generate_kokoro_example_audio.py`，启动命令是 `npm run tts:generate-examples`；默认只生成 `af_bella`，输出到 `public/audio/examples/{voice}/{id}.mp3`，适合先把例句从 Railway 实时 TTS 迁到 R2 静态音频。若要补男声，可运行 `npm run tts:generate-examples -- --voices am_michael`。
@@ -93,23 +97,33 @@
 - 单词导入会按小写 word 去重；新 id 从现有最大 id + 1 开始。
 - 分类通过 `parseCategoryList` 解析，只保留有效分类；无有效分类时默认 `daily`。
 - 当前词库分类已收敛为：`daily` 日常常用、`cet4` 四级核心、`cet6` 六级核心、`toefl` 托福词汇、`ielts` 雅思词汇；`all` 仅作为“全部单词”入口，不是实际词条分类。旧的 `academic/business/travel/food/emotion/technology/medical` 已合并到 `daily`。
-- 仅当分类包含 `toefl` 时才写入规范化后的 `level` / `list` 数字标签。
+- 当分类包含 `toefl` 时写入规范化后的 `level` / `list` 数字标签。
+- 当分类包含 `ielts` 时写入规范化后的 `ieltsList` 数字标签和 `ieltsLists` 数组，不复用 TOEFL 的 `list` 字段，避免同一个重复词同时属于 TOEFL / IELTS 时位置互相覆盖。
 - `--upsert` 行为边界：
   - 不会丢掉旧分类。重复词会通过 `mergeCategoryLists` 合并旧 `category/categories` 和 CSV 的 `category/categories`，例如原本 `daily`、CSV 为 `toefl`，结果包含 `["daily", "toefl"]`。
   - 重复词不会再用 CSV 覆盖已有 `phonetic`、`pos`、`meaning`、`example`、`exampleCn`，避免已录制的单词/例句音频因内容字段变化而需要重录。
   - 如果合并后词条属于 TOEFL，会优先保留旧的 `level/list`；旧词缺少位置时才用 CSV 的 `level/list` 补全 TOEFL 位置。
-  - 如果合并后词条不属于 TOEFL，会删除 `level/list`。
+  - 如果合并后词条属于 IELTS，会把 CSV 的 `list` 合并进 `ieltsLists` 数组，并用第一个数字作为兼容字段 `ieltsList`；例如 `trunk` 同时属于 List 6 和 List 8。
+  - 如果合并后词条不属于 TOEFL，会删除 `level/list`；如果不属于 IELTS，会删除 `ieltsList/ieltsLists`。
 - 每次非 dry-run 的 `words:import` 成功后，都会自动调用 `splitVocabulary()` 刷新分片文件。
 - 手动刷新分片可运行 `npm run words:split`。它会从 `public/data/vocabulary.json` 重新生成：
-  - `public/data/vocabulary/core.json`：非 TOEFL 词。
+  - `public/data/vocabulary/core.json`：非 TOEFL、非 IELTS 的启动词库。
   - `public/data/vocabulary/toefl/manifest.json`：TOEFL 分片目录。
   - `public/data/vocabulary/toefl/level-{n}/list-{m}.json`：具体 TOEFL Level/List 分片。
+  - `public/data/vocabulary/ielts/manifest.json`：IELTS 主题/List 分片目录。
+  - `public/data/vocabulary/ielts/list-{m}.json`：具体 IELTS List 分片。
 - 当前 TOEFL 导入进度：
   - Level 3：共 1010 词，List 1-10 分别为 98、100、98、99、100、100、100、99、99、117。
   - Level 4：共 1072 词，List 1-10 分别为 100、100、100、100、100、100、99、100、100、173。
   - Level 5：共 923 词，List 1-10 分别为 100、100、99、98、100、99、100、99、99、29。
   - Level 6：共 249 词，List 1-5 分别为 50、50、49、50、50。
-  - 最近一次导入后总词库为 3577 个词，其中 TOEFL 词 3254 个。
+  - 当前 TOEFL 词 3254 个。
+- 当前 IELTS 导入进度：
+  - 已从 `/Users/arcade/Desktop/ielts_list1-2_filled.csv`、`/Users/arcade/Desktop/IELTS Words/ielts_list3-4.csv`、`/Users/arcade/Desktop/IELTS Words/ietls_list5-6.csv`、`/Users/arcade/Desktop/IELTS Words/ielts_list7-8.csv`、`/Users/arcade/Desktop/IELTS Words/ielts_list9-10.csv` 通过 `--upsert` 导入 List 1-10。
+  - IELTS manifest 当前为 4 个主题：List 1-4 自然地理，共 240；List 5-6 植物研究，共 120；List 7-9 动物保护，共 180；List 10 太空探索，共 60。
+  - List 1-10 各 60 个 List 条目，共 600 个 IELTS List 条目；源 CSV 中 `trunk` 同时出现在 List 6 和 List 8，所以唯一 IELTS 词数为 599。
+  - 当前完整词库总量为 3883 个唯一词；`core.json` 约 306 个非考试词。
+- IELTS PDF 纯单词提取脚本是 `scripts/extract-ielts-pdf-vocabulary.mjs`，命令为 `npm run ielts:extract-pdf -- /Users/arcade/Desktop/list1-10.pdf output/ielts_list1-10.csv`。该脚本使用 macOS Swift/PDFKit 读取 PDF 坐标，输出 `word,list` 两列，用于后续单独生成释义/例句。
 - 阅读 CSV 默认字段：`title, level, category, content, translation, source, tags, examType, questions`。
 - 阅读必填字段：`title`、`content`。
 - 阅读导入按 `title + level` 去重；tags 支持 `|`、`,`、`;`、`，` 分隔。
@@ -133,35 +147,43 @@
 ## 词库加载与分片策略
 
 - `src/data/vocabulary.js` 暴露：
-  - `loadVocabulary()`：加载 `/data/vocabulary.json` 主词库。
+  - `loadVocabulary()`：加载 `/data/vocabulary/core.json` 启动词库。
   - `loadToeflManifest()`：加载 `/data/vocabulary/toefl/manifest.json`。
   - `loadToeflListVocabulary(manifest, levelKey, listKey)`：按 manifest 加载具体 TOEFL list 分片。
-- `src/App.jsx` 启动时仍加载完整 `vocabulary.json`，以保持首页、阅读高亮、全部词库和旧逻辑兼容。
+  - `loadIeltsManifest()`：加载 `/data/vocabulary/ielts/manifest.json`。
+  - `loadIeltsListVocabulary(manifest, listKey)`：按 manifest 加载具体 IELTS list 分片。
+- `src/App.jsx` 启动时加载 `core.json` + TOEFL manifest + IELTS manifest，不再启动时加载完整 `vocabulary.json`。完整 `vocabulary.json` 仍保留给导入、分片和音频生成脚本使用。
 - TOEFL Level/List 页面优先使用 manifest 显示每个 Level/List 的数量，避免必须从内存扫描构造目录。
 - 用户进入具体 TOEFL List 时，`ensureToeflListLoaded(level, list)` 会按需加载对应分片，并用 `mergeVocabularyList` 合并进内存。
 - 用户选择“学习当前 Level 全部词汇”时，会触发 `ensureToeflLevelLoaded(level)` 预加载该 Level 下所有 List 分片。
+- IELTS Topic/List 页面优先使用 manifest 显示主题和 List 数量；用户进入具体 IELTS List 时，`ensureIeltsListLoaded(list)` 会按需加载对应分片。
+- 用户选择“学习当前 IELTS 主题全部词汇”时，会触发 `ensureIeltsTopicLoaded(topic)` 预加载该主题下所有 List 分片。
+- IELTS 主题按钮使用 AI 生成背景图，CSS 实际引用 WebP：自然地理 `public/images/ielts-nature-geography-bg.webp`、植物研究 `public/images/ielts-plant-research-bg.webp`、动物保护 `public/images/ielts-animal-conservation-bg.webp`、太空探索 `public/images/ielts-space-exploration-bg.webp`。
 - `vite.config.js` 的 PWA `globIgnores` 排除了 `**/data/vocabulary/**/*.json`，避免分片目录被 Workbox 全量预缓存；主 `public/data/vocabulary.json` 仍会按普通 json 静态资源参与构建缓存。
 
 ## 当前已知风险
 
 - 最近重要提交：
+  - `366bf22 Add IELTS vocabulary lists`：导入 IELTS List 1-2，新增 IELTS 主题/List 分层、按需分片加载、PDF 提词脚本和自然地理背景图。
   - `3c4fe49 Add static example audio generation`：新增例句静态音频生成脚本。
   - `61d07e5 Polish Kokoro preview and R2 audio uploads`：移除语音设置 Kokoro 说明块，修正 Kokoro 试听为静态 MP3，R2 上传脚本改为默认小批量 bulk。
 - `resetProgress` 会调用 `storage.clearProgress()` 清除学习进度、错题、复习计划和统计历史，但会保留账号、主题、语音设置和自定义词。
 - 进度合并以数组去重和对象浅合并为主，`wordProgress` 同一单词的冲突会以后写入对象覆盖。
 - Worker 发送验证码依赖 Resend；本地或测试环境若缺少环境变量，登录链路会直接失败。
 - CSV 解析器是自实现，不支持复杂 Excel 方言或分号分隔文件。
-- 目前仍然启动时加载完整 `public/data/vocabulary.json`，TOEFL 分片主要用于目录和具体 List 的按需补强加载；若未来词库继续变大，可以进一步改成“启动只加载 core + manifest，选择分类/列表时再加载分片”。
-- `--upsert` 对重复词只合并分类，并只在旧词缺少 TOEFL 位置时补 `level/list`；不会覆盖已有释义、例句、音标或词性，因此不会因 CSV 重导入触发已录制音频内容变化。
+- 启动时已改为 `core.json + manifest`，考试词库按需加载；如果阅读高亮需要覆盖未加载的 TOEFL/IELTS 词，可能需要在阅读场景预加载相关考试分片或建立更轻量的 lookup 索引。
+- `--upsert` 对重复词只合并分类，并只补位置字段（TOEFL 的 `level/list`、IELTS 的 `ieltsList`）；不会覆盖已有释义、例句、音标或词性，因此不会因 CSV 重导入触发已录制音频内容变化。
 - `npm run worker:dev` 缺少本地 `wrangler` 依赖的风险已处理：`wrangler` 已加入 devDependencies，当前版本为 4.92.0。已验证 Worker 可启动到 `http://localhost:8787`，`GET /api/auth/me` 在未登录状态下正常返回 401。
 - 本地前端 `npm run dev` 可正常启动；如果 `5173` 被占用，Vite 会自动切到下一个端口，例如 `5174`。
 - Codex 内置 Browser 连接本地页面时曾多次超时，但同一端口用 `curl -I` 返回 200；如果要做 UI 截图验证，可能需要先解决 Browser/reconnect 问题或改用其他验证方式。
+- 当前工作区还有未提交/未清理的副本文件风险：`public/data/vocabulary/ielts/list-1 2.json`、`list-2 2.json`、`manifest 2.json`、`public/data/vocabulary/toefl/manifest 2.json`，以及 `output/ielts_list1-10.csv`、`public/images/ielts-nature-geography-bg.png`。这些没有进入提交 `366bf22`；若后续要清理，需要先确认是否保留，再处理 Git index / 文件。
 
 ## 下一步建议
 
 - 下一步最值得做的是接入静态例句音频播放：新增 `VITE_EXAMPLE_AUDIO_BASE_URL` 或复用 R2 根地址，Kokoro provider 下优先播放 `audio/examples/{voice}/{id}.mp3`；若当前音色没有例句音频（例如 `bf_emma`），可 fallback 到 `af_bella` 或实时 Kokoro。
 - 男声例句 `am_michael` 已完成 R2 上传和公开 URL 抽查；后续无需再重复上传，除非本地重新生成了例句音频。
-- 若继续扩展到更多 TOEFL Level，考虑把启动加载从全量 `vocabulary.json` 改为 `core.json + manifest`，再为普通分类补分片。
+- 如果继续修订 IELTS 词表，优先使用 PDF 提取出的 `word,list` 作为基础，再单独生成释义/音标/例句，最后用 `npm run words:import -- <csv> --upsert` 导入；分片脚本会自动挂到对应 IELTS 主题。
+- 若继续扩展更多考试词库，沿用 `core.json + manifest + 按需 list 分片`，避免启动包继续变大。
 - 阅读 CSV 导入已覆盖 `examType` / `questions`，后续可继续补重复、缺字段、tags 分隔和带引号换行内容的测试。
 - 如需更强多端同步语义，为 `wordProgress` 增加单词级 `updatedAt`，再按单词更新时间解决冲突。
 - 如果继续加入 TOEFL / IELTS 阅读文章和阅读题，建议先固定 CSV 的 `questions` JSON 模板，避免手填时字段名漂移。

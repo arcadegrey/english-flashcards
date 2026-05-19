@@ -58,10 +58,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 385,
@@ -391,10 +396,15 @@
     "exampleCn": "花香充满了花园。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1920,
@@ -976,10 +986,15 @@
     "exampleCn": "这家公司向多个国家出口木材。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 1959,
@@ -1038,10 +1053,15 @@
     "exampleCn": "茂密的植被覆盖了山坡。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1963,
@@ -1188,10 +1208,15 @@
     "exampleCn": "农民在低地田里种植水稻。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1973,
@@ -1278,10 +1303,15 @@
     "exampleCn": "春天树枝上出现了一个小芽。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1979,

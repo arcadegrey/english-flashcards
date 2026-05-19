@@ -150,10 +150,15 @@
     "exampleCn": "那堵旧墙爬满了绿色藤蔓。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2537,
@@ -210,10 +215,15 @@
     "exampleCn": "工程师试图高效利用风能。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 2541,
@@ -255,10 +265,12 @@
     "exampleCn": "这种化合物在室温下很稳定。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "10"
   },
   {
     "id": 2544,
@@ -392,10 +404,15 @@
     "exampleCn": "这个种植园种植棉花和甘蔗。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2553,
@@ -542,10 +559,12 @@
     "exampleCn": "小农场位于城市边缘。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "3"
   },
   {
     "id": 2563,
@@ -557,10 +576,15 @@
     "exampleCn": "这项新规定可能侵犯个人自由。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2564,
@@ -572,10 +596,12 @@
     "exampleCn": "学生们学习人体心脏的结构。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "9"
   },
   {
     "id": 2565,
@@ -679,10 +705,15 @@
     "exampleCn": "春天野花覆盖了草地。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2572,
@@ -739,10 +770,15 @@
     "exampleCn": "司机在路口按响了喇叭。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 2576,
@@ -754,10 +790,15 @@
     "exampleCn": "一堆石头挡住了小路。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2577,
@@ -844,10 +885,15 @@
     "exampleCn": "蛇是一种爬行动物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2583,
@@ -1384,10 +1430,12 @@
     "exampleCn": "孩子们狼吞虎咽地吃掉了新鲜面包。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "9"
   },
   {
     "id": 2619,

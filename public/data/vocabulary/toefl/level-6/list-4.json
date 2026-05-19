@@ -294,10 +294,12 @@
     "exampleCn": "钠离子带正电荷。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "10"
   },
   {
     "id": 3498,
@@ -324,10 +326,12 @@
     "exampleCn": "肾脏从血液中排泄废物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "9"
   },
   {
     "id": 3500,
@@ -354,10 +358,15 @@
     "exampleCn": "一只野兔快速跑过田野。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 3502,
@@ -744,9 +753,11 @@
     "exampleCn": "化学反应产生了白色沉淀物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "4"
   }
 ]

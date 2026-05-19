@@ -1,0 +1,922 @@
+[
+  {
+    "id": 3,
+    "word": "abnormal",
+    "phonetic": "/æbˈnɔːrməl/",
+    "pos": "adj.",
+    "meaning": "反常的，异常的",
+    "example": "The test results showed abnormal cell growth.",
+    "exampleCn": "测试结果显示细胞异常生长。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 76,
+    "word": "adjacent",
+    "phonetic": "/əˈdʒeɪsnt/",
+    "pos": "adj.",
+    "meaning": "邻近的/毗连的",
+    "example": "The library is adjacent to the science building.",
+    "exampleCn": "图书馆紧挨着科学楼。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "3"
+  },
+  {
+    "id": 281,
+    "word": "border",
+    "phonetic": "/ˈbɔːrdər/",
+    "pos": "n.",
+    "meaning": "边界，边境",
+    "example": "They crossed the border into France.",
+    "exampleCn": "他们越过边境进入法国。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 439,
+    "word": "chill",
+    "phonetic": "/tʃɪl/",
+    "pos": "n./v./adj.",
+    "meaning": "寒意/使变冷/放松/寒冷的",
+    "example": "A sudden chill filled the room.",
+    "exampleCn": "一阵突如其来的寒意充满了房间。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "3"
+  },
+  {
+    "id": 460,
+    "word": "clay",
+    "phonetic": "/kleɪ/",
+    "pos": "n.",
+    "meaning": "粘土",
+    "example": "The pot was made from clay.",
+    "exampleCn": "这个罐子是用粘土做的。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 892,
+    "word": "remote",
+    "phonetic": "/rɪˈmoʊt/",
+    "pos": "adj.",
+    "meaning": "遥远的；偏僻的",
+    "example": "They live in a remote mountain village.",
+    "exampleCn": "他们住在一个偏远的山村。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "3"
+  },
+  {
+    "id": 1284,
+    "word": "rural",
+    "phonetic": "/ˈrʊrəl/",
+    "pos": "adj.",
+    "meaning": "乡村的；农村的",
+    "example": "Rural communities often face limited medical resources.",
+    "exampleCn": "农村社区常常面临医疗资源有限的问题。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "3"
+  },
+  {
+    "id": 1421,
+    "word": "toxic",
+    "phonetic": "/ˈtɑːksɪk/",
+    "pos": "adj.",
+    "meaning": "有毒的；有害的",
+    "example": "The factory was accused of releasing toxic waste.",
+    "exampleCn": "这家工厂被指控排放有毒废物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "3"
+  },
+  {
+    "id": 1422,
+    "word": "slope",
+    "phonetic": "/sloʊp/",
+    "pos": "n./v.",
+    "meaning": "斜坡/倾斜",
+    "example": "The house stands on a gentle slope.",
+    "exampleCn": "这座房子坐落在一个缓坡上。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "3"
+  },
+  {
+    "id": 1608,
+    "word": "margin",
+    "phonetic": "/ˈmɑːrdʒɪn/",
+    "pos": "n.",
+    "meaning": "边缘/页边空白/差额",
+    "example": "Write your notes in the margin of the page.",
+    "exampleCn": "把你的笔记写在页面的空白边缘。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "3"
+  },
+  {
+    "id": 1745,
+    "word": "inappropriate",
+    "phonetic": "/ˌɪnəˈproʊpriət/",
+    "pos": "adj.",
+    "meaning": "不合适的",
+    "example": "That method is inappropriate for such a small sample.",
+    "exampleCn": "那种方法不适合这么小的样本。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "3"
+  },
+  {
+    "id": 1897,
+    "word": "overlook",
+    "phonetic": "/ˌoʊvərˈlʊk/",
+    "pos": "v.",
+    "meaning": "忽视/俯瞰/宽恕",
+    "example": "It is easy to overlook small mistakes when editing quickly.",
+    "exampleCn": "快速编辑时很容易忽视小错误。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "3"
+  },
+  {
+    "id": 2003,
+    "word": "pollutant",
+    "phonetic": "/pəˈluːtənt/",
+    "pos": "n.",
+    "meaning": "污染物",
+    "example": "Carbon monoxide is a common air pollutant.",
+    "exampleCn": "一氧化碳是一种常见的空气污染物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "3"
+  },
+  {
+    "id": 2020,
+    "word": "mount",
+    "phonetic": "/maʊnt/",
+    "pos": "v./n.",
+    "meaning": "增加/安装/登上/山",
+    "example": "Pressure began to mount before the exam.",
+    "exampleCn": "考试前压力开始增加。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "3"
+  },
+  {
+    "id": 2054,
+    "word": "sediment",
+    "phonetic": "/ˈsedɪmənt/",
+    "pos": "n.",
+    "meaning": "沉积物/沉淀物",
+    "example": "Rivers carry sediment toward the sea.",
+    "exampleCn": "河流把沉积物带向大海。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "3"
+  },
+  {
+    "id": 2109,
+    "word": "peak",
+    "phonetic": "/piːk/",
+    "pos": "n./adj./v.",
+    "meaning": "顶峰/最高的/达到顶点",
+    "example": "Tourism reaches its peak in summer.",
+    "exampleCn": "旅游业在夏季达到高峰。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "3"
+  },
+  {
+    "id": 2258,
+    "word": "frost",
+    "phonetic": "/frɔːst/",
+    "pos": "n./v.",
+    "meaning": "霜/结霜",
+    "example": "Frost covered the grass early in the morning.",
+    "exampleCn": "清晨，霜覆盖了草地。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "3"
+  },
+  {
+    "id": 2451,
+    "word": "irreversible",
+    "phonetic": "/ˌɪrɪˈvɜːrsəbl/",
+    "pos": "adj.",
+    "meaning": "不可逆的/无法挽回的",
+    "example": "The damage to the ancient painting was irreversible.",
+    "exampleCn": "这幅古画受到的损坏是不可逆的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "3"
+  },
+  {
+    "id": 2505,
+    "word": "Celsius",
+    "phonetic": "/ˈselsiəs/",
+    "pos": "n./adj.",
+    "meaning": "摄氏度/摄氏的",
+    "example": "Water freezes at zero degrees Celsius.",
+    "exampleCn": "水在零摄氏度结冰。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "3"
+  },
+  {
+    "id": 2562,
+    "word": "fringe",
+    "phonetic": "/frɪndʒ/",
+    "pos": "n./adj.",
+    "meaning": "边缘/流苏/次要的",
+    "example": "Small farms existed on the fringe of the city.",
+    "exampleCn": "小农场位于城市边缘。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "3"
+  },
+  {
+    "id": 2693,
+    "word": "silt",
+    "phonetic": "/sɪlt/",
+    "pos": "n./v.",
+    "meaning": "淤泥/使淤塞",
+    "example": "The river carried silt to the delta.",
+    "exampleCn": "河流把淤泥带到了三角洲。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "3"
+  },
+  {
+    "id": 2791,
+    "word": "inevitable",
+    "phonetic": "/ɪnˈevɪtəbl/",
+    "pos": "adj.",
+    "meaning": "不可避免的",
+    "example": "Some conflict was inevitable during the transition.",
+    "exampleCn": "过渡期间一些冲突是不可避免的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "3"
+  },
+  {
+    "id": 2793,
+    "word": "hail",
+    "phonetic": "/heɪl/",
+    "pos": "n./v.",
+    "meaning": "冰雹/欢呼/招呼/来自",
+    "example": "The crops were damaged by hail.",
+    "exampleCn": "庄稼被冰雹损坏了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "3"
+  },
+  {
+    "id": 2819,
+    "word": "ridge",
+    "phonetic": "/rɪdʒ/",
+    "pos": "n.",
+    "meaning": "山脊/隆起/脊状物",
+    "example": "The hikers followed the ridge to the summit.",
+    "exampleCn": "徒步者沿着山脊走向山顶。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "3"
+  },
+  {
+    "id": 2876,
+    "word": "thaw",
+    "phonetic": "/θɔː/",
+    "pos": "v./n.",
+    "meaning": "融化/解冻/解冻期",
+    "example": "The snow began to thaw in the warm sun.",
+    "exampleCn": "雪在温暖的阳光下开始融化。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "3"
+  },
+  {
+    "id": 2927,
+    "word": "desolate",
+    "phonetic": "/ˈdesələt/",
+    "pos": "adj./v.",
+    "meaning": "荒凉的/孤寂的/使悲伤",
+    "example": "The travelers crossed a desolate plain.",
+    "exampleCn": "旅行者穿过了一片荒凉的平原。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "3"
+  },
+  {
+    "id": 2954,
+    "word": "contaminate",
+    "phonetic": "/kənˈtæmɪneɪt/",
+    "pos": "v.",
+    "meaning": "污染/弄脏",
+    "example": "Chemicals can contaminate drinking water.",
+    "exampleCn": "化学物质可能污染饮用水。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "3"
+  },
+  {
+    "id": 3232,
+    "word": "frigid",
+    "phonetic": "/ˈfrɪdʒɪd/",
+    "pos": "adj.",
+    "meaning": "寒冷的/冷淡的",
+    "example": "The explorers faced frigid temperatures in the Arctic.",
+    "exampleCn": "探险者在北极面对严寒的气温。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "3"
+  },
+  {
+    "id": 3637,
+    "word": "freeze",
+    "phonetic": "friːz",
+    "pos": "v/n.",
+    "meaning": "冻结/冰冻期",
+    "example": "The lake freezes over every winter.",
+    "exampleCn": "这个湖每年冬天都会结冰。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3638,
+    "word": "tremble",
+    "phonetic": "ˈtrembl",
+    "pos": "v/n.",
+    "meaning": "颤抖",
+    "example": "She began to tremble with fear.",
+    "exampleCn": "她吓得开始发抖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3639,
+    "word": "shiver",
+    "phonetic": "ˈʃɪvə",
+    "pos": "v.",
+    "meaning": "颤抖/哆嗦",
+    "example": "He shivered in the cold wind.",
+    "exampleCn": "他在寒风中瑟瑟发抖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3640,
+    "word": "thunder",
+    "phonetic": "ˈθʌndə",
+    "pos": "v/n.",
+    "meaning": "打雷/雷声",
+    "example": "Thunder rumbled in the distance.",
+    "exampleCn": "远处雷声隆隆。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3641,
+    "word": "lightning",
+    "phonetic": "ˈlaɪtnɪŋ",
+    "pos": "n/adj.",
+    "meaning": "闪电/闪电般的",
+    "example": "Lightning struck the old tree during the storm.",
+    "exampleCn": "暴风雨中闪电击中了那棵老树。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3642,
+    "word": "stormy",
+    "phonetic": "ˈstɔːmi",
+    "pos": "adj.",
+    "meaning": "暴风雨的/激烈的",
+    "example": "The stormy sea made sailing impossible.",
+    "exampleCn": "暴风雨中的海面使航行无法进行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3643,
+    "word": "downpour",
+    "phonetic": "ˈdaʊnpɔː",
+    "pos": "n.",
+    "meaning": "倾盆大雨",
+    "example": "We were caught in a sudden downpour.",
+    "exampleCn": "我们被一场突如其来的暴雨淋了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3644,
+    "word": "rainfall",
+    "phonetic": "ˈreɪnfɔːl",
+    "pos": "n.",
+    "meaning": "降雨量",
+    "example": "The annual rainfall in this region is very high.",
+    "exampleCn": "这个地区的年降雨量非常高。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3645,
+    "word": "sprinkle",
+    "phonetic": "ˈsprɪŋkl",
+    "pos": "v/n.",
+    "meaning": "洒/撒/少量",
+    "example": "Sprinkle some salt over the vegetables.",
+    "exampleCn": "在蔬菜上撒一些盐。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3646,
+    "word": "rainbow",
+    "phonetic": "ˈreɪnbəʊ",
+    "pos": "n.",
+    "meaning": "彩虹",
+    "example": "A beautiful rainbow appeared after the rain.",
+    "exampleCn": "雨后出现了一道美丽的彩虹。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3647,
+    "word": "shower",
+    "phonetic": "ˈʃaʊə",
+    "pos": "n.",
+    "meaning": "阵雨/淋浴",
+    "example": "There will be scattered showers this afternoon.",
+    "exampleCn": "今天下午将有零星阵雨。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3648,
+    "word": "temperature",
+    "phonetic": "ˈtemprətʃə",
+    "pos": "n.",
+    "meaning": "温度",
+    "example": "The temperature dropped below zero last night.",
+    "exampleCn": "昨晚气温降到了零度以下。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3649,
+    "word": "forecast",
+    "phonetic": "ˈfɔːkɑːst",
+    "pos": "v/n.",
+    "meaning": "预报",
+    "example": "The weather forecast predicts rain for tomorrow.",
+    "exampleCn": "天气预报预测明天有雨。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3650,
+    "word": "mountain",
+    "phonetic": "ˈmaʊntɪn",
+    "pos": "n.",
+    "meaning": "山/山脉",
+    "example": "Mount Everest is the highest mountain in the world.",
+    "exampleCn": "珠穆朗玛峰是世界上最高的山。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3651,
+    "word": "range",
+    "phonetic": "reɪndʒ",
+    "pos": "n.",
+    "meaning": "山脉/范围/幅度",
+    "example": "The mountain range stretches for hundreds of miles.",
+    "exampleCn": "这条山脉绵延数百英里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3652,
+    "word": "valley",
+    "phonetic": "ˈvæli",
+    "pos": "n.",
+    "meaning": "山谷",
+    "example": "The river flows through the valley.",
+    "exampleCn": "河流穿过山谷。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3653,
+    "word": "hillside",
+    "phonetic": "ˈhɪlsaɪd",
+    "pos": "n.",
+    "meaning": "山坡",
+    "example": "The hillside was covered with wildflowers.",
+    "exampleCn": "山坡上开满了野花。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3654,
+    "word": "southern",
+    "phonetic": "ˈsʌðən",
+    "pos": "adj.",
+    "meaning": "南方的",
+    "example": "The southern part of the country is warmer.",
+    "exampleCn": "这个国家的南部更温暖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3655,
+    "word": "southeast",
+    "phonetic": "ˌsaʊθˈiːst",
+    "pos": "n/adj.",
+    "meaning": "东南/东南的",
+    "example": "The storm is moving toward the southeast.",
+    "exampleCn": "风暴正朝东南方向移动。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3656,
+    "word": "southwest",
+    "phonetic": "ˌsaʊθˈwest",
+    "pos": "n/adj.",
+    "meaning": "西南/西南的",
+    "example": "The southwest wind brought warm air.",
+    "exampleCn": "西南风带来了温暖的空气。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3657,
+    "word": "northeast",
+    "phonetic": "ˌnɔːθˈiːst",
+    "pos": "n/adj.",
+    "meaning": "东北/东北的",
+    "example": "The northeast region is known for its forests.",
+    "exampleCn": "东北地区以其森林而闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3658,
+    "word": "northwest",
+    "phonetic": "ˌnɔːθˈwest",
+    "pos": "n/adj.",
+    "meaning": "西北/西北的",
+    "example": "The northwest coast is very rugged.",
+    "exampleCn": "西北海岸非常崎岖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3659,
+    "word": "eastern",
+    "phonetic": "ˈiːstən",
+    "pos": "adj.",
+    "meaning": "东方的",
+    "example": "The eastern sky began to brighten at dawn.",
+    "exampleCn": "黎明时分，东方的天空开始变亮。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3660,
+    "word": "oriental",
+    "phonetic": "ˌɔːriˈentl",
+    "pos": "n.",
+    "meaning": "东方人/东方的",
+    "example": "Oriental art has a long and rich history.",
+    "exampleCn": "东方艺术有着悠久而丰富的历史。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3661,
+    "word": "irregularly",
+    "phonetic": "ɪˈreɡjələli",
+    "pos": "adv.",
+    "meaning": "不规则地",
+    "example": "The heart was beating irregularly.",
+    "exampleCn": "心脏跳动得不规律。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3662,
+    "word": "muddy",
+    "phonetic": "ˈmʌdi",
+    "pos": "adj.",
+    "meaning": "泥泞的/模糊的",
+    "example": "The path was muddy after the rain.",
+    "exampleCn": "雨后小路变得泥泞。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3663,
+    "word": "dirt",
+    "phonetic": "dɜːt",
+    "pos": "n.",
+    "meaning": "泥土/污垢",
+    "example": "His hands were covered in dirt from the garden.",
+    "exampleCn": "他的手上沾满了花园里的泥土。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3664,
+    "word": "suburb",
+    "phonetic": "ˈsʌbɜːb",
+    "pos": "n.",
+    "meaning": "郊区",
+    "example": "They moved to the suburbs to raise a family.",
+    "exampleCn": "他们搬到了郊区养家。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3665,
+    "word": "outskirts",
+    "phonetic": "ˈaʊtskɜːts",
+    "pos": "n.",
+    "meaning": "市郊/边缘地带",
+    "example": "The factory is located on the outskirts of town.",
+    "exampleCn": "工厂位于城镇的边缘地带。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3666,
+    "word": "distant",
+    "phonetic": "ˈdɪstənt",
+    "pos": "adj.",
+    "meaning": "遥远的/疏远的",
+    "example": "We could hear the distant sound of thunder.",
+    "exampleCn": "我们能听到远处的雷声。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3667,
+    "word": "pollution",
+    "phonetic": "pəˈluːʃn",
+    "pos": "n.",
+    "meaning": "污染",
+    "example": "Air pollution is a serious problem in many cities.",
+    "exampleCn": "空气污染是许多城市面临的一个严重问题。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3668,
+    "word": "geology",
+    "phonetic": "dʒiˈɒlədʒi",
+    "pos": "n.",
+    "meaning": "地质学",
+    "example": "He studied geology at university.",
+    "exampleCn": "他在大学学习地质学。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  }
+]

@@ -74,10 +74,12 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "9"
   },
   {
     "id": 417,
@@ -153,10 +155,12 @@
     "exampleCn": "地震后墙上出现了一道小裂缝。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "4"
   },
   {
     "id": 859,
@@ -348,10 +352,15 @@
     "exampleCn": "鲸鱼是哺乳动物，不是鱼。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 872,
@@ -528,10 +537,12 @@
     "exampleCn": "水是由简单分子构成的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "10"
   },
   {
     "id": 884,
@@ -665,10 +676,12 @@
     "exampleCn": "他们住在一个偏远的山村。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "3"
   },
   {
     "id": 893,
@@ -680,10 +693,15 @@
     "exampleCn": "你应该做出成熟的决定。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 894,
@@ -860,10 +878,12 @@
     "exampleCn": "博物馆展出了一块恐龙化石。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "10"
   },
   {
     "id": 906,
@@ -1237,10 +1257,12 @@
     "exampleCn": "大雨会流入河中。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "4"
   },
   {
     "id": 931,
@@ -1447,10 +1469,12 @@
     "exampleCn": "病人现在情况稳定。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "9"
   },
   {
     "id": 945,
@@ -1477,10 +1501,15 @@
     "exampleCn": "农民用安全的方法控制害虫。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 947,

@@ -58,10 +58,12 @@
     "exampleCn": "科学家们从天文台观察那颗彗星。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "10"
   },
   {
     "id": 2918,
@@ -118,10 +120,12 @@
     "exampleCn": "一次日食吸引了成千上万的观察者。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "4"
   },
   {
     "id": 2922,
@@ -208,10 +212,12 @@
     "exampleCn": "旅行者穿过了一片荒凉的平原。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "3"
   },
   {
     "id": 2928,
@@ -553,10 +559,12 @@
     "exampleCn": "可见光是电磁波谱的一部分。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "10"
   },
   {
     "id": 2951,
@@ -613,10 +621,12 @@
     "exampleCn": "化学物质可能污染饮用水。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "3"
   },
   {
     "id": 2955,
@@ -628,10 +638,15 @@
     "exampleCn": "一只乌鸦落在栅栏上。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 2956,
@@ -958,10 +973,12 @@
     "exampleCn": "运动可以提高新陈代谢。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "9"
   },
   {
     "id": 2978,
@@ -1033,10 +1050,15 @@
     "exampleCn": "蜜蜂把花粉从一朵花带到另一朵花。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2983,
@@ -1288,10 +1310,12 @@
     "exampleCn": "在沙漠中发现了一块陨石。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "10"
   },
   {
     "id": 3000,
@@ -1333,10 +1357,15 @@
     "exampleCn": "野牛曾经成群地在平原上漫游。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 3003,
@@ -1468,10 +1497,15 @@
     "exampleCn": "价格会随供求关系波动。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 3012,

@@ -1,0 +1,1130 @@
+[
+  {
+    "id": 136,
+    "word": "ancestor",
+    "phonetic": "/ˈænsestər/",
+    "pos": "n.",
+    "meaning": "祖先；先辈",
+    "example": "Many people are interested in learning about their ancestors.",
+    "exampleCn": "许多人对了解自己的祖先很感兴趣。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 220,
+    "word": "beast",
+    "phonetic": "/biːst/",
+    "pos": "n.",
+    "meaning": "野兽；畜生",
+    "example": "The lion is known as the king of beasts.",
+    "exampleCn": "狮子被称为百兽之王。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 305,
+    "word": "breed",
+    "phonetic": "/briːd/",
+    "pos": "v./n.",
+    "meaning": "繁殖/饲养/品种",
+    "example": "Some birds breed only during the rainy season.",
+    "exampleCn": "一些鸟类只在雨季繁殖。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 602,
+    "word": "species",
+    "phonetic": "/ˈspiːʃiːz/",
+    "pos": "n.",
+    "meaning": "物种；种类",
+    "example": "This species is endangered.",
+    "exampleCn": "这个物种濒临灭绝。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 630,
+    "word": "herbivore",
+    "phonetic": "/ˈhɜːbɪvɔː(r)/",
+    "pos": "n.",
+    "meaning": "食草动物",
+    "example": "Cows are herbivores.",
+    "exampleCn": "牛是食草动物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 765,
+    "word": "efficient",
+    "phonetic": "/ɪˈfɪʃnt/",
+    "pos": "adj.",
+    "meaning": "有效率的；有能力的",
+    "example": "She is an efficient worker.",
+    "exampleCn": "她是个有效率的员工。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 871,
+    "word": "mammal",
+    "phonetic": "/ˈmæml/",
+    "pos": "n.",
+    "meaning": "哺乳动物",
+    "example": "A whale is a mammal, not a fish.",
+    "exampleCn": "鲸鱼是哺乳动物，不是鱼。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 893,
+    "word": "mature",
+    "phonetic": "/məˈtʃʊr/",
+    "pos": "adj./v.",
+    "meaning": "成熟的；成熟",
+    "example": "You should make a mature decision.",
+    "exampleCn": "你应该做出成熟的决定。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 968,
+    "word": "massive",
+    "phonetic": "/ˈmæsɪv/",
+    "pos": "adj.",
+    "meaning": "巨大的，大量的",
+    "example": "The project required a massive amount of funding.",
+    "exampleCn": "这个项目需要大量资金。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 1168,
+    "word": "considerable",
+    "phonetic": "/kənˈsɪdərəbəl/",
+    "pos": "adj.",
+    "meaning": "相当大的；相当多的",
+    "example": "The project requires considerable financial support.",
+    "exampleCn": "这个项目需要相当大的资金支持。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 1245,
+    "word": "productive",
+    "phonetic": "/prəˈdʌktɪv/",
+    "pos": "adj.",
+    "meaning": "高效的；有生产力的",
+    "example": "We had a productive discussion about the project.",
+    "exampleCn": "我们就这个项目进行了高效的讨论。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 1330,
+    "word": "effective",
+    "phonetic": "/ɪˈfektɪv/",
+    "pos": "adj.",
+    "meaning": "有效的；有影响力的",
+    "example": "The new method proved highly effective.",
+    "exampleCn": "这种新方法证明非常有效。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 1351,
+    "word": "originate",
+    "phonetic": "/əˈrɪdʒəˌneɪt/",
+    "pos": "v.",
+    "meaning": "起源；发源",
+    "example": "The custom is believed to originate in China.",
+    "exampleCn": "这种习俗被认为起源于中国。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 1384,
+    "word": "herd",
+    "phonetic": "/hɜːrd/",
+    "pos": "n./v.",
+    "meaning": "兽群/放牧；驱赶",
+    "example": "A herd of elephants moved slowly across the plain.",
+    "exampleCn": "一群大象缓慢地穿过平原。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 1561,
+    "word": "hatch",
+    "phonetic": "/hætʃ/",
+    "pos": "v./n.",
+    "meaning": "孵化/策划/舱口",
+    "example": "The eggs usually hatch after two weeks.",
+    "exampleCn": "这些蛋通常两周后孵化。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 1652,
+    "word": "amphibian",
+    "phonetic": "/æmˈfɪbiən/",
+    "pos": "n./adj.",
+    "meaning": "两栖动物/两栖的",
+    "example": "A frog is an amphibian that can live on land and in water.",
+    "exampleCn": "青蛙是一种能在陆地和水中生活的两栖动物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 1844,
+    "word": "offspring",
+    "phonetic": "/ˈɔːfsprɪŋ/",
+    "pos": "n.",
+    "meaning": "后代/子女",
+    "example": "Animals protect their offspring from danger.",
+    "exampleCn": "动物会保护它们的后代免受危险。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 1879,
+    "word": "carnivore",
+    "phonetic": "/ˈkɑːrnɪvɔːr/",
+    "pos": "n.",
+    "meaning": "食肉动物",
+    "example": "A lion is a large carnivore that hunts other animals.",
+    "exampleCn": "狮子是一种捕猎其他动物的大型食肉动物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 1892,
+    "word": "immense",
+    "phonetic": "/ɪˈmens/",
+    "pos": "adj.",
+    "meaning": "巨大的/极大的",
+    "example": "The ocean contains an immense variety of life.",
+    "exampleCn": "海洋中有极其丰富的生命种类。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 2052,
+    "word": "vertebrate",
+    "phonetic": "/ˈvɜːrtəbrət/",
+    "pos": "n./adj.",
+    "meaning": "脊椎动物/有脊椎的",
+    "example": "Fish are vertebrates because they have backbones.",
+    "exampleCn": "鱼类是脊椎动物，因为它们有脊椎。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 2176,
+    "word": "ecologist",
+    "phonetic": "/ɪˈkɑːlədʒɪst/",
+    "pos": "n.",
+    "meaning": "生态学家",
+    "example": "The ecologist studied changes in the forest.",
+    "exampleCn": "这位生态学家研究森林中的变化。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 2333,
+    "word": "maximal",
+    "phonetic": "/ˈmæksɪməl/",
+    "pos": "adj.",
+    "meaning": "最大的/最高限度的",
+    "example": "The team worked with maximal effort.",
+    "exampleCn": "团队以最大努力工作。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 2363,
+    "word": "flock",
+    "phonetic": "/flɑːk/",
+    "pos": "n./v.",
+    "meaning": "鸟群/兽群/蜂拥而至",
+    "example": "A flock of birds flew over the lake.",
+    "exampleCn": "一群鸟飞过湖面。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 2401,
+    "word": "primate",
+    "phonetic": "/ˈpraɪmeɪt/",
+    "pos": "n.",
+    "meaning": "灵长类动物",
+    "example": "Humans and monkeys are both primates.",
+    "exampleCn": "人类和猴子都属于灵长类动物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 2462,
+    "word": "flora",
+    "phonetic": "/ˈflɔːrə/",
+    "pos": "n.",
+    "meaning": "植物群",
+    "example": "The island has unique flora found nowhere else.",
+    "exampleCn": "这个岛上有别处没有的独特植物群。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 2480,
+    "word": "courtship",
+    "phonetic": "/ˈkɔːrtʃɪp/",
+    "pos": "n.",
+    "meaning": "求偶/追求/恋爱期",
+    "example": "Bird courtship often includes colorful displays.",
+    "exampleCn": "鸟类求偶常常包括鲜艳的展示行为。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 2493,
+    "word": "plume",
+    "phonetic": "/pluːm/",
+    "pos": "n.",
+    "meaning": "羽毛/烟柱/羽状物",
+    "example": "A plume of smoke rose from the factory.",
+    "exampleCn": "一股烟柱从工厂升起。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 2582,
+    "word": "reptile",
+    "phonetic": "/ˈreptaɪl/",
+    "pos": "n.",
+    "meaning": "爬行动物",
+    "example": "A snake is a type of reptile.",
+    "exampleCn": "蛇是一种爬行动物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 2637,
+    "word": "stem",
+    "phonetic": "/stem/",
+    "pos": "n./v.",
+    "meaning": "茎/词干/阻止/起源于",
+    "example": "The flower has a long green stem.",
+    "exampleCn": "这朵花有一根长长的绿色茎。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 2682,
+    "word": "spawn",
+    "phonetic": "/spɔːn/",
+    "pos": "v./n.",
+    "meaning": "产卵/引发/卵",
+    "example": "Many fish spawn in shallow water.",
+    "exampleCn": "许多鱼在浅水中产卵。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 2688,
+    "word": "derive",
+    "phonetic": "/dɪˈraɪv/",
+    "pos": "v.",
+    "meaning": "获得/起源于/推导出",
+    "example": "Many medicines derive from plants.",
+    "exampleCn": "许多药物来源于植物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3034,
+    "word": "descendant",
+    "phonetic": "/dɪˈsendənt/",
+    "pos": "n./adj.",
+    "meaning": "后代/子孙/下降的",
+    "example": "She is a descendant of one of the town’s first settlers.",
+    "exampleCn": "她是该镇最早定居者之一的后代。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3039,
+    "word": "proliferate",
+    "phonetic": "/prəˈlɪfəreɪt/",
+    "pos": "v.",
+    "meaning": "激增/迅速繁殖/扩散",
+    "example": "Online learning platforms began to proliferate rapidly.",
+    "exampleCn": "在线学习平台开始迅速增多。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3085,
+    "word": "swarm",
+    "phonetic": "/swɔːrm/",
+    "pos": "n./v.",
+    "meaning": "一大群/蜂群/成群移动",
+    "example": "A swarm of bees gathered near the tree.",
+    "exampleCn": "一群蜜蜂聚集在树旁。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3117,
+    "word": "beak",
+    "phonetic": "/biːk/",
+    "pos": "n.",
+    "meaning": "鸟嘴/喙",
+    "example": "The bird used its sharp beak to crack the seed.",
+    "exampleCn": "那只鸟用尖尖的喙啄开种子。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3181,
+    "word": "fauna",
+    "phonetic": "/ˈfɔːnə/",
+    "pos": "n.",
+    "meaning": "动物群",
+    "example": "The island’s fauna includes rare birds and insects.",
+    "exampleCn": "该岛的动物群包括稀有鸟类和昆虫。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3757,
+    "word": "minimal",
+    "phonetic": "ˈmɪnɪməl",
+    "pos": "adj.",
+    "meaning": "最小的/最低限度的",
+    "example": "The damage to the car was minimal.",
+    "exampleCn": "汽车的损坏是最小的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3758,
+    "word": "optimal",
+    "phonetic": "ˈɒptɪməl",
+    "pos": "adj.",
+    "meaning": "最优的/最佳的",
+    "example": "The optimal temperature for growth is 25 degrees.",
+    "exampleCn": "生长的最佳温度是25度。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3759,
+    "word": "biologist",
+    "phonetic": "baɪˈɒlədʒɪst",
+    "pos": "n.",
+    "meaning": "生物学家",
+    "example": "The biologist spent years studying marine life.",
+    "exampleCn": "这位生物学家花了多年时间研究海洋生物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3760,
+    "word": "zoologist",
+    "phonetic": "zuːˈɒlədʒɪst",
+    "pos": "n.",
+    "meaning": "动物学家",
+    "example": "The zoologist specialises in primate behaviour.",
+    "exampleCn": "这位动物学家专门研究灵长类动物的行为。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3761,
+    "word": "botanist",
+    "phonetic": "ˈbɒtənɪst",
+    "pos": "n.",
+    "meaning": "植物学家",
+    "example": "The botanist discovered a new species of orchid.",
+    "exampleCn": "这位植物学家发现了一种新的兰花物种。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3762,
+    "word": "creature",
+    "phonetic": "ˈkriːtʃə",
+    "pos": "n.",
+    "meaning": "生物/动物",
+    "example": "The deep sea is home to many strange creatures.",
+    "exampleCn": "深海是许多奇异生物的家园。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3763,
+    "word": "wildlife",
+    "phonetic": "ˈwaɪldlaɪf",
+    "pos": "n.",
+    "meaning": "野生动物",
+    "example": "The national park is rich in wildlife.",
+    "exampleCn": "这个国家公园野生动物丰富。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3764,
+    "word": "throng",
+    "phonetic": "θrɒŋ",
+    "pos": "n/v.",
+    "meaning": "人群/蜂拥",
+    "example": "A throng of tourists gathered in the square.",
+    "exampleCn": "一大群游客聚集在广场上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3765,
+    "word": "crowd",
+    "phonetic": "kraʊd",
+    "pos": "n.",
+    "meaning": "人群",
+    "example": "The crowd cheered as the team scored.",
+    "exampleCn": "球队得分时，人群欢呼起来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3766,
+    "word": "brute",
+    "phonetic": "bruːt",
+    "pos": "n.",
+    "meaning": "畜生/残暴的人",
+    "example": "He was a brute who cared for no one.",
+    "exampleCn": "他是个不顾任何人的畜生。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3767,
+    "word": "cruel",
+    "phonetic": "kruːəl",
+    "pos": "adj.",
+    "meaning": "残忍的/残酷的",
+    "example": "It is cruel to keep animals in small cages.",
+    "exampleCn": "把动物关在小笼子里是残忍的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3768,
+    "word": "subgroup",
+    "phonetic": "ˈsʌbɡruːp",
+    "pos": "n.",
+    "meaning": "亚群/子群体",
+    "example": "The species can be divided into several subgroups.",
+    "exampleCn": "这个物种可以分为几个亚群。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3769,
+    "word": "feed",
+    "phonetic": "fiːd",
+    "pos": "v.",
+    "meaning": "喂养/进食",
+    "example": "She feeds the chickens every morning.",
+    "exampleCn": "她每天早上喂鸡。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3770,
+    "word": "interbreed",
+    "phonetic": "ˌɪntəˈbriːd",
+    "pos": "v.",
+    "meaning": "杂交",
+    "example": "The two species can interbreed successfully.",
+    "exampleCn": "这两个物种可以成功地杂交。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3771,
+    "word": "hybridize",
+    "phonetic": "ˈhaɪbrɪdaɪz",
+    "pos": "v.",
+    "meaning": "杂交/混合",
+    "example": "Farmers hybridize crops to improve yields.",
+    "exampleCn": "农民通过杂交作物来提高产量。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3772,
+    "word": "sterility",
+    "phonetic": "stəˈrɪləti",
+    "pos": "n.",
+    "meaning": "不育/无菌",
+    "example": "The sterility of the soil made farming impossible.",
+    "exampleCn": "土壤的不育使耕作无法进行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3773,
+    "word": "mate",
+    "phonetic": "meɪt",
+    "pos": "n/v.",
+    "meaning": "配偶/交配",
+    "example": "Penguins mate for life.",
+    "exampleCn": "企鹅终身配对。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3774,
+    "word": "lay",
+    "phonetic": "leɪ",
+    "pos": "v.",
+    "meaning": "下蛋/产卵",
+    "example": "The hen lays an egg every day.",
+    "exampleCn": "母鸡每天下一个蛋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3775,
+    "word": "brood",
+    "phonetic": "bruːd",
+    "pos": "n/v.",
+    "meaning": "一窝/孵蛋",
+    "example": "The hen sat on her brood of chicks.",
+    "exampleCn": "母鸡坐在她的一窝小鸡身上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3776,
+    "word": "skin",
+    "phonetic": "skɪn",
+    "pos": "n.",
+    "meaning": "皮肤/兽皮",
+    "example": "Snakes shed their skin regularly.",
+    "exampleCn": "蛇定期蜕皮。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3777,
+    "word": "claw",
+    "phonetic": "klɔː",
+    "pos": "n.",
+    "meaning": "爪子",
+    "example": "The cat sharpened its claws on the tree.",
+    "exampleCn": "猫在树上磨爪子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3778,
+    "word": "paw",
+    "phonetic": "pɔː",
+    "pos": "n.",
+    "meaning": "爪子/脚掌",
+    "example": "The dog lifted its paw to shake hands.",
+    "exampleCn": "狗抬起爪子握手。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3779,
+    "word": "fin",
+    "phonetic": "fɪn",
+    "pos": "n.",
+    "meaning": "鳍",
+    "example": "Sharks use their fins to steer through the water.",
+    "exampleCn": "鲨鱼用鳍在水中转向。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3780,
+    "word": "wing",
+    "phonetic": "wɪŋ",
+    "pos": "n.",
+    "meaning": "翅膀/翼",
+    "example": "The bird spread its wings and flew away.",
+    "exampleCn": "鸟展开翅膀飞走了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  }
+]

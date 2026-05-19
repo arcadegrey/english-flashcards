@@ -58,10 +58,12 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "3"
   },
   {
     "id": 2082,
@@ -480,10 +482,12 @@
     "exampleCn": "旅游业在夏季达到高峰。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "3"
   },
   {
     "id": 2110,
@@ -934,10 +938,15 @@
     "exampleCn": "农民储存干草以备冬天使用。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2140,
@@ -1129,10 +1138,12 @@
     "exampleCn": "很少有植物能在贫瘠的土壤中生存。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "4"
   },
   {
     "id": 2153,
@@ -1324,10 +1335,15 @@
     "exampleCn": "一些植物通过种子繁殖。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2166,
@@ -1354,10 +1370,15 @@
     "exampleCn": "这项新法律成为变革的催化剂。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2168,
@@ -1489,10 +1510,15 @@
     "exampleCn": "这位生态学家研究森林中的变化。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2177,

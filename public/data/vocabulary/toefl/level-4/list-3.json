@@ -167,10 +167,15 @@
     "exampleCn": "蜜蜂在感到受威胁时会蜇人。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 1627,
@@ -227,10 +232,15 @@
     "exampleCn": "薄荷是一种常用于茶中的香草。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1631,
@@ -347,10 +357,12 @@
     "exampleCn": "人们砍伐大片森林来开辟农田。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "4"
   },
   {
     "id": 1639,
@@ -557,10 +569,15 @@
     "exampleCn": "青蛙是一种能在陆地和水中生活的两栖动物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 1653,
@@ -917,10 +934,15 @@
     "exampleCn": "语言会随着社会变化而发展。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1677,

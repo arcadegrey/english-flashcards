@@ -148,10 +148,15 @@
     "exampleCn": "那只鸟用尖尖的喙啄开种子。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 3118,
@@ -874,10 +879,12 @@
     "exampleCn": "陆生动物必须适应陆地生活。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "10"
   },
   {
     "id": 3166,
@@ -934,10 +941,15 @@
     "exampleCn": "园艺学关注水果、蔬菜和观赏植物的种植。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 3170,
@@ -964,10 +976,12 @@
     "exampleCn": "古代天文学家仔细研究天体运动。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "10"
   },
   {
     "id": 3172,
@@ -1114,10 +1128,15 @@
     "exampleCn": "该岛的动物群包括稀有鸟类和昆虫。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 3182,
@@ -1491,9 +1510,11 @@
     "exampleCn": "月球表面覆盖着大小不同的陨石坑。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "10"
   }
 ]

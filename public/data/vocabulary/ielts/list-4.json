@@ -1,0 +1,918 @@
+[
+  {
+    "id": 175,
+    "word": "artificial",
+    "phonetic": "/ˌɑːrtɪˈfɪʃl/",
+    "pos": "adj.",
+    "meaning": "人工的/人造的/不自然的",
+    "example": "Artificial light can help plants grow indoors.",
+    "exampleCn": "人工光可以帮助植物在室内生长。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "4"
+  },
+  {
+    "id": 268,
+    "word": "blow",
+    "phonetic": "/bloʊ/",
+    "pos": "v.",
+    "meaning": "吹，刮",
+    "example": "The wind blew strongly.",
+    "exampleCn": "风刮得很猛。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 355,
+    "word": "calendar",
+    "phonetic": "/ˈkælɪndər/",
+    "pos": "n.",
+    "meaning": "日历；日程表",
+    "example": "I marked the exam date on my calendar.",
+    "exampleCn": "我把考试日期标在了日历上。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "4"
+  },
+  {
+    "id": 450,
+    "word": "circulate",
+    "phonetic": "/ˈsɜːrkjəleɪt/",
+    "pos": "v.",
+    "meaning": "循环/传播/流通",
+    "example": "Blood circulates through the body constantly.",
+    "exampleCn": "血液不断在体内循环。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "4"
+  },
+  {
+    "id": 560,
+    "word": "pour",
+    "phonetic": "/pɔː(r)/",
+    "pos": "v.",
+    "meaning": "倒；倾泻；涌流",
+    "example": "She poured water into the glass.",
+    "exampleCn": "她把水倒进杯子里。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "4"
+  },
+  {
+    "id": 686,
+    "word": "solar",
+    "phonetic": "/ˈsəʊlə(r)/",
+    "pos": "adj.",
+    "meaning": "太阳的；太阳能的",
+    "example": "Solar energy is renewable.",
+    "exampleCn": "太阳能是可再生的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "4"
+  },
+  {
+    "id": 691,
+    "word": "magnificent",
+    "phonetic": "/mæɡˈnɪfɪsnt/",
+    "pos": "adj.",
+    "meaning": "宏伟的；壮丽的",
+    "example": "The palace is magnificent.",
+    "exampleCn": "这座宫殿很宏伟。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "4"
+  },
+  {
+    "id": 739,
+    "word": "emerge",
+    "phonetic": "/ɪˈmɜːrdʒ/",
+    "pos": "v.",
+    "meaning": "出现/浮现/显露",
+    "example": "New evidence began to emerge during the investigation.",
+    "exampleCn": "调查期间新的证据开始浮现。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "4"
+  },
+  {
+    "id": 858,
+    "word": "crack",
+    "phonetic": "/kræk/",
+    "pos": "n./v.",
+    "meaning": "裂缝；破裂；破解",
+    "example": "A small crack appeared in the wall after the earthquake.",
+    "exampleCn": "地震后墙上出现了一道小裂缝。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "4"
+  },
+  {
+    "id": 930,
+    "word": "drain",
+    "phonetic": "/dreɪn/",
+    "pos": "v./n.",
+    "meaning": "排出；排水沟",
+    "example": "Heavy rain can drain into the river.",
+    "exampleCn": "大雨会流入河中。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "4"
+  },
+  {
+    "id": 1010,
+    "word": "dense",
+    "phonetic": "/dens/",
+    "pos": "adj.",
+    "meaning": "稠密的/密集的",
+    "example": "The forest was so dense that little sunlight reached the ground.",
+    "exampleCn": "森林非常茂密，几乎没有阳光照到地面。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "4"
+  },
+  {
+    "id": 1220,
+    "word": "drip",
+    "phonetic": "/drɪp/",
+    "pos": "v./n.",
+    "meaning": "滴下；滴落/滴",
+    "example": "Water continued to drip from the ceiling.",
+    "exampleCn": "水继续从天花板上滴下来。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "4"
+  },
+  {
+    "id": 1291,
+    "word": "dramatic",
+    "phonetic": "/drəˈmætɪk/",
+    "pos": "adj.",
+    "meaning": "巨大的；戏剧性的",
+    "example": "There was a dramatic increase in tourism last year.",
+    "exampleCn": "去年旅游业出现了显著增长。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "4"
+  },
+  {
+    "id": 1298,
+    "word": "fountain",
+    "phonetic": "/ˈfaʊntən/",
+    "pos": "n.",
+    "meaning": "喷泉",
+    "example": "Children were playing near the fountain in the square.",
+    "exampleCn": "孩子们在广场的喷泉旁玩耍。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "4"
+  },
+  {
+    "id": 1420,
+    "word": "shade",
+    "phonetic": "/ʃeɪd/",
+    "pos": "n./v.",
+    "meaning": "阴凉处；色度/遮蔽",
+    "example": "We rested in the shade of a large tree.",
+    "exampleCn": "我们在一棵大树的树荫下休息。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "4"
+  },
+  {
+    "id": 1638,
+    "word": "deforest",
+    "phonetic": "/ˌdiːˈfɔːrɪst/",
+    "pos": "v.",
+    "meaning": "砍伐森林",
+    "example": "People deforest large areas to create farmland.",
+    "exampleCn": "人们砍伐大片森林来开辟农田。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "4"
+  },
+  {
+    "id": 1825,
+    "word": "fertile",
+    "phonetic": "/ˈfɜːrtl/",
+    "pos": "adj.",
+    "meaning": "肥沃的/能生育的/富有创造力的",
+    "example": "The fertile soil supports a wide variety of crops.",
+    "exampleCn": "肥沃的土壤能种植多种农作物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "4"
+  },
+  {
+    "id": 2076,
+    "word": "evaporate",
+    "phonetic": "/ɪˈvæpəreɪt/",
+    "pos": "v.",
+    "meaning": "蒸发/消失",
+    "example": "Water will evaporate faster in hot weather.",
+    "exampleCn": "水在炎热天气中会蒸发得更快。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "4"
+  },
+  {
+    "id": 2152,
+    "word": "barren",
+    "phonetic": "/ˈbærən/",
+    "pos": "adj.",
+    "meaning": "贫瘠的/荒芜的/不结果实的",
+    "example": "Few plants can survive in barren soil.",
+    "exampleCn": "很少有植物能在贫瘠的土壤中生存。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "4"
+  },
+  {
+    "id": 2341,
+    "word": "lunar",
+    "phonetic": "/ˈluːnər/",
+    "pos": "adj.",
+    "meaning": "月球的/阴历的",
+    "example": "A lunar eclipse occurs when Earth blocks sunlight from the moon.",
+    "exampleCn": "月食发生在地球挡住照向月球的阳光时。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "4"
+  },
+  {
+    "id": 2362,
+    "word": "drown",
+    "phonetic": "/draʊn/",
+    "pos": "v.",
+    "meaning": "淹死/淹没/盖过",
+    "example": "Heavy rain can drown low fields.",
+    "exampleCn": "大雨可能会淹没低洼田地。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "4"
+  },
+  {
+    "id": 2499,
+    "word": "debris",
+    "phonetic": "/dəˈbriː/",
+    "pos": "n.",
+    "meaning": "碎片/残骸",
+    "example": "Workers removed debris from the damaged road.",
+    "exampleCn": "工人清除了受损道路上的碎片。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "4"
+  },
+  {
+    "id": 2761,
+    "word": "puff",
+    "phonetic": "/pʌf/",
+    "pos": "n./v.",
+    "meaning": "一阵气/吹气/喘气/膨胀",
+    "example": "A puff of smoke rose from the chimney.",
+    "exampleCn": "一缕烟从烟囱升起。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "4"
+  },
+  {
+    "id": 2921,
+    "word": "eclipse",
+    "phonetic": "/ɪˈklɪps/",
+    "pos": "n./v.",
+    "meaning": "日食/月食/使黯然失色",
+    "example": "A solar eclipse attracted thousands of observers.",
+    "exampleCn": "一次日食吸引了成千上万的观察者。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "4"
+  },
+  {
+    "id": 3527,
+    "word": "precipitate",
+    "phonetic": "/prɪˈsɪpɪteɪt/",
+    "pos": "v./n./adj.",
+    "meaning": "使沉淀/促成/沉淀物/仓促的",
+    "example": "A chemical reaction caused a white precipitate to form.",
+    "exampleCn": "化学反应产生了白色沉淀物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "6",
+    "list": "4",
+    "ieltsList": "4"
+  },
+  {
+    "id": 3669,
+    "word": "plate",
+    "phonetic": "pleɪt",
+    "pos": "n.",
+    "meaning": "板块/盘子",
+    "example": "The Pacific Plate is moving slowly westward.",
+    "exampleCn": "太平洋板块正缓慢向西移动。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3670,
+    "word": "gap",
+    "phonetic": "ɡæp",
+    "pos": "n.",
+    "meaning": "缺口/差距/缝隙",
+    "example": "There is a growing gap between rich and poor.",
+    "exampleCn": "贫富之间的差距越来越大。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3671,
+    "word": "splendid",
+    "phonetic": "ˈsplendɪd",
+    "pos": "adj.",
+    "meaning": "壮丽的/极好的",
+    "example": "The view from the top of the mountain was splendid.",
+    "exampleCn": "山顶的景色壮丽无比。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3672,
+    "word": "grand",
+    "phonetic": "ɡrænd",
+    "pos": "adj.",
+    "meaning": "宏伟的/盛大的",
+    "example": "The grand palace was built in the 17th century.",
+    "exampleCn": "那座宏伟的宫殿建于17世纪。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3673,
+    "word": "super",
+    "phonetic": "ˈsuːpə",
+    "pos": "adj.",
+    "meaning": "极好的/超级的",
+    "example": "The concert was absolutely super.",
+    "exampleCn": "那场音乐会实在是太棒了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3674,
+    "word": "interesting",
+    "phonetic": "ˈɪntrəstɪŋ",
+    "pos": "adj.",
+    "meaning": "有趣的",
+    "example": "The museum has many interesting exhibits.",
+    "exampleCn": "博物馆有许多有趣的展品。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3675,
+    "word": "wilderness",
+    "phonetic": "ˈwɪldənəs",
+    "pos": "n.",
+    "meaning": "荒野/未开发地区",
+    "example": "They ventured deep into the wilderness.",
+    "exampleCn": "他们冒险深入荒野。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3676,
+    "word": "desert",
+    "phonetic": "ˈdezət",
+    "pos": "n/v.",
+    "meaning": "沙漠/抛弃",
+    "example": "The Sahara is the largest hot desert in the world.",
+    "exampleCn": "撒哈拉是世界上最大的热沙漠。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3677,
+    "word": "fertilise",
+    "phonetic": "ˈfɜːtɪlaɪz",
+    "pos": "v.",
+    "meaning": "施肥/使肥沃",
+    "example": "Farmers fertilise the fields every spring.",
+    "exampleCn": "农民每年春天给田地施肥。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3678,
+    "word": "sunrise",
+    "phonetic": "ˈsʌnraɪz",
+    "pos": "n.",
+    "meaning": "日出",
+    "example": "We woke up early to watch the sunrise.",
+    "exampleCn": "我们早早起床去看日出。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3679,
+    "word": "sunset",
+    "phonetic": "ˈsʌnset",
+    "pos": "n.",
+    "meaning": "日落",
+    "example": "The sunset painted the sky in shades of orange.",
+    "exampleCn": "日落将天空染成了橙色。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3680,
+    "word": "dusk",
+    "phonetic": "dʌsk",
+    "pos": "n.",
+    "meaning": "黄昏",
+    "example": "The birds return to their nests at dusk.",
+    "exampleCn": "鸟儿在黄昏时归巢。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3681,
+    "word": "heaven",
+    "phonetic": "ˈhevn",
+    "pos": "n.",
+    "meaning": "天堂/天空",
+    "example": "The stars shone brightly in the heavens.",
+    "exampleCn": "星星在天空中闪闪发光。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3682,
+    "word": "paradise",
+    "phonetic": "ˈpærədaɪs",
+    "pos": "n.",
+    "meaning": "天堂/乐园",
+    "example": "The island is a tropical paradise.",
+    "exampleCn": "这座岛屿是一个热带天堂。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3683,
+    "word": "sunshine",
+    "phonetic": "ˈsʌnʃaɪn",
+    "pos": "n.",
+    "meaning": "阳光",
+    "example": "The children played outside in the sunshine.",
+    "exampleCn": "孩子们在阳光下在外面玩耍。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3684,
+    "word": "shadow",
+    "phonetic": "ˈʃædəʊ",
+    "pos": "n.",
+    "meaning": "影子/阴影",
+    "example": "The building cast a long shadow across the street.",
+    "exampleCn": "大楼在街道上投下了长长的影子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3685,
+    "word": "vapour",
+    "phonetic": "ˈveɪpə",
+    "pos": "n.",
+    "meaning": "蒸汽/水蒸气",
+    "example": "Water vapour rises from the hot spring.",
+    "exampleCn": "水蒸气从温泉中升起。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3686,
+    "word": "reservoir",
+    "phonetic": "ˈrezəvwɑː",
+    "pos": "n.",
+    "meaning": "水库/储备",
+    "example": "The reservoir supplies water to the entire city.",
+    "exampleCn": "这个水库为整个城市供水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3687,
+    "word": "waterfall",
+    "phonetic": "ˈwɔːtəfɔːl",
+    "pos": "n.",
+    "meaning": "瀑布",
+    "example": "The waterfall plunged over a hundred metres into the pool below.",
+    "exampleCn": "瀑布从一百多米高处倾泻到下面的水潭中。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3688,
+    "word": "spring",
+    "phonetic": "sprɪŋ",
+    "pos": "n.",
+    "meaning": "泉水/春天/弹簧",
+    "example": "The village gets its water from a natural spring.",
+    "exampleCn": "这个村庄从一处天然泉水中取水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3689,
+    "word": "dew",
+    "phonetic": "djuː",
+    "pos": "n.",
+    "meaning": "露水",
+    "example": "The grass was wet with morning dew.",
+    "exampleCn": "草地被晨露打湿了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3690,
+    "word": "gush",
+    "phonetic": "ɡʌʃ",
+    "pos": "v/n.",
+    "meaning": "涌出",
+    "example": "Water gushed from the broken pipe.",
+    "exampleCn": "水从破裂的管道中涌出。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3691,
+    "word": "intensity",
+    "phonetic": "ɪnˈtensəti",
+    "pos": "n.",
+    "meaning": "强度/强烈",
+    "example": "The intensity of the earthquake surprised everyone.",
+    "exampleCn": "地震的强度令所有人感到惊讶。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3692,
+    "word": "intensive",
+    "phonetic": "ɪnˈtensɪv",
+    "pos": "adj.",
+    "meaning": "密集的/强化的",
+    "example": "He took an intensive English course over the summer.",
+    "exampleCn": "他在暑假期间参加了一个英语强化课程。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3693,
+    "word": "flash",
+    "phonetic": "flæʃ",
+    "pos": "v/n.",
+    "meaning": "闪光",
+    "example": "Lightning flashed across the sky.",
+    "exampleCn": "闪电划过天空。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3694,
+    "word": "float",
+    "phonetic": "fləʊt",
+    "pos": "v.",
+    "meaning": "漂浮/浮动",
+    "example": "The boat floated gently on the calm water.",
+    "exampleCn": "小船在平静的水面上轻轻漂浮。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3695,
+    "word": "environment",
+    "phonetic": "ɪnˈvaɪrənmənt",
+    "pos": "n.",
+    "meaning": "环境",
+    "example": "We must protect the environment for future generations.",
+    "exampleCn": "我们必须为后代保护环境。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3696,
+    "word": "surrounding",
+    "phonetic": "səˈraʊndɪŋ",
+    "pos": "adj.",
+    "meaning": "周围的",
+    "example": "The surrounding countryside is very beautiful.",
+    "exampleCn": "周围的乡村非常美丽。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3697,
+    "word": "condition",
+    "phonetic": "kənˈdɪʃn",
+    "pos": "n.",
+    "meaning": "条件/状况",
+    "example": "The living conditions in the camp were very poor.",
+    "exampleCn": "营地的生活条件非常差。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3698,
+    "word": "situation",
+    "phonetic": "ˌsɪtʃuˈeɪʃn",
+    "pos": "n.",
+    "meaning": "情况/形势",
+    "example": "The economic situation is improving slowly.",
+    "exampleCn": "经济形势正在缓慢改善。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3699,
+    "word": "nature",
+    "phonetic": "ˈneɪtʃə",
+    "pos": "n.",
+    "meaning": "自然/本质",
+    "example": "Nature is full of wonders waiting to be discovered.",
+    "exampleCn": "大自然充满了等待被发现的奇观。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3700,
+    "word": "natural",
+    "phonetic": "ˈnætʃrəl",
+    "pos": "adj.",
+    "meaning": "自然的/天生的",
+    "example": "Earthquakes are natural phenomena.",
+    "exampleCn": "地震是自然现象。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3701,
+    "word": "synthetic",
+    "phonetic": "sɪnˈθetɪk",
+    "pos": "adj.",
+    "meaning": "合成的/人造的",
+    "example": "Synthetic fibres are widely used in clothing.",
+    "exampleCn": "合成纤维广泛用于服装中。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3702,
+    "word": "petrol",
+    "phonetic": "ˈpetrəl",
+    "pos": "n.",
+    "meaning": "汽油",
+    "example": "The price of petrol has gone up again.",
+    "exampleCn": "汽油价格又涨了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3703,
+    "word": "gas",
+    "phonetic": "ɡæs",
+    "pos": "n.",
+    "meaning": "气体/煤气/汽油",
+    "example": "Natural gas is a cleaner fuel than coal.",
+    "exampleCn": "天然气是比煤炭更清洁的燃料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  }
+]

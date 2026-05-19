@@ -279,10 +279,12 @@
     "exampleCn": "太阳能是可再生的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "4"
   },
   {
     "id": 687,
@@ -356,10 +358,12 @@
     "exampleCn": "这座宫殿很宏伟。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "4"
   },
   {
     "id": 692,
@@ -761,10 +765,12 @@
     "exampleCn": "卫星在轨道上。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "10"
   },
   {
     "id": 719,
@@ -1453,10 +1459,15 @@
     "exampleCn": "她是个有效率的员工。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 766,

@@ -64,6 +64,7 @@ test('parseVocabularyCsv stores IELTS list separately from TOEFL list', () => {
   assert.equal(importedWords[0].level, undefined)
   assert.equal(importedWords[0].list, undefined)
   assert.equal(importedWords[0].ieltsList, '1')
+  assert.deepEqual(importedWords[0].ieltsLists, ['1'])
 })
 
 test('parseVocabularyCsv handles quoted commas, escaped quotes, and newlines', () => {
@@ -148,6 +149,31 @@ test('mergeVocabularyUpsertWord keeps TOEFL and IELTS list positions separate', 
   assert.equal(merged.level, '6')
   assert.equal(merged.list, '4')
   assert.equal(merged.ieltsList, '1')
+  assert.deepEqual(merged.ieltsLists, ['1'])
+})
+
+test('mergeVocabularyUpsertWord keeps duplicate IELTS words in multiple lists', () => {
+  const current = {
+    id: 1,
+    word: 'trunk',
+    meaning: '树干',
+    category: 'ielts',
+    categories: ['ielts'],
+    ieltsList: '6',
+  }
+
+  const incoming = {
+    word: 'trunk',
+    meaning: '躯干',
+    category: 'ielts',
+    categories: ['ielts'],
+    ieltsList: '8',
+  }
+
+  const merged = mergeVocabularyUpsertWord(current, incoming)
+
+  assert.equal(merged.ieltsList, '6')
+  assert.deepEqual(merged.ieltsLists, ['6', '8'])
 })
 
 test('parseReadingCsv imports exam type and JSON questions', () => {

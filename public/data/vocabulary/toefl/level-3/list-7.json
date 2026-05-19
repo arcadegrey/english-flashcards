@@ -58,10 +58,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 418,
@@ -693,10 +698,15 @@
     "exampleCn": "她在大学学习植物学。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1083,
@@ -753,10 +763,12 @@
     "exampleCn": "这棵树的树皮很厚。/那只狗晚上大声吠叫。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "9"
   },
   {
     "id": 1087,
@@ -1085,10 +1097,15 @@
     "exampleCn": "新法律对教育产生了强烈影响。/气候变化影响着每一个人。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 1109,
@@ -1130,10 +1147,15 @@
     "exampleCn": "污染会破坏整个生态系统。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1112,
@@ -1445,10 +1467,15 @@
     "exampleCn": "这种药物仍处于实验阶段。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 1133,

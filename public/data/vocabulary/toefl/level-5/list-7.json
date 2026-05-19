@@ -10,10 +10,12 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "3"
   },
   {
     "id": 3013,
@@ -340,10 +342,15 @@
     "exampleCn": "她是该镇最早定居者之一的后代。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 3035,
@@ -415,10 +422,15 @@
     "exampleCn": "在线学习平台开始迅速增多。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 3040,
@@ -445,10 +457,12 @@
     "exampleCn": "经过多年的照料，这只曾经野生的动物变得温顺了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "9"
   },
   {
     "id": 3042,
@@ -475,10 +489,12 @@
     "exampleCn": "幼树容易受到严寒的伤害。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "9"
   },
   {
     "id": 3044,
@@ -745,10 +761,15 @@
     "exampleCn": "珊瑚礁为许多海洋物种提供栖息地。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 3062,
@@ -760,10 +781,12 @@
     "exampleCn": "农民把干草储存在谷仓里。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "9"
   },
   {
     "id": 3063,
@@ -1105,10 +1128,15 @@
     "exampleCn": "一群蜜蜂聚集在树旁。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 3086,
@@ -1332,10 +1360,12 @@
     "exampleCn": "考察队从北极采集了样本。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "10"
   },
   {
     "id": 3101,
@@ -1452,10 +1482,15 @@
     "exampleCn": "这个重物用于平衡另一侧的负载。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 3109,
@@ -1482,10 +1517,15 @@
     "exampleCn": "植物利用光合作用把阳光转化为能量。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 3111,

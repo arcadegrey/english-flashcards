@@ -5,6 +5,8 @@ import { parseVocabularyCsv } from '../src/utils/csvImport.js';
 import {
   getWordCategories,
   mergeCategoryLists,
+  normalizeNumericTag,
+  normalizeNumericTagList,
   wordHasExternalExamCategory,
   wordHasIeltsCategory,
   wordHasToeflCategory,
@@ -35,18 +37,6 @@ const parseArgs = () => {
   return { csvPath, dryRun, upsert };
 };
 
-const normalizeNumericTag = (value) => {
-  const text = String(value ?? '').trim();
-  if (!text) return '';
-
-  const match = text.match(/\d+/);
-  if (!match) return '';
-
-  const parsed = Number(match[0]);
-  if (!Number.isFinite(parsed) || parsed <= 0) return '';
-  return String(parsed);
-};
-
 export const mergeVocabularyUpsertWord = (current, incoming) => {
   const categories = mergeCategoryLists(
     current.categories,
@@ -64,10 +54,13 @@ export const mergeVocabularyUpsertWord = (current, incoming) => {
   if (wordHasExternalExamCategory(nextWord)) {
     const nextLevel = normalizeNumericTag(current.level) || normalizeNumericTag(incoming.level);
     const nextList = normalizeNumericTag(current.list) || normalizeNumericTag(incoming.list);
-    const nextIeltsList =
-      normalizeNumericTag(incoming.ieltsList) ||
-      (wordHasIeltsCategory(incoming) ? normalizeNumericTag(incoming.list) : '') ||
-      normalizeNumericTag(current.ieltsList);
+    const nextIeltsLists = normalizeNumericTagList(
+      current.ieltsLists,
+      current.ieltsList,
+      incoming.ieltsLists,
+      incoming.ieltsList,
+      wordHasIeltsCategory(incoming) ? incoming.list : ''
+    );
 
     if (wordHasToeflCategory(nextWord) && nextLevel) {
       nextWord.level = nextLevel;
@@ -81,15 +74,18 @@ export const mergeVocabularyUpsertWord = (current, incoming) => {
       delete nextWord.list;
     }
 
-    if (wordHasIeltsCategory(nextWord) && nextIeltsList) {
-      nextWord.ieltsList = nextIeltsList;
+    if (wordHasIeltsCategory(nextWord) && nextIeltsLists.length > 0) {
+      nextWord.ieltsList = nextIeltsLists[0];
+      nextWord.ieltsLists = nextIeltsLists;
     } else {
       delete nextWord.ieltsList;
+      delete nextWord.ieltsLists;
     }
   } else {
     delete nextWord.level;
     delete nextWord.list;
     delete nextWord.ieltsList;
+    delete nextWord.ieltsLists;
   }
 
   return nextWord;
@@ -159,6 +155,7 @@ const main = async () => {
           delete nextWord.level;
           delete nextWord.list;
           delete nextWord.ieltsList;
+          delete nextWord.ieltsLists;
         } else if (!wordHasToeflCategory(nextWord)) {
           delete nextWord.level;
           delete nextWord.list;

@@ -74,10 +74,12 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "4"
   },
   {
     "id": 458,
@@ -181,10 +183,15 @@
     "exampleCn": "紧急出口在建筑物的后部。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1536,
@@ -256,10 +263,12 @@
     "exampleCn": "电子带有负电荷。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "10"
   },
   {
     "id": 1541,
@@ -526,10 +535,12 @@
     "exampleCn": "一个星系包含数十亿颗恒星和气体云。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "10"
   },
   {
     "id": 1559,
@@ -573,10 +584,15 @@
     "exampleCn": "这些蛋通常两周后孵化。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 1562,
@@ -1280,10 +1296,12 @@
     "exampleCn": "把你的笔记写在页面的空白边缘。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "3"
   },
   {
     "id": 1609,
@@ -1460,10 +1478,12 @@
     "exampleCn": "这种材料在使用前必须经过几项测试。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "9"
   },
   {
     "id": 1621,
@@ -1490,10 +1510,12 @@
     "exampleCn": "这项行动旨在消灭入侵昆虫。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "9"
   },
   {
     "id": 1623,

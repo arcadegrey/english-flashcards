@@ -58,10 +58,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 171,
@@ -286,10 +291,15 @@
     "exampleCn": "我们就这个项目进行了高效的讨论。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 1246,
@@ -856,10 +866,12 @@
     "exampleCn": "农村社区常常面临医疗资源有限的问题。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "3"
   },
   {
     "id": 1285,
@@ -961,10 +973,12 @@
     "exampleCn": "去年旅游业出现了显著增长。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "4"
   },
   {
     "id": 1292,
@@ -1068,10 +1082,12 @@
     "exampleCn": "孩子们在广场的喷泉旁玩耍。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "4"
   },
   {
     "id": 1299,
@@ -1158,10 +1174,15 @@
     "exampleCn": "这所大学重视校园里的文化多样性。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1305,
@@ -1293,10 +1314,12 @@
     "exampleCn": "这个地区地震发生的频率较低。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "10"
   },
   {
     "id": 1314,
@@ -1308,10 +1331,15 @@
     "exampleCn": "这位科学家记录了每日观察日志。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 1315,

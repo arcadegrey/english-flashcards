@@ -1,0 +1,924 @@
+[
+  {
+    "id": 449,
+    "word": "circuit",
+    "phonetic": "/ˈsɜːrkɪt/",
+    "pos": "n.",
+    "meaning": "电路；巡回",
+    "example": "The electrical circuit is broken.",
+    "exampleCn": "电路断了。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 512,
+    "word": "substance",
+    "phonetic": "/ˈsʌbstəns/",
+    "pos": "n.",
+    "meaning": "物质；实质；要旨",
+    "example": "Water is a transparent substance.",
+    "exampleCn": "水是一种透明的物质。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "10"
+  },
+  {
+    "id": 718,
+    "word": "orbit",
+    "phonetic": "/ˈɔːbɪt/",
+    "pos": "n./v.",
+    "meaning": "轨道；绕轨道运行",
+    "example": "The satellite is in orbit.",
+    "exampleCn": "卫星在轨道上。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "10"
+  },
+  {
+    "id": 883,
+    "word": "molecule",
+    "phonetic": "/ˈmɒlɪkjuːl/",
+    "pos": "n.",
+    "meaning": "分子",
+    "example": "Water is made of simple molecules.",
+    "exampleCn": "水是由简单分子构成的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "10"
+  },
+  {
+    "id": 905,
+    "word": "fossil",
+    "phonetic": "/ˈfɑːsəl/",
+    "pos": "n.",
+    "meaning": "化石",
+    "example": "The museum displayed a dinosaur fossil.",
+    "exampleCn": "博物馆展出了一块恐龙化石。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "10"
+  },
+  {
+    "id": 1313,
+    "word": "frequency",
+    "phonetic": "/ˈfriːkwənsi/",
+    "pos": "n.",
+    "meaning": "频率；发生次数",
+    "example": "The frequency of earthquakes in the area is low.",
+    "exampleCn": "这个地区地震发生的频率较低。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "10"
+  },
+  {
+    "id": 1353,
+    "word": "curve",
+    "phonetic": "/kɜːrv/",
+    "pos": "n./v.",
+    "meaning": "曲线；弯道/弯曲",
+    "example": "The road curves sharply near the hill.",
+    "exampleCn": "道路在山附近急转弯。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "10"
+  },
+  {
+    "id": 1368,
+    "word": "dimension",
+    "phonetic": "/daɪˈmenʃən/",
+    "pos": "n.",
+    "meaning": "维度；尺寸",
+    "example": "Time is often described as the fourth dimension.",
+    "exampleCn": "时间常被描述为第四维度。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "10"
+  },
+  {
+    "id": 1437,
+    "word": "motion",
+    "phonetic": "/ˈmoʊʃən/",
+    "pos": "n./v.",
+    "meaning": "运动/动作/手势/提议/打手势",
+    "example": "The motion of the planets can be predicted with careful observation.",
+    "exampleCn": "通过仔细观察可以预测行星的运动。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "10"
+  },
+  {
+    "id": 1540,
+    "word": "electron",
+    "phonetic": "/ɪˈlektrɑːn/",
+    "pos": "n.",
+    "meaning": "电子",
+    "example": "An electron carries a negative electric charge.",
+    "exampleCn": "电子带有负电荷。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "10"
+  },
+  {
+    "id": 1558,
+    "word": "galaxy",
+    "phonetic": "/ˈɡæləksi/",
+    "pos": "n.",
+    "meaning": "星系/银河系",
+    "example": "A galaxy contains billions of stars and clouds of gas.",
+    "exampleCn": "一个星系包含数十亿颗恒星和气体云。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "10"
+  },
+  {
+    "id": 1846,
+    "word": "particle",
+    "phonetic": "/ˈpɑːrtɪkl/",
+    "pos": "n.",
+    "meaning": "颗粒/微粒/粒子",
+    "example": "Dust particles floated in the sunlight.",
+    "exampleCn": "灰尘颗粒在阳光中漂浮。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "10"
+  },
+  {
+    "id": 1894,
+    "word": "comet",
+    "phonetic": "/ˈkɑːmət/",
+    "pos": "n.",
+    "meaning": "彗星",
+    "example": "A comet passed close to Earth last night.",
+    "exampleCn": "昨晚一颗彗星从地球附近经过。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "10"
+  },
+  {
+    "id": 2081,
+    "word": "astronomy",
+    "phonetic": "/əˈstrɑːnəmi/",
+    "pos": "n.",
+    "meaning": "天文学",
+    "example": "Astronomy helps us understand stars and planets.",
+    "exampleCn": "天文学帮助我们了解恒星和行星。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "10"
+  },
+  {
+    "id": 2242,
+    "word": "chunk",
+    "phonetic": "/tʃʌŋk/",
+    "pos": "n.",
+    "meaning": "大块/大量/组块",
+    "example": "A large chunk of ice broke off the glacier.",
+    "exampleCn": "一大块冰从冰川上断裂下来。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "10"
+  },
+  {
+    "id": 2380,
+    "word": "radius",
+    "phonetic": "/ˈreɪdiəs/",
+    "pos": "n.",
+    "meaning": "半径/范围",
+    "example": "The radius of the circle is five centimeters.",
+    "exampleCn": "这个圆的半径是五厘米。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "10"
+  },
+  {
+    "id": 2471,
+    "word": "specimen",
+    "phonetic": "/ˈspesɪmən/",
+    "pos": "n.",
+    "meaning": "样本/标本",
+    "example": "The biologist examined the plant specimen carefully.",
+    "exampleCn": "生物学家仔细检查了这个植物标本。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "10"
+  },
+  {
+    "id": 2543,
+    "word": "compound",
+    "phonetic": "/ˈkɑːmpaʊnd/",
+    "pos": "n./adj./v.",
+    "meaning": "化合物/复合的/使加重",
+    "example": "The chemical compound is stable at room temperature.",
+    "exampleCn": "这种化合物在室温下很稳定。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "10"
+  },
+  {
+    "id": 2680,
+    "word": "vent",
+    "phonetic": "/vent/",
+    "pos": "n./v.",
+    "meaning": "通风口/排放/发泄",
+    "example": "Steam escaped through a small vent.",
+    "exampleCn": "蒸汽从一个小通风口逸出。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "10"
+  },
+  {
+    "id": 2687,
+    "word": "interstellar",
+    "phonetic": "/ˌɪntərˈstelər/",
+    "pos": "adj.",
+    "meaning": "星际的",
+    "example": "Interstellar dust exists between stars.",
+    "exampleCn": "星际尘埃存在于恒星之间。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "10"
+  },
+  {
+    "id": 2917,
+    "word": "observatory",
+    "phonetic": "/əbˈzɜːrvətɔːri/",
+    "pos": "n.",
+    "meaning": "天文台/观测站",
+    "example": "Scientists watched the comet from the observatory.",
+    "exampleCn": "科学家们从天文台观察那颗彗星。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "10"
+  },
+  {
+    "id": 2950,
+    "word": "spectrum",
+    "phonetic": "/ˈspektrəm/",
+    "pos": "n.",
+    "meaning": "光谱/范围/系列",
+    "example": "Visible light is part of the electromagnetic spectrum.",
+    "exampleCn": "可见光是电磁波谱的一部分。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "10"
+  },
+  {
+    "id": 2999,
+    "word": "meteorite",
+    "phonetic": "/ˈmiːtiəraɪt/",
+    "pos": "n.",
+    "meaning": "陨石",
+    "example": "A meteorite was found in the desert.",
+    "exampleCn": "在沙漠中发现了一块陨石。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "10"
+  },
+  {
+    "id": 3100,
+    "word": "expedition",
+    "phonetic": "/ˌekspəˈdɪʃən/",
+    "pos": "n.",
+    "meaning": "远征/考察/探险队",
+    "example": "The expedition collected samples from the Arctic.",
+    "exampleCn": "考察队从北极采集了样本。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "10"
+  },
+  {
+    "id": 3165,
+    "word": "terrestrial",
+    "phonetic": "/təˈrestriəl/",
+    "pos": "adj.",
+    "meaning": "陆地的/地球的",
+    "example": "Terrestrial animals must adapt to life on land.",
+    "exampleCn": "陆生动物必须适应陆地生活。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "10"
+  },
+  {
+    "id": 3171,
+    "word": "celestial",
+    "phonetic": "/səˈlestʃəl/",
+    "pos": "adj.",
+    "meaning": "天空的/天体的",
+    "example": "Ancient astronomers studied celestial movements carefully.",
+    "exampleCn": "古代天文学家仔细研究天体运动。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "10"
+  },
+  {
+    "id": 3206,
+    "word": "crater",
+    "phonetic": "/ˈkreɪtər/",
+    "pos": "n.",
+    "meaning": "火山口/陨石坑",
+    "example": "The moon’s surface is covered with craters of different sizes.",
+    "exampleCn": "月球表面覆盖着大小不同的陨石坑。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "10"
+  },
+  {
+    "id": 3497,
+    "word": "ion",
+    "phonetic": "/ˈaɪən/",
+    "pos": "n.",
+    "meaning": "离子",
+    "example": "A sodium ion has a positive charge.",
+    "exampleCn": "钠离子带正电荷。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "6",
+    "list": "4",
+    "ieltsList": "10"
+  },
+  {
+    "id": 3852,
+    "word": "cosmos",
+    "phonetic": "ˈkɒzmɒs",
+    "pos": "n.",
+    "meaning": "宇宙/太空",
+    "example": "The cosmos is vast and full of mysteries.",
+    "exampleCn": "宇宙广阔而充满了奥秘。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3853,
+    "word": "universe",
+    "phonetic": "ˈjuːnɪvɜːs",
+    "pos": "n.",
+    "meaning": "宇宙",
+    "example": "Scientists study the origins of the universe.",
+    "exampleCn": "科学家研究宇宙的起源。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3854,
+    "word": "astrology",
+    "phonetic": "əˈstrɒlədʒi",
+    "pos": "n.",
+    "meaning": "占星术",
+    "example": "Astrology claims that stars influence human destiny.",
+    "exampleCn": "占星术声称星星影响人类的命运。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3855,
+    "word": "astronaut",
+    "phonetic": "ˈæstrənɔːt",
+    "pos": "n.",
+    "meaning": "宇航员",
+    "example": "The astronaut spent six months on the space station.",
+    "exampleCn": "这位宇航员在空间站上度过了六个月。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3856,
+    "word": "dust",
+    "phonetic": "dʌst",
+    "pos": "n.",
+    "meaning": "尘埃/灰尘",
+    "example": "A thick layer of dust covered the old furniture.",
+    "exampleCn": "一层厚厚的灰尘覆盖着旧家具。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3857,
+    "word": "ash",
+    "phonetic": "æʃ",
+    "pos": "n/v.",
+    "meaning": "灰烬/化为灰烬",
+    "example": "Volcanic ash covered the town after the eruption.",
+    "exampleCn": "火山喷发后，火山灰覆盖了小镇。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3858,
+    "word": "envelope",
+    "phonetic": "ˈenvələʊp",
+    "pos": "n.",
+    "meaning": "外壳/信封",
+    "example": "The Earth's atmosphere is an envelope of gases.",
+    "exampleCn": "地球的大气层是一层气体的外壳。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3859,
+    "word": "spacecraft",
+    "phonetic": "ˈspeɪskrɑːft",
+    "pos": "n.",
+    "meaning": "宇宙飞船/航天器",
+    "example": "The spacecraft successfully landed on Mars.",
+    "exampleCn": "宇宙飞船成功登陆火星。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3860,
+    "word": "spaceship",
+    "phonetic": "ˈspeɪsʃɪp",
+    "pos": "n.",
+    "meaning": "宇宙飞船",
+    "example": "The spaceship travelled at incredible speed.",
+    "exampleCn": "宇宙飞船以惊人的速度飞行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3861,
+    "word": "probe",
+    "phonetic": "prəʊb",
+    "pos": "n.",
+    "meaning": "探测器",
+    "example": "The space probe sent back images from Jupiter.",
+    "exampleCn": "太空探测器发回了木星的图像。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3862,
+    "word": "module",
+    "phonetic": "ˈmɒdjuːl",
+    "pos": "n.",
+    "meaning": "舱/模块",
+    "example": "The lunar module landed on the moon's surface.",
+    "exampleCn": "登月舱降落在月球表面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3863,
+    "word": "propulsion",
+    "phonetic": "prəˈpʌlʃn",
+    "pos": "n.",
+    "meaning": "推进力/推进",
+    "example": "Rocket propulsion allows spacecraft to escape Earth's gravity.",
+    "exampleCn": "火箭推进力使航天器能够摆脱地球引力。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3864,
+    "word": "pressure",
+    "phonetic": "ˈpreʃə",
+    "pos": "n.",
+    "meaning": "压力/压强",
+    "example": "Atmospheric pressure decreases at high altitudes.",
+    "exampleCn": "大气压力在高海拔处下降。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3865,
+    "word": "dynamics",
+    "phonetic": "daɪˈnæmɪks",
+    "pos": "n.",
+    "meaning": "动力学/动态",
+    "example": "Fluid dynamics is an important field of physics.",
+    "exampleCn": "流体动力学是物理学的一个重要领域。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3866,
+    "word": "tail",
+    "phonetic": "teɪl",
+    "pos": "n.",
+    "meaning": "尾巴/尾部",
+    "example": "The comet's tail can stretch for millions of miles.",
+    "exampleCn": "彗星的尾巴可以延伸数百万英里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3867,
+    "word": "exploration",
+    "phonetic": "ˌekspləˈreɪʃn",
+    "pos": "n.",
+    "meaning": "探索/探险",
+    "example": "Space exploration has led to many scientific discoveries.",
+    "exampleCn": "太空探索带来了许多科学发现。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3868,
+    "word": "flyby",
+    "phonetic": "ˈflaɪbaɪ",
+    "pos": "n.",
+    "meaning": "飞掠/近天体探测飞行",
+    "example": "The probe made a flyby of Saturn.",
+    "exampleCn": "探测器飞掠了土星。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3869,
+    "word": "telescope",
+    "phonetic": "ˈtelɪskəʊp",
+    "pos": "n.",
+    "meaning": "望远镜",
+    "example": "With a telescope, you can see craters on the moon.",
+    "exampleCn": "用望远镜你可以看到月球上的环形山。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3870,
+    "word": "spectacle",
+    "phonetic": "ˈspektəkl",
+    "pos": "n.",
+    "meaning": "奇观/景象",
+    "example": "The eclipse was a breathtaking spectacle.",
+    "exampleCn": "那次日食是令人叹为观止的奇观。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3871,
+    "word": "ecliptic",
+    "phonetic": "ɪˈklɪptɪk",
+    "pos": "n.",
+    "meaning": "黄道",
+    "example": "The ecliptic is the path the sun appears to follow.",
+    "exampleCn": "黄道是太阳在天空中看起来运行的路径。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3872,
+    "word": "diameter",
+    "phonetic": "daɪˈæmɪtə",
+    "pos": "n.",
+    "meaning": "直径",
+    "example": "The diameter of the Earth is about 12,742 kilometres.",
+    "exampleCn": "地球的直径约为12742公里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3873,
+    "word": "composition",
+    "phonetic": "ˌkɒmpəˈzɪʃn",
+    "pos": "n.",
+    "meaning": "组成/成分",
+    "example": "Scientists analysed the chemical composition of the rock.",
+    "exampleCn": "科学家分析了这块岩石的化学成分。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3874,
+    "word": "sample",
+    "phonetic": "ˈsɑːmpl",
+    "pos": "n.",
+    "meaning": "样本/样品",
+    "example": "The rover collected soil samples from Mars.",
+    "exampleCn": "探测器从火星采集了土壤样本。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3875,
+    "word": "atom",
+    "phonetic": "ˈætəm",
+    "pos": "n.",
+    "meaning": "原子",
+    "example": "Everything in the universe is made of atoms.",
+    "exampleCn": "宇宙中的一切都是由原子构成的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3876,
+    "word": "quantum",
+    "phonetic": "ˈkwɒntəm",
+    "pos": "n.",
+    "meaning": "量子",
+    "example": "Quantum mechanics explains the behaviour of tiny particles.",
+    "exampleCn": "量子力学解释了微小粒子的行为。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3877,
+    "word": "liquid",
+    "phonetic": "ˈlɪkwɪd",
+    "pos": "n/adj.",
+    "meaning": "液体/液体的",
+    "example": "Water is a liquid at room temperature.",
+    "exampleCn": "水在室温下是液体。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3878,
+    "word": "fluid",
+    "phonetic": "ˈfluːɪd",
+    "pos": "n/adj.",
+    "meaning": "流体/流动的",
+    "example": "The fluid dynamics of the ocean are complex.",
+    "exampleCn": "海洋的流体动力学很复杂。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3879,
+    "word": "solid",
+    "phonetic": "ˈsɒlɪd",
+    "pos": "n/adj.",
+    "meaning": "固体/固体的",
+    "example": "Ice is water in its solid form.",
+    "exampleCn": "冰是水的固体形式。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3880,
+    "word": "synthesise",
+    "phonetic": "ˈsɪnθəsaɪz",
+    "pos": "v.",
+    "meaning": "合成",
+    "example": "Scientists can synthesise new materials in the laboratory.",
+    "exampleCn": "科学家可以在实验室合成新材料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3881,
+    "word": "formation",
+    "phonetic": "fɔːˈmeɪʃn",
+    "pos": "n.",
+    "meaning": "形成/构造",
+    "example": "The formation of stars takes millions of years.",
+    "exampleCn": "恒星的形成需要数百万年。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3882,
+    "word": "method",
+    "phonetic": "ˈmeθəd",
+    "pos": "n.",
+    "meaning": "方法",
+    "example": "The scientific method involves observation and experiment.",
+    "exampleCn": "科学方法包括观察和实验。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3883,
+    "word": "antenna",
+    "phonetic": "ænˈtenə",
+    "pos": "n.",
+    "meaning": "天线",
+    "example": "The antenna receives signals from the satellite.",
+    "exampleCn": "天线接收来自卫星的信号。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  }
+]

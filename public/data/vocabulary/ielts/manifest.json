@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-05-19T10:44:00.566Z",
+  "generatedAt": "2026-05-19T13:05:11.156Z",
   "source": "/data/vocabulary.json",
-  "sourceTotal": 3636,
+  "sourceTotal": 3883,
   "core": {
     "path": "/data/vocabulary/core.json",
-    "count": 318
+    "count": 306
   },
   "ielts": {
-    "total": 120,
-    "meta": "1 个主题",
+    "total": 600,
+    "meta": "4 个主题",
     "topics": [
       {
         "key": "nature-geography",
         "label": "自然地理",
-        "count": 120,
+        "count": 240,
         "lists": [
           {
             "key": "1",
@@ -30,9 +30,97 @@
             "path": "/data/vocabulary/ielts/list-2.json",
             "topicKey": "nature-geography",
             "topicLabel": "自然地理"
+          },
+          {
+            "key": "3",
+            "label": "List 3",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-3.json",
+            "topicKey": "nature-geography",
+            "topicLabel": "自然地理"
+          },
+          {
+            "key": "4",
+            "label": "List 4",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-4.json",
+            "topicKey": "nature-geography",
+            "topicLabel": "自然地理"
+          }
+        ],
+        "meta": "4 个 List"
+      },
+      {
+        "key": "plant-research",
+        "label": "植物研究",
+        "count": 120,
+        "lists": [
+          {
+            "key": "5",
+            "label": "List 5",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-5.json",
+            "topicKey": "plant-research",
+            "topicLabel": "植物研究"
+          },
+          {
+            "key": "6",
+            "label": "List 6",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-6.json",
+            "topicKey": "plant-research",
+            "topicLabel": "植物研究"
           }
         ],
         "meta": "2 个 List"
+      },
+      {
+        "key": "animal-conservation",
+        "label": "动物保护",
+        "count": 180,
+        "lists": [
+          {
+            "key": "7",
+            "label": "List 7",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-7.json",
+            "topicKey": "animal-conservation",
+            "topicLabel": "动物保护"
+          },
+          {
+            "key": "8",
+            "label": "List 8",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-8.json",
+            "topicKey": "animal-conservation",
+            "topicLabel": "动物保护"
+          },
+          {
+            "key": "9",
+            "label": "List 9",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-9.json",
+            "topicKey": "animal-conservation",
+            "topicLabel": "动物保护"
+          }
+        ],
+        "meta": "3 个 List"
+      },
+      {
+        "key": "space-exploration",
+        "label": "太空探索",
+        "count": 60,
+        "lists": [
+          {
+            "key": "10",
+            "label": "List 10",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-10.json",
+            "topicKey": "space-exploration",
+            "topicLabel": "太空探索"
+          }
+        ],
+        "meta": "1 个 List"
       }
     ],
     "lists": [
@@ -51,6 +139,70 @@
         "path": "/data/vocabulary/ielts/list-2.json",
         "topicKey": "nature-geography",
         "topicLabel": "自然地理"
+      },
+      {
+        "key": "3",
+        "label": "List 3",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-3.json",
+        "topicKey": "nature-geography",
+        "topicLabel": "自然地理"
+      },
+      {
+        "key": "4",
+        "label": "List 4",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-4.json",
+        "topicKey": "nature-geography",
+        "topicLabel": "自然地理"
+      },
+      {
+        "key": "5",
+        "label": "List 5",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-5.json",
+        "topicKey": "plant-research",
+        "topicLabel": "植物研究"
+      },
+      {
+        "key": "6",
+        "label": "List 6",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-6.json",
+        "topicKey": "plant-research",
+        "topicLabel": "植物研究"
+      },
+      {
+        "key": "7",
+        "label": "List 7",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-7.json",
+        "topicKey": "animal-conservation",
+        "topicLabel": "动物保护"
+      },
+      {
+        "key": "8",
+        "label": "List 8",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-8.json",
+        "topicKey": "animal-conservation",
+        "topicLabel": "动物保护"
+      },
+      {
+        "key": "9",
+        "label": "List 9",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-9.json",
+        "topicKey": "animal-conservation",
+        "topicLabel": "动物保护"
+      },
+      {
+        "key": "10",
+        "label": "List 10",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-10.json",
+        "topicKey": "space-exploration",
+        "topicLabel": "太空探索"
       }
     ]
   }

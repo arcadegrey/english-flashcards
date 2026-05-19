@@ -28,6 +28,7 @@ import {
   getWordCategories,
   mergeCategoryLists,
   wordBelongsToCategory,
+  getWordIeltsLists,
   wordHasIeltsCategory,
   wordHasToeflCategory,
 } from './utils/wordCategories'
@@ -68,7 +69,7 @@ const dedupeIdList = (list) => {
 
 const countFilledFields = (word) => {
   if (!word || typeof word !== 'object') return 0
-  const keys = ['phonetic', 'pos', 'meaning', 'example', 'exampleCn', 'category', 'categories', 'level', 'list', 'ieltsList']
+  const keys = ['phonetic', 'pos', 'meaning', 'example', 'exampleCn', 'category', 'categories', 'level', 'list', 'ieltsList', 'ieltsLists']
   return keys.reduce((count, key) => {
     const value = Array.isArray(word[key]) ? word[key].join('|') : String(word[key] ?? '').trim()
     return value ? count + 1 : count
@@ -272,18 +273,18 @@ const matchesToeflList = (word, selectedList) => {
 
 const getIeltsMeta = (word) => {
   if (!word || !wordHasIeltsCategory(word)) {
-    return { list: null }
+    return { lists: [] }
   }
 
-  return { list: extractNumericTag(word.ieltsList) || extractNumericTag(word.list) }
+  return { lists: getWordIeltsLists(word) }
 }
 
 const matchesIeltsList = (word, selectedList) => {
-  const { list } = getIeltsMeta(word)
+  const { lists } = getIeltsMeta(word)
   if (selectedList === TOEFL_UNKNOWN_LIST) {
-    return list == null
+    return lists.length === 0
   }
-  return String(list) === String(selectedList)
+  return lists.some((list) => String(list) === String(selectedList))
 }
 
 const getIeltsTopicKey = (list) => {
@@ -311,8 +312,11 @@ const getIeltsTopicLabel = (topicKey) => {
 }
 
 const matchesIeltsTopic = (word, selectedTopic) => {
-  const { list } = getIeltsMeta(word)
-  return getIeltsTopicKey(list) === String(selectedTopic || IELTS_UNKNOWN_TOPIC)
+  const { lists } = getIeltsMeta(word)
+  if (lists.length === 0) {
+    return String(selectedTopic || IELTS_UNKNOWN_TOPIC) === IELTS_UNKNOWN_TOPIC
+  }
+  return lists.some((list) => getIeltsTopicKey(list) === String(selectedTopic || IELTS_UNKNOWN_TOPIC))
 }
 
 const sortNumericKeyWithUnknownLast = (a, b, unknownKey) => {

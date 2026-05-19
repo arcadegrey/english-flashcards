@@ -58,10 +58,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 263,
@@ -302,10 +307,12 @@
     "exampleCn": "水是一种透明的物质。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "10"
   },
   {
     "id": 513,
@@ -499,10 +506,12 @@
     "exampleCn": "狮子捕猎它的猎物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "9"
   },
   {
     "id": 526,
@@ -1026,10 +1035,12 @@
     "exampleCn": "她把水倒进杯子里。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "4"
   },
   {
     "id": 561,
@@ -1223,10 +1234,12 @@
     "exampleCn": "鸟儿凭本能学会飞行。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "9"
   },
   {
     "id": 575,
@@ -1313,10 +1326,12 @@
     "exampleCn": "电脑病毒损坏了文件。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "9"
   },
   {
     "id": 581,

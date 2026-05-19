@@ -256,10 +256,15 @@
     "exampleCn": "暴风雨毁坏了庄稼。/这处古代遗迹吸引了许多游客。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 961,
@@ -348,10 +353,15 @@
     "exampleCn": "即使是简单的生物体也必须适应环境。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 967,
@@ -378,10 +388,15 @@
     "exampleCn": "这个项目需要大量资金。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 969,
@@ -1008,10 +1023,12 @@
     "exampleCn": "森林非常茂密，几乎没有阳光照到地面。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "4"
   },
   {
     "id": 1011,
@@ -1053,10 +1070,12 @@
     "exampleCn": "我们需要一个灵活的时间安排。/瑜伽有助于让身体保持柔韧。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "9"
   },
   {
     "id": 1014,
@@ -1233,10 +1252,12 @@
     "exampleCn": "警方没有找到失踪车辆的任何痕迹。/研究人员追查到这种疾病源于受污染的水。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "9"
   },
   {
     "id": 1026,

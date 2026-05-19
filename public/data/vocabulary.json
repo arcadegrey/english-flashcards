@@ -35,8 +35,10 @@
     "exampleCn": "测试结果显示细胞异常生长。",
     "category": "cet4",
     "categories": [
-      "cet4"
-    ]
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "3"
   },
   {
     "id": 4,
@@ -78,10 +80,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 7,
@@ -1096,10 +1103,12 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "3"
   },
   {
     "id": 77,
@@ -1728,10 +1737,12 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "9"
   },
   {
     "id": 122,
@@ -1949,10 +1960,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 137,
@@ -2519,10 +2535,12 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "4"
   },
   {
     "id": 176,
@@ -3045,8 +3063,10 @@
     "exampleCn": "语言障碍可能是一个挑战。",
     "category": "daily",
     "categories": [
-      "daily"
-    ]
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "9"
   },
   {
     "id": 212,
@@ -3143,10 +3163,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 219,
@@ -3171,7 +3196,12 @@
     "exampleCn": "狮子被称为百兽之王。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
     ]
   },
   {
@@ -3593,7 +3623,12 @@
     "exampleCn": "狗试图咬邮递员。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
     ]
   },
   {
@@ -3788,10 +3823,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 267,
@@ -3816,8 +3856,10 @@
     "exampleCn": "风刮得很猛。",
     "category": "cet4",
     "categories": [
-      "cet4"
-    ]
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "4"
   },
   {
     "id": 269,
@@ -3994,8 +4036,10 @@
     "exampleCn": "他们越过边境进入法国。",
     "category": "daily",
     "categories": [
-      "daily"
-    ]
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "3"
   },
   {
     "id": 282,
@@ -4199,7 +4243,12 @@
     "exampleCn": "这家银行在市中心有一个分行。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
     ]
   },
   {
@@ -4320,10 +4369,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 306,
@@ -4670,7 +4724,12 @@
     "exampleCn": "公牛向斗牛士冲去。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
     ]
   },
   {
@@ -4709,7 +4768,12 @@
     "exampleCn": "她买了一束花。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
     ]
   },
   {
@@ -4723,10 +4787,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 335,
@@ -4971,8 +5040,10 @@
     "exampleCn": "鸟在笼子里。",
     "category": "daily",
     "categories": [
-      "daily"
-    ]
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "9"
   },
   {
     "id": 353,
@@ -5014,10 +5085,12 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "4"
   },
   {
     "id": 356,
@@ -5544,10 +5617,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 394,
@@ -5627,10 +5705,12 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "9"
   },
   {
     "id": 400,
@@ -6189,10 +6269,12 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "3"
   },
   {
     "id": 440,
@@ -6327,8 +6409,10 @@
     "exampleCn": "电路断了。",
     "category": "daily",
     "categories": [
-      "daily"
-    ]
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "10"
   },
   {
     "id": 450,
@@ -6341,10 +6425,12 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "4"
   },
   {
     "id": 451,
@@ -6482,8 +6568,10 @@
     "exampleCn": "这个罐子是用粘土做的。",
     "category": "daily",
     "categories": [
-      "daily"
-    ]
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "3"
   },
   {
     "id": 461,
@@ -7220,10 +7308,12 @@
     "exampleCn": "水是一种透明的物质。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "10"
   },
   {
     "id": 513,
@@ -7417,10 +7507,12 @@
     "exampleCn": "狮子捕猎它的猎物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "9"
   },
   {
     "id": 526,
@@ -7944,10 +8036,12 @@
     "exampleCn": "她把水倒进杯子里。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "4"
   },
   {
     "id": 561,
@@ -8156,10 +8250,12 @@
     "exampleCn": "鸟儿凭本能学会飞行。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "9"
   },
   {
     "id": 575,
@@ -8246,10 +8342,12 @@
     "exampleCn": "电脑病毒损坏了文件。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "9"
   },
   {
     "id": 581,
@@ -8579,10 +8677,15 @@
     "exampleCn": "这个物种濒临灭绝。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 603,
@@ -8999,10 +9102,15 @@
     "exampleCn": "牛是食草动物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 631,
@@ -9644,10 +9752,15 @@
     "exampleCn": "书籍按主题分类。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 674,
@@ -9839,10 +9952,12 @@
     "exampleCn": "太阳能是可再生的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "4"
   },
   {
     "id": 687,
@@ -9916,10 +10031,12 @@
     "exampleCn": "这座宫殿很宏伟。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "4"
   },
   {
     "id": 692,
@@ -10321,10 +10438,12 @@
     "exampleCn": "卫星在轨道上。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "10"
   },
   {
     "id": 719,
@@ -10638,10 +10757,12 @@
     "exampleCn": "调查期间新的证据开始浮现。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "4"
   },
   {
     "id": 740,
@@ -11028,10 +11149,15 @@
     "exampleCn": "她是个有效率的员工。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 766,
@@ -12063,10 +12189,15 @@
     "exampleCn": "我们必须保护自然。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 835,
@@ -12243,10 +12374,12 @@
     "exampleCn": "她对批评敏感。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "9"
   },
   {
     "id": 847,
@@ -12258,10 +12391,15 @@
     "exampleCn": "模式在重复。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 848,
@@ -12423,10 +12561,12 @@
     "exampleCn": "地震后墙上出现了一道小裂缝。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "4"
   },
   {
     "id": 859,
@@ -12618,10 +12758,15 @@
     "exampleCn": "鲸鱼是哺乳动物，不是鱼。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 872,
@@ -12798,10 +12943,12 @@
     "exampleCn": "水是由简单分子构成的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "10"
   },
   {
     "id": 884,
@@ -12935,10 +13082,12 @@
     "exampleCn": "他们住在一个偏远的山村。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "3"
   },
   {
     "id": 893,
@@ -12950,10 +13099,15 @@
     "exampleCn": "你应该做出成熟的决定。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 894,
@@ -13130,10 +13284,12 @@
     "exampleCn": "博物馆展出了一块恐龙化石。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "10"
   },
   {
     "id": 906,
@@ -13507,10 +13663,12 @@
     "exampleCn": "大雨会流入河中。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "4"
   },
   {
     "id": 931,
@@ -13717,10 +13875,12 @@
     "exampleCn": "病人现在情况稳定。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "9"
   },
   {
     "id": 945,
@@ -13747,10 +13907,15 @@
     "exampleCn": "农民用安全的方法控制害虫。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 947,
@@ -13957,10 +14122,15 @@
     "exampleCn": "暴风雨毁坏了庄稼。/这处古代遗迹吸引了许多游客。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 961,
@@ -14049,10 +14219,15 @@
     "exampleCn": "即使是简单的生物体也必须适应环境。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 967,
@@ -14079,10 +14254,15 @@
     "exampleCn": "这个项目需要大量资金。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 969,
@@ -14709,10 +14889,12 @@
     "exampleCn": "森林非常茂密，几乎没有阳光照到地面。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "4"
   },
   {
     "id": 1011,
@@ -14754,10 +14936,12 @@
     "exampleCn": "我们需要一个灵活的时间安排。/瑜伽有助于让身体保持柔韧。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "9"
   },
   {
     "id": 1014,
@@ -14934,10 +15118,12 @@
     "exampleCn": "警方没有找到失踪车辆的任何痕迹。/研究人员追查到这种疾病源于受污染的水。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "9"
   },
   {
     "id": 1026,
@@ -15791,10 +15977,15 @@
     "exampleCn": "她在大学学习植物学。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1083,
@@ -15851,10 +16042,12 @@
     "exampleCn": "这棵树的树皮很厚。/那只狗晚上大声吠叫。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "9"
   },
   {
     "id": 1087,
@@ -16183,10 +16376,15 @@
     "exampleCn": "新法律对教育产生了强烈影响。/气候变化影响着每一个人。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 1109,
@@ -16228,10 +16426,15 @@
     "exampleCn": "污染会破坏整个生态系统。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1112,
@@ -16543,10 +16746,15 @@
     "exampleCn": "这种药物仍处于实验阶段。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 1133,
@@ -16738,10 +16946,15 @@
     "exampleCn": "植物从土壤中吸收养分。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 1146,
@@ -16768,10 +16981,12 @@
     "exampleCn": "鸟儿在树上筑了一个巢。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "9"
   },
   {
     "id": 1148,
@@ -16843,10 +17058,12 @@
     "exampleCn": "律师努力为她的当事人辩护。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "9"
   },
   {
     "id": 1153,
@@ -16918,10 +17135,15 @@
     "exampleCn": "农民预计今年会有好收成。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1158,
@@ -17083,10 +17305,15 @@
     "exampleCn": "这个项目需要相当大的资金支持。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 1169,
@@ -17865,10 +18092,12 @@
     "exampleCn": "水继续从天花板上滴下来。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "4"
   },
   {
     "id": 1221,
@@ -18240,10 +18469,15 @@
     "exampleCn": "我们就这个项目进行了高效的讨论。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 1246,
@@ -18825,10 +19059,12 @@
     "exampleCn": "农村社区常常面临医疗资源有限的问题。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "3"
   },
   {
     "id": 1285,
@@ -18930,10 +19166,12 @@
     "exampleCn": "去年旅游业出现了显著增长。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "4"
   },
   {
     "id": 1292,
@@ -19037,10 +19275,12 @@
     "exampleCn": "孩子们在广场的喷泉旁玩耍。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "4"
   },
   {
     "id": 1299,
@@ -19127,10 +19367,15 @@
     "exampleCn": "这所大学重视校园里的文化多样性。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1305,
@@ -19262,10 +19507,12 @@
     "exampleCn": "这个地区地震发生的频率较低。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "10"
   },
   {
     "id": 1314,
@@ -19277,10 +19524,15 @@
     "exampleCn": "这位科学家记录了每日观察日志。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 1315,
@@ -19517,10 +19769,15 @@
     "exampleCn": "这种新方法证明非常有效。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 1331,
@@ -19832,10 +20089,15 @@
     "exampleCn": "这种习俗被认为起源于中国。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 1352,
@@ -19862,10 +20124,12 @@
     "exampleCn": "道路在山附近急转弯。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "10"
   },
   {
     "id": 1354,
@@ -19922,10 +20186,12 @@
     "exampleCn": "这个团队采取了防御策略。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "9"
   },
   {
     "id": 1358,
@@ -20087,10 +20353,12 @@
     "exampleCn": "时间常被描述为第四维度。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "10"
   },
   {
     "id": 1369,
@@ -20102,10 +20370,15 @@
     "exampleCn": "园丁用手拔除了杂草。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 1370,
@@ -20327,10 +20600,15 @@
     "exampleCn": "一群大象缓慢地穿过平原。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 1385,
@@ -20687,10 +20965,15 @@
     "exampleCn": "公司将在下周发布一款新产品。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 1409,
@@ -20867,10 +21150,12 @@
     "exampleCn": "我们在一棵大树的树荫下休息。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "4"
   },
   {
     "id": 1421,
@@ -20882,10 +21167,12 @@
     "exampleCn": "这家工厂被指控排放有毒废物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "3"
   },
   {
     "id": 1422,
@@ -20897,10 +21184,12 @@
     "exampleCn": "这座房子坐落在一个缓坡上。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "3"
   },
   {
     "id": 1423,
@@ -20942,10 +21231,12 @@
     "exampleCn": "许多人受季节性过敏困扰。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "9"
   },
   {
     "id": 1426,
@@ -21107,10 +21398,15 @@
     "exampleCn": "她在大学里学习海洋生态学。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1437,
@@ -21122,10 +21418,12 @@
     "exampleCn": "通过仔细观察可以预测行星的运动。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "10"
   },
   {
     "id": 1438,
@@ -21797,10 +22095,15 @@
     "exampleCn": "容器被密封起来以保持样本洁净。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 1483,
@@ -21887,10 +22190,15 @@
     "exampleCn": "门票需求超过了可供应的数量。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 1489,
@@ -22067,10 +22375,12 @@
     "exampleCn": "某些腺体会向血液中分泌激素。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "9"
   },
   {
     "id": 1501,
@@ -22264,10 +22574,15 @@
     "exampleCn": "樱桃树在早春开花。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1514,
@@ -22294,10 +22609,12 @@
     "exampleCn": "雾开始缓慢地漫过山谷。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "9"
   },
   {
     "id": 1516,
@@ -22429,10 +22746,15 @@
     "exampleCn": "水果在温暖潮湿的环境中会很快腐烂。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1525,
@@ -22594,10 +22916,15 @@
     "exampleCn": "紧急出口在建筑物的后部。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1536,
@@ -22669,10 +22996,12 @@
     "exampleCn": "电子带有负电荷。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "10"
   },
   {
     "id": 1541,
@@ -22939,10 +23268,12 @@
     "exampleCn": "一个星系包含数十亿颗恒星和气体云。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "10"
   },
   {
     "id": 1559,
@@ -22986,10 +23317,15 @@
     "exampleCn": "这些蛋通常两周后孵化。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 1562,
@@ -23693,10 +24029,12 @@
     "exampleCn": "把你的笔记写在页面的空白边缘。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "3"
   },
   {
     "id": 1609,
@@ -23873,10 +24211,12 @@
     "exampleCn": "这种材料在使用前必须经过几项测试。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "9"
   },
   {
     "id": 1621,
@@ -23903,10 +24243,12 @@
     "exampleCn": "这项行动旨在消灭入侵昆虫。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "9"
   },
   {
     "id": 1623,
@@ -23963,10 +24305,15 @@
     "exampleCn": "蜜蜂在感到受威胁时会蜇人。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 1627,
@@ -24023,10 +24370,15 @@
     "exampleCn": "薄荷是一种常用于茶中的香草。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1631,
@@ -24143,10 +24495,12 @@
     "exampleCn": "人们砍伐大片森林来开辟农田。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "4"
   },
   {
     "id": 1639,
@@ -24353,10 +24707,15 @@
     "exampleCn": "青蛙是一种能在陆地和水中生活的两栖动物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 1653,
@@ -24713,10 +25072,15 @@
     "exampleCn": "语言会随着社会变化而发展。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1677,
@@ -25480,10 +25844,12 @@
     "exampleCn": "导游带领游客参观了博物馆。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "9"
   },
   {
     "id": 1728,
@@ -25752,10 +26118,12 @@
     "exampleCn": "那种方法不适合这么小的样本。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "3"
   },
   {
     "id": 1746,
@@ -25767,10 +26135,16 @@
     "exampleCn": "树干在旱季储存水分。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6",
+      "8"
+    ]
   },
   {
     "id": 1747,
@@ -25827,10 +26201,12 @@
     "exampleCn": "光学仪器可以让远处物体看起来更近。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "9"
   },
   {
     "id": 1751,
@@ -26202,10 +26578,15 @@
     "exampleCn": "保护项目有助于保护濒危动物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 1776,
@@ -26958,10 +27339,12 @@
     "exampleCn": "肥沃的土壤能种植多种农作物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "4"
   },
   {
     "id": 1826,
@@ -27153,10 +27536,15 @@
     "exampleCn": "这个国家各地的气候差异很大。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1839,
@@ -27243,10 +27631,15 @@
     "exampleCn": "动物会保护它们的后代免受危险。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 1845,
@@ -27273,10 +27666,12 @@
     "exampleCn": "灰尘颗粒在阳光中漂浮。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "10"
   },
   {
     "id": 1847,
@@ -27723,10 +28118,15 @@
     "exampleCn": "一只松鼠把坚果藏在树叶下面。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 1877,
@@ -27768,10 +28168,15 @@
     "exampleCn": "狮子是一种捕猎其他动物的大型食肉动物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 1880,
@@ -27965,10 +28370,15 @@
     "exampleCn": "海洋中有极其丰富的生命种类。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 1893,
@@ -27995,10 +28405,12 @@
     "exampleCn": "昨晚一颗彗星从地球附近经过。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "10"
   },
   {
     "id": 1895,
@@ -28040,10 +28452,12 @@
     "exampleCn": "快速编辑时很容易忽视小错误。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "3"
   },
   {
     "id": 1898,
@@ -28372,10 +28786,15 @@
     "exampleCn": "花香充满了花园。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1920,
@@ -28957,10 +29376,15 @@
     "exampleCn": "这家公司向多个国家出口木材。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 1959,
@@ -29019,10 +29443,15 @@
     "exampleCn": "茂密的植被覆盖了山坡。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1963,
@@ -29169,10 +29598,15 @@
     "exampleCn": "农民在低地田里种植水稻。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1973,
@@ -29259,10 +29693,15 @@
     "exampleCn": "春天树枝上出现了一个小芽。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1979,
@@ -29636,10 +30075,12 @@
     "exampleCn": "一氧化碳是一种常见的空气污染物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "3"
   },
   {
     "id": 2004,
@@ -29713,10 +30154,12 @@
     "exampleCn": "湿地为许多鸟类提供栖息地。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "9"
   },
   {
     "id": 2009,
@@ -29893,10 +30336,12 @@
     "exampleCn": "考试前压力开始增加。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "3"
   },
   {
     "id": 2021,
@@ -30208,10 +30653,15 @@
     "exampleCn": "博物馆展出了一件古老的象牙雕刻。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 2042,
@@ -30298,10 +30748,15 @@
     "exampleCn": "寄生虫生活在另一种生物体表或体内。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 2048,
@@ -30373,10 +30828,15 @@
     "exampleCn": "鱼类是脊椎动物，因为它们有脊椎。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2053,
@@ -30403,10 +30863,12 @@
     "exampleCn": "河流把沉积物带向大海。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "3"
   },
   {
     "id": 2055,
@@ -30733,10 +31195,12 @@
     "exampleCn": "水在炎热天气中会蒸发得更快。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "4"
   },
   {
     "id": 2077,
@@ -30808,10 +31272,12 @@
     "exampleCn": "天文学帮助我们了解恒星和行星。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "10"
   },
   {
     "id": 2082,
@@ -31230,10 +31696,12 @@
     "exampleCn": "旅游业在夏季达到高峰。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "3"
   },
   {
     "id": 2110,
@@ -31684,10 +32152,15 @@
     "exampleCn": "农民储存干草以备冬天使用。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2140,
@@ -31879,10 +32352,12 @@
     "exampleCn": "很少有植物能在贫瘠的土壤中生存。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "4"
   },
   {
     "id": 2153,
@@ -32074,10 +32549,15 @@
     "exampleCn": "一些植物通过种子繁殖。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2166,
@@ -32104,10 +32584,15 @@
     "exampleCn": "这项新法律成为变革的催化剂。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2168,
@@ -32239,10 +32724,15 @@
     "exampleCn": "这位生态学家研究森林中的变化。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2177,
@@ -32346,10 +32836,15 @@
     "exampleCn": "那朵花有小小的紫色花瓣。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2184,
@@ -33231,10 +33726,12 @@
     "exampleCn": "一大块冰从冰川上断裂下来。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "10"
   },
   {
     "id": 2243,
@@ -33261,10 +33758,12 @@
     "exampleCn": "不要用脏手揉眼睛。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "9"
   },
   {
     "id": 2245,
@@ -33306,10 +33805,15 @@
     "exampleCn": "汤里加入了芳香的草药。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2248,
@@ -33473,10 +33977,12 @@
     "exampleCn": "清晨，霜覆盖了草地。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "3"
   },
   {
     "id": 2259,
@@ -33700,10 +34206,15 @@
     "exampleCn": "这座旧建筑在多年无人维护后开始衰败。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2274,
@@ -34602,10 +35113,15 @@
     "exampleCn": "团队以最大努力工作。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2334,
@@ -34722,10 +35238,12 @@
     "exampleCn": "月食发生在地球挡住照向月球的阳光时。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "4"
   },
   {
     "id": 2342,
@@ -35039,10 +35557,12 @@
     "exampleCn": "大雨可能会淹没低洼田地。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "4"
   },
   {
     "id": 2363,
@@ -35054,10 +35574,15 @@
     "exampleCn": "一群鸟飞过湖面。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2364,
@@ -35159,10 +35684,15 @@
     "exampleCn": "这座城市计划将废弃土地重新利用为公园。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2371,
@@ -35251,10 +35781,15 @@
     "exampleCn": "光合作用是植物制造养分的一种机制。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2377,
@@ -35311,10 +35846,12 @@
     "exampleCn": "这个圆的半径是五厘米。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "10"
   },
   {
     "id": 2381,
@@ -35446,10 +35983,15 @@
     "exampleCn": "放学后孩子们在草坪上玩耍。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2390,
@@ -35626,10 +36168,15 @@
     "exampleCn": "人类和猴子都属于灵长类动物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2402,
@@ -36378,10 +36925,12 @@
     "exampleCn": "这幅古画受到的损坏是不可逆的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "3"
   },
   {
     "id": 2452,
@@ -36543,10 +37092,15 @@
     "exampleCn": "这个岛上有别处没有的独特植物群。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2463,
@@ -36678,10 +37232,12 @@
     "exampleCn": "生物学家仔细检查了这个植物标本。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "10"
   },
   {
     "id": 2472,
@@ -36815,10 +37371,15 @@
     "exampleCn": "鸟类求偶常常包括鲜艳的展示行为。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2481,
@@ -36830,10 +37391,15 @@
     "exampleCn": "农民在秋天播种小麦。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2482,
@@ -37010,10 +37576,15 @@
     "exampleCn": "一股烟柱从工厂升起。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2494,
@@ -37100,10 +37671,12 @@
     "exampleCn": "工人清除了受损道路上的碎片。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "4"
   },
   {
     "id": 2500,
@@ -37190,10 +37763,12 @@
     "exampleCn": "水在零摄氏度结冰。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "3"
   },
   {
     "id": 2506,
@@ -37447,10 +38022,15 @@
     "exampleCn": "树叶分解后会肥沃土壤。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2523,
@@ -37492,10 +38072,15 @@
     "exampleCn": "虚假信息会削弱公众信任。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2526,
@@ -37657,10 +38242,15 @@
     "exampleCn": "那堵旧墙爬满了绿色藤蔓。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2537,
@@ -37717,10 +38307,15 @@
     "exampleCn": "工程师试图高效利用风能。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 2541,
@@ -37762,10 +38357,12 @@
     "exampleCn": "这种化合物在室温下很稳定。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "10"
   },
   {
     "id": 2544,
@@ -37899,10 +38496,15 @@
     "exampleCn": "这个种植园种植棉花和甘蔗。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2553,
@@ -38049,10 +38651,12 @@
     "exampleCn": "小农场位于城市边缘。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "3"
   },
   {
     "id": 2563,
@@ -38064,10 +38668,15 @@
     "exampleCn": "这项新规定可能侵犯个人自由。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2564,
@@ -38079,10 +38688,12 @@
     "exampleCn": "学生们学习人体心脏的结构。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "9"
   },
   {
     "id": 2565,
@@ -38186,10 +38797,15 @@
     "exampleCn": "春天野花覆盖了草地。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2572,
@@ -38246,10 +38862,15 @@
     "exampleCn": "司机在路口按响了喇叭。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 2576,
@@ -38261,10 +38882,15 @@
     "exampleCn": "一堆石头挡住了小路。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2577,
@@ -38351,10 +38977,15 @@
     "exampleCn": "蛇是一种爬行动物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2583,
@@ -38891,10 +39522,12 @@
     "exampleCn": "孩子们狼吞虎咽地吃掉了新鲜面包。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "9"
   },
   {
     "id": 2619,
@@ -39146,10 +39779,15 @@
     "exampleCn": "农民在山坡上修建了梯田。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2636,
@@ -39176,10 +39814,15 @@
     "exampleCn": "这朵花有一根长长的绿色茎。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2638,
@@ -39823,10 +40466,12 @@
     "exampleCn": "蒸汽从一个小通风口逸出。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "10"
   },
   {
     "id": 2681,
@@ -39838,10 +40483,15 @@
     "exampleCn": "玫瑰茎上布满了刺。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2682,
@@ -39853,10 +40503,15 @@
     "exampleCn": "许多鱼在浅水中产卵。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2683,
@@ -39930,10 +40585,12 @@
     "exampleCn": "星际尘埃存在于恒星之间。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "10"
   },
   {
     "id": 2688,
@@ -39945,10 +40602,15 @@
     "exampleCn": "许多药物来源于植物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2689,
@@ -39975,10 +40637,15 @@
     "exampleCn": "她从花园里摘了一朵花。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2691,
@@ -40020,10 +40687,12 @@
     "exampleCn": "河流把淤泥带到了三角洲。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "3"
   },
   {
     "id": 2694,
@@ -41040,10 +41709,12 @@
     "exampleCn": "一缕烟从烟囱升起。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "4"
   },
   {
     "id": 2762,
@@ -41070,10 +41741,15 @@
     "exampleCn": "艺术家常用炭笔进行快速素描。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2764,
@@ -41490,10 +42166,12 @@
     "exampleCn": "过渡期间一些冲突是不可避免的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "3"
   },
   {
     "id": 2792,
@@ -41520,10 +42198,12 @@
     "exampleCn": "庄稼被冰雹损坏了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "3"
   },
   {
     "id": 2794,
@@ -41700,10 +42380,12 @@
     "exampleCn": "这些动物是在圈养条件下繁殖的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "9"
   },
   {
     "id": 2806,
@@ -41715,10 +42397,15 @@
     "exampleCn": "干旱是该地区长期存在的问题。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2807,
@@ -41910,10 +42597,12 @@
     "exampleCn": "徒步者沿着山脊走向山顶。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "3"
   },
   {
     "id": 2820,
@@ -42765,10 +43454,12 @@
     "exampleCn": "雪在温暖的阳光下开始融化。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "3"
   },
   {
     "id": 2877,
@@ -43157,10 +43848,15 @@
     "exampleCn": "种子在温暖潮湿的土壤中发芽更快。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2903,
@@ -43247,10 +43943,15 @@
     "exampleCn": "这个实验产生了有用的结果。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2909,
@@ -43292,10 +43993,15 @@
     "exampleCn": "请把椅子靠墙叠起来。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2912,
@@ -43382,10 +44088,12 @@
     "exampleCn": "科学家们从天文台观察那颗彗星。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "10"
   },
   {
     "id": 2918,
@@ -43442,10 +44150,12 @@
     "exampleCn": "一次日食吸引了成千上万的观察者。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "4"
   },
   {
     "id": 2922,
@@ -43532,10 +44242,12 @@
     "exampleCn": "旅行者穿过了一片荒凉的平原。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "3"
   },
   {
     "id": 2928,
@@ -43877,10 +44589,12 @@
     "exampleCn": "可见光是电磁波谱的一部分。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "10"
   },
   {
     "id": 2951,
@@ -43937,10 +44651,12 @@
     "exampleCn": "化学物质可能污染饮用水。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "3"
   },
   {
     "id": 2955,
@@ -43952,10 +44668,15 @@
     "exampleCn": "一只乌鸦落在栅栏上。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 2956,
@@ -44282,10 +45003,12 @@
     "exampleCn": "运动可以提高新陈代谢。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "9"
   },
   {
     "id": 2978,
@@ -44357,10 +45080,15 @@
     "exampleCn": "蜜蜂把花粉从一朵花带到另一朵花。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2983,
@@ -44612,10 +45340,12 @@
     "exampleCn": "在沙漠中发现了一块陨石。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "10"
   },
   {
     "id": 3000,
@@ -44657,10 +45387,15 @@
     "exampleCn": "野牛曾经成群地在平原上漫游。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 3003,
@@ -44792,10 +45527,15 @@
     "exampleCn": "价格会随供求关系波动。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 3012,
@@ -45137,10 +45877,15 @@
     "exampleCn": "她是该镇最早定居者之一的后代。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 3035,
@@ -45212,10 +45957,15 @@
     "exampleCn": "在线学习平台开始迅速增多。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 3040,
@@ -45242,10 +45992,12 @@
     "exampleCn": "经过多年的照料，这只曾经野生的动物变得温顺了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "9"
   },
   {
     "id": 3042,
@@ -45272,10 +46024,12 @@
     "exampleCn": "幼树容易受到严寒的伤害。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "9"
   },
   {
     "id": 3044,
@@ -45542,10 +46296,15 @@
     "exampleCn": "珊瑚礁为许多海洋物种提供栖息地。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 3062,
@@ -45557,10 +46316,12 @@
     "exampleCn": "农民把干草储存在谷仓里。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "9"
   },
   {
     "id": 3063,
@@ -45902,10 +46663,15 @@
     "exampleCn": "一群蜜蜂聚集在树旁。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 3086,
@@ -46129,10 +46895,12 @@
     "exampleCn": "考察队从北极采集了样本。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "10"
   },
   {
     "id": 3101,
@@ -46249,10 +47017,15 @@
     "exampleCn": "这个重物用于平衡另一侧的负载。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 3109,
@@ -46279,10 +47052,15 @@
     "exampleCn": "植物利用光合作用把阳光转化为能量。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 3111,
@@ -46384,10 +47162,15 @@
     "exampleCn": "那只鸟用尖尖的喙啄开种子。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 3118,
@@ -47110,10 +47893,12 @@
     "exampleCn": "陆生动物必须适应陆地生活。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "10"
   },
   {
     "id": 3166,
@@ -47170,10 +47955,15 @@
     "exampleCn": "园艺学关注水果、蔬菜和观赏植物的种植。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 3170,
@@ -47200,10 +47990,12 @@
     "exampleCn": "古代天文学家仔细研究天体运动。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "10"
   },
   {
     "id": 3172,
@@ -47350,10 +48142,15 @@
     "exampleCn": "该岛的动物群包括稀有鸟类和昆虫。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 3182,
@@ -47727,10 +48524,12 @@
     "exampleCn": "月球表面覆盖着大小不同的陨石坑。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "10"
   },
   {
     "id": 3207,
@@ -48121,10 +48920,12 @@
     "exampleCn": "探险者在北极面对严寒的气温。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "3"
   },
   {
     "id": 3233,
@@ -52100,10 +52901,12 @@
     "exampleCn": "钠离子带正电荷。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "10"
   },
   {
     "id": 3498,
@@ -52130,10 +52933,12 @@
     "exampleCn": "肾脏从血液中排泄废物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "9"
   },
   {
     "id": 3500,
@@ -52160,10 +52965,15 @@
     "exampleCn": "一只野兔快速跑过田野。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 3502,
@@ -52550,10 +53360,12 @@
     "exampleCn": "化学反应产生了白色沉淀物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "4"
   },
   {
     "id": 3528,
@@ -52625,10 +53437,15 @@
     "exampleCn": "这种酶帮助身体分解食物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 3533,
@@ -52655,10 +53472,15 @@
     "exampleCn": "一只鹰在田野上空盘旋。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 3535,
@@ -54134,5 +54956,3823 @@
       "ielts"
     ],
     "ieltsList": "2"
+  },
+  {
+    "id": 3637,
+    "word": "freeze",
+    "phonetic": "friːz",
+    "pos": "v/n.",
+    "meaning": "冻结/冰冻期",
+    "example": "The lake freezes over every winter.",
+    "exampleCn": "这个湖每年冬天都会结冰。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3638,
+    "word": "tremble",
+    "phonetic": "ˈtrembl",
+    "pos": "v/n.",
+    "meaning": "颤抖",
+    "example": "She began to tremble with fear.",
+    "exampleCn": "她吓得开始发抖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3639,
+    "word": "shiver",
+    "phonetic": "ˈʃɪvə",
+    "pos": "v.",
+    "meaning": "颤抖/哆嗦",
+    "example": "He shivered in the cold wind.",
+    "exampleCn": "他在寒风中瑟瑟发抖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3640,
+    "word": "thunder",
+    "phonetic": "ˈθʌndə",
+    "pos": "v/n.",
+    "meaning": "打雷/雷声",
+    "example": "Thunder rumbled in the distance.",
+    "exampleCn": "远处雷声隆隆。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3641,
+    "word": "lightning",
+    "phonetic": "ˈlaɪtnɪŋ",
+    "pos": "n/adj.",
+    "meaning": "闪电/闪电般的",
+    "example": "Lightning struck the old tree during the storm.",
+    "exampleCn": "暴风雨中闪电击中了那棵老树。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3642,
+    "word": "stormy",
+    "phonetic": "ˈstɔːmi",
+    "pos": "adj.",
+    "meaning": "暴风雨的/激烈的",
+    "example": "The stormy sea made sailing impossible.",
+    "exampleCn": "暴风雨中的海面使航行无法进行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3643,
+    "word": "downpour",
+    "phonetic": "ˈdaʊnpɔː",
+    "pos": "n.",
+    "meaning": "倾盆大雨",
+    "example": "We were caught in a sudden downpour.",
+    "exampleCn": "我们被一场突如其来的暴雨淋了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3644,
+    "word": "rainfall",
+    "phonetic": "ˈreɪnfɔːl",
+    "pos": "n.",
+    "meaning": "降雨量",
+    "example": "The annual rainfall in this region is very high.",
+    "exampleCn": "这个地区的年降雨量非常高。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3645,
+    "word": "sprinkle",
+    "phonetic": "ˈsprɪŋkl",
+    "pos": "v/n.",
+    "meaning": "洒/撒/少量",
+    "example": "Sprinkle some salt over the vegetables.",
+    "exampleCn": "在蔬菜上撒一些盐。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3646,
+    "word": "rainbow",
+    "phonetic": "ˈreɪnbəʊ",
+    "pos": "n.",
+    "meaning": "彩虹",
+    "example": "A beautiful rainbow appeared after the rain.",
+    "exampleCn": "雨后出现了一道美丽的彩虹。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3647,
+    "word": "shower",
+    "phonetic": "ˈʃaʊə",
+    "pos": "n.",
+    "meaning": "阵雨/淋浴",
+    "example": "There will be scattered showers this afternoon.",
+    "exampleCn": "今天下午将有零星阵雨。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3648,
+    "word": "temperature",
+    "phonetic": "ˈtemprətʃə",
+    "pos": "n.",
+    "meaning": "温度",
+    "example": "The temperature dropped below zero last night.",
+    "exampleCn": "昨晚气温降到了零度以下。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3649,
+    "word": "forecast",
+    "phonetic": "ˈfɔːkɑːst",
+    "pos": "v/n.",
+    "meaning": "预报",
+    "example": "The weather forecast predicts rain for tomorrow.",
+    "exampleCn": "天气预报预测明天有雨。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3650,
+    "word": "mountain",
+    "phonetic": "ˈmaʊntɪn",
+    "pos": "n.",
+    "meaning": "山/山脉",
+    "example": "Mount Everest is the highest mountain in the world.",
+    "exampleCn": "珠穆朗玛峰是世界上最高的山。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3651,
+    "word": "range",
+    "phonetic": "reɪndʒ",
+    "pos": "n.",
+    "meaning": "山脉/范围/幅度",
+    "example": "The mountain range stretches for hundreds of miles.",
+    "exampleCn": "这条山脉绵延数百英里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3652,
+    "word": "valley",
+    "phonetic": "ˈvæli",
+    "pos": "n.",
+    "meaning": "山谷",
+    "example": "The river flows through the valley.",
+    "exampleCn": "河流穿过山谷。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3653,
+    "word": "hillside",
+    "phonetic": "ˈhɪlsaɪd",
+    "pos": "n.",
+    "meaning": "山坡",
+    "example": "The hillside was covered with wildflowers.",
+    "exampleCn": "山坡上开满了野花。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3654,
+    "word": "southern",
+    "phonetic": "ˈsʌðən",
+    "pos": "adj.",
+    "meaning": "南方的",
+    "example": "The southern part of the country is warmer.",
+    "exampleCn": "这个国家的南部更温暖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3655,
+    "word": "southeast",
+    "phonetic": "ˌsaʊθˈiːst",
+    "pos": "n/adj.",
+    "meaning": "东南/东南的",
+    "example": "The storm is moving toward the southeast.",
+    "exampleCn": "风暴正朝东南方向移动。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3656,
+    "word": "southwest",
+    "phonetic": "ˌsaʊθˈwest",
+    "pos": "n/adj.",
+    "meaning": "西南/西南的",
+    "example": "The southwest wind brought warm air.",
+    "exampleCn": "西南风带来了温暖的空气。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3657,
+    "word": "northeast",
+    "phonetic": "ˌnɔːθˈiːst",
+    "pos": "n/adj.",
+    "meaning": "东北/东北的",
+    "example": "The northeast region is known for its forests.",
+    "exampleCn": "东北地区以其森林而闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3658,
+    "word": "northwest",
+    "phonetic": "ˌnɔːθˈwest",
+    "pos": "n/adj.",
+    "meaning": "西北/西北的",
+    "example": "The northwest coast is very rugged.",
+    "exampleCn": "西北海岸非常崎岖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3659,
+    "word": "eastern",
+    "phonetic": "ˈiːstən",
+    "pos": "adj.",
+    "meaning": "东方的",
+    "example": "The eastern sky began to brighten at dawn.",
+    "exampleCn": "黎明时分，东方的天空开始变亮。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3660,
+    "word": "oriental",
+    "phonetic": "ˌɔːriˈentl",
+    "pos": "n.",
+    "meaning": "东方人/东方的",
+    "example": "Oriental art has a long and rich history.",
+    "exampleCn": "东方艺术有着悠久而丰富的历史。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3661,
+    "word": "irregularly",
+    "phonetic": "ɪˈreɡjələli",
+    "pos": "adv.",
+    "meaning": "不规则地",
+    "example": "The heart was beating irregularly.",
+    "exampleCn": "心脏跳动得不规律。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3662,
+    "word": "muddy",
+    "phonetic": "ˈmʌdi",
+    "pos": "adj.",
+    "meaning": "泥泞的/模糊的",
+    "example": "The path was muddy after the rain.",
+    "exampleCn": "雨后小路变得泥泞。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3663,
+    "word": "dirt",
+    "phonetic": "dɜːt",
+    "pos": "n.",
+    "meaning": "泥土/污垢",
+    "example": "His hands were covered in dirt from the garden.",
+    "exampleCn": "他的手上沾满了花园里的泥土。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3664,
+    "word": "suburb",
+    "phonetic": "ˈsʌbɜːb",
+    "pos": "n.",
+    "meaning": "郊区",
+    "example": "They moved to the suburbs to raise a family.",
+    "exampleCn": "他们搬到了郊区养家。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3665,
+    "word": "outskirts",
+    "phonetic": "ˈaʊtskɜːts",
+    "pos": "n.",
+    "meaning": "市郊/边缘地带",
+    "example": "The factory is located on the outskirts of town.",
+    "exampleCn": "工厂位于城镇的边缘地带。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3666,
+    "word": "distant",
+    "phonetic": "ˈdɪstənt",
+    "pos": "adj.",
+    "meaning": "遥远的/疏远的",
+    "example": "We could hear the distant sound of thunder.",
+    "exampleCn": "我们能听到远处的雷声。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3667,
+    "word": "pollution",
+    "phonetic": "pəˈluːʃn",
+    "pos": "n.",
+    "meaning": "污染",
+    "example": "Air pollution is a serious problem in many cities.",
+    "exampleCn": "空气污染是许多城市面临的一个严重问题。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3668,
+    "word": "geology",
+    "phonetic": "dʒiˈɒlədʒi",
+    "pos": "n.",
+    "meaning": "地质学",
+    "example": "He studied geology at university.",
+    "exampleCn": "他在大学学习地质学。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3"
+  },
+  {
+    "id": 3669,
+    "word": "plate",
+    "phonetic": "pleɪt",
+    "pos": "n.",
+    "meaning": "板块/盘子",
+    "example": "The Pacific Plate is moving slowly westward.",
+    "exampleCn": "太平洋板块正缓慢向西移动。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3670,
+    "word": "gap",
+    "phonetic": "ɡæp",
+    "pos": "n.",
+    "meaning": "缺口/差距/缝隙",
+    "example": "There is a growing gap between rich and poor.",
+    "exampleCn": "贫富之间的差距越来越大。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3671,
+    "word": "splendid",
+    "phonetic": "ˈsplendɪd",
+    "pos": "adj.",
+    "meaning": "壮丽的/极好的",
+    "example": "The view from the top of the mountain was splendid.",
+    "exampleCn": "山顶的景色壮丽无比。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3672,
+    "word": "grand",
+    "phonetic": "ɡrænd",
+    "pos": "adj.",
+    "meaning": "宏伟的/盛大的",
+    "example": "The grand palace was built in the 17th century.",
+    "exampleCn": "那座宏伟的宫殿建于17世纪。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3673,
+    "word": "super",
+    "phonetic": "ˈsuːpə",
+    "pos": "adj.",
+    "meaning": "极好的/超级的",
+    "example": "The concert was absolutely super.",
+    "exampleCn": "那场音乐会实在是太棒了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3674,
+    "word": "interesting",
+    "phonetic": "ˈɪntrəstɪŋ",
+    "pos": "adj.",
+    "meaning": "有趣的",
+    "example": "The museum has many interesting exhibits.",
+    "exampleCn": "博物馆有许多有趣的展品。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3675,
+    "word": "wilderness",
+    "phonetic": "ˈwɪldənəs",
+    "pos": "n.",
+    "meaning": "荒野/未开发地区",
+    "example": "They ventured deep into the wilderness.",
+    "exampleCn": "他们冒险深入荒野。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3676,
+    "word": "desert",
+    "phonetic": "ˈdezət",
+    "pos": "n/v.",
+    "meaning": "沙漠/抛弃",
+    "example": "The Sahara is the largest hot desert in the world.",
+    "exampleCn": "撒哈拉是世界上最大的热沙漠。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3677,
+    "word": "fertilise",
+    "phonetic": "ˈfɜːtɪlaɪz",
+    "pos": "v.",
+    "meaning": "施肥/使肥沃",
+    "example": "Farmers fertilise the fields every spring.",
+    "exampleCn": "农民每年春天给田地施肥。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3678,
+    "word": "sunrise",
+    "phonetic": "ˈsʌnraɪz",
+    "pos": "n.",
+    "meaning": "日出",
+    "example": "We woke up early to watch the sunrise.",
+    "exampleCn": "我们早早起床去看日出。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3679,
+    "word": "sunset",
+    "phonetic": "ˈsʌnset",
+    "pos": "n.",
+    "meaning": "日落",
+    "example": "The sunset painted the sky in shades of orange.",
+    "exampleCn": "日落将天空染成了橙色。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3680,
+    "word": "dusk",
+    "phonetic": "dʌsk",
+    "pos": "n.",
+    "meaning": "黄昏",
+    "example": "The birds return to their nests at dusk.",
+    "exampleCn": "鸟儿在黄昏时归巢。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3681,
+    "word": "heaven",
+    "phonetic": "ˈhevn",
+    "pos": "n.",
+    "meaning": "天堂/天空",
+    "example": "The stars shone brightly in the heavens.",
+    "exampleCn": "星星在天空中闪闪发光。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3682,
+    "word": "paradise",
+    "phonetic": "ˈpærədaɪs",
+    "pos": "n.",
+    "meaning": "天堂/乐园",
+    "example": "The island is a tropical paradise.",
+    "exampleCn": "这座岛屿是一个热带天堂。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3683,
+    "word": "sunshine",
+    "phonetic": "ˈsʌnʃaɪn",
+    "pos": "n.",
+    "meaning": "阳光",
+    "example": "The children played outside in the sunshine.",
+    "exampleCn": "孩子们在阳光下在外面玩耍。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3684,
+    "word": "shadow",
+    "phonetic": "ˈʃædəʊ",
+    "pos": "n.",
+    "meaning": "影子/阴影",
+    "example": "The building cast a long shadow across the street.",
+    "exampleCn": "大楼在街道上投下了长长的影子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3685,
+    "word": "vapour",
+    "phonetic": "ˈveɪpə",
+    "pos": "n.",
+    "meaning": "蒸汽/水蒸气",
+    "example": "Water vapour rises from the hot spring.",
+    "exampleCn": "水蒸气从温泉中升起。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3686,
+    "word": "reservoir",
+    "phonetic": "ˈrezəvwɑː",
+    "pos": "n.",
+    "meaning": "水库/储备",
+    "example": "The reservoir supplies water to the entire city.",
+    "exampleCn": "这个水库为整个城市供水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3687,
+    "word": "waterfall",
+    "phonetic": "ˈwɔːtəfɔːl",
+    "pos": "n.",
+    "meaning": "瀑布",
+    "example": "The waterfall plunged over a hundred metres into the pool below.",
+    "exampleCn": "瀑布从一百多米高处倾泻到下面的水潭中。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3688,
+    "word": "spring",
+    "phonetic": "sprɪŋ",
+    "pos": "n.",
+    "meaning": "泉水/春天/弹簧",
+    "example": "The village gets its water from a natural spring.",
+    "exampleCn": "这个村庄从一处天然泉水中取水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3689,
+    "word": "dew",
+    "phonetic": "djuː",
+    "pos": "n.",
+    "meaning": "露水",
+    "example": "The grass was wet with morning dew.",
+    "exampleCn": "草地被晨露打湿了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3690,
+    "word": "gush",
+    "phonetic": "ɡʌʃ",
+    "pos": "v/n.",
+    "meaning": "涌出",
+    "example": "Water gushed from the broken pipe.",
+    "exampleCn": "水从破裂的管道中涌出。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3691,
+    "word": "intensity",
+    "phonetic": "ɪnˈtensəti",
+    "pos": "n.",
+    "meaning": "强度/强烈",
+    "example": "The intensity of the earthquake surprised everyone.",
+    "exampleCn": "地震的强度令所有人感到惊讶。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3692,
+    "word": "intensive",
+    "phonetic": "ɪnˈtensɪv",
+    "pos": "adj.",
+    "meaning": "密集的/强化的",
+    "example": "He took an intensive English course over the summer.",
+    "exampleCn": "他在暑假期间参加了一个英语强化课程。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3693,
+    "word": "flash",
+    "phonetic": "flæʃ",
+    "pos": "v/n.",
+    "meaning": "闪光",
+    "example": "Lightning flashed across the sky.",
+    "exampleCn": "闪电划过天空。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3694,
+    "word": "float",
+    "phonetic": "fləʊt",
+    "pos": "v.",
+    "meaning": "漂浮/浮动",
+    "example": "The boat floated gently on the calm water.",
+    "exampleCn": "小船在平静的水面上轻轻漂浮。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3695,
+    "word": "environment",
+    "phonetic": "ɪnˈvaɪrənmənt",
+    "pos": "n.",
+    "meaning": "环境",
+    "example": "We must protect the environment for future generations.",
+    "exampleCn": "我们必须为后代保护环境。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3696,
+    "word": "surrounding",
+    "phonetic": "səˈraʊndɪŋ",
+    "pos": "adj.",
+    "meaning": "周围的",
+    "example": "The surrounding countryside is very beautiful.",
+    "exampleCn": "周围的乡村非常美丽。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3697,
+    "word": "condition",
+    "phonetic": "kənˈdɪʃn",
+    "pos": "n.",
+    "meaning": "条件/状况",
+    "example": "The living conditions in the camp were very poor.",
+    "exampleCn": "营地的生活条件非常差。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3698,
+    "word": "situation",
+    "phonetic": "ˌsɪtʃuˈeɪʃn",
+    "pos": "n.",
+    "meaning": "情况/形势",
+    "example": "The economic situation is improving slowly.",
+    "exampleCn": "经济形势正在缓慢改善。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3699,
+    "word": "nature",
+    "phonetic": "ˈneɪtʃə",
+    "pos": "n.",
+    "meaning": "自然/本质",
+    "example": "Nature is full of wonders waiting to be discovered.",
+    "exampleCn": "大自然充满了等待被发现的奇观。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3700,
+    "word": "natural",
+    "phonetic": "ˈnætʃrəl",
+    "pos": "adj.",
+    "meaning": "自然的/天生的",
+    "example": "Earthquakes are natural phenomena.",
+    "exampleCn": "地震是自然现象。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3701,
+    "word": "synthetic",
+    "phonetic": "sɪnˈθetɪk",
+    "pos": "adj.",
+    "meaning": "合成的/人造的",
+    "example": "Synthetic fibres are widely used in clothing.",
+    "exampleCn": "合成纤维广泛用于服装中。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3702,
+    "word": "petrol",
+    "phonetic": "ˈpetrəl",
+    "pos": "n.",
+    "meaning": "汽油",
+    "example": "The price of petrol has gone up again.",
+    "exampleCn": "汽油价格又涨了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3703,
+    "word": "gas",
+    "phonetic": "ɡæs",
+    "pos": "n.",
+    "meaning": "气体/煤气/汽油",
+    "example": "Natural gas is a cleaner fuel than coal.",
+    "exampleCn": "天然气是比煤炭更清洁的燃料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4"
+  },
+  {
+    "id": 3704,
+    "word": "respire",
+    "phonetic": "rɪˈspaɪə",
+    "pos": "v.",
+    "meaning": "呼吸",
+    "example": "All living organisms need to respire.",
+    "exampleCn": "所有生物都需要呼吸。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3705,
+    "word": "dioxide",
+    "phonetic": "daɪˈɒksaɪd",
+    "pos": "n.",
+    "meaning": "二氧化碳",
+    "example": "Carbon dioxide is a greenhouse gas.",
+    "exampleCn": "二氧化碳是一种温室气体。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3706,
+    "word": "eco-friendly",
+    "phonetic": "ˈiːkəʊ ˈfrendli",
+    "pos": "adj.",
+    "meaning": "环保的",
+    "example": "They use eco-friendly packaging for their products.",
+    "exampleCn": "他们的产品使用环保包装。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3707,
+    "word": "genetics",
+    "phonetic": "dʒæˈnetɪks",
+    "pos": "n.",
+    "meaning": "遗传学",
+    "example": "Genetics plays a key role in modern medicine.",
+    "exampleCn": "遗传学在现代医学中起着关键作用。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3708,
+    "word": "mutation",
+    "phonetic": "mjuːˈteɪʃn",
+    "pos": "n.",
+    "meaning": "突变/变异",
+    "example": "A gene mutation can cause the disease.",
+    "exampleCn": "基因突变可能导致这种疾病。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3709,
+    "word": "hybridisation",
+    "phonetic": "ˌhaɪbrɪdaɪˈzeɪʃn",
+    "pos": "n.",
+    "meaning": "杂交",
+    "example": "Hybridisation can produce stronger crop varieties.",
+    "exampleCn": "杂交可以产生更强的作物品种。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3710,
+    "word": "pick",
+    "phonetic": "pɪk",
+    "pos": "v.",
+    "meaning": "采摘/挑选",
+    "example": "They went to the farm to pick strawberries.",
+    "exampleCn": "他们去农场摘草莓。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3711,
+    "word": "arable",
+    "phonetic": "ˈærəbl",
+    "pos": "adj.",
+    "meaning": "可耕种的",
+    "example": "Much of the arable land is used for growing wheat.",
+    "exampleCn": "大部分可耕地用于种植小麦。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3712,
+    "word": "plough",
+    "phonetic": "plaʊ",
+    "pos": "v/n.",
+    "meaning": "犁地/犁",
+    "example": "Farmers plough the fields before planting.",
+    "exampleCn": "农民在种植前先犁地。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3713,
+    "word": "spade",
+    "phonetic": "speɪd",
+    "pos": "n.",
+    "meaning": "铲子/锹",
+    "example": "He dug a hole with a spade.",
+    "exampleCn": "他用铲子挖了一个坑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3714,
+    "word": "rake",
+    "phonetic": "reɪk",
+    "pos": "n/v.",
+    "meaning": "耙子/耙平",
+    "example": "She used a rake to gather the fallen leaves.",
+    "exampleCn": "她用耙子把落叶聚拢起来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3715,
+    "word": "vase",
+    "phonetic": "vɑːz",
+    "pos": "n.",
+    "meaning": "花瓶",
+    "example": "She put the roses in a glass vase.",
+    "exampleCn": "她把玫瑰放进了一个玻璃花瓶里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3716,
+    "word": "sunlight",
+    "phonetic": "ˈsʌnlaɪt",
+    "pos": "n.",
+    "meaning": "阳光",
+    "example": "The room was filled with warm sunlight.",
+    "exampleCn": "房间里充满了温暖的阳光。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3717,
+    "word": "short-day",
+    "phonetic": "ʃɔːt deɪ",
+    "pos": "adj.",
+    "meaning": "短日照的",
+    "example": "Short-day plants flower when days are shorter.",
+    "exampleCn": "短日照植物在白天较短时开花。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3718,
+    "word": "shade-tolerant",
+    "phonetic": "ʃeɪd ˈtɒlərənt",
+    "pos": "adj.",
+    "meaning": "耐阴的",
+    "example": "Ferns are shade-tolerant plants.",
+    "exampleCn": "蕨类植物是耐阴植物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3719,
+    "word": "fungus",
+    "phonetic": "ˈfʌŋɡəs",
+    "pos": "n.",
+    "meaning": "真菌",
+    "example": "Mushrooms are a type of fungus.",
+    "exampleCn": "蘑菇是一种真菌。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3720,
+    "word": "mould",
+    "phonetic": "məʊld",
+    "pos": "n/v.",
+    "meaning": "霉菌/塑造",
+    "example": "There was mould growing on the old bread.",
+    "exampleCn": "旧面包上长了霉菌。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3721,
+    "word": "seed",
+    "phonetic": "siːd",
+    "pos": "n.",
+    "meaning": "种子",
+    "example": "She planted the seeds in rows.",
+    "exampleCn": "她将种子成排地种下。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3722,
+    "word": "burgeon",
+    "phonetic": "ˈbɜːdʒən",
+    "pos": "n/v.",
+    "meaning": "嫩芽/发芽/迅速生长",
+    "example": "New leaves burgeon in the spring.",
+    "exampleCn": "新叶在春天发芽。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3723,
+    "word": "flower",
+    "phonetic": "ˈflaʊə",
+    "pos": "n/v.",
+    "meaning": "花/开花",
+    "example": "The cherry trees flower in early spring.",
+    "exampleCn": "樱花树在早春开花。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3724,
+    "word": "ripen",
+    "phonetic": "ˈraɪpən",
+    "pos": "v.",
+    "meaning": "成熟",
+    "example": "The tomatoes will ripen in the sun.",
+    "exampleCn": "西红柿在阳光下会成熟。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3725,
+    "word": "fruit",
+    "phonetic": "fruːt",
+    "pos": "v.",
+    "meaning": "结果实",
+    "example": "The apple trees fruit in late summer.",
+    "exampleCn": "苹果树在夏末结果。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3726,
+    "word": "wither",
+    "phonetic": "ˈwɪðə",
+    "pos": "v.",
+    "meaning": "枯萎/凋谢",
+    "example": "The flowers began to wither without water.",
+    "exampleCn": "没有水，花开始枯萎了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3727,
+    "word": "stale",
+    "phonetic": "steɪl",
+    "pos": "adj.",
+    "meaning": "不新鲜的/陈腐的",
+    "example": "The bread has gone stale.",
+    "exampleCn": "面包已经不新鲜了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3728,
+    "word": "rainforest",
+    "phonetic": "ˈreɪnˌfɒrɪst",
+    "pos": "n.",
+    "meaning": "雨林",
+    "example": "The Amazon rainforest is the largest in the world.",
+    "exampleCn": "亚马逊雨林是世界上最大的雨林。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3729,
+    "word": "jungle",
+    "phonetic": "ˈdʒʌŋɡl",
+    "pos": "n.",
+    "meaning": "丛林",
+    "example": "They trekked through the dense jungle.",
+    "exampleCn": "他们徒步穿过了茂密的丛林。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3730,
+    "word": "field",
+    "phonetic": "fiːld",
+    "pos": "n.",
+    "meaning": "田野/领域",
+    "example": "The fields were golden with wheat.",
+    "exampleCn": "田野因小麦而一片金黄。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3731,
+    "word": "logo",
+    "phonetic": "ˈləʊɡəʊ",
+    "pos": "n.",
+    "meaning": "标志/商标",
+    "example": "The company changed its logo last year.",
+    "exampleCn": "公司去年更换了标志。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3732,
+    "word": "forestry",
+    "phonetic": "ˈfɒrɪstri",
+    "pos": "n.",
+    "meaning": "林业",
+    "example": "Forestry is an important industry in this region.",
+    "exampleCn": "林业在这个地区是一个重要产业。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3733,
+    "word": "bough",
+    "phonetic": "baʊ",
+    "pos": "n.",
+    "meaning": "大树枝",
+    "example": "The bough was heavy with ripe fruit.",
+    "exampleCn": "那根大树枝被成熟的果实压弯了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3734,
+    "word": "root",
+    "phonetic": "ruːt",
+    "pos": "n/v.",
+    "meaning": "根/生根",
+    "example": "The roots of the tree go deep into the ground.",
+    "exampleCn": "树的根深入地下。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3735,
+    "word": "straw",
+    "phonetic": "strɔː",
+    "pos": "n.",
+    "meaning": "稻草/吸管",
+    "example": "The animals slept on a bed of straw.",
+    "exampleCn": "动物们睡在稻草铺成的床上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3736,
+    "word": "reed",
+    "phonetic": "riːd",
+    "pos": "n.",
+    "meaning": "芦苇",
+    "example": "Reeds grow along the edge of the lake.",
+    "exampleCn": "芦苇生长在湖边。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3737,
+    "word": "grass",
+    "phonetic": "ɡrɑːs",
+    "pos": "n.",
+    "meaning": "草/草地",
+    "example": "The grass was wet with morning dew.",
+    "exampleCn": "草地被晨露打湿了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3738,
+    "word": "olive",
+    "phonetic": "ˈɒlɪv",
+    "pos": "n.",
+    "meaning": "橄榄/橄榄树",
+    "example": "Olive oil is a key ingredient in Mediterranean cooking.",
+    "exampleCn": "橄榄油是地中海烹饪中的关键食材。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3739,
+    "word": "pine",
+    "phonetic": "paɪn",
+    "pos": "n.",
+    "meaning": "松树",
+    "example": "The mountain was covered with pine trees.",
+    "exampleCn": "山上长满了松树。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3740,
+    "word": "tulip",
+    "phonetic": "ˈtjuːlɪp",
+    "pos": "n.",
+    "meaning": "郁金香",
+    "example": "The tulip fields in Holland are famous.",
+    "exampleCn": "荷兰的郁金香田很有名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3741,
+    "word": "mint",
+    "phonetic": "mɪnt",
+    "pos": "n.",
+    "meaning": "薄荷",
+    "example": "She added fresh mint leaves to the tea.",
+    "exampleCn": "她在茶里加了新鲜的薄荷叶。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3742,
+    "word": "alga",
+    "phonetic": "ˈælɡə",
+    "pos": "n.",
+    "meaning": "藻类",
+    "example": "Green algae grows on the surface of the pond.",
+    "exampleCn": "绿藻生长在池塘的表面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3743,
+    "word": "emission",
+    "phonetic": "ɪˈmɪʃn",
+    "pos": "n.",
+    "meaning": "排放/排放物",
+    "example": "Car emissions contribute to air pollution.",
+    "exampleCn": "汽车排放物加剧了空气污染。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3744,
+    "word": "circulation",
+    "phonetic": "ˌsɜːkjəˈleɪʃn",
+    "pos": "n.",
+    "meaning": "循环/流通",
+    "example": "Good blood circulation is important for health.",
+    "exampleCn": "良好的血液循环对健康很重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3745,
+    "word": "uptake",
+    "phonetic": "ˈʌpteɪk",
+    "pos": "n.",
+    "meaning": "吸收/摄取",
+    "example": "The plant's uptake of nutrients increases in spring.",
+    "exampleCn": "植物对养分的吸收在春天增加。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3746,
+    "word": "energy",
+    "phonetic": "ˈenədʒi",
+    "pos": "n.",
+    "meaning": "能量/能源",
+    "example": "Solar panels convert sunlight into energy.",
+    "exampleCn": "太阳能电池板将阳光转化为能量。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3747,
+    "word": "surroundings",
+    "phonetic": "səˈraʊndɪŋz",
+    "pos": "n.",
+    "meaning": "环境/周围",
+    "example": "The hotel blends in with its natural surroundings.",
+    "exampleCn": "酒店与自然环境融为一体。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3748,
+    "word": "bush fire",
+    "phonetic": "bʊʃ ˈfaɪə",
+    "pos": "n.",
+    "meaning": "丛林火灾/野火",
+    "example": "The bush fire destroyed thousands of hectares of forest.",
+    "exampleCn": "丛林火灾烧毁了数千公顷的森林。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3749,
+    "word": "extinguish",
+    "phonetic": "ɪkˈstɪŋɡwɪʃ",
+    "pos": "v.",
+    "meaning": "熄灭/扑灭",
+    "example": "Firefighters worked all night to extinguish the blaze.",
+    "exampleCn": "消防员整夜工作以扑灭大火。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3750,
+    "word": "destruct",
+    "phonetic": "dɪˈstrʌkt",
+    "pos": "v.",
+    "meaning": "破坏/毁坏",
+    "example": "The storm destructed many buildings along the coast.",
+    "exampleCn": "风暴摧毁了沿岸的许多建筑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3751,
+    "word": "perish",
+    "phonetic": "ˈperɪʃ",
+    "pos": "v.",
+    "meaning": "死亡/消亡",
+    "example": "Many animals perished in the harsh winter.",
+    "exampleCn": "许多动物在严冬中死去。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3752,
+    "word": "demolish",
+    "phonetic": "dɪˈmɒlɪʃ",
+    "pos": "v.",
+    "meaning": "拆除/拆毁",
+    "example": "The old factory was demolished to make way for a park.",
+    "exampleCn": "旧工厂被拆除，为公园让路。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3753,
+    "word": "extinction",
+    "phonetic": "ɪkˈstɪŋkʃn",
+    "pos": "n.",
+    "meaning": "灭绝",
+    "example": "Many species face extinction due to habitat loss.",
+    "exampleCn": "许多物种因栖息地丧失而面临灭绝。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3754,
+    "word": "outcome",
+    "phonetic": "ˈaʊtkʌm",
+    "pos": "n.",
+    "meaning": "结果/结局",
+    "example": "The outcome of the experiment was unexpected.",
+    "exampleCn": "实验的结果出人意料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3755,
+    "word": "seasonal",
+    "phonetic": "ˈsiːzənl",
+    "pos": "adj.",
+    "meaning": "季节性的",
+    "example": "Seasonal changes affect the behaviour of many animals.",
+    "exampleCn": "季节变化影响许多动物的行为。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3756,
+    "word": "favourable",
+    "phonetic": "ˈfeɪvərəbl",
+    "pos": "adj.",
+    "meaning": "有利的/赞成的",
+    "example": "The warm climate is favourable for growing grapes.",
+    "exampleCn": "温暖的气候有利于葡萄种植。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
+  },
+  {
+    "id": 3757,
+    "word": "minimal",
+    "phonetic": "ˈmɪnɪməl",
+    "pos": "adj.",
+    "meaning": "最小的/最低限度的",
+    "example": "The damage to the car was minimal.",
+    "exampleCn": "汽车的损坏是最小的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3758,
+    "word": "optimal",
+    "phonetic": "ˈɒptɪməl",
+    "pos": "adj.",
+    "meaning": "最优的/最佳的",
+    "example": "The optimal temperature for growth is 25 degrees.",
+    "exampleCn": "生长的最佳温度是25度。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3759,
+    "word": "biologist",
+    "phonetic": "baɪˈɒlədʒɪst",
+    "pos": "n.",
+    "meaning": "生物学家",
+    "example": "The biologist spent years studying marine life.",
+    "exampleCn": "这位生物学家花了多年时间研究海洋生物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3760,
+    "word": "zoologist",
+    "phonetic": "zuːˈɒlədʒɪst",
+    "pos": "n.",
+    "meaning": "动物学家",
+    "example": "The zoologist specialises in primate behaviour.",
+    "exampleCn": "这位动物学家专门研究灵长类动物的行为。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3761,
+    "word": "botanist",
+    "phonetic": "ˈbɒtənɪst",
+    "pos": "n.",
+    "meaning": "植物学家",
+    "example": "The botanist discovered a new species of orchid.",
+    "exampleCn": "这位植物学家发现了一种新的兰花物种。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3762,
+    "word": "creature",
+    "phonetic": "ˈkriːtʃə",
+    "pos": "n.",
+    "meaning": "生物/动物",
+    "example": "The deep sea is home to many strange creatures.",
+    "exampleCn": "深海是许多奇异生物的家园。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3763,
+    "word": "wildlife",
+    "phonetic": "ˈwaɪldlaɪf",
+    "pos": "n.",
+    "meaning": "野生动物",
+    "example": "The national park is rich in wildlife.",
+    "exampleCn": "这个国家公园野生动物丰富。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3764,
+    "word": "throng",
+    "phonetic": "θrɒŋ",
+    "pos": "n/v.",
+    "meaning": "人群/蜂拥",
+    "example": "A throng of tourists gathered in the square.",
+    "exampleCn": "一大群游客聚集在广场上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3765,
+    "word": "crowd",
+    "phonetic": "kraʊd",
+    "pos": "n.",
+    "meaning": "人群",
+    "example": "The crowd cheered as the team scored.",
+    "exampleCn": "球队得分时，人群欢呼起来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3766,
+    "word": "brute",
+    "phonetic": "bruːt",
+    "pos": "n.",
+    "meaning": "畜生/残暴的人",
+    "example": "He was a brute who cared for no one.",
+    "exampleCn": "他是个不顾任何人的畜生。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3767,
+    "word": "cruel",
+    "phonetic": "kruːəl",
+    "pos": "adj.",
+    "meaning": "残忍的/残酷的",
+    "example": "It is cruel to keep animals in small cages.",
+    "exampleCn": "把动物关在小笼子里是残忍的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3768,
+    "word": "subgroup",
+    "phonetic": "ˈsʌbɡruːp",
+    "pos": "n.",
+    "meaning": "亚群/子群体",
+    "example": "The species can be divided into several subgroups.",
+    "exampleCn": "这个物种可以分为几个亚群。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3769,
+    "word": "feed",
+    "phonetic": "fiːd",
+    "pos": "v.",
+    "meaning": "喂养/进食",
+    "example": "She feeds the chickens every morning.",
+    "exampleCn": "她每天早上喂鸡。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3770,
+    "word": "interbreed",
+    "phonetic": "ˌɪntəˈbriːd",
+    "pos": "v.",
+    "meaning": "杂交",
+    "example": "The two species can interbreed successfully.",
+    "exampleCn": "这两个物种可以成功地杂交。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3771,
+    "word": "hybridize",
+    "phonetic": "ˈhaɪbrɪdaɪz",
+    "pos": "v.",
+    "meaning": "杂交/混合",
+    "example": "Farmers hybridize crops to improve yields.",
+    "exampleCn": "农民通过杂交作物来提高产量。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3772,
+    "word": "sterility",
+    "phonetic": "stəˈrɪləti",
+    "pos": "n.",
+    "meaning": "不育/无菌",
+    "example": "The sterility of the soil made farming impossible.",
+    "exampleCn": "土壤的不育使耕作无法进行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3773,
+    "word": "mate",
+    "phonetic": "meɪt",
+    "pos": "n/v.",
+    "meaning": "配偶/交配",
+    "example": "Penguins mate for life.",
+    "exampleCn": "企鹅终身配对。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3774,
+    "word": "lay",
+    "phonetic": "leɪ",
+    "pos": "v.",
+    "meaning": "下蛋/产卵",
+    "example": "The hen lays an egg every day.",
+    "exampleCn": "母鸡每天下一个蛋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3775,
+    "word": "brood",
+    "phonetic": "bruːd",
+    "pos": "n/v.",
+    "meaning": "一窝/孵蛋",
+    "example": "The hen sat on her brood of chicks.",
+    "exampleCn": "母鸡坐在她的一窝小鸡身上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3776,
+    "word": "skin",
+    "phonetic": "skɪn",
+    "pos": "n.",
+    "meaning": "皮肤/兽皮",
+    "example": "Snakes shed their skin regularly.",
+    "exampleCn": "蛇定期蜕皮。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3777,
+    "word": "claw",
+    "phonetic": "klɔː",
+    "pos": "n.",
+    "meaning": "爪子",
+    "example": "The cat sharpened its claws on the tree.",
+    "exampleCn": "猫在树上磨爪子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3778,
+    "word": "paw",
+    "phonetic": "pɔː",
+    "pos": "n.",
+    "meaning": "爪子/脚掌",
+    "example": "The dog lifted its paw to shake hands.",
+    "exampleCn": "狗抬起爪子握手。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3779,
+    "word": "fin",
+    "phonetic": "fɪn",
+    "pos": "n.",
+    "meaning": "鳍",
+    "example": "Sharks use their fins to steer through the water.",
+    "exampleCn": "鲨鱼用鳍在水中转向。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3780,
+    "word": "wing",
+    "phonetic": "wɪŋ",
+    "pos": "n.",
+    "meaning": "翅膀/翼",
+    "example": "The bird spread its wings and flew away.",
+    "exampleCn": "鸟展开翅膀飞走了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
+  },
+  {
+    "id": 3781,
+    "word": "feather",
+    "phonetic": "ˈfeðə",
+    "pos": "n.",
+    "meaning": "羽毛",
+    "example": "The pillow is filled with duck feathers.",
+    "exampleCn": "枕头里装满了鸭毛。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3782,
+    "word": "fur",
+    "phonetic": "fɜː",
+    "pos": "n.",
+    "meaning": "毛皮/软毛",
+    "example": "The rabbit's fur was soft and white.",
+    "exampleCn": "兔子的毛又软又白。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3783,
+    "word": "bristle",
+    "phonetic": "ˈbrɪsl",
+    "pos": "n.",
+    "meaning": "鬃毛/刚毛",
+    "example": "The brush is made of pig bristles.",
+    "exampleCn": "这把刷子是用猪鬃制成的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3784,
+    "word": "curl",
+    "phonetic": "kɜːl",
+    "pos": "n/v.",
+    "meaning": "卷曲/卷起来",
+    "example": "Her hair has a natural curl.",
+    "exampleCn": "她的头发是自然卷。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3785,
+    "word": "insect",
+    "phonetic": "ˈɪnsekt",
+    "pos": "n.",
+    "meaning": "昆虫",
+    "example": "Bees and ants are social insects.",
+    "exampleCn": "蜜蜂和蚂蚁是群居昆虫。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3786,
+    "word": "worm",
+    "phonetic": "wɜːm",
+    "pos": "n.",
+    "meaning": "蠕虫/蚯蚓",
+    "example": "Earthworms help to keep the soil healthy.",
+    "exampleCn": "蚯蚓帮助保持土壤健康。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3787,
+    "word": "spider",
+    "phonetic": "ˈspaɪdə",
+    "pos": "n.",
+    "meaning": "蜘蛛",
+    "example": "The spider spun a web in the corner.",
+    "exampleCn": "蜘蛛在角落织了一张网。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3788,
+    "word": "butterfly",
+    "phonetic": "ˈbʌtəflaɪ",
+    "pos": "n.",
+    "meaning": "蝴蝶",
+    "example": "A beautiful butterfly landed on the flower.",
+    "exampleCn": "一只美丽的蝴蝶落在花上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3789,
+    "word": "mosquito",
+    "phonetic": "məˈskiːtəʊ",
+    "pos": "n.",
+    "meaning": "蚊子",
+    "example": "Mosquitoes can spread diseases like malaria.",
+    "exampleCn": "蚊子可以传播疟疾等疾病。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3790,
+    "word": "cricket",
+    "phonetic": "ˈkrɪkɪt",
+    "pos": "n.",
+    "meaning": "蟋蟀/板球",
+    "example": "The chirping of crickets filled the summer night.",
+    "exampleCn": "蟋蟀的鸣叫声充满了夏夜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3791,
+    "word": "penguin",
+    "phonetic": "ˈpeŋɡwɪn",
+    "pos": "n.",
+    "meaning": "企鹅",
+    "example": "Penguins cannot fly but are excellent swimmers.",
+    "exampleCn": "企鹅不会飞，但却是出色的游泳者。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3792,
+    "word": "tortoise",
+    "phonetic": "ˈtɔːtəs",
+    "pos": "n.",
+    "meaning": "陆龟",
+    "example": "The tortoise can live for over a hundred years.",
+    "exampleCn": "陆龟可以活过一百年。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3793,
+    "word": "turtle",
+    "phonetic": "ˈtɜːtl",
+    "pos": "n.",
+    "meaning": "海龟",
+    "example": "Sea turtles travel thousands of miles to lay their eggs.",
+    "exampleCn": "海龟不远万里去产卵。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3794,
+    "word": "whale",
+    "phonetic": "weɪl",
+    "pos": "n.",
+    "meaning": "鲸鱼",
+    "example": "The blue whale is the largest animal on Earth.",
+    "exampleCn": "蓝鲸是地球上最大的动物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3795,
+    "word": "kangaroo",
+    "phonetic": "ˌkæŋɡəˈruː",
+    "pos": "n.",
+    "meaning": "袋鼠",
+    "example": "Kangaroos are native to Australia.",
+    "exampleCn": "袋鼠是澳大利亚本土动物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3796,
+    "word": "camel",
+    "phonetic": "ˈkæməl",
+    "pos": "n.",
+    "meaning": "骆驼",
+    "example": "Camels can survive for days without water.",
+    "exampleCn": "骆驼可以数天不喝水而生存。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3797,
+    "word": "panda",
+    "phonetic": "ˈpændə",
+    "pos": "n.",
+    "meaning": "熊猫",
+    "example": "The giant panda is a national symbol of China.",
+    "exampleCn": "大熊猫是中国的国家象征。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3798,
+    "word": "elephant",
+    "phonetic": "ˈelɪfənt",
+    "pos": "n.",
+    "meaning": "大象",
+    "example": "African elephants have larger ears than Asian elephants.",
+    "exampleCn": "非洲象的耳朵比亚洲象大。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3799,
+    "word": "wolf",
+    "phonetic": "wʊlf",
+    "pos": "n.",
+    "meaning": "狼",
+    "example": "A pack of wolves howled in the distance.",
+    "exampleCn": "远处的狼群嚎叫着。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3800,
+    "word": "dragon",
+    "phonetic": "ˈdræɡən",
+    "pos": "n.",
+    "meaning": "龙",
+    "example": "The dragon is a mythical creature in many cultures.",
+    "exampleCn": "龙在许多文化中是一种神话生物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3801,
+    "word": "fox",
+    "phonetic": "fɒks",
+    "pos": "n.",
+    "meaning": "狐狸",
+    "example": "The fox is known for its cunning and intelligence.",
+    "exampleCn": "狐狸以其狡猾和聪明而闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3802,
+    "word": "cub",
+    "phonetic": "kʌb",
+    "pos": "n.",
+    "meaning": "幼兽/幼崽",
+    "example": "The lioness cares for her cubs.",
+    "exampleCn": "母狮照顾她的幼崽。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3803,
+    "word": "calf",
+    "phonetic": "kɑːf",
+    "pos": "n.",
+    "meaning": "小牛/幼崽",
+    "example": "The cow stood protectively over her newborn calf.",
+    "exampleCn": "母牛保护地站在刚出生的小牛旁。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3804,
+    "word": "pup",
+    "phonetic": "pʌp",
+    "pos": "n.",
+    "meaning": "幼犬/幼崽",
+    "example": "The seal pup rested on the ice.",
+    "exampleCn": "小海豹在冰上休息。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3805,
+    "word": "lamb",
+    "phonetic": "læm",
+    "pos": "n.",
+    "meaning": "羔羊/小羊",
+    "example": "The newborn lamb took its first steps.",
+    "exampleCn": "新生的小羊迈出了它的第一步。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3806,
+    "word": "ox",
+    "phonetic": "ɒks",
+    "pos": "n.",
+    "meaning": "公牛/阉牛",
+    "example": "The ox pulled the heavy cart.",
+    "exampleCn": "公牛拉着沉重的车。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3807,
+    "word": "horse",
+    "phonetic": "hɔːs",
+    "pos": "n.",
+    "meaning": "马",
+    "example": "She learned to ride a horse when she was young.",
+    "exampleCn": "她小时候学会了骑马。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3808,
+    "word": "zebra",
+    "phonetic": "ˈzebrə",
+    "pos": "n.",
+    "meaning": "斑马",
+    "example": "Zebras have distinctive black and white stripes.",
+    "exampleCn": "斑马有独特的黑白条纹。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3809,
+    "word": "donkey",
+    "phonetic": "ˈdɒŋki",
+    "pos": "n.",
+    "meaning": "驴",
+    "example": "The donkey carried heavy loads up the hill.",
+    "exampleCn": "驴驮着重物上山。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3810,
+    "word": "saddle",
+    "phonetic": "ˈsædl",
+    "pos": "n/v.",
+    "meaning": "马鞍/给…装鞍",
+    "example": "He put the saddle on the horse before riding.",
+    "exampleCn": "他在骑之前给马装上了马鞍。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3811,
+    "word": "falcon",
+    "phonetic": "ˈfɔːlkən",
+    "pos": "n.",
+    "meaning": "猎鹰/隼",
+    "example": "The falcon swooped down to catch its prey.",
+    "exampleCn": "猎鹰俯冲下来捕捉猎物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3812,
+    "word": "eagle",
+    "phonetic": "ˈiːɡl",
+    "pos": "n.",
+    "meaning": "鹰",
+    "example": "The bald eagle is the national bird of the United States.",
+    "exampleCn": "白头鹰是美国的国鸟。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3813,
+    "word": "owl",
+    "phonetic": "aʊl",
+    "pos": "n.",
+    "meaning": "猫头鹰",
+    "example": "Owls hunt mainly at night.",
+    "exampleCn": "猫头鹰主要在夜间捕食。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3814,
+    "word": "swallow",
+    "phonetic": "ˈswɒləʊ",
+    "pos": "n/v.",
+    "meaning": "燕子/吞咽",
+    "example": "Swallows return to the same nesting site every spring.",
+    "exampleCn": "燕子每年春天都回到同一个筑巢地点。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3815,
+    "word": "pigeon",
+    "phonetic": "ˈpɪdʒɪn",
+    "pos": "n.",
+    "meaning": "鸽子",
+    "example": "Pigeons are a common sight in city squares.",
+    "exampleCn": "鸽子在城市广场上很常见。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3816,
+    "word": "sparrow",
+    "phonetic": "ˈspærəʊ",
+    "pos": "n.",
+    "meaning": "麻雀",
+    "example": "A sparrow built its nest under the roof.",
+    "exampleCn": "一只麻雀在屋檐下筑了巢。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3817,
+    "word": "swan",
+    "phonetic": "swɒn",
+    "pos": "n.",
+    "meaning": "天鹅",
+    "example": "The swan glided gracefully across the lake.",
+    "exampleCn": "天鹅优雅地滑过湖面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3818,
+    "word": "goose",
+    "phonetic": "ɡuːs",
+    "pos": "n.",
+    "meaning": "鹅",
+    "example": "The goose honked loudly at the visitors.",
+    "exampleCn": "鹅对来访者大声地咯咯叫。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3819,
+    "word": "cock",
+    "phonetic": "kɒk",
+    "pos": "n.",
+    "meaning": "公鸡",
+    "example": "The cock crowed at dawn.",
+    "exampleCn": "公鸡在黎明时分打鸣。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3820,
+    "word": "mouse",
+    "phonetic": "maʊs",
+    "pos": "n.",
+    "meaning": "老鼠/小鼠",
+    "example": "A mouse scurried across the kitchen floor.",
+    "exampleCn": "一只老鼠窜过厨房地板。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3821,
+    "word": "rat",
+    "phonetic": "ræt",
+    "pos": "n.",
+    "meaning": "大鼠/老鼠",
+    "example": "Rats can carry diseases harmful to humans.",
+    "exampleCn": "大鼠会携带对人类有害的疾病。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3822,
+    "word": "frog",
+    "phonetic": "frɒɡ",
+    "pos": "n.",
+    "meaning": "青蛙",
+    "example": "Frogs croaked loudly after the rain.",
+    "exampleCn": "雨后青蛙大声呱呱叫。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3823,
+    "word": "behaviour",
+    "phonetic": "bɪˈheɪvjə",
+    "pos": "n.",
+    "meaning": "行为/举止",
+    "example": "The scientist studied the social behaviour of chimpanzees.",
+    "exampleCn": "科学家研究了黑猩猩的社会行为。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
+  },
+  {
+    "id": 3824,
+    "word": "roar",
+    "phonetic": "rɔː",
+    "pos": "n/v.",
+    "meaning": "吼叫/咆哮",
+    "example": "The lion let out a mighty roar.",
+    "exampleCn": "狮子发出了震天的吼声。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3825,
+    "word": "crawl",
+    "phonetic": "krɔːl",
+    "pos": "v/n.",
+    "meaning": "爬/匍匐前进",
+    "example": "The baby learned to crawl before walking.",
+    "exampleCn": "婴儿在学会走路之前先学会了爬。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3826,
+    "word": "hive",
+    "phonetic": "haɪv",
+    "pos": "n/v.",
+    "meaning": "蜂巢/蜂箱",
+    "example": "Bees store honey in the hive.",
+    "exampleCn": "蜜蜂在蜂巢中储存蜂蜜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3827,
+    "word": "hedge",
+    "phonetic": "hedʒ",
+    "pos": "n.",
+    "meaning": "树篱",
+    "example": "A tall hedge surrounded the garden.",
+    "exampleCn": "高高的树篱围绕着花园。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3828,
+    "word": "bar",
+    "phonetic": "bɑː",
+    "pos": "n.",
+    "meaning": "横杆/酒吧",
+    "example": "He leaned against the bar and ordered a drink.",
+    "exampleCn": "他靠在吧台上点了一杯饮料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3829,
+    "word": "epidemic",
+    "phonetic": "ˌepɪˈdemɪk",
+    "pos": "n/adj.",
+    "meaning": "流行病/流行的",
+    "example": "The epidemic spread rapidly through the city.",
+    "exampleCn": "流行病在城市中迅速蔓延。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3830,
+    "word": "germ",
+    "phonetic": "dʒɜːm",
+    "pos": "n.",
+    "meaning": "细菌/病菌",
+    "example": "Wash your hands to kill harmful germs.",
+    "exampleCn": "洗手可以杀死有害的病菌。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3831,
+    "word": "bacteria",
+    "phonetic": "bækˈtɪəriə",
+    "pos": "n.",
+    "meaning": "细菌",
+    "example": "Some bacteria are beneficial to human health.",
+    "exampleCn": "一些细菌对人类健康有益。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3832,
+    "word": "microbe",
+    "phonetic": "ˈmaɪkrəʊb",
+    "pos": "n.",
+    "meaning": "微生物",
+    "example": "Microbes play a vital role in the ecosystem.",
+    "exampleCn": "微生物在生态系统中起着至关重要的作用。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3833,
+    "word": "intuitive",
+    "phonetic": "ɪnˈtjuːɪtɪv",
+    "pos": "adj.",
+    "meaning": "直觉的",
+    "example": "The software has an intuitive interface.",
+    "exampleCn": "这个软件有一个直观的界面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3834,
+    "word": "intuition",
+    "phonetic": "ˌɪntjuˈɪʃn",
+    "pos": "n.",
+    "meaning": "直觉/直觉力",
+    "example": "She trusted her intuition and made the right choice.",
+    "exampleCn": "她相信自己的直觉，做出了正确的选择。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3835,
+    "word": "potential",
+    "phonetic": "pəˈtenʃl",
+    "pos": "adj.",
+    "meaning": "潜在的/可能的",
+    "example": "The new drug has potential benefits for cancer patients.",
+    "exampleCn": "这种新药对癌症患者有潜在的好处。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3836,
+    "word": "intelligence",
+    "phonetic": "ɪnˈtelɪdʒəns",
+    "pos": "n.",
+    "meaning": "智力/情报",
+    "example": "Dolphins show a high level of intelligence.",
+    "exampleCn": "海豚表现出很高的智力水平。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3837,
+    "word": "functional",
+    "phonetic": "ˈfʌŋkʃənl",
+    "pos": "adj.",
+    "meaning": "功能性的/实用的",
+    "example": "The old machine is still functional.",
+    "exampleCn": "这台旧机器仍然可以使用。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3838,
+    "word": "acoustic",
+    "phonetic": "əˈkuːstɪk",
+    "pos": "adj.",
+    "meaning": "声学的/听觉的",
+    "example": "The acoustic design of the concert hall is excellent.",
+    "exampleCn": "音乐厅的声学设计非常出色。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3839,
+    "word": "nocturnal",
+    "phonetic": "nɒkˈtɜːnəl",
+    "pos": "adj.",
+    "meaning": "夜行的/夜间活动的",
+    "example": "Owls and bats are nocturnal animals.",
+    "exampleCn": "猫头鹰和蝙蝠是夜行动物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3840,
+    "word": "dormant",
+    "phonetic": "ˈdɔːmənt",
+    "pos": "adj.",
+    "meaning": "休眠的/蛰伏的",
+    "example": "The volcano has been dormant for over a century.",
+    "exampleCn": "这座火山已经休眠了一个多世纪。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3841,
+    "word": "hibernation",
+    "phonetic": "ˌhaɪbəˈneɪʃn",
+    "pos": "n.",
+    "meaning": "冬眠",
+    "example": "Bears go into hibernation during the winter.",
+    "exampleCn": "熊在冬天进入冬眠。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3842,
+    "word": "track",
+    "phonetic": "træk",
+    "pos": "v/n.",
+    "meaning": "追踪/足迹/轨道",
+    "example": "Scientists track the migration of birds using GPS.",
+    "exampleCn": "科学家使用GPS追踪鸟类的迁徙。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3843,
+    "word": "predator",
+    "phonetic": "ˈpredətə",
+    "pos": "n.",
+    "meaning": "捕食者/天敌",
+    "example": "Sharks are the top predators in the ocean.",
+    "exampleCn": "鲨鱼是海洋中的顶级捕食者。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3844,
+    "word": "victim",
+    "phonetic": "ˈvɪktɪm",
+    "pos": "n.",
+    "meaning": "受害者/牺牲品",
+    "example": "The flood victims were given shelter in a school.",
+    "exampleCn": "洪水灾民在一所学校得到了安置。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3845,
+    "word": "captivate",
+    "phonetic": "ˈkæptɪveɪt",
+    "pos": "v.",
+    "meaning": "迷住/吸引",
+    "example": "The audience was captivated by her performance.",
+    "exampleCn": "观众被她的表演迷住了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3846,
+    "word": "subsistence",
+    "phonetic": "səbˈsɪstəns",
+    "pos": "n.",
+    "meaning": "生存/生计",
+    "example": "The tribe lives at subsistence level.",
+    "exampleCn": "这个部落生活在勉强糊口的水平。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3847,
+    "word": "exist",
+    "phonetic": "ɪɡˈzɪst",
+    "pos": "v.",
+    "meaning": "存在/生存",
+    "example": "Do aliens exist somewhere in the universe?",
+    "exampleCn": "宇宙的某处存在外星人吗？",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3848,
+    "word": "existence",
+    "phonetic": "ɪɡˈzɪstəns",
+    "pos": "n.",
+    "meaning": "存在/生存",
+    "example": "The organisation has been in existence for over fifty years.",
+    "exampleCn": "这个组织已经存在了五十多年。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3849,
+    "word": "tame nature",
+    "phonetic": "teɪm ˈneɪtʃə",
+    "pos": "",
+    "meaning": "征服自然",
+    "example": "Humans have long tried to tame nature.",
+    "exampleCn": "人类长期以来一直试图征服自然。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3850,
+    "word": "keeper",
+    "phonetic": "ˈkiːpə",
+    "pos": "n.",
+    "meaning": "饲养员/看守人",
+    "example": "The zookeeper feeds the lions every afternoon.",
+    "exampleCn": "动物园饲养员每天下午给狮子喂食。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3851,
+    "word": "sheepdog",
+    "phonetic": "ˈʃiːpdɒɡ",
+    "pos": "n.",
+    "meaning": "牧羊犬",
+    "example": "The sheepdog rounded up the flock.",
+    "exampleCn": "牧羊犬把羊群聚在了一起。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3852,
+    "word": "cosmos",
+    "phonetic": "ˈkɒzmɒs",
+    "pos": "n.",
+    "meaning": "宇宙/太空",
+    "example": "The cosmos is vast and full of mysteries.",
+    "exampleCn": "宇宙广阔而充满了奥秘。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3853,
+    "word": "universe",
+    "phonetic": "ˈjuːnɪvɜːs",
+    "pos": "n.",
+    "meaning": "宇宙",
+    "example": "Scientists study the origins of the universe.",
+    "exampleCn": "科学家研究宇宙的起源。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3854,
+    "word": "astrology",
+    "phonetic": "əˈstrɒlədʒi",
+    "pos": "n.",
+    "meaning": "占星术",
+    "example": "Astrology claims that stars influence human destiny.",
+    "exampleCn": "占星术声称星星影响人类的命运。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3855,
+    "word": "astronaut",
+    "phonetic": "ˈæstrənɔːt",
+    "pos": "n.",
+    "meaning": "宇航员",
+    "example": "The astronaut spent six months on the space station.",
+    "exampleCn": "这位宇航员在空间站上度过了六个月。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3856,
+    "word": "dust",
+    "phonetic": "dʌst",
+    "pos": "n.",
+    "meaning": "尘埃/灰尘",
+    "example": "A thick layer of dust covered the old furniture.",
+    "exampleCn": "一层厚厚的灰尘覆盖着旧家具。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3857,
+    "word": "ash",
+    "phonetic": "æʃ",
+    "pos": "n/v.",
+    "meaning": "灰烬/化为灰烬",
+    "example": "Volcanic ash covered the town after the eruption.",
+    "exampleCn": "火山喷发后，火山灰覆盖了小镇。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3858,
+    "word": "envelope",
+    "phonetic": "ˈenvələʊp",
+    "pos": "n.",
+    "meaning": "外壳/信封",
+    "example": "The Earth's atmosphere is an envelope of gases.",
+    "exampleCn": "地球的大气层是一层气体的外壳。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3859,
+    "word": "spacecraft",
+    "phonetic": "ˈspeɪskrɑːft",
+    "pos": "n.",
+    "meaning": "宇宙飞船/航天器",
+    "example": "The spacecraft successfully landed on Mars.",
+    "exampleCn": "宇宙飞船成功登陆火星。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3860,
+    "word": "spaceship",
+    "phonetic": "ˈspeɪsʃɪp",
+    "pos": "n.",
+    "meaning": "宇宙飞船",
+    "example": "The spaceship travelled at incredible speed.",
+    "exampleCn": "宇宙飞船以惊人的速度飞行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3861,
+    "word": "probe",
+    "phonetic": "prəʊb",
+    "pos": "n.",
+    "meaning": "探测器",
+    "example": "The space probe sent back images from Jupiter.",
+    "exampleCn": "太空探测器发回了木星的图像。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3862,
+    "word": "module",
+    "phonetic": "ˈmɒdjuːl",
+    "pos": "n.",
+    "meaning": "舱/模块",
+    "example": "The lunar module landed on the moon's surface.",
+    "exampleCn": "登月舱降落在月球表面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3863,
+    "word": "propulsion",
+    "phonetic": "prəˈpʌlʃn",
+    "pos": "n.",
+    "meaning": "推进力/推进",
+    "example": "Rocket propulsion allows spacecraft to escape Earth's gravity.",
+    "exampleCn": "火箭推进力使航天器能够摆脱地球引力。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3864,
+    "word": "pressure",
+    "phonetic": "ˈpreʃə",
+    "pos": "n.",
+    "meaning": "压力/压强",
+    "example": "Atmospheric pressure decreases at high altitudes.",
+    "exampleCn": "大气压力在高海拔处下降。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3865,
+    "word": "dynamics",
+    "phonetic": "daɪˈnæmɪks",
+    "pos": "n.",
+    "meaning": "动力学/动态",
+    "example": "Fluid dynamics is an important field of physics.",
+    "exampleCn": "流体动力学是物理学的一个重要领域。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3866,
+    "word": "tail",
+    "phonetic": "teɪl",
+    "pos": "n.",
+    "meaning": "尾巴/尾部",
+    "example": "The comet's tail can stretch for millions of miles.",
+    "exampleCn": "彗星的尾巴可以延伸数百万英里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3867,
+    "word": "exploration",
+    "phonetic": "ˌekspləˈreɪʃn",
+    "pos": "n.",
+    "meaning": "探索/探险",
+    "example": "Space exploration has led to many scientific discoveries.",
+    "exampleCn": "太空探索带来了许多科学发现。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3868,
+    "word": "flyby",
+    "phonetic": "ˈflaɪbaɪ",
+    "pos": "n.",
+    "meaning": "飞掠/近天体探测飞行",
+    "example": "The probe made a flyby of Saturn.",
+    "exampleCn": "探测器飞掠了土星。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3869,
+    "word": "telescope",
+    "phonetic": "ˈtelɪskəʊp",
+    "pos": "n.",
+    "meaning": "望远镜",
+    "example": "With a telescope, you can see craters on the moon.",
+    "exampleCn": "用望远镜你可以看到月球上的环形山。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3870,
+    "word": "spectacle",
+    "phonetic": "ˈspektəkl",
+    "pos": "n.",
+    "meaning": "奇观/景象",
+    "example": "The eclipse was a breathtaking spectacle.",
+    "exampleCn": "那次日食是令人叹为观止的奇观。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3871,
+    "word": "ecliptic",
+    "phonetic": "ɪˈklɪptɪk",
+    "pos": "n.",
+    "meaning": "黄道",
+    "example": "The ecliptic is the path the sun appears to follow.",
+    "exampleCn": "黄道是太阳在天空中看起来运行的路径。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3872,
+    "word": "diameter",
+    "phonetic": "daɪˈæmɪtə",
+    "pos": "n.",
+    "meaning": "直径",
+    "example": "The diameter of the Earth is about 12,742 kilometres.",
+    "exampleCn": "地球的直径约为12742公里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3873,
+    "word": "composition",
+    "phonetic": "ˌkɒmpəˈzɪʃn",
+    "pos": "n.",
+    "meaning": "组成/成分",
+    "example": "Scientists analysed the chemical composition of the rock.",
+    "exampleCn": "科学家分析了这块岩石的化学成分。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3874,
+    "word": "sample",
+    "phonetic": "ˈsɑːmpl",
+    "pos": "n.",
+    "meaning": "样本/样品",
+    "example": "The rover collected soil samples from Mars.",
+    "exampleCn": "探测器从火星采集了土壤样本。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3875,
+    "word": "atom",
+    "phonetic": "ˈætəm",
+    "pos": "n.",
+    "meaning": "原子",
+    "example": "Everything in the universe is made of atoms.",
+    "exampleCn": "宇宙中的一切都是由原子构成的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3876,
+    "word": "quantum",
+    "phonetic": "ˈkwɒntəm",
+    "pos": "n.",
+    "meaning": "量子",
+    "example": "Quantum mechanics explains the behaviour of tiny particles.",
+    "exampleCn": "量子力学解释了微小粒子的行为。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3877,
+    "word": "liquid",
+    "phonetic": "ˈlɪkwɪd",
+    "pos": "n/adj.",
+    "meaning": "液体/液体的",
+    "example": "Water is a liquid at room temperature.",
+    "exampleCn": "水在室温下是液体。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3878,
+    "word": "fluid",
+    "phonetic": "ˈfluːɪd",
+    "pos": "n/adj.",
+    "meaning": "流体/流动的",
+    "example": "The fluid dynamics of the ocean are complex.",
+    "exampleCn": "海洋的流体动力学很复杂。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3879,
+    "word": "solid",
+    "phonetic": "ˈsɒlɪd",
+    "pos": "n/adj.",
+    "meaning": "固体/固体的",
+    "example": "Ice is water in its solid form.",
+    "exampleCn": "冰是水的固体形式。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3880,
+    "word": "synthesise",
+    "phonetic": "ˈsɪnθəsaɪz",
+    "pos": "v.",
+    "meaning": "合成",
+    "example": "Scientists can synthesise new materials in the laboratory.",
+    "exampleCn": "科学家可以在实验室合成新材料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3881,
+    "word": "formation",
+    "phonetic": "fɔːˈmeɪʃn",
+    "pos": "n.",
+    "meaning": "形成/构造",
+    "example": "The formation of stars takes millions of years.",
+    "exampleCn": "恒星的形成需要数百万年。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3882,
+    "word": "method",
+    "phonetic": "ˈmeθəd",
+    "pos": "n.",
+    "meaning": "方法",
+    "example": "The scientific method involves observation and experiment.",
+    "exampleCn": "科学方法包括观察和实验。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
+  },
+  {
+    "id": 3883,
+    "word": "antenna",
+    "phonetic": "ænˈtenə",
+    "pos": "n.",
+    "meaning": "天线",
+    "example": "The antenna receives signals from the satellite.",
+    "exampleCn": "天线接收来自卫星的信号。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10"
   }
 ]

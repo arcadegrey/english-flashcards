@@ -280,10 +280,12 @@
     "exampleCn": "这幅古画受到的损坏是不可逆的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "3"
   },
   {
     "id": 2452,
@@ -445,10 +447,15 @@
     "exampleCn": "这个岛上有别处没有的独特植物群。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2463,
@@ -580,10 +587,12 @@
     "exampleCn": "生物学家仔细检查了这个植物标本。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "10"
   },
   {
     "id": 2472,
@@ -717,10 +726,15 @@
     "exampleCn": "鸟类求偶常常包括鲜艳的展示行为。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2481,
@@ -732,10 +746,15 @@
     "exampleCn": "农民在秋天播种小麦。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2482,
@@ -912,10 +931,15 @@
     "exampleCn": "一股烟柱从工厂升起。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2494,
@@ -1002,10 +1026,12 @@
     "exampleCn": "工人清除了受损道路上的碎片。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "4"
   },
   {
     "id": 2500,
@@ -1092,10 +1118,12 @@
     "exampleCn": "水在零摄氏度结冰。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "3"
   },
   {
     "id": 2506,
@@ -1349,10 +1377,15 @@
     "exampleCn": "树叶分解后会肥沃土壤。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2523,
@@ -1394,10 +1427,15 @@
     "exampleCn": "虚假信息会削弱公众信任。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2526,

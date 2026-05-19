@@ -597,10 +597,12 @@
     "exampleCn": "一缕烟从烟囱升起。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "4"
   },
   {
     "id": 2762,
@@ -627,10 +629,15 @@
     "exampleCn": "艺术家常用炭笔进行快速素描。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2764,
@@ -1047,10 +1054,12 @@
     "exampleCn": "过渡期间一些冲突是不可避免的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "3"
   },
   {
     "id": 2792,
@@ -1077,10 +1086,12 @@
     "exampleCn": "庄稼被冰雹损坏了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "3"
   },
   {
     "id": 2794,
@@ -1257,10 +1268,12 @@
     "exampleCn": "这些动物是在圈养条件下繁殖的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "9"
   },
   {
     "id": 2806,
@@ -1272,10 +1285,15 @@
     "exampleCn": "干旱是该地区长期存在的问题。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2807,
@@ -1467,9 +1485,11 @@
     "exampleCn": "徒步者沿着山脊走向山顶。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "3"
   }
 ]

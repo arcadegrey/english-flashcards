@@ -1,4 +1,4 @@
-import { parseCategoryList } from './wordCategories.js';
+import { normalizeNumericTag, parseCategoryList } from './wordCategories.js';
 
 const DEFAULT_HEADERS = ['word', 'phonetic', 'pos', 'meaning', 'example', 'exampleCn', 'category', 'level', 'list'];
 const REQUIRED_FIELDS = ['word', 'meaning'];
@@ -6,18 +6,6 @@ const DEFAULT_READING_HEADERS = ['title', 'level', 'category', 'content', 'trans
 const REQUIRED_READING_FIELDS = ['title', 'content'];
 
 const normalizeText = (value) => (value || '').trim();
-const normalizeNumericTag = (value) => {
-  const text = normalizeText(value);
-  if (!text) return '';
-
-  const match = text.match(/\d+/);
-  if (!match) return '';
-
-  const parsed = Number(match[0]);
-  if (!Number.isFinite(parsed) || parsed <= 0) return '';
-  return String(parsed);
-};
-
 const normalizeHeaderKey = (header) => {
   const normalized = (header || '').trim().toLowerCase().replace(/[\s_-]+/g, '');
 
@@ -213,6 +201,7 @@ export const parseVocabularyCsv = ({
       }
       if (categories.includes('ielts') && list) {
         normalizedWord.ieltsList = list;
+        normalizedWord.ieltsLists = [list];
       }
     }
 

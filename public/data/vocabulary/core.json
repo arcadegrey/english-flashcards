@@ -26,19 +26,6 @@
     ]
   },
   {
-    "id": 3,
-    "word": "abnormal",
-    "phonetic": "/æbˈnɔːrməl/",
-    "pos": "adj.",
-    "meaning": "反常的，异常的",
-    "example": "The test results showed abnormal cell growth.",
-    "exampleCn": "测试结果显示细胞异常生长。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 4,
     "word": "aboard",
     "phonetic": "/əˈbɔːrd/",
@@ -1417,19 +1404,6 @@
     ]
   },
   {
-    "id": 211,
-    "word": "barrier",
-    "phonetic": "/ˈbæriər/",
-    "pos": "n.",
-    "meaning": "障碍，屏障",
-    "example": "Language barrier can be a challenge.",
-    "exampleCn": "语言障碍可能是一个挑战。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 212,
     "word": "baseball",
     "phonetic": "/ˈbeɪsbɔːl/",
@@ -1489,19 +1463,6 @@
     "meaning": "胡须",
     "example": "He grew a beard during the winter.",
     "exampleCn": "他在冬天留了胡子。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 220,
-    "word": "beast",
-    "phonetic": "/biːst/",
-    "pos": "n.",
-    "meaning": "野兽；畜生",
-    "example": "The lion is known as the king of beasts.",
-    "exampleCn": "狮子被称为百兽之王。",
     "category": "daily",
     "categories": [
       "daily"
@@ -1885,19 +1846,6 @@
     ]
   },
   {
-    "id": 252,
-    "word": "bite",
-    "phonetic": "/baɪt/",
-    "pos": "v./n.",
-    "meaning": "咬，叮",
-    "example": "The dog tried to bite the mailman.",
-    "exampleCn": "狗试图咬邮递员。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 253,
     "word": "bitter",
     "phonetic": "/ˈbɪtər/",
@@ -2028,19 +1976,6 @@
     ]
   },
   {
-    "id": 268,
-    "word": "blow",
-    "phonetic": "/bloʊ/",
-    "pos": "v.",
-    "meaning": "吹，刮",
-    "example": "The wind blew strongly.",
-    "exampleCn": "风刮得很猛。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 269,
     "word": "blueprint",
     "phonetic": "/ˈbluːprɪnt/",
@@ -2152,19 +2087,6 @@
     "meaning": "靴子；后备箱",
     "example": "He put on his hiking boots.",
     "exampleCn": "他穿上了徒步靴。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 281,
-    "word": "border",
-    "phonetic": "/ˈbɔːrdər/",
-    "pos": "n.",
-    "meaning": "边界，边境",
-    "example": "They crossed the border into France.",
-    "exampleCn": "他们越过边境进入法国。",
     "category": "daily",
     "categories": [
       "daily"
@@ -2309,19 +2231,6 @@
     "meaning": "刹车，制动器",
     "example": "Press the brake to stop the car.",
     "exampleCn": "踩刹车使车停下。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 296,
-    "word": "branch",
-    "phonetic": "/bræntʃ/",
-    "pos": "n.",
-    "meaning": "树枝；分支",
-    "example": "The bank has a branch downtown.",
-    "exampleCn": "这家银行在市中心有一个分行。",
     "category": "daily",
     "categories": [
       "daily"
@@ -2627,19 +2536,6 @@
     ]
   },
   {
-    "id": 330,
-    "word": "bull",
-    "phonetic": "/bʊl/",
-    "pos": "n.",
-    "meaning": "公牛",
-    "example": "The bull charged at the matador.",
-    "exampleCn": "公牛向斗牛士冲去。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 331,
     "word": "bullet",
     "phonetic": "/ˈbʊlɪt/",
@@ -2660,19 +2556,6 @@
     "meaning": "碰撞；肿块",
     "example": "He bumped into the table.",
     "exampleCn": "他撞到了桌子。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 333,
-    "word": "bunch",
-    "phonetic": "/bʌntʃ/",
-    "pos": "n.",
-    "meaning": "束，串；一群",
-    "example": "She bought a bunch of flowers.",
-    "exampleCn": "她买了一束花。",
     "category": "daily",
     "categories": [
       "daily"
@@ -2842,19 +2725,6 @@
     "meaning": "咖啡馆",
     "example": "Let's meet at the café for coffee.",
     "exampleCn": "我们在咖啡馆见面喝咖啡吧。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 352,
-    "word": "cage",
-    "phonetic": "/keɪdʒ/",
-    "pos": "n.",
-    "meaning": "笼子",
-    "example": "The bird is in the cage.",
-    "exampleCn": "鸟在笼子里。",
     "category": "daily",
     "categories": [
       "daily"
@@ -3693,19 +3563,6 @@
     ]
   },
   {
-    "id": 449,
-    "word": "circuit",
-    "phonetic": "/ˈsɜːrkɪt/",
-    "pos": "n.",
-    "meaning": "电路；巡回",
-    "example": "The electrical circuit is broken.",
-    "exampleCn": "电路断了。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 452,
     "word": "cite",
     "phonetic": "/saɪt/",
@@ -3778,19 +3635,6 @@
     "meaning": "教室",
     "example": "The classroom is full of students.",
     "exampleCn": "教室里坐满了学生。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 460,
-    "word": "clay",
-    "phonetic": "/kleɪ/",
-    "pos": "n.",
-    "meaning": "粘土",
-    "example": "The pot was made from clay.",
-    "exampleCn": "这个罐子是用粘土做的。",
     "category": "daily",
     "categories": [
       "daily"

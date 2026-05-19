@@ -1,0 +1,1130 @@
+[
+  {
+    "id": 266,
+    "word": "bloom",
+    "phonetic": "/bluːm/",
+    "pos": "n./v.",
+    "meaning": "花/开花/繁盛",
+    "example": "Many desert plants bloom after heavy rain.",
+    "exampleCn": "许多沙漠植物在大雨后开花。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 333,
+    "word": "bunch",
+    "phonetic": "/bʌntʃ/",
+    "pos": "n.",
+    "meaning": "束，串；一群",
+    "example": "She bought a bunch of flowers.",
+    "exampleCn": "她买了一束花。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 334,
+    "word": "bundle",
+    "phonetic": "/ˈbʌndl/",
+    "pos": "n./v.",
+    "meaning": "捆/包/捆绑",
+    "example": "She carried a bundle of newspapers under her arm.",
+    "exampleCn": "她腋下夹着一捆报纸。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 673,
+    "word": "classify",
+    "phonetic": "/ˈklæsɪfaɪ/",
+    "pos": "v.",
+    "meaning": "分类；归类",
+    "example": "Books are classified by subject.",
+    "exampleCn": "书籍按主题分类。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 966,
+    "word": "organism",
+    "phonetic": "/ˈɔːrɡənɪzəm/",
+    "pos": "n.",
+    "meaning": "生物体，有机体",
+    "example": "Even a simple organism must adapt to its environment.",
+    "exampleCn": "即使是简单的生物体也必须适应环境。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 1082,
+    "word": "botany",
+    "phonetic": "/ˈbɑːtəni/",
+    "pos": "n.",
+    "meaning": "植物学",
+    "example": "She studies botany at university.",
+    "exampleCn": "她在大学学习植物学。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 1111,
+    "word": "ecosystem",
+    "phonetic": "/ˈiːkoʊsɪstəm/",
+    "pos": "n.",
+    "meaning": "生态系统",
+    "example": "Pollution can damage the entire ecosystem.",
+    "exampleCn": "污染会破坏整个生态系统。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 1157,
+    "word": "harvest",
+    "phonetic": "/ˈhɑːrvɪst/",
+    "pos": "n./v.",
+    "meaning": "收获；收成/收割",
+    "example": "Farmers expect a good harvest this year.",
+    "exampleCn": "农民预计今年会有好收成。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 1304,
+    "word": "diversity",
+    "phonetic": "/daɪˈvɜːrsəti/",
+    "pos": "n.",
+    "meaning": "多样性；差异",
+    "example": "The university values cultural diversity on campus.",
+    "exampleCn": "这所大学重视校园里的文化多样性。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 1436,
+    "word": "ecology",
+    "phonetic": "/iˈkɑːlədʒi/",
+    "pos": "n.",
+    "meaning": "生态学；生态",
+    "example": "She is studying marine ecology at university.",
+    "exampleCn": "她在大学里学习海洋生态学。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 1513,
+    "word": "blossom",
+    "phonetic": "/ˈblɑːsəm/",
+    "pos": "n./v.",
+    "meaning": "花/开花/发展",
+    "example": "Cherry trees blossom in early spring.",
+    "exampleCn": "樱桃树在早春开花。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 1524,
+    "word": "rot",
+    "phonetic": "/rɑːt/",
+    "pos": "v./n.",
+    "meaning": "腐烂/腐败/腐烂物",
+    "example": "Fruit will rot quickly in warm, damp conditions.",
+    "exampleCn": "水果在温暖潮湿的环境中会很快腐烂。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 1535,
+    "word": "rear",
+    "phonetic": "/rɪr/",
+    "pos": "adj./n./v.",
+    "meaning": "后部的/后面/抚养/饲养",
+    "example": "The emergency exit is at the rear of the building.",
+    "exampleCn": "紧急出口在建筑物的后部。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 1630,
+    "word": "herb",
+    "phonetic": "/ɜːrb/",
+    "pos": "n.",
+    "meaning": "草本植物/香草",
+    "example": "Mint is a common herb used in tea.",
+    "exampleCn": "薄荷是一种常用于茶中的香草。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 1676,
+    "word": "evolve",
+    "phonetic": "/ɪˈvɑːlv/",
+    "pos": "v.",
+    "meaning": "进化/逐渐发展",
+    "example": "Languages evolve as societies change.",
+    "exampleCn": "语言会随着社会变化而发展。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 1838,
+    "word": "variation",
+    "phonetic": "/ˌveriˈeɪʃn/",
+    "pos": "n.",
+    "meaning": "变化/变体/差异",
+    "example": "There is great variation in climate across the country.",
+    "exampleCn": "这个国家各地的气候差异很大。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 1919,
+    "word": "scent",
+    "phonetic": "/sent/",
+    "pos": "n./v.",
+    "meaning": "气味/香味/闻出",
+    "example": "The scent of flowers filled the garden.",
+    "exampleCn": "花香充满了花园。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 1962,
+    "word": "vegetation",
+    "phonetic": "/ˌvedʒəˈteɪʃn/",
+    "pos": "n.",
+    "meaning": "植被/植物",
+    "example": "Dense vegetation covered the sides of the mountain.",
+    "exampleCn": "茂密的植被覆盖了山坡。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 1972,
+    "word": "cultivate",
+    "phonetic": "/ˈkʌltɪveɪt/",
+    "pos": "v.",
+    "meaning": "耕种/培养",
+    "example": "Farmers cultivate rice in the lowland fields.",
+    "exampleCn": "农民在低地田里种植水稻。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 1978,
+    "word": "bud",
+    "phonetic": "/bʌd/",
+    "pos": "n./v.",
+    "meaning": "芽/花蕾/发芽",
+    "example": "A small bud appeared on the branch in spring.",
+    "exampleCn": "春天树枝上出现了一个小芽。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 2165,
+    "word": "reproduce",
+    "phonetic": "/ˌriːprəˈduːs/",
+    "pos": "v.",
+    "meaning": "繁殖/复制/再现",
+    "example": "Some plants reproduce through seeds.",
+    "exampleCn": "一些植物通过种子繁殖。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 2247,
+    "word": "aromatic",
+    "phonetic": "/ˌærəˈmætɪk/",
+    "pos": "adj.",
+    "meaning": "芳香的/有香味的",
+    "example": "Aromatic herbs were added to the soup.",
+    "exampleCn": "汤里加入了芳香的草药。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 2273,
+    "word": "decay",
+    "phonetic": "/dɪˈkeɪ/",
+    "pos": "v./n.",
+    "meaning": "腐烂/衰退/衰变",
+    "example": "The old building began to decay after years of neglect.",
+    "exampleCn": "这座旧建筑在多年无人维护后开始衰败。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 2370,
+    "word": "reclaim",
+    "phonetic": "/rɪˈkleɪm/",
+    "pos": "v.",
+    "meaning": "收回/开垦/重新利用",
+    "example": "The city plans to reclaim abandoned land for parks.",
+    "exampleCn": "这座城市计划将废弃土地重新利用为公园。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 2481,
+    "word": "sow",
+    "phonetic": "/soʊ/",
+    "pos": "v./n.",
+    "meaning": "播种/母猪",
+    "example": "Farmers sow wheat in the autumn.",
+    "exampleCn": "农民在秋天播种小麦。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 2522,
+    "word": "decompose",
+    "phonetic": "/ˌdiːkəmˈpoʊz/",
+    "pos": "v.",
+    "meaning": "分解/腐烂",
+    "example": "Leaves decompose and enrich the soil.",
+    "exampleCn": "树叶分解后会肥沃土壤。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 2576,
+    "word": "heap",
+    "phonetic": "/hiːp/",
+    "pos": "n./v.",
+    "meaning": "一堆/堆积",
+    "example": "A heap of stones blocked the path.",
+    "exampleCn": "一堆石头挡住了小路。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 2690,
+    "word": "pluck",
+    "phonetic": "/plʌk/",
+    "pos": "v./n.",
+    "meaning": "拔/采摘/勇气",
+    "example": "She plucked a flower from the garden.",
+    "exampleCn": "她从花园里摘了一朵花。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 2806,
+    "word": "perennial",
+    "phonetic": "/pəˈreniəl/",
+    "pos": "adj./n.",
+    "meaning": "多年生的/长期存在的/多年生植物",
+    "example": "Drought is a perennial problem in the region.",
+    "exampleCn": "干旱是该地区长期存在的问题。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 2902,
+    "word": "germinate",
+    "phonetic": "/ˈdʒɜːrmɪneɪt/",
+    "pos": "v.",
+    "meaning": "发芽/萌发/产生",
+    "example": "Seeds germinate faster in warm, moist soil.",
+    "exampleCn": "种子在温暖潮湿的土壤中发芽更快。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 2908,
+    "word": "yield",
+    "phonetic": "/jiːld/",
+    "pos": "v./n.",
+    "meaning": "产生/屈服/让步/产量/收益",
+    "example": "The experiment yielded useful results.",
+    "exampleCn": "这个实验产生了有用的结果。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 2911,
+    "word": "stack",
+    "phonetic": "/stæk/",
+    "pos": "n./v.",
+    "meaning": "一堆/堆叠",
+    "example": "Please stack the chairs against the wall.",
+    "exampleCn": "请把椅子靠墙叠起来。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 2982,
+    "word": "pollen",
+    "phonetic": "/ˈpɑːlən/",
+    "pos": "n.",
+    "meaning": "花粉",
+    "example": "Bees carry pollen from flower to flower.",
+    "exampleCn": "蜜蜂把花粉从一朵花带到另一朵花。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3011,
+    "word": "fluctuate",
+    "phonetic": "/ˈflʌktʃueɪt/",
+    "pos": "v.",
+    "meaning": "波动/起伏/变动",
+    "example": "Prices fluctuate with supply and demand.",
+    "exampleCn": "价格会随供求关系波动。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3110,
+    "word": "photosynthesis",
+    "phonetic": "/ˌfoʊtoʊˈsɪnθəsɪs/",
+    "pos": "n.",
+    "meaning": "光合作用",
+    "example": "Plants use photosynthesis to turn sunlight into energy.",
+    "exampleCn": "植物利用光合作用把阳光转化为能量。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3169,
+    "word": "horticulture",
+    "phonetic": "/ˈhɔːrtɪkʌltʃər/",
+    "pos": "n.",
+    "meaning": "园艺学",
+    "example": "Horticulture focuses on growing fruits, vegetables, and ornamental plants.",
+    "exampleCn": "园艺学关注水果、蔬菜和观赏植物的种植。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3704,
+    "word": "respire",
+    "phonetic": "rɪˈspaɪə",
+    "pos": "v.",
+    "meaning": "呼吸",
+    "example": "All living organisms need to respire.",
+    "exampleCn": "所有生物都需要呼吸。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3705,
+    "word": "dioxide",
+    "phonetic": "daɪˈɒksaɪd",
+    "pos": "n.",
+    "meaning": "二氧化碳",
+    "example": "Carbon dioxide is a greenhouse gas.",
+    "exampleCn": "二氧化碳是一种温室气体。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3706,
+    "word": "eco-friendly",
+    "phonetic": "ˈiːkəʊ ˈfrendli",
+    "pos": "adj.",
+    "meaning": "环保的",
+    "example": "They use eco-friendly packaging for their products.",
+    "exampleCn": "他们的产品使用环保包装。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3707,
+    "word": "genetics",
+    "phonetic": "dʒæˈnetɪks",
+    "pos": "n.",
+    "meaning": "遗传学",
+    "example": "Genetics plays a key role in modern medicine.",
+    "exampleCn": "遗传学在现代医学中起着关键作用。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3708,
+    "word": "mutation",
+    "phonetic": "mjuːˈteɪʃn",
+    "pos": "n.",
+    "meaning": "突变/变异",
+    "example": "A gene mutation can cause the disease.",
+    "exampleCn": "基因突变可能导致这种疾病。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3709,
+    "word": "hybridisation",
+    "phonetic": "ˌhaɪbrɪdaɪˈzeɪʃn",
+    "pos": "n.",
+    "meaning": "杂交",
+    "example": "Hybridisation can produce stronger crop varieties.",
+    "exampleCn": "杂交可以产生更强的作物品种。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3710,
+    "word": "pick",
+    "phonetic": "pɪk",
+    "pos": "v.",
+    "meaning": "采摘/挑选",
+    "example": "They went to the farm to pick strawberries.",
+    "exampleCn": "他们去农场摘草莓。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3711,
+    "word": "arable",
+    "phonetic": "ˈærəbl",
+    "pos": "adj.",
+    "meaning": "可耕种的",
+    "example": "Much of the arable land is used for growing wheat.",
+    "exampleCn": "大部分可耕地用于种植小麦。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3712,
+    "word": "plough",
+    "phonetic": "plaʊ",
+    "pos": "v/n.",
+    "meaning": "犁地/犁",
+    "example": "Farmers plough the fields before planting.",
+    "exampleCn": "农民在种植前先犁地。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3713,
+    "word": "spade",
+    "phonetic": "speɪd",
+    "pos": "n.",
+    "meaning": "铲子/锹",
+    "example": "He dug a hole with a spade.",
+    "exampleCn": "他用铲子挖了一个坑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3714,
+    "word": "rake",
+    "phonetic": "reɪk",
+    "pos": "n/v.",
+    "meaning": "耙子/耙平",
+    "example": "She used a rake to gather the fallen leaves.",
+    "exampleCn": "她用耙子把落叶聚拢起来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3715,
+    "word": "vase",
+    "phonetic": "vɑːz",
+    "pos": "n.",
+    "meaning": "花瓶",
+    "example": "She put the roses in a glass vase.",
+    "exampleCn": "她把玫瑰放进了一个玻璃花瓶里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3716,
+    "word": "sunlight",
+    "phonetic": "ˈsʌnlaɪt",
+    "pos": "n.",
+    "meaning": "阳光",
+    "example": "The room was filled with warm sunlight.",
+    "exampleCn": "房间里充满了温暖的阳光。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3717,
+    "word": "short-day",
+    "phonetic": "ʃɔːt deɪ",
+    "pos": "adj.",
+    "meaning": "短日照的",
+    "example": "Short-day plants flower when days are shorter.",
+    "exampleCn": "短日照植物在白天较短时开花。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3718,
+    "word": "shade-tolerant",
+    "phonetic": "ʃeɪd ˈtɒlərənt",
+    "pos": "adj.",
+    "meaning": "耐阴的",
+    "example": "Ferns are shade-tolerant plants.",
+    "exampleCn": "蕨类植物是耐阴植物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3719,
+    "word": "fungus",
+    "phonetic": "ˈfʌŋɡəs",
+    "pos": "n.",
+    "meaning": "真菌",
+    "example": "Mushrooms are a type of fungus.",
+    "exampleCn": "蘑菇是一种真菌。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3720,
+    "word": "mould",
+    "phonetic": "məʊld",
+    "pos": "n/v.",
+    "meaning": "霉菌/塑造",
+    "example": "There was mould growing on the old bread.",
+    "exampleCn": "旧面包上长了霉菌。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3721,
+    "word": "seed",
+    "phonetic": "siːd",
+    "pos": "n.",
+    "meaning": "种子",
+    "example": "She planted the seeds in rows.",
+    "exampleCn": "她将种子成排地种下。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3722,
+    "word": "burgeon",
+    "phonetic": "ˈbɜːdʒən",
+    "pos": "n/v.",
+    "meaning": "嫩芽/发芽/迅速生长",
+    "example": "New leaves burgeon in the spring.",
+    "exampleCn": "新叶在春天发芽。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3723,
+    "word": "flower",
+    "phonetic": "ˈflaʊə",
+    "pos": "n/v.",
+    "meaning": "花/开花",
+    "example": "The cherry trees flower in early spring.",
+    "exampleCn": "樱花树在早春开花。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3724,
+    "word": "ripen",
+    "phonetic": "ˈraɪpən",
+    "pos": "v.",
+    "meaning": "成熟",
+    "example": "The tomatoes will ripen in the sun.",
+    "exampleCn": "西红柿在阳光下会成熟。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3725,
+    "word": "fruit",
+    "phonetic": "fruːt",
+    "pos": "v.",
+    "meaning": "结果实",
+    "example": "The apple trees fruit in late summer.",
+    "exampleCn": "苹果树在夏末结果。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3726,
+    "word": "wither",
+    "phonetic": "ˈwɪðə",
+    "pos": "v.",
+    "meaning": "枯萎/凋谢",
+    "example": "The flowers began to wither without water.",
+    "exampleCn": "没有水，花开始枯萎了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  },
+  {
+    "id": 3727,
+    "word": "stale",
+    "phonetic": "steɪl",
+    "pos": "adj.",
+    "meaning": "不新鲜的/陈腐的",
+    "example": "The bread has gone stale.",
+    "exampleCn": "面包已经不新鲜了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
+  }
+]

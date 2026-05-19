@@ -1,0 +1,936 @@
+[
+  {
+    "id": 121,
+    "word": "alternate",
+    "phonetic": "/ˈɔːltərnət/",
+    "pos": "adj./v.",
+    "meaning": "交替的/轮流发生",
+    "example": "The class will alternate between lectures and discussions.",
+    "exampleCn": "这门课将在讲座和讨论之间交替进行。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "9"
+  },
+  {
+    "id": 211,
+    "word": "barrier",
+    "phonetic": "/ˈbæriər/",
+    "pos": "n.",
+    "meaning": "障碍，屏障",
+    "example": "Language barrier can be a challenge.",
+    "exampleCn": "语言障碍可能是一个挑战。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 352,
+    "word": "cage",
+    "phonetic": "/keɪdʒ/",
+    "pos": "n.",
+    "meaning": "笼子",
+    "example": "The bird is in the cage.",
+    "exampleCn": "鸟在笼子里。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 399,
+    "word": "cell",
+    "phonetic": "/sel/",
+    "pos": "n.",
+    "meaning": "细胞；小房间",
+    "example": "The human body contains millions of cells.",
+    "exampleCn": "人体含有数以百万计的细胞。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "9"
+  },
+  {
+    "id": 525,
+    "word": "prey",
+    "phonetic": "/preɪ/",
+    "pos": "n.",
+    "meaning": "猎物；牺牲品",
+    "example": "The lion hunted its prey.",
+    "exampleCn": "狮子捕猎它的猎物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "9"
+  },
+  {
+    "id": 574,
+    "word": "instinct",
+    "phonetic": "/ˈɪnstɪŋkt/",
+    "pos": "n.",
+    "meaning": "本能；直觉；天性",
+    "example": "Birds learn to fly by instinct.",
+    "exampleCn": "鸟儿凭本能学会飞行。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "9"
+  },
+  {
+    "id": 580,
+    "word": "virus",
+    "phonetic": "/ˈvaɪrəs/",
+    "pos": "n.",
+    "meaning": "病毒；有害影响",
+    "example": "The computer virus damaged the files.",
+    "exampleCn": "电脑病毒损坏了文件。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "9"
+  },
+  {
+    "id": 846,
+    "word": "sensitive",
+    "phonetic": "/ˈsensətɪv/",
+    "pos": "adj.",
+    "meaning": "敏感的；易受影响的；灵敏的",
+    "example": "She is sensitive to criticism.",
+    "exampleCn": "她对批评敏感。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "9"
+  },
+  {
+    "id": 944,
+    "word": "stable",
+    "phonetic": "/ˈsteɪbl/",
+    "pos": "adj.",
+    "meaning": "稳定的",
+    "example": "The patient is now in stable condition.",
+    "exampleCn": "病人现在情况稳定。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "9"
+  },
+  {
+    "id": 1013,
+    "word": "flexible",
+    "phonetic": "/ˈfleksəbl/",
+    "pos": "adj.",
+    "meaning": "灵活的/柔韧的",
+    "example": "We need a flexible schedule./Yoga helps keep your body flexible.",
+    "exampleCn": "我们需要一个灵活的时间安排。/瑜伽有助于让身体保持柔韧。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "9"
+  },
+  {
+    "id": 1025,
+    "word": "trace",
+    "phonetic": "/treɪs/",
+    "pos": "n./v.",
+    "meaning": "痕迹/追踪，追溯",
+    "example": "Police found no trace of the missing car./Researchers traced the disease to contaminated water.",
+    "exampleCn": "警方没有找到失踪车辆的任何痕迹。/研究人员追查到这种疾病源于受污染的水。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "9"
+  },
+  {
+    "id": 1086,
+    "word": "bark",
+    "phonetic": "/bɑːrk/",
+    "pos": "n./v.",
+    "meaning": "树皮/吠叫",
+    "example": "The bark of this tree is very thick./The dog barked loudly at night.",
+    "exampleCn": "这棵树的树皮很厚。/那只狗晚上大声吠叫。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "9"
+  },
+  {
+    "id": 1147,
+    "word": "nest",
+    "phonetic": "/nest/",
+    "pos": "n./v.",
+    "meaning": "巢；窝/筑巢",
+    "example": "The birds built a nest in the tree.",
+    "exampleCn": "鸟儿在树上筑了一个巢。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "9"
+  },
+  {
+    "id": 1152,
+    "word": "defend",
+    "phonetic": "/dɪˈfend/",
+    "pos": "v.",
+    "meaning": "防御；辩护",
+    "example": "The lawyer worked hard to defend her client.",
+    "exampleCn": "律师努力为她的当事人辩护。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "9"
+  },
+  {
+    "id": 1357,
+    "word": "defensive",
+    "phonetic": "/dɪˈfensɪv/",
+    "pos": "adj.",
+    "meaning": "防御的；戒备的",
+    "example": "The team adopted a defensive strategy.",
+    "exampleCn": "这个团队采取了防御策略。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "9"
+  },
+  {
+    "id": 1425,
+    "word": "suffer",
+    "phonetic": "/ˈsʌfər/",
+    "pos": "v.",
+    "meaning": "遭受；忍受",
+    "example": "Many people suffer from seasonal allergies.",
+    "exampleCn": "许多人受季节性过敏困扰。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "9"
+  },
+  {
+    "id": 1500,
+    "word": "secrete",
+    "phonetic": "/sɪˈkriːt/",
+    "pos": "v.",
+    "meaning": "分泌",
+    "example": "Certain glands secrete hormones into the bloodstream.",
+    "exampleCn": "某些腺体会向血液中分泌激素。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "9"
+  },
+  {
+    "id": 1515,
+    "word": "creep",
+    "phonetic": "/kriːp/",
+    "pos": "v./n.",
+    "meaning": "爬行/缓慢移动/讨厌的人",
+    "example": "The fog began to creep across the valley.",
+    "exampleCn": "雾开始缓慢地漫过山谷。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "9"
+  },
+  {
+    "id": 1620,
+    "word": "undergo",
+    "phonetic": "/ˌʌndərˈɡoʊ/",
+    "pos": "v.",
+    "meaning": "经历/经受",
+    "example": "The material must undergo several tests before use.",
+    "exampleCn": "这种材料在使用前必须经过几项测试。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "9"
+  },
+  {
+    "id": 1622,
+    "word": "exterminate",
+    "phonetic": "/ɪkˈstɜːrmɪneɪt/",
+    "pos": "v.",
+    "meaning": "消灭/根除",
+    "example": "The campaign aimed to exterminate the invasive insects.",
+    "exampleCn": "这项行动旨在消灭入侵昆虫。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "9"
+  },
+  {
+    "id": 1727,
+    "word": "shepherd",
+    "phonetic": "/ˈʃepərd/",
+    "pos": "n./v.",
+    "meaning": "牧羊人/引导",
+    "example": "The guide shepherded the visitors through the museum.",
+    "exampleCn": "导游带领游客参观了博物馆。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "9"
+  },
+  {
+    "id": 1750,
+    "word": "optical",
+    "phonetic": "/ˈɑːptɪkl/",
+    "pos": "adj.",
+    "meaning": "光学的/视觉的",
+    "example": "An optical instrument can make distant objects look closer.",
+    "exampleCn": "光学仪器可以让远处物体看起来更近。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "9"
+  },
+  {
+    "id": 2008,
+    "word": "habitat",
+    "phonetic": "/ˈhæbɪtæt/",
+    "pos": "n.",
+    "meaning": "栖息地/生长环境",
+    "example": "Wetlands provide a habitat for many bird species.",
+    "exampleCn": "湿地为许多鸟类提供栖息地。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "9"
+  },
+  {
+    "id": 2244,
+    "word": "rub",
+    "phonetic": "/rʌb/",
+    "pos": "v./n.",
+    "meaning": "摩擦/擦/困难",
+    "example": "Do not rub your eyes with dirty hands.",
+    "exampleCn": "不要用脏手揉眼睛。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "9"
+  },
+  {
+    "id": 2564,
+    "word": "anatomy",
+    "phonetic": "/əˈnætəmi/",
+    "pos": "n.",
+    "meaning": "解剖学/身体结构",
+    "example": "Students studied the anatomy of the human heart.",
+    "exampleCn": "学生们学习人体心脏的结构。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "9"
+  },
+  {
+    "id": 2618,
+    "word": "devour",
+    "phonetic": "/dɪˈvaʊər/",
+    "pos": "v.",
+    "meaning": "吞食/狼吞虎咽地吃/贪婪地读",
+    "example": "The children devoured the fresh bread.",
+    "exampleCn": "孩子们狼吞虎咽地吃掉了新鲜面包。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "9"
+  },
+  {
+    "id": 2805,
+    "word": "captive",
+    "phonetic": "/ˈkæptɪv/",
+    "pos": "adj./n.",
+    "meaning": "被俘虏的/受控制的/俘虏",
+    "example": "The animals were bred in captive conditions.",
+    "exampleCn": "这些动物是在圈养条件下繁殖的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "9"
+  },
+  {
+    "id": 2977,
+    "word": "metabolism",
+    "phonetic": "/məˈtæbəlɪzəm/",
+    "pos": "n.",
+    "meaning": "新陈代谢/代谢作用",
+    "example": "Exercise can increase metabolism.",
+    "exampleCn": "运动可以提高新陈代谢。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "9"
+  },
+  {
+    "id": 3041,
+    "word": "tame",
+    "phonetic": "/teɪm/",
+    "pos": "adj./v.",
+    "meaning": "驯服的/温顺的/驯化/控制",
+    "example": "The once wild animal became tame after years of care.",
+    "exampleCn": "经过多年的照料，这只曾经野生的动物变得温顺了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "9"
+  },
+  {
+    "id": 3043,
+    "word": "vulnerable",
+    "phonetic": "/ˈvʌlnərəbl/",
+    "pos": "adj.",
+    "meaning": "易受伤害的/脆弱的",
+    "example": "Young trees are vulnerable to extreme cold.",
+    "exampleCn": "幼树容易受到严寒的伤害。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "9"
+  },
+  {
+    "id": 3062,
+    "word": "barn",
+    "phonetic": "/bɑːrn/",
+    "pos": "n.",
+    "meaning": "谷仓/畜棚",
+    "example": "The farmer stored hay in the barn.",
+    "exampleCn": "农民把干草储存在谷仓里。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "9"
+  },
+  {
+    "id": 3499,
+    "word": "excrete",
+    "phonetic": "/ɪkˈskriːt/",
+    "pos": "v.",
+    "meaning": "排泄/分泌",
+    "example": "The kidneys excrete waste from the blood.",
+    "exampleCn": "肾脏从血液中排泄废物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "6",
+    "list": "4",
+    "ieltsList": "9"
+  },
+  {
+    "id": 3824,
+    "word": "roar",
+    "phonetic": "rɔː",
+    "pos": "n/v.",
+    "meaning": "吼叫/咆哮",
+    "example": "The lion let out a mighty roar.",
+    "exampleCn": "狮子发出了震天的吼声。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3825,
+    "word": "crawl",
+    "phonetic": "krɔːl",
+    "pos": "v/n.",
+    "meaning": "爬/匍匐前进",
+    "example": "The baby learned to crawl before walking.",
+    "exampleCn": "婴儿在学会走路之前先学会了爬。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3826,
+    "word": "hive",
+    "phonetic": "haɪv",
+    "pos": "n/v.",
+    "meaning": "蜂巢/蜂箱",
+    "example": "Bees store honey in the hive.",
+    "exampleCn": "蜜蜂在蜂巢中储存蜂蜜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3827,
+    "word": "hedge",
+    "phonetic": "hedʒ",
+    "pos": "n.",
+    "meaning": "树篱",
+    "example": "A tall hedge surrounded the garden.",
+    "exampleCn": "高高的树篱围绕着花园。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3828,
+    "word": "bar",
+    "phonetic": "bɑː",
+    "pos": "n.",
+    "meaning": "横杆/酒吧",
+    "example": "He leaned against the bar and ordered a drink.",
+    "exampleCn": "他靠在吧台上点了一杯饮料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3829,
+    "word": "epidemic",
+    "phonetic": "ˌepɪˈdemɪk",
+    "pos": "n/adj.",
+    "meaning": "流行病/流行的",
+    "example": "The epidemic spread rapidly through the city.",
+    "exampleCn": "流行病在城市中迅速蔓延。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3830,
+    "word": "germ",
+    "phonetic": "dʒɜːm",
+    "pos": "n.",
+    "meaning": "细菌/病菌",
+    "example": "Wash your hands to kill harmful germs.",
+    "exampleCn": "洗手可以杀死有害的病菌。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3831,
+    "word": "bacteria",
+    "phonetic": "bækˈtɪəriə",
+    "pos": "n.",
+    "meaning": "细菌",
+    "example": "Some bacteria are beneficial to human health.",
+    "exampleCn": "一些细菌对人类健康有益。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3832,
+    "word": "microbe",
+    "phonetic": "ˈmaɪkrəʊb",
+    "pos": "n.",
+    "meaning": "微生物",
+    "example": "Microbes play a vital role in the ecosystem.",
+    "exampleCn": "微生物在生态系统中起着至关重要的作用。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3833,
+    "word": "intuitive",
+    "phonetic": "ɪnˈtjuːɪtɪv",
+    "pos": "adj.",
+    "meaning": "直觉的",
+    "example": "The software has an intuitive interface.",
+    "exampleCn": "这个软件有一个直观的界面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3834,
+    "word": "intuition",
+    "phonetic": "ˌɪntjuˈɪʃn",
+    "pos": "n.",
+    "meaning": "直觉/直觉力",
+    "example": "She trusted her intuition and made the right choice.",
+    "exampleCn": "她相信自己的直觉，做出了正确的选择。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3835,
+    "word": "potential",
+    "phonetic": "pəˈtenʃl",
+    "pos": "adj.",
+    "meaning": "潜在的/可能的",
+    "example": "The new drug has potential benefits for cancer patients.",
+    "exampleCn": "这种新药对癌症患者有潜在的好处。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3836,
+    "word": "intelligence",
+    "phonetic": "ɪnˈtelɪdʒəns",
+    "pos": "n.",
+    "meaning": "智力/情报",
+    "example": "Dolphins show a high level of intelligence.",
+    "exampleCn": "海豚表现出很高的智力水平。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3837,
+    "word": "functional",
+    "phonetic": "ˈfʌŋkʃənl",
+    "pos": "adj.",
+    "meaning": "功能性的/实用的",
+    "example": "The old machine is still functional.",
+    "exampleCn": "这台旧机器仍然可以使用。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3838,
+    "word": "acoustic",
+    "phonetic": "əˈkuːstɪk",
+    "pos": "adj.",
+    "meaning": "声学的/听觉的",
+    "example": "The acoustic design of the concert hall is excellent.",
+    "exampleCn": "音乐厅的声学设计非常出色。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3839,
+    "word": "nocturnal",
+    "phonetic": "nɒkˈtɜːnəl",
+    "pos": "adj.",
+    "meaning": "夜行的/夜间活动的",
+    "example": "Owls and bats are nocturnal animals.",
+    "exampleCn": "猫头鹰和蝙蝠是夜行动物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3840,
+    "word": "dormant",
+    "phonetic": "ˈdɔːmənt",
+    "pos": "adj.",
+    "meaning": "休眠的/蛰伏的",
+    "example": "The volcano has been dormant for over a century.",
+    "exampleCn": "这座火山已经休眠了一个多世纪。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3841,
+    "word": "hibernation",
+    "phonetic": "ˌhaɪbəˈneɪʃn",
+    "pos": "n.",
+    "meaning": "冬眠",
+    "example": "Bears go into hibernation during the winter.",
+    "exampleCn": "熊在冬天进入冬眠。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3842,
+    "word": "track",
+    "phonetic": "træk",
+    "pos": "v/n.",
+    "meaning": "追踪/足迹/轨道",
+    "example": "Scientists track the migration of birds using GPS.",
+    "exampleCn": "科学家使用GPS追踪鸟类的迁徙。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3843,
+    "word": "predator",
+    "phonetic": "ˈpredətə",
+    "pos": "n.",
+    "meaning": "捕食者/天敌",
+    "example": "Sharks are the top predators in the ocean.",
+    "exampleCn": "鲨鱼是海洋中的顶级捕食者。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3844,
+    "word": "victim",
+    "phonetic": "ˈvɪktɪm",
+    "pos": "n.",
+    "meaning": "受害者/牺牲品",
+    "example": "The flood victims were given shelter in a school.",
+    "exampleCn": "洪水灾民在一所学校得到了安置。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3845,
+    "word": "captivate",
+    "phonetic": "ˈkæptɪveɪt",
+    "pos": "v.",
+    "meaning": "迷住/吸引",
+    "example": "The audience was captivated by her performance.",
+    "exampleCn": "观众被她的表演迷住了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3846,
+    "word": "subsistence",
+    "phonetic": "səbˈsɪstəns",
+    "pos": "n.",
+    "meaning": "生存/生计",
+    "example": "The tribe lives at subsistence level.",
+    "exampleCn": "这个部落生活在勉强糊口的水平。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3847,
+    "word": "exist",
+    "phonetic": "ɪɡˈzɪst",
+    "pos": "v.",
+    "meaning": "存在/生存",
+    "example": "Do aliens exist somewhere in the universe?",
+    "exampleCn": "宇宙的某处存在外星人吗？",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3848,
+    "word": "existence",
+    "phonetic": "ɪɡˈzɪstəns",
+    "pos": "n.",
+    "meaning": "存在/生存",
+    "example": "The organisation has been in existence for over fifty years.",
+    "exampleCn": "这个组织已经存在了五十多年。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3849,
+    "word": "tame nature",
+    "phonetic": "teɪm ˈneɪtʃə",
+    "pos": "",
+    "meaning": "征服自然",
+    "example": "Humans have long tried to tame nature.",
+    "exampleCn": "人类长期以来一直试图征服自然。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3850,
+    "word": "keeper",
+    "phonetic": "ˈkiːpə",
+    "pos": "n.",
+    "meaning": "饲养员/看守人",
+    "example": "The zookeeper feeds the lions every afternoon.",
+    "exampleCn": "动物园饲养员每天下午给狮子喂食。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  },
+  {
+    "id": 3851,
+    "word": "sheepdog",
+    "phonetic": "ˈʃiːpdɒɡ",
+    "pos": "n.",
+    "meaning": "牧羊犬",
+    "example": "The sheepdog rounded up the flock.",
+    "exampleCn": "牧羊犬把羊群聚在了一起。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "9"
+  }
+]

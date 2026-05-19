@@ -10,10 +10,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 13,
@@ -90,10 +95,12 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "4"
   },
   {
     "id": 414,
@@ -166,10 +173,15 @@
     "exampleCn": "这种新方法证明非常有效。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 1331,
@@ -481,10 +493,15 @@
     "exampleCn": "这种习俗被认为起源于中国。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 1352,
@@ -511,10 +528,12 @@
     "exampleCn": "道路在山附近急转弯。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "10"
   },
   {
     "id": 1354,
@@ -571,10 +590,12 @@
     "exampleCn": "这个团队采取了防御策略。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "9"
   },
   {
     "id": 1358,
@@ -736,10 +757,12 @@
     "exampleCn": "时间常被描述为第四维度。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "10"
   },
   {
     "id": 1369,
@@ -751,10 +774,15 @@
     "exampleCn": "园丁用手拔除了杂草。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 1370,
@@ -976,10 +1004,15 @@
     "exampleCn": "一群大象缓慢地穿过平原。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 1385,
@@ -1336,10 +1369,15 @@
     "exampleCn": "公司将在下周发布一款新产品。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 1409,
@@ -1516,10 +1554,12 @@
     "exampleCn": "我们在一棵大树的树荫下休息。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "4"
   },
   {
     "id": 1421,
@@ -1531,10 +1571,12 @@
     "exampleCn": "这家工厂被指控排放有毒废物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "3"
   },
   {
     "id": 1422,
@@ -1546,10 +1588,12 @@
     "exampleCn": "这座房子坐落在一个缓坡上。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "3"
   },
   {
     "id": 1423,
@@ -1591,10 +1635,12 @@
     "exampleCn": "许多人受季节性过敏困扰。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "9"
   },
   {
     "id": 1426,
@@ -1756,9 +1802,14 @@
     "exampleCn": "她在大学里学习海洋生态学。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   }
 ]

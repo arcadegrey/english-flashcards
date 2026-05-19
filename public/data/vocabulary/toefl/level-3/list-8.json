@@ -161,10 +161,15 @@
     "exampleCn": "植物从土壤中吸收养分。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 1146,
@@ -191,10 +196,12 @@
     "exampleCn": "鸟儿在树上筑了一个巢。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "9"
   },
   {
     "id": 1148,
@@ -266,10 +273,12 @@
     "exampleCn": "律师努力为她的当事人辩护。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "9"
   },
   {
     "id": 1153,
@@ -341,10 +350,15 @@
     "exampleCn": "农民预计今年会有好收成。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 1158,
@@ -506,10 +520,15 @@
     "exampleCn": "这个项目需要相当大的资金支持。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 1169,
@@ -1288,10 +1307,12 @@
     "exampleCn": "水继续从天花板上滴下来。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "4"
   },
   {
     "id": 1221,

@@ -198,10 +198,15 @@
     "exampleCn": "这座旧建筑在多年无人维护后开始衰败。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2274,
@@ -1100,10 +1105,15 @@
     "exampleCn": "团队以最大努力工作。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2334,
@@ -1220,10 +1230,12 @@
     "exampleCn": "月食发生在地球挡住照向月球的阳光时。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "4"
   },
   {
     "id": 2342,
@@ -1537,10 +1549,12 @@
     "exampleCn": "大雨可能会淹没低洼田地。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "4"
   },
   {
     "id": 2363,
@@ -1552,10 +1566,15 @@
     "exampleCn": "一群鸟飞过湖面。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2364,
@@ -1657,10 +1676,15 @@
     "exampleCn": "这座城市计划将废弃土地重新利用为公园。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5"
+    ]
   },
   {
     "id": 2371,
@@ -1749,10 +1773,15 @@
     "exampleCn": "光合作用是植物制造养分的一种机制。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2377,
@@ -1809,10 +1838,12 @@
     "exampleCn": "这个圆的半径是五厘米。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "10"
   },
   {
     "id": 2381,
@@ -1944,10 +1975,15 @@
     "exampleCn": "放学后孩子们在草坪上玩耍。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6"
+    ]
   },
   {
     "id": 2390,
@@ -2124,10 +2160,15 @@
     "exampleCn": "人类和猴子都属于灵长类动物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2402,

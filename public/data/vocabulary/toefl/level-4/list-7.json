@@ -138,10 +138,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 389,
@@ -320,10 +325,12 @@
     "exampleCn": "一氧化碳是一种常见的空气污染物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "3"
   },
   {
     "id": 2004,
@@ -397,10 +404,12 @@
     "exampleCn": "湿地为许多鸟类提供栖息地。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "9"
   },
   {
     "id": 2009,
@@ -577,10 +586,12 @@
     "exampleCn": "考试前压力开始增加。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "3"
   },
   {
     "id": 2021,
@@ -892,10 +903,15 @@
     "exampleCn": "博物馆展出了一件古老的象牙雕刻。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 2042,
@@ -982,10 +998,15 @@
     "exampleCn": "寄生虫生活在另一种生物体表或体内。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8"
+    ]
   },
   {
     "id": 2048,
@@ -1057,10 +1078,15 @@
     "exampleCn": "鱼类是脊椎动物，因为它们有脊椎。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7"
+    ]
   },
   {
     "id": 2053,
@@ -1087,10 +1113,12 @@
     "exampleCn": "河流把沉积物带向大海。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "3"
   },
   {
     "id": 2055,
@@ -1417,10 +1445,12 @@
     "exampleCn": "水在炎热天气中会蒸发得更快。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "4"
   },
   {
     "id": 2077,
@@ -1492,9 +1522,11 @@
     "exampleCn": "天文学帮助我们了解恒星和行星。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "10"
   }
 ]

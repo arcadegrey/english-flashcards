@@ -468,10 +468,12 @@
     "exampleCn": "探险者在北极面对严寒的气温。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "3"
   },
   {
     "id": 3233,

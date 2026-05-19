@@ -2,6 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath, pathToFileURL } from 'url';
 import {
+  getWordIeltsLists,
   wordHasExternalExamCategory,
   wordHasIeltsCategory,
   wordHasToeflCategory,
@@ -80,13 +81,16 @@ const splitVocabulary = async (vocabulary) => {
     }
 
     if (wordHasIeltsCategory(word)) {
-      const list = extractNumericTag(word.ieltsList) || extractNumericTag(word.list) || 'unknown';
+      const lists = getWordIeltsLists(word);
+      const targetLists = lists.length > 0 ? lists : ['unknown'];
 
-      if (!ieltsBuckets.has(list)) {
-        ieltsBuckets.set(list, { list, words: [] });
-      }
+      targetLists.forEach((list) => {
+        if (!ieltsBuckets.has(list)) {
+          ieltsBuckets.set(list, { list, words: [] });
+        }
 
-      ieltsBuckets.get(list).words.push(word);
+        ieltsBuckets.get(list).words.push(word);
+      });
     }
   });
 
