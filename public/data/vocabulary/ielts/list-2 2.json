@@ -1,0 +1,923 @@
+[
+  {
+    "id": 96,
+    "word": "aggravate",
+    "phonetic": "/ˈæɡrəveɪt/",
+    "pos": "v.",
+    "meaning": "加重，恶化；激怒",
+    "example": "The situation was aggravated by the storm.",
+    "exampleCn": "局势因暴风雨而恶化。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 467,
+    "word": "climate",
+    "phonetic": "/ˈklaɪmət/",
+    "pos": "n.",
+    "meaning": "气候",
+    "example": "The climate here is mild.",
+    "exampleCn": "这里的气候温和。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 481,
+    "word": "coast",
+    "phonetic": "/koʊst/",
+    "pos": "n.",
+    "meaning": "海岸",
+    "example": "They drove along the coast.",
+    "exampleCn": "他们沿着海岸开车。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 531,
+    "word": "polar",
+    "phonetic": "/ˈpəʊlə(r)/",
+    "pos": "adj.",
+    "meaning": "极地的；两极的；完全相反的",
+    "example": "Polar bears live in the Arctic.",
+    "exampleCn": "北极熊生活在北极。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "2"
+  },
+  {
+    "id": 587,
+    "word": "Antarctic",
+    "phonetic": "/ænˈtɑːktɪk/",
+    "pos": "adj./n.",
+    "meaning": "南极的；南极洲",
+    "example": "The Antarctic is covered with ice.",
+    "exampleCn": "南极洲被冰雪覆盖。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "2"
+  },
+  {
+    "id": 888,
+    "word": "smooth",
+    "phonetic": "/smuːð/",
+    "pos": "adj./v.",
+    "meaning": "光滑的；使平滑",
+    "example": "The table has a smooth surface.",
+    "exampleCn": "这张桌子表面很光滑。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "2"
+  },
+  {
+    "id": 909,
+    "word": "damp",
+    "phonetic": "/dæmp/",
+    "pos": "adj.",
+    "meaning": "潮湿的",
+    "example": "The floor was still damp after cleaning.",
+    "exampleCn": "清理后地板仍然是湿的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "2"
+  },
+  {
+    "id": 961,
+    "word": "shallow",
+    "phonetic": "/ˈʃæloʊ/",
+    "pos": "adj.",
+    "meaning": "浅的/肤浅的",
+    "example": "The river is shallow near the bank./His understanding of the issue was shallow.",
+    "exampleCn": "河岸附近的河水很浅。/他对这个问题的理解很肤浅。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "2"
+  },
+  {
+    "id": 1047,
+    "word": "hemisphere",
+    "phonetic": "/ˈhemɪsfɪr/",
+    "pos": "n.",
+    "meaning": "半球",
+    "example": "China is in the Northern Hemisphere.",
+    "exampleCn": "中国位于北半球。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "2"
+  },
+  {
+    "id": 1505,
+    "word": "steep",
+    "phonetic": "/stiːp/",
+    "pos": "adj./v.",
+    "meaning": "陡峭的/急剧的/浸泡",
+    "example": "The trail became steep near the top of the mountain.",
+    "exampleCn": "小路在接近山顶时变得陡峭。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "2"
+  },
+  {
+    "id": 1575,
+    "word": "parallel",
+    "phonetic": "/ˈpærəlel/",
+    "pos": "adj./n./v.",
+    "meaning": "平行的/相似之处/与…相似",
+    "example": "The two roads run parallel to each other.",
+    "exampleCn": "这两条路彼此平行。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "2"
+  },
+  {
+    "id": 1791,
+    "word": "arid",
+    "phonetic": "/ˈærɪd/",
+    "pos": "adj.",
+    "meaning": "干旱的",
+    "example": "Cacti survive well in arid climates.",
+    "exampleCn": "仙人掌在干旱气候中生长良好。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "2"
+  },
+  {
+    "id": 1888,
+    "word": "humid",
+    "phonetic": "/ˈhjuːmɪd/",
+    "pos": "adj.",
+    "meaning": "潮湿的/湿热的",
+    "example": "The air was hot and humid after the rain.",
+    "exampleCn": "雨后空气又热又潮湿。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "2"
+  },
+  {
+    "id": 1961,
+    "word": "rough",
+    "phonetic": "/rʌf/",
+    "pos": "adj./adv./v.",
+    "meaning": "粗糙的/艰难的/大致的/粗暴地处理",
+    "example": "The rough surface made the stone hard to polish.",
+    "exampleCn": "粗糙的表面使这块石头很难打磨。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "2"
+  },
+  {
+    "id": 2004,
+    "word": "degrade",
+    "phonetic": "/dɪˈɡreɪd/",
+    "pos": "v.",
+    "meaning": "降低/退化/降解",
+    "example": "Plastic can degrade slowly in the environment.",
+    "exampleCn": "塑料在环境中可能会缓慢降解。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "2"
+  },
+  {
+    "id": 2108,
+    "word": "moderate",
+    "phonetic": "/ˈmɑːdərət/",
+    "pos": "adj./n./v.",
+    "meaning": "适度的/温和的/中间派/缓和",
+    "example": "Moderate exercise can improve health.",
+    "exampleCn": "适度运动可以改善健康。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "2"
+  },
+  {
+    "id": 2180,
+    "word": "thermal",
+    "phonetic": "/ˈθɜːrməl/",
+    "pos": "adj.",
+    "meaning": "热的/保暖的/温泉的",
+    "example": "Thermal energy can be transferred through metal quickly.",
+    "exampleCn": "热能可以通过金属快速传递。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "2"
+  },
+  {
+    "id": 2256,
+    "word": "Mediterranean",
+    "phonetic": "/ˌmedɪtəˈreɪniən/",
+    "pos": "adj./n.",
+    "meaning": "地中海的/地中海地区",
+    "example": "Mediterranean climates are often dry in summer.",
+    "exampleCn": "地中海气候夏季通常干燥。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "2"
+  },
+  {
+    "id": 2374,
+    "word": "equator",
+    "phonetic": "/ɪˈkweɪtər/",
+    "pos": "n.",
+    "meaning": "赤道",
+    "example": "Countries near the equator often have warm climates.",
+    "exampleCn": "赤道附近的国家通常气候温暖。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "2"
+  },
+  {
+    "id": 2507,
+    "word": "vertical",
+    "phonetic": "/ˈvɜːrtɪkl/",
+    "pos": "adj./n.",
+    "meaning": "垂直的/垂直线",
+    "example": "The graph has a vertical axis and a horizontal axis.",
+    "exampleCn": "这张图有一条纵轴和一条横轴。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "2"
+  },
+  {
+    "id": 2550,
+    "word": "plateau",
+    "phonetic": "/plæˈtoʊ/",
+    "pos": "n./v.",
+    "meaning": "高原/稳定期/进入停滞期",
+    "example": "After rapid growth, sales reached a plateau.",
+    "exampleCn": "快速增长之后，销售额进入了稳定期。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "2"
+  },
+  {
+    "id": 2565,
+    "word": "peninsula",
+    "phonetic": "/pəˈnɪnsələ/",
+    "pos": "n.",
+    "meaning": "半岛",
+    "example": "The city is located on a narrow peninsula.",
+    "exampleCn": "这座城市位于一个狭窄的半岛上。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "2"
+  },
+  {
+    "id": 2686,
+    "word": "moist",
+    "phonetic": "/mɔɪst/",
+    "pos": "adj.",
+    "meaning": "潮湿的",
+    "example": "Seeds grow well in moist soil.",
+    "exampleCn": "种子在潮湿的土壤中生长良好。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "2"
+  },
+  {
+    "id": 3118,
+    "word": "axis",
+    "phonetic": "/ˈæksɪs/",
+    "pos": "n.",
+    "meaning": "轴/轴线",
+    "example": "Earth rotates on its axis once every twenty-four hours.",
+    "exampleCn": "地球每二十四小时绕地轴自转一次。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "2"
+  },
+  {
+    "id": 3127,
+    "word": "erode",
+    "phonetic": "/ɪˈroʊd/",
+    "pos": "v.",
+    "meaning": "侵蚀/削弱",
+    "example": "Wind and water slowly erode the surface of the rock.",
+    "exampleCn": "风和水会慢慢侵蚀岩石表面。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "2"
+  },
+  {
+    "id": 3224,
+    "word": "deteriorate",
+    "phonetic": "/dɪˈtɪriəreɪt/",
+    "pos": "v.",
+    "meaning": "恶化/退化/变坏",
+    "example": "The road began to deteriorate after years of heavy traffic.",
+    "exampleCn": "多年繁忙交通后，这条路开始破损。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "2"
+  },
+  {
+    "id": 3297,
+    "word": "superficial",
+    "phonetic": "/ˌsuːpərˈfɪʃl/",
+    "pos": "adj.",
+    "meaning": "表面的/肤浅的/浅层的",
+    "example": "The report gave only a superficial explanation of the problem.",
+    "exampleCn": "这份报告只对问题作了肤浅的解释。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "2"
+  },
+  {
+    "id": 3406,
+    "word": "brook",
+    "phonetic": "/brʊk/",
+    "pos": "n./v.",
+    "meaning": "小溪/容忍",
+    "example": "A clear brook flowed through the valley.",
+    "exampleCn": "一条清澈的小溪流过山谷。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "6",
+    "list": "2",
+    "ieltsList": "2"
+  },
+  {
+    "id": 3568,
+    "word": "Oceania",
+    "phonetic": "/ˌoʊʃiˈɑːniə/",
+    "pos": "n.",
+    "meaning": "大洋洲",
+    "example": "Oceania includes Australia, New Zealand, and many Pacific islands.",
+    "exampleCn": "大洋洲包括澳大利亚、新西兰和许多太平洋岛屿。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "6",
+    "list": "5",
+    "ieltsList": "2"
+  },
+  {
+    "id": 3606,
+    "word": "plain",
+    "phonetic": "/pleɪn/",
+    "pos": "n./adj.",
+    "meaning": "平原/简单的/朴素的",
+    "example": "Cattle grazed on the open plain.",
+    "exampleCn": "牛群在开阔的平原上吃草。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3607,
+    "word": "oasis",
+    "phonetic": "/əʊˈeɪ.sɪs/",
+    "pos": "n.",
+    "meaning": "绿洲",
+    "example": "The travellers rested at an oasis in the desert.",
+    "exampleCn": "旅行者在沙漠中的绿洲休息。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3608,
+    "word": "globe",
+    "phonetic": "/ɡləʊb/",
+    "pos": "n.",
+    "meaning": "地球/球体",
+    "example": "Satellites send data to stations around the globe.",
+    "exampleCn": "卫星向全球各地的站点发送数据。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3609,
+    "word": "equal",
+    "phonetic": "/ˈiː.kwəl/",
+    "pos": "adj.",
+    "meaning": "相等的/平等的",
+    "example": "The two groups received equal amounts of water.",
+    "exampleCn": "两个小组得到了等量的水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3610,
+    "word": "Arctic",
+    "phonetic": "/ˈɑːk.tɪk/",
+    "pos": "n./adj.",
+    "meaning": "北极/北极的",
+    "example": "Arctic sea ice is thinner than it used to be.",
+    "exampleCn": "北极海冰比过去更薄。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3611,
+    "word": "pole",
+    "phonetic": "/pəʊl/",
+    "pos": "n.",
+    "meaning": "极点/杆",
+    "example": "Scientists collected samples near the South Pole.",
+    "exampleCn": "科学家在南极点附近采集了样本。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3612,
+    "word": "upgrade",
+    "phonetic": "/ˌʌpˈɡreɪd/",
+    "pos": "v.",
+    "meaning": "升级/改进",
+    "example": "The city plans to upgrade its drainage system.",
+    "exampleCn": "这座城市计划升级排水系统。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3613,
+    "word": "Atlantic",
+    "phonetic": "/ətˈlæn.tɪk/",
+    "pos": "n./adj.",
+    "meaning": "大西洋/大西洋的",
+    "example": "The ship crossed the Atlantic in six days.",
+    "exampleCn": "这艘船六天横渡了大西洋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3614,
+    "word": "ocean",
+    "phonetic": "/ˈəʊ.ʃən/",
+    "pos": "n.",
+    "meaning": "海洋",
+    "example": "The ocean absorbs a large amount of heat.",
+    "exampleCn": "海洋吸收大量热量。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3615,
+    "word": "Pacific",
+    "phonetic": "/pəˈsɪf.ɪk/",
+    "pos": "n./adj.",
+    "meaning": "太平洋/太平洋的",
+    "example": "Many islands are located in the Pacific.",
+    "exampleCn": "许多岛屿位于太平洋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3616,
+    "word": "marine",
+    "phonetic": "/məˈriːn/",
+    "pos": "n./adj.",
+    "meaning": "海洋的/海事的/海军陆战队员",
+    "example": "Marine animals are sensitive to water pollution.",
+    "exampleCn": "海洋动物对水污染很敏感。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3617,
+    "word": "navigation",
+    "phonetic": "/ˌnæv.ɪˈɡeɪ.ʃən/",
+    "pos": "n.",
+    "meaning": "导航/航行",
+    "example": "Good navigation is essential in open water.",
+    "exampleCn": "在开阔水域中良好的导航至关重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3618,
+    "word": "gulf",
+    "phonetic": "/ɡʌlf/",
+    "pos": "n.",
+    "meaning": "海湾/巨大差距",
+    "example": "The river flows into a large gulf.",
+    "exampleCn": "这条河流入一个大海湾。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3619,
+    "word": "beach",
+    "phonetic": "/biːtʃ/",
+    "pos": "n.",
+    "meaning": "海滩",
+    "example": "Children collected shells on the beach.",
+    "exampleCn": "孩子们在海滩上捡贝壳。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3620,
+    "word": "shore",
+    "phonetic": "/ʃɔːr/",
+    "pos": "n.",
+    "meaning": "岸/滨",
+    "example": "The boat moved slowly toward the shore.",
+    "exampleCn": "小船慢慢驶向岸边。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3621,
+    "word": "tide",
+    "phonetic": "/taɪd/",
+    "pos": "n.",
+    "meaning": "潮汐",
+    "example": "The tide rises quickly in this bay.",
+    "exampleCn": "这个海湾的潮水上涨得很快。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3622,
+    "word": "current",
+    "phonetic": "/ˈkʌr.ənt/",
+    "pos": "n.",
+    "meaning": "水流/气流/电流",
+    "example": "A strong current carried the boat downstream.",
+    "exampleCn": "一股强流把小船带向下游。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3623,
+    "word": "stream",
+    "phonetic": "/striːm/",
+    "pos": "n./v.",
+    "meaning": "小溪/流/流动",
+    "example": "Clear water streamed over the rocks.",
+    "exampleCn": "清澈的水流过岩石。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3624,
+    "word": "source",
+    "phonetic": "/sɔːs/",
+    "pos": "n.",
+    "meaning": "来源/源头",
+    "example": "The lake is the source of the river.",
+    "exampleCn": "这个湖是这条河的源头。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3625,
+    "word": "flat",
+    "phonetic": "/flæt/",
+    "pos": "adj./n.",
+    "meaning": "平坦的/公寓/轮胎瘪了",
+    "example": "The land is flat near the river.",
+    "exampleCn": "河边的土地很平坦。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3626,
+    "word": "sandy",
+    "phonetic": "/ˈsæn.di/",
+    "pos": "adj.",
+    "meaning": "多沙的/沙质的",
+    "example": "Cactus plants can grow in sandy soil.",
+    "exampleCn": "仙人掌可以在沙质土壤中生长。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3627,
+    "word": "stony",
+    "phonetic": "/ˈstəʊ.ni/",
+    "pos": "adj.",
+    "meaning": "多石的/冷漠的",
+    "example": "The path became stony near the hill.",
+    "exampleCn": "小路在靠近山丘时变得多石。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3628,
+    "word": "narrow",
+    "phonetic": "/ˈnær.əʊ/",
+    "pos": "n./adj./v.",
+    "meaning": "狭窄的/缩小/使变窄",
+    "example": "The path became narrow in the forest.",
+    "exampleCn": "小路在森林里变得狭窄。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3629,
+    "word": "mainland",
+    "phonetic": "/ˈmeɪn.lænd/",
+    "pos": "n.",
+    "meaning": "大陆/本土",
+    "example": "The island depends on supplies from the mainland.",
+    "exampleCn": "这个岛依赖来自大陆的物资。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3630,
+    "word": "weather",
+    "phonetic": "/ˈweð.ər/",
+    "pos": "n.",
+    "meaning": "天气",
+    "example": "The weather changed suddenly in the afternoon.",
+    "exampleCn": "下午天气突然变了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3631,
+    "word": "meteorology",
+    "phonetic": "/ˌmiː.ti.əˈrɒl.ə.dʒi/",
+    "pos": "n.",
+    "meaning": "气象学",
+    "example": "Meteorology helps scientists predict storms.",
+    "exampleCn": "气象学帮助科学家预测风暴。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3632,
+    "word": "mild",
+    "phonetic": "/maɪld/",
+    "pos": "adj.",
+    "meaning": "温和的/轻微的",
+    "example": "The island has mild winters.",
+    "exampleCn": "这个岛冬季温和。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3633,
+    "word": "heating",
+    "phonetic": "/ˈhiː.tɪŋ/",
+    "pos": "n.",
+    "meaning": "供暖/加热",
+    "example": "The school reduced heating to save energy.",
+    "exampleCn": "学校减少供暖以节约能源。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3634,
+    "word": "warm",
+    "phonetic": "/wɔːm/",
+    "pos": "adj./v.",
+    "meaning": "温暖的/使变暖",
+    "example": "The sun began to warm the room.",
+    "exampleCn": "太阳开始把房间照暖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3635,
+    "word": "tropics",
+    "phonetic": "/ˈtrɒp.ɪks/",
+    "pos": "n./adj.",
+    "meaning": "热带地区/热带的",
+    "example": "Many fruits grow well in the tropics.",
+    "exampleCn": "许多水果在热带地区生长良好。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3636,
+    "word": "snowy",
+    "phonetic": "/ˈsnəʊ.i/",
+    "pos": "adj.",
+    "meaning": "下雪的/多雪的",
+    "example": "Drivers moved slowly on the snowy road.",
+    "exampleCn": "司机们在积雪的路上缓慢行驶。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  }
+]
