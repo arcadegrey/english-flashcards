@@ -10,10 +10,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
   },
   {
     "id": 109,
@@ -193,10 +198,15 @@
     "exampleCn": "画家把一块空白画布绷在框架上。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
   },
   {
     "id": 2829,
@@ -253,10 +263,15 @@
     "exampleCn": "委员会经过长时间讨论后达成共识。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
   },
   {
     "id": 2833,
@@ -358,10 +373,15 @@
     "exampleCn": "老师对这篇文章给出了详细反馈。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
   },
   {
     "id": 2840,
@@ -508,10 +528,15 @@
     "exampleCn": "酒店每天提供干净的床单。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
   },
   {
     "id": 2850,
@@ -733,10 +758,15 @@
     "exampleCn": "这家商店出售体育商品。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
   },
   {
     "id": 2865,
@@ -995,10 +1025,15 @@
     "exampleCn": "果酱被装在玻璃罐里。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
   },
   {
     "id": 2882,
@@ -1437,10 +1472,15 @@
     "exampleCn": "声音不能在完全真空中传播。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
   },
   {
     "id": 2910,

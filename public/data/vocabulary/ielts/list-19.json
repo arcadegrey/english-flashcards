@@ -1,0 +1,1101 @@
+[
+  {
+    "id": 17,
+    "word": "accurate",
+    "phonetic": "/ˈækjərət/",
+    "pos": "adj.",
+    "meaning": "准确的，精确的",
+    "example": "The measurements must be accurate.",
+    "exampleCn": "测量必须准确。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 22,
+    "word": "adapt",
+    "phonetic": "/əˈdæpt/",
+    "pos": "v.",
+    "meaning": "适应；改编；改造",
+    "example": "Animals adapt to their environment.",
+    "exampleCn": "动物适应环境。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 24,
+    "word": "adjust",
+    "phonetic": "/əˈdʒʌst/",
+    "pos": "v.",
+    "meaning": "调整，调节；适应",
+    "example": "You can adjust the height of the chair.",
+    "exampleCn": "你可以调节椅子的高度。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 120,
+    "word": "alter",
+    "phonetic": "/ˈɔːltər/",
+    "pos": "v.",
+    "meaning": "改变/修改",
+    "example": "Climate change can alter animal habitats.",
+    "exampleCn": "气候变化会改变动物栖息地。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 176,
+    "word": "aspect",
+    "phonetic": "/ˈæspekt/",
+    "pos": "n.",
+    "meaning": "方面/外观/方位",
+    "example": "One important aspect of health is regular sleep.",
+    "exampleCn": "健康的一个重要方面是规律睡眠。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 451,
+    "word": "circumstance",
+    "phonetic": "/ˈsɜːrkəmstæns/",
+    "pos": "n.",
+    "meaning": "情况/环境/条件",
+    "example": "Under normal circumstances, the experiment takes two hours.",
+    "exampleCn": "在正常情况下，这个实验需要两个小时。",
+    "category": "cet6",
+    "categories": [
+      "cet6",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 590,
+    "word": "fantasy",
+    "phonetic": "/ˈfæntəsi/",
+    "pos": "n.",
+    "meaning": "幻想；想象；白日梦",
+    "example": "The story is pure fantasy.",
+    "exampleCn": "这个故事纯属幻想。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 641,
+    "word": "drainage",
+    "phonetic": "/ˈdreɪnɪdʒ/",
+    "pos": "n.",
+    "meaning": "排水；排水系统",
+    "example": "The drainage system needs improvement.",
+    "exampleCn": "排水系统需要改进。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 780,
+    "word": "operate",
+    "phonetic": "/ˈɒpəreɪt/",
+    "pos": "v.",
+    "meaning": "操作；运转；动手术",
+    "example": "The machine operates smoothly.",
+    "exampleCn": "机器运转顺畅。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 800,
+    "word": "shift",
+    "phonetic": "/ʃɪft/",
+    "pos": "v./n.",
+    "meaning": "转移；改变；轮班",
+    "example": "Shift the focus to the main issue.",
+    "exampleCn": "把注意力转移到主要问题上。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 994,
+    "word": "transform",
+    "phonetic": "/trænsˈfɔːrm/",
+    "pos": "v.",
+    "meaning": "使改变，使转化",
+    "example": "Technology can transform the way we learn.",
+    "exampleCn": "科技可以改变我们的学习方式。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 1359,
+    "word": "precise",
+    "phonetic": "/prɪˈsaɪs/",
+    "pos": "adj.",
+    "meaning": "精确的；准确的",
+    "example": "The measurements must be precise.",
+    "exampleCn": "这些测量必须精确。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 1424,
+    "word": "vision",
+    "phonetic": "/ˈvɪʒən/",
+    "pos": "n.",
+    "meaning": "视力；愿景",
+    "example": "The leader shared a clear vision for the future.",
+    "exampleCn": "这位领导者分享了一个清晰的未来愿景。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 1724,
+    "word": "pinpoint",
+    "phonetic": "/ˈpɪnpɔɪnt/",
+    "pos": "v./n.",
+    "meaning": "精确指出/精确位置",
+    "example": "The map helped archaeologists pinpoint the ancient site.",
+    "exampleCn": "这张地图帮助考古学家精确定位古代遗址。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 1776,
+    "word": "condense",
+    "phonetic": "/kənˈdens/",
+    "pos": "v.",
+    "meaning": "凝结/压缩",
+    "example": "Water vapor will condense on a cold surface.",
+    "exampleCn": "水蒸气会在冷表面上凝结。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 1946,
+    "word": "compress",
+    "phonetic": "/kəmˈpres/",
+    "pos": "v.",
+    "meaning": "压缩/压紧",
+    "example": "Engineers compress the gas before storing it in tanks.",
+    "exampleCn": "工程师在把气体储存在罐中之前会压缩它。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 1998,
+    "word": "pump",
+    "phonetic": "/pʌmp/",
+    "pos": "n./v.",
+    "meaning": "泵/抽水/注入",
+    "example": "The machine uses a pump to move water upward.",
+    "exampleCn": "这台机器用泵把水向上输送。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 2073,
+    "word": "refine",
+    "phonetic": "/rɪˈfaɪn/",
+    "pos": "v.",
+    "meaning": "改进/精炼/提纯",
+    "example": "Engineers refined the design after several tests.",
+    "exampleCn": "工程师在多次测试后改进了设计。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 2093,
+    "word": "filter",
+    "phonetic": "/ˈfɪltər/",
+    "pos": "n./v.",
+    "meaning": "过滤器/筛选/过滤",
+    "example": "The machine uses a filter to clean the water.",
+    "exampleCn": "这台机器用过滤器净化水。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 2347,
+    "word": "flaw",
+    "phonetic": "/flɔː/",
+    "pos": "n.",
+    "meaning": "缺陷/瑕疵",
+    "example": "The plan had one serious flaw.",
+    "exampleCn": "这个计划有一个严重缺陷。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 2657,
+    "word": "gear",
+    "phonetic": "/ɡɪr/",
+    "pos": "n./v.",
+    "meaning": "装备/齿轮/使适合",
+    "example": "The hikers packed their camping gear.",
+    "exampleCn": "徒步者打包了露营装备。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 2932,
+    "word": "facilitate",
+    "phonetic": "/fəˈsɪlɪteɪt/",
+    "pos": "v.",
+    "meaning": "促进/使便利",
+    "example": "Online tools can facilitate communication.",
+    "exampleCn": "在线工具可以促进交流。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 2980,
+    "word": "phase",
+    "phonetic": "/feɪz/",
+    "pos": "n./v.",
+    "meaning": "阶段/时期/相位/逐步实行",
+    "example": "The project entered its final phase.",
+    "exampleCn": "该项目进入了最后阶段。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 3167,
+    "word": "framework",
+    "phonetic": "/ˈfreɪmwɜːrk/",
+    "pos": "n.",
+    "meaning": "框架/体系",
+    "example": "The theory provides a framework for understanding language learning.",
+    "exampleCn": "该理论提供了理解语言学习的框架。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 3187,
+    "word": "purify",
+    "phonetic": "/ˈpjʊrɪfaɪ/",
+    "pos": "v.",
+    "meaning": "净化/提纯",
+    "example": "The filter can purify water by removing harmful particles.",
+    "exampleCn": "过滤器可以通过去除有害颗粒来净化水。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 3296,
+    "word": "prototype",
+    "phonetic": "/ˈproʊtətaɪp/",
+    "pos": "n.",
+    "meaning": "原型/样机",
+    "example": "Engineers tested a prototype of the new robot.",
+    "exampleCn": "工程师测试了新机器人的原型。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 3720,
+    "word": "mould",
+    "phonetic": "məʊld",
+    "pos": "n/v.",
+    "meaning": "霉菌/塑造",
+    "example": "There was mould growing on the old bread.",
+    "exampleCn": "旧面包上长了霉菌。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "5",
+    "ieltsLists": [
+      "5",
+      "19"
+    ]
+  },
+  {
+    "id": 4112,
+    "word": "network",
+    "phonetic": "ˈnetwɜːk",
+    "pos": "n.",
+    "meaning": "网络/网状系统",
+    "example": "The internet is a global network of computers.",
+    "exampleCn": "互联网是一个全球性的计算机网络。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4113,
+    "word": "browser",
+    "phonetic": "ˈbraʊzə",
+    "pos": "n.",
+    "meaning": "浏览器",
+    "example": "You need a browser to access websites.",
+    "exampleCn": "你需要一个浏览器来访问网站。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4114,
+    "word": "dial",
+    "phonetic": "ˈdaɪəl",
+    "pos": "v.",
+    "meaning": "拨号/拨打",
+    "example": "He dialled the number and waited for an answer.",
+    "exampleCn": "他拨了号码然后等待应答。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4115,
+    "word": "microcomputer",
+    "phonetic": "ˈmaɪkrəʊkəmˌpjuːtə",
+    "pos": "n.",
+    "meaning": "微型计算机",
+    "example": "The microcomputer revolution began in the 1970s.",
+    "exampleCn": "微型计算机革命始于20世纪70年代。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4116,
+    "word": "laptop",
+    "phonetic": "ˈlæptɒp",
+    "pos": "n.",
+    "meaning": "笔记本电脑",
+    "example": "She takes her laptop to class every day.",
+    "exampleCn": "她每天带着笔记本电脑去上课。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4117,
+    "word": "software",
+    "phonetic": "ˈsɒftweə",
+    "pos": "n.",
+    "meaning": "软件",
+    "example": "The new software is much faster than the old version.",
+    "exampleCn": "新软件比旧版本快得多。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4118,
+    "word": "keyboard",
+    "phonetic": "ˈkiːbɔːd",
+    "pos": "n.",
+    "meaning": "键盘",
+    "example": "She types very quickly on the keyboard.",
+    "exampleCn": "她在键盘上打字非常快。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4119,
+    "word": "screen",
+    "phonetic": "skriːn",
+    "pos": "n.",
+    "meaning": "屏幕/银幕",
+    "example": "The screen of the phone cracked when it fell.",
+    "exampleCn": "手机掉落时屏幕碎了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4120,
+    "word": "loudspeaker",
+    "phonetic": "ˌlaʊdˈspiːkə",
+    "pos": "n.",
+    "meaning": "扬声器/喇叭",
+    "example": "The announcement came over the loudspeaker.",
+    "exampleCn": "通知通过扬声器广播了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4121,
+    "word": "microphone",
+    "phonetic": "ˈmaɪkrəfəʊn",
+    "pos": "n.",
+    "meaning": "麦克风",
+    "example": "The singer spoke into the microphone.",
+    "exampleCn": "歌手对着麦克风说话。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4122,
+    "word": "cassette",
+    "phonetic": "kəˈset",
+    "pos": "n.",
+    "meaning": "盒式磁带/录音带",
+    "example": "He recorded the lecture on a cassette.",
+    "exampleCn": "他把讲座录在了磁带上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4123,
+    "word": "tape",
+    "phonetic": "teɪp",
+    "pos": "n.",
+    "meaning": "磁带/胶带",
+    "example": "The interview was recorded on tape.",
+    "exampleCn": "采访被录在了磁带上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4124,
+    "word": "binary",
+    "phonetic": "ˈbaɪnəri",
+    "pos": "adj.",
+    "meaning": "二进制的/二元的",
+    "example": "Computers use binary code to process data.",
+    "exampleCn": "计算机使用二进制代码来处理数据。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4125,
+    "word": "digital",
+    "phonetic": "ˈdɪdʒɪtl",
+    "pos": "adj.",
+    "meaning": "数字的/数码的",
+    "example": "Digital cameras have replaced film cameras.",
+    "exampleCn": "数码相机已经取代了胶片相机。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4126,
+    "word": "wireless",
+    "phonetic": "ˈwaɪələs",
+    "pos": "adj.",
+    "meaning": "无线的/无线电的",
+    "example": "The cafe offers free wireless internet access.",
+    "exampleCn": "这家咖啡馆提供免费的无线上网服务。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4127,
+    "word": "high-definition",
+    "phonetic": "haɪ ˌdefɪˈnɪʃn",
+    "pos": "adj.",
+    "meaning": "高清的",
+    "example": "The film is available in high-definition format.",
+    "exampleCn": "这部电影有高清格式可供选择。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4128,
+    "word": "audio",
+    "phonetic": "ˈɔːdiəʊ",
+    "pos": "adj/n.",
+    "meaning": "音频/声音",
+    "example": "The audio quality of the recording is very good.",
+    "exampleCn": "录音的音频质量非常好。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4129,
+    "word": "science fiction",
+    "phonetic": "ˈsaɪəns ˈfɪkʃn",
+    "pos": "n.",
+    "meaning": "科幻小说",
+    "example": "Science fiction often imagines future technologies.",
+    "exampleCn": "科幻小说常常想象未来的技术。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4130,
+    "word": "generator",
+    "phonetic": "ˈdʒenəreɪtə",
+    "pos": "n.",
+    "meaning": "发电机/发生器",
+    "example": "The generator provides electricity during power cuts.",
+    "exampleCn": "发电机在停电时提供电力。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4131,
+    "word": "pivot",
+    "phonetic": "ˈpɪvət",
+    "pos": "n.",
+    "meaning": "枢轴/支点",
+    "example": "The door swings on a central pivot.",
+    "exampleCn": "门绕着一个中心枢轴转动。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4132,
+    "word": "hydraulic",
+    "phonetic": "haɪˈdrɔːlɪk",
+    "pos": "adj.",
+    "meaning": "液压的/水力的",
+    "example": "Hydraulic systems are used in heavy machinery.",
+    "exampleCn": "液压系统用于重型机械。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4133,
+    "word": "sewage",
+    "phonetic": "ˈsuːɪdʒ",
+    "pos": "n.",
+    "meaning": "污水/下水道",
+    "example": "Sewage must be treated before being released into rivers.",
+    "exampleCn": "污水在排入河流之前必须经过处理。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4134,
+    "word": "ventilation",
+    "phonetic": "ˌventɪˈleɪʃn",
+    "pos": "n.",
+    "meaning": "通风/换气",
+    "example": "Good ventilation is important in a laboratory.",
+    "exampleCn": "实验室里良好的通风很重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4135,
+    "word": "simplify",
+    "phonetic": "ˈsɪmplɪfaɪ",
+    "pos": "v.",
+    "meaning": "简化/精简",
+    "example": "The teacher tried to simplify the complex concept.",
+    "exampleCn": "老师试图简化这个复杂的概念。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4136,
+    "word": "distil",
+    "phonetic": "dɪˈstɪl",
+    "pos": "v.",
+    "meaning": "蒸馏/提炼",
+    "example": "Salt water can be distilled to produce fresh water.",
+    "exampleCn": "盐水可以蒸馏以产生淡水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4137,
+    "word": "mode",
+    "phonetic": "məʊd",
+    "pos": "n.",
+    "meaning": "模式/方式",
+    "example": "The phone has a power-saving mode.",
+    "exampleCn": "手机有一个省电模式。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4138,
+    "word": "convert",
+    "phonetic": "kənˈvɜːt",
+    "pos": "v.",
+    "meaning": "转换/转变",
+    "example": "The solar panels convert sunlight into electricity.",
+    "exampleCn": "太阳能板将阳光转化为电能。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4139,
+    "word": "turn",
+    "phonetic": "tɜːn",
+    "pos": "v.",
+    "meaning": "转变/旋转",
+    "example": "The weather is expected to turn cold tomorrow.",
+    "exampleCn": "预计明天天气将转冷。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4140,
+    "word": "correct",
+    "phonetic": "kəˈrekt",
+    "pos": "adj.",
+    "meaning": "正确的/对的",
+    "example": "The correct answer is on page ten.",
+    "exampleCn": "正确答案在第十页。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4141,
+    "word": "error",
+    "phonetic": "ˈerə",
+    "pos": "n.",
+    "meaning": "错误/误差",
+    "example": "The test found several errors in the data.",
+    "exampleCn": "测试发现了数据中的几个错误。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4142,
+    "word": "fault",
+    "phonetic": "fɔːlt",
+    "pos": "n.",
+    "meaning": "错误/过错",
+    "example": "It was not my fault the machine broke down.",
+    "exampleCn": "机器坏了不是我的过错。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4143,
+    "word": "stumble",
+    "phonetic": "ˈstʌmbl",
+    "pos": "v.",
+    "meaning": "绊倒/失误",
+    "example": "He stumbled over a rock on the path.",
+    "exampleCn": "他被路上的一块石头绊倒了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  },
+  {
+    "id": 4144,
+    "word": "contingency",
+    "phonetic": "kənˈtɪndʒənsi",
+    "pos": "n.",
+    "meaning": "偶然事件/应急",
+    "example": "We need to plan for every contingency.",
+    "exampleCn": "我们需要为每一种偶然事件做好计划。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
+  }
+]

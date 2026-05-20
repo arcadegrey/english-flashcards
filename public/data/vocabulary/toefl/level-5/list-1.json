@@ -25,10 +25,15 @@
     "exampleCn": "请在修改前复制这张工作表。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
   },
   {
     "id": 2435,
@@ -235,10 +240,15 @@
     "exampleCn": "这个协议只是口头的，不是书面的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
   },
   {
     "id": 2449,
@@ -250,10 +260,15 @@
     "exampleCn": "他们把他的名字刻在奖牌上。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
   },
   {
     "id": 2450,
@@ -372,10 +387,15 @@
     "exampleCn": "研究人员试图破译这些古代符号。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
   },
   {
     "id": 2458,
@@ -527,10 +547,15 @@
     "exampleCn": "这项发现归功于一位年轻科学家。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
   },
   {
     "id": 2468,

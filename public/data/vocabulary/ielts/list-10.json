@@ -148,7 +148,11 @@
     ],
     "level": "4",
     "list": "1",
-    "ieltsList": "10"
+    "ieltsList": "10",
+    "ieltsLists": [
+      "10",
+      "24"
+    ]
   },
   {
     "id": 1540,

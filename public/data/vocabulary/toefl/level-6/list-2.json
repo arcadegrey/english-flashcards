@@ -144,10 +144,15 @@
     "exampleCn": "研究人员就缺失的数据发出了一次询问。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
   },
   {
     "id": 3389,

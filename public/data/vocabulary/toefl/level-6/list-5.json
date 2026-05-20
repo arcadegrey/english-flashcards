@@ -214,10 +214,15 @@
     "exampleCn": "工人疏浚港口，使其深度足够船只通行。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
   },
   {
     "id": 3542,
@@ -596,10 +601,15 @@
     "exampleCn": "她用扫帚清扫教室地板。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
   },
   {
     "id": 3567,

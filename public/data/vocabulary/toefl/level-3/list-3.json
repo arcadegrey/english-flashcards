@@ -58,10 +58,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
   },
   {
     "id": 133,
@@ -74,10 +79,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
   },
   {
     "id": 159,
@@ -106,10 +116,16 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17",
+      "18"
+    ]
   },
   {
     "id": 185,
@@ -122,10 +138,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
   },
   {
     "id": 188,
@@ -138,10 +159,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
   },
   {
     "id": 195,
@@ -170,10 +196,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
   },
   {
     "id": 409,
@@ -239,10 +270,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
   },
   {
     "id": 684,
@@ -595,10 +631,15 @@
     "exampleCn": "船漂走了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
   },
   {
     "id": 707,
@@ -750,10 +791,15 @@
     "exampleCn": "皇帝统治着国家。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
   },
   {
     "id": 717,
@@ -1019,10 +1065,15 @@
     "exampleCn": "计算机计算数据。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
   },
   {
     "id": 734,
@@ -1439,10 +1490,15 @@
     "exampleCn": "确定你的目标。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
   },
   {
     "id": 762,

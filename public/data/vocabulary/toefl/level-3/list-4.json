@@ -26,10 +26,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
   },
   {
     "id": 28,
@@ -58,10 +63,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
   },
   {
     "id": 56,
@@ -223,10 +233,15 @@
     "exampleCn": "把文件拖到文件夹里。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
   },
   {
     "id": 773,
@@ -318,10 +333,15 @@
     "exampleCn": "我们应该回收纸张。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
   },
   {
     "id": 779,
@@ -348,10 +368,15 @@
     "exampleCn": "机器运转顺畅。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
   },
   {
     "id": 781,
@@ -453,10 +478,15 @@
     "exampleCn": "他们在地上挖了个坑。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
   },
   {
     "id": 788,
@@ -598,10 +628,15 @@
     "exampleCn": "歌词很美。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
   },
   {
     "id": 797,
@@ -658,10 +693,15 @@
     "exampleCn": "把注意力转移到主要问题上。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
   },
   {
     "id": 801,
@@ -1048,10 +1088,15 @@
     "exampleCn": "讲道德很重要。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
   },
   {
     "id": 826,
@@ -1138,10 +1183,15 @@
     "exampleCn": "这是个有用的装置。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
   },
   {
     "id": 832,
@@ -1168,10 +1218,15 @@
     "exampleCn": "部落生活在森林里。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
   },
   {
     "id": 834,
@@ -1495,10 +1550,15 @@
     "exampleCn": "演示它是如何工作的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
   },
   {
     "id": 854,

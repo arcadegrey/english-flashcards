@@ -294,10 +294,15 @@
     "exampleCn": "艺术家制作了这座城市的微型模型。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
   },
   {
     "id": 3449,

@@ -58,10 +58,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
   },
   {
     "id": 444,
@@ -170,10 +175,15 @@
     "exampleCn": "这座城市的大部分垃圾被送往垃圾填埋场。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
   },
   {
     "id": 2538,
@@ -630,10 +640,15 @@
     "exampleCn": "这个节日与游行同时举行。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
   },
   {
     "id": 2567,
@@ -955,10 +970,15 @@
     "exampleCn": "两国建立了新的联盟。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
   },
   {
     "id": 2587,

@@ -26,10 +26,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
   },
   {
     "id": 407,
@@ -357,10 +362,15 @@
     "exampleCn": "管弦乐队演奏了贝多芬第五交响曲。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
   },
   {
     "id": 2746,
@@ -1044,10 +1054,15 @@
     "exampleCn": "地震后人道主义援助被送往灾区。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
   },
   {
     "id": 2790,

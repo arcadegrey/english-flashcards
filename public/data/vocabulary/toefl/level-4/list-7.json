@@ -58,10 +58,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
   },
   {
     "id": 153,
@@ -106,10 +111,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
   },
   {
     "id": 270,
@@ -250,10 +260,15 @@
     "exampleCn": "这台机器用泵把水向上输送。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
   },
   {
     "id": 1999,
@@ -466,10 +481,15 @@
     "exampleCn": "这位神父在仪式中起了重要作用。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
   },
   {
     "id": 2013,
@@ -571,10 +591,15 @@
     "exampleCn": "海浪的节奏帮助水手航行。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
   },
   {
     "id": 2020,
@@ -748,10 +773,15 @@
     "exampleCn": "一家当地公司同意赞助这项活动。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
   },
   {
     "id": 2031,
@@ -858,10 +888,15 @@
     "exampleCn": "这个单词有三个音节。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
   },
   {
     "id": 2038,
@@ -1150,10 +1185,15 @@
     "exampleCn": "这个脆弱的生态系统很容易受到破坏。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
   },
   {
     "id": 2056,
@@ -1240,10 +1280,15 @@
     "exampleCn": "团队进行了彻底的调查。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
   },
   {
     "id": 2062,
@@ -1405,10 +1450,15 @@
     "exampleCn": "法定监护人必须签署这张表格。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
   },
   {
     "id": 2073,
@@ -1420,10 +1470,15 @@
     "exampleCn": "工程师在多次测试后改进了设计。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
   },
   {
     "id": 2074,
@@ -1527,10 +1582,15 @@
     "exampleCn": "这幅壁画描绘了古代历史场景。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
   },
   {
     "id": 2081,

@@ -79,10 +79,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
   },
   {
     "id": 324,
@@ -127,10 +132,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
   },
   {
     "id": 1624,
@@ -459,10 +469,15 @@
     "exampleCn": "兔子开始跳过草地。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
   },
   {
     "id": 1645,
@@ -564,10 +579,15 @@
     "exampleCn": "高温使这些金属熔合在一起。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
   },
   {
     "id": 1652,
@@ -1209,10 +1229,15 @@
     "exampleCn": "这位名人利用自己的影响力支持慈善事业。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
   },
   {
     "id": 1693,
@@ -1239,10 +1264,15 @@
     "exampleCn": "离开前你可以关灯。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
   },
   {
     "id": 1695,
@@ -1484,10 +1514,15 @@
     "exampleCn": "她坐在柜台旁的一张木凳上。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
   },
   {
     "id": 1711,

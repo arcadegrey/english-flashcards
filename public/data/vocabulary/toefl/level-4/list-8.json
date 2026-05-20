@@ -240,10 +240,15 @@
     "exampleCn": "这台机器用过滤器净化水。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
   },
   {
     "id": 2094,
@@ -604,10 +609,15 @@
     "exampleCn": "一些昆虫模仿树叶来躲避捕食者。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
   },
   {
     "id": 2118,
@@ -701,10 +711,15 @@
     "exampleCn": "古希腊戏剧影响了后来的文学。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
   },
   {
     "id": 2124,
@@ -778,10 +793,15 @@
     "exampleCn": "这座寺庙被当地人视为神圣之地。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
   },
   {
     "id": 2129,
@@ -998,10 +1018,15 @@
     "exampleCn": "学生可以通过电子邮件询问这个项目。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
   },
   {
     "id": 2143,
@@ -1290,10 +1315,15 @@
     "exampleCn": "演员们在演出前参加了排练。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
   },
   {
     "id": 2162,

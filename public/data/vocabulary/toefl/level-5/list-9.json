@@ -134,10 +134,15 @@
     "exampleCn": "他的主要论点是教育应该更实用。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
   },
   {
     "id": 3211,
@@ -149,10 +154,15 @@
     "exampleCn": "长时间学习会使眼睛疲劳。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
   },
   {
     "id": 3212,
@@ -970,10 +980,15 @@
     "exampleCn": "在线视频会议中画面开始延迟。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
   },
   {
     "id": 3266,
@@ -985,10 +1000,15 @@
     "exampleCn": "烟味在房间里久久不散。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
   },
   {
     "id": 3267,
@@ -1090,10 +1110,15 @@
     "exampleCn": "奶奶用旧布做了一床暖和的被子。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
   },
   {
     "id": 3274,
@@ -1170,10 +1195,15 @@
     "exampleCn": "战后这座城市经历了一场文化复兴。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
   },
   {
     "id": 3279,
@@ -1245,10 +1275,15 @@
     "exampleCn": "这座房子是用当地砍伐的木材建成的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
   },
   {
     "id": 3284,
@@ -1450,10 +1485,15 @@
     "exampleCn": "工程师测试了新机器人的原型。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
   },
   {
     "id": 3297,

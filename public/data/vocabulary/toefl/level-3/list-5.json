@@ -342,10 +342,15 @@
     "exampleCn": "她被要求讲述这个故事。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
   },
   {
     "id": 871,
@@ -392,10 +397,15 @@
     "exampleCn": "不同的人可能会对这首诗有不同的解读。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
   },
   {
     "id": 874,
@@ -487,10 +497,15 @@
     "exampleCn": "昨晚管弦乐队演出得非常精彩。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
   },
   {
     "id": 880,
@@ -873,10 +888,15 @@
     "exampleCn": "花点时间伸展一下双腿。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
   },
   {
     "id": 905,
@@ -1042,10 +1062,15 @@
     "exampleCn": "影评人称赞了这位导演。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
   },
   {
     "id": 916,
@@ -1237,10 +1262,15 @@
     "exampleCn": "请确认你的电子邮箱地址。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
   },
   {
     "id": 929,
@@ -1329,10 +1359,15 @@
     "exampleCn": "我们会用气球装饰房间。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
   },
   {
     "id": 935,

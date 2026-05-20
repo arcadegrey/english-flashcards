@@ -1407,7 +1407,12 @@
 .selection-card--plant-research,
 .selection-card--animal-conservation,
 .selection-card--space-exploration,
-.selection-card--school-education {
+.selection-card--school-education,
+.selection-card--technology-invention,
+.selection-card--culture-history,
+.selection-card--language-evolution,
+.selection-card--entertainment-sports,
+.selection-card--objects-materials {
   position: relative;
   min-height: 148px;
   overflow: hidden;
@@ -1449,13 +1454,53 @@
   --ielts-topic-hover-shadow: rgba(37, 102, 122, 0.3);
 }
 
+.selection-card--technology-invention {
+  border-color: rgba(35, 126, 162, 0.26);
+  --ielts-topic-bg: url('/images/ielts-technology-invention-bg.webp');
+  --ielts-topic-shadow: rgba(35, 126, 162, 0.18);
+  --ielts-topic-hover-shadow: rgba(35, 126, 162, 0.3);
+}
+
+.selection-card--culture-history {
+  border-color: rgba(162, 110, 50, 0.26);
+  --ielts-topic-bg: url('/images/ielts-culture-history-bg.webp');
+  --ielts-topic-shadow: rgba(162, 110, 50, 0.18);
+  --ielts-topic-hover-shadow: rgba(162, 110, 50, 0.3);
+}
+
+.selection-card--language-evolution {
+  border-color: rgba(48, 133, 149, 0.26);
+  --ielts-topic-bg: url('/images/ielts-language-evolution-bg.webp');
+  --ielts-topic-shadow: rgba(48, 133, 149, 0.18);
+  --ielts-topic-hover-shadow: rgba(48, 133, 149, 0.3);
+}
+
+.selection-card--entertainment-sports {
+  border-color: rgba(41, 132, 93, 0.26);
+  --ielts-topic-bg: url('/images/ielts-entertainment-sports-bg.webp');
+  --ielts-topic-shadow: rgba(41, 132, 93, 0.18);
+  --ielts-topic-hover-shadow: rgba(41, 132, 93, 0.3);
+}
+
+.selection-card--objects-materials {
+  border-color: rgba(98, 123, 128, 0.26);
+  --ielts-topic-bg: url('/images/ielts-objects-materials-bg.webp');
+  --ielts-topic-shadow: rgba(98, 123, 128, 0.18);
+  --ielts-topic-hover-shadow: rgba(98, 123, 128, 0.3);
+}
+
 .selection-card--nature-geography,
 .selection-card--plant-research,
 .selection-card--animal-conservation,
 .selection-card--space-exploration,
-.selection-card--school-education {
+.selection-card--school-education,
+.selection-card--technology-invention,
+.selection-card--culture-history,
+.selection-card--language-evolution,
+.selection-card--entertainment-sports,
+.selection-card--objects-materials {
   background:
-    linear-gradient(180deg, rgba(12, 40, 54, 0.24), rgba(5, 22, 31, 0.68)),
+    linear-gradient(180deg, rgba(12, 40, 54, 0.16), rgba(5, 22, 31, 0.52)),
     var(--ielts-topic-bg) center / cover no-repeat;
   box-shadow: 0 16px 34px var(--ielts-topic-shadow);
 }
@@ -1464,7 +1509,12 @@
 .selection-card--plant-research::after,
 .selection-card--animal-conservation::after,
 .selection-card--space-exploration::after,
-.selection-card--school-education::after {
+.selection-card--school-education::after,
+.selection-card--technology-invention::after,
+.selection-card--culture-history::after,
+.selection-card--language-evolution::after,
+.selection-card--entertainment-sports::after,
+.selection-card--objects-materials::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -1481,10 +1531,20 @@
 .selection-card--space-exploration:hover,
 .selection-card--space-exploration.is-active,
 .selection-card--school-education:hover,
-.selection-card--school-education.is-active {
+.selection-card--school-education.is-active,
+.selection-card--technology-invention:hover,
+.selection-card--technology-invention.is-active,
+.selection-card--culture-history:hover,
+.selection-card--culture-history.is-active,
+.selection-card--language-evolution:hover,
+.selection-card--language-evolution.is-active,
+.selection-card--entertainment-sports:hover,
+.selection-card--entertainment-sports.is-active,
+.selection-card--objects-materials:hover,
+.selection-card--objects-materials.is-active {
   border-color: rgba(255, 255, 255, 0.48);
   background:
-    linear-gradient(180deg, rgba(10, 34, 48, 0.18), rgba(3, 18, 27, 0.62)),
+    linear-gradient(180deg, rgba(10, 34, 48, 0.12), rgba(3, 18, 27, 0.46)),
     var(--ielts-topic-bg) center / cover no-repeat;
   box-shadow: 0 18px 38px var(--ielts-topic-hover-shadow);
 }
@@ -1503,7 +1563,22 @@
 .selection-card--space-exploration .toefl-selection-meta,
 .selection-card--school-education .reading-category-name,
 .selection-card--school-education .reading-category-count,
-.selection-card--school-education .toefl-selection-meta {
+.selection-card--school-education .toefl-selection-meta,
+.selection-card--technology-invention .reading-category-name,
+.selection-card--technology-invention .reading-category-count,
+.selection-card--technology-invention .toefl-selection-meta,
+.selection-card--culture-history .reading-category-name,
+.selection-card--culture-history .reading-category-count,
+.selection-card--culture-history .toefl-selection-meta,
+.selection-card--language-evolution .reading-category-name,
+.selection-card--language-evolution .reading-category-count,
+.selection-card--language-evolution .toefl-selection-meta,
+.selection-card--entertainment-sports .reading-category-name,
+.selection-card--entertainment-sports .reading-category-count,
+.selection-card--entertainment-sports .toefl-selection-meta,
+.selection-card--objects-materials .reading-category-name,
+.selection-card--objects-materials .reading-category-count,
+.selection-card--objects-materials .toefl-selection-meta {
   color: #ffffff;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.34);
 }
@@ -1512,7 +1587,12 @@
 .selection-card--plant-research .toefl-selection-meta,
 .selection-card--animal-conservation .toefl-selection-meta,
 .selection-card--space-exploration .toefl-selection-meta,
-.selection-card--school-education .toefl-selection-meta {
+.selection-card--school-education .toefl-selection-meta,
+.selection-card--technology-invention .toefl-selection-meta,
+.selection-card--culture-history .toefl-selection-meta,
+.selection-card--language-evolution .toefl-selection-meta,
+.selection-card--entertainment-sports .toefl-selection-meta,
+.selection-card--objects-materials .toefl-selection-meta {
   color: rgba(255, 255, 255, 0.86);
 }
 
@@ -3021,6 +3101,22 @@
 
   .reading-category-name {
     font-size: 16px;
+  }
+
+  .selection-card--nature-geography .reading-category-name,
+  .selection-card--plant-research .reading-category-name,
+  .selection-card--animal-conservation .reading-category-name,
+  .selection-card--space-exploration .reading-category-name,
+  .selection-card--school-education .reading-category-name,
+  .selection-card--technology-invention .reading-category-name,
+  .selection-card--culture-history .reading-category-name,
+  .selection-card--language-evolution .reading-category-name,
+  .selection-card--entertainment-sports .reading-category-name,
+  .selection-card--objects-materials .reading-category-name {
+    display: block;
+    max-width: 2em;
+    line-height: 1.08;
+    word-break: break-all;
   }
 
   .reading-list-block-title {

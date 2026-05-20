@@ -1,0 +1,737 @@
+[
+  {
+    "id": 119,
+    "word": "alphabet",
+    "phonetic": "/ˈælfəbet/",
+    "pos": "n.",
+    "meaning": "字母表；字母系统",
+    "example": "The English alphabet has 26 letters.",
+    "exampleCn": "英语字母表有 26 个字母。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 179,
+    "word": "assign",
+    "phonetic": "/əˈsaɪn/",
+    "pos": "v.",
+    "meaning": "分配/指定/布置",
+    "example": "The teacher assigned a research project to the class.",
+    "exampleCn": "老师给全班布置了一项研究项目。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 1910,
+    "word": "synonym",
+    "phonetic": "/ˈsɪnənɪm/",
+    "pos": "n.",
+    "meaning": "同义词",
+    "example": "The word “rapid” is a synonym for “fast.”",
+    "exampleCn": "“rapid”是“fast”的同义词。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 2037,
+    "word": "syllable",
+    "phonetic": "/ˈsɪləbəl/",
+    "pos": "n.",
+    "meaning": "音节",
+    "example": "The word has three syllables.",
+    "exampleCn": "这个单词有三个音节。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 2448,
+    "word": "verbal",
+    "phonetic": "/ˈvɜːrbl/",
+    "pos": "adj.",
+    "meaning": "口头的/语言的",
+    "example": "The agreement was only verbal, not written.",
+    "exampleCn": "这个协议只是口头的，不是书面的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 2964,
+    "word": "dialect",
+    "phonetic": "/ˈdaɪəlekt/",
+    "pos": "n.",
+    "meaning": "方言/地方话",
+    "example": "The villagers speak a regional dialect.",
+    "exampleCn": "村民们说一种地方方言。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 3734,
+    "word": "root",
+    "phonetic": "ruːt",
+    "pos": "n/v.",
+    "meaning": "根/生根",
+    "example": "The roots of the tree go deep into the ground.",
+    "exampleCn": "树的根深入地下。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6",
+      "21"
+    ]
+  },
+  {
+    "id": 4191,
+    "word": "language",
+    "phonetic": "ˈlæŋɡwɪdʒ",
+    "pos": "n.",
+    "meaning": "语言",
+    "example": "Learning a new language opens many doors.",
+    "exampleCn": "学习一门新语言会打开许多扇门。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4192,
+    "word": "symbol",
+    "phonetic": "ˈsɪmbl",
+    "pos": "n.",
+    "meaning": "符号/象征",
+    "example": "The dove is a symbol of peace.",
+    "exampleCn": "鸽子是和平的象征。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4193,
+    "word": "gesture",
+    "phonetic": "ˈdʒestʃə",
+    "pos": "n.",
+    "meaning": "手势/姿态",
+    "example": "He made a gesture to indicate that he agreed.",
+    "exampleCn": "他做了一个手势表示同意。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4194,
+    "word": "handwriting",
+    "phonetic": "ˈhændˌraɪtɪŋ",
+    "pos": "n.",
+    "meaning": "笔迹/书写",
+    "example": "Her handwriting is neat and easy to read.",
+    "exampleCn": "她的笔迹整洁且易读。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4195,
+    "word": "pictograph",
+    "phonetic": "ˈpɪktəɡrɑːf",
+    "pos": "n.",
+    "meaning": "象形文字/图画文字",
+    "example": "Pictographs were used as an early form of writing.",
+    "exampleCn": "象形文字被用作早期的书写形式。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4196,
+    "word": "wedge",
+    "phonetic": "wedʒ",
+    "pos": "n.",
+    "meaning": "楔形/楔子",
+    "example": "Wedge-shaped characters were used in ancient writing.",
+    "exampleCn": "楔形文字在古代书写中被使用。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4197,
+    "word": "knot",
+    "phonetic": "nɒt",
+    "pos": "n.",
+    "meaning": "结/绳结",
+    "example": "Inca people used knots to record information.",
+    "exampleCn": "印加人用绳结来记录信息。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4198,
+    "word": "linguistics",
+    "phonetic": "lɪŋˈɡwɪstɪks",
+    "pos": "n.",
+    "meaning": "语言学",
+    "example": "She is studying linguistics at university.",
+    "exampleCn": "她在大学学习语言学。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4199,
+    "word": "semantic",
+    "phonetic": "sɪˈmæntɪk",
+    "pos": "adj.",
+    "meaning": "语义的/语义学的",
+    "example": "The semantic meaning of the word has changed over time.",
+    "exampleCn": "这个词的语义随时间发生了变化。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4200,
+    "word": "syntax",
+    "phonetic": "ˈsɪntæks",
+    "pos": "n.",
+    "meaning": "句法/语法",
+    "example": "The syntax of the sentence is incorrect.",
+    "exampleCn": "这个句子的句法不正确。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4201,
+    "word": "grammar",
+    "phonetic": "ˈɡræmə",
+    "pos": "n.",
+    "meaning": "语法",
+    "example": "Good grammar is essential for clear writing.",
+    "exampleCn": "好的语法对于清晰的写作至关重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4202,
+    "word": "phonetics",
+    "phonetic": "fəˈnetɪks",
+    "pos": "n.",
+    "meaning": "语音学/发音学",
+    "example": "Phonetics helps us understand how sounds are produced.",
+    "exampleCn": "语音学帮助我们理解声音是如何产生的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4203,
+    "word": "pronounce",
+    "phonetic": "prəˈnaʊns",
+    "pos": "v.",
+    "meaning": "发音/宣读",
+    "example": "How do you pronounce this word in French?",
+    "exampleCn": "这个单词用法语怎么发音？",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4204,
+    "word": "intonation",
+    "phonetic": "ˌɪntəˈneɪʃn",
+    "pos": "n.",
+    "meaning": "语调/声调",
+    "example": "Intonation can change the meaning of a sentence.",
+    "exampleCn": "语调可以改变一个句子的意思。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4205,
+    "word": "inflection",
+    "phonetic": "ɪnˈflekʃn",
+    "pos": "n.",
+    "meaning": "屈折变化/变音",
+    "example": "Inflection of verbs shows tense and person.",
+    "exampleCn": "动词的屈折变化显示时态和人称。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4206,
+    "word": "accent",
+    "phonetic": "ˈæksənt",
+    "pos": "n.",
+    "meaning": "口音/重音",
+    "example": "She speaks English with a French accent.",
+    "exampleCn": "她说法语带有法语口音。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4207,
+    "word": "utterance",
+    "phonetic": "ˈʌtərəns",
+    "pos": "n.",
+    "meaning": "话语/言辞",
+    "example": "His every utterance was recorded by the press.",
+    "exampleCn": "他的每一句话都被媒体记录了下来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4208,
+    "word": "oral",
+    "phonetic": "ˈɔːrəl",
+    "pos": "adj.",
+    "meaning": "口头的/口述的",
+    "example": "Students have to pass an oral exam in English.",
+    "exampleCn": "学生必须通过英语口试。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4209,
+    "word": "phoneme",
+    "phonetic": "ˈfəʊniːm",
+    "pos": "n.",
+    "meaning": "音素/音位",
+    "example": "English has about forty-four phonemes.",
+    "exampleCn": "英语大约有四十四种音素。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4210,
+    "word": "vowel",
+    "phonetic": "ˈvaʊəl",
+    "pos": "n.",
+    "meaning": "元音/母音",
+    "example": "A, E, I, O, U are the five vowels in English.",
+    "exampleCn": "A、E、I、O、U是英语中的五个元音。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4211,
+    "word": "consonant",
+    "phonetic": "ˈkɒnsənənt",
+    "pos": "n.",
+    "meaning": "辅音",
+    "example": "B, C, D, F are examples of consonants.",
+    "exampleCn": "B、C、D、F是辅音的例子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4212,
+    "word": "logogram",
+    "phonetic": "ˈlɒɡəɡræm",
+    "pos": "n.",
+    "meaning": "语标/表意文字",
+    "example": "Chinese characters are logograms.",
+    "exampleCn": "汉字是语标文字。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4213,
+    "word": "vocabulary",
+    "phonetic": "vəˈkæbjələri",
+    "pos": "n.",
+    "meaning": "词汇/词汇量",
+    "example": "Reading widely helps expand your vocabulary.",
+    "exampleCn": "广泛阅读有助于扩大你的词汇量。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4214,
+    "word": "diction",
+    "phonetic": "ˈdɪkʃn",
+    "pos": "n.",
+    "meaning": "措辞/用语",
+    "example": "The poet is known for her precise diction.",
+    "exampleCn": "这位诗人以精确的措辞而闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4215,
+    "word": "idiom",
+    "phonetic": "ˈɪdiəm",
+    "pos": "n.",
+    "meaning": "习语/成语",
+    "example": "It is difficult to translate idioms literally.",
+    "exampleCn": "习语很难直译。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4216,
+    "word": "phrase",
+    "phonetic": "freɪz",
+    "pos": "n.",
+    "meaning": "短语/词组",
+    "example": "She underlined the key phrases in the text.",
+    "exampleCn": "她在文本中的关键短语下面划了线。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4217,
+    "word": "clause",
+    "phonetic": "klɔːz",
+    "pos": "n.",
+    "meaning": "从句/条款",
+    "example": "A complex sentence contains a main clause and a subordinate clause.",
+    "exampleCn": "一个复合句包含一个主句和一个从句。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4218,
+    "word": "expression",
+    "phonetic": "ɪkˈspreʃn",
+    "pos": "n.",
+    "meaning": "表达/短语",
+    "example": "This expression is commonly used in spoken English.",
+    "exampleCn": "这个表达在英语口语中很常用。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4219,
+    "word": "tense",
+    "phonetic": "tens",
+    "pos": "n.",
+    "meaning": "时态/紧张的",
+    "example": "The past tense of 'go' is 'went'.",
+    "exampleCn": "'go'的过去时是'went'。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4220,
+    "word": "prefix",
+    "phonetic": "ˈpriːfɪks",
+    "pos": "n.",
+    "meaning": "前缀",
+    "example": "The prefix 'un' means 'not' as in 'unhappy'.",
+    "exampleCn": "前缀'un'表示'不'，如'unhappy'。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4221,
+    "word": "suffix",
+    "phonetic": "ˈsʌfɪks",
+    "pos": "n.",
+    "meaning": "后缀",
+    "example": "The suffix 'ful' means 'full of' as in 'hopeful'.",
+    "exampleCn": "后缀'ful'表示'充满'，如'hopeful'。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4222,
+    "word": "abbreviation",
+    "phonetic": "əˌbriːviˈeɪʃn",
+    "pos": "n.",
+    "meaning": "缩写/简称",
+    "example": "BBC is an abbreviation for British Broadcasting Corporation.",
+    "exampleCn": "BBC是英国广播公司British Broadcasting Corporation的缩写。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4223,
+    "word": "antonym",
+    "phonetic": "ˈæntənɪm",
+    "pos": "n.",
+    "meaning": "反义词",
+    "example": "Hot and cold are antonyms.",
+    "exampleCn": "Hot和cold是反义词。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4224,
+    "word": "noun",
+    "phonetic": "naʊn",
+    "pos": "n.",
+    "meaning": "名词",
+    "example": "A noun is a word that names a person, place or thing.",
+    "exampleCn": "名词是命名人、地方或事物的词。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  },
+  {
+    "id": 4225,
+    "word": "singular",
+    "phonetic": "ˈsɪŋɡjələ",
+    "pos": "n/adj.",
+    "meaning": "单数/单一的",
+    "example": "The singular form of 'children' is 'child'.",
+    "exampleCn": "'children'的单数形式是'child'。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21"
+    ]
+  }
+]

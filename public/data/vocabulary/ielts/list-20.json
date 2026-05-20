@@ -1,0 +1,1417 @@
+[
+  {
+    "id": 108,
+    "word": "alien",
+    "phonetic": "/ˈeɪliən/",
+    "pos": "adj./n.",
+    "meaning": "外国的；外星人",
+    "example": "The concept seemed alien to them.",
+    "exampleCn": "这个概念对他们来说很陌生。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 139,
+    "word": "anecdote",
+    "phonetic": "/ˈænɪkdəʊt/",
+    "pos": "n.",
+    "meaning": "轶事，趣闻",
+    "example": "He told an amusing anecdote about his trip.",
+    "exampleCn": "他讲了一个关于他旅行的有趣轶事。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 244,
+    "word": "bible",
+    "phonetic": "/ˈbaɪbl/",
+    "pos": "n.",
+    "meaning": "圣经",
+    "example": "The Bible is a sacred text.",
+    "exampleCn": "圣经是一本神圣的文本。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 392,
+    "word": "cathedral",
+    "phonetic": "/kəˈθiːdrəl/",
+    "pos": "n.",
+    "meaning": "大教堂",
+    "example": "The medieval cathedral attracts thousands of visitors.",
+    "exampleCn": "这座中世纪大教堂吸引了成千上万的游客。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 445,
+    "word": "church",
+    "phonetic": "/tʃɜːrtʃ/",
+    "pos": "n.",
+    "meaning": "教堂",
+    "example": "They got married in church.",
+    "exampleCn": "他们在教堂结婚。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 502,
+    "word": "archaeology",
+    "phonetic": "/ˌɑːkiˈɒlədʒi/",
+    "pos": "n.",
+    "meaning": "考古学",
+    "example": "She studied archaeology at university.",
+    "exampleCn": "她在大学学习考古学。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 571,
+    "word": "incident",
+    "phonetic": "/ˈɪnsɪdənt/",
+    "pos": "n.",
+    "meaning": "事件；事变；插曲",
+    "example": "The incident was reported to the police.",
+    "exampleCn": "这起事件已向警方报告。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 716,
+    "word": "emperor",
+    "phonetic": "/ˈempərə(r)/",
+    "pos": "n.",
+    "meaning": "皇帝",
+    "example": "The emperor ruled the country.",
+    "exampleCn": "皇帝统治着国家。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 825,
+    "word": "moral",
+    "phonetic": "/ˈmɒrəl/",
+    "pos": "adj./n.",
+    "meaning": "道德的/道德",
+    "example": "It's important to be moral.",
+    "exampleCn": "讲道德很重要。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 833,
+    "word": "tribe",
+    "phonetic": "/traɪb/",
+    "pos": "n.",
+    "meaning": "部落；宗族",
+    "example": "The tribe lives in the forest.",
+    "exampleCn": "部落生活在森林里。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 934,
+    "word": "decorate",
+    "phonetic": "/ˈdekəreɪt/",
+    "pos": "v.",
+    "meaning": "装饰，布置",
+    "example": "We will decorate the room with balloons.",
+    "exampleCn": "我们会用气球装饰房间。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 1029,
+    "word": "inherit",
+    "phonetic": "/ɪnˈherɪt/",
+    "pos": "v.",
+    "meaning": "继承/遗传",
+    "example": "She inherited the family business from her father./Children can inherit certain traits from their parents.",
+    "exampleCn": "她从父亲那里继承了家族企业。/孩子会从父母那里遗传某些特征。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 1076,
+    "word": "thrive",
+    "phonetic": "/θraɪv/",
+    "pos": "v.",
+    "meaning": "茁壮成长，繁荣",
+    "example": "Plants thrive in warm and wet conditions.",
+    "exampleCn": "植物在温暖潮湿的条件下长得很好。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 1218,
+    "word": "inhabitant",
+    "phonetic": "/ɪnˈhæbɪtənt/",
+    "pos": "n.",
+    "meaning": "居民；栖居动物",
+    "example": "The island has fewer than one thousand inhabitants.",
+    "exampleCn": "这座岛上的居民不到一千人。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 1335,
+    "word": "royal",
+    "phonetic": "/ˈrɔɪəl/",
+    "pos": "adj.",
+    "meaning": "皇家的；高贵的",
+    "example": "The royal family attended the ceremony.",
+    "exampleCn": "王室成员出席了仪式。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 1361,
+    "word": "status",
+    "phonetic": "/ˈsteɪtəs/",
+    "pos": "n.",
+    "meaning": "地位；状态",
+    "example": "The patient’s status has improved since yesterday.",
+    "exampleCn": "病人的状态自昨天以来有所改善。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 1509,
+    "word": "empire",
+    "phonetic": "/ˈempaɪər/",
+    "pos": "n.",
+    "meaning": "帝国/大企业",
+    "example": "The empire controlled trade routes across the region.",
+    "exampleCn": "这个帝国控制着该地区的贸易路线。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 1589,
+    "word": "choir",
+    "phonetic": "/ˈkwaɪər/",
+    "pos": "n.",
+    "meaning": "合唱团/唱诗班",
+    "example": "The choir performed in the old cathedral.",
+    "exampleCn": "合唱团在古老的大教堂里演出。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 1692,
+    "word": "celebrity",
+    "phonetic": "/səˈlebrəti/",
+    "pos": "n.",
+    "meaning": "名人/名声",
+    "example": "The celebrity used her influence to support charity.",
+    "exampleCn": "这位名人利用自己的影响力支持慈善事业。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 1908,
+    "word": "ritual",
+    "phonetic": "/ˈrɪtʃuəl/",
+    "pos": "n./adj.",
+    "meaning": "仪式/惯例/仪式的",
+    "example": "The ancient ritual was performed at the start of spring.",
+    "exampleCn": "这个古老仪式在春天开始时举行。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 1983,
+    "word": "exotic",
+    "phonetic": "/ɪɡˈzɑːtɪk/",
+    "pos": "adj.",
+    "meaning": "异国的/奇异的",
+    "example": "The market sells exotic fruits from tropical regions.",
+    "exampleCn": "这个市场出售来自热带地区的异国水果。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 2012,
+    "word": "priest",
+    "phonetic": "/priːst/",
+    "pos": "n.",
+    "meaning": "牧师/神父/祭司",
+    "example": "The priest played an important role in the ceremony.",
+    "exampleCn": "这位神父在仪式中起了重要作用。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 2072,
+    "word": "guardian",
+    "phonetic": "/ˈɡɑːrdiən/",
+    "pos": "n.",
+    "meaning": "监护人/保护者",
+    "example": "A legal guardian must sign the form.",
+    "exampleCn": "法定监护人必须签署这张表格。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 2128,
+    "word": "sacred",
+    "phonetic": "/ˈseɪkrɪd/",
+    "pos": "adj.",
+    "meaning": "神圣的/受尊敬的",
+    "example": "The temple is considered sacred by local people.",
+    "exampleCn": "这座寺庙被当地人视为神圣之地。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 2199,
+    "word": "convention",
+    "phonetic": "/kənˈvenʃn/",
+    "pos": "n.",
+    "meaning": "大会/惯例/公约",
+    "example": "The scientists attended an international convention.",
+    "exampleCn": "科学家们参加了一个国际大会。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 2371,
+    "word": "dynasty",
+    "phonetic": "/ˈdaɪnəsti/",
+    "pos": "n.",
+    "meaning": "王朝/朝代",
+    "example": "The Tang dynasty was an important period in Chinese history.",
+    "exampleCn": "唐朝是中国历史上的重要时期。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 2449,
+    "word": "engrave",
+    "phonetic": "/ɪnˈɡreɪv/",
+    "pos": "v.",
+    "meaning": "雕刻/铭记",
+    "example": "They engraved his name on the medal.",
+    "exampleCn": "他们把他的名字刻在奖牌上。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 2715,
+    "word": "prosperity",
+    "phonetic": "/prɑːˈsperəti/",
+    "pos": "n.",
+    "meaning": "繁荣/兴旺",
+    "example": "Trade brought prosperity to the city.",
+    "exampleCn": "贸易给这座城市带来了繁荣。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 2789,
+    "word": "humanitarian",
+    "phonetic": "/hjuːˌmænɪˈteriən/",
+    "pos": "adj./n.",
+    "meaning": "人道主义的/人道主义者",
+    "example": "Humanitarian aid was sent after the earthquake.",
+    "exampleCn": "地震后人道主义援助被送往灾区。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 2983,
+    "word": "excavate",
+    "phonetic": "/ˈekskəveɪt/",
+    "pos": "v.",
+    "meaning": "挖掘/发掘",
+    "example": "Archaeologists excavated the ancient site.",
+    "exampleCn": "考古学家发掘了这个古代遗址。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 3128,
+    "word": "imperial",
+    "phonetic": "/ɪmˈpɪriəl/",
+    "pos": "adj.",
+    "meaning": "帝国的/皇帝的",
+    "example": "Imperial policies affected trade across the region.",
+    "exampleCn": "帝国政策影响了整个地区的贸易。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 3278,
+    "word": "renaissance",
+    "phonetic": "/ˈrenəsɑːns/",
+    "pos": "n.",
+    "meaning": "文艺复兴/复兴/再生",
+    "example": "The city experienced a cultural renaissance after the war.",
+    "exampleCn": "战后这座城市经历了一场文化复兴。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4145,
+    "word": "culture",
+    "phonetic": "ˈkʌltʃə",
+    "pos": "n.",
+    "meaning": "文化",
+    "example": "Every country has its own unique culture.",
+    "exampleCn": "每个国家都有自己独特的文化。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4146,
+    "word": "civilisation",
+    "phonetic": "ˌsɪvəlaɪˈzeɪʃn",
+    "pos": "n.",
+    "meaning": "文明",
+    "example": "The ancient civilisation of Egypt lasted for thousands of years.",
+    "exampleCn": "古埃及文明持续了数千年。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4147,
+    "word": "epic",
+    "phonetic": "ˈepɪk",
+    "pos": "n.",
+    "meaning": "史诗/伟大的",
+    "example": "Homer's Odyssey is a classic epic poem.",
+    "exampleCn": "荷马的奥德赛是一部经典的史诗作品。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4148,
+    "word": "ideology",
+    "phonetic": "ˌaɪdiˈɒlədʒi",
+    "pos": "n.",
+    "meaning": "意识形态/思想体系",
+    "example": "The ideology of equality shaped the new constitution.",
+    "exampleCn": "平等的意识形态塑造了新宪法。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4149,
+    "word": "tradition",
+    "phonetic": "trəˈdɪʃn",
+    "pos": "n.",
+    "meaning": "传统",
+    "example": "It is a tradition to give gifts at the new year.",
+    "exampleCn": "新年送礼是一种传统。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4150,
+    "word": "custom",
+    "phonetic": "ˈkʌstəm",
+    "pos": "n.",
+    "meaning": "习俗/习惯",
+    "example": "The custom of afternoon tea is typically British.",
+    "exampleCn": "下午茶的习惯是典型的英国特色。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4151,
+    "word": "feudalism",
+    "phonetic": "ˈfjuːdəlɪzəm",
+    "pos": "n.",
+    "meaning": "封建主义/封建制度",
+    "example": "Feudalism was the dominant social system in medieval Europe.",
+    "exampleCn": "封建主义是中世纪欧洲占主导地位的社会制度。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4152,
+    "word": "slavery",
+    "phonetic": "ˈsleɪvəri",
+    "pos": "n.",
+    "meaning": "奴隶制/奴役",
+    "example": "Slavery was abolished in the nineteenth century.",
+    "exampleCn": "奴隶制在十九世纪被废除。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4153,
+    "word": "ethical",
+    "phonetic": "ˈeθɪkl",
+    "pos": "adj.",
+    "meaning": "伦理的/道德的",
+    "example": "There are ethical concerns about cloning animals.",
+    "exampleCn": "关于克隆动物存在伦理方面的担忧。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4154,
+    "word": "aboriginal",
+    "phonetic": "ˌæbəˈrɪdʒənəl",
+    "pos": "adj.",
+    "meaning": "土著的/原住的",
+    "example": "Aboriginal art is known for its distinctive style.",
+    "exampleCn": "土著艺术以其独特的风格而闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4155,
+    "word": "native",
+    "phonetic": "ˈneɪtɪv",
+    "pos": "adj.",
+    "meaning": "本地的/土生的",
+    "example": "The kangaroo is native to Australia.",
+    "exampleCn": "袋鼠是澳大利亚的本土动物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4156,
+    "word": "local",
+    "phonetic": "ˈləʊkəl",
+    "pos": "adj.",
+    "meaning": "当地的/本地的",
+    "example": "The local newspaper reports on community events.",
+    "exampleCn": "当地报纸报道社区事件。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4157,
+    "word": "foreigner",
+    "phonetic": "ˈfɒrənə",
+    "pos": "n.",
+    "meaning": "外国人",
+    "example": "As a foreigner, she found the local customs fascinating.",
+    "exampleCn": "作为一个外国人，她觉得当地的风俗很有趣。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4158,
+    "word": "anthropologist",
+    "phonetic": "ˌænθrəˈpɒlədʒɪst",
+    "pos": "n.",
+    "meaning": "人类学家",
+    "example": "The anthropologist studied the customs of the tribe.",
+    "exampleCn": "人类学家研究了部落的习俗。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4159,
+    "word": "heritage",
+    "phonetic": "ˈherɪtɪdʒ",
+    "pos": "n.",
+    "meaning": "遗产/传统",
+    "example": "The Great Wall is a UNESCO world heritage site.",
+    "exampleCn": "长城是联合国教科文组织世界遗产地。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4160,
+    "word": "antique",
+    "phonetic": "ænˈtiːk",
+    "pos": "n.",
+    "meaning": "古董/古老的",
+    "example": "The shop sells antique furniture from the 18th century.",
+    "exampleCn": "这家商店出售18世纪的古董家具。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4161,
+    "word": "museum",
+    "phonetic": "mjuːˈziːəm",
+    "pos": "n.",
+    "meaning": "博物馆",
+    "example": "The museum has a large collection of ancient artefacts.",
+    "exampleCn": "博物馆收藏了大量的古代文物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4162,
+    "word": "pottery",
+    "phonetic": "ˈpɒtəri",
+    "pos": "n.",
+    "meaning": "陶器/陶艺",
+    "example": "Ancient pottery was found buried in the tomb.",
+    "exampleCn": "在墓中发现了埋藏的古代陶器。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4163,
+    "word": "religion",
+    "phonetic": "rɪˈlɪdʒən",
+    "pos": "n.",
+    "meaning": "宗教",
+    "example": "Freedom of religion is a basic human right.",
+    "exampleCn": "宗教自由是一项基本人权。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4164,
+    "word": "etiquette",
+    "phonetic": "ˈetɪket",
+    "pos": "n.",
+    "meaning": "礼仪/礼节",
+    "example": "Business etiquette varies from country to country.",
+    "exampleCn": "商务礼仪因国家而异。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4165,
+    "word": "belief",
+    "phonetic": "bɪˈliːf",
+    "pos": "n.",
+    "meaning": "信仰/信念",
+    "example": "Her belief in hard work led to her success.",
+    "exampleCn": "她对努力工作的信念促成了她的成功。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4166,
+    "word": "soul",
+    "phonetic": "səʊl",
+    "pos": "n.",
+    "meaning": "灵魂/精神",
+    "example": "Many religions believe the soul lives on after death.",
+    "exampleCn": "许多宗教相信灵魂在死后继续存在。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4167,
+    "word": "spirit",
+    "phonetic": "ˈspɪrɪt",
+    "pos": "n.",
+    "meaning": "精神/心灵",
+    "example": "The team showed great fighting spirit.",
+    "exampleCn": "这支队伍表现出了很强的战斗精神。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4168,
+    "word": "hallowed",
+    "phonetic": "ˈhæləʊd",
+    "pos": "adj.",
+    "meaning": "神圣的/圣化的",
+    "example": "The ground was considered hallowed by the ancient people.",
+    "exampleCn": "这片土地被古人认为是神圣的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4169,
+    "word": "holy",
+    "phonetic": "ˈhəʊli",
+    "pos": "adj.",
+    "meaning": "神圣的/圣洁的",
+    "example": "The holy book is treated with great respect.",
+    "exampleCn": "这本圣书被极为尊重地对待。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4170,
+    "word": "pope",
+    "phonetic": "pəʊp",
+    "pos": "n.",
+    "meaning": "教皇",
+    "example": "The pope addressed the crowd in St Peter's Square.",
+    "exampleCn": "教皇在圣彼得广场向群众发表了讲话。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4171,
+    "word": "bishop",
+    "phonetic": "ˈbɪʃəp",
+    "pos": "n.",
+    "meaning": "主教",
+    "example": "The bishop led the service at the cathedral.",
+    "exampleCn": "主教在大教堂主持了礼拜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4172,
+    "word": "missionary",
+    "phonetic": "ˈmɪʃənri",
+    "pos": "n.",
+    "meaning": "传教士",
+    "example": "The missionary travelled to remote areas to spread his faith.",
+    "exampleCn": "传教士前往偏远地区传教。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4173,
+    "word": "monk",
+    "phonetic": "mʌŋk",
+    "pos": "n.",
+    "meaning": "修道士/僧侣",
+    "example": "The monk lives a simple life of prayer and meditation.",
+    "exampleCn": "修道士过着简单的祈祷与冥想生活。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4174,
+    "word": "temple",
+    "phonetic": "ˈtempl",
+    "pos": "n.",
+    "meaning": "庙宇/寺院",
+    "example": "The ancient temple stands on top of the hill.",
+    "exampleCn": "古庙矗立在山顶上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4175,
+    "word": "pagoda",
+    "phonetic": "pəˈɡəʊdə",
+    "pos": "n.",
+    "meaning": "佛塔/宝塔",
+    "example": "The pagoda has seven storeys, each with a curved roof.",
+    "exampleCn": "这座佛塔有七层，每层都有弯曲的屋顶。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4176,
+    "word": "chronology",
+    "phonetic": "krəˈnɒlədʒi",
+    "pos": "n.",
+    "meaning": "年表/年代学",
+    "example": "The chronology of events is presented in the appendix.",
+    "exampleCn": "事件年表列在附录中。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4177,
+    "word": "king",
+    "phonetic": "kɪŋ",
+    "pos": "n.",
+    "meaning": "国王",
+    "example": "The king addressed his subjects from the balcony.",
+    "exampleCn": "国王从阳台上向他的臣民发表了讲话。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4178,
+    "word": "queen",
+    "phonetic": "kwiːn",
+    "pos": "n.",
+    "meaning": "女王/王后",
+    "example": "The queen has reigned for over sixty years.",
+    "exampleCn": "女王已经统治了超过六十年。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4179,
+    "word": "prince",
+    "phonetic": "prɪns",
+    "pos": "n.",
+    "meaning": "王子/亲王",
+    "example": "The prince is next in line to the throne.",
+    "exampleCn": "王子是王位的下一位继承人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4180,
+    "word": "princess",
+    "phonetic": "ˌprɪnˈses",
+    "pos": "n.",
+    "meaning": "公主/王妃",
+    "example": "The princess is known for her charitable work.",
+    "exampleCn": "公主以慈善事业而闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4181,
+    "word": "majesty",
+    "phonetic": "ˈmædʒəsti",
+    "pos": "n.",
+    "meaning": "陛下/威严",
+    "example": "His Majesty the King welcomed the foreign guests.",
+    "exampleCn": "国王陛下欢迎了外国贵宾。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4182,
+    "word": "nobility",
+    "phonetic": "nəʊˈbɪləti",
+    "pos": "n.",
+    "meaning": "贵族/高尚",
+    "example": "The nobility owned most of the land in medieval times.",
+    "exampleCn": "中世纪时期贵族拥有大部分土地。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4183,
+    "word": "lord",
+    "phonetic": "lɔːd",
+    "pos": "n.",
+    "meaning": "勋爵/领主",
+    "example": "The lord of the manor lived in a grand castle.",
+    "exampleCn": "庄园主住在一座宏伟的城堡里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4184,
+    "word": "knight",
+    "phonetic": "naɪt",
+    "pos": "n.",
+    "meaning": "骑士",
+    "example": "The knight wore a suit of shining armour.",
+    "exampleCn": "骑士穿着一身闪亮的盔甲。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4185,
+    "word": "nostalgia",
+    "phonetic": "nɒˈstældʒə",
+    "pos": "n.",
+    "meaning": "怀旧/乡愁",
+    "example": "The old photos filled her with nostalgia for her childhood.",
+    "exampleCn": "这些老照片让她充满了对童年的怀旧之情。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4186,
+    "word": "background",
+    "phonetic": "ˈbækɡraʊnd",
+    "pos": "n.",
+    "meaning": "背景/出身",
+    "example": "Students from different cultural backgrounds study here.",
+    "exampleCn": "来自不同文化背景的学生在这里学习。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4187,
+    "word": "experience",
+    "phonetic": "ɪkˈspɪəriəns",
+    "pos": "n.",
+    "meaning": "经验/经历",
+    "example": "The internship gave her valuable work experience.",
+    "exampleCn": "这次实习给了她宝贵的工作经验。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4188,
+    "word": "accident",
+    "phonetic": "ˈæksɪdənt",
+    "pos": "n.",
+    "meaning": "事故/意外",
+    "example": "She was injured in a car accident.",
+    "exampleCn": "她在一场车祸中受伤了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4189,
+    "word": "setback",
+    "phonetic": "ˈsetbæk",
+    "pos": "n.",
+    "meaning": "挫折/倒退",
+    "example": "Losing the match was a setback but they kept training.",
+    "exampleCn": "输掉比赛是一个挫折，但他们继续训练。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  },
+  {
+    "id": 4190,
+    "word": "adversity",
+    "phonetic": "ədˈvɜːsəti",
+    "pos": "n.",
+    "meaning": "逆境/困难",
+    "example": "She showed great courage in the face of adversity.",
+    "exampleCn": "面对逆境，她表现出了极大的勇气。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
+  }
+]

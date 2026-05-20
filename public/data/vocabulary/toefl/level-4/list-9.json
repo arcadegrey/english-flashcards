@@ -79,7 +79,11 @@
     ],
     "level": "4",
     "list": "9",
-    "ieltsList": "4"
+    "ieltsList": "4",
+    "ieltsLists": [
+      "4",
+      "25"
+    ]
   },
   {
     "id": 176,
@@ -92,10 +96,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
   },
   {
     "id": 288,
@@ -108,10 +117,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
   },
   {
     "id": 570,
@@ -138,10 +152,15 @@
     "exampleCn": "研究人员在写报告前会汇编来自许多来源的数据。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
   },
   {
     "id": 2179,
@@ -465,10 +484,15 @@
     "exampleCn": "科学家们参加了一个国际大会。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
   },
   {
     "id": 2200,
@@ -480,10 +504,15 @@
     "exampleCn": "海绵可以吸收很多水。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
   },
   {
     "id": 2201,
@@ -555,10 +584,16 @@
     "exampleCn": "歌手的音高清晰而准确。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24",
+      "27"
+    ]
   },
   {
     "id": 2206,
@@ -590,10 +625,15 @@
     "exampleCn": "这个多用途工具可以用于许多场合。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
   },
   {
     "id": 2208,
@@ -905,10 +945,15 @@
     "exampleCn": "持续练习可以提高语言能力。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
   },
   {
     "id": 2228,
@@ -1304,10 +1349,15 @@
     "exampleCn": "柔软的垫子让椅子更舒服。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
   },
   {
     "id": 2254,
@@ -1319,10 +1369,15 @@
     "exampleCn": "请轻点屏幕来启动程序。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
   },
   {
     "id": 2255,

@@ -1,0 +1,1129 @@
+[
+  {
+    "id": 6,
+    "word": "absorb",
+    "phonetic": "/əbˈzɔːrb/",
+    "pos": "v.",
+    "meaning": "吸收；理解",
+    "example": "Plants absorb sunlight for energy.",
+    "exampleCn": "植物吸收阳光以获取能量。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6",
+      "18"
+    ]
+  },
+  {
+    "id": 16,
+    "word": "accumulate",
+    "phonetic": "/əˈkjuːmjəleɪt/",
+    "pos": "v.",
+    "meaning": "积累，积聚",
+    "example": "Dust tends to accumulate quickly in this room.",
+    "exampleCn": "灰尘在这个房间里积聚得很快。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 29,
+    "word": "advance",
+    "phonetic": "/ədˈvɑːns/",
+    "pos": "v./n.",
+    "meaning": "前进；提前；预付",
+    "example": "Technology has advanced rapidly.",
+    "exampleCn": "技术进步很快。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 57,
+    "word": "accessory",
+    "phonetic": "/əkˈsesəri/",
+    "pos": "n./adj.",
+    "meaning": "配件/附件/从犯/附属的",
+    "example": "A phone case is a useful accessory for protecting a device.",
+    "exampleCn": "手机壳是保护设备的有用配件。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 157,
+    "word": "appliance",
+    "phonetic": "/əˈplaɪəns/",
+    "pos": "n.",
+    "meaning": "器具，器械",
+    "example": "Kitchen appliances make cooking easier.",
+    "exampleCn": "厨房电器让烹饪更轻松。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 160,
+    "word": "apply",
+    "phonetic": "/əˈplaɪ/",
+    "pos": "v.",
+    "meaning": "申请；应用；适用",
+    "example": "Apply for the job online.",
+    "exampleCn": "在线申请这份工作。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17",
+      "18"
+    ]
+  },
+  {
+    "id": 177,
+    "word": "assemble",
+    "phonetic": "/əˈsembl/",
+    "pos": "v.",
+    "meaning": "集合/组装",
+    "example": "Volunteers assembled in the school gym.",
+    "exampleCn": "志愿者们在学校体育馆集合。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 178,
+    "word": "assess",
+    "phonetic": "/əˈses/",
+    "pos": "v.",
+    "meaning": "评估/估算",
+    "example": "Scientists assess the damage after a storm.",
+    "exampleCn": "科学家在暴风雨后评估损失。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 187,
+    "word": "attach",
+    "phonetic": "/əˈtætʃ/",
+    "pos": "v.",
+    "meaning": "系上/附上/认为有重要性",
+    "example": "Please attach the file to your email.",
+    "exampleCn": "请把文件附在你的邮件里。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 232,
+    "word": "belong",
+    "phonetic": "/bɪˈlɔːŋ/",
+    "pos": "v.",
+    "meaning": "属于",
+    "example": "This book belongs to me.",
+    "exampleCn": "这本书是我的。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 354,
+    "word": "calculate",
+    "phonetic": "/ˈkælkjəˌleɪt/",
+    "pos": "v.",
+    "meaning": "计算；估算",
+    "example": "Please calculate the total cost before ordering.",
+    "exampleCn": "下单前请计算总费用。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 537,
+    "word": "mechanic",
+    "phonetic": "/məˈkænɪk/",
+    "pos": "n.",
+    "meaning": "技工；机修工",
+    "example": "The mechanic fixed the car engine.",
+    "exampleCn": "机修工修好了汽车引擎。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 650,
+    "word": "technique",
+    "phonetic": "/tekˈniːk/",
+    "pos": "n.",
+    "meaning": "技术；技巧；方法",
+    "example": "She has good painting techniques.",
+    "exampleCn": "她有很好的绘画技巧。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 733,
+    "word": "compute",
+    "phonetic": "/kəmˈpjuːt/",
+    "pos": "v.",
+    "meaning": "计算；估算",
+    "example": "The computer computes data.",
+    "exampleCn": "计算机计算数据。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 831,
+    "word": "device",
+    "phonetic": "/dɪˈvaɪs/",
+    "pos": "n.",
+    "meaning": "装置；设备；策略",
+    "example": "This is a useful device.",
+    "exampleCn": "这是个有用的装置。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 973,
+    "word": "reveal",
+    "phonetic": "/rɪˈviːl/",
+    "pos": "v.",
+    "meaning": "揭示，透露",
+    "example": "The survey revealed surprising results.",
+    "exampleCn": "调查揭示了令人惊讶的结果。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 1037,
+    "word": "focus",
+    "phonetic": "/ˈfoʊkəs/",
+    "pos": "n./v.",
+    "meaning": "焦点，重点/集中",
+    "example": "The main focus of the lecture was climate policy./Please focus on your work.",
+    "exampleCn": "这次讲座的重点是气候政策。/请专注于你的工作。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 1169,
+    "word": "concentrate",
+    "phonetic": "/ˈkɑːnsəntreɪt/",
+    "pos": "v.",
+    "meaning": "集中；专心",
+    "example": "It is hard to concentrate in a noisy room.",
+    "exampleCn": "在嘈杂的房间里很难集中注意力。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 1308,
+    "word": "innovate",
+    "phonetic": "/ˈɪnəˌveɪt/",
+    "pos": "v.",
+    "meaning": "创新；改革",
+    "example": "Small companies must innovate to stay competitive.",
+    "exampleCn": "小公司必须创新才能保持竞争力。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 1382,
+    "word": "realm",
+    "phonetic": "/relm/",
+    "pos": "n.",
+    "meaning": "领域；范围",
+    "example": "These issues belong to the realm of politics.",
+    "exampleCn": "这些问题属于政治领域。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 1430,
+    "word": "usage",
+    "phonetic": "/ˈjuːsɪdʒ/",
+    "pos": "n.",
+    "meaning": "使用；用法",
+    "example": "The dictionary explains the usage of the word clearly.",
+    "exampleCn": "词典清楚地解释了这个词的用法。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 1572,
+    "word": "uncover",
+    "phonetic": "/ʌnˈkʌvər/",
+    "pos": "v.",
+    "meaning": "揭露/发现/揭开",
+    "example": "Archaeologists hope to uncover more evidence at the site.",
+    "exampleCn": "考古学家希望在遗址发现更多证据。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 1934,
+    "word": "echo",
+    "phonetic": "/ˈekoʊ/",
+    "pos": "n./v.",
+    "meaning": "回声/回响/重复",
+    "example": "Their footsteps echoed through the empty hall.",
+    "exampleCn": "他们的脚步声在空荡的大厅里回响。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 1969,
+    "word": "expose",
+    "phonetic": "/ɪkˈspoʊz/",
+    "pos": "v.",
+    "meaning": "暴露/揭露/使接触",
+    "example": "The report exposed serious problems in the system.",
+    "exampleCn": "这份报告揭露了系统中的严重问题。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 1990,
+    "word": "devise",
+    "phonetic": "/dɪˈvaɪz/",
+    "pos": "v.",
+    "meaning": "设计/发明/想出",
+    "example": "Scientists devised a new method to measure air pollution.",
+    "exampleCn": "科学家设计了一种测量空气污染的新方法。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 2207,
+    "word": "versatile",
+    "phonetic": "/ˈvɜːrsətl/",
+    "pos": "adj.",
+    "meaning": "多才多艺的/多用途的",
+    "example": "This versatile tool can be used in many situations.",
+    "exampleCn": "这个多用途工具可以用于许多场合。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 2280,
+    "word": "evaluate",
+    "phonetic": "/ɪˈvæljueɪt/",
+    "pos": "v.",
+    "meaning": "评估/评价",
+    "example": "Teachers evaluate students' writing based on clear criteria.",
+    "exampleCn": "老师根据明确标准评价学生的写作。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 2392,
+    "word": "domain",
+    "phonetic": "/doʊˈmeɪn/",
+    "pos": "n.",
+    "meaning": "领域/域名/范围",
+    "example": "Climate science is outside his main domain of study.",
+    "exampleCn": "气候科学不属于他的主要研究领域。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 2423,
+    "word": "disclose",
+    "phonetic": "/dɪsˈkloʊz/",
+    "pos": "v.",
+    "meaning": "透露/公开",
+    "example": "The company must disclose important financial information.",
+    "exampleCn": "公司必须公开重要的财务信息。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 2662,
+    "word": "gauge",
+    "phonetic": "/ɡeɪdʒ/",
+    "pos": "n./v.",
+    "meaning": "测量仪/标准/测量/判断",
+    "example": "Scientists gauge the depth of the river.",
+    "exampleCn": "科学家测量河水的深度。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 2701,
+    "word": "auxiliary",
+    "phonetic": "/ɔːɡˈzɪljəri/",
+    "pos": "adj./n.",
+    "meaning": "辅助的/辅助人员/助动词",
+    "example": "The hospital opened an auxiliary clinic.",
+    "exampleCn": "医院开设了一个辅助诊所。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 2931,
+    "word": "lens",
+    "phonetic": "/lenz/",
+    "pos": "n.",
+    "meaning": "透镜/镜头/晶状体",
+    "example": "The microscope uses a powerful lens.",
+    "exampleCn": "这台显微镜使用了一个强大的透镜。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 3070,
+    "word": "patent",
+    "phonetic": "/ˈpætnt/",
+    "pos": "n./v./adj.",
+    "meaning": "专利/获得专利/显而易见的",
+    "example": "The inventor applied for a patent for the new device.",
+    "exampleCn": "发明者为这个新装置申请了专利。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 3097,
+    "word": "microscope",
+    "phonetic": "/ˈmaɪkrəskoʊp/",
+    "pos": "n.",
+    "meaning": "显微镜",
+    "example": "Students used a microscope to observe plant cells.",
+    "exampleCn": "学生们用显微镜观察植物细胞。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 3730,
+    "word": "field",
+    "phonetic": "fiːld",
+    "pos": "n.",
+    "meaning": "田野/领域",
+    "example": "The fields were golden with wheat.",
+    "exampleCn": "田野因小麦而一片金黄。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6",
+      "18"
+    ]
+  },
+  {
+    "id": 4087,
+    "word": "technology",
+    "phonetic": "tekˈnɒlədʒi",
+    "pos": "n.",
+    "meaning": "技术/科技",
+    "example": "Technology is advancing at an incredible pace.",
+    "exampleCn": "技术正以惊人的速度在进步。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4088,
+    "word": "polytechnic",
+    "phonetic": "ˌpɒliˈteknɪk",
+    "pos": "n.",
+    "meaning": "理工学院",
+    "example": "He studied engineering at a polytechnic.",
+    "exampleCn": "他在一所理工学院学习工程学。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4089,
+    "word": "engineer",
+    "phonetic": "ˌendʒɪˈnɪə",
+    "pos": "n.",
+    "meaning": "工程师",
+    "example": "She works as a civil engineer for a construction company.",
+    "exampleCn": "她在一家建筑公司担任土木工程师。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4090,
+    "word": "breakthrough",
+    "phonetic": "ˈbreɪkθruː",
+    "pos": "n.",
+    "meaning": "突破/重大进展",
+    "example": "The discovery was a major breakthrough in medical research.",
+    "exampleCn": "这一发现是医学研究的一大突破。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4091,
+    "word": "gizmo",
+    "phonetic": "ˈɡɪzməʊ",
+    "pos": "n.",
+    "meaning": "小装置/小玩意",
+    "example": "The store sells all kinds of electronic gizmos.",
+    "exampleCn": "这家商店出售各种电子小装置。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4092,
+    "word": "invent",
+    "phonetic": "ɪnˈvent",
+    "pos": "v.",
+    "meaning": "发明/创造",
+    "example": "Alexander Graham Bell invented the telephone.",
+    "exampleCn": "贝尔发明了电话。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4093,
+    "word": "discover",
+    "phonetic": "dɪˈskʌvə",
+    "pos": "v.",
+    "meaning": "发现/揭示",
+    "example": "Scientists have discovered a new planet.",
+    "exampleCn": "科学家发现了一颗新的行星。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4094,
+    "word": "foundation",
+    "phonetic": "faʊnˈdeɪʃn",
+    "pos": "n.",
+    "meaning": "基础/基金会",
+    "example": "Mathematics provides the foundation for physics.",
+    "exampleCn": "数学为物理学提供了基础。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4095,
+    "word": "specialise",
+    "phonetic": "ˈspeʃəlaɪz",
+    "pos": "v.",
+    "meaning": "专攻/专门从事",
+    "example": "He specialises in environmental law.",
+    "exampleCn": "他专攻环境法。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4096,
+    "word": "utilise",
+    "phonetic": "ˈjuːtɪlaɪz",
+    "pos": "v.",
+    "meaning": "利用/使用",
+    "example": "The company utilises solar power to reduce costs.",
+    "exampleCn": "公司利用太阳能来降低成本。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4097,
+    "word": "tester",
+    "phonetic": "ˈtestə",
+    "pos": "n.",
+    "meaning": "测试员/检测器",
+    "example": "He works as a software tester for a tech company.",
+    "exampleCn": "他在一家科技公司做软件测试员。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4098,
+    "word": "facility",
+    "phonetic": "fəˈsɪləti",
+    "pos": "n.",
+    "meaning": "设施/设备",
+    "example": "The school has excellent sports facilities.",
+    "exampleCn": "这所学校有出色的体育设施。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4099,
+    "word": "equipment",
+    "phonetic": "ɪˈkwɪpmənt",
+    "pos": "n.",
+    "meaning": "设备/装备",
+    "example": "The laboratory has all the latest equipment.",
+    "exampleCn": "实验室拥有所有最新的设备。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4100,
+    "word": "instrument",
+    "phonetic": "ˈɪnstrəmənt",
+    "pos": "n.",
+    "meaning": "仪器/乐器",
+    "example": "The surgeon's instruments were sterilised before the operation.",
+    "exampleCn": "外科医生的器械在手术前已消毒。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4101,
+    "word": "tool",
+    "phonetic": "tuːl",
+    "pos": "n.",
+    "meaning": "工具/手段",
+    "example": "A hammer is a basic tool for carpentry.",
+    "exampleCn": "锤子是木工的基本工具。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4102,
+    "word": "measure",
+    "phonetic": "ˈmeʒə",
+    "pos": "v.",
+    "meaning": "测量/衡量",
+    "example": "Scientists measure the temperature of the ocean regularly.",
+    "exampleCn": "科学家定期测量海洋温度。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4103,
+    "word": "count",
+    "phonetic": "kaʊnt",
+    "pos": "v.",
+    "meaning": "计数/计算",
+    "example": "She counted the number of students in the classroom.",
+    "exampleCn": "她数了数教室里的学生人数。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4104,
+    "word": "estimate",
+    "phonetic": "ˈestɪmeɪt",
+    "pos": "v.",
+    "meaning": "估计/估算",
+    "example": "The cost of the project is estimated at two million dollars.",
+    "exampleCn": "该项目的成本估计为两百万美元。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4105,
+    "word": "byproduct",
+    "phonetic": "ˈbaɪˌprɒdʌkt",
+    "pos": "n.",
+    "meaning": "副产品",
+    "example": "Sawdust is a byproduct of the timber industry.",
+    "exampleCn": "锯末是木材工业的副产品。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4106,
+    "word": "add",
+    "phonetic": "æd",
+    "pos": "v.",
+    "meaning": "添加/增加",
+    "example": "Add the sugar to the mixture and stir well.",
+    "exampleCn": "将糖加入混合物中并搅拌均匀。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4107,
+    "word": "gather",
+    "phonetic": "ˈɡæðə",
+    "pos": "v.",
+    "meaning": "收集/聚集",
+    "example": "She gathered data from hundreds of participants.",
+    "exampleCn": "她从数百名参与者那里收集了数据。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4108,
+    "word": "optics",
+    "phonetic": "ˈɒptɪks",
+    "pos": "n.",
+    "meaning": "光学",
+    "example": "Optics is the study of light and vision.",
+    "exampleCn": "光学是研究光和视觉的学科。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4109,
+    "word": "radar",
+    "phonetic": "ˈreɪdɑː",
+    "pos": "n.",
+    "meaning": "雷达",
+    "example": "The ship's radar detected an object in the distance.",
+    "exampleCn": "船上的雷达探测到远处有一个物体。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4110,
+    "word": "sensor",
+    "phonetic": "ˈsensə",
+    "pos": "n.",
+    "meaning": "传感器",
+    "example": "The sensor detects movement and turns on the lights.",
+    "exampleCn": "传感器检测到移动就会打开灯。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  },
+  {
+    "id": 4111,
+    "word": "multimedia",
+    "phonetic": "ˌmʌltiˈmiːdiə",
+    "pos": "n.",
+    "meaning": "多媒体",
+    "example": "The classroom is equipped with multimedia facilities.",
+    "exampleCn": "教室配有多媒体设施。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
+  }
+]

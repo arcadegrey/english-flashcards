@@ -1,0 +1,1527 @@
+[
+  {
+    "id": 185,
+    "word": "athlete",
+    "phonetic": "/ˈæθliːt/",
+    "pos": "n.",
+    "meaning": "运动员",
+    "example": "The athlete trained hard.",
+    "exampleCn": "运动员努力训练。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 235,
+    "word": "bend",
+    "phonetic": "/bend/",
+    "pos": "v./n.",
+    "meaning": "弯曲；弯道",
+    "example": "Bend your knees.",
+    "exampleCn": "弯曲你的膝盖。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 288,
+    "word": "bounce",
+    "phonetic": "/baʊns/",
+    "pos": "v./n.",
+    "meaning": "弹起/反弹/弹跳",
+    "example": "The ball will bounce higher on a hard surface.",
+    "exampleCn": "球在坚硬表面上会弹得更高。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 290,
+    "word": "bow",
+    "phonetic": "/baʊ/",
+    "pos": "v./n.",
+    "meaning": "鞠躬；弓",
+    "example": "The actor took a bow after the show.",
+    "exampleCn": "演员在演出结束后鞠躬致谢。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 359,
+    "word": "camp",
+    "phonetic": "/kæmp/",
+    "pos": "n./v.",
+    "meaning": "营地；露营",
+    "example": "We set up camp near the lake.",
+    "exampleCn": "我们在湖边扎营。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 411,
+    "word": "champion",
+    "phonetic": "/ˈtʃæmpiən/",
+    "pos": "n./v.",
+    "meaning": "冠军/拥护者/支持",
+    "example": "She became a champion of environmental protection.",
+    "exampleCn": "她成为环境保护的支持者。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 433,
+    "word": "chess",
+    "phonetic": "/tʃes/",
+    "pos": "n.",
+    "meaning": "国际象棋",
+    "example": "He plays chess every weekend.",
+    "exampleCn": "他每个周末都下国际象棋。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 576,
+    "word": "leap",
+    "phonetic": "/liːp/",
+    "pos": "v./n.",
+    "meaning": "跳跃；飞跃；剧增",
+    "example": "The cat leaped onto the table.",
+    "exampleCn": "猫跳上了桌子。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 667,
+    "word": "slide",
+    "phonetic": "/slaɪd/",
+    "pos": "v./n.",
+    "meaning": "滑动；滑坡；幻灯片",
+    "example": "The book slid off the table.",
+    "exampleCn": "书从桌上滑落了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 706,
+    "word": "drift",
+    "phonetic": "/drɪft/",
+    "pos": "v./n.",
+    "meaning": "漂流；漂移",
+    "example": "The boat drifted away.",
+    "exampleCn": "船漂走了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 772,
+    "word": "drag",
+    "phonetic": "/dræɡ/",
+    "pos": "v.",
+    "meaning": "拖；拉；缓慢移动",
+    "example": "Drag the file to the folder.",
+    "exampleCn": "把文件拖到文件夹里。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 904,
+    "word": "stretch",
+    "phonetic": "/stretʃ/",
+    "pos": "v./n.",
+    "meaning": "伸展；延伸",
+    "example": "Take a moment to stretch your legs.",
+    "exampleCn": "花点时间伸展一下双腿。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 1054,
+    "word": "athletics",
+    "phonetic": "/æθˈletɪks/",
+    "pos": "n.",
+    "meaning": "体育运动，田径",
+    "example": "He is interested in athletics at school.",
+    "exampleCn": "他对学校的体育运动很感兴趣。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 1179,
+    "word": "slip",
+    "phonetic": "/slɪp/",
+    "pos": "v./n.",
+    "meaning": "滑倒；滑落/小失误；纸条",
+    "example": "Be careful not to slip on the wet floor.",
+    "exampleCn": "小心别在湿地板上滑倒。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 1209,
+    "word": "mobile",
+    "phonetic": "/ˈmoʊbəl/",
+    "pos": "adj./n.",
+    "meaning": "移动的；流动的/手机",
+    "example": "Young people rely heavily on mobile technology.",
+    "exampleCn": "年轻人非常依赖移动技术。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 1227,
+    "word": "fame",
+    "phonetic": "/feɪm/",
+    "pos": "n.",
+    "meaning": "名声；名望",
+    "example": "The artist achieved international fame at a young age.",
+    "exampleCn": "这位艺术家年纪轻轻就获得了国际声誉。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 1385,
+    "word": "dive",
+    "phonetic": "/daɪv/",
+    "pos": "v./n.",
+    "meaning": "跳水；潜水/跳水",
+    "example": "The bird dived into the water to catch a fish.",
+    "exampleCn": "那只鸟俯冲入水去抓鱼。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 1437,
+    "word": "motion",
+    "phonetic": "/ˈmoʊʃən/",
+    "pos": "n./v.",
+    "meaning": "运动/动作/手势/提议/打手势",
+    "example": "The motion of the planets can be predicted with careful observation.",
+    "exampleCn": "通过仔细观察可以预测行星的运动。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "10",
+    "ieltsLists": [
+      "10",
+      "24"
+    ]
+  },
+  {
+    "id": 1564,
+    "word": "vigorous",
+    "phonetic": "/ˈvɪɡərəs/",
+    "pos": "adj.",
+    "meaning": "充满活力的/强有力的",
+    "example": "The plants showed vigorous growth after the rain.",
+    "exampleCn": "雨后这些植物表现出旺盛的生长。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 1644,
+    "word": "hop",
+    "phonetic": "/hɑːp/",
+    "pos": "v./n.",
+    "meaning": "跳跃/短途旅行",
+    "example": "The rabbit began to hop across the grass.",
+    "exampleCn": "兔子开始跳过草地。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 1878,
+    "word": "pedestrian",
+    "phonetic": "/pəˈdestriən/",
+    "pos": "n./adj.",
+    "meaning": "行人/行人的/平淡无奇的",
+    "example": "Drivers should always watch for pedestrians at crossings.",
+    "exampleCn": "司机在路口应始终注意行人。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 2030,
+    "word": "sponsor",
+    "phonetic": "/ˈspɑːnsər/",
+    "pos": "n./v.",
+    "meaning": "赞助者/赞助/主办",
+    "example": "A local company agreed to sponsor the event.",
+    "exampleCn": "一家当地公司同意赞助这项活动。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 2205,
+    "word": "pitch",
+    "phonetic": "/pɪtʃ/",
+    "pos": "n./v.",
+    "meaning": "音高/球场/投掷/推销",
+    "example": "The singer’s pitch was clear and accurate.",
+    "exampleCn": "歌手的音高清晰而准确。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24",
+      "27"
+    ]
+  },
+  {
+    "id": 2330,
+    "word": "wander",
+    "phonetic": "/ˈwɑːndər/",
+    "pos": "v.",
+    "meaning": "漫步/徘徊/走神",
+    "example": "Tourists wandered through the old streets.",
+    "exampleCn": "游客们在古老的街道上漫步。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 2400,
+    "word": "energetic",
+    "phonetic": "/ˌenərˈdʒetɪk/",
+    "pos": "adj.",
+    "meaning": "精力充沛的/充满活力的",
+    "example": "The energetic teacher made the lesson exciting.",
+    "exampleCn": "这位精力充沛的老师让课堂变得有趣。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 2406,
+    "word": "tournament",
+    "phonetic": "/ˈtʊrnəmənt/",
+    "pos": "n.",
+    "meaning": "锦标赛/比赛",
+    "example": "Our school won the basketball tournament.",
+    "exampleCn": "我们学校赢得了篮球锦标赛。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 2937,
+    "word": "patron",
+    "phonetic": "/ˈpeɪtrən/",
+    "pos": "n.",
+    "meaning": "赞助人/顾客/ patron saint 守护圣人",
+    "example": "The museum thanked its wealthy patron.",
+    "exampleCn": "博物馆感谢了那位富有的赞助人。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 3076,
+    "word": "limb",
+    "phonetic": "/lɪm/",
+    "pos": "n.",
+    "meaning": "肢/臂/腿/树枝",
+    "example": "The injured bird could not move one limb properly.",
+    "exampleCn": "受伤的鸟无法正常移动一只肢体。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 3211,
+    "word": "strain",
+    "phonetic": "/streɪn/",
+    "pos": "n./v.",
+    "meaning": "压力/拉伤/品种/拉紧/使紧张",
+    "example": "Long hours of study can strain the eyes.",
+    "exampleCn": "长时间学习会使眼睛疲劳。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 3265,
+    "word": "lag",
+    "phonetic": "/læɡ/",
+    "pos": "v./n.",
+    "meaning": "落后/延迟/滞后",
+    "example": "The video began to lag during the online meeting.",
+    "exampleCn": "在线视频会议中画面开始延迟。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 3266,
+    "word": "linger",
+    "phonetic": "/ˈlɪŋɡər/",
+    "pos": "v.",
+    "meaning": "逗留/徘徊/迟迟不消散",
+    "example": "The smell of smoke lingered in the room.",
+    "exampleCn": "烟味在房间里久久不散。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 3301,
+    "word": "excursion",
+    "phonetic": "/ɪkˈskɜːrʒn/",
+    "pos": "n.",
+    "meaning": "短途旅行/远足",
+    "example": "The class went on an excursion to the science museum.",
+    "exampleCn": "全班去科学博物馆短途旅行。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "10",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 3688,
+    "word": "spring",
+    "phonetic": "sprɪŋ",
+    "pos": "n.",
+    "meaning": "泉水/春天/弹簧",
+    "example": "The village gets its water from a natural spring.",
+    "exampleCn": "这个村庄从一处天然泉水中取水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4",
+    "ieltsLists": [
+      "4",
+      "24"
+    ]
+  },
+  {
+    "id": 4290,
+    "word": "competition",
+    "phonetic": "ˌkɒmpɪˈtɪʃn",
+    "pos": "n.",
+    "meaning": "比赛/竞争",
+    "example": "She won first prize in the piano competition.",
+    "exampleCn": "她在钢琴比赛中获得了一等奖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4291,
+    "word": "compete",
+    "phonetic": "kəmˈpiːt",
+    "pos": "v.",
+    "meaning": "竞争/比赛",
+    "example": "Athletes from around the world compete in the Olympics.",
+    "exampleCn": "来自世界各地的运动员在奥运会上竞争。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4292,
+    "word": "sponsorship",
+    "phonetic": "ˈspɒnsəʃɪp",
+    "pos": "n.",
+    "meaning": "赞助/资助",
+    "example": "The team relies on sponsorship for funding.",
+    "exampleCn": "这支队伍依靠赞助来获取资金。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4293,
+    "word": "spectator",
+    "phonetic": "spekˈteɪtə",
+    "pos": "n.",
+    "meaning": "观众/旁观者",
+    "example": "Thousands of spectators watched the football match.",
+    "exampleCn": "成千上万的观众观看了足球比赛。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4294,
+    "word": "volunteer",
+    "phonetic": "ˌvɒlənˈtɪə",
+    "pos": "n.",
+    "meaning": "志愿者/义工",
+    "example": "She works as a volunteer at a local charity.",
+    "exampleCn": "她在当地一家慈善机构做志愿者。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4295,
+    "word": "well-known",
+    "phonetic": "wel nəʊn",
+    "pos": "adj.",
+    "meaning": "著名的/众所周知的",
+    "example": "The restaurant is well-known for its seafood.",
+    "exampleCn": "这家餐厅以海鲜而闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4296,
+    "word": "stadium",
+    "phonetic": "ˈsteɪdiəm",
+    "pos": "n.",
+    "meaning": "体育场/运动场",
+    "example": "The stadium was filled with cheering fans.",
+    "exampleCn": "体育场里坐满了欢呼的球迷。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4297,
+    "word": "exercise",
+    "phonetic": "ˈeksəsaɪz",
+    "pos": "n/v.",
+    "meaning": "锻炼/运动",
+    "example": "Regular exercise helps to keep you healthy.",
+    "exampleCn": "定期锻炼有助于保持健康。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4298,
+    "word": "indoor",
+    "phonetic": "ˈɪndɔː",
+    "pos": "adj.",
+    "meaning": "室内的",
+    "example": "The hotel has an indoor swimming pool.",
+    "exampleCn": "酒店有一个室内游泳池。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4299,
+    "word": "outdoor",
+    "phonetic": "ˈaʊtdɔː",
+    "pos": "adj.",
+    "meaning": "户外的/室外的",
+    "example": "Outdoor activities are good for children.",
+    "exampleCn": "户外活动对孩子们有好处。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4300,
+    "word": "movement",
+    "phonetic": "ˈmuːvmənt",
+    "pos": "n.",
+    "meaning": "运动/动作",
+    "example": "The dancer's movements were graceful and fluid.",
+    "exampleCn": "舞者的动作优雅而流畅。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4301,
+    "word": "sprawl",
+    "phonetic": "sprɔːl",
+    "pos": "v/n.",
+    "meaning": "伸开四肢/蔓延",
+    "example": "He sprawled on the sofa after a long day.",
+    "exampleCn": "漫长的一天后，他伸开四肢躺在沙发上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4302,
+    "word": "badminton",
+    "phonetic": "ˈbædmɪntən",
+    "pos": "n.",
+    "meaning": "羽毛球",
+    "example": "She plays badminton at the local sports centre.",
+    "exampleCn": "她在当地的体育中心打羽毛球。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4303,
+    "word": "billiards",
+    "phonetic": "ˈbɪliədz",
+    "pos": "n.",
+    "meaning": "台球/撞球",
+    "example": "They played a game of billiards after work.",
+    "exampleCn": "他们下班后打了一局台球。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4304,
+    "word": "soccer",
+    "phonetic": "ˈsɒkə",
+    "pos": "n.",
+    "meaning": "足球",
+    "example": "Soccer is the most popular sport in the world.",
+    "exampleCn": "足球是世界上最受欢迎的运动。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4305,
+    "word": "tennis",
+    "phonetic": "ˈtenɪs",
+    "pos": "n.",
+    "meaning": "网球",
+    "example": "She has tennis practice every Tuesday.",
+    "exampleCn": "她每周二有网球训练。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4306,
+    "word": "volleyball",
+    "phonetic": "ˈvɒlibɔːl",
+    "pos": "n.",
+    "meaning": "排球",
+    "example": "Beach volleyball is a popular summer sport.",
+    "exampleCn": "沙滩排球是一项受欢迎的夏季运动。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4307,
+    "word": "hockey",
+    "phonetic": "ˈhɒki",
+    "pos": "n.",
+    "meaning": "曲棍球/冰球",
+    "example": "He plays hockey for his school team.",
+    "exampleCn": "他为校队打曲棍球。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4308,
+    "word": "kick",
+    "phonetic": "kɪk",
+    "pos": "v.",
+    "meaning": "踢/踹",
+    "example": "He kicked the ball into the goal.",
+    "exampleCn": "他把球踢进了球门。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4309,
+    "word": "knock",
+    "phonetic": "nɒk",
+    "pos": "v.",
+    "meaning": "敲/撞",
+    "example": "She knocked on the door before entering.",
+    "exampleCn": "她进门之前先敲了敲门。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4310,
+    "word": "flip",
+    "phonetic": "flɪp",
+    "pos": "v.",
+    "meaning": "翻转/轻抛",
+    "example": "He flipped the pancake high in the air.",
+    "exampleCn": "他把煎饼高高地抛到空中翻转。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4311,
+    "word": "throw",
+    "phonetic": "θrəʊ",
+    "pos": "v.",
+    "meaning": "投掷/扔",
+    "example": "He threw the ball to his teammate.",
+    "exampleCn": "他把球扔给了队友。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4312,
+    "word": "toss",
+    "phonetic": "tɒs",
+    "pos": "v.",
+    "meaning": "抛/轻投",
+    "example": "She tossed a coin to decide who would go first.",
+    "exampleCn": "她抛了一枚硬币来决定谁先走。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4313,
+    "word": "glide",
+    "phonetic": "ɡlaɪd",
+    "pos": "v.",
+    "meaning": "滑翔/滑行",
+    "example": "The eagle glided effortlessly on the wind.",
+    "exampleCn": "鹰在风中毫不费力地滑翔。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4314,
+    "word": "tumble",
+    "phonetic": "ˈtʌmbl",
+    "pos": "v.",
+    "meaning": "跌倒/摔倒",
+    "example": "The toddler took a few steps and tumbled over.",
+    "exampleCn": "幼儿走了几步然后跌倒了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4315,
+    "word": "ski",
+    "phonetic": "skiː",
+    "pos": "v.",
+    "meaning": "滑雪",
+    "example": "They go skiing in the Alps every winter.",
+    "exampleCn": "他们每年冬天去阿尔卑斯山滑雪。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4316,
+    "word": "skate",
+    "phonetic": "skeɪt",
+    "pos": "v.",
+    "meaning": "滑冰/溜冰",
+    "example": "She learned to skate when she was five.",
+    "exampleCn": "她五岁时学会了滑冰。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4317,
+    "word": "cycling",
+    "phonetic": "ˈsaɪklɪŋ",
+    "pos": "n.",
+    "meaning": "骑自行车/骑行",
+    "example": "Cycling is a great way to stay fit.",
+    "exampleCn": "骑自行车是保持健康的好方法。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4318,
+    "word": "cyclist",
+    "phonetic": "ˈsaɪklɪst",
+    "pos": "n.",
+    "meaning": "骑自行车的人/自行车手",
+    "example": "The cyclist rode fifty miles in one day.",
+    "exampleCn": "这位自行车手一天骑了五十英里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4319,
+    "word": "bicycle",
+    "phonetic": "ˈbaɪsɪkl",
+    "pos": "n.",
+    "meaning": "自行车",
+    "example": "He rides his bicycle to work every day.",
+    "exampleCn": "他每天骑自行车上班。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4320,
+    "word": "jump",
+    "phonetic": "dʒʌmp",
+    "pos": "v.",
+    "meaning": "跳/跃",
+    "example": "The athlete jumped over the hurdle easily.",
+    "exampleCn": "运动员轻松地跳过了栏。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4321,
+    "word": "plunge",
+    "phonetic": "plʌndʒ",
+    "pos": "v.",
+    "meaning": "跳水/投入",
+    "example": "He plunged into the cold water without hesitation.",
+    "exampleCn": "他毫不犹豫地跳进了冷水中。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4322,
+    "word": "plunge whole-heartedly",
+    "phonetic": "",
+    "pos": "v.",
+    "meaning": "全心投入",
+    "example": "She plunged whole-heartedly into her studies.",
+    "exampleCn": "她全身心地投入到了学习中。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4323,
+    "word": "tent",
+    "phonetic": "tent",
+    "pos": "n.",
+    "meaning": "帐篷",
+    "example": "They pitched a tent by the river.",
+    "exampleCn": "他们在河边搭了一个帐篷。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4324,
+    "word": "picnic",
+    "phonetic": "ˈpɪknɪk",
+    "pos": "n.",
+    "meaning": "野餐",
+    "example": "They had a picnic in the park on Sunday.",
+    "exampleCn": "他们周日在公园里野餐了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4325,
+    "word": "hunt",
+    "phonetic": "hʌnt",
+    "pos": "v.",
+    "meaning": "打猎/追寻",
+    "example": "Wolves hunt in packs.",
+    "exampleCn": "狼群成群打猎。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4326,
+    "word": "race",
+    "phonetic": "reɪs",
+    "pos": "n.",
+    "meaning": "赛跑/竞赛",
+    "example": "She won the hundred-metre race by a narrow margin.",
+    "exampleCn": "她以微弱的优势赢得了百米赛跑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4327,
+    "word": "marathon",
+    "phonetic": "ˈmærəθən",
+    "pos": "n.",
+    "meaning": "马拉松/长跑",
+    "example": "He ran his first marathon in under four hours.",
+    "exampleCn": "他在四小时内跑完了他的第一个马拉松。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4328,
+    "word": "pace",
+    "phonetic": "peɪs",
+    "pos": "n.",
+    "meaning": "步速/速度",
+    "example": "She walked at a brisk pace.",
+    "exampleCn": "她以轻快的步伐走着。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4329,
+    "word": "step",
+    "phonetic": "step",
+    "pos": "n.",
+    "meaning": "步伐/步骤",
+    "example": "He took a step forward and introduced himself.",
+    "exampleCn": "他上前一步做了自我介绍。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4330,
+    "word": "footstep",
+    "phonetic": "ˈfʊtstep",
+    "pos": "n.",
+    "meaning": "脚步/足迹",
+    "example": "She heard footsteps behind her in the dark.",
+    "exampleCn": "她在黑暗中听到身后有脚步声。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4331,
+    "word": "cruise",
+    "phonetic": "kruːz",
+    "pos": "n.",
+    "meaning": "乘船游览/巡游",
+    "example": "They went on a cruise around the Mediterranean.",
+    "exampleCn": "他们在地中海进行了一次游轮之旅。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4332,
+    "word": "trip",
+    "phonetic": "trɪp",
+    "pos": "n.",
+    "meaning": "旅行/出行",
+    "example": "The school trip to Paris was very exciting.",
+    "exampleCn": "学校的巴黎之旅非常令人兴奋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4333,
+    "word": "vocation",
+    "phonetic": "vəʊˈkeɪʃn",
+    "pos": "n.",
+    "meaning": "职业/使命",
+    "example": "Teaching is more than a job; it is a vocation.",
+    "exampleCn": "教书不仅仅是一份工作，更是一种使命。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4334,
+    "word": "hike",
+    "phonetic": "haɪk",
+    "pos": "n.",
+    "meaning": "徒步旅行/远足",
+    "example": "They went on a long hike through the mountains.",
+    "exampleCn": "他们在山间进行了一次长途徒步旅行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4335,
+    "word": "jog",
+    "phonetic": "dʒɒɡ",
+    "pos": "v.",
+    "meaning": "慢跑/跑步",
+    "example": "She jogs for thirty minutes every morning.",
+    "exampleCn": "她每天早上慢跑三十分钟。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4336,
+    "word": "jogger",
+    "phonetic": "ˈdʒɒɡə",
+    "pos": "n.",
+    "meaning": "慢跑者/晨跑者",
+    "example": "The park is popular with joggers in the mornings.",
+    "exampleCn": "公园在早晨很受慢跑者的欢迎。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4337,
+    "word": "stride",
+    "phonetic": "straɪd",
+    "pos": "n.",
+    "meaning": "大步/步伐",
+    "example": "He walked with long confident strides.",
+    "exampleCn": "他自信地大步走着。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4338,
+    "word": "pull",
+    "phonetic": "pʊl",
+    "pos": "v.",
+    "meaning": "拉/拖",
+    "example": "He pulled the heavy suitcase behind him.",
+    "exampleCn": "他拖着沉重的行李箱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4339,
+    "word": "be",
+    "phonetic": "biː",
+    "pos": "v.",
+    "meaning": "是/存在",
+    "example": "To be or not to be, that is the question.",
+    "exampleCn": "是或者不是，这是个问题。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  },
+  {
+    "id": 4340,
+    "word": "take a bow",
+    "phonetic": "",
+    "pos": "v.",
+    "meaning": "鞠躬谢幕",
+    "example": "The cast came on stage to take a bow.",
+    "exampleCn": "全体演员走上舞台鞠躬谢幕。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24"
+    ]
+  }
+]

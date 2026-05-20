@@ -176,6 +176,25 @@ test('mergeVocabularyUpsertWord keeps duplicate IELTS words in multiple lists', 
   assert.deepEqual(merged.ieltsLists, ['6', '8'])
 })
 
+test('parseVocabularyCsv can keep duplicate rows for upsert merging', () => {
+  const csvText = [
+    'word,meaning,category,level,list',
+    'apply,申请,ielts,,17',
+    'apply,应用,ielts,,18',
+  ].join('\n')
+
+  const { importedWords, summary } = parseVocabularyCsv({
+    csvText,
+    existingWords: [],
+    validCategoryIds,
+    allowDuplicateWords: true,
+  })
+
+  assert.equal(summary.importedCount, 2)
+  assert.equal(summary.skippedDuplicate, 0)
+  assert.deepEqual(importedWords.map((word) => word.ieltsList), ['17', '18'])
+})
+
 test('parseReadingCsv imports exam type and JSON questions', () => {
   const questions = JSON.stringify([
     {

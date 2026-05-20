@@ -1,0 +1,1094 @@
+[
+  {
+    "id": 210,
+    "word": "barrel",
+    "phonetic": "/ˈbærəl/",
+    "pos": "n.",
+    "meaning": "桶/枪管/一桶的量",
+    "example": "The workers stored the oil in a large barrel.",
+    "exampleCn": "工人们把油储存在一个大桶里。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 257,
+    "word": "blanket",
+    "phonetic": "/ˈblæŋkɪt/",
+    "pos": "n.",
+    "meaning": "毯子",
+    "example": "She wrapped herself in a warm blanket.",
+    "exampleCn": "她用温暖的毯子裹住自己。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 317,
+    "word": "brochure",
+    "phonetic": "/broʊˈʃʊr/",
+    "pos": "n.",
+    "meaning": "小册子",
+    "example": "The travel brochure has useful information.",
+    "exampleCn": "这本旅游手册有有用的信息。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13",
+      "26"
+    ]
+  },
+  {
+    "id": 323,
+    "word": "bucket",
+    "phonetic": "/ˈbʌkɪt/",
+    "pos": "n.",
+    "meaning": "水桶",
+    "example": "He filled the bucket with water.",
+    "exampleCn": "他把桶装满了水。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 350,
+    "word": "cable",
+    "phonetic": "/ˈkeɪbl/",
+    "pos": "n.",
+    "meaning": "电缆；缆绳",
+    "example": "The cable connects the computer to the printer.",
+    "exampleCn": "这根电缆连接电脑和打印机。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 365,
+    "word": "candle",
+    "phonetic": "/ˈkændl/",
+    "pos": "n.",
+    "meaning": "蜡烛",
+    "example": "The room was lit by candles.",
+    "exampleCn": "房间由蜡烛照亮。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 379,
+    "word": "carpet",
+    "phonetic": "/ˈkɑːrpɪt/",
+    "pos": "n.",
+    "meaning": "地毯",
+    "example": "The living room has a thick carpet.",
+    "exampleCn": "客厅铺着厚厚的地毯。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 522,
+    "word": "factor",
+    "phonetic": "/ˈfæktə(r)/",
+    "pos": "n.",
+    "meaning": "因素；要素",
+    "example": "Cost is an important factor in decision-making.",
+    "exampleCn": "成本是决策中的一个重要因素。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 627,
+    "word": "handle",
+    "phonetic": "/ˈhændl/",
+    "pos": "v./n.",
+    "meaning": "处理；操作；把手",
+    "example": "Handle this with care.",
+    "exampleCn": "小心处理这个。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 629,
+    "word": "section",
+    "phonetic": "/ˈsekʃn/",
+    "pos": "n.",
+    "meaning": "部分；部门；截面",
+    "example": "Read the first section of the chapter.",
+    "exampleCn": "阅读章节的第一部分。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 989,
+    "word": "label",
+    "phonetic": "/ˈleɪbl/",
+    "pos": "n./v.",
+    "meaning": "标签/贴标签，把…称为",
+    "example": "Read the label before using the medicine./Critics labeled the plan unrealistic.",
+    "exampleCn": "使用这种药前请先看标签。/评论家称这个计划不切实际。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 1175,
+    "word": "tissue",
+    "phonetic": "/ˈtɪʃuː/",
+    "pos": "n.",
+    "meaning": "组织；纸巾",
+    "example": "Human tissue can be damaged by disease.",
+    "exampleCn": "人体组织可能会被疾病损伤。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 1409,
+    "word": "leaflet",
+    "phonetic": "/ˈliːflət/",
+    "pos": "n.",
+    "meaning": "传单；小册子",
+    "example": "The volunteers handed out leaflets in the park.",
+    "exampleCn": "志愿者们在公园里发传单。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23",
+      "26"
+    ]
+  },
+  {
+    "id": 1472,
+    "word": "cord",
+    "phonetic": "/kɔːrd/",
+    "pos": "n.",
+    "meaning": "绳索/电线/索状结构",
+    "example": "The device is connected to the wall by a power cord.",
+    "exampleCn": "这个设备通过电源线连接到墙上。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 1651,
+    "word": "fuse",
+    "phonetic": "/fjuːz/",
+    "pos": "v./n.",
+    "meaning": "融合/保险丝/导火线",
+    "example": "The heat caused the metals to fuse together.",
+    "exampleCn": "高温使这些金属熔合在一起。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 2200,
+    "word": "sponge",
+    "phonetic": "/spʌndʒ/",
+    "pos": "n./v.",
+    "meaning": "海绵/用海绵擦/吸收",
+    "example": "A sponge can absorb a lot of water.",
+    "exampleCn": "海绵可以吸收很多水。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 2253,
+    "word": "cushion",
+    "phonetic": "/ˈkʊʃn/",
+    "pos": "n./v.",
+    "meaning": "垫子/缓冲/缓和",
+    "example": "The soft cushion made the chair more comfortable.",
+    "exampleCn": "柔软的垫子让椅子更舒服。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 2388,
+    "word": "curtain",
+    "phonetic": "/ˈkɜːrtn/",
+    "pos": "n.",
+    "meaning": "窗帘/幕布",
+    "example": "The curtain blocked the bright sunlight.",
+    "exampleCn": "窗帘挡住了强烈的阳光。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 2390,
+    "word": "tag",
+    "phonetic": "/tæɡ/",
+    "pos": "n./v.",
+    "meaning": "标签/标记/给……贴标签",
+    "example": "Each suitcase had a name tag.",
+    "exampleCn": "每个手提箱都有一个姓名标签。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 2434,
+    "word": "duplicate",
+    "phonetic": "/ˈduːplɪkeɪt/; /ˈduːplɪkət/",
+    "pos": "v./adj./n.",
+    "meaning": "复制/重复的/副本",
+    "example": "Please duplicate the worksheet before making changes.",
+    "exampleCn": "请在修改前复制这张工作表。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 2881,
+    "word": "jar",
+    "phonetic": "/dʒɑːr/",
+    "pos": "n./v.",
+    "meaning": "罐子/刺耳地震动/使不快",
+    "example": "The jam was stored in a glass jar.",
+    "exampleCn": "果酱被装在玻璃罐里。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 3092,
+    "word": "opaque",
+    "phonetic": "/oʊˈpeɪk/",
+    "pos": "adj.",
+    "meaning": "不透明的/难懂的",
+    "example": "The opaque glass blocks most of the light.",
+    "exampleCn": "不透明玻璃挡住了大部分光线。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 3107,
+    "word": "sweep",
+    "phonetic": "/swiːp/",
+    "pos": "v./n.",
+    "meaning": "扫/掠过/席卷/范围/扫除",
+    "example": "Strong winds can sweep across the open plain.",
+    "exampleCn": "强风会席卷开阔的平原。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 3138,
+    "word": "staple",
+    "phonetic": "/ˈsteɪpl/",
+    "pos": "n./adj./v.",
+    "meaning": "主食/主要产品/主要的/用订书钉订",
+    "example": "Rice is a staple food in many Asian countries.",
+    "exampleCn": "米饭是许多亚洲国家的主食。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 3156,
+    "word": "bolt",
+    "phonetic": "/boʊlt/",
+    "pos": "n./v.",
+    "meaning": "螺栓/闪电/猛冲/闩上",
+    "example": "A loose bolt caused the machine to shake loudly.",
+    "exampleCn": "一颗松动的螺栓导致机器剧烈震动。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 3177,
+    "word": "strand",
+    "phonetic": "/strænd/",
+    "pos": "n./v.",
+    "meaning": "股/缕/使滞留",
+    "example": "A strand of DNA contains genetic information.",
+    "exampleCn": "一条DNA链包含遗传信息。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 3273,
+    "word": "quilt",
+    "phonetic": "/kwɪlt/",
+    "pos": "n./v.",
+    "meaning": "被子/缝被/绗缝",
+    "example": "Grandmother made a warm quilt from old fabric.",
+    "exampleCn": "奶奶用旧布做了一床暖和的被子。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4368,
+    "word": "mattress",
+    "phonetic": "ˈmætrəs",
+    "pos": "n.",
+    "meaning": "床垫/褥子",
+    "example": "The mattress was so comfortable that I fell asleep immediately.",
+    "exampleCn": "床垫太舒服了，我立刻就睡着了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4369,
+    "word": "rug",
+    "phonetic": "rʌɡ",
+    "pos": "n.",
+    "meaning": "小地毯/垫子",
+    "example": "A colourful rug lay on the floor.",
+    "exampleCn": "地板上铺了一张彩色的地毯。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4370,
+    "word": "mat",
+    "phonetic": "mæt",
+    "pos": "n.",
+    "meaning": "垫子/地毯",
+    "example": "Wipe your feet on the mat before entering.",
+    "exampleCn": "进门之前先在垫子上擦擦脚。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4371,
+    "word": "pad",
+    "phonetic": "pæd",
+    "pos": "n.",
+    "meaning": "垫子/便签",
+    "example": "She wrote the number on a pad of paper.",
+    "exampleCn": "她把号码写在一叠便签上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4372,
+    "word": "sheet",
+    "phonetic": "ʃiːt",
+    "pos": "n.",
+    "meaning": "床单/一张",
+    "example": "She changed the sheets on the bed every week.",
+    "exampleCn": "她每周更换床单。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4373,
+    "word": "pillow",
+    "phonetic": "ˈpɪləʊ",
+    "pos": "n.",
+    "meaning": "枕头",
+    "example": "He laid his head on the soft pillow.",
+    "exampleCn": "他把头放在柔软的枕头上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4374,
+    "word": "towel",
+    "phonetic": "ˈtaʊəl",
+    "pos": "n.",
+    "meaning": "毛巾",
+    "example": "He dried himself with a clean towel.",
+    "exampleCn": "他用一条干净的毛巾擦干了身体。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4375,
+    "word": "nail",
+    "phonetic": "neɪl",
+    "pos": "n.",
+    "meaning": "钉子/指甲",
+    "example": "He hammered a nail into the wall.",
+    "exampleCn": "他把钉子锤进了墙里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4376,
+    "word": "razor",
+    "phonetic": "ˈreɪzə",
+    "pos": "n.",
+    "meaning": "剃刀/刮胡刀",
+    "example": "He used a razor to shave his beard.",
+    "exampleCn": "他用剃刀刮胡子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4377,
+    "word": "shave",
+    "phonetic": "ʃeɪv",
+    "pos": "v.",
+    "meaning": "刮脸/剃毛",
+    "example": "He shaves every morning before work.",
+    "exampleCn": "他每天早上上班前刮脸。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4378,
+    "word": "match",
+    "phonetic": "mætʃ",
+    "pos": "n.",
+    "meaning": "火柴/比赛",
+    "example": "He struck a match to light the candle.",
+    "exampleCn": "他划了一根火柴点燃了蜡烛。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4379,
+    "word": "wax",
+    "phonetic": "wæks",
+    "pos": "n.",
+    "meaning": "蜡/蜜蜡",
+    "example": "The candle was made of beeswax.",
+    "exampleCn": "这支蜡烛是用蜂蜡制成的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4380,
+    "word": "portfolio",
+    "phonetic": "pɔːtˈfəʊliəʊ",
+    "pos": "n.",
+    "meaning": "文件夹/作品集",
+    "example": "She showed her portfolio of drawings to the interviewer.",
+    "exampleCn": "她向面试官展示了她收录画作的作品集。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4381,
+    "word": "paperback",
+    "phonetic": "ˈpeɪpəbæk",
+    "pos": "n.",
+    "meaning": "平装书/简装",
+    "example": "The novel is now available in paperback.",
+    "exampleCn": "这本小说现在有平装版可供选择。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4382,
+    "word": "pamphlet",
+    "phonetic": "ˈpæmflɪt",
+    "pos": "n.",
+    "meaning": "小册子/传单",
+    "example": "He handed out pamphlets advertising the event.",
+    "exampleCn": "他分发广告小册子宣传这个活动。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4383,
+    "word": "booklet",
+    "phonetic": "ˈbʊklɪt",
+    "pos": "n.",
+    "meaning": "小册子/手册",
+    "example": "The instruction booklet explains how to use the device.",
+    "exampleCn": "这本说明书解释了如何使用该设备。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4384,
+    "word": "cover",
+    "phonetic": "ˈkʌvə",
+    "pos": "n.",
+    "meaning": "封面/盖子",
+    "example": "The book has a colourful cover.",
+    "exampleCn": "这本书有一个彩色的封面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4385,
+    "word": "xerox",
+    "phonetic": "ˈzɪərɒks",
+    "pos": "v.",
+    "meaning": "复印/影印",
+    "example": "She xeroxed the documents for the meeting.",
+    "exampleCn": "她为会议复印了文件。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4386,
+    "word": "memorandum",
+    "phonetic": "ˌmeməˈrændəm",
+    "pos": "n.",
+    "meaning": "备忘录/便函",
+    "example": "He sent a memorandum to all staff about the new policy.",
+    "exampleCn": "他向全体工作人员发了一份关于新政策的备忘录。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4387,
+    "word": "stationery",
+    "phonetic": "ˈsteɪʃənri",
+    "pos": "n.",
+    "meaning": "文具/办公用品",
+    "example": "The shop sells stationery such as pens and notebooks.",
+    "exampleCn": "这家商店出售笔和笔记本等文具。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4388,
+    "word": "stationer",
+    "phonetic": "ˈsteɪʃənə",
+    "pos": "n.",
+    "meaning": "文具商/文具店",
+    "example": "The stationer on the corner sells art supplies.",
+    "exampleCn": "街角的文具店出售美术用品。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4389,
+    "word": "glue",
+    "phonetic": "ɡluː",
+    "pos": "n.",
+    "meaning": "胶水",
+    "example": "She used glue to stick the photo into the album.",
+    "exampleCn": "她用胶水把照片粘进了相册。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4390,
+    "word": "rubber",
+    "phonetic": "ˈrʌbə",
+    "pos": "n.",
+    "meaning": "橡皮/橡胶",
+    "example": "He used a rubber to erase the mistake.",
+    "exampleCn": "他用橡皮擦掉了错误。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4391,
+    "word": "scissors",
+    "phonetic": "ˈsɪzəz",
+    "pos": "n.",
+    "meaning": "剪刀",
+    "example": "She cut the paper with a pair of scissors.",
+    "exampleCn": "她用一把剪刀剪了纸。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4392,
+    "word": "shear",
+    "phonetic": "ʃɪə",
+    "pos": "v.",
+    "meaning": "剪/修剪",
+    "example": "Farmers shear sheep in the spring.",
+    "exampleCn": "农民在春天剪羊毛。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4393,
+    "word": "edge",
+    "phonetic": "edʒ",
+    "pos": "n.",
+    "meaning": "边缘/刀刃",
+    "example": "Be careful near the edge of the cliff.",
+    "exampleCn": "在悬崖边缘附近要小心。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4394,
+    "word": "rim",
+    "phonetic": "rɪm",
+    "pos": "n.",
+    "meaning": "边缘/边沿",
+    "example": "The rim of the glass was chipped.",
+    "exampleCn": "玻璃杯的边缘有缺口。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4395,
+    "word": "element",
+    "phonetic": "ˈelɪmənt",
+    "pos": "n.",
+    "meaning": "元素/要素",
+    "example": "Carbon is a chemical element found in all living things.",
+    "exampleCn": "碳是所有生物中都有的一种化学元素。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4396,
+    "word": "badge",
+    "phonetic": "bædʒ",
+    "pos": "n.",
+    "meaning": "徽章/证章",
+    "example": "She wore a badge with her name on it.",
+    "exampleCn": "她戴着一枚写有名字的徽章。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4397,
+    "word": "knob",
+    "phonetic": "nɒb",
+    "pos": "n.",
+    "meaning": "旋钮/把手",
+    "example": "Turn the knob to adjust the volume.",
+    "exampleCn": "转动旋钮来调节音量。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4398,
+    "word": "shutter",
+    "phonetic": "ˈʃʌtə",
+    "pos": "n.",
+    "meaning": "百叶窗/快门",
+    "example": "She closed the shutters to keep out the sunlight.",
+    "exampleCn": "她关上百叶窗以遮挡阳光。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4399,
+    "word": "pane",
+    "phonetic": "peɪn",
+    "pos": "n.",
+    "meaning": "窗格/一块玻璃",
+    "example": "A pane of glass in the window was broken.",
+    "exampleCn": "窗上的一块玻璃被打碎了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  },
+  {
+    "id": 4400,
+    "word": "opacity",
+    "phonetic": "əʊˈpæsəti",
+    "pos": "n.",
+    "meaning": "不透明性/不透明度",
+    "example": "The opacity of the glass can be adjusted.",
+    "exampleCn": "玻璃的不透明性可以调节。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
+  }
+]

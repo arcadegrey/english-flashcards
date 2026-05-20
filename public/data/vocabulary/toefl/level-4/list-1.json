@@ -63,10 +63,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
   },
   {
     "id": 362,
@@ -95,10 +100,15 @@
     "category": "cet6",
     "categories": [
       "cet6",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
   },
   {
     "id": 1437,
@@ -115,7 +125,11 @@
     ],
     "level": "4",
     "list": "1",
-    "ieltsList": "10"
+    "ieltsList": "10",
+    "ieltsLists": [
+      "10",
+      "24"
+    ]
   },
   {
     "id": 1438,
@@ -172,10 +186,15 @@
     "exampleCn": "老师在讲座前给每个学生发了一份讲义。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
   },
   {
     "id": 1442,
@@ -262,10 +281,15 @@
     "exampleCn": "这项政策是否会成功仍有争议。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
   },
   {
     "id": 1448,
@@ -647,10 +671,15 @@
     "exampleCn": "这个设备通过电源线连接到墙上。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
   },
   {
     "id": 1473,
@@ -862,10 +891,15 @@
     "exampleCn": "便携式收音机让人们可以在任何地方收听新闻。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
   },
   {
     "id": 1487,
@@ -1221,10 +1255,15 @@
     "exampleCn": "这个帝国控制着该地区的贸易路线。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
   },
   {
     "id": 1510,

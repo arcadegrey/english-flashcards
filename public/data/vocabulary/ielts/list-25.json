@@ -1,0 +1,643 @@
+[
+  {
+    "id": 175,
+    "word": "artificial",
+    "phonetic": "/ˌɑːrtɪˈfɪʃl/",
+    "pos": "adj.",
+    "meaning": "人工的/人造的/不自然的",
+    "example": "Artificial light can help plants grow indoors.",
+    "exampleCn": "人工光可以帮助植物在室内生长。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "4",
+    "ieltsLists": [
+      "4",
+      "25"
+    ]
+  },
+  {
+    "id": 778,
+    "word": "recycle",
+    "phonetic": "/ˌriːˈsaɪkl/",
+    "pos": "v.",
+    "meaning": "回收利用；再利用",
+    "example": "We should recycle paper.",
+    "exampleCn": "我们应该回收纸张。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 1055,
+    "word": "plug",
+    "phonetic": "/plʌɡ/",
+    "pos": "n./v.",
+    "meaning": "插头/堵住，插上",
+    "example": "Insert the plug into the socket./She plugged the hole with cloth.",
+    "exampleCn": "把插头插进插座。/她用布堵住了那个洞。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 1370,
+    "word": "necessity",
+    "phonetic": "/nəˈsesəti/",
+    "pos": "n.",
+    "meaning": "必需品；必要性",
+    "example": "Water is a basic necessity of life.",
+    "exampleCn": "水是生活的基本必需品。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 2254,
+    "word": "tap",
+    "phonetic": "/tæp/",
+    "pos": "v./n.",
+    "meaning": "轻拍/水龙头/开发利用",
+    "example": "Please tap the screen to start the program.",
+    "exampleCn": "请轻点屏幕来启动程序。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 2537,
+    "word": "landfill",
+    "phonetic": "/ˈlændfɪl/",
+    "pos": "n.",
+    "meaning": "垃圾填埋场/垃圾填埋",
+    "example": "Much of the city’s waste goes to a landfill.",
+    "exampleCn": "这座城市的大部分垃圾被送往垃圾填埋场。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 2864,
+    "word": "merchandise",
+    "phonetic": "/ˈmɜːrtʃəndaɪs/",
+    "pos": "n./v.",
+    "meaning": "商品/货物/推销",
+    "example": "The store sells sports merchandise.",
+    "exampleCn": "这家商店出售体育商品。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 2974,
+    "word": "utensil",
+    "phonetic": "/juːˈtensl/",
+    "pos": "n.",
+    "meaning": "器具/用具/餐具",
+    "example": "A spoon is a common kitchen utensil.",
+    "exampleCn": "勺子是一种常见的厨房用具。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 3566,
+    "word": "broom",
+    "phonetic": "/bruːm/",
+    "pos": "n.",
+    "meaning": "扫帚",
+    "example": "She used a broom to clean the classroom floor.",
+    "exampleCn": "她用扫帚清扫教室地板。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "6",
+    "list": "5",
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4341,
+    "word": "stuff",
+    "phonetic": "stʌf",
+    "pos": "n.",
+    "meaning": "东西/物品",
+    "example": "There is too much stuff in this room.",
+    "exampleCn": "这个房间里东西太多了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4342,
+    "word": "item",
+    "phonetic": "ˈaɪtəm",
+    "pos": "n.",
+    "meaning": "物品/项目",
+    "example": "She checked each item off her shopping list.",
+    "exampleCn": "她把购物清单上的每项物品都核对了一遍。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4343,
+    "word": "souvenir",
+    "phonetic": "ˌsuːvəˈnɪə",
+    "pos": "n.",
+    "meaning": "纪念品",
+    "example": "She bought a souvenir from her trip to Japan.",
+    "exampleCn": "她从日本之行中买了纪念品。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4344,
+    "word": "artefact",
+    "phonetic": "ˈɑːtɪfækt",
+    "pos": "n.",
+    "meaning": "人工制品/文物",
+    "example": "The museum displays artefacts from ancient Egypt.",
+    "exampleCn": "博物馆展示了古埃及的文物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4345,
+    "word": "material",
+    "phonetic": "məˈtɪəriəl",
+    "pos": "n.",
+    "meaning": "材料/物质",
+    "example": "Cotton is a natural material used for clothing.",
+    "exampleCn": "棉花是一种用于服装的天然材料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4346,
+    "word": "raw",
+    "phonetic": "rɔː",
+    "pos": "adj.",
+    "meaning": "生的/未加工的",
+    "example": "Raw materials are imported from many countries.",
+    "exampleCn": "原材料从许多国家进口。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4347,
+    "word": "raw material",
+    "phonetic": "",
+    "pos": "n.",
+    "meaning": "原材料",
+    "example": "Oil is a key raw material for the chemical industry.",
+    "exampleCn": "石油是化学工业的关键原材料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4348,
+    "word": "necessary",
+    "phonetic": "ˈnesəsəri",
+    "pos": "adj.",
+    "meaning": "必须的/必要的",
+    "example": "It is necessary to book in advance.",
+    "exampleCn": "提前预约是必须的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4349,
+    "word": "outfit",
+    "phonetic": "ˈaʊtfɪt",
+    "pos": "n.",
+    "meaning": "全套装备/服装",
+    "example": "She wore a smart outfit for the interview.",
+    "exampleCn": "她穿了一套整洁的服装去面试。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4350,
+    "word": "kit",
+    "phonetic": "kɪt",
+    "pos": "n.",
+    "meaning": "成套工具/装备",
+    "example": "The repair kit contains everything you need.",
+    "exampleCn": "修理工具包包含了你所需的一切。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4351,
+    "word": "garbage",
+    "phonetic": "ˈɡɑːbɪdʒ",
+    "pos": "n.",
+    "meaning": "垃圾/废物",
+    "example": "The garbage is collected every Tuesday.",
+    "exampleCn": "垃圾每周二收集。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4352,
+    "word": "rubbish",
+    "phonetic": "ˈrʌbɪʃ",
+    "pos": "n.",
+    "meaning": "垃圾/废物",
+    "example": "Don't throw rubbish on the street.",
+    "exampleCn": "不要把垃圾扔在街上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4353,
+    "word": "trash",
+    "phonetic": "træʃ",
+    "pos": "n.",
+    "meaning": "垃圾/废物",
+    "example": "Please put your trash in the bin.",
+    "exampleCn": "请把垃圾放进垃圾桶。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4354,
+    "word": "reuse",
+    "phonetic": "ˌriːˈjuːz",
+    "pos": "v.",
+    "meaning": "再利用/重复使用",
+    "example": "Try to reuse plastic bags instead of throwing them away.",
+    "exampleCn": "尽量重复使用塑料袋而不是把它们扔掉。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4355,
+    "word": "litter",
+    "phonetic": "ˈlɪtə",
+    "pos": "n.",
+    "meaning": "垃圾/废弃物",
+    "example": "There was litter scattered all over the park.",
+    "exampleCn": "公园里到处散落着垃圾。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4356,
+    "word": "waste",
+    "phonetic": "weɪst",
+    "pos": "n/v.",
+    "meaning": "浪费/废物",
+    "example": "We should not waste precious water.",
+    "exampleCn": "我们不应该浪费宝贵的水资源。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4357,
+    "word": "junk",
+    "phonetic": "dʒʌŋk",
+    "pos": "n.",
+    "meaning": "废旧物/破烂",
+    "example": "The attic was full of old junk.",
+    "exampleCn": "阁楼里堆满了旧破烂。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4358,
+    "word": "sewerage",
+    "phonetic": "ˈsuːərɪdʒ",
+    "pos": "n.",
+    "meaning": "污水系统/下水道",
+    "example": "The city invested in a new sewerage system.",
+    "exampleCn": "该市投资建设了一套新的污水系统。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4359,
+    "word": "detergent",
+    "phonetic": "dɪˈtɜːdʒənt",
+    "pos": "n.",
+    "meaning": "清洁剂/洗衣粉",
+    "example": "This detergent is gentle on the skin.",
+    "exampleCn": "这种清洁剂对皮肤温和。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4360,
+    "word": "lotion",
+    "phonetic": "ˈləʊʃn",
+    "pos": "n.",
+    "meaning": "护肤品/乳液",
+    "example": "She applied sunscreen lotion before going out.",
+    "exampleCn": "她出门前涂了防晒霜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4361,
+    "word": "shampoo",
+    "phonetic": "ʃæmˈpuː",
+    "pos": "n.",
+    "meaning": "洗发水/香波",
+    "example": "This shampoo makes your hair soft and shiny.",
+    "exampleCn": "这款洗发水让你的头发柔软而有光泽。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4362,
+    "word": "soap",
+    "phonetic": "səʊp",
+    "pos": "n.",
+    "meaning": "肥皂",
+    "example": "Wash your hands with soap and water.",
+    "exampleCn": "用肥皂和水洗手。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4363,
+    "word": "tub",
+    "phonetic": "tʌb",
+    "pos": "n.",
+    "meaning": "浴缸/盆",
+    "example": "She filled the tub with warm water.",
+    "exampleCn": "她把浴缸放满了温水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4364,
+    "word": "pipe",
+    "phonetic": "paɪp",
+    "pos": "n.",
+    "meaning": "管道/管子",
+    "example": "The plumber fixed a leaking pipe.",
+    "exampleCn": "水管工修好了一根漏水的管道。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4365,
+    "word": "pipeline",
+    "phonetic": "ˈpaɪplaɪn",
+    "pos": "n.",
+    "meaning": "管道/管线",
+    "example": "A new pipeline carries water across the desert.",
+    "exampleCn": "一条新管道将水运送过沙漠。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4366,
+    "word": "tube",
+    "phonetic": "tjuːb",
+    "pos": "n.",
+    "meaning": "管子/圆管",
+    "example": "Water flows through a narrow tube.",
+    "exampleCn": "水流过一根狭窄的管子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  },
+  {
+    "id": 4367,
+    "word": "mop",
+    "phonetic": "mɒp",
+    "pos": "n.",
+    "meaning": "拖把/抹布",
+    "example": "She used a mop to clean the kitchen floor.",
+    "exampleCn": "她用拖把清洁了厨房地板。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25"
+    ]
+  }
+]

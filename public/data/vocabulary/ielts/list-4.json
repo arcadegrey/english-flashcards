@@ -15,7 +15,11 @@
     ],
     "level": "4",
     "list": "9",
-    "ieltsList": "4"
+    "ieltsList": "4",
+    "ieltsLists": [
+      "4",
+      "25"
+    ]
   },
   {
     "id": 268,
@@ -219,7 +223,11 @@
     ],
     "level": "3",
     "list": "9",
-    "ieltsList": "4"
+    "ieltsList": "4",
+    "ieltsLists": [
+      "4",
+      "23"
+    ]
   },
   {
     "id": 1298,
@@ -703,7 +711,11 @@
     "categories": [
       "ielts"
     ],
-    "ieltsList": "4"
+    "ieltsList": "4",
+    "ieltsLists": [
+      "4",
+      "24"
+    ]
   },
   {
     "id": 3689,

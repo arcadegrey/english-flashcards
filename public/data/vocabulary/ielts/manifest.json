@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-05-20T06:28:20.976Z",
+  "generatedAt": "2026-05-20T13:49:58.610Z",
   "source": "/data/vocabulary.json",
-  "sourceTotal": 4066,
+  "sourceTotal": 4435,
   "core": {
     "path": "/data/vocabulary/core.json",
-    "count": 287
+    "count": 263
   },
   "ielts": {
-    "total": 960,
-    "meta": "5 个主题",
+    "total": 1608,
+    "meta": "10 个主题",
     "topics": [
       {
         "key": "nature-geography",
@@ -125,7 +125,7 @@
       {
         "key": "school-education",
         "label": "学校教育",
-        "count": 360,
+        "count": 409,
         "lists": [
           {
             "key": "11",
@@ -174,9 +174,137 @@
             "path": "/data/vocabulary/ielts/list-16.json",
             "topicKey": "school-education",
             "topicLabel": "学校教育"
+          },
+          {
+            "key": "17",
+            "label": "List 17",
+            "count": 49,
+            "path": "/data/vocabulary/ielts/list-17.json",
+            "topicKey": "school-education",
+            "topicLabel": "学校教育"
           }
         ],
-        "meta": "6 个 List"
+        "meta": "7 个 List"
+      },
+      {
+        "key": "technology-invention",
+        "label": "科技发明",
+        "count": 120,
+        "lists": [
+          {
+            "key": "18",
+            "label": "List 18",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-18.json",
+            "topicKey": "technology-invention",
+            "topicLabel": "科技发明"
+          },
+          {
+            "key": "19",
+            "label": "List 19",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-19.json",
+            "topicKey": "technology-invention",
+            "topicLabel": "科技发明"
+          }
+        ],
+        "meta": "2 个 List"
+      },
+      {
+        "key": "culture-history",
+        "label": "文化历史",
+        "count": 78,
+        "lists": [
+          {
+            "key": "20",
+            "label": "List 20",
+            "count": 78,
+            "path": "/data/vocabulary/ielts/list-20.json",
+            "topicKey": "culture-history",
+            "topicLabel": "文化历史"
+          }
+        ],
+        "meta": "1 个 List"
+      },
+      {
+        "key": "language-evolution",
+        "label": "语言演化",
+        "count": 73,
+        "lists": [
+          {
+            "key": "21",
+            "label": "List 21",
+            "count": 42,
+            "path": "/data/vocabulary/ielts/list-21.json",
+            "topicKey": "language-evolution",
+            "topicLabel": "语言演化"
+          },
+          {
+            "key": "22",
+            "label": "List 22",
+            "count": 31,
+            "path": "/data/vocabulary/ielts/list-22.json",
+            "topicKey": "language-evolution",
+            "topicLabel": "语言演化"
+          }
+        ],
+        "meta": "2 个 List"
+      },
+      {
+        "key": "entertainment-sports",
+        "label": "娱乐运动",
+        "count": 208,
+        "lists": [
+          {
+            "key": "23",
+            "label": "List 23",
+            "count": 88,
+            "path": "/data/vocabulary/ielts/list-23.json",
+            "topicKey": "entertainment-sports",
+            "topicLabel": "娱乐运动"
+          },
+          {
+            "key": "24",
+            "label": "List 24",
+            "count": 84,
+            "path": "/data/vocabulary/ielts/list-24.json",
+            "topicKey": "entertainment-sports",
+            "topicLabel": "娱乐运动"
+          },
+          {
+            "key": "25",
+            "label": "List 25",
+            "count": 36,
+            "path": "/data/vocabulary/ielts/list-25.json",
+            "topicKey": "entertainment-sports",
+            "topicLabel": "娱乐运动"
+          }
+        ],
+        "meta": "3 个 List"
+      },
+      {
+        "key": "objects-materials",
+        "label": "物品材料",
+        "count": 120,
+        "lists": [
+          {
+            "key": "26",
+            "label": "List 26",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-26.json",
+            "topicKey": "objects-materials",
+            "topicLabel": "物品材料"
+          },
+          {
+            "key": "27",
+            "label": "List 27",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-27.json",
+            "topicKey": "objects-materials",
+            "topicLabel": "物品材料"
+          }
+        ],
+        "meta": "2 个 List"
       }
     ],
     "lists": [
@@ -307,6 +435,94 @@
         "path": "/data/vocabulary/ielts/list-16.json",
         "topicKey": "school-education",
         "topicLabel": "学校教育"
+      },
+      {
+        "key": "17",
+        "label": "List 17",
+        "count": 49,
+        "path": "/data/vocabulary/ielts/list-17.json",
+        "topicKey": "school-education",
+        "topicLabel": "学校教育"
+      },
+      {
+        "key": "18",
+        "label": "List 18",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-18.json",
+        "topicKey": "technology-invention",
+        "topicLabel": "科技发明"
+      },
+      {
+        "key": "19",
+        "label": "List 19",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-19.json",
+        "topicKey": "technology-invention",
+        "topicLabel": "科技发明"
+      },
+      {
+        "key": "20",
+        "label": "List 20",
+        "count": 78,
+        "path": "/data/vocabulary/ielts/list-20.json",
+        "topicKey": "culture-history",
+        "topicLabel": "文化历史"
+      },
+      {
+        "key": "21",
+        "label": "List 21",
+        "count": 42,
+        "path": "/data/vocabulary/ielts/list-21.json",
+        "topicKey": "language-evolution",
+        "topicLabel": "语言演化"
+      },
+      {
+        "key": "22",
+        "label": "List 22",
+        "count": 31,
+        "path": "/data/vocabulary/ielts/list-22.json",
+        "topicKey": "language-evolution",
+        "topicLabel": "语言演化"
+      },
+      {
+        "key": "23",
+        "label": "List 23",
+        "count": 88,
+        "path": "/data/vocabulary/ielts/list-23.json",
+        "topicKey": "entertainment-sports",
+        "topicLabel": "娱乐运动"
+      },
+      {
+        "key": "24",
+        "label": "List 24",
+        "count": 84,
+        "path": "/data/vocabulary/ielts/list-24.json",
+        "topicKey": "entertainment-sports",
+        "topicLabel": "娱乐运动"
+      },
+      {
+        "key": "25",
+        "label": "List 25",
+        "count": 36,
+        "path": "/data/vocabulary/ielts/list-25.json",
+        "topicKey": "entertainment-sports",
+        "topicLabel": "娱乐运动"
+      },
+      {
+        "key": "26",
+        "label": "List 26",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-26.json",
+        "topicKey": "objects-materials",
+        "topicLabel": "物品材料"
+      },
+      {
+        "key": "27",
+        "label": "List 27",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-27.json",
+        "topicKey": "objects-materials",
+        "topicLabel": "物品材料"
       }
     ]
   }

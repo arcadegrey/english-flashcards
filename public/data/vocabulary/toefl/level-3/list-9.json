@@ -998,7 +998,11 @@
     ],
     "level": "3",
     "list": "9",
-    "ieltsList": "4"
+    "ieltsList": "4",
+    "ieltsLists": [
+      "4",
+      "23"
+    ]
   },
   {
     "id": 1292,
@@ -1229,10 +1233,15 @@
     "exampleCn": "孩子们常常模仿大人的行为。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
   },
   {
     "id": 1307,
@@ -1259,10 +1268,15 @@
     "exampleCn": "小公司必须创新才能保持竞争力。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
   },
   {
     "id": 1309,
@@ -1541,9 +1555,14 @@
     "exampleCn": "科学家观察了这些动物在自然栖息地中的状态。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
   }
 ]

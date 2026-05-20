@@ -1,0 +1,582 @@
+[
+  {
+    "id": 500,
+    "word": "comment",
+    "phonetic": "/ˈkɑːment/",
+    "pos": "n./v.",
+    "meaning": "评论/发表意见",
+    "example": "The scientist refused to comment on the results.",
+    "exampleCn": "这位科学家拒绝评论这些结果。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 648,
+    "word": "version",
+    "phonetic": "/ˈvɜːʃn/",
+    "pos": "n.",
+    "meaning": "版本；说法；译本",
+    "example": "This is the latest version.",
+    "exampleCn": "这是最新版本。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 870,
+    "word": "narrate",
+    "phonetic": "/ˈnæreɪt/",
+    "pos": "v.",
+    "meaning": "叙述，讲述",
+    "example": "She was asked to narrate the story.",
+    "exampleCn": "她被要求讲述这个故事。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 873,
+    "word": "interpret",
+    "phonetic": "/ɪnˈtɜːrprət/",
+    "pos": "v.",
+    "meaning": "解释；口译",
+    "example": "Different people may interpret the poem differently.",
+    "exampleCn": "不同的人可能会对这首诗有不同的解读。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 977,
+    "word": "plural",
+    "phonetic": "/ˈplʊrəl/",
+    "pos": "adj./n.",
+    "meaning": "复数的/复数形式",
+    "example": "Children is the plural form of child.",
+    "exampleCn": "children 是 child 的复数形式。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 1005,
+    "word": "complex",
+    "phonetic": "/ˈkɑːmpleks/",
+    "pos": "adj./n.",
+    "meaning": "复杂的/建筑群，综合体",
+    "example": "Climate change is a complex issue./The sports complex opened last year.",
+    "exampleCn": "气候变化是个复杂问题。/这个体育综合体去年开放了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 1038,
+    "word": "debate",
+    "phonetic": "/dɪˈbeɪt/",
+    "pos": "n./v.",
+    "meaning": "辩论，争论",
+    "example": "The issue is still under debate./They debated whether the plan was fair.",
+    "exampleCn": "这个问题仍在争论中。/他们就这个计划是否公平进行了辩论。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 1375,
+    "word": "translate",
+    "phonetic": "/trænsˈleɪt/",
+    "pos": "v.",
+    "meaning": "翻译；转化",
+    "example": "Can you translate this article into Chinese?",
+    "exampleCn": "你能把这篇文章翻译成中文吗？",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 1447,
+    "word": "debatable",
+    "phonetic": "/dɪˈbeɪtəbəl/",
+    "pos": "adj.",
+    "meaning": "有争议的/可讨论的",
+    "example": "Whether the policy will succeed remains debatable.",
+    "exampleCn": "这项政策是否会成功仍有争议。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 1794,
+    "word": "commentary",
+    "phonetic": "/ˈkɑːmənteri/",
+    "pos": "n.",
+    "meaning": "评论/解说",
+    "example": "The documentary includes commentary from several experts.",
+    "exampleCn": "这部纪录片包含几位专家的评论。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 1957,
+    "word": "illuminate",
+    "phonetic": "/ɪˈluːmɪneɪt/",
+    "pos": "v.",
+    "meaning": "照亮/阐明",
+    "example": "The lamp was used to illuminate the dark room.",
+    "exampleCn": "这盏灯被用来照亮黑暗的房间。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 2178,
+    "word": "compile",
+    "phonetic": "/kəmˈpaɪl/",
+    "pos": "v.",
+    "meaning": "编纂/汇编/编译",
+    "example": "Researchers compile data from many sources before writing the report.",
+    "exampleCn": "研究人员在写报告前会汇编来自许多来源的数据。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 2227,
+    "word": "consistent",
+    "phonetic": "/kənˈsɪstənt/",
+    "pos": "adj.",
+    "meaning": "一致的/持续的",
+    "example": "Consistent practice can improve language skills.",
+    "exampleCn": "持续练习可以提高语言能力。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 2413,
+    "word": "paraphrase",
+    "phonetic": "/ˈpærəfreɪz/",
+    "pos": "v./n.",
+    "meaning": "改述/释义",
+    "example": "Students should paraphrase information instead of copying it.",
+    "exampleCn": "学生应该改述信息，而不是直接复制。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 2457,
+    "word": "decipher",
+    "phonetic": "/dɪˈsaɪfər/",
+    "pos": "v.",
+    "meaning": "破译/辨认",
+    "example": "Researchers tried to decipher the ancient symbols.",
+    "exampleCn": "研究人员试图破译这些古代符号。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 2566,
+    "word": "conjunction",
+    "phonetic": "/kənˈdʒʌŋkʃn/",
+    "pos": "n.",
+    "meaning": "结合/连词/同时发生",
+    "example": "The festival was held in conjunction with a parade.",
+    "exampleCn": "这个节日与游行同时举行。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 3210,
+    "word": "contention",
+    "phonetic": "/kənˈtenʃn/",
+    "pos": "n.",
+    "meaning": "争论/论点/竞争",
+    "example": "His main contention is that education should be more practical.",
+    "exampleCn": "他的主要论点是教育应该更实用。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 3968,
+    "word": "content",
+    "phonetic": "ˈkɒntent",
+    "pos": "n.",
+    "meaning": "内容/含量",
+    "example": "The content of the book is suitable for children.",
+    "exampleCn": "这本书的内容适合儿童阅读。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13",
+      "22"
+    ]
+  },
+  {
+    "id": 4226,
+    "word": "pronoun",
+    "phonetic": "ˈprəʊnaʊn",
+    "pos": "n.",
+    "meaning": "代词",
+    "example": "He, she and it are personal pronouns.",
+    "exampleCn": "He、she和it是人称代词。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 4227,
+    "word": "verb",
+    "phonetic": "vɜːb",
+    "pos": "n.",
+    "meaning": "动词",
+    "example": "A verb describes an action or state.",
+    "exampleCn": "动词描述一个动作或状态。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 4228,
+    "word": "adjective",
+    "phonetic": "ˈædʒɪktɪv",
+    "pos": "n.",
+    "meaning": "形容词",
+    "example": "In 'a red car', 'red' is an adjective.",
+    "exampleCn": "在'a red car'中，'red'是一个形容词。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 4229,
+    "word": "adverb",
+    "phonetic": "ˈædvɜːb",
+    "pos": "n.",
+    "meaning": "副词",
+    "example": "In 'run quickly', 'quickly' is an adverb.",
+    "exampleCn": "在'run quickly'中，'quickly'是一个副词。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 4230,
+    "word": "preposition",
+    "phonetic": "ˌprepəˈzɪʃn",
+    "pos": "n.",
+    "meaning": "介词",
+    "example": "In, on and at are common prepositions.",
+    "exampleCn": "In、on和at是常见的介词。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 4231,
+    "word": "complicated",
+    "phonetic": "ˈkɒmplɪkeɪtɪd",
+    "pos": "adj.",
+    "meaning": "复杂的/难懂的",
+    "example": "The instructions are too complicated to follow.",
+    "exampleCn": "这些说明太复杂了，难以遵循。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 4232,
+    "word": "eloquence",
+    "phonetic": "ˈeləkwəns",
+    "pos": "n.",
+    "meaning": "雄辩/口才",
+    "example": "She spoke with such eloquence that the audience was spellbound.",
+    "exampleCn": "她雄辩地演讲，听众入迷了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 4233,
+    "word": "communicate",
+    "phonetic": "kəˈmjuːnɪkeɪt",
+    "pos": "v.",
+    "meaning": "交流/沟通",
+    "example": "The ability to communicate clearly is vital in business.",
+    "exampleCn": "清晰交流的能力在商业中至关重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 4234,
+    "word": "discussion",
+    "phonetic": "dɪˈskʌʃn",
+    "pos": "n.",
+    "meaning": "讨论/商讨",
+    "example": "After a long discussion, they finally reached an agreement.",
+    "exampleCn": "经过长时间的讨论，他们终于达成了协议。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 4235,
+    "word": "brainstorm",
+    "phonetic": "ˈbreɪnstɔːm",
+    "pos": "n/v.",
+    "meaning": "头脑风暴/集思广益",
+    "example": "We had a brainstorm to come up with new ideas.",
+    "exampleCn": "我们进行了一次头脑风暴以提出新想法。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 4236,
+    "word": "debate about",
+    "phonetic": "dɪˈbeɪt əˈbaʊt",
+    "pos": "v.",
+    "meaning": "就…辩论",
+    "example": "They debated about the best way to solve the problem.",
+    "exampleCn": "他们就解决问题的最佳方式进行了辩论。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 4237,
+    "word": "negotiate",
+    "phonetic": "nɪˈɡəʊʃieɪt",
+    "pos": "v.",
+    "meaning": "谈判/协商",
+    "example": "The two sides are negotiating a peace agreement.",
+    "exampleCn": "双方正在谈判一项和平协议。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  },
+  {
+    "id": 4238,
+    "word": "negotiation",
+    "phonetic": "nɪˌɡəʊʃiˈeɪʃn",
+    "pos": "n.",
+    "meaning": "谈判/协商",
+    "example": "The negotiation lasted for several hours.",
+    "exampleCn": "谈判持续了好几个小时。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
+  }
+]

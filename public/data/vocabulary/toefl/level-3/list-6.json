@@ -483,10 +483,15 @@
     "exampleCn": "调查揭示了令人惊讶的结果。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
   },
   {
     "id": 974,
@@ -543,10 +548,15 @@
     "exampleCn": "children 是 child 的复数形式。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
   },
   {
     "id": 978,
@@ -618,10 +628,15 @@
     "exampleCn": "努力工作往往自有回报。/公司因她的努力而奖励了她。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
   },
   {
     "id": 983,
@@ -723,10 +738,15 @@
     "exampleCn": "使用这种药前请先看标签。/评论家称这个计划不切实际。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "26",
+    "ieltsLists": [
+      "26"
+    ]
   },
   {
     "id": 990,
@@ -798,10 +818,15 @@
     "exampleCn": "科技可以改变我们的学习方式。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "19",
+    "ieltsLists": [
+      "19"
+    ]
   },
   {
     "id": 995,
@@ -963,10 +988,15 @@
     "exampleCn": "气候变化是个复杂问题。/这个体育综合体去年开放了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
   },
   {
     "id": 1006,
@@ -1319,10 +1349,15 @@
     "exampleCn": "她的语气听起来很严肃。/锻炼可以增强肌肉线条。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
   },
   {
     "id": 1028,
@@ -1349,10 +1384,15 @@
     "exampleCn": "她从父亲那里继承了家族企业。/孩子会从父母那里遗传某些特征。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20"
+    ]
   },
   {
     "id": 1030,
@@ -1416,7 +1456,8 @@
     "list": "6",
     "ieltsList": "13",
     "ieltsLists": [
-      "13"
+      "13",
+      "23"
     ]
   },
   {
@@ -1474,10 +1515,15 @@
     "exampleCn": "这次讲座的重点是气候政策。/请专注于你的工作。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18"
+    ]
   },
   {
     "id": 1038,
@@ -1489,10 +1535,15 @@
     "exampleCn": "这个问题仍在争论中。/他们就这个计划是否公平进行了辩论。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22"
+    ]
   },
   {
     "id": 1039,

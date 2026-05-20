@@ -120,6 +120,7 @@ const main = async () => {
       csvText,
       existingWords: [],
       validCategoryIds: categoryIds,
+      allowDuplicateWords: true,
     });
 
     if (importedWords.length === 0) {

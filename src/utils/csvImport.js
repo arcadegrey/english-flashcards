@@ -123,6 +123,7 @@ export const parseVocabularyCsv = ({
   csvText,
   existingWords,
   validCategoryIds,
+  allowDuplicateWords = false,
 }) => {
   const text = (csvText || '').trim();
   if (!text) {
@@ -168,7 +169,7 @@ export const parseVocabularyCsv = ({
     }
 
     const duplicateKey = word.toLowerCase();
-    if (existingWordSet.has(duplicateKey)) {
+    if (!allowDuplicateWords && existingWordSet.has(duplicateKey)) {
       skippedDuplicate += 1;
       return;
     }
@@ -206,7 +207,9 @@ export const parseVocabularyCsv = ({
     }
 
     importedWords.push(normalizedWord);
-    existingWordSet.add(duplicateKey);
+    if (!allowDuplicateWords) {
+      existingWordSet.add(duplicateKey);
+    }
     importedCount += 1;
     nextId += 1;
   });

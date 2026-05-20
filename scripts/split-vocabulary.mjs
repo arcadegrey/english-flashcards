@@ -46,8 +46,23 @@ const getIeltsTopicMeta = (list) => {
     if (numericList === 10) {
       return { key: 'space-exploration', label: '太空探索' };
     }
-    if (numericList >= 11 && numericList <= 16) {
+    if (numericList >= 11 && numericList <= 17) {
       return { key: 'school-education', label: '学校教育' };
+    }
+    if (numericList >= 18 && numericList <= 19) {
+      return { key: 'technology-invention', label: '科技发明' };
+    }
+    if (numericList === 20) {
+      return { key: 'culture-history', label: '文化历史' };
+    }
+    if (numericList >= 21 && numericList <= 22) {
+      return { key: 'language-evolution', label: '语言演化' };
+    }
+    if (numericList >= 23 && numericList <= 25) {
+      return { key: 'entertainment-sports', label: '娱乐运动' };
+    }
+    if (numericList >= 26 && numericList <= 27) {
+      return { key: 'objects-materials', label: '物品材料' };
     }
   }
 

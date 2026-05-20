@@ -295,7 +295,12 @@ const getIeltsTopicKey = (list) => {
     if (numericList >= 5 && numericList <= 6) return 'plant-research'
     if (numericList >= 7 && numericList <= 9) return 'animal-conservation'
     if (numericList === 10) return 'space-exploration'
-    if (numericList >= 11 && numericList <= 16) return 'school-education'
+    if (numericList >= 11 && numericList <= 17) return 'school-education'
+    if (numericList >= 18 && numericList <= 19) return 'technology-invention'
+    if (numericList === 20) return 'culture-history'
+    if (numericList >= 21 && numericList <= 22) return 'language-evolution'
+    if (numericList >= 23 && numericList <= 25) return 'entertainment-sports'
+    if (numericList >= 26 && numericList <= 27) return 'objects-materials'
   }
 
   return IELTS_UNKNOWN_TOPIC
@@ -308,6 +313,11 @@ const getIeltsTopicLabel = (topicKey) => {
     'animal-conservation': '动物保护',
     'space-exploration': '太空探索',
     'school-education': '学校教育',
+    'technology-invention': '科技发明',
+    'culture-history': '文化历史',
+    'language-evolution': '语言演化',
+    'entertainment-sports': '娱乐运动',
+    'objects-materials': '物品材料',
     [IELTS_UNKNOWN_TOPIC]: '未分主题',
   }
   return labels[topicKey] || '未分主题'

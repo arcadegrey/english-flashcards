@@ -1,0 +1,1609 @@
+[
+  {
+    "id": 88,
+    "word": "aesthetic",
+    "phonetic": "/esˈθetɪk/",
+    "pos": "adj./n.",
+    "meaning": "美学的/审美的/美感",
+    "example": "The building has both practical and aesthetic value.",
+    "exampleCn": "这座建筑既有实用价值，也有审美价值。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 133,
+    "word": "amuse",
+    "phonetic": "/əˈmjuːz/",
+    "pos": "v.",
+    "meaning": "逗乐；使发笑",
+    "example": "The clown amused the children.",
+    "exampleCn": "小丑逗乐了孩子们。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 199,
+    "word": "await",
+    "phonetic": "/əˈweɪt/",
+    "pos": "v.",
+    "meaning": "等待，期待",
+    "example": "We await your reply.",
+    "exampleCn": "我们等待您的回复。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 204,
+    "word": "ballet",
+    "phonetic": "/bæˈleɪ/",
+    "pos": "n.",
+    "meaning": "芭蕾舞",
+    "example": "She has been studying ballet for five years.",
+    "exampleCn": "她学习芭蕾舞已经五年了。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 489,
+    "word": "collect",
+    "phonetic": "/kəˈlekt/",
+    "pos": "v.",
+    "meaning": "收集；采集",
+    "example": "She collects stamps as a hobby.",
+    "exampleCn": "她集邮作为爱好。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 497,
+    "word": "comedy",
+    "phonetic": "/ˈkɒmədi/",
+    "pos": "n.",
+    "meaning": "喜剧；喜剧性",
+    "example": "The comedy was funny.",
+    "exampleCn": "这部喜剧很有趣。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 526,
+    "word": "entertainment",
+    "phonetic": "/ˌentəˈteɪnmənt/",
+    "pos": "n.",
+    "meaning": "娱乐；消遣；娱乐节目",
+    "example": "The city offers many forms of entertainment.",
+    "exampleCn": "这座城市提供多种娱乐形式。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 573,
+    "word": "anticipate",
+    "phonetic": "/ænˈtɪsɪpeɪt/",
+    "pos": "v.",
+    "meaning": "预期；期望；预料",
+    "example": "We anticipate good results.",
+    "exampleCn": "我们预期会有好结果。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 619,
+    "word": "expectation",
+    "phonetic": "/ˌekspekˈteɪʃn/",
+    "pos": "n.",
+    "meaning": "期望；预期",
+    "example": "The results exceeded expectations.",
+    "exampleCn": "结果超出了预期。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 796,
+    "word": "lyric",
+    "phonetic": "/ˈlɪrɪk/",
+    "pos": "n.",
+    "meaning": "歌词；抒情诗",
+    "example": "The lyrics are beautiful.",
+    "exampleCn": "歌词很美。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 879,
+    "word": "orchestra",
+    "phonetic": "/ˈɔːrkɪstrə/",
+    "pos": "n.",
+    "meaning": "管弦乐队",
+    "example": "The orchestra performed beautifully last night.",
+    "exampleCn": "昨晚管弦乐队演出得非常精彩。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 915,
+    "word": "critic",
+    "phonetic": "/ˈkrɪtɪk/",
+    "pos": "n.",
+    "meaning": "批评家；评论家",
+    "example": "The film critic praised the director.",
+    "exampleCn": "影评人称赞了这位导演。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 1027,
+    "word": "tone",
+    "phonetic": "/toʊn/",
+    "pos": "n./v.",
+    "meaning": "语气，音调/增强，改善体形",
+    "example": "Her tone sounded serious./Exercise can tone the muscles.",
+    "exampleCn": "她的语气听起来很严肃。/锻炼可以增强肌肉线条。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 1033,
+    "word": "sketch",
+    "phonetic": "/sketʃ/",
+    "pos": "n./v.",
+    "meaning": "素描，草图/速写，概述",
+    "example": "She made a quick sketch of the landscape./He sketched out his plan on paper.",
+    "exampleCn": "她快速画了一幅风景素描。/他在纸上概述了自己的计划。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13",
+      "23"
+    ]
+  },
+  {
+    "id": 1087,
+    "word": "medium",
+    "phonetic": "/ˈmiːdiəm/",
+    "pos": "n./adj.",
+    "meaning": "媒介，方法/中等的",
+    "example": "Television is still a powerful medium./I would like a medium coffee.",
+    "exampleCn": "电视仍然是一种有影响力的媒介。/我想要一杯中杯咖啡。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 1112,
+    "word": "participate",
+    "phonetic": "/pɑːrˈtɪsɪpeɪt/",
+    "pos": "v.",
+    "meaning": "参加，参与",
+    "example": "Students are encouraged to participate in class discussions.",
+    "exampleCn": "鼓励学生参与课堂讨论。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 1206,
+    "word": "perform",
+    "phonetic": "/pərˈfɔːrm/",
+    "pos": "v.",
+    "meaning": "执行；表演",
+    "example": "The machine can perform complex calculations.",
+    "exampleCn": "这台机器能执行复杂的计算。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 1291,
+    "word": "dramatic",
+    "phonetic": "/drəˈmætɪk/",
+    "pos": "adj.",
+    "meaning": "巨大的；戏剧性的",
+    "example": "There was a dramatic increase in tourism last year.",
+    "exampleCn": "去年旅游业出现了显著增长。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "4",
+    "ieltsLists": [
+      "4",
+      "23"
+    ]
+  },
+  {
+    "id": 1306,
+    "word": "imitate",
+    "phonetic": "/ˈɪmɪˌteɪt/",
+    "pos": "v.",
+    "meaning": "模仿；仿制",
+    "example": "Children often imitate the behavior of adults.",
+    "exampleCn": "孩子们常常模仿大人的行为。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 1344,
+    "word": "publication",
+    "phonetic": "/ˌpʌblɪˈkeɪʃən/",
+    "pos": "n.",
+    "meaning": "出版；出版物",
+    "example": "The research is ready for publication.",
+    "exampleCn": "这项研究已经准备好发表了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 1409,
+    "word": "leaflet",
+    "phonetic": "/ˈliːflət/",
+    "pos": "n.",
+    "meaning": "传单；小册子",
+    "example": "The volunteers handed out leaflets in the park.",
+    "exampleCn": "志愿者们在公园里发传单。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23",
+      "26"
+    ]
+  },
+  {
+    "id": 1415,
+    "word": "craft",
+    "phonetic": "/kræft/",
+    "pos": "n./v.",
+    "meaning": "手艺；工艺品/精心制作",
+    "example": "She learned the craft of pottery from her grandmother.",
+    "exampleCn": "她从祖母那里学会了陶艺手艺。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 1428,
+    "word": "foresee",
+    "phonetic": "/fɔːrˈsiː/",
+    "pos": "v.",
+    "meaning": "预见；预知",
+    "example": "Nobody could foresee the sudden changes in the market.",
+    "exampleCn": "没人能预见市场中的突然变化。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 1441,
+    "word": "handout",
+    "phonetic": "/ˈhændaʊt/",
+    "pos": "n.",
+    "meaning": "讲义/传单/救济品",
+    "example": "The teacher gave each student a handout before the lecture.",
+    "exampleCn": "老师在讲座前给每个学生发了一份讲义。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 1570,
+    "word": "portrait",
+    "phonetic": "/ˈpɔːrtrət/",
+    "pos": "n.",
+    "meaning": "肖像/描写",
+    "example": "The book offers a detailed portrait of life in the city.",
+    "exampleCn": "这本书详细描写了城市生活。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 2019,
+    "word": "rhythm",
+    "phonetic": "/ˈrɪðəm/",
+    "pos": "n.",
+    "meaning": "节奏/韵律/规律",
+    "example": "The rhythm of the waves helped the sailors navigate.",
+    "exampleCn": "海浪的节奏帮助水手航行。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 2080,
+    "word": "depict",
+    "phonetic": "/dɪˈpɪkt/",
+    "pos": "v.",
+    "meaning": "描绘/描述",
+    "example": "The mural depicts scenes from ancient history.",
+    "exampleCn": "这幅壁画描绘了古代历史场景。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 2117,
+    "word": "mimic",
+    "phonetic": "/ˈmɪmɪk/",
+    "pos": "v./n./adj.",
+    "meaning": "模仿/模仿者/模拟的",
+    "example": "Some insects mimic leaves to avoid predators.",
+    "exampleCn": "一些昆虫模仿树叶来躲避捕食者。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 2123,
+    "word": "drama",
+    "phonetic": "/ˈdrɑːmə/",
+    "pos": "n.",
+    "meaning": "戏剧/戏剧性事件",
+    "example": "Ancient Greek drama influenced later literature.",
+    "exampleCn": "古希腊戏剧影响了后来的文学。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 2161,
+    "word": "rehearsal",
+    "phonetic": "/rɪˈhɜːrsl/",
+    "pos": "n.",
+    "meaning": "排练/预演",
+    "example": "The actors attended a rehearsal before the show.",
+    "exampleCn": "演员们在演出前参加了排练。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 2290,
+    "word": "carve",
+    "phonetic": "/kɑːrv/",
+    "pos": "v.",
+    "meaning": "雕刻/切开",
+    "example": "The artist carved a bird from a piece of wood.",
+    "exampleCn": "艺术家用一块木头雕刻出一只鸟。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 2324,
+    "word": "sculpture",
+    "phonetic": "/ˈskʌlptʃər/",
+    "pos": "n.",
+    "meaning": "雕塑/雕刻作品",
+    "example": "A stone sculpture stood in the center of the square.",
+    "exampleCn": "一座石雕矗立在广场中央。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 2669,
+    "word": "rhythmical",
+    "phonetic": "/ˈrɪðmɪkəl/",
+    "pos": "adj.",
+    "meaning": "有节奏的",
+    "example": "The dancers moved in a rhythmical pattern.",
+    "exampleCn": "舞者按照有节奏的模式移动。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 2745,
+    "word": "symphony",
+    "phonetic": "/ˈsɪmfəni/",
+    "pos": "n.",
+    "meaning": "交响乐/和谐组合",
+    "example": "The orchestra performed Beethoven’s fifth symphony.",
+    "exampleCn": "管弦乐队演奏了贝多芬第五交响曲。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 2832,
+    "word": "consensus",
+    "phonetic": "/kənˈsensəs/",
+    "pos": "n.",
+    "meaning": "共识/一致意见",
+    "example": "The committee reached a consensus after a long discussion.",
+    "exampleCn": "委员会经过长时间讨论后达成共识。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 2985,
+    "word": "cello",
+    "phonetic": "/ˈtʃeloʊ/",
+    "pos": "n.",
+    "meaning": "大提琴",
+    "example": "She played the cello in the school orchestra.",
+    "exampleCn": "她在学校管弦乐队里拉大提琴。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 3132,
+    "word": "improvise",
+    "phonetic": "/ˈɪmprəvaɪz/",
+    "pos": "v.",
+    "meaning": "即兴创作/临时做",
+    "example": "When the microphone failed, the speaker had to improvise.",
+    "exampleCn": "麦克风坏了以后，演讲者不得不临场发挥。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4239,
+    "word": "press",
+    "phonetic": "pres",
+    "pos": "n.",
+    "meaning": "新闻界/出版社",
+    "example": "The press plays an important role in a democracy.",
+    "exampleCn": "新闻界在民主中扮演着重要角色。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4240,
+    "word": "journalist",
+    "phonetic": "ˈdʒɜːnəlɪst",
+    "pos": "n.",
+    "meaning": "记者/新闻工作者",
+    "example": "She works as a journalist for a national newspaper.",
+    "exampleCn": "她在一家全国性报纸做记者。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4241,
+    "word": "commentator",
+    "phonetic": "ˈkɒmənteɪtə",
+    "pos": "n.",
+    "meaning": "评论员/解说员",
+    "example": "The sports commentator described the match enthusiastically.",
+    "exampleCn": "体育评论员热情洋溢地描述了这场比赛。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4242,
+    "word": "exponent",
+    "phonetic": "ɪkˈspəʊnənt",
+    "pos": "n.",
+    "meaning": "倡导者/代表人物",
+    "example": "She is a leading exponent of modern art.",
+    "exampleCn": "她是现代艺术的一位主要倡导者。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4243,
+    "word": "announcer",
+    "phonetic": "əˈnaʊnsə",
+    "pos": "n.",
+    "meaning": "播音员/广播员",
+    "example": "The announcer introduced the next programme.",
+    "exampleCn": "播音员介绍了下一个节目。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4244,
+    "word": "correspondent",
+    "phonetic": "ˌkɒrɪˈspɒndənt",
+    "pos": "n.",
+    "meaning": "通讯员/记者",
+    "example": "He works as a foreign correspondent in Asia.",
+    "exampleCn": "他在亚洲担任驻外记者。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4245,
+    "word": "messenger",
+    "phonetic": "ˈmesɪndʒə",
+    "pos": "n.",
+    "meaning": "信使/送信人",
+    "example": "The messenger delivered the letter personally.",
+    "exampleCn": "信使亲自送来了信。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4246,
+    "word": "editor",
+    "phonetic": "ˈedɪtə",
+    "pos": "n.",
+    "meaning": "编辑/主编",
+    "example": "The editor reviewed the article before publication.",
+    "exampleCn": "编辑在发表前审查了这篇文章。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4247,
+    "word": "typist",
+    "phonetic": "ˈtaɪpɪst",
+    "pos": "n.",
+    "meaning": "打字员",
+    "example": "She works as a typist in an office.",
+    "exampleCn": "她在一间办公室做打字员。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4248,
+    "word": "propaganda",
+    "phonetic": "ˌprɒpəˈɡændə",
+    "pos": "n.",
+    "meaning": "宣传/鼓吹",
+    "example": "The government used propaganda to influence public opinion.",
+    "exampleCn": "政府利用宣传来影响公众舆论。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4249,
+    "word": "publish",
+    "phonetic": "ˈpʌblɪʃ",
+    "pos": "v.",
+    "meaning": "出版/发表",
+    "example": "The research was published in a scientific journal.",
+    "exampleCn": "这项研究发表在一本科学期刊上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4250,
+    "word": "disseminate",
+    "phonetic": "dɪˈsemɪneɪt",
+    "pos": "v.",
+    "meaning": "散播/传播",
+    "example": "The internet makes it easy to disseminate information.",
+    "exampleCn": "互联网使信息传播变得容易。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4251,
+    "word": "expect",
+    "phonetic": "ɪkˈspekt",
+    "pos": "v.",
+    "meaning": "期待/预计",
+    "example": "We expect the results to be announced next week.",
+    "exampleCn": "我们预期下周公布结果。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4252,
+    "word": "pastime",
+    "phonetic": "ˈpɑːstaɪm",
+    "pos": "n.",
+    "meaning": "消遣/娱乐",
+    "example": "Reading is her favourite pastime.",
+    "exampleCn": "阅读是她最喜欢的消遣。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4253,
+    "word": "entertain",
+    "phonetic": "ˌentəˈteɪn",
+    "pos": "v.",
+    "meaning": "娱乐/使快乐",
+    "example": "The clown entertained the children with funny tricks.",
+    "exampleCn": "小丑用滑稽的把戏逗乐了孩子们。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4254,
+    "word": "recreation",
+    "phonetic": "ˌrekriˈeɪʃn",
+    "pos": "n.",
+    "meaning": "休闲/娱乐",
+    "example": "The park is used for recreation by local residents.",
+    "exampleCn": "公园被当地居民用于休闲。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4255,
+    "word": "gossip",
+    "phonetic": "ˈɡɒsɪp",
+    "pos": "n.",
+    "meaning": "闲话/流言蜚语",
+    "example": "She heard an interesting piece of gossip at the party.",
+    "exampleCn": "她在派对上听到了一则有趣的闲话。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4256,
+    "word": "rumour",
+    "phonetic": "ˈruːmə",
+    "pos": "n.",
+    "meaning": "谣言/传闻",
+    "example": "The rumour spread quickly through the office.",
+    "exampleCn": "谣言在办公室里迅速传播开来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4257,
+    "word": "feast",
+    "phonetic": "fiːst",
+    "pos": "n.",
+    "meaning": "盛宴/大餐",
+    "example": "A feast was prepared for the wedding celebration.",
+    "exampleCn": "为婚庆准备了盛宴。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4258,
+    "word": "programme",
+    "phonetic": "ˈprəʊɡræm",
+    "pos": "n.",
+    "meaning": "节目/计划",
+    "example": "What is your favourite television programme?",
+    "exampleCn": "你最喜欢的电视节目是什么？",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4259,
+    "word": "programmer",
+    "phonetic": "ˈprəʊɡræmə",
+    "pos": "n.",
+    "meaning": "程序员/编程员",
+    "example": "She works as a computer programmer for a tech firm.",
+    "exampleCn": "她在一家科技公司做计算机程序员。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4260,
+    "word": "simulate",
+    "phonetic": "ˈsɪmjuleɪt",
+    "pos": "v.",
+    "meaning": "模拟/仿真",
+    "example": "The software can simulate real-life driving conditions.",
+    "exampleCn": "该软件可以模拟真实的驾驶条件。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4261,
+    "word": "simulative",
+    "phonetic": "ˈsɪmjəleɪtɪv",
+    "pos": "adj.",
+    "meaning": "模拟的/仿真的",
+    "example": "The simulative training prepared pilots for emergencies.",
+    "exampleCn": "模拟训练为飞行员做好了应急准备。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4262,
+    "word": "circus",
+    "phonetic": "ˈsɜːkəs",
+    "pos": "n.",
+    "meaning": "马戏团/杂技",
+    "example": "Children love watching the circus with its clowns and acrobats.",
+    "exampleCn": "孩子们喜欢看有小丑和杂技演员的马戏团。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4263,
+    "word": "concert",
+    "phonetic": "ˈkɒnsət",
+    "pos": "n.",
+    "meaning": "音乐会/演奏会",
+    "example": "They went to a rock concert last night.",
+    "exampleCn": "他们昨晚去了一场摇滚音乐会。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4264,
+    "word": "musicale",
+    "phonetic": "ˌmjuːzɪˈkæl",
+    "pos": "n.",
+    "meaning": "音乐会/音乐晚会",
+    "example": "The musicale featured performances by young musicians.",
+    "exampleCn": "音乐晚会上有年轻音乐家的表演。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4265,
+    "word": "concertmaster",
+    "phonetic": "ˈkɒnsətˌmɑːstə",
+    "pos": "n.",
+    "meaning": "乐队首席",
+    "example": "The concertmaster tuned the orchestra before the performance.",
+    "exampleCn": "乐队首席在演出前为管弦乐队调音。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4266,
+    "word": "opera",
+    "phonetic": "ˈɒpərə",
+    "pos": "n.",
+    "meaning": "歌剧/戏曲",
+    "example": "They went to the opera to see La Traviata.",
+    "exampleCn": "他们去歌剧院看了茶花女。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4267,
+    "word": "tragedy",
+    "phonetic": "ˈtrædʒədi",
+    "pos": "n.",
+    "meaning": "悲剧/灾难",
+    "example": "Shakespeare wrote both comedies and tragedies.",
+    "exampleCn": "莎士比亚既写喜剧也写悲剧。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4268,
+    "word": "animation",
+    "phonetic": "ˌænɪˈmeɪʃn",
+    "pos": "n.",
+    "meaning": "动画/卡通",
+    "example": "The animation film was nominated for an award.",
+    "exampleCn": "这部动画片获得了奖项提名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4269,
+    "word": "x-rated",
+    "phonetic": "eks ˈreɪtɪd",
+    "pos": "adj.",
+    "meaning": "限制级的/x-成人级的",
+    "example": "X-rated films are only for adults.",
+    "exampleCn": "限制级电影仅供成人观看。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4270,
+    "word": "artistic",
+    "phonetic": "ɑːˈtɪstɪk",
+    "pos": "adj.",
+    "meaning": "艺术的/有美感的",
+    "example": "She has great artistic talent.",
+    "exampleCn": "她有很强的艺术天赋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4271,
+    "word": "craftsman",
+    "phonetic": "ˈkrɑːftsmən",
+    "pos": "n.",
+    "meaning": "工匠/手艺人",
+    "example": "The furniture was made by a skilled craftsman.",
+    "exampleCn": "这些家具是由一位技艺高超的工匠制作的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4272,
+    "word": "role",
+    "phonetic": "rəʊl",
+    "pos": "n.",
+    "meaning": "角色/作用",
+    "example": "She played the leading role in the school play.",
+    "exampleCn": "她在学校戏剧中扮演了主角。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4273,
+    "word": "scene",
+    "phonetic": "siːn",
+    "pos": "n.",
+    "meaning": "场景/场面",
+    "example": "The opening scene of the film is very dramatic.",
+    "exampleCn": "这部电影的开场场景非常戏剧化。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4274,
+    "word": "stage",
+    "phonetic": "steɪdʒ",
+    "pos": "n.",
+    "meaning": "舞台/阶段",
+    "example": "The actor walked onto the stage and the audience applauded.",
+    "exampleCn": "演员走上舞台，观众鼓掌欢呼。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4275,
+    "word": "gallery",
+    "phonetic": "ˈɡæləri",
+    "pos": "n.",
+    "meaning": "画廊/美术馆",
+    "example": "The art gallery is hosting an exhibition of modern art.",
+    "exampleCn": "美术馆正在举办一场现代艺术展。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4276,
+    "word": "exhibition",
+    "phonetic": "ˌeksɪˈbɪʃn",
+    "pos": "n.",
+    "meaning": "展览/展示",
+    "example": "The science exhibition attracted thousands of visitors.",
+    "exampleCn": "科学展览吸引了成千上万的参观者。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4277,
+    "word": "select",
+    "phonetic": "sɪˈlekt",
+    "pos": "v.",
+    "meaning": "挑选/选择",
+    "example": "He carefully selected the ingredients for the recipe.",
+    "exampleCn": "他仔细挑选了这道菜所需的食材。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4278,
+    "word": "opt",
+    "phonetic": "ɒpt",
+    "pos": "v.",
+    "meaning": "选择/决定",
+    "example": "She opted to study abroad rather than stay at home.",
+    "exampleCn": "她选择出国留学而不是留在家里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4279,
+    "word": "photography",
+    "phonetic": "fəˈtɒɡrəfi",
+    "pos": "n.",
+    "meaning": "摄影/照相",
+    "example": "He has a keen interest in wildlife photography.",
+    "exampleCn": "他对野生动物摄影有浓厚的兴趣。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4280,
+    "word": "draw",
+    "phonetic": "drɔː",
+    "pos": "v.",
+    "meaning": "画画/描绘",
+    "example": "The child loves to draw pictures of animals.",
+    "exampleCn": "这个孩子喜欢画动物的画。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4281,
+    "word": "describe",
+    "phonetic": "dɪˈskraɪb",
+    "pos": "v.",
+    "meaning": "描述/形容",
+    "example": "Can you describe what the man looked like?",
+    "exampleCn": "你能描述一下那个男人长什么样子吗？",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4282,
+    "word": "musical",
+    "phonetic": "ˈmjuːzɪkl",
+    "pos": "adj.",
+    "meaning": "音乐的/悦耳的",
+    "example": "She comes from a very musical family.",
+    "exampleCn": "她来自一个充满音乐的家庭。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4283,
+    "word": "solo",
+    "phonetic": "ˈsəʊləʊ",
+    "pos": "n.",
+    "meaning": "独奏/独唱",
+    "example": "The guitarist played a stunning solo.",
+    "exampleCn": "吉他手演奏了一段精彩的独奏。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4284,
+    "word": "tune",
+    "phonetic": "tjuːn",
+    "pos": "n.",
+    "meaning": "曲调/旋律",
+    "example": "He hummed a cheerful tune as he worked.",
+    "exampleCn": "他一边工作一边哼着欢快的曲调。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4285,
+    "word": "disc",
+    "phonetic": "dɪsk",
+    "pos": "n.",
+    "meaning": "唱片/光盘",
+    "example": "She has a large collection of compact discs.",
+    "exampleCn": "她收藏了大量的CD唱片。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4286,
+    "word": "violin",
+    "phonetic": "ˌvaɪəˈlɪn",
+    "pos": "n.",
+    "meaning": "小提琴",
+    "example": "She has been playing the violin since she was six.",
+    "exampleCn": "她从六岁起就开始拉小提琴。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4287,
+    "word": "harmonica",
+    "phonetic": "hɑːˈmɒnɪkə",
+    "pos": "n.",
+    "meaning": "口琴",
+    "example": "He played a blues tune on his harmonica.",
+    "exampleCn": "他用口琴吹奏了一首布鲁斯曲子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4288,
+    "word": "trumpet",
+    "phonetic": "ˈtrʌmpɪt",
+    "pos": "n.",
+    "meaning": "喇叭/小号",
+    "example": "She plays the trumpet in the school band.",
+    "exampleCn": "她在学校乐队吹小号。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  },
+  {
+    "id": 4289,
+    "word": "flute",
+    "phonetic": "fluːt",
+    "pos": "n.",
+    "meaning": "长笛/笛子",
+    "example": "The sound of the flute is soft and melodious.",
+    "exampleCn": "长笛的声音柔和而优美。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23"
+    ]
+  }
+]

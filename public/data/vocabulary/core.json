@@ -52,58 +52,6 @@
     ]
   },
   {
-    "id": 16,
-    "word": "accumulate",
-    "phonetic": "/əˈkjuːmjəleɪt/",
-    "pos": "v.",
-    "meaning": "积累，积聚",
-    "example": "Dust tends to accumulate quickly in this room.",
-    "exampleCn": "灰尘在这个房间里积聚得很快。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 17,
-    "word": "accurate",
-    "phonetic": "/ˈækjərət/",
-    "pos": "adj.",
-    "meaning": "准确的，精确的",
-    "example": "The measurements must be accurate.",
-    "exampleCn": "测量必须准确。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 19,
-    "word": "achieve",
-    "phonetic": "/əˈtʃiːv/",
-    "pos": "v.",
-    "meaning": "实现，达到；完成",
-    "example": "She achieved excellent results in her exams.",
-    "exampleCn": "她在考试中取得了优异成绩。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 24,
-    "word": "adjust",
-    "phonetic": "/əˈdʒʌst/",
-    "pos": "v.",
-    "meaning": "调整，调节；适应",
-    "example": "You can adjust the height of the chair.",
-    "exampleCn": "你可以调节椅子的高度。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 26,
     "word": "admire",
     "phonetic": "/ədˈmaɪər/",
@@ -702,19 +650,6 @@
     ]
   },
   {
-    "id": 108,
-    "word": "alien",
-    "phonetic": "/ˈeɪliən/",
-    "pos": "adj./n.",
-    "meaning": "外国的；外星人",
-    "example": "The concept seemed alien to them.",
-    "exampleCn": "这个概念对他们来说很陌生。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 110,
     "word": "alive",
     "phonetic": "/əˈlaɪv/",
@@ -897,19 +832,6 @@
     ]
   },
   {
-    "id": 139,
-    "word": "anecdote",
-    "phonetic": "/ˈænɪkdəʊt/",
-    "pos": "n.",
-    "meaning": "轶事，趣闻",
-    "example": "He told an amusing anecdote about his trip.",
-    "exampleCn": "他讲了一个关于他旅行的有趣轶事。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 140,
     "word": "angel",
     "phonetic": "/ˈeɪndʒəl/",
@@ -1021,19 +943,6 @@
     "meaning": "出现；似乎",
     "example": "A ship appeared on the horizon.",
     "exampleCn": "一艘船出现在地平线上。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 157,
-    "word": "appliance",
-    "phonetic": "/əˈplaɪəns/",
-    "pos": "n.",
-    "meaning": "器具，器械",
-    "example": "Kitchen appliances make cooking easier.",
-    "exampleCn": "厨房电器让烹饪更轻松。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -1209,32 +1118,6 @@
     ]
   },
   {
-    "id": 199,
-    "word": "await",
-    "phonetic": "/əˈweɪt/",
-    "pos": "v.",
-    "meaning": "等待，期待",
-    "example": "We await your reply.",
-    "exampleCn": "我们等待您的回复。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 200,
-    "word": "award",
-    "phonetic": "/əˈwɔːrd/",
-    "pos": "n./v.",
-    "meaning": "奖；授予",
-    "example": "She received an award for her performance.",
-    "exampleCn": "她因表现出色而获奖。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 201,
     "word": "bakery",
     "phonetic": "/ˈbeɪkəri/",
@@ -1268,19 +1151,6 @@
     "meaning": "阳台",
     "example": "We sat on the balcony enjoying the view.",
     "exampleCn": "我们坐在阳台上欣赏风景。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 204,
-    "word": "ballet",
-    "phonetic": "/bæˈleɪ/",
-    "pos": "n.",
-    "meaning": "芭蕾舞",
-    "example": "She has been studying ballet for five years.",
-    "exampleCn": "她学习芭蕾舞已经五年了。",
     "category": "daily",
     "categories": [
       "daily"
@@ -1482,32 +1352,6 @@
     ]
   },
   {
-    "id": 230,
-    "word": "bell",
-    "phonetic": "/bel/",
-    "pos": "n.",
-    "meaning": "铃，钟",
-    "example": "The school bell rang at noon.",
-    "exampleCn": "学校的铃声在中午响起。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 232,
-    "word": "belong",
-    "phonetic": "/bɪˈlɔːŋ/",
-    "pos": "v.",
-    "meaning": "属于",
-    "example": "This book belongs to me.",
-    "exampleCn": "这本书是我的。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 233,
     "word": "belt",
     "phonetic": "/belt/",
@@ -1638,19 +1482,6 @@
     ]
   },
   {
-    "id": 244,
-    "word": "bible",
-    "phonetic": "/ˈbaɪbl/",
-    "pos": "n.",
-    "meaning": "圣经",
-    "example": "The Bible is a sacred text.",
-    "exampleCn": "圣经是一本神圣的文本。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 245,
     "word": "bill",
     "phonetic": "/bɪl/",
@@ -1762,19 +1593,6 @@
     "meaning": "责备；责任",
     "example": "Don't blame others for your mistakes.",
     "exampleCn": "不要为你的错误责怪别人。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 257,
-    "word": "blanket",
-    "phonetic": "/ˈblæŋkɪt/",
-    "pos": "n.",
-    "meaning": "毯子",
-    "example": "She wrapped herself in a warm blanket.",
-    "exampleCn": "她用温暖的毯子裹住自己。",
     "category": "daily",
     "categories": [
       "daily"
@@ -2023,19 +1841,6 @@
     "meaning": "底部，底端",
     "example": "The treasure was at the bottom of the sea.",
     "exampleCn": "宝物在海底。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 290,
-    "word": "bow",
-    "phonetic": "/baʊ/",
-    "pos": "v./n.",
-    "meaning": "鞠躬；弓",
-    "example": "The actor took a bow after the show.",
-    "exampleCn": "演员在演出结束后鞠躬致谢。",
     "category": "daily",
     "categories": [
       "daily"
@@ -2341,19 +2146,6 @@
     ]
   },
   {
-    "id": 323,
-    "word": "bucket",
-    "phonetic": "/ˈbʌkɪt/",
-    "pos": "n.",
-    "meaning": "水桶",
-    "example": "He filled the bucket with water.",
-    "exampleCn": "他把桶装满了水。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 326,
     "word": "build",
     "phonetic": "/bɪld/",
@@ -2549,19 +2341,6 @@
     ]
   },
   {
-    "id": 350,
-    "word": "cable",
-    "phonetic": "/ˈkeɪbl/",
-    "pos": "n.",
-    "meaning": "电缆；缆绳",
-    "example": "The cable connects the computer to the printer.",
-    "exampleCn": "这根电缆连接电脑和打印机。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 351,
     "word": "café",
     "phonetic": "/kæˈfeɪ/",
@@ -2614,32 +2393,6 @@
     ]
   },
   {
-    "id": 358,
-    "word": "camera",
-    "phonetic": "/ˈkæmərə/",
-    "pos": "n.",
-    "meaning": "照相机",
-    "example": "She took photos with her camera.",
-    "exampleCn": "她用相机拍照。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 359,
-    "word": "camp",
-    "phonetic": "/kæmp/",
-    "pos": "n./v.",
-    "meaning": "营地；露营",
-    "example": "We set up camp near the lake.",
-    "exampleCn": "我们在湖边扎营。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 363,
     "word": "cancel",
     "phonetic": "/ˈkænsl/",
@@ -2650,19 +2403,6 @@
     "category": "cet4",
     "categories": [
       "cet4"
-    ]
-  },
-  {
-    "id": 365,
-    "word": "candle",
-    "phonetic": "/ˈkændl/",
-    "pos": "n.",
-    "meaning": "蜡烛",
-    "example": "The room was lit by candles.",
-    "exampleCn": "房间由蜡烛照亮。",
-    "category": "daily",
-    "categories": [
-      "daily"
     ]
   },
   {
@@ -2780,19 +2520,6 @@
     "category": "cet4",
     "categories": [
       "cet4"
-    ]
-  },
-  {
-    "id": 379,
-    "word": "carpet",
-    "phonetic": "/ˈkɑːrpɪt/",
-    "pos": "n.",
-    "meaning": "地毯",
-    "example": "The living room has a thick carpet.",
-    "exampleCn": "客厅铺着厚厚的地毯。",
-    "category": "daily",
-    "categories": [
-      "daily"
     ]
   },
   {
@@ -3199,19 +2926,6 @@
     ]
   },
   {
-    "id": 433,
-    "word": "chess",
-    "phonetic": "/tʃes/",
-    "pos": "n.",
-    "meaning": "国际象棋",
-    "example": "He plays chess every weekend.",
-    "exampleCn": "他每个周末都下国际象棋。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 434,
     "word": "chest",
     "phonetic": "/tʃest/",
@@ -3300,19 +3014,6 @@
     "category": "cet4",
     "categories": [
       "cet4"
-    ]
-  },
-  {
-    "id": 445,
-    "word": "church",
-    "phonetic": "/tʃɜːrtʃ/",
-    "pos": "n.",
-    "meaning": "教堂",
-    "example": "They got married in church.",
-    "exampleCn": "他们在教堂结婚。",
-    "category": "daily",
-    "categories": [
-      "daily"
     ]
   },
   {
@@ -3677,19 +3378,6 @@
     "category": "daily",
     "categories": [
       "daily"
-    ]
-  },
-  {
-    "id": 489,
-    "word": "collect",
-    "phonetic": "/kəˈlekt/",
-    "pos": "v.",
-    "meaning": "收集；采集",
-    "example": "She collects stamps as a hobby.",
-    "exampleCn": "她集邮作为爱好。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
     ]
   },
   {

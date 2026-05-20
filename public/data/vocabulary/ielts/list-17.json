@@ -1,0 +1,923 @@
+[
+  {
+    "id": 13,
+    "word": "accomplish",
+    "phonetic": "/əˈkɑːmplɪʃ/",
+    "pos": "v.",
+    "meaning": "完成；实现",
+    "example": "We accomplished all our goals this semester.",
+    "exampleCn": "我们这学期完成了所有目标。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 19,
+    "word": "achieve",
+    "phonetic": "/əˈtʃiːv/",
+    "pos": "v.",
+    "meaning": "实现，达到；完成",
+    "example": "She achieved excellent results in her exams.",
+    "exampleCn": "她在考试中取得了优异成绩。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 160,
+    "word": "apply",
+    "phonetic": "/əˈplaɪ/",
+    "pos": "v.",
+    "meaning": "申请；应用；适用",
+    "example": "Apply for the job online.",
+    "exampleCn": "在线申请这份工作。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17",
+      "18"
+    ]
+  },
+  {
+    "id": 162,
+    "word": "appreciate",
+    "phonetic": "/əˈpriːʃieɪt/",
+    "pos": "v.",
+    "meaning": "欣赏；感激；理解",
+    "example": "I appreciate your honest advice.",
+    "exampleCn": "我很感激你真诚的建议。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 188,
+    "word": "attain",
+    "phonetic": "/əˈteɪn/",
+    "pos": "v.",
+    "meaning": "达到；获得；实现",
+    "example": "He attained his goal.",
+    "exampleCn": "他达到了目标。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 200,
+    "word": "award",
+    "phonetic": "/əˈwɔːrd/",
+    "pos": "n./v.",
+    "meaning": "奖；授予",
+    "example": "She received an award for her performance.",
+    "exampleCn": "她因表现出色而获奖。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 544,
+    "word": "differ",
+    "phonetic": "/ˈdɪfə(r)/",
+    "pos": "v.",
+    "meaning": "不同；相异；有分歧",
+    "example": "Opinions differ on this issue.",
+    "exampleCn": "在这个问题上意见不一。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 552,
+    "word": "diverse",
+    "phonetic": "/daɪˈvɜːs/",
+    "pos": "adj.",
+    "meaning": "多样的；不同的；形形色色的",
+    "example": "The city has a diverse population.",
+    "exampleCn": "这座城市人口多样化。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 761,
+    "word": "determine",
+    "phonetic": "/dɪˈtɜːmɪn/",
+    "pos": "v.",
+    "meaning": "决定；确定；下定决心",
+    "example": "Determine your goals.",
+    "exampleCn": "确定你的目标。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 853,
+    "word": "demonstrate",
+    "phonetic": "/ˈdemənstreɪt/",
+    "pos": "v.",
+    "meaning": "证明；示范；演示",
+    "example": "Demonstrate how it works.",
+    "exampleCn": "演示它是如何工作的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 928,
+    "word": "confirm",
+    "phonetic": "/kənˈfɜːrm/",
+    "pos": "v.",
+    "meaning": "确认；证实",
+    "example": "Please confirm your email address.",
+    "exampleCn": "请确认你的电子邮箱地址。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 982,
+    "word": "reward",
+    "phonetic": "/rɪˈwɔːrd/",
+    "pos": "n./v.",
+    "meaning": "奖励，回报/奖励",
+    "example": "Hard work often brings its own reward./The company rewarded her for her effort.",
+    "exampleCn": "努力工作往往自有回报。/公司因她的努力而奖励了她。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 1088,
+    "word": "illustrate",
+    "phonetic": "/ˈɪləstreɪt/",
+    "pos": "v.",
+    "meaning": "说明，阐明/给…加插图",
+    "example": "The chart illustrates the main trend clearly.",
+    "exampleCn": "这张图表清楚地说明了主要趋势。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 1208,
+    "word": "grant",
+    "phonetic": "/ɡrænt/",
+    "pos": "n./v.",
+    "meaning": "拨款；补助金/授予，同意",
+    "example": "She received a grant for her research project.",
+    "exampleCn": "她获得了一笔研究项目资助。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 1210,
+    "word": "survey",
+    "phonetic": "/sərˈveɪ/;/ˈsɜːrveɪ/",
+    "pos": "n./v.",
+    "meaning": "调查/调查；审视",
+    "example": "The survey showed strong public support.",
+    "exampleCn": "这项调查显示公众支持度很高。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 1326,
+    "word": "observe",
+    "phonetic": "/əbˈzɜːrv/",
+    "pos": "v.",
+    "meaning": "观察；遵守",
+    "example": "Scientists observed the animals in their natural habitat.",
+    "exampleCn": "科学家观察了这些动物在自然栖息地中的状态。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 1623,
+    "word": "instance",
+    "phonetic": "/ˈɪnstəns/",
+    "pos": "n.",
+    "meaning": "例子/情况",
+    "example": "This is one instance of how technology changes education.",
+    "exampleCn": "这是技术改变教育的一个例子。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 1738,
+    "word": "underestimate",
+    "phonetic": "/ˌʌndərˈestɪmeɪt/",
+    "pos": "v./n.",
+    "meaning": "低估",
+    "example": "People often underestimate the power of small changes.",
+    "exampleCn": "人们常常低估小改变的力量。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 1984,
+    "word": "row",
+    "phonetic": "/roʊ/",
+    "pos": "n./v.",
+    "meaning": "一排/划船",
+    "example": "The students sat in the front row of the classroom.",
+    "exampleCn": "学生们坐在教室第一排。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 2061,
+    "word": "thorough",
+    "phonetic": "/ˈθɜːroʊ/",
+    "pos": "adj.",
+    "meaning": "彻底的/全面的/仔细的",
+    "example": "The team conducted a thorough investigation.",
+    "exampleCn": "团队进行了彻底的调查。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 2142,
+    "word": "inquire",
+    "phonetic": "/ɪnˈkwaɪr/",
+    "pos": "v.",
+    "meaning": "询问/调查",
+    "example": "Students may inquire about the program by email.",
+    "exampleCn": "学生可以通过电子邮件询问这个项目。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 2315,
+    "word": "questionnaire",
+    "phonetic": "/ˌkwestʃəˈner/",
+    "pos": "n.",
+    "meaning": "问卷/调查表",
+    "example": "Participants completed a questionnaire about their habits.",
+    "exampleCn": "参与者完成了一份关于他们习惯的问卷。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 2467,
+    "word": "credit",
+    "phonetic": "/ˈkredɪt/",
+    "pos": "n./v.",
+    "meaning": "信用/学分/赞扬/归功于",
+    "example": "The discovery is credited to a young scientist.",
+    "exampleCn": "这项发现归功于一位年轻科学家。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 2691,
+    "word": "overlap",
+    "phonetic": "/ˌoʊvərˈlæp/",
+    "pos": "v./n.",
+    "meaning": "重叠/交叉部分",
+    "example": "The two circles overlap in the diagram.",
+    "exampleCn": "图中的两个圆相互重叠。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 2839,
+    "word": "feedback",
+    "phonetic": "/ˈfiːdbæk/",
+    "pos": "n.",
+    "meaning": "反馈/反馈信息",
+    "example": "The teacher gave detailed feedback on the essay.",
+    "exampleCn": "老师对这篇文章给出了详细反馈。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 3080,
+    "word": "manifest",
+    "phonetic": "/ˈmænɪfest/",
+    "pos": "v./adj./n.",
+    "meaning": "显示/表明/明显的/清单",
+    "example": "The disease may manifest itself through a fever.",
+    "exampleCn": "这种疾病可能通过发烧表现出来。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 3086,
+    "word": "resolve",
+    "phonetic": "/rɪˈzɑːlv/",
+    "pos": "v./n.",
+    "meaning": "解决/决定/决心",
+    "example": "The team worked together to resolve the conflict.",
+    "exampleCn": "团队合作解决了冲突。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 3316,
+    "word": "overestimate",
+    "phonetic": "/ˌoʊvərˈestɪmeɪt/",
+    "pos": "v./n.",
+    "meaning": "高估/过高估计",
+    "example": "Do not overestimate how much time you have left.",
+    "exampleCn": "不要高估你剩下的时间。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "10",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 3388,
+    "word": "query",
+    "phonetic": "/ˈkwɪri/",
+    "pos": "n./v.",
+    "meaning": "疑问/询问/质疑",
+    "example": "The researcher sent a query about the missing data.",
+    "exampleCn": "研究人员就缺失的数据发出了一次询问。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "6",
+    "list": "2",
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4067,
+    "word": "contrast",
+    "phonetic": "ˈkɒntrɑːst",
+    "pos": "n/v.",
+    "meaning": "对比/对照",
+    "example": "The essay contrasts life in the city with life in the countryside.",
+    "exampleCn": "这篇文章对比了城市和乡村的生活。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4068,
+    "word": "contradiction",
+    "phonetic": "ˌkɒntrəˈdɪkʃn",
+    "pos": "n.",
+    "meaning": "矛盾/反驳",
+    "example": "There is a contradiction between what he says and what he does.",
+    "exampleCn": "他所说和所做之间存在矛盾。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4069,
+    "word": "disagree",
+    "phonetic": "ˌdɪsəˈɡriː",
+    "pos": "v.",
+    "meaning": "不同意/反对",
+    "example": "Experts disagree about the best way to solve the problem.",
+    "exampleCn": "专家们对解决问题的最佳方式意见不一。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4070,
+    "word": "nuance",
+    "phonetic": "ˈnjuːɑːns",
+    "pos": "n.",
+    "meaning": "细微差别/微妙之处",
+    "example": "The nuance of meaning is difficult to translate.",
+    "exampleCn": "意义的细微差别很难翻译。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4071,
+    "word": "inductive",
+    "phonetic": "ɪnˈdʌktɪv",
+    "pos": "adj.",
+    "meaning": "归纳的/归纳法的",
+    "example": "Inductive reasoning moves from specific examples to a general rule.",
+    "exampleCn": "归纳推理从具体例子走向一般规律。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4072,
+    "word": "detail",
+    "phonetic": "ˈdiːteɪl",
+    "pos": "n.",
+    "meaning": "细节/详情",
+    "example": "She described the event in great detail.",
+    "exampleCn": "她非常详细地描述了这一事件。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4073,
+    "word": "example",
+    "phonetic": "ɪɡˈzɑːmpl",
+    "pos": "n.",
+    "meaning": "例子/实例",
+    "example": "The teacher gave several examples to explain the concept.",
+    "exampleCn": "老师举了几个例子来解释这个概念。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4074,
+    "word": "prove",
+    "phonetic": "pruːv",
+    "pos": "v.",
+    "meaning": "证明/证实",
+    "example": "The evidence proved his innocence.",
+    "exampleCn": "证据证明了他的清白。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4075,
+    "word": "decide",
+    "phonetic": "dɪˈsaɪd",
+    "pos": "v.",
+    "meaning": "决定/裁决",
+    "example": "The committee will decide on the proposal next week.",
+    "exampleCn": "委员会将在下周对提案做出决定。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4076,
+    "word": "research",
+    "phonetic": "rɪˈsɜːtʃ",
+    "pos": "n/v.",
+    "meaning": "研究/调查",
+    "example": "She is conducting research into renewable energy.",
+    "exampleCn": "她正在进行可再生能源的研究。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4077,
+    "word": "score",
+    "phonetic": "skɔː",
+    "pos": "n/v.",
+    "meaning": "分数/得分",
+    "example": "She got the highest score on the test.",
+    "exampleCn": "她在考试中得了最高分。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4078,
+    "word": "mark",
+    "phonetic": "mɑːk",
+    "pos": "n/v.",
+    "meaning": "分数/批改",
+    "example": "The teacher gave him a good mark for his essay.",
+    "exampleCn": "老师给他的论文打了个好分数。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4079,
+    "word": "grade",
+    "phonetic": "ɡreɪd",
+    "pos": "n/v.",
+    "meaning": "等级/评分",
+    "example": "Her grades have improved significantly this semester.",
+    "exampleCn": "她这学期的成绩有了显著的提高。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4080,
+    "word": "rank",
+    "phonetic": "ræŋk",
+    "pos": "n/v.",
+    "meaning": "排名/排列",
+    "example": "He is ranked first in his class.",
+    "exampleCn": "他在班上排名第一。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4081,
+    "word": "queue",
+    "phonetic": "kjuː",
+    "pos": "n/v.",
+    "meaning": "排队/行列",
+    "example": "People stood in a queue outside the cinema.",
+    "exampleCn": "人们在电影院外排队等候。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4082,
+    "word": "praise",
+    "phonetic": "preɪz",
+    "pos": "n/v.",
+    "meaning": "表扬/赞扬",
+    "example": "The teacher praised the student for her hard work.",
+    "exampleCn": "老师表扬了这位学生的努力。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4083,
+    "word": "fellowship",
+    "phonetic": "ˈfeləʊʃɪp",
+    "pos": "n.",
+    "meaning": "奖学金/研究员职位",
+    "example": "He was awarded a fellowship to study abroad.",
+    "exampleCn": "他获得了一笔出国留学的奖学金。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4084,
+    "word": "scholarship",
+    "phonetic": "ˈskɒləʃɪp",
+    "pos": "n.",
+    "meaning": "奖学金",
+    "example": "She won a scholarship to attend a top university.",
+    "exampleCn": "她获得了在一所顶尖大学就读的奖学金。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4085,
+    "word": "prize",
+    "phonetic": "praɪz",
+    "pos": "n.",
+    "meaning": "奖品/奖金",
+    "example": "The first prize is a trip to Paris.",
+    "exampleCn": "一等奖是一次巴黎之旅。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  },
+  {
+    "id": 4086,
+    "word": "fee",
+    "phonetic": "fiː",
+    "pos": "n.",
+    "meaning": "费用/学费",
+    "example": "The annual tuition fee is ten thousand pounds.",
+    "exampleCn": "每年的学费是一万英镑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "17",
+    "ieltsLists": [
+      "17"
+    ]
+  }
+]

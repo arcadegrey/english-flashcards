@@ -1,0 +1,1098 @@
+[
+  {
+    "id": 113,
+    "word": "alloy",
+    "phonetic": "/ˈælɔɪ/",
+    "pos": "n./v.",
+    "meaning": "合金/使成合金",
+    "example": "Bronze is an alloy of copper and tin.",
+    "exampleCn": "青铜是铜和锡的合金。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 230,
+    "word": "bell",
+    "phonetic": "/bel/",
+    "pos": "n.",
+    "meaning": "铃，钟",
+    "example": "The school bell rang at noon.",
+    "exampleCn": "学校的铃声在中午响起。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 319,
+    "word": "bronze",
+    "phonetic": "/brɑːnz/",
+    "pos": "n./adj.",
+    "meaning": "青铜/青铜色的",
+    "example": "Ancient tools were often made of bronze.",
+    "exampleCn": "古代工具常常由青铜制成。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 328,
+    "word": "bulb",
+    "phonetic": "/bʌlb/",
+    "pos": "n.",
+    "meaning": "球茎/灯泡",
+    "example": "A tulip grows from a bulb planted in the soil.",
+    "exampleCn": "郁金香从种在土里的球茎中生长出来。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 358,
+    "word": "camera",
+    "phonetic": "/ˈkæmərə/",
+    "pos": "n.",
+    "meaning": "照相机",
+    "example": "She took photos with her camera.",
+    "exampleCn": "她用相机拍照。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 400,
+    "word": "cement",
+    "phonetic": "/sɪˈment/",
+    "pos": "n./v.",
+    "meaning": "水泥/巩固/加强",
+    "example": "The agreement helped cement relations between the two countries.",
+    "exampleCn": "这项协议有助于巩固两国关系。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 637,
+    "word": "inferior",
+    "phonetic": "/ɪnˈfɪəriə(r)/",
+    "pos": "adj.",
+    "meaning": "较差的；下级的；下等的",
+    "example": "This product is inferior to that one.",
+    "exampleCn": "这个产品比那个差。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 787,
+    "word": "pit",
+    "phonetic": "/pɪt/",
+    "pos": "n.",
+    "meaning": "坑；矿井；陷阱",
+    "example": "They dug a pit in the ground.",
+    "exampleCn": "他们在地上挖了个坑。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 1058,
+    "word": "spotlight",
+    "phonetic": "/ˈspɑːtlaɪt/",
+    "pos": "n.",
+    "meaning": "聚光灯/公众关注",
+    "example": "The actor stepped into the spotlight.",
+    "exampleCn": "那位演员走到了聚光灯下。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 1118,
+    "word": "mill",
+    "phonetic": "/mɪl/",
+    "pos": "n.",
+    "meaning": "磨坊，工厂",
+    "example": "The old mill stands beside the river.",
+    "exampleCn": "那座老磨坊矗立在河边。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 1486,
+    "word": "portable",
+    "phonetic": "/ˈpɔːrtəbəl/",
+    "pos": "adj.",
+    "meaning": "便携式的/可移动的",
+    "example": "Portable radios allowed people to receive news anywhere.",
+    "exampleCn": "便携式收音机让人们可以在任何地方收听新闻。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 1588,
+    "word": "knit",
+    "phonetic": "/nɪt/",
+    "pos": "v.",
+    "meaning": "编织/紧密结合",
+    "example": "She learned to knit warm clothes during the winter.",
+    "exampleCn": "她在冬天学会了编织保暖衣物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 1694,
+    "word": "switch",
+    "phonetic": "/swɪtʃ/",
+    "pos": "v./n.",
+    "meaning": "转换/开关",
+    "example": "You can switch off the lights before leaving.",
+    "exampleCn": "离开前你可以关灯。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 1710,
+    "word": "stool",
+    "phonetic": "/stuːl/",
+    "pos": "n.",
+    "meaning": "凳子/粪便",
+    "example": "She sat on a wooden stool near the counter.",
+    "exampleCn": "她坐在柜台旁的一张木凳上。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 1769,
+    "word": "weave",
+    "phonetic": "/wiːv/",
+    "pos": "v.",
+    "meaning": "编织/交织",
+    "example": "The artist used grass to weave a basket.",
+    "exampleCn": "艺术家用草编织了一个篮子。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 1781,
+    "word": "durable",
+    "phonetic": "/ˈdʊrəbl/",
+    "pos": "adj.",
+    "meaning": "耐用的/持久的",
+    "example": "Stone is a durable material for building monuments.",
+    "exampleCn": "石头是建造纪念碑的耐用材料。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 2055,
+    "word": "fragile",
+    "phonetic": "/ˈfrædʒəl/",
+    "pos": "adj.",
+    "meaning": "脆弱的/易碎的",
+    "example": "The fragile ecosystem can be damaged easily.",
+    "exampleCn": "这个脆弱的生态系统很容易受到破坏。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 2205,
+    "word": "pitch",
+    "phonetic": "/pɪtʃ/",
+    "pos": "n./v.",
+    "meaning": "音高/球场/投掷/推销",
+    "example": "The singer’s pitch was clear and accurate.",
+    "exampleCn": "歌手的音高清晰而准确。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24",
+      "27"
+    ]
+  },
+  {
+    "id": 2586,
+    "word": "forge",
+    "phonetic": "/fɔːrdʒ/",
+    "pos": "v./n.",
+    "meaning": "锻造/伪造/建立/熔炉",
+    "example": "The two countries forged a new alliance.",
+    "exampleCn": "两国建立了新的联盟。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 2828,
+    "word": "canvas",
+    "phonetic": "/ˈkænvəs/",
+    "pos": "n.",
+    "meaning": "帆布/画布",
+    "example": "The artist stretched a blank canvas on the frame.",
+    "exampleCn": "画家把一块空白画布绷在框架上。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 2849,
+    "word": "linen",
+    "phonetic": "/ˈlɪnən/",
+    "pos": "n./adj.",
+    "meaning": "亚麻布/床单桌布/亚麻制的",
+    "example": "The hotel provides clean linen every day.",
+    "exampleCn": "酒店每天提供干净的床单。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 2909,
+    "word": "vacuum",
+    "phonetic": "/ˈvækjuːm/",
+    "pos": "n./v.",
+    "meaning": "真空/真空吸尘器/用吸尘器清扫",
+    "example": "Sound cannot travel through a perfect vacuum.",
+    "exampleCn": "声音不能在完全真空中传播。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 3283,
+    "word": "lumber",
+    "phonetic": "/ˈlʌmbər/",
+    "pos": "n./v.",
+    "meaning": "木材/笨重地移动",
+    "example": "The house was built with locally cut lumber.",
+    "exampleCn": "这座房子是用当地砍伐的木材建成的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 3448,
+    "word": "miniature",
+    "phonetic": "/ˈmɪniətʃər/",
+    "pos": "adj./n.",
+    "meaning": "微型的/小型模型",
+    "example": "The artist built a miniature model of the city.",
+    "exampleCn": "艺术家制作了这座城市的微型模型。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "6",
+    "list": "3",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 3541,
+    "word": "dredge",
+    "phonetic": "/dredʒ/",
+    "pos": "v./n.",
+    "meaning": "疏浚/打捞/挖泥船",
+    "example": "Workers dredge the harbor to keep it deep enough for ships.",
+    "exampleCn": "工人疏浚港口，使其深度足够船只通行。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "6",
+    "list": "5",
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4401,
+    "word": "pail",
+    "phonetic": "peɪl",
+    "pos": "n.",
+    "meaning": "桶/提桶",
+    "example": "She carried a pail of milk from the barn.",
+    "exampleCn": "她从谷仓提了一桶牛奶。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4402,
+    "word": "lantern",
+    "phonetic": "ˈlæntən",
+    "pos": "n.",
+    "meaning": "灯笼/提灯",
+    "example": "They hung paper lanterns for the festival.",
+    "exampleCn": "他们为节日挂了纸灯笼。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4403,
+    "word": "flashlight",
+    "phonetic": "ˈflæʃlaɪt",
+    "pos": "n.",
+    "meaning": "手电筒/电筒",
+    "example": "He used a flashlight to find his way in the dark.",
+    "exampleCn": "他用手电筒在黑暗中找路。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4404,
+    "word": "refrigerator",
+    "phonetic": "rɪˈfrɪdʒəreɪtə",
+    "pos": "n.",
+    "meaning": "冰箱",
+    "example": "She put the milk back in the refrigerator.",
+    "exampleCn": "她把牛奶放回了冰箱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4405,
+    "word": "refrigeration",
+    "phonetic": "rɪˌfrɪdʒəˈreɪʃn",
+    "pos": "n.",
+    "meaning": "制冷/冷藏",
+    "example": "Refrigeration keeps food fresh for longer.",
+    "exampleCn": "制冷可以使食物保鲜更久。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4406,
+    "word": "fridge",
+    "phonetic": "frɪdʒ",
+    "pos": "n.",
+    "meaning": "冰箱",
+    "example": "There is nothing to eat in the fridge.",
+    "exampleCn": "冰箱里没有吃的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4407,
+    "word": "fan",
+    "phonetic": "fæn",
+    "pos": "n.",
+    "meaning": "风扇/扇子",
+    "example": "The fan kept the room cool on hot days.",
+    "exampleCn": "风扇在热天里保持着房间的凉爽。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4408,
+    "word": "hurdle",
+    "phonetic": "ˈhɜːdl",
+    "pos": "n.",
+    "meaning": "障碍/跨栏",
+    "example": "She cleared the hurdle easily.",
+    "exampleCn": "她轻松地越过了栏。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4409,
+    "word": "fence",
+    "phonetic": "fens",
+    "pos": "n.",
+    "meaning": "围栏/篱笆",
+    "example": "The garden is surrounded by a wooden fence.",
+    "exampleCn": "花园被一道木围栏围着。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4410,
+    "word": "pedal",
+    "phonetic": "ˈpedl",
+    "pos": "n.",
+    "meaning": "踏板/脚蹬",
+    "example": "She pressed the pedal to stop the car.",
+    "exampleCn": "她踩下踏板把车停住。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4411,
+    "word": "shelf",
+    "phonetic": "ʃelf",
+    "pos": "n.",
+    "meaning": "搁板/架子",
+    "example": "He put the books back on the shelf.",
+    "exampleCn": "他把书放回了架子上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4412,
+    "word": "ladder",
+    "phonetic": "ˈlædə",
+    "pos": "n.",
+    "meaning": "梯子/阶梯",
+    "example": "He climbed the ladder to clean the window.",
+    "exampleCn": "他爬上梯子清洁窗户。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4413,
+    "word": "lift",
+    "phonetic": "lɪft",
+    "pos": "n.",
+    "meaning": "电梯/升降机",
+    "example": "Take the lift to the fifth floor.",
+    "exampleCn": "乘电梯到五楼。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4414,
+    "word": "drawer",
+    "phonetic": "drɔː",
+    "pos": "n.",
+    "meaning": "抽屉",
+    "example": "He opened the drawer to get a pen.",
+    "exampleCn": "他打开抽屉拿了一支笔。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4415,
+    "word": "raincoat",
+    "phonetic": "ˈreɪnkəʊt",
+    "pos": "n.",
+    "meaning": "雨衣",
+    "example": "She wore a raincoat because it was pouring outside.",
+    "exampleCn": "她穿着雨衣，因为外面正下着倾盆大雨。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4416,
+    "word": "can",
+    "phonetic": "kæn",
+    "pos": "n.",
+    "meaning": "罐头/金属罐",
+    "example": "He opened a can of soup for lunch.",
+    "exampleCn": "他开了一罐汤当午饭。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4417,
+    "word": "metal",
+    "phonetic": "ˈmetl",
+    "pos": "n.",
+    "meaning": "金属",
+    "example": "Gold and silver are precious metals.",
+    "exampleCn": "黄金和白银是贵金属。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4418,
+    "word": "iron",
+    "phonetic": "ˈaɪən",
+    "pos": "n.",
+    "meaning": "铁/熨斗",
+    "example": "The bridge is made of iron and steel.",
+    "exampleCn": "这座桥是由铁和钢制成的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4419,
+    "word": "lead",
+    "phonetic": "led",
+    "pos": "n.",
+    "meaning": "铅",
+    "example": "Lead pipes were once used in plumbing.",
+    "exampleCn": "铅管曾一度用于自来水管道。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4420,
+    "word": "brass",
+    "phonetic": "brɑːs",
+    "pos": "n.",
+    "meaning": "黄铜/铜器",
+    "example": "The door handles are made of polished brass.",
+    "exampleCn": "门把手是用抛光黄铜制成的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4421,
+    "word": "cementer",
+    "phonetic": "sɪˈmentə",
+    "pos": "n.",
+    "meaning": "水泥工/粘合者",
+    "example": "The cementer smoothed the concrete floor.",
+    "exampleCn": "水泥工抹平了混凝土地面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4422,
+    "word": "lime",
+    "phonetic": "laɪm",
+    "pos": "n.",
+    "meaning": "石灰/酸橙",
+    "example": "Lime is used in making cement.",
+    "exampleCn": "石灰用于制造水泥。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4423,
+    "word": "plaster",
+    "phonetic": "ˈplɑːstə",
+    "pos": "n.",
+    "meaning": "灰泥/石膏",
+    "example": "The walls were coated with plaster.",
+    "exampleCn": "墙壁上涂了灰泥。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4424,
+    "word": "leather",
+    "phonetic": "ˈleðə",
+    "pos": "n.",
+    "meaning": "皮革/皮",
+    "example": "The bag is made of genuine leather.",
+    "exampleCn": "这个包是用真皮制成的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4425,
+    "word": "plastic",
+    "phonetic": "ˈplæstɪk",
+    "pos": "n.",
+    "meaning": "塑料",
+    "example": "Plastic bags are harmful to the environment.",
+    "exampleCn": "塑料袋对环境有害。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4426,
+    "word": "fibre",
+    "phonetic": "ˈfaɪbə",
+    "pos": "n.",
+    "meaning": "纤维/纤维素",
+    "example": "Natural fibres such as cotton are breathable.",
+    "exampleCn": "像棉花这样的天然纤维是透气的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4427,
+    "word": "fabric",
+    "phonetic": "ˈfæbrɪk",
+    "pos": "n.",
+    "meaning": "织物/布料",
+    "example": "The dress is made of a soft cotton fabric.",
+    "exampleCn": "这条裙子是用柔软的棉织物制成的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4428,
+    "word": "cotton",
+    "phonetic": "ˈkɒtn",
+    "pos": "n.",
+    "meaning": "棉花/棉布",
+    "example": "Cotton is one of the most widely used natural fibres.",
+    "exampleCn": "棉花是使用最广泛的天然纤维之一。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4429,
+    "word": "nylon",
+    "phonetic": "ˈnaɪlɒn",
+    "pos": "n.",
+    "meaning": "尼龙/锦纶",
+    "example": "Nylon is a strong synthetic material.",
+    "exampleCn": "尼龙是一种强韧的合成材料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4430,
+    "word": "wooden",
+    "phonetic": "ˈwʊdn",
+    "pos": "adj.",
+    "meaning": "木制的/木头的",
+    "example": "The old wooden bridge creaked as we walked over it.",
+    "exampleCn": "我们走过那座老木桥时它嘎吱作响。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4431,
+    "word": "mine",
+    "phonetic": "maɪn",
+    "pos": "n.",
+    "meaning": "矿/矿山",
+    "example": "He worked in a coal mine for twenty years.",
+    "exampleCn": "他在煤矿工作了二十年。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4432,
+    "word": "lubricate",
+    "phonetic": "ˈluːbrɪkeɪt",
+    "pos": "v.",
+    "meaning": "润滑/加润滑油",
+    "example": "You need to lubricate the engine regularly.",
+    "exampleCn": "你需要定期给发动机加润滑油。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4433,
+    "word": "diamond",
+    "phonetic": "ˈdaɪəmənd",
+    "pos": "n.",
+    "meaning": "钻石/金刚石",
+    "example": "She wore a ring with a sparkling diamond.",
+    "exampleCn": "她戴着一枚闪闪发光的钻石戒指。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4434,
+    "word": "crystal",
+    "phonetic": "ˈkrɪstl",
+    "pos": "n.",
+    "meaning": "水晶/晶体",
+    "example": "The chandelier was made of crystal.",
+    "exampleCn": "吊灯是用水晶制成的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  },
+  {
+    "id": 4435,
+    "word": "counterfeit",
+    "phonetic": "ˈkaʊntəfɪt",
+    "pos": "adj.",
+    "meaning": "伪造的/假冒的",
+    "example": "Counterfeit goods are sold on the black market.",
+    "exampleCn": "假冒商品在黑市上出售。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27"
+    ]
+  }
+]
