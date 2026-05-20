@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-05-19T13:05:11.156Z",
+  "generatedAt": "2026-05-20T06:28:20.976Z",
   "source": "/data/vocabulary.json",
-  "sourceTotal": 3883,
+  "sourceTotal": 4066,
   "core": {
     "path": "/data/vocabulary/core.json",
-    "count": 306
+    "count": 287
   },
   "ielts": {
-    "total": 600,
-    "meta": "4 个主题",
+    "total": 960,
+    "meta": "5 个主题",
     "topics": [
       {
         "key": "nature-geography",
@@ -121,6 +121,62 @@
           }
         ],
         "meta": "1 个 List"
+      },
+      {
+        "key": "school-education",
+        "label": "学校教育",
+        "count": 360,
+        "lists": [
+          {
+            "key": "11",
+            "label": "List 11",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-11.json",
+            "topicKey": "school-education",
+            "topicLabel": "学校教育"
+          },
+          {
+            "key": "12",
+            "label": "List 12",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-12.json",
+            "topicKey": "school-education",
+            "topicLabel": "学校教育"
+          },
+          {
+            "key": "13",
+            "label": "List 13",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-13.json",
+            "topicKey": "school-education",
+            "topicLabel": "学校教育"
+          },
+          {
+            "key": "14",
+            "label": "List 14",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-14.json",
+            "topicKey": "school-education",
+            "topicLabel": "学校教育"
+          },
+          {
+            "key": "15",
+            "label": "List 15",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-15.json",
+            "topicKey": "school-education",
+            "topicLabel": "学校教育"
+          },
+          {
+            "key": "16",
+            "label": "List 16",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-16.json",
+            "topicKey": "school-education",
+            "topicLabel": "学校教育"
+          }
+        ],
+        "meta": "6 个 List"
       }
     ],
     "lists": [
@@ -203,6 +259,54 @@
         "path": "/data/vocabulary/ielts/list-10.json",
         "topicKey": "space-exploration",
         "topicLabel": "太空探索"
+      },
+      {
+        "key": "11",
+        "label": "List 11",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-11.json",
+        "topicKey": "school-education",
+        "topicLabel": "学校教育"
+      },
+      {
+        "key": "12",
+        "label": "List 12",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-12.json",
+        "topicKey": "school-education",
+        "topicLabel": "学校教育"
+      },
+      {
+        "key": "13",
+        "label": "List 13",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-13.json",
+        "topicKey": "school-education",
+        "topicLabel": "学校教育"
+      },
+      {
+        "key": "14",
+        "label": "List 14",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-14.json",
+        "topicKey": "school-education",
+        "topicLabel": "学校教育"
+      },
+      {
+        "key": "15",
+        "label": "List 15",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-15.json",
+        "topicKey": "school-education",
+        "topicLabel": "学校教育"
+      },
+      {
+        "key": "16",
+        "label": "List 16",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-16.json",
+        "topicKey": "school-education",
+        "topicLabel": "学校教育"
       }
     ]
   }

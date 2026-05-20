@@ -10,10 +10,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 32,
@@ -42,10 +47,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
   },
   {
     "id": 136,
@@ -216,10 +226,15 @@
     "exampleCn": "统计数据显示出口稳步增长。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
   },
   {
     "id": 1241,
@@ -761,10 +776,15 @@
     "exampleCn": "近年来出生率下降了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
   },
   {
     "id": 1277,
@@ -1471,10 +1491,15 @@
     "exampleCn": "新软件将提高工作效率。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
   },
   {
     "id": 1324,

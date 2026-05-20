@@ -26,10 +26,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
   },
   {
     "id": 289,
@@ -203,10 +208,15 @@
     "exampleCn": "没有更多数据，很难辨别这种模式。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 1537,
@@ -784,10 +794,15 @@
     "exampleCn": "温度升高时，水银会膨胀。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
   },
   {
     "id": 1575,
@@ -1071,10 +1086,15 @@
     "exampleCn": "这篇文章提到了早期研究。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 1594,
@@ -1101,10 +1121,15 @@
     "exampleCn": "专家估计这个项目将需要三年。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 1596,
@@ -1433,10 +1458,15 @@
     "exampleCn": "碳是许多有机化合物的重要组成部分。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
   },
   {
     "id": 1618,

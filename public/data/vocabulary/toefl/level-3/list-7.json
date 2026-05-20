@@ -413,10 +413,15 @@
     "exampleCn": "他的沉默似乎意味着同意。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 1064,
@@ -503,10 +508,15 @@
     "exampleCn": "医生进行了仔细检查。/学生们正在准备期末考试。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 1070,
@@ -668,10 +678,15 @@
     "exampleCn": "良好的纪律在学校里很重要。/父母不应该过于严厉地管教孩子。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
   },
   {
     "id": 1081,
@@ -683,10 +698,15 @@
     "exampleCn": "学校修订了它的科学课程体系。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
   },
   {
     "id": 1082,
@@ -1182,10 +1202,15 @@
     "exampleCn": "样本是在实验室里检测的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
   },
   {
     "id": 1114,
@@ -1377,10 +1402,15 @@
     "exampleCn": "这份文件经律师认证。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
   },
   {
     "id": 1127,

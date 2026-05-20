@@ -322,10 +322,15 @@
     "exampleCn": "摩擦力减慢了物体在表面上的运动。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
   },
   {
     "id": 1452,
@@ -472,10 +477,15 @@
     "exampleCn": "几种矿物组成了岩石的外层。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
   },
   {
     "id": 1462,
@@ -1007,10 +1017,15 @@
     "exampleCn": "研究人员从这种植物中提取有用的化学物质。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 1497,

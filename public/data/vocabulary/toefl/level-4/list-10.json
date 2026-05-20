@@ -90,10 +90,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 192,
@@ -1030,10 +1035,15 @@
     "exampleCn": "使用机器前请阅读手册。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
   },
   {
     "id": 2329,
@@ -1414,10 +1424,15 @@
     "exampleCn": "实验检验了科学家的假设。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 2354,
@@ -1855,10 +1870,15 @@
     "exampleCn": "长方形有四条边和四个直角。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
   },
   {
     "id": 2382,
@@ -2435,10 +2455,15 @@
     "exampleCn": "开车需要驾照。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
   },
   {
     "id": 2420,

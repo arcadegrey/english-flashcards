@@ -1,0 +1,1132 @@
+[
+  {
+    "id": 7,
+    "word": "abstract",
+    "phonetic": "/ˈæbstrækt/;/æbˈstrækt/",
+    "pos": "adj./n./v.",
+    "meaning": "抽象的/摘要/提取，概括",
+    "example": "Some scientific ideas are too abstract for beginners.",
+    "exampleCn": "有些科学概念对初学者来说过于抽象。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 134,
+    "word": "analogy",
+    "phonetic": "/əˈnælədʒi/",
+    "pos": "n.",
+    "meaning": "类比/比喻",
+    "example": "The teacher used an analogy to explain electricity.",
+    "exampleCn": "老师用类比来解释电。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 135,
+    "word": "analyse",
+    "phonetic": "/ˈænəlaɪz/",
+    "pos": "v.",
+    "meaning": "分析，解析",
+    "example": "We need to analyse the data carefully.",
+    "exampleCn": "我们需要仔细分析数据。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 182,
+    "word": "assume",
+    "phonetic": "/əˈsuːm/",
+    "pos": "v.",
+    "meaning": "假设/承担/认为",
+    "example": "Do not assume that every source is reliable.",
+    "exampleCn": "不要认为每个来源都是可靠的。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 452,
+    "word": "cite",
+    "phonetic": "/saɪt/",
+    "pos": "v.",
+    "meaning": "引用",
+    "example": "Don't forget to cite your sources.",
+    "exampleCn": "别忘了引用你的来源。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 632,
+    "word": "infer",
+    "phonetic": "/ɪnˈfɜː(r)/",
+    "pos": "v.",
+    "meaning": "推断；推论",
+    "example": "What can we infer from this data?",
+    "exampleCn": "我们能从这些数据中推断出什么？",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 651,
+    "word": "conscious",
+    "phonetic": "/ˈkɒnʃəs/",
+    "pos": "adj.",
+    "meaning": "有意识的；清醒的；意识到的",
+    "example": "He was conscious of his mistake.",
+    "exampleCn": "他意识到自己的错误。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 681,
+    "word": "conclude",
+    "phonetic": "/kənˈkluːd/",
+    "pos": "v.",
+    "meaning": "结束；得出结论；断定",
+    "example": "Let me conclude my speech.",
+    "exampleCn": "让我结束演讲。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 746,
+    "word": "presentation",
+    "phonetic": "/ˌpreznˈteɪʃn/",
+    "pos": "n.",
+    "meaning": "展示；介绍；演讲",
+    "example": "She gave a presentation.",
+    "exampleCn": "她做了个演讲。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 801,
+    "word": "quote",
+    "phonetic": "/kwəʊt/",
+    "pos": "v./n.",
+    "meaning": "引用；报价；引文",
+    "example": "He quoted Shakespeare.",
+    "exampleCn": "他引用了莎士比亚的话。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 874,
+    "word": "predict",
+    "phonetic": "/prɪˈdɪkt/",
+    "pos": "v.",
+    "meaning": "预测，预言",
+    "example": "Scientists cannot always predict earthquakes accurately.",
+    "exampleCn": "科学家并不总能准确预测地震。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 971,
+    "word": "summary",
+    "phonetic": "/ˈsʌməri/",
+    "pos": "n.",
+    "meaning": "总结，摘要",
+    "example": "Please write a short summary of the article.",
+    "exampleCn": "请写一篇这篇文章的简短摘要。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 972,
+    "word": "project",
+    "phonetic": "/ˈprɑːdʒekt/",
+    "pos": "n./v.",
+    "meaning": "项目，工程/投射，预计",
+    "example": "The students worked on a science project./The company projects higher sales next year.",
+    "exampleCn": "学生们在做一个科学项目。/公司预计明年的销售额会更高。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 1063,
+    "word": "imply",
+    "phonetic": "/ɪmˈplaɪ/",
+    "pos": "v.",
+    "meaning": "暗示，意味着",
+    "example": "His silence seemed to imply agreement.",
+    "exampleCn": "他的沉默似乎意味着同意。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 1069,
+    "word": "examination",
+    "phonetic": "/ɪɡˌzæmɪˈneɪʃən/",
+    "pos": "n.",
+    "meaning": "检查/考试",
+    "example": "The doctor performed a careful examination./Students are preparing for the final examination.",
+    "exampleCn": "医生进行了仔细检查。/学生们正在准备期末考试。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 1154,
+    "word": "outline",
+    "phonetic": "/ˈaʊtlaɪn/",
+    "pos": "n./v.",
+    "meaning": "提纲；轮廓/概述",
+    "example": "The professor gave an outline of the lecture.",
+    "exampleCn": "教授给出了讲座的提纲。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 1194,
+    "word": "consult",
+    "phonetic": "/kənˈsʌlt/",
+    "pos": "v.",
+    "meaning": "咨询；查阅",
+    "example": "You should consult a doctor if the pain continues.",
+    "exampleCn": "如果疼痛持续，你应该咨询医生。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 1219,
+    "word": "detect",
+    "phonetic": "/dɪˈtekt/",
+    "pos": "v.",
+    "meaning": "发现；察觉",
+    "example": "Scientists can detect tiny changes in temperature.",
+    "exampleCn": "科学家能够检测到温度的微小变化。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 1435,
+    "word": "represent",
+    "phonetic": "/ˌreprɪˈzent/",
+    "pos": "v.",
+    "meaning": "代表；体现",
+    "example": "These figures represent the latest survey results.",
+    "exampleCn": "这些数字代表最新的调查结果。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 1496,
+    "word": "extract",
+    "phonetic": "/ɪkˈstrækt/",
+    "pos": "v./n.",
+    "meaning": "提取/摘录/提取物",
+    "example": "Researchers extract useful chemicals from the plant.",
+    "exampleCn": "研究人员从这种植物中提取有用的化学物质。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 1536,
+    "word": "discern",
+    "phonetic": "/dɪˈsɜːrn/",
+    "pos": "v.",
+    "meaning": "看出/辨别/识别",
+    "example": "It is difficult to discern the pattern without more data.",
+    "exampleCn": "没有更多数据，很难辨别这种模式。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 1593,
+    "word": "reference",
+    "phonetic": "/ˈrefrəns/",
+    "pos": "n./v.",
+    "meaning": "参考/提及/引用",
+    "example": "The article includes a reference to earlier research.",
+    "exampleCn": "这篇文章提到了早期研究。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 1595,
+    "word": "reckon",
+    "phonetic": "/ˈrekən/",
+    "pos": "v.",
+    "meaning": "认为/估计/计算",
+    "example": "Experts reckon that the project will take three years.",
+    "exampleCn": "专家估计这个项目将需要三年。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 1667,
+    "word": "comprehend",
+    "phonetic": "/ˌkɑːmprɪˈhend/",
+    "pos": "v.",
+    "meaning": "理解/领会",
+    "example": "It took time to comprehend the complex theory.",
+    "exampleCn": "理解这个复杂理论需要时间。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 1679,
+    "word": "thesis",
+    "phonetic": "/ˈθiːsɪs/",
+    "pos": "n.",
+    "meaning": "论文/论点",
+    "example": "The student supported her thesis with strong evidence.",
+    "exampleCn": "这名学生用有力证据支持她的论点。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 1684,
+    "word": "suppose",
+    "phonetic": "/səˈpoʊz/",
+    "pos": "v.",
+    "meaning": "假设/认为",
+    "example": "Suppose the temperature drops below zero tonight.",
+    "exampleCn": "假设今晚气温降到零度以下。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 1796,
+    "word": "perceive",
+    "phonetic": "/pərˈsiːv/",
+    "pos": "v.",
+    "meaning": "察觉/认为",
+    "example": "People perceive color differently under different light.",
+    "exampleCn": "人们在不同光线下对颜色的感知不同。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 2025,
+    "word": "deliberate",
+    "phonetic": "/dɪˈlɪbərət/",
+    "pos": "adj./v.",
+    "meaning": "故意的/慎重的/仔细考虑",
+    "example": "The experiment required deliberate planning.",
+    "exampleCn": "这个实验需要慎重的计划。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 2120,
+    "word": "dictate",
+    "phonetic": "/ˈdɪkteɪt/",
+    "pos": "v./n.",
+    "meaning": "命令/决定/口述/命令",
+    "example": "Climate can dictate the types of crops grown in a region.",
+    "exampleCn": "气候会决定一个地区种植的作物种类。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 2224,
+    "word": "speculate",
+    "phonetic": "/ˈspekjuleɪt/",
+    "pos": "v.",
+    "meaning": "推测/投机",
+    "example": "Scientists speculate that the climate was once warmer.",
+    "exampleCn": "科学家推测过去的气候曾经更温暖。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 2353,
+    "word": "hypothesis",
+    "phonetic": "/haɪˈpɑːθəsɪs/",
+    "pos": "n.",
+    "meaning": "假设/假说",
+    "example": "The experiment tested the scientist's hypothesis.",
+    "exampleCn": "实验检验了科学家的假设。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 2526,
+    "word": "deem",
+    "phonetic": "/diːm/",
+    "pos": "v.",
+    "meaning": "认为/视为",
+    "example": "The committee deemed the plan too expensive.",
+    "exampleCn": "委员会认为这个计划太昂贵。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 2528,
+    "word": "elicit",
+    "phonetic": "/iˈlɪsɪt/",
+    "pos": "v.",
+    "meaning": "引出/诱出",
+    "example": "The question was designed to elicit honest answers.",
+    "exampleCn": "这个问题旨在引出诚实的回答。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 2772,
+    "word": "gist",
+    "phonetic": "/dʒɪst/",
+    "pos": "n.",
+    "meaning": "主旨/要点",
+    "example": "I understood the gist of the lecture.",
+    "exampleCn": "我理解了讲座的主旨。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 2934,
+    "word": "diagnose",
+    "phonetic": "/ˌdaɪəɡˈnoʊs/",
+    "pos": "v.",
+    "meaning": "诊断/判断原因",
+    "example": "The doctor diagnosed the patient with an infection.",
+    "exampleCn": "医生诊断病人患有感染。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 3228,
+    "word": "presume",
+    "phonetic": "/prɪˈzuːm/",
+    "pos": "v.",
+    "meaning": "假定/推测/擅自做",
+    "example": "Scientists presume that the fossil is millions of years old.",
+    "exampleCn": "科学家推测这块化石已有数百万年历史。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 3299,
+    "word": "deduce",
+    "phonetic": "/dɪˈduːs/",
+    "pos": "v.",
+    "meaning": "推断/演绎",
+    "example": "From the evidence, the scientist deduced that the climate had changed.",
+    "exampleCn": "根据证据，科学家推断气候已经发生变化。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4044,
+    "word": "skim",
+    "phonetic": "skɪm",
+    "pos": "v.",
+    "meaning": "略读/浏览",
+    "example": "She skimmed the newspaper headlines.",
+    "exampleCn": "她浏览了报纸的标题。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4045,
+    "word": "scan",
+    "phonetic": "skæn",
+    "pos": "v.",
+    "meaning": "扫描/浏览",
+    "example": "He scanned the document for any mistakes.",
+    "exampleCn": "他扫描了文件以查找任何错误。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4046,
+    "word": "scrutinise",
+    "phonetic": "ˈskruːtɪnaɪz",
+    "pos": "v.",
+    "meaning": "仔细检查/审查",
+    "example": "The committee scrutinised every detail of the proposal.",
+    "exampleCn": "委员会仔细审查了提案的每一个细节。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4047,
+    "word": "recite",
+    "phonetic": "rɪˈsaɪt",
+    "pos": "v.",
+    "meaning": "背诵/朗诵",
+    "example": "The children were asked to recite a poem.",
+    "exampleCn": "孩子们被要求背诵一首诗。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4048,
+    "word": "test",
+    "phonetic": "test",
+    "pos": "n.",
+    "meaning": "测试/考试",
+    "example": "She passed the driving test on her first attempt.",
+    "exampleCn": "她第一次就通过了驾驶考试。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4049,
+    "word": "quiz",
+    "phonetic": "kwɪz",
+    "pos": "n.",
+    "meaning": "小测验/测试",
+    "example": "The teacher gave us a pop quiz at the start of class.",
+    "exampleCn": "老师在课前给我们做了一个突击测验。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4050,
+    "word": "plagiarise",
+    "phonetic": "ˈpleɪdʒəraɪz",
+    "pos": "v.",
+    "meaning": "抄袭/剽窃",
+    "example": "It is wrong to plagiarise other people's work.",
+    "exampleCn": "抄袭他人的工作是不对的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4051,
+    "word": "copy",
+    "phonetic": "ˈkɒpi",
+    "pos": "v.",
+    "meaning": "复制/抄写",
+    "example": "Please copy these notes into your notebook.",
+    "exampleCn": "请把这些笔记抄到你的笔记本里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4052,
+    "word": "print",
+    "phonetic": "prɪnt",
+    "pos": "v.",
+    "meaning": "打印/印刷",
+    "example": "The publisher printed a thousand copies of the book.",
+    "exampleCn": "出版商印刷了一千本这本书。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4053,
+    "word": "essay",
+    "phonetic": "ˈeseɪ",
+    "pos": "n.",
+    "meaning": "论文/短文",
+    "example": "The students were asked to write an essay on pollution.",
+    "exampleCn": "学生被要求写一篇关于污染的短文。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4054,
+    "word": "paper",
+    "phonetic": "ˈpeɪpə",
+    "pos": "n.",
+    "meaning": "论文/纸张",
+    "example": "He published a paper in a leading scientific journal.",
+    "exampleCn": "他在一本顶尖科学期刊上发表了一篇论文。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4055,
+    "word": "dissertation",
+    "phonetic": "ˌdɪsəˈteɪʃn",
+    "pos": "n.",
+    "meaning": "学位论文/博士论文",
+    "example": "She spent two years working on her dissertation.",
+    "exampleCn": "她花了两年时间撰写她的学位论文。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4056,
+    "word": "heading",
+    "phonetic": "ˈhedɪŋ",
+    "pos": "n.",
+    "meaning": "标题/题目",
+    "example": "The heading of each chapter is printed in bold.",
+    "exampleCn": "每章的标题用粗体印刷。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4057,
+    "word": "outset",
+    "phonetic": "ˈaʊtset",
+    "pos": "n.",
+    "meaning": "开端/开始",
+    "example": "From the outset, the project faced many difficulties.",
+    "exampleCn": "从一开始，这个项目就面临许多困难。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4058,
+    "word": "point",
+    "phonetic": "pɔɪnt",
+    "pos": "n.",
+    "meaning": "要点/观点",
+    "example": "He made several important points during the discussion.",
+    "exampleCn": "他在讨论中提出了几个重要的观点。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4059,
+    "word": "opinion",
+    "phonetic": "əˈpɪnjən",
+    "pos": "n.",
+    "meaning": "意见/看法",
+    "example": "In my opinion, the proposal needs more work.",
+    "exampleCn": "在我看来，这个提案还需要更多工作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4060,
+    "word": "introduce",
+    "phonetic": "ˌɪntrəˈdjuːs",
+    "pos": "v.",
+    "meaning": "介绍/引入",
+    "example": "The teacher introduced the new topic with a short video.",
+    "exampleCn": "老师通过一段短视频介绍了新话题。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4061,
+    "word": "postulate",
+    "phonetic": "ˈpɒstʃəleɪt",
+    "pos": "v.",
+    "meaning": "假定/提出",
+    "example": "The theory postulates that the universe is expanding.",
+    "exampleCn": "该理论假定宇宙正在膨胀。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4062,
+    "word": "recognise",
+    "phonetic": "ˈrekəɡnaɪz",
+    "pos": "v.",
+    "meaning": "承认/认出",
+    "example": "She recognised his voice immediately.",
+    "exampleCn": "她立刻认出了他的声音。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4063,
+    "word": "insist",
+    "phonetic": "ɪnˈsɪst",
+    "pos": "v.",
+    "meaning": "坚持/坚决主张",
+    "example": "She insisted on paying for the meal herself.",
+    "exampleCn": "她坚持自己付餐费。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4064,
+    "word": "persist",
+    "phonetic": "pəˈsɪst",
+    "pos": "v.",
+    "meaning": "坚持/持续存在",
+    "example": "If symptoms persist, you should see a doctor.",
+    "exampleCn": "如果症状持续存在，你应该去看医生。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4065,
+    "word": "understand",
+    "phonetic": "ˌʌndəˈstænd",
+    "pos": "v.",
+    "meaning": "理解/明白",
+    "example": "It took a while for him to understand the concept.",
+    "exampleCn": "他花了一会儿时间才理解这个概念。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  },
+  {
+    "id": 4066,
+    "word": "compare",
+    "phonetic": "kəmˈpeə",
+    "pos": "v.",
+    "meaning": "比较/对比",
+    "example": "Compare the two poems and find the similarities.",
+    "exampleCn": "比较这两首诗，找出相似之处。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
+  }
+]

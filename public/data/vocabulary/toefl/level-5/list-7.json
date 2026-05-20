@@ -933,10 +933,15 @@
     "exampleCn": "云开始遮住山景。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
   },
   {
     "id": 3073,
@@ -1038,10 +1043,15 @@
     "exampleCn": "只有一小部分学生选择了高级课程。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
   },
   {
     "id": 3080,

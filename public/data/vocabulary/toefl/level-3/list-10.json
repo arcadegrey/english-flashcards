@@ -560,10 +560,15 @@
     "exampleCn": "他在大学学习电子学。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
   },
   {
     "id": 1356,
@@ -607,10 +612,15 @@
     "exampleCn": "她因杰出的表现获奖。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
   },
   {
     "id": 1359,
@@ -637,10 +647,15 @@
     "exampleCn": "我们需要一个实际可行的解决方案。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
   },
   {
     "id": 1361,
@@ -989,10 +1004,15 @@
     "exampleCn": "这个理论尚未得到充分验证。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
   },
   {
     "id": 1384,
@@ -1069,10 +1089,15 @@
     "exampleCn": "许多人认为爱因斯坦是个天才。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
   },
   {
     "id": 1389,
@@ -1509,10 +1534,15 @@
     "exampleCn": "教材里有一张人类心脏示意图。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
   },
   {
     "id": 1418,
@@ -1667,10 +1697,15 @@
     "exampleCn": "请明天归还剩余的钱。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
   },
   {
     "id": 1428,
@@ -1787,10 +1822,15 @@
     "exampleCn": "这些数字代表最新的调查结果。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 1436,

@@ -243,10 +243,15 @@
     "exampleCn": "有些气体是人眼看不见的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
   },
   {
     "id": 1151,
@@ -305,10 +310,15 @@
     "exampleCn": "教授给出了讲座的提纲。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 1155,
@@ -335,10 +345,15 @@
     "exampleCn": "这本杂志刊登了这位科学家的简介。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
   },
   {
     "id": 1157,
@@ -490,10 +505,15 @@
     "exampleCn": "过多的雨水会毁坏庄稼。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
   },
   {
     "id": 1167,
@@ -555,10 +575,15 @@
     "exampleCn": "一些学生反对这项新规定。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
   },
   {
     "id": 1171,
@@ -570,10 +595,15 @@
     "exampleCn": "公司以全球规模扩张了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
   },
   {
     "id": 1172,
@@ -615,10 +645,15 @@
     "exampleCn": "比起科幻小说，她更喜欢历史小说。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
   },
   {
     "id": 1175,
@@ -915,10 +950,15 @@
     "exampleCn": "如果疼痛持续，你应该咨询医生。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 1195,
@@ -1202,10 +1242,15 @@
     "exampleCn": "教授做了一系列关于气候政策的讲座。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
   },
   {
     "id": 1214,
@@ -1292,10 +1337,15 @@
     "exampleCn": "科学家能够检测到温度的微小变化。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 1220,
@@ -1444,10 +1494,15 @@
     "exampleCn": "这个术语的含义取决于其语境。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
   },
   {
     "id": 1230,
@@ -1489,10 +1544,15 @@
     "exampleCn": "她昨晚写了这篇文章的初稿。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
   },
   {
     "id": 1233,

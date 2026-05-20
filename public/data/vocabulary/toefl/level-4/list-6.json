@@ -26,10 +26,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
   },
   {
     "id": 164,
@@ -716,10 +721,15 @@
     "exampleCn": "人口数量多年保持不变。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
   },
   {
     "id": 1941,
@@ -866,10 +876,15 @@
     "exampleCn": "这两个样本在颜色和形状上完全相同。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
   },
   {
     "id": 1951,
@@ -1021,10 +1036,15 @@
     "exampleCn": "延误的主要原因是恶劣天气。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
   },
   {
     "id": 1961,
@@ -1073,10 +1093,15 @@
     "exampleCn": "这位外交官帮助谈判达成和平协议。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
   },
   {
     "id": 1964,

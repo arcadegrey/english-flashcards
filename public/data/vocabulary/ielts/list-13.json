@@ -1,0 +1,1089 @@
+[
+  {
+    "id": 40,
+    "word": "agriculture",
+    "phonetic": "/ˈæɡrɪˌkʌltʃər/",
+    "pos": "n.",
+    "meaning": "农业；农学",
+    "example": "Agriculture remains central to the local economy.",
+    "exampleCn": "农业仍然是当地经济的核心。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 174,
+    "word": "article",
+    "phonetic": "/ˈɑːrtɪkl/",
+    "pos": "n.",
+    "meaning": "文章；物品；条款",
+    "example": "I read an interesting article today.",
+    "exampleCn": "我今天读了一篇有趣的文章。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 248,
+    "word": "biology",
+    "phonetic": "/baɪˈɒlədʒi/",
+    "pos": "n.",
+    "meaning": "生物学",
+    "example": "Biology is the study of living organisms.",
+    "exampleCn": "生物学是研究生物体的学科。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 317,
+    "word": "brochure",
+    "phonetic": "/broʊˈʃʊr/",
+    "pos": "n.",
+    "meaning": "小册子",
+    "example": "The travel brochure has useful information.",
+    "exampleCn": "这本旅游手册有有用的信息。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 391,
+    "word": "category",
+    "phonetic": "/ˈkætəɡɔːri/",
+    "pos": "n.",
+    "meaning": "类别",
+    "example": "Each animal belongs to a different category.",
+    "exampleCn": "每种动物属于不同的类别。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 416,
+    "word": "chapter",
+    "phonetic": "/ˈtʃæptər/",
+    "pos": "n.",
+    "meaning": "章，回",
+    "example": "Read chapter five for homework.",
+    "exampleCn": "阅读第五章作为作业。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 432,
+    "word": "chemistry",
+    "phonetic": "/ˈkemɪstri/",
+    "pos": "n.",
+    "meaning": "化学",
+    "example": "Chemistry is my favorite subject.",
+    "exampleCn": "化学是我最喜欢的科目。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 601,
+    "word": "tale",
+    "phonetic": "/teɪl/",
+    "pos": "n.",
+    "meaning": "故事；传说",
+    "example": "She told us a fascinating tale.",
+    "exampleCn": "她给我们讲了一个迷人的故事。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 682,
+    "word": "minor",
+    "phonetic": "/ˈmaɪnə(r)/",
+    "pos": "adj.",
+    "meaning": "较小的；次要的；未成年人的",
+    "example": "It's a minor problem.",
+    "exampleCn": "这是个小问题。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 729,
+    "word": "literature",
+    "phonetic": "/ˈlɪtrətʃə(r)/",
+    "pos": "n.",
+    "meaning": "文学；文献",
+    "example": "She studies English literature.",
+    "exampleCn": "她研究英国文学。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 843,
+    "word": "documentary",
+    "phonetic": "/ˌdɒkjuˈmentri/",
+    "pos": "n./adj.",
+    "meaning": "纪录片/文件的",
+    "example": "The documentary was informative.",
+    "exampleCn": "这部纪录片很有知识性。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 1033,
+    "word": "sketch",
+    "phonetic": "/sketʃ/",
+    "pos": "n./v.",
+    "meaning": "素描，草图/速写，概述",
+    "example": "She made a quick sketch of the landscape./He sketched out his plan on paper.",
+    "exampleCn": "她快速画了一幅风景素描。/他在纸上概述了自己的计划。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 1156,
+    "word": "profile",
+    "phonetic": "/ˈproʊfaɪl/",
+    "pos": "n./v.",
+    "meaning": "简介；侧面轮廓/描绘……的特征",
+    "example": "The magazine published a profile of the scientist.",
+    "exampleCn": "这本杂志刊登了这位科学家的简介。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 1170,
+    "word": "object",
+    "phonetic": "/ˈɑːbdʒɪkt/;/əbˈdʒekt/",
+    "pos": "n./v.",
+    "meaning": "物体；目标/反对",
+    "example": "Some students objected to the new rule.",
+    "exampleCn": "一些学生反对这项新规定。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 1174,
+    "word": "fiction",
+    "phonetic": "/ˈfɪkʃən/",
+    "pos": "n.",
+    "meaning": "小说；虚构",
+    "example": "She prefers historical fiction to science fiction.",
+    "exampleCn": "比起科幻小说，她更喜欢历史小说。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 1213,
+    "word": "series",
+    "phonetic": "/ˈsɪriːz/",
+    "pos": "n.",
+    "meaning": "系列；连续",
+    "example": "The professor gave a series of lectures on climate policy.",
+    "exampleCn": "教授做了一系列关于气候政策的讲座。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 1229,
+    "word": "context",
+    "phonetic": "/ˈkɑːntekst/",
+    "pos": "n.",
+    "meaning": "背景；语境",
+    "example": "The meaning of the term depends on its context.",
+    "exampleCn": "这个术语的含义取决于其语境。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 1232,
+    "word": "draft",
+    "phonetic": "/dræft/",
+    "pos": "n./v.",
+    "meaning": "草稿；草案/起草",
+    "example": "She wrote the first draft of the essay last night.",
+    "exampleCn": "她昨晚写了这篇文章的初稿。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 1240,
+    "word": "statistics",
+    "phonetic": "/stəˈtɪstɪks/",
+    "pos": "n.",
+    "meaning": "统计学；统计数据",
+    "example": "The statistics show a steady increase in exports.",
+    "exampleCn": "统计数据显示出口稳步增长。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 1355,
+    "word": "electronics",
+    "phonetic": "/ɪˌlekˈtrɑːnɪks/",
+    "pos": "n.",
+    "meaning": "电子学；电子设备",
+    "example": "He studies electronics at university.",
+    "exampleCn": "他在大学学习电子学。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 1756,
+    "word": "index",
+    "phonetic": "/ˈɪndeks/",
+    "pos": "n./v.",
+    "meaning": "索引/指数/编入索引",
+    "example": "The index helps readers find key terms quickly.",
+    "exampleCn": "索引帮助读者快速找到关键词。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 2328,
+    "word": "manual",
+    "phonetic": "/ˈmænjuəl/",
+    "pos": "n./adj.",
+    "meaning": "手册/手工的/体力的",
+    "example": "Read the manual before using the machine.",
+    "exampleCn": "使用机器前请阅读手册。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 2777,
+    "word": "inventory",
+    "phonetic": "/ˈɪnvəntɔːri/",
+    "pos": "n./v.",
+    "meaning": "库存/清单/盘点",
+    "example": "The store updates its inventory every week.",
+    "exampleCn": "这家商店每周更新库存。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3276,
+    "word": "biography",
+    "phonetic": "/baɪˈɑːɡrəfi/",
+    "pos": "n.",
+    "meaning": "传记",
+    "example": "She read a biography of a famous scientist.",
+    "exampleCn": "她读了一本著名科学家的传记。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3294,
+    "word": "encyclopedia",
+    "phonetic": "/ɪnˌsaɪkləˈpiːdiə/",
+    "pos": "n.",
+    "meaning": "百科全书",
+    "example": "Students used the encyclopedia to research ancient Egypt.",
+    "exampleCn": "学生们用百科全书研究古埃及。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3956,
+    "word": "author",
+    "phonetic": "ˈɔːθə",
+    "pos": "n.",
+    "meaning": "作者/作家",
+    "example": "The author signed copies of her new book.",
+    "exampleCn": "作者为她的新书签了名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3957,
+    "word": "story",
+    "phonetic": "ˈstɔːri",
+    "pos": "n.",
+    "meaning": "故事/情节",
+    "example": "The story captivated readers around the world.",
+    "exampleCn": "这个故事吸引了全世界的读者。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3958,
+    "word": "diary",
+    "phonetic": "ˈdaɪəri",
+    "pos": "n.",
+    "meaning": "日记",
+    "example": "She wrote about her travels in her diary every night.",
+    "exampleCn": "她每晚在日记中写下她的旅行经历。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3959,
+    "word": "poetry",
+    "phonetic": "ˈpəʊɪtri",
+    "pos": "n.",
+    "meaning": "诗歌/诗集",
+    "example": "He began writing poetry at the age of twelve.",
+    "exampleCn": "他十二岁开始写诗。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3960,
+    "word": "magazine",
+    "phonetic": "ˌmæɡəˈziːn",
+    "pos": "n.",
+    "meaning": "杂志",
+    "example": "The magazine is published every month.",
+    "exampleCn": "这本杂志每月出版。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3961,
+    "word": "journal",
+    "phonetic": "ˈdʒɜːnəl",
+    "pos": "n.",
+    "meaning": "期刊/日记",
+    "example": "The research was published in a leading scientific journal.",
+    "exampleCn": "这项研究发表在一本顶尖科学期刊上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3962,
+    "word": "coverage",
+    "phonetic": "ˈkʌvərɪdʒ",
+    "pos": "n.",
+    "meaning": "报道/覆盖范围",
+    "example": "The event received extensive media coverage.",
+    "exampleCn": "这一事件得到了媒体的广泛报道。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3963,
+    "word": "bibliography",
+    "phonetic": "ˌbɪbliˈɒɡrəfi",
+    "pos": "n.",
+    "meaning": "参考书目/书目",
+    "example": "The bibliography includes over two hundred sources.",
+    "exampleCn": "参考书目包括两百多个来源。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3964,
+    "word": "record",
+    "phonetic": "ˈrekɔːd",
+    "pos": "n.",
+    "meaning": "记录/唱片",
+    "example": "The athlete broke the world record.",
+    "exampleCn": "这位运动员打破了世界纪录。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3965,
+    "word": "file",
+    "phonetic": "faɪl",
+    "pos": "n.",
+    "meaning": "文件/档案",
+    "example": "He saved the document as a PDF file.",
+    "exampleCn": "他把文件保存为一个PDF文件。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3966,
+    "word": "frame",
+    "phonetic": "freɪm",
+    "pos": "n.",
+    "meaning": "框架/结构",
+    "example": "The picture was placed in a wooden frame.",
+    "exampleCn": "这幅画被放在一个木制画框里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3967,
+    "word": "catalogue",
+    "phonetic": "ˈkætəlɒɡ",
+    "pos": "n.",
+    "meaning": "目录/清单",
+    "example": "The library has an online catalogue of all its books.",
+    "exampleCn": "图书馆有一个所有图书的在线目录。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3968,
+    "word": "content",
+    "phonetic": "ˈkɒntent",
+    "pos": "n.",
+    "meaning": "内容/含量",
+    "example": "The content of the book is suitable for children.",
+    "exampleCn": "这本书的内容适合儿童阅读。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3969,
+    "word": "list",
+    "phonetic": "lɪst",
+    "pos": "n.",
+    "meaning": "列表/清单",
+    "example": "She made a list of all the things she needed to buy.",
+    "exampleCn": "她把需要买的所有东西列了一个清单。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3970,
+    "word": "volume",
+    "phonetic": "ˈvɒljuːm",
+    "pos": "n.",
+    "meaning": "卷/册",
+    "example": "The encyclopedia has twenty volumes.",
+    "exampleCn": "这套百科全书有二十卷。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3971,
+    "word": "reel",
+    "phonetic": "riːl",
+    "pos": "n.",
+    "meaning": "卷轴/一卷",
+    "example": "A reel of film was found in the attic.",
+    "exampleCn": "在阁楼里发现了一卷胶片。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3972,
+    "word": "subject",
+    "phonetic": "ˈsʌbdʒɪkt",
+    "pos": "n.",
+    "meaning": "学科/主题",
+    "example": "History is my favourite subject at school.",
+    "exampleCn": "历史是我在学校最喜欢的学科。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3973,
+    "word": "major",
+    "phonetic": "ˈmeɪdʒə",
+    "pos": "n/adj.",
+    "meaning": "专业/主要的",
+    "example": "She chose English as her major.",
+    "exampleCn": "她选英语作为专业。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3974,
+    "word": "sociology",
+    "phonetic": "ˌsəʊsiˈɒlədʒi",
+    "pos": "n.",
+    "meaning": "社会学",
+    "example": "She is studying sociology to understand human behaviour.",
+    "exampleCn": "她在学习社会学以理解人类行为。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3975,
+    "word": "politics",
+    "phonetic": "ˈpɒlɪtɪks",
+    "pos": "n.",
+    "meaning": "政治学/政治",
+    "example": "He has a degree in politics from a top university.",
+    "exampleCn": "他拥有一所顶尖大学的政治学学位。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3976,
+    "word": "economics",
+    "phonetic": "ˌiːkəˈnɒmɪks",
+    "pos": "n.",
+    "meaning": "经济学",
+    "example": "Economics helps us understand how markets work.",
+    "exampleCn": "经济学帮助我们理解市场如何运作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3977,
+    "word": "marketing",
+    "phonetic": "ˈmɑːkɪtɪŋ",
+    "pos": "n.",
+    "meaning": "市场营销",
+    "example": "She works in the marketing department of a large company.",
+    "exampleCn": "她在一家大公司的市场营销部工作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3978,
+    "word": "accounting",
+    "phonetic": "əˈkaʊntɪŋ",
+    "pos": "n.",
+    "meaning": "会计学/会计",
+    "example": "He studied accounting and now works for a bank.",
+    "exampleCn": "他学过会计学，现在在一家银行工作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3979,
+    "word": "audit",
+    "phonetic": "ˈɔːdɪt",
+    "pos": "n/v.",
+    "meaning": "审计/核查",
+    "example": "The company undergoes an annual audit.",
+    "exampleCn": "该公司每年进行一次审计。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3980,
+    "word": "psychology",
+    "phonetic": "saɪˈkɒlədʒi",
+    "pos": "n.",
+    "meaning": "心理学",
+    "example": "She is taking a course in child psychology.",
+    "exampleCn": "她在修儿童心理学课程。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3981,
+    "word": "philosophy",
+    "phonetic": "fɪˈlɒsəfi",
+    "pos": "n.",
+    "meaning": "哲学",
+    "example": "Philosophy asks fundamental questions about existence.",
+    "exampleCn": "哲学提出关于存在的根本性问题。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3982,
+    "word": "logic",
+    "phonetic": "ˈlɒdʒɪk",
+    "pos": "n.",
+    "meaning": "逻辑/逻辑学",
+    "example": "There is a clear logic behind his argument.",
+    "exampleCn": "他的论点背后有清晰的逻辑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3983,
+    "word": "physics",
+    "phonetic": "ˈfɪzɪks",
+    "pos": "n.",
+    "meaning": "物理学",
+    "example": "Physics explains the fundamental laws of the universe.",
+    "exampleCn": "物理学解释了宇宙的基本规律。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3984,
+    "word": "logistics",
+    "phonetic": "ləˈdʒɪstɪks",
+    "pos": "n.",
+    "meaning": "物流/后勤",
+    "example": "The company handles the logistics of delivering goods.",
+    "exampleCn": "该公司负责货物交付的物流。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3985,
+    "word": "geography",
+    "phonetic": "dʒiˈɒɡrəfi",
+    "pos": "n.",
+    "meaning": "地理学/地理",
+    "example": "Geography helps us understand different cultures.",
+    "exampleCn": "地理学帮助我们理解不同的文化。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3986,
+    "word": "history",
+    "phonetic": "ˈhɪstəri",
+    "pos": "n.",
+    "meaning": "历史/历史学",
+    "example": "Those who forget history are doomed to repeat it.",
+    "exampleCn": "忘记历史的人注定会重蹈覆辙。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3987,
+    "word": "engineering",
+    "phonetic": "ˌendʒɪˈnɪərɪŋ",
+    "pos": "n.",
+    "meaning": "工程学/工程",
+    "example": "She is studying civil engineering at university.",
+    "exampleCn": "她在大学学习土木工程。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3988,
+    "word": "mechanics",
+    "phonetic": "mɪˈkænɪks",
+    "pos": "n.",
+    "meaning": "力学/机械学",
+    "example": "Quantum mechanics explains the behaviour of tiny particles.",
+    "exampleCn": "量子力学解释了微小粒子的行为。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3989,
+    "word": "maths",
+    "phonetic": "mæθs",
+    "pos": "n.",
+    "meaning": "数学",
+    "example": "She has always been good at maths.",
+    "exampleCn": "她一直擅长数学。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  },
+  {
+    "id": 3990,
+    "word": "arithmetic",
+    "phonetic": "əˈrɪθmətɪk",
+    "pos": "n.",
+    "meaning": "算术",
+    "example": "Children learn basic arithmetic in primary school.",
+    "exampleCn": "孩子们在小学学习基本算术。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
+  }
+]

@@ -227,7 +227,7 @@ const splitInlineMeaning = (rawText) => {
 const normalizeEntryText = (value) =>
   normalizeText(value)
     .replace(/\*/g, '')
-    .replace(/\ba\s*dj\b/gi, 'adj')
+    .replace(/a\s*dj\b/gi, 'adj')
     .replace(/\bad\s*j\b/gi, 'adj')
     .replace(/\bn\s*\/\s*a\s*dj\b/gi, 'n/adj')
     .replace(/\bn\s*\/\s*v\b/gi, 'n/v')
@@ -237,13 +237,15 @@ const normalizeEntryText = (value) =>
     .replace(/\s+/g, ' ')
     .trim();
 
-const normalizeWord = (value) =>
-  normalizeSpacedWord(normalizeText(value)
+const normalizeWord = (value) => {
+  const word = normalizeSpacedWord(normalizeText(value)
     .replace(/\*/g, '')
     .replace(/[^A-Za-z -]/g, '')
     .replace(/\s*-\s*/g, '-')
     .trim())
     .toLowerCase();
+  return word.replace(/(?:adj|adv)$/i, '');
+};
 
 const normalizeSpacedWord = (value) => {
   const parts = value.split(/\s+/).filter(Boolean);
@@ -260,40 +262,123 @@ const normalizeSpacedWord = (value) => {
   return value;
 };
 
+const stripPhonetic = (text) => text.replace(/\[[^\]]*]/g, ' ');
+
+const parseInlineWord = (rawText) => {
+  const text = stripPhonetic(normalizeEntryText(rawText)).replace(/\s+/g, ' ').trim();
+  const spacedPosMatch = text.match(
+    /^([A-Za-z][A-Za-z\s-]*?)\s+((?:n|v|adj|adv|prep|conj|pron|num|interj|det)(?:\s*\/\s*(?:n|v|adj|adv|prep|conj|pron|num|interj|det))*\.?)(?=[\s/.\u3400-\u9fff]|$)/i
+  );
+
+  if (spacedPosMatch) {
+    return normalizeWord(spacedPosMatch[1]);
+  }
+
+  const gluedPosMatch = text.match(
+    /^([A-Za-z][A-Za-z\s-]*?)(n|v|adj|adv|prep|conj|pron|num|interj|det)(?:\s*\/\s*(?:n|v|adj|adv|prep|conj|pron|num|interj|det))*\.?(?=[\s/.\u3400-\u9fff]|$)/i
+  );
+
+  if (gluedPosMatch) {
+    return normalizeWord(gluedPosMatch[1]);
+  }
+
+  const wordMatch = text.match(/^[A-Za-z][A-Za-z -]*/);
+  return normalizeWord(wordMatch ? wordMatch[0] : text);
+};
+
+const findInlineEntries = (lineText) => {
+  const text = normalizeEntryText(lineText);
+  const starts = [];
+  const entryStartPattern = /(^|[^A-Za-z])([1-9]|[1-5]\d|60)\s+(?=[A-Za-z])/g;
+  let match;
+
+  while ((match = entryStartPattern.exec(text))) {
+    starts.push({
+      number: Number(match[2]),
+      start: match.index + match[1].length,
+      contentStart: match.index + match[0].length,
+    });
+  }
+
+  return starts
+    .map((entry, index) => {
+      const next = starts[index + 1];
+      const rawText = text.slice(entry.contentStart, next ? next.start : text.length).trim();
+      return {
+        number: entry.number,
+        rawText,
+        word: parseInlineWord(rawText),
+      };
+    })
+    .filter((entry) => entry.word);
+};
+
+const parsePageInlineRecords = (page) => {
+  const lines = page.lines || [];
+  const list = extractListNumber(lines, page.page);
+  const byNumber = new Map();
+
+  lines.forEach((line) => {
+    if (isMostlyHeader(normalizeText(line.text))) return;
+    findInlineEntries(line.text).forEach((entry) => {
+      if (!byNumber.has(entry.number)) {
+        byNumber.set(entry.number, {
+          word: entry.word,
+          list,
+        });
+      }
+    });
+  });
+
+  return [...byNumber.entries()]
+    .sort((a, b) => a[0] - b[0])
+    .map(([, record]) => record);
+};
+
+const parsePageColumnRecords = (page, warnings) => {
+  const records = [];
+  const lines = page.lines || [];
+  const list = extractListNumber(lines, page.page);
+
+  columns.forEach((column) => {
+    const rows = findNumberRows(lines, column);
+
+    rows.forEach((row, index) => {
+      const { lower, upper } = getVerticalBand(rows, index);
+      const rawWordText = collectBandText({
+        lines,
+        xRange: column.wordX,
+        lower,
+        upper,
+        number: row.number,
+      });
+      const { wordText } = splitInlineMeaning(rawWordText);
+      const { word } = parseWordAndPos(wordText);
+
+      if (!word) {
+        warnings.push(`page ${page.page} list ${list} item ${row.number}: missing word from "${rawWordText}"`);
+        return;
+      }
+
+      records.push({
+        word,
+        list,
+      });
+    });
+  });
+
+  return records;
+};
+
 const parsePages = (pages) => {
   const records = [];
   const warnings = [];
 
   pages.forEach((page) => {
-    const lines = page.lines || [];
-    const list = extractListNumber(lines, page.page);
-
-    columns.forEach((column) => {
-      const rows = findNumberRows(lines, column);
-
-      rows.forEach((row, index) => {
-        const { lower, upper } = getVerticalBand(rows, index);
-        const rawWordText = collectBandText({
-          lines,
-          xRange: column.wordX,
-          lower,
-          upper,
-          number: row.number,
-        });
-        const { wordText } = splitInlineMeaning(rawWordText);
-        const { word } = parseWordAndPos(wordText);
-
-        if (!word) {
-          warnings.push(`page ${page.page} list ${list} item ${row.number}: missing word from "${rawWordText}"`);
-          return;
-        }
-
-        records.push({
-          word,
-          list,
-        });
-      });
-    });
+    const inlineRecords = parsePageInlineRecords(page);
+    const columnRecords = parsePageColumnRecords(page, warnings);
+    const pageRecords = inlineRecords.length > columnRecords.length ? inlineRecords : columnRecords;
+    records.push(...pageRecords);
   });
 
   return { records, warnings };

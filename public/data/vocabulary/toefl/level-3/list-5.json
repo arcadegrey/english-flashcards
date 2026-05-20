@@ -232,10 +232,15 @@
     "exampleCn": "冰在阳光下开始融化。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
   },
   {
     "id": 864,
@@ -402,10 +407,15 @@
     "exampleCn": "科学家并不总能准确预测地震。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 875,
@@ -1486,10 +1496,15 @@
     "exampleCn": "院长向新生发表了讲话。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
   },
   {
     "id": 946,

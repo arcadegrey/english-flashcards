@@ -645,10 +645,15 @@
     "exampleCn": "那扇旧门在雨中开始生锈。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
   },
   {
     "id": 2568,
@@ -1085,10 +1090,15 @@
     "exampleCn": "新法律推动了经济改革。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
   },
   {
     "id": 2596,

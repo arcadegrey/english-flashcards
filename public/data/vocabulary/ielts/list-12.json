@@ -1,0 +1,1086 @@
+[
+  {
+    "id": 58,
+    "word": "accommodation",
+    "phonetic": "/əˌkɑːməˈdeɪʃn/",
+    "pos": "n.",
+    "meaning": "住宿，膳宿",
+    "example": "Hotel accommodation is included in the price.",
+    "exampleCn": "酒店住宿包含在价格中。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 125,
+    "word": "ambassador",
+    "phonetic": "/æmˈbæsədər/",
+    "pos": "n.",
+    "meaning": "大使/代表",
+    "example": "The ambassador met with officials to discuss trade.",
+    "exampleCn": "大使会见官员讨论贸易问题。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 163,
+    "word": "approach",
+    "phonetic": "/əˈproʊtʃ/",
+    "pos": "n./v.",
+    "meaning": "方法/接近/处理",
+    "example": "Researchers used a new approach to solve the problem.",
+    "exampleCn": "研究人员使用了一种新方法来解决这个问题。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 313,
+    "word": "brilliant",
+    "phonetic": "/ˈbrɪliənt/",
+    "pos": "adj.",
+    "meaning": "杰出的；辉煌的",
+    "example": "She gave a brilliant performance.",
+    "exampleCn": "她的表演非常出色。",
+    "category": "cet6",
+    "categories": [
+      "cet6",
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 361,
+    "word": "campus",
+    "phonetic": "/ˈkæmpəs/",
+    "pos": "n.",
+    "meaning": "校园",
+    "example": "The university has a beautiful campus.",
+    "exampleCn": "这所大学有一个美丽的校园。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 364,
+    "word": "candidate",
+    "phonetic": "/ˈkændɪdət/",
+    "pos": "n.",
+    "meaning": "候选人；应试者",
+    "example": "There are three candidates for the position.",
+    "exampleCn": "这个职位有三位候选人。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 404,
+    "word": "ceremony",
+    "phonetic": "/ˈserəməni/",
+    "pos": "n.",
+    "meaning": "典礼；仪式",
+    "example": "The wedding ceremony was beautiful.",
+    "exampleCn": "婚礼很漂亮。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 715,
+    "word": "qualify",
+    "phonetic": "/ˈkwɒlɪfaɪ/",
+    "pos": "v.",
+    "meaning": "使合格；取得资格",
+    "example": "You need to qualify for the job.",
+    "exampleCn": "你需要取得这份工作资格。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 723,
+    "word": "scheme",
+    "phonetic": "/skiːm/",
+    "pos": "n./v.",
+    "meaning": "计划；方案；策划",
+    "example": "What's your scheme?",
+    "exampleCn": "你的计划是什么？",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 774,
+    "word": "quantity",
+    "phonetic": "/ˈkwɒntəti/",
+    "pos": "n.",
+    "meaning": "数量；量",
+    "example": "We need a large quantity.",
+    "exampleCn": "我们需要大量。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 791,
+    "word": "platform",
+    "phonetic": "/ˈplætfɔːm/",
+    "pos": "n.",
+    "meaning": "平台；站台；讲台",
+    "example": "The train arrived at the platform.",
+    "exampleCn": "火车到达站台。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 856,
+    "word": "scholar",
+    "phonetic": "/ˈskɒlə(r)/",
+    "pos": "n.",
+    "meaning": "学者；奖学金获得者",
+    "example": "The scholar published a paper.",
+    "exampleCn": "学者发表了一篇论文。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 945,
+    "word": "dean",
+    "phonetic": "/diːn/",
+    "pos": "n.",
+    "meaning": "院长；系主任",
+    "example": "The dean gave a speech to new students.",
+    "exampleCn": "院长向新生发表了讲话。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 953,
+    "word": "faculty",
+    "phonetic": "/ˈfæklti/",
+    "pos": "n.",
+    "meaning": "学院全体教师/能力，官能",
+    "example": "The faculty welcomed the new students./Humans have the faculty of reason.",
+    "exampleCn": "全体教师欢迎新生。/人类具有理性思考的能力。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 1113,
+    "word": "laboratory",
+    "phonetic": "/ˈlæbrətɔːri/",
+    "pos": "n.",
+    "meaning": "实验室",
+    "example": "The samples were tested in the laboratory.",
+    "exampleCn": "样本是在实验室里检测的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 1126,
+    "word": "certify",
+    "phonetic": "/ˈsɜːrtɪfaɪ/",
+    "pos": "v.",
+    "meaning": "证明，认证",
+    "example": "The document was certified by a lawyer.",
+    "exampleCn": "这份文件经律师认证。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 1358,
+    "word": "outstanding",
+    "phonetic": "/aʊtˈstændɪŋ/",
+    "pos": "adj.",
+    "meaning": "杰出的；未解决的",
+    "example": "She received an award for her outstanding performance.",
+    "exampleCn": "她因杰出的表现获奖。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 1885,
+    "word": "register",
+    "phonetic": "/ˈredʒɪstər/",
+    "pos": "v./n.",
+    "meaning": "登记/注册/显示/登记簿/收银机",
+    "example": "Students must register for the course before Friday.",
+    "exampleCn": "学生必须在星期五之前注册这门课程。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 1960,
+    "word": "principal",
+    "phonetic": "/ˈprɪnsəpl/",
+    "pos": "n./adj.",
+    "meaning": "校长/负责人/本金/主要的",
+    "example": "The principal reason for the delay was bad weather.",
+    "exampleCn": "延误的主要原因是恶劣天气。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 1963,
+    "word": "diplomat",
+    "phonetic": "/ˈdɪpləmæt/",
+    "pos": "n.",
+    "meaning": "外交官",
+    "example": "The diplomat helped negotiate a peaceful agreement.",
+    "exampleCn": "这位外交官帮助谈判达成和平协议。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 2419,
+    "word": "license",
+    "phonetic": "/ˈlaɪsəns/",
+    "pos": "n./v.",
+    "meaning": "执照/许可证/授权",
+    "example": "You need a license to drive a car.",
+    "exampleCn": "开车需要驾照。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3134,
+    "word": "prestige",
+    "phonetic": "/preˈstiːʒ/",
+    "pos": "n.",
+    "meaning": "声望/威望",
+    "example": "The university gained prestige through its research achievements.",
+    "exampleCn": "这所大学因研究成果而获得声望。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3918,
+    "word": "excellent",
+    "phonetic": "ˈeksələnt",
+    "pos": "adj.",
+    "meaning": "优秀的/卓越的",
+    "example": "The student produced an excellent piece of work.",
+    "exampleCn": "这个学生做了一件出色的作品。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3919,
+    "word": "reputation",
+    "phonetic": "ˌrepjuˈteɪʃn",
+    "pos": "n.",
+    "meaning": "声誉/名誉",
+    "example": "The school has an excellent reputation for science teaching.",
+    "exampleCn": "这所学校在理科教学方面享有极好的声誉。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3920,
+    "word": "eminent",
+    "phonetic": "ˈemɪnənt",
+    "pos": "adj.",
+    "meaning": "著名的/杰出的",
+    "example": "He is an eminent professor in the field of medicine.",
+    "exampleCn": "他是医学领域一位著名的教授。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3921,
+    "word": "notorious",
+    "phonetic": "nəʊˈtɔːriəs",
+    "pos": "adj.",
+    "meaning": "臭名昭著的/声名狼藉的",
+    "example": "The city is notorious for its heavy traffic.",
+    "exampleCn": "这个城市以其严重的交通拥堵而臭名昭著。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3922,
+    "word": "esteem",
+    "phonetic": "ɪˈstiːm",
+    "pos": "n.",
+    "meaning": "尊重/尊敬",
+    "example": "She is held in high esteem by her colleagues.",
+    "exampleCn": "她受到同事们的高度尊重。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3923,
+    "word": "respect",
+    "phonetic": "rɪˈspekt",
+    "pos": "n.",
+    "meaning": "尊敬/尊重",
+    "example": "We should show respect for different cultures.",
+    "exampleCn": "我们应当尊重不同的文化。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3924,
+    "word": "diligent",
+    "phonetic": "ˈdɪlɪdʒənt",
+    "pos": "adj.",
+    "meaning": "勤奋的/勤勉的",
+    "example": "Diligent students tend to achieve better results.",
+    "exampleCn": "勤奋的学生往往能取得更好的成绩。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3925,
+    "word": "painstaking",
+    "phonetic": "ˈpeɪnzteɪkɪŋ",
+    "pos": "adj.",
+    "meaning": "艰苦的/精心的",
+    "example": "The research involved years of painstaking work.",
+    "exampleCn": "这项研究涉及多年艰苦的工作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3926,
+    "word": "skill",
+    "phonetic": "skɪl",
+    "pos": "n.",
+    "meaning": "技能/技巧",
+    "example": "Good communication is an essential skill in business.",
+    "exampleCn": "良好的沟通是商业中的一项基本技能。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3927,
+    "word": "headmaster",
+    "phonetic": "ˈhedˌmɑːstə",
+    "pos": "n.",
+    "meaning": "校长",
+    "example": "The headmaster addressed the students at the assembly.",
+    "exampleCn": "校长在集会上向学生们发表了讲话。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3928,
+    "word": "professor",
+    "phonetic": "prəˈfesə",
+    "pos": "n.",
+    "meaning": "教授",
+    "example": "The professor gave an inspiring lecture on literature.",
+    "exampleCn": "教授作了一场关于文学的鼓舞人心的讲座。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3929,
+    "word": "mentor",
+    "phonetic": "ˈmentɔː",
+    "pos": "n.",
+    "meaning": "导师/指导者",
+    "example": "A good mentor can guide you through your career.",
+    "exampleCn": "一位好导师可以指导你度过职业生涯。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3930,
+    "word": "tutor",
+    "phonetic": "ˈtjuːtə",
+    "pos": "n.",
+    "meaning": "家庭教师/导师",
+    "example": "She works as a private tutor teaching English.",
+    "exampleCn": "她担任私人英语家教。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3931,
+    "word": "lecturer",
+    "phonetic": "ˈlektʃərə",
+    "pos": "n.",
+    "meaning": "讲师",
+    "example": "The lecturer explained the theory with clear examples.",
+    "exampleCn": "讲师用清晰的例子解释了理论。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3932,
+    "word": "assistant",
+    "phonetic": "əˈsɪstənt",
+    "pos": "n.",
+    "meaning": "助手/助理",
+    "example": "She works as a teaching assistant at the university.",
+    "exampleCn": "她在大学担任助教。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3933,
+    "word": "degree",
+    "phonetic": "dɪˈɡriː",
+    "pos": "n.",
+    "meaning": "学位/程度",
+    "example": "She holds a master's degree in economics.",
+    "exampleCn": "她拥有经济学硕士学位。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3934,
+    "word": "permit",
+    "phonetic": "ˈpɜːmɪt",
+    "pos": "n/v.",
+    "meaning": "许可证/允许",
+    "example": "You cannot enter the building without a permit.",
+    "exampleCn": "没有许可证你不能进入大楼。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3935,
+    "word": "diploma",
+    "phonetic": "dɪˈpləʊmə",
+    "pos": "n.",
+    "meaning": "文凭/毕业证书",
+    "example": "She received her diploma at the graduation ceremony.",
+    "exampleCn": "她在毕业典礼上拿到了毕业证书。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3936,
+    "word": "pupil",
+    "phonetic": "ˈpjuːpl",
+    "pos": "n.",
+    "meaning": "学生/小学生",
+    "example": "The school has over 1,000 pupils.",
+    "exampleCn": "这所学校有1000多名学生。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3937,
+    "word": "graduate",
+    "phonetic": "ˈɡrædʒuət",
+    "pos": "n/v.",
+    "meaning": "毕业生/毕业",
+    "example": "She graduated with honours from Cambridge.",
+    "exampleCn": "她以优异成绩从剑桥大学毕业。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3938,
+    "word": "bachelor",
+    "phonetic": "ˈbætʃələ",
+    "pos": "n.",
+    "meaning": "学士/单身汉",
+    "example": "He earned a Bachelor of Science degree.",
+    "exampleCn": "他获得了理学士学位。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3939,
+    "word": "master",
+    "phonetic": "ˈmɑːstə",
+    "pos": "n.",
+    "meaning": "硕士/大师",
+    "example": "She is doing a Master of Arts in literature.",
+    "exampleCn": "她正在攻读文学硕士学位。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3940,
+    "word": "fresher",
+    "phonetic": "ˈfreʃə",
+    "pos": "n.",
+    "meaning": "大学新生",
+    "example": "The freshers' week is full of activities and events.",
+    "exampleCn": "迎新周充满了各种活动和事件。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3941,
+    "word": "sophomore",
+    "phonetic": "ˈsɒfəmɔː",
+    "pos": "n.",
+    "meaning": "二年级学生",
+    "example": "As a sophomore, she felt more confident on campus.",
+    "exampleCn": "作为大二学生，她在校园里感到更加自信了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3942,
+    "word": "junior",
+    "phonetic": "ˈdʒuːniə",
+    "pos": "n/adj.",
+    "meaning": "三年级学生/较小的",
+    "example": "Junior students are required to complete an internship.",
+    "exampleCn": "大三学生被要求完成一次实习。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3943,
+    "word": "senior",
+    "phonetic": "ˈsiːniə",
+    "pos": "n/adj.",
+    "meaning": "四年级学生/高级的",
+    "example": "The senior class organised a farewell party.",
+    "exampleCn": "大四班级组织了一场告别晚会。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3944,
+    "word": "alumni",
+    "phonetic": "əˈlʌmnaɪ",
+    "pos": "n.",
+    "meaning": "校友/毕业生",
+    "example": "The university has a strong alumni network.",
+    "exampleCn": "这所大学有一个强大的校友网络。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3945,
+    "word": "orientation",
+    "phonetic": "ˌɔːriənˈteɪʃn",
+    "pos": "n.",
+    "meaning": "迎新活动/方向",
+    "example": "New students attend an orientation programme before classes begin.",
+    "exampleCn": "新生在开课前参加迎新活动。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3946,
+    "word": "coed",
+    "phonetic": "kəʊˈed",
+    "pos": "adj.",
+    "meaning": "男女同校的",
+    "example": "The school became coed in the 1970s.",
+    "exampleCn": "这所学校在20世纪70年代改为男女同校。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3947,
+    "word": "enrol",
+    "phonetic": "ɪnˈrəʊl",
+    "pos": "v.",
+    "meaning": "注册/入学",
+    "example": "She enrolled in a language course at the community centre.",
+    "exampleCn": "她在社区中心报了一门语言课程。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3948,
+    "word": "matriculation",
+    "phonetic": "məˌtrɪkjuˈleɪʃn",
+    "pos": "n.",
+    "meaning": "大学入学/注册",
+    "example": "Matriculation takes place at the beginning of the academic year.",
+    "exampleCn": "大学入学注册在学年开始时进行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3949,
+    "word": "dorm",
+    "phonetic": "dɔːm",
+    "pos": "n.",
+    "meaning": "宿舍",
+    "example": "She lives in a dorm on campus.",
+    "exampleCn": "她住在校园宿舍里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3950,
+    "word": "dining hall",
+    "phonetic": "ˈdaɪnɪŋ hɔːl",
+    "pos": "n.",
+    "meaning": "食堂/餐厅",
+    "example": "Students gather at the dining hall for meals.",
+    "exampleCn": "学生们聚集在食堂用餐。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3951,
+    "word": "canteen",
+    "phonetic": "kænˈtiːn",
+    "pos": "n.",
+    "meaning": "食堂/餐厅",
+    "example": "The school canteen serves healthy meals.",
+    "exampleCn": "学校食堂提供健康的膳食。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3952,
+    "word": "experiment",
+    "phonetic": "ɪkˈsperɪmənt",
+    "pos": "n.",
+    "meaning": "实验/试验",
+    "example": "The experiment proved the hypothesis correct.",
+    "exampleCn": "实验证明了该假设是正确的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3953,
+    "word": "data",
+    "phonetic": "ˈdeɪtə",
+    "pos": "n.",
+    "meaning": "数据/资料",
+    "example": "The data was collected over a period of five years.",
+    "exampleCn": "这些数据是在五年期间收集的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3954,
+    "word": "quality",
+    "phonetic": "ˈkwɒləti",
+    "pos": "n.",
+    "meaning": "质量/品质",
+    "example": "The quality of education at this school is excellent.",
+    "exampleCn": "这所学校的教育质量非常好。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  },
+  {
+    "id": 3955,
+    "word": "library",
+    "phonetic": "ˈlaɪbrəri",
+    "pos": "n.",
+    "meaning": "图书馆",
+    "example": "She spends most evenings studying in the library.",
+    "exampleCn": "她大多数晚上都在图书馆学习。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12"
+    ]
+  }
+]

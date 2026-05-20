@@ -408,10 +408,15 @@
     "exampleCn": "科学家推测这块化石已有数百万年历史。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 3229,
@@ -1130,10 +1135,15 @@
     "exampleCn": "她读了一本著名科学家的传记。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
   },
   {
     "id": 3277,
@@ -1370,10 +1380,15 @@
     "exampleCn": "每种方法都有固有的优点和缺点。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
   },
   {
     "id": 3293,
@@ -1400,10 +1415,15 @@
     "exampleCn": "学生们用百科全书研究古埃及。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
   },
   {
     "id": 3295,
@@ -1450,7 +1470,11 @@
     ],
     "level": "5",
     "list": "9",
-    "ieltsList": "2"
+    "ieltsList": "2",
+    "ieltsLists": [
+      "2",
+      "15"
+    ]
   },
   {
     "id": 3298,
@@ -1477,10 +1501,15 @@
     "exampleCn": "根据证据，科学家推断气候已经发生变化。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 3300,

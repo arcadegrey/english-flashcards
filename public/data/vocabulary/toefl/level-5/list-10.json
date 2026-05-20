@@ -24,10 +24,15 @@
     "exampleCn": "酵母帮助面团发酵并膨胀。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
   },
   {
     "id": 3303,

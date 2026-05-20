@@ -108,10 +108,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
   },
   {
     "id": 411,
@@ -201,10 +206,15 @@
     "exampleCn": "工厂可能排放影响空气质量的气体。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
   },
   {
     "id": 1721,
@@ -458,10 +468,15 @@
     "exampleCn": "这项发明对交流产生了深远影响。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
   },
   {
     "id": 1738,
@@ -633,10 +648,15 @@
     "exampleCn": "选择性育种改变了许多作物的大小。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
   },
   {
     "id": 1749,
@@ -755,10 +775,15 @@
     "exampleCn": "索引帮助读者快速找到关键词。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
   },
   {
     "id": 1757,
@@ -785,10 +810,15 @@
     "exampleCn": "洪水迫使数千人离开家园。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
   },
   {
     "id": 1759,
@@ -815,10 +845,15 @@
     "exampleCn": "温度是实验中的一个重要参数。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
   },
   {
     "id": 1761,
@@ -1362,10 +1397,15 @@
     "exampleCn": "人们在不同光线下对颜色的感知不同。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 1797,

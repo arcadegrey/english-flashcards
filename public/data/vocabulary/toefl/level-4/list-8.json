@@ -649,10 +649,15 @@
     "exampleCn": "气候会决定一个地区种植的作物种类。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 2121,
@@ -893,10 +898,15 @@
     "exampleCn": "光能促进植物生长。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
   },
   {
     "id": 2137,
@@ -1260,10 +1270,15 @@
     "exampleCn": "盐会溶解在温水中。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
   },
   {
     "id": 2161,

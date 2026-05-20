@@ -1,0 +1,1140 @@
+[
+  {
+    "id": 66,
+    "word": "acid",
+    "phonetic": "/ˈæsɪd/",
+    "pos": "n./adj.",
+    "meaning": "酸/酸性的",
+    "example": "The scientist tested the strength of the acid in the lab.",
+    "exampleCn": "科学家在实验室测试了这种酸的强度。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 260,
+    "word": "blend",
+    "phonetic": "/blend/",
+    "pos": "v./n.",
+    "meaning": "混合；融合",
+    "example": "Blend the ingredients together.",
+    "exampleCn": "把原料混合在一起。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 273,
+    "word": "boil",
+    "phonetic": "/bɔɪl/",
+    "pos": "v.",
+    "meaning": "煮沸，沸腾",
+    "example": "Boil the water before drinking.",
+    "exampleCn": "饮用前把水煮沸。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 506,
+    "word": "principle",
+    "phonetic": "/ˈprɪnsəpl/",
+    "pos": "n.",
+    "meaning": "原则；原理",
+    "example": "He always sticks to his principles.",
+    "exampleCn": "他总是坚持自己的原则。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 538,
+    "word": "assignment",
+    "phonetic": "/əˈsaɪnmənt/",
+    "pos": "n.",
+    "meaning": "任务；作业；分配",
+    "example": "The teacher gave us a writing assignment.",
+    "exampleCn": "老师给我们布置了写作作业。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 577,
+    "word": "review",
+    "phonetic": "/rɪˈvjuː/",
+    "pos": "v./n.",
+    "meaning": "复习；回顾；审查",
+    "example": "Let's review what we learned today.",
+    "exampleCn": "让我们复习一下今天学的内容。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 585,
+    "word": "term",
+    "phonetic": "/tɜːm/",
+    "pos": "n.",
+    "meaning": "术语；学期；期限；条款",
+    "example": "The medical term was difficult to understand.",
+    "exampleCn": "这个医学术语很难理解。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 653,
+    "word": "revise",
+    "phonetic": "/rɪˈvaɪz/",
+    "pos": "v.",
+    "meaning": "修订；修改；复习",
+    "example": "You need to revise your essay.",
+    "exampleCn": "你需要修改你的文章。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 671,
+    "word": "formula",
+    "phonetic": "/ˈfɔːmjələ/",
+    "pos": "n.",
+    "meaning": "公式；配方；方案",
+    "example": "What's the formula for success?",
+    "exampleCn": "成功的公式是什么？",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 758,
+    "word": "forum",
+    "phonetic": "/ˈfɔːrəm/",
+    "pos": "n.",
+    "meaning": "论坛；讨论会",
+    "example": "The forum discussed the issue.",
+    "exampleCn": "论坛讨论了这个问题。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 762,
+    "word": "fundamental",
+    "phonetic": "/ˌfʌndəˈmentl/",
+    "pos": "adj.",
+    "meaning": "基本的；根本的",
+    "example": "This is a fundamental principle.",
+    "exampleCn": "这是个基本原则。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 792,
+    "word": "submit",
+    "phonetic": "/səbˈmɪt/",
+    "pos": "v.",
+    "meaning": "提交；呈送；屈服",
+    "example": "Submit your homework on time.",
+    "exampleCn": "按时交作业。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 808,
+    "word": "mixture",
+    "phonetic": "/ˈmɪkstʃə(r)/",
+    "pos": "n.",
+    "meaning": "混合物；混合",
+    "example": "The cake is a mixture of flour and eggs.",
+    "exampleCn": "蛋糕是面粉和鸡蛋的混合物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 842,
+    "word": "gravity",
+    "phonetic": "/ˈɡrævəti/",
+    "pos": "n.",
+    "meaning": "重力；引力；严重性",
+    "example": "Gravity pulls objects down.",
+    "exampleCn": "重力把物体向下拉。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 863,
+    "word": "melt",
+    "phonetic": "/melt/",
+    "pos": "v.",
+    "meaning": "融化，熔化",
+    "example": "The ice began to melt in the sun.",
+    "exampleCn": "冰在阳光下开始融化。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 1014,
+    "word": "schedule",
+    "phonetic": "/ˈskedʒuːl/",
+    "pos": "n./v.",
+    "meaning": "时间表，日程/安排，预定",
+    "example": "The project is running behind schedule./The meeting is scheduled for Friday.",
+    "exampleCn": "这个项目进度落后于计划。/会议定在周五举行。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 1016,
+    "word": "radiate",
+    "phonetic": "/ˈreɪdieɪt/",
+    "pos": "v.",
+    "meaning": "发出，辐射/流露",
+    "example": "The sun radiates heat and light./She radiated confidence during the interview.",
+    "exampleCn": "太阳发出热和光。/她在面试中流露出自信。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 1080,
+    "word": "discipline",
+    "phonetic": "/ˈdɪsəplɪn/",
+    "pos": "n./v.",
+    "meaning": "纪律/训练，约束",
+    "example": "Good discipline is important in school./Parents should not discipline children too harshly.",
+    "exampleCn": "良好的纪律在学校里很重要。/父母不应该过于严厉地管教孩子。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 1081,
+    "word": "curriculum",
+    "phonetic": "/kəˈrɪkjələm/",
+    "pos": "n.",
+    "meaning": "课程设置，课程体系",
+    "example": "The school revised its science curriculum.",
+    "exampleCn": "学校修订了它的科学课程体系。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 1360,
+    "word": "practical",
+    "phonetic": "/ˈpræktɪkəl/",
+    "pos": "adj.",
+    "meaning": "实际的；实用的",
+    "example": "We need a practical solution to this problem.",
+    "exampleCn": "我们需要一个实际可行的解决方案。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 1383,
+    "word": "theory",
+    "phonetic": "/ˈθiːəri/",
+    "pos": "n.",
+    "meaning": "理论；学说",
+    "example": "The theory has not yet been fully tested.",
+    "exampleCn": "这个理论尚未得到充分验证。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 1451,
+    "word": "friction",
+    "phonetic": "/ˈfrɪkʃən/",
+    "pos": "n.",
+    "meaning": "摩擦/冲突",
+    "example": "Friction slows the movement of the object across the surface.",
+    "exampleCn": "摩擦力减慢了物体在表面上的运动。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 1461,
+    "word": "compose",
+    "phonetic": "/kəmˈpoʊz/",
+    "pos": "v.",
+    "meaning": "组成/创作/使平静",
+    "example": "Several minerals compose the outer layer of the rock.",
+    "exampleCn": "几种矿物组成了岩石的外层。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 1617,
+    "word": "component",
+    "phonetic": "/kəmˈpoʊnənt/",
+    "pos": "n./adj.",
+    "meaning": "组成部分/成分/组成的",
+    "example": "Carbon is a key component of many organic compounds.",
+    "exampleCn": "碳是许多有机化合物的重要组成部分。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 1720,
+    "word": "emit",
+    "phonetic": "/ɪˈmɪt/",
+    "pos": "v.",
+    "meaning": "发出/排放",
+    "example": "Factories may emit gases that affect air quality.",
+    "exampleCn": "工厂可能排放影响空气质量的气体。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 1737,
+    "word": "profound",
+    "phonetic": "/prəˈfaʊnd/",
+    "pos": "adj.",
+    "meaning": "深刻的/巨大的",
+    "example": "The invention had a profound effect on communication.",
+    "exampleCn": "这项发明对交流产生了深远影响。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 1748,
+    "word": "selective",
+    "phonetic": "/sɪˈlektɪv/",
+    "pos": "adj.",
+    "meaning": "选择性的",
+    "example": "Selective breeding changed the size of many crops.",
+    "exampleCn": "选择性育种改变了许多作物的大小。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 1758,
+    "word": "displace",
+    "phonetic": "/dɪsˈpleɪs/",
+    "pos": "v.",
+    "meaning": "取代/迫使离开",
+    "example": "The flood displaced thousands of people.",
+    "exampleCn": "洪水迫使数千人离开家园。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 1940,
+    "word": "static",
+    "phonetic": "/ˈstætɪk/",
+    "pos": "adj./n.",
+    "meaning": "静态的/不变的/静电干扰",
+    "example": "The population remained static for several years.",
+    "exampleCn": "人口数量多年保持不变。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 2051,
+    "word": "elementary",
+    "phonetic": "/ˌelɪˈmentəri/",
+    "pos": "adj.",
+    "meaning": "基本的/初级的/小学的",
+    "example": "The article explains the elementary principles of chemistry.",
+    "exampleCn": "这篇文章解释了化学的基本原理。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 2160,
+    "word": "dissolve",
+    "phonetic": "/dɪˈzɑːlv/",
+    "pos": "v.",
+    "meaning": "溶解/消失/解散",
+    "example": "Salt will dissolve in warm water.",
+    "exampleCn": "盐会溶解在温水中。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 2219,
+    "word": "hollow",
+    "phonetic": "/ˈhɑːloʊ/",
+    "pos": "adj./n./v.",
+    "meaning": "空的/中空处/挖空",
+    "example": "The tree trunk was hollow inside.",
+    "exampleCn": "这棵树的树干内部是空的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 2567,
+    "word": "rust",
+    "phonetic": "/rʌst/",
+    "pos": "n./v.",
+    "meaning": "铁锈/生锈",
+    "example": "The old gate began to rust in the rain.",
+    "exampleCn": "那扇旧门在雨中开始生锈。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 2869,
+    "word": "rudimentary",
+    "phonetic": "/ˌruːdɪˈmentəri/",
+    "pos": "adj.",
+    "meaning": "基本的/初步的/未发展的",
+    "example": "The students learned rudimentary programming skills.",
+    "exampleCn": "学生们学习了基本的编程技能。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 2962,
+    "word": "compulsory",
+    "phonetic": "/kəmˈpʌlsəri/",
+    "pos": "adj.",
+    "meaning": "强制的/义务的/必修的",
+    "example": "Attendance at the meeting is compulsory.",
+    "exampleCn": "参加这次会议是强制性的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 3189,
+    "word": "empirical",
+    "phonetic": "/ɪmˈpɪrɪkl/",
+    "pos": "adj.",
+    "meaning": "经验的/实证的",
+    "example": "Empirical evidence is based on observation and experiment.",
+    "exampleCn": "实证证据基于观察和实验。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 3292,
+    "word": "inherent",
+    "phonetic": "/ɪnˈhɪrənt/",
+    "pos": "adj.",
+    "meaning": "固有的/内在的",
+    "example": "Every method has inherent strengths and weaknesses.",
+    "exampleCn": "每种方法都有固有的优点和缺点。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 3297,
+    "word": "superficial",
+    "phonetic": "/ˌsuːpərˈfɪʃl/",
+    "pos": "adj.",
+    "meaning": "表面的/肤浅的/浅层的",
+    "example": "The report gave only a superficial explanation of the problem.",
+    "exampleCn": "这份报告只对问题作了肤浅的解释。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "2",
+    "ieltsLists": [
+      "2",
+      "15"
+    ]
+  },
+  {
+    "id": 3302,
+    "word": "ferment",
+    "phonetic": "/fərˈment/",
+    "pos": "v./n.",
+    "meaning": "发酵/激起/骚动",
+    "example": "Yeast helps the dough ferment and rise.",
+    "exampleCn": "酵母帮助面团发酵并膨胀。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "10",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4023,
+    "word": "transparent",
+    "phonetic": "trænsˈpærənt",
+    "pos": "adj.",
+    "meaning": "透明的/透明的",
+    "example": "The glass is completely transparent.",
+    "exampleCn": "这块玻璃是完全透明的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4024,
+    "word": "ozone",
+    "phonetic": "ˈəʊzəʊn",
+    "pos": "n.",
+    "meaning": "臭氧",
+    "example": "The ozone layer protects the Earth from ultraviolet rays.",
+    "exampleCn": "臭氧层保护地球免受紫外线的伤害。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4025,
+    "word": "eccentric",
+    "phonetic": "ɪkˈsentrɪk",
+    "pos": "adj.",
+    "meaning": "偏心的/古怪的",
+    "example": "The scientist was known for her eccentric behaviour.",
+    "exampleCn": "这位科学家以其古怪的行为而闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4026,
+    "word": "dilute",
+    "phonetic": "daɪˈluːt",
+    "pos": "v.",
+    "meaning": "稀释/冲淡",
+    "example": "You should dilute the juice with water before drinking.",
+    "exampleCn": "喝之前你应该用水稀释果汁。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4027,
+    "word": "noxious",
+    "phonetic": "ˈnɒkʃəs",
+    "pos": "adj.",
+    "meaning": "有毒的/有害的",
+    "example": "Noxious fumes from the factory polluted the air.",
+    "exampleCn": "工厂的有毒废气污染了空气。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4028,
+    "word": "inert",
+    "phonetic": "ɪˈnɜːt",
+    "pos": "adj.",
+    "meaning": "惰性的/不活跃的",
+    "example": "Helium is an inert gas.",
+    "exampleCn": "氦是一种惰性气体。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4029,
+    "word": "doctrine",
+    "phonetic": "ˈdɒktrɪn",
+    "pos": "n.",
+    "meaning": "学说/教义",
+    "example": "The doctrine was widely accepted in the nineteenth century.",
+    "exampleCn": "这一学说在十九世纪被广泛接受。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4030,
+    "word": "semester",
+    "phonetic": "sɪˈmestə",
+    "pos": "n.",
+    "meaning": "学期",
+    "example": "She studied abroad for one semester.",
+    "exampleCn": "她出国学习了一个学期。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4031,
+    "word": "timetable",
+    "phonetic": "ˈtaɪmˌteɪbl",
+    "pos": "n.",
+    "meaning": "课程表/时间表",
+    "example": "The exam timetable has been published online.",
+    "exampleCn": "考试时间表已在网上公布。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4032,
+    "word": "deadline",
+    "phonetic": "ˈdedlaɪn",
+    "pos": "n.",
+    "meaning": "截止日期",
+    "example": "The deadline for the assignment is next Friday.",
+    "exampleCn": "作业的截止日期是下周五。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4033,
+    "word": "course",
+    "phonetic": "kɔːs",
+    "pos": "n.",
+    "meaning": "课程/进程",
+    "example": "She is taking a course in creative writing.",
+    "exampleCn": "她正在修一门创意写作课程。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4034,
+    "word": "lesson",
+    "phonetic": "ˈlesn",
+    "pos": "n.",
+    "meaning": "课/教训",
+    "example": "The lesson lasted for an hour.",
+    "exampleCn": "这节课持续了一个小时。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4035,
+    "word": "seminar",
+    "phonetic": "ˈsemɪnɑː",
+    "pos": "n.",
+    "meaning": "研讨会/讨论课",
+    "example": "Students present their research at weekly seminars.",
+    "exampleCn": "学生在每周的研讨会上展示他们的研究。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4036,
+    "word": "syllabus",
+    "phonetic": "ˈsɪləbəs",
+    "pos": "n.",
+    "meaning": "教学大纲/课程大纲",
+    "example": "The syllabus lists all the topics for the course.",
+    "exampleCn": "教学大纲列出了课程的所有主题。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4037,
+    "word": "system",
+    "phonetic": "ˈsɪstəm",
+    "pos": "n.",
+    "meaning": "系统/体系",
+    "example": "The education system needs reform.",
+    "exampleCn": "教育体系需要改革。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4038,
+    "word": "basic",
+    "phonetic": "ˈbeɪsɪk",
+    "pos": "adj.",
+    "meaning": "基本的/基础的",
+    "example": "Basic knowledge of maths is essential for this course.",
+    "exampleCn": "基本的数学知识对这门课至关重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4039,
+    "word": "surface",
+    "phonetic": "ˈsɜːfɪs",
+    "pos": "n.",
+    "meaning": "表面/面",
+    "example": "The surface of the lake was calm and still.",
+    "exampleCn": "湖面平静而安宁。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4040,
+    "word": "prerequisite",
+    "phonetic": "ˌpriːˈrekwɪzɪt",
+    "pos": "n.",
+    "meaning": "先决条件/前提",
+    "example": "A degree is a prerequisite for this job.",
+    "exampleCn": "学位是这个职位的先决条件。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4041,
+    "word": "elective",
+    "phonetic": "ɪˈlektɪv",
+    "pos": "adj.",
+    "meaning": "选修的/可选择的",
+    "example": "Students can choose two elective courses each semester.",
+    "exampleCn": "学生每学期可以选择两门选修课。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4042,
+    "word": "preview",
+    "phonetic": "ˈpriːvjuː",
+    "pos": "v.",
+    "meaning": "预习/预览",
+    "example": "She previewed the chapter before the lecture.",
+    "exampleCn": "她在课前预习了这一章。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  },
+  {
+    "id": 4043,
+    "word": "inspect",
+    "phonetic": "ɪnˈspekt",
+    "pos": "v.",
+    "meaning": "检查/视察",
+    "example": "The teacher inspects the students' homework every day.",
+    "exampleCn": "老师每天检查学生的作业。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15"
+    ]
+  }
+]

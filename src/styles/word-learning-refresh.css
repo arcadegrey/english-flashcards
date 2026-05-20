@@ -1406,7 +1406,8 @@
 .selection-card--nature-geography,
 .selection-card--plant-research,
 .selection-card--animal-conservation,
-.selection-card--space-exploration {
+.selection-card--space-exploration,
+.selection-card--school-education {
   position: relative;
   min-height: 148px;
   overflow: hidden;
@@ -1441,10 +1442,18 @@
   --ielts-topic-hover-shadow: rgba(49, 83, 136, 0.3);
 }
 
+.selection-card--school-education {
+  border-color: rgba(37, 102, 122, 0.26);
+  --ielts-topic-bg: url('/images/ielts-school-education-bg.webp');
+  --ielts-topic-shadow: rgba(37, 102, 122, 0.18);
+  --ielts-topic-hover-shadow: rgba(37, 102, 122, 0.3);
+}
+
 .selection-card--nature-geography,
 .selection-card--plant-research,
 .selection-card--animal-conservation,
-.selection-card--space-exploration {
+.selection-card--space-exploration,
+.selection-card--school-education {
   background:
     linear-gradient(180deg, rgba(12, 40, 54, 0.24), rgba(5, 22, 31, 0.68)),
     var(--ielts-topic-bg) center / cover no-repeat;
@@ -1454,7 +1463,8 @@
 .selection-card--nature-geography::after,
 .selection-card--plant-research::after,
 .selection-card--animal-conservation::after,
-.selection-card--space-exploration::after {
+.selection-card--space-exploration::after,
+.selection-card--school-education::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -1469,7 +1479,9 @@
 .selection-card--animal-conservation:hover,
 .selection-card--animal-conservation.is-active,
 .selection-card--space-exploration:hover,
-.selection-card--space-exploration.is-active {
+.selection-card--space-exploration.is-active,
+.selection-card--school-education:hover,
+.selection-card--school-education.is-active {
   border-color: rgba(255, 255, 255, 0.48);
   background:
     linear-gradient(180deg, rgba(10, 34, 48, 0.18), rgba(3, 18, 27, 0.62)),
@@ -1488,7 +1500,10 @@
 .selection-card--animal-conservation .toefl-selection-meta,
 .selection-card--space-exploration .reading-category-name,
 .selection-card--space-exploration .reading-category-count,
-.selection-card--space-exploration .toefl-selection-meta {
+.selection-card--space-exploration .toefl-selection-meta,
+.selection-card--school-education .reading-category-name,
+.selection-card--school-education .reading-category-count,
+.selection-card--school-education .toefl-selection-meta {
   color: #ffffff;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.34);
 }
@@ -1496,7 +1511,8 @@
 .selection-card--nature-geography .toefl-selection-meta,
 .selection-card--plant-research .toefl-selection-meta,
 .selection-card--animal-conservation .toefl-selection-meta,
-.selection-card--space-exploration .toefl-selection-meta {
+.selection-card--space-exploration .toefl-selection-meta,
+.selection-card--school-education .toefl-selection-meta {
   color: rgba(255, 255, 255, 0.86);
 }
 

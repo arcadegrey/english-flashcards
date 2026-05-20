@@ -10,10 +10,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
   },
   {
     "id": 47,
@@ -202,10 +207,15 @@
     "exampleCn": "这场讲座吸引了许多有思考能力的学生。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
   },
   {
     "id": 1629,
@@ -799,10 +809,15 @@
     "exampleCn": "理解这个复杂理论需要时间。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 1668,
@@ -984,10 +999,15 @@
     "exampleCn": "这名学生用有力证据支持她的论点。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 1680,
@@ -1059,10 +1079,15 @@
     "exampleCn": "假设今晚气温降到零度以下。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 1685,
@@ -1164,10 +1189,15 @@
     "exampleCn": "很大一部分人口居住在城市。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
   },
   {
     "id": 1692,
@@ -1224,10 +1254,15 @@
     "exampleCn": "细菌在温暖环境中会迅速繁殖。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
   },
   {
     "id": 1696,
@@ -1509,10 +1544,15 @@
     "exampleCn": "温度是影响植物生长的一个变量。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
   },
   {
     "id": 1715,

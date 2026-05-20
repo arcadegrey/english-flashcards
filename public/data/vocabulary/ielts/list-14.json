@@ -1,0 +1,1099 @@
+[
+  {
+    "id": 107,
+    "word": "algebra",
+    "phonetic": "/ˈældʒɪbrə/",
+    "pos": "n.",
+    "meaning": "代数",
+    "example": "Algebra is a branch of mathematics.",
+    "exampleCn": "代数是数学的一个分支。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 142,
+    "word": "angle",
+    "phonetic": "/ˈæŋɡəl/",
+    "pos": "n.",
+    "meaning": "角，角度；观点",
+    "example": "Look at the problem from a different angle.",
+    "exampleCn": "从不同的角度看这个问题。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 215,
+    "word": "battery",
+    "phonetic": "/ˈbætəri/",
+    "pos": "n.",
+    "meaning": "电池",
+    "example": "My phone battery is almost dead.",
+    "exampleCn": "我的手机电池快没电了。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 421,
+    "word": "chart",
+    "phonetic": "/tʃɑːt/",
+    "pos": "n./v.",
+    "meaning": "图表；绘制图表",
+    "example": "The chart shows sales data.",
+    "exampleCn": "图表显示销售数据。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 448,
+    "word": "circle",
+    "phonetic": "/ˈsɜːrkl/",
+    "pos": "n.",
+    "meaning": "圆；圈子",
+    "example": "Draw a circle on the paper.",
+    "exampleCn": "在纸上画一个圆。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 597,
+    "word": "density",
+    "phonetic": "/ˈdensəti/",
+    "pos": "n.",
+    "meaning": "密度；稠密",
+    "example": "The population density is high.",
+    "exampleCn": "人口密度很高。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 620,
+    "word": "equation",
+    "phonetic": "/ɪˈkweɪʒn/",
+    "pos": "n.",
+    "meaning": "方程式；等式；相等",
+    "example": "Solve this mathematical equation.",
+    "exampleCn": "解这个数学方程式。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 705,
+    "word": "multiple",
+    "phonetic": "/ˈmʌltɪpl/",
+    "pos": "adj.",
+    "meaning": "多个的；多重的",
+    "example": "There are multiple reasons.",
+    "exampleCn": "有多个原因。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 736,
+    "word": "sum",
+    "phonetic": "/sʌm/",
+    "pos": "n./v.",
+    "meaning": "总和；合计",
+    "example": "The sum is 100.",
+    "exampleCn": "总和是 100。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 835,
+    "word": "odd",
+    "phonetic": "/ɒd/",
+    "pos": "adj.",
+    "meaning": "奇怪的；奇数的；临时的",
+    "example": "That's an odd number.",
+    "exampleCn": "那是个奇数。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 1023,
+    "word": "extent",
+    "phonetic": "/ɪkˈstent/",
+    "pos": "n.",
+    "meaning": "程度，范围",
+    "example": "We do not yet know the full extent of the damage.",
+    "exampleCn": "我们还不知道损失的全部程度。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 1171,
+    "word": "scale",
+    "phonetic": "/skeɪl/",
+    "pos": "n./v.",
+    "meaning": "规模；刻度/攀登；测量",
+    "example": "The company expanded on a global scale.",
+    "exampleCn": "公司以全球规模扩张了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 1276,
+    "word": "rate",
+    "phonetic": "/reɪt/",
+    "pos": "n./v.",
+    "meaning": "比率；速度/评价；定级",
+    "example": "The birth rate has declined in recent years.",
+    "exampleCn": "近年来出生率下降了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 1417,
+    "word": "diagram",
+    "phonetic": "/ˈdaɪəˌɡræm/",
+    "pos": "n.",
+    "meaning": "图表；示意图",
+    "example": "The textbook includes a diagram of the human heart.",
+    "exampleCn": "教材里有一张人类心脏示意图。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 1427,
+    "word": "remainder",
+    "phonetic": "/rɪˈmeɪndər/",
+    "pos": "n.",
+    "meaning": "剩余部分",
+    "example": "Please return the remainder of the money tomorrow.",
+    "exampleCn": "请明天归还剩余的钱。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 1574,
+    "word": "mercury",
+    "phonetic": "/ˈmɜːrkjəri/",
+    "pos": "n.",
+    "meaning": "汞/水银/水星",
+    "example": "Mercury expands when the temperature rises.",
+    "exampleCn": "温度升高时，水银会膨胀。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 1691,
+    "word": "proportion",
+    "phonetic": "/prəˈpɔːrʃn/",
+    "pos": "n.",
+    "meaning": "比例/部分",
+    "example": "A large proportion of the population lives in cities.",
+    "exampleCn": "很大一部分人口居住在城市。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 1695,
+    "word": "multiply",
+    "phonetic": "/ˈmʌltɪplaɪ/",
+    "pos": "v.",
+    "meaning": "乘/繁殖/增加",
+    "example": "Bacteria can multiply quickly in warm conditions.",
+    "exampleCn": "细菌在温暖环境中会迅速繁殖。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 1714,
+    "word": "variable",
+    "phonetic": "/ˈveriəbl/",
+    "pos": "adj./n.",
+    "meaning": "可变的/变量",
+    "example": "Temperature is a variable that affects plant growth.",
+    "exampleCn": "温度是影响植物生长的一个变量。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 1760,
+    "word": "parameter",
+    "phonetic": "/pəˈræmɪtər/",
+    "pos": "n.",
+    "meaning": "参数/限制因素",
+    "example": "Temperature is an important parameter in the experiment.",
+    "exampleCn": "温度是实验中的一个重要参数。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 1857,
+    "word": "sphere",
+    "phonetic": "/sfɪr/",
+    "pos": "n.",
+    "meaning": "球体/范围/领域",
+    "example": "The Earth is not a perfect sphere.",
+    "exampleCn": "地球并不是一个完美的球体。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 1950,
+    "word": "identical",
+    "phonetic": "/aɪˈdentɪkl/",
+    "pos": "adj.",
+    "meaning": "完全相同的",
+    "example": "The two samples were identical in color and shape.",
+    "exampleCn": "这两个样本在颜色和形状上完全相同。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 2187,
+    "word": "ratio",
+    "phonetic": "/ˈreɪʃioʊ/",
+    "pos": "n.",
+    "meaning": "比率/比例",
+    "example": "The ratio of boys to girls in the class is nearly equal.",
+    "exampleCn": "这个班男女比例几乎相等。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 2206,
+    "word": "matrix",
+    "phonetic": "/ˈmeɪtrɪks/",
+    "pos": "n.",
+    "meaning": "矩阵/基质/母体",
+    "example": "The data were organized in a simple matrix.",
+    "exampleCn": "这些数据被整理成一个简单的矩阵。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 2381,
+    "word": "rectangle",
+    "phonetic": "/ˈrektæŋɡəl/",
+    "pos": "n.",
+    "meaning": "长方形/矩形",
+    "example": "A rectangle has four sides and four right angles.",
+    "exampleCn": "长方形有四条边和四个直角。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 2892,
+    "word": "decimal",
+    "phonetic": "/ˈdesɪməl/",
+    "pos": "n./adj.",
+    "meaning": "小数/十进制的",
+    "example": "Move the decimal point two places to the left.",
+    "exampleCn": "把小数点向左移动两位。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 3079,
+    "word": "fraction",
+    "phonetic": "/ˈfrækʃən/",
+    "pos": "n.",
+    "meaning": "分数/小部分",
+    "example": "Only a fraction of the students chose the advanced course.",
+    "exampleCn": "只有一小部分学生选择了高级课程。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 3560,
+    "word": "diagonal",
+    "phonetic": "/daɪˈæɡənəl/",
+    "pos": "adj./n.",
+    "meaning": "对角线的/斜线",
+    "example": "Draw a diagonal line from one corner to the other.",
+    "exampleCn": "从一个角到另一个角画一条对角线。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "6",
+    "list": "5",
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 3991,
+    "word": "geometry",
+    "phonetic": "dʒiˈɒmɪtri",
+    "pos": "n.",
+    "meaning": "几何学",
+    "example": "Geometry deals with shapes and their properties.",
+    "exampleCn": "几何学涉及图形及其性质。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 3992,
+    "word": "calculus",
+    "phonetic": "ˈkælkjələs",
+    "pos": "n.",
+    "meaning": "微积分",
+    "example": "Calculus is essential for advanced physics.",
+    "exampleCn": "微积分对于高等物理学是必不可少的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 3993,
+    "word": "plus",
+    "phonetic": "plʌs",
+    "pos": "prep/adj.",
+    "meaning": "加/正的",
+    "example": "Two plus two equals four.",
+    "exampleCn": "二加二等于四。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 3994,
+    "word": "total",
+    "phonetic": "ˈtəʊtəl",
+    "pos": "n.",
+    "meaning": "总数/合计",
+    "example": "The total came to over a hundred pounds.",
+    "exampleCn": "总数超过了一百英镑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 3995,
+    "word": "merger",
+    "phonetic": "ˈmɜːdʒə",
+    "pos": "n.",
+    "meaning": "合并/并购",
+    "example": "The merger of the two companies created an industry giant.",
+    "exampleCn": "两家公司的合并造就了一个行业巨头。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 3996,
+    "word": "minus",
+    "phonetic": "ˈmaɪnəs",
+    "pos": "prep/adj.",
+    "meaning": "减去/负的",
+    "example": "Ten minus three is seven.",
+    "exampleCn": "十减三等于七。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 3997,
+    "word": "subtract",
+    "phonetic": "səbˈtrækt",
+    "pos": "v.",
+    "meaning": "减去/扣除",
+    "example": "If you subtract five from nine, you get four.",
+    "exampleCn": "如果你从九减去五，你会得到四。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 3998,
+    "word": "divide",
+    "phonetic": "dɪˈvaɪd",
+    "pos": "v.",
+    "meaning": "除以/分割",
+    "example": "Divide twenty by four and you get five.",
+    "exampleCn": "二十除以四等于五。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 3999,
+    "word": "dividend",
+    "phonetic": "ˈdɪvɪdend",
+    "pos": "n.",
+    "meaning": "被除数/股息",
+    "example": "In twelve divided by three, twelve is the dividend.",
+    "exampleCn": "在十二除以三中，十二是被除数。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4000,
+    "word": "rational",
+    "phonetic": "ˈræʃənəl",
+    "pos": "adj.",
+    "meaning": "有理的/合理的",
+    "example": "A rational number can be expressed as a fraction.",
+    "exampleCn": "有理数可以表示为分数。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4001,
+    "word": "even",
+    "phonetic": "ˈiːvən",
+    "pos": "adj.",
+    "meaning": "偶数的/平坦的",
+    "example": "Two, four, and six are even numbers.",
+    "exampleCn": "二、四和六是偶数。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4002,
+    "word": "mean",
+    "phonetic": "miːn",
+    "pos": "n.",
+    "meaning": "平均数/平均值",
+    "example": "The mean of these three numbers is twenty.",
+    "exampleCn": "这三个数的平均数是二十。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4003,
+    "word": "double",
+    "phonetic": "ˈdʌbl",
+    "pos": "v/adj.",
+    "meaning": "使加倍/两倍的",
+    "example": "The price has nearly doubled in the past year.",
+    "exampleCn": "价格在过去一年里几乎翻了一番。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4004,
+    "word": "triple",
+    "phonetic": "ˈtrɪpl",
+    "pos": "v/adj.",
+    "meaning": "使成三倍/三倍的",
+    "example": "The population has tripled in the last century.",
+    "exampleCn": "人口在上个世纪增加了三倍。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4005,
+    "word": "quadruple",
+    "phonetic": "ˈkwɒdrʊpl",
+    "pos": "v/adj.",
+    "meaning": "使成四倍/四倍的",
+    "example": "The company's profits quadrupled in just two years.",
+    "exampleCn": "公司的利润在短短两年内翻了两番。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4006,
+    "word": "minimum",
+    "phonetic": "ˈmɪnɪməm",
+    "pos": "n.",
+    "meaning": "最小值/最低限度",
+    "example": "The minimum age for driving is seventeen.",
+    "exampleCn": "开车的最低年龄是十七岁。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4007,
+    "word": "maximum",
+    "phonetic": "ˈmæksɪməm",
+    "pos": "n.",
+    "meaning": "最大值/最大限度",
+    "example": "The maximum speed on this road is sixty miles per hour.",
+    "exampleCn": "这条路的最高时速是六十英里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4008,
+    "word": "approximately",
+    "phonetic": "əˈprɒksɪmətli",
+    "pos": "adv.",
+    "meaning": "大约/大致",
+    "example": "The journey takes approximately three hours.",
+    "exampleCn": "旅程大约需要三个小时。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4009,
+    "word": "graph",
+    "phonetic": "ɡrɑːf",
+    "pos": "n.",
+    "meaning": "图表/曲线图",
+    "example": "The graph illustrates the rise in global temperatures.",
+    "exampleCn": "这个曲线图说明了全球气温的上升。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4010,
+    "word": "table",
+    "phonetic": "ˈteɪbl",
+    "pos": "n.",
+    "meaning": "表格/桌子",
+    "example": "The results are presented in the table below.",
+    "exampleCn": "结果列在下表中。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4011,
+    "word": "cube",
+    "phonetic": "kjuːb",
+    "pos": "n.",
+    "meaning": "立方体/立方",
+    "example": "A cube has six equal square faces.",
+    "exampleCn": "立方体有六个相等的正方形面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4012,
+    "word": "triangle",
+    "phonetic": "ˈtraɪæŋɡl",
+    "pos": "n.",
+    "meaning": "三角形",
+    "example": "The sum of angles in a triangle is one hundred and eighty degrees.",
+    "exampleCn": "三角形的内角和是一百八十度。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4013,
+    "word": "straight",
+    "phonetic": "streɪt",
+    "pos": "adj.",
+    "meaning": "直的/直接的",
+    "example": "Draw a straight line between the two points.",
+    "exampleCn": "在两点之间画一条直线。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4014,
+    "word": "round",
+    "phonetic": "raʊnd",
+    "pos": "adj.",
+    "meaning": "圆的/圆形的",
+    "example": "The earth is round.",
+    "exampleCn": "地球是圆的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4015,
+    "word": "dot",
+    "phonetic": "dɒt",
+    "pos": "n.",
+    "meaning": "点/小圆点",
+    "example": "The stars looked like tiny dots in the night sky.",
+    "exampleCn": "星星在夜空中看起来像微小的点。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4016,
+    "word": "cone",
+    "phonetic": "kəʊn",
+    "pos": "n.",
+    "meaning": "圆锥体/蛋筒",
+    "example": "The children ate ice cream cones.",
+    "exampleCn": "孩子们吃着蛋筒冰淇淋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4017,
+    "word": "width",
+    "phonetic": "wɪdθ",
+    "pos": "n.",
+    "meaning": "宽度",
+    "example": "The width of the river is about fifty metres.",
+    "exampleCn": "这条河的宽度大约是五十米。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4018,
+    "word": "length",
+    "phonetic": "leŋθ",
+    "pos": "n.",
+    "meaning": "长度",
+    "example": "The length of the bridge is over two kilometres.",
+    "exampleCn": "这座桥的长度超过两公里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4019,
+    "word": "per cent",
+    "phonetic": "pɜː sent",
+    "pos": "n.",
+    "meaning": "百分比/百分之",
+    "example": "Over eighty per cent of the population voted in the election.",
+    "exampleCn": "超过百分之八十的人口在这次选举中投了票。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4020,
+    "word": "ounce",
+    "phonetic": "aʊns",
+    "pos": "n.",
+    "meaning": "盎司",
+    "example": "An ounce is a unit of weight.",
+    "exampleCn": "盎司是一种重量单位。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4021,
+    "word": "fahrenheit",
+    "phonetic": "ˈfærənhaɪt",
+    "pos": "adj.",
+    "meaning": "华氏的/华氏度",
+    "example": "Water freezes at thirty-two degrees Fahrenheit.",
+    "exampleCn": "水在三十二华氏度结冰。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  },
+  {
+    "id": 4022,
+    "word": "volt",
+    "phonetic": "vəʊlt",
+    "pos": "n.",
+    "meaning": "伏特",
+    "example": "The battery supplies twelve volts of electricity.",
+    "exampleCn": "电池提供十二伏特的电力。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14"
+    ]
+  }
+]

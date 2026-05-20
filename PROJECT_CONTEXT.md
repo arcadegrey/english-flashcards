@@ -29,7 +29,7 @@
 - `studyHub`：学习入口，展示词库、阅读、复习、错题、统计、考试练习和账号同步入口。
 - `home`：单词分类选择页，支持全部、分类、托福词汇和雅思词汇入口。
 - `toeflLevels` / `toeflLists`：托福词汇按 Level / List 分层选择。
-- `ieltsTopics` / `ieltsLists`：雅思词汇按主题 / List 分层选择；当前已导入 List 1-10，按自然地理、植物研究、动物保护、太空探索分主题。
+- `ieltsTopics` / `ieltsLists`：雅思词汇按主题 / List 分层选择；当前已导入 List 1-16，按自然地理、植物研究、动物保护、太空探索、学校教育分主题。
 - `learn`：统一学习容器，由 `LearningView` 根据 mode 渲染学习卡片、测验、填空、拼写或连线。
 - `readingList` / `readingSession`：阅读等级列表和文章阅读练习；文章页支持阅读题作答和反馈。
 - `todayReview` / `wrongWords` / `learnedWords` / `masteredWords`：复习、错题、已学习、已掌握集合页。
@@ -119,11 +119,11 @@
   - Level 6：共 249 词，List 1-5 分别为 50、50、49、50、50。
   - 当前 TOEFL 词 3254 个。
 - 当前 IELTS 导入进度：
-  - 已从 `/Users/arcade/Desktop/ielts_list1-2_filled.csv`、`/Users/arcade/Desktop/IELTS Words/ielts_list3-4.csv`、`/Users/arcade/Desktop/IELTS Words/ietls_list5-6.csv`、`/Users/arcade/Desktop/IELTS Words/ielts_list7-8.csv`、`/Users/arcade/Desktop/IELTS Words/ielts_list9-10.csv` 通过 `--upsert` 导入 List 1-10。
-  - IELTS manifest 当前为 4 个主题：List 1-4 自然地理，共 240；List 5-6 植物研究，共 120；List 7-9 动物保护，共 180；List 10 太空探索，共 60。
-  - List 1-10 各 60 个 List 条目，共 600 个 IELTS List 条目；源 CSV 中 `trunk` 同时出现在 List 6 和 List 8，所以唯一 IELTS 词数为 599。
-  - 当前完整词库总量为 3883 个唯一词；`core.json` 约 306 个非考试词。
-- IELTS PDF 纯单词提取脚本是 `scripts/extract-ielts-pdf-vocabulary.mjs`，命令为 `npm run ielts:extract-pdf -- /Users/arcade/Desktop/list1-10.pdf output/ielts_list1-10.csv`。该脚本使用 macOS Swift/PDFKit 读取 PDF 坐标，输出 `word,list` 两列，用于后续单独生成释义/例句。
+  - 已从 `/Users/arcade/Desktop/ielts_list1-2_filled.csv`、`/Users/arcade/Desktop/IELTS Words/ielts_list3-4.csv`、`/Users/arcade/Desktop/IELTS Words/ietls_list5-6.csv`、`/Users/arcade/Desktop/IELTS Words/ielts_list7-8.csv`、`/Users/arcade/Desktop/IELTS Words/ielts_list9-10.csv`、`/Users/arcade/Desktop/IELTS Words/ielts_list11-12.csv`、`/Users/arcade/Desktop/IELTS Words/ielts_list13-14.csv`、`/Users/arcade/Desktop/IELTS Words/ielts_list15-16.csv` 通过 `--upsert` 导入 List 1-16。
+  - IELTS manifest 当前为 5 个主题：List 1-4 自然地理，共 240；List 5-6 植物研究，共 120；List 7-9 动物保护，共 180；List 10 太空探索，共 60；List 11-16 学校教育，共 360。
+  - List 1-16 各 60 个 List 条目，共 960 个 IELTS List 条目；源 CSV 中 `trunk` 同时出现在 List 6 和 List 8，所以唯一 IELTS 词数比 List 条目数少 1。
+  - 当前完整词库总量为 4066 个唯一词；`core.json` 约 287 个非考试词。
+- IELTS PDF 纯单词提取脚本是 `scripts/extract-ielts-pdf-vocabulary.mjs`，命令示例为 `npm run ielts:extract-pdf -- /Users/arcade/Desktop/list11-16.pdf output/ielts_list11-16.csv`。该脚本使用 macOS Swift/PDFKit 读取 PDF 坐标，输出 `word,list` 两列，并已兼容 List 11-16 这种三栏内容被抽成同一行的 PDF 排版，用于后续单独生成释义/例句。
 - 阅读 CSV 默认字段：`title, level, category, content, translation, source, tags, examType, questions`。
 - 阅读必填字段：`title`、`content`。
 - 阅读导入按 `title + level` 去重；tags 支持 `|`、`,`、`;`、`，` 分隔。
@@ -158,7 +158,7 @@
 - 用户选择“学习当前 Level 全部词汇”时，会触发 `ensureToeflLevelLoaded(level)` 预加载该 Level 下所有 List 分片。
 - IELTS Topic/List 页面优先使用 manifest 显示主题和 List 数量；用户进入具体 IELTS List 时，`ensureIeltsListLoaded(list)` 会按需加载对应分片。
 - 用户选择“学习当前 IELTS 主题全部词汇”时，会触发 `ensureIeltsTopicLoaded(topic)` 预加载该主题下所有 List 分片。
-- IELTS 主题按钮使用 AI 生成背景图，CSS 实际引用 WebP：自然地理 `public/images/ielts-nature-geography-bg.webp`、植物研究 `public/images/ielts-plant-research-bg.webp`、动物保护 `public/images/ielts-animal-conservation-bg.webp`、太空探索 `public/images/ielts-space-exploration-bg.webp`。
+- IELTS 主题按钮使用 AI 生成背景图，CSS 实际引用 WebP：自然地理 `public/images/ielts-nature-geography-bg.webp`、植物研究 `public/images/ielts-plant-research-bg.webp`、动物保护 `public/images/ielts-animal-conservation-bg.webp`、太空探索 `public/images/ielts-space-exploration-bg.webp`、学校教育 `public/images/ielts-school-education-bg.webp`。
 - `vite.config.js` 的 PWA `globIgnores` 排除了 `**/data/vocabulary/**/*.json`，避免分片目录被 Workbox 全量预缓存；主 `public/data/vocabulary.json` 仍会按普通 json 静态资源参与构建缓存。
 
 ## 当前已知风险

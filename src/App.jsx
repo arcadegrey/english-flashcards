@@ -295,6 +295,7 @@ const getIeltsTopicKey = (list) => {
     if (numericList >= 5 && numericList <= 6) return 'plant-research'
     if (numericList >= 7 && numericList <= 9) return 'animal-conservation'
     if (numericList === 10) return 'space-exploration'
+    if (numericList >= 11 && numericList <= 16) return 'school-education'
   }
 
   return IELTS_UNKNOWN_TOPIC
@@ -306,6 +307,7 @@ const getIeltsTopicLabel = (topicKey) => {
     'plant-research': '植物研究',
     'animal-conservation': '动物保护',
     'space-exploration': '太空探索',
+    'school-education': '学校教育',
     [IELTS_UNKNOWN_TOPIC]: '未分主题',
   }
   return labels[topicKey] || '未分主题'

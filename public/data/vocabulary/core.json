@@ -39,19 +39,6 @@
     ]
   },
   {
-    "id": 9,
-    "word": "academic",
-    "phonetic": "/ˌækəˈdemɪk/",
-    "pos": "adj.",
-    "meaning": "学术的；学院的",
-    "example": "She has excellent academic qualifications.",
-    "exampleCn": "她有优秀的学术资历。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 15,
     "word": "account",
     "phonetic": "/əˈkaʊnt/",
@@ -319,32 +306,6 @@
     "meaning": "荒谬的，可笑的",
     "example": "The idea is completely absurd.",
     "exampleCn": "这个想法完全荒谬。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 55,
-    "word": "abuse",
-    "phonetic": "/əˈbjuːs/",
-    "pos": "v./n.",
-    "meaning": "滥用；虐待；辱骂",
-    "example": "Don't abuse your power.",
-    "exampleCn": "不要滥用你的权力。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 58,
-    "word": "accommodation",
-    "phonetic": "/əˌkɑːməˈdeɪʃn/",
-    "pos": "n.",
-    "meaning": "住宿，膳宿",
-    "example": "Hotel accommodation is included in the price.",
-    "exampleCn": "酒店住宿包含在价格中。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -741,19 +702,6 @@
     ]
   },
   {
-    "id": 107,
-    "word": "algebra",
-    "phonetic": "/ˈældʒɪbrə/",
-    "pos": "n.",
-    "meaning": "代数",
-    "example": "Algebra is a branch of mathematics.",
-    "exampleCn": "代数是数学的一个分支。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 108,
     "word": "alien",
     "phonetic": "/ˈeɪliən/",
@@ -936,19 +884,6 @@
     ]
   },
   {
-    "id": 135,
-    "word": "analyse",
-    "phonetic": "/ˈænəlaɪz/",
-    "pos": "v.",
-    "meaning": "分析，解析",
-    "example": "We need to analyse the data carefully.",
-    "exampleCn": "我们需要仔细分析数据。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 138,
     "word": "ancient",
     "phonetic": "/ˈeɪnʃənt/",
@@ -995,19 +930,6 @@
     "meaning": "愤怒；使发怒",
     "example": "His rudeness filled her with anger.",
     "exampleCn": "他的粗鲁让她非常愤怒。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 142,
-    "word": "angle",
-    "phonetic": "/ˈæŋɡəl/",
-    "pos": "n.",
-    "meaning": "角，角度；观点",
-    "example": "Look at the problem from a different angle.",
-    "exampleCn": "从不同的角度看这个问题。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -1164,19 +1086,6 @@
     "meaning": "逮捕，拘留",
     "example": "The police arrested the suspect.",
     "exampleCn": "警察逮捕了嫌疑人。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 174,
-    "word": "article",
-    "phonetic": "/ˈɑːrtɪkl/",
-    "pos": "n.",
-    "meaning": "文章；物品；条款",
-    "example": "I read an interesting article today.",
-    "exampleCn": "我今天读了一篇有趣的文章。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -1424,19 +1333,6 @@
     "meaning": "地下室",
     "example": "They store old furniture in the basement.",
     "exampleCn": "他们把旧家具存放在地下室。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 215,
-    "word": "battery",
-    "phonetic": "/ˈbætəri/",
-    "pos": "n.",
-    "meaning": "电池",
-    "example": "My phone battery is almost dead.",
-    "exampleCn": "我的手机电池快没电了。",
     "category": "daily",
     "categories": [
       "daily"
@@ -1794,19 +1690,6 @@
     ]
   },
   {
-    "id": 248,
-    "word": "biology",
-    "phonetic": "/baɪˈɒlədʒi/",
-    "pos": "n.",
-    "meaning": "生物学",
-    "example": "Biology is the study of living organisms.",
-    "exampleCn": "生物学是研究生物体的学科。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 249,
     "word": "bird",
     "phonetic": "/bɜːrd/",
@@ -2009,19 +1892,6 @@
     "meaning": "身体；主体",
     "example": "Regular exercise keeps your body healthy.",
     "exampleCn": "定期锻炼使你的身体保持健康。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 273,
-    "word": "boil",
-    "phonetic": "/bɔɪl/",
-    "pos": "v.",
-    "meaning": "煮沸，沸腾",
-    "example": "Boil the water before drinking.",
-    "exampleCn": "饮用前把水煮沸。",
     "category": "daily",
     "categories": [
       "daily"
@@ -2380,19 +2250,6 @@
     ]
   },
   {
-    "id": 313,
-    "word": "brilliant",
-    "phonetic": "/ˈbrɪliənt/",
-    "pos": "adj.",
-    "meaning": "杰出的；辉煌的",
-    "example": "She gave a brilliant performance.",
-    "exampleCn": "她的表演非常出色。",
-    "category": "cet6",
-    "categories": [
-      "cet6"
-    ]
-  },
-  {
     "id": 314,
     "word": "bring",
     "phonetic": "/brɪŋ/",
@@ -2426,19 +2283,6 @@
     "meaning": "广播；播送",
     "example": "The news was broadcast live.",
     "exampleCn": "新闻被现场直播。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 317,
-    "word": "brochure",
-    "phonetic": "/broʊˈʃʊr/",
-    "pos": "n.",
-    "meaning": "小册子",
-    "example": "The travel brochure has useful information.",
-    "exampleCn": "这本旅游手册有有用的信息。",
     "category": "daily",
     "categories": [
       "daily"
@@ -2796,19 +2640,6 @@
     ]
   },
   {
-    "id": 361,
-    "word": "campus",
-    "phonetic": "/ˈkæmpəs/",
-    "pos": "n.",
-    "meaning": "校园",
-    "example": "The university has a beautiful campus.",
-    "exampleCn": "这所大学有一个美丽的校园。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 363,
     "word": "cancel",
     "phonetic": "/ˈkænsl/",
@@ -2845,19 +2676,6 @@
     "category": "daily",
     "categories": [
       "daily"
-    ]
-  },
-  {
-    "id": 367,
-    "word": "capable",
-    "phonetic": "/ˈkeɪpəbl/",
-    "pos": "adj.",
-    "meaning": "有能力的",
-    "example": "She is capable of handling the project.",
-    "exampleCn": "她有能力处理这个项目。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
     ]
   },
   {
@@ -3251,19 +3069,6 @@
     ]
   },
   {
-    "id": 416,
-    "word": "chapter",
-    "phonetic": "/ˈtʃæptər/",
-    "pos": "n.",
-    "meaning": "章，回",
-    "example": "Read chapter five for homework.",
-    "exampleCn": "阅读第五章作为作业。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 419,
     "word": "charity",
     "phonetic": "/ˈtʃærəti/",
@@ -3388,19 +3193,6 @@
     "meaning": "化学的；化学品",
     "example": "Chemical reactions occur in the body.",
     "exampleCn": "化学反应发生在体内。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 432,
-    "word": "chemistry",
-    "phonetic": "/ˈkemɪstri/",
-    "pos": "n.",
-    "meaning": "化学",
-    "example": "Chemistry is my favorite subject.",
-    "exampleCn": "化学是我最喜欢的科目。",
     "category": "daily",
     "categories": [
       "daily"
@@ -3544,32 +3336,6 @@
     "meaning": "电影院",
     "example": "Let's go to the cinema tonight.",
     "exampleCn": "我们今晚去看电影吧。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 448,
-    "word": "circle",
-    "phonetic": "/ˈsɜːrkl/",
-    "pos": "n.",
-    "meaning": "圆；圈子",
-    "example": "Draw a circle on the paper.",
-    "exampleCn": "在纸上画一个圆。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 452,
-    "word": "cite",
-    "phonetic": "/saɪt/",
-    "pos": "v.",
-    "meaning": "引用",
-    "example": "Don't forget to cite your sources.",
-    "exampleCn": "别忘了引用你的来源。",
     "category": "daily",
     "categories": [
       "daily"
@@ -3924,19 +3690,6 @@
     "category": "cet4",
     "categories": [
       "cet4"
-    ]
-  },
-  {
-    "id": 490,
-    "word": "college",
-    "phonetic": "/ˈkɒlɪdʒ/",
-    "pos": "n.",
-    "meaning": "学院；大学",
-    "example": "He goes to college in Boston.",
-    "exampleCn": "他在波士顿上大学。",
-    "category": "daily",
-    "categories": [
-      "daily"
     ]
   },
   {

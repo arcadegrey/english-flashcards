@@ -1,0 +1,1095 @@
+[
+  {
+    "id": 9,
+    "word": "academic",
+    "phonetic": "/ˌækəˈdemɪk/",
+    "pos": "adj.",
+    "meaning": "学术的；学院的",
+    "example": "She has excellent academic qualifications.",
+    "exampleCn": "她有优秀的学术资历。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 21,
+    "word": "acquire",
+    "phonetic": "/əˈkwaɪər/",
+    "pos": "v.",
+    "meaning": "获得/习得",
+    "example": "Children acquire language through practice and exposure.",
+    "exampleCn": "儿童通过练习和接触来习得语言。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 55,
+    "word": "abuse",
+    "phonetic": "/əˈbjuːs/",
+    "pos": "v./n.",
+    "meaning": "滥用；虐待；辱骂",
+    "example": "Don't abuse your power.",
+    "exampleCn": "不要滥用你的权力。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 56,
+    "word": "academy",
+    "phonetic": "/əˈkædəmi/",
+    "pos": "n.",
+    "meaning": "学院；研究院；学会",
+    "example": "He studied at the military academy.",
+    "exampleCn": "他在军校学习。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 367,
+    "word": "capable",
+    "phonetic": "/ˈkeɪpəbl/",
+    "pos": "adj.",
+    "meaning": "有能力的",
+    "example": "She is capable of handling the project.",
+    "exampleCn": "她有能力处理这个项目。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 490,
+    "word": "college",
+    "phonetic": "/ˈkɒlɪdʒ/",
+    "pos": "n.",
+    "meaning": "学院；大学",
+    "example": "He goes to college in Boston.",
+    "exampleCn": "他在波士顿上大学。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 491,
+    "word": "collision",
+    "phonetic": "/kəˈlɪʒn/",
+    "pos": "n.",
+    "meaning": "碰撞/冲突",
+    "example": "The collision between the two cars blocked the road.",
+    "exampleCn": "两辆车的碰撞堵住了道路。",
+    "category": "cet6",
+    "categories": [
+      "cet6",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 633,
+    "word": "institute",
+    "phonetic": "/ˈɪnstɪtjuːt/",
+    "pos": "n./v.",
+    "meaning": "学院；机构；建立",
+    "example": "He works at a research institute.",
+    "exampleCn": "他在研究机构工作。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 668,
+    "word": "intelligent",
+    "phonetic": "/ɪnˈtelɪdʒənt/",
+    "pos": "adj.",
+    "meaning": "聪明的；智能的",
+    "example": "She is an intelligent student.",
+    "exampleCn": "她是个聪明的学生。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 823,
+    "word": "motivate",
+    "phonetic": "/ˈməʊtɪveɪt/",
+    "pos": "v.",
+    "meaning": "激励；激发；成为...的动机",
+    "example": "What motivates you to work hard?",
+    "exampleCn": "什么激励你努力工作？",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 1009,
+    "word": "puzzle",
+    "phonetic": "/ˈpʌzl/",
+    "pos": "n./v.",
+    "meaning": "谜，难题/使困惑",
+    "example": "This math puzzle is difficult./The results puzzled the researchers.",
+    "exampleCn": "这道数学谜题很难。/这些结果让研究人员困惑。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 1150,
+    "word": "invisible",
+    "phonetic": "/ɪnˈvɪzəbəl/",
+    "pos": "adj.",
+    "meaning": "看不见的；隐形的",
+    "example": "Some gases are invisible to the human eye.",
+    "exampleCn": "有些气体是人眼看不见的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 1166,
+    "word": "spoil",
+    "phonetic": "/spɔɪl/",
+    "pos": "v.",
+    "meaning": "损坏；宠坏",
+    "example": "Too much rain can spoil the crops.",
+    "exampleCn": "过多的雨水会毁坏庄稼。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 1323,
+    "word": "enhance",
+    "phonetic": "/ɪnˈhæns/",
+    "pos": "v.",
+    "meaning": "提高；增强",
+    "example": "The new software will enhance work efficiency.",
+    "exampleCn": "新软件将提高工作效率。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 1388,
+    "word": "genius",
+    "phonetic": "/ˈdʒiːniəs/",
+    "pos": "n.",
+    "meaning": "天才",
+    "example": "Many people regard Einstein as a genius.",
+    "exampleCn": "许多人认为爱因斯坦是个天才。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 1628,
+    "word": "intellectual",
+    "phonetic": "/ˌɪntəˈlektʃuəl/",
+    "pos": "adj./n.",
+    "meaning": "智力的/知识分子",
+    "example": "The lecture attracted many intellectual students.",
+    "exampleCn": "这场讲座吸引了许多有思考能力的学生。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 1870,
+    "word": "elite",
+    "phonetic": "/eɪˈliːt/",
+    "pos": "n./adj.",
+    "meaning": "精英/精英的",
+    "example": "Elite athletes train for many hours each day.",
+    "exampleCn": "精英运动员每天训练许多小时。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 2027,
+    "word": "recruit",
+    "phonetic": "/rɪˈkruːt/",
+    "pos": "v./n.",
+    "meaning": "招募/新成员",
+    "example": "The lab hopes to recruit volunteers for the study.",
+    "exampleCn": "实验室希望为这项研究招募志愿者。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 2034,
+    "word": "spur",
+    "phonetic": "/spɜːr/",
+    "pos": "v./n.",
+    "meaning": "刺激/促进/马刺",
+    "example": "Competition can spur innovation in technology.",
+    "exampleCn": "竞争可以促进技术创新。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 2136,
+    "word": "stimulate",
+    "phonetic": "/ˈstɪmjuleɪt/",
+    "pos": "v.",
+    "meaning": "刺激/促进/激发",
+    "example": "Light can stimulate plant growth.",
+    "exampleCn": "光能促进植物生长。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 2222,
+    "word": "distinct",
+    "phonetic": "/dɪˈstɪŋkt/",
+    "pos": "adj.",
+    "meaning": "不同的/清楚的/明显的",
+    "example": "The two species have distinct patterns on their wings.",
+    "exampleCn": "这两个物种的翅膀上有明显不同的图案。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 2595,
+    "word": "impetus",
+    "phonetic": "/ˈɪmpɪtəs/",
+    "pos": "n.",
+    "meaning": "推动力/刺激",
+    "example": "The new law gave impetus to economic reform.",
+    "exampleCn": "新法律推动了经济改革。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 2746,
+    "word": "radioactive",
+    "phonetic": "/ˌreɪdioʊˈæktɪv/",
+    "pos": "adj.",
+    "meaning": "放射性的",
+    "example": "Radioactive materials must be handled carefully.",
+    "exampleCn": "放射性材料必须小心处理。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 2770,
+    "word": "fragment",
+    "phonetic": "/ˈfræɡmənt/",
+    "pos": "n./v.",
+    "meaning": "碎片/片段/破碎",
+    "example": "Researchers found a fragment of ancient pottery.",
+    "exampleCn": "研究人员发现了一块古代陶器碎片。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 2893,
+    "word": "ultraviolet",
+    "phonetic": "/ˌʌltrəˈvaɪələt/",
+    "pos": "adj./n.",
+    "meaning": "紫外线的/紫外线",
+    "example": "Ultraviolet light can damage skin cells.",
+    "exampleCn": "紫外线会损伤皮肤细胞。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3072,
+    "word": "obscure",
+    "phonetic": "/əbˈskjʊr/",
+    "pos": "adj./v.",
+    "meaning": "模糊的/不知名的/遮掩/使难理解",
+    "example": "Clouds began to obscure the view of the mountain.",
+    "exampleCn": "云开始遮住山景。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3884,
+    "word": "refraction",
+    "phonetic": "rɪˈfrækʃn",
+    "pos": "n.",
+    "meaning": "折射",
+    "example": "Refraction occurs when light passes through water.",
+    "exampleCn": "光线穿过水时会发生折射。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3885,
+    "word": "discernible",
+    "phonetic": "dɪˈsɜːnəbl",
+    "pos": "adj.",
+    "meaning": "可辨别的/可见的",
+    "example": "The outline of the ship was barely discernible in the fog.",
+    "exampleCn": "船的轮廓在雾中几乎难以辨认。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3886,
+    "word": "squash",
+    "phonetic": "skwɒʃ",
+    "pos": "v.",
+    "meaning": "挤压/压扁",
+    "example": "Be careful not to squash the tomatoes.",
+    "exampleCn": "小心别把西红柿压扁了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3887,
+    "word": "cataclysmic",
+    "phonetic": "ˌkætəˈklɪzmɪk",
+    "pos": "adj.",
+    "meaning": "灾难性的/剧变的",
+    "example": "The cataclysmic event wiped out the dinosaurs.",
+    "exampleCn": "那场灾难性的事件灭绝了恐龙。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3888,
+    "word": "overwhelming",
+    "phonetic": "ˌəʊvəˈwelmɪŋ",
+    "pos": "adj.",
+    "meaning": "压倒性的/势不可挡的",
+    "example": "The evidence against him was overwhelming.",
+    "exampleCn": "对他不利的证据是压倒性的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3889,
+    "word": "despair",
+    "phonetic": "dɪˈspeə",
+    "pos": "n.",
+    "meaning": "绝望",
+    "example": "He sank into despair after losing his job.",
+    "exampleCn": "失业后他陷入了绝望。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3890,
+    "word": "hopeless",
+    "phonetic": "ˈhəʊpləs",
+    "pos": "adj.",
+    "meaning": "绝望的/无望的",
+    "example": "The situation seemed hopeless but they did not give up.",
+    "exampleCn": "情况似乎无望，但他们没有放弃。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3891,
+    "word": "education",
+    "phonetic": "ˌedʒuˈkeɪʃn",
+    "pos": "n.",
+    "meaning": "教育",
+    "example": "Education is the key to a better future.",
+    "exampleCn": "教育是通向更美好未来的关键。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3892,
+    "word": "primary",
+    "phonetic": "ˈpraɪməri",
+    "pos": "adj.",
+    "meaning": "初级的/首要的",
+    "example": "Primary education is compulsory in most countries.",
+    "exampleCn": "小学教育在大多数国家是强制性的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3893,
+    "word": "secondary",
+    "phonetic": "ˈsekəndri",
+    "pos": "adj.",
+    "meaning": "中级的/次要的",
+    "example": "She teaches at a secondary school.",
+    "exampleCn": "她在一所中学教书。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3894,
+    "word": "university",
+    "phonetic": "ˌjuːnɪˈvɜːsəti",
+    "pos": "n.",
+    "meaning": "大学",
+    "example": "He got a scholarship to study at a top university.",
+    "exampleCn": "他获得了奖学金去一所顶尖大学学习。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3895,
+    "word": "study",
+    "phonetic": "ˈstʌdi",
+    "pos": "n/v.",
+    "meaning": "学习/研究",
+    "example": "He spends hours every day in independent study.",
+    "exampleCn": "他每天花数小时进行独立学习。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3896,
+    "word": "knowledge",
+    "phonetic": "ˈnɒlɪdʒ",
+    "pos": "n.",
+    "meaning": "知识",
+    "example": "Knowledge is more valuable than wealth.",
+    "exampleCn": "知识比财富更有价值。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3897,
+    "word": "expertise",
+    "phonetic": "ˌekspɜːˈtiːz",
+    "pos": "n.",
+    "meaning": "专业知识/专长",
+    "example": "She has considerable expertise in financial law.",
+    "exampleCn": "她在金融法方面有相当的专业知识。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3898,
+    "word": "novice",
+    "phonetic": "ˈnɒvɪs",
+    "pos": "n.",
+    "meaning": "新手/初学者",
+    "example": "As a novice, he made a lot of mistakes.",
+    "exampleCn": "作为一名新手，他犯了很多错误。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3899,
+    "word": "literate",
+    "phonetic": "ˈlɪtərət",
+    "pos": "adj.",
+    "meaning": "有读写能力的/有文化的",
+    "example": "Most adults in the country are now literate.",
+    "exampleCn": "该国大多数成年人现在都有读写能力。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3900,
+    "word": "illiteracy",
+    "phonetic": "ɪˈlɪtərəsi",
+    "pos": "n.",
+    "meaning": "文盲/无知",
+    "example": "The government aims to eliminate illiteracy by 2030.",
+    "exampleCn": "政府的目标是在2030年前消除文盲。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3901,
+    "word": "numerate",
+    "phonetic": "ˈnjuːmərət",
+    "pos": "adj.",
+    "meaning": "有计算能力的",
+    "example": "All students should be numerate when they leave school.",
+    "exampleCn": "所有学生离开学校时都应该具备计算能力。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3902,
+    "word": "controversial",
+    "phonetic": "ˌkɒntrəˈvɜːʃəl",
+    "pos": "adj.",
+    "meaning": "有争议的",
+    "example": "The controversial decision sparked a heated debate.",
+    "exampleCn": "这项有争议的决定引发了激烈辩论。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3903,
+    "word": "issue",
+    "phonetic": "ˈɪʃuː",
+    "pos": "n.",
+    "meaning": "问题/议题",
+    "example": "Climate change is a pressing global issue.",
+    "exampleCn": "气候变化是一个紧迫的全球问题。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3904,
+    "word": "affair",
+    "phonetic": "əˈfeə",
+    "pos": "n.",
+    "meaning": "事务/事件",
+    "example": "The government is dealing with the affair very seriously.",
+    "exampleCn": "政府正在认真处理这起事件。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3905,
+    "word": "riddle",
+    "phonetic": "ˈrɪdl",
+    "pos": "n.",
+    "meaning": "谜语/谜题",
+    "example": "He enjoys solving riddles and brain teasers.",
+    "exampleCn": "他喜欢解谜语和脑筋急转弯。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3906,
+    "word": "instil",
+    "phonetic": "ɪnˈstɪl",
+    "pos": "v.",
+    "meaning": "灌输/逐步培养",
+    "example": "Teachers should try to instil a love of learning in their students.",
+    "exampleCn": "教师应努力向学生灌输对学习的热爱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3907,
+    "word": "cram",
+    "phonetic": "kræm",
+    "pos": "v.",
+    "meaning": "填鸭式教学/死记硬背",
+    "example": "Students often cram for exams the night before.",
+    "exampleCn": "学生常常在考试前一晚死记硬背。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3908,
+    "word": "emphasise",
+    "phonetic": "ˈemfəsaɪz",
+    "pos": "v.",
+    "meaning": "强调/着重",
+    "example": "The teacher emphasised the importance of regular practice.",
+    "exampleCn": "老师强调了经常练习的重要性。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3909,
+    "word": "enable",
+    "phonetic": "ɪnˈeɪbl",
+    "pos": "v.",
+    "meaning": "使能够/允许",
+    "example": "This scholarship enabled him to study abroad.",
+    "exampleCn": "这项奖学金使他能够出国留学。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3910,
+    "word": "inspire",
+    "phonetic": "ɪnˈspaɪə",
+    "pos": "v.",
+    "meaning": "激励/启发",
+    "example": "Her courage inspired everyone around her.",
+    "exampleCn": "她的勇气激励了身边的每一个人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3911,
+    "word": "indulge",
+    "phonetic": "ɪnˈdʌldʒ",
+    "pos": "v.",
+    "meaning": "放纵/沉溺于",
+    "example": "Parents should not indulge every wish of their children.",
+    "exampleCn": "父母不应放纵孩子的每一个愿望。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3912,
+    "word": "intelligible",
+    "phonetic": "ɪnˈtelɪdʒəbl",
+    "pos": "adj.",
+    "meaning": "可理解的/明白的",
+    "example": "His speech was barely intelligible over the noise.",
+    "exampleCn": "在噪音中，他的讲话几乎听不清。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3913,
+    "word": "all-round",
+    "phonetic": "ɔːl raʊnd",
+    "pos": "adj.",
+    "meaning": "全面的/全能的",
+    "example": "She is an all-round athlete who excels in many sports.",
+    "exampleCn": "她是一位在多方面运动中都表现突出的全能运动员。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3914,
+    "word": "idiot",
+    "phonetic": "ˈɪdiət",
+    "pos": "n.",
+    "meaning": "傻瓜/白痴",
+    "example": "Only an idiot would believe such a lie.",
+    "exampleCn": "只有傻瓜才会相信这样的谎言。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3915,
+    "word": "wisdom",
+    "phonetic": "ˈwɪzdəm",
+    "pos": "n.",
+    "meaning": "智慧/才智",
+    "example": "The wisdom of older people should be respected.",
+    "exampleCn": "老年人的智慧应当受到尊重。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3916,
+    "word": "wit",
+    "phonetic": "wɪt",
+    "pos": "n.",
+    "meaning": "机智/风趣",
+    "example": "She is known for her quick wit and sense of humour.",
+    "exampleCn": "她以机敏和幽默感而闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  },
+  {
+    "id": 3917,
+    "word": "aptitude",
+    "phonetic": "ˈæptɪtjuːd",
+    "pos": "n.",
+    "meaning": "天赋/才能",
+    "example": "He showed an early aptitude for music.",
+    "exampleCn": "他早年就表现出音乐天赋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
+  }
+]

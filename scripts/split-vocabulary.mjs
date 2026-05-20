@@ -46,6 +46,9 @@ const getIeltsTopicMeta = (list) => {
     if (numericList === 10) {
       return { key: 'space-exploration', label: '太空探索' };
     }
+    if (numericList >= 11 && numericList <= 16) {
+      return { key: 'school-education', label: '学校教育' };
+    }
   }
 
   return { key: 'unknown', label: '未分主题' };

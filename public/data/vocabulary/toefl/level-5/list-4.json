@@ -372,10 +372,15 @@
     "exampleCn": "放射性材料必须小心处理。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
   },
   {
     "id": 2747,
@@ -739,10 +744,15 @@
     "exampleCn": "研究人员发现了一块古代陶器碎片。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "11",
+    "ieltsLists": [
+      "11"
+    ]
   },
   {
     "id": 2771,
@@ -769,10 +779,15 @@
     "exampleCn": "我理解了讲座的主旨。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "16",
+    "ieltsLists": [
+      "16"
+    ]
   },
   {
     "id": 2773,
@@ -844,10 +859,15 @@
     "exampleCn": "这家商店每周更新库存。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13"
+    ]
   },
   {
     "id": 2778,
