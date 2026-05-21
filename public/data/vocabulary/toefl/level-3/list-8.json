@@ -10,10 +10,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 499,
@@ -181,10 +186,15 @@
     "exampleCn": "这座城市计划下个月铺设这条路。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 1147,
@@ -385,10 +395,15 @@
     "exampleCn": "舞者优雅地穿过舞台。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 1159,
@@ -445,10 +460,15 @@
     "exampleCn": "在做决定前我们需要确凿的证据。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1163,
@@ -875,10 +895,15 @@
     "exampleCn": "许多鸟在冬天向南迁徙。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1189,
@@ -905,10 +930,15 @@
     "exampleCn": "河边发展出了一个小型定居点。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1191,

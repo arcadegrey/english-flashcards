@@ -10,10 +10,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 392,
@@ -47,10 +52,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 2725,
@@ -77,10 +87,15 @@
     "exampleCn": "物体下落时速度增加了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 2727,
@@ -107,10 +122,15 @@
     "exampleCn": "她用一条红丝带把包裹系好。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 2729,
@@ -137,10 +157,15 @@
     "exampleCn": "这座雕像是为纪念这位民族英雄而建的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 2731,
@@ -432,10 +457,15 @@
     "exampleCn": "农民把干草装上马车。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 2750,
@@ -552,10 +582,15 @@
     "exampleCn": "这台发动机可产生三百多马力。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 2758,
@@ -567,10 +602,15 @@
     "exampleCn": "蚊子可能成为疾病的传播媒介。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 2759,
@@ -709,10 +749,15 @@
     "exampleCn": "树上挂满了玻璃装饰品。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 2768,
@@ -889,10 +934,15 @@
     "exampleCn": "椅子上覆盖着红色天鹅绒。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 2779,

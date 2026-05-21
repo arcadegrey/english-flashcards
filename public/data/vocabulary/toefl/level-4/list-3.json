@@ -302,10 +302,15 @@
     "exampleCn": "老师对这篇文章给出了建设性的反馈。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1634,
@@ -754,10 +759,15 @@
     "exampleCn": "树木在秋天落叶。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1663,
@@ -954,10 +964,15 @@
     "exampleCn": "厨师加入香料来改善味道。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 1676,
@@ -989,10 +1004,15 @@
     "exampleCn": "人们往往会清楚地记住不寻常的事件。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 1678,

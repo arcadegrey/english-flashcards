@@ -1,0 +1,1081 @@
+[
+  {
+    "id": 196,
+    "word": "available",
+    "phonetic": "/əˈveɪləbl/",
+    "pos": "adj.",
+    "meaning": "可用的，可得到的",
+    "example": "Is this seat available?",
+    "exampleCn": "这个座位有人吗？",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 748,
+    "word": "trend",
+    "phonetic": "/trend/",
+    "pos": "n.",
+    "meaning": "趋势；倾向；时尚",
+    "example": "The trend is changing.",
+    "exampleCn": "趋势正在改变。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 797,
+    "word": "overall",
+    "phonetic": "/ˌəʊvərˈɔːl/",
+    "pos": "adj./adv.",
+    "meaning": "总体的/总的来说",
+    "example": "The overall result is good.",
+    "exampleCn": "总体结果是好的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 929,
+    "word": "skirt",
+    "phonetic": "/skɜːrt/",
+    "pos": "n./v.",
+    "meaning": "裙子；绕开",
+    "example": "The road skirts the edge of the lake.",
+    "exampleCn": "这条路沿着湖边延伸。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 1131,
+    "word": "perfection",
+    "phonetic": "/pərˈfekʃən/",
+    "pos": "n.",
+    "meaning": "完美，完善",
+    "example": "No one can achieve perfection in everything.",
+    "exampleCn": "没有人能在所有事情上都做到完美。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 1158,
+    "word": "graceful",
+    "phonetic": "/ˈɡreɪsfəl/",
+    "pos": "adj.",
+    "meaning": "优雅的；优美的",
+    "example": "The dancer made a graceful movement across the stage.",
+    "exampleCn": "舞者优雅地穿过舞台。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 1271,
+    "word": "luxury",
+    "phonetic": "/ˈlʌkʃəri/",
+    "pos": "n.",
+    "meaning": "奢侈；奢侈品",
+    "example": "For many people, time is a luxury.",
+    "exampleCn": "对很多人来说，时间是一种奢侈品。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 1287,
+    "word": "fashionable",
+    "phonetic": "/ˈfæʃənəbəl/",
+    "pos": "adj.",
+    "meaning": "时髦的；流行的",
+    "example": "That style became fashionable among young people.",
+    "exampleCn": "那种风格在年轻人中变得流行起来。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 1393,
+    "word": "fascinate",
+    "phonetic": "/ˈfæsəˌneɪt/",
+    "pos": "v.",
+    "meaning": "使着迷；强烈吸引",
+    "example": "Ancient history fascinates many students.",
+    "exampleCn": "古代历史令许多学生着迷。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 1568,
+    "word": "gem",
+    "phonetic": "/dʒem/",
+    "pos": "n.",
+    "meaning": "宝石/珍品",
+    "example": "The museum displayed a rare gem from ancient Egypt.",
+    "exampleCn": "博物馆展出了一颗来自古埃及的稀有宝石。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 1677,
+    "word": "tend",
+    "phonetic": "/tend/",
+    "pos": "v.",
+    "meaning": "倾向于/照料",
+    "example": "People tend to remember unusual events clearly.",
+    "exampleCn": "人们往往会清楚地记住不寻常的事件。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 1859,
+    "word": "luxurious",
+    "phonetic": "/lʌɡˈʒʊriəs/",
+    "pos": "adj.",
+    "meaning": "豪华的/奢侈的",
+    "example": "The hotel offered luxurious rooms with ocean views.",
+    "exampleCn": "这家酒店提供能看到海景的豪华房间。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 2053,
+    "word": "dye",
+    "phonetic": "/daɪ/",
+    "pos": "n./v.",
+    "meaning": "染料/染色",
+    "example": "The plant was used to make a natural dye.",
+    "exampleCn": "这种植物曾被用来制作天然染料。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 2450,
+    "word": "embellish",
+    "phonetic": "/ɪmˈbelɪʃ/",
+    "pos": "v.",
+    "meaning": "装饰/润色/夸张",
+    "example": "The writer embellished the story with vivid details.",
+    "exampleCn": "作者用生动的细节润色了这个故事。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 2676,
+    "word": "garment",
+    "phonetic": "/ˈɡɑːrmənt/",
+    "pos": "n.",
+    "meaning": "衣服/服装",
+    "example": "The garment was made from wool.",
+    "exampleCn": "这件衣服是羊毛制成的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 2767,
+    "word": "ornament",
+    "phonetic": "/ˈɔːrnəmənt/",
+    "pos": "n./v.",
+    "meaning": "装饰品/装饰",
+    "example": "The tree was covered with glass ornaments.",
+    "exampleCn": "树上挂满了玻璃装饰品。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 3016,
+    "word": "adorn",
+    "phonetic": "/əˈdɔːrn/",
+    "pos": "v.",
+    "meaning": "装饰/点缀",
+    "example": "Colorful paintings adorn the walls of the library.",
+    "exampleCn": "色彩鲜艳的画装饰着图书馆的墙壁。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 3056,
+    "word": "prevail",
+    "phonetic": "/prɪˈveɪl/",
+    "pos": "v.",
+    "meaning": "占优势/盛行/获胜",
+    "example": "Calm conditions prevailed after the storm passed.",
+    "exampleCn": "暴风雨过去后，平静的天气占了主导。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 3204,
+    "word": "pigment",
+    "phonetic": "/ˈpɪɡmənt/",
+    "pos": "n.",
+    "meaning": "色素/颜料",
+    "example": "Plants use a green pigment called chlorophyll to absorb light.",
+    "exampleCn": "植物用一种叫叶绿素的绿色色素吸收光。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 3291,
+    "word": "extravagant",
+    "phonetic": "/ɪkˈstrævəɡənt/",
+    "pos": "adj.",
+    "meaning": "奢侈的/过度的/铺张的",
+    "example": "They criticized the extravagant cost of the ceremony.",
+    "exampleCn": "他们批评典礼费用过于奢侈。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 3622,
+    "word": "current",
+    "phonetic": "/ˈkʌr.ənt/",
+    "pos": "n.",
+    "meaning": "水流/气流/电流",
+    "example": "A strong current carried the boat downstream.",
+    "exampleCn": "一股强流把小船带向下游。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2",
+    "ieltsLists": [
+      "2",
+      "28"
+    ]
+  },
+  {
+    "id": 4436,
+    "word": "style",
+    "phonetic": "staɪl",
+    "pos": "n.",
+    "meaning": "风格/样式",
+    "example": "The house was built in a modern style.",
+    "exampleCn": "这座房子是现代风格建造的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4437,
+    "word": "stylish",
+    "phonetic": "ˈstaɪlɪʃ",
+    "pos": "adj.",
+    "meaning": "时髦的/有格调的",
+    "example": "He looked stylish in his new suit.",
+    "exampleCn": "他穿着新西装看起来很时髦。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4438,
+    "word": "tendency",
+    "phonetic": "ˈtendənsi",
+    "pos": "n.",
+    "meaning": "倾向/趋势",
+    "example": "She has a tendency to worry too much.",
+    "exampleCn": "她有一种过分担心的倾向。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4439,
+    "word": "popularity",
+    "phonetic": "ˌpɒpjʊˈlærəti",
+    "pos": "n.",
+    "meaning": "流行/受欢迎",
+    "example": "The popularity of the app grew rapidly.",
+    "exampleCn": "这款应用的人气迅速增长。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4440,
+    "word": "vogue",
+    "phonetic": "vəʊɡ",
+    "pos": "n.",
+    "meaning": "时尚/流行",
+    "example": "Platform shoes are back in vogue.",
+    "exampleCn": "厚底鞋又重新流行起来了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4441,
+    "word": "prevalence",
+    "phonetic": "ˈprevələns",
+    "pos": "n.",
+    "meaning": "流行/普遍",
+    "example": "The prevalence of smartphones has changed daily life.",
+    "exampleCn": "智能手机的普及改变了日常生活。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4442,
+    "word": "prevailing",
+    "phonetic": "prɪˈveɪlɪŋ",
+    "pos": "adj.",
+    "meaning": "盛行的/占优势的",
+    "example": "The prevailing winds come from the west.",
+    "exampleCn": "盛行风来自西方。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4443,
+    "word": "model",
+    "phonetic": "ˈmɒdl",
+    "pos": "n.",
+    "meaning": "模特/模型",
+    "example": "She works as a fashion model.",
+    "exampleCn": "她是一名时装模特。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4444,
+    "word": "icon",
+    "phonetic": "ˈaɪkɒn",
+    "pos": "n.",
+    "meaning": "偶像/图标",
+    "example": "She became a fashion icon in the 1960s.",
+    "exampleCn": "她在20世纪60年代成为时尚偶像。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4445,
+    "word": "idol",
+    "phonetic": "ˈaɪdl",
+    "pos": "n.",
+    "meaning": "偶像/崇拜对象",
+    "example": "The singer was his childhood idol.",
+    "exampleCn": "那位歌手是他童年时的偶像。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4446,
+    "word": "jewellery",
+    "phonetic": "ˈdʒuːəlri",
+    "pos": "n.",
+    "meaning": "珠宝/首饰",
+    "example": "She inherited some valuable jewellery from her grandmother.",
+    "exampleCn": "她从祖母那里继承了一些珍贵的珠宝。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4447,
+    "word": "jewel",
+    "phonetic": "ˈdʒuːəl",
+    "pos": "n.",
+    "meaning": "宝石/珠宝",
+    "example": "The crown was set with precious jewels.",
+    "exampleCn": "王冠上镶嵌着珍贵的宝石。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4448,
+    "word": "jade",
+    "phonetic": "dʒeɪd",
+    "pos": "n.",
+    "meaning": "玉/翡翠",
+    "example": "She wore a necklace made of green jade.",
+    "exampleCn": "她戴了一条绿玉项链。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4449,
+    "word": "embroider",
+    "phonetic": "ɪmˈbrɔɪdə",
+    "pos": "v.",
+    "meaning": "刺绣/绣花",
+    "example": "She embroidered flowers onto the pillowcase.",
+    "exampleCn": "她在枕套上绣了花。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4450,
+    "word": "hairdressing",
+    "phonetic": "ˈheədresɪŋ",
+    "pos": "n.",
+    "meaning": "美发/理发",
+    "example": "She studied hairdressing at a vocational school.",
+    "exampleCn": "她在一所职业学校学习了美发。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4451,
+    "word": "masquerade",
+    "phonetic": "ˌmæskəˈreɪd",
+    "pos": "n.",
+    "meaning": "化装舞会/伪装",
+    "example": "They attended a masquerade ball at the palace.",
+    "exampleCn": "他们参加了宫殿里的化装舞会。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4452,
+    "word": "veil",
+    "phonetic": "veɪl",
+    "pos": "n.",
+    "meaning": "面纱/遮蔽物",
+    "example": "The bride wore a white lace veil.",
+    "exampleCn": "新娘戴着白色蕾丝面纱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4453,
+    "word": "costume",
+    "phonetic": "ˈkɒstjuːm",
+    "pos": "n.",
+    "meaning": "服装/戏服",
+    "example": "The actors wore elaborate costumes on stage.",
+    "exampleCn": "演员们在舞台上穿着精美的戏服。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4454,
+    "word": "cosplay",
+    "phonetic": "ˈkɒspleɪ",
+    "pos": "n.",
+    "meaning": "角色扮演",
+    "example": "She dressed up as a cartoon character for the cosplay event.",
+    "exampleCn": "她为角色扮演活动装扮成了一位卡通人物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4455,
+    "word": "decent",
+    "phonetic": "ˈdiːsnt",
+    "pos": "adj.",
+    "meaning": "得体的/正派的",
+    "example": "He earns a decent salary for his work.",
+    "exampleCn": "他工作挣着不错的薪水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4456,
+    "word": "indecent",
+    "phonetic": "ɪnˈdiːsnt",
+    "pos": "adj.",
+    "meaning": "不得体的/下流的",
+    "example": "The film was banned for indecent content.",
+    "exampleCn": "该影片因含有下流内容而被禁。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4457,
+    "word": "exquisite",
+    "phonetic": "ɪkˈskwɪzɪt",
+    "pos": "adj.",
+    "meaning": "精美的/精致的",
+    "example": "The museum houses an exquisite collection of paintings.",
+    "exampleCn": "博物馆藏有一批精美的画作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4458,
+    "word": "grace",
+    "phonetic": "ɡreɪs",
+    "pos": "n.",
+    "meaning": "优雅/风度",
+    "example": "She moved with the grace of a dancer.",
+    "exampleCn": "她走路时带着舞者的优雅。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4459,
+    "word": "elegance",
+    "phonetic": "ˈelɪɡəns",
+    "pos": "n.",
+    "meaning": "优雅/典雅",
+    "example": "The hotel was decorated with elegance and taste.",
+    "exampleCn": "酒店的装饰典雅而有品位。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4460,
+    "word": "elegant",
+    "phonetic": "ˈelɪɡənt",
+    "pos": "adj.",
+    "meaning": "优雅的/精致的",
+    "example": "She wore an elegant black dress to the party.",
+    "exampleCn": "她穿了一条优雅的黑色连衣裙去参加聚会。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4461,
+    "word": "appearance",
+    "phonetic": "əˈpɪərəns",
+    "pos": "n.",
+    "meaning": "外貌/外观",
+    "example": "First impressions are often based on appearance.",
+    "exampleCn": "第一印象往往基于外貌。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4462,
+    "word": "cosmetics",
+    "phonetic": "kɒzˈmetɪks",
+    "pos": "n.",
+    "meaning": "化妆品/美容品",
+    "example": "She spends a lot of money on cosmetics every month.",
+    "exampleCn": "她每月花很多钱买化妆品。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4463,
+    "word": "charming",
+    "phonetic": "ˈtʃɑːmɪŋ",
+    "pos": "adj.",
+    "meaning": "迷人的/有魅力的",
+    "example": "The village is full of charming old cottages.",
+    "exampleCn": "这个村庄到处是迷人的老农舍。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4464,
+    "word": "handsome",
+    "phonetic": "ˈhænsəm",
+    "pos": "adj.",
+    "meaning": "英俊的/帅气的",
+    "example": "He is a tall and handsome young man.",
+    "exampleCn": "他是一个高大英俊的年轻人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4465,
+    "word": "clothing",
+    "phonetic": "ˈkləʊðɪŋ",
+    "pos": "n.",
+    "meaning": "服装/衣着",
+    "example": "The shop sells second-hand clothing.",
+    "exampleCn": "这家商店出售二手服装。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4466,
+    "word": "uniform",
+    "phonetic": "ˈjuːnɪfɔːm",
+    "pos": "n.",
+    "meaning": "制服/统一的",
+    "example": "Students are required to wear a school uniform.",
+    "exampleCn": "学生被要求穿校服。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4467,
+    "word": "laundry",
+    "phonetic": "ˈlɔːndri",
+    "pos": "n.",
+    "meaning": "洗衣/洗衣店",
+    "example": "She does the laundry every Monday.",
+    "exampleCn": "她每周一洗衣服。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4468,
+    "word": "wardrobe",
+    "phonetic": "ˈwɔːdrəʊb",
+    "pos": "n.",
+    "meaning": "衣柜/衣橱",
+    "example": "She has a wardrobe full of clothes.",
+    "exampleCn": "她有一个装满衣服的衣柜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4469,
+    "word": "overcoat",
+    "phonetic": "ˈəʊvəkəʊt",
+    "pos": "n.",
+    "meaning": "大衣/外套",
+    "example": "He wore a heavy overcoat to keep warm.",
+    "exampleCn": "他穿了一件厚大衣来保暖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4470,
+    "word": "robe",
+    "phonetic": "rəʊb",
+    "pos": "n.",
+    "meaning": "长袍/浴袍",
+    "example": "She put on a silk robe after her bath.",
+    "exampleCn": "洗完澡后她穿上了一件丝质浴袍。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4471,
+    "word": "gown",
+    "phonetic": "ɡaʊn",
+    "pos": "n.",
+    "meaning": "礼服/长袍",
+    "example": "The bride wore a beautiful white gown.",
+    "exampleCn": "新娘穿了一条美丽的白色礼服。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4472,
+    "word": "sweater",
+    "phonetic": "ˈswetə",
+    "pos": "n.",
+    "meaning": "毛衣/针织衫",
+    "example": "She knitted a warm sweater for winter.",
+    "exampleCn": "她为冬天织了一件温暖的毛衣。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4473,
+    "word": "jacket",
+    "phonetic": "ˈdʒækɪt",
+    "pos": "n.",
+    "meaning": "夹克/外套",
+    "example": "He wore a leather jacket and jeans.",
+    "exampleCn": "他穿了一件皮夹克和牛仔裤。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4474,
+    "word": "jeans",
+    "phonetic": "dʒiːnz",
+    "pos": "n.",
+    "meaning": "牛仔裤",
+    "example": "He prefers to wear jeans on weekends.",
+    "exampleCn": "他周末更喜欢穿牛仔裤。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  }
+]

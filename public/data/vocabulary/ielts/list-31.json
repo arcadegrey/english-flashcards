@@ -1,0 +1,1057 @@
+[
+  {
+    "id": 239,
+    "word": "berry",
+    "phonetic": "/ˈberi/",
+    "pos": "n.",
+    "meaning": "浆果",
+    "example": "Strawberries are my favorite berry.",
+    "exampleCn": "草莓是我最喜欢的浆果。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 251,
+    "word": "biscuit",
+    "phonetic": "/ˈbɪskɪt/",
+    "pos": "n.",
+    "meaning": "饼干",
+    "example": "She baked fresh biscuits for breakfast.",
+    "exampleCn": "她烤了新鲜饼干当早餐。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 343,
+    "word": "butter",
+    "phonetic": "/ˈbʌtər/",
+    "pos": "n.",
+    "meaning": "黄油",
+    "example": "She spread butter on the bread.",
+    "exampleCn": "她把黄油涂在面包上。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 380,
+    "word": "carrot",
+    "phonetic": "/ˈkærət/",
+    "pos": "n.",
+    "meaning": "胡萝卜",
+    "example": "Rabbits love eating carrots.",
+    "exampleCn": "兔子喜欢吃胡萝卜。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 429,
+    "word": "cheese",
+    "phonetic": "/tʃiːz/",
+    "pos": "n.",
+    "meaning": "奶酪",
+    "example": "Would you like some cheese?",
+    "exampleCn": "你想要一些奶酪吗？",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 826,
+    "word": "livestock",
+    "phonetic": "/ˈlaɪvstɒk/",
+    "pos": "n.",
+    "meaning": "家畜；牲畜",
+    "example": "The farmer raises livestock.",
+    "exampleCn": "农民饲养牲畜。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 1066,
+    "word": "paste",
+    "phonetic": "/peɪst/",
+    "pos": "n./v.",
+    "meaning": "糨糊，膏/粘贴",
+    "example": "Use paste to stick the paper to the wall./Please paste the image here.",
+    "exampleCn": "用浆糊把纸贴到墙上。/请把图片粘贴到这里。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 1321,
+    "word": "grain",
+    "phonetic": "/ɡreɪn/",
+    "pos": "n.",
+    "meaning": "谷物；颗粒",
+    "example": "The country imports grain during dry years.",
+    "exampleCn": "这个国家在干旱年份会进口谷物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 1864,
+    "word": "peel",
+    "phonetic": "/piːl/",
+    "pos": "v./n.",
+    "meaning": "剥皮/脱落/果皮",
+    "example": "She used a knife to peel the apple.",
+    "exampleCn": "她用刀给苹果削皮。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31",
+      "32"
+    ]
+  },
+  {
+    "id": 1865,
+    "word": "strip",
+    "phonetic": "/strɪp/",
+    "pos": "v./n.",
+    "meaning": "剥去/脱去/条状物/狭长地带",
+    "example": "The workers had to strip the old paint from the wall.",
+    "exampleCn": "工人们不得不把墙上的旧油漆刮掉。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 1906,
+    "word": "core",
+    "phonetic": "/kɔːr/",
+    "pos": "n./adj.",
+    "meaning": "核心/果核/核心的",
+    "example": "The core of the argument is supported by strong evidence.",
+    "exampleCn": "这个论点的核心有有力证据支持。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "1",
+    "ieltsLists": [
+      "1",
+      "31"
+    ]
+  },
+  {
+    "id": 2101,
+    "word": "plum",
+    "phonetic": "/plʌm/",
+    "pos": "n./adj.",
+    "meaning": "李子/紫红色/极好的",
+    "example": "The plum tree blooms early in spring.",
+    "exampleCn": "李子树在早春开花。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 2928,
+    "word": "reap",
+    "phonetic": "/riːp/",
+    "pos": "v.",
+    "meaning": "收割/获得/收获",
+    "example": "Students who study steadily often reap good results.",
+    "exampleCn": "坚持学习的学生通常会收获好成绩。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 3505,
+    "word": "mustard",
+    "phonetic": "/ˈmʌstərd/",
+    "pos": "n.",
+    "meaning": "芥末/芥菜",
+    "example": "He spread mustard on the sandwich.",
+    "exampleCn": "他把芥末抹在三明治上。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "6",
+    "list": "4",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 3958,
+    "word": "diary",
+    "phonetic": "ˈdaɪəri",
+    "pos": "n.",
+    "meaning": "日记",
+    "example": "She wrote about her travels in her diary every night.",
+    "exampleCn": "她每晚在日记中写下她的旅行经历。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13",
+      "31"
+    ]
+  },
+  {
+    "id": 4554,
+    "word": "mushroom",
+    "phonetic": "ˈmʌʃrʊm",
+    "pos": "n.",
+    "meaning": "蘑菇",
+    "example": "She picked wild mushrooms in the forest.",
+    "exampleCn": "她在森林里采了野蘑菇。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4555,
+    "word": "eggplant",
+    "phonetic": "ˈeɡplɑːnt",
+    "pos": "n.",
+    "meaning": "茄子",
+    "example": "Grilled eggplant is a popular dish in the region.",
+    "exampleCn": "烤茄子是这个地区的一道常见菜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4556,
+    "word": "turnip",
+    "phonetic": "ˈtɜːnɪp",
+    "pos": "n.",
+    "meaning": "萝卜/芜菁",
+    "example": "Turnips are a common ingredient in winter soups.",
+    "exampleCn": "萝卜是冬季汤中的常见食材。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4557,
+    "word": "radish",
+    "phonetic": "ˈrædɪʃ",
+    "pos": "n.",
+    "meaning": "小萝卜/水萝卜",
+    "example": "She added sliced radishes to the salad.",
+    "exampleCn": "她在沙拉里加了切成片的小萝卜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4558,
+    "word": "hull",
+    "phonetic": "hʌl",
+    "pos": "n.",
+    "meaning": "外壳/豆荚",
+    "example": "The hull of the strawberry was still attached.",
+    "exampleCn": "草莓的花萼还附着在上面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4559,
+    "word": "cherry",
+    "phonetic": "ˈtʃeri",
+    "pos": "n.",
+    "meaning": "樱桃",
+    "example": "The tree was covered in pink cherry blossom.",
+    "exampleCn": "树上开满了粉色的樱花。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4560,
+    "word": "strawberry",
+    "phonetic": "ˈstrɔːbəri",
+    "pos": "n.",
+    "meaning": "草莓",
+    "example": "She picked a basket of fresh strawberries.",
+    "exampleCn": "她摘了一篮新鲜草莓。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4561,
+    "word": "blueberry",
+    "phonetic": "ˈbluːbəri",
+    "pos": "n.",
+    "meaning": "蓝莓",
+    "example": "Blueberries are rich in vitamins.",
+    "exampleCn": "蓝莓富含维生素。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4562,
+    "word": "grape",
+    "phonetic": "ɡreɪp",
+    "pos": "n.",
+    "meaning": "葡萄",
+    "example": "The vineyard produces sweet green grapes.",
+    "exampleCn": "这座葡萄园出产甜美的绿葡萄。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4563,
+    "word": "papaya",
+    "phonetic": "pəˈpaɪə",
+    "pos": "n.",
+    "meaning": "木瓜",
+    "example": "Papaya is a tropical fruit rich in enzymes.",
+    "exampleCn": "木瓜是一种富含酶的热带水果。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4564,
+    "word": "melon",
+    "phonetic": "ˈmelən",
+    "pos": "n.",
+    "meaning": "甜瓜/瓜类",
+    "example": "We ate slices of juicy melon for dessert.",
+    "exampleCn": "我们吃了多汁的甜瓜片当甜点。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4565,
+    "word": "lemon",
+    "phonetic": "ˈlemən",
+    "pos": "n.",
+    "meaning": "柠檬",
+    "example": "She squeezed a lemon into her tea.",
+    "exampleCn": "她往茶里挤了一个柠檬。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4566,
+    "word": "lemonade",
+    "phonetic": "ˌleməˈneɪd",
+    "pos": "n.",
+    "meaning": "柠檬水/柠檬汽水",
+    "example": "On hot days, they sell lemonade at the stand.",
+    "exampleCn": "天热的时候，他们在摊位卖柠檬水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4567,
+    "word": "kiwi",
+    "phonetic": "ˈkiːwiː",
+    "pos": "n.",
+    "meaning": "猕猴桃/几维鸟",
+    "example": "She peeled a kiwi and sliced it into the fruit bowl.",
+    "exampleCn": "她剥了一个猕猴桃并切成片放进水果碗里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4568,
+    "word": "crop",
+    "phonetic": "krɒp",
+    "pos": "n.",
+    "meaning": "庄稼/农作物",
+    "example": "Rice is the main crop grown in this region.",
+    "exampleCn": "水稻是这个地区种植的主要作物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4569,
+    "word": "corn",
+    "phonetic": "kɔːn",
+    "pos": "n.",
+    "meaning": "玉米/谷物",
+    "example": "The fields of corn stretched for miles.",
+    "exampleCn": "玉米田延绵数英里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4570,
+    "word": "popcorn",
+    "phonetic": "ˈpɒpkɔːn",
+    "pos": "n.",
+    "meaning": "爆米花",
+    "example": "They ate popcorn while watching the movie.",
+    "exampleCn": "他们边看电影边吃爆米花。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4571,
+    "word": "wheat",
+    "phonetic": "wiːt",
+    "pos": "n.",
+    "meaning": "小麦",
+    "example": "The wheat fields turned golden in autumn.",
+    "exampleCn": "麦田在秋天变成了金黄色。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4572,
+    "word": "flour",
+    "phonetic": "ˈflaʊə",
+    "pos": "n.",
+    "meaning": "面粉",
+    "example": "She used flour to bake a cake.",
+    "exampleCn": "她用面粉烤了一个蛋糕。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4573,
+    "word": "porridge",
+    "phonetic": "ˈpɒrɪdʒ",
+    "pos": "n.",
+    "meaning": "粥/麦片粥",
+    "example": "He had a bowl of porridge for breakfast.",
+    "exampleCn": "他早餐吃了一碗粥。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4574,
+    "word": "turkey",
+    "phonetic": "ˈtɜːki",
+    "pos": "n.",
+    "meaning": "火鸡/土耳其",
+    "example": "Roast turkey is a traditional Christmas dish.",
+    "exampleCn": "烤火鸡是传统的圣诞菜肴。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4575,
+    "word": "beefy",
+    "phonetic": "ˈbiːfi",
+    "pos": "adj.",
+    "meaning": "强壮的/牛肉味的",
+    "example": "The stew had a rich beefy flavour.",
+    "exampleCn": "这道炖菜有浓郁的牛肉味。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4576,
+    "word": "pork",
+    "phonetic": "pɔːk",
+    "pos": "n.",
+    "meaning": "猪肉",
+    "example": "She cooked sweet and sour pork for dinner.",
+    "exampleCn": "她晚餐做了咕噜肉。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4577,
+    "word": "mutton",
+    "phonetic": "ˈmʌtn",
+    "pos": "n.",
+    "meaning": "羊肉",
+    "example": "Mutton is often used in traditional stews.",
+    "exampleCn": "羊肉常用于传统炖菜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4578,
+    "word": "sausage",
+    "phonetic": "ˈsɒsɪdʒ",
+    "pos": "n.",
+    "meaning": "香肠/腊肠",
+    "example": "He grilled some sausages on the barbecue.",
+    "exampleCn": "他在烧烤架上烤了一些香肠。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4579,
+    "word": "an odd fish",
+    "phonetic": "",
+    "pos": "n.",
+    "meaning": "古怪的人",
+    "example": "He is an odd fish, but everyone likes him.",
+    "exampleCn": "他是个古怪的人，但大家都喜欢他。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4580,
+    "word": "pond",
+    "phonetic": "pɒnd",
+    "pos": "n.",
+    "meaning": "池塘/水潭",
+    "example": "There are ducks swimming on the pond.",
+    "exampleCn": "池塘里有鸭子在游泳。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4581,
+    "word": "rod",
+    "phonetic": "rɒd",
+    "pos": "n.",
+    "meaning": "钓竿/杆",
+    "example": "He cast his fishing rod into the river.",
+    "exampleCn": "他把钓竿甩进了河里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4582,
+    "word": "dairy",
+    "phonetic": "ˈdeəri",
+    "pos": "n.",
+    "meaning": "乳制品/奶制品",
+    "example": "Dairy products such as milk and cheese are rich in calcium.",
+    "exampleCn": "牛奶和奶酪等乳制品富含钙质。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4583,
+    "word": "boiling",
+    "phonetic": "ˈbɔɪlɪŋ",
+    "pos": "adj.",
+    "meaning": "沸腾的/极热的",
+    "example": "The water in the pot was boiling hot.",
+    "exampleCn": "锅里的水沸腾得很热。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4584,
+    "word": "yogurt",
+    "phonetic": "ˈjɒɡət",
+    "pos": "n.",
+    "meaning": "酸奶/优格",
+    "example": "She eats yogurt with fruit for breakfast.",
+    "exampleCn": "她早餐吃酸奶配水果。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4585,
+    "word": "creamy",
+    "phonetic": "ˈkriːmi",
+    "pos": "adj.",
+    "meaning": "奶油般的/含奶油的",
+    "example": "The soup had a smooth and creamy texture.",
+    "exampleCn": "汤的质地又滑又绵。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4586,
+    "word": "pudding",
+    "phonetic": "ˈpʊdɪŋ",
+    "pos": "n.",
+    "meaning": "布丁/甜点",
+    "example": "After dinner, they had chocolate pudding for dessert.",
+    "exampleCn": "晚饭后，他们吃了巧克力布丁当甜点。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4587,
+    "word": "sandwich",
+    "phonetic": "ˈsænwɪtʃ",
+    "pos": "n.",
+    "meaning": "三明治",
+    "example": "He made a cheese and ham sandwich for lunch.",
+    "exampleCn": "他做了一个奶酪火腿三明治当午餐。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4588,
+    "word": "loaf",
+    "phonetic": "ləʊf",
+    "pos": "n.",
+    "meaning": "一条面包",
+    "example": "She bought a fresh loaf of bread from the bakery.",
+    "exampleCn": "她从面包店买了一条新鲜面包。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4589,
+    "word": "pasta",
+    "phonetic": "ˈpæstə",
+    "pos": "n.",
+    "meaning": "意大利面/面食",
+    "example": "He cooked pasta with tomato sauce for dinner.",
+    "exampleCn": "他晚餐做了番茄酱意大利面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4590,
+    "word": "jam",
+    "phonetic": "dʒæm",
+    "pos": "n.",
+    "meaning": "果酱/堵塞",
+    "example": "She spread strawberry jam on her toast.",
+    "exampleCn": "她在吐司上抹了草莓果酱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4591,
+    "word": "vanilla",
+    "phonetic": "vəˈnɪlə",
+    "pos": "n.",
+    "meaning": "香草/香草精",
+    "example": "The ice cream is flavoured with vanilla.",
+    "exampleCn": "这款冰淇淋是香草味的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4592,
+    "word": "wasabi",
+    "phonetic": "wəˈsɑːbi",
+    "pos": "n.",
+    "meaning": "芥末/山葵",
+    "example": "Sushi is often served with wasabi and soy sauce.",
+    "exampleCn": "寿司常常搭配芥末和酱油。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4593,
+    "word": "pepper",
+    "phonetic": "ˈpepə",
+    "pos": "n.",
+    "meaning": "胡椒/胡椒粉",
+    "example": "Season the meat with salt and pepper.",
+    "exampleCn": "用盐和胡椒给肉调味。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4594,
+    "word": "ginger",
+    "phonetic": "ˈdʒɪndʒə",
+    "pos": "n.",
+    "meaning": "姜/生姜",
+    "example": "Ginger adds a spicy kick to the stir-fry.",
+    "exampleCn": "生姜为炒菜增添了辛辣的味道。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4595,
+    "word": "garlic",
+    "phonetic": "ˈɡɑːlɪk",
+    "pos": "n.",
+    "meaning": "大蒜/蒜头",
+    "example": "She crushed a clove of garlic into the pan.",
+    "exampleCn": "她把一瓣大蒜压碎放入锅中。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4596,
+    "word": "scallion",
+    "phonetic": "ˈskæliən",
+    "pos": "n.",
+    "meaning": "葱/青葱",
+    "example": "Garnish the soup with chopped scallions.",
+    "exampleCn": "用切碎的葱花装饰汤。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4597,
+    "word": "vinegar",
+    "phonetic": "ˈvɪnɪɡə",
+    "pos": "n.",
+    "meaning": "醋",
+    "example": "Dress the salad with oil and vinegar.",
+    "exampleCn": "用油和醋给沙拉调味。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4598,
+    "word": "salty",
+    "phonetic": "ˈsɔːlti",
+    "pos": "adj.",
+    "meaning": "咸的/含盐的",
+    "example": "The soup was too salty for her taste.",
+    "exampleCn": "汤对她来说太咸了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  }
+]

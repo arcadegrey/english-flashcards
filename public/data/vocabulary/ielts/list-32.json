@@ -1,0 +1,865 @@
+[
+  {
+    "id": 201,
+    "word": "bakery",
+    "phonetic": "/ˈbeɪkəri/",
+    "pos": "n.",
+    "meaning": "面包店",
+    "example": "The bakery sells fresh bread every morning.",
+    "exampleCn": "这家面包店每天早上卖新鲜面包。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 253,
+    "word": "bitter",
+    "phonetic": "/ˈbɪtər/",
+    "pos": "adj.",
+    "meaning": "苦的；痛苦的",
+    "example": "The medicine tastes very bitter.",
+    "exampleCn": "这药味道很苦。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 654,
+    "word": "digest",
+    "phonetic": "/daɪˈdʒest/",
+    "pos": "v.",
+    "meaning": "消化；领会",
+    "example": "The body digests food.",
+    "exampleCn": "身体消化食物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 790,
+    "word": "chew",
+    "phonetic": "/tʃuː/",
+    "pos": "v.",
+    "meaning": "咀嚼；嚼碎；深思",
+    "example": "Chew your food well.",
+    "exampleCn": "好好咀嚼食物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 880,
+    "word": "suck",
+    "phonetic": "/sʌk/",
+    "pos": "v.",
+    "meaning": "吸；吮吸",
+    "example": "Babies suck their thumbs when they are nervous.",
+    "exampleCn": "婴儿紧张时会吮吸大拇指。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 919,
+    "word": "squeeze",
+    "phonetic": "/skwiːz/",
+    "pos": "v.",
+    "meaning": "挤压；挤出",
+    "example": "She squeezed some juice from the orange.",
+    "exampleCn": "她从橙子里挤出了一些汁。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 1278,
+    "word": "slice",
+    "phonetic": "/slaɪs/",
+    "pos": "n./v.",
+    "meaning": "薄片；部分/切成薄片",
+    "example": "He ate a slice of bread before class.",
+    "exampleCn": "他上课前吃了一片面包。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 1448,
+    "word": "ingredient",
+    "phonetic": "/ɪnˈɡriːdiənt/",
+    "pos": "n.",
+    "meaning": "成分/原料/要素",
+    "example": "Water is a basic ingredient in many chemical reactions.",
+    "exampleCn": "水是许多化学反应中的基本成分。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 1675,
+    "word": "spice",
+    "phonetic": "/spaɪs/",
+    "pos": "n./v.",
+    "meaning": "香料/增添趣味",
+    "example": "The cook added spice to improve the flavor.",
+    "exampleCn": "厨师加入香料来改善味道。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 1751,
+    "word": "soak",
+    "phonetic": "/soʊk/",
+    "pos": "v./n.",
+    "meaning": "浸泡/湿透",
+    "example": "Farmers soak the seeds before planting them.",
+    "exampleCn": "农民在播种前浸泡种子。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 1840,
+    "word": "acidic",
+    "phonetic": "/əˈsɪdɪk/",
+    "pos": "adj.",
+    "meaning": "酸性的/尖刻的",
+    "example": "Acidic soil can make it difficult for some plants to grow.",
+    "exampleCn": "酸性土壤会使一些植物难以生长。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 1864,
+    "word": "peel",
+    "phonetic": "/piːl/",
+    "pos": "v./n.",
+    "meaning": "剥皮/脱落/果皮",
+    "example": "She used a knife to peel the apple.",
+    "exampleCn": "她用刀给苹果削皮。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31",
+      "32"
+    ]
+  },
+  {
+    "id": 2149,
+    "word": "roast",
+    "phonetic": "/roʊst/",
+    "pos": "v./n./adj.",
+    "meaning": "烤/烘烤/烤肉/烤制的",
+    "example": "They roast coffee beans before grinding them.",
+    "exampleCn": "他们在研磨咖啡豆之前先烘焙。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 2386,
+    "word": "stir",
+    "phonetic": "/stɜːr/",
+    "pos": "v./n.",
+    "meaning": "搅拌/激起/轰动",
+    "example": "Stir the soup slowly while it cooks.",
+    "exampleCn": "煮汤时慢慢搅拌。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 2695,
+    "word": "grind",
+    "phonetic": "/ɡraɪnd/",
+    "pos": "v./n.",
+    "meaning": "磨碎/磨/苦差事",
+    "example": "The mill can grind wheat into flour.",
+    "exampleCn": "磨坊可以把小麦磨成面粉。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 3121,
+    "word": "supplement",
+    "phonetic": "/ˈsʌplɪment/",
+    "pos": "n./v.",
+    "meaning": "补充物/补充",
+    "example": "The teacher gave students extra readings to supplement the textbook.",
+    "exampleCn": "老师给学生额外阅读材料来补充课本内容。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 3814,
+    "word": "swallow",
+    "phonetic": "ˈswɒləʊ",
+    "pos": "n/v.",
+    "meaning": "燕子/吞咽",
+    "example": "Swallows return to the same nesting site every spring.",
+    "exampleCn": "燕子每年春天都回到同一个筑巢地点。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8",
+      "32"
+    ]
+  },
+  {
+    "id": 4312,
+    "word": "toss",
+    "phonetic": "tɒs",
+    "pos": "v.",
+    "meaning": "抛/轻投",
+    "example": "She tossed a coin to decide who would go first.",
+    "exampleCn": "她抛了一枚硬币来决定谁先走。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24",
+      "32"
+    ]
+  },
+  {
+    "id": 4599,
+    "word": "flavour",
+    "phonetic": "ˈfleɪvə",
+    "pos": "n.",
+    "meaning": "味道/风味",
+    "example": "The soup had a rich tomato flavour.",
+    "exampleCn": "汤有浓郁的番茄味。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4600,
+    "word": "sour",
+    "phonetic": "ˈsaʊə",
+    "pos": "adj.",
+    "meaning": "酸的/馊的",
+    "example": "The milk had gone sour.",
+    "exampleCn": "牛奶变酸了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4601,
+    "word": "sweeten",
+    "phonetic": "ˈswiːtn",
+    "pos": "v.",
+    "meaning": "使变甜/加糖",
+    "example": "She sweetened her tea with honey.",
+    "exampleCn": "她加蜂蜜让茶变甜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4602,
+    "word": "spicy",
+    "phonetic": "ˈspaɪsi",
+    "pos": "adj.",
+    "meaning": "辣的/辛辣的",
+    "example": "Thai food is often very spicy.",
+    "exampleCn": "泰国菜通常非常辣。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4603,
+    "word": "delicious",
+    "phonetic": "dɪˈlɪʃəs",
+    "pos": "adj.",
+    "meaning": "美味的/可口的",
+    "example": "The homemade apple pie was delicious.",
+    "exampleCn": "自制的苹果派很美味。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4604,
+    "word": "tasty",
+    "phonetic": "ˈteɪsti",
+    "pos": "adj.",
+    "meaning": "好吃的/美味的",
+    "example": "She cooked a tasty meal for the family.",
+    "exampleCn": "她为家人做了一顿美味的饭菜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4605,
+    "word": "hunger",
+    "phonetic": "ˈhʌŋɡə",
+    "pos": "n.",
+    "meaning": "饥饿/渴望",
+    "example": "The children are suffering from hunger.",
+    "exampleCn": "孩子们正在遭受饥饿。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4606,
+    "word": "hungry",
+    "phonetic": "ˈhʌŋɡri",
+    "pos": "adj.",
+    "meaning": "饥饿的/渴望的",
+    "example": "He felt hungry after the long walk.",
+    "exampleCn": "长途步行后他感到饿了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4607,
+    "word": "thirsty",
+    "phonetic": "ˈθɜːsti",
+    "pos": "adj.",
+    "meaning": "口渴的/渴望的",
+    "example": "After the run, she was thirsty and tired.",
+    "exampleCn": "跑步后，她又渴又累。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4608,
+    "word": "sauce",
+    "phonetic": "sɔːs",
+    "pos": "n.",
+    "meaning": "酱汁/调味汁",
+    "example": "She poured a creamy sauce over the pasta.",
+    "exampleCn": "她在意大利面上浇了奶油酱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4609,
+    "word": "soy sauce",
+    "phonetic": "",
+    "pos": "n.",
+    "meaning": "酱油",
+    "example": "Add a dash of soy sauce to the stir-fry.",
+    "exampleCn": "往炒菜里加一点点酱油。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4610,
+    "word": "ketchup",
+    "phonetic": "ˈketʃəp",
+    "pos": "n.",
+    "meaning": "番茄酱",
+    "example": "He squeezed some ketchup onto his chips.",
+    "exampleCn": "他在薯条上挤了一些番茄酱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4611,
+    "word": "perfume",
+    "phonetic": "ˈpɜːfjuːm",
+    "pos": "n.",
+    "meaning": "香水/香味",
+    "example": "She wore a delicate rose perfume.",
+    "exampleCn": "她喷了一款淡雅的玫瑰香水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4612,
+    "word": "digestion",
+    "phonetic": "daɪˈdʒestʃən",
+    "pos": "n.",
+    "meaning": "消化/消化能力",
+    "example": "Yoghurt can help improve digestion.",
+    "exampleCn": "酸奶可以帮助改善消化。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4613,
+    "word": "cook",
+    "phonetic": "kʊk",
+    "pos": "v.",
+    "meaning": "烹饪/做饭",
+    "example": "She learned to cook from her grandmother.",
+    "exampleCn": "她从祖母那里学会了做饭。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4614,
+    "word": "cooker",
+    "phonetic": "ˈkʊkə",
+    "pos": "n.",
+    "meaning": "炊具/灶具",
+    "example": "They bought a new gas cooker for the kitchen.",
+    "exampleCn": "他们为厨房买了一个新的燃气灶。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4615,
+    "word": "bake",
+    "phonetic": "beɪk",
+    "pos": "v.",
+    "meaning": "烘烤/烘焙",
+    "example": "She baked a chocolate cake for the party.",
+    "exampleCn": "她为聚会烤了一个巧克力蛋糕。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4616,
+    "word": "baker",
+    "phonetic": "ˈbeɪkə",
+    "pos": "n.",
+    "meaning": "面包师/烘焙师",
+    "example": "The baker gets up early to make fresh bread.",
+    "exampleCn": "面包师早起制作新鲜面包。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4617,
+    "word": "fry",
+    "phonetic": "fraɪ",
+    "pos": "v.",
+    "meaning": "油炸/炒",
+    "example": "He fried some eggs for breakfast.",
+    "exampleCn": "他煎了几个蛋当早餐。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4618,
+    "word": "toast",
+    "phonetic": "təʊst",
+    "pos": "n./v.",
+    "meaning": "烤面包片/烘烤",
+    "example": "She had buttered toast for breakfast.",
+    "exampleCn": "她早餐吃了抹黄油的烤面包。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4619,
+    "word": "toaster",
+    "phonetic": "ˈtəʊstə",
+    "pos": "n.",
+    "meaning": "烤面包机",
+    "example": "He put two slices of bread in the toaster.",
+    "exampleCn": "他把两片面包放进了烤面包机。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4620,
+    "word": "lick",
+    "phonetic": "lɪk",
+    "pos": "v.",
+    "meaning": "舔/舐",
+    "example": "The cat licked its paw clean.",
+    "exampleCn": "猫把爪子舔干净了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4621,
+    "word": "dip",
+    "phonetic": "dɪp",
+    "pos": "v.",
+    "meaning": "蘸/浸一下",
+    "example": "She dipped a biscuit into her coffee.",
+    "exampleCn": "她把饼干蘸了一下咖啡。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4622,
+    "word": "dice",
+    "phonetic": "daɪs",
+    "pos": "v.",
+    "meaning": "切丁/切成小块",
+    "example": "Dice the onions finely before frying them.",
+    "exampleCn": "洋葱切丁后再炒。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4623,
+    "word": "shred",
+    "phonetic": "ʃred",
+    "pos": "v.",
+    "meaning": "切丝/撕碎",
+    "example": "She shredded the lettuce for the salad.",
+    "exampleCn": "她把生菜切丝做沙拉。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4624,
+    "word": "deep-fry",
+    "phonetic": "ˌdiːp ˈfraɪ",
+    "pos": "v.",
+    "meaning": "油炸/深炸",
+    "example": "The fish was deep-fried until golden brown.",
+    "exampleCn": "鱼被油炸至金黄色。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4625,
+    "word": "steam",
+    "phonetic": "stiːm",
+    "pos": "v.",
+    "meaning": "蒸/蒸煮",
+    "example": "She steamed the vegetables to keep them healthy.",
+    "exampleCn": "她把蔬菜蒸了以保持健康。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4626,
+    "word": "shell",
+    "phonetic": "ʃel",
+    "pos": "n./v.",
+    "meaning": "壳/去壳",
+    "example": "He cracked the shell of the egg.",
+    "exampleCn": "他磕开了蛋的壳。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4627,
+    "word": "beat",
+    "phonetic": "biːt",
+    "pos": "v.",
+    "meaning": "搅打/打蛋",
+    "example": "Beat the eggs and add them to the mixture.",
+    "exampleCn": "打散蛋并加入混合物中。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4628,
+    "word": "mash",
+    "phonetic": "mæʃ",
+    "pos": "v.",
+    "meaning": "捣碎/捣成泥",
+    "example": "She mashed the potatoes with butter and milk.",
+    "exampleCn": "她加黄油和牛奶把土豆捣成了泥。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  }
+]

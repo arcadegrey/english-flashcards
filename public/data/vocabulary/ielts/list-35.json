@@ -1,0 +1,684 @@
+[
+  {
+    "id": 177,
+    "word": "assemble",
+    "phonetic": "/əˈsembl/",
+    "pos": "v.",
+    "meaning": "集合/组装",
+    "example": "Volunteers assembled in the school gym.",
+    "exampleCn": "志愿者们在学校体育馆集合。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "18",
+    "ieltsLists": [
+      "18",
+      "35"
+    ]
+  },
+  {
+    "id": 689,
+    "word": "span",
+    "phonetic": "/spæn/",
+    "pos": "n./v.",
+    "meaning": "跨度；跨越",
+    "example": "The bridge has a long span.",
+    "exampleCn": "这座桥跨度很长。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 861,
+    "word": "modify",
+    "phonetic": "/ˈmɒdɪfaɪ/",
+    "pos": "v.",
+    "meaning": "修改，调整",
+    "example": "We need to modify the plan before Friday.",
+    "exampleCn": "我们需要在周五前修改计划。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 937,
+    "word": "install",
+    "phonetic": "/ɪnˈstɔːl/",
+    "pos": "v.",
+    "meaning": "安装",
+    "example": "We need to install the new software.",
+    "exampleCn": "我们需要安装这个新软件。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 1093,
+    "word": "maintain",
+    "phonetic": "/meɪnˈteɪn/",
+    "pos": "v.",
+    "meaning": "保持，维持/维护",
+    "example": "It is hard to maintain a healthy lifestyle./Workers maintain the equipment regularly.",
+    "exampleCn": "保持健康的生活方式并不容易。/工人们定期维护设备。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 1473,
+    "word": "external",
+    "phonetic": "/ɪkˈstɜːrnəl/",
+    "pos": "adj.",
+    "meaning": "外部的/外来的",
+    "example": "External forces can change the shape of an object.",
+    "exampleCn": "外力可以改变物体的形状。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 1728,
+    "word": "dam",
+    "phonetic": "/dæm/",
+    "pos": "n./v.",
+    "meaning": "水坝/筑坝拦水",
+    "example": "The dam controls flooding and produces electricity.",
+    "exampleCn": "这座水坝控制洪水并发电。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 1736,
+    "word": "furnish",
+    "phonetic": "/ˈfɜːrnɪʃ/",
+    "pos": "v.",
+    "meaning": "提供/布置家具",
+    "example": "The report furnished evidence for the new theory.",
+    "exampleCn": "这份报告为新理论提供了证据。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 1749,
+    "word": "internal",
+    "phonetic": "/ɪnˈtɜːrnl/",
+    "pos": "adj.",
+    "meaning": "内部的/体内的",
+    "example": "The animal has an internal system for controlling body temperature.",
+    "exampleCn": "这种动物有调节体温的内部系统。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 1819,
+    "word": "modification",
+    "phonetic": "/ˌmɑːdɪfɪˈkeɪʃn/",
+    "pos": "n.",
+    "meaning": "修改/改变",
+    "example": "The design needs some modification before it can be used.",
+    "exampleCn": "这个设计在使用前需要一些修改。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 2007,
+    "word": "exterior",
+    "phonetic": "/ɪkˈstɪriər/",
+    "pos": "adj./n.",
+    "meaning": "外部的/外表",
+    "example": "The exterior of the building was made of stone.",
+    "exampleCn": "这座建筑的外部由石头建成。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 2068,
+    "word": "layout",
+    "phonetic": "/ˈleɪaʊt/",
+    "pos": "n.",
+    "meaning": "布局/设计",
+    "example": "The layout of the museum makes it easy to follow the exhibits.",
+    "exampleCn": "博物馆的布局使参观展品很方便。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 2135,
+    "word": "plumb",
+    "phonetic": "/plʌm/",
+    "pos": "v./adv./adj./n.",
+    "meaning": "探测/完全地/垂直的/铅锤",
+    "example": "Researchers tried to plumb the depths of the lake.",
+    "exampleCn": "研究人员试图探测湖的深度。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 2221,
+    "word": "interior",
+    "phonetic": "/ɪnˈtɪriər/",
+    "pos": "adj./n.",
+    "meaning": "内部的/内陆的/内部",
+    "example": "The interior of the building was beautifully designed.",
+    "exampleCn": "这栋建筑的内部设计得很漂亮。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 2395,
+    "word": "installation",
+    "phonetic": "/ˌɪnstəˈleɪʃən/",
+    "pos": "n.",
+    "meaning": "安装/装置/设施",
+    "example": "The installation of the new software took an hour.",
+    "exampleCn": "新软件的安装花了一个小时。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 2969,
+    "word": "trim",
+    "phonetic": "/trɪm/",
+    "pos": "v./adj./n.",
+    "meaning": "修剪/削减/整齐的/装饰",
+    "example": "He trimmed the branches before winter.",
+    "exampleCn": "他在冬天前修剪了树枝。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 3010,
+    "word": "assembly",
+    "phonetic": "/əˈsembli/",
+    "pos": "n.",
+    "meaning": "集会/装配/议会",
+    "example": "Students gathered in the hall for assembly.",
+    "exampleCn": "学生们聚集在大厅参加集会。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4690,
+    "word": "maintenance",
+    "phonetic": "ˈmeɪntənəns",
+    "pos": "n.",
+    "meaning": "维护/维修/保养",
+    "example": "The building is closed for maintenance.",
+    "exampleCn": "该建筑因维修而关闭。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4691,
+    "word": "fix",
+    "phonetic": "fɪks",
+    "pos": "v.",
+    "meaning": "修理/固定",
+    "example": "He fixed the broken chair with some glue.",
+    "exampleCn": "他用胶水修好了破椅子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4692,
+    "word": "mend",
+    "phonetic": "mend",
+    "pos": "v.",
+    "meaning": "修补/缝补",
+    "example": "She mended a hole in her favourite jumper.",
+    "exampleCn": "她补好了最喜欢的毛衣上的一个洞。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4693,
+    "word": "weld",
+    "phonetic": "weld",
+    "pos": "v.",
+    "meaning": "焊接/熔接",
+    "example": "He welded the two metal pipes together.",
+    "exampleCn": "他把两根金属管焊接在一起。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4694,
+    "word": "saw",
+    "phonetic": "sɔː",
+    "pos": "n./v.",
+    "meaning": "锯/锯开",
+    "example": "He sawed the plank into two pieces.",
+    "exampleCn": "他把木板锯成了两块。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4695,
+    "word": "screw",
+    "phonetic": "skruː",
+    "pos": "n.",
+    "meaning": "螺丝/螺钉",
+    "example": "He tightened the screw with a screwdriver.",
+    "exampleCn": "他用螺丝刀拧紧了螺丝。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4696,
+    "word": "drill",
+    "phonetic": "drɪl",
+    "pos": "n./v.",
+    "meaning": "钻/钻孔",
+    "example": "He drilled a hole in the wall.",
+    "exampleCn": "他在墙上钻了一个洞。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4697,
+    "word": "viaduct",
+    "phonetic": "ˈvaɪədʌkt",
+    "pos": "n.",
+    "meaning": "高架桥/栈道",
+    "example": "The train crossed the viaduct high above the valley.",
+    "exampleCn": "火车穿过横跨山谷之上的高架桥。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4698,
+    "word": "span of life",
+    "phonetic": "",
+    "pos": "n.",
+    "meaning": "寿命/一生",
+    "example": "The span of life varies among different species.",
+    "exampleCn": "不同物种的寿命各不相同。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4699,
+    "word": "furniture",
+    "phonetic": "ˈfɜːnɪtʃə",
+    "pos": "n.",
+    "meaning": "家具",
+    "example": "The shop sells wooden furniture.",
+    "exampleCn": "这家商店出售木质家具。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4700,
+    "word": "placement",
+    "phonetic": "ˈpleɪsmənt",
+    "pos": "n.",
+    "meaning": "放置/安排",
+    "example": "The placement of the sofa is awkward.",
+    "exampleCn": "沙发的放置位置有些别扭。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4701,
+    "word": "design",
+    "phonetic": "dɪˈzaɪn",
+    "pos": "n./v.",
+    "meaning": "设计/构思",
+    "example": "She is studying fashion design at university.",
+    "exampleCn": "她在大学里学习时装设计。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4702,
+    "word": "entrance",
+    "phonetic": "ˈentrəns",
+    "pos": "n.",
+    "meaning": "入口/门口",
+    "example": "They met at the main entrance to the museum.",
+    "exampleCn": "他们在博物馆的主入口碰面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4703,
+    "word": "entry",
+    "phonetic": "ˈentri",
+    "pos": "n.",
+    "meaning": "进入/入口",
+    "example": "Entry to the museum is free on Sundays.",
+    "exampleCn": "周日免费进入博物馆。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4704,
+    "word": "enter",
+    "phonetic": "ˈentə",
+    "pos": "v.",
+    "meaning": "进入/加入",
+    "example": "They knocked before entering the room.",
+    "exampleCn": "他们敲了门然后进了房间。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4705,
+    "word": "exit",
+    "phonetic": "ˈeksɪt",
+    "pos": "n./v.",
+    "meaning": "出口/离开",
+    "example": "Please use the emergency exit in case of fire.",
+    "exampleCn": "发生火灾时请使用紧急出口。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4706,
+    "word": "outside",
+    "phonetic": "ˌaʊtˈsaɪd",
+    "pos": "adv./prep.",
+    "meaning": "外面/外部",
+    "example": "The children are playing outside in the garden.",
+    "exampleCn": "孩子们在外面的花园里玩。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4707,
+    "word": "outward",
+    "phonetic": "ˈaʊtwəd",
+    "pos": "adj.",
+    "meaning": "外面的/向外的",
+    "example": "There was no outward sign of damage.",
+    "exampleCn": "没有可见的损坏迹象。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4708,
+    "word": "inner",
+    "phonetic": "ˈɪnə",
+    "pos": "adj.",
+    "meaning": "内部的/内心的",
+    "example": "She has an inner confidence that never wavers.",
+    "exampleCn": "她有一种内心深处的自信，从不动摇。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4709,
+    "word": "inward",
+    "phonetic": "ˈɪnwəd",
+    "pos": "adj.",
+    "meaning": "内部的/向内的",
+    "example": "He took an inward breath before speaking.",
+    "exampleCn": "说话前他向内吸了一口气。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  }
+]

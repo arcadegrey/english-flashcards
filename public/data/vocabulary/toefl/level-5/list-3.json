@@ -91,10 +91,15 @@
     "exampleCn": "博物馆展出了精美的瓷碗。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 2631,
@@ -121,10 +126,15 @@
     "exampleCn": "一座细长的桥横跨小溪。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 2633,
@@ -173,7 +183,8 @@
     "list": "3",
     "ieltsList": "6",
     "ieltsLists": [
-      "6"
+      "6",
+      "34"
     ]
   },
   {
@@ -666,10 +677,15 @@
     "exampleCn": "屋顶覆盖着红瓦。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 2668,
@@ -731,10 +747,15 @@
     "exampleCn": "遗址中发现了陶瓷罐。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 2672,
@@ -806,10 +827,15 @@
     "exampleCn": "这件衣服是羊毛制成的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 2677,
@@ -1109,10 +1135,15 @@
     "exampleCn": "磨坊可以把小麦磨成面粉。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 2696,
@@ -1124,10 +1155,15 @@
     "exampleCn": "他们乘独木舟穿过湖面。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 2697,
@@ -1309,10 +1345,15 @@
     "exampleCn": "铁矿石在熔炉中加热。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 2709,
@@ -1369,10 +1410,15 @@
     "exampleCn": "倒下的树木堵住了道路。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 2713,

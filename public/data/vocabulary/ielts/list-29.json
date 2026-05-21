@@ -1,0 +1,1081 @@
+[
+  {
+    "id": 233,
+    "word": "belt",
+    "phonetic": "/belt/",
+    "pos": "n.",
+    "meaning": "腰带；带",
+    "example": "Fasten your seat belt before takeoff.",
+    "exampleCn": "起飞前系好安全带。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 280,
+    "word": "boot",
+    "phonetic": "/buːt/",
+    "pos": "n.",
+    "meaning": "靴子；后备箱",
+    "example": "He put on his hiking boots.",
+    "exampleCn": "他穿上了徒步靴。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 344,
+    "word": "button",
+    "phonetic": "/ˈbʌtn/",
+    "pos": "n.",
+    "meaning": "按钮；纽扣",
+    "example": "Press the red button to start.",
+    "exampleCn": "按红色按钮启动。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 407,
+    "word": "chain",
+    "phonetic": "/tʃeɪn/",
+    "pos": "n./v.",
+    "meaning": "链条/连锁/束缚",
+    "example": "A chain of events led to the final decision.",
+    "exampleCn": "一连串事件导致了最终决定。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 487,
+    "word": "collar",
+    "phonetic": "/ˈkɒlər/",
+    "pos": "n.",
+    "meaning": "衣领；项圈",
+    "example": "The dog wore a red collar.",
+    "exampleCn": "狗戴了一个红色项圈。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 744,
+    "word": "wrap",
+    "phonetic": "/ræp/",
+    "pos": "v.",
+    "meaning": "包裹；缠绕",
+    "example": "Wrap the gift carefully.",
+    "exampleCn": "小心包裹礼物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 841,
+    "word": "stainless",
+    "phonetic": "/ˈsteɪnləs/",
+    "pos": "adj.",
+    "meaning": "无瑕疵的；不锈的",
+    "example": "The sink is stainless steel.",
+    "exampleCn": "水槽是不锈钢的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 970,
+    "word": "string",
+    "phonetic": "/strɪŋ/",
+    "pos": "n.",
+    "meaning": "线，细绳/一连串",
+    "example": "She tied the package with a piece of string./A string of lights decorated the room.",
+    "exampleCn": "她用一根细绳把包裹绑起来。/一串灯装饰了房间。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 981,
+    "word": "wool",
+    "phonetic": "/wʊl/",
+    "pos": "n.",
+    "meaning": "羊毛，毛线",
+    "example": "This sweater is made of pure wool.",
+    "exampleCn": "这件毛衣是纯羊毛做的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 1367,
+    "word": "slightly",
+    "phonetic": "/ˈslaɪtli/",
+    "pos": "adv.",
+    "meaning": "略微；稍微",
+    "example": "The temperature dropped slightly last night.",
+    "exampleCn": "昨晚气温略微下降了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 1538,
+    "word": "stain",
+    "phonetic": "/steɪn/",
+    "pos": "n./v.",
+    "meaning": "污渍/染色/玷污",
+    "example": "The chemical left a dark stain on the cloth.",
+    "exampleCn": "这种化学物质在布上留下了深色污渍。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 1806,
+    "word": "cloak",
+    "phonetic": "/kloʊk/",
+    "pos": "n./v.",
+    "meaning": "斗篷/掩盖",
+    "example": "Fog can cloak the mountain in the morning.",
+    "exampleCn": "雾会在早晨笼罩山峰。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 1921,
+    "word": "patch",
+    "phonetic": "/pætʃ/",
+    "pos": "n./v.",
+    "meaning": "补丁/小块土地/修补",
+    "example": "The farmer planted vegetables in a small patch of land.",
+    "exampleCn": "农民在一小块土地上种了蔬菜。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 2245,
+    "word": "spin",
+    "phonetic": "/spɪn/",
+    "pos": "v./n.",
+    "meaning": "旋转/纺纱/兜风/说法",
+    "example": "The Earth continues to spin on its axis.",
+    "exampleCn": "地球继续绕地轴旋转。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 2314,
+    "word": "rag",
+    "phonetic": "/ræɡ/",
+    "pos": "n.",
+    "meaning": "破布/抹布",
+    "example": "He used a rag to clean the window.",
+    "exampleCn": "他用一块抹布擦窗户。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 2394,
+    "word": "necklace",
+    "phonetic": "/ˈnekləs/",
+    "pos": "n.",
+    "meaning": "项链",
+    "example": "She wore a silver necklace to the ceremony.",
+    "exampleCn": "她戴着一条银项链参加典礼。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 2466,
+    "word": "thread",
+    "phonetic": "/θred/",
+    "pos": "n./v.",
+    "meaning": "线/思路/穿过/穿线",
+    "example": "A clear thread connects all parts of the argument.",
+    "exampleCn": "一条清晰的思路连接了论证的各个部分。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 2632,
+    "word": "slender",
+    "phonetic": "/ˈslendər/",
+    "pos": "adj.",
+    "meaning": "细长的/苗条的/微薄的",
+    "example": "A slender bridge crossed the stream.",
+    "exampleCn": "一座细长的桥横跨小溪。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 2728,
+    "word": "ribbon",
+    "phonetic": "/ˈrɪbən/",
+    "pos": "n.",
+    "meaning": "缎带/带状物",
+    "example": "She tied the package with a red ribbon.",
+    "exampleCn": "她用一条红丝带把包裹系好。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 2778,
+    "word": "velvet",
+    "phonetic": "/ˈvelvɪt/",
+    "pos": "n./adj.",
+    "meaning": "天鹅绒/柔软光滑的",
+    "example": "The chair was covered in red velvet.",
+    "exampleCn": "椅子上覆盖着红色天鹅绒。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 3049,
+    "word": "bead",
+    "phonetic": "/biːd/",
+    "pos": "n.",
+    "meaning": "珠子/小滴",
+    "example": "A bead of water rolled down the leaf.",
+    "exampleCn": "一滴水珠从叶子上滚落下来。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 3091,
+    "word": "textile",
+    "phonetic": "/ˈtekstaɪl/",
+    "pos": "n./adj.",
+    "meaning": "纺织品/纺织的",
+    "example": "The factory produces textiles from cotton and wool.",
+    "exampleCn": "这家工厂用棉和羊毛生产纺织品。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4475,
+    "word": "trousers",
+    "phonetic": "ˈtraʊzəz",
+    "pos": "n.",
+    "meaning": "裤子/长裤",
+    "example": "He bought a new pair of trousers for work.",
+    "exampleCn": "他为上班买了一条新裤子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4476,
+    "word": "clasp",
+    "phonetic": "klɑːsp",
+    "pos": "n.",
+    "meaning": "搭扣/扣子",
+    "example": "The necklace has a silver clasp.",
+    "exampleCn": "项链有一个银搭扣。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4477,
+    "word": "unbutton",
+    "phonetic": "ʌnˈbʌtn",
+    "pos": "v.",
+    "meaning": "解开纽扣",
+    "example": "He unbuttoned his jacket and sat down.",
+    "exampleCn": "他解开夹克纽扣坐了下来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4478,
+    "word": "glove",
+    "phonetic": "ɡlʌv",
+    "pos": "n.",
+    "meaning": "手套",
+    "example": "She put on her gloves before going outside.",
+    "exampleCn": "她出门前戴上了手套。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4479,
+    "word": "brim",
+    "phonetic": "brɪm",
+    "pos": "n.",
+    "meaning": "帽檐/边缘",
+    "example": "The glass was filled to the brim.",
+    "exampleCn": "杯子倒满到了边缘。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4480,
+    "word": "scarf",
+    "phonetic": "skɑːf",
+    "pos": "n.",
+    "meaning": "围巾/头巾",
+    "example": "She wrapped a scarf around her neck.",
+    "exampleCn": "她在脖子上围了一条围巾。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4481,
+    "word": "handkerchief",
+    "phonetic": "ˈhæŋkətʃɪf",
+    "pos": "n.",
+    "meaning": "手帕/手绢",
+    "example": "He wiped his forehead with a handkerchief.",
+    "exampleCn": "他用手帕擦了擦额头。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4482,
+    "word": "purse",
+    "phonetic": "pɜːs",
+    "pos": "n.",
+    "meaning": "钱包/女士手提包",
+    "example": "She took some coins from her purse.",
+    "exampleCn": "她从钱包里拿了一些硬币。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4483,
+    "word": "wallet",
+    "phonetic": "ˈwɒlɪt",
+    "pos": "n.",
+    "meaning": "钱包/皮夹",
+    "example": "He keeps his credit cards in his wallet.",
+    "exampleCn": "他把信用卡放在钱包里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4484,
+    "word": "vest",
+    "phonetic": "vest",
+    "pos": "n.",
+    "meaning": "背心/马甲",
+    "example": "He wore a vest under his shirt.",
+    "exampleCn": "他在衬衫里面穿了一件背心。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4485,
+    "word": "sleeve",
+    "phonetic": "sliːv",
+    "pos": "n.",
+    "meaning": "袖子/袖套",
+    "example": "She rolled up her sleeves and started working.",
+    "exampleCn": "她卷起袖子开始干活。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4486,
+    "word": "sock",
+    "phonetic": "sɒk",
+    "pos": "n.",
+    "meaning": "短袜",
+    "example": "He put on a pair of clean socks.",
+    "exampleCn": "他穿上一双干净的袜子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4487,
+    "word": "stocking",
+    "phonetic": "ˈstɒkɪŋ",
+    "pos": "n.",
+    "meaning": "长袜/丝袜",
+    "example": "She wore black stockings with her dress.",
+    "exampleCn": "她穿着黑色长袜配连衣裙。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4488,
+    "word": "slipper",
+    "phonetic": "ˈslɪpə",
+    "pos": "n.",
+    "meaning": "拖鞋/便鞋",
+    "example": "He put on his slippers when he got home.",
+    "exampleCn": "他回到家后穿上了拖鞋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4489,
+    "word": "lace",
+    "phonetic": "leɪs",
+    "pos": "n.",
+    "meaning": "鞋带/蕾丝",
+    "example": "She tied the laces of her trainers.",
+    "exampleCn": "她系好运动鞋的鞋带。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4490,
+    "word": "tailor",
+    "phonetic": "ˈteɪlə",
+    "pos": "n.",
+    "meaning": "裁缝",
+    "example": "The tailor adjusted the hem of the dress.",
+    "exampleCn": "裁缝调整了裙子的下摆。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4491,
+    "word": "sew",
+    "phonetic": "səʊ",
+    "pos": "v.",
+    "meaning": "缝纫/缝制",
+    "example": "She learned to sew from her mother.",
+    "exampleCn": "她从母亲那里学会了缝纫。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4492,
+    "word": "stitch",
+    "phonetic": "stɪtʃ",
+    "pos": "n./v.",
+    "meaning": "针脚/缝合",
+    "example": "She needed six stitches in her cut.",
+    "exampleCn": "她的伤口缝了六针。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4493,
+    "word": "needle",
+    "phonetic": "ˈniːdl",
+    "pos": "n.",
+    "meaning": "针/缝衣针",
+    "example": "She threaded the needle carefully.",
+    "exampleCn": "她小心翼翼地穿针。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4494,
+    "word": "pin",
+    "phonetic": "pɪn",
+    "pos": "n.",
+    "meaning": "别针/大头针",
+    "example": "She fastened the hem with pins.",
+    "exampleCn": "她用别针固定了下摆。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4495,
+    "word": "strap",
+    "phonetic": "stræp",
+    "pos": "n.",
+    "meaning": "带子/皮带",
+    "example": "The strap of her bag broke.",
+    "exampleCn": "她包上的带子断了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4496,
+    "word": "stripe",
+    "phonetic": "straɪp",
+    "pos": "n.",
+    "meaning": "条纹/条子",
+    "example": "The zebra has black and white stripes.",
+    "exampleCn": "斑马有黑白相间的条纹。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4497,
+    "word": "bracelet",
+    "phonetic": "ˈbreɪslɪt",
+    "pos": "n.",
+    "meaning": "手镯/手链",
+    "example": "She wore a silver bracelet on her wrist.",
+    "exampleCn": "她手腕上戴着一只银手镯。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4498,
+    "word": "woollen",
+    "phonetic": "ˈwʊlən",
+    "pos": "adj.",
+    "meaning": "羊毛的/毛织的",
+    "example": "She bought a woollen scarf for the winter.",
+    "exampleCn": "她为冬天买了一条羊毛围巾。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4499,
+    "word": "patchwork",
+    "phonetic": "ˈpætʃwɜːk",
+    "pos": "n.",
+    "meaning": "拼缝物/拼凑",
+    "example": "The quilt was made from patchwork squares.",
+    "exampleCn": "这床被子是由拼布方块做成的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4500,
+    "word": "shabby",
+    "phonetic": "ˈʃæbi",
+    "pos": "adj.",
+    "meaning": "破旧的/寒酸的",
+    "example": "He wore a shabby old coat.",
+    "exampleCn": "他穿着一件破旧的外套。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4501,
+    "word": "tight",
+    "phonetic": "taɪt",
+    "pos": "adj.",
+    "meaning": "紧的/牢固的",
+    "example": "The lid was screwed on tight.",
+    "exampleCn": "盖子拧得很紧。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4502,
+    "word": "whitewash",
+    "phonetic": "ˈwaɪtwɒʃ",
+    "pos": "v./n.",
+    "meaning": "粉刷/白涂料",
+    "example": "They whitewashed the walls of the cottage.",
+    "exampleCn": "他们粉刷了农舍的墙壁。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4503,
+    "word": "brown",
+    "phonetic": "braʊn",
+    "pos": "adj./n.",
+    "meaning": "棕色/褐色",
+    "example": "She has big brown eyes.",
+    "exampleCn": "她有一双棕色的大眼睛。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4504,
+    "word": "purple",
+    "phonetic": "ˈpɜːpl",
+    "pos": "adj./n.",
+    "meaning": "紫色",
+    "example": "The sky turned purple at sunset.",
+    "exampleCn": "日落时天空变成了紫色。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4505,
+    "word": "blot",
+    "phonetic": "blɒt",
+    "pos": "n.",
+    "meaning": "污点/墨渍",
+    "example": "A blot of ink spoiled the page.",
+    "exampleCn": "一滴墨水渍毁掉了这一页。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4506,
+    "word": "figure",
+    "phonetic": "ˈfɪɡə",
+    "pos": "n.",
+    "meaning": "身材/数字/人物",
+    "example": "She has a slim figure.",
+    "exampleCn": "她身材苗条。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4507,
+    "word": "curvy",
+    "phonetic": "ˈkɜːvi",
+    "pos": "adj.",
+    "meaning": "曲线美的/弯曲的",
+    "example": "The road follows the curvy coastline.",
+    "exampleCn": "这条路沿着弯曲的海岸线延伸。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4508,
+    "word": "hourglass",
+    "phonetic": "ˈaʊəɡlɑːs",
+    "pos": "n.",
+    "meaning": "沙漏/沙漏形身材",
+    "example": "She used an hourglass to time the game.",
+    "exampleCn": "她用一个沙漏来给游戏计时。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4509,
+    "word": "slight",
+    "phonetic": "slaɪt",
+    "pos": "adj.",
+    "meaning": "轻微的/纤细的",
+    "example": "There was a slight breeze blowing.",
+    "exampleCn": "吹着微微的微风。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4510,
+    "word": "slim",
+    "phonetic": "slɪm",
+    "pos": "adj.",
+    "meaning": "苗条的/纤细的",
+    "example": "She looked slim and fit in her dress.",
+    "exampleCn": "她穿着裙子看起来苗条又健康。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4511,
+    "word": "thready",
+    "phonetic": "ˈθredi",
+    "pos": "adj.",
+    "meaning": "线状的/纤维状的",
+    "example": "The soup had a thready texture from the vegetables.",
+    "exampleCn": "汤因蔬菜而带有纤维状口感。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4512,
+    "word": "stringy",
+    "phonetic": "ˈstrɪŋi",
+    "pos": "adj.",
+    "meaning": "细绳状的/多筋的",
+    "example": "The meat was tough and stringy.",
+    "exampleCn": "肉又硬又多筋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  }
+]

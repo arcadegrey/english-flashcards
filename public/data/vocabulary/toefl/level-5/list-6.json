@@ -234,10 +234,15 @@
     "exampleCn": "坚持学习的学生通常会收获好成绩。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
   },
   {
     "id": 2929,
@@ -888,10 +893,15 @@
     "exampleCn": "他在冬天前修剪了树枝。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 2970,
@@ -948,10 +958,15 @@
     "exampleCn": "风推动涡轮机叶片转动。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 2974,
@@ -1477,10 +1492,15 @@
     "exampleCn": "公园附近有几所学校。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 3007,
@@ -1537,10 +1557,15 @@
     "exampleCn": "学生们聚集在大厅参加集会。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 3011,

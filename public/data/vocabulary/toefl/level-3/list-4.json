@@ -340,7 +340,8 @@
     "list": "4",
     "ieltsList": "25",
     "ieltsLists": [
-      "25"
+      "25",
+      "36"
     ]
   },
   {
@@ -528,10 +529,15 @@
     "exampleCn": "好好咀嚼食物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 791,
@@ -648,10 +654,15 @@
     "exampleCn": "总体结果是好的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 798,
@@ -663,10 +674,15 @@
     "exampleCn": "她是报纸专栏作家。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 799,
@@ -733,10 +749,15 @@
     "exampleCn": "鱼栖息在河里。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 803,
@@ -948,10 +969,15 @@
     "exampleCn": "他居住在伦敦。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 817,
@@ -1108,10 +1134,15 @@
     "exampleCn": "农民饲养牲畜。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
   },
   {
     "id": 827,
@@ -1293,10 +1324,15 @@
     "exampleCn": "迅速的反应挽救了生命。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 838,
@@ -1353,10 +1389,15 @@
     "exampleCn": "水槽是不锈钢的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 842,
@@ -1570,10 +1611,15 @@
     "exampleCn": "建筑风格现代。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 855,
@@ -1620,9 +1666,14 @@
     "exampleCn": "马达停止工作了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   }
 ]

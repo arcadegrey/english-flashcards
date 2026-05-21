@@ -106,10 +106,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 276,
@@ -158,10 +163,15 @@
     "exampleCn": "这栋建筑有结构问题。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 594,
@@ -1153,10 +1163,15 @@
     "exampleCn": "身体消化食物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 655,
@@ -1228,10 +1243,15 @@
     "exampleCn": "这个蛋糕的食谱是什么？",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 660,
@@ -1403,10 +1423,15 @@
     "exampleCn": "城市地区很拥挤。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 671,
@@ -1518,10 +1543,15 @@
     "exampleCn": "孩子们去托儿所。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 678,

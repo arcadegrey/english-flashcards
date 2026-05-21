@@ -202,10 +202,15 @@
     "exampleCn": "我们需要在周五前修改计划。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 862,
@@ -517,10 +522,15 @@
     "exampleCn": "婴儿紧张时会吮吸大拇指。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 881,
@@ -1017,10 +1027,15 @@
     "exampleCn": "图片可以清楚地传达情感。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 913,
@@ -1112,10 +1127,15 @@
     "exampleCn": "他们希望在学校建立一个新社团。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 919,
@@ -1127,10 +1147,15 @@
     "exampleCn": "她从橙子里挤出了一些汁。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 920,
@@ -1282,10 +1307,15 @@
     "exampleCn": "这条路沿着湖边延伸。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 930,
@@ -1409,10 +1439,15 @@
     "exampleCn": "我们需要安装这个新软件。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 938,

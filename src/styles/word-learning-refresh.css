@@ -1412,7 +1412,11 @@
 .selection-card--culture-history,
 .selection-card--language-evolution,
 .selection-card--entertainment-sports,
-.selection-card--objects-materials {
+.selection-card--objects-materials,
+.selection-card--fashion-trends,
+.selection-card--food-health,
+.selection-card--architecture-places,
+.selection-card--transport-travel {
   position: relative;
   min-height: 148px;
   overflow: hidden;
@@ -1489,6 +1493,34 @@
   --ielts-topic-hover-shadow: rgba(98, 123, 128, 0.3);
 }
 
+.selection-card--fashion-trends {
+  border-color: rgba(180, 92, 122, 0.26);
+  --ielts-topic-bg: url('/images/ielts-fashion-trends-bg.webp');
+  --ielts-topic-shadow: rgba(180, 92, 122, 0.18);
+  --ielts-topic-hover-shadow: rgba(180, 92, 122, 0.3);
+}
+
+.selection-card--food-health {
+  border-color: rgba(70, 138, 89, 0.26);
+  --ielts-topic-bg: url('/images/ielts-food-health-bg.webp');
+  --ielts-topic-shadow: rgba(70, 138, 89, 0.18);
+  --ielts-topic-hover-shadow: rgba(70, 138, 89, 0.3);
+}
+
+.selection-card--architecture-places {
+  border-color: rgba(113, 126, 143, 0.26);
+  --ielts-topic-bg: url('/images/ielts-architecture-places-bg.webp');
+  --ielts-topic-shadow: rgba(113, 126, 143, 0.18);
+  --ielts-topic-hover-shadow: rgba(113, 126, 143, 0.3);
+}
+
+.selection-card--transport-travel {
+  border-color: rgba(42, 128, 166, 0.26);
+  --ielts-topic-bg: url('/images/ielts-transport-travel-bg.webp');
+  --ielts-topic-shadow: rgba(42, 128, 166, 0.18);
+  --ielts-topic-hover-shadow: rgba(42, 128, 166, 0.3);
+}
+
 .selection-card--nature-geography,
 .selection-card--plant-research,
 .selection-card--animal-conservation,
@@ -1498,7 +1530,11 @@
 .selection-card--culture-history,
 .selection-card--language-evolution,
 .selection-card--entertainment-sports,
-.selection-card--objects-materials {
+.selection-card--objects-materials,
+.selection-card--fashion-trends,
+.selection-card--food-health,
+.selection-card--architecture-places,
+.selection-card--transport-travel {
   background:
     linear-gradient(180deg, rgba(12, 40, 54, 0.16), rgba(5, 22, 31, 0.52)),
     var(--ielts-topic-bg) center / cover no-repeat;
@@ -1514,7 +1550,11 @@
 .selection-card--culture-history::after,
 .selection-card--language-evolution::after,
 .selection-card--entertainment-sports::after,
-.selection-card--objects-materials::after {
+.selection-card--objects-materials::after,
+.selection-card--fashion-trends::after,
+.selection-card--food-health::after,
+.selection-card--architecture-places::after,
+.selection-card--transport-travel::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -1541,7 +1581,15 @@
 .selection-card--entertainment-sports:hover,
 .selection-card--entertainment-sports.is-active,
 .selection-card--objects-materials:hover,
-.selection-card--objects-materials.is-active {
+.selection-card--objects-materials.is-active,
+.selection-card--fashion-trends:hover,
+.selection-card--fashion-trends.is-active,
+.selection-card--food-health:hover,
+.selection-card--food-health.is-active,
+.selection-card--architecture-places:hover,
+.selection-card--architecture-places.is-active,
+.selection-card--transport-travel:hover,
+.selection-card--transport-travel.is-active {
   border-color: rgba(255, 255, 255, 0.48);
   background:
     linear-gradient(180deg, rgba(10, 34, 48, 0.12), rgba(3, 18, 27, 0.46)),
@@ -1578,7 +1626,19 @@
 .selection-card--entertainment-sports .toefl-selection-meta,
 .selection-card--objects-materials .reading-category-name,
 .selection-card--objects-materials .reading-category-count,
-.selection-card--objects-materials .toefl-selection-meta {
+.selection-card--objects-materials .toefl-selection-meta,
+.selection-card--fashion-trends .reading-category-name,
+.selection-card--fashion-trends .reading-category-count,
+.selection-card--fashion-trends .toefl-selection-meta,
+.selection-card--food-health .reading-category-name,
+.selection-card--food-health .reading-category-count,
+.selection-card--food-health .toefl-selection-meta,
+.selection-card--architecture-places .reading-category-name,
+.selection-card--architecture-places .reading-category-count,
+.selection-card--architecture-places .toefl-selection-meta,
+.selection-card--transport-travel .reading-category-name,
+.selection-card--transport-travel .reading-category-count,
+.selection-card--transport-travel .toefl-selection-meta {
   color: #ffffff;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.34);
 }
@@ -1592,7 +1652,11 @@
 .selection-card--culture-history .toefl-selection-meta,
 .selection-card--language-evolution .toefl-selection-meta,
 .selection-card--entertainment-sports .toefl-selection-meta,
-.selection-card--objects-materials .toefl-selection-meta {
+.selection-card--objects-materials .toefl-selection-meta,
+.selection-card--fashion-trends .toefl-selection-meta,
+.selection-card--food-health .toefl-selection-meta,
+.selection-card--architecture-places .toefl-selection-meta,
+.selection-card--transport-travel .toefl-selection-meta {
   color: rgba(255, 255, 255, 0.86);
 }
 
@@ -3112,7 +3176,11 @@
   .selection-card--culture-history .reading-category-name,
   .selection-card--language-evolution .reading-category-name,
   .selection-card--entertainment-sports .reading-category-name,
-  .selection-card--objects-materials .reading-category-name {
+  .selection-card--objects-materials .reading-category-name,
+  .selection-card--fashion-trends .reading-category-name,
+  .selection-card--food-health .reading-category-name,
+  .selection-card--architecture-places .reading-category-name,
+  .selection-card--transport-travel .reading-category-name {
     display: block;
     max-width: 2em;
     line-height: 1.08;

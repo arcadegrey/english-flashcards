@@ -1,0 +1,1093 @@
+[
+  {
+    "id": 203,
+    "word": "balcony",
+    "phonetic": "/ˈbælkəni/",
+    "pos": "n.",
+    "meaning": "阳台",
+    "example": "We sat on the balcony enjoying the view.",
+    "exampleCn": "我们坐在阳台上欣赏风景。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 214,
+    "word": "basin",
+    "phonetic": "/ˈbeɪsn/",
+    "pos": "n.",
+    "meaning": "盆地/水盆",
+    "example": "Rainwater collects in the river basin.",
+    "exampleCn": "雨水汇集在河流盆地中。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 217,
+    "word": "beam",
+    "phonetic": "/biːm/",
+    "pos": "n./v.",
+    "meaning": "梁/光束/笑容满面/发射",
+    "example": "A beam of light entered through the window.",
+    "exampleCn": "一束光从窗户照进来。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 234,
+    "word": "bench",
+    "phonetic": "/bentʃ/",
+    "pos": "n.",
+    "meaning": "长凳",
+    "example": "They sat on a bench in the park.",
+    "exampleCn": "他们坐在公园的长椅上。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 308,
+    "word": "brick",
+    "phonetic": "/brɪk/",
+    "pos": "n.",
+    "meaning": "砖，砖块",
+    "example": "The house is made of red bricks.",
+    "exampleCn": "这栋房子是用红砖砌成的。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 349,
+    "word": "cabinet",
+    "phonetic": "/ˈkæbɪnət/",
+    "pos": "n.",
+    "meaning": "橱柜；内阁",
+    "example": "The dishes are in the kitchen cabinet.",
+    "exampleCn": "盘子在厨房的橱柜里。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 386,
+    "word": "castle",
+    "phonetic": "/ˈkæsl/",
+    "pos": "n.",
+    "meaning": "城堡",
+    "example": "The old castle attracts many tourists.",
+    "exampleCn": "古老的城堡吸引了许多游客。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 397,
+    "word": "ceiling",
+    "phonetic": "/ˈsiːlɪŋ/",
+    "pos": "n.",
+    "meaning": "天花板",
+    "example": "The ceiling is painted white.",
+    "exampleCn": "天花板被漆成白色。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 493,
+    "word": "column",
+    "phonetic": "/ˈkɑːləm/",
+    "pos": "n.",
+    "meaning": "柱；栏目；纵列",
+    "example": "Please write the results in the last column.",
+    "exampleCn": "请把结果写在最后一栏里。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 569,
+    "word": "expansion",
+    "phonetic": "/ɪkˈspænʃn/",
+    "pos": "n.",
+    "meaning": "扩张；扩大；膨胀",
+    "example": "The company plans expansion into Asia.",
+    "exampleCn": "公司计划向亚洲扩张。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 670,
+    "word": "urban",
+    "phonetic": "/ˈɜːbən/",
+    "pos": "adj.",
+    "meaning": "城市的；都市的",
+    "example": "Urban areas are crowded.",
+    "exampleCn": "城市地区很拥挤。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 798,
+    "word": "columnist",
+    "phonetic": "/ˈkɒləm nɪst/",
+    "pos": "n.",
+    "meaning": "专栏作家",
+    "example": "She is a newspaper columnist.",
+    "exampleCn": "她是报纸专栏作家。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 1005,
+    "word": "complex",
+    "phonetic": "/ˈkɑːmpleks/",
+    "pos": "adj./n.",
+    "meaning": "复杂的/建筑群，综合体",
+    "example": "Climate change is a complex issue./The sports complex opened last year.",
+    "exampleCn": "气候变化是个复杂问题。/这个体育综合体去年开放了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22",
+      "34"
+    ]
+  },
+  {
+    "id": 1016,
+    "word": "radiate",
+    "phonetic": "/ˈreɪdieɪt/",
+    "pos": "v.",
+    "meaning": "发出，辐射/流露",
+    "example": "The sun radiates heat and light./She radiated confidence during the interview.",
+    "exampleCn": "太阳发出热和光。/她在面试中流露出自信。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "15",
+    "ieltsLists": [
+      "15",
+      "34"
+    ]
+  },
+  {
+    "id": 1537,
+    "word": "pillar",
+    "phonetic": "/ˈpɪlər/",
+    "pos": "n.",
+    "meaning": "柱子/支柱/核心人物",
+    "example": "Stone pillars supported the roof of the ancient temple.",
+    "exampleCn": "石柱支撑着古代寺庙的屋顶。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 1896,
+    "word": "void",
+    "phonetic": "/vɔɪd/",
+    "pos": "n./adj./v.",
+    "meaning": "空处/空虚/无效的/使无效",
+    "example": "The contract was declared void because it was signed illegally.",
+    "exampleCn": "这份合同因签署不合法而被宣布无效。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 1928,
+    "word": "arch",
+    "phonetic": "/ɑːrtʃ/",
+    "pos": "n./v./adj.",
+    "meaning": "拱门/拱起/主要的",
+    "example": "The stone arch marked the entrance to the old city.",
+    "exampleCn": "这座石拱门标志着古城的入口。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 2195,
+    "word": "reserve",
+    "phonetic": "/rɪˈzɜːrv/",
+    "pos": "v./n.",
+    "meaning": "保留/预订/储备/保护区",
+    "example": "We should reserve some water for the long trip.",
+    "exampleCn": "我们应该为长途旅行保留一些水。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 2425,
+    "word": "malfunction",
+    "phonetic": "/ˌmælˈfʌŋkʃən/",
+    "pos": "n./v.",
+    "meaning": "故障/发生故障",
+    "example": "A computer malfunction delayed the presentation.",
+    "exampleCn": "电脑故障耽误了演示。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 2464,
+    "word": "crane",
+    "phonetic": "/kreɪn/",
+    "pos": "n./v.",
+    "meaning": "鹤/起重机/伸长脖子看",
+    "example": "A crane lifted the heavy steel beam.",
+    "exampleCn": "一台起重机吊起了沉重的钢梁。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 2506,
+    "word": "radiator",
+    "phonetic": "/ˈreɪdieɪtər/",
+    "pos": "n.",
+    "meaning": "散热器/暖气片",
+    "example": "The radiator kept the room warm in winter.",
+    "exampleCn": "暖气片让房间在冬天保持温暖。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 2635,
+    "word": "terrace",
+    "phonetic": "/ˈterəs/",
+    "pos": "n./v.",
+    "meaning": "露台/梯田/使成梯田",
+    "example": "Farmers built terraces on the hillside.",
+    "exampleCn": "农民在山坡上修建了梯田。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "6",
+    "ieltsLists": [
+      "6",
+      "34"
+    ]
+  },
+  {
+    "id": 2667,
+    "word": "tile",
+    "phonetic": "/taɪl/",
+    "pos": "n./v.",
+    "meaning": "瓷砖/瓦片/铺砖",
+    "example": "The roof was covered with red tiles.",
+    "exampleCn": "屋顶覆盖着红瓦。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 3006,
+    "word": "vicinity",
+    "phonetic": "/vəˈsɪnəti/",
+    "pos": "n.",
+    "meaning": "附近/邻近地区",
+    "example": "Several schools are in the vicinity of the park.",
+    "exampleCn": "公园附近有几所学校。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 3196,
+    "word": "expanse",
+    "phonetic": "/ɪkˈspæns/",
+    "pos": "n.",
+    "meaning": "广阔区域/大片",
+    "example": "The travelers crossed a vast expanse of desert.",
+    "exampleCn": "旅行者穿越了一大片广阔的沙漠。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 3611,
+    "word": "pole",
+    "phonetic": "/pəʊl/",
+    "pos": "n.",
+    "meaning": "极点/杆",
+    "example": "Scientists collected samples near the South Pole.",
+    "exampleCn": "科学家在南极点附近采集了样本。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2",
+    "ieltsLists": [
+      "2",
+      "34"
+    ]
+  },
+  {
+    "id": 3686,
+    "word": "reservoir",
+    "phonetic": "ˈrezəvwɑː",
+    "pos": "n.",
+    "meaning": "水库/储备",
+    "example": "The reservoir supplies water to the entire city.",
+    "exampleCn": "这个水库为整个城市供水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "4",
+    "ieltsLists": [
+      "4",
+      "34"
+    ]
+  },
+  {
+    "id": 4657,
+    "word": "laser",
+    "phonetic": "ˈleɪzə",
+    "pos": "n.",
+    "meaning": "激光/镭射",
+    "example": "The surgeon used a laser to perform the operation.",
+    "exampleCn": "医生用激光进行了手术。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4658,
+    "word": "vault",
+    "phonetic": "vɔːlt",
+    "pos": "n.",
+    "meaning": "拱顶/金库/跳马",
+    "example": "The bank keeps the money in a secure vault.",
+    "exampleCn": "银行把钱存放在安全的金库里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4659,
+    "word": "vaulted",
+    "phonetic": "ˈvɔːltɪd",
+    "pos": "adj.",
+    "meaning": "拱形的/有拱顶的",
+    "example": "The cathedral has a high vaulted ceiling.",
+    "exampleCn": "大教堂有高高的拱形天花板。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4660,
+    "word": "arched",
+    "phonetic": "ɑːtʃt",
+    "pos": "adj.",
+    "meaning": "拱形的/弓形的",
+    "example": "The room had tall arched windows.",
+    "exampleCn": "房间有高高的拱形窗户。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4661,
+    "word": "eaves",
+    "phonetic": "iːvz",
+    "pos": "n.",
+    "meaning": "屋檐",
+    "example": "Swallows built a nest under the eaves.",
+    "exampleCn": "燕子在屋檐下筑了巢。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4662,
+    "word": "chimney",
+    "phonetic": "ˈtʃɪmni",
+    "pos": "n.",
+    "meaning": "烟囱/烟道",
+    "example": "Smoke rose from the chimney of the cottage.",
+    "exampleCn": "烟从村舍的烟囱升起。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4663,
+    "word": "reception",
+    "phonetic": "rɪˈsepʃn",
+    "pos": "n.",
+    "meaning": "接待处/前台",
+    "example": "Please check in at the reception desk.",
+    "exampleCn": "请到前台办理入住。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4664,
+    "word": "lobby",
+    "phonetic": "ˈlɒbi",
+    "pos": "n.",
+    "meaning": "大厅/游说团体",
+    "example": "They waited for her in the hotel lobby.",
+    "exampleCn": "他们在酒店大堂等她。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4665,
+    "word": "lobbyist",
+    "phonetic": "ˈlɒbiɪst",
+    "pos": "n.",
+    "meaning": "游说者/说客",
+    "example": "Lobbyists work to influence government policy.",
+    "exampleCn": "游说者致力于影响政府政策。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4666,
+    "word": "parlour",
+    "phonetic": "ˈpɑːlə",
+    "pos": "n.",
+    "meaning": "客厅/会客室",
+    "example": "The guests were shown into the parlour.",
+    "exampleCn": "客人被领进了客厅。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4667,
+    "word": "fireplace",
+    "phonetic": "ˈfaɪəpleɪs",
+    "pos": "n.",
+    "meaning": "壁炉/火炉",
+    "example": "They gathered around the fireplace to keep warm.",
+    "exampleCn": "他们围在壁炉旁取暖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4668,
+    "word": "lavatory",
+    "phonetic": "ˈlævətri",
+    "pos": "n.",
+    "meaning": "厕所/洗手间",
+    "example": "The lavatory is at the end of the corridor.",
+    "exampleCn": "洗手间在走廊尽头。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4669,
+    "word": "toilet",
+    "phonetic": "ˈtɔɪlɪt",
+    "pos": "n.",
+    "meaning": "厕所/马桶",
+    "example": "Excuse me, where is the toilet?",
+    "exampleCn": "打扰一下，卫生间在哪里？",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4670,
+    "word": "bath",
+    "phonetic": "bɑːθ",
+    "pos": "n.",
+    "meaning": "浴缸/洗澡",
+    "example": "She had a warm bath before going to bed.",
+    "exampleCn": "她睡前洗了一个温水澡。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4671,
+    "word": "bathe",
+    "phonetic": "beɪð",
+    "pos": "v.",
+    "meaning": "洗澡/游泳",
+    "example": "He bathed in the river to cool off.",
+    "exampleCn": "他在河里游泳凉快一下。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4672,
+    "word": "store",
+    "phonetic": "stɔː",
+    "pos": "v./n.",
+    "meaning": "储存/商店",
+    "example": "She stored the jam in a cool place.",
+    "exampleCn": "她把果酱存放在阴凉处。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4673,
+    "word": "booth",
+    "phonetic": "buːð",
+    "pos": "n.",
+    "meaning": "小隔间/摊亭",
+    "example": "He made a phone call from the telephone booth.",
+    "exampleCn": "他从电话亭打了一个电话。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4674,
+    "word": "casino",
+    "phonetic": "kəˈsiːnəʊ",
+    "pos": "n.",
+    "meaning": "赌场/娱乐场",
+    "example": "The casino was crowded with tourists.",
+    "exampleCn": "赌场里挤满了游客。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4675,
+    "word": "studio",
+    "phonetic": "ˈstjuːdiəʊ",
+    "pos": "n.",
+    "meaning": "工作室/录音室",
+    "example": "The artist works in a large studio filled with light.",
+    "exampleCn": "艺术家在一间光线充足的大工作室里工作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4676,
+    "word": "downtown",
+    "phonetic": "ˈdaʊntaʊn",
+    "pos": "n./adj.",
+    "meaning": "市中心/商业区",
+    "example": "They took the bus downtown.",
+    "exampleCn": "他们坐公交车去了市中心。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4677,
+    "word": "urbanise",
+    "phonetic": "ˈɜːbənaɪz",
+    "pos": "v.",
+    "meaning": "使城市化/都市化",
+    "example": "The region has been rapidly urbanised over the past decade.",
+    "exampleCn": "该地区在过去十年中被迅速城市化。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4678,
+    "word": "urbanisation",
+    "phonetic": "ˌɜːbənaɪˈzeɪʃn",
+    "pos": "n.",
+    "meaning": "城市化/都市化",
+    "example": "Rapid urbanisation has caused housing shortages.",
+    "exampleCn": "快速的城市化导致了住房短缺。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4679,
+    "word": "peripheral",
+    "phonetic": "pəˈrɪfərəl",
+    "pos": "adj.",
+    "meaning": "周边的/边缘的",
+    "example": "They live in a peripheral suburb of the city.",
+    "exampleCn": "他们住在城市边缘的郊区。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4680,
+    "word": "periphery",
+    "phonetic": "pəˈrɪfəri",
+    "pos": "n.",
+    "meaning": "周边/外围",
+    "example": "Factories are located on the periphery of the town.",
+    "exampleCn": "工厂位于城镇的外围。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4681,
+    "word": "spacious",
+    "phonetic": "ˈspeɪʃəs",
+    "pos": "adj.",
+    "meaning": "宽敞的/宽阔的",
+    "example": "The flat has a spacious living room.",
+    "exampleCn": "这套公寓有一个宽敞的客厅。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4682,
+    "word": "airtight",
+    "phonetic": "ˈeətaɪt",
+    "pos": "adj.",
+    "meaning": "密封的/不透气的",
+    "example": "Store the biscuits in an airtight container.",
+    "exampleCn": "把饼干存放在密封容器里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4683,
+    "word": "plaza",
+    "phonetic": "ˈplɑːzə",
+    "pos": "n.",
+    "meaning": "广场/购物中心",
+    "example": "The city centre has a large public plaza.",
+    "exampleCn": "市中心有一个大型公共广场。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4684,
+    "word": "brickwork",
+    "phonetic": "ˈbrɪkwɜːk",
+    "pos": "n.",
+    "meaning": "砖砌/砖体",
+    "example": "The brickwork on the old building was crumbling.",
+    "exampleCn": "老建筑上的砖砌正在倒塌。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4685,
+    "word": "suspension",
+    "phonetic": "səˈspenʃn",
+    "pos": "n.",
+    "meaning": "悬架/悬浮/暂停",
+    "example": "The bridge is supported by suspension cables.",
+    "exampleCn": "这座桥由悬挂缆索支撑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4686,
+    "word": "hook",
+    "phonetic": "hʊk",
+    "pos": "n.",
+    "meaning": "钩子/挂钩",
+    "example": "She hung her coat on a hook by the door.",
+    "exampleCn": "她把外套挂在门边的钩子上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4687,
+    "word": "lever",
+    "phonetic": "ˈliːvə",
+    "pos": "n.",
+    "meaning": "杠杆/操纵杆",
+    "example": "Pull the lever to start the machine.",
+    "exampleCn": "拉下操纵杆启动机器。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4688,
+    "word": "scaffold",
+    "phonetic": "ˈskæfəʊld",
+    "pos": "n.",
+    "meaning": "脚手架/断头台",
+    "example": "The workers erected a scaffold around the building.",
+    "exampleCn": "工人们在建筑物周围搭起了脚手架。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4689,
+    "word": "maltreat",
+    "phonetic": "ˌmælˈtriːt",
+    "pos": "v.",
+    "meaning": "虐待/粗暴对待",
+    "example": "The law protects animals from being maltreated.",
+    "exampleCn": "法律保护动物免受虐待。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  }
+]

@@ -404,10 +404,15 @@
     "exampleCn": "这座建筑的外部由石头建成。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 2008,
@@ -1153,10 +1158,15 @@
     "exampleCn": "这种植物曾被用来制作天然染料。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 2054,
@@ -1375,10 +1385,15 @@
     "exampleCn": "他们在湖边租了一间小屋。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 2068,
@@ -1390,10 +1405,15 @@
     "exampleCn": "博物馆的布局使参观展品很方便。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 2069,
@@ -1405,10 +1425,15 @@
     "exampleCn": "缺少资金是这个项目的主要障碍。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 2070,

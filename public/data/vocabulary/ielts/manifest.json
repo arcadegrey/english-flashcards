@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-05-20T13:49:58.610Z",
+  "generatedAt": "2026-05-21T05:10:32.446Z",
   "source": "/data/vocabulary.json",
-  "sourceTotal": 4435,
+  "sourceTotal": 4797,
   "core": {
     "path": "/data/vocabulary/core.json",
-    "count": 263
+    "count": 230
   },
   "ielts": {
-    "total": 1608,
-    "meta": "10 个主题",
+    "total": 2196,
+    "meta": "14 个主题",
     "topics": [
       {
         "key": "nature-geography",
@@ -305,6 +305,118 @@
           }
         ],
         "meta": "2 个 List"
+      },
+      {
+        "key": "fashion-trends",
+        "label": "时尚潮流",
+        "count": 120,
+        "lists": [
+          {
+            "key": "28",
+            "label": "List 28",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-28.json",
+            "topicKey": "fashion-trends",
+            "topicLabel": "时尚潮流"
+          },
+          {
+            "key": "29",
+            "label": "List 29",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-29.json",
+            "topicKey": "fashion-trends",
+            "topicLabel": "时尚潮流"
+          }
+        ],
+        "meta": "2 个 List"
+      },
+      {
+        "key": "food-health",
+        "label": "饮食健康",
+        "count": 168,
+        "lists": [
+          {
+            "key": "30",
+            "label": "List 30",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-30.json",
+            "topicKey": "food-health",
+            "topicLabel": "饮食健康"
+          },
+          {
+            "key": "31",
+            "label": "List 31",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-31.json",
+            "topicKey": "food-health",
+            "topicLabel": "饮食健康"
+          },
+          {
+            "key": "32",
+            "label": "List 32",
+            "count": 48,
+            "path": "/data/vocabulary/ielts/list-32.json",
+            "topicKey": "food-health",
+            "topicLabel": "饮食健康"
+          }
+        ],
+        "meta": "3 个 List"
+      },
+      {
+        "key": "architecture-places",
+        "label": "建筑场所",
+        "count": 157,
+        "lists": [
+          {
+            "key": "33",
+            "label": "List 33",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-33.json",
+            "topicKey": "architecture-places",
+            "topicLabel": "建筑场所"
+          },
+          {
+            "key": "34",
+            "label": "List 34",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-34.json",
+            "topicKey": "architecture-places",
+            "topicLabel": "建筑场所"
+          },
+          {
+            "key": "35",
+            "label": "List 35",
+            "count": 37,
+            "path": "/data/vocabulary/ielts/list-35.json",
+            "topicKey": "architecture-places",
+            "topicLabel": "建筑场所"
+          }
+        ],
+        "meta": "3 个 List"
+      },
+      {
+        "key": "transport-travel",
+        "label": "交通旅游",
+        "count": 143,
+        "lists": [
+          {
+            "key": "36",
+            "label": "List 36",
+            "count": 83,
+            "path": "/data/vocabulary/ielts/list-36.json",
+            "topicKey": "transport-travel",
+            "topicLabel": "交通旅游"
+          },
+          {
+            "key": "37",
+            "label": "List 37",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-37.json",
+            "topicKey": "transport-travel",
+            "topicLabel": "交通旅游"
+          }
+        ],
+        "meta": "2 个 List"
       }
     ],
     "lists": [
@@ -523,6 +635,86 @@
         "path": "/data/vocabulary/ielts/list-27.json",
         "topicKey": "objects-materials",
         "topicLabel": "物品材料"
+      },
+      {
+        "key": "28",
+        "label": "List 28",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-28.json",
+        "topicKey": "fashion-trends",
+        "topicLabel": "时尚潮流"
+      },
+      {
+        "key": "29",
+        "label": "List 29",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-29.json",
+        "topicKey": "fashion-trends",
+        "topicLabel": "时尚潮流"
+      },
+      {
+        "key": "30",
+        "label": "List 30",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-30.json",
+        "topicKey": "food-health",
+        "topicLabel": "饮食健康"
+      },
+      {
+        "key": "31",
+        "label": "List 31",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-31.json",
+        "topicKey": "food-health",
+        "topicLabel": "饮食健康"
+      },
+      {
+        "key": "32",
+        "label": "List 32",
+        "count": 48,
+        "path": "/data/vocabulary/ielts/list-32.json",
+        "topicKey": "food-health",
+        "topicLabel": "饮食健康"
+      },
+      {
+        "key": "33",
+        "label": "List 33",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-33.json",
+        "topicKey": "architecture-places",
+        "topicLabel": "建筑场所"
+      },
+      {
+        "key": "34",
+        "label": "List 34",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-34.json",
+        "topicKey": "architecture-places",
+        "topicLabel": "建筑场所"
+      },
+      {
+        "key": "35",
+        "label": "List 35",
+        "count": 37,
+        "path": "/data/vocabulary/ielts/list-35.json",
+        "topicKey": "architecture-places",
+        "topicLabel": "建筑场所"
+      },
+      {
+        "key": "36",
+        "label": "List 36",
+        "count": 83,
+        "path": "/data/vocabulary/ielts/list-36.json",
+        "topicKey": "transport-travel",
+        "topicLabel": "交通旅游"
+      },
+      {
+        "key": "37",
+        "label": "List 37",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-37.json",
+        "topicKey": "transport-travel",
+        "topicLabel": "交通旅游"
       }
     ]
   }

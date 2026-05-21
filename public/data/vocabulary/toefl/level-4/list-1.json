@@ -84,10 +84,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 451,
@@ -301,10 +306,15 @@
     "exampleCn": "水是许多化学反应中的基本成分。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 1449,
@@ -331,10 +341,15 @@
     "exampleCn": "这些蘑菇中只有少数种类可以食用。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 1451,
@@ -691,10 +706,15 @@
     "exampleCn": "外力可以改变物体的形状。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 1474,

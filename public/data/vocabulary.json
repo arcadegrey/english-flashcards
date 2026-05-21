@@ -50,7 +50,12 @@
     "exampleCn": "欢迎登机！请找到您的座位。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
     ]
   },
   {
@@ -1597,10 +1602,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 106,
@@ -1612,7 +1622,12 @@
     "exampleCn": "一些宗教禁止饮酒。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
     ]
   },
   {
@@ -1949,7 +1964,12 @@
     "exampleCn": "立即叫救护车！",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
     ]
   },
   {
@@ -2112,10 +2132,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 138,
@@ -2302,7 +2327,12 @@
     "exampleCn": "他们住在一间小公寓里。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
     ]
   },
   {
@@ -2360,7 +2390,12 @@
     "exampleCn": "一艘船出现在地平线上。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
     ]
   },
   {
@@ -2374,10 +2409,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 156,
@@ -2613,10 +2653,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 170,
@@ -2752,7 +2797,8 @@
     "list": "2",
     "ieltsList": "18",
     "ieltsLists": [
-      "18"
+      "18",
+      "35"
     ]
   },
   {
@@ -3067,7 +3113,12 @@
     "exampleCn": "这个座位有人吗？",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
     ]
   },
   {
@@ -3142,7 +3193,12 @@
     "exampleCn": "这家面包店每天早上卖新鲜面包。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
     ]
   },
   {
@@ -3168,7 +3224,12 @@
     "exampleCn": "我们坐在阳台上欣赏风景。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
     ]
   },
   {
@@ -3228,7 +3289,12 @@
     "exampleCn": "婚宴在一家豪华酒店举行。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
     ]
   },
   {
@@ -3336,10 +3402,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 215,
@@ -3383,10 +3454,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 218,
@@ -3619,7 +3695,12 @@
     "exampleCn": "起飞前系好安全带。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
     ]
   },
   {
@@ -3632,7 +3713,12 @@
     "exampleCn": "他们坐在公园的长椅上。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
     ]
   },
   {
@@ -3705,7 +3791,12 @@
     "exampleCn": "草莓是我最喜欢的浆果。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
     ]
   },
   {
@@ -3744,7 +3835,12 @@
     "exampleCn": "咖啡是一种全球流行的饮料。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
     ]
   },
   {
@@ -3814,7 +3910,12 @@
     "exampleCn": "这些书被装订在一起。",
     "category": "cet6",
     "categories": [
-      "cet6"
+      "cet6",
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
     ]
   },
   {
@@ -3871,7 +3972,12 @@
     "exampleCn": "她烤了新鲜饼干当早餐。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
     ]
   },
   {
@@ -3902,7 +4008,12 @@
     "exampleCn": "这药味道很苦。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
     ]
   },
   {
@@ -4052,10 +4163,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 264,
@@ -4299,7 +4415,12 @@
     "exampleCn": "他穿上了徒步靴。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
     ]
   },
   {
@@ -4451,7 +4572,8 @@
     ],
     "ieltsList": "24",
     "ieltsLists": [
-      "24"
+      "24",
+      "37"
     ]
   },
   {
@@ -4464,7 +4586,12 @@
     "exampleCn": "她用大碗盛汤。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
     ]
   },
   {
@@ -4516,7 +4643,12 @@
     "exampleCn": "踩刹车使车停下。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
     ]
   },
   {
@@ -4706,7 +4838,12 @@
     "exampleCn": "这栋房子是用红砖砌成的。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
     ]
   },
   {
@@ -4973,7 +5110,12 @@
     "exampleCn": "他们计划建一所新学校。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
     ]
   },
   {
@@ -5119,7 +5261,12 @@
     "exampleCn": "债务是一个沉重的负担。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
     ]
   },
   {
@@ -5232,7 +5379,12 @@
     "exampleCn": "她把黄油涂在面包上。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
     ]
   },
   {
@@ -5245,7 +5397,12 @@
     "exampleCn": "按红色按钮启动。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
     ]
   },
   {
@@ -5284,7 +5441,12 @@
     "exampleCn": "卷心菜健康有营养。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
     ]
   },
   {
@@ -5298,10 +5460,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 349,
@@ -5313,7 +5480,12 @@
     "exampleCn": "盘子在厨房的橱柜里。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
     ]
   },
   {
@@ -5521,10 +5693,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 363,
@@ -5789,7 +5966,12 @@
     "exampleCn": "兔子喜欢吃胡萝卜。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
     ]
   },
   {
@@ -5870,7 +6052,12 @@
     "exampleCn": "古老的城堡吸引了许多游客。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
     ]
   },
   {
@@ -6045,7 +6232,12 @@
     "exampleCn": "天花板被漆成白色。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
     ]
   },
   {
@@ -6197,10 +6389,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 408,
@@ -6527,7 +6724,12 @@
     "exampleCn": "你想要一些奶酪吗？",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
     ]
   },
   {
@@ -6540,7 +6742,12 @@
     "exampleCn": "厨师长准备了一顿美味的饭菜。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
     ]
   },
   {
@@ -6629,10 +6836,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 437,
@@ -6777,7 +6989,12 @@
     "exampleCn": "吸烟有害健康。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
     ]
   },
   {
@@ -7248,10 +7465,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 480,
@@ -7359,7 +7581,12 @@
     "exampleCn": "狗戴了一个红色项圈。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
     ]
   },
   {
@@ -7459,10 +7686,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 494,
@@ -8662,10 +8894,15 @@
     "exampleCn": "公司计划向亚洲扩张。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 570,
@@ -9059,10 +9296,15 @@
     "exampleCn": "这栋建筑有结构问题。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 594,
@@ -10054,10 +10296,15 @@
     "exampleCn": "身体消化食物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 655,
@@ -10129,10 +10376,15 @@
     "exampleCn": "这个蛋糕的食谱是什么？",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 660,
@@ -10304,10 +10556,15 @@
     "exampleCn": "城市地区很拥挤。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 671,
@@ -10419,10 +10676,15 @@
     "exampleCn": "孩子们去托儿所。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 678,
@@ -10613,10 +10875,15 @@
     "exampleCn": "这座桥跨度很长。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 690,
@@ -10795,10 +11062,15 @@
     "exampleCn": "这是住宅区。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 702,
@@ -10940,10 +11212,15 @@
     "exampleCn": "火车穿过了隧道。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 711,
@@ -11471,10 +11748,15 @@
     "exampleCn": "船员们准备了船。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 744,
@@ -11486,10 +11768,15 @@
     "exampleCn": "小心包裹礼物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 745,
@@ -11551,10 +11838,15 @@
     "exampleCn": "趋势正在改变。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 749,
@@ -12038,7 +12330,8 @@
     "list": "4",
     "ieltsList": "25",
     "ieltsLists": [
-      "25"
+      "25",
+      "36"
     ]
   },
   {
@@ -12226,10 +12519,15 @@
     "exampleCn": "好好咀嚼食物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 791,
@@ -12346,10 +12644,15 @@
     "exampleCn": "总体结果是好的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 798,
@@ -12361,10 +12664,15 @@
     "exampleCn": "她是报纸专栏作家。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 799,
@@ -12431,10 +12739,15 @@
     "exampleCn": "鱼栖息在河里。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 803,
@@ -12646,10 +12959,15 @@
     "exampleCn": "他居住在伦敦。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 817,
@@ -12806,10 +13124,15 @@
     "exampleCn": "农民饲养牲畜。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
   },
   {
     "id": 827,
@@ -12991,10 +13314,15 @@
     "exampleCn": "迅速的反应挽救了生命。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 838,
@@ -13051,10 +13379,15 @@
     "exampleCn": "水槽是不锈钢的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 842,
@@ -13268,10 +13601,15 @@
     "exampleCn": "建筑风格现代。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 855,
@@ -13318,10 +13656,15 @@
     "exampleCn": "马达停止工作了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 858,
@@ -13380,10 +13723,15 @@
     "exampleCn": "我们需要在周五前修改计划。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 862,
@@ -13695,10 +14043,15 @@
     "exampleCn": "婴儿紧张时会吮吸大拇指。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 881,
@@ -14195,10 +14548,15 @@
     "exampleCn": "图片可以清楚地传达情感。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 913,
@@ -14290,10 +14648,15 @@
     "exampleCn": "他们希望在学校建立一个新社团。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 919,
@@ -14305,10 +14668,15 @@
     "exampleCn": "她从橙子里挤出了一些汁。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 920,
@@ -14460,10 +14828,15 @@
     "exampleCn": "这条路沿着湖边延伸。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 930,
@@ -14587,10 +14960,15 @@
     "exampleCn": "我们需要安装这个新软件。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 938,
@@ -15116,10 +15494,15 @@
     "exampleCn": "她用一根细绳把包裹绑起来。/一串灯装饰了房间。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 971,
@@ -15301,10 +15684,15 @@
     "exampleCn": "这件毛衣是纯羊毛做的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 982,
@@ -15381,10 +15769,15 @@
     "exampleCn": "她把文件转存到U盘里。/他转学到了另一所大学。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 987,
@@ -15631,10 +16024,15 @@
     "exampleCn": "这座城市以现代摩天大楼闻名。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1003,
@@ -15683,7 +16081,8 @@
     "list": "6",
     "ieltsList": "22",
     "ieltsLists": [
-      "22"
+      "22",
+      "34"
     ]
   },
   {
@@ -15867,7 +16266,8 @@
     "list": "6",
     "ieltsList": "15",
     "ieltsLists": [
-      "15"
+      "15",
+      "34"
     ]
   },
   {
@@ -16575,10 +16975,15 @@
     "exampleCn": "他们计划建立一个新的研究中心。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1061,
@@ -16590,10 +16995,15 @@
     "exampleCn": "这艘船开始了横渡太平洋的航行。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 1062,
@@ -16670,10 +17080,15 @@
     "exampleCn": "用浆糊把纸贴到墙上。/请把图片粘贴到这里。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
   },
   {
     "id": 1067,
@@ -17112,10 +17527,15 @@
     "exampleCn": "保持健康的生活方式并不容易。/工人们定期维护设备。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 1094,
@@ -17294,10 +17714,15 @@
     "exampleCn": "巴黎是热门旅游目的地。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 1106,
@@ -17359,10 +17784,15 @@
     "exampleCn": "把蛋糕放进烤箱烤三十分钟。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 1110,
@@ -17714,10 +18144,15 @@
     "exampleCn": "没有人能在所有事情上都做到完美。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 1132,
@@ -17949,10 +18384,15 @@
     "exampleCn": "这座城市计划下个月铺设这条路。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 1147,
@@ -18153,10 +18593,15 @@
     "exampleCn": "舞者优雅地穿过舞台。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 1159,
@@ -18213,10 +18658,15 @@
     "exampleCn": "在做决定前我们需要确凿的证据。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1163,
@@ -18643,10 +19093,15 @@
     "exampleCn": "许多鸟在冬天向南迁徙。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1189,
@@ -18673,10 +19128,15 @@
     "exampleCn": "河边发展出了一个小型定居点。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1191,
@@ -19612,10 +20072,15 @@
     "exampleCn": "她用一口大锅煮汤。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 1249,
@@ -19897,10 +20362,15 @@
     "exampleCn": "他的祖父母在二十世纪五十年代移民到了加拿大。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1268,
@@ -19957,10 +20427,15 @@
     "exampleCn": "对很多人来说，时间是一种奢侈品。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 1272,
@@ -20067,10 +20542,15 @@
     "exampleCn": "他上课前吃了一片面包。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 1279,
@@ -20082,10 +20562,15 @@
     "exampleCn": "独自在一座新城市里找路可能很难。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 1280,
@@ -20204,10 +20689,15 @@
     "exampleCn": "那种风格在年轻人中变得流行起来。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 1288,
@@ -20746,10 +21236,15 @@
     "exampleCn": "这个国家在干旱年份会进口谷物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
   },
   {
     "id": 1322,
@@ -21241,10 +21736,15 @@
     "exampleCn": "战争期间许多家庭选择移居国外。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1353,
@@ -21495,10 +21995,15 @@
     "exampleCn": "昨晚气温略微下降了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 1368,
@@ -21567,10 +22072,15 @@
     "exampleCn": "遇到紧急情况请拨打这个号码。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 1372,
@@ -21927,10 +22437,15 @@
     "exampleCn": "古代历史令许多学生着迷。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 1394,
@@ -22077,10 +22592,15 @@
     "exampleCn": "我们选择了去车站的最短路线。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 1404,
@@ -22827,10 +23347,15 @@
     "exampleCn": "水是许多化学反应中的基本成分。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 1449,
@@ -22857,10 +23382,15 @@
     "exampleCn": "这些蘑菇中只有少数种类可以食用。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 1451,
@@ -23217,10 +23747,15 @@
     "exampleCn": "外力可以改变物体的形状。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 1474,
@@ -24228,10 +24763,15 @@
     "exampleCn": "石柱支撑着古代寺庙的屋顶。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 1538,
@@ -24243,10 +24783,15 @@
     "exampleCn": "这种化学物质在布上留下了深色污渍。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 1539,
@@ -24664,10 +25209,15 @@
     "exampleCn": "这台机器能把岩石压碎成小块。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 1566,
@@ -24679,10 +25229,15 @@
     "exampleCn": "这个富裕家庭在海岸附近拥有一栋别墅。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1567,
@@ -24709,10 +25264,15 @@
     "exampleCn": "博物馆展出了一颗来自古埃及的稀有宝石。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 1569,
@@ -25503,10 +26063,15 @@
     "exampleCn": "上涨的水开始淹没较低的街道。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 1619,
@@ -25752,10 +26317,15 @@
     "exampleCn": "老师对这篇文章给出了建设性的反馈。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1634,
@@ -26204,10 +26774,15 @@
     "exampleCn": "树木在秋天落叶。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1663,
@@ -26404,10 +26979,15 @@
     "exampleCn": "厨师加入香料来改善味道。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 1676,
@@ -26439,10 +27019,15 @@
     "exampleCn": "人们往往会清楚地记住不寻常的事件。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 1678,
@@ -27258,10 +27843,15 @@
     "exampleCn": "这座水坝控制洪水并发电。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 1729,
@@ -27378,10 +27968,15 @@
     "exampleCn": "这份报告为新理论提供了证据。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 1737,
@@ -27598,10 +28193,15 @@
     "exampleCn": "这种动物有调节体温的内部系统。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 1750,
@@ -27630,10 +28230,15 @@
     "exampleCn": "农民在播种前浸泡种子。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 1752,
@@ -27840,10 +28445,15 @@
     "exampleCn": "铁路把货物运往全国各地。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 1765,
@@ -28504,10 +29114,15 @@
     "exampleCn": "雾会在早晨笼罩山峰。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 1807,
@@ -28701,10 +29316,15 @@
     "exampleCn": "这个设计在使用前需要一些修改。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 1820,
@@ -29023,10 +29643,15 @@
     "exampleCn": "酸性土壤会使一些植物难以生长。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 1841,
@@ -29320,10 +29945,15 @@
     "exampleCn": "这家酒店提供能看到海景的豪华房间。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 1860,
@@ -29395,10 +30025,16 @@
     "exampleCn": "她用刀给苹果削皮。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31",
+      "32"
+    ]
   },
   {
     "id": 1865,
@@ -29410,10 +30046,15 @@
     "exampleCn": "工人们不得不把墙上的旧油漆刮掉。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
   },
   {
     "id": 1866,
@@ -29455,10 +30096,15 @@
     "exampleCn": "卫星向世界各地传送信号。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 1869,
@@ -29655,10 +30301,15 @@
     "exampleCn": "这艘船把物资运过海洋。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 1881,
@@ -29797,10 +30448,15 @@
     "exampleCn": "她打开一小包种子，把它们种在花园里。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 1890,
@@ -29909,10 +30565,15 @@
     "exampleCn": "这份合同因签署不合法而被宣布无效。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 1897,
@@ -30031,10 +30692,15 @@
     "exampleCn": "如果打开太多程序，电脑可能会崩溃。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 1905,
@@ -30046,10 +30712,15 @@
     "exampleCn": "许可证将在月底到期。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 1906,
@@ -30066,7 +30737,11 @@
     ],
     "level": "4",
     "list": "6",
-    "ieltsList": "1"
+    "ieltsList": "1",
+    "ieltsLists": [
+      "1",
+      "31"
+    ]
   },
   {
     "id": 1907,
@@ -30303,10 +30978,15 @@
     "exampleCn": "农民在一小块土地上种了蔬菜。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 1922,
@@ -30408,10 +31088,15 @@
     "exampleCn": "这座石拱门标志着古城的入口。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 1929,
@@ -30773,10 +31458,15 @@
     "exampleCn": "教室在走廊尽头。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1952,
@@ -31681,10 +32371,15 @@
     "exampleCn": "这座建筑的外部由石头建成。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 2008,
@@ -32430,10 +33125,15 @@
     "exampleCn": "这种植物曾被用来制作天然染料。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 2054,
@@ -32652,10 +33352,15 @@
     "exampleCn": "他们在湖边租了一间小屋。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 2068,
@@ -32667,10 +33372,15 @@
     "exampleCn": "博物馆的布局使参观展品很方便。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 2069,
@@ -32682,10 +33392,15 @@
     "exampleCn": "缺少资金是这个项目的主要障碍。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 2070,
@@ -33186,10 +33901,15 @@
     "exampleCn": "李子树在早春开花。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
   },
   {
     "id": 2102,
@@ -33201,10 +33921,15 @@
     "exampleCn": "暴风雨使那艘船成了残骸。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 2103,
@@ -33724,10 +34449,15 @@
     "exampleCn": "研究人员试图探测湖的深度。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 2136,
@@ -33919,10 +34649,15 @@
     "exampleCn": "雨水流过路边的沟渠。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 2148,
@@ -33949,10 +34684,15 @@
     "exampleCn": "他们在研磨咖啡豆之前先烘焙。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 2150,
@@ -34256,10 +34996,15 @@
     "exampleCn": "公共交通减少了大城市的交通拥堵。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 2169,
@@ -34683,10 +35428,15 @@
     "exampleCn": "我们应该为长途旅行保留一些水。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 2196,
@@ -34750,7 +35500,8 @@
     "list": "9",
     "ieltsList": "20",
     "ieltsLists": [
-      "20"
+      "20",
+      "36"
     ]
   },
   {
@@ -34813,10 +35564,15 @@
     "exampleCn": "那座老塔是这座城市著名的地标。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 2204,
@@ -35104,10 +35860,15 @@
     "exampleCn": "这栋建筑的内部设计得很漂亮。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 2222,
@@ -35483,10 +36244,15 @@
     "exampleCn": "地球继续绕地轴旋转。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 2246,
@@ -36554,10 +37320,15 @@
     "exampleCn": "他用一块抹布擦窗户。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 2315,
@@ -36649,10 +37420,15 @@
     "exampleCn": "食物被储存在一个锡制容器里。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 2321,
@@ -37691,10 +38467,15 @@
     "exampleCn": "这座纪念碑纪念战争中牺牲的士兵。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 2386,
@@ -37706,10 +38487,15 @@
     "exampleCn": "煮汤时慢慢搅拌。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 2387,
@@ -37721,10 +38507,15 @@
     "exampleCn": "她推着购物车穿过超市。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 2388,
@@ -37796,10 +38587,15 @@
     "exampleCn": "他冲向公交车站。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 2392,
@@ -37831,10 +38627,15 @@
     "exampleCn": "汤正在炉子上加热。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 2394,
@@ -37846,10 +38647,15 @@
     "exampleCn": "她戴着一条银项链参加典礼。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 2395,
@@ -37861,10 +38667,15 @@
     "exampleCn": "新软件的安装花了一个小时。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 2396,
@@ -37876,10 +38687,15 @@
     "exampleCn": "游行队伍沿着主街缓慢前进。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 2397,
@@ -38341,10 +39157,15 @@
     "exampleCn": "电脑故障耽误了演示。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 2426,
@@ -38733,10 +39554,15 @@
     "exampleCn": "作者用生动的细节润色了这个故事。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 2451,
@@ -38955,10 +39781,15 @@
     "exampleCn": "一台起重机吊起了沉重的钢梁。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 2465,
@@ -38985,10 +39816,15 @@
     "exampleCn": "一条清晰的思路连接了论证的各个部分。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 2467,
@@ -39174,10 +40010,15 @@
     "exampleCn": "这座古代金字塔吸引了许多考古学家。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 2479,
@@ -39613,10 +40454,15 @@
     "exampleCn": "暖气片让房间在冬天保持温暖。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 2507,
@@ -40610,10 +41456,15 @@
     "exampleCn": "工人们明年将建造一座新桥。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 2569,
@@ -41180,10 +42031,15 @@
     "exampleCn": "合同中包括关于逾期付款的条款。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 2605,
@@ -41572,10 +42428,15 @@
     "exampleCn": "博物馆展出了精美的瓷碗。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 2631,
@@ -41602,10 +42463,15 @@
     "exampleCn": "一座细长的桥横跨小溪。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 2633,
@@ -41654,7 +42520,8 @@
     "list": "3",
     "ieltsList": "6",
     "ieltsLists": [
-      "6"
+      "6",
+      "34"
     ]
   },
   {
@@ -42147,10 +43014,15 @@
     "exampleCn": "屋顶覆盖着红瓦。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 2668,
@@ -42212,10 +43084,15 @@
     "exampleCn": "遗址中发现了陶瓷罐。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 2672,
@@ -42287,10 +43164,15 @@
     "exampleCn": "这件衣服是羊毛制成的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 2677,
@@ -42607,10 +43489,15 @@
     "exampleCn": "磨坊可以把小麦磨成面粉。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 2696,
@@ -42622,10 +43509,15 @@
     "exampleCn": "他们乘独木舟穿过湖面。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 2697,
@@ -42807,10 +43699,15 @@
     "exampleCn": "铁矿石在熔炉中加热。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 2709,
@@ -42867,10 +43764,15 @@
     "exampleCn": "倒下的树木堵住了道路。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 2713,
@@ -43082,10 +43984,15 @@
     "exampleCn": "物体下落时速度增加了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 2727,
@@ -43112,10 +44019,15 @@
     "exampleCn": "她用一条红丝带把包裹系好。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 2729,
@@ -43142,10 +44054,15 @@
     "exampleCn": "这座雕像是为纪念这位民族英雄而建的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 2731,
@@ -43437,10 +44354,15 @@
     "exampleCn": "农民把干草装上马车。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 2750,
@@ -43557,10 +44479,15 @@
     "exampleCn": "这台发动机可产生三百多马力。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 2758,
@@ -43572,10 +44499,15 @@
     "exampleCn": "蚊子可能成为疾病的传播媒介。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 2759,
@@ -43714,10 +44646,15 @@
     "exampleCn": "树上挂满了玻璃装饰品。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 2768,
@@ -43894,10 +44831,15 @@
     "exampleCn": "椅子上覆盖着红色天鹅绒。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 2779,
@@ -45716,10 +46658,15 @@
     "exampleCn": "学校决定把旅行推迟到春天。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 2896,
@@ -45856,10 +46803,15 @@
     "exampleCn": "他们乘木筏过河。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 2905,
@@ -46237,10 +47189,15 @@
     "exampleCn": "坚持学习的学生通常会收获好成绩。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
   },
   {
     "id": 2929,
@@ -46891,10 +47848,15 @@
     "exampleCn": "他在冬天前修剪了树枝。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 2970,
@@ -46951,10 +47913,15 @@
     "exampleCn": "风推动涡轮机叶片转动。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 2974,
@@ -47480,10 +48447,15 @@
     "exampleCn": "公园附近有几所学校。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 3007,
@@ -47540,10 +48512,15 @@
     "exampleCn": "学生们聚集在大厅参加集会。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 3011,
@@ -47635,10 +48612,15 @@
     "exampleCn": "色彩鲜艳的画装饰着图书馆的墙壁。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 3017,
@@ -48144,10 +49126,15 @@
     "exampleCn": "一滴水珠从叶子上滚落下来。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 3050,
@@ -48249,10 +49236,15 @@
     "exampleCn": "暴风雨过去后，平静的天气占了主导。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 3057,
@@ -48818,10 +49810,15 @@
     "exampleCn": "这家工厂用棉和羊毛生产纺织品。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 3092,
@@ -49302,10 +50299,15 @@
     "exampleCn": "老师给学生额外阅读材料来补充课本内容。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
   },
   {
     "id": 3122,
@@ -49806,10 +50808,15 @@
     "exampleCn": "每个划船者都拿着一支桨并有节奏地划动。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 3154,
@@ -50492,10 +51499,15 @@
     "exampleCn": "旅行者穿越了一大片广阔的沙漠。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 3197,
@@ -50612,10 +51624,15 @@
     "exampleCn": "植物用一种叫叶绿素的绿色色素吸收光。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 3205,
@@ -50744,10 +51761,15 @@
     "exampleCn": "暴风雨过去后，云层消失了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 3213,
@@ -51830,10 +52852,15 @@
     "exampleCn": "这座城市的街道以简单的网格排列。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 3283,
@@ -51970,10 +52997,15 @@
     "exampleCn": "他们批评典礼费用过于奢侈。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 3292,
@@ -52291,10 +53323,15 @@
     "exampleCn": "学生用地图集找到那个国家的位置。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 3311,
@@ -55242,10 +56279,15 @@
     "exampleCn": "他把芥末抹在三明治上。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
   },
   {
     "id": 3506,
@@ -56832,7 +57874,11 @@
     "categories": [
       "ielts"
     ],
-    "ieltsList": "2"
+    "ieltsList": "2",
+    "ieltsLists": [
+      "2",
+      "34"
+    ]
   },
   {
     "id": 3612,
@@ -56916,7 +57962,11 @@
     "categories": [
       "ielts"
     ],
-    "ieltsList": "2"
+    "ieltsList": "2",
+    "ieltsLists": [
+      "2",
+      "36"
+    ]
   },
   {
     "id": 3618,
@@ -56986,7 +58036,11 @@
     "categories": [
       "ielts"
     ],
-    "ieltsList": "2"
+    "ieltsList": "2",
+    "ieltsLists": [
+      "2",
+      "28"
+    ]
   },
   {
     "id": 3623,
@@ -57028,7 +58082,11 @@
     "categories": [
       "ielts"
     ],
-    "ieltsList": "2"
+    "ieltsList": "2",
+    "ieltsLists": [
+      "2",
+      "33"
+    ]
   },
   {
     "id": 3626,
@@ -57882,7 +58940,11 @@
     "categories": [
       "ielts"
     ],
-    "ieltsList": "4"
+    "ieltsList": "4",
+    "ieltsLists": [
+      "4",
+      "34"
+    ]
   },
   {
     "id": 3687,
@@ -60013,7 +61075,8 @@
     ],
     "ieltsList": "8",
     "ieltsLists": [
-      "8"
+      "8",
+      "32"
     ]
   },
   {
@@ -60657,7 +61720,11 @@
     "categories": [
       "ielts"
     ],
-    "ieltsList": "10"
+    "ieltsList": "10",
+    "ieltsLists": [
+      "10",
+      "37"
+    ]
   },
   {
     "id": 3859,
@@ -62281,7 +63348,8 @@
     ],
     "ieltsList": "13",
     "ieltsLists": [
-      "13"
+      "13",
+      "31"
     ]
   },
   {
@@ -68300,7 +69368,8 @@
     ],
     "ieltsList": "24",
     "ieltsLists": [
-      "24"
+      "24",
+      "32"
     ]
   },
   {
@@ -68402,7 +69471,8 @@
     ],
     "ieltsList": "24",
     "ieltsLists": [
-      "24"
+      "24",
+      "36"
     ]
   },
   {
@@ -70017,7 +71087,8 @@
     ],
     "ieltsList": "27",
     "ieltsLists": [
-      "27"
+      "27",
+      "33"
     ]
   },
   {
@@ -70392,6 +71463,6160 @@
     "ieltsList": "27",
     "ieltsLists": [
       "27"
+    ]
+  },
+  {
+    "id": 4436,
+    "word": "style",
+    "phonetic": "staɪl",
+    "pos": "n.",
+    "meaning": "风格/样式",
+    "example": "The house was built in a modern style.",
+    "exampleCn": "这座房子是现代风格建造的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4437,
+    "word": "stylish",
+    "phonetic": "ˈstaɪlɪʃ",
+    "pos": "adj.",
+    "meaning": "时髦的/有格调的",
+    "example": "He looked stylish in his new suit.",
+    "exampleCn": "他穿着新西装看起来很时髦。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4438,
+    "word": "tendency",
+    "phonetic": "ˈtendənsi",
+    "pos": "n.",
+    "meaning": "倾向/趋势",
+    "example": "She has a tendency to worry too much.",
+    "exampleCn": "她有一种过分担心的倾向。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4439,
+    "word": "popularity",
+    "phonetic": "ˌpɒpjʊˈlærəti",
+    "pos": "n.",
+    "meaning": "流行/受欢迎",
+    "example": "The popularity of the app grew rapidly.",
+    "exampleCn": "这款应用的人气迅速增长。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4440,
+    "word": "vogue",
+    "phonetic": "vəʊɡ",
+    "pos": "n.",
+    "meaning": "时尚/流行",
+    "example": "Platform shoes are back in vogue.",
+    "exampleCn": "厚底鞋又重新流行起来了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4441,
+    "word": "prevalence",
+    "phonetic": "ˈprevələns",
+    "pos": "n.",
+    "meaning": "流行/普遍",
+    "example": "The prevalence of smartphones has changed daily life.",
+    "exampleCn": "智能手机的普及改变了日常生活。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4442,
+    "word": "prevailing",
+    "phonetic": "prɪˈveɪlɪŋ",
+    "pos": "adj.",
+    "meaning": "盛行的/占优势的",
+    "example": "The prevailing winds come from the west.",
+    "exampleCn": "盛行风来自西方。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4443,
+    "word": "model",
+    "phonetic": "ˈmɒdl",
+    "pos": "n.",
+    "meaning": "模特/模型",
+    "example": "She works as a fashion model.",
+    "exampleCn": "她是一名时装模特。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4444,
+    "word": "icon",
+    "phonetic": "ˈaɪkɒn",
+    "pos": "n.",
+    "meaning": "偶像/图标",
+    "example": "She became a fashion icon in the 1960s.",
+    "exampleCn": "她在20世纪60年代成为时尚偶像。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4445,
+    "word": "idol",
+    "phonetic": "ˈaɪdl",
+    "pos": "n.",
+    "meaning": "偶像/崇拜对象",
+    "example": "The singer was his childhood idol.",
+    "exampleCn": "那位歌手是他童年时的偶像。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4446,
+    "word": "jewellery",
+    "phonetic": "ˈdʒuːəlri",
+    "pos": "n.",
+    "meaning": "珠宝/首饰",
+    "example": "She inherited some valuable jewellery from her grandmother.",
+    "exampleCn": "她从祖母那里继承了一些珍贵的珠宝。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4447,
+    "word": "jewel",
+    "phonetic": "ˈdʒuːəl",
+    "pos": "n.",
+    "meaning": "宝石/珠宝",
+    "example": "The crown was set with precious jewels.",
+    "exampleCn": "王冠上镶嵌着珍贵的宝石。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4448,
+    "word": "jade",
+    "phonetic": "dʒeɪd",
+    "pos": "n.",
+    "meaning": "玉/翡翠",
+    "example": "She wore a necklace made of green jade.",
+    "exampleCn": "她戴了一条绿玉项链。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4449,
+    "word": "embroider",
+    "phonetic": "ɪmˈbrɔɪdə",
+    "pos": "v.",
+    "meaning": "刺绣/绣花",
+    "example": "She embroidered flowers onto the pillowcase.",
+    "exampleCn": "她在枕套上绣了花。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4450,
+    "word": "hairdressing",
+    "phonetic": "ˈheədresɪŋ",
+    "pos": "n.",
+    "meaning": "美发/理发",
+    "example": "She studied hairdressing at a vocational school.",
+    "exampleCn": "她在一所职业学校学习了美发。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4451,
+    "word": "masquerade",
+    "phonetic": "ˌmæskəˈreɪd",
+    "pos": "n.",
+    "meaning": "化装舞会/伪装",
+    "example": "They attended a masquerade ball at the palace.",
+    "exampleCn": "他们参加了宫殿里的化装舞会。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4452,
+    "word": "veil",
+    "phonetic": "veɪl",
+    "pos": "n.",
+    "meaning": "面纱/遮蔽物",
+    "example": "The bride wore a white lace veil.",
+    "exampleCn": "新娘戴着白色蕾丝面纱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4453,
+    "word": "costume",
+    "phonetic": "ˈkɒstjuːm",
+    "pos": "n.",
+    "meaning": "服装/戏服",
+    "example": "The actors wore elaborate costumes on stage.",
+    "exampleCn": "演员们在舞台上穿着精美的戏服。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4454,
+    "word": "cosplay",
+    "phonetic": "ˈkɒspleɪ",
+    "pos": "n.",
+    "meaning": "角色扮演",
+    "example": "She dressed up as a cartoon character for the cosplay event.",
+    "exampleCn": "她为角色扮演活动装扮成了一位卡通人物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4455,
+    "word": "decent",
+    "phonetic": "ˈdiːsnt",
+    "pos": "adj.",
+    "meaning": "得体的/正派的",
+    "example": "He earns a decent salary for his work.",
+    "exampleCn": "他工作挣着不错的薪水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4456,
+    "word": "indecent",
+    "phonetic": "ɪnˈdiːsnt",
+    "pos": "adj.",
+    "meaning": "不得体的/下流的",
+    "example": "The film was banned for indecent content.",
+    "exampleCn": "该影片因含有下流内容而被禁。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4457,
+    "word": "exquisite",
+    "phonetic": "ɪkˈskwɪzɪt",
+    "pos": "adj.",
+    "meaning": "精美的/精致的",
+    "example": "The museum houses an exquisite collection of paintings.",
+    "exampleCn": "博物馆藏有一批精美的画作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4458,
+    "word": "grace",
+    "phonetic": "ɡreɪs",
+    "pos": "n.",
+    "meaning": "优雅/风度",
+    "example": "She moved with the grace of a dancer.",
+    "exampleCn": "她走路时带着舞者的优雅。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4459,
+    "word": "elegance",
+    "phonetic": "ˈelɪɡəns",
+    "pos": "n.",
+    "meaning": "优雅/典雅",
+    "example": "The hotel was decorated with elegance and taste.",
+    "exampleCn": "酒店的装饰典雅而有品位。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4460,
+    "word": "elegant",
+    "phonetic": "ˈelɪɡənt",
+    "pos": "adj.",
+    "meaning": "优雅的/精致的",
+    "example": "She wore an elegant black dress to the party.",
+    "exampleCn": "她穿了一条优雅的黑色连衣裙去参加聚会。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4461,
+    "word": "appearance",
+    "phonetic": "əˈpɪərəns",
+    "pos": "n.",
+    "meaning": "外貌/外观",
+    "example": "First impressions are often based on appearance.",
+    "exampleCn": "第一印象往往基于外貌。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4462,
+    "word": "cosmetics",
+    "phonetic": "kɒzˈmetɪks",
+    "pos": "n.",
+    "meaning": "化妆品/美容品",
+    "example": "She spends a lot of money on cosmetics every month.",
+    "exampleCn": "她每月花很多钱买化妆品。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4463,
+    "word": "charming",
+    "phonetic": "ˈtʃɑːmɪŋ",
+    "pos": "adj.",
+    "meaning": "迷人的/有魅力的",
+    "example": "The village is full of charming old cottages.",
+    "exampleCn": "这个村庄到处是迷人的老农舍。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4464,
+    "word": "handsome",
+    "phonetic": "ˈhænsəm",
+    "pos": "adj.",
+    "meaning": "英俊的/帅气的",
+    "example": "He is a tall and handsome young man.",
+    "exampleCn": "他是一个高大英俊的年轻人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4465,
+    "word": "clothing",
+    "phonetic": "ˈkləʊðɪŋ",
+    "pos": "n.",
+    "meaning": "服装/衣着",
+    "example": "The shop sells second-hand clothing.",
+    "exampleCn": "这家商店出售二手服装。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4466,
+    "word": "uniform",
+    "phonetic": "ˈjuːnɪfɔːm",
+    "pos": "n.",
+    "meaning": "制服/统一的",
+    "example": "Students are required to wear a school uniform.",
+    "exampleCn": "学生被要求穿校服。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4467,
+    "word": "laundry",
+    "phonetic": "ˈlɔːndri",
+    "pos": "n.",
+    "meaning": "洗衣/洗衣店",
+    "example": "She does the laundry every Monday.",
+    "exampleCn": "她每周一洗衣服。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4468,
+    "word": "wardrobe",
+    "phonetic": "ˈwɔːdrəʊb",
+    "pos": "n.",
+    "meaning": "衣柜/衣橱",
+    "example": "She has a wardrobe full of clothes.",
+    "exampleCn": "她有一个装满衣服的衣柜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4469,
+    "word": "overcoat",
+    "phonetic": "ˈəʊvəkəʊt",
+    "pos": "n.",
+    "meaning": "大衣/外套",
+    "example": "He wore a heavy overcoat to keep warm.",
+    "exampleCn": "他穿了一件厚大衣来保暖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4470,
+    "word": "robe",
+    "phonetic": "rəʊb",
+    "pos": "n.",
+    "meaning": "长袍/浴袍",
+    "example": "She put on a silk robe after her bath.",
+    "exampleCn": "洗完澡后她穿上了一件丝质浴袍。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4471,
+    "word": "gown",
+    "phonetic": "ɡaʊn",
+    "pos": "n.",
+    "meaning": "礼服/长袍",
+    "example": "The bride wore a beautiful white gown.",
+    "exampleCn": "新娘穿了一条美丽的白色礼服。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4472,
+    "word": "sweater",
+    "phonetic": "ˈswetə",
+    "pos": "n.",
+    "meaning": "毛衣/针织衫",
+    "example": "She knitted a warm sweater for winter.",
+    "exampleCn": "她为冬天织了一件温暖的毛衣。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4473,
+    "word": "jacket",
+    "phonetic": "ˈdʒækɪt",
+    "pos": "n.",
+    "meaning": "夹克/外套",
+    "example": "He wore a leather jacket and jeans.",
+    "exampleCn": "他穿了一件皮夹克和牛仔裤。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4474,
+    "word": "jeans",
+    "phonetic": "dʒiːnz",
+    "pos": "n.",
+    "meaning": "牛仔裤",
+    "example": "He prefers to wear jeans on weekends.",
+    "exampleCn": "他周末更喜欢穿牛仔裤。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
+  },
+  {
+    "id": 4475,
+    "word": "trousers",
+    "phonetic": "ˈtraʊzəz",
+    "pos": "n.",
+    "meaning": "裤子/长裤",
+    "example": "He bought a new pair of trousers for work.",
+    "exampleCn": "他为上班买了一条新裤子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4476,
+    "word": "clasp",
+    "phonetic": "klɑːsp",
+    "pos": "n.",
+    "meaning": "搭扣/扣子",
+    "example": "The necklace has a silver clasp.",
+    "exampleCn": "项链有一个银搭扣。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4477,
+    "word": "unbutton",
+    "phonetic": "ʌnˈbʌtn",
+    "pos": "v.",
+    "meaning": "解开纽扣",
+    "example": "He unbuttoned his jacket and sat down.",
+    "exampleCn": "他解开夹克纽扣坐了下来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4478,
+    "word": "glove",
+    "phonetic": "ɡlʌv",
+    "pos": "n.",
+    "meaning": "手套",
+    "example": "She put on her gloves before going outside.",
+    "exampleCn": "她出门前戴上了手套。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4479,
+    "word": "brim",
+    "phonetic": "brɪm",
+    "pos": "n.",
+    "meaning": "帽檐/边缘",
+    "example": "The glass was filled to the brim.",
+    "exampleCn": "杯子倒满到了边缘。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4480,
+    "word": "scarf",
+    "phonetic": "skɑːf",
+    "pos": "n.",
+    "meaning": "围巾/头巾",
+    "example": "She wrapped a scarf around her neck.",
+    "exampleCn": "她在脖子上围了一条围巾。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4481,
+    "word": "handkerchief",
+    "phonetic": "ˈhæŋkətʃɪf",
+    "pos": "n.",
+    "meaning": "手帕/手绢",
+    "example": "He wiped his forehead with a handkerchief.",
+    "exampleCn": "他用手帕擦了擦额头。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4482,
+    "word": "purse",
+    "phonetic": "pɜːs",
+    "pos": "n.",
+    "meaning": "钱包/女士手提包",
+    "example": "She took some coins from her purse.",
+    "exampleCn": "她从钱包里拿了一些硬币。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4483,
+    "word": "wallet",
+    "phonetic": "ˈwɒlɪt",
+    "pos": "n.",
+    "meaning": "钱包/皮夹",
+    "example": "He keeps his credit cards in his wallet.",
+    "exampleCn": "他把信用卡放在钱包里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4484,
+    "word": "vest",
+    "phonetic": "vest",
+    "pos": "n.",
+    "meaning": "背心/马甲",
+    "example": "He wore a vest under his shirt.",
+    "exampleCn": "他在衬衫里面穿了一件背心。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4485,
+    "word": "sleeve",
+    "phonetic": "sliːv",
+    "pos": "n.",
+    "meaning": "袖子/袖套",
+    "example": "She rolled up her sleeves and started working.",
+    "exampleCn": "她卷起袖子开始干活。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4486,
+    "word": "sock",
+    "phonetic": "sɒk",
+    "pos": "n.",
+    "meaning": "短袜",
+    "example": "He put on a pair of clean socks.",
+    "exampleCn": "他穿上一双干净的袜子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4487,
+    "word": "stocking",
+    "phonetic": "ˈstɒkɪŋ",
+    "pos": "n.",
+    "meaning": "长袜/丝袜",
+    "example": "She wore black stockings with her dress.",
+    "exampleCn": "她穿着黑色长袜配连衣裙。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4488,
+    "word": "slipper",
+    "phonetic": "ˈslɪpə",
+    "pos": "n.",
+    "meaning": "拖鞋/便鞋",
+    "example": "He put on his slippers when he got home.",
+    "exampleCn": "他回到家后穿上了拖鞋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4489,
+    "word": "lace",
+    "phonetic": "leɪs",
+    "pos": "n.",
+    "meaning": "鞋带/蕾丝",
+    "example": "She tied the laces of her trainers.",
+    "exampleCn": "她系好运动鞋的鞋带。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4490,
+    "word": "tailor",
+    "phonetic": "ˈteɪlə",
+    "pos": "n.",
+    "meaning": "裁缝",
+    "example": "The tailor adjusted the hem of the dress.",
+    "exampleCn": "裁缝调整了裙子的下摆。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4491,
+    "word": "sew",
+    "phonetic": "səʊ",
+    "pos": "v.",
+    "meaning": "缝纫/缝制",
+    "example": "She learned to sew from her mother.",
+    "exampleCn": "她从母亲那里学会了缝纫。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4492,
+    "word": "stitch",
+    "phonetic": "stɪtʃ",
+    "pos": "n./v.",
+    "meaning": "针脚/缝合",
+    "example": "She needed six stitches in her cut.",
+    "exampleCn": "她的伤口缝了六针。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4493,
+    "word": "needle",
+    "phonetic": "ˈniːdl",
+    "pos": "n.",
+    "meaning": "针/缝衣针",
+    "example": "She threaded the needle carefully.",
+    "exampleCn": "她小心翼翼地穿针。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4494,
+    "word": "pin",
+    "phonetic": "pɪn",
+    "pos": "n.",
+    "meaning": "别针/大头针",
+    "example": "She fastened the hem with pins.",
+    "exampleCn": "她用别针固定了下摆。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4495,
+    "word": "strap",
+    "phonetic": "stræp",
+    "pos": "n.",
+    "meaning": "带子/皮带",
+    "example": "The strap of her bag broke.",
+    "exampleCn": "她包上的带子断了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4496,
+    "word": "stripe",
+    "phonetic": "straɪp",
+    "pos": "n.",
+    "meaning": "条纹/条子",
+    "example": "The zebra has black and white stripes.",
+    "exampleCn": "斑马有黑白相间的条纹。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4497,
+    "word": "bracelet",
+    "phonetic": "ˈbreɪslɪt",
+    "pos": "n.",
+    "meaning": "手镯/手链",
+    "example": "She wore a silver bracelet on her wrist.",
+    "exampleCn": "她手腕上戴着一只银手镯。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4498,
+    "word": "woollen",
+    "phonetic": "ˈwʊlən",
+    "pos": "adj.",
+    "meaning": "羊毛的/毛织的",
+    "example": "She bought a woollen scarf for the winter.",
+    "exampleCn": "她为冬天买了一条羊毛围巾。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4499,
+    "word": "patchwork",
+    "phonetic": "ˈpætʃwɜːk",
+    "pos": "n.",
+    "meaning": "拼缝物/拼凑",
+    "example": "The quilt was made from patchwork squares.",
+    "exampleCn": "这床被子是由拼布方块做成的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4500,
+    "word": "shabby",
+    "phonetic": "ˈʃæbi",
+    "pos": "adj.",
+    "meaning": "破旧的/寒酸的",
+    "example": "He wore a shabby old coat.",
+    "exampleCn": "他穿着一件破旧的外套。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4501,
+    "word": "tight",
+    "phonetic": "taɪt",
+    "pos": "adj.",
+    "meaning": "紧的/牢固的",
+    "example": "The lid was screwed on tight.",
+    "exampleCn": "盖子拧得很紧。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4502,
+    "word": "whitewash",
+    "phonetic": "ˈwaɪtwɒʃ",
+    "pos": "v./n.",
+    "meaning": "粉刷/白涂料",
+    "example": "They whitewashed the walls of the cottage.",
+    "exampleCn": "他们粉刷了农舍的墙壁。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4503,
+    "word": "brown",
+    "phonetic": "braʊn",
+    "pos": "adj./n.",
+    "meaning": "棕色/褐色",
+    "example": "She has big brown eyes.",
+    "exampleCn": "她有一双棕色的大眼睛。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4504,
+    "word": "purple",
+    "phonetic": "ˈpɜːpl",
+    "pos": "adj./n.",
+    "meaning": "紫色",
+    "example": "The sky turned purple at sunset.",
+    "exampleCn": "日落时天空变成了紫色。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4505,
+    "word": "blot",
+    "phonetic": "blɒt",
+    "pos": "n.",
+    "meaning": "污点/墨渍",
+    "example": "A blot of ink spoiled the page.",
+    "exampleCn": "一滴墨水渍毁掉了这一页。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4506,
+    "word": "figure",
+    "phonetic": "ˈfɪɡə",
+    "pos": "n.",
+    "meaning": "身材/数字/人物",
+    "example": "She has a slim figure.",
+    "exampleCn": "她身材苗条。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4507,
+    "word": "curvy",
+    "phonetic": "ˈkɜːvi",
+    "pos": "adj.",
+    "meaning": "曲线美的/弯曲的",
+    "example": "The road follows the curvy coastline.",
+    "exampleCn": "这条路沿着弯曲的海岸线延伸。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4508,
+    "word": "hourglass",
+    "phonetic": "ˈaʊəɡlɑːs",
+    "pos": "n.",
+    "meaning": "沙漏/沙漏形身材",
+    "example": "She used an hourglass to time the game.",
+    "exampleCn": "她用一个沙漏来给游戏计时。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4509,
+    "word": "slight",
+    "phonetic": "slaɪt",
+    "pos": "adj.",
+    "meaning": "轻微的/纤细的",
+    "example": "There was a slight breeze blowing.",
+    "exampleCn": "吹着微微的微风。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4510,
+    "word": "slim",
+    "phonetic": "slɪm",
+    "pos": "adj.",
+    "meaning": "苗条的/纤细的",
+    "example": "She looked slim and fit in her dress.",
+    "exampleCn": "她穿着裙子看起来苗条又健康。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4511,
+    "word": "thready",
+    "phonetic": "ˈθredi",
+    "pos": "adj.",
+    "meaning": "线状的/纤维状的",
+    "example": "The soup had a thready texture from the vegetables.",
+    "exampleCn": "汤因蔬菜而带有纤维状口感。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4512,
+    "word": "stringy",
+    "phonetic": "ˈstrɪŋi",
+    "pos": "adj.",
+    "meaning": "细绳状的/多筋的",
+    "example": "The meat was tough and stringy.",
+    "exampleCn": "肉又硬又多筋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
+  },
+  {
+    "id": 4513,
+    "word": "diet",
+    "phonetic": "ˈdaɪət",
+    "pos": "n.",
+    "meaning": "饮食/节食",
+    "example": "A balanced diet is essential for good health.",
+    "exampleCn": "均衡饮食对健康至关重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4514,
+    "word": "dietary",
+    "phonetic": "ˈdaɪətəri",
+    "pos": "adj.",
+    "meaning": "饮食的/食谱的",
+    "example": "Dietary habits vary across cultures.",
+    "exampleCn": "饮食习惯因文化而异。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4515,
+    "word": "treat",
+    "phonetic": "triːt",
+    "pos": "v./n.",
+    "meaning": "对待/款待/治疗",
+    "example": "He treated his friends to dinner.",
+    "exampleCn": "他请朋友们吃晚饭。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4516,
+    "word": "treatment",
+    "phonetic": "ˈtriːtmənt",
+    "pos": "n.",
+    "meaning": "治疗/对待",
+    "example": "She is receiving treatment for her illness.",
+    "exampleCn": "她正在接受疾病治疗。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4517,
+    "word": "cater",
+    "phonetic": "ˈkeɪtə",
+    "pos": "v.",
+    "meaning": "提供餐饮/满足需求",
+    "example": "The restaurant caters for weddings and parties.",
+    "exampleCn": "这家餐厅承办婚宴和派对餐饮。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4518,
+    "word": "drinkable",
+    "phonetic": "ˈdrɪŋkəbl",
+    "pos": "adj.",
+    "meaning": "可饮用的",
+    "example": "The water from this well is clean and drinkable.",
+    "exampleCn": "这口井的水干净且可饮用。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4519,
+    "word": "refectory",
+    "phonetic": "rɪˈfektəri",
+    "pos": "n.",
+    "meaning": "食堂/餐厅",
+    "example": "The students gathered in the refectory for lunch.",
+    "exampleCn": "学生们聚集在食堂吃午餐。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4520,
+    "word": "cafeteria",
+    "phonetic": "ˌkæfəˈtɪəriə",
+    "pos": "n.",
+    "meaning": "自助餐厅/食堂",
+    "example": "We had lunch in the school cafeteria.",
+    "exampleCn": "我们在学校自助餐厅吃了午饭。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4521,
+    "word": "buffet",
+    "phonetic": "ˈbʊfeɪ",
+    "pos": "n.",
+    "meaning": "自助餐",
+    "example": "The hotel offers a breakfast buffet every morning.",
+    "exampleCn": "酒店每天早晨提供自助早餐。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4522,
+    "word": "barbecue",
+    "phonetic": "ˈbɑːbɪkjuː",
+    "pos": "n.",
+    "meaning": "烧烤/烤肉",
+    "example": "We had a barbecue in the garden on Sunday.",
+    "exampleCn": "星期天我们在花园里烧烤。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4523,
+    "word": "supper",
+    "phonetic": "ˈsʌpə",
+    "pos": "n.",
+    "meaning": "晚餐/晚饭",
+    "example": "They sat down to a simple supper of bread and soup.",
+    "exampleCn": "他们坐下来吃了简单的一顿面包汤当晚餐。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4524,
+    "word": "refreshment",
+    "phonetic": "rɪˈfreʃmənt",
+    "pos": "n.",
+    "meaning": "茶点/点心",
+    "example": "Light refreshments were served during the break.",
+    "exampleCn": "休息期间提供了简单的茶点。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4525,
+    "word": "snack",
+    "phonetic": "snæk",
+    "pos": "n.",
+    "meaning": "零食/小吃",
+    "example": "She had an apple as a mid-afternoon snack.",
+    "exampleCn": "她下午三四点吃了一个苹果当零食。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4526,
+    "word": "appetiser",
+    "phonetic": "ˈæpɪtaɪzə",
+    "pos": "n.",
+    "meaning": "开胃菜/前菜",
+    "example": "We ordered soup as an appetiser.",
+    "exampleCn": "我们点了汤作为开胃菜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4527,
+    "word": "cuisine",
+    "phonetic": "kwɪˈziːn",
+    "pos": "n.",
+    "meaning": "烹饪/菜系",
+    "example": "Italian cuisine is popular all over the world.",
+    "exampleCn": "意大利菜在世界各地都很受欢迎。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4528,
+    "word": "menu",
+    "phonetic": "ˈmenjuː",
+    "pos": "n.",
+    "meaning": "菜单/菜谱",
+    "example": "The waiter brought us the menu.",
+    "exampleCn": "服务员给我们拿来了菜单。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4529,
+    "word": "order",
+    "phonetic": "ˈɔːdə",
+    "pos": "v./n.",
+    "meaning": "点餐/命令/顺序",
+    "example": "Are you ready to order your food?",
+    "exampleCn": "你准备好点餐了吗？",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4530,
+    "word": "takeaway",
+    "phonetic": "ˈteɪkəweɪ",
+    "pos": "n.",
+    "meaning": "外卖/外带",
+    "example": "Let's get a takeaway tonight.",
+    "exampleCn": "今晚我们叫外卖吧。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4531,
+    "word": "gourmet",
+    "phonetic": "ˈɡʊəmeɪ",
+    "pos": "n./adj.",
+    "meaning": "美食家/美食的",
+    "example": "The restaurant is famous for its gourmet cuisine.",
+    "exampleCn": "这家餐厅以美食佳肴闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4532,
+    "word": "vegetarian",
+    "phonetic": "ˌvedʒɪˈteəriən",
+    "pos": "n./adj.",
+    "meaning": "素食者/素食的",
+    "example": "She became a vegetarian for health reasons.",
+    "exampleCn": "她出于健康原因成了素食者。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4533,
+    "word": "cutlery",
+    "phonetic": "ˈkʌtləri",
+    "pos": "n.",
+    "meaning": "餐具/刀叉",
+    "example": "They placed the cutlery neatly on the table.",
+    "exampleCn": "他们把餐具整齐地摆在桌上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4534,
+    "word": "silver",
+    "phonetic": "ˈsɪlvə",
+    "pos": "n.",
+    "meaning": "银/银器",
+    "example": "The ring was made of pure silver.",
+    "exampleCn": "这枚戒指是纯银制成的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4535,
+    "word": "dish",
+    "phonetic": "dɪʃ",
+    "pos": "n.",
+    "meaning": "盘子/菜肴",
+    "example": "She served the vegetables in a large dish.",
+    "exampleCn": "她把蔬菜放在一个大盘子里端上来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4536,
+    "word": "saucer",
+    "phonetic": "ˈsɔːsə",
+    "pos": "n.",
+    "meaning": "茶碟/托盘",
+    "example": "He placed the teacup gently on the saucer.",
+    "exampleCn": "他把茶杯轻轻放在茶碟上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4537,
+    "word": "fork",
+    "phonetic": "fɔːk",
+    "pos": "n.",
+    "meaning": "叉子/餐叉",
+    "example": "He ate the steak with a knife and fork.",
+    "exampleCn": "他用刀叉吃了牛排。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4538,
+    "word": "spoon",
+    "phonetic": "spuːn",
+    "pos": "n.",
+    "meaning": "勺子/汤匙",
+    "example": "She stirred her tea with a spoon.",
+    "exampleCn": "她用勺子搅了搅茶。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4539,
+    "word": "spoonful",
+    "phonetic": "ˈspuːnfʊl",
+    "pos": "n.",
+    "meaning": "一勺的量",
+    "example": "Add a spoonful of sugar to the mixture.",
+    "exampleCn": "往混合物中加入一勺糖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4540,
+    "word": "mug",
+    "phonetic": "mʌɡ",
+    "pos": "n.",
+    "meaning": "马克杯/大杯",
+    "example": "He drank a mug of hot chocolate.",
+    "exampleCn": "他喝了一大杯热巧克力。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4541,
+    "word": "kettle",
+    "phonetic": "ˈketl",
+    "pos": "n.",
+    "meaning": "水壶/烧水壶",
+    "example": "She put the kettle on to make tea.",
+    "exampleCn": "她烧上水壶准备泡茶。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4542,
+    "word": "pan",
+    "phonetic": "pæn",
+    "pos": "n.",
+    "meaning": "平底锅/煎锅",
+    "example": "Heat the oil in a large frying pan.",
+    "exampleCn": "在一个大煎锅里加热油。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4543,
+    "word": "lid",
+    "phonetic": "lɪd",
+    "pos": "n.",
+    "meaning": "盖子",
+    "example": "She took the lid off the saucepan.",
+    "exampleCn": "她把平底锅的盖子拿掉。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4544,
+    "word": "alcoholic beverage",
+    "phonetic": "",
+    "pos": "n.",
+    "meaning": "酒精饮料",
+    "example": "Beer is a type of alcoholic beverage.",
+    "exampleCn": "啤酒是一种酒精饮料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4545,
+    "word": "alcoholic",
+    "phonetic": "ˌælkəˈhɒlɪk",
+    "pos": "adj./n.",
+    "meaning": "酒精的/酗酒者",
+    "example": "He gave up drinking alcoholic drinks.",
+    "exampleCn": "他戒掉了含酒精的饮料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4546,
+    "word": "liquor",
+    "phonetic": "ˈlɪkə",
+    "pos": "n.",
+    "meaning": "烈酒/酒类",
+    "example": "The shop is licensed to sell liquor.",
+    "exampleCn": "这家店获准出售酒类。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4547,
+    "word": "whisky",
+    "phonetic": "ˈwɪski",
+    "pos": "n.",
+    "meaning": "威士忌酒",
+    "example": "He poured himself a glass of whisky.",
+    "exampleCn": "他给自己倒了一杯威士忌。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4548,
+    "word": "brandy",
+    "phonetic": "ˈbrændi",
+    "pos": "n.",
+    "meaning": "白兰地酒",
+    "example": "She took a sip of brandy to warm up.",
+    "exampleCn": "她抿了一口白兰地暖暖身子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4549,
+    "word": "tobacco",
+    "phonetic": "təˈbækəʊ",
+    "pos": "n.",
+    "meaning": "烟草/烟叶",
+    "example": "The use of tobacco is banned in public places.",
+    "exampleCn": "公共场所禁止使用烟草。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4550,
+    "word": "cigar",
+    "phonetic": "sɪˈɡɑː",
+    "pos": "n.",
+    "meaning": "雪茄",
+    "example": "He lit a cigar to celebrate the occasion.",
+    "exampleCn": "他点燃了一支雪茄来庆祝这个场合。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4551,
+    "word": "sober",
+    "phonetic": "ˈsəʊbə",
+    "pos": "adj.",
+    "meaning": "清醒的/未醉的",
+    "example": "He stayed sober and drove everyone home safely.",
+    "exampleCn": "他保持清醒并安全地把大家送回了家。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4552,
+    "word": "cucumber",
+    "phonetic": "ˈkjuːkʌmbə",
+    "pos": "n.",
+    "meaning": "黄瓜",
+    "example": "She sliced a cucumber for the salad.",
+    "exampleCn": "她切了一根黄瓜放进沙拉。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4553,
+    "word": "onion",
+    "phonetic": "ˈʌnjən",
+    "pos": "n.",
+    "meaning": "洋葱",
+    "example": "Chopping onions always makes her cry.",
+    "exampleCn": "切洋葱总是让她流泪。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4554,
+    "word": "mushroom",
+    "phonetic": "ˈmʌʃrʊm",
+    "pos": "n.",
+    "meaning": "蘑菇",
+    "example": "She picked wild mushrooms in the forest.",
+    "exampleCn": "她在森林里采了野蘑菇。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4555,
+    "word": "eggplant",
+    "phonetic": "ˈeɡplɑːnt",
+    "pos": "n.",
+    "meaning": "茄子",
+    "example": "Grilled eggplant is a popular dish in the region.",
+    "exampleCn": "烤茄子是这个地区的一道常见菜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4556,
+    "word": "turnip",
+    "phonetic": "ˈtɜːnɪp",
+    "pos": "n.",
+    "meaning": "萝卜/芜菁",
+    "example": "Turnips are a common ingredient in winter soups.",
+    "exampleCn": "萝卜是冬季汤中的常见食材。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4557,
+    "word": "radish",
+    "phonetic": "ˈrædɪʃ",
+    "pos": "n.",
+    "meaning": "小萝卜/水萝卜",
+    "example": "She added sliced radishes to the salad.",
+    "exampleCn": "她在沙拉里加了切成片的小萝卜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4558,
+    "word": "hull",
+    "phonetic": "hʌl",
+    "pos": "n.",
+    "meaning": "外壳/豆荚",
+    "example": "The hull of the strawberry was still attached.",
+    "exampleCn": "草莓的花萼还附着在上面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4559,
+    "word": "cherry",
+    "phonetic": "ˈtʃeri",
+    "pos": "n.",
+    "meaning": "樱桃",
+    "example": "The tree was covered in pink cherry blossom.",
+    "exampleCn": "树上开满了粉色的樱花。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4560,
+    "word": "strawberry",
+    "phonetic": "ˈstrɔːbəri",
+    "pos": "n.",
+    "meaning": "草莓",
+    "example": "She picked a basket of fresh strawberries.",
+    "exampleCn": "她摘了一篮新鲜草莓。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4561,
+    "word": "blueberry",
+    "phonetic": "ˈbluːbəri",
+    "pos": "n.",
+    "meaning": "蓝莓",
+    "example": "Blueberries are rich in vitamins.",
+    "exampleCn": "蓝莓富含维生素。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4562,
+    "word": "grape",
+    "phonetic": "ɡreɪp",
+    "pos": "n.",
+    "meaning": "葡萄",
+    "example": "The vineyard produces sweet green grapes.",
+    "exampleCn": "这座葡萄园出产甜美的绿葡萄。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4563,
+    "word": "papaya",
+    "phonetic": "pəˈpaɪə",
+    "pos": "n.",
+    "meaning": "木瓜",
+    "example": "Papaya is a tropical fruit rich in enzymes.",
+    "exampleCn": "木瓜是一种富含酶的热带水果。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4564,
+    "word": "melon",
+    "phonetic": "ˈmelən",
+    "pos": "n.",
+    "meaning": "甜瓜/瓜类",
+    "example": "We ate slices of juicy melon for dessert.",
+    "exampleCn": "我们吃了多汁的甜瓜片当甜点。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4565,
+    "word": "lemon",
+    "phonetic": "ˈlemən",
+    "pos": "n.",
+    "meaning": "柠檬",
+    "example": "She squeezed a lemon into her tea.",
+    "exampleCn": "她往茶里挤了一个柠檬。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4566,
+    "word": "lemonade",
+    "phonetic": "ˌleməˈneɪd",
+    "pos": "n.",
+    "meaning": "柠檬水/柠檬汽水",
+    "example": "On hot days, they sell lemonade at the stand.",
+    "exampleCn": "天热的时候，他们在摊位卖柠檬水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4567,
+    "word": "kiwi",
+    "phonetic": "ˈkiːwiː",
+    "pos": "n.",
+    "meaning": "猕猴桃/几维鸟",
+    "example": "She peeled a kiwi and sliced it into the fruit bowl.",
+    "exampleCn": "她剥了一个猕猴桃并切成片放进水果碗里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4568,
+    "word": "crop",
+    "phonetic": "krɒp",
+    "pos": "n.",
+    "meaning": "庄稼/农作物",
+    "example": "Rice is the main crop grown in this region.",
+    "exampleCn": "水稻是这个地区种植的主要作物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4569,
+    "word": "corn",
+    "phonetic": "kɔːn",
+    "pos": "n.",
+    "meaning": "玉米/谷物",
+    "example": "The fields of corn stretched for miles.",
+    "exampleCn": "玉米田延绵数英里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4570,
+    "word": "popcorn",
+    "phonetic": "ˈpɒpkɔːn",
+    "pos": "n.",
+    "meaning": "爆米花",
+    "example": "They ate popcorn while watching the movie.",
+    "exampleCn": "他们边看电影边吃爆米花。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4571,
+    "word": "wheat",
+    "phonetic": "wiːt",
+    "pos": "n.",
+    "meaning": "小麦",
+    "example": "The wheat fields turned golden in autumn.",
+    "exampleCn": "麦田在秋天变成了金黄色。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4572,
+    "word": "flour",
+    "phonetic": "ˈflaʊə",
+    "pos": "n.",
+    "meaning": "面粉",
+    "example": "She used flour to bake a cake.",
+    "exampleCn": "她用面粉烤了一个蛋糕。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4573,
+    "word": "porridge",
+    "phonetic": "ˈpɒrɪdʒ",
+    "pos": "n.",
+    "meaning": "粥/麦片粥",
+    "example": "He had a bowl of porridge for breakfast.",
+    "exampleCn": "他早餐吃了一碗粥。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4574,
+    "word": "turkey",
+    "phonetic": "ˈtɜːki",
+    "pos": "n.",
+    "meaning": "火鸡/土耳其",
+    "example": "Roast turkey is a traditional Christmas dish.",
+    "exampleCn": "烤火鸡是传统的圣诞菜肴。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4575,
+    "word": "beefy",
+    "phonetic": "ˈbiːfi",
+    "pos": "adj.",
+    "meaning": "强壮的/牛肉味的",
+    "example": "The stew had a rich beefy flavour.",
+    "exampleCn": "这道炖菜有浓郁的牛肉味。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4576,
+    "word": "pork",
+    "phonetic": "pɔːk",
+    "pos": "n.",
+    "meaning": "猪肉",
+    "example": "She cooked sweet and sour pork for dinner.",
+    "exampleCn": "她晚餐做了咕噜肉。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4577,
+    "word": "mutton",
+    "phonetic": "ˈmʌtn",
+    "pos": "n.",
+    "meaning": "羊肉",
+    "example": "Mutton is often used in traditional stews.",
+    "exampleCn": "羊肉常用于传统炖菜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4578,
+    "word": "sausage",
+    "phonetic": "ˈsɒsɪdʒ",
+    "pos": "n.",
+    "meaning": "香肠/腊肠",
+    "example": "He grilled some sausages on the barbecue.",
+    "exampleCn": "他在烧烤架上烤了一些香肠。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4579,
+    "word": "an odd fish",
+    "phonetic": "",
+    "pos": "n.",
+    "meaning": "古怪的人",
+    "example": "He is an odd fish, but everyone likes him.",
+    "exampleCn": "他是个古怪的人，但大家都喜欢他。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4580,
+    "word": "pond",
+    "phonetic": "pɒnd",
+    "pos": "n.",
+    "meaning": "池塘/水潭",
+    "example": "There are ducks swimming on the pond.",
+    "exampleCn": "池塘里有鸭子在游泳。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4581,
+    "word": "rod",
+    "phonetic": "rɒd",
+    "pos": "n.",
+    "meaning": "钓竿/杆",
+    "example": "He cast his fishing rod into the river.",
+    "exampleCn": "他把钓竿甩进了河里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4582,
+    "word": "dairy",
+    "phonetic": "ˈdeəri",
+    "pos": "n.",
+    "meaning": "乳制品/奶制品",
+    "example": "Dairy products such as milk and cheese are rich in calcium.",
+    "exampleCn": "牛奶和奶酪等乳制品富含钙质。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4583,
+    "word": "boiling",
+    "phonetic": "ˈbɔɪlɪŋ",
+    "pos": "adj.",
+    "meaning": "沸腾的/极热的",
+    "example": "The water in the pot was boiling hot.",
+    "exampleCn": "锅里的水沸腾得很热。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4584,
+    "word": "yogurt",
+    "phonetic": "ˈjɒɡət",
+    "pos": "n.",
+    "meaning": "酸奶/优格",
+    "example": "She eats yogurt with fruit for breakfast.",
+    "exampleCn": "她早餐吃酸奶配水果。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4585,
+    "word": "creamy",
+    "phonetic": "ˈkriːmi",
+    "pos": "adj.",
+    "meaning": "奶油般的/含奶油的",
+    "example": "The soup had a smooth and creamy texture.",
+    "exampleCn": "汤的质地又滑又绵。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4586,
+    "word": "pudding",
+    "phonetic": "ˈpʊdɪŋ",
+    "pos": "n.",
+    "meaning": "布丁/甜点",
+    "example": "After dinner, they had chocolate pudding for dessert.",
+    "exampleCn": "晚饭后，他们吃了巧克力布丁当甜点。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4587,
+    "word": "sandwich",
+    "phonetic": "ˈsænwɪtʃ",
+    "pos": "n.",
+    "meaning": "三明治",
+    "example": "He made a cheese and ham sandwich for lunch.",
+    "exampleCn": "他做了一个奶酪火腿三明治当午餐。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4588,
+    "word": "loaf",
+    "phonetic": "ləʊf",
+    "pos": "n.",
+    "meaning": "一条面包",
+    "example": "She bought a fresh loaf of bread from the bakery.",
+    "exampleCn": "她从面包店买了一条新鲜面包。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4589,
+    "word": "pasta",
+    "phonetic": "ˈpæstə",
+    "pos": "n.",
+    "meaning": "意大利面/面食",
+    "example": "He cooked pasta with tomato sauce for dinner.",
+    "exampleCn": "他晚餐做了番茄酱意大利面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4590,
+    "word": "jam",
+    "phonetic": "dʒæm",
+    "pos": "n.",
+    "meaning": "果酱/堵塞",
+    "example": "She spread strawberry jam on her toast.",
+    "exampleCn": "她在吐司上抹了草莓果酱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4591,
+    "word": "vanilla",
+    "phonetic": "vəˈnɪlə",
+    "pos": "n.",
+    "meaning": "香草/香草精",
+    "example": "The ice cream is flavoured with vanilla.",
+    "exampleCn": "这款冰淇淋是香草味的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4592,
+    "word": "wasabi",
+    "phonetic": "wəˈsɑːbi",
+    "pos": "n.",
+    "meaning": "芥末/山葵",
+    "example": "Sushi is often served with wasabi and soy sauce.",
+    "exampleCn": "寿司常常搭配芥末和酱油。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4593,
+    "word": "pepper",
+    "phonetic": "ˈpepə",
+    "pos": "n.",
+    "meaning": "胡椒/胡椒粉",
+    "example": "Season the meat with salt and pepper.",
+    "exampleCn": "用盐和胡椒给肉调味。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4594,
+    "word": "ginger",
+    "phonetic": "ˈdʒɪndʒə",
+    "pos": "n.",
+    "meaning": "姜/生姜",
+    "example": "Ginger adds a spicy kick to the stir-fry.",
+    "exampleCn": "生姜为炒菜增添了辛辣的味道。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4595,
+    "word": "garlic",
+    "phonetic": "ˈɡɑːlɪk",
+    "pos": "n.",
+    "meaning": "大蒜/蒜头",
+    "example": "She crushed a clove of garlic into the pan.",
+    "exampleCn": "她把一瓣大蒜压碎放入锅中。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4596,
+    "word": "scallion",
+    "phonetic": "ˈskæliən",
+    "pos": "n.",
+    "meaning": "葱/青葱",
+    "example": "Garnish the soup with chopped scallions.",
+    "exampleCn": "用切碎的葱花装饰汤。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4597,
+    "word": "vinegar",
+    "phonetic": "ˈvɪnɪɡə",
+    "pos": "n.",
+    "meaning": "醋",
+    "example": "Dress the salad with oil and vinegar.",
+    "exampleCn": "用油和醋给沙拉调味。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4598,
+    "word": "salty",
+    "phonetic": "ˈsɔːlti",
+    "pos": "adj.",
+    "meaning": "咸的/含盐的",
+    "example": "The soup was too salty for her taste.",
+    "exampleCn": "汤对她来说太咸了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
+  },
+  {
+    "id": 4599,
+    "word": "flavour",
+    "phonetic": "ˈfleɪvə",
+    "pos": "n.",
+    "meaning": "味道/风味",
+    "example": "The soup had a rich tomato flavour.",
+    "exampleCn": "汤有浓郁的番茄味。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4600,
+    "word": "sour",
+    "phonetic": "ˈsaʊə",
+    "pos": "adj.",
+    "meaning": "酸的/馊的",
+    "example": "The milk had gone sour.",
+    "exampleCn": "牛奶变酸了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4601,
+    "word": "sweeten",
+    "phonetic": "ˈswiːtn",
+    "pos": "v.",
+    "meaning": "使变甜/加糖",
+    "example": "She sweetened her tea with honey.",
+    "exampleCn": "她加蜂蜜让茶变甜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4602,
+    "word": "spicy",
+    "phonetic": "ˈspaɪsi",
+    "pos": "adj.",
+    "meaning": "辣的/辛辣的",
+    "example": "Thai food is often very spicy.",
+    "exampleCn": "泰国菜通常非常辣。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4603,
+    "word": "delicious",
+    "phonetic": "dɪˈlɪʃəs",
+    "pos": "adj.",
+    "meaning": "美味的/可口的",
+    "example": "The homemade apple pie was delicious.",
+    "exampleCn": "自制的苹果派很美味。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4604,
+    "word": "tasty",
+    "phonetic": "ˈteɪsti",
+    "pos": "adj.",
+    "meaning": "好吃的/美味的",
+    "example": "She cooked a tasty meal for the family.",
+    "exampleCn": "她为家人做了一顿美味的饭菜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4605,
+    "word": "hunger",
+    "phonetic": "ˈhʌŋɡə",
+    "pos": "n.",
+    "meaning": "饥饿/渴望",
+    "example": "The children are suffering from hunger.",
+    "exampleCn": "孩子们正在遭受饥饿。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4606,
+    "word": "hungry",
+    "phonetic": "ˈhʌŋɡri",
+    "pos": "adj.",
+    "meaning": "饥饿的/渴望的",
+    "example": "He felt hungry after the long walk.",
+    "exampleCn": "长途步行后他感到饿了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4607,
+    "word": "thirsty",
+    "phonetic": "ˈθɜːsti",
+    "pos": "adj.",
+    "meaning": "口渴的/渴望的",
+    "example": "After the run, she was thirsty and tired.",
+    "exampleCn": "跑步后，她又渴又累。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4608,
+    "word": "sauce",
+    "phonetic": "sɔːs",
+    "pos": "n.",
+    "meaning": "酱汁/调味汁",
+    "example": "She poured a creamy sauce over the pasta.",
+    "exampleCn": "她在意大利面上浇了奶油酱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4609,
+    "word": "soy sauce",
+    "phonetic": "",
+    "pos": "n.",
+    "meaning": "酱油",
+    "example": "Add a dash of soy sauce to the stir-fry.",
+    "exampleCn": "往炒菜里加一点点酱油。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4610,
+    "word": "ketchup",
+    "phonetic": "ˈketʃəp",
+    "pos": "n.",
+    "meaning": "番茄酱",
+    "example": "He squeezed some ketchup onto his chips.",
+    "exampleCn": "他在薯条上挤了一些番茄酱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4611,
+    "word": "perfume",
+    "phonetic": "ˈpɜːfjuːm",
+    "pos": "n.",
+    "meaning": "香水/香味",
+    "example": "She wore a delicate rose perfume.",
+    "exampleCn": "她喷了一款淡雅的玫瑰香水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4612,
+    "word": "digestion",
+    "phonetic": "daɪˈdʒestʃən",
+    "pos": "n.",
+    "meaning": "消化/消化能力",
+    "example": "Yoghurt can help improve digestion.",
+    "exampleCn": "酸奶可以帮助改善消化。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4613,
+    "word": "cook",
+    "phonetic": "kʊk",
+    "pos": "v.",
+    "meaning": "烹饪/做饭",
+    "example": "She learned to cook from her grandmother.",
+    "exampleCn": "她从祖母那里学会了做饭。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4614,
+    "word": "cooker",
+    "phonetic": "ˈkʊkə",
+    "pos": "n.",
+    "meaning": "炊具/灶具",
+    "example": "They bought a new gas cooker for the kitchen.",
+    "exampleCn": "他们为厨房买了一个新的燃气灶。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4615,
+    "word": "bake",
+    "phonetic": "beɪk",
+    "pos": "v.",
+    "meaning": "烘烤/烘焙",
+    "example": "She baked a chocolate cake for the party.",
+    "exampleCn": "她为聚会烤了一个巧克力蛋糕。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4616,
+    "word": "baker",
+    "phonetic": "ˈbeɪkə",
+    "pos": "n.",
+    "meaning": "面包师/烘焙师",
+    "example": "The baker gets up early to make fresh bread.",
+    "exampleCn": "面包师早起制作新鲜面包。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4617,
+    "word": "fry",
+    "phonetic": "fraɪ",
+    "pos": "v.",
+    "meaning": "油炸/炒",
+    "example": "He fried some eggs for breakfast.",
+    "exampleCn": "他煎了几个蛋当早餐。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4618,
+    "word": "toast",
+    "phonetic": "təʊst",
+    "pos": "n./v.",
+    "meaning": "烤面包片/烘烤",
+    "example": "She had buttered toast for breakfast.",
+    "exampleCn": "她早餐吃了抹黄油的烤面包。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4619,
+    "word": "toaster",
+    "phonetic": "ˈtəʊstə",
+    "pos": "n.",
+    "meaning": "烤面包机",
+    "example": "He put two slices of bread in the toaster.",
+    "exampleCn": "他把两片面包放进了烤面包机。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4620,
+    "word": "lick",
+    "phonetic": "lɪk",
+    "pos": "v.",
+    "meaning": "舔/舐",
+    "example": "The cat licked its paw clean.",
+    "exampleCn": "猫把爪子舔干净了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4621,
+    "word": "dip",
+    "phonetic": "dɪp",
+    "pos": "v.",
+    "meaning": "蘸/浸一下",
+    "example": "She dipped a biscuit into her coffee.",
+    "exampleCn": "她把饼干蘸了一下咖啡。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4622,
+    "word": "dice",
+    "phonetic": "daɪs",
+    "pos": "v.",
+    "meaning": "切丁/切成小块",
+    "example": "Dice the onions finely before frying them.",
+    "exampleCn": "洋葱切丁后再炒。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4623,
+    "word": "shred",
+    "phonetic": "ʃred",
+    "pos": "v.",
+    "meaning": "切丝/撕碎",
+    "example": "She shredded the lettuce for the salad.",
+    "exampleCn": "她把生菜切丝做沙拉。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4624,
+    "word": "deep-fry",
+    "phonetic": "ˌdiːp ˈfraɪ",
+    "pos": "v.",
+    "meaning": "油炸/深炸",
+    "example": "The fish was deep-fried until golden brown.",
+    "exampleCn": "鱼被油炸至金黄色。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4625,
+    "word": "steam",
+    "phonetic": "stiːm",
+    "pos": "v.",
+    "meaning": "蒸/蒸煮",
+    "example": "She steamed the vegetables to keep them healthy.",
+    "exampleCn": "她把蔬菜蒸了以保持健康。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4626,
+    "word": "shell",
+    "phonetic": "ʃel",
+    "pos": "n./v.",
+    "meaning": "壳/去壳",
+    "example": "He cracked the shell of the egg.",
+    "exampleCn": "他磕开了蛋的壳。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4627,
+    "word": "beat",
+    "phonetic": "biːt",
+    "pos": "v.",
+    "meaning": "搅打/打蛋",
+    "example": "Beat the eggs and add them to the mixture.",
+    "exampleCn": "打散蛋并加入混合物中。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4628,
+    "word": "mash",
+    "phonetic": "mæʃ",
+    "pos": "v.",
+    "meaning": "捣碎/捣成泥",
+    "example": "She mashed the potatoes with butter and milk.",
+    "exampleCn": "她加黄油和牛奶把土豆捣成了泥。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32"
+    ]
+  },
+  {
+    "id": 4629,
+    "word": "erection",
+    "phonetic": "ɪˈrekʃn",
+    "pos": "n.",
+    "meaning": "建造/竖立",
+    "example": "The erection of the monument took two years.",
+    "exampleCn": "纪念碑的建造花了两年时间。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4630,
+    "word": "structure",
+    "phonetic": "ˈstrʌktʃə",
+    "pos": "n.",
+    "meaning": "结构/构造",
+    "example": "The bridge is a complex steel structure.",
+    "exampleCn": "这座桥是一个复杂的钢结构。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4631,
+    "word": "construct",
+    "phonetic": "kənˈstrʌkt",
+    "pos": "v.",
+    "meaning": "建造/构建",
+    "example": "They plan to construct a new hospital.",
+    "exampleCn": "他们计划建造一家新医院。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4632,
+    "word": "established",
+    "phonetic": "ɪˈstæblɪʃt",
+    "pos": "adj.",
+    "meaning": "已建立的/公认的",
+    "example": "He joined an established law firm.",
+    "exampleCn": "他加入了一家知名的律师事务所。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4633,
+    "word": "founder",
+    "phonetic": "ˈfaʊndə",
+    "pos": "n.",
+    "meaning": "创始人/创办者",
+    "example": "He was the founder of the charity.",
+    "exampleCn": "他是这个慈善机构的创始人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4634,
+    "word": "concretely",
+    "phonetic": "ˈkɒŋkriːtli",
+    "pos": "adv.",
+    "meaning": "具体地/明确地",
+    "example": "She explained her plan concretely and clearly.",
+    "exampleCn": "她具体而清楚地解释了自己的计划。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4635,
+    "word": "steel",
+    "phonetic": "stiːl",
+    "pos": "n.",
+    "meaning": "钢/钢铁",
+    "example": "The frame of the building is made of steel.",
+    "exampleCn": "建筑的框架是钢制的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4636,
+    "word": "stability",
+    "phonetic": "stəˈbɪləti",
+    "pos": "n.",
+    "meaning": "稳定性/稳固",
+    "example": "The pillars provide stability to the structure.",
+    "exampleCn": "柱子为结构提供了稳定性。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4637,
+    "word": "site",
+    "phonetic": "saɪt",
+    "pos": "n.",
+    "meaning": "场地/地点",
+    "example": "The construction site was fenced off.",
+    "exampleCn": "建筑工地被围了起来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4638,
+    "word": "venue",
+    "phonetic": "ˈvenjuː",
+    "pos": "n.",
+    "meaning": "场地/会场",
+    "example": "The concert venue can hold 20,000 people.",
+    "exampleCn": "音乐会场可容纳两万人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4639,
+    "word": "situated",
+    "phonetic": "ˈsɪtʃueɪtɪd",
+    "pos": "adj.",
+    "meaning": "位于/坐落在",
+    "example": "The hotel is situated on a hill overlooking the sea.",
+    "exampleCn": "酒店坐落在一座山上俯瞰大海。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4640,
+    "word": "locate",
+    "phonetic": "ləʊˈkeɪt",
+    "pos": "v.",
+    "meaning": "找到/位于",
+    "example": "They located the source of the leak.",
+    "exampleCn": "他们找到了泄漏的源头。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4641,
+    "word": "settle",
+    "phonetic": "ˈsetl",
+    "pos": "v.",
+    "meaning": "定居/安顿",
+    "example": "They decided to settle in a small town by the sea.",
+    "exampleCn": "他们决定在海边的一个小镇定居。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4642,
+    "word": "dwelling",
+    "phonetic": "ˈdwelɪŋ",
+    "pos": "n.",
+    "meaning": "住所/住宅",
+    "example": "The hut was a simple dwelling made of wood.",
+    "exampleCn": "小屋是一间用木头搭建的简陋住所。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4643,
+    "word": "mansion",
+    "phonetic": "ˈmænʃn",
+    "pos": "n.",
+    "meaning": "豪宅/公馆",
+    "example": "The billionaire lives in a mansion with twenty rooms.",
+    "exampleCn": "那位亿万富翁住在一栋有二十个房间的豪宅里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4644,
+    "word": "lodge",
+    "phonetic": "lɒdʒ",
+    "pos": "n.",
+    "meaning": "小屋/门房",
+    "example": "They stayed at a hunting lodge in the mountains.",
+    "exampleCn": "他们住在山里的一个狩猎小屋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4645,
+    "word": "hut",
+    "phonetic": "hʌt",
+    "pos": "n.",
+    "meaning": "茅舍/小屋",
+    "example": "The fishermen built a wooden hut near the shore.",
+    "exampleCn": "渔民们在岸边建了一间木屋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4646,
+    "word": "cellar",
+    "phonetic": "ˈselə",
+    "pos": "n.",
+    "meaning": "地下室/地窖",
+    "example": "The wine is stored in the cellar.",
+    "exampleCn": "葡萄酒存放在地窖里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4647,
+    "word": "cradle",
+    "phonetic": "ˈkreɪdl",
+    "pos": "n.",
+    "meaning": "摇篮/发源地",
+    "example": "The baby slept soundly in the cradle.",
+    "exampleCn": "婴儿在摇篮里睡得香甜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4648,
+    "word": "shelter",
+    "phonetic": "ˈʃeltə",
+    "pos": "n.",
+    "meaning": "避难所/庇护所",
+    "example": "They sought shelter from the storm.",
+    "exampleCn": "他们寻找躲避暴风雨的庇护所。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4649,
+    "word": "porch",
+    "phonetic": "pɔːtʃ",
+    "pos": "n.",
+    "meaning": "门廊/走廊",
+    "example": "They sat on the porch and watched the sunset.",
+    "exampleCn": "他们坐在门廊上看日落。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4650,
+    "word": "stair",
+    "phonetic": "steə",
+    "pos": "n.",
+    "meaning": "楼梯/阶梯",
+    "example": "She climbed the stairs to her bedroom.",
+    "exampleCn": "她爬上楼梯到了自己的卧室。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4651,
+    "word": "staircase",
+    "phonetic": "ˈsteəkeɪs",
+    "pos": "n.",
+    "meaning": "楼梯/楼梯间",
+    "example": "The grand staircase led up to the ballroom.",
+    "exampleCn": "宏伟的楼梯通向舞厅。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4652,
+    "word": "storey",
+    "phonetic": "ˈstɔːri",
+    "pos": "n.",
+    "meaning": "楼层/层",
+    "example": "The building is six storeys high.",
+    "exampleCn": "这座建筑有六层楼高。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4653,
+    "word": "layer",
+    "phonetic": "ˈleɪə",
+    "pos": "n.",
+    "meaning": "层/层次",
+    "example": "The cake has three layers of sponge.",
+    "exampleCn": "蛋糕有三层海绵蛋糕。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4654,
+    "word": "elevator",
+    "phonetic": "ˈelɪveɪtə",
+    "pos": "n.",
+    "meaning": "电梯",
+    "example": "Take the elevator to the top floor.",
+    "exampleCn": "乘电梯到顶层。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4655,
+    "word": "escalator",
+    "phonetic": "ˈeskəleɪtə",
+    "pos": "n.",
+    "meaning": "自动扶梯",
+    "example": "He took the escalator up to the first floor.",
+    "exampleCn": "他乘自动扶梯到了二楼。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4656,
+    "word": "handrail",
+    "phonetic": "ˈhændreɪl",
+    "pos": "n.",
+    "meaning": "扶手/栏杆",
+    "example": "Hold the handrail when walking down the stairs.",
+    "exampleCn": "走下楼梯时扶好扶手。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4657,
+    "word": "laser",
+    "phonetic": "ˈleɪzə",
+    "pos": "n.",
+    "meaning": "激光/镭射",
+    "example": "The surgeon used a laser to perform the operation.",
+    "exampleCn": "医生用激光进行了手术。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4658,
+    "word": "vault",
+    "phonetic": "vɔːlt",
+    "pos": "n.",
+    "meaning": "拱顶/金库/跳马",
+    "example": "The bank keeps the money in a secure vault.",
+    "exampleCn": "银行把钱存放在安全的金库里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4659,
+    "word": "vaulted",
+    "phonetic": "ˈvɔːltɪd",
+    "pos": "adj.",
+    "meaning": "拱形的/有拱顶的",
+    "example": "The cathedral has a high vaulted ceiling.",
+    "exampleCn": "大教堂有高高的拱形天花板。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4660,
+    "word": "arched",
+    "phonetic": "ɑːtʃt",
+    "pos": "adj.",
+    "meaning": "拱形的/弓形的",
+    "example": "The room had tall arched windows.",
+    "exampleCn": "房间有高高的拱形窗户。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4661,
+    "word": "eaves",
+    "phonetic": "iːvz",
+    "pos": "n.",
+    "meaning": "屋檐",
+    "example": "Swallows built a nest under the eaves.",
+    "exampleCn": "燕子在屋檐下筑了巢。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4662,
+    "word": "chimney",
+    "phonetic": "ˈtʃɪmni",
+    "pos": "n.",
+    "meaning": "烟囱/烟道",
+    "example": "Smoke rose from the chimney of the cottage.",
+    "exampleCn": "烟从村舍的烟囱升起。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4663,
+    "word": "reception",
+    "phonetic": "rɪˈsepʃn",
+    "pos": "n.",
+    "meaning": "接待处/前台",
+    "example": "Please check in at the reception desk.",
+    "exampleCn": "请到前台办理入住。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4664,
+    "word": "lobby",
+    "phonetic": "ˈlɒbi",
+    "pos": "n.",
+    "meaning": "大厅/游说团体",
+    "example": "They waited for her in the hotel lobby.",
+    "exampleCn": "他们在酒店大堂等她。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4665,
+    "word": "lobbyist",
+    "phonetic": "ˈlɒbiɪst",
+    "pos": "n.",
+    "meaning": "游说者/说客",
+    "example": "Lobbyists work to influence government policy.",
+    "exampleCn": "游说者致力于影响政府政策。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4666,
+    "word": "parlour",
+    "phonetic": "ˈpɑːlə",
+    "pos": "n.",
+    "meaning": "客厅/会客室",
+    "example": "The guests were shown into the parlour.",
+    "exampleCn": "客人被领进了客厅。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4667,
+    "word": "fireplace",
+    "phonetic": "ˈfaɪəpleɪs",
+    "pos": "n.",
+    "meaning": "壁炉/火炉",
+    "example": "They gathered around the fireplace to keep warm.",
+    "exampleCn": "他们围在壁炉旁取暖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4668,
+    "word": "lavatory",
+    "phonetic": "ˈlævətri",
+    "pos": "n.",
+    "meaning": "厕所/洗手间",
+    "example": "The lavatory is at the end of the corridor.",
+    "exampleCn": "洗手间在走廊尽头。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4669,
+    "word": "toilet",
+    "phonetic": "ˈtɔɪlɪt",
+    "pos": "n.",
+    "meaning": "厕所/马桶",
+    "example": "Excuse me, where is the toilet?",
+    "exampleCn": "打扰一下，卫生间在哪里？",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4670,
+    "word": "bath",
+    "phonetic": "bɑːθ",
+    "pos": "n.",
+    "meaning": "浴缸/洗澡",
+    "example": "She had a warm bath before going to bed.",
+    "exampleCn": "她睡前洗了一个温水澡。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4671,
+    "word": "bathe",
+    "phonetic": "beɪð",
+    "pos": "v.",
+    "meaning": "洗澡/游泳",
+    "example": "He bathed in the river to cool off.",
+    "exampleCn": "他在河里游泳凉快一下。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4672,
+    "word": "store",
+    "phonetic": "stɔː",
+    "pos": "v./n.",
+    "meaning": "储存/商店",
+    "example": "She stored the jam in a cool place.",
+    "exampleCn": "她把果酱存放在阴凉处。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4673,
+    "word": "booth",
+    "phonetic": "buːð",
+    "pos": "n.",
+    "meaning": "小隔间/摊亭",
+    "example": "He made a phone call from the telephone booth.",
+    "exampleCn": "他从电话亭打了一个电话。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4674,
+    "word": "casino",
+    "phonetic": "kəˈsiːnəʊ",
+    "pos": "n.",
+    "meaning": "赌场/娱乐场",
+    "example": "The casino was crowded with tourists.",
+    "exampleCn": "赌场里挤满了游客。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4675,
+    "word": "studio",
+    "phonetic": "ˈstjuːdiəʊ",
+    "pos": "n.",
+    "meaning": "工作室/录音室",
+    "example": "The artist works in a large studio filled with light.",
+    "exampleCn": "艺术家在一间光线充足的大工作室里工作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4676,
+    "word": "downtown",
+    "phonetic": "ˈdaʊntaʊn",
+    "pos": "n./adj.",
+    "meaning": "市中心/商业区",
+    "example": "They took the bus downtown.",
+    "exampleCn": "他们坐公交车去了市中心。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4677,
+    "word": "urbanise",
+    "phonetic": "ˈɜːbənaɪz",
+    "pos": "v.",
+    "meaning": "使城市化/都市化",
+    "example": "The region has been rapidly urbanised over the past decade.",
+    "exampleCn": "该地区在过去十年中被迅速城市化。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4678,
+    "word": "urbanisation",
+    "phonetic": "ˌɜːbənaɪˈzeɪʃn",
+    "pos": "n.",
+    "meaning": "城市化/都市化",
+    "example": "Rapid urbanisation has caused housing shortages.",
+    "exampleCn": "快速的城市化导致了住房短缺。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4679,
+    "word": "peripheral",
+    "phonetic": "pəˈrɪfərəl",
+    "pos": "adj.",
+    "meaning": "周边的/边缘的",
+    "example": "They live in a peripheral suburb of the city.",
+    "exampleCn": "他们住在城市边缘的郊区。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4680,
+    "word": "periphery",
+    "phonetic": "pəˈrɪfəri",
+    "pos": "n.",
+    "meaning": "周边/外围",
+    "example": "Factories are located on the periphery of the town.",
+    "exampleCn": "工厂位于城镇的外围。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4681,
+    "word": "spacious",
+    "phonetic": "ˈspeɪʃəs",
+    "pos": "adj.",
+    "meaning": "宽敞的/宽阔的",
+    "example": "The flat has a spacious living room.",
+    "exampleCn": "这套公寓有一个宽敞的客厅。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4682,
+    "word": "airtight",
+    "phonetic": "ˈeətaɪt",
+    "pos": "adj.",
+    "meaning": "密封的/不透气的",
+    "example": "Store the biscuits in an airtight container.",
+    "exampleCn": "把饼干存放在密封容器里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4683,
+    "word": "plaza",
+    "phonetic": "ˈplɑːzə",
+    "pos": "n.",
+    "meaning": "广场/购物中心",
+    "example": "The city centre has a large public plaza.",
+    "exampleCn": "市中心有一个大型公共广场。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4684,
+    "word": "brickwork",
+    "phonetic": "ˈbrɪkwɜːk",
+    "pos": "n.",
+    "meaning": "砖砌/砖体",
+    "example": "The brickwork on the old building was crumbling.",
+    "exampleCn": "老建筑上的砖砌正在倒塌。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4685,
+    "word": "suspension",
+    "phonetic": "səˈspenʃn",
+    "pos": "n.",
+    "meaning": "悬架/悬浮/暂停",
+    "example": "The bridge is supported by suspension cables.",
+    "exampleCn": "这座桥由悬挂缆索支撑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4686,
+    "word": "hook",
+    "phonetic": "hʊk",
+    "pos": "n.",
+    "meaning": "钩子/挂钩",
+    "example": "She hung her coat on a hook by the door.",
+    "exampleCn": "她把外套挂在门边的钩子上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4687,
+    "word": "lever",
+    "phonetic": "ˈliːvə",
+    "pos": "n.",
+    "meaning": "杠杆/操纵杆",
+    "example": "Pull the lever to start the machine.",
+    "exampleCn": "拉下操纵杆启动机器。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4688,
+    "word": "scaffold",
+    "phonetic": "ˈskæfəʊld",
+    "pos": "n.",
+    "meaning": "脚手架/断头台",
+    "example": "The workers erected a scaffold around the building.",
+    "exampleCn": "工人们在建筑物周围搭起了脚手架。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4689,
+    "word": "maltreat",
+    "phonetic": "ˌmælˈtriːt",
+    "pos": "v.",
+    "meaning": "虐待/粗暴对待",
+    "example": "The law protects animals from being maltreated.",
+    "exampleCn": "法律保护动物免受虐待。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
+  },
+  {
+    "id": 4690,
+    "word": "maintenance",
+    "phonetic": "ˈmeɪntənəns",
+    "pos": "n.",
+    "meaning": "维护/维修/保养",
+    "example": "The building is closed for maintenance.",
+    "exampleCn": "该建筑因维修而关闭。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4691,
+    "word": "fix",
+    "phonetic": "fɪks",
+    "pos": "v.",
+    "meaning": "修理/固定",
+    "example": "He fixed the broken chair with some glue.",
+    "exampleCn": "他用胶水修好了破椅子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4692,
+    "word": "mend",
+    "phonetic": "mend",
+    "pos": "v.",
+    "meaning": "修补/缝补",
+    "example": "She mended a hole in her favourite jumper.",
+    "exampleCn": "她补好了最喜欢的毛衣上的一个洞。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4693,
+    "word": "weld",
+    "phonetic": "weld",
+    "pos": "v.",
+    "meaning": "焊接/熔接",
+    "example": "He welded the two metal pipes together.",
+    "exampleCn": "他把两根金属管焊接在一起。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4694,
+    "word": "saw",
+    "phonetic": "sɔː",
+    "pos": "n./v.",
+    "meaning": "锯/锯开",
+    "example": "He sawed the plank into two pieces.",
+    "exampleCn": "他把木板锯成了两块。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4695,
+    "word": "screw",
+    "phonetic": "skruː",
+    "pos": "n.",
+    "meaning": "螺丝/螺钉",
+    "example": "He tightened the screw with a screwdriver.",
+    "exampleCn": "他用螺丝刀拧紧了螺丝。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4696,
+    "word": "drill",
+    "phonetic": "drɪl",
+    "pos": "n./v.",
+    "meaning": "钻/钻孔",
+    "example": "He drilled a hole in the wall.",
+    "exampleCn": "他在墙上钻了一个洞。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4697,
+    "word": "viaduct",
+    "phonetic": "ˈvaɪədʌkt",
+    "pos": "n.",
+    "meaning": "高架桥/栈道",
+    "example": "The train crossed the viaduct high above the valley.",
+    "exampleCn": "火车穿过横跨山谷之上的高架桥。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4698,
+    "word": "span of life",
+    "phonetic": "",
+    "pos": "n.",
+    "meaning": "寿命/一生",
+    "example": "The span of life varies among different species.",
+    "exampleCn": "不同物种的寿命各不相同。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4699,
+    "word": "furniture",
+    "phonetic": "ˈfɜːnɪtʃə",
+    "pos": "n.",
+    "meaning": "家具",
+    "example": "The shop sells wooden furniture.",
+    "exampleCn": "这家商店出售木质家具。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4700,
+    "word": "placement",
+    "phonetic": "ˈpleɪsmənt",
+    "pos": "n.",
+    "meaning": "放置/安排",
+    "example": "The placement of the sofa is awkward.",
+    "exampleCn": "沙发的放置位置有些别扭。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4701,
+    "word": "design",
+    "phonetic": "dɪˈzaɪn",
+    "pos": "n./v.",
+    "meaning": "设计/构思",
+    "example": "She is studying fashion design at university.",
+    "exampleCn": "她在大学里学习时装设计。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4702,
+    "word": "entrance",
+    "phonetic": "ˈentrəns",
+    "pos": "n.",
+    "meaning": "入口/门口",
+    "example": "They met at the main entrance to the museum.",
+    "exampleCn": "他们在博物馆的主入口碰面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4703,
+    "word": "entry",
+    "phonetic": "ˈentri",
+    "pos": "n.",
+    "meaning": "进入/入口",
+    "example": "Entry to the museum is free on Sundays.",
+    "exampleCn": "周日免费进入博物馆。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4704,
+    "word": "enter",
+    "phonetic": "ˈentə",
+    "pos": "v.",
+    "meaning": "进入/加入",
+    "example": "They knocked before entering the room.",
+    "exampleCn": "他们敲了门然后进了房间。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4705,
+    "word": "exit",
+    "phonetic": "ˈeksɪt",
+    "pos": "n./v.",
+    "meaning": "出口/离开",
+    "example": "Please use the emergency exit in case of fire.",
+    "exampleCn": "发生火灾时请使用紧急出口。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4706,
+    "word": "outside",
+    "phonetic": "ˌaʊtˈsaɪd",
+    "pos": "adv./prep.",
+    "meaning": "外面/外部",
+    "example": "The children are playing outside in the garden.",
+    "exampleCn": "孩子们在外面的花园里玩。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4707,
+    "word": "outward",
+    "phonetic": "ˈaʊtwəd",
+    "pos": "adj.",
+    "meaning": "外面的/向外的",
+    "example": "There was no outward sign of damage.",
+    "exampleCn": "没有可见的损坏迹象。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4708,
+    "word": "inner",
+    "phonetic": "ˈɪnə",
+    "pos": "adj.",
+    "meaning": "内部的/内心的",
+    "example": "She has an inner confidence that never wavers.",
+    "exampleCn": "她有一种内心深处的自信，从不动摇。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4709,
+    "word": "inward",
+    "phonetic": "ˈɪnwəd",
+    "pos": "adj.",
+    "meaning": "内部的/向内的",
+    "example": "He took an inward breath before speaking.",
+    "exampleCn": "说话前他向内吸了一口气。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
+  },
+  {
+    "id": 4710,
+    "word": "aviation",
+    "phonetic": "ˌeɪviˈeɪʃn",
+    "pos": "n.",
+    "meaning": "航空/飞行",
+    "example": "The aviation industry is growing rapidly.",
+    "exampleCn": "航空业正在迅速发展。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4711,
+    "word": "journey",
+    "phonetic": "ˈdʒɜːni",
+    "pos": "n.",
+    "meaning": "旅行/旅程",
+    "example": "The journey from London to Paris takes about two hours.",
+    "exampleCn": "从伦敦到巴黎的旅程大约需要两个小时。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4712,
+    "word": "safari",
+    "phonetic": "səˈfɑːri",
+    "pos": "n.",
+    "meaning": "狩猎旅行/游猎",
+    "example": "They went on a safari to see wild animals in Africa.",
+    "exampleCn": "他们去非洲游猎观赏野生动物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4713,
+    "word": "haunt",
+    "phonetic": "hɔːnt",
+    "pos": "v.",
+    "meaning": "经常出没于/萦绕",
+    "example": "The memory of the accident still haunts him.",
+    "exampleCn": "那次事故的记忆仍然萦绕着他。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4714,
+    "word": "attraction",
+    "phonetic": "əˈtrækʃn",
+    "pos": "n.",
+    "meaning": "景点/吸引力",
+    "example": "The theme park is a popular tourist attraction.",
+    "exampleCn": "主题公园是一个受欢迎的旅游景点。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4715,
+    "word": "attractive",
+    "phonetic": "əˈtræktɪv",
+    "pos": "adj.",
+    "meaning": "有吸引力的/吸引人的",
+    "example": "The hotel is in a very attractive location.",
+    "exampleCn": "酒店的位置非常吸引人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4716,
+    "word": "monumental",
+    "phonetic": "ˌmɒnjʊˈmentl",
+    "pos": "adj.",
+    "meaning": "巨大的/纪念碑似的",
+    "example": "The new bridge is a monumental engineering achievement.",
+    "exampleCn": "新桥是一个巨大的工程成就。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4717,
+    "word": "pharaoh",
+    "phonetic": "ˈfeərəʊ",
+    "pos": "n.",
+    "meaning": "法老",
+    "example": "The pharaoh was the ruler of ancient Egypt.",
+    "exampleCn": "法老是古埃及的统治者。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4718,
+    "word": "traffic regulations",
+    "phonetic": "",
+    "pos": "n.",
+    "meaning": "交通规则",
+    "example": "Drivers must obey traffic regulations.",
+    "exampleCn": "司机必须遵守交通规则。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4719,
+    "word": "traffic jam",
+    "phonetic": "",
+    "pos": "n.",
+    "meaning": "交通堵塞",
+    "example": "We were stuck in a traffic jam for over an hour.",
+    "exampleCn": "我们在交通堵塞中被堵了一个多小时。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4720,
+    "word": "traffic congestion",
+    "phonetic": "",
+    "pos": "n.",
+    "meaning": "交通拥堵",
+    "example": "Traffic congestion is a major problem in big cities.",
+    "exampleCn": "交通拥堵是大城市的一个主要问题。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4721,
+    "word": "aeroplane",
+    "phonetic": "ˈeərəpleɪn",
+    "pos": "n.",
+    "meaning": "飞机",
+    "example": "The aeroplane took off smoothly into the sky.",
+    "exampleCn": "飞机平稳地飞上了天空。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4722,
+    "word": "helicopter",
+    "phonetic": "ˈhelɪkɒptə",
+    "pos": "n.",
+    "meaning": "直升机",
+    "example": "A helicopter landed on the roof of the hospital.",
+    "exampleCn": "一架直升机降落在医院楼顶。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4723,
+    "word": "jet",
+    "phonetic": "dʒet",
+    "pos": "n.",
+    "meaning": "喷气式飞机/喷射",
+    "example": "They flew to Tokyo in a private jet.",
+    "exampleCn": "他们乘坐私人飞机飞往东京。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4724,
+    "word": "parachute",
+    "phonetic": "ˈpærəʃuːt",
+    "pos": "n.",
+    "meaning": "降落伞",
+    "example": "The skydiver opened her parachute at the right moment.",
+    "exampleCn": "跳伞者在恰当的时机打开了降落伞。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4725,
+    "word": "pilot",
+    "phonetic": "ˈpaɪlət",
+    "pos": "n.",
+    "meaning": "飞行员/领航员",
+    "example": "The pilot announced that the flight would be delayed.",
+    "exampleCn": "飞行员宣布航班将延误。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4726,
+    "word": "baggage",
+    "phonetic": "ˈbæɡɪdʒ",
+    "pos": "n.",
+    "meaning": "行李",
+    "example": "We collected our baggage from the carousel.",
+    "exampleCn": "我们从传送带上取回了行李。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4727,
+    "word": "luggage",
+    "phonetic": "ˈlʌɡɪdʒ",
+    "pos": "n.",
+    "meaning": "行李/箱包",
+    "example": "Passengers are allowed one piece of hand luggage.",
+    "exampleCn": "乘客可携带一件手提行李。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4728,
+    "word": "suitcase",
+    "phonetic": "ˈsuːtkeɪs",
+    "pos": "n.",
+    "meaning": "手提箱/行李箱",
+    "example": "She packed a suitcase for the weekend trip.",
+    "exampleCn": "她为周末旅行收拾了一个行李箱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4729,
+    "word": "carry-on",
+    "phonetic": "ˈkæri ɒn",
+    "pos": "n.",
+    "meaning": "随身行李",
+    "example": "You can take one carry-on bag onto the plane.",
+    "exampleCn": "你可以携带一件随身行李上飞机。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4730,
+    "word": "rack",
+    "phonetic": "ræk",
+    "pos": "n.",
+    "meaning": "行李架/架子",
+    "example": "He put his suitcase on the luggage rack.",
+    "exampleCn": "他把行李箱放在了行李架上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4731,
+    "word": "freighter",
+    "phonetic": "ˈfreɪtə",
+    "pos": "n.",
+    "meaning": "货船/运输机",
+    "example": "The freighter carried containers across the ocean.",
+    "exampleCn": "货船装载着集装箱穿过大洋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4732,
+    "word": "fare",
+    "phonetic": "feə",
+    "pos": "n.",
+    "meaning": "票价/车费",
+    "example": "The bus fare has increased this month.",
+    "exampleCn": "这个月公交车费上涨了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4733,
+    "word": "itinerary",
+    "phonetic": "aɪˈtɪnərəri",
+    "pos": "n.",
+    "meaning": "行程/旅行计划",
+    "example": "We planned a detailed itinerary for the trip.",
+    "exampleCn": "我们为旅行制定了详细的行程。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4734,
+    "word": "passage",
+    "phonetic": "ˈpæsɪdʒ",
+    "pos": "n.",
+    "meaning": "通道/段落/航程",
+    "example": "They booked a passage on a ship to New York.",
+    "exampleCn": "他们预订了去纽约的船票。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4735,
+    "word": "intersection",
+    "phonetic": "ˌɪntəˈsekʃn",
+    "pos": "n.",
+    "meaning": "十字路口/交叉点",
+    "example": "Turn left at the next intersection.",
+    "exampleCn": "在下一个十字路口向左转。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4736,
+    "word": "path",
+    "phonetic": "pɑːθ",
+    "pos": "n.",
+    "meaning": "小路/路径",
+    "example": "They walked along a narrow path through the woods.",
+    "exampleCn": "他们沿着一条狭窄的小路穿过树林。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4737,
+    "word": "lane",
+    "phonetic": "leɪn",
+    "pos": "n.",
+    "meaning": "车道/小巷",
+    "example": "The country lanes are quiet and narrow.",
+    "exampleCn": "乡间小路又窄又安静。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4738,
+    "word": "avenue",
+    "phonetic": "ˈævɪnjuː",
+    "pos": "n.",
+    "meaning": "大道/林荫道",
+    "example": "They walked down the tree-lined avenue.",
+    "exampleCn": "他们沿着林荫大道走下去。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4739,
+    "word": "curb",
+    "phonetic": "kɜːb",
+    "pos": "n.",
+    "meaning": "路缘/抑制",
+    "example": "He parked the car close to the curb.",
+    "exampleCn": "他把车紧靠路缘停下了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4740,
+    "word": "signpost",
+    "phonetic": "ˈsaɪnpəʊst",
+    "pos": "n.",
+    "meaning": "路标/指示牌",
+    "example": "Follow the signpost to the city centre.",
+    "exampleCn": "按照路标指示前往市中心。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4741,
+    "word": "pavement",
+    "phonetic": "ˈpeɪvmənt",
+    "pos": "n.",
+    "meaning": "人行道/路面",
+    "example": "Cars are not allowed to park on the pavement.",
+    "exampleCn": "汽车不允许停在人行道上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4742,
+    "word": "vehicle",
+    "phonetic": "ˈviːɪkl",
+    "pos": "n.",
+    "meaning": "车辆/交通工具",
+    "example": "The road was blocked by a parked vehicle.",
+    "exampleCn": "道路被一辆停着的车堵住了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4743,
+    "word": "auto",
+    "phonetic": "ˈɔːtəʊ",
+    "pos": "n.",
+    "meaning": "汽车",
+    "example": "He works in the auto industry.",
+    "exampleCn": "他在汽车行业工作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4744,
+    "word": "express",
+    "phonetic": "ɪkˈspres",
+    "pos": "n./v./adj.",
+    "meaning": "快车/表达/快速的",
+    "example": "She took the express train to London.",
+    "exampleCn": "她乘坐特快列车去伦敦。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4745,
+    "word": "tram",
+    "phonetic": "træm",
+    "pos": "n.",
+    "meaning": "有轨电车",
+    "example": "They took the tram to the city centre.",
+    "exampleCn": "他们坐有轨电车去市中心。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4746,
+    "word": "truck",
+    "phonetic": "trʌk",
+    "pos": "n.",
+    "meaning": "卡车/货车",
+    "example": "The truck delivered goods to the warehouse.",
+    "exampleCn": "卡车把货物运到了仓库。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4747,
+    "word": "lorry",
+    "phonetic": "ˈlɒri",
+    "pos": "n.",
+    "meaning": "卡车/载重货车",
+    "example": "A lorry overturned on the motorway.",
+    "exampleCn": "一辆卡车在高速公路上翻了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4748,
+    "word": "van",
+    "phonetic": "væn",
+    "pos": "n.",
+    "meaning": "厢式货车/面包车",
+    "example": "They moved their furniture in a van.",
+    "exampleCn": "他们用面包车搬了家具。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4749,
+    "word": "carriage",
+    "phonetic": "ˈkærɪdʒ",
+    "pos": "n.",
+    "meaning": "马车/车厢",
+    "example": "They rode in a horse-drawn carriage through the park.",
+    "exampleCn": "他们乘坐马车穿过公园。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4750,
+    "word": "tractor",
+    "phonetic": "ˈtræktə",
+    "pos": "n.",
+    "meaning": "拖拉机/牵引车",
+    "example": "The farmer drove the tractor across the field.",
+    "exampleCn": "农民开着拖拉机穿过田野。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4751,
+    "word": "pedicab",
+    "phonetic": "ˈpedɪkæb",
+    "pos": "n.",
+    "meaning": "人力三轮车",
+    "example": "They toured the old city in a pedicab.",
+    "exampleCn": "他们坐着人力三轮车游览了老城。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4752,
+    "word": "cycle",
+    "phonetic": "ˈsaɪkl",
+    "pos": "n./v.",
+    "meaning": "自行车/循环",
+    "example": "He cycles to work every morning.",
+    "exampleCn": "他每天早上骑车上班。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4753,
+    "word": "garage",
+    "phonetic": "ˈɡærɑːʒ",
+    "pos": "n.",
+    "meaning": "车库/修车厂",
+    "example": "He parked his car in the garage.",
+    "exampleCn": "他把车停进了车库。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4754,
+    "word": "vehicles",
+    "phonetic": "ˈviːɪklz",
+    "pos": "n.",
+    "meaning": "车辆/交通工具",
+    "example": "The road is closed to all vehicles.",
+    "exampleCn": "此路禁止所有车辆通行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4755,
+    "word": "wheel",
+    "phonetic": "wiːl",
+    "pos": "n.",
+    "meaning": "轮子/方向盘",
+    "example": "He turned the steering wheel sharply.",
+    "exampleCn": "他猛地转动了方向盘。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4756,
+    "word": "tire",
+    "phonetic": "ˈtaɪə",
+    "pos": "n.",
+    "meaning": "轮胎",
+    "example": "The car needs a new set of tyres.",
+    "exampleCn": "这辆车需要一套新轮胎。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4757,
+    "word": "honk",
+    "phonetic": "hɒŋk",
+    "pos": "v.",
+    "meaning": "按喇叭/鸣笛",
+    "example": "The driver honked at the car in front.",
+    "exampleCn": "司机对着前面的车按了喇叭。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4758,
+    "word": "steward",
+    "phonetic": "ˈstjuːəd",
+    "pos": "n.",
+    "meaning": "男乘务员/男服务员",
+    "example": "The steward served drinks to the passengers.",
+    "exampleCn": "乘务员为乘客们端上了饮料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4759,
+    "word": "stewardess",
+    "phonetic": "ˌstjuːəˈdes",
+    "pos": "n.",
+    "meaning": "女乘务员/空姐",
+    "example": "The stewardess helped the child fasten the seat belt.",
+    "exampleCn": "空姐帮孩子系好了安全带。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4760,
+    "word": "disappear",
+    "phonetic": "ˌdɪsəˈpɪə",
+    "pos": "v.",
+    "meaning": "消失/不见",
+    "example": "The sun disappeared behind the clouds.",
+    "exampleCn": "太阳消失在云层后面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4761,
+    "word": "hazard",
+    "phonetic": "ˈhæzəd",
+    "pos": "n.",
+    "meaning": "危险/危害",
+    "example": "The icy roads are a hazard to drivers.",
+    "exampleCn": "结冰的道路对司机是一种危险。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4762,
+    "word": "hazardous",
+    "phonetic": "ˈhæzədəs",
+    "pos": "adj.",
+    "meaning": "危险的/有害的",
+    "example": "The disposal of hazardous waste is strictly controlled.",
+    "exampleCn": "有害废物的处置受到严格控制。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4763,
+    "word": "harbour",
+    "phonetic": "ˈhɑːbə",
+    "pos": "n.",
+    "meaning": "港口/海港",
+    "example": "The fishing boats returned to the harbour.",
+    "exampleCn": "渔船返回了港口。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4764,
+    "word": "dock",
+    "phonetic": "dɒk",
+    "pos": "n.",
+    "meaning": "码头/船坞",
+    "example": "The ship was tied up at the dock.",
+    "exampleCn": "船拴在了码头上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4765,
+    "word": "sailor",
+    "phonetic": "ˈseɪlə",
+    "pos": "n.",
+    "meaning": "水手/海员",
+    "example": "The old sailor told stories of his voyages.",
+    "exampleCn": "老水手讲起他航行的故事。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4766,
+    "word": "seaman",
+    "phonetic": "ˈsiːmən",
+    "pos": "n.",
+    "meaning": "海员/水手",
+    "example": "He spent his life as a seaman on cargo ships.",
+    "exampleCn": "他一生都在货船上当海员。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4767,
+    "word": "steamer",
+    "phonetic": "ˈstiːmə",
+    "pos": "n.",
+    "meaning": "蒸汽船/轮船",
+    "example": "They travelled up the river on an old steamer.",
+    "exampleCn": "他们乘坐一艘老蒸汽船沿河而上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4768,
+    "word": "liner",
+    "phonetic": "ˈlaɪnə",
+    "pos": "n.",
+    "meaning": "邮轮/班轮",
+    "example": "The luxury liner sailed across the Caribbean.",
+    "exampleCn": "豪华邮轮航行穿越加勒比海。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4769,
+    "word": "ferry",
+    "phonetic": "ˈferi",
+    "pos": "n.",
+    "meaning": "渡船/轮渡",
+    "example": "They took the ferry across the Channel.",
+    "exampleCn": "他们坐渡轮穿过了英吉利海峡。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4770,
+    "word": "sail",
+    "phonetic": "seɪl",
+    "pos": "n./v.",
+    "meaning": "帆/航行",
+    "example": "The yacht sails around the island every summer.",
+    "exampleCn": "游艇每年夏天绕着岛屿航行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4771,
+    "word": "deck",
+    "phonetic": "dek",
+    "pos": "n.",
+    "meaning": "甲板/层面",
+    "example": "Passengers are not allowed on the lower deck.",
+    "exampleCn": "乘客不允许进入下层甲板。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4772,
+    "word": "propeller",
+    "phonetic": "prəˈpelə",
+    "pos": "n.",
+    "meaning": "螺旋桨/推进器",
+    "example": "The propeller spun faster as the boat picked up speed.",
+    "exampleCn": "船加速时螺旋桨转得更快了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4773,
+    "word": "stern",
+    "phonetic": "stɜːn",
+    "pos": "n.",
+    "meaning": "船尾/严厉的",
+    "example": "The captain stood at the stern of the ship.",
+    "exampleCn": "船长站在船尾。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4774,
+    "word": "embark",
+    "phonetic": "ɪmˈbɑːk",
+    "pos": "v.",
+    "meaning": "上船/登机/开始",
+    "example": "They embarked on a journey around the world.",
+    "exampleCn": "他们开始了环游世界的旅程。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4775,
+    "word": "railroad",
+    "phonetic": "ˈreɪlrəʊd",
+    "pos": "n.",
+    "meaning": "铁路/铁道",
+    "example": "The railroad was built across the prairie.",
+    "exampleCn": "铁路横跨大草原而建。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4776,
+    "word": "railway",
+    "phonetic": "ˈreɪlweɪ",
+    "pos": "n.",
+    "meaning": "铁路/铁道",
+    "example": "The railway connects the capital with major cities.",
+    "exampleCn": "这条铁路连接首都和主要城市。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4777,
+    "word": "locomotive",
+    "phonetic": "ˌləʊkəˈməʊtɪv",
+    "pos": "n.",
+    "meaning": "火车头/机车",
+    "example": "A steam locomotive pulled the old train.",
+    "exampleCn": "一台蒸汽机车拉着那列老火车。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4778,
+    "word": "subway",
+    "phonetic": "ˈsʌbweɪ",
+    "pos": "n.",
+    "meaning": "地铁/地下通道",
+    "example": "She takes the subway to work every day.",
+    "exampleCn": "她每天乘地铁上班。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4779,
+    "word": "underground",
+    "phonetic": "ˈʌndəɡraʊnd",
+    "pos": "n./adj./adv.",
+    "meaning": "地铁/地下的",
+    "example": "The underground is the fastest way to get around the city.",
+    "exampleCn": "地铁是城市中出行最快的方式。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4780,
+    "word": "rail",
+    "phonetic": "reɪl",
+    "pos": "n.",
+    "meaning": "铁轨/栏杆",
+    "example": "The rail line runs along the coast.",
+    "exampleCn": "铁路线沿着海岸延伸。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4781,
+    "word": "depart",
+    "phonetic": "dɪˈpɑːt",
+    "pos": "v.",
+    "meaning": "出发/离开",
+    "example": "The train departs at 10 a.m.",
+    "exampleCn": "火车上午十点出发。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4782,
+    "word": "arrive",
+    "phonetic": "əˈraɪv",
+    "pos": "v.",
+    "meaning": "到达/抵达",
+    "example": "They arrived at the hotel late at night.",
+    "exampleCn": "他们深夜到达了酒店。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4783,
+    "word": "delay",
+    "phonetic": "dɪˈleɪ",
+    "pos": "n./v.",
+    "meaning": "延误/延迟",
+    "example": "The flight was delayed due to bad weather.",
+    "exampleCn": "航班因恶劣天气延误了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4784,
+    "word": "postpone",
+    "phonetic": "pəˈspəʊn",
+    "pos": "v.",
+    "meaning": "推迟/延期",
+    "example": "The meeting was postponed until next Monday.",
+    "exampleCn": "会议被推迟到了下周一。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4785,
+    "word": "lull",
+    "phonetic": "lʌl",
+    "pos": "n./v.",
+    "meaning": "间歇/使平静",
+    "example": "There was a brief lull in the traffic noise.",
+    "exampleCn": "交通噪音间有一个短暂的间歇。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4786,
+    "word": "due",
+    "phonetic": "djuː",
+    "pos": "adj./adv.",
+    "meaning": "到期的/应到的",
+    "example": "The train is due to arrive at 3 p.m.",
+    "exampleCn": "火车预计下午三点到达。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4787,
+    "word": "overdue",
+    "phonetic": "ˌəʊvəˈdjuː",
+    "pos": "adj.",
+    "meaning": "过期的/逾期的",
+    "example": "Her library book was two weeks overdue.",
+    "exampleCn": "她借的书逾期了两周。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4788,
+    "word": "postage",
+    "phonetic": "ˈpəʊstɪdʒ",
+    "pos": "n.",
+    "meaning": "邮费/邮资",
+    "example": "The postage for this parcel costs five pounds.",
+    "exampleCn": "这个包裹的邮费是五英镑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4789,
+    "word": "post",
+    "phonetic": "pəʊst",
+    "pos": "n./v.",
+    "meaning": "邮寄/邮政",
+    "example": "She posted the letter on her way to work.",
+    "exampleCn": "她在上班路上寄了信。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4790,
+    "word": "stamp",
+    "phonetic": "stæmp",
+    "pos": "n.",
+    "meaning": "邮票/印章",
+    "example": "He stuck a stamp on the envelope.",
+    "exampleCn": "他在信封上贴了一张邮票。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4791,
+    "word": "package",
+    "phonetic": "ˈpækɪdʒ",
+    "pos": "n.",
+    "meaning": "包裹/包装",
+    "example": "The delivery man brought a large package to the door.",
+    "exampleCn": "送货员把一个大包裹送到了门口。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4792,
+    "word": "pack",
+    "phonetic": "pæk",
+    "pos": "v.",
+    "meaning": "打包/装箱",
+    "example": "She packed her bag and left the hotel.",
+    "exampleCn": "她收拾好行李离开了酒店。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4793,
+    "word": "parcel",
+    "phonetic": "ˈpɑːsl",
+    "pos": "n.",
+    "meaning": "包裹/邮包",
+    "example": "She sent a parcel of clothes to her sister.",
+    "exampleCn": "她给妹妹寄了一包衣服。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4794,
+    "word": "load",
+    "phonetic": "ləʊd",
+    "pos": "v./n.",
+    "meaning": "装载/负荷",
+    "example": "They loaded the van with furniture.",
+    "exampleCn": "他们把家具装上了货车。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4795,
+    "word": "unload",
+    "phonetic": "ʌnˈləʊd",
+    "pos": "v.",
+    "meaning": "卸载/卸货",
+    "example": "The workers unloaded the cargo from the ship.",
+    "exampleCn": "工人从船上卸下了货物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4796,
+    "word": "transition",
+    "phonetic": "trænˈzɪʃn",
+    "pos": "n.",
+    "meaning": "过渡/转变",
+    "example": "The country is in a period of economic transition.",
+    "exampleCn": "该国正处于经济转型期。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4797,
+    "word": "deliver",
+    "phonetic": "dɪˈlɪvə",
+    "pos": "v.",
+    "meaning": "递送/投递",
+    "example": "The postman delivers letters every morning.",
+    "exampleCn": "邮递员每天早晨递送信件。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
     ]
   }
 ]

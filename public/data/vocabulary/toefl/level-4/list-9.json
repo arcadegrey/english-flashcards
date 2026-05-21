@@ -42,10 +42,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 167,
@@ -424,10 +429,15 @@
     "exampleCn": "我们应该为长途旅行保留一些水。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 2196,
@@ -491,7 +501,8 @@
     "list": "9",
     "ieltsList": "20",
     "ieltsLists": [
-      "20"
+      "20",
+      "36"
     ]
   },
   {
@@ -554,10 +565,15 @@
     "exampleCn": "那座老塔是这座城市著名的地标。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 2204,
@@ -845,10 +861,15 @@
     "exampleCn": "这栋建筑的内部设计得很漂亮。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 2222,
@@ -1224,10 +1245,15 @@
     "exampleCn": "地球继续绕地轴旋转。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 2246,

@@ -428,10 +428,15 @@
     "exampleCn": "她用一根细绳把包裹绑起来。/一串灯装饰了房间。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 971,
@@ -613,10 +618,15 @@
     "exampleCn": "这件毛衣是纯羊毛做的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 982,
@@ -693,10 +703,15 @@
     "exampleCn": "她把文件转存到U盘里。/他转学到了另一所大学。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 987,
@@ -943,10 +958,15 @@
     "exampleCn": "这座城市以现代摩天大楼闻名。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1003,
@@ -995,7 +1015,8 @@
     "list": "6",
     "ieltsList": "22",
     "ieltsLists": [
-      "22"
+      "22",
+      "34"
     ]
   },
   {
@@ -1179,7 +1200,8 @@
     "list": "6",
     "ieltsList": "15",
     "ieltsLists": [
-      "15"
+      "15",
+      "34"
     ]
   },
   {

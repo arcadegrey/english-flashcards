@@ -423,10 +423,15 @@
     "exampleCn": "他把芥末抹在三明治上。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
   },
   {
     "id": 3506,

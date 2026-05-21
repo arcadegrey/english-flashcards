@@ -111,10 +111,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 1044,
@@ -383,10 +388,15 @@
     "exampleCn": "他们计划建立一个新的研究中心。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1061,
@@ -398,10 +408,15 @@
     "exampleCn": "这艘船开始了横渡太平洋的航行。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 1062,
@@ -478,10 +493,15 @@
     "exampleCn": "用浆糊把纸贴到墙上。/请把图片粘贴到这里。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31"
+    ]
   },
   {
     "id": 1067,
@@ -920,10 +940,15 @@
     "exampleCn": "保持健康的生活方式并不容易。/工人们定期维护设备。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "35",
+    "ieltsLists": [
+      "35"
+    ]
   },
   {
     "id": 1094,
@@ -1102,10 +1127,15 @@
     "exampleCn": "巴黎是热门旅游目的地。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 1106,
@@ -1167,10 +1197,15 @@
     "exampleCn": "把蛋糕放进烤箱烤三十分钟。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 1110,
@@ -1522,10 +1557,15 @@
     "exampleCn": "没有人能在所有事情上都做到完美。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 1132,

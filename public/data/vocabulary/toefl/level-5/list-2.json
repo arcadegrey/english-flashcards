@@ -65,7 +65,8 @@
     "list": "2",
     "ieltsList": "18",
     "ieltsLists": [
-      "18"
+      "18",
+      "35"
     ]
   },
   {
@@ -680,10 +681,15 @@
     "exampleCn": "工人们明年将建造一座新桥。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 2569,
@@ -1250,10 +1256,15 @@
     "exampleCn": "合同中包括关于逾期付款的条款。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
   },
   {
     "id": 2605,

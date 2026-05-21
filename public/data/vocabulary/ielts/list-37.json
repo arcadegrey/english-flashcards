@@ -1,0 +1,1093 @@
+[
+  {
+    "id": 4,
+    "word": "aboard",
+    "phonetic": "/əˈbɔːrd/",
+    "pos": "adv./prep.",
+    "meaning": "在船 (车) 上；上船",
+    "example": "Welcome aboard! Please find your seat.",
+    "exampleCn": "欢迎登机！请找到您的座位。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 137,
+    "word": "anchor",
+    "phonetic": "/ˈæŋkər/",
+    "pos": "n./v.",
+    "meaning": "锚/固定物/主持人/固定",
+    "example": "The ship dropped its anchor near the shore.",
+    "exampleCn": "船在岸边抛下了锚。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 247,
+    "word": "bind",
+    "phonetic": "/baɪnd/",
+    "pos": "v.",
+    "meaning": "捆绑；装订",
+    "example": "The books were bound together.",
+    "exampleCn": "这些书被装订在一起。",
+    "category": "cet6",
+    "categories": [
+      "cet6",
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 290,
+    "word": "bow",
+    "phonetic": "/baʊ/",
+    "pos": "v./n.",
+    "meaning": "鞠躬；弓",
+    "example": "The actor took a bow after the show.",
+    "exampleCn": "演员在演出结束后鞠躬致谢。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24",
+      "37"
+    ]
+  },
+  {
+    "id": 335,
+    "word": "burden",
+    "phonetic": "/ˈbɜːrdn/",
+    "pos": "n.",
+    "meaning": "负担，重担",
+    "example": "The debt was a heavy burden.",
+    "exampleCn": "债务是一个沉重的负担。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 362,
+    "word": "canal",
+    "phonetic": "/kəˈnæl/",
+    "pos": "n.",
+    "meaning": "运河/管道",
+    "example": "The canal allowed boats to travel between the two rivers.",
+    "exampleCn": "这条运河使船只能够在两条河之间航行。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 710,
+    "word": "tunnel",
+    "phonetic": "/ˈtʌnl/",
+    "pos": "n.",
+    "meaning": "隧道；地道",
+    "example": "The train went through the tunnel.",
+    "exampleCn": "火车穿过了隧道。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 837,
+    "word": "swift",
+    "phonetic": "/swɪft/",
+    "pos": "adj.",
+    "meaning": "迅速的；敏捷的",
+    "example": "The swift response saved lives.",
+    "exampleCn": "迅速的反应挽救了生命。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 912,
+    "word": "convey",
+    "phonetic": "/kənˈveɪ/",
+    "pos": "v.",
+    "meaning": "传达；运送",
+    "example": "Pictures can convey emotions clearly.",
+    "exampleCn": "图片可以清楚地传达情感。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 986,
+    "word": "transfer",
+    "phonetic": "/trænsˈfɜːr/",
+    "pos": "v./n.",
+    "meaning": "转移，转让/调动，转乘",
+    "example": "She transferred the files to a USB drive./He made a transfer to another university.",
+    "exampleCn": "她把文件转存到U盘里。/他转学到了另一所大学。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 1105,
+    "word": "destination",
+    "phonetic": "/ˌdestɪˈneɪʃən/",
+    "pos": "n.",
+    "meaning": "目的地",
+    "example": "Paris is a popular tourist destination.",
+    "exampleCn": "巴黎是热门旅游目的地。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 1618,
+    "word": "submerge",
+    "phonetic": "/səbˈmɜːrdʒ/",
+    "pos": "v.",
+    "meaning": "浸没/淹没/潜入水中",
+    "example": "The rising water began to submerge the lower streets.",
+    "exampleCn": "上涨的水开始淹没较低的街道。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 1868,
+    "word": "transmit",
+    "phonetic": "/trænzˈmɪt/",
+    "pos": "v.",
+    "meaning": "传送/传播/传染",
+    "example": "Satellites transmit signals around the world.",
+    "exampleCn": "卫星向世界各地传送信号。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 1880,
+    "word": "vessel",
+    "phonetic": "/ˈvesl/",
+    "pos": "n.",
+    "meaning": "船只/容器/血管",
+    "example": "The vessel carried supplies across the ocean.",
+    "exampleCn": "这艘船把物资运过海洋。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 1889,
+    "word": "packet",
+    "phonetic": "/ˈpækɪt/",
+    "pos": "n.",
+    "meaning": "小包/数据包",
+    "example": "She opened a packet of seeds and planted them in the garden.",
+    "exampleCn": "她打开一小包种子，把它们种在花园里。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 1905,
+    "word": "expire",
+    "phonetic": "/ɪkˈspaɪər/",
+    "pos": "v.",
+    "meaning": "到期/失效/期满",
+    "example": "The permit will expire at the end of the month.",
+    "exampleCn": "许可证将在月底到期。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 2147,
+    "word": "ditch",
+    "phonetic": "/dɪtʃ/",
+    "pos": "n./v.",
+    "meaning": "沟渠/抛弃/摆脱",
+    "example": "Rainwater flowed through the ditch beside the road.",
+    "exampleCn": "雨水流过路边的沟渠。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 2168,
+    "word": "transit",
+    "phonetic": "/ˈtrænzɪt/",
+    "pos": "n./v.",
+    "meaning": "运输/通行/通过",
+    "example": "Public transit reduces traffic in large cities.",
+    "exampleCn": "公共交通减少了大城市的交通拥堵。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 2696,
+    "word": "canoe",
+    "phonetic": "/kəˈnuː/",
+    "pos": "n./v.",
+    "meaning": "独木舟/划独木舟",
+    "example": "They crossed the lake in a canoe.",
+    "exampleCn": "他们乘独木舟穿过湖面。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 2726,
+    "word": "velocity",
+    "phonetic": "/vəˈlɑːsəti/",
+    "pos": "n.",
+    "meaning": "速度/速率",
+    "example": "The object increased its velocity as it fell.",
+    "exampleCn": "物体下落时速度增加了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 2758,
+    "word": "carrier",
+    "phonetic": "/ˈkæriər/",
+    "pos": "n.",
+    "meaning": "运输工具/携带者/运营商/载体",
+    "example": "Mosquitoes can act as carriers of disease.",
+    "exampleCn": "蚊子可能成为疾病的传播媒介。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 2895,
+    "word": "defer",
+    "phonetic": "/dɪˈfɜːr/",
+    "pos": "v.",
+    "meaning": "推迟/听从/遵从",
+    "example": "The school decided to defer the trip until spring.",
+    "exampleCn": "学校决定把旅行推迟到春天。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 2904,
+    "word": "raft",
+    "phonetic": "/ræft/",
+    "pos": "n./v.",
+    "meaning": "木筏/橡皮艇/乘筏航行",
+    "example": "They crossed the river on a wooden raft.",
+    "exampleCn": "他们乘木筏过河。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 2973,
+    "word": "turbine",
+    "phonetic": "/ˈtɜːrbaɪn/",
+    "pos": "n.",
+    "meaning": "涡轮机/汽轮机",
+    "example": "Wind turns the blades of the turbine.",
+    "exampleCn": "风推动涡轮机叶片转动。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 3153,
+    "word": "oar",
+    "phonetic": "/ɔːr/",
+    "pos": "n.",
+    "meaning": "桨/橹",
+    "example": "Each rower held an oar and moved in rhythm.",
+    "exampleCn": "每个划船者都拿着一支桨并有节奏地划动。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 3858,
+    "word": "envelope",
+    "phonetic": "ˈenvələʊp",
+    "pos": "n.",
+    "meaning": "外壳/信封",
+    "example": "The Earth's atmosphere is an envelope of gases.",
+    "exampleCn": "地球的大气层是一层气体的外壳。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "10",
+    "ieltsLists": [
+      "10",
+      "37"
+    ]
+  },
+  {
+    "id": 4764,
+    "word": "dock",
+    "phonetic": "dɒk",
+    "pos": "n.",
+    "meaning": "码头/船坞",
+    "example": "The ship was tied up at the dock.",
+    "exampleCn": "船拴在了码头上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4765,
+    "word": "sailor",
+    "phonetic": "ˈseɪlə",
+    "pos": "n.",
+    "meaning": "水手/海员",
+    "example": "The old sailor told stories of his voyages.",
+    "exampleCn": "老水手讲起他航行的故事。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4766,
+    "word": "seaman",
+    "phonetic": "ˈsiːmən",
+    "pos": "n.",
+    "meaning": "海员/水手",
+    "example": "He spent his life as a seaman on cargo ships.",
+    "exampleCn": "他一生都在货船上当海员。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4767,
+    "word": "steamer",
+    "phonetic": "ˈstiːmə",
+    "pos": "n.",
+    "meaning": "蒸汽船/轮船",
+    "example": "They travelled up the river on an old steamer.",
+    "exampleCn": "他们乘坐一艘老蒸汽船沿河而上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4768,
+    "word": "liner",
+    "phonetic": "ˈlaɪnə",
+    "pos": "n.",
+    "meaning": "邮轮/班轮",
+    "example": "The luxury liner sailed across the Caribbean.",
+    "exampleCn": "豪华邮轮航行穿越加勒比海。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4769,
+    "word": "ferry",
+    "phonetic": "ˈferi",
+    "pos": "n.",
+    "meaning": "渡船/轮渡",
+    "example": "They took the ferry across the Channel.",
+    "exampleCn": "他们坐渡轮穿过了英吉利海峡。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4770,
+    "word": "sail",
+    "phonetic": "seɪl",
+    "pos": "n./v.",
+    "meaning": "帆/航行",
+    "example": "The yacht sails around the island every summer.",
+    "exampleCn": "游艇每年夏天绕着岛屿航行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4771,
+    "word": "deck",
+    "phonetic": "dek",
+    "pos": "n.",
+    "meaning": "甲板/层面",
+    "example": "Passengers are not allowed on the lower deck.",
+    "exampleCn": "乘客不允许进入下层甲板。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4772,
+    "word": "propeller",
+    "phonetic": "prəˈpelə",
+    "pos": "n.",
+    "meaning": "螺旋桨/推进器",
+    "example": "The propeller spun faster as the boat picked up speed.",
+    "exampleCn": "船加速时螺旋桨转得更快了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4773,
+    "word": "stern",
+    "phonetic": "stɜːn",
+    "pos": "n.",
+    "meaning": "船尾/严厉的",
+    "example": "The captain stood at the stern of the ship.",
+    "exampleCn": "船长站在船尾。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4774,
+    "word": "embark",
+    "phonetic": "ɪmˈbɑːk",
+    "pos": "v.",
+    "meaning": "上船/登机/开始",
+    "example": "They embarked on a journey around the world.",
+    "exampleCn": "他们开始了环游世界的旅程。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4775,
+    "word": "railroad",
+    "phonetic": "ˈreɪlrəʊd",
+    "pos": "n.",
+    "meaning": "铁路/铁道",
+    "example": "The railroad was built across the prairie.",
+    "exampleCn": "铁路横跨大草原而建。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4776,
+    "word": "railway",
+    "phonetic": "ˈreɪlweɪ",
+    "pos": "n.",
+    "meaning": "铁路/铁道",
+    "example": "The railway connects the capital with major cities.",
+    "exampleCn": "这条铁路连接首都和主要城市。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4777,
+    "word": "locomotive",
+    "phonetic": "ˌləʊkəˈməʊtɪv",
+    "pos": "n.",
+    "meaning": "火车头/机车",
+    "example": "A steam locomotive pulled the old train.",
+    "exampleCn": "一台蒸汽机车拉着那列老火车。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4778,
+    "word": "subway",
+    "phonetic": "ˈsʌbweɪ",
+    "pos": "n.",
+    "meaning": "地铁/地下通道",
+    "example": "She takes the subway to work every day.",
+    "exampleCn": "她每天乘地铁上班。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4779,
+    "word": "underground",
+    "phonetic": "ˈʌndəɡraʊnd",
+    "pos": "n./adj./adv.",
+    "meaning": "地铁/地下的",
+    "example": "The underground is the fastest way to get around the city.",
+    "exampleCn": "地铁是城市中出行最快的方式。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4780,
+    "word": "rail",
+    "phonetic": "reɪl",
+    "pos": "n.",
+    "meaning": "铁轨/栏杆",
+    "example": "The rail line runs along the coast.",
+    "exampleCn": "铁路线沿着海岸延伸。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4781,
+    "word": "depart",
+    "phonetic": "dɪˈpɑːt",
+    "pos": "v.",
+    "meaning": "出发/离开",
+    "example": "The train departs at 10 a.m.",
+    "exampleCn": "火车上午十点出发。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4782,
+    "word": "arrive",
+    "phonetic": "əˈraɪv",
+    "pos": "v.",
+    "meaning": "到达/抵达",
+    "example": "They arrived at the hotel late at night.",
+    "exampleCn": "他们深夜到达了酒店。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4783,
+    "word": "delay",
+    "phonetic": "dɪˈleɪ",
+    "pos": "n./v.",
+    "meaning": "延误/延迟",
+    "example": "The flight was delayed due to bad weather.",
+    "exampleCn": "航班因恶劣天气延误了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4784,
+    "word": "postpone",
+    "phonetic": "pəˈspəʊn",
+    "pos": "v.",
+    "meaning": "推迟/延期",
+    "example": "The meeting was postponed until next Monday.",
+    "exampleCn": "会议被推迟到了下周一。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4785,
+    "word": "lull",
+    "phonetic": "lʌl",
+    "pos": "n./v.",
+    "meaning": "间歇/使平静",
+    "example": "There was a brief lull in the traffic noise.",
+    "exampleCn": "交通噪音间有一个短暂的间歇。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4786,
+    "word": "due",
+    "phonetic": "djuː",
+    "pos": "adj./adv.",
+    "meaning": "到期的/应到的",
+    "example": "The train is due to arrive at 3 p.m.",
+    "exampleCn": "火车预计下午三点到达。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4787,
+    "word": "overdue",
+    "phonetic": "ˌəʊvəˈdjuː",
+    "pos": "adj.",
+    "meaning": "过期的/逾期的",
+    "example": "Her library book was two weeks overdue.",
+    "exampleCn": "她借的书逾期了两周。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4788,
+    "word": "postage",
+    "phonetic": "ˈpəʊstɪdʒ",
+    "pos": "n.",
+    "meaning": "邮费/邮资",
+    "example": "The postage for this parcel costs five pounds.",
+    "exampleCn": "这个包裹的邮费是五英镑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4789,
+    "word": "post",
+    "phonetic": "pəʊst",
+    "pos": "n./v.",
+    "meaning": "邮寄/邮政",
+    "example": "She posted the letter on her way to work.",
+    "exampleCn": "她在上班路上寄了信。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4790,
+    "word": "stamp",
+    "phonetic": "stæmp",
+    "pos": "n.",
+    "meaning": "邮票/印章",
+    "example": "He stuck a stamp on the envelope.",
+    "exampleCn": "他在信封上贴了一张邮票。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4791,
+    "word": "package",
+    "phonetic": "ˈpækɪdʒ",
+    "pos": "n.",
+    "meaning": "包裹/包装",
+    "example": "The delivery man brought a large package to the door.",
+    "exampleCn": "送货员把一个大包裹送到了门口。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4792,
+    "word": "pack",
+    "phonetic": "pæk",
+    "pos": "v.",
+    "meaning": "打包/装箱",
+    "example": "She packed her bag and left the hotel.",
+    "exampleCn": "她收拾好行李离开了酒店。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4793,
+    "word": "parcel",
+    "phonetic": "ˈpɑːsl",
+    "pos": "n.",
+    "meaning": "包裹/邮包",
+    "example": "She sent a parcel of clothes to her sister.",
+    "exampleCn": "她给妹妹寄了一包衣服。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4794,
+    "word": "load",
+    "phonetic": "ləʊd",
+    "pos": "v./n.",
+    "meaning": "装载/负荷",
+    "example": "They loaded the van with furniture.",
+    "exampleCn": "他们把家具装上了货车。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4795,
+    "word": "unload",
+    "phonetic": "ʌnˈləʊd",
+    "pos": "v.",
+    "meaning": "卸载/卸货",
+    "example": "The workers unloaded the cargo from the ship.",
+    "exampleCn": "工人从船上卸下了货物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4796,
+    "word": "transition",
+    "phonetic": "trænˈzɪʃn",
+    "pos": "n.",
+    "meaning": "过渡/转变",
+    "example": "The country is in a period of economic transition.",
+    "exampleCn": "该国正处于经济转型期。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  },
+  {
+    "id": 4797,
+    "word": "deliver",
+    "phonetic": "dɪˈlɪvə",
+    "pos": "v.",
+    "meaning": "递送/投递",
+    "example": "The postman delivers letters every morning.",
+    "exampleCn": "邮递员每天早晨递送信件。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
+  }
+]

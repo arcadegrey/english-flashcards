@@ -26,19 +26,6 @@
     ]
   },
   {
-    "id": 4,
-    "word": "aboard",
-    "phonetic": "/əˈbɔːrd/",
-    "pos": "adv./prep.",
-    "meaning": "在船 (车) 上；上船",
-    "example": "Welcome aboard! Please find your seat.",
-    "exampleCn": "欢迎登机！请找到您的座位。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 15,
     "word": "account",
     "phonetic": "/əˈkaʊnt/",
@@ -637,19 +624,6 @@
     ]
   },
   {
-    "id": 106,
-    "word": "alcohol",
-    "phonetic": "/ˈælkəhɔːl/",
-    "pos": "n.",
-    "meaning": "酒精，乙醇",
-    "example": "Alcohol is forbidden in some religions.",
-    "exampleCn": "一些宗教禁止饮酒。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 110,
     "word": "alive",
     "phonetic": "/əˈlaɪv/",
@@ -748,19 +722,6 @@
     "meaning": "模棱两可的",
     "example": "His answer was ambiguous.",
     "exampleCn": "他的回答模棱两可。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 127,
-    "word": "ambulance",
-    "phonetic": "/ˈæmbjələns/",
-    "pos": "n.",
-    "meaning": "救护车",
-    "example": "Call an ambulance immediately!",
-    "exampleCn": "立即叫救护车！",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -910,19 +871,6 @@
     ]
   },
   {
-    "id": 150,
-    "word": "apartment",
-    "phonetic": "/əˈpɑːrtmənt/",
-    "pos": "n.",
-    "meaning": "公寓",
-    "example": "They live in a small apartment.",
-    "exampleCn": "他们住在一间小公寓里。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 151,
     "word": "apologize",
     "phonetic": "/əˈpɑːlədʒaɪz/",
@@ -930,19 +878,6 @@
     "meaning": "道歉，认错",
     "example": "You should apologize for being late.",
     "exampleCn": "你应该为迟到道歉。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 154,
-    "word": "appear",
-    "phonetic": "/əˈpɪr/",
-    "pos": "v.",
-    "meaning": "出现；似乎",
-    "example": "A ship appeared on the horizon.",
-    "exampleCn": "一艘船出现在地平线上。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -1079,19 +1014,6 @@
     ]
   },
   {
-    "id": 196,
-    "word": "available",
-    "phonetic": "/əˈveɪləbl/",
-    "pos": "adj.",
-    "meaning": "可用的，可得到的",
-    "example": "Is this seat available?",
-    "exampleCn": "这个座位有人吗？",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 197,
     "word": "average",
     "phonetic": "/ˈævərɪdʒ/",
@@ -1118,19 +1040,6 @@
     ]
   },
   {
-    "id": 201,
-    "word": "bakery",
-    "phonetic": "/ˈbeɪkəri/",
-    "pos": "n.",
-    "meaning": "面包店",
-    "example": "The bakery sells fresh bread every morning.",
-    "exampleCn": "这家面包店每天早上卖新鲜面包。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 202,
     "word": "balance",
     "phonetic": "/ˈbæləns/",
@@ -1144,19 +1053,6 @@
     ]
   },
   {
-    "id": 203,
-    "word": "balcony",
-    "phonetic": "/ˈbælkəni/",
-    "pos": "n.",
-    "meaning": "阳台",
-    "example": "We sat on the balcony enjoying the view.",
-    "exampleCn": "我们坐在阳台上欣赏风景。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 205,
     "word": "bandage",
     "phonetic": "/ˈbændɪdʒ/",
@@ -1164,19 +1060,6 @@
     "meaning": "绷带",
     "example": "The nurse wrapped a bandage around his arm.",
     "exampleCn": "护士用绷带包扎了他的手臂。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 207,
-    "word": "banquet",
-    "phonetic": "/ˈbæŋkwɪt/",
-    "pos": "n.",
-    "meaning": "宴会",
-    "example": "The wedding banquet was held at a luxury hotel.",
-    "exampleCn": "婚宴在一家豪华酒店举行。",
     "category": "daily",
     "categories": [
       "daily"
@@ -1352,32 +1235,6 @@
     ]
   },
   {
-    "id": 233,
-    "word": "belt",
-    "phonetic": "/belt/",
-    "pos": "n.",
-    "meaning": "腰带；带",
-    "example": "Fasten your seat belt before takeoff.",
-    "exampleCn": "起飞前系好安全带。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 234,
-    "word": "bench",
-    "phonetic": "/bentʃ/",
-    "pos": "n.",
-    "meaning": "长凳",
-    "example": "They sat on a bench in the park.",
-    "exampleCn": "他们坐在公园的长椅上。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 236,
     "word": "beneath",
     "phonetic": "/bɪˈniːθ/",
@@ -1417,19 +1274,6 @@
     ]
   },
   {
-    "id": 239,
-    "word": "berry",
-    "phonetic": "/ˈberi/",
-    "pos": "n.",
-    "meaning": "浆果",
-    "example": "Strawberries are my favorite berry.",
-    "exampleCn": "草莓是我最喜欢的浆果。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 240,
     "word": "beside",
     "phonetic": "/bɪˈsaɪd/",
@@ -1450,19 +1294,6 @@
     "meaning": "背叛，出卖",
     "example": "He felt betrayed by his best friend.",
     "exampleCn": "他感到被他最好的朋友背叛了。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 242,
-    "word": "beverage",
-    "phonetic": "/ˈbevərɪdʒ/",
-    "pos": "n.",
-    "meaning": "饮料",
-    "example": "Coffee is a popular beverage worldwide.",
-    "exampleCn": "咖啡是一种全球流行的饮料。",
     "category": "daily",
     "categories": [
       "daily"
@@ -1508,19 +1339,6 @@
     ]
   },
   {
-    "id": 247,
-    "word": "bind",
-    "phonetic": "/baɪnd/",
-    "pos": "v.",
-    "meaning": "捆绑；装订",
-    "example": "The books were bound together.",
-    "exampleCn": "这些书被装订在一起。",
-    "category": "cet6",
-    "categories": [
-      "cet6"
-    ]
-  },
-  {
     "id": 249,
     "word": "bird",
     "phonetic": "/bɜːrd/",
@@ -1541,32 +1359,6 @@
     "meaning": "出生，诞生",
     "example": "The birth of their baby was a joyous occasion.",
     "exampleCn": "他们宝宝的出生是一件喜事。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 251,
-    "word": "biscuit",
-    "phonetic": "/ˈbɪskɪt/",
-    "pos": "n.",
-    "meaning": "饼干",
-    "example": "She baked fresh biscuits for breakfast.",
-    "exampleCn": "她烤了新鲜饼干当早餐。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 253,
-    "word": "bitter",
-    "phonetic": "/ˈbɪtər/",
-    "pos": "adj.",
-    "meaning": "苦的；痛苦的",
-    "example": "The medicine tastes very bitter.",
-    "exampleCn": "这药味道很苦。",
     "category": "daily",
     "categories": [
       "daily"
@@ -1768,19 +1560,6 @@
     ]
   },
   {
-    "id": 280,
-    "word": "boot",
-    "phonetic": "/buːt/",
-    "pos": "n.",
-    "meaning": "靴子；后备箱",
-    "example": "He put on his hiking boots.",
-    "exampleCn": "他穿上了徒步靴。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 283,
     "word": "boring",
     "phonetic": "/ˈbɔːrɪŋ/",
@@ -1847,19 +1626,6 @@
     ]
   },
   {
-    "id": 291,
-    "word": "bowl",
-    "phonetic": "/boʊl/",
-    "pos": "n.",
-    "meaning": "碗",
-    "example": "She served soup in a large bowl.",
-    "exampleCn": "她用大碗盛汤。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 292,
     "word": "box",
     "phonetic": "/bɒks/",
@@ -1893,19 +1659,6 @@
     "meaning": "大脑，脑筋",
     "example": "The brain controls the body.",
     "exampleCn": "大脑控制着身体。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 295,
-    "word": "brake",
-    "phonetic": "/breɪk/",
-    "pos": "n./v.",
-    "meaning": "刹车，制动器",
-    "example": "Press the brake to stop the car.",
-    "exampleCn": "踩刹车使车停下。",
     "category": "daily",
     "categories": [
       "daily"
@@ -1997,19 +1750,6 @@
     "meaning": "呼吸",
     "example": "It's hard to breathe in this room.",
     "exampleCn": "在这个房间里很难呼吸。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 308,
-    "word": "brick",
-    "phonetic": "/brɪk/",
-    "pos": "n.",
-    "meaning": "砖，砖块",
-    "example": "The house is made of red bricks.",
-    "exampleCn": "这栋房子是用红砖砌成的。",
     "category": "daily",
     "categories": [
       "daily"
@@ -2146,19 +1886,6 @@
     ]
   },
   {
-    "id": 326,
-    "word": "build",
-    "phonetic": "/bɪld/",
-    "pos": "v.",
-    "meaning": "建造，建设",
-    "example": "They plan to build a new school.",
-    "exampleCn": "他们计划建一所新学校。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 327,
     "word": "building",
     "phonetic": "/ˈbɪldɪŋ/",
@@ -2192,19 +1919,6 @@
     "meaning": "碰撞；肿块",
     "example": "He bumped into the table.",
     "exampleCn": "他撞到了桌子。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 335,
-    "word": "burden",
-    "phonetic": "/ˈbɜːrdn/",
-    "pos": "n.",
-    "meaning": "负担，重担",
-    "example": "The debt was a heavy burden.",
-    "exampleCn": "债务是一个沉重的负担。",
     "category": "daily",
     "categories": [
       "daily"
@@ -2263,32 +1977,6 @@
     ]
   },
   {
-    "id": 343,
-    "word": "butter",
-    "phonetic": "/ˈbʌtər/",
-    "pos": "n.",
-    "meaning": "黄油",
-    "example": "She spread butter on the bread.",
-    "exampleCn": "她把黄油涂在面包上。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 344,
-    "word": "button",
-    "phonetic": "/ˈbʌtn/",
-    "pos": "n.",
-    "meaning": "按钮；纽扣",
-    "example": "Press the red button to start.",
-    "exampleCn": "按红色按钮启动。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 345,
     "word": "buy",
     "phonetic": "/baɪ/",
@@ -2312,32 +2000,6 @@
     "category": "cet4",
     "categories": [
       "cet4"
-    ]
-  },
-  {
-    "id": 347,
-    "word": "cabbage",
-    "phonetic": "/ˈkæbɪdʒ/",
-    "pos": "n.",
-    "meaning": "卷心菜",
-    "example": "Cabbage is healthy and nutritious.",
-    "exampleCn": "卷心菜健康有营养。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 349,
-    "word": "cabinet",
-    "phonetic": "/ˈkæbɪnət/",
-    "pos": "n.",
-    "meaning": "橱柜；内阁",
-    "example": "The dishes are in the kitchen cabinet.",
-    "exampleCn": "盘子在厨房的橱柜里。",
-    "category": "daily",
-    "categories": [
-      "daily"
     ]
   },
   {
@@ -2523,19 +2185,6 @@
     ]
   },
   {
-    "id": 380,
-    "word": "carrot",
-    "phonetic": "/ˈkærət/",
-    "pos": "n.",
-    "meaning": "胡萝卜",
-    "example": "Rabbits love eating carrots.",
-    "exampleCn": "兔子喜欢吃胡萝卜。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 381,
     "word": "carry",
     "phonetic": "/ˈkæri/",
@@ -2582,19 +2231,6 @@
     "meaning": "现金",
     "example": "Do you accept cash payment?",
     "exampleCn": "你们接受现金支付吗？",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 386,
-    "word": "castle",
-    "phonetic": "/ˈkæsl/",
-    "pos": "n.",
-    "meaning": "城堡",
-    "example": "The old castle attracts many tourists.",
-    "exampleCn": "古老的城堡吸引了许多游客。",
     "category": "daily",
     "categories": [
       "daily"
@@ -2650,19 +2286,6 @@
     "category": "cet6",
     "categories": [
       "cet6"
-    ]
-  },
-  {
-    "id": 397,
-    "word": "ceiling",
-    "phonetic": "/ˈsiːlɪŋ/",
-    "pos": "n.",
-    "meaning": "天花板",
-    "example": "The ceiling is painted white.",
-    "exampleCn": "天花板被漆成白色。",
-    "category": "daily",
-    "categories": [
-      "daily"
     ]
   },
   {
@@ -2887,32 +2510,6 @@
     ]
   },
   {
-    "id": 429,
-    "word": "cheese",
-    "phonetic": "/tʃiːz/",
-    "pos": "n.",
-    "meaning": "奶酪",
-    "example": "Would you like some cheese?",
-    "exampleCn": "你想要一些奶酪吗？",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 430,
-    "word": "chef",
-    "phonetic": "/ʃef/",
-    "pos": "n.",
-    "meaning": "厨师长",
-    "example": "The chef prepared a delicious meal.",
-    "exampleCn": "厨师长准备了一顿美味的饭菜。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 431,
     "word": "chemical",
     "phonetic": "/ˈkemɪkl/",
@@ -3014,19 +2611,6 @@
     "category": "cet4",
     "categories": [
       "cet4"
-    ]
-  },
-  {
-    "id": 446,
-    "word": "cigarette",
-    "phonetic": "/ˌsɪɡəˈret/",
-    "pos": "n.",
-    "meaning": "香烟",
-    "example": "Smoking cigarettes is harmful to health.",
-    "exampleCn": "吸烟有害健康。",
-    "category": "daily",
-    "categories": [
-      "daily"
     ]
   },
   {
@@ -3362,19 +2946,6 @@
     "meaning": "冷的；感冒",
     "example": "It's very cold outside.",
     "exampleCn": "外面很冷。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 487,
-    "word": "collar",
-    "phonetic": "/ˈkɒlər/",
-    "pos": "n.",
-    "meaning": "衣领；项圈",
-    "example": "The dog wore a red collar.",
-    "exampleCn": "狗戴了一个红色项圈。",
     "category": "daily",
     "categories": [
       "daily"

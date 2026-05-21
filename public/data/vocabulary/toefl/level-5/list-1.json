@@ -280,10 +280,15 @@
     "exampleCn": "作者用生动的细节润色了这个故事。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "28",
+    "ieltsLists": [
+      "28"
+    ]
   },
   {
     "id": 2451,
@@ -502,10 +507,15 @@
     "exampleCn": "一台起重机吊起了沉重的钢梁。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 2465,
@@ -532,10 +542,15 @@
     "exampleCn": "一条清晰的思路连接了论证的各个部分。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 2467,
@@ -721,10 +736,15 @@
     "exampleCn": "这座古代金字塔吸引了许多考古学家。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 2479,
@@ -1160,10 +1180,15 @@
     "exampleCn": "暖气片让房间在冬天保持温暖。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 2507,

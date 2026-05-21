@@ -301,6 +301,10 @@ const getIeltsTopicKey = (list) => {
     if (numericList >= 21 && numericList <= 22) return 'language-evolution'
     if (numericList >= 23 && numericList <= 25) return 'entertainment-sports'
     if (numericList >= 26 && numericList <= 27) return 'objects-materials'
+    if (numericList >= 28 && numericList <= 29) return 'fashion-trends'
+    if (numericList >= 30 && numericList <= 32) return 'food-health'
+    if (numericList >= 33 && numericList <= 35) return 'architecture-places'
+    if (numericList >= 36 && numericList <= 37) return 'transport-travel'
   }
 
   return IELTS_UNKNOWN_TOPIC
@@ -318,6 +322,10 @@ const getIeltsTopicLabel = (topicKey) => {
     'language-evolution': '语言演化',
     'entertainment-sports': '娱乐运动',
     'objects-materials': '物品材料',
+    'fashion-trends': '时尚潮流',
+    'food-health': '饮食健康',
+    'architecture-places': '建筑场所',
+    'transport-travel': '交通旅游',
     [IELTS_UNKNOWN_TOPIC]: '未分主题',
   }
   return labels[topicKey] || '未分主题'

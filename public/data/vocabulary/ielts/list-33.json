@@ -1,0 +1,1114 @@
+[
+  {
+    "id": 105,
+    "word": "aisle",
+    "phonetic": "/aɪl/",
+    "pos": "n.",
+    "meaning": "过道/通道",
+    "example": "He walked down the aisle to find his seat.",
+    "exampleCn": "他沿着过道走去找座位。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 150,
+    "word": "apartment",
+    "phonetic": "/əˈpɑːrtmənt/",
+    "pos": "n.",
+    "meaning": "公寓",
+    "example": "They live in a small apartment.",
+    "exampleCn": "他们住在一间小公寓里。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 169,
+    "word": "architect",
+    "phonetic": "/ˈɑːkɪtekt/",
+    "pos": "n.",
+    "meaning": "建筑师；设计师",
+    "example": "The architect designed the building.",
+    "exampleCn": "建筑师设计了这栋建筑。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 263,
+    "word": "block",
+    "phonetic": "/blɒk/",
+    "pos": "v./n.",
+    "meaning": "阻塞；街区；块",
+    "example": "The accident blocked the road.",
+    "exampleCn": "事故阻塞了道路。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 326,
+    "word": "build",
+    "phonetic": "/bɪld/",
+    "pos": "v.",
+    "meaning": "建造，建设",
+    "example": "They plan to build a new school.",
+    "exampleCn": "他们计划建一所新学校。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 348,
+    "word": "cabin",
+    "phonetic": "/ˈkæbɪn/",
+    "pos": "n.",
+    "meaning": "小木屋/船舱/机舱",
+    "example": "They stayed in a cabin near the lake.",
+    "exampleCn": "他们住在湖边的一间小木屋里。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 593,
+    "word": "structural",
+    "phonetic": "/ˈstrʌktʃərəl/",
+    "pos": "adj.",
+    "meaning": "结构的；建筑的",
+    "example": "The building has structural problems.",
+    "exampleCn": "这栋建筑有结构问题。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 677,
+    "word": "nursery",
+    "phonetic": "/ˈnɜːsəri/",
+    "pos": "n.",
+    "meaning": "托儿所；苗圃",
+    "example": "The children go to nursery.",
+    "exampleCn": "孩子们去托儿所。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 701,
+    "word": "residential",
+    "phonetic": "/ˌrezɪˈdenʃl/",
+    "pos": "adj.",
+    "meaning": "居住的；住宅的",
+    "example": "This is a residential area.",
+    "exampleCn": "这是住宅区。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 802,
+    "word": "inhabit",
+    "phonetic": "/ɪnˈhæbɪt/",
+    "pos": "v.",
+    "meaning": "居住于；栖息于",
+    "example": "Fish inhabit the river.",
+    "exampleCn": "鱼栖息在河里。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 816,
+    "word": "reside",
+    "phonetic": "/rɪˈzaɪd/",
+    "pos": "v.",
+    "meaning": "居住；属于；存在于",
+    "example": "He resides in London.",
+    "exampleCn": "他居住在伦敦。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 854,
+    "word": "architecture",
+    "phonetic": "/ˈɑːkɪtektʃə(r)/",
+    "pos": "n.",
+    "meaning": "建筑；建筑学；结构",
+    "example": "The architecture is modern.",
+    "exampleCn": "建筑风格现代。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 918,
+    "word": "establish",
+    "phonetic": "/ɪˈstæblɪʃ/",
+    "pos": "v.",
+    "meaning": "建立；确立",
+    "example": "They hope to establish a new club at school.",
+    "exampleCn": "他们希望在学校建立一个新社团。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 1002,
+    "word": "skyscraper",
+    "phonetic": "/ˈskaɪskreɪpər/",
+    "pos": "n.",
+    "meaning": "摩天大楼",
+    "example": "The city is famous for its modern skyscrapers.",
+    "exampleCn": "这座城市以现代摩天大楼闻名。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 1060,
+    "word": "found",
+    "phonetic": "/faʊnd/",
+    "pos": "v.",
+    "meaning": "创立，建立",
+    "example": "They plan to found a new research center.",
+    "exampleCn": "他们计划建立一个新的研究中心。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 1162,
+    "word": "concrete",
+    "phonetic": "/ˈkɑːnkriːt/",
+    "pos": "adj./n.",
+    "meaning": "具体的；有形的/混凝土",
+    "example": "We need concrete evidence before making a decision.",
+    "exampleCn": "在做决定前我们需要确凿的证据。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 1188,
+    "word": "migrate",
+    "phonetic": "/ˈmaɪɡreɪt/",
+    "pos": "v.",
+    "meaning": "迁移；迁徙",
+    "example": "Many birds migrate south in the winter.",
+    "exampleCn": "许多鸟在冬天向南迁徙。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 1190,
+    "word": "settlement",
+    "phonetic": "/ˈsetəlmənt/",
+    "pos": "n.",
+    "meaning": "定居点；解决",
+    "example": "A small settlement grew near the river.",
+    "exampleCn": "河边发展出了一个小型定居点。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 1267,
+    "word": "immigrate",
+    "phonetic": "/ˈɪmɪˌɡreɪt/",
+    "pos": "v.",
+    "meaning": "移民入境",
+    "example": "His grandparents immigrated to Canada in the 1950s.",
+    "exampleCn": "他的祖父母在二十世纪五十年代移民到了加拿大。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 1352,
+    "word": "emigrate",
+    "phonetic": "/ˈemɪˌɡreɪt/",
+    "pos": "v.",
+    "meaning": "移居国外",
+    "example": "Many families chose to emigrate during the war.",
+    "exampleCn": "战争期间许多家庭选择移居国外。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 1566,
+    "word": "villa",
+    "phonetic": "/ˈvɪlə/",
+    "pos": "n.",
+    "meaning": "别墅/乡间住宅",
+    "example": "The wealthy family owned a villa near the coast.",
+    "exampleCn": "这个富裕家庭在海岸附近拥有一栋别墅。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 1633,
+    "word": "constructive",
+    "phonetic": "/kənˈstrʌktɪv/",
+    "pos": "adj.",
+    "meaning": "建设性的/有帮助的",
+    "example": "The teacher gave constructive feedback on the essay.",
+    "exampleCn": "老师对这篇文章给出了建设性的反馈。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 1662,
+    "word": "shed",
+    "phonetic": "/ʃed/",
+    "pos": "v./n.",
+    "meaning": "脱落/流出/棚屋",
+    "example": "Trees shed their leaves in autumn.",
+    "exampleCn": "树木在秋天落叶。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 1951,
+    "word": "corridor",
+    "phonetic": "/ˈkɔːrɪdɔːr/",
+    "pos": "n.",
+    "meaning": "走廊/通道",
+    "example": "The classroom is at the end of the corridor.",
+    "exampleCn": "教室在走廊尽头。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 2067,
+    "word": "cottage",
+    "phonetic": "/ˈkɑːtɪdʒ/",
+    "pos": "n.",
+    "meaning": "小屋/村舍",
+    "example": "They rented a small cottage near the lake.",
+    "exampleCn": "他们在湖边租了一间小屋。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 2069,
+    "word": "obstacle",
+    "phonetic": "/ˈɑːbstəkəl/",
+    "pos": "n.",
+    "meaning": "障碍/阻碍",
+    "example": "Lack of funding was the main obstacle to the project.",
+    "exampleCn": "缺少资金是这个项目的主要障碍。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 2203,
+    "word": "landmark",
+    "phonetic": "/ˈlændmɑːrk/",
+    "pos": "n./adj.",
+    "meaning": "地标/里程碑/有重大意义的",
+    "example": "The old tower is a famous landmark in the city.",
+    "exampleCn": "那座老塔是这座城市著名的地标。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 2568,
+    "word": "erect",
+    "phonetic": "/ɪˈrekt/",
+    "pos": "v./adj.",
+    "meaning": "建立/竖立/直立的",
+    "example": "Workers will erect a new bridge next year.",
+    "exampleCn": "工人们明年将建造一座新桥。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 2712,
+    "word": "obstruct",
+    "phonetic": "/əbˈstrʌkt/",
+    "pos": "v.",
+    "meaning": "阻碍/堵塞",
+    "example": "Fallen trees obstructed the road.",
+    "exampleCn": "倒下的树木堵住了道路。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 3282,
+    "word": "grid",
+    "phonetic": "/ɡrɪd/",
+    "pos": "n.",
+    "meaning": "网格/电网/格子结构",
+    "example": "The city streets are arranged in a simple grid.",
+    "exampleCn": "这座城市的街道以简单的网格排列。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 3625,
+    "word": "flat",
+    "phonetic": "/flæt/",
+    "pos": "adj./n.",
+    "meaning": "平坦的/公寓/轮胎瘪了",
+    "example": "The land is flat near the river.",
+    "exampleCn": "河边的土地很平坦。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2",
+    "ieltsLists": [
+      "2",
+      "33"
+    ]
+  },
+  {
+    "id": 4413,
+    "word": "lift",
+    "phonetic": "lɪft",
+    "pos": "n.",
+    "meaning": "电梯/升降机",
+    "example": "Take the lift to the fifth floor.",
+    "exampleCn": "乘电梯到五楼。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "27",
+    "ieltsLists": [
+      "27",
+      "33"
+    ]
+  },
+  {
+    "id": 4629,
+    "word": "erection",
+    "phonetic": "ɪˈrekʃn",
+    "pos": "n.",
+    "meaning": "建造/竖立",
+    "example": "The erection of the monument took two years.",
+    "exampleCn": "纪念碑的建造花了两年时间。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4630,
+    "word": "structure",
+    "phonetic": "ˈstrʌktʃə",
+    "pos": "n.",
+    "meaning": "结构/构造",
+    "example": "The bridge is a complex steel structure.",
+    "exampleCn": "这座桥是一个复杂的钢结构。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4631,
+    "word": "construct",
+    "phonetic": "kənˈstrʌkt",
+    "pos": "v.",
+    "meaning": "建造/构建",
+    "example": "They plan to construct a new hospital.",
+    "exampleCn": "他们计划建造一家新医院。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4632,
+    "word": "established",
+    "phonetic": "ɪˈstæblɪʃt",
+    "pos": "adj.",
+    "meaning": "已建立的/公认的",
+    "example": "He joined an established law firm.",
+    "exampleCn": "他加入了一家知名的律师事务所。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4633,
+    "word": "founder",
+    "phonetic": "ˈfaʊndə",
+    "pos": "n.",
+    "meaning": "创始人/创办者",
+    "example": "He was the founder of the charity.",
+    "exampleCn": "他是这个慈善机构的创始人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4634,
+    "word": "concretely",
+    "phonetic": "ˈkɒŋkriːtli",
+    "pos": "adv.",
+    "meaning": "具体地/明确地",
+    "example": "She explained her plan concretely and clearly.",
+    "exampleCn": "她具体而清楚地解释了自己的计划。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4635,
+    "word": "steel",
+    "phonetic": "stiːl",
+    "pos": "n.",
+    "meaning": "钢/钢铁",
+    "example": "The frame of the building is made of steel.",
+    "exampleCn": "建筑的框架是钢制的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4636,
+    "word": "stability",
+    "phonetic": "stəˈbɪləti",
+    "pos": "n.",
+    "meaning": "稳定性/稳固",
+    "example": "The pillars provide stability to the structure.",
+    "exampleCn": "柱子为结构提供了稳定性。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4637,
+    "word": "site",
+    "phonetic": "saɪt",
+    "pos": "n.",
+    "meaning": "场地/地点",
+    "example": "The construction site was fenced off.",
+    "exampleCn": "建筑工地被围了起来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4638,
+    "word": "venue",
+    "phonetic": "ˈvenjuː",
+    "pos": "n.",
+    "meaning": "场地/会场",
+    "example": "The concert venue can hold 20,000 people.",
+    "exampleCn": "音乐会场可容纳两万人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4639,
+    "word": "situated",
+    "phonetic": "ˈsɪtʃueɪtɪd",
+    "pos": "adj.",
+    "meaning": "位于/坐落在",
+    "example": "The hotel is situated on a hill overlooking the sea.",
+    "exampleCn": "酒店坐落在一座山上俯瞰大海。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4640,
+    "word": "locate",
+    "phonetic": "ləʊˈkeɪt",
+    "pos": "v.",
+    "meaning": "找到/位于",
+    "example": "They located the source of the leak.",
+    "exampleCn": "他们找到了泄漏的源头。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4641,
+    "word": "settle",
+    "phonetic": "ˈsetl",
+    "pos": "v.",
+    "meaning": "定居/安顿",
+    "example": "They decided to settle in a small town by the sea.",
+    "exampleCn": "他们决定在海边的一个小镇定居。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4642,
+    "word": "dwelling",
+    "phonetic": "ˈdwelɪŋ",
+    "pos": "n.",
+    "meaning": "住所/住宅",
+    "example": "The hut was a simple dwelling made of wood.",
+    "exampleCn": "小屋是一间用木头搭建的简陋住所。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4643,
+    "word": "mansion",
+    "phonetic": "ˈmænʃn",
+    "pos": "n.",
+    "meaning": "豪宅/公馆",
+    "example": "The billionaire lives in a mansion with twenty rooms.",
+    "exampleCn": "那位亿万富翁住在一栋有二十个房间的豪宅里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4644,
+    "word": "lodge",
+    "phonetic": "lɒdʒ",
+    "pos": "n.",
+    "meaning": "小屋/门房",
+    "example": "They stayed at a hunting lodge in the mountains.",
+    "exampleCn": "他们住在山里的一个狩猎小屋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4645,
+    "word": "hut",
+    "phonetic": "hʌt",
+    "pos": "n.",
+    "meaning": "茅舍/小屋",
+    "example": "The fishermen built a wooden hut near the shore.",
+    "exampleCn": "渔民们在岸边建了一间木屋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4646,
+    "word": "cellar",
+    "phonetic": "ˈselə",
+    "pos": "n.",
+    "meaning": "地下室/地窖",
+    "example": "The wine is stored in the cellar.",
+    "exampleCn": "葡萄酒存放在地窖里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4647,
+    "word": "cradle",
+    "phonetic": "ˈkreɪdl",
+    "pos": "n.",
+    "meaning": "摇篮/发源地",
+    "example": "The baby slept soundly in the cradle.",
+    "exampleCn": "婴儿在摇篮里睡得香甜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4648,
+    "word": "shelter",
+    "phonetic": "ˈʃeltə",
+    "pos": "n.",
+    "meaning": "避难所/庇护所",
+    "example": "They sought shelter from the storm.",
+    "exampleCn": "他们寻找躲避暴风雨的庇护所。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4649,
+    "word": "porch",
+    "phonetic": "pɔːtʃ",
+    "pos": "n.",
+    "meaning": "门廊/走廊",
+    "example": "They sat on the porch and watched the sunset.",
+    "exampleCn": "他们坐在门廊上看日落。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4650,
+    "word": "stair",
+    "phonetic": "steə",
+    "pos": "n.",
+    "meaning": "楼梯/阶梯",
+    "example": "She climbed the stairs to her bedroom.",
+    "exampleCn": "她爬上楼梯到了自己的卧室。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4651,
+    "word": "staircase",
+    "phonetic": "ˈsteəkeɪs",
+    "pos": "n.",
+    "meaning": "楼梯/楼梯间",
+    "example": "The grand staircase led up to the ballroom.",
+    "exampleCn": "宏伟的楼梯通向舞厅。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4652,
+    "word": "storey",
+    "phonetic": "ˈstɔːri",
+    "pos": "n.",
+    "meaning": "楼层/层",
+    "example": "The building is six storeys high.",
+    "exampleCn": "这座建筑有六层楼高。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4653,
+    "word": "layer",
+    "phonetic": "ˈleɪə",
+    "pos": "n.",
+    "meaning": "层/层次",
+    "example": "The cake has three layers of sponge.",
+    "exampleCn": "蛋糕有三层海绵蛋糕。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4654,
+    "word": "elevator",
+    "phonetic": "ˈelɪveɪtə",
+    "pos": "n.",
+    "meaning": "电梯",
+    "example": "Take the elevator to the top floor.",
+    "exampleCn": "乘电梯到顶层。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4655,
+    "word": "escalator",
+    "phonetic": "ˈeskəleɪtə",
+    "pos": "n.",
+    "meaning": "自动扶梯",
+    "example": "He took the escalator up to the first floor.",
+    "exampleCn": "他乘自动扶梯到了二楼。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  },
+  {
+    "id": 4656,
+    "word": "handrail",
+    "phonetic": "ˈhændreɪl",
+    "pos": "n.",
+    "meaning": "扶手/栏杆",
+    "example": "Hold the handrail when walking down the stairs.",
+    "exampleCn": "走下楼梯时扶好扶手。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
+  }
+]

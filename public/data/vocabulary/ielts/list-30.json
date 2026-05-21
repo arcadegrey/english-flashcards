@@ -1,0 +1,1067 @@
+[
+  {
+    "id": 106,
+    "word": "alcohol",
+    "phonetic": "/ˈælkəhɔːl/",
+    "pos": "n.",
+    "meaning": "酒精，乙醇",
+    "example": "Alcohol is forbidden in some religions.",
+    "exampleCn": "一些宗教禁止饮酒。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 155,
+    "word": "appetite",
+    "phonetic": "/ˈæpɪtaɪt/",
+    "pos": "n.",
+    "meaning": "食欲；胃口；欲望",
+    "example": "The walk gave me a good appetite.",
+    "exampleCn": "散步让我胃口大开。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 207,
+    "word": "banquet",
+    "phonetic": "/ˈbæŋkwɪt/",
+    "pos": "n.",
+    "meaning": "宴会",
+    "example": "The wedding banquet was held at a luxury hotel.",
+    "exampleCn": "婚宴在一家豪华酒店举行。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 242,
+    "word": "beverage",
+    "phonetic": "/ˈbevərɪdʒ/",
+    "pos": "n.",
+    "meaning": "饮料",
+    "example": "Coffee is a popular beverage worldwide.",
+    "exampleCn": "咖啡是一种全球流行的饮料。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 291,
+    "word": "bowl",
+    "phonetic": "/boʊl/",
+    "pos": "n.",
+    "meaning": "碗",
+    "example": "She served soup in a large bowl.",
+    "exampleCn": "她用大碗盛汤。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 347,
+    "word": "cabbage",
+    "phonetic": "/ˈkæbɪdʒ/",
+    "pos": "n.",
+    "meaning": "卷心菜",
+    "example": "Cabbage is healthy and nutritious.",
+    "exampleCn": "卷心菜健康有营养。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 430,
+    "word": "chef",
+    "phonetic": "/ʃef/",
+    "pos": "n.",
+    "meaning": "厨师长",
+    "example": "The chef prepared a delicious meal.",
+    "exampleCn": "厨师长准备了一顿美味的饭菜。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 436,
+    "word": "chief",
+    "phonetic": "/tʃiːf/",
+    "pos": "adj./n.",
+    "meaning": "主要的/首领",
+    "example": "The chief reason is cost.",
+    "exampleCn": "主要原因是成本。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 446,
+    "word": "cigarette",
+    "phonetic": "/ˌsɪɡəˈret/",
+    "pos": "n.",
+    "meaning": "香烟",
+    "example": "Smoking cigarettes is harmful to health.",
+    "exampleCn": "吸烟有害健康。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 659,
+    "word": "recipe",
+    "phonetic": "/ˈresəpi/",
+    "pos": "n.",
+    "meaning": "食谱；配方；秘诀",
+    "example": "What's the recipe for this cake?",
+    "exampleCn": "这个蛋糕的食谱是什么？",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 1109,
+    "word": "oven",
+    "phonetic": "/ˈʌvn/",
+    "pos": "n.",
+    "meaning": "烤箱，炉",
+    "example": "Bake the cake in the oven for thirty minutes.",
+    "exampleCn": "把蛋糕放进烤箱烤三十分钟。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 1248,
+    "word": "pot",
+    "phonetic": "/pɑːt/",
+    "pos": "n.",
+    "meaning": "锅；罐；盆",
+    "example": "She cooked soup in a large pot.",
+    "exampleCn": "她用一口大锅煮汤。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 1450,
+    "word": "edible",
+    "phonetic": "/ˈedəbəl/",
+    "pos": "adj.",
+    "meaning": "可食用的",
+    "example": "Only a few species of these mushrooms are edible.",
+    "exampleCn": "这些蘑菇中只有少数种类可以食用。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 2320,
+    "word": "tin",
+    "phonetic": "/tɪn/",
+    "pos": "n.",
+    "meaning": "锡/罐头/金属盒",
+    "example": "The food was stored in a tin container.",
+    "exampleCn": "食物被储存在一个锡制容器里。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 2393,
+    "word": "stove",
+    "phonetic": "/stoʊv/",
+    "pos": "n.",
+    "meaning": "炉子/火炉",
+    "example": "The soup was heating on the stove.",
+    "exampleCn": "汤正在炉子上加热。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 2604,
+    "word": "provision",
+    "phonetic": "/prəˈvɪʒn/",
+    "pos": "n./v.",
+    "meaning": "供应/条款/准备/提供",
+    "example": "The contract includes a provision for late payment.",
+    "exampleCn": "合同中包括关于逾期付款的条款。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 2630,
+    "word": "porcelain",
+    "phonetic": "/ˈpɔːrsəlɪn/",
+    "pos": "n./adj.",
+    "meaning": "瓷器/瓷制的",
+    "example": "The museum displayed delicate porcelain bowls.",
+    "exampleCn": "博物馆展出了精美的瓷碗。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 2671,
+    "word": "ceramic",
+    "phonetic": "/səˈræmɪk/",
+    "pos": "adj./n.",
+    "meaning": "陶瓷的/陶瓷制品",
+    "example": "Ceramic pots were found at the site.",
+    "exampleCn": "遗址中发现了陶瓷罐。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 2708,
+    "word": "furnace",
+    "phonetic": "/ˈfɜːrnɪs/",
+    "pos": "n.",
+    "meaning": "熔炉/暖气炉",
+    "example": "Iron ore is heated in a furnace.",
+    "exampleCn": "铁矿石在熔炉中加热。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4513,
+    "word": "diet",
+    "phonetic": "ˈdaɪət",
+    "pos": "n.",
+    "meaning": "饮食/节食",
+    "example": "A balanced diet is essential for good health.",
+    "exampleCn": "均衡饮食对健康至关重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4514,
+    "word": "dietary",
+    "phonetic": "ˈdaɪətəri",
+    "pos": "adj.",
+    "meaning": "饮食的/食谱的",
+    "example": "Dietary habits vary across cultures.",
+    "exampleCn": "饮食习惯因文化而异。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4515,
+    "word": "treat",
+    "phonetic": "triːt",
+    "pos": "v./n.",
+    "meaning": "对待/款待/治疗",
+    "example": "He treated his friends to dinner.",
+    "exampleCn": "他请朋友们吃晚饭。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4516,
+    "word": "treatment",
+    "phonetic": "ˈtriːtmənt",
+    "pos": "n.",
+    "meaning": "治疗/对待",
+    "example": "She is receiving treatment for her illness.",
+    "exampleCn": "她正在接受疾病治疗。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4517,
+    "word": "cater",
+    "phonetic": "ˈkeɪtə",
+    "pos": "v.",
+    "meaning": "提供餐饮/满足需求",
+    "example": "The restaurant caters for weddings and parties.",
+    "exampleCn": "这家餐厅承办婚宴和派对餐饮。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4518,
+    "word": "drinkable",
+    "phonetic": "ˈdrɪŋkəbl",
+    "pos": "adj.",
+    "meaning": "可饮用的",
+    "example": "The water from this well is clean and drinkable.",
+    "exampleCn": "这口井的水干净且可饮用。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4519,
+    "word": "refectory",
+    "phonetic": "rɪˈfektəri",
+    "pos": "n.",
+    "meaning": "食堂/餐厅",
+    "example": "The students gathered in the refectory for lunch.",
+    "exampleCn": "学生们聚集在食堂吃午餐。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4520,
+    "word": "cafeteria",
+    "phonetic": "ˌkæfəˈtɪəriə",
+    "pos": "n.",
+    "meaning": "自助餐厅/食堂",
+    "example": "We had lunch in the school cafeteria.",
+    "exampleCn": "我们在学校自助餐厅吃了午饭。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4521,
+    "word": "buffet",
+    "phonetic": "ˈbʊfeɪ",
+    "pos": "n.",
+    "meaning": "自助餐",
+    "example": "The hotel offers a breakfast buffet every morning.",
+    "exampleCn": "酒店每天早晨提供自助早餐。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4522,
+    "word": "barbecue",
+    "phonetic": "ˈbɑːbɪkjuː",
+    "pos": "n.",
+    "meaning": "烧烤/烤肉",
+    "example": "We had a barbecue in the garden on Sunday.",
+    "exampleCn": "星期天我们在花园里烧烤。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4523,
+    "word": "supper",
+    "phonetic": "ˈsʌpə",
+    "pos": "n.",
+    "meaning": "晚餐/晚饭",
+    "example": "They sat down to a simple supper of bread and soup.",
+    "exampleCn": "他们坐下来吃了简单的一顿面包汤当晚餐。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4524,
+    "word": "refreshment",
+    "phonetic": "rɪˈfreʃmənt",
+    "pos": "n.",
+    "meaning": "茶点/点心",
+    "example": "Light refreshments were served during the break.",
+    "exampleCn": "休息期间提供了简单的茶点。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4525,
+    "word": "snack",
+    "phonetic": "snæk",
+    "pos": "n.",
+    "meaning": "零食/小吃",
+    "example": "She had an apple as a mid-afternoon snack.",
+    "exampleCn": "她下午三四点吃了一个苹果当零食。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4526,
+    "word": "appetiser",
+    "phonetic": "ˈæpɪtaɪzə",
+    "pos": "n.",
+    "meaning": "开胃菜/前菜",
+    "example": "We ordered soup as an appetiser.",
+    "exampleCn": "我们点了汤作为开胃菜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4527,
+    "word": "cuisine",
+    "phonetic": "kwɪˈziːn",
+    "pos": "n.",
+    "meaning": "烹饪/菜系",
+    "example": "Italian cuisine is popular all over the world.",
+    "exampleCn": "意大利菜在世界各地都很受欢迎。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4528,
+    "word": "menu",
+    "phonetic": "ˈmenjuː",
+    "pos": "n.",
+    "meaning": "菜单/菜谱",
+    "example": "The waiter brought us the menu.",
+    "exampleCn": "服务员给我们拿来了菜单。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4529,
+    "word": "order",
+    "phonetic": "ˈɔːdə",
+    "pos": "v./n.",
+    "meaning": "点餐/命令/顺序",
+    "example": "Are you ready to order your food?",
+    "exampleCn": "你准备好点餐了吗？",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4530,
+    "word": "takeaway",
+    "phonetic": "ˈteɪkəweɪ",
+    "pos": "n.",
+    "meaning": "外卖/外带",
+    "example": "Let's get a takeaway tonight.",
+    "exampleCn": "今晚我们叫外卖吧。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4531,
+    "word": "gourmet",
+    "phonetic": "ˈɡʊəmeɪ",
+    "pos": "n./adj.",
+    "meaning": "美食家/美食的",
+    "example": "The restaurant is famous for its gourmet cuisine.",
+    "exampleCn": "这家餐厅以美食佳肴闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4532,
+    "word": "vegetarian",
+    "phonetic": "ˌvedʒɪˈteəriən",
+    "pos": "n./adj.",
+    "meaning": "素食者/素食的",
+    "example": "She became a vegetarian for health reasons.",
+    "exampleCn": "她出于健康原因成了素食者。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4533,
+    "word": "cutlery",
+    "phonetic": "ˈkʌtləri",
+    "pos": "n.",
+    "meaning": "餐具/刀叉",
+    "example": "They placed the cutlery neatly on the table.",
+    "exampleCn": "他们把餐具整齐地摆在桌上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4534,
+    "word": "silver",
+    "phonetic": "ˈsɪlvə",
+    "pos": "n.",
+    "meaning": "银/银器",
+    "example": "The ring was made of pure silver.",
+    "exampleCn": "这枚戒指是纯银制成的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4535,
+    "word": "dish",
+    "phonetic": "dɪʃ",
+    "pos": "n.",
+    "meaning": "盘子/菜肴",
+    "example": "She served the vegetables in a large dish.",
+    "exampleCn": "她把蔬菜放在一个大盘子里端上来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4536,
+    "word": "saucer",
+    "phonetic": "ˈsɔːsə",
+    "pos": "n.",
+    "meaning": "茶碟/托盘",
+    "example": "He placed the teacup gently on the saucer.",
+    "exampleCn": "他把茶杯轻轻放在茶碟上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4537,
+    "word": "fork",
+    "phonetic": "fɔːk",
+    "pos": "n.",
+    "meaning": "叉子/餐叉",
+    "example": "He ate the steak with a knife and fork.",
+    "exampleCn": "他用刀叉吃了牛排。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4538,
+    "word": "spoon",
+    "phonetic": "spuːn",
+    "pos": "n.",
+    "meaning": "勺子/汤匙",
+    "example": "She stirred her tea with a spoon.",
+    "exampleCn": "她用勺子搅了搅茶。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4539,
+    "word": "spoonful",
+    "phonetic": "ˈspuːnfʊl",
+    "pos": "n.",
+    "meaning": "一勺的量",
+    "example": "Add a spoonful of sugar to the mixture.",
+    "exampleCn": "往混合物中加入一勺糖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4540,
+    "word": "mug",
+    "phonetic": "mʌɡ",
+    "pos": "n.",
+    "meaning": "马克杯/大杯",
+    "example": "He drank a mug of hot chocolate.",
+    "exampleCn": "他喝了一大杯热巧克力。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4541,
+    "word": "kettle",
+    "phonetic": "ˈketl",
+    "pos": "n.",
+    "meaning": "水壶/烧水壶",
+    "example": "She put the kettle on to make tea.",
+    "exampleCn": "她烧上水壶准备泡茶。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4542,
+    "word": "pan",
+    "phonetic": "pæn",
+    "pos": "n.",
+    "meaning": "平底锅/煎锅",
+    "example": "Heat the oil in a large frying pan.",
+    "exampleCn": "在一个大煎锅里加热油。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4543,
+    "word": "lid",
+    "phonetic": "lɪd",
+    "pos": "n.",
+    "meaning": "盖子",
+    "example": "She took the lid off the saucepan.",
+    "exampleCn": "她把平底锅的盖子拿掉。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4544,
+    "word": "alcoholic beverage",
+    "phonetic": "",
+    "pos": "n.",
+    "meaning": "酒精饮料",
+    "example": "Beer is a type of alcoholic beverage.",
+    "exampleCn": "啤酒是一种酒精饮料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4545,
+    "word": "alcoholic",
+    "phonetic": "ˌælkəˈhɒlɪk",
+    "pos": "adj./n.",
+    "meaning": "酒精的/酗酒者",
+    "example": "He gave up drinking alcoholic drinks.",
+    "exampleCn": "他戒掉了含酒精的饮料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4546,
+    "word": "liquor",
+    "phonetic": "ˈlɪkə",
+    "pos": "n.",
+    "meaning": "烈酒/酒类",
+    "example": "The shop is licensed to sell liquor.",
+    "exampleCn": "这家店获准出售酒类。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4547,
+    "word": "whisky",
+    "phonetic": "ˈwɪski",
+    "pos": "n.",
+    "meaning": "威士忌酒",
+    "example": "He poured himself a glass of whisky.",
+    "exampleCn": "他给自己倒了一杯威士忌。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4548,
+    "word": "brandy",
+    "phonetic": "ˈbrændi",
+    "pos": "n.",
+    "meaning": "白兰地酒",
+    "example": "She took a sip of brandy to warm up.",
+    "exampleCn": "她抿了一口白兰地暖暖身子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4549,
+    "word": "tobacco",
+    "phonetic": "təˈbækəʊ",
+    "pos": "n.",
+    "meaning": "烟草/烟叶",
+    "example": "The use of tobacco is banned in public places.",
+    "exampleCn": "公共场所禁止使用烟草。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4550,
+    "word": "cigar",
+    "phonetic": "sɪˈɡɑː",
+    "pos": "n.",
+    "meaning": "雪茄",
+    "example": "He lit a cigar to celebrate the occasion.",
+    "exampleCn": "他点燃了一支雪茄来庆祝这个场合。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4551,
+    "word": "sober",
+    "phonetic": "ˈsəʊbə",
+    "pos": "adj.",
+    "meaning": "清醒的/未醉的",
+    "example": "He stayed sober and drove everyone home safely.",
+    "exampleCn": "他保持清醒并安全地把大家送回了家。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4552,
+    "word": "cucumber",
+    "phonetic": "ˈkjuːkʌmbə",
+    "pos": "n.",
+    "meaning": "黄瓜",
+    "example": "She sliced a cucumber for the salad.",
+    "exampleCn": "她切了一根黄瓜放进沙拉。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  },
+  {
+    "id": 4553,
+    "word": "onion",
+    "phonetic": "ˈʌnjən",
+    "pos": "n.",
+    "meaning": "洋葱",
+    "example": "Chopping onions always makes her cry.",
+    "exampleCn": "切洋葱总是让她流泪。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30"
+    ]
+  }
+]

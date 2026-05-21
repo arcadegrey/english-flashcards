@@ -174,10 +174,15 @@
     "exampleCn": "如果打开太多程序，电脑可能会崩溃。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
   },
   {
     "id": 1905,
@@ -189,10 +194,15 @@
     "exampleCn": "许可证将在月底到期。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "37",
+    "ieltsLists": [
+      "37"
+    ]
   },
   {
     "id": 1906,
@@ -209,7 +219,11 @@
     ],
     "level": "4",
     "list": "6",
-    "ieltsList": "1"
+    "ieltsList": "1",
+    "ieltsLists": [
+      "1",
+      "31"
+    ]
   },
   {
     "id": 1907,
@@ -446,10 +460,15 @@
     "exampleCn": "农民在一小块土地上种了蔬菜。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29"
+    ]
   },
   {
     "id": 1922,
@@ -551,10 +570,15 @@
     "exampleCn": "这座石拱门标志着古城的入口。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "34",
+    "ieltsLists": [
+      "34"
+    ]
   },
   {
     "id": 1929,
@@ -916,10 +940,15 @@
     "exampleCn": "教室在走廊尽头。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33"
+    ]
   },
   {
     "id": 1952,

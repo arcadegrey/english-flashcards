@@ -64,6 +64,18 @@ const getIeltsTopicMeta = (list) => {
     if (numericList >= 26 && numericList <= 27) {
       return { key: 'objects-materials', label: '物品材料' };
     }
+    if (numericList >= 28 && numericList <= 29) {
+      return { key: 'fashion-trends', label: '时尚潮流' };
+    }
+    if (numericList >= 30 && numericList <= 32) {
+      return { key: 'food-health', label: '饮食健康' };
+    }
+    if (numericList >= 33 && numericList <= 35) {
+      return { key: 'architecture-places', label: '建筑场所' };
+    }
+    if (numericList >= 36 && numericList <= 37) {
+      return { key: 'transport-travel', label: '交通旅游' };
+    }
   }
 
   return { key: 'unknown', label: '未分主题' };

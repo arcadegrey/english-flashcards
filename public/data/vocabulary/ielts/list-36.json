@@ -1,0 +1,1493 @@
+[
+  {
+    "id": 127,
+    "word": "ambulance",
+    "phonetic": "/ˈæmbjələns/",
+    "pos": "n.",
+    "meaning": "救护车",
+    "example": "Call an ambulance immediately!",
+    "exampleCn": "立即叫救护车！",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 154,
+    "word": "appear",
+    "phonetic": "/əˈpɪr/",
+    "pos": "v.",
+    "meaning": "出现；似乎",
+    "example": "A ship appeared on the horizon.",
+    "exampleCn": "一艘船出现在地平线上。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 295,
+    "word": "brake",
+    "phonetic": "/breɪk/",
+    "pos": "n./v.",
+    "meaning": "刹车，制动器",
+    "example": "Press the brake to stop the car.",
+    "exampleCn": "踩刹车使车停下。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 479,
+    "word": "coach",
+    "phonetic": "/koʊtʃ/",
+    "pos": "n./v.",
+    "meaning": "教练/指导，训练",
+    "example": "The coach encouraged the team before the game./She coaches young athletes on weekends.",
+    "exampleCn": "教练在比赛前鼓励了队员。/她周末训练年轻运动员。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 743,
+    "word": "crew",
+    "phonetic": "/kruː/",
+    "pos": "n.",
+    "meaning": "全体船员；全体乘务员",
+    "example": "The crew prepared the ship.",
+    "exampleCn": "船员们准备了船。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 778,
+    "word": "recycle",
+    "phonetic": "/ˌriːˈsaɪkl/",
+    "pos": "v.",
+    "meaning": "回收利用；再利用",
+    "example": "We should recycle paper.",
+    "exampleCn": "我们应该回收纸张。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25",
+      "36"
+    ]
+  },
+  {
+    "id": 857,
+    "word": "motor",
+    "phonetic": "/ˈməʊtə(r)/",
+    "pos": "n.",
+    "meaning": "发动机；马达；汽车",
+    "example": "The motor stopped working.",
+    "exampleCn": "马达停止工作了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 1061,
+    "word": "voyage",
+    "phonetic": "/ˈvɔɪɪdʒ/",
+    "pos": "n./v.",
+    "meaning": "航行，旅行",
+    "example": "The ship began its voyage across the Pacific.",
+    "exampleCn": "这艘船开始了横渡太平洋的航行。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 1146,
+    "word": "pave",
+    "phonetic": "/peɪv/",
+    "pos": "v.",
+    "meaning": "铺设；为……铺平道路",
+    "example": "The city plans to pave the road next month.",
+    "exampleCn": "这座城市计划下个月铺设这条路。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 1279,
+    "word": "navigate",
+    "phonetic": "/ˈnævɪˌɡeɪt/",
+    "pos": "v.",
+    "meaning": "导航；驾船；应对",
+    "example": "It can be difficult to navigate a new city alone.",
+    "exampleCn": "独自在一座新城市里找路可能很难。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 1371,
+    "word": "emergency",
+    "phonetic": "/ɪˈmɜːrdʒənsi/",
+    "pos": "n.",
+    "meaning": "紧急情况",
+    "example": "Call this number in case of emergency.",
+    "exampleCn": "遇到紧急情况请拨打这个号码。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 1403,
+    "word": "route",
+    "phonetic": "/ruːt/;/raʊt/",
+    "pos": "n.",
+    "meaning": "路线；途径",
+    "example": "We chose the shortest route to the station.",
+    "exampleCn": "我们选择了去车站的最短路线。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 1565,
+    "word": "crush",
+    "phonetic": "/krʌʃ/",
+    "pos": "v./n.",
+    "meaning": "压碎/击败/拥挤的人群",
+    "example": "The machine can crush rocks into small pieces.",
+    "exampleCn": "这台机器能把岩石压碎成小块。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 1764,
+    "word": "freight",
+    "phonetic": "/freɪt/",
+    "pos": "n.",
+    "meaning": "货物/货运",
+    "example": "The railroad carries freight across the country.",
+    "exampleCn": "铁路把货物运往全国各地。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 1904,
+    "word": "crash",
+    "phonetic": "/kræʃ/",
+    "pos": "v./n.",
+    "meaning": "碰撞/崩溃/坠毁/撞击声",
+    "example": "The computer may crash if too many programs are open.",
+    "exampleCn": "如果打开太多程序，电脑可能会崩溃。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 2102,
+    "word": "wreck",
+    "phonetic": "/rek/",
+    "pos": "n./v.",
+    "meaning": "残骸/失事/破坏",
+    "example": "The storm left the boat a wreck.",
+    "exampleCn": "暴风雨使那艘船成了残骸。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 2199,
+    "word": "convention",
+    "phonetic": "/kənˈvenʃn/",
+    "pos": "n.",
+    "meaning": "大会/惯例/公约",
+    "example": "The scientists attended an international convention.",
+    "exampleCn": "科学家们参加了一个国际大会。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "20",
+    "ieltsLists": [
+      "20",
+      "36"
+    ]
+  },
+  {
+    "id": 2385,
+    "word": "memorial",
+    "phonetic": "/məˈmɔːriəl/",
+    "pos": "n./adj.",
+    "meaning": "纪念碑/纪念的",
+    "example": "The memorial honors soldiers who died in the war.",
+    "exampleCn": "这座纪念碑纪念战争中牺牲的士兵。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 2387,
+    "word": "cart",
+    "phonetic": "/kɑːrt/",
+    "pos": "n.",
+    "meaning": "手推车/购物车",
+    "example": "She pushed the cart through the supermarket.",
+    "exampleCn": "她推着购物车穿过超市。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 2391,
+    "word": "dash",
+    "phonetic": "/dæʃ/",
+    "pos": "v./n.",
+    "meaning": "猛冲/破折号/少量",
+    "example": "He made a dash for the bus stop.",
+    "exampleCn": "他冲向公交车站。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 2396,
+    "word": "parade",
+    "phonetic": "/pəˈreɪd/",
+    "pos": "n./v.",
+    "meaning": "游行/列队行进",
+    "example": "The parade moved slowly down the main street.",
+    "exampleCn": "游行队伍沿着主街缓慢前进。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 2478,
+    "word": "pyramid",
+    "phonetic": "/ˈpɪrəmɪd/",
+    "pos": "n.",
+    "meaning": "金字塔/锥状结构",
+    "example": "The ancient pyramid attracted many archaeologists.",
+    "exampleCn": "这座古代金字塔吸引了许多考古学家。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 2730,
+    "word": "commemorate",
+    "phonetic": "/kəˈmeməreɪt/",
+    "pos": "v.",
+    "meaning": "纪念/庆祝",
+    "example": "The statue was built to commemorate the national hero.",
+    "exampleCn": "这座雕像是为纪念这位民族英雄而建的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 2749,
+    "word": "wagon",
+    "phonetic": "/ˈwæɡən/",
+    "pos": "n.",
+    "meaning": "四轮马车/货车/小推车",
+    "example": "The farmers loaded hay onto the wagon.",
+    "exampleCn": "农民把干草装上马车。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 2757,
+    "word": "horsepower",
+    "phonetic": "/ˈhɔːrspɑːər/",
+    "pos": "n.",
+    "meaning": "马力",
+    "example": "The engine produces more than 300 horsepower.",
+    "exampleCn": "这台发动机可产生三百多马力。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 3212,
+    "word": "vanish",
+    "phonetic": "/ˈvænɪʃ/",
+    "pos": "v.",
+    "meaning": "消失/突然不见",
+    "example": "The clouds vanished after the storm passed.",
+    "exampleCn": "暴风雨过去后，云层消失了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 3310,
+    "word": "atlas",
+    "phonetic": "/ˈætləs/",
+    "pos": "n.",
+    "meaning": "地图集",
+    "example": "The student used an atlas to locate the country.",
+    "exampleCn": "学生用地图集找到那个国家的位置。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "10",
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 3617,
+    "word": "navigation",
+    "phonetic": "/ˌnæv.ɪˈɡeɪ.ʃən/",
+    "pos": "n.",
+    "meaning": "导航/航行",
+    "example": "Good navigation is essential in open water.",
+    "exampleCn": "在开阔水域中良好的导航至关重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2",
+    "ieltsLists": [
+      "2",
+      "36"
+    ]
+  },
+  {
+    "id": 4318,
+    "word": "cyclist",
+    "phonetic": "ˈsaɪklɪst",
+    "pos": "n.",
+    "meaning": "骑自行车的人/自行车手",
+    "example": "The cyclist rode fifty miles in one day.",
+    "exampleCn": "这位自行车手一天骑了五十英里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24",
+      "36"
+    ]
+  },
+  {
+    "id": 4710,
+    "word": "aviation",
+    "phonetic": "ˌeɪviˈeɪʃn",
+    "pos": "n.",
+    "meaning": "航空/飞行",
+    "example": "The aviation industry is growing rapidly.",
+    "exampleCn": "航空业正在迅速发展。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4711,
+    "word": "journey",
+    "phonetic": "ˈdʒɜːni",
+    "pos": "n.",
+    "meaning": "旅行/旅程",
+    "example": "The journey from London to Paris takes about two hours.",
+    "exampleCn": "从伦敦到巴黎的旅程大约需要两个小时。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4712,
+    "word": "safari",
+    "phonetic": "səˈfɑːri",
+    "pos": "n.",
+    "meaning": "狩猎旅行/游猎",
+    "example": "They went on a safari to see wild animals in Africa.",
+    "exampleCn": "他们去非洲游猎观赏野生动物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4713,
+    "word": "haunt",
+    "phonetic": "hɔːnt",
+    "pos": "v.",
+    "meaning": "经常出没于/萦绕",
+    "example": "The memory of the accident still haunts him.",
+    "exampleCn": "那次事故的记忆仍然萦绕着他。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4714,
+    "word": "attraction",
+    "phonetic": "əˈtrækʃn",
+    "pos": "n.",
+    "meaning": "景点/吸引力",
+    "example": "The theme park is a popular tourist attraction.",
+    "exampleCn": "主题公园是一个受欢迎的旅游景点。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4715,
+    "word": "attractive",
+    "phonetic": "əˈtræktɪv",
+    "pos": "adj.",
+    "meaning": "有吸引力的/吸引人的",
+    "example": "The hotel is in a very attractive location.",
+    "exampleCn": "酒店的位置非常吸引人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4716,
+    "word": "monumental",
+    "phonetic": "ˌmɒnjʊˈmentl",
+    "pos": "adj.",
+    "meaning": "巨大的/纪念碑似的",
+    "example": "The new bridge is a monumental engineering achievement.",
+    "exampleCn": "新桥是一个巨大的工程成就。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4717,
+    "word": "pharaoh",
+    "phonetic": "ˈfeərəʊ",
+    "pos": "n.",
+    "meaning": "法老",
+    "example": "The pharaoh was the ruler of ancient Egypt.",
+    "exampleCn": "法老是古埃及的统治者。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4718,
+    "word": "traffic regulations",
+    "phonetic": "",
+    "pos": "n.",
+    "meaning": "交通规则",
+    "example": "Drivers must obey traffic regulations.",
+    "exampleCn": "司机必须遵守交通规则。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4719,
+    "word": "traffic jam",
+    "phonetic": "",
+    "pos": "n.",
+    "meaning": "交通堵塞",
+    "example": "We were stuck in a traffic jam for over an hour.",
+    "exampleCn": "我们在交通堵塞中被堵了一个多小时。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4720,
+    "word": "traffic congestion",
+    "phonetic": "",
+    "pos": "n.",
+    "meaning": "交通拥堵",
+    "example": "Traffic congestion is a major problem in big cities.",
+    "exampleCn": "交通拥堵是大城市的一个主要问题。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4721,
+    "word": "aeroplane",
+    "phonetic": "ˈeərəpleɪn",
+    "pos": "n.",
+    "meaning": "飞机",
+    "example": "The aeroplane took off smoothly into the sky.",
+    "exampleCn": "飞机平稳地飞上了天空。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4722,
+    "word": "helicopter",
+    "phonetic": "ˈhelɪkɒptə",
+    "pos": "n.",
+    "meaning": "直升机",
+    "example": "A helicopter landed on the roof of the hospital.",
+    "exampleCn": "一架直升机降落在医院楼顶。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4723,
+    "word": "jet",
+    "phonetic": "dʒet",
+    "pos": "n.",
+    "meaning": "喷气式飞机/喷射",
+    "example": "They flew to Tokyo in a private jet.",
+    "exampleCn": "他们乘坐私人飞机飞往东京。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4724,
+    "word": "parachute",
+    "phonetic": "ˈpærəʃuːt",
+    "pos": "n.",
+    "meaning": "降落伞",
+    "example": "The skydiver opened her parachute at the right moment.",
+    "exampleCn": "跳伞者在恰当的时机打开了降落伞。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4725,
+    "word": "pilot",
+    "phonetic": "ˈpaɪlət",
+    "pos": "n.",
+    "meaning": "飞行员/领航员",
+    "example": "The pilot announced that the flight would be delayed.",
+    "exampleCn": "飞行员宣布航班将延误。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4726,
+    "word": "baggage",
+    "phonetic": "ˈbæɡɪdʒ",
+    "pos": "n.",
+    "meaning": "行李",
+    "example": "We collected our baggage from the carousel.",
+    "exampleCn": "我们从传送带上取回了行李。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4727,
+    "word": "luggage",
+    "phonetic": "ˈlʌɡɪdʒ",
+    "pos": "n.",
+    "meaning": "行李/箱包",
+    "example": "Passengers are allowed one piece of hand luggage.",
+    "exampleCn": "乘客可携带一件手提行李。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4728,
+    "word": "suitcase",
+    "phonetic": "ˈsuːtkeɪs",
+    "pos": "n.",
+    "meaning": "手提箱/行李箱",
+    "example": "She packed a suitcase for the weekend trip.",
+    "exampleCn": "她为周末旅行收拾了一个行李箱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4729,
+    "word": "carry-on",
+    "phonetic": "ˈkæri ɒn",
+    "pos": "n.",
+    "meaning": "随身行李",
+    "example": "You can take one carry-on bag onto the plane.",
+    "exampleCn": "你可以携带一件随身行李上飞机。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4730,
+    "word": "rack",
+    "phonetic": "ræk",
+    "pos": "n.",
+    "meaning": "行李架/架子",
+    "example": "He put his suitcase on the luggage rack.",
+    "exampleCn": "他把行李箱放在了行李架上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4731,
+    "word": "freighter",
+    "phonetic": "ˈfreɪtə",
+    "pos": "n.",
+    "meaning": "货船/运输机",
+    "example": "The freighter carried containers across the ocean.",
+    "exampleCn": "货船装载着集装箱穿过大洋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4732,
+    "word": "fare",
+    "phonetic": "feə",
+    "pos": "n.",
+    "meaning": "票价/车费",
+    "example": "The bus fare has increased this month.",
+    "exampleCn": "这个月公交车费上涨了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4733,
+    "word": "itinerary",
+    "phonetic": "aɪˈtɪnərəri",
+    "pos": "n.",
+    "meaning": "行程/旅行计划",
+    "example": "We planned a detailed itinerary for the trip.",
+    "exampleCn": "我们为旅行制定了详细的行程。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4734,
+    "word": "passage",
+    "phonetic": "ˈpæsɪdʒ",
+    "pos": "n.",
+    "meaning": "通道/段落/航程",
+    "example": "They booked a passage on a ship to New York.",
+    "exampleCn": "他们预订了去纽约的船票。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4735,
+    "word": "intersection",
+    "phonetic": "ˌɪntəˈsekʃn",
+    "pos": "n.",
+    "meaning": "十字路口/交叉点",
+    "example": "Turn left at the next intersection.",
+    "exampleCn": "在下一个十字路口向左转。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4736,
+    "word": "path",
+    "phonetic": "pɑːθ",
+    "pos": "n.",
+    "meaning": "小路/路径",
+    "example": "They walked along a narrow path through the woods.",
+    "exampleCn": "他们沿着一条狭窄的小路穿过树林。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4737,
+    "word": "lane",
+    "phonetic": "leɪn",
+    "pos": "n.",
+    "meaning": "车道/小巷",
+    "example": "The country lanes are quiet and narrow.",
+    "exampleCn": "乡间小路又窄又安静。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4738,
+    "word": "avenue",
+    "phonetic": "ˈævɪnjuː",
+    "pos": "n.",
+    "meaning": "大道/林荫道",
+    "example": "They walked down the tree-lined avenue.",
+    "exampleCn": "他们沿着林荫大道走下去。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4739,
+    "word": "curb",
+    "phonetic": "kɜːb",
+    "pos": "n.",
+    "meaning": "路缘/抑制",
+    "example": "He parked the car close to the curb.",
+    "exampleCn": "他把车紧靠路缘停下了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4740,
+    "word": "signpost",
+    "phonetic": "ˈsaɪnpəʊst",
+    "pos": "n.",
+    "meaning": "路标/指示牌",
+    "example": "Follow the signpost to the city centre.",
+    "exampleCn": "按照路标指示前往市中心。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4741,
+    "word": "pavement",
+    "phonetic": "ˈpeɪvmənt",
+    "pos": "n.",
+    "meaning": "人行道/路面",
+    "example": "Cars are not allowed to park on the pavement.",
+    "exampleCn": "汽车不允许停在人行道上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4742,
+    "word": "vehicle",
+    "phonetic": "ˈviːɪkl",
+    "pos": "n.",
+    "meaning": "车辆/交通工具",
+    "example": "The road was blocked by a parked vehicle.",
+    "exampleCn": "道路被一辆停着的车堵住了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4743,
+    "word": "auto",
+    "phonetic": "ˈɔːtəʊ",
+    "pos": "n.",
+    "meaning": "汽车",
+    "example": "He works in the auto industry.",
+    "exampleCn": "他在汽车行业工作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4744,
+    "word": "express",
+    "phonetic": "ɪkˈspres",
+    "pos": "n./v./adj.",
+    "meaning": "快车/表达/快速的",
+    "example": "She took the express train to London.",
+    "exampleCn": "她乘坐特快列车去伦敦。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4745,
+    "word": "tram",
+    "phonetic": "træm",
+    "pos": "n.",
+    "meaning": "有轨电车",
+    "example": "They took the tram to the city centre.",
+    "exampleCn": "他们坐有轨电车去市中心。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4746,
+    "word": "truck",
+    "phonetic": "trʌk",
+    "pos": "n.",
+    "meaning": "卡车/货车",
+    "example": "The truck delivered goods to the warehouse.",
+    "exampleCn": "卡车把货物运到了仓库。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4747,
+    "word": "lorry",
+    "phonetic": "ˈlɒri",
+    "pos": "n.",
+    "meaning": "卡车/载重货车",
+    "example": "A lorry overturned on the motorway.",
+    "exampleCn": "一辆卡车在高速公路上翻了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4748,
+    "word": "van",
+    "phonetic": "væn",
+    "pos": "n.",
+    "meaning": "厢式货车/面包车",
+    "example": "They moved their furniture in a van.",
+    "exampleCn": "他们用面包车搬了家具。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4749,
+    "word": "carriage",
+    "phonetic": "ˈkærɪdʒ",
+    "pos": "n.",
+    "meaning": "马车/车厢",
+    "example": "They rode in a horse-drawn carriage through the park.",
+    "exampleCn": "他们乘坐马车穿过公园。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4750,
+    "word": "tractor",
+    "phonetic": "ˈtræktə",
+    "pos": "n.",
+    "meaning": "拖拉机/牵引车",
+    "example": "The farmer drove the tractor across the field.",
+    "exampleCn": "农民开着拖拉机穿过田野。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4751,
+    "word": "pedicab",
+    "phonetic": "ˈpedɪkæb",
+    "pos": "n.",
+    "meaning": "人力三轮车",
+    "example": "They toured the old city in a pedicab.",
+    "exampleCn": "他们坐着人力三轮车游览了老城。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4752,
+    "word": "cycle",
+    "phonetic": "ˈsaɪkl",
+    "pos": "n./v.",
+    "meaning": "自行车/循环",
+    "example": "He cycles to work every morning.",
+    "exampleCn": "他每天早上骑车上班。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4753,
+    "word": "garage",
+    "phonetic": "ˈɡærɑːʒ",
+    "pos": "n.",
+    "meaning": "车库/修车厂",
+    "example": "He parked his car in the garage.",
+    "exampleCn": "他把车停进了车库。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4754,
+    "word": "vehicles",
+    "phonetic": "ˈviːɪklz",
+    "pos": "n.",
+    "meaning": "车辆/交通工具",
+    "example": "The road is closed to all vehicles.",
+    "exampleCn": "此路禁止所有车辆通行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4755,
+    "word": "wheel",
+    "phonetic": "wiːl",
+    "pos": "n.",
+    "meaning": "轮子/方向盘",
+    "example": "He turned the steering wheel sharply.",
+    "exampleCn": "他猛地转动了方向盘。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4756,
+    "word": "tire",
+    "phonetic": "ˈtaɪə",
+    "pos": "n.",
+    "meaning": "轮胎",
+    "example": "The car needs a new set of tyres.",
+    "exampleCn": "这辆车需要一套新轮胎。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4757,
+    "word": "honk",
+    "phonetic": "hɒŋk",
+    "pos": "v.",
+    "meaning": "按喇叭/鸣笛",
+    "example": "The driver honked at the car in front.",
+    "exampleCn": "司机对着前面的车按了喇叭。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4758,
+    "word": "steward",
+    "phonetic": "ˈstjuːəd",
+    "pos": "n.",
+    "meaning": "男乘务员/男服务员",
+    "example": "The steward served drinks to the passengers.",
+    "exampleCn": "乘务员为乘客们端上了饮料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4759,
+    "word": "stewardess",
+    "phonetic": "ˌstjuːəˈdes",
+    "pos": "n.",
+    "meaning": "女乘务员/空姐",
+    "example": "The stewardess helped the child fasten the seat belt.",
+    "exampleCn": "空姐帮孩子系好了安全带。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4760,
+    "word": "disappear",
+    "phonetic": "ˌdɪsəˈpɪə",
+    "pos": "v.",
+    "meaning": "消失/不见",
+    "example": "The sun disappeared behind the clouds.",
+    "exampleCn": "太阳消失在云层后面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4761,
+    "word": "hazard",
+    "phonetic": "ˈhæzəd",
+    "pos": "n.",
+    "meaning": "危险/危害",
+    "example": "The icy roads are a hazard to drivers.",
+    "exampleCn": "结冰的道路对司机是一种危险。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4762,
+    "word": "hazardous",
+    "phonetic": "ˈhæzədəs",
+    "pos": "adj.",
+    "meaning": "危险的/有害的",
+    "example": "The disposal of hazardous waste is strictly controlled.",
+    "exampleCn": "有害废物的处置受到严格控制。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  },
+  {
+    "id": 4763,
+    "word": "harbour",
+    "phonetic": "ˈhɑːbə",
+    "pos": "n.",
+    "meaning": "港口/海港",
+    "example": "The fishing boats returned to the harbour.",
+    "exampleCn": "渔船返回了港口。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "36",
+    "ieltsLists": [
+      "36"
+    ]
+  }
+]

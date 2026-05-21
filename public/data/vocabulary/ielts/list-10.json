@@ -573,7 +573,11 @@
     "categories": [
       "ielts"
     ],
-    "ieltsList": "10"
+    "ieltsList": "10",
+    "ieltsLists": [
+      "10",
+      "37"
+    ]
   },
   {
     "id": 3859,
