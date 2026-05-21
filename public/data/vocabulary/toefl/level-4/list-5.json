@@ -375,10 +375,15 @@
     "exampleCn": "市政府建造了一座新的公共图书馆。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 1822,
@@ -405,10 +410,15 @@
     "exampleCn": "请在申请中附上一份护照复印件。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1824,
@@ -602,10 +612,15 @@
     "exampleCn": "老师决定提名她获得这个奖项。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 1837,
@@ -904,10 +919,15 @@
     "exampleCn": "教练在比赛最后几分钟改变了战术。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1856,
@@ -1034,10 +1054,15 @@
     "exampleCn": "老师必须在科学实验期间监督学生。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 1864,
@@ -1140,10 +1165,15 @@
     "exampleCn": "这种药效很强，应该谨慎服用。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 1870,
@@ -1190,10 +1220,15 @@
     "exampleCn": "工厂不得向河流排放污水。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 1873,
@@ -1235,10 +1270,15 @@
     "exampleCn": "疾病迫使他把活动限制在家中。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 1876,
@@ -1507,10 +1547,15 @@
     "exampleCn": "培训项目让工人为各种可能的情景做好准备。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1892,
@@ -1626,9 +1671,14 @@
     "exampleCn": "有力的证据可以迫使人们改变看法。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   }
 ]

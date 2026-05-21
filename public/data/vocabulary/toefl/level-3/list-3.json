@@ -10,10 +10,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 65,
@@ -42,10 +47,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 119,
@@ -217,10 +227,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 421,
@@ -295,10 +310,15 @@
     "exampleCn": "他的心跳不规则。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 685,
@@ -310,10 +330,15 @@
     "exampleCn": "瑞士保持中立。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 686,
@@ -359,10 +384,15 @@
     "exampleCn": "她目击了事故。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 689,
@@ -568,7 +598,8 @@
     "list": "3",
     "ieltsList": "33",
     "ieltsLists": [
-      "33"
+      "33",
+      "39"
     ]
   },
   {
@@ -596,10 +627,15 @@
     "exampleCn": "她站在柜台前。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 704,
@@ -611,10 +647,15 @@
     "exampleCn": "蚂蚁建了一个群体。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 705,
@@ -878,10 +919,15 @@
     "exampleCn": "我们需要互相合作。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 721,
@@ -990,10 +1036,15 @@
     "exampleCn": "社区团结起来了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 728,
@@ -1170,10 +1221,15 @@
     "exampleCn": "他在海外工作。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 740,
@@ -1385,10 +1441,15 @@
     "exampleCn": "他给了我一个暗示。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 753,
@@ -1460,10 +1521,15 @@
     "exampleCn": "盾牌保护了他。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 758,
@@ -1510,10 +1576,15 @@
     "exampleCn": "他们和谐地生活。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 761,
@@ -1615,10 +1686,15 @@
     "exampleCn": "国王统治着国家。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 767,

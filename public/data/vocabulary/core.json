@@ -26,19 +26,6 @@
     ]
   },
   {
-    "id": 15,
-    "word": "account",
-    "phonetic": "/əˈkaʊnt/",
-    "pos": "n.",
-    "meaning": "账户；解释；账目",
-    "example": "He opened a bank account last week.",
-    "exampleCn": "他上周开了一个银行账户。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 26,
     "word": "admire",
     "phonetic": "/ədˈmaɪər/",
@@ -46,19 +33,6 @@
     "meaning": "钦佩，羡慕；赞赏",
     "example": "I admire your courage and determination.",
     "exampleCn": "我钦佩你的勇气和决心。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 27,
-    "word": "admit",
-    "phonetic": "/ədˈmɪt/",
-    "pos": "v.",
-    "meaning": "承认；准许进入",
-    "example": "He admitted making a mistake.",
-    "exampleCn": "他承认犯了一个错误。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -78,32 +52,6 @@
     ]
   },
   {
-    "id": 33,
-    "word": "affect",
-    "phonetic": "/əˈfekt/",
-    "pos": "v.",
-    "meaning": "影响；感动",
-    "example": "The weather can affect your mood.",
-    "exampleCn": "天气会影响你的心情。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 34,
-    "word": "afford",
-    "phonetic": "/əˈfɔːrd/",
-    "pos": "v.",
-    "meaning": "买得起；承担得起",
-    "example": "I can't afford to buy a new car right now.",
-    "exampleCn": "我现在买不起新车。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 35,
     "word": "agency",
     "phonetic": "/ˈeɪdʒənsi/",
@@ -111,32 +59,6 @@
     "meaning": "代理处，机构",
     "example": "She works for a travel agency.",
     "exampleCn": "她在一家旅行社工作。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 39,
-    "word": "agreement",
-    "phonetic": "/əˈɡriːmənt/",
-    "pos": "n.",
-    "meaning": "协议，同意",
-    "example": "They reached an agreement on the terms.",
-    "exampleCn": "他们就条款达成了协议。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 41,
-    "word": "alarm",
-    "phonetic": "/əˈlɑːrm/",
-    "pos": "n./v.",
-    "meaning": "警报；惊恐；使警觉",
-    "example": "The fire alarm went off at midnight.",
-    "exampleCn": "火警在午夜响了。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -182,19 +104,6 @@
     ]
   },
   {
-    "id": 46,
-    "word": "allow",
-    "phonetic": "/əˈlaʊ/",
-    "pos": "v.",
-    "meaning": "允许，准许；承认",
-    "example": "Pets are not allowed in the building.",
-    "exampleCn": "大楼内不允许养宠物。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 49,
     "word": "amaze",
     "phonetic": "/əˈmeɪz/",
@@ -202,19 +111,6 @@
     "meaning": "使吃惊，使惊叹",
     "example": "The magician's tricks amazed the audience.",
     "exampleCn": "魔术师的魔术让观众惊叹不已。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 50,
-    "word": "ambition",
-    "phonetic": "/æmˈbɪʃn/",
-    "pos": "n.",
-    "meaning": "野心，雄心",
-    "example": "Her ambition is to become a doctor.",
-    "exampleCn": "她的志向是成为一名医生。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -390,19 +286,6 @@
     ]
   },
   {
-    "id": 81,
-    "word": "admission",
-    "phonetic": "/ədˈmɪʃn/",
-    "pos": "n.",
-    "meaning": "准许进入；承认",
-    "example": "Admission to the museum is free.",
-    "exampleCn": "博物馆免费入场。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 82,
     "word": "admittance",
     "phonetic": "/ədˈmɪtns/",
@@ -442,19 +325,6 @@
     ]
   },
   {
-    "id": 87,
-    "word": "advertise",
-    "phonetic": "/ˈædvərtaɪz/",
-    "pos": "v.",
-    "meaning": "做广告，宣传",
-    "example": "The company advertised the new product.",
-    "exampleCn": "公司宣传了新产品。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 89,
     "word": "affection",
     "phonetic": "/əˈfekʃn/",
@@ -481,19 +351,6 @@
     ]
   },
   {
-    "id": 91,
-    "word": "affirm",
-    "phonetic": "/əˈfɜːrm/",
-    "pos": "v.",
-    "meaning": "断言，确认；肯定",
-    "example": "The study affirmed our hypothesis.",
-    "exampleCn": "研究证实了我们的假设。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 92,
     "word": "afflict",
     "phonetic": "/əˈflɪkt/",
@@ -501,19 +358,6 @@
     "meaning": "折磨，使痛苦",
     "example": "The disease afflicts millions worldwide.",
     "exampleCn": "这种疾病折磨着全世界数百万人。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 93,
-    "word": "affluent",
-    "phonetic": "/ˈæfluənt/",
-    "pos": "adj.",
-    "meaning": "富裕的，丰富的",
-    "example": "They live in an affluent neighborhood.",
-    "exampleCn": "他们住在一个富裕的社区。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -845,19 +689,6 @@
     ]
   },
   {
-    "id": 148,
-    "word": "anonymous",
-    "phonetic": "/əˈnɑːnɪməs/",
-    "pos": "adj.",
-    "meaning": "匿名的",
-    "example": "The letter was sent anonymously.",
-    "exampleCn": "这封信是匿名发送的。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 149,
     "word": "apart",
     "phonetic": "/əˈpɑːrt/",
@@ -923,32 +754,6 @@
     ]
   },
   {
-    "id": 173,
-    "word": "arrest",
-    "phonetic": "/əˈrest/",
-    "pos": "v./n.",
-    "meaning": "逮捕，拘留",
-    "example": "The police arrested the suspect.",
-    "exampleCn": "警察逮捕了嫌疑人。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 180,
-    "word": "assist",
-    "phonetic": "/əˈsɪst/",
-    "pos": "v.",
-    "meaning": "帮助，协助",
-    "example": "Can I assist you with anything?",
-    "exampleCn": "我可以帮您什么吗？",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 183,
     "word": "assure",
     "phonetic": "/əˈʃʊr/",
@@ -956,19 +761,6 @@
     "meaning": "保证，确保",
     "example": "I assure you everything will be fine.",
     "exampleCn": "我向你保证一切都会好的。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 190,
-    "word": "attend",
-    "phonetic": "/əˈtend/",
-    "pos": "v.",
-    "meaning": "参加，出席",
-    "example": "Did you attend the meeting yesterday?",
-    "exampleCn": "你昨天参加会议了吗？",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -995,19 +787,6 @@
     "meaning": "观众，听众",
     "example": "The audience clapped after the performance.",
     "exampleCn": "表演结束后观众鼓掌。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 194,
-    "word": "authority",
-    "phonetic": "/ɔːˈθɔːrəti/",
-    "pos": "n.",
-    "meaning": "权威，当局",
-    "example": "The local authority approved the plan.",
-    "exampleCn": "地方当局批准了这个计划。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -1209,19 +988,6 @@
     ]
   },
   {
-    "id": 228,
-    "word": "behalf",
-    "phonetic": "/bɪˈhæf/",
-    "pos": "n.",
-    "meaning": "代表",
-    "example": "I'm speaking on behalf of the team.",
-    "exampleCn": "我代表团队发言。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 229,
     "word": "believe",
     "phonetic": "/bɪˈliːv/",
@@ -1261,19 +1027,6 @@
     ]
   },
   {
-    "id": 238,
-    "word": "benefit",
-    "phonetic": "/ˈbenɪfɪt/",
-    "pos": "n./v.",
-    "meaning": "好处，利益；受益",
-    "example": "The new policy will benefit everyone.",
-    "exampleCn": "新政策将使每个人受益。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 240,
     "word": "beside",
     "phonetic": "/bɪˈsaɪd/",
@@ -1284,19 +1037,6 @@
     "category": "cet4",
     "categories": [
       "cet4"
-    ]
-  },
-  {
-    "id": 241,
-    "word": "betray",
-    "phonetic": "/bɪˈtreɪ/",
-    "pos": "v.",
-    "meaning": "背叛，出卖",
-    "example": "He felt betrayed by his best friend.",
-    "exampleCn": "他感到被他最好的朋友背叛了。",
-    "category": "daily",
-    "categories": [
-      "daily"
     ]
   },
   {
@@ -1378,19 +1118,6 @@
     ]
   },
   {
-    "id": 256,
-    "word": "blame",
-    "phonetic": "/bleɪm/",
-    "pos": "v./n.",
-    "meaning": "责备；责任",
-    "example": "Don't blame others for your mistakes.",
-    "exampleCn": "不要为你的错误责怪别人。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 259,
     "word": "bleed",
     "phonetic": "/bliːd/",
@@ -1463,19 +1190,6 @@
     "meaning": "女衬衫",
     "example": "She wore a silk blouse to work.",
     "exampleCn": "她穿了一件丝质衬衫去上班。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 269,
-    "word": "blueprint",
-    "phonetic": "/ˈbluːprɪnt/",
-    "pos": "n.",
-    "meaning": "蓝图，计划",
-    "example": "The architect showed us the blueprint.",
-    "exampleCn": "建筑师给我们看了蓝图。",
     "category": "daily",
     "categories": [
       "daily"
@@ -1899,19 +1613,6 @@
     ]
   },
   {
-    "id": 331,
-    "word": "bullet",
-    "phonetic": "/ˈbʊlɪt/",
-    "pos": "n.",
-    "meaning": "子弹",
-    "example": "The bullet hit the target.",
-    "exampleCn": "子弹击中了目标。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 332,
     "word": "bump",
     "phonetic": "/bʌmp/",
@@ -2159,19 +1860,6 @@
     ]
   },
   {
-    "id": 376,
-    "word": "career",
-    "phonetic": "/kəˈrɪr/",
-    "pos": "n.",
-    "meaning": "职业，事业",
-    "example": "She wants a career in medicine.",
-    "exampleCn": "她想在医学领域发展事业。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 377,
     "word": "careful",
     "phonetic": "/ˈkerfl/",
@@ -2380,19 +2068,6 @@
     ]
   },
   {
-    "id": 412,
-    "word": "chance",
-    "phonetic": "/tʃæns/",
-    "pos": "n.",
-    "meaning": "机会；可能性",
-    "example": "Don't miss this chance.",
-    "exampleCn": "不要错过这个机会。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 413,
     "word": "change",
     "phonetic": "/tʃeɪndʒ/",
@@ -2468,19 +2143,6 @@
     "category": "cet4",
     "categories": [
       "cet4"
-    ]
-  },
-  {
-    "id": 425,
-    "word": "cheat",
-    "phonetic": "/tʃiːt/",
-    "pos": "v.",
-    "meaning": "欺骗，作弊",
-    "example": "He cheated on the exam.",
-    "exampleCn": "他考试作弊。",
-    "category": "daily",
-    "categories": [
-      "daily"
     ]
   },
   {
@@ -2601,19 +2263,6 @@
     ]
   },
   {
-    "id": 443,
-    "word": "choose",
-    "phonetic": "/tʃuːz/",
-    "pos": "v.",
-    "meaning": "选择",
-    "example": "Choose the correct answer.",
-    "exampleCn": "选择正确答案。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 447,
     "word": "cinema",
     "phonetic": "/ˈsɪnəmə/",
@@ -2650,19 +2299,6 @@
     "category": "cet4",
     "categories": [
       "cet4"
-    ]
-  },
-  {
-    "id": 456,
-    "word": "claim",
-    "phonetic": "/kleɪm/",
-    "pos": "v.",
-    "meaning": "声称；索赔",
-    "example": "He claimed to be innocent.",
-    "exampleCn": "他声称自己是无辜的。",
-    "category": "cet6",
-    "categories": [
-      "cet6"
     ]
   },
   {
@@ -2715,19 +2351,6 @@
     "category": "cet4",
     "categories": [
       "cet4"
-    ]
-  },
-  {
-    "id": 463,
-    "word": "clerk",
-    "phonetic": "/klɜːrk/",
-    "pos": "n.",
-    "meaning": "职员；店员",
-    "example": "The clerk helped me find the product.",
-    "exampleCn": "店员帮我找到了产品。",
-    "category": "daily",
-    "categories": [
-      "daily"
     ]
   },
   {
@@ -2926,19 +2549,6 @@
     ]
   },
   {
-    "id": 485,
-    "word": "coin",
-    "phonetic": "/kɔɪn/",
-    "pos": "n.",
-    "meaning": "硬币",
-    "example": "He flipped a coin to decide.",
-    "exampleCn": "他抛硬币决定。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 486,
     "word": "cold",
     "phonetic": "/koʊld/",
@@ -2975,19 +2585,6 @@
     "category": "cet4",
     "categories": [
       "cet4"
-    ]
-  },
-  {
-    "id": 498,
-    "word": "comfort",
-    "phonetic": "/ˈkʌmfət/",
-    "pos": "n./v.",
-    "meaning": "舒适；安慰",
-    "example": "The hotel offers comfort and luxury.",
-    "exampleCn": "这家酒店提供舒适和奢华。",
-    "category": "daily",
-    "categories": [
-      "daily"
     ]
   }
 ]

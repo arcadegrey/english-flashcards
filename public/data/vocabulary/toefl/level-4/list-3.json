@@ -116,10 +116,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 500,
@@ -167,10 +172,15 @@
     "exampleCn": "火车在车站外突然停了下来。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1626,
@@ -509,10 +519,15 @@
     "exampleCn": "新证据帮助驳斥了旧理论。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1647,
@@ -1199,10 +1214,15 @@
     "exampleCn": "游客不应该闯入私人财产。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 1690,
@@ -1339,10 +1359,15 @@
     "exampleCn": "这两家公司是科技市场上的竞争对手。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1698,
@@ -1399,10 +1424,15 @@
     "exampleCn": "毕业后找到工作的前景有所改善。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 1702,
@@ -1619,9 +1649,14 @@
     "exampleCn": "学校将实施一个新的阅读项目。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   }
 ]

@@ -80,10 +80,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 592,
@@ -96,10 +101,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 2533,
@@ -233,7 +243,8 @@
     "list": "2",
     "ieltsList": "8",
     "ieltsLists": [
-      "8"
+      "8",
+      "38"
     ]
   },
   {
@@ -766,10 +777,15 @@
     "exampleCn": "旅行可以改变一个人的视角。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 2574,
@@ -1503,10 +1519,15 @@
     "exampleCn": "革命后旧政权崩溃了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 2621,

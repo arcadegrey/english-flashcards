@@ -203,10 +203,15 @@
     "exampleCn": "许多人在贫困国家挨饿。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 771,
@@ -288,10 +293,15 @@
     "exampleCn": "每个人都是独特的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 776,
@@ -354,10 +364,15 @@
     "exampleCn": "这个国家进口石油。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 780,
@@ -389,10 +404,15 @@
     "exampleCn": "这是个特殊场合。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 782,
@@ -814,10 +834,15 @@
     "exampleCn": "罗马建筑令人印象深刻。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 807,
@@ -989,10 +1014,15 @@
     "exampleCn": "设定高标准。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 818,
@@ -1234,10 +1264,15 @@
     "exampleCn": "他的职业是医生。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 833,
@@ -1516,10 +1551,15 @@
     "exampleCn": "广告时间要到了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 849,
@@ -1576,10 +1616,15 @@
     "exampleCn": "这家店零售服装。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 853,

@@ -686,10 +686,15 @@
     "exampleCn": "记者开始连续向科学家提问。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 3375,

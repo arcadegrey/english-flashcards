@@ -1,0 +1,1103 @@
+[
+  {
+    "id": 258,
+    "word": "blast",
+    "phonetic": "/blæst/",
+    "pos": "n./v.",
+    "meaning": "爆炸/强风/猛烈抨击/炸开",
+    "example": "The blast damaged several buildings.",
+    "exampleCn": "爆炸损坏了几栋建筑。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 290,
+    "word": "bow",
+    "phonetic": "/baʊ/",
+    "pos": "v./n.",
+    "meaning": "鞠躬；弓",
+    "example": "The actor took a bow after the show.",
+    "exampleCn": "演员在演出结束后鞠躬致谢。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24",
+      "37",
+      "46"
+    ]
+  },
+  {
+    "id": 331,
+    "word": "bullet",
+    "phonetic": "/ˈbʊlɪt/",
+    "pos": "n.",
+    "meaning": "子弹",
+    "example": "The bullet hit the target.",
+    "exampleCn": "子弹击中了目标。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 337,
+    "word": "burst",
+    "phonetic": "/bɜːrst/",
+    "pos": "v./n.",
+    "meaning": "爆裂/突然爆发",
+    "example": "The pipe burst after the temperature dropped.",
+    "exampleCn": "气温下降后水管爆裂了。",
+    "category": "cet6",
+    "categories": [
+      "cet6",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 360,
+    "word": "campaign",
+    "phonetic": "/kæmˈpeɪn/",
+    "pos": "n./v.",
+    "meaning": "运动/竞选/开展活动",
+    "example": "The campaign encouraged people to recycle more.",
+    "exampleCn": "这项活动鼓励人们更多地回收利用。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 444,
+    "word": "chop",
+    "phonetic": "/tʃɑːp/",
+    "pos": "v./n.",
+    "meaning": "砍/切/猪排",
+    "example": "She used a knife to chop the vegetables.",
+    "exampleCn": "她用刀切蔬菜。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 561,
+    "word": "seize",
+    "phonetic": "/siːz/",
+    "pos": "v.",
+    "meaning": "抓住；夺取； seized",
+    "example": "The police seized the illegal drugs.",
+    "exampleCn": "警察收缴了非法毒品。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 617,
+    "word": "target",
+    "phonetic": "/ˈtɑːɡɪt/",
+    "pos": "n./v.",
+    "meaning": "目标；把...作为目标",
+    "example": "We need to set realistic targets.",
+    "exampleCn": "我们需要设定现实的目标。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 757,
+    "word": "shield",
+    "phonetic": "/ʃiːld/",
+    "pos": "n./v.",
+    "meaning": "盾牌；保护",
+    "example": "The shield protected him.",
+    "exampleCn": "盾牌保护了他。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 770,
+    "word": "starve",
+    "phonetic": "/stɑːv/",
+    "pos": "v.",
+    "meaning": "挨饿；使挨饿；渴望",
+    "example": "Many people starve in poor countries.",
+    "exampleCn": "许多人在贫困国家挨饿。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 914,
+    "word": "pursue",
+    "phonetic": "/pərˈsuː/",
+    "pos": "v.",
+    "meaning": "追求；继续进行",
+    "example": "She decided to pursue a career in medicine.",
+    "exampleCn": "她决定从事医学职业。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 959,
+    "word": "invade",
+    "phonetic": "/ɪnˈveɪd/",
+    "pos": "v.",
+    "meaning": "侵略，入侵/侵扰",
+    "example": "The army invaded the neighboring country./Loud music invaded the quiet room.",
+    "exampleCn": "军队入侵了邻国。/吵闹的音乐打破了房间的宁静。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 1084,
+    "word": "explode",
+    "phonetic": "/ɪkˈsploʊd/",
+    "pos": "v.",
+    "meaning": "爆炸/激增",
+    "example": "The bomb might explode at any moment./The population exploded after 1950.",
+    "exampleCn": "炸弹可能随时爆炸。/1950年后人口激增。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 1244,
+    "word": "conflict",
+    "phonetic": "/ˈkɑːnflɪkt/;/kənˈflɪkt/",
+    "pos": "n./v.",
+    "meaning": "冲突；矛盾/冲突",
+    "example": "The two reports are in conflict with each other.",
+    "exampleCn": "这两份报告彼此矛盾。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 1264,
+    "word": "flame",
+    "phonetic": "/fleɪm/",
+    "pos": "n./v.",
+    "meaning": "火焰/燃烧；激起",
+    "example": "The flame grew stronger as the wind increased.",
+    "exampleCn": "随着风变大，火焰烧得更旺了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 1309,
+    "word": "deprive",
+    "phonetic": "/dɪˈpraɪv/",
+    "pos": "v.",
+    "meaning": "剥夺；使丧失",
+    "example": "Lack of sleep can deprive students of concentration.",
+    "exampleCn": "睡眠不足会使学生失去专注力。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 1346,
+    "word": "twinkle",
+    "phonetic": "/ˈtwɪŋkəl/",
+    "pos": "v./n.",
+    "meaning": "闪烁/闪光",
+    "example": "The stars twinkled in the clear night sky.",
+    "exampleCn": "星星在晴朗的夜空中闪烁。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 1555,
+    "word": "violate",
+    "phonetic": "/ˈvaɪəleɪt/",
+    "pos": "v.",
+    "meaning": "违反/侵犯",
+    "example": "The company was fined for violating environmental regulations.",
+    "exampleCn": "这家公司因违反环境法规而被罚款。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 1602,
+    "word": "stab",
+    "phonetic": "/stæb/",
+    "pos": "v./n.",
+    "meaning": "刺/戳/刺伤",
+    "example": "The thorn stabbed his finger as he picked the fruit.",
+    "exampleCn": "他摘水果时，刺扎到了他的手指。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 1689,
+    "word": "intrude",
+    "phonetic": "/ɪnˈtruːd/",
+    "pos": "v.",
+    "meaning": "闯入/打扰",
+    "example": "Tourists should not intrude on private property.",
+    "exampleCn": "游客不应该闯入私人财产。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 2170,
+    "word": "spark",
+    "phonetic": "/spɑːrk/",
+    "pos": "n./v.",
+    "meaning": "火花/引发/激发",
+    "example": "A small spark started the fire.",
+    "exampleCn": "一个小火花引发了火灾。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 2278,
+    "word": "explosion",
+    "phonetic": "/ɪkˈsploʊʒən/",
+    "pos": "n.",
+    "meaning": "爆炸/激增",
+    "example": "The explosion of online learning changed education quickly.",
+    "exampleCn": "在线学习的激增迅速改变了教育。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 2491,
+    "word": "dilemma",
+    "phonetic": "/dɪˈlemə/",
+    "pos": "n.",
+    "meaning": "困境/两难选择",
+    "example": "The manager faced a difficult dilemma.",
+    "exampleCn": "经理面临一个困难的两难局面。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 3064,
+    "word": "strike",
+    "phonetic": "/straɪk/",
+    "pos": "v./n.",
+    "meaning": "打击/罢工/袭击/击中/罢工行动",
+    "example": "The workers decided to strike for better pay.",
+    "exampleCn": "工人们决定罢工以争取更好的薪水。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 3313,
+    "word": "famine",
+    "phonetic": "/ˈfæmɪn/",
+    "pos": "n.",
+    "meaning": "饥荒",
+    "example": "The drought caused a severe famine in the region.",
+    "exampleCn": "干旱导致该地区发生严重饥荒。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "10",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 3374,
+    "word": "bombard",
+    "phonetic": "/bɑːmˈbɑːrd/",
+    "pos": "v.",
+    "meaning": "轰炸/连续攻击/大量提问或提供信息",
+    "example": "Reporters began to bombard the scientist with questions.",
+    "exampleCn": "记者开始连续向科学家提问。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "6",
+    "list": "1",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 4627,
+    "word": "beat",
+    "phonetic": "biːt",
+    "pos": "v.",
+    "meaning": "搅打/打蛋",
+    "example": "Beat the eggs and add them to the mixture.",
+    "exampleCn": "打散蛋并加入混合物中。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "32",
+    "ieltsLists": [
+      "32",
+      "46"
+    ]
+  },
+  {
+    "id": 5057,
+    "word": "violence",
+    "phonetic": "ˈvaɪələns",
+    "pos": "n.",
+    "meaning": "暴力/暴行",
+    "example": "The government called for an end to the violence.",
+    "exampleCn": "政府呼吁结束暴力。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5058,
+    "word": "raid",
+    "phonetic": "reɪd",
+    "pos": "n./v.",
+    "meaning": "突袭/搜查",
+    "example": "Police carried out a raid on the suspect's house.",
+    "exampleCn": "警方对嫌疑人住所进行了突击搜查。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5059,
+    "word": "enormity",
+    "phonetic": "ɪˈnɔːməti",
+    "pos": "n.",
+    "meaning": "巨大/严重性",
+    "example": "The enormity of the disaster shocked the world.",
+    "exampleCn": "灾难的严重性震惊了世界。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5060,
+    "word": "battle",
+    "phonetic": "ˈbætl",
+    "pos": "n.",
+    "meaning": "战斗/战役/斗争",
+    "example": "Many soldiers died in the battle.",
+    "exampleCn": "许多士兵在那场战斗中阵亡。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5061,
+    "word": "struggle",
+    "phonetic": "ˈstrʌɡl",
+    "pos": "n./v.",
+    "meaning": "挣扎/斗争/奋斗",
+    "example": "She struggled to free herself from the ropes.",
+    "exampleCn": "她挣扎着从绳索中挣脱出来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5062,
+    "word": "gunpowder",
+    "phonetic": "ˈɡʌnpaʊdə",
+    "pos": "n.",
+    "meaning": "火药",
+    "example": "Gunpowder was invented in ancient China.",
+    "exampleCn": "火药是中国古代发明的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5063,
+    "word": "cannon",
+    "phonetic": "ˈkænən",
+    "pos": "n.",
+    "meaning": "大炮/加农炮",
+    "example": "The old cannon still stands in the town square.",
+    "exampleCn": "那门旧大炮仍然矗立在镇广场上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5064,
+    "word": "missile",
+    "phonetic": "ˈmɪsaɪl",
+    "pos": "n.",
+    "meaning": "导弹/飞射物",
+    "example": "The country tested a long-range missile.",
+    "exampleCn": "该国测试了一枚远程导弹。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5065,
+    "word": "weapon",
+    "phonetic": "ˈwepən",
+    "pos": "n.",
+    "meaning": "武器/兵器",
+    "example": "The police found several illegal weapons in the house.",
+    "exampleCn": "警方在屋里发现了几件非法武器。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5066,
+    "word": "pistol",
+    "phonetic": "ˈpɪstl",
+    "pos": "n.",
+    "meaning": "手枪",
+    "example": "The officer drew his pistol and fired a warning shot.",
+    "exampleCn": "警官拔出手枪鸣枪警告。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5067,
+    "word": "rifle",
+    "phonetic": "ˈraɪfl",
+    "pos": "n.",
+    "meaning": "步枪/来福枪",
+    "example": "The soldier cleaned his rifle before the mission.",
+    "exampleCn": "士兵在任务前擦干净了步枪。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5068,
+    "word": "deflect",
+    "phonetic": "dɪˈflekt",
+    "pos": "v.",
+    "meaning": "使偏转/使偏离",
+    "example": "The shield deflected the arrow.",
+    "exampleCn": "盾牌挡飞了箭。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5069,
+    "word": "mission",
+    "phonetic": "ˈmɪʃn",
+    "pos": "n.",
+    "meaning": "任务/使命",
+    "example": "The soldiers were sent on a dangerous mission.",
+    "exampleCn": "士兵们被派去执行一项危险任务。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5070,
+    "word": "flare",
+    "phonetic": "fleə",
+    "pos": "n./v.",
+    "meaning": "火焰/闪光/爆发",
+    "example": "A flare was sent up as a distress signal.",
+    "exampleCn": "一发信号弹被升起作为求救信号。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5071,
+    "word": "glitter",
+    "phonetic": "ˈɡlɪtə",
+    "pos": "v.",
+    "meaning": "闪烁/闪闪发光",
+    "example": "The necklace glittered under the lights.",
+    "exampleCn": "项链在灯光下闪闪发光。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5072,
+    "word": "sword",
+    "phonetic": "sɔːd",
+    "pos": "n.",
+    "meaning": "剑/刀",
+    "example": "The knight drew his sword and charged forward.",
+    "exampleCn": "骑士拔出剑向前冲锋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5073,
+    "word": "ax",
+    "phonetic": "æks",
+    "pos": "n.",
+    "meaning": "斧头/斧子",
+    "example": "He chopped the wood with an ax.",
+    "exampleCn": "他用一把斧头劈了木头。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5074,
+    "word": "hammer",
+    "phonetic": "ˈhæmə",
+    "pos": "n.",
+    "meaning": "锤子/榔头",
+    "example": "She used a hammer to knock the nail into the wall.",
+    "exampleCn": "她用锤子把钉子敲进墙里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5075,
+    "word": "arrow",
+    "phonetic": "ˈærəʊ",
+    "pos": "n.",
+    "meaning": "箭/箭头",
+    "example": "The arrow flew straight and hit the target.",
+    "exampleCn": "箭径直飞去击中了目标。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5076,
+    "word": "spear",
+    "phonetic": "spɪə",
+    "pos": "n.",
+    "meaning": "矛/长枪",
+    "example": "The warrior threw his spear with great force.",
+    "exampleCn": "战士用力把矛投了出去。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5077,
+    "word": "helmet",
+    "phonetic": "ˈhelmɪt",
+    "pos": "n.",
+    "meaning": "头盔/安全帽",
+    "example": "Always wear a helmet when riding a motorbike.",
+    "exampleCn": "骑摩托车时要始终戴头盔。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5078,
+    "word": "equip",
+    "phonetic": "ɪˈkwɪp",
+    "pos": "v.",
+    "meaning": "装备/配备",
+    "example": "The soldiers were equipped with the latest weapons.",
+    "exampleCn": "士兵们配备了最新的武器。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5079,
+    "word": "prepare",
+    "phonetic": "prɪˈpeə",
+    "pos": "v.",
+    "meaning": "准备/预备",
+    "example": "She prepared a meal for the guests.",
+    "exampleCn": "她为客人们准备了一顿饭。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5080,
+    "word": "provide",
+    "phonetic": "prəˈvaɪd",
+    "pos": "v.",
+    "meaning": "提供/供应",
+    "example": "The hotel provides free Wi-Fi for guests.",
+    "exampleCn": "酒店为客人提供免费无线网络。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5081,
+    "word": "deploy",
+    "phonetic": "dɪˈplɔɪ",
+    "pos": "v.",
+    "meaning": "部署/调度",
+    "example": "Troops were deployed along the border.",
+    "exampleCn": "部队已部署在边境线上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5082,
+    "word": "punch",
+    "phonetic": "pʌntʃ",
+    "pos": "v./n.",
+    "meaning": "拳打/打孔",
+    "example": "He punched the wall in anger.",
+    "exampleCn": "他生气地用拳打墙。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5083,
+    "word": "plight",
+    "phonetic": "plaɪt",
+    "pos": "n.",
+    "meaning": "困境/苦难",
+    "example": "The public was moved by the plight of the refugees.",
+    "exampleCn": "公众被难民的困境所打动。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5084,
+    "word": "pitfall",
+    "phonetic": "ˈpɪtfɔːl",
+    "pos": "n.",
+    "meaning": "陷阱/隐患",
+    "example": "There are many pitfalls in starting a new business.",
+    "exampleCn": "创办新企业有许多陷阱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5085,
+    "word": "conspiracy",
+    "phonetic": "kənˈspɪrəsi",
+    "pos": "n.",
+    "meaning": "阴谋/共谋",
+    "example": "They were accused of conspiracy to commit murder.",
+    "exampleCn": "他们被控阴谋杀人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5086,
+    "word": "destitute",
+    "phonetic": "ˈdestɪtjuːt",
+    "pos": "adj.",
+    "meaning": "赤贫的/一无所有的",
+    "example": "The drought left many farmers destitute.",
+    "exampleCn": "干旱让许多农民一贫如洗。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5087,
+    "word": "threat",
+    "phonetic": "θret",
+    "pos": "n.",
+    "meaning": "威胁/恐吓",
+    "example": "The floods posed a serious threat to the village.",
+    "exampleCn": "洪水对村庄构成了严重威胁。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5088,
+    "word": "trespass",
+    "phonetic": "ˈtrespəs",
+    "pos": "v.",
+    "meaning": "侵入/擅自闯入",
+    "example": "He was fined for trespassing on private land.",
+    "exampleCn": "他因擅自闯入私人土地被罚款。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5089,
+    "word": "attack",
+    "phonetic": "əˈtæk",
+    "pos": "n./v.",
+    "meaning": "攻击/袭击",
+    "example": "A man was attacked by a dog in the park.",
+    "exampleCn": "一名男子在公园里被狗袭击了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  }
+]

@@ -319,10 +319,15 @@
     "exampleCn": "市民将在下个月选举一位新市长。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 1339,
@@ -444,10 +449,15 @@
     "exampleCn": "星星在晴朗的夜空中闪烁。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 1347,
@@ -489,10 +499,15 @@
     "exampleCn": "没有证据表明这个理论是正确的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1350,
@@ -546,7 +561,8 @@
     "list": "10",
     "ieltsList": "33",
     "ieltsLists": [
-      "33"
+      "33",
+      "39"
     ]
   },
   {
@@ -576,10 +592,15 @@
     "exampleCn": "科学家继续调查这种疾病的成因。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 1355,
@@ -910,10 +931,15 @@
     "exampleCn": "这家公司今年报告了稳定增长。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 1374,
@@ -990,10 +1016,15 @@
     "exampleCn": "政府推出了重大教育改革。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 1379,
@@ -1305,10 +1336,15 @@
     "exampleCn": "假期结束后销售开始下降。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 1398,
@@ -1445,10 +1481,15 @@
     "exampleCn": "这场活动旨在团结当地社区。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 1407,
@@ -1727,10 +1768,15 @@
     "exampleCn": "饮食与健康之间有明显关联。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 1424,
@@ -1834,10 +1880,15 @@
     "exampleCn": "公司的收入增长了15%。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 1430,

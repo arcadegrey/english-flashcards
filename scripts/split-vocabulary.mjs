@@ -76,6 +76,18 @@ const getIeltsTopicMeta = (list) => {
     if (numericList >= 36 && numericList <= 37) {
       return { key: 'transport-travel', label: '交通旅游' };
     }
+    if (numericList >= 38 && numericList <= 40) {
+      return { key: 'nation-government', label: '国家政府' };
+    }
+    if (numericList >= 41 && numericList <= 43) {
+      return { key: 'society-economy', label: '社会经济' };
+    }
+    if (numericList >= 44 && numericList <= 45) {
+      return { key: 'law-regulation', label: '法律法规' };
+    }
+    if (numericList >= 46 && numericList <= 47) {
+      return { key: 'warfare-battlefield', label: '征战沙场' };
+    }
   }
 
   return { key: 'unknown', label: '未分主题' };

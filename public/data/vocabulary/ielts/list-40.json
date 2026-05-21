@@ -1,0 +1,1082 @@
+[
+  {
+    "id": 27,
+    "word": "admit",
+    "phonetic": "/ədˈmɪt/",
+    "pos": "v.",
+    "meaning": "承认；准许进入",
+    "example": "He admitted making a mistake.",
+    "exampleCn": "他承认犯了一个错误。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 50,
+    "word": "ambition",
+    "phonetic": "/æmˈbɪʃn/",
+    "pos": "n.",
+    "meaning": "野心，雄心",
+    "example": "Her ambition is to become a doctor.",
+    "exampleCn": "她的志向是成为一名医生。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 91,
+    "word": "affirm",
+    "phonetic": "/əˈfɜːrm/",
+    "pos": "v.",
+    "meaning": "断言，确认；肯定",
+    "example": "The study affirmed our hypothesis.",
+    "exampleCn": "研究证实了我们的假设。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 101,
+    "word": "aid",
+    "phonetic": "/eɪd/",
+    "pos": "n./v.",
+    "meaning": "援助；帮助",
+    "example": "They provided aid to the victims.",
+    "exampleCn": "他们向受害者提供援助。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 145,
+    "word": "announce",
+    "phonetic": "/əˈnaʊns/",
+    "pos": "v.",
+    "meaning": "宣布；宣告；通知",
+    "example": "They announced the results.",
+    "exampleCn": "他们宣布了结果。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 180,
+    "word": "assist",
+    "phonetic": "/əˈsɪst/",
+    "pos": "v.",
+    "meaning": "帮助，协助",
+    "example": "Can I assist you with anything?",
+    "exampleCn": "我可以帮您什么吗？",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 456,
+    "word": "claim",
+    "phonetic": "/kleɪm/",
+    "pos": "v.",
+    "meaning": "声称；索赔",
+    "example": "He claimed to be innocent.",
+    "exampleCn": "他声称自己是无辜的。",
+    "category": "cet6",
+    "categories": [
+      "cet6",
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 529,
+    "word": "conduct",
+    "phonetic": "/kənˈdʌkt/",
+    "pos": "v.",
+    "meaning": "进行；实施；引导",
+    "example": "The experiment was conducted carefully.",
+    "exampleCn": "实验被仔细地进行。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 563,
+    "word": "statement",
+    "phonetic": "/ˈsteɪtmənt/",
+    "pos": "n.",
+    "meaning": "声明；陈述；报表",
+    "example": "He made a statement to the police.",
+    "exampleCn": "他向警方作了陈述。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 752,
+    "word": "hint",
+    "phonetic": "/hɪnt/",
+    "pos": "n./v.",
+    "meaning": "暗示；提示；迹象",
+    "example": "He gave me a hint.",
+    "exampleCn": "他给了我一个暗示。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 760,
+    "word": "harmony",
+    "phonetic": "/ˈhɑːməni/",
+    "pos": "n.",
+    "meaning": "和谐；融洽；和声",
+    "example": "They live in harmony.",
+    "exampleCn": "他们和谐地生活。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 806,
+    "word": "Roman",
+    "phonetic": "/ˈrəʊmən/",
+    "pos": "adj./n.",
+    "meaning": "罗马的；罗马人",
+    "example": "Roman architecture is impressive.",
+    "exampleCn": "罗马建筑令人印象深刻。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 897,
+    "word": "declare",
+    "phonetic": "/dɪˈkler/",
+    "pos": "v.",
+    "meaning": "宣布；声明",
+    "example": "The president declared a national holiday.",
+    "exampleCn": "总统宣布全国放假一天。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 926,
+    "word": "viewpoint",
+    "phonetic": "/ˈvjuːpɔɪnt/",
+    "pos": "n.",
+    "meaning": "观点；视角",
+    "example": "Try to understand the issue from her viewpoint.",
+    "exampleCn": "试着从她的角度理解这个问题。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 984,
+    "word": "vote",
+    "phonetic": "/voʊt/",
+    "pos": "n./v.",
+    "meaning": "投票，表决",
+    "example": "Every citizen has the right to vote./The vote was close but the proposal passed.",
+    "exampleCn": "每个公民都有投票权。/表决结果很接近，但提案通过了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 1318,
+    "word": "welfare",
+    "phonetic": "/ˈwelfer/",
+    "pos": "n.",
+    "meaning": "福利；福祉",
+    "example": "The policy is designed to improve child welfare.",
+    "exampleCn": "这项政策旨在改善儿童福利。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 1338,
+    "word": "elect",
+    "phonetic": "/ɪˈlekt/",
+    "pos": "v.",
+    "meaning": "选举；推选",
+    "example": "The citizens will elect a new mayor next month.",
+    "exampleCn": "市民将在下个月选举一位新市长。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 1373,
+    "word": "steady",
+    "phonetic": "/ˈstedi/",
+    "pos": "adj.",
+    "meaning": "稳定的；平稳的",
+    "example": "The company reported steady growth this year.",
+    "exampleCn": "这家公司今年报告了稳定增长。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 1701,
+    "word": "prospect",
+    "phonetic": "/ˈprɑːspekt/",
+    "pos": "n./v.",
+    "meaning": "前景/可能性/勘探",
+    "example": "The prospect of finding a job improved after graduation.",
+    "exampleCn": "毕业后找到工作的前景有所改善。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 1715,
+    "word": "implement",
+    "phonetic": "/ˈɪmplɪment/",
+    "pos": "v./n.",
+    "meaning": "实施/工具",
+    "example": "The school will implement a new reading program.",
+    "exampleCn": "学校将实施一个新的阅读项目。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 1801,
+    "word": "ethic",
+    "phonetic": "/ˈeθɪk/",
+    "pos": "n.",
+    "meaning": "道德准则/伦理",
+    "example": "A strong work ethic is valued in many cultures.",
+    "exampleCn": "强烈的职业道德在许多文化中受到重视。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 1836,
+    "word": "nominate",
+    "phonetic": "/ˈnɑːmɪneɪt/",
+    "pos": "v.",
+    "meaning": "提名/任命",
+    "example": "The teacher decided to nominate her for the award.",
+    "exampleCn": "老师决定提名她获得这个奖项。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 2059,
+    "word": "declaration",
+    "phonetic": "/ˌdekləˈreɪʃən/",
+    "pos": "n.",
+    "meaning": "声明/宣言/申报",
+    "example": "The leader made a public declaration of support.",
+    "exampleCn": "领导人公开声明表示支持。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 2064,
+    "word": "outlook",
+    "phonetic": "/ˈaʊtlʊk/",
+    "pos": "n.",
+    "meaning": "观点/前景/景色",
+    "example": "The economic outlook improved after the policy change.",
+    "exampleCn": "政策改变后，经济前景有所改善。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 2463,
+    "word": "flourish",
+    "phonetic": "/ˈflɜːrɪʃ/",
+    "pos": "v./n.",
+    "meaning": "繁荣/茂盛生长/华丽动作",
+    "example": "Small businesses began to flourish after the reform.",
+    "exampleCn": "改革后，小企业开始繁荣起来。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 2494,
+    "word": "succession",
+    "phonetic": "/səkˈseʃn/",
+    "pos": "n.",
+    "meaning": "连续/继承/ succession",
+    "example": "The ecosystem changed through a natural succession of species.",
+    "exampleCn": "生态系统通过物种的自然演替而变化。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 2573,
+    "word": "perspective",
+    "phonetic": "/pərˈspektɪv/",
+    "pos": "n.",
+    "meaning": "观点/视角/透视法",
+    "example": "Travel can change a person’s perspective.",
+    "exampleCn": "旅行可以改变一个人的视角。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 2651,
+    "word": "standpoint",
+    "phonetic": "/ˈstændpɔɪnt/",
+    "pos": "n.",
+    "meaning": "立场/观点",
+    "example": "From an economic standpoint, the plan is risky.",
+    "exampleCn": "从经济角度看，这个计划有风险。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4287,
+    "word": "harmonica",
+    "phonetic": "hɑːˈmɒnɪkə",
+    "pos": "n.",
+    "meaning": "口琴",
+    "example": "He played a blues tune on his harmonica.",
+    "exampleCn": "他用口琴吹奏了一首布鲁斯曲子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23",
+      "40"
+    ]
+  },
+  {
+    "id": 4863,
+    "word": "respondent",
+    "phonetic": "rɪˈspɒndənt",
+    "pos": "n.",
+    "meaning": "受访者/回答者",
+    "example": "Most respondents agreed with the proposal.",
+    "exampleCn": "大多数受访者同意该建议。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4864,
+    "word": "poll",
+    "phonetic": "pəʊl",
+    "pos": "n.",
+    "meaning": "民意调查/投票",
+    "example": "The latest poll shows the candidate leading.",
+    "exampleCn": "最新民意调查显示该候选人领先。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4865,
+    "word": "checklist",
+    "phonetic": "ˈtʃeklɪst",
+    "pos": "n.",
+    "meaning": "清单/检查表",
+    "example": "Use a checklist to make sure everything is ready.",
+    "exampleCn": "用检查表确保一切都准备好了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4866,
+    "word": "well-being",
+    "phonetic": "ˌwel ˈbiːɪŋ",
+    "pos": "n.",
+    "meaning": "健康/幸福/福祉",
+    "example": "Exercise is important for physical well-being.",
+    "exampleCn": "锻炼对身体安康很重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4867,
+    "word": "success",
+    "phonetic": "səkˈses",
+    "pos": "n.",
+    "meaning": "成功/成就",
+    "example": "Hard work is the key to success.",
+    "exampleCn": "勤奋是成功的关键。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4868,
+    "word": "succeed",
+    "phonetic": "səkˈsiːd",
+    "pos": "v.",
+    "meaning": "成功/继承",
+    "example": "She succeeded in passing the exam.",
+    "exampleCn": "她成功通过了考试。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4869,
+    "word": "prospective",
+    "phonetic": "prəˈspektɪv",
+    "pos": "adj.",
+    "meaning": "未来的/潜在的",
+    "example": "He met with a prospective employer.",
+    "exampleCn": "他与一位可能有录用意向的雇主见了面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4870,
+    "word": "guideline",
+    "phonetic": "ˈɡaɪdlaɪn",
+    "pos": "n.",
+    "meaning": "指导方针/准则",
+    "example": "The government issued new guidelines on health.",
+    "exampleCn": "政府发布了新的健康指导方针。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4871,
+    "word": "suggest",
+    "phonetic": "səˈdʒest",
+    "pos": "v.",
+    "meaning": "建议/暗示",
+    "example": "I suggest we leave early to avoid traffic.",
+    "exampleCn": "我建议我们早点出发以避开交通拥堵。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4872,
+    "word": "advise",
+    "phonetic": "ədˈvaɪz",
+    "pos": "v.",
+    "meaning": "建议/劝告",
+    "example": "The doctor advised him to rest more.",
+    "exampleCn": "医生建议他多休息。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4873,
+    "word": "advisable",
+    "phonetic": "ədˈvaɪzəbl",
+    "pos": "adj.",
+    "meaning": "明智的/可取的",
+    "example": "It is advisable to book tickets in advance.",
+    "exampleCn": "建议提前预订门票。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4874,
+    "word": "proposal",
+    "phonetic": "prəˈpəʊzl",
+    "pos": "n.",
+    "meaning": "提案/建议",
+    "example": "The committee approved the proposal.",
+    "exampleCn": "委员会通过了该提案。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4875,
+    "word": "proclaim",
+    "phonetic": "prəˈkleɪm",
+    "pos": "v.",
+    "meaning": "宣告/宣布",
+    "example": "The president proclaimed a national holiday.",
+    "exampleCn": "总统宣布了一个全国假日。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4876,
+    "word": "state",
+    "phonetic": "steɪt",
+    "pos": "v./n.",
+    "meaning": "陈述/国家/州",
+    "example": "He stated his opinion clearly at the meeting.",
+    "exampleCn": "他在会上清楚地陈述了自己的意见。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4877,
+    "word": "clarify",
+    "phonetic": "ˈklærɪfaɪ",
+    "pos": "v.",
+    "meaning": "澄清/阐明",
+    "example": "The minister clarified the new policy at the press conference.",
+    "exampleCn": "部长在新闻发布会上阐明了新政策。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4878,
+    "word": "action",
+    "phonetic": "ˈækʃn",
+    "pos": "n.",
+    "meaning": "行动/动作",
+    "example": "The government must take action to solve the crisis.",
+    "exampleCn": "政府必须采取行动来解决危机。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4879,
+    "word": "encourage",
+    "phonetic": "ɪnˈkʌrɪdʒ",
+    "pos": "v.",
+    "meaning": "鼓励/激励",
+    "example": "Parents should encourage their children to read.",
+    "exampleCn": "父母应该鼓励孩子读书。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4880,
+    "word": "monitor",
+    "phonetic": "ˈmɒnɪtə",
+    "pos": "v./n.",
+    "meaning": "监控/监督/显示器",
+    "example": "Doctors monitored the patient's condition closely.",
+    "exampleCn": "医生密切监控着病人的状况。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4881,
+    "word": "African",
+    "phonetic": "ˈæfrɪkən",
+    "pos": "adj./n.",
+    "meaning": "非洲的/非洲人",
+    "example": "She loves African music and dance.",
+    "exampleCn": "她喜欢非洲音乐和舞蹈。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4882,
+    "word": "European",
+    "phonetic": "ˌjʊərəˈpiːən",
+    "pos": "adj./n.",
+    "meaning": "欧洲的/欧洲人",
+    "example": "The European Union has 27 member states.",
+    "exampleCn": "欧盟有27个成员国。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4883,
+    "word": "Latin",
+    "phonetic": "ˈlætɪn",
+    "pos": "n./adj.",
+    "meaning": "拉丁语/拉丁的",
+    "example": "Many English words come from Latin.",
+    "exampleCn": "许多英语单词源出拉丁语。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4884,
+    "word": "Jewish",
+    "phonetic": "ˈdʒuːɪʃ",
+    "pos": "adj.",
+    "meaning": "犹太的/犹太人的",
+    "example": "They celebrated the Jewish festival of Hanukkah.",
+    "exampleCn": "他们庆祝了犹太节日光明节。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4885,
+    "word": "Arabian",
+    "phonetic": "əˈreɪbiən",
+    "pos": "adj.",
+    "meaning": "阿拉伯的/阿拉伯人的",
+    "example": "The Arabian desert covers much of the Middle East.",
+    "exampleCn": "阿拉伯沙漠覆盖了中东大部分地区。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4886,
+    "word": "Portuguese",
+    "phonetic": "ˌpɔːtʃʊˈɡiːz",
+    "pos": "adj./n.",
+    "meaning": "葡萄牙的/葡萄牙语",
+    "example": "They visited the Portuguese coast last summer.",
+    "exampleCn": "他们去年夏天游览了葡萄牙海岸。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4887,
+    "word": "Russian",
+    "phonetic": "ˈrʌʃn",
+    "pos": "adj./n.",
+    "meaning": "俄罗斯的/俄语",
+    "example": "She is learning to speak Russian.",
+    "exampleCn": "她正在学习说俄语。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4888,
+    "word": "Spanish",
+    "phonetic": "ˈspænɪʃ",
+    "pos": "adj./n.",
+    "meaning": "西班牙的/西班牙语",
+    "example": "Spanish is spoken in many countries.",
+    "exampleCn": "许多国家都说西班牙语。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4889,
+    "word": "Swiss",
+    "phonetic": "swɪs",
+    "pos": "adj./n.",
+    "meaning": "瑞士的/瑞士人",
+    "example": "Swiss chocolate is famous worldwide.",
+    "exampleCn": "瑞士巧克力闻名世界。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4890,
+    "word": "Greek",
+    "phonetic": "ɡriːk",
+    "pos": "adj./n.",
+    "meaning": "希腊的/希腊语",
+    "example": "They studied Greek philosophy at university.",
+    "exampleCn": "他们在大学里学了希腊哲学。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4891,
+    "word": "Italian",
+    "phonetic": "ɪˈtæliən",
+    "pos": "adj./n.",
+    "meaning": "意大利的/意大利语",
+    "example": "Italian food is popular all over the world.",
+    "exampleCn": "意大利美食在全世界都很受欢迎。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4892,
+    "word": "soviet",
+    "phonetic": "ˈsəʊviət",
+    "pos": "adj./n.",
+    "meaning": "苏维埃的/苏联的",
+    "example": "The Soviet Union collapsed in 1991.",
+    "exampleCn": "苏联于1991年解体。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  }
+]

@@ -287,10 +287,15 @@
     "exampleCn": "气温在一天中一点点上升。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 3031,
@@ -302,10 +307,15 @@
     "exampleCn": "这些证据帮助强化了科学家的理论。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 3032,
@@ -382,10 +392,15 @@
     "exampleCn": "该组织采用民主程序选举领导者。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 3037,
@@ -828,10 +843,15 @@
     "exampleCn": "工人们决定罢工以争取更好的薪水。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 3065,
@@ -1038,10 +1058,15 @@
     "exampleCn": "公司有清晰的管理者和员工层级结构。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 3078,
@@ -1390,10 +1415,15 @@
     "exampleCn": "研究人员对成本作出了保守估计。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 3099,

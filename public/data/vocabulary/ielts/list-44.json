@@ -1,0 +1,1038 @@
+[
+  {
+    "id": 18,
+    "word": "accuse",
+    "phonetic": "/əˈkjuːz/",
+    "pos": "v.",
+    "meaning": "指责/控告",
+    "example": "They accuse the company of polluting the river.",
+    "exampleCn": "他们指控这家公司污染了河流。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 39,
+    "word": "agreement",
+    "phonetic": "/əˈɡriːmənt/",
+    "pos": "n.",
+    "meaning": "协议，同意",
+    "example": "They reached an agreement on the terms.",
+    "exampleCn": "他们就条款达成了协议。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38",
+      "44"
+    ]
+  },
+  {
+    "id": 46,
+    "word": "allow",
+    "phonetic": "/əˈlaʊ/",
+    "pos": "v.",
+    "meaning": "允许，准许；承认",
+    "example": "Pets are not allowed in the building.",
+    "exampleCn": "大楼内不允许养宠物。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 81,
+    "word": "admission",
+    "phonetic": "/ədˈmɪʃn/",
+    "pos": "n.",
+    "meaning": "准许进入；承认",
+    "example": "Admission to the museum is free.",
+    "exampleCn": "博物馆免费入场。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 153,
+    "word": "appeal",
+    "phonetic": "/əˈpiːl/",
+    "pos": "n./v.",
+    "meaning": "吸引力/呼吁/上诉/吸引",
+    "example": "The proposal has strong appeal for young voters.",
+    "exampleCn": "这项提议对年轻选民有很强的吸引力。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 575,
+    "word": "reject",
+    "phonetic": "/rɪˈdʒekt/",
+    "pos": "v.",
+    "meaning": "拒绝；驳回；丢弃",
+    "example": "The proposal was rejected by the committee.",
+    "exampleCn": "提案被委员会驳回了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 688,
+    "word": "witness",
+    "phonetic": "/ˈwɪtnəs/",
+    "pos": "n./v.",
+    "meaning": "证人；目击/见证",
+    "example": "She witnessed the accident.",
+    "exampleCn": "她目击了事故。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 817,
+    "word": "standard",
+    "phonetic": "/ˈstændəd/",
+    "pos": "n./adj.",
+    "meaning": "标准/标准的",
+    "example": "Set high standards.",
+    "exampleCn": "设定高标准。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 950,
+    "word": "regulation",
+    "phonetic": "/ˌreɡjəˈleɪʃən/",
+    "pos": "n.",
+    "meaning": "规则，法规/调节",
+    "example": "New safety regulations were introduced last year./The regulation of body temperature is essential for survival.",
+    "exampleCn": "去年出台了新的安全法规。/体温调节对生存至关重要。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 1180,
+    "word": "sue",
+    "phonetic": "/suː/",
+    "pos": "v.",
+    "meaning": "起诉；控告",
+    "example": "The company was sued for breaking the contract.",
+    "exampleCn": "这家公司因违反合同被起诉了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 1206,
+    "word": "perform",
+    "phonetic": "/pərˈfɔːrm/",
+    "pos": "v.",
+    "meaning": "执行；表演",
+    "example": "The machine can perform complex calculations.",
+    "exampleCn": "这台机器能执行复杂的计算。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23",
+      "44"
+    ]
+  },
+  {
+    "id": 1239,
+    "word": "persuade",
+    "phonetic": "/pərˈsweɪd/",
+    "pos": "v.",
+    "meaning": "说服；劝服",
+    "example": "She persuaded her parents to support her decision.",
+    "exampleCn": "她说服了父母支持她的决定。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 1242,
+    "word": "session",
+    "phonetic": "/ˈseʃən/",
+    "pos": "n.",
+    "meaning": "一段时间；会议；会期",
+    "example": "The training session lasted for three hours.",
+    "exampleCn": "培训课程持续了三个小时。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 1354,
+    "word": "investigate",
+    "phonetic": "/ɪnˈvestɪˌɡeɪt/",
+    "pos": "v.",
+    "meaning": "调查；研究",
+    "example": "Scientists continue to investigate the cause of the disease.",
+    "exampleCn": "科学家继续调查这种疾病的成因。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 1512,
+    "word": "constraint",
+    "phonetic": "/kənˈstreɪnt/",
+    "pos": "n.",
+    "meaning": "限制/约束",
+    "example": "Time was the main constraint on the research project.",
+    "exampleCn": "时间是这个研究项目的主要限制。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 1567,
+    "word": "supreme",
+    "phonetic": "/suːˈpriːm/",
+    "pos": "adj.",
+    "meaning": "最高的/至上的/极大的",
+    "example": "The court has supreme authority in constitutional matters.",
+    "exampleCn": "该法院在宪法事务上拥有最高权威。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 1586,
+    "word": "obligation",
+    "phonetic": "/ˌɑːblɪˈɡeɪʃn/",
+    "pos": "n.",
+    "meaning": "义务/责任",
+    "example": "Citizens have an obligation to obey the law.",
+    "exampleCn": "公民有遵守法律的义务。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 1721,
+    "word": "protocol",
+    "phonetic": "/ˈproʊtəkɔːl/",
+    "pos": "n.",
+    "meaning": "规程/礼仪/协议",
+    "example": "Researchers followed a strict protocol during the experiment.",
+    "exampleCn": "研究人员在实验中遵循严格的规程。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 1869,
+    "word": "potent",
+    "phonetic": "/ˈpoʊtnt/",
+    "pos": "adj.",
+    "meaning": "强有力的/有效的",
+    "example": "The medicine is potent and should be taken carefully.",
+    "exampleCn": "这种药效很强，应该谨慎服用。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 2099,
+    "word": "mute",
+    "phonetic": "/mjuːt/",
+    "pos": "adj./v./n.",
+    "meaning": "沉默的/减弱声音/使静音/哑巴",
+    "example": "He pressed the button to mute the video.",
+    "exampleCn": "他按下按钮将视频静音。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 2235,
+    "word": "bound",
+    "phonetic": "/baʊnd/",
+    "pos": "adj./v./n.",
+    "meaning": "一定会的/受约束的/跳跃/边界",
+    "example": "The project is bound to succeed with enough support.",
+    "exampleCn": "有足够支持，这个项目一定会成功。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 2289,
+    "word": "mediate",
+    "phonetic": "/ˈmiːdieɪt/",
+    "pos": "v.",
+    "meaning": "调解/斡旋",
+    "example": "A teacher helped mediate the disagreement between students.",
+    "exampleCn": "一位老师帮助调解学生之间的分歧。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 2293,
+    "word": "justify",
+    "phonetic": "/ˈdʒʌstɪfaɪ/",
+    "pos": "v.",
+    "meaning": "证明……合理/为……辩护",
+    "example": "The researcher used data to justify her conclusion.",
+    "exampleCn": "研究人员用数据证明她的结论合理。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 2325,
+    "word": "enforce",
+    "phonetic": "/ɪnˈfɔːrs/",
+    "pos": "v.",
+    "meaning": "执行/强制实施",
+    "example": "The school must enforce safety rules.",
+    "exampleCn": "学校必须执行安全规定。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 2339,
+    "word": "contradict",
+    "phonetic": "/ˌkɑːntrəˈdɪkt/",
+    "pos": "v.",
+    "meaning": "反驳/与……矛盾",
+    "example": "The new evidence seemed to contradict the old theory.",
+    "exampleCn": "新证据似乎与旧理论相矛盾。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 2350,
+    "word": "court",
+    "phonetic": "/kɔːrt/",
+    "pos": "n./v.",
+    "meaning": "法院/球场/宫廷/追求",
+    "example": "The case was settled in court.",
+    "exampleCn": "这个案件在法庭上解决了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 2443,
+    "word": "norm",
+    "phonetic": "/nɔːrm/",
+    "pos": "n.",
+    "meaning": "标准/规范/常态",
+    "example": "Online learning became the norm during that period.",
+    "exampleCn": "在那段时期，线上学习成了常态。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 2807,
+    "word": "default",
+    "phonetic": "/dɪˈfɔːlt/",
+    "pos": "n./v./adj.",
+    "meaning": "默认/违约/未履行义务/默认的",
+    "example": "The program saves files in the default folder.",
+    "exampleCn": "该程序会把文件保存在默认文件夹中。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 3934,
+    "word": "permit",
+    "phonetic": "ˈpɜːmɪt",
+    "pos": "n/v.",
+    "meaning": "许可证/允许",
+    "example": "You cannot enter the building without a permit.",
+    "exampleCn": "没有许可证你不能进入大楼。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "12",
+    "ieltsLists": [
+      "12",
+      "44"
+    ]
+  },
+  {
+    "id": 4342,
+    "word": "item",
+    "phonetic": "ˈaɪtəm",
+    "pos": "n.",
+    "meaning": "物品/项目",
+    "example": "She checked each item off her shopping list.",
+    "exampleCn": "她把购物清单上的每项物品都核对了一遍。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25",
+      "44"
+    ]
+  },
+  {
+    "id": 4995,
+    "word": "law",
+    "phonetic": "lɔː",
+    "pos": "n.",
+    "meaning": "法律/法规",
+    "example": "Everyone must obey the law.",
+    "exampleCn": "每个人都必须遵守法律。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 4996,
+    "word": "legal",
+    "phonetic": "ˈliːɡl",
+    "pos": "adj.",
+    "meaning": "法律的/合法的",
+    "example": "He sought legal advice before signing the contract.",
+    "exampleCn": "他在签署合同前寻求了法律建议。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 4997,
+    "word": "treaty",
+    "phonetic": "ˈtriːti",
+    "pos": "n.",
+    "meaning": "条约/协定",
+    "example": "The two countries signed a peace treaty.",
+    "exampleCn": "两国签署了和平条约。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 4998,
+    "word": "charter",
+    "phonetic": "ˈtʃɑːtə",
+    "pos": "n.",
+    "meaning": "宪章/特许状",
+    "example": "The United Nations charter was signed in 1945.",
+    "exampleCn": "联合国宪章于1945年签署。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 4999,
+    "word": "benchmark",
+    "phonetic": "ˈbentʃmɑːk",
+    "pos": "n.",
+    "meaning": "基准/衡量标准",
+    "example": "The company sets a benchmark for quality in the industry.",
+    "exampleCn": "该公司为行业设定了质量标准。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5000,
+    "word": "criteria",
+    "phonetic": "kraɪˈtɪəriə",
+    "pos": "n.",
+    "meaning": "标准/准则",
+    "example": "What are the criteria for evaluating the project?",
+    "exampleCn": "评估这个项目的标准是什么？",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5001,
+    "word": "official",
+    "phonetic": "əˈfɪʃl",
+    "pos": "adj./n.",
+    "meaning": "官方的/官员",
+    "example": "The official announcement was made yesterday.",
+    "exampleCn": "官方公告是昨天发布的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5002,
+    "word": "mandatory",
+    "phonetic": "ˈmændətəri",
+    "pos": "adj.",
+    "meaning": "强制的/义务的",
+    "example": "Wearing a seatbelt is mandatory in most countries.",
+    "exampleCn": "大多数国家强制系安全带。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5003,
+    "word": "enact",
+    "phonetic": "ɪˈnækt",
+    "pos": "v.",
+    "meaning": "颁布/制定法律",
+    "example": "The government enacted new environmental laws.",
+    "exampleCn": "政府颁布了新的环境法。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5004,
+    "word": "legislate",
+    "phonetic": "ˈledʒɪsleɪt",
+    "pos": "v.",
+    "meaning": "立法/制定法律",
+    "example": "Parliament legislates on matters of national importance.",
+    "exampleCn": "议会对国家重要事项立法。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5005,
+    "word": "equity",
+    "phonetic": "ˈekwəti",
+    "pos": "n.",
+    "meaning": "公平/公正/股权",
+    "example": "The judge was known for her fairness and equity.",
+    "exampleCn": "这位法官以公正公平著称。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5006,
+    "word": "fair",
+    "phonetic": "feə",
+    "pos": "adj.",
+    "meaning": "公平的/合理的",
+    "example": "The trial was conducted in a fair manner.",
+    "exampleCn": "审判以公平的方式进行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5007,
+    "word": "just",
+    "phonetic": "dʒʌst",
+    "pos": "adj.",
+    "meaning": "公正的/正义的",
+    "example": "The judge delivered a just verdict.",
+    "exampleCn": "法官做出了公正的裁决。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5008,
+    "word": "prejudice",
+    "phonetic": "ˈpredʒʊdɪs",
+    "pos": "n.",
+    "meaning": "偏见/歧视",
+    "example": "Racial prejudice has no place in modern society.",
+    "exampleCn": "种族偏见在现代社会中没有立足之地。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5009,
+    "word": "discrimination",
+    "phonetic": "dɪˌskrɪmɪˈneɪʃn",
+    "pos": "n.",
+    "meaning": "歧视/区别对待",
+    "example": "She sued the company for discrimination.",
+    "exampleCn": "她以歧视为由起诉了公司。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5010,
+    "word": "prosecute",
+    "phonetic": "ˈprɒsɪkjuːt",
+    "pos": "v.",
+    "meaning": "起诉/检举",
+    "example": "The company was prosecuted for breaking safety laws.",
+    "exampleCn": "公司因违反安全法被起诉。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5011,
+    "word": "condemn",
+    "phonetic": "kənˈdem",
+    "pos": "v.",
+    "meaning": "谴责/判刑",
+    "example": "World leaders condemned the attack as an act of terrorism.",
+    "exampleCn": "世界领导人谴责这次袭击是恐怖行为。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5012,
+    "word": "complain",
+    "phonetic": "kəmˈpleɪn",
+    "pos": "v.",
+    "meaning": "投诉/抱怨",
+    "example": "Residents complained about the noise from the construction.",
+    "exampleCn": "居民投诉了施工噪音。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5013,
+    "word": "boycott",
+    "phonetic": "ˈbɔɪkɒt",
+    "pos": "v./n.",
+    "meaning": "抵制/排斥",
+    "example": "They called for a boycott of the company's products.",
+    "exampleCn": "他们呼吁抵制该公司的产品。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5014,
+    "word": "plea",
+    "phonetic": "pliː",
+    "pos": "n.",
+    "meaning": "请求/抗辩/恳求",
+    "example": "He made a plea for understanding and forgiveness.",
+    "exampleCn": "他请求理解和宽恕。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5015,
+    "word": "controversy",
+    "phonetic": "ˈkɒntrəvɜːsi",
+    "pos": "n.",
+    "meaning": "争议/争论",
+    "example": "The new law caused a lot of controversy.",
+    "exampleCn": "新法律引起了很多争议。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5016,
+    "word": "whisper",
+    "phonetic": "ˈwɪspə",
+    "pos": "v.",
+    "meaning": "低语/耳语",
+    "example": "She whispered the secret in my ear.",
+    "exampleCn": "她在我耳边悄悄说了秘密。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5017,
+    "word": "mutter",
+    "phonetic": "ˈmʌtə",
+    "pos": "v.",
+    "meaning": "咕哝/嘟囔",
+    "example": "He muttered something under his breath and walked away.",
+    "exampleCn": "他低声嘟囔了几句然后就走了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5018,
+    "word": "murmur",
+    "phonetic": "ˈmɜːmə",
+    "pos": "v./n.",
+    "meaning": "低声说/喃喃声",
+    "example": "The children murmured in agreement.",
+    "exampleCn": "孩子们低声表示同意。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5019,
+    "word": "silent",
+    "phonetic": "ˈsaɪlənt",
+    "pos": "adj.",
+    "meaning": "沉默的/安静的",
+    "example": "Everyone fell silent as the judge entered the room.",
+    "exampleCn": "法官走进房间时，所有人都安静了下来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5020,
+    "word": "reasonable",
+    "phonetic": "ˈriːznəbl",
+    "pos": "adj.",
+    "meaning": "合理的/公道的",
+    "example": "It is reasonable to expect some delays.",
+    "exampleCn": "预期会有一些延误是合理的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  }
+]

@@ -1,0 +1,1115 @@
+[
+  {
+    "id": 15,
+    "word": "account",
+    "phonetic": "/əˈkaʊnt/",
+    "pos": "n.",
+    "meaning": "账户；解释；账目",
+    "example": "He opened a bank account last week.",
+    "exampleCn": "他上周开了一个银行账户。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 23,
+    "word": "adequate",
+    "phonetic": "/ˈædɪkwət/",
+    "pos": "adj.",
+    "meaning": "足够的/合格的",
+    "example": "The shelter provides adequate protection from storms.",
+    "exampleCn": "这个避难所能提供足够的风暴防护。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 37,
+    "word": "agent",
+    "phonetic": "/ˈeɪdʒənt/",
+    "pos": "n.",
+    "meaning": "代理人/因素/药剂",
+    "example": "The chemical agent was used to clean the water.",
+    "exampleCn": "这种化学药剂被用来净化水。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 59,
+    "word": "accompany",
+    "phonetic": "/əˈkʌmpəni/",
+    "pos": "v.",
+    "meaning": "陪伴/伴随/为……伴奏",
+    "example": "Strong winds often accompany heavy rain in this region.",
+    "exampleCn": "在这个地区，大风常伴随大雨。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 68,
+    "word": "acquisition",
+    "phonetic": "/ˌækwɪˈzɪʃn/",
+    "pos": "n.",
+    "meaning": "获得/收购/习得",
+    "example": "Language acquisition begins early in childhood.",
+    "exampleCn": "语言习得在儿童早期就开始了。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 93,
+    "word": "affluent",
+    "phonetic": "/ˈæfluənt/",
+    "pos": "adj.",
+    "meaning": "富裕的，丰富的",
+    "example": "They live in an affluent neighborhood.",
+    "exampleCn": "他们住在一个富裕的社区。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 190,
+    "word": "attend",
+    "phonetic": "/əˈtend/",
+    "pos": "v.",
+    "meaning": "参加，出席",
+    "example": "Did you attend the meeting yesterday?",
+    "exampleCn": "你昨天参加会议了吗？",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 238,
+    "word": "benefit",
+    "phonetic": "/ˈbenɪfɪt/",
+    "pos": "n./v.",
+    "meaning": "好处，利益；受益",
+    "example": "The new policy will benefit everyone.",
+    "exampleCn": "新政策将使每个人受益。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 378,
+    "word": "cargo",
+    "phonetic": "/ˈkɑːrɡoʊ/",
+    "pos": "n.",
+    "meaning": "货物/船货/空运货物",
+    "example": "The ship carried a large cargo of grain across the ocean.",
+    "exampleCn": "这艘船载着大量谷物货物横渡海洋。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 518,
+    "word": "sufficient",
+    "phonetic": "/səˈfɪʃnt/",
+    "pos": "adj.",
+    "meaning": "足够的；充分的",
+    "example": "We have sufficient time to finish.",
+    "exampleCn": "我们有足够的时间完成。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 643,
+    "word": "invest",
+    "phonetic": "/ɪnˈvest/",
+    "pos": "v.",
+    "meaning": "投资；花费；授予",
+    "example": "He invested in the stock market.",
+    "exampleCn": "他投资了股市。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 779,
+    "word": "import",
+    "phonetic": "/ɪmˈpɔːt/",
+    "pos": "v.",
+    "meaning": "进口；输入；意味",
+    "example": "The country imports oil.",
+    "exampleCn": "这个国家进口石油。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 878,
+    "word": "enrich",
+    "phonetic": "/ɪnˈrɪtʃ/",
+    "pos": "v.",
+    "meaning": "丰富；使富有",
+    "example": "Travel can enrich your understanding of the world.",
+    "exampleCn": "旅行可以丰富你对世界的理解。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 882,
+    "word": "guarantee",
+    "phonetic": "/ˌɡærənˈtiː/",
+    "pos": "v./n.",
+    "meaning": "保证；担保",
+    "example": "We cannot guarantee success every time.",
+    "exampleCn": "我们不能保证每次都成功。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 964,
+    "word": "reliable",
+    "phonetic": "/rɪˈlaɪəbl/",
+    "pos": "adj.",
+    "meaning": "可靠的，可信赖的",
+    "example": "She is a reliable source of information.",
+    "exampleCn": "她是一个可靠的信息来源。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 1028,
+    "word": "investor",
+    "phonetic": "/ɪnˈvestər/",
+    "pos": "n.",
+    "meaning": "投资者",
+    "example": "The startup attracted several international investors.",
+    "exampleCn": "这家初创公司吸引了几位国际投资者。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 1187,
+    "word": "expand",
+    "phonetic": "/ɪkˈspænd/",
+    "pos": "v.",
+    "meaning": "扩大；扩展",
+    "example": "The university plans to expand its library.",
+    "exampleCn": "这所大学计划扩建图书馆。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 1198,
+    "word": "stock",
+    "phonetic": "/stɑːk/",
+    "pos": "n./v.",
+    "meaning": "库存；股票/储备",
+    "example": "The store keeps a large stock of fresh fruit.",
+    "exampleCn": "这家商店储备了大量新鲜水果。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 1245,
+    "word": "productive",
+    "phonetic": "/prəˈdʌktɪv/",
+    "pos": "adj.",
+    "meaning": "高效的；有生产力的",
+    "example": "We had a productive discussion about the project.",
+    "exampleCn": "我们就这个项目进行了高效的讨论。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7",
+      "42"
+    ]
+  },
+  {
+    "id": 1397,
+    "word": "decline",
+    "phonetic": "/dɪˈklaɪn/",
+    "pos": "v./n.",
+    "meaning": "下降；拒绝/下降",
+    "example": "Sales began to decline after the holiday season.",
+    "exampleCn": "假期结束后销售开始下降。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 1445,
+    "word": "insure",
+    "phonetic": "/ɪnˈʃʊr/",
+    "pos": "v.",
+    "meaning": "给……保险/确保",
+    "example": "Farmers often insure their crops against severe weather.",
+    "exampleCn": "农民常为作物投保以防恶劣天气。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 1507,
+    "word": "bid",
+    "phonetic": "/bɪd/",
+    "pos": "n./v.",
+    "meaning": "出价/努力争取/投标",
+    "example": "Several companies made a bid to build the bridge.",
+    "exampleCn": "几家公司投标建设这座桥。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 1739,
+    "word": "transaction",
+    "phonetic": "/trænˈzækʃən/",
+    "pos": "n.",
+    "meaning": "交易/业务",
+    "example": "Every online transaction requires secure information.",
+    "exampleCn": "每一笔线上交易都需要安全的信息。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 1763,
+    "word": "diminish",
+    "phonetic": "/dɪˈmɪnɪʃ/",
+    "pos": "v.",
+    "meaning": "减少/削弱",
+    "example": "Pollution can diminish the quality of drinking water.",
+    "exampleCn": "污染会降低饮用水质量。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 1795,
+    "word": "enterprise",
+    "phonetic": "/ˈentərpraɪz/",
+    "pos": "n.",
+    "meaning": "企业/事业/进取心",
+    "example": "The small enterprise grew into an international company.",
+    "exampleCn": "这家小企业发展成了一家国际公司。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 1916,
+    "word": "dump",
+    "phonetic": "/dʌmp/",
+    "pos": "v./n.",
+    "meaning": "倾倒/丢弃/垃圾场",
+    "example": "The company was fined for dumping waste into the river.",
+    "exampleCn": "这家公司因向河中倾倒废物而被罚款。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 2189,
+    "word": "entity",
+    "phonetic": "/ˈentəti/",
+    "pos": "n.",
+    "meaning": "实体/存在物/机构",
+    "example": "A company is a legal entity.",
+    "exampleCn": "公司是一个法律实体。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 2492,
+    "word": "influx",
+    "phonetic": "/ˈɪnflʌks/",
+    "pos": "n.",
+    "meaning": "涌入/流入",
+    "example": "The city experienced an influx of new residents.",
+    "exampleCn": "这座城市经历了新居民的大量涌入。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 2638,
+    "word": "escalate",
+    "phonetic": "/ˈeskəleɪt/",
+    "pos": "v.",
+    "meaning": "升级/扩大/加剧",
+    "example": "The conflict began to escalate quickly.",
+    "exampleCn": "冲突开始迅速升级。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 2747,
+    "word": "entrepreneur",
+    "phonetic": "/ˌɑːntrəprəˈnɜːr/",
+    "pos": "n.",
+    "meaning": "企业家/创业者",
+    "example": "The entrepreneur launched a company while still in college.",
+    "exampleCn": "这位创业者还在大学时就创办了一家公司。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 3030,
+    "word": "increment",
+    "phonetic": "/ˈɪŋkrəmənt/",
+    "pos": "n.",
+    "meaning": "增加量/增量",
+    "example": "The temperature rose in small increments throughout the day.",
+    "exampleCn": "气温在一天中一点点上升。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 3999,
+    "word": "dividend",
+    "phonetic": "ˈdɪvɪdend",
+    "pos": "n.",
+    "meaning": "被除数/股息",
+    "example": "In twelve divided by three, twelve is the dividend.",
+    "exampleCn": "在十二除以三中，十二是被除数。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "14",
+    "ieltsLists": [
+      "14",
+      "42"
+    ]
+  },
+  {
+    "id": 4238,
+    "word": "negotiation",
+    "phonetic": "nɪˌɡəʊʃiˈeɪʃn",
+    "pos": "n.",
+    "meaning": "谈判/协商",
+    "example": "The negotiation lasted for several hours.",
+    "exampleCn": "谈判持续了好几个小时。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "22",
+    "ieltsLists": [
+      "22",
+      "42"
+    ]
+  },
+  {
+    "id": 4927,
+    "word": "decrease",
+    "phonetic": "dɪˈkriːs",
+    "pos": "v./n.",
+    "meaning": "减少/下降",
+    "example": "Sales decreased by 5% compared to last year.",
+    "exampleCn": "销售额与去年相比下降了5%。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4928,
+    "word": "downsize",
+    "phonetic": "ˈdaʊnsaɪz",
+    "pos": "v.",
+    "meaning": "缩小规模/裁员",
+    "example": "The company had to downsize to cut costs.",
+    "exampleCn": "公司不得不裁员以削减成本。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4929,
+    "word": "declination",
+    "phonetic": "ˌdeklɪˈneɪʃn",
+    "pos": "n.",
+    "meaning": "下降/倾斜/偏差",
+    "example": "The declination of the economy worried investors.",
+    "exampleCn": "经济的下滑让投资者感到忧虑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4930,
+    "word": "reduce",
+    "phonetic": "rɪˈdjuːs",
+    "pos": "v.",
+    "meaning": "减少/缩减",
+    "example": "We need to reduce our energy consumption.",
+    "exampleCn": "我们需要减少能源消耗。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4931,
+    "word": "increase",
+    "phonetic": "ɪnˈkriːs",
+    "pos": "v./n.",
+    "meaning": "增加/增长",
+    "example": "The price of petrol has increased again.",
+    "exampleCn": "汽油价格又上涨了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4932,
+    "word": "growth",
+    "phonetic": "ɡrəʊθ",
+    "pos": "n.",
+    "meaning": "增长/成长/发展",
+    "example": "The country's economic growth is steady.",
+    "exampleCn": "该国的经济增长稳定。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4933,
+    "word": "gradual",
+    "phonetic": "ˈɡrædʒuəl",
+    "pos": "adj.",
+    "meaning": "逐渐的/逐步的",
+    "example": "There was a gradual improvement in her health.",
+    "exampleCn": "她的健康状况逐渐改善。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4934,
+    "word": "spare",
+    "phonetic": "speə",
+    "pos": "adj./v.",
+    "meaning": "备用的/多余的/抽出",
+    "example": "He tried to fix the bike in his spare time.",
+    "exampleCn": "他在空闲时间试着修自行车。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4935,
+    "word": "redundant",
+    "phonetic": "rɪˈdʌndənt",
+    "pos": "adj.",
+    "meaning": "多余的/被裁员的",
+    "example": "He was made redundant after the company restructured.",
+    "exampleCn": "公司重组后他被裁了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4936,
+    "word": "redundancy",
+    "phonetic": "rɪˈdʌndənsi",
+    "pos": "n.",
+    "meaning": "裁员/冗余",
+    "example": "The factory closure will lead to many redundancies.",
+    "exampleCn": "工厂关闭将导致大量裁员。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4937,
+    "word": "lack",
+    "phonetic": "læk",
+    "pos": "n./v.",
+    "meaning": "缺乏/不足",
+    "example": "The project was cancelled due to a lack of funds.",
+    "exampleCn": "项目因资金缺乏被取消了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4938,
+    "word": "company",
+    "phonetic": "ˈkʌmpəni",
+    "pos": "n.",
+    "meaning": "公司/陪伴",
+    "example": "She works for a large software company.",
+    "exampleCn": "她在一家大型软件公司工作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4939,
+    "word": "firm",
+    "phonetic": "fɜːm",
+    "pos": "n./adj.",
+    "meaning": "公司/坚定的",
+    "example": "He joined the law firm as a junior partner.",
+    "exampleCn": "他加入了那家律师事务所成为初级合伙人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4940,
+    "word": "input",
+    "phonetic": "ˈɪnpʊt",
+    "pos": "n.",
+    "meaning": "投入/输入",
+    "example": "We value your input on this matter.",
+    "exampleCn": "我们重视你对这件事的投入。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4941,
+    "word": "product",
+    "phonetic": "ˈprɒdʌkt",
+    "pos": "n.",
+    "meaning": "产品/产物",
+    "example": "The company launched a new product line.",
+    "exampleCn": "公司推出了一个新的产品线。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4942,
+    "word": "goods",
+    "phonetic": "ɡʊdz",
+    "pos": "n.",
+    "meaning": "商品/货物",
+    "example": "The ship was loaded with goods from China.",
+    "exampleCn": "船上装载着来自中国的货物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4943,
+    "word": "rely",
+    "phonetic": "rɪˈlaɪ",
+    "pos": "v.",
+    "meaning": "依赖/依靠",
+    "example": "Many people rely on their cars for daily transport.",
+    "exampleCn": "许多人依靠汽车进行日常出行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4944,
+    "word": "absent",
+    "phonetic": "ˈæbsənt",
+    "pos": "adj.",
+    "meaning": "缺席的/不在的",
+    "example": "He was absent from work for three days.",
+    "exampleCn": "他三天没来上班。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4945,
+    "word": "wholesale",
+    "phonetic": "ˈhəʊlseɪl",
+    "pos": "n./adj.",
+    "meaning": "批发/批发的",
+    "example": "They buy goods at wholesale prices.",
+    "exampleCn": "他们以批发价购买商品。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4946,
+    "word": "auction",
+    "phonetic": "ˈɔːkʃn",
+    "pos": "n.",
+    "meaning": "拍卖/竞拍",
+    "example": "The painting sold for a record price at auction.",
+    "exampleCn": "这幅画在拍卖中以创纪录的价格售出。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4947,
+    "word": "deal",
+    "phonetic": "diːl",
+    "pos": "n./v.",
+    "meaning": "交易/协议/处理",
+    "example": "They signed a deal worth millions of dollars.",
+    "exampleCn": "他们签署了一笔价值数百万美元的交易。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4948,
+    "word": "turnover",
+    "phonetic": "ˈtɜːnəʊvə",
+    "pos": "n.",
+    "meaning": "营业额/人员流动",
+    "example": "The company's annual turnover exceeds 100 million dollars.",
+    "exampleCn": "公司的年营业额超过一亿美元。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4949,
+    "word": "export",
+    "phonetic": "ɪkˈspɔːt",
+    "pos": "v./n.",
+    "meaning": "出口/输出",
+    "example": "The country exports tea and coffee.",
+    "exampleCn": "该国出口茶和咖啡。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4950,
+    "word": "quota",
+    "phonetic": "ˈkwəʊtə",
+    "pos": "n.",
+    "meaning": "配额/限额",
+    "example": "The government set a quota on imports of steel.",
+    "exampleCn": "政府设定了钢材进口配额。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4951,
+    "word": "share",
+    "phonetic": "ʃeə",
+    "pos": "n./v.",
+    "meaning": "股份/分享",
+    "example": "She bought shares in the company.",
+    "exampleCn": "她买了那家公司的股份。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4952,
+    "word": "stockbroker",
+    "phonetic": "ˈstɒkbrəʊkə",
+    "pos": "n.",
+    "meaning": "股票经纪人",
+    "example": "The stockbroker advised clients on where to invest.",
+    "exampleCn": "股票经纪人建议客户投资方向。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4953,
+    "word": "accountable",
+    "phonetic": "əˈkaʊntəbl",
+    "pos": "adj.",
+    "meaning": "应负责的/有义务的",
+    "example": "Politicians must be accountable to the public.",
+    "exampleCn": "政客们必须对公众负责。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  }
+]

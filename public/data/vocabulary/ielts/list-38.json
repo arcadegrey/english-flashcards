@@ -1,0 +1,1091 @@
+[
+  {
+    "id": 39,
+    "word": "agreement",
+    "phonetic": "/əˈɡriːmənt/",
+    "pos": "n.",
+    "meaning": "协议，同意",
+    "example": "They reached an agreement on the terms.",
+    "exampleCn": "他们就条款达成了协议。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38",
+      "44"
+    ]
+  },
+  {
+    "id": 79,
+    "word": "administration",
+    "phonetic": "/ədˌmɪnɪˈstreɪʃn/",
+    "pos": "n.",
+    "meaning": "管理/行政部门/政府",
+    "example": "The administration introduced new rules for public schools.",
+    "exampleCn": "行政部门为公立学校推出了新规定。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 194,
+    "word": "authority",
+    "phonetic": "/ɔːˈθɔːrəti/",
+    "pos": "n.",
+    "meaning": "权威，当局",
+    "example": "The local authority approved the plan.",
+    "exampleCn": "地方当局批准了这个计划。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 228,
+    "word": "behalf",
+    "phonetic": "/bɪˈhæf/",
+    "pos": "n.",
+    "meaning": "代表",
+    "example": "I'm speaking on behalf of the team.",
+    "exampleCn": "我代表团队发言。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 684,
+    "word": "irregular",
+    "phonetic": "/ɪˈreɡjələ(r)/",
+    "pos": "adj.",
+    "meaning": "不规则的；不规律的",
+    "example": "His heartbeat is irregular.",
+    "exampleCn": "他的心跳不规则。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 685,
+    "word": "neutral",
+    "phonetic": "/ˈnjuːtrəl/",
+    "pos": "adj./n.",
+    "meaning": "中立的/中立国",
+    "example": "Switzerland remained neutral.",
+    "exampleCn": "瑞士保持中立。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 766,
+    "word": "govern",
+    "phonetic": "/ˈɡʌvn/",
+    "pos": "v.",
+    "meaning": "统治；管理；支配",
+    "example": "The king governed the country.",
+    "exampleCn": "国王统治着国家。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 941,
+    "word": "secretary",
+    "phonetic": "/ˈsekrəteri/",
+    "pos": "n.",
+    "meaning": "秘书",
+    "example": "The secretary answered the phone politely.",
+    "exampleCn": "秘书礼貌地接了电话。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 1177,
+    "word": "headquarters",
+    "phonetic": "/ˈhedˌkwɔːrtərz/",
+    "pos": "n.",
+    "meaning": "总部",
+    "example": "The company moved its headquarters to Shanghai.",
+    "exampleCn": "这家公司把总部迁到了上海。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 1236,
+    "word": "democracy",
+    "phonetic": "/dɪˈmɑːkrəsi/",
+    "pos": "n.",
+    "meaning": "民主；民主制度",
+    "example": "Democracy depends on active public participation.",
+    "exampleCn": "民主依赖于公众的积极参与。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 1378,
+    "word": "reform",
+    "phonetic": "/rɪˈfɔːrm/",
+    "pos": "n./v.",
+    "meaning": "改革/改革，改进",
+    "example": "The government introduced major educational reforms.",
+    "exampleCn": "政府推出了重大教育改革。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 1821,
+    "word": "municipal",
+    "phonetic": "/mjuːˈnɪsɪpl/",
+    "pos": "adj.",
+    "meaning": "市政的/地方政府的",
+    "example": "The municipal government built a new public library.",
+    "exampleCn": "市政府建造了一座新的公共图书馆。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 2035,
+    "word": "regulate",
+    "phonetic": "/ˈreɡjuleɪt/",
+    "pos": "v.",
+    "meaning": "调节/管理/控制",
+    "example": "The body must regulate its temperature.",
+    "exampleCn": "身体必须调节自身温度。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38",
+      "43"
+    ]
+  },
+  {
+    "id": 2279,
+    "word": "process",
+    "phonetic": "/ˈprɑːses/",
+    "pos": "n./v.",
+    "meaning": "过程/工序/处理",
+    "example": "Learning a language is a long process.",
+    "exampleCn": "学习一门语言是一个漫长的过程。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 2489,
+    "word": "premier",
+    "phonetic": "/prɪˈmɪr/",
+    "pos": "adj./n.",
+    "meaning": "首要的/总理/首映",
+    "example": "The city is a premier center for medical research.",
+    "exampleCn": "这座城市是重要的医学研究中心。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 2540,
+    "word": "harness",
+    "phonetic": "/ˈhɑːrnɪs/",
+    "pos": "n./v.",
+    "meaning": "马具/安全带/利用/控制",
+    "example": "Engineers tried to harness wind power efficiently.",
+    "exampleCn": "工程师试图高效利用风能。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8",
+      "38"
+    ]
+  },
+  {
+    "id": 2620,
+    "word": "regime",
+    "phonetic": "/reɪˈʒiːm/",
+    "pos": "n.",
+    "meaning": "政权/制度/管理体制",
+    "example": "The old regime collapsed after the revolution.",
+    "exampleCn": "革命后旧政权崩溃了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 2736,
+    "word": "communal",
+    "phonetic": "/kəˈmjuːnəl/",
+    "pos": "adj.",
+    "meaning": "公共的/社区的/共有的",
+    "example": "The village has a communal garden for all residents.",
+    "exampleCn": "这个村庄有一个供所有居民使用的公共花园。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 2925,
+    "word": "senate",
+    "phonetic": "/ˈsenət/",
+    "pos": "n.",
+    "meaning": "参议院/大学评议会",
+    "example": "The bill was debated in the Senate.",
+    "exampleCn": "该法案在参议院进行了辩论。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 3036,
+    "word": "democratic",
+    "phonetic": "/ˌdeməˈkrætɪk/",
+    "pos": "adj.",
+    "meaning": "民主的/民主制度的",
+    "example": "The organization uses a democratic process to elect leaders.",
+    "exampleCn": "该组织采用民主程序选举领导者。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 3077,
+    "word": "hierarchy",
+    "phonetic": "/ˈhaɪərɑːrki/",
+    "pos": "n.",
+    "meaning": "等级制度/层级结构",
+    "example": "The company has a clear hierarchy of managers and employees.",
+    "exampleCn": "公司有清晰的管理者和员工层级结构。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 3098,
+    "word": "conservative",
+    "phonetic": "/kənˈsɜːrvətɪv/",
+    "pos": "adj./n.",
+    "meaning": "保守的/谨慎的/保守派人士",
+    "example": "The researcher made a conservative estimate of the cost.",
+    "exampleCn": "研究人员对成本作出了保守估计。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 3258,
+    "word": "delegate",
+    "phonetic": "/ˈdelɪɡət/",
+    "pos": "n./v.",
+    "meaning": "代表/委派/授权",
+    "example": "The manager decided to delegate the task to her assistant.",
+    "exampleCn": "经理决定把这项任务委派给她的助手。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 3975,
+    "word": "politics",
+    "phonetic": "ˈpɒlɪtɪks",
+    "pos": "n.",
+    "meaning": "政治学/政治",
+    "example": "He has a degree in politics from a top university.",
+    "exampleCn": "他拥有一所顶尖大学的政治学学位。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13",
+      "38"
+    ]
+  },
+  {
+    "id": 4345,
+    "word": "material",
+    "phonetic": "məˈtɪəriəl",
+    "pos": "n.",
+    "meaning": "材料/物质",
+    "example": "Cotton is a natural material used for clothing.",
+    "exampleCn": "棉花是一种用于服装的天然材料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25",
+      "38"
+    ]
+  },
+  {
+    "id": 4798,
+    "word": "republic",
+    "phonetic": "rɪˈpʌblɪk",
+    "pos": "n.",
+    "meaning": "共和国/共和政体",
+    "example": "France became a republic after the revolution.",
+    "exampleCn": "革命后法国成为共和国。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4799,
+    "word": "republican",
+    "phonetic": "rɪˈpʌblɪkən",
+    "pos": "adj./n.",
+    "meaning": "共和国的/共和党人",
+    "example": "He is a member of the Republican Party.",
+    "exampleCn": "他是共和党成员。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4800,
+    "word": "marxism",
+    "phonetic": "ˈmɑːksɪzəm",
+    "pos": "n.",
+    "meaning": "马克思主义",
+    "example": "Marxism had a great influence on the 20th century.",
+    "exampleCn": "马克思主义对20世纪产生了巨大影响。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4801,
+    "word": "socialism",
+    "phonetic": "ˈsəʊʃəlɪzəm",
+    "pos": "n.",
+    "meaning": "社会主义",
+    "example": "The country adopted socialism after independence.",
+    "exampleCn": "该国独立后实行社会主义。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4802,
+    "word": "socialist",
+    "phonetic": "ˈsəʊʃəlɪst",
+    "pos": "adj./n.",
+    "meaning": "社会主义的/社会主义者",
+    "example": "He was a leading socialist thinker.",
+    "exampleCn": "他是一位重要的社会主义思想家。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4803,
+    "word": "communism",
+    "phonetic": "ˈkɒmjʊnɪzəm",
+    "pos": "n.",
+    "meaning": "共产主义",
+    "example": "Communism spread across Eastern Europe after the war.",
+    "exampleCn": "战后共产主义在东欧传播。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4804,
+    "word": "communist",
+    "phonetic": "ˈkɒmjʊnɪst",
+    "pos": "adj./n.",
+    "meaning": "共产主义的/共产主义者",
+    "example": "The Communist Party was founded in 1921.",
+    "exampleCn": "共产党成立于1921年。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4805,
+    "word": "government",
+    "phonetic": "ˈɡʌvənmənt",
+    "pos": "n.",
+    "meaning": "政府/内阁",
+    "example": "The government introduced new tax policies.",
+    "exampleCn": "政府推出了新的税收政策。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4806,
+    "word": "authorise",
+    "phonetic": "ˈɔːθəraɪz",
+    "pos": "v.",
+    "meaning": "授权/批准",
+    "example": "The manager authorised the payment.",
+    "exampleCn": "经理批准了这笔付款。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4807,
+    "word": "political",
+    "phonetic": "pəˈlɪtɪkl",
+    "pos": "adj.",
+    "meaning": "政治的/政党的",
+    "example": "She has strong political beliefs.",
+    "exampleCn": "她有坚定的政治信仰。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4808,
+    "word": "policy",
+    "phonetic": "ˈpɒləsi",
+    "pos": "n.",
+    "meaning": "政策/方针",
+    "example": "The company has a strict no-smoking policy.",
+    "exampleCn": "公司有严格的禁烟政策。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4809,
+    "word": "politician",
+    "phonetic": "ˌpɒlɪˈtɪʃn",
+    "pos": "n.",
+    "meaning": "政治家/政客",
+    "example": "The politician promised to improve healthcare.",
+    "exampleCn": "那位政治家承诺改善医疗保健。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4810,
+    "word": "democratise",
+    "phonetic": "dɪˈmɒkrətaɪz",
+    "pos": "v.",
+    "meaning": "使民主化/推行民主",
+    "example": "The reforms aimed to democratise the political system.",
+    "exampleCn": "改革旨在使政治体制民主化。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4811,
+    "word": "bureaucracy",
+    "phonetic": "bjʊəˈrɒkrəsi",
+    "pos": "n.",
+    "meaning": "官僚机构/官僚作风",
+    "example": "Too much bureaucracy slows down decision-making.",
+    "exampleCn": "过多的官僚作风减慢了决策速度。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4812,
+    "word": "bureaucratism",
+    "phonetic": "bjʊəˈrɒkrətɪzəm",
+    "pos": "n.",
+    "meaning": "官僚主义/官僚制度",
+    "example": "Bureaucratism can hinder innovation in government.",
+    "exampleCn": "官僚主义会阻碍政府的创新。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4813,
+    "word": "egalitarian",
+    "phonetic": "ɪˌɡælɪˈteəriən",
+    "pos": "adj.",
+    "meaning": "平等主义的/平等主义",
+    "example": "They believe in an egalitarian society.",
+    "exampleCn": "他们信仰平等主义社会。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4814,
+    "word": "materialism",
+    "phonetic": "məˈtɪəriəlɪzəm",
+    "pos": "n.",
+    "meaning": "唯物主义/物质主义",
+    "example": "Many people criticise the materialism of modern society.",
+    "exampleCn": "许多人批评现代社会的物质主义。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4815,
+    "word": "revolution",
+    "phonetic": "ˌrevəˈluːʃn",
+    "pos": "n.",
+    "meaning": "革命/变革",
+    "example": "The Industrial Revolution changed the world forever.",
+    "exampleCn": "工业革命永远改变了世界。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4816,
+    "word": "revolutionary",
+    "phonetic": "ˌrevəˈluːʃənəri",
+    "pos": "adj.",
+    "meaning": "革命的/革命性的",
+    "example": "The new treatment was a revolutionary breakthrough.",
+    "exampleCn": "新疗法是一次革命性的突破。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4817,
+    "word": "procession",
+    "phonetic": "prəˈseʃn",
+    "pos": "n.",
+    "meaning": "游行/行列",
+    "example": "A long procession of people marched through the streets.",
+    "exampleCn": "一列长长的游行队伍穿过街道。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4818,
+    "word": "meltdown",
+    "phonetic": "ˈmeltdaʊn",
+    "pos": "n.",
+    "meaning": "崩溃/垮台",
+    "example": "The stock market crash caused a financial meltdown.",
+    "exampleCn": "股市崩盘引发了金融崩溃。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4819,
+    "word": "bilateral",
+    "phonetic": "ˌbaɪˈlætərəl",
+    "pos": "adj.",
+    "meaning": "双边的/双方的",
+    "example": "They signed a bilateral trade agreement.",
+    "exampleCn": "他们签署了双边贸易协定。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4820,
+    "word": "arena",
+    "phonetic": "əˈriːnə",
+    "pos": "n.",
+    "meaning": "竞技场/舞台",
+    "example": "The debate was held in a public arena.",
+    "exampleCn": "辩论在公共场合举行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4821,
+    "word": "banner",
+    "phonetic": "ˈbænə",
+    "pos": "n.",
+    "meaning": "横幅/旗帜",
+    "example": "Protesters carried banners through the streets.",
+    "exampleCn": "抗议者举着横幅穿过街道。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4822,
+    "word": "president",
+    "phonetic": "ˈprezɪdənt",
+    "pos": "n.",
+    "meaning": "总统/主席",
+    "example": "The president addressed the nation on television.",
+    "exampleCn": "总统在电视上向全国发表了讲话。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4823,
+    "word": "premiership",
+    "phonetic": "ˈpremiəʃɪp",
+    "pos": "n.",
+    "meaning": "总理任期/首相职位",
+    "example": "During his premiership, the economy grew rapidly.",
+    "exampleCn": "在他任总理期间，经济增长迅速。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4824,
+    "word": "minister",
+    "phonetic": "ˈmɪnɪstə",
+    "pos": "n.",
+    "meaning": "部长/大臣",
+    "example": "The foreign minister will visit China next week.",
+    "exampleCn": "外交部长将于下周访问中国。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4825,
+    "word": "parliament",
+    "phonetic": "ˈpɑːləmənt",
+    "pos": "n.",
+    "meaning": "议会/国会",
+    "example": "The bill was passed by parliament yesterday.",
+    "exampleCn": "议会昨天通过了该法案。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4826,
+    "word": "conference",
+    "phonetic": "ˈkɒnfərəns",
+    "pos": "n.",
+    "meaning": "会议/大会",
+    "example": "Scientists from around the world attended the conference.",
+    "exampleCn": "来自世界各地的科学家参加了会议。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4827,
+    "word": "delegation",
+    "phonetic": "ˌdelɪˈɡeɪʃn",
+    "pos": "n.",
+    "meaning": "代表团/委派",
+    "example": "A Chinese delegation attended the trade talks.",
+    "exampleCn": "一个中国代表团出席了贸易会谈。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4828,
+    "word": "statesman",
+    "phonetic": "ˈsteɪtsmən",
+    "pos": "n.",
+    "meaning": "政治家/国务活动家",
+    "example": "He was regarded as a wise and experienced statesman.",
+    "exampleCn": "他被视为一位睿智而有经验的政治家。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4829,
+    "word": "mayor",
+    "phonetic": "meə",
+    "pos": "n.",
+    "meaning": "市长",
+    "example": "The mayor opened the new public library.",
+    "exampleCn": "市长为新公共图书馆揭幕。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4830,
+    "word": "service",
+    "phonetic": "ˈsɜːvɪs",
+    "pos": "n.",
+    "meaning": "服务/公共服务",
+    "example": "The government provides free healthcare services.",
+    "exampleCn": "政府提供免费医疗服务。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4831,
+    "word": "bureau",
+    "phonetic": "ˈbjʊərəʊ",
+    "pos": "n.",
+    "meaning": "局/办事处",
+    "example": "The weather bureau issued a storm warning.",
+    "exampleCn": "气象局发布了风暴预警。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4832,
+    "word": "department",
+    "phonetic": "dɪˈpɑːtmənt",
+    "pos": "n.",
+    "meaning": "部门/司/处",
+    "example": "She works in the human resources department.",
+    "exampleCn": "她在人力资源部工作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  }
+]

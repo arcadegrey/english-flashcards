@@ -162,10 +162,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 11,
@@ -178,10 +183,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 12,
@@ -246,7 +256,12 @@
     "exampleCn": "他上周开了一个银行账户。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
     ]
   },
   {
@@ -296,10 +311,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 19,
@@ -388,10 +408,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 24,
@@ -450,7 +475,12 @@
     "exampleCn": "他承认犯了一个错误。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
     ]
   },
   {
@@ -545,7 +575,12 @@
     "exampleCn": "天气会影响你的心情。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
     ]
   },
   {
@@ -558,7 +593,12 @@
     "exampleCn": "我现在买不起新车。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
     ]
   },
   {
@@ -601,10 +641,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 38,
@@ -617,10 +662,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 39,
@@ -632,7 +682,13 @@
     "exampleCn": "他们就条款达成了协议。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38",
+      "44"
     ]
   },
   {
@@ -666,7 +722,12 @@
     "exampleCn": "火警在午夜响了。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
     ]
   },
   {
@@ -734,7 +795,12 @@
     "exampleCn": "大楼内不允许养宠物。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
     ]
   },
   {
@@ -792,7 +858,12 @@
     "exampleCn": "她的志向是成为一名医生。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
     ]
   },
   {
@@ -942,10 +1013,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 60,
@@ -1079,10 +1155,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 69,
@@ -1239,10 +1320,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 80,
@@ -1267,7 +1353,12 @@
     "exampleCn": "博物馆免费入场。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
     ]
   },
   {
@@ -1351,7 +1442,12 @@
     "exampleCn": "公司宣传了新产品。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
     ]
   },
   {
@@ -1411,7 +1507,12 @@
     "exampleCn": "研究证实了我们的假设。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
     ]
   },
   {
@@ -1437,7 +1538,12 @@
     "exampleCn": "他们住在一个富裕的社区。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
     ]
   },
   {
@@ -1547,10 +1653,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 102,
@@ -2254,10 +2365,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 146,
@@ -2301,7 +2417,12 @@
     "exampleCn": "这封信是匿名发送的。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
     ]
   },
   {
@@ -2375,10 +2496,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 154,
@@ -2715,7 +2841,12 @@
     "exampleCn": "警察逮捕了嫌疑人。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
     ]
   },
   {
@@ -2853,7 +2984,12 @@
     "exampleCn": "我可以帮您什么吗？",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
     ]
   },
   {
@@ -2867,10 +3003,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 182,
@@ -3029,7 +3170,12 @@
     "exampleCn": "你昨天参加会议了吗？",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
     ]
   },
   {
@@ -3084,7 +3230,12 @@
     "exampleCn": "地方当局批准了这个计划。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
     ]
   },
   {
@@ -3617,7 +3768,12 @@
     "exampleCn": "我代表团队发言。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
     ]
   },
   {
@@ -3778,7 +3934,12 @@
     "exampleCn": "新政策将使每个人受益。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
     ]
   },
   {
@@ -3822,7 +3983,12 @@
     "exampleCn": "他感到被他最好的朋友背叛了。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
     ]
   },
   {
@@ -4055,7 +4221,12 @@
     "exampleCn": "不要为你的错误责怪别人。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
     ]
   },
   {
@@ -4087,10 +4258,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 259,
@@ -4258,7 +4434,12 @@
     "exampleCn": "建筑师给我们看了蓝图。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
     ]
   },
   {
@@ -4361,10 +4542,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 277,
@@ -4552,10 +4738,15 @@
     "category": "cet6",
     "categories": [
       "cet6",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 290,
@@ -4573,7 +4764,8 @@
     "ieltsList": "24",
     "ieltsLists": [
       "24",
-      "37"
+      "37",
+      "46"
     ]
   },
   {
@@ -5196,7 +5388,12 @@
     "exampleCn": "子弹击中了目标。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
     ]
   },
   {
@@ -5296,10 +5493,15 @@
     "category": "cet6",
     "categories": [
       "cet6",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 338,
@@ -5659,10 +5861,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 361,
@@ -5906,7 +6113,12 @@
     "exampleCn": "她想在医学领域发展事业。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
     ]
   },
   {
@@ -5933,10 +6145,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 379,
@@ -6396,7 +6613,8 @@
     "list": "4",
     "ieltsList": "29",
     "ieltsLists": [
-      "29"
+      "29",
+      "41"
     ]
   },
   {
@@ -6423,10 +6641,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 410,
@@ -6475,7 +6698,12 @@
     "exampleCn": "不要错过这个机会。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
     ]
   },
   {
@@ -6669,7 +6897,12 @@
     "exampleCn": "他考试作弊。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
     ]
   },
   {
@@ -6942,7 +7175,12 @@
     "exampleCn": "选择正确答案。",
     "category": "cet4",
     "categories": [
-      "cet4"
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
     ]
   },
   {
@@ -6956,10 +7194,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 445,
@@ -7137,10 +7380,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet6"
+      "cet6",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 456,
@@ -7152,7 +7400,12 @@
     "exampleCn": "他声称自己是无辜的。",
     "category": "cet6",
     "categories": [
-      "cet6"
+      "cet6",
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
     ]
   },
   {
@@ -7248,7 +7501,12 @@
     "exampleCn": "店员帮我找到了产品。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
     ]
   },
   {
@@ -7436,10 +7694,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet6"
+      "cet6",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 478,
@@ -7555,7 +7818,12 @@
     "exampleCn": "他抛硬币决定。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
     ]
   },
   {
@@ -7772,7 +8040,12 @@
     "exampleCn": "这家酒店提供舒适和奢华。",
     "category": "daily",
     "categories": [
-      "daily"
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
     ]
   },
   {
@@ -7786,10 +8059,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet6"
+      "cet6",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 500,
@@ -7922,10 +8200,15 @@
     "exampleCn": "今年的犯罪率下降了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 508,
@@ -7937,10 +8220,15 @@
     "exampleCn": "他犯了一个严重的错误。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 509,
@@ -8089,10 +8377,15 @@
     "exampleCn": "我们有足够的时间完成。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 519,
@@ -8268,10 +8561,15 @@
     "exampleCn": "实验被仔细地进行。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 530,
@@ -8772,10 +9070,15 @@
     "exampleCn": "警察收缴了非法毒品。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 562,
@@ -8802,10 +9105,15 @@
     "exampleCn": "他向警方作了陈述。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 564,
@@ -8834,10 +9142,15 @@
     "exampleCn": "他并非有意冒犯任何人。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 566,
@@ -8849,10 +9162,15 @@
     "exampleCn": "我向所有学生推荐这本书。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 567,
@@ -9001,10 +9319,15 @@
     "exampleCn": "提案被委员会驳回了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 576,
@@ -9071,10 +9394,15 @@
     "exampleCn": "产品必须符合安全标准。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 580,
@@ -9281,10 +9609,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 593,
@@ -9571,10 +9904,15 @@
     "exampleCn": "费用太高了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 611,
@@ -9676,10 +10014,15 @@
     "exampleCn": "我们需要设定现实的目标。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 618,
@@ -9856,10 +10199,15 @@
     "exampleCn": "房子被树木环绕。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 629,
@@ -10111,10 +10459,15 @@
     "exampleCn": "他投资了股市。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 644,
@@ -10331,10 +10684,15 @@
     "exampleCn": "不要欺骗你的朋友。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 657,
@@ -10796,10 +11154,15 @@
     "exampleCn": "他的心跳不规则。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 685,
@@ -10811,10 +11174,15 @@
     "exampleCn": "瑞士保持中立。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 686,
@@ -10860,10 +11228,15 @@
     "exampleCn": "她目击了事故。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 689,
@@ -11069,7 +11442,8 @@
     "list": "3",
     "ieltsList": "33",
     "ieltsLists": [
-      "33"
+      "33",
+      "39"
     ]
   },
   {
@@ -11097,10 +11471,15 @@
     "exampleCn": "她站在柜台前。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 704,
@@ -11112,10 +11491,15 @@
     "exampleCn": "蚂蚁建了一个群体。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 705,
@@ -11379,10 +11763,15 @@
     "exampleCn": "我们需要互相合作。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 721,
@@ -11491,10 +11880,15 @@
     "exampleCn": "社区团结起来了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 728,
@@ -11671,10 +12065,15 @@
     "exampleCn": "他在海外工作。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 739,
@@ -11903,10 +12302,15 @@
     "exampleCn": "他给了我一个暗示。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 753,
@@ -11978,10 +12382,15 @@
     "exampleCn": "盾牌保护了他。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 758,
@@ -12028,10 +12437,15 @@
     "exampleCn": "他们和谐地生活。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 761,
@@ -12133,10 +12547,15 @@
     "exampleCn": "国王统治着国家。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 767,
@@ -12193,10 +12612,15 @@
     "exampleCn": "许多人在贫困国家挨饿。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 771,
@@ -12278,10 +12702,15 @@
     "exampleCn": "每个人都是独特的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 776,
@@ -12344,10 +12773,15 @@
     "exampleCn": "这个国家进口石油。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 780,
@@ -12379,10 +12813,15 @@
     "exampleCn": "这是个特殊场合。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 782,
@@ -12804,10 +13243,15 @@
     "exampleCn": "罗马建筑令人印象深刻。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 807,
@@ -12979,10 +13423,15 @@
     "exampleCn": "设定高标准。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 818,
@@ -13224,10 +13673,15 @@
     "exampleCn": "他的职业是医生。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 833,
@@ -13506,10 +13960,15 @@
     "exampleCn": "广告时间要到了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 849,
@@ -13566,10 +14025,15 @@
     "exampleCn": "这家店零售服装。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 853,
@@ -13708,10 +14172,15 @@
     "exampleCn": "工会要求改善工作条件。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 861,
@@ -13963,10 +14432,15 @@
     "exampleCn": "人们为自由和正义而斗争。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 876,
@@ -14008,10 +14482,15 @@
     "exampleCn": "旅行可以丰富你对世界的理解。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 879,
@@ -14078,10 +14557,15 @@
     "exampleCn": "我们不能保证每次都成功。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 883,
@@ -14314,10 +14798,15 @@
     "exampleCn": "总统宣布全国放假一天。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 898,
@@ -14583,10 +15072,15 @@
     "exampleCn": "她决定从事医学职业。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 915,
@@ -14778,10 +15272,15 @@
     "exampleCn": "试着从她的角度理解这个问题。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 927,
@@ -14980,10 +15479,15 @@
     "exampleCn": "她每年都负责协调学校活动。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 939,
@@ -14995,10 +15499,15 @@
     "exampleCn": "这个国家面临经济危机。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 940,
@@ -15025,10 +15534,15 @@
     "exampleCn": "秘书礼貌地接了电话。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 942,
@@ -15172,10 +15686,15 @@
     "exampleCn": "去年出台了新的安全法规。/体温调节对生存至关重要。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 951,
@@ -15312,10 +15831,15 @@
     "exampleCn": "军队入侵了邻国。/吵闹的音乐打破了房间的宁静。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 960,
@@ -15394,10 +15918,15 @@
     "exampleCn": "她是一个可靠的信息来源。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 965,
@@ -15739,10 +16268,15 @@
     "exampleCn": "每个公民都有投票权。/表决结果很接近，但提案通过了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 985,
@@ -15869,10 +16403,15 @@
     "exampleCn": "学生买票有折扣。/我们不应忽视他的经验。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 993,
@@ -16044,10 +16583,15 @@
     "exampleCn": "新系统消耗更少能源。/人们应该少摄入糖分。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 1004,
@@ -16310,10 +16854,15 @@
     "exampleCn": "机场安检已经严格得多了。/经济安全对许多家庭都很重要。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 1020,
@@ -16457,10 +17006,15 @@
     "exampleCn": "这家初创公司吸引了几位国际投资者。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 1029,
@@ -16658,10 +17212,15 @@
     "exampleCn": "孩子们经常假装自己是超级英雄。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 1041,
@@ -17165,10 +17724,15 @@
     "exampleCn": "青少年想要独立于父母。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 1072,
@@ -17290,10 +17854,15 @@
     "exampleCn": "坏消息会让人沮丧。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 1080,
@@ -17380,10 +17949,15 @@
     "exampleCn": "炸弹可能随时爆炸。/1950年后人口激增。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 1085,
@@ -18184,10 +18758,15 @@
     "exampleCn": "当地货币贬值了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 1134,
@@ -18503,10 +19082,15 @@
     "exampleCn": "灾难发生后许多市民捐了款。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 1154,
@@ -18643,10 +19227,15 @@
     "exampleCn": "这项政策导致成本显著下降。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 1162,
@@ -18923,10 +19512,15 @@
     "exampleCn": "这家公司把总部迁到了上海。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 1178,
@@ -18973,10 +19567,15 @@
     "exampleCn": "这家公司因违反合同被起诉了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 1181,
@@ -19018,10 +19617,15 @@
     "exampleCn": "许多学生表现出对网课的偏好。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 1184,
@@ -19063,10 +19667,15 @@
     "exampleCn": "请在表格上填写你的职业。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 1187,
@@ -19078,10 +19687,15 @@
     "exampleCn": "这所大学计划扩建图书馆。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 1188,
@@ -19258,10 +19872,15 @@
     "exampleCn": "这家商店储备了大量新鲜水果。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 1199,
@@ -19387,7 +20006,8 @@
     "list": "8",
     "ieltsList": "23",
     "ieltsLists": [
-      "23"
+      "23",
+      "44"
     ]
   },
   {
@@ -19570,10 +20190,15 @@
     "exampleCn": "锻炼已成为她日常生活的一部分。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 1218,
@@ -19882,10 +20507,15 @@
     "exampleCn": "民主依赖于公众的积极参与。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 1237,
@@ -19912,10 +20542,15 @@
     "exampleCn": "楼里的每位居民都收到了一份通知。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 1239,
@@ -19927,10 +20562,15 @@
     "exampleCn": "她说服了父母支持她的决定。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 1240,
@@ -19977,10 +20617,15 @@
     "exampleCn": "培训课程持续了三个小时。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 1243,
@@ -20007,10 +20652,15 @@
     "exampleCn": "这两份报告彼此矛盾。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 1245,
@@ -20029,7 +20679,8 @@
     "list": "9",
     "ieltsList": "7",
     "ieltsLists": [
-      "7"
+      "7",
+      "42"
     ]
   },
   {
@@ -20317,10 +20968,15 @@
     "exampleCn": "随着风变大，火焰烧得更旺了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 1265,
@@ -20369,7 +21025,8 @@
     "list": "9",
     "ieltsList": "33",
     "ieltsLists": [
-      "33"
+      "33",
+      "39"
     ]
   },
   {
@@ -20597,10 +21254,15 @@
     "exampleCn": "他试图在会议期间克制自己的愤怒。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 1282,
@@ -21049,10 +21711,15 @@
     "exampleCn": "睡眠不足会使学生失去专注力。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 1310,
@@ -21191,10 +21858,15 @@
     "exampleCn": "这项政策旨在改善儿童福利。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 1319,
@@ -21221,10 +21893,15 @@
     "exampleCn": "这家公司正面临严重的财务问题。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 1321,
@@ -21516,10 +22193,15 @@
     "exampleCn": "市民将在下个月选举一位新市长。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 1339,
@@ -21641,10 +22323,15 @@
     "exampleCn": "星星在晴朗的夜空中闪烁。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 1347,
@@ -21686,10 +22373,15 @@
     "exampleCn": "没有证据表明这个理论是正确的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1350,
@@ -21743,7 +22435,8 @@
     "list": "10",
     "ieltsList": "33",
     "ieltsLists": [
-      "33"
+      "33",
+      "39"
     ]
   },
   {
@@ -21773,10 +22466,15 @@
     "exampleCn": "科学家继续调查这种疾病的成因。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 1355,
@@ -22107,10 +22805,15 @@
     "exampleCn": "这家公司今年报告了稳定增长。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 1374,
@@ -22187,10 +22890,15 @@
     "exampleCn": "政府推出了重大教育改革。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 1379,
@@ -22502,10 +23210,15 @@
     "exampleCn": "假期结束后销售开始下降。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 1398,
@@ -22642,10 +23355,15 @@
     "exampleCn": "这场活动旨在团结当地社区。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 1407,
@@ -22924,10 +23642,15 @@
     "exampleCn": "饮食与健康之间有明显关联。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 1424,
@@ -23031,10 +23754,15 @@
     "exampleCn": "公司的收入增长了15%。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 1430,
@@ -23217,10 +23945,15 @@
     "exampleCn": "新规定限制进入实验室。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 1441,
@@ -23297,10 +24030,15 @@
     "exampleCn": "农民常为作物投保以防恶劣天气。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 1446,
@@ -23527,10 +24265,15 @@
     "exampleCn": "夜间冷空气可能从山上下降。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 1460,
@@ -23667,10 +24410,15 @@
     "exampleCn": "团队制定了保护濒危物种的策略。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1469,
@@ -24286,10 +25034,15 @@
     "exampleCn": "几家公司投标建设这座桥。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 1508,
@@ -24351,10 +25104,15 @@
     "exampleCn": "河流在河口附近沉积一层层沙子。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 1512,
@@ -24366,10 +25124,15 @@
     "exampleCn": "时间是这个研究项目的主要限制。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 1513,
@@ -24895,10 +25658,15 @@
     "exampleCn": "博物馆偶尔会举办访问学者的讲座。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1546,
@@ -25045,10 +25813,15 @@
     "exampleCn": "这家公司因违反环境法规而被罚款。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 1556,
@@ -25249,10 +26022,15 @@
     "exampleCn": "该法院在宪法事务上拥有最高权威。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 1568,
@@ -25556,10 +26334,15 @@
     "exampleCn": "公民有遵守法律的义务。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 1587,
@@ -25741,10 +26524,15 @@
     "exampleCn": "这种新药正在临床试验中接受测试。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 1598,
@@ -25816,10 +26604,15 @@
     "exampleCn": "他摘水果时，刺扎到了他的手指。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 1603,
@@ -25831,10 +26624,15 @@
     "exampleCn": "殖民时期的建筑仍然影响着这座城市的外观。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 1604,
@@ -26182,10 +26980,15 @@
     "exampleCn": "火车在车站外突然停了下来。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1626,
@@ -26524,10 +27327,15 @@
     "exampleCn": "新证据帮助驳斥了旧理论。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1647,
@@ -27214,10 +28022,15 @@
     "exampleCn": "游客不应该闯入私人财产。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 1690,
@@ -27354,10 +28167,15 @@
     "exampleCn": "这两家公司是科技市场上的竞争对手。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1698,
@@ -27414,10 +28232,15 @@
     "exampleCn": "毕业后找到工作的前景有所改善。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 1702,
@@ -27634,10 +28457,15 @@
     "exampleCn": "学校将实施一个新的阅读项目。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 1716,
@@ -27731,10 +28559,15 @@
     "exampleCn": "研究人员在实验中遵循严格的规程。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 1722,
@@ -28028,10 +28861,15 @@
     "exampleCn": "每一笔线上交易都需要安全的信息。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 1740,
@@ -28430,10 +29268,15 @@
     "exampleCn": "污染会降低饮用水质量。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 1764,
@@ -28465,10 +29308,15 @@
     "exampleCn": "法律要求公司报告安全风险。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1766,
@@ -28495,10 +29343,15 @@
     "exampleCn": "迅速的回应防止了进一步损害。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 1768,
@@ -28755,10 +29608,15 @@
     "exampleCn": "经济萧条减少了就业机会。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 1784,
@@ -28942,10 +29800,15 @@
     "exampleCn": "这家小企业发展成了一家国际公司。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 1796,
@@ -29037,10 +29900,15 @@
     "exampleCn": "强烈的职业道德在许多文化中受到重视。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 1802,
@@ -29351,10 +30219,15 @@
     "exampleCn": "市政府建造了一座新的公共图书馆。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 1822,
@@ -29381,10 +30254,15 @@
     "exampleCn": "请在申请中附上一份护照复印件。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1824,
@@ -29578,10 +30456,15 @@
     "exampleCn": "老师决定提名她获得这个奖项。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 1837,
@@ -29880,10 +30763,15 @@
     "exampleCn": "教练在比赛最后几分钟改变了战术。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1856,
@@ -30010,10 +30898,15 @@
     "exampleCn": "老师必须在科学实验期间监督学生。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 1864,
@@ -30116,10 +31009,15 @@
     "exampleCn": "这种药效很强，应该谨慎服用。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 1870,
@@ -30166,10 +31064,15 @@
     "exampleCn": "工厂不得向河流排放污水。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 1873,
@@ -30211,10 +31114,15 @@
     "exampleCn": "疾病迫使他把活动限制在家中。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 1876,
@@ -30483,10 +31391,15 @@
     "exampleCn": "培训项目让工人为各种可能的情景做好准备。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1892,
@@ -30602,10 +31515,15 @@
     "exampleCn": "有力的证据可以迫使人们改变看法。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1899,
@@ -30898,10 +31816,15 @@
     "exampleCn": "这家公司因向河中倾倒废物而被罚款。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 1917,
@@ -30913,10 +31836,15 @@
     "exampleCn": "这个氏族的成员有共同的祖先。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 1918,
@@ -31058,10 +31986,15 @@
     "exampleCn": "她参加了学校的写作比赛。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1927,
@@ -31108,10 +32041,15 @@
     "exampleCn": "许多居民反对修建这条高速公路。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 1930,
@@ -31393,10 +32331,15 @@
     "exampleCn": "早期定居者开始居住在这个山谷中。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 1948,
@@ -31940,10 +32883,15 @@
     "exampleCn": "他们申请抵押贷款购买第一套房子。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 1981,
@@ -32341,10 +33289,15 @@
     "exampleCn": "政府可能会对用水施加限制。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 2006,
@@ -32615,10 +33568,15 @@
     "exampleCn": "市民在广场举行了和平抗议。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 2023,
@@ -32680,10 +33638,15 @@
     "exampleCn": "一些研究者认为气候影响了迁徙。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 2027,
@@ -32830,10 +33793,16 @@
     "exampleCn": "身体必须调节自身温度。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38",
+      "43"
+    ]
   },
   {
     "id": 2036,
@@ -32960,10 +33929,15 @@
     "exampleCn": "课程将在假期后恢复。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 2044,
@@ -32975,10 +33949,15 @@
     "exampleCn": "这位研究者对当地文化表现出真正的兴趣。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 2045,
@@ -33227,10 +34206,15 @@
     "exampleCn": "领导人公开声明表示支持。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 2060,
@@ -33307,10 +34291,15 @@
     "exampleCn": "政策改变后，经济前景有所改善。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 2065,
@@ -33641,10 +34630,15 @@
     "exampleCn": "这座博物馆是一个重要的文化机构。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 2085,
@@ -33746,10 +34740,15 @@
     "exampleCn": "这座城市有大量移民人口。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 2092,
@@ -33871,10 +34870,15 @@
     "exampleCn": "他按下按钮将视频静音。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 2100,
@@ -34374,10 +35378,15 @@
     "exampleCn": "报告列出了公司的总收入。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 2131,
@@ -34404,10 +35413,15 @@
     "exampleCn": "污染是工业快速增长的严重后果。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 2133,
@@ -34811,10 +35825,15 @@
     "exampleCn": "一位经理将监督整个项目。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 2158,
@@ -35031,10 +36050,15 @@
     "exampleCn": "一个小火花引发了火灾。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 2171,
@@ -35046,10 +36070,15 @@
     "exampleCn": "这位商人出售布料和香料。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 2172,
@@ -35338,10 +36367,15 @@
     "exampleCn": "公司是一个法律实体。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 2190,
@@ -35448,10 +36482,15 @@
     "exampleCn": "大公司主导着市场。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 2197,
@@ -36090,10 +37129,15 @@
     "exampleCn": "有足够支持，这个项目一定会成功。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 2236,
@@ -36212,10 +37256,15 @@
     "exampleCn": "他们签了一份公寓租约。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 2244,
@@ -36583,10 +37632,15 @@
     "exampleCn": "教育应该是一项权利，而不是特权。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 2267,
@@ -36770,10 +37824,15 @@
     "exampleCn": "在线学习的激增迅速改变了教育。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 2279,
@@ -36785,10 +37844,15 @@
     "exampleCn": "学习一门语言是一个漫长的过程。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 2280,
@@ -36940,10 +38004,15 @@
     "exampleCn": "一位老师帮助调解学生之间的分歧。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 2290,
@@ -37005,10 +38074,15 @@
     "exampleCn": "研究人员用数据证明她的结论合理。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 2294,
@@ -37375,10 +38449,15 @@
     "exampleCn": "科学家怀疑污染导致了这种下降。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 2318,
@@ -37507,10 +38586,15 @@
     "exampleCn": "学校必须执行安全规定。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 2326,
@@ -37732,10 +38816,15 @@
     "exampleCn": "新证据似乎与旧理论相矛盾。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 2340,
@@ -37906,10 +38995,15 @@
     "exampleCn": "这个案件在法庭上解决了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 2351,
@@ -38046,10 +39140,15 @@
     "exampleCn": "政府面临巨大的预算赤字。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 2360,
@@ -38370,10 +39469,15 @@
     "exampleCn": "实验室必须遵守安全程序。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 2380,
@@ -38982,10 +40086,15 @@
     "exampleCn": "保留收据，以防需要退货。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 2415,
@@ -39077,10 +40186,15 @@
     "exampleCn": "王子希望继承王位。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 2421,
@@ -39439,10 +40553,15 @@
     "exampleCn": "在那段时期，线上学习成了常态。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 2444,
@@ -39591,10 +40710,15 @@
     "exampleCn": "这位国王的统治持续了将近四十年。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 2453,
@@ -39766,10 +40890,15 @@
     "exampleCn": "改革后，小企业开始繁荣起来。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 2464,
@@ -40190,10 +41319,15 @@
     "exampleCn": "这座城市是重要的医学研究中心。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 2490,
@@ -40220,10 +41354,15 @@
     "exampleCn": "经理面临一个困难的两难局面。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 2492,
@@ -40235,10 +41374,15 @@
     "exampleCn": "这座城市经历了新居民的大量涌入。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 2493,
@@ -40270,10 +41414,15 @@
     "exampleCn": "生态系统通过物种的自然演替而变化。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 2495,
@@ -41008,7 +42157,8 @@
     "list": "2",
     "ieltsList": "8",
     "ieltsLists": [
-      "8"
+      "8",
+      "38"
     ]
   },
   {
@@ -41541,10 +42691,15 @@
     "exampleCn": "旅行可以改变一个人的视角。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 2574,
@@ -42278,10 +43433,15 @@
     "exampleCn": "革命后旧政权崩溃了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 2621,
@@ -42569,10 +43729,15 @@
     "exampleCn": "冲突开始迅速升级。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 2639,
@@ -42764,10 +43929,15 @@
     "exampleCn": "从经济角度看，这个计划有风险。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 2652,
@@ -44149,10 +45319,15 @@
     "exampleCn": "这个村庄有一个供所有居民使用的公共花园。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 2737,
@@ -44324,10 +45499,15 @@
     "exampleCn": "这位创业者还在大学时就创办了一家公司。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 2748,
@@ -45085,10 +46265,15 @@
     "exampleCn": "冬季期间食物供应开始减少。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 2795,
@@ -45287,10 +46472,15 @@
     "exampleCn": "该程序会把文件保存在默认文件夹中。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 2808,
@@ -45589,10 +46779,15 @@
     "exampleCn": "飞机穿过了强气流。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 2828,
@@ -45654,10 +46849,15 @@
     "exampleCn": "政府为清洁能源项目提供补贴。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 2832,
@@ -45689,10 +46889,15 @@
     "exampleCn": "科学家认为该说法缺乏支持而不予考虑。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 2834,
@@ -46149,10 +47354,15 @@
     "exampleCn": "植树可以缓解城市热岛效应。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 2864,
@@ -46511,10 +47721,15 @@
     "exampleCn": "奖学金激励学生更加努力学习。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 2887,
@@ -47142,10 +48357,15 @@
     "exampleCn": "该法案在参议院进行了辩论。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 2926,
@@ -48155,10 +49375,15 @@
     "exampleCn": "这张票使你有权获得一杯免费饮料。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 2988,
@@ -48432,10 +49657,15 @@
     "exampleCn": "英语是这份报告中的主要语言。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 3006,
@@ -48827,10 +50057,15 @@
     "exampleCn": "气温在一天中一点点上升。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 3031,
@@ -48842,10 +50077,15 @@
     "exampleCn": "这些证据帮助强化了科学家的理论。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
   },
   {
     "id": 3032,
@@ -48922,10 +50162,15 @@
     "exampleCn": "该组织采用民主程序选举领导者。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 3037,
@@ -49368,10 +50613,15 @@
     "exampleCn": "工人们决定罢工以争取更好的薪水。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 3065,
@@ -49578,10 +50828,15 @@
     "exampleCn": "公司有清晰的管理者和员工层级结构。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 3078,
@@ -49930,10 +51185,15 @@
     "exampleCn": "研究人员对成本作出了保守估计。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 3099,
@@ -52467,10 +53727,15 @@
     "exampleCn": "经理决定把这项任务委派给她的助手。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 3259,
@@ -52627,10 +53892,15 @@
     "exampleCn": "这支队伍加入了一个职业足球联赛。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 3269,
@@ -52772,10 +54042,15 @@
     "exampleCn": "通货膨胀导致食品价格上涨。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 3278,
@@ -53373,10 +54648,15 @@
     "exampleCn": "干旱导致该地区发生严重饥荒。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 3314,
@@ -54293,10 +55573,15 @@
     "exampleCn": "记者开始连续向科学家提问。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 3375,
@@ -55850,10 +57135,15 @@
     "exampleCn": "公司为额外工作提供了公平的报酬。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 3478,
@@ -62940,7 +64230,8 @@
     ],
     "ieltsList": "12",
     "ieltsLists": [
-      "12"
+      "12",
+      "44"
     ]
   },
   {
@@ -63639,7 +64930,8 @@
     ],
     "ieltsList": "13",
     "ieltsLists": [
-      "13"
+      "13",
+      "38"
     ]
   },
   {
@@ -63656,7 +64948,8 @@
     ],
     "ieltsList": "13",
     "ieltsLists": [
-      "13"
+      "13",
+      "41"
     ]
   },
   {
@@ -64047,7 +65340,8 @@
     ],
     "ieltsList": "14",
     "ieltsLists": [
-      "14"
+      "14",
+      "42"
     ]
   },
   {
@@ -68110,7 +69404,8 @@
     ],
     "ieltsList": "22",
     "ieltsLists": [
-      "22"
+      "22",
+      "42"
     ]
   },
   {
@@ -68943,7 +70238,8 @@
     ],
     "ieltsList": "23",
     "ieltsLists": [
-      "23"
+      "23",
+      "40"
     ]
   },
   {
@@ -69011,7 +70307,8 @@
     ],
     "ieltsList": "24",
     "ieltsLists": [
-      "24"
+      "24",
+      "47"
     ]
   },
   {
@@ -69608,7 +70905,8 @@
     ],
     "ieltsList": "24",
     "ieltsLists": [
-      "24"
+      "24",
+      "39"
     ]
   },
   {
@@ -69727,7 +71025,8 @@
     ],
     "ieltsList": "24",
     "ieltsLists": [
-      "24"
+      "24",
+      "43"
     ]
   },
   {
@@ -69880,7 +71179,8 @@
     ],
     "ieltsList": "25",
     "ieltsLists": [
-      "25"
+      "25",
+      "44"
     ]
   },
   {
@@ -69931,7 +71231,8 @@
     ],
     "ieltsList": "25",
     "ieltsLists": [
-      "25"
+      "25",
+      "38"
     ]
   },
   {
@@ -73060,7 +74361,8 @@
     ],
     "ieltsList": "30",
     "ieltsLists": [
-      "30"
+      "30",
+      "47"
     ]
   },
   {
@@ -74726,7 +76028,8 @@
     ],
     "ieltsList": "32",
     "ieltsLists": [
-      "32"
+      "32",
+      "46"
     ]
   },
   {
@@ -77617,6 +78920,5446 @@
     "ieltsList": "37",
     "ieltsLists": [
       "37"
+    ]
+  },
+  {
+    "id": 4798,
+    "word": "republic",
+    "phonetic": "rɪˈpʌblɪk",
+    "pos": "n.",
+    "meaning": "共和国/共和政体",
+    "example": "France became a republic after the revolution.",
+    "exampleCn": "革命后法国成为共和国。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4799,
+    "word": "republican",
+    "phonetic": "rɪˈpʌblɪkən",
+    "pos": "adj./n.",
+    "meaning": "共和国的/共和党人",
+    "example": "He is a member of the Republican Party.",
+    "exampleCn": "他是共和党成员。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4800,
+    "word": "marxism",
+    "phonetic": "ˈmɑːksɪzəm",
+    "pos": "n.",
+    "meaning": "马克思主义",
+    "example": "Marxism had a great influence on the 20th century.",
+    "exampleCn": "马克思主义对20世纪产生了巨大影响。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4801,
+    "word": "socialism",
+    "phonetic": "ˈsəʊʃəlɪzəm",
+    "pos": "n.",
+    "meaning": "社会主义",
+    "example": "The country adopted socialism after independence.",
+    "exampleCn": "该国独立后实行社会主义。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4802,
+    "word": "socialist",
+    "phonetic": "ˈsəʊʃəlɪst",
+    "pos": "adj./n.",
+    "meaning": "社会主义的/社会主义者",
+    "example": "He was a leading socialist thinker.",
+    "exampleCn": "他是一位重要的社会主义思想家。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4803,
+    "word": "communism",
+    "phonetic": "ˈkɒmjʊnɪzəm",
+    "pos": "n.",
+    "meaning": "共产主义",
+    "example": "Communism spread across Eastern Europe after the war.",
+    "exampleCn": "战后共产主义在东欧传播。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4804,
+    "word": "communist",
+    "phonetic": "ˈkɒmjʊnɪst",
+    "pos": "adj./n.",
+    "meaning": "共产主义的/共产主义者",
+    "example": "The Communist Party was founded in 1921.",
+    "exampleCn": "共产党成立于1921年。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4805,
+    "word": "government",
+    "phonetic": "ˈɡʌvənmənt",
+    "pos": "n.",
+    "meaning": "政府/内阁",
+    "example": "The government introduced new tax policies.",
+    "exampleCn": "政府推出了新的税收政策。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4806,
+    "word": "authorise",
+    "phonetic": "ˈɔːθəraɪz",
+    "pos": "v.",
+    "meaning": "授权/批准",
+    "example": "The manager authorised the payment.",
+    "exampleCn": "经理批准了这笔付款。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4807,
+    "word": "political",
+    "phonetic": "pəˈlɪtɪkl",
+    "pos": "adj.",
+    "meaning": "政治的/政党的",
+    "example": "She has strong political beliefs.",
+    "exampleCn": "她有坚定的政治信仰。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4808,
+    "word": "policy",
+    "phonetic": "ˈpɒləsi",
+    "pos": "n.",
+    "meaning": "政策/方针",
+    "example": "The company has a strict no-smoking policy.",
+    "exampleCn": "公司有严格的禁烟政策。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4809,
+    "word": "politician",
+    "phonetic": "ˌpɒlɪˈtɪʃn",
+    "pos": "n.",
+    "meaning": "政治家/政客",
+    "example": "The politician promised to improve healthcare.",
+    "exampleCn": "那位政治家承诺改善医疗保健。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4810,
+    "word": "democratise",
+    "phonetic": "dɪˈmɒkrətaɪz",
+    "pos": "v.",
+    "meaning": "使民主化/推行民主",
+    "example": "The reforms aimed to democratise the political system.",
+    "exampleCn": "改革旨在使政治体制民主化。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4811,
+    "word": "bureaucracy",
+    "phonetic": "bjʊəˈrɒkrəsi",
+    "pos": "n.",
+    "meaning": "官僚机构/官僚作风",
+    "example": "Too much bureaucracy slows down decision-making.",
+    "exampleCn": "过多的官僚作风减慢了决策速度。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4812,
+    "word": "bureaucratism",
+    "phonetic": "bjʊəˈrɒkrətɪzəm",
+    "pos": "n.",
+    "meaning": "官僚主义/官僚制度",
+    "example": "Bureaucratism can hinder innovation in government.",
+    "exampleCn": "官僚主义会阻碍政府的创新。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4813,
+    "word": "egalitarian",
+    "phonetic": "ɪˌɡælɪˈteəriən",
+    "pos": "adj.",
+    "meaning": "平等主义的/平等主义",
+    "example": "They believe in an egalitarian society.",
+    "exampleCn": "他们信仰平等主义社会。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4814,
+    "word": "materialism",
+    "phonetic": "məˈtɪəriəlɪzəm",
+    "pos": "n.",
+    "meaning": "唯物主义/物质主义",
+    "example": "Many people criticise the materialism of modern society.",
+    "exampleCn": "许多人批评现代社会的物质主义。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4815,
+    "word": "revolution",
+    "phonetic": "ˌrevəˈluːʃn",
+    "pos": "n.",
+    "meaning": "革命/变革",
+    "example": "The Industrial Revolution changed the world forever.",
+    "exampleCn": "工业革命永远改变了世界。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4816,
+    "word": "revolutionary",
+    "phonetic": "ˌrevəˈluːʃənəri",
+    "pos": "adj.",
+    "meaning": "革命的/革命性的",
+    "example": "The new treatment was a revolutionary breakthrough.",
+    "exampleCn": "新疗法是一次革命性的突破。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4817,
+    "word": "procession",
+    "phonetic": "prəˈseʃn",
+    "pos": "n.",
+    "meaning": "游行/行列",
+    "example": "A long procession of people marched through the streets.",
+    "exampleCn": "一列长长的游行队伍穿过街道。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4818,
+    "word": "meltdown",
+    "phonetic": "ˈmeltdaʊn",
+    "pos": "n.",
+    "meaning": "崩溃/垮台",
+    "example": "The stock market crash caused a financial meltdown.",
+    "exampleCn": "股市崩盘引发了金融崩溃。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4819,
+    "word": "bilateral",
+    "phonetic": "ˌbaɪˈlætərəl",
+    "pos": "adj.",
+    "meaning": "双边的/双方的",
+    "example": "They signed a bilateral trade agreement.",
+    "exampleCn": "他们签署了双边贸易协定。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4820,
+    "word": "arena",
+    "phonetic": "əˈriːnə",
+    "pos": "n.",
+    "meaning": "竞技场/舞台",
+    "example": "The debate was held in a public arena.",
+    "exampleCn": "辩论在公共场合举行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4821,
+    "word": "banner",
+    "phonetic": "ˈbænə",
+    "pos": "n.",
+    "meaning": "横幅/旗帜",
+    "example": "Protesters carried banners through the streets.",
+    "exampleCn": "抗议者举着横幅穿过街道。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4822,
+    "word": "president",
+    "phonetic": "ˈprezɪdənt",
+    "pos": "n.",
+    "meaning": "总统/主席",
+    "example": "The president addressed the nation on television.",
+    "exampleCn": "总统在电视上向全国发表了讲话。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4823,
+    "word": "premiership",
+    "phonetic": "ˈpremiəʃɪp",
+    "pos": "n.",
+    "meaning": "总理任期/首相职位",
+    "example": "During his premiership, the economy grew rapidly.",
+    "exampleCn": "在他任总理期间，经济增长迅速。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4824,
+    "word": "minister",
+    "phonetic": "ˈmɪnɪstə",
+    "pos": "n.",
+    "meaning": "部长/大臣",
+    "example": "The foreign minister will visit China next week.",
+    "exampleCn": "外交部长将于下周访问中国。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4825,
+    "word": "parliament",
+    "phonetic": "ˈpɑːləmənt",
+    "pos": "n.",
+    "meaning": "议会/国会",
+    "example": "The bill was passed by parliament yesterday.",
+    "exampleCn": "议会昨天通过了该法案。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4826,
+    "word": "conference",
+    "phonetic": "ˈkɒnfərəns",
+    "pos": "n.",
+    "meaning": "会议/大会",
+    "example": "Scientists from around the world attended the conference.",
+    "exampleCn": "来自世界各地的科学家参加了会议。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4827,
+    "word": "delegation",
+    "phonetic": "ˌdelɪˈɡeɪʃn",
+    "pos": "n.",
+    "meaning": "代表团/委派",
+    "example": "A Chinese delegation attended the trade talks.",
+    "exampleCn": "一个中国代表团出席了贸易会谈。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4828,
+    "word": "statesman",
+    "phonetic": "ˈsteɪtsmən",
+    "pos": "n.",
+    "meaning": "政治家/国务活动家",
+    "example": "He was regarded as a wise and experienced statesman.",
+    "exampleCn": "他被视为一位睿智而有经验的政治家。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4829,
+    "word": "mayor",
+    "phonetic": "meə",
+    "pos": "n.",
+    "meaning": "市长",
+    "example": "The mayor opened the new public library.",
+    "exampleCn": "市长为新公共图书馆揭幕。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4830,
+    "word": "service",
+    "phonetic": "ˈsɜːvɪs",
+    "pos": "n.",
+    "meaning": "服务/公共服务",
+    "example": "The government provides free healthcare services.",
+    "exampleCn": "政府提供免费医疗服务。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4831,
+    "word": "bureau",
+    "phonetic": "ˈbjʊərəʊ",
+    "pos": "n.",
+    "meaning": "局/办事处",
+    "example": "The weather bureau issued a storm warning.",
+    "exampleCn": "气象局发布了风暴预警。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4832,
+    "word": "department",
+    "phonetic": "dɪˈpɑːtmənt",
+    "pos": "n.",
+    "meaning": "部门/司/处",
+    "example": "She works in the human resources department.",
+    "exampleCn": "她在人力资源部工作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
+  },
+  {
+    "id": 4833,
+    "word": "domination",
+    "phonetic": "ˌdɒmɪˈneɪʃn",
+    "pos": "n.",
+    "meaning": "支配/统治/控制",
+    "example": "The team's domination of the game was complete.",
+    "exampleCn": "该队完全掌控了整场比赛。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4834,
+    "word": "power",
+    "phonetic": "ˈpaʊə",
+    "pos": "n.",
+    "meaning": "权力/力量/电力",
+    "example": "The president holds the power to veto legislation.",
+    "exampleCn": "总统有权否决立法。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4835,
+    "word": "influence",
+    "phonetic": "ˈɪnfluəns",
+    "pos": "n./v.",
+    "meaning": "影响/影响力",
+    "example": "Social media has a huge influence on public opinion.",
+    "exampleCn": "社交媒体对公众舆论有巨大影响。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4836,
+    "word": "importance",
+    "phonetic": "ɪmˈpɔːtns",
+    "pos": "n.",
+    "meaning": "重要性/重要",
+    "example": "Education is of great importance to the economy.",
+    "exampleCn": "教育对经济至关重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4837,
+    "word": "significance",
+    "phonetic": "sɪɡˈnɪfɪkəns",
+    "pos": "n.",
+    "meaning": "重要性/意义",
+    "example": "The discovery has great significance for medical research.",
+    "exampleCn": "这一发现对医学研究有重大意义。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4838,
+    "word": "organisation",
+    "phonetic": "ˌɔːɡənaɪˈzeɪʃn",
+    "pos": "n.",
+    "meaning": "组织/机构",
+    "example": "She works for a charitable organisation.",
+    "exampleCn": "她在一家慈善组织工作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4839,
+    "word": "consortium",
+    "phonetic": "kənˈsɔːtiəm",
+    "pos": "n.",
+    "meaning": "财团/联合企业",
+    "example": "A consortium of companies built the new bridge.",
+    "exampleCn": "一个企业财团建造了这座新桥。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4840,
+    "word": "instituted",
+    "phonetic": "ˈɪnstɪtjuːtɪd",
+    "pos": "adj.",
+    "meaning": "设立的/建立的",
+    "example": "New rules were instituted to improve safety.",
+    "exampleCn": "新规则被设立以改善安全。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4841,
+    "word": "nationality",
+    "phonetic": "ˌnæʃəˈnæləti",
+    "pos": "n.",
+    "meaning": "国籍/民族",
+    "example": "She has dual nationality, British and French.",
+    "exampleCn": "她有英国和法国双重国籍。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4842,
+    "word": "establish a nation",
+    "phonetic": "",
+    "pos": "v.",
+    "meaning": "建国/建立国家",
+    "example": "They worked to establish a nation free from colonial rule.",
+    "exampleCn": "他们为建立摆脱殖民统治的国家而奋斗。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4843,
+    "word": "worldwide",
+    "phonetic": "ˈwɜːldwaɪd",
+    "pos": "adj./adv.",
+    "meaning": "世界范围的/全球的",
+    "example": "The company has offices worldwide.",
+    "exampleCn": "公司在全球各地设有办事处。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4844,
+    "word": "federal",
+    "phonetic": "ˈfedərəl",
+    "pos": "adj.",
+    "meaning": "联邦的/联邦制的",
+    "example": "The United States has a federal system of government.",
+    "exampleCn": "美国实行联邦制政府。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4845,
+    "word": "federation",
+    "phonetic": "ˌfedəˈreɪʃn",
+    "pos": "n.",
+    "meaning": "联邦/联合会",
+    "example": "The sport is governed by the international federation.",
+    "exampleCn": "这项运动由国际联合会管理。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4846,
+    "word": "abroad",
+    "phonetic": "əˈbrɔːd",
+    "pos": "adv.",
+    "meaning": "在国外/到国外",
+    "example": "He often travels abroad on business.",
+    "exampleCn": "他经常出国出差。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4847,
+    "word": "civilise",
+    "phonetic": "ˈsɪvɪlaɪz",
+    "pos": "v.",
+    "meaning": "使文明/教化",
+    "example": "The Romans helped to civilise much of Europe.",
+    "exampleCn": "罗马人帮助了欧洲大部分地区走向文明。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4848,
+    "word": "puppet",
+    "phonetic": "ˈpʌpɪt",
+    "pos": "n.",
+    "meaning": "傀儡/木偶",
+    "example": "The dictator was seen as a puppet of foreign powers.",
+    "exampleCn": "这个独裁者被视为外国势力的傀儡。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4849,
+    "word": "crown",
+    "phonetic": "kraʊn",
+    "pos": "n.",
+    "meaning": "王冠/王权",
+    "example": "The crown was placed on the new king's head.",
+    "exampleCn": "王冠被戴在新国王的头上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4850,
+    "word": "wreath",
+    "phonetic": "riːθ",
+    "pos": "n.",
+    "meaning": "花圈/花环/桂冠",
+    "example": "They laid a wreath at the war memorial.",
+    "exampleCn": "他们在战争纪念碑前敬献了花圈。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4851,
+    "word": "independence",
+    "phonetic": "ˌɪndɪˈpendəns",
+    "pos": "n.",
+    "meaning": "独立/自主",
+    "example": "The country gained independence in 1947.",
+    "exampleCn": "该国于1947年获得独立。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4852,
+    "word": "slum",
+    "phonetic": "slʌm",
+    "pos": "n.",
+    "meaning": "贫民窟/棚户区",
+    "example": "Millions live in the slums of the city.",
+    "exampleCn": "数百万人住在这座城市的贫民窟里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4853,
+    "word": "refuge",
+    "phonetic": "ˈrefjuːdʒ",
+    "pos": "n.",
+    "meaning": "庇护/避难所",
+    "example": "They sought refuge in a neighbouring country.",
+    "exampleCn": "他们在邻国寻求避难。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4854,
+    "word": "asylum",
+    "phonetic": "əˈsaɪləm",
+    "pos": "n.",
+    "meaning": "庇护/收容所/精神病院",
+    "example": "He applied for political asylum.",
+    "exampleCn": "他申请了政治庇护。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4855,
+    "word": "population",
+    "phonetic": "ˌpɒpjʊˈleɪʃn",
+    "pos": "n.",
+    "meaning": "人口/种群",
+    "example": "The city has a population of over one million.",
+    "exampleCn": "这座城市有一百多万人口。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4856,
+    "word": "demographic",
+    "phonetic": "ˌdeməˈɡræfɪk",
+    "pos": "adj./n.",
+    "meaning": "人口统计的/人口特征",
+    "example": "The demographic data shows an ageing population.",
+    "exampleCn": "人口统计数据显示人口正在老龄化。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4857,
+    "word": "demography",
+    "phonetic": "dɪˈmɒɡrəfi",
+    "pos": "n.",
+    "meaning": "人口学/人口统计",
+    "example": "Demography is the study of human populations.",
+    "exampleCn": "人口学是研究人类人口的学科。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4858,
+    "word": "ordinary",
+    "phonetic": "ˈɔːdɪnri",
+    "pos": "adj.",
+    "meaning": "普通的/平凡的",
+    "example": "She lived an ordinary life in a small town.",
+    "exampleCn": "她在一个小镇过着平凡的生活。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4859,
+    "word": "ethnic",
+    "phonetic": "ˈeθnɪk",
+    "pos": "adj.",
+    "meaning": "民族的/种族的",
+    "example": "The region is home to many ethnic groups.",
+    "exampleCn": "该地区有许多民族聚居。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4860,
+    "word": "racial",
+    "phonetic": "ˈreɪʃl",
+    "pos": "adj.",
+    "meaning": "种族的/人种的",
+    "example": "Racial discrimination is illegal in most countries.",
+    "exampleCn": "大多数国家禁止种族歧视。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4861,
+    "word": "franchise",
+    "phonetic": "ˈfræntʃaɪz",
+    "pos": "n.",
+    "meaning": "特许经营权/选举权",
+    "example": "She opened a restaurant under a well-known franchise.",
+    "exampleCn": "她以知名特许经营品牌开了一家餐厅。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4862,
+    "word": "franchiser",
+    "phonetic": "ˈfræntʃaɪzə",
+    "pos": "n.",
+    "meaning": "特许经营者/授权方",
+    "example": "The franchiser provides training and support to new owners.",
+    "exampleCn": "特许授权方为新店主提供培训和支持。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4863,
+    "word": "respondent",
+    "phonetic": "rɪˈspɒndənt",
+    "pos": "n.",
+    "meaning": "受访者/回答者",
+    "example": "Most respondents agreed with the proposal.",
+    "exampleCn": "大多数受访者同意该建议。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4864,
+    "word": "poll",
+    "phonetic": "pəʊl",
+    "pos": "n.",
+    "meaning": "民意调查/投票",
+    "example": "The latest poll shows the candidate leading.",
+    "exampleCn": "最新民意调查显示该候选人领先。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4865,
+    "word": "checklist",
+    "phonetic": "ˈtʃeklɪst",
+    "pos": "n.",
+    "meaning": "清单/检查表",
+    "example": "Use a checklist to make sure everything is ready.",
+    "exampleCn": "用检查表确保一切都准备好了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4866,
+    "word": "well-being",
+    "phonetic": "ˌwel ˈbiːɪŋ",
+    "pos": "n.",
+    "meaning": "健康/幸福/福祉",
+    "example": "Exercise is important for physical well-being.",
+    "exampleCn": "锻炼对身体安康很重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4867,
+    "word": "success",
+    "phonetic": "səkˈses",
+    "pos": "n.",
+    "meaning": "成功/成就",
+    "example": "Hard work is the key to success.",
+    "exampleCn": "勤奋是成功的关键。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4868,
+    "word": "succeed",
+    "phonetic": "səkˈsiːd",
+    "pos": "v.",
+    "meaning": "成功/继承",
+    "example": "She succeeded in passing the exam.",
+    "exampleCn": "她成功通过了考试。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4869,
+    "word": "prospective",
+    "phonetic": "prəˈspektɪv",
+    "pos": "adj.",
+    "meaning": "未来的/潜在的",
+    "example": "He met with a prospective employer.",
+    "exampleCn": "他与一位可能有录用意向的雇主见了面。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4870,
+    "word": "guideline",
+    "phonetic": "ˈɡaɪdlaɪn",
+    "pos": "n.",
+    "meaning": "指导方针/准则",
+    "example": "The government issued new guidelines on health.",
+    "exampleCn": "政府发布了新的健康指导方针。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4871,
+    "word": "suggest",
+    "phonetic": "səˈdʒest",
+    "pos": "v.",
+    "meaning": "建议/暗示",
+    "example": "I suggest we leave early to avoid traffic.",
+    "exampleCn": "我建议我们早点出发以避开交通拥堵。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4872,
+    "word": "advise",
+    "phonetic": "ədˈvaɪz",
+    "pos": "v.",
+    "meaning": "建议/劝告",
+    "example": "The doctor advised him to rest more.",
+    "exampleCn": "医生建议他多休息。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4873,
+    "word": "advisable",
+    "phonetic": "ədˈvaɪzəbl",
+    "pos": "adj.",
+    "meaning": "明智的/可取的",
+    "example": "It is advisable to book tickets in advance.",
+    "exampleCn": "建议提前预订门票。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4874,
+    "word": "proposal",
+    "phonetic": "prəˈpəʊzl",
+    "pos": "n.",
+    "meaning": "提案/建议",
+    "example": "The committee approved the proposal.",
+    "exampleCn": "委员会通过了该提案。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4875,
+    "word": "proclaim",
+    "phonetic": "prəˈkleɪm",
+    "pos": "v.",
+    "meaning": "宣告/宣布",
+    "example": "The president proclaimed a national holiday.",
+    "exampleCn": "总统宣布了一个全国假日。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4876,
+    "word": "state",
+    "phonetic": "steɪt",
+    "pos": "v./n.",
+    "meaning": "陈述/国家/州",
+    "example": "He stated his opinion clearly at the meeting.",
+    "exampleCn": "他在会上清楚地陈述了自己的意见。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4877,
+    "word": "clarify",
+    "phonetic": "ˈklærɪfaɪ",
+    "pos": "v.",
+    "meaning": "澄清/阐明",
+    "example": "The minister clarified the new policy at the press conference.",
+    "exampleCn": "部长在新闻发布会上阐明了新政策。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4878,
+    "word": "action",
+    "phonetic": "ˈækʃn",
+    "pos": "n.",
+    "meaning": "行动/动作",
+    "example": "The government must take action to solve the crisis.",
+    "exampleCn": "政府必须采取行动来解决危机。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4879,
+    "word": "encourage",
+    "phonetic": "ɪnˈkʌrɪdʒ",
+    "pos": "v.",
+    "meaning": "鼓励/激励",
+    "example": "Parents should encourage their children to read.",
+    "exampleCn": "父母应该鼓励孩子读书。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4880,
+    "word": "monitor",
+    "phonetic": "ˈmɒnɪtə",
+    "pos": "v./n.",
+    "meaning": "监控/监督/显示器",
+    "example": "Doctors monitored the patient's condition closely.",
+    "exampleCn": "医生密切监控着病人的状况。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4881,
+    "word": "African",
+    "phonetic": "ˈæfrɪkən",
+    "pos": "adj./n.",
+    "meaning": "非洲的/非洲人",
+    "example": "She loves African music and dance.",
+    "exampleCn": "她喜欢非洲音乐和舞蹈。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4882,
+    "word": "European",
+    "phonetic": "ˌjʊərəˈpiːən",
+    "pos": "adj./n.",
+    "meaning": "欧洲的/欧洲人",
+    "example": "The European Union has 27 member states.",
+    "exampleCn": "欧盟有27个成员国。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4883,
+    "word": "Latin",
+    "phonetic": "ˈlætɪn",
+    "pos": "n./adj.",
+    "meaning": "拉丁语/拉丁的",
+    "example": "Many English words come from Latin.",
+    "exampleCn": "许多英语单词源出拉丁语。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4884,
+    "word": "Jewish",
+    "phonetic": "ˈdʒuːɪʃ",
+    "pos": "adj.",
+    "meaning": "犹太的/犹太人的",
+    "example": "They celebrated the Jewish festival of Hanukkah.",
+    "exampleCn": "他们庆祝了犹太节日光明节。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4885,
+    "word": "Arabian",
+    "phonetic": "əˈreɪbiən",
+    "pos": "adj.",
+    "meaning": "阿拉伯的/阿拉伯人的",
+    "example": "The Arabian desert covers much of the Middle East.",
+    "exampleCn": "阿拉伯沙漠覆盖了中东大部分地区。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4886,
+    "word": "Portuguese",
+    "phonetic": "ˌpɔːtʃʊˈɡiːz",
+    "pos": "adj./n.",
+    "meaning": "葡萄牙的/葡萄牙语",
+    "example": "They visited the Portuguese coast last summer.",
+    "exampleCn": "他们去年夏天游览了葡萄牙海岸。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4887,
+    "word": "Russian",
+    "phonetic": "ˈrʌʃn",
+    "pos": "adj./n.",
+    "meaning": "俄罗斯的/俄语",
+    "example": "She is learning to speak Russian.",
+    "exampleCn": "她正在学习说俄语。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4888,
+    "word": "Spanish",
+    "phonetic": "ˈspænɪʃ",
+    "pos": "adj./n.",
+    "meaning": "西班牙的/西班牙语",
+    "example": "Spanish is spoken in many countries.",
+    "exampleCn": "许多国家都说西班牙语。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4889,
+    "word": "Swiss",
+    "phonetic": "swɪs",
+    "pos": "adj./n.",
+    "meaning": "瑞士的/瑞士人",
+    "example": "Swiss chocolate is famous worldwide.",
+    "exampleCn": "瑞士巧克力闻名世界。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4890,
+    "word": "Greek",
+    "phonetic": "ɡriːk",
+    "pos": "adj./n.",
+    "meaning": "希腊的/希腊语",
+    "example": "They studied Greek philosophy at university.",
+    "exampleCn": "他们在大学里学了希腊哲学。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4891,
+    "word": "Italian",
+    "phonetic": "ɪˈtæliən",
+    "pos": "adj./n.",
+    "meaning": "意大利的/意大利语",
+    "example": "Italian food is popular all over the world.",
+    "exampleCn": "意大利美食在全世界都很受欢迎。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4892,
+    "word": "soviet",
+    "phonetic": "ˈsəʊviət",
+    "pos": "adj./n.",
+    "meaning": "苏维埃的/苏联的",
+    "example": "The Soviet Union collapsed in 1991.",
+    "exampleCn": "苏联于1991年解体。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
+  },
+  {
+    "id": 4893,
+    "word": "Indian",
+    "phonetic": "ˈɪndiən",
+    "pos": "adj./n.",
+    "meaning": "印度的/印度人",
+    "example": "Indian cuisine is rich in spices.",
+    "exampleCn": "印度菜富含香料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4894,
+    "word": "Australia",
+    "phonetic": "ɒˈstreɪliə",
+    "pos": "n.",
+    "meaning": "澳大利亚",
+    "example": "Australia is famous for its beaches and wildlife.",
+    "exampleCn": "澳大利亚以海滩和野生动物闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4895,
+    "word": "New Zealand",
+    "phonetic": "ˌnjuː ˈziːlənd",
+    "pos": "n.",
+    "meaning": "新西兰",
+    "example": "New Zealand is known for its stunning landscapes.",
+    "exampleCn": "新西兰以其绝美的风景而闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4896,
+    "word": "Britain",
+    "phonetic": "ˈbrɪtn",
+    "pos": "n.",
+    "meaning": "英国/不列颠",
+    "example": "Britain is made up of England, Scotland, and Wales.",
+    "exampleCn": "大不列颠由英格兰、苏格兰和威尔士组成。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4897,
+    "word": "France",
+    "phonetic": "frɑːns",
+    "pos": "n.",
+    "meaning": "法国",
+    "example": "France is known for its art and cuisine.",
+    "exampleCn": "法国以其艺术和美食闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4898,
+    "word": "Germany",
+    "phonetic": "ˈdʒɜːməni",
+    "pos": "n.",
+    "meaning": "德国",
+    "example": "Germany is the largest economy in Europe.",
+    "exampleCn": "德国是欧洲最大的经济体。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4899,
+    "word": "economy",
+    "phonetic": "ɪˈkɒnəmi",
+    "pos": "n.",
+    "meaning": "经济/节约",
+    "example": "The global economy is recovering slowly.",
+    "exampleCn": "全球经济正在缓慢复苏。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4900,
+    "word": "trade",
+    "phonetic": "treɪd",
+    "pos": "n./v.",
+    "meaning": "贸易/交易",
+    "example": "International trade is vital for the economy.",
+    "exampleCn": "国际贸易对经济至关重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4901,
+    "word": "market",
+    "phonetic": "ˈmɑːkɪt",
+    "pos": "n.",
+    "meaning": "市场/集市",
+    "example": "The stock market fell sharply yesterday.",
+    "exampleCn": "股市昨天大幅下跌。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4902,
+    "word": "industry",
+    "phonetic": "ˈɪndəstri",
+    "pos": "n.",
+    "meaning": "工业/产业",
+    "example": "The car industry employs thousands of workers.",
+    "exampleCn": "汽车产业雇用了成千上万的工人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4903,
+    "word": "industrialise",
+    "phonetic": "ɪnˈdʌstriəlaɪz",
+    "pos": "v.",
+    "meaning": "工业化/使工业化",
+    "example": "The country began to industrialise in the 1950s.",
+    "exampleCn": "该国于20世纪50年代开始工业化。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4904,
+    "word": "fund",
+    "phonetic": "fʌnd",
+    "pos": "n./v.",
+    "meaning": "资金/基金/资助",
+    "example": "The project was funded by the government.",
+    "exampleCn": "这个项目由政府资助。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4905,
+    "word": "endow",
+    "phonetic": "ɪnˈdaʊ",
+    "pos": "v.",
+    "meaning": "捐赠/赋予",
+    "example": "The university was endowed by a wealthy businessman.",
+    "exampleCn": "这所大学由一位富商捐赠建立。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4906,
+    "word": "commercialise",
+    "phonetic": "kəˈmɜːʃəlaɪz",
+    "pos": "v.",
+    "meaning": "商业化/商品化",
+    "example": "The festival has become too commercialised.",
+    "exampleCn": "这个节日已经变得太商业化了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4907,
+    "word": "slogan",
+    "phonetic": "ˈsləʊɡən",
+    "pos": "n.",
+    "meaning": "口号/标语",
+    "example": "The campaign slogan was 'Change for the better'.",
+    "exampleCn": "竞选口号是'变得更好'。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4908,
+    "word": "purchase",
+    "phonetic": "ˈpɜːtʃəs",
+    "pos": "v./n.",
+    "meaning": "购买/采购",
+    "example": "She purchased a new laptop online.",
+    "exampleCn": "她在网上购买了一台新笔记本电脑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4909,
+    "word": "affordable",
+    "phonetic": "əˈfɔːdəbl",
+    "pos": "adj.",
+    "meaning": "负担得起的/实惠的",
+    "example": "They provide affordable housing for families.",
+    "exampleCn": "他们为家庭提供可负担的住房。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4910,
+    "word": "retailing",
+    "phonetic": "ˈriːteɪlɪŋ",
+    "pos": "n.",
+    "meaning": "零售业",
+    "example": "Online retailing has grown rapidly in recent years.",
+    "exampleCn": "线上零售近年来快速增长。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4911,
+    "word": "grocery",
+    "phonetic": "ˈɡrəʊsəri",
+    "pos": "n.",
+    "meaning": "杂货店/食品杂货",
+    "example": "She bought fresh vegetables at the grocery.",
+    "exampleCn": "她在杂货店买了新鲜蔬菜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4912,
+    "word": "promotion",
+    "phonetic": "prəˈməʊʃn",
+    "pos": "n.",
+    "meaning": "促销/晋升",
+    "example": "He got a promotion to senior manager.",
+    "exampleCn": "他晋升为高级经理。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4913,
+    "word": "voucher",
+    "phonetic": "ˈvaʊtʃə",
+    "pos": "n.",
+    "meaning": "代金券/优惠券",
+    "example": "She received a gift voucher for the bookstore.",
+    "exampleCn": "她收到了书店的礼品券。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4914,
+    "word": "coupon",
+    "phonetic": "ˈkuːpɒn",
+    "pos": "n.",
+    "meaning": "优惠券/赠券",
+    "example": "Cut out the coupon to get two pounds off your next purchase.",
+    "exampleCn": "剪下优惠券，下次购买可减两英镑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4915,
+    "word": "exchange",
+    "phonetic": "ɪksˈtʃeɪndʒ",
+    "pos": "n./v.",
+    "meaning": "兑换/交换/交易",
+    "example": "You can exchange money at the airport.",
+    "exampleCn": "你可以在机场兑换货币。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4916,
+    "word": "swap",
+    "phonetic": "swɒp",
+    "pos": "v./n.",
+    "meaning": "交换/互换",
+    "example": "The two friends swapped books to read.",
+    "exampleCn": "两个朋友交换了书来读。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4917,
+    "word": "invoice",
+    "phonetic": "ˈɪnvɔɪs",
+    "pos": "n.",
+    "meaning": "发票/账单",
+    "example": "The company sent an invoice for the goods.",
+    "exampleCn": "公司寄来了货物的发票。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4918,
+    "word": "tax",
+    "phonetic": "tæks",
+    "pos": "n.",
+    "meaning": "税/税款",
+    "example": "Income tax is deducted from your salary.",
+    "exampleCn": "所得税从工资里扣除。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4919,
+    "word": "levy",
+    "phonetic": "ˈlevi",
+    "pos": "v./n.",
+    "meaning": "征收/税款",
+    "example": "The government levies a tax on fuel.",
+    "exampleCn": "政府对燃料征税。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4920,
+    "word": "tariff",
+    "phonetic": "ˈtærɪf",
+    "pos": "n.",
+    "meaning": "关税/价目表",
+    "example": "Tariffs on imported goods have been reduced.",
+    "exampleCn": "进口商品的关税已降低。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4921,
+    "word": "duty",
+    "phonetic": "ˈdjuːti",
+    "pos": "n.",
+    "meaning": "税/关税/责任",
+    "example": "Customs duty is charged on imports from abroad.",
+    "exampleCn": "从国外进口要缴纳关税。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4922,
+    "word": "dutiable",
+    "phonetic": "ˈdjuːtiəbl",
+    "pos": "adj.",
+    "meaning": "应征税的/应缴税的",
+    "example": "Alcohol and tobacco are dutiable goods.",
+    "exampleCn": "酒类和烟草是应税商品。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4923,
+    "word": "spend",
+    "phonetic": "spend",
+    "pos": "v.",
+    "meaning": "花费/支出",
+    "example": "She spends a lot of money on clothes.",
+    "exampleCn": "她花很多钱买衣服。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4924,
+    "word": "cost",
+    "phonetic": "kɒst",
+    "pos": "n./v.",
+    "meaning": "成本/花费",
+    "example": "The cost of living has risen sharply.",
+    "exampleCn": "生活成本急剧上涨了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4925,
+    "word": "recession",
+    "phonetic": "rɪˈseʃn",
+    "pos": "n.",
+    "meaning": "衰退/不景气",
+    "example": "The economy is in recession after the crisis.",
+    "exampleCn": "危机后经济处于衰退之中。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4926,
+    "word": "debt",
+    "phonetic": "det",
+    "pos": "n.",
+    "meaning": "债务/欠款",
+    "example": "He is working hard to pay off his debts.",
+    "exampleCn": "他正在努力工作以还清债务。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4927,
+    "word": "decrease",
+    "phonetic": "dɪˈkriːs",
+    "pos": "v./n.",
+    "meaning": "减少/下降",
+    "example": "Sales decreased by 5% compared to last year.",
+    "exampleCn": "销售额与去年相比下降了5%。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4928,
+    "word": "downsize",
+    "phonetic": "ˈdaʊnsaɪz",
+    "pos": "v.",
+    "meaning": "缩小规模/裁员",
+    "example": "The company had to downsize to cut costs.",
+    "exampleCn": "公司不得不裁员以削减成本。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4929,
+    "word": "declination",
+    "phonetic": "ˌdeklɪˈneɪʃn",
+    "pos": "n.",
+    "meaning": "下降/倾斜/偏差",
+    "example": "The declination of the economy worried investors.",
+    "exampleCn": "经济的下滑让投资者感到忧虑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4930,
+    "word": "reduce",
+    "phonetic": "rɪˈdjuːs",
+    "pos": "v.",
+    "meaning": "减少/缩减",
+    "example": "We need to reduce our energy consumption.",
+    "exampleCn": "我们需要减少能源消耗。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4931,
+    "word": "increase",
+    "phonetic": "ɪnˈkriːs",
+    "pos": "v./n.",
+    "meaning": "增加/增长",
+    "example": "The price of petrol has increased again.",
+    "exampleCn": "汽油价格又上涨了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4932,
+    "word": "growth",
+    "phonetic": "ɡrəʊθ",
+    "pos": "n.",
+    "meaning": "增长/成长/发展",
+    "example": "The country's economic growth is steady.",
+    "exampleCn": "该国的经济增长稳定。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4933,
+    "word": "gradual",
+    "phonetic": "ˈɡrædʒuəl",
+    "pos": "adj.",
+    "meaning": "逐渐的/逐步的",
+    "example": "There was a gradual improvement in her health.",
+    "exampleCn": "她的健康状况逐渐改善。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4934,
+    "word": "spare",
+    "phonetic": "speə",
+    "pos": "adj./v.",
+    "meaning": "备用的/多余的/抽出",
+    "example": "He tried to fix the bike in his spare time.",
+    "exampleCn": "他在空闲时间试着修自行车。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4935,
+    "word": "redundant",
+    "phonetic": "rɪˈdʌndənt",
+    "pos": "adj.",
+    "meaning": "多余的/被裁员的",
+    "example": "He was made redundant after the company restructured.",
+    "exampleCn": "公司重组后他被裁了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4936,
+    "word": "redundancy",
+    "phonetic": "rɪˈdʌndənsi",
+    "pos": "n.",
+    "meaning": "裁员/冗余",
+    "example": "The factory closure will lead to many redundancies.",
+    "exampleCn": "工厂关闭将导致大量裁员。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4937,
+    "word": "lack",
+    "phonetic": "læk",
+    "pos": "n./v.",
+    "meaning": "缺乏/不足",
+    "example": "The project was cancelled due to a lack of funds.",
+    "exampleCn": "项目因资金缺乏被取消了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4938,
+    "word": "company",
+    "phonetic": "ˈkʌmpəni",
+    "pos": "n.",
+    "meaning": "公司/陪伴",
+    "example": "She works for a large software company.",
+    "exampleCn": "她在一家大型软件公司工作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4939,
+    "word": "firm",
+    "phonetic": "fɜːm",
+    "pos": "n./adj.",
+    "meaning": "公司/坚定的",
+    "example": "He joined the law firm as a junior partner.",
+    "exampleCn": "他加入了那家律师事务所成为初级合伙人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4940,
+    "word": "input",
+    "phonetic": "ˈɪnpʊt",
+    "pos": "n.",
+    "meaning": "投入/输入",
+    "example": "We value your input on this matter.",
+    "exampleCn": "我们重视你对这件事的投入。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4941,
+    "word": "product",
+    "phonetic": "ˈprɒdʌkt",
+    "pos": "n.",
+    "meaning": "产品/产物",
+    "example": "The company launched a new product line.",
+    "exampleCn": "公司推出了一个新的产品线。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4942,
+    "word": "goods",
+    "phonetic": "ɡʊdz",
+    "pos": "n.",
+    "meaning": "商品/货物",
+    "example": "The ship was loaded with goods from China.",
+    "exampleCn": "船上装载着来自中国的货物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4943,
+    "word": "rely",
+    "phonetic": "rɪˈlaɪ",
+    "pos": "v.",
+    "meaning": "依赖/依靠",
+    "example": "Many people rely on their cars for daily transport.",
+    "exampleCn": "许多人依靠汽车进行日常出行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4944,
+    "word": "absent",
+    "phonetic": "ˈæbsənt",
+    "pos": "adj.",
+    "meaning": "缺席的/不在的",
+    "example": "He was absent from work for three days.",
+    "exampleCn": "他三天没来上班。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4945,
+    "word": "wholesale",
+    "phonetic": "ˈhəʊlseɪl",
+    "pos": "n./adj.",
+    "meaning": "批发/批发的",
+    "example": "They buy goods at wholesale prices.",
+    "exampleCn": "他们以批发价购买商品。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4946,
+    "word": "auction",
+    "phonetic": "ˈɔːkʃn",
+    "pos": "n.",
+    "meaning": "拍卖/竞拍",
+    "example": "The painting sold for a record price at auction.",
+    "exampleCn": "这幅画在拍卖中以创纪录的价格售出。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4947,
+    "word": "deal",
+    "phonetic": "diːl",
+    "pos": "n./v.",
+    "meaning": "交易/协议/处理",
+    "example": "They signed a deal worth millions of dollars.",
+    "exampleCn": "他们签署了一笔价值数百万美元的交易。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4948,
+    "word": "turnover",
+    "phonetic": "ˈtɜːnəʊvə",
+    "pos": "n.",
+    "meaning": "营业额/人员流动",
+    "example": "The company's annual turnover exceeds 100 million dollars.",
+    "exampleCn": "公司的年营业额超过一亿美元。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4949,
+    "word": "export",
+    "phonetic": "ɪkˈspɔːt",
+    "pos": "v./n.",
+    "meaning": "出口/输出",
+    "example": "The country exports tea and coffee.",
+    "exampleCn": "该国出口茶和咖啡。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4950,
+    "word": "quota",
+    "phonetic": "ˈkwəʊtə",
+    "pos": "n.",
+    "meaning": "配额/限额",
+    "example": "The government set a quota on imports of steel.",
+    "exampleCn": "政府设定了钢材进口配额。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4951,
+    "word": "share",
+    "phonetic": "ʃeə",
+    "pos": "n./v.",
+    "meaning": "股份/分享",
+    "example": "She bought shares in the company.",
+    "exampleCn": "她买了那家公司的股份。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4952,
+    "word": "stockbroker",
+    "phonetic": "ˈstɒkbrəʊkə",
+    "pos": "n.",
+    "meaning": "股票经纪人",
+    "example": "The stockbroker advised clients on where to invest.",
+    "exampleCn": "股票经纪人建议客户投资方向。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4953,
+    "word": "accountable",
+    "phonetic": "əˈkaʊntəbl",
+    "pos": "adj.",
+    "meaning": "应负责的/有义务的",
+    "example": "Politicians must be accountable to the public.",
+    "exampleCn": "政客们必须对公众负责。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
+  },
+  {
+    "id": 4954,
+    "word": "instalment",
+    "phonetic": "ɪnˈstɔːlmənt",
+    "pos": "n.",
+    "meaning": "分期付款/一期",
+    "example": "They paid for the car in monthly instalments.",
+    "exampleCn": "他们按月分期付款买了车。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4955,
+    "word": "cheque",
+    "phonetic": "tʃek",
+    "pos": "n.",
+    "meaning": "支票",
+    "example": "He wrote a cheque for the rent.",
+    "exampleCn": "他开了一张房租支票。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4956,
+    "word": "shilling",
+    "phonetic": "ˈʃɪlɪŋ",
+    "pos": "n.",
+    "meaning": "先令",
+    "example": "The shilling was once used as currency in Britain.",
+    "exampleCn": "先令曾一度是英国的货币。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4957,
+    "word": "copper",
+    "phonetic": "ˈkɒpə",
+    "pos": "n.",
+    "meaning": "铜/铜币",
+    "example": "The statue was made of copper.",
+    "exampleCn": "这座雕像是用铜制成的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4958,
+    "word": "treasure",
+    "phonetic": "ˈtreʒə",
+    "pos": "n.",
+    "meaning": "宝藏/财富",
+    "example": "Pirates buried the treasure on a remote island.",
+    "exampleCn": "海盗把宝藏埋在了一个偏僻的小岛上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4959,
+    "word": "wealth",
+    "phonetic": "welθ",
+    "pos": "n.",
+    "meaning": "财富/富裕",
+    "example": "Health is more important than wealth.",
+    "exampleCn": "健康比财富更重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4960,
+    "word": "estate",
+    "phonetic": "ɪˈsteɪt",
+    "pos": "n.",
+    "meaning": "财产/地产/庄园",
+    "example": "He inherited a large estate from his father.",
+    "exampleCn": "他从父亲那里继承了一大笔财产。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4961,
+    "word": "possess",
+    "phonetic": "pəˈzes",
+    "pos": "v.",
+    "meaning": "拥有/占有",
+    "example": "She possesses a rare talent for music.",
+    "exampleCn": "她拥有罕见的音乐天赋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4962,
+    "word": "possessive",
+    "phonetic": "pəˈzesɪv",
+    "pos": "adj.",
+    "meaning": "占有欲强的/所属的",
+    "example": "He is very possessive about his belongings.",
+    "exampleCn": "他对自己的物品占有欲极强。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4963,
+    "word": "legacy",
+    "phonetic": "ˈleɡəsi",
+    "pos": "n.",
+    "meaning": "遗产/遗留物",
+    "example": "The artist left a lasting legacy of beautiful works.",
+    "exampleCn": "这位艺术家留下了一笔持久的佳作遗产。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4964,
+    "word": "worthy",
+    "phonetic": "ˈwɜːði",
+    "pos": "adj.",
+    "meaning": "值得的/有价值的",
+    "example": "The charity is a worthy cause to support.",
+    "exampleCn": "这个慈善机构是一个值得支持的善举。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4965,
+    "word": "valuable",
+    "phonetic": "ˈvæljuəbl",
+    "pos": "adj.",
+    "meaning": "有价值的/宝贵的",
+    "example": "She lost some valuable jewellery in the burglary.",
+    "exampleCn": "她在入室盗窃中丢失了一些珍贵的珠宝。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4966,
+    "word": "salary",
+    "phonetic": "ˈsæləri",
+    "pos": "n.",
+    "meaning": "薪水/工资",
+    "example": "She earns a good salary as an engineer.",
+    "exampleCn": "她当工程师挣着不错的薪水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4967,
+    "word": "income",
+    "phonetic": "ˈɪnkʌm",
+    "pos": "n.",
+    "meaning": "收入/所得",
+    "example": "His main source of income is freelance work.",
+    "exampleCn": "他的主要收入来源是自由职业。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4968,
+    "word": "wage",
+    "phonetic": "weɪdʒ",
+    "pos": "n.",
+    "meaning": "工资/工钱",
+    "example": "The minimum wage has been increased this year.",
+    "exampleCn": "今年最低工资已经提高。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4969,
+    "word": "payment",
+    "phonetic": "ˈpeɪmənt",
+    "pos": "n.",
+    "meaning": "付款/支付",
+    "example": "Payment can be made by credit card.",
+    "exampleCn": "可以用信用卡付款。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4970,
+    "word": "refund",
+    "phonetic": "ˈriːfʌnd",
+    "pos": "n./v.",
+    "meaning": "退款/退还",
+    "example": "The store gave her a full refund for the faulty product.",
+    "exampleCn": "商店对有问题的产品全额退款。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4971,
+    "word": "reimburse",
+    "phonetic": "ˌriːɪmˈbɜːs",
+    "pos": "v.",
+    "meaning": "偿还/报销",
+    "example": "The company will reimburse your travel expenses.",
+    "exampleCn": "公司将报销你的差旅费。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4972,
+    "word": "payroll",
+    "phonetic": "ˈpeɪrəʊl",
+    "pos": "n.",
+    "meaning": "工资名单/发薪人员",
+    "example": "The company has 200 employees on its payroll.",
+    "exampleCn": "公司有200名在职员工。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4973,
+    "word": "earn",
+    "phonetic": "ɜːn",
+    "pos": "v.",
+    "meaning": "赚取/赢得",
+    "example": "She earns a good living as a writer.",
+    "exampleCn": "她靠写作过着不错的生活。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4974,
+    "word": "undertaking",
+    "phonetic": "ˌʌndəˈteɪkɪŋ",
+    "pos": "n.",
+    "meaning": "事业/承诺/任务",
+    "example": "Starting a new business is a major undertaking.",
+    "exampleCn": "创办新企业是一件重大的任务。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4975,
+    "word": "labour",
+    "phonetic": "ˈleɪbə",
+    "pos": "n.",
+    "meaning": "劳动/劳动力/劳工",
+    "example": "Manual labour can be physically demanding.",
+    "exampleCn": "体力劳动可能对身体有高要求。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4976,
+    "word": "workforce",
+    "phonetic": "ˈwɜːkfɔːs",
+    "pos": "n.",
+    "meaning": "劳动力/劳动人口",
+    "example": "The workforce is becoming more diverse.",
+    "exampleCn": "劳动力正变得更加多元化。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4977,
+    "word": "workaholic",
+    "phonetic": "ˌwɜːkəˈhɒlɪk",
+    "pos": "n.",
+    "meaning": "工作狂/工作成瘾者",
+    "example": "He is a workaholic who never takes a holiday.",
+    "exampleCn": "他是一个从不休假的工作狂。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4978,
+    "word": "personnel",
+    "phonetic": "ˌpɜːsəˈnel",
+    "pos": "n.",
+    "meaning": "人员/员工/人事部门",
+    "example": "The personnel department handles all staff matters.",
+    "exampleCn": "人事部门处理所有员工事务。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4979,
+    "word": "interview",
+    "phonetic": "ˈɪntəvjuː",
+    "pos": "n./v.",
+    "meaning": "面试/采访",
+    "example": "She has a job interview tomorrow morning.",
+    "exampleCn": "她明天上午有个工作面试。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4980,
+    "word": "employ",
+    "phonetic": "ɪmˈplɔɪ",
+    "pos": "v.",
+    "meaning": "雇用/使用",
+    "example": "The factory employs more than 500 workers.",
+    "exampleCn": "这家工厂雇用了500多名工人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4981,
+    "word": "hire",
+    "phonetic": "ˈhaɪə",
+    "pos": "v.",
+    "meaning": "雇用/租用",
+    "example": "They hired a car for the weekend.",
+    "exampleCn": "他们租了一辆车用于周末。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4982,
+    "word": "lay-off",
+    "phonetic": "ˈleɪ ɒf",
+    "pos": "n.",
+    "meaning": "解雇/裁员",
+    "example": "The lay-off affected hundreds of workers.",
+    "exampleCn": "裁员波及了数百名工人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4983,
+    "word": "resign",
+    "phonetic": "rɪˈzaɪn",
+    "pos": "v.",
+    "meaning": "辞职/辞去",
+    "example": "She resigned from her position after the scandal.",
+    "exampleCn": "丑闻后她辞去了职务。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4984,
+    "word": "sack",
+    "phonetic": "sæk",
+    "pos": "v.",
+    "meaning": "解雇/炒鱿鱼",
+    "example": "He was sacked for arriving late every day.",
+    "exampleCn": "他因每天迟到被炒了鱿鱼。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4985,
+    "word": "retire",
+    "phonetic": "rɪˈtaɪə",
+    "pos": "v.",
+    "meaning": "退休/退役",
+    "example": "He plans to retire at the age of 65.",
+    "exampleCn": "他计划在65岁退休。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4986,
+    "word": "result",
+    "phonetic": "rɪˈzʌlt",
+    "pos": "n.",
+    "meaning": "结果/成果",
+    "example": "The exam results will be announced next week.",
+    "exampleCn": "考试成绩将于下周公布。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4987,
+    "word": "failure",
+    "phonetic": "ˈfeɪljə",
+    "pos": "n.",
+    "meaning": "失败/故障",
+    "example": "The project ended in failure.",
+    "exampleCn": "项目以失败告终。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4988,
+    "word": "abortion",
+    "phonetic": "əˈbɔːʃn",
+    "pos": "n.",
+    "meaning": "流产/堕胎/失败",
+    "example": "The plan was a complete abortion.",
+    "exampleCn": "计划完全失败了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4989,
+    "word": "opportunity",
+    "phonetic": "ˌɒpəˈtjuːnəti",
+    "pos": "n.",
+    "meaning": "机会/时机",
+    "example": "This job is a great opportunity for career growth.",
+    "exampleCn": "这份工作是职业发展的好机会。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4990,
+    "word": "solve",
+    "phonetic": "sɒlv",
+    "pos": "v.",
+    "meaning": "解决/解答",
+    "example": "The police are trying to solve the crime.",
+    "exampleCn": "警方正在努力破案。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4991,
+    "word": "sustainable",
+    "phonetic": "səˈsteɪnəbl",
+    "pos": "adj.",
+    "meaning": "可持续的/能持续的",
+    "example": "We need to find sustainable sources of energy.",
+    "exampleCn": "我们需要找到可持续的能源。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4992,
+    "word": "improvement",
+    "phonetic": "ɪmˈpruːvmənt",
+    "pos": "n.",
+    "meaning": "改进/改善",
+    "example": "There has been a big improvement in his behaviour.",
+    "exampleCn": "他的行为有了很大的改善。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4993,
+    "word": "manage",
+    "phonetic": "ˈmænɪdʒ",
+    "pos": "v.",
+    "meaning": "管理/设法完成",
+    "example": "She manages a team of ten people.",
+    "exampleCn": "她管理着一个十人团队。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4994,
+    "word": "sanction",
+    "phonetic": "ˈsæŋkʃn",
+    "pos": "n.",
+    "meaning": "制裁/许可/批准",
+    "example": "The UN imposed economic sanctions on the country.",
+    "exampleCn": "联合国对该国实施了经济制裁。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4995,
+    "word": "law",
+    "phonetic": "lɔː",
+    "pos": "n.",
+    "meaning": "法律/法规",
+    "example": "Everyone must obey the law.",
+    "exampleCn": "每个人都必须遵守法律。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 4996,
+    "word": "legal",
+    "phonetic": "ˈliːɡl",
+    "pos": "adj.",
+    "meaning": "法律的/合法的",
+    "example": "He sought legal advice before signing the contract.",
+    "exampleCn": "他在签署合同前寻求了法律建议。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 4997,
+    "word": "treaty",
+    "phonetic": "ˈtriːti",
+    "pos": "n.",
+    "meaning": "条约/协定",
+    "example": "The two countries signed a peace treaty.",
+    "exampleCn": "两国签署了和平条约。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 4998,
+    "word": "charter",
+    "phonetic": "ˈtʃɑːtə",
+    "pos": "n.",
+    "meaning": "宪章/特许状",
+    "example": "The United Nations charter was signed in 1945.",
+    "exampleCn": "联合国宪章于1945年签署。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 4999,
+    "word": "benchmark",
+    "phonetic": "ˈbentʃmɑːk",
+    "pos": "n.",
+    "meaning": "基准/衡量标准",
+    "example": "The company sets a benchmark for quality in the industry.",
+    "exampleCn": "该公司为行业设定了质量标准。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5000,
+    "word": "criteria",
+    "phonetic": "kraɪˈtɪəriə",
+    "pos": "n.",
+    "meaning": "标准/准则",
+    "example": "What are the criteria for evaluating the project?",
+    "exampleCn": "评估这个项目的标准是什么？",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5001,
+    "word": "official",
+    "phonetic": "əˈfɪʃl",
+    "pos": "adj./n.",
+    "meaning": "官方的/官员",
+    "example": "The official announcement was made yesterday.",
+    "exampleCn": "官方公告是昨天发布的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5002,
+    "word": "mandatory",
+    "phonetic": "ˈmændətəri",
+    "pos": "adj.",
+    "meaning": "强制的/义务的",
+    "example": "Wearing a seatbelt is mandatory in most countries.",
+    "exampleCn": "大多数国家强制系安全带。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5003,
+    "word": "enact",
+    "phonetic": "ɪˈnækt",
+    "pos": "v.",
+    "meaning": "颁布/制定法律",
+    "example": "The government enacted new environmental laws.",
+    "exampleCn": "政府颁布了新的环境法。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5004,
+    "word": "legislate",
+    "phonetic": "ˈledʒɪsleɪt",
+    "pos": "v.",
+    "meaning": "立法/制定法律",
+    "example": "Parliament legislates on matters of national importance.",
+    "exampleCn": "议会对国家重要事项立法。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5005,
+    "word": "equity",
+    "phonetic": "ˈekwəti",
+    "pos": "n.",
+    "meaning": "公平/公正/股权",
+    "example": "The judge was known for her fairness and equity.",
+    "exampleCn": "这位法官以公正公平著称。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5006,
+    "word": "fair",
+    "phonetic": "feə",
+    "pos": "adj.",
+    "meaning": "公平的/合理的",
+    "example": "The trial was conducted in a fair manner.",
+    "exampleCn": "审判以公平的方式进行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5007,
+    "word": "just",
+    "phonetic": "dʒʌst",
+    "pos": "adj.",
+    "meaning": "公正的/正义的",
+    "example": "The judge delivered a just verdict.",
+    "exampleCn": "法官做出了公正的裁决。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5008,
+    "word": "prejudice",
+    "phonetic": "ˈpredʒʊdɪs",
+    "pos": "n.",
+    "meaning": "偏见/歧视",
+    "example": "Racial prejudice has no place in modern society.",
+    "exampleCn": "种族偏见在现代社会中没有立足之地。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5009,
+    "word": "discrimination",
+    "phonetic": "dɪˌskrɪmɪˈneɪʃn",
+    "pos": "n.",
+    "meaning": "歧视/区别对待",
+    "example": "She sued the company for discrimination.",
+    "exampleCn": "她以歧视为由起诉了公司。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5010,
+    "word": "prosecute",
+    "phonetic": "ˈprɒsɪkjuːt",
+    "pos": "v.",
+    "meaning": "起诉/检举",
+    "example": "The company was prosecuted for breaking safety laws.",
+    "exampleCn": "公司因违反安全法被起诉。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5011,
+    "word": "condemn",
+    "phonetic": "kənˈdem",
+    "pos": "v.",
+    "meaning": "谴责/判刑",
+    "example": "World leaders condemned the attack as an act of terrorism.",
+    "exampleCn": "世界领导人谴责这次袭击是恐怖行为。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5012,
+    "word": "complain",
+    "phonetic": "kəmˈpleɪn",
+    "pos": "v.",
+    "meaning": "投诉/抱怨",
+    "example": "Residents complained about the noise from the construction.",
+    "exampleCn": "居民投诉了施工噪音。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5013,
+    "word": "boycott",
+    "phonetic": "ˈbɔɪkɒt",
+    "pos": "v./n.",
+    "meaning": "抵制/排斥",
+    "example": "They called for a boycott of the company's products.",
+    "exampleCn": "他们呼吁抵制该公司的产品。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5014,
+    "word": "plea",
+    "phonetic": "pliː",
+    "pos": "n.",
+    "meaning": "请求/抗辩/恳求",
+    "example": "He made a plea for understanding and forgiveness.",
+    "exampleCn": "他请求理解和宽恕。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5015,
+    "word": "controversy",
+    "phonetic": "ˈkɒntrəvɜːsi",
+    "pos": "n.",
+    "meaning": "争议/争论",
+    "example": "The new law caused a lot of controversy.",
+    "exampleCn": "新法律引起了很多争议。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5016,
+    "word": "whisper",
+    "phonetic": "ˈwɪspə",
+    "pos": "v.",
+    "meaning": "低语/耳语",
+    "example": "She whispered the secret in my ear.",
+    "exampleCn": "她在我耳边悄悄说了秘密。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5017,
+    "word": "mutter",
+    "phonetic": "ˈmʌtə",
+    "pos": "v.",
+    "meaning": "咕哝/嘟囔",
+    "example": "He muttered something under his breath and walked away.",
+    "exampleCn": "他低声嘟囔了几句然后就走了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5018,
+    "word": "murmur",
+    "phonetic": "ˈmɜːmə",
+    "pos": "v./n.",
+    "meaning": "低声说/喃喃声",
+    "example": "The children murmured in agreement.",
+    "exampleCn": "孩子们低声表示同意。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5019,
+    "word": "silent",
+    "phonetic": "ˈsaɪlənt",
+    "pos": "adj.",
+    "meaning": "沉默的/安静的",
+    "example": "Everyone fell silent as the judge entered the room.",
+    "exampleCn": "法官走进房间时，所有人都安静了下来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5020,
+    "word": "reasonable",
+    "phonetic": "ˈriːznəbl",
+    "pos": "adj.",
+    "meaning": "合理的/公道的",
+    "example": "It is reasonable to expect some delays.",
+    "exampleCn": "预期会有一些延误是合理的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
+  },
+  {
+    "id": 5021,
+    "word": "suitable",
+    "phonetic": "ˈsuːtəbl",
+    "pos": "adj.",
+    "meaning": "合适的/适宜的",
+    "example": "This film is not suitable for young children.",
+    "exampleCn": "这部电影不适合幼儿观看。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5022,
+    "word": "judge",
+    "phonetic": "dʒʌdʒ",
+    "pos": "n./v.",
+    "meaning": "法官/判断",
+    "example": "The judge sentenced him to five years in prison.",
+    "exampleCn": "法官判了他五年监禁。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5023,
+    "word": "jury",
+    "phonetic": "ˈdʒʊəri",
+    "pos": "n.",
+    "meaning": "陪审团/评委会",
+    "example": "The jury found him guilty of the crime.",
+    "exampleCn": "陪审团裁定他罪名成立。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5024,
+    "word": "sentence",
+    "phonetic": "ˈsentəns",
+    "pos": "n./v.",
+    "meaning": "判决/句子",
+    "example": "He received a prison sentence of ten years.",
+    "exampleCn": "他被判十年监禁。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5025,
+    "word": "jail",
+    "phonetic": "dʒeɪl",
+    "pos": "n.",
+    "meaning": "监狱/看守所",
+    "example": "He spent three months in jail for the offence.",
+    "exampleCn": "他因该罪行在监狱里呆了三个月。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5026,
+    "word": "prison",
+    "phonetic": "ˈprɪzn",
+    "pos": "n.",
+    "meaning": "监狱/牢房",
+    "example": "She was sent to prison for fraud.",
+    "exampleCn": "她因欺诈入狱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5027,
+    "word": "sin",
+    "phonetic": "sɪn",
+    "pos": "n.",
+    "meaning": "罪/罪恶/罪过",
+    "example": "In some religions, lying is considered a sin.",
+    "exampleCn": "在某些宗教中，说谎被视为一种罪。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5028,
+    "word": "vice",
+    "phonetic": "vaɪs",
+    "pos": "n.",
+    "meaning": "恶习/不良行为/副的",
+    "example": "Gambling is a vice that can destroy lives.",
+    "exampleCn": "赌博是一种能毁掉生活的恶习。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5029,
+    "word": "bribe",
+    "phonetic": "braɪb",
+    "pos": "n./v.",
+    "meaning": "贿赂/行贿",
+    "example": "He tried to bribe the police officer.",
+    "exampleCn": "他试图贿赂警察。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5030,
+    "word": "rob",
+    "phonetic": "rɒb",
+    "pos": "v.",
+    "meaning": "抢劫/偷盗",
+    "example": "The bank was robbed at gunpoint.",
+    "exampleCn": "银行被人持枪抢劫了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5031,
+    "word": "pirate",
+    "phonetic": "ˈpaɪrət",
+    "pos": "n.",
+    "meaning": "海盗/盗版者",
+    "example": "Pirates attacked the ship off the coast.",
+    "exampleCn": "海盗在近海袭击了船只。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5032,
+    "word": "steal",
+    "phonetic": "stiːl",
+    "pos": "v.",
+    "meaning": "偷/窃取",
+    "example": "Someone stole my wallet on the bus.",
+    "exampleCn": "有人在公交车上偷了我的钱包。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5033,
+    "word": "thief",
+    "phonetic": "θiːf",
+    "pos": "n.",
+    "meaning": "小偷/盗贼",
+    "example": "The thief escaped through a window.",
+    "exampleCn": "小偷从窗户逃走了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5034,
+    "word": "murder",
+    "phonetic": "ˈmɜːdə",
+    "pos": "n./v.",
+    "meaning": "谋杀/凶杀",
+    "example": "He was found guilty of murder.",
+    "exampleCn": "他被判犯有谋杀罪。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5035,
+    "word": "suicide",
+    "phonetic": "ˈsuːɪsaɪd",
+    "pos": "n.",
+    "meaning": "自杀/自杀行为",
+    "example": "The police are treating the death as suicide.",
+    "exampleCn": "警方将死因按自杀处理。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5036,
+    "word": "fraud",
+    "phonetic": "frɔːd",
+    "pos": "n.",
+    "meaning": "欺诈/诈骗",
+    "example": "He was sent to prison for fraud.",
+    "exampleCn": "他因欺诈入狱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5037,
+    "word": "liar",
+    "phonetic": "ˈlaɪə",
+    "pos": "n.",
+    "meaning": "说谎者/骗子",
+    "example": "Don't trust him; he is a liar.",
+    "exampleCn": "别信他，他是个骗子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5038,
+    "word": "trap",
+    "phonetic": "træp",
+    "pos": "n./v.",
+    "meaning": "陷阱/诱捕",
+    "example": "The fox was caught in a trap.",
+    "exampleCn": "狐狸落入陷阱被抓住了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5039,
+    "word": "trick",
+    "phonetic": "trɪk",
+    "pos": "n./v.",
+    "meaning": "诡计/骗局",
+    "example": "The magician performed an amazing trick.",
+    "exampleCn": "魔术师表演了一个精彩的把戏。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5040,
+    "word": "stigma",
+    "phonetic": "ˈstɪɡmə",
+    "pos": "n.",
+    "meaning": "污名/耻辱",
+    "example": "There is a social stigma attached to mental illness.",
+    "exampleCn": "精神疾病背负着一种社会污名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5041,
+    "word": "confess",
+    "phonetic": "kənˈfes",
+    "pos": "v.",
+    "meaning": "承认/坦白",
+    "example": "He confessed to the crime.",
+    "exampleCn": "他坦白了罪行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5042,
+    "word": "reconcile",
+    "phonetic": "ˈrekənsaɪl",
+    "pos": "v.",
+    "meaning": "和解/调和",
+    "example": "They were finally reconciled after years of conflict.",
+    "exampleCn": "经过多年冲突后他们终于和解了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5043,
+    "word": "obey",
+    "phonetic": "əˈbeɪ",
+    "pos": "v.",
+    "meaning": "服从/遵从",
+    "example": "Drivers must obey traffic signs.",
+    "exampleCn": "驾驶员必须遵守交通标志。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5044,
+    "word": "succumb",
+    "phonetic": "səˈkʌm",
+    "pos": "v.",
+    "meaning": "屈服/屈从",
+    "example": "He succumbed to pressure and resigned.",
+    "exampleCn": "他屈服于压力而辞职了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5045,
+    "word": "penalty",
+    "phonetic": "ˈpenəlti",
+    "pos": "n.",
+    "meaning": "处罚/罚款/刑罚",
+    "example": "The penalty for speeding is a heavy fine.",
+    "exampleCn": "超速的处罚是一笔重额罚款。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5046,
+    "word": "fine",
+    "phonetic": "faɪn",
+    "pos": "n./adj.",
+    "meaning": "罚款/好的/精细的",
+    "example": "He had to pay a fine for parking illegally.",
+    "exampleCn": "他因违章停车不得不缴纳罚款。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5047,
+    "word": "ownership",
+    "phonetic": "ˈəʊnəʃɪp",
+    "pos": "n.",
+    "meaning": "所有权/拥有权",
+    "example": "The ownership of the land was disputed.",
+    "exampleCn": "土地所有权存在争议。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5048,
+    "word": "copyright",
+    "phonetic": "ˈkɒpiraɪt",
+    "pos": "n.",
+    "meaning": "版权/著作权",
+    "example": "The song is protected by copyright.",
+    "exampleCn": "这首歌受版权保护。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5049,
+    "word": "accredit",
+    "phonetic": "əˈkredɪt",
+    "pos": "v.",
+    "meaning": "认证/授权/委派",
+    "example": "The university is accredited by the government.",
+    "exampleCn": "这所大学获得了政府认证。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5050,
+    "word": "falsehood",
+    "phonetic": "ˈfɔːlshʊd",
+    "pos": "n.",
+    "meaning": "虚假/谎言",
+    "example": "He told a deliberate falsehood to avoid punishment.",
+    "exampleCn": "他故意说了一个谎来逃避惩罚。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5051,
+    "word": "demand",
+    "phonetic": "dɪˈmɑːnd",
+    "pos": "n./v.",
+    "meaning": "要求/需求",
+    "example": "The workers demanded better working conditions.",
+    "exampleCn": "工人们要求更好的工作条件。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5052,
+    "word": "request",
+    "phonetic": "rɪˈkwest",
+    "pos": "n./v.",
+    "meaning": "请求/要求",
+    "example": "She made a request for more information.",
+    "exampleCn": "她请求提供更多信息。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5053,
+    "word": "require",
+    "phonetic": "rɪˈkwaɪə",
+    "pos": "v.",
+    "meaning": "需要/要求",
+    "example": "The task requires patience and skill.",
+    "exampleCn": "这项任务需要耐心和技巧。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5054,
+    "word": "petition",
+    "phonetic": "pɪˈtɪʃn",
+    "pos": "n./v.",
+    "meaning": "请愿/请愿书",
+    "example": "Over 10,000 people signed the petition.",
+    "exampleCn": "超过一万人签署了请愿书。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5055,
+    "word": "instruct",
+    "phonetic": "ɪnˈstrʌkt",
+    "pos": "v.",
+    "meaning": "指示/指导",
+    "example": "The teacher instructed the students to open their books.",
+    "exampleCn": "老师指示学生们打开书本。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5056,
+    "word": "false",
+    "phonetic": "fɔːls",
+    "pos": "adj.",
+    "meaning": "错误的/假的",
+    "example": "The information turned out to be false.",
+    "exampleCn": "该信息最后被证明是假的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5057,
+    "word": "violence",
+    "phonetic": "ˈvaɪələns",
+    "pos": "n.",
+    "meaning": "暴力/暴行",
+    "example": "The government called for an end to the violence.",
+    "exampleCn": "政府呼吁结束暴力。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5058,
+    "word": "raid",
+    "phonetic": "reɪd",
+    "pos": "n./v.",
+    "meaning": "突袭/搜查",
+    "example": "Police carried out a raid on the suspect's house.",
+    "exampleCn": "警方对嫌疑人住所进行了突击搜查。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5059,
+    "word": "enormity",
+    "phonetic": "ɪˈnɔːməti",
+    "pos": "n.",
+    "meaning": "巨大/严重性",
+    "example": "The enormity of the disaster shocked the world.",
+    "exampleCn": "灾难的严重性震惊了世界。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5060,
+    "word": "battle",
+    "phonetic": "ˈbætl",
+    "pos": "n.",
+    "meaning": "战斗/战役/斗争",
+    "example": "Many soldiers died in the battle.",
+    "exampleCn": "许多士兵在那场战斗中阵亡。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5061,
+    "word": "struggle",
+    "phonetic": "ˈstrʌɡl",
+    "pos": "n./v.",
+    "meaning": "挣扎/斗争/奋斗",
+    "example": "She struggled to free herself from the ropes.",
+    "exampleCn": "她挣扎着从绳索中挣脱出来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5062,
+    "word": "gunpowder",
+    "phonetic": "ˈɡʌnpaʊdə",
+    "pos": "n.",
+    "meaning": "火药",
+    "example": "Gunpowder was invented in ancient China.",
+    "exampleCn": "火药是中国古代发明的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5063,
+    "word": "cannon",
+    "phonetic": "ˈkænən",
+    "pos": "n.",
+    "meaning": "大炮/加农炮",
+    "example": "The old cannon still stands in the town square.",
+    "exampleCn": "那门旧大炮仍然矗立在镇广场上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5064,
+    "word": "missile",
+    "phonetic": "ˈmɪsaɪl",
+    "pos": "n.",
+    "meaning": "导弹/飞射物",
+    "example": "The country tested a long-range missile.",
+    "exampleCn": "该国测试了一枚远程导弹。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5065,
+    "word": "weapon",
+    "phonetic": "ˈwepən",
+    "pos": "n.",
+    "meaning": "武器/兵器",
+    "example": "The police found several illegal weapons in the house.",
+    "exampleCn": "警方在屋里发现了几件非法武器。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5066,
+    "word": "pistol",
+    "phonetic": "ˈpɪstl",
+    "pos": "n.",
+    "meaning": "手枪",
+    "example": "The officer drew his pistol and fired a warning shot.",
+    "exampleCn": "警官拔出手枪鸣枪警告。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5067,
+    "word": "rifle",
+    "phonetic": "ˈraɪfl",
+    "pos": "n.",
+    "meaning": "步枪/来福枪",
+    "example": "The soldier cleaned his rifle before the mission.",
+    "exampleCn": "士兵在任务前擦干净了步枪。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5068,
+    "word": "deflect",
+    "phonetic": "dɪˈflekt",
+    "pos": "v.",
+    "meaning": "使偏转/使偏离",
+    "example": "The shield deflected the arrow.",
+    "exampleCn": "盾牌挡飞了箭。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5069,
+    "word": "mission",
+    "phonetic": "ˈmɪʃn",
+    "pos": "n.",
+    "meaning": "任务/使命",
+    "example": "The soldiers were sent on a dangerous mission.",
+    "exampleCn": "士兵们被派去执行一项危险任务。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5070,
+    "word": "flare",
+    "phonetic": "fleə",
+    "pos": "n./v.",
+    "meaning": "火焰/闪光/爆发",
+    "example": "A flare was sent up as a distress signal.",
+    "exampleCn": "一发信号弹被升起作为求救信号。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5071,
+    "word": "glitter",
+    "phonetic": "ˈɡlɪtə",
+    "pos": "v.",
+    "meaning": "闪烁/闪闪发光",
+    "example": "The necklace glittered under the lights.",
+    "exampleCn": "项链在灯光下闪闪发光。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5072,
+    "word": "sword",
+    "phonetic": "sɔːd",
+    "pos": "n.",
+    "meaning": "剑/刀",
+    "example": "The knight drew his sword and charged forward.",
+    "exampleCn": "骑士拔出剑向前冲锋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5073,
+    "word": "ax",
+    "phonetic": "æks",
+    "pos": "n.",
+    "meaning": "斧头/斧子",
+    "example": "He chopped the wood with an ax.",
+    "exampleCn": "他用一把斧头劈了木头。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5074,
+    "word": "hammer",
+    "phonetic": "ˈhæmə",
+    "pos": "n.",
+    "meaning": "锤子/榔头",
+    "example": "She used a hammer to knock the nail into the wall.",
+    "exampleCn": "她用锤子把钉子敲进墙里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5075,
+    "word": "arrow",
+    "phonetic": "ˈærəʊ",
+    "pos": "n.",
+    "meaning": "箭/箭头",
+    "example": "The arrow flew straight and hit the target.",
+    "exampleCn": "箭径直飞去击中了目标。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5076,
+    "word": "spear",
+    "phonetic": "spɪə",
+    "pos": "n.",
+    "meaning": "矛/长枪",
+    "example": "The warrior threw his spear with great force.",
+    "exampleCn": "战士用力把矛投了出去。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5077,
+    "word": "helmet",
+    "phonetic": "ˈhelmɪt",
+    "pos": "n.",
+    "meaning": "头盔/安全帽",
+    "example": "Always wear a helmet when riding a motorbike.",
+    "exampleCn": "骑摩托车时要始终戴头盔。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5078,
+    "word": "equip",
+    "phonetic": "ɪˈkwɪp",
+    "pos": "v.",
+    "meaning": "装备/配备",
+    "example": "The soldiers were equipped with the latest weapons.",
+    "exampleCn": "士兵们配备了最新的武器。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5079,
+    "word": "prepare",
+    "phonetic": "prɪˈpeə",
+    "pos": "v.",
+    "meaning": "准备/预备",
+    "example": "She prepared a meal for the guests.",
+    "exampleCn": "她为客人们准备了一顿饭。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5080,
+    "word": "provide",
+    "phonetic": "prəˈvaɪd",
+    "pos": "v.",
+    "meaning": "提供/供应",
+    "example": "The hotel provides free Wi-Fi for guests.",
+    "exampleCn": "酒店为客人提供免费无线网络。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5081,
+    "word": "deploy",
+    "phonetic": "dɪˈplɔɪ",
+    "pos": "v.",
+    "meaning": "部署/调度",
+    "example": "Troops were deployed along the border.",
+    "exampleCn": "部队已部署在边境线上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5082,
+    "word": "punch",
+    "phonetic": "pʌntʃ",
+    "pos": "v./n.",
+    "meaning": "拳打/打孔",
+    "example": "He punched the wall in anger.",
+    "exampleCn": "他生气地用拳打墙。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5083,
+    "word": "plight",
+    "phonetic": "plaɪt",
+    "pos": "n.",
+    "meaning": "困境/苦难",
+    "example": "The public was moved by the plight of the refugees.",
+    "exampleCn": "公众被难民的困境所打动。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5084,
+    "word": "pitfall",
+    "phonetic": "ˈpɪtfɔːl",
+    "pos": "n.",
+    "meaning": "陷阱/隐患",
+    "example": "There are many pitfalls in starting a new business.",
+    "exampleCn": "创办新企业有许多陷阱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5085,
+    "word": "conspiracy",
+    "phonetic": "kənˈspɪrəsi",
+    "pos": "n.",
+    "meaning": "阴谋/共谋",
+    "example": "They were accused of conspiracy to commit murder.",
+    "exampleCn": "他们被控阴谋杀人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5086,
+    "word": "destitute",
+    "phonetic": "ˈdestɪtjuːt",
+    "pos": "adj.",
+    "meaning": "赤贫的/一无所有的",
+    "example": "The drought left many farmers destitute.",
+    "exampleCn": "干旱让许多农民一贫如洗。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5087,
+    "word": "threat",
+    "phonetic": "θret",
+    "pos": "n.",
+    "meaning": "威胁/恐吓",
+    "example": "The floods posed a serious threat to the village.",
+    "exampleCn": "洪水对村庄构成了严重威胁。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5088,
+    "word": "trespass",
+    "phonetic": "ˈtrespəs",
+    "pos": "v.",
+    "meaning": "侵入/擅自闯入",
+    "example": "He was fined for trespassing on private land.",
+    "exampleCn": "他因擅自闯入私人土地被罚款。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5089,
+    "word": "attack",
+    "phonetic": "əˈtæk",
+    "pos": "n./v.",
+    "meaning": "攻击/袭击",
+    "example": "A man was attacked by a dog in the park.",
+    "exampleCn": "一名男子在公园里被狗袭击了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
+  },
+  {
+    "id": 5090,
+    "word": "assault",
+    "phonetic": "əˈsɔːlt",
+    "pos": "n./v.",
+    "meaning": "攻击/袭击",
+    "example": "He was charged with assault.",
+    "exampleCn": "他被指控犯有攻击罪。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5091,
+    "word": "siege",
+    "phonetic": "siːdʒ",
+    "pos": "n.",
+    "meaning": "围攻/包围",
+    "example": "The city was under siege for three months.",
+    "exampleCn": "这座城市被围困了三个月。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5092,
+    "word": "pause",
+    "phonetic": "pɔːz",
+    "pos": "v./n.",
+    "meaning": "暂停/停顿",
+    "example": "She paused to catch her breath.",
+    "exampleCn": "她停下来喘了口气。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5093,
+    "word": "cease",
+    "phonetic": "siːs",
+    "pos": "v.",
+    "meaning": "停止/终止",
+    "example": "The factory ceased production last year.",
+    "exampleCn": "该工厂去年停止了生产。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5094,
+    "word": "oppress",
+    "phonetic": "əˈpres",
+    "pos": "v.",
+    "meaning": "压迫/压制",
+    "example": "The regime oppressed its own people.",
+    "exampleCn": "那个政权压迫自己的人民。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5095,
+    "word": "forbid",
+    "phonetic": "fəˈbɪd",
+    "pos": "v.",
+    "meaning": "禁止/不准",
+    "example": "Smoking is forbidden inside the building.",
+    "exampleCn": "楼内禁止吸烟。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5096,
+    "word": "prohibit",
+    "phonetic": "prəˈhɪbɪt",
+    "pos": "v.",
+    "meaning": "禁止/阻止",
+    "example": "The law prohibits the sale of alcohol to minors.",
+    "exampleCn": "法律禁止向未成年人出售酒类。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5097,
+    "word": "prevent",
+    "phonetic": "prɪˈvent",
+    "pos": "v.",
+    "meaning": "防止/阻止",
+    "example": "This medicine helps prevent heart disease.",
+    "exampleCn": "这种药有助于预防心脏病。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5098,
+    "word": "revolt",
+    "phonetic": "rɪˈvəʊlt",
+    "pos": "n./v.",
+    "meaning": "反抗/起义",
+    "example": "The people rose in revolt against the dictator.",
+    "exampleCn": "人民起来反抗独裁者。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5099,
+    "word": "traitor",
+    "phonetic": "ˈtreɪtə",
+    "pos": "n.",
+    "meaning": "叛徒/卖国贼",
+    "example": "He was branded a traitor for selling secrets to the enemy.",
+    "exampleCn": "他因向敌人出售机密而被定为叛徒。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5100,
+    "word": "patriot",
+    "phonetic": "ˈpætriət",
+    "pos": "n.",
+    "meaning": "爱国者/爱国人士",
+    "example": "He was a true patriot who loved his country.",
+    "exampleCn": "他是一个真正热爱祖国的爱国者。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5101,
+    "word": "reproach",
+    "phonetic": "rɪˈprəʊtʃ",
+    "pos": "v./n.",
+    "meaning": "责备/指责",
+    "example": "He reproached her for not telling the truth.",
+    "exampleCn": "他责备她没有说实话。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5102,
+    "word": "evidence",
+    "phonetic": "ˈevɪdəns",
+    "pos": "n.",
+    "meaning": "证据/证明",
+    "example": "There is no evidence to support his claim.",
+    "exampleCn": "没有证据支持他的说法。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5103,
+    "word": "terror",
+    "phonetic": "ˈterə",
+    "pos": "n.",
+    "meaning": "恐怖/恐惧",
+    "example": "She screamed in terror when she saw the snake.",
+    "exampleCn": "她看到蛇时恐怖地尖叫起来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5104,
+    "word": "terrific",
+    "phonetic": "təˈrɪfɪk",
+    "pos": "adj.",
+    "meaning": "极好的/可怕的",
+    "example": "We had a terrific time at the party.",
+    "exampleCn": "我们在聚会上玩得开心极了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5105,
+    "word": "horrible",
+    "phonetic": "ˈhɒrəbl",
+    "pos": "adj.",
+    "meaning": "可怕的/糟糕的",
+    "example": "The weather was horrible all weekend.",
+    "exampleCn": "整个周末天气都很糟糕。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5106,
+    "word": "dread",
+    "phonetic": "dred",
+    "pos": "v./n.",
+    "meaning": "恐惧/害怕",
+    "example": "She dreaded the thought of going back to work.",
+    "exampleCn": "她一想到回去上班就害怕。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5107,
+    "word": "frighten",
+    "phonetic": "ˈfraɪtn",
+    "pos": "v.",
+    "meaning": "使害怕/吓唬",
+    "example": "The loud noise frightened the baby.",
+    "exampleCn": "巨响吓哭了宝宝。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5108,
+    "word": "tension",
+    "phonetic": "ˈtenʃn",
+    "pos": "n.",
+    "meaning": "紧张/张力",
+    "example": "There is growing tension between the two sides.",
+    "exampleCn": "双方之间的紧张局势正在升级。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5109,
+    "word": "turmoil",
+    "phonetic": "ˈtɜːmɔɪl",
+    "pos": "n.",
+    "meaning": "混乱/动荡",
+    "example": "The scandal threw the government into turmoil.",
+    "exampleCn": "丑闻让政府陷入了混乱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5110,
+    "word": "limit",
+    "phonetic": "ˈlɪmɪt",
+    "pos": "n./v.",
+    "meaning": "限制/界限",
+    "example": "There is a limit to how much one person can do.",
+    "exampleCn": "一个人的能力是有限的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5111,
+    "word": "rein",
+    "phonetic": "reɪn",
+    "pos": "n.",
+    "meaning": "缰绳/控制",
+    "example": "The rider pulled on the reins to stop the horse.",
+    "exampleCn": "骑手拉缰绳把马停住。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5112,
+    "word": "competitor",
+    "phonetic": "kəmˈpetɪtə",
+    "pos": "n.",
+    "meaning": "竞争者/对手",
+    "example": "She finished ahead of all her competitors.",
+    "exampleCn": "她排在了所有对手前面冲线。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5113,
+    "word": "enemy",
+    "phonetic": "ˈenəmi",
+    "pos": "n.",
+    "meaning": "敌人/对手",
+    "example": "They were once friends but are now bitter enemies.",
+    "exampleCn": "他们曾是朋友，但如今是死对头。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5114,
+    "word": "manoeuvre",
+    "phonetic": "məˈnuːvə",
+    "pos": "n./v.",
+    "meaning": "调动/策略/操作",
+    "example": "The driver had to perform an emergency manoeuvre.",
+    "exampleCn": "驾驶员不得不做出紧急操作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5115,
+    "word": "force",
+    "phonetic": "fɔːs",
+    "pos": "n./v.",
+    "meaning": "力量/强制/武力",
+    "example": "The police used force to disperse the crowd.",
+    "exampleCn": "警察动用武力驱散了人群。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5116,
+    "word": "impair",
+    "phonetic": "ɪmˈpeə",
+    "pos": "v.",
+    "meaning": "损害/削弱",
+    "example": "Drinking alcohol can impair your judgement.",
+    "exampleCn": "饮酒会损害判断力。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5117,
+    "word": "event",
+    "phonetic": "ɪˈvent",
+    "pos": "n.",
+    "meaning": "事件/活动",
+    "example": "The wedding was the biggest social event of the year.",
+    "exampleCn": "那场婚礼是年度最大的社交活动。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
     ]
   }
 ]

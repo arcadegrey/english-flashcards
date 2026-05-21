@@ -31,10 +31,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet6"
+      "cet6",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 1137,
@@ -305,10 +310,15 @@
     "exampleCn": "灾难发生后许多市民捐了款。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 1154,
@@ -445,10 +455,15 @@
     "exampleCn": "这项政策导致成本显著下降。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 1162,
@@ -725,10 +740,15 @@
     "exampleCn": "这家公司把总部迁到了上海。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 1178,
@@ -775,10 +795,15 @@
     "exampleCn": "这家公司因违反合同被起诉了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 1181,
@@ -820,10 +845,15 @@
     "exampleCn": "许多学生表现出对网课的偏好。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 1184,
@@ -865,10 +895,15 @@
     "exampleCn": "请在表格上填写你的职业。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   },
   {
     "id": 1187,
@@ -880,10 +915,15 @@
     "exampleCn": "这所大学计划扩建图书馆。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 1188,
@@ -1060,10 +1100,15 @@
     "exampleCn": "这家商店储备了大量新鲜水果。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 1199,
@@ -1189,7 +1234,8 @@
     "list": "8",
     "ieltsList": "23",
     "ieltsLists": [
-      "23"
+      "23",
+      "44"
     ]
   },
   {
@@ -1372,10 +1418,15 @@
     "exampleCn": "锻炼已成为她日常生活的一部分。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 1218,

@@ -95,10 +95,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet6"
+      "cet6",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 479,
@@ -578,10 +583,15 @@
     "exampleCn": "青少年想要独立于父母。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 1072,
@@ -703,10 +713,15 @@
     "exampleCn": "坏消息会让人沮丧。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 1080,
@@ -793,10 +808,15 @@
     "exampleCn": "炸弹可能随时爆炸。/1950年后人口激增。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 1085,
@@ -1597,10 +1617,15 @@
     "exampleCn": "当地货币贬值了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 1134,

@@ -305,6 +305,10 @@ const getIeltsTopicKey = (list) => {
     if (numericList >= 30 && numericList <= 32) return 'food-health'
     if (numericList >= 33 && numericList <= 35) return 'architecture-places'
     if (numericList >= 36 && numericList <= 37) return 'transport-travel'
+    if (numericList >= 38 && numericList <= 40) return 'nation-government'
+    if (numericList >= 41 && numericList <= 43) return 'society-economy'
+    if (numericList >= 44 && numericList <= 45) return 'law-regulation'
+    if (numericList >= 46 && numericList <= 47) return 'warfare-battlefield'
   }
 
   return IELTS_UNKNOWN_TOPIC
@@ -326,6 +330,10 @@ const getIeltsTopicLabel = (topicKey) => {
     'food-health': '饮食健康',
     'architecture-places': '建筑场所',
     'transport-travel': '交通旅游',
+    'nation-government': '国家政府',
+    'society-economy': '社会经济',
+    'law-regulation': '法律法规',
+    'warfare-battlefield': '征战沙场',
     [IELTS_UNKNOWN_TOPIC]: '未分主题',
   }
   return labels[topicKey] || '未分主题'

@@ -1,0 +1,1091 @@
+[
+  {
+    "id": 11,
+    "word": "access",
+    "phonetic": "/ˈækses/",
+    "pos": "n./v.",
+    "meaning": "入口；访问；使用",
+    "example": "You need access to the building.",
+    "exampleCn": "你需要进入大楼的权限。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 148,
+    "word": "anonymous",
+    "phonetic": "/əˈnɑːnɪməs/",
+    "pos": "adj.",
+    "meaning": "匿名的",
+    "example": "The letter was sent anonymously.",
+    "exampleCn": "这封信是匿名发送的。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 173,
+    "word": "arrest",
+    "phonetic": "/əˈrest/",
+    "pos": "v./n.",
+    "meaning": "逮捕，拘留",
+    "example": "The police arrested the suspect.",
+    "exampleCn": "警察逮捕了嫌疑人。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 425,
+    "word": "cheat",
+    "phonetic": "/tʃiːt/",
+    "pos": "v.",
+    "meaning": "欺骗，作弊",
+    "example": "He cheated on the exam.",
+    "exampleCn": "他考试作弊。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 477,
+    "word": "clue",
+    "phonetic": "/kluː/",
+    "pos": "n.",
+    "meaning": "线索；提示",
+    "example": "The police found an important clue.",
+    "exampleCn": "警方发现了一条重要线索。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet6",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 499,
+    "word": "command",
+    "phonetic": "/kəˈmænd/",
+    "pos": "n./v.",
+    "meaning": "命令；指挥/命令；掌握",
+    "example": "She has a good command of academic English.",
+    "exampleCn": "她很好地掌握了学术英语。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet6",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 507,
+    "word": "crime",
+    "phonetic": "/kraɪm/",
+    "pos": "n.",
+    "meaning": "犯罪；罪行",
+    "example": "The crime rate has decreased this year.",
+    "exampleCn": "今年的犯罪率下降了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 508,
+    "word": "commit",
+    "phonetic": "/kəˈmɪt/",
+    "pos": "v.",
+    "meaning": "犯罪；承诺；投入",
+    "example": "He committed a serious mistake.",
+    "exampleCn": "他犯了一个严重的错误。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 579,
+    "word": "conform",
+    "phonetic": "/kənˈfɔːm/",
+    "pos": "v.",
+    "meaning": "符合；遵守；顺应",
+    "example": "The product must conform to safety standards.",
+    "exampleCn": "产品必须符合安全标准。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 656,
+    "word": "deceive",
+    "phonetic": "/dɪˈsiːv/",
+    "pos": "v.",
+    "meaning": "欺骗；蒙骗",
+    "example": "Don't deceive your friends.",
+    "exampleCn": "不要欺骗你的朋友。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 1040,
+    "word": "pretend",
+    "phonetic": "/prɪˈtend/",
+    "pos": "v.",
+    "meaning": "假装，佯装",
+    "example": "Children often pretend to be superheroes.",
+    "exampleCn": "孩子们经常假装自己是超级英雄。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 1217,
+    "word": "routine",
+    "phonetic": "/ruːˈtiːn/",
+    "pos": "n./adj.",
+    "meaning": "常规；例行公事/例行的",
+    "example": "Exercise has become part of her daily routine.",
+    "exampleCn": "锻炼已成为她日常生活的一部分。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 1281,
+    "word": "restrain",
+    "phonetic": "/rɪˈstreɪn/",
+    "pos": "v.",
+    "meaning": "抑制；约束",
+    "example": "He tried to restrain his anger during the meeting.",
+    "exampleCn": "他试图在会议期间克制自己的愤怒。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 1440,
+    "word": "restrict",
+    "phonetic": "/rɪˈstrɪkt/",
+    "pos": "v.",
+    "meaning": "限制/约束",
+    "example": "The new rules restrict access to the laboratory.",
+    "exampleCn": "新规定限制进入实验室。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 1597,
+    "word": "trial",
+    "phonetic": "/ˈtraɪəl/",
+    "pos": "n.",
+    "meaning": "审判/试验/考验",
+    "example": "The new medicine is being tested in a clinical trial.",
+    "exampleCn": "这种新药正在临床试验中接受测试。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 1863,
+    "word": "supervise",
+    "phonetic": "/ˈsuːpərvaɪz/",
+    "pos": "v.",
+    "meaning": "监督/管理/指导",
+    "example": "A teacher must supervise students during the science experiment.",
+    "exampleCn": "老师必须在科学实验期间监督学生。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 1875,
+    "word": "confine",
+    "phonetic": "/kənˈfaɪn/",
+    "pos": "v.",
+    "meaning": "限制/ confined: 被限制的",
+    "example": "The illness forced him to confine his activities to the house.",
+    "exampleCn": "疾病迫使他把活动限制在家中。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 1980,
+    "word": "mortgage",
+    "phonetic": "/ˈmɔːrɡɪdʒ/",
+    "pos": "n./v.",
+    "meaning": "抵押贷款/抵押",
+    "example": "They applied for a mortgage to buy their first house.",
+    "exampleCn": "他们申请抵押贷款购买第一套房子。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 2044,
+    "word": "genuine",
+    "phonetic": "/ˈdʒenjuɪn/",
+    "pos": "adj.",
+    "meaning": "真正的/真诚的",
+    "example": "The researcher showed genuine interest in local culture.",
+    "exampleCn": "这位研究者对当地文化表现出真正的兴趣。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 2132,
+    "word": "consequence",
+    "phonetic": "/ˈkɑːnsɪkwens/",
+    "pos": "n.",
+    "meaning": "结果/后果/重要性",
+    "example": "Pollution is a serious consequence of rapid industrial growth.",
+    "exampleCn": "污染是工业快速增长的严重后果。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 2157,
+    "word": "oversee",
+    "phonetic": "/ˌoʊvərˈsiː/",
+    "pos": "v.",
+    "meaning": "监督/管理",
+    "example": "A manager will oversee the entire project.",
+    "exampleCn": "一位经理将监督整个项目。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 2266,
+    "word": "privilege",
+    "phonetic": "/ˈprɪvəlɪdʒ/",
+    "pos": "n./v.",
+    "meaning": "特权/荣幸/给予特权",
+    "example": "Education should be a right rather than a privilege.",
+    "exampleCn": "教育应该是一项权利，而不是特权。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 2317,
+    "word": "suspect",
+    "phonetic": "/səˈspekt/",
+    "pos": "v./n./adj.",
+    "meaning": "怀疑/嫌疑人/可疑的",
+    "example": "Scientists suspect that pollution caused the decline.",
+    "exampleCn": "科学家怀疑污染导致了这种下降。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 2379,
+    "word": "procedure",
+    "phonetic": "/prəˈsiːdʒər/",
+    "pos": "n.",
+    "meaning": "程序/步骤/手续",
+    "example": "The safety procedure must be followed in the lab.",
+    "exampleCn": "实验室必须遵守安全程序。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5021,
+    "word": "suitable",
+    "phonetic": "ˈsuːtəbl",
+    "pos": "adj.",
+    "meaning": "合适的/适宜的",
+    "example": "This film is not suitable for young children.",
+    "exampleCn": "这部电影不适合幼儿观看。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5022,
+    "word": "judge",
+    "phonetic": "dʒʌdʒ",
+    "pos": "n./v.",
+    "meaning": "法官/判断",
+    "example": "The judge sentenced him to five years in prison.",
+    "exampleCn": "法官判了他五年监禁。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5023,
+    "word": "jury",
+    "phonetic": "ˈdʒʊəri",
+    "pos": "n.",
+    "meaning": "陪审团/评委会",
+    "example": "The jury found him guilty of the crime.",
+    "exampleCn": "陪审团裁定他罪名成立。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5024,
+    "word": "sentence",
+    "phonetic": "ˈsentəns",
+    "pos": "n./v.",
+    "meaning": "判决/句子",
+    "example": "He received a prison sentence of ten years.",
+    "exampleCn": "他被判十年监禁。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5025,
+    "word": "jail",
+    "phonetic": "dʒeɪl",
+    "pos": "n.",
+    "meaning": "监狱/看守所",
+    "example": "He spent three months in jail for the offence.",
+    "exampleCn": "他因该罪行在监狱里呆了三个月。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5026,
+    "word": "prison",
+    "phonetic": "ˈprɪzn",
+    "pos": "n.",
+    "meaning": "监狱/牢房",
+    "example": "She was sent to prison for fraud.",
+    "exampleCn": "她因欺诈入狱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5027,
+    "word": "sin",
+    "phonetic": "sɪn",
+    "pos": "n.",
+    "meaning": "罪/罪恶/罪过",
+    "example": "In some religions, lying is considered a sin.",
+    "exampleCn": "在某些宗教中，说谎被视为一种罪。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5028,
+    "word": "vice",
+    "phonetic": "vaɪs",
+    "pos": "n.",
+    "meaning": "恶习/不良行为/副的",
+    "example": "Gambling is a vice that can destroy lives.",
+    "exampleCn": "赌博是一种能毁掉生活的恶习。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5029,
+    "word": "bribe",
+    "phonetic": "braɪb",
+    "pos": "n./v.",
+    "meaning": "贿赂/行贿",
+    "example": "He tried to bribe the police officer.",
+    "exampleCn": "他试图贿赂警察。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5030,
+    "word": "rob",
+    "phonetic": "rɒb",
+    "pos": "v.",
+    "meaning": "抢劫/偷盗",
+    "example": "The bank was robbed at gunpoint.",
+    "exampleCn": "银行被人持枪抢劫了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5031,
+    "word": "pirate",
+    "phonetic": "ˈpaɪrət",
+    "pos": "n.",
+    "meaning": "海盗/盗版者",
+    "example": "Pirates attacked the ship off the coast.",
+    "exampleCn": "海盗在近海袭击了船只。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5032,
+    "word": "steal",
+    "phonetic": "stiːl",
+    "pos": "v.",
+    "meaning": "偷/窃取",
+    "example": "Someone stole my wallet on the bus.",
+    "exampleCn": "有人在公交车上偷了我的钱包。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5033,
+    "word": "thief",
+    "phonetic": "θiːf",
+    "pos": "n.",
+    "meaning": "小偷/盗贼",
+    "example": "The thief escaped through a window.",
+    "exampleCn": "小偷从窗户逃走了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5034,
+    "word": "murder",
+    "phonetic": "ˈmɜːdə",
+    "pos": "n./v.",
+    "meaning": "谋杀/凶杀",
+    "example": "He was found guilty of murder.",
+    "exampleCn": "他被判犯有谋杀罪。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5035,
+    "word": "suicide",
+    "phonetic": "ˈsuːɪsaɪd",
+    "pos": "n.",
+    "meaning": "自杀/自杀行为",
+    "example": "The police are treating the death as suicide.",
+    "exampleCn": "警方将死因按自杀处理。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5036,
+    "word": "fraud",
+    "phonetic": "frɔːd",
+    "pos": "n.",
+    "meaning": "欺诈/诈骗",
+    "example": "He was sent to prison for fraud.",
+    "exampleCn": "他因欺诈入狱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5037,
+    "word": "liar",
+    "phonetic": "ˈlaɪə",
+    "pos": "n.",
+    "meaning": "说谎者/骗子",
+    "example": "Don't trust him; he is a liar.",
+    "exampleCn": "别信他，他是个骗子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5038,
+    "word": "trap",
+    "phonetic": "træp",
+    "pos": "n./v.",
+    "meaning": "陷阱/诱捕",
+    "example": "The fox was caught in a trap.",
+    "exampleCn": "狐狸落入陷阱被抓住了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5039,
+    "word": "trick",
+    "phonetic": "trɪk",
+    "pos": "n./v.",
+    "meaning": "诡计/骗局",
+    "example": "The magician performed an amazing trick.",
+    "exampleCn": "魔术师表演了一个精彩的把戏。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5040,
+    "word": "stigma",
+    "phonetic": "ˈstɪɡmə",
+    "pos": "n.",
+    "meaning": "污名/耻辱",
+    "example": "There is a social stigma attached to mental illness.",
+    "exampleCn": "精神疾病背负着一种社会污名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5041,
+    "word": "confess",
+    "phonetic": "kənˈfes",
+    "pos": "v.",
+    "meaning": "承认/坦白",
+    "example": "He confessed to the crime.",
+    "exampleCn": "他坦白了罪行。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5042,
+    "word": "reconcile",
+    "phonetic": "ˈrekənsaɪl",
+    "pos": "v.",
+    "meaning": "和解/调和",
+    "example": "They were finally reconciled after years of conflict.",
+    "exampleCn": "经过多年冲突后他们终于和解了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5043,
+    "word": "obey",
+    "phonetic": "əˈbeɪ",
+    "pos": "v.",
+    "meaning": "服从/遵从",
+    "example": "Drivers must obey traffic signs.",
+    "exampleCn": "驾驶员必须遵守交通标志。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5044,
+    "word": "succumb",
+    "phonetic": "səˈkʌm",
+    "pos": "v.",
+    "meaning": "屈服/屈从",
+    "example": "He succumbed to pressure and resigned.",
+    "exampleCn": "他屈服于压力而辞职了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5045,
+    "word": "penalty",
+    "phonetic": "ˈpenəlti",
+    "pos": "n.",
+    "meaning": "处罚/罚款/刑罚",
+    "example": "The penalty for speeding is a heavy fine.",
+    "exampleCn": "超速的处罚是一笔重额罚款。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5046,
+    "word": "fine",
+    "phonetic": "faɪn",
+    "pos": "n./adj.",
+    "meaning": "罚款/好的/精细的",
+    "example": "He had to pay a fine for parking illegally.",
+    "exampleCn": "他因违章停车不得不缴纳罚款。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5047,
+    "word": "ownership",
+    "phonetic": "ˈəʊnəʃɪp",
+    "pos": "n.",
+    "meaning": "所有权/拥有权",
+    "example": "The ownership of the land was disputed.",
+    "exampleCn": "土地所有权存在争议。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5048,
+    "word": "copyright",
+    "phonetic": "ˈkɒpiraɪt",
+    "pos": "n.",
+    "meaning": "版权/著作权",
+    "example": "The song is protected by copyright.",
+    "exampleCn": "这首歌受版权保护。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5049,
+    "word": "accredit",
+    "phonetic": "əˈkredɪt",
+    "pos": "v.",
+    "meaning": "认证/授权/委派",
+    "example": "The university is accredited by the government.",
+    "exampleCn": "这所大学获得了政府认证。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5050,
+    "word": "falsehood",
+    "phonetic": "ˈfɔːlshʊd",
+    "pos": "n.",
+    "meaning": "虚假/谎言",
+    "example": "He told a deliberate falsehood to avoid punishment.",
+    "exampleCn": "他故意说了一个谎来逃避惩罚。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5051,
+    "word": "demand",
+    "phonetic": "dɪˈmɑːnd",
+    "pos": "n./v.",
+    "meaning": "要求/需求",
+    "example": "The workers demanded better working conditions.",
+    "exampleCn": "工人们要求更好的工作条件。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5052,
+    "word": "request",
+    "phonetic": "rɪˈkwest",
+    "pos": "n./v.",
+    "meaning": "请求/要求",
+    "example": "She made a request for more information.",
+    "exampleCn": "她请求提供更多信息。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5053,
+    "word": "require",
+    "phonetic": "rɪˈkwaɪə",
+    "pos": "v.",
+    "meaning": "需要/要求",
+    "example": "The task requires patience and skill.",
+    "exampleCn": "这项任务需要耐心和技巧。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5054,
+    "word": "petition",
+    "phonetic": "pɪˈtɪʃn",
+    "pos": "n./v.",
+    "meaning": "请愿/请愿书",
+    "example": "Over 10,000 people signed the petition.",
+    "exampleCn": "超过一万人签署了请愿书。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5055,
+    "word": "instruct",
+    "phonetic": "ɪnˈstrʌkt",
+    "pos": "v.",
+    "meaning": "指示/指导",
+    "example": "The teacher instructed the students to open their books.",
+    "exampleCn": "老师指示学生们打开书本。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  },
+  {
+    "id": 5056,
+    "word": "false",
+    "phonetic": "fɔːls",
+    "pos": "adj.",
+    "meaning": "错误的/假的",
+    "example": "The information turned out to be false.",
+    "exampleCn": "该信息最后被证明是假的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
+  }
+]

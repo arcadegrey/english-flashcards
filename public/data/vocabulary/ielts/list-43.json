@@ -1,0 +1,1150 @@
+[
+  {
+    "id": 10,
+    "word": "accelerate",
+    "phonetic": "/əkˈseləreɪt/",
+    "pos": "v.",
+    "meaning": "加速；促进",
+    "example": "The car accelerated quickly.",
+    "exampleCn": "汽车加速很快。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 376,
+    "word": "career",
+    "phonetic": "/kəˈrɪr/",
+    "pos": "n.",
+    "meaning": "职业，事业",
+    "example": "She wants a career in medicine.",
+    "exampleCn": "她想在医学领域发展事业。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 412,
+    "word": "chance",
+    "phonetic": "/tʃæns/",
+    "pos": "n.",
+    "meaning": "机会；可能性",
+    "example": "Don't miss this chance.",
+    "exampleCn": "不要错过这个机会。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 443,
+    "word": "choose",
+    "phonetic": "/tʃuːz/",
+    "pos": "v.",
+    "meaning": "选择",
+    "example": "Choose the correct answer.",
+    "exampleCn": "选择正确答案。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 463,
+    "word": "clerk",
+    "phonetic": "/klɜːrk/",
+    "pos": "n.",
+    "meaning": "职员；店员",
+    "example": "The clerk helped me find the product.",
+    "exampleCn": "店员帮我找到了产品。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 485,
+    "word": "coin",
+    "phonetic": "/kɔɪn/",
+    "pos": "n.",
+    "meaning": "硬币",
+    "example": "He flipped a coin to decide.",
+    "exampleCn": "他抛硬币决定。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 566,
+    "word": "recommend",
+    "phonetic": "/ˌrekəˈmend/",
+    "pos": "v.",
+    "meaning": "推荐；建议；劝告",
+    "example": "I recommend this book to all students.",
+    "exampleCn": "我向所有学生推荐这本书。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 592,
+    "word": "collaborate",
+    "phonetic": "/kəˈlæbəreɪt/",
+    "pos": "v.",
+    "meaning": "合作/协作",
+    "example": "Researchers from different countries collaborate on the project.",
+    "exampleCn": "来自不同国家的研究人员合作完成这个项目。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 720,
+    "word": "cooperate",
+    "phonetic": "/kəʊˈɒpəreɪt/",
+    "pos": "v.",
+    "meaning": "合作；配合",
+    "example": "We need to cooperate with each other.",
+    "exampleCn": "我们需要互相合作。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 832,
+    "word": "profession",
+    "phonetic": "/prəˈfeʃn/",
+    "pos": "n.",
+    "meaning": "职业；专业；声明",
+    "example": "He is a doctor by profession.",
+    "exampleCn": "他的职业是医生。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 938,
+    "word": "coordinate",
+    "phonetic": "/koʊˈɔːrdɪneɪt/",
+    "pos": "v.",
+    "meaning": "协调；配合",
+    "example": "She coordinates the school event every year.",
+    "exampleCn": "她每年都负责协调学校活动。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 1186,
+    "word": "occupation",
+    "phonetic": "/ˌɑːkjəˈpeɪʃən/",
+    "pos": "n.",
+    "meaning": "职业；占领",
+    "example": "Please state your occupation on the form.",
+    "exampleCn": "请在表格上填写你的职业。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 1459,
+    "word": "descend",
+    "phonetic": "/dɪˈsend/",
+    "pos": "v.",
+    "meaning": "下降/下来/起源于",
+    "example": "Cold air may descend from the mountains at night.",
+    "exampleCn": "夜间冷空气可能从山上下降。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 1511,
+    "word": "deposit",
+    "phonetic": "/dɪˈpɑːzɪt/",
+    "pos": "n./v.",
+    "meaning": "沉积物/押金/存款/存放/沉积",
+    "example": "Rivers deposit layers of sand near their mouths.",
+    "exampleCn": "河流在河口附近沉积一层层沙子。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 1767,
+    "word": "prompt",
+    "phonetic": "/prɑːmpt/",
+    "pos": "adj./v./n.",
+    "meaning": "迅速的/促使/提示",
+    "example": "A prompt response prevented further damage.",
+    "exampleCn": "迅速的回应防止了进一步损害。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 1872,
+    "word": "discharge",
+    "phonetic": "/dɪsˈtʃɑːrdʒ/",
+    "pos": "v./n.",
+    "meaning": "释放/排出/解雇/出院/排放",
+    "example": "Factories must not discharge polluted water into rivers.",
+    "exampleCn": "工厂不得向河流排放污水。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 2035,
+    "word": "regulate",
+    "phonetic": "/ˈreɡjuleɪt/",
+    "pos": "v.",
+    "meaning": "调节/管理/控制",
+    "example": "The body must regulate its temperature.",
+    "exampleCn": "身体必须调节自身温度。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38",
+      "43"
+    ]
+  },
+  {
+    "id": 2043,
+    "word": "resume",
+    "phonetic": "/rɪˈzuːm/",
+    "pos": "v./n.",
+    "meaning": "继续/恢复/简历",
+    "example": "Classes will resume after the holiday.",
+    "exampleCn": "课程将在假期后恢复。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 2831,
+    "word": "subsidy",
+    "phonetic": "/ˈsʌbsədi/",
+    "pos": "n.",
+    "meaning": "补贴/津贴",
+    "example": "The government offered a subsidy for clean energy projects.",
+    "exampleCn": "政府为清洁能源项目提供补贴。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 2833,
+    "word": "dismiss",
+    "phonetic": "/dɪsˈmɪs/",
+    "pos": "v.",
+    "meaning": "不予考虑/解雇/解散",
+    "example": "The scientist dismissed the claim as unsupported.",
+    "exampleCn": "科学家认为该说法缺乏支持而不予考虑。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 2886,
+    "word": "incentive",
+    "phonetic": "/ɪnˈsentɪv/",
+    "pos": "n.",
+    "meaning": "激励/刺激/奖励",
+    "example": "The scholarship gave students an incentive to study harder.",
+    "exampleCn": "奖学金激励学生更加努力学习。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 3477,
+    "word": "remuneration",
+    "phonetic": "/rɪˌmjuːnəˈreɪʃən/",
+    "pos": "n.",
+    "meaning": "报酬/酬金/薪酬",
+    "example": "The company offered fair remuneration for the additional work.",
+    "exampleCn": "公司为额外工作提供了公平的报酬。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "6",
+    "list": "3",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4333,
+    "word": "vocation",
+    "phonetic": "vəʊˈkeɪʃn",
+    "pos": "n.",
+    "meaning": "职业/使命",
+    "example": "Teaching is more than a job; it is a vocation.",
+    "exampleCn": "教书不仅仅是一份工作，更是一种使命。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24",
+      "43"
+    ]
+  },
+  {
+    "id": 4954,
+    "word": "instalment",
+    "phonetic": "ɪnˈstɔːlmənt",
+    "pos": "n.",
+    "meaning": "分期付款/一期",
+    "example": "They paid for the car in monthly instalments.",
+    "exampleCn": "他们按月分期付款买了车。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4955,
+    "word": "cheque",
+    "phonetic": "tʃek",
+    "pos": "n.",
+    "meaning": "支票",
+    "example": "He wrote a cheque for the rent.",
+    "exampleCn": "他开了一张房租支票。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4956,
+    "word": "shilling",
+    "phonetic": "ˈʃɪlɪŋ",
+    "pos": "n.",
+    "meaning": "先令",
+    "example": "The shilling was once used as currency in Britain.",
+    "exampleCn": "先令曾一度是英国的货币。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4957,
+    "word": "copper",
+    "phonetic": "ˈkɒpə",
+    "pos": "n.",
+    "meaning": "铜/铜币",
+    "example": "The statue was made of copper.",
+    "exampleCn": "这座雕像是用铜制成的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4958,
+    "word": "treasure",
+    "phonetic": "ˈtreʒə",
+    "pos": "n.",
+    "meaning": "宝藏/财富",
+    "example": "Pirates buried the treasure on a remote island.",
+    "exampleCn": "海盗把宝藏埋在了一个偏僻的小岛上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4959,
+    "word": "wealth",
+    "phonetic": "welθ",
+    "pos": "n.",
+    "meaning": "财富/富裕",
+    "example": "Health is more important than wealth.",
+    "exampleCn": "健康比财富更重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4960,
+    "word": "estate",
+    "phonetic": "ɪˈsteɪt",
+    "pos": "n.",
+    "meaning": "财产/地产/庄园",
+    "example": "He inherited a large estate from his father.",
+    "exampleCn": "他从父亲那里继承了一大笔财产。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4961,
+    "word": "possess",
+    "phonetic": "pəˈzes",
+    "pos": "v.",
+    "meaning": "拥有/占有",
+    "example": "She possesses a rare talent for music.",
+    "exampleCn": "她拥有罕见的音乐天赋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4962,
+    "word": "possessive",
+    "phonetic": "pəˈzesɪv",
+    "pos": "adj.",
+    "meaning": "占有欲强的/所属的",
+    "example": "He is very possessive about his belongings.",
+    "exampleCn": "他对自己的物品占有欲极强。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4963,
+    "word": "legacy",
+    "phonetic": "ˈleɡəsi",
+    "pos": "n.",
+    "meaning": "遗产/遗留物",
+    "example": "The artist left a lasting legacy of beautiful works.",
+    "exampleCn": "这位艺术家留下了一笔持久的佳作遗产。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4964,
+    "word": "worthy",
+    "phonetic": "ˈwɜːði",
+    "pos": "adj.",
+    "meaning": "值得的/有价值的",
+    "example": "The charity is a worthy cause to support.",
+    "exampleCn": "这个慈善机构是一个值得支持的善举。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4965,
+    "word": "valuable",
+    "phonetic": "ˈvæljuəbl",
+    "pos": "adj.",
+    "meaning": "有价值的/宝贵的",
+    "example": "She lost some valuable jewellery in the burglary.",
+    "exampleCn": "她在入室盗窃中丢失了一些珍贵的珠宝。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4966,
+    "word": "salary",
+    "phonetic": "ˈsæləri",
+    "pos": "n.",
+    "meaning": "薪水/工资",
+    "example": "She earns a good salary as an engineer.",
+    "exampleCn": "她当工程师挣着不错的薪水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4967,
+    "word": "income",
+    "phonetic": "ˈɪnkʌm",
+    "pos": "n.",
+    "meaning": "收入/所得",
+    "example": "His main source of income is freelance work.",
+    "exampleCn": "他的主要收入来源是自由职业。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4968,
+    "word": "wage",
+    "phonetic": "weɪdʒ",
+    "pos": "n.",
+    "meaning": "工资/工钱",
+    "example": "The minimum wage has been increased this year.",
+    "exampleCn": "今年最低工资已经提高。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4969,
+    "word": "payment",
+    "phonetic": "ˈpeɪmənt",
+    "pos": "n.",
+    "meaning": "付款/支付",
+    "example": "Payment can be made by credit card.",
+    "exampleCn": "可以用信用卡付款。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4970,
+    "word": "refund",
+    "phonetic": "ˈriːfʌnd",
+    "pos": "n./v.",
+    "meaning": "退款/退还",
+    "example": "The store gave her a full refund for the faulty product.",
+    "exampleCn": "商店对有问题的产品全额退款。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4971,
+    "word": "reimburse",
+    "phonetic": "ˌriːɪmˈbɜːs",
+    "pos": "v.",
+    "meaning": "偿还/报销",
+    "example": "The company will reimburse your travel expenses.",
+    "exampleCn": "公司将报销你的差旅费。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4972,
+    "word": "payroll",
+    "phonetic": "ˈpeɪrəʊl",
+    "pos": "n.",
+    "meaning": "工资名单/发薪人员",
+    "example": "The company has 200 employees on its payroll.",
+    "exampleCn": "公司有200名在职员工。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4973,
+    "word": "earn",
+    "phonetic": "ɜːn",
+    "pos": "v.",
+    "meaning": "赚取/赢得",
+    "example": "She earns a good living as a writer.",
+    "exampleCn": "她靠写作过着不错的生活。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4974,
+    "word": "undertaking",
+    "phonetic": "ˌʌndəˈteɪkɪŋ",
+    "pos": "n.",
+    "meaning": "事业/承诺/任务",
+    "example": "Starting a new business is a major undertaking.",
+    "exampleCn": "创办新企业是一件重大的任务。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4975,
+    "word": "labour",
+    "phonetic": "ˈleɪbə",
+    "pos": "n.",
+    "meaning": "劳动/劳动力/劳工",
+    "example": "Manual labour can be physically demanding.",
+    "exampleCn": "体力劳动可能对身体有高要求。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4976,
+    "word": "workforce",
+    "phonetic": "ˈwɜːkfɔːs",
+    "pos": "n.",
+    "meaning": "劳动力/劳动人口",
+    "example": "The workforce is becoming more diverse.",
+    "exampleCn": "劳动力正变得更加多元化。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4977,
+    "word": "workaholic",
+    "phonetic": "ˌwɜːkəˈhɒlɪk",
+    "pos": "n.",
+    "meaning": "工作狂/工作成瘾者",
+    "example": "He is a workaholic who never takes a holiday.",
+    "exampleCn": "他是一个从不休假的工作狂。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4978,
+    "word": "personnel",
+    "phonetic": "ˌpɜːsəˈnel",
+    "pos": "n.",
+    "meaning": "人员/员工/人事部门",
+    "example": "The personnel department handles all staff matters.",
+    "exampleCn": "人事部门处理所有员工事务。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4979,
+    "word": "interview",
+    "phonetic": "ˈɪntəvjuː",
+    "pos": "n./v.",
+    "meaning": "面试/采访",
+    "example": "She has a job interview tomorrow morning.",
+    "exampleCn": "她明天上午有个工作面试。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4980,
+    "word": "employ",
+    "phonetic": "ɪmˈplɔɪ",
+    "pos": "v.",
+    "meaning": "雇用/使用",
+    "example": "The factory employs more than 500 workers.",
+    "exampleCn": "这家工厂雇用了500多名工人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4981,
+    "word": "hire",
+    "phonetic": "ˈhaɪə",
+    "pos": "v.",
+    "meaning": "雇用/租用",
+    "example": "They hired a car for the weekend.",
+    "exampleCn": "他们租了一辆车用于周末。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4982,
+    "word": "lay-off",
+    "phonetic": "ˈleɪ ɒf",
+    "pos": "n.",
+    "meaning": "解雇/裁员",
+    "example": "The lay-off affected hundreds of workers.",
+    "exampleCn": "裁员波及了数百名工人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4983,
+    "word": "resign",
+    "phonetic": "rɪˈzaɪn",
+    "pos": "v.",
+    "meaning": "辞职/辞去",
+    "example": "She resigned from her position after the scandal.",
+    "exampleCn": "丑闻后她辞去了职务。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4984,
+    "word": "sack",
+    "phonetic": "sæk",
+    "pos": "v.",
+    "meaning": "解雇/炒鱿鱼",
+    "example": "He was sacked for arriving late every day.",
+    "exampleCn": "他因每天迟到被炒了鱿鱼。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4985,
+    "word": "retire",
+    "phonetic": "rɪˈtaɪə",
+    "pos": "v.",
+    "meaning": "退休/退役",
+    "example": "He plans to retire at the age of 65.",
+    "exampleCn": "他计划在65岁退休。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4986,
+    "word": "result",
+    "phonetic": "rɪˈzʌlt",
+    "pos": "n.",
+    "meaning": "结果/成果",
+    "example": "The exam results will be announced next week.",
+    "exampleCn": "考试成绩将于下周公布。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4987,
+    "word": "failure",
+    "phonetic": "ˈfeɪljə",
+    "pos": "n.",
+    "meaning": "失败/故障",
+    "example": "The project ended in failure.",
+    "exampleCn": "项目以失败告终。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4988,
+    "word": "abortion",
+    "phonetic": "əˈbɔːʃn",
+    "pos": "n.",
+    "meaning": "流产/堕胎/失败",
+    "example": "The plan was a complete abortion.",
+    "exampleCn": "计划完全失败了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4989,
+    "word": "opportunity",
+    "phonetic": "ˌɒpəˈtjuːnəti",
+    "pos": "n.",
+    "meaning": "机会/时机",
+    "example": "This job is a great opportunity for career growth.",
+    "exampleCn": "这份工作是职业发展的好机会。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4990,
+    "word": "solve",
+    "phonetic": "sɒlv",
+    "pos": "v.",
+    "meaning": "解决/解答",
+    "example": "The police are trying to solve the crime.",
+    "exampleCn": "警方正在努力破案。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4991,
+    "word": "sustainable",
+    "phonetic": "səˈsteɪnəbl",
+    "pos": "adj.",
+    "meaning": "可持续的/能持续的",
+    "example": "We need to find sustainable sources of energy.",
+    "exampleCn": "我们需要找到可持续的能源。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4992,
+    "word": "improvement",
+    "phonetic": "ɪmˈpruːvmənt",
+    "pos": "n.",
+    "meaning": "改进/改善",
+    "example": "There has been a big improvement in his behaviour.",
+    "exampleCn": "他的行为有了很大的改善。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4993,
+    "word": "manage",
+    "phonetic": "ˈmænɪdʒ",
+    "pos": "v.",
+    "meaning": "管理/设法完成",
+    "example": "She manages a team of ten people.",
+    "exampleCn": "她管理着一个十人团队。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  },
+  {
+    "id": 4994,
+    "word": "sanction",
+    "phonetic": "ˈsæŋkʃn",
+    "pos": "n.",
+    "meaning": "制裁/许可/批准",
+    "example": "The UN imposed economic sanctions on the country.",
+    "exampleCn": "联合国对该国实施了经济制裁。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
+  }
+]

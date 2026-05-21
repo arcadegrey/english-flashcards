@@ -166,10 +166,15 @@
     "exampleCn": "民主依赖于公众的积极参与。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 1237,
@@ -196,10 +201,15 @@
     "exampleCn": "楼里的每位居民都收到了一份通知。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
   },
   {
     "id": 1239,
@@ -211,10 +221,15 @@
     "exampleCn": "她说服了父母支持她的决定。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 1240,
@@ -261,10 +276,15 @@
     "exampleCn": "培训课程持续了三个小时。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 1243,
@@ -291,10 +311,15 @@
     "exampleCn": "这两份报告彼此矛盾。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 1245,
@@ -313,7 +338,8 @@
     "list": "9",
     "ieltsList": "7",
     "ieltsLists": [
-      "7"
+      "7",
+      "42"
     ]
   },
   {
@@ -601,10 +627,15 @@
     "exampleCn": "随着风变大，火焰烧得更旺了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 1265,
@@ -653,7 +684,8 @@
     "list": "9",
     "ieltsList": "33",
     "ieltsLists": [
-      "33"
+      "33",
+      "39"
     ]
   },
   {
@@ -866,10 +898,15 @@
     "exampleCn": "他试图在会议期间克制自己的愤怒。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "45",
+    "ieltsLists": [
+      "45"
+    ]
   },
   {
     "id": 1282,
@@ -1318,10 +1355,15 @@
     "exampleCn": "睡眠不足会使学生失去专注力。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "46",
+    "ieltsLists": [
+      "46"
+    ]
   },
   {
     "id": 1310,
@@ -1460,10 +1502,15 @@
     "exampleCn": "这项政策旨在改善儿童福利。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40"
+    ]
   },
   {
     "id": 1319,
@@ -1490,10 +1537,15 @@
     "exampleCn": "这家公司正面临严重的财务问题。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 1321,

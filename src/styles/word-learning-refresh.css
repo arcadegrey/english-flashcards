@@ -1416,7 +1416,11 @@
 .selection-card--fashion-trends,
 .selection-card--food-health,
 .selection-card--architecture-places,
-.selection-card--transport-travel {
+.selection-card--transport-travel,
+.selection-card--nation-government,
+.selection-card--society-economy,
+.selection-card--law-regulation,
+.selection-card--warfare-battlefield {
   position: relative;
   min-height: 148px;
   overflow: hidden;
@@ -1521,6 +1525,34 @@
   --ielts-topic-hover-shadow: rgba(42, 128, 166, 0.3);
 }
 
+.selection-card--nation-government {
+  border-color: rgba(73, 111, 158, 0.26);
+  --ielts-topic-bg: url('/images/ielts-nation-government-bg.webp');
+  --ielts-topic-shadow: rgba(73, 111, 158, 0.18);
+  --ielts-topic-hover-shadow: rgba(73, 111, 158, 0.3);
+}
+
+.selection-card--society-economy {
+  border-color: rgba(52, 139, 117, 0.26);
+  --ielts-topic-bg: url('/images/ielts-society-economy-bg.webp');
+  --ielts-topic-shadow: rgba(52, 139, 117, 0.18);
+  --ielts-topic-hover-shadow: rgba(52, 139, 117, 0.3);
+}
+
+.selection-card--law-regulation {
+  border-color: rgba(159, 124, 55, 0.26);
+  --ielts-topic-bg: url('/images/ielts-law-regulation-bg.webp');
+  --ielts-topic-shadow: rgba(159, 124, 55, 0.18);
+  --ielts-topic-hover-shadow: rgba(159, 124, 55, 0.3);
+}
+
+.selection-card--warfare-battlefield {
+  border-color: rgba(107, 128, 78, 0.26);
+  --ielts-topic-bg: url('/images/ielts-warfare-battlefield-bg.webp');
+  --ielts-topic-shadow: rgba(107, 128, 78, 0.18);
+  --ielts-topic-hover-shadow: rgba(107, 128, 78, 0.3);
+}
+
 .selection-card--nature-geography,
 .selection-card--plant-research,
 .selection-card--animal-conservation,
@@ -1534,7 +1566,11 @@
 .selection-card--fashion-trends,
 .selection-card--food-health,
 .selection-card--architecture-places,
-.selection-card--transport-travel {
+.selection-card--transport-travel,
+.selection-card--nation-government,
+.selection-card--society-economy,
+.selection-card--law-regulation,
+.selection-card--warfare-battlefield {
   background:
     linear-gradient(180deg, rgba(12, 40, 54, 0.16), rgba(5, 22, 31, 0.52)),
     var(--ielts-topic-bg) center / cover no-repeat;
@@ -1554,7 +1590,11 @@
 .selection-card--fashion-trends::after,
 .selection-card--food-health::after,
 .selection-card--architecture-places::after,
-.selection-card--transport-travel::after {
+.selection-card--transport-travel::after,
+.selection-card--nation-government::after,
+.selection-card--society-economy::after,
+.selection-card--law-regulation::after,
+.selection-card--warfare-battlefield::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -1589,7 +1629,15 @@
 .selection-card--architecture-places:hover,
 .selection-card--architecture-places.is-active,
 .selection-card--transport-travel:hover,
-.selection-card--transport-travel.is-active {
+.selection-card--transport-travel.is-active,
+.selection-card--nation-government:hover,
+.selection-card--nation-government.is-active,
+.selection-card--society-economy:hover,
+.selection-card--society-economy.is-active,
+.selection-card--law-regulation:hover,
+.selection-card--law-regulation.is-active,
+.selection-card--warfare-battlefield:hover,
+.selection-card--warfare-battlefield.is-active {
   border-color: rgba(255, 255, 255, 0.48);
   background:
     linear-gradient(180deg, rgba(10, 34, 48, 0.12), rgba(3, 18, 27, 0.46)),
@@ -1638,7 +1686,19 @@
 .selection-card--architecture-places .toefl-selection-meta,
 .selection-card--transport-travel .reading-category-name,
 .selection-card--transport-travel .reading-category-count,
-.selection-card--transport-travel .toefl-selection-meta {
+.selection-card--transport-travel .toefl-selection-meta,
+.selection-card--nation-government .reading-category-name,
+.selection-card--nation-government .reading-category-count,
+.selection-card--nation-government .toefl-selection-meta,
+.selection-card--society-economy .reading-category-name,
+.selection-card--society-economy .reading-category-count,
+.selection-card--society-economy .toefl-selection-meta,
+.selection-card--law-regulation .reading-category-name,
+.selection-card--law-regulation .reading-category-count,
+.selection-card--law-regulation .toefl-selection-meta,
+.selection-card--warfare-battlefield .reading-category-name,
+.selection-card--warfare-battlefield .reading-category-count,
+.selection-card--warfare-battlefield .toefl-selection-meta {
   color: #ffffff;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.34);
 }
@@ -1656,7 +1716,11 @@
 .selection-card--fashion-trends .toefl-selection-meta,
 .selection-card--food-health .toefl-selection-meta,
 .selection-card--architecture-places .toefl-selection-meta,
-.selection-card--transport-travel .toefl-selection-meta {
+.selection-card--transport-travel .toefl-selection-meta,
+.selection-card--nation-government .toefl-selection-meta,
+.selection-card--society-economy .toefl-selection-meta,
+.selection-card--law-regulation .toefl-selection-meta,
+.selection-card--warfare-battlefield .toefl-selection-meta {
   color: rgba(255, 255, 255, 0.86);
 }
 
@@ -3180,7 +3244,11 @@
   .selection-card--fashion-trends .reading-category-name,
   .selection-card--food-health .reading-category-name,
   .selection-card--architecture-places .reading-category-name,
-  .selection-card--transport-travel .reading-category-name {
+  .selection-card--transport-travel .reading-category-name,
+  .selection-card--nation-government .reading-category-name,
+  .selection-card--society-economy .reading-category-name,
+  .selection-card--law-regulation .reading-category-name,
+  .selection-card--warfare-battlefield .reading-category-name {
     display: block;
     max-width: 2em;
     line-height: 1.08;

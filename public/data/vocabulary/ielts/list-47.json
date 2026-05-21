@@ -1,0 +1,1107 @@
+[
+  {
+    "id": 38,
+    "word": "aggressive",
+    "phonetic": "/əˈɡresɪv/",
+    "pos": "adj.",
+    "meaning": "侵略性的/好斗的/积极进取的",
+    "example": "The species uses aggressive behavior to defend territory.",
+    "exampleCn": "这个物种用攻击性行为保卫领地。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 41,
+    "word": "alarm",
+    "phonetic": "/əˈlɑːrm/",
+    "pos": "n./v.",
+    "meaning": "警报；惊恐；使警觉",
+    "example": "The fire alarm went off at midnight.",
+    "exampleCn": "火警在午夜响了。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 241,
+    "word": "betray",
+    "phonetic": "/bɪˈtreɪ/",
+    "pos": "v.",
+    "meaning": "背叛，出卖",
+    "example": "He felt betrayed by his best friend.",
+    "exampleCn": "他感到被他最好的朋友背叛了。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 256,
+    "word": "blame",
+    "phonetic": "/bleɪm/",
+    "pos": "v./n.",
+    "meaning": "责备；责任",
+    "example": "Don't blame others for your mistakes.",
+    "exampleCn": "不要为你的错误责怪别人。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 269,
+    "word": "blueprint",
+    "phonetic": "/ˈbluːprɪnt/",
+    "pos": "n.",
+    "meaning": "蓝图，计划",
+    "example": "The architect showed us the blueprint.",
+    "exampleCn": "建筑师给我们看了蓝图。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 289,
+    "word": "boundary",
+    "phonetic": "/ˈbaʊndəri/",
+    "pos": "n.",
+    "meaning": "边界/界限",
+    "example": "The river forms a natural boundary between the two regions.",
+    "exampleCn": "这条河形成了两个地区之间的天然边界。",
+    "category": "cet6",
+    "categories": [
+      "cet6",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 409,
+    "word": "challenge",
+    "phonetic": "/ˈtʃælɪndʒ/",
+    "pos": "n./v.",
+    "meaning": "挑战；向...挑战",
+    "example": "This is a big challenge.",
+    "exampleCn": "这是一个大挑战。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 498,
+    "word": "comfort",
+    "phonetic": "/ˈkʌmfət/",
+    "pos": "n./v.",
+    "meaning": "舒适；安慰",
+    "example": "The hotel offers comfort and luxury.",
+    "exampleCn": "这家酒店提供舒适和奢华。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 565,
+    "word": "offend",
+    "phonetic": "/əˈfend/",
+    "pos": "v.",
+    "meaning": "冒犯；得罪；违反",
+    "example": "He didn't mean to offend anyone.",
+    "exampleCn": "他并非有意冒犯任何人。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 628,
+    "word": "surround",
+    "phonetic": "/səˈraʊnd/",
+    "pos": "v.",
+    "meaning": "包围；围绕",
+    "example": "The house is surrounded by trees.",
+    "exampleCn": "房子被树木环绕。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 703,
+    "word": "counter",
+    "phonetic": "/ˈkaʊntə(r)/",
+    "pos": "n./v.",
+    "meaning": "柜台；反驳",
+    "example": "She stood at the counter.",
+    "exampleCn": "她站在柜台前。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 781,
+    "word": "occasion",
+    "phonetic": "/əˈkeɪʒn/",
+    "pos": "n.",
+    "meaning": "场合；时机；机会",
+    "example": "This is a special occasion.",
+    "exampleCn": "这是个特殊场合。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 1349,
+    "word": "proof",
+    "phonetic": "/pruːf/",
+    "pos": "n.",
+    "meaning": "证据；证明",
+    "example": "There is no proof that the theory is correct.",
+    "exampleCn": "没有证据表明这个理论是正确的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 1468,
+    "word": "strategy",
+    "phonetic": "/ˈstrætədʒi/",
+    "pos": "n.",
+    "meaning": "策略/战略",
+    "example": "The team developed a strategy to protect the endangered species.",
+    "exampleCn": "团队制定了保护濒危物种的策略。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 1545,
+    "word": "occasionally",
+    "phonetic": "/əˈkeɪʒnəli/",
+    "pos": "adv.",
+    "meaning": "偶尔/有时",
+    "example": "The museum occasionally hosts lectures by visiting scholars.",
+    "exampleCn": "博物馆偶尔会举办访问学者的讲座。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 1625,
+    "word": "halt",
+    "phonetic": "/hɔːlt/",
+    "pos": "v./n.",
+    "meaning": "停止/暂停",
+    "example": "The train came to a sudden halt outside the station.",
+    "exampleCn": "火车在车站外突然停了下来。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 1646,
+    "word": "refute",
+    "phonetic": "/rɪˈfjuːt/",
+    "pos": "v.",
+    "meaning": "反驳/驳斥",
+    "example": "The new evidence helped refute the old theory.",
+    "exampleCn": "新证据帮助驳斥了旧理论。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 1697,
+    "word": "rival",
+    "phonetic": "/ˈraɪvl/",
+    "pos": "n./adj./v.",
+    "meaning": "竞争对手/竞争的/与…竞争",
+    "example": "The two companies are rivals in the technology market.",
+    "exampleCn": "这两家公司是科技市场上的竞争对手。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 1765,
+    "word": "oblige",
+    "phonetic": "/əˈblaɪdʒ/",
+    "pos": "v.",
+    "meaning": "迫使/使有义务/帮忙",
+    "example": "The law obliges companies to report safety risks.",
+    "exampleCn": "法律要求公司报告安全风险。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 1823,
+    "word": "enclose",
+    "phonetic": "/ɪnˈkloʊz/",
+    "pos": "v.",
+    "meaning": "围住/附上",
+    "example": "Please enclose a copy of your passport with the application.",
+    "exampleCn": "请在申请中附上一份护照复印件。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 1855,
+    "word": "tactic",
+    "phonetic": "/ˈtæktɪk/",
+    "pos": "n.",
+    "meaning": "策略/战术",
+    "example": "The coach changed his tactic during the final minutes of the game.",
+    "exampleCn": "教练在比赛最后几分钟改变了战术。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 1891,
+    "word": "scenario",
+    "phonetic": "/səˈnæri.oʊ/",
+    "pos": "n.",
+    "meaning": "情景/设想/方案",
+    "example": "The training program prepared workers for every possible scenario.",
+    "exampleCn": "培训项目让工人为各种可能的情景做好准备。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 1898,
+    "word": "compel",
+    "phonetic": "/kəmˈpel/",
+    "pos": "v.",
+    "meaning": "迫使/强迫",
+    "example": "Strong evidence can compel people to change their opinions.",
+    "exampleCn": "有力的证据可以迫使人们改变看法。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 1926,
+    "word": "contest",
+    "phonetic": "/ˈkɑːntest/",
+    "pos": "n./v.",
+    "meaning": "比赛/竞赛/争辩",
+    "example": "She entered a writing contest at school.",
+    "exampleCn": "她参加了学校的写作比赛。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 1929,
+    "word": "oppose",
+    "phonetic": "/əˈpoʊz/",
+    "pos": "v.",
+    "meaning": "反对/抵制",
+    "example": "Many residents oppose the construction of the highway.",
+    "exampleCn": "许多居民反对修建这条高速公路。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 2022,
+    "word": "protest",
+    "phonetic": "/ˈproʊtest/",
+    "pos": "n./v.",
+    "meaning": "抗议/反对",
+    "example": "Citizens held a peaceful protest in the square.",
+    "exampleCn": "市民在广场举行了和平抗议。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 2026,
+    "word": "contend",
+    "phonetic": "/kənˈtend/",
+    "pos": "v.",
+    "meaning": "声称/争论/竞争",
+    "example": "Some researchers contend that climate shaped the migration.",
+    "exampleCn": "一些研究者认为气候影响了迁徙。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 2827,
+    "word": "turbulent",
+    "phonetic": "/ˈtɜːrbjələnt/",
+    "pos": "adj.",
+    "meaning": "动荡的/湍急的/骚乱的",
+    "example": "The plane passed through turbulent air.",
+    "exampleCn": "飞机穿过了强气流。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 2863,
+    "word": "mitigate",
+    "phonetic": "/ˈmɪtɪɡeɪt/",
+    "pos": "v.",
+    "meaning": "减轻/缓和",
+    "example": "Planting trees can mitigate the effects of urban heat.",
+    "exampleCn": "植树可以缓解城市热岛效应。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 3031,
+    "word": "reinforce",
+    "phonetic": "/ˌriːɪnˈfɔːrs/",
+    "pos": "v.",
+    "meaning": "加强/强化/加固",
+    "example": "The evidence helped reinforce the scientist’s theory.",
+    "exampleCn": "这些证据帮助强化了科学家的理论。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 4291,
+    "word": "compete",
+    "phonetic": "kəmˈpiːt",
+    "pos": "v.",
+    "meaning": "竞争/比赛",
+    "example": "Athletes from around the world compete in the Olympics.",
+    "exampleCn": "来自世界各地的运动员在奥运会上竞争。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24",
+      "47"
+    ]
+  },
+  {
+    "id": 4529,
+    "word": "order",
+    "phonetic": "ˈɔːdə",
+    "pos": "v./n.",
+    "meaning": "点餐/命令/顺序",
+    "example": "Are you ready to order your food?",
+    "exampleCn": "你准备好点餐了吗？",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "30",
+    "ieltsLists": [
+      "30",
+      "47"
+    ]
+  },
+  {
+    "id": 5090,
+    "word": "assault",
+    "phonetic": "əˈsɔːlt",
+    "pos": "n./v.",
+    "meaning": "攻击/袭击",
+    "example": "He was charged with assault.",
+    "exampleCn": "他被指控犯有攻击罪。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5091,
+    "word": "siege",
+    "phonetic": "siːdʒ",
+    "pos": "n.",
+    "meaning": "围攻/包围",
+    "example": "The city was under siege for three months.",
+    "exampleCn": "这座城市被围困了三个月。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5092,
+    "word": "pause",
+    "phonetic": "pɔːz",
+    "pos": "v./n.",
+    "meaning": "暂停/停顿",
+    "example": "She paused to catch her breath.",
+    "exampleCn": "她停下来喘了口气。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5093,
+    "word": "cease",
+    "phonetic": "siːs",
+    "pos": "v.",
+    "meaning": "停止/终止",
+    "example": "The factory ceased production last year.",
+    "exampleCn": "该工厂去年停止了生产。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5094,
+    "word": "oppress",
+    "phonetic": "əˈpres",
+    "pos": "v.",
+    "meaning": "压迫/压制",
+    "example": "The regime oppressed its own people.",
+    "exampleCn": "那个政权压迫自己的人民。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5095,
+    "word": "forbid",
+    "phonetic": "fəˈbɪd",
+    "pos": "v.",
+    "meaning": "禁止/不准",
+    "example": "Smoking is forbidden inside the building.",
+    "exampleCn": "楼内禁止吸烟。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5096,
+    "word": "prohibit",
+    "phonetic": "prəˈhɪbɪt",
+    "pos": "v.",
+    "meaning": "禁止/阻止",
+    "example": "The law prohibits the sale of alcohol to minors.",
+    "exampleCn": "法律禁止向未成年人出售酒类。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5097,
+    "word": "prevent",
+    "phonetic": "prɪˈvent",
+    "pos": "v.",
+    "meaning": "防止/阻止",
+    "example": "This medicine helps prevent heart disease.",
+    "exampleCn": "这种药有助于预防心脏病。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5098,
+    "word": "revolt",
+    "phonetic": "rɪˈvəʊlt",
+    "pos": "n./v.",
+    "meaning": "反抗/起义",
+    "example": "The people rose in revolt against the dictator.",
+    "exampleCn": "人民起来反抗独裁者。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5099,
+    "word": "traitor",
+    "phonetic": "ˈtreɪtə",
+    "pos": "n.",
+    "meaning": "叛徒/卖国贼",
+    "example": "He was branded a traitor for selling secrets to the enemy.",
+    "exampleCn": "他因向敌人出售机密而被定为叛徒。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5100,
+    "word": "patriot",
+    "phonetic": "ˈpætriət",
+    "pos": "n.",
+    "meaning": "爱国者/爱国人士",
+    "example": "He was a true patriot who loved his country.",
+    "exampleCn": "他是一个真正热爱祖国的爱国者。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5101,
+    "word": "reproach",
+    "phonetic": "rɪˈprəʊtʃ",
+    "pos": "v./n.",
+    "meaning": "责备/指责",
+    "example": "He reproached her for not telling the truth.",
+    "exampleCn": "他责备她没有说实话。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5102,
+    "word": "evidence",
+    "phonetic": "ˈevɪdəns",
+    "pos": "n.",
+    "meaning": "证据/证明",
+    "example": "There is no evidence to support his claim.",
+    "exampleCn": "没有证据支持他的说法。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5103,
+    "word": "terror",
+    "phonetic": "ˈterə",
+    "pos": "n.",
+    "meaning": "恐怖/恐惧",
+    "example": "She screamed in terror when she saw the snake.",
+    "exampleCn": "她看到蛇时恐怖地尖叫起来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5104,
+    "word": "terrific",
+    "phonetic": "təˈrɪfɪk",
+    "pos": "adj.",
+    "meaning": "极好的/可怕的",
+    "example": "We had a terrific time at the party.",
+    "exampleCn": "我们在聚会上玩得开心极了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5105,
+    "word": "horrible",
+    "phonetic": "ˈhɒrəbl",
+    "pos": "adj.",
+    "meaning": "可怕的/糟糕的",
+    "example": "The weather was horrible all weekend.",
+    "exampleCn": "整个周末天气都很糟糕。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5106,
+    "word": "dread",
+    "phonetic": "dred",
+    "pos": "v./n.",
+    "meaning": "恐惧/害怕",
+    "example": "She dreaded the thought of going back to work.",
+    "exampleCn": "她一想到回去上班就害怕。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5107,
+    "word": "frighten",
+    "phonetic": "ˈfraɪtn",
+    "pos": "v.",
+    "meaning": "使害怕/吓唬",
+    "example": "The loud noise frightened the baby.",
+    "exampleCn": "巨响吓哭了宝宝。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5108,
+    "word": "tension",
+    "phonetic": "ˈtenʃn",
+    "pos": "n.",
+    "meaning": "紧张/张力",
+    "example": "There is growing tension between the two sides.",
+    "exampleCn": "双方之间的紧张局势正在升级。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5109,
+    "word": "turmoil",
+    "phonetic": "ˈtɜːmɔɪl",
+    "pos": "n.",
+    "meaning": "混乱/动荡",
+    "example": "The scandal threw the government into turmoil.",
+    "exampleCn": "丑闻让政府陷入了混乱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5110,
+    "word": "limit",
+    "phonetic": "ˈlɪmɪt",
+    "pos": "n./v.",
+    "meaning": "限制/界限",
+    "example": "There is a limit to how much one person can do.",
+    "exampleCn": "一个人的能力是有限的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5111,
+    "word": "rein",
+    "phonetic": "reɪn",
+    "pos": "n.",
+    "meaning": "缰绳/控制",
+    "example": "The rider pulled on the reins to stop the horse.",
+    "exampleCn": "骑手拉缰绳把马停住。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5112,
+    "word": "competitor",
+    "phonetic": "kəmˈpetɪtə",
+    "pos": "n.",
+    "meaning": "竞争者/对手",
+    "example": "She finished ahead of all her competitors.",
+    "exampleCn": "她排在了所有对手前面冲线。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5113,
+    "word": "enemy",
+    "phonetic": "ˈenəmi",
+    "pos": "n.",
+    "meaning": "敌人/对手",
+    "example": "They were once friends but are now bitter enemies.",
+    "exampleCn": "他们曾是朋友，但如今是死对头。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5114,
+    "word": "manoeuvre",
+    "phonetic": "məˈnuːvə",
+    "pos": "n./v.",
+    "meaning": "调动/策略/操作",
+    "example": "The driver had to perform an emergency manoeuvre.",
+    "exampleCn": "驾驶员不得不做出紧急操作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5115,
+    "word": "force",
+    "phonetic": "fɔːs",
+    "pos": "n./v.",
+    "meaning": "力量/强制/武力",
+    "example": "The police used force to disperse the crowd.",
+    "exampleCn": "警察动用武力驱散了人群。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5116,
+    "word": "impair",
+    "phonetic": "ɪmˈpeə",
+    "pos": "v.",
+    "meaning": "损害/削弱",
+    "example": "Drinking alcohol can impair your judgement.",
+    "exampleCn": "饮酒会损害判断力。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  },
+  {
+    "id": 5117,
+    "word": "event",
+    "phonetic": "ɪˈvent",
+    "pos": "n.",
+    "meaning": "事件/活动",
+    "example": "The wedding was the biggest social event of the year.",
+    "exampleCn": "那场婚礼是年度最大的社交活动。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "47",
+    "ieltsLists": [
+      "47"
+    ]
+  }
+]

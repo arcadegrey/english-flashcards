@@ -734,9 +734,14 @@
     "exampleCn": "公司为额外工作提供了公平的报酬。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "43",
+    "ieltsLists": [
+      "43"
+    ]
   }
 ]

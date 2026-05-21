@@ -1,0 +1,1113 @@
+[
+  {
+    "id": 33,
+    "word": "affect",
+    "phonetic": "/əˈfekt/",
+    "pos": "v.",
+    "meaning": "影响；感动",
+    "example": "The weather can affect your mood.",
+    "exampleCn": "天气会影响你的心情。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 181,
+    "word": "associate",
+    "phonetic": "/əˈsoʊsieɪt/",
+    "pos": "v./n./adj.",
+    "meaning": "联系/联想/伙伴/副的",
+    "example": "Many people associate deserts with extreme heat.",
+    "exampleCn": "许多人把沙漠和极端高温联系在一起。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 455,
+    "word": "civil",
+    "phonetic": "/ˈsɪvl/",
+    "pos": "adj.",
+    "meaning": "公民的，民事的/文明的",
+    "example": "The country suffered a civil war./Please remain civil during the debate.",
+    "exampleCn": "这个国家经历了一场内战。/辩论时请保持礼貌。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet6",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 701,
+    "word": "residential",
+    "phonetic": "/ˌrezɪˈdenʃl/",
+    "pos": "adj.",
+    "meaning": "居住的；住宅的",
+    "example": "This is a residential area.",
+    "exampleCn": "这是住宅区。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33",
+      "39"
+    ]
+  },
+  {
+    "id": 704,
+    "word": "colony",
+    "phonetic": "/ˈkɒləni/",
+    "pos": "n.",
+    "meaning": "殖民地；群体",
+    "example": "The ants built a colony.",
+    "exampleCn": "蚂蚁建了一个群体。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 727,
+    "word": "community",
+    "phonetic": "/kəˈmjuːnəti/",
+    "pos": "n.",
+    "meaning": "社区；团体；群落",
+    "example": "The community came together.",
+    "exampleCn": "社区团结起来了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 738,
+    "word": "overseas",
+    "phonetic": "/ˌəʊvəˈsiːz/",
+    "pos": "adv./adj.",
+    "meaning": "在海外/海外的",
+    "example": "He works overseas.",
+    "exampleCn": "他在海外工作。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 775,
+    "word": "unique",
+    "phonetic": "/juˈniːk/",
+    "pos": "adj.",
+    "meaning": "唯一的；独特的；独一无二的",
+    "example": "Each person is unique.",
+    "exampleCn": "每个人都是独特的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 860,
+    "word": "union",
+    "phonetic": "/ˈjuːniən/",
+    "pos": "n.",
+    "meaning": "联合；工会",
+    "example": "The union asked for better working conditions.",
+    "exampleCn": "工会要求改善工作条件。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 875,
+    "word": "liberty",
+    "phonetic": "/ˈlɪbərti/",
+    "pos": "n.",
+    "meaning": "自由",
+    "example": "People fought for liberty and justice.",
+    "exampleCn": "人们为自由和正义而斗争。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 1071,
+    "word": "independent",
+    "phonetic": "/ˌɪndɪˈpendənt/",
+    "pos": "adj.",
+    "meaning": "独立的，自主的",
+    "example": "Teenagers want to become independent from their parents.",
+    "exampleCn": "青少年想要独立于父母。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 1161,
+    "word": "significant",
+    "phonetic": "/sɪɡˈnɪfɪkənt/",
+    "pos": "adj.",
+    "meaning": "重要的；显著的",
+    "example": "The policy caused a significant decline in costs.",
+    "exampleCn": "这项政策导致成本显著下降。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 1183,
+    "word": "preference",
+    "phonetic": "/ˈprefərəns/",
+    "pos": "n.",
+    "meaning": "偏爱；偏好",
+    "example": "Many students showed a preference for online courses.",
+    "exampleCn": "许多学生表现出对网课的偏好。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 1238,
+    "word": "resident",
+    "phonetic": "/ˈrezɪdənt/",
+    "pos": "n./adj.",
+    "meaning": "居民/居住的",
+    "example": "Every resident in the building received a notice.",
+    "exampleCn": "楼里的每位居民都收到了一份通知。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 1267,
+    "word": "immigrate",
+    "phonetic": "/ˈɪmɪˌɡreɪt/",
+    "pos": "v.",
+    "meaning": "移民入境",
+    "example": "His grandparents immigrated to Canada in the 1950s.",
+    "exampleCn": "他的祖父母在二十世纪五十年代移民到了加拿大。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33",
+      "39"
+    ]
+  },
+  {
+    "id": 1352,
+    "word": "emigrate",
+    "phonetic": "/ˈemɪˌɡreɪt/",
+    "pos": "v.",
+    "meaning": "移居国外",
+    "example": "Many families chose to emigrate during the war.",
+    "exampleCn": "战争期间许多家庭选择移居国外。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33",
+      "39"
+    ]
+  },
+  {
+    "id": 1406,
+    "word": "unite",
+    "phonetic": "/juˈnaɪt/",
+    "pos": "v.",
+    "meaning": "联合；团结",
+    "example": "The campaign aimed to unite local communities.",
+    "exampleCn": "这场活动旨在团结当地社区。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 1423,
+    "word": "association",
+    "phonetic": "/əˌsoʊsiˈeɪʃən/",
+    "pos": "n.",
+    "meaning": "协会；联系",
+    "example": "There is a clear association between diet and health.",
+    "exampleCn": "饮食与健康之间有明显关联。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 1603,
+    "word": "colonial",
+    "phonetic": "/kəˈloʊniəl/",
+    "pos": "adj./n.",
+    "meaning": "殖民地的/殖民时期的/殖民者",
+    "example": "Colonial architecture still influences the city’s appearance.",
+    "exampleCn": "殖民时期的建筑仍然影响着这座城市的外观。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 1917,
+    "word": "clan",
+    "phonetic": "/klæn/",
+    "pos": "n.",
+    "meaning": "氏族/家族/群体",
+    "example": "Members of the clan shared a common ancestor.",
+    "exampleCn": "这个氏族的成员有共同的祖先。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 1947,
+    "word": "populate",
+    "phonetic": "/ˈpɑːpjuleɪt/",
+    "pos": "v.",
+    "meaning": "居住于/填入数据",
+    "example": "Early settlers began to populate the valley.",
+    "exampleCn": "早期定居者开始居住在这个山谷中。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 2084,
+    "word": "institution",
+    "phonetic": "/ˌɪnstɪˈtuːʃn/",
+    "pos": "n.",
+    "meaning": "机构/制度/惯例",
+    "example": "The museum is an important cultural institution.",
+    "exampleCn": "这座博物馆是一个重要的文化机构。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 2091,
+    "word": "immigrant",
+    "phonetic": "/ˈɪmɪɡrənt/",
+    "pos": "n./adj.",
+    "meaning": "移民/移民的",
+    "example": "The city has a large immigrant population.",
+    "exampleCn": "这座城市有大量移民人口。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 2196,
+    "word": "dominate",
+    "phonetic": "/ˈdɑːmɪneɪt/",
+    "pos": "v.",
+    "meaning": "支配/占主导地位/高耸于",
+    "example": "Large companies dominate the market.",
+    "exampleCn": "大公司主导着市场。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 2420,
+    "word": "throne",
+    "phonetic": "/θroʊn/",
+    "pos": "n.",
+    "meaning": "王位/宝座",
+    "example": "The prince hoped to inherit the throne.",
+    "exampleCn": "王子希望继承王位。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 2452,
+    "word": "reign",
+    "phonetic": "/reɪn/",
+    "pos": "n./v.",
+    "meaning": "统治时期/统治",
+    "example": "The king’s reign lasted for nearly forty years.",
+    "exampleCn": "这位国王的统治持续了将近四十年。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 2987,
+    "word": "entitle",
+    "phonetic": "/ɪnˈtaɪtl/",
+    "pos": "v.",
+    "meaning": "给……命名/使有权利",
+    "example": "The ticket entitles you to a free drink.",
+    "exampleCn": "这张票使你有权获得一杯免费饮料。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 3005,
+    "word": "predominant",
+    "phonetic": "/prɪˈdɑːmɪnənt/",
+    "pos": "adj.",
+    "meaning": "主要的/占主导地位的",
+    "example": "English is the predominant language in the report.",
+    "exampleCn": "英语是这份报告中的主要语言。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 3268,
+    "word": "league",
+    "phonetic": "/liːɡ/",
+    "pos": "n.",
+    "meaning": "联盟/联赛/等级",
+    "example": "The team joined a professional soccer league.",
+    "exampleCn": "这支队伍加入了一个职业足球联赛。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4326,
+    "word": "race",
+    "phonetic": "reɪs",
+    "pos": "n.",
+    "meaning": "赛跑/竞赛",
+    "example": "She won the hundred-metre race by a narrow margin.",
+    "exampleCn": "她以微弱的优势赢得了百米赛跑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24",
+      "39"
+    ]
+  },
+  {
+    "id": 4833,
+    "word": "domination",
+    "phonetic": "ˌdɒmɪˈneɪʃn",
+    "pos": "n.",
+    "meaning": "支配/统治/控制",
+    "example": "The team's domination of the game was complete.",
+    "exampleCn": "该队完全掌控了整场比赛。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4834,
+    "word": "power",
+    "phonetic": "ˈpaʊə",
+    "pos": "n.",
+    "meaning": "权力/力量/电力",
+    "example": "The president holds the power to veto legislation.",
+    "exampleCn": "总统有权否决立法。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4835,
+    "word": "influence",
+    "phonetic": "ˈɪnfluəns",
+    "pos": "n./v.",
+    "meaning": "影响/影响力",
+    "example": "Social media has a huge influence on public opinion.",
+    "exampleCn": "社交媒体对公众舆论有巨大影响。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4836,
+    "word": "importance",
+    "phonetic": "ɪmˈpɔːtns",
+    "pos": "n.",
+    "meaning": "重要性/重要",
+    "example": "Education is of great importance to the economy.",
+    "exampleCn": "教育对经济至关重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4837,
+    "word": "significance",
+    "phonetic": "sɪɡˈnɪfɪkəns",
+    "pos": "n.",
+    "meaning": "重要性/意义",
+    "example": "The discovery has great significance for medical research.",
+    "exampleCn": "这一发现对医学研究有重大意义。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4838,
+    "word": "organisation",
+    "phonetic": "ˌɔːɡənaɪˈzeɪʃn",
+    "pos": "n.",
+    "meaning": "组织/机构",
+    "example": "She works for a charitable organisation.",
+    "exampleCn": "她在一家慈善组织工作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4839,
+    "word": "consortium",
+    "phonetic": "kənˈsɔːtiəm",
+    "pos": "n.",
+    "meaning": "财团/联合企业",
+    "example": "A consortium of companies built the new bridge.",
+    "exampleCn": "一个企业财团建造了这座新桥。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4840,
+    "word": "instituted",
+    "phonetic": "ˈɪnstɪtjuːtɪd",
+    "pos": "adj.",
+    "meaning": "设立的/建立的",
+    "example": "New rules were instituted to improve safety.",
+    "exampleCn": "新规则被设立以改善安全。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4841,
+    "word": "nationality",
+    "phonetic": "ˌnæʃəˈnæləti",
+    "pos": "n.",
+    "meaning": "国籍/民族",
+    "example": "She has dual nationality, British and French.",
+    "exampleCn": "她有英国和法国双重国籍。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4842,
+    "word": "establish a nation",
+    "phonetic": "",
+    "pos": "v.",
+    "meaning": "建国/建立国家",
+    "example": "They worked to establish a nation free from colonial rule.",
+    "exampleCn": "他们为建立摆脱殖民统治的国家而奋斗。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4843,
+    "word": "worldwide",
+    "phonetic": "ˈwɜːldwaɪd",
+    "pos": "adj./adv.",
+    "meaning": "世界范围的/全球的",
+    "example": "The company has offices worldwide.",
+    "exampleCn": "公司在全球各地设有办事处。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4844,
+    "word": "federal",
+    "phonetic": "ˈfedərəl",
+    "pos": "adj.",
+    "meaning": "联邦的/联邦制的",
+    "example": "The United States has a federal system of government.",
+    "exampleCn": "美国实行联邦制政府。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4845,
+    "word": "federation",
+    "phonetic": "ˌfedəˈreɪʃn",
+    "pos": "n.",
+    "meaning": "联邦/联合会",
+    "example": "The sport is governed by the international federation.",
+    "exampleCn": "这项运动由国际联合会管理。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4846,
+    "word": "abroad",
+    "phonetic": "əˈbrɔːd",
+    "pos": "adv.",
+    "meaning": "在国外/到国外",
+    "example": "He often travels abroad on business.",
+    "exampleCn": "他经常出国出差。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4847,
+    "word": "civilise",
+    "phonetic": "ˈsɪvɪlaɪz",
+    "pos": "v.",
+    "meaning": "使文明/教化",
+    "example": "The Romans helped to civilise much of Europe.",
+    "exampleCn": "罗马人帮助了欧洲大部分地区走向文明。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4848,
+    "word": "puppet",
+    "phonetic": "ˈpʌpɪt",
+    "pos": "n.",
+    "meaning": "傀儡/木偶",
+    "example": "The dictator was seen as a puppet of foreign powers.",
+    "exampleCn": "这个独裁者被视为外国势力的傀儡。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4849,
+    "word": "crown",
+    "phonetic": "kraʊn",
+    "pos": "n.",
+    "meaning": "王冠/王权",
+    "example": "The crown was placed on the new king's head.",
+    "exampleCn": "王冠被戴在新国王的头上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4850,
+    "word": "wreath",
+    "phonetic": "riːθ",
+    "pos": "n.",
+    "meaning": "花圈/花环/桂冠",
+    "example": "They laid a wreath at the war memorial.",
+    "exampleCn": "他们在战争纪念碑前敬献了花圈。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4851,
+    "word": "independence",
+    "phonetic": "ˌɪndɪˈpendəns",
+    "pos": "n.",
+    "meaning": "独立/自主",
+    "example": "The country gained independence in 1947.",
+    "exampleCn": "该国于1947年获得独立。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4852,
+    "word": "slum",
+    "phonetic": "slʌm",
+    "pos": "n.",
+    "meaning": "贫民窟/棚户区",
+    "example": "Millions live in the slums of the city.",
+    "exampleCn": "数百万人住在这座城市的贫民窟里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4853,
+    "word": "refuge",
+    "phonetic": "ˈrefjuːdʒ",
+    "pos": "n.",
+    "meaning": "庇护/避难所",
+    "example": "They sought refuge in a neighbouring country.",
+    "exampleCn": "他们在邻国寻求避难。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4854,
+    "word": "asylum",
+    "phonetic": "əˈsaɪləm",
+    "pos": "n.",
+    "meaning": "庇护/收容所/精神病院",
+    "example": "He applied for political asylum.",
+    "exampleCn": "他申请了政治庇护。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4855,
+    "word": "population",
+    "phonetic": "ˌpɒpjʊˈleɪʃn",
+    "pos": "n.",
+    "meaning": "人口/种群",
+    "example": "The city has a population of over one million.",
+    "exampleCn": "这座城市有一百多万人口。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4856,
+    "word": "demographic",
+    "phonetic": "ˌdeməˈɡræfɪk",
+    "pos": "adj./n.",
+    "meaning": "人口统计的/人口特征",
+    "example": "The demographic data shows an ageing population.",
+    "exampleCn": "人口统计数据显示人口正在老龄化。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4857,
+    "word": "demography",
+    "phonetic": "dɪˈmɒɡrəfi",
+    "pos": "n.",
+    "meaning": "人口学/人口统计",
+    "example": "Demography is the study of human populations.",
+    "exampleCn": "人口学是研究人类人口的学科。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4858,
+    "word": "ordinary",
+    "phonetic": "ˈɔːdɪnri",
+    "pos": "adj.",
+    "meaning": "普通的/平凡的",
+    "example": "She lived an ordinary life in a small town.",
+    "exampleCn": "她在一个小镇过着平凡的生活。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4859,
+    "word": "ethnic",
+    "phonetic": "ˈeθnɪk",
+    "pos": "adj.",
+    "meaning": "民族的/种族的",
+    "example": "The region is home to many ethnic groups.",
+    "exampleCn": "该地区有许多民族聚居。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4860,
+    "word": "racial",
+    "phonetic": "ˈreɪʃl",
+    "pos": "adj.",
+    "meaning": "种族的/人种的",
+    "example": "Racial discrimination is illegal in most countries.",
+    "exampleCn": "大多数国家禁止种族歧视。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4861,
+    "word": "franchise",
+    "phonetic": "ˈfræntʃaɪz",
+    "pos": "n.",
+    "meaning": "特许经营权/选举权",
+    "example": "She opened a restaurant under a well-known franchise.",
+    "exampleCn": "她以知名特许经营品牌开了一家餐厅。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  },
+  {
+    "id": 4862,
+    "word": "franchiser",
+    "phonetic": "ˈfræntʃaɪzə",
+    "pos": "n.",
+    "meaning": "特许经营者/授权方",
+    "example": "The franchiser provides training and support to new owners.",
+    "exampleCn": "特许授权方为新店主提供培训和支持。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "39",
+    "ieltsLists": [
+      "39"
+    ]
+  }
+]

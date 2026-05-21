@@ -59,7 +59,8 @@
     "list": "4",
     "ieltsList": "29",
     "ieltsLists": [
-      "29"
+      "29",
+      "41"
     ]
   },
   {
@@ -252,10 +253,15 @@
     "exampleCn": "这个村庄有一个供所有居民使用的公共花园。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38"
+    ]
   },
   {
     "id": 2737,
@@ -427,10 +433,15 @@
     "exampleCn": "这位创业者还在大学时就创办了一家公司。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42"
+    ]
   },
   {
     "id": 2748,
@@ -1188,10 +1199,15 @@
     "exampleCn": "冬季期间食物供应开始减少。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
   },
   {
     "id": 2795,
@@ -1390,10 +1406,15 @@
     "exampleCn": "该程序会把文件保存在默认文件夹中。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44"
+    ]
   },
   {
     "id": 2808,

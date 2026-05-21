@@ -1,0 +1,1097 @@
+[
+  {
+    "id": 34,
+    "word": "afford",
+    "phonetic": "/əˈfɔːrd/",
+    "pos": "v.",
+    "meaning": "买得起；承担得起",
+    "example": "I can't afford to buy a new car right now.",
+    "exampleCn": "我现在买不起新车。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 87,
+    "word": "advertise",
+    "phonetic": "/ˈædvərtaɪz/",
+    "pos": "v.",
+    "meaning": "做广告，宣传",
+    "example": "The company advertised the new product.",
+    "exampleCn": "公司宣传了新产品。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 276,
+    "word": "bond",
+    "phonetic": "/bɒnd/",
+    "pos": "n./v.",
+    "meaning": "纽带；联系；结合",
+    "example": "The bond between them is strong.",
+    "exampleCn": "他们之间的纽带很强。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 407,
+    "word": "chain",
+    "phonetic": "/tʃeɪn/",
+    "pos": "n./v.",
+    "meaning": "链条/连锁/束缚",
+    "example": "A chain of events led to the final decision.",
+    "exampleCn": "一连串事件导致了最终决定。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29",
+      "41"
+    ]
+  },
+  {
+    "id": 610,
+    "word": "expense",
+    "phonetic": "/ɪkˈspens/",
+    "pos": "n.",
+    "meaning": "费用；开支；代价",
+    "example": "The expense was too high.",
+    "exampleCn": "费用太高了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 848,
+    "word": "commercial",
+    "phonetic": "/kəˈmɜːʃl/",
+    "pos": "adj./n.",
+    "meaning": "商业的/广告",
+    "example": "The commercial break is coming.",
+    "exampleCn": "广告时间要到了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 852,
+    "word": "retail",
+    "phonetic": "/ˈriːteɪl/",
+    "pos": "n./v.",
+    "meaning": "零售",
+    "example": "The store retails clothing.",
+    "exampleCn": "这家店零售服装。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 939,
+    "word": "crisis",
+    "phonetic": "/ˈkraɪsɪs/",
+    "pos": "n.",
+    "meaning": "危机",
+    "example": "The country faced an economic crisis.",
+    "exampleCn": "这个国家面临经济危机。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 992,
+    "word": "discount",
+    "phonetic": "/ˈdɪskaʊnt/",
+    "pos": "n./v.",
+    "meaning": "折扣/打折，忽视",
+    "example": "Students get a discount on tickets./We should not discount his experience.",
+    "exampleCn": "学生买票有折扣。/我们不应忽视他的经验。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 1003,
+    "word": "consume",
+    "phonetic": "/kənˈsuːm/",
+    "pos": "v.",
+    "meaning": "消耗，消费/吃，喝",
+    "example": "The new system consumes less energy./People should consume less sugar.",
+    "exampleCn": "新系统消耗更少能源。/人们应该少摄入糖分。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 1019,
+    "word": "security",
+    "phonetic": "/sɪˈkjʊrəti/",
+    "pos": "n.",
+    "meaning": "安全/保安措施",
+    "example": "Airport security has become much stricter./Financial security is important to many families.",
+    "exampleCn": "机场安检已经严格得多了。/经济安全对许多家庭都很重要。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 1079,
+    "word": "depress",
+    "phonetic": "/dɪˈpres/",
+    "pos": "v.",
+    "meaning": "使沮丧，使萧条",
+    "example": "Bad news can depress people.",
+    "exampleCn": "坏消息会让人沮丧。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 1133,
+    "word": "currency",
+    "phonetic": "/ˈkɜːrənsi/",
+    "pos": "n.",
+    "meaning": "货币/流通",
+    "example": "The local currency has fallen in value.",
+    "exampleCn": "当地货币贬值了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 1153,
+    "word": "donate",
+    "phonetic": "/ˈdoʊneɪt/",
+    "pos": "v.",
+    "meaning": "捐赠；捐献",
+    "example": "Many citizens donated money after the disaster.",
+    "exampleCn": "灾难发生后许多市民捐了款。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 1320,
+    "word": "financial",
+    "phonetic": "/faɪˈnænʃəl/",
+    "pos": "adj.",
+    "meaning": "财政的；金融的",
+    "example": "The company is facing serious financial problems.",
+    "exampleCn": "这家公司正面临严重的财务问题。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 1429,
+    "word": "revenue",
+    "phonetic": "/ˈrevəˌnuː/",
+    "pos": "n.",
+    "meaning": "收入；收益",
+    "example": "The company’s revenue increased by 15 percent.",
+    "exampleCn": "公司的收入增长了15%。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 1783,
+    "word": "depression",
+    "phonetic": "/dɪˈpreʃən/",
+    "pos": "n.",
+    "meaning": "低落/萧条/凹地",
+    "example": "The economic depression reduced employment.",
+    "exampleCn": "经济萧条减少了就业机会。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 2005,
+    "word": "impose",
+    "phonetic": "/ɪmˈpoʊz/",
+    "pos": "v.",
+    "meaning": "强加/征收/施加影响",
+    "example": "The government may impose limits on water use.",
+    "exampleCn": "政府可能会对用水施加限制。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 2130,
+    "word": "gross",
+    "phonetic": "/ɡroʊs/",
+    "pos": "adj./n./v.",
+    "meaning": "总的/粗俗的/严重的/总额/总共赚得",
+    "example": "The report listed the company's gross income.",
+    "exampleCn": "报告列出了公司的总收入。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 2171,
+    "word": "merchant",
+    "phonetic": "/ˈmɜːrtʃənt/",
+    "pos": "n.",
+    "meaning": "商人/批发商",
+    "example": "The merchant sold cloth and spices.",
+    "exampleCn": "这位商人出售布料和香料。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 2243,
+    "word": "lease",
+    "phonetic": "/liːs/",
+    "pos": "n./v.",
+    "meaning": "租约/租赁/出租",
+    "example": "They signed a lease for the apartment.",
+    "exampleCn": "他们签了一份公寓租约。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 2359,
+    "word": "deficit",
+    "phonetic": "/ˈdefɪsɪt/",
+    "pos": "n.",
+    "meaning": "赤字/不足/缺陷",
+    "example": "The government faced a large budget deficit.",
+    "exampleCn": "政府面临巨大的预算赤字。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 2414,
+    "word": "receipt",
+    "phonetic": "/rɪˈsiːt/",
+    "pos": "n.",
+    "meaning": "收据/接收",
+    "example": "Keep the receipt in case you need to return the item.",
+    "exampleCn": "保留收据，以防需要退货。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 2794,
+    "word": "dwindle",
+    "phonetic": "/ˈdwɪndl/",
+    "pos": "v.",
+    "meaning": "减少/缩小",
+    "example": "The food supply began to dwindle during the winter.",
+    "exampleCn": "冬季期间食物供应开始减少。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 3277,
+    "word": "inflation",
+    "phonetic": "/ɪnˈfleɪʃn/",
+    "pos": "n.",
+    "meaning": "通货膨胀/膨胀",
+    "example": "Inflation caused the price of food to rise.",
+    "exampleCn": "通货膨胀导致食品价格上涨。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 3976,
+    "word": "economics",
+    "phonetic": "ˌiːkəˈnɒmɪks",
+    "pos": "n.",
+    "meaning": "经济学",
+    "example": "Economics helps us understand how markets work.",
+    "exampleCn": "经济学帮助我们理解市场如何运作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13",
+      "41"
+    ]
+  },
+  {
+    "id": 4893,
+    "word": "Indian",
+    "phonetic": "ˈɪndiən",
+    "pos": "adj./n.",
+    "meaning": "印度的/印度人",
+    "example": "Indian cuisine is rich in spices.",
+    "exampleCn": "印度菜富含香料。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4894,
+    "word": "Australia",
+    "phonetic": "ɒˈstreɪliə",
+    "pos": "n.",
+    "meaning": "澳大利亚",
+    "example": "Australia is famous for its beaches and wildlife.",
+    "exampleCn": "澳大利亚以海滩和野生动物闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4895,
+    "word": "New Zealand",
+    "phonetic": "ˌnjuː ˈziːlənd",
+    "pos": "n.",
+    "meaning": "新西兰",
+    "example": "New Zealand is known for its stunning landscapes.",
+    "exampleCn": "新西兰以其绝美的风景而闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4896,
+    "word": "Britain",
+    "phonetic": "ˈbrɪtn",
+    "pos": "n.",
+    "meaning": "英国/不列颠",
+    "example": "Britain is made up of England, Scotland, and Wales.",
+    "exampleCn": "大不列颠由英格兰、苏格兰和威尔士组成。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4897,
+    "word": "France",
+    "phonetic": "frɑːns",
+    "pos": "n.",
+    "meaning": "法国",
+    "example": "France is known for its art and cuisine.",
+    "exampleCn": "法国以其艺术和美食闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4898,
+    "word": "Germany",
+    "phonetic": "ˈdʒɜːməni",
+    "pos": "n.",
+    "meaning": "德国",
+    "example": "Germany is the largest economy in Europe.",
+    "exampleCn": "德国是欧洲最大的经济体。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4899,
+    "word": "economy",
+    "phonetic": "ɪˈkɒnəmi",
+    "pos": "n.",
+    "meaning": "经济/节约",
+    "example": "The global economy is recovering slowly.",
+    "exampleCn": "全球经济正在缓慢复苏。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4900,
+    "word": "trade",
+    "phonetic": "treɪd",
+    "pos": "n./v.",
+    "meaning": "贸易/交易",
+    "example": "International trade is vital for the economy.",
+    "exampleCn": "国际贸易对经济至关重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4901,
+    "word": "market",
+    "phonetic": "ˈmɑːkɪt",
+    "pos": "n.",
+    "meaning": "市场/集市",
+    "example": "The stock market fell sharply yesterday.",
+    "exampleCn": "股市昨天大幅下跌。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4902,
+    "word": "industry",
+    "phonetic": "ˈɪndəstri",
+    "pos": "n.",
+    "meaning": "工业/产业",
+    "example": "The car industry employs thousands of workers.",
+    "exampleCn": "汽车产业雇用了成千上万的工人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4903,
+    "word": "industrialise",
+    "phonetic": "ɪnˈdʌstriəlaɪz",
+    "pos": "v.",
+    "meaning": "工业化/使工业化",
+    "example": "The country began to industrialise in the 1950s.",
+    "exampleCn": "该国于20世纪50年代开始工业化。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4904,
+    "word": "fund",
+    "phonetic": "fʌnd",
+    "pos": "n./v.",
+    "meaning": "资金/基金/资助",
+    "example": "The project was funded by the government.",
+    "exampleCn": "这个项目由政府资助。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4905,
+    "word": "endow",
+    "phonetic": "ɪnˈdaʊ",
+    "pos": "v.",
+    "meaning": "捐赠/赋予",
+    "example": "The university was endowed by a wealthy businessman.",
+    "exampleCn": "这所大学由一位富商捐赠建立。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4906,
+    "word": "commercialise",
+    "phonetic": "kəˈmɜːʃəlaɪz",
+    "pos": "v.",
+    "meaning": "商业化/商品化",
+    "example": "The festival has become too commercialised.",
+    "exampleCn": "这个节日已经变得太商业化了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4907,
+    "word": "slogan",
+    "phonetic": "ˈsləʊɡən",
+    "pos": "n.",
+    "meaning": "口号/标语",
+    "example": "The campaign slogan was 'Change for the better'.",
+    "exampleCn": "竞选口号是'变得更好'。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4908,
+    "word": "purchase",
+    "phonetic": "ˈpɜːtʃəs",
+    "pos": "v./n.",
+    "meaning": "购买/采购",
+    "example": "She purchased a new laptop online.",
+    "exampleCn": "她在网上购买了一台新笔记本电脑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4909,
+    "word": "affordable",
+    "phonetic": "əˈfɔːdəbl",
+    "pos": "adj.",
+    "meaning": "负担得起的/实惠的",
+    "example": "They provide affordable housing for families.",
+    "exampleCn": "他们为家庭提供可负担的住房。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4910,
+    "word": "retailing",
+    "phonetic": "ˈriːteɪlɪŋ",
+    "pos": "n.",
+    "meaning": "零售业",
+    "example": "Online retailing has grown rapidly in recent years.",
+    "exampleCn": "线上零售近年来快速增长。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4911,
+    "word": "grocery",
+    "phonetic": "ˈɡrəʊsəri",
+    "pos": "n.",
+    "meaning": "杂货店/食品杂货",
+    "example": "She bought fresh vegetables at the grocery.",
+    "exampleCn": "她在杂货店买了新鲜蔬菜。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4912,
+    "word": "promotion",
+    "phonetic": "prəˈməʊʃn",
+    "pos": "n.",
+    "meaning": "促销/晋升",
+    "example": "He got a promotion to senior manager.",
+    "exampleCn": "他晋升为高级经理。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4913,
+    "word": "voucher",
+    "phonetic": "ˈvaʊtʃə",
+    "pos": "n.",
+    "meaning": "代金券/优惠券",
+    "example": "She received a gift voucher for the bookstore.",
+    "exampleCn": "她收到了书店的礼品券。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4914,
+    "word": "coupon",
+    "phonetic": "ˈkuːpɒn",
+    "pos": "n.",
+    "meaning": "优惠券/赠券",
+    "example": "Cut out the coupon to get two pounds off your next purchase.",
+    "exampleCn": "剪下优惠券，下次购买可减两英镑。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4915,
+    "word": "exchange",
+    "phonetic": "ɪksˈtʃeɪndʒ",
+    "pos": "n./v.",
+    "meaning": "兑换/交换/交易",
+    "example": "You can exchange money at the airport.",
+    "exampleCn": "你可以在机场兑换货币。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4916,
+    "word": "swap",
+    "phonetic": "swɒp",
+    "pos": "v./n.",
+    "meaning": "交换/互换",
+    "example": "The two friends swapped books to read.",
+    "exampleCn": "两个朋友交换了书来读。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4917,
+    "word": "invoice",
+    "phonetic": "ˈɪnvɔɪs",
+    "pos": "n.",
+    "meaning": "发票/账单",
+    "example": "The company sent an invoice for the goods.",
+    "exampleCn": "公司寄来了货物的发票。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4918,
+    "word": "tax",
+    "phonetic": "tæks",
+    "pos": "n.",
+    "meaning": "税/税款",
+    "example": "Income tax is deducted from your salary.",
+    "exampleCn": "所得税从工资里扣除。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4919,
+    "word": "levy",
+    "phonetic": "ˈlevi",
+    "pos": "v./n.",
+    "meaning": "征收/税款",
+    "example": "The government levies a tax on fuel.",
+    "exampleCn": "政府对燃料征税。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4920,
+    "word": "tariff",
+    "phonetic": "ˈtærɪf",
+    "pos": "n.",
+    "meaning": "关税/价目表",
+    "example": "Tariffs on imported goods have been reduced.",
+    "exampleCn": "进口商品的关税已降低。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4921,
+    "word": "duty",
+    "phonetic": "ˈdjuːti",
+    "pos": "n.",
+    "meaning": "税/关税/责任",
+    "example": "Customs duty is charged on imports from abroad.",
+    "exampleCn": "从国外进口要缴纳关税。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4922,
+    "word": "dutiable",
+    "phonetic": "ˈdjuːtiəbl",
+    "pos": "adj.",
+    "meaning": "应征税的/应缴税的",
+    "example": "Alcohol and tobacco are dutiable goods.",
+    "exampleCn": "酒类和烟草是应税商品。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4923,
+    "word": "spend",
+    "phonetic": "spend",
+    "pos": "v.",
+    "meaning": "花费/支出",
+    "example": "She spends a lot of money on clothes.",
+    "exampleCn": "她花很多钱买衣服。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4924,
+    "word": "cost",
+    "phonetic": "kɒst",
+    "pos": "n./v.",
+    "meaning": "成本/花费",
+    "example": "The cost of living has risen sharply.",
+    "exampleCn": "生活成本急剧上涨了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4925,
+    "word": "recession",
+    "phonetic": "rɪˈseʃn",
+    "pos": "n.",
+    "meaning": "衰退/不景气",
+    "example": "The economy is in recession after the crisis.",
+    "exampleCn": "危机后经济处于衰退之中。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4926,
+    "word": "debt",
+    "phonetic": "det",
+    "pos": "n.",
+    "meaning": "债务/欠款",
+    "example": "He is working hard to pay off his debts.",
+    "exampleCn": "他正在努力工作以还清债务。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  }
+]
