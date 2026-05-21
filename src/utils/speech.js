@@ -9,6 +9,7 @@ export const KOKORO_WORD_AUDIO_VOICES = [
   { id: 'am_michael', label: 'Michael · 美音男声' },
   { id: 'bf_emma', label: 'Emma · 英音女声' },
 ];
+export const KOKORO_EXAMPLE_AUDIO_VOICES = ['af_bella', 'am_michael'];
 
 const browserTtsAvailable =
   typeof window !== 'undefined' && typeof window.speechSynthesis !== 'undefined';
@@ -111,6 +112,11 @@ const getWordAudioBaseUrl = () => {
   return fromEnv || '/audio/words';
 };
 
+const getExampleAudioBaseUrl = () => {
+  const fromEnv = (import.meta.env.VITE_EXAMPLE_AUDIO_BASE_URL || '').trim();
+  return fromEnv || '/audio/examples';
+};
+
 const base64ToBlob = (base64, mimeType = 'audio/mpeg') => {
   const binary = atob(base64);
   const len = binary.length;
@@ -192,6 +198,18 @@ const playAudioSource = async (src) => {
 };
 
 const getGeneratedKokoroVoiceIds = () => new Set(KOKORO_WORD_AUDIO_VOICES.map((voice) => voice.id));
+const getGeneratedKokoroExampleVoiceIds = () => new Set(KOKORO_EXAMPLE_AUDIO_VOICES);
+
+const getExampleVoiceCandidates = () => {
+  const voices = [];
+  const currentVoice = storage.getKokoroVoice();
+
+  if (currentVoice) voices.push(currentVoice);
+  voices.push('af_bella', 'am_michael');
+
+  const generatedVoices = getGeneratedKokoroExampleVoiceIds();
+  return voices.filter((voice, index) => generatedVoices.has(voice) && voices.indexOf(voice) === index);
+};
 
 const speakWithStaticKokoroWordAudio = async (word) => {
   const wordId = word?.id == null ? '' : String(word.id).trim();
@@ -206,6 +224,27 @@ const speakWithStaticKokoroWordAudio = async (word) => {
 
   const baseUrl = getWordAudioBaseUrl().replace(/\/$/, '');
   await playAudioSource(`${baseUrl}/${encodeURIComponent(voice)}/${encodeURIComponent(wordId)}.mp3`);
+};
+
+const speakWithStaticKokoroExampleAudio = async (word) => {
+  const wordId = word?.id == null ? '' : String(word.id).trim();
+  if (!wordId) {
+    throw new Error('缺少例句音频 id');
+  }
+
+  const baseUrl = getExampleAudioBaseUrl().replace(/\/$/, '');
+  const failures = [];
+
+  for (const voice of getExampleVoiceCandidates()) {
+    try {
+      await playAudioSource(`${baseUrl}/${encodeURIComponent(voice)}/${encodeURIComponent(wordId)}.mp3`);
+      return;
+    } catch (error) {
+      failures.push(error);
+    }
+  }
+
+  throw failures[0] || new Error('未找到可用例句静态音频');
 };
 
 export const speakStaticKokoroWordAudio = async (word) => {
@@ -395,6 +434,30 @@ export const speakWord = async (word, options = {}) => {
   await speak(safeText, mergedOptions);
 };
 
+export const speakExample = async (word, options = {}) => {
+  const text = typeof word === 'string' ? word : word?.example;
+  const safeText = (text || '').trim();
+  if (!safeText) return;
+
+  stopSpeak();
+  const baseRate = Number.isFinite(Number(options.rate)) ? Number(options.rate) : 1;
+  const mergedOptions = {
+    ...options,
+    rate: clamp(baseRate * getSpeechRateMultiplier(), 0.5, 1.5),
+  };
+
+  if (ttsProvider === 'kokoro' && typeof word === 'object' && word?.id != null) {
+    try {
+      await speakWithStaticKokoroExampleAudio(word);
+      return;
+    } catch (error) {
+      console.warn('[TTS] Static Kokoro example audio failed, fallback to generated speech:', error);
+    }
+  }
+
+  await speak(safeText, mergedOptions);
+};
+
 export const stopSpeak = () => {
   if (browserTtsAvailable) {
     const speech = getSpeechSynthesis();
@@ -419,6 +482,7 @@ if (browserTtsAvailable) {
 export default {
   speak,
   speakWord,
+  speakExample,
   speakStaticKokoroWordAudio,
   stopSpeak,
   getAvailableVoices,

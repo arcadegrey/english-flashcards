@@ -48,6 +48,7 @@
 
 - 语音工具在 `src/utils/speech.js`，支持 `browser` 和 `kokoro` 两个 provider；Kokoro 失败时会自动 fallback 到浏览器 TTS。
 - 语音设置 UI 在 `src/components/VoiceSettings.jsx`，可选择浏览器 TTS 或 Kokoro TTS，并配置 Kokoro endpoint、voice、speed。
+- 新用户或本地未保存过语音设置时，默认 provider 是 `kokoro`，默认音色是 `af_bella`。
 - 语音设置里的 Kokoro 说明蓝色提示块已移除；“试听 Kokoro”现在直接播放静态 Kokoro 单词 MP3（当前用 `{ id: 1, word: "abandon" }`），不会再因实时接口失败而 fallback 成浏览器 TTS。
 - 默认 Kokoro endpoint 是 `http://127.0.0.1:8880/v1/audio/speech`，`.env.example` 也已改成本地自部署默认值。
 - 本地 Kokoro 服务脚本是 `scripts/kokoro_tts_server.py`，依赖写在 `requirements-kokoro.txt`，说明文档是 `docs/kokoro-tts.md`。
@@ -63,7 +64,7 @@
 - 已生成例句 MP3：本地 `public/audio/examples/af_bella` 和 `public/audio/examples/am_michael` 各 3577 个 MP3。已确认 `af_bella` 女声例句全量上传到 R2：`audio/examples/af_bella/{id}.mp3`，抽查 `1.mp3` 和 `3577.mp3` 的公开 URL 返回 `200 OK`。已确认 `am_michael` 男声例句全量上传到 R2：`audio/examples/am_michael/{id}.mp3`，上传 3577/3577 个文件；抽查 `1.mp3`、`480.mp3`、`2406.mp3` 和 `3577.mp3` 的公开 URL 返回 `206 audio/mpeg`。
 - 前端 `speakWord()` 在 Kokoro provider 下会优先播放静态单词音频；文件缺失或播放失败时 fallback 到实时 Kokoro / 浏览器 TTS。
 - 静态单词音频默认 base URL 是 `/audio/words`；线上构建已在 GitHub Actions 设置 `VITE_WORD_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/words`，让远端 App 从 R2 读取音频，避免 App 本体携带全部 MP3。
-- 前端例句播放目前仍走 `speak(word.example)`，即 Kokoro provider 下会尝试实时 Kokoro 接口，失败再 fallback 浏览器 TTS；尚未接入 `audio/examples/{voice}/{id}.mp3` 静态例句优先播放。下一步如果要启用静态例句，需要在 `src/utils/speech.js` 增加 example audio base URL 和 `speakExample` 之类的入口，并在 `Card.jsx` / `FillBlank.jsx` / 阅读相关例句按钮改调用。
+- 前端例句播放已接入静态 Kokoro MP3 优先播放：`src/utils/speech.js` 提供 `speakExample(word)`，Kokoro provider 下会优先尝试 `audio/examples/{voice}/{id}.mp3`，当前音色不可用时按 `af_bella`、`am_michael` 回退，再 fallback 到实时 Kokoro / 浏览器 TTS。可用 `VITE_EXAMPLE_AUDIO_BASE_URL` 指向 R2/CDN；未配置时默认 `/audio/examples`。当前已接入 `Card.jsx` 和 `FillBlank.jsx` 的例句播放按钮。
 - 当前 R2 bucket 是 `english-flashcards-audio`，公开 r2.dev URL 是 `https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev`，CORS 配置文件是 `config/r2-word-audio-cors.json`。
 
 ## Cloudflare Worker / D1 同步逻辑
@@ -180,7 +181,7 @@
 
 ## 下一步建议
 
-- 下一步最值得做的是接入静态例句音频播放：新增 `VITE_EXAMPLE_AUDIO_BASE_URL` 或复用 R2 根地址，Kokoro provider 下优先播放 `audio/examples/{voice}/{id}.mp3`；若当前音色没有例句音频（例如 `bf_emma`），可 fallback 到 `af_bella` 或实时 Kokoro。
+- 下一步可把 `VITE_EXAMPLE_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/examples` 加到线上构建环境，让远端 App 直接从 R2 读取例句 MP3，避免依赖实时 Kokoro 接口。
 - 男声例句 `am_michael` 已完成 R2 上传和公开 URL 抽查；后续无需再重复上传，除非本地重新生成了例句音频。
 - 如果继续修订 IELTS 词表，优先使用 PDF 提取出的 `word,list` 作为基础，再单独生成释义/音标/例句，最后用 `npm run words:import -- <csv> --upsert` 导入；分片脚本会自动挂到对应 IELTS 主题。
 - 若继续扩展更多考试词库，沿用 `core.json + manifest + 按需 list 分片`，避免启动包继续变大。

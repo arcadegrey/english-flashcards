@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { speak } from '../utils/speech';
+import { speakExample } from '../utils/speech';
 import { playSuccessChime } from '../utils/feedback';
 import CorrectAnswerCelebration from './CorrectAnswerCelebration';
 
@@ -164,7 +164,7 @@ function FillBlank({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswe
 
   const handleSpeakSentence = () => {
     if (currentQuestion) {
-      speak(currentQuestion.example, { rate: 1 });
+      speakExample(currentQuestion, { rate: 1 });
     }
   };
 

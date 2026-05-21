@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { speak, speakWord } from '../utils/speech';
+import { speakExample, speakWord } from '../utils/speech';
 
 function Card({ word, showHint = false }) {
   const hints = useMemo(() => {
@@ -70,7 +70,7 @@ function Card({ word, showHint = false }) {
           <button
             type="button"
             className="learn-refresh-example-audio"
-            onClick={() => speak(word.example, { rate: 1 })}
+            onClick={() => speakExample(word, { rate: 1 })}
             disabled={!word.example}
             aria-label="播放例句"
           >

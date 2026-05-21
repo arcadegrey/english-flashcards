@@ -215,6 +215,7 @@ VITE_WORD_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/aud
 - 公开 r2.dev URL：`https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev`
 - CORS 配置文件：`config/r2-word-audio-cors.json`
 - 线上 GitHub Actions 构建已设置 `VITE_WORD_AUDIO_BASE_URL`
+- 例句静态音频可设置 `VITE_EXAMPLE_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/examples`
 
 ## 批量生成例句静态音频
 
@@ -261,6 +262,8 @@ npm run audio:upload-r2 -- --bucket english-flashcards-audio --source public/aud
 ```text
 https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/examples/af_bella/1.mp3
 ```
+
+前端 `speakExample(word)` 会在 Kokoro provider 下优先播放静态例句 MP3。未配置 `VITE_EXAMPLE_AUDIO_BASE_URL` 时默认读取同源 `/audio/examples`；线上建议指向 R2 的 `audio/examples` 前缀。
 
 ## 音色和语言
 

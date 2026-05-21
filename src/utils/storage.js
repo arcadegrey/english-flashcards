@@ -177,16 +177,16 @@ export const storage = {
   // TTS Provider: 'browser' | 'kokoro'
   getTtsProvider: () => {
     try {
-      return localStorage.getItem(STORAGE_KEYS.TTS_PROVIDER) || 'browser';
+      return localStorage.getItem(STORAGE_KEYS.TTS_PROVIDER) || 'kokoro';
     } catch (error) {
       console.error('Failed to load TTS provider:', error);
-      return 'browser';
+      return 'kokoro';
     }
   },
 
   setTtsProvider: (provider) => {
     try {
-      localStorage.setItem(STORAGE_KEYS.TTS_PROVIDER, provider || 'browser');
+      localStorage.setItem(STORAGE_KEYS.TTS_PROVIDER, provider || 'kokoro');
     } catch (error) {
       console.error('Failed to save TTS provider:', error);
     }
