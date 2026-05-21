@@ -1,0 +1,1534 @@
+[
+  {
+    "id": 1,
+    "word": "abandon",
+    "phonetic": "/əˈbændən/",
+    "pos": "v.",
+    "meaning": "放弃，抛弃；遗弃",
+    "example": "He decided to abandon the project due to lack of funding.",
+    "exampleCn": "由于缺乏资金，他决定放弃这个项目。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 31,
+    "word": "adventure",
+    "phonetic": "/ədˈventʃər/",
+    "pos": "n.",
+    "meaning": "冒险经历，奇遇",
+    "example": "Traveling alone can be an exciting adventure.",
+    "exampleCn": "独自旅行可能是一场令人兴奋的冒险。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 198,
+    "word": "avoid",
+    "phonetic": "/əˈvɔɪd/",
+    "pos": "v.",
+    "meaning": "避免，躲避",
+    "example": "You should avoid eating too much sugar.",
+    "exampleCn": "你应该避免吃太多糖。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 338,
+    "word": "bury",
+    "phonetic": "/ˈberi/",
+    "pos": "v.",
+    "meaning": "埋葬；掩埋",
+    "example": "The dog tried to bury the bone.",
+    "exampleCn": "那只狗试图把骨头埋起来。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 371,
+    "word": "capture",
+    "phonetic": "/ˈkæptʃə(r)/",
+    "pos": "v.",
+    "meaning": "捕获；俘获；捕捉",
+    "example": "The army captured the city.",
+    "exampleCn": "军队占领了城市。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet6",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 536,
+    "word": "contribute",
+    "phonetic": "/kənˈtrɪbjuːt/",
+    "pos": "v.",
+    "meaning": "贡献；捐赠；投稿",
+    "example": "Everyone should contribute to the discussion.",
+    "exampleCn": "每个人都应该为讨论做出贡献。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 550,
+    "word": "disturb",
+    "phonetic": "/dɪˈstɜːb/",
+    "pos": "v.",
+    "meaning": "打扰；扰乱；使不安",
+    "example": "Don't disturb him while he's working.",
+    "exampleCn": "他工作时不要打扰他。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 551,
+    "word": "evil",
+    "phonetic": "/ˈiːvl/",
+    "pos": "adj./n.",
+    "meaning": "邪恶的；罪恶；邪恶",
+    "example": "The evil witch cast a spell.",
+    "exampleCn": "邪恶的女巫施了魔法。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 622,
+    "word": "proceed",
+    "phonetic": "/prəˈsiːd/",
+    "pos": "v.",
+    "meaning": "继续进行；前进",
+    "example": "Please proceed with your work.",
+    "exampleCn": "请继续你的工作。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 699,
+    "word": "withdraw",
+    "phonetic": "/wɪðˈdrɔː/",
+    "pos": "v.",
+    "meaning": "撤回；撤退；取款",
+    "example": "He decided to withdraw his application.",
+    "exampleCn": "他决定撤回申请。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 788,
+    "word": "occur",
+    "phonetic": "/əˈkɜː(r)/",
+    "pos": "v.",
+    "meaning": "发生；出现；存在",
+    "example": "The accident occurred yesterday.",
+    "exampleCn": "事故发生在昨天。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 819,
+    "word": "devil",
+    "phonetic": "/ˈdevl/",
+    "pos": "n.",
+    "meaning": "魔鬼；恶魔；家伙",
+    "example": "The devil tempted him.",
+    "exampleCn": "魔鬼诱惑了他。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 836,
+    "word": "execute",
+    "phonetic": "/ˈeksɪkjuːt/",
+    "pos": "v.",
+    "meaning": "执行；处决；完成",
+    "example": "Execute the plan carefully.",
+    "exampleCn": "仔细执行计划。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 920,
+    "word": "mislead",
+    "phonetic": "/ˌmɪsˈliːd/",
+    "pos": "v.",
+    "meaning": "误导",
+    "example": "The advertisement may mislead customers.",
+    "exampleCn": "这则广告可能会误导顾客。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 1000,
+    "word": "conquer",
+    "phonetic": "/ˈkɑːŋkər/",
+    "pos": "v.",
+    "meaning": "征服，战胜",
+    "example": "She worked hard to conquer her fear of public speaking.",
+    "exampleCn": "她努力克服对公开演讲的恐惧。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 1089,
+    "word": "interrupt",
+    "phonetic": "/ˌɪntəˈrʌpt/",
+    "pos": "v.",
+    "meaning": "打断，中断",
+    "example": "Please do not interrupt while others are speaking.",
+    "exampleCn": "别人在讲话时请不要打断。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 1106,
+    "word": "general",
+    "phonetic": "/ˈdʒenrəl/",
+    "pos": "adj./n.",
+    "meaning": "一般的，普遍的/将军",
+    "example": "I have a general idea of the plan./The general addressed the soldiers.",
+    "exampleCn": "我对这个计划有个大致了解。/将军向士兵们发表讲话。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 1152,
+    "word": "defend",
+    "phonetic": "/dɪˈfend/",
+    "pos": "v.",
+    "meaning": "防御；辩护",
+    "example": "The lawyer worked hard to defend her client.",
+    "exampleCn": "律师努力为她的当事人辩护。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "9",
+    "ieltsLists": [
+      "9",
+      "48"
+    ]
+  },
+  {
+    "id": 1269,
+    "word": "monument",
+    "phonetic": "/ˈmɑːnjəmənt/",
+    "pos": "n.",
+    "meaning": "纪念碑；历史遗迹",
+    "example": "The monument was built to honor the soldiers.",
+    "exampleCn": "这座纪念碑是为纪念士兵而建的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 1377,
+    "word": "triumph",
+    "phonetic": "/ˈtraɪʌmf/",
+    "pos": "n./v.",
+    "meaning": "胜利；成功/战胜",
+    "example": "The team celebrated its triumph after the final match.",
+    "exampleCn": "球队在决赛后庆祝胜利。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 1392,
+    "word": "resist",
+    "phonetic": "/rɪˈzɪst/",
+    "pos": "v.",
+    "meaning": "抵抗；忍住",
+    "example": "Some bacteria can resist antibiotics.",
+    "exampleCn": "一些细菌能够抵抗抗生素。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 1399,
+    "word": "military",
+    "phonetic": "/ˈmɪləˌteri/",
+    "pos": "adj./n.",
+    "meaning": "军事的/军队",
+    "example": "The country increased its military spending.",
+    "exampleCn": "这个国家增加了军事开支。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 1584,
+    "word": "compromise",
+    "phonetic": "/ˈkɑːmprəmaɪz/",
+    "pos": "n./v.",
+    "meaning": "妥协/折中/危及",
+    "example": "Both sides reached a compromise after long discussion.",
+    "exampleCn": "双方经过长时间讨论后达成了妥协。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 1703,
+    "word": "statue",
+    "phonetic": "/ˈstætʃuː/",
+    "pos": "n.",
+    "meaning": "雕像",
+    "example": "A bronze statue stands in the center of the square.",
+    "exampleCn": "一座青铜雕像矗立在广场中央。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 1719,
+    "word": "grave",
+    "phonetic": "/ɡreɪv/",
+    "pos": "adj./n.",
+    "meaning": "严重的/坟墓",
+    "example": "The scientist warned of grave damage to the ecosystem.",
+    "exampleCn": "这位科学家警告生态系统会受到严重破坏。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 1968,
+    "word": "collapse",
+    "phonetic": "/kəˈlæps/",
+    "pos": "v./n.",
+    "meaning": "倒塌/崩溃/失败",
+    "example": "The old bridge could collapse without urgent repairs.",
+    "exampleCn": "如果不紧急维修，这座旧桥可能会倒塌。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 2018,
+    "word": "troop",
+    "phonetic": "/truːp/",
+    "pos": "n./v.",
+    "meaning": "军队/一群/成群结队地走",
+    "example": "A troop of soldiers guarded the bridge.",
+    "exampleCn": "一队士兵守卫着这座桥。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 2069,
+    "word": "obstacle",
+    "phonetic": "/ˈɑːbstəkəl/",
+    "pos": "n.",
+    "meaning": "障碍/阻碍",
+    "example": "Lack of funding was the main obstacle to the project.",
+    "exampleCn": "缺少资金是这个项目的主要障碍。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "33",
+    "ieltsLists": [
+      "33",
+      "48"
+    ]
+  },
+  {
+    "id": 2150,
+    "word": "tablet",
+    "phonetic": "/ˈtæblət/",
+    "pos": "n.",
+    "meaning": "药片/平板电脑/碑板",
+    "example": "The doctor gave him a tablet for pain.",
+    "exampleCn": "医生给了他一片止痛药。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 2226,
+    "word": "retreat",
+    "phonetic": "/rɪˈtriːt/",
+    "pos": "v./n.",
+    "meaning": "撤退/退缩/静修处",
+    "example": "The army had to retreat after the battle.",
+    "exampleCn": "军队在战斗后不得不撤退。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 2233,
+    "word": "interfere",
+    "phonetic": "/ˌɪntərˈfɪr/",
+    "pos": "v.",
+    "meaning": "干涉/妨碍/干扰",
+    "example": "Noise can interfere with concentration.",
+    "exampleCn": "噪音会干扰注意力。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 2284,
+    "word": "fierce",
+    "phonetic": "/fɪrs/",
+    "pos": "adj.",
+    "meaning": "凶猛的/激烈的",
+    "example": "The two companies faced fierce competition.",
+    "exampleCn": "这两家公司面临激烈竞争。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 2304,
+    "word": "devastate",
+    "phonetic": "/ˈdevəsteɪt/",
+    "pos": "v.",
+    "meaning": "毁坏/使震惊",
+    "example": "The earthquake devastated several coastal towns.",
+    "exampleCn": "地震毁坏了几个沿海城镇。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 2340,
+    "word": "rid",
+    "phonetic": "/rɪd/",
+    "pos": "v.",
+    "meaning": "使摆脱/去除",
+    "example": "The city tried to rid the river of pollution.",
+    "exampleCn": "这座城市试图清除河流污染。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 2345,
+    "word": "humiliate",
+    "phonetic": "/hjuːˈmɪlieɪt/",
+    "pos": "v.",
+    "meaning": "羞辱/使丢脸",
+    "example": "Public criticism can humiliate a young student.",
+    "exampleCn": "公开批评可能会羞辱一名年轻学生。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 2366,
+    "word": "maritime",
+    "phonetic": "/ˈmærɪtaɪm/",
+    "pos": "adj.",
+    "meaning": "海事的/海洋的/沿海的",
+    "example": "The city has a long maritime history.",
+    "exampleCn": "这座城市有悠久的海事历史。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 2426,
+    "word": "medal",
+    "phonetic": "/ˈmedl/",
+    "pos": "n.",
+    "meaning": "奖牌/勋章",
+    "example": "The athlete won a gold medal.",
+    "exampleCn": "这名运动员赢得了一枚金牌。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 2515,
+    "word": "foul",
+    "phonetic": "/faʊl/",
+    "pos": "adj./v./n.",
+    "meaning": "肮脏的/恶臭的/犯规/弄脏",
+    "example": "The foul smell came from the polluted river.",
+    "exampleCn": "恶臭来自受污染的河流。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 2647,
+    "word": "camouflage",
+    "phonetic": "/ˈkæməflɑːʒ/",
+    "pos": "n./v.",
+    "meaning": "伪装/掩饰",
+    "example": "The insect uses camouflage to avoid predators.",
+    "exampleCn": "这种昆虫利用伪装躲避捕食者。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 3102,
+    "word": "withstand",
+    "phonetic": "/wɪðˈstænd/",
+    "pos": "v.",
+    "meaning": "承受/经受住/抵挡",
+    "example": "The structure can withstand strong winds.",
+    "exampleCn": "这个结构能够承受强风。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5118,
+    "word": "matter",
+    "phonetic": "ˈmætə",
+    "pos": "n./v.",
+    "meaning": "事情/物质/要紧",
+    "example": "What is the matter with your car?",
+    "exampleCn": "你的车出了什么问题？",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5119,
+    "word": "savage",
+    "phonetic": "ˈsævɪdʒ",
+    "pos": "adj.",
+    "meaning": "野蛮的/凶猛的",
+    "example": "The savage storm destroyed many houses.",
+    "exampleCn": "凶猛的风暴摧毁了许多房屋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5120,
+    "word": "reckless",
+    "phonetic": "ˈreklɪs",
+    "pos": "adj.",
+    "meaning": "鲁莽的/不计后果的",
+    "example": "Reckless driving causes many accidents.",
+    "exampleCn": "鲁莽驾驶会导致很多事故。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5121,
+    "word": "punishment",
+    "phonetic": "ˈpʌnɪʃmənt",
+    "pos": "n.",
+    "meaning": "惩罚/处罚",
+    "example": "The punishment for the crime was ten years in prison.",
+    "exampleCn": "该罪行的惩罚是十年监禁。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5122,
+    "word": "hang",
+    "phonetic": "hæŋ",
+    "pos": "v.",
+    "meaning": "悬挂/吊死",
+    "example": "He hung his coat on the hook.",
+    "exampleCn": "他把外套挂在了钩子上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5123,
+    "word": "sacrifice",
+    "phonetic": "ˈsækrɪfaɪs",
+    "pos": "n./v.",
+    "meaning": "牺牲/献祭",
+    "example": "She sacrificed her free time to help others.",
+    "exampleCn": "她牺牲了自己的空闲时间来帮助别人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5124,
+    "word": "casualty",
+    "phonetic": "ˈkæʒuəlti",
+    "pos": "n.",
+    "meaning": "伤亡人员/受害者",
+    "example": "The explosion caused many casualties.",
+    "exampleCn": "爆炸造成了许多伤亡。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5125,
+    "word": "funeral",
+    "phonetic": "ˈfjuːnərəl",
+    "pos": "n.",
+    "meaning": "葬礼/丧礼",
+    "example": "Hundreds of people attended the state funeral.",
+    "exampleCn": "数百人参加了国葬。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5126,
+    "word": "tomb",
+    "phonetic": "tuːm",
+    "pos": "n.",
+    "meaning": "坟墓/陵墓",
+    "example": "The ancient tomb was discovered by archaeologists.",
+    "exampleCn": "古墓被考古学家发现。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5127,
+    "word": "hell",
+    "phonetic": "hel",
+    "pos": "n.",
+    "meaning": "地狱/苦难",
+    "example": "War is hell for those who experience it.",
+    "exampleCn": "战争对经历过的人来说是地狱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5128,
+    "word": "naval",
+    "phonetic": "ˈneɪvl",
+    "pos": "adj.",
+    "meaning": "海军的/军舰的",
+    "example": "The naval fleet sailed into the harbour.",
+    "exampleCn": "海军舰队驶入了港口。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5129,
+    "word": "fleet",
+    "phonetic": "fliːt",
+    "pos": "n.",
+    "meaning": "舰队/船队",
+    "example": "The fishing fleet returned at dawn.",
+    "exampleCn": "捕鱼船队在黎明时返回了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5130,
+    "word": "landing",
+    "phonetic": "ˈlændɪŋ",
+    "pos": "n.",
+    "meaning": "登陆/降落",
+    "example": "The plane made a smooth landing.",
+    "exampleCn": "飞机平稳着陆了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5131,
+    "word": "hover",
+    "phonetic": "ˈhɒvə",
+    "pos": "v.",
+    "meaning": "盘旋/徘徊",
+    "example": "A hawk hovered in the sky above.",
+    "exampleCn": "一只鹰在天空中盘旋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5132,
+    "word": "progress",
+    "phonetic": "ˈprəʊɡres",
+    "pos": "n./v.",
+    "meaning": "进步/进展",
+    "example": "The project is making good progress.",
+    "exampleCn": "项目进展良好。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5133,
+    "word": "nuclear",
+    "phonetic": "ˈnjuːkliə",
+    "pos": "adj.",
+    "meaning": "核的/核能的",
+    "example": "The country signed the nuclear non-proliferation treaty.",
+    "exampleCn": "该国签署了核不扩散条约。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5134,
+    "word": "poison",
+    "phonetic": "ˈpɔɪzn",
+    "pos": "n.",
+    "meaning": "毒药/毒物",
+    "example": "The snake's poison can kill within minutes.",
+    "exampleCn": "蛇的毒液可在几分钟内致命。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5135,
+    "word": "risk",
+    "phonetic": "rɪsk",
+    "pos": "n./v.",
+    "meaning": "风险/冒险",
+    "example": "Smoking increases the risk of cancer.",
+    "exampleCn": "吸烟增加了患癌的风险。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5136,
+    "word": "peril",
+    "phonetic": "ˈperəl",
+    "pos": "n.",
+    "meaning": "危险/险境",
+    "example": "The ship was in grave peril during the storm.",
+    "exampleCn": "船在暴风雨中处境极险。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5137,
+    "word": "catastrophe",
+    "phonetic": "kəˈtæstrəfi",
+    "pos": "n.",
+    "meaning": "灾难/大祸",
+    "example": "The flood was a terrible catastrophe for the region.",
+    "exampleCn": "洪水对该地区是一场可怕的灾难。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5138,
+    "word": "torture",
+    "phonetic": "ˈtɔːtʃə",
+    "pos": "n./v.",
+    "meaning": "折磨/拷打",
+    "example": "The prisoners were subjected to physical torture.",
+    "exampleCn": "囚犯们遭受了身体上的折磨。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5139,
+    "word": "damage",
+    "phonetic": "ˈdæmɪdʒ",
+    "pos": "n./v.",
+    "meaning": "损害/破坏",
+    "example": "The storm caused severe damage to the crops.",
+    "exampleCn": "暴风雨对庄稼造成了严重损害。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5140,
+    "word": "harmful",
+    "phonetic": "ˈhɑːmfl",
+    "pos": "adj.",
+    "meaning": "有害的/伤害的",
+    "example": "Too much sun can be harmful to your skin.",
+    "exampleCn": "过多日晒会伤害皮肤。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5141,
+    "word": "shrink",
+    "phonetic": "ʃrɪŋk",
+    "pos": "v.",
+    "meaning": "缩水/畏缩",
+    "example": "The jumper shrank in the wash.",
+    "exampleCn": "毛衣洗后缩水了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5142,
+    "word": "surrender",
+    "phonetic": "səˈrendə",
+    "pos": "v.",
+    "meaning": "投降/屈服",
+    "example": "The soldiers refused to surrender.",
+    "exampleCn": "士兵们拒绝投降。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5143,
+    "word": "escape",
+    "phonetic": "ɪˈskeɪp",
+    "pos": "v./n.",
+    "meaning": "逃跑/逃脱",
+    "example": "The prisoner escaped through a tunnel.",
+    "exampleCn": "囚犯通过一条隧道逃跑了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5144,
+    "word": "quit",
+    "phonetic": "kwɪt",
+    "pos": "v.",
+    "meaning": "退出/辞职/放弃",
+    "example": "He quit his job to travel the world.",
+    "exampleCn": "他辞职去环游世界了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5145,
+    "word": "forgo",
+    "phonetic": "fɔːˈɡəʊ",
+    "pos": "v.",
+    "meaning": "放弃/舍弃",
+    "example": "She decided to forgo the bonus to help the team.",
+    "exampleCn": "她决定放弃奖金来帮助团队。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5146,
+    "word": "discard",
+    "phonetic": "dɪsˈkɑːd",
+    "pos": "v.",
+    "meaning": "丢弃/抛弃",
+    "example": "She discarded the old newspapers.",
+    "exampleCn": "她把旧报纸丢了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5147,
+    "word": "safeguard",
+    "phonetic": "ˈseɪfɡɑːd",
+    "pos": "v.",
+    "meaning": "保护/保卫",
+    "example": "The law safeguards the rights of citizens.",
+    "exampleCn": "法律保障公民的权利。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5148,
+    "word": "defeat",
+    "phonetic": "dɪˈfiːt",
+    "pos": "v.",
+    "meaning": "击败/战胜",
+    "example": "The army was defeated in the final battle.",
+    "exampleCn": "军队在最后一战中被击败了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5149,
+    "word": "victory",
+    "phonetic": "ˈvɪktəri",
+    "pos": "n.",
+    "meaning": "胜利/成功",
+    "example": "The team celebrated their victory with joy.",
+    "exampleCn": "球队欣喜地庆祝了胜利。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5150,
+    "word": "honour",
+    "phonetic": "ˈɒnə",
+    "pos": "n./v.",
+    "meaning": "荣誉/尊敬",
+    "example": "It is a great honour to receive this award.",
+    "exampleCn": "获得这个奖项是一个巨大的荣誉。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5151,
+    "word": "glorious",
+    "phonetic": "ˈɡlɔːriəs",
+    "pos": "adj.",
+    "meaning": "光荣的/辉煌的",
+    "example": "They celebrated a glorious victory.",
+    "exampleCn": "他们庆祝了一场辉煌的胜利。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5152,
+    "word": "devote",
+    "phonetic": "dɪˈvəʊt",
+    "pos": "v.",
+    "meaning": "致力于/奉献",
+    "example": "He devoted his life to scientific research.",
+    "exampleCn": "他把一生献给了科学研究。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5153,
+    "word": "owe",
+    "phonetic": "əʊ",
+    "pos": "v.",
+    "meaning": "欠/归功于",
+    "example": "I owe my success to my parents.",
+    "exampleCn": "我欠我的成功给父母。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5154,
+    "word": "patrol",
+    "phonetic": "pəˈtrəʊl",
+    "pos": "v./n.",
+    "meaning": "巡逻/巡查",
+    "example": "Security guards patrol the building at night.",
+    "exampleCn": "保安夜间在大楼周围巡逻。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5155,
+    "word": "guard",
+    "phonetic": "ɡɑːd",
+    "pos": "v./n.",
+    "meaning": "守卫/警卫",
+    "example": "Two soldiers stood guard at the entrance.",
+    "exampleCn": "两名士兵在入口处站岗。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5156,
+    "word": "burrow",
+    "phonetic": "ˈbʌrəʊ",
+    "pos": "n./v.",
+    "meaning": "洞穴/挖洞",
+    "example": "The rabbit disappeared into its burrow.",
+    "exampleCn": "兔子消失在它的洞穴里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5157,
+    "word": "spy",
+    "phonetic": "spaɪ",
+    "pos": "n./v.",
+    "meaning": "间谍/侦察",
+    "example": "He worked as a spy during the war.",
+    "exampleCn": "战争期间他当间谍。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5158,
+    "word": "scout",
+    "phonetic": "skaʊt",
+    "pos": "n.",
+    "meaning": "侦察兵/童子军",
+    "example": "The scout reported enemy movements to the commander.",
+    "exampleCn": "侦察兵向指挥官报告了敌军的动向。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5159,
+    "word": "soldier",
+    "phonetic": "ˈsəʊldʒə",
+    "pos": "n.",
+    "meaning": "士兵/军人",
+    "example": "The soldier fought bravely on the front line.",
+    "exampleCn": "士兵在前线英勇作战。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  },
+  {
+    "id": 5160,
+    "word": "veteran",
+    "phonetic": "ˈvetərən",
+    "pos": "n.",
+    "meaning": "老兵/老手",
+    "example": "He is a veteran of two world wars.",
+    "exampleCn": "他是两次世界大战的老兵。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
+  }
+]

@@ -26,10 +26,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 311,
@@ -198,10 +203,15 @@
     "exampleCn": "她是这项奖的唯一获奖者。/我鞋子的鞋底磨坏了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 1049,
@@ -228,10 +238,15 @@
     "exampleCn": "这座桥连接着两个城镇。/我没法把他的名字和长相对上。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 1051,
@@ -258,10 +273,15 @@
     "exampleCn": "她说服我加入了这个俱乐部。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 1053,
@@ -273,10 +293,15 @@
     "exampleCn": "她的声音充满了感情。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 1054,
@@ -468,10 +493,15 @@
     "exampleCn": "她在面试前擦亮了鞋子。/最终报告还需要再润色一下。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 1065,
@@ -568,10 +598,15 @@
     "exampleCn": "医生敦促人们定期锻炼。/她突然有种想笑的冲动。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 1071,
@@ -900,10 +935,15 @@
     "exampleCn": "别人在讲话时请不要打断。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 1090,
@@ -915,10 +955,15 @@
     "exampleCn": "用干净的布把桌子擦一擦。/把屏幕快速擦一下。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 1091,
@@ -1167,10 +1212,15 @@
     "exampleCn": "我对这个计划有个大致了解。/将军向士兵们发表讲话。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 1107,
@@ -1279,7 +1329,8 @@
     "list": "7",
     "ieltsList": "23",
     "ieltsLists": [
-      "23"
+      "23",
+      "55"
     ]
   },
   {
@@ -1407,10 +1458,15 @@
     "exampleCn": "巨大的响声把孩子们吓坏了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 1121,

@@ -298,7 +298,11 @@
     ],
     "level": "3",
     "list": "8",
-    "ieltsList": "9"
+    "ieltsList": "9",
+    "ieltsLists": [
+      "9",
+      "48"
+    ]
   },
   {
     "id": 1153,
@@ -510,10 +514,15 @@
     "exampleCn": "我倾向于同意这个提议。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
   },
   {
     "id": 1165,
@@ -670,10 +679,15 @@
     "exampleCn": "这部小说探讨了离婚带来的情感影响。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 1174,
@@ -1055,10 +1069,15 @@
     "exampleCn": "请按日期整理这些文件。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 1196,
@@ -1120,10 +1139,15 @@
     "exampleCn": "这些结果反映了社会最近的变化。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 1200,
@@ -1150,10 +1174,15 @@
     "exampleCn": "他们无视了警告标志。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 1202,
@@ -1180,10 +1209,15 @@
     "exampleCn": "这种治疗可能延长病人的生命。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 1204,
@@ -1570,10 +1604,15 @@
     "exampleCn": "他试图掩饰自己的失望。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 1227,
@@ -1640,10 +1679,15 @@
     "exampleCn": "学生进入实验室前必须获得许可。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 1231,

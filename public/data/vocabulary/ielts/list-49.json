@@ -1,0 +1,658 @@
+[
+  {
+    "id": 813,
+    "word": "generation",
+    "phonetic": "/ˌdʒenəˈreɪʃn/",
+    "pos": "n.",
+    "meaning": "一代；产生；发电",
+    "example": "The younger generation is different.",
+    "exampleCn": "年轻一代不一样。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 829,
+    "word": "relative",
+    "phonetic": "/ˈrelətɪv/",
+    "pos": "adj./n.",
+    "meaning": "相对的/亲戚",
+    "example": "Success is relative.",
+    "exampleCn": "成功是相对的。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 1249,
+    "word": "folk",
+    "phonetic": "/foʊk/",
+    "pos": "n./adj.",
+    "meaning": "人们；民间的/民俗的",
+    "example": "Folk music remains popular in the region.",
+    "exampleCn": "民间音乐在这个地区仍然很受欢迎。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 1562,
+    "word": "adolescence",
+    "phonetic": "/ˌædəˈlesns/",
+    "pos": "n.",
+    "meaning": "青春期/青少年时期",
+    "example": "Adolescence is a period of rapid physical and emotional change.",
+    "exampleCn": "青春期是身体和情感快速变化的时期。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 1631,
+    "word": "intimate",
+    "phonetic": "/ˈɪntɪmət/",
+    "pos": "adj./v.",
+    "meaning": "亲密的/私人的/暗示",
+    "example": "The author gives an intimate account of village life.",
+    "exampleCn": "作者对乡村生活进行了亲切而细致的描述。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 2039,
+    "word": "embryo",
+    "phonetic": "/ˈembriˌoʊ/",
+    "pos": "n.",
+    "meaning": "胚胎/初期阶段",
+    "example": "The embryo develops rapidly during the early stage.",
+    "exampleCn": "胚胎在早期阶段迅速发育。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 2700,
+    "word": "sibling",
+    "phonetic": "/ˈsɪblɪŋ/",
+    "pos": "n.",
+    "meaning": "兄弟姐妹",
+    "example": "Each sibling inherited part of the farm.",
+    "exampleCn": "每个兄弟姐妹都继承了农场的一部分。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 3052,
+    "word": "successor",
+    "phonetic": "/səkˈsesər/",
+    "pos": "n.",
+    "meaning": "继任者/接替者/后续事物",
+    "example": "The company named her as the successor to the former director.",
+    "exampleCn": "公司任命她为前任主管的继任者。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 3143,
+    "word": "juvenile",
+    "phonetic": "/ˈdʒuːvənaɪl/",
+    "pos": "adj./n.",
+    "meaning": "青少年的/幼稚的/少年",
+    "example": "Juvenile animals are often more vulnerable to predators.",
+    "exampleCn": "幼年动物通常更容易受到捕食者攻击。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5161,
+    "word": "pioneer",
+    "phonetic": "ˌpaɪəˈnɪə",
+    "pos": "n.",
+    "meaning": "先驱/开拓者",
+    "example": "She was a pioneer in the field of computer science.",
+    "exampleCn": "她是计算机科学领域的先驱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5162,
+    "word": "prophet",
+    "phonetic": "ˈprɒfɪt",
+    "pos": "n.",
+    "meaning": "先知/预言者",
+    "example": "The prophet warned the people of the coming disaster.",
+    "exampleCn": "先知警告人们即将到来的灾难。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5163,
+    "word": "herald",
+    "phonetic": "ˈherəld",
+    "pos": "n./v.",
+    "meaning": "先驱/通报",
+    "example": "The invention of the telephone heralded a new era of communication.",
+    "exampleCn": "电话的发明预示了通信新时代的到来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5164,
+    "word": "heir",
+    "phonetic": "eə",
+    "pos": "n.",
+    "meaning": "继承人/后嗣",
+    "example": "The prince is the heir to the throne.",
+    "exampleCn": "王子是王位继承人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5165,
+    "word": "surname",
+    "phonetic": "ˈsɜːneɪm",
+    "pos": "n.",
+    "meaning": "姓氏/姓",
+    "example": "What is your surname?",
+    "exampleCn": "你姓什么？",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5166,
+    "word": "gender",
+    "phonetic": "ˈdʒendə",
+    "pos": "n.",
+    "meaning": "性别",
+    "example": "Gender equality is an important social issue.",
+    "exampleCn": "性别平等是一个重要的社会议题。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5167,
+    "word": "female",
+    "phonetic": "ˈfiːmeɪl",
+    "pos": "adj./n.",
+    "meaning": "女性的/女性",
+    "example": "She is the first female president of the country.",
+    "exampleCn": "她是该国第一位女总统。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5168,
+    "word": "couple",
+    "phonetic": "ˈkʌpl",
+    "pos": "n.",
+    "meaning": "一对/夫妇",
+    "example": "A young couple moved into the house next door.",
+    "exampleCn": "一对年轻夫妇搬进了隔壁的房子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5169,
+    "word": "spouse",
+    "phonetic": "spaʊs",
+    "pos": "n.",
+    "meaning": "配偶/丈夫或妻子",
+    "example": "Employees and their spouses are invited to the dinner.",
+    "exampleCn": "员工和他们的配偶受邀参加晚宴。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5170,
+    "word": "grandfather",
+    "phonetic": "ˈɡrænfɑːðə",
+    "pos": "n.",
+    "meaning": "祖父/外祖父",
+    "example": "His grandfather served in the army during the war.",
+    "exampleCn": "他的祖父战时在军队服役。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5171,
+    "word": "father-in-law",
+    "phonetic": "ˈfɑːðər ɪn lɔː",
+    "pos": "n.",
+    "meaning": "岳父/公公",
+    "example": "He gets along well with his father-in-law.",
+    "exampleCn": "他和岳父相处得很好。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5172,
+    "word": "cousin",
+    "phonetic": "ˈkʌzn",
+    "pos": "n.",
+    "meaning": "堂兄弟姐妹/表兄弟姐妹",
+    "example": "My cousin lives in Australia.",
+    "exampleCn": "我的表兄住在澳大利亚。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5173,
+    "word": "nephew",
+    "phonetic": "ˈnefjuː",
+    "pos": "n.",
+    "meaning": "侄子/外甥",
+    "example": "Her nephew is studying medicine at university.",
+    "exampleCn": "她的侄子正在大学里学医。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5174,
+    "word": "niece",
+    "phonetic": "niːs",
+    "pos": "n.",
+    "meaning": "侄女/外甥女",
+    "example": "He bought a birthday present for his niece.",
+    "exampleCn": "他给侄女买了一份生日礼物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5175,
+    "word": "infant",
+    "phonetic": "ˈɪnfənt",
+    "pos": "n.",
+    "meaning": "婴儿/幼儿",
+    "example": "The infant slept peacefully in the cot.",
+    "exampleCn": "婴儿在婴儿床里安详地睡着。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5176,
+    "word": "orphan",
+    "phonetic": "ˈɔːfn",
+    "pos": "n.",
+    "meaning": "孤儿/孤儿院",
+    "example": "She was left an orphan at the age of six.",
+    "exampleCn": "她六岁时成了孤儿。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5177,
+    "word": "youngster",
+    "phonetic": "ˈjʌŋstə",
+    "pos": "n.",
+    "meaning": "年轻人/青年",
+    "example": "The club offers activities for youngsters.",
+    "exampleCn": "俱乐部为年轻人提供活动。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5178,
+    "word": "youth",
+    "phonetic": "juːθ",
+    "pos": "n.",
+    "meaning": "青年/青春",
+    "example": "He spent his youth in a small village.",
+    "exampleCn": "他在一个小村庄度过了青春时光。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5179,
+    "word": "gang",
+    "phonetic": "ɡæŋ",
+    "pos": "n.",
+    "meaning": "帮派/团伙",
+    "example": "A gang of thieves was arrested by the police.",
+    "exampleCn": "一伙小偷被警方逮捕了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5180,
+    "word": "kin",
+    "phonetic": "kɪn",
+    "pos": "n.",
+    "meaning": "亲属/亲戚",
+    "example": "She invited all her kin to the wedding.",
+    "exampleCn": "她邀请了所有亲属来参加婚礼。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5181,
+    "word": "relate",
+    "phonetic": "rɪˈleɪt",
+    "pos": "v.",
+    "meaning": "联系/叙述",
+    "example": "Can you relate to what she is going through?",
+    "exampleCn": "你能理解她正在经历的事情吗？",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5182,
+    "word": "beloved",
+    "phonetic": "bɪˈlʌvɪd",
+    "pos": "adj.",
+    "meaning": "心爱的/钟爱的",
+    "example": "She was a beloved teacher to all her students.",
+    "exampleCn": "她是所有学生敬爱的老师。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5183,
+    "word": "hostess",
+    "phonetic": "ˈhəʊstɪs",
+    "pos": "n.",
+    "meaning": "女主人/女主持人",
+    "example": "The hostess welcomed the guests warmly.",
+    "exampleCn": "女主人热情地欢迎了客人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5184,
+    "word": "landlady",
+    "phonetic": "ˈlændleɪdi",
+    "pos": "n.",
+    "meaning": "女房东",
+    "example": "The landlady fixed the broken window quickly.",
+    "exampleCn": "女房东很快修好了破窗户。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5185,
+    "word": "mistress",
+    "phonetic": "ˈmɪstrɪs",
+    "pos": "n.",
+    "meaning": "女主人/情妇",
+    "example": "The dog obeyed its mistress instantly.",
+    "exampleCn": "狗立刻就服从了它的女主人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5186,
+    "word": "widow",
+    "phonetic": "ˈwɪdəʊ",
+    "pos": "n.",
+    "meaning": "寡妇/遗孀",
+    "example": "The widow lived alone after her husband died.",
+    "exampleCn": "丈夫去世后遗孀独自生活。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5187,
+    "word": "maid",
+    "phonetic": "meɪd",
+    "pos": "n.",
+    "meaning": "女仆/侍女",
+    "example": "The maid cleaned the rooms every morning.",
+    "exampleCn": "女仆每天早上打扫房间。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  },
+  {
+    "id": 5188,
+    "word": "maiden",
+    "phonetic": "ˈmeɪdn",
+    "pos": "n./adj.",
+    "meaning": "少女/处女的",
+    "example": "The young maiden lived in a cottage by the forest.",
+    "exampleCn": "年轻少女住在森林边的一间小屋里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
+  }
+]

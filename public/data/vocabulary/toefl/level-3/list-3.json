@@ -546,10 +546,15 @@
     "exampleCn": "委员会昨天开会了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 699,
@@ -561,10 +566,15 @@
     "exampleCn": "他决定撤回申请。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 700,
@@ -576,10 +586,15 @@
     "exampleCn": "两辆车相撞了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 701,
@@ -707,10 +722,15 @@
     "exampleCn": "心脏是重要器官。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 708,
@@ -1313,7 +1333,8 @@
     "list": "3",
     "ieltsList": "29",
     "ieltsLists": [
-      "29"
+      "29",
+      "52"
     ]
   },
   {
@@ -1426,10 +1447,15 @@
     "exampleCn": "需要时寻求帮助。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 752,
@@ -1491,10 +1517,15 @@
     "exampleCn": "他坚称自己无罪。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 756,

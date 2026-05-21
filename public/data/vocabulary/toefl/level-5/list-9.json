@@ -99,10 +99,15 @@
     "exampleCn": "新政策推翻了之前的决定。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 3208,
@@ -114,10 +119,15 @@
     "exampleCn": "游客们惊叹于这座古桥的工程技术。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 3209,
@@ -515,10 +525,15 @@
     "exampleCn": "公司植树来抵消碳排放。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 3234,
@@ -897,7 +912,8 @@
     "list": "9",
     "ieltsList": "38",
     "ieltsLists": [
-      "38"
+      "38",
+      "50"
     ]
   },
   {
@@ -1155,10 +1171,15 @@
     "exampleCn": "孩子静静地凝视着星星。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 3275,

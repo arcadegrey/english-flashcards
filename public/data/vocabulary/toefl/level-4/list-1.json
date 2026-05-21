@@ -26,10 +26,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 266,
@@ -161,10 +166,15 @@
     "exampleCn": "有机物能改善土壤质量。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 1440,
@@ -406,10 +416,15 @@
     "exampleCn": "公司聘请了一名顾问来改进电脑系统。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 1454,
@@ -436,10 +451,15 @@
     "exampleCn": "气温突然下降可能会触发植物进入休眠。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 1456,
@@ -611,10 +631,15 @@
     "exampleCn": "公司在这个项目的成功中有很大的利害关系。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 1467,
@@ -806,10 +831,15 @@
     "exampleCn": "船长试图驾驶船只避开礁石。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 1479,
@@ -951,10 +981,15 @@
     "exampleCn": "小说中的女主角拒绝放弃独立。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 1488,
@@ -1203,10 +1238,15 @@
     "exampleCn": "客观的报告基于证据而不是观点。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 1504,
@@ -1218,10 +1258,15 @@
     "exampleCn": "游客可以从山上瞥见老城区。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 1505,
@@ -1457,10 +1502,15 @@
     "exampleCn": "工人们试图修复受损的画作。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 1519,

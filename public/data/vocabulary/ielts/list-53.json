@@ -1,0 +1,1116 @@
+[
+  {
+    "id": 114,
+    "word": "allure",
+    "phonetic": "/əˈlʊr/",
+    "pos": "v./n.",
+    "meaning": "诱惑，吸引",
+    "example": "The city's nightlife has great allure.",
+    "exampleCn": "这座城市的夜生活很有吸引力。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 179,
+    "word": "assign",
+    "phonetic": "/əˈsaɪn/",
+    "pos": "v.",
+    "meaning": "分配/指定/布置",
+    "example": "The teacher assigned a research project to the class.",
+    "exampleCn": "老师给全班布置了一项研究项目。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "21",
+    "ieltsLists": [
+      "21",
+      "53"
+    ]
+  },
+  {
+    "id": 183,
+    "word": "assure",
+    "phonetic": "/əˈʃʊr/",
+    "pos": "v.",
+    "meaning": "保证，确保",
+    "example": "I assure you everything will be fine.",
+    "exampleCn": "我向你保证一切都会好的。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 189,
+    "word": "attempt",
+    "phonetic": "/əˈtempt/",
+    "pos": "n./v.",
+    "meaning": "尝试，企图",
+    "example": "She made an attempt to solve the problem./He attempted to climb the mountain alone.",
+    "exampleCn": "她试图解决这个问题。/他试着独自攀登那座山。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 529,
+    "word": "conduct",
+    "phonetic": "/kənˈdʌkt/",
+    "pos": "v.",
+    "meaning": "进行；实施；引导",
+    "example": "The experiment was conducted carefully.",
+    "exampleCn": "实验被仔细地进行。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "40",
+    "ieltsLists": [
+      "40",
+      "53"
+    ]
+  },
+  {
+    "id": 655,
+    "word": "fulfil",
+    "phonetic": "/fʊlˈfɪl/",
+    "pos": "v.",
+    "meaning": "履行；实现；满足",
+    "example": "He fulfilled his promise.",
+    "exampleCn": "他履行了他的承诺。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 812,
+    "word": "distribute",
+    "phonetic": "/dɪˈstrɪbjuːt/",
+    "pos": "v.",
+    "meaning": "分发；分配；分布",
+    "example": "Distribute the handouts.",
+    "exampleCn": "分发讲义。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 902,
+    "word": "tempt",
+    "phonetic": "/tempt/",
+    "pos": "v.",
+    "meaning": "诱惑；引诱",
+    "example": "The smell of fresh bread tempted me.",
+    "exampleCn": "新鲜面包的香味诱惑了我。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 923,
+    "word": "explore",
+    "phonetic": "/ɪkˈsplɔːr/",
+    "pos": "v.",
+    "meaning": "探索；探究",
+    "example": "The team went out to explore the island.",
+    "exampleCn": "队伍出发去探索这座岛屿。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 1052,
+    "word": "convince",
+    "phonetic": "/kənˈvɪns/",
+    "pos": "v.",
+    "meaning": "说服，使信服",
+    "example": "She convinced me to join the club.",
+    "exampleCn": "她说服我加入了这个俱乐部。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 1120,
+    "word": "terrify",
+    "phonetic": "/ˈterɪfaɪ/",
+    "pos": "v.",
+    "meaning": "使恐惧",
+    "example": "The loud noise terrified the children.",
+    "exampleCn": "巨大的响声把孩子们吓坏了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 1195,
+    "word": "sort",
+    "phonetic": "/sɔːrt/",
+    "pos": "v./n.",
+    "meaning": "分类；整理/种类",
+    "example": "Please sort the files by date.",
+    "exampleCn": "请按日期整理这些文件。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 1226,
+    "word": "conceal",
+    "phonetic": "/kənˈsiːl/",
+    "pos": "v.",
+    "meaning": "隐藏；隐瞒",
+    "example": "He tried to conceal his disappointment.",
+    "exampleCn": "他试图掩饰自己的失望。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 1266,
+    "word": "cope",
+    "phonetic": "/koʊp/",
+    "pos": "v.",
+    "meaning": "应对；处理",
+    "example": "Many families struggle to cope with rising costs.",
+    "exampleCn": "许多家庭难以应对不断上涨的成本。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 1596,
+    "word": "undo",
+    "phonetic": "/ʌnˈduː/",
+    "pos": "v.",
+    "meaning": "撤销/解开/破坏",
+    "example": "A single mistake can undo months of careful work.",
+    "exampleCn": "一个错误可能会毁掉数月的细致工作。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 1600,
+    "word": "flee",
+    "phonetic": "/fliː/",
+    "pos": "v.",
+    "meaning": "逃离/逃跑",
+    "example": "Many residents had to flee the area after the flood.",
+    "exampleCn": "洪水过后，许多居民不得不逃离该地区。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 1632,
+    "word": "exploit",
+    "phonetic": "/ɪkˈsplɔɪt/",
+    "pos": "v./n.",
+    "meaning": "利用/剥削/英勇事迹",
+    "example": "Companies should not exploit workers for cheap labor.",
+    "exampleCn": "公司不应该为了廉价劳动力而剥削工人。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 1659,
+    "word": "deviate",
+    "phonetic": "/ˈdiːvieɪt/",
+    "pos": "v.",
+    "meaning": "偏离/背离",
+    "example": "Do not deviate from the instructions during the experiment.",
+    "exampleCn": "实验过程中不要偏离说明。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 1712,
+    "word": "expel",
+    "phonetic": "/ɪkˈspel/",
+    "pos": "v.",
+    "meaning": "驱逐/排出/开除",
+    "example": "The school may expel students who break serious rules.",
+    "exampleCn": "学校可能会开除严重违规的学生。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 1800,
+    "word": "omit",
+    "phonetic": "/oʊˈmɪt/",
+    "pos": "v.",
+    "meaning": "省略/遗漏",
+    "example": "Do not omit important details from the summary.",
+    "exampleCn": "不要从摘要中遗漏重要细节。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 2070,
+    "word": "exclude",
+    "phonetic": "/ɪkˈskluːd/",
+    "pos": "v.",
+    "meaning": "排除/不包括/拒绝进入",
+    "example": "The survey excluded incomplete responses.",
+    "exampleCn": "这项调查排除了不完整的回答。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 2182,
+    "word": "strive",
+    "phonetic": "/straɪv/",
+    "pos": "v.",
+    "meaning": "努力/奋斗/力争",
+    "example": "Students should strive to improve their writing skills.",
+    "exampleCn": "学生应该努力提高写作能力。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 2312,
+    "word": "exert",
+    "phonetic": "/ɪɡˈzɜːrt/",
+    "pos": "v.",
+    "meaning": "施加/运用/努力",
+    "example": "The moon exerts a force on Earth's oceans.",
+    "exampleCn": "月球对地球海洋施加引力。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 2343,
+    "word": "undertake",
+    "phonetic": "/ˌʌndərˈteɪk/",
+    "pos": "v.",
+    "meaning": "承担/从事/开始进行",
+    "example": "The university will undertake a new research project.",
+    "exampleCn": "这所大学将开展一项新的研究项目。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 2367,
+    "word": "panic",
+    "phonetic": "/ˈpænɪk/",
+    "pos": "n./v.",
+    "meaning": "恐慌/惊慌",
+    "example": "People began to panic when the alarm sounded.",
+    "exampleCn": "警报响起时，人们开始恐慌。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 2517,
+    "word": "designate",
+    "phonetic": "/ˈdezɪɡneɪt/",
+    "pos": "v./adj.",
+    "meaning": "指定/指派/指定的",
+    "example": "The area was designated as a national park.",
+    "exampleCn": "该地区被指定为国家公园。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 2738,
+    "word": "induce",
+    "phonetic": "/ɪnˈduːs/",
+    "pos": "v.",
+    "meaning": "引起/诱导/劝使",
+    "example": "Stress can induce headaches in some people.",
+    "exampleCn": "压力会引起一些人头痛。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 2915,
+    "word": "loom",
+    "phonetic": "/luːm/",
+    "pos": "v./n.",
+    "meaning": "隐约出现/逼近/织布机",
+    "example": "Dark clouds began to loom over the city.",
+    "exampleCn": "乌云开始在城市上空逼近。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 2941,
+    "word": "convict",
+    "phonetic": "/kənˈvɪkt/",
+    "pos": "v./n.",
+    "meaning": "定罪/证明有罪/罪犯",
+    "example": "The court convicted him of fraud.",
+    "exampleCn": "法院判定他犯有欺诈罪。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 3113,
+    "word": "invoke",
+    "phonetic": "/ɪnˈvoʊk/",
+    "pos": "v.",
+    "meaning": "援引/调用/唤起",
+    "example": "The lawyer invoked an earlier decision to support her argument.",
+    "exampleCn": "律师援引早先的判决来支持她的论点。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 3207,
+    "word": "reverse",
+    "phonetic": "/rɪˈvɜːrs/",
+    "pos": "v./adj./n.",
+    "meaning": "使反转/撤销/相反的/背面",
+    "example": "The new policy reversed the previous decision.",
+    "exampleCn": "新政策推翻了之前的决定。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 3651,
+    "word": "range",
+    "phonetic": "reɪndʒ",
+    "pos": "n.",
+    "meaning": "山脉/范围/幅度",
+    "example": "The mountain range stretches for hundreds of miles.",
+    "exampleCn": "这条山脉绵延数百英里。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "3",
+    "ieltsLists": [
+      "3",
+      "53"
+    ]
+  },
+  {
+    "id": 5275,
+    "word": "bully",
+    "phonetic": "ˈbʊli",
+    "pos": "v./n.",
+    "meaning": "欺凌/欺负/恶霸",
+    "example": "The older boys bullied him at school.",
+    "exampleCn": "那些大男生在学校里欺负他。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5276,
+    "word": "terrifying",
+    "phonetic": "ˈterɪfaɪɪŋ",
+    "pos": "adj.",
+    "meaning": "令人恐惧的/可怕的",
+    "example": "The roller coaster was a terrifying experience.",
+    "exampleCn": "过山车是一段可怕的经历。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5277,
+    "word": "revenge",
+    "phonetic": "rɪˈvendʒ",
+    "pos": "n./v.",
+    "meaning": "报仇/复仇",
+    "example": "He swore revenge on those who had betrayed him.",
+    "exampleCn": "他发誓对背叛他的人进行报复。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5278,
+    "word": "kidnap",
+    "phonetic": "ˈkɪdnæp",
+    "pos": "v.",
+    "meaning": "绑架/劫持",
+    "example": "The businessman's son was kidnapped for ransom.",
+    "exampleCn": "商人的儿子被绑架索要赎金。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5279,
+    "word": "hijack",
+    "phonetic": "ˈhaɪdʒæk",
+    "pos": "v.",
+    "meaning": "劫持/劫机",
+    "example": "Two men tried to hijack the plane.",
+    "exampleCn": "两名男子试图劫持飞机。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5280,
+    "word": "smuggle",
+    "phonetic": "ˈsmʌɡl",
+    "pos": "v.",
+    "meaning": "走私/偷运",
+    "example": "They were caught smuggling drugs across the border.",
+    "exampleCn": "他们被查获偷运毒品越过边境。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5281,
+    "word": "strangle",
+    "phonetic": "ˈstræŋɡl",
+    "pos": "v.",
+    "meaning": "勒死/扼杀/抑制",
+    "example": "The vine was strangling the other plants.",
+    "exampleCn": "藤蔓正在扼杀其他植物。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5282,
+    "word": "massacre",
+    "phonetic": "ˈmæsəkə",
+    "pos": "n./v.",
+    "meaning": "大屠杀/残杀",
+    "example": "The massacre of civilians shocked the world.",
+    "exampleCn": "对平民的大屠杀震惊了世界。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5283,
+    "word": "decimation",
+    "phonetic": "ˌdesɪˈmeɪʃn",
+    "pos": "n.",
+    "meaning": "大量毁灭/大批杀害",
+    "example": "The plague caused the decimation of the population.",
+    "exampleCn": "瘟疫造成了人口的大量死亡。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5284,
+    "word": "intervene",
+    "phonetic": "ˌɪntəˈviːn",
+    "pos": "v.",
+    "meaning": "干预/介入/插手",
+    "example": "The teacher had to intervene when the fight broke out.",
+    "exampleCn": "打架发生时老师不得不介入。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5285,
+    "word": "impede",
+    "phonetic": "ɪmˈpiːd",
+    "pos": "v.",
+    "meaning": "阻碍/妨碍",
+    "example": "The heavy snow impeded the rescue efforts.",
+    "exampleCn": "大雪阻碍了救援工作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5286,
+    "word": "bait",
+    "phonetic": "beɪt",
+    "pos": "n.",
+    "meaning": "诱饵/诱惑",
+    "example": "The fish took the bait and was caught.",
+    "exampleCn": "鱼咬了饵被抓住了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5287,
+    "word": "despatch",
+    "phonetic": "dɪˈspætʃ",
+    "pos": "v.",
+    "meaning": "派遣/发送/调遣",
+    "example": "The message was despatched to all branches.",
+    "exampleCn": "信息被发送到了所有分部。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5288,
+    "word": "detach",
+    "phonetic": "dɪˈtætʃ",
+    "pos": "v.",
+    "meaning": "拆下/分离/派遣",
+    "example": "She detached the bottom part of the form.",
+    "exampleCn": "她撕下了表格的底部。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5289,
+    "word": "disguise",
+    "phonetic": "dɪsˈɡaɪz",
+    "pos": "v./n.",
+    "meaning": "伪装/假扮",
+    "example": "She disguised herself as a man to join the army.",
+    "exampleCn": "她女扮男装参了军。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5290,
+    "word": "refuse",
+    "phonetic": "rɪˈfjuːz",
+    "pos": "v.",
+    "meaning": "拒绝/回绝",
+    "example": "She refused to accept the money.",
+    "exampleCn": "她拒绝收下那笔钱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5291,
+    "word": "stipulate",
+    "phonetic": "ˈstɪpjʊleɪt",
+    "pos": "v.",
+    "meaning": "规定/约定",
+    "example": "The contract stipulates that all work must be completed by June.",
+    "exampleCn": "合同规定所有工作必须在六月前完成。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5292,
+    "word": "reassure",
+    "phonetic": "ˌriːəˈʃʊə",
+    "pos": "v.",
+    "meaning": "安慰/使安心",
+    "example": "The doctor reassured her that the surgery was safe.",
+    "exampleCn": "医生安抚她说手术是安全的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5293,
+    "word": "aspire",
+    "phonetic": "əˈspaɪə",
+    "pos": "v.",
+    "meaning": "渴望/追求/有志于",
+    "example": "She aspires to become a professional musician.",
+    "exampleCn": "她渴望成为一名专业音乐家。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5294,
+    "word": "desire",
+    "phonetic": "dɪˈzaɪə",
+    "pos": "n./v.",
+    "meaning": "渴望/愿望/欲望",
+    "example": "He had a strong desire to travel the world.",
+    "exampleCn": "他对环游世界有着强烈的渴望。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5295,
+    "word": "yearn",
+    "phonetic": "jɜːn",
+    "pos": "v.",
+    "meaning": "渴望/思慕/向往",
+    "example": "She yearned for her homeland after years abroad.",
+    "exampleCn": "在海外多年后她思念着故乡。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5296,
+    "word": "itch",
+    "phonetic": "ɪtʃ",
+    "pos": "n./v.",
+    "meaning": "痒/渴望/发痒",
+    "example": "The mosquito bite made her arm itch.",
+    "exampleCn": "蚊子咬的地方让她手臂发痒。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5297,
+    "word": "effort",
+    "phonetic": "ˈefət",
+    "pos": "n.",
+    "meaning": "努力/尽力",
+    "example": "The project required a great deal of effort.",
+    "exampleCn": "这个项目需要付出巨大的努力。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5298,
+    "word": "launch",
+    "phonetic": "lɔːntʃ",
+    "pos": "v.",
+    "meaning": "发射/启动/发起",
+    "example": "The company launched its new product last week.",
+    "exampleCn": "公司上周推出了新产品。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5299,
+    "word": "commence",
+    "phonetic": "kəˈmens",
+    "pos": "v.",
+    "meaning": "开始/着手",
+    "example": "The ceremony will commence at noon.",
+    "exampleCn": "仪式将于中午开始。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5300,
+    "word": "tackle",
+    "phonetic": "ˈtækl",
+    "pos": "v.",
+    "meaning": "处理/解决/抢球",
+    "example": "The government must tackle the problem of pollution.",
+    "exampleCn": "政府必须解决污染问题。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5301,
+    "word": "dispose",
+    "phonetic": "dɪˈspəʊz",
+    "pos": "v.",
+    "meaning": "处理/安排/处置",
+    "example": "Please dispose of your rubbish properly.",
+    "exampleCn": "请妥善处理你的垃圾。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  },
+  {
+    "id": 5302,
+    "word": "delete",
+    "phonetic": "dɪˈliːt",
+    "pos": "v.",
+    "meaning": "删除/抹去",
+    "example": "She accidentally deleted the file from her computer.",
+    "exampleCn": "她不慎从电脑上删除了该文件。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
+  }
+]

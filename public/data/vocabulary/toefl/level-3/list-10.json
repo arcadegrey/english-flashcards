@@ -384,10 +384,15 @@
     "exampleCn": "这两所大学启动了一个联合项目。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 1343,
@@ -1001,10 +1006,15 @@
     "exampleCn": "球队在决赛后庆祝胜利。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 1378,
@@ -1211,10 +1221,15 @@
     "exampleCn": "厨房上方的屋顶漏水了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 1390,
@@ -1256,10 +1271,15 @@
     "exampleCn": "一些细菌能够抵抗抗生素。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 1393,
@@ -1371,10 +1391,15 @@
     "exampleCn": "这个国家增加了军事开支。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 1400,
@@ -1602,10 +1627,15 @@
     "exampleCn": "这艘船在暴风雨中开始下沉。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 1414,

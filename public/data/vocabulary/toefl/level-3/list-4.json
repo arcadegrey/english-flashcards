@@ -47,10 +47,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 29,
@@ -142,10 +147,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet6"
+      "cet6",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 426,
@@ -328,10 +338,15 @@
     "exampleCn": "她瞥了一眼手表。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 778,
@@ -519,10 +534,15 @@
     "exampleCn": "事故发生在昨天。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 789,
@@ -934,10 +954,15 @@
     "exampleCn": "分发讲义。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 813,
@@ -949,10 +974,15 @@
     "exampleCn": "年轻一代不一样。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
   },
   {
     "id": 814,
@@ -979,10 +1009,15 @@
     "exampleCn": "医生检查了我的脉搏。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 816,
@@ -1049,10 +1084,15 @@
     "exampleCn": "魔鬼诱惑了他。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 820,
@@ -1214,10 +1254,15 @@
     "exampleCn": "成功是相对的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
   },
   {
     "id": 830,
@@ -1344,10 +1389,15 @@
     "exampleCn": "仔细执行计划。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 837,

@@ -152,10 +152,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 305,
@@ -265,10 +270,15 @@
     "exampleCn": "医生减少了剂量以避免副作用。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 1998,
@@ -606,10 +616,15 @@
     "exampleCn": "一队士兵守卫着这座桥。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 2019,
@@ -969,10 +984,15 @@
     "exampleCn": "胚胎在早期阶段迅速发育。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
   },
   {
     "id": 2040,
@@ -1281,10 +1301,15 @@
     "exampleCn": "这一发现被后来的事件所掩盖。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 2058,
@@ -1493,7 +1518,8 @@
     "list": "7",
     "ieltsList": "33",
     "ieltsLists": [
-      "33"
+      "33",
+      "48"
     ]
   },
   {
@@ -1506,10 +1532,15 @@
     "exampleCn": "这项调查排除了不完整的回答。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 2071,

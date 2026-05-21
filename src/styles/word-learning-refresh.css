@@ -1420,7 +1420,9 @@
 .selection-card--nation-government,
 .selection-card--society-economy,
 .selection-card--law-regulation,
-.selection-card--warfare-battlefield {
+.selection-card--warfare-battlefield,
+.selection-card--social-relationships,
+.selection-card--actions-behaviors {
   position: relative;
   min-height: 148px;
   overflow: hidden;
@@ -1553,6 +1555,20 @@
   --ielts-topic-hover-shadow: rgba(107, 128, 78, 0.3);
 }
 
+.selection-card--social-relationships {
+  border-color: rgba(184, 112, 91, 0.26);
+  --ielts-topic-bg: url('/images/ielts-social-relationships-bg.webp');
+  --ielts-topic-shadow: rgba(184, 112, 91, 0.18);
+  --ielts-topic-hover-shadow: rgba(184, 112, 91, 0.3);
+}
+
+.selection-card--actions-behaviors {
+  border-color: rgba(69, 137, 154, 0.26);
+  --ielts-topic-bg: url('/images/ielts-actions-behaviors-bg.webp');
+  --ielts-topic-shadow: rgba(69, 137, 154, 0.18);
+  --ielts-topic-hover-shadow: rgba(69, 137, 154, 0.3);
+}
+
 .selection-card--nature-geography,
 .selection-card--plant-research,
 .selection-card--animal-conservation,
@@ -1570,7 +1586,9 @@
 .selection-card--nation-government,
 .selection-card--society-economy,
 .selection-card--law-regulation,
-.selection-card--warfare-battlefield {
+.selection-card--warfare-battlefield,
+.selection-card--social-relationships,
+.selection-card--actions-behaviors {
   background:
     linear-gradient(180deg, rgba(12, 40, 54, 0.16), rgba(5, 22, 31, 0.52)),
     var(--ielts-topic-bg) center / cover no-repeat;
@@ -1594,7 +1612,9 @@
 .selection-card--nation-government::after,
 .selection-card--society-economy::after,
 .selection-card--law-regulation::after,
-.selection-card--warfare-battlefield::after {
+.selection-card--warfare-battlefield::after,
+.selection-card--social-relationships::after,
+.selection-card--actions-behaviors::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -1637,7 +1657,11 @@
 .selection-card--law-regulation:hover,
 .selection-card--law-regulation.is-active,
 .selection-card--warfare-battlefield:hover,
-.selection-card--warfare-battlefield.is-active {
+.selection-card--warfare-battlefield.is-active,
+.selection-card--social-relationships:hover,
+.selection-card--social-relationships.is-active,
+.selection-card--actions-behaviors:hover,
+.selection-card--actions-behaviors.is-active {
   border-color: rgba(255, 255, 255, 0.48);
   background:
     linear-gradient(180deg, rgba(10, 34, 48, 0.12), rgba(3, 18, 27, 0.46)),
@@ -1698,7 +1722,13 @@
 .selection-card--law-regulation .toefl-selection-meta,
 .selection-card--warfare-battlefield .reading-category-name,
 .selection-card--warfare-battlefield .reading-category-count,
-.selection-card--warfare-battlefield .toefl-selection-meta {
+.selection-card--warfare-battlefield .toefl-selection-meta,
+.selection-card--social-relationships .reading-category-name,
+.selection-card--social-relationships .reading-category-count,
+.selection-card--social-relationships .toefl-selection-meta,
+.selection-card--actions-behaviors .reading-category-name,
+.selection-card--actions-behaviors .reading-category-count,
+.selection-card--actions-behaviors .toefl-selection-meta {
   color: #ffffff;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.34);
 }
@@ -1720,7 +1750,9 @@
 .selection-card--nation-government .toefl-selection-meta,
 .selection-card--society-economy .toefl-selection-meta,
 .selection-card--law-regulation .toefl-selection-meta,
-.selection-card--warfare-battlefield .toefl-selection-meta {
+.selection-card--warfare-battlefield .toefl-selection-meta,
+.selection-card--social-relationships .toefl-selection-meta,
+.selection-card--actions-behaviors .toefl-selection-meta {
   color: rgba(255, 255, 255, 0.86);
 }
 
@@ -3248,7 +3280,9 @@
   .selection-card--nation-government .reading-category-name,
   .selection-card--society-economy .reading-category-name,
   .selection-card--law-regulation .reading-category-name,
-  .selection-card--warfare-battlefield .reading-category-name {
+  .selection-card--warfare-battlefield .reading-category-name,
+  .selection-card--social-relationships .reading-category-name,
+  .selection-card--actions-behaviors .reading-category-name {
     display: block;
     max-width: 2em;
     line-height: 1.08;

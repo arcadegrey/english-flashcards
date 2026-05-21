@@ -1,18 +1,5 @@
 [
   {
-    "id": 1,
-    "word": "abandon",
-    "phonetic": "/əˈbændən/",
-    "pos": "v.",
-    "meaning": "放弃，抛弃；遗弃",
-    "example": "He decided to abandon the project due to lack of funding.",
-    "exampleCn": "由于缺乏资金，他决定放弃这个项目。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 2,
     "word": "ability",
     "phonetic": "/əˈbɪləti/",
@@ -104,19 +91,6 @@
     ]
   },
   {
-    "id": 49,
-    "word": "amaze",
-    "phonetic": "/əˈmeɪz/",
-    "pos": "v.",
-    "meaning": "使吃惊，使惊叹",
-    "example": "The magician's tricks amazed the audience.",
-    "exampleCn": "魔术师的魔术让观众惊叹不已。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 51,
     "word": "abide",
     "phonetic": "/əˈbaɪd/",
@@ -150,19 +124,6 @@
     "meaning": "成就，完成；技艺",
     "example": "Learning a language is a great accomplishment.",
     "exampleCn": "学习一门语言是一项伟大的成就。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 61,
-    "word": "accordance",
-    "phonetic": "/əˈkɔːrdns/",
-    "pos": "n.",
-    "meaning": "一致，和谐",
-    "example": "The work was done in accordance with the rules.",
-    "exampleCn": "工作是按照规则完成的。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -319,19 +280,6 @@
     "meaning": "成年人 (的)",
     "example": "Adults should set a good example.",
     "exampleCn": "成年人应该树立好榜样。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 89,
-    "word": "affection",
-    "phonetic": "/əˈfekʃn/",
-    "pos": "n.",
-    "meaning": "喜爱，钟爱",
-    "example": "She has great affection for her pets.",
-    "exampleCn": "她非常喜爱她的宠物。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -501,19 +449,6 @@
     "meaning": "津贴，零用钱",
     "example": "Children receive a weekly allowance.",
     "exampleCn": "孩子们每周都会收到零花钱。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 114,
-    "word": "allure",
-    "phonetic": "/əˈlʊr/",
-    "pos": "v./n.",
-    "meaning": "诱惑，吸引",
-    "example": "The city's nightlife has great allure.",
-    "exampleCn": "这座城市的夜生活很有吸引力。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -741,45 +676,6 @@
     ]
   },
   {
-    "id": 172,
-    "word": "arrange",
-    "phonetic": "/əˈreɪndʒ/",
-    "pos": "v.",
-    "meaning": "安排，整理",
-    "example": "She arranged the books on the shelf.",
-    "exampleCn": "她整理了架子上的书。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 183,
-    "word": "assure",
-    "phonetic": "/əˈʃʊr/",
-    "pos": "v.",
-    "meaning": "保证，确保",
-    "example": "I assure you everything will be fine.",
-    "exampleCn": "我向你保证一切都会好的。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 191,
-    "word": "attract",
-    "phonetic": "/əˈtrækt/",
-    "pos": "v.",
-    "meaning": "吸引",
-    "example": "The beautiful scenery attracts many tourists.",
-    "exampleCn": "美丽的风景吸引了许多游客。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 193,
     "word": "audience",
     "phonetic": "/ˈɔːdiəns/",
@@ -800,19 +696,6 @@
     "meaning": "平均；一般的",
     "example": "The average temperature is 25 degrees.",
     "exampleCn": "平均温度是25度。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 198,
-    "word": "avoid",
-    "phonetic": "/əˈvɔɪd/",
-    "pos": "v.",
-    "meaning": "避免，躲避",
-    "example": "You should avoid eating too much sugar.",
-    "exampleCn": "你应该避免吃太多糖。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -878,19 +761,6 @@
     "meaning": "海湾",
     "example": "The ship sailed into the bay.",
     "exampleCn": "船驶入海湾。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 219,
-    "word": "beard",
-    "phonetic": "/bɪrd/",
-    "pos": "n.",
-    "meaning": "胡须",
-    "example": "He grew a beard during the winter.",
-    "exampleCn": "他在冬天留了胡子。",
     "category": "daily",
     "categories": [
       "daily"
@@ -1131,32 +1001,6 @@
     ]
   },
   {
-    "id": 261,
-    "word": "bless",
-    "phonetic": "/bles/",
-    "pos": "v.",
-    "meaning": "祝福，保佑",
-    "example": "God bless you!",
-    "exampleCn": "上帝保佑你！",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 262,
-    "word": "blind",
-    "phonetic": "/blaɪnd/",
-    "pos": "adj.",
-    "meaning": "盲的；盲目的",
-    "example": "He is blind in one eye.",
-    "exampleCn": "他一只眼睛失明了。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 264,
     "word": "blog",
     "phonetic": "/blɒɡ/",
@@ -1229,19 +1073,6 @@
     "meaning": "炸弹",
     "example": "The bomb was defused by experts.",
     "exampleCn": "炸弹被专家拆除了。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 277,
-    "word": "bone",
-    "phonetic": "/boʊn/",
-    "pos": "n.",
-    "meaning": "骨头",
-    "example": "The dog buried a bone in the yard.",
-    "exampleCn": "狗在院子里埋了一根骨头。",
     "category": "daily",
     "categories": [
       "daily"
@@ -1360,19 +1191,6 @@
     "meaning": "男孩",
     "example": "The boy is playing in the park.",
     "exampleCn": "男孩正在公园里玩。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 294,
-    "word": "brain",
-    "phonetic": "/breɪn/",
-    "pos": "n.",
-    "meaning": "大脑，脑筋",
-    "example": "The brain controls the body.",
-    "exampleCn": "大脑控制着身体。",
     "category": "daily",
     "categories": [
       "daily"
@@ -1756,19 +1574,6 @@
     ]
   },
   {
-    "id": 363,
-    "word": "cancel",
-    "phonetic": "/ˈkænsl/",
-    "pos": "v.",
-    "meaning": "取消",
-    "example": "They canceled the meeting.",
-    "exampleCn": "他们取消了会议。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 366,
     "word": "candy",
     "phonetic": "/ˈkændi/",
@@ -1938,32 +1743,6 @@
     ]
   },
   {
-    "id": 390,
-    "word": "catch",
-    "phonetic": "/kætʃ/",
-    "pos": "v.",
-    "meaning": "抓住；赶上；感染",
-    "example": "I need to catch the bus.",
-    "exampleCn": "我需要赶公共汽车。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
-    "id": 394,
-    "word": "cause",
-    "phonetic": "/kɔːz/",
-    "pos": "n./v.",
-    "meaning": "原因；引起",
-    "example": "The cause of the fire is unknown.",
-    "exampleCn": "火灾原因不明。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
-    ]
-  },
-  {
     "id": 395,
     "word": "caution",
     "phonetic": "/ˈkɔːʃn/",
@@ -1974,19 +1753,6 @@
     "category": "cet6",
     "categories": [
       "cet6"
-    ]
-  },
-  {
-    "id": 398,
-    "word": "celebrate",
-    "phonetic": "/ˈselɪbreɪt/",
-    "pos": "v.",
-    "meaning": "庆祝",
-    "example": "We celebrate Christmas every year.",
-    "exampleCn": "我们每年都庆祝圣诞节。",
-    "category": "cet4",
-    "categories": [
-      "cet4"
     ]
   },
   {
@@ -2146,19 +1912,6 @@
     ]
   },
   {
-    "id": 427,
-    "word": "cheek",
-    "phonetic": "/tʃiːk/",
-    "pos": "n.",
-    "meaning": "脸颊",
-    "example": "She kissed him on the cheek.",
-    "exampleCn": "她亲了他的脸颊。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
     "id": 428,
     "word": "cheer",
     "phonetic": "/tʃɪr/",
@@ -2179,19 +1932,6 @@
     "meaning": "化学的；化学品",
     "example": "Chemical reactions occur in the body.",
     "exampleCn": "化学反应发生在体内。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 434,
-    "word": "chest",
-    "phonetic": "/tʃest/",
-    "pos": "n.",
-    "meaning": "胸部；箱子",
-    "example": "He has pain in his chest.",
-    "exampleCn": "他胸部疼痛。",
     "category": "daily",
     "categories": [
       "daily"
@@ -2374,19 +2114,6 @@
     "meaning": "点击；咔哒声",
     "example": "Click the button to continue.",
     "exampleCn": "点击按钮继续。",
-    "category": "daily",
-    "categories": [
-      "daily"
-    ]
-  },
-  {
-    "id": 466,
-    "word": "client",
-    "phonetic": "/ˈklaɪənt/",
-    "pos": "n.",
-    "meaning": "客户",
-    "example": "The client was satisfied with the service.",
-    "exampleCn": "客户对服务很满意。",
     "category": "daily",
     "categories": [
       "daily"

@@ -88,10 +88,15 @@
     "exampleCn": "律师援引早先的判决来支持她的论点。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 3114,
@@ -557,10 +562,15 @@
     "exampleCn": "新证据可能会使旧理论失去作用。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 3143,
@@ -572,10 +582,15 @@
     "exampleCn": "幼年动物通常更容易受到捕食者攻击。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
   },
   {
     "id": 3144,
@@ -1158,10 +1173,15 @@
     "exampleCn": "营养物质主要在小肠中被吸收。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 3181,
@@ -1208,10 +1228,15 @@
     "exampleCn": "厚窗帘有助于减弱街上的噪音。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 3184,
@@ -1435,10 +1460,15 @@
     "exampleCn": "学校努力把科技融入日常课程。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 3198,

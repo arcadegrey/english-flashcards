@@ -42,10 +42,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 387,
@@ -92,10 +97,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 422,
@@ -108,10 +118,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 440,
@@ -312,10 +327,15 @@
     "exampleCn": "她对这个消息的反应让大家都很惊讶。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 868,
@@ -898,10 +918,15 @@
     "exampleCn": "新鲜面包的香味诱惑了我。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 903,
@@ -1132,10 +1157,15 @@
     "exampleCn": "那些山清晰可见。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 917,
@@ -1202,10 +1232,15 @@
     "exampleCn": "这则广告可能会误导顾客。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 921,
@@ -1247,10 +1282,15 @@
     "exampleCn": "队伍出发去探索这座岛屿。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 924,
@@ -1277,10 +1317,15 @@
     "exampleCn": "我提出一个不同的解决方案。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 926,
@@ -1449,10 +1494,15 @@
     "exampleCn": "他手腕上戴着一块表。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 936,

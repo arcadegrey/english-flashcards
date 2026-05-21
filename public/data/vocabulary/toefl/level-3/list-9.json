@@ -402,10 +402,15 @@
     "exampleCn": "民间音乐在这个地区仍然很受欢迎。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
   },
   {
     "id": 1250,
@@ -492,10 +497,15 @@
     "exampleCn": "这座城市明年将主办一次国际会议。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 1256,
@@ -662,10 +672,15 @@
     "exampleCn": "许多家庭难以应对不断上涨的成本。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 1267,
@@ -713,10 +728,15 @@
     "exampleCn": "这座纪念碑是为纪念士兵而建的。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 1270,

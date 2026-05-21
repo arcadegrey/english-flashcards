@@ -1,0 +1,1110 @@
+[
+  {
+    "id": 28,
+    "word": "adopt",
+    "phonetic": "/əˈdɒpt/",
+    "pos": "v.",
+    "meaning": "采用；收养；采纳",
+    "example": "They decided to adopt a child.",
+    "exampleCn": "他们决定收养一个孩子。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 63,
+    "word": "accustom",
+    "phonetic": "/əˈkʌstəm/",
+    "pos": "v.",
+    "meaning": "使习惯于",
+    "example": "New students need time to accustom themselves to the school.",
+    "exampleCn": "新学生需要时间使自己习惯学校。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 156,
+    "word": "applaud",
+    "phonetic": "/əˈplɔːd/",
+    "pos": "v.",
+    "meaning": "鼓掌/称赞",
+    "example": "The audience began to applaud after the speech.",
+    "exampleCn": "演讲结束后，观众开始鼓掌。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 218,
+    "word": "bear",
+    "phonetic": "/beə(r)/",
+    "pos": "v./n.",
+    "meaning": "承受；忍受；生（孩子）；熊",
+    "example": "I can't bear the pain.",
+    "exampleCn": "我忍受不了这疼痛。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8",
+      "51"
+    ]
+  },
+  {
+    "id": 270,
+    "word": "boast",
+    "phonetic": "/boʊst/",
+    "pos": "v./n.",
+    "meaning": "自夸/拥有/夸耀",
+    "example": "The city boasts several excellent museums.",
+    "exampleCn": "这座城市拥有几家很棒的博物馆。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 390,
+    "word": "catch",
+    "phonetic": "/kætʃ/",
+    "pos": "v.",
+    "meaning": "抓住；赶上；感染",
+    "example": "I need to catch the bus.",
+    "exampleCn": "我需要赶公共汽车。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 652,
+    "word": "behave",
+    "phonetic": "/bɪˈheɪv/",
+    "pos": "v.",
+    "meaning": "表现；举止；守规矩",
+    "example": "Children should behave well.",
+    "exampleCn": "孩子应该守规矩。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 755,
+    "word": "assert",
+    "phonetic": "/əˈsɜːt/",
+    "pos": "v.",
+    "meaning": "断言；主张；维护",
+    "example": "He asserted his innocence.",
+    "exampleCn": "他坚称自己无罪。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 777,
+    "word": "glance",
+    "phonetic": "/ɡlɑːns/",
+    "pos": "v./n.",
+    "meaning": "一瞥；扫视",
+    "example": "She glanced at her watch.",
+    "exampleCn": "她瞥了一眼手表。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 867,
+    "word": "reaction",
+    "phonetic": "/riˈækʃən/",
+    "pos": "n.",
+    "meaning": "反应",
+    "example": "Her reaction to the news surprised everyone.",
+    "exampleCn": "她对这个消息的反应让大家都很惊讶。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 956,
+    "word": "kneel",
+    "phonetic": "/niːl/",
+    "pos": "v.",
+    "meaning": "跪下，跪着",
+    "example": "The child knelt beside the bed to pray.",
+    "exampleCn": "那个孩子跪在床边祈祷。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 1070,
+    "word": "urge",
+    "phonetic": "/ɜːrdʒ/",
+    "pos": "v./n.",
+    "meaning": "敦促/强烈欲望",
+    "example": "Doctors urge people to exercise regularly./She felt an urge to laugh.",
+    "exampleCn": "医生敦促人们定期锻炼。/她突然有种想笑的冲动。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 1199,
+    "word": "reflect",
+    "phonetic": "/rɪˈflekt/",
+    "pos": "v.",
+    "meaning": "反映；反射；深思",
+    "example": "These results reflect recent changes in society.",
+    "exampleCn": "这些结果反映了社会最近的变化。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 1504,
+    "word": "glimpse",
+    "phonetic": "/ɡlɪmps/",
+    "pos": "n./v.",
+    "meaning": "一瞥/瞥见",
+    "example": "Visitors can glimpse the old city from the hill.",
+    "exampleCn": "游客可以从山上瞥见老城区。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 1660,
+    "word": "peer",
+    "phonetic": "/pɪr/",
+    "pos": "n./v.",
+    "meaning": "同龄人/同等者/仔细看",
+    "example": "Students often learn useful habits from their peers.",
+    "exampleCn": "学生经常从同龄人那里学到有用的习惯。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 1716,
+    "word": "hasten",
+    "phonetic": "/ˈheɪsən/",
+    "pos": "v.",
+    "meaning": "加速/催促",
+    "example": "The new evidence hastened the end of the debate.",
+    "exampleCn": "新的证据加速了辩论的结束。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 1722,
+    "word": "glare",
+    "phonetic": "/ɡler/",
+    "pos": "n./v.",
+    "meaning": "强光/怒视",
+    "example": "The glare from the sun made it hard to read the screen.",
+    "exampleCn": "太阳的强光使人难以看清屏幕。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 1757,
+    "word": "provoke",
+    "phonetic": "/prəˈvoʊk/",
+    "pos": "v.",
+    "meaning": "激起/挑衅",
+    "example": "The policy provoked a strong public reaction.",
+    "exampleCn": "这项政策激起了强烈的公众反应。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 1818,
+    "word": "nourish",
+    "phonetic": "/ˈnɜːrɪʃ/",
+    "pos": "v.",
+    "meaning": "滋养/培养",
+    "example": "Healthy food can nourish the body and improve concentration.",
+    "exampleCn": "健康的食物可以滋养身体并提高注意力。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 1977,
+    "word": "intake",
+    "phonetic": "/ˈɪnteɪk/",
+    "pos": "n.",
+    "meaning": "摄入量/吸入/接收人数",
+    "example": "The doctor advised him to reduce his sugar intake.",
+    "exampleCn": "医生建议他减少糖分摄入量。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 2194,
+    "word": "overtake",
+    "phonetic": "/ˌoʊvərˈteɪk/",
+    "pos": "v.",
+    "meaning": "超过/赶上/突然降临",
+    "example": "The runner tried to overtake the leader near the finish line.",
+    "exampleCn": "那名跑者试图在终点线附近超过领先者。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 2216,
+    "word": "react",
+    "phonetic": "/riˈækt/",
+    "pos": "v.",
+    "meaning": "反应/起反应",
+    "example": "Metals may react with oxygen in the air.",
+    "exampleCn": "金属可能会与空气中的氧气发生反应。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 2254,
+    "word": "tap",
+    "phonetic": "/tæp/",
+    "pos": "v./n.",
+    "meaning": "轻拍/水龙头/开发利用",
+    "example": "Please tap the screen to start the program.",
+    "exampleCn": "请轻点屏幕来启动程序。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "25",
+    "ieltsLists": [
+      "25",
+      "51"
+    ]
+  },
+  {
+    "id": 2344,
+    "word": "dispute",
+    "phonetic": "/dɪˈspjuːt/",
+    "pos": "n./v.",
+    "meaning": "争论/争端/质疑",
+    "example": "The two neighbors had a dispute about the fence.",
+    "exampleCn": "两位邻居因围栏问题发生争执。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 2972,
+    "word": "mow",
+    "phonetic": "/moʊ/",
+    "pos": "v.",
+    "meaning": "割草/收割",
+    "example": "They mow the lawn every Saturday.",
+    "exampleCn": "他们每周六修剪草坪。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 3274,
+    "word": "gaze",
+    "phonetic": "/ɡeɪz/",
+    "pos": "v./n.",
+    "meaning": "凝视/注视",
+    "example": "The child gazed at the stars in silence.",
+    "exampleCn": "孩子静静地凝视着星星。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 3329,
+    "word": "vow",
+    "phonetic": "/vaʊ/",
+    "pos": "v./n.",
+    "meaning": "发誓/誓言",
+    "example": "He made a vow to finish the project on time.",
+    "exampleCn": "他发誓要按时完成这个项目。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "10",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 3823,
+    "word": "behaviour",
+    "phonetic": "bɪˈheɪvjə",
+    "pos": "n.",
+    "meaning": "行为/举止",
+    "example": "The scientist studied the social behaviour of chimpanzees.",
+    "exampleCn": "科学家研究了黑猩猩的社会行为。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "8",
+    "ieltsLists": [
+      "8",
+      "51"
+    ]
+  },
+  {
+    "id": 5012,
+    "word": "complain",
+    "phonetic": "kəmˈpleɪn",
+    "pos": "v.",
+    "meaning": "投诉/抱怨",
+    "example": "Residents complained about the noise from the construction.",
+    "exampleCn": "居民投诉了施工噪音。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44",
+      "51"
+    ]
+  },
+  {
+    "id": 5224,
+    "word": "act",
+    "phonetic": "ækt",
+    "pos": "n./v.",
+    "meaning": "行为/行动/表演",
+    "example": "She acted quickly to save the child.",
+    "exampleCn": "她迅速行动救了孩子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5225,
+    "word": "activity",
+    "phonetic": "ækˈtɪvəti",
+    "pos": "n.",
+    "meaning": "活动/行动",
+    "example": "Outdoor activities are good for your health.",
+    "exampleCn": "户外活动对健康有益。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5226,
+    "word": "deed",
+    "phonetic": "diːd",
+    "pos": "n.",
+    "meaning": "行为/事迹/契据",
+    "example": "He was rewarded for his good deeds.",
+    "exampleCn": "他因善行而受到奖赏。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5227,
+    "word": "respond",
+    "phonetic": "rɪˈspɒnd",
+    "pos": "v.",
+    "meaning": "回应/回答",
+    "example": "The patient responded well to the treatment.",
+    "exampleCn": "病人对治疗反应良好。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5228,
+    "word": "response",
+    "phonetic": "rɪˈspɒns",
+    "pos": "n.",
+    "meaning": "回应/答复",
+    "example": "His response to the question was surprising.",
+    "exampleCn": "他对问题的回答令人惊讶。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5229,
+    "word": "support",
+    "phonetic": "səˈpɔːt",
+    "pos": "v./n.",
+    "meaning": "支持/支撑",
+    "example": "Her family supported her throughout her studies.",
+    "exampleCn": "她的家人在她学习期间一直支持她。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5230,
+    "word": "exhale",
+    "phonetic": "eksˈheɪl",
+    "pos": "v.",
+    "meaning": "呼出/呼气",
+    "example": "Take a deep breath and then exhale slowly.",
+    "exampleCn": "深吸一口气，然后慢慢呼出。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5231,
+    "word": "revive",
+    "phonetic": "rɪˈvaɪv",
+    "pos": "v.",
+    "meaning": "复苏/复兴",
+    "example": "The fresh air revived her after the long journey.",
+    "exampleCn": "长途旅行后新鲜空气让她恢复了精神。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5232,
+    "word": "survive",
+    "phonetic": "səˈvaɪv",
+    "pos": "v.",
+    "meaning": "幸存/生存",
+    "example": "Only two passengers survived the plane crash.",
+    "exampleCn": "只有两名乘客在飞机失事中幸存。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5233,
+    "word": "peep",
+    "phonetic": "piːp",
+    "pos": "v.",
+    "meaning": "偷看/窥视",
+    "example": "He peeped through the window to see what was happening.",
+    "exampleCn": "他从窗户往里偷看发生了什么。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5234,
+    "word": "stare",
+    "phonetic": "steə",
+    "pos": "v.",
+    "meaning": "盯着看/凝视",
+    "example": "It is rude to stare at strangers.",
+    "exampleCn": "盯着陌生人看是不礼貌的。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5235,
+    "word": "contemplate",
+    "phonetic": "ˈkɒntəmpleɪt",
+    "pos": "v.",
+    "meaning": "沉思/考虑",
+    "example": "She contemplated changing her career.",
+    "exampleCn": "她考虑过换个职业。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5236,
+    "word": "oath",
+    "phonetic": "əʊθ",
+    "pos": "n.",
+    "meaning": "誓言/誓约",
+    "example": "He took an oath to serve his country.",
+    "exampleCn": "他宣誓效忠国家。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5237,
+    "word": "pledge",
+    "phonetic": "pledʒ",
+    "pos": "n./v.",
+    "meaning": "承诺/保证",
+    "example": "The government pledged more funds for education.",
+    "exampleCn": "政府承诺增加教育资金。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5238,
+    "word": "whistle",
+    "phonetic": "ˈwɪsl",
+    "pos": "v./n.",
+    "meaning": "吹口哨/口哨声",
+    "example": "The referee blew the whistle to start the game.",
+    "exampleCn": "裁判吹响了口哨开始比赛。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5239,
+    "word": "reply",
+    "phonetic": "rɪˈplaɪ",
+    "pos": "v./n.",
+    "meaning": "回答/回复",
+    "example": "She did not reply to his message.",
+    "exampleCn": "她没有回复他的信息。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5240,
+    "word": "notify",
+    "phonetic": "ˈnəʊtɪfaɪ",
+    "pos": "v.",
+    "meaning": "通知/告知",
+    "example": "The school notified parents about the change in policy.",
+    "exampleCn": "学校将政策变化通知了家长。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5241,
+    "word": "quarrel",
+    "phonetic": "ˈkwɒrəl",
+    "pos": "n./v.",
+    "meaning": "争吵/吵架",
+    "example": "The two neighbours quarrelled over the fence.",
+    "exampleCn": "两个邻居因篱笆吵了架。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5242,
+    "word": "mention",
+    "phonetic": "ˈmenʃn",
+    "pos": "v.",
+    "meaning": "提到/提及",
+    "example": "Nobody mentioned the change in the schedule.",
+    "exampleCn": "没有人提到日程的变化。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5243,
+    "word": "hurry",
+    "phonetic": "ˈhʌri",
+    "pos": "v./n.",
+    "meaning": "匆忙/赶紧",
+    "example": "She hurried to catch the last train.",
+    "exampleCn": "她赶紧去赶最后一班火车。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5244,
+    "word": "scold",
+    "phonetic": "skəʊld",
+    "pos": "v.",
+    "meaning": "责骂/训斥",
+    "example": "The mother scolded her son for breaking the vase.",
+    "exampleCn": "母亲责骂儿子打碎了花瓶。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5245,
+    "word": "curse",
+    "phonetic": "kɜːs",
+    "pos": "n./v.",
+    "meaning": "诅咒/咒骂",
+    "example": "He cursed loudly when he stubbed his toe.",
+    "exampleCn": "他踢到脚趾大声咒骂起来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5246,
+    "word": "swear",
+    "phonetic": "sweə",
+    "pos": "v.",
+    "meaning": "发誓/诅咒/咒骂",
+    "example": "He swore to tell the truth in court.",
+    "exampleCn": "他发誓在法庭上讲真话。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5247,
+    "word": "preach",
+    "phonetic": "priːtʃ",
+    "pos": "v.",
+    "meaning": "传教/说教",
+    "example": "The priest preached a sermon on kindness.",
+    "exampleCn": "牧师讲了一篇关于仁慈的讲道。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5248,
+    "word": "tease",
+    "phonetic": "tiːz",
+    "pos": "v.",
+    "meaning": "逗弄/取笑",
+    "example": "The older children teased the little boy.",
+    "exampleCn": "大孩子们取笑了那个小男孩。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5249,
+    "word": "mock",
+    "phonetic": "mɒk",
+    "pos": "v.",
+    "meaning": "嘲笑/模仿",
+    "example": "The other students mocked his accent.",
+    "exampleCn": "其他学生嘲笑他的口音。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5250,
+    "word": "touch",
+    "phonetic": "tʌtʃ",
+    "pos": "v./n.",
+    "meaning": "触碰/接触",
+    "example": "Do not touch the hot stove.",
+    "exampleCn": "不要碰热炉子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5251,
+    "word": "clap",
+    "phonetic": "klæp",
+    "pos": "v.",
+    "meaning": "拍手/鼓掌",
+    "example": "The audience clapped loudly after the performance.",
+    "exampleCn": "演出结束后观众热烈鼓掌。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5252,
+    "word": "snatch",
+    "phonetic": "snætʃ",
+    "pos": "v.",
+    "meaning": "抢走/抓取",
+    "example": "A thief snatched her bag and ran away.",
+    "exampleCn": "一个小偷抢了她的包就跑了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5253,
+    "word": "grab",
+    "phonetic": "ɡræb",
+    "pos": "v.",
+    "meaning": "抓住/抢夺",
+    "example": "He grabbed the child's hand before she ran into the road.",
+    "exampleCn": "孩子在跑上马路前他抓住了她的手。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  },
+  {
+    "id": 5254,
+    "word": "grasp",
+    "phonetic": "ɡrɑːsp",
+    "pos": "v.",
+    "meaning": "抓住/理解",
+    "example": "She grasped the handle and pulled open the door.",
+    "exampleCn": "她抓住把手拉开了门。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
+  }
+]

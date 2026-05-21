@@ -1,0 +1,497 @@
+[
+  {
+    "id": 14,
+    "word": "accord",
+    "phonetic": "/əˈkɔːrd/",
+    "pos": "n./v.",
+    "meaning": "协议/一致/给予",
+    "example": "The two countries signed a peace accord.",
+    "exampleCn": "两国签署了和平协议。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 61,
+    "word": "accordance",
+    "phonetic": "/əˈkɔːrdns/",
+    "pos": "n.",
+    "meaning": "一致，和谐",
+    "example": "The work was done in accordance with the rules.",
+    "exampleCn": "工作是按照规则完成的。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 192,
+    "word": "attribute",
+    "phonetic": "/əˈtrɪbjuːt/",
+    "pos": "v./n.",
+    "meaning": "把……归因于/属性/特征",
+    "example": "Researchers attribute the change to rising temperatures.",
+    "exampleCn": "研究人员把这种变化归因于气温上升。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 261,
+    "word": "bless",
+    "phonetic": "/bles/",
+    "pos": "v.",
+    "meaning": "祝福，保佑",
+    "example": "God bless you!",
+    "exampleCn": "上帝保佑你！",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 398,
+    "word": "celebrate",
+    "phonetic": "/ˈselɪbreɪt/",
+    "pos": "v.",
+    "meaning": "庆祝",
+    "example": "We celebrate Christmas every year.",
+    "exampleCn": "我们每年都庆祝圣诞节。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 548,
+    "word": "impress",
+    "phonetic": "/ɪmˈpres/",
+    "pos": "v.",
+    "meaning": "给...留下印象；使钦佩",
+    "example": "His speech impressed the audience.",
+    "exampleCn": "他的演讲给观众留下了深刻印象。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 570,
+    "word": "differentiate",
+    "phonetic": "/ˌdɪfəˈrenʃieɪt/",
+    "pos": "v.",
+    "meaning": "区分/使不同/求导",
+    "example": "It is important to differentiate fact from opinion.",
+    "exampleCn": "区分事实和观点很重要。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 1112,
+    "word": "participate",
+    "phonetic": "/pɑːrˈtɪsɪpeɪt/",
+    "pos": "v.",
+    "meaning": "参加，参与",
+    "example": "Students are encouraged to participate in class discussions.",
+    "exampleCn": "鼓励学生参与课堂讨论。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "23",
+    "ieltsLists": [
+      "23",
+      "55"
+    ]
+  },
+  {
+    "id": 1164,
+    "word": "incline",
+    "phonetic": "/ɪnˈklaɪn/",
+    "pos": "v./n.",
+    "meaning": "使倾斜；倾向于/斜坡",
+    "example": "I am inclined to agree with the proposal.",
+    "exampleCn": "我倾向于同意这个提议。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 1541,
+    "word": "distinguish",
+    "phonetic": "/dɪˈstɪŋɡwɪʃ/",
+    "pos": "v.",
+    "meaning": "区分/辨别/使出众",
+    "example": "The markings help scientists distinguish one species from another.",
+    "exampleCn": "这些标记帮助科学家区分不同物种。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 1621,
+    "word": "substitute",
+    "phonetic": "/ˈsʌbstɪtuːt/",
+    "pos": "n./v./adj.",
+    "meaning": "代替者/替换/代用的",
+    "example": "Teachers sometimes substitute videos for live demonstrations.",
+    "exampleCn": "老师有时用视频代替现场演示。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 1932,
+    "word": "lean",
+    "phonetic": "/liːn/",
+    "pos": "v./adj.",
+    "meaning": "倾斜/依靠/瘦的/精简的",
+    "example": "The tree began to lean after the storm.",
+    "exampleCn": "暴风雨过后，这棵树开始倾斜。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 2158,
+    "word": "correspond",
+    "phonetic": "/ˌkɔːrəˈspɑːnd/",
+    "pos": "v.",
+    "meaning": "符合/相对应/通信",
+    "example": "The numbers correspond to the labels on the map.",
+    "exampleCn": "这些数字与地图上的标签相对应。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 5330,
+    "word": "congratulate",
+    "phonetic": "kənˈɡrætʃʊleɪt",
+    "pos": "v.",
+    "meaning": "祝贺/恭喜",
+    "example": "She congratulated him on his promotion.",
+    "exampleCn": "她祝贺了他升职。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 5331,
+    "word": "farewell",
+    "phonetic": "ˌfeəˈwel",
+    "pos": "n.",
+    "meaning": "告别/辞行",
+    "example": "They held a farewell party for the retiring professor.",
+    "exampleCn": "他们为退休教授举行了一场告别会。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 5332,
+    "word": "assort",
+    "phonetic": "əˈsɔːt",
+    "pos": "v.",
+    "meaning": "分类/协调/搭配",
+    "example": "The shop assorts its goods by colour and size.",
+    "exampleCn": "这家店按颜色和尺码对商品进行了分类。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 5333,
+    "word": "recall",
+    "phonetic": "rɪˈkɔːl",
+    "pos": "v.",
+    "meaning": "回忆/召回/想起",
+    "example": "He could not recall where he had parked the car.",
+    "exampleCn": "他想不起来把车停在哪儿了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 5334,
+    "word": "recollect",
+    "phonetic": "ˌrekəˈlekt",
+    "pos": "v.",
+    "meaning": "回忆/想起/记起",
+    "example": "She tried to recollect what had happened that night.",
+    "exampleCn": "她努力回忆那一夜发生的事情。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 5335,
+    "word": "remind",
+    "phonetic": "rɪˈmaɪnd",
+    "pos": "v.",
+    "meaning": "提醒/使想起",
+    "example": "Please remind me to call my mother.",
+    "exampleCn": "请提醒我给母亲打电话。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 5336,
+    "word": "retell",
+    "phonetic": "ˌriːˈtel",
+    "pos": "v.",
+    "meaning": "复述/重新讲述",
+    "example": "The teacher asked the children to retell the story.",
+    "exampleCn": "老师让孩子们复述了一遍这个故事。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 5337,
+    "word": "repeat",
+    "phonetic": "rɪˈpiːt",
+    "pos": "v.",
+    "meaning": "重复/复述",
+    "example": "Could you repeat the question please?",
+    "exampleCn": "请你重复一遍问题好吗？",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 5338,
+    "word": "retrospect",
+    "phonetic": "ˈretrəspekt",
+    "pos": "n.",
+    "meaning": "回顾/回想/追溯",
+    "example": "In retrospect, we should have taken a different approach.",
+    "exampleCn": "回顾往事，我们本应采取不同的做法。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 5339,
+    "word": "surmount",
+    "phonetic": "səˈmaʊnt",
+    "pos": "v.",
+    "meaning": "克服/越过/战胜",
+    "example": "She surmounted many difficulties to achieve her goals.",
+    "exampleCn": "她克服重重困难实现了目标。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 5340,
+    "word": "mortify",
+    "phonetic": "ˈmɔːtɪfaɪ",
+    "pos": "v.",
+    "meaning": "使羞愧/使窘迫",
+    "example": "He was mortified when he realised his mistake.",
+    "exampleCn": "当他意识到自己的错误时感到羞愧难当。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 5341,
+    "word": "pervade",
+    "phonetic": "pəˈveɪd",
+    "pos": "v.",
+    "meaning": "弥漫/遍及/渗透",
+    "example": "A sense of hope pervaded the entire nation.",
+    "exampleCn": "一种希望之感遍及全国。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 5342,
+    "word": "replace",
+    "phonetic": "rɪˈpleɪs",
+    "pos": "v.",
+    "meaning": "取代/替换/放回",
+    "example": "Machines have replaced many manual jobs.",
+    "exampleCn": "机器取代了许多手工活儿。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  },
+  {
+    "id": 5343,
+    "word": "sideways",
+    "phonetic": "ˈsaɪdweɪz",
+    "pos": "adv.",
+    "meaning": "侧向地/斜着",
+    "example": "The crab walked sideways across the sand.",
+    "exampleCn": "螃蟹侧着身子走过沙滩。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
+  }
+]

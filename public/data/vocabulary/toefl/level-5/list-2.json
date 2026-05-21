@@ -206,10 +206,15 @@
     "exampleCn": "教练培养这名年轻球员成为领导者。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 2539,
@@ -1457,10 +1462,15 @@
     "exampleCn": "地震后这座塔开始倾斜。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 2617,

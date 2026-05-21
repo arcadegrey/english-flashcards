@@ -282,10 +282,15 @@
     "exampleCn": "作者对乡村生活进行了亲切而细致的描述。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
   },
   {
     "id": 1632,
@@ -297,10 +302,15 @@
     "exampleCn": "公司不应该为了廉价劳动力而剥削工人。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 1633,
@@ -377,10 +387,15 @@
     "exampleCn": "她是可再生能源的坚定支持者。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 1638,
@@ -684,10 +699,15 @@
     "exampleCn": "古人常常崇拜自然力量。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 1657,
@@ -729,10 +749,15 @@
     "exampleCn": "实验过程中不要偏离说明。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 1660,
@@ -744,10 +769,15 @@
     "exampleCn": "学生经常从同龄人那里学到有用的习惯。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 1661,
@@ -904,10 +934,15 @@
     "exampleCn": "公众意见会影响政治决定。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 1671,
@@ -964,10 +999,15 @@
     "exampleCn": "一位专家被请来检查这种罕见疾病。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 1675,
@@ -1169,10 +1209,15 @@
     "exampleCn": "地球每二十四小时自转一次。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 1687,
@@ -1199,10 +1244,15 @@
     "exampleCn": "人们有时会夸大问题以获得关注。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 1689,
@@ -1344,10 +1394,15 @@
     "exampleCn": "水开始从墙上的裂缝渗出。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 1697,
@@ -1459,10 +1514,15 @@
     "exampleCn": "一座青铜雕像矗立在广场中央。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 1704,
@@ -1534,10 +1594,15 @@
     "exampleCn": "这场演讲激起了公众对教育改革的兴趣。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 1709,
@@ -1599,10 +1664,15 @@
     "exampleCn": "学校可能会开除严重违规的学生。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 1713,

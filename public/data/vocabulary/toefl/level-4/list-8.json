@@ -52,10 +52,15 @@
     "category": "daily",
     "categories": [
       "daily",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 439,
@@ -100,10 +105,15 @@
     "exampleCn": "一些动物对某些疾病有免疫力。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 2084,
@@ -539,10 +549,15 @@
     "exampleCn": "这种激素有助于控制生长。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 2111,
@@ -614,10 +629,15 @@
     "exampleCn": "消防站被烧毁这件事很讽刺。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 2116,
@@ -679,10 +699,15 @@
     "exampleCn": "她擦掉额头上的汗。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 2120,
@@ -1038,10 +1063,15 @@
     "exampleCn": "小心不要洒出这些化学品。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 2141,
@@ -1088,10 +1118,15 @@
     "exampleCn": "这条河分成两条较小的溪流。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 2144,
@@ -1133,10 +1168,15 @@
     "exampleCn": "他的回答太模糊，没有什么帮助。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 2147,
@@ -1168,10 +1208,15 @@
     "exampleCn": "学生们回到各自的教室。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 2149,
@@ -1203,10 +1248,15 @@
     "exampleCn": "医生给了他一片止痛药。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 2151,
@@ -1330,10 +1380,15 @@
     "exampleCn": "这些数字与地图上的标签相对应。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
   },
   {
     "id": 2159,
@@ -1400,10 +1455,15 @@
     "exampleCn": "汗液通过皮肤上的毛孔排出体外。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 2163,
@@ -1520,10 +1580,15 @@
     "exampleCn": "胸腔保护心脏和肺。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "8"
+    "list": "8",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 2170,

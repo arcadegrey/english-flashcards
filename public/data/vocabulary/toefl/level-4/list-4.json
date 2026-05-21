@@ -10,10 +10,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
   },
   {
     "id": 121,
@@ -159,10 +164,15 @@
     "exampleCn": "新的证据加速了辩论的结束。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 1717,
@@ -206,10 +216,15 @@
     "exampleCn": "这位科学家警告生态系统会受到严重破坏。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 1720,
@@ -261,10 +276,15 @@
     "exampleCn": "太阳的强光使人难以看清屏幕。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 1723,
@@ -438,10 +458,15 @@
     "exampleCn": "冰川移动时会刮擦岩石。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 1734,
@@ -850,10 +875,15 @@
     "exampleCn": "这项政策激起了强烈的公众反应。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 1758,
@@ -1125,10 +1155,15 @@
     "exampleCn": "音乐家弹吉他时琴弦会振动。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 1774,
@@ -1567,10 +1602,15 @@
     "exampleCn": "不要从摘要中遗漏重要细节。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 1801,
@@ -1632,10 +1672,15 @@
     "exampleCn": "显微镜可以放大微小生物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 1805,

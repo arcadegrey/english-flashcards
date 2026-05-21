@@ -70,7 +70,8 @@
     "list": "1",
     "ieltsList": "8",
     "ieltsLists": [
-      "8"
+      "8",
+      "51"
     ]
   },
   {
@@ -142,10 +143,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "daily"
+      "daily",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 501,
@@ -327,10 +333,15 @@
     "exampleCn": "心理健康和身体健康一样重要。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 512,
@@ -469,10 +480,15 @@
     "exampleCn": "消防员救出了被困人员。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 521,
@@ -519,10 +535,15 @@
     "exampleCn": "别用钥匙刮桌子。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 524,
@@ -625,7 +646,8 @@
     "list": "1",
     "ieltsList": "40",
     "ieltsLists": [
-      "40"
+      "40",
+      "53"
     ]
   },
   {
@@ -730,10 +752,15 @@
     "exampleCn": "每个人都应该为讨论做出贡献。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 537,
@@ -845,10 +872,15 @@
     "exampleCn": "不要忽视你的学业。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 544,
@@ -925,10 +957,15 @@
     "exampleCn": "他的演讲给观众留下了深刻印象。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
   },
   {
     "id": 549,
@@ -955,10 +992,15 @@
     "exampleCn": "他工作时不要打扰他。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 551,
@@ -970,10 +1012,15 @@
     "exampleCn": "邪恶的女巫施了魔法。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 552,
@@ -1050,10 +1097,15 @@
     "exampleCn": "她因为累了而打哈欠。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 557,
@@ -1239,10 +1291,15 @@
     "exampleCn": "请通过电子邮件联系我。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 568,

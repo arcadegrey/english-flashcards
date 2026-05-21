@@ -288,10 +288,15 @@
     "exampleCn": "压力会引起一些人头痛。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 2739,
@@ -503,10 +508,15 @@
     "exampleCn": "甲状腺有助于调节新陈代谢。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 2752,
@@ -1025,10 +1035,15 @@
     "exampleCn": "风可以推动帆船在水面前进。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "4"
+    "list": "4",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 2784,

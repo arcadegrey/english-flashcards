@@ -1,0 +1,1096 @@
+[
+  {
+    "id": 59,
+    "word": "accompany",
+    "phonetic": "/əˈkʌmpəni/",
+    "pos": "v.",
+    "meaning": "陪伴/伴随/为……伴奏",
+    "example": "Strong winds often accompany heavy rain in this region.",
+    "exampleCn": "在这个地区，大风常伴随大雨。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "42",
+    "ieltsLists": [
+      "42",
+      "50"
+    ]
+  },
+  {
+    "id": 89,
+    "word": "affection",
+    "phonetic": "/əˈfekʃn/",
+    "pos": "n.",
+    "meaning": "喜爱，钟爱",
+    "example": "She has great affection for her pets.",
+    "exampleCn": "她非常喜爱她的宠物。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 422,
+    "word": "chase",
+    "phonetic": "/tʃeɪs/",
+    "pos": "v./n.",
+    "meaning": "追赶；追逐",
+    "example": "The dog chased the ball across the yard.",
+    "exampleCn": "那只狗追着球跑过院子。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 466,
+    "word": "client",
+    "phonetic": "/ˈklaɪənt/",
+    "pos": "n.",
+    "meaning": "客户",
+    "example": "The client was satisfied with the service.",
+    "exampleCn": "客户对服务很满意。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 488,
+    "word": "colleague",
+    "phonetic": "/ˈkɒliːɡ/",
+    "pos": "n.",
+    "meaning": "同事；同僚",
+    "example": "My colleague helped me with the project.",
+    "exampleCn": "我的同事帮我完成了这个项目。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 626,
+    "word": "dependent",
+    "phonetic": "/dɪˈpendənt/",
+    "pos": "adj.",
+    "meaning": "依赖的；取决于的",
+    "example": "Children are dependent on parents.",
+    "exampleCn": "孩子依赖父母。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 698,
+    "word": "committee",
+    "phonetic": "/kəˈmɪti/",
+    "pos": "n.",
+    "meaning": "委员会",
+    "example": "The committee met yesterday.",
+    "exampleCn": "委员会昨天开会了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 925,
+    "word": "propose",
+    "phonetic": "/prəˈpoʊz/",
+    "pos": "v.",
+    "meaning": "提议；建议",
+    "example": "I propose a different solution.",
+    "exampleCn": "我提出一个不同的解决方案。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 998,
+    "word": "engagement",
+    "phonetic": "/ɪnˈɡeɪdʒmənt/",
+    "pos": "n.",
+    "meaning": "参与，投入/约定，婚约",
+    "example": "Student engagement is important in online learning./He had a dinner engagement that evening.",
+    "exampleCn": "学生参与度在在线学习中很重要。/那天晚上他有个晚餐约会。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 1048,
+    "word": "sole",
+    "phonetic": "/soʊl/",
+    "pos": "adj./n.",
+    "meaning": "唯一的/鞋底",
+    "example": "She was the sole winner of the prize./The sole of my shoe is worn out.",
+    "exampleCn": "她是这项奖的唯一获奖者。/我鞋子的鞋底磨坏了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 1173,
+    "word": "divorce",
+    "phonetic": "/dɪˈvɔːrs/",
+    "pos": "n./v.",
+    "meaning": "离婚；分离/与……离婚",
+    "example": "The novel explores the emotional effects of divorce.",
+    "exampleCn": "这部小说探讨了离婚带来的情感影响。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 1255,
+    "word": "host",
+    "phonetic": "/hoʊst/",
+    "pos": "n./v.",
+    "meaning": "主人；主持人/主办；主持",
+    "example": "The city will host an international conference next year.",
+    "exampleCn": "这座城市明年将主办一次国际会议。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "9",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 1453,
+    "word": "consultant",
+    "phonetic": "/kənˈsʌltənt/",
+    "pos": "n.",
+    "meaning": "顾问",
+    "example": "The company hired a consultant to improve its computer system.",
+    "exampleCn": "公司聘请了一名顾问来改进电脑系统。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 1487,
+    "word": "heroine",
+    "phonetic": "/ˈheroʊɪn/",
+    "pos": "n.",
+    "meaning": "女主角/女英雄",
+    "example": "The novel's heroine refuses to give up her independence.",
+    "exampleCn": "小说中的女主角拒绝放弃独立。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 1637,
+    "word": "proponent",
+    "phonetic": "/prəˈpoʊnənt/",
+    "pos": "n.",
+    "meaning": "支持者/倡导者",
+    "example": "She is a strong proponent of renewable energy.",
+    "exampleCn": "她是可再生能源的坚定支持者。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 1674,
+    "word": "specialist",
+    "phonetic": "/ˈspeʃəlɪst/",
+    "pos": "n.",
+    "meaning": "专家/专科医生",
+    "example": "A specialist was called to examine the rare disease.",
+    "exampleCn": "一位专家被请来检查这种罕见疾病。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 1841,
+    "word": "council",
+    "phonetic": "/ˈkaʊnsl/",
+    "pos": "n.",
+    "meaning": "委员会/议会",
+    "example": "The city council voted to build a new park.",
+    "exampleCn": "市议会投票决定建造一个新公园。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 2148,
+    "word": "respective",
+    "phonetic": "/rɪˈspektɪv/",
+    "pos": "adj.",
+    "meaning": "各自的/分别的",
+    "example": "The students returned to their respective classrooms.",
+    "exampleCn": "学生们回到各自的教室。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 2368,
+    "word": "encounter",
+    "phonetic": "/ɪnˈkaʊntər/",
+    "pos": "v./n.",
+    "meaning": "遇到/遭遇/相遇",
+    "example": "Hikers may encounter wild animals in the park.",
+    "exampleCn": "徒步者可能会在公园里遇到野生动物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 2484,
+    "word": "subordinate",
+    "phonetic": "/səˈbɔːrdɪnət/; /səˈbɔːrdɪneɪt/",
+    "pos": "adj./n./v.",
+    "meaning": "下级的/下属/使从属于",
+    "example": "Details should be subordinate to the main argument.",
+    "exampleCn": "细节应当服务于主要论点。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "1",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 2538,
+    "word": "groom",
+    "phonetic": "/ɡruːm/",
+    "pos": "n./v.",
+    "meaning": "新郎/马夫/梳理/培养",
+    "example": "The coach groomed the young player for leadership.",
+    "exampleCn": "教练培养这名年轻球员成为领导者。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 2636,
+    "word": "chore",
+    "phonetic": "/tʃɔːr/",
+    "pos": "n.",
+    "meaning": "家务/杂事/乏味的工作",
+    "example": "Washing the dishes is a daily chore.",
+    "exampleCn": "洗碗是一项日常家务。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 2716,
+    "word": "apprentice",
+    "phonetic": "/əˈprentɪs/",
+    "pos": "n./v.",
+    "meaning": "学徒/当学徒",
+    "example": "The apprentice learned from a skilled carpenter.",
+    "exampleCn": "学徒向一位熟练的木匠学习。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 3258,
+    "word": "delegate",
+    "phonetic": "/ˈdelɪɡət/",
+    "pos": "n./v.",
+    "meaning": "代表/委派/授权",
+    "example": "The manager decided to delegate the task to her assistant.",
+    "exampleCn": "经理决定把这项任务委派给她的助手。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "38",
+    "ieltsLists": [
+      "38",
+      "50"
+    ]
+  },
+  {
+    "id": 3773,
+    "word": "mate",
+    "phonetic": "meɪt",
+    "pos": "n/v.",
+    "meaning": "配偶/交配",
+    "example": "Penguins mate for life.",
+    "exampleCn": "企鹅终身配对。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "7",
+    "ieltsLists": [
+      "7",
+      "50"
+    ]
+  },
+  {
+    "id": 5189,
+    "word": "landlord",
+    "phonetic": "ˈlændlɔːd",
+    "pos": "n.",
+    "meaning": "房东/地主",
+    "example": "The landlord raised the rent by ten per cent.",
+    "exampleCn": "房东把房租提高了百分之十。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5190,
+    "word": "tenant",
+    "phonetic": "ˈtenənt",
+    "pos": "n.",
+    "meaning": "租户/房客",
+    "example": "The tenant pays rent on the first of every month.",
+    "exampleCn": "房客每月一号交房租。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5191,
+    "word": "customer",
+    "phonetic": "ˈkʌstəmə",
+    "pos": "n.",
+    "meaning": "顾客/客户",
+    "example": "The shop offers a discount to regular customers.",
+    "exampleCn": "该商店向常客提供折扣。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5192,
+    "word": "appointment",
+    "phonetic": "əˈpɔɪntmənt",
+    "pos": "n.",
+    "meaning": "预约/任命",
+    "example": "I have a doctor's appointment at 10 a.m.",
+    "exampleCn": "我上午十点预约了去看医生。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5193,
+    "word": "marry",
+    "phonetic": "ˈmæri",
+    "pos": "v.",
+    "meaning": "结婚/娶/嫁",
+    "example": "They plan to marry in the summer.",
+    "exampleCn": "他们计划夏天结婚。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5194,
+    "word": "separate",
+    "phonetic": "ˈsepəreɪt",
+    "pos": "v./adj.",
+    "meaning": "分开/分离",
+    "example": "The teacher separated the two fighting children.",
+    "exampleCn": "老师把两个打架的孩子分开了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5195,
+    "word": "individual",
+    "phonetic": "ˌɪndɪˈvɪdʒuəl",
+    "pos": "n./adj.",
+    "meaning": "个人/个体的",
+    "example": "Every individual has unique talents.",
+    "exampleCn": "每个人都有自己的独特才能。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5196,
+    "word": "commuter",
+    "phonetic": "kəˈmjuːtə",
+    "pos": "n.",
+    "meaning": "通勤者/上下班者",
+    "example": "The train was packed with commuters during rush hour.",
+    "exampleCn": "高峰时段火车上挤满了上班族。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5197,
+    "word": "neighbourhood",
+    "phonetic": "ˈneɪbəhʊd",
+    "pos": "n.",
+    "meaning": "邻里/社区/附近",
+    "example": "They live in a quiet neighbourhood.",
+    "exampleCn": "他们住在一个安静的社区。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5198,
+    "word": "member",
+    "phonetic": "ˈmembə",
+    "pos": "n.",
+    "meaning": "成员/会员",
+    "example": "She is a member of the local chess club.",
+    "exampleCn": "她是当地国际象棋俱乐部的成员。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5199,
+    "word": "manager",
+    "phonetic": "ˈmænɪdʒə",
+    "pos": "n.",
+    "meaning": "经理/管理者",
+    "example": "The manager held a meeting with her team.",
+    "exampleCn": "经理与团队举行了会议。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5200,
+    "word": "supervisor",
+    "phonetic": "ˈsuːpəvaɪzə",
+    "pos": "n.",
+    "meaning": "主管/监督者",
+    "example": "The supervisor checked the quality of the work.",
+    "exampleCn": "主管检查了工作质量。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5201,
+    "word": "partner",
+    "phonetic": "ˈpɑːtnə",
+    "pos": "n.",
+    "meaning": "合伙人/搭档/配偶",
+    "example": "She is my business partner.",
+    "exampleCn": "她是我的商业伙伴。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5202,
+    "word": "comrade",
+    "phonetic": "ˈkɒmreɪd",
+    "pos": "n.",
+    "meaning": "同志/战友",
+    "example": "The soldiers were loyal to their comrades.",
+    "exampleCn": "士兵们忠于自己的战友。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5203,
+    "word": "acquaintance",
+    "phonetic": "əˈkweɪntəns",
+    "pos": "n.",
+    "meaning": "熟人/相识",
+    "example": "He is not a close friend, just an acquaintance.",
+    "exampleCn": "他不是密友，只是个熟人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5204,
+    "word": "hero",
+    "phonetic": "ˈhɪərəʊ",
+    "pos": "n.",
+    "meaning": "英雄/男主角",
+    "example": "The firefighter was hailed as a hero.",
+    "exampleCn": "这名消防员被誉为英雄。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5205,
+    "word": "chancellor",
+    "phonetic": "ˈtʃɑːnsələ",
+    "pos": "n.",
+    "meaning": "大臣/校长/总理",
+    "example": "The chancellor announced new economic policies.",
+    "exampleCn": "总理宣布了新的经济政策。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5206,
+    "word": "commander",
+    "phonetic": "kəˈmɑːndə",
+    "pos": "n.",
+    "meaning": "指挥官/司令官",
+    "example": "The commander gave the order to attack.",
+    "exampleCn": "指挥官下达了进攻命令。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5207,
+    "word": "director",
+    "phonetic": "daɪˈrektə",
+    "pos": "n.",
+    "meaning": "主管/总监/导演",
+    "example": "She is the director of the marketing department.",
+    "exampleCn": "她是市场部的主管。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5208,
+    "word": "veterinary",
+    "phonetic": "ˈvetrɪnəri",
+    "pos": "adj./n.",
+    "meaning": "兽医的/兽医",
+    "example": "She took her cat to the veterinary clinic.",
+    "exampleCn": "她把猫带到了兽医诊所。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5209,
+    "word": "counsellor",
+    "phonetic": "ˈkaʊnsələ",
+    "pos": "n.",
+    "meaning": "顾问/辅导员",
+    "example": "The school counsellor helps students with personal problems.",
+    "exampleCn": "学校辅导员帮助学生解决个人问题。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5210,
+    "word": "solicitor",
+    "phonetic": "səˈlɪsɪtə",
+    "pos": "n.",
+    "meaning": "事务律师/初级律师",
+    "example": "He contacted a solicitor for legal advice.",
+    "exampleCn": "他联系了一位事务律师寻求法律建议。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5211,
+    "word": "attorney",
+    "phonetic": "əˈtɜːni",
+    "pos": "n.",
+    "meaning": "律师/代理人",
+    "example": "The defendant was represented by an attorney.",
+    "exampleCn": "被告由一名律师代理。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5212,
+    "word": "umpire",
+    "phonetic": "ˈʌmpaɪə",
+    "pos": "n.",
+    "meaning": "裁判/裁判员",
+    "example": "The umpire made a controversial decision.",
+    "exampleCn": "裁判做出了一个有争议的判罚。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5213,
+    "word": "cashier",
+    "phonetic": "kæˈʃɪə",
+    "pos": "n.",
+    "meaning": "收银员/出纳员",
+    "example": "The cashier scanned the items quickly.",
+    "exampleCn": "收银员快速的扫描了商品。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5214,
+    "word": "nurse",
+    "phonetic": "nɜːs",
+    "pos": "n.",
+    "meaning": "护士/保育员",
+    "example": "The nurse checked the patient's temperature.",
+    "exampleCn": "护士检查了病人的体温。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5215,
+    "word": "gardener",
+    "phonetic": "ˈɡɑːdnə",
+    "pos": "n.",
+    "meaning": "园丁/花匠",
+    "example": "The gardener trimmed the hedges neatly.",
+    "exampleCn": "园丁把树篱修剪得整齐。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5216,
+    "word": "barber",
+    "phonetic": "ˈbɑːbə",
+    "pos": "n.",
+    "meaning": "理发师",
+    "example": "He has been going to the same barber for years.",
+    "exampleCn": "他多年来一直去同一家理发店。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5217,
+    "word": "haircut",
+    "phonetic": "ˈheəkʌt",
+    "pos": "n.",
+    "meaning": "理发/发型",
+    "example": "She got a new haircut for the party.",
+    "exampleCn": "她为聚会剪了新发型。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5218,
+    "word": "butcher",
+    "phonetic": "ˈbʊtʃə",
+    "pos": "n.",
+    "meaning": "屠夫/肉店",
+    "example": "The butcher cut the meat into thin slices.",
+    "exampleCn": "屠夫把肉切成薄片。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5219,
+    "word": "hostage",
+    "phonetic": "ˈhɒstɪdʒ",
+    "pos": "n.",
+    "meaning": "人质/俘虏",
+    "example": "The hostages were held for three weeks before being rescued.",
+    "exampleCn": "人质在被救出前被关押了三周。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5220,
+    "word": "toil",
+    "phonetic": "tɔɪl",
+    "pos": "v./n.",
+    "meaning": "辛苦劳作/苦工",
+    "example": "The farmers toiled in the fields all day.",
+    "exampleCn": "农民整天在田间辛苦劳作。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5221,
+    "word": "beggar",
+    "phonetic": "ˈbeɡə",
+    "pos": "n.",
+    "meaning": "乞丐/叫化子",
+    "example": "A beggar sat on the street corner asking for money.",
+    "exampleCn": "一个乞丐坐在街角讨钱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5222,
+    "word": "slave",
+    "phonetic": "sleɪv",
+    "pos": "n.",
+    "meaning": "奴隶/奴仆",
+    "example": "In the past, many people were bought and sold as slaves.",
+    "exampleCn": "在过去，许多人被当作奴隶买卖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  },
+  {
+    "id": 5223,
+    "word": "coward",
+    "phonetic": "ˈkaʊəd",
+    "pos": "n.",
+    "meaning": "懦夫/胆小鬼",
+    "example": "He was branded a coward for running away from the battle.",
+    "exampleCn": "他因在战斗中逃跑而被定为懦夫。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
+  }
+]

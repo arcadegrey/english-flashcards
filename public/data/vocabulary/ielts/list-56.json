@@ -1,0 +1,1685 @@
+[
+  {
+    "id": 219,
+    "word": "beard",
+    "phonetic": "/bɪrd/",
+    "pos": "n.",
+    "meaning": "胡须",
+    "example": "He grew a beard during the winter.",
+    "exampleCn": "他在冬天留了胡子。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 262,
+    "word": "blind",
+    "phonetic": "/blaɪnd/",
+    "pos": "adj.",
+    "meaning": "盲的；盲目的",
+    "example": "He is blind in one eye.",
+    "exampleCn": "他一只眼睛失明了。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 277,
+    "word": "bone",
+    "phonetic": "/boʊn/",
+    "pos": "n.",
+    "meaning": "骨头",
+    "example": "The dog buried a bone in the yard.",
+    "exampleCn": "狗在院子里埋了一根骨头。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 294,
+    "word": "brain",
+    "phonetic": "/breɪn/",
+    "pos": "n.",
+    "meaning": "大脑，脑筋",
+    "example": "The brain controls the body.",
+    "exampleCn": "大脑控制着身体。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 410,
+    "word": "chamber",
+    "phonetic": "/ˈtʃeɪmbər/",
+    "pos": "n.",
+    "meaning": "房间/室/议院",
+    "example": "The fossils were stored in a cool chamber.",
+    "exampleCn": "化石被存放在一个凉爽的房间里。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 417,
+    "word": "character",
+    "phonetic": "/ˈkærəktər/",
+    "pos": "n.",
+    "meaning": "性格；角色；人物",
+    "example": "Honesty is an important part of character.",
+    "exampleCn": "诚实是品格的重要组成部分。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 427,
+    "word": "cheek",
+    "phonetic": "/tʃiːk/",
+    "pos": "n.",
+    "meaning": "脸颊",
+    "example": "She kissed him on the cheek.",
+    "exampleCn": "她亲了他的脸颊。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 434,
+    "word": "chest",
+    "phonetic": "/tʃest/",
+    "pos": "n.",
+    "meaning": "胸部；箱子",
+    "example": "He has pain in his chest.",
+    "exampleCn": "他胸部疼痛。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 511,
+    "word": "mental",
+    "phonetic": "/ˈmentl/",
+    "pos": "adj.",
+    "meaning": "精神的；心理的；智力的",
+    "example": "Mental health is as important as physical health.",
+    "exampleCn": "心理健康和身体健康一样重要。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 556,
+    "word": "yawn",
+    "phonetic": "/jɔːn/",
+    "pos": "v./n.",
+    "meaning": "打哈欠；呵欠",
+    "example": "She yawned because she was tired.",
+    "exampleCn": "她因为累了而打哈欠。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 613,
+    "word": "attitude",
+    "phonetic": "/ˈætɪtjuːd/",
+    "pos": "n.",
+    "meaning": "态度；看法",
+    "example": "She has a positive attitude.",
+    "exampleCn": "她有积极的态度。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 707,
+    "word": "organ",
+    "phonetic": "/ˈɔːɡən/",
+    "pos": "n.",
+    "meaning": "器官；机构；风琴",
+    "example": "The heart is a vital organ.",
+    "exampleCn": "心脏是重要器官。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 815,
+    "word": "pulse",
+    "phonetic": "/pʌls/",
+    "pos": "n.",
+    "meaning": "脉搏；脉冲；节奏",
+    "example": "The doctor checked my pulse.",
+    "exampleCn": "医生检查了我的脉搏。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "4",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 916,
+    "word": "visible",
+    "phonetic": "/ˈvɪzəbl/",
+    "pos": "adj.",
+    "meaning": "看得见的；明显的",
+    "example": "The mountains were clearly visible.",
+    "exampleCn": "那些山清晰可见。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 935,
+    "word": "wrist",
+    "phonetic": "/rɪst/",
+    "pos": "n.",
+    "meaning": "手腕",
+    "example": "He wore a watch on his wrist.",
+    "exampleCn": "他手腕上戴着一块表。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "5",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 1053,
+    "word": "emotion",
+    "phonetic": "/ɪˈmoʊʃən/",
+    "pos": "n.",
+    "meaning": "情感，情绪",
+    "example": "Her voice was full of emotion.",
+    "exampleCn": "她的声音充满了感情。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 1342,
+    "word": "joint",
+    "phonetic": "/dʒɔɪnt/",
+    "pos": "adj./n.",
+    "meaning": "联合的；共同的/关节",
+    "example": "The two universities launched a joint program.",
+    "exampleCn": "这两所大学启动了一个联合项目。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 1439,
+    "word": "organic",
+    "phonetic": "/ɔːrˈɡænɪk/",
+    "pos": "adj.",
+    "meaning": "有机的/天然的/生物体的",
+    "example": "Organic matter improves the quality of the soil.",
+    "exampleCn": "有机物能改善土壤质量。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 1930,
+    "word": "feature",
+    "phonetic": "/ˈfiːtʃər/",
+    "pos": "n./v.",
+    "meaning": "特点/特征/以……为特色",
+    "example": "One important feature of the device is its low cost.",
+    "exampleCn": "这个设备的一个重要特点是成本低。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 1965,
+    "word": "backbone",
+    "phonetic": "/ˈbækboʊn/",
+    "pos": "n.",
+    "meaning": "脊柱/支柱/骨干",
+    "example": "Small businesses are the backbone of the local economy.",
+    "exampleCn": "小企业是当地经济的支柱。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "6",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 1997,
+    "word": "dose",
+    "phonetic": "/doʊs/",
+    "pos": "n./v.",
+    "meaning": "剂量/一剂/给药",
+    "example": "The doctor reduced the dose to avoid side effects.",
+    "exampleCn": "医生减少了剂量以避免副作用。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 2083,
+    "word": "immune",
+    "phonetic": "/ɪˈmjuːn/",
+    "pos": "adj./n.",
+    "meaning": "免疫的/不受影响的/免疫者",
+    "example": "Some animals are immune to certain diseases.",
+    "exampleCn": "一些动物对某些疾病有免疫力。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 2110,
+    "word": "hormone",
+    "phonetic": "/ˈhɔːrmoʊn/",
+    "pos": "n.",
+    "meaning": "激素/荷尔蒙",
+    "example": "This hormone helps control growth.",
+    "exampleCn": "这种激素有助于控制生长。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 2119,
+    "word": "forehead",
+    "phonetic": "/ˈfɔːrhed/",
+    "pos": "n.",
+    "meaning": "额头",
+    "example": "She wiped the sweat from her forehead.",
+    "exampleCn": "她擦掉额头上的汗。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 2146,
+    "word": "vague",
+    "phonetic": "/veɪɡ/",
+    "pos": "adj.",
+    "meaning": "模糊的/不明确的",
+    "example": "His answer was too vague to be useful.",
+    "exampleCn": "他的回答太模糊，没有什么帮助。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 2162,
+    "word": "pore",
+    "phonetic": "/pɔːr/",
+    "pos": "n./v.",
+    "meaning": "毛孔/小孔/仔细阅读",
+    "example": "Sweat leaves the body through pores in the skin.",
+    "exampleCn": "汗液通过皮肤上的毛孔排出体外。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 2169,
+    "word": "rib",
+    "phonetic": "/rɪb/",
+    "pos": "n./v.",
+    "meaning": "肋骨/排骨/取笑",
+    "example": "The rib cage protects the heart and lungs.",
+    "exampleCn": "胸腔保护心脏和肺。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 2204,
+    "word": "virtue",
+    "phonetic": "/ˈvɜːrtʃuː/",
+    "pos": "n.",
+    "meaning": "美德/优点",
+    "example": "Patience is an important virtue for a teacher.",
+    "exampleCn": "耐心是教师的一项重要美德。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 2220,
+    "word": "lap",
+    "phonetic": "/læp/",
+    "pos": "n./v.",
+    "meaning": "大腿上部/一圈/舔/轻拍",
+    "example": "The runner completed one lap around the track.",
+    "exampleCn": "跑者绕跑道完成了一圈。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 2292,
+    "word": "trait",
+    "phonetic": "/treɪt/",
+    "pos": "n.",
+    "meaning": "特征/特点",
+    "example": "Patience is an important trait for a good teacher.",
+    "exampleCn": "耐心是一位好老师的重要特质。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 2313,
+    "word": "skull",
+    "phonetic": "/skʌl/",
+    "pos": "n.",
+    "meaning": "头骨/颅骨",
+    "example": "The museum displayed the skull of an ancient animal.",
+    "exampleCn": "博物馆展出了一种古代动物的头骨。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 2407,
+    "word": "waist",
+    "phonetic": "/weɪst/",
+    "pos": "n.",
+    "meaning": "腰/腰部",
+    "example": "The belt was too loose around his waist.",
+    "exampleCn": "这条腰带在他腰上太松了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 2660,
+    "word": "stature",
+    "phonetic": "/ˈstætʃər/",
+    "pos": "n.",
+    "meaning": "身高/声望/地位",
+    "example": "The scientist gained stature in the field.",
+    "exampleCn": "这位科学家在该领域获得了声望。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 2751,
+    "word": "gland",
+    "phonetic": "/ɡlænd/",
+    "pos": "n.",
+    "meaning": "腺",
+    "example": "The thyroid gland helps regulate metabolism.",
+    "exampleCn": "甲状腺有助于调节新陈代谢。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 2916,
+    "word": "stimulus",
+    "phonetic": "/ˈstɪmjələs/",
+    "pos": "n.",
+    "meaning": "刺激/刺激物/促进因素",
+    "example": "Light is a powerful stimulus for plant growth.",
+    "exampleCn": "光是植物生长的强烈刺激因素。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 3076,
+    "word": "limb",
+    "phonetic": "/lɪm/",
+    "pos": "n.",
+    "meaning": "肢/臂/腿/树枝",
+    "example": "The injured bird could not move one limb properly.",
+    "exampleCn": "受伤的鸟无法正常移动一只肢体。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "24",
+    "ieltsLists": [
+      "24",
+      "56"
+    ]
+  },
+  {
+    "id": 3180,
+    "word": "intestine",
+    "phonetic": "/ɪnˈtestɪn/",
+    "pos": "n.",
+    "meaning": "肠",
+    "example": "Nutrients are absorbed mainly in the small intestine.",
+    "exampleCn": "营养物质主要在小肠中被吸收。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5344,
+    "word": "feel",
+    "phonetic": "fiːl",
+    "pos": "v.",
+    "meaning": "感觉/感受到/触摸",
+    "example": "She felt a sudden pain in her arm.",
+    "exampleCn": "她感到手臂一阵剧痛。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5345,
+    "word": "mood",
+    "phonetic": "muːd",
+    "pos": "n.",
+    "meaning": "情绪/心情/氛围",
+    "example": "He is in a good mood today.",
+    "exampleCn": "他今天心情很好。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5346,
+    "word": "temper",
+    "phonetic": "ˈtempə",
+    "pos": "n.",
+    "meaning": "脾气/情绪/性情",
+    "example": "He lost his temper and started shouting.",
+    "exampleCn": "他发了脾气开始大喊大叫。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5347,
+    "word": "manner",
+    "phonetic": "ˈmænə",
+    "pos": "n.",
+    "meaning": "态度/方式/举止",
+    "example": "She spoke in a calm and polite manner.",
+    "exampleCn": "她以冷静礼貌的态度说了话。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5348,
+    "word": "personality",
+    "phonetic": "ˌpɜːsəˈnæləti",
+    "pos": "n.",
+    "meaning": "个性/人格/性格",
+    "example": "She has a warm and outgoing personality.",
+    "exampleCn": "她温暖开朗，为人外向。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5349,
+    "word": "flesh",
+    "phonetic": "fleʃ",
+    "pos": "n.",
+    "meaning": "肌肉/肉体/果肉",
+    "example": "The flesh of the peach was sweet and juicy.",
+    "exampleCn": "桃子的肉又甜又多汁。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5350,
+    "word": "mankind",
+    "phonetic": "mænˈkaɪnd",
+    "pos": "n.",
+    "meaning": "人类/全人类",
+    "example": "This discovery could benefit all of mankind.",
+    "exampleCn": "这一发现可能造福全人类。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5351,
+    "word": "human",
+    "phonetic": "ˈhjuːmən",
+    "pos": "n./adj.",
+    "meaning": "人/人类的/人性",
+    "example": "It is human nature to make mistakes.",
+    "exampleCn": "犯错是人类的天性。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5352,
+    "word": "skeleton",
+    "phonetic": "ˈskelɪtn",
+    "pos": "n.",
+    "meaning": "骨骼/骷髅/框架",
+    "example": "The human skeleton consists of 206 bones.",
+    "exampleCn": "人体骨骼由206块骨头组成。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5353,
+    "word": "mind",
+    "phonetic": "maɪnd",
+    "pos": "n./v.",
+    "meaning": "头脑/思想/介意",
+    "example": "She had a sharp mind even in old age.",
+    "exampleCn": "她年事已高仍头脑敏锐。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5354,
+    "word": "physical",
+    "phonetic": "ˈfɪzɪkl",
+    "pos": "adj.",
+    "meaning": "身体的/物理的/物质的",
+    "example": "Regular physical exercise is good for health.",
+    "exampleCn": "规律的体育锻炼有益健康。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5355,
+    "word": "brow",
+    "phonetic": "braʊ",
+    "pos": "n.",
+    "meaning": "眉毛/额头/眉骨",
+    "example": "She raised a brow in surprise.",
+    "exampleCn": "她惊讶地扬起了眉毛。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5356,
+    "word": "eyelash",
+    "phonetic": "ˈaɪlæʃ",
+    "pos": "n.",
+    "meaning": "睫毛/眼睫毛",
+    "example": "She applied mascara to her eyelashes.",
+    "exampleCn": "她在睫毛上刷了睫毛膏。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5357,
+    "word": "lip",
+    "phonetic": "lɪp",
+    "pos": "n.",
+    "meaning": "嘴唇/唇部",
+    "example": "She bit her lip nervously.",
+    "exampleCn": "她紧张地咬了咬嘴唇。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5358,
+    "word": "tongue",
+    "phonetic": "tʌŋ",
+    "pos": "n.",
+    "meaning": "舌头/舌/语言",
+    "example": "The soup burned his tongue.",
+    "exampleCn": "汤烫了他的舌头。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5359,
+    "word": "throat",
+    "phonetic": "θrəʊt",
+    "pos": "n.",
+    "meaning": "喉咙/咽喉/嗓子",
+    "example": "She has a sore throat and cannot speak.",
+    "exampleCn": "她喉咙痛无法说话。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5360,
+    "word": "gorge",
+    "phonetic": "ɡɔːdʒ",
+    "pos": "n.",
+    "meaning": "峡谷/咽喉",
+    "example": "They hiked through a deep river gorge.",
+    "exampleCn": "他们徒步穿过了一座深邃的河谷峡谷。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5361,
+    "word": "chin",
+    "phonetic": "tʃɪn",
+    "pos": "n.",
+    "meaning": "下巴/下颌",
+    "example": "He rested his chin on his hand.",
+    "exampleCn": "他用手托着下巴。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5362,
+    "word": "jaw",
+    "phonetic": "dʒɔː",
+    "pos": "n.",
+    "meaning": "下颌/颚/下巴",
+    "example": "He clenched his jaw in anger.",
+    "exampleCn": "他气得紧咬牙关。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5363,
+    "word": "neck",
+    "phonetic": "nek",
+    "pos": "n.",
+    "meaning": "脖子/颈部",
+    "example": "She wore a scarf around her neck.",
+    "exampleCn": "她脖子上围了一条围巾。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5364,
+    "word": "shoulder",
+    "phonetic": "ˈʃəʊldə",
+    "pos": "n.",
+    "meaning": "肩膀/肩部",
+    "example": "She carried the heavy bag on her shoulder.",
+    "exampleCn": "她扛着沉重的包。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5365,
+    "word": "elbow",
+    "phonetic": "ˈelbəʊ",
+    "pos": "n.",
+    "meaning": "肘部/手肘",
+    "example": "He bumped his elbow on the door frame.",
+    "exampleCn": "他的手肘撞到了门框上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5366,
+    "word": "thumb",
+    "phonetic": "θʌm",
+    "pos": "n.",
+    "meaning": "拇指/大拇指",
+    "example": "He gave a thumbs-up sign of approval.",
+    "exampleCn": "他竖起拇指表示赞许。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5367,
+    "word": "palm",
+    "phonetic": "pɑːm",
+    "pos": "n.",
+    "meaning": "手掌/掌心/棕榈树",
+    "example": "She held the coin tightly in her palm.",
+    "exampleCn": "她把硬币紧紧握在掌心。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5368,
+    "word": "finger",
+    "phonetic": "ˈfɪŋɡə",
+    "pos": "n.",
+    "meaning": "手指/指头",
+    "example": "She cut her finger while chopping vegetables.",
+    "exampleCn": "她切菜时割伤了手指。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5369,
+    "word": "fist",
+    "phonetic": "fɪst",
+    "pos": "n.",
+    "meaning": "拳头/拳",
+    "example": "He banged his fist on the table.",
+    "exampleCn": "他用拳头捶了一下桌子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5370,
+    "word": "abdomen",
+    "phonetic": "ˈæbdəmən",
+    "pos": "n.",
+    "meaning": "腹部/下腹",
+    "example": "The doctor examined the patient's abdomen.",
+    "exampleCn": "医生检查了病人的腹部。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5371,
+    "word": "liver",
+    "phonetic": "ˈlɪvə",
+    "pos": "n.",
+    "meaning": "肝脏/肝",
+    "example": "Drinking too much alcohol can damage the liver.",
+    "exampleCn": "饮酒过量会损伤肝脏。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5372,
+    "word": "stomach",
+    "phonetic": "ˈstʌmək",
+    "pos": "n.",
+    "meaning": "胃/腹部/胃口",
+    "example": "She complained of a stomach ache.",
+    "exampleCn": "她抱怨胃痛。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5373,
+    "word": "womb",
+    "phonetic": "wuːm",
+    "pos": "n.",
+    "meaning": "子宫/母胎",
+    "example": "The baby grows inside the womb.",
+    "exampleCn": "婴儿在子宫内发育成长。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5374,
+    "word": "kidney",
+    "phonetic": "ˈkɪdni",
+    "pos": "n.",
+    "meaning": "肾脏/肾",
+    "example": "He donated one of his kidneys to his brother.",
+    "exampleCn": "他把自己的一只肾捐给了兄弟。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5375,
+    "word": "lung",
+    "phonetic": "lʌŋ",
+    "pos": "n.",
+    "meaning": "肺/肺脏",
+    "example": "Smoking can cause lung cancer.",
+    "exampleCn": "吸烟可导致肺癌。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5376,
+    "word": "thigh",
+    "phonetic": "θaɪ",
+    "pos": "n.",
+    "meaning": "大腿/股",
+    "example": "She injured her thigh while running.",
+    "exampleCn": "她跑步时伤了大腿。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5377,
+    "word": "knee",
+    "phonetic": "niː",
+    "pos": "n.",
+    "meaning": "膝盖/膝关节",
+    "example": "He fell and scraped his knee.",
+    "exampleCn": "他摔倒了擦伤了膝盖。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5378,
+    "word": "ankle",
+    "phonetic": "ˈæŋkl",
+    "pos": "n.",
+    "meaning": "脚踝/踝关节",
+    "example": "She twisted her ankle while walking.",
+    "exampleCn": "她走路时扭了脚踝。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5379,
+    "word": "heel",
+    "phonetic": "hiːl",
+    "pos": "n.",
+    "meaning": "脚后跟/鞋跟",
+    "example": "The heel of her shoe broke.",
+    "exampleCn": "她的鞋跟断了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5380,
+    "word": "toe",
+    "phonetic": "təʊ",
+    "pos": "n.",
+    "meaning": "脚趾/足尖",
+    "example": "He stubbed his toe on the leg of the table.",
+    "exampleCn": "他在桌腿上踢到了脚趾。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5381,
+    "word": "artery",
+    "phonetic": "ˈɑːtəri",
+    "pos": "n.",
+    "meaning": "动脉/干线",
+    "example": "Blood flows through the arteries to all parts of the body.",
+    "exampleCn": "血液通过动脉流向全身各处。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5382,
+    "word": "nerve",
+    "phonetic": "nɜːv",
+    "pos": "n.",
+    "meaning": "神经/勇气/胆量",
+    "example": "He damaged a nerve in his hand.",
+    "exampleCn": "他手上的神经受损了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5383,
+    "word": "immunise",
+    "phonetic": "ˈɪmjʊnaɪz",
+    "pos": "v.",
+    "meaning": "免疫接种/使免疫",
+    "example": "Children are immunised against measles.",
+    "exampleCn": "孩子们接种了麻疹疫苗。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5384,
+    "word": "biorhythm",
+    "phonetic": "ˈbaɪəʊrɪðəm",
+    "pos": "n.",
+    "meaning": "生物节律/生物周期",
+    "example": "Some people believe biorhythms affect their mood.",
+    "exampleCn": "有些人相信生物节律会影响情绪。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5385,
+    "word": "lifestyle",
+    "phonetic": "ˈlaɪfstaɪl",
+    "pos": "n.",
+    "meaning": "生活方式/生活风格",
+    "example": "A healthy lifestyle can prevent many diseases.",
+    "exampleCn": "健康的生活方式可以预防很多疾病。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5386,
+    "word": "habit",
+    "phonetic": "ˈhæbɪt",
+    "pos": "n.",
+    "meaning": "习惯/习性",
+    "example": "Brushing your teeth should be a daily habit.",
+    "exampleCn": "刷牙应该成为一个日常习惯。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5387,
+    "word": "sense",
+    "phonetic": "sens",
+    "pos": "n.",
+    "meaning": "感觉/意义/感官",
+    "example": "Dogs have a keen sense of smell.",
+    "exampleCn": "狗有敏锐的嗅觉。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5388,
+    "word": "sight",
+    "phonetic": "saɪt",
+    "pos": "n.",
+    "meaning": "视力/景象/看见",
+    "example": "She lost her sight in a car accident.",
+    "exampleCn": "她在一场车祸中丧失了视力。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5389,
+    "word": "eyesight",
+    "phonetic": "ˈaɪsaɪt",
+    "pos": "n.",
+    "meaning": "视力/视觉",
+    "example": "His eyesight has been failing in recent years.",
+    "exampleCn": "他的视力近年来一直在下降。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5390,
+    "word": "view",
+    "phonetic": "vjuː",
+    "pos": "n.",
+    "meaning": "视野/观点/景色",
+    "example": "There is a stunning view from the top of the mountain.",
+    "exampleCn": "山顶的景色美得惊人。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5391,
+    "word": "visual",
+    "phonetic": "ˈvɪʒuəl",
+    "pos": "adj.",
+    "meaning": "视觉的/视力的",
+    "example": "She uses visual aids in her presentations.",
+    "exampleCn": "她在演示中使用视觉辅助手段。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5392,
+    "word": "dumb",
+    "phonetic": "dʌm",
+    "pos": "adj.",
+    "meaning": "哑的/愚蠢的/说不出话",
+    "example": "She was struck dumb with fear.",
+    "exampleCn": "她吓得说不出话来。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5393,
+    "word": "aural",
+    "phonetic": "ˈɔːrəl",
+    "pos": "adj.",
+    "meaning": "听觉的/耳的",
+    "example": "She prefers aural learning to visual learning.",
+    "exampleCn": "她偏爱听觉学习而非视觉学习。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5394,
+    "word": "dental",
+    "phonetic": "ˈdentl",
+    "pos": "adj.",
+    "meaning": "牙齿的/牙科的",
+    "example": "Regular dental check-ups are important.",
+    "exampleCn": "定期检查牙齿很重要。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5395,
+    "word": "awake",
+    "phonetic": "əˈweɪk",
+    "pos": "adj./v.",
+    "meaning": "醒着的/醒来",
+    "example": "She lay awake all night thinking.",
+    "exampleCn": "她一夜无眠想着心事。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5396,
+    "word": "snore",
+    "phonetic": "snɔː",
+    "pos": "v.",
+    "meaning": "打鼾/打呼噜",
+    "example": "He snores so loudly that his wife cannot sleep.",
+    "exampleCn": "他打鼾声很大以致他的妻子睡不着觉。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5397,
+    "word": "doze",
+    "phonetic": "dəʊz",
+    "pos": "v.",
+    "meaning": "打盹/打瞌睡",
+    "example": "She dozed off while watching television.",
+    "exampleCn": "她看电视时打起了盹。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5398,
+    "word": "asleep",
+    "phonetic": "əˈsliːp",
+    "pos": "adj.",
+    "meaning": "睡着的/入睡的",
+    "example": "The baby was sound asleep in the cot.",
+    "exampleCn": "婴儿在婴儿床里睡得很沉。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  },
+  {
+    "id": 5399,
+    "word": "nap",
+    "phonetic": "næp",
+    "pos": "n.",
+    "meaning": "小睡/打盹/午觉",
+    "example": "She took a short nap after lunch.",
+    "exampleCn": "午饭后她小睡了一会儿。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
+  }
+]

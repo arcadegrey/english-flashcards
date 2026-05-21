@@ -84,10 +84,15 @@
     "category": "toefl",
     "categories": [
       "toefl",
-      "cet4"
+      "cet4",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 152,
@@ -144,7 +149,8 @@
     "list": "2",
     "ieltsList": "41",
     "ieltsLists": [
-      "41"
+      "41",
+      "52"
     ]
   },
   {
@@ -503,10 +509,15 @@
     "exampleCn": "她有积极的态度。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 614,
@@ -533,10 +544,15 @@
     "exampleCn": "把钥匙插入锁里。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 616,
@@ -653,10 +669,15 @@
     "exampleCn": "请继续你的工作。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 623,
@@ -713,10 +734,15 @@
     "exampleCn": "孩子依赖父母。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 627,
@@ -1108,10 +1134,15 @@
     "exampleCn": "这个项目涉及很多人。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 650,
@@ -1163,10 +1194,15 @@
     "exampleCn": "孩子应该守规矩。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 653,
@@ -1218,10 +1254,15 @@
     "exampleCn": "他履行了他的承诺。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 656,
@@ -1633,10 +1674,15 @@
     "exampleCn": "他们决定扩建房子。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "3",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 681,

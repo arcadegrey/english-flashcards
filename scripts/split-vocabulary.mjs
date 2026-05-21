@@ -88,6 +88,15 @@ const getIeltsTopicMeta = (list) => {
     if (numericList >= 46 && numericList <= 47) {
       return { key: 'warfare-battlefield', label: '征战沙场' };
     }
+    if (numericList >= 48 && numericList <= 49) {
+      return { key: 'warfare-battlefield', label: '征战沙场' };
+    }
+    if (numericList === 50) {
+      return { key: 'social-relationships', label: '社会关系' };
+    }
+    if (numericList >= 51 && numericList <= 56) {
+      return { key: 'actions-behaviors', label: '行为动作' };
+    }
   }
 
   return { key: 'unknown', label: '未分主题' };

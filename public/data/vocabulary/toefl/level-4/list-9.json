@@ -26,10 +26,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 137,
@@ -142,10 +147,15 @@
     "exampleCn": "区分事实和观点很重要。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
   },
   {
     "id": 2178,
@@ -224,10 +234,15 @@
     "exampleCn": "学生应该努力提高写作能力。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 2183,
@@ -419,10 +434,15 @@
     "exampleCn": "那名跑者试图在终点线附近超过领先者。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 2195,
@@ -595,10 +615,15 @@
     "exampleCn": "耐心是教师的一项重要美德。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 2205,
@@ -791,10 +816,15 @@
     "exampleCn": "金属可能会与空气中的氧气发生反应。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 2217,
@@ -856,10 +886,15 @@
     "exampleCn": "跑者绕跑道完成了一圈。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 2221,
@@ -961,10 +996,15 @@
     "exampleCn": "军队在战斗后不得不撤退。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 2227,
@@ -1071,10 +1111,15 @@
     "exampleCn": "噪音会干扰注意力。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 2234,
@@ -1285,10 +1330,15 @@
     "exampleCn": "科学家重复实验来核实结果。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "9"
+    "list": "9",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 2247,
@@ -1422,7 +1472,8 @@
     "list": "9",
     "ieltsList": "25",
     "ieltsLists": [
-      "25"
+      "25",
+      "51"
     ]
   },
   {

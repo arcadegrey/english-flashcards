@@ -283,10 +283,15 @@
     "exampleCn": "徒步者沿着一条狭窄的小路穿过森林。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 1540,
@@ -315,10 +320,15 @@
     "exampleCn": "这些标记帮助科学家区分不同物种。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
   },
   {
     "id": 1542,
@@ -649,10 +659,15 @@
     "exampleCn": "青春期是身体和情感快速变化的时期。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
   },
   {
     "id": 1563,
@@ -664,10 +679,15 @@
     "exampleCn": "这个岛成为了受欢迎的旅游度假胜地。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 1564,
@@ -1021,10 +1041,15 @@
     "exampleCn": "双方经过长时间讨论后达成了妥协。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 1585,
@@ -1141,10 +1166,15 @@
     "exampleCn": "海浪猛烈撞击岩石。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 1592,
@@ -1226,10 +1256,15 @@
     "exampleCn": "一个错误可能会毁掉数月的细致工作。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 1597,
@@ -1291,10 +1326,15 @@
     "exampleCn": "洪水过后，许多居民不得不逃离该地区。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 1601,
@@ -1376,10 +1416,15 @@
     "exampleCn": "根可以穿透到土壤深处。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 1606,
@@ -1406,10 +1451,15 @@
     "exampleCn": "阳光无法穿透海洋最深处。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 1608,
@@ -1513,10 +1563,15 @@
     "exampleCn": "风可以把种子散播到广阔的区域。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 1615,
@@ -1630,10 +1685,15 @@
     "exampleCn": "老师有时用视频代替现场演示。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "2"
+    "list": "2",
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
   },
   {
     "id": 1622,

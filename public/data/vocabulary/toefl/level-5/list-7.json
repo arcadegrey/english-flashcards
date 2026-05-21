@@ -342,10 +342,15 @@
     "exampleCn": "这个程序可以从大型数据库中检索信息。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 3034,
@@ -651,10 +656,15 @@
     "exampleCn": "公司任命她为前任主管的继任者。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
   },
   {
     "id": 3053,
@@ -1045,7 +1055,8 @@
     "list": "7",
     "ieltsList": "24",
     "ieltsLists": [
-      "24"
+      "24",
+      "56"
     ]
   },
   {
@@ -1482,10 +1493,15 @@
     "exampleCn": "这个结构能够承受强风。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "7"
+    "list": "7",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 3103,

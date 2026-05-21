@@ -1,0 +1,1117 @@
+[
+  {
+    "id": 363,
+    "word": "cancel",
+    "phonetic": "/ˈkænsl/",
+    "pos": "v.",
+    "meaning": "取消",
+    "example": "They canceled the meeting.",
+    "exampleCn": "他们取消了会议。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 394,
+    "word": "cause",
+    "phonetic": "/kɔːz/",
+    "pos": "n./v.",
+    "meaning": "原因；引起",
+    "example": "The cause of the fire is unknown.",
+    "exampleCn": "火灾原因不明。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 520,
+    "word": "rescue",
+    "phonetic": "/ˈreskjuː/",
+    "pos": "v./n.",
+    "meaning": "救援；营救",
+    "example": "The firefighters rescued the trapped people.",
+    "exampleCn": "消防员救出了被困人员。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 680,
+    "word": "enlarge",
+    "phonetic": "/ɪnˈlɑːdʒ/",
+    "pos": "v.",
+    "meaning": "扩大；放大；扩展",
+    "example": "They decided to enlarge the house.",
+    "exampleCn": "他们决定扩建房子。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 751,
+    "word": "seek",
+    "phonetic": "/siːk/",
+    "pos": "v.",
+    "meaning": "寻找；寻求；请求",
+    "example": "Seek help if needed.",
+    "exampleCn": "需要时寻求帮助。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 1007,
+    "word": "greet",
+    "phonetic": "/ɡriːt/",
+    "pos": "v.",
+    "meaning": "问候，迎接",
+    "example": "They greeted us warmly at the airport.",
+    "exampleCn": "他们在机场热情地迎接了我们。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 1203,
+    "word": "prolong",
+    "phonetic": "/prəˈlɔːŋ/",
+    "pos": "v.",
+    "meaning": "延长；拖长",
+    "example": "The treatment may prolong the patient’s life.",
+    "exampleCn": "这种治疗可能延长病人的生命。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 1230,
+    "word": "obtain",
+    "phonetic": "/əbˈteɪn/",
+    "pos": "v.",
+    "meaning": "获得；得到",
+    "example": "Students must obtain permission before entering the lab.",
+    "exampleCn": "学生进入实验室前必须获得许可。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 1389,
+    "word": "leak",
+    "phonetic": "/liːk/",
+    "pos": "n./v.",
+    "meaning": "漏洞；泄漏/泄漏",
+    "example": "There is a leak in the roof above the kitchen.",
+    "exampleCn": "厨房上方的屋顶漏水了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 1413,
+    "word": "sink",
+    "phonetic": "/sɪŋk/",
+    "pos": "v./n.",
+    "meaning": "下沉；沉没/水槽",
+    "example": "The boat began to sink in the storm.",
+    "exampleCn": "这艘船在暴风雨中开始下沉。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "10",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 1455,
+    "word": "trigger",
+    "phonetic": "/ˈtrɪɡər/",
+    "pos": "n./v.",
+    "meaning": "扳机/诱因/触发/引发",
+    "example": "A sudden drop in temperature can trigger the plant's dormancy.",
+    "exampleCn": "气温突然下降可能会触发植物进入休眠。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 1503,
+    "word": "objective",
+    "phonetic": "/əbˈdʒektɪv/",
+    "pos": "adj./n.",
+    "meaning": "客观的/目标",
+    "example": "An objective report is based on evidence rather than opinion.",
+    "exampleCn": "客观的报告基于证据而不是观点。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 1518,
+    "word": "restore",
+    "phonetic": "/rɪˈstɔːr/",
+    "pos": "v.",
+    "meaning": "恢复/修复/归还",
+    "example": "Workers tried to restore the damaged painting.",
+    "exampleCn": "工人们试图修复受损的画作。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 1563,
+    "word": "resort",
+    "phonetic": "/rɪˈzɔːrt/",
+    "pos": "n./v.",
+    "meaning": "度假胜地/求助于/诉诸",
+    "example": "The island became a popular tourist resort.",
+    "exampleCn": "这个岛成为了受欢迎的旅游度假胜地。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 1656,
+    "word": "worship",
+    "phonetic": "/ˈwɜːrʃɪp/",
+    "pos": "v./n.",
+    "meaning": "崇拜/敬奉",
+    "example": "Ancient people often worshipped the forces of nature.",
+    "exampleCn": "古人常常崇拜自然力量。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 1688,
+    "word": "exaggerate",
+    "phonetic": "/ɪɡˈzædʒəreɪt/",
+    "pos": "v.",
+    "meaning": "夸大/夸张",
+    "example": "People sometimes exaggerate problems to gain attention.",
+    "exampleCn": "人们有时会夸大问题以获得关注。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 1696,
+    "word": "seep",
+    "phonetic": "/siːp/",
+    "pos": "v.",
+    "meaning": "渗出/渗透",
+    "example": "Water began to seep through the cracks in the wall.",
+    "exampleCn": "水开始从墙上的裂缝渗出。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 1708,
+    "word": "arouse",
+    "phonetic": "/əˈraʊz/",
+    "pos": "v.",
+    "meaning": "引起/唤起",
+    "example": "The speech aroused public interest in education reform.",
+    "exampleCn": "这场演讲激起了公众对教育改革的兴趣。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 1804,
+    "word": "magnify",
+    "phonetic": "/ˈmæɡnɪfaɪ/",
+    "pos": "v.",
+    "meaning": "放大/夸大",
+    "example": "A microscope can magnify tiny organisms.",
+    "exampleCn": "显微镜可以放大微小生物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 1895,
+    "word": "testify",
+    "phonetic": "/ˈtestɪfaɪ/",
+    "pos": "v.",
+    "meaning": "作证/证明",
+    "example": "Several witnesses agreed to testify in court.",
+    "exampleCn": "几名证人同意在法庭上作证。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 2057,
+    "word": "overshadow",
+    "phonetic": "/ˌoʊvərˈʃædoʊ/",
+    "pos": "v.",
+    "meaning": "使黯然失色/遮蔽",
+    "example": "The discovery was overshadowed by later events.",
+    "exampleCn": "这一发现被后来的事件所掩盖。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "7",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 2140,
+    "word": "spill",
+    "phonetic": "/spɪl/",
+    "pos": "v./n.",
+    "meaning": "溢出/洒出/泄露/溢出物",
+    "example": "Be careful not to spill the chemicals.",
+    "exampleCn": "小心不要洒出这些化学品。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 2246,
+    "word": "verify",
+    "phonetic": "/ˈverɪfaɪ/",
+    "pos": "v.",
+    "meaning": "核实/证实",
+    "example": "The scientist repeated the test to verify the result.",
+    "exampleCn": "科学家重复实验来核实结果。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 2645,
+    "word": "specify",
+    "phonetic": "/ˈspesɪfaɪ/",
+    "pos": "v.",
+    "meaning": "明确说明/具体指定",
+    "example": "The instructions specify the exact temperature.",
+    "exampleCn": "说明书明确指出了准确温度。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 2683,
+    "word": "saturate",
+    "phonetic": "/ˈsætʃəreɪt/",
+    "pos": "v.",
+    "meaning": "使浸透/使饱和",
+    "example": "The heavy rain saturated the soil.",
+    "exampleCn": "大雨使土壤完全浸透。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 2783,
+    "word": "propel",
+    "phonetic": "/prəˈpel/",
+    "pos": "v.",
+    "meaning": "推动/推进",
+    "example": "Wind can propel a sailboat across the water.",
+    "exampleCn": "风可以推动帆船在水面前进。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "4",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 2851,
+    "word": "amplify",
+    "phonetic": "/ˈæmplɪfaɪ/",
+    "pos": "v.",
+    "meaning": "放大/增强/详述",
+    "example": "The microphone helped amplify the speaker’s voice.",
+    "exampleCn": "麦克风帮助放大了演讲者的声音。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "5",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 2979,
+    "word": "plummet",
+    "phonetic": "/ˈplʌmɪt/",
+    "pos": "v./n.",
+    "meaning": "暴跌/骤降/铅锤",
+    "example": "Temperatures plummeted during the night.",
+    "exampleCn": "夜间气温骤降。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "6",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 3033,
+    "word": "retrieve",
+    "phonetic": "/rɪˈtriːv/",
+    "pos": "v.",
+    "meaning": "取回/检索/恢复",
+    "example": "The program can retrieve information from a large database.",
+    "exampleCn": "这个程序可以从大型数据库中检索信息。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "7",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 3142,
+    "word": "render",
+    "phonetic": "/ˈrendər/",
+    "pos": "v.",
+    "meaning": "使成为/呈现/提供",
+    "example": "The new evidence may render the old theory useless.",
+    "exampleCn": "新证据可能会使旧理论失去作用。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 3183,
+    "word": "muffle",
+    "phonetic": "/ˈmʌfl/",
+    "pos": "v.",
+    "meaning": "使声音减弱/裹住",
+    "example": "Thick curtains helped muffle the noise from the street.",
+    "exampleCn": "厚窗帘有助于减弱街上的噪音。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 3233,
+    "word": "offset",
+    "phonetic": "/ˈɔːfset/",
+    "pos": "v./n.",
+    "meaning": "抵消/弥补/补偿/偏移量",
+    "example": "The company planted trees to offset its carbon emissions.",
+    "exampleCn": "公司植树来抵消碳排放。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 3471,
+    "word": "ooze",
+    "phonetic": "/uːz/",
+    "pos": "v./n.",
+    "meaning": "渗出/慢慢流出/软泥",
+    "example": "Water began to ooze through the cracks.",
+    "exampleCn": "水开始从裂缝中渗出。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "6",
+    "list": "3",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5303,
+    "word": "erase",
+    "phonetic": "ɪˈreɪz",
+    "pos": "v.",
+    "meaning": "擦除/抹去",
+    "example": "She erased the notes from the whiteboard.",
+    "exampleCn": "她擦掉了白板上的笔记。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5304,
+    "word": "recover",
+    "phonetic": "rɪˈkʌvə",
+    "pos": "v.",
+    "meaning": "康复/恢复/找回",
+    "example": "She recovered from her illness within a week.",
+    "exampleCn": "她一周内就从病中康复了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5305,
+    "word": "rectify",
+    "phonetic": "ˈrektɪfaɪ",
+    "pos": "v.",
+    "meaning": "纠正/改正",
+    "example": "The company took steps to rectify the problem.",
+    "exampleCn": "公司采取了措施来纠正问题。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5306,
+    "word": "redeem",
+    "phonetic": "rɪˈdiːm",
+    "pos": "v.",
+    "meaning": "赎回/挽回/兑换",
+    "example": "He redeemed his coupon for a free meal.",
+    "exampleCn": "他用优惠券兑换了一顿免费餐。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5307,
+    "word": "replenish",
+    "phonetic": "rɪˈplenɪʃ",
+    "pos": "v.",
+    "meaning": "补充/重新装满",
+    "example": "She replenished the water in the kettle.",
+    "exampleCn": "她给水壶续满了水。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5308,
+    "word": "gain",
+    "phonetic": "ɡeɪn",
+    "pos": "v.",
+    "meaning": "获得/增加/收益",
+    "example": "She gained valuable experience from the internship.",
+    "exampleCn": "她从实习中获得了宝贵的经验。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5309,
+    "word": "supply",
+    "phonetic": "səˈplaɪ",
+    "pos": "v./n.",
+    "meaning": "供应/提供",
+    "example": "The company supplies equipment to hospitals.",
+    "exampleCn": "这家公司为医院供应设备。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5310,
+    "word": "augment",
+    "phonetic": "ɔːɡˈment",
+    "pos": "v.",
+    "meaning": "增加/增大",
+    "example": "He took a second job to augment his income.",
+    "exampleCn": "他找了第二份工作来增加收入。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5311,
+    "word": "uphold",
+    "phonetic": "ʌpˈhəʊld",
+    "pos": "v.",
+    "meaning": "支持/维护/维持",
+    "example": "The court upheld the earlier decision.",
+    "exampleCn": "法院维持了早先的判决。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5312,
+    "word": "backup",
+    "phonetic": "ˈbækʌp",
+    "pos": "n./v.",
+    "meaning": "备份/后援",
+    "example": "Make a backup of your files regularly.",
+    "exampleCn": "定期备份你的文件。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5313,
+    "word": "update",
+    "phonetic": "ʌpˈdeɪt",
+    "pos": "v.",
+    "meaning": "更新/升级",
+    "example": "She updated the software on her computer.",
+    "exampleCn": "她更新了电脑上的软件。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5314,
+    "word": "raise",
+    "phonetic": "reɪz",
+    "pos": "v.",
+    "meaning": "举起/提高/抚养",
+    "example": "They raised money for the children's hospital.",
+    "exampleCn": "他们为儿童医院筹集了资金。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5315,
+    "word": "evacuate",
+    "phonetic": "ɪˈvækjueɪt",
+    "pos": "v.",
+    "meaning": "疏散/撤离/排空",
+    "example": "The building was evacuated after the bomb threat.",
+    "exampleCn": "炸弹威胁后大楼被疏散了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5316,
+    "word": "trench",
+    "phonetic": "trentʃ",
+    "pos": "n.",
+    "meaning": "沟渠/战壕",
+    "example": "Soldiers dug trenches to protect themselves.",
+    "exampleCn": "士兵们挖战壕来保护自己。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5317,
+    "word": "excuse",
+    "phonetic": "ɪkˈskjuːz",
+    "pos": "v./n.",
+    "meaning": "原谅/借口",
+    "example": "Please excuse me for being late.",
+    "exampleCn": "请原谅我迟到了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5318,
+    "word": "forgive",
+    "phonetic": "fəˈɡɪv",
+    "pos": "v.",
+    "meaning": "原谅/宽恕",
+    "example": "She forgave him for his mistake.",
+    "exampleCn": "她原谅了他的错误。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5319,
+    "word": "contain",
+    "phonetic": "kənˈteɪn",
+    "pos": "v.",
+    "meaning": "包含/容纳/控制",
+    "example": "The box contains various old photographs.",
+    "exampleCn": "盒子里装着各种旧照片。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5320,
+    "word": "regard",
+    "phonetic": "rɪˈɡɑːd",
+    "pos": "v./n.",
+    "meaning": "看待/关于/问候",
+    "example": "He is highly regarded in his field.",
+    "exampleCn": "他在自己领域内备受尊敬。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5321,
+    "word": "flatter",
+    "phonetic": "ˈflætə",
+    "pos": "v.",
+    "meaning": "奉承/使高兴",
+    "example": "She flattered him by praising his cooking.",
+    "exampleCn": "她夸他的厨艺来奉承他。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5322,
+    "word": "sake",
+    "phonetic": "seɪk",
+    "pos": "n.",
+    "meaning": "理由/目的/缘故",
+    "example": "For the sake of your health, you should exercise.",
+    "exampleCn": "为了你的健康着想，你应该运动。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5323,
+    "word": "purpose",
+    "phonetic": "ˈpɜːpəs",
+    "pos": "n.",
+    "meaning": "目的/意图/用途",
+    "example": "The purpose of the trip is to meet new clients.",
+    "exampleCn": "这次出行的目的是会见新客户。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5324,
+    "word": "enlighten",
+    "phonetic": "ɪnˈlaɪtn",
+    "pos": "v.",
+    "meaning": "启发/启迪/开导",
+    "example": "The documentary enlightened viewers about climate change.",
+    "exampleCn": "这部纪录片启发了观众对气候变化的认识。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5325,
+    "word": "impart",
+    "phonetic": "ɪmˈpɑːt",
+    "pos": "v.",
+    "meaning": "传授/给予/赋予",
+    "example": "Teachers impart knowledge to their students.",
+    "exampleCn": "教师向学生传授知识。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5326,
+    "word": "deserve",
+    "phonetic": "dɪˈzɜːv",
+    "pos": "v.",
+    "meaning": "值得/应受/应得",
+    "example": "She deserves recognition for her hard work.",
+    "exampleCn": "她的勤奋工作值得被认可。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5327,
+    "word": "drop",
+    "phonetic": "drɒp",
+    "pos": "v.",
+    "meaning": "掉落/下降/放下",
+    "example": "She dropped the keys on the floor.",
+    "exampleCn": "她把钥匙掉在了地上。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5328,
+    "word": "invite",
+    "phonetic": "ɪnˈvaɪt",
+    "pos": "v.",
+    "meaning": "邀请/招致",
+    "example": "She invited all her friends to the party.",
+    "exampleCn": "她邀请了所有朋友来参加聚会。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  },
+  {
+    "id": 5329,
+    "word": "salute",
+    "phonetic": "səˈluːt",
+    "pos": "v./n.",
+    "meaning": "敬礼/致敬/致意",
+    "example": "The soldiers saluted the flag.",
+    "exampleCn": "士兵们向国旗敬礼。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
+  }
+]

@@ -1,0 +1,1140 @@
+[
+  {
+    "id": 49,
+    "word": "amaze",
+    "phonetic": "/əˈmeɪz/",
+    "pos": "v.",
+    "meaning": "使吃惊，使惊叹",
+    "example": "The magician's tricks amazed the audience.",
+    "exampleCn": "魔术师的魔术让观众惊叹不已。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 146,
+    "word": "annoy",
+    "phonetic": "/əˈnɔɪ/",
+    "pos": "v.",
+    "meaning": "使烦恼；打扰；骚扰",
+    "example": "The noise annoyed me.",
+    "exampleCn": "噪音让我很烦。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 172,
+    "word": "arrange",
+    "phonetic": "/əˈreɪndʒ/",
+    "pos": "v.",
+    "meaning": "安排，整理",
+    "example": "She arranged the books on the shelf.",
+    "exampleCn": "她整理了架子上的书。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 184,
+    "word": "astonish",
+    "phonetic": "/əˈstɑːnɪʃ/",
+    "pos": "v.",
+    "meaning": "使吃惊，使惊讶",
+    "example": "His knowledge of history astonished his teacher.",
+    "exampleCn": "他对历史的了解让老师很惊讶。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 191,
+    "word": "attract",
+    "phonetic": "/əˈtrækt/",
+    "pos": "v.",
+    "meaning": "吸引",
+    "example": "The beautiful scenery attracts many tourists.",
+    "exampleCn": "美丽的风景吸引了许多游客。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 276,
+    "word": "bond",
+    "phonetic": "/bɒnd/",
+    "pos": "n./v.",
+    "meaning": "纽带；联系；结合",
+    "example": "The bond between them is strong.",
+    "exampleCn": "他们之间的纽带很强。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "daily",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41",
+      "52"
+    ]
+  },
+  {
+    "id": 495,
+    "word": "combine",
+    "phonetic": "/kəmˈbaɪn/",
+    "pos": "v.",
+    "meaning": "结合，联合",
+    "example": "We should combine theory with practice.",
+    "exampleCn": "我们应该把理论和实践结合起来。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "cet4",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 523,
+    "word": "scratch",
+    "phonetic": "/skrætʃ/",
+    "pos": "v./n.",
+    "meaning": "抓；搔；起跑线",
+    "example": "Don't scratch the table with your keys.",
+    "exampleCn": "别用钥匙刮桌子。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 543,
+    "word": "neglect",
+    "phonetic": "/nɪˈɡlekt/",
+    "pos": "v./n.",
+    "meaning": "忽视；忽略；疏忽",
+    "example": "Don't neglect your studies.",
+    "exampleCn": "不要忽视你的学业。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 567,
+    "word": "contact",
+    "phonetic": "/ˈkɒntækt/",
+    "pos": "n./v.",
+    "meaning": "联系；接触；联络",
+    "example": "Please contact me by email.",
+    "exampleCn": "请通过电子邮件联系我。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 615,
+    "word": "insert",
+    "phonetic": "/ɪnˈsɜːt/",
+    "pos": "v.",
+    "meaning": "插入；嵌入",
+    "example": "Insert the key into the lock.",
+    "exampleCn": "把钥匙插入锁里。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 649,
+    "word": "involve",
+    "phonetic": "/ɪnˈvɒlv/",
+    "pos": "v.",
+    "meaning": "涉及；包含；使参与",
+    "example": "The project involves many people.",
+    "exampleCn": "这个项目涉及很多人。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "2",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 700,
+    "word": "collide",
+    "phonetic": "/kəˈlaɪd/",
+    "pos": "v.",
+    "meaning": "碰撞；冲突",
+    "example": "The two cars collided.",
+    "exampleCn": "两辆车相撞了。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 744,
+    "word": "wrap",
+    "phonetic": "/ræp/",
+    "pos": "v.",
+    "meaning": "包裹；缠绕",
+    "example": "Wrap the gift carefully.",
+    "exampleCn": "小心包裹礼物。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "3",
+    "ieltsList": "29",
+    "ieltsLists": [
+      "29",
+      "52"
+    ]
+  },
+  {
+    "id": 988,
+    "word": "fold",
+    "phonetic": "/foʊld/",
+    "pos": "v./n.",
+    "meaning": "折叠/褶，层",
+    "example": "Please fold the paper in half./The map has many folds.",
+    "exampleCn": "请把纸对折。/这张地图有很多折痕。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "6",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 1050,
+    "word": "connect",
+    "phonetic": "/kəˈnekt/",
+    "pos": "v.",
+    "meaning": "连接/联系",
+    "example": "The bridge connects the two towns./I could not connect his name with his face.",
+    "exampleCn": "这座桥连接着两个城镇。/我没法把他的名字和长相对上。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 1064,
+    "word": "polish",
+    "phonetic": "/ˈpɑːlɪʃ/",
+    "pos": "v./n.",
+    "meaning": "擦亮，润色/光泽，擦光剂",
+    "example": "She polished her shoes before the interview./The final report needs some polish.",
+    "exampleCn": "她在面试前擦亮了鞋子。/最终报告还需要再润色一下。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 1090,
+    "word": "wipe",
+    "phonetic": "/waɪp/",
+    "pos": "v./n.",
+    "meaning": "擦，抹/擦拭",
+    "example": "Wipe the table with a clean cloth./Give the screen a quick wipe.",
+    "exampleCn": "用干净的布把桌子擦一擦。/把屏幕快速擦一下。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "7",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 1201,
+    "word": "disregard",
+    "phonetic": "/ˌdɪsrɪˈɡɑːrd/",
+    "pos": "v./n.",
+    "meaning": "忽视；不理会/忽视",
+    "example": "They disregarded the warning signs.",
+    "exampleCn": "他们无视了警告标志。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "8",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 1466,
+    "word": "stake",
+    "phonetic": "/steɪk/",
+    "pos": "n./v.",
+    "meaning": "桩/股份/利害关系/用桩支撑",
+    "example": "The company has a large stake in the success of the project.",
+    "exampleCn": "公司在这个项目的成功中有很大的利害关系。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 1478,
+    "word": "steer",
+    "phonetic": "/stɪr/",
+    "pos": "v.",
+    "meaning": "驾驶/引导/控制方向",
+    "example": "The captain tried to steer the ship away from the rocks.",
+    "exampleCn": "船长试图驾驶船只避开礁石。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "1",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 1539,
+    "word": "trail",
+    "phonetic": "/treɪl/",
+    "pos": "n./v.",
+    "meaning": "小路/踪迹/拖在后面/跟踪",
+    "example": "The hikers followed a narrow trail through the forest.",
+    "exampleCn": "徒步者沿着一条狭窄的小路穿过森林。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 1591,
+    "word": "smash",
+    "phonetic": "/smæʃ/",
+    "pos": "v./n.",
+    "meaning": "打碎/猛撞/巨大成功",
+    "example": "The waves smashed against the rocks.",
+    "exampleCn": "海浪猛烈撞击岩石。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 1605,
+    "word": "pierce",
+    "phonetic": "/pɪrs/",
+    "pos": "v.",
+    "meaning": "刺穿/穿透",
+    "example": "The roots can pierce deep into the soil.",
+    "exampleCn": "根可以穿透到土壤深处。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 1607,
+    "word": "penetrate",
+    "phonetic": "/ˈpenətreɪt/",
+    "pos": "v.",
+    "meaning": "穿透/渗透/进入",
+    "example": "Sunlight cannot penetrate the deepest parts of the ocean.",
+    "exampleCn": "阳光无法穿透海洋最深处。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 1614,
+    "word": "scatter",
+    "phonetic": "/ˈskætər/",
+    "pos": "v.",
+    "meaning": "散开/撒播/驱散",
+    "example": "The wind can scatter seeds across a wide area.",
+    "exampleCn": "风可以把种子散播到广阔的区域。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "2",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 1670,
+    "word": "sway",
+    "phonetic": "/sweɪ/",
+    "pos": "v./n.",
+    "meaning": "摇摆/影响/支配",
+    "example": "Public opinion can sway political decisions.",
+    "exampleCn": "公众意见会影响政治决定。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 1686,
+    "word": "rotate",
+    "phonetic": "/ˈroʊteɪt/",
+    "pos": "v.",
+    "meaning": "旋转/轮换",
+    "example": "The Earth rotates once every twenty-four hours.",
+    "exampleCn": "地球每二十四小时自转一次。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "3",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 1733,
+    "word": "scrape",
+    "phonetic": "/skreɪp/",
+    "pos": "v./n.",
+    "meaning": "刮/擦伤",
+    "example": "The glacier can scrape rocks as it moves.",
+    "exampleCn": "冰川移动时会刮擦岩石。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 1773,
+    "word": "vibrate",
+    "phonetic": "/ˈvaɪbreɪt/",
+    "pos": "v.",
+    "meaning": "振动",
+    "example": "The strings vibrate when the musician plays the guitar.",
+    "exampleCn": "音乐家弹吉他时琴弦会振动。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "4",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 1864,
+    "word": "peel",
+    "phonetic": "/piːl/",
+    "pos": "v./n.",
+    "meaning": "剥皮/脱落/果皮",
+    "example": "She used a knife to peel the apple.",
+    "exampleCn": "她用刀给苹果削皮。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "5",
+    "ieltsList": "31",
+    "ieltsLists": [
+      "31",
+      "32",
+      "52"
+    ]
+  },
+  {
+    "id": 2115,
+    "word": "ironic",
+    "phonetic": "/aɪˈrɑːnɪk/",
+    "pos": "adj.",
+    "meaning": "讽刺的/出乎意料的",
+    "example": "It was ironic that the fire station burned down.",
+    "exampleCn": "消防站被烧毁这件事很讽刺。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 2143,
+    "word": "split",
+    "phonetic": "/splɪt/",
+    "pos": "v./n./adj.",
+    "meaning": "分裂/分开/裂缝/分裂的",
+    "example": "The river splits into two smaller streams.",
+    "exampleCn": "这条河分成两条较小的溪流。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "8",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 2375,
+    "word": "twist",
+    "phonetic": "/twɪst/",
+    "pos": "v./n.",
+    "meaning": "扭转/转折/弯曲",
+    "example": "The story had an unexpected twist at the end.",
+    "exampleCn": "故事结尾有一个意想不到的转折。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "10",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 2616,
+    "word": "tilt",
+    "phonetic": "/tɪlt/",
+    "pos": "v./n.",
+    "meaning": "倾斜/使倾斜/倾斜度",
+    "example": "The tower began to tilt after the earthquake.",
+    "exampleCn": "地震后这座塔开始倾斜。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "2",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 2711,
+    "word": "manipulate",
+    "phonetic": "/məˈnɪpjəleɪt/",
+    "pos": "v.",
+    "meaning": "操纵/操作/熟练处理",
+    "example": "The technician manipulated the controls carefully.",
+    "exampleCn": "技术员小心地操作控制装置。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "3",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 3197,
+    "word": "integrate",
+    "phonetic": "/ˈɪntɪɡreɪt/",
+    "pos": "v.",
+    "meaning": "整合/融入",
+    "example": "Schools try to integrate technology into daily lessons.",
+    "exampleCn": "学校努力把科技融入日常课程。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "8",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 3208,
+    "word": "marvel",
+    "phonetic": "/ˈmɑːrvl/",
+    "pos": "v./n.",
+    "meaning": "惊叹/奇迹/令人惊异的人或事",
+    "example": "Visitors marvel at the engineering of the ancient bridge.",
+    "exampleCn": "游客们惊叹于这座古桥的工程技术。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "5",
+    "list": "9",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 3971,
+    "word": "reel",
+    "phonetic": "riːl",
+    "pos": "n.",
+    "meaning": "卷轴/一卷",
+    "example": "A reel of film was found in the attic.",
+    "exampleCn": "在阁楼里发现了一卷胶片。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "13",
+    "ieltsLists": [
+      "13",
+      "52"
+    ]
+  },
+  {
+    "id": 5008,
+    "word": "prejudice",
+    "phonetic": "ˈpredʒʊdɪs",
+    "pos": "n.",
+    "meaning": "偏见/歧视",
+    "example": "Racial prejudice has no place in modern society.",
+    "exampleCn": "种族偏见在现代社会中没有立足之地。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "44",
+    "ieltsLists": [
+      "44",
+      "52"
+    ]
+  },
+  {
+    "id": 5255,
+    "word": "mess",
+    "phonetic": "mes",
+    "pos": "n.",
+    "meaning": "混乱/脏乱",
+    "example": "The room was in a mess after the party.",
+    "exampleCn": "聚会后房间一片混乱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5256,
+    "word": "fasten",
+    "phonetic": "ˈfɑːsn",
+    "pos": "v.",
+    "meaning": "系紧/扣住/固定",
+    "example": "Fasten your seatbelt before the car moves.",
+    "exampleCn": "车开动前请系好安全带。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5257,
+    "word": "shake",
+    "phonetic": "ʃeɪk",
+    "pos": "v.",
+    "meaning": "摇晃/摇动/震动",
+    "example": "Shake the bottle well before opening.",
+    "exampleCn": "打开前请充分摇动瓶子。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5258,
+    "word": "whirl",
+    "phonetic": "wɜːl",
+    "pos": "v.",
+    "meaning": "旋转/回旋",
+    "example": "The leaves whirled around in the wind.",
+    "exampleCn": "树叶在风中飞旋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5259,
+    "word": "shuffle",
+    "phonetic": "ˈʃʌfl",
+    "pos": "v.",
+    "meaning": "洗牌/拖着脚走",
+    "example": "He shuffled the cards before dealing.",
+    "exampleCn": "他洗了牌然后发牌。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5260,
+    "word": "tow",
+    "phonetic": "təʊ",
+    "pos": "v.",
+    "meaning": "拖/拽/牵引",
+    "example": "The car broke down and had to be towed away.",
+    "exampleCn": "车坏了，不得不被拖走。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5261,
+    "word": "baptise",
+    "phonetic": "bæpˈtaɪz",
+    "pos": "v.",
+    "meaning": "洗礼/给施洗",
+    "example": "The baby was baptised in the local church.",
+    "exampleCn": "婴儿在本地教堂受了洗礼。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5262,
+    "word": "bet",
+    "phonetic": "bet",
+    "pos": "v./n.",
+    "meaning": "打赌/下注",
+    "example": "He bet all his money on the race.",
+    "exampleCn": "他把所有的钱都押在比赛上了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5263,
+    "word": "gamble",
+    "phonetic": "ˈɡæmbl",
+    "pos": "v./n.",
+    "meaning": "赌博/投机",
+    "example": "He lost a fortune gambling at the casino.",
+    "exampleCn": "他在赌场赌博输掉了一笔财富。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5264,
+    "word": "promise",
+    "phonetic": "ˈprɒmɪs",
+    "pos": "v./n.",
+    "meaning": "承诺/保证",
+    "example": "She promised to call when she arrived safely.",
+    "exampleCn": "她承诺安全到达后会打电话。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5265,
+    "word": "obsess",
+    "phonetic": "əbˈses",
+    "pos": "v.",
+    "meaning": "使着迷/迷恋",
+    "example": "He became obsessed with the idea of becoming famous.",
+    "exampleCn": "他迷恋上了成名的念头。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5266,
+    "word": "mesmerise",
+    "phonetic": "ˈmezməraɪz",
+    "pos": "v.",
+    "meaning": "迷住/催眠",
+    "example": "The audience was mesmerised by the dancer's performance.",
+    "exampleCn": "观众被舞者的表演迷住了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5267,
+    "word": "nightmare",
+    "phonetic": "ˈnaɪtmeə",
+    "pos": "n.",
+    "meaning": "噩梦/可怕的事",
+    "example": "She had a terrible nightmare about falling.",
+    "exampleCn": "她做了一个关于坠落的可怕噩梦。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5268,
+    "word": "upset",
+    "phonetic": "ʌpˈset",
+    "pos": "v./adj.",
+    "meaning": "使心烦/打乱",
+    "example": "The bad news upset her greatly.",
+    "exampleCn": "坏消息让她非常心烦。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5269,
+    "word": "bewilder",
+    "phonetic": "bɪˈwɪldə",
+    "pos": "v.",
+    "meaning": "使迷惑/使困惑",
+    "example": "The complicated map bewildered the tourists.",
+    "exampleCn": "复杂的地图让游客们困惑不已。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5270,
+    "word": "contempt",
+    "phonetic": "kənˈtempt",
+    "pos": "n.",
+    "meaning": "蔑视/轻视",
+    "example": "He looked at the thief with contempt.",
+    "exampleCn": "他轻蔑地看着小偷。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5271,
+    "word": "ignorance",
+    "phonetic": "ˈɪɡnərəns",
+    "pos": "n.",
+    "meaning": "无知/愚昧",
+    "example": "Prejudice is often born of ignorance.",
+    "exampleCn": "偏见常常源于无知。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5272,
+    "word": "irony",
+    "phonetic": "ˈaɪrəni",
+    "pos": "n.",
+    "meaning": "讽刺/反语",
+    "example": "The irony was that the fire station burned down.",
+    "exampleCn": "讽刺的是消防站被烧毁了。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5273,
+    "word": "indignity",
+    "phonetic": "ɪnˈdɪɡnəti",
+    "pos": "n.",
+    "meaning": "侮辱/轻蔑/屈辱",
+    "example": "He suffered the indignity of being ignored.",
+    "exampleCn": "他遭受了被忽视的屈辱。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  },
+  {
+    "id": 5274,
+    "word": "bias",
+    "phonetic": "ˈbaɪəs",
+    "pos": "n.",
+    "meaning": "偏见/偏向",
+    "example": "The judge was accused of bias against the defendant.",
+    "exampleCn": "法官被指控对被告有偏见。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
+  }
+]

@@ -309,6 +309,9 @@ const getIeltsTopicKey = (list) => {
     if (numericList >= 41 && numericList <= 43) return 'society-economy'
     if (numericList >= 44 && numericList <= 45) return 'law-regulation'
     if (numericList >= 46 && numericList <= 47) return 'warfare-battlefield'
+    if (numericList >= 48 && numericList <= 49) return 'warfare-battlefield'
+    if (numericList === 50) return 'social-relationships'
+    if (numericList >= 51 && numericList <= 56) return 'actions-behaviors'
   }
 
   return IELTS_UNKNOWN_TOPIC
@@ -334,6 +337,8 @@ const getIeltsTopicLabel = (topicKey) => {
     'society-economy': '社会经济',
     'law-regulation': '法律法规',
     'warfare-battlefield': '征战沙场',
+    'social-relationships': '社会关系',
+    'actions-behaviors': '行为动作',
     [IELTS_UNKNOWN_TOPIC]: '未分主题',
   }
   return labels[topicKey] || '未分主题'

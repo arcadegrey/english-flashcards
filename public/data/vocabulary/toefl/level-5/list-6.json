@@ -48,10 +48,15 @@
     "exampleCn": "光是植物生长的强烈刺激因素。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 2917,
@@ -459,10 +464,15 @@
     "exampleCn": "法院判定他犯有欺诈罪。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 2942,
@@ -948,10 +958,15 @@
     "exampleCn": "他们每周六修剪草坪。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 2973,
@@ -1065,10 +1080,15 @@
     "exampleCn": "夜间气温骤降。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 2980,

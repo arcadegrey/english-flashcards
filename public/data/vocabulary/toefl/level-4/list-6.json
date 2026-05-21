@@ -17,7 +17,8 @@
     "list": "6",
     "ieltsList": "42",
     "ieltsLists": [
-      "42"
+      "42",
+      "50"
     ]
   },
   {
@@ -630,10 +631,15 @@
     "exampleCn": "这个设备的一个重要特点是成本低。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 1931,
@@ -660,10 +666,15 @@
     "exampleCn": "暴风雨过后，这棵树开始倾斜。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
   },
   {
     "id": 1933,
@@ -1212,10 +1223,15 @@
     "exampleCn": "小企业是当地经济的支柱。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 1966,
@@ -1257,10 +1273,15 @@
     "exampleCn": "如果不紧急维修，这座旧桥可能会倒塌。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 1969,
@@ -1402,10 +1423,15 @@
     "exampleCn": "医生建议他减少糖分摄入量。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "6"
+    "list": "6",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 1978,

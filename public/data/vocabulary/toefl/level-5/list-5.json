@@ -583,10 +583,15 @@
     "exampleCn": "麦克风帮助放大了演讲者的声音。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 2852,
@@ -1612,9 +1617,14 @@
     "exampleCn": "乌云开始在城市上空逼近。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   }
 ]

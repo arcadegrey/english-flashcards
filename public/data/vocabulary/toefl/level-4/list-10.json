@@ -96,7 +96,8 @@
     "list": "10",
     "ieltsList": "21",
     "ieltsLists": [
-      "21"
+      "21",
+      "53"
     ]
   },
   {
@@ -131,10 +132,15 @@
     "category": "cet4",
     "categories": [
       "cet4",
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "55",
+    "ieltsLists": [
+      "55"
+    ]
   },
   {
     "id": 209,
@@ -408,10 +414,15 @@
     "exampleCn": "这两家公司面临激烈竞争。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 2285,
@@ -538,10 +549,15 @@
     "exampleCn": "耐心是一位好老师的重要特质。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 2293,
@@ -723,10 +739,15 @@
     "exampleCn": "地震毁坏了几个沿海城镇。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 2305,
@@ -843,10 +864,15 @@
     "exampleCn": "月球对地球海洋施加引力。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 2313,
@@ -858,10 +884,15 @@
     "exampleCn": "博物馆展出了一种古代动物的头骨。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 2314,
@@ -1315,10 +1346,15 @@
     "exampleCn": "这座城市试图清除河流污染。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 2341,
@@ -1362,10 +1398,15 @@
     "exampleCn": "这所大学将开展一项新的研究项目。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 2344,
@@ -1377,10 +1418,15 @@
     "exampleCn": "两位邻居因围栏问题发生争执。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 2345,
@@ -1392,10 +1438,15 @@
     "exampleCn": "公开批评可能会羞辱一名年轻学生。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 2346,
@@ -1736,10 +1787,15 @@
     "exampleCn": "这座城市有悠久的海事历史。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 2367,
@@ -1751,10 +1807,15 @@
     "exampleCn": "警报响起时，人们开始恐慌。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 2368,
@@ -1766,10 +1827,15 @@
     "exampleCn": "徒步者可能会在公园里遇到野生动物。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 2369,
@@ -1883,10 +1949,15 @@
     "exampleCn": "故事结尾有一个意想不到的转折。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 2376,
@@ -2455,10 +2526,15 @@
     "exampleCn": "这条腰带在他腰上太松了。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 2408,
@@ -2770,10 +2846,15 @@
     "exampleCn": "这名运动员赢得了一枚金牌。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 2427,

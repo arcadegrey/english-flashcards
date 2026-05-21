@@ -644,10 +644,15 @@
     "exampleCn": "水开始从裂缝中渗出。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "6",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 3472,

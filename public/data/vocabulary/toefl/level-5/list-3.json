@@ -197,10 +197,15 @@
     "exampleCn": "洗碗是一项日常家务。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 2637,
@@ -342,10 +347,15 @@
     "exampleCn": "说明书明确指出了准确温度。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 2646,
@@ -372,10 +382,15 @@
     "exampleCn": "这种昆虫利用伪装躲避捕食者。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 2648,
@@ -577,10 +592,15 @@
     "exampleCn": "这位科学家在该领域获得了声望。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "56",
+    "ieltsLists": [
+      "56"
+    ]
   },
   {
     "id": 2661,
@@ -944,10 +964,15 @@
     "exampleCn": "大雨使土壤完全浸透。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 2684,
@@ -1230,10 +1255,15 @@
     "exampleCn": "每个兄弟姐妹都继承了农场的一部分。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "49",
+    "ieltsLists": [
+      "49"
+    ]
   },
   {
     "id": 2701,
@@ -1405,10 +1435,15 @@
     "exampleCn": "技术员小心地操作控制装置。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "52",
+    "ieltsLists": [
+      "52"
+    ]
   },
   {
     "id": 2712,
@@ -1490,10 +1525,15 @@
     "exampleCn": "学徒向一位熟练的木匠学习。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "3"
+    "list": "3",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 2717,

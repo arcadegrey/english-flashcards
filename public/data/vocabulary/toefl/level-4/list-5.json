@@ -325,10 +325,15 @@
     "exampleCn": "健康的食物可以滋养身体并提高注意力。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   },
   {
     "id": 1819,
@@ -702,10 +707,15 @@
     "exampleCn": "市议会投票决定建造一个新公园。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 1842,
@@ -1082,7 +1092,8 @@
     "ieltsList": "31",
     "ieltsLists": [
       "31",
-      "32"
+      "32",
+      "52"
     ]
   },
   {
@@ -1619,10 +1630,15 @@
     "exampleCn": "几名证人同意在法庭上作证。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "4",
-    "list": "5"
+    "list": "5",
+    "ieltsList": "54",
+    "ieltsLists": [
+      "54"
+    ]
   },
   {
     "id": 1896,

@@ -856,10 +856,15 @@
     "exampleCn": "细节应当服务于主要论点。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "50",
+    "ieltsLists": [
+      "50"
+    ]
   },
   {
     "id": 2485,
@@ -1357,10 +1362,15 @@
     "exampleCn": "恶臭来自受污染的河流。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "48",
+    "ieltsLists": [
+      "48"
+    ]
   },
   {
     "id": 2516,
@@ -1387,10 +1397,15 @@
     "exampleCn": "该地区被指定为国家公园。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "1"
+    "list": "1",
+    "ieltsList": "53",
+    "ieltsLists": [
+      "53"
+    ]
   },
   {
     "id": 2518,

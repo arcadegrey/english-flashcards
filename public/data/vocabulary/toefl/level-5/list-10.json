@@ -454,9 +454,14 @@
     "exampleCn": "他发誓要按时完成这个项目。",
     "category": "toefl",
     "categories": [
-      "toefl"
+      "toefl",
+      "ielts"
     ],
     "level": "5",
-    "list": "10"
+    "list": "10",
+    "ieltsList": "51",
+    "ieltsLists": [
+      "51"
+    ]
   }
 ]

@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-05-21T10:05:45.845Z",
+  "generatedAt": "2026-05-21T14:28:18.356Z",
   "source": "/data/vocabulary.json",
-  "sourceTotal": 5117,
+  "sourceTotal": 5399,
   "core": {
     "path": "/data/vocabulary/core.json",
-    "count": 199
+    "count": 178
   },
   "ielts": {
-    "total": 2795,
-    "meta": "18 个主题",
+    "total": 3335,
+    "meta": "20 个主题",
     "topics": [
       {
         "key": "nature-geography",
@@ -509,7 +509,7 @@
       {
         "key": "warfare-battlefield",
         "label": "征战沙场",
-        "count": 120,
+        "count": 240,
         "lists": [
           {
             "key": "46",
@@ -526,9 +526,97 @@
             "path": "/data/vocabulary/ielts/list-47.json",
             "topicKey": "warfare-battlefield",
             "topicLabel": "征战沙场"
+          },
+          {
+            "key": "48",
+            "label": "List 48",
+            "count": 83,
+            "path": "/data/vocabulary/ielts/list-48.json",
+            "topicKey": "warfare-battlefield",
+            "topicLabel": "征战沙场"
+          },
+          {
+            "key": "49",
+            "label": "List 49",
+            "count": 37,
+            "path": "/data/vocabulary/ielts/list-49.json",
+            "topicKey": "warfare-battlefield",
+            "topicLabel": "征战沙场"
           }
         ],
-        "meta": "2 个 List"
+        "meta": "4 个 List"
+      },
+      {
+        "key": "social-relationships",
+        "label": "社会关系",
+        "count": 60,
+        "lists": [
+          {
+            "key": "50",
+            "label": "List 50",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-50.json",
+            "topicKey": "social-relationships",
+            "topicLabel": "社会关系"
+          }
+        ],
+        "meta": "1 个 List"
+      },
+      {
+        "key": "actions-behaviors",
+        "label": "行为动作",
+        "count": 360,
+        "lists": [
+          {
+            "key": "51",
+            "label": "List 51",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-51.json",
+            "topicKey": "actions-behaviors",
+            "topicLabel": "行为动作"
+          },
+          {
+            "key": "52",
+            "label": "List 52",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-52.json",
+            "topicKey": "actions-behaviors",
+            "topicLabel": "行为动作"
+          },
+          {
+            "key": "53",
+            "label": "List 53",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-53.json",
+            "topicKey": "actions-behaviors",
+            "topicLabel": "行为动作"
+          },
+          {
+            "key": "54",
+            "label": "List 54",
+            "count": 60,
+            "path": "/data/vocabulary/ielts/list-54.json",
+            "topicKey": "actions-behaviors",
+            "topicLabel": "行为动作"
+          },
+          {
+            "key": "55",
+            "label": "List 55",
+            "count": 27,
+            "path": "/data/vocabulary/ielts/list-55.json",
+            "topicKey": "actions-behaviors",
+            "topicLabel": "行为动作"
+          },
+          {
+            "key": "56",
+            "label": "List 56",
+            "count": 93,
+            "path": "/data/vocabulary/ielts/list-56.json",
+            "topicKey": "actions-behaviors",
+            "topicLabel": "行为动作"
+          }
+        ],
+        "meta": "6 个 List"
       }
     ],
     "lists": [
@@ -907,6 +995,78 @@
         "path": "/data/vocabulary/ielts/list-47.json",
         "topicKey": "warfare-battlefield",
         "topicLabel": "征战沙场"
+      },
+      {
+        "key": "48",
+        "label": "List 48",
+        "count": 83,
+        "path": "/data/vocabulary/ielts/list-48.json",
+        "topicKey": "warfare-battlefield",
+        "topicLabel": "征战沙场"
+      },
+      {
+        "key": "49",
+        "label": "List 49",
+        "count": 37,
+        "path": "/data/vocabulary/ielts/list-49.json",
+        "topicKey": "warfare-battlefield",
+        "topicLabel": "征战沙场"
+      },
+      {
+        "key": "50",
+        "label": "List 50",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-50.json",
+        "topicKey": "social-relationships",
+        "topicLabel": "社会关系"
+      },
+      {
+        "key": "51",
+        "label": "List 51",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-51.json",
+        "topicKey": "actions-behaviors",
+        "topicLabel": "行为动作"
+      },
+      {
+        "key": "52",
+        "label": "List 52",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-52.json",
+        "topicKey": "actions-behaviors",
+        "topicLabel": "行为动作"
+      },
+      {
+        "key": "53",
+        "label": "List 53",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-53.json",
+        "topicKey": "actions-behaviors",
+        "topicLabel": "行为动作"
+      },
+      {
+        "key": "54",
+        "label": "List 54",
+        "count": 60,
+        "path": "/data/vocabulary/ielts/list-54.json",
+        "topicKey": "actions-behaviors",
+        "topicLabel": "行为动作"
+      },
+      {
+        "key": "55",
+        "label": "List 55",
+        "count": 27,
+        "path": "/data/vocabulary/ielts/list-55.json",
+        "topicKey": "actions-behaviors",
+        "topicLabel": "行为动作"
+      },
+      {
+        "key": "56",
+        "label": "List 56",
+        "count": 93,
+        "path": "/data/vocabulary/ielts/list-56.json",
+        "topicKey": "actions-behaviors",
+        "topicLabel": "行为动作"
       }
     ]
   }
