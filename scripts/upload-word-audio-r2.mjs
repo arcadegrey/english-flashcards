@@ -17,6 +17,8 @@ function parseArgs(argv) {
     dryRun: false,
     limit: 0,
     start: 0,
+    minId: 0,
+    maxId: 0,
     batchSize: DEFAULT_BATCH_SIZE,
     retries: DEFAULT_RETRIES,
     batchDelayMs: DEFAULT_BATCH_DELAY_MS,
@@ -43,6 +45,8 @@ function parseArgs(argv) {
     else if (arg === '--batch-delay-ms') args.batchDelayMs = Number(next());
     else if (arg === '--limit') args.limit = Number(next());
     else if (arg === '--start') args.start = Number(next());
+    else if (arg === '--min-id') args.minId = Number(next());
+    else if (arg === '--max-id') args.maxId = Number(next());
     else if (arg === '--wrangler') args.wrangler = next();
     else if (arg === '--dry-run') args.dryRun = true;
     else if (arg === '--help' || arg === '-h') {
@@ -77,6 +81,18 @@ function parseArgs(argv) {
     throw new Error('--start must be a non-negative integer');
   }
 
+  if (!Number.isInteger(args.minId) || args.minId < 0) {
+    throw new Error('--min-id must be a non-negative integer');
+  }
+
+  if (!Number.isInteger(args.maxId) || args.maxId < 0) {
+    throw new Error('--max-id must be a non-negative integer');
+  }
+
+  if (args.maxId > 0 && args.minId > 0 && args.maxId < args.minId) {
+    throw new Error('--max-id must be greater than or equal to --min-id');
+  }
+
   args.prefix = args.prefix.replace(/^\/+|\/+$/g, '');
   return args;
 }
@@ -97,6 +113,8 @@ Options:
   --batch-delay-ms <n>  Delay between MP3 batches. Default: ${DEFAULT_BATCH_DELAY_MS}
   --start <n>           Skip the first n files after sorting.
   --limit <n>           Upload only the first n files.
+  --min-id <n>          Upload only MP3 files with numeric id >= n. Always includes manifest.json.
+  --max-id <n>          Upload only MP3 files with numeric id <= n. Always includes manifest.json.
   --wrangler <command>  Wrangler command. Default: npx wrangler@4
   --dry-run             Print what would upload without writing to R2.
 `);
@@ -130,6 +148,22 @@ function getContentType(filePath) {
 function getCacheControl(filePath) {
   if (filePath.endsWith('.mp3')) return 'public, max-age=31536000, immutable';
   return 'public, max-age=300';
+}
+
+function getNumericAudioId(filePath) {
+  const parsed = Number.parseInt(path.basename(filePath, '.mp3'), 10);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : 0;
+}
+
+function matchesIdRange(filePath, minId, maxId) {
+  if (!filePath.endsWith('.mp3')) return true;
+  if (minId === 0 && maxId === 0) return true;
+
+  const audioId = getNumericAudioId(filePath);
+  if (!audioId) return false;
+  if (minId > 0 && audioId < minId) return false;
+  if (maxId > 0 && audioId > maxId) return false;
+  return true;
 }
 
 function splitCommand(command) {
@@ -217,7 +251,6 @@ async function bulkUploadMp3({ wrangler, bucket, items, concurrency, batchSize, 
   }
 
   let uploaded = 0;
-  const batchFailures = [];
 
   for (let batchIndex = 0; batchIndex < batches.length; batchIndex += 1) {
     const batch = batches[batchIndex];
@@ -265,12 +298,7 @@ async function bulkUploadMp3({ wrangler, bucket, items, concurrency, batchSize, 
           );
           await wait(retryDelayMs);
         } else {
-          batchFailures.push({
-            batchIndex,
-            count: batch.length,
-            error: error.message,
-          });
-          console.error(
+          throw new Error(
             `Batch ${batchIndex + 1}/${batches.length} failed after ${retries} attempts: ${error.message}`,
           );
         }
@@ -282,14 +310,6 @@ async function bulkUploadMp3({ wrangler, bucket, items, concurrency, batchSize, 
     if (batchIndex < batches.length - 1 && batchDelayMs > 0) {
       await wait(batchDelayMs);
     }
-  }
-
-  if (batchFailures.length > 0) {
-    const failedCount = batchFailures.reduce((sum, batch) => sum + batch.count, 0);
-    throw new Error(
-      `${batchFailures.length} batch(es) failed (${failedCount} files total). ` +
-        `First: ${batchFailures[0].error}`,
-    );
   }
 }
 
@@ -328,7 +348,8 @@ async function main() {
 
   const sourceDir = path.resolve(args.sourceDir);
   const files = await collectFiles(sourceDir);
-  const remainingFiles = files.slice(args.start);
+  const filteredFiles = files.filter((filePath) => matchesIdRange(filePath, args.minId, args.maxId));
+  const remainingFiles = filteredFiles.slice(args.start);
   const selectedFiles = args.limit > 0 ? remainingFiles.slice(0, args.limit) : remainingFiles;
   const uploadItems = selectedFiles.map((filePath) => {
     const relative = path.relative(sourceDir, filePath).split(path.sep).join('/');
@@ -341,7 +362,12 @@ async function main() {
   console.log(`Source: ${sourceDir}`);
   console.log(`Bucket: ${args.bucket}`);
   console.log(`Prefix: ${args.prefix}`);
+  console.log(`Min ID: ${args.minId || 'none'}`);
+  console.log(`Max ID: ${args.maxId || 'none'}`);
   console.log(`Start: ${args.start}`);
+  console.log(`Batch size: ${args.batchSize}`);
+  console.log(`Concurrency: ${args.concurrency}`);
+  console.log(`Batch delay: ${args.batchDelayMs}ms`);
   console.log(`Files: ${uploadItems.length}`);
 
   if (args.dryRun) {

@@ -8,39 +8,39 @@
     "am_michael",
     "bf_emma"
   ],
-  "wordCount": 3577,
-  "generatedWordCount": 3577,
+  "wordCount": 5399,
+  "generatedWordCount": 5399,
   "start": 0,
   "limit": 0,
   "voices": {
     "af_bella": {
-      "done": 3577,
-      "generated": 3575,
-      "skipped": 2,
+      "done": 5399,
+      "generated": 1822,
+      "skipped": 3577,
       "failed": 0,
-      "bytes": 17847648,
+      "bytes": 26726112,
       "path": "af_bella/{id}.mp3",
       "langCode": "a"
     },
     "am_michael": {
-      "done": 3577,
-      "generated": 3575,
-      "skipped": 2,
+      "done": 5399,
+      "generated": 1822,
+      "skipped": 3577,
       "failed": 0,
-      "bytes": 17621352,
+      "bytes": 26312112,
       "path": "am_michael/{id}.mp3",
       "langCode": "a"
     },
     "bf_emma": {
-      "done": 3577,
-      "generated": 3575,
-      "skipped": 2,
+      "done": 5399,
+      "generated": 1822,
+      "skipped": 3577,
       "failed": 0,
-      "bytes": 13050072,
+      "bytes": 19252512,
       "path": "bf_emma/{id}.mp3",
       "langCode": "b"
     }
   },
   "failures": [],
-  "generatedAt": "2026-05-14T11:17:53Z"
+  "generatedAt": "2026-05-21T15:12:34Z"
 }
