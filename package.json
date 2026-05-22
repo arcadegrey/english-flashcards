@@ -18,6 +18,7 @@
     "tts:generate-words": "PYTORCH_ENABLE_MPS_FALLBACK=1 .venv-kokoro/bin/python scripts/generate_kokoro_word_audio.py",
     "tts:generate-examples": "PYTORCH_ENABLE_MPS_FALLBACK=1 .venv-kokoro/bin/python scripts/generate_kokoro_example_audio.py",
     "audio:upload-r2": "node scripts/upload-word-audio-r2.mjs",
+    "audio:upload-examples-r2": "node scripts/upload-word-audio-r2.mjs --source public/audio/examples --prefix audio/examples",
     "d1:migrate": "node scripts/apply-d1-schema.mjs"
   },
   "dependencies": {

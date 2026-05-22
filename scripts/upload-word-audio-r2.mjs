@@ -98,10 +98,11 @@ function parseArgs(argv) {
 }
 
 function printHelp() {
-  console.log(`Upload generated Kokoro word audio to Cloudflare R2.
+  console.log(`Upload generated Kokoro audio to Cloudflare R2.
 
 Usage:
   npm run audio:upload-r2 -- --bucket english-flashcards-audio
+  npm run audio:upload-examples-r2 -- --bucket english-flashcards-audio --min-id 3578
 
 Options:
   --bucket <name>       R2 bucket name. Can also use R2_AUDIO_BUCKET.
