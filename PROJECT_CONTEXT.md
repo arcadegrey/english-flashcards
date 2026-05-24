@@ -23,13 +23,14 @@
 - 本地 Kokoro TTS：`npm run tts:kokoro`
 - 生成例句静态音频：`npm run tts:generate-examples`
 - 上传单词静态音频到 R2：`npm run audio:upload-r2`
+- 上传例句静态音频到 R2：`npm run audio:upload-examples-r2`
 
 ## 主要页面
 
 - `studyHub`：学习入口，展示词库、阅读、复习、错题、统计、考试练习和账号同步入口。
 - `home`：单词分类选择页，支持全部、分类、托福词汇和雅思词汇入口。
 - `toeflLevels` / `toeflLists`：托福词汇按 Level / List 分层选择。
-- `ieltsTopics` / `ieltsLists`：雅思词汇按主题 / List 分层选择；当前已导入 List 1-27，按自然地理、植物研究、动物保护、太空探索、学校教育、科技发明、文化历史、语言演化、娱乐运动、物品材料分主题。
+- `ieltsTopics` / `ieltsLists`：雅思词汇按主题 / List 分层选择；当前已导入完整 List 1-56，按 20 个主题分组：自然地理、植物研究、动物保护、太空探索、学校教育、科技发明、文化历史、语言演化、娱乐运动、物品材料、时尚潮流、饮食健康、建筑场所、交通旅游、国家政府、社会经济、法律法规、征战沙场、社会关系、行为动作。
 - `learn`：统一学习容器，由 `LearningView` 根据 mode 渲染学习卡片、测验、填空、拼写或连线。
 - `readingList` / `readingSession`：阅读等级列表和文章阅读练习；文章页支持阅读题作答和反馈。
 - `todayReview` / `wrongWords` / `learnedWords` / `masteredWords`：复习、错题、已学习、已掌握集合页。
@@ -59,12 +60,13 @@
 - 已实测 `curl http://127.0.0.1:8880/health` 返回 `{"status":"ok"}`，并成功生成 `/private/tmp/kokoro-test.wav`（WAV，mono 24000 Hz）。
 - 批量静态单词音频脚本是 `scripts/generate_kokoro_word_audio.py`，启动命令是 `npm run tts:generate-words`。
 - 批量静态例句音频脚本是 `scripts/generate_kokoro_example_audio.py`，启动命令是 `npm run tts:generate-examples`；默认只生成 `af_bella`，输出到 `public/audio/examples/{voice}/{id}.mp3`，适合先把例句从 Railway 实时 TTS 迁到 R2 静态音频。若要补男声，可运行 `npm run tts:generate-examples -- --voices am_michael`。
-- R2 同步脚本是 `scripts/upload-word-audio-r2.mjs`，启动命令是 `npm run audio:upload-r2`；默认把 `public/audio/words` 上传到 bucket 的 `audio/words/` 前缀，bucket 可通过 `R2_AUDIO_BUCKET` 或 `--bucket` 指定。脚本默认使用 Wrangler `r2 bulk put` 小批量上传 MP3：`--batch-size 100 --concurrency 3 --retries 3 --batch-delay-ms 1500`，这是已验证过比逐文件上传更快、比 500 一批更稳的策略；也会单独上传 `manifest.json`。
-- 已生成 3 套单词 MP3：`af_bella`、`am_michael`、`bf_emma`；路径为 `public/audio/words/{voice}/{id}.mp3`，共 10731 个 MP3，0 失败，MP3 24 kbps / 24 kHz / mono，内容字节约 46.27 MB，目录占用约 73 MB。
-- 已生成例句 MP3：本地 `public/audio/examples/af_bella` 和 `public/audio/examples/am_michael` 各 3577 个 MP3。已确认 `af_bella` 女声例句全量上传到 R2：`audio/examples/af_bella/{id}.mp3`，抽查 `1.mp3` 和 `3577.mp3` 的公开 URL 返回 `200 OK`。已确认 `am_michael` 男声例句全量上传到 R2：`audio/examples/am_michael/{id}.mp3`，上传 3577/3577 个文件；抽查 `1.mp3`、`480.mp3`、`2406.mp3` 和 `3577.mp3` 的公开 URL 返回 `206 audio/mpeg`。
+- R2 同步脚本是 `scripts/upload-word-audio-r2.mjs`，启动命令是 `npm run audio:upload-r2`；默认把 `public/audio/words` 上传到 bucket 的 `audio/words/` 前缀，bucket 可通过 `R2_AUDIO_BUCKET` 或 `--bucket` 指定。脚本也可通过 `--source` / `--prefix` 复用到其他音频目录，例句快捷命令是 `npm run audio:upload-examples-r2`，默认把 `public/audio/examples` 上传到 `audio/examples/`。
+- R2 上传脚本默认使用 Wrangler `r2 bulk put` 小批量上传 MP3：`--batch-size 100 --concurrency 3 --retries 3 --batch-delay-ms 1500`；已新增 `--min-id` / `--max-id` 按数字 id 过滤 MP3，始终包含 `manifest.json`，并且批次最终失败会直接退出，避免限流或鉴权抖动后悄悄跳批。R2 曾出现 `429 Too Many Requests` 和临时 `401 Unauthorized`，稳定上传建议使用 `--batch-size 25 --concurrency 1 --batch-delay-ms 4000`。
+- 已生成并上传 3 套单词 MP3：`af_bella`、`am_michael`、`bf_emma`；路径为 `public/audio/words/{voice}/{id}.mp3` / R2 `audio/words/{voice}/{id}.mp3`，覆盖完整 5399 个唯一词，共 16197 个 MP3，0 失败，MP3 24 kbps / 24 kHz / mono。R2 已上传 `audio/words/manifest.json`，抽查 `af_bella/3578.mp3`、`af_bella/5399.mp3`、`am_michael/5399.mp3`、`bf_emma/5399.mp3` 和 manifest 均返回 `200 OK`。
+- 已生成并上传 2 套例句 MP3：`af_bella`、`am_michael`；路径为 `public/audio/examples/{voice}/{id}.mp3` / R2 `audio/examples/{voice}/{id}.mp3`，覆盖完整 5399 个例句，共 10798 个 MP3，0 失败，MP3 24 kbps / 24 kHz / mono。R2 已上传 `audio/examples/manifest.json`，抽查 `af_bella/3578.mp3`、`af_bella/5399.mp3`、`am_michael/5399.mp3` 和 manifest 均返回 `200 OK`。
 - 前端 `speakWord()` 在 Kokoro provider 下会优先播放静态单词音频；文件缺失或播放失败时 fallback 到实时 Kokoro / 浏览器 TTS。
 - 静态单词音频默认 base URL 是 `/audio/words`；线上构建已在 GitHub Actions 设置 `VITE_WORD_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/words`，让远端 App 从 R2 读取音频，避免 App 本体携带全部 MP3。
-- 前端例句播放已接入静态 Kokoro MP3 优先播放：`src/utils/speech.js` 提供 `speakExample(word)`，Kokoro provider 下会优先尝试 `audio/examples/{voice}/{id}.mp3`，当前音色不可用时按 `af_bella`、`am_michael` 回退，再 fallback 到实时 Kokoro / 浏览器 TTS。可用 `VITE_EXAMPLE_AUDIO_BASE_URL` 指向 R2/CDN；未配置时默认 `/audio/examples`。当前已接入 `Card.jsx` 和 `FillBlank.jsx` 的例句播放按钮。
+- 前端例句播放已接入静态 Kokoro MP3 优先播放：`src/utils/speech.js` 提供 `speakExample(word)`，Kokoro provider 下会优先尝试 `audio/examples/{voice}/{id}.mp3`，当前音色不可用时按 `af_bella`、`am_michael` 回退，再 fallback 到实时 Kokoro / 浏览器 TTS。可用 `VITE_EXAMPLE_AUDIO_BASE_URL` 指向 R2/CDN；未配置时默认 `/audio/examples`。当前已接入 `Card.jsx` 和 `FillBlank.jsx` 的例句播放按钮。下一步部署前应确认线上构建环境也设置了 `VITE_EXAMPLE_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/examples`。
 - 当前 R2 bucket 是 `english-flashcards-audio`，公开 r2.dev URL 是 `https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev`，CORS 配置文件是 `config/r2-word-audio-cors.json`。
 
 ## Cloudflare Worker / D1 同步逻辑
@@ -168,6 +170,10 @@
   - `366bf22 Add IELTS vocabulary lists`：导入 IELTS List 1-2，新增 IELTS 主题/List 分层、按需分片加载、PDF 提词脚本和自然地理背景图。
   - `3c4fe49 Add static example audio generation`：新增例句静态音频生成脚本。
   - `61d07e5 Polish Kokoro preview and R2 audio uploads`：移除语音设置 Kokoro 说明块，修正 Kokoro 试听为静态 MP3，R2 上传脚本改为默认小批量 bulk。
+  - `14206c8 Prefer static Kokoro example audio`：例句播放接入静态 Kokoro MP3 优先播放，默认 provider 设为 Kokoro。
+  - `82678e8 Add IELTS lists 28-37`、`509544d Add IELTS lists 38-47`、`1315b90 Complete IELTS vocabulary lists`：完成 IELTS List 28-56 导入，并补齐新增主题图。
+  - `663a480 Add incremental R2 audio upload support`：单词 R2 上传脚本支持 `--min-id` / `--max-id` 和失败即退出；单词音频已增量上传到 R2。
+  - `4c77dbd Add example audio R2 upload command`：新增例句 R2 上传快捷命令；例句音频已增量上传到 R2。
 - `resetProgress` 会调用 `storage.clearProgress()` 清除学习进度、错题、复习计划和统计历史，但会保留账号、主题、语音设置和自定义词。
 - 进度合并以数组去重和对象浅合并为主，`wordProgress` 同一单词的冲突会以后写入对象覆盖。
 - Worker 发送验证码依赖 Resend；本地或测试环境若缺少环境变量，登录链路会直接失败。
@@ -177,12 +183,20 @@
 - `npm run worker:dev` 缺少本地 `wrangler` 依赖的风险已处理：`wrangler` 已加入 devDependencies，当前版本为 4.92.0。已验证 Worker 可启动到 `http://localhost:8787`，`GET /api/auth/me` 在未登录状态下正常返回 401。
 - 本地前端 `npm run dev` 可正常启动；如果 `5173` 被占用，Vite 会自动切到下一个端口，例如 `5174`。
 - Codex 内置 Browser 连接本地页面时曾多次超时，但同一端口用 `curl -I` 返回 200；如果要做 UI 截图验证，可能需要先解决 Browser/reconnect 问题或改用其他验证方式。
-- 当前工作区还有未提交/未清理的副本文件风险：`public/data/vocabulary/ielts/list-1 2.json`、`list-2 2.json`、`manifest 2.json`、`public/data/vocabulary/toefl/manifest 2.json`，以及 `output/ielts_list1-10.csv`、`public/images/ielts-nature-geography-bg.png`。这些没有进入提交 `366bf22`；若后续要清理，需要先确认是否保留，再处理 Git index / 文件。
+- 当前仍有一个未跟提交绑定的旧 PNG 素材风险：`public/images/ielts-nature-geography-bg.png` 仍在本地存在；CSS 实际使用 WebP。若后续清理静态资源，需要先确认这个 PNG 是否还要保留。
 
 ## 下一步建议
 
-- 下一步可把 `VITE_EXAMPLE_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/examples` 加到线上构建环境，让远端 App 直接从 R2 读取例句 MP3，避免依赖实时 Kokoro 接口。
-- 男声例句 `am_michael` 已完成 R2 上传和公开 URL 抽查；后续无需再重复上传，除非本地重新生成了例句音频。
+- 下一步准备加入一个“测试能力”界面，用于集中验证应用关键能力。建议作为 `studyHub` 或右上角快速菜单里的开发/测试入口，不要做成营销页；第一版可以是操作型面板，按能力分组显示测试项、状态、运行按钮和最近结果。
+- 测试能力界面建议优先覆盖：
+  - 词库加载：core、TOEFL manifest/list、IELTS manifest/list 是否能加载，数量是否符合 manifest。
+  - 音频能力：单词静态 R2、例句静态 R2、Kokoro 实时接口 fallback、浏览器 TTS fallback。
+  - 学习流程：学习卡片、测验、填空、拼写、连线、错题记录、复习状态写入。
+  - 阅读流程：文章列表、阅读页、题目作答、词库高亮。
+  - 同步能力：登录状态恢复、进度读取/写入、冲突合并的前端提示。
+- 测试能力界面实现时优先复用现有 `QuickMenu`、`storage`、`src/data/vocabulary.js`、`src/utils/speech.js` 和 Worker API 封装；不要复制一套加载逻辑。若需要模拟测试，先做只读/轻写入的小范围 smoke test，避免污染用户真实学习进度。
+- 部署前确认 `VITE_EXAMPLE_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/examples` 已加入线上构建环境，让远端 App 直接从 R2 读取例句 MP3，避免依赖实时 Kokoro 接口。
+- 单词音频与例句音频均已完成 R2 上传和公开 URL 抽查；后续无需重复上传，除非本地重新生成了对应音频或新增词条。新增词条后优先用 `--min-id <新起始 id>` 增量上传。
 - 如果继续修订 IELTS 词表，优先使用 PDF 提取出的 `word,list` 作为基础，再单独生成释义/音标/例句，最后用 `npm run words:import -- <csv> --upsert` 导入；分片脚本会自动挂到对应 IELTS 主题。
 - 若继续扩展更多考试词库，沿用 `core.json + manifest + 按需 list 分片`，避免启动包继续变大。
 - 阅读 CSV 导入已覆盖 `examType` / `questions`，后续可继续补重复、缺字段、tags 分隔和带引号换行内容的测试。
