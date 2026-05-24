@@ -15,6 +15,7 @@ jobs:
       # Build-time public vars for Vite
       VITE_KOKORO_TTS_URL: ${{ secrets.VITE_KOKORO_TTS_URL }}
       VITE_WORD_AUDIO_BASE_URL: https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/words
+      VITE_EXAMPLE_AUDIO_BASE_URL: https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/examples
       VITE_API_BASE: /api
       CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
