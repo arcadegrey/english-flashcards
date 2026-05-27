@@ -147,6 +147,15 @@
 - 阅读文章可包含 `questions`，`ReadingSessionView` 会渲染“阅读题”，选择选项后显示正确/错误和解析。
 - 当前内置阅读文章数量为 12 篇。
 
+## 连线题交互状态
+
+- 连线题组件是 `src/components/MatchingTest.jsx`，样式集中在 `src/styles/word-learning-refresh.css` 的 `.matching-refresh-*` 区域。
+- 桌面端和手机端都保留原有点选交互：先点左侧单词，再点右侧释义。
+- 手机端不再把“单词”和“释义”上下堆叠，而是保持左右两列，并压缩卡片间距、编号圆点、字号和内边距，方便同屏完成配对。
+- 已新增拖线交互：按住左侧单词卡片可从卡片中心拖出蓝色连线，松到右侧释义卡片上自动判定对错。
+- 拖线使用 `pointer` 事件和 SVG overlay 实现，线层显示在卡片上方但 `pointer-events: none`，不会拦截点击/触控。拖线失败或取消时会清理临时线条，原点选方式仍可继续使用。
+- 若后续继续优化移动端连线题，优先在真机通过局域网 Vite 地址验证触控手感；电脑响应式模式只能粗看布局。
+
 ## 词库加载与分片策略
 
 - `src/data/vocabulary.js` 暴露：
@@ -174,6 +183,7 @@
   - `82678e8 Add IELTS lists 28-37`、`509544d Add IELTS lists 38-47`、`1315b90 Complete IELTS vocabulary lists`：完成 IELTS List 28-56 导入，并补齐新增主题图。
   - `663a480 Add incremental R2 audio upload support`：单词 R2 上传脚本支持 `--min-id` / `--max-id` 和失败即退出；单词音频已增量上传到 R2。
   - `4c77dbd Add example audio R2 upload command`：新增例句 R2 上传快捷命令；例句音频已增量上传到 R2。
+  - `076c3c3 Improve mobile matching interactions`：优化手机端连线题左右布局，并新增从左侧卡片中心拖线连接右侧释义的交互动画。
 - `resetProgress` 会调用 `storage.clearProgress()` 清除学习进度、错题、复习计划和统计历史，但会保留账号、主题、语音设置和自定义词。
 - 进度合并以数组去重和对象浅合并为主，`wordProgress` 同一单词的冲突会以后写入对象覆盖。
 - Worker 发送验证码依赖 Resend；本地或测试环境若缺少环境变量，登录链路会直接失败。
