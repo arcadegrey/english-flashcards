@@ -8,7 +8,7 @@ const getInitialTheme = () => {
   }
 
   const savedTheme = storage.getTheme();
-  if (savedTheme === 'dark' || savedTheme === 'light') {
+  if (storage.hasThemePreference() && (savedTheme === 'dark' || savedTheme === 'light')) {
     return savedTheme;
   }
 
@@ -17,6 +17,10 @@ const getInitialTheme = () => {
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setThemeState] = useState(getInitialTheme);
+  const [hasExplicitTheme, setHasExplicitTheme] = useState(() => {
+    if (typeof window === 'undefined') return false;
+    return storage.hasThemePreference();
+  });
 
   useEffect(() => {
     if (typeof document === 'undefined') return;
@@ -27,16 +31,33 @@ export const ThemeProvider = ({ children }) => {
     } else {
       root.classList.remove('dark');
     }
-
-    storage.setTheme(theme);
   }, [theme]);
 
+  useEffect(() => {
+    if (typeof window === 'undefined' || hasExplicitTheme) return undefined;
+
+    const media = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleSystemThemeChange = (event) => {
+      setThemeState(event.matches ? 'dark' : 'light');
+    };
+
+    media.addEventListener('change', handleSystemThemeChange);
+    return () => media.removeEventListener('change', handleSystemThemeChange);
+  }, [hasExplicitTheme]);
+
   const setTheme = (newTheme) => {
+    setHasExplicitTheme(true);
+    storage.setTheme(newTheme);
     setThemeState(newTheme);
   };
 
   const toggleTheme = () => {
-    setThemeState((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    setHasExplicitTheme(true);
+    setThemeState((prev) => {
+      const nextTheme = prev === 'dark' ? 'light' : 'dark';
+      storage.setTheme(nextTheme);
+      return nextTheme;
+    });
   };
 
   return (

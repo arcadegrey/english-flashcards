@@ -293,7 +293,7 @@ function HomeScreen({
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="搜索分类或单词..."
-                className="w-full min-h-[44px] rounded-[10px] border border-[#e5e7eb] bg-white px-4 py-3 pr-11 text-center text-[#111827] placeholder:text-[#9ca3af] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/20 focus:border-[#4f46e5]"
+                className="w-full min-h-[44px] rounded-[10px] border border-[var(--wl-line)] bg-[var(--wl-card)] px-4 py-3 pr-11 text-center text-[var(--wl-text)] placeholder:text-[var(--wl-subtext)] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/20 focus:border-[#4f46e5]"
               />
               {searchQuery && (
                 <button
@@ -306,8 +306,8 @@ function HomeScreen({
             </div>
 
             {debouncedQuery && (
-              <p className="mt-3 text-center text-sm text-[#6b7280]">
-                找到 {filteredCategories.length} 个分类，共 <span className="font-semibold text-[#111827]">{totalMatchedWords}</span>{' '}
+              <p className="mt-3 text-center text-sm text-[var(--wl-subtext)]">
+                找到 {filteredCategories.length} 个分类，共 <span className="font-semibold text-[var(--wl-text)]">{totalMatchedWords}</span>{' '}
                 个匹配单词
               </p>
             )}
@@ -327,8 +327,8 @@ function HomeScreen({
 
             {filteredCategories.length === 0 ? (
               <div className="word-home-empty">
-                <p className="text-base text-[#6b7280]">未找到匹配的分类或单词</p>
-                <p className="mt-1 text-sm text-[#9ca3af]">尝试其他搜索词</p>
+                <p className="text-base text-[var(--wl-subtext)]">未找到匹配的分类或单词</p>
+                <p className="mt-1 text-sm text-[var(--wl-subtext)]">尝试其他搜索词</p>
               </div>
             ) : (
               <div className="reading-category-grid">
@@ -356,16 +356,16 @@ function HomeScreen({
           {!debouncedQuery && (
             <section className="word-home-stats">
               <article className="word-home-stat-card">
-                <p className="text-2xl font-semibold text-[#111827]">{wordCounts.all || 0}</p>
-                <p className="text-sm text-[#6b7280]">总词汇量</p>
+                <p className="text-2xl font-semibold text-[var(--wl-text)]">{wordCounts.all || 0}</p>
+                <p className="text-sm text-[var(--wl-subtext)]">总词汇量</p>
               </article>
               <article className="word-home-stat-card">
-                <p className="text-2xl font-semibold text-[#111827]">{vocabularyCategoryCount}</p>
-                <p className="text-sm text-[#6b7280]">学习分类</p>
+                <p className="text-2xl font-semibold text-[var(--wl-text)]">{vocabularyCategoryCount}</p>
+                <p className="text-sm text-[var(--wl-subtext)]">学习分类</p>
               </article>
               <article className="word-home-stat-card">
-                <p className="text-2xl font-semibold text-[#111827]">持续更新</p>
-                <p className="text-sm text-[#6b7280]">更多词库可导入</p>
+                <p className="text-2xl font-semibold text-[var(--wl-text)]">持续更新</p>
+                <p className="text-sm text-[var(--wl-subtext)]">更多词库可导入</p>
               </article>
             </section>
           )}

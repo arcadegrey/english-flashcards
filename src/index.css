@@ -2,6 +2,40 @@
 
 :root {
   color-scheme: light;
+  --app-bg: #f8fafc;
+  --app-text: #111827;
+  --app-muted: #64748b;
+  --app-surface: #ffffff;
+  --app-border: #e5e7eb;
+  --app-soft: #f8fafc;
+  --app-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  --wl-bg: #fbfbfd;
+  --wl-card: #ffffff;
+  --wl-text: #1d1d1f;
+  --wl-subtext: #6e6e73;
+  --wl-line: #e8e8ed;
+  --wl-grid-line: #cfd4dc;
+  --wl-blue: #0071e3;
+  --wl-hover: #f5f5f7;
+}
+
+:root.dark {
+  color-scheme: dark;
+  --app-bg: #0b1120;
+  --app-text: #e5edf8;
+  --app-muted: #94a3b8;
+  --app-surface: #111827;
+  --app-border: #263244;
+  --app-soft: #0f172a;
+  --app-shadow: 0 20px 54px rgba(0, 0, 0, 0.38);
+  --wl-bg: #0b1120;
+  --wl-card: #111827;
+  --wl-text: #e5edf8;
+  --wl-subtext: #9aa8ba;
+  --wl-line: #263244;
+  --wl-grid-line: #334155;
+  --wl-blue: #38bdf8;
+  --wl-hover: #172033;
 }
 
 html {
@@ -18,8 +52,8 @@ html {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB",
     "Microsoft YaHei", "Noto Sans SC", sans-serif;
-  background: #f8fafc;
-  color: #111827;
+  background: var(--app-bg);
+  color: var(--app-text);
   min-height: 100vh;
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   touch-action: manipulation;

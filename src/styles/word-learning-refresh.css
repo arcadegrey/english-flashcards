@@ -14,6 +14,144 @@
   padding-bottom: calc(122px + env(safe-area-inset-bottom));
 }
 
+.dark .auth-transition-panel,
+.dark .voice-settings-dialog,
+.dark .study-hub-card,
+.dark .study-hub-account-bar,
+.dark .reading-list-card,
+.dark .reading-session-card,
+.dark .learn-refresh-card {
+  border-color: var(--wl-line);
+  background: var(--wl-card);
+  color: var(--wl-text);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
+}
+
+.dark .auth-transition-copy h2,
+.dark .study-hub-title,
+.dark .study-hub-action-title,
+.dark .reading-session-paragraph {
+  color: var(--wl-text);
+}
+
+.dark .auth-transition-copy p:last-child,
+.dark .study-hub-eyebrow,
+.dark .study-hub-subtitle,
+.dark .study-hub-account-status,
+.dark .study-hub-account-notice,
+.dark .study-hub-action-meta {
+  color: var(--wl-subtext);
+}
+
+.dark .auth-transition-steps span {
+  background: #334155;
+}
+
+.dark .study-hub-page {
+  background: var(--wl-bg);
+}
+
+.dark .study-hub-account-button,
+.dark .study-hub-action,
+.dark .reading-category-card,
+.dark .reading-list-back-btn,
+.dark .reading-list-item,
+.dark .reading-question-option {
+  border-color: var(--wl-grid-line);
+  background: var(--wl-card);
+  color: var(--wl-text);
+  box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.04), 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.dark .study-hub-action-icon,
+.dark .reading-question-option-key {
+  background: #172033;
+}
+
+.dark .exam-scope-tabs,
+.dark .word-home-search,
+.dark .word-home-empty,
+.dark .word-home-stat-card,
+.dark .reading-list-item-meta span,
+.dark .reading-session-chip,
+.dark .reading-session-content,
+.dark .reading-question-section,
+.dark .reading-question-card {
+  border-color: var(--wl-line);
+  background: #0f172a;
+}
+
+.dark .reading-list-item-meta span,
+.dark .reading-session-chip {
+  color: var(--wl-subtext);
+}
+
+.dark .reading-token-highlight {
+  background: rgba(56, 189, 248, 0.16);
+  color: #7dd3fc;
+}
+
+.dark .reading-token-highlight:hover {
+  background: rgba(56, 189, 248, 0.24);
+  color: #bae6fd;
+}
+
+.dark .reading-question-option:hover,
+.dark .reading-question-option.is-selected {
+  border-color: var(--wl-blue);
+  background: rgba(56, 189, 248, 0.12);
+}
+
+.dark .voice-settings-head,
+.dark .voice-settings-footer {
+  border-color: var(--wl-line);
+  background: rgba(17, 24, 39, 0.94);
+}
+
+.dark .voice-settings-engine,
+.dark .voice-settings-browser-row,
+.dark .voice-settings-input,
+.dark .voice-settings-select,
+.dark .voice-settings-voice-card,
+.dark .voice-settings-done {
+  border-color: var(--wl-grid-line);
+  background: #0f172a;
+  color: var(--wl-text);
+}
+
+.dark .voice-settings-info,
+.dark .voice-settings-empty {
+  border-color: var(--wl-line);
+  background: #0f172a;
+}
+
+.dark .voice-settings-close,
+.dark .voice-settings-preview {
+  border-color: var(--wl-grid-line);
+  background: #111827;
+  color: var(--wl-subtext);
+}
+
+.dark .voice-settings-engine-note,
+.dark .voice-settings-browser-lang,
+.dark .voice-settings-field-note,
+.dark .voice-settings-voice-id,
+.dark .voice-settings-footer p {
+  color: var(--wl-subtext);
+}
+
+.dark .learn-refresh-page {
+  --wl-bg: #0b1120;
+  --wl-card: #111827;
+  --wl-text: #e5edf8;
+  --wl-subtext: #9aa8ba;
+  --wl-line: #263244;
+  --wl-grid-line: #334155;
+  --wl-grid-line-strong: #475569;
+  --wl-blue: #38bdf8;
+  --wl-hover: #172033;
+}
+
 .learn-refresh-topbar {
   position: fixed;
   top: 0;
@@ -25,6 +163,10 @@
   border-bottom: 1px solid var(--wl-line);
   background: rgba(255, 255, 255, 0.88);
   backdrop-filter: saturate(180%) blur(14px);
+}
+
+.dark .learn-refresh-topbar {
+  background: rgba(11, 17, 32, 0.88);
 }
 
 .learn-refresh-topbar-inner {
@@ -91,11 +233,21 @@
     color 240ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+.dark .learn-refresh-home-btn {
+  background: var(--wl-card);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
 .learn-refresh-home-btn:hover {
   transform: translateY(-1px);
   background: var(--wl-hover);
   border-color: #d2d2d7;
   color: var(--wl-text);
+}
+
+.dark .learn-refresh-home-btn:hover,
+.dark .learn-refresh-icon-btn:hover {
+  border-color: #475569;
 }
 
 .learn-refresh-progress {
@@ -185,6 +337,11 @@
   pointer-events: none;
   transition: opacity 220ms cubic-bezier(0.22, 1, 0.36, 1),
     transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dark .learn-refresh-menu {
+  background: #111827;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.42);
 }
 
 .learn-refresh-menu.is-open {
@@ -1590,7 +1747,7 @@
 .selection-card--social-relationships,
 .selection-card--actions-behaviors {
   background:
-    linear-gradient(180deg, rgba(12, 40, 54, 0.16), rgba(5, 22, 31, 0.52)),
+    linear-gradient(180deg, rgba(12, 40, 54, 0.28), rgba(5, 22, 31, 0.66)),
     var(--ielts-topic-bg) center / cover no-repeat;
   box-shadow: 0 16px 34px var(--ielts-topic-shadow);
 }
@@ -1664,7 +1821,7 @@
 .selection-card--actions-behaviors.is-active {
   border-color: rgba(255, 255, 255, 0.48);
   background:
-    linear-gradient(180deg, rgba(10, 34, 48, 0.12), rgba(3, 18, 27, 0.46)),
+    linear-gradient(180deg, rgba(10, 34, 48, 0.14), rgba(3, 18, 27, 0.5)),
     var(--ielts-topic-bg) center / cover no-repeat;
   box-shadow: 0 18px 38px var(--ielts-topic-hover-shadow);
 }
@@ -3622,4 +3779,323 @@
     max-width: 320px;
     text-align: center;
   }
+}
+
+.dark .reading-category-card {
+  border-color: var(--wl-grid-line);
+  background: var(--wl-card);
+  color: var(--wl-text);
+  box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.04), 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.dark .reading-category-card:hover,
+.dark .reading-category-card.is-active {
+  border-color: var(--wl-blue);
+  background: #0ea5e9;
+  box-shadow: 0 16px 34px rgba(14, 165, 233, 0.24);
+}
+
+.dark .reading-category-card:disabled,
+.dark .reading-category-card:disabled:hover {
+  border-color: var(--wl-grid-line);
+  background: #101827;
+  box-shadow: none;
+}
+
+.dark .reading-level-icon,
+.dark .reading-category-icon {
+  background: #172033;
+  color: #7dd3fc;
+}
+
+.dark .reading-category-name {
+  color: var(--wl-text);
+}
+
+.dark .reading-category-count,
+.dark .toefl-selection-meta {
+  color: var(--wl-subtext);
+}
+
+.dark .word-home-search,
+.dark .word-home-empty,
+.dark .word-home-stat-card,
+.dark .exam-scope-tabs {
+  border-color: var(--wl-line);
+  background: #0f172a;
+  box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.04);
+}
+
+.dark .exam-scope-tab {
+  color: var(--wl-subtext);
+}
+
+.dark .exam-scope-tab:hover,
+.dark .exam-scope-tab.is-active {
+  border-color: var(--wl-blue);
+  background: #0ea5e9;
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgba(14, 165, 233, 0.24);
+}
+
+.dark .selection-card--nature-geography,
+.dark .selection-card--plant-research,
+.dark .selection-card--animal-conservation,
+.dark .selection-card--space-exploration,
+.dark .selection-card--school-education,
+.dark .selection-card--technology-invention,
+.dark .selection-card--culture-history,
+.dark .selection-card--language-evolution,
+.dark .selection-card--entertainment-sports,
+.dark .selection-card--objects-materials,
+.dark .selection-card--fashion-trends,
+.dark .selection-card--food-health,
+.dark .selection-card--architecture-places,
+.dark .selection-card--transport-travel,
+.dark .selection-card--nation-government,
+.dark .selection-card--society-economy,
+.dark .selection-card--law-regulation,
+.dark .selection-card--warfare-battlefield,
+.dark .selection-card--social-relationships,
+.dark .selection-card--actions-behaviors {
+  border-color: rgba(255, 255, 255, 0.2);
+  background:
+    linear-gradient(180deg, rgba(7, 20, 32, 0.34), rgba(2, 8, 15, 0.72)),
+    var(--ielts-topic-bg) center / cover no-repeat;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.24);
+}
+
+.dark .selection-card--nature-geography:hover,
+.dark .selection-card--plant-research:hover,
+.dark .selection-card--animal-conservation:hover,
+.dark .selection-card--space-exploration:hover,
+.dark .selection-card--school-education:hover,
+.dark .selection-card--technology-invention:hover,
+.dark .selection-card--culture-history:hover,
+.dark .selection-card--language-evolution:hover,
+.dark .selection-card--entertainment-sports:hover,
+.dark .selection-card--objects-materials:hover,
+.dark .selection-card--fashion-trends:hover,
+.dark .selection-card--food-health:hover,
+.dark .selection-card--architecture-places:hover,
+.dark .selection-card--transport-travel:hover,
+.dark .selection-card--nation-government:hover,
+.dark .selection-card--society-economy:hover,
+.dark .selection-card--law-regulation:hover,
+.dark .selection-card--warfare-battlefield:hover,
+.dark .selection-card--social-relationships:hover,
+.dark .selection-card--actions-behaviors:hover {
+  border-color: rgba(255, 255, 255, 0.56);
+  background:
+    linear-gradient(180deg, rgba(7, 20, 32, 0.22), rgba(2, 8, 15, 0.58)),
+    var(--ielts-topic-bg) center / cover no-repeat;
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.3);
+}
+
+.dark .selection-card--nature-geography .reading-category-name,
+.dark .selection-card--plant-research .reading-category-name,
+.dark .selection-card--animal-conservation .reading-category-name,
+.dark .selection-card--space-exploration .reading-category-name,
+.dark .selection-card--school-education .reading-category-name,
+.dark .selection-card--technology-invention .reading-category-name,
+.dark .selection-card--culture-history .reading-category-name,
+.dark .selection-card--language-evolution .reading-category-name,
+.dark .selection-card--entertainment-sports .reading-category-name,
+.dark .selection-card--objects-materials .reading-category-name,
+.dark .selection-card--fashion-trends .reading-category-name,
+.dark .selection-card--food-health .reading-category-name,
+.dark .selection-card--architecture-places .reading-category-name,
+.dark .selection-card--transport-travel .reading-category-name,
+.dark .selection-card--nation-government .reading-category-name,
+.dark .selection-card--society-economy .reading-category-name,
+.dark .selection-card--law-regulation .reading-category-name,
+.dark .selection-card--warfare-battlefield .reading-category-name,
+.dark .selection-card--social-relationships .reading-category-name,
+.dark .selection-card--actions-behaviors .reading-category-name,
+.dark .selection-card--nature-geography .reading-category-count,
+.dark .selection-card--plant-research .reading-category-count,
+.dark .selection-card--animal-conservation .reading-category-count,
+.dark .selection-card--space-exploration .reading-category-count,
+.dark .selection-card--school-education .reading-category-count,
+.dark .selection-card--technology-invention .reading-category-count,
+.dark .selection-card--culture-history .reading-category-count,
+.dark .selection-card--language-evolution .reading-category-count,
+.dark .selection-card--entertainment-sports .reading-category-count,
+.dark .selection-card--objects-materials .reading-category-count,
+.dark .selection-card--fashion-trends .reading-category-count,
+.dark .selection-card--food-health .reading-category-count,
+.dark .selection-card--architecture-places .reading-category-count,
+.dark .selection-card--transport-travel .reading-category-count,
+.dark .selection-card--nation-government .reading-category-count,
+.dark .selection-card--society-economy .reading-category-count,
+.dark .selection-card--law-regulation .reading-category-count,
+.dark .selection-card--warfare-battlefield .reading-category-count,
+.dark .selection-card--social-relationships .reading-category-count,
+.dark .selection-card--actions-behaviors .reading-category-count,
+.dark .selection-card--nature-geography .toefl-selection-meta,
+.dark .selection-card--plant-research .toefl-selection-meta,
+.dark .selection-card--animal-conservation .toefl-selection-meta,
+.dark .selection-card--space-exploration .toefl-selection-meta,
+.dark .selection-card--school-education .toefl-selection-meta,
+.dark .selection-card--technology-invention .toefl-selection-meta,
+.dark .selection-card--culture-history .toefl-selection-meta,
+.dark .selection-card--language-evolution .toefl-selection-meta,
+.dark .selection-card--entertainment-sports .toefl-selection-meta,
+.dark .selection-card--objects-materials .toefl-selection-meta,
+.dark .selection-card--fashion-trends .toefl-selection-meta,
+.dark .selection-card--food-health .toefl-selection-meta,
+.dark .selection-card--architecture-places .toefl-selection-meta,
+.dark .selection-card--transport-travel .toefl-selection-meta,
+.dark .selection-card--nation-government .toefl-selection-meta,
+.dark .selection-card--society-economy .toefl-selection-meta,
+.dark .selection-card--law-regulation .toefl-selection-meta,
+.dark .selection-card--warfare-battlefield .toefl-selection-meta,
+.dark .selection-card--social-relationships .toefl-selection-meta,
+.dark .selection-card--actions-behaviors .toefl-selection-meta {
+  color: #ffffff;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.48);
+}
+
+.fillblank-refresh-result {
+  margin-top: 16px;
+  border-radius: 14px;
+  border: 1px solid;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.fillblank-refresh-result p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.82;
+}
+
+.fillblank-refresh-result--correct {
+  border-color: #b7ddc6;
+  background: #f0fdf4;
+  color: #166534;
+}
+
+.fillblank-refresh-result--wrong {
+  border-color: #fecaca;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.dark .learn-refresh-example-block,
+.dark .quiz-refresh-question,
+.dark .spelling-refresh-panel,
+.dark .matching-refresh-board,
+.dark .learn-refresh-empty-state {
+  border-color: var(--wl-line);
+  background: #0f172a;
+  box-shadow: inset 0 1px 0 rgba(148, 163, 184, 0.05);
+}
+
+.dark .learn-refresh-example-audio,
+.dark .spelling-refresh-secondary {
+  border-color: var(--wl-grid-line);
+  background: #111827;
+  color: var(--wl-text);
+}
+
+.dark .learn-refresh-example-audio:hover:not(:disabled),
+.dark .spelling-refresh-secondary:hover:not(:disabled) {
+  border-color: var(--wl-blue);
+  background: rgba(56, 189, 248, 0.12);
+  color: #bae6fd;
+}
+
+.dark .assessment-refresh-source span,
+.dark .quiz-refresh-source span,
+.dark .matching-refresh-source span {
+  border-color: var(--wl-grid-line);
+  background: #172033;
+  color: var(--wl-text);
+}
+
+.dark .learn-refresh-quiz-option,
+.dark .matching-refresh-item,
+.dark .spelling-refresh-input,
+.dark .spelling-refresh-hint,
+.dark .spelling-refresh-answer,
+.dark .learn-refresh-quiz-stat,
+.dark .learn-refresh-quiz-progress-dock-inner {
+  border-color: var(--wl-grid-line);
+  background: #111827;
+  color: var(--wl-text);
+  box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.04);
+}
+
+.dark .learn-refresh-quiz-option:hover:not(:disabled),
+.dark .matching-refresh-item:hover:not(:disabled) {
+  border-color: var(--wl-blue);
+  background: rgba(56, 189, 248, 0.12);
+  color: #e0f2fe;
+}
+
+.dark .learn-refresh-quiz-option-index,
+.dark .matching-refresh-index {
+  border-color: var(--wl-grid-line);
+  background: #0f172a;
+  color: #cbd5e1;
+}
+
+.dark .learn-refresh-quiz-option-sub,
+.dark .matching-refresh-word-sub,
+.dark .spelling-refresh-hint-meta,
+.dark .spelling-refresh-answer-phonetic {
+  color: #93c5fd;
+}
+
+.dark .learn-refresh-quiz-option.is-correct,
+.dark .matching-refresh-item.is-selected,
+.dark .matching-refresh-item.is-matched {
+  border-color: #38bdf8;
+  background: rgba(56, 189, 248, 0.18);
+  color: #e0f2fe;
+}
+
+.dark .learn-refresh-quiz-option.is-wrong,
+.dark .matching-refresh-item.is-wrong {
+  border-color: #fb7185;
+  background: rgba(251, 113, 133, 0.16);
+  color: #ffe4e6;
+}
+
+.dark .learn-refresh-quiz-option.is-muted {
+  border-color: #263244;
+  background: #0f172a;
+  color: #64748b;
+}
+
+.dark .quiz-refresh-result--correct,
+.dark .spelling-refresh-result--correct,
+.dark .fillblank-refresh-result--correct,
+.dark .matching-refresh-complete {
+  border-color: #34d399;
+  background: rgba(52, 211, 153, 0.14);
+  color: #bbf7d0;
+}
+
+.dark .quiz-refresh-result--wrong,
+.dark .spelling-refresh-result--wrong,
+.dark .fillblank-refresh-result--wrong {
+  border-color: #fb7185;
+  background: rgba(251, 113, 133, 0.14);
+  color: #ffe4e6;
+}
+
+.dark .learn-refresh-assessment-dock,
+.dark .learn-refresh-quiz-progress-dock {
+  border-color: var(--wl-line);
+  background: rgba(11, 17, 32, 0.95);
+}
+
+.dark .learn-refresh-assessment-stat {
+  border-color: var(--wl-grid-line);
+  background: #111827;
+  color: var(--wl-text);
 }

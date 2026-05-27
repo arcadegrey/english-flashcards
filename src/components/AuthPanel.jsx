@@ -110,11 +110,11 @@ function AuthPanel({
 
   if (!enabled) {
     return (
-      <section className="rounded-[14px] border border-[#e5e7eb] bg-[#f5f5f7] p-5 shadow-[0_1px_3px_rgba(15,23,42,0.08)] md:p-6">
+      <section className="rounded-[14px] border border-[var(--app-border)] bg-[var(--app-soft)] p-5 shadow-[0_1px_3px_rgba(15,23,42,0.08)] md:p-6">
         <div className="text-center">
-          <h3 className="text-xl font-semibold text-[#111827]">账号与云同步</h3>
-          <p className="mt-2 text-sm text-[#6b7280]">还未配置账号服务。配置后可注册登录并在更新后保留学习进度。</p>
-          <p className="mt-1 text-xs text-[#9ca3af]">请检查 Worker 与 D1 部署，并确认前端可访问 `/api`。</p>
+          <h3 className="text-xl font-semibold text-[var(--app-text)]">账号与云同步</h3>
+          <p className="mt-2 text-sm text-[var(--app-muted)]">还未配置账号服务。配置后可注册登录并在更新后保留学习进度。</p>
+          <p className="mt-1 text-xs text-[var(--app-muted)]">请检查 Worker 与 D1 部署，并确认前端可访问 `/api`。</p>
         </div>
       </section>
     );
@@ -122,28 +122,28 @@ function AuthPanel({
 
   if (loading) {
     return (
-      <section className="rounded-[14px] border border-[#e5e7eb] bg-[#f5f5f7] p-5 shadow-[0_1px_3px_rgba(15,23,42,0.08)] md:p-6">
-        <p className="text-center text-sm text-[#6b7280]">正在恢复账号会话...</p>
+      <section className="rounded-[14px] border border-[var(--app-border)] bg-[var(--app-soft)] p-5 shadow-[0_1px_3px_rgba(15,23,42,0.08)] md:p-6">
+        <p className="text-center text-sm text-[var(--app-muted)]">正在恢复账号会话...</p>
       </section>
     );
   }
 
   return (
-    <section className="rounded-[14px] border border-[#e5e7eb] bg-[#f5f5f7] p-5 shadow-[0_1px_3px_rgba(15,23,42,0.08)] md:p-6">
+    <section className="rounded-[14px] border border-[var(--app-border)] bg-[var(--app-soft)] p-5 shadow-[0_1px_3px_rgba(15,23,42,0.08)] md:p-6">
       <div className="space-y-4">
         <div className="text-center">
-          <h3 className="text-xl font-semibold text-[#111827]">账号与云同步</h3>
+          <h3 className="text-xl font-semibold text-[var(--app-text)]">账号与云同步</h3>
           {isLoggedIn ? (
-            <p className="mt-1 text-sm text-[#6b7280]">已登录：{user.email}</p>
+            <p className="mt-1 text-sm text-[var(--app-muted)]">已登录：{user.email}</p>
           ) : (
-            <p className="mt-1 text-sm text-[#6b7280]">登录后自动同步学习进度（跨更新保留）</p>
+            <p className="mt-1 text-sm text-[var(--app-muted)]">登录后自动同步学习进度（跨更新保留）</p>
           )}
         </div>
 
         {isLoggedIn ? (
           <div className="space-y-3">
-            <p className="text-center text-sm text-[#6b7280]">
-              同步状态：<span className="font-semibold text-[#111827]">{syncStatusText || '就绪'}</span>
+            <p className="text-center text-sm text-[var(--app-muted)]">
+              同步状态：<span className="font-semibold text-[var(--app-text)]">{syncStatusText || '就绪'}</span>
             </p>
             {syncError && <p className="text-center text-sm text-[#dc2626]">{syncError}</p>}
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
@@ -151,7 +151,7 @@ function AuthPanel({
                 type="button"
                 disabled={busy}
                 onClick={handleSyncNow}
-                className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] border border-[#d1d5db] bg-white px-4 py-2 text-base font-semibold text-[#111827] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white disabled:cursor-not-allowed disabled:opacity-60"
+                className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] border border-[var(--app-border)] bg-[var(--app-surface)] px-4 py-2 text-base font-semibold text-[var(--app-text)] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white disabled:cursor-not-allowed disabled:opacity-60"
               >
                 立即同步
               </button>
@@ -159,7 +159,7 @@ function AuthPanel({
                 type="button"
                 disabled={busy}
                 onClick={handleLogout}
-                className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] border border-[#d1d5db] bg-white px-4 py-2 text-base font-semibold text-[#111827] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white disabled:cursor-not-allowed disabled:opacity-60"
+                className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] border border-[var(--app-border)] bg-[var(--app-surface)] px-4 py-2 text-base font-semibold text-[var(--app-text)] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white disabled:cursor-not-allowed disabled:opacity-60"
               >
                 退出登录
               </button>
@@ -174,7 +174,7 @@ function AuthPanel({
                 className={`min-h-[40px] rounded-[10px] border px-3 py-2 text-sm font-semibold transition ${
                   mode === 'login'
                     ? 'border-[#0071e3] bg-[#0071e3] text-white'
-                    : 'border-[#d1d5db] bg-white text-[#111827] hover:border-[#0071e3] hover:text-[#0071e3]'
+                    : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-text)] hover:border-[#0071e3] hover:text-[#0071e3]'
                 }`}
               >
                 登录
@@ -185,7 +185,7 @@ function AuthPanel({
                 className={`min-h-[40px] rounded-[10px] border px-3 py-2 text-sm font-semibold transition ${
                   mode === 'register'
                     ? 'border-[#0071e3] bg-[#0071e3] text-white'
-                    : 'border-[#d1d5db] bg-white text-[#111827] hover:border-[#0071e3] hover:text-[#0071e3]'
+                    : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-text)] hover:border-[#0071e3] hover:text-[#0071e3]'
                 }`}
               >
                 注册
@@ -197,7 +197,7 @@ function AuthPanel({
               value={email}
               onChange={(event) => setEmail(event.target.value)}
               placeholder="邮箱"
-              className="w-full min-h-[44px] rounded-[10px] border border-[#e5e7eb] bg-white px-4 py-2 text-[#111827] placeholder:text-[#9ca3af] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/20 focus:border-[#4f46e5]"
+              className="w-full min-h-[44px] rounded-[10px] border border-[var(--app-border)] bg-[var(--app-surface)] px-4 py-2 text-[var(--app-text)] placeholder:text-[var(--app-muted)] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/20 focus:border-[#4f46e5]"
             />
 
             <input
@@ -205,7 +205,7 @@ function AuthPanel({
               value={verificationCode}
               onChange={(event) => setVerificationCode(event.target.value)}
               placeholder={mode === 'register' ? '输入注册验证码（可留空先发送）' : '输入登录验证码（可留空先发送）'}
-              className="w-full min-h-[44px] rounded-[10px] border border-[#e5e7eb] bg-white px-4 py-2 text-[#111827] placeholder:text-[#9ca3af] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/20 focus:border-[#4f46e5]"
+              className="w-full min-h-[44px] rounded-[10px] border border-[var(--app-border)] bg-[var(--app-surface)] px-4 py-2 text-[var(--app-text)] placeholder:text-[var(--app-muted)] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/20 focus:border-[#4f46e5]"
             />
 
             <button
@@ -224,7 +224,7 @@ function AuthPanel({
                     : '发送登录验证码'}
             </button>
 
-            <p className="text-center text-xs text-[#6b7280]">
+            <p className="text-center text-xs text-[var(--app-muted)]">
               {mode === 'register'
                 ? '先发送注册验证码，再输入验证码完成注册并自动登录'
                 : '先发送登录验证码，再输入验证码完成登录'}

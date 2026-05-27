@@ -254,14 +254,12 @@ function FillBlank({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswe
 
         {selectedAnswer && (
           <div
-            className={`mt-4 rounded-[14px] border px-4 py-3 text-sm ${
-              isCorrect
-                ? 'border-[#b7ddc6] bg-[#f0fdf4] text-[#166534]'
-                : 'border-[#fecaca] bg-[#fef2f2] text-[#b91c1c]'
+            className={`fillblank-refresh-result ${
+              isCorrect ? 'fillblank-refresh-result--correct' : 'fillblank-refresh-result--wrong'
             }`}
           >
             {isCorrect ? '回答正确。' : `回答错误，正确答案：${currentQuestion.word}`}
-            <p className="mt-1 text-xs opacity-80">{currentQuestion.example}</p>
+            <p>{currentQuestion.example}</p>
           </div>
         )}
       </section>

@@ -3,6 +3,7 @@ const STORAGE_KEYS = {
   MASTERED_WORDS: 'flashcards_mastered_words',
   STUDY_HISTORY: 'flashcards_study_history',
   THEME: 'flashcards_theme',
+  THEME_EXPLICIT: 'flashcards_theme_explicit',
   SELECTED_VOICE: 'flashcards_selected_voice',
   TTS_PROVIDER: 'flashcards_tts_provider',
   KOKORO_ENDPOINT: 'flashcards_kokoro_endpoint',
@@ -141,16 +142,27 @@ export const storage = {
   // Theme: 'light' | 'dark'
   getTheme: () => {
     try {
-      return localStorage.getItem(STORAGE_KEYS.THEME) || 'light';
+      const theme = localStorage.getItem(STORAGE_KEYS.THEME);
+      return theme === 'dark' || theme === 'light' ? theme : null;
     } catch (error) {
       console.error('Failed to load theme:', error);
-      return 'light';
+      return null;
+    }
+  },
+
+  hasThemePreference: () => {
+    try {
+      return localStorage.getItem(STORAGE_KEYS.THEME_EXPLICIT) === '1';
+    } catch (error) {
+      console.error('Failed to load theme preference marker:', error);
+      return false;
     }
   },
 
   setTheme: (theme) => {
     try {
       localStorage.setItem(STORAGE_KEYS.THEME, theme);
+      localStorage.setItem(STORAGE_KEYS.THEME_EXPLICIT, '1');
     } catch (error) {
       console.error('Failed to save theme:', error);
     }
