@@ -1,4 +1,5 @@
-import { useMemo } from 'react';
+import { useMemo, useRef } from 'react';
+import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
 
 function SyncIcon() {
   return (
@@ -54,6 +55,27 @@ function ToeflSelectionView({
   const progressLabel = mode === 'level' ? `${items.length} 个 Level` : `${items.length} 个 List`;
   const progressSub = mode === 'level' ? vocabularyLabel : listLabel;
   const gridClass = items.length === 1 ? 'reading-category-grid toefl-selection-grid--single' : 'reading-category-grid';
+  const selectionRef = useRef(null);
+
+  useGSAP(() => {
+    if (prefersReducedMotion()) return;
+    const cards = selectionRef.current?.querySelectorAll('.reading-category-card');
+    if (!cards?.length) return;
+
+    gsap.fromTo(
+      cards,
+      { y: 18, autoAlpha: 0, scale: 0.985 },
+      {
+        y: 0,
+        autoAlpha: 1,
+        scale: 1,
+        duration: 0.42,
+        ease: 'power2.out',
+        stagger: { each: 0.045, from: 'start' },
+        clearProps: 'transform,opacity,visibility',
+      }
+    );
+  }, { dependencies: [mode, items.length, totalCount], scope: selectionRef, revertOnUpdate: true });
 
   return (
     <div className="learn-refresh-page toefl-selection-page">
@@ -104,7 +126,7 @@ function ToeflSelectionView({
             <p className="toefl-selection-total">共 {totalCount} 个单词</p>
           </header>
 
-          <section className="reading-category-section" aria-label={`${vocabularyLabel}选择`}>
+          <section ref={selectionRef} className="reading-category-section" aria-label={`${vocabularyLabel}选择`}>
             {items.length === 0 ? (
               <div className="word-home-empty">{emptyText}</div>
             ) : (

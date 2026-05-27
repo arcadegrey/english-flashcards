@@ -83,7 +83,7 @@ body {
   border-radius: 9999px;
   background: radial-gradient(circle, rgba(56, 189, 248, 0.32) 0%, rgba(255, 255, 255, 0) 70%);
   transform: translate(-50%, -50%);
-  animation: fireworks-glow 700ms ease-out forwards;
+  opacity: 0;
 }
 
 .success-fireworks-particle {
@@ -96,8 +96,7 @@ body {
   background: var(--particle-color);
   box-shadow: 0 0 12px var(--particle-color);
   transform: translate(-50%, -50%);
-  animation: fireworks-particle 700ms ease-out forwards;
-  animation-delay: var(--delay);
+  opacity: 0;
 }
 
 .auth-transition-overlay {

@@ -1,3 +1,6 @@
+import { useRef } from 'react';
+import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
+
 const DAY_NAMES_CN = ['日', '一', '二', '三', '四', '五', '六'];
 
 const normalizeHistory = (value) => (Array.isArray(value) ? value : []);
@@ -54,6 +57,19 @@ const calculateStreak = (studyHistory) => {
   return streak;
 };
 
+const getCountMeta = (value) => {
+  if (typeof value === 'number') {
+    return { number: value, suffix: '' };
+  }
+
+  const match = String(value).match(/^(\d+)(.*)$/);
+  if (!match) {
+    return { number: null, suffix: '' };
+  }
+
+  return { number: Number(match[1]), suffix: match[2] };
+};
+
 function Statistics({
   learnedWords = [],
   masteredWords = [],
@@ -62,6 +78,7 @@ function Statistics({
   totalWords = 0,
   dueReviewCount = 0,
 }) {
+  const statsRef = useRef(null);
   const safeHistory = normalizeHistory(studyHistory);
   const last7Days = getLast7Days(safeHistory);
   const maxActivity = Math.max(
@@ -86,8 +103,48 @@ function Statistics({
     { label: '近 90 天', value: totalActions, sub: '学习动作', tone: 'plain' },
   ];
 
+  useGSAP(() => {
+    if (prefersReducedMotion()) return;
+    const values = statsRef.current?.querySelectorAll('[data-stat-value]');
+    if (!values?.length) return;
+
+    values.forEach((node) => {
+      const target = Number(node.dataset.statValue || 0);
+      const suffix = node.dataset.statSuffix || '';
+      const counter = { value: 0 };
+
+      gsap.to(counter, {
+        value: target,
+        duration: 0.72,
+        ease: 'power2.out',
+        onUpdate: () => {
+          node.textContent = `${Math.round(counter.value)}${suffix}`;
+        },
+        onComplete: () => {
+          node.textContent = `${target}${suffix}`;
+        },
+      });
+    });
+
+    gsap.fromTo(
+      statsRef.current.querySelectorAll('.statistics-refresh-bar'),
+      { scaleY: 0, transformOrigin: 'bottom center' },
+      {
+        scaleY: 1,
+        duration: 0.52,
+        ease: 'power2.out',
+        stagger: 0.045,
+        clearProps: 'transform',
+      }
+    );
+  }, {
+    dependencies: [dueReviewCount, learnedCount, masteredCount, wrongWords.length, totalActions, streak],
+    scope: statsRef,
+    revertOnUpdate: true,
+  });
+
   return (
-    <section className="learn-refresh-card learn-refresh-card-enter">
+    <section ref={statsRef} className="learn-refresh-card learn-refresh-card-enter">
       <header className="text-center">
         <p className="text-sm font-medium text-[#6e6e73]">Learning Dashboard</p>
         <h1 className="mt-2 text-[40px] font-semibold leading-tight text-[#1d1d1f] md:text-[52px]">
@@ -97,24 +154,34 @@ function Statistics({
       </header>
 
       <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-3">
-        {cards.map((card) => (
-          <article
-            key={card.label}
-            className={`rounded-[16px] border p-4 text-center ${
-              card.tone === 'blue'
-                ? 'border-[#0071e3] bg-[#0071e3] text-white'
-                : 'border-[#cfd4dc] bg-[#fbfbfd] text-[#1d1d1f] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.72)]'
-            }`}
-          >
-            <p className={`text-sm ${card.tone === 'blue' ? 'text-white/80' : 'text-[#6e6e73]'}`}>
-              {card.label}
-            </p>
-            <p className="mt-2 text-3xl font-semibold leading-none">{card.value}</p>
-            <p className={`mt-2 text-xs ${card.tone === 'blue' ? 'text-white/75' : 'text-[#86868b]'}`}>
-              {card.sub}
-            </p>
-          </article>
-        ))}
+        {cards.map((card) => {
+          const countMeta = getCountMeta(card.value);
+
+          return (
+            <article
+              key={card.label}
+              className={`rounded-[16px] border p-4 text-center ${
+                card.tone === 'blue'
+                  ? 'border-[#0071e3] bg-[#0071e3] text-white'
+                  : 'border-[#cfd4dc] bg-[#fbfbfd] text-[#1d1d1f] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.72)]'
+              }`}
+            >
+              <p className={`text-sm ${card.tone === 'blue' ? 'text-white/80' : 'text-[#6e6e73]'}`}>
+                {card.label}
+              </p>
+              <p
+                className="mt-2 text-3xl font-semibold leading-none"
+                data-stat-value={countMeta.number ?? undefined}
+                data-stat-suffix={countMeta.suffix}
+              >
+                {card.value}
+              </p>
+              <p className={`mt-2 text-xs ${card.tone === 'blue' ? 'text-white/75' : 'text-[#86868b]'}`}>
+                {card.sub}
+              </p>
+            </article>
+          );
+        })}
       </div>
 
       <section className="learn-refresh-example-block mt-8">
@@ -130,7 +197,7 @@ function Statistics({
               <div key={day.date} className="flex flex-1 flex-col items-center gap-2">
                 <div className="flex h-32 w-full items-end justify-center">
                   <div
-                    className="w-full max-w-[42px] rounded-t-[10px] bg-[#0071e3] transition-all"
+                    className="statistics-refresh-bar w-full max-w-[42px] rounded-t-[10px] bg-[#0071e3] transition-all"
                     style={{ height: `${height}%`, opacity: activity > 0 ? 1 : 0.12 }}
                     title={`${day.date}: ${activity}`}
                   />

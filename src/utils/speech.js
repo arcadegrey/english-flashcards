@@ -8,7 +8,9 @@ export const KOKORO_WORD_AUDIO_VOICES = [
   { id: 'af_bella', label: 'Bella · 美音女声' },
   { id: 'am_michael', label: 'Michael · 美音男声' },
   { id: 'bf_emma', label: 'Emma · 英音女声' },
+  { id: 'bm_george', label: 'George · 英音男声' },
 ];
+const KOKORO_STATIC_WORD_AUDIO_VOICES = ['af_bella', 'am_michael', 'bf_emma', 'bm_george'];
 export const KOKORO_EXAMPLE_AUDIO_VOICES = ['af_bella', 'am_michael'];
 
 const browserTtsAvailable =
@@ -197,18 +199,18 @@ const playAudioSource = async (src) => {
   });
 };
 
-const getGeneratedKokoroVoiceIds = () => new Set(KOKORO_WORD_AUDIO_VOICES.map((voice) => voice.id));
+const getGeneratedKokoroVoiceIds = () => new Set(KOKORO_STATIC_WORD_AUDIO_VOICES);
 const getGeneratedKokoroExampleVoiceIds = () => new Set(KOKORO_EXAMPLE_AUDIO_VOICES);
 
 const getExampleVoiceCandidates = () => {
-  const voices = [];
   const currentVoice = storage.getKokoroVoice();
-
-  if (currentVoice) voices.push(currentVoice);
-  voices.push('af_bella', 'am_michael');
-
   const generatedVoices = getGeneratedKokoroExampleVoiceIds();
-  return voices.filter((voice, index) => generatedVoices.has(voice) && voices.indexOf(voice) === index);
+
+  if (generatedVoices.has(currentVoice)) {
+    return [currentVoice];
+  }
+
+  return [];
 };
 
 const speakWithStaticKokoroWordAudio = async (word) => {

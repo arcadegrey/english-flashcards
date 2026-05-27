@@ -22,6 +22,8 @@
     "d1:migrate": "node scripts/apply-d1-schema.mjs"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "gsap": "^3.15.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },

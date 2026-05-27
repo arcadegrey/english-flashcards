@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import Card from './Card';
 import Quiz from './Quiz';
 import FillBlank from './FillBlank';
@@ -7,6 +7,7 @@ import MatchingTest from './MatchingTest';
 import QuickMenu from './QuickMenu';
 import { QUICK_MENU_MODE_OPTIONS } from './quickMenuOptions';
 import { speakWord } from '../utils/speech';
+import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
 import '../styles/word-learning-refresh.css';
 
 const MODE_SUBTITLE = {
@@ -37,6 +38,7 @@ function LearningView({
 }) {
   const [hintOpenForWordId, setHintOpenForWordId] = useState(null);
   const [toast, setToast] = useState('');
+  const mainRef = useRef(null);
 
   const learnedWordSet = useMemo(() => new Set(learnedWords.map(String)), [learnedWords]);
   const masteredWordSet = useMemo(() => new Set(masteredWords.map(String)), [masteredWords]);
@@ -77,6 +79,19 @@ function LearningView({
 
     return () => clearTimeout(timer);
   }, [toast]);
+
+  useGSAP(() => {
+    if (prefersReducedMotion()) return;
+    const main = mainRef.current;
+    const card = main?.querySelector('.learn-refresh-card');
+    if (!card) return;
+
+    gsap.fromTo(
+      card,
+      { y: 14, autoAlpha: 0.86, scale: 0.992 },
+      { y: 0, autoAlpha: 1, scale: 1, duration: 0.34, ease: 'power2.out', clearProps: 'transform,opacity,visibility' }
+    );
+  }, { dependencies: [mode], scope: mainRef, revertOnUpdate: true });
 
   const handleSpeakCurrentWord = () => {
     if (!currentWord?.word) {
@@ -180,7 +195,7 @@ function LearningView({
         </div>
       </header>
 
-      <main className={`learn-refresh-main ${mode === 'learn' ? '' : 'learn-refresh-main--assessment'}`}>
+      <main ref={mainRef} className={`learn-refresh-main ${mode === 'learn' ? '' : 'learn-refresh-main--assessment'}`}>
         {mode === 'learn' ? (
           <Card
             key={`${currentWord?.id || 'learn-empty'}-${currentIndex}`}

@@ -1,7 +1,8 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import QuickMenu from './QuickMenu';
 import { speak, speakWord } from '../utils/speech';
 import { isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from '../utils/readingText';
+import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
 
 const normalizeQuestionOption = (option, index) => {
   if (typeof option === 'string') {
@@ -53,6 +54,7 @@ function ReadingSessionView({
   const [activeWord, setActiveWord] = useState(null);
   const [questionAnswersByArticle, setQuestionAnswersByArticle] = useState({});
   const [toast, setToast] = useState('');
+  const wordModalRef = useRef(null);
   const masteredWordSet = useMemo(
     () => new Set((masteredWords || []).map((item) => String(item))),
     [masteredWords]
@@ -69,6 +71,24 @@ function ReadingSessionView({
     const timer = setTimeout(() => setToast(''), 1600);
     return () => clearTimeout(timer);
   }, [toast]);
+
+  useGSAP(() => {
+    if (!activeWord || prefersReducedMotion()) return;
+    const layer = wordModalRef.current;
+    if (!layer) return;
+
+    const mask = layer.querySelector('.reading-word-modal-mask');
+    const modal = layer.querySelector('.reading-word-modal');
+
+    const tl = gsap.timeline({ defaults: { ease: 'power2.out' } });
+    tl.fromTo(mask, { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.18 })
+      .fromTo(
+        modal,
+        { y: 18, scale: 0.975, autoAlpha: 0 },
+        { y: 0, scale: 1, autoAlpha: 1, duration: 0.32, clearProps: 'transform,opacity,visibility' },
+        0.03
+      );
+  }, { dependencies: [activeWord?.id], scope: wordModalRef, revertOnUpdate: true });
 
   const readingStats = useMemo(() => {
     const tokens = tokenizeReadingText(article?.content || '');
@@ -356,7 +376,7 @@ function ReadingSessionView({
       </main>
 
       {activeWord && (
-        <div className="reading-word-modal-layer" role="dialog" aria-modal="true" aria-label="单词详情">
+        <div ref={wordModalRef} className="reading-word-modal-layer" role="dialog" aria-modal="true" aria-label="单词详情">
           <button
             type="button"
             className="reading-word-modal-mask"
