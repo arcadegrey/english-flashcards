@@ -11,7 +11,7 @@ export const KOKORO_WORD_AUDIO_VOICES = [
   { id: 'bm_george', label: 'George · 英音男声' },
 ];
 const KOKORO_STATIC_WORD_AUDIO_VOICES = ['af_bella', 'am_michael', 'bf_emma', 'bm_george'];
-export const KOKORO_EXAMPLE_AUDIO_VOICES = ['af_bella', 'am_michael'];
+export const KOKORO_EXAMPLE_AUDIO_VOICES = ['af_bella', 'am_michael', 'bf_emma', 'bm_george'];
 
 const browserTtsAvailable =
   typeof window !== 'undefined' && typeof window.speechSynthesis !== 'undefined';
