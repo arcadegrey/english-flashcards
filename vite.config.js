@@ -1,9 +1,57 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
+import { cp, mkdir, readdir } from 'node:fs/promises'
+import path from 'node:path'
+
+const copyPublicAppAssets = () => ({
+  name: 'copy-public-app-assets',
+  apply: 'build',
+  async writeBundle() {
+    const publicDir = path.resolve('public')
+    const outDir = path.resolve('dist')
+    const ignored = new Set(['audio', 'data', '.DS_Store'])
+
+    await mkdir(outDir, { recursive: true })
+
+    const entries = await readdir(publicDir, { withFileTypes: true })
+    await Promise.all(
+      entries
+        .filter((entry) => !ignored.has(entry.name))
+        .map((entry) =>
+          cp(path.join(publicDir, entry.name), path.join(outDir, entry.name), {
+            recursive: true,
+            force: true,
+          })
+        )
+    )
+  },
+})
+
+const copyPublicDataAfterPwa = () => ({
+  name: 'copy-public-data-after-pwa',
+  apply: 'build',
+  closeBundle: {
+    order: 'post',
+    async handler() {
+      await cp(path.resolve('public/data'), path.resolve('dist/data'), {
+        recursive: true,
+        force: true,
+      })
+    },
+  },
+})
 
 export default defineConfig({
+  build: {
+    copyPublicDir: false,
+    minify: 'esbuild',
+    reportCompressedSize: false,
+  },
   server: {
+    watch: {
+      ignored: ['**/public/audio/**']
+    },
     proxy: {
       '/api': {
         target: 'http://127.0.0.1:8787',
@@ -13,6 +61,7 @@ export default defineConfig({
   },
   plugins: [
     react(),
+    copyPublicAppAssets(),
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'icons/*.svg'],
@@ -53,7 +102,7 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,json,ico,txt,woff2,webmanifest}'],
-        globIgnores: ['**/data/vocabulary/**/*.json'],
+        globIgnores: ['**/audio/**', '**/data/**/*.json'],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
@@ -71,6 +120,7 @@ export default defineConfig({
           }
         ]
       }
-    })
+    }),
+    copyPublicDataAfterPwa()
   ],
 })

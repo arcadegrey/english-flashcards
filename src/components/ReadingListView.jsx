@@ -25,6 +25,12 @@ const TOPIC_META = {
   education: '教育科技',
   mindset: '心态成长',
   productivity: '效率专注',
+  'earth-science': '地球科学',
+  'marine-science': '海洋生态',
+  'space-exploration': '太空探索',
+  'urban-planning': '城市规划',
+  archaeology: '考古研究',
+  'technology-history': '科技历史',
 };
 
 const formatCategoryLabel = (category) => {
