@@ -456,6 +456,23 @@ function AppContent() {
     () => readingLibrary.find((item) => String(item.id) === String(selectedReadingId)) || null,
     [readingLibrary, selectedReadingId]
   )
+  const todayStudyStats = useMemo(() => {
+    const today = new Date().toISOString().split('T')[0]
+    const todayData = studyHistory.find((item) => item.date === today) || {}
+    return {
+      wordsLearned: Number(todayData.wordsLearned || 0),
+      wordsMastered: Number(todayData.wordsMastered || 0),
+    }
+  }, [studyHistory])
+  const suggestedReading = useMemo(
+    () =>
+      readingLibrary.find((item) => item.examType === 'IELTS' && String(item.level).toUpperCase() === 'B2') ||
+      readingLibrary.find((item) => item.examType === 'TOEFL') ||
+      readingLibrary.find((item) => item.examType) ||
+      readingLibrary[0] ||
+      null,
+    [readingLibrary]
+  )
 
   const wordCounts = useMemo(() => {
     const counts = { all: allVocabulary.length }
@@ -1682,6 +1699,14 @@ function AppContent() {
     setView('readingSession')
   }
 
+  const handleOpenSuggestedReading = () => {
+    if (suggestedReading?.id != null) {
+      handleOpenReadingSession(suggestedReading.id)
+      return
+    }
+    handleOpenReadingList()
+  }
+
   const handleBackToStudyHub = () => {
     setAssessmentBackTarget('home')
     setView('studyHub')
@@ -1992,6 +2017,7 @@ function AppContent() {
           <StudyHub
             onOpenWordStudy={handleOpenWordStudy}
             onOpenReading={handleOpenReadingList}
+            onOpenSuggestedReading={handleOpenSuggestedReading}
             onOpenTodayReview={handleOpenTodayReview}
             onOpenWrongWords={handleOpenWrongWords}
             onOpenStatistics={handleOpenStatistics}
@@ -2010,6 +2036,9 @@ function AppContent() {
             readingCount={readingLibrary.length}
             reviewCount={todayReviewWordList.length}
             wrongCount={wrongWordList.length}
+            todayWordsLearned={todayStudyStats.wordsLearned}
+            todayWordsMastered={todayStudyStats.wordsMastered}
+            suggestedReading={suggestedReading}
           />
         )
       case 'examPractice':
