@@ -69,6 +69,7 @@ Rules:
 - Lightweight, calm, and secondary to the page title.
 - Right-side icon buttons use consistent size and alignment.
 - Avatar/login state should feel polished but not heavy.
+- Theme switching is a topbar icon button using the same icon-button system; show moon for switching to dark and sun for switching to light.
 
 ## Hero
 - Strongest visual focus on the page.
@@ -88,3 +89,22 @@ Rules:
 - Three aligned stats: 连续打卡 / 今日目标 / 剩余词汇.
 - Real numbers and labels; generated icons only for decoration.
 - Dividers must be subtle.
+
+## Mobile App Shell
+- Hide desktop sidebar/topbar on small screens.
+- Mobile topbar uses avatar, page title, calendar, theme toggle, and notification icons.
+- Mobile bottom nav is floating, rounded, and uses concise labels: 今日 / 训练 / 统计 / 我的.
+- Bottom nav selected state uses the primary blue-purple gradient; inactive items remain muted.
+- Content padding must reserve safe space for the floating bottom nav.
+
+## Mobile Training Cards
+- Training module cards use a consistent white card surface in light mode.
+- Do not use emoji as production card icons when decorative UI assets exist.
+- Small module icons sit in the card's upper-right corner.
+- Large decorative art can sit inside the card body, but must not obscure real text or the arrow button.
+- The arrow remains a real button affordance, not an image.
+
+## Mobile Status Cards
+- Status cards stack with 16px gaps on mobile.
+- Card actions should be at least 48px tall for comfortable tapping.
+- Illustration and action button should be distributed across the card width instead of being cramped in one narrow right column.

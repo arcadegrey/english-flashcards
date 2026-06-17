@@ -58,5 +58,15 @@ Use generated image assets only for:
 - Keep the page premium, calm, airy, and commercially polished
 
 --------------------------------
+# MOBILE HOMEPAGE RULES
+- Mobile uses the same real component system, not a separate screenshot or mock.
+- Mobile app shell uses a compact topbar with avatar, title, calendar, theme toggle, and notification actions.
+- Mobile bottom navigation is a floating real nav with four primary destinations: 今日 / 训练 / 统计 / 我的.
+- Status cards stack vertically; card text, progress, buttons, and stats remain real components.
+- Module cards use decorative PNG assets only for icon/art roles; do not use emoji as production module icons.
+- The training-center module grid uses consistent card surfaces; do not make one module visually louder unless it represents a real selected state.
+- When navigating from a scrolled mobile section to another app view, reset page scroll to the top.
+
+--------------------------------
 # OUTPUT
 Return only changed files and verification status.

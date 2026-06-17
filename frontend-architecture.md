@@ -65,8 +65,17 @@ Production SaaS level consistency
 - Desktop uses sidebar + topbar + content composition.
 - Medium screens may hide large decorative hero artwork before breaking core content.
 - Mobile stacks hero content, cards, and stats without clipping text or controls.
+- Mobile uses <MobileTopbar> and <MobileBottomNav> inside <AppLayout>; do not create page-local mobile nav.
+- Mobile bottom nav reuses the same `navItems` callbacks as desktop navigation.
+- View changes should reset window scroll to top so routes opened from deep mobile sections start at the correct position.
+
+## Theme Behavior
+- Theme state lives in `ThemeProvider` / `useTheme`.
+- Homepage and training center pass `toggleTheme` into AppLayout topbar props.
+- Theme preference persists through existing storage keys; do not add a second localStorage contract.
 
 ## Verification
 - Run `npm run lint`.
 - Run `npm run build`.
 - Manually check that interactive UI remains real components and generated assets remain decorative.
+- For mobile UI work, verify at a 390px-wide viewport and test the main tap path: 今日 -> 训练 -> 背单词 -> 分类选择 -> IELTS/TOEFL.

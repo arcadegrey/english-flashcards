@@ -50,16 +50,21 @@
 - 首页已升级为 production edtech SaaS 风格的“今日计划”仪表盘，采用真实前端组件 + 装饰性透明 PNG 资产的混合 UI 方案。交互元素、文字、按钮、导航、进度环、进度条和统计数字都必须保持为真实 HTML/CSS/React 组件，不能用整页截图或带文字的图片替代。
 - 首页设计语言已沉淀到 4 个规范文件：`agents.md`、`design-system.md`、`component-system.md`、`frontend-architecture.md`。后续 UI 改造需要先遵守这些文档，再落到代码。
 - 首页当前结构是 `AppLayout -> Sidebar + Topbar -> HeroCard -> PlanStatusCards -> StatsRow -> Status summary`。左侧导航标签保持简洁：今日计划、训练中心、单词、阅读、复习、测试、统计。
+- 手机端首页/训练中心已改为 app 化结构：隐藏桌面侧边栏，使用 `MobileTopbar` + 浮动 `MobileBottomNav`，底部主入口为 今日 / 训练 / 统计 / 我的。移动端仍复用同一套 `navItems` 回调，不能另写页面本地导航。
+- 首页和训练中心 topbar 已接入现有主题系统：通过 `ThemeProvider` / `useTheme.toggleTheme()` 切换深色/浅色，并继续使用 `flashcards_theme` / `flashcards_theme_explicit` 存储键。主题按钮是 `IconButton`，不是新的主题状态。
 - 新组件体系位于：
   - `src/components/layout/AppLayout.jsx`：应用壳、侧边栏、顶部栏和内容容器。
   - `src/components/ui/Buttons.jsx`：`PrimaryButton`、`SecondaryButton`、`IconButton`。
-  - `src/components/ui/Cards.jsx`：`BaseCard`、`HeroCard`、`StatusCard`、`StatCard`。
+  - `src/components/ui/Cards.jsx`：`BaseCard`、`HeroCard`、`ModuleCard`、`StatusCard`、`StatCard`。`ModuleCard` 支持 `iconSrc` / `artSrc`，生产 UI 优先使用透明 PNG 资产，避免用 emoji 做模块图标。
   - `src/components/ui/Progress.jsx`：`CircularProgress`、`LinearProgress`。
   - `src/components/modules/LearningModules.jsx`：学习模块入口组件。
   - `src/design-system/tokens.css`：当前首页 SaaS 视觉 token、布局、卡片、按钮、进度和响应式样式。
 - 透明装饰资产位于 `public/images/ui-assets/`：`hero-flashcards.png`、`review-complete.png`、`new-words.png`、`stat-flame.png`、`stat-target.png`、`stat-star.png`。这些资产只用于插画和图标，不能承载中文文案、进度数字、按钮或导航。
 - 首页 Hero 的核心进度不是固定值，会由当前用户学习状态计算：复习完成度和今日新词完成度共同决定 `planProgress`。后续改 UI 时不要把 50% 或其他进度值写死到图片或样式里。
 - 当前首页视觉原则：蓝紫主渐变、浅色背景、白色卡片、柔和阴影、20px 主卡圆角、12-14px 导航/按钮圆角、8/16/24/32/48 间距节奏；绿色只表示完成/成功，橙黄只用于连续打卡或高亮统计。
+- 手机端训练中心四个入口卡当前为统一白色卡面：背单词、做阅读、今日复习、做测试。小图标靠右上，卡片内使用装饰 PNG，不再使用 emoji；“做阅读”不再用单独蓝紫高亮卡，除非以后表示真实选中态。
+- 手机端“背单词”入口不会直接进入全部单词学习，而是展开并滚动到现有词库类型选择区，用户再选择全部、TOEFL、IELTS 或其它分类。
+- 顶层 `AppContent` 已在 `view` 变化时执行 `window.scrollTo({ top: 0 })`，避免从移动端深层滚动位置进入 IELTS/TOEFL/阅读等新视图时停留在页面中部。
 - 已支持深色版：启动前会在 `src/main.jsx` 根据系统偏好和本地主题设置给根节点加主题 class，避免深色浏览器打开时先闪白屏。
 - 深色版覆盖了学习入口、今日学习计划、词汇学习、考试练习、阅读、统计、语音设置、单词集合等主要页面；后续新增页面要同步检查浅色/深色对比度，避免出现白色卡片或深色文字不可见。
 - GSAP 已接入，依赖为 `gsap` 和 `@gsap/react`；统一封装在 `src/utils/gsapMotion.js`，会尊重 `prefers-reduced-motion`。
@@ -202,7 +207,8 @@
 ## 当前已知风险
 
 - 最近重要提交：
-  - 待提交：首页完成 premium edtech SaaS UI polish，新增组件化 App Shell、卡片、按钮、进度组件、透明 UI 资产，以及 `agents.md` / `design-system.md` / `component-system.md` / `frontend-architecture.md` 规范文档。
+  - `1cb18df Polish mobile home UI`：完成手机端首页/训练中心 UI polish，新增移动端 topbar/bottom nav、主题切换按钮、统一训练模块卡、背单词先进入分类选择、视图切换滚动回顶部，并通过 `npm run lint` / `npm run build` 验证。
+  - 首页 premium edtech SaaS UI polish 阶段：新增组件化 App Shell、卡片、按钮、进度组件、透明 UI 资产，以及 `agents.md` / `design-system.md` / `component-system.md` / `frontend-architecture.md` 规范文档。
   - `366bf22 Add IELTS vocabulary lists`：导入 IELTS List 1-2，新增 IELTS 主题/List 分层、按需分片加载、PDF 提词脚本和自然地理背景图。
   - `3c4fe49 Add static example audio generation`：新增例句静态音频生成脚本。
   - `61d07e5 Polish Kokoro preview and R2 audio uploads`：移除语音设置 Kokoro 说明块，修正 Kokoro 试听为静态 MP3，R2 上传脚本改为默认小批量 bulk。
@@ -215,7 +221,7 @@
   - `f9feb8d Add GSAP interactions and streamline voice settings`：接入 GSAP 动效，简化语音设置面板，并加入 George 英音男声入口。
   - `1f5f008 Enable British example audio voices`：把 `bf_emma` 和 `bm_george` 加入静态例句音频白名单，修复英音单词但例句回到美音的问题。
   - `a34a268 Add exam-style readings and speed up builds`：新增 6 篇原创 IELTS/TOEFL 风格阅读练习，并优化 Vite build，排除 `public/audio`，让生产构建恢复到秒级。
-- 当前未提交改动主要是首页 UI polish 与规范文档更新：`src/components/StudyHub.jsx`、`src/components/HomeScreen.jsx`、`src/App.jsx`、`src/index.css`、`src/components/layout/`、`src/components/ui/`、`src/components/modules/`、`src/design-system/`、`public/images/ui-assets/`、4 个设计规范 md，以及本文件。
+- 当前未提交改动主要是文档更新：同步记录 `1cb18df` 之后的手机端 UI 状态、主题切换、训练入口行为和滚动修复。代码改动已在 `1cb18df` 提交。
 - `resetProgress` 会调用 `storage.clearProgress()` 清除学习进度、错题、复习计划和统计历史，但会保留账号、主题、语音设置和自定义词。
 - 进度合并以数组去重和对象浅合并为主，`wordProgress` 同一单词的冲突会以后写入对象覆盖。
 - Worker 发送验证码依赖 Resend；本地或测试环境若缺少环境变量，登录链路会直接失败。
@@ -230,6 +236,7 @@
 ## 下一步建议
 
 - 产品改进路线已沉淀到 `plan.md`。当前优先级是继续把首页“今日学习计划”从轻量推荐升级为完整日任务闭环。
+- 刚完成的手机端 homepage/training polish 已降低移动端 UI 混乱度；下一轮 UI 优先继续清理词库分类选择区和 TOEFL/IELTS 选择页的旧样式残留，让它们与新的移动端 app shell 保持一致。
 - 今日计划后续建议优先补：
   - 把阅读完成、考试巩固完成也纳入日级进度，而不是只用复习和新词计算核心进度。
   - 允许用户自定义每日新词目标，例如 10 / 15 / 25。
