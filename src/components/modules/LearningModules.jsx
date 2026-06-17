@@ -1,6 +1,7 @@
 import { BaseCard, ModuleCard, StatCard, StatusCard } from '../ui/Cards'
 
 const UI_ASSETS = {
+  hero: '/images/ui-assets/hero-flashcards.png',
   review: '/images/ui-assets/review-complete.png',
   newWords: '/images/ui-assets/new-words.png',
   flame: '/images/ui-assets/stat-flame.png',
@@ -9,19 +10,19 @@ const UI_ASSETS = {
 }
 
 export function VocabularyModule(props) {
-  return <ModuleCard icon="🧠" art="🧠" {...props} />
+  return <ModuleCard iconSrc={UI_ASSETS.newWords} artSrc={UI_ASSETS.newWords} {...props} />
 }
 
 export function ReadingModule(props) {
-  return <ModuleCard icon="📖" art="📚" active {...props} />
+  return <ModuleCard iconSrc={UI_ASSETS.hero} artSrc={UI_ASSETS.hero} {...props} />
 }
 
 export function ReviewModule(props) {
-  return <ModuleCard icon="🔁" art="🗓️" {...props} />
+  return <ModuleCard iconSrc={UI_ASSETS.review} artSrc={UI_ASSETS.review} {...props} />
 }
 
 export function TestModule(props) {
-  return <ModuleCard icon="🧪" art="⚗️" {...props} />
+  return <ModuleCard iconSrc={UI_ASSETS.target} artSrc={UI_ASSETS.target} {...props} />
 }
 
 export function StatsRow({ streak, target, remaining }) {

@@ -21,6 +21,8 @@ function StudyHub({
   todayWordsLearned = 0,
   todayWordsMastered = 0,
   suggestedReading = null,
+  isDarkTheme = false,
+  onThemeToggle,
 }) {
   const newWordTarget = 15;
   const reviewTaskComplete = reviewCount === 0;
@@ -110,6 +112,9 @@ function StudyHub({
       topbarProps={{
         onCalendar: onOpenStatistics,
         onNotify: onOpenWrongWords,
+        notifyBadge: wrongCount ? String(Math.min(wrongCount, 9)) : undefined,
+        onThemeToggle,
+        isDarkTheme,
         onUserClick: onAuthOpen,
         userLabel: authUser?.email ? '学习者' : syncStatusText || '学习者',
       }}

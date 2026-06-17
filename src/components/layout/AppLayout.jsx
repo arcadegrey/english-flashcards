@@ -71,6 +71,24 @@ const icons = {
       <path d="M10 21h4" />
     </svg>
   ),
+  moon: (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M20.4 15.1A7.8 7.8 0 0 1 8.9 3.6 8.7 8.7 0 1 0 20.4 15.1Z" />
+    </svg>
+  ),
+  sun: (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2" />
+      <path d="M12 20v2" />
+      <path d="m4.93 4.93 1.41 1.41" />
+      <path d="m17.66 17.66 1.41 1.41" />
+      <path d="M2 12h2" />
+      <path d="M20 12h2" />
+      <path d="m6.34 17.66-1.41 1.41" />
+      <path d="m19.07 4.93-1.41 1.41" />
+    </svg>
+  ),
   sync: (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path d="M20 7v5h-5" />
@@ -127,6 +145,9 @@ export function Topbar({
   onSearchChange,
   onCalendar,
   onNotify,
+  notifyBadge,
+  onThemeToggle,
+  isDarkTheme = false,
   onSync,
   onUserClick,
   userLabel = '学习者',
@@ -155,8 +176,17 @@ export function Topbar({
 
       <div className="ds-topbar-actions">
         {onCalendar && <IconButton label="日历" onClick={onCalendar}>{icons.calendar}</IconButton>}
+        {onThemeToggle && (
+          <IconButton
+            className="ds-theme-toggle"
+            label={isDarkTheme ? '切换浅色模式' : '切换深色模式'}
+            onClick={onThemeToggle}
+          >
+            {isDarkTheme ? icons.sun : icons.moon}
+          </IconButton>
+        )}
         {onSync && <IconButton label="同步账号" onClick={onSync}>{icons.sync}</IconButton>}
-        {onNotify && <IconButton label="通知" onClick={onNotify}>{icons.bell}</IconButton>}
+        {onNotify && <IconButton label="通知" badge={notifyBadge} onClick={onNotify}>{icons.bell}</IconButton>}
         <button type="button" className="ds-user-chip" onClick={onUserClick}>
           <span className="ds-avatar" aria-hidden="true">👨‍🎓</span>
           <span>{userLabel}</span>
@@ -171,14 +201,89 @@ export function Content({ children }) {
   return <main className="ds-content">{children}</main>
 }
 
+function MobileTopbar({
+  title,
+  onCalendar,
+  onNotify,
+  notifyBadge,
+  onThemeToggle,
+  isDarkTheme = false,
+  onUserClick,
+}) {
+  return (
+    <header className="ds-mobile-topbar">
+      <button type="button" className="ds-mobile-avatar-button" aria-label="账号" onClick={onUserClick}>
+        <span className="ds-avatar" aria-hidden="true">👨‍🎓</span>
+      </button>
+      <h1>{title}</h1>
+      <div className="ds-mobile-actions">
+        {onCalendar && <IconButton label="日历" onClick={onCalendar}>{icons.calendar}</IconButton>}
+        {onThemeToggle && (
+          <IconButton
+            className="ds-theme-toggle"
+            label={isDarkTheme ? '切换浅色模式' : '切换深色模式'}
+            onClick={onThemeToggle}
+          >
+            {isDarkTheme ? icons.sun : icons.moon}
+          </IconButton>
+        )}
+        {onNotify && <IconButton label="通知" badge={notifyBadge} onClick={onNotify}>{icons.bell}</IconButton>}
+      </div>
+    </header>
+  )
+}
+
+function MobileBottomNav({ active, items = [], onUserClick }) {
+  const primaryItems = [
+    items.find((item) => item.id === 'plan'),
+    items.find((item) => item.id === 'training'),
+    items.find((item) => item.id === 'stats'),
+    {
+      id: 'profile',
+      label: '我的',
+      icon: 'profile',
+      onClick: onUserClick,
+    },
+  ].filter(Boolean)
+
+  return (
+    <nav className="ds-mobile-bottom-nav" aria-label="底部导航">
+      {primaryItems.map((item) => (
+        <button
+          key={item.id}
+          type="button"
+          className={`ds-mobile-nav-item ${active === item.id ? 'is-active' : ''}`}
+          onClick={item.onClick}
+        >
+          <span className="ds-mobile-nav-icon" aria-hidden="true">
+            {item.icon === 'profile' ? (
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
+                <path d="M4 21a8 8 0 0 1 16 0" />
+              </svg>
+            ) : (
+              icons[item.icon] || icons.plan
+            )}
+          </span>
+          <span className="ds-mobile-nav-label">
+            {item.id === 'plan' ? '今日' : item.id === 'training' ? '训练' : item.label}
+          </span>
+        </button>
+      ))}
+    </nav>
+  )
+}
+
 function AppLayout({ active, navItems, title, subtitle, topbarProps = {}, children }) {
   return (
     <div className="ds-app-layout">
       <Sidebar active={active} items={navItems} />
       <div className="ds-main-shell">
         <Topbar title={title} subtitle={subtitle} {...topbarProps} />
+        <MobileTopbar title={title} {...topbarProps} />
         <Content>{children}</Content>
       </div>
+      <MobileBottomNav active={active} items={navItems} onUserClick={topbarProps.onUserClick} />
     </div>
   )
 }

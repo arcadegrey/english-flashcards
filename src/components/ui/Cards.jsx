@@ -1,13 +1,14 @@
 import { PrimaryButton, SecondaryButton } from './Buttons'
 import { CircularProgress, LinearProgress } from './Progress'
+import { forwardRef } from 'react'
 
-export function BaseCard({ children, className = '', ...props }) {
+export const BaseCard = forwardRef(function BaseCard({ children, className = '', ...props }, ref) {
   return (
-    <section className={`ds-card ${className}`} {...props}>
+    <section ref={ref} className={`ds-card ${className}`} {...props}>
       {children}
     </section>
   )
-}
+})
 
 export function HeroCard({
   label,
@@ -61,13 +62,27 @@ export function HeroCard({
   )
 }
 
-export function ModuleCard({ title, meta, icon, art, active = false, onClick }) {
+export function ModuleCard({ title, meta, icon, iconSrc, art, artSrc, active = false, onClick }) {
+  const hasIcon = Boolean(iconSrc || icon)
+
   return (
-    <button type="button" className={`ds-module-card ${active ? 'is-active' : ''}`} onClick={onClick}>
-      <span className="ds-module-icon" aria-hidden="true">{icon}</span>
+    <button
+      type="button"
+      className={`ds-module-card ${hasIcon ? 'has-icon' : ''} ${active ? 'is-active' : ''}`}
+      onClick={onClick}
+    >
+      {(iconSrc || icon) && (
+        <span className="ds-module-icon" aria-hidden="true">
+          {iconSrc ? <img className="ds-module-icon-img" src={iconSrc} alt="" loading="lazy" /> : icon}
+        </span>
+      )}
       <h3>{title}</h3>
       <p>{meta}</p>
-      <span className="ds-module-art" aria-hidden="true">{art}</span>
+      {artSrc ? (
+        <img className="ds-module-art-image" src={artSrc} alt="" loading="lazy" aria-hidden="true" />
+      ) : art ? (
+        <span className="ds-module-art" aria-hidden="true">{art}</span>
+      ) : null}
       <span className="ds-module-arrow" aria-hidden="true">
         <svg viewBox="0 0 24 24">
           <path d="m9 18 6-6-6-6" />

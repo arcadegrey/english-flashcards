@@ -365,7 +365,7 @@ const sortNumericKeyWithUnknownLast = (a, b, unknownKey) => {
 }
 
 function AppContent() {
-  const { isDark } = useTheme()
+  const { isDark, toggleTheme } = useTheme()
 
   const [view, setView] = useState('studyHub')
   const [mode, setMode] = useState('learn')
@@ -1356,6 +1356,11 @@ function AppContent() {
     window.history.pushState(nextState, '', window.location.href)
   }, [view, mode, selectedCategory, selectedToeflLevel, selectedToeflList, selectedIeltsTopic, selectedIeltsList, selectedReadingId])
 
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+  }, [view])
+
   const currentWord = shuffledWords[currentIndex]
 
   const recordStudyEvent = (wordsLearnedDelta = 0, wordsMasteredDelta = 0, timeSpentDelta = 0) => {
@@ -2039,6 +2044,8 @@ function AppContent() {
             todayWordsLearned={todayStudyStats.wordsLearned}
             todayWordsMastered={todayStudyStats.wordsMastered}
             suggestedReading={suggestedReading}
+            isDarkTheme={isDark}
+            onThemeToggle={toggleTheme}
           />
         )
       case 'examPractice':
@@ -2073,6 +2080,7 @@ function AppContent() {
             onOpenMasteredWords={() => setView('masteredWords')}
             onOpenTodayReview={handleOpenTodayReview}
             onOpenWrongWords={handleOpenWrongWords}
+            onOpenStatistics={handleOpenStatistics}
             onOpenToeflLevels={openToeflLevels}
             onOpenIeltsLists={openIeltsTopics}
             authEnabled={cloudEnabled}
@@ -2097,6 +2105,8 @@ function AppContent() {
             onAuthLogout={handleAuthLogout}
             onAuthSyncNow={handleManualSync}
             showAuthPanel={false}
+            isDarkTheme={isDark}
+            onThemeToggle={toggleTheme}
           />
         )
       case 'readingList':

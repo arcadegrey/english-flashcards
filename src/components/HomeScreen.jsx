@@ -5,6 +5,13 @@ import AppLayout from './layout/AppLayout';
 import { HeroCard, ModuleCard, BaseCard } from './ui/Cards';
 import { MotivationBand, StatsRow } from './modules/LearningModules';
 
+const UI_ASSETS = {
+  hero: '/images/ui-assets/hero-flashcards.png',
+  review: '/images/ui-assets/review-complete.png',
+  newWords: '/images/ui-assets/new-words.png',
+  target: '/images/ui-assets/stat-target.png',
+};
+
 const matchesWordQuery = (word, query) =>
   word.word.toLowerCase().includes(query) ||
   word.meaning.toLowerCase().includes(query) ||
@@ -23,6 +30,7 @@ function HomeScreen({
   onOpenMasteredWords,
   onOpenTodayReview,
   onOpenWrongWords,
+  onOpenStatistics,
   onOpenToeflLevels,
   onOpenIeltsLists,
   onBack,
@@ -33,9 +41,12 @@ function HomeScreen({
   authUser = null,
   syncStatusText = '',
   syncError = '',
+  isDarkTheme = false,
+  onThemeToggle,
 }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [debouncedQuery, setDebouncedQuery] = useState('');
+  const [showCategoryPicker, setShowCategoryPicker] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -205,6 +216,13 @@ function HomeScreen({
     onCategorySelect(category.id, { focusWordId });
   };
 
+  const handleOpenWordPicker = () => {
+    setShowCategoryPicker(true);
+    window.requestAnimationFrame(() => {
+      document.getElementById('word-category-panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  };
+
   const navItems = [
     {
       id: 'plan',
@@ -222,13 +240,19 @@ function HomeScreen({
       id: 'words',
       label: '背单词',
       icon: 'words',
-      onClick: () => onCategorySelect('all', { focusWordId: null }),
+      onClick: handleOpenWordPicker,
     },
     {
       id: 'reading',
       label: '阅读',
       icon: 'reading',
       onClick: onOpenReading,
+    },
+    {
+      id: 'stats',
+      label: '统计',
+      icon: 'stats',
+      onClick: onOpenStatistics,
     },
     {
       id: 'review',
@@ -249,33 +273,32 @@ function HomeScreen({
       id: 'all',
       title: '背单词',
       meta: `${wordCounts.all || 0} 词可学`,
-      icon: '🧠',
-      art: '🧠',
-      onClick: () => onCategorySelect('all', { focusWordId: null }),
+      iconSrc: UI_ASSETS.newWords,
+      artSrc: UI_ASSETS.newWords,
+      onClick: handleOpenWordPicker,
     },
     {
       id: 'reading',
       title: '做阅读',
       meta: `${readingCount} 篇短文`,
-      icon: '📖',
-      art: '📚',
-      active: true,
+      iconSrc: UI_ASSETS.hero,
+      artSrc: UI_ASSETS.hero,
       onClick: onOpenReading,
     },
     {
       id: 'review',
       title: '今日复习',
       meta: `${todayReviewWordIds.length} 个到期词`,
-      icon: '🔁',
-      art: '🗓️',
+      iconSrc: UI_ASSETS.review,
+      artSrc: UI_ASSETS.review,
       onClick: onOpenTodayReview,
     },
     {
       id: 'test',
       title: '做测试',
       meta: '挑战自我，检验学习成效',
-      icon: '🧪',
-      art: '⚗️',
+      iconSrc: UI_ASSETS.target,
+      artSrc: UI_ASSETS.target,
       onClick: () => onOpenMode?.('quiz'),
     },
   ];
@@ -290,7 +313,11 @@ function HomeScreen({
         searchValue: searchQuery,
         searchPlaceholder: '搜索单词、短文或功能...',
         onSearchChange: setSearchQuery,
+        onCalendar: onOpenStatistics,
         onNotify: onOpenWrongWords,
+        notifyBadge: wrongWordIds.length ? String(Math.min(wrongWordIds.length, 9)) : undefined,
+        onThemeToggle,
+        isDarkTheme,
         onUserClick: onBack,
         userLabel: authUser?.email ? '小明同学' : authLoading ? '同步中' : syncStatusText || '小明同学',
       }}
@@ -301,6 +328,7 @@ function HomeScreen({
           label="English Flashcards"
           title="全部训练入口"
           subtitle="想自由切换时，可以从这里进入任意模块。"
+          illustrationSrc={UI_ASSETS.hero}
         />
 
         <section className="ds-module-grid" aria-label="训练模块">
@@ -317,7 +345,10 @@ function HomeScreen({
           </BaseCard>
         )}
 
-        <BaseCard className="word-home-category-panel">
+        <BaseCard
+          id="word-category-panel"
+          className={`word-home-category-panel ${showCategoryPicker ? 'is-open' : ''}`}
+        >
           <div className="word-home-category-head">
             <h2>{debouncedQuery ? '搜索结果' : '选择学习分类'}</h2>
             <p>
@@ -343,8 +374,6 @@ function HomeScreen({
                     key={category.id}
                     title={category.name}
                     meta={`${count} 词`}
-                    icon={category.icon}
-                    art={category.icon}
                     onClick={() => handleCategoryClick(category)}
                   />
                 );
