@@ -2063,6 +2063,7 @@ function AppContent() {
           <HomeScreen
             onCategorySelect={handleCategorySelect}
             wordCounts={wordCounts}
+            readingCount={readingLibrary.length}
             vocabularyData={allVocabulary}
             learnedWordIds={learnedWords}
             masteredWordIds={masteredWords}

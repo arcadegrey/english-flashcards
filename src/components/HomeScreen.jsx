@@ -1,8 +1,9 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import categories from '../data/categories';
-import AuthPanel from './AuthPanel';
-import QuickMenu from './QuickMenu';
 import { wordBelongsToCategory } from '../utils/wordCategories';
+import AppLayout from './layout/AppLayout';
+import { HeroCard, ModuleCard, BaseCard } from './ui/Cards';
+import { MotivationBand, StatsRow } from './modules/LearningModules';
 
 const matchesWordQuery = (word, query) =>
   word.word.toLowerCase().includes(query) ||
@@ -12,6 +13,7 @@ const matchesWordQuery = (word, query) =>
 function HomeScreen({
   onCategorySelect,
   wordCounts,
+  readingCount = 0,
   vocabularyData = [],
   learnedWordIds = [],
   masteredWordIds = [],
@@ -25,21 +27,12 @@ function HomeScreen({
   onOpenIeltsLists,
   onBack,
   onHome,
-  onSyncAccount,
-  onSpeakIntro,
   onOpenMode,
   onOpenReading,
-  mode = 'learn',
-  authEnabled = false,
   authLoading = false,
   authUser = null,
   syncStatusText = '',
   syncError = '',
-  onAuthLogin,
-  onAuthRegister,
-  onAuthLogout,
-  onAuthSyncNow,
-  showAuthPanel = true,
 }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [debouncedQuery, setDebouncedQuery] = useState('');
@@ -212,166 +205,157 @@ function HomeScreen({
     onCategorySelect(category.id, { focusWordId });
   };
 
+  const navItems = [
+    {
+      id: 'plan',
+      label: '今日计划',
+      icon: 'plan',
+      onClick: onHome,
+    },
+    {
+      id: 'training',
+      label: '训练中心',
+      icon: 'training',
+      onClick: undefined,
+    },
+    {
+      id: 'words',
+      label: '背单词',
+      icon: 'words',
+      onClick: () => onCategorySelect('all', { focusWordId: null }),
+    },
+    {
+      id: 'reading',
+      label: '阅读',
+      icon: 'reading',
+      onClick: onOpenReading,
+    },
+    {
+      id: 'review',
+      label: '复习',
+      icon: 'review',
+      onClick: onOpenTodayReview,
+    },
+    {
+      id: 'test',
+      label: '测试',
+      icon: 'test',
+      onClick: () => onOpenMode?.('quiz'),
+    },
+  ];
+
+  const mainModules = [
+    {
+      id: 'all',
+      title: '背单词',
+      meta: `${wordCounts.all || 0} 词可学`,
+      icon: '🧠',
+      art: '🧠',
+      onClick: () => onCategorySelect('all', { focusWordId: null }),
+    },
+    {
+      id: 'reading',
+      title: '做阅读',
+      meta: `${readingCount} 篇短文`,
+      icon: '📖',
+      art: '📚',
+      active: true,
+      onClick: onOpenReading,
+    },
+    {
+      id: 'review',
+      title: '今日复习',
+      meta: `${todayReviewWordIds.length} 个到期词`,
+      icon: '🔁',
+      art: '🗓️',
+      onClick: onOpenTodayReview,
+    },
+    {
+      id: 'test',
+      title: '做测试',
+      meta: '挑战自我，检验学习成效',
+      icon: '🧪',
+      art: '⚗️',
+      onClick: () => onOpenMode?.('quiz'),
+    },
+  ];
+
   return (
-    <div className="learn-refresh-page word-home-page">
-      <header className="learn-refresh-topbar">
-        <div className="learn-refresh-topbar-inner">
-          <div className="learn-refresh-left-actions">
-            <button type="button" className="learn-refresh-back" onClick={onBack} aria-label="返回学习方式选择">
-              <span aria-hidden="true">←</span>
-              <span>返回</span>
-            </button>
-            <button type="button" className="learn-refresh-home-btn" onClick={onHome} aria-label="回到首页">
-              <span aria-hidden="true">🏠</span>
-            </button>
-          </div>
+    <AppLayout
+      active="training"
+      navItems={navItems}
+      title="训练中心"
+      subtitle="想自由切换时，可以从这里进入任意模块。"
+      topbarProps={{
+        searchValue: searchQuery,
+        searchPlaceholder: '搜索单词、短文或功能...',
+        onSearchChange: setSearchQuery,
+        onNotify: onOpenWrongWords,
+        onUserClick: onBack,
+        userLabel: authUser?.email ? '小明同学' : authLoading ? '同步中' : syncStatusText || '小明同学',
+      }}
+    >
+      <div className="ds-stack">
+        <HeroCard
+          soft
+          label="English Flashcards"
+          title="全部训练入口"
+          subtitle="想自由切换时，可以从这里进入任意模块。"
+        />
 
-          <div className="learn-refresh-progress">
-            <p className="learn-refresh-progress-main">{vocabularyCategoryCount} 类</p>
-            <p className="learn-refresh-progress-sub">单词分类</p>
-          </div>
-
-          <div className="learn-refresh-top-actions">
-            <button
-              type="button"
-              className="learn-refresh-icon-btn"
-              onClick={onSyncAccount}
-              aria-label="同步账号"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M20 6v5h-5" />
-                <path d="M4 18v-5h5" />
-                <path d="M6.2 9A7 7 0 0118.5 7.5L20 11" />
-                <path d="M17.8 15A7 7 0 015.5 16.5L4 13" />
-              </svg>
-            </button>
-            <button
-              type="button"
-              className="learn-refresh-icon-btn"
-              onClick={onSpeakIntro}
-              aria-label="播放单词分类提示"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M3 9v6h4l5 4V5L7 9H3z" />
-                <path d="M16.5 8.5a4.5 4.5 0 010 7" />
-                <path d="M19.5 6a8 8 0 010 12" />
-              </svg>
-            </button>
-
-            <QuickMenu mode={mode} onOpenMode={onOpenMode} onOpenReading={onOpenReading} />
-          </div>
-        </div>
-      </header>
-
-      <main className="learn-refresh-main word-home-main">
-        <section className="learn-refresh-card learn-refresh-card-enter reading-list-card">
-          <header className="reading-list-header">
-            <h1 className="reading-list-title">英语单词卡片</h1>
-            <p className="reading-list-subtitle">
-              四六级核心词汇 · 结构化学习路径 · 更轻松的词汇复习体验
-            </p>
-          </header>
-
-          {showAuthPanel && (
-            <AuthPanel
-              enabled={authEnabled}
-              loading={authLoading}
-              user={authUser}
-              syncStatusText={syncStatusText}
-              syncError={syncError}
-              onLogin={onAuthLogin}
-              onRegister={onAuthRegister}
-              onLogout={onAuthLogout}
-              onSyncNow={onAuthSyncNow}
-            />
-          )}
-
-          <section className="word-home-search">
-            <div className="relative">
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="搜索分类或单词..."
-                className="w-full min-h-[44px] rounded-[10px] border border-[var(--wl-line)] bg-[var(--wl-card)] px-4 py-3 pr-11 text-center text-[var(--wl-text)] placeholder:text-[var(--wl-subtext)] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/20 focus:border-[#4f46e5]"
-              />
-              {searchQuery && (
-                <button
-                  onClick={() => setSearchQuery('')}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-[#9ca3af] transition hover:text-[#6b7280]"
-                >
-                  ✕
-                </button>
-              )}
-            </div>
-
-            {debouncedQuery && (
-              <p className="mt-3 text-center text-sm text-[var(--wl-subtext)]">
-                找到 {filteredCategories.length} 个分类，共 <span className="font-semibold text-[var(--wl-text)]">{totalMatchedWords}</span>{' '}
-                个匹配单词
-              </p>
-            )}
-          </section>
-
-          <section className="reading-category-section" aria-label="单词分类">
-            <div className="reading-category-head">
-              <h2 className="reading-category-title">
-                {debouncedQuery ? '搜索结果' : '选择学习分类'}
-              </h2>
-              <p className="reading-category-sub">
-                {debouncedQuery
-                  ? `共 ${filteredCategories.length} 个匹配分类`
-                  : `共 ${vocabularyCategoryCount} 个词库分类`}
-              </p>
-            </div>
-
-            {filteredCategories.length === 0 ? (
-              <div className="word-home-empty">
-                <p className="text-base text-[var(--wl-subtext)]">未找到匹配的分类或单词</p>
-                <p className="mt-1 text-sm text-[var(--wl-subtext)]">尝试其他搜索词</p>
-              </div>
-            ) : (
-              <div className="reading-category-grid">
-                {filteredCategories.map((category) => {
-                  const count = filteredWordCounts[category.id] || 0;
-
-                  return (
-                    <button
-                      key={category.id}
-                      onClick={() => handleCategoryClick(category)}
-                      className="reading-category-card"
-                    >
-                      <span className="reading-category-icon" aria-hidden="true">
-                        {category.icon}
-                      </span>
-                      <span className="reading-category-name">{category.name}</span>
-                      <span className="reading-category-count">{count} 词</span>
-                    </button>
-                  );
-                })}
-              </div>
-            )}
-          </section>
-
-          {!debouncedQuery && (
-            <section className="word-home-stats">
-              <article className="word-home-stat-card">
-                <p className="text-2xl font-semibold text-[var(--wl-text)]">{wordCounts.all || 0}</p>
-                <p className="text-sm text-[var(--wl-subtext)]">总词汇量</p>
-              </article>
-              <article className="word-home-stat-card">
-                <p className="text-2xl font-semibold text-[var(--wl-text)]">{vocabularyCategoryCount}</p>
-                <p className="text-sm text-[var(--wl-subtext)]">学习分类</p>
-              </article>
-              <article className="word-home-stat-card">
-                <p className="text-2xl font-semibold text-[var(--wl-text)]">持续更新</p>
-                <p className="text-sm text-[var(--wl-subtext)]">更多词库可导入</p>
-              </article>
-            </section>
-          )}
+        <section className="ds-module-grid" aria-label="训练模块">
+          {mainModules.map((module) => (
+            <ModuleCard key={module.id} {...module} />
+          ))}
         </section>
-      </main>
-    </div>
+
+        <MotivationBand />
+
+        {debouncedQuery && (
+          <BaseCard className="word-home-search-result">
+            找到 {filteredCategories.length} 个分类，共 <strong>{totalMatchedWords}</strong> 个匹配单词
+          </BaseCard>
+        )}
+
+        <BaseCard className="word-home-category-panel">
+          <div className="word-home-category-head">
+            <h2>{debouncedQuery ? '搜索结果' : '选择学习分类'}</h2>
+            <p>
+              {debouncedQuery
+                ? `共 ${filteredCategories.length} 个匹配分类`
+                : `共 ${vocabularyCategoryCount} 个词库分类`}
+            </p>
+            {syncError && <p className="word-home-sync-error">{syncError}</p>}
+          </div>
+
+          {filteredCategories.length === 0 ? (
+            <div className="word-home-empty">
+              <p>未找到匹配的分类或单词</p>
+              <p>尝试其他搜索词</p>
+            </div>
+          ) : (
+            <div className="ds-categories-grid">
+              {filteredCategories.map((category) => {
+                const count = filteredWordCounts[category.id] || 0;
+
+                return (
+                  <ModuleCard
+                    key={category.id}
+                    title={category.name}
+                    meta={`${count} 词`}
+                    icon={category.icon}
+                    art={category.icon}
+                    onClick={() => handleCategoryClick(category)}
+                  />
+                );
+              })}
+            </div>
+          )}
+        </BaseCard>
+
+        <StatsRow streak="3" target="15" remaining={wordCounts.all || 0} />
+      </div>
+    </AppLayout>
   );
 }
 

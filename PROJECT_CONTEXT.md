@@ -47,6 +47,19 @@
 
 ## 视觉 / 主题 / 动效
 
+- 首页已升级为 production edtech SaaS 风格的“今日计划”仪表盘，采用真实前端组件 + 装饰性透明 PNG 资产的混合 UI 方案。交互元素、文字、按钮、导航、进度环、进度条和统计数字都必须保持为真实 HTML/CSS/React 组件，不能用整页截图或带文字的图片替代。
+- 首页设计语言已沉淀到 4 个规范文件：`agents.md`、`design-system.md`、`component-system.md`、`frontend-architecture.md`。后续 UI 改造需要先遵守这些文档，再落到代码。
+- 首页当前结构是 `AppLayout -> Sidebar + Topbar -> HeroCard -> PlanStatusCards -> StatsRow -> Status summary`。左侧导航标签保持简洁：今日计划、训练中心、单词、阅读、复习、测试、统计。
+- 新组件体系位于：
+  - `src/components/layout/AppLayout.jsx`：应用壳、侧边栏、顶部栏和内容容器。
+  - `src/components/ui/Buttons.jsx`：`PrimaryButton`、`SecondaryButton`、`IconButton`。
+  - `src/components/ui/Cards.jsx`：`BaseCard`、`HeroCard`、`StatusCard`、`StatCard`。
+  - `src/components/ui/Progress.jsx`：`CircularProgress`、`LinearProgress`。
+  - `src/components/modules/LearningModules.jsx`：学习模块入口组件。
+  - `src/design-system/tokens.css`：当前首页 SaaS 视觉 token、布局、卡片、按钮、进度和响应式样式。
+- 透明装饰资产位于 `public/images/ui-assets/`：`hero-flashcards.png`、`review-complete.png`、`new-words.png`、`stat-flame.png`、`stat-target.png`、`stat-star.png`。这些资产只用于插画和图标，不能承载中文文案、进度数字、按钮或导航。
+- 首页 Hero 的核心进度不是固定值，会由当前用户学习状态计算：复习完成度和今日新词完成度共同决定 `planProgress`。后续改 UI 时不要把 50% 或其他进度值写死到图片或样式里。
+- 当前首页视觉原则：蓝紫主渐变、浅色背景、白色卡片、柔和阴影、20px 主卡圆角、12-14px 导航/按钮圆角、8/16/24/32/48 间距节奏；绿色只表示完成/成功，橙黄只用于连续打卡或高亮统计。
 - 已支持深色版：启动前会在 `src/main.jsx` 根据系统偏好和本地主题设置给根节点加主题 class，避免深色浏览器打开时先闪白屏。
 - 深色版覆盖了学习入口、今日学习计划、词汇学习、考试练习、阅读、统计、语音设置、单词集合等主要页面；后续新增页面要同步检查浅色/深色对比度，避免出现白色卡片或深色文字不可见。
 - GSAP 已接入，依赖为 `gsap` 和 `@gsap/react`；统一封装在 `src/utils/gsapMotion.js`，会尊重 `prefers-reduced-motion`。
@@ -189,6 +202,7 @@
 ## 当前已知风险
 
 - 最近重要提交：
+  - 待提交：首页完成 premium edtech SaaS UI polish，新增组件化 App Shell、卡片、按钮、进度组件、透明 UI 资产，以及 `agents.md` / `design-system.md` / `component-system.md` / `frontend-architecture.md` 规范文档。
   - `366bf22 Add IELTS vocabulary lists`：导入 IELTS List 1-2，新增 IELTS 主题/List 分层、按需分片加载、PDF 提词脚本和自然地理背景图。
   - `3c4fe49 Add static example audio generation`：新增例句静态音频生成脚本。
   - `61d07e5 Polish Kokoro preview and R2 audio uploads`：移除语音设置 Kokoro 说明块，修正 Kokoro 试听为静态 MP3，R2 上传脚本改为默认小批量 bulk。
@@ -201,7 +215,7 @@
   - `f9feb8d Add GSAP interactions and streamline voice settings`：接入 GSAP 动效，简化语音设置面板，并加入 George 英音男声入口。
   - `1f5f008 Enable British example audio voices`：把 `bf_emma` 和 `bm_george` 加入静态例句音频白名单，修复英音单词但例句回到美音的问题。
   - `a34a268 Add exam-style readings and speed up builds`：新增 6 篇原创 IELTS/TOEFL 风格阅读练习，并优化 Vite build，排除 `public/audio`，让生产构建恢复到秒级。
-- 当前未提交改动包含首页“今日学习计划”产品化改造：`src/components/StudyHub.jsx`、`src/App.jsx`、`src/styles/word-learning-refresh.css`，以及新增产品路线文档 `plan.md`、更新后的 `PROJECT_CONTEXT.md`。
+- 当前未提交改动主要是首页 UI polish 与规范文档更新：`src/components/StudyHub.jsx`、`src/components/HomeScreen.jsx`、`src/App.jsx`、`src/index.css`、`src/components/layout/`、`src/components/ui/`、`src/components/modules/`、`src/design-system/`、`public/images/ui-assets/`、4 个设计规范 md，以及本文件。
 - `resetProgress` 会调用 `storage.clearProgress()` 清除学习进度、错题、复习计划和统计历史，但会保留账号、主题、语音设置和自定义词。
 - 进度合并以数组去重和对象浅合并为主，`wordProgress` 同一单词的冲突会以后写入对象覆盖。
 - Worker 发送验证码依赖 Resend；本地或测试环境若缺少环境变量，登录链路会直接失败。
