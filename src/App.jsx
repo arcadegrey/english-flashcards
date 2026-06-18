@@ -2071,6 +2071,7 @@ function AppContent() {
             onCategorySelect={handleCategorySelect}
             wordCounts={wordCounts}
             readingCount={readingLibrary.length}
+            readings={readingLibrary}
             vocabularyData={allVocabulary}
             learnedWordIds={learnedWords}
             masteredWordIds={masteredWords}
@@ -2099,6 +2100,7 @@ function AppContent() {
             onSpeakIntro={() => speak('English flashcards. Choose a vocabulary category to start.', { rate: 1 })}
             onOpenMode={handleOpenModeFromHome}
             onOpenReading={handleOpenReadingList}
+            onOpenReadingSession={handleOpenReadingSession}
             mode={mode}
             onAuthLogin={handleAuthLogin}
             onAuthRegister={handleAuthRegister}

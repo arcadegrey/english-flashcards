@@ -188,7 +188,7 @@ export function Topbar({
         {onSync && <IconButton label="同步账号" onClick={onSync}>{icons.sync}</IconButton>}
         {onNotify && <IconButton label="通知" badge={notifyBadge} onClick={onNotify}>{icons.bell}</IconButton>}
         <button type="button" className="ds-user-chip" onClick={onUserClick}>
-          <span className="ds-avatar" aria-hidden="true">👨‍🎓</span>
+          <span className="ds-avatar" aria-hidden="true">Aa</span>
           <span>{userLabel}</span>
           <span aria-hidden="true">⌄</span>
         </button>

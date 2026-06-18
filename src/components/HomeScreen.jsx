@@ -6,10 +6,31 @@ import { HeroCard, ModuleCard, BaseCard } from './ui/Cards';
 import { MotivationBand, StatsRow } from './modules/LearningModules';
 
 const UI_ASSETS = {
-  hero: '/images/ui-assets/hero-flashcards.png',
-  review: '/images/ui-assets/review-complete.png',
-  newWords: '/images/ui-assets/new-words.png',
-  target: '/images/ui-assets/stat-target.png',
+  hero: '/images/ui-assets/training-hero-flashcards-blue-v1.png',
+  vocabulary: '/images/ui-assets/training-card-vocabulary-blue-v1.png',
+  reading: '/images/ui-assets/training-card-reading-blue-v1.png',
+  review: '/images/ui-assets/training-card-review-blue-v1.png',
+  target: '/images/ui-assets/training-card-test-blue-v1.png',
+};
+
+const CATEGORY_ART = {
+  all: '/images/ui-assets/category-all-words-blue-v1.png',
+  daily: '/images/ui-assets/category-daily-words-blue-v1.png',
+  cet4: '/images/ui-assets/category-cet4-blue-v1.png',
+  cet6: '/images/ui-assets/category-cet6-blue-v1.png',
+  toefl: '/images/ui-assets/category-toefl-blue-v1.png',
+  ielts: '/images/ui-assets/category-ielts-blue-v1.png',
+};
+
+const READING_LEVEL_META = {
+  all: { label: '全部等级', order: 0 },
+  a1: { label: 'A1 入门', order: 1 },
+  a2: { label: 'A2 初级', order: 2 },
+  b1: { label: 'B1 中级', order: 3 },
+  b2: { label: 'B2 中高级', order: 4 },
+  c1: { label: 'C1 高级', order: 5 },
+  c2: { label: 'C2 精通', order: 6 },
+  unknown: { label: '未标等级', order: 99 },
 };
 
 const matchesWordQuery = (word, query) =>
@@ -17,10 +38,18 @@ const matchesWordQuery = (word, query) =>
   word.meaning.toLowerCase().includes(query) ||
   (word.phonetic || '').toLowerCase().includes(query);
 
+const normalizeReadingLevel = (level) => String(level || '').trim().toLowerCase() || 'unknown';
+
+const formatReadingLevelLabel = (level) => {
+  const key = normalizeReadingLevel(level);
+  return READING_LEVEL_META[key]?.label || String(level || '').trim().toUpperCase() || READING_LEVEL_META.unknown.label;
+};
+
 function HomeScreen({
   onCategorySelect,
   wordCounts,
   readingCount = 0,
+  readings = [],
   vocabularyData = [],
   learnedWordIds = [],
   masteredWordIds = [],
@@ -37,16 +66,17 @@ function HomeScreen({
   onHome,
   onOpenMode,
   onOpenReading,
+  onOpenReadingSession,
   authLoading = false,
   authUser = null,
-  syncStatusText = '',
   syncError = '',
   isDarkTheme = false,
   onThemeToggle,
 }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [debouncedQuery, setDebouncedQuery] = useState('');
-  const [showCategoryPicker, setShowCategoryPicker] = useState(false);
+  const [activeTrainingPanel, setActiveTrainingPanel] = useState('');
+  const [selectedReadingLevel, setSelectedReadingLevel] = useState('');
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -155,6 +185,48 @@ function HomeScreen({
     return vocabularyData.filter((word) => matchesWordQuery(word, debouncedQuery)).length;
   }, [debouncedQuery, vocabularyData, wordCounts.all]);
 
+  const readingLevelOptions = useMemo(() => {
+    const map = new Map();
+    readings.forEach((article) => {
+      const levelKey = normalizeReadingLevel(article?.level);
+      map.set(levelKey, (map.get(levelKey) || 0) + 1);
+    });
+
+    const levels = Array.from(map.entries())
+      .map(([id, count]) => ({
+        id,
+        title: formatReadingLevelLabel(id),
+        meta: `${count} 篇文章`,
+        order: READING_LEVEL_META[id]?.order ?? 50,
+      }))
+      .sort((a, b) => a.order - b.order || a.title.localeCompare(b.title, 'zh-CN'));
+
+    return [
+      {
+        id: 'all',
+        title: READING_LEVEL_META.all.label,
+        meta: `${readings.length} 篇文章`,
+        order: READING_LEVEL_META.all.order,
+      },
+      ...levels,
+    ];
+  }, [readings]);
+
+  const activeReadingLevel = useMemo(
+    () => (selectedReadingLevel && readingLevelOptions.some((item) => item.id === selectedReadingLevel) ? selectedReadingLevel : ''),
+    [readingLevelOptions, selectedReadingLevel]
+  );
+
+  const filteredReadings = useMemo(() => {
+    if (!activeReadingLevel || activeReadingLevel === 'all') return readings;
+    return readings.filter((article) => normalizeReadingLevel(article?.level) === activeReadingLevel);
+  }, [activeReadingLevel, readings]);
+
+  const activeReadingLevelLabel = useMemo(
+    () => readingLevelOptions.find((item) => item.id === activeReadingLevel)?.title || READING_LEVEL_META.all.label,
+    [activeReadingLevel, readingLevelOptions]
+  );
+
   const focusWordIdByCategory = useMemo(() => {
     if (!debouncedQuery) {
       return new Map();
@@ -217,11 +289,29 @@ function HomeScreen({
   };
 
   const handleOpenWordPicker = () => {
-    setShowCategoryPicker(true);
+    setActiveTrainingPanel('words');
     window.requestAnimationFrame(() => {
       document.getElementById('word-category-panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   };
+
+  const handleOpenReadingPicker = () => {
+    setActiveTrainingPanel('reading');
+    setSelectedReadingLevel('');
+    window.requestAnimationFrame(() => {
+      document.getElementById('reading-category-panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  };
+
+  const handleSelectReadingLevel = (levelId) => {
+    setSelectedReadingLevel(levelId);
+    window.requestAnimationFrame(() => {
+      document.getElementById('reading-article-panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  };
+
+  const wordPanelOpen = activeTrainingPanel === 'words' || Boolean(debouncedQuery);
+  const readingPanelOpen = activeTrainingPanel === 'reading';
 
   const navItems = [
     {
@@ -238,7 +328,7 @@ function HomeScreen({
     },
     {
       id: 'words',
-      label: '背单词',
+      label: '单词',
       icon: 'words',
       onClick: handleOpenWordPicker,
     },
@@ -246,13 +336,7 @@ function HomeScreen({
       id: 'reading',
       label: '阅读',
       icon: 'reading',
-      onClick: onOpenReading,
-    },
-    {
-      id: 'stats',
-      label: '统计',
-      icon: 'stats',
-      onClick: onOpenStatistics,
+      onClick: handleOpenReadingPicker,
     },
     {
       id: 'review',
@@ -266,38 +350,44 @@ function HomeScreen({
       icon: 'test',
       onClick: () => onOpenMode?.('quiz'),
     },
+    {
+      id: 'stats',
+      label: '统计',
+      icon: 'stats',
+      onClick: onOpenStatistics,
+    },
   ];
 
   const mainModules = [
     {
       id: 'all',
+      variant: 'vocabulary',
       title: '背单词',
       meta: `${wordCounts.all || 0} 词可学`,
-      iconSrc: UI_ASSETS.newWords,
-      artSrc: UI_ASSETS.newWords,
+      artSrc: UI_ASSETS.vocabulary,
       onClick: handleOpenWordPicker,
     },
     {
       id: 'reading',
+      variant: 'reading',
       title: '做阅读',
       meta: `${readingCount} 篇短文`,
-      iconSrc: UI_ASSETS.hero,
-      artSrc: UI_ASSETS.hero,
-      onClick: onOpenReading,
+      artSrc: UI_ASSETS.reading,
+      onClick: handleOpenReadingPicker,
     },
     {
       id: 'review',
+      variant: 'review',
       title: '今日复习',
       meta: `${todayReviewWordIds.length} 个到期词`,
-      iconSrc: UI_ASSETS.review,
       artSrc: UI_ASSETS.review,
       onClick: onOpenTodayReview,
     },
     {
       id: 'test',
+      variant: 'test',
       title: '做测试',
       meta: '挑战自我，检验学习成效',
-      iconSrc: UI_ASSETS.target,
       artSrc: UI_ASSETS.target,
       onClick: () => onOpenMode?.('quiz'),
     },
@@ -319,7 +409,7 @@ function HomeScreen({
         onThemeToggle,
         isDarkTheme,
         onUserClick: onBack,
-        userLabel: authUser?.email ? '小明同学' : authLoading ? '同步中' : syncStatusText || '小明同学',
+        userLabel: authUser?.email ? '小明同学' : authLoading ? '同步中' : '登录 / 注册',
       }}
     >
       <div className="ds-stack">
@@ -337,8 +427,6 @@ function HomeScreen({
           ))}
         </section>
 
-        <MotivationBand />
-
         {debouncedQuery && (
           <BaseCard className="word-home-search-result">
             找到 {filteredCategories.length} 个分类，共 <strong>{totalMatchedWords}</strong> 个匹配单词
@@ -347,7 +435,7 @@ function HomeScreen({
 
         <BaseCard
           id="word-category-panel"
-          className={`word-home-category-panel ${showCategoryPicker ? 'is-open' : ''}`}
+          className={`word-home-category-panel training-picker-panel ${wordPanelOpen ? 'is-open' : ''}`}
         >
           <div className="word-home-category-head">
             <h2>{debouncedQuery ? '搜索结果' : '选择学习分类'}</h2>
@@ -372,8 +460,10 @@ function HomeScreen({
                 return (
                   <ModuleCard
                     key={category.id}
+                    variant="category"
                     title={category.name}
                     meta={`${count} 词`}
+                    artSrc={CATEGORY_ART[category.id] || UI_ASSETS.vocabulary}
                     onClick={() => handleCategoryClick(category)}
                   />
                 );
@@ -381,6 +471,53 @@ function HomeScreen({
             </div>
           )}
         </BaseCard>
+
+        <BaseCard
+          id="reading-category-panel"
+          className={`word-home-category-panel training-picker-panel reading-home-category-panel ${readingPanelOpen ? 'is-open' : ''}`}
+        >
+          <div className="word-home-category-head">
+            <h2>{activeReadingLevel ? activeReadingLevelLabel : '选择阅读分类'}</h2>
+            <p>{activeReadingLevel ? `${filteredReadings.length} 篇文章` : `共 ${Math.max(readingLevelOptions.length - 1, 0)} 个等级`}</p>
+          </div>
+
+          {!activeReadingLevel ? (
+            <div className="ds-categories-grid">
+              {readingLevelOptions.map((level) => (
+                <ModuleCard
+                  key={level.id}
+                  title={level.title}
+                  meta={level.meta}
+                  onClick={() => handleSelectReadingLevel(level.id)}
+                />
+              ))}
+            </div>
+          ) : (
+            <div id="reading-article-panel" className="reading-home-article-panel">
+              <button type="button" className="reading-home-back-btn" onClick={() => setSelectedReadingLevel('')}>
+                返回阅读分类
+              </button>
+              <div className="ds-categories-grid reading-home-article-grid">
+                {filteredReadings.map((article) => (
+                  <ModuleCard
+                    key={article.id}
+                    title={article.title}
+                    meta={`${article.examType || article.source || '阅读'} · ${article.estimatedMinutes || 4} 分钟`}
+                    onClick={() => {
+                      if (typeof onOpenReadingSession === 'function') {
+                        onOpenReadingSession(article.id);
+                        return;
+                      }
+                      onOpenReading?.();
+                    }}
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+        </BaseCard>
+
+        <MotivationBand />
 
         <StatsRow streak="3" target="15" remaining={wordCounts.all || 0} />
       </div>

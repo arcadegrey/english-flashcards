@@ -62,13 +62,15 @@ export function HeroCard({
   )
 }
 
-export function ModuleCard({ title, meta, icon, iconSrc, art, artSrc, active = false, onClick }) {
+export function ModuleCard({ title, meta, icon, iconSrc, art, artSrc, active = false, variant, onClick }) {
   const hasIcon = Boolean(iconSrc || icon)
+  const hasArt = Boolean(artSrc || art)
+  const variantClass = variant ? `is-${variant}` : ''
 
   return (
     <button
       type="button"
-      className={`ds-module-card ${hasIcon ? 'has-icon' : ''} ${active ? 'is-active' : ''}`}
+      className={`ds-module-card ${variantClass} ${hasIcon ? 'has-icon' : ''} ${hasArt ? 'has-art' : ''} ${active ? 'is-active' : ''}`}
       onClick={onClick}
     >
       {(iconSrc || icon) && (
