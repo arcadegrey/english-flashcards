@@ -27,9 +27,6 @@ function StudyHub({
   const newWordTarget = 15;
   const reviewTaskComplete = reviewCount === 0;
   const newWordProgress = Math.min(todayWordsLearned, newWordTarget);
-  const reviewProgress = reviewTaskComplete ? 1 : 0;
-  const wordTaskProgress = newWordProgress / newWordTarget;
-  const planProgress = Math.round(((reviewProgress + wordTaskProgress) / 2) * 100);
   const priorityTask = reviewCount > 0
     ? {
         title: '先清掉到期复习',
@@ -121,16 +118,11 @@ function StudyHub({
     >
       <div className="ds-stack">
         <HeroCard
+          soft
           label="每日进步一点点"
           title="今天先做这一步"
           subtitle={priorityTask.title}
-          meta={`已学 ${newWordProgress} / ${newWordTarget} 个`}
-          progress={planProgress}
-          primaryLabel={priorityTask.actionLabel}
-          secondaryLabel="查看统计"
-          onPrimary={priorityTask.onClick}
-          onSecondary={onOpenStatistics}
-          illustrationSrc="/images/ui-assets/hero-flashcards.png"
+          illustrationSrc="/images/ui-assets/training-hero-flashcards-blue-v1.png"
         />
 
         <PlanStatusCards

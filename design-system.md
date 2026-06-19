@@ -2,18 +2,23 @@
 
 --------------------------------
 # COLORS
-Primary: #6C7BFF -> #8B7CFF
-Background: #F7F9FF
+Primary: #4F7CFF
+Secondary: #7EA6FF
+Accent yellow: #FFC857
+Background: #F7FAFF
 Card: #FFFFFF
+Text: #0F172A
+Muted text: #64748B
 
 Green: success
 Orange: warning
 Blue: reading/active
 
 Rules:
-- Primary surfaces use blue-purple gradients only.
+- Primary learning surfaces use blue gradients based on #4F7CFF / #7EA6FF.
+- Yellow is an accent only: bookmark tabs, sparkles, small highlights, stars, or selected-state indicators. Do not make yellow the main surface color.
 - Green is reserved for success/completion states.
-- Orange/yellow is reserved for streaks, goals, or highlight stats.
+- Orange/yellow is reserved for streaks, goals, bookmark accents, sparkles, or highlight stats.
 - Avoid random accent colors.
 - Do not introduce heavy borders or dark admin-style chrome.
 
@@ -45,6 +50,7 @@ Rules:
 - Cards should separate clearly from the background through soft elevation.
 - Use subtle inset lines only when needed for definition.
 - Keep the interface light, premium, and calm.
+- Current training-center style is blue-white, lightweight, and motivational: blue hero banner, white cards, subtle blue borders, soft shadows, and yellow only as small accent details.
 
 --------------------------------
 # ICON STYLE
@@ -53,6 +59,7 @@ Rules:
 - Generated icons must have transparent backgrounds.
 - No Chinese text inside generated assets.
 - No progress numbers or UI controls inside generated assets.
+- For Training Center and vocabulary categories, prefer English-learning-specific blue/yellow 3D assets: Aa flashcards, reading document, review clipboard, target, CET shields, globe, IELTS card, study book/mug. Do not use emoji as production icons.
 
 --------------------------------
 # HOMEPAGE PATTERN
@@ -62,7 +69,7 @@ Rules:
 - Nav item height 44-48px.
 - Nav item radius 12-14px.
 - Icon/text gap 12px.
-- Active state is a soft gradient tint, not a large primary button.
+- Homepage may use a soft tint. Training Center desktop currently uses a stronger blue selected pill with a small yellow active indicator bar, matching the blue learning-app direction.
 - Labels should be concise: 今日计划 / 训练中心 / 单词 / 阅读 / 复习 / 测试 / 统计.
 
 ## Topbar
@@ -77,6 +84,7 @@ Rules:
 - Center area: real circular progress and real CTA buttons.
 - Right area: decorative soft 3D "Aa" flashcard asset.
 - Hero should feel intentionally composed, not assembled from unrelated pieces.
+- Training Center hero uses a blue banner gradient, a right-side blue "Aa" flashcard asset, subtle letter background shapes, and small yellow highlights.
 
 ## Status Cards
 - Review card: green completion language, real text, subtle decorative illustration.
@@ -103,6 +111,8 @@ Rules:
 - Small module icons sit in the card's upper-right corner.
 - Large decorative art can sit inside the card body, but must not obscure real text or the arrow button.
 - The arrow remains a real button affordance, not an image.
+- Desktop Training Center module cards use the same real `ModuleCard` system: text left, decorative learning icon right, real arrow button fixed at bottom-right.
+- Word-category cards now use generated blue/yellow English-learning assets and should remain compact, lightweight cards rather than old plain buttons.
 
 ## Mobile Status Cards
 - Status cards stack with 16px gaps on mobile.

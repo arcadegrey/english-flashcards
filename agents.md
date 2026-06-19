@@ -16,6 +16,7 @@ You are responsible for upgrading the English Flashcards UI into a production-gr
 - Consistent across all pages
 - No random design decisions
 - Real frontend structure with high-quality decorative assets
+- Current Training Center direction: modern English learning app, blue-white surfaces with primary blue `#4F7CFF`, secondary blue `#7EA6FF`, yellow `#FFC857` as a small accent only, light background `#F7FAFF`, card background `#FFFFFF`, text `#0F172A` / `#64748B`.
 
 --------------------------------
 # STRICT RULES
@@ -52,10 +53,21 @@ Use generated image assets only for:
 --------------------------------
 # HOMEPAGE DESIGN LANGUAGE
 - Left sidebar + top header + hero card + status cards + stats strip
-- Hero uses a blue-purple gradient and a right-side soft 3D "Aa" flashcard asset
+- Homepage hero may use the established premium gradient language.
+- Training Center hero uses a blue gradient banner and a right-side soft 3D blue "Aa" flashcard asset with subtle yellow highlights.
 - Review and new-word cards use real text and actions with decorative side illustrations
 - Stats use real numbers and labels with matching soft 3D icon assets
 - Keep the page premium, calm, airy, and commercially polished
+
+--------------------------------
+# TRAINING CENTER RULES
+- Preserve the current hierarchy: hero -> four main module cards -> inline word/reading picker panels -> motivation band -> Daily Progress.
+- Main modules are 背单词 / 做阅读 / 今日复习 / 做测试, implemented with real `ModuleCard` components.
+- 背单词 opens the word category panel; 做阅读 opens the reading category panel. Do not jump directly to old list views unless the user selects a specific item that requires the existing route.
+- Word categories are real compact ModuleCards with decorative blue/yellow 3D assets: 全部单词 / 日常常用 / 四级核心 / 六级核心 / 托福词汇 / 雅思词汇.
+- Do not use emoji for production module/category icons. Use generated transparent PNG assets from `public/images/ui-assets/`.
+- Keep yellow as accent only: bookmark tabs, stars, sparkles, active indicator, or tiny highlights.
+- The login area should read as a clear login/register button; current avatar mark is `Aa`, not emoji.
 
 --------------------------------
 # MOBILE HOMEPAGE RULES

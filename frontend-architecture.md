@@ -60,6 +60,28 @@ Production SaaS level consistency
 - Use transparent PNGs for generated visual assets.
 - Reference assets from components as decorative images with empty alt text when appropriate.
 - Do not place Chinese text, progress numbers, buttons, or UI controls inside generated images.
+- Current Training Center uses blue/yellow generated PNGs in `public/images/ui-assets/`:
+  - `training-hero-flashcards-blue-v1.png`
+  - `training-card-vocabulary-blue-v1.png`
+  - `training-card-reading-blue-v1.png`
+  - `training-card-review-blue-v1.png`
+  - `training-card-test-blue-v1.png`
+  - `category-all-words-blue-v1.png`
+  - `category-daily-words-blue-v1.png`
+  - `category-cet4-blue-v1.png`
+  - `category-cet6-blue-v1.png`
+  - `category-toefl-blue-v1.png`
+  - `category-ielts-blue-v1.png`
+- Source/sprite images may be kept beside final exported icons, but app code should reference the final transparent PNG assets.
+
+## Training Center Behavior
+- `HomeScreen` is the Training Center view.
+- The page structure stays: AppLayout -> HeroCard -> main ModuleCards -> inline picker panels -> MotivationBand -> StatsRow.
+- 背单词 opens `#word-category-panel` inline and scrolls to it.
+- 做阅读 opens `#reading-category-panel` inline and scrolls to it.
+- The word and reading pickers are mutually exclusive, except search can force the word picker open.
+- Selecting TOEFL / IELTS still routes through the existing TOEFL/IELTS flows; do not bypass existing loading or learning logic.
+- Selecting a reading level shows article cards inside the same panel; selecting an article opens `readingSession` through the existing handler.
 
 ## Responsive Behavior
 - Desktop uses sidebar + topbar + content composition.
@@ -79,3 +101,4 @@ Production SaaS level consistency
 - Run `npm run build`.
 - Manually check that interactive UI remains real components and generated assets remain decorative.
 - For mobile UI work, verify at a 390px-wide viewport and test the main tap path: 今日 -> 训练 -> 背单词 -> 分类选择 -> IELTS/TOEFL.
+- For Training Center desktop UI work, verify `1440x900`: blue hero banner, four main cards, word category panel, reading category panel, Daily Progress, and no horizontal overflow.

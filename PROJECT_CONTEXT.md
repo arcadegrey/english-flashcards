@@ -47,9 +47,11 @@
 
 ## 视觉 / 主题 / 动效
 
-- 首页已升级为 production edtech SaaS 风格的“今日计划”仪表盘，采用真实前端组件 + 装饰性透明 PNG 资产的混合 UI 方案。交互元素、文字、按钮、导航、进度环、进度条和统计数字都必须保持为真实 HTML/CSS/React 组件，不能用整页截图或带文字的图片替代。
+- 首页/训练中心已升级为 production edtech SaaS 风格，采用真实前端组件 + 装饰性透明 PNG 资产的混合 UI 方案。交互元素、文字、按钮、导航、进度环、进度条和统计数字都必须保持为真实 HTML/CSS/React 组件，不能用整页截图或带文字的图片替代。
 - 首页设计语言已沉淀到 4 个规范文件：`agents.md`、`design-system.md`、`component-system.md`、`frontend-architecture.md`。后续 UI 改造需要先遵守这些文档，再落到代码。
-- 首页当前结构是 `AppLayout -> Sidebar + Topbar -> HeroCard -> PlanStatusCards -> StatsRow -> Status summary`。左侧导航标签保持简洁：今日计划、训练中心、单词、阅读、复习、测试、统计。
+- 首页当前结构是 `AppLayout -> Sidebar + Topbar -> HeroCard -> PlanStatusCards -> StatsRow -> Status summary`。
+- 训练中心当前结构是 `AppLayout -> Sidebar + Topbar -> HeroCard -> main ModuleCards -> inline word/reading picker panels -> MotivationBand -> StatsRow`。
+- 左侧导航标签保持简洁：今日计划、训练中心、单词、阅读、复习、测试、统计。
 - 手机端首页/训练中心已改为 app 化结构：隐藏桌面侧边栏，使用 `MobileTopbar` + 浮动 `MobileBottomNav`，底部主入口为 今日 / 训练 / 统计 / 我的。移动端仍复用同一套 `navItems` 回调，不能另写页面本地导航。
 - 首页和训练中心 topbar 已接入现有主题系统：通过 `ThemeProvider` / `useTheme.toggleTheme()` 切换深色/浅色，并继续使用 `flashcards_theme` / `flashcards_theme_explicit` 存储键。主题按钮是 `IconButton`，不是新的主题状态。
 - 新组件体系位于：
@@ -59,11 +61,22 @@
   - `src/components/ui/Progress.jsx`：`CircularProgress`、`LinearProgress`。
   - `src/components/modules/LearningModules.jsx`：学习模块入口组件。
   - `src/design-system/tokens.css`：当前首页 SaaS 视觉 token、布局、卡片、按钮、进度和响应式样式。
-- 透明装饰资产位于 `public/images/ui-assets/`：`hero-flashcards.png`、`review-complete.png`、`new-words.png`、`stat-flame.png`、`stat-target.png`、`stat-star.png`。这些资产只用于插画和图标，不能承载中文文案、进度数字、按钮或导航。
+- 透明装饰资产位于 `public/images/ui-assets/`。这些资产只用于插画和图标，不能承载中文文案、进度数字、按钮或导航。
+- 首页旧资产仍包括：`hero-flashcards.png`、`review-complete.png`、`new-words.png`、`stat-flame.png`、`stat-target.png`、`stat-star.png`。
+- 训练中心当前蓝白黄资产包括：
+  - Hero：`training-hero-flashcards-blue-v1.png`
+  - 主模块：`training-card-vocabulary-blue-v1.png`、`training-card-reading-blue-v1.png`、`training-card-review-blue-v1.png`、`training-card-test-blue-v1.png`
+  - 词库分类：`category-all-words-blue-v1.png`、`category-daily-words-blue-v1.png`、`category-cet4-blue-v1.png`、`category-cet6-blue-v1.png`、`category-toefl-blue-v1.png`、`category-ielts-blue-v1.png`
+  - 同目录下的 `*-source.png` / `*-alpha.png` / sprite 图是生成和裁切来源，运行时组件应优先引用最终透明 PNG。
 - 首页 Hero 的核心进度不是固定值，会由当前用户学习状态计算：复习完成度和今日新词完成度共同决定 `planProgress`。后续改 UI 时不要把 50% 或其他进度值写死到图片或样式里。
-- 当前首页视觉原则：蓝紫主渐变、浅色背景、白色卡片、柔和阴影、20px 主卡圆角、12-14px 导航/按钮圆角、8/16/24/32/48 间距节奏；绿色只表示完成/成功，橙黄只用于连续打卡或高亮统计。
-- 手机端训练中心四个入口卡当前为统一白色卡面：背单词、做阅读、今日复习、做测试。小图标靠右上，卡片内使用装饰 PNG，不再使用 emoji；“做阅读”不再用单独蓝紫高亮卡，除非以后表示真实选中态。
-- 手机端“背单词”入口不会直接进入全部单词学习，而是展开并滚动到现有词库类型选择区，用户再选择全部、TOEFL、IELTS 或其它分类。
+- 当前训练中心视觉原则：主蓝 `#4F7CFF`、辅蓝 `#7EA6FF`、黄色 `#FFC857` 只做书签/星光/高亮点缀；背景 `#F7FAFF`，卡片 `#FFFFFF`，正文 `#0F172A`，次级文案 `#64748B`。避免回到大面积紫色或 emoji 临时图标。
+- 训练中心 hero 是蓝色渐变 banner，右侧为蓝色 `Aa` flashcards，背景有轻微 A/B/C 字母装饰和黄色高光。
+- 训练中心四个入口卡当前为统一白色轻卡：背单词、做阅读、今日复习、做测试。使用蓝黄 3D 英语学习资产，不再使用 emoji；“做阅读”不再用单独高亮卡，除非以后表示真实选中态。
+- 训练中心“背单词”入口不会直接进入全部单词学习，而是展开并滚动到现有词库类型选择区，用户再选择全部、TOEFL、IELTS 或其它分类。
+- 训练中心“做阅读”入口不会直接进入旧阅读列表，而是展开阅读分类面板；选择等级后在同一面板内展示文章卡，再进入阅读练习。
+- 词库分类卡已从旧按钮升级为真实 `ModuleCard`：全部单词、日常常用、四级核心、六级核心、托福词汇、雅思词汇。卡片使用蓝黄 3D 学习图标，文本/词数/箭头仍为真实 DOM。
+- `StatsRow` 当前是统一 Daily Progress 组件：左侧标题区域 + 三个对齐 stats，数字和标签是真实组件，图标只是装饰。
+- 顶部未登录区域当前是明确的“登录 / 注册”按钮，头像位置用品牌化 `Aa`，不要再放 emoji。
 - 顶层 `AppContent` 已在 `view` 变化时执行 `window.scrollTo({ top: 0 })`，避免从移动端深层滚动位置进入 IELTS/TOEFL/阅读等新视图时停留在页面中部。
 - 已支持深色版：启动前会在 `src/main.jsx` 根据系统偏好和本地主题设置给根节点加主题 class，避免深色浏览器打开时先闪白屏。
 - 深色版覆盖了学习入口、今日学习计划、词汇学习、考试练习、阅读、统计、语音设置、单词集合等主要页面；后续新增页面要同步检查浅色/深色对比度，避免出现白色卡片或深色文字不可见。
@@ -207,6 +220,7 @@
 ## 当前已知风险
 
 - 最近重要提交：
+  - `ebf3b8b Refine training center blue UI`：训练中心改为蓝白黄 English learning app 风格，新增蓝色 hero、四个主模块 3D 图标、六个词库分类 3D 图标，重构 word/reading inline picker、Daily Progress、登录按钮和侧边栏选中态，并通过 `npm run lint` / `npm run build` 验证。
   - `1cb18df Polish mobile home UI`：完成手机端首页/训练中心 UI polish，新增移动端 topbar/bottom nav、主题切换按钮、统一训练模块卡、背单词先进入分类选择、视图切换滚动回顶部，并通过 `npm run lint` / `npm run build` 验证。
   - 首页 premium edtech SaaS UI polish 阶段：新增组件化 App Shell、卡片、按钮、进度组件、透明 UI 资产，以及 `agents.md` / `design-system.md` / `component-system.md` / `frontend-architecture.md` 规范文档。
   - `366bf22 Add IELTS vocabulary lists`：导入 IELTS List 1-2，新增 IELTS 主题/List 分层、按需分片加载、PDF 提词脚本和自然地理背景图。
