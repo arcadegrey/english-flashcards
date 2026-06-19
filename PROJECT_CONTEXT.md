@@ -54,8 +54,13 @@
 - 左侧导航标签保持简洁：今日计划、训练中心、单词、阅读、复习、测试、统计。
 - 手机端首页/训练中心已改为 app 化结构：隐藏桌面侧边栏，使用 `MobileTopbar` + 浮动 `MobileBottomNav`，底部主入口为 今日 / 训练 / 统计 / 我的。移动端仍复用同一套 `navItems` 回调，不能另写页面本地导航。
 - 首页和训练中心 topbar 已接入现有主题系统：通过 `ThemeProvider` / `useTheme.toggleTheme()` 切换深色/浅色，并继续使用 `flashcards_theme` / `flashcards_theme_explicit` 存储键。主题按钮是 `IconButton`，不是新的主题状态。
+- 桌面端全站 chrome 必须统一：以当前最满意的“今日计划”桌面顶栏和左栏为母版，已拆成 `src/components/layout/Topbar.jsx`、`src/components/layout/Sidebar.jsx`、`src/components/layout/MobileAppChrome.jsx` 和 `src/components/layout/icons.jsx`。主页、训练中心、单词学习页以及后续阅读/复习/测试/统计改造都要通过 `AppLayout` 或直接 import 这些共享文件，禁止另写页面本地侧边栏或顶栏。桌面 Topbar 右侧可见槽位固定为日历、主题切换、通知、`Aa` 账号；搜索、同步、筛选、模式切换、学习进度等页面专属控件必须放进内容区面板，不能把全局顶部改成另一套。
 - 新组件体系位于：
-  - `src/components/layout/AppLayout.jsx`：应用壳、侧边栏、顶部栏和内容容器。
+  - `src/components/layout/AppLayout.jsx`：应用壳组合器，只负责拼装共享 chrome 和内容容器。
+  - `src/components/layout/Sidebar.jsx`：全站唯一桌面侧边栏实现，抽自今日计划。
+  - `src/components/layout/Topbar.jsx`：全站唯一桌面顶栏实现，抽自今日计划。
+  - `src/components/layout/MobileAppChrome.jsx`：移动端 topbar/bottom nav 实现。
+  - `src/components/layout/icons.jsx`：App shell 共享图标。
   - `src/components/ui/Buttons.jsx`：`PrimaryButton`、`SecondaryButton`、`IconButton`。
   - `src/components/ui/Cards.jsx`：`BaseCard`、`HeroCard`、`ModuleCard`、`StatusCard`、`StatCard`。`ModuleCard` 支持 `iconSrc` / `artSrc`，生产 UI 优先使用透明 PNG 资产，避免用 emoji 做模块图标。
   - `src/components/ui/Progress.jsx`：`CircularProgress`、`LinearProgress`。

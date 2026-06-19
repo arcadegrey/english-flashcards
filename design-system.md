@@ -77,6 +77,9 @@ Rules:
 - Right-side icon buttons use consistent size and alignment.
 - Avatar/login state should feel polished but not heavy.
 - Theme switching is a topbar icon button using the same icon-button system; show moon for switching to dark and sun for switching to light.
+- All desktop pages use the same shared Topbar component and action styling as the homepage. Do not build custom desktop topbars for learning, reading, review, test, or statistics pages.
+- The approved reference chrome is the 今日计划 desktop UI. Its topbar is implemented only in `src/components/layout/Topbar.jsx`; its sidebar is implemented only in `src/components/layout/Sidebar.jsx`.
+- The desktop topbar action area keeps the same visible slots on every page: calendar, theme toggle, notification, and account chip. Search, sync, filters, mode menus, and page-specific controls live inside page content panels.
 
 ## Hero
 - Strongest visual focus on the page.

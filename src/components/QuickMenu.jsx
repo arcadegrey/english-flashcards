@@ -10,6 +10,75 @@ import { QUICK_MENU_MODE_OPTIONS, QUICK_MENU_READING_OPTION } from './quickMenuO
 
 const MENU_CLOSE_DURATION_MS = 220;
 
+const menuIcons = {
+  learn: (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="8" />
+      <circle cx="12" cy="12" r="3" />
+      <path d="m15.5 8.5 3-3" />
+      <path d="M17 5.5h3v3" />
+    </svg>
+  ),
+  quiz: (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M5 4h14v16H5z" />
+      <path d="M8 8h8" />
+      <path d="M8 12h5" />
+      <path d="m8 16 1.5 1.5L13 14" />
+    </svg>
+  ),
+  fillblank: (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 7h6" />
+      <path d="M14 7h6" />
+      <path d="M4 12h3" />
+      <path d="M11 12h9" />
+      <path d="M4 17h8" />
+      <path d="M16 17h4" />
+    </svg>
+  ),
+  spelling: (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="m4 19 5-14 5 14" />
+      <path d="M6.2 14h5.6" />
+      <path d="M16 9h4" />
+      <path d="M18 7v4" />
+      <path d="M16 17h4" />
+    </svg>
+  ),
+  matching: (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M8 7h8" />
+      <path d="M8 17h8" />
+      <circle cx="5" cy="7" r="2" />
+      <circle cx="19" cy="17" r="2" />
+      <path d="M7 8.5 17 15.5" />
+    </svg>
+  ),
+  reading: (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 5.5A3.5 3.5 0 0 1 7.5 2H20v18H7.5A3.5 3.5 0 0 0 4 23V5.5Z" />
+      <path d="M8 6h8" />
+      <path d="M8 10h7" />
+    </svg>
+  ),
+  voice: (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M3 9v6h4l5 4V5L7 9H3z" />
+      <path d="M16.5 8.5a4.5 4.5 0 0 1 0 7" />
+      <path d="M19.5 6a8 8 0 0 1 0 12" />
+    </svg>
+  ),
+  slow: (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <circle cx="12" cy="12" r="8" />
+      <path d="M12 7v5l3 2" />
+      <path d="M4 4l2.2 2.2" />
+      <path d="M20 4l-2.2 2.2" />
+    </svg>
+  ),
+};
+
 function QuickMenu({
   mode = 'learn',
   onOpenMode,
@@ -164,7 +233,7 @@ function QuickMenu({
                   '--menu-reverse-index': totalMenuSlots - 1 - index,
                 }}
               >
-                <span>{item.icon}</span>
+                <span className="learn-refresh-menu-icon">{menuIcons[item.id]}</span>
                 <span>{item.label}</span>
               </button>
             ))}
@@ -178,7 +247,7 @@ function QuickMenu({
                 '--menu-reverse-index': totalMenuSlots - 1 - QUICK_MENU_MODE_OPTIONS.length,
               }}
             >
-              <span>{QUICK_MENU_READING_OPTION.icon}</span>
+              <span className="learn-refresh-menu-icon">{menuIcons.reading}</span>
               <span>{QUICK_MENU_READING_OPTION.label}</span>
             </button>
             <div
@@ -198,7 +267,7 @@ function QuickMenu({
                 '--menu-reverse-index': totalMenuSlots - 1 - (QUICK_MENU_MODE_OPTIONS.length + 2),
               }}
             >
-              <span>🔊</span>
+              <span className="learn-refresh-menu-icon">{menuIcons.voice}</span>
               <span>语音设置</span>
             </button>
             <button
@@ -211,7 +280,7 @@ function QuickMenu({
                 '--menu-reverse-index': totalMenuSlots - 1 - (QUICK_MENU_MODE_OPTIONS.length + 3),
               }}
             >
-              <span>🐢</span>
+              <span className="learn-refresh-menu-icon">{menuIcons.slow}</span>
               <span>{isSlowSpeech ? '慢速发音 0.5x（已开）' : '慢速发音 0.5x'}</span>
             </button>
             {extraItems.length > 0 && (
@@ -241,7 +310,7 @@ function QuickMenu({
                     '--menu-reverse-index': totalMenuSlots - 1 - menuIndex,
                   }}
                 >
-                  <span>{item.icon}</span>
+                  <span className="learn-refresh-menu-icon">{item.icon || menuIcons.learn}</span>
                   <span>{item.label}</span>
                 </button>
               );

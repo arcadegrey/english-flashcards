@@ -2249,6 +2249,16 @@ function AppContent() {
             onHome={handleBackToStudyHub}
             onSyncAccount={handleHomeSync}
             onOpenReading={handleOpenReadingList}
+            onOpenStudyHub={handleBackToHome}
+            onOpenWordStudy={handleOpenWordStudy}
+            onOpenTodayReview={handleOpenTodayReview}
+            onOpenExamPractice={handleOpenExamPractice}
+            onOpenStatistics={handleOpenStatistics}
+            onOpenWrongWords={handleOpenWrongWords}
+            isDarkTheme={isDark}
+            onThemeToggle={toggleTheme}
+            onUserClick={() => setShowAuthModal(true)}
+            userLabel={authUser?.email ? '学习者' : authLoading ? '同步中' : '未登录'}
           />
         )
       case 'statistics':

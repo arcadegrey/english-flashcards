@@ -1,6 +1,5 @@
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useMemo } from 'react';
 import categories from '../data/categories';
-import { wordBelongsToCategory } from '../utils/wordCategories';
 import AppLayout from './layout/AppLayout';
 import { HeroCard, ModuleCard, BaseCard } from './ui/Cards';
 import { MotivationBand, StatsRow } from './modules/LearningModules';
@@ -33,11 +32,6 @@ const READING_LEVEL_META = {
   unknown: { label: '未标等级', order: 99 },
 };
 
-const matchesWordQuery = (word, query) =>
-  word.word.toLowerCase().includes(query) ||
-  word.meaning.toLowerCase().includes(query) ||
-  (word.phonetic || '').toLowerCase().includes(query);
-
 const normalizeReadingLevel = (level) => String(level || '').trim().toLowerCase() || 'unknown';
 
 const formatReadingLevelLabel = (level) => {
@@ -50,7 +44,6 @@ function HomeScreen({
   wordCounts,
   readingCount = 0,
   readings = [],
-  vocabularyData = [],
   learnedWordIds = [],
   masteredWordIds = [],
   todayReviewWordIds = [],
@@ -73,117 +66,25 @@ function HomeScreen({
   isDarkTheme = false,
   onThemeToggle,
 }) {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [debouncedQuery, setDebouncedQuery] = useState('');
   const [activeTrainingPanel, setActiveTrainingPanel] = useState('');
   const [selectedReadingLevel, setSelectedReadingLevel] = useState('');
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setDebouncedQuery(searchQuery.toLowerCase().trim());
-    }, 300);
-
-    return () => clearTimeout(timer);
-  }, [searchQuery]);
-
-  const learnedIdSet = useMemo(() => new Set(learnedWordIds.map(String)), [learnedWordIds]);
-  const masteredIdSet = useMemo(() => new Set(masteredWordIds.map(String)), [masteredWordIds]);
-  const todayReviewIdSet = useMemo(() => new Set(todayReviewWordIds.map(String)), [todayReviewWordIds]);
-  const wrongIdSet = useMemo(() => new Set(wrongWordIds.map(String)), [wrongWordIds]);
-
-  const getCollectionSet = useCallback((categoryId) => {
-    if (categoryId === 'learnedWords') return learnedIdSet;
-    if (categoryId === 'masteredWords') return masteredIdSet;
-    if (categoryId === 'todayReview') return todayReviewIdSet;
-    if (categoryId === 'wrongWords') return wrongIdSet;
-    return new Set();
-  }, [learnedIdSet, masteredIdSet, todayReviewIdSet, wrongIdSet]);
-
-  const categoriesWithCollections = useMemo(() => categories, []);
+  const categoriesWithCollections = categories;
   const vocabularyCategoryCount = useMemo(
     () => categoriesWithCollections.filter((category) => category.id !== 'all' && category.type !== 'collection').length,
     [categoriesWithCollections]
   );
 
-  const filteredCategories = useMemo(() => {
-    if (!debouncedQuery) {
-      return categoriesWithCollections;
-    }
-
-    return categoriesWithCollections.filter((category) => {
-      if (category.name.toLowerCase().includes(debouncedQuery)) {
-        return true;
-      }
-
-      if (category.id === 'all') {
-        return vocabularyData.some((word) => matchesWordQuery(word, debouncedQuery));
-      }
-
-      if (category.type === 'collection') {
-        const targetSet = getCollectionSet(category.id);
-        return vocabularyData.some(
-          (word) => targetSet.has(String(word.id)) && matchesWordQuery(word, debouncedQuery)
-        );
-      }
-
-      return vocabularyData.some(
-        (word) => wordBelongsToCategory(word, category.id) && matchesWordQuery(word, debouncedQuery)
-      );
-    });
-  }, [categoriesWithCollections, debouncedQuery, getCollectionSet, vocabularyData]);
-
-  const filteredWordCounts = useMemo(() => {
-    const counts = {
+  const categoryWordCounts = useMemo(
+    () => ({
       ...wordCounts,
       learnedWords: learnedWordIds.length,
       masteredWords: masteredWordIds.length,
       todayReview: todayReviewWordIds.length,
       wrongWords: wrongWordIds.length,
-    };
-
-    if (!debouncedQuery) {
-      return counts;
-    }
-
-    filteredCategories.forEach((category) => {
-      if (category.id === 'all') {
-        counts.all = vocabularyData.filter((word) => matchesWordQuery(word, debouncedQuery)).length;
-        return;
-      }
-
-      if (category.type === 'collection') {
-        const targetSet = getCollectionSet(category.id);
-        counts[category.id] = vocabularyData.filter(
-          (word) => targetSet.has(String(word.id)) && matchesWordQuery(word, debouncedQuery)
-        ).length;
-        return;
-      }
-
-      counts[category.id] = vocabularyData.filter(
-        (word) => wordBelongsToCategory(word, category.id) && matchesWordQuery(word, debouncedQuery)
-      ).length;
-    });
-
-    return counts;
-  }, [
-    debouncedQuery,
-    filteredCategories,
-    getCollectionSet,
-    learnedWordIds.length,
-    masteredWordIds.length,
-    todayReviewWordIds.length,
-    wrongWordIds.length,
-    vocabularyData,
-    wordCounts,
-  ]);
-
-  const totalMatchedWords = useMemo(() => {
-    if (!debouncedQuery) {
-      return wordCounts.all || 0;
-    }
-
-    return vocabularyData.filter((word) => matchesWordQuery(word, debouncedQuery)).length;
-  }, [debouncedQuery, vocabularyData, wordCounts.all]);
+    }),
+    [learnedWordIds.length, masteredWordIds.length, todayReviewWordIds.length, wordCounts, wrongWordIds.length]
+  );
 
   const readingLevelOptions = useMemo(() => {
     const map = new Map();
@@ -227,32 +128,6 @@ function HomeScreen({
     [activeReadingLevel, readingLevelOptions]
   );
 
-  const focusWordIdByCategory = useMemo(() => {
-    if (!debouncedQuery) {
-      return new Map();
-    }
-
-    const map = new Map();
-    categoriesWithCollections.forEach((category) => {
-      if (category.type === 'collection' || category.id === 'toefl' || category.id === 'ielts') {
-        return;
-      }
-
-      const matchedWord =
-        category.id === 'all'
-          ? vocabularyData.find((word) => matchesWordQuery(word, debouncedQuery))
-          : vocabularyData.find(
-              (word) => wordBelongsToCategory(word, category.id) && matchesWordQuery(word, debouncedQuery)
-            );
-
-      if (matchedWord) {
-        map.set(category.id, matchedWord.id);
-      }
-    });
-
-    return map;
-  }, [categoriesWithCollections, debouncedQuery, vocabularyData]);
-
   const handleCategoryClick = (category) => {
     if (category.id === 'learnedWords') {
       onOpenLearnedWords?.();
@@ -284,8 +159,7 @@ function HomeScreen({
       return;
     }
 
-    const focusWordId = focusWordIdByCategory.get(category.id) ?? null;
-    onCategorySelect(category.id, { focusWordId });
+    onCategorySelect(category.id, { focusWordId: null });
   };
 
   const handleOpenWordPicker = () => {
@@ -310,7 +184,7 @@ function HomeScreen({
     });
   };
 
-  const wordPanelOpen = activeTrainingPanel === 'words' || Boolean(debouncedQuery);
+  const wordPanelOpen = activeTrainingPanel === 'words';
   const readingPanelOpen = activeTrainingPanel === 'reading';
 
   const navItems = [
@@ -400,16 +274,13 @@ function HomeScreen({
       title="训练中心"
       subtitle="想自由切换时，可以从这里进入任意模块。"
       topbarProps={{
-        searchValue: searchQuery,
-        searchPlaceholder: '搜索单词、短文或功能...',
-        onSearchChange: setSearchQuery,
         onCalendar: onOpenStatistics,
         onNotify: onOpenWrongWords,
         notifyBadge: wrongWordIds.length ? String(Math.min(wrongWordIds.length, 9)) : undefined,
         onThemeToggle,
         isDarkTheme,
         onUserClick: onBack,
-        userLabel: authUser?.email ? '小明同学' : authLoading ? '同步中' : '登录 / 注册',
+        userLabel: authUser?.email ? '学习者' : authLoading ? '同步中' : '未登录',
       }}
     >
       <div className="ds-stack">
@@ -427,49 +298,32 @@ function HomeScreen({
           ))}
         </section>
 
-        {debouncedQuery && (
-          <BaseCard className="word-home-search-result">
-            找到 {filteredCategories.length} 个分类，共 <strong>{totalMatchedWords}</strong> 个匹配单词
-          </BaseCard>
-        )}
-
         <BaseCard
           id="word-category-panel"
           className={`word-home-category-panel training-picker-panel ${wordPanelOpen ? 'is-open' : ''}`}
         >
           <div className="word-home-category-head">
-            <h2>{debouncedQuery ? '搜索结果' : '选择学习分类'}</h2>
-            <p>
-              {debouncedQuery
-                ? `共 ${filteredCategories.length} 个匹配分类`
-                : `共 ${vocabularyCategoryCount} 个词库分类`}
-            </p>
+            <h2>选择学习分类</h2>
+            <p>共 {vocabularyCategoryCount} 个词库分类</p>
             {syncError && <p className="word-home-sync-error">{syncError}</p>}
           </div>
 
-          {filteredCategories.length === 0 ? (
-            <div className="word-home-empty">
-              <p>未找到匹配的分类或单词</p>
-              <p>尝试其他搜索词</p>
-            </div>
-          ) : (
-            <div className="ds-categories-grid">
-              {filteredCategories.map((category) => {
-                const count = filteredWordCounts[category.id] || 0;
+          <div className="ds-categories-grid">
+            {categoriesWithCollections.map((category) => {
+              const count = categoryWordCounts[category.id] || 0;
 
-                return (
-                  <ModuleCard
-                    key={category.id}
-                    variant="category"
-                    title={category.name}
-                    meta={`${count} 词`}
-                    artSrc={CATEGORY_ART[category.id] || UI_ASSETS.vocabulary}
-                    onClick={() => handleCategoryClick(category)}
-                  />
-                );
-              })}
-            </div>
-          )}
+              return (
+                <ModuleCard
+                  key={category.id}
+                  variant="category"
+                  title={category.name}
+                  meta={`${count} 词`}
+                  artSrc={CATEGORY_ART[category.id] || UI_ASSETS.vocabulary}
+                  onClick={() => handleCategoryClick(category)}
+                />
+              );
+            })}
+          </div>
         </BaseCard>
 
         <BaseCard

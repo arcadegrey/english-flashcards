@@ -1,7 +1,8 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { speakExample, speakWord } from '../utils/speech';
 
 function Card({ word, showHint = false }) {
+  const [isSaved, setIsSaved] = useState(false);
   const hints = useMemo(() => {
     if (!word) {
       return {
@@ -42,7 +43,19 @@ function Card({ word, showHint = false }) {
   const meaningLine = word.pos ? `${word.pos} ${word.meaning}` : word.meaning;
 
   return (
-    <article className="learn-refresh-card learn-refresh-card-enter" aria-live="polite">
+    <article className="learn-refresh-card learn-refresh-word-card learn-refresh-card-enter" aria-live="polite">
+      <button
+        type="button"
+        className={`learn-refresh-save-word ${isSaved ? 'is-saved' : ''}`}
+        aria-label={isSaved ? '取消收藏单词' : '收藏单词'}
+        aria-pressed={isSaved}
+        onClick={() => setIsSaved((value) => !value)}
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m12 4 2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4-3.9-3.8 5.4-.8L12 4Z" />
+        </svg>
+      </button>
+
       <header className="learn-refresh-word-block">
         <h1 className="learn-refresh-word">{word.word}</h1>
         <div className="learn-refresh-phonetic-row">
@@ -66,7 +79,14 @@ function Card({ word, showHint = false }) {
 
       <section className="learn-refresh-example-block" aria-label="例句">
         <div className="learn-refresh-example-head">
-          <span className="learn-refresh-example-label">例句</span>
+          <span className="learn-refresh-example-label">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 4h11a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
+              <path d="M8 8h7" />
+              <path d="M8 12h5" />
+            </svg>
+            例句
+          </span>
           <button
             type="button"
             className="learn-refresh-example-audio"
@@ -74,7 +94,11 @@ function Card({ word, showHint = false }) {
             disabled={!word.example}
             aria-label="播放例句"
           >
-            播放例句
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 9v6h4l5 4V5L7 9H3z" />
+              <path d="M16.5 8.5a4.5 4.5 0 0 1 0 7" />
+            </svg>
+            <span>播放例句</span>
           </button>
         </div>
         <p className="learn-refresh-example-en">{word.example || '暂无英文例句。'}</p>

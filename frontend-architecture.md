@@ -32,6 +32,7 @@ Build a scalable production edtech SaaS frontend.
 5. New UI -> create component first
 6. Do not change backend logic when polishing UI
 7. Generated images must remain decorative assets only
+8. Desktop app chrome is shared: use the approved 今日计划 chrome from `src/components/layout/Sidebar.jsx` and `src/components/layout/Topbar.jsx` through <AppLayout> or direct imports. Page-local desktop sidebars/topbars are not allowed.
 
 --------------------------------
 # PAGE RULE
@@ -85,6 +86,7 @@ Production SaaS level consistency
 
 ## Responsive Behavior
 - Desktop uses sidebar + topbar + content composition.
+- Desktop sidebar and topbar must stay visually identical across homepage, training center, learning pages, statistics, reading, review, and test surfaces by reusing `Sidebar.jsx` / `Topbar.jsx` directly or through `AppLayout.jsx`.
 - Medium screens may hide large decorative hero artwork before breaking core content.
 - Mobile stacks hero content, cards, and stats without clipping text or controls.
 - Mobile uses <MobileTopbar> and <MobileBottomNav> inside <AppLayout>; do not create page-local mobile nav.

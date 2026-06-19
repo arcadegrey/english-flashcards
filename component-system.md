@@ -9,6 +9,12 @@
 <MobileBottomNav>
 <Content>
 
+App shell rules:
+- Desktop pages must reuse <AppLayout> chrome or directly import the exact shared components from `src/components/layout/Sidebar.jsx` and `src/components/layout/Topbar.jsx` when a page has a specialized internal layout.
+- Do not create a second desktop sidebar or topbar class family for a page-specific redesign.
+- Desktop <Topbar> visible actions must match the approved 今日计划 slots: calendar, theme toggle, notification, and account chip. Page-specific search, sync, filters, mode menus, and progress controls must live in page content panels unless the design system explicitly promotes them to every page.
+- `src/components/layout/AppLayout.jsx` is only the shell composer. The canonical chrome lives in `Sidebar.jsx`, `Topbar.jsx`, `MobileAppChrome.jsx`, and shared icons in `icons.jsx`, extracted from the approved 今日计划 chrome.
+
 --------------------------------
 # CARDS
 <BaseCard>

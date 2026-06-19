@@ -24,6 +24,8 @@ You are responsible for upgrading the English Flashcards UI into a production-gr
 - No inconsistent styling
 - No feature removal
 - No visual improvisation
+- Desktop pages must reuse the approved 今日计划 chrome: `src/components/layout/Sidebar.jsx` and `src/components/layout/Topbar.jsx`, normally through `AppLayout`. Do not create page-local desktop navigation bars or topbars.
+- Desktop topbar visible slots must stay identical to 今日计划: title/subtitle on the left, calendar, theme toggle, notification, and `Aa` account chip on the right. Page-specific search, sync, mode menus, filters, or progress controls belong inside page content panels, not in the global topbar.
 - Do NOT replace UI with static screenshots
 - Interactive elements must remain real components
 - Generated images are decorative assets only
