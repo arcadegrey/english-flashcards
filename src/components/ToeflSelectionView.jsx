@@ -1,4 +1,5 @@
 import { useMemo, useRef } from 'react';
+import AppLayout from './layout/AppLayout';
 import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
 
 function SyncIcon() {
@@ -12,18 +13,28 @@ function SyncIcon() {
   );
 }
 
-function SpeakerIcon() {
+function ArrowIcon() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M3 9v6h4l5 4V5L7 9H3z" />
-      <path d="M16.5 8.5a4.5 4.5 0 010 7" />
-      <path d="M19.5 6a8 8 0 010 12" />
+      <path d="m15 18-6-6 6-6" />
     </svg>
   );
 }
 
-const getSelectionCardClassName = (item) =>
-  ['reading-category-card', 'toefl-selection-card', item?.key ? `selection-card--${item.key}` : '']
+function SparkIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 3 14.7 8.9 21 9.6 16.2 13.9 17.5 20 12 16.8 6.5 20 7.8 13.9 3 9.6 9.3 8.9 12 3Z" />
+    </svg>
+  );
+}
+
+const getSelectionCardClassName = (item, selectionKind) =>
+  [
+    'toefl-selection-card',
+    selectionKind === 'ielts-topic' ? 'toefl-selection-card--topic' : 'toefl-selection-card--standard',
+    item?.key ? `selection-card--${item.key}` : '',
+  ]
     .filter(Boolean)
     .join(' ');
 
@@ -34,15 +45,18 @@ function ToeflSelectionView({
   items = [],
   totalCount = 0,
   onBack,
-  onHome,
   onSelect,
   onSelectAll,
   onSyncAccount,
-  onSpeakIntro,
   selectAllLabel = '学习全部',
   vocabularyLabel = '托福词汇',
   listLabel = '托福 List',
+  navItems = [],
+  topbarProps = {},
+  active = 'words',
+  selectionKind = 'toefl-level',
 }) {
+  const isTopicView = selectionKind === 'ielts-topic';
   const emptyText = mode === 'level' ? `当前没有可用的${vocabularyLabel}分级数据。` : '当前暂时没有可用的 List。';
 
   const resolvedSubtitle = useMemo(() => {
@@ -52,14 +66,15 @@ function ToeflSelectionView({
     return mode === 'level' ? '先选择 Level，再进入对应 List 学习。' : '选择具体 List 开始学习。';
   }, [mode, subtitle]);
 
-  const progressLabel = mode === 'level' ? `${items.length} 个 Level` : `${items.length} 个 List`;
+  const progressLabel = mode === 'level' ? (isTopicView ? `${items.length} 个主题` : `${items.length} 个 Level`) : `${items.length} 个 List`;
   const progressSub = mode === 'level' ? vocabularyLabel : listLabel;
-  const gridClass = items.length === 1 ? 'reading-category-grid toefl-selection-grid--single' : 'reading-category-grid';
+  const gridClass = items.length === 1 ? 'toefl-selection-grid is-single' : 'toefl-selection-grid';
+  const panelTitle = isTopicView ? '选择学习主题' : mode === 'level' ? title : `${progressSub} 选择`;
   const selectionRef = useRef(null);
 
   useGSAP(() => {
     if (prefersReducedMotion()) return;
-    const cards = selectionRef.current?.querySelectorAll('.reading-category-card');
+    const cards = selectionRef.current?.querySelectorAll('.toefl-selection-card');
     if (!cards?.length) return;
 
     gsap.fromTo(
@@ -75,89 +90,71 @@ function ToeflSelectionView({
         clearProps: 'transform,opacity,visibility',
       }
     );
-  }, { dependencies: [mode, items.length, totalCount], scope: selectionRef, revertOnUpdate: true });
+  }, { dependencies: [mode, items.length, totalCount, selectionKind], scope: selectionRef, revertOnUpdate: true });
 
   return (
-    <div className="learn-refresh-page toefl-selection-page">
-      <header className="learn-refresh-topbar">
-        <div className="learn-refresh-topbar-inner">
-          <div className="learn-refresh-left-actions">
-            <button type="button" className="learn-refresh-back" onClick={onBack} aria-label="返回上一页">
-              <span aria-hidden="true">←</span>
-              <span>返回</span>
-            </button>
-            <button type="button" className="learn-refresh-home-btn" onClick={onHome} aria-label="回到首页">
-              <span aria-hidden="true">🏠</span>
-            </button>
+    <AppLayout
+      active={active}
+      navItems={navItems}
+      title={title}
+      subtitle={resolvedSubtitle}
+      topbarProps={topbarProps}
+    >
+      <main className={`toefl-selection-page ${isTopicView ? 'is-topic-view' : 'is-standard-view'}`}>
+        <section ref={selectionRef} className="toefl-selection-panel" aria-label={`${vocabularyLabel}选择`}>
+          <div className="toefl-selection-panel-head">
+            <div className="toefl-selection-panel-nav">
+              {onBack && (
+                <button type="button" className="toefl-selection-action is-back" onClick={onBack}>
+                  <ArrowIcon />
+                  <span>返回上一级</span>
+                </button>
+              )}
+            </div>
+            <div className="toefl-selection-panel-title">
+              <h2>{panelTitle}</h2>
+              <p>{progressLabel} · 共 {totalCount} 个单词</p>
+            </div>
+            <div className="toefl-selection-actions" aria-label="页面操作">
+              {onSelectAll && (
+                <button type="button" className="toefl-selection-action is-primary" onClick={onSelectAll}>
+                  <SparkIcon />
+                  <span>{selectAllLabel}</span>
+                  <strong>{totalCount} 词</strong>
+                </button>
+              )}
+              {onSyncAccount && (
+                <button type="button" className="toefl-selection-action" onClick={onSyncAccount}>
+                  <SyncIcon />
+                  <span>同步进度</span>
+                </button>
+              )}
+            </div>
           </div>
 
-          <div className="learn-refresh-progress">
-            <p className="learn-refresh-progress-main">{progressLabel}</p>
-            <p className="learn-refresh-progress-sub">{progressSub}</p>
-          </div>
-
-          <div className="learn-refresh-top-actions">
-            <button
-              type="button"
-              className="learn-refresh-icon-btn"
-              onClick={onSyncAccount}
-              aria-label="同步账号"
-            >
-              <SyncIcon />
-            </button>
-            <button
-              type="button"
-              className="learn-refresh-icon-btn"
-              onClick={onSpeakIntro}
-              aria-label={`播放${vocabularyLabel}提示`}
-            >
-              <SpeakerIcon />
-            </button>
-            <span className="learn-refresh-topbar-spacer" aria-hidden="true" />
-          </div>
-        </div>
-      </header>
-
-      <main className="learn-refresh-main">
-        <section className="learn-refresh-card learn-refresh-card-enter reading-list-card">
-          <header className="reading-list-header">
-            <h1 className="reading-list-title">{title}</h1>
-            <p className="reading-list-subtitle">{resolvedSubtitle}</p>
-            <p className="toefl-selection-total">共 {totalCount} 个单词</p>
-          </header>
-
-          <section ref={selectionRef} className="reading-category-section" aria-label={`${vocabularyLabel}选择`}>
-            {items.length === 0 ? (
-              <div className="word-home-empty">{emptyText}</div>
-            ) : (
-              <div className="space-y-3">
-                {onSelectAll && (
-                  <button type="button" onClick={onSelectAll} className="reading-category-card toefl-selection-all">
-                    <span className="reading-category-name">{selectAllLabel}</span>
-                    <span className="reading-category-count">{totalCount} 词</span>
-                  </button>
-                )}
-
-                <div className={gridClass}>
-                  {items.map((item) => (
-                    <button
-                      key={item.key}
-                      type="button"
-                      onClick={() => onSelect?.(item.key)}
-                      className={getSelectionCardClassName(item)}
-                    >
-                      <span className="reading-category-name">{item.label}</span>
-                      <span className="reading-category-count">{item.count} 词</span>
-                      {item.meta && <span className="toefl-selection-meta">{item.meta}</span>}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
-          </section>
+          {items.length === 0 ? (
+            <div className="word-home-empty">{emptyText}</div>
+          ) : (
+            <div className={gridClass}>
+              {items.map((item) => (
+                <button
+                  key={item.key}
+                  type="button"
+                  onClick={() => onSelect?.(item.key)}
+                  className={getSelectionCardClassName(item, selectionKind)}
+                >
+                  <span className="toefl-selection-card-name">{item.label}</span>
+                  <span className="toefl-selection-card-meta-row">
+                    <span className="toefl-selection-card-count">{item.count} 词</span>
+                    {item.meta && <span className="toefl-selection-meta">{item.meta}</span>}
+                  </span>
+                </button>
+              ))}
+            </div>
+          )}
         </section>
       </main>
-    </div>
+    </AppLayout>
   );
 }
 

@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import Card from './Card';
+import WordCard from './WordCard';
 import Quiz from './Quiz';
 import FillBlank from './FillBlank';
 import SpellingTest from './SpellingTest';
@@ -194,7 +194,7 @@ function LearningView({
           <span className="learn-refresh-goal-percent">{progressPercent}%</span>
         </div>
 
-        <Card
+        <WordCard
           key={`${currentWord?.id || 'learn-empty'}-${currentIndex}`}
           word={currentWord}
           showHint={showHint}
@@ -451,7 +451,7 @@ function LearningView({
                 <span className="learn-refresh-goal-percent">{progressPercent}%</span>
               </div>
 
-              <Card
+              <WordCard
                 key={`${currentWord?.id || 'learn-empty'}-${currentIndex}`}
                 word={currentWord}
                 showHint={showHint}

@@ -13,7 +13,9 @@ App shell rules:
 - Desktop pages must reuse <AppLayout> chrome or directly import the exact shared components from `src/components/layout/Sidebar.jsx` and `src/components/layout/Topbar.jsx` when a page has a specialized internal layout.
 - Do not create a second desktop sidebar or topbar class family for a page-specific redesign.
 - Desktop <Topbar> visible actions must match the approved 今日计划 slots: calendar, theme toggle, notification, and account chip. Page-specific search, sync, filters, mode menus, and progress controls must live in page content panels unless the design system explicitly promotes them to every page.
+- Training Center has no search component in either topbar or content. Keep discovery through the four module cards and inline picker panels.
 - `src/components/layout/AppLayout.jsx` is only the shell composer. The canonical chrome lives in `Sidebar.jsx`, `Topbar.jsx`, `MobileAppChrome.jsx`, and shared icons in `icons.jsx`, extracted from the approved 今日计划 chrome.
+- `AppLayout` may receive `className="ds-app-layout--mobile-study"` for mobile word-learning only. That modifier hides generic mobile chrome and supports the dedicated clean flashcard study layout.
 
 --------------------------------
 # CARDS
@@ -61,6 +63,8 @@ Progress rules:
 <ReadingModule>
 <ReviewModule>
 <TestModule>
+<ReadingPickerContent>
+<WordCard>
 
 Homepage modules:
 - HeroCard: left copy, center progress/action widget, right decorative asset.
@@ -70,7 +74,17 @@ Homepage modules:
 - Training center word categories: six ModuleCards for 全部单词 / 日常常用 / 四级核心 / 六级核心 / 托福词汇 / 雅思词汇. They use compact blue/yellow category art and real text/count/arrow.
 - On mobile, 背单词 opens the existing word-category picker instead of immediately starting all-word learning.
 - On desktop and mobile, 做阅读 opens the inline reading category picker instead of jumping to the old reading list first.
+- The sidebar/mobile 阅读 navigation also opens the Training Center reading picker. It must not open a separate reading list page.
+- Reading picker UI is shared through `src/components/reading/ReadingPicker.jsx`: reading level cards and article rows must be edited there, then reused by Training Center.
 - StatsRow is a unified Daily Progress component with a title section, three real stats, aligned icon/value/label groups, and subtle dividers.
+
+Mobile word-learning module:
+- Uses a dedicated study header: back button, `背单词`, and current/total progress pill.
+- Keeps the 今日目标 progress strip and the real word card.
+- Shows exactly three bottom actions in one horizontal row: 不认识 / 显示提示 / 认识了.
+- Hides the desktop learning-status aside on mobile, including 学习进度, 连续打卡, 剩余词汇 summary, and 坚持每天进步.
+- The generic mobile topbar and mobile bottom nav are hidden on this screen only.
+- Word learning card UI lives in `src/components/WordCard.jsx`. Do not restore old `CategorySelector.jsx`, old `components/Progress.jsx`, or generic `Card.jsx` as separate UI surfaces.
 
 --------------------------------
 # RULE

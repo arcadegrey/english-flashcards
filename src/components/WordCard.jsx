@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { speakExample, speakWord } from '../utils/speech';
 
-function Card({ word, showHint = false }) {
+function WordCard({ word, showHint = false }) {
   const [isSaved, setIsSaved] = useState(false);
   const hints = useMemo(() => {
     if (!word) {
@@ -126,4 +126,4 @@ function Card({ word, showHint = false }) {
   );
 }
 
-export default Card;
+export default WordCard;

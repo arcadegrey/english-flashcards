@@ -80,6 +80,7 @@ Rules:
 - All desktop pages use the same shared Topbar component and action styling as the homepage. Do not build custom desktop topbars for learning, reading, review, test, or statistics pages.
 - The approved reference chrome is the 今日计划 desktop UI. Its topbar is implemented only in `src/components/layout/Topbar.jsx`; its sidebar is implemented only in `src/components/layout/Sidebar.jsx`.
 - The desktop topbar action area keeps the same visible slots on every page: calendar, theme toggle, notification, and account chip. Search, sync, filters, mode menus, and page-specific controls live inside page content panels.
+- Training Center has no search bar in the topbar or content area.
 
 ## Hero
 - Strongest visual focus on the page.
@@ -107,6 +108,13 @@ Rules:
 - Mobile bottom nav is floating, rounded, and uses concise labels: 今日 / 训练 / 统计 / 我的.
 - Bottom nav selected state uses the primary blue-purple gradient; inactive items remain muted.
 - Content padding must reserve safe space for the floating bottom nav.
+- Mobile word-learning is the exception: it hides the generic mobile topbar and bottom nav, and uses its own clean study header.
+
+## Mobile Word Learning
+- Visual reference: clean flashcard study screen with back button, centered title, progress pill, goal strip, large word card, and bottom actions.
+- Keep the phone view focused on learning only. Do not show 学习进度, 连续打卡, 剩余词汇 summary, or 坚持每天进步.
+- Bottom actions stay in one horizontal row and must remain reachable above the safe area.
+- The word card, example text, audio buttons, progress bar, and action buttons remain real components.
 
 ## Mobile Training Cards
 - Training module cards use a consistent white card surface in light mode.
@@ -116,6 +124,9 @@ Rules:
 - The arrow remains a real button affordance, not an image.
 - Desktop Training Center module cards use the same real `ModuleCard` system: text left, decorative learning icon right, real arrow button fixed at bottom-right.
 - Word-category cards now use generated blue/yellow English-learning assets and should remain compact, lightweight cards rather than old plain buttons.
+- Reading level cards use the shared `ReadingPickerContent` style: four light educational cards on desktop, compact responsive layout on smaller screens, real badges/counts/helper text, decorative CSS art, and a real circular arrow affordance.
+- Reading article selection uses vertical rows, not horizontal module cards: left decorative icon block, center real title/source/time text, right real circular arrow.
+- The old standalone reading list surface is not part of the design system; all reading entry points should visually read as part of the Training Center inline picker.
 
 ## Mobile Status Cards
 - Status cards stack with 16px gaps on mobile.

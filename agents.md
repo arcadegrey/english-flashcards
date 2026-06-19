@@ -64,8 +64,12 @@ Use generated image assets only for:
 --------------------------------
 # TRAINING CENTER RULES
 - Preserve the current hierarchy: hero -> four main module cards -> inline word/reading picker panels -> motivation band -> Daily Progress.
+- Training Center does not include a search bar. Keep the first content after the shared topbar as the hero/module flow; do not reintroduce keyword search unless it becomes a product requirement.
 - Main modules are 背单词 / 做阅读 / 今日复习 / 做测试, implemented with real `ModuleCard` components.
-- 背单词 opens the word category panel; 做阅读 opens the reading category panel. Do not jump directly to old list views unless the user selects a specific item that requires the existing route.
+- 背单词 opens the word category panel; 做阅读 opens the reading category panel.
+- The 阅读 navigation entry also returns to Training Center and opens the reading category panel. Do not recreate or route to a standalone reading list page.
+- Reading level cards and article rows must use `src/components/reading/ReadingPicker.jsx`; do not duplicate that UI in page-local components.
+- Do not restore deleted legacy word UI components such as `CategorySelector.jsx`, old `components/Progress.jsx`, or generic `Card.jsx`.
 - Word categories are real compact ModuleCards with decorative blue/yellow 3D assets: 全部单词 / 日常常用 / 四级核心 / 六级核心 / 托福词汇 / 雅思词汇.
 - Do not use emoji for production module/category icons. Use generated transparent PNG assets from `public/images/ui-assets/`.
 - Keep yellow as accent only: bookmark tabs, stars, sparkles, active indicator, or tiny highlights.
@@ -80,6 +84,14 @@ Use generated image assets only for:
 - Module cards use decorative PNG assets only for icon/art roles; do not use emoji as production module icons.
 - The training-center module grid uses consistent card surfaces; do not make one module visually louder unless it represents a real selected state.
 - When navigating from a scrolled mobile section to another app view, reset page scroll to the top.
+
+--------------------------------
+# MOBILE WORD LEARNING RULES
+- Mobile word-learning mode uses a dedicated clean study chrome, not the generic mobile app shell.
+- Mobile word-learning top area is: back button, 背单词 title, progress pill, then 今日目标 progress strip.
+- Mobile word-learning content is only the word card and three bottom actions: 不认识 / 显示提示 / 认识了.
+- Do not show desktop side status on mobile word-learning: 学习进度, 连续打卡, 剩余词汇 summary, or 坚持每天进步.
+- Keep the bottom actions horizontal on mobile and reserve safe-area space.
 
 --------------------------------
 # OUTPUT

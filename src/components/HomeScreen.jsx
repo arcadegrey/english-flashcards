@@ -1,8 +1,10 @@
-import { useState, useMemo } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import categories from '../data/categories';
 import AppLayout from './layout/AppLayout';
 import { HeroCard, ModuleCard, BaseCard } from './ui/Cards';
 import { MotivationBand, StatsRow } from './modules/LearningModules';
+import { ReadingPickerContent } from './reading/ReadingPicker';
+import { buildReadingLevelOptions } from './reading/readingPickerModel';
 
 const UI_ASSETS = {
   hero: '/images/ui-assets/training-hero-flashcards-blue-v1.png',
@@ -19,24 +21,6 @@ const CATEGORY_ART = {
   cet6: '/images/ui-assets/category-cet6-blue-v1.png',
   toefl: '/images/ui-assets/category-toefl-blue-v1.png',
   ielts: '/images/ui-assets/category-ielts-blue-v1.png',
-};
-
-const READING_LEVEL_META = {
-  all: { label: '全部等级', order: 0 },
-  a1: { label: 'A1 入门', order: 1 },
-  a2: { label: 'A2 初级', order: 2 },
-  b1: { label: 'B1 中级', order: 3 },
-  b2: { label: 'B2 中高级', order: 4 },
-  c1: { label: 'C1 高级', order: 5 },
-  c2: { label: 'C2 精通', order: 6 },
-  unknown: { label: '未标等级', order: 99 },
-};
-
-const normalizeReadingLevel = (level) => String(level || '').trim().toLowerCase() || 'unknown';
-
-const formatReadingLevelLabel = (level) => {
-  const key = normalizeReadingLevel(level);
-  return READING_LEVEL_META[key]?.label || String(level || '').trim().toUpperCase() || READING_LEVEL_META.unknown.label;
 };
 
 function HomeScreen({
@@ -65,6 +49,7 @@ function HomeScreen({
   syncError = '',
   isDarkTheme = false,
   onThemeToggle,
+  panelRequest,
 }) {
   const [activeTrainingPanel, setActiveTrainingPanel] = useState('');
   const [selectedReadingLevel, setSelectedReadingLevel] = useState('');
@@ -86,46 +71,11 @@ function HomeScreen({
     [learnedWordIds.length, masteredWordIds.length, todayReviewWordIds.length, wordCounts, wrongWordIds.length]
   );
 
-  const readingLevelOptions = useMemo(() => {
-    const map = new Map();
-    readings.forEach((article) => {
-      const levelKey = normalizeReadingLevel(article?.level);
-      map.set(levelKey, (map.get(levelKey) || 0) + 1);
-    });
-
-    const levels = Array.from(map.entries())
-      .map(([id, count]) => ({
-        id,
-        title: formatReadingLevelLabel(id),
-        meta: `${count} 篇文章`,
-        order: READING_LEVEL_META[id]?.order ?? 50,
-      }))
-      .sort((a, b) => a.order - b.order || a.title.localeCompare(b.title, 'zh-CN'));
-
-    return [
-      {
-        id: 'all',
-        title: READING_LEVEL_META.all.label,
-        meta: `${readings.length} 篇文章`,
-        order: READING_LEVEL_META.all.order,
-      },
-      ...levels,
-    ];
-  }, [readings]);
+  const readingLevelOptions = useMemo(() => buildReadingLevelOptions(readings), [readings]);
 
   const activeReadingLevel = useMemo(
     () => (selectedReadingLevel && readingLevelOptions.some((item) => item.id === selectedReadingLevel) ? selectedReadingLevel : ''),
     [readingLevelOptions, selectedReadingLevel]
-  );
-
-  const filteredReadings = useMemo(() => {
-    if (!activeReadingLevel || activeReadingLevel === 'all') return readings;
-    return readings.filter((article) => normalizeReadingLevel(article?.level) === activeReadingLevel);
-  }, [activeReadingLevel, readings]);
-
-  const activeReadingLevelLabel = useMemo(
-    () => readingLevelOptions.find((item) => item.id === activeReadingLevel)?.title || READING_LEVEL_META.all.label,
-    [activeReadingLevel, readingLevelOptions]
   );
 
   const handleCategoryClick = (category) => {
@@ -186,6 +136,30 @@ function HomeScreen({
 
   const wordPanelOpen = activeTrainingPanel === 'words';
   const readingPanelOpen = activeTrainingPanel === 'reading';
+
+  useEffect(() => {
+    if (!panelRequest?.panel) return;
+
+    const frame = window.requestAnimationFrame(() => {
+      if (panelRequest.panel === 'reading') {
+        setActiveTrainingPanel('reading');
+        setSelectedReadingLevel('');
+        window.requestAnimationFrame(() => {
+          document.getElementById('reading-category-panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        return;
+      }
+
+      if (panelRequest.panel === 'words') {
+        setActiveTrainingPanel('words');
+        window.requestAnimationFrame(() => {
+          document.getElementById('word-category-panel')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      }
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, [panelRequest]);
 
   const navItems = [
     {
@@ -330,45 +304,19 @@ function HomeScreen({
           id="reading-category-panel"
           className={`word-home-category-panel training-picker-panel reading-home-category-panel ${readingPanelOpen ? 'is-open' : ''}`}
         >
-          <div className="word-home-category-head">
-            <h2>{activeReadingLevel ? activeReadingLevelLabel : '选择阅读分类'}</h2>
-            <p>{activeReadingLevel ? `${filteredReadings.length} 篇文章` : `共 ${Math.max(readingLevelOptions.length - 1, 0)} 个等级`}</p>
-          </div>
-
-          {!activeReadingLevel ? (
-            <div className="ds-categories-grid">
-              {readingLevelOptions.map((level) => (
-                <ModuleCard
-                  key={level.id}
-                  title={level.title}
-                  meta={level.meta}
-                  onClick={() => handleSelectReadingLevel(level.id)}
-                />
-              ))}
-            </div>
-          ) : (
-            <div id="reading-article-panel" className="reading-home-article-panel">
-              <button type="button" className="reading-home-back-btn" onClick={() => setSelectedReadingLevel('')}>
-                返回阅读分类
-              </button>
-              <div className="ds-categories-grid reading-home-article-grid">
-                {filteredReadings.map((article) => (
-                  <ModuleCard
-                    key={article.id}
-                    title={article.title}
-                    meta={`${article.examType || article.source || '阅读'} · ${article.estimatedMinutes || 4} 分钟`}
-                    onClick={() => {
-                      if (typeof onOpenReadingSession === 'function') {
-                        onOpenReadingSession(article.id);
-                        return;
-                      }
-                      onOpenReading?.();
-                    }}
-                  />
-                ))}
-              </div>
-            </div>
-          )}
+          <ReadingPickerContent
+            readings={readings}
+            activeLevel={activeReadingLevel}
+            onSelectLevel={handleSelectReadingLevel}
+            onBackToLevels={() => setSelectedReadingLevel('')}
+            onOpenArticle={(article) => {
+              if (typeof onOpenReadingSession === 'function') {
+                onOpenReadingSession(article.id);
+                return;
+              }
+              onOpenReading?.();
+            }}
+          />
         </BaseCard>
 
         <MotivationBand />

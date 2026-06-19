@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import Card from './Card';
+import WordCard from './WordCard';
 import QuickMenu from './QuickMenu';
 import { speakWord } from '../utils/speech';
 
@@ -213,7 +213,7 @@ function WordCollectionView({
             <p className="learn-refresh-empty">没有匹配结果，试试别的关键词。</p>
           </article>
         ) : (
-          <Card
+          <WordCard
             key={`${currentWord?.id || 'collection-empty'}-${safeCurrentIndex}`}
             word={currentWord}
             showHint={showHint}

@@ -28,11 +28,11 @@
 ## 主要页面
 
 - `studyHub`：学习入口，当前已从纯入口列表升级为“今日学习计划 + 全部训练入口”。今日计划会根据到期复习、新词目标、推荐阅读和考试巩固生成下一步建议；下方仍保留词库、阅读、复习、错题、统计、考试练习和账号同步入口。
-- `home`：单词分类选择页，支持全部、分类、托福词汇和雅思词汇入口。
+- `home`：训练中心页，支持四个主模块和 inline picker。背单词展开词库分类面板；做阅读展开阅读等级/文章面板；托福词汇和雅思词汇继续进入对应分层选择页。
 - `toeflLevels` / `toeflLists`：托福词汇按 Level / List 分层选择。
 - `ieltsTopics` / `ieltsLists`：雅思词汇按主题 / List 分层选择；当前已导入完整 List 1-56，按 20 个主题分组：自然地理、植物研究、动物保护、太空探索、学校教育、科技发明、文化历史、语言演化、娱乐运动、物品材料、时尚潮流、饮食健康、建筑场所、交通旅游、国家政府、社会经济、法律法规、征战沙场、社会关系、行为动作。
 - `learn`：统一学习容器，由 `LearningView` 根据 mode 渲染学习卡片、测验、填空、拼写或连线。
-- `readingList` / `readingSession`：阅读等级列表和文章阅读练习；文章页支持阅读题作答和反馈。
+- `readingSession`：文章阅读练习；文章页支持阅读题作答和反馈。阅读等级和文章选择不再有独立旧列表页，统一通过训练中心的 `ReadingPickerContent` inline 面板进入。
 - `todayReview` / `wrongWords` / `learnedWords` / `masteredWords`：复习、错题、已学习、已掌握集合页。
 - `statistics`：学习统计页。
 - `examPractice`：考试练习模式选择页。
@@ -41,7 +41,7 @@
 
 - 共享菜单组件是 `src/components/QuickMenu.jsx`，菜单选项集中在 `src/components/quickMenuOptions.js`。
 - 当前菜单统一包含：学习、测验、填空、拼写、连线、阅读、语音设置、慢速发音。
-- 已接入页面：`HomeScreen`、`LearningView`、`WordCollectionView`、`ReadingListView`、`ReadingSessionView`、`ExamPracticeView`。
+- 已接入页面：`HomeScreen`、`LearningView`、`WordCollectionView`、`ReadingSessionView`、`ExamPracticeView`。
 - 如果后续新增页面需要右上角快速菜单，优先复用 `QuickMenu`，不要再复制一份本地菜单状态和选项。
 - `QuickMenu` 支持 `extraItems`，用于页面专属菜单项；目前 `WordCollectionView` 用它保留“显示/隐藏搜索栏”。
 
@@ -51,8 +51,10 @@
 - 首页设计语言已沉淀到 4 个规范文件：`agents.md`、`design-system.md`、`component-system.md`、`frontend-architecture.md`。后续 UI 改造需要先遵守这些文档，再落到代码。
 - 首页当前结构是 `AppLayout -> Sidebar + Topbar -> HeroCard -> PlanStatusCards -> StatsRow -> Status summary`。
 - 训练中心当前结构是 `AppLayout -> Sidebar + Topbar -> HeroCard -> main ModuleCards -> inline word/reading picker panels -> MotivationBand -> StatsRow`。
+- 训练中心当前不保留搜索栏；不要在 topbar 或内容区重新加入搜索，除非后续明确成为产品需求。
 - 左侧导航标签保持简洁：今日计划、训练中心、单词、阅读、复习、测试、统计。
 - 手机端首页/训练中心已改为 app 化结构：隐藏桌面侧边栏，使用 `MobileTopbar` + 浮动 `MobileBottomNav`，底部主入口为 今日 / 训练 / 统计 / 我的。移动端仍复用同一套 `navItems` 回调，不能另写页面本地导航。
+- 手机端单词学习页是例外：使用 `.ds-app-layout--mobile-study` 专属学习壳，隐藏通用 `MobileTopbar` 和 `MobileBottomNav`，只显示返回、标题、进度胶囊、今日目标条、单词卡和底部三按钮。
 - 首页和训练中心 topbar 已接入现有主题系统：通过 `ThemeProvider` / `useTheme.toggleTheme()` 切换深色/浅色，并继续使用 `flashcards_theme` / `flashcards_theme_explicit` 存储键。主题按钮是 `IconButton`，不是新的主题状态。
 - 桌面端全站 chrome 必须统一：以当前最满意的“今日计划”桌面顶栏和左栏为母版，已拆成 `src/components/layout/Topbar.jsx`、`src/components/layout/Sidebar.jsx`、`src/components/layout/MobileAppChrome.jsx` 和 `src/components/layout/icons.jsx`。主页、训练中心、单词学习页以及后续阅读/复习/测试/统计改造都要通过 `AppLayout` 或直接 import 这些共享文件，禁止另写页面本地侧边栏或顶栏。桌面 Topbar 右侧可见槽位固定为日历、主题切换、通知、`Aa` 账号；搜索、同步、筛选、模式切换、学习进度等页面专属控件必须放进内容区面板，不能把全局顶部改成另一套。
 - 新组件体系位于：
@@ -65,6 +67,9 @@
   - `src/components/ui/Cards.jsx`：`BaseCard`、`HeroCard`、`ModuleCard`、`StatusCard`、`StatCard`。`ModuleCard` 支持 `iconSrc` / `artSrc`，生产 UI 优先使用透明 PNG 资产，避免用 emoji 做模块图标。
   - `src/components/ui/Progress.jsx`：`CircularProgress`、`LinearProgress`。
   - `src/components/modules/LearningModules.jsx`：学习模块入口组件。
+  - `src/components/reading/ReadingPicker.jsx`：阅读等级卡和文章列表共享组件；训练中心和所有阅读入口都调用这一套。
+  - `src/components/reading/readingPickerModel.js`：阅读等级分组和筛选 helper。
+  - `src/components/WordCard.jsx`：当前单词学习卡组件。旧泛名 `Card.jsx` 已重命名，避免误认为旧 UI 残留。
   - `src/design-system/tokens.css`：当前首页 SaaS 视觉 token、布局、卡片、按钮、进度和响应式样式。
 - 透明装饰资产位于 `public/images/ui-assets/`。这些资产只用于插画和图标，不能承载中文文案、进度数字、按钮或导航。
 - 首页旧资产仍包括：`hero-flashcards.png`、`review-complete.png`、`new-words.png`、`stat-flame.png`、`stat-target.png`、`stat-star.png`。
@@ -78,10 +83,11 @@
 - 训练中心 hero 是蓝色渐变 banner，右侧为蓝色 `Aa` flashcards，背景有轻微 A/B/C 字母装饰和黄色高光。
 - 训练中心四个入口卡当前为统一白色轻卡：背单词、做阅读、今日复习、做测试。使用蓝黄 3D 英语学习资产，不再使用 emoji；“做阅读”不再用单独高亮卡，除非以后表示真实选中态。
 - 训练中心“背单词”入口不会直接进入全部单词学习，而是展开并滚动到现有词库类型选择区，用户再选择全部、TOEFL、IELTS 或其它分类。
-- 训练中心“做阅读”入口不会直接进入旧阅读列表，而是展开阅读分类面板；选择等级后在同一面板内展示文章卡，再进入阅读练习。
+- 训练中心“做阅读”和左侧导航“阅读”都会打开 `home` 中的阅读分类面板；选择等级后在同一面板内展示纵向文章列表，再进入阅读练习。旧独立 `ReadingListView.jsx` 已删除，只保留历史 state 兼容：如果浏览器历史里还有 `readingList`，会自动转回训练中心阅读面板。
 - 词库分类卡已从旧按钮升级为真实 `ModuleCard`：全部单词、日常常用、四级核心、六级核心、托福词汇、雅思词汇。卡片使用蓝黄 3D 学习图标，文本/词数/箭头仍为真实 DOM。
 - `StatsRow` 当前是统一 Daily Progress 组件：左侧标题区域 + 三个对齐 stats，数字和标签是真实组件，图标只是装饰。
-- 顶部未登录区域当前是明确的“登录 / 注册”按钮，头像位置用品牌化 `Aa`，不要再放 emoji。
+- 手机端单词学习页不显示桌面侧栏状态：学习进度、连续打卡、剩余词汇 summary、坚持每天进步都应隐藏；底部动作保持横向三列：不认识 / 显示提示 / 认识了。
+- 顶部账号区域使用品牌化 `Aa` chip；未登录态显示“未登录”，点击仍进入登录/注册流程，不要再放 emoji。
 - 顶层 `AppContent` 已在 `view` 变化时执行 `window.scrollTo({ top: 0 })`，避免从移动端深层滚动位置进入 IELTS/TOEFL/阅读等新视图时停留在页面中部。
 - 已支持深色版：启动前会在 `src/main.jsx` 根据系统偏好和本地主题设置给根节点加主题 class，避免深色浏览器打开时先闪白屏。
 - 深色版覆盖了学习入口、今日学习计划、词汇学习、考试练习、阅读、统计、语音设置、单词集合等主要页面；后续新增页面要同步检查浅色/深色对比度，避免出现白色卡片或深色文字不可见。
@@ -111,7 +117,7 @@
 - 已生成并上传 4 套例句 MP3：`af_bella`、`am_michael`、`bf_emma`、`bm_george`；路径为 `public/audio/examples/{voice}/{id}.mp3` / R2 `audio/examples/{voice}/{id}.mp3`，每个音色覆盖完整 5399 个例句，0 失败，MP3 24 kbps / 24 kHz / mono。
 - 前端 `speakWord()` 在 Kokoro provider 下会优先播放静态单词音频；文件缺失或播放失败时 fallback 到实时 Kokoro / 浏览器 TTS。
 - 静态单词音频默认 base URL 是 `/audio/words`；线上构建已在 GitHub Actions 设置 `VITE_WORD_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/words`，让远端 App 从 R2 读取音频，避免 App 本体携带全部 MP3。
-- 前端例句播放已接入静态 Kokoro MP3 优先播放：`src/utils/speech.js` 提供 `speakExample(word)`，Kokoro provider 下会优先尝试当前音色的 `audio/examples/{voice}/{id}.mp3`。当前静态例句白名单为 `af_bella`、`am_michael`、`bf_emma`、`bm_george`，因此选择 Emma/George 时例句也会使用英音；文件缺失或播放失败时再 fallback 到实时 Kokoro / 浏览器 TTS。可用 `VITE_EXAMPLE_AUDIO_BASE_URL` 指向 R2/CDN；未配置时默认 `/audio/examples`。当前已接入 `Card.jsx` 和 `FillBlank.jsx` 的例句播放按钮。
+- 前端例句播放已接入静态 Kokoro MP3 优先播放：`src/utils/speech.js` 提供 `speakExample(word)`，Kokoro provider 下会优先尝试当前音色的 `audio/examples/{voice}/{id}.mp3`。当前静态例句白名单为 `af_bella`、`am_michael`、`bf_emma`、`bm_george`，因此选择 Emma/George 时例句也会使用英音；文件缺失或播放失败时再 fallback 到实时 Kokoro / 浏览器 TTS。可用 `VITE_EXAMPLE_AUDIO_BASE_URL` 指向 R2/CDN；未配置时默认 `/audio/examples`。当前已接入 `WordCard.jsx` 和 `FillBlank.jsx` 的例句播放按钮。
 - 当前 R2 bucket 是 `english-flashcards-audio`，公开 r2.dev URL 是 `https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev`，CORS 配置文件是 `config/r2-word-audio-cors.json`。
 
 ## Cloudflare Worker / D1 同步逻辑
@@ -187,7 +193,7 @@
 
 ## 阅读功能状态
 
-- 阅读列表现在先按 CEFR 等级分组展示，再进入对应文章列表；文章卡片保留考试来源、主题、题目数量、预计阅读时间和难词数量。
+- 阅读入口现在统一由训练中心的 inline `ReadingPickerContent` 承载：先按 CEFR 等级展示四张轻量阅读等级卡，再进入纵向文章列表。不要恢复旧的独立阅读列表页面或旧横排文章卡。
 - 阅读正文会基于词库高亮未掌握词，点击可打开单词详情并标记学习/掌握。
 - 阅读文章可包含 `questions`，`ReadingSessionView` 会渲染“阅读题”，选择选项后显示正确/错误和解析。
 - 首页今日计划会优先推荐一篇考试风格阅读；当前推荐策略优先选 IELTS B2，其次 TOEFL，其次任意带 `examType` 的阅读。点击推荐阅读会直接进入 `readingSession`。
@@ -225,6 +231,7 @@
 ## 当前已知风险
 
 - 最近重要提交：
+  - `d60f38f Polish shared app shell and word learning UI`：拆出共享桌面 Topbar/Sidebar 和移动 App chrome，统一今日计划/训练中心/背单词桌面顶部与左侧；重做单词学习卡和手机端单词学习页，训练中心移除搜索栏，并通过 `npm run lint` / `npm run build` 验证。
   - `ebf3b8b Refine training center blue UI`：训练中心改为蓝白黄 English learning app 风格，新增蓝色 hero、四个主模块 3D 图标、六个词库分类 3D 图标，重构 word/reading inline picker、Daily Progress、登录按钮和侧边栏选中态，并通过 `npm run lint` / `npm run build` 验证。
   - `1cb18df Polish mobile home UI`：完成手机端首页/训练中心 UI polish，新增移动端 topbar/bottom nav、主题切换按钮、统一训练模块卡、背单词先进入分类选择、视图切换滚动回顶部，并通过 `npm run lint` / `npm run build` 验证。
   - 首页 premium edtech SaaS UI polish 阶段：新增组件化 App Shell、卡片、按钮、进度组件、透明 UI 资产，以及 `agents.md` / `design-system.md` / `component-system.md` / `frontend-architecture.md` 规范文档。
@@ -240,7 +247,7 @@
   - `f9feb8d Add GSAP interactions and streamline voice settings`：接入 GSAP 动效，简化语音设置面板，并加入 George 英音男声入口。
   - `1f5f008 Enable British example audio voices`：把 `bf_emma` 和 `bm_george` 加入静态例句音频白名单，修复英音单词但例句回到美音的问题。
   - `a34a268 Add exam-style readings and speed up builds`：新增 6 篇原创 IELTS/TOEFL 风格阅读练习，并优化 Vite build，排除 `public/audio`，让生产构建恢复到秒级。
-- 当前未提交改动主要是文档更新：同步记录 `1cb18df` 之后的手机端 UI 状态、主题切换、训练入口行为和滚动修复。代码改动已在 `1cb18df` 提交。
+- 当前工作区在 `d60f38f` 之后只做文档同步时，应避免误改 UI 代码；若继续 UI 调整，先遵守共享 chrome 和手机单词页规则。
 - `resetProgress` 会调用 `storage.clearProgress()` 清除学习进度、错题、复习计划和统计历史，但会保留账号、主题、语音设置和自定义词。
 - 进度合并以数组去重和对象浅合并为主，`wordProgress` 同一单词的冲突会以后写入对象覆盖。
 - Worker 发送验证码依赖 Resend；本地或测试环境若缺少环境变量，登录链路会直接失败。
@@ -255,7 +262,7 @@
 ## 下一步建议
 
 - 产品改进路线已沉淀到 `plan.md`。当前优先级是继续把首页“今日学习计划”从轻量推荐升级为完整日任务闭环。
-- 刚完成的手机端 homepage/training polish 已降低移动端 UI 混乱度；下一轮 UI 优先继续清理词库分类选择区和 TOEFL/IELTS 选择页的旧样式残留，让它们与新的移动端 app shell 保持一致。
+- 刚完成的 shared app shell / word-learning polish 已降低桌面和手机端 UI 分叉；下一轮 UI 优先继续清理 TOEFL/IELTS 选择页、阅读等级页、复习/测试页旧样式残留，让它们与共享 chrome 和蓝白黄学习系统保持一致。
 - 今日计划后续建议优先补：
   - 把阅读完成、考试巩固完成也纳入日级进度，而不是只用复习和新词计算核心进度。
   - 允许用户自定义每日新词目标，例如 10 / 15 / 25。

@@ -12,6 +12,7 @@ Build a scalable production edtech SaaS frontend.
     /layout
     /ui
     /modules
+    /reading
 
   /pages
   /design-system
@@ -78,11 +79,14 @@ Production SaaS level consistency
 ## Training Center Behavior
 - `HomeScreen` is the Training Center view.
 - The page structure stays: AppLayout -> HeroCard -> main ModuleCards -> inline picker panels -> MotivationBand -> StatsRow.
+- Training Center intentionally has no keyword search bar.
 - 背单词 opens `#word-category-panel` inline and scrolls to it.
 - 做阅读 opens `#reading-category-panel` inline and scrolls to it.
-- The word and reading pickers are mutually exclusive, except search can force the word picker open.
+- The word and reading pickers are mutually exclusive.
 - Selecting TOEFL / IELTS still routes through the existing TOEFL/IELTS flows; do not bypass existing loading or learning logic.
 - Selecting a reading level shows article cards inside the same panel; selecting an article opens `readingSession` through the existing handler.
+- Reading navigation must also open the Training Center reading panel. Do not reintroduce a standalone `ReadingListView` route or page-local reading topbar/list UI.
+- Reading level cards and reading article rows live in `src/components/reading/ReadingPicker.jsx`; reuse this shared component instead of duplicating markup in `HomeScreen`.
 
 ## Responsive Behavior
 - Desktop uses sidebar + topbar + content composition.
@@ -90,6 +94,7 @@ Production SaaS level consistency
 - Medium screens may hide large decorative hero artwork before breaking core content.
 - Mobile stacks hero content, cards, and stats without clipping text or controls.
 - Mobile uses <MobileTopbar> and <MobileBottomNav> inside <AppLayout>; do not create page-local mobile nav.
+- Exception: mobile word-learning mode may use the dedicated `.ds-app-layout--mobile-study` chrome so the study screen can match the clean flashcard reference. In that mode, hide generic `MobileTopbar`, hide `MobileBottomNav`, and hide the desktop learning-status aside.
 - Mobile bottom nav reuses the same `navItems` callbacks as desktop navigation.
 - View changes should reset window scroll to top so routes opened from deep mobile sections start at the correct position.
 
@@ -103,4 +108,6 @@ Production SaaS level consistency
 - Run `npm run build`.
 - Manually check that interactive UI remains real components and generated assets remain decorative.
 - For mobile UI work, verify at a 390px-wide viewport and test the main tap path: 今日 -> 训练 -> 背单词 -> 分类选择 -> IELTS/TOEFL.
+- For mobile word-learning UI work, verify around `430x932`: no generic mobile topbar/bottom nav, no learning-progress/continuous-check-in side panels, bottom actions remain horizontal, and there is no horizontal overflow.
 - For Training Center desktop UI work, verify `1440x900`: blue hero banner, four main cards, word category panel, reading category panel, Daily Progress, and no horizontal overflow.
+- For reading UI work, verify that clicking the shared sidebar/mobile reading entry lands on Training Center with `#reading-category-panel` open, not on a standalone reading list.

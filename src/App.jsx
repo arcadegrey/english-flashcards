@@ -16,7 +16,6 @@ import LearningView from './components/LearningView'
 import Statistics from './components/Statistics'
 import WordCollectionView from './components/WordCollectionView'
 import ToeflSelectionView from './components/ToeflSelectionView'
-import ReadingListView from './components/ReadingListView'
 import ReadingSessionView from './components/ReadingSessionView'
 import ExamPracticeView from './components/ExamPracticeView'
 import AuthPanel from './components/AuthPanel'
@@ -377,6 +376,7 @@ function AppContent() {
   const [selectedIeltsTopic, setSelectedIeltsTopic] = useState('')
   const [selectedIeltsList, setSelectedIeltsList] = useState('')
   const [selectedReadingId, setSelectedReadingId] = useState(null)
+  const [homePanelRequest, setHomePanelRequest] = useState({ panel: '', nonce: 0 })
   const [currentIndex, setCurrentIndex] = useState(0)
   const [learnedWords, setLearnedWords] = useState([])
   const [masteredWords, setMasteredWords] = useState([])
@@ -1296,7 +1296,13 @@ function AppContent() {
         return
       }
 
-      setView(typeof state.view === 'string' ? state.view : 'studyHub')
+      const restoredView = typeof state.view === 'string' ? state.view : 'studyHub'
+      if (restoredView === 'readingList') {
+        setHomePanelRequest((request) => ({ panel: 'reading', nonce: request.nonce + 1 }))
+        setView('home')
+      } else {
+        setView(restoredView)
+      }
       setMode(typeof state.mode === 'string' ? state.mode : 'learn')
       setSelectedCategory(typeof state.selectedCategory === 'string' ? state.selectedCategory : 'all')
       setSelectedToeflLevel(
@@ -1664,7 +1670,8 @@ function AppContent() {
   const handleOpenReadingList = () => {
     setAssessmentBackTarget('home')
     setSelectedReadingId(null)
-    setView('readingList')
+    setHomePanelRequest((request) => ({ panel: 'reading', nonce: request.nonce + 1 }))
+    setView('home')
   }
 
   const handleOpenTodayReview = () => {
@@ -1718,7 +1725,7 @@ function AppContent() {
   }
 
   const handleBackToReadingList = () => {
-    setView('readingList')
+    handleOpenReadingList()
   }
 
   const handleOpenModeFromReading = (nextMode) => {
@@ -1973,7 +1980,6 @@ function AppContent() {
       view === 'masteredWords' ||
       view === 'todayReview' ||
       view === 'wrongWords' ||
-      view === 'readingList' ||
       view === 'readingSession' ||
       view === 'statistics' ||
       view === 'examPractice'
@@ -2013,6 +2019,26 @@ function AppContent() {
         </div>
       </div>
     )
+  }
+
+  const selectionNavItems = [
+    { id: 'plan', label: '今日计划', icon: 'plan', onClick: handleBackToStudyHub },
+    { id: 'training', label: '训练中心', icon: 'training', onClick: handleBackToHome },
+    { id: 'words', label: '单词', icon: 'words', onClick: handleOpenWordStudy },
+    { id: 'reading', label: '阅读', icon: 'reading', onClick: handleOpenReadingList },
+    { id: 'review', label: '复习', icon: 'review', onClick: handleOpenTodayReview },
+    { id: 'test', label: '测试', icon: 'test', onClick: handleOpenExamPractice },
+    { id: 'stats', label: '统计', icon: 'stats', onClick: handleOpenStatistics },
+  ]
+
+  const selectionTopbarProps = {
+    onCalendar: handleOpenStatistics,
+    onNotify: handleOpenWrongWords,
+    notifyBadge: wrongWords.length ? String(Math.min(wrongWords.length, 9)) : undefined,
+    onThemeToggle: toggleTheme,
+    isDarkTheme: isDark,
+    onUserClick: () => setShowAuthModal(true),
+    userLabel: authUser?.email ? '学习者' : authLoading ? '同步中' : '未登录',
   }
 
   const renderView = () => {
@@ -2109,18 +2135,7 @@ function AppContent() {
             showAuthPanel={false}
             isDarkTheme={isDark}
             onThemeToggle={toggleTheme}
-          />
-        )
-      case 'readingList':
-        return (
-          <ReadingListView
-            readings={readingLibrary}
-            mode={mode}
-            onBack={handleBackToStudyHub}
-            onHome={handleBackToStudyHub}
-            onOpenReading={handleOpenReadingSession}
-            onOpenMode={handleOpenModeFromReading}
-            onSyncAccount={handleHomeSync}
+            panelRequest={homePanelRequest}
           />
         )
       case 'readingSession':
@@ -2142,12 +2157,11 @@ function AppContent() {
         return (
           <ToeflSelectionView
             mode="level"
-            title="🌍 托福词汇分级"
+            title="托福词汇分级"
             subtitle="先选择 Level，再进入对应 List；也可以直接学习全部托福词汇。"
             items={toeflGrouping.levels}
             totalCount={toeflGrouping.total}
             onBack={handleBackToHome}
-            onHome={handleBackToStudyHub}
             onSelect={handleToeflLevelSelect}
             onSelectAll={handleStartAllToefl}
             onSyncAccount={handleHomeSync}
@@ -2155,6 +2169,10 @@ function AppContent() {
             selectAllLabel="学习全部托福词汇"
             vocabularyLabel="托福词汇"
             listLabel="托福 List"
+            navItems={selectionNavItems}
+            topbarProps={selectionTopbarProps}
+            active="words"
+            selectionKind="toefl-level"
           />
         )
       case 'toeflLists': {
@@ -2165,12 +2183,11 @@ function AppContent() {
         return (
           <ToeflSelectionView
             mode="list"
-            title={`📘 ${levelLabel}`}
+            title={levelLabel}
             subtitle="选择 List 开始学习，或者直接学习当前 Level 全部词汇。"
             items={toeflListsForSelectedLevel}
             totalCount={totalForLevel}
             onBack={() => setView('toeflLevels')}
-            onHome={handleBackToStudyHub}
             onSelect={handleToeflListSelect}
             onSelectAll={handleStartCurrentLevel}
             onSyncAccount={handleHomeSync}
@@ -2178,6 +2195,10 @@ function AppContent() {
             selectAllLabel={`学习${levelLabel}全部词汇`}
             vocabularyLabel="托福词汇"
             listLabel="托福 List"
+            navItems={selectionNavItems}
+            topbarProps={selectionTopbarProps}
+            active="words"
+            selectionKind="toefl-list"
           />
         )
       }
@@ -2185,12 +2206,11 @@ function AppContent() {
         return (
           <ToeflSelectionView
             mode="level"
-            title="🇬🇧 雅思词汇主题"
+            title="雅思词汇主题"
             subtitle="先选择主题，再进入对应 List；也可以直接学习全部雅思词汇。"
             items={ieltsGrouping.topics}
             totalCount={ieltsGrouping.total}
             onBack={handleBackToHome}
-            onHome={handleBackToStudyHub}
             onSelect={handleIeltsTopicSelect}
             onSelectAll={handleStartAllIelts}
             onSyncAccount={handleHomeSync}
@@ -2198,6 +2218,10 @@ function AppContent() {
             selectAllLabel="学习全部雅思词汇"
             vocabularyLabel="雅思词汇"
             listLabel="雅思主题"
+            navItems={selectionNavItems}
+            topbarProps={selectionTopbarProps}
+            active="words"
+            selectionKind="ielts-topic"
           />
         )
       case 'ieltsLists': {
@@ -2208,12 +2232,11 @@ function AppContent() {
         return (
           <ToeflSelectionView
             mode="list"
-            title={`📘 ${topicLabel}`}
+            title={topicLabel}
             subtitle="选择 List 开始学习，或者直接学习当前主题全部词汇。"
             items={ieltsListsForSelectedTopic}
             totalCount={totalForTopic}
             onBack={() => setView('ieltsTopics')}
-            onHome={handleBackToStudyHub}
             onSelect={handleIeltsListSelect}
             onSelectAll={handleStartCurrentIeltsTopic}
             onSyncAccount={handleHomeSync}
@@ -2221,6 +2244,10 @@ function AppContent() {
             selectAllLabel={`学习${topicLabel}全部词汇`}
             vocabularyLabel="雅思词汇"
             listLabel="雅思 List"
+            navItems={selectionNavItems}
+            topbarProps={selectionTopbarProps}
+            active="words"
+            selectionKind="ielts-list"
           />
         )
       }
@@ -2397,7 +2424,6 @@ function AppContent() {
     view === 'masteredWords' ||
     view === 'todayReview' ||
     view === 'wrongWords' ||
-    view === 'readingList' ||
     view === 'readingSession' ||
     view === 'statistics' ||
     view === 'examPractice'
