@@ -2120,8 +2120,8 @@ function AppContent() {
               lastSyncedAt,
             })}
             syncError={syncError || authError}
-            onBack={handleBackToStudyHub}
             onHome={handleBackToStudyHub}
+            onAuthOpen={() => setShowAuthModal(true)}
             onSyncAccount={handleHomeSync}
             onSpeakIntro={() => speak('English flashcards. Choose a vocabulary category to start.', { rate: 1 })}
             onOpenMode={handleOpenModeFromHome}
@@ -2431,7 +2431,7 @@ function AppContent() {
     return (
       <div className={`min-h-screen ${appBackground}`}>
         {renderView()}
-        {(view === 'studyHub' || view === 'home') && renderAuthModal()}
+        {renderAuthModal()}
         {renderAuthTransitionOverlay()}
       </div>
     )
@@ -2440,6 +2440,7 @@ function AppContent() {
   return (
     <div className={`min-h-screen ${appBackground}`}>
       {renderView()}
+      {renderAuthModal()}
       {renderAuthTransitionOverlay()}
     </div>
   )

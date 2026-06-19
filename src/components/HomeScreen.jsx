@@ -39,8 +39,8 @@ function HomeScreen({
   onOpenStatistics,
   onOpenToeflLevels,
   onOpenIeltsLists,
-  onBack,
   onHome,
+  onAuthOpen,
   onOpenMode,
   onOpenReading,
   onOpenReadingSession,
@@ -253,7 +253,7 @@ function HomeScreen({
         notifyBadge: wrongWordIds.length ? String(Math.min(wrongWordIds.length, 9)) : undefined,
         onThemeToggle,
         isDarkTheme,
-        onUserClick: onBack,
+        onUserClick: onAuthOpen,
         userLabel: authUser?.email ? '学习者' : authLoading ? '同步中' : '未登录',
       }}
     >
