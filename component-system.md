@@ -16,6 +16,7 @@ App shell rules:
 - Training Center has no search component in either topbar or content. Keep discovery through the four module cards and inline picker panels.
 - `src/components/layout/AppLayout.jsx` is only the shell composer. The canonical chrome lives in `Sidebar.jsx`, `Topbar.jsx`, `MobileAppChrome.jsx`, and shared icons in `icons.jsx`, extracted from the approved 今日计划 chrome.
 - `AppLayout` may receive `className="ds-app-layout--mobile-study"` for mobile word-learning only. That modifier hides generic mobile chrome and supports the dedicated clean flashcard study layout.
+- `Sidebar.jsx` owns the desktop “连续学习” card at the bottom of the sidebar. Keep it shared and hidden in collapsed/mobile layouts; do not recreate it inside page content.
 
 --------------------------------
 # CARDS
@@ -88,6 +89,13 @@ Mobile word-learning module:
 - Hides the desktop learning-status aside on mobile, including 学习进度, 连续打卡, 剩余词汇 summary, and 坚持每天进步.
 - The generic mobile topbar and mobile bottom nav are hidden on this screen only.
 - Word learning card UI lives in `src/components/WordCard.jsx`. Do not restore old `CategorySelector.jsx`, old `components/Progress.jsx`, or generic `Card.jsx` as separate UI surfaces.
+
+Exam practice module:
+- `ExamPracticeView` is the range and mode selection surface.
+- `LearningView` renders the four internal exam modes when `mode !== "learn"`.
+- Internal exam modes must use the shared exam shell: control card, thin progress bar, and centered answer card.
+- The exam control card contains 返回, question count, and QuickMenu only. Do not add sync/account state there; the global Topbar account chip owns that status.
+- `Quiz`, `FillBlank`, `SpellingTest`, and `MatchingTest` keep their existing answer logic and stats, but their visual presentation is scoped through `.learn-refresh-main--assessment`.
 
 --------------------------------
 # RULE

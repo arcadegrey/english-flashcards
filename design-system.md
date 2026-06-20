@@ -71,6 +71,7 @@ Rules:
 - Icon/text gap 12px.
 - Homepage may use a soft tint. Training Center desktop currently uses a stronger blue selected pill with a small yellow active indicator bar, matching the blue learning-app direction.
 - Labels should be concise: 今日计划 / 训练中心 / 单词 / 阅读 / 复习 / 测试 / 统计.
+- Desktop sidebar includes a shared bottom "连续学习" card with week dots. Keep it in `Sidebar.jsx`; do not duplicate streak cards inside individual pages.
 
 ## Topbar
 - Lightweight, calm, and secondary to the page title.
@@ -122,6 +123,14 @@ Rules:
 - The reading workspace uses a goal strip for 难词掌握, a large rounded article card, compact metadata chips, a right-side reading status stack, and real action buttons for 返回列表 / 显示翻译 / 朗读全文.
 - Reading text, translation, questions, highlighted vocabulary, progress ring, and action buttons must remain real components.
 - Mobile reading sessions use the generic mobile app shell and bottom nav; only mobile word-learning uses the dedicated study chrome exception.
+
+## Exam Session
+- Exam answer pages use the shared `AppLayout` sidebar/topbar, with 测试 active in the sidebar and only the standard topbar slots on the right.
+- The exam workspace follows: control card -> thin progress bar -> centered answer card.
+- The control card contains only 返回, current question count, and QuickMenu. Do not show "已同步" here because login/sync state belongs to the global account chip.
+- The answer card width is narrower than the page shell and centered, matching the focused quiz reference.
+- Four internal modes share this shell: 测验 / 填空 / 拼写 / 连线. Their question text, audio, options, answer feedback, and stats remain real components.
+- Exam page-specific controls must stay in the workspace, not in the global Topbar.
 
 ## Mobile Training Cards
 - Training module cards use a consistent white card surface in light mode.

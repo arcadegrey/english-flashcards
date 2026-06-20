@@ -35,7 +35,7 @@
 - `readingSession`：文章阅读练习；文章页使用共享 `AppLayout` 和背单词式学习卡视觉，支持难词掌握目标条、正文阅读、全文翻译、阅读题作答、点词弹窗和反馈。阅读等级和文章选择不再有独立旧列表页，统一通过训练中心的 `ReadingPickerContent` inline 面板进入。
 - `todayReview` / `wrongWords` / `learnedWords` / `masteredWords`：复习、错题、已学习、已掌握集合页。
 - `statistics`：学习统计页。
-- `examPractice`：考试练习模式选择页。
+- `examPractice`：考试练习模式选择页。左侧“测试”和训练中心“做测试”共用同一入口与范围选择；选择全范围时会按需加载完整考试词库分片，而不是只使用启动 `core.json`。
 
 ## 共享右上角菜单
 
@@ -52,8 +52,9 @@
 - 首页当前结构是 `AppLayout -> Sidebar + Topbar -> HeroCard -> PlanStatusCards -> StatsRow -> Status summary`。
 - 训练中心当前结构是 `AppLayout -> Sidebar + Topbar -> HeroCard -> main ModuleCards -> inline word/reading picker panels -> MotivationBand -> StatsRow`。
 - 阅读正文页当前结构是 `AppLayout -> Sidebar + Topbar -> 难词掌握目标条 -> 大阅读卡 -> 阅读状态侧栏 -> 底部操作按钮`。不要恢复旧的阅读局部 topbar；返回列表、显示翻译、朗读全文、同步进度和 QuickMenu 都放在内容区。
+- 考试答题页当前结构是 `AppLayout -> Sidebar + Topbar -> 考试控制条 -> 细进度条 -> 居中答题卡`。考试控制条只放返回、题号和 QuickMenu；不要显示“已同步”状态，账号/登录状态归全局 Topbar 负责。四种题型（测验、填空、拼写、连线）共享这一套考试壳，题目、选项、发音、统计仍为真实组件。
 - 训练中心当前不保留搜索栏；不要在 topbar 或内容区重新加入搜索，除非后续明确成为产品需求。
-- 左侧导航标签保持简洁：今日计划、训练中心、单词、阅读、复习、测试、统计。
+- 左侧导航标签保持简洁：今日计划、训练中心、单词、阅读、复习、测试、统计。桌面侧边栏底部包含共享“连续学习”卡，作为全站 chrome 的一部分；不要在页面内容里重复做第二套 streak 卡。
 - 手机端首页/训练中心已改为 app 化结构：隐藏桌面侧边栏，使用 `MobileTopbar` + 浮动 `MobileBottomNav`，底部主入口为 今日 / 训练 / 统计 / 我的。移动端仍复用同一套 `navItems` 回调，不能另写页面本地导航。
 - 手机端单词学习页是例外：使用 `.ds-app-layout--mobile-study` 专属学习壳，隐藏通用 `MobileTopbar` 和 `MobileBottomNav`，只显示返回、标题、进度胶囊、今日目标条、单词卡和底部三按钮。
 - 首页和训练中心 topbar 已接入现有主题系统：通过 `ThemeProvider` / `useTheme.toggleTheme()` 切换深色/浅色，并继续使用 `flashcards_theme` / `flashcards_theme_explicit` 存储键。主题按钮是 `IconButton`，不是新的主题状态。

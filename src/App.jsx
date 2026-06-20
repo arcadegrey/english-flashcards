@@ -369,6 +369,7 @@ function AppContent() {
   const [view, setView] = useState('studyHub')
   const [mode, setMode] = useState('learn')
   const [examScope, setExamScope] = useState('learned')
+  const [examPreparing, setExamPreparing] = useState(false)
   const [assessmentBackTarget, setAssessmentBackTarget] = useState('home')
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [selectedToeflLevel, setSelectedToeflLevel] = useState('')
@@ -1502,6 +1503,21 @@ function AppContent() {
     })
   }, [ensureIeltsListLoaded, ieltsGrouping.lists])
 
+  const loadAllExamVocabulary = useCallback(async () => {
+    const toeflJobs = toeflGrouping.levels.flatMap((level) =>
+      (toeflGrouping.listsByLevel[level.key] || []).map((item) =>
+        loadToeflListVocabulary(toeflManifest, level.key, item.key)
+      )
+    )
+    const ieltsJobs = ieltsGrouping.lists.map((item) =>
+      loadIeltsListVocabulary(ieltsManifest, item.key)
+    )
+
+    const loadedLists = await Promise.all([...toeflJobs, ...ieltsJobs])
+    const loadedVocabulary = loadedLists.flat()
+    setVocabulary((prev) => mergeVocabularyList(prev, loadedVocabulary))
+  }, [ieltsGrouping.lists, ieltsManifest, toeflGrouping.levels, toeflGrouping.listsByLevel, toeflManifest])
+
   const ensureIeltsTopicLoaded = useCallback(
     (topicKey) => {
       const lists = ieltsGrouping.listsByTopic[topicKey] || []
@@ -1692,18 +1708,30 @@ function AppContent() {
     setView('examPractice')
   }
 
-  const handleStartExamPractice = (nextMode, scope = examScope) => {
+  const handleStartExamPractice = async (nextMode, scope = examScope) => {
     pendingStartWordIdRef.current = null
     setAssessmentBackTarget('examPractice')
     setExamScope(scope)
-    setSelectedCategory('all')
-    setSelectedToeflLevel('')
-    setSelectedToeflList('')
-    setSelectedIeltsTopic('')
-    setSelectedIeltsList('')
-    setCurrentIndex(0)
-    setMode(nextMode)
-    setView('learn')
+    setExamPreparing(true)
+
+    try {
+      if (scope === 'all') {
+        await loadAllExamVocabulary()
+      }
+
+      setSelectedCategory('all')
+      setSelectedToeflLevel('')
+      setSelectedToeflList('')
+      setSelectedIeltsTopic('')
+      setSelectedIeltsList('')
+      setCurrentIndex(0)
+      setMode(nextMode)
+      setView('learn')
+    } catch (error) {
+      setVocabularyError(error?.message || '全范围词库加载失败')
+    } finally {
+      setExamPreparing(false)
+    }
   }
 
   const handleOpenReadingSession = (readingId) => {
@@ -2085,10 +2113,13 @@ function AppContent() {
             learnedCount={learnedWords.length}
             masteredCount={masteredWords.length}
             totalCount={wordCounts.all}
+            isPreparing={examPreparing}
             onSyncAccount={handleHomeSync}
             mode={mode}
             onOpenMode={(nextMode) => handleStartExamPractice(nextMode, examScope)}
             onOpenReading={handleOpenReadingList}
+            navItems={selectionNavItems}
+            topbarProps={selectionTopbarProps}
           />
         )
       case 'home':
@@ -2108,6 +2139,7 @@ function AppContent() {
             onOpenTodayReview={handleOpenTodayReview}
             onOpenWrongWords={handleOpenWrongWords}
             onOpenStatistics={handleOpenStatistics}
+            onOpenExamPractice={handleOpenExamPractice}
             onOpenToeflLevels={openToeflLevels}
             onOpenIeltsLists={openIeltsTopics}
             authEnabled={cloudEnabled}

@@ -14,6 +14,592 @@
   padding-bottom: calc(122px + env(safe-area-inset-bottom));
 }
 
+.assessment-study-shell {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  display: grid;
+  gap: 18px;
+}
+
+.assessment-control-card {
+  min-height: 64px;
+  border: 1px solid rgba(79, 124, 255, 0.14);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 18px 42px rgba(79, 124, 255, 0.08);
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) auto minmax(160px, 1fr);
+  align-items: center;
+  gap: 16px;
+  padding: 10px 20px;
+}
+
+.assessment-back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 850;
+}
+
+.assessment-back-button {
+  justify-self: start;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: #ffffff;
+  color: #0f172a;
+  padding: 0 16px;
+  box-shadow: 0 10px 22px rgba(99, 112, 168, 0.08);
+}
+
+.assessment-back-button:hover {
+  transform: translateY(-1px);
+}
+
+.assessment-back-button svg,
+.assessment-control-actions .learn-refresh-icon-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.assessment-question-count {
+  color: #0f172a;
+  font-size: 17px;
+  font-weight: 850;
+  letter-spacing: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.assessment-question-count strong {
+  font-weight: 950;
+}
+
+.assessment-control-actions {
+  justify-self: end;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.assessment-control-actions .learn-refresh-menu-wrap {
+  position: relative;
+}
+
+.assessment-control-actions .learn-refresh-icon-btn {
+  width: 42px;
+  height: 42px;
+  min-height: 42px;
+  border-radius: 14px;
+  border: 1px solid rgba(79, 124, 255, 0.12);
+  background: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 10px 22px rgba(99, 112, 168, 0.08);
+}
+
+.assessment-progress-row {
+  width: min(100%, 980px);
+  margin: 4px auto 8px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+  color: #2f6dff;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.assessment-progress-track {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+}
+
+.assessment-progress-track span {
+  display: block;
+  min-width: 48px;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #1f6bff, #4f7cff);
+  box-shadow: 0 8px 18px rgba(79, 124, 255, 0.28);
+}
+
+.assessment-goal-strip {
+  margin: 0;
+}
+
+.assessment-content-tools {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 1px solid rgba(79, 124, 255, 0.12);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 10px;
+  box-shadow: 0 14px 32px rgba(79, 124, 255, 0.06);
+}
+
+.assessment-content-tools .learn-refresh-side-tool,
+.assessment-content-tools .learn-refresh-icon-btn {
+  flex: 0 0 auto;
+  min-height: 42px;
+  border-radius: 14px;
+  border: 1px solid rgba(79, 124, 255, 0.16);
+  background: rgba(79, 124, 255, 0.08);
+  color: #315ef7;
+  box-shadow: none;
+  padding: 0 14px;
+}
+
+.assessment-content-tools .learn-refresh-side-tool:hover,
+.assessment-content-tools .learn-refresh-icon-btn:hover {
+  border-color: rgba(79, 124, 255, 0.28);
+  background: rgba(79, 124, 255, 0.13);
+  transform: translateY(-1px);
+}
+
+.assessment-content-tools .learn-refresh-menu {
+  color: var(--wl-text);
+}
+
+.assessment-content-tools .learn-refresh-menu-wrap {
+  margin-left: auto;
+}
+
+.ds-app-layout .learn-refresh-main--assessment {
+  --wl-bg: #f7faff;
+  --wl-card: #ffffff;
+  --wl-text: #0f172a;
+  --wl-subtext: #64748b;
+  --wl-line: rgba(79, 124, 255, 0.14);
+  --wl-blue: #4f7cff;
+  max-width: none;
+  margin: 0;
+  padding: 0 0 40px;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-card.quiz-refresh-card,
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-card.spelling-refresh-card,
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-card.matching-refresh-card,
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-card:not(.learn-refresh-word-card) {
+  width: min(100%, 840px);
+  max-width: 840px;
+  margin: 0 auto;
+  border: 1px solid rgba(79, 124, 255, 0.14);
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at 90% 0%, rgba(126, 166, 255, 0.12), transparent 30%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), #ffffff);
+  box-shadow: 0 22px 46px rgba(79, 124, 255, 0.12);
+  padding: 28px 28px 0;
+  overflow: hidden;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .assessment-study-shell > div:last-child {
+  display: grid;
+  gap: 16px;
+  padding-bottom: 0;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .assessment-refresh-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  text-align: left;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .assessment-refresh-prompt {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #334155;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 850;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .assessment-refresh-prompt::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background:
+    linear-gradient(#4f7cff, #4f7cff) center 18px / 14px 2px no-repeat,
+    linear-gradient(#4f7cff, #4f7cff) center 8px / 10px 2px no-repeat,
+    linear-gradient(135deg, rgba(79, 124, 255, 0.15), rgba(126, 166, 255, 0.2));
+}
+
+.ds-app-layout .learn-refresh-main--assessment .assessment-refresh-source {
+  justify-content: flex-end;
+  margin-top: 0;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .assessment-refresh-source span {
+  border: 1px solid rgba(79, 124, 255, 0.14);
+  background: rgba(79, 124, 255, 0.12);
+  color: #315ef7;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .quiz-refresh-question,
+.ds-app-layout .learn-refresh-main--assessment .spelling-refresh-panel,
+.ds-app-layout .learn-refresh-main--assessment .matching-refresh-board,
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-example-block {
+  width: 100%;
+  margin: 18px 0 0;
+  border: 1px solid rgba(79, 124, 255, 0.14);
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(247, 250, 255, 0.98), #ffffff);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.82);
+}
+
+.ds-app-layout .learn-refresh-main--assessment .quiz-refresh-question {
+  margin-top: 20px;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 10px 20px 18px;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .quiz-refresh-word {
+  color: #0f172a;
+  font-size: clamp(54px, 6vw, 72px);
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-phonetic {
+  color: #64748b;
+  font-weight: 750;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-inline-audio,
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-example-audio {
+  border-color: rgba(79, 124, 255, 0.18);
+  background: rgba(79, 124, 255, 0.1);
+  color: #315ef7;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-quiz-options {
+  margin-top: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-quiz-option {
+  min-height: 60px;
+  border: 1px solid rgba(79, 124, 255, 0.13);
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: none;
+  color: #0f172a;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-quiz-option:hover:not(:disabled) {
+  border-color: rgba(79, 124, 255, 0.34);
+  background: rgba(247, 250, 255, 0.96);
+  transform: translateY(-1px);
+}
+
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-quiz-option-index,
+.ds-app-layout .learn-refresh-main--assessment .matching-refresh-index {
+  border-color: rgba(79, 124, 255, 0.18);
+  background: rgba(79, 124, 255, 0.09);
+  color: #315ef7;
+  font-weight: 900;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-quiz-option-meaning {
+  color: #0f172a;
+  font-size: 18px;
+  font-weight: 850;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-quiz-option-sub {
+  color: #64748b;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-quiz-option.is-correct,
+.ds-app-layout .learn-refresh-main--assessment .matching-refresh-item.is-matched {
+  border-color: rgba(53, 201, 121, 0.38);
+  background: rgba(240, 253, 244, 0.95);
+  color: #166534;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-quiz-option.is-wrong,
+.ds-app-layout .learn-refresh-main--assessment .matching-refresh-item.is-wrong {
+  border-color: rgba(248, 113, 113, 0.34);
+  background: rgba(254, 242, 242, 0.96);
+  color: #b91c1c;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-quiz-option.is-muted {
+  opacity: 0.52;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .quiz-refresh-result,
+.ds-app-layout .learn-refresh-main--assessment .fillblank-refresh-result,
+.ds-app-layout .learn-refresh-main--assessment .spelling-refresh-result,
+.ds-app-layout .learn-refresh-main--assessment .matching-refresh-complete {
+  border-radius: 18px;
+  font-size: 15px;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .spelling-refresh-panel {
+  padding: 22px;
+  margin-top: 18px;
+  border-radius: 18px;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .spelling-refresh-input {
+  border-color: rgba(79, 124, 255, 0.16);
+  border-radius: 18px;
+  color: #0f172a;
+  box-shadow: 0 10px 24px rgba(79, 124, 255, 0.06);
+}
+
+.ds-app-layout .learn-refresh-main--assessment .spelling-refresh-input:focus {
+  border-color: #4f7cff;
+  box-shadow: 0 0 0 4px rgba(79, 124, 255, 0.12);
+}
+
+.ds-app-layout .learn-refresh-main--assessment .spelling-refresh-primary {
+  border-color: #4f7cff;
+  background: linear-gradient(135deg, #4f7cff, #0f68ff);
+  box-shadow: 0 12px 24px rgba(79, 124, 255, 0.18);
+}
+
+.ds-app-layout .learn-refresh-main--assessment .spelling-refresh-secondary {
+  border-color: rgba(79, 124, 255, 0.16);
+  background: rgba(79, 124, 255, 0.08);
+  color: #315ef7;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .spelling-refresh-hint,
+.ds-app-layout .learn-refresh-main--assessment .spelling-refresh-answer {
+  border-color: rgba(79, 124, 255, 0.14);
+  background: #ffffff;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .matching-refresh-board {
+  gap: 16px;
+  padding: 16px;
+  margin-top: 18px;
+  border-radius: 18px;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .matching-refresh-column-title {
+  color: #64748b;
+  font-weight: 850;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .matching-refresh-item {
+  border-color: rgba(79, 124, 255, 0.13);
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(79, 124, 255, 0.05);
+}
+
+.ds-app-layout .learn-refresh-main--assessment .matching-refresh-item:hover:not(:disabled) {
+  border-color: rgba(79, 124, 255, 0.3);
+  background: rgba(247, 250, 255, 0.98);
+}
+
+.ds-app-layout .learn-refresh-main--assessment .matching-refresh-item.is-selected {
+  border-color: #4f7cff;
+  background: rgba(79, 124, 255, 0.1);
+  box-shadow: 0 0 0 4px rgba(79, 124, 255, 0.1);
+  color: #315ef7;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-assessment-dock {
+  position: static;
+  border-top: 1px solid rgba(79, 124, 255, 0.12);
+  background: linear-gradient(180deg, rgba(247, 250, 255, 0.2), rgba(247, 250, 255, 0.78));
+  backdrop-filter: none;
+  margin: 22px -28px 0;
+  padding: 14px 28px;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-assessment-dock-inner {
+  max-width: none;
+  gap: 12px;
+}
+
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-assessment-stat {
+  min-height: 52px;
+  border: 0;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 8px 18px rgba(79, 124, 255, 0.06);
+}
+
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-assessment-stat-value {
+  color: #0f172a;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.dark .assessment-control-card,
+.dark .assessment-back-button,
+.dark .assessment-control-actions .learn-refresh-icon-btn,
+.dark .assessment-content-tools .learn-refresh-side-tool,
+.dark .assessment-content-tools .learn-refresh-icon-btn,
+.dark .ds-app-layout .learn-refresh-main--assessment .learn-refresh-card.quiz-refresh-card,
+.dark .ds-app-layout .learn-refresh-main--assessment .learn-refresh-card.spelling-refresh-card,
+.dark .ds-app-layout .learn-refresh-main--assessment .learn-refresh-card.matching-refresh-card,
+.dark .ds-app-layout .learn-refresh-main--assessment .learn-refresh-card:not(.learn-refresh-word-card),
+.dark .ds-app-layout .learn-refresh-main--assessment .quiz-refresh-question,
+.dark .ds-app-layout .learn-refresh-main--assessment .spelling-refresh-panel,
+.dark .ds-app-layout .learn-refresh-main--assessment .matching-refresh-board,
+.dark .ds-app-layout .learn-refresh-main--assessment .learn-refresh-example-block,
+.dark .ds-app-layout .learn-refresh-main--assessment .learn-refresh-quiz-option,
+.dark .ds-app-layout .learn-refresh-main--assessment .matching-refresh-item,
+.dark .ds-app-layout .learn-refresh-main--assessment .learn-refresh-assessment-stat {
+  border-color: rgba(126, 166, 255, 0.16);
+  background: rgba(17, 24, 39, 0.88);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
+}
+
+.dark .assessment-question-count,
+.dark .assessment-back-button,
+.dark .assessment-control-actions .learn-refresh-icon-btn {
+  color: #e5edf8;
+}
+
+.dark .assessment-progress-track {
+  background: rgba(226, 232, 240, 0.1);
+}
+
+.dark .ds-app-layout .learn-refresh-main--assessment .assessment-refresh-prompt,
+.dark .ds-app-layout .learn-refresh-main--assessment .quiz-refresh-word,
+.dark .ds-app-layout .learn-refresh-main--assessment .learn-refresh-quiz-option-meaning,
+.dark .ds-app-layout .learn-refresh-main--assessment .learn-refresh-assessment-stat-value,
+.dark .ds-app-layout .learn-refresh-main--assessment .spelling-refresh-input,
+.dark .ds-app-layout .learn-refresh-main--assessment .matching-refresh-word-main,
+.dark .ds-app-layout .learn-refresh-main--assessment .matching-refresh-meaning-main {
+  color: #e5edf8;
+}
+
+.dark .ds-app-layout .learn-refresh-main--assessment .assessment-refresh-source span,
+.dark .ds-app-layout .learn-refresh-main--assessment .learn-refresh-quiz-option-index,
+.dark .ds-app-layout .learn-refresh-main--assessment .matching-refresh-index,
+.dark .ds-app-layout .learn-refresh-main--assessment .learn-refresh-inline-audio,
+.dark .ds-app-layout .learn-refresh-main--assessment .learn-refresh-example-audio,
+.dark .ds-app-layout .learn-refresh-main--assessment .spelling-refresh-secondary {
+  border-color: rgba(126, 166, 255, 0.18);
+  background: rgba(126, 166, 255, 0.12);
+  color: #bcd1ff;
+}
+
+@media (max-width: 900px) {
+  .assessment-control-card {
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+    gap: 12px;
+  }
+
+  .assessment-question-count {
+    order: -1;
+  }
+
+  .assessment-back-button,
+  .assessment-control-actions {
+    justify-self: stretch;
+  }
+
+  .assessment-control-actions {
+    justify-content: space-between;
+  }
+
+  .assessment-progress-row {
+    width: 100%;
+  }
+
+  .assessment-content-tools {
+    justify-content: flex-start;
+  }
+
+  .ds-app-layout .learn-refresh-main--assessment .assessment-refresh-top {
+    display: grid;
+  }
+
+  .ds-app-layout .learn-refresh-main--assessment .assessment-refresh-source {
+    justify-content: flex-start;
+  }
+
+  .ds-app-layout .learn-refresh-main--assessment .learn-refresh-card.quiz-refresh-card,
+  .ds-app-layout .learn-refresh-main--assessment .learn-refresh-card.spelling-refresh-card,
+  .ds-app-layout .learn-refresh-main--assessment .learn-refresh-card.matching-refresh-card,
+  .ds-app-layout .learn-refresh-main--assessment .learn-refresh-card:not(.learn-refresh-word-card) {
+    width: 100%;
+    padding: 20px 20px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .assessment-study-shell {
+    gap: 14px;
+  }
+
+  .assessment-control-card {
+    border-radius: 18px;
+    padding: 12px;
+  }
+
+  .assessment-content-tools .learn-refresh-side-tool {
+    flex: 1 1 120px;
+  }
+
+  .assessment-content-tools .learn-refresh-menu-wrap {
+    flex: 1 1 120px;
+    margin-left: 0;
+  }
+
+  .ds-app-layout .learn-refresh-main--assessment .assessment-refresh-prompt {
+    font-size: 22px;
+  }
+
+  .ds-app-layout .learn-refresh-main--assessment .quiz-refresh-question,
+  .ds-app-layout .learn-refresh-main--assessment .spelling-refresh-panel,
+  .ds-app-layout .learn-refresh-main--assessment .matching-refresh-board,
+  .ds-app-layout .learn-refresh-main--assessment .learn-refresh-example-block {
+    margin-top: 14px;
+    border-radius: 18px;
+  }
+
+  .ds-app-layout .learn-refresh-main--assessment .quiz-refresh-word {
+    font-size: clamp(42px, 13vw, 58px);
+  }
+
+  .ds-app-layout .learn-refresh-main--assessment .learn-refresh-assessment-dock {
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 12px 16px;
+  }
+
+  .ds-app-layout .learn-refresh-main--assessment .matching-refresh-board {
+    grid-template-columns: 1fr;
+  }
+
+  .ds-app-layout .learn-refresh-main--assessment .learn-refresh-assessment-dock-inner {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 .dark .auth-transition-panel,
 .dark .voice-settings-dialog,
 .dark .study-hub-plan-card,

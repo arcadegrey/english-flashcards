@@ -37,11 +37,11 @@ function HomeScreen({
   onOpenTodayReview,
   onOpenWrongWords,
   onOpenStatistics,
+  onOpenExamPractice,
   onOpenToeflLevels,
   onOpenIeltsLists,
   onHome,
   onAuthOpen,
-  onOpenMode,
   onOpenReading,
   onOpenReadingSession,
   authLoading = false,
@@ -196,7 +196,7 @@ function HomeScreen({
       id: 'test',
       label: '测试',
       icon: 'test',
-      onClick: () => onOpenMode?.('quiz'),
+      onClick: onOpenExamPractice,
     },
     {
       id: 'stats',
@@ -237,7 +237,7 @@ function HomeScreen({
       title: '做测试',
       meta: '挑战自我，检验学习成效',
       artSrc: UI_ASSETS.target,
-      onClick: () => onOpenMode?.('quiz'),
+      onClick: onOpenExamPractice,
     },
   ];
 

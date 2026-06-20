@@ -90,6 +90,13 @@ Production SaaS level consistency
 - `readingSession` uses `ReadingSessionView` inside shared `AppLayout`, with 阅读 active in navigation. It keeps reading logic, questions, translation, highlighted vocabulary, and word modal behavior unchanged while using the word-learning-style study surface.
 - Reading page-specific controls must stay inside the reading workspace or aside: 返回列表, 显示/收起翻译, 朗读全文, 同步进度, and QuickMenu. Do not add these controls to the global Topbar.
 
+## Exam Practice Behavior
+- `ExamPracticeView` is the test range/mode picker, reached from both sidebar 测试 and Training Center 做测试.
+- 全范围随机 must use the complete vocabulary count and load exam shards on demand; do not fall back to the startup `core.json` count.
+- Internal exam modes are rendered by `LearningView` with `mode !== "learn"` and use the shared `AppLayout` chrome.
+- The internal exam workspace uses a focused shell: control card, thin progress bar, centered answer card, and in-card stats. The global Topbar remains unchanged.
+- The exam control card contains 返回, question count, and QuickMenu only. Account/sync state should stay in the global account chip, not in the exam control card.
+
 ## Responsive Behavior
 - Desktop uses sidebar + topbar + content composition.
 - Desktop sidebar and topbar must stay visually identical across homepage, training center, learning pages, statistics, reading, review, and test surfaces by reusing `Sidebar.jsx` / `Topbar.jsx` directly or through `AppLayout.jsx`.
@@ -115,3 +122,4 @@ Production SaaS level consistency
 - For Training Center desktop UI work, verify `1440x900`: blue hero banner, four main cards, word category panel, reading category panel, Daily Progress, and no horizontal overflow.
 - For reading UI work, verify that clicking the shared sidebar/mobile reading entry lands on Training Center with `#reading-category-panel` open, not on a standalone reading list.
 - For reading session UI work, verify desktop `1440x900` and mobile around `390x844`: no old `.learn-refresh-topbar`, shared chrome is present, 阅读 navigation is active, reading text and actions fit, and there is no horizontal overflow.
+- For exam UI work, verify desktop `1440x900` and mobile around `390x844`: shared chrome is present, 测试 navigation is active, four modes render with the control card/progress/card shell, no “已同步” chip appears in the exam control card, and there is no horizontal overflow.
