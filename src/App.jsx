@@ -2144,8 +2144,9 @@ function AppContent() {
             article={selectedReading}
             mode={mode}
             onBack={handleBackToReadingList}
-            onHome={handleBackToStudyHub}
             onOpenMode={handleOpenModeFromReading}
+            navItems={selectionNavItems}
+            topbarProps={selectionTopbarProps}
             masteredWords={masteredWords}
             wordLookup={vocabularyLookup}
             onMarkAsLearned={setWordAsLearned}

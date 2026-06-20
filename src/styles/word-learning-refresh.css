@@ -5643,3 +5643,359 @@
     display: none;
   }
 }
+
+.reading-session-study-main {
+  width: 100%;
+}
+
+.reading-session-study-layout {
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 360px);
+  gap: 32px;
+}
+
+.reading-session-workspace {
+  min-width: 0;
+}
+
+.reading-session-goal-strip {
+  margin-bottom: 24px;
+}
+
+.reading-session-study-card.learn-refresh-card {
+  position: relative;
+  min-height: 500px;
+  border-color: rgba(126, 166, 255, 0.18);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 50% 6%, rgba(126, 166, 255, 0.12), transparent 32%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.9));
+  padding: 48px 40px 40px;
+  box-shadow:
+    0 28px 80px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
+}
+
+.reading-session-study-card .reading-session-title {
+  max-width: 960px;
+  margin: 0 auto;
+  color: #0b1b4d;
+  font-size: clamp(36px, 3.8vw, 50px);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: 0;
+  text-shadow: 0 10px 24px rgba(79, 124, 255, 0.1);
+}
+
+.reading-session-study-card .reading-session-meta {
+  margin-top: 18px;
+}
+
+.reading-session-study-card .reading-session-chip {
+  min-height: 34px;
+  border-color: rgba(126, 166, 255, 0.22);
+  background: rgba(255, 255, 255, 0.8);
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 800;
+  box-shadow: 0 10px 22px rgba(79, 124, 255, 0.06);
+}
+
+.reading-session-study-card .reading-session-content {
+  margin-top: 28px;
+  border-color: rgba(126, 166, 255, 0.18);
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(247, 250, 255, 0.9), rgba(255, 255, 255, 0.94));
+  padding: 26px 30px;
+}
+
+.reading-session-study-card .reading-session-paragraph {
+  color: #0f172a;
+  font-size: 20px;
+  font-weight: 540;
+  line-height: 1.82;
+}
+
+.reading-session-study-card .reading-token-highlight {
+  border-radius: 9px;
+  background: rgba(79, 124, 255, 0.12);
+  color: #315cff;
+  font-weight: 800;
+  text-decoration-color: rgba(79, 124, 255, 0.45);
+}
+
+.reading-session-study-card .reading-token-highlight:hover {
+  background: rgba(79, 124, 255, 0.18);
+  color: #2447d8;
+}
+
+.reading-session-study-card .reading-session-translation,
+.reading-session-study-card .reading-question-section {
+  max-width: none;
+  border-color: rgba(126, 166, 255, 0.18);
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(247, 250, 255, 0.9), rgba(255, 255, 255, 0.94));
+}
+
+.reading-session-study-card .reading-session-translation {
+  margin-top: 24px;
+  padding: 22px 28px 24px;
+}
+
+.reading-session-study-card .reading-session-translation .learn-refresh-example-cn {
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.reading-session-study-card .reading-question-section {
+  margin-top: 24px;
+  padding: 24px;
+}
+
+.reading-session-study-card .reading-question-title {
+  color: #0f172a;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.reading-session-study-card .reading-question-sub {
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.reading-session-study-card .reading-question-list {
+  gap: 14px;
+}
+
+.reading-session-study-card .reading-question-card {
+  border-color: rgba(126, 166, 255, 0.16);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.84);
+  padding: 18px;
+}
+
+.reading-session-study-card .reading-question-prompt {
+  color: #0f172a;
+  font-size: 17px;
+  font-weight: 850;
+}
+
+.reading-session-study-card .reading-question-option {
+  min-height: 48px;
+  border-color: rgba(126, 166, 255, 0.18);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.92);
+  font-weight: 700;
+}
+
+.reading-session-actions.learn-refresh-bottombar {
+  position: static;
+  z-index: auto;
+  border-top: 0;
+  background: transparent;
+  backdrop-filter: none;
+  padding: 24px 0 0;
+}
+
+.reading-session-actions .learn-refresh-bottombar-inner {
+  max-width: none;
+  grid-template-columns: 1fr 1fr 1.18fr;
+  gap: 16px;
+}
+
+.reading-session-actions .learn-refresh-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 78px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  box-shadow: 0 18px 44px rgba(15, 23, 42, 0.08);
+}
+
+.reading-session-actions .learn-refresh-action-icon {
+  width: 34px;
+  height: 34px;
+  margin-right: 12px;
+  border-radius: 999px;
+  background: rgba(100, 116, 139, 0.12);
+  color: #64748b;
+}
+
+.reading-session-actions .learn-refresh-action-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.reading-session-actions .learn-refresh-action-secondary,
+.reading-session-actions .learn-refresh-action-ghost {
+  border-color: rgba(126, 166, 255, 0.18);
+  background: rgba(255, 255, 255, 0.92);
+  color: #475569;
+}
+
+.reading-session-actions .learn-refresh-action-ghost .learn-refresh-action-icon {
+  background: rgba(79, 124, 255, 0.1);
+  color: #4f7cff;
+}
+
+.reading-session-actions .learn-refresh-action-primary {
+  border-color: transparent;
+  background: linear-gradient(135deg, #2f6dff 0%, #765cff 100%);
+  color: #ffffff;
+  box-shadow: 0 20px 48px rgba(79, 124, 255, 0.3);
+}
+
+.reading-session-actions .learn-refresh-action-primary .learn-refresh-action-icon {
+  background: rgba(255, 255, 255, 0.92);
+  color: #4f7cff;
+}
+
+.reading-session-actions .learn-refresh-action:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  transform: none;
+}
+
+.reading-session-aside .learn-refresh-side-card,
+.reading-session-aside .learn-refresh-side-summary {
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.dark .reading-session-study-card.learn-refresh-card {
+  background:
+    radial-gradient(circle at 50% 6%, rgba(79, 124, 255, 0.17), transparent 32%),
+    #111827;
+}
+
+.dark .reading-session-study-card .reading-session-title,
+.dark .reading-session-study-card .reading-session-paragraph,
+.dark .reading-session-study-card .reading-question-title,
+.dark .reading-session-study-card .reading-question-prompt {
+  color: #e5edf9;
+}
+
+.dark .reading-session-study-card .reading-session-content,
+.dark .reading-session-study-card .reading-session-translation,
+.dark .reading-session-study-card .reading-question-section {
+  background: rgba(15, 23, 42, 0.74);
+}
+
+.dark .reading-session-study-card .reading-session-chip,
+.dark .reading-session-study-card .reading-question-card,
+.dark .reading-session-study-card .reading-question-option,
+.dark .reading-session-actions .learn-refresh-action-secondary,
+.dark .reading-session-actions .learn-refresh-action-ghost,
+.dark .reading-session-aside .learn-refresh-side-card,
+.dark .reading-session-aside .learn-refresh-side-summary {
+  border-color: rgba(126, 166, 255, 0.18);
+  background: rgba(17, 24, 39, 0.86);
+  color: #e5edf9;
+}
+
+@media (max-width: 1180px) {
+  .reading-session-study-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .reading-session-aside {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .reading-session-study-main {
+    padding-bottom: 24px;
+  }
+
+  .reading-session-study-layout {
+    display: block;
+  }
+
+  .reading-session-goal-strip {
+    grid-template-columns: auto auto auto minmax(0, 1fr) auto;
+    gap: 10px;
+    margin-bottom: 16px;
+    border-radius: 22px;
+    padding: 12px 14px;
+  }
+
+  .reading-session-goal-strip .learn-refresh-goal-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 16px;
+  }
+
+  .reading-session-goal-strip .learn-refresh-goal-label,
+  .reading-session-goal-strip strong,
+  .reading-session-goal-strip .learn-refresh-goal-percent {
+    font-size: 15px;
+  }
+
+  .reading-session-study-card.learn-refresh-card {
+    min-height: 0;
+    border-radius: 26px;
+    padding: 32px 18px 22px;
+  }
+
+  .reading-session-study-card .reading-session-title {
+    font-size: clamp(30px, 8vw, 40px);
+    line-height: 1.12;
+  }
+
+  .reading-session-study-card .reading-session-meta {
+    gap: 6px;
+  }
+
+  .reading-session-study-card .reading-session-chip {
+    min-height: 30px;
+    padding: 0 9px;
+    font-size: 12px;
+  }
+
+  .reading-session-study-card .reading-session-content {
+    margin-top: 22px;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .reading-session-study-card .reading-session-paragraph {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .reading-session-actions.learn-refresh-bottombar {
+    position: static;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    padding: 16px 0 0;
+  }
+
+  .reading-session-actions .learn-refresh-bottombar-inner {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .reading-session-actions .learn-refresh-action {
+    min-height: 58px;
+    border-radius: 18px;
+    font-size: 17px;
+  }
+
+  .reading-session-actions .learn-refresh-action-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .reading-session-aside {
+    display: none;
+  }
+}

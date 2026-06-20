@@ -69,6 +69,8 @@ Use generated image assets only for:
 - 背单词 opens the word category panel; 做阅读 opens the reading category panel.
 - The 阅读 navigation entry also returns to Training Center and opens the reading category panel. Do not recreate or route to a standalone reading list page.
 - Reading level cards and article rows must use `src/components/reading/ReadingPicker.jsx`; do not duplicate that UI in page-local components.
+- Reading article sessions use `ReadingSessionView` with the shared `AppLayout` chrome. Do not restore the old local reading topbar; page-specific actions such as 返回列表、显示翻译、朗读全文、同步进度 and QuickMenu belong in the content workspace.
+- Reading article sessions should visually follow the approved word-learning direction: blue-white goal strip, large rounded reading card, compact metadata chips, right-side learning status on desktop, and real bottom action buttons.
 - Do not restore deleted legacy word UI components such as `CategorySelector.jsx`, old `components/Progress.jsx`, or generic `Card.jsx`.
 - Word categories are real compact ModuleCards with decorative blue/yellow 3D assets: 全部单词 / 日常常用 / 四级核心 / 六级核心 / 托福词汇 / 雅思词汇.
 - Do not use emoji for production module/category icons. Use generated transparent PNG assets from `public/images/ui-assets/`.

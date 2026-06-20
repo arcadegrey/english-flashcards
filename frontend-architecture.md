@@ -87,6 +87,8 @@ Production SaaS level consistency
 - Selecting a reading level shows article cards inside the same panel; selecting an article opens `readingSession` through the existing handler.
 - Reading navigation must also open the Training Center reading panel. Do not reintroduce a standalone `ReadingListView` route or page-local reading topbar/list UI.
 - Reading level cards and reading article rows live in `src/components/reading/ReadingPicker.jsx`; reuse this shared component instead of duplicating markup in `HomeScreen`.
+- `readingSession` uses `ReadingSessionView` inside shared `AppLayout`, with 阅读 active in navigation. It keeps reading logic, questions, translation, highlighted vocabulary, and word modal behavior unchanged while using the word-learning-style study surface.
+- Reading page-specific controls must stay inside the reading workspace or aside: 返回列表, 显示/收起翻译, 朗读全文, 同步进度, and QuickMenu. Do not add these controls to the global Topbar.
 
 ## Responsive Behavior
 - Desktop uses sidebar + topbar + content composition.
@@ -95,6 +97,7 @@ Production SaaS level consistency
 - Mobile stacks hero content, cards, and stats without clipping text or controls.
 - Mobile uses <MobileTopbar> and <MobileBottomNav> inside <AppLayout>; do not create page-local mobile nav.
 - Exception: mobile word-learning mode may use the dedicated `.ds-app-layout--mobile-study` chrome so the study screen can match the clean flashcard reference. In that mode, hide generic `MobileTopbar`, hide `MobileBottomNav`, and hide the desktop learning-status aside.
+- Mobile reading sessions are not part of the word-learning exception. They keep the generic `MobileTopbar` and `MobileBottomNav`, with the reading card and actions stacked without horizontal overflow.
 - Mobile bottom nav reuses the same `navItems` callbacks as desktop navigation.
 - View changes should reset window scroll to top so routes opened from deep mobile sections start at the correct position.
 
@@ -111,3 +114,4 @@ Production SaaS level consistency
 - For mobile word-learning UI work, verify around `430x932`: no generic mobile topbar/bottom nav, no learning-progress/continuous-check-in side panels, bottom actions remain horizontal, and there is no horizontal overflow.
 - For Training Center desktop UI work, verify `1440x900`: blue hero banner, four main cards, word category panel, reading category panel, Daily Progress, and no horizontal overflow.
 - For reading UI work, verify that clicking the shared sidebar/mobile reading entry lands on Training Center with `#reading-category-panel` open, not on a standalone reading list.
+- For reading session UI work, verify desktop `1440x900` and mobile around `390x844`: no old `.learn-refresh-topbar`, shared chrome is present, 阅读 navigation is active, reading text and actions fit, and there is no horizontal overflow.

@@ -116,6 +116,13 @@ Rules:
 - Bottom actions stay in one horizontal row and must remain reachable above the safe area.
 - The word card, example text, audio buttons, progress bar, and action buttons remain real components.
 
+## Reading Session
+- Reading article pages use the same blue-white learning visual language as word learning, not the old centered white article page.
+- Desktop reading sessions keep the shared `AppLayout` sidebar/topbar, with 阅读 active in the sidebar and only the standard topbar slots on the right.
+- The reading workspace uses a goal strip for 难词掌握, a large rounded article card, compact metadata chips, a right-side reading status stack, and real action buttons for 返回列表 / 显示翻译 / 朗读全文.
+- Reading text, translation, questions, highlighted vocabulary, progress ring, and action buttons must remain real components.
+- Mobile reading sessions use the generic mobile app shell and bottom nav; only mobile word-learning uses the dedicated study chrome exception.
+
 ## Mobile Training Cards
 - Training module cards use a consistent white card surface in light mode.
 - Do not use emoji as production card icons when decorative UI assets exist.

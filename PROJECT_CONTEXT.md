@@ -32,7 +32,7 @@
 - `toeflLevels` / `toeflLists`：托福词汇按 Level / List 分层选择。
 - `ieltsTopics` / `ieltsLists`：雅思词汇按主题 / List 分层选择；当前已导入完整 List 1-56，按 20 个主题分组：自然地理、植物研究、动物保护、太空探索、学校教育、科技发明、文化历史、语言演化、娱乐运动、物品材料、时尚潮流、饮食健康、建筑场所、交通旅游、国家政府、社会经济、法律法规、征战沙场、社会关系、行为动作。
 - `learn`：统一学习容器，由 `LearningView` 根据 mode 渲染学习卡片、测验、填空、拼写或连线。
-- `readingSession`：文章阅读练习；文章页支持阅读题作答和反馈。阅读等级和文章选择不再有独立旧列表页，统一通过训练中心的 `ReadingPickerContent` inline 面板进入。
+- `readingSession`：文章阅读练习；文章页使用共享 `AppLayout` 和背单词式学习卡视觉，支持难词掌握目标条、正文阅读、全文翻译、阅读题作答、点词弹窗和反馈。阅读等级和文章选择不再有独立旧列表页，统一通过训练中心的 `ReadingPickerContent` inline 面板进入。
 - `todayReview` / `wrongWords` / `learnedWords` / `masteredWords`：复习、错题、已学习、已掌握集合页。
 - `statistics`：学习统计页。
 - `examPractice`：考试练习模式选择页。
@@ -51,6 +51,7 @@
 - 首页设计语言已沉淀到 4 个规范文件：`agents.md`、`design-system.md`、`component-system.md`、`frontend-architecture.md`。后续 UI 改造需要先遵守这些文档，再落到代码。
 - 首页当前结构是 `AppLayout -> Sidebar + Topbar -> HeroCard -> PlanStatusCards -> StatsRow -> Status summary`。
 - 训练中心当前结构是 `AppLayout -> Sidebar + Topbar -> HeroCard -> main ModuleCards -> inline word/reading picker panels -> MotivationBand -> StatsRow`。
+- 阅读正文页当前结构是 `AppLayout -> Sidebar + Topbar -> 难词掌握目标条 -> 大阅读卡 -> 阅读状态侧栏 -> 底部操作按钮`。不要恢复旧的阅读局部 topbar；返回列表、显示翻译、朗读全文、同步进度和 QuickMenu 都放在内容区。
 - 训练中心当前不保留搜索栏；不要在 topbar 或内容区重新加入搜索，除非后续明确成为产品需求。
 - 左侧导航标签保持简洁：今日计划、训练中心、单词、阅读、复习、测试、统计。
 - 手机端首页/训练中心已改为 app 化结构：隐藏桌面侧边栏，使用 `MobileTopbar` + 浮动 `MobileBottomNav`，底部主入口为 今日 / 训练 / 统计 / 我的。移动端仍复用同一套 `navItems` 回调，不能另写页面本地导航。
@@ -69,6 +70,7 @@
   - `src/components/modules/LearningModules.jsx`：学习模块入口组件。
   - `src/components/reading/ReadingPicker.jsx`：阅读等级卡和文章列表共享组件；训练中心和所有阅读入口都调用这一套。
   - `src/components/reading/readingPickerModel.js`：阅读等级分组和筛选 helper。
+  - `src/components/ReadingSessionView.jsx`：阅读正文训练页，使用共享 `AppLayout` 和背单词式学习卡结构，保留阅读题、翻译、点词和同步逻辑。
   - `src/components/WordCard.jsx`：当前单词学习卡组件。旧泛名 `Card.jsx` 已重命名，避免误认为旧 UI 残留。
   - `src/design-system/tokens.css`：当前首页 SaaS 视觉 token、布局、卡片、按钮、进度和响应式样式。
 - 透明装饰资产位于 `public/images/ui-assets/`。这些资产只用于插画和图标，不能承载中文文案、进度数字、按钮或导航。
@@ -194,6 +196,7 @@
 ## 阅读功能状态
 
 - 阅读入口现在统一由训练中心的 inline `ReadingPickerContent` 承载：先按 CEFR 等级展示四张轻量阅读等级卡，再进入纵向文章列表。不要恢复旧的独立阅读列表页面或旧横排文章卡。
+- 阅读正文页已升级为蓝白学习卡风格：共享桌面侧栏/顶栏，移动端保留通用 `MobileTopbar` 和 `MobileBottomNav`；正文页不再使用旧的局部阅读 topbar。
 - 阅读正文会基于词库高亮未掌握词，点击可打开单词详情并标记学习/掌握。
 - 阅读文章可包含 `questions`，`ReadingSessionView` 会渲染“阅读题”，选择选项后显示正确/错误和解析。
 - 首页今日计划会优先推荐一篇考试风格阅读；当前推荐策略优先选 IELTS B2，其次 TOEFL，其次任意带 `examType` 的阅读。点击推荐阅读会直接进入 `readingSession`。

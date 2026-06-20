@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import QuickMenu from './QuickMenu';
+import AppLayout from './layout/AppLayout';
 import { speak, speakWord } from '../utils/speech';
 import { isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from '../utils/readingText';
 import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
@@ -42,8 +43,9 @@ function ReadingSessionView({
   article,
   mode = 'learn',
   onBack,
-  onHome,
   onOpenMode,
+  navItems = [],
+  topbarProps = {},
   masteredWords = [],
   wordLookup,
   onMarkAsLearned,
@@ -113,6 +115,15 @@ function ReadingSessionView({
       unmasteredCount: Math.max(totalTracked - masteredCount, 0),
     };
   }, [article?.content, masteredWordSet, wordLookup]);
+  const readingProgressPercent =
+    readingStats.totalTracked > 0
+      ? Math.round((readingStats.masteredCount / readingStats.totalTracked) * 100)
+      : 0;
+  const articleMinutes = article?.estimatedMinutes || 1;
+  const layoutTitle = '阅读训练';
+  const layoutSubtitle = article
+    ? `${article.title} · 难词掌握 ${readingStats.masteredCount}/${readingStats.totalTracked}`
+    : '选择文章后开始阅读';
 
   const handleSpeakArticle = () => {
     if (!article?.content) return;
@@ -214,166 +225,276 @@ function ReadingSessionView({
 
   if (!article) {
     return (
-      <div className="learn-refresh-page">
-        <main className="learn-refresh-main">
-          <article className="learn-refresh-card learn-refresh-card-enter">
+      <AppLayout
+        active="reading"
+        navItems={navItems}
+        title={layoutTitle}
+        subtitle={layoutSubtitle}
+        topbarProps={topbarProps}
+      >
+        <div className="reading-session-study-main">
+          <article className="learn-refresh-card reading-session-study-card learn-refresh-card-enter">
             <p className="learn-refresh-empty">未找到阅读文章，请返回阅读列表重试。</p>
           </article>
-        </main>
-      </div>
+        </div>
+      </AppLayout>
     );
   }
 
   return (
-    <div className="learn-refresh-page">
-      <header className="learn-refresh-topbar">
-        <div className="learn-refresh-topbar-inner">
-          <div className="learn-refresh-left-actions">
-            <button type="button" className="learn-refresh-back" onClick={onBack} aria-label="返回阅读列表">
-              <span aria-hidden="true">←</span>
-              <span>返回</span>
-            </button>
-            <button type="button" className="learn-refresh-home-btn" onClick={onHome} aria-label="回到首页">
-              <span aria-hidden="true">🏠</span>
-            </button>
-          </div>
-
-          <div className="learn-refresh-progress">
-            <p className="learn-refresh-progress-main">
-              {readingStats.masteredCount} / {readingStats.totalTracked}
-            </p>
-            <p className="learn-refresh-progress-sub">难词掌握</p>
-          </div>
-
-          <div className="learn-refresh-top-actions">
-            <button
-              type="button"
-              className="learn-refresh-icon-btn"
-              onClick={handleSyncAccount}
-              aria-label="同步账号"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M20 6v5h-5" />
-                <path d="M4 18v-5h5" />
-                <path d="M6.2 9A7 7 0 0118.5 7.5L20 11" />
-                <path d="M17.8 15A7 7 0 015.5 16.5L4 13" />
-              </svg>
-            </button>
-            <button
-              type="button"
-              className="learn-refresh-icon-btn"
-              onClick={handleSpeakArticle}
-              aria-label="朗读全文"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M3 9v6h4l5 4V5L7 9H3z" />
-                <path d="M16.5 8.5a4.5 4.5 0 010 7" />
-                <path d="M19.5 6a8 8 0 010 12" />
-              </svg>
-            </button>
-
-            <QuickMenu
-              mode={mode}
-              onOpenMode={onOpenMode}
-              onOpenReading={onBack}
-              onSlowSpeechChange={setToast}
-            />
-          </div>
-        </div>
-      </header>
-
-      <main className="learn-refresh-main reading-session-main">
-        <section className="learn-refresh-card learn-refresh-card-enter reading-session-card">
-          <header className="reading-session-header">
-            <h1 className="reading-session-title">{article.title}</h1>
-            <div className="reading-session-meta">
-              <span className="reading-session-chip">{article.level || 'B1'}</span>
-              <span className="reading-session-chip">{article.estimatedMinutes || 1} 分钟</span>
-              <span className="reading-session-chip">{readingStats.unmasteredCount} 个未掌握词</span>
-              {readingQuestions.length > 0 && (
-                <span className="reading-session-chip">{readingQuestions.length} 道阅读题</span>
-              )}
+    <AppLayout
+      active="reading"
+      navItems={navItems}
+      title={layoutTitle}
+      subtitle={layoutSubtitle}
+      topbarProps={topbarProps}
+    >
+      <div className="reading-session-study-main">
+        <div className="learn-refresh-study-layout reading-session-study-layout">
+          <section className="learn-refresh-study-workspace reading-session-workspace" aria-label="阅读训练">
+            <div className="learn-refresh-goal-strip reading-session-goal-strip">
+              <span className="learn-refresh-goal-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M5 5.5A2.5 2.5 0 0 1 7.5 3H20v16H7.5A2.5 2.5 0 0 0 5 21.5Z" />
+                  <path d="M5 5.5v16" />
+                  <path d="M9 7h7" />
+                  <path d="M9 11h6" />
+                </svg>
+              </span>
+              <span className="learn-refresh-goal-label">难词掌握</span>
+              <strong>{readingStats.masteredCount}/{readingStats.totalTracked}</strong>
+              <div className="learn-refresh-goal-track" aria-hidden="true">
+                <span style={{ width: `${readingProgressPercent}%` }} />
+              </div>
+              <span className="learn-refresh-goal-percent">{readingProgressPercent}%</span>
             </div>
-          </header>
 
-          <section className="reading-session-content">{contentBlocks}</section>
+            <article className="learn-refresh-card learn-refresh-card-enter reading-session-card reading-session-study-card">
+              <header className="reading-session-header">
+                <h1 className="reading-session-title">{article.title}</h1>
+                <div className="reading-session-meta">
+                  <span className="reading-session-chip">{article.level || 'B1'}</span>
+                  <span className="reading-session-chip">{articleMinutes} 分钟</span>
+                  <span className="reading-session-chip">{readingStats.unmasteredCount} 个未掌握词</span>
+                  {readingQuestions.length > 0 && (
+                    <span className="reading-session-chip">{readingQuestions.length} 道阅读题</span>
+                  )}
+                </div>
+              </header>
 
-          {article.translation && (
-            <section className="learn-refresh-example-block reading-session-translation">
-              <div className="learn-refresh-example-head">
-                <span className="learn-refresh-example-label">全文翻译</span>
+              <section className="reading-session-content">{contentBlocks}</section>
+
+              {article.translation && (
+                <section className="learn-refresh-example-block reading-session-translation">
+                  <div className="learn-refresh-example-head">
+                    <span className="learn-refresh-example-label">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 4h9a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3V4Z" />
+                        <path d="M9 8h5" />
+                        <path d="M9 12h6" />
+                      </svg>
+                      全文翻译
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => setShowTranslation((prev) => !prev)}
+                      className="learn-refresh-example-audio"
+                    >
+                      {showTranslation ? '收起翻译' : '显示翻译'}
+                    </button>
+                  </div>
+                  {showTranslation && <p className="learn-refresh-example-cn">{article.translation}</p>}
+                </section>
+              )}
+
+              {readingQuestions.length > 0 && (
+                <section className="reading-question-section" aria-label="阅读题">
+                  <div className="reading-question-head">
+                    <h2 className="reading-question-title">阅读题</h2>
+                    <p className="reading-question-sub">根据文章选择最合适的答案。</p>
+                  </div>
+
+                  <div className="reading-question-list">
+                    {readingQuestions.map((question, questionIndex) => {
+                      const answerState = questionAnswers[question.id];
+
+                      return (
+                        <article key={question.id} className="reading-question-card">
+                          <p className="reading-question-prompt">
+                            {questionIndex + 1}. {question.prompt}
+                          </p>
+                          <div className="reading-question-options">
+                            {question.options.map((option) => {
+                              const isSelected = answerState?.selected === option.id;
+                              const isCorrectAnswer =
+                                Boolean(question.answer) &&
+                                option.id.toLowerCase() === question.answer.toLowerCase();
+
+                              return (
+                                <button
+                                  key={option.id}
+                                  type="button"
+                                  className={[
+                                    'reading-question-option',
+                                    isSelected ? 'is-selected' : '',
+                                    isSelected && answerState?.isCorrect === true ? 'is-correct' : '',
+                                    isSelected && answerState?.isCorrect === false ? 'is-wrong' : '',
+                                    answerState && isCorrectAnswer ? 'is-answer' : '',
+                                  ]
+                                    .filter(Boolean)
+                                    .join(' ')}
+                                  onClick={() =>
+                                    handleSelectQuestionOption(question.id, option.id, question.answer)
+                                  }
+                                >
+                                  <span className="reading-question-option-key">{option.id}</span>
+                                  <span>{option.label}</span>
+                                </button>
+                              );
+                            })}
+                          </div>
+                          {answerState && question.answer && (
+                            <p className="reading-question-feedback">
+                              {answerState.isCorrect ? '回答正确' : `正确答案：${question.answer}`}
+                              {question.explanation ? `。${question.explanation}` : ''}
+                            </p>
+                          )}
+                        </article>
+                      );
+                    })}
+                  </div>
+                </section>
+              )}
+            </article>
+
+            <footer className="learn-refresh-bottombar reading-session-actions">
+              <div className="learn-refresh-bottombar-inner">
                 <button
                   type="button"
-                  onClick={() => setShowTranslation((prev) => !prev)}
-                  className="learn-refresh-example-audio"
+                  className="learn-refresh-action learn-refresh-action-secondary"
+                  onClick={onBack}
                 >
-                  {showTranslation ? '收起翻译' : '显示翻译'}
+                  <span className="learn-refresh-action-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="m15 18-6-6 6-6" />
+                    </svg>
+                  </span>
+                  <span>返回列表</span>
+                </button>
+                <button
+                  type="button"
+                  className="learn-refresh-action learn-refresh-action-ghost"
+                  onClick={() => setShowTranslation((prev) => !prev)}
+                  disabled={!article.translation}
+                >
+                  <span className="learn-refresh-action-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M4 5h9a3 3 0 0 1 3 3v11H7a3 3 0 0 1-3-3V5Z" />
+                      <path d="M8 9h5" />
+                      <path d="M8 13h4" />
+                    </svg>
+                  </span>
+                  <span>{article.translation ? (showTranslation ? '收起翻译' : '显示翻译') : '暂无翻译'}</span>
+                </button>
+                <button
+                  type="button"
+                  className="learn-refresh-action learn-refresh-action-primary"
+                  onClick={handleSpeakArticle}
+                >
+                  <span className="learn-refresh-action-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M3 9v6h4l5 4V5L7 9H3z" />
+                      <path d="M16.5 8.5a4.5 4.5 0 0 1 0 7" />
+                      <path d="M19.5 6a8 8 0 0 1 0 12" />
+                    </svg>
+                  </span>
+                  <span>朗读全文</span>
                 </button>
               </div>
-              {showTranslation && <p className="learn-refresh-example-cn">{article.translation}</p>}
-            </section>
-          )}
+            </footer>
+          </section>
 
-          {readingQuestions.length > 0 && (
-            <section className="reading-question-section" aria-label="阅读题">
-              <div className="reading-question-head">
-                <h2 className="reading-question-title">阅读题</h2>
-                <p className="reading-question-sub">根据文章选择最合适的答案。</p>
+          <aside className="learn-refresh-study-aside reading-session-aside" aria-label="阅读状态">
+            <div className="learn-refresh-side-tools">
+              <button type="button" className="learn-refresh-side-tool" onClick={handleSyncAccount}>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 6v5h-5" />
+                  <path d="M4 18v-5h5" />
+                  <path d="M6.2 9A7 7 0 0 1 18.5 7.5L20 11" />
+                  <path d="M17.8 15A7 7 0 0 1 5.5 16.5L4 13" />
+                </svg>
+                <span>同步进度</span>
+              </button>
+              <QuickMenu
+                mode={mode}
+                onOpenMode={onOpenMode}
+                onOpenReading={onBack}
+                onSlowSpeechChange={setToast}
+              />
+            </div>
+
+            <div className="learn-refresh-side-summary">
+              <div className="learn-refresh-side-row">
+                <span className="learn-refresh-side-icon is-target" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="8" />
+                    <circle cx="12" cy="12" r="3" />
+                    <path d="m15.5 8.5 3-3" />
+                  </svg>
+                </span>
+                <span>未掌握词</span>
+                <strong>{readingStats.unmasteredCount}</strong>
               </div>
-
-              <div className="reading-question-list">
-                {readingQuestions.map((question, questionIndex) => {
-                  const answerState = questionAnswers[question.id];
-
-                  return (
-                    <article key={question.id} className="reading-question-card">
-                      <p className="reading-question-prompt">
-                        {questionIndex + 1}. {question.prompt}
-                      </p>
-                      <div className="reading-question-options">
-                        {question.options.map((option) => {
-                          const isSelected = answerState?.selected === option.id;
-                          const isCorrectAnswer =
-                            Boolean(question.answer) &&
-                            option.id.toLowerCase() === question.answer.toLowerCase();
-
-                          return (
-                            <button
-                              key={option.id}
-                              type="button"
-                              className={[
-                                'reading-question-option',
-                                isSelected ? 'is-selected' : '',
-                                isSelected && answerState?.isCorrect === true ? 'is-correct' : '',
-                                isSelected && answerState?.isCorrect === false ? 'is-wrong' : '',
-                                answerState && isCorrectAnswer ? 'is-answer' : '',
-                              ]
-                                .filter(Boolean)
-                                .join(' ')}
-                              onClick={() =>
-                                handleSelectQuestionOption(question.id, option.id, question.answer)
-                              }
-                            >
-                              <span className="reading-question-option-key">{option.id}</span>
-                              <span>{option.label}</span>
-                            </button>
-                          );
-                        })}
-                      </div>
-                      {answerState && question.answer && (
-                        <p className="reading-question-feedback">
-                          {answerState.isCorrect ? '回答正确' : `正确答案：${question.answer}`}
-                          {question.explanation ? `。${question.explanation}` : ''}
-                        </p>
-                      )}
-                    </article>
-                  );
-                })}
+              <div className="learn-refresh-side-row">
+                <span className="learn-refresh-side-icon is-flame" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M5 4h14v16H5z" />
+                    <path d="M8 8h8" />
+                    <path d="M8 12h7" />
+                  </svg>
+                </span>
+                <span>阅读时长</span>
+                <strong>{articleMinutes} 分</strong>
               </div>
-            </section>
-          )}
-        </section>
-      </main>
+              <div className="learn-refresh-side-row">
+                <span className="learn-refresh-side-icon is-star" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="m12 3 2.6 5.4 5.9.8-4.2 4.1 1 5.8L12 16.4 6.7 19.1l1-5.8-4.2-4.1 5.9-.8L12 3Z" />
+                  </svg>
+                </span>
+                <span>阅读题</span>
+                <strong>{readingQuestions.length}</strong>
+              </div>
+            </div>
+
+            <div className="learn-refresh-side-card">
+              <h2>阅读进度</h2>
+              <div className="learn-refresh-ring-row">
+                <div className="learn-refresh-ring" style={{ '--study-progress': `${readingProgressPercent}%` }}>
+                  <div>
+                    <strong>{readingProgressPercent}%</strong>
+                    <span>难词掌握</span>
+                  </div>
+                </div>
+                <dl className="learn-refresh-ring-stats">
+                  <div>
+                    <dt><span className="is-blue" />已掌握</dt>
+                    <dd>{readingStats.masteredCount}</dd>
+                  </div>
+                  <div>
+                    <dt><span className="is-purple" />总词数</dt>
+                    <dd>{readingStats.totalTracked}</dd>
+                  </div>
+                  <div>
+                    <dt><span className="is-gray" />未掌握</dt>
+                    <dd>{readingStats.unmasteredCount}</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
 
       {activeWord && (
         <div ref={wordModalRef} className="reading-word-modal-layer" role="dialog" aria-modal="true" aria-label="单词详情">
@@ -435,8 +556,7 @@ function ReadingSessionView({
           {toast}
         </div>
       )}
-
-    </div>
+    </AppLayout>
   );
 }
 

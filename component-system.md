@@ -64,6 +64,7 @@ Progress rules:
 <ReviewModule>
 <TestModule>
 <ReadingPickerContent>
+<ReadingSessionView>
 <WordCard>
 
 Homepage modules:
@@ -76,6 +77,8 @@ Homepage modules:
 - On desktop and mobile, 做阅读 opens the inline reading category picker instead of jumping to the old reading list first.
 - The sidebar/mobile 阅读 navigation also opens the Training Center reading picker. It must not open a separate reading list page.
 - Reading picker UI is shared through `src/components/reading/ReadingPicker.jsx`: reading level cards and article rows must be edited there, then reused by Training Center.
+- Reading article UI lives in `src/components/ReadingSessionView.jsx`. It must reuse `AppLayout`, `Sidebar`, `Topbar`, and `MobileAppChrome`; do not reintroduce a page-local desktop reading topbar.
+- Reading article content follows the word-learning study structure: goal strip, large study card, desktop status aside, real bottom action buttons, and QuickMenu inside the content area.
 - StatsRow is a unified Daily Progress component with a title section, three real stats, aligned icon/value/label groups, and subtle dividers.
 
 Mobile word-learning module:
