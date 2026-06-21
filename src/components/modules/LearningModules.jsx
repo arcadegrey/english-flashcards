@@ -73,7 +73,7 @@ export function PlanStatusCards({
         label="复习"
         title={reviewComplete ? '到期词已清空' : `${reviewCount} 个词到期`}
         meta={reviewComplete ? '保持节奏' : '优先完成'}
-        icon="✅"
+        iconSrc={UI_ASSETS.review}
         illustrationSrc={UI_ASSETS.review}
         actionLabel={reviewComplete ? '已完成' : '开始复习'}
         onAction={onReview}
@@ -82,7 +82,7 @@ export function PlanStatusCards({
         label="新词"
         title={`${newWordProgress} / ${newWordTarget} 个`}
         meta={`${wordCount} 词可学`}
-        icon="✨"
+        iconSrc={UI_ASSETS.newWords}
         illustrationSrc={UI_ASSETS.newWords}
         progress={progress}
         actionLabel="调整计划"

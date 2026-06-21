@@ -14,6 +14,7 @@ import StudyHub from './components/StudyHub'
 import HomeScreen from './components/HomeScreen'
 import LearningView from './components/LearningView'
 import Statistics from './components/Statistics'
+import AppLayout from './components/layout/AppLayout'
 import WordCollectionView from './components/WordCollectionView'
 import ToeflSelectionView from './components/ToeflSelectionView'
 import ReadingSessionView from './components/ReadingSessionView'
@@ -2323,57 +2324,22 @@ function AppContent() {
         )
       case 'statistics':
         return (
-          <div className="learn-refresh-page learn-refresh-page--dashboard">
-            <header className="learn-refresh-topbar">
-              <div className="learn-refresh-topbar-inner">
-                <div className="learn-refresh-left-actions">
-                  <button type="button" onClick={handleBackToStudyHub} className="learn-refresh-back">
-                    <span>←</span>
-                    <span>返回</span>
-                  </button>
-                  <button
-                    type="button"
-                    className="learn-refresh-home-btn"
-                    onClick={handleBackToStudyHub}
-                    aria-label="回到首页"
-                  >
-                    <span aria-hidden="true">🏠</span>
-                  </button>
-                </div>
-                <div className="learn-refresh-progress">
-                  <p className="learn-refresh-progress-main">学习统计</p>
-                  <p className="learn-refresh-progress-sub">学习闭环</p>
-                </div>
-                <div className="learn-refresh-top-actions">
-                  <button
-                    type="button"
-                    className="learn-refresh-icon-btn"
-                    onClick={handleHomeSync}
-                    aria-label="同步账号"
-                  >
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M20 6v5h-5" />
-                      <path d="M4 18v-5h5" />
-                      <path d="M6.2 9A7 7 0 0118.5 7.5L20 11" />
-                      <path d="M17.8 15A7 7 0 015.5 16.5L4 13" />
-                    </svg>
-                  </button>
-                  <span className="learn-refresh-topbar-spacer" aria-hidden="true" />
-                  <span className="learn-refresh-topbar-spacer" aria-hidden="true" />
-                </div>
-              </div>
-            </header>
-            <main className="learn-refresh-main learn-refresh-main--dashboard">
-              <Statistics
-                learnedWords={learnedWords}
-                masteredWords={masteredWords}
-                totalWords={allVocabulary.length}
-                wrongWords={wrongWords}
-                studyHistory={studyHistory}
-                dueReviewCount={todayReviewWordList.length}
-              />
-            </main>
-          </div>
+          <AppLayout
+            active="stats"
+            navItems={selectionNavItems}
+            title="统计"
+            subtitle="用真实学习记录追踪复习、错题和掌握进度。"
+            topbarProps={selectionTopbarProps}
+          >
+            <Statistics
+              learnedWords={learnedWords}
+              masteredWords={masteredWords}
+              totalWords={allVocabulary.length}
+              wrongWords={wrongWords}
+              studyHistory={studyHistory}
+              dueReviewCount={todayReviewWordList.length}
+            />
+          </AppLayout>
         )
       case 'todayReview':
         return (
