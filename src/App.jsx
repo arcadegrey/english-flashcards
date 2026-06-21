@@ -368,7 +368,7 @@ function AppContent() {
 
   const [view, setView] = useState('studyHub')
   const [mode, setMode] = useState('learn')
-  const [examScope, setExamScope] = useState('learned')
+  const [examScope, setExamScope] = useState('all')
   const [examPreparing, setExamPreparing] = useState(false)
   const [assessmentBackTarget, setAssessmentBackTarget] = useState('home')
   const [selectedCategory, setSelectedCategory] = useState('all')
