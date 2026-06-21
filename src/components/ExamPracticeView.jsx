@@ -4,14 +4,7 @@ import QuickMenu from './QuickMenu';
 const EXAM_MODES = [
   {
     id: 'quiz',
-    icon: (
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M6 5h12" />
-        <path d="M6 10h8" />
-        <path d="M6 15h6" />
-        <path d="M16 14l2 2 4-5" />
-      </svg>
-    ),
+    iconSrc: '/images/ui-assets/exam-mode-quiz-blue-v1.png',
     title: '测验',
     meta: '选择正确释义',
     helper: '适合快速确认单词含义，训练即时反应。',
@@ -19,15 +12,7 @@ const EXAM_MODES = [
   },
   {
     id: 'fillblank',
-    icon: (
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M4 6h16" />
-        <path d="M4 12h6" />
-        <path d="M14 12h6" />
-        <path d="M4 18h16" />
-        <path d="M11 12h2" />
-      </svg>
-    ),
+    iconSrc: '/images/ui-assets/exam-mode-fillblank-violet-v1.png',
     title: '填空',
     meta: '根据例句补全单词',
     helper: '把词义放回语境里，强化真实使用感。',
@@ -35,15 +20,7 @@ const EXAM_MODES = [
   },
   {
     id: 'spelling',
-    icon: (
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M4 18V6" />
-        <path d="M4 6h7" />
-        <path d="M4 12h6" />
-        <path d="M15 18l4-12" />
-        <path d="M13.8 14h6.4" />
-      </svg>
-    ),
+    iconSrc: '/images/ui-assets/exam-mode-spelling-cyan-v1.png',
     title: '拼写',
     meta: '听发音拼写单词',
     helper: '连接发音与字形，适合考前查漏。',
@@ -51,16 +28,7 @@ const EXAM_MODES = [
   },
   {
     id: 'matching',
-    icon: (
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M8 7h.01" />
-        <path d="M8 17h.01" />
-        <path d="M16 7h.01" />
-        <path d="M16 17h.01" />
-        <path d="M8 7c4 0 4 10 8 10" />
-        <path d="M16 7c-4 0-4 10-8 10" />
-      </svg>
-    ),
+    iconSrc: '/images/ui-assets/exam-mode-matching-orange-v1.png',
     title: '连线',
     meta: '单词和释义配对',
     helper: '用配对节奏做整组复盘，适合大范围扫盲。',
@@ -235,7 +203,9 @@ function ExamPracticeView({
                 onClick={() => onSelectMode?.(item.id, selectedScope)}
                 disabled={isPreparing || selectedScopeCount === 0}
               >
-                <span className="exam-mode-icon">{item.icon}</span>
+                <span className="exam-mode-icon" aria-hidden="true">
+                  <img src={item.iconSrc} alt="" loading="lazy" />
+                </span>
                 <span className="exam-mode-copy">
                   <strong>{item.title}</strong>
                   <span>{item.meta}</span>

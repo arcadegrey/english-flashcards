@@ -49,6 +49,8 @@ AppLayout -> Sidebar + Topbar -> HeroCard -> PlanStatusCards -> StatsRow -> Stat
 # QUALITY GOAL
 Production SaaS level consistency
 
+The current Test page is the approved global visual benchmark. Use `test-page-visual-language.md` before polishing older pages.
+
 --------------------------------
 # IMPLEMENTATION RULES
 
@@ -56,6 +58,7 @@ Production SaaS level consistency
 - Keep layout, text, buttons, cards, navigation, progress, and stats as real frontend code.
 - Keep hover, click, focus, and responsive states code-native.
 - Use shared tokens and CSS classes from the design system.
+- When restyling existing pages, move them toward the Test page's white/tinted panel system, blue selected states, semantic pastel cards, and soft 3D decorative PNG assets without changing behavior.
 
 ## Assets
 - Store UI artwork in `public/images/ui-assets/`.

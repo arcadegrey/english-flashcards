@@ -3,6 +3,7 @@
 --------------------------------
 # COLORS
 Primary: #4F7CFF
+Primary active: #2F6DFF
 Secondary: #7EA6FF
 Accent yellow: #FFC857
 Background: #F7FAFF
@@ -15,7 +16,11 @@ Orange: warning
 Blue: reading/active
 
 Rules:
+- The current Test page is the approved global visual reference. See `test-page-visual-language.md`.
 - Primary learning surfaces use blue gradients based on #4F7CFF / #7EA6FF.
+- Most page panels should be white or very softly tinted white, with subtle blue borders and soft blue shadows.
+- Strong blue is reserved for primary buttons, active sidebar items, selected cards, progress bars, and key status pills.
+- Violet, cyan, orange, and green are local semantic accents for modes/states, not page-wide themes.
 - Yellow is an accent only: bookmark tabs, sparkles, small highlights, stars, or selected-state indicators. Do not make yellow the main surface color.
 - Green is reserved for success/completion states.
 - Orange/yellow is reserved for streaks, goals, bookmark accents, sparkles, or highlight stats.
@@ -50,7 +55,7 @@ Rules:
 - Cards should separate clearly from the background through soft elevation.
 - Use subtle inset lines only when needed for definition.
 - Keep the interface light, premium, and calm.
-- Current training-center style is blue-white, lightweight, and motivational: blue hero banner, white cards, subtle blue borders, soft shadows, and yellow only as small accent details.
+- Current global style follows the Test page: clean white cards, very light blue app background, subtle tinted borders, soft shadows, strong blue selected states, and small pastel semantic accents.
 
 --------------------------------
 # ICON STYLE
@@ -125,12 +130,14 @@ Rules:
 - Mobile reading sessions use the generic mobile app shell and bottom nav; only mobile word-learning uses the dedicated study chrome exception.
 
 ## Exam Session
+- The Test page is the global style benchmark for all page polish: large white panels, soft blue app background, selected blue cards, real progress bars, semantic pastel module cards, and transparent 3D PNG icons.
 - Exam answer pages use the shared `AppLayout` sidebar/topbar, with 测试 active in the sidebar and only the standard topbar slots on the right.
 - The exam workspace follows: control card -> thin progress bar -> centered answer card.
 - The control card contains only 返回, current question count, and QuickMenu. Do not show "已同步" here because login/sync state belongs to the global account chip.
 - The answer card width is narrower than the page shell and centered, matching the focused quiz reference.
 - Four internal modes share this shell: 测验 / 填空 / 拼写 / 连线. Their question text, audio, options, answer feedback, and stats remain real components.
 - Exam page-specific controls must stay in the workspace, not in the global Topbar.
+- Reuse this page's panel/card/color rhythm when updating 今日计划, 训练中心, 阅读, 复习, 统计, and word collection pages.
 
 ## Mobile Training Cards
 - Training module cards use a consistent white card surface in light mode.

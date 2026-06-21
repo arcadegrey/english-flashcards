@@ -48,7 +48,8 @@
 ## 视觉 / 主题 / 动效
 
 - 首页/训练中心已升级为 production edtech SaaS 风格，采用真实前端组件 + 装饰性透明 PNG 资产的混合 UI 方案。交互元素、文字、按钮、导航、进度环、进度条和统计数字都必须保持为真实 HTML/CSS/React 组件，不能用整页截图或带文字的图片替代。
-- 首页设计语言已沉淀到 4 个规范文件：`agents.md`、`design-system.md`、`component-system.md`、`frontend-architecture.md`。后续 UI 改造需要先遵守这些文档，再落到代码。
+- 测试页当前配色和卡片节奏已确定为新的全站视觉母版，规范文件是 `test-page-visual-language.md`。后续 UI 改造应优先向这套方向靠拢：白色大面板、浅蓝背景、强蓝选中态、柔和语义色卡片、真实进度条、透明 3D 装饰图标。
+- 首页设计语言已沉淀到 5 个规范文件：`agents.md`、`design-system.md`、`component-system.md`、`frontend-architecture.md`、`test-page-visual-language.md`。后续 UI 改造需要先遵守这些文档，再落到代码。
 - 首页当前结构是 `AppLayout -> Sidebar + Topbar -> HeroCard -> PlanStatusCards -> StatsRow -> Status summary`。
 - 训练中心当前结构是 `AppLayout -> Sidebar + Topbar -> HeroCard -> main ModuleCards -> inline word/reading picker panels -> MotivationBand -> StatsRow`。
 - 阅读正文页当前结构是 `AppLayout -> Sidebar + Topbar -> 难词掌握目标条 -> 大阅读卡 -> 阅读状态侧栏 -> 底部操作按钮`。不要恢复旧的阅读局部 topbar；返回列表、显示翻译、朗读全文、同步进度和 QuickMenu 都放在内容区。
@@ -82,7 +83,7 @@
   - 词库分类：`category-all-words-blue-v1.png`、`category-daily-words-blue-v1.png`、`category-cet4-blue-v1.png`、`category-cet6-blue-v1.png`、`category-toefl-blue-v1.png`、`category-ielts-blue-v1.png`
   - 同目录下的 `*-source.png` / `*-alpha.png` / sprite 图是生成和裁切来源，运行时组件应优先引用最终透明 PNG。
 - 首页 Hero 的核心进度不是固定值，会由当前用户学习状态计算：复习完成度和今日新词完成度共同决定 `planProgress`。后续改 UI 时不要把 50% 或其他进度值写死到图片或样式里。
-- 当前训练中心视觉原则：主蓝 `#4F7CFF`、辅蓝 `#7EA6FF`、黄色 `#FFC857` 只做书签/星光/高亮点缀；背景 `#F7FAFF`，卡片 `#FFFFFF`，正文 `#0F172A`，次级文案 `#64748B`。避免回到大面积紫色或 emoji 临时图标。
+- 当前全站视觉原则以测试页为基准：主蓝 `#4F7CFF` / `#2F6DFF`、辅蓝 `#7EA6FF`、黄色/橙色只做书签/星光/高亮/连线模式等小面积点缀；背景 `#F7FAFF`，卡片 `#FFFFFF`，正文 `#0F172A`，次级文案 `#64748B`。避免回到大面积紫色、重渐变或 emoji 临时图标。
 - 训练中心 hero 是蓝色渐变 banner，右侧为蓝色 `Aa` flashcards，背景有轻微 A/B/C 字母装饰和黄色高光。
 - 训练中心四个入口卡当前为统一白色轻卡：背单词、做阅读、今日复习、做测试。使用蓝黄 3D 英语学习资产，不再使用 emoji；“做阅读”不再用单独高亮卡，除非以后表示真实选中态。
 - 训练中心“背单词”入口不会直接进入全部单词学习，而是展开并滚动到现有词库类型选择区，用户再选择全部、TOEFL、IELTS 或其它分类。
@@ -266,7 +267,7 @@
 ## 下一步建议
 
 - 产品改进路线已沉淀到 `plan.md`。当前优先级是继续把首页“今日学习计划”从轻量推荐升级为完整日任务闭环。
-- 刚完成的 shared app shell / word-learning polish 已降低桌面和手机端 UI 分叉；下一轮 UI 优先继续清理 TOEFL/IELTS 选择页、阅读等级页、复习/测试页旧样式残留，让它们与共享 chrome 和蓝白黄学习系统保持一致。
+- 刚完成的 shared app shell / word-learning polish 已降低桌面和手机端 UI 分叉；下一轮 UI 优先继续清理 今日计划、训练中心、TOEFL/IELTS 选择页、阅读等级页、复习/统计页旧样式残留，让它们与共享 chrome 和测试页视觉语言保持一致。
 - 今日计划后续建议优先补：
   - 把阅读完成、考试巩固完成也纳入日级进度，而不是只用复习和新词计算核心进度。
   - 允许用户自定义每日新词目标，例如 10 / 15 / 25。

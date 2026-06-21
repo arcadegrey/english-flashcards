@@ -30,6 +30,7 @@ Card rules:
 - Cards own structure, spacing, radius, elevation, and responsive behavior.
 - Decorative images may be passed into cards, but card text/actions stay real components.
 - Do not create one-off card markup for new pages.
+- New or redesigned cards should follow the Test page card language: white or softly tinted white surfaces, subtle semantic borders, soft blue-tinted elevation, real selected indicators, and hover lift.
 - ModuleCard supports `iconSrc` and `artSrc` for decorative PNG assets. Prefer these over emoji in production UI.
 - ModuleCard also supports `variant`, which adds an `is-{variant}` class for visual tuning only. It must not change routing or learning behavior.
 - ModuleCard automatically marks cards with decorative art using `has-art`; CSS can use this to position text and illustrations without adding one-off markup.
@@ -92,6 +93,7 @@ Mobile word-learning module:
 
 Exam practice module:
 - `ExamPracticeView` is the range and mode selection surface.
+- `ExamPracticeView` is also the approved visual benchmark for the rest of the product. Its white panels, blue selected state, semantic pastel mode cards, real progress bars, and transparent 3D PNG mode icons should guide future page updates.
 - `LearningView` renders the four internal exam modes when `mode !== "learn"`.
 - Internal exam modes must use the shared exam shell: control card, thin progress bar, and centered answer card.
 - The exam control card contains 返回, question count, and QuickMenu only. Do not add sync/account state there; the global Topbar account chip owns that status.

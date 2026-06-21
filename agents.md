@@ -16,7 +16,7 @@ You are responsible for upgrading the English Flashcards UI into a production-gr
 - Consistent across all pages
 - No random design decisions
 - Real frontend structure with high-quality decorative assets
-- Current Training Center direction: modern English learning app, blue-white surfaces with primary blue `#4F7CFF`, secondary blue `#7EA6FF`, yellow `#FFC857` as a small accent only, light background `#F7FAFF`, card background `#FFFFFF`, text `#0F172A` / `#64748B`.
+- The approved global direction is the current Test page visual language, documented in `test-page-visual-language.md`: white and very light blue surfaces, primary blue `#4F7CFF` / `#2F6DFF`, secondary blue `#7EA6FF`, local pastel mode accents, yellow/orange only as small semantic highlights, light background `#F7FAFF`, card background `#FFFFFF`, text `#0F172A` / `#64748B`.
 
 --------------------------------
 # STRICT RULES
@@ -56,7 +56,8 @@ Use generated image assets only for:
 # HOMEPAGE DESIGN LANGUAGE
 - Left sidebar + top header + hero card + status cards + stats strip
 - Homepage hero may use the established premium gradient language.
-- Training Center hero uses a blue gradient banner and a right-side soft 3D blue "Aa" flashcard asset with subtle yellow highlights.
+- Homepage and Training Center should be aligned toward the Test page visual language: white/tinted panels, soft blue borders, strong blue only for selected/primary states, and decorative 3D assets used sparingly.
+- Training Center hero may use a blue gradient banner and a right-side soft 3D blue "Aa" flashcard asset with subtle yellow highlights, but surrounding panels/cards should follow the Test page's clean white-blue card system.
 - Review and new-word cards use real text and actions with decorative side illustrations
 - Stats use real numbers and labels with matching soft 3D icon assets
 - Keep the page premium, calm, airy, and commercially polished
