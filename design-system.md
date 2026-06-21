@@ -128,6 +128,22 @@ Rules:
 - The reading workspace uses a goal strip for 难词掌握, a large rounded article card, compact metadata chips, a right-side reading status stack, and real action buttons for 返回列表 / 显示翻译 / 朗读全文.
 - Reading text, translation, questions, highlighted vocabulary, progress ring, and action buttons must remain real components.
 - Mobile reading sessions use the generic mobile app shell and bottom nav; only mobile word-learning uses the dedicated study chrome exception.
+- Reading level cards use white or softly tinted white surfaces with semantic pastel borders, real title/count/helper text, and a real circular arrow affordance.
+- Reading article rows use a compact white row pattern: decorative icon block on the left, real article metadata in the center, and a real circular arrow on the right.
+
+## Statistics Dashboard
+- Statistics pages use the shared `AppLayout` chrome on desktop and the shared mobile app shell on mobile.
+- The dashboard starts with one white rounded panel, a small blue decorative badge, a real title/subtitle, and real metric cards.
+- Metric cards use semantic pastel accents only: blue for learning volume, green for mastered/success, orange for streak or review pressure, violet/cyan for secondary learning signals.
+- Charts remain real DOM bars and labels, not generated images.
+- Page-specific filters or progress controls belong inside the statistics panel, not in the global topbar.
+
+## Word Collection Pages
+- 今日复习、错题本、已学习单词 and 已掌握单词 use the shared `AppLayout` chrome on desktop and the shared mobile app shell on mobile.
+- The global topbar owns the page title/subtitle; inside the page, keep only one compact progress strip before the content panel.
+- Collection tools live inside the content panel: 返回、首页、搜索、同步、发音 and QuickMenu. Do not put these controls in the global topbar.
+- Empty states use large decorative transparent PNG artwork inside a soft blue/purple white panel; the message, progress, buttons, and search controls remain real DOM.
+- When words exist, the collection page reuses the real `WordCard` and bottom action buttons instead of static imagery.
 
 ## Exam Session
 - The Test page is the global style benchmark for all page polish: large white panels, soft blue app background, selected blue cards, real progress bars, semantic pastel module cards, and transparent 3D PNG icons.

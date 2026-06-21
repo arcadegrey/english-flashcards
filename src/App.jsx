@@ -2344,7 +2344,7 @@ function AppContent() {
       case 'todayReview':
         return (
           <WordCollectionView
-            title="🔁 今日复习"
+            title="今日复习"
             subtitle="这些是今天需要回顾的已学习或已掌握单词"
             words={todayReviewWordList}
             mode={mode}
@@ -2357,12 +2357,16 @@ function AppContent() {
             onHome={handleBackToStudyHub}
             onSyncAccount={handleHomeSync}
             onOpenReading={handleOpenReadingList}
+            navItems={selectionNavItems}
+            topbarProps={selectionTopbarProps}
+            active="review"
+            emptyArtSrc="/images/ui-assets/training-card-review-blue-v1.png"
           />
         )
       case 'wrongWords':
         return (
           <WordCollectionView
-            title="🧯 错题本"
+            title="错题本"
             subtitle="这里会展示你在测验、填空、拼写中答错过的单词"
             words={wrongWordList}
             mode={mode}
@@ -2375,12 +2379,16 @@ function AppContent() {
             onHome={handleBackToStudyHub}
             onSyncAccount={handleHomeSync}
             onOpenReading={handleOpenReadingList}
+            navItems={selectionNavItems}
+            topbarProps={selectionTopbarProps}
+            active="review"
+            emptyArtSrc="/images/ui-assets/training-card-review-blue-v1.png"
           />
         )
       case 'learnedWords':
         return (
           <WordCollectionView
-            title="📖 已学习单词"
+            title="已学习单词"
             subtitle="这里会展示你标记为“已学习”的所有单词"
             words={learnedWordList}
             mode={mode}
@@ -2392,12 +2400,16 @@ function AppContent() {
             onHome={handleBackToStudyHub}
             onSyncAccount={handleHomeSync}
             onOpenReading={handleOpenReadingList}
+            navItems={selectionNavItems}
+            topbarProps={selectionTopbarProps}
+            active="words"
+            emptyArtSrc="/images/ui-assets/category-all-words-blue-v1.png"
           />
         )
       case 'masteredWords':
         return (
           <WordCollectionView
-            title="✅ 已掌握单词"
+            title="已掌握单词"
             subtitle="这里会展示你已经掌握的单词"
             words={masteredWordList}
             mode={mode}
@@ -2408,6 +2420,10 @@ function AppContent() {
             onHome={handleBackToStudyHub}
             onSyncAccount={handleHomeSync}
             onOpenReading={handleOpenReadingList}
+            navItems={selectionNavItems}
+            topbarProps={selectionTopbarProps}
+            active="words"
+            emptyArtSrc="/images/ui-assets/training-card-review-blue-v1.png"
           />
         )
       default:

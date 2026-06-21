@@ -1,10 +1,27 @@
 import { useEffect, useMemo, useState } from 'react';
 import WordCard from './WordCard';
 import QuickMenu from './QuickMenu';
+import AppLayout from './layout/AppLayout';
 import { speakWord } from '../utils/speech';
+
+const SearchIcon = (
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <circle cx="11" cy="11" r="6" />
+    <path d="m16 16 4 4" />
+  </svg>
+);
+
+const HideSearchIcon = (
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M4 7h16" />
+    <path d="M7 12h10" />
+    <path d="M10 17h4" />
+  </svg>
+);
 
 function WordCollectionView({
   title,
+  subtitle,
   words,
   onBack,
   mode = 'learn',
@@ -18,6 +35,10 @@ function WordCollectionView({
   onHome,
   onSyncAccount,
   onOpenReading,
+  navItems,
+  topbarProps,
+  active = 'review',
+  emptyArtSrc = '/images/ui-assets/training-card-review-blue-v1.png',
 }) {
   const [query, setQuery] = useState('');
   const [showSearch, setShowSearch] = useState(false);
@@ -47,13 +68,19 @@ function WordCollectionView({
     () => [
       {
         id: 'search',
-        icon: showSearch ? '🙈' : '🔎',
+        icon: showSearch ? HideSearchIcon : SearchIcon,
         label: showSearch ? '隐藏搜索栏' : '显示搜索栏',
+        isActive: showSearch,
         onClick: () => setShowSearch((prev) => !prev),
       },
     ],
     [showSearch]
   );
+
+  const progressPercent =
+    filteredWords.length > 0 ? Math.max(1, Math.round((progressCurrent / filteredWords.length) * 100)) : 0;
+  const displayTitle = title.replace(/^[^\u4e00-\u9fa5A-Za-z0-9]+/, '').trim() || title;
+  const displaySubtitle = subtitle || '按学习记录生成的复习集合，答题逻辑和进度保持不变。';
 
   useEffect(() => {
     if (!toast) return undefined;
@@ -129,68 +156,71 @@ function WordCollectionView({
     setHintOpenForWordId((prev) => (String(prev) === String(currentWordId) ? null : currentWordId));
   };
 
-  return (
-    <div className="learn-refresh-page">
-      <header className="learn-refresh-topbar">
-        <div className="learn-refresh-topbar-inner">
-          <div className="learn-refresh-left-actions">
-            <button type="button" className="learn-refresh-back" onClick={onBack} aria-label="返回">
-              <span aria-hidden="true">←</span>
-              <span>返回</span>
-            </button>
-            <button type="button" className="learn-refresh-home-btn" onClick={onHome} aria-label="回到首页">
-              <span aria-hidden="true">🏠</span>
-            </button>
+  const content = (
+    <>
+      <div className="collection-page-flow learn-refresh-card-enter">
+        <section className="collection-hero" aria-label={`${progressLabel || displayTitle}进度`}>
+        <div className="collection-goal-strip">
+          <span className="collection-goal-label">{progressLabel || '集合进度'}</span>
+          <div className="collection-goal-track" aria-hidden="true">
+            <span style={{ width: `${progressPercent}%` }} />
           </div>
-
-          <div className="learn-refresh-progress">
-            <p className="learn-refresh-progress-main">
-              {progressCurrent} / {filteredWords.length}
-            </p>
-            <p className="learn-refresh-progress-sub">{progressLabel || `今日目标 ${filteredWords.length}`}</p>
-          </div>
-
-          <div className="learn-refresh-top-actions">
-            <button
-              type="button"
-              className="learn-refresh-icon-btn"
-              onClick={handleSyncAccount}
-              aria-label="同步账号"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M20 6v5h-5" />
-                <path d="M4 18v-5h5" />
-                <path d="M6.2 9A7 7 0 0118.5 7.5L20 11" />
-                <path d="M17.8 15A7 7 0 015.5 16.5L4 13" />
-              </svg>
-            </button>
-            <button
-              type="button"
-              className="learn-refresh-icon-btn"
-              onClick={handleSpeakCurrentWord}
-              aria-label="播放发音"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M3 9v6h4l5 4V5L7 9H3z" />
-                <path d="M16.5 8.5a4.5 4.5 0 010 7" />
-                <path d="M19.5 6a8 8 0 010 12" />
-              </svg>
-            </button>
-
-            <QuickMenu
-              mode={mode}
-              onOpenMode={onOpenMode}
-              onOpenReading={onOpenReading}
-              onSlowSpeechChange={setToast}
-              extraItems={quickMenuExtraItems}
-            />
-          </div>
+          <strong>{progressPercent}%</strong>
         </div>
-      </header>
+        </section>
 
-      <main className="learn-refresh-main">
+        <section className="collection-work-card" aria-label={`${displayTitle}练习区`}>
+        <div className="collection-tool-row">
+          <button type="button" className="collection-tool-button" onClick={onBack}>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+            <span>返回</span>
+          </button>
+          <button type="button" className="collection-tool-button" onClick={onHome}>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 11.5 12 5l8 6.5" />
+              <path d="M6.5 10.5V20h11v-9.5" />
+              <path d="M10 20v-5h4v5" />
+            </svg>
+            <span>首页</span>
+          </button>
+          <button
+            type="button"
+            className={`collection-tool-button ${showSearch ? 'is-active' : ''}`}
+            onClick={() => setShowSearch((prev) => !prev)}
+          >
+            {showSearch ? HideSearchIcon : SearchIcon}
+            <span>{showSearch ? '隐藏搜索' : '搜索'}</span>
+          </button>
+          <button type="button" className="collection-tool-button" onClick={handleSyncAccount}>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 6v5h-5" />
+              <path d="M4 18v-5h5" />
+              <path d="M6.2 9A7 7 0 0118.5 7.5L20 11" />
+              <path d="M17.8 15A7 7 0 015.5 16.5L4 13" />
+            </svg>
+            <span>同步</span>
+          </button>
+          <button type="button" className="collection-tool-button" onClick={handleSpeakCurrentWord} disabled={!currentWord}>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 9v6h4l5 4V5L7 9H3z" />
+              <path d="M16.5 8.5a4.5 4.5 0 010 7" />
+              <path d="M19.5 6a8 8 0 010 12" />
+            </svg>
+            <span>发音</span>
+          </button>
+          <QuickMenu
+            mode={mode}
+            onOpenMode={onOpenMode}
+            onOpenReading={onOpenReading}
+            onSlowSpeechChange={setToast}
+            extraItems={quickMenuExtraItems}
+          />
+        </div>
+
         {showSearch && (
-          <section className="mb-4 rounded-[16px] border border-[#e8e8ed] bg-white px-4 py-4">
+          <section className="collection-search-panel">
             <input
               type="text"
               value={query}
@@ -198,32 +228,39 @@ function WordCollectionView({
                 setCurrentIndex(0);
                 setQuery(event.target.value);
               }}
-              placeholder={`搜索${title.replace(/^[^\u4e00-\u9fa5A-Za-z0-9]+/, '')}...`}
-              className="w-full min-h-[46px] rounded-[12px] border border-[#e8e8ed] bg-white px-4 text-center text-base text-[#1d1d1f] placeholder:text-[#9ca3af] outline-none transition focus:border-[#0071e3] focus:ring-2 focus:ring-[#0071e3]/20"
+              placeholder={`搜索${displayTitle}...`}
             />
           </section>
         )}
 
         {words.length === 0 ? (
-          <article className="learn-refresh-card learn-refresh-card-enter">
-            <p className="learn-refresh-empty">{emptyHint}</p>
+          <article className="collection-empty-state">
+            <img src={emptyArtSrc} alt="" aria-hidden="true" />
+            <div>
+              <h3>今天节奏很好</h3>
+              <p>{emptyHint}</p>
+            </div>
           </article>
         ) : filteredWords.length === 0 ? (
-          <article className="learn-refresh-card learn-refresh-card-enter">
-            <p className="learn-refresh-empty">没有匹配结果，试试别的关键词。</p>
+          <article className="collection-empty-state">
+            <img src={emptyArtSrc} alt="" aria-hidden="true" />
+            <div>
+              <h3>没有匹配结果</h3>
+              <p>试试别的关键词，或隐藏搜索继续当前集合。</p>
+            </div>
           </article>
         ) : (
-          <WordCard
-            key={`${currentWord?.id || 'collection-empty'}-${safeCurrentIndex}`}
-            word={currentWord}
-            showHint={showHint}
-          />
+          <div className="collection-study-panel">
+            <WordCard
+              key={`${currentWord?.id || 'collection-empty'}-${safeCurrentIndex}`}
+              word={currentWord}
+              showHint={showHint}
+            />
+          </div>
         )}
-      </main>
 
-      {filteredWords.length > 0 && (
-        <footer className="learn-refresh-bottombar">
-          <div className="learn-refresh-bottombar-inner">
+        {filteredWords.length > 0 && (
+          <footer className="collection-action-row">
             <button
               type="button"
               className="learn-refresh-action learn-refresh-action-secondary"
@@ -245,18 +282,35 @@ function WordCollectionView({
             >
               {masteredActionLabel}
             </button>
-          </div>
-        </footer>
-      )}
+          </footer>
+        )}
+        </section>
+      </div>
 
       {toast && (
         <div className="learn-refresh-toast" role="status" aria-live="polite">
           {toast}
         </div>
       )}
-
-    </div>
+    </>
   );
+
+  if (navItems?.length) {
+    return (
+      <AppLayout
+        active={active}
+        navItems={navItems}
+        title={displayTitle}
+        subtitle={displaySubtitle}
+        topbarProps={topbarProps}
+        className="collection-app-layout"
+      >
+        {content}
+      </AppLayout>
+    );
+  }
+
+  return <div className="learn-refresh-page collection-legacy-page">{content}</div>;
 }
 
 export default WordCollectionView;

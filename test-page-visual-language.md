@@ -114,9 +114,19 @@ Priority pages to align next:
 - 今日计划
 - 训练中心
 - 单词学习 desktop shell
-- 阅读选择 and 阅读正文
-- 统计
+
+Already aligned:
+- 测试选择页 and four internal exam modes
+- 阅读选择 inline picker
+- 阅读正文 session page
+- 统计 dashboard
 - 复习 / 错题 / 已学习 / 已掌握集合页
+- shared sidebar/topbar chrome on desktop app pages
+
+Collection page rule:
+- Keep only a compact top progress strip above the content panel.
+- Put page tools such as 返回、首页、搜索、同步、发音 and QuickMenu inside the content panel.
+- Empty states use a large decorative PNG illustration and soft blue/purple panel art, while all text, progress, buttons, and actions remain real DOM.
 
 --------------------------------
 # VERIFICATION
