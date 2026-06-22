@@ -31,6 +31,9 @@ function AuthPanel({
   enabled = false,
   loading = false,
   user = null,
+  learnedCount = 0,
+  masteredCount = 0,
+  onClose,
   syncStatusText = '',
   syncError = '',
   onLogin,
@@ -110,11 +113,11 @@ function AuthPanel({
 
   if (!enabled) {
     return (
-      <section className="rounded-[14px] border border-[var(--app-border)] bg-[var(--app-soft)] p-5 shadow-[0_1px_3px_rgba(15,23,42,0.08)] md:p-6">
-        <div className="text-center">
-          <h3 className="text-xl font-semibold text-[var(--app-text)]">账号与云同步</h3>
-          <p className="mt-2 text-sm text-[var(--app-muted)]">还未配置账号服务。配置后可注册登录并在更新后保留学习进度。</p>
-          <p className="mt-1 text-xs text-[var(--app-muted)]">请检查 Worker 与 D1 部署，并确认前端可访问 `/api`。</p>
+      <section className="auth-panel">
+        <AuthHeader onClose={onClose} />
+        <div className="auth-disabled-state">
+          <h3>账号与云同步暂未启用</h3>
+          <p>配置后可注册登录并在更新后保留学习进度。请检查 Worker 与 D1 部署，并确认前端可访问 `/api`。</p>
         </div>
       </section>
     );
@@ -122,36 +125,58 @@ function AuthPanel({
 
   if (loading) {
     return (
-      <section className="rounded-[14px] border border-[var(--app-border)] bg-[var(--app-soft)] p-5 shadow-[0_1px_3px_rgba(15,23,42,0.08)] md:p-6">
-        <p className="text-center text-sm text-[var(--app-muted)]">正在恢复账号会话...</p>
+      <section className="auth-panel">
+        <AuthHeader onClose={onClose} />
+        <p className="auth-loading-text">正在恢复账号会话...</p>
       </section>
     );
   }
 
   return (
-    <section className="rounded-[14px] border border-[var(--app-border)] bg-[var(--app-soft)] p-5 shadow-[0_1px_3px_rgba(15,23,42,0.08)] md:p-6">
-      <div className="space-y-4">
-        <div className="text-center">
-          <h3 className="text-xl font-semibold text-[var(--app-text)]">账号与云同步</h3>
-          {isLoggedIn ? (
-            <p className="mt-1 text-sm text-[var(--app-muted)]">已登录：{user.email}</p>
-          ) : (
-            <p className="mt-1 text-sm text-[var(--app-muted)]">登录后自动同步学习进度（跨更新保留）</p>
-          )}
-        </div>
+    <section className="auth-panel">
+      <AuthHeader
+        onClose={onClose}
+        subtitle={isLoggedIn ? `已登录：${user.email}` : '登录后自动同步学习进度（跨更新保留）'}
+      />
+
+      <div className="auth-stat-grid">
+        <AuthStatCard
+          tone="blue"
+          label="已学习单词"
+          value={learnedCount}
+          icon={
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 4h10a3 3 0 0 1 3 3v13H9a3 3 0 0 0-3 3V4Z" />
+              <path d="M9 8h6" />
+              <path d="M9 12h5" />
+            </svg>
+          }
+        />
+        <AuthStatCard
+          tone="green"
+          label="已掌握单词"
+          value={masteredCount}
+          icon={
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3 19 6v5c0 4.4-2.8 7.8-7 10-4.2-2.2-7-5.6-7-10V6l7-3Z" />
+              <path d="m8.8 12.2 2.1 2.1 4.5-4.8" />
+            </svg>
+          }
+        />
+      </div>
 
         {isLoggedIn ? (
-          <div className="space-y-3">
-            <p className="text-center text-sm text-[var(--app-muted)]">
-              同步状态：<span className="font-semibold text-[var(--app-text)]">{syncStatusText || '就绪'}</span>
+          <div className="auth-logged-in">
+            <p>
+              同步状态：<strong>{syncStatusText || '就绪'}</strong>
             </p>
-            {syncError && <p className="text-center text-sm text-[#dc2626]">{syncError}</p>}
-            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+            {syncError && <p className="auth-error">{syncError}</p>}
+            <div className="auth-action-grid">
               <button
                 type="button"
                 disabled={busy}
                 onClick={handleSyncNow}
-                className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] border border-[var(--app-border)] bg-[var(--app-surface)] px-4 py-2 text-base font-semibold text-[var(--app-text)] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white disabled:cursor-not-allowed disabled:opacity-60"
+                className="auth-secondary-button"
               >
                 立即同步
               </button>
@@ -159,60 +184,70 @@ function AuthPanel({
                 type="button"
                 disabled={busy}
                 onClick={handleLogout}
-                className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[10px] border border-[var(--app-border)] bg-[var(--app-surface)] px-4 py-2 text-base font-semibold text-[var(--app-text)] transition duration-200 hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white disabled:cursor-not-allowed disabled:opacity-60"
+                className="auth-secondary-button"
               >
                 退出登录
               </button>
             </div>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-3">
-            <div className="grid grid-cols-2 gap-2">
+          <form onSubmit={handleSubmit} className="auth-form">
+            <div className="auth-mode-toggle">
               <button
                 type="button"
                 onClick={() => setMode('login')}
-                className={`min-h-[40px] rounded-[10px] border px-3 py-2 text-sm font-semibold transition ${
-                  mode === 'login'
-                    ? 'border-[#0071e3] bg-[#0071e3] text-white'
-                    : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-text)] hover:border-[#0071e3] hover:text-[#0071e3]'
-                }`}
+                className={mode === 'login' ? 'is-active' : ''}
               >
                 登录
               </button>
               <button
                 type="button"
                 onClick={() => setMode('register')}
-                className={`min-h-[40px] rounded-[10px] border px-3 py-2 text-sm font-semibold transition ${
-                  mode === 'register'
-                    ? 'border-[#0071e3] bg-[#0071e3] text-white'
-                    : 'border-[var(--app-border)] bg-[var(--app-surface)] text-[var(--app-text)] hover:border-[#0071e3] hover:text-[#0071e3]'
-                }`}
+                className={mode === 'register' ? 'is-active' : ''}
               >
                 注册
               </button>
             </div>
 
-            <input
-              type="email"
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-              placeholder="邮箱"
-              className="w-full min-h-[44px] rounded-[10px] border border-[var(--app-border)] bg-[var(--app-surface)] px-4 py-2 text-[var(--app-text)] placeholder:text-[var(--app-muted)] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/20 focus:border-[#4f46e5]"
-            />
+            <label className="auth-input-field">
+              <span aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M4 6h16v12H4z" />
+                  <path d="m4 7 8 6 8-6" />
+                </svg>
+              </span>
+              <input
+                type="email"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+                placeholder="请输入邮箱"
+              />
+            </label>
 
-            <input
-              type="text"
-              value={verificationCode}
-              onChange={(event) => setVerificationCode(event.target.value)}
-              placeholder={mode === 'register' ? '输入注册验证码（可留空先发送）' : '输入登录验证码（可留空先发送）'}
-              className="w-full min-h-[44px] rounded-[10px] border border-[var(--app-border)] bg-[var(--app-surface)] px-4 py-2 text-[var(--app-text)] placeholder:text-[var(--app-muted)] focus:outline-none focus:ring-2 focus:ring-[#4f46e5]/20 focus:border-[#4f46e5]"
-            />
+            <label className="auth-input-field">
+              <span aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 3 19 6v5c0 4.4-2.8 7.8-7 10-4.2-2.2-7-5.6-7-10V6l7-3Z" />
+                  <path d="M9 12h6" />
+                </svg>
+              </span>
+              <input
+                type="text"
+                value={verificationCode}
+                onChange={(event) => setVerificationCode(event.target.value)}
+                placeholder={mode === 'register' ? '请输入注册验证码（可留空先发送）' : '请输入登录验证码（可留空先发送）'}
+              />
+            </label>
 
             <button
               type="submit"
               disabled={busy}
-              className="inline-flex w-full min-h-[44px] items-center justify-center rounded-[10px] border border-[#4f46e5] bg-[#4f46e5] px-4 py-2 text-base font-semibold text-white transition duration-200 hover:bg-[#4338ca] disabled:cursor-not-allowed disabled:opacity-60"
+              className="auth-primary-button"
             >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m5 12 14-7-5 14-3-5-6-2Z" />
+                <path d="m11 14 3-3" />
+              </svg>
               {busy
                 ? '处理中...'
                 : verificationCode.trim()
@@ -224,7 +259,8 @@ function AuthPanel({
                     : '发送登录验证码'}
             </button>
 
-            <p className="text-center text-xs text-[var(--app-muted)]">
+            <p className="auth-form-hint">
+              <span aria-hidden="true">i</span>
               {mode === 'register'
                 ? '先发送注册验证码，再输入验证码完成注册并自动登录'
                 : '先发送登录验证码，再输入验证码完成登录'}
@@ -232,10 +268,40 @@ function AuthPanel({
           </form>
         )}
 
-        {error && <p className="text-center text-sm text-[#dc2626]">{error}</p>}
-        {message && <p className="text-center text-sm text-[#059669]">{message}</p>}
-      </div>
+      {error && <p className="auth-error">{error}</p>}
+      {message && <p className="auth-message">{message}</p>}
     </section>
+  );
+}
+
+function AuthHeader({ onClose, subtitle = '登录后自动同步学习进度（跨更新保留）' }) {
+  return (
+    <header className="auth-panel-header">
+      <div>
+        <h2>登录信息</h2>
+        <p>{subtitle}</p>
+      </div>
+      {onClose ? (
+        <button type="button" className="auth-close-button" onClick={onClose} aria-label="关闭登录弹窗">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6l12 12" />
+            <path d="M18 6 6 18" />
+          </svg>
+        </button>
+      ) : null}
+    </header>
+  );
+}
+
+function AuthStatCard({ tone, icon, label, value }) {
+  return (
+    <article className={`auth-stat-card is-${tone}`}>
+      <span className="auth-stat-icon" aria-hidden="true">{icon}</span>
+      <div>
+        <p>{label}</p>
+        <strong>{value}</strong>
+      </div>
+    </article>
   );
 }
 

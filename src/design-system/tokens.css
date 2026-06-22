@@ -3833,15 +3833,28 @@
   }
 
   .ds-hero-card.is-soft {
-    padding: 24px 24px 8px;
+    min-height: 182px;
+    padding: 20px 20px 6px;
     color: var(--ds-text);
     background: transparent;
     box-shadow: none;
   }
 
   .ds-hero-card.is-soft .ds-hero-content {
+    min-height: 148px;
     grid-template-columns: minmax(0, 1fr);
-    gap: 24px;
+    gap: 18px;
+  }
+
+  .ds-hero-card.is-soft::before {
+    right: 96px;
+    bottom: -10px;
+    color: rgba(79, 124, 255, 0.04);
+    font-size: 102px;
+  }
+
+  .ds-hero-card.is-soft::after {
+    color: rgba(126, 166, 255, 0.055);
   }
 
   .ds-hero-card.is-soft .ds-hero-label {
@@ -3850,34 +3863,34 @@
     padding: 0;
     color: var(--ds-primary-start);
     background: transparent;
-    font-size: 12px;
+    font-size: 11px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2.6px;
   }
 
   .ds-hero-card.is-soft .ds-hero-copy {
-    padding-right: 96px;
+    padding-right: 88px;
   }
 
   .ds-hero-card.is-soft .ds-hero-title {
-    margin-top: 12px;
-    font-size: 28px;
+    margin-top: 10px;
+    font-size: 25px;
     line-height: 1.16;
   }
 
   .ds-hero-card.is-soft .ds-hero-subtitle {
-    margin-top: 12px;
+    margin-top: 10px;
     color: var(--ds-muted);
-    font-size: 16px;
-    line-height: 1.55;
+    font-size: 14px;
+    line-height: 1.48;
     font-weight: 680;
   }
 
   .ds-hero-card.is-soft .ds-hero-visual {
     display: block;
-    width: 128px;
-    top: 44px;
-    right: 0;
+    width: 108px;
+    top: 50px;
+    right: -14px;
   }
 
   .ds-hero-card.is-soft .ds-hero-control {
@@ -3886,13 +3899,15 @@
 
   .ds-module-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 184px;
     gap: 16px;
   }
 
   .ds-module-card {
-    min-height: 184px;
-    padding: 24px 16px;
-    box-shadow: 0 14px 28px rgba(79, 93, 170, 0.1);
+    min-height: 0;
+    height: 100%;
+    padding: 22px 14px;
+    box-shadow: 0 12px 24px rgba(79, 93, 170, 0.08);
   }
 
   .ds-module-icon {
@@ -3910,9 +3925,14 @@
   }
 
   .ds-module-card h3 {
-    margin-top: 48px;
-    font-size: 22px;
+    margin-top: 74px;
+    font-size: 21px;
     line-height: 1.2;
+    max-width: 92%;
+  }
+
+  .ds-module-card.has-art h3 {
+    max-width: 92%;
   }
 
   .ds-module-card:not(.has-icon):not(.has-art) h3 {
@@ -3920,9 +3940,10 @@
   }
 
   .ds-module-card p {
+    margin-top: 8px;
     font-size: 14px;
-    line-height: 1.45;
-    max-width: 86%;
+    line-height: 1.38;
+    max-width: 92%;
   }
 
   .reading-home-category-panel {
@@ -4001,19 +4022,19 @@
 
   .ds-module-art-image {
     top: auto;
-    right: 0;
-    bottom: 40px;
-    width: 88px;
-    height: 88px;
-    opacity: 0.9;
+    right: 14px;
+    bottom: 72px;
+    width: 72px;
+    height: 72px;
+    opacity: 0.88;
   }
 
   .ds-module-card.is-test .ds-module-art-image {
     top: auto;
-    right: 2px;
-    bottom: 44px;
-    width: 78px;
-    height: 78px;
+    right: 14px;
+    bottom: 74px;
+    width: 70px;
+    height: 70px;
   }
 
   .ds-module-card.is-active .ds-module-art-image {
@@ -4021,10 +4042,16 @@
   }
 
   .ds-module-arrow {
-    right: 16px;
-    bottom: 16px;
-    width: 40px;
-    height: 40px;
+    right: 12px;
+    bottom: 12px;
+    width: 34px;
+    height: 34px;
+    box-shadow: 0 8px 14px rgba(79, 124, 255, 0.1);
+  }
+
+  .ds-module-arrow svg {
+    width: 18px;
+    height: 18px;
   }
 
   .ds-status-grid {

@@ -1918,33 +1918,14 @@ function AppContent() {
           className="absolute inset-0 bg-black/30"
           onClick={() => setShowAuthModal(false)}
         />
-        <div className="relative w-full max-w-[680px] rounded-[16px] border border-[var(--app-border)] bg-[var(--app-surface)] p-4 shadow-[0_20px_45px_rgba(15,23,42,0.2)] md:p-6">
-          <div className="mb-4 flex items-center justify-between">
-            <h3 className="text-xl font-semibold text-[var(--app-text)]">登录信息</h3>
-            <button
-              type="button"
-              onClick={() => setShowAuthModal(false)}
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[var(--app-border)] text-[var(--app-muted)] transition hover:border-[#0071e3] hover:bg-[#0071e3] hover:text-white"
-            >
-              ✕
-            </button>
-          </div>
-
-          <div className="mb-4 grid grid-cols-2 gap-3">
-            <div className="rounded-[12px] border border-[var(--app-border)] bg-[var(--app-soft)] p-3 text-center">
-              <p className="text-2xl font-semibold text-[var(--app-text)]">{learnedWords.length}</p>
-              <p className="text-sm text-[var(--app-muted)]">已学习单词</p>
-            </div>
-            <div className="rounded-[12px] border border-[#0071e3]/30 bg-[#0071e3] p-3 text-center">
-              <p className="text-2xl font-semibold text-white">{masteredWords.length}</p>
-              <p className="text-sm text-white/90">已掌握单词</p>
-            </div>
-          </div>
-
+        <div className="auth-modal-card">
           <AuthPanel
             enabled={cloudEnabled}
             loading={authLoading}
             user={authUser}
+            learnedCount={learnedWords.length}
+            masteredCount={masteredWords.length}
+            onClose={() => setShowAuthModal(false)}
             syncStatusText={getSyncStatusText({
               authLoading,
               hasUser: Boolean(authUser?.id),

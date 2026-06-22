@@ -161,11 +161,19 @@ Rules:
 - Small module icons sit in the card's upper-right corner.
 - Large decorative art can sit inside the card body, but must not obscure real text or the arrow button.
 - The arrow remains a real button affordance, not an image.
+- Mobile Training Center hero is an entry card, not a marketing banner: keep it compact, with a smaller title/subtitle/label, lower-opacity Aa watermark, and a slightly smaller right-side Aa illustration.
+- The four mobile Training Center cards should read as one reusable component system: same two-column grid, same internal padding, same row height, aligned titles, meta directly below titles, consistent right-side illustration position, and a smaller softer circular arrow near the bottom-right.
 - Desktop Training Center module cards use the same real `ModuleCard` system: text left, decorative learning icon right, real arrow button fixed at bottom-right.
 - Word-category cards now use generated blue/yellow English-learning assets and should remain compact, lightweight cards rather than old plain buttons.
 - Reading level cards use the shared `ReadingPickerContent` style: four light educational cards on desktop, compact responsive layout on smaller screens, real badges/counts/helper text, decorative CSS art, and a real circular arrow affordance.
 - Reading article selection uses vertical rows, not horizontal module cards: left decorative icon block, center real title/source/time text, right real circular arrow.
 - The old standalone reading list surface is not part of the design system; all reading entry points should visually read as part of the Training Center inline picker.
+
+## Auth Modal
+- Login/register opens in a centered rounded white modal with a soft blue border, subtle blue shadow, and circular close button.
+- The modal owns the whole account UI: title/subtitle, two real stat cards for 已学习单词 and 已掌握单词, segmented 登录/注册 control, icon-leading email/code inputs, primary blue verification button, and real status/error text.
+- Keep the existing email verification flow: sending a code when the code field is empty, completing login/register when a code is present.
+- Mobile auth modal keeps side margins and can scroll within the viewport; desktop auth modal stays centered at a constrained width.
 
 ## Mobile Status Cards
 - Status cards stack with 16px gaps on mobile.
