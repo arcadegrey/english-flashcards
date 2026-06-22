@@ -1,120 +1,107 @@
 # COMPONENT SYSTEM
 
---------------------------------
-# APP SHELL
-<AppLayout>
-<Sidebar>
-<Topbar>
-<MobileTopbar>
-<MobileBottomNav>
-<Content>
+## App Shell
 
-App shell rules:
-- Desktop pages must reuse <AppLayout> chrome or directly import the exact shared components from `src/components/layout/Sidebar.jsx` and `src/components/layout/Topbar.jsx` when a page has a specialized internal layout.
-- Do not create a second desktop sidebar or topbar class family for a page-specific redesign.
-- Desktop <Topbar> visible actions must match the approved 今日计划 slots: calendar, theme toggle, notification, and account chip. Page-specific search, sync, filters, mode menus, and progress controls must live in page content panels unless the design system explicitly promotes them to every page.
-- Training Center has no search component in either topbar or content. Keep discovery through the four module cards and inline picker panels.
-- `src/components/layout/AppLayout.jsx` is only the shell composer. The canonical chrome lives in `Sidebar.jsx`, `Topbar.jsx`, `MobileAppChrome.jsx`, and shared icons in `icons.jsx`, extracted from the approved 今日计划 chrome.
-- `AppLayout` may receive `className="ds-app-layout--mobile-study"` for mobile word-learning only. That modifier hides generic mobile chrome and supports the dedicated clean flashcard study layout.
-- `Sidebar.jsx` owns the desktop “连续学习” card at the bottom of the sidebar. Keep it shared and hidden in collapsed/mobile layouts; do not recreate it inside page content.
+Canonical components:
 
---------------------------------
-# CARDS
-<BaseCard>
-<HeroCard>
-<ModuleCard>
-<StatCard>
-<StatusCard>
+- `AppLayout`
+- `Sidebar`
+- `Topbar`
+- `MobileTopbar`
+- `MobileBottomNav`
 
-Card rules:
-- Cards own structure, spacing, radius, elevation, and responsive behavior.
-- Decorative images may be passed into cards, but card text/actions stay real components.
-- Do not create one-off card markup for new pages.
-- New or redesigned cards should follow the Test page card language: white or softly tinted white surfaces, subtle semantic borders, soft blue-tinted elevation, real selected indicators, and hover lift.
-- ModuleCard supports `iconSrc` and `artSrc` for decorative PNG assets. Prefer these over emoji in production UI.
-- ModuleCard also supports `variant`, which adds an `is-{variant}` class for visual tuning only. It must not change routing or learning behavior.
-- ModuleCard automatically marks cards with decorative art using `has-art`; CSS can use this to position text and illustrations without adding one-off markup.
-- ModuleCard text, metadata, and arrow affordance remain real DOM.
+Rules:
 
---------------------------------
-# BUTTONS
-<PrimaryButton>
-<SecondaryButton>
-<IconButton>
+- Desktop pages reuse the shared `AppLayout` chrome or directly import the canonical `Sidebar.jsx` and `Topbar.jsx` for specialized layouts.
+- Do not create page-local desktop sidebars or topbars.
+- Desktop Topbar visible actions stay identical to 今日计划: calendar, theme toggle, notification, and account chip.
+- `AppLayout` may receive `className="ds-app-layout--mobile-study"` only for mobile word-learning.
+- `Sidebar.jsx` owns the shared desktop “连续学习” card.
 
-Button rules:
-- Primary buttons use the current primary blue gradient.
-- Secondary buttons use a soft tinted or white surface.
-- Status/action pills inside cards must share one rounded soft style.
-- Buttons must remain real button elements.
-- Theme toggle uses <IconButton> and the existing theme context; do not create a separate theme state.
+## UI Components
 
---------------------------------
-# PROGRESS
-<CircularProgress>
-<LinearProgress>
+Cards:
 
-Progress rules:
+- `BaseCard`
+- `HeroCard`
+- `ModuleCard`
+- `StatCard`
+- `StatusCard`
+
+Buttons:
+
+- `PrimaryButton`
+- `SecondaryButton`
+- `IconButton`
+
+Progress:
+
+- `CircularProgress`
+- `LinearProgress`
+
+Rules:
+
+- Cards own structure, spacing, radius, elevation, hover, and responsive behavior.
+- Buttons remain real `button` elements.
 - Progress values are real CSS/SVG/frontend state, never baked into images.
-- Circular progress is used in the hero core progress widget.
-- Linear progress is used in task/status cards.
+- Theme toggle uses `IconButton` and existing theme context.
+- New or redesigned surfaces should follow the Test page white/blue card language.
 
---------------------------------
-# MODULES
-<VocabularyModule>
-<ReadingModule>
-<ReviewModule>
-<TestModule>
-<ReadingPickerContent>
-<ReadingSessionView>
-<WordCard>
+## Module Components
 
-Homepage modules:
-- HeroCard: left copy, center progress/action widget, right decorative asset.
-- PlanStatusCards: review and new-word cards with real text/actions and decorative assets.
-- StatsRow: real stat values with generated icon assets.
-- Training center modules: four ModuleCards for 背单词 / 做阅读 / 今日复习 / 做测试, using consistent white card surfaces and generated English-learning assets for art.
-- Training center word categories: six ModuleCards for 全部单词 / 日常常用 / 四级核心 / 六级核心 / 托福词汇 / 雅思词汇. They use compact blue/yellow category art and real text/count/arrow.
-- On mobile, 背单词 opens the existing word-category picker instead of immediately starting all-word learning.
-- On desktop and mobile, 做阅读 opens the inline reading category picker instead of jumping to the old reading list first.
-- The sidebar/mobile 阅读 navigation also opens the Training Center reading picker. It must not open a separate reading list page.
-- Reading picker UI is shared through `src/components/reading/ReadingPicker.jsx`: reading level cards and article rows must be edited there, then reused by Training Center.
-- Reading article UI lives in `src/components/ReadingSessionView.jsx`. It must reuse `AppLayout`, `Sidebar`, `Topbar`, and `MobileAppChrome`; do not reintroduce a page-local desktop reading topbar.
-- Reading article content follows the word-learning study structure: goal strip, large study card, desktop status aside, real bottom action buttons, and QuickMenu inside the content area.
-- StatsRow is a unified Daily Progress component with a title section, three real stats, aligned icon/value/label groups, and subtle dividers.
+Core module surfaces:
 
-Mobile word-learning module:
-- Uses a dedicated study header: back button, `背单词`, and current/total progress pill.
-- Keeps the 今日目标 progress strip and the real word card.
-- Shows exactly three bottom actions in one horizontal row: 不认识 / 显示提示 / 认识了.
-- Hides the desktop learning-status aside on mobile, including 学习进度, 连续打卡, 剩余词汇 summary, and 坚持每天进步.
-- The generic mobile topbar and mobile bottom nav are hidden on this screen only.
-- Word learning card UI lives in `src/components/WordCard.jsx`. Do not restore old `CategorySelector.jsx`, old `components/Progress.jsx`, or generic `Card.jsx` as separate UI surfaces.
+- `VocabularyModule`
+- `ReadingModule`
+- `ReviewModule`
+- `TestModule`
+- `ReadingPickerContent`
+- `ReadingSessionView`
+- `WordCard`
 
-Exam practice module:
+Training Center:
+
+- Four main `ModuleCard` entries: 背单词 / 做阅读 / 今日复习 / 做测试.
+- Six compact word-category `ModuleCard` entries: 全部单词 / 日常常用 / 四级核心 / 六级核心 / 托福词汇 / 雅思词汇.
+- 背单词 opens the word picker; 做阅读 opens the reading picker.
+- Sidebar/mobile 阅读 also opens the Training Center reading picker.
+- Reading picker UI is shared in `src/components/reading/ReadingPicker.jsx`.
+
+Reading session:
+
+- Lives in `src/components/ReadingSessionView.jsx`.
+- Uses shared `AppLayout`.
+- Keeps goal strip, large reading card, desktop status aside, real bottom actions, and QuickMenu inside content.
+
+Word learning:
+
+- Word card UI lives in `src/components/WordCard.jsx`.
+- Mobile word-learning shows only the dedicated header, goal strip, word card, and three bottom actions: 不认识 / 显示提示 / 认识了.
+- Do not restore old `CategorySelector.jsx`, old `components/Progress.jsx`, or generic `Card.jsx`.
+
+Exam practice:
+
 - `ExamPracticeView` is the range and mode selection surface.
-- `ExamPracticeView` is also the approved visual benchmark for the rest of the product. Its white panels, blue selected state, semantic pastel mode cards, real progress bars, and transparent 3D PNG mode icons should guide future page updates.
-- `LearningView` renders the four internal exam modes when `mode !== "learn"`.
-- Internal exam modes must use the shared exam shell: control card, thin progress bar, and centered answer card.
-- The exam control card contains 返回, question count, and QuickMenu only. Do not add sync/account state there; the global Topbar account chip owns that status.
-- `Quiz`, `FillBlank`, `SpellingTest`, and `MatchingTest` keep their existing answer logic and stats, but their visual presentation is scoped through `.learn-refresh-main--assessment`.
+- `LearningView` renders internal modes when `mode !== "learn"`.
+- Internal exam modes share the focused shell: control card, thin progress bar, centered answer card.
+- Control card contains 返回, question count, and QuickMenu only.
 
---------------------------------
-# RULE
-Only use these components.
-No custom UI allowed.
+## Asset Props
 
---------------------------------
-# ASSET RULE
-Generated assets are allowed only as props or decorative children of system components:
-- hero illustration
-- card-side illustration
-- stat icon
-- empty-state artwork
-- module artwork
-- training-center category artwork
+`ModuleCard` supports:
 
-Do not use generated images for:
+- `iconSrc`
+- `artSrc`
+- `variant`
+
+Rules:
+
+- Decorative images may be passed into cards, but card text/actions stay real DOM.
+- `variant` may tune visuals only; it must not change routing or learning behavior.
+- Prefer transparent PNG assets over emoji in production UI.
+
+## Do Not Use Generated Images For
+
 - buttons
 - text
 - navigation

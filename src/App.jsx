@@ -214,10 +214,15 @@ const areProgressStatesEqual = (left, right) => {
   )
 }
 
+const serializeProgressState = (progress) => JSON.stringify(normalizeProgressState(progress))
+
+const isBrowserOnline = () => typeof navigator === 'undefined' || navigator.onLine !== false
+
 const getSyncStatusText = ({ authLoading, hasUser, syncState, lastSyncedAt }) => {
   if (authLoading) return '初始化中'
   if (!hasUser) return '未登录'
   if (syncState === 'syncing') return '同步中'
+  if (syncState === 'pending') return '待同步'
   if (syncState === 'error') return '同步失败'
   if (syncState === 'synced' && lastSyncedAt) return `已同步 ${lastSyncedAt}`
   return '已连接'
@@ -412,6 +417,9 @@ function AppContent() {
   const skipNextCloudPushRef = useRef(false)
   const cloudSyncTimerRef = useRef(null)
   const cloudProgressVersionRef = useRef('')
+  const latestProgressRef = useRef(null)
+  const lastSyncedProgressRef = useRef('')
+  const progressDirtyRef = useRef(false)
   const [showAuthModal, setShowAuthModal] = useState(false)
   const [homeAccountNotice, setHomeAccountNotice] = useState(null)
   const [authTransition, setAuthTransition] = useState(null)
@@ -454,6 +462,19 @@ function AppContent() {
       }),
     [masteredWordIdSet, vocabularyLookup]
   )
+
+  const currentProgress = useMemo(
+    () => ({
+      learnedWords,
+      masteredWords,
+      customWords,
+      wordProgress,
+      wrongWords,
+      studyHistory,
+    }),
+    [customWords, learnedWords, masteredWords, studyHistory, wordProgress, wrongWords]
+  )
+  latestProgressRef.current = currentProgress
   const selectedReading = useMemo(
     () => readingLibrary.find((item) => String(item.id) === String(selectedReadingId)) || null,
     [readingLibrary, selectedReadingId]
@@ -870,11 +891,23 @@ function AppContent() {
   const pushProgressToCloud = useCallback(async (session, user, progress, options = {}) => {
     if (!cloudEnabled || !session?.access_token || !user?.id) return ''
 
+    if (!isBrowserOnline()) {
+      progressDirtyRef.current = true
+      setSyncState('pending')
+      setSyncError('网络恢复后将自动同步')
+      if (options.requireOnline) {
+        throw new Error('当前网络不可用，恢复后将自动同步。')
+      }
+      return ''
+    }
+
+    const progressToSync = normalizeProgressState(progress || latestProgressRef.current || {})
+
     setSyncState('syncing')
     setSyncError('')
 
     const syncResult = await upsertCloudProgress({
-      progress,
+      progress: progressToSync,
       baseUpdatedAt:
         typeof options.baseUpdatedAt === 'string'
           ? options.baseUpdatedAt
@@ -885,14 +918,7 @@ function AppContent() {
 
     if (syncResult?.conflictResolved && syncResult?.progress) {
       const hasDiff = !areProgressStatesEqual(
-        {
-          learnedWords,
-          masteredWords,
-          customWords,
-          wordProgress,
-          wrongWords,
-          studyHistory,
-        },
+        latestProgressRef.current,
         syncResult.progress
       )
       if (hasDiff) {
@@ -908,28 +934,31 @@ function AppContent() {
       minute: '2-digit',
     })
 
-    setSyncState('synced')
+    const syncedProgress = normalizeProgressState(syncResult?.progress || progressToSync)
+    const syncedSnapshot = serializeProgressState(syncedProgress)
+    const latestSnapshot = serializeProgressState(latestProgressRef.current || progressToSync)
+    lastSyncedProgressRef.current = syncedSnapshot
+
+    if (latestSnapshot === syncedSnapshot) {
+      progressDirtyRef.current = false
+      setSyncState('synced')
+      setSyncError('')
+    } else {
+      progressDirtyRef.current = true
+      setSyncState('pending')
+      setSyncError('')
+    }
+
     setLastSyncedAt(syncedAtText)
-    setSyncError('')
     return syncedAtText
-  }, [applyMergedProgress, cloudEnabled, customWords, learnedWords, masteredWords, studyHistory, wordProgress, wrongWords])
+  }, [applyMergedProgress, cloudEnabled])
 
   const hydrateFromCloud = useCallback(async ({ session, user }) => {
     if (!cloudEnabled || !session?.access_token || !user?.id) return
 
     const { progress: cloudProgress, updatedAt } = await loadCloudProgress()
 
-    const merged = mergeProgress(
-      {
-        learnedWords,
-        masteredWords,
-        customWords,
-        wordProgress,
-        wrongWords,
-        studyHistory,
-      },
-      cloudProgress
-    )
+    const merged = mergeProgress(latestProgressRef.current || {}, cloudProgress)
 
     applyMergedProgress(merged, { skipNextPush: true })
     cloudHydratedRef.current = true
@@ -937,13 +966,7 @@ function AppContent() {
   }, [
     applyMergedProgress,
     cloudEnabled,
-    customWords,
-    learnedWords,
-    masteredWords,
     pushProgressToCloud,
-    studyHistory,
-    wordProgress,
-    wrongWords,
   ])
 
   const ensureFreshSession = useCallback(async (session) => {
@@ -1011,6 +1034,41 @@ function AppContent() {
     bootstrap()
   }, [cloudEnabled, ensureFreshSession, hydrateFromCloud, localDataLoaded])
 
+  const flushCloudProgress = useCallback(() => {
+    if (!cloudEnabled || authLoading || !cloudHydratedRef.current) {
+      return Promise.resolve('')
+    }
+
+    if (!authSession?.access_token || !authUser?.id) {
+      return Promise.resolve('')
+    }
+
+    const progress = latestProgressRef.current || currentProgress
+    const progressSnapshot = serializeProgressState(progress)
+    if (!progressDirtyRef.current && progressSnapshot === lastSyncedProgressRef.current) {
+      return Promise.resolve('')
+    }
+
+    if (!isBrowserOnline()) {
+      progressDirtyRef.current = true
+      setSyncState('pending')
+      setSyncError('网络恢复后将自动同步')
+      return Promise.resolve('')
+    }
+
+    if (cloudSyncTimerRef.current) {
+      clearTimeout(cloudSyncTimerRef.current)
+      cloudSyncTimerRef.current = null
+    }
+
+    return pushProgressToCloud(authSession, authUser, progress).catch((error) => {
+      progressDirtyRef.current = true
+      setSyncState('error')
+      setSyncError(error?.message || '自动同步失败')
+      throw error
+    })
+  }, [authLoading, authSession, authUser, cloudEnabled, currentProgress, pushProgressToCloud])
+
   useEffect(() => {
     if (!cloudEnabled || authLoading || !cloudHydratedRef.current) {
       return
@@ -1022,26 +1080,42 @@ function AppContent() {
 
     if (skipNextCloudPushRef.current) {
       skipNextCloudPushRef.current = false
+      const currentSnapshot = serializeProgressState(currentProgress)
+      if (currentSnapshot === lastSyncedProgressRef.current) {
+        progressDirtyRef.current = false
+        setSyncState((previousState) => (previousState === 'syncing' ? previousState : 'synced'))
+      } else {
+        progressDirtyRef.current = true
+        setSyncState((previousState) => (previousState === 'syncing' ? previousState : 'pending'))
+      }
       return
     }
+
+    const progressSnapshot = serializeProgressState(currentProgress)
+    if (!progressDirtyRef.current && progressSnapshot === lastSyncedProgressRef.current) {
+      return
+    }
+
+    progressDirtyRef.current = true
+
+    if (!isBrowserOnline()) {
+      setSyncState('pending')
+      setSyncError('网络恢复后将自动同步')
+      return
+    }
+
+    setSyncState((previousState) => (previousState === 'syncing' ? previousState : 'pending'))
+    setSyncError('')
 
     if (cloudSyncTimerRef.current) {
       clearTimeout(cloudSyncTimerRef.current)
     }
 
     cloudSyncTimerRef.current = setTimeout(() => {
-      pushProgressToCloud(authSession, authUser, {
-        learnedWords,
-        masteredWords,
-        customWords,
-        wordProgress,
-        wrongWords,
-        studyHistory,
-      }).catch((error) => {
-        setSyncState('error')
-        setSyncError(error?.message || '自动同步失败')
+      flushCloudProgress().catch(() => {
+        // Error state is set inside flushCloudProgress.
       })
-    }, 800)
+    }, 1200)
 
     return () => {
       if (cloudSyncTimerRef.current) {
@@ -1053,14 +1127,41 @@ function AppContent() {
     authSession,
     authUser,
     cloudEnabled,
-    customWords,
-    learnedWords,
-    masteredWords,
-    wordProgress,
-    wrongWords,
-    studyHistory,
-    pushProgressToCloud,
+    currentProgress,
+    flushCloudProgress,
   ])
+
+  useEffect(() => {
+    if (!cloudEnabled) return undefined
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'hidden') {
+        flushCloudProgress().catch(() => {})
+      }
+    }
+
+    const handlePageHide = () => {
+      flushCloudProgress().catch(() => {})
+    }
+
+    const handleOnline = () => {
+      if (progressDirtyRef.current) {
+        setSyncState('pending')
+        setSyncError('')
+      }
+      flushCloudProgress().catch(() => {})
+    }
+
+    document.addEventListener('visibilitychange', handleVisibilityChange)
+    window.addEventListener('pagehide', handlePageHide)
+    window.addEventListener('online', handleOnline)
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange)
+      window.removeEventListener('pagehide', handlePageHide)
+      window.removeEventListener('online', handleOnline)
+    }
+  }, [cloudEnabled, flushCloudProgress])
 
   const handleAuthLogin = async ({ email, password, verificationCode }) => {
     if (!cloudEnabled) {
@@ -1159,6 +1260,14 @@ function AppContent() {
   }
 
   const handleAuthLogout = async () => {
+    if (authSession?.access_token && authUser?.id) {
+      try {
+        await flushCloudProgress()
+      } catch {
+        // Sign-out should still work if the final best-effort sync fails.
+      }
+    }
+
     if (authSession?.access_token) {
       try {
         await signOut()
@@ -1176,6 +1285,8 @@ function AppContent() {
     setLastSyncedAt('')
     cloudProgressVersionRef.current = ''
     cloudHydratedRef.current = false
+    lastSyncedProgressRef.current = ''
+    progressDirtyRef.current = false
   }
 
   const handleManualSync = async () => {
@@ -1183,14 +1294,12 @@ function AppContent() {
       throw new Error('请先登录账号')
     }
 
-    const syncedAtText = await pushProgressToCloud(authSession, authUser, {
-      learnedWords,
-      masteredWords,
-      customWords,
-      wordProgress,
-      wrongWords,
-      studyHistory,
-    })
+    const syncedAtText = await pushProgressToCloud(
+      authSession,
+      authUser,
+      latestProgressRef.current || currentProgress,
+      { requireOnline: true }
+    )
     return { message: syncedAtText ? `同步完成（${syncedAtText}）` : '同步完成。' }
   }
 
