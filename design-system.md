@@ -98,7 +98,10 @@ Production module/category icons should use assets from `public/images/ui-assets
 
 - Training Center keeps: hero -> four modules -> inline word/reading picker panels -> motivation band -> Daily Progress.
 - Training Center has no search bar.
+- 今日计划的“调整计划”进入真实计划设置页；设置控件必须是真实按钮/状态，并沿用测试页白蓝大卡节奏。
 - Reading sessions use the blue-white learning surface: goal strip, large reading card, compact metadata chips, desktop status aside, real bottom actions.
+- Reading picker cards follow the Test page practice-mode rhythm: large white/tinted two-column cards with real text, icon/badge, helper copy, and circular arrow affordance.
 - Word collection pages use shared `AppLayout`; tools live inside the content panel.
 - Exam sessions use: control card -> thin progress bar -> centered answer card.
+- Mobile exam range controls sit above the section title as compact real buttons, so the title/subtitle and range cards never overlap.
 - Auth modal stays a real form with email verification flow, stat cards, segmented login/register, and status/error text.

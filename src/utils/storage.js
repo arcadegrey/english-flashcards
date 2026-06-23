@@ -14,6 +14,7 @@ const STORAGE_KEYS = {
   WRONG_WORDS: 'flashcards_wrong_words',
   CUSTOM_WORDS: 'flashcards_custom_words',
   AUTH_SESSION: 'flashcards_auth_session',
+  DAILY_NEW_WORD_TARGET: 'flashcards_daily_new_word_target',
 };
 
 export const storage = {
@@ -115,6 +116,25 @@ export const storage = {
       localStorage.removeItem(STORAGE_KEYS.AUTH_SESSION);
     } catch (error) {
       console.error('Failed to clear auth session:', error);
+    }
+  },
+
+  getDailyNewWordTarget: () => {
+    try {
+      const raw = Number(localStorage.getItem(STORAGE_KEYS.DAILY_NEW_WORD_TARGET));
+      return [10, 15, 25, 40].includes(raw) ? raw : 15;
+    } catch (error) {
+      console.error('Failed to load daily new word target:', error);
+      return 15;
+    }
+  },
+
+  setDailyNewWordTarget: (target) => {
+    try {
+      const safeTarget = [10, 15, 25, 40].includes(Number(target)) ? Number(target) : 15;
+      localStorage.setItem(STORAGE_KEYS.DAILY_NEW_WORD_TARGET, String(safeTarget));
+    } catch (error) {
+      console.error('Failed to save daily new word target:', error);
     }
   },
 

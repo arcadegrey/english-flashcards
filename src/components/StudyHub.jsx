@@ -22,10 +22,11 @@ function StudyHub({
   todayWordsMastered = 0,
   suggestedReading = null,
   studyHistory = [],
+  newWordTarget = 15,
+  onAdjustPlan,
   isDarkTheme = false,
   onThemeToggle,
 }) {
-  const newWordTarget = 15;
   const reviewTaskComplete = reviewCount === 0;
   const newWordProgress = Math.min(todayWordsLearned, newWordTarget);
   const priorityTask = reviewCount > 0
@@ -134,7 +135,7 @@ function StudyHub({
           newWordTarget={newWordTarget}
           wordCount={wordCount}
           onReview={onOpenTodayReview}
-          onWords={onOpenWordStudy}
+          onWords={onAdjustPlan || onOpenWordStudy}
         />
 
         <StatsRow streak="3" target={newWordTarget} remaining={wordCount} />

@@ -109,6 +109,7 @@ When updating older pages, keep their behavior and state unchanged, but restyle 
 - move page-specific controls into content panels
 - use decorative 3D PNGs only for module art, hero art, stat icons, and empty states
 - keep real DOM for all actions, counters, progress, and text
+- reading level and article picker cards should mirror the Test page practice-mode card rhythm when they appear inside Training Center
 
 Priority pages to align next:
 - 今日计划

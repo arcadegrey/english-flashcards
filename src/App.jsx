@@ -19,6 +19,7 @@ import WordCollectionView from './components/WordCollectionView'
 import ToeflSelectionView from './components/ToeflSelectionView'
 import ReadingSessionView from './components/ReadingSessionView'
 import ExamPracticeView from './components/ExamPracticeView'
+import PlanSettingsView from './components/PlanSettingsView'
 import AuthPanel from './components/AuthPanel'
 import { storage } from './utils/storage'
 import { buildWordLookup, isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from './utils/readingText'
@@ -391,6 +392,7 @@ function AppContent() {
   const [wordProgress, setWordProgress] = useState({})
   const [studyHistory, setStudyHistory] = useState([])
   const [customWords, setCustomWords] = useState([])
+  const [dailyNewWordTarget, setDailyNewWordTarget] = useState(() => storage.getDailyNewWordTarget())
   const [vocabulary, setVocabulary] = useState([])
   const [vocabularyLoading, setVocabularyLoading] = useState(true)
   const [vocabularyError, setVocabularyError] = useState('')
@@ -1818,6 +1820,15 @@ function AppContent() {
     setView('examPractice')
   }
 
+  const handleOpenPlanSettings = () => {
+    setView('planSettings')
+  }
+
+  const handleSelectDailyNewWordTarget = (target) => {
+    storage.setDailyNewWordTarget(target)
+    setDailyNewWordTarget(storage.getDailyNewWordTarget())
+  }
+
   const handleStartExamPractice = async (nextMode, scope = examScope) => {
     pendingStartWordIdRef.current = null
     setAssessmentBackTarget('examPractice')
@@ -2099,6 +2110,7 @@ function AppContent() {
       view === 'masteredWords' ||
       view === 'todayReview' ||
       view === 'wrongWords' ||
+      view === 'planSettings' ||
       view === 'readingSession' ||
       view === 'statistics' ||
       view === 'examPractice'
@@ -2191,8 +2203,23 @@ function AppContent() {
             todayWordsMastered={todayStudyStats.wordsMastered}
             suggestedReading={suggestedReading}
             studyHistory={studyHistory}
+            newWordTarget={dailyNewWordTarget}
+            onAdjustPlan={handleOpenPlanSettings}
             isDarkTheme={isDark}
             onThemeToggle={toggleTheme}
+          />
+        )
+      case 'planSettings':
+        return (
+          <PlanSettingsView
+            navItems={selectionNavItems}
+            topbarProps={selectionTopbarProps}
+            dailyTarget={dailyNewWordTarget}
+            todayWordsLearned={todayStudyStats.wordsLearned}
+            wordCount={wordCounts.all}
+            onSelectDailyTarget={handleSelectDailyNewWordTarget}
+            onBack={handleBackToStudyHub}
+            onStartLearning={handleOpenWordStudy}
           />
         )
       case 'examPractice':
@@ -2262,6 +2289,7 @@ function AppContent() {
             onThemeToggle={toggleTheme}
             panelRequest={homePanelRequest}
             studyHistory={studyHistory}
+            dailyTarget={dailyNewWordTarget}
           />
         )
       case 'readingSession':
@@ -2527,6 +2555,7 @@ function AppContent() {
 
   if (
     view === 'studyHub' ||
+    view === 'planSettings' ||
     view === 'home' ||
     view === 'learn' ||
     view === 'learnedWords' ||

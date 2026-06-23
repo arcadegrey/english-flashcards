@@ -33,6 +33,7 @@ function HomeScreen({
   todayReviewWordIds = [],
   wrongWordIds = [],
   studyHistory = [],
+  dailyTarget = 15,
   onOpenLearnedWords,
   onOpenMasteredWords,
   onOpenTodayReview,
@@ -323,7 +324,7 @@ function HomeScreen({
 
         <MotivationBand />
 
-        <StatsRow streak="3" target="15" remaining={wordCounts.all || 0} />
+        <StatsRow streak="3" target={dailyTarget} remaining={wordCounts.all || 0} />
       </div>
     </AppLayout>
   );

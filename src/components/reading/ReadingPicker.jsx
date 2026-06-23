@@ -71,11 +71,13 @@ export function ReadingLevelCard({ level, onClick }) {
         <ReadingLevelIcon levelId={level.id} label={level.title} />
       </span>
       <ReadingLevelArt levelId={level.id} />
-      <span className="reading-level-title">{level.title}</span>
-      <span className="reading-level-count">{count} 篇文章</span>
-      <span className="reading-level-helper">
-        <span />
-        {meta.helper}
+      <span className="reading-level-copy">
+        <span className="reading-level-title">{level.title}</span>
+        <span className="reading-level-count">{count} 篇文章</span>
+        <span className="reading-level-helper">
+          <span />
+          {meta.helper}
+        </span>
       </span>
       <span className="reading-level-arrow" aria-hidden="true">
         <svg viewBox="0 0 24 24">
