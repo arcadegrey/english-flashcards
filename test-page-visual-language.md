@@ -63,7 +63,7 @@ Topbar:
 Sidebar:
 - Keep the strong blue selected navigation pill.
 - Keep the small yellow active indicator.
-- Keep the shared desktop streak card at the bottom.
+- If the desktop streak card is present, it must use real learning history rather than fixed display data.
 
 --------------------------------
 # CARD STYLE

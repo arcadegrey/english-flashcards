@@ -21,6 +21,7 @@ function StudyHub({
   todayWordsLearned = 0,
   todayWordsMastered = 0,
   suggestedReading = null,
+  studyHistory = [],
   isDarkTheme = false,
   onThemeToggle,
 }) {
@@ -114,6 +115,7 @@ function StudyHub({
         isDarkTheme,
         onUserClick: onAuthOpen,
         userLabel: authUser?.email ? '学习者' : syncStatusText || '学习者',
+        sidebarProps: { studyHistory },
       }}
     >
       <div className="ds-stack">

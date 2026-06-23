@@ -63,6 +63,7 @@ Current UI direction:
 
 - 测试页白蓝视觉语言是全站母版。
 - 桌面端使用共享 `AppLayout`、`Sidebar.jsx`、`Topbar.jsx`。
+- 桌面端 `Sidebar.jsx` 当前包含真实“连续学习”卡：连续天数和本周点亮状态来自 `studyHistory`，不能再写死固定天数；无行为的“收起菜单”已删除。
 - 移动端使用共享 `MobileTopbar` 和 `MobileBottomNav`。
 - 手机端单词学习页是唯一 app-shell 例外，使用 `.ds-app-layout--mobile-study`。
 - 透明装饰资产位于 `public/images/ui-assets/`，只用于装饰图标、插画和空状态。

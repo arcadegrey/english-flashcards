@@ -8,16 +8,18 @@ export function Content({ children }) {
   return <main className="ds-content">{children}</main>;
 }
 
-function AppLayout({ active, navItems, title, subtitle, topbarProps = {}, className = '', children }) {
+function AppLayout({ active, navItems, title, subtitle, topbarProps = {}, sidebarProps = {}, className = '', children }) {
+  const { sidebarProps: topbarSidebarProps = {}, ...safeTopbarProps } = topbarProps;
+
   return (
     <div className={`ds-app-layout ${className}`.trim()}>
-      <Sidebar active={active} items={navItems} />
+      <Sidebar active={active} items={navItems} {...topbarSidebarProps} {...sidebarProps} />
       <div className="ds-main-shell">
-        <Topbar title={title} subtitle={subtitle} {...topbarProps} />
-        <MobileTopbar title={title} {...topbarProps} />
+        <Topbar title={title} subtitle={subtitle} {...safeTopbarProps} />
+        <MobileTopbar title={title} {...safeTopbarProps} />
         <Content>{children}</Content>
       </div>
-      <MobileBottomNav active={active} items={navItems} onUserClick={topbarProps.onUserClick} />
+      <MobileBottomNav active={active} items={navItems} onUserClick={safeTopbarProps.onUserClick} />
     </div>
   );
 }

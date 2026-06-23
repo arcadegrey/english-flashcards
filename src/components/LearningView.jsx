@@ -38,6 +38,7 @@ function LearningView({
   isDarkTheme = false,
   onUserClick,
   userLabel = '学习者',
+  studyHistory = [],
 }) {
   const [hintOpenForWordId, setHintOpenForWordId] = useState(null);
   const [toast, setToast] = useState('');
@@ -338,6 +339,7 @@ function LearningView({
           onNotify: onOpenWrongWords || onOpenTodayReview,
           onUserClick: onUserClick || onHome,
           userLabel,
+          sidebarProps: { studyHistory },
         }}
       >
         <div ref={mainRef} className="learn-refresh-main learn-refresh-main--study">
@@ -365,6 +367,7 @@ function LearningView({
         onNotify: onOpenWrongWords || onOpenTodayReview,
         onUserClick: onUserClick || onHome,
         userLabel,
+        sidebarProps: { studyHistory },
       }}
     >
       <main ref={mainRef} className="learn-refresh-main learn-refresh-main--assessment">

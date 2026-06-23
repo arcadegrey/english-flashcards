@@ -16,7 +16,7 @@ Rules:
 - Do not create page-local desktop sidebars or topbars.
 - Desktop Topbar visible actions stay identical to 今日计划: calendar, theme toggle, notification, and account chip.
 - `AppLayout` may receive `className="ds-app-layout--mobile-study"` only for mobile word-learning.
-- `Sidebar.jsx` owns the shared desktop “连续学习” card.
+- `Sidebar.jsx` may show the desktop “连续学习” card only from real `studyHistory`; do not hardcode streak values.
 
 ## UI Components
 

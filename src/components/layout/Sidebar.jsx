@@ -1,6 +1,65 @@
 import { appShellIcons } from './icons';
 
-function Sidebar({ active = 'plan', items = [] }) {
+const WEEK_DAYS = ['一', '二', '三', '四', '五', '六', '日'];
+
+const toDateKey = (date) => date.toISOString().split('T')[0];
+
+const getActiveDates = (studyHistory) =>
+  new Set(
+    (Array.isArray(studyHistory) ? studyHistory : [])
+      .filter((item) => Number(item?.wordsLearned || 0) + Number(item?.wordsMastered || 0) > 0)
+      .map((item) => item.date)
+      .filter(Boolean)
+  );
+
+const calculateStreak = (activeDates) => {
+  const today = new Date();
+  const todayKey = toDateKey(today);
+  const cursor = new Date(today);
+  let streak = 0;
+
+  while (true) {
+    const dateKey = toDateKey(cursor);
+    if (activeDates.has(dateKey)) {
+      streak += 1;
+      cursor.setDate(cursor.getDate() - 1);
+      continue;
+    }
+
+    if (dateKey === todayKey) {
+      cursor.setDate(cursor.getDate() - 1);
+      continue;
+    }
+
+    break;
+  }
+
+  return streak;
+};
+
+const getCurrentWeek = (activeDates) => {
+  const today = new Date();
+  const day = today.getDay() || 7;
+  const monday = new Date(today);
+  monday.setDate(today.getDate() - day + 1);
+
+  return WEEK_DAYS.map((label, index) => {
+    const date = new Date(monday);
+    date.setDate(monday.getDate() + index);
+    return {
+      label,
+      dateKey: toDateKey(date),
+      isDone: activeDates.has(toDateKey(date)),
+      isToday: toDateKey(date) === toDateKey(today),
+    };
+  });
+};
+
+function Sidebar({ active = 'plan', items = [], studyHistory = [] }) {
+  const activeDates = getActiveDates(studyHistory);
+  const streak = calculateStreak(activeDates);
+  const weekDays = getCurrentWeek(activeDates);
+
   return (
     <aside className="ds-sidebar">
       <div className="ds-brand">
@@ -23,7 +82,7 @@ function Sidebar({ active = 'plan', items = [] }) {
       </nav>
 
       <div className="ds-sidebar-foot">
-        <button type="button" className="ds-streak-card" aria-label="连续学习 12 天">
+        <div className="ds-streak-card" aria-label={`连续学习 ${streak} 天`}>
           <span className="ds-streak-head">
             <span className="ds-streak-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24">
@@ -32,27 +91,21 @@ function Sidebar({ active = 'plan', items = [] }) {
             </span>
             <span>
               <span className="ds-streak-label">连续学习</span>
-              <strong>12 天</strong>
-            </span>
-            <span className="ds-streak-arrow" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path d="m9 5 7 7-7 7" />
-              </svg>
+              <strong>{streak > 0 ? `${streak} 天` : '今天开始'}</strong>
             </span>
           </span>
           <span className="ds-streak-week" aria-hidden="true">
-            {['一', '二', '三', '四', '五', '六', '日'].map((day, index) => (
-              <span key={day} className={index < 5 ? 'is-done' : ''}>
+            {weekDays.map((day) => (
+              <span
+                key={day.dateKey}
+                className={`${day.isDone ? 'is-done' : ''} ${day.isToday ? 'is-today' : ''}`.trim()}
+              >
                 <i />
-                <small>{day}</small>
+                <small>{day.label}</small>
               </span>
             ))}
           </span>
-        </button>
-        <button type="button" className="ds-sidebar-collapse">
-          <span aria-hidden="true">≪</span>
-          <span>收起菜单</span>
-        </button>
+        </div>
       </div>
     </aside>
   );

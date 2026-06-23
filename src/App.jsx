@@ -2158,6 +2158,7 @@ function AppContent() {
     isDarkTheme: isDark,
     onUserClick: () => setShowAuthModal(true),
     userLabel: authUser?.email ? '学习者' : authLoading ? '同步中' : '未登录',
+    sidebarProps: { studyHistory },
   }
 
   const renderView = () => {
@@ -2189,6 +2190,7 @@ function AppContent() {
             todayWordsLearned={todayStudyStats.wordsLearned}
             todayWordsMastered={todayStudyStats.wordsMastered}
             suggestedReading={suggestedReading}
+            studyHistory={studyHistory}
             isDarkTheme={isDark}
             onThemeToggle={toggleTheme}
           />
@@ -2259,6 +2261,7 @@ function AppContent() {
             isDarkTheme={isDark}
             onThemeToggle={toggleTheme}
             panelRequest={homePanelRequest}
+            studyHistory={studyHistory}
           />
         )
       case 'readingSession':
@@ -2410,6 +2413,7 @@ function AppContent() {
             onThemeToggle={toggleTheme}
             onUserClick={() => setShowAuthModal(true)}
             userLabel={authUser?.email ? '学习者' : authLoading ? '同步中' : '未登录'}
+            studyHistory={studyHistory}
           />
         )
       case 'statistics':
