@@ -12,6 +12,7 @@ function Topbar({
   notifyBadge,
   onThemeToggle,
   isDarkTheme = false,
+  onVoiceSettings,
   onSync,
   onUserClick,
   userLabel = '学习者',
@@ -48,6 +49,11 @@ function Topbar({
             onClick={onThemeToggle}
           >
             {isDarkTheme ? appShellIcons.sun : appShellIcons.moon}
+          </IconButton>
+        )}
+        {onVoiceSettings && (
+          <IconButton className="ds-voice-toggle" label="语音设置" onClick={onVoiceSettings}>
+            {appShellIcons.voice}
           </IconButton>
         )}
         {onSync && <IconButton label="同步账号" onClick={onSync}>{appShellIcons.sync}</IconButton>}

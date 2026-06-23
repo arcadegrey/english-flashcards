@@ -26,6 +26,7 @@ function StudyHub({
   onAdjustPlan,
   isDarkTheme = false,
   onThemeToggle,
+  onVoiceSettings,
 }) {
   const reviewTaskComplete = reviewCount === 0;
   const newWordProgress = Math.min(todayWordsLearned, newWordTarget);
@@ -114,6 +115,7 @@ function StudyHub({
         notifyBadge: wrongCount ? String(Math.min(wrongCount, 9)) : undefined,
         onThemeToggle,
         isDarkTheme,
+        onVoiceSettings,
         onUserClick: onAuthOpen,
         userLabel: authUser?.email ? '学习者' : syncStatusText || '学习者',
         sidebarProps: { studyHistory },

@@ -70,7 +70,7 @@ Desktop:
 - Use `Sidebar.jsx` and `Topbar.jsx` through `AppLayout`.
 - Sidebar labels: 今日计划 / 训练中心 / 单词 / 阅读 / 复习 / 测试 / 统计.
 - Sidebar may show a real “连续学习” card driven by `studyHistory`; fixed fake values are not allowed.
-- Topbar slots stay fixed: title/subtitle, calendar, theme toggle, notification, `Aa` account chip.
+- Topbar slots stay fixed: title/subtitle, calendar, theme toggle, voice settings, notification, `Aa` account chip.
 - Page-specific controls stay inside content panels.
 
 Mobile:

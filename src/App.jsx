@@ -21,6 +21,7 @@ import ReadingSessionView from './components/ReadingSessionView'
 import ExamPracticeView from './components/ExamPracticeView'
 import PlanSettingsView from './components/PlanSettingsView'
 import AuthPanel from './components/AuthPanel'
+import VoiceSettings from './components/VoiceSettings'
 import { storage } from './utils/storage'
 import { buildWordLookup, isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from './utils/readingText'
 import { calculateNextReview, getWordsForReview, initializeWordProgress } from './utils/spacedRepetition'
@@ -423,6 +424,7 @@ function AppContent() {
   const lastSyncedProgressRef = useRef('')
   const progressDirtyRef = useRef(false)
   const [showAuthModal, setShowAuthModal] = useState(false)
+  const [showVoiceSettings, setShowVoiceSettings] = useState(false)
   const [homeAccountNotice, setHomeAccountNotice] = useState(null)
   const [authTransition, setAuthTransition] = useState(null)
   const homeNoticeTimerRef = useRef(null)
@@ -2168,6 +2170,7 @@ function AppContent() {
     notifyBadge: wrongWords.length ? String(Math.min(wrongWords.length, 9)) : undefined,
     onThemeToggle: toggleTheme,
     isDarkTheme: isDark,
+    onVoiceSettings: () => setShowVoiceSettings(true),
     onUserClick: () => setShowAuthModal(true),
     userLabel: authUser?.email ? '学习者' : authLoading ? '同步中' : '未登录',
     sidebarProps: { studyHistory },
@@ -2207,6 +2210,7 @@ function AppContent() {
             onAdjustPlan={handleOpenPlanSettings}
             isDarkTheme={isDark}
             onThemeToggle={toggleTheme}
+            onVoiceSettings={() => setShowVoiceSettings(true)}
           />
         )
       case 'planSettings':
@@ -2287,6 +2291,7 @@ function AppContent() {
             showAuthPanel={false}
             isDarkTheme={isDark}
             onThemeToggle={toggleTheme}
+            onVoiceSettings={() => setShowVoiceSettings(true)}
             panelRequest={homePanelRequest}
             studyHistory={studyHistory}
             dailyTarget={dailyNewWordTarget}
@@ -2439,6 +2444,7 @@ function AppContent() {
             onOpenWrongWords={handleOpenWrongWords}
             isDarkTheme={isDark}
             onThemeToggle={toggleTheme}
+            onVoiceSettings={() => setShowVoiceSettings(true)}
             onUserClick={() => setShowAuthModal(true)}
             userLabel={authUser?.email ? '学习者' : authLoading ? '同步中' : '未登录'}
             studyHistory={studyHistory}
@@ -2569,6 +2575,7 @@ function AppContent() {
     return (
       <div className={`min-h-screen ${appBackground}`}>
         {renderView()}
+        {showVoiceSettings && <VoiceSettings onClose={() => setShowVoiceSettings(false)} />}
         {renderAuthModal()}
         {renderAuthTransitionOverlay()}
       </div>
@@ -2578,6 +2585,7 @@ function AppContent() {
   return (
     <div className={`min-h-screen ${appBackground}`}>
       {renderView()}
+      {showVoiceSettings && <VoiceSettings onClose={() => setShowVoiceSettings(false)} />}
       {renderAuthModal()}
       {renderAuthTransitionOverlay()}
     </div>

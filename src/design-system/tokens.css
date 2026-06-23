@@ -842,6 +842,18 @@
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
+.ds-voice-toggle {
+  background: linear-gradient(135deg, rgba(79, 124, 255, 0.12), rgba(126, 166, 255, 0.14));
+  color: var(--ds-primary);
+  box-shadow: inset 0 0 0 1px rgba(79, 124, 255, 0.14);
+}
+
+.dark .ds-voice-toggle {
+  background: rgba(79, 124, 255, 0.12);
+  color: #b9ccff;
+  box-shadow: inset 0 0 0 1px rgba(126, 166, 255, 0.16);
+}
+
 .ds-badge-dot {
   position: absolute;
   right: 2px;
@@ -3970,6 +3982,33 @@
     height: 20px;
     font-size: 11px;
     box-shadow: 0 0 0 3px #ffffff;
+  }
+
+  @media (max-width: 430px) {
+    .ds-mobile-topbar {
+      padding-inline: 18px;
+      grid-template-columns: 44px minmax(0, 1fr) auto;
+      gap: 12px;
+    }
+
+    .ds-mobile-topbar h1 {
+      font-size: 22px;
+    }
+
+    .ds-mobile-actions {
+      gap: 4px;
+    }
+
+    .ds-mobile-topbar .ds-icon-button {
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+    }
+
+    .ds-mobile-topbar .ds-icon-button svg {
+      width: 22px;
+      height: 22px;
+    }
   }
 
   .dark .ds-mobile-topbar .ds-badge-dot {

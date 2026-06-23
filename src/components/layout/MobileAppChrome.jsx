@@ -8,6 +8,7 @@ export function MobileTopbar({
   notifyBadge,
   onThemeToggle,
   isDarkTheme = false,
+  onVoiceSettings,
   onUserClick,
 }) {
   return (
@@ -25,6 +26,11 @@ export function MobileTopbar({
             onClick={onThemeToggle}
           >
             {isDarkTheme ? appShellIcons.sun : appShellIcons.moon}
+          </IconButton>
+        )}
+        {onVoiceSettings && (
+          <IconButton className="ds-voice-toggle" label="语音设置" onClick={onVoiceSettings}>
+            {appShellIcons.voice}
           </IconButton>
         )}
         {onNotify && <IconButton label="通知" badge={notifyBadge} onClick={onNotify}>{appShellIcons.bell}</IconButton>}
