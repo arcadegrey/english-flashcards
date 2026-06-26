@@ -4,53 +4,48 @@
   "sampleRate": 24000,
   "pathPattern": "/audio/words/{voice}/{id}.mp3",
   "defaultVoices": [
-    "af_bella",
     "am_michael",
     "bf_emma",
     "bm_george"
   ],
-  "wordCount": 5399,
-  "generatedWordCount": 5399,
-  "start": 0,
+  "wordCount": 8699,
+  "generatedWordCount": 3300,
+  "pendingFileCount": 9900,
+  "start": 5399,
   "limit": 0,
+  "force": false,
   "voices": {
-    "af_bella": {
-      "done": 5399,
-      "generated": 5399,
-      "skipped": 0,
-      "failed": 0,
-      "bytes": 26726112,
-      "path": "af_bella/{id}.mp3",
-      "langCode": "a"
-    },
     "am_michael": {
-      "done": 5399,
-      "generated": 5399,
+      "done": 3300,
+      "generated": 3300,
       "skipped": 0,
       "failed": 0,
-      "bytes": 26312112,
+      "bytes": 15737976,
       "path": "am_michael/{id}.mp3",
-      "langCode": "a"
+      "langCode": "a",
+      "pendingOnly": true
     },
     "bf_emma": {
-      "done": 5399,
-      "generated": 5399,
+      "done": 3300,
+      "generated": 3300,
       "skipped": 0,
       "failed": 0,
-      "bytes": 19252512,
+      "bytes": 11215800,
       "path": "bf_emma/{id}.mp3",
-      "langCode": "b"
+      "langCode": "b",
+      "pendingOnly": true
     },
     "bm_george": {
-      "done": 5399,
-      "generated": 5399,
+      "done": 3300,
+      "generated": 3300,
       "skipped": 0,
       "failed": 0,
-      "bytes": 25958088,
+      "bytes": 15318360,
       "path": "bm_george/{id}.mp3",
-      "langCode": "b"
+      "langCode": "b",
+      "pendingOnly": true
     }
   },
   "failures": [],
-  "generatedAt": "2026-05-27T06:59:58Z"
+  "generatedAt": "2026-06-26T14:04:18Z"
 }

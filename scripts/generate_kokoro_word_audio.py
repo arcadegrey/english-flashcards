@@ -18,7 +18,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 VOCABULARY_PATH = PROJECT_ROOT / "public/data/vocabulary.json"
 OUTPUT_ROOT = PROJECT_ROOT / "public/audio/words"
 MANIFEST_PATH = OUTPUT_ROOT / "manifest.json"
-DEFAULT_VOICES = ["af_bella", "am_michael", "bf_emma"]
+DEFAULT_VOICES = ["af_bella", "am_michael", "bf_emma", "bm_george"]
 DEFAULT_REPO_ID = os.environ.get("KOKORO_REPO_ID", "hexgrad/Kokoro-82M")
 SAMPLE_RATE = 24000
 
@@ -31,6 +31,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--force", action="store_true", help="Regenerate files that already exist.")
     parser.add_argument("--bitrate", default="24", help="MP3 bitrate in kbps. Default: 24.")
     parser.add_argument("--output-root", default=str(OUTPUT_ROOT), help="Output root for word audio.")
+    parser.add_argument("--dry-run", action="store_true", help="Print missing files without generating audio.")
     return parser.parse_args()
 
 
@@ -102,6 +103,23 @@ def selected_words(vocabulary: List[Dict[str, Any]], start: int, limit: int) -> 
     return vocabulary
 
 
+def pending_words_for_voice(
+    words: List[Dict[str, Any]],
+    output_root: Path,
+    voice: str,
+    force: bool,
+) -> List[Dict[str, Any]]:
+    if force:
+        return words
+
+    pending = []
+    for item in words:
+        output_path = output_root / voice / f"{item['id']}.mp3"
+        if not output_path.exists():
+            pending.append(item)
+    return pending
+
+
 def main() -> None:
     args = parse_args()
     output_root = Path(args.output_root)
@@ -118,42 +136,70 @@ def main() -> None:
     failures = []
     voice_stats = {}
 
+    pending_by_voice = {
+        voice: pending_words_for_voice(words, output_root, voice, args.force)
+        for voice in voices
+    }
+    pending_total = sum(len(items) for items in pending_by_voice.values())
+
     print(
-        f"Generating Kokoro word audio: voices={voices}, words={len(words)}, bitrate={args.bitrate}kbps"
+        f"Generating Kokoro word audio: voices={voices}, selectedWords={len(words)}, "
+        f"pendingFiles={pending_total}, bitrate={args.bitrate}kbps"
     )
 
+    if args.dry_run:
+        for voice, pending_words in pending_by_voice.items():
+            print(f"[{voice}] pending={len(pending_words)}")
+            for item in pending_words[:20]:
+                print(f"  {item['id']}: {item['word']}")
+            if len(pending_words) > 20:
+                print(f"  ... {len(pending_words) - 20} more")
+        return
+
     for voice in voices:
+        pending_words = pending_by_voice[voice]
         lang_code = lang_code_for_voice(voice)
-        pipeline = get_pipeline(lang_code, pipelines)
         generated = 0
-        skipped = 0
         failed = 0
         total_bytes = 0
+        skipped = len(words) - len(pending_words)
 
-        for index, item in enumerate(words, start=1):
+        if not pending_words:
+            print(f"[{voice}] nothing to generate; all selected files already exist.")
+            voice_stats[voice] = {
+                "done": len(words),
+                "generated": 0,
+                "skipped": skipped,
+                "failed": 0,
+                "bytes": 0,
+                "path": f"{voice}/{{id}}.mp3",
+                "langCode": lang_code,
+                "pendingOnly": True,
+            }
+            continue
+
+        pipeline = get_pipeline(lang_code, pipelines)
+
+        for index, item in enumerate(pending_words, start=1):
             word_id = str(item["id"])
             word = str(item["word"]).strip()
             output_path = output_root / voice / f"{word_id}.mp3"
 
-            if output_path.exists() and not args.force:
-                skipped += 1
+            try:
+                audio = synthesize_word(pipeline, word, voice)
+                write_mp3(audio, output_path, args.bitrate)
+                generated += 1
                 total_bytes += output_path.stat().st_size
-            else:
-                try:
-                    audio = synthesize_word(pipeline, word, voice)
-                    write_mp3(audio, output_path, args.bitrate)
-                    generated += 1
-                    total_bytes += output_path.stat().st_size
-                except Exception as exc:
-                    failed += 1
-                    failures.append({"voice": voice, "id": word_id, "word": word, "error": str(exc)})
+            except Exception as exc:
+                failed += 1
+                failures.append({"voice": voice, "id": word_id, "word": word, "error": str(exc)})
 
-            if index == 1 or index % 100 == 0 or index == len(words):
+            if index == 1 or index % 100 == 0 or index == len(pending_words):
                 elapsed = max(time.time() - started_at, 0.1)
-                done = sum(stats.get("done", 0) for stats in voice_stats.values()) + index
+                done = sum(stats.get("generated", 0) + stats.get("failed", 0) for stats in voice_stats.values()) + index
                 print(
-                    f"[{voice}] {index}/{len(words)} generated={generated} skipped={skipped} "
-                    f"failed={failed} elapsed={elapsed:.1f}s done={done}/{len(words) * len(voices)}",
+                    f"[{voice}] {index}/{len(pending_words)} generated={generated} skipped={skipped} "
+                    f"failed={failed} elapsed={elapsed:.1f}s done={done}/{pending_total}",
                     flush=True,
                 )
 
@@ -165,6 +211,7 @@ def main() -> None:
             "bytes": total_bytes,
             "path": f"{voice}/{{id}}.mp3",
             "langCode": lang_code,
+            "pendingOnly": not args.force,
         }
 
     manifest = {
@@ -175,8 +222,10 @@ def main() -> None:
         "defaultVoices": voices,
         "wordCount": len(vocabulary),
         "generatedWordCount": len(words),
+        "pendingFileCount": pending_total,
         "start": args.start,
         "limit": args.limit,
+        "force": args.force,
         "voices": voice_stats,
         "failures": failures,
         "generatedAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),

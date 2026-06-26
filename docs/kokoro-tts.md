@@ -126,6 +126,7 @@ public/data/vocabulary.json
 - `af_bella`：美音女声
 - `am_michael`：美音男声
 - `bf_emma`：英音女声
+- `bm_george`：英音男声
 
 输出目录：
 
@@ -133,7 +134,7 @@ public/data/vocabulary.json
 public/audio/words/{voice}/{id}.mp3
 ```
 
-脚本会跳过已存在文件，适合新词导入后增量补齐。强制重生成：
+脚本默认只挑缺失的 MP3 生成；如果某个词和音色已经有文件，不会进入合成队列，也不会加载模型去重做旧音频。强制重生成：
 
 ```bash
 npm run tts:generate-words -- --force
@@ -145,14 +146,20 @@ npm run tts:generate-words -- --force
 npm run tts:generate-words -- --limit 100
 ```
 
+只预览新增词缺失音频：
+
+```bash
+npm run tts:generate-words -- --dry-run --start 5399
+```
+
 当前实测结果：
 
-- 3577 个单词
-- 3 个音色
-- 10731 个 MP3
+- 8699 个单词
+- 4 个音色
+- 单词音频：4 个音色本地均已补齐到 ID 8699
+- 例句音频：`af_bella` 本地已补齐到 ID 8699；`am_michael`、`bf_emma`、`bm_george` 的新增词例句仍待生成
 - 0 个失败
 - 编码：MP3，24 kbps，24 kHz，mono
-- 内容总字节约 46.27 MB；由于小文件 filesystem overhead，目录占用约 73 MB
 
 前端在 `Kokoro TTS` 模式下，单词发音会优先播放静态音频；如果文件不存在或播放失败，再 fallback 到实时 Kokoro / 浏览器 TTS。
 
@@ -216,6 +223,7 @@ VITE_WORD_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/aud
 - CORS 配置文件：`config/r2-word-audio-cors.json`
 - 线上 GitHub Actions 构建已设置 `VITE_WORD_AUDIO_BASE_URL`
 - 例句静态音频可设置 `VITE_EXAMPLE_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/examples`
+- 2026-06-26 上传新增单词音频时，当前 Wrangler 凭证对 `english-flashcards-audio` 返回 `403 Authentication error`；需要更换/补充具备 `Account R2 Storage:Edit` 的 `CLOUDFLARE_API_TOKEN` 后再上传。
 
 ## 批量生成例句静态音频
 
@@ -237,10 +245,16 @@ npm run tts:generate-examples -- --limit 20
 npm run tts:generate-examples
 ```
 
-如果中断，直接重新运行即可，脚本会跳过已存在的 MP3。需要重新生成时加 `--force`：
+如果中断，直接重新运行即可，脚本只会继续生成缺失的 MP3。需要重新生成时加 `--force`：
 
 ```bash
 npm run tts:generate-examples -- --force
+```
+
+只预览新增词缺失例句音频：
+
+```bash
+npm run tts:generate-examples -- --dry-run --start 5399
 ```
 
 如果以后要补其他音色：

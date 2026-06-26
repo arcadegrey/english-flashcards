@@ -17,7 +17,7 @@ from kokoro import KPipeline
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 VOCABULARY_PATH = PROJECT_ROOT / "public/data/vocabulary.json"
 OUTPUT_ROOT = PROJECT_ROOT / "public/audio/examples"
-DEFAULT_VOICES = ["af_bella"]
+DEFAULT_VOICES = ["af_bella", "am_michael", "bf_emma", "bm_george"]
 DEFAULT_REPO_ID = os.environ.get("KOKORO_REPO_ID", "hexgrad/Kokoro-82M")
 SAMPLE_RATE = 24000
 
@@ -114,6 +114,23 @@ def selected_examples(examples: List[Dict[str, Any]], start: int, limit: int) ->
     return examples
 
 
+def pending_examples_for_voice(
+    examples: List[Dict[str, Any]],
+    output_root: Path,
+    voice: str,
+    force: bool,
+) -> List[Dict[str, Any]]:
+    if force:
+        return examples
+
+    pending = []
+    for item in examples:
+        output_path = output_root / voice / f"{item['id']}.mp3"
+        if not output_path.exists():
+            pending.append(item)
+    return pending
+
+
 def load_existing_manifest(manifest_path: Path) -> Dict[str, Any]:
     if not manifest_path.exists():
         return {}
@@ -152,16 +169,24 @@ def main() -> None:
     all_examples = load_examples()
     examples = list(selected_examples(all_examples, args.start, args.limit))
 
+    pending_by_voice = {
+        voice: pending_examples_for_voice(examples, output_root, voice, args.force)
+        for voice in voices
+    }
+    pending_total = sum(len(items) for items in pending_by_voice.values())
+
     print(
-        f"Generating Kokoro example audio: voices={voices}, examples={len(examples)}, "
-        f"bitrate={args.bitrate}kbps, speed={args.speed}"
+        f"Generating Kokoro example audio: voices={voices}, selectedExamples={len(examples)}, "
+        f"pendingFiles={pending_total}, bitrate={args.bitrate}kbps, speed={args.speed}"
     )
 
     if args.dry_run:
-        for item in examples[:20]:
-            print(f"{item['id']}: {item['word']} -> {item['example']}")
-        if len(examples) > 20:
-            print(f"... {len(examples) - 20} more")
+        for voice, pending_examples in pending_by_voice.items():
+            print(f"[{voice}] pending={len(pending_examples)}")
+            for item in pending_examples[:20]:
+                print(f"  {item['id']}: {item['word']} -> {item['example']}")
+            if len(pending_examples) > 20:
+                print(f"  ... {len(pending_examples) - 20} more")
         return
 
     existing_manifest = load_existing_manifest(manifest_path)
@@ -175,51 +200,63 @@ def main() -> None:
     voice_stats = dict(existing_voice_stats)
 
     for voice in voices:
+        pending_examples = pending_by_voice[voice]
         lang_code = lang_code_for_voice(voice)
-        pipeline = get_pipeline(lang_code, pipelines)
         generated = 0
-        skipped = 0
         failed = 0
         total_bytes = 0
         example_hashes = {}
+        skipped = len(examples) - len(pending_examples)
 
-        for index, item in enumerate(examples, start=1):
+        if not pending_examples:
+            print(f"[{voice}] nothing to generate; all selected files already exist.")
+            voice_stats[voice] = {
+                **voice_stats.get(voice, {}),
+                "done": len(examples),
+                "generated": 0,
+                "skipped": skipped,
+                "failed": 0,
+                "bytes": 0,
+                "path": f"{voice}/{{id}}.mp3",
+                "langCode": lang_code,
+                "pendingOnly": True,
+            }
+            continue
+
+        pipeline = get_pipeline(lang_code, pipelines)
+
+        for index, item in enumerate(pending_examples, start=1):
             word_id = item["id"]
             sentence = item["example"]
             output_path = output_root / voice / f"{word_id}.mp3"
             example_hashes[word_id] = hashlib.sha256(sentence.encode("utf-8")).hexdigest()
 
-            if output_path.exists() and not args.force:
-                skipped += 1
+            try:
+                audio = synthesize_sentence(pipeline, sentence, voice, args.speed)
+                write_mp3(audio, output_path, args.bitrate)
+                generated += 1
                 total_bytes += output_path.stat().st_size
-            else:
-                try:
-                    audio = synthesize_sentence(pipeline, sentence, voice, args.speed)
-                    write_mp3(audio, output_path, args.bitrate)
-                    generated += 1
-                    total_bytes += output_path.stat().st_size
-                except Exception as exc:
-                    failed += 1
-                    failures.append(
-                        {
-                            "voice": voice,
-                            "id": word_id,
-                            "word": item["word"],
-                            "example": sentence,
-                            "error": str(exc),
-                        }
-                    )
+            except Exception as exc:
+                failed += 1
+                failures.append(
+                    {
+                        "voice": voice,
+                        "id": word_id,
+                        "word": item["word"],
+                        "example": sentence,
+                        "error": str(exc),
+                    }
+                )
 
-            if index == 1 or index % 50 == 0 or index == len(examples):
+            if index == 1 or index % 50 == 0 or index == len(pending_examples):
                 elapsed = max(time.time() - started_at, 0.1)
                 done = sum(
-                    stats.get("done", 0)
-                    for voice_id, stats in voice_stats.items()
-                    if voice_id in voices[: voices.index(voice)]
+                    stats.get("currentGenerated", 0) + stats.get("currentFailed", 0)
+                    for stats in voice_stats.values()
                 ) + index
                 print(
-                    f"[{voice}] {index}/{len(examples)} generated={generated} skipped={skipped} "
-                    f"failed={failed} elapsed={elapsed:.1f}s done={done}/{len(examples) * len(voices)}",
+                    f"[{voice}] {index}/{len(pending_examples)} generated={generated} skipped={skipped} "
+                    f"failed={failed} elapsed={elapsed:.1f}s done={done}/{pending_total}",
                     flush=True,
                 )
 
@@ -232,6 +269,10 @@ def main() -> None:
             "path": f"{voice}/{{id}}.mp3",
             "langCode": lang_code,
             "exampleHashes": example_hashes,
+            "pendingOnly": not args.force,
+            "currentGenerated": generated,
+            "currentSkipped": skipped,
+            "currentFailed": failed,
         }
 
     manifest = {
@@ -242,8 +283,10 @@ def main() -> None:
         "defaultVoices": merge_voice_order(existing_manifest, voices),
         "totalExampleCount": len(all_examples),
         "generatedExampleCount": len(examples),
+        "pendingFileCount": pending_total,
         "start": args.start,
         "limit": args.limit,
+        "force": args.force,
         "speed": args.speed,
         "voices": voice_stats,
         "failures": failures,
@@ -252,8 +295,13 @@ def main() -> None:
     output_root.mkdir(parents=True, exist_ok=True)
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    total_files = sum(stats["generated"] + stats["skipped"] for stats in voice_stats.values())
-    total_bytes = sum(stats["bytes"] for stats in voice_stats.values())
+    current_voice_stats = {voice: voice_stats.get(voice, {}) for voice in voices}
+    total_files = sum(
+        stats.get("currentGenerated", stats.get("generated", 0))
+        + stats.get("currentSkipped", stats.get("skipped", 0))
+        for stats in current_voice_stats.values()
+    )
+    total_bytes = sum(stats.get("bytes", 0) for stats in current_voice_stats.values())
     print(
         f"Done. files={total_files}, failures={len(failures)}, size={total_bytes / 1024 / 1024:.2f}MB, "
         f"manifest={manifest_path}"
