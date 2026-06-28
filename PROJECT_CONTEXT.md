@@ -147,6 +147,7 @@ word, phonetic, pos, meaning, example, exampleCn, category, level, list
 - R2 bucket：`english-flashcards-audio`
 - 公开 URL：`https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev`
 - 已完成 4 套单词和例句音频上传：`af_bella`、`am_michael`、`bf_emma`、`bm_george`
+- 2026-06-28 新增音频已补传到 R2：只上传 ID 5400-8699，单词 13,200 个 MP3，例句 13,200 个 MP3，两个 manifest 均已更新并公网抽样 `200 OK`
 
 线上建议环境变量：
 

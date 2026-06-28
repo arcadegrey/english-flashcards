@@ -157,7 +157,7 @@ npm run tts:generate-words -- --dry-run --start 5399
 - 8699 个单词
 - 4 个音色
 - 单词音频：4 个音色本地均已补齐到 ID 8699
-- 例句音频：`af_bella` 本地已补齐到 ID 8699；`am_michael`、`bf_emma`、`bm_george` 的新增词例句仍待生成
+- 例句音频：4 个音色本地均已补齐到 ID 8699
 - 0 个失败
 - 编码：MP3，24 kbps，24 kHz，mono
 
@@ -223,11 +223,14 @@ VITE_WORD_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/aud
 - CORS 配置文件：`config/r2-word-audio-cors.json`
 - 线上 GitHub Actions 构建已设置 `VITE_WORD_AUDIO_BASE_URL`
 - 例句静态音频可设置 `VITE_EXAMPLE_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/examples`
-- 2026-06-26 上传新增单词音频时，当前 Wrangler 凭证对 `english-flashcards-audio` 返回 `403 Authentication error`；需要更换/补充具备 `Account R2 Storage:Edit` 的 `CLOUDFLARE_API_TOKEN` 后再上传。
+- 2026-06-28 已完成新增音频上传：只上传 ID 5400-8699，保留 1-5399 既有线上对象。
+- 单词音频新增上传：4 个音色，共 13,200 个 MP3，并上传 `audio/words/manifest.json`。
+- 例句音频新增上传：4 个音色，共 13,200 个 MP3，并上传 `audio/examples/manifest.json`。
+- 公网抽样验证通过：`audio/words/af_bella/5400.mp3`、`audio/words/bm_george/8699.mp3`、`audio/examples/af_bella/5400.mp3`、`audio/examples/bm_george/8699.mp3`、两个 manifest 均返回 `200 OK`。
 
 ## 批量生成例句静态音频
 
-例句比单词长很多，建议先只生成一个默认音色，避免一开始把 R2 存储和生成时间放大到 3 倍。脚本默认使用 `af_bella`，读取 `public/data/vocabulary.json` 里的 `example` 字段，输出到：
+例句比单词长很多。脚本默认使用 `af_bella`，也支持一次生成多个音色，读取 `public/data/vocabulary.json` 里的 `example` 字段，输出到：
 
 ```text
 public/audio/examples/{voice}/{id}.mp3
