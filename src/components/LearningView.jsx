@@ -6,6 +6,7 @@ import SpellingTest from './SpellingTest';
 import MatchingTest from './MatchingTest';
 import QuickMenu from './QuickMenu';
 import AppLayout from './layout/AppLayout';
+import { appShellIcons } from './layout/icons';
 import { QUICK_MENU_MODE_OPTIONS } from './quickMenuOptions';
 import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
 import '../styles/word-learning-refresh.css';
@@ -159,6 +160,16 @@ function LearningView({
             </svg>
           </button>
           <h1>背单词</h1>
+          {typeof onVoiceSettings === 'function' && (
+            <button
+              type="button"
+              className="learn-refresh-mobile-voice"
+              onClick={onVoiceSettings}
+              aria-label="语音设置"
+            >
+              {appShellIcons.voice}
+            </button>
+          )}
           <div className="learn-refresh-mobile-progress-pill" aria-label={`当前进度 ${progressCurrent}/${totalCount}`}>
             <strong>{progressCurrent}</strong>
             <span>/ {totalCount}</span>

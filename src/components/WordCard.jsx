@@ -41,6 +41,7 @@ function WordCard({ word, showHint = false }) {
   }
 
   const meaningLine = word.pos ? `${word.pos} ${word.meaning}` : word.meaning;
+  const wordFitLength = Math.max(String(word.word || '').trim().length, 1);
 
   return (
     <article className="learn-refresh-card learn-refresh-word-card learn-refresh-card-enter" aria-live="polite">
@@ -57,7 +58,7 @@ function WordCard({ word, showHint = false }) {
       </button>
 
       <header className="learn-refresh-word-block">
-        <h1 className="learn-refresh-word">{word.word}</h1>
+        <h1 className="learn-refresh-word" style={{ '--word-fit-length': wordFitLength }}>{word.word}</h1>
         <div className="learn-refresh-phonetic-row">
           <p className="learn-refresh-phonetic">{word.phonetic || '暂无音标'}</p>
           <button

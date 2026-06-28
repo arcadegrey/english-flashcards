@@ -6491,9 +6491,9 @@
 
   .learn-refresh-mobile-study-header {
     display: grid;
-    grid-template-columns: 58px minmax(0, 1fr) auto;
+    grid-template-columns: 50px minmax(0, 1fr) 50px auto;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
     min-height: 88px;
     padding: 12px 0 10px;
   }
@@ -6502,13 +6502,15 @@
     margin: 0;
     color: #0b1026;
     text-align: center;
-    font-size: 30px;
+    font-size: clamp(24px, 7vw, 28px);
     line-height: 1;
     font-weight: 900;
     letter-spacing: 0;
+    white-space: nowrap;
   }
 
   .learn-refresh-mobile-back,
+  .learn-refresh-mobile-voice,
   .learn-refresh-mobile-progress-pill {
     min-height: 58px;
     border: 0;
@@ -6518,10 +6520,21 @@
   }
 
   .learn-refresh-mobile-back {
-    width: 58px;
+    width: 50px;
+    height: 50px;
+    min-height: 50px;
     display: grid;
     place-items: center;
     color: #050a1f;
+  }
+
+  .learn-refresh-mobile-voice {
+    width: 50px;
+    height: 50px;
+    min-height: 50px;
+    display: grid;
+    place-items: center;
+    color: #4f7cff;
   }
 
   .learn-refresh-mobile-back svg {
@@ -6534,13 +6547,23 @@
     stroke-linejoin: round;
   }
 
+  .learn-refresh-mobile-voice svg {
+    width: 27px;
+    height: 27px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
   .learn-refresh-mobile-progress-pill {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
-    min-width: 112px;
-    padding: 0 20px;
+    min-width: 104px;
+    padding: 0 16px;
     color: #5f6678;
     font-size: 24px;
     font-weight: 800;
@@ -6618,8 +6641,12 @@
   }
 
   .learn-refresh-word-card .learn-refresh-word {
-    font-size: clamp(58px, 17vw, 78px);
+    max-width: 100%;
+    font-size: clamp(24px, min(17vw, calc((100vw - 96px) / (var(--word-fit-length, 8) * 0.58))), 78px);
     line-height: 1;
+    white-space: nowrap;
+    word-break: normal;
+    overflow-wrap: normal;
   }
 
   .learn-refresh-word-card .learn-refresh-phonetic {

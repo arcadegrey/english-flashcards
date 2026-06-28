@@ -1794,6 +1794,7 @@ function AppContent() {
 
   const handleOpenWordStudy = () => {
     setAssessmentBackTarget('home')
+    setHomePanelRequest((request) => ({ panel: 'words', nonce: request.nonce + 1 }))
     setView('home')
   }
 
