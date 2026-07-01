@@ -5,12 +5,9 @@ import App from './App.jsx'
 
 const applyInitialTheme = () => {
   try {
-    const savedTheme = localStorage.getItem('flashcards_theme')
-    const hasThemePreference = localStorage.getItem('flashcards_theme_explicit') === '1'
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-    const shouldUseDark = hasThemePreference ? savedTheme === 'dark' : prefersDark
-
-    document.documentElement.classList.toggle('dark', shouldUseDark)
+    localStorage.setItem('flashcards_theme', 'light')
+    localStorage.setItem('flashcards_theme_explicit', '1')
+    document.documentElement.classList.remove('dark')
   } catch {
     document.documentElement.classList.remove('dark')
   }

@@ -6,8 +6,6 @@ export function MobileTopbar({
   onCalendar,
   onNotify,
   notifyBadge,
-  onThemeToggle,
-  isDarkTheme = false,
   onVoiceSettings,
   onUserClick,
 }) {
@@ -19,15 +17,6 @@ export function MobileTopbar({
       <h1>{title}</h1>
       <div className="ds-mobile-actions">
         {onCalendar && <IconButton label="日历" onClick={onCalendar}>{appShellIcons.calendar}</IconButton>}
-        {onThemeToggle && (
-          <IconButton
-            className="ds-theme-toggle"
-            label={isDarkTheme ? '切换浅色模式' : '切换深色模式'}
-            onClick={onThemeToggle}
-          >
-            {isDarkTheme ? appShellIcons.sun : appShellIcons.moon}
-          </IconButton>
-        )}
         {onVoiceSettings && (
           <IconButton className="ds-voice-toggle" label="语音设置" onClick={onVoiceSettings}>
             {appShellIcons.voice}

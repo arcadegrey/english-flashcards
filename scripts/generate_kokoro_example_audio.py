@@ -143,6 +143,14 @@ def load_existing_manifest(manifest_path: Path) -> Dict[str, Any]:
         return {}
 
 
+def example_hash(sentence: str) -> str:
+    return hashlib.sha256(sentence.encode("utf-8")).hexdigest()
+
+
+def current_example_hashes(examples: List[Dict[str, Any]]) -> Dict[str, str]:
+    return {item["id"]: example_hash(item["example"]) for item in examples}
+
+
 def merge_voice_order(existing_manifest: Dict[str, Any], generated_voices: List[str]) -> List[str]:
     ordered = []
     for voice in existing_manifest.get("defaultVoices", []):
@@ -169,10 +177,26 @@ def main() -> None:
     all_examples = load_examples()
     examples = list(selected_examples(all_examples, args.start, args.limit))
 
-    pending_by_voice = {
-        voice: pending_examples_for_voice(examples, output_root, voice, args.force)
-        for voice in voices
-    }
+    existing_manifest = load_existing_manifest(manifest_path)
+    existing_voice_stats = existing_manifest.get("voices", {})
+    if not isinstance(existing_voice_stats, dict):
+        existing_voice_stats = {}
+
+    selected_hashes = current_example_hashes(examples)
+    pending_by_voice = {}
+    for voice in voices:
+        pending_examples = pending_examples_for_voice(examples, output_root, voice, args.force)
+        if not args.force:
+            existing_hashes = existing_voice_stats.get(voice, {}).get("exampleHashes", {})
+            if not isinstance(existing_hashes, dict):
+                existing_hashes = {}
+            pending_ids = {item["id"] for item in pending_examples}
+            for item in examples:
+                word_id = item["id"]
+                if word_id not in pending_ids and existing_hashes.get(word_id) != selected_hashes[word_id]:
+                    pending_examples.append(item)
+                    pending_ids.add(word_id)
+        pending_by_voice[voice] = pending_examples
     pending_total = sum(len(items) for items in pending_by_voice.values())
 
     print(
@@ -189,23 +213,19 @@ def main() -> None:
                 print(f"  ... {len(pending_examples) - 20} more")
         return
 
-    existing_manifest = load_existing_manifest(manifest_path)
-    existing_voice_stats = existing_manifest.get("voices", {})
-    if not isinstance(existing_voice_stats, dict):
-        existing_voice_stats = {}
-
     pipelines: Dict[str, KPipeline] = {}
     started_at = time.time()
     failures = []
     voice_stats = dict(existing_voice_stats)
 
+    completed_before_voice = 0
     for voice in voices:
         pending_examples = pending_by_voice[voice]
         lang_code = lang_code_for_voice(voice)
         generated = 0
         failed = 0
         total_bytes = 0
-        example_hashes = {}
+        example_hashes = dict(selected_hashes)
         skipped = len(examples) - len(pending_examples)
 
         if not pending_examples:
@@ -229,7 +249,6 @@ def main() -> None:
             word_id = item["id"]
             sentence = item["example"]
             output_path = output_root / voice / f"{word_id}.mp3"
-            example_hashes[word_id] = hashlib.sha256(sentence.encode("utf-8")).hexdigest()
 
             try:
                 audio = synthesize_sentence(pipeline, sentence, voice, args.speed)
@@ -250,10 +269,7 @@ def main() -> None:
 
             if index == 1 or index % 50 == 0 or index == len(pending_examples):
                 elapsed = max(time.time() - started_at, 0.1)
-                done = sum(
-                    stats.get("currentGenerated", 0) + stats.get("currentFailed", 0)
-                    for stats in voice_stats.values()
-                ) + index
+                done = completed_before_voice + index
                 print(
                     f"[{voice}] {index}/{len(pending_examples)} generated={generated} skipped={skipped} "
                     f"failed={failed} elapsed={elapsed:.1f}s done={done}/{pending_total}",
@@ -274,6 +290,7 @@ def main() -> None:
             "currentSkipped": skipped,
             "currentFailed": failed,
         }
+        completed_before_voice += len(pending_examples)
 
     manifest = {
         "format": "mp3",
