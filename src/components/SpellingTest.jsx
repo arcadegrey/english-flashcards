@@ -11,7 +11,7 @@ const pickRandomWord = (vocabulary = []) => {
   return vocabulary[randomIndex] || null;
 };
 
-function SpellingTest({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswer }) {
+function SpellingTest({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswer, onAnswer }) {
   const [currentWord, setCurrentWord] = useState(() => pickRandomWord(vocabulary));
   const [userInput, setUserInput] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -80,6 +80,7 @@ function SpellingTest({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAn
       setStreak(0);
       onWrongAnswer?.(currentWord.id);
     }
+    onAnswer?.(correct);
 
     setQuestionCount((prev) => prev + 1);
   };

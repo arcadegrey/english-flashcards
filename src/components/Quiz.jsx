@@ -38,6 +38,7 @@ function Quiz({
   sourceLabel = '题库测验',
   onAddMastered,
   onWrongAnswer,
+  onAnswer,
 }) {
   const initialRound = createQuizRound(vocabulary, optionVocabulary);
   const [currentQuestion, setCurrentQuestion] = useState(() => initialRound.question);
@@ -101,6 +102,7 @@ function Quiz({
       setStreak(0);
       onWrongAnswer?.(currentQuestion.id);
     }
+    onAnswer?.(correct);
 
     if (nextQuestionTimer.current) {
       clearTimeout(nextQuestionTimer.current);

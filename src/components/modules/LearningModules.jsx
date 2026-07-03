@@ -61,11 +61,22 @@ export function PlanStatusCards({
   reviewCount,
   newWordProgress,
   newWordTarget,
+  readingsCompleted = 0,
+  examQuestionsAnswered = 0,
+  examQuestionsCorrect = 0,
   wordCount,
   onReview,
   onWords,
+  onReading,
+  onExam,
 }) {
   const progress = Math.round((Math.min(newWordProgress, newWordTarget) / newWordTarget) * 100)
+  const readingComplete = readingsCompleted > 0
+  const examTarget = 5
+  const examProgress = Math.round((Math.min(examQuestionsAnswered, examTarget) / examTarget) * 100)
+  const examAccuracy = examQuestionsAnswered > 0
+    ? Math.round((examQuestionsCorrect / examQuestionsAnswered) * 100)
+    : 0
 
   return (
     <div className="ds-status-grid">
@@ -73,6 +84,7 @@ export function PlanStatusCards({
         label="复习"
         title={reviewComplete ? '到期词已清空' : `${reviewCount} 个词到期`}
         meta={reviewComplete ? '保持节奏' : '优先完成'}
+        tone={reviewComplete ? 'mint' : 'blue'}
         iconSrc={UI_ASSETS.review}
         illustrationSrc={UI_ASSETS.review}
         actionLabel={reviewComplete ? '已完成' : '开始复习'}
@@ -82,11 +94,34 @@ export function PlanStatusCards({
         label="新词"
         title={`${newWordProgress} / ${newWordTarget} 个`}
         meta={`${wordCount} 词可学`}
+        tone="blue"
         iconSrc={UI_ASSETS.newWords}
         illustrationSrc={UI_ASSETS.newWords}
         progress={progress}
         actionLabel="调整计划"
         onAction={onWords}
+      />
+      <StatusCard
+        label="阅读"
+        title={readingComplete ? `已完成 ${readingsCompleted} 篇` : '完成 1 篇阅读'}
+        meta={readingComplete ? '今日阅读已打卡' : '推荐 3-5 分钟短阅读'}
+        tone="cyan"
+        iconSrc={UI_ASSETS.hero}
+        illustrationSrc={UI_ASSETS.hero}
+        progress={readingComplete ? 100 : 0}
+        actionLabel={readingComplete ? '继续阅读' : '开始阅读'}
+        onAction={onReading}
+      />
+      <StatusCard
+        label="巩固"
+        title={`${examQuestionsAnswered} / ${examTarget} 题`}
+        meta={examQuestionsAnswered > 0 ? `正确率 ${examAccuracy}%` : '完成一组考试练习'}
+        tone="indigo"
+        iconSrc={UI_ASSETS.target}
+        illustrationSrc={UI_ASSETS.target}
+        progress={examProgress}
+        actionLabel={examQuestionsAnswered >= examTarget ? '继续巩固' : '开始练习'}
+        onAction={onExam}
       />
     </div>
   )

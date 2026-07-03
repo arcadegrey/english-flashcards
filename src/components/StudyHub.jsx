@@ -20,6 +20,9 @@ function StudyHub({
   wrongCount = 0,
   todayWordsLearned = 0,
   todayWordsMastered = 0,
+  todayReadingsCompleted = 0,
+  todayExamQuestionsAnswered = 0,
+  todayExamQuestionsCorrect = 0,
   suggestedReading = null,
   studyHistory = [],
   newWordTarget = 15,
@@ -30,6 +33,8 @@ function StudyHub({
 }) {
   const reviewTaskComplete = reviewCount === 0;
   const newWordProgress = Math.min(todayWordsLearned, newWordTarget);
+  const readingTaskComplete = todayReadingsCompleted > 0;
+  const examTaskComplete = todayExamQuestionsAnswered >= 5;
   const priorityTask = reviewCount > 0
     ? {
         title: '先清掉到期复习',
@@ -45,13 +50,21 @@ function StudyHub({
           onClick: onOpenWordStudy,
         }
       : suggestedReading
+        && !readingTaskComplete
         ? {
             title: '做一篇考试阅读',
             meta: `${suggestedReading.examType || '阅读'} · ${suggestedReading.level || 'B2'} · ${suggestedReading.estimatedMinutes || 4} 分钟`,
             actionLabel: '开始阅读',
             onClick: onOpenSuggestedReading || onOpenReading,
           }
-        : {
+        : examTaskComplete
+          ? {
+              title: '今天的学习闭环完成',
+              meta: '新词、阅读和巩固都已推进',
+              actionLabel: '查看统计',
+              onClick: onOpenStatistics,
+            }
+          : {
             title: '做一组考试巩固',
             meta: '测验 · 填空 · 拼写',
             actionLabel: '开始练习',
@@ -135,9 +148,14 @@ function StudyHub({
           reviewCount={reviewCount}
           newWordProgress={newWordProgress}
           newWordTarget={newWordTarget}
+          readingsCompleted={todayReadingsCompleted}
+          examQuestionsAnswered={todayExamQuestionsAnswered}
+          examQuestionsCorrect={todayExamQuestionsCorrect}
           wordCount={wordCount}
           onReview={onOpenTodayReview}
           onWords={onAdjustPlan || onOpenWordStudy}
+          onReading={onOpenSuggestedReading || onOpenReading}
+          onExam={onOpenExamPractice}
         />
 
         <StatsRow streak="3" target={newWordTarget} remaining={wordCount} />
@@ -147,7 +165,7 @@ function StudyHub({
           {accountNotice && (
             <span className={`is-${accountNotice.type || 'info'}`}>{accountNotice.message}</span>
           )}
-          <span>今日已掌握 {todayWordsMastered} 个词 · 阅读库 {readingCount} 篇 · 错题 {wrongCount} 个</span>
+          <span>今日已掌握 {todayWordsMastered} 个词 · 阅读 {todayReadingsCompleted}/{readingCount} 篇 · 巩固 {todayExamQuestionsAnswered} 题 · 错题 {wrongCount} 个</span>
         </section>
       </div>
     </AppLayout>

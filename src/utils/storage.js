@@ -140,7 +140,7 @@ export const storage = {
 
   // === New Storage Methods ===
 
-  // Study History: array of { date: 'YYYY-MM-DD', wordsLearned: N, wordsMastered: N, timeSpent: N }
+  // Study History: daily learning activity records.
   getStudyHistory: () => {
     try {
       const data = localStorage.getItem(STORAGE_KEYS.STUDY_HISTORY);
@@ -350,22 +350,38 @@ export const storage = {
   },
 
   // Helper: Record study session
-  recordStudySession: (wordsLearned = 0, wordsMastered = 0, timeSpent = 0) => {
+  recordStudySession: (wordsLearned = 0, wordsMastered = 0, timeSpent = 0, extra = {}) => {
     try {
+      const delta =
+        wordsLearned && typeof wordsLearned === 'object'
+          ? wordsLearned
+          : { wordsLearned, wordsMastered, timeSpent, ...extra };
       const history = storage.getStudyHistory();
       const today = new Date().toISOString().split('T')[0];
       const existingToday = history.findIndex(h => h.date === today);
       
       if (existingToday >= 0) {
-        history[existingToday].wordsLearned += wordsLearned;
-        history[existingToday].wordsMastered += wordsMastered;
-        history[existingToday].timeSpent += timeSpent;
+        const current = history[existingToday];
+        current.wordsLearned = Number(current.wordsLearned || 0) + Number(delta.wordsLearned || 0);
+        current.wordsMastered = Number(current.wordsMastered || 0) + Number(delta.wordsMastered || 0);
+        current.timeSpent = Number(current.timeSpent || 0) + Number(delta.timeSpent || 0);
+        current.readingsCompleted = Number(current.readingsCompleted || 0) + Number(delta.readingsCompleted || 0);
+        current.readingQuestionsAnswered = Number(current.readingQuestionsAnswered || 0) + Number(delta.readingQuestionsAnswered || 0);
+        current.readingQuestionsCorrect = Number(current.readingQuestionsCorrect || 0) + Number(delta.readingQuestionsCorrect || 0);
+        current.examQuestionsAnswered = Number(current.examQuestionsAnswered || 0) + Number(delta.examQuestionsAnswered || 0);
+        current.examQuestionsCorrect = Number(current.examQuestionsCorrect || 0) + Number(delta.examQuestionsCorrect || 0);
       } else {
         history.push({
           date: today,
-          wordsLearned,
-          wordsMastered,
-          timeSpent,
+          wordsLearned: Number(delta.wordsLearned || 0),
+          wordsMastered: Number(delta.wordsMastered || 0),
+          timeSpent: Number(delta.timeSpent || 0),
+          readingsCompleted: Number(delta.readingsCompleted || 0),
+          readingQuestionsAnswered: Number(delta.readingQuestionsAnswered || 0),
+          readingQuestionsCorrect: Number(delta.readingQuestionsCorrect || 0),
+          examQuestionsAnswered: Number(delta.examQuestionsAnswered || 0),
+          examQuestionsCorrect: Number(delta.examQuestionsCorrect || 0),
+          readingArticleIds: [],
         });
       }
       

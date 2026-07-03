@@ -82,7 +82,7 @@ const createFillBlankRound = (vocabulary = []) => {
   };
 };
 
-function FillBlank({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswer }) {
+function FillBlank({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswer, onAnswer }) {
   const initialRound = createFillBlankRound(vocabulary);
   const [currentQuestion, setCurrentQuestion] = useState(() => initialRound.question);
   const [options, setOptions] = useState(() => initialRound.options);
@@ -150,6 +150,7 @@ function FillBlank({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswe
       setStreak(0);
       onWrongAnswer?.(currentQuestion.id);
     }
+    onAnswer?.(correct);
 
     setQuestionCount((prev) => prev + 1);
 

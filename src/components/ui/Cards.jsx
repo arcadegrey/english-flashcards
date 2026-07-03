@@ -108,9 +108,9 @@ export function StatCard({ icon, iconSrc, value, label }) {
   )
 }
 
-export function StatusCard({ label, title, meta, icon, iconSrc, art, illustrationSrc, progress, actionLabel, onAction }) {
+export function StatusCard({ label, title, meta, icon, iconSrc, art, illustrationSrc, progress, actionLabel, onAction, tone = 'blue' }) {
   return (
-    <article className="ds-status-card">
+    <article className={`ds-status-card is-${tone}`}>
       <span className="ds-status-icon" aria-hidden="true">
         {iconSrc ? <img className="ds-status-icon-img" src={iconSrc} alt="" loading="lazy" /> : icon}
       </span>

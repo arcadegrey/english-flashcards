@@ -1,0 +1,116 @@
+# Project Reference
+
+Low-frequency project details moved out of `PROJECT_CONTEXT.md` to keep startup context small.
+
+## Maintenance Commands
+
+- D1 migration: `npm run d1:migrate`
+- Import global vocabulary: `npm run words:import`
+- Refresh vocabulary shards: `npm run words:split`
+- Import reading materials: `npm run readings:import`
+- Local Kokoro TTS: `npm run tts:kokoro`
+- Generate static example audio: `npm run tts:generate-examples`
+- Upload word static audio to R2: `npm run audio:upload-r2`
+- Upload example static audio to R2: `npm run audio:upload-examples-r2`
+
+## Vocabulary Snapshot
+
+- Full unique word count: 8699
+- `core.json`: 3478 non-TOEFL/IELTS core words
+- Daily: 2026
+- CET4: 2283
+- CET6: 1520
+- TOEFL: 3254
+- IELTS: 3257 unique words; Lists 1-56, 20 topics, 3335 list entries
+
+## Vocabulary Loading API
+
+`src/data/vocabulary.js` exposes:
+
+- `loadVocabulary()`
+- `loadToeflManifest()`
+- `loadToeflListVocabulary()`
+- `loadIeltsManifest()`
+- `loadIeltsListVocabulary()`
+
+App startup loads `core.json` plus TOEFL/IELTS manifests. Specific TOEFL/IELTS lists and ranges are loaded on demand.
+
+## Vocabulary Maintenance History
+
+- 2026-06-29: Cleaned placeholder example translations for IDs 5400-8699 in `public/data/vocabulary.json` and `public/data/vocabulary/core.json`. Old "这个例句..." and "参考译文..." fallback text counts were verified as 0. Sample `dine` translation: "我们经常和朋友在这家餐厅用餐。"
+- 2026-06-30: Rewrote 1364 fallback English examples in IDs 5400-8699. `Students often meet the word ...` templates were verified as 0 in both vocabulary files. Export/import scripts: `scripts/export-example-rewrite-csv.mjs` and `scripts/import-example-rewrites.mjs`.
+- 2026-07-01: Regenerated and uploaded four voices for those 1364 changed example audios, totaling 5456 changed MP3 files. R2 resume upload covered example audio for IDs 5400-8699 and `audio/examples/manifest.json`; public samples `manifest.json`, `af_bella/5400.mp3`, and `bm_george/8699.mp3` returned `200 OK`.
+
+## CSV Import
+
+Default word CSV fields:
+
+```text
+word, phonetic, pos, meaning, example, exampleCn, category, level, list
+```
+
+Rules:
+
+- Required fields: `word`, `meaning`
+- Deduplicate by lowercase `word`
+- Valid categories: `daily`, `cet4`, `cet6`, `toefl`, `ielts`
+- `all` is an entry point, not a word category
+- Non-dry-run `words:import` automatically refreshes shards
+- `--upsert` merges categories and position fields without overwriting existing meanings, examples, phonetics, or parts of speech
+- Daily/CET expansion CSV: `data/daily_cet_expansion.csv`
+- Daily/CET expansion script: `scripts/build-daily-cet-expansion.py`, based on MIT-licensed ECDICT
+- After regenerating or importing expanded vocabulary, confirm `exampleCn` does not contain explanatory placeholders such as "这个例句..." or "参考译文..."
+
+Example translation maintenance scripts:
+
+- `scripts/fix-placeholder-example-translations.mjs`: fixes old placeholder translations and tries MyMemory through `curl`.
+- `scripts/fill_fallback_translations.py`: uses local `deep_translator` to fill remaining fallback example translations.
+
+## Reading Data
+
+- Built-in readings: 18 total, including 6 original IELTS/TOEFL-style practice articles.
+- Reading CSV fields: `title, level, category, content, translation, source, tags, examType, questions`
+- Reading import script: `scripts/import-global-reading.mjs`
+
+## TTS And Audio
+
+- Speech utility: `src/utils/speech.js`
+- Voice settings UI: `src/components/VoiceSettings.jsx`
+- Default provider: `kokoro`
+- Default voice: `af_bella`
+- Default local endpoint: `http://127.0.0.1:8880/v1/audio/speech`
+- Local service script: `scripts/kokoro_tts_server.py`
+- Detailed docs: `docs/kokoro-tts.md`
+
+Static audio:
+
+- Word audio: `public/audio/words/{voice}/{id}.mp3`
+- Example audio: `public/audio/examples/{voice}/{id}.mp3`
+- R2 bucket: `english-flashcards-audio`
+- Public URL: `https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev`
+- Completed voices: `af_bella`, `am_michael`, `bf_emma`, `bm_george`
+- 2026-06-28: New audio uploaded to R2 for IDs 5400-8699: 13,200 word MP3 files and 13,200 example MP3 files. Both manifests were updated and public samples returned `200 OK`.
+- 2026-07-01: `scripts/generate_kokoro_example_audio.py` became hash-aware. It reads `public/audio/examples/manifest.json` `exampleHashes`, so changed example text is queued even when an MP3 already exists. `--dry-run --start 5399` returned `pendingFiles=0`.
+
+Suggested production environment variables:
+
+```bash
+VITE_WORD_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/words
+VITE_EXAMPLE_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/examples
+```
+
+## Cloudflare Worker / D1
+
+- API wrapper: `src/utils/workerAuth.js`
+- Default API prefix: `VITE_API_BASE` or `/api`
+- Worker supports email-code login, session restore, logout, progress read, and progress write.
+- D1 tables: `users`, `login_codes`, `sessions`, `user_progress`
+- Session cookie: `ef_session`
+- Synced data: `learnedWords`, `masteredWords`, `customWords`, `wordProgress`, `wrongWords`, `studyHistory`
+- Auto-sync debounce: 800ms
+- Version conflicts are resolved by Worker-side merging of cloud progress with submitted progress before writing back.
+
+## Additional Known Risks
+
+- CSV parser is custom and does not fully cover complex Excel dialects or semicolon-delimited files.
+- `public/images/ielts-nature-geography-bg.png` may still be an old uncommitted-bound PNG; CSS currently uses WebP.

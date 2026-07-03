@@ -146,9 +146,48 @@ const mergeVocabularyList = (baseList, extraList) => {
 
 const normalizeRecord = (value) => (value && typeof value === 'object' && !Array.isArray(value) ? value : {})
 
+const toNumber = (value) => (Number.isFinite(Number(value)) ? Number(value) : 0)
+
+const uniqueStringList = (value) => {
+  const safeList = Array.isArray(value) ? value : []
+  const seen = new Set()
+  const output = []
+
+  safeList.forEach((item) => {
+    if (item === null || item === undefined) return
+    const key = String(item).trim()
+    if (!key || seen.has(key)) return
+    seen.add(key)
+    output.push(key)
+  })
+
+  return output
+}
+
+const normalizeStudyHistoryItem = (item) => {
+  const date = String(item?.date || '').trim()
+  if (!date) return null
+  const readingArticleIds = uniqueStringList(item?.readingArticleIds)
+
+  return {
+    date,
+    wordsLearned: toNumber(item?.wordsLearned),
+    wordsMastered: toNumber(item?.wordsMastered),
+    timeSpent: toNumber(item?.timeSpent),
+    readingsCompleted: Math.max(toNumber(item?.readingsCompleted), readingArticleIds.length),
+    readingQuestionsAnswered: toNumber(item?.readingQuestionsAnswered),
+    readingQuestionsCorrect: toNumber(item?.readingQuestionsCorrect),
+    examQuestionsAnswered: toNumber(item?.examQuestionsAnswered),
+    examQuestionsCorrect: toNumber(item?.examQuestionsCorrect),
+    readingArticleIds,
+  }
+}
+
 const normalizeStudyHistory = (value) => {
   const safeList = Array.isArray(value) ? value : []
-  return safeList.filter((item) => item && typeof item === 'object' && String(item.date || '').trim())
+  return safeList
+    .map(normalizeStudyHistoryItem)
+    .filter(Boolean)
 }
 
 const mergeStudyHistory = (baseList, extraList) => {
@@ -156,12 +195,22 @@ const mergeStudyHistory = (baseList, extraList) => {
   ;[...normalizeStudyHistory(baseList), ...normalizeStudyHistory(extraList)].forEach((item) => {
     const date = String(item.date || '').trim()
     if (!date) return
-    const current = map.get(date) || { date, wordsLearned: 0, wordsMastered: 0, timeSpent: 0 }
+    const current = map.get(date) || normalizeStudyHistoryItem({ date })
+    const readingArticleIds = uniqueStringList([
+      ...(current.readingArticleIds || []),
+      ...(item.readingArticleIds || []),
+    ])
     map.set(date, {
       date,
-      wordsLearned: Math.max(Number(current.wordsLearned || 0), Number(item.wordsLearned || 0)),
-      wordsMastered: Math.max(Number(current.wordsMastered || 0), Number(item.wordsMastered || 0)),
-      timeSpent: Math.max(Number(current.timeSpent || 0), Number(item.timeSpent || 0)),
+      wordsLearned: Math.max(toNumber(current.wordsLearned), toNumber(item.wordsLearned)),
+      wordsMastered: Math.max(toNumber(current.wordsMastered), toNumber(item.wordsMastered)),
+      timeSpent: Math.max(toNumber(current.timeSpent), toNumber(item.timeSpent)),
+      readingsCompleted: Math.max(toNumber(current.readingsCompleted), toNumber(item.readingsCompleted), readingArticleIds.length),
+      readingQuestionsAnswered: Math.max(toNumber(current.readingQuestionsAnswered), toNumber(item.readingQuestionsAnswered)),
+      readingQuestionsCorrect: Math.max(toNumber(current.readingQuestionsCorrect), toNumber(item.readingQuestionsCorrect)),
+      examQuestionsAnswered: Math.max(toNumber(current.examQuestionsAnswered), toNumber(item.examQuestionsAnswered)),
+      examQuestionsCorrect: Math.max(toNumber(current.examQuestionsCorrect), toNumber(item.examQuestionsCorrect)),
+      readingArticleIds,
     })
   })
 
@@ -489,6 +538,12 @@ function AppContent() {
     return {
       wordsLearned: Number(todayData.wordsLearned || 0),
       wordsMastered: Number(todayData.wordsMastered || 0),
+      readingsCompleted: Number(todayData.readingsCompleted || 0),
+      readingQuestionsAnswered: Number(todayData.readingQuestionsAnswered || 0),
+      readingQuestionsCorrect: Number(todayData.readingQuestionsCorrect || 0),
+      examQuestionsAnswered: Number(todayData.examQuestionsAnswered || 0),
+      examQuestionsCorrect: Number(todayData.examQuestionsCorrect || 0),
+      readingArticleIds: uniqueStringList(todayData.readingArticleIds),
     }
   }, [studyHistory])
   const suggestedReading = useMemo(
@@ -1484,7 +1539,16 @@ function AppContent() {
 
   const currentWord = shuffledWords[currentIndex]
 
-  const recordStudyEvent = (wordsLearnedDelta = 0, wordsMasteredDelta = 0, timeSpentDelta = 0) => {
+  const recordStudyEvent = (wordsLearnedDelta = 0, wordsMasteredDelta = 0, timeSpentDelta = 0, extraDelta = {}) => {
+    const delta =
+      wordsLearnedDelta && typeof wordsLearnedDelta === 'object'
+        ? wordsLearnedDelta
+        : {
+            wordsLearned: wordsLearnedDelta,
+            wordsMastered: wordsMasteredDelta,
+            timeSpent: timeSpentDelta,
+            ...extraDelta,
+          }
     const today = new Date().toISOString().split('T')[0]
     setStudyHistory((prev) => {
       const safeList = normalizeStudyHistory(prev)
@@ -1494,19 +1558,78 @@ function AppContent() {
         const item = nextList[index]
         nextList[index] = {
           ...item,
-          wordsLearned: Number(item.wordsLearned || 0) + wordsLearnedDelta,
-          wordsMastered: Number(item.wordsMastered || 0) + wordsMasteredDelta,
-          timeSpent: Number(item.timeSpent || 0) + timeSpentDelta,
+          wordsLearned: toNumber(item.wordsLearned) + toNumber(delta.wordsLearned),
+          wordsMastered: toNumber(item.wordsMastered) + toNumber(delta.wordsMastered),
+          timeSpent: toNumber(item.timeSpent) + toNumber(delta.timeSpent),
+          readingsCompleted: toNumber(item.readingsCompleted) + toNumber(delta.readingsCompleted),
+          readingQuestionsAnswered: toNumber(item.readingQuestionsAnswered) + toNumber(delta.readingQuestionsAnswered),
+          readingQuestionsCorrect: toNumber(item.readingQuestionsCorrect) + toNumber(delta.readingQuestionsCorrect),
+          examQuestionsAnswered: toNumber(item.examQuestionsAnswered) + toNumber(delta.examQuestionsAnswered),
+          examQuestionsCorrect: toNumber(item.examQuestionsCorrect) + toNumber(delta.examQuestionsCorrect),
         }
       } else {
         nextList.push({
           date: today,
-          wordsLearned: wordsLearnedDelta,
-          wordsMastered: wordsMasteredDelta,
-          timeSpent: timeSpentDelta,
+          wordsLearned: toNumber(delta.wordsLearned),
+          wordsMastered: toNumber(delta.wordsMastered),
+          timeSpent: toNumber(delta.timeSpent),
+          readingsCompleted: toNumber(delta.readingsCompleted),
+          readingQuestionsAnswered: toNumber(delta.readingQuestionsAnswered),
+          readingQuestionsCorrect: toNumber(delta.readingQuestionsCorrect),
+          examQuestionsAnswered: toNumber(delta.examQuestionsAnswered),
+          examQuestionsCorrect: toNumber(delta.examQuestionsCorrect),
+          readingArticleIds: [],
         })
       }
-      return nextList.slice(-90)
+      return normalizeStudyHistory(nextList).slice(-90)
+    })
+  }
+
+  const recordReadingCompletion = ({ articleId, questionsAnswered = 0, questionsCorrect = 0, timeSpent = 0 } = {}) => {
+    if (articleId == null) return
+    const today = new Date().toISOString().split('T')[0]
+    const articleKey = String(articleId)
+
+    setStudyHistory((prev) => {
+      const safeList = normalizeStudyHistory(prev)
+      const index = safeList.findIndex((item) => item.date === today)
+      const nextList = [...safeList]
+      const current = index >= 0 ? nextList[index] : normalizeStudyHistoryItem({ date: today })
+      const articleIds = uniqueStringList(current.readingArticleIds)
+      const wasCompleted = articleIds.includes(articleKey)
+      const nextArticleIds = wasCompleted ? articleIds : [...articleIds, articleKey]
+      const nextItem = {
+        ...current,
+        readingsCompleted: Math.max(
+          toNumber(current.readingsCompleted) + (wasCompleted ? 0 : 1),
+          nextArticleIds.length
+        ),
+        readingQuestionsAnswered: Math.max(
+          toNumber(current.readingQuestionsAnswered),
+          toNumber(current.readingQuestionsAnswered) + (wasCompleted ? 0 : toNumber(questionsAnswered))
+        ),
+        readingQuestionsCorrect: Math.max(
+          toNumber(current.readingQuestionsCorrect),
+          toNumber(current.readingQuestionsCorrect) + (wasCompleted ? 0 : toNumber(questionsCorrect))
+        ),
+        timeSpent: toNumber(current.timeSpent) + (wasCompleted ? 0 : toNumber(timeSpent)),
+        readingArticleIds: nextArticleIds,
+      }
+
+      if (index >= 0) {
+        nextList[index] = nextItem
+      } else {
+        nextList.push(nextItem)
+      }
+
+      return normalizeStudyHistory(nextList).slice(-90)
+    })
+  }
+
+  const recordAssessmentAnswer = (isCorrect) => {
+    recordStudyEvent({
+      examQuestionsAnswered: 1,
+      examQuestionsCorrect: isCorrect ? 1 : 0,
     })
   }
 
@@ -2205,6 +2328,9 @@ function AppContent() {
             wrongCount={wrongWordList.length}
             todayWordsLearned={todayStudyStats.wordsLearned}
             todayWordsMastered={todayStudyStats.wordsMastered}
+            todayReadingsCompleted={todayStudyStats.readingsCompleted}
+            todayExamQuestionsAnswered={todayStudyStats.examQuestionsAnswered}
+            todayExamQuestionsCorrect={todayStudyStats.examQuestionsCorrect}
             suggestedReading={suggestedReading}
             studyHistory={studyHistory}
             newWordTarget={dailyNewWordTarget}
@@ -2312,6 +2438,8 @@ function AppContent() {
             onMarkAsLearned={setWordAsLearned}
             onMarkAsMastered={setWordAsMastered}
             onSyncAccount={handleHomeSync}
+            onCompleteReading={recordReadingCompletion}
+            isCompletedToday={todayStudyStats.readingArticleIds.includes(String(selectedReading?.id))}
           />
         )
       case 'toeflLevels':
@@ -2430,6 +2558,7 @@ function AppContent() {
               addWrongWord(id)
               setWordAsLearned(id)
             }}
+            onAssessmentAnswer={recordAssessmentAnswer}
             categoryName={currentCategoryName}
             learnedWords={learnedWords}
             resetProgress={resetProgress}

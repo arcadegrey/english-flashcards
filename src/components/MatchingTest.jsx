@@ -27,7 +27,7 @@ const createMatchingRound = (vocabulary = []) => {
   };
 };
 
-function MatchingTest({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswer }) {
+function MatchingTest({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswer, onAnswer }) {
   const initialRound = createMatchingRound(vocabulary);
   const [words, setWords] = useState(() => initialRound.words);
   const [meanings, setMeanings] = useState(() => initialRound.meanings);
@@ -107,12 +107,14 @@ function MatchingTest({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAn
       setCelebrationTrigger((prev) => prev + 1);
       playSuccessChime();
       onCorrectAnswer?.(meaningWord.id);
+      onAnswer?.(true);
       return;
     }
 
     setStreak(0);
     setWrongPair({ wordId, meaningId: meaningWord.id });
     onWrongAnswer?.(wordId);
+    onAnswer?.(false);
 
     if (wrongPairTimerRef.current) {
       clearTimeout(wrongPairTimerRef.current);

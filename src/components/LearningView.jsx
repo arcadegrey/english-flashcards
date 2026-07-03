@@ -24,6 +24,7 @@ function LearningView({
   examScope = 'learned',
   onAddMastered,
   onWrongAnswer,
+  onAssessmentAnswer,
   learnedWords,
   onBack,
   onHome,
@@ -424,6 +425,7 @@ function LearningView({
               masteredWords={masteredWords}
               onAddMastered={onAddMastered}
               onWrongAnswer={onWrongAnswer}
+              onAnswer={onAssessmentAnswer}
             />
           ) : mode === 'fillblank' ? (
             <FillBlank
@@ -431,6 +433,7 @@ function LearningView({
               sourceLabel={examSourceLabel}
               onWrongAnswer={onWrongAnswer}
               onCorrectAnswer={onAddMastered}
+              onAnswer={onAssessmentAnswer}
             />
           ) : mode === 'spelling' ? (
             <SpellingTest
@@ -438,6 +441,7 @@ function LearningView({
               sourceLabel={examSourceLabel}
               onWrongAnswer={onWrongAnswer}
               onCorrectAnswer={onAddMastered}
+              onAnswer={onAssessmentAnswer}
             />
           ) : mode === 'matching' ? (
             <MatchingTest
@@ -445,6 +449,7 @@ function LearningView({
               sourceLabel={examSourceLabel}
               onWrongAnswer={onWrongAnswer}
               onCorrectAnswer={onAddMastered}
+              onAnswer={onAssessmentAnswer}
             />
           ) : null}
         </section>

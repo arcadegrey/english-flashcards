@@ -51,6 +51,8 @@ function ReadingSessionView({
   onMarkAsLearned,
   onMarkAsMastered,
   onSyncAccount,
+  onCompleteReading,
+  isCompletedToday = false,
 }) {
   const [showTranslation, setShowTranslation] = useState(false);
   const [activeWord, setActiveWord] = useState(null);
@@ -119,6 +121,8 @@ function ReadingSessionView({
     readingStats.totalTracked > 0
       ? Math.round((readingStats.masteredCount / readingStats.totalTracked) * 100)
       : 0;
+  const answeredQuestionCount = Object.keys(questionAnswers).length;
+  const correctQuestionCount = Object.values(questionAnswers).filter((item) => item?.isCorrect === true).length;
   const articleMinutes = article?.estimatedMinutes || 1;
   const layoutTitle = '阅读训练';
   const layoutSubtitle = article
@@ -173,6 +177,17 @@ function ReadingSessionView({
         },
       },
     }));
+  };
+
+  const handleCompleteReading = () => {
+    if (!article?.id || typeof onCompleteReading !== 'function') return;
+    onCompleteReading({
+      articleId: article.id,
+      questionsAnswered: answeredQuestionCount,
+      questionsCorrect: correctQuestionCount,
+      timeSpent: articleMinutes,
+    });
+    setToast(isCompletedToday ? '今天已记录过这篇阅读' : '已完成阅读，今日计划已更新');
   };
 
   const contentBlocks = useMemo(() => {
@@ -398,7 +413,7 @@ function ReadingSessionView({
                 </button>
                 <button
                   type="button"
-                  className="learn-refresh-action learn-refresh-action-primary"
+                  className="learn-refresh-action learn-refresh-action-ghost"
                   onClick={handleSpeakArticle}
                 >
                   <span className="learn-refresh-action-icon" aria-hidden="true">
@@ -409,6 +424,19 @@ function ReadingSessionView({
                     </svg>
                   </span>
                   <span>朗读全文</span>
+                </button>
+                <button
+                  type="button"
+                  className="learn-refresh-action learn-refresh-action-primary"
+                  onClick={handleCompleteReading}
+                  disabled={isCompletedToday}
+                >
+                  <span className="learn-refresh-action-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M5 12.5 10 17l9-10" />
+                    </svg>
+                  </span>
+                  <span>{isCompletedToday ? '今日已完成' : '完成阅读'}</span>
                 </button>
               </div>
             </footer>

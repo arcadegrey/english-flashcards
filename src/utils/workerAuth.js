@@ -31,9 +31,46 @@ const normalizeCustomWords = (value) => {
 
 const normalizeRecord = (value) => (value && typeof value === 'object' && !Array.isArray(value) ? value : {});
 
+const toNumber = (value) => (Number.isFinite(Number(value)) ? Number(value) : 0);
+
+const normalizeStringList = (value) => {
+  const list = Array.isArray(value) ? value : [];
+  const seen = new Set();
+  const output = [];
+
+  list.forEach((item) => {
+    if (item == null) return;
+    const key = String(item).trim();
+    if (!key || seen.has(key)) return;
+    seen.add(key);
+    output.push(key);
+  });
+
+  return output;
+};
+
 const normalizeStudyHistory = (value) => {
   const list = Array.isArray(value) ? value : [];
-  return list.filter((item) => item && typeof item === 'object' && String(item.date || '').trim());
+  return list
+    .map((item) => {
+      const date = String(item?.date || '').trim();
+      if (!date) return null;
+      const readingArticleIds = normalizeStringList(item?.readingArticleIds);
+
+      return {
+        date,
+        wordsLearned: toNumber(item?.wordsLearned),
+        wordsMastered: toNumber(item?.wordsMastered),
+        timeSpent: toNumber(item?.timeSpent),
+        readingsCompleted: Math.max(toNumber(item?.readingsCompleted), readingArticleIds.length),
+        readingQuestionsAnswered: toNumber(item?.readingQuestionsAnswered),
+        readingQuestionsCorrect: toNumber(item?.readingQuestionsCorrect),
+        examQuestionsAnswered: toNumber(item?.examQuestionsAnswered),
+        examQuestionsCorrect: toNumber(item?.examQuestionsCorrect),
+        readingArticleIds,
+      };
+    })
+    .filter(Boolean);
 };
 
 const normalizeProgress = (value) => ({

@@ -6891,7 +6891,7 @@
 
 .reading-session-actions .learn-refresh-bottombar-inner {
   max-width: none;
-  grid-template-columns: 1fr 1fr 1.18fr;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
 }
 
