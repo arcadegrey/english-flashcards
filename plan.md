@@ -29,6 +29,16 @@
 3. 完成今日任务后给出轻量总结和明日预告。
 4. 继续清理 TOEFL/IELTS 选择页和残留旧样式，使其贴近测试页视觉语言。
 
+## 2026-07-06 Update Plan
+
+本轮巡检后，按“真实数据已经存在但 UI 尚未完整消费”的原则推进：
+
+1. 连续打卡真实化：移除今日计划和单词学习侧栏中的 `3 天` / 前三天点亮硬编码，统一使用 `studyHistory` 计算连续天数和本周点亮状态。
+2. 统计页产品化：把 `readingsCompleted`、`readingQuestionsCorrect`、`examQuestionsAnswered`、`examQuestionsCorrect` 纳入统计卡和近 7 天趋势，区分单词、阅读、考试巩固三个维度。
+3. 阅读完成轻量总结：完成阅读后显示正确率、答题数、未掌握词和下一步建议，不只显示 toast。
+4. 阅读列表完成状态：在 `ReadingPicker` 中显示已完成、正确率和最近练习时间。
+5. 每日新词目标云同步：在不破坏现有 Worker 同步协议的前提下扩展偏好同步。
+
 ## Next Product Stages
 
 ### 1. 学习目标
