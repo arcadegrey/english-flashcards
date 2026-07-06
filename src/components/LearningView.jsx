@@ -9,6 +9,7 @@ import AppLayout from './layout/AppLayout';
 import { appShellIcons } from './layout/icons';
 import { QUICK_MENU_MODE_OPTIONS } from './quickMenuOptions';
 import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
+import { calculateStudyStreak, getWeekStudyDays } from '../utils/learningMetrics';
 import '../styles/word-learning-refresh.css';
 
 function LearningView({
@@ -81,6 +82,8 @@ function LearningView({
   const currentModeMeta = QUICK_MENU_MODE_OPTIONS.find((item) => item.id === mode) || QUICK_MENU_MODE_OPTIONS[0];
   const currentWordId = currentWord?.id ?? null;
   const showHint = currentWordId != null && String(hintOpenForWordId) === String(currentWordId);
+  const streak = useMemo(() => calculateStudyStreak(studyHistory), [studyHistory]);
+  const weekDays = useMemo(() => getWeekStudyDays(studyHistory), [studyHistory]);
 
   useEffect(() => {
     if (!toast) {
@@ -267,7 +270,7 @@ function LearningView({
               </svg>
             </span>
             <span>连续打卡</span>
-            <strong>3 天</strong>
+            <strong>{streak > 0 ? `${streak} 天` : '今天开始'}</strong>
           </div>
           <div className="learn-refresh-side-row">
             <span className="learn-refresh-side-icon is-target" aria-hidden="true">
@@ -321,9 +324,12 @@ function LearningView({
           <h2>坚持每天进步一点点</h2>
           <p>积累现在，收获未来</p>
           <div className="learn-refresh-week-row" aria-label="本周打卡">
-            {['一', '二', '三', '四', '五', '六', '日'].map((day, index) => (
-              <span key={day} className={index < 3 ? 'is-done' : ''}>
-                <small>{day}</small>
+            {weekDays.map((day) => (
+              <span
+                key={day.date}
+                className={[day.isDone ? 'is-done' : '', day.isToday ? 'is-today' : ''].filter(Boolean).join(' ')}
+              >
+                <small>{day.label}</small>
                 <b aria-hidden="true">
                   <svg viewBox="0 0 24 24">
                     <path d="m6 12 4 4 8-8" />

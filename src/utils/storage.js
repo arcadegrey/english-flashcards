@@ -129,6 +129,15 @@ export const storage = {
     }
   },
 
+  hasDailyNewWordTarget: () => {
+    try {
+      return localStorage.getItem(STORAGE_KEYS.DAILY_NEW_WORD_TARGET) !== null;
+    } catch (error) {
+      console.error('Failed to check daily new word target:', error);
+      return false;
+    }
+  },
+
   setDailyNewWordTarget: (target) => {
     try {
       const safeTarget = [10, 15, 25, 40].includes(Number(target)) ? Number(target) : 15;

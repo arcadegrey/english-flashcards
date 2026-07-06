@@ -5,6 +5,7 @@ import { HeroCard, ModuleCard, BaseCard } from './ui/Cards';
 import { MotivationBand, StatsRow } from './modules/LearningModules';
 import { ReadingPickerContent } from './reading/ReadingPicker';
 import { buildReadingLevelOptions } from './reading/readingPickerModel';
+import { calculateStudyStreak } from '../utils/learningMetrics';
 
 const UI_ASSETS = {
   hero: '/images/ui-assets/training-hero-flashcards-blue-v1.png',
@@ -80,6 +81,7 @@ function HomeScreen({
     () => (selectedReadingLevel && readingLevelOptions.some((item) => item.id === selectedReadingLevel) ? selectedReadingLevel : ''),
     [readingLevelOptions, selectedReadingLevel]
   );
+  const streak = useMemo(() => calculateStudyStreak(studyHistory), [studyHistory]);
 
   const handleCategoryClick = (category) => {
     if (category.id === 'learnedWords') {
@@ -311,6 +313,7 @@ function HomeScreen({
         >
           <ReadingPickerContent
             readings={readings}
+            studyHistory={studyHistory}
             activeLevel={activeReadingLevel}
             onSelectLevel={handleSelectReadingLevel}
             onBackToLevels={() => setSelectedReadingLevel('')}
@@ -326,7 +329,7 @@ function HomeScreen({
 
         <MotivationBand />
 
-        <StatsRow streak="3" target={dailyTarget} remaining={wordCounts.all || 0} />
+        <StatsRow streak={streak} target={dailyTarget} remaining={wordCounts.all || 0} />
       </div>
     </AppLayout>
   );

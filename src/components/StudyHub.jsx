@@ -1,6 +1,7 @@
 import AppLayout from './layout/AppLayout'
 import { HeroCard } from './ui/Cards'
 import { PlanStatusCards, StatsRow } from './modules/LearningModules'
+import { calculateStudyStreak } from '../utils/learningMetrics'
 
 function StudyHub({
   onOpenWordStudy,
@@ -35,6 +36,8 @@ function StudyHub({
   const newWordProgress = Math.min(todayWordsLearned, newWordTarget);
   const readingTaskComplete = todayReadingsCompleted > 0;
   const examTaskComplete = todayExamQuestionsAnswered >= 5;
+  const streak = calculateStudyStreak(studyHistory);
+  const allDailyTasksComplete = reviewTaskComplete && newWordProgress >= newWordTarget && readingTaskComplete && examTaskComplete;
   const priorityTask = reviewCount > 0
     ? {
         title: '先清掉到期复习',
@@ -158,7 +161,21 @@ function StudyHub({
           onExam={onOpenExamPractice}
         />
 
-        <StatsRow streak="3" target={newWordTarget} remaining={wordCount} />
+        <StatsRow streak={streak} target={newWordTarget} remaining={wordCount} />
+
+        {allDailyTasksComplete && (
+          <section className="study-hub-completion-summary" aria-label="今日任务总结">
+            <div>
+              <span>今日闭环完成</span>
+              <h2>新词、阅读和考试巩固都已经推进。</h2>
+              <p>
+                今天新增 {todayWordsLearned} 个词，完成 {todayReadingsCompleted} 篇阅读，
+                巩固 {todayExamQuestionsAnswered} 题，正确率 {todayExamQuestionsAnswered > 0 ? Math.round((todayExamQuestionsCorrect / todayExamQuestionsAnswered) * 100) : 0}%。
+              </p>
+            </div>
+            <button type="button" onClick={onOpenStatistics}>查看学习趋势</button>
+          </section>
+        )}
 
         <section className="study-hub-account-summary" aria-live="polite">
           <span>{authUser?.email ? `当前账号：${authUser.email}` : syncStatusText || '当前未登录'}</span>

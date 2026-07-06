@@ -168,6 +168,18 @@ const normalizeStudyHistoryItem = (item) => {
   const date = String(item?.date || '').trim()
   if (!date) return null
   const readingArticleIds = uniqueStringList(item?.readingArticleIds)
+  const readingArticleResults = (Array.isArray(item?.readingArticleResults) ? item.readingArticleResults : [])
+    .map((result) => {
+      const articleId = String(result?.articleId || '').trim()
+      if (!articleId) return null
+      return {
+        articleId,
+        questionsAnswered: toNumber(result?.questionsAnswered),
+        questionsCorrect: toNumber(result?.questionsCorrect),
+        completedAt: String(result?.completedAt || date).trim() || date,
+      }
+    })
+    .filter(Boolean)
 
   return {
     date,
@@ -180,6 +192,7 @@ const normalizeStudyHistoryItem = (item) => {
     examQuestionsAnswered: toNumber(item?.examQuestionsAnswered),
     examQuestionsCorrect: toNumber(item?.examQuestionsCorrect),
     readingArticleIds,
+    readingArticleResults,
   }
 }
 
@@ -188,6 +201,15 @@ const normalizeStudyHistory = (value) => {
   return safeList
     .map(normalizeStudyHistoryItem)
     .filter(Boolean)
+}
+
+const normalizePreferences = (value) => {
+  const dailyNewWordTarget = Number(value?.dailyNewWordTarget)
+  return {
+    ...(dailyNewWordTarget && [10, 15, 25, 40].includes(dailyNewWordTarget)
+      ? { dailyNewWordTarget }
+      : {}),
+  }
 }
 
 const mergeStudyHistory = (baseList, extraList) => {
@@ -200,6 +222,15 @@ const mergeStudyHistory = (baseList, extraList) => {
       ...(current.readingArticleIds || []),
       ...(item.readingArticleIds || []),
     ])
+    const articleResultMap = new Map()
+    ;[...(current.readingArticleResults || []), ...(item.readingArticleResults || [])].forEach((result) => {
+      const key = String(result?.articleId || '').trim()
+      if (!key) return
+      const currentResult = articleResultMap.get(key)
+      if (!currentResult || String(result.completedAt || '') >= String(currentResult.completedAt || '')) {
+        articleResultMap.set(key, result)
+      }
+    })
     map.set(date, {
       date,
       wordsLearned: Math.max(toNumber(current.wordsLearned), toNumber(item.wordsLearned)),
@@ -211,6 +242,7 @@ const mergeStudyHistory = (baseList, extraList) => {
       examQuestionsAnswered: Math.max(toNumber(current.examQuestionsAnswered), toNumber(item.examQuestionsAnswered)),
       examQuestionsCorrect: Math.max(toNumber(current.examQuestionsCorrect), toNumber(item.examQuestionsCorrect)),
       readingArticleIds,
+      readingArticleResults: Array.from(articleResultMap.values()),
     })
   })
 
@@ -236,11 +268,16 @@ const normalizeProgressState = (progress) => {
     wordProgress: normalizeRecord(progress?.wordProgress),
     wrongWords,
     studyHistory: normalizeStudyHistory(progress?.studyHistory),
+    preferences: normalizePreferences(progress?.preferences),
   }
 }
 
-const mergeProgress = (localProgress, cloudProgress) =>
-  normalizeProgressState({
+const mergeProgress = (localProgress, cloudProgress) => {
+  const cloudPreferences = normalizePreferences(cloudProgress?.preferences)
+  const localPreferences = normalizePreferences(localProgress?.preferences)
+  const localHasDailyTarget = Boolean(localProgress?.preferences?.hasLocalDailyNewWordTarget)
+
+  return normalizeProgressState({
     learnedWords: [...(cloudProgress.learnedWords || []), ...(localProgress.learnedWords || [])],
     masteredWords: [...(cloudProgress.masteredWords || []), ...(localProgress.masteredWords || [])],
     customWords: mergeCustomWordList(cloudProgress.customWords || [], localProgress.customWords || []),
@@ -250,7 +287,15 @@ const mergeProgress = (localProgress, cloudProgress) =>
     },
     wrongWords: [...(cloudProgress.wrongWords || []), ...(localProgress.wrongWords || [])],
     studyHistory: mergeStudyHistory(cloudProgress.studyHistory || [], localProgress.studyHistory || []),
+    preferences: {
+      ...cloudPreferences,
+      ...localPreferences,
+      dailyNewWordTarget: localHasDailyTarget
+        ? localPreferences.dailyNewWordTarget
+        : cloudPreferences.dailyNewWordTarget || localPreferences.dailyNewWordTarget,
+    },
   })
+}
 
 const areProgressStatesEqual = (left, right) => {
   const l = normalizeProgressState(left)
@@ -261,7 +306,8 @@ const areProgressStatesEqual = (left, right) => {
     JSON.stringify(l.customWords) === JSON.stringify(r.customWords) &&
     JSON.stringify(l.wordProgress) === JSON.stringify(r.wordProgress) &&
     JSON.stringify(l.wrongWords) === JSON.stringify(r.wrongWords) &&
-    JSON.stringify(l.studyHistory) === JSON.stringify(r.studyHistory)
+    JSON.stringify(l.studyHistory) === JSON.stringify(r.studyHistory) &&
+    JSON.stringify(l.preferences) === JSON.stringify(r.preferences)
   )
 }
 
@@ -443,6 +489,7 @@ function AppContent() {
   const [studyHistory, setStudyHistory] = useState([])
   const [customWords, setCustomWords] = useState([])
   const [dailyNewWordTarget, setDailyNewWordTarget] = useState(() => storage.getDailyNewWordTarget())
+  const hasLocalDailyNewWordTargetRef = useRef(storage.hasDailyNewWordTarget())
   const [vocabulary, setVocabulary] = useState([])
   const [vocabularyLoading, setVocabularyLoading] = useState(true)
   const [vocabularyError, setVocabularyError] = useState('')
@@ -524,8 +571,12 @@ function AppContent() {
       wordProgress,
       wrongWords,
       studyHistory,
+      preferences: {
+        dailyNewWordTarget,
+        hasLocalDailyNewWordTarget: hasLocalDailyNewWordTargetRef.current,
+      },
     }),
-    [customWords, learnedWords, masteredWords, studyHistory, wordProgress, wrongWords]
+    [customWords, dailyNewWordTarget, learnedWords, masteredWords, studyHistory, wordProgress, wrongWords]
   )
   latestProgressRef.current = currentProgress
   const selectedReading = useMemo(
@@ -938,6 +989,11 @@ function AppContent() {
     setWordProgress(normalized.wordProgress)
     setWrongWords(normalized.wrongWords)
     setStudyHistory(normalized.studyHistory)
+    if (normalized.preferences.dailyNewWordTarget) {
+      setDailyNewWordTarget(normalized.preferences.dailyNewWordTarget)
+      storage.setDailyNewWordTarget(normalized.preferences.dailyNewWordTarget)
+      hasLocalDailyNewWordTargetRef.current = true
+    }
 
     storage.setLearnedWords(normalized.learnedWords)
     storage.setMasteredWords(normalized.masteredWords)
@@ -1598,6 +1654,18 @@ function AppContent() {
       const articleIds = uniqueStringList(current.readingArticleIds)
       const wasCompleted = articleIds.includes(articleKey)
       const nextArticleIds = wasCompleted ? articleIds : [...articleIds, articleKey]
+      const existingResults = Array.isArray(current.readingArticleResults) ? current.readingArticleResults : []
+      const nextResults = wasCompleted
+        ? existingResults
+        : [
+            ...existingResults.filter((result) => String(result?.articleId) !== articleKey),
+            {
+              articleId: articleKey,
+              questionsAnswered: toNumber(questionsAnswered),
+              questionsCorrect: toNumber(questionsCorrect),
+              completedAt: today,
+            },
+          ]
       const nextItem = {
         ...current,
         readingsCompleted: Math.max(
@@ -1614,6 +1682,7 @@ function AppContent() {
         ),
         timeSpent: toNumber(current.timeSpent) + (wasCompleted ? 0 : toNumber(timeSpent)),
         readingArticleIds: nextArticleIds,
+        readingArticleResults: nextResults,
       }
 
       if (index >= 0) {
@@ -1952,6 +2021,7 @@ function AppContent() {
 
   const handleSelectDailyNewWordTarget = (target) => {
     storage.setDailyNewWordTarget(target)
+    hasLocalDailyNewWordTargetRef.current = true
     setDailyNewWordTarget(storage.getDailyNewWordTarget())
   }
 

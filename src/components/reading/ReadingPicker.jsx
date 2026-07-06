@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { READING_LEVEL_META, buildReadingLevelOptions, filterReadingsByLevel } from './readingPickerModel';
+import { buildReadingCompletionMap } from '../../utils/learningMetrics';
 
 function ReadingPanelIcon() {
   return (
@@ -140,9 +141,17 @@ function ReadingArticleIcon({ index = 0 }) {
   );
 }
 
-export function ReadingArticleRow({ article, index, onClick }) {
+export function ReadingArticleRow({ article, index, onClick, completion }) {
+  const questionsAnswered = Number(completion?.questionsAnswered || 0);
+  const questionsCorrect = Number(completion?.questionsCorrect || 0);
+  const accuracy = questionsAnswered > 0 ? Math.round((questionsCorrect / questionsAnswered) * 100) : null;
+
   return (
-    <button type="button" className={`reading-article-row is-tone-${index % 5}`} onClick={onClick}>
+    <button
+      type="button"
+      className={`reading-article-row is-tone-${index % 5} ${completion?.completed ? 'is-completed' : ''}`}
+      onClick={onClick}
+    >
       <span className="reading-article-thumb" aria-hidden="true">
         <ReadingArticleIcon index={index} />
       </span>
@@ -151,6 +160,13 @@ export function ReadingArticleRow({ article, index, onClick }) {
         <span className="reading-article-meta">
           {article.examType || article.source || 'english-flashcards'} · {article.estimatedMinutes || 4} 分钟
         </span>
+        {completion?.completed && (
+          <span className="reading-article-status">
+            <span>已完成</span>
+            {accuracy !== null && <span>正确率 {accuracy}%</span>}
+            {completion.lastPracticedAt && <span>最近 {completion.lastPracticedAt}</span>}
+          </span>
+        )}
       </span>
       <span className="reading-article-arrow" aria-hidden="true">
         <svg viewBox="0 0 24 24">
@@ -163,6 +179,7 @@ export function ReadingArticleRow({ article, index, onClick }) {
 
 export function ReadingPickerContent({
   readings = [],
+  studyHistory = [],
   activeLevel = '',
   onSelectLevel,
   onBackToLevels,
@@ -174,6 +191,7 @@ export function ReadingPickerContent({
     () => filterReadingsByLevel(readings, resolvedLevel),
     [readings, resolvedLevel]
   );
+  const completionMap = useMemo(() => buildReadingCompletionMap(studyHistory), [studyHistory]);
   const activeLevelLabel = levelOptions.find((item) => item.id === resolvedLevel)?.title || READING_LEVEL_META.all.label;
 
   return (
@@ -215,6 +233,7 @@ export function ReadingPickerContent({
                   key={article.id}
                   article={article}
                   index={index}
+                  completion={completionMap.get(String(article.id))}
                   onClick={() => onOpenArticle?.(article)}
                 />
               ))}

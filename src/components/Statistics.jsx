@@ -1,61 +1,8 @@
 import { useRef } from 'react';
 import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
-
-const DAY_NAMES_CN = ['日', '一', '二', '三', '四', '五', '六'];
+import { calculateStudyStreak, getLast7StudyDays, summarizeStudyHistory } from '../utils/learningMetrics';
 
 const normalizeHistory = (value) => (Array.isArray(value) ? value : []);
-
-const getLast7Days = (studyHistory) => {
-  const days = [];
-  const today = new Date();
-
-  for (let i = 6; i >= 0; i -= 1) {
-    const date = new Date(today);
-    date.setDate(date.getDate() - i);
-    const dateStr = date.toISOString().split('T')[0];
-    const dayData = studyHistory.find((item) => item.date === dateStr) || {};
-
-    days.push({
-      date: dateStr,
-      dayName: DAY_NAMES_CN[date.getDay()],
-      day: date.getDate(),
-      wordsLearned: Number(dayData.wordsLearned || 0),
-      wordsMastered: Number(dayData.wordsMastered || 0),
-      timeSpent: Number(dayData.timeSpent || 0),
-    });
-  }
-
-  return days;
-};
-
-const calculateStreak = (studyHistory) => {
-  const activeDates = new Set(
-    studyHistory
-      .filter((item) => Number(item.wordsLearned || 0) + Number(item.wordsMastered || 0) > 0)
-      .map((item) => item.date)
-  );
-  const today = new Date();
-  let streak = 0;
-  let cursor = new Date(today);
-
-  while (true) {
-    const dateStr = cursor.toISOString().split('T')[0];
-    if (activeDates.has(dateStr)) {
-      streak += 1;
-      cursor.setDate(cursor.getDate() - 1);
-      continue;
-    }
-
-    if (dateStr === today.toISOString().split('T')[0]) {
-      cursor.setDate(cursor.getDate() - 1);
-      continue;
-    }
-
-    break;
-  }
-
-  return streak;
-};
 
 const getCountMeta = (value) => {
   if (typeof value === 'number') {
@@ -80,27 +27,33 @@ function Statistics({
 }) {
   const statsRef = useRef(null);
   const safeHistory = normalizeHistory(studyHistory);
-  const last7Days = getLast7Days(safeHistory);
+  const last7Days = getLast7StudyDays(safeHistory);
+  const totals = summarizeStudyHistory(safeHistory);
   const maxActivity = Math.max(
-    ...last7Days.map((item) => Number(item.wordsLearned || 0) + Number(item.wordsMastered || 0)),
+    ...last7Days.map(
+      (item) =>
+        Number(item.wordsLearned || 0) +
+        Number(item.wordsMastered || 0) +
+        Number(item.readingQuestionsAnswered || 0) +
+        Number(item.examQuestionsAnswered || 0)
+    ),
     1
   );
   const learnedCount = learnedWords.length;
   const masteredCount = masteredWords.length;
-  const streak = calculateStreak(safeHistory);
-  const totalActions = safeHistory.reduce(
-    (sum, item) => sum + Number(item.wordsLearned || 0) + Number(item.wordsMastered || 0),
-    0
-  );
+  const streak = calculateStudyStreak(safeHistory);
   const masteredPercent = totalWords > 0 ? Math.round((masteredCount / totalWords) * 100) : 0;
+  const readingAccuracy = totals.readingQuestions > 0 ? Math.round((totals.readingCorrect / totals.readingQuestions) * 100) : 0;
+  const examAccuracy = totals.examQuestions > 0 ? Math.round((totals.examCorrect / totals.examQuestions) * 100) : 0;
 
   const cards = [
     { label: '今日复习', value: dueReviewCount, sub: '到期单词', tone: 'blue' },
-    { label: '连续学习', value: `${streak} 天`, sub: '当前 streak', tone: 'orange' },
-    { label: '已学习', value: learnedCount, sub: '复习队列', tone: 'violet' },
+    { label: '连续学习', value: `${streak} 天`, sub: '阅读/巩固也计入', tone: 'orange' },
+    { label: '词汇训练', value: totals.words, sub: `${learnedCount} 个在复习队列`, tone: 'violet' },
     { label: '已掌握', value: masteredCount, sub: `${masteredPercent}% 完成`, tone: 'green' },
+    { label: '阅读完成', value: totals.readings, sub: `题目正确率 ${readingAccuracy}%`, tone: 'cyan' },
+    { label: '考试巩固', value: totals.examQuestions, sub: `正确率 ${examAccuracy}%`, tone: 'blue' },
     { label: '错题本', value: wrongWords.length, sub: '待巩固', tone: 'orange' },
-    { label: '近 90 天', value: totalActions, sub: '学习动作', tone: 'cyan' },
   ];
 
   useGSAP(() => {
@@ -138,7 +91,7 @@ function Statistics({
       }
     );
   }, {
-    dependencies: [dueReviewCount, learnedCount, masteredCount, wrongWords.length, totalActions, streak],
+    dependencies: [dueReviewCount, masteredCount, wrongWords.length, totals.words, totals.readings, totals.examQuestions, streak],
     scope: statsRef,
     revertOnUpdate: true,
   });
@@ -177,15 +130,26 @@ function Statistics({
       <section className="statistics-chart-panel">
         <div className="statistics-chart-head">
           <div>
-            <h2>近 7 天学习量</h2>
-            <p>学习 + 掌握</p>
+            <h2>近 7 天学习趋势</h2>
+            <p>单词 / 阅读 / 考试巩固</p>
           </div>
           <span>7 days</span>
         </div>
+        <div className="statistics-chart-legend" aria-hidden="true">
+          <span><i className="is-word" />单词</span>
+          <span><i className="is-reading" />阅读</span>
+          <span><i className="is-exam" />巩固</span>
+        </div>
         <div className="statistics-bar-chart">
           {last7Days.map((day) => {
-            const activity = day.wordsLearned + day.wordsMastered;
+            const wordsActivity = day.wordsLearned + day.wordsMastered;
+            const readingActivity = day.readingQuestionsAnswered;
+            const examActivity = day.examQuestionsAnswered;
+            const activity = wordsActivity + readingActivity + examActivity;
             const height = Math.max((activity / maxActivity) * 100, activity > 0 ? 12 : 5);
+            const wordHeight = activity > 0 ? (wordsActivity / activity) * 100 : 0;
+            const readingHeight = activity > 0 ? (readingActivity / activity) * 100 : 0;
+            const examHeight = activity > 0 ? (examActivity / activity) * 100 : 0;
             return (
               <div key={day.date} className="statistics-bar-item">
                 <div className="statistics-bar-track">
@@ -193,7 +157,11 @@ function Statistics({
                     className="statistics-refresh-bar"
                     style={{ height: `${height}%`, opacity: activity > 0 ? 1 : 0.12 }}
                     title={`${day.date}: ${activity}`}
-                  />
+                  >
+                    <span className="is-exam" style={{ height: `${examHeight}%` }} />
+                    <span className="is-reading" style={{ height: `${readingHeight}%` }} />
+                    <span className="is-word" style={{ height: `${wordHeight}%` }} />
+                  </div>
                 </div>
                 <p className="statistics-bar-day">周{day.dayName}</p>
                 <p className="statistics-bar-value">{activity}</p>

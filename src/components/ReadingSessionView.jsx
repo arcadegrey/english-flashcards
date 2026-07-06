@@ -57,6 +57,7 @@ function ReadingSessionView({
   const [showTranslation, setShowTranslation] = useState(false);
   const [activeWord, setActiveWord] = useState(null);
   const [questionAnswersByArticle, setQuestionAnswersByArticle] = useState({});
+  const [completionSummary, setCompletionSummary] = useState(null);
   const [toast, setToast] = useState('');
   const wordModalRef = useRef(null);
   const masteredWordSet = useMemo(
@@ -123,6 +124,19 @@ function ReadingSessionView({
       : 0;
   const answeredQuestionCount = Object.keys(questionAnswers).length;
   const correctQuestionCount = Object.values(questionAnswers).filter((item) => item?.isCorrect === true).length;
+  const readingAccuracy = answeredQuestionCount > 0 ? Math.round((correctQuestionCount / answeredQuestionCount) * 100) : 0;
+  const effectiveSummary = completionSummary || (isCompletedToday
+    ? {
+        accuracy: readingAccuracy,
+        answered: answeredQuestionCount,
+        correct: correctQuestionCount,
+        unmasteredCount: readingStats.unmasteredCount,
+        nextStep:
+          readingStats.unmasteredCount > 0
+            ? '把未掌握词加入复习，再做一组考试巩固。'
+            : '难词状态不错，可以继续下一篇阅读。',
+      }
+    : null);
   const articleMinutes = article?.estimatedMinutes || 1;
   const layoutTitle = '阅读训练';
   const layoutSubtitle = article
@@ -181,12 +195,23 @@ function ReadingSessionView({
 
   const handleCompleteReading = () => {
     if (!article?.id || typeof onCompleteReading !== 'function') return;
+    const nextSummary = {
+      accuracy: readingAccuracy,
+      answered: answeredQuestionCount,
+      correct: correctQuestionCount,
+      unmasteredCount: readingStats.unmasteredCount,
+      nextStep:
+        readingStats.unmasteredCount > 0
+          ? '把未掌握词加入复习，再做一组考试巩固。'
+          : '难词状态不错，可以继续下一篇阅读。',
+    };
     onCompleteReading({
       articleId: article.id,
       questionsAnswered: answeredQuestionCount,
       questionsCorrect: correctQuestionCount,
       timeSpent: articleMinutes,
     });
+    setCompletionSummary(nextSummary);
     setToast(isCompletedToday ? '今天已记录过这篇阅读' : '已完成阅读，今日计划已更新');
   };
 
@@ -378,6 +403,30 @@ function ReadingSessionView({
                       );
                     })}
                   </div>
+                </section>
+              )}
+
+              {effectiveSummary && (
+                <section className="reading-completion-summary" aria-label="阅读完成总结">
+                  <div className="reading-completion-head">
+                    <span>完成总结</span>
+                    <strong>{effectiveSummary.accuracy}%</strong>
+                  </div>
+                  <div className="reading-completion-grid">
+                    <span>
+                      <b>{effectiveSummary.correct}/{effectiveSummary.answered}</b>
+                      阅读题
+                    </span>
+                    <span>
+                      <b>{effectiveSummary.unmasteredCount}</b>
+                      未掌握词
+                    </span>
+                    <span>
+                      <b>{articleMinutes} 分钟</b>
+                      训练时长
+                    </span>
+                  </div>
+                  <p>{effectiveSummary.nextStep}</p>
                 </section>
               )}
             </article>

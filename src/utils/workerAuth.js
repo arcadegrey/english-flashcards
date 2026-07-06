@@ -8,6 +8,7 @@ const EMPTY_PROGRESS = {
   wordProgress: {},
   wrongWords: [],
   studyHistory: [],
+  preferences: {},
 };
 
 const normalizeIds = (value) => {
@@ -56,6 +57,18 @@ const normalizeStudyHistory = (value) => {
       const date = String(item?.date || '').trim();
       if (!date) return null;
       const readingArticleIds = normalizeStringList(item?.readingArticleIds);
+      const readingArticleResults = (Array.isArray(item?.readingArticleResults) ? item.readingArticleResults : [])
+        .map((result) => {
+          const articleId = String(result?.articleId || '').trim();
+          if (!articleId) return null;
+          return {
+            articleId,
+            questionsAnswered: toNumber(result?.questionsAnswered),
+            questionsCorrect: toNumber(result?.questionsCorrect),
+            completedAt: String(result?.completedAt || date).trim() || date,
+          };
+        })
+        .filter(Boolean);
 
       return {
         date,
@@ -68,9 +81,19 @@ const normalizeStudyHistory = (value) => {
         examQuestionsAnswered: toNumber(item?.examQuestionsAnswered),
         examQuestionsCorrect: toNumber(item?.examQuestionsCorrect),
         readingArticleIds,
+        readingArticleResults,
       };
     })
     .filter(Boolean);
+};
+
+const normalizePreferences = (value) => {
+  const dailyNewWordTarget = Number(value?.dailyNewWordTarget);
+  return {
+    ...(dailyNewWordTarget && [10, 15, 25, 40].includes(dailyNewWordTarget)
+      ? { dailyNewWordTarget }
+      : {}),
+  };
 };
 
 const normalizeProgress = (value) => ({
@@ -80,6 +103,7 @@ const normalizeProgress = (value) => ({
   wordProgress: normalizeRecord(value?.wordProgress),
   wrongWords: normalizeIds(value?.wrongWords),
   studyHistory: normalizeStudyHistory(value?.studyHistory),
+  preferences: normalizePreferences(value?.preferences),
 });
 
 const getErrorMessage = (payload, status) => {
