@@ -528,12 +528,11 @@
 
 .ds-hero-meta {
   margin-top: 24px;
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 0 24px;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.18);
+  display: block;
+  min-height: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
   font-size: 20px;
   font-weight: 820;
 }
@@ -1530,6 +1529,64 @@
 
 .dark .study-hub-account-summary span:last-child {
   color: #92a4c3;
+}
+
+.study-hub-hero-actions {
+  display: grid;
+  gap: 16px;
+}
+
+.study-hub-hero-actions p {
+  margin: 0;
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.45;
+  font-weight: 780;
+}
+
+.study-hub-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.study-hub-hero-button {
+  min-width: 170px;
+  min-height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 0;
+  border-radius: 16px;
+  padding: 0 22px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 930;
+  white-space: nowrap;
+}
+
+.study-hub-hero-button svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.study-hub-hero-button.is-primary {
+  background: linear-gradient(135deg, #4f7cff, #2f6dff);
+  color: #ffffff;
+  box-shadow: 0 14px 28px rgba(79, 124, 255, 0.22);
+}
+
+.study-hub-hero-button.is-secondary {
+  border: 1px solid rgba(79, 124, 255, 0.24);
+  background: rgba(255, 255, 255, 0.78);
+  color: #2f6dff;
+  box-shadow: 0 10px 22px rgba(79, 124, 255, 0.08);
 }
 
 .study-hub-completion-summary {
@@ -4407,6 +4464,34 @@
 
   .ds-hero-card.is-soft .ds-hero-control {
     display: none;
+  }
+
+  .study-hub-hero-actions {
+    max-width: calc(100% - 74px);
+    gap: 10px;
+  }
+
+  .study-hub-hero-actions p {
+    font-size: 12px;
+    line-height: 1.45;
+  }
+
+  .study-hub-hero-buttons {
+    gap: 8px;
+  }
+
+  .study-hub-hero-button {
+    min-width: 0;
+    min-height: 36px;
+    border-radius: 12px;
+    padding: 0 12px;
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .study-hub-hero-button svg {
+    width: 16px;
+    height: 16px;
   }
 
   .ds-module-grid {

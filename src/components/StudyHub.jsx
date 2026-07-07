@@ -5,6 +5,7 @@ import { calculateStudyStreak } from '../utils/learningMetrics'
 
 function StudyHub({
   onOpenWordStudy,
+  onOpenTraining,
   onOpenReading,
   onOpenSuggestedReading,
   onOpenTodayReview,
@@ -38,6 +39,7 @@ function StudyHub({
   const examTaskComplete = todayExamQuestionsAnswered >= 5;
   const streak = calculateStudyStreak(studyHistory);
   const allDailyTasksComplete = reviewTaskComplete && newWordProgress >= newWordTarget && readingTaskComplete && examTaskComplete;
+  const isSignedIn = Boolean(authUser?.email);
   const priorityTask = reviewCount > 0
     ? {
         title: '先清掉到期复习',
@@ -85,7 +87,7 @@ function StudyHub({
       id: 'training',
       label: '训练中心',
       icon: 'training',
-      onClick: onOpenWordStudy,
+      onClick: onOpenTraining || onOpenWordStudy,
     },
     {
       id: 'words',
@@ -143,6 +145,32 @@ function StudyHub({
           label="每日进步一点点"
           title="今天先做这一步"
           subtitle={priorityTask.title}
+          meta={
+            <div className="study-hub-hero-actions">
+              <p>
+                {isSignedIn
+                  ? `${authUser.email} · ${syncStatusText || '学习记录已连接账号'}`
+                  : '登录后可同步背词记录、阅读进度和错题统计'}
+              </p>
+              <div className="study-hub-hero-buttons" aria-label="今日计划操作">
+                <button type="button" className="study-hub-hero-button is-primary" onClick={priorityTask.onClick}>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 5.5A2.5 2.5 0 0 1 7.5 3H20v16H7.5A2.5 2.5 0 0 0 5 21.5Z" />
+                    <path d="M5 5.5v16" />
+                    <path d="M9 7h7" />
+                  </svg>
+                  <span>开始学习</span>
+                </button>
+                <button type="button" className="study-hub-hero-button is-secondary" onClick={onAuthOpen}>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4" />
+                    <path d="M5 21a7 7 0 0 1 14 0" />
+                  </svg>
+                  <span>{isSignedIn ? '查看账号' : '登录保存进度'}</span>
+                </button>
+              </div>
+            </div>
+          }
           illustrationSrc="/images/ui-assets/training-hero-flashcards-blue-v1.png"
         />
 

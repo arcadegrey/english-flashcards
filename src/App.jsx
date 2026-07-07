@@ -2376,6 +2376,7 @@ function AppContent() {
         return (
           <StudyHub
             onOpenWordStudy={handleOpenWordStudy}
+            onOpenTraining={handleBackToHome}
             onOpenReading={handleOpenReadingList}
             onOpenSuggestedReading={handleOpenSuggestedReading}
             onOpenTodayReview={handleOpenTodayReview}

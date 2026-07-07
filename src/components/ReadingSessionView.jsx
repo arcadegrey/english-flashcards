@@ -124,12 +124,14 @@ function ReadingSessionView({
       : 0;
   const answeredQuestionCount = Object.keys(questionAnswers).length;
   const correctQuestionCount = Object.values(questionAnswers).filter((item) => item?.isCorrect === true).length;
+  const hasReadingQuestions = readingQuestions.length > 0;
   const readingAccuracy = answeredQuestionCount > 0 ? Math.round((correctQuestionCount / answeredQuestionCount) * 100) : 0;
   const effectiveSummary = completionSummary || (isCompletedToday
     ? {
         accuracy: readingAccuracy,
         answered: answeredQuestionCount,
         correct: correctQuestionCount,
+        hasQuestions: hasReadingQuestions,
         unmasteredCount: readingStats.unmasteredCount,
         nextStep:
           readingStats.unmasteredCount > 0
@@ -199,6 +201,7 @@ function ReadingSessionView({
       accuracy: readingAccuracy,
       answered: answeredQuestionCount,
       correct: correctQuestionCount,
+      hasQuestions: hasReadingQuestions,
       unmasteredCount: readingStats.unmasteredCount,
       nextStep:
         readingStats.unmasteredCount > 0
@@ -410,12 +413,12 @@ function ReadingSessionView({
                 <section className="reading-completion-summary" aria-label="阅读完成总结">
                   <div className="reading-completion-head">
                     <span>完成总结</span>
-                    <strong>{effectiveSummary.accuracy}%</strong>
+                    <strong>{effectiveSummary.hasQuestions ? `${effectiveSummary.accuracy}%` : '已读完'}</strong>
                   </div>
                   <div className="reading-completion-grid">
                     <span>
-                      <b>{effectiveSummary.correct}/{effectiveSummary.answered}</b>
-                      阅读题
+                      <b>{effectiveSummary.hasQuestions ? `${effectiveSummary.correct}/${effectiveSummary.answered}` : '暂无'}</b>
+                      {effectiveSummary.hasQuestions ? '阅读题' : '阅读题目'}
                     </span>
                     <span>
                       <b>{effectiveSummary.unmasteredCount}</b>

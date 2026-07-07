@@ -40,6 +40,7 @@ App startup loads `core.json` plus TOEFL/IELTS manifests. Specific TOEFL/IELTS l
 - 2026-06-29: Cleaned placeholder example translations for IDs 5400-8699 in `public/data/vocabulary.json` and `public/data/vocabulary/core.json`. Old "这个例句..." and "参考译文..." fallback text counts were verified as 0. Sample `dine` translation: "我们经常和朋友在这家餐厅用餐。"
 - 2026-06-30: Rewrote 1364 fallback English examples in IDs 5400-8699. `Students often meet the word ...` templates were verified as 0 in both vocabulary files. Export/import scripts: `scripts/export-example-rewrite-csv.mjs` and `scripts/import-example-rewrites.mjs`.
 - 2026-07-01: Regenerated and uploaded four voices for those 1364 changed example audios, totaling 5456 changed MP3 files. R2 resume upload covered example audio for IDs 5400-8699 and `audio/examples/manifest.json`; public samples `manifest.json`, `af_bella/5400.mp3`, and `bm_george/8699.mp3` returned `200 OK`.
+- 2026-07-07: Corrected the invalid `transportation` example for ID 7631 in `public/data/vocabulary.json` and `public/data/vocabulary/core.json`. Regenerated the four static example MP3 files for `af_bella`, `am_michael`, `bf_emma`, and `bm_george`, uploaded `audio/examples/{voice}/7631.mp3` plus `audio/examples/manifest.json` to R2, and verified all public URLs returned `200 OK`.
 
 ## CSV Import
 
@@ -91,6 +92,7 @@ Static audio:
 - Completed voices: `af_bella`, `am_michael`, `bf_emma`, `bm_george`
 - 2026-06-28: New audio uploaded to R2 for IDs 5400-8699: 13,200 word MP3 files and 13,200 example MP3 files. Both manifests were updated and public samples returned `200 OK`.
 - 2026-07-01: `scripts/generate_kokoro_example_audio.py` became hash-aware. It reads `public/audio/examples/manifest.json` `exampleHashes`, so changed example text is queued even when an MP3 already exists. `--dry-run --start 5399` returned `pendingFiles=0`.
+- 2026-07-07: Example audio ID 7631 was regenerated with `npm run tts:generate-examples -- --start 7630 --limit 1`, then uploaded with `npm run audio:upload-examples-r2 -- --bucket english-flashcards-audio --min-id 7631 --max-id 7631`. A follow-up dry run returned `pendingFiles=0`.
 
 Suggested production environment variables:
 
