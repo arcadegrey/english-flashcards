@@ -118,3 +118,28 @@
   .classroom-student-row { padding: 18px 8px; gap: 16px 8px; }
   .classroom-empty { padding: 28px 12px; }
 }
+
+.classroom-assignments { padding-top: 24px; margin-bottom: 24px; border-top: 1px solid rgba(126,166,255,.16); }
+.classroom-assignment-form { display: grid; grid-template-columns: minmax(0,1fr) minmax(180px,.65fr) auto; align-items: end; gap: 16px; margin: 20px 0 12px; }
+.classroom-assignment-list { list-style: none; padding: 0; margin: 20px 0 0; }
+.classroom-assignment-list > li { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 20px 0; border-bottom: 1px solid rgba(126,166,255,.16); }
+.classroom-assignment-list > li:last-child { border-bottom: 0; }
+.classroom-assignment-list > li > div { min-width: 0; }
+.classroom-assignment-list h3, .classroom-assignment-list h4 { color: var(--ds-text); font-size: 16px; line-height: 1.6; margin: 6px 0; overflow-wrap: anywhere; }
+.classroom-assignment-list p, .classroom-assignment-result small { color: var(--ds-muted); font-size: 13px; line-height: 1.6; margin: 6px 0; overflow-wrap: anywhere; }
+.classroom-assignment-list button { flex-shrink: 0; }
+.classroom-assignment-result { display: grid; justify-items: end; gap: 6px; }
+.classroom-submissions { margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(126,166,255,.16); }
+.classroom-submissions > h4 { font-size: 16px; line-height: 1.6; overflow-wrap: anywhere; }
+.reading-save-status { padding: 16px 24px; border-top: 1px solid rgba(126,166,255,.16); color: var(--ds-muted); font-size: 13px; line-height: 1.7; }
+.reading-save-status p { margin: 4px 0; }
+@media (max-width: 1200px) {
+  .classroom-assignment-form { grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
+  .classroom-assignment-form > label:first-child { grid-column: 1 / -1; }
+}
+@media (max-width: 700px) {
+  .classroom-assignment-form { grid-template-columns: minmax(0,1fr); }
+  .classroom-assignment-list > li { align-items: stretch; flex-direction: column; gap: 16px; }
+  .classroom-assignment-result { justify-items: start; }
+  .reading-save-status { padding: 16px; }
+}

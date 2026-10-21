@@ -1,7 +1,7 @@
 import { wordBelongsToCategory } from './wordCategories.js'
 
-export const PLAN_CATEGORY_IDS = ['all', 'daily', 'cet4', 'cet6', 'toefl', 'ielts']
-export const DAILY_NEW_WORD_TARGETS = [10, 15, 25, 40, 70, 100]
+import { PLAN_CATEGORY_IDS } from '../../shared/planPreferences.js'
+export { DAILY_NEW_WORD_TARGETS, PLAN_CATEGORY_IDS } from '../../shared/planPreferences.js'
 
 export const normalizePlanCategory = (value) => PLAN_CATEGORY_IDS.includes(value) ? value : 'all'
 

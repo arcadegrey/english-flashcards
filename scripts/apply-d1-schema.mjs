@@ -1,3 +1,4 @@
+import { progressColumnMigrations } from '../worker/progressSchema.js';
 import { execFileSync } from 'node:child_process';
 import { mkdtempSync, writeFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
@@ -24,13 +25,7 @@ const rows = Array.isArray(parsed)
   : parsed?.results || parsed?.result || [];
 const existingColumns = new Set(rows.map((row) => row?.name).filter(Boolean));
 
-const columns = [
-  { name: 'word_progress', sql: "ALTER TABLE user_progress ADD COLUMN word_progress TEXT NOT NULL DEFAULT '{}';" },
-  { name: 'wrong_words', sql: "ALTER TABLE user_progress ADD COLUMN wrong_words TEXT NOT NULL DEFAULT '[]';" },
-  { name: 'study_history', sql: "ALTER TABLE user_progress ADD COLUMN study_history TEXT NOT NULL DEFAULT '[]';" },
-];
-
-const missingSql = columns
+const missingSql = progressColumnMigrations
   .filter((column) => !existingColumns.has(column.name))
   .map((column) => column.sql);
 

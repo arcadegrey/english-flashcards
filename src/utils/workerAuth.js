@@ -1,5 +1,5 @@
+import { normalizePreferences } from '../../shared/planPreferences.js';
 import { normalizeStudyHistory } from '../../shared/studyHistory.js';
-import { DAILY_NEW_WORD_TARGETS } from './studyPlan.js';
 
 const API_BASE = String(import.meta.env.VITE_API_BASE || '/api').trim().replace(/\/$/, '');
 const FALLBACK_SESSION_TTL_SECONDS = 60 * 60 * 24 * 30;
@@ -35,15 +35,6 @@ const normalizeCustomWords = (value) => {
 
 const normalizeRecord = (value) => (value && typeof value === 'object' && !Array.isArray(value) ? value : {});
 
-const normalizePreferences = (value) => {
-  const dailyNewWordTarget = Number(value?.dailyNewWordTarget);
-  return {
-    ...(dailyNewWordTarget && DAILY_NEW_WORD_TARGETS.includes(dailyNewWordTarget)
-      ? { dailyNewWordTarget }
-      : {}),
-  };
-};
-
 const normalizeProgress = (value) => ({
   learnedWords: normalizeIds(value?.learnedWords),
   masteredWords: normalizeIds(value?.masteredWords),
@@ -70,13 +61,13 @@ const buildSessionFromUser = (user, expiresAt) => ({
   user,
 });
 
-export const requestApi = async (path, { method = 'GET', body, allowUnauthorized = false, signal } = {}) => {
+export const requestApi = async (path, { method = 'GET', body, allowUnauthorized = false, signal, expectedUserId } = {}) => {
   const response = await fetch(`${API_BASE}${path}`, {
     method,
     credentials: 'include',
-    headers: body ? { 'content-type': 'application/json' } : undefined,
+    headers: { ...(body ? { 'content-type': 'application/json' } : {}), ...(expectedUserId ? { 'x-flashcards-user': String(expectedUserId) } : {}) },
     body: body ? JSON.stringify(body) : undefined,
-    signal,
+    signal: signal || AbortSignal.timeout(20000),
   });
 
   const contentType = response.headers.get('content-type') || '';
@@ -87,7 +78,9 @@ export const requestApi = async (path, { method = 'GET', body, allowUnauthorized
     if (allowUnauthorized && response.status === 401) {
       return { unauthorized: true, payload };
     }
-    throw new Error(getErrorMessage(payload, response.status));
+    const error = new Error(getErrorMessage(payload, response.status));
+    error.status = response.status;
+    throw error;
   }
 
   return payload;
@@ -202,7 +195,9 @@ export const refreshSession = async () => {
   const payload = await requestApi('/auth/me', { allowUnauthorized: true });
 
   if (payload?.unauthorized) {
-    throw new Error('登录已过期，请重新登录。');
+    const error = new Error('登录已过期，请重新登录。');
+    error.status = 401;
+    throw error;
   }
 
   const user = payload?.user;
@@ -219,7 +214,9 @@ export const refreshSession = async () => {
 export const fetchCurrentUser = async () => {
   const payload = await requestApi('/auth/me', { allowUnauthorized: true });
   if (payload?.unauthorized) {
-    throw new Error('登录已过期，请重新登录。');
+    const error = new Error('登录已过期，请重新登录。');
+    error.status = 401;
+    throw error;
   }
 
   const user = payload?.user;
@@ -229,17 +226,18 @@ export const fetchCurrentUser = async () => {
   return user;
 };
 
-export const loadCloudProgress = async () => {
-  const payload = await requestApi('/progress');
+export const loadCloudProgress = async (expectedUserId) => {
+  const payload = await requestApi('/progress', { expectedUserId });
   return {
     progress: normalizeProgress(payload?.progress || EMPTY_PROGRESS),
     updatedAt: String(payload?.updatedAt || ''),
   };
 };
 
-export const upsertCloudProgress = async ({ progress, baseUpdatedAt = '' }) => {
+export const upsertCloudProgress = async ({ progress, baseUpdatedAt = '', expectedUserId }) => {
   const payload = await requestApi('/progress', {
     method: 'PUT',
+    expectedUserId,
     body: {
       progress: normalizeProgress(progress),
       baseUpdatedAt: String(baseUpdatedAt || ''),

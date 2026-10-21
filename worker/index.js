@@ -1,5 +1,7 @@
+import { normalizePreferences, mergePreferences } from '../shared/planPreferences.js';
 import { normalizeStudyHistory, mergeStudyHistory } from '../shared/studyHistory.js';
 import { handleClassroomApi, profileFields } from './classroom.js';
+import { handleReadingApi } from './readingAssignments.js';
 
 const COOKIE_NAME = 'ef_session';
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -10,6 +12,7 @@ const EMPTY_PROGRESS = {
   wordProgress: {},
   wrongWords: [],
   studyHistory: [],
+  preferences: {},
 };
 
 const json = (data, status = 200, headers = {}) =>
@@ -149,6 +152,7 @@ const normalizeProgress = (progress) => ({
   wordProgress: normalizeRecord(progress?.wordProgress),
   wrongWords: normalizeIdArray(progress?.wrongWords),
   studyHistory: normalizeStudyHistory(progress?.studyHistory),
+  preferences: normalizePreferences(progress?.preferences),
 });
 
 export const mergeProgress = (baseProgress, incomingProgress) => {
@@ -178,6 +182,7 @@ export const mergeProgress = (baseProgress, incomingProgress) => {
     wordProgress,
     wrongWords,
     studyHistory,
+    preferences: mergePreferences(base.preferences, incoming.preferences),
   };
 };
 
@@ -502,7 +507,7 @@ const handleGetProgress = async (request, env) => {
   }
 
   const row = await env.DB.prepare(
-    `SELECT learned_words, mastered_words, custom_words, word_progress, wrong_words, study_history
+    `SELECT learned_words, mastered_words, custom_words, word_progress, wrong_words, study_history, preferences, updated_at
      FROM user_progress
      WHERE user_id = ?
      LIMIT 1`
@@ -521,7 +526,8 @@ const handleGetProgress = async (request, env) => {
       customWords: parseProgressText(row.custom_words),
       wordProgress: parseProgressObjectText(row.word_progress),
       wrongWords: parseProgressText(row.wrong_words),
-      studyHistory: parseProgressText(row.study_history),
+      studyHistory: normalizeStudyHistory(parseProgressText(row.study_history)),
+      preferences: normalizePreferences(parseProgressObjectText(row.preferences)),
     },
     updatedAt: String(row.updated_at || ''),
   });
@@ -536,72 +542,54 @@ const handlePutProgress = async (request, env) => {
   const body = await parseJsonBody(request);
   const normalized = normalizeProgress(body?.progress || body || EMPTY_PROGRESS);
   const baseUpdatedAt = String(body?.baseUpdatedAt || '').trim();
-  const existing = await env.DB.prepare(
-    `SELECT learned_words, mastered_words, custom_words, word_progress, wrong_words, study_history, updated_at
-     FROM user_progress
-     WHERE user_id = ?
-     LIMIT 1`
-  )
-    .bind(user.id)
-    .first();
-
-  let finalProgress = normalized;
-  let conflictResolved = false;
-
-  if (existing) {
-    const existingProgress = {
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    const existing = await env.DB.prepare(
+      'SELECT * FROM user_progress WHERE user_id = ? LIMIT 1'
+    ).bind(user.id).first();
+    const existingProgress = existing ? {
       learnedWords: parseProgressText(existing.learned_words),
       masteredWords: parseProgressText(existing.mastered_words),
       customWords: parseProgressText(existing.custom_words),
       wordProgress: parseProgressObjectText(existing.word_progress),
       wrongWords: parseProgressText(existing.wrong_words),
       studyHistory: parseProgressText(existing.study_history),
-    };
-    const currentUpdatedAt = String(existing.updated_at || '');
-    const canReplaceDirectly = Boolean(baseUpdatedAt) && baseUpdatedAt === currentUpdatedAt;
-
-    if (!canReplaceDirectly) {
-      finalProgress = mergeProgress(existingProgress, normalized);
-      conflictResolved = true;
-    }
+      preferences: parseProgressObjectText(existing.preferences),
+    } : EMPTY_PROGRESS;
+    const conflictResolved = Boolean(existing) && (!baseUpdatedAt || baseUpdatedAt !== existing.updated_at);
+    const finalProgress = conflictResolved ? mergeProgress(existingProgress, normalized) : normalized;
+    // An older client omitting preferences must never erase saved settings.
+    finalProgress.preferences = mergePreferences(existingProgress.preferences, normalized.preferences);
+    const updatedAt = new Date(Math.max(Date.now(), (Date.parse(existing?.updated_at) || 0) + 1)).toISOString();
+    const saved = await env.DB.prepare(
+      `INSERT INTO user_progress (user_id, learned_words, mastered_words, custom_words, word_progress, wrong_words, study_history, preferences, updated_at)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+       ON CONFLICT(user_id) DO UPDATE SET learned_words=excluded.learned_words,
+       mastered_words=excluded.mastered_words, custom_words=excluded.custom_words,
+       word_progress=excluded.word_progress, wrong_words=excluded.wrong_words,
+       study_history=excluded.study_history, preferences=excluded.preferences, updated_at=excluded.updated_at
+       WHERE user_progress.updated_at = ?`
+    ).bind(user.id, JSON.stringify(finalProgress.learnedWords), JSON.stringify(finalProgress.masteredWords),
+      JSON.stringify(finalProgress.customWords), JSON.stringify(finalProgress.wordProgress),
+      JSON.stringify(finalProgress.wrongWords), JSON.stringify(finalProgress.studyHistory),
+      JSON.stringify(finalProgress.preferences), updatedAt, existing?.updated_at || '').run();
+    if (saved.meta.changes) return json({ updatedAt, progress: finalProgress, conflictResolved });
   }
-
-  const updatedAt = nowIso();
-
-  await env.DB.prepare(
-    `INSERT INTO user_progress (user_id, learned_words, mastered_words, custom_words, word_progress, wrong_words, study_history, updated_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-     ON CONFLICT(user_id) DO UPDATE SET
-       learned_words = excluded.learned_words,
-       mastered_words = excluded.mastered_words,
-       custom_words = excluded.custom_words,
-       word_progress = excluded.word_progress,
-       wrong_words = excluded.wrong_words,
-       study_history = excluded.study_history,
-       updated_at = excluded.updated_at`
-  )
-    .bind(
-      user.id,
-      JSON.stringify(finalProgress.learnedWords),
-      JSON.stringify(finalProgress.masteredWords),
-      JSON.stringify(finalProgress.customWords),
-      JSON.stringify(finalProgress.wordProgress),
-      JSON.stringify(finalProgress.wrongWords),
-      JSON.stringify(finalProgress.studyHistory),
-      updatedAt
-    )
-    .run();
-
-  return json({
-    updatedAt,
-    progress: finalProgress,
-    conflictResolved,
-  });
+  return errorJson('进度正在其他设备更新，请重试同步。', 409, 'SYNC_CONFLICT');
 };
 
 const handleApi = async (request, env) => {
   const url = new URL(request.url);
   const { pathname } = url;
+  const expectedUserId = request.headers.get('x-flashcards-user');
+  if (expectedUserId) {
+    const currentUser = await getSessionUser(env, request);
+    if (!currentUser) return errorJson('请重新登录账号。', 401, 'UNAUTHORIZED');
+    if (expectedUserId !== currentUser.id) return errorJson('账号已切换，请刷新页面后重试。', 409, 'ACCOUNT_CHANGED');
+  }
+
+  if (pathname.startsWith('/api/reading-sessions/') || pathname === '/api/assignments' || pathname.startsWith('/api/assignments/') || /^\/api\/classes\/[\w-]+\/assignments$/.test(pathname)) {
+    return handleReadingApi(request, env, await getSessionUser(env, request));
+  }
 
   if (pathname === '/api/classroom' || pathname.startsWith('/api/classroom/') || pathname === '/api/classes' || pathname.startsWith('/api/classes/')) {
     return handleClassroomApi(request, env, await getSessionUser(env, request));

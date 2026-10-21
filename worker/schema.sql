@@ -40,6 +40,7 @@ CREATE TABLE IF NOT EXISTS user_progress (
   word_progress TEXT NOT NULL DEFAULT '{}',
   wrong_words TEXT NOT NULL DEFAULT '[]',
   study_history TEXT NOT NULL DEFAULT '[]',
+  preferences TEXT NOT NULL DEFAULT '{}',
   updated_at TEXT NOT NULL,
   FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
@@ -72,3 +73,35 @@ CREATE TABLE IF NOT EXISTS class_memberships (
   FOREIGN KEY (student_id) REFERENCES users(id) ON DELETE CASCADE
 );
 CREATE INDEX IF NOT EXISTS idx_class_memberships_student ON class_memberships(student_id);
+
+CREATE TABLE IF NOT EXISTS reading_sessions (
+  user_id INTEGER NOT NULL,
+  session_key TEXT NOT NULL,
+  answers_json TEXT NOT NULL DEFAULT '{}',
+  updated_at TEXT NOT NULL,
+  PRIMARY KEY (user_id, session_key),
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS reading_assignments (
+  id TEXT PRIMARY KEY,
+  class_id TEXT NOT NULL,
+  article_id TEXT NOT NULL,
+  article_json TEXT NOT NULL,
+  due_at TEXT NOT NULL,
+  created_at TEXT NOT NULL,
+  FOREIGN KEY (class_id) REFERENCES classes(id) ON DELETE CASCADE
+);
+CREATE INDEX IF NOT EXISTS idx_reading_assignments_class ON reading_assignments(class_id, created_at);
+
+CREATE TABLE IF NOT EXISTS assignment_submissions (
+  assignment_id TEXT NOT NULL,
+  student_id INTEGER NOT NULL,
+  answers_json TEXT NOT NULL,
+  questions_answered INTEGER NOT NULL,
+  questions_correct INTEGER NOT NULL,
+  submitted_at TEXT NOT NULL,
+  PRIMARY KEY (assignment_id, student_id),
+  FOREIGN KEY (assignment_id) REFERENCES reading_assignments(id) ON DELETE CASCADE,
+  FOREIGN KEY (student_id) REFERENCES users(id) ON DELETE CASCADE
+);

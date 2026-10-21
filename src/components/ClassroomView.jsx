@@ -1,3 +1,4 @@
+import { TeacherReadingAssignments, StudentReadingAssignments } from './classroom/ReadingAssignments';
 import { useEffect, useState } from 'react';
 import AppLayout from './layout/AppLayout';
 import { BaseCard } from './ui/Cards';
@@ -87,7 +88,7 @@ function StudentRoster({ classroom, refreshKey, onSelectStudent, onChanged }) {
   );
 }
 
-export default function ClassroomView({ user, navItems, topbarProps, onAuthOpen, onProfileUpdated, onSync, initialVocabulary = [] }) {
+export default function ClassroomView({ user, navItems, topbarProps, onAuthOpen, onProfileUpdated, onSync, onStartAssignment, initialVocabulary = [] }) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
@@ -106,7 +107,7 @@ export default function ClassroomView({ user, navItems, topbarProps, onAuthOpen,
     const load = async () => {
       setLoading(true); setError('');
       try {
-        const result = await loadClassroom(controller.signal);
+        const result = await loadClassroom(controller.signal, userId);
         if (controller.signal.aborted) return;
         setData(result);
         setSelectedClassId((current) => result.classes.some((item) => item.id === current) ? current : result.classes[0]?.id || '');
@@ -163,6 +164,7 @@ export default function ClassroomView({ user, navItems, topbarProps, onAuthOpen,
                       <SecondaryButton disabled={busy} onClick={() => perform(() => rotateClassInvite(selectedClass.id), '邀请码已更换，旧码不能再加入，现有学生保持不变。')}>更换邀请码</SecondaryButton>
                     </div></div>
                   </div>
+                  <TeacherReadingAssignments key={selectedClass.id} classId={selectedClass.id} />
                   {student ? <StudentProgressPanel key={`${selectedClass.id}:${student.id}`} classId={selectedClass.id} student={student} initialVocabulary={initialVocabulary} onBack={() => setStudent(null)} />
                     : <StudentRoster key={selectedClass.id} classroom={selectedClass} refreshKey={refresh} onSelectStudent={setStudent} onChanged={() => setRefresh((value) => value + 1)} />}
                 </BaseCard>}
@@ -171,6 +173,7 @@ export default function ClassroomView({ user, navItems, topbarProps, onAuthOpen,
 
             {profile?.profileConfigured && !teacher && (
               <>
+                <StudentReadingAssignments userId={userId} onStart={onStartAssignment} />
                 <BaseCard className="classroom-panel"><div className="classroom-heading"><div><h2>加入老师的班级</h2><p>加入后，该班老师可以查看你已同步的单词与复习状态、阅读完成记录及答题成绩；退出后停止共享。</p></div></div>
                   <form className="classroom-inline-form" onSubmit={(event) => { event.preventDefault(); perform(async () => { await joinClassroom(inviteCode); setInviteCode(''); try { await onSync?.(); } catch { return { notice: '已加入班级，进度暂未同步，请稍后点击同步学习进度。' }; } }, '已加入班级。老师可以查看你的云端学习记录。'); }}>
                     <label className="classroom-field">班级邀请码<input className="classroom-input classroom-code-input" placeholder="输入老师的 10 位邀请码" value={inviteCode} onChange={(event) => setInviteCode(event.target.value.toUpperCase().replace(/\s/g, ''))} required maxLength={10} pattern="[A-HJ-NP-Z2-9]{10}" /></label>

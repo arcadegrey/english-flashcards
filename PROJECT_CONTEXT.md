@@ -32,14 +32,14 @@ Less common maintenance commands are listed in `docs/project-reference.md`.
 
 - `studyHub`: 今日学习计划 and training entry.
 - `planSettings`: daily new-word target settings, persisted to `flashcards_daily_new_word_target`.
-- Plan settings also select a persistent local vocabulary category (`flashcards_study_plan_category`). Home new-word cards start that category directly; all exam scopes and quiz distractors are restricted to it. Training Center category browsing remains independent.
+- Plan settings also select a persistent vocabulary category (`flashcards_study_plan_category`). Home new-word cards start that category directly; all exam scopes and quiz distractors are restricted to it. Training Center category browsing remains independent.
 - `home`: Training Center with hero, four module cards, inline word picker, inline reading picker, motivation band, and Daily Progress.
 - `learn`: shared learning container; `LearningView` renders study/test/fill/spelling/matching modes.
 - `readingSession`: reading article practice using shared `AppLayout`.
 - `todayReview`, `wrongWords`, `learnedWords`, `masteredWords`: word collection pages.
 - `statistics`: learning statistics.
 - `examPractice`: exam practice range and mode selection.
-- `classroom`: teacher/student cloud profiles, invite-code classes, student roster and read-only word progress; accessed from the account panel. See `docs/classroom-system.md` for permissions and deployment.
+- `classroom`: teacher/student cloud profiles, invite-code classes, student roster, word/reading progress, and assigned reading with server-graded first submissions; accessed from the account panel. See `docs/classroom-system.md` for permissions and deployment.
 
 ## Important Files
 
@@ -73,8 +73,18 @@ Less common maintenance commands are listed in `docs/project-reference.md`.
 
 - Reading highlights may need a dedicated lookup or shard preloading for TOEFL/IELTS words that are not loaded yet.
 - Worker login depends on Resend and production secrets.
-- Daily new-word target is local-only and is not synced in the Cloudflare progress payload.
+- Daily target and plan category now sync through versioned `user_progress.preferences`; older databases require the existing idempotent migration step.
 - Codex in-app Browser has previously timed out on local pages; verify with `curl`, builds, or another browser method when needed.
+
+## Reading Drafts And Assignments
+
+- Shared normalization: `shared/planPreferences.js` and `shared/readingQuestions.js`.
+- Reading drafts: `src/hooks/useReadingDraft.js`, scoped local storage and authenticated `/api/reading-sessions/:key`.
+- Assignment UI: `src/components/classroom/ReadingAssignments.jsx`, reused in 今日计划 and classroom.
+- Assignment API: `worker/readingAssignments.js`; published articles/questions are snapshots, grading is server-side, and first submission is immutable.
+- Progress GET returns `updatedAt`; PUT uses compare-and-swap retries and preserves preferences from older clients.
+- Local learning cache is archived per account on switching. Anonymous learning can merge on login; another signed-in user's data never merges. Other tabs reload on account changes; stale progress/draft writes carry an expected-user check.
+- Deploy with `npm run d1:migrate` before the updated Worker; new tables and preferences column are additive. Local preview migrations operate only on the ignored SQLite database.
 
 ## Next Work
 

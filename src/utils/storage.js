@@ -22,6 +22,50 @@ const STORAGE_KEYS = {
 };
 
 export const storage = {
+  getLearningOwner: () => {
+    try { return localStorage.getItem('flashcards_progress_owner') || storage.getAuthSession()?.user?.id || 'guest'; } catch { return 'guest'; }
+  },
+  getLearningSnapshot: () => ({
+    learnedWords: storage.getLearnedWords(), masteredWords: storage.getMasteredWords(),
+    customWords: storage.getCustomWords(), wordProgress: storage.getWordProgress(),
+    wrongWords: storage.getWrongWords(), studyHistory: storage.getStudyHistory(),
+    planExamActivity: storage.getPlanExamActivity(),
+    preferences: { dailyNewWordTarget: storage.getDailyNewWordTarget(), studyPlanCategory: storage.getStudyPlanCategory(), updatedAt: storage.getPlanPreferencesUpdatedAt() },
+  }),
+  switchLearningAccount: (userId, latestProgress) => {
+    const owner = String(userId || 'guest');
+    const previous = String(storage.getLearningOwner());
+    const current = storage.getLearningSnapshot();
+    if (owner === previous) {
+      localStorage.setItem('flashcards_progress_owner', owner);
+      return current;
+    }
+    // Archive before replacing the active cache. Never merge another signed-in user's work.
+    localStorage.setItem(`flashcards_account_progress:${previous}`, JSON.stringify({ ...current, ...latestProgress }));
+    let saved;
+    try { saved = JSON.parse(localStorage.getItem(`flashcards_account_progress:${owner}`) || 'null'); } catch { saved = null; }
+    if (!saved || typeof saved !== 'object' || Array.isArray(saved)) saved = null;
+    const snapshot = {
+      learnedWords: [], masteredWords: [], customWords: [], wordProgress: {}, wrongWords: [], studyHistory: [], planExamActivity: {},
+      ...saved,
+      preferences: { dailyNewWordTarget: 15, studyPlanCategory: 'all', updatedAt: '', ...saved?.preferences },
+    };
+    const values = { LEARNED_WORDS: snapshot.learnedWords, MASTERED_WORDS: snapshot.masteredWords,
+      CUSTOM_WORDS: snapshot.customWords, WORD_PROGRESS: snapshot.wordProgress, WRONG_WORDS: snapshot.wrongWords,
+      STUDY_HISTORY: snapshot.studyHistory, PLAN_EXAM_ACTIVITY: snapshot.planExamActivity };
+    for (const [key, value] of Object.entries(values)) localStorage.setItem(STORAGE_KEYS[key], JSON.stringify(value));
+    localStorage.setItem(STORAGE_KEYS.DAILY_NEW_WORD_TARGET, String(snapshot.preferences.dailyNewWordTarget));
+    localStorage.setItem(STORAGE_KEYS.STUDY_PLAN_CATEGORY, snapshot.preferences.studyPlanCategory);
+    localStorage.setItem('flashcards_plan_preferences_updated_at', snapshot.preferences.updatedAt);
+    localStorage.setItem('flashcards_progress_owner', owner);
+    return snapshot;
+  },
+  getPlanPreferencesUpdatedAt: () => {
+    try { return localStorage.getItem('flashcards_plan_preferences_updated_at') || ''; } catch { return ''; }
+  },
+  setPlanPreferencesUpdatedAt: (value) => {
+    try { localStorage.setItem('flashcards_plan_preferences_updated_at', value); } catch { /* Storage can be disabled. */ }
+  },
   // === Existing Methods ===
   getLearnedWords: () => {
     try {

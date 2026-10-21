@@ -1,3 +1,4 @@
+import { StudentReadingAssignments } from './classroom/ReadingAssignments'
 import AppLayout from './layout/AppLayout'
 import { HeroCard } from './ui/Cards'
 import { PlanStatusCards, StatsRow } from './modules/LearningModules'
@@ -14,6 +15,7 @@ function StudyHub({
   onOpenStatistics,
   onOpenExamPractice,
   onAuthOpen,
+  onStartAssignment,
   authUser = null,
   syncStatusText = '',
   accountNotice = null,
@@ -178,6 +180,8 @@ function StudyHub({
           }
           illustrationSrc="/images/ui-assets/training-hero-flashcards-blue-v1.png"
         />
+
+        {authUser?.profileConfigured && authUser.role === 'student' && <StudentReadingAssignments userId={authUser.id} onStart={onStartAssignment} />}
 
         {planError && (
           <div className="exam-section-actions exam-preparation-feedback" role="alert">

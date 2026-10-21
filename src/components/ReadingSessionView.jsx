@@ -1,3 +1,5 @@
+import { normalizeReadingQuestions } from '../../shared/readingQuestions.js';
+import useReadingDraft from '../hooks/useReadingDraft';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import QuickMenu from './QuickMenu';
 import AppLayout from './layout/AppLayout';
@@ -5,42 +7,11 @@ import { speak, speakWord } from '../utils/speech';
 import { isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from '../utils/readingText';
 import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
 
-const normalizeQuestionOption = (option, index) => {
-  if (typeof option === 'string') {
-    return {
-      id: String.fromCharCode(65 + index),
-      label: option,
-    };
-  }
-
-  return {
-    id: String(option?.id || option?.key || option?.value || String.fromCharCode(65 + index)),
-    label: String(option?.label || option?.text || option?.value || ''),
-  };
-};
-
-const normalizeReadingQuestions = (questions) => {
-  if (!Array.isArray(questions)) return [];
-
-  return questions
-    .map((question, index) => {
-      const options = Array.isArray(question?.options)
-        ? question.options.map((option, optionIndex) => normalizeQuestionOption(option, optionIndex))
-        : [];
-
-      return {
-        id: String(question?.id || `q-${index + 1}`),
-        prompt: String(question?.prompt || question?.question || '').trim(),
-        options: options.filter((option) => option.label),
-        answer: String(question?.answer || question?.correctAnswer || '').trim(),
-        explanation: String(question?.explanation || '').trim(),
-      };
-    })
-    .filter((question) => question.prompt && question.options.length > 0);
-};
-
 function ReadingSessionView({
   article,
+  userId,
+  assignment,
+  onSubmitAssignment,
   mode = 'learn',
   onBack,
   onOpenMode,
@@ -53,10 +24,13 @@ function ReadingSessionView({
   onSyncAccount,
   onCompleteReading,
   isCompletedToday = false,
+  completedResult,
 }) {
   const [showTranslation, setShowTranslation] = useState(false);
   const [activeWord, setActiveWord] = useState(null);
-  const [questionAnswersByArticle, setQuestionAnswersByArticle] = useState({});
+  const draft = useReadingDraft(userId, assignment ? `assignment:${assignment.id}` : `reading:${article?.id}`);
+  const [submissionBusy, setSubmissionBusy] = useState(false);
+  const [submissionError, setSubmissionError] = useState('');
   const [completionSummary, setCompletionSummary] = useState(null);
   const [toast, setToast] = useState('');
   const wordModalRef = useRef(null);
@@ -68,8 +42,11 @@ function ReadingSessionView({
     () => normalizeReadingQuestions(article?.questions),
     [article?.questions]
   );
-  const questionAnswerKey = String(article?.id || 'unknown');
-  const questionAnswers = questionAnswersByArticle[questionAnswerKey] || {};
+  const selectedAnswers = assignment?.submittedAt ? assignment.answers : draft.session.answers;
+  const questionAnswers = Object.fromEntries(readingQuestions.filter((question) =>
+    question.options.some((option) => option.id === selectedAnswers?.[question.id]))
+    .map((question) => [question.id, { selected: selectedAnswers[question.id],
+      isCorrect: question.answer ? selectedAnswers[question.id].toLowerCase() === question.answer.toLowerCase() : null }]));
 
   useEffect(() => {
     if (!toast) return undefined;
@@ -126,11 +103,15 @@ function ReadingSessionView({
   const correctQuestionCount = Object.values(questionAnswers).filter((item) => item?.isCorrect === true).length;
   const hasReadingQuestions = readingQuestions.length > 0;
   const readingAccuracy = answeredQuestionCount > 0 ? Math.round((correctQuestionCount / answeredQuestionCount) * 100) : 0;
-  const effectiveSummary = completionSummary || (isCompletedToday
+  const effectiveSummary = completionSummary || (assignment?.submittedAt ? {
+    accuracy: assignment.questionsAnswered ? Math.round(assignment.questionsCorrect / assignment.questionsAnswered * 100) : 0,
+    answered: assignment.questionsAnswered, correct: assignment.questionsCorrect, hasQuestions: true,
+    unmasteredCount: readingStats.unmasteredCount, nextStep: '作业成绩已保存，可返回查看老师的其他任务。',
+  } : null) || (!assignment && isCompletedToday
     ? {
-        accuracy: readingAccuracy,
-        answered: answeredQuestionCount,
-        correct: correctQuestionCount,
+        accuracy: completedResult?.questionsAnswered ? Math.round(completedResult.questionsCorrect / completedResult.questionsAnswered * 100) : readingAccuracy,
+        answered: completedResult?.questionsAnswered ?? answeredQuestionCount,
+        correct: completedResult?.questionsCorrect ?? correctQuestionCount,
         hasQuestions: hasReadingQuestions,
         unmasteredCount: readingStats.unmasteredCount,
         nextStep:
@@ -158,6 +139,7 @@ function ReadingSessionView({
 
     setToast('正在同步账号...');
     try {
+      await draft.flush();
       const result = await onSyncAccount();
       setToast(result?.message || '同步请求已完成');
     } catch (error) {
@@ -182,20 +164,25 @@ function ReadingSessionView({
     setToast(`已标记掌握：${activeWord.word}`);
   };
 
-  const handleSelectQuestionOption = (questionId, optionId, answer) => {
-    setQuestionAnswersByArticle((prev) => ({
-      ...prev,
-      [questionAnswerKey]: {
-        ...(prev[questionAnswerKey] || {}),
-        [questionId]: {
-          selected: optionId,
-          isCorrect: answer ? optionId.toLowerCase() === answer.toLowerCase() : null,
-        },
-      },
-    }));
+  const handleSelectQuestionOption = (questionId, optionId) => {
+    if (assignment?.submittedAt || submissionBusy) return;
+    draft.answer(questionId, optionId);
   };
 
-  const handleCompleteReading = () => {
+  const handleCompleteReading = async () => {
+    if (assignment) {
+      setSubmissionBusy(true); setSubmissionError('');
+      try {
+        await draft.flush();
+        const saved = await onSubmitAssignment(draft.session.answers);
+        setCompletionSummary({ accuracy: Math.round(saved.questionsCorrect / saved.questionsAnswered * 100),
+          answered: saved.questionsAnswered, correct: saved.questionsCorrect, hasQuestions: true,
+          unmasteredCount: readingStats.unmasteredCount, nextStep: '作业已提交，老师可以查看本次成绩。' });
+        setToast('阅读作业已提交');
+      } catch (error) { setSubmissionError(error.message || '提交失败，答题已保留，请重试。'); }
+      finally { setSubmissionBusy(false); }
+      return;
+    }
     if (!article?.id || typeof onCompleteReading !== 'function') return;
     const nextSummary = {
       accuracy: readingAccuracy,
@@ -377,6 +364,7 @@ function ReadingSessionView({
                                 <button
                                   key={option.id}
                                   type="button"
+                                  disabled={Boolean(assignment?.submittedAt) || submissionBusy}
                                   className={[
                                     'reading-question-option',
                                     isSelected ? 'is-selected' : '',
@@ -434,6 +422,12 @@ function ReadingSessionView({
               )}
             </article>
 
+            <div className="reading-save-status" aria-live="polite">
+              {assignment && <p>{assignment.submittedAt ? '本次作业已提交，成绩已保存。' : '班级阅读作业：完成全部题目后提交；首次提交计成绩，逾期可补交。'}</p>}
+              <p>{draft.status === 'loading' ? '正在恢复答题记录…' : draft.status === 'synced' ? '答题记录已同步' : draft.status === 'syncing' ? '正在同步答题…' : Object.keys(draft.session.answers).length ? '答题已保留在本机' : '选择答案后将自动保存'}</p>
+              {draft.error && <p role="status">{draft.error} <button type="button" className="classroom-text-button" onClick={() => draft.flush().catch(() => {})}>重试保存</button></p>}
+              {submissionError && <p role="alert" className="auth-error">{submissionError}</p>}
+            </div>
             <footer className="learn-refresh-bottombar reading-session-actions">
               <div className="learn-refresh-bottombar-inner">
                 <button
@@ -481,14 +475,14 @@ function ReadingSessionView({
                   type="button"
                   className="learn-refresh-action learn-refresh-action-primary"
                   onClick={handleCompleteReading}
-                  disabled={isCompletedToday}
+                  disabled={assignment ? Boolean(assignment.submittedAt) || submissionBusy || draft.status === 'loading' : isCompletedToday}
                 >
                   <span className="learn-refresh-action-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24">
                       <path d="M5 12.5 10 17l9-10" />
                     </svg>
                   </span>
-                  <span>{isCompletedToday ? '今日已完成' : '完成阅读'}</span>
+                  <span>{assignment ? assignment.submittedAt ? '作业已提交' : submissionBusy ? '提交中…' : '提交阅读作业' : isCompletedToday ? '今日已完成' : '完成阅读'}</span>
                 </button>
               </div>
             </footer>

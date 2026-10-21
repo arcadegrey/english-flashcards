@@ -1,3 +1,5 @@
+import { submitReadingAssignment } from './utils/classroomApi'
+import { normalizePreferences, mergePreferences } from '../shared/planPreferences.js'
 import { normalizeStudyHistoryItem, normalizeStudyHistory, mergeStudyHistory } from '../shared/studyHistory.js'
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react'
 import { ThemeProvider } from './context/ThemeContext'
@@ -27,7 +29,7 @@ import ClassroomView from './components/ClassroomView'
 import { getAccountRoleLabel } from './utils/classroom'
 import VoiceSettings from './components/VoiceSettings'
 import { storage } from './utils/storage'
-import { DAILY_NEW_WORD_TARGETS, getExamVocabulary, getPlanVocabulary, getPlanWordStats, normalizePlanCategory, recordPlanExamAnswer } from './utils/studyPlan'
+import { getExamVocabulary, getPlanVocabulary, getPlanWordStats, normalizePlanCategory, recordPlanExamAnswer } from './utils/studyPlan'
 import { buildWordLookup, isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from './utils/readingText'
 import { calculateNextReview, getWordsForReview, initializeWordProgress } from './utils/spacedRepetition'
 import { speak } from './utils/speech'
@@ -169,15 +171,6 @@ const uniqueStringList = (value) => {
   return output
 }
 
-const normalizePreferences = (value) => {
-  const dailyNewWordTarget = Number(value?.dailyNewWordTarget)
-  return {
-    ...(dailyNewWordTarget && DAILY_NEW_WORD_TARGETS.includes(dailyNewWordTarget)
-      ? { dailyNewWordTarget }
-      : {}),
-  }
-}
-
 const normalizeProgressState = (progress) => {
   const masteredWords = dedupeIdList(progress?.masteredWords || [])
   const masteredSet = new Set(masteredWords.map((item) => String(item)))
@@ -200,10 +193,6 @@ const normalizeProgressState = (progress) => {
 }
 
 const mergeProgress = (localProgress, cloudProgress) => {
-  const cloudPreferences = normalizePreferences(cloudProgress?.preferences)
-  const localPreferences = normalizePreferences(localProgress?.preferences)
-  const localHasDailyTarget = Boolean(localProgress?.preferences?.hasLocalDailyNewWordTarget)
-
   return normalizeProgressState({
     learnedWords: [...(cloudProgress.learnedWords || []), ...(localProgress.learnedWords || [])],
     masteredWords: [...(cloudProgress.masteredWords || []), ...(localProgress.masteredWords || [])],
@@ -214,13 +203,7 @@ const mergeProgress = (localProgress, cloudProgress) => {
     },
     wrongWords: [...(cloudProgress.wrongWords || []), ...(localProgress.wrongWords || [])],
     studyHistory: mergeStudyHistory(cloudProgress.studyHistory || [], localProgress.studyHistory || []),
-    preferences: {
-      ...cloudPreferences,
-      ...localPreferences,
-      dailyNewWordTarget: localHasDailyTarget
-        ? localPreferences.dailyNewWordTarget
-        : cloudPreferences.dailyNewWordTarget || localPreferences.dailyNewWordTarget,
-    },
+    preferences: mergePreferences(cloudProgress?.preferences, localProgress?.preferences),
   })
 }
 
@@ -394,6 +377,10 @@ const sortNumericKeyWithUnknownLast = (a, b, unknownKey) => {
 }
 
 function AppContent() {
+  const [initialLocalProgress] = useState(() => {
+    try { return storage.switchLearningAccount(storage.getAuthSession()?.user?.id) }
+    catch { return storage.getLearningSnapshot() }
+  })
   const { isDark, toggleTheme } = useTheme()
 
   const [view, setView] = useState('studyHub')
@@ -415,16 +402,18 @@ function AppContent() {
   const [selectedIeltsTopic, setSelectedIeltsTopic] = useState('')
   const [selectedIeltsList, setSelectedIeltsList] = useState('')
   const [selectedReadingId, setSelectedReadingId] = useState(null)
+  const [activeReadingAssignment, setActiveReadingAssignment] = useState(null)
+  const [assignmentReturnView, setAssignmentReturnView] = useState('studyHub')
   const [homePanelRequest, setHomePanelRequest] = useState({ panel: '', nonce: 0 })
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [learnedWords, setLearnedWords] = useState([])
-  const [masteredWords, setMasteredWords] = useState([])
-  const [wrongWords, setWrongWords] = useState([])
-  const [wordProgress, setWordProgress] = useState({})
-  const [studyHistory, setStudyHistory] = useState([])
-  const [customWords, setCustomWords] = useState([])
+  const [learnedWords, setLearnedWords] = useState(initialLocalProgress.learnedWords)
+  const [masteredWords, setMasteredWords] = useState(initialLocalProgress.masteredWords)
+  const [wrongWords, setWrongWords] = useState(initialLocalProgress.wrongWords)
+  const [wordProgress, setWordProgress] = useState(initialLocalProgress.wordProgress)
+  const [studyHistory, setStudyHistory] = useState(initialLocalProgress.studyHistory)
+  const [customWords, setCustomWords] = useState(initialLocalProgress.customWords)
   const [dailyNewWordTarget, setDailyNewWordTarget] = useState(() => storage.getDailyNewWordTarget())
-  const hasLocalDailyNewWordTargetRef = useRef(storage.hasDailyNewWordTarget())
+  const [planPreferencesUpdatedAt, setPlanPreferencesUpdatedAt] = useState(() => storage.getPlanPreferencesUpdatedAt())
   const [vocabulary, setVocabulary] = useState([])
   const [vocabularyLoading, setVocabularyLoading] = useState(true)
   const [vocabularyError, setVocabularyError] = useState('')
@@ -500,6 +489,17 @@ function AppContent() {
     }
   }, [showAuthModal])
 
+  useEffect(() => {
+    const accountChanged = (event) => {
+      if (event.key !== 'flashcards_auth_session') return
+      let nextUserId
+      try { nextUserId = JSON.parse(event.newValue || 'null')?.user?.id } catch { return }
+      if (String(nextUserId || '') !== String(authUser?.id || '')) window.location.reload()
+    }
+    window.addEventListener('storage', accountChanged)
+    return () => window.removeEventListener('storage', accountChanged)
+  }, [authUser?.id])
+
   const allVocabulary = useMemo(() => [...vocabulary, ...customWords], [customWords, vocabulary])
   const vocabularyLookup = useMemo(() => buildWordLookup(allVocabulary), [allVocabulary])
   const masteredWordIdSet = useMemo(
@@ -548,15 +548,16 @@ function AppContent() {
       studyHistory,
       preferences: {
         dailyNewWordTarget,
-        hasLocalDailyNewWordTarget: hasLocalDailyNewWordTargetRef.current,
+        studyPlanCategory,
+        updatedAt: planPreferencesUpdatedAt,
       },
     }),
-    [customWords, dailyNewWordTarget, learnedWords, masteredWords, studyHistory, wordProgress, wrongWords]
+    [customWords, dailyNewWordTarget, planPreferencesUpdatedAt, studyPlanCategory, learnedWords, masteredWords, studyHistory, wordProgress, wrongWords]
   )
   latestProgressRef.current = currentProgress
   const selectedReading = useMemo(
-    () => readingLibrary.find((item) => String(item.id) === String(selectedReadingId)) || null,
-    [readingLibrary, selectedReadingId]
+    () => activeReadingAssignment?.article || readingLibrary.find((item) => String(item.id) === String(selectedReadingId)) || null,
+    [activeReadingAssignment, readingLibrary, selectedReadingId]
   )
   const todayStudyStats = useMemo(() => {
     const today = new Date().toISOString().split('T')[0]
@@ -1021,8 +1022,13 @@ function AppContent() {
     if (normalized.preferences.dailyNewWordTarget) {
       setDailyNewWordTarget(normalized.preferences.dailyNewWordTarget)
       storage.setDailyNewWordTarget(normalized.preferences.dailyNewWordTarget)
-      hasLocalDailyNewWordTargetRef.current = true
     }
+    if (normalized.preferences.studyPlanCategory) {
+      setStudyPlanCategory(normalized.preferences.studyPlanCategory)
+      storage.setStudyPlanCategory(normalized.preferences.studyPlanCategory)
+    }
+    setPlanPreferencesUpdatedAt(normalized.preferences.updatedAt || '')
+    storage.setPlanPreferencesUpdatedAt(normalized.preferences.updatedAt || '')
 
     storage.setLearnedWords(normalized.learnedWords)
     storage.setMasteredWords(normalized.masteredWords)
@@ -1050,13 +1056,24 @@ function AppContent() {
     setSyncState('syncing')
     setSyncError('')
 
-    const syncResult = await upsertCloudProgress({
-      progress: progressToSync,
-      baseUpdatedAt:
-        typeof options.baseUpdatedAt === 'string'
-          ? options.baseUpdatedAt
-          : cloudProgressVersionRef.current,
-    })
+    let syncResult
+    try {
+      syncResult = await upsertCloudProgress({
+        progress: progressToSync,
+        expectedUserId: user.id,
+        baseUpdatedAt:
+          typeof options.baseUpdatedAt === 'string'
+            ? options.baseUpdatedAt
+            : cloudProgressVersionRef.current,
+      })
+    } catch (error) {
+      if (String(storage.getAuthSession()?.user?.id) !== String(user.id)) return ''
+      progressDirtyRef.current = true
+      setSyncState('error')
+      setSyncError(error?.message || '同步失败，请重试')
+      throw error
+    }
+    if (String(storage.getAuthSession()?.user?.id) !== String(user.id)) return ''
     const syncedAtIso = syncResult?.updatedAt || new Date().toISOString()
     cloudProgressVersionRef.current = syncedAtIso
 
@@ -1097,12 +1114,13 @@ function AppContent() {
     return syncedAtText
   }, [applyMergedProgress, cloudEnabled])
 
-  const hydrateFromCloud = useCallback(async ({ session, user }) => {
+  const hydrateFromCloud = useCallback(async ({ session, user, localProgress }) => {
     if (!cloudEnabled || !session?.access_token || !user?.id) return
 
-    const { progress: cloudProgress, updatedAt } = await loadCloudProgress()
+    const { progress: cloudProgress, updatedAt } = await loadCloudProgress(user.id)
+    if (String(storage.getAuthSession()?.user?.id) !== String(user.id)) return
 
-    const merged = mergeProgress(latestProgressRef.current || {}, cloudProgress)
+    const merged = mergeProgress(localProgress || latestProgressRef.current || {}, cloudProgress)
 
     applyMergedProgress(merged, { skipNextPush: true })
     cloudHydratedRef.current = true
@@ -1154,29 +1172,45 @@ function AppContent() {
           throw new Error('登录已过期，请重新登录。')
         }
 
-        storage.setAuthSession(activeSession)
-        const user =
-          activeSession.user ||
-          (await fetchCurrentUser())
-
-        setAuthSession(activeSession)
+        const user = await fetchCurrentUser()
+        const verifiedSession = { ...activeSession, user }
+        const localProgress = String(storage.getLearningOwner()) === String(user.id)
+          ? latestProgressRef.current : storage.switchLearningAccount(user.id, latestProgressRef.current)
+        applyMergedProgress(localProgress)
+        latestProgressRef.current = localProgress
+        storage.setAuthSession(verifiedSession)
+        setAuthSession(verifiedSession)
         setAuthUser(user)
-        await hydrateFromCloud({ session: activeSession, user })
+        await hydrateFromCloud({ session: verifiedSession, user, localProgress })
       } catch (error) {
-        storage.clearAuthSession()
-        setAuthSession(null)
-        setAuthUser(null)
-        setAuthError(error?.message || '恢复登录失败')
-        setSyncState('error')
-        setSyncError(error?.message || '恢复登录失败')
-        cloudProgressVersionRef.current = ''
+        if (error.status !== 401 && savedSession.user?.id) {
+          // Cached identity only scopes local drafts; server permissions still use the cookie.
+          setAuthSession(savedSession)
+          setAuthUser(savedSession.user)
+          setSyncState('pending')
+          setSyncError('云端暂不可用，本机学习记录已保留，请重试同步。')
+        } else {
+          try {
+            const guestProgress = storage.switchLearningAccount(null, latestProgressRef.current)
+            applyMergedProgress(guestProgress)
+            latestProgressRef.current = guestProgress
+            setPlanExamActivity(guestProgress.planExamActivity || {})
+          } catch { /* Preserve the existing cache if browser storage is unavailable. */ }
+          storage.clearAuthSession()
+          setAuthSession(null)
+          setAuthUser(null)
+          setAuthError(error?.message || '恢复登录失败')
+          setSyncState('error')
+          setSyncError(error?.message || '恢复登录失败')
+          cloudProgressVersionRef.current = ''
+        }
       } finally {
         setAuthLoading(false)
       }
     }
 
     bootstrap()
-  }, [cloudEnabled, ensureFreshSession, hydrateFromCloud, localDataLoaded])
+  }, [applyMergedProgress, cloudEnabled, ensureFreshSession, hydrateFromCloud, localDataLoaded])
 
   const flushCloudProgress = useCallback(() => {
     if (!cloudEnabled || authLoading || !cloudHydratedRef.current) {
@@ -1293,7 +1327,9 @@ function AppContent() {
         setSyncState('pending')
         setSyncError('')
       }
-      flushCloudProgress().catch(() => {})
+      const operation = !cloudHydratedRef.current && authSession?.access_token && authUser?.id
+        ? hydrateFromCloud({ session: authSession, user: authUser }) : flushCloudProgress()
+      operation.catch((error) => { setSyncState('error'); setSyncError(error.message || '同步失败，请重试') })
     }
 
     document.addEventListener('visibilitychange', handleVisibilityChange)
@@ -1305,7 +1341,7 @@ function AppContent() {
       window.removeEventListener('pagehide', handlePageHide)
       window.removeEventListener('online', handleOnline)
     }
-  }, [cloudEnabled, flushCloudProgress])
+  }, [authSession, authUser, cloudEnabled, flushCloudProgress, hydrateFromCloud])
 
   const handleAuthLogin = async ({ email, password, verificationCode }) => {
     if (!cloudEnabled) {
@@ -1337,10 +1373,16 @@ function AppContent() {
           sessionReady: false,
         }
       }
+      const guestProgress = storage.getLearningOwner() === 'guest' ? latestProgressRef.current : null
+      const accountProgress = storage.switchLearningAccount(user.id, latestProgressRef.current)
+      const localProgress = guestProgress ? mergeProgress(guestProgress, accountProgress) : accountProgress
+      applyMergedProgress(localProgress)
+      latestProgressRef.current = localProgress
+      setPlanExamActivity(accountProgress.planExamActivity || {})
       storage.setAuthSession(session)
       setAuthSession(session)
       setAuthUser(user)
-      await hydrateFromCloud({ session, user })
+      await hydrateFromCloud({ session, user, localProgress })
       return { message: message || '登录成功，进度已同步。', sessionReady: true }
     } finally {
       if (shouldShowTransition) {
@@ -1389,10 +1431,17 @@ function AppContent() {
         }
       }
 
+      const accountUser = user || session.user
+      const guestProgress = storage.getLearningOwner() === 'guest' ? latestProgressRef.current : null
+      const accountProgress = storage.switchLearningAccount(accountUser.id, latestProgressRef.current)
+      const localProgress = guestProgress ? mergeProgress(guestProgress, accountProgress) : accountProgress
+      applyMergedProgress(localProgress)
+      latestProgressRef.current = localProgress
+      setPlanExamActivity(accountProgress.planExamActivity || {})
       storage.setAuthSession(session)
       setAuthSession(session)
-      setAuthUser(user || session.user)
-      await hydrateFromCloud({ session, user: user || session.user })
+      setAuthUser(accountUser)
+      await hydrateFromCloud({ session, user: accountUser, localProgress })
       return { message: message || '注册并登录成功，进度已同步。', sessionReady: true }
     } finally {
       if (shouldShowTransition) {
@@ -1422,6 +1471,12 @@ function AppContent() {
       }
     }
 
+    const guestProgress = storage.switchLearningAccount(null, latestProgressRef.current)
+    applyMergedProgress(guestProgress)
+    latestProgressRef.current = guestProgress
+    setPlanExamActivity(guestProgress.planExamActivity || {})
+    setActiveReadingAssignment(null)
+    setView('studyHub')
     storage.clearAuthSession()
     setAuthSession(null)
     setAuthUser(null)
@@ -1438,6 +1493,12 @@ function AppContent() {
   const handleManualSync = async () => {
     if (!authSession?.access_token || !authUser?.id) {
       throw new Error('请先登录账号')
+    }
+
+    if (!cloudHydratedRef.current) {
+      try { await hydrateFromCloud({ session: authSession, user: authUser }) }
+      catch (error) { setSyncState('error'); setSyncError(error.message || '同步失败，请重试'); throw error }
+      return { message: '云端进度已恢复并同步。' }
     }
 
     const syncedAtText = await pushProgressToCloud(
@@ -2013,6 +2074,7 @@ function AppContent() {
   }
 
   const handleOpenReadingList = () => {
+    setActiveReadingAssignment(null)
     setAssessmentBackTarget('home')
     setSelectedReadingId(null)
     setHomePanelRequest((request) => ({ panel: 'reading', nonce: request.nonce + 1 }))
@@ -2060,7 +2122,9 @@ function AppContent() {
 
   const handleSelectDailyNewWordTarget = (target) => {
     storage.setDailyNewWordTarget(target)
-    hasLocalDailyNewWordTargetRef.current = true
+    const updatedAt = new Date().toISOString()
+    storage.setPlanPreferencesUpdatedAt(updatedAt)
+    setPlanPreferencesUpdatedAt(updatedAt)
     setDailyNewWordTarget(storage.getDailyNewWordTarget())
   }
 
@@ -2068,6 +2132,9 @@ function AppContent() {
     const nextCategory = normalizePlanCategory(category)
     planRequestRef.current += 1
     examRequestRef.current += 1
+    const updatedAt = new Date().toISOString()
+    storage.setPlanPreferencesUpdatedAt(updatedAt)
+    setPlanPreferencesUpdatedAt(updatedAt)
     storage.setStudyPlanCategory(nextCategory)
     setStudyPlanCategory(nextCategory)
     setPlanPreparationError('')
@@ -2137,8 +2204,26 @@ function AppContent() {
   }
 
   const handleOpenReadingSession = (readingId) => {
+    setActiveReadingAssignment(null)
     setSelectedReadingId(readingId)
     setView('readingSession')
+  }
+
+  const handleStartReadingAssignment = (assignment) => {
+    setAssignmentReturnView(view === 'classroom' ? 'classroom' : 'studyHub')
+    setActiveReadingAssignment(assignment)
+    setSelectedReadingId(assignment.articleId)
+    setView('readingSession')
+  }
+
+  const handleSubmitReadingAssignment = async (answers) => {
+    if (!activeReadingAssignment) throw new Error('作业信息已失效，请返回列表重试')
+    const result = await submitReadingAssignment(activeReadingAssignment.id, answers, authUser?.id)
+    setActiveReadingAssignment(result.assignment)
+    recordReadingCompletion({ articleId: result.assignment.articleId,
+      questionsAnswered: result.assignment.questionsAnswered,
+      questionsCorrect: result.assignment.questionsCorrect, timeSpent: activeReadingAssignment.article.estimatedMinutes || 1 })
+    return result.assignment
   }
 
   const handleOpenSuggestedReading = () => {
@@ -2155,6 +2240,11 @@ function AppContent() {
   }
 
   const handleBackToReadingList = () => {
+    if (activeReadingAssignment) {
+      setActiveReadingAssignment(null)
+      setView(assignmentReturnView)
+      return
+    }
     handleOpenReadingList()
   }
 
@@ -2464,12 +2554,14 @@ function AppContent() {
             onProfileUpdated={handleClassroomProfileUpdated}
             onSync={handleManualSync}
             initialVocabulary={vocabulary}
+            onStartAssignment={handleStartReadingAssignment}
           />
         )
       case 'studyHub':
         return (
           <StudyHub
             onOpenWordStudy={handleStartPlanLearning}
+            onStartAssignment={handleStartReadingAssignment}
             onOpenTraining={handleBackToHome}
             onOpenReading={handleOpenReadingList}
             onOpenSuggestedReading={handleOpenSuggestedReading}
@@ -2610,6 +2702,10 @@ function AppContent() {
       case 'readingSession':
         return (
           <ReadingSessionView
+            key={`${authUser?.id || 'guest'}:${activeReadingAssignment?.id || selectedReadingId}`}
+            userId={authUser?.id}
+            assignment={activeReadingAssignment}
+            onSubmitAssignment={handleSubmitReadingAssignment}
             article={selectedReading}
             mode={mode}
             onBack={handleBackToReadingList}
@@ -2623,6 +2719,7 @@ function AppContent() {
             onSyncAccount={handleHomeSync}
             onCompleteReading={recordReadingCompletion}
             isCompletedToday={todayStudyStats.readingArticleIds.includes(String(selectedReading?.id))}
+            completedResult={studyHistory.find((day) => day.date === new Date().toISOString().slice(0, 10))?.readingArticleResults?.find((result) => result.articleId === String(selectedReading?.id))}
           />
         )
       case 'toeflLevels':
