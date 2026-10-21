@@ -10,6 +10,8 @@ import { appShellIcons } from './layout/icons';
 import { QUICK_MENU_MODE_OPTIONS } from './quickMenuOptions';
 import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
 import { calculateStudyStreak, getWeekStudyDays } from '../utils/learningMetrics';
+import { getExamVocabulary, getPlanVocabulary } from '../utils/studyPlan';
+import { getCategoryById } from '../data/categories';
 import '../styles/word-learning-refresh.css';
 
 function LearningView({
@@ -23,6 +25,10 @@ function LearningView({
   onMarkMastered,
   masteredWords,
   examScope = 'learned',
+  examCategory = 'all',
+  categoryName = '全部单词',
+  dailyTarget,
+  todayWordsStudied = 0,
   onAddMastered,
   onWrongAnswer,
   onAssessmentAnswer,
@@ -48,37 +54,37 @@ function LearningView({
   const [toast, setToast] = useState('');
   const mainRef = useRef(null);
 
-  const learnedWordSet = useMemo(() => new Set(learnedWords.map(String)), [learnedWords]);
-  const masteredWordSet = useMemo(() => new Set(masteredWords.map(String)), [masteredWords]);
-  const learnedVocabulary = useMemo(
-    () => allVocabulary.filter((word) => learnedWordSet.has(String(word.id))),
-    [allVocabulary, learnedWordSet]
-  );
-  const masteredVocabulary = useMemo(
-    () => allVocabulary.filter((word) => masteredWordSet.has(String(word.id))),
-    [allVocabulary, masteredWordSet]
-  );
+  const examOptionVocabulary = useMemo(() => getPlanVocabulary(allVocabulary, examCategory), [allVocabulary, examCategory]);
   const examVocabulary = useMemo(() => {
-    if (examScope === 'mastered') return masteredVocabulary;
-    if (examScope === 'all') return allVocabulary;
-    return learnedVocabulary;
-  }, [allVocabulary, examScope, learnedVocabulary, masteredVocabulary]);
+    // Recording an answer must not replace the full-category pool and reset the round.
+    if (examScope === 'all') return examOptionVocabulary;
+    return getExamVocabulary(examOptionVocabulary, { scope: examScope, learnedWords, masteredWords });
+  }, [examOptionVocabulary, examScope, learnedWords, masteredWords]);
+  const examCategoryName = getCategoryById(examCategory).name;
   const examSourceLabel =
     examScope === 'mastered'
       ? '已掌握范围'
       : examScope === 'all'
-        ? '全范围随机'
+        ? examCategory === 'all' ? '全范围随机' : `${examCategoryName}随机`
         : '已学习范围';
+  const examSourceTitle = examCategory === 'all' || examScope === 'all'
+    ? examSourceLabel : `${examCategoryName} · ${examSourceLabel}`;
 
-  const totalCount = filteredVocabulary.length;
+  const totalCount = mode === 'learn' ? filteredVocabulary.length : examVocabulary.length;
   const progressCurrent = totalCount > 0 ? Math.min(currentIndex + 1, totalCount) : 0;
   const progressPercent = totalCount > 0 ? Math.max(1, Math.round((progressCurrent / totalCount) * 100)) : 0;
+  const hasDailyGoal = Number.isFinite(dailyTarget) && dailyTarget > 0;
+  const studyGoalTarget = hasDailyGoal ? dailyTarget : totalCount;
+  const studyGoalCurrent = hasDailyGoal ? Math.min(todayWordsStudied, dailyTarget) : progressCurrent;
+  const studyGoalPercent = hasDailyGoal ? Math.round((studyGoalCurrent / dailyTarget) * 100) : progressPercent;
   const assessmentTotal = Math.min(Math.max(totalCount, 1), 20);
   const assessmentCurrent = Math.min(Math.max(progressCurrent, 1), assessmentTotal);
   const assessmentProgressPercent = Math.round((assessmentCurrent / assessmentTotal) * 100);
   const remainingCount = Math.max(totalCount - progressCurrent, 0);
-  const learnedTotal = learnedWords.length;
-  const masteredTotal = masteredWords.length;
+  const learnedTotal = useMemo(() => getExamVocabulary(filteredVocabulary, { scope: 'learned', learnedWords }).length,
+    [filteredVocabulary, learnedWords]);
+  const masteredTotal = useMemo(() => getExamVocabulary(filteredVocabulary, { scope: 'mastered', masteredWords }).length,
+    [filteredVocabulary, masteredWords]);
   const currentModeMeta = QUICK_MENU_MODE_OPTIONS.find((item) => item.id === mode) || QUICK_MENU_MODE_OPTIONS[0];
   const currentWordId = currentWord?.id ?? null;
   const showHint = currentWordId != null && String(hintOpenForWordId) === String(currentWordId);
@@ -190,11 +196,11 @@ function LearningView({
             </svg>
           </span>
           <span className="learn-refresh-goal-label">今日目标</span>
-          <strong>{totalCount}</strong>
+          <strong>{hasDailyGoal ? `${studyGoalCurrent}/${studyGoalTarget}` : studyGoalTarget}</strong>
           <div className="learn-refresh-goal-track" aria-hidden="true">
-            <span style={{ width: `${progressPercent}%` }} />
+            <span style={{ width: `${studyGoalPercent}%` }} />
           </div>
-          <span className="learn-refresh-goal-percent">{progressPercent}%</span>
+          <span className="learn-refresh-goal-percent">{studyGoalPercent}%</span>
         </div>
 
         <WordCard
@@ -281,7 +287,7 @@ function LearningView({
               </svg>
             </span>
             <span>今日目标</span>
-            <strong>{totalCount} 词</strong>
+            <strong>{studyGoalTarget} 词</strong>
           </div>
           <div className="learn-refresh-side-row">
             <span className="learn-refresh-side-icon is-star" aria-hidden="true">
@@ -297,9 +303,9 @@ function LearningView({
         <div className="learn-refresh-side-card">
           <h2>学习进度</h2>
           <div className="learn-refresh-ring-row">
-            <div className="learn-refresh-ring" style={{ '--study-progress': `${progressPercent}%` }}>
+            <div className="learn-refresh-ring" style={{ '--study-progress': `${studyGoalPercent}%` }}>
               <div>
-                <strong>{progressPercent}%</strong>
+                <strong>{studyGoalPercent}%</strong>
                 <span>今日进度</span>
               </div>
             </div>
@@ -310,7 +316,7 @@ function LearningView({
               </div>
               <div>
                 <dt><span className="is-purple" />今日目标</dt>
-                <dd>{totalCount}</dd>
+                <dd>{studyGoalTarget}</dd>
               </div>
               <div>
                 <dt><span className="is-gray" />已掌握</dt>
@@ -350,7 +356,7 @@ function LearningView({
         active="words"
         navItems={sidebarItems}
         title="背单词"
-        subtitle={`今日目标 ${totalCount} · 当前进度 ${progressCurrent}/${totalCount}`}
+        subtitle={`${categoryName} · 今日目标 ${studyGoalTarget} · 当前进度 ${progressCurrent}/${totalCount}`}
         topbarProps={{
           onCalendar: onOpenStatistics,
           onThemeToggle,
@@ -379,7 +385,7 @@ function LearningView({
       active="test"
       navItems={sidebarItems}
       title={currentModeMeta.label}
-      subtitle={`${examSourceLabel} · ${totalCount} 词`}
+      subtitle={`${examSourceTitle} · ${totalCount} 词`}
       topbarProps={{
         onCalendar: onOpenStatistics,
         onThemeToggle,
@@ -426,8 +432,8 @@ function LearningView({
           {mode === 'quiz' ? (
             <Quiz
               vocabulary={examVocabulary}
-              optionVocabulary={allVocabulary}
-              sourceLabel={examSourceLabel}
+              optionVocabulary={examOptionVocabulary}
+              sourceLabel={examSourceTitle}
               masteredWords={masteredWords}
               onAddMastered={onAddMastered}
               onWrongAnswer={onWrongAnswer}
@@ -436,7 +442,7 @@ function LearningView({
           ) : mode === 'fillblank' ? (
             <FillBlank
               vocabulary={examVocabulary}
-              sourceLabel={examSourceLabel}
+              sourceLabel={examSourceTitle}
               onWrongAnswer={onWrongAnswer}
               onCorrectAnswer={onAddMastered}
               onAnswer={onAssessmentAnswer}
@@ -444,7 +450,7 @@ function LearningView({
           ) : mode === 'spelling' ? (
             <SpellingTest
               vocabulary={examVocabulary}
-              sourceLabel={examSourceLabel}
+              sourceLabel={examSourceTitle}
               onWrongAnswer={onWrongAnswer}
               onCorrectAnswer={onAddMastered}
               onAnswer={onAssessmentAnswer}
@@ -452,7 +458,7 @@ function LearningView({
           ) : mode === 'matching' ? (
             <MatchingTest
               vocabulary={examVocabulary}
-              sourceLabel={examSourceLabel}
+              sourceLabel={examSourceTitle}
               onWrongAnswer={onWrongAnswer}
               onCorrectAnswer={onAddMastered}
               onAnswer={onAssessmentAnswer}

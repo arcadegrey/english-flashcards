@@ -1,16 +1,15 @@
+import { createVocabularyLoader } from './vocabularyCache.js'
+
 export const VOCABULARY_URL = '/data/vocabulary/core.json'
+export const FULL_VOCABULARY_URL = '/data/vocabulary.json'
 export const TOEFL_MANIFEST_URL = '/data/vocabulary/toefl/manifest.json'
 export const IELTS_MANIFEST_URL = '/data/vocabulary/ielts/manifest.json'
 
-const fetchJson = async (url, errorLabel) => {
-  const response = await fetch(url)
+const fetchJson = createVocabularyLoader({
+  version: import.meta.env?.VITE_VOCABULARY_VERSION || 'development',
+})
 
-  if (!response.ok) {
-    throw new Error(`${errorLabel} (${response.status})`)
-  }
-
-  return response.json()
-}
+export const loadFullVocabulary = () => fetchJson(FULL_VOCABULARY_URL, '全范围词库加载失败')
 
 export const loadVocabulary = async () => {
   const vocabulary = await fetchJson(VOCABULARY_URL, '词库加载失败')
@@ -23,7 +22,8 @@ export const loadVocabulary = async () => {
 }
 
 export const loadToeflManifest = async () => {
-  const manifest = await fetchJson(TOEFL_MANIFEST_URL, '托福词库目录加载失败')
+  const manifest = await fetchJson(TOEFL_MANIFEST_URL, '托福词库目录加载失败',
+    (data) => Array.isArray(data?.toefl?.levels))
 
   if (!manifest || typeof manifest !== 'object' || !Array.isArray(manifest?.toefl?.levels)) {
     throw new Error('托福词库目录格式无效')
@@ -39,7 +39,8 @@ export const findToeflListEntry = (manifest, levelKey, listKey) => {
 }
 
 export const loadIeltsManifest = async () => {
-  const manifest = await fetchJson(IELTS_MANIFEST_URL, '雅思词库目录加载失败')
+  const manifest = await fetchJson(IELTS_MANIFEST_URL, '雅思词库目录加载失败',
+    (data) => Array.isArray(data?.ielts?.lists))
 
   if (!manifest || typeof manifest !== 'object' || !Array.isArray(manifest?.ielts?.lists)) {
     throw new Error('雅思词库目录格式无效')

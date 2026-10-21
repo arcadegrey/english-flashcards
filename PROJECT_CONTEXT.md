@@ -32,6 +32,7 @@ Less common maintenance commands are listed in `docs/project-reference.md`.
 
 - `studyHub`: 今日学习计划 and training entry.
 - `planSettings`: daily new-word target settings, persisted to `flashcards_daily_new_word_target`.
+- Plan settings also select a persistent local vocabulary category (`flashcards_study_plan_category`). Home new-word cards start that category directly; all exam scopes and quiz distractors are restricted to it. Training Center category browsing remains independent.
 - `home`: Training Center with hero, four module cards, inline word picker, inline reading picker, motivation band, and Daily Progress.
 - `learn`: shared learning container; `LearningView` renders study/test/fill/spelling/matching modes.
 - `readingSession`: reading article practice using shared `AppLayout`.

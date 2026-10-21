@@ -1083,6 +1083,53 @@
   --status-shadow: rgba(53, 201, 121, 0.07);
 }
 
+.ds-status-card.is-actionable {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.ds-status-card.is-actionable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 38px var(--status-shadow);
+}
+
+.ds-status-card-entry {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  padding: 0;
+  border: 0;
+  border-radius: inherit;
+  background: transparent;
+  cursor: pointer;
+}
+
+.ds-status-card-entry:focus-visible {
+  outline: 3px solid var(--status-color);
+  outline-offset: -4px;
+}
+
+.ds-status-card-entry:disabled {
+  cursor: wait;
+}
+
+.ds-status-card.is-actionable > :not(.ds-status-card-entry) {
+  pointer-events: none;
+}
+
+.ds-status-card.is-actionable .ds-button {
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-status-card.is-actionable {
+    transition: none;
+  }
+
+  .ds-status-card.is-actionable:hover {
+    transform: none;
+  }
+}
+
 .ds-status-card.is-cyan {
   --status-color: #2f8cff;
   --status-soft: rgba(47, 140, 255, 0.1);
@@ -1357,24 +1404,24 @@
   max-width: 84%;
 }
 
-.training-picker-panel .ds-categories-grid .ds-module-card.is-category.has-art {
+:is(.training-picker-panel .ds-categories-grid, .plan-category-grid) .ds-module-card.is-category.has-art {
   min-height: 142px;
   padding: 22px 16px;
   overflow: hidden;
 }
 
-.training-picker-panel .ds-categories-grid .ds-module-card.is-category.has-art h3 {
+:is(.training-picker-panel .ds-categories-grid, .plan-category-grid) .ds-module-card.is-category.has-art h3 {
   margin-top: 28px;
   max-width: 68%;
   font-size: 18px;
 }
 
-.training-picker-panel .ds-categories-grid .ds-module-card.is-category.has-art p {
+:is(.training-picker-panel .ds-categories-grid, .plan-category-grid) .ds-module-card.is-category.has-art p {
   max-width: 64%;
   font-size: 13px;
 }
 
-.training-picker-panel .ds-categories-grid .ds-module-card.is-category.has-art .ds-module-art-image {
+:is(.training-picker-panel .ds-categories-grid, .plan-category-grid) .ds-module-card.is-category.has-art .ds-module-art-image {
   top: 24px;
   right: 10px;
   width: 66px;
@@ -1383,7 +1430,7 @@
   filter: drop-shadow(0 16px 18px rgba(79, 124, 255, 0.14));
 }
 
-.training-picker-panel .ds-categories-grid .ds-module-card.is-category.has-art .ds-module-arrow {
+:is(.training-picker-panel .ds-categories-grid, .plan-category-grid) .ds-module-card.is-category.has-art .ds-module-arrow {
   right: 10px;
   bottom: 10px;
   width: 36px;
@@ -2963,6 +3010,23 @@
   color: #9a6400;
 }
 
+.exam-mode-card .exam-preparation-feedback {
+  min-width: 0;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.exam-preparation-feedback .exam-empty-note {
+  flex: 1 1 240px;
+  max-width: 100%;
+  padding: 8px 18px;
+  overflow-wrap: anywhere;
+}
+
+.exam-mode-card .exam-preparation-feedback .exam-back-button {
+  flex: 0 0 auto;
+}
+
 .exam-scope-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -3325,6 +3389,36 @@
 
 .plan-settings-page {
   padding-bottom: 32px;
+}
+
+.plan-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.plan-category-grid .ds-module-card {
+  min-width: 0;
+}
+
+.plan-category-grid .ds-module-card.is-active p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.plan-settings-card > .exam-preparation-feedback {
+  margin-top: 16px;
+}
+
+@media (max-width: 1000px) {
+  .plan-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .plan-category-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .plan-settings-card {

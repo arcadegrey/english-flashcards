@@ -3,6 +3,27 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 import { cp, mkdir, readdir } from 'node:fs/promises'
 import path from 'node:path'
+import { createHash } from 'node:crypto'
+import { readFileSync, readdirSync } from 'node:fs'
+
+// Refresh persistent caches only when vocabulary content changes, not on login
+// or unrelated app deployments. Include shards so direct list edits also invalidate.
+const vocabularyHash = createHash('sha256')
+const hashVocabularyDirectory = (directory) => {
+  readdirSync(directory, { withFileTypes: true })
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .forEach((entry) => {
+      const filePath = path.join(directory, entry.name)
+      if (entry.isDirectory()) hashVocabularyDirectory(filePath)
+      else if (entry.name.endsWith('.json')) {
+        vocabularyHash.update(filePath)
+        vocabularyHash.update(readFileSync(filePath))
+      }
+    })
+}
+vocabularyHash.update(readFileSync('public/data/vocabulary.json'))
+hashVocabularyDirectory('public/data/vocabulary')
+const vocabularyVersion = vocabularyHash.digest('hex').slice(0, 16)
 
 const copyPublicAppAssets = () => ({
   name: 'copy-public-app-assets',
@@ -43,6 +64,9 @@ const copyPublicDataAfterPwa = () => ({
 })
 
 export default defineConfig({
+  define: {
+    'import.meta.env.VITE_VOCABULARY_VERSION': JSON.stringify(vocabularyVersion),
+  },
   build: {
     copyPublicDir: false,
     minify: 'esbuild',

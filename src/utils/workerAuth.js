@@ -1,3 +1,5 @@
+import { DAILY_NEW_WORD_TARGETS } from './studyPlan.js';
+
 const API_BASE = String(import.meta.env.VITE_API_BASE || '/api').trim().replace(/\/$/, '');
 const FALLBACK_SESSION_TTL_SECONDS = 60 * 60 * 24 * 30;
 
@@ -90,7 +92,7 @@ const normalizeStudyHistory = (value) => {
 const normalizePreferences = (value) => {
   const dailyNewWordTarget = Number(value?.dailyNewWordTarget);
   return {
-    ...(dailyNewWordTarget && [10, 15, 25, 40].includes(dailyNewWordTarget)
+    ...(dailyNewWordTarget && DAILY_NEW_WORD_TARGETS.includes(dailyNewWordTarget)
       ? { dailyNewWordTarget }
       : {}),
   };

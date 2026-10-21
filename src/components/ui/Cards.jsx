@@ -62,7 +62,7 @@ export function HeroCard({
   )
 }
 
-export function ModuleCard({ title, meta, icon, iconSrc, art, artSrc, active = false, variant, onClick }) {
+export function ModuleCard({ title, meta, icon, iconSrc, art, artSrc, active = false, variant, onClick, ...props }) {
   const hasIcon = Boolean(iconSrc || icon)
   const hasArt = Boolean(artSrc || art)
   const variantClass = variant ? `is-${variant}` : ''
@@ -72,6 +72,7 @@ export function ModuleCard({ title, meta, icon, iconSrc, art, artSrc, active = f
       type="button"
       className={`ds-module-card ${variantClass} ${hasIcon ? 'has-icon' : ''} ${hasArt ? 'has-art' : ''} ${active ? 'is-active' : ''}`}
       onClick={onClick}
+      {...props}
     >
       {(iconSrc || icon) && (
         <span className="ds-module-icon" aria-hidden="true">
@@ -108,9 +109,19 @@ export function StatCard({ icon, iconSrc, value, label }) {
   )
 }
 
-export function StatusCard({ label, title, meta, icon, iconSrc, art, illustrationSrc, progress, actionLabel, onAction, tone = 'blue' }) {
+export function StatusCard({ label, title, meta, icon, iconSrc, art, illustrationSrc, progress, actionLabel, onAction, onOpen, openLabel, busy = false, tone = 'blue' }) {
   return (
-    <article className={`ds-status-card is-${tone}`}>
+    <article className={`ds-status-card is-${tone} ${onOpen ? 'is-actionable' : ''}`}>
+      {onOpen && (
+        <button
+          type="button"
+          className="ds-status-card-entry"
+          aria-label={openLabel || `进入${label}`}
+          aria-busy={busy}
+          disabled={busy}
+          onClick={onOpen}
+        />
+      )}
       <span className="ds-status-icon" aria-hidden="true">
         {iconSrc ? <img className="ds-status-icon-img" src={iconSrc} alt="" loading="lazy" /> : icon}
       </span>

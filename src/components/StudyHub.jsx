@@ -18,6 +18,10 @@ function StudyHub({
   accountNotice = null,
   readingCount = 0,
   wordCount = 0,
+  remainingWordCount = wordCount,
+  planCategoryName = '全部单词',
+  isPreparingWords = false,
+  planError = '',
   reviewCount = 0,
   wrongCount = 0,
   todayWordsLearned = 0,
@@ -142,7 +146,7 @@ function StudyHub({
       <div className="ds-stack">
         <HeroCard
           soft
-          label="每日进步一点点"
+          label={`每日进步一点点 · ${planCategoryName}`}
           title="今天先做这一步"
           subtitle={priorityTask.title}
           meta={
@@ -153,13 +157,13 @@ function StudyHub({
                   : '登录后可同步背词记录、阅读进度和错题统计'}
               </p>
               <div className="study-hub-hero-buttons" aria-label="今日计划操作">
-                <button type="button" className="study-hub-hero-button is-primary" onClick={priorityTask.onClick}>
+                <button type="button" className="study-hub-hero-button is-primary" onClick={priorityTask.onClick} disabled={priorityTask.onClick === onOpenWordStudy && isPreparingWords}>
                   <svg viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M5 5.5A2.5 2.5 0 0 1 7.5 3H20v16H7.5A2.5 2.5 0 0 0 5 21.5Z" />
                     <path d="M5 5.5v16" />
                     <path d="M9 7h7" />
                   </svg>
-                  <span>开始学习</span>
+                  <span>{priorityTask.onClick === onOpenWordStudy && isPreparingWords ? '正在准备词库' : '开始学习'}</span>
                 </button>
                 <button type="button" className="study-hub-hero-button is-secondary" onClick={onAuthOpen}>
                   <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -174,6 +178,13 @@ function StudyHub({
           illustrationSrc="/images/ui-assets/training-hero-flashcards-blue-v1.png"
         />
 
+        {planError && (
+          <div className="exam-section-actions exam-preparation-feedback" role="alert">
+            <span className="exam-empty-note">{planError}</span>
+            <button type="button" className="exam-back-button" onClick={onOpenWordStudy}>重试</button>
+          </div>
+        )}
+
         <PlanStatusCards
           reviewComplete={reviewTaskComplete}
           reviewCount={reviewCount}
@@ -183,13 +194,16 @@ function StudyHub({
           examQuestionsAnswered={todayExamQuestionsAnswered}
           examQuestionsCorrect={todayExamQuestionsCorrect}
           wordCount={wordCount}
+          categoryName={planCategoryName}
+          isPreparingWords={isPreparingWords}
           onReview={onOpenTodayReview}
-          onWords={onAdjustPlan || onOpenWordStudy}
+          onWords={onOpenWordStudy}
+          onAdjustPlan={onAdjustPlan}
           onReading={onOpenSuggestedReading || onOpenReading}
           onExam={onOpenExamPractice}
         />
 
-        <StatsRow streak={streak} target={newWordTarget} remaining={wordCount} />
+        <StatsRow streak={streak} target={newWordTarget} remaining={remainingWordCount} />
 
         {allDailyTasksComplete && (
           <section className="study-hub-completion-summary" aria-label="今日任务总结">

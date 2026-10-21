@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo, useRef, useCallback } from 'react'
 import { ThemeProvider } from './context/ThemeContext'
 import { useTheme } from './context/theme-context'
 import {
+  loadFullVocabulary,
   loadIeltsListVocabulary,
   loadIeltsManifest,
   loadToeflListVocabulary,
@@ -23,6 +24,7 @@ import PlanSettingsView from './components/PlanSettingsView'
 import AuthPanel from './components/AuthPanel'
 import VoiceSettings from './components/VoiceSettings'
 import { storage } from './utils/storage'
+import { DAILY_NEW_WORD_TARGETS, getExamVocabulary, getPlanVocabulary, getPlanWordStats, normalizePlanCategory, recordPlanExamAnswer } from './utils/studyPlan'
 import { buildWordLookup, isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from './utils/readingText'
 import { calculateNextReview, getWordsForReview, initializeWordProgress } from './utils/spacedRepetition'
 import { speak } from './utils/speech'
@@ -206,7 +208,7 @@ const normalizeStudyHistory = (value) => {
 const normalizePreferences = (value) => {
   const dailyNewWordTarget = Number(value?.dailyNewWordTarget)
   return {
-    ...(dailyNewWordTarget && [10, 15, 25, 40].includes(dailyNewWordTarget)
+    ...(dailyNewWordTarget && DAILY_NEW_WORD_TARGETS.includes(dailyNewWordTarget)
       ? { dailyNewWordTarget }
       : {}),
   }
@@ -473,6 +475,14 @@ function AppContent() {
   const [mode, setMode] = useState('learn')
   const [examScope, setExamScope] = useState('all')
   const [examPreparing, setExamPreparing] = useState(false)
+  const [examPreparationError, setExamPreparationError] = useState(null)
+  const examRequestRef = useRef(0)
+  const fullVocabularyLoadedRef = useRef(false)
+  const planRequestRef = useRef(0)
+  const [studyPlanCategory, setStudyPlanCategory] = useState(() => storage.getStudyPlanCategory())
+  const [planExamActivity, setPlanExamActivity] = useState(() => storage.getPlanExamActivity())
+  const [planPreparing, setPlanPreparing] = useState(false)
+  const [planPreparationError, setPlanPreparationError] = useState('')
   const [assessmentBackTarget, setAssessmentBackTarget] = useState('home')
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [selectedToeflLevel, setSelectedToeflLevel] = useState('')
@@ -623,6 +633,22 @@ function AppContent() {
     counts.all = Number(toeflManifest?.sourceTotal) || Number(ieltsManifest?.sourceTotal) || allVocabulary.length
     return counts
   }, [allVocabulary, ieltsManifest, toeflManifest])
+
+  const planCategoryName = categories.find((category) => category.id === studyPlanCategory)?.name || '全部单词'
+  const planVocabulary = useMemo(() => getPlanVocabulary(allVocabulary, studyPlanCategory), [allVocabulary, studyPlanCategory])
+  const planWordCount = studyPlanCategory === 'all' ? wordCounts.all : wordCounts[studyPlanCategory] || 0
+  const planWordStats = useMemo(() => getPlanWordStats(planVocabulary, wordProgress, learnedWords, masteredWords),
+    [planVocabulary, wordProgress, learnedWords, masteredWords])
+  const planExamStats = planExamActivity.date === new Date().toISOString().slice(0, 10)
+    ? planExamActivity.categories?.[studyPlanCategory] || {} : {}
+  const planTodayWordsLearned = studyPlanCategory === 'all'
+    ? todayStudyStats.wordsLearned + todayStudyStats.wordsMastered : planWordStats.todayStudied
+  const planTodayExamAnswered = studyPlanCategory === 'all' ? todayStudyStats.examQuestionsAnswered : Number(planExamStats.answered) || 0
+  const planTodayExamCorrect = studyPlanCategory === 'all' ? todayStudyStats.examQuestionsCorrect : Number(planExamStats.correct) || 0
+  const planLearnedCount = useMemo(() => getExamVocabulary(allVocabulary, { category: studyPlanCategory, scope: 'learned', learnedWords }).length,
+    [allVocabulary, studyPlanCategory, learnedWords])
+  const planMasteredCount = useMemo(() => getExamVocabulary(allVocabulary, { category: studyPlanCategory, scope: 'mastered', masteredWords }).length,
+    [allVocabulary, studyPlanCategory, masteredWords])
 
   const filteredVocabulary = useMemo(() => {
     if (selectedCategory === 'all') {
@@ -869,15 +895,10 @@ function AppContent() {
       setVocabularyError('')
 
       try {
-        const [loadedVocabulary, loadedToeflManifest, loadedIeltsManifest] = await Promise.all([
-          loadVocabulary(),
-          loadToeflManifest().catch(() => null),
-          loadIeltsManifest().catch(() => null),
-        ])
+        const loadedVocabulary = await loadVocabulary()
         if (cancelled) return
         setVocabulary(loadedVocabulary)
-        setToeflManifest(loadedToeflManifest)
-        setIeltsManifest(loadedIeltsManifest)
+        fullVocabularyLoadedRef.current = false
       } catch (error) {
         if (cancelled) return
         setVocabulary([])
@@ -892,11 +913,54 @@ function AppContent() {
     }
 
     load()
+    // Optional list directories must not hold the entire app behind a loading screen.
+    loadToeflManifest().then((manifest) => {
+      if (!cancelled) setToeflManifest(manifest)
+    }).catch(() => {})
+    loadIeltsManifest().then((manifest) => {
+      if (!cancelled) setIeltsManifest(manifest)
+    }).catch(() => {})
 
     return () => {
       cancelled = true
     }
   }, [vocabularyReloadKey])
+
+  useEffect(() => () => {
+    // Ignore a late response after the user leaves the test picker.
+    examRequestRef.current += 1
+    planRequestRef.current += 1
+    setExamPreparing(false)
+  }, [view])
+
+  useEffect(() => {
+    if (vocabularyLoading) return
+    let cancelled = false
+    const preparePlan = async () => {
+      setPlanPreparationError('')
+      if (studyPlanCategory === 'all' || fullVocabularyLoadedRef.current || !['studyHub', 'planSettings', 'examPractice'].includes(view)) {
+        setPlanPreparing(false)
+        return
+      }
+      setPlanPreparing(true)
+      try {
+        const words = await loadFullVocabulary()
+        if (cancelled) return
+        if (!fullVocabularyLoadedRef.current) setVocabulary((prev) => mergeVocabularyList(prev, words))
+        fullVocabularyLoadedRef.current = true
+      } catch (error) {
+        if (!cancelled) setPlanPreparationError(error?.message || '计划词库加载失败，请重试')
+      } finally {
+        if (!cancelled) setPlanPreparing(false)
+      }
+    }
+    preparePlan()
+    return () => { cancelled = true }
+  }, [studyPlanCategory, vocabularyLoading, view])
+
+  useEffect(() => {
+    storage.setPlanExamActivity(planExamActivity)
+  }, [planExamActivity])
 
   useEffect(() => {
     const pendingStartWordId = pendingStartWordIdRef.current
@@ -1696,6 +1760,7 @@ function AppContent() {
   }
 
   const recordAssessmentAnswer = (isCorrect) => {
+    setPlanExamActivity((activity) => recordPlanExamAnswer(activity, studyPlanCategory, isCorrect))
     recordStudyEvent({
       examQuestionsAnswered: 1,
       examQuestionsCorrect: isCorrect ? 1 : 0,
@@ -1810,19 +1875,9 @@ function AppContent() {
   }, [ensureIeltsListLoaded, ieltsGrouping.lists])
 
   const loadAllExamVocabulary = useCallback(async () => {
-    const toeflJobs = toeflGrouping.levels.flatMap((level) =>
-      (toeflGrouping.listsByLevel[level.key] || []).map((item) =>
-        loadToeflListVocabulary(toeflManifest, level.key, item.key)
-      )
-    )
-    const ieltsJobs = ieltsGrouping.lists.map((item) =>
-      loadIeltsListVocabulary(ieltsManifest, item.key)
-    )
-
-    const loadedLists = await Promise.all([...toeflJobs, ...ieltsJobs])
-    const loadedVocabulary = loadedLists.flat()
-    setVocabulary((prev) => mergeVocabularyList(prev, loadedVocabulary))
-  }, [ieltsGrouping.lists, ieltsManifest, toeflGrouping.levels, toeflGrouping.listsByLevel, toeflManifest])
+    if (fullVocabularyLoadedRef.current) return null
+    return loadFullVocabulary()
+  }, [])
 
   const ensureIeltsTopicLoaded = useCallback(
     (topicKey) => {
@@ -2012,6 +2067,8 @@ function AppContent() {
   }
 
   const handleOpenExamPractice = () => {
+    setExamPreparing(false)
+    setExamPreparationError(null)
     setView('examPractice')
   }
 
@@ -2025,18 +2082,62 @@ function AppContent() {
     setDailyNewWordTarget(storage.getDailyNewWordTarget())
   }
 
-  const handleStartExamPractice = async (nextMode, scope = examScope) => {
+  const handleSelectPlanCategory = (category) => {
+    const nextCategory = normalizePlanCategory(category)
+    planRequestRef.current += 1
+    examRequestRef.current += 1
+    storage.setStudyPlanCategory(nextCategory)
+    setStudyPlanCategory(nextCategory)
+    setPlanPreparationError('')
+    setExamPreparationError(null)
+    setExamScope('all')
+  }
+
+  const handleStartPlanLearning = async () => {
+    const requestId = ++planRequestRef.current
+    setPlanPreparing(true)
+    setPlanPreparationError('')
+    try {
+      const words = await loadAllExamVocabulary()
+      if (requestId !== planRequestRef.current) return
+      if (words) {
+        setVocabulary((prev) => mergeVocabularyList(prev, words))
+        fullVocabularyLoadedRef.current = true
+      }
+      pendingStartWordIdRef.current = null
+      setAssessmentBackTarget('studyHub')
+      setSelectedCategory(studyPlanCategory)
+      setSelectedToeflLevel('')
+      setSelectedToeflList('')
+      setSelectedIeltsTopic('')
+      setSelectedIeltsList('')
+      setCurrentIndex(0)
+      setMode('learn')
+      setView('learn')
+    } catch (error) {
+      if (requestId === planRequestRef.current) setPlanPreparationError(error?.message || '计划词库加载失败，请重试')
+    } finally {
+      if (requestId === planRequestRef.current) setPlanPreparing(false)
+    }
+  }
+
+  const handleStartExamPractice = async (nextMode, scope = examScope, backTarget = 'examPractice') => {
+    const requestId = ++examRequestRef.current
     pendingStartWordIdRef.current = null
-    setAssessmentBackTarget('examPractice')
+    setAssessmentBackTarget(backTarget)
     setExamScope(scope)
     setExamPreparing(true)
+    setExamPreparationError(null)
 
     try {
-      if (scope === 'all') {
-        await loadAllExamVocabulary()
+      const loadedVocabulary = await loadAllExamVocabulary()
+      if (requestId !== examRequestRef.current) return
+      if (loadedVocabulary) {
+        setVocabulary((prev) => mergeVocabularyList(prev, loadedVocabulary))
+        fullVocabularyLoadedRef.current = true
       }
 
-      setSelectedCategory('all')
+      setSelectedCategory(studyPlanCategory)
       setSelectedToeflLevel('')
       setSelectedToeflList('')
       setSelectedIeltsTopic('')
@@ -2045,9 +2146,11 @@ function AppContent() {
       setMode(nextMode)
       setView('learn')
     } catch (error) {
-      setVocabularyError(error?.message || '全范围词库加载失败')
+      if (requestId === examRequestRef.current) {
+        setExamPreparationError({ message: error?.message || '词库加载失败，请重试', mode: nextMode, scope })
+      }
     } finally {
-      setExamPreparing(false)
+      if (requestId === examRequestRef.current) setExamPreparing(false)
     }
   }
 
@@ -2074,31 +2177,25 @@ function AppContent() {
   }
 
   const handleOpenModeFromReading = (nextMode) => {
-    setAssessmentBackTarget('home')
-    setMode(nextMode)
-    setView('learn')
+    if (nextMode === 'learn') handleStartPlanLearning()
+    else handleStartExamPractice(nextMode, examScope, 'home')
   }
 
   const handleOpenModeFromHome = (nextMode) => {
-    pendingStartWordIdRef.current = null
-    setAssessmentBackTarget('home')
-    setSelectedCategory('all')
-    setSelectedToeflLevel('')
-    setSelectedToeflList('')
-    setSelectedIeltsTopic('')
-    setSelectedIeltsList('')
-    setCurrentIndex(0)
-    setMode(nextMode)
-    setView('learn')
+    if (nextMode === 'learn') handleStartPlanLearning()
+    else handleStartExamPractice(nextMode, examScope, 'home')
   }
 
   const handleOpenModeFromCollection = (nextMode) => {
-    setAssessmentBackTarget('home')
-    setMode(nextMode)
-    setView('learn')
+    if (nextMode === 'learn') handleStartPlanLearning()
+    else handleStartExamPractice(nextMode, examScope, 'home')
   }
 
   const handleLearningBack = () => {
+    if (mode === 'learn' && assessmentBackTarget === 'studyHub') {
+      handleBackToStudyHub()
+      return
+    }
     if (mode !== 'learn' && assessmentBackTarget === 'examPractice') {
       handleOpenExamPractice()
       return
@@ -2140,6 +2237,7 @@ function AppContent() {
     setWrongWords([])
     setWordProgress({})
     setStudyHistory([])
+    setPlanExamActivity({})
     setCurrentIndex(0)
     storage.clearProgress()
     const shuffled = [...filteredVocabulary].sort(() => Math.random() - 0.5)
@@ -2375,7 +2473,7 @@ function AppContent() {
       case 'studyHub':
         return (
           <StudyHub
-            onOpenWordStudy={handleOpenWordStudy}
+            onOpenWordStudy={handleStartPlanLearning}
             onOpenTraining={handleBackToHome}
             onOpenReading={handleOpenReadingList}
             onOpenSuggestedReading={handleOpenSuggestedReading}
@@ -2393,15 +2491,19 @@ function AppContent() {
               lastSyncedAt,
             })}
             accountNotice={homeAccountNotice}
-            wordCount={wordCounts.all}
+            wordCount={planWordCount}
+            remainingWordCount={studyPlanCategory === 'all' ? Math.max(0, planWordCount - learnedWords.length - masteredWords.length) : planWordStats.remaining}
+            planCategoryName={planCategoryName}
+            isPreparingWords={planPreparing}
+            planError={planPreparationError}
             readingCount={readingLibrary.length}
             reviewCount={todayReviewWordList.length}
             wrongCount={wrongWordList.length}
-            todayWordsLearned={todayStudyStats.wordsLearned}
+            todayWordsLearned={planTodayWordsLearned}
             todayWordsMastered={todayStudyStats.wordsMastered}
             todayReadingsCompleted={todayStudyStats.readingsCompleted}
-            todayExamQuestionsAnswered={todayStudyStats.examQuestionsAnswered}
-            todayExamQuestionsCorrect={todayStudyStats.examQuestionsCorrect}
+            todayExamQuestionsAnswered={planTodayExamAnswered}
+            todayExamQuestionsCorrect={planTodayExamCorrect}
             suggestedReading={suggestedReading}
             studyHistory={studyHistory}
             newWordTarget={dailyNewWordTarget}
@@ -2417,11 +2519,15 @@ function AppContent() {
             navItems={selectionNavItems}
             topbarProps={selectionTopbarProps}
             dailyTarget={dailyNewWordTarget}
-            todayWordsLearned={todayStudyStats.wordsLearned}
-            wordCount={wordCounts.all}
+            todayWordsLearned={planTodayWordsLearned}
+            wordCount={planWordCount}
+            selectedCategory={studyPlanCategory}
+            onSelectCategory={handleSelectPlanCategory}
+            isPreparing={planPreparing}
+            preparationError={planPreparationError}
             onSelectDailyTarget={handleSelectDailyNewWordTarget}
             onBack={handleBackToStudyHub}
-            onStartLearning={handleOpenWordStudy}
+            onStartLearning={handleStartPlanLearning}
           />
         )
       case 'examPractice':
@@ -2431,11 +2537,21 @@ function AppContent() {
             onHome={handleBackToStudyHub}
             onSelectMode={handleStartExamPractice}
             selectedScope={examScope}
-            onSelectScope={setExamScope}
-            learnedCount={learnedWords.length}
-            masteredCount={masteredWords.length}
-            totalCount={wordCounts.all}
-            isPreparing={examPreparing}
+            onSelectScope={(scope) => {
+              examRequestRef.current += 1
+              setExamPreparing(false)
+              setExamPreparationError(null)
+              setExamScope(scope)
+            }}
+            learnedCount={planLearnedCount}
+            masteredCount={planMasteredCount}
+            totalCount={planWordCount}
+            categoryName={planCategoryName}
+            isPreparing={examPreparing || planPreparing}
+            preparationError={examPreparationError?.message}
+            onRetryPreparation={() => {
+              if (examPreparationError) handleStartExamPractice(examPreparationError.mode, examPreparationError.scope)
+            }}
             onSyncAccount={handleHomeSync}
             mode={mode}
             onOpenMode={(nextMode) => handleStartExamPractice(nextMode, examScope)}
@@ -2624,6 +2740,7 @@ function AppContent() {
             onMarkMastered={markAsMastered}
             masteredWords={masteredWords}
             examScope={examScope}
+            examCategory={studyPlanCategory}
             onAddMastered={setWordAsMastered}
             onWrongAnswer={(id) => {
               addWrongWord(id)
@@ -2631,6 +2748,8 @@ function AppContent() {
             }}
             onAssessmentAnswer={recordAssessmentAnswer}
             categoryName={currentCategoryName}
+            dailyTarget={mode === 'learn' && assessmentBackTarget === 'studyHub' ? dailyNewWordTarget : undefined}
+            todayWordsStudied={planTodayWordsLearned}
             learnedWords={learnedWords}
             resetProgress={resetProgress}
             onBack={handleLearningBack}

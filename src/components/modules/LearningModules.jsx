@@ -65,8 +65,11 @@ export function PlanStatusCards({
   examQuestionsAnswered = 0,
   examQuestionsCorrect = 0,
   wordCount,
+  categoryName = '全部单词',
+  isPreparingWords = false,
   onReview,
   onWords,
+  onAdjustPlan,
   onReading,
   onExam,
 }) {
@@ -89,17 +92,22 @@ export function PlanStatusCards({
         illustrationSrc={UI_ASSETS.review}
         actionLabel={reviewComplete ? '已完成' : '开始复习'}
         onAction={onReview}
+        onOpen={onReview}
+        openLabel="进入今日复习"
       />
       <StatusCard
         label="新词"
         title={`${newWordProgress} / ${newWordTarget} 个`}
-        meta={`${wordCount} 词可学`}
+        meta={isPreparingWords ? `${categoryName} · 正在准备词库` : `${categoryName} · ${wordCount} 词可学`}
         tone="blue"
         iconSrc={UI_ASSETS.newWords}
         illustrationSrc={UI_ASSETS.newWords}
         progress={progress}
         actionLabel="调整计划"
-        onAction={onWords}
+        onAction={onAdjustPlan}
+        onOpen={onWords}
+        openLabel={`开始学习${categoryName}`}
+        busy={isPreparingWords}
       />
       <StatusCard
         label="阅读"
@@ -111,17 +119,21 @@ export function PlanStatusCards({
         progress={readingComplete ? 100 : 0}
         actionLabel={readingComplete ? '继续阅读' : '开始阅读'}
         onAction={onReading}
+        onOpen={onReading}
+        openLabel="进入推荐阅读"
       />
       <StatusCard
         label="巩固"
         title={`${examQuestionsAnswered} / ${examTarget} 题`}
-        meta={examQuestionsAnswered > 0 ? `正确率 ${examAccuracy}%` : '完成一组考试练习'}
+        meta={examQuestionsAnswered > 0 ? `${categoryName} · 正确率 ${examAccuracy}%` : `${categoryName} · 完成一组考试练习`}
         tone="indigo"
         iconSrc={UI_ASSETS.target}
         illustrationSrc={UI_ASSETS.target}
         progress={examProgress}
         actionLabel={examQuestionsAnswered >= examTarget ? '继续巩固' : '开始练习'}
         onAction={onExam}
+        onOpen={onExam}
+        openLabel={`进入${categoryName}测试`}
       />
     </div>
   )

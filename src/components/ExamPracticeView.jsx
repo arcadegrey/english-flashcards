@@ -92,12 +92,18 @@ function ExamPracticeView({
   learnedCount = 0,
   masteredCount = 0,
   totalCount = 0,
+  categoryName = '全部单词',
   isPreparing = false,
+  preparationError = '',
+  onRetryPreparation,
   navItems = [],
   topbarProps = {},
 }) {
   const scopeCounts = { learnedCount, masteredCount, totalCount };
-  const selectedScopeMeta = EXAM_SCOPES.find((item) => item.id === selectedScope) || EXAM_SCOPES[0];
+  const scopes = EXAM_SCOPES.map((scope) => scope.id === 'all' && categoryName !== '全部单词'
+    ? { ...scope, label: `${categoryName}随机`, title: '当前词库抽测', helper: `仅从${categoryName}随机抽题。` }
+    : scope);
+  const selectedScopeMeta = scopes.find((item) => item.id === selectedScope) || scopes[0];
   const selectedScopeCount = selectedScopeMeta.getCount(scopeCounts);
   const activeScopeIndex = Math.max(
     0,
@@ -113,7 +119,7 @@ function ExamPracticeView({
       active="test"
       navItems={navItems}
       title="测试"
-      subtitle="选择范围和题型，开始一组真实巩固练习。"
+      subtitle={`${categoryName} · 选择范围和题型，开始一组巩固练习。`}
       topbarProps={topbarProps}
     >
       <div className="exam-page ds-stack">
@@ -121,7 +127,7 @@ function ExamPracticeView({
           <div className="exam-section-head">
             <div>
               <h3>选择测试范围</h3>
-              <p>范围决定本次练习会从哪些单词里抽题。</p>
+              <p>当前计划：{categoryName}。以下范围都限定在该词库内。</p>
             </div>
             <div className="exam-section-tools">
               <span className="exam-section-pill">{selectedScopeMeta.label} · {selectedScopeCount} 词</span>
@@ -138,7 +144,7 @@ function ExamPracticeView({
           </div>
 
           <div className="exam-scope-grid">
-            {EXAM_SCOPES.map((item, index) => {
+            {scopes.map((item, index) => {
               const count = item.getCount(scopeCounts);
               const isActive = selectedScope === item.id;
               return (
@@ -190,7 +196,13 @@ function ExamPracticeView({
               <h3>选择练习方式</h3>
               <p>每一种模式都会保留原来的答题逻辑和学习进度记录。</p>
             </div>
-            {isPreparing && <span className="exam-empty-note">正在准备全范围词库</span>}
+            {isPreparing && <span className="exam-empty-note" role="status">正在准备{categoryName === '全部单词' ? '全范围词库' : categoryName}</span>}
+            {preparationError && (
+              <div className="exam-section-actions exam-preparation-feedback" role="alert">
+                <span className="exam-empty-note">{preparationError}</span>
+                <button type="button" className="exam-back-button" onClick={onRetryPreparation}>重试</button>
+              </div>
+            )}
             {!isPreparing && selectedScopeCount === 0 && <span className="exam-empty-note">当前范围暂无单词</span>}
           </div>
 
