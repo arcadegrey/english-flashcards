@@ -22,8 +22,14 @@ export const removeClassStudent = (classId, studentId) => call(`/classes/${encod
 export const leaveClassroom = (id) => call(`/classes/${encodeURIComponent(id)}/membership`, { method: 'DELETE' });
 export const rotateClassInvite = (id) => call(`/classes/${encodeURIComponent(id)}/invite-code`, { method: 'POST', body: {} });
 
-export const loadReadingAssignments = (classId, signal) => call(`/classes/${encodeURIComponent(classId)}/assignments`, { signal });
-export const publishReadingAssignment = (classId, body) => call(`/classes/${encodeURIComponent(classId)}/assignments`, { method: 'POST', body });
+export const loadReadingAssignments = (classId, signal, expectedUserId) => call(`/classes/${encodeURIComponent(classId)}/assignments`, { signal, expectedUserId });
+export const publishReadingAssignment = (classId, body, expectedUserId) => call(`/classes/${encodeURIComponent(classId)}/assignments`, { method: 'POST', body, expectedUserId });
 export const loadStudentAssignments = (signal, expectedUserId) => call('/assignments', { signal, expectedUserId });
-export const loadAssignmentSubmissions = (id, signal) => call(`/assignments/${encodeURIComponent(id)}/submissions`, { signal });
+export const loadAssignmentSubmissions = (id, signal, expectedUserId) => call(`/assignments/${encodeURIComponent(id)}/submissions`, { signal, expectedUserId });
 export const submitReadingAssignment = (id, answers, expectedUserId) => call(`/assignments/${encodeURIComponent(id)}/submit`, { method: 'POST', body: { answers }, expectedUserId });
+
+export const loadWordAssignments = (classId, signal, expectedUserId) => call(`/classes/${encodeURIComponent(classId)}/word-assignments`, { signal, expectedUserId });
+export const publishWordAssignment = (classId, body, expectedUserId) => call(`/classes/${encodeURIComponent(classId)}/word-assignments`, { method: 'POST', body, expectedUserId });
+export const loadStudentWordAssignments = (signal, expectedUserId) => call('/word-assignments', { signal, expectedUserId });
+export const loadWordSubmissions = (id, signal, expectedUserId) => call(`/word-assignments/${encodeURIComponent(id)}/submissions`, { signal, expectedUserId });
+export const submitWordAssignment = (id, answers, expectedUserId) => call(`/word-assignments/${encodeURIComponent(id)}/submit`, { method: 'POST', body: { answers }, expectedUserId });

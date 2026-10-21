@@ -164,7 +164,7 @@ export default function ClassroomView({ user, navItems, topbarProps, onAuthOpen,
                       <SecondaryButton disabled={busy} onClick={() => perform(() => rotateClassInvite(selectedClass.id), '邀请码已更换，旧码不能再加入，现有学生保持不变。')}>更换邀请码</SecondaryButton>
                     </div></div>
                   </div>
-                  <TeacherReadingAssignments key={selectedClass.id} classId={selectedClass.id} />
+                  <TeacherReadingAssignments key={selectedClass.id} classId={selectedClass.id} userId={userId} />
                   {student ? <StudentProgressPanel key={`${selectedClass.id}:${student.id}`} classId={selectedClass.id} student={student} initialVocabulary={initialVocabulary} onBack={() => setStudent(null)} />
                     : <StudentRoster key={selectedClass.id} classroom={selectedClass} refreshKey={refresh} onSelectStudent={setStudent} onChanged={() => setRefresh((value) => value + 1)} />}
                 </BaseCard>}

@@ -105,3 +105,39 @@ CREATE TABLE IF NOT EXISTS assignment_submissions (
   FOREIGN KEY (assignment_id) REFERENCES reading_assignments(id) ON DELETE CASCADE,
   FOREIGN KEY (student_id) REFERENCES users(id) ON DELETE CASCADE
 );
+
+-- Additive P1 tables; existing reading assignments and learning progress are retained.
+CREATE TABLE IF NOT EXISTS word_assignments (
+  id TEXT PRIMARY KEY,
+  class_id TEXT NOT NULL REFERENCES classes(id) ON DELETE CASCADE,
+  title TEXT NOT NULL,
+  scope_json TEXT NOT NULL,
+  words_json TEXT NOT NULL,
+  due_at TEXT NOT NULL,
+  created_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_word_assignments_class ON word_assignments(class_id, created_at);
+CREATE TABLE IF NOT EXISTS word_assignment_submissions (
+  assignment_id TEXT NOT NULL REFERENCES word_assignments(id) ON DELETE CASCADE,
+  student_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  answers_json TEXT NOT NULL,
+  questions_answered INTEGER NOT NULL,
+  questions_correct INTEGER NOT NULL,
+  submitted_at TEXT NOT NULL,
+  PRIMARY KEY (assignment_id, student_id)
+);
+CREATE TABLE IF NOT EXISTS word_assignment_sessions (
+  user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  assignment_id TEXT NOT NULL REFERENCES word_assignments(id) ON DELETE CASCADE,
+  answers_json TEXT NOT NULL,
+  updated_at TEXT NOT NULL,
+  PRIMARY KEY (user_id, assignment_id)
+);
+CREATE TABLE IF NOT EXISTS reading_attempts (
+  user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  id TEXT NOT NULL,
+  attempt_json TEXT NOT NULL,
+  completed_at TEXT NOT NULL,
+  PRIMARY KEY (user_id, id)
+);
+CREATE INDEX IF NOT EXISTS idx_reading_attempts_user_date ON reading_attempts(user_id, completed_at DESC);

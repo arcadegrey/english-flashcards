@@ -1,3 +1,5 @@
+import WordAssignmentSession from './components/classroom/WordAssignmentSession'
+import { wrongReadingQuestions } from '../shared/readingAttempts.js'
 import { submitReadingAssignment } from './utils/classroomApi'
 import { normalizePreferences, mergePreferences } from '../shared/planPreferences.js'
 import { normalizeStudyHistoryItem, normalizeStudyHistory, mergeStudyHistory } from '../shared/studyHistory.js'
@@ -403,6 +405,8 @@ function AppContent() {
   const [selectedIeltsList, setSelectedIeltsList] = useState('')
   const [selectedReadingId, setSelectedReadingId] = useState(null)
   const [activeReadingAssignment, setActiveReadingAssignment] = useState(null)
+  const [activeWordAssignment, setActiveWordAssignment] = useState(null)
+  const [readingRetry, setReadingRetry] = useState(null)
   const [assignmentReturnView, setAssignmentReturnView] = useState('studyHub')
   const [homePanelRequest, setHomePanelRequest] = useState({ panel: '', nonce: 0 })
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -556,8 +560,8 @@ function AppContent() {
   )
   latestProgressRef.current = currentProgress
   const selectedReading = useMemo(
-    () => activeReadingAssignment?.article || readingLibrary.find((item) => String(item.id) === String(selectedReadingId)) || null,
-    [activeReadingAssignment, readingLibrary, selectedReadingId]
+    () => readingRetry?.article || activeReadingAssignment?.article || readingLibrary.find((item) => String(item.id) === String(selectedReadingId)) || null,
+    [readingRetry, activeReadingAssignment, readingLibrary, selectedReadingId]
   )
   const todayStudyStats = useMemo(() => {
     const today = new Date().toISOString().split('T')[0]
@@ -1476,6 +1480,8 @@ function AppContent() {
     latestProgressRef.current = guestProgress
     setPlanExamActivity(guestProgress.planExamActivity || {})
     setActiveReadingAssignment(null)
+    setActiveWordAssignment(null)
+    setReadingRetry(null)
     setView('studyHub')
     storage.clearAuthSession()
     setAuthSession(null)
@@ -1614,6 +1620,9 @@ function AppContent() {
         return
       }
 
+      setActiveReadingAssignment(null)
+      setActiveWordAssignment(null)
+      setReadingRetry(null)
       const restoredView = typeof state.view === 'string' ? state.view : 'studyHub'
       if (restoredView === 'readingList') {
         setHomePanelRequest((request) => ({ panel: 'reading', nonce: request.nonce + 1 }))
@@ -2075,6 +2084,8 @@ function AppContent() {
 
   const handleOpenReadingList = () => {
     setActiveReadingAssignment(null)
+    setActiveWordAssignment(null)
+    setReadingRetry(null)
     setAssessmentBackTarget('home')
     setSelectedReadingId(null)
     setHomePanelRequest((request) => ({ panel: 'reading', nonce: request.nonce + 1 }))
@@ -2205,14 +2216,30 @@ function AppContent() {
 
   const handleOpenReadingSession = (readingId) => {
     setActiveReadingAssignment(null)
+    setActiveWordAssignment(null)
+    setReadingRetry(null)
     setSelectedReadingId(readingId)
     setView('readingSession')
   }
 
   const handleStartReadingAssignment = (assignment) => {
+    setReadingRetry(null)
+    if (assignment.type === 'words') {
+      setAssignmentReturnView(view === 'classroom' ? 'classroom' : 'studyHub')
+      setActiveWordAssignment(assignment)
+      setView('wordAssignment')
+      return
+    }
     setAssignmentReturnView(view === 'classroom' ? 'classroom' : 'studyHub')
     setActiveReadingAssignment(assignment)
     setSelectedReadingId(assignment.articleId)
+    setView('readingSession')
+  }
+
+  const handleRetryReading = (attempt) => {
+    setActiveReadingAssignment(null)
+    setReadingRetry({ ...attempt, article: { ...attempt.article, questions: wrongReadingQuestions(attempt) } })
+    setSelectedReadingId(attempt.article.id)
     setView('readingSession')
   }
 
@@ -2242,6 +2269,8 @@ function AppContent() {
   const handleBackToReadingList = () => {
     if (activeReadingAssignment) {
       setActiveReadingAssignment(null)
+      setActiveWordAssignment(null)
+      setReadingRetry(null)
       setView(assignmentReturnView)
       return
     }
@@ -2479,6 +2508,7 @@ function AppContent() {
       view === 'wrongWords' ||
       view === 'planSettings' ||
       view === 'readingSession' ||
+      view === 'wordAssignment' ||
       view === 'statistics' ||
       view === 'examPractice'
     ) {
@@ -2685,6 +2715,7 @@ function AppContent() {
             onOpenMode={handleOpenModeFromHome}
             onOpenReading={handleOpenReadingList}
             onOpenReadingSession={handleOpenReadingSession}
+            onRetryReading={handleRetryReading}
             mode={mode}
             onAuthLogin={handleAuthLogin}
             onAuthRegister={handleAuthRegister}
@@ -2699,12 +2730,15 @@ function AppContent() {
             dailyTarget={dailyNewWordTarget}
           />
         )
+      case 'wordAssignment':
+        return activeWordAssignment ? <WordAssignmentSession key={`${authUser?.id}:${activeWordAssignment.id}`} assignment={activeWordAssignment} userId={authUser?.id} navItems={selectionNavItems} topbarProps={selectionTopbarProps} onBack={() => { setActiveWordAssignment(null); setView(assignmentReturnView) }} /> : <AppLayout title="班级作业" navItems={selectionNavItems} topbarProps={selectionTopbarProps}><div className="classroom-panel"><p>请从任务列表重新进入作业。</p><button type="button" className="exam-back-button" onClick={() => setView('studyHub')}>返回今日计划</button></div></AppLayout>
       case 'readingSession':
         return (
           <ReadingSessionView
-            key={`${authUser?.id || 'guest'}:${activeReadingAssignment?.id || selectedReadingId}`}
+            key={`${authUser?.id || 'guest'}:${readingRetry?.id || activeReadingAssignment?.id || selectedReadingId}`}
             userId={authUser?.id}
             assignment={activeReadingAssignment}
+            retryAttempt={readingRetry}
             onSubmitAssignment={handleSubmitReadingAssignment}
             article={selectedReading}
             mode={mode}

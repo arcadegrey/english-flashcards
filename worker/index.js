@@ -2,6 +2,8 @@ import { normalizePreferences, mergePreferences } from '../shared/planPreference
 import { normalizeStudyHistory, mergeStudyHistory } from '../shared/studyHistory.js';
 import { handleClassroomApi, profileFields } from './classroom.js';
 import { handleReadingApi } from './readingAssignments.js';
+import { handleWordAssignments } from './wordAssignments.js';
+import { handleReadingAttempts } from './readingAttempts.js';
 
 const COOKIE_NAME = 'ef_session';
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -585,6 +587,11 @@ const handleApi = async (request, env) => {
     const currentUser = await getSessionUser(env, request);
     if (!currentUser) return errorJson('请重新登录账号。', 401, 'UNAUTHORIZED');
     if (expectedUserId !== currentUser.id) return errorJson('账号已切换，请刷新页面后重试。', 409, 'ACCOUNT_CHANGED');
+  }
+
+  if (pathname === '/api/reading-attempts') return handleReadingAttempts(request, env, await getSessionUser(env, request));
+  if (pathname === '/api/word-assignments' || pathname.startsWith('/api/word-assignments/') || /^\/api\/classes\/[\w-]+\/word-assignments$/.test(pathname)) {
+    return handleWordAssignments(request, env, await getSessionUser(env, request));
   }
 
   if (pathname.startsWith('/api/reading-sessions/') || pathname === '/api/assignments' || pathname.startsWith('/api/assignments/') || /^\/api\/classes\/[\w-]+\/assignments$/.test(pathname)) {

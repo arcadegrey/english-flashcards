@@ -1,3 +1,4 @@
+import useReadingAttempts from '../hooks/useReadingAttempts';
 import { normalizeReadingQuestions } from '../../shared/readingQuestions.js';
 import useReadingDraft from '../hooks/useReadingDraft';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -11,6 +12,7 @@ function ReadingSessionView({
   article,
   userId,
   assignment,
+  retryAttempt,
   onSubmitAssignment,
   mode = 'learn',
   onBack,
@@ -28,7 +30,8 @@ function ReadingSessionView({
 }) {
   const [showTranslation, setShowTranslation] = useState(false);
   const [activeWord, setActiveWord] = useState(null);
-  const draft = useReadingDraft(userId, assignment ? `assignment:${assignment.id}` : `reading:${article?.id}`);
+  const history = useReadingAttempts(userId);
+  const draft = useReadingDraft(userId, retryAttempt ? `retry:${retryAttempt.id}` : assignment ? `assignment:${assignment.id}` : `reading:${article?.id}`);
   const [submissionBusy, setSubmissionBusy] = useState(false);
   const [submissionError, setSubmissionError] = useState('');
   const [completionSummary, setCompletionSummary] = useState(null);
@@ -107,7 +110,7 @@ function ReadingSessionView({
     accuracy: assignment.questionsAnswered ? Math.round(assignment.questionsCorrect / assignment.questionsAnswered * 100) : 0,
     answered: assignment.questionsAnswered, correct: assignment.questionsCorrect, hasQuestions: true,
     unmasteredCount: readingStats.unmasteredCount, nextStep: '作业成绩已保存，可返回查看老师的其他任务。',
-  } : null) || (!assignment && isCompletedToday
+  } : null) || (!assignment && !retryAttempt && isCompletedToday
     ? {
         accuracy: completedResult?.questionsAnswered ? Math.round(completedResult.questionsCorrect / completedResult.questionsAnswered * 100) : readingAccuracy,
         answered: completedResult?.questionsAnswered ?? answeredQuestionCount,
@@ -175,6 +178,8 @@ function ReadingSessionView({
       try {
         await draft.flush();
         const saved = await onSubmitAssignment(draft.session.answers);
+        try { history.record({ id: `assignment-${assignment.id}`, article, answers: saved.answers, assignmentId: assignment.id, completedAt: saved.submittedAt }); }
+        catch (error) { setSubmissionError(`作业已提交，但本机复盘记录未保存：${error.message}`); }
         setCompletionSummary({ accuracy: Math.round(saved.questionsCorrect / saved.questionsAnswered * 100),
           answered: saved.questionsAnswered, correct: saved.questionsCorrect, hasQuestions: true,
           unmasteredCount: readingStats.unmasteredCount, nextStep: '作业已提交，老师可以查看本次成绩。' });
@@ -183,7 +188,13 @@ function ReadingSessionView({
       finally { setSubmissionBusy(false); }
       return;
     }
-    if (!article?.id || typeof onCompleteReading !== 'function') return;
+    if (!article?.id || typeof onCompleteReading !== 'function' || completionSummary) return;
+    if (hasReadingQuestions && answeredQuestionCount !== readingQuestions.length) { setSubmissionError('请完成全部阅读题后保存练习。'); return; }
+    if (hasReadingQuestions) {
+      try { history.record({article, answers:selectedAnswers, parentId:retryAttempt?.id || ''}); }
+      catch (error) { setSubmissionError(`练习未保存：${error.message}`); return; }
+    }
+    setSubmissionError('');
     const nextSummary = {
       accuracy: readingAccuracy,
       answered: answeredQuestionCount,
@@ -195,14 +206,14 @@ function ReadingSessionView({
           ? '把未掌握词加入复习，再做一组考试巩固。'
           : '难词状态不错，可以继续下一篇阅读。',
     };
-    onCompleteReading({
+    if (!retryAttempt) onCompleteReading({
       articleId: article.id,
       questionsAnswered: answeredQuestionCount,
       questionsCorrect: correctQuestionCount,
       timeSpent: articleMinutes,
     });
     setCompletionSummary(nextSummary);
-    setToast(isCompletedToday ? '今天已记录过这篇阅读' : '已完成阅读，今日计划已更新');
+    setToast(retryAttempt ? '错题练习已保存，原成绩保持不变' : '本次练习已保存，今日计划已更新');
   };
 
   const contentBlocks = useMemo(() => {
@@ -426,6 +437,9 @@ function ReadingSessionView({
               {assignment && <p>{assignment.submittedAt ? '本次作业已提交，成绩已保存。' : '班级阅读作业：完成全部题目后提交；首次提交计成绩，逾期可补交。'}</p>}
               <p>{draft.status === 'loading' ? '正在恢复答题记录…' : draft.status === 'synced' ? '答题记录已同步' : draft.status === 'syncing' ? '正在同步答题…' : Object.keys(draft.session.answers).length ? '答题已保留在本机' : '选择答案后将自动保存'}</p>
               {draft.error && <p role="status">{draft.error} <button type="button" className="classroom-text-button" onClick={() => draft.flush().catch(() => {})}>重试保存</button></p>}
+              {history.pending > 0 && <p>有 {history.pending} 次练习待同步。<button type="button" className="classroom-text-button" onClick={history.sync}>同步历史</button></p>}
+              {history.error && <p role="alert">{history.error}</p>}
+              {retryAttempt && <p>正在重做错题，保存后可在训练中心查看本次成绩。</p>}
               {submissionError && <p role="alert" className="auth-error">{submissionError}</p>}
             </div>
             <footer className="learn-refresh-bottombar reading-session-actions">
@@ -475,14 +489,14 @@ function ReadingSessionView({
                   type="button"
                   className="learn-refresh-action learn-refresh-action-primary"
                   onClick={handleCompleteReading}
-                  disabled={assignment ? Boolean(assignment.submittedAt) || submissionBusy || draft.status === 'loading' : isCompletedToday}
+                  disabled={assignment ? Boolean(assignment.submittedAt) || submissionBusy || draft.status === 'loading' : Boolean(completionSummary) || (hasReadingQuestions && answeredQuestionCount !== readingQuestions.length)}
                 >
                   <span className="learn-refresh-action-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24">
                       <path d="M5 12.5 10 17l9-10" />
                     </svg>
                   </span>
-                  <span>{assignment ? assignment.submittedAt ? '作业已提交' : submissionBusy ? '提交中…' : '提交阅读作业' : isCompletedToday ? '今日已完成' : '完成阅读'}</span>
+                  <span>{assignment ? assignment.submittedAt ? '作业已提交' : submissionBusy ? '提交中…' : '提交阅读作业' : completionSummary ? '练习已保存' : retryAttempt ? '保存错题练习' : hasReadingQuestions ? '保存本次练习' : '完成阅读'}</span>
                 </button>
               </div>
             </footer>

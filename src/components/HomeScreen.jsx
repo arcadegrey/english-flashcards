@@ -1,3 +1,4 @@
+import ReadingReviewPanel from './reading/ReadingReviewPanel';
 import { useEffect, useState, useMemo } from 'react';
 import categories from '../data/categories';
 import AppLayout from './layout/AppLayout';
@@ -47,6 +48,7 @@ function HomeScreen({
   onAuthOpen,
   onOpenReading,
   onOpenReadingSession,
+  onRetryReading,
   authLoading = false,
   authUser = null,
   syncError = '',
@@ -325,6 +327,7 @@ function HomeScreen({
               onOpenReading?.();
             }}
           />
+          <ReadingReviewPanel key={authUser?.id || 'guest'} userId={authUser?.id} onRetry={onRetryReading} />
         </BaseCard>
 
         <MotivationBand />

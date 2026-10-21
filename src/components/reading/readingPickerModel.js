@@ -1,5 +1,5 @@
 export const READING_LEVEL_META = {
-  all: { label: '全部等级', order: 0, tone: 'slate', helper: '覆盖 B1-C1' },
+  all: { label: '全部等级', order: 0, tone: 'slate', helper: '覆盖 A1–C1' },
   a1: { label: 'A1 入门', order: 1, tone: 'green', helper: '适合入门阅读' },
   a2: { label: 'A2 初级', order: 2, tone: 'green', helper: '适合基础巩固' },
   b1: { label: 'B1 中级', order: 3, tone: 'green', helper: '适合基础提升' },

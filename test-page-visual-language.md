@@ -103,7 +103,7 @@ Generated assets must not contain Chinese text, progress values, buttons, or nav
 --------------------------------
 # APPLYING THIS TO EXISTING PAGES
 
-When updating older pages, keep their behavior and state unchanged, but restyle them toward the Test page:
+When restyling older pages, preserve behavior and state outside the requested functional scope and move their visuals toward the Test page:
 - replace page-local visual systems with shared `AppLayout` chrome
 - use white/tinted panels instead of old standalone surfaces
 - move page-specific controls into content panels
@@ -138,4 +138,4 @@ For every page converted to this direction:
 - desktop `1440x900` should have no horizontal overflow
 - mobile `390px` width should have no clipped text or overlapping controls
 - generated assets must remain decorative only
-- app logic, routes, storage, sync, progress, and learning behavior must remain unchanged
+- UI-only changes must preserve app logic, routes, storage, sync, progress, and learning behavior; requested functional changes require relevant tests and compatibility checks

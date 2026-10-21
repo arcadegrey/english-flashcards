@@ -2,7 +2,7 @@
 
 ## Goal
 
-Build a scalable production edtech SaaS frontend without changing learning behavior, routes, storage, sync, or data loading logic.
+Build a scalable production edtech SaaS frontend using the shared design system. UI-only work preserves existing learning behavior, routes, storage, sync, and data loading logic. Product tasks may include frontend and backend changes as needed, with relevant tests, data compatibility, and documented migration/deployment requirements.
 
 ## Source Of Truth
 

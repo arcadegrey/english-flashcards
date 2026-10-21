@@ -69,7 +69,7 @@ Example translation maintenance scripts:
 
 ## Reading Data
 
-- Built-in readings: 18 total, including 6 original IELTS/TOEFL-style practice articles.
+- Built-in readings: 26 total; 19 include questions (69 questions). Includes 4 A1 and 4 A2 original stories, questions for all 5 B1 articles, and the existing 6 IELTS/TOEFL-style practice articles. See `docs/p1-features.md`.
 - Reading CSV fields: `title, level, category, content, translation, source, tags, examType, questions`
 - Reading import script: `scripts/import-global-reading.mjs`
 

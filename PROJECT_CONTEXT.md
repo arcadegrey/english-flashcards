@@ -17,9 +17,13 @@ This file is intentionally short for Codex startup context. Detailed data/audio/
 
 Less common maintenance commands are listed in `docs/project-reference.md`.
 
+## Work Scope
+
+- Development is not limited to UI. Modify frontend logic, backend APIs, database schema, storage, sync, and learning behavior as needed for the requested task.
+- Preserve unrelated functionality and existing user data. UI-only tasks keep existing behavior unchanged; functional changes must maintain account isolation, authorization, data compatibility, and sync correctness, with relevant tests and migration/deployment notes.
+
 ## UI Rules
 
-- Do not change backend logic, routes, state, storage, sync, or learning behavior unless explicitly requested.
 - Current global visual language is `test-page-visual-language.md`: white and very light blue surfaces, primary blue `#4F7CFF` / `#2F6DFF`, secondary blue `#7EA6FF`, light background `#F7FAFF`, card background `#FFFFFF`, text `#0F172A` / `#64748B`.
 - Desktop pages use shared chrome through `AppLayout`, `Sidebar.jsx`, and `Topbar.jsx`; do not create page-local desktop navigation or topbars.
 - Desktop topbar visible slots stay identical to 今日计划: title/subtitle left; calendar, notification, and `Aa` account chip right. Page-specific controls belong inside content panels.
@@ -49,6 +53,7 @@ Less common maintenance commands are listed in `docs/project-reference.md`.
 - Learning: `src/components/WordCard.jsx`, `src/components/QuickMenu.jsx`
 - Vocabulary loading: `src/data/vocabulary.js`
 - Speech: `src/utils/speech.js`, `src/components/VoiceSettings.jsx`
+- P1 assignments/review/content: `docs/p1-features.md`; word assignment APIs in `worker/wordAssignments.js`, reading history in `worker/readingAttempts.js`, original foundation readings in `src/data/foundationReadings.js`.
 - Classrooms: `src/components/ClassroomView.jsx`, `src/components/classroom/StudentProgressPanel.jsx`, `src/utils/classroomApi.js`, `worker/classroom.js`; new tables are created idempotently by the existing schema deployment step.
 - Design docs: `agents.md`, `frontend-architecture.md`, `design-system.md`, `component-system.md`, `test-page-visual-language.md`
 
@@ -86,6 +91,13 @@ Less common maintenance commands are listed in `docs/project-reference.md`.
 - Local learning cache is archived per account on switching. Anonymous learning can merge on login; another signed-in user's data never merges. Other tabs reload on account changes; stale progress/draft writes carry an expected-user check.
 - Deploy with `npm run d1:migrate` before the updated Worker; new tables and preferences column are additive. Local preview migrations operate only on the ignored SQLite database.
 
+## P1 Status
+
+- Production D1 migration completed and verified on 2026-10-21 for `english-flashcards`; P1 Worker/frontend deployment remains pending. Audit: `docs/d1-p1-deployment.md`.
+- Ranged vocabulary assignments, student home tasks, teacher completion/grade lists, reading attempt snapshots, and wrong-only retries are implemented. See `docs/p1-features.md` for scope and deployment.
+- Reading content is now 26 articles, 19 with questions, 69 questions, including 4 A1 and 4 A2 articles and questions for all 5 B1 articles.
+- Reading history is separate from old aggregate progress; old records without saved answers cannot be reconstructed.
+
 ## Next Work
 
 See `plan.md` for the product roadmap. Current priorities:
@@ -93,5 +105,5 @@ See `plan.md` for the product roadmap. Current priorities:
 1. Complete 今日学习计划 loop.
 2. Clean remaining TOEFL/IELTS selector and legacy styling.
 3. Add learning goals: IELTS / TOEFL / daily English.
-4. Improve reading completion results, wrong-answer explanations, and weak-word recovery.
+4. Expand reading content further and improve weak-word recovery; the first reading history and wrong-answer review loop is implemented.
 5. Continue productizing statistics across words, reading, and exam practice.

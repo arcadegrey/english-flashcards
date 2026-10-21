@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { requestApi } from '../utils/workerAuth';
 import { readReadingDraft, writeReadingDraft } from '../utils/readingDrafts';
 
-export default function useReadingDraft(ownerId, sessionKey) {
+export default function useReadingDraft(ownerId, sessionKey, endpoint) {
   const [session, setSession] = useState(() => readReadingDraft(ownerId, sessionKey));
   const [loaded, setLoaded] = useState(!ownerId);
   const [status, setStatus] = useState(ownerId ? 'loading' : 'local');
@@ -10,7 +10,7 @@ export default function useReadingDraft(ownerId, sessionKey) {
   const latest = useRef(session);
   const savedVersion = useRef('');
   const queue = useRef(Promise.resolve());
-  const path = `/reading-sessions/${encodeURIComponent(sessionKey)}`;
+  const path = endpoint || `/reading-sessions/${encodeURIComponent(sessionKey)}`;
 
   const keepLocal = useCallback((value) => {
     latest.current = value;

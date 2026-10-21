@@ -1,4 +1,5 @@
 import readings from '../src/data/readings.js';
+import { wrongReadingQuestions } from '../shared/readingAttempts.js';
 import { gradeReadingAnswers, validateReadingAnswers } from '../shared/readingQuestions.js';
 
 const json = (body, status = 200) => new Response(JSON.stringify(body), {
@@ -42,6 +43,11 @@ export const handleReadingApi = async (request, env, user) => {
       const assignment = await studentAssignment(db, key.slice(11), user.id);
       if (!assignment) return error('作业不存在或你已退出班级。', 404);
       article = parse(assignment.article_json);
+    } else if (key.startsWith('retry:')) {
+      const row = await db.prepare('SELECT attempt_json FROM reading_attempts WHERE user_id=? AND id=?').bind(user.id, key.slice(6)).first();
+      if (!row) return error('原始练习尚未同步，请先同步历史。', 409);
+      const attempt = parse(row.attempt_json);
+      article = { ...attempt.article, questions: wrongReadingQuestions(attempt) };
     } else if (key.startsWith('reading:')) article = readings.find((item) => String(item.id) === key.slice(8));
     if (!article) return error('阅读内容不存在。', 404);
     if (method === 'PUT') {
