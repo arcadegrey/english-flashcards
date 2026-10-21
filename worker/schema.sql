@@ -43,3 +43,32 @@ CREATE TABLE IF NOT EXISTS user_progress (
   updated_at TEXT NOT NULL,
   FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
+
+CREATE TABLE IF NOT EXISTS account_profiles (
+  user_id INTEGER PRIMARY KEY,
+  role TEXT NOT NULL CHECK (role IN ('student', 'teacher')),
+  display_name TEXT NOT NULL CHECK (length(display_name) BETWEEN 1 AND 40),
+  created_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS classes (
+  id TEXT PRIMARY KEY,
+  teacher_id INTEGER NOT NULL,
+  name TEXT NOT NULL CHECK (length(name) BETWEEN 1 AND 60),
+  invite_code TEXT NOT NULL UNIQUE,
+  created_at TEXT NOT NULL,
+  FOREIGN KEY (teacher_id) REFERENCES users(id) ON DELETE CASCADE
+);
+CREATE INDEX IF NOT EXISTS idx_classes_teacher ON classes(teacher_id);
+
+CREATE TABLE IF NOT EXISTS class_memberships (
+  class_id TEXT NOT NULL,
+  student_id INTEGER NOT NULL,
+  joined_at TEXT NOT NULL,
+  PRIMARY KEY (class_id, student_id),
+  FOREIGN KEY (class_id) REFERENCES classes(id) ON DELETE CASCADE,
+  FOREIGN KEY (student_id) REFERENCES users(id) ON DELETE CASCADE
+);
+CREATE INDEX IF NOT EXISTS idx_class_memberships_student ON class_memberships(student_id);

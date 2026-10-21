@@ -22,6 +22,8 @@ import ReadingSessionView from './components/ReadingSessionView'
 import ExamPracticeView from './components/ExamPracticeView'
 import PlanSettingsView from './components/PlanSettingsView'
 import AuthPanel from './components/AuthPanel'
+import ClassroomView from './components/ClassroomView'
+import { getAccountRoleLabel } from './utils/classroom'
 import VoiceSettings from './components/VoiceSettings'
 import { storage } from './utils/storage'
 import { DAILY_NEW_WORD_TARGETS, getExamVocabulary, getPlanVocabulary, getPlanWordStats, normalizePlanCategory, recordPlanExamAnswer } from './utils/studyPlan'
@@ -1388,7 +1390,7 @@ function AppContent() {
     }
   }
 
-  const handleAuthRegister = async ({ email, verificationCode }) => {
+  const handleAuthRegister = async ({ email, verificationCode, role, displayName }) => {
     if (!cloudEnabled) {
       throw new Error('云端账号服务未配置')
     }
@@ -1410,6 +1412,8 @@ function AppContent() {
       const { session, user, emailConfirmationRequired, message } = await signUpWithEmail({
         email,
         verificationCode,
+        role,
+        displayName,
       })
       if (!session) {
         return {
@@ -2066,6 +2070,21 @@ function AppContent() {
     setView('statistics')
   }
 
+  const handleOpenClassroom = () => {
+    setShowAuthModal(false)
+    setView('classroom')
+  }
+
+  const handleClassroomProfileUpdated = useCallback((user) => {
+    setAuthUser((current) => JSON.stringify(current) === JSON.stringify(user) ? current : user)
+    const session = storage.getAuthSession()
+    if (session?.access_token && JSON.stringify(session.user) !== JSON.stringify(user)) {
+      const updatedSession = { ...session, user }
+      storage.setAuthSession(updatedSession)
+      setAuthSession(updatedSession)
+    }
+  }, [])
+
   const handleOpenExamPractice = () => {
     setExamPreparing(false)
     setExamPreparationError(null)
@@ -2351,6 +2370,7 @@ function AppContent() {
             onRegister={handleModalRegister}
             onLogout={handleModalLogout}
             onSyncNow={handleModalSyncNow}
+            onOpenClassroom={handleOpenClassroom}
           />
         </div>
       </div>
@@ -2464,12 +2484,25 @@ function AppContent() {
     isDarkTheme: isDark,
     onVoiceSettings: () => setShowVoiceSettings(true),
     onUserClick: () => setShowAuthModal(true),
-    userLabel: authUser?.email ? '学习者' : authLoading ? '同步中' : '未登录',
+    userLabel: authUser?.email ? getAccountRoleLabel(authUser) : authLoading ? '同步中' : '未登录',
     sidebarProps: { studyHistory },
   }
 
   const renderView = () => {
     switch (view) {
+      case 'classroom':
+        return (
+          <ClassroomView
+            key={authUser?.id || 'guest'}
+            user={authUser}
+            navItems={selectionNavItems}
+            topbarProps={selectionTopbarProps}
+            onAuthOpen={() => setShowAuthModal(true)}
+            onProfileUpdated={handleClassroomProfileUpdated}
+            onSync={handleManualSync}
+            initialVocabulary={vocabulary}
+          />
+        )
       case 'studyHub':
         return (
           <StudyHub
@@ -2766,7 +2799,7 @@ function AppContent() {
             onThemeToggle={toggleTheme}
             onVoiceSettings={() => setShowVoiceSettings(true)}
             onUserClick={() => setShowAuthModal(true)}
-            userLabel={authUser?.email ? '学习者' : authLoading ? '同步中' : '未登录'}
+            userLabel={authUser?.email ? getAccountRoleLabel(authUser) : authLoading ? '同步中' : '未登录'}
             studyHistory={studyHistory}
           />
         )

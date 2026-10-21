@@ -39,6 +39,7 @@ Less common maintenance commands are listed in `docs/project-reference.md`.
 - `todayReview`, `wrongWords`, `learnedWords`, `masteredWords`: word collection pages.
 - `statistics`: learning statistics.
 - `examPractice`: exam practice range and mode selection.
+- `classroom`: teacher/student cloud profiles, invite-code classes, student roster and read-only word progress; accessed from the account panel. See `docs/classroom-system.md` for permissions and deployment.
 
 ## Important Files
 
@@ -48,6 +49,7 @@ Less common maintenance commands are listed in `docs/project-reference.md`.
 - Learning: `src/components/WordCard.jsx`, `src/components/QuickMenu.jsx`
 - Vocabulary loading: `src/data/vocabulary.js`
 - Speech: `src/utils/speech.js`, `src/components/VoiceSettings.jsx`
+- Classrooms: `src/components/ClassroomView.jsx`, `src/components/classroom/StudentProgressPanel.jsx`, `src/utils/classroomApi.js`, `worker/classroom.js`; new tables are created idempotently by the existing schema deployment step.
 - Design docs: `agents.md`, `frontend-architecture.md`, `design-system.md`, `component-system.md`, `test-page-visual-language.md`
 
 ## Core Data

@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import AccountRoleChoice from './AccountRoleChoice';
+import { getAccountRoleLabel } from '../utils/classroom';
 
 const normalizeError = (error) => {
   if (!error) return '操作失败，请重试。';
@@ -40,6 +42,7 @@ function AuthPanel({
   onRegister,
   onLogout,
   onSyncNow,
+  onOpenClassroom,
 }) {
   const [mode, setMode] = useState('login');
   const [email, setEmail] = useState('');
@@ -47,6 +50,8 @@ function AuthPanel({
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
+  const [role, setRole] = useState('student');
+  const [displayName, setDisplayName] = useState('');
 
   const isLoggedIn = Boolean(user?.id);
 
@@ -67,6 +72,8 @@ function AuthPanel({
       const result = await action?.({
         email: email.trim(),
         verificationCode: verificationCode.trim(),
+        role,
+        displayName: displayName.trim(),
       });
       setMessage(result?.message || (mode === 'register' ? '注册成功。' : '登录成功。'));
       if (result?.sessionReady) {
@@ -167,6 +174,14 @@ function AuthPanel({
 
         {isLoggedIn ? (
           <div className="auth-logged-in">
+            <div className="classroom-account-entry">
+              <div><strong>{getAccountRoleLabel(user)} · {user.displayName || user.email.split('@')[0]}</strong>
+                <p>{user.profileConfigured ? user.role === 'teacher' ? '创建班级，查看学生的学习记录。' : '使用老师的邀请码加入班级。' : '先设置师生身份，开始使用班级功能。'}</p>
+              </div>
+              <button type="button" className="auth-primary-button" onClick={onOpenClassroom}>
+                {user.profileConfigured ? user.role === 'teacher' ? '教学班级' : '我的班级' : '设置师生身份'}
+              </button>
+            </div>
             <p>
               同步状态：<strong>{syncStatusText || '就绪'}</strong>
             </p>
@@ -208,6 +223,16 @@ function AuthPanel({
                 注册
               </button>
             </div>
+
+            {mode === 'register' && (
+              <>
+                <AccountRoleChoice value={role} onChange={setRole} disabled={busy} />
+                <label className="auth-input-field">
+                  <input aria-label="姓名或昵称" type="text" maxLength={40} value={displayName}
+                    onChange={(event) => setDisplayName(event.target.value)} placeholder="姓名 / 昵称（可选，方便师生辨认）" />
+                </label>
+              </>
+            )}
 
             <label className="auth-input-field">
               <span aria-hidden="true">

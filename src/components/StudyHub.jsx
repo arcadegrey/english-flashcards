@@ -2,6 +2,7 @@ import AppLayout from './layout/AppLayout'
 import { HeroCard } from './ui/Cards'
 import { PlanStatusCards, StatsRow } from './modules/LearningModules'
 import { calculateStudyStreak } from '../utils/learningMetrics'
+import { getAccountRoleLabel } from '../utils/classroom'
 
 function StudyHub({
   onOpenWordStudy,
@@ -139,7 +140,7 @@ function StudyHub({
         isDarkTheme,
         onVoiceSettings,
         onUserClick: onAuthOpen,
-        userLabel: authUser?.email ? '学习者' : syncStatusText || '学习者',
+        userLabel: authUser?.email ? getAccountRoleLabel(authUser) : syncStatusText || '学习者',
         sidebarProps: { studyHistory },
       }}
     >

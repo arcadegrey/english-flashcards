@@ -124,12 +124,13 @@ const buildSessionFromUser = (user, expiresAt) => ({
   user,
 });
 
-const requestApi = async (path, { method = 'GET', body, allowUnauthorized = false } = {}) => {
+export const requestApi = async (path, { method = 'GET', body, allowUnauthorized = false, signal } = {}) => {
   const response = await fetch(`${API_BASE}${path}`, {
     method,
     credentials: 'include',
     headers: body ? { 'content-type': 'application/json' } : undefined,
     body: body ? JSON.stringify(body) : undefined,
+    signal,
   });
 
   const contentType = response.headers.get('content-type') || '';
@@ -149,7 +150,7 @@ const requestApi = async (path, { method = 'GET', body, allowUnauthorized = fals
 export const isWorkerAuthConfigured = () => Boolean(API_BASE);
 export const isCloudAuthConfigured = isWorkerAuthConfigured;
 
-export const signUpWithEmail = async ({ email, verificationCode = '' }) => {
+export const signUpWithEmail = async ({ email, verificationCode = '', role = 'student', displayName = '' }) => {
   const safeEmail = String(email || '').trim().toLowerCase();
   const safeCode = String(verificationCode || '').trim();
 
@@ -181,6 +182,8 @@ export const signUpWithEmail = async ({ email, verificationCode = '' }) => {
       email: safeEmail,
       code: safeCode,
       mode: 'register',
+      role,
+      displayName,
     },
   });
 

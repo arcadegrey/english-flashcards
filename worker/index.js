@@ -1,3 +1,5 @@
+import { handleClassroomApi, profileFields } from './classroom.js';
+
 const COOKIE_NAME = 'ef_session';
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const EMPTY_PROGRESS = {
@@ -245,7 +247,8 @@ const ensureEnv = (env) => {
 };
 
 const getUserByEmail = async (env, email) =>
-  env.DB.prepare('SELECT id, email FROM users WHERE email = ? LIMIT 1').bind(email).first();
+  env.DB.prepare(`SELECT u.id, u.email, p.role, p.display_name FROM users u
+    LEFT JOIN account_profiles p ON p.user_id = u.id WHERE u.email = ? LIMIT 1`).bind(email).first();
 
 const sendCodeEmail = async (env, email, code, mode) => {
   const modeText = mode === 'register' ? '注册' : '登录';
@@ -281,9 +284,10 @@ const getSessionUser = async (env, request) => {
 
   const sessionHash = await hashSessionToken(sessionToken, env.SESSION_SECRET);
   const row = await env.DB.prepare(
-    `SELECT s.id, s.expires_at, u.id AS user_id, u.email
+    `SELECT s.id, s.expires_at, u.id AS user_id, u.email, p.role, p.display_name
      FROM sessions s
      JOIN users u ON u.id = s.user_id
+     LEFT JOIN account_profiles p ON p.user_id = u.id
      WHERE s.id = ?
      LIMIT 1`
   )
@@ -300,6 +304,7 @@ const getSessionUser = async (env, request) => {
   return {
     id: String(row.user_id),
     email: String(row.email || ''),
+    ...profileFields(row),
   };
 };
 
@@ -378,6 +383,11 @@ const handleVerifyCode = async (request, env) => {
   const email = normalizeEmail(body.email);
   const mode = body.mode === 'register' ? 'register' : 'login';
   const code = String(body.code || '').trim();
+  const role = body.role || 'student';
+  const displayName = String(body.displayName || email.split('@')[0]).trim();
+  if (mode === 'register' && (!['student', 'teacher'].includes(role) || !displayName || displayName.length > 40)) {
+    return errorJson('请选择学生或老师身份，姓名不能超过 40 字。', 400, 'INVALID_PROFILE');
+  }
 
   if (!EMAIL_REGEX.test(email)) {
     return errorJson('请输入有效邮箱地址。', 400, 'INVALID_EMAIL');
@@ -430,6 +440,9 @@ const handleVerifyCode = async (request, env) => {
       .run();
 
     user = await getUserByEmail(env, email);
+    await env.DB.prepare(`INSERT INTO account_profiles (user_id, role, display_name, created_at, updated_at)
+      VALUES (?, ?, ?, ?, ?)`).bind(user.id, role, displayName, loginAt, loginAt).run();
+    user = await getUserByEmail(env, email);
   }
 
   if (!user) {
@@ -451,6 +464,7 @@ const handleVerifyCode = async (request, env) => {
   const userPayload = {
     id: String(user.id),
     email: String(user.email || email),
+    ...profileFields(user),
   };
 
   const sessionPayload = buildClientSession(userPayload, sessionTtlSeconds);
@@ -611,6 +625,10 @@ const handlePutProgress = async (request, env) => {
 const handleApi = async (request, env) => {
   const url = new URL(request.url);
   const { pathname } = url;
+
+  if (pathname === '/api/classroom' || pathname.startsWith('/api/classroom/') || pathname === '/api/classes' || pathname.startsWith('/api/classes/')) {
+    return handleClassroomApi(request, env, await getSessionUser(env, request));
+  }
 
   if (request.method === 'POST' && pathname === '/api/auth/send-code') {
     return handleSendCode(request, env);
