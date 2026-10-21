@@ -56,7 +56,7 @@ function StudentRoster({ classroom, refreshKey, onSelectStudent, onChanged }) {
   };
   return (
     <section aria-label="班级学生" className="classroom-roster">
-      <div className="classroom-heading"><div><h3>学生学习进度</h3><p>共 {data?.total ?? classroom.studentCount} 位学生 · 点击学生查看单词记录</p></div>
+      <div className="classroom-heading"><div><h3>学生学习进度</h3><p>共 {data?.total ?? classroom.studentCount} 位学生 · 点击学生查看单词与阅读记录</p></div>
         <SecondaryButton disabled={loading} onClick={onChanged}>刷新进度</SecondaryButton>
       </div>
       {error && <div className="classroom-alert" role="alert">{error}<SecondaryButton onClick={() => setRetry((value) => value + 1)}>重试</SecondaryButton></div>}
@@ -64,15 +64,16 @@ function StudentRoster({ classroom, refreshKey, onSelectStudent, onChanged }) {
         <div className="classroom-empty"><img src="/images/ui-assets/category-all-words-blue-v1.png" alt="" /><h3>等待学生加入</h3><p>把班级邀请码发给学生，加入后即可在这里查看学习记录。</p></div>
       ) : !error && (
         <>
-          <div className="classroom-roster-labels" aria-hidden="true"><span>学生</span><span>今日学习</span><span>已学习</span><span>已掌握</span><span>最近同步</span><span /></div>
+          <div className="classroom-roster-labels" aria-hidden="true"><span>学生</span><span>今日练词</span><span>已学习</span><span>已掌握</span><span>今日阅读</span><span>最近同步</span><span /></div>
           <ul className="classroom-student-list">
             {data?.students.map((student) => (
               <li key={student.id}>
                 <button type="button" className="classroom-student-row" onClick={() => onSelectStudent(student)} aria-label={`查看${student.displayName}的学习记录`}>
                   <span className="classroom-student-name"><strong>{student.displayName}</strong><small>{student.email}</small></span>
-                  <span data-label="今日学习">{student.todayStudied} 次</span>
+                  <span data-label="今日练词">{student.todayStudied} 次</span>
                   <span data-label="已学习">{student.learnedCount} 词</span>
                   <span data-label="已掌握">{student.masteredCount} 词</span>
+                  <span data-label="今日阅读">{student.todayReadingsCompleted ?? 0} 篇<small className="classroom-reading-meta">{student.todayReadingQuestionsAnswered ?? 0} 题已答</small></span>
                   <span data-label="最近同步">{formatClassroomDate(student.lastSyncedAt)}</span>
                 </button>
                 <button type="button" className="classroom-text-button" disabled={busy} onClick={() => remove(student)} aria-label={`移除${student.displayName}`}>移除</button>
@@ -170,7 +171,7 @@ export default function ClassroomView({ user, navItems, topbarProps, onAuthOpen,
 
             {profile?.profileConfigured && !teacher && (
               <>
-                <BaseCard className="classroom-panel"><div className="classroom-heading"><div><h2>加入老师的班级</h2><p>加入后，该班老师可以查看你已同步的学习进度、单词和复习状态；退出后停止共享。</p></div></div>
+                <BaseCard className="classroom-panel"><div className="classroom-heading"><div><h2>加入老师的班级</h2><p>加入后，该班老师可以查看你已同步的单词与复习状态、阅读完成记录及答题成绩；退出后停止共享。</p></div></div>
                   <form className="classroom-inline-form" onSubmit={(event) => { event.preventDefault(); perform(async () => { await joinClassroom(inviteCode); setInviteCode(''); try { await onSync?.(); } catch { return { notice: '已加入班级，进度暂未同步，请稍后点击同步学习进度。' }; } }, '已加入班级。老师可以查看你的云端学习记录。'); }}>
                     <label className="classroom-field">班级邀请码<input className="classroom-input classroom-code-input" placeholder="输入老师的 10 位邀请码" value={inviteCode} onChange={(event) => setInviteCode(event.target.value.toUpperCase().replace(/\s/g, ''))} required maxLength={10} pattern="[A-HJ-NP-Z2-9]{10}" /></label>
                     <PrimaryButton type="submit" disabled={busy || inviteCode.length !== 10}>加入班级</PrimaryButton>

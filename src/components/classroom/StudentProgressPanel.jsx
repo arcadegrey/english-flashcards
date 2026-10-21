@@ -5,6 +5,7 @@ import { LinearProgress } from '../ui/Progress';
 import { loadStudentProgress } from '../../utils/classroomApi';
 import { buildStudentWordRows, formatClassroomDate } from '../../utils/classroom';
 import { loadFullVocabulary } from '../../data/vocabulary';
+import StudentReadingProgress from './StudentReadingProgress';
 
 const FILTERS = [{ id: 'all', label: '全部记录' }, { id: 'learned', label: '已学习' }, { id: 'mastered', label: '已掌握' }, { id: 'wrong', label: '错词' }, { id: 'due', label: '待复习' }];
 
@@ -18,6 +19,7 @@ export default function StudentProgressPanel({ classId, student, onBack, initial
   const [filter, setFilter] = useState('all');
   const [search, setSearch] = useState('');
   const [page, setPage] = useState(1);
+  const [recordType, setRecordType] = useState('words');
   useEffect(() => {
     const controller = new AbortController();
     const load = async () => {
@@ -53,11 +55,16 @@ export default function StudentProgressPanel({ classId, student, onBack, initial
       {loading ? <p role="status" className="classroom-empty">正在读取学习记录…</p> : error ? <div role="alert" className="classroom-alert">{error}<SecondaryButton onClick={() => setRefresh((value) => value + 1)}>重试</SecondaryButton></div> : data && (
         <>
           <p className="classroom-helper">最近同步：{formatClassroomDate(data.updatedAt)}。学生尚未同步的本机学习不会显示。</p>
+          <div className="classroom-tabs classroom-record-tabs" role="group" aria-label="学习记录类型">
+            <button type="button" className={recordType === 'words' ? 'is-active' : ''} aria-pressed={recordType === 'words'} onClick={() => setRecordType('words')}>单词学习</button>
+            <button type="button" className={recordType === 'reading' ? 'is-active' : ''} aria-pressed={recordType === 'reading'} onClick={() => setRecordType('reading')}>阅读练习</button>
+          </div>
+          {recordType === 'reading' ? <StudentReadingProgress history={data.progress.studyHistory} /> : <>
           <div className="classroom-stat-grid">
             <StatCard value={data.student.learnedCount} label="已学习单词" iconSrc="/images/ui-assets/training-card-vocabulary-blue-v1.png" />
             <StatCard value={data.student.masteredCount} label="已掌握单词" iconSrc="/images/ui-assets/stat-star.png" />
             <StatCard value={rows.filter((row) => row.due).length} label="待复习单词" iconSrc="/images/ui-assets/training-card-review-blue-v1.png" />
-            <StatCard value={data.student.todayStudied} label="今日学习次数" iconSrc="/images/ui-assets/training-card-test-blue-v1.png" />
+            <StatCard value={data.student.todayStudied} label="今日练词次数" iconSrc="/images/ui-assets/training-card-test-blue-v1.png" />
           </div>
           <div className="classroom-mastery"><span>已记录词汇的掌握率</span><strong>{mastery}%</strong><LinearProgress value={mastery} /></div>
           {wordError && <p role="status" className="classroom-helper">{wordError}</p>}
@@ -71,6 +78,7 @@ export default function StudentProgressPanel({ classId, student, onBack, initial
             <div className="classroom-word-dates"><span>最近学习：{row.lastReviewed ? formatClassroomDate(row.lastReviewed) : '暂无记录'}</span><span>下次复习：{row.nextReview ? formatClassroomDate(row.nextReview) : '待安排'}</span></div>
           </li>)}</ul> : <div className="classroom-empty"><h3>{rows.length ? '没有符合条件的单词' : '暂无已同步的单词'}</h3><p>{rows.length ? '试试其他状态或关键词。' : '学生完成学习并同步后，记录会显示在这里。'}</p></div>}
           {pageCount > 1 && <div className="classroom-pagination"><SecondaryButton disabled={currentPage <= 1} onClick={() => setPage(currentPage - 1)}>上一页</SecondaryButton><span>第 {currentPage} / {pageCount} 页</span><SecondaryButton disabled={currentPage >= pageCount} onClick={() => setPage(currentPage + 1)}>下一页</SecondaryButton></div>}
+          </>}
         </>
       )}
     </section>

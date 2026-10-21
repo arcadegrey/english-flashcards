@@ -1,3 +1,4 @@
+import { normalizeStudyHistory, mergeStudyHistory } from '../shared/studyHistory.js';
 import { handleClassroomApi, profileFields } from './classroom.js';
 
 const COOKIE_NAME = 'ef_session';
@@ -110,11 +111,6 @@ const normalizeCustomWords = (value) => {
 
 const normalizeRecord = (value) => (value && typeof value === 'object' && !Array.isArray(value) ? value : {});
 
-const normalizeStudyHistory = (value) => {
-  const list = Array.isArray(value) ? value : [];
-  return list.filter((item) => item && typeof item === 'object' && String(item.date || '').trim());
-};
-
 const countFilledFields = (word) => {
   if (!word || typeof word !== 'object') return 0;
   const keys = ['phonetic', 'pos', 'meaning', 'example', 'exampleCn', 'category', 'level', 'list'];
@@ -154,25 +150,6 @@ const normalizeProgress = (progress) => ({
   wrongWords: normalizeIdArray(progress?.wrongWords),
   studyHistory: normalizeStudyHistory(progress?.studyHistory),
 });
-
-const mergeStudyHistory = (baseList, incomingList) => {
-  const map = new Map();
-  [...normalizeStudyHistory(baseList), ...normalizeStudyHistory(incomingList)].forEach((item) => {
-    const date = String(item.date || '').trim();
-    if (!date) return;
-    const current = map.get(date) || { date, wordsLearned: 0, wordsMastered: 0, timeSpent: 0 };
-    map.set(date, {
-      date,
-      wordsLearned: Math.max(Number(current.wordsLearned || 0), Number(item.wordsLearned || 0)),
-      wordsMastered: Math.max(Number(current.wordsMastered || 0), Number(item.wordsMastered || 0)),
-      timeSpent: Math.max(Number(current.timeSpent || 0), Number(item.timeSpent || 0)),
-    });
-  });
-
-  return Array.from(map.values())
-    .sort((a, b) => String(a.date).localeCompare(String(b.date)))
-    .slice(-90);
-};
 
 export const mergeProgress = (baseProgress, incomingProgress) => {
   const base = normalizeProgress(baseProgress);

@@ -1,3 +1,5 @@
+import { summarizeStudyHistory } from '../../shared/studyHistory.js';
+
 export const getAccountRoleLabel = (user) => user?.profileConfigured
   ? user.role === 'teacher' ? '老师' : '学生' : '学习者';
 
@@ -32,4 +34,30 @@ export const buildStudentWordRows = (progress = {}, vocabulary = [], now = new D
       lastReviewed: schedule.lastReviewed || '', nextReview: schedule.nextReview || '',
     };
   });
+};
+
+export const buildStudentReadingOverview = (history = [], articles = [], now = new Date()) => {
+  const summary = summarizeStudyHistory(history, now);
+  const lookup = new Map(articles.map((article) => [String(article.id), article]));
+  const rows = summary.history.flatMap((day) => {
+    const results = new Map(day.readingArticleResults.map((result) => [result.articleId, result]));
+    return day.readingArticleIds.map((articleId) => {
+      const article = lookup.get(articleId);
+      const result = results.get(articleId);
+      const answered = result?.questionsAnswered || 0;
+      return {
+        id: `${day.date}:${articleId}`, articleId,
+        title: article?.title || `文章 #${articleId}`,
+        level: article?.level || '', examType: article?.examType || '',
+        completedAt: result?.completedAt || day.date,
+        questionsAnswered: answered, questionsCorrect: result?.questionsCorrect || 0,
+        accuracy: answered ? Math.round(result.questionsCorrect / answered * 100) : null,
+        hasResult: Boolean(result),
+      };
+    });
+  }).sort((a, b) => b.completedAt.localeCompare(a.completedAt) || a.articleId.localeCompare(b.articleId));
+  return { ...summary, rows,
+    accuracy: summary.totals.readingQuestionsAnswered
+      ? Math.round(summary.totals.readingQuestionsCorrect / summary.totals.readingQuestionsAnswered * 100) : null,
+  };
 };

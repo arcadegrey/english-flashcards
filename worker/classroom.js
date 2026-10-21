@@ -1,3 +1,5 @@
+import { summarizeStudyHistory } from '../shared/studyHistory.js';
+
 const json = (body, status = 200) => new Response(JSON.stringify(body), {
   status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
 });
@@ -21,9 +23,7 @@ export const profileFields = (row) => ({
 
 const summary = (row) => {
   const mastered = new Set(ids(array(row.mastered_words)));
-  const history = array(row.study_history);
-  const today = new Date().toISOString().slice(0, 10);
-  const todayRecord = history.find((item) => item.date === today);
+  const { today, totals } = summarizeStudyHistory(array(row.study_history));
   return {
     id: String(row.student_id || row.user_id || row.id), email: row.email,
     displayName: row.display_name || row.email?.split('@')[0] || '学生',
@@ -31,7 +31,13 @@ const summary = (row) => {
     learnedCount: ids(array(row.learned_words)).filter((id) => !mastered.has(id)).length,
     masteredCount: mastered.size,
     wrongCount: ids(array(row.wrong_words)).filter((id) => !mastered.has(id)).length,
-    todayStudied: Number(todayRecord?.wordsLearned || 0) + Number(todayRecord?.wordsMastered || 0),
+    todayStudied: today.wordsLearned + today.wordsMastered,
+    todayReadingsCompleted: today.readingsCompleted,
+    todayReadingQuestionsAnswered: today.readingQuestionsAnswered,
+    todayReadingQuestionsCorrect: today.readingQuestionsCorrect,
+    readingsCompleted: totals.readingsCompleted,
+    readingQuestionsAnswered: totals.readingQuestionsAnswered,
+    readingQuestionsCorrect: totals.readingQuestionsCorrect,
     lastSyncedAt: row.updated_at || '',
   };
 };

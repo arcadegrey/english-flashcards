@@ -39,10 +39,10 @@
 .classroom-memberships li:last-child { border-bottom: 0; }
 .classroom-memberships h3 { margin: 0; font-size: 18px; }
 .classroom-roster { padding-top: 20px; border-top: 1px solid rgba(126,166,255,.16); }
-.classroom-roster-labels { display: grid; grid-template-columns: minmax(180px,2fr) repeat(3,minmax(65px,.6fr)) minmax(120px,1.2fr) 50px; gap: 12px; padding: 12px 16px; color: var(--ds-muted); font-size: 12px; background: #f7faff; border-radius: 12px; }
+.classroom-roster-labels { display: grid; grid-template-columns: minmax(140px,1.5fr) repeat(3,minmax(60px,.55fr)) minmax(90px,.8fr) minmax(110px,1fr) 50px; gap: 12px; padding: 12px 16px; color: var(--ds-muted); font-size: 12px; background: #f7faff; border-radius: 12px; }
 .classroom-student-list li { display: flex; align-items: center; gap: 12px; border-bottom: 1px solid rgba(126,166,255,.14); }
 .classroom-student-list li:last-child { border-bottom: 0; }
-.classroom-student-row { flex: 1; min-width: 0; display: grid; grid-template-columns: minmax(180px,2fr) repeat(3,minmax(65px,.6fr)) minmax(120px,1.2fr); align-items: center; gap: 12px; padding: 20px 16px; background: transparent; border: 0; text-align: left; color: var(--ds-text); font-size: 14px; cursor: pointer; border-radius: 12px; transition: background 150ms ease; }
+.classroom-student-row { flex: 1; min-width: 0; display: grid; grid-template-columns: minmax(140px,1.5fr) repeat(3,minmax(60px,.55fr)) minmax(90px,.8fr) minmax(110px,1fr); align-items: center; gap: 12px; padding: 20px 16px; background: transparent; border: 0; text-align: left; color: var(--ds-text); font-size: 14px; cursor: pointer; border-radius: 12px; transition: background 150ms ease; }
 .classroom-student-row:hover { background: #f2f7ff; }
 .classroom-student-name { display: grid; gap: 6px; min-width: 0; }
 .classroom-student-name small { color: var(--ds-muted); overflow-wrap: anywhere; }
@@ -76,6 +76,20 @@
 .classroom-badge.is-mastered { color: #18845a; background: #edfaf2; }
 .classroom-badge.is-wrong { color: #9a6400; background: #fff5e4; }
 .classroom-word-dates { display: grid; gap: 8px; color: var(--ds-muted); font-size: 12px; line-height: 1.5; }
+.classroom-reading-meta { display: block; margin-top: 4px; color: var(--ds-muted); font-size: 12px; }
+.classroom-record-tabs { margin-top: 20px; }
+.classroom-reading-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin: 24px 0 8px; }
+.classroom-reading-heading h3 { margin: 0; font-size: 18px; color: var(--ds-text); }
+.classroom-reading-list { list-style: none; margin: 16px 0 0; padding: 0; }
+.classroom-reading-list li { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 24px; padding: 20px 0; border-bottom: 1px solid rgba(126,166,255,.16); }
+.classroom-reading-list li:last-child { border-bottom: 0; }
+.classroom-reading-article { min-width: 0; }
+.classroom-reading-article > strong { display: block; color: var(--ds-text); font-size: 16px; font-weight: 650; line-height: 1.6; overflow-wrap: anywhere; }
+.classroom-reading-tags { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.classroom-reading-tags time { color: var(--ds-muted); font-size: 12px; }
+.classroom-reading-score { display: grid; gap: 4px; text-align: right; }
+.classroom-reading-score strong { color: #2f6dff; font-size: 20px; font-variant-numeric: tabular-nums; }
+.classroom-reading-score span { color: var(--ds-muted); font-size: 12px; }
 @media (max-width: 1200px) {
   .classroom-stat-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .classroom-roster-labels { display: none; }
@@ -85,6 +99,9 @@
   .classroom-student-row > span:last-child { grid-column: span 2; }
 }
 @media (max-width: 700px) {
+  .classroom-reading-list li { grid-template-columns: minmax(0,1fr); gap: 12px; }
+  .classroom-reading-score { display: flex; align-items: baseline; gap: 12px; text-align: left; }
+
   .classroom-panel { padding: 20px 16px; }
   .classroom-heading { flex-direction: column; gap: 16px; }
   .classroom-heading h2 { font-size: 21px; }

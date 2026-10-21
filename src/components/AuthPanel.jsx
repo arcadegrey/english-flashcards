@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import AccountRoleChoice from './AccountRoleChoice';
 import { getAccountRoleLabel } from '../utils/classroom';
+import { IconButton, PrimaryButton, SecondaryButton } from './ui/Buttons';
 
 const normalizeError = (error) => {
   if (!error) return '操作失败，请重试。';
@@ -50,10 +51,21 @@ function AuthPanel({
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
+  const [syncRequestError, setSyncRequestError] = useState('');
   const [role, setRole] = useState('student');
   const [displayName, setDisplayName] = useState('');
 
   const isLoggedIn = Boolean(user?.id);
+  const accountName = user?.displayName || user?.email?.split('@')[0] || '学习者';
+  const classroomTitle = user?.profileConfigured
+    ? user.role === 'teacher' ? '教学班级' : '我的班级'
+    : '设置师生身份';
+  const visibleSyncError = (syncStatusText === '同步中' ? syncRequestError : '') || syncError;
+  const isSynced = !visibleSyncError && syncStatusText.startsWith('已同步');
+  const isSyncing = syncStatusText === '同步中' && !visibleSyncError;
+  const hasSyncFailure = syncStatusText === '同步失败' || (visibleSyncError && syncStatusText !== '待同步');
+  const syncTone = hasSyncFailure
+    ? 'error' : isSynced ? 'success' : 'pending';
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -90,12 +102,13 @@ function AuthPanel({
     if (!onSyncNow) return;
     setBusy(true);
     setError('');
+    setSyncRequestError('');
     setMessage('');
     try {
       const result = await onSyncNow();
       setMessage(result?.message || '同步完成。');
     } catch (syncNowError) {
-      setError(normalizeError(syncNowError?.message || syncNowError));
+      setSyncRequestError(normalizeError(syncNowError?.message || syncNowError));
     } finally {
       setBusy(false);
     }
@@ -143,8 +156,23 @@ function AuthPanel({
     <section className="auth-panel">
       <AuthHeader
         onClose={onClose}
-        subtitle={isLoggedIn ? `已登录：${user.email}` : '登录后自动同步学习进度（跨更新保留）'}
+        title={isLoggedIn ? '我的账号' : '欢迎回来'}
+        subtitle={isLoggedIn ? '管理个人资料与学习进度' : '登录或注册，在不同设备间继续学习'}
       />
+
+      {isLoggedIn && (
+        <div className="auth-identity">
+          <span className="auth-avatar" aria-hidden="true">Aa</span>
+          <div className="auth-identity-details">
+            <div className="auth-identity-heading">
+              <h3>{accountName}</h3>
+              <span className="auth-role-badge">{getAccountRoleLabel(user)}</span>
+              <span className="auth-session-status">已登录</span>
+            </div>
+            <p className="auth-account-email">{user.email}</p>
+          </div>
+        </div>
+      )}
 
       <div className="auth-stat-grid">
         <AuthStatCard
@@ -173,36 +201,46 @@ function AuthPanel({
       </div>
 
         {isLoggedIn ? (
-          <div className="auth-logged-in">
-            <div className="classroom-account-entry">
-              <div><strong>{getAccountRoleLabel(user)} · {user.displayName || user.email.split('@')[0]}</strong>
+          <div className="auth-account-content">
+            <div className="auth-classroom-entry">
+              <div className="auth-classroom-copy">
+                <h3>{classroomTitle}</h3>
                 <p>{user.profileConfigured ? user.role === 'teacher' ? '创建班级，查看学生的学习记录。' : '使用老师的邀请码加入班级。' : '先设置师生身份，开始使用班级功能。'}</p>
+                <PrimaryButton className="auth-primary-button auth-classroom-button" onClick={onOpenClassroom}>
+                  {user.profileConfigured ? `进入${classroomTitle}` : classroomTitle}
+                  <AuthIcon name="arrow" />
+                </PrimaryButton>
               </div>
-              <button type="button" className="auth-primary-button" onClick={onOpenClassroom}>
-                {user.profileConfigured ? user.role === 'teacher' ? '教学班级' : '我的班级' : '设置师生身份'}
-              </button>
+              <img className="auth-classroom-art" src="/images/ui-assets/category-all-words-blue-v1.png" alt="" width="512" height="512" />
             </div>
-            <p>
-              同步状态：<strong>{syncStatusText || '就绪'}</strong>
-            </p>
-            {syncError && <p className="auth-error">{syncError}</p>}
-            <div className="auth-action-grid">
-              <button
-                type="button"
-                disabled={busy}
-                onClick={handleSyncNow}
-                className="auth-secondary-button"
-              >
-                立即同步
-              </button>
+            <div className={`auth-sync-section is-${syncTone}`}>
+              <div className="auth-sync-row">
+                <span className="auth-sync-icon" aria-hidden="true"><AuthIcon name="cloud" /></span>
+                <div className="auth-sync-copy" role="status" aria-live="polite">
+                  <h3>{hasSyncFailure ? '学习进度同步失败' : isSynced ? '学习进度已同步' : `学习进度${syncStatusText || '已连接'}`}</h3>
+                  <p>{isSynced ? `最近同步：${syncStatusText.slice(3).trim()}` : isSyncing ? '正在同步，请稍候' : '同步学习记录，在不同设备间继续学习'}</p>
+                </div>
+                <SecondaryButton
+                  disabled={busy || isSyncing}
+                  onClick={handleSyncNow}
+                  className="auth-secondary-button"
+                >
+                  {isSyncing ? '同步中…' : '立即同步'}
+                </SecondaryButton>
+              </div>
+              {visibleSyncError && <p className={hasSyncFailure ? 'auth-error' : 'auth-sync-notice'} role={hasSyncFailure ? 'alert' : 'status'}>{visibleSyncError}</p>}
+            </div>
+            <div className="auth-account-footer">
               <button
                 type="button"
                 disabled={busy}
                 onClick={handleLogout}
-                className="auth-secondary-button"
+                className="auth-logout-button"
               >
+                <AuthIcon name="logout" />
                 退出登录
               </button>
+              <span className="auth-storage-note"><AuthIcon name="shield" />{isSynced ? '学习记录已保存至云端' : '学习记录保留在当前设备'}</span>
             </div>
           </div>
         ) : (
@@ -243,6 +281,8 @@ function AuthPanel({
               </span>
               <input
                 type="email"
+                aria-label="邮箱地址"
+                autoComplete="email"
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
                 placeholder="请输入邮箱"
@@ -258,13 +298,15 @@ function AuthPanel({
               </span>
               <input
                 type="text"
+                aria-label="验证码"
+                autoComplete="one-time-code"
                 value={verificationCode}
                 onChange={(event) => setVerificationCode(event.target.value)}
-                placeholder={mode === 'register' ? '请输入注册验证码（可留空先发送）' : '请输入登录验证码（可留空先发送）'}
+                placeholder="请输入验证码（首次可留空）"
               />
             </label>
 
-            <button
+            <PrimaryButton
               type="submit"
               disabled={busy}
               className="auth-primary-button"
@@ -282,7 +324,7 @@ function AuthPanel({
                   : mode === 'register'
                     ? '发送注册验证码'
                     : '发送登录验证码'}
-            </button>
+            </PrimaryButton>
 
             <p className="auth-form-hint">
               <span aria-hidden="true">i</span>
@@ -293,29 +335,39 @@ function AuthPanel({
           </form>
         )}
 
-      {error && <p className="auth-error">{error}</p>}
-      {message && <p className="auth-message">{message}</p>}
+      {error && <p className="auth-error" role="alert">{error}</p>}
+      {message && !isLoggedIn && <p className="auth-message" role="status">{message}</p>}
     </section>
   );
 }
 
-function AuthHeader({ onClose, subtitle = '登录后自动同步学习进度（跨更新保留）' }) {
+function AuthHeader({ onClose, title = '账号与云同步', subtitle = '登录后自动同步学习进度（跨更新保留）' }) {
   return (
     <header className="auth-panel-header">
       <div>
-        <h2>登录信息</h2>
+        <h2>{title}</h2>
         <p>{subtitle}</p>
       </div>
       {onClose ? (
-        <button type="button" className="auth-close-button" onClick={onClose} aria-label="关闭登录弹窗">
+        <IconButton className="auth-close-button" onClick={onClose} label="关闭登录弹窗">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M6 6l12 12" />
             <path d="M18 6 6 18" />
           </svg>
-        </button>
+        </IconButton>
       ) : null}
     </header>
   );
+}
+
+function AuthIcon({ name }) {
+  const paths = {
+    arrow: <path d="M4 12h15m-6-6 6 6-6 6" />,
+    cloud: <><path d="M6 18a4.5 4.5 0 0 1-1-8.9 7 7 0 0 1 13.5-1.4A5.2 5.2 0 0 1 18 18H6Z" /><path d="m9 12 2 2 4-4" /></>,
+    shield: <><path d="m12 3 7 3v5c0 4.4-2.8 7.8-7 10-4.2-2.2-7-5.6-7-10V6l7-3Z" /><path d="m9 12 2 2 4-4" /></>,
+    logout: <><path d="M9 4H5v16h4M10 12h10m-4-4 4 4-4 4" /></>,
+  };
+  return <svg viewBox="0 0 24 24" aria-hidden="true">{paths[name]}</svg>;
 }
 
 function AuthStatCard({ tone, icon, label, value }) {

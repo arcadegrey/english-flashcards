@@ -60,7 +60,7 @@ test('mergeProgress merges study history by day with max counters', () => {
     }
   )
 
-  assert.deepEqual(merged.studyHistory, [
+  assert.deepEqual(merged.studyHistory.map(({ date, wordsLearned, wordsMastered, timeSpent }) => ({ date, wordsLearned, wordsMastered, timeSpent })), [
     { date: '2026-05-06', wordsLearned: 3, wordsMastered: 1, timeSpent: 10 },
     { date: '2026-05-07', wordsLearned: 1, wordsMastered: 0, timeSpent: 5 },
     { date: '2026-05-08', wordsLearned: 1, wordsMastered: 1, timeSpent: 6 },

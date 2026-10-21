@@ -1,3 +1,4 @@
+import { normalizeStudyHistoryItem, normalizeStudyHistory, mergeStudyHistory } from '../shared/studyHistory.js'
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react'
 import { ThemeProvider } from './context/ThemeContext'
 import { useTheme } from './context/theme-context'
@@ -168,45 +169,6 @@ const uniqueStringList = (value) => {
   return output
 }
 
-const normalizeStudyHistoryItem = (item) => {
-  const date = String(item?.date || '').trim()
-  if (!date) return null
-  const readingArticleIds = uniqueStringList(item?.readingArticleIds)
-  const readingArticleResults = (Array.isArray(item?.readingArticleResults) ? item.readingArticleResults : [])
-    .map((result) => {
-      const articleId = String(result?.articleId || '').trim()
-      if (!articleId) return null
-      return {
-        articleId,
-        questionsAnswered: toNumber(result?.questionsAnswered),
-        questionsCorrect: toNumber(result?.questionsCorrect),
-        completedAt: String(result?.completedAt || date).trim() || date,
-      }
-    })
-    .filter(Boolean)
-
-  return {
-    date,
-    wordsLearned: toNumber(item?.wordsLearned),
-    wordsMastered: toNumber(item?.wordsMastered),
-    timeSpent: toNumber(item?.timeSpent),
-    readingsCompleted: Math.max(toNumber(item?.readingsCompleted), readingArticleIds.length),
-    readingQuestionsAnswered: toNumber(item?.readingQuestionsAnswered),
-    readingQuestionsCorrect: toNumber(item?.readingQuestionsCorrect),
-    examQuestionsAnswered: toNumber(item?.examQuestionsAnswered),
-    examQuestionsCorrect: toNumber(item?.examQuestionsCorrect),
-    readingArticleIds,
-    readingArticleResults,
-  }
-}
-
-const normalizeStudyHistory = (value) => {
-  const safeList = Array.isArray(value) ? value : []
-  return safeList
-    .map(normalizeStudyHistoryItem)
-    .filter(Boolean)
-}
-
 const normalizePreferences = (value) => {
   const dailyNewWordTarget = Number(value?.dailyNewWordTarget)
   return {
@@ -214,45 +176,6 @@ const normalizePreferences = (value) => {
       ? { dailyNewWordTarget }
       : {}),
   }
-}
-
-const mergeStudyHistory = (baseList, extraList) => {
-  const map = new Map()
-  ;[...normalizeStudyHistory(baseList), ...normalizeStudyHistory(extraList)].forEach((item) => {
-    const date = String(item.date || '').trim()
-    if (!date) return
-    const current = map.get(date) || normalizeStudyHistoryItem({ date })
-    const readingArticleIds = uniqueStringList([
-      ...(current.readingArticleIds || []),
-      ...(item.readingArticleIds || []),
-    ])
-    const articleResultMap = new Map()
-    ;[...(current.readingArticleResults || []), ...(item.readingArticleResults || [])].forEach((result) => {
-      const key = String(result?.articleId || '').trim()
-      if (!key) return
-      const currentResult = articleResultMap.get(key)
-      if (!currentResult || String(result.completedAt || '') >= String(currentResult.completedAt || '')) {
-        articleResultMap.set(key, result)
-      }
-    })
-    map.set(date, {
-      date,
-      wordsLearned: Math.max(toNumber(current.wordsLearned), toNumber(item.wordsLearned)),
-      wordsMastered: Math.max(toNumber(current.wordsMastered), toNumber(item.wordsMastered)),
-      timeSpent: Math.max(toNumber(current.timeSpent), toNumber(item.timeSpent)),
-      readingsCompleted: Math.max(toNumber(current.readingsCompleted), toNumber(item.readingsCompleted), readingArticleIds.length),
-      readingQuestionsAnswered: Math.max(toNumber(current.readingQuestionsAnswered), toNumber(item.readingQuestionsAnswered)),
-      readingQuestionsCorrect: Math.max(toNumber(current.readingQuestionsCorrect), toNumber(item.readingQuestionsCorrect)),
-      examQuestionsAnswered: Math.max(toNumber(current.examQuestionsAnswered), toNumber(item.examQuestionsAnswered)),
-      examQuestionsCorrect: Math.max(toNumber(current.examQuestionsCorrect), toNumber(item.examQuestionsCorrect)),
-      readingArticleIds,
-      readingArticleResults: Array.from(articleResultMap.values()),
-    })
-  })
-
-  return Array.from(map.values())
-    .sort((a, b) => String(a.date).localeCompare(String(b.date)))
-    .slice(-90)
 }
 
 const normalizeProgressState = (progress) => {
@@ -532,10 +455,50 @@ function AppContent() {
   const lastSyncedProgressRef = useRef('')
   const progressDirtyRef = useRef(false)
   const [showAuthModal, setShowAuthModal] = useState(false)
+  const authModalRef = useRef(null)
   const [showVoiceSettings, setShowVoiceSettings] = useState(false)
   const [homeAccountNotice, setHomeAccountNotice] = useState(null)
   const [authTransition, setAuthTransition] = useState(null)
   const homeNoticeTimerRef = useRef(null)
+
+  useEffect(() => {
+    if (!showAuthModal) return undefined
+    const previousFocus = document.activeElement
+    const previousOverflow = document.body.style.overflow
+    const modal = authModalRef.current
+    const getFocusable = () => [...modal.querySelectorAll('button:not(:disabled), input:not(:disabled)')]
+      .filter((element) => element.getClientRects().length > 0)
+
+    document.body.style.overflow = 'hidden'
+    getFocusable()[0]?.focus()
+
+    const handleModalKey = (event) => {
+      if (event.key === 'Escape') {
+        event.preventDefault()
+        setShowAuthModal(false)
+      }
+      if (event.key !== 'Tab') return
+      const focusable = getFocusable()
+      const first = focusable[0]
+      const last = focusable.at(-1)
+      if (!first) return
+      if (!modal.contains(document.activeElement) || (event.shiftKey && document.activeElement === first)) {
+        event.preventDefault()
+        const target = event.shiftKey ? last : first
+        target.focus()
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault()
+        first.focus()
+      }
+    }
+
+    document.addEventListener('keydown', handleModalKey)
+    return () => {
+      document.body.style.overflow = previousOverflow
+      document.removeEventListener('keydown', handleModalKey)
+      if (previousFocus?.isConnected) previousFocus.focus()
+    }
+  }, [showAuthModal])
 
   const allVocabulary = useMemo(() => [...vocabulary, ...customWords], [customWords, vocabulary])
   const vocabularyLookup = useMemo(() => buildWordLookup(allVocabulary), [allVocabulary])
@@ -2344,14 +2307,14 @@ function AppContent() {
     if (!showAuthModal) return null
 
     return (
-      <div className="fixed inset-0 z-[80] flex items-center justify-center p-4">
+      <div className="auth-modal-overlay fixed inset-0 z-[80] flex items-center justify-center">
         <button
           type="button"
           aria-label="关闭登录弹窗"
-          className="absolute inset-0 bg-black/30"
+          className="auth-modal-backdrop absolute inset-0"
           onClick={() => setShowAuthModal(false)}
         />
-        <div className="auth-modal-card">
+        <div ref={authModalRef} className="auth-modal-card" role="dialog" aria-modal="true" aria-label="账号与云同步">
           <AuthPanel
             enabled={cloudEnabled}
             loading={authLoading}

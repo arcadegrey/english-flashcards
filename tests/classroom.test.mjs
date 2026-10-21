@@ -152,3 +152,31 @@ test('roster pagination counts all enrolled students and exposes only the reques
   assert.equal(second.body.students[0].learnedCount, 0)
   f.sqlite.close()
 })
+
+test('reading records survive SQL sync conflicts and appear in the owning teacher roster and details', async () => {
+  const f = await setup()
+  try {
+    const date = new Date().toISOString().slice(0, 10)
+    await f.api(2, '/classes/join', 'POST', { inviteCode: f.classroom.inviteCode })
+    const makeProgress = (articleId, correct) => ({ studyHistory: [{ date,
+      readingsCompleted: 1, readingQuestionsAnswered: 5, readingQuestionsCorrect: correct,
+      readingArticleIds: [articleId], readingArticleResults: [{ articleId, questionsAnswered: 5, questionsCorrect: correct, completedAt: date }],
+    }] })
+    assert.equal((await f.api(2, '/progress', 'PUT', { progress: makeProgress('13', 4) })).status, 200)
+    const conflict = await f.api(2, '/progress', 'PUT', { baseUpdatedAt: 'stale-version', progress: makeProgress('14', 3) })
+    assert.equal(conflict.body.conflictResolved, true)
+    await f.api(2, '/progress', 'PUT', { baseUpdatedAt: 'stale-version', progress: makeProgress('14', 3) })
+    const roster = await f.api(1, `/classes/${f.classroom.id}/students`)
+    const student = roster.body.students[0]
+    assert.equal(student.todayStudied, 0)
+    assert.equal(student.todayReadingsCompleted, 2)
+    assert.equal(student.todayReadingQuestionsAnswered, 10)
+    assert.equal(student.readingQuestionsCorrect, 7)
+    const detail = await f.api(1, `/classes/${f.classroom.id}/students/2/progress`)
+    assert.equal(detail.body.progress.studyHistory[0].readingArticleResults.length, 2)
+    assert.equal((await f.api(3, `/classes/${f.classroom.id}/students/2/progress`)).status, 404)
+    await f.api(2, `/classes/${f.classroom.id}/membership`, 'DELETE')
+    assert.equal((await f.api(1, `/classes/${f.classroom.id}/students/2/progress`)).status, 404)
+    assert.equal((await f.api(2, '/progress')).body.progress.studyHistory[0].readingsCompleted, 2)
+  } finally { f.sqlite.close() }
+})
