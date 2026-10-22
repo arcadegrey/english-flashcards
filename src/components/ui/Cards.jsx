@@ -80,7 +80,7 @@ export function ModuleCard({ title, meta, icon, iconSrc, art, artSrc, active = f
         </span>
       )}
       <h3>{title}</h3>
-      <p>{meta}</p>
+      {meta && <p>{meta}</p>}
       {artSrc ? (
         <img className="ds-module-art-image" src={artSrc} alt="" loading="lazy" aria-hidden="true" />
       ) : art ? (
