@@ -141,3 +141,13 @@ CREATE TABLE IF NOT EXISTS reading_attempts (
   PRIMARY KEY (user_id, id)
 );
 CREATE INDEX IF NOT EXISTS idx_reading_attempts_user_date ON reading_attempts(user_id, completed_at DESC);
+
+-- Additive P2 personal test history, independent of assignment grades and daily totals.
+CREATE TABLE IF NOT EXISTS exam_attempts (
+  user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  id TEXT NOT NULL,
+  attempt_json TEXT NOT NULL,
+  completed_at TEXT NOT NULL,
+  PRIMARY KEY (user_id, id)
+);
+CREATE INDEX IF NOT EXISTS idx_exam_attempts_user_date ON exam_attempts(user_id, completed_at DESC);

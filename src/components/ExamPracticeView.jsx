@@ -1,5 +1,6 @@
 import AppLayout from './layout/AppLayout';
 import QuickMenu from './QuickMenu';
+import ExamHistoryPanel from './assessment/ExamHistoryPanel';
 
 const EXAM_MODES = [
   {
@@ -232,6 +233,7 @@ function ExamPracticeView({
             ))}
           </div>
         </section>
+        <ExamHistoryPanel />
       </div>
     </AppLayout>
   );

@@ -2,8 +2,17 @@ export const WORD_ASSIGNMENT_CATEGORIES = {
   all: '全部单词', daily: '日常常用', cet4: '四级核心', cet6: '六级核心', toefl: '托福词汇', ielts: '雅思词汇',
 };
 
-export function selectAssignmentWords(catalog, { category, start, count }) {
+export function selectAssignmentWords(catalog, { category, start, count, wordIds }) {
   if (!Object.hasOwn(WORD_ASSIGNMENT_CATEGORIES, category)) throw new Error('请选择有效词库。');
+  if (wordIds !== undefined) {
+    if (!Array.isArray(wordIds) || wordIds.length < 5 || wordIds.length > 50
+      || wordIds.some(id => typeof id !== 'string' && typeof id !== 'number')
+      || new Set(wordIds.map(String)).size !== wordIds.length) throw new Error('请选择 5–50 个不同的词。');
+    const lookup = new Map(catalog.filter(word => category === 'all' || word.categories.includes(category)).map(word => [String(word.id), word]));
+    const selected = wordIds.map(id => lookup.get(String(id)));
+    if (selected.some(word => !word)) throw new Error('所选词汇不在当前词库中。');
+    return selected;
+  }
   if (!Number.isInteger(start) || start < 1 || !Number.isInteger(count) || count < 5 || count > 50) {
     throw new Error('起始序号至少为 1，每次布置 5–50 个词。');
   }

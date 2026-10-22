@@ -102,7 +102,7 @@ function Quiz({
       setStreak(0);
       onWrongAnswer?.(currentQuestion.id);
     }
-    onAnswer?.(correct);
+    onAnswer?.(correct, { wordId: currentQuestion.id, word: currentQuestion.word, meaning: currentQuestion.meaning, selectedWordId: word.id });
 
     if (nextQuestionTimer.current) {
       clearTimeout(nextQuestionTimer.current);

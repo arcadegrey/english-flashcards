@@ -1,0 +1,18 @@
+.study-momentum { padding: 24px 28px; min-width: 0; }
+.study-momentum-head { display: flex; justify-content: space-between; gap: 24px; align-items: center; margin-bottom: 20px; }
+.study-momentum-head > div { min-width: 0; }
+.study-momentum-label { font-size: 12px; color: #2f6dff; font-weight: 650; }
+.study-momentum-head h2 { font-size: 22px; color: #0f172a; margin: 8px 0; }
+.study-momentum-head p, .study-momentum-milestone { font-size: 14px; color: #64748b; line-height: 1.7; margin: 0; }
+.study-momentum-head img { width: 64px; height: 64px; object-fit: contain; flex: 0 0 auto; }
+.study-momentum-days { display: grid; grid-template-columns: repeat(7,minmax(0,1fr)); gap: 8px; list-style: none; margin: 20px 0; padding: 0; }
+.study-momentum-days li { display: grid; justify-items: center; gap: 8px; font-size: 12px; color: #64748b; }
+.study-momentum-days strong { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; color: #94a3b8; background: #f1f5fb; }
+.study-momentum-days .is-active strong { color: #fff; background: #4f7cff; }
+.study-momentum-days [aria-current=date] strong { outline: 2px solid #7ea6ff; outline-offset: 3px; }
+.study-momentum-milestone strong { color: #2f6dff; }
+.study-momentum-notice { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 16px; border-radius: 14px; padding: 14px 16px; background: #edf4ff; color: #2f6dff; font-size: 14px; animation: study-reward-in 320ms ease-out both; }
+.study-momentum-notice button { color: #64748b; padding: 6px 8px; font: inherit; border: 0; background: transparent; border-radius: 8px; cursor: pointer; flex: 0 0 auto; }
+@keyframes study-reward-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { .study-momentum-notice { animation: none; } }
+@media (max-width: 700px) { .study-momentum { padding: 20px 16px; } .study-momentum-head { gap: 12px; } .study-momentum-head h2 { font-size: 20px; } .study-momentum-head img { width: 48px; height: 48px; } }

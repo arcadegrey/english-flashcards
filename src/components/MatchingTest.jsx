@@ -97,6 +97,8 @@ function MatchingTest({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAn
     if (!wordId || matchedIdSet.has(String(wordId)) || matchedIdSet.has(String(meaningWord.id))) return;
 
     const correct = String(wordId) === String(meaningWord.id);
+    const answerWord = words.find(word => String(word.id) === String(wordId));
+    const answerDetail = { wordId, word: answerWord.word, meaning: answerWord.meaning, selectedWordId: meaningWord.id };
     setAttemptCount((prev) => prev + 1);
 
     if (correct) {
@@ -107,14 +109,14 @@ function MatchingTest({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAn
       setCelebrationTrigger((prev) => prev + 1);
       playSuccessChime();
       onCorrectAnswer?.(meaningWord.id);
-      onAnswer?.(true);
+      onAnswer?.(true, answerDetail);
       return;
     }
 
     setStreak(0);
     setWrongPair({ wordId, meaningId: meaningWord.id });
     onWrongAnswer?.(wordId);
-    onAnswer?.(false);
+    onAnswer?.(false, answerDetail);
 
     if (wrongPairTimerRef.current) {
       clearTimeout(wrongPairTimerRef.current);

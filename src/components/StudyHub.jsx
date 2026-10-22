@@ -4,6 +4,7 @@ import { HeroCard } from './ui/Cards'
 import { PlanStatusCards, StatsRow } from './modules/LearningModules'
 import { calculateStudyStreak } from '../utils/learningMetrics'
 import { getAccountRoleLabel } from '../utils/classroom'
+import StudyMomentum from './StudyMomentum'
 
 function StudyHub({
   onOpenWordStudy,
@@ -17,6 +18,7 @@ function StudyHub({
   onAuthOpen,
   onStartAssignment,
   authUser = null,
+  rewardsReady = true,
   syncStatusText = '',
   accountNotice = null,
   readingCount = 0,
@@ -209,6 +211,7 @@ function StudyHub({
         />
 
         <StatsRow streak={streak} target={newWordTarget} remaining={remainingWordCount} />
+        <StudyMomentum ownerId={authUser?.id} history={studyHistory} wordsDone={newWordProgress >= newWordTarget} readingDone={readingTaskComplete} examDone={examTaskComplete} allDone={allDailyTasksComplete} ready={rewardsReady} />
 
         {allDailyTasksComplete && (
           <section className="study-hub-completion-summary" aria-label="今日任务总结">

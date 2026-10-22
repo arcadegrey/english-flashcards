@@ -6,6 +6,7 @@ import { loadStudentProgress } from '../../utils/classroomApi';
 import { buildStudentWordRows, formatClassroomDate } from '../../utils/classroom';
 import { loadFullVocabulary } from '../../data/vocabulary';
 import StudentReadingProgress from './StudentReadingProgress';
+import { ExamAttemptList } from '../assessment/ExamHistoryPanel';
 
 const FILTERS = [{ id: 'all', label: '全部记录' }, { id: 'learned', label: '已学习' }, { id: 'mastered', label: '已掌握' }, { id: 'wrong', label: '错词' }, { id: 'due', label: '待复习' }];
 
@@ -58,8 +59,9 @@ export default function StudentProgressPanel({ classId, student, onBack, initial
           <div className="classroom-tabs classroom-record-tabs" role="group" aria-label="学习记录类型">
             <button type="button" className={recordType === 'words' ? 'is-active' : ''} aria-pressed={recordType === 'words'} onClick={() => setRecordType('words')}>单词学习</button>
             <button type="button" className={recordType === 'reading' ? 'is-active' : ''} aria-pressed={recordType === 'reading'} onClick={() => setRecordType('reading')}>阅读练习</button>
+            <button type="button" className={recordType === 'exam' ? 'is-active' : ''} aria-pressed={recordType === 'exam'} onClick={() => setRecordType('exam')}>测试成绩</button>
           </div>
-          {recordType === 'reading' ? <StudentReadingProgress history={data.progress.studyHistory} /> : <>
+          {recordType === 'exam' ? <section aria-label="学生测试成绩"><p className="classroom-helper">最近 100 次已同步自主测试，允许提示与重试，用于学习反馈；班级作业的首次成绩请在作业提交情况中查看。</p><ExamAttemptList attempts={data.examAttempts || []} /></section> : recordType === 'reading' ? <StudentReadingProgress history={data.progress.studyHistory} /> : <>
           <div className="classroom-stat-grid">
             <StatCard value={data.student.learnedCount} label="已学习单词" iconSrc="/images/ui-assets/training-card-vocabulary-blue-v1.png" />
             <StatCard value={data.student.masteredCount} label="已掌握单词" iconSrc="/images/ui-assets/stat-star.png" />

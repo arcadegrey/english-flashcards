@@ -28,6 +28,7 @@ import ExamPracticeView from './components/ExamPracticeView'
 import PlanSettingsView from './components/PlanSettingsView'
 import AuthPanel from './components/AuthPanel'
 import ClassroomView from './components/ClassroomView'
+import ExamHistoryProvider from './context/ExamHistoryProvider'
 import { getAccountRoleLabel } from './utils/classroom'
 import VoiceSettings from './components/VoiceSettings'
 import { storage } from './utils/storage'
@@ -2590,6 +2591,8 @@ function AppContent() {
       case 'studyHub':
         return (
           <StudyHub
+            key={authUser?.id || 'guest'}
+            rewardsReady={!authLoading && localDataLoaded}
             onOpenWordStudy={handleStartPlanLearning}
             onStartAssignment={handleStartReadingAssignment}
             onOpenTraining={handleBackToHome}
@@ -2857,6 +2860,7 @@ function AppContent() {
       case 'learn':
         return (
           <LearningView
+            key={authUser?.id || 'guest'}
             mode={mode}
             setMode={setMode}
             allVocabulary={allVocabulary}
@@ -3021,7 +3025,7 @@ function AppContent() {
   ) {
     return (
       <div className={`min-h-screen ${appBackground}`}>
-        {renderView()}
+        <ExamHistoryProvider key={authUser?.id || 'guest'} ownerId={authUser?.id}>{renderView()}</ExamHistoryProvider>
         {showVoiceSettings && <VoiceSettings onClose={() => setShowVoiceSettings(false)} />}
         {renderAuthModal()}
         {renderAuthTransitionOverlay()}
@@ -3031,7 +3035,7 @@ function AppContent() {
 
   return (
     <div className={`min-h-screen ${appBackground}`}>
-      {renderView()}
+      <ExamHistoryProvider key={authUser?.id || 'guest'} ownerId={authUser?.id}>{renderView()}</ExamHistoryProvider>
       {showVoiceSettings && <VoiceSettings onClose={() => setShowVoiceSettings(false)} />}
       {renderAuthModal()}
       {renderAuthTransitionOverlay()}

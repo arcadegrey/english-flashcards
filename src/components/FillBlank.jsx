@@ -150,7 +150,7 @@ function FillBlank({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswe
       setStreak(0);
       onWrongAnswer?.(currentQuestion.id);
     }
-    onAnswer?.(correct);
+    onAnswer?.(correct, { wordId: currentQuestion.id, word: currentQuestion.word, meaning: currentQuestion.meaning, selectedWordId: word.id });
 
     setQuestionCount((prev) => prev + 1);
 

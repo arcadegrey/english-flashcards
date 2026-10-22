@@ -1,9 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import WordCard from './WordCard';
-import Quiz from './Quiz';
-import FillBlank from './FillBlank';
-import SpellingTest from './SpellingTest';
-import MatchingTest from './MatchingTest';
+import AssessmentSession from './assessment/AssessmentSession';
 import QuickMenu from './QuickMenu';
 import AppLayout from './layout/AppLayout';
 import { appShellIcons } from './layout/icons';
@@ -77,9 +74,6 @@ function LearningView({
   const studyGoalTarget = hasDailyGoal ? dailyTarget : totalCount;
   const studyGoalCurrent = hasDailyGoal ? Math.min(todayWordsStudied, dailyTarget) : progressCurrent;
   const studyGoalPercent = hasDailyGoal ? Math.round((studyGoalCurrent / dailyTarget) * 100) : progressPercent;
-  const assessmentTotal = Math.min(Math.max(totalCount, 1), 20);
-  const assessmentCurrent = Math.min(Math.max(progressCurrent, 1), assessmentTotal);
-  const assessmentProgressPercent = Math.round((assessmentCurrent / assessmentTotal) * 100);
   const remainingCount = Math.max(totalCount - progressCurrent, 0);
   const learnedTotal = useMemo(() => getExamVocabulary(filteredVocabulary, { scope: 'learned', learnedWords }).length,
     [filteredVocabulary, learnedWords]);
@@ -408,9 +402,7 @@ function LearningView({
               <span>返回</span>
             </button>
 
-            <div className="assessment-question-count" aria-label={`第 ${assessmentCurrent} / ${assessmentTotal} 题`}>
-              第 <strong>{assessmentCurrent}</strong> / {assessmentTotal} 题
-            </div>
+            <div className="assessment-question-count">{currentModeMeta.label} · 每组 20 次</div>
 
             <div className="assessment-control-actions">
               <QuickMenu
@@ -422,48 +414,19 @@ function LearningView({
             </div>
           </div>
 
-          <div className="assessment-progress-row" aria-label={`测试进度 ${assessmentProgressPercent}%`}>
-            <div className="assessment-progress-track" aria-hidden="true">
-              <span style={{ width: `${assessmentProgressPercent}%` }} />
-            </div>
-            <strong>{assessmentProgressPercent}%</strong>
-          </div>
-
-          {mode === 'quiz' ? (
-            <Quiz
-              vocabulary={examVocabulary}
-              optionVocabulary={examOptionVocabulary}
-              sourceLabel={examSourceTitle}
-              masteredWords={masteredWords}
-              onAddMastered={onAddMastered}
-              onWrongAnswer={onWrongAnswer}
-              onAnswer={onAssessmentAnswer}
-            />
-          ) : mode === 'fillblank' ? (
-            <FillBlank
-              vocabulary={examVocabulary}
-              sourceLabel={examSourceTitle}
-              onWrongAnswer={onWrongAnswer}
-              onCorrectAnswer={onAddMastered}
-              onAnswer={onAssessmentAnswer}
-            />
-          ) : mode === 'spelling' ? (
-            <SpellingTest
-              vocabulary={examVocabulary}
-              sourceLabel={examSourceTitle}
-              onWrongAnswer={onWrongAnswer}
-              onCorrectAnswer={onAddMastered}
-              onAnswer={onAssessmentAnswer}
-            />
-          ) : mode === 'matching' ? (
-            <MatchingTest
-              vocabulary={examVocabulary}
-              sourceLabel={examSourceTitle}
-              onWrongAnswer={onWrongAnswer}
-              onCorrectAnswer={onAddMastered}
-              onAnswer={onAssessmentAnswer}
-            />
-          ) : null}
+          <AssessmentSession
+            key={`${mode}:${examCategory}:${examScope}`}
+            mode={mode}
+            category={examCategory}
+            scope={examScope}
+            vocabulary={examVocabulary}
+            optionVocabulary={examOptionVocabulary}
+            sourceLabel={examSourceTitle}
+            onAddMastered={onAddMastered}
+            onWrongAnswer={onWrongAnswer}
+            onAnswer={onAssessmentAnswer}
+            onBack={onBack}
+          />
         </section>
       </main>
 

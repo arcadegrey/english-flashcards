@@ -13,6 +13,7 @@ const call = async (path, options = {}) => {
 };
 
 export const loadClassroom = (signal, expectedUserId) => call('/classroom', { signal, expectedUserId });
+export const loadWeeklyReport = (classId, week, signal, expectedUserId) => call(`/classes/${encodeURIComponent(classId)}/weekly-report?week=${encodeURIComponent(week)}`, { signal, expectedUserId });
 export const saveClassroomProfile = (profile) => call('/classroom/profile', { method: 'POST', body: profile });
 export const createClassroom = (name) => call('/classes', { method: 'POST', body: { name } });
 export const joinClassroom = (inviteCode) => call('/classes/join', { method: 'POST', body: { inviteCode } });

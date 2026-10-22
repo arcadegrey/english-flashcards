@@ -80,7 +80,7 @@ function SpellingTest({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAn
       setStreak(0);
       onWrongAnswer?.(currentWord.id);
     }
-    onAnswer?.(correct);
+    onAnswer?.(correct, { wordId: currentWord.id, word: currentWord.word, meaning: currentWord.meaning, input: userInput });
 
     setQuestionCount((prev) => prev + 1);
   };

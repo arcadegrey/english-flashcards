@@ -93,12 +93,14 @@ Less common maintenance commands are listed in `docs/project-reference.md`.
 
 ## P1 Status
 
-- Production D1 migration completed and verified on 2026-10-21 for `english-flashcards`; P1 Worker/frontend deployment remains pending. Audit: `docs/d1-p1-deployment.md`.
+- Production D1 migration completed and verified on 2026-10-21 for `english-flashcards`. On 2026-10-22 the user confirmed pushing the release; public site assets contain P1 assignment results and the word-assignment API responds with authentication required. No authenticated production flow was tested. Audit: `docs/d1-p1-deployment.md`.
 - Ranged vocabulary assignments, student home tasks, teacher completion/grade lists, reading attempt snapshots, and wrong-only retries are implemented. See `docs/p1-features.md` for scope and deployment.
 - Reading content is now 26 articles, 19 with questions, 69 questions, including 4 A1 and 4 A2 articles and questions for all 5 B1 articles.
 - Reading history is separate from old aggregate progress; old records without saved answers cannot be reconstructed.
 
 ## Next Work
+
+P2 adds personal test results (four modes, local drafts, account-scoped history and offline retry), teacher weekly reports with weakness-based assignment preparation, and weekly goals/milestone feedback. See `docs/p2-features.md`. The additive production `exam_attempts` schema was applied and verified on 2026-10-22; existing records were retained. See `docs/d1-p2-deployment.md`. P2 Worker/frontend deployment is pending the user's manual Git push.
 
 See `plan.md` for the product roadmap. Current priorities:
 

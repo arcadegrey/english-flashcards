@@ -1,4 +1,20 @@
 .classroom-page { min-width: 0; }
+.classroom-weekly { padding: 24px 0; border-top: 1px solid rgba(126,166,255,.16); }
+.classroom-weekly .classroom-heading h3 { margin-top: 12px; }
+.classroom-weekly-columns { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 32px; margin: 24px 0; }
+.classroom-weekly-columns > section { min-width: 0; }
+.classroom-weekly-columns .classroom-assignment-list > li { gap: 12px; }
+.classroom-weekly .classroom-badge { white-space: normal; }
+.classroom-recommendation { padding: 20px; border: 1px solid rgba(126,166,255,.24); border-radius: 20px; background: #f7faff; display: grid; gap: 16px; margin: 24px 0; }
+.classroom-recommendation h4 { margin: 0; }
+.classroom-recommendation .classroom-field { max-width: 320px; }
+.classroom-recommended-words { margin: 0; color: #2f6dff; line-height: 1.8; overflow-wrap: anywhere; }
+@media (max-width: 900px) { .classroom-weekly-columns { grid-template-columns: minmax(0,1fr); gap: 16px; } }
+.assessment-history-status { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin: 12px 0 20px; color: #64748b; font-size: 13px; }
+.assessment-result { padding: 32px; margin: 20px 0; }
+.assessment-result h2 { color: #2f6dff; font-size: 48px; margin: 16px 0; }
+.assessment-result > p { color: #64748b; line-height: 1.7; }
+.assessment-result .classroom-actions { margin-top: 24px; }
 .classroom-panel { padding: 28px; }
 .classroom-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; margin-bottom: 24px; }
 .classroom-heading > div, .classroom-heading > label { min-width: 0; }

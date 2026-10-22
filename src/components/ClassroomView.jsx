@@ -5,6 +5,7 @@ import { BaseCard } from './ui/Cards';
 import { PrimaryButton, SecondaryButton } from './ui/Buttons';
 import AccountRoleChoice from './AccountRoleChoice';
 import StudentProgressPanel from './classroom/StudentProgressPanel';
+import ClassWeeklyReport from './classroom/ClassWeeklyReport';
 import { createClassroom, joinClassroom, leaveClassroom, loadClassroom, loadClassStudents, removeClassStudent, rotateClassInvite, saveClassroomProfile } from '../utils/classroomApi';
 import { formatClassroomDate, getAccountRoleLabel } from '../utils/classroom';
 import '../styles/classroom.css';
@@ -100,6 +101,10 @@ export default function ClassroomView({ user, navItems, topbarProps, onAuthOpen,
   const [className, setClassName] = useState('');
   const [inviteCode, setInviteCode] = useState('');
   const userId = user?.id;
+  const selectStudent = value => {
+    setStudent(value);
+    requestAnimationFrame(() => document.querySelector('.classroom-student-detail')?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+  };
 
   useEffect(() => {
     if (!userId) return;
@@ -164,9 +169,10 @@ export default function ClassroomView({ user, navItems, topbarProps, onAuthOpen,
                       <SecondaryButton disabled={busy} onClick={() => perform(() => rotateClassInvite(selectedClass.id), '邀请码已更换，旧码不能再加入，现有学生保持不变。')}>更换邀请码</SecondaryButton>
                     </div></div>
                   </div>
-                  <TeacherReadingAssignments key={selectedClass.id} classId={selectedClass.id} userId={userId} />
-                  {student ? <StudentProgressPanel key={`${selectedClass.id}:${student.id}`} classId={selectedClass.id} student={student} initialVocabulary={initialVocabulary} onBack={() => setStudent(null)} />
-                    : <StudentRoster key={selectedClass.id} classroom={selectedClass} refreshKey={refresh} onSelectStudent={setStudent} onChanged={() => setRefresh((value) => value + 1)} />}
+                  <ClassWeeklyReport key={`weekly:${selectedClass.id}`} classId={selectedClass.id} userId={userId} refreshKey={refresh} onSelectStudent={selectStudent} onPublished={() => setRefresh(value => value + 1)} />
+                  <TeacherReadingAssignments key={`assignments:${selectedClass.id}:${refresh}`} classId={selectedClass.id} userId={userId} />
+                  {student ? <StudentProgressPanel key={`student:${selectedClass.id}:${student.id}`} classId={selectedClass.id} student={student} initialVocabulary={initialVocabulary} onBack={() => setStudent(null)} />
+                    : <StudentRoster key={`roster:${selectedClass.id}`} classroom={selectedClass} refreshKey={refresh} onSelectStudent={selectStudent} onChanged={() => setRefresh((value) => value + 1)} />}
                 </BaseCard>}
               </>
             )}
@@ -174,7 +180,7 @@ export default function ClassroomView({ user, navItems, topbarProps, onAuthOpen,
             {profile?.profileConfigured && !teacher && (
               <>
                 <StudentReadingAssignments userId={userId} onStart={onStartAssignment} />
-                <BaseCard className="classroom-panel"><div className="classroom-heading"><div><h2>加入老师的班级</h2><p>加入后，该班老师可以查看你已同步的单词与复习状态、阅读完成记录及答题成绩；退出后停止共享。</p></div></div>
+                <BaseCard className="classroom-panel"><div className="classroom-heading"><div><h2>加入老师的班级</h2><p>加入后，该班老师可以查看你已同步的单词与复习状态、阅读完成记录、自主测试成绩及班级周报中的答题薄弱点；未提交草稿不共享，退出后停止共享。</p></div></div>
                   <form className="classroom-inline-form" onSubmit={(event) => { event.preventDefault(); perform(async () => { await joinClassroom(inviteCode); setInviteCode(''); try { await onSync?.(); } catch { return { notice: '已加入班级，进度暂未同步，请稍后点击同步学习进度。' }; } }, '已加入班级。老师可以查看你的云端学习记录。'); }}>
                     <label className="classroom-field">班级邀请码<input className="classroom-input classroom-code-input" placeholder="输入老师的 10 位邀请码" value={inviteCode} onChange={(event) => setInviteCode(event.target.value.toUpperCase().replace(/\s/g, ''))} required maxLength={10} pattern="[A-HJ-NP-Z2-9]{10}" /></label>
                     <PrimaryButton type="submit" disabled={busy || inviteCode.length !== 10}>加入班级</PrimaryButton>

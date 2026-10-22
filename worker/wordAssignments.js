@@ -34,8 +34,9 @@ export async function handleWordAssignments(request, env, user) {
       let words;
       try { words = buildWordAssignment(selectAssignmentWords(catalog, body)); } catch (err) { return error(err.message); }
       const id = crypto.randomUUID(), dueAt = new Date(body.dueAt).toISOString(), createdAt = new Date().toISOString();
-      const scope = { category: body.category, start: body.start, count: body.count };
-      const title = `${WORD_ASSIGNMENT_CATEGORIES[body.category]} · 第 ${body.start}–${body.start + body.count - 1} 词`;
+      const scope = body.wordIds ? { category: body.category, wordIds: words.map(word => word.id), count: words.length }
+        : { category: body.category, start: body.start, count: body.count };
+      const title = body.wordIds ? `薄弱词巩固 · ${words.length} 词` : `${WORD_ASSIGNMENT_CATEGORIES[body.category]} · 第 ${body.start}–${body.start + body.count - 1} 词`;
       await db.prepare('INSERT INTO word_assignments (id,class_id,title,scope_json,words_json,due_at,created_at) VALUES (?,?,?,?,?,?,?)')
         .bind(id,owned.id,title,JSON.stringify(scope),JSON.stringify(words),dueAt,createdAt).run();
       return json({ assignment: { id, type:'words', title, scope, dueAt, createdAt } },201);
