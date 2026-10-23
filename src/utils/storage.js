@@ -1,6 +1,9 @@
+import { normalizeWordBookmarks, mergeWordBookmarks, changeWordBookmark } from '../../shared/wordBookmarks.js';
+
 import { DAILY_NEW_WORD_TARGETS, normalizePlanCategory } from './studyPlan.js';
 
 const STORAGE_KEYS = {
+  WORD_BOOKMARKS: 'flashcards_word_bookmarks',
   LEARNED_WORDS: 'flashcards_learned_words',
   MASTERED_WORDS: 'flashcards_mastered_words',
   STUDY_HISTORY: 'flashcards_study_history',
@@ -21,7 +24,25 @@ const STORAGE_KEYS = {
   PLAN_EXAM_ACTIVITY: 'flashcards_plan_exam_activity',
 };
 
+export const WORD_BOOKMARKS_STORAGE_KEY = STORAGE_KEYS.WORD_BOOKMARKS;
+
 export const storage = {
+  getWordBookmarks: () => {
+    try { return normalizeWordBookmarks(JSON.parse(localStorage.getItem(STORAGE_KEYS.WORD_BOOKMARKS) || '{}')); }
+    catch { return {}; }
+  },
+  setWordBookmarks: (bookmarks) => {
+    // Unlike legacy progress setters, propagate storage failure to the caller.
+    localStorage.setItem(STORAGE_KEYS.WORD_BOOKMARKS, JSON.stringify(normalizeWordBookmarks(bookmarks)));
+  },
+  changeWordBookmark: (ownerId, bookmarks, wordId, saved) => {
+    if (String(storage.getLearningOwner()) !== String(ownerId || 'guest')) {
+      throw new Error('账号已切换，请刷新页面后重试。');
+    }
+    const next = changeWordBookmark(mergeWordBookmarks(storage.getWordBookmarks(), bookmarks), wordId, saved);
+    storage.setWordBookmarks(next);
+    return next;
+  },
   getLearningOwner: () => {
     try { return localStorage.getItem('flashcards_progress_owner') || storage.getAuthSession()?.user?.id || 'guest'; } catch { return 'guest'; }
   },
@@ -30,7 +51,7 @@ export const storage = {
     customWords: storage.getCustomWords(), wordProgress: storage.getWordProgress(),
     wrongWords: storage.getWrongWords(), studyHistory: storage.getStudyHistory(),
     planExamActivity: storage.getPlanExamActivity(),
-    preferences: { dailyNewWordTarget: storage.getDailyNewWordTarget(), studyPlanCategory: storage.getStudyPlanCategory(), updatedAt: storage.getPlanPreferencesUpdatedAt() },
+    preferences: { wordBookmarks: storage.getWordBookmarks(), dailyNewWordTarget: storage.getDailyNewWordTarget(), studyPlanCategory: storage.getStudyPlanCategory(), updatedAt: storage.getPlanPreferencesUpdatedAt() },
   }),
   switchLearningAccount: (userId, latestProgress) => {
     const owner = String(userId || 'guest');
@@ -57,6 +78,7 @@ export const storage = {
     localStorage.setItem(STORAGE_KEYS.DAILY_NEW_WORD_TARGET, String(snapshot.preferences.dailyNewWordTarget));
     localStorage.setItem(STORAGE_KEYS.STUDY_PLAN_CATEGORY, snapshot.preferences.studyPlanCategory);
     localStorage.setItem('flashcards_plan_preferences_updated_at', snapshot.preferences.updatedAt);
+    localStorage.setItem(STORAGE_KEYS.WORD_BOOKMARKS, JSON.stringify(snapshot.preferences.wordBookmarks || {}));
     localStorage.setItem('flashcards_progress_owner', owner);
     return snapshot;
   },

@@ -50,7 +50,7 @@ function Statistics({
     { label: '今日复习', value: dueReviewCount, sub: '到期单词', tone: 'blue' },
     { label: '连续学习', value: `${streak} 天`, sub: '阅读/巩固也计入', tone: 'orange' },
     { label: '词汇训练', value: totals.words, sub: `${learnedCount} 个在复习队列`, tone: 'violet' },
-    { label: '已掌握', value: masteredCount, sub: `${masteredPercent}% 完成`, tone: 'green' },
+    { label: '标记认识', value: masteredCount, sub: `${masteredPercent}% 标记认识`, tone: 'green' },
     { label: '阅读完成', value: totals.readings, sub: `题目正确率 ${readingAccuracy}%`, tone: 'cyan' },
     { label: '考试巩固', value: totals.examQuestions, sub: `正确率 ${examAccuracy}%`, tone: 'blue' },
     { label: '错题本', value: wrongWords.length, sub: '待巩固', tone: 'orange' },
@@ -101,7 +101,7 @@ function Statistics({
       <header className="statistics-dashboard-head">
         <span className="statistics-dashboard-kicker">Learning Dashboard</span>
         <h1>学习统计</h1>
-        <p>用真实学习记录追踪复习、错题和掌握进度。</p>
+        <p>用真实学习记录追踪复习、错题和认识标记；认识标记来自自评或练习记录，不代表已验证长期记忆。</p>
       </header>
 
       <div className="statistics-card-grid">

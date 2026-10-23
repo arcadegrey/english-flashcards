@@ -119,14 +119,14 @@ function ReadingSessionView({
         unmasteredCount: readingStats.unmasteredCount,
         nextStep:
           readingStats.unmasteredCount > 0
-            ? '把未掌握词加入复习，再做一组考试巩固。'
+            ? '把未标记认识词加入复习，再做一组考试巩固。'
             : '难词状态不错，可以继续下一篇阅读。',
       }
     : null);
   const articleMinutes = article?.estimatedMinutes || 1;
   const layoutTitle = '阅读训练';
   const layoutSubtitle = article
-    ? `${article.title} · 难词掌握 ${readingStats.masteredCount}/${readingStats.totalTracked}`
+    ? `${article.title} · 难词认识记录 ${readingStats.masteredCount}/${readingStats.totalTracked}`
     : '选择文章后开始阅读';
 
   const handleSpeakArticle = () => {
@@ -164,7 +164,7 @@ function ReadingSessionView({
   const handleMarkKnown = () => {
     if (!activeWord?.id) return;
     onMarkAsMastered?.(activeWord.id);
-    setToast(`已标记掌握：${activeWord.word}`);
+    setToast(`已标记认识：${activeWord.word}`);
   };
 
   const handleSelectQuestionOption = (questionId, optionId) => {
@@ -203,7 +203,7 @@ function ReadingSessionView({
       unmasteredCount: readingStats.unmasteredCount,
       nextStep:
         readingStats.unmasteredCount > 0
-          ? '把未掌握词加入复习，再做一组考试巩固。'
+          ? '把未标记认识词加入复习，再做一组考试巩固。'
           : '难词状态不错，可以继续下一篇阅读。',
     };
     if (!retryAttempt) onCompleteReading({
@@ -302,7 +302,7 @@ function ReadingSessionView({
                   <path d="M9 11h6" />
                 </svg>
               </span>
-              <span className="learn-refresh-goal-label">难词掌握</span>
+              <span className="learn-refresh-goal-label">难词认识记录</span>
               <strong>{readingStats.masteredCount}/{readingStats.totalTracked}</strong>
               <div className="learn-refresh-goal-track" aria-hidden="true">
                 <span style={{ width: `${readingProgressPercent}%` }} />
@@ -316,7 +316,7 @@ function ReadingSessionView({
                 <div className="reading-session-meta">
                   <span className="reading-session-chip">{article.level || 'B1'}</span>
                   <span className="reading-session-chip">{articleMinutes} 分钟</span>
-                  <span className="reading-session-chip">{readingStats.unmasteredCount} 个未掌握词</span>
+                  <span className="reading-session-chip">{readingStats.unmasteredCount} 个未标记认识词</span>
                   {readingQuestions.length > 0 && (
                     <span className="reading-session-chip">{readingQuestions.length} 道阅读题</span>
                   )}
@@ -421,7 +421,7 @@ function ReadingSessionView({
                     </span>
                     <span>
                       <b>{effectiveSummary.unmasteredCount}</b>
-                      未掌握词
+                      未标记认识词
                     </span>
                     <span>
                       <b>{articleMinutes} 分钟</b>
@@ -530,7 +530,7 @@ function ReadingSessionView({
                     <path d="m15.5 8.5 3-3" />
                   </svg>
                 </span>
-                <span>未掌握词</span>
+                <span>未标记认识词</span>
                 <strong>{readingStats.unmasteredCount}</strong>
               </div>
               <div className="learn-refresh-side-row">
@@ -561,12 +561,12 @@ function ReadingSessionView({
                 <div className="learn-refresh-ring" style={{ '--study-progress': `${readingProgressPercent}%` }}>
                   <div>
                     <strong>{readingProgressPercent}%</strong>
-                    <span>难词掌握</span>
+                    <span>难词认识记录</span>
                   </div>
                 </div>
                 <dl className="learn-refresh-ring-stats">
                   <div>
-                    <dt><span className="is-blue" />已掌握</dt>
+                    <dt><span className="is-blue" />标记认识</dt>
                     <dd>{readingStats.masteredCount}</dd>
                   </div>
                   <div>
@@ -574,7 +574,7 @@ function ReadingSessionView({
                     <dd>{readingStats.totalTracked}</dd>
                   </div>
                   <div>
-                    <dt><span className="is-gray" />未掌握</dt>
+                    <dt><span className="is-gray" />未标记认识</dt>
                     <dd>{readingStats.unmasteredCount}</dd>
                   </div>
                 </dl>

@@ -44,6 +44,7 @@ function AuthPanel({
   onLogout,
   onSyncNow,
   onOpenClassroom,
+  onOpenSavedWords,
 }) {
   const [mode, setMode] = useState('login');
   const [email, setEmail] = useState('');
@@ -174,6 +175,7 @@ function AuthPanel({
         </div>
       )}
 
+      {onOpenSavedWords && <SecondaryButton className="auth-secondary-button" onClick={onOpenSavedWords}>我的收藏</SecondaryButton>}
       <div className="auth-stat-grid">
         <AuthStatCard
           tone="blue"
@@ -189,7 +191,7 @@ function AuthPanel({
         />
         <AuthStatCard
           tone="green"
-          label="已掌握单词"
+          label="标记认识单词"
           value={masteredCount}
           icon={
             <svg viewBox="0 0 24 24" aria-hidden="true">

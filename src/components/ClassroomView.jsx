@@ -66,7 +66,7 @@ function StudentRoster({ classroom, refreshKey, onSelectStudent, onChanged }) {
         <div className="classroom-empty"><img src="/images/ui-assets/category-all-words-blue-v1.png" alt="" /><h3>等待学生加入</h3><p>把班级邀请码发给学生，加入后即可在这里查看学习记录。</p></div>
       ) : !error && (
         <>
-          <div className="classroom-roster-labels" aria-hidden="true"><span>学生</span><span>今日练词</span><span>已学习</span><span>已掌握</span><span>今日阅读</span><span>最近同步</span><span /></div>
+          <div className="classroom-roster-labels" aria-hidden="true"><span>学生</span><span>今日练词</span><span>已学习</span><span>标记认识</span><span>今日阅读</span><span>最近同步</span><span /></div>
           <ul className="classroom-student-list">
             {data?.students.map((student) => (
               <li key={student.id}>
@@ -74,7 +74,7 @@ function StudentRoster({ classroom, refreshKey, onSelectStudent, onChanged }) {
                   <span className="classroom-student-name"><strong>{student.displayName}</strong><small>{student.email}</small></span>
                   <span data-label="今日练词">{student.todayStudied} 次</span>
                   <span data-label="已学习">{student.learnedCount} 词</span>
-                  <span data-label="已掌握">{student.masteredCount} 词</span>
+                  <span data-label="标记认识">{student.masteredCount} 词</span>
                   <span data-label="今日阅读">{student.todayReadingsCompleted ?? 0} 篇<small className="classroom-reading-meta">{student.todayReadingQuestionsAnswered ?? 0} 题已答</small></span>
                   <span data-label="最近同步">{formatClassroomDate(student.lastSyncedAt)}</span>
                 </button>

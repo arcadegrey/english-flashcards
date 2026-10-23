@@ -1,3 +1,5 @@
+import { WordBookmarksContext } from './context/word-bookmarks-context'
+import { mergeWordBookmarks } from '../shared/wordBookmarks.js'
 import WordAssignmentSession from './components/classroom/WordAssignmentSession'
 import { wrongReadingQuestions } from '../shared/readingAttempts.js'
 import { submitReadingAssignment } from './utils/classroomApi'
@@ -31,7 +33,7 @@ import ClassroomView from './components/ClassroomView'
 import ExamHistoryProvider from './context/ExamHistoryProvider'
 import { getAccountRoleLabel } from './utils/classroom'
 import VoiceSettings from './components/VoiceSettings'
-import { storage } from './utils/storage'
+import { storage, WORD_BOOKMARKS_STORAGE_KEY } from './utils/storage'
 import { getExamVocabulary, getPlanVocabulary, getPlanWordStats, normalizePlanCategory, recordPlanExamAnswer } from './utils/studyPlan'
 import { buildWordLookup, isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from './utils/readingText'
 import { calculateNextReview, getWordsForReview, initializeWordProgress } from './utils/spacedRepetition'
@@ -414,6 +416,9 @@ function AppContent() {
   const [learnedWords, setLearnedWords] = useState(initialLocalProgress.learnedWords)
   const [masteredWords, setMasteredWords] = useState(initialLocalProgress.masteredWords)
   const [wrongWords, setWrongWords] = useState(initialLocalProgress.wrongWords)
+  const [wordBookmarks, setWordBookmarks] = useState(initialLocalProgress.preferences?.wordBookmarks || {})
+  const [savedWordsLoading, setSavedWordsLoading] = useState(false)
+  const [savedWordsError, setSavedWordsError] = useState('')
   const [wordProgress, setWordProgress] = useState(initialLocalProgress.wordProgress)
   const [studyHistory, setStudyHistory] = useState(initialLocalProgress.studyHistory)
   const [customWords, setCustomWords] = useState(initialLocalProgress.customWords)
@@ -555,9 +560,10 @@ function AppContent() {
         dailyNewWordTarget,
         studyPlanCategory,
         updatedAt: planPreferencesUpdatedAt,
+        wordBookmarks,
       },
     }),
-    [customWords, dailyNewWordTarget, planPreferencesUpdatedAt, studyPlanCategory, learnedWords, masteredWords, studyHistory, wordProgress, wrongWords]
+    [customWords, dailyNewWordTarget, planPreferencesUpdatedAt, studyPlanCategory, wordBookmarks, learnedWords, masteredWords, studyHistory, wordProgress, wrongWords]
   )
   latestProgressRef.current = currentProgress
   const selectedReading = useMemo(
@@ -967,6 +973,7 @@ function AppContent() {
     const savedWordProgress = storage.getWordProgress()
     const savedStudyHistory = storage.getStudyHistory()
 
+    setWordBookmarks(storage.getWordBookmarks())
     setLearnedWords(savedLearned)
     setMasteredWords(savedMastered)
     setCustomWords(Array.isArray(savedCustomWords) ? savedCustomWords : [])
@@ -1013,6 +1020,10 @@ function AppContent() {
 
   const applyMergedProgress = useCallback((mergedProgress, { skipNextPush = false } = {}) => {
     const normalized = normalizeProgressState(mergedProgress)
+    const bookmarks = mergeWordBookmarks(storage.getWordBookmarks(), normalized.preferences.wordBookmarks)
+    normalized.preferences.wordBookmarks = bookmarks
+    storage.setWordBookmarks(bookmarks)
+    setWordBookmarks(bookmarks)
 
     if (skipNextPush) {
       skipNextCloudPushRef.current = true
@@ -1042,6 +1053,15 @@ function AppContent() {
     storage.setWrongWords(normalized.wrongWords)
     storage.setStudyHistory(normalized.studyHistory)
   }, [])
+
+  useEffect(() => {
+    const onStorage = (event) => {
+      if (event.key !== WORD_BOOKMARKS_STORAGE_KEY || String(storage.getLearningOwner()) !== String(authUser?.id || 'guest')) return
+      setWordBookmarks((current) => mergeWordBookmarks(current, storage.getWordBookmarks()))
+    }
+    window.addEventListener('storage', onStorage)
+    return () => window.removeEventListener('storage', onStorage)
+  }, [authUser?.id])
 
   const pushProgressToCloud = useCallback(async (session, user, progress, options = {}) => {
     if (!cloudEnabled || !session?.access_token || !user?.id) return ''
@@ -1126,6 +1146,7 @@ function AppContent() {
     if (String(storage.getAuthSession()?.user?.id) !== String(user.id)) return
 
     const merged = mergeProgress(localProgress || latestProgressRef.current || {}, cloudProgress)
+    merged.preferences.wordBookmarks = mergeWordBookmarks(merged.preferences.wordBookmarks, storage.getWordBookmarks())
 
     applyMergedProgress(merged, { skipNextPush: true })
     cloudHydratedRef.current = true
@@ -2098,6 +2119,24 @@ function AppContent() {
     setView('todayReview')
   }
 
+  const handleOpenSavedWords = async () => {
+    setShowAuthModal(false)
+    setView('savedWords')
+    setSavedWordsError('')
+    const savedIds = Object.entries(wordBookmarks).filter(([, entry]) => entry.saved).map(([id]) => id)
+    if (fullVocabularyLoadedRef.current || savedIds.every((id) => allVocabulary.some((word) => String(word.id) === id))) return
+    setSavedWordsLoading(true)
+    try {
+      const words = await loadFullVocabulary()
+      setVocabulary((current) => mergeVocabularyList(current, words))
+      fullVocabularyLoadedRef.current = true
+    } catch {
+      setSavedWordsError('部分收藏词汇尚未加载，请联网后重试。已保存的收藏不会丢失。')
+    } finally {
+      setSavedWordsLoading(false)
+    }
+  }
+
   const handleOpenWrongWords = () => {
     setAssessmentBackTarget('home')
     setView('wrongWords')
@@ -2442,6 +2481,7 @@ function AppContent() {
             learnedCount={learnedWords.length}
             masteredCount={masteredWords.length}
             onClose={() => setShowAuthModal(false)}
+            onOpenSavedWords={handleOpenSavedWords}
             syncStatusText={getSyncStatusText({
               authLoading,
               hasUser: Boolean(authUser?.id),
@@ -2505,6 +2545,7 @@ function AppContent() {
       view === 'learn' ||
       view === 'learnedWords' ||
       view === 'masteredWords' ||
+      view === 'savedWords' ||
       view === 'todayReview' ||
       view === 'wrongWords' ||
       view === 'planSettings' ||
@@ -2571,6 +2612,22 @@ function AppContent() {
     userLabel: authUser?.email ? getAccountRoleLabel(authUser) : authLoading ? '同步中' : '未登录',
     sidebarProps: { studyHistory },
   }
+
+  const wordBookmarkContext = {
+    entries: wordBookmarks,
+    ownerId: authUser?.id || 'guest',
+    disabled: authLoading || Boolean(authTransition),
+    toggle: (wordId, saved) => {
+      const next = storage.changeWordBookmark(authUser?.id, wordBookmarks, wordId, saved)
+      setWordBookmarks(next)
+      latestProgressRef.current = { ...latestProgressRef.current,
+        preferences: { ...latestProgressRef.current.preferences, wordBookmarks: next } }
+    },
+    onOpen: handleOpenSavedWords,
+  }
+  const savedWordIds = Object.entries(wordBookmarks).filter(([, entry]) => entry.saved).map(([id]) => id)
+  const savedWordList = savedWordIds.map((id) => vocabularyMap.get(id)).filter(Boolean)
+  const unavailableSavedCount = savedWordIds.length - savedWordList.length
 
   const renderView = () => {
     switch (view) {
@@ -2907,7 +2964,7 @@ function AppContent() {
             active="stats"
             navItems={selectionNavItems}
             title="统计"
-            subtitle="用真实学习记录追踪复习、错题和掌握进度。"
+            subtitle="用真实学习记录追踪复习、错题和认识标记。"
             topbarProps={selectionTopbarProps}
           >
             <Statistics
@@ -2920,11 +2977,32 @@ function AppContent() {
             />
           </AppLayout>
         )
+      case 'savedWords':
+        return <WordCollectionView
+          title="我的收藏"
+          subtitle={authUser?.id ? '收藏独立于学习状态，随账号同步。取消收藏不会删除学习记录。' : '访客收藏仅保存在当前设备，登录后可随学习进度合并到账号。'}
+          words={savedWordList}
+          emptyTitle={savedWordsLoading ? '正在准备收藏' : savedWordsError ? '收藏词汇暂不可用' : '还没有收藏'}
+          emptyHint={savedWordsLoading ? '正在加载收藏词汇…' : savedWordsError || '还没有收藏，点击单词卡右上角的星标即可保存。'}
+          statusMessage={savedWordsLoading ? '正在加载完整词库…' : savedWordsError || (unavailableSavedCount ? `${unavailableSavedCount} 个收藏词暂时无法匹配，收藏记录已保留。` : '')}
+          onRetry={savedWordsError || (unavailableSavedCount && !fullVocabularyLoadedRef.current) ? handleOpenSavedWords : undefined}
+          onBack={handleBackToHome}
+          onHome={handleBackToStudyHub}
+          onOpenMode={handleOpenModeFromCollection}
+          onSyncAccount={handleHomeSync}
+          onOpenReading={handleOpenReadingList}
+          onMarkAsUnknown={setWordAsLearned}
+          onMarkAsMastered={setWordAsMastered}
+          navItems={selectionNavItems}
+          topbarProps={selectionTopbarProps}
+          active="words"
+          progressLabel="收藏词汇"
+        />
       case 'todayReview':
         return (
           <WordCollectionView
             title="今日复习"
-            subtitle="这些是今天需要回顾的已学习或已掌握单词"
+            subtitle="这些是今天需要回顾的已学习或已标记认识的单词"
             words={todayReviewWordList}
             mode={mode}
             emptyHint="今天没有到期复习词，保持得很好。"
@@ -2974,6 +3052,7 @@ function AppContent() {
             emptyHint="你还没有已学习单词，先进入学习模式标记一些吧。"
             onBack={handleBackToHome}
             onOpenMode={handleOpenModeFromCollection}
+            onMarkAsUnknown={setWordAsLearned}
             onMarkAsMastered={markLearnedWordAsMastered}
             masteredActionLabel="认识了"
             onHome={handleBackToStudyHub}
@@ -2988,14 +3067,15 @@ function AppContent() {
       case 'masteredWords':
         return (
           <WordCollectionView
-            title="已掌握单词"
-            subtitle="这里会展示你已经掌握的单词"
+            title="认识标记"
+            subtitle="来自自评或练习结果的认识标记，不代表已验证长期记忆；仍按计划复习。"
             words={masteredWordList}
             mode={mode}
-            emptyHint="你还没有已掌握单词，继续练习后会出现在这里。"
+            emptyHint="还没有认识标记，可在学习或练习中记录。"
             onBack={handleBackToHome}
             onOpenMode={handleOpenModeFromCollection}
             onMarkAsUnknown={markMasteredWordAsLearned}
+            onMarkAsMastered={setWordAsMastered}
             onHome={handleBackToStudyHub}
             onSyncAccount={handleHomeSync}
             onOpenReading={handleOpenReadingList}
@@ -3017,6 +3097,7 @@ function AppContent() {
     view === 'learn' ||
     view === 'learnedWords' ||
     view === 'masteredWords' ||
+    view === 'savedWords' ||
     view === 'todayReview' ||
     view === 'wrongWords' ||
     view === 'readingSession' ||
@@ -3025,7 +3106,7 @@ function AppContent() {
   ) {
     return (
       <div className={`min-h-screen ${appBackground}`}>
-        <ExamHistoryProvider key={authUser?.id || 'guest'} ownerId={authUser?.id}>{renderView()}</ExamHistoryProvider>
+        <WordBookmarksContext.Provider value={wordBookmarkContext}><ExamHistoryProvider key={authUser?.id || 'guest'} ownerId={authUser?.id}>{renderView()}</ExamHistoryProvider></WordBookmarksContext.Provider>
         {showVoiceSettings && <VoiceSettings onClose={() => setShowVoiceSettings(false)} />}
         {renderAuthModal()}
         {renderAuthTransitionOverlay()}
@@ -3035,7 +3116,7 @@ function AppContent() {
 
   return (
     <div className={`min-h-screen ${appBackground}`}>
-      <ExamHistoryProvider key={authUser?.id || 'guest'} ownerId={authUser?.id}>{renderView()}</ExamHistoryProvider>
+      <WordBookmarksContext.Provider value={wordBookmarkContext}><ExamHistoryProvider key={authUser?.id || 'guest'} ownerId={authUser?.id}>{renderView()}</ExamHistoryProvider></WordBookmarksContext.Provider>
       {showVoiceSettings && <VoiceSettings onClose={() => setShowVoiceSettings(false)} />}
       {renderAuthModal()}
       {renderAuthTransitionOverlay()}

@@ -232,7 +232,7 @@ function StudyHub({
           {accountNotice && (
             <span className={`is-${accountNotice.type || 'info'}`}>{accountNotice.message}</span>
           )}
-          <span>今日已掌握 {todayWordsMastered} 个词 · 阅读 {todayReadingsCompleted}/{readingCount} 篇 · 巩固 {todayExamQuestionsAnswered} 题 · 错题 {wrongCount} 个</span>
+          <span>今日标记认识 {todayWordsMastered} 个词 · 阅读 {todayReadingsCompleted}/{readingCount} 篇 · 巩固 {todayExamQuestionsAnswered} 题 · 错题 {wrongCount} 个</span>
         </section>
       </div>
     </AppLayout>

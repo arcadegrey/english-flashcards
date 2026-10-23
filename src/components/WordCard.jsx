@@ -1,36 +1,21 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
+import { useWordBookmarks } from '../context/word-bookmarks-context';
+import { getWordHints, getWordMeaningLine } from '../utils/wordHints';
 import { speakExample, speakWord } from '../utils/speech';
 
 function WordCard({ word, showHint = false }) {
-  const [isSaved, setIsSaved] = useState(false);
-  const hints = useMemo(() => {
-    if (!word) {
-      return {
-        synonymHint: '暂无近义词数据',
-        rootHint: '暂无词根词缀数据',
-        extraExampleHint: '暂无更多例句数据',
-      };
+  const bookmarks = useWordBookmarks();
+  const [notice, setNotice] = useState(null);
+  const isSaved = Boolean(bookmarks?.entries?.[String(word?.id)]?.saved);
+  const hints = getWordHints(word || {});
+  const toggleSaved = () => {
+    try {
+      bookmarks.toggle(word.id, !isSaved);
+      setNotice({ wordId: word.id, error: false, text: isSaved ? '已取消收藏。' : bookmarks.ownerId === 'guest' ? '已收藏到当前设备。' : '已收藏到本机，云同步状态可在账号面板查看。' });
+    } catch {
+      setNotice({ wordId: word.id, error: true, text: '收藏未保存，请检查浏览器存储权限或账号状态后重试。' });
     }
-
-    const meaningParts = String(word.meaning || '')
-      .split(/[；;，,、]/)
-      .map((item) => item.trim())
-      .filter(Boolean);
-
-    const synonymHint = meaningParts.length > 1 ? meaningParts.slice(0, 2).join(' / ') : '暂无近义词数据';
-
-    const cleanWord = String(word.word || '').replace(/[^a-zA-Z]/g, '');
-    const rootHint =
-      cleanWord.length >= 6
-        ? `可拆分记忆：${cleanWord.slice(0, 3)} + ${cleanWord.slice(3)}`
-        : '暂无词根词缀数据';
-
-    const extraExampleHint = word.example
-      ? '尝试改写例句主语（I / We / They）并朗读一遍。'
-      : '暂无更多例句数据';
-
-    return { synonymHint, rootHint, extraExampleHint };
-  }, [word]);
+  };
 
   if (!word) {
     return (
@@ -40,7 +25,7 @@ function WordCard({ word, showHint = false }) {
     );
   }
 
-  const meaningLine = word.pos ? `${word.pos} ${word.meaning}` : word.meaning;
+  const meaningLine = getWordMeaningLine(word);
   const wordFitLength = Math.max(String(word.word || '').trim().length, 1);
 
   return (
@@ -50,12 +35,16 @@ function WordCard({ word, showHint = false }) {
         className={`learn-refresh-save-word ${isSaved ? 'is-saved' : ''}`}
         aria-label={isSaved ? '取消收藏单词' : '收藏单词'}
         aria-pressed={isSaved}
-        onClick={() => setIsSaved((value) => !value)}
+        disabled={!bookmarks?.toggle || bookmarks.disabled}
+        onClick={toggleSaved}
       >
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="m12 4 2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4-3.9-3.8 5.4-.8L12 4Z" />
         </svg>
       </button>
+
+      {bookmarks?.onOpen && <button type="button" className="learn-refresh-bookmarks-link" onClick={bookmarks.onOpen}>我的收藏</button>}
+      {notice?.wordId === word.id && <p className="learn-refresh-bookmark-notice" role={notice.error ? 'alert' : 'status'}>{notice.text}</p>}
 
       <header className="learn-refresh-word-block">
         <h1 className="learn-refresh-word" style={{ '--word-fit-length': wordFitLength }}>{word.word}</h1>
@@ -106,21 +95,33 @@ function WordCard({ word, showHint = false }) {
         <p className="learn-refresh-example-cn">{word.exampleCn || '暂无中文例句。'}</p>
       </section>
 
-      <section className={`learn-refresh-expandable ${showHint ? 'is-open' : ''}`}>
+      <section className={`learn-refresh-expandable ${showHint ? 'is-open' : ''}`} aria-hidden={!showHint} inert={!showHint}>
         <div className="learn-refresh-expandable-inner">
           <h2 className="learn-refresh-expandable-title">学习提示</h2>
-          <div className="learn-refresh-hint-item" style={{ '--hint-index': 0 }}>
-            <span className="learn-refresh-hint-label">近义提示</span>
-            <p className="learn-refresh-hint-text">{hints.synonymHint}</p>
-          </div>
-          <div className="learn-refresh-hint-item" style={{ '--hint-index': 1 }}>
-            <span className="learn-refresh-hint-label">词根词缀</span>
-            <p className="learn-refresh-hint-text">{hints.rootHint}</p>
-          </div>
-          <div className="learn-refresh-hint-item" style={{ '--hint-index': 2 }}>
-            <span className="learn-refresh-hint-label">更多练习</span>
-            <p className="learn-refresh-hint-text">{hints.extraExampleHint}</p>
-          </div>
+          {hints.map((hint, index) => (
+            <div key={hint.label} className="learn-refresh-hint-item" style={{ '--hint-index': index }}>
+              <span className="learn-refresh-hint-label">{hint.label}</span>
+              {hint.scope && <p className="learn-refresh-hint-scope">适用：{hint.scope}</p>}
+              <p className="learn-refresh-hint-text">
+                {hint.emphasis
+                  ? <><strong>{hint.emphasis}</strong>{hint.text.slice(hint.emphasis.length)}</>
+                  : hint.text}
+              </p>
+              {hint.examples?.map((example) => (
+                <p className="learn-refresh-hint-example" key={example.en}>
+                  <span lang="en">{example.en.split(/(\b[a-z]+\b)/gi).map((part, partIndex) =>
+                    hint.exampleWords?.some((term) => term.toLowerCase() === part.toLowerCase())
+                      ? <strong key={partIndex}>{part}</strong> : part
+                  )}</span><br />
+                  <span>{example.zh}</span>
+                </p>
+              ))}
+              {hint.sources?.length > 0 && <div className="learn-refresh-hint-sources" aria-label={`${hint.label}参考来源`}>
+                <span>参考</span>
+                {hint.sources.map((source) => <a key={source.id} href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a>)}
+              </div>}
+            </div>
+          ))}
         </div>
       </section>
     </article>

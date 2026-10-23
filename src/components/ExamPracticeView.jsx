@@ -54,9 +54,9 @@ const EXAM_SCOPES = [
   },
   {
     id: 'mastered',
-    label: '已掌握',
-    title: '稳定长期记忆',
-    helper: '检查真正掌握的词是否还能快速答对。',
+    label: '标记认识',
+    title: '检查认识标记',
+    helper: '这些词来自自评或练习记录，用测试检查是否仍能答对。',
     tone: 'green',
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden="true">

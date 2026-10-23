@@ -29,3 +29,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Core Word Learning Notes (2026-10-23)
+
+`src/data/coreWordNotes.js` and `src/data/dailyWordNotes.js` add original Chinese usage comparisons and bilingual examples for 100 existing common/core words. Forty-seven of these words have source-checked formation or word-family notes. The references are Cambridge Dictionary / English Grammar Today, BBC Learning English, and the University of Glasgow STELLA grammar materials.
+
+Reference material is used to verify facts, not imported as dictionary definitions or example text. Third-party sources retain their own rights; no dictionary republication permission is asserted. Each section records source IDs, checking date and `source-checked` status; this indicates the current reference check, not independent expert approval. Drafts and missing references are withheld from the UI.
+
+The full word list, source audit table, selection criteria, extension workflow and verification are in [core-word-notes.md](core-word-notes.md). No vocabulary IDs, source definitions or audio data were changed.

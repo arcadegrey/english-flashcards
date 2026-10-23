@@ -98,6 +98,15 @@ Less common maintenance commands are listed in `docs/project-reference.md`.
 - Reading content is now 26 articles, 19 with questions, 69 questions, including 4 A1 and 4 A2 articles and questions for all 5 B1 articles.
 - Reading history is separate from old aggregate progress; old records without saved answers cannot be reconstructed.
 
+## Learning Trust (2026-10-23)
+
+- Word hints use source-checked notes for 100 common/core words (56 synonym/confusable groups; 47 words with formation/family notes), with bilingual original examples, sense boundaries and source links. Uncovered words keep entry-based practice hints. Data: `src/data/coreWordNotes.js` + `src/data/dailyWordNotes.js`; source audit and extension rules: `docs/core-word-notes.md`. Fabricated roots/synonyms remain removed. Display formatting cleans literal newline escapes and duplicate parts of speech without rewriting vocabulary data.
+- Word bookmarks persist per account and sync via `user_progress.preferences.wordBookmarks`, with per-word timestamps and removal tombstones. Entry points: word card and account panel; the collection reuses `WordCollectionView`. No D1 migration required; deploy updated Worker and frontend together.
+- Existing `masteredWords` displays as “标记认识” across personal, reading, test and teacher screens. It records self-assessment or practice results, not verified long-term mastery. Existing learning records and review behavior remain compatible.
+- Scope, tests and deployment notes: `docs/learning-trust.md`.
+- Next content milestone: 100 → 300 → 500 words, in source-checked batches of 50–100; prioritize everyday/core senses, then exam vocabulary. Keep original bilingual examples, distinguish synonyms/confusables/families, and add explicitly reviewed inflected forms for example highlighting. Detailed handoff order and acceptance: `docs/core-word-notes.md` → “下一阶段方向与接手顺序”.
+- Latest local verification: 97 tests, lint and full build/PWA passed; browser checks covered desktop/mobile, sources, emphasis and word switching. The combined trust/content release still needs Worker + frontend deployment and authenticated production acceptance; no new D1 migration is required for this scope.
+
 ## Next Work
 
 P2 adds personal test results (four modes, local drafts, account-scoped history and offline retry), teacher weekly reports with weakness-based assignment preparation, and weekly goals/milestone feedback. See `docs/p2-features.md`. The additive production `exam_attempts` schema was applied and verified on 2026-10-22; existing records were retained. See `docs/d1-p2-deployment.md`. P2 Worker/frontend deployment is pending the user's manual Git push.

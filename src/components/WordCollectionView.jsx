@@ -27,6 +27,9 @@ function WordCollectionView({
   mode = 'learn',
   onOpenMode,
   emptyHint,
+  emptyTitle = '今天节奏很好',
+  statusMessage,
+  onRetry,
   onMarkAsMastered,
   onMarkAsUnknown,
   masteredActionLabel = '认识了',
@@ -122,15 +125,13 @@ function WordCollectionView({
 
     if (typeof onMarkAsUnknown === 'function') {
       onMarkAsUnknown(currentWord.id);
-      setToast('已移回已学习');
+      setToast('已记录为不认识，继续复习');
       setHintOpenForWordId(null);
       nextCard();
       return;
     }
 
-    setToast('已加入复习队列');
-    setHintOpenForWordId(null);
-    nextCard();
+    setToast('当前无法更新学习状态，请返回后重试。');
   };
 
   const handleMarkKnown = () => {
@@ -138,15 +139,13 @@ function WordCollectionView({
 
     if (typeof onMarkAsMastered === 'function') {
       onMarkAsMastered(currentWord.id);
-      setToast('已标记为“认识”');
+      setToast('已标记认识，仍按计划复习');
       setHintOpenForWordId(null);
       nextCard();
       return;
     }
 
-    setToast('已保持为已掌握');
-    setHintOpenForWordId(null);
-    nextCard();
+    setToast('当前无法更新学习状态，请返回后重试。');
   };
 
   const handleToggleHint = () => {
@@ -233,11 +232,12 @@ function WordCollectionView({
           </section>
         )}
 
+        {statusMessage && <p className="classroom-helper" role="status">{statusMessage} {onRetry && <button type="button" className="collection-tool-button" onClick={onRetry}>重试加载</button>}</p>}
         {words.length === 0 ? (
           <article className="collection-empty-state">
             <img src={emptyArtSrc} alt="" aria-hidden="true" />
             <div>
-              <h3>今天节奏很好</h3>
+              <h3>{emptyTitle}</h3>
               <p>{emptyHint}</p>
             </div>
           </article>

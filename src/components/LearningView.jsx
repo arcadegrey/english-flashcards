@@ -60,7 +60,7 @@ function LearningView({
   const examCategoryName = getCategoryById(examCategory).name;
   const examSourceLabel =
     examScope === 'mastered'
-      ? '已掌握范围'
+      ? '标记认识范围'
       : examScope === 'all'
         ? examCategory === 'all' ? '全范围随机' : `${examCategoryName}随机`
         : '已学习范围';
@@ -133,7 +133,7 @@ function LearningView({
 
   const handleMarkKnown = () => {
     onMarkMastered();
-    setToast('已标记为“认识”');
+    setToast('已标记认识，仍按计划复习');
     setHintOpenForWordId(null);
   };
 
@@ -313,7 +313,7 @@ function LearningView({
                 <dd>{studyGoalTarget}</dd>
               </div>
               <div>
-                <dt><span className="is-gray" />已掌握</dt>
+                <dt><span className="is-gray" />标记认识</dt>
                 <dd>{masteredTotal}</dd>
               </div>
             </dl>
