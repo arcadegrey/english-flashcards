@@ -32,8 +32,8 @@ SOFTWARE.
 
 ## Core Word Learning Notes (2026-10-23)
 
-`src/data/coreWordNotes.js` and `src/data/dailyWordNotes.js` add original Chinese usage comparisons and bilingual examples for 100 existing common/core words. Forty-seven of these words have source-checked formation or word-family notes. The references are Cambridge Dictionary / English Grammar Today, BBC Learning English, and the University of Glasgow STELLA grammar materials.
+`src/data/coreWordNotes.js` aggregates `dailyWordNotes.js`, `everydayWordNotes.js`, `usageWordNotes.js`, and the three `expansion*WordNotes.js` modules, providing original Chinese comparisons and bilingual examples for 3000 existing common/core words (2842 scoped notes, 5684 bilingual examples). Forty-seven of these words retain source-checked formation or word-family notes. References include Cambridge Dictionary / English Grammar Today, BBC Learning English, University of Glasgow STELLA grammar materials, Merriam-Webster, Oxford Learner’s Dictionaries, and Collins dictionary entries.
 
 Reference material is used to verify facts, not imported as dictionary definitions or example text. Third-party sources retain their own rights; no dictionary republication permission is asserted. Each section records source IDs, checking date and `source-checked` status; this indicates the current reference check, not independent expert approval. Drafts and missing references are withheld from the UI.
 
-The full word list, source audit table, selection criteria, extension workflow and verification are in [core-word-notes.md](core-word-notes.md). No vocabulary IDs, source definitions or audio data were changed.
+Selection criteria, extension workflow and verification are in [core-word-notes.md](core-word-notes.md). The expansion batches, per-group references and category coverage are in [word-notes-coverage.md](word-notes-coverage.md). No vocabulary IDs, source definitions or audio data were changed.

@@ -1,0 +1,63 @@
+import { readFile } from 'node:fs/promises';
+import { CORE_WORD_NOTES, CORE_SYNONYM_GROUPS, CORE_WORD_FORMATIONS, WORD_NOTE_SOURCES } from '../src/data/coreWordNotes.js';
+import { EVERYDAY_WORD_NOTES } from '../src/data/everydayWordNotes.js';
+import { USAGE_WORD_NOTES } from '../src/data/usageWordNotes.js';
+import { EXPANSION_ONE_WORD_NOTES } from '../src/data/expansionOneWordNotes.js';
+import { EXPANSION_TWO_WORD_NOTES } from '../src/data/expansionTwoWordNotes.js';
+import { EXPANSION_THREE_WORD_NOTES } from '../src/data/expansionThreeWordNotes.js';
+import { getCoreWordHints } from '../src/utils/wordHints.js';
+
+const vocabulary = JSON.parse(await readFile(new URL('../public/data/vocabulary.json', import.meta.url), 'utf8'));
+const words = new Set(Object.keys(CORE_WORD_NOTES));
+const groups = Object.values(CORE_SYNONYM_GROUPS);
+const sections = [...groups, ...Object.values(CORE_WORD_FORMATIONS)];
+const pending = sections.filter(section => section.review?.status !== 'source-checked');
+const missingSources = sections.filter(section => !section.sourceIds?.length || section.sourceIds.some(id => !Object.hasOwn(WORD_NOTE_SOURCES, id)));
+const orphaned = [...words].filter(word => !vocabulary.some(entry => entry.word === word));
+const displayed = [...words].filter(word => getCoreWordHints({ word }).length);
+const withFormation = Object.values(CORE_WORD_NOTES).filter(entry => entry.formation).length;
+const synonymCount = groups.filter(group => !group.comparisonType || group.comparisonType === 'synonym').length;
+const confusableCount = groups.filter(group => group.comparisonType === 'confusable').length;
+const usageCount = groups.filter(group => group.comparisonType === 'usage').length;
+const lines = [
+  '# 核心词提示覆盖率与新增批次来源', '',
+  '汇总日期：2026-10-24（逐条核对日期保留在来源与内容中）。运行 `node scripts/report-word-notes.mjs > docs/word-notes-coverage.md` 可重新生成。', '',
+  '## 覆盖口径', '',
+  `- 原词库独立词条：${vocabulary.length}；已登记提示：${words.size}；可展示提示：${displayed.length}。`,
+  `- 内容：${groups.length} 组（近义 ${synonymCount}；易混 ${confusableCount}；单词用法 ${usageCount}），共 ${groups.reduce((sum, group) => sum + group.examples.length, 0)} 条双语例句。`,
+  `- 构词／词族说明：${withFormation} 词，${Object.keys(CORE_WORD_FORMATIONS).length} 组。此次保留原有构词，不为凑覆盖率增加推断。`,
+  `- 待核验条目：${pending.length}；缺失来源的条目：${missingSources.length}；无法匹配原词库的提示：${orphaned.length}。`,
+  '- 未覆盖的词继续使用词条基础提示；无构词内容不代表该词没有构词关系。',
+  '- source-checked 表示已参考公开词条／语法资料核对。本项目综合这些事实编写中文辨析与原创例句，未导入词典原文；独立语言专家审校仍待进行。',
+  '- 分类别统计按 categories（缺失时按 category）计算，一个词可属于多个类别，不能将行数相加作为独立词数。', '',
+  '| 词库类别 | 原有词条 | 已覆盖提示 | 覆盖比例 | 构词／词族覆盖 |',
+  '| --- | ---: | ---: | ---: | ---: |',
+];
+for (const category of ['daily', 'cet4', 'cet6', 'toefl', 'ielts']) {
+  const entries = vocabulary.filter(entry => (entry.categories || [entry.category]).includes(category));
+  const covered = entries.filter(entry => words.has(entry.word));
+  lines.push(`| ${category} | ${entries.length} | ${covered.length} | ${(covered.length / entries.length * 100).toFixed(2)}% | ${covered.filter(entry => CORE_WORD_NOTES[entry.word].formation).length} |`);
+}
+lines.push('', '## 新增批次与逐组来源', '',
+  '300 词基线后通过三个独立词池扩充，目标各 900 词，当前实数见各批次表；下表也保留此前两个各 100 词的批次。每组两条原创双语例句，明确词性及适用词义；真实易混关系标为易混，无合适比较时使用单词用法笔记，不强配近义词或词根。未变更词 ID、分类、释义、音频、学习进度或同步数据。', '',
+  '核对过程中部分剑桥词典直连返回 403，词条事实使用可读取的韦氏词典；关键语法另用剑桥 English Grammar Today；部分词形或义项补用牛津、柯林斯词典。参考链接保留在学习提示中。', '');
+for (const [title, notes] of [
+  ['批次 A：生活、学校与出行', EVERYDAY_WORD_NOTES],
+  ['批次 B：常见性质、数量与时间空间', USAGE_WORD_NOTES],
+  ['扩充一：日常与核心词汇', EXPANSION_ONE_WORD_NOTES],
+  ['扩充二：日常与核心词汇', EXPANSION_TWO_WORD_NOTES],
+  ['扩充三：日常与核心词汇', EXPANSION_THREE_WORD_NOTES],
+]) {
+  lines.push(`### ${title}`, '', `词条数：${Object.keys(notes).length}。`, '', '| 词组 | 类型与适用范围 | 核对来源 |', '| --- | --- | --- |');
+  for (const id of new Set(Object.values(notes).map(entry => entry.synonymGroup))) {
+    const group = CORE_SYNONYM_GROUPS[id];
+    const references = group.sourceIds.map(sourceId => {
+      const source = WORD_NOTE_SOURCES[sourceId];
+      return `[${source.title}](${source.url})`;
+    }).join('、');
+    const type = group.comparisonType === 'usage' ? '用法' : group.comparisonType === 'confusable' ? '易混' : '近义';
+    lines.push(`| ${group.words.join(' / ')} | ${type} · ${group.sense} | ${references} |`);
+  }
+  lines.push('');
+}
+console.log(lines.join('\n'));

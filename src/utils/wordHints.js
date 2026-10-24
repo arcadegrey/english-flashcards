@@ -15,12 +15,17 @@ export const getCoreWordHints = (word = {}) => {
   const synonyms = CORE_SYNONYM_GROUPS[entry.synonymGroup];
   const formation = CORE_WORD_FORMATIONS[entry.formation];
   const hints = [];
-  if (isSourceChecked(synonyms) && synonyms.words.includes(key)) hints.push({
-    label: synonyms.comparisonType === 'confusable' ? '易混词辨析' : '近义词辨析', scope: synonyms.sense,
-    emphasis: synonyms.words.filter((item) => item !== key).join(' / '),
-    text: `${synonyms.words.filter((item) => item !== key).join(' / ')}：${synonyms.note}`,
-    examples: synonyms.examples, exampleWords: synonyms.words, sources: referencesFor(synonyms),
-  });
+  if (isSourceChecked(synonyms) && synonyms.words.includes(key)) {
+    const isUsage = synonyms.comparisonType === 'usage';
+    const comparison = synonyms.words.filter((item) => item !== key).join(' / ');
+    hints.push({
+      label: isUsage ? '用法提示' : synonyms.comparisonType === 'confusable' ? '易混词辨析' : '近义词辨析',
+      scope: synonyms.sense,
+      emphasis: isUsage ? undefined : comparison,
+      text: isUsage ? synonyms.note : `${comparison}：${synonyms.note}`,
+      examples: synonyms.examples, exampleWords: synonyms.words, sources: referencesFor(synonyms),
+    });
+  }
   if (isSourceChecked(formation) && [formation.base, formation.derived].includes(key)) hints.push({
     label: '词根词缀',
     scope: formation.derived === key ? `本词构词 · ${formation.affixRole}` : `词族拓展 · ${formation.base} → ${formation.derived}`,
