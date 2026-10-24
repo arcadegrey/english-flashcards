@@ -5,6 +5,9 @@ import { USAGE_WORD_NOTES } from '../src/data/usageWordNotes.js';
 import { EXPANSION_ONE_WORD_NOTES } from '../src/data/expansionOneWordNotes.js';
 import { EXPANSION_TWO_WORD_NOTES } from '../src/data/expansionTwoWordNotes.js';
 import { EXPANSION_THREE_WORD_NOTES } from '../src/data/expansionThreeWordNotes.js';
+import { EXPANSION_FOUR_WORD_NOTES } from '../src/data/expansionFourWordNotes.js';
+import { EXPANSION_FIVE_WORD_NOTES } from '../src/data/expansionFiveWordNotes.js';
+import { EXPANSION_SIX_WORD_NOTES } from '../src/data/expansionSixWordNotes.js';
 import { getCoreWordHints } from '../src/utils/wordHints.js';
 
 const vocabulary = JSON.parse(await readFile(new URL('../public/data/vocabulary.json', import.meta.url), 'utf8'));
@@ -39,14 +42,17 @@ for (const category of ['daily', 'cet4', 'cet6', 'toefl', 'ielts']) {
   lines.push(`| ${category} | ${entries.length} | ${covered.length} | ${(covered.length / entries.length * 100).toFixed(2)}% | ${covered.filter(entry => CORE_WORD_NOTES[entry.word].formation).length} |`);
 }
 lines.push('', '## 新增批次与逐组来源', '',
-  '300 词基线后通过三个独立词池扩充，目标各 900 词，当前实数见各批次表；下表也保留此前两个各 100 词的批次。每组两条原创双语例句，明确词性及适用词义；真实易混关系标为易混，无合适比较时使用单词用法笔记，不强配近义词或词根。未变更词 ID、分类、释义、音频、学习进度或同步数据。', '',
-  '核对过程中部分剑桥词典直连返回 403，词条事实使用可读取的韦氏词典；关键语法另用剑桥 English Grammar Today；部分词形或义项补用牛津、柯林斯词典。参考链接保留在学习提示中。', '');
+  '300 词基线后先通过三个各 900 词的独立词池扩至 3000 词，再新增三个各 1000 词的独立词池扩至 6000 词；下表保留此前批次。每组两条原创双语例句，明确词性及适用词义；真实易混关系标为易混，无合适比较时使用单词用法笔记，不强配近义词或词根。未变更词 ID、分类、释义、音频、学习进度或同步数据。', '',
+  '核对过程中部分剑桥词典直连返回 403，词条事实使用可读取的韦氏词典；关键语法另用剑桥 English Grammar Today；部分词形或义项补用牛津、柯林斯词典。参考链接保留在学习提示中。新增的第四至第六批次逐词读取剑桥／牛津词条，必要时补查韦氏词条或明确的词形变体，并按具体词性和义项核对；不把请求成功自动视为独立语言审校。', '');
 for (const [title, notes] of [
   ['批次 A：生活、学校与出行', EVERYDAY_WORD_NOTES],
   ['批次 B：常见性质、数量与时间空间', USAGE_WORD_NOTES],
   ['扩充一：日常与核心词汇', EXPANSION_ONE_WORD_NOTES],
   ['扩充二：日常与核心词汇', EXPANSION_TWO_WORD_NOTES],
   ['扩充三：日常与核心词汇', EXPANSION_THREE_WORD_NOTES],
+  ['扩充四：常用与备考词汇', EXPANSION_FOUR_WORD_NOTES],
+  ['扩充五：常用与备考词汇', EXPANSION_FIVE_WORD_NOTES],
+  ['扩充六：常用与备考词汇', EXPANSION_SIX_WORD_NOTES],
 ]) {
   lines.push(`### ${title}`, '', `词条数：${Object.keys(notes).length}。`, '', '| 词组 | 类型与适用范围 | 核对来源 |', '| --- | --- | --- |');
   for (const id of new Set(Object.values(notes).map(entry => entry.synonymGroup))) {

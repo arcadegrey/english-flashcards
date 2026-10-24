@@ -30,9 +30,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## Core Word Learning Notes (2026-10-23)
+## Core Word Learning Notes (2026-10-24)
 
-`src/data/coreWordNotes.js` aggregates `dailyWordNotes.js`, `everydayWordNotes.js`, `usageWordNotes.js`, and the three `expansion*WordNotes.js` modules, providing original Chinese comparisons and bilingual examples for 3000 existing common/core words (2842 scoped notes, 5684 bilingual examples). Forty-seven of these words retain source-checked formation or word-family notes. References include Cambridge Dictionary / English Grammar Today, BBC Learning English, University of Glasgow STELLA grammar materials, Merriam-Webster, Oxford Learner’s Dictionaries, and Collins dictionary entries.
+`src/data/coreWordNotes.js` aggregates `dailyWordNotes.js`, `everydayWordNotes.js`, `usageWordNotes.js`, and the six `expansion*WordNotes.js` modules, providing original Chinese comparisons and bilingual examples for 6000 existing words (5842 scoped notes, 11684 bilingual examples). Forty-seven of these words retain source-checked formation or word-family notes. References include Cambridge Dictionary / English Grammar Today, BBC Learning English, University of Glasgow STELLA grammar materials, Merriam-Webster, Oxford Learner’s Dictionaries, and Collins dictionary entries.
 
 Reference material is used to verify facts, not imported as dictionary definitions or example text. Third-party sources retain their own rights; no dictionary republication permission is asserted. Each section records source IDs, checking date and `source-checked` status; this indicates the current reference check, not independent expert approval. Drafts and missing references are withheld from the UI.
 

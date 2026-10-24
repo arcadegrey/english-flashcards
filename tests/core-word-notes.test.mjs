@@ -8,12 +8,15 @@ import { USAGE_WORD_NOTES, USAGE_SYNONYM_GROUPS } from '../src/data/usageWordNot
 import * as expansionOne from '../src/data/expansionOneWordNotes.js';
 import * as expansionTwo from '../src/data/expansionTwoWordNotes.js';
 import * as expansionThree from '../src/data/expansionThreeWordNotes.js';
+import * as expansionFour from '../src/data/expansionFourWordNotes.js';
+import * as expansionFive from '../src/data/expansionFiveWordNotes.js';
+import * as expansionSix from '../src/data/expansionSixWordNotes.js';
 
 const allowedHosts = new Set(['dictionary.cambridge.org', 'downloads.bbc.co.uk', 'stella.glasgow.ac.uk', 'www.merriam-webster.com', 'www.oxfordlearnersdictionaries.com', 'www.collinsdictionary.com']);
 
-test('all 3000 notes match existing vocabulary without introducing word IDs or rewriting records', async () => {
+test('all 6000 notes match existing vocabulary without introducing word IDs or rewriting records', async () => {
   const vocabulary = JSON.parse(await readFile(new URL('../public/data/vocabulary.json', import.meta.url), 'utf8'));
-  assert.equal(Object.keys(CORE_WORD_NOTES).length, 3000);
+  assert.equal(Object.keys(CORE_WORD_NOTES).length, 6000);
   assert.equal(Object.values(CORE_WORD_NOTES).filter(entry => entry.formation).length, 47);
   for (const [word, entry] of Object.entries(CORE_WORD_NOTES)) {
     const stored = vocabulary.find(item => item.word === word);
@@ -241,4 +244,75 @@ test('three 900-word expansions retain independent mappings and complete teachin
     }
   }
   assert.equal(seen.size, 2700);
+});
+
+test('three additional 1000-word batches add unique, sourced usage notes and original examples', async () => {
+  const vocabulary = JSON.parse(await readFile(new URL('../public/data/vocabulary.json', import.meta.url), 'utf8'));
+  const vocabularyExamples = new Set(vocabulary.map(entry => entry.example?.trim().toLowerCase()).filter(Boolean));
+  // Explicitly reviewed dictionary lookups; do not infer roots or strip endings.
+  const referenceHeadwords = {
+    according: ['according-to'], works: ['work'], developing: ['develop'],
+    greater: ['great'], closest: ['close'], forwards: ['forward'],
+    'make-up': ['makeup'], consist: ['consist-of'], passageway: ['passage'], cobble: ['cobble-together'],
+  };
+  const dictionaryLabels = {
+    'dictionary.cambridge.org': '剑桥', 'www.oxfordlearnersdictionaries.com': '牛津',
+    'www.merriam-webster.com': '韦氏', 'www.collinsdictionary.com': '柯林斯',
+  };
+  const seenWords = new Set();
+  const seenGroups = new Set();
+  const seenSources = new Set();
+  const seenExamples = new Set();
+  const previousWords = new Set(Object.entries(CORE_WORD_NOTES).filter(([, entry]) => !/^e[456]-/.test(entry.synonymGroup)).map(([word]) => word));
+  assert.equal(previousWords.size, 3000, 'previous notes remain intact');
+  const previousExamples = new Set(Object.values(CORE_SYNONYM_GROUPS).filter(group => group.words.some(word => previousWords.has(word))).flatMap(group => group.examples.map(example => example.en.trim().toLowerCase())));
+  for (const [batch, prefix] of [[expansionFour, 'FOUR'], [expansionFive, 'FIVE'], [expansionSix, 'SIX']]) {
+    const notes = batch[`EXPANSION_${prefix}_WORD_NOTES`];
+    const groups = batch[`EXPANSION_${prefix}_SYNONYM_GROUPS`];
+    const sources = batch[`EXPANSION_${prefix}_NOTE_SOURCES`];
+    assert.equal(Object.keys(notes).length, 1000, prefix);
+    for (const [word, entry] of Object.entries(notes)) {
+      assert(!seenWords.has(word) && !previousWords.has(word), `overlapping word: ${word}`);
+      seenWords.add(word);
+      assert.deepEqual(CORE_WORD_NOTES[word], entry, word);
+      assert(!Object.hasOwn(entry, 'formation'), `unsupported formation: ${word}`);
+      const group = groups[entry.synonymGroup];
+      assert(group, word);
+      assert.equal(group.comparisonType, 'usage', word);
+      assert.deepEqual(group.words, [word]);
+      assert.equal(group.review.status, 'source-checked', word);
+      for (const sourceId of group.sourceIds) {
+        const source = sources[sourceId];
+        assert(source, `${word}: direct source`);
+        assert.equal(source.checkedAt, group.review.checkedAt, word);
+        const dictionaryLabel = dictionaryLabels[new URL(source.url).hostname];
+        if (dictionaryLabel) assert(source.title.includes(dictionaryLabel), `${word}: dictionary title matches URL`);
+        const checkedHeadwords = [word, ...(referenceHeadwords[word] || [])];
+        assert(checkedHeadwords.some(headword => new RegExp(`[/#]${headword}(?:_\\d+)?(?:$|[/#?])`).test(decodeURIComponent(source.url).toLowerCase())), `${word}: headword reference`);
+      }
+      const hint = getCoreWordHints({ word })[0];
+      assert.equal(hint.label, '用法提示');
+      assert.equal(hint.text, group.note);
+      for (const example of group.examples) {
+        const normalized = example.en.trim().toLowerCase();
+        assert.match(example.en, new RegExp(`\\b${word}\\b`, 'i'), `${word}: complete headword`);
+        assert(!seenExamples.has(normalized) && !previousExamples.has(normalized), `${word}: duplicate example`);
+        assert(!vocabularyExamples.has(normalized), `${word}: copied vocabulary example`);
+        assert.doesNotMatch(example.en, /Students often meet the word|example sentence for|placeholder/i, word);
+        seenExamples.add(normalized);
+      }
+    }
+    for (const id of Object.keys(groups)) {
+      assert(!seenGroups.has(id), `group collision: ${id}`);
+      seenGroups.add(id);
+      assert.deepEqual(CORE_SYNONYM_GROUPS[id], groups[id]);
+    }
+    for (const id of Object.keys(sources)) {
+      assert(!seenSources.has(id), `source collision: ${id}`);
+      seenSources.add(id);
+      assert.deepEqual(WORD_NOTE_SOURCES[id], sources[id]);
+    }
+  }
+  assert.equal(seenWords.size, 3000);
+  assert.equal(seenExamples.size, 6000);
 });

@@ -71,6 +71,19 @@ export default defineConfig({
     copyPublicDir: false,
     minify: 'esbuild',
     reportCompressedSize: false,
+    // Keep each added content batch within the PWA precache asset limit.
+    // Static imports retain the existing startup and offline hint behavior.
+    rolldownOptions: {
+      output: {
+        codeSplitting: {
+          groups: [
+            { name: 'word-notes-four', test: /[\\/]src[\\/]data[\\/]expansionFourWordNotes\.js$/ },
+            { name: 'word-notes-five', test: /[\\/]src[\\/]data[\\/]expansionFiveWordNotes\.js$/ },
+            { name: 'word-notes-six', test: /[\\/]src[\\/]data[\\/]expansionSixWordNotes\.js$/ },
+          ],
+        },
+      },
+    },
   },
   server: {
     watch: {
