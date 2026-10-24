@@ -1,8 +1,8 @@
-# 核心词学习提示（6000 词，2026-10-24）
+# 核心词学习提示（8699 词条，2026-10-24）
 
 ## 范围
 
-当前覆盖现有词库的 6000 个词，提供 5842 组内容（近义 92、易混 78、用法 5672），11684 条双语例句。原有 47 词、38 组构词／词族说明保留。在此前 3000 词基线上，新增三个互不重叠的 1000 词批次；包含常用功能词、日常、四六级与备考词，优先实际用法，未为凑数强配近义词或编造词根。数量不是权威词频排名。
+当前覆盖现有词库全部 8699 个词条，提供 8541 组内容（近义 92、易混 78、用法 8371），17082 条双语例句。原有 47 词、38 组构词／词族说明保留。在此前 6000 词基线上，按完整词库差集新增 900／900／899 词三个批次，补齐剩余 2699 个词条；包含常用词、备考词、短语、专名、缩写及原词条拼写核对，不为数量强配近义词或编造词根。数量不是权威词频排名。
 
 新增词表、逐组来源与分类覆盖率见 [覆盖率报告](word-notes-coverage.md)。运行 `node scripts/report-word-notes.mjs > docs/word-notes-coverage.md` 可重新生成。以下名单及核对表保留原有 100 词的来源记录。
 
@@ -105,12 +105,12 @@ big / large / small / little / begin / start / easy / simple / difficult / hard 
 
 ## 下一阶段方向与接手顺序
 
-### 1. 已扩到 6000 词，继续内容审校与覆盖补缺
+### 1. 已覆盖现有 8699 词条，继续内容审校与义项补缺
 
-- 当前基线为 6000 词。后续优先独立语言审校、补充缺少的高价值义项和有直接依据的构词，不默认继续追求更大数量。
+- 当前基线为现有全部 8699 个词条。后续优先独立语言审校、补充缺少的高价值义项和有直接依据的构词，不默认继续追求更大数量。
 - 优先补日常动作、学校／家庭、工作／出行、情绪及常见形容词，再推进四六级和备考词。沿用既有词条，不能仅凭原分类标签判断词频，也不能把批次规模称作权威词频排名。
 - 优先补有实际辨析价值、适合初学者的关系。近义、易混及词族保持区分，不为达到数量给每个词强配近义词或构词分析。
-- 新批次放在独立数据文件，通过 coreWordNotes.js 汇总。保留已有 6000 词及来源，不覆盖之前已核验的内容。
+- 新批次放在独立数据文件，通过 coreWordNotes.js 汇总。保留已有词条及来源；新增词库或修改已核验内容前核对具体范围。
 
 ### 2. 完善内容质量和覆盖率记录
 
@@ -121,8 +121,8 @@ big / large / small / little / begin / start / easy / simple / difficult / hard 
 
 ### 3. 扩展例句高亮的词形支持
 
-- 当前例句按完整英文词、忽略大小写匹配目标词，已支持 helpful/useful 等原形加粗。
-- 下一步按例句显式标注已核验的复数、过去式等词形，例如 buy/bought；不要依赖截取词干或子串匹配，避免把不相关单词加粗。
+- 已支持按例句显式标注已核验的复数、过去式、第三人称单数；首批 8 处为 begins、teaches、instructed、learned、learners、students、workers、bought。原形仍按完整词、忽略大小写匹配，不截取词干或匹配子串。
+- 继续逐条补充实际例句中的词形，不根据词尾自动生成全局词形表；复合词与缩略词按完整 token 匹配。
 - 保持学生已确认的样式：词头、构词公式和例句目标词加粗，解释文字保持常规字重；沿用 WordCard 和现有提示区域。
 
 ### 4. 扩充后的验收与发布
@@ -184,3 +184,36 @@ big / large / small / little / begin / start / easy / simple / difficult / hard 
 - 最终验收：tests/core-word-notes.test.mjs 12/12 通过；汇总、新增三个数据模块及 vite.config.js 的定向 lint 通过；完整词池／实际来源缓存／例句审计通过，旧 3000 词的映射、内容、来源及构词与提交基线逐项一致。新增 6000 条例句均含完整词头，内部、旧提示及原词库之间无完全重复；source-checked 和可展示覆盖均为 6000，无待核验、缺失来源或孤立词条。
 - 交叉抽检：另一子代理结合来源缓存抽看第四／第五批共 41 个高风险功能词与搭配，修正 onto/on 说明和 according 来源标题；主代理抽查并处理搭配范围、译文、笔误及重复句。此为模型抽检，不替代独立语言专家审校。
 - 一次 npm run build 及 PWA 生成通过，三个新增静态包约 438/422/342 kB，均在 index.html 预加载且列入 sw.js 预缓存；主 JS 约 1.77 MB，仍有既有的大包提示。本轮未重跑全量测试或浏览器，未提交、推送或部署。
+
+## 显式例句词形（2026-10-24）
+
+- `WordCard` 使用 `getHintExampleParts` 将提示例句分为普通文字和加粗片段，沿用已有 `<strong>` 样式。大小写、标点与原文保留，复合词／缩略词整体匹配；不根据字母相似、词干或词尾推断。
+- 在具体 `examples[]` 项中增加可选 `forms`；每个标注只对所在例句生效。词头必须属于当前辨析组，实际词形必须完整出现在该例句中，且 review 与来源通过原有核验门槛。草稿、无来源、其他词头、未出现或非法词形均忽略，原形匹配和提示本身继续可用。
+
+```js
+forms: [{
+  word: 'buy',
+  form: 'bought',
+  sourceIds: ['forms-mw-buy'],
+  review: { status: 'source-checked', checkedAt: '2026-10-24' },
+}]
+```
+
+- 首批标注 begins、teaches、instructed、learned、learners、students、workers、bought，共 8 处。前 7 句保持原文，buy 提示例句改为原创过去时句并同步中文译文。词形核对使用韦氏对应词条；来源作为额外参考去重展示，登记日期和逐项链接见 `word-notes-coverage.md`。仅代表本轮参考核对，不是独立专家审校。
+- 覆盖仍为 6000 词、5842 组、11684 条双语例句；基础词库、音频、学习记录、学习流程及同步协议未改，无迁移，发布前端即可。其余例句继续按原形匹配，后续逐例补标。
+- 修正 `learning-trust` 中一条历史回退测试：ability 已有提示，改用明确未收录的测试词来验证缺少译文时的基础提示。
+- 验证：16 项核心提示检查及 6 项 learning-trust 检查全部通过；改动文件 lint、`git diff --check`、一次生产构建／PWA 生成通过。仍有既有主包大于 500 kB 及 Browserslist 数据过期提示。
+- Playwright 使用隔离访客数据抽查 begin / teach / learn / learner / worker / buy / helpful / make-up / butterfly：逐例加粗与原文一致、参考链接、收起后无可聚焦来源、无运行错误；1440px 桌面与 390px 手机检查 buy / learner 无横向溢出，buy 离线提示正常。脚本与截图在忽略的 `output/playwright/example-word-forms-flow.mjs`、`word-forms-*.png`，已人工查看桌面 buy 和手机 learner 截图。未运行全量测试，未提交、推送或部署。
+
+## 补齐现有词库剩余 2699 词条（2026-10-24）
+
+- 用户确认补齐剩余学习提示并授权三个子代理并行。新增 `expansionSevenWordNotes.js`、`expansionEightWordNotes.js`、`expansionNineWordNotes.js`，分别 900／900／899 词，以完整词库与旧 6000 词的差集为唯一词池，不替换或跳过原条目。全部 8699 个词条可展示提示；各原分类覆盖率均为 100%。
+- 新增 2699 组具体用法、5398 条原创双语例句；总计 8541 组、17082 条例句。旧 6000 词的映射、内容、来源和构词与本轮开始时的快照逐项一致。没有修改基础词库、词 ID、音频、学习记录、账号隔离或同步协议。
+- 逐词核对实际义项，排除空页面、相关复合词跳转及错误义项；主要使用剑桥、牛津、韦氏、柯林斯与 Dictionary.com。FAO 术语资料、品牌第一方资料及原始研究用于相应专门词条。每个使用中的来源 URL 均有可读定义或事实证据记录；少量直连失败的条目使用明确标记的出版方检索摘录，不伪称完整页面抓取成功。source-checked 仍不代表独立专家审校。
+- 保留原键并显式登记 6 组拼写／表达映射：sepectator → spectator、precauition → precaution、semisubsistence → semi-subsistence、plunge whole-heartedly → plunge wholeheartedly into、span of life → life span、jean → jeans（裤子义）。映射不等于所有原表达均拼错，理由逐组保留在覆盖率报告中。
+- 最终语义复核撤销了把 hong／kong 推定为地名残片的做法：hong 采用韦氏独立商行义；Kong 依据原始田野研究限定为印尼采锡语境的基岩术语，不将其解释为日常 steel。旧词库中其他陈旧或不可靠的释义只在提示中澄清，基础词库清理留待单独任务。
+- 高亮按完整重音词、复合词、缩略词或多词短语匹配，保留大小写与标点；词形只使用所在例句的显式已核验标注，当前共 144 处。新增 136 处包含 destined、学位名称的所有格及本批其他自然词形；不推广为运行时词干推断。
+- 内容审计：准确新增 2699 词、5398 条例句；与旧提示、原词库以及新增批次之间无完全重复；待核验、缺失来源和孤立提示均为 0。暂存审计：`output/notes-final/audit.mjs`、`final-audit.json` 与各批次 `source-audit.json`，均在忽略目录中。逐组引用以可提交的 `word-notes-coverage.md` 为准。
+- 自动验证：`node --test tests/core-word-notes.test.mjs tests/learning-trust.test.mjs` 25/25 通过；lint、`git diff --check`、生产构建与 PWA 生成通过。语义复核后只重跑受影响的检查与构建，未执行全量测试。仍有既有主包大于 500 kB 和 Browserslist 数据过期提示。
+- 浏览器：14 个词条，覆盖 café、per capita、Antarctic、两处错拼、规范短语、专名、旧称及 hong／kong。逐例高亮、引用、折叠后焦点隐藏、无运行错误；1440px 桌面和 390px 手机无横向溢出，per capita 离线提示正常。已人工查看手机错拼提示与桌面 hong 截图。脚本为忽略的 `output/playwright/final-word-notes-flow.mjs`、`final-hong-kong-flow.mjs`，截图为 `final-notes-*.png`。
+- 最后三个内容包约 354／438／418 kB，均在页面预加载并列入 PWA 预缓存；主 JS 约 1.78 MB。无新增迁移，本轮只需发布前端；如收藏同步整包仍未上线，依 `learning-trust.md` 同步发布 Worker 与前端。未提交、推送或部署。

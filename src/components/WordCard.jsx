@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useWordBookmarks } from '../context/word-bookmarks-context';
-import { getWordHints, getWordMeaningLine } from '../utils/wordHints';
+import { getHintExampleParts, getWordHints, getWordMeaningLine } from '../utils/wordHints';
 import { speakExample, speakWord } from '../utils/speech';
 
 function WordCard({ word, showHint = false }) {
@@ -109,9 +109,8 @@ function WordCard({ word, showHint = false }) {
               </p>
               {hint.examples?.map((example) => (
                 <p className="learn-refresh-hint-example" key={example.en}>
-                  <span lang="en">{example.en.split(/(\b[a-z]+\b)/gi).map((part, partIndex) =>
-                    hint.exampleWords?.some((term) => term.toLowerCase() === part.toLowerCase())
-                      ? <strong key={partIndex}>{part}</strong> : part
+                  <span lang="en">{getHintExampleParts(example, hint.exampleWords).map((part, partIndex) =>
+                    part.highlighted ? <strong key={partIndex}>{part.text}</strong> : part.text
                   )}</span><br />
                   <span>{example.zh}</span>
                 </p>

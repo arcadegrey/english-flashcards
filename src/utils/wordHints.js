@@ -8,6 +8,37 @@ const isSourceChecked = (section) => section?.review?.status === 'source-checked
 
 const referencesFor = (section) => section.sourceIds.map((id) => ({ id, ...WORD_NOTE_SOURCES[id] }));
 
+// Treat compounds and contractions as complete tokens, never guessed stems.
+const splitExampleText = (text) => text.split(/([\p{L}\p{M}\p{N}_]+(?:[-'’][\p{L}\p{M}\p{N}_]+)*)/u).filter(Boolean);
+
+const checkedExampleForms = (example, words) => {
+  const tokens = new Set(splitExampleText(example.en || '').map(part => part.toLowerCase()));
+  return (Array.isArray(example.forms) ? example.forms : []).filter(form =>
+    isSourceChecked(form) && words.includes(form.word) &&
+    typeof form.form === 'string' && /^[a-z]+(?:[-'’][a-z]+)*$/i.test(form.form) &&
+    tokens.has(form.form.toLowerCase())
+  );
+};
+
+export const getHintExampleParts = (example, words = []) => {
+  const terms = [...new Set([...words, ...checkedExampleForms(example, words).map(item => item.form)]
+    .map(term => term.toLowerCase()))].sort((a, b) => b.length - a.length);
+  const text = example.en || '';
+  if (!terms.length) return text ? [{ text, highlighted: false }] : [];
+  const escapedTerms = terms.map(term => term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  const boundary = '[\\p{L}\\p{M}\\p{N}_]';
+  const pattern = new RegExp(`(?<![\\p{L}\\p{M}\\p{N}_-])(?<!${boundary}['’])(?:${escapedTerms.join('|')})(?![\\p{L}\\p{M}\\p{N}_-])(?!['’]${boundary})`, 'giu');
+  const parts = [];
+  let offset = 0;
+  for (const match of text.matchAll(pattern)) {
+    if (match.index > offset) parts.push({ text: text.slice(offset, match.index), highlighted: false });
+    parts.push({ text: match[0], highlighted: true });
+    offset = match.index + match[0].length;
+  }
+  if (offset < text.length) parts.push({ text: text.slice(offset), highlighted: false });
+  return parts;
+};
+
 export const getCoreWordHints = (word = {}) => {
   const key = typeof word.word === 'string' ? word.word.trim().toLowerCase() : '';
   if (!Object.hasOwn(CORE_WORD_NOTES, key)) return [];
@@ -17,13 +48,17 @@ export const getCoreWordHints = (word = {}) => {
   const hints = [];
   if (isSourceChecked(synonyms) && synonyms.words.includes(key)) {
     const isUsage = synonyms.comparisonType === 'usage';
+    const exampleWords = synonyms.correction?.canonical ? [synonyms.correction.canonical] : synonyms.words;
     const comparison = synonyms.words.filter((item) => item !== key).join(' / ');
+    const sourceIds = [...new Set([...synonyms.sourceIds, ...synonyms.examples.flatMap(example =>
+      checkedExampleForms(example, exampleWords).flatMap(form => form.sourceIds)
+    )])];
     hints.push({
       label: isUsage ? '用法提示' : synonyms.comparisonType === 'confusable' ? '易混词辨析' : '近义词辨析',
       scope: synonyms.sense,
       emphasis: isUsage ? undefined : comparison,
       text: isUsage ? synonyms.note : `${comparison}：${synonyms.note}`,
-      examples: synonyms.examples, exampleWords: synonyms.words, sources: referencesFor(synonyms),
+      examples: synonyms.examples, exampleWords, sources: referencesFor({ sourceIds }),
     });
   }
   if (isSourceChecked(formation) && [formation.base, formation.derived].includes(key)) hints.push({

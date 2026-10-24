@@ -7,9 +7,60 @@ import { EXPANSION_THREE_NOTE_SOURCES, EXPANSION_THREE_SYNONYM_GROUPS, EXPANSION
 import { EXPANSION_FOUR_NOTE_SOURCES, EXPANSION_FOUR_SYNONYM_GROUPS, EXPANSION_FOUR_WORD_NOTES } from './expansionFourWordNotes.js';
 import { EXPANSION_FIVE_NOTE_SOURCES, EXPANSION_FIVE_SYNONYM_GROUPS, EXPANSION_FIVE_WORD_NOTES } from './expansionFiveWordNotes.js';
 import { EXPANSION_SIX_NOTE_SOURCES, EXPANSION_SIX_SYNONYM_GROUPS, EXPANSION_SIX_WORD_NOTES } from './expansionSixWordNotes.js';
+import { EXPANSION_SEVEN_NOTE_SOURCES, EXPANSION_SEVEN_SYNONYM_GROUPS, EXPANSION_SEVEN_WORD_NOTES } from './expansionSevenWordNotes.js';
+import { EXPANSION_EIGHT_NOTE_SOURCES, EXPANSION_EIGHT_SYNONYM_GROUPS, EXPANSION_EIGHT_WORD_NOTES } from './expansionEightWordNotes.js';
+import { EXPANSION_NINE_NOTE_SOURCES, EXPANSION_NINE_SYNONYM_GROUPS, EXPANSION_NINE_WORD_NOTES } from './expansionNineWordNotes.js';
 
 // Original learning notes and examples; references verify facts, not imported dictionary text.
 const PILOT_WORD_NOTE_SOURCES = {
+  "forms-mw-begin": {
+    "title": "韦氏词典 · begin（例句词形）",
+    "url": "https://www.merriam-webster.com/dictionary/begin",
+    "checkedAt": "2026-10-24",
+    "use": "factual-reference"
+  },
+  "forms-mw-teach": {
+    "title": "韦氏词典 · teach（例句词形）",
+    "url": "https://www.merriam-webster.com/dictionary/teach",
+    "checkedAt": "2026-10-24",
+    "use": "factual-reference"
+  },
+  "forms-mw-instruct": {
+    "title": "韦氏词典 · instruct（例句词形）",
+    "url": "https://www.merriam-webster.com/dictionary/instruct",
+    "checkedAt": "2026-10-24",
+    "use": "factual-reference"
+  },
+  "forms-mw-learn": {
+    "title": "韦氏词典 · learn（例句词形）",
+    "url": "https://www.merriam-webster.com/dictionary/learn",
+    "checkedAt": "2026-10-24",
+    "use": "factual-reference"
+  },
+  "forms-mw-learner": {
+    "title": "韦氏词典 · learner（例句词形）",
+    "url": "https://www.merriam-webster.com/dictionary/learner",
+    "checkedAt": "2026-10-24",
+    "use": "factual-reference"
+  },
+  "forms-mw-student": {
+    "title": "韦氏词典 · student（例句词形）",
+    "url": "https://www.merriam-webster.com/dictionary/student",
+    "checkedAt": "2026-10-24",
+    "use": "factual-reference"
+  },
+  "forms-mw-worker": {
+    "title": "韦氏词典 · worker（例句词形）",
+    "url": "https://www.merriam-webster.com/dictionary/worker",
+    "checkedAt": "2026-10-24",
+    "use": "factual-reference"
+  },
+  "forms-mw-buy": {
+    "title": "韦氏词典 · buy（例句词形）",
+    "url": "https://www.merriam-webster.com/dictionary/buy",
+    "checkedAt": "2026-10-24",
+    "use": "factual-reference"
+  },
   "big-large": {
     "title": "BBC · Big / large",
     "url": "https://downloads.bbc.co.uk/learningenglish/lowerintermediate/unit13/u13_6min_vocab_similarwords.pdf",
@@ -265,6 +316,12 @@ const PILOT_CORE_SYNONYM_GROUPS = {
     "examples": [
       {
         "en": "The evening class begins at half past six.",
+        "forms": [{
+          "word": "begin",
+          "form": "begins",
+          "sourceIds": ["forms-mw-begin"],
+          "review": { "status": "source-checked", "checkedAt": "2026-10-24" }
+        }],
         "zh": "晚间课程六点半开始。"
       },
       {
@@ -545,10 +602,22 @@ const PILOT_CORE_SYNONYM_GROUPS = {
     "examples": [
       {
         "en": "My aunt teaches science at a local school.",
+        "forms": [{
+          "word": "teach",
+          "form": "teaches",
+          "sourceIds": ["forms-mw-teach"],
+          "review": { "status": "source-checked", "checkedAt": "2026-10-24" }
+        }],
         "zh": "我姑姑在当地一所学校教科学。"
       },
       {
         "en": "The guide instructed us in the use of the safety equipment.",
+        "forms": [{
+          "word": "instruct",
+          "form": "instructed",
+          "sourceIds": ["forms-mw-instruct"],
+          "review": { "status": "source-checked", "checkedAt": "2026-10-24" }
+        }],
         "zh": "向导教我们如何使用安全设备。"
       }
     ],
@@ -600,6 +669,12 @@ const PILOT_CORE_SYNONYM_GROUPS = {
       },
       {
         "en": "I learned how to describe my town during the course.",
+        "forms": [{
+          "word": "learn",
+          "form": "learned",
+          "sourceIds": ["forms-mw-learn"],
+          "review": { "status": "source-checked", "checkedAt": "2026-10-24" }
+        }],
         "zh": "我在课程中学会了如何描述自己的城镇。"
       }
     ],
@@ -621,10 +696,22 @@ const PILOT_CORE_SYNONYM_GROUPS = {
     "examples": [
       {
         "en": "Adult learners can practise speaking during the lunch break.",
+        "forms": [{
+          "word": "learner",
+          "form": "learners",
+          "sourceIds": ["forms-mw-learner"],
+          "review": { "status": "source-checked", "checkedAt": "2026-10-24" }
+        }],
         "zh": "成年学习者可以在午休时练习口语。"
       },
       {
         "en": "The students in this class are preparing a group project.",
+        "forms": [{
+          "word": "student",
+          "form": "students",
+          "sourceIds": ["forms-mw-student"],
+          "review": { "status": "source-checked", "checkedAt": "2026-10-24" }
+        }],
         "zh": "这个班的学生正在准备一个小组项目。"
       }
     ],
@@ -671,6 +758,12 @@ const PILOT_CORE_SYNONYM_GROUPS = {
     "examples": [
       {
         "en": "The workers repaired the school roof during the holidays.",
+        "forms": [{
+          "word": "worker",
+          "form": "workers",
+          "sourceIds": ["forms-mw-worker"],
+          "review": { "status": "source-checked", "checkedAt": "2026-10-24" }
+        }],
         "zh": "假期里，工人们修缮了学校的屋顶。"
       },
       {
@@ -1047,7 +1140,7 @@ const PILOT_CORE_WORD_NOTES = {
   }
 };
 
-export const WORD_NOTE_SOURCES = { ...PILOT_WORD_NOTE_SOURCES, ...DAILY_NOTE_SOURCES, ...EVERYDAY_NOTE_SOURCES, ...USAGE_NOTE_SOURCES, ...EXPANSION_ONE_NOTE_SOURCES, ...EXPANSION_TWO_NOTE_SOURCES, ...EXPANSION_THREE_NOTE_SOURCES, ...EXPANSION_FOUR_NOTE_SOURCES, ...EXPANSION_FIVE_NOTE_SOURCES, ...EXPANSION_SIX_NOTE_SOURCES };
-export const CORE_SYNONYM_GROUPS = { ...PILOT_CORE_SYNONYM_GROUPS, ...DAILY_SYNONYM_GROUPS, ...EVERYDAY_SYNONYM_GROUPS, ...USAGE_SYNONYM_GROUPS, ...EXPANSION_ONE_SYNONYM_GROUPS, ...EXPANSION_TWO_SYNONYM_GROUPS, ...EXPANSION_THREE_SYNONYM_GROUPS, ...EXPANSION_FOUR_SYNONYM_GROUPS, ...EXPANSION_FIVE_SYNONYM_GROUPS, ...EXPANSION_SIX_SYNONYM_GROUPS };
+export const WORD_NOTE_SOURCES = { ...PILOT_WORD_NOTE_SOURCES, ...DAILY_NOTE_SOURCES, ...EVERYDAY_NOTE_SOURCES, ...USAGE_NOTE_SOURCES, ...EXPANSION_ONE_NOTE_SOURCES, ...EXPANSION_TWO_NOTE_SOURCES, ...EXPANSION_THREE_NOTE_SOURCES, ...EXPANSION_FOUR_NOTE_SOURCES, ...EXPANSION_FIVE_NOTE_SOURCES, ...EXPANSION_SIX_NOTE_SOURCES, ...EXPANSION_SEVEN_NOTE_SOURCES, ...EXPANSION_EIGHT_NOTE_SOURCES, ...EXPANSION_NINE_NOTE_SOURCES };
+export const CORE_SYNONYM_GROUPS = { ...PILOT_CORE_SYNONYM_GROUPS, ...DAILY_SYNONYM_GROUPS, ...EVERYDAY_SYNONYM_GROUPS, ...USAGE_SYNONYM_GROUPS, ...EXPANSION_ONE_SYNONYM_GROUPS, ...EXPANSION_TWO_SYNONYM_GROUPS, ...EXPANSION_THREE_SYNONYM_GROUPS, ...EXPANSION_FOUR_SYNONYM_GROUPS, ...EXPANSION_FIVE_SYNONYM_GROUPS, ...EXPANSION_SIX_SYNONYM_GROUPS, ...EXPANSION_SEVEN_SYNONYM_GROUPS, ...EXPANSION_EIGHT_SYNONYM_GROUPS, ...EXPANSION_NINE_SYNONYM_GROUPS };
 export const CORE_WORD_FORMATIONS = { ...PILOT_CORE_WORD_FORMATIONS, ...DAILY_WORD_FORMATIONS };
-export const CORE_WORD_NOTES = { ...PILOT_CORE_WORD_NOTES, ...DAILY_WORD_NOTES, ...EVERYDAY_WORD_NOTES, ...USAGE_WORD_NOTES, ...EXPANSION_ONE_WORD_NOTES, ...EXPANSION_TWO_WORD_NOTES, ...EXPANSION_THREE_WORD_NOTES, ...EXPANSION_FOUR_WORD_NOTES, ...EXPANSION_FIVE_WORD_NOTES, ...EXPANSION_SIX_WORD_NOTES };
+export const CORE_WORD_NOTES = { ...PILOT_CORE_WORD_NOTES, ...DAILY_WORD_NOTES, ...EVERYDAY_WORD_NOTES, ...USAGE_WORD_NOTES, ...EXPANSION_ONE_WORD_NOTES, ...EXPANSION_TWO_WORD_NOTES, ...EXPANSION_THREE_WORD_NOTES, ...EXPANSION_FOUR_WORD_NOTES, ...EXPANSION_FIVE_WORD_NOTES, ...EXPANSION_SIX_WORD_NOTES, ...EXPANSION_SEVEN_WORD_NOTES, ...EXPANSION_EIGHT_WORD_NOTES, ...EXPANSION_NINE_WORD_NOTES };

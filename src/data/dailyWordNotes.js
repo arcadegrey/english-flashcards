@@ -428,8 +428,14 @@ export const DAILY_SYNONYM_GROUPS = {
     "note": "buy 是日常用词；purchase 表示购买时较正式，常见于交易或书面说明。本条比较动词义，不涵盖 purchase 的名词用法。",
     "examples": [
       {
-        "en": "I need to buy a notebook for my new course.",
-        "zh": "我需要为新课程买一本笔记本。"
+        "en": "I bought a notebook for my new course.",
+        "forms": [{
+          "word": "buy",
+          "form": "bought",
+          "sourceIds": ["forms-mw-buy"],
+          "review": { "status": "source-checked", "checkedAt": "2026-10-24" }
+        }],
+        "zh": "我为新课程买了一本笔记本。"
       },
       {
         "en": "Visitors can purchase tickets on the museum website.",

@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import { readFile } from 'node:fs/promises';
 import { CORE_WORD_NOTES, CORE_SYNONYM_GROUPS, CORE_WORD_FORMATIONS, WORD_NOTE_SOURCES } from '../src/data/coreWordNotes.js';
-import { getCoreWordHints, getWordHints } from '../src/utils/wordHints.js';
+import { getCoreWordHints, getHintExampleParts, getWordHints } from '../src/utils/wordHints.js';
 import { EVERYDAY_WORD_NOTES, EVERYDAY_SYNONYM_GROUPS } from '../src/data/everydayWordNotes.js';
 import { USAGE_WORD_NOTES, USAGE_SYNONYM_GROUPS } from '../src/data/usageWordNotes.js';
 import * as expansionOne from '../src/data/expansionOneWordNotes.js';
@@ -11,15 +11,196 @@ import * as expansionThree from '../src/data/expansionThreeWordNotes.js';
 import * as expansionFour from '../src/data/expansionFourWordNotes.js';
 import * as expansionFive from '../src/data/expansionFiveWordNotes.js';
 import * as expansionSix from '../src/data/expansionSixWordNotes.js';
+import * as expansionSeven from '../src/data/expansionSevenWordNotes.js';
+import * as expansionEight from '../src/data/expansionEightWordNotes.js';
+import * as expansionNine from '../src/data/expansionNineWordNotes.js';
 
-const allowedHosts = new Set(['dictionary.cambridge.org', 'downloads.bbc.co.uk', 'stella.glasgow.ac.uk', 'www.merriam-webster.com', 'www.oxfordlearnersdictionaries.com', 'www.collinsdictionary.com']);
+const allowedHosts = new Set(['dictionary.cambridge.org', 'downloads.bbc.co.uk', 'stella.glasgow.ac.uk', 'www.merriam-webster.com', 'www.oxfordlearnersdictionaries.com', 'www.collinsdictionary.com', 'www.dictionary.com', 'agrovoc.fao.org', 'www.microsoft.com', 'news.microsoft.com', 'www.guinness.com', 'www.tandfonline.com']);
 
-test('all 6000 notes match existing vocabulary without introducing word IDs or rewriting records', async () => {
+test('reviewed example forms highlight plurals, past tense and third-person verbs with visible references', () => {
+  for (const [lookup, word, form] of [
+    ['begin', 'begin', 'begins'], ['teach', 'teach', 'teaches'], ['teach', 'instruct', 'instructed'], ['learn', 'learn', 'learned'],
+    ['learner', 'learner', 'learners'], ['learner', 'student', 'students'], ['worker', 'worker', 'workers'], ['buy', 'buy', 'bought'],
+  ]) {
+    const hint = getCoreWordHints({ word: lookup })[0];
+    const example = hint.examples.find(item => item.forms?.some(entry => entry.form === form));
+    assert(example, word);
+    const parts = getHintExampleParts(example, hint.exampleWords);
+    assert.equal(parts.map(part => part.text).join(''), example.en, `${word}: preserve text`);
+    assert(parts.some(part => part.highlighted && part.text.toLowerCase() === form), word);
+    assert(hint.sources.some(source => source.id === `forms-mw-${word}`), `${word}: reference displayed`);
+    assert.equal(new Set(hint.sources.map(source => source.id)).size, hint.sources.length);
+  }
+  // A form belongs only to its annotated example, even within the same comparison.
+  const buyHint = getCoreWordHints({ word: 'buy' })[0];
+  assert.deepEqual(getHintExampleParts({ en: 'We bought tickets.' }, buyHint.exampleWords)
+    .filter(part => part.highlighted), []);
+});
+
+test('unreviewed, missing-source and unrelated forms never become highlights or visible references', () => {
+  const hint = getCoreWordHints({ word: 'buy' })[0];
+  const example = hint.examples[0];
+  const original = example.forms;
+  const valid = original[0];
+  try {
+    for (const invalid of [
+      { ...valid, review: { ...valid.review, status: 'draft' } },
+      { ...valid, review: { status: 'source-checked', checkedAt: 'not-a-date' } },
+      { ...valid, sourceIds: [] },
+      { ...valid, sourceIds: ['missing-source'] },
+      { ...valid, word: 'teach' },
+      { ...valid, form: 'buy' }, // Not present in this example.
+      { ...valid, form: 'bought a' },
+      { ...valid, form: 'bought|notebook' },
+      null,
+    ]) {
+      example.forms = [invalid];
+      assert.deepEqual(getHintExampleParts(example, hint.exampleWords).filter(part => part.highlighted), []);
+      assert(!getCoreWordHints({ word: 'buy' })[0].sources.some(source => source.id === valid.sourceIds[0]));
+    }
+    example.forms = 'bought';
+    assert.deepEqual(getHintExampleParts(example, hint.exampleWords).filter(part => part.highlighted), []);
+  } finally {
+    example.forms = original;
+  }
+  assert(getHintExampleParts({ en: 'Buy tickets. We bought them.' }, ['buy'])
+    .some(part => part.text === 'Buy' && part.highlighted));
+});
+
+test('example emphasis preserves case and punctuation without matching substrings, compounds or contractions', () => {
+  const en = "BUY, buy! buyer rebuy buy2 _buy buy-in buy's cafébuy 买buy; make-up makeup can't cant.";
+  const parts = getHintExampleParts({ en }, ['buy', 'make-up', "can't"]);
+  assert.equal(parts.map(part => part.text).join(''), en);
+  assert.deepEqual(parts.filter(part => part.highlighted).map(part => part.text), ['BUY', 'buy', 'make-up', "can't"]);
+  assert.deepEqual(getHintExampleParts({ en: 'Helpful and USEFUL, unhelpful usefulness.' }, ['helpful', 'useful'])
+    .filter(part => part.highlighted).map(part => part.text), ['Helpful', 'USEFUL']);
+});
+
+test('accented headwords and multiword phrases receive complete literal emphasis', () => {
+  for (const [en, words, expected] of [
+    ['Meet at the CAFÉ, then pass the cafébar.', ['café'], ['CAFÉ']],
+    ['Income per capita grew; the per capitalization figure is unrelated.', ['per capita'], ['per capita']],
+    ['El Niño is discussed in New Zealand.', ['el niño', 'new zealand'], ['El Niño', 'New Zealand']],
+    ['Science fiction differs from fiction.', ['fiction', 'science fiction'], ['Science fiction', 'fiction']],
+    ['A (test) and a+b are literal labels, not regex patterns.', ['(test)', 'a+b'], ['(test)', 'a+b']],
+    ["The label says 'café'; ‘per capita’ is a phrase, but café's ending differs.", ['café', 'per capita'], ['café', 'per capita']],
+  ]) {
+    const parts = getHintExampleParts({ en }, words);
+    assert.equal(parts.map(part => part.text).join(''), en);
+    assert.deepEqual(parts.filter(part => part.highlighted).map(part => part.text), expected);
+  }
+});
+
+test('every checked form belongs to its comparison, occurs as a complete token and has a direct headword source', () => {
+  let count = 0;
+  for (const group of Object.values(CORE_SYNONYM_GROUPS)) {
+    for (const example of group.examples) {
+      for (const annotation of example.forms || []) {
+        count += 1;
+        assert(group.words.includes(annotation.word));
+        assert.equal(annotation.review.status, 'source-checked');
+        assert(annotation.sourceIds.length > 0);
+        for (const id of annotation.sourceIds) {
+          const source = WORD_NOTE_SOURCES[id];
+          assert(source, id);
+          assert.equal(source.checkedAt, annotation.review.checkedAt);
+          const sourcePath = decodeURIComponent(new URL(source.url).pathname).toLowerCase();
+          assert([annotation.word, annotation.form].some(term => {
+            const literal = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            return new RegExp(`[/#]${literal}(?:_\\d+)?(?:$|[/\\s])`).test(sourcePath);
+          }), `${annotation.word}: direct word or inflected-form reference`);
+        }
+        assert(getHintExampleParts(example, group.words).some(part =>
+          part.highlighted && part.text.toLowerCase() === annotation.form.toLowerCase()));
+      }
+    }
+  }
+  assert(count >= 8, 'retain the initial eight annotations while allowing reviewed new examples');
+});
+
+test('the final 2699 notes cover the exact vocabulary difference with unique original examples and sourced corrections', async () => {
   const vocabulary = JSON.parse(await readFile(new URL('../public/data/vocabulary.json', import.meta.url), 'utf8'));
-  assert.equal(Object.keys(CORE_WORD_NOTES).length, 6000);
+  const normalize = text => text.trim().toLowerCase();
+  const previousWords = new Set(Object.entries(CORE_WORD_NOTES).filter(([, entry]) => !/^e[789]-/.test(entry.synonymGroup)).map(([word]) => word));
+  const expected = new Set(vocabulary.map(entry => normalize(entry.word)).filter(word => !previousWords.has(word)));
+  const previousExamples = new Set(Object.entries(CORE_SYNONYM_GROUPS).filter(([id]) => !/^e[789]-/.test(id)).flatMap(([, group]) => group.examples.map(example => normalize(example.en))));
+  const vocabularyExamples = new Set(vocabulary.map(entry => entry.example).filter(Boolean).map(normalize));
+  const seen = new Set(), examples = new Set(), groupsSeen = new Set(), sourcesSeen = new Set();
+  assert.equal(previousWords.size, 6000);
+  for (const [batch, prefix, count] of [[expansionSeven, 'SEVEN', 900], [expansionEight, 'EIGHT', 900], [expansionNine, 'NINE', 899]]) {
+    const notes = batch[`EXPANSION_${prefix}_WORD_NOTES`];
+    const groups = batch[`EXPANSION_${prefix}_SYNONYM_GROUPS`];
+    const sources = batch[`EXPANSION_${prefix}_NOTE_SOURCES`];
+    assert.equal(Object.keys(notes).length, count);
+    for (const [word, entry] of Object.entries(notes)) {
+      assert(!seen.has(word) && expected.has(word), word);
+      seen.add(word);
+      assert.equal(word, normalize(word));
+      assert.deepEqual(CORE_WORD_NOTES[word], entry);
+      assert(!entry.formation, `${word}: no unreviewed roots`);
+      const group = groups[entry.synonymGroup];
+      assert.equal(group.review.status, 'source-checked', word);
+      assert.equal(group.comparisonType, 'usage', word);
+      assert.deepEqual(group.words, [word]);
+      assert(group.sourceIds.length > 0);
+      for (const id of group.sourceIds) {
+        assert(sources[id], `${word}: local source`);
+        assert.equal(sources[id].checkedAt, group.review.checkedAt);
+      }
+      const hint = getCoreWordHints({ word })[0];
+      assert.equal(hint.label, '用法提示', word);
+      if (group.correction) {
+        assert(group.correction.canonical && group.correction.canonical !== word);
+        assert(group.note.includes(group.correction.canonical), `${word}: explain canonical form`);
+        assert.deepEqual(hint.exampleWords, [group.correction.canonical]);
+      }
+      for (const example of group.examples) {
+        const key = normalize(example.en);
+        assert(!examples.has(key) && !previousExamples.has(key) && !vocabularyExamples.has(key), `${word}: repeated example`);
+        assert(getHintExampleParts(example, hint.exampleWords).some(part => part.highlighted), `${word}: complete target`);
+        assert.doesNotMatch(example.en, /Students often meet the word|example sentence for|placeholder/i, word);
+        examples.add(key);
+      }
+    }
+    for (const [id, group] of Object.entries(groups)) {
+      assert(!groupsSeen.has(id)); groupsSeen.add(id);
+      assert.deepEqual(CORE_SYNONYM_GROUPS[id], group);
+    }
+    for (const [id, source] of Object.entries(sources)) {
+      assert(!sourcesSeen.has(id)); sourcesSeen.add(id);
+      assert.deepEqual(WORD_NOTE_SOURCES[id], source);
+    }
+  }
+  assert.deepEqual(seen, expected);
+  assert.equal(seen.size, 2699);
+  assert.equal(examples.size, 5398);
+});
+
+test('hong and kong retain independently sourced senses instead of unsupported place-name corrections', () => {
+  const hong = getCoreWordHints({ word: 'hong' })[0];
+  const kong = getCoreWordHints({ word: 'kong' })[0];
+  assert.deepEqual(hong.exampleWords, ['hong']);
+  assert.deepEqual(kong.exampleWords, ['kong']);
+  assert.match(hong.scope, /商行/);
+  assert.match(kong.scope, /采锡.*基岩/);
+  assert.match(kong.text, /地区|地域/);
+  assert(hong.sources.some(source => source.url === 'https://www.merriam-webster.com/dictionary/hong'));
+  assert(kong.sources.some(source => source.url.includes('10.1080/21622671.2024.2334821')));
+  for (const word of ['hong', 'kong']) {
+    const group = CORE_SYNONYM_GROUPS[CORE_WORD_NOTES[word].synonymGroup];
+    assert.equal(group.correction, undefined);
+    for (const example of group.examples) assert.doesNotMatch(example.en, /Hong Kong/);
+  }
+});
+
+test('all 8699 notes match existing vocabulary without introducing word IDs or rewriting records', async () => {
+  const vocabulary = JSON.parse(await readFile(new URL('../public/data/vocabulary.json', import.meta.url), 'utf8'));
+  const bySpelling = new Map(vocabulary.map(entry => [entry.word.trim().toLowerCase(), entry]));
+  assert.equal(Object.keys(CORE_WORD_NOTES).length, 8699);
+  assert.deepEqual(new Set(Object.keys(CORE_WORD_NOTES)), new Set(bySpelling.keys()));
   assert.equal(Object.values(CORE_WORD_NOTES).filter(entry => entry.formation).length, 47);
   for (const [word, entry] of Object.entries(CORE_WORD_NOTES)) {
-    const stored = vocabulary.find(item => item.word === word);
+    const stored = bySpelling.get(word);
     assert(stored, word);
     const frozen = Object.freeze({ ...stored });
     const before = JSON.stringify(frozen);
@@ -263,7 +444,7 @@ test('three additional 1000-word batches add unique, sourced usage notes and ori
   const seenGroups = new Set();
   const seenSources = new Set();
   const seenExamples = new Set();
-  const previousWords = new Set(Object.entries(CORE_WORD_NOTES).filter(([, entry]) => !/^e[456]-/.test(entry.synonymGroup)).map(([word]) => word));
+  const previousWords = new Set(Object.entries(CORE_WORD_NOTES).filter(([, entry]) => !/^e[4-9]-/.test(entry.synonymGroup)).map(([word]) => word));
   assert.equal(previousWords.size, 3000, 'previous notes remain intact');
   const previousExamples = new Set(Object.values(CORE_SYNONYM_GROUPS).filter(group => group.words.some(word => previousWords.has(word))).flatMap(group => group.examples.map(example => example.en.trim().toLowerCase())));
   for (const [batch, prefix] of [[expansionFour, 'FOUR'], [expansionFive, 'FIVE'], [expansionSix, 'SIX']]) {

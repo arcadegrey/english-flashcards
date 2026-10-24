@@ -17,13 +17,13 @@ test('dictionary formatting removes literal newlines and duplicate part-of-speec
   assert.equal(getWordMeaningLine({ pos: 'v.', meaning: 'n. 工作\nvt. 使运转' }), 'n. 工作；vt. 使运转');
   assert.equal(getWordMeaningLine({ pos: 'n.', meaning: '能力' }), 'n. 能力');
   assert.equal(getWordMeaningLine({ pos: 'n.' }), '暂无释义');
-  assert.match(getWordHints({ word: 'ability', example: 'She has ability.' })[1].text, /对照释义/);
+  assert.match(getWordHints({ word: 'unlistedwordfortest', example: 'An example without a translation.' })[1].text, /对照释义/);
 });
 
 test('learning hints use the given definition and example without inventing synonyms or word roots', () => {
-  const hints = getWordHints({ word: 'butterfly', meaning: '蝴蝶；蝶泳', example: 'A butterfly landed on the flower.' });
+  const hints = getWordHints({ word: 'unlistedwordfortest', meaning: '蝴蝶；蝶泳', example: 'A butterfly landed on the flower.' });
   assert.equal(hints[0].text, '蝴蝶；蝶泳');
-  assert.match(hints[1].text, /butterfly/);
+  assert.match(hints[1].text, /unlistedwordfortest/);
   assert.deepEqual(hints.map(hint => hint.label), ['词义回顾', '例句练习', '回忆练习']);
   assert.doesNotMatch(JSON.stringify(hints), /but \+ terfly|词根|近义/);
   assert.match(getWordHints({})[1].text, /没有例句/);
