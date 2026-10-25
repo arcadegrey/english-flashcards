@@ -3,6 +3,8 @@ import WordCard from './WordCard';
 import QuickMenu from './QuickMenu';
 import AppLayout from './layout/AppLayout';
 import { speakWord } from '../utils/speech';
+import { matchesVocabularyQuery } from '../../shared/vocabularyAliases.js';
+import { isRetiredVocabularyId } from '../../shared/retiredVocabulary.js';
 
 const SearchIcon = (
   <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -53,17 +55,14 @@ function WordCollectionView({
     const keyword = query.trim().toLowerCase();
     if (!keyword) return words;
 
-    return words.filter(
-      (word) =>
-        word.word.toLowerCase().includes(keyword) ||
-        word.meaning.toLowerCase().includes(keyword) ||
-        (word.phonetic || '').toLowerCase().includes(keyword)
-    );
+    return words.filter((word) => matchesVocabularyQuery(word, keyword));
   }, [query, words]);
 
   const safeCurrentIndex =
     filteredWords.length > 0 ? Math.min(currentIndex, filteredWords.length - 1) : 0;
   const currentWord = filteredWords[safeCurrentIndex] || null;
+  const collectionStatus = statusMessage || (isRetiredVocabularyId(currentWord?.id)
+    ? '此词已移出当前词库，仅保留收藏和历史记录，不再加入每日学习和新作业。' : '');
   const progressCurrent = filteredWords.length > 0 ? safeCurrentIndex + 1 : 0;
   const currentWordId = currentWord?.id ?? null;
   const showHint = currentWordId != null && String(hintOpenForWordId) === String(currentWordId);
@@ -232,7 +231,7 @@ function WordCollectionView({
           </section>
         )}
 
-        {statusMessage && <p className="classroom-helper" role="status">{statusMessage} {onRetry && <button type="button" className="collection-tool-button" onClick={onRetry}>重试加载</button>}</p>}
+        {collectionStatus && <p className="classroom-helper" role="status">{collectionStatus} {onRetry && <button type="button" className="collection-tool-button" onClick={onRetry}>重试加载</button>}</p>}
         {words.length === 0 ? (
           <article className="collection-empty-state">
             <img src={emptyArtSrc} alt="" aria-hidden="true" />

@@ -1,4 +1,5 @@
 import { WordBookmarksContext } from './context/word-bookmarks-context'
+import { RETIRED_VOCABULARY, activeProgressIds } from '../shared/retiredVocabulary.js'
 import { mergeWordBookmarks } from '../shared/wordBookmarks.js'
 import WordAssignmentSession from './components/classroom/WordAssignmentSession'
 import { wrongReadingQuestions } from '../shared/readingAttempts.js'
@@ -610,6 +611,13 @@ function AppContent() {
     counts.all = Number(toeflManifest?.sourceTotal) || Number(ieltsManifest?.sourceTotal) || allVocabulary.length
     return counts
   }, [allVocabulary, ieltsManifest, toeflManifest])
+
+  const statisticsWordCount = useMemo(() => {
+    const recordedIds = new Set([...learnedWords, ...masteredWords].map(String))
+    const archivedCount = RETIRED_VOCABULARY.filter(word => recordedIds.has(String(word.id))).length
+    const activeCount = Number(toeflManifest?.sourceTotal) || Number(ieltsManifest?.sourceTotal) || vocabulary.length
+    return activeCount + customWords.length + archivedCount
+  }, [customWords.length, ieltsManifest, learnedWords, masteredWords, toeflManifest, vocabulary.length])
 
   const planCategoryName = categories.find((category) => category.id === studyPlanCategory)?.name || '全部单词'
   const planVocabulary = useMemo(() => getPlanVocabulary(allVocabulary, studyPlanCategory), [allVocabulary, studyPlanCategory])
@@ -2423,7 +2431,8 @@ function AppContent() {
 
   const vocabularyMap = useMemo(() => {
     const map = new Map()
-    allVocabulary.forEach((word) => {
+    // Historical collections can still resolve old IDs; active courses only use allVocabulary.
+    ;[...RETIRED_VOCABULARY, ...allVocabulary].forEach((word) => {
       map.set(word.id, word)
       map.set(String(word.id), word)
     })
@@ -2441,7 +2450,7 @@ function AppContent() {
   )
 
   const reviewBaseWordList = useMemo(() => {
-    const ids = dedupeIdList([...learnedWords, ...masteredWords])
+    const ids = dedupeIdList(activeProgressIds([...learnedWords, ...masteredWords]))
     return ids.map((id) => vocabularyMap.get(id)).filter(Boolean)
   }, [learnedWords, masteredWords, vocabularyMap])
 
@@ -2670,7 +2679,7 @@ function AppContent() {
             })}
             accountNotice={homeAccountNotice}
             wordCount={planWordCount}
-            remainingWordCount={studyPlanCategory === 'all' ? Math.max(0, planWordCount - learnedWords.length - masteredWords.length) : planWordStats.remaining}
+            remainingWordCount={studyPlanCategory === 'all' ? Math.max(0, planWordCount - new Set([...activeProgressIds(learnedWords), ...activeProgressIds(masteredWords)].map(String)).size) : planWordStats.remaining}
             planCategoryName={planCategoryName}
             isPreparingWords={planPreparing}
             planError={planPreparationError}
@@ -2970,7 +2979,7 @@ function AppContent() {
             <Statistics
               learnedWords={learnedWords}
               masteredWords={masteredWords}
-              totalWords={allVocabulary.length}
+              totalWords={statisticsWordCount}
               wrongWords={wrongWords}
               studyHistory={studyHistory}
               dueReviewCount={todayReviewWordList.length}

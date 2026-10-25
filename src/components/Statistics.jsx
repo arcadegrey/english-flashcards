@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
 import { calculateStudyStreak, getLast7StudyDays, summarizeStudyHistory } from '../utils/learningMetrics';
+import { activeProgressIds } from '../../shared/retiredVocabulary.js';
 
 const normalizeHistory = (value) => (Array.isArray(value) ? value : []);
 
@@ -39,7 +40,7 @@ function Statistics({
     ),
     1
   );
-  const learnedCount = learnedWords.length;
+  const learnedCount = activeProgressIds(learnedWords).length;
   const masteredCount = masteredWords.length;
   const streak = calculateStudyStreak(safeHistory);
   const masteredPercent = totalWords > 0 ? Math.round((masteredCount / totalWords) * 100) : 0;

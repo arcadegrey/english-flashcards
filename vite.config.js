@@ -31,7 +31,7 @@ const copyPublicAppAssets = () => ({
   async writeBundle() {
     const publicDir = path.resolve('public')
     const outDir = path.resolve('dist')
-    const ignored = new Set(['audio', 'data', '.DS_Store'])
+    const ignored = new Set(['audio', 'audio-updates', 'data', '.DS_Store'])
 
     await mkdir(outDir, { recursive: true })
 
@@ -142,7 +142,7 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,json,ico,txt,woff2,webmanifest}'],
-        globIgnores: ['**/audio/**', '**/data/**/*.json'],
+        globIgnores: ['**/audio/**', '**/audio-updates/**', '**/data/**/*.json'],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,

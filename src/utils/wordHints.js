@@ -1,4 +1,5 @@
 import { CORE_WORD_NOTES, CORE_SYNONYM_GROUPS, CORE_WORD_FORMATIONS, WORD_NOTE_SOURCES } from '../data/coreWordNotes.js';
+import { vocabularyNoteKey } from '../../shared/vocabularyAliases.js';
 
 const isSourceChecked = (section) => section?.review?.status === 'source-checked' &&
   /^\d{4}-\d{2}-\d{2}$/.test(section.review.checkedAt) &&
@@ -40,7 +41,7 @@ export const getHintExampleParts = (example, words = []) => {
 };
 
 export const getCoreWordHints = (word = {}) => {
-  const key = typeof word.word === 'string' ? word.word.trim().toLowerCase() : '';
+  const key = vocabularyNoteKey(word);
   if (!Object.hasOwn(CORE_WORD_NOTES, key)) return [];
   const entry = CORE_WORD_NOTES[key];
   const synonyms = CORE_SYNONYM_GROUPS[entry.synonymGroup];

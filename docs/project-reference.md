@@ -12,15 +12,17 @@ Low-frequency project details moved out of `PROJECT_CONTEXT.md` to keep startup 
 - Generate static example audio: `npm run tts:generate-examples`
 - Upload word static audio to R2: `npm run audio:upload-r2`
 - Upload example static audio to R2: `npm run audio:upload-examples-r2`
+- Upload versioned repair/replacement audio: `npm run audio:upload-updates-r2 -- --bucket english-flashcards-audio`
+- Verify every published versioned MP3: `npm run audio:verify-updates-r2`
 
 ## Vocabulary Snapshot
 
-- Full unique word count: 8699
-- `core.json`: 3478 non-TOEFL/IELTS core words
-- Daily: 2026
-- CET4: 2283
+- Active learning records: 8699 (8697 distinct headwords); 247 retired records remain reference-only. IDs 8700–8946 are new practical entries; see `practical-vocabulary-replacement-2026-10-25.md`.
+- `core.json`: 3481 non-TOEFL/IELTS core words
+- Daily: 2029
+- CET4: 2075
 - CET6: 1520
-- TOEFL: 3254
+- TOEFL: 3251
 - IELTS: 3257 unique words; Lists 1-56, 20 topics, 3335 list entries
 
 ## Vocabulary Loading API
@@ -89,6 +91,7 @@ Static audio:
 - Example audio: `public/audio/examples/{voice}/{id}.mp3`
 - R2 bucket: `english-flashcards-audio`
 - Public URL: `https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev`
+- Versioned repairs/replacements: `audio-updates/<batch>/<word|example>/<voice>/<id>-<revision>.mp3`. Local MP3s are ignored and excluded from frontend builds; commit manifests and mappings only. Upload/verify R2 before pushing the application. See `audio-r2-release-2026-10-25.md`.
 - Completed voices: `af_bella`, `am_michael`, `bf_emma`, `bm_george`
 - 2026-06-28: New audio uploaded to R2 for IDs 5400-8699: 13,200 word MP3 files and 13,200 example MP3 files. Both manifests were updated and public samples returned `200 OK`.
 - 2026-07-01: `scripts/generate_kokoro_example_audio.py` became hash-aware. It reads `public/audio/examples/manifest.json` `exampleHashes`, so changed example text is queued even when an MP3 already exists. `--dry-run --start 5399` returned `pendingFiles=0`.

@@ -16,6 +16,7 @@ node_modules
 public/audio/words/**/*.mp3
 public/audio/examples/**/*.mp3
 public/audio/examples/manifest.json
+public/audio-updates/**/*.mp3
 dist
 dist-ssr
 *.local

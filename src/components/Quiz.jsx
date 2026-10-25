@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { speakWord } from '../utils/speech';
 import { playSuccessChime } from '../utils/feedback';
 import CorrectAnswerCelebration from './CorrectAnswerCelebration';
+import { distinctVocabularyWords } from '../../shared/vocabularyAliases.js';
 
 const createQuizRound = (vocabulary = [], optionVocabulary = []) => {
   if (!Array.isArray(vocabulary) || vocabulary.length === 0) {
@@ -17,13 +18,13 @@ const createQuizRound = (vocabulary = [], optionVocabulary = []) => {
       : vocabulary.filter((word) => word.id !== correctWord.id);
 
   const shuffledDistractors = [...distractorBase].sort(() => Math.random() - 0.5);
-  const wrongOptions = shuffledDistractors.slice(0, 3);
+  const wrongOptions = distinctVocabularyWords(shuffledDistractors, [correctWord]).slice(0, 3);
 
   if (wrongOptions.length < 3) {
     const fallbackPool = vocabulary.filter(
       (word) => word.id !== correctWord.id && !wrongOptions.some((wrong) => wrong.id === word.id)
     );
-    wrongOptions.push(...fallbackPool.slice(0, 3 - wrongOptions.length));
+    wrongOptions.push(...distinctVocabularyWords(fallbackPool, [correctWord, ...wrongOptions]).slice(0, 3 - wrongOptions.length));
   }
 
   return {

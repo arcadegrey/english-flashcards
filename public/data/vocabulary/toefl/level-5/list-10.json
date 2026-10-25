@@ -281,8 +281,8 @@
   },
   {
     "id": 3318,
-    "word": "precauition",
-    "phonetic": "/prɪˈkɔːʃn/",
+    "word": "precaution",
+    "phonetic": "/prɪˈkɔːʃən/",
     "pos": "n.",
     "meaning": "预防措施/谨慎",
     "example": "As a precaution, we backed up all the files.",
@@ -292,7 +292,10 @@
       "toefl"
     ],
     "level": "5",
-    "list": "10"
+    "list": "10",
+    "aliases": [
+      "precauition"
+    ]
   },
   {
     "id": 3319,

@@ -142,7 +142,8 @@ test('a report can publish an exact weak-word set with frozen server-scored assi
     await f.api(2, '/exam-attempts', 'POST', makeAttempt());
     const wordIds = (await f.api(1, report)).body.suggestedWords.map(word => word.id);
     const path = `/classes/${f.classroom.id}/word-assignments`;
-    const body = { category: 'all', wordIds, dueAt: new Date(Date.now() + 86400000).toISOString() };
+    // Keep this assignment in the report's UTC week, including Sunday runs.
+    const body = { category: 'all', wordIds, dueAt: new Date(Date.parse(`${weekRange().end}T00:00:00.000Z`) - 1).toISOString() };
     const published = await f.api(1, path, 'POST', body);
     assert.equal(published.status, 201, JSON.stringify(published.body));
     assert.deepEqual(published.body.assignment.scope.wordIds, wordIds);

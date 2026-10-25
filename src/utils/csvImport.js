@@ -1,3 +1,4 @@
+import { normalizeVocabularyHeadword } from '../../shared/vocabularyAliases.js';
 import { normalizeNumericTag, parseCategoryList } from './wordCategories.js';
 
 const DEFAULT_HEADERS = ['word', 'phonetic', 'pos', 'meaning', 'example', 'exampleCn', 'category', 'level', 'list'];
@@ -143,7 +144,7 @@ export const parseVocabularyCsv = ({
   }
 
   const existingWordSet = new Set(
-    existingWords.map((item) => normalizeText(item.word).toLowerCase()).filter(Boolean)
+    existingWords.map((item) => normalizeVocabularyHeadword(item.word)).filter(Boolean)
   );
   const categorySet = new Set((validCategoryIds || []).map((id) => String(id).toLowerCase()));
 
@@ -168,7 +169,7 @@ export const parseVocabularyCsv = ({
       return;
     }
 
-    const duplicateKey = word.toLowerCase();
+    const duplicateKey = normalizeVocabularyHeadword(word);
     if (!allowDuplicateWords && existingWordSet.has(duplicateKey)) {
       skippedDuplicate += 1;
       return;

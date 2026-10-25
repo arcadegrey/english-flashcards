@@ -1,3 +1,6 @@
+import { vocabularyNoteKey } from '../shared/vocabularyAliases.js';
+import { RETIRED_VOCABULARY } from '../shared/retiredVocabulary.js';
+import { PRACTICAL_WORD_NOTES } from '../src/data/practicalWordNotes.js';
 import { readFile } from 'node:fs/promises';
 import { CORE_WORD_NOTES, CORE_SYNONYM_GROUPS, CORE_WORD_FORMATIONS, WORD_NOTE_SOURCES } from '../src/data/coreWordNotes.js';
 import { EVERYDAY_WORD_NOTES } from '../src/data/everydayWordNotes.js';
@@ -20,7 +23,7 @@ const exampleForms = groups.flatMap(group => group.examples.flatMap(example => e
 const sections = [...groups, ...Object.values(CORE_WORD_FORMATIONS), ...exampleForms];
 const pending = sections.filter(section => section.review?.status !== 'source-checked');
 const missingSources = sections.filter(section => !section.sourceIds?.length || section.sourceIds.some(id => !Object.hasOwn(WORD_NOTE_SOURCES, id)));
-const orphaned = [...words].filter(word => !vocabulary.some(entry => entry.word.trim().toLowerCase() === word));
+const orphaned = [...words].filter(word => ![...vocabulary, ...RETIRED_VOCABULARY].some(entry => vocabularyNoteKey(entry) === word));
 const displayed = [...words].filter(word => getCoreWordHints({ word }).length);
 const withFormation = Object.values(CORE_WORD_NOTES).filter(entry => entry.formation).length;
 const synonymCount = groups.filter(group => !group.comparisonType || group.comparisonType === 'synonym').length;
@@ -29,9 +32,9 @@ const usageCount = groups.filter(group => group.comparisonType === 'usage').leng
 const corrections = groups.filter(group => group.correction?.canonical);
 const lines = [
   '# 核心词提示覆盖率与新增批次来源', '',
-  '汇总日期：2026-10-24（逐条核对日期保留在来源与内容中）。运行 `node scripts/report-word-notes.mjs > docs/word-notes-coverage.md` 可重新生成。', '',
+  '汇总日期：2026-10-25（逐条核对日期保留在来源与内容中）。运行 `node scripts/report-word-notes.mjs > docs/word-notes-coverage.md` 可重新生成。', '',
   '## 覆盖口径', '',
-  `- 原词库独立词条：${vocabulary.length}；已登记提示：${words.size}；可展示提示：${displayed.length}。`,
+  `- 活动词库记录（稳定 ID）：${vocabulary.length}；历史兼容记录：${RETIRED_VOCABULARY.length}；已登记提示（含历史）：${words.size}；可展示提示（含历史）：${displayed.length}。`,
   `- 内容：${groups.length} 组（近义 ${synonymCount}；易混 ${confusableCount}；单词用法 ${usageCount}），共 ${groups.reduce((sum, group) => sum + group.examples.length, 0)} 条双语例句。`,
   `- 构词／词族说明：${withFormation} 词，${Object.keys(CORE_WORD_FORMATIONS).length} 组。此次保留原有构词，不为凑覆盖率增加推断。`,
   `- 显式例句词形：${exampleForms.length} 处，逐例登记词头、实际词形、来源和核对状态；不自动推断未标注词形。`,
@@ -45,8 +48,8 @@ const lines = [
 ];
 for (const category of ['daily', 'cet4', 'cet6', 'toefl', 'ielts']) {
   const entries = vocabulary.filter(entry => (entry.categories || [entry.category]).includes(category));
-  const covered = entries.filter(entry => words.has(entry.word.trim().toLowerCase()));
-  lines.push(`| ${category} | ${entries.length} | ${covered.length} | ${(covered.length / entries.length * 100).toFixed(2)}% | ${covered.filter(entry => CORE_WORD_NOTES[entry.word.trim().toLowerCase()].formation).length} |`);
+  const covered = entries.filter(entry => words.has(vocabularyNoteKey(entry)));
+  lines.push(`| ${category} | ${entries.length} | ${covered.length} | ${(covered.length / entries.length * 100).toFixed(2)}% | ${covered.filter(entry => CORE_WORD_NOTES[vocabularyNoteKey(entry)].formation).length} |`);
 }
 lines.push('', '## 规范拼写与表达映射', '',
   '| 原词条 | 例句目标 | 核对说明 | 来源 |', '| --- | --- | --- | --- |');
@@ -65,7 +68,7 @@ for (const group of groups) {
   }
 }
 lines.push('', '## 新增批次与逐组来源', '',
-  '300 词基线后先通过三个各 900 词的独立词池扩至 3000 词，再新增三个各 1000 词的独立词池扩至 6000 词；最后通过 900／900／899 词三批补齐剩余 2699 个词条。每组两条原创双语例句，明确词性及适用词义；真实易混关系标为易混，无合适比较时使用单词用法笔记，不强配近义词或词根。未变更词 ID、分类、释义、音频、学习进度或同步数据。', '',
+  '300 词基线后先通过三个各 900 词的独立词池扩至 3000 词，再新增三个各 1000 词的独立词池扩至 6000 词；最后通过 900／900／899 词三批补齐剩余 2699 个词条。每组两条原创双语例句，明确词性及适用词义；真实易混关系标为易混，无合适比较时使用单词用法笔记，不强配近义词或词根。该提示扩充阶段未变更词 ID、分类或学习进度。后续基础词库的 33 条修复及版本音频见 `vocabulary-repair-2026-10-24.md`；两个更正后的同形词按 ID 保留原提示键。', '',
   '核对过程中部分剑桥词典直连返回 403，词条事实使用可读取的韦氏词典；关键语法另用剑桥 English Grammar Today；部分词形或义项补用牛津、柯林斯词典。参考链接保留在学习提示中。新增的第四至第六批次逐词读取剑桥／牛津词条，必要时补查韦氏词条或明确的词形变体，并按具体词性和义项核对；不把请求成功自动视为独立语言审校。', '');
 for (const [title, notes] of [
   ['批次 A：生活、学校与出行', EVERYDAY_WORD_NOTES],
@@ -79,6 +82,7 @@ for (const [title, notes] of [
   ['扩充七：剩余词库第一批', EXPANSION_SEVEN_WORD_NOTES],
   ['扩充八：剩余词库第二批', EXPANSION_EIGHT_WORD_NOTES],
   ['扩充九：剩余词库第三批', EXPANSION_NINE_WORD_NOTES],
+  ['实用替换批次：2026-10-25（247条；历史条目保留原提示）', PRACTICAL_WORD_NOTES],
 ]) {
   lines.push(`### ${title}`, '', `词条数：${Object.keys(notes).length}。`, '', '| 词组 | 类型与适用范围 | 核对来源 |', '| --- | --- | --- |');
   for (const id of new Set(Object.values(notes).map(entry => entry.synonymGroup))) {

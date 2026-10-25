@@ -1,4 +1,5 @@
 import { storage } from './storage';
+import { correctedVocabularyAudioUrl } from '../../shared/vocabularyAudio.js';
 
 export const DEFAULT_KOKORO_TTS_ENDPOINT =
   'http://127.0.0.1:8880/v1/audio/speech';
@@ -225,7 +226,8 @@ const speakWithStaticKokoroWordAudio = async (word) => {
   }
 
   const baseUrl = getWordAudioBaseUrl().replace(/\/$/, '');
-  await playAudioSource(`${baseUrl}/${encodeURIComponent(voice)}/${encodeURIComponent(wordId)}.mp3`);
+  await playAudioSource(correctedVocabularyAudioUrl(word, 'word', voice)
+    || `${baseUrl}/${encodeURIComponent(voice)}/${encodeURIComponent(wordId)}.mp3`);
 };
 
 const speakWithStaticKokoroExampleAudio = async (word) => {
@@ -239,7 +241,8 @@ const speakWithStaticKokoroExampleAudio = async (word) => {
 
   for (const voice of getExampleVoiceCandidates()) {
     try {
-      await playAudioSource(`${baseUrl}/${encodeURIComponent(voice)}/${encodeURIComponent(wordId)}.mp3`);
+      await playAudioSource(correctedVocabularyAudioUrl(word, 'example', voice)
+        || `${baseUrl}/${encodeURIComponent(voice)}/${encodeURIComponent(wordId)}.mp3`);
       return;
     } catch (error) {
       failures.push(error);

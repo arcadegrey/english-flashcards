@@ -1,0 +1,3213 @@
+[
+  {
+    "id": 8700,
+    "word": "a",
+    "phonetic": "/ə/",
+    "pos": "article",
+    "meaning": "一；一个（不定冠词）",
+    "example": "I need a clean cup.",
+    "exampleCn": "我需要一个干净的杯子。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8701,
+    "word": "an",
+    "phonetic": "/æn/",
+    "pos": "article",
+    "meaning": "一；一个（用于元音音素前）",
+    "example": "He ate an orange after lunch.",
+    "exampleCn": "他午饭后吃了一个橙子。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8702,
+    "word": "as",
+    "phonetic": "/æz/",
+    "pos": "conj.",
+    "meaning": "当……时；随着",
+    "example": "The lights came on as the sun went down.",
+    "exampleCn": "太阳落山时，灯亮了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8703,
+    "word": "at",
+    "phonetic": "/ət/",
+    "pos": "prep.",
+    "meaning": "在（具体地点或时刻）",
+    "example": "Meet me at the station.",
+    "exampleCn": "在车站和我见面。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8704,
+    "word": "because of",
+    "phonetic": "/bɪˈkɒz əv/",
+    "pos": "prep.",
+    "meaning": "因为；由于",
+    "example": "The match stopped because of the rain.",
+    "exampleCn": "比赛因为下雨而中止了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8705,
+    "word": "blonde",
+    "phonetic": "/blɒnd/",
+    "pos": "adj.",
+    "meaning": "金发的",
+    "example": "The blonde actor waved to the crowd.",
+    "exampleCn": "那位金发演员向人群挥手。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8706,
+    "word": "cannot",
+    "phonetic": "/ˈkænɒt/",
+    "pos": "modal",
+    "meaning": "不能；无法",
+    "example": "I cannot open this window.",
+    "exampleCn": "我打不开这扇窗。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8707,
+    "word": "do",
+    "phonetic": "/duː/",
+    "pos": "v.",
+    "meaning": "做；干",
+    "example": "Please do your homework before dinner.",
+    "exampleCn": "请在晚饭前做作业。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8708,
+    "word": "email",
+    "phonetic": "/ˈiːmeɪl/",
+    "pos": "n.",
+    "meaning": "电子邮件",
+    "example": "I sent an email to the hotel.",
+    "exampleCn": "我给酒店发了一封电子邮件。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8709,
+    "word": "euro",
+    "phonetic": "/ˈjʊərəʊ/",
+    "pos": "n.",
+    "meaning": "欧元",
+    "example": "The ticket costs one euro.",
+    "exampleCn": "这张票一欧元。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8710,
+    "word": "go",
+    "phonetic": "/ɡəʊ/",
+    "pos": "v.",
+    "meaning": "去；走",
+    "example": "We go to the market on Sundays.",
+    "exampleCn": "我们星期天去市场。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8711,
+    "word": "goodbye",
+    "phonetic": "/ˌɡʊdˈbaɪ/",
+    "pos": "interj.",
+    "meaning": "再见",
+    "example": "She smiled and said goodbye.",
+    "exampleCn": "她微笑着说了再见。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8712,
+    "word": "have to",
+    "phonetic": "/hæv tə/",
+    "pos": "modal",
+    "meaning": "必须；不得不",
+    "example": "I have to leave before six.",
+    "exampleCn": "我必须在六点前离开。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8713,
+    "word": "he",
+    "phonetic": "/hi/",
+    "pos": "pron.",
+    "meaning": "他（主格）",
+    "example": "He works at the library.",
+    "exampleCn": "他在图书馆工作。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8714,
+    "word": "hey",
+    "phonetic": "/heɪ/",
+    "pos": "interj.",
+    "meaning": "嘿；喂（用于招呼或引起注意）",
+    "example": "Hey, you left your bag here.",
+    "exampleCn": "嘿，你把包落在这里了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8715,
+    "word": "hi",
+    "phonetic": "/haɪ/",
+    "pos": "interj.",
+    "meaning": "你好；嗨",
+    "example": "Hi, it is nice to meet you.",
+    "exampleCn": "你好，很高兴认识你。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8716,
+    "word": "hobby",
+    "phonetic": "/ˈhɒbi/",
+    "pos": "n.",
+    "meaning": "业余爱好",
+    "example": "Reading is my favourite hobby.",
+    "exampleCn": "阅读是我最喜欢的业余爱好。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8717,
+    "word": "I",
+    "phonetic": "/aɪ/",
+    "pos": "pron.",
+    "meaning": "我（主格）",
+    "example": "I walk to work every morning.",
+    "exampleCn": "我每天早上步行上班。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8718,
+    "word": "ice cream",
+    "phonetic": "/ˌaɪs ˈkriːm/",
+    "pos": "n.",
+    "meaning": "冰淇淋",
+    "example": "We shared some ice cream after dinner.",
+    "exampleCn": "晚饭后我们分着吃了一些冰淇淋。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8719,
+    "word": "if",
+    "phonetic": "/ɪf/",
+    "pos": "conj.",
+    "meaning": "如果",
+    "example": "Call me if you need help.",
+    "exampleCn": "如果需要帮助，就给我打电话。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8720,
+    "word": "in",
+    "phonetic": "/ɪn/",
+    "pos": "prep.",
+    "meaning": "在……里面",
+    "example": "Your keys are in the drawer.",
+    "exampleCn": "你的钥匙在抽屉里。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8721,
+    "word": "it",
+    "phonetic": "/ɪt/",
+    "pos": "pron.",
+    "meaning": "它",
+    "example": "The box is heavy, but it is empty.",
+    "exampleCn": "箱子很重，但它是空的。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8722,
+    "word": "me",
+    "phonetic": "/mi/",
+    "pos": "pron.",
+    "meaning": "我（宾格）",
+    "example": "Please send me the address.",
+    "exampleCn": "请把地址发给我。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8723,
+    "word": "my",
+    "phonetic": "/maɪ/",
+    "pos": "det.",
+    "meaning": "我的",
+    "example": "This is my seat.",
+    "exampleCn": "这是我的座位。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8724,
+    "word": "next to",
+    "phonetic": "/nekst tə/",
+    "pos": "prep.",
+    "meaning": "紧挨着；在……旁边",
+    "example": "The bank is next to the bakery.",
+    "exampleCn": "银行紧挨着面包店。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8725,
+    "word": "no",
+    "phonetic": "/nəʊ/",
+    "pos": "det.",
+    "meaning": "没有；无",
+    "example": "There is no milk left.",
+    "exampleCn": "没有剩下的牛奶了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8726,
+    "word": "no one",
+    "phonetic": "/ˈnəʊ wʌn/",
+    "pos": "pron.",
+    "meaning": "没有人",
+    "example": "No one answered the door.",
+    "exampleCn": "没有人来开门。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8727,
+    "word": "o'clock",
+    "phonetic": "/əˈklɒk/",
+    "pos": "adv.",
+    "meaning": "……点钟（整点）",
+    "example": "The shop opens at eight o'clock.",
+    "exampleCn": "商店八点整开门。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8728,
+    "word": "of",
+    "phonetic": "/əv/",
+    "pos": "prep.",
+    "meaning": "……的；属于……",
+    "example": "The roof of the house is red.",
+    "exampleCn": "这所房子的屋顶是红色的。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8729,
+    "word": "oh",
+    "phonetic": "/əʊ/",
+    "pos": "interj.",
+    "meaning": "哦；啊",
+    "example": "Oh, I left the lights on.",
+    "exampleCn": "哦，我忘了关灯。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8730,
+    "word": "OK",
+    "phonetic": "/əʊˈkeɪ/",
+    "pos": "adj.",
+    "meaning": "可以的；没问题的",
+    "example": "Is this seat OK for you?",
+    "exampleCn": "这个座位你觉得可以吗？",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8731,
+    "word": "on",
+    "phonetic": "/ɒn/",
+    "pos": "prep.",
+    "meaning": "在……上面",
+    "example": "Your glasses are on the table.",
+    "exampleCn": "你的眼镜在桌上。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8732,
+    "word": "or",
+    "phonetic": "/ɔː(r)/",
+    "pos": "conj.",
+    "meaning": "或者；还是",
+    "example": "Would you like tea or coffee?",
+    "exampleCn": "你想喝茶还是咖啡？",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8733,
+    "word": "passport",
+    "phonetic": "/ˈpɑːspɔːt/",
+    "pos": "n.",
+    "meaning": "护照",
+    "example": "Please show your passport at the desk.",
+    "exampleCn": "请在柜台出示护照。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8734,
+    "word": "so",
+    "phonetic": "/səʊ/",
+    "pos": "conj.",
+    "meaning": "所以；因此",
+    "example": "The shop was closed, so we went home.",
+    "exampleCn": "商店关门了，所以我们回家了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8735,
+    "word": "the",
+    "phonetic": "/ðə/",
+    "pos": "article",
+    "meaning": "这；那（定冠词）",
+    "example": "Please close the door before you leave.",
+    "exampleCn": "离开前请关上门。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8736,
+    "word": "to",
+    "phonetic": "/tə/",
+    "pos": "prep.",
+    "meaning": "到；向",
+    "example": "We walked to the station.",
+    "exampleCn": "我们步行去了车站。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8737,
+    "word": "T-shirt",
+    "phonetic": "/ˈtiː ʃɜːt/",
+    "pos": "n.",
+    "meaning": "T恤衫",
+    "example": "He wore a blue T-shirt.",
+    "exampleCn": "他穿了一件蓝色T恤衫。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8738,
+    "word": "TV",
+    "phonetic": "/ˌtiː ˈviː/",
+    "pos": "n.",
+    "meaning": "电视；电视节目",
+    "example": "We watched TV after dinner.",
+    "exampleCn": "晚饭后我们看了电视。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8739,
+    "word": "umbrella",
+    "phonetic": "/ʌmˈbrelə/",
+    "pos": "n.",
+    "meaning": "雨伞",
+    "example": "Take an umbrella because it may rain.",
+    "exampleCn": "带把伞吧，因为可能下雨。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8740,
+    "word": "up",
+    "phonetic": "/ʌp/",
+    "pos": "adv.",
+    "meaning": "向上；在高处",
+    "example": "Please lift the box up.",
+    "exampleCn": "请把箱子抬起来。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8741,
+    "word": "us",
+    "phonetic": "/əs/",
+    "pos": "pron.",
+    "meaning": "我们（宾格）",
+    "example": "Can you help us carry these bags?",
+    "exampleCn": "你能帮我们搬这些包吗？",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8742,
+    "word": "we",
+    "phonetic": "/wi/",
+    "pos": "pron.",
+    "meaning": "我们（主格）",
+    "example": "We live near the river in a quiet village.",
+    "exampleCn": "我们住在河边一个安静的村庄里。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8743,
+    "word": "according to",
+    "phonetic": "/əˈkɔːdɪŋ tə/",
+    "pos": "prep.",
+    "meaning": "根据；据……所说",
+    "example": "According to the timetable, the train leaves at noon.",
+    "exampleCn": "根据时刻表，火车中午发车。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8744,
+    "word": "all right",
+    "phonetic": "/ˌɔːl ˈraɪt/",
+    "pos": "adj.",
+    "meaning": "安好的；可以接受的",
+    "example": "Are you all right after the fall?",
+    "exampleCn": "你摔倒后还好吗？",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8745,
+    "word": "any more",
+    "phonetic": "/ˌeni ˈmɔː/",
+    "pos": "adv.",
+    "meaning": "再；还（常用于否定句）",
+    "example": "I do not need this box any more.",
+    "exampleCn": "我不再需要这个箱子了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8746,
+    "word": "app",
+    "phonetic": "/æp/",
+    "pos": "n.",
+    "meaning": "应用程序",
+    "example": "This app helps me plan my day.",
+    "exampleCn": "这个应用帮我安排一天。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8747,
+    "word": "based",
+    "phonetic": "/beɪst/",
+    "pos": "adj.",
+    "meaning": "以……为基地的；设在……的",
+    "example": "The team is based in our city.",
+    "exampleCn": "这个团队设在我们城市。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8748,
+    "word": "bin",
+    "phonetic": "/bɪn/",
+    "pos": "n.",
+    "meaning": "垃圾桶",
+    "example": "Put the empty bottle in the recycling bin.",
+    "exampleCn": "把空瓶子放进回收桶。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8749,
+    "word": "camping",
+    "phonetic": "/ˈkæmpɪŋ/",
+    "pos": "n.",
+    "meaning": "露营",
+    "example": "We went camping beside a lake.",
+    "exampleCn": "我们去湖边露营了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8750,
+    "word": "connected",
+    "phonetic": "/kəˈnektɪd/",
+    "pos": "adj.",
+    "meaning": "连接的；有关联的",
+    "example": "The printer is connected to the computer.",
+    "exampleCn": "打印机连接着电脑。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8751,
+    "word": "divorced",
+    "phonetic": "/dɪˈvɔːst/",
+    "pos": "adj.",
+    "meaning": "离婚的",
+    "example": "Her parents are divorced.",
+    "exampleCn": "她的父母离婚了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8752,
+    "word": "download",
+    "phonetic": "/ˌdaʊnˈləʊd/",
+    "pos": "v.",
+    "meaning": "下载",
+    "example": "You can download the form from our website.",
+    "exampleCn": "你可以从我们的网站下载表格。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8753,
+    "word": "included",
+    "phonetic": "/ɪnˈkluːdɪd/",
+    "pos": "adj.",
+    "meaning": "包括在内的",
+    "example": "Breakfast is included in the price.",
+    "exampleCn": "价格包含早餐。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8754,
+    "word": "instead of",
+    "phonetic": "/ɪnˈsted əv/",
+    "pos": "prep.",
+    "meaning": "代替；而不是",
+    "example": "We walked instead of taking the bus.",
+    "exampleCn": "我们选择步行，没有乘公交车。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8755,
+    "word": "lazy",
+    "phonetic": "/ˈleɪzi/",
+    "pos": "adj.",
+    "meaning": "懒惰的；懒散的",
+    "example": "I felt lazy on the hot afternoon.",
+    "exampleCn": "炎热的下午我觉得懒洋洋的。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8756,
+    "word": "loudly",
+    "phonetic": "/ˈlaʊdli/",
+    "pos": "adv.",
+    "meaning": "大声地",
+    "example": "Please do not talk loudly in the library.",
+    "exampleCn": "请不要在图书馆大声说话。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8757,
+    "word": "motorcycle",
+    "phonetic": "/ˈməʊtəsaɪkl/",
+    "pos": "n.",
+    "meaning": "摩托车",
+    "example": "He rides a motorcycle to work.",
+    "exampleCn": "他骑摩托车上班。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8758,
+    "word": "sailing",
+    "phonetic": "/ˈseɪlɪŋ/",
+    "pos": "n.",
+    "meaning": "帆船运动；乘帆船航行",
+    "example": "We tried sailing during our holiday.",
+    "exampleCn": "我们在假期尝试了帆船运动。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8759,
+    "word": "singing",
+    "phonetic": "/ˈsɪŋɪŋ/",
+    "pos": "n.",
+    "meaning": "唱歌",
+    "example": "Her singing filled the quiet room.",
+    "exampleCn": "她的歌声充满了安静的房间。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8760,
+    "word": "smartphone",
+    "phonetic": "/ˈsmɑːtfəʊn/",
+    "pos": "n.",
+    "meaning": "智能手机",
+    "example": "I use my smartphone to check the timetable.",
+    "exampleCn": "我用智能手机查看时刻表。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8761,
+    "word": "used to",
+    "phonetic": "/ˈjuːst tə/",
+    "pos": "modal",
+    "meaning": "过去常常；过去曾经",
+    "example": "I used to walk to school.",
+    "exampleCn": "我过去常步行上学。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8762,
+    "word": "ad",
+    "phonetic": "/æd/",
+    "pos": "n.",
+    "meaning": "广告",
+    "example": "I saw an ad for a language course.",
+    "exampleCn": "我看到了一则语言课程广告。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8763,
+    "word": "AI",
+    "phonetic": "/ˌeɪ ˈaɪ/",
+    "pos": "n.",
+    "meaning": "人工智能",
+    "example": "AI can help sort large amounts of information.",
+    "exampleCn": "人工智能可以帮助整理大量信息。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8764,
+    "word": "amazed",
+    "phonetic": "/əˈmeɪzd/",
+    "pos": "adj.",
+    "meaning": "感到惊奇的",
+    "example": "We were amazed by the view.",
+    "exampleCn": "我们对眼前的景色感到惊叹。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8765,
+    "word": "annoyed",
+    "phonetic": "/əˈnɔɪd/",
+    "pos": "adj.",
+    "meaning": "感到恼火的",
+    "example": "He was annoyed by the constant noise.",
+    "exampleCn": "持续的噪声让他感到恼火。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8766,
+    "word": "annoying",
+    "phonetic": "/əˈnɔɪɪŋ/",
+    "pos": "adj.",
+    "meaning": "令人烦恼的",
+    "example": "The app makes an annoying sound every minute.",
+    "exampleCn": "这个应用每分钟都会发出烦人的声音。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8767,
+    "word": "careless",
+    "phonetic": "/ˈkeələs/",
+    "pos": "adj.",
+    "meaning": "粗心的；不小心的",
+    "example": "A careless mistake changed the total.",
+    "exampleCn": "一个粗心的错误改变了总数。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8768,
+    "word": "disappointing",
+    "phonetic": "/ˌdɪsəˈpɔɪntɪŋ/",
+    "pos": "adj.",
+    "meaning": "令人失望的",
+    "example": "The final result was disappointing.",
+    "exampleCn": "最终结果令人失望。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8769,
+    "word": "educated",
+    "phonetic": "/ˈedʒukeɪtɪd/",
+    "pos": "adj.",
+    "meaning": "受过教育的",
+    "example": "The course is open to educated adults from many fields.",
+    "exampleCn": "这门课程面向来自多个领域、受过教育的成年人。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8770,
+    "word": "embarrassing",
+    "phonetic": "/ɪmˈbærəsɪŋ/",
+    "pos": "adj.",
+    "meaning": "令人尴尬的",
+    "example": "I made an embarrassing mistake during the call.",
+    "exampleCn": "我在通话时犯了一个令人尴尬的错误。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8771,
+    "word": "engaged",
+    "phonetic": "/ɪnˈɡeɪdʒd/",
+    "pos": "adj.",
+    "meaning": "订婚的",
+    "example": "They have been engaged since spring.",
+    "exampleCn": "他们从春天起就订婚了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8772,
+    "word": "frightening",
+    "phonetic": "/ˈfraɪtnɪŋ/",
+    "pos": "adj.",
+    "meaning": "令人害怕的",
+    "example": "The sudden noise was frightening.",
+    "exampleCn": "突然的响声令人害怕。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8773,
+    "word": "injured",
+    "phonetic": "/ˈɪndʒəd/",
+    "pos": "adj.",
+    "meaning": "受伤的",
+    "example": "The injured player left the field.",
+    "exampleCn": "受伤的球员离开了球场。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8774,
+    "word": "latest",
+    "phonetic": "/ˈleɪtɪst/",
+    "pos": "adj.",
+    "meaning": "最新的；最近的",
+    "example": "Please download the latest version.",
+    "exampleCn": "请下载最新版本。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8775,
+    "word": "located",
+    "phonetic": "/ləʊˈkeɪtɪd/",
+    "pos": "adj.",
+    "meaning": "位于……的",
+    "example": "The hotel is located near the station.",
+    "exampleCn": "酒店位于车站附近。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8776,
+    "word": "old-fashioned",
+    "phonetic": "/ˌəʊld ˈfæʃnd/",
+    "pos": "adj.",
+    "meaning": "老式的；过时的",
+    "example": "The cafe has an old-fashioned clock.",
+    "exampleCn": "咖啡馆里有一座老式钟。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8777,
+    "word": "podcast",
+    "phonetic": "/ˈpɒdkɑːst/",
+    "pos": "n.",
+    "meaning": "播客节目",
+    "example": "I listen to a science podcast on the bus.",
+    "exampleCn": "我在公交车上听一个科学播客。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8778,
+    "word": "relaxing",
+    "phonetic": "/rɪˈlæksɪŋ/",
+    "pos": "adj.",
+    "meaning": "令人放松的",
+    "example": "We had a relaxing walk by the river.",
+    "exampleCn": "我们沿河散了步，感到很放松。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8779,
+    "word": "spoken",
+    "phonetic": "/ˈspəʊkən/",
+    "pos": "adj.",
+    "meaning": "口头的；口语的",
+    "example": "The course focuses on spoken English.",
+    "exampleCn": "这门课侧重英语口语。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8780,
+    "word": "statistic",
+    "phonetic": "/stəˈtɪstɪk/",
+    "pos": "n.",
+    "meaning": "统计数字",
+    "example": "This statistic shows how many people cycle to work.",
+    "exampleCn": "这个统计数字显示有多少人骑车上班。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8781,
+    "word": "theirs",
+    "phonetic": "/ðeəz/",
+    "pos": "pron.",
+    "meaning": "他们的；她们的；它们的（所有物）",
+    "example": "Our table is smaller than theirs.",
+    "exampleCn": "我们的桌子比他们的小。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8782,
+    "word": "Wi-Fi",
+    "phonetic": "/ˈwaɪ faɪ/",
+    "pos": "n.",
+    "meaning": "无线局域网连接技术",
+    "example": "The hotel offers free Wi-Fi.",
+    "exampleCn": "这家酒店提供免费无线网络。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8783,
+    "word": "accidentally",
+    "phonetic": "/ˌæksɪˈdentəli/",
+    "pos": "adv.",
+    "meaning": "意外地；无意中",
+    "example": "I accidentally deleted the message.",
+    "exampleCn": "我不小心删掉了那条消息。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8784,
+    "word": "additionally",
+    "phonetic": "/əˈdɪʃənəli/",
+    "pos": "adv.",
+    "meaning": "此外；另外",
+    "example": "The room is bright and additionally has a balcony.",
+    "exampleCn": "房间很明亮，另外还带一个阳台。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8785,
+    "word": "amusing",
+    "phonetic": "/əˈmjuːzɪŋ/",
+    "pos": "adj.",
+    "meaning": "有趣的；逗人发笑的",
+    "example": "She told an amusing story about the journey.",
+    "exampleCn": "她讲了一个旅途中发生的趣事。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8786,
+    "word": "artwork",
+    "phonetic": "/ˈɑːtwɜːk/",
+    "pos": "n.",
+    "meaning": "艺术作品；美术图案",
+    "example": "The museum displayed artwork by local students.",
+    "exampleCn": "博物馆展出了当地学生的艺术作品。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8787,
+    "word": "ashamed",
+    "phonetic": "/əˈʃeɪmd/",
+    "pos": "adj.",
+    "meaning": "惭愧的；羞愧的",
+    "example": "He felt ashamed of his rude reply.",
+    "exampleCn": "他为自己无礼的回答感到羞愧。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8788,
+    "word": "astonishing",
+    "phonetic": "/əˈstɒnɪʃɪŋ/",
+    "pos": "adj.",
+    "meaning": "令人十分惊讶的",
+    "example": "The team made astonishing progress in a month.",
+    "exampleCn": "团队在一个月里取得了惊人的进步。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8789,
+    "word": "billionaire",
+    "phonetic": "/ˌbɪljəˈneə(r)/",
+    "pos": "n.",
+    "meaning": "亿万富翁（资产至少十亿货币单位）",
+    "example": "The billionaire donated money to a public library.",
+    "exampleCn": "那位亿万富翁向公共图书馆捐了款。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8790,
+    "word": "broadcaster",
+    "phonetic": "/ˈbrɔːdkɑːstə(r)/",
+    "pos": "n.",
+    "meaning": "广播员；广播电视机构",
+    "example": "The broadcaster explained the change in the weather.",
+    "exampleCn": "广播员介绍了天气变化。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8791,
+    "word": "caption",
+    "phonetic": "/ˈkæpʃn/",
+    "pos": "n.",
+    "meaning": "图片说明；字幕",
+    "example": "Read the caption below the photograph.",
+    "exampleCn": "读一下照片下面的说明。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8792,
+    "word": "colourful",
+    "phonetic": "/ˈkʌləfl/",
+    "pos": "adj.",
+    "meaning": "色彩鲜艳的；多彩的",
+    "example": "The market sells colourful scarves.",
+    "exampleCn": "市场上卖色彩鲜艳的围巾。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8793,
+    "word": "comedian",
+    "phonetic": "/kəˈmiːdiən/",
+    "pos": "n.",
+    "meaning": "喜剧演员",
+    "example": "The comedian made the audience laugh.",
+    "exampleCn": "那位喜剧演员把观众逗笑了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8794,
+    "word": "console",
+    "phonetic": "/ˈkɒnsəʊl/",
+    "pos": "n.",
+    "meaning": "游戏机；控制台",
+    "example": "He connected the game console to the TV.",
+    "exampleCn": "他把游戏机连接到电视上。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8795,
+    "word": "critically",
+    "phonetic": "/ˈkrɪtɪkli/",
+    "pos": "adv.",
+    "meaning": "批判性地；审慎地",
+    "example": "Students should examine the evidence critically.",
+    "exampleCn": "学生应审慎地审视证据。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8796,
+    "word": "depressing",
+    "phonetic": "/dɪˈpresɪŋ/",
+    "pos": "adj.",
+    "meaning": "令人沮丧的",
+    "example": "The empty shops were a depressing sight.",
+    "exampleCn": "空荡荡的商店是一幅令人沮丧的景象。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8797,
+    "word": "dishonest",
+    "phonetic": "/dɪsˈɒnɪst/",
+    "pos": "adj.",
+    "meaning": "不诚实的",
+    "example": "It was dishonest to hide the extra charge.",
+    "exampleCn": "隐瞒额外收费是不诚实的。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8798,
+    "word": "downwards",
+    "phonetic": "/ˈdaʊnwədz/",
+    "pos": "adv.",
+    "meaning": "向下",
+    "example": "The path slopes downwards towards the river.",
+    "exampleCn": "小路向河边下坡延伸。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8799,
+    "word": "efficiently",
+    "phonetic": "/ɪˈfɪʃntli/",
+    "pos": "adv.",
+    "meaning": "高效地",
+    "example": "The new system handles requests efficiently.",
+    "exampleCn": "新系统能高效处理请求。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8800,
+    "word": "enjoyable",
+    "phonetic": "/ɪnˈdʒɔɪəbl/",
+    "pos": "adj.",
+    "meaning": "令人愉快的",
+    "example": "We had an enjoyable afternoon at the park.",
+    "exampleCn": "我们在公园度过了愉快的下午。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8801,
+    "word": "entertaining",
+    "phonetic": "/ˌentəˈteɪnɪŋ/",
+    "pos": "adj.",
+    "meaning": "有趣的；有娱乐性的",
+    "example": "The programme was both useful and entertaining.",
+    "exampleCn": "这个节目既实用又有趣。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8802,
+    "word": "fabulous",
+    "phonetic": "/ˈfæbjələs/",
+    "pos": "adj.",
+    "meaning": "极好的；非常棒的",
+    "example": "We had a fabulous view from the balcony.",
+    "exampleCn": "从阳台上我们看到了极佳的景色。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8803,
+    "word": "firefighter",
+    "phonetic": "/ˈfaɪəfaɪtə(r)/",
+    "pos": "n.",
+    "meaning": "消防员",
+    "example": "A firefighter carried the child to safety.",
+    "exampleCn": "一名消防员把孩子抱到安全处。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8804,
+    "word": "firework",
+    "phonetic": "/ˈfaɪəwɜːk/",
+    "pos": "n.",
+    "meaning": "烟火；烟花",
+    "example": "A firework burst above the river.",
+    "exampleCn": "一枚烟花在河上空绽放。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8805,
+    "word": "footprint",
+    "phonetic": "/ˈfʊtprɪnt/",
+    "pos": "n.",
+    "meaning": "脚印；足迹",
+    "example": "We found a footprint in the wet sand.",
+    "exampleCn": "我们在湿沙上发现了一个脚印。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8806,
+    "word": "full-time",
+    "phonetic": "/ˌfʊl ˈtaɪm/",
+    "pos": "adj.",
+    "meaning": "全职的；全天的",
+    "example": "She has a full-time job at the hospital.",
+    "exampleCn": "她在医院有一份全职工作。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8807,
+    "word": "gaming",
+    "phonetic": "/ˈɡeɪmɪŋ/",
+    "pos": "n.",
+    "meaning": "电子游戏活动",
+    "example": "The library runs a gaming club on Fridays.",
+    "exampleCn": "图书馆星期五举办游戏社团活动。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8808,
+    "word": "globalization",
+    "phonetic": "/ˌɡləʊbəlaɪˈzeɪʃn/",
+    "pos": "n.",
+    "meaning": "全球化",
+    "example": "Globalization has changed how companies trade.",
+    "exampleCn": "全球化改变了公司的贸易方式。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8809,
+    "word": "healthcare",
+    "phonetic": "/ˈhelθkeə(r)/",
+    "pos": "n.",
+    "meaning": "医疗服务；医疗保健",
+    "example": "Everyone needs access to good healthcare.",
+    "exampleCn": "每个人都需要获得良好的医疗服务。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8810,
+    "word": "hilarious",
+    "phonetic": "/hɪˈleəriəs/",
+    "pos": "adj.",
+    "meaning": "非常滑稽的；令人捧腹的",
+    "example": "The play had a hilarious final scene.",
+    "exampleCn": "这出戏的最后一幕非常滑稽。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8811,
+    "word": "ID",
+    "phonetic": "/ˌaɪ ˈdiː/",
+    "pos": "n.",
+    "meaning": "身份证明；身份标识",
+    "example": "Please bring your ID to the appointment.",
+    "exampleCn": "赴约时请带上身份证明。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8812,
+    "word": "info",
+    "phonetic": "/ˈɪnfəʊ/",
+    "pos": "n.",
+    "meaning": "信息；资料（非正式）",
+    "example": "Send me the info before lunch.",
+    "exampleCn": "午饭前把资料发给我。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8813,
+    "word": "litre",
+    "phonetic": "/ˈliːtə(r)/",
+    "pos": "n.",
+    "meaning": "升（容量单位）",
+    "example": "The bottle holds one litre of water.",
+    "exampleCn": "这个瓶子可装一升水。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8814,
+    "word": "long-term",
+    "phonetic": "/ˌlɒŋ ˈtɜːm/",
+    "pos": "adj.",
+    "meaning": "长期的",
+    "example": "We need a long-term plan for the project.",
+    "exampleCn": "我们需要为项目制定一个长期计划。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8815,
+    "word": "lottery",
+    "phonetic": "/ˈlɒtəri/",
+    "pos": "n.",
+    "meaning": "彩票；抽彩活动",
+    "example": "She bought a lottery ticket at the shop.",
+    "exampleCn": "她在商店买了一张彩票。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8816,
+    "word": "novelist",
+    "phonetic": "/ˈnɒvəlɪst/",
+    "pos": "n.",
+    "meaning": "小说家",
+    "example": "The novelist published her first book at thirty.",
+    "exampleCn": "那位小说家三十岁出版了第一本书。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8817,
+    "word": "obesity",
+    "phonetic": "/əʊˈbiːsəti/",
+    "pos": "n.",
+    "meaning": "肥胖；肥胖症",
+    "example": "The study examined factors linked to obesity.",
+    "exampleCn": "这项研究考察了与肥胖有关的因素。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8818,
+    "word": "pandemic",
+    "phonetic": "/pænˈdemɪk/",
+    "pos": "n.",
+    "meaning": "大流行病",
+    "example": "The pandemic disrupted travel around the world.",
+    "exampleCn": "这场大流行病扰乱了世界各地的出行。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8819,
+    "word": "part-time",
+    "phonetic": "/ˌpɑːt ˈtaɪm/",
+    "pos": "adj.",
+    "meaning": "兼职的；非全日制的",
+    "example": "He found a part-time job at a cafe.",
+    "exampleCn": "他在一家咖啡馆找到了一份兼职。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8820,
+    "word": "passionate",
+    "phonetic": "/ˈpæʃənət/",
+    "pos": "adj.",
+    "meaning": "充满热情的",
+    "example": "She is passionate about teaching.",
+    "exampleCn": "她对教学充满热情。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8821,
+    "word": "password",
+    "phonetic": "/ˈpɑːswɜːd/",
+    "pos": "n.",
+    "meaning": "密码",
+    "example": "Choose a password that is hard to guess.",
+    "exampleCn": "选择一个难以猜到的密码。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8822,
+    "word": "pharmacy",
+    "phonetic": "/ˈfɑːməsi/",
+    "pos": "n.",
+    "meaning": "药房；药店",
+    "example": "The pharmacy is next to the clinic.",
+    "exampleCn": "药房紧挨着诊所。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8823,
+    "word": "protester",
+    "phonetic": "/prəˈtestə(r)/",
+    "pos": "n.",
+    "meaning": "抗议者",
+    "example": "A protester held a sign outside the building.",
+    "exampleCn": "一名抗议者在楼外举着牌子。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8824,
+    "word": "punk",
+    "phonetic": "/pʌŋk/",
+    "pos": "n.",
+    "meaning": "朋克摇滚乐",
+    "example": "The station played punk from the late seventies.",
+    "exampleCn": "电台播放了七十年代末的朋克摇滚乐。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8825,
+    "word": "racist",
+    "phonetic": "/ˈreɪsɪst/",
+    "pos": "adj.",
+    "meaning": "种族主义的",
+    "example": "The club removed the racist message.",
+    "exampleCn": "俱乐部删除了那条种族主义信息。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8826,
+    "word": "seeker",
+    "phonetic": "/ˈsiːkə(r)/",
+    "pos": "n.",
+    "meaning": "寻求者；寻找者",
+    "example": "The website helps a job seeker prepare for interviews.",
+    "exampleCn": "这个网站帮助求职者准备面试。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8827,
+    "word": "shocking",
+    "phonetic": "/ˈʃɒkɪŋ/",
+    "pos": "adj.",
+    "meaning": "令人震惊的",
+    "example": "The report revealed shocking waste.",
+    "exampleCn": "报告揭露了令人震惊的浪费。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8828,
+    "word": "short-term",
+    "phonetic": "/ˌʃɔːt ˈtɜːm/",
+    "pos": "adj.",
+    "meaning": "短期的",
+    "example": "We rented a room on a short-term basis.",
+    "exampleCn": "我们短期租了一间房。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8829,
+    "word": "spokesperson",
+    "phonetic": "/ˈspəʊkspɜːsn/",
+    "pos": "n.",
+    "meaning": "发言人",
+    "example": "A spokesperson answered questions after the meeting.",
+    "exampleCn": "会后一位发言人回答了问题。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8830,
+    "word": "spokeswoman",
+    "phonetic": "/ˈspəʊkswʊmən/",
+    "pos": "n.",
+    "meaning": "女发言人",
+    "example": "A spokeswoman confirmed the new opening hours.",
+    "exampleCn": "一位女发言人确认了新的开放时间。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8831,
+    "word": "sporting",
+    "phonetic": "/ˈspɔːtɪŋ/",
+    "pos": "adj.",
+    "meaning": "体育的；与运动有关的",
+    "example": "The town hosts several sporting events each year.",
+    "exampleCn": "这个镇每年举办几场体育活动。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8832,
+    "word": "timeline",
+    "phonetic": "/ˈtaɪmlaɪn/",
+    "pos": "n.",
+    "meaning": "时间线；时间安排",
+    "example": "The teacher drew a timeline of the main events.",
+    "exampleCn": "老师画了一条主要事件的时间线。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8833,
+    "word": "trillion",
+    "phonetic": "/ˈtrɪljən/",
+    "pos": "num.",
+    "meaning": "一万亿",
+    "example": "The report measured costs in trillions of dollars.",
+    "exampleCn": "报告以万亿美元为单位计算成本。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8834,
+    "word": "vaccinate",
+    "phonetic": "/ˈvæksɪneɪt/",
+    "pos": "v.",
+    "meaning": "给……接种疫苗",
+    "example": "The clinic will vaccinate the animals this week.",
+    "exampleCn": "诊所本周将给动物接种疫苗。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8835,
+    "word": "vaccination",
+    "phonetic": "/ˌvæksɪˈneɪʃn/",
+    "pos": "n.",
+    "meaning": "疫苗接种",
+    "example": "The nurse recorded the date of vaccination.",
+    "exampleCn": "护士记录了接种日期。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8836,
+    "word": "villain",
+    "phonetic": "/ˈvɪlən/",
+    "pos": "n.",
+    "meaning": "反派角色；恶棍",
+    "example": "The villain escaped at the end of the film.",
+    "exampleCn": "反派角色在电影结尾逃跑了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8837,
+    "word": "algorithm",
+    "phonetic": "/ˈælɡərɪðəm/",
+    "pos": "n.",
+    "meaning": "算法",
+    "example": "The algorithm sorts the names alphabetically.",
+    "exampleCn": "这个算法按字母顺序排列姓名。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8838,
+    "word": "broadband",
+    "phonetic": "/ˈbrɔːdbænd/",
+    "pos": "n.",
+    "meaning": "宽带网络连接",
+    "example": "We need broadband to join the video call.",
+    "exampleCn": "我们需要宽带网络来参加视频通话。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8839,
+    "word": "cancellation",
+    "phonetic": "/ˌkænsəˈleɪʃn/",
+    "pos": "n.",
+    "meaning": "取消；取消通知",
+    "example": "The airline sent a cancellation notice.",
+    "exampleCn": "航空公司发来了一份取消通知。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8840,
+    "word": "connectivity",
+    "phonetic": "/kəˌnekˈtɪvəti/",
+    "pos": "n.",
+    "meaning": "连接能力；联网能力",
+    "example": "Poor connectivity interrupted the call.",
+    "exampleCn": "连接不佳中断了通话。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8841,
+    "word": "e-commerce",
+    "phonetic": "/ˈiː kɒmɜːs/",
+    "pos": "n.",
+    "meaning": "电子商务",
+    "example": "E-commerce allows small shops to reach more customers.",
+    "exampleCn": "电子商务让小商店能够接触更多顾客。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8842,
+    "word": "milestone",
+    "phonetic": "/ˈmaɪlstəʊn/",
+    "pos": "n.",
+    "meaning": "里程碑；重要阶段",
+    "example": "Finishing the first lesson was a small milestone.",
+    "exampleCn": "完成第一课是一个小小的里程碑。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8843,
+    "word": "mindset",
+    "phonetic": "/ˈmaɪndset/",
+    "pos": "n.",
+    "meaning": "思维方式；心态",
+    "example": "A flexible mindset helps us learn from mistakes.",
+    "exampleCn": "灵活的思维方式有助于我们从错误中学习。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8844,
+    "word": "notification",
+    "phonetic": "/ˌnəʊtɪfɪˈkeɪʃn/",
+    "pos": "n.",
+    "meaning": "通知；提醒",
+    "example": "I turned off the notification during the lesson.",
+    "exampleCn": "我在上课时关闭了那条提醒。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8845,
+    "word": "scam",
+    "phonetic": "/skæm/",
+    "pos": "n.",
+    "meaning": "骗局；诈骗",
+    "example": "The message turned out to be a scam.",
+    "exampleCn": "那条消息原来是一个骗局。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8846,
+    "word": "start-up",
+    "phonetic": "/ˈstɑːt ʌp/",
+    "pos": "n.",
+    "meaning": "初创企业",
+    "example": "The start-up develops tools for teachers.",
+    "exampleCn": "这家初创企业为老师开发工具。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8847,
+    "word": "streaming",
+    "phonetic": "/ˈstriːmɪŋ/",
+    "pos": "n.",
+    "meaning": "流媒体播放；流式传输",
+    "example": "Streaming lets us watch without downloading the whole file first.",
+    "exampleCn": "流媒体播放让我们不必先下载完整文件就能观看。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8848,
+    "word": "a bit",
+    "phonetic": "/ə bɪt/",
+    "pos": "adv. phr.",
+    "meaning": "有点；稍微",
+    "example": "The soup is a bit hot.",
+    "exampleCn": "汤有点烫。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8849,
+    "word": "a few",
+    "phonetic": "/ə fjuː/",
+    "pos": "det. phr.",
+    "meaning": "几个；一些（可数）",
+    "example": "I have a few questions.",
+    "exampleCn": "我有几个问题。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8850,
+    "word": "a little",
+    "phonetic": "/ə ˈlɪtl/",
+    "pos": "det. phr.",
+    "meaning": "一点；少量（不可数）",
+    "example": "Add a little water to the bowl.",
+    "exampleCn": "往碗里加一点水。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8851,
+    "word": "a long time ago",
+    "phonetic": "/ə lɒŋ taɪm əˈɡəʊ/",
+    "pos": "adv. phr.",
+    "meaning": "很久以前",
+    "example": "I visited this town a long time ago.",
+    "exampleCn": "我很久以前到访过这个镇。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8852,
+    "word": "a lot",
+    "phonetic": "/ə lɒt/",
+    "pos": "adv. phr.",
+    "meaning": "很多；经常；非常",
+    "example": "We learned a lot during the trip.",
+    "exampleCn": "我们在旅途中学到了很多。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8853,
+    "word": "after all",
+    "phonetic": "/ˈɑːftər ɔːl/",
+    "pos": "adv. phr.",
+    "meaning": "毕竟；终究",
+    "example": "Please be patient; she is learning after all.",
+    "exampleCn": "请耐心一点，毕竟她还在学习。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8854,
+    "word": "again and again",
+    "phonetic": "/əˈɡen ən əˈɡen/",
+    "pos": "adv. phr.",
+    "meaning": "一再；反复",
+    "example": "He read the message again and again.",
+    "exampleCn": "他反复读那条消息。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8855,
+    "word": "all day",
+    "phonetic": "/ɔːl deɪ/",
+    "pos": "adv. phr.",
+    "meaning": "整天",
+    "example": "The children played outside all day.",
+    "exampleCn": "孩子们一整天都在外面玩。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8856,
+    "word": "all over the world",
+    "phonetic": "/ɔːl ˈəʊvə ðə wɜːld/",
+    "pos": "adv. phr.",
+    "meaning": "遍及全世界",
+    "example": "People use this tool all over the world.",
+    "exampleCn": "世界各地的人都在使用这个工具。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8857,
+    "word": "all the time",
+    "phonetic": "/ɔːl ðə taɪm/",
+    "pos": "adv. phr.",
+    "meaning": "一直；总是",
+    "example": "The clock makes a noise all the time.",
+    "exampleCn": "那座钟一直在发出响声。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8858,
+    "word": "and so on",
+    "phonetic": "/ən səʊ ɒn/",
+    "pos": "adv. phr.",
+    "meaning": "等等；诸如此类",
+    "example": "Bring paper, pens, tape, and so on.",
+    "exampleCn": "带上纸、笔、胶带等物品。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8859,
+    "word": "anything else",
+    "phonetic": "/ˈeniθɪŋ els/",
+    "pos": "pron. phr.",
+    "meaning": "其他任何东西；别的事",
+    "example": "Do you need anything else?",
+    "exampleCn": "你还需要别的吗？",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8860,
+    "word": "apart from",
+    "phonetic": "/əˈpɑːt frəm/",
+    "pos": "prep. phr.",
+    "meaning": "除……之外",
+    "example": "Apart from the price, the plan looks good.",
+    "exampleCn": "除了价格以外，这个方案看起来不错。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8861,
+    "word": "art gallery",
+    "phonetic": "/ˈɑːt ɡæləri/",
+    "pos": "n. phr.",
+    "meaning": "美术馆；画廊",
+    "example": "We visited an art gallery near the station.",
+    "exampleCn": "我们参观了车站附近的一家画廊。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8862,
+    "word": "as a result",
+    "phonetic": "/əz ə rɪˈzʌlt/",
+    "pos": "adv. phr.",
+    "meaning": "因此；结果",
+    "example": "The road was closed; as a result, we took another route.",
+    "exampleCn": "道路封闭，因此我们走了另一条路线。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8863,
+    "word": "as soon as",
+    "phonetic": "/əz suːn əz/",
+    "pos": "conj. phr.",
+    "meaning": "一……就……",
+    "example": "Call me as soon as you arrive.",
+    "exampleCn": "你一到就给我打电话。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8864,
+    "word": "as soon as possible",
+    "phonetic": "/əz suːn əz ˈpɒsəbl/",
+    "pos": "adv. phr.",
+    "meaning": "尽快",
+    "example": "Please reply as soon as possible.",
+    "exampleCn": "请尽快回复。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8865,
+    "word": "as well",
+    "phonetic": "/əz wel/",
+    "pos": "adv. phr.",
+    "meaning": "也；还",
+    "example": "She speaks Spanish as well.",
+    "exampleCn": "她还会说西班牙语。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8866,
+    "word": "at first",
+    "phonetic": "/ət fɜːst/",
+    "pos": "adv. phr.",
+    "meaning": "起初；最初",
+    "example": "The task seemed difficult at first.",
+    "exampleCn": "这个任务起初看起来很难。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8867,
+    "word": "at home",
+    "phonetic": "/ət həʊm/",
+    "pos": "adv. phr.",
+    "meaning": "在家",
+    "example": "I left my charger at home.",
+    "exampleCn": "我把充电器落在家里了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8868,
+    "word": "at last",
+    "phonetic": "/ət lɑːst/",
+    "pos": "adv. phr.",
+    "meaning": "终于；总算",
+    "example": "The bus arrived at last.",
+    "exampleCn": "公交车终于到了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8869,
+    "word": "at least",
+    "phonetic": "/ət liːst/",
+    "pos": "adv. phr.",
+    "meaning": "至少；起码",
+    "example": "Bring at least two pens.",
+    "exampleCn": "至少带两支笔。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8870,
+    "word": "at once",
+    "phonetic": "/ət wʌns/",
+    "pos": "adv. phr.",
+    "meaning": "立刻；同时",
+    "example": "Please call the office at once.",
+    "exampleCn": "请立刻给办公室打电话。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8871,
+    "word": "at present",
+    "phonetic": "/ət ˈpreznt/",
+    "pos": "adv. phr.",
+    "meaning": "目前；现在",
+    "example": "The room is not available at present.",
+    "exampleCn": "这个房间目前不可用。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8872,
+    "word": "at risk",
+    "phonetic": "/ət rɪsk/",
+    "pos": "adj. phr.",
+    "meaning": "处于危险中；有风险的",
+    "example": "The old bridge is at risk of collapse.",
+    "exampleCn": "这座旧桥有坍塌风险。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8873,
+    "word": "at school",
+    "phonetic": "/ət skuːl/",
+    "pos": "adv. phr.",
+    "meaning": "在学校；在上学",
+    "example": "The children are at school now.",
+    "exampleCn": "孩子们现在在学校。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8874,
+    "word": "at the moment",
+    "phonetic": "/ət ðə ˈməʊmənt/",
+    "pos": "adv. phr.",
+    "meaning": "此刻；目前",
+    "example": "I am busy at the moment.",
+    "exampleCn": "我此刻很忙。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8875,
+    "word": "at the same time",
+    "phonetic": "/ət ðə seɪm taɪm/",
+    "pos": "adv. phr.",
+    "meaning": "同时",
+    "example": "The two trains arrived at the same time.",
+    "exampleCn": "两班火车同时到达。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8876,
+    "word": "at the weekend",
+    "phonetic": "/ət ðə ˌwiːkˈend/",
+    "pos": "adv. phr.",
+    "meaning": "在周末（英式）",
+    "example": "We visit our friends at the weekend.",
+    "exampleCn": "我们周末去看望朋友。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8877,
+    "word": "at work",
+    "phonetic": "/ət wɜːk/",
+    "pos": "adv. phr.",
+    "meaning": "在工作；在工作地点",
+    "example": "He is at work until six.",
+    "exampleCn": "他要工作到六点。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8878,
+    "word": "bad news",
+    "phonetic": "/bæd njuːz/",
+    "pos": "n. phr.",
+    "meaning": "坏消息",
+    "example": "The email brought bad news.",
+    "exampleCn": "那封邮件带来了坏消息。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8879,
+    "word": "best friend",
+    "phonetic": "/best frend/",
+    "pos": "n. phr.",
+    "meaning": "最好的朋友",
+    "example": "My best friend lives nearby.",
+    "exampleCn": "我最好的朋友住在附近。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8880,
+    "word": "break up",
+    "phonetic": "/breɪk ʌp/",
+    "pos": "phr. v.",
+    "meaning": "结束关系；分手",
+    "example": "They decided to break up last winter.",
+    "exampleCn": "他们决定去年冬天分手。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8881,
+    "word": "car park",
+    "phonetic": "/ˈkɑː pɑːk/",
+    "pos": "n. phr.",
+    "meaning": "停车场（英式）",
+    "example": "The car park is behind the hotel.",
+    "exampleCn": "停车场在酒店后面。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8882,
+    "word": "carry on",
+    "phonetic": "/ˈkæri ɒn/",
+    "pos": "phr. v.",
+    "meaning": "继续",
+    "example": "Please carry on with your work.",
+    "exampleCn": "请继续你的工作。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8883,
+    "word": "cell phone",
+    "phonetic": "/ˈsel fəʊn/",
+    "pos": "n. phr.",
+    "meaning": "手机（美式）",
+    "example": "My cell phone is in my bag.",
+    "exampleCn": "我的手机在包里。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8884,
+    "word": "check in",
+    "phonetic": "/tʃek ɪn/",
+    "pos": "phr. v.",
+    "meaning": "办理入住或登机手续",
+    "example": "We can check in after three.",
+    "exampleCn": "我们可以三点以后办理入住。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8885,
+    "word": "check out",
+    "phonetic": "/tʃek aʊt/",
+    "pos": "phr. v.",
+    "meaning": "办理退房手续",
+    "example": "We need to check out before noon.",
+    "exampleCn": "我们需要在中午前退房。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8886,
+    "word": "clean up",
+    "phonetic": "/kliːn ʌp/",
+    "pos": "phr. v.",
+    "meaning": "清理；打扫干净",
+    "example": "Please clean up the kitchen after dinner.",
+    "exampleCn": "晚饭后请把厨房清理干净。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8887,
+    "word": "climate change",
+    "phonetic": "/ˈklaɪmət tʃeɪndʒ/",
+    "pos": "n. phr.",
+    "meaning": "气候变化",
+    "example": "The lesson explains the causes of climate change.",
+    "exampleCn": "这节课解释气候变化的原因。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8888,
+    "word": "come back",
+    "phonetic": "/kʌm bæk/",
+    "pos": "phr. v.",
+    "meaning": "回来；返回",
+    "example": "Please come back before dark.",
+    "exampleCn": "请在天黑前回来。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8889,
+    "word": "come true",
+    "phonetic": "/kʌm truː/",
+    "pos": "v. phr.",
+    "meaning": "实现；成为现实",
+    "example": "Her dream of opening a bakery may come true.",
+    "exampleCn": "她开面包店的梦想可能实现。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8890,
+    "word": "credit card",
+    "phonetic": "/ˈkredɪt kɑːd/",
+    "pos": "n. phr.",
+    "meaning": "信用卡",
+    "example": "Can I pay by credit card?",
+    "exampleCn": "我可以用信用卡付款吗？",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8891,
+    "word": "each other",
+    "phonetic": "/iːtʃ ˈʌðə/",
+    "pos": "pron. phr.",
+    "meaning": "彼此；互相",
+    "example": "We help each other with homework.",
+    "exampleCn": "我们互相帮助做作业。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8892,
+    "word": "end up",
+    "phonetic": "/end ʌp/",
+    "pos": "phr. v.",
+    "meaning": "最终处于；结果成为",
+    "example": "We took the wrong bus and ended up at the airport.",
+    "exampleCn": "我们坐错车，结果到了机场。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8893,
+    "word": "even if",
+    "phonetic": "/ˈiːvn ɪf/",
+    "pos": "conj. phr.",
+    "meaning": "即使；尽管可能",
+    "example": "I will go even if it rains.",
+    "exampleCn": "即使下雨我也会去。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8894,
+    "word": "even though",
+    "phonetic": "/ˈiːvn ðəʊ/",
+    "pos": "conj. phr.",
+    "meaning": "虽然；尽管",
+    "example": "She walked home even though she was tired.",
+    "exampleCn": "虽然很累，她还是步行回了家。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8895,
+    "word": "every day",
+    "phonetic": "/ˈevri deɪ/",
+    "pos": "adv. phr.",
+    "meaning": "每天",
+    "example": "I practise English every day.",
+    "exampleCn": "我每天练习英语。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8896,
+    "word": "except for",
+    "phonetic": "/ɪkˈsept fə/",
+    "pos": "prep. phr.",
+    "meaning": "除……以外",
+    "example": "The room was empty except for one chair.",
+    "exampleCn": "房间里除了一把椅子外什么都没有。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8897,
+    "word": "excuse me",
+    "phonetic": "/ɪkˈskjuːz miː/",
+    "pos": "interj. phr.",
+    "meaning": "劳驾；对不起（引起注意）",
+    "example": "Excuse me, where is the nearest pharmacy?",
+    "exampleCn": "劳驾，最近的药店在哪里？",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8898,
+    "word": "fall asleep",
+    "phonetic": "/fɔːl əˈsliːp/",
+    "pos": "v. phr.",
+    "meaning": "入睡；睡着",
+    "example": "I sometimes fall asleep on the train.",
+    "exampleCn": "我有时在火车上睡着。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8899,
+    "word": "far away",
+    "phonetic": "/fɑːr əˈweɪ/",
+    "pos": "adv. phr.",
+    "meaning": "很远；远处",
+    "example": "My grandparents live far away.",
+    "exampleCn": "我的祖父母住得很远。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8900,
+    "word": "find out",
+    "phonetic": "/faɪnd aʊt/",
+    "pos": "phr. v.",
+    "meaning": "查明；弄清",
+    "example": "We need to find out when the shop opens.",
+    "exampleCn": "我们需要弄清商店什么时候开门。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8901,
+    "word": "first of all",
+    "phonetic": "/fɜːst əv ɔːl/",
+    "pos": "adv. phr.",
+    "meaning": "首先；第一",
+    "example": "First of all, check the address.",
+    "exampleCn": "首先，核对地址。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8902,
+    "word": "for a while",
+    "phonetic": "/fər ə waɪl/",
+    "pos": "adv. phr.",
+    "meaning": "一会儿；一段时间",
+    "example": "Please wait here for a while.",
+    "exampleCn": "请在这里等一会儿。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8903,
+    "word": "for example",
+    "phonetic": "/fər ɪɡˈzɑːmpl/",
+    "pos": "adv. phr.",
+    "meaning": "例如",
+    "example": "You can use fruit, for example apples or pears.",
+    "exampleCn": "你可以用水果，例如苹果或梨。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8904,
+    "word": "for free",
+    "phonetic": "/fə friː/",
+    "pos": "adv. phr.",
+    "meaning": "免费地",
+    "example": "You can borrow these books for free.",
+    "exampleCn": "你可以免费借阅这些书。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8905,
+    "word": "get back",
+    "phonetic": "/ɡet bæk/",
+    "pos": "phr. v.",
+    "meaning": "回来；返回",
+    "example": "What time will you get back?",
+    "exampleCn": "你什么时候回来？",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8906,
+    "word": "get better",
+    "phonetic": "/ɡet ˈbetə/",
+    "pos": "v. phr.",
+    "meaning": "好转；进步",
+    "example": "I hope you get better soon.",
+    "exampleCn": "希望你早日好起来。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8907,
+    "word": "get married",
+    "phonetic": "/ɡet ˈmærid/",
+    "pos": "v. phr.",
+    "meaning": "结婚",
+    "example": "They plan to get married next year.",
+    "exampleCn": "他们计划明年结婚。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8908,
+    "word": "get off",
+    "phonetic": "/ɡet ɒf/",
+    "pos": "phr. v.",
+    "meaning": "下车；离开交通工具",
+    "example": "We should get off at the next stop.",
+    "exampleCn": "我们应该在下一站下车。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8909,
+    "word": "get on",
+    "phonetic": "/ɡet ɒn/",
+    "pos": "phr. v.",
+    "meaning": "上车；登上",
+    "example": "We can get on the bus here.",
+    "exampleCn": "我们可以在这里上公交车。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8910,
+    "word": "get ready",
+    "phonetic": "/ɡet ˈredi/",
+    "pos": "v. phr.",
+    "meaning": "准备好",
+    "example": "Please get ready before seven.",
+    "exampleCn": "请在七点前准备好。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8911,
+    "word": "get up",
+    "phonetic": "/ɡet ʌp/",
+    "pos": "phr. v.",
+    "meaning": "起床；站起来",
+    "example": "I usually get up at seven.",
+    "exampleCn": "我通常七点起床。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8912,
+    "word": "give up",
+    "phonetic": "/ɡɪv ʌp/",
+    "pos": "phr. v.",
+    "meaning": "放弃；停止",
+    "example": "Do not give up after one mistake.",
+    "exampleCn": "不要犯一次错就放弃。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8913,
+    "word": "go ahead",
+    "phonetic": "/ɡəʊ əˈhed/",
+    "pos": "phr. v.",
+    "meaning": "开始吧；继续进行",
+    "example": "Please go ahead with your question.",
+    "exampleCn": "请开始提问吧。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8914,
+    "word": "go out",
+    "phonetic": "/ɡəʊ aʊt/",
+    "pos": "phr. v.",
+    "meaning": "外出",
+    "example": "We rarely go out on weeknights.",
+    "exampleCn": "我们在工作日晚上很少外出。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8915,
+    "word": "go to bed",
+    "phonetic": "/ɡəʊ tə bed/",
+    "pos": "v. phr.",
+    "meaning": "上床睡觉",
+    "example": "I try to go to bed before eleven.",
+    "exampleCn": "我尽量在十一点前上床睡觉。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8916,
+    "word": "good luck",
+    "phonetic": "/ɡʊd lʌk/",
+    "pos": "interj. phr.",
+    "meaning": "祝好运",
+    "example": "Good luck with your interview.",
+    "exampleCn": "祝你面试顺利。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8917,
+    "word": "good morning",
+    "phonetic": "/ɡʊd ˈmɔːnɪŋ/",
+    "pos": "interj. phr.",
+    "meaning": "早上好",
+    "example": "Good morning, everyone.",
+    "exampleCn": "大家早上好。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8918,
+    "word": "grow up",
+    "phonetic": "/ɡrəʊ ʌp/",
+    "pos": "phr. v.",
+    "meaning": "长大；成长",
+    "example": "I grew up near the coast.",
+    "exampleCn": "我在海岸附近长大。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8919,
+    "word": "had better",
+    "phonetic": "/hæd ˈbetə/",
+    "pos": "modal phr.",
+    "meaning": "最好（带劝告意味）",
+    "example": "You had better take an umbrella.",
+    "exampleCn": "你最好带把伞。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8920,
+    "word": "have a look",
+    "phonetic": "/hæv ə lʊk/",
+    "pos": "v. phr.",
+    "meaning": "看一看",
+    "example": "Can I have a look at your notes?",
+    "exampleCn": "我可以看看你的笔记吗？",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8921,
+    "word": "have fun",
+    "phonetic": "/hæv fʌn/",
+    "pos": "v. phr.",
+    "meaning": "玩得开心；享受乐趣",
+    "example": "Have fun at the party.",
+    "exampleCn": "祝你在聚会上玩得开心。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8922,
+    "word": "have no idea",
+    "phonetic": "/hæv nəʊ aɪˈdɪə/",
+    "pos": "v. phr.",
+    "meaning": "不知道；毫无头绪",
+    "example": "I have no idea where the keys are.",
+    "exampleCn": "我不知道钥匙在哪里。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8923,
+    "word": "in addition",
+    "phonetic": "/ɪn əˈdɪʃn/",
+    "pos": "adv. phr.",
+    "meaning": "此外；另外",
+    "example": "The room is quiet; in addition, it has a balcony.",
+    "exampleCn": "房间很安静，另外还带有阳台。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8924,
+    "word": "in advance",
+    "phonetic": "/ɪn ədˈvɑːns/",
+    "pos": "adv. phr.",
+    "meaning": "提前；预先",
+    "example": "Please book your seat in advance.",
+    "exampleCn": "请提前预订座位。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8925,
+    "word": "in danger",
+    "phonetic": "/ɪn ˈdeɪndʒə/",
+    "pos": "adj. phr.",
+    "meaning": "处于危险之中",
+    "example": "The climbers were in danger.",
+    "exampleCn": "登山者处于危险之中。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8926,
+    "word": "in fact",
+    "phonetic": "/ɪn fækt/",
+    "pos": "adv. phr.",
+    "meaning": "事实上；其实",
+    "example": "The test was short; in fact, it took ten minutes.",
+    "exampleCn": "测试很短，事实上只用了十分钟。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8927,
+    "word": "in front of",
+    "phonetic": "/ɪn frʌnt əv/",
+    "pos": "prep. phr.",
+    "meaning": "在……前面",
+    "example": "The taxi stopped in front of the hotel.",
+    "exampleCn": "出租车停在酒店前面。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8928,
+    "word": "in general",
+    "phonetic": "/ɪn ˈdʒenrəl/",
+    "pos": "adv. phr.",
+    "meaning": "一般来说；总体上",
+    "example": "In general, the buses are reliable.",
+    "exampleCn": "总体而言，这里的公交车很可靠。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8929,
+    "word": "in my opinion",
+    "phonetic": "/ɪn maɪ əˈpɪnjən/",
+    "pos": "adv. phr.",
+    "meaning": "在我看来",
+    "example": "In my opinion, this route is safer.",
+    "exampleCn": "在我看来，这条路线更安全。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8930,
+    "word": "in other words",
+    "phonetic": "/ɪn ˈʌðə wɜːdz/",
+    "pos": "adv. phr.",
+    "meaning": "换句话说",
+    "example": "The ticket is non-refundable; in other words, you cannot get your money back.",
+    "exampleCn": "这张票不可退款，换句话说，你不能拿回票款。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8931,
+    "word": "in particular",
+    "phonetic": "/ɪn pəˈtɪkjələ/",
+    "pos": "adv. phr.",
+    "meaning": "尤其；特别是",
+    "example": "I like this park, the quiet paths in particular.",
+    "exampleCn": "我喜欢这个公园，尤其喜欢其中安静的小路。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8932,
+    "word": "in public",
+    "phonetic": "/ɪn ˈpʌblɪk/",
+    "pos": "adv. phr.",
+    "meaning": "在公众场合；公开地",
+    "example": "She feels nervous speaking in public.",
+    "exampleCn": "她在公众面前讲话时感到紧张。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8933,
+    "word": "in the end",
+    "phonetic": "/ɪn ði end/",
+    "pos": "adv. phr.",
+    "meaning": "最后；最终",
+    "example": "We chose the smaller room in the end.",
+    "exampleCn": "我们最终选择了较小的房间。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8934,
+    "word": "in the future",
+    "phonetic": "/ɪn ðə ˈfjuːtʃə/",
+    "pos": "adv. phr.",
+    "meaning": "将来；今后",
+    "example": "We hope to visit again in the future.",
+    "exampleCn": "我们希望将来再次到访。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8935,
+    "word": "in time",
+    "phonetic": "/ɪn taɪm/",
+    "pos": "adv. phr.",
+    "meaning": "及时；来得及",
+    "example": "We arrived in time for the show.",
+    "exampleCn": "我们及时赶到了演出现场。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8936,
+    "word": "in touch",
+    "phonetic": "/ɪn tʌtʃ/",
+    "pos": "adj. phr.",
+    "meaning": "保持联系；有联系的",
+    "example": "We stayed in touch after the course.",
+    "exampleCn": "课程结束后我们保持着联系。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8937,
+    "word": "make a difference",
+    "phonetic": "/meɪk ə ˈdɪfrəns/",
+    "pos": "v. phr.",
+    "meaning": "产生影响；起作用",
+    "example": "A short daily practice can make a difference.",
+    "exampleCn": "每天短暂练习也能产生影响。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8938,
+    "word": "make a mistake",
+    "phonetic": "/meɪk ə mɪˈsteɪk/",
+    "pos": "v. phr.",
+    "meaning": "犯错",
+    "example": "It is normal to make a mistake while learning.",
+    "exampleCn": "学习时犯错是正常的。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8939,
+    "word": "make sense",
+    "phonetic": "/meɪk sens/",
+    "pos": "v. phr.",
+    "meaning": "有道理；意思清楚",
+    "example": "Your explanation makes sense.",
+    "exampleCn": "你的解释有道理。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8940,
+    "word": "make sure",
+    "phonetic": "/meɪk ʃʊə/",
+    "pos": "v. phr.",
+    "meaning": "确保；核实",
+    "example": "Make sure the door is locked.",
+    "exampleCn": "确保门锁好了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8941,
+    "word": "mental health",
+    "phonetic": "/ˈmentl helθ/",
+    "pos": "n. phr.",
+    "meaning": "心理健康；精神健康",
+    "example": "Regular rest is important for mental health.",
+    "exampleCn": "规律休息对心理健康很重要。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8942,
+    "word": "no longer",
+    "phonetic": "/nəʊ ˈlɒŋɡə/",
+    "pos": "adv. phr.",
+    "meaning": "不再",
+    "example": "This ticket is no longer valid.",
+    "exampleCn": "这张票不再有效。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8943,
+    "word": "no problem",
+    "phonetic": "/nəʊ ˈprɒbləm/",
+    "pos": "interj. phr.",
+    "meaning": "没问题；不用谢",
+    "example": "No problem, I can help you after lunch.",
+    "exampleCn": "没问题，我午饭后可以帮你。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8944,
+    "word": "not at all",
+    "phonetic": "/nɒt ət ɔːl/",
+    "pos": "adv. phr.",
+    "meaning": "一点也不；完全不",
+    "example": "The exercise was not at all difficult.",
+    "exampleCn": "这道练习一点也不难。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8945,
+    "word": "of course",
+    "phonetic": "/əv kɔːs/",
+    "pos": "adv. phr.",
+    "meaning": "当然",
+    "example": "Of course, you can join us.",
+    "exampleCn": "当然，你可以加入我们。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8946,
+    "word": "on time",
+    "phonetic": "/ɒn taɪm/",
+    "pos": "adv. phr.",
+    "meaning": "准时；按时",
+    "example": "The train arrived on time.",
+    "exampleCn": "火车准时到达。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  }
+]

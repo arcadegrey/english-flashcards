@@ -1,3 +1,4 @@
+import { vocabularyNoteKey } from '../shared/vocabularyAliases.js';
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import { readFile } from 'node:fs/promises';
@@ -119,10 +120,11 @@ test('every checked form belongs to its comparison, occurs as a complete token a
 });
 
 test('the final 2699 notes cover the exact vocabulary difference with unique original examples and sourced corrections', async () => {
-  const vocabulary = JSON.parse(await readFile(new URL('../public/data/vocabulary.json', import.meta.url), 'utf8'));
+  const { RETIRED_VOCABULARY } = await import('../shared/retiredVocabulary.js');
+  const vocabulary = [...JSON.parse(await readFile(new URL('../public/data/vocabulary.json', import.meta.url), 'utf8')).filter(word => word.id <= 8699), ...RETIRED_VOCABULARY];
   const normalize = text => text.trim().toLowerCase();
-  const previousWords = new Set(Object.entries(CORE_WORD_NOTES).filter(([, entry]) => !/^e[789]-/.test(entry.synonymGroup)).map(([word]) => word));
-  const expected = new Set(vocabulary.map(entry => normalize(entry.word)).filter(word => !previousWords.has(word)));
+  const previousWords = new Set(Object.entries(CORE_WORD_NOTES).filter(([, entry]) => !/^(e[789]-|practical-)/.test(entry.synonymGroup)).map(([word]) => word));
+  const expected = new Set(vocabulary.map(vocabularyNoteKey).filter(word => !previousWords.has(word)));
   const previousExamples = new Set(Object.entries(CORE_SYNONYM_GROUPS).filter(([id]) => !/^e[789]-/.test(id)).flatMap(([, group]) => group.examples.map(example => normalize(example.en))));
   const vocabularyExamples = new Set(vocabulary.map(entry => entry.example).filter(Boolean).map(normalize));
   const seen = new Set(), examples = new Set(), groupsSeen = new Set(), sourcesSeen = new Set();
@@ -193,10 +195,11 @@ test('hong and kong retain independently sourced senses instead of unsupported p
   }
 });
 
-test('all 8699 notes match existing vocabulary without introducing word IDs or rewriting records', async () => {
+test('all active and retired vocabulary retains its own notes without rewriting records', async () => {
   const vocabulary = JSON.parse(await readFile(new URL('../public/data/vocabulary.json', import.meta.url), 'utf8'));
-  const bySpelling = new Map(vocabulary.map(entry => [entry.word.trim().toLowerCase(), entry]));
-  assert.equal(Object.keys(CORE_WORD_NOTES).length, 8699);
+  const { RETIRED_VOCABULARY } = await import('../shared/retiredVocabulary.js');
+  const bySpelling = new Map([...vocabulary, ...RETIRED_VOCABULARY].map(entry => [vocabularyNoteKey(entry), entry]));
+  assert.equal(Object.keys(CORE_WORD_NOTES).length, 8946);
   assert.deepEqual(new Set(Object.keys(CORE_WORD_NOTES)), new Set(bySpelling.keys()));
   assert.equal(Object.values(CORE_WORD_NOTES).filter(entry => entry.formation).length, 47);
   for (const [word, entry] of Object.entries(CORE_WORD_NOTES)) {
@@ -444,7 +447,7 @@ test('three additional 1000-word batches add unique, sourced usage notes and ori
   const seenGroups = new Set();
   const seenSources = new Set();
   const seenExamples = new Set();
-  const previousWords = new Set(Object.entries(CORE_WORD_NOTES).filter(([, entry]) => !/^e[4-9]-/.test(entry.synonymGroup)).map(([word]) => word));
+  const previousWords = new Set(Object.entries(CORE_WORD_NOTES).filter(([, entry]) => !/^(e[4-9]-|practical-)/.test(entry.synonymGroup)).map(([word]) => word));
   assert.equal(previousWords.size, 3000, 'previous notes remain intact');
   const previousExamples = new Set(Object.values(CORE_SYNONYM_GROUPS).filter(group => group.words.some(word => previousWords.has(word))).flatMap(group => group.examples.map(example => example.en.trim().toLowerCase())));
   for (const [batch, prefix] of [[expansionFour, 'FOUR'], [expansionFive, 'FIVE'], [expansionSix, 'SIX']]) {

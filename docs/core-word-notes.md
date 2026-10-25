@@ -1,4 +1,6 @@
-# 核心词学习提示（8699 词条，2026-10-24）
+# 核心词学习提示（活动8699条，2026-10-25）
+
+247条实用替换已完成：活动词提示仍全覆盖，另保留247条退役词的历史提示，合计8946条登记、17576条例句。新内容在 `src/data/practicalWordNotes.js`，来源、音标边界、四音色音频和历史兼容详见 `practical-vocabulary-replacement-2026-10-25.md`。下文保留原有内容扩充阶段的记录。
 
 ## 范围
 
@@ -217,3 +219,7 @@ forms: [{
 - 自动验证：`node --test tests/core-word-notes.test.mjs tests/learning-trust.test.mjs` 25/25 通过；lint、`git diff --check`、生产构建与 PWA 生成通过。语义复核后只重跑受影响的检查与构建，未执行全量测试。仍有既有主包大于 500 kB 和 Browserslist 数据过期提示。
 - 浏览器：14 个词条，覆盖 café、per capita、Antarctic、两处错拼、规范短语、专名、旧称及 hong／kong。逐例高亮、引用、折叠后焦点隐藏、无运行错误；1440px 桌面和 390px 手机无横向溢出，per capita 离线提示正常。已人工查看手机错拼提示与桌面 hong 截图。脚本为忽略的 `output/playwright/final-word-notes-flow.mjs`、`final-hong-kong-flow.mjs`，截图为 `final-notes-*.png`。
 - 最后三个内容包约 354／438／418 kB，均在页面预加载并列入 PWA 预缓存；主 JS 约 1.78 MB。无新增迁移，本轮只需发布前端；如收藏同步整包仍未上线，依 `learning-trust.md` 同步发布 Worker 与前端。未提交、推送或部署。
+
+## 基础词库修复后的提示兼容（2026-10-24）
+
+后续 33 条基础词库修复保留全部 8699 个 ID，两个错拼修正后形成两对同形词（8697 个不同词头）。提示登记仍为 8699 份，`vocabularyNoteKey` 按稳定 ID 为 1234／3318 保留原提示键与来源，不覆盖既有 spectator／precaution 的提示。旧键仅用于兼容和历史说明，不作为新拼写题正确答案。Sam 的提示已与人名义项对齐，jean 提示明确布料义与 jeans 裤子义。其余修复、音频与验收见 `vocabulary-repair-2026-10-24.md`。

@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-25",
+  "bucket": "english-flashcards-audio",
+  "baseUrl": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates",
+  "verifiedAt": "2026-10-25T10:22:55.739Z",
+  "verifiedMp3s": 2036,
+  "uploadedManifests": [
+    {
+      "batch": "2026-10-24",
+      "files": 60,
+      "sha256": "366074f65fc2d60b73e7fbf5281966f02f97fa1a8719dafe6acb810ee5c98608"
+    },
+    {
+      "batch": "2026-10-25",
+      "files": 1976,
+      "sha256": "c89d21488eb11294c5744a16d59430c96e41263425244550535f9514f659d67f"
+    }
+  ],
+  "audioBytes": 14449896,
+  "contentSha256": "a9267eaaf64317d0f221f13ba98534d490039f31b29f1d075021b668831c0b64",
+  "allContentTypesVerified": true,
+  "immutableCacheHeaders": true,
+  "corsOrigins": [
+    "*"
+  ],
+  "browserPlayback": {
+    "word": "passport",
+    "voice": "af_bella",
+    "wordEnded": true,
+    "exampleEnded": true,
+    "source": "R2"
+  },
+  "applicationDeployed": false
+}

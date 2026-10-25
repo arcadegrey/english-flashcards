@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-26T11:52:08.069Z",
+  "generatedAt": "2026-10-25T09:40:43.313Z",
   "source": "/data/vocabulary.json",
   "sourceTotal": 8699,
   "core": {
     "path": "/data/vocabulary/core.json",
-    "count": 3478
+    "count": 3481
   },
   "ielts": {
     "total": 3335,

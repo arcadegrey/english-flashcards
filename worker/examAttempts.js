@@ -1,4 +1,5 @@
 import catalog from './data/assignment-vocabulary.json' with { type: 'json' };
+import { RETIRED_VOCABULARY } from '../shared/retiredVocabulary.js';
 import { createExamAttempt } from '../shared/examAttempts.js';
 
 const json = (body, status = 200) => new Response(JSON.stringify(body), {
@@ -24,9 +25,11 @@ export async function handleExamAttempts(request, env, user) {
   const progress = await env.DB.prepare('SELECT custom_words FROM user_progress WHERE user_id=?').bind(user.id).first();
   const custom = progress ? JSON.parse(progress.custom_words) : [];
   // Built-in vocabulary always wins; custom words must already belong to this account.
-  const builtInIds = new Set(catalog.map(word => String(word.id)));
+  // Accept offline answers from an older vocabulary version without reusing retired IDs.
+  const gradingCatalog = [...catalog, ...RETIRED_VOCABULARY];
+  const builtInIds = new Set(gradingCatalog.map(word => String(word.id)));
   let attempt;
-  try { attempt = createExamAttempt(body, [...catalog, ...custom.filter(word => !builtInIds.has(String(word.id)))]); }
+  try { attempt = createExamAttempt(body, [...gradingCatalog, ...custom.filter(word => !builtInIds.has(String(word.id)))]); }
   catch (err) { return json({ error: err.message }, 400); }
   await env.DB.prepare('INSERT INTO exam_attempts (user_id,id,attempt_json,completed_at) VALUES (?,?,?,?) ON CONFLICT(user_id,id) DO NOTHING')
     .bind(user.id, attempt.id, JSON.stringify(attempt), attempt.completedAt).run();

@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-26T11:52:08.057Z",
+  "generatedAt": "2026-10-25T09:40:43.294Z",
   "source": "/data/vocabulary.json",
   "sourceTotal": 8699,
   "core": {
     "path": "/data/vocabulary/core.json",
-    "count": 3478
+    "count": 3481
   },
   "toefl": {
-    "total": 3254,
+    "total": 3251,
     "levels": [
       {
         "key": "3",
@@ -148,7 +148,7 @@
       {
         "key": "5",
         "label": "Level 5",
-        "count": 923,
+        "count": 922,
         "lists": [
           {
             "key": "1",
@@ -171,7 +171,7 @@
           {
             "key": "4",
             "label": "List 4",
-            "count": 98,
+            "count": 97,
             "path": "/data/vocabulary/toefl/level-5/list-4.json"
           },
           {
@@ -216,12 +216,12 @@
       {
         "key": "6",
         "label": "Level 6",
-        "count": 249,
+        "count": 247,
         "lists": [
           {
             "key": "1",
             "label": "List 1",
-            "count": 50,
+            "count": 49,
             "path": "/data/vocabulary/toefl/level-6/list-1.json"
           },
           {
@@ -239,7 +239,7 @@
           {
             "key": "4",
             "label": "List 4",
-            "count": 50,
+            "count": 49,
             "path": "/data/vocabulary/toefl/level-6/list-4.json"
           },
           {

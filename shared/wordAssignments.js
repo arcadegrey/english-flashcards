@@ -1,3 +1,5 @@
+import { normalizeVocabularyHeadword } from './vocabularyAliases.js';
+
 export const WORD_ASSIGNMENT_CATEGORIES = {
   all: '全部单词', daily: '日常常用', cet4: '四级核心', cet6: '六级核心', toefl: '托福词汇', ielts: '雅思词汇',
 };
@@ -23,7 +25,8 @@ export function selectAssignmentWords(catalog, { category, start, count, wordIds
 
 export function buildWordAssignment(words) {
   return words.map((word, index) => {
-    const distractors = [...new Set(words.filter((other) => other.meaning !== word.meaning).map((other) => other.meaning))].slice(0, 3);
+    const distractors = [...new Set(words.filter((other) => other.meaning !== word.meaning
+      && normalizeVocabularyHeadword(other.word) !== normalizeVocabularyHeadword(word.word)).map((other) => other.meaning))].slice(0, 3);
     if (distractors.length < 3) throw new Error('所选词汇的不同释义不足，请扩大或更换范围。');
     const labels = [...distractors];
     labels.splice(index % 4, 0, word.meaning);

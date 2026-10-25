@@ -5,6 +5,7 @@ import { LinearProgress } from '../ui/Progress';
 import { loadStudentProgress } from '../../utils/classroomApi';
 import { buildStudentWordRows, formatClassroomDate } from '../../utils/classroom';
 import { loadFullVocabulary } from '../../data/vocabulary';
+import { RETIRED_VOCABULARY } from '../../../shared/retiredVocabulary.js';
 import StudentReadingProgress from './StudentReadingProgress';
 import { ExamAttemptList } from '../assessment/ExamHistoryPanel';
 
@@ -40,7 +41,7 @@ export default function StudentProgressPanel({ classId, student, onBack, initial
     load();
     return () => controller.abort();
   }, [classId, student.id, refresh]);
-  const rows = useMemo(() => buildStudentWordRows(data?.progress, vocabulary), [data, vocabulary]);
+  const rows = useMemo(() => buildStudentWordRows(data?.progress, [...RETIRED_VOCABULARY, ...vocabulary]), [data, vocabulary]);
   const filteredRows = useMemo(() => rows.filter((row) => {
     const matchesFilter = filter === 'all' || (filter === 'wrong' ? row.wrong : filter === 'due' ? row.due : row.status === filter);
     return matchesFilter && `${row.word} ${row.meaning}`.toLowerCase().includes(search.trim().toLowerCase());

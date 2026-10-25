@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { playSuccessChime } from '../utils/feedback';
 import CorrectAnswerCelebration from './CorrectAnswerCelebration';
+import { distinctVocabularyWords } from '../../shared/vocabularyAliases.js';
 
 const ROUND_SIZE = 5;
 
@@ -8,7 +9,7 @@ const shuffle = (list = []) => [...list].sort(() => Math.random() - 0.5);
 
 const createMatchingRound = (vocabulary = []) => {
   const candidates = Array.isArray(vocabulary)
-    ? vocabulary.filter((item) => item?.id != null && item?.word && item?.meaning)
+    ? distinctVocabularyWords(shuffle(vocabulary.filter((item) => item?.id != null && item?.word && item?.meaning)))
     : [];
 
   if (candidates.length < 2) {

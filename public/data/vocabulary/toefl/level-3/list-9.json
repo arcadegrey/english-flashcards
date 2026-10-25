@@ -128,8 +128,8 @@
   },
   {
     "id": 1234,
-    "word": "sepectator",
-    "phonetic": "/ˈspekˌteɪtər/",
+    "word": "spectator",
+    "phonetic": "/spekˈteɪtə(r)/",
     "pos": "n.",
     "meaning": "观众；旁观者",
     "example": "The spectators cheered loudly at the end of the game.",
@@ -139,7 +139,10 @@
       "toefl"
     ],
     "level": "3",
-    "list": "9"
+    "list": "9",
+    "aliases": [
+      "sepectator"
+    ]
   },
   {
     "id": 1235,

@@ -132,7 +132,7 @@ const main = async () => {
 
     const merged = [...existingVocabulary];
     const byWord = new Map(
-      merged.map((item, index) => [String(item.word || '').trim().toLowerCase(), index]).filter(([key]) => key)
+      merged.flatMap((item, index) => [item.word, ...(item.aliases || [])].map(word => [String(word || '').trim().toLowerCase(), index])).filter(([key]) => key)
     );
 
     let nextId = Math.max(0, ...merged.map((item) => Number(item.id) || 0)) + 1;

@@ -1,11 +1,11 @@
 # 核心词提示覆盖率与新增批次来源
 
-汇总日期：2026-10-24（逐条核对日期保留在来源与内容中）。运行 `node scripts/report-word-notes.mjs > docs/word-notes-coverage.md` 可重新生成。
+汇总日期：2026-10-25（逐条核对日期保留在来源与内容中）。运行 `node scripts/report-word-notes.mjs > docs/word-notes-coverage.md` 可重新生成。
 
 ## 覆盖口径
 
-- 原词库独立词条：8699；已登记提示：8699；可展示提示：8699。
-- 内容：8541 组（近义 92；易混 78；单词用法 8371），共 17082 条双语例句。
+- 活动词库记录（稳定 ID）：8699；历史兼容记录：247；已登记提示（含历史）：8946；可展示提示（含历史）：8946。
+- 内容：8788 组（近义 92；易混 78；单词用法 8618），共 17576 条双语例句。
 - 构词／词族说明：47 词，38 组。此次保留原有构词，不为凑覆盖率增加推断。
 - 显式例句词形：144 处，逐例登记词头、实际词形、来源和核对状态；不自动推断未标注词形。
 - 显式规范拼写／表达映射：6 组；保留原词条键和用户记录，提示说明规范拼写或推荐表达，例句使用已核验目标。
@@ -16,10 +16,10 @@
 
 | 词库类别 | 原有词条 | 已覆盖提示 | 覆盖比例 | 构词／词族覆盖 |
 | --- | ---: | ---: | ---: | ---: |
-| daily | 2026 | 2026 | 100.00% | 26 |
-| cet4 | 2283 | 2283 | 100.00% | 20 |
+| daily | 2029 | 2029 | 100.00% | 26 |
+| cet4 | 2075 | 2075 | 100.00% | 20 |
 | cet6 | 1520 | 1520 | 100.00% | 12 |
-| toefl | 3254 | 3254 | 100.00% | 0 |
+| toefl | 3251 | 3251 | 100.00% | 0 |
 | ielts | 3257 | 3257 | 100.00% | 5 |
 
 ## 规范拼写与表达映射
@@ -184,7 +184,7 @@
 
 ## 新增批次与逐组来源
 
-300 词基线后先通过三个各 900 词的独立词池扩至 3000 词，再新增三个各 1000 词的独立词池扩至 6000 词；最后通过 900／900／899 词三批补齐剩余 2699 个词条。每组两条原创双语例句，明确词性及适用词义；真实易混关系标为易混，无合适比较时使用单词用法笔记，不强配近义词或词根。未变更词 ID、分类、释义、音频、学习进度或同步数据。
+300 词基线后先通过三个各 900 词的独立词池扩至 3000 词，再新增三个各 1000 词的独立词池扩至 6000 词；最后通过 900／900／899 词三批补齐剩余 2699 个词条。每组两条原创双语例句，明确词性及适用词义；真实易混关系标为易混，无合适比较时使用单词用法笔记，不强配近义词或词根。该提示扩充阶段未变更词 ID、分类或学习进度。后续基础词库的 33 条修复及版本音频见 `vocabulary-repair-2026-10-24.md`；两个更正后的同形词按 ID 保留原提示键。
 
 核对过程中部分剑桥词典直连返回 403，词条事实使用可读取的韦氏词典；关键语法另用剑桥 English Grammar Today；部分词形或义项补用牛津、柯林斯词典。参考链接保留在学习提示中。新增的第四至第六批次逐词读取剑桥／牛津词条，必要时补查韦氏词条或明确的词形变体，并按具体词性和义项核对；不把请求成功自动视为独立语言审校。
 
@@ -8514,7 +8514,7 @@
 | israel | 用法 · 专有名词 · 以色列 | [剑桥词典 · israel](https://dictionary.cambridge.org/dictionary/english/israel) |
 | iraq | 用法 · 专有名词 · 伊拉克 | [剑桥词典 · iraq](https://dictionary.cambridge.org/dictionary/english/iraq) |
 | sept | 用法 · 缩写 · 九月 | [剑桥词典 · sept](https://dictionary.cambridge.org/dictionary/english/sept) |
-| sam | 用法 · 缩写 · 地对空导弹 | [剑桥词典 · sam](https://dictionary.cambridge.org/dictionary/english/sam) |
+| sam | 用法 · 专有名词 · 萨姆 | [牛津学习词典 · Sam](https://www.oxfordlearnersdictionaries.com/definition/english/sam) |
 | neil | 用法 · 专有名词 · 尼尔 | [牛津学习词典 · neil](https://www.oxfordlearnersdictionaries.com/definition/english/neil) |
 | patrick | 用法 · 专有名词 · 帕特里克 | [牛津学习词典 · patrick](https://www.oxfordlearnersdictionaries.com/definition/english/patrick) |
 | joseph | 用法 · 专有名词 · 约瑟夫 | [牛津学习词典 · joseph](https://www.oxfordlearnersdictionaries.com/definition/english/joseph) |
@@ -8749,4 +8749,258 @@
 | christ | 用法 · 专有称号 · 基督 | [牛津学习词典 · christ](https://www.oxfordlearnersdictionaries.com/definition/english/christ) |
 | jean | 用法 · 名词 · 牛仔裤（按常用复数学习） | [牛津学习词典 · jeans](https://www.oxfordlearnersdictionaries.com/definition/english/jeans) |
 | kuwait | 用法 · 专有名词 · 科威特 | [剑桥词典 · kuwait](https://dictionary.cambridge.org/dictionary/english/kuwait) |
+
+### 实用替换批次：2026-10-25（247条；历史条目保留原提示）
+
+词条数：247。
+
+| 词组 | 类型与适用范围 | 核对来源 |
+| --- | --- | --- |
+| a | 用法 · article · 一；一个（不定冠词） | [牛津学习词典 · a](https://www.oxfordlearnersdictionaries.com/definition/english/a_1) |
+| an | 用法 · article · 一；一个（用于元音音素前） | [牛津学习词典 · an](https://www.oxfordlearnersdictionaries.com/definition/english/a_1) |
+| as | 用法 · conj. · 当……时；随着 | [牛津学习词典 · as](https://www.oxfordlearnersdictionaries.com/definition/english/as_3) |
+| at | 用法 · prep. · 在（具体地点或时刻） | [牛津学习词典 · at](https://www.oxfordlearnersdictionaries.com/definition/english/at) |
+| because of | 用法 · prep. · 因为；由于 | [牛津学习词典 · because of](https://www.oxfordlearnersdictionaries.com/definition/english/because-of) |
+| blonde | 用法 · adj. · 金发的 | [牛津学习词典 · blonde](https://www.oxfordlearnersdictionaries.com/definition/english/blonde_1) |
+| cannot | 用法 · modal · 不能；无法 | [牛津学习词典 · cannot](https://www.oxfordlearnersdictionaries.com/definition/english/cannot) |
+| do | 用法 · v. · 做；干 | [牛津学习词典 · do](https://www.oxfordlearnersdictionaries.com/definition/english/do1_1) |
+| email | 用法 · n. · 电子邮件 | [牛津学习词典 · email](https://www.oxfordlearnersdictionaries.com/definition/english/email_2) |
+| euro | 用法 · n. · 欧元 | [牛津学习词典 · euro](https://www.oxfordlearnersdictionaries.com/definition/english/euro_1) |
+| go | 用法 · v. · 去；走 | [牛津学习词典 · go](https://www.oxfordlearnersdictionaries.com/definition/english/go_1) |
+| goodbye | 用法 · interj. · 再见 | [牛津学习词典 · goodbye](https://www.oxfordlearnersdictionaries.com/definition/english/goodbye) |
+| have to | 用法 · modal · 必须；不得不 | [牛津学习词典 · have to](https://www.oxfordlearnersdictionaries.com/definition/english/have-to) |
+| he | 用法 · pron. · 他（主格） | [牛津学习词典 · he](https://www.oxfordlearnersdictionaries.com/definition/english/he_1) |
+| hey | 用法 · interj. · 嘿；喂（用于招呼或引起注意） | [牛津学习词典 · hey](https://www.oxfordlearnersdictionaries.com/definition/english/hey) |
+| hi | 用法 · interj. · 你好；嗨 | [牛津学习词典 · hi](https://www.oxfordlearnersdictionaries.com/definition/english/hi) |
+| hobby | 用法 · n. · 业余爱好 | [牛津学习词典 · hobby](https://www.oxfordlearnersdictionaries.com/definition/english/hobby) |
+| i | 用法 · pron. · 我（主格） | [牛津学习词典 · I](https://www.oxfordlearnersdictionaries.com/definition/english/i_1) |
+| ice cream | 用法 · n. · 冰淇淋 | [牛津学习词典 · ice cream](https://www.oxfordlearnersdictionaries.com/definition/english/ice-cream) |
+| if | 用法 · conj. · 如果 | [牛津学习词典 · if](https://www.oxfordlearnersdictionaries.com/definition/english/if_1) |
+| in | 用法 · prep. · 在……里面 | [牛津学习词典 · in](https://www.oxfordlearnersdictionaries.com/definition/english/in_1) |
+| it | 用法 · pron. · 它 | [牛津学习词典 · it](https://www.oxfordlearnersdictionaries.com/definition/english/it_1) |
+| me | 用法 · pron. · 我（宾格） | [牛津学习词典 · me](https://www.oxfordlearnersdictionaries.com/definition/english/me_1) |
+| my | 用法 · det. · 我的 | [牛津学习词典 · my](https://www.oxfordlearnersdictionaries.com/definition/english/my) |
+| next to | 用法 · prep. · 紧挨着；在……旁边 | [牛津学习词典 · next to](https://www.oxfordlearnersdictionaries.com/definition/english/next-to) |
+| no | 用法 · det. · 没有；无 | [牛津学习词典 · no](https://www.oxfordlearnersdictionaries.com/definition/english/no_1) |
+| no one | 用法 · pron. · 没有人 | [牛津学习词典 · no one](https://www.oxfordlearnersdictionaries.com/definition/english/no-one) |
+| o'clock | 用法 · adv. · ……点钟（整点） | [牛津学习词典 · o'clock](https://www.oxfordlearnersdictionaries.com/definition/english/o-clock) |
+| of | 用法 · prep. · ……的；属于…… | [牛津学习词典 · of](https://www.oxfordlearnersdictionaries.com/definition/english/of) |
+| oh | 用法 · interj. · 哦；啊 | [牛津学习词典 · oh](https://www.oxfordlearnersdictionaries.com/definition/english/oh_1) |
+| ok | 用法 · adj. · 可以的；没问题的 | [牛津学习词典 · OK](https://www.oxfordlearnersdictionaries.com/definition/english/ok_1) |
+| on | 用法 · prep. · 在……上面 | [牛津学习词典 · on](https://www.oxfordlearnersdictionaries.com/definition/english/on_1) |
+| or | 用法 · conj. · 或者；还是 | [牛津学习词典 · or](https://www.oxfordlearnersdictionaries.com/definition/english/or_1) |
+| passport | 用法 · n. · 护照 | [牛津学习词典 · passport](https://www.oxfordlearnersdictionaries.com/definition/english/passport) |
+| so | 用法 · conj. · 所以；因此 | [牛津学习词典 · so](https://www.oxfordlearnersdictionaries.com/definition/english/so_3) |
+| the | 用法 · article · 这；那（定冠词） | [牛津学习词典 · the](https://www.oxfordlearnersdictionaries.com/definition/english/the) |
+| to | 用法 · prep. · 到；向 | [牛津学习词典 · to](https://www.oxfordlearnersdictionaries.com/definition/english/to_1) |
+| t-shirt | 用法 · n. · T恤衫 | [牛津学习词典 · T-shirt](https://www.oxfordlearnersdictionaries.com/definition/english/t-shirt) |
+| tv | 用法 · n. · 电视；电视节目 | [牛津学习词典 · TV](https://www.oxfordlearnersdictionaries.com/definition/english/tv) |
+| umbrella | 用法 · n. · 雨伞 | [牛津学习词典 · umbrella](https://www.oxfordlearnersdictionaries.com/definition/english/umbrella) |
+| up | 用法 · adv. · 向上；在高处 | [牛津学习词典 · up](https://www.oxfordlearnersdictionaries.com/definition/english/up_2) |
+| us | 用法 · pron. · 我们（宾格） | [牛津学习词典 · us](https://www.oxfordlearnersdictionaries.com/definition/english/us_1) |
+| we | 用法 · pron. · 我们（主格） | [牛津学习词典 · we](https://www.oxfordlearnersdictionaries.com/definition/english/we) |
+| according to | 用法 · prep. · 根据；据……所说 | [牛津学习词典 · according to](https://www.oxfordlearnersdictionaries.com/definition/english/according-to) |
+| all right | 用法 · adj. · 安好的；可以接受的 | [牛津学习词典 · all right](https://www.oxfordlearnersdictionaries.com/definition/english/all-right_1) |
+| any more | 用法 · adv. · 再；还（常用于否定句） | [牛津学习词典 · any more](https://www.oxfordlearnersdictionaries.com/definition/english/any-more) |
+| app | 用法 · n. · 应用程序 | [牛津学习词典 · app](https://www.oxfordlearnersdictionaries.com/definition/english/app) |
+| based | 用法 · adj. · 以……为基地的；设在……的 | [牛津学习词典 · based](https://www.oxfordlearnersdictionaries.com/definition/english/based) |
+| bin | 用法 · n. · 垃圾桶 | [牛津学习词典 · bin](https://www.oxfordlearnersdictionaries.com/definition/english/bin_1) |
+| camping | 用法 · n. · 露营 | [牛津学习词典 · camping](https://www.oxfordlearnersdictionaries.com/definition/english/camping) |
+| connected | 用法 · adj. · 连接的；有关联的 | [牛津学习词典 · connected](https://www.oxfordlearnersdictionaries.com/definition/english/connected) |
+| divorced | 用法 · adj. · 离婚的 | [牛津学习词典 · divorced](https://www.oxfordlearnersdictionaries.com/definition/english/divorced) |
+| download | 用法 · v. · 下载 | [牛津学习词典 · download](https://www.oxfordlearnersdictionaries.com/definition/english/download_1) |
+| included | 用法 · adj. · 包括在内的 | [牛津学习词典 · included](https://www.oxfordlearnersdictionaries.com/definition/english/included) |
+| instead of | 用法 · prep. · 代替；而不是 | [牛津学习词典 · instead of](https://www.oxfordlearnersdictionaries.com/definition/english/instead-of) |
+| lazy | 用法 · adj. · 懒惰的；懒散的 | [牛津学习词典 · lazy](https://www.oxfordlearnersdictionaries.com/definition/english/lazy) |
+| loudly | 用法 · adv. · 大声地 | [牛津学习词典 · loudly](https://www.oxfordlearnersdictionaries.com/definition/english/loudly) |
+| motorcycle | 用法 · n. · 摩托车 | [牛津学习词典 · motorcycle](https://www.oxfordlearnersdictionaries.com/definition/english/motorcycle) |
+| sailing | 用法 · n. · 帆船运动；乘帆船航行 | [牛津学习词典 · sailing](https://www.oxfordlearnersdictionaries.com/definition/english/sailing) |
+| singing | 用法 · n. · 唱歌 | [牛津学习词典 · singing](https://www.oxfordlearnersdictionaries.com/definition/english/singing) |
+| smartphone | 用法 · n. · 智能手机 | [牛津学习词典 · smartphone](https://www.oxfordlearnersdictionaries.com/definition/english/smartphone) |
+| used to | 用法 · modal · 过去常常；过去曾经 | [牛津学习词典 · used to](https://www.oxfordlearnersdictionaries.com/definition/english/used-to_2) |
+| ad | 用法 · n. · 广告 | [牛津学习词典 · ad](https://www.oxfordlearnersdictionaries.com/definition/english/ad_1) |
+| ai | 用法 · n. · 人工智能 | [牛津学习词典 · AI](https://www.oxfordlearnersdictionaries.com/definition/english/ai) |
+| amazed | 用法 · adj. · 感到惊奇的 | [牛津学习词典 · amazed](https://www.oxfordlearnersdictionaries.com/definition/english/amazed) |
+| annoyed | 用法 · adj. · 感到恼火的 | [牛津学习词典 · annoyed](https://www.oxfordlearnersdictionaries.com/definition/english/annoyed) |
+| annoying | 用法 · adj. · 令人烦恼的 | [牛津学习词典 · annoying](https://www.oxfordlearnersdictionaries.com/definition/english/annoying) |
+| careless | 用法 · adj. · 粗心的；不小心的 | [牛津学习词典 · careless](https://www.oxfordlearnersdictionaries.com/definition/english/careless) |
+| disappointing | 用法 · adj. · 令人失望的 | [牛津学习词典 · disappointing](https://www.oxfordlearnersdictionaries.com/definition/english/disappointing) |
+| educated | 用法 · adj. · 受过教育的 | [牛津学习词典 · educated](https://www.oxfordlearnersdictionaries.com/definition/english/educated) |
+| embarrassing | 用法 · adj. · 令人尴尬的 | [牛津学习词典 · embarrassing](https://www.oxfordlearnersdictionaries.com/definition/english/embarrassing) |
+| engaged | 用法 · adj. · 订婚的 | [牛津学习词典 · engaged](https://www.oxfordlearnersdictionaries.com/definition/english/engaged) |
+| frightening | 用法 · adj. · 令人害怕的 | [牛津学习词典 · frightening](https://www.oxfordlearnersdictionaries.com/definition/english/frightening) |
+| injured | 用法 · adj. · 受伤的 | [牛津学习词典 · injured](https://www.oxfordlearnersdictionaries.com/definition/english/injured) |
+| latest | 用法 · adj. · 最新的；最近的 | [牛津学习词典 · latest](https://www.oxfordlearnersdictionaries.com/definition/english/latest_2) |
+| located | 用法 · adj. · 位于……的 | [牛津学习词典 · located](https://www.oxfordlearnersdictionaries.com/definition/english/located) |
+| old-fashioned | 用法 · adj. · 老式的；过时的 | [牛津学习词典 · old-fashioned](https://www.oxfordlearnersdictionaries.com/definition/english/old-fashioned) |
+| podcast | 用法 · n. · 播客节目 | [牛津学习词典 · podcast](https://www.oxfordlearnersdictionaries.com/definition/english/podcast) |
+| relaxing | 用法 · adj. · 令人放松的 | [牛津学习词典 · relaxing](https://www.oxfordlearnersdictionaries.com/definition/english/relaxing) |
+| spoken | 用法 · adj. · 口头的；口语的 | [牛津学习词典 · spoken](https://www.oxfordlearnersdictionaries.com/definition/english/spoken) |
+| statistic | 用法 · n. · 统计数字 | [牛津学习词典 · statistic](https://www.oxfordlearnersdictionaries.com/definition/english/statistic) |
+| theirs | 用法 · pron. · 他们的；她们的；它们的（所有物） | [牛津学习词典 · theirs](https://www.oxfordlearnersdictionaries.com/definition/english/theirs) |
+| wi-fi | 用法 · n. · 无线局域网连接技术 | [牛津学习词典 · Wi-Fi](https://www.oxfordlearnersdictionaries.com/definition/english/wi-fitm) |
+| accidentally | 用法 · adv. · 意外地；无意中 | [牛津学习词典 · accidentally](https://www.oxfordlearnersdictionaries.com/definition/english/accidentally) |
+| additionally | 用法 · adv. · 此外；另外 | [牛津学习词典 · additionally](https://www.oxfordlearnersdictionaries.com/definition/english/additionally) |
+| amusing | 用法 · adj. · 有趣的；逗人发笑的 | [牛津学习词典 · amusing](https://www.oxfordlearnersdictionaries.com/definition/english/amusing) |
+| artwork | 用法 · n. · 艺术作品；美术图案 | [牛津学习词典 · artwork](https://www.oxfordlearnersdictionaries.com/definition/english/artwork) |
+| ashamed | 用法 · adj. · 惭愧的；羞愧的 | [牛津学习词典 · ashamed](https://www.oxfordlearnersdictionaries.com/definition/english/ashamed) |
+| astonishing | 用法 · adj. · 令人十分惊讶的 | [牛津学习词典 · astonishing](https://www.oxfordlearnersdictionaries.com/definition/english/astonishing) |
+| billionaire | 用法 · n. · 亿万富翁（资产至少十亿货币单位） | [牛津学习词典 · billionaire](https://www.oxfordlearnersdictionaries.com/definition/english/billionaire) |
+| broadcaster | 用法 · n. · 广播员；广播电视机构 | [牛津学习词典 · broadcaster](https://www.oxfordlearnersdictionaries.com/definition/english/broadcaster) |
+| caption | 用法 · n. · 图片说明；字幕 | [牛津学习词典 · caption](https://www.oxfordlearnersdictionaries.com/definition/english/caption_2) |
+| colourful | 用法 · adj. · 色彩鲜艳的；多彩的 | [牛津学习词典 · colourful](https://www.oxfordlearnersdictionaries.com/definition/english/colourful) |
+| comedian | 用法 · n. · 喜剧演员 | [牛津学习词典 · comedian](https://www.oxfordlearnersdictionaries.com/definition/english/comedian) |
+| console | 用法 · n. · 游戏机；控制台 | [牛津学习词典 · console](https://www.oxfordlearnersdictionaries.com/definition/english/console1) |
+| critically | 用法 · adv. · 批判性地；审慎地 | [牛津学习词典 · critically](https://www.oxfordlearnersdictionaries.com/definition/english/critically) |
+| depressing | 用法 · adj. · 令人沮丧的 | [牛津学习词典 · depressing](https://www.oxfordlearnersdictionaries.com/definition/english/depressing) |
+| dishonest | 用法 · adj. · 不诚实的 | [牛津学习词典 · dishonest](https://www.oxfordlearnersdictionaries.com/definition/english/dishonest) |
+| downwards | 用法 · adv. · 向下 | [牛津学习词典 · downwards](https://www.oxfordlearnersdictionaries.com/definition/english/downwards) |
+| efficiently | 用法 · adv. · 高效地 | [牛津学习词典 · efficiently](https://www.oxfordlearnersdictionaries.com/definition/english/efficiently) |
+| enjoyable | 用法 · adj. · 令人愉快的 | [牛津学习词典 · enjoyable](https://www.oxfordlearnersdictionaries.com/definition/english/enjoyable) |
+| entertaining | 用法 · adj. · 有趣的；有娱乐性的 | [牛津学习词典 · entertaining](https://www.oxfordlearnersdictionaries.com/definition/english/entertaining) |
+| fabulous | 用法 · adj. · 极好的；非常棒的 | [牛津学习词典 · fabulous](https://www.oxfordlearnersdictionaries.com/definition/english/fabulous) |
+| firefighter | 用法 · n. · 消防员 | [牛津学习词典 · firefighter](https://www.oxfordlearnersdictionaries.com/definition/english/firefighter) |
+| firework | 用法 · n. · 烟火；烟花 | [牛津学习词典 · firework](https://www.oxfordlearnersdictionaries.com/definition/english/firework) |
+| footprint | 用法 · n. · 脚印；足迹 | [牛津学习词典 · footprint](https://www.oxfordlearnersdictionaries.com/definition/english/footprint) |
+| full-time | 用法 · adj. · 全职的；全天的 | [牛津学习词典 · full-time](https://www.oxfordlearnersdictionaries.com/definition/english/full-time_2) |
+| gaming | 用法 · n. · 电子游戏活动 | [牛津学习词典 · gaming](https://www.oxfordlearnersdictionaries.com/definition/english/gaming) |
+| globalization | 用法 · n. · 全球化 | [牛津学习词典 · globalization](https://www.oxfordlearnersdictionaries.com/definition/english/globalization) |
+| healthcare | 用法 · n. · 医疗服务；医疗保健 | [牛津学习词典 · healthcare](https://www.oxfordlearnersdictionaries.com/definition/english/healthcare) |
+| hilarious | 用法 · adj. · 非常滑稽的；令人捧腹的 | [牛津学习词典 · hilarious](https://www.oxfordlearnersdictionaries.com/definition/english/hilarious) |
+| id | 用法 · n. · 身份证明；身份标识 | [牛津学习词典 · ID](https://www.oxfordlearnersdictionaries.com/definition/english/id_2) |
+| info | 用法 · n. · 信息；资料（非正式） | [牛津学习词典 · info](https://www.oxfordlearnersdictionaries.com/definition/english/info) |
+| litre | 用法 · n. · 升（容量单位） | [牛津学习词典 · litre](https://www.oxfordlearnersdictionaries.com/definition/english/litre) |
+| long-term | 用法 · adj. · 长期的 | [牛津学习词典 · long-term](https://www.oxfordlearnersdictionaries.com/definition/english/long-term_2) |
+| lottery | 用法 · n. · 彩票；抽彩活动 | [牛津学习词典 · lottery](https://www.oxfordlearnersdictionaries.com/definition/english/lottery) |
+| novelist | 用法 · n. · 小说家 | [牛津学习词典 · novelist](https://www.oxfordlearnersdictionaries.com/definition/english/novelist) |
+| obesity | 用法 · n. · 肥胖；肥胖症 | [牛津学习词典 · obesity](https://www.oxfordlearnersdictionaries.com/definition/english/obesity) |
+| pandemic | 用法 · n. · 大流行病 | [牛津学习词典 · pandemic](https://www.oxfordlearnersdictionaries.com/definition/english/pandemic_1) |
+| part-time | 用法 · adj. · 兼职的；非全日制的 | [牛津学习词典 · part-time](https://www.oxfordlearnersdictionaries.com/definition/english/part-time) |
+| passionate | 用法 · adj. · 充满热情的 | [牛津学习词典 · passionate](https://www.oxfordlearnersdictionaries.com/definition/english/passionate) |
+| password | 用法 · n. · 密码 | [牛津学习词典 · password](https://www.oxfordlearnersdictionaries.com/definition/english/password) |
+| pharmacy | 用法 · n. · 药房；药店 | [牛津学习词典 · pharmacy](https://www.oxfordlearnersdictionaries.com/definition/english/pharmacy) |
+| protester | 用法 · n. · 抗议者 | [牛津学习词典 · protester](https://www.oxfordlearnersdictionaries.com/definition/english/protester) |
+| punk | 用法 · n. · 朋克摇滚乐 | [牛津学习词典 · punk](https://www.oxfordlearnersdictionaries.com/definition/english/punk) |
+| racist | 用法 · adj. · 种族主义的 | [牛津学习词典 · racist](https://www.oxfordlearnersdictionaries.com/definition/english/racist_2) |
+| seeker | 用法 · n. · 寻求者；寻找者 | [牛津学习词典 · seeker](https://www.oxfordlearnersdictionaries.com/definition/english/seeker) |
+| shocking | 用法 · adj. · 令人震惊的 | [牛津学习词典 · shocking](https://www.oxfordlearnersdictionaries.com/definition/english/shocking) |
+| short-term | 用法 · adj. · 短期的 | [牛津学习词典 · short-term](https://www.oxfordlearnersdictionaries.com/definition/english/short-term) |
+| spokesperson | 用法 · n. · 发言人 | [牛津学习词典 · spokesperson](https://www.oxfordlearnersdictionaries.com/definition/english/spokesperson) |
+| spokeswoman | 用法 · n. · 女发言人 | [牛津学习词典 · spokeswoman](https://www.oxfordlearnersdictionaries.com/definition/english/spokeswoman) |
+| sporting | 用法 · adj. · 体育的；与运动有关的 | [牛津学习词典 · sporting](https://www.oxfordlearnersdictionaries.com/definition/english/sporting) |
+| timeline | 用法 · n. · 时间线；时间安排 | [牛津学习词典 · timeline](https://www.oxfordlearnersdictionaries.com/definition/english/timeline) |
+| trillion | 用法 · num. · 一万亿 | [牛津学习词典 · trillion](https://www.oxfordlearnersdictionaries.com/definition/english/trillion) |
+| vaccinate | 用法 · v. · 给……接种疫苗 | [牛津学习词典 · vaccinate](https://www.oxfordlearnersdictionaries.com/definition/english/vaccinate) |
+| vaccination | 用法 · n. · 疫苗接种 | [牛津学习词典 · vaccination](https://www.oxfordlearnersdictionaries.com/definition/english/vaccination) |
+| villain | 用法 · n. · 反派角色；恶棍 | [牛津学习词典 · villain](https://www.oxfordlearnersdictionaries.com/definition/english/villain) |
+| algorithm | 用法 · n. · 算法 | [牛津学习词典 · algorithm](https://www.oxfordlearnersdictionaries.com/definition/english/algorithm) |
+| broadband | 用法 · n. · 宽带网络连接 | [牛津学习词典 · broadband](https://www.oxfordlearnersdictionaries.com/definition/english/broadband) |
+| cancellation | 用法 · n. · 取消；取消通知 | [牛津学习词典 · cancellation](https://www.oxfordlearnersdictionaries.com/definition/english/cancellation) |
+| connectivity | 用法 · n. · 连接能力；联网能力 | [牛津学习词典 · connectivity](https://www.oxfordlearnersdictionaries.com/definition/english/connectivity) |
+| e-commerce | 用法 · n. · 电子商务 | [牛津学习词典 · e-commerce](https://www.oxfordlearnersdictionaries.com/definition/english/e-commerce) |
+| milestone | 用法 · n. · 里程碑；重要阶段 | [牛津学习词典 · milestone](https://www.oxfordlearnersdictionaries.com/definition/english/milestone) |
+| mindset | 用法 · n. · 思维方式；心态 | [牛津学习词典 · mindset](https://www.oxfordlearnersdictionaries.com/definition/english/mindset) |
+| notification | 用法 · n. · 通知；提醒 | [牛津学习词典 · notification](https://www.oxfordlearnersdictionaries.com/definition/english/notification) |
+| scam | 用法 · n. · 骗局；诈骗 | [牛津学习词典 · scam](https://www.oxfordlearnersdictionaries.com/definition/english/scam_2) |
+| start-up | 用法 · n. · 初创企业 | [牛津学习词典 · start-up](https://www.oxfordlearnersdictionaries.com/definition/english/start-up_1) |
+| streaming | 用法 · n. · 流媒体播放；流式传输 | [牛津学习词典 · streaming](https://www.oxfordlearnersdictionaries.com/definition/english/streaming) |
+| a bit | 用法 · adv. phr. · 有点；稍微 | [牛津学习词典 · a bit](https://www.oxfordlearnersdictionaries.com/definition/english/bit_1#bit_sng_1) |
+| a few | 用法 · det. phr. · 几个；一些（可数） | [牛津学习词典 · a few](https://www.oxfordlearnersdictionaries.com/definition/english/few_1#few_sng_2) |
+| a little | 用法 · det. phr. · 一点；少量（不可数） | [牛津学习词典 · a little](https://www.oxfordlearnersdictionaries.com/definition/english/little_2#little_sng_9) |
+| a long time ago | 用法 · adv. phr. · 很久以前 | [牛津学习词典 · a long time ago](https://www.oxfordlearnersdictionaries.com/definition/english/time_1#time_sng_6) |
+| a lot | 用法 · adv. phr. · 很多；经常；非常 | [牛津学习词典 · a lot](https://www.oxfordlearnersdictionaries.com/definition/english/lot_1#lot_sng_1) |
+| after all | 用法 · adv. phr. · 毕竟；终究 | [牛津学习词典 · after all](https://www.oxfordlearnersdictionaries.com/definition/english/after_1#after_sng_12) |
+| again and again | 用法 · adv. phr. · 一再；反复 | [牛津学习词典 · again and again](https://www.oxfordlearnersdictionaries.com/definition/english/again#again_sng_1) |
+| all day | 用法 · adv. phr. · 整天 | [牛津学习词典 · all day](https://www.oxfordlearnersdictionaries.com/definition/english/day#day_sng_2) |
+| all over the world | 用法 · adv. phr. · 遍及全世界 | [牛津学习词典 · all over the world](https://www.oxfordlearnersdictionaries.com/definition/english/world#world_sng_1) |
+| all the time | 用法 · adv. phr. · 一直；总是 | [牛津学习词典 · all the time](https://www.oxfordlearnersdictionaries.com/definition/english/time_1#time_sng_17) |
+| and so on | 用法 · adv. phr. · 等等；诸如此类 | [牛津学习词典 · and so on](https://www.oxfordlearnersdictionaries.com/definition/english/forth#so_sng_11) |
+| anything else | 用法 · pron. phr. · 其他任何东西；别的事 | [牛津学习词典 · anything else](https://www.oxfordlearnersdictionaries.com/definition/english/anything#anything_sng_1) |
+| apart from | 用法 · prep. phr. · 除……之外 | [牛津学习词典 · apart from](https://www.oxfordlearnersdictionaries.com/definition/english/apart#apartfrom_e) |
+| art gallery | 用法 · n. phr. · 美术馆；画廊 | [牛津学习词典 · art gallery](https://www.oxfordlearnersdictionaries.com/definition/english/art-gallery#artgallery_e) |
+| as a result | 用法 · adv. phr. · 因此；结果 | [牛津学习词典 · as a result](https://www.oxfordlearnersdictionaries.com/definition/english/result_1#result_sng_1) |
+| as soon as | 用法 · conj. phr. · 一……就…… | [牛津学习词典 · as soon as](https://www.oxfordlearnersdictionaries.com/definition/english/soon#soon_sng_2) |
+| as soon as possible | 用法 · adv. phr. · 尽快 | [牛津学习词典 · as soon as possible](https://www.oxfordlearnersdictionaries.com/definition/english/possible_1#possible_sng_5) |
+| as well | 用法 · adv. phr. · 也；还 | [牛津学习词典 · as well](https://www.oxfordlearnersdictionaries.com/definition/english/well_1#well_sng_7) |
+| at first | 用法 · adv. phr. · 起初；最初 | [牛津学习词典 · at first](https://www.oxfordlearnersdictionaries.com/definition/english/first_2#first_sng_8) |
+| at home | 用法 · adv. phr. · 在家 | [牛津学习词典 · at home](https://www.oxfordlearnersdictionaries.com/definition/english/home_1#home_sng_9) |
+| at last | 用法 · adv. phr. · 终于；总算 | [牛津学习词典 · at last](https://www.oxfordlearnersdictionaries.com/definition/english/last1_3#last_hm1_sng_20) |
+| at least | 用法 · adv. phr. · 至少；起码 | [牛津学习词典 · at least](https://www.oxfordlearnersdictionaries.com/definition/english/least_2#least_sng_5) |
+| at once | 用法 · adv. phr. · 立刻；同时 | [牛津学习词典 · at once](https://www.oxfordlearnersdictionaries.com/definition/english/once_1#once_sng_6) |
+| at present | 用法 · adv. phr. · 目前；现在 | [牛津学习词典 · at present](https://www.oxfordlearnersdictionaries.com/definition/english/present_2#present_sng_7) |
+| at risk | 用法 · adj. phr. · 处于危险中；有风险的 | [牛津学习词典 · at risk](https://www.oxfordlearnersdictionaries.com/definition/english/risk_1#risk_sng_4) |
+| at school | 用法 · adv. phr. · 在学校；在上学 | [牛津学习词典 · at school](https://www.oxfordlearnersdictionaries.com/definition/english/school_1#school_sng_3) |
+| at the moment | 用法 · adv. phr. · 此刻；目前 | [牛津学习词典 · at the moment](https://www.oxfordlearnersdictionaries.com/definition/english/moment#moment_sng_2) |
+| at the same time | 用法 · adv. phr. · 同时 | [牛津学习词典 · at the same time](https://www.oxfordlearnersdictionaries.com/definition/english/time_1#time_sng_21) |
+| at the weekend | 用法 · adv. phr. · 在周末（英式） | [牛津学习词典 · at the weekend](https://www.oxfordlearnersdictionaries.com/definition/english/weekend_1#weekend_sng_1) |
+| at work | 用法 · adv. phr. · 在工作；在工作地点 | [牛津学习词典 · at work](https://www.oxfordlearnersdictionaries.com/definition/english/work_2#work_sng_43) |
+| bad news | 用法 · n. phr. · 坏消息 | [牛津学习词典 · bad news](https://www.oxfordlearnersdictionaries.com/definition/english/bad_1#bad_sng_1) |
+| best friend | 用法 · n. phr. · 最好的朋友 | [牛津学习词典 · best friend](https://www.oxfordlearnersdictionaries.com/definition/english/friend_1#friend_sng_1) |
+| break up | 用法 · phr. v. · 结束关系；分手 | [牛津学习词典 · break up](https://www.oxfordlearnersdictionaries.com/definition/english/break-up_1#breakup3_e) |
+| car park | 用法 · n. phr. · 停车场（英式） | [牛津学习词典 · car park](https://www.oxfordlearnersdictionaries.com/definition/english/car-park#carpark_e) |
+| carry on | 用法 · phr. v. · 继续 | [牛津学习词典 · carry on](https://www.oxfordlearnersdictionaries.com/definition/english/carry-on_1#carryon3_e) |
+| cell phone | 用法 · n. phr. · 手机（美式） | [牛津学习词典 · cell phone](https://www.oxfordlearnersdictionaries.com/definition/english/cell-phone#cellphone_e) |
+| check in | 用法 · phr. v. · 办理入住或登机手续 | [牛津学习词典 · check in](https://www.oxfordlearnersdictionaries.com/definition/english/check-in_1#checkin3_e) |
+| check out | 用法 · phr. v. · 办理退房手续 | [牛津学习词典 · check out](https://www.oxfordlearnersdictionaries.com/definition/english/check-out#check_sng_40) |
+| clean up | 用法 · phr. v. · 清理；打扫干净 | [牛津学习词典 · clean up](https://www.oxfordlearnersdictionaries.com/definition/english/clean-up_1#clean_sng_54) |
+| climate change | 用法 · n. phr. · 气候变化 | [牛津学习词典 · climate change](https://www.oxfordlearnersdictionaries.com/definition/english/climate-change#climatechange_e) |
+| come back | 用法 · phr. v. · 回来；返回 | [牛津学习词典 · come back](https://www.oxfordlearnersdictionaries.com/definition/english/come-back#comeback3_e) |
+| come true | 用法 · v. phr. · 实现；成为现实 | [牛津学习词典 · come true](https://www.oxfordlearnersdictionaries.com/definition/english/true_1#true_sng_8) |
+| credit card | 用法 · n. phr. · 信用卡 | [牛津学习词典 · credit card](https://www.oxfordlearnersdictionaries.com/definition/english/credit-card#creditcard_e) |
+| each other | 用法 · pron. phr. · 彼此；互相 | [牛津学习词典 · each other](https://www.oxfordlearnersdictionaries.com/definition/english/each-other#eachother_e) |
+| end up | 用法 · phr. v. · 最终处于；结果成为 | [牛津学习词典 · end up](https://www.oxfordlearnersdictionaries.com/definition/english/end-up#endup2_e) |
+| even if | 用法 · conj. phr. · 即使；尽管可能 | [牛津学习词典 · even if](https://www.oxfordlearnersdictionaries.com/definition/english/even_1#even_sng_5) |
+| even though | 用法 · conj. phr. · 虽然；尽管 | [牛津学习词典 · even though](https://www.oxfordlearnersdictionaries.com/definition/english/even_1#even_sng_27) |
+| every day | 用法 · adv. phr. · 每天 | [牛津学习词典 · every day](https://www.oxfordlearnersdictionaries.com/definition/english/every#every_sng_1) |
+| except for | 用法 · prep. phr. · 除……以外 | [牛津学习词典 · except for](https://www.oxfordlearnersdictionaries.com/definition/english/except_1#except_sng_1) |
+| excuse me | 用法 · interj. phr. · 劳驾；对不起（引起注意） | [牛津学习词典 · excuse me](https://www.oxfordlearnersdictionaries.com/definition/english/excuse_2#excuse_sng_9) |
+| fall asleep | 用法 · v. phr. · 入睡；睡着 | [牛津学习词典 · fall asleep](https://www.oxfordlearnersdictionaries.com/definition/english/asleep#asleep_sng_1) |
+| far away | 用法 · adv. phr. · 很远；远处 | [牛津学习词典 · far away](https://www.oxfordlearnersdictionaries.com/definition/english/far_1#far_sng_1) |
+| find out | 用法 · phr. v. · 查明；弄清 | [牛津学习词典 · find out](https://www.oxfordlearnersdictionaries.com/definition/english/find-out#findout2_e) |
+| first of all | 用法 · adv. phr. · 首先；第一 | [牛津学习词典 · first of all](https://www.oxfordlearnersdictionaries.com/definition/english/first_2#first_sng_13) |
+| for a while | 用法 · adv. phr. · 一会儿；一段时间 | [牛津学习词典 · for a while](https://www.oxfordlearnersdictionaries.com/definition/english/while_2#while_sng_7) |
+| for example | 用法 · adv. phr. · 例如 | [牛津学习词典 · for example](https://www.oxfordlearnersdictionaries.com/definition/english/example#example_sng_5) |
+| for free | 用法 · adv. phr. · 免费地 | [牛津学习词典 · for free](https://www.oxfordlearnersdictionaries.com/definition/english/free_1#free_sng_5) |
+| get back | 用法 · phr. v. · 回来；返回 | [牛津学习词典 · get back](https://www.oxfordlearnersdictionaries.com/definition/english/get-back#getback2_e) |
+| get better | 用法 · v. phr. · 好转；进步 | [牛津学习词典 · get better](https://www.oxfordlearnersdictionaries.com/definition/english/better_1#better_sng_4) |
+| get married | 用法 · v. phr. · 结婚 | [牛津学习词典 · get married](https://www.oxfordlearnersdictionaries.com/definition/english/married#married_sng_1) |
+| get off | 用法 · phr. v. · 下车；离开交通工具 | [牛津学习词典 · get off](https://www.oxfordlearnersdictionaries.com/definition/english/get#get_sng_18) |
+| get on | 用法 · phr. v. · 上车；登上 | [牛津学习词典 · get on](https://www.oxfordlearnersdictionaries.com/definition/english/get#get_sng_18) |
+| get ready | 用法 · v. phr. · 准备好 | [牛津学习词典 · get ready](https://www.oxfordlearnersdictionaries.com/definition/english/ready_1#ready_sng_1) |
+| get up | 用法 · phr. v. · 起床；站起来 | [牛津学习词典 · get up](https://www.oxfordlearnersdictionaries.com/definition/english/get-up_1#getup3_e) |
+| give up | 用法 · phr. v. · 放弃；停止 | [牛津学习词典 · give up](https://www.oxfordlearnersdictionaries.com/definition/english/give-up#giveup2_e) |
+| go ahead | 用法 · phr. v. · 开始吧；继续进行 | [牛津学习词典 · go ahead](https://www.oxfordlearnersdictionaries.com/definition/english/go-ahead_2#goahead5_e) |
+| go out | 用法 · phr. v. · 外出 | [牛津学习词典 · go out](https://www.oxfordlearnersdictionaries.com/definition/english/go-out#goout2_e) |
+| go to bed | 用法 · v. phr. · 上床睡觉 | [牛津学习词典 · go to bed](https://www.oxfordlearnersdictionaries.com/definition/english/bed_1#bed2_e) |
+| good luck | 用法 · interj. phr. · 祝好运 | [牛津学习词典 · good luck](https://www.oxfordlearnersdictionaries.com/definition/english/luck_1#luck_sng_2) |
+| good morning | 用法 · interj. phr. · 早上好 | [牛津学习词典 · good morning](https://www.oxfordlearnersdictionaries.com/definition/english/good-morning#goodmorning_e) |
+| grow up | 用法 · phr. v. · 长大；成长 | [牛津学习词典 · grow up](https://www.oxfordlearnersdictionaries.com/definition/english/grow-up#growup2_e) |
+| had better | 用法 · modal phr. · 最好（带劝告意味） | [牛津学习词典 · had better](https://www.oxfordlearnersdictionaries.com/definition/english/better_2#better_sng_15) |
+| have a look | 用法 · v. phr. · 看一看 | [牛津学习词典 · have a look](https://www.oxfordlearnersdictionaries.com/definition/english/look_2#look_sng_55) |
+| have fun | 用法 · v. phr. · 玩得开心；享受乐趣 | [牛津学习词典 · have fun](https://www.oxfordlearnersdictionaries.com/definition/english/fun_1#fun_sng_1) |
+| have no idea | 用法 · v. phr. · 不知道；毫无头绪 | [牛津学习词典 · have no idea](https://www.oxfordlearnersdictionaries.com/definition/english/idea#idea_sng_7) |
+| in addition | 用法 · adv. phr. · 此外；另外 | [牛津学习词典 · in addition](https://www.oxfordlearnersdictionaries.com/definition/english/addition#addition_sng_5) |
+| in advance | 用法 · adv. phr. · 提前；预先 | [牛津学习词典 · in advance](https://www.oxfordlearnersdictionaries.com/definition/english/advance_1#advance_sng_6) |
+| in danger | 用法 · adj. phr. · 处于危险之中 | [牛津学习词典 · in danger](https://www.oxfordlearnersdictionaries.com/definition/english/danger#danger_sng_1) |
+| in fact | 用法 · adv. phr. · 事实上；其实 | [牛津学习词典 · in fact](https://www.oxfordlearnersdictionaries.com/definition/english/fact#fact_sng_10) |
+| in front of | 用法 · prep. phr. · 在……前面 | [牛津学习词典 · in front of](https://www.oxfordlearnersdictionaries.com/definition/english/front_1#front_sng_16) |
+| in general | 用法 · adv. phr. · 一般来说；总体上 | [牛津学习词典 · in general](https://www.oxfordlearnersdictionaries.com/definition/english/general_1#general_sng_8) |
+| in my opinion | 用法 · adv. phr. · 在我看来 | [牛津学习词典 · in my opinion](https://www.oxfordlearnersdictionaries.com/definition/english/opinion#opinion_sng_1) |
+| in other words | 用法 · adv. phr. · 换句话说 | [牛津学习词典 · in other words](https://www.oxfordlearnersdictionaries.com/definition/english/word_1#word_sng_11) |
+| in particular | 用法 · adv. phr. · 尤其；特别是 | [牛津学习词典 · in particular](https://www.oxfordlearnersdictionaries.com/definition/english/particular_1#particular_sng_4) |
+| in public | 用法 · adv. phr. · 在公众场合；公开地 | [牛津学习词典 · in public](https://www.oxfordlearnersdictionaries.com/definition/english/public_2#public_sng_13) |
+| in the end | 用法 · adv. phr. · 最后；最终 | [牛津学习词典 · in the end](https://www.oxfordlearnersdictionaries.com/definition/english/end_1#end_sng_22) |
+| in the future | 用法 · adv. phr. · 将来；今后 | [牛津学习词典 · in the future](https://www.oxfordlearnersdictionaries.com/definition/english/future_1#future_sng_1) |
+| in time | 用法 · adv. phr. · 及时；来得及 | [牛津学习词典 · in time](https://www.oxfordlearnersdictionaries.com/definition/english/time_1#time_sng_41) |
+| in touch | 用法 · adj. phr. · 保持联系；有联系的 | [牛津学习词典 · in touch](https://www.oxfordlearnersdictionaries.com/definition/english/touch_2#touch_sng_32) |
+| make a difference | 用法 · v. phr. · 产生影响；起作用 | [牛津学习词典 · make a difference](https://www.oxfordlearnersdictionaries.com/definition/english/difference#difference_sng_4) |
+| make a mistake | 用法 · v. phr. · 犯错 | [牛津学习词典 · make a mistake](https://www.oxfordlearnersdictionaries.com/definition/english/mistake_1#mistake_sng_1) |
+| make sense | 用法 · v. phr. · 有道理；意思清楚 | [牛津学习词典 · make sense](https://www.oxfordlearnersdictionaries.com/definition/english/sense_1#sense_sng_8) |
+| make sure | 用法 · v. phr. · 确保；核实 | [牛津学习词典 · make sure](https://www.oxfordlearnersdictionaries.com/definition/english/sure_1#sure_sng_8) |
+| mental health | 用法 · n. phr. · 心理健康；精神健康 | [牛津学习词典 · mental health](https://www.oxfordlearnersdictionaries.com/definition/english/mental-health#mentalhealth_e) |
+| no longer | 用法 · adv. phr. · 不再 | [牛津学习词典 · no longer](https://www.oxfordlearnersdictionaries.com/definition/english/long_2#long_sng_38) |
+| no problem | 用法 · interj. phr. · 没问题；不用谢 | [牛津学习词典 · no problem](https://www.oxfordlearnersdictionaries.com/definition/english/problem_1#problem_sng_4) |
+| not at all | 用法 · adv. phr. · 一点也不；完全不 | [牛津学习词典 · not at all](https://www.oxfordlearnersdictionaries.com/definition/english/all_2#all_sng_18) |
+| of course | 用法 · adv. phr. · 当然 | [牛津学习词典 · of course](https://www.oxfordlearnersdictionaries.com/definition/english/course_1#course_sng_17) |
+| on time | 用法 · adv. phr. · 准时；按时 | [牛津学习词典 · on time](https://www.oxfordlearnersdictionaries.com/definition/english/time_1#) |
 

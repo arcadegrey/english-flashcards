@@ -1,0 +1,1600 @@
+{
+  "auditDate": "2026-10-24",
+  "scope": "全库程序筛查与首轮高风险记录逐条复核（本轮由单一模型完成）；不是全库逐词或独立语言专家审校。",
+  "reviews": [
+    {
+      "word": "sepectator",
+      "kind": "spelling",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "词头错拼；原例句实际使用 spectators。",
+      "recommendation": "核对为 spectator，保持原 ID；同步处理词头音频及检索兼容。",
+      "id": 1234,
+      "before": {
+        "id": 1234,
+        "word": "sepectator",
+        "phonetic": "/ˈspekˌteɪtər/",
+        "pos": "n.",
+        "meaning": "观众；旁观者",
+        "example": "The spectators cheered loudly at the end of the game.",
+        "exampleCn": "比赛结束时观众大声欢呼。",
+        "category": "toefl",
+        "categories": [
+          "toefl"
+        ],
+        "level": "3",
+        "list": "9"
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 1234,
+        "word": "spectator",
+        "phonetic": "/spekˈteɪtə(r)/",
+        "pos": "n.",
+        "meaning": "观众；旁观者",
+        "example": "The spectators cheered loudly at the end of the game.",
+        "exampleCn": "比赛结束时观众大声欢呼。",
+        "category": "toefl",
+        "categories": [
+          "toefl"
+        ],
+        "level": "3",
+        "list": "9",
+        "aliases": [
+          "sepectator"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Cambridge · spectator",
+          "url": "https://dictionary.cambridge.org/dictionary/english/spectator?topic=audiences-and-spectators"
+        },
+        {
+          "title": "Merriam-Webster · spectator（两种重音均收录）",
+          "url": "https://www.merriam-webster.com/dictionary/spectator"
+        }
+      ],
+      "resolution": "修正词头，保留原 ID、分类与音标；aliases 保留旧拼写。与既有正确词条同形但不合并 ID，避免丢失进度、收藏及作业快照；提示按 ID 保留原来源，题目选项排除同形干扰项。",
+      "sameHeadwordId": 4293
+    },
+    {
+      "word": "precauition",
+      "kind": "spelling",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "词头错拼；原例句实际使用 precaution。",
+      "recommendation": "核对为 precaution，保持原 ID；同步处理词头音频及检索兼容。",
+      "id": 3318,
+      "before": {
+        "id": 3318,
+        "word": "precauition",
+        "phonetic": "/prɪˈkɔːʃn/",
+        "pos": "n.",
+        "meaning": "预防措施/谨慎",
+        "example": "As a precaution, we backed up all the files.",
+        "exampleCn": "作为预防措施，我们备份了所有文件。",
+        "category": "toefl",
+        "categories": [
+          "toefl"
+        ],
+        "level": "5",
+        "list": "10"
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 3318,
+        "word": "precaution",
+        "phonetic": "/prɪˈkɔːʃən/",
+        "pos": "n.",
+        "meaning": "预防措施/谨慎",
+        "example": "As a precaution, we backed up all the files.",
+        "exampleCn": "作为预防措施，我们备份了所有文件。",
+        "category": "toefl",
+        "categories": [
+          "toefl"
+        ],
+        "level": "5",
+        "list": "10",
+        "aliases": [
+          "precauition"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · precaution",
+          "url": "https://www.merriam-webster.com/dictionary/precaution"
+        }
+      ],
+      "resolution": "修正词头，保留原 ID、分类与音标；aliases 保留旧拼写。与既有正确词条同形但不合并 ID，避免丢失进度、收藏及作业快照；提示按 ID 保留原来源，题目选项排除同形干扰项。",
+      "sameHeadwordId": 7977
+    },
+    {
+      "word": "robert",
+      "kind": "sense_alignment",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "例句中 Robert 是人名，当前释义只显示“警察”。",
+      "recommendation": "补充人名义并区分旧义；不把例句职业等同于姓名词义。",
+      "id": 5955,
+      "before": {
+        "id": 5955,
+        "word": "robert",
+        "phonetic": "'rɔbәt",
+        "pos": "n.",
+        "meaning": "警察",
+        "example": "Robert worked as a police officer in the city centre for more than twenty years.",
+        "exampleCn": "罗伯特在市中心做了二十多年的警察。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 5955,
+        "word": "robert",
+        "phonetic": "'rɔbәt",
+        "pos": "n.",
+        "meaning": "n. 罗伯特（人名，写作 Robert）",
+        "example": "Robert worked as a police officer in the city centre for more than twenty years.",
+        "exampleCn": "罗伯特在市中心做了二十多年的警察。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Oxford · robert",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/robert"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "sam",
+      "kind": "sense_alignment",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "当前释义是计算机缩写，例句是人名 Sam；现有提示又选择军用缩写义。",
+      "recommendation": "统一本条教学义项；补充人名义并明确 SAM 与 Sam 的大小写区别。",
+      "sources": [
+        {
+          "title": "Oxford · sam",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/sam"
+        }
+      ],
+      "id": 6365,
+      "before": {
+        "id": 6365,
+        "word": "sam",
+        "phonetic": "sæm",
+        "pos": "n.",
+        "meaning": "安全性帐户管理器",
+        "example": "Sam has been learning to play the drums in his garage and is getting better every week.",
+        "exampleCn": "萨姆一直在车库里学打鼓每周都在进步。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 6365,
+        "word": "sam",
+        "phonetic": "sæm",
+        "pos": "n.",
+        "meaning": "n. 萨姆（人名，写作 Sam；Samuel 或 Samantha 的简称）",
+        "example": "Sam has been learning to play the drums in his garage and is getting better every week.",
+        "exampleCn": "萨姆一直在车库里学打鼓每周都在进步。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "catherine",
+      "kind": "sense_alignment",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "例句是人名 Catherine，释义却为车轮、筋斗或烟火等物品／动作。",
+      "recommendation": "补充人名义，逐项核对其他义项是否属于完整复合词。",
+      "id": 6807,
+      "before": {
+        "id": 6807,
+        "word": "catherine",
+        "phonetic": "'kæθәrin",
+        "pos": "n.",
+        "meaning": "n. 轮圈外缘装有倒钩的车轮, 侧翻筋斗, 轮转烟火, 车轮窗",
+        "example": "Catherine spent two years teaching English at a small school deep in the mountains of northern Thailand.",
+        "exampleCn": "凯瑟琳花了两年时间在泰国北部深山的一所小学校教英语。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 6807,
+        "word": "catherine",
+        "phonetic": "'kæθәrin",
+        "pos": "n.",
+        "meaning": "n. 凯瑟琳（女子名，写作 Catherine）",
+        "example": "Catherine spent two years teaching English at a small school deep in the mountains of northern Thailand.",
+        "exampleCn": "凯瑟琳花了两年时间在泰国北部深山的一所小学校教英语。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Oxford · catherine",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/catherine"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "ali",
+      "kind": "sense_alignment",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "例句是人名 Ali，当前释义仅为“异步线路接口”。",
+      "recommendation": "补充人名义，并将技术缩写另作明确范围说明。",
+      "id": 7085,
+      "before": {
+        "id": 7085,
+        "word": "ali",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "异步线路接口",
+        "example": "Ali opened a small restaurant serving dishes from his homeland and it became the talk of the town.",
+        "exampleCn": "阿里开了一家供应家乡菜肴的小餐馆很快成为镇上的话题。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 7085,
+        "word": "ali",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 阿里（人名或姓氏，写作 Ali）",
+        "example": "Ali opened a small restaurant serving dishes from his homeland and it became the talk of the town.",
+        "exampleCn": "阿里开了一家供应家乡菜肴的小餐馆很快成为镇上的话题。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Dictionary.com · ali",
+          "url": "https://www.dictionary.com/browse/ali"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "oliver",
+      "kind": "sense_alignment",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "例句是人名 Oliver，当前释义只有“脚踏铁锤”。",
+      "recommendation": "补充人名义，旧技术义核验后单独标注。",
+      "id": 6509,
+      "before": {
+        "id": 6509,
+        "word": "oliver",
+        "phonetic": "'ɒlivә",
+        "pos": "n.",
+        "meaning": "n. 脚踏铁锤",
+        "example": "Oliver spent his gap year working on organic farms across Europe and learning about sustainable living.",
+        "exampleCn": "奥利弗用间隔年在欧洲各地的有机农场工作并学习可持续生活。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 6509,
+        "word": "oliver",
+        "phonetic": "'ɒlivә",
+        "pos": "n.",
+        "meaning": "n. 奥利弗（男子名，写作 Oliver）",
+        "example": "Oliver spent his gap year working on organic farms across Europe and learning about sustainable living.",
+        "exampleCn": "奥利弗用间隔年在欧洲各地的有机农场工作并学习可持续生活。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Oxford · oliver",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/oliver"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "tommy",
+      "kind": "sense_alignment",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "例句是人名 Tommy，当前释义是配给面包／实物工资制；译文还新增原文没有的“和儿子”。",
+      "recommendation": "补充人名义，另核对旧义；删除未经英文支持的译文细节。",
+      "id": 7193,
+      "before": {
+        "id": 7193,
+        "word": "tommy",
+        "phonetic": "'tɒmi",
+        "pos": "n.",
+        "meaning": "n. 配给面包, 实物工资制\\n[经] 实物工资制",
+        "example": "Tommy learned to fish from his grandfather and now spends every Sunday morning by the quiet river.",
+        "exampleCn": "汤米从爷爷那里学会了钓鱼现在每个星期天早上都和儿子在安静的河边钓鱼。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 7193,
+        "word": "tommy",
+        "phonetic": "'tɒmi",
+        "pos": "n.",
+        "meaning": "n. 汤米（男子名，写作 Tommy，Thomas 的昵称）；[旧时非正式用语] 英国士兵",
+        "example": "Tommy learned to fish from his grandfather and now spends every Sunday morning by the quiet river.",
+        "exampleCn": "汤米从爷爷那里学会了钓鱼，现在每个星期天早上都在安静的河边度过。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Oxford · tommy",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/tommy"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "somerset",
+      "kind": "sense_alignment",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "例句中的 Somerset 是地名，当前释义只有一种马鞍。",
+      "recommendation": "补充地名义，历史物品义不要套入当前例句。",
+      "id": 7047,
+      "before": {
+        "id": 7047,
+        "word": "somerset",
+        "phonetic": "'sʌmәsit. -set",
+        "pos": "n.",
+        "meaning": "n. 有衬垫的马鞍（独腿者乘坐的）",
+        "example": "They drove through Somerset and stopped beside a quiet winding river for a lovely picnic.",
+        "exampleCn": "他们开车穿过萨默塞特在一条安静的蜿蜒河边停下来愉快野餐。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 7047,
+        "word": "somerset",
+        "phonetic": "'sʌmәsit. -set",
+        "pos": "n.",
+        "meaning": "n. 萨默塞特郡（英格兰西南部的郡，写作 Somerset）",
+        "example": "They drove through Somerset and stopped beside a quiet winding river for a lovely picnic.",
+        "exampleCn": "他们开车穿过萨默塞特在一条安静的蜿蜒河边停下来愉快野餐。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Oxford · somerset",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/somerset"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "sara",
+      "kind": "sense_alignment",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "例句中的 Sara 是个人姓名，当前释义为族群名称。",
+      "recommendation": "补充人名义，保留族群义时明确适用语境。",
+      "id": 7103,
+      "before": {
+        "id": 7103,
+        "word": "sara",
+        "phonetic": "'sɑ:rә",
+        "pos": "n.",
+        "meaning": "n. 萨拉族, 萨拉人",
+        "example": "Sara spent a year in a remote African village helping to dig wells and teach children hygiene.",
+        "exampleCn": "萨拉在非洲一个偏远村庄生活了一年帮助打井和教孩子们卫生知识。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 7103,
+        "word": "sara",
+        "phonetic": "/ˈseərə/",
+        "pos": "n.",
+        "meaning": "n. 萨拉（女子名，写作 Sara，是 Sarah 的另一种拼写）；[族群名称] 萨拉人",
+        "example": "Sara spent a year in a remote African village helping to dig wells and teach children hygiene.",
+        "exampleCn": "萨拉在非洲一个偏远村庄生活了一年帮助打井和教孩子们卫生知识。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Dictionary.com · sara",
+          "url": "https://www.dictionary.com/browse/sara"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "charlie",
+      "kind": "sense_alignment",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "例句中的 Charlie 是人名，当前释义只解释通信字母 C。",
+      "recommendation": "补充人名义，区分姓名与通信字母代码。",
+      "id": 6413,
+      "before": {
+        "id": 6413,
+        "word": "charlie",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 通讯中用以代表字母C的词",
+        "example": "Charlie has been working as a firefighter at the central station for over fifteen years now.",
+        "exampleCn": "查理在中央消防站做了超过十五年的消防员。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 6413,
+        "word": "charlie",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 查理（人名，写作 Charlie，是 Charles 的昵称）；[通信] 字母 C 的代码词",
+        "example": "Charlie has been working as a firefighter at the central station for over fifteen years now.",
+        "exampleCn": "查理在中央消防站做了超过十五年的消防员。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Oxford · charles",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/charles"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "les",
+      "kind": "sense_alignment",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "例句是人名 Les，释义只解释 Launch Escape System。",
+      "recommendation": "补充人名义并区分 Les 与 LES。",
+      "id": 7060,
+      "before": {
+        "id": 7060,
+        "word": "les",
+        "phonetic": "lei",
+        "pos": "n.",
+        "meaning": "abbr. 发射脱离系统（Launch Escape System）",
+        "example": "Les spent his retirement years tending a small vegetable patch and reading detective novels in his sunny conservatory.",
+        "exampleCn": "莱斯退休后在阳光房照料一小块菜地读侦探小说。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 7060,
+        "word": "les",
+        "phonetic": "/lez/",
+        "pos": "n.",
+        "meaning": "n. 莱斯（男子名，写作 Les，是 Leslie 的简称）",
+        "example": "Les spent his retirement years tending a small vegetable patch and reading detective novels in his sunny conservatory.",
+        "exampleCn": "莱斯退休后照料一小块菜地，并在阳光充足的暖房里读侦探小说。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Oxford · les",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/les"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "ron",
+      "kind": "sense_alignment",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "例句是人名 Ron，释义只解释 Research Octane Number。",
+      "recommendation": "补充人名义并区分 Ron 与 RON。",
+      "id": 7063,
+      "before": {
+        "id": 7063,
+        "word": "ron",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "abbr. 研究法辛烷值（Research Octane Number）",
+        "example": "Ron has worked as a mechanic at the corner garage for more than thirty years now.",
+        "exampleCn": "罗恩在街角那家车库做机修工已经三十多年了。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 7063,
+        "word": "ron",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 罗恩（男子名，写作 Ron，是 Ronald 的简称）",
+        "example": "Ron has worked as a mechanic at the corner garage for more than thirty years now.",
+        "exampleCn": "罗恩在街角那家车库做机修工已经三十多年了。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Oxford · ron",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ron"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "spencer",
+      "kind": "sense_alignment",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "例句中 Spencer 是写作者姓名，释义只解释外衣与帆。",
+      "recommendation": "补充姓名义，普通名词义按范围保留。",
+      "id": 6971,
+      "before": {
+        "id": 6971,
+        "word": "spencer",
+        "phonetic": "'spensә",
+        "pos": "n.",
+        "meaning": "n. 针织短外衣, 斜桁纵帆",
+        "example": "Spencer wrote a detailed history of the small village where he was born and raised during his retirement.",
+        "exampleCn": "斯宾塞退休后撰写了一部关于他出生和长大的那个小村庄的详细历史。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 6971,
+        "word": "spencer",
+        "phonetic": "'spensә",
+        "pos": "n.",
+        "meaning": "n. 斯宾塞（人名或姓氏，写作 Spencer）；[服饰] 短外衣；[航海] 斜桁纵帆",
+        "example": "Spencer wrote a detailed history of the small village where he was born and raised during his retirement.",
+        "exampleCn": "斯宾塞退休后撰写了一部关于他出生和长大的那个小村庄的详细历史。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Dictionary.com · spencer",
+          "url": "https://www.dictionary.com/browse/spencer"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "hughes",
+      "kind": "definition_quality",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "释义仅为“体斯”，没有可理解的词义或姓氏说明，例句使用 Ms Hughes。",
+      "recommendation": "核对姓氏说明与译名；不能把疑似乱码作为教学释义。",
+      "id": 6771,
+      "before": {
+        "id": 6771,
+        "word": "hughes",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "体斯",
+        "example": "Ms Hughes pioneered a new approach to teaching reading that has since been adopted by schools nationwide.",
+        "exampleCn": "Hughes 女士首创了一种教阅读的新方法此后被全国各地的学校采用。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 6771,
+        "word": "hughes",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 休斯（姓氏，写作 Hughes）",
+        "example": "Ms Hughes pioneered a new approach to teaching reading that has since been adopted by schools nationwide.",
+        "exampleCn": "休斯女士首创了一种阅读教学方法，此后被全国各地的学校采用。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Dictionary.com · hughes",
+          "url": "https://www.dictionary.com/browse/hughes"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "phillips",
+      "kind": "proper_name",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "释义把 Phillips 与电子企业 Philips 混为一项；当前例句是 Phillips 姓氏。",
+      "recommendation": "保留姓氏义，核对并移除误归入本拼写的品牌义。",
+      "sources": [
+        {
+          "title": "Dictionary.com · phillips",
+          "url": "https://www.dictionary.com/browse/phillips"
+        },
+        {
+          "title": "Philips 官方品牌拼写",
+          "url": "https://www.philips.com/a-w/about.html"
+        }
+      ],
+      "id": 7186,
+      "before": {
+        "id": 7186,
+        "word": "phillips",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 飞利浦（电子产业集团）；菲利普斯（姓氏）",
+        "example": "Mr Phillips has been teaching music at the secondary school for so long that he taught three generations.",
+        "exampleCn": "Phillips 先生在中学教音乐太久了他教过同一个家庭的三代人。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 7186,
+        "word": "phillips",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 菲利普斯（姓氏，写作 Phillips；不同于品牌 Philips）",
+        "example": "Mr Phillips has been teaching music at the secondary school for so long that he taught three generations.",
+        "exampleCn": "菲利普斯先生在那所中学教音乐已有很长时间，教过三代学生。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "freud",
+      "kind": "factual_typo",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "释义中的出生年为 856；公开词条为 Sigmund Freud 1856–1939。",
+      "recommendation": "补齐年份缺失的首位数字，并核对中文人物说明。",
+      "sources": [
+        {
+          "title": "Freud Museum · Who was Sigmund Freud?",
+          "url": "https://www.freud.org.uk/schools/resources/who-was-sigmund-freud/"
+        }
+      ],
+      "id": 6841,
+      "before": {
+        "id": 6841,
+        "word": "freud",
+        "phonetic": "frɔid",
+        "pos": "n.",
+        "meaning": "n. 佛洛伊德（856-1939, 奥地利心理分析学家及精神病学家）",
+        "example": "The students studied Freud in psychology class and debated his theories for nearly two hours straight.",
+        "exampleCn": "学生们在心理学课上学习了弗洛伊德并连续辩论他的理论将近两个小时。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 6841,
+        "word": "freud",
+        "phonetic": "frɔid",
+        "pos": "n.",
+        "meaning": "n. 弗洛伊德（Sigmund Freud，1856—1939，精神分析创始人）",
+        "example": "The students studied Freud in psychology class and debated his theories for nearly two hours straight.",
+        "exampleCn": "学生们在心理学课上学习了弗洛伊德并连续辩论他的理论将近两个小时。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "negro",
+      "kind": "register",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "基础释义和例句缺少现代冒犯性／历史语境标记；已有学习提示虽说明，基础卡片仍直接展示旧称。",
+      "recommendation": "明确过时且冒犯的使用范围，改为词语讨论或历史引述例句。",
+      "id": 8164,
+      "before": {
+        "id": 8164,
+        "word": "negro",
+        "phonetic": "'ni:grәu",
+        "pos": "n.",
+        "meaning": "n. 黑人\\na. 黑人的",
+        "example": "The old negro spiritual songs have a deep and powerful history rooted in the long struggle for freedom.",
+        "exampleCn": "古老的黑人灵歌有着根植于为自由和人的尊严长期斗争的深厚而有力的历史。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 8164,
+        "word": "negro",
+        "phonetic": "'ni:grәu",
+        "pos": "n./adj.",
+        "meaning": "n. 对黑人的旧称；adj. 黑人的（均已过时且具有冒犯性，仅用于理解历史引文或讨论这个词，不宜用来称呼他人）",
+        "example": "The guide explained why the word Negro in the old document is offensive today.",
+        "exampleCn": "讲解员解释了为什么旧文件中的 Negro 一词在今天具有冒犯性。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Cambridge · Negro（语域）",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/negro"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "headline",
+      "kind": "truncated_example",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "英文以 after six long 结束，缺少中心名词；中文却补出了“六年”。",
+      "recommendation": "依据核验后的完整英文重写双语例句，并重新生成对应例句音频。",
+      "id": 7763,
+      "before": {
+        "id": 7763,
+        "word": "headline",
+        "phonetic": "'hedlain",
+        "pos": "v.",
+        "meaning": "n. 大标题, 新闻摘要\\nvt. 为...做标题, 写标题",
+        "example": "The headline on the front page screamed the news that the war had finally ended after six long.",
+        "exampleCn": "头版的大标题尖叫般地宣告了经过六年漫长岁月战争终于结束的消息。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 7763,
+        "word": "headline",
+        "phonetic": "'hedlain",
+        "pos": "n./v.",
+        "meaning": "n. 大标题, 新闻摘要\\nvt. 为...做标题, 写标题",
+        "example": "The headline announced the opening of a new public library.",
+        "exampleCn": "这条标题宣布了一家新公共图书馆的开馆消息。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "sources": [
+        {
+          "title": "韦氏词典 · headline",
+          "url": "https://www.merriam-webster.com/dictionary/headline"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "telegraph",
+      "kind": "truncated_example",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "英文以 within just a few short 结束，缺少时间单位。",
+      "recommendation": "重写完整双语例句，不能只凭现有中文猜填英文；同步例句音频。",
+      "id": 7921,
+      "before": {
+        "id": 7921,
+        "word": "telegraph",
+        "phonetic": "'teligrɑ:f",
+        "pos": "v.",
+        "meaning": "n. 电报, 电报机\\nvi. 打电报\\nvt. 打电报给, 电汇, 流露, 显示出要...的样子",
+        "example": "The news of the victory was sent by telegraph and reached the capital within just a few short.",
+        "exampleCn": "胜利的消息通过电报发出在短短几个小时内就传到了首都。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 7921,
+        "word": "telegraph",
+        "phonetic": "'teligrɑ:f",
+        "pos": "n./v.",
+        "meaning": "n. 电报, 电报机\\nvi. 打电报\\nvt. 打电报给, 电汇, 流露, 显示出要...的样子",
+        "example": "The station manager sent an urgent message by telegraph.",
+        "exampleCn": "站长用电报发出了一条紧急消息。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "sources": [
+        {
+          "title": "韦氏词典 · telegraph",
+          "url": "https://www.merriam-webster.com/dictionary/telegraph"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "hatred",
+      "kind": "truncated_example",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "英文以 deeper than 结束，当前独立例句缺比较对象或从句。",
+      "recommendation": "补成自然完整的比较结构，重新核对译文及音频。",
+      "id": 7943,
+      "before": {
+        "id": 7943,
+        "word": "hatred",
+        "phonetic": "'heitrid",
+        "pos": "n.",
+        "meaning": "n. 憎恨, 仇恨, 憎恶\\n[法] 敌意, 憎恨, 憎恶",
+        "example": "The two families had been locked in a bitter feud for generations and the hatred ran deeper than.",
+        "exampleCn": "这两个家族陷入世代宿怨仇恨比任何人能完全解释的都要深。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 7943,
+        "word": "hatred",
+        "phonetic": "'heitrid",
+        "pos": "n.",
+        "meaning": "n. 憎恨, 仇恨, 憎恶\\n[法] 敌意, 憎恨, 憎恶",
+        "example": "Their hatred grew after years of bitter arguments.",
+        "exampleCn": "多年的激烈争吵加深了他们的仇恨。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "sources": [
+        {
+          "title": "韦氏词典 · hatred",
+          "url": "https://www.merriam-webster.com/dictionary/hatred"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "grandson",
+      "kind": "truncated_example",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "英文以 kitchen of her old 结束，缺少 old 修饰的中心名词。",
+      "recommendation": "重写完整英文并使中文与之对应；同步例句音频。",
+      "id": 8015,
+      "before": {
+        "id": 8015,
+        "word": "grandson",
+        "phonetic": "'grændsʌn",
+        "pos": "n.",
+        "meaning": "n. 孙子, 外孙",
+        "example": "She spends every Sunday afternoon baking biscuits with her grandson in the warm sunny kitchen of her old.",
+        "exampleCn": "她每个星期天下午都在老房子温暖阳光的厨房里和孙子一起烤饼干。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 8015,
+        "word": "grandson",
+        "phonetic": "'grændsʌn",
+        "pos": "n.",
+        "meaning": "n. 孙子, 外孙",
+        "example": "Her grandson helped her bake biscuits on Sunday afternoon.",
+        "exampleCn": "星期天下午，她的孙子帮她烤饼干。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "sources": [
+        {
+          "title": "韦氏词典 · grandson",
+          "url": "https://www.merriam-webster.com/dictionary/grandson"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "harden",
+      "kind": "truncated_example",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "英文以 with a beautiful 结束，缺少名词；中文额外补出釉面细节。",
+      "recommendation": "重写双语例句并核对新增细节；同步例句音频。",
+      "id": 8034,
+      "before": {
+        "id": 8034,
+        "word": "harden",
+        "phonetic": "hɑ:dn",
+        "pos": "v.",
+        "meaning": "vt. 使变硬, 使坚强, 使冷酷\\nvi. 变硬, 变冷酷",
+        "example": "The clay pot was placed in the kiln to harden and emerged two days later with a beautiful.",
+        "exampleCn": "陶罐被放进窑里硬化两天后出来时带着一层漂亮闪亮的棕色釉面。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 8034,
+        "word": "harden",
+        "phonetic": "hɑ:dn",
+        "pos": "v.",
+        "meaning": "vt. 使变硬, 使坚强, 使冷酷\\nvi. 变硬, 变冷酷",
+        "example": "Leave the mixture in the fridge to harden overnight.",
+        "exampleCn": "把混合物放在冰箱里过夜，使它变硬。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "sources": [
+        {
+          "title": "韦氏词典 · harden",
+          "url": "https://www.merriam-webster.com/dictionary/harden"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "midday",
+      "kind": "truncated_example",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "英文以 shade of a large 结束，缺少名词；中文补出了柳树。",
+      "recommendation": "重写完整例句并核对译文；同步例句音频。",
+      "id": 8053,
+      "before": {
+        "id": 8053,
+        "word": "midday",
+        "phonetic": "'middei",
+        "pos": "n.",
+        "meaning": "n. 正午, 中午\\na. 正午的",
+        "example": "They stopped for a picnic by the river at midday and sat under the shade of a large.",
+        "exampleCn": "他们正午在河边停下来野餐坐在一棵大柳树的树荫下。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 8053,
+        "word": "midday",
+        "phonetic": "'middei",
+        "pos": "n.",
+        "meaning": "n. 正午, 中午\\na. 正午的",
+        "example": "We stopped beside the river for lunch at midday.",
+        "exampleCn": "中午，我们在河边停下来吃午饭。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "sources": [
+        {
+          "title": "韦氏词典 · midday",
+          "url": "https://www.merriam-webster.com/dictionary/midday"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "jean",
+      "kind": "truncated_example",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "英文以 into the chilly 结束，缺少名词；中文补出了秋晨散步。",
+      "recommendation": "重写完整例句，另核对 jean 布料义和 jeans 裤子义；同步例句音频。",
+      "id": 8213,
+      "before": {
+        "id": 8213,
+        "word": "jean",
+        "phonetic": "dʒi:n",
+        "pos": "n.",
+        "meaning": "n. 牛仔裤, 牛仔布, 斜纹棉布",
+        "example": "She pulled on her favourite pair of jeans and a cosy jumper before heading out into the chilly.",
+        "exampleCn": "她穿上最喜欢的那条牛仔裤和舒适的套头衫走进寒冷的秋晨散步。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 8213,
+        "word": "jean",
+        "phonetic": "dʒi:n",
+        "pos": "n.",
+        "meaning": "n. 斜纹棉布；牛仔裤（裤子义通常用复数 jeans 或 a pair of jeans）",
+        "example": "She put on her favourite jeans before going out for a walk.",
+        "exampleCn": "她穿上最喜欢的牛仔裤，然后出门散步。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · jean",
+          "url": "https://www.merriam-webster.com/dictionary/jean"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "scrutiny",
+      "kind": "truncated_example",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "英文以 about several large 结束，缺少名词；中文却补出旅行报销。",
+      "recommendation": "重写双语例句，不能把译文补写视为英文完整；同步例句音频。",
+      "id": 8388,
+      "before": {
+        "id": 8388,
+        "word": "scrutiny",
+        "phonetic": "'skru:tini",
+        "pos": "n.",
+        "meaning": "n. 细看, 仔细检查, 监视, 选票检查\\n[经] 复查, 评核, 仔细检查",
+        "example": "The minister's expenses came under intense scrutiny from the press and questions were raised about several large.",
+        "exampleCn": "部长的开支受到了媒体的严密审查关于几笔大额且无法解释的旅行报销的质疑被提了出来。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 8388,
+        "word": "scrutiny",
+        "phonetic": "'skru:tini",
+        "pos": "n.",
+        "meaning": "n. 细看, 仔细检查, 监视, 选票检查\\n[经] 复查, 评核, 仔细检查",
+        "example": "The committee placed every item in the budget under close scrutiny.",
+        "exampleCn": "委员会仔细审查了预算中的每一项。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "sources": [
+        {
+          "title": "韦氏词典 · scrutiny",
+          "url": "https://www.merriam-webster.com/dictionary/scrutiny"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "bulletin",
+      "kind": "truncated_example",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "英文以 after six long 结束，缺少时间名词。",
+      "recommendation": "重写完整双语例句；同步例句音频。",
+      "id": 8456,
+      "before": {
+        "id": 8456,
+        "word": "bulletin",
+        "phonetic": "'bulitin",
+        "pos": "n.",
+        "meaning": "n. 公告, 布告, 公报\\n[电] 电子布告栏",
+        "example": "The news bulletin interrupted the regular programme to announce that the war had finally ended after six long.",
+        "exampleCn": "新闻简报中断了正常节目宣布经过六年漫长血腥的战斗战争终于结束了。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 8456,
+        "word": "bulletin",
+        "phonetic": "'bulitin",
+        "pos": "n.",
+        "meaning": "n. 公告, 布告, 公报\\n[电] 电子布告栏",
+        "example": "The evening news bulletin reported delays on the main railway line.",
+        "exampleCn": "晚间新闻简报报道了铁路干线上的延误。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "sources": [
+        {
+          "title": "牛津学习词典 · bulletin",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/bulletin"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "commonwealth",
+      "kind": "truncated_example",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "英文以 most of which were once part 结束，未说明 part of 什么；中文补出了大英帝国。",
+      "recommendation": "重写完整例句；涉及成员数量时另核验时效，或避免动态数字；同步音频。",
+      "id": 8294,
+      "before": {
+        "id": 8294,
+        "word": "commonwealth",
+        "phonetic": "'kɔmәnwelθ",
+        "pos": "n.",
+        "meaning": "n. 共和国；联邦；国民整体",
+        "example": "The Commonwealth is a voluntary association of more than fifty countries most of which were once part.",
+        "exampleCn": "英联邦是一个由五十多个国家组成的自愿联盟其中大多数曾是旧大英帝国的一部分。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 8294,
+        "word": "commonwealth",
+        "phonetic": "'kɔmәnwelθ",
+        "pos": "n.",
+        "meaning": "n. 英联邦（写作 the Commonwealth）；联邦；共和国；国民整体",
+        "example": "Students from several Commonwealth countries attended the summer course.",
+        "exampleCn": "来自几个英联邦国家的学生参加了这门暑期课程。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "sources": [
+        {
+          "title": "牛津学习词典 · commonwealth",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/commonwealth"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "ben",
+      "kind": "translation",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "例句语境是爬山，中文“正在爬本”把名词机械音译；基础释义也未提供当前山峰义。",
+      "recommendation": "补充相应山峰用法并重译，不把地形词直接译为“本”。",
+      "id": 6354,
+      "before": {
+        "id": 6354,
+        "word": "ben",
+        "phonetic": "ben",
+        "pos": "n.",
+        "meaning": "n. 内室\\n[医] 贝昂(俗名,一般指辣木Moringa oleifera,有时也指一些不同属的植物)",
+        "example": "They were climbing the ben.",
+        "exampleCn": "他们正在爬本。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 6354,
+        "word": "ben",
+        "phonetic": "ben",
+        "pos": "n.",
+        "meaning": "n. [苏格兰用语] 山峰，常用于山名，如 Ben Nevis",
+        "example": "They were climbing the ben.",
+        "exampleCn": "他们当时正在攀登那座山峰。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Dictionaries of the Scots Language · ben n3",
+          "url": "https://dsl.ac.uk/entry/snd/ben_n3"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "closer",
+      "kind": "translation",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "原句的 the closer 是负责关门收尾的人；译文“谁靠近”误作比较级。",
+      "recommendation": "按当前岗位／收尾语境重译，核对 noun closer 的义项。",
+      "id": 6433,
+      "before": {
+        "id": 6433,
+        "word": "closer",
+        "phonetic": "'klәuzә",
+        "pos": "n.",
+        "meaning": "n. 关闭者, 闭合器, 关闭器",
+        "example": "Whoever is the closer has to turn out the lights and lock up.",
+        "exampleCn": "谁靠近谁就必须关灯并锁门。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 6433,
+        "word": "closer",
+        "phonetic": "'klәuzә",
+        "pos": "n.",
+        "meaning": "n. 负责关门或收尾的人；关闭器；[棒球] 终结投手",
+        "example": "Whoever is the closer has to turn out the lights and lock up.",
+        "exampleCn": "无论谁负责关门收尾，都必须关灯并锁好门。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · closer",
+          "url": "https://www.merriam-webster.com/dictionary/closer"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "passing",
+      "kind": "translation",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "原句是美式橄榄球语境，译文“在第三长处送出传球”明显机械直译。",
+      "recommendation": "专项核对 third and long 等术语后重译；不要因此把完整英文判为截断。",
+      "id": 6876,
+      "before": {
+        "id": 6876,
+        "word": "passing",
+        "phonetic": "'pæsiŋ",
+        "pos": "n.",
+        "meaning": "n. 通过, 逝去, 死, 流逝\\na. 经过的, 流逝的, 目前的, 短暂的, 及格的, 仓促的",
+        "example": "The coach sent in a passing play on third and long.",
+        "exampleCn": "教练在第三长处送出传球。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 6876,
+        "word": "passing",
+        "phonetic": "'pæsiŋ",
+        "pos": "n.",
+        "meaning": "n. 通过；流逝；逝世；[体育] 传球；adj. 经过的；短暂的",
+        "example": "The coach sent in a passing play on third and long.",
+        "exampleCn": "在第三档进攻、距离取得新一轮首攻还差较远时，教练下达了传球战术。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Atlanta Falcons · third-down distances",
+          "url": "https://www.atlantafalcons.com/news/inside-tori-notebook-a-journey-through-a-tale-of-third-downs"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "benjamin",
+      "kind": "sense_alignment",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "例句中的 Benjamin 是个人姓名，释义仅给出“安息香”。",
+      "recommendation": "补充人名义，其他旧义经来源核验后分开标明语境。",
+      "id": 6782,
+      "before": {
+        "id": 6782,
+        "word": "benjamin",
+        "phonetic": "'bendʒәmin",
+        "pos": "n.",
+        "meaning": "安息香",
+        "example": "Benjamin spent his gap year volunteering at an orphanage in a small village in the mountains of Kenya.",
+        "exampleCn": "本杰明用间隔年在肯尼亚山区一个小村庄的孤儿院做志愿者。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 6782,
+        "word": "benjamin",
+        "phonetic": "'bendʒәmin",
+        "pos": "n.",
+        "meaning": "n. 本杰明（男子名，写作 Benjamin）",
+        "example": "Benjamin spent his gap year volunteering at an orphanage in a small village in the mountains of Kenya.",
+        "exampleCn": "本杰明用间隔年在肯尼亚山区一个小村庄的孤儿院做志愿者。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Oxford · benjamin",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/benjamin"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    },
+    {
+      "word": "johnny",
+      "kind": "sense_alignment",
+      "priority": "P1",
+      "status": "resolved",
+      "finding": "例句中的 Johnny 是个人姓名，释义仅给出“男人／家伙”。",
+      "recommendation": "补充人名义，其他旧义经来源核验后分开标明语境。",
+      "id": 6836,
+      "before": {
+        "id": 6836,
+        "word": "johnny",
+        "phonetic": "'dʒɒni",
+        "pos": "n.",
+        "meaning": "n. 男人, 家伙",
+        "example": "Johnny learned to fish from his grandfather and now spends every Sunday morning by the quiet lake.",
+        "exampleCn": "约翰尼从爷爷那里学会了钓鱼现在每个星期天早上都在安静的湖边度过。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "resolvedAt": "2026-10-24",
+      "after": {
+        "id": 6836,
+        "word": "johnny",
+        "phonetic": "'dʒɒni",
+        "pos": "n.",
+        "meaning": "n. 约翰尼（男子名，写作 Johnny，是 John 的昵称）",
+        "example": "Johnny learned to fish from his grandfather and now spends every Sunday morning by the quiet lake.",
+        "exampleCn": "约翰尼从爷爷那里学会了钓鱼现在每个星期天早上都在安静的湖边度过。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Oxford · johnny",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/johnny"
+        }
+      ],
+      "resolution": "按当前例句的教学义项修正；未保留的旧释义在 before 快照中完整存档，不代表断言它们均不存在。英文改动为原创完整例句，中文逐句对应。"
+    }
+  ],
+  "screeningExclusions": [
+    {
+      "word": "airline",
+      "rule": "possible_truncation",
+      "reason": "Which airline are you flying with? 是正常介词后置问句。"
+    },
+    {
+      "word": "marshy",
+      "rule": "possible_truncation",
+      "reason": "difficult to build on 是自然介词后置，不是截断。"
+    },
+    {
+      "word": "heal",
+      "rule": "possible_truncation",
+      "reason": "never managed to 可以省略已在上文出现的动词短语。"
+    },
+    {
+      "word": "passing",
+      "rule": "possible_truncation",
+      "reason": "third and long 是专项术语语境；问题在中文，不是英文结尾。"
+    },
+    {
+      "word": "hong",
+      "rule": "sense_alignment",
+      "reason": "原商行义与 trading hongs 例句相符，不因为存在 Hong Kong 地名就判错。"
+    },
+    {
+      "word": "lewis",
+      "rule": "sense_alignment",
+      "reason": "原吊楔义与石块起吊例句一致；提示选人名义不代表基础词义错误。"
+    },
+    {
+      "word": "surrey",
+      "rule": "sense_alignment",
+      "reason": "原马车义与 an old surrey 例句相符，不能因为提示选地名就强改。"
+    },
+    {
+      "word": "dec",
+      "rule": "sense_alignment",
+      "reason": "当前例句 DEC 公司与释义相符，不能因为也可作月份缩写就判错。"
+    },
+    {
+      "word": "lyric",
+      "rule": "possible_truncation",
+      "reason": "The lyrics are beautiful. 的形容词表语完整，不是截断。"
+    },
+    {
+      "word": "thousand",
+      "rule": "possible_truncation",
+      "reason": "a thousand years old 是完整年龄结构。"
+    },
+    {
+      "word": "henry",
+      "rule": "possible_truncation",
+      "reason": "six years old 是完整年龄结构；原释义也含人名义。"
+    },
+    {
+      "word": "ruth",
+      "rule": "sense_alignment",
+      "reason": "原怜悯义与 with deep ruth 一致，虽语域少见，不能仅凭提示选人名就判错。"
+    },
+    {
+      "word": "ulster",
+      "rule": "sense_alignment",
+      "reason": "原外套义与 wore a heavy ulster 一致，不能因为也有地名义就判错。"
+    },
+    {
+      "word": "gary",
+      "rule": "sense_alignment",
+      "reason": "盖理／加里是译名差异，本轮不据此判为词义错误。"
+    },
+    {
+      "word": "essex",
+      "rule": "sense_alignment",
+      "reason": "艾塞克斯／埃塞克斯是译名差异，本轮不据此判错。"
+    },
+    {
+      "word": "swindon",
+      "rule": "sense_alignment",
+      "reason": "史云顿／斯温登是译名差异，本轮不据此判错。"
+    },
+    {
+      "word": "norwich",
+      "rule": "sense_alignment",
+      "reason": "诺威奇／诺里奇是译名差异，本轮不据此判错。"
+    },
+    {
+      "word": "churchill",
+      "rule": "sense_alignment",
+      "reason": "邱吉尔／丘吉尔是译名差异，本轮不据此判错。"
+    },
+    {
+      "word": "sunderland",
+      "rule": "sense_alignment",
+      "reason": "森德兰／桑德兰等译名差异需按译名标准讨论，不自动判错。"
+    }
+  ],
+  "baselineSha256": "29a5819c3cf9d49f759ef28c84fac4c326322ebfdb87d963473620e39ce98fb8",
+  "repairDate": "2026-10-24"
+}

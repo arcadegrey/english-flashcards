@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { speakExample } from '../utils/speech';
 import { playSuccessChime } from '../utils/feedback';
 import CorrectAnswerCelebration from './CorrectAnswerCelebration';
+import { distinctVocabularyWords } from '../../shared/vocabularyAliases.js';
 
 const BLANK_TOKEN = '______';
 
@@ -69,7 +70,7 @@ const createFillBlankRound = (vocabulary = []) => {
     };
   }
 
-  const distractorPool = vocabulary.filter((item) => item.id !== selectedWord.id);
+  const distractorPool = distinctVocabularyWords(vocabulary, [selectedWord]);
   const wrongOptions = [...distractorPool]
     .sort(() => Math.random() - 0.5)
     .slice(0, Math.min(3, distractorPool.length));

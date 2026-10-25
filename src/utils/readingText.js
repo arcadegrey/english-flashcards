@@ -1,3 +1,5 @@
+import { normalizeVocabularyHeadword } from '../../shared/vocabularyAliases.js';
+
 const WORD_REGEX = /[A-Za-z]+(?:'[A-Za-z]+)?|[^A-Za-z]+/g;
 const ENGLISH_WORD_REGEX = /^[A-Za-z]+(?:'[A-Za-z]+)?$/;
 
@@ -52,7 +54,7 @@ export const isEnglishWordToken = (token = '') => ENGLISH_WORD_REGEX.test(String
 export const buildWordLookup = (words = []) => {
   const lookup = new Map();
   words.forEach((word) => {
-    const key = String(word?.word || '').trim().toLowerCase();
+    const key = normalizeVocabularyHeadword(word?.word);
     if (!key || lookup.has(key)) return;
     lookup.set(key, word);
   });
@@ -63,7 +65,7 @@ export const resolveVocabularyWord = (token, wordLookup) => {
   if (!isEnglishWordToken(token) || !wordLookup) return null;
   const variants = deriveVariants(token);
   for (const variant of variants) {
-    const matched = wordLookup.get(variant);
+    const matched = wordLookup.get(normalizeVocabularyHeadword(variant));
     if (matched) return matched;
   }
   return null;
