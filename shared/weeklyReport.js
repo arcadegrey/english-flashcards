@@ -1,19 +1,11 @@
+import { getStudyDateKey } from './studyDate.js';
 import { mergeStudyHistory } from './studyHistory.js';
 
-const DAY = 86400000;
+export { studyWeekRange as weekRange } from './studyDate.js';
 const activeDay = day => day.wordsLearned + day.wordsMastered + day.readingsCompleted + day.readingQuestionsAnswered + day.examQuestionsAnswered > 0;
-export function weekRange(value = new Date()) {
-  const date = new Date(value);
-  if (!Number.isFinite(date.getTime())) throw new Error('周日期无效。');
-  date.setUTCHours(0, 0, 0, 0);
-  date.setUTCDate(date.getUTCDate() - (date.getUTCDay() + 6) % 7);
-  const start = date.toISOString().slice(0, 10);
-  const end = new Date(date.getTime() + 7 * DAY).toISOString().slice(0, 10);
-  return { start, end, last: new Date(date.getTime() + 6 * DAY).toISOString().slice(0, 10) };
-}
 
 const accuracy = (correct, answered) => answered ? Math.round(correct / answered * 100) : null;
-const inWeek = (date, range) => date >= range.start && date < range.end;
+const inWeek = (date, range) => getStudyDateKey(date) >= range.start && getStudyDateKey(date) < range.end;
 const read = (text, fallback = []) => { try { return JSON.parse(text) || fallback; } catch { return fallback; } };
 
 // Only pass the current roster and records selected through its membership relation.
@@ -61,9 +53,9 @@ export function buildWeeklyReport({ students, exams, readings, assignments, subm
     const days = mergeStudyHistory([], read(student.study_history)).filter(day => inWeek(day.date, range));
     const dates = new Set(days.filter(activeDay).map(day => day.date));
     const tests = examList.filter(attempt => attempt.userId === id);
-    tests.forEach(attempt => dates.add(attempt.completedAt.slice(0, 10)));
-    currentSubmissions.filter(row => String(row.student_id) === id && inWeek(row.submitted_at, range)).forEach(row => dates.add(row.submitted_at.slice(0, 10)));
-    readingList.filter(attempt => attempt.userId === id).forEach(attempt => dates.add(attempt.completedAt.slice(0, 10)));
+    tests.forEach(attempt => dates.add(getStudyDateKey(attempt.completedAt)));
+    currentSubmissions.filter(row => String(row.student_id) === id && inWeek(row.submitted_at, range)).forEach(row => dates.add(getStudyDateKey(row.submitted_at)));
+    readingList.filter(attempt => attempt.userId === id).forEach(attempt => dates.add(getStudyDateKey(attempt.completedAt)));
     const sum = key => days.reduce((total, day) => total + day[key], 0);
     const answered = sum('examQuestionsAnswered'), correct = sum('examQuestionsCorrect');
     return { id, displayName: student.display_name || '学生', email: student.email, activeDays: dates.size,

@@ -1,0 +1,2767 @@
+{
+  "date": "2026-10-25",
+  "scope": "历史待核项去重分流与本轮字段修复跟踪；不是全量语言审校完成证明。",
+  "summary": {
+    "baseCandidates": {
+      "resolved_field": 1,
+      "resolved_source_review": 73,
+      "retired_reference_only": 37
+    },
+    "inclusionCandidates": {
+      "partially_corrected_followup_required": 10,
+      "needs_source_review": 28
+    },
+    "correctedRecords": 79
+  },
+  "base": [
+    {
+      "id": 3849,
+      "word": "tame nature",
+      "rule": "missing_pos",
+      "status": "resolved_field",
+      "finding": "缺少 pos；需人工补核，不自动生成。",
+      "current": {
+        "id": 3849,
+        "word": "tame nature",
+        "phonetic": "teɪm ˈneɪtʃə",
+        "pos": "v. phr.",
+        "meaning": "征服自然",
+        "example": "Humans have long tried to tame nature.",
+        "exampleCn": "人类长期以来一直试图征服自然。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "9"
+      },
+      "correctedFields": [
+        "pos"
+      ]
+    },
+    {
+      "id": 4322,
+      "word": "plunge whole-heartedly",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 4322,
+        "word": "plunge whole-heartedly",
+        "phonetic": "/plʌndʒ ˌhəʊlˈhɑːtɪdli/",
+        "pos": "v. phr.",
+        "meaning": "全身心投入（通常接 into；wholeheartedly 常连写）",
+        "example": "She plunged whole-heartedly into her studies.",
+        "exampleCn": "她全身心地投入到了学习中。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "24",
+        "ieltsLists": [
+          "24"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ]
+    },
+    {
+      "id": 4340,
+      "word": "take a bow",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 4340,
+        "word": "take a bow",
+        "phonetic": "/teɪk ə ˈbaʊ/",
+        "pos": "v. phr.",
+        "meaning": "鞠躬谢幕",
+        "example": "The cast came on stage to take a bow.",
+        "exampleCn": "全体演员走上舞台鞠躬谢幕。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "24",
+        "ieltsLists": [
+          "24"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos"
+      ]
+    },
+    {
+      "id": 4347,
+      "word": "raw material",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 4347,
+        "word": "raw material",
+        "phonetic": "/ˌrɔː məˈtɪəriəl/",
+        "pos": "n. phr.",
+        "meaning": "原材料",
+        "example": "Oil is a key raw material for the chemical industry.",
+        "exampleCn": "石油是化学工业的关键原材料。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "25",
+        "ieltsLists": [
+          "25"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos"
+      ]
+    },
+    {
+      "id": 4544,
+      "word": "alcoholic beverage",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 4544,
+        "word": "alcoholic beverage",
+        "phonetic": "/ˌælkəˈhɒlɪk ˈbevərɪdʒ/",
+        "pos": "n. phr.",
+        "meaning": "酒精饮料",
+        "example": "Beer is a type of alcoholic beverage.",
+        "exampleCn": "啤酒是一种酒精饮料。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "30",
+        "ieltsLists": [
+          "30"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos"
+      ]
+    },
+    {
+      "id": 4579,
+      "word": "an odd fish",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 4579,
+        "word": "an odd fish",
+        "phonetic": "/ən ɒd ˈfɪʃ/",
+        "pos": "n. phr.",
+        "meaning": "古怪的人（英式、较旧的非正式说法，称人时可能失礼）",
+        "example": "He is an odd fish, but everyone likes him.",
+        "exampleCn": "他是个古怪的人，但大家都喜欢他。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "31",
+        "ieltsLists": [
+          "31"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ]
+    },
+    {
+      "id": 4609,
+      "word": "soy sauce",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 4609,
+        "word": "soy sauce",
+        "phonetic": "/ˌsɔɪ ˈsɔːs/",
+        "pos": "n. phr.",
+        "meaning": "酱油",
+        "example": "Add a dash of soy sauce to the stir-fry.",
+        "exampleCn": "往炒菜里加一点点酱油。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "32",
+        "ieltsLists": [
+          "32"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos"
+      ]
+    },
+    {
+      "id": 4698,
+      "word": "span of life",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 4698,
+        "word": "span of life",
+        "phonetic": "/ˌspæn əv ˈlaɪf/",
+        "pos": "n. phr.",
+        "meaning": "寿命/一生",
+        "example": "The span of life varies among different species.",
+        "exampleCn": "不同物种的寿命各不相同。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "35",
+        "ieltsLists": [
+          "35"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos"
+      ]
+    },
+    {
+      "id": 4718,
+      "word": "traffic regulations",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 4718,
+        "word": "traffic regulations",
+        "phonetic": "/ˈtræfɪk ˌreɡjuˈleɪʃnz/",
+        "pos": "n. phr.",
+        "meaning": "交通规则",
+        "example": "Drivers must obey traffic regulations.",
+        "exampleCn": "司机必须遵守交通规则。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "36",
+        "ieltsLists": [
+          "36"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos"
+      ]
+    },
+    {
+      "id": 4719,
+      "word": "traffic jam",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 4719,
+        "word": "traffic jam",
+        "phonetic": "/ˈtræfɪk dʒæm/",
+        "pos": "n. phr.",
+        "meaning": "交通堵塞",
+        "example": "We were stuck in a traffic jam for over an hour.",
+        "exampleCn": "我们在交通堵塞中被堵了一个多小时。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "36",
+        "ieltsLists": [
+          "36"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos"
+      ]
+    },
+    {
+      "id": 4720,
+      "word": "traffic congestion",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 4720,
+        "word": "traffic congestion",
+        "phonetic": "/ˈtræfɪk kənˈdʒestʃən/",
+        "pos": "n. phr.",
+        "meaning": "交通拥堵",
+        "example": "Traffic congestion is a major problem in big cities.",
+        "exampleCn": "交通拥堵是大城市的一个主要问题。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "36",
+        "ieltsLists": [
+          "36"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos"
+      ]
+    },
+    {
+      "id": 4842,
+      "word": "establish a nation",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 4842,
+        "word": "establish a nation",
+        "phonetic": "/ɪˈstæblɪʃ ə ˈneɪʃn/",
+        "pos": "v. phr.",
+        "meaning": "建国/建立国家",
+        "example": "They worked to establish a nation free from colonial rule.",
+        "exampleCn": "他们为建立摆脱殖民统治的国家而奋斗。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "39",
+        "ieltsLists": [
+          "39"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos"
+      ]
+    },
+    {
+      "id": 5649,
+      "word": "others",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 5649,
+        "word": "others",
+        "phonetic": "/ˈʌðəz/",
+        "pos": "pron.",
+        "meaning": "其他人；其他事物（other 的复数代词用法）",
+        "example": "Some people prefer strong black tea while others cannot start the day without coffee.",
+        "exampleCn": "有些人喜欢浓红茶，而另一些人没有咖啡就无法开始一天。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 5674,
+      "word": "including",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 5674,
+        "word": "including",
+        "phonetic": "/ɪnˈkluːdɪŋ/",
+        "pos": "prep.",
+        "meaning": "包括；包含……在内",
+        "example": "The price of the guided tour covers everything you need, including meals and hotel stays.",
+        "exampleCn": "导游团的价格涵盖了所需的一切，包括餐食和酒店住宿。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 5873,
+      "word": "sales",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 5873,
+        "word": "sales",
+        "phonetic": "/seɪlz/",
+        "pos": "n./adj.",
+        "meaning": "n. 销售活动；销售额；销量；adj. 销售的",
+        "example": "They tried to boost sales.",
+        "exampleCn": "他们试图提高销售额。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "correctedFields": [
+        "pos",
+        "meaning",
+        "phonetic"
+      ]
+    },
+    {
+      "id": 5896,
+      "word": "earlier",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 5896,
+        "word": "earlier",
+        "phonetic": "/ˈɜːliə(r)/",
+        "pos": "adj./adv.",
+        "meaning": "更早的；较早的；更早地（early 的比较级）",
+        "example": "We caught an earlier train to avoid the crowds.",
+        "exampleCn": "我们乘坐了更早的一班火车，以避开人群。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 5900,
+      "word": "planning",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 5900,
+        "word": "planning",
+        "phonetic": "/ˈplænɪŋ/",
+        "pos": "n.",
+        "meaning": "规划；筹划；制定计划的过程",
+        "example": "The planning was more fun than the trip itself.",
+        "exampleCn": "计划比旅行本身更有趣。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 5941,
+      "word": "states",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 5941,
+        "word": "states",
+        "phonetic": "/steɪts/",
+        "pos": "n.",
+        "meaning": "n. 州；国家；状态（state 的复数）；the States 指美国",
+        "example": "He has travelled to all fifty states and has countless stories from his road trips.",
+        "exampleCn": "他走遍了全部五十个州，积累了无数公路旅行的故事。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "correctedFields": [
+        "meaning",
+        "exampleCn",
+        "phonetic"
+      ]
+    },
+    {
+      "id": 5947,
+      "word": "works",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 5947,
+        "word": "works",
+        "phonetic": "/wɜːks/",
+        "pos": "n.",
+        "meaning": "n. 作品；工厂；机器的活动部件；the works（非正式）全套东西、所有配料",
+        "example": "I ordered a hot dog with the works.",
+        "exampleCn": "我点了一个加上全部配料的热狗。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "correctedFields": [
+        "meaning",
+        "exampleCn",
+        "phonetic",
+        "example"
+      ]
+    },
+    {
+      "id": 5963,
+      "word": "terms",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 5963,
+        "word": "terms",
+        "phonetic": "/tɜːmz/",
+        "pos": "n.",
+        "meaning": "条件；条款；关系（如 on good terms 关系融洽）；术语（term 的复数）",
+        "example": "She is on good terms with her neighbours.",
+        "exampleCn": "她和邻居们关系融洽。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 5986,
+      "word": "thomas",
+      "rule": "possible_sense_alignment",
+      "status": "retired_reference_only",
+      "finding": "原释义：n. 多马(耶稣十二门徒之一)；提示范围：专有名词 · 托马斯。两者不同不自动代表错误。",
+      "correctedFields": []
+    },
+    {
+      "id": 6009,
+      "word": "thanks",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6009,
+        "word": "thanks",
+        "phonetic": "/θæŋks/",
+        "pos": "n./interj.",
+        "meaning": "感谢；谢谢；thanks to 表示由于、多亏",
+        "example": "Thanks to hard work it was a great success.",
+        "exampleCn": "由于努力工作，它取得了巨大的成功。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ]
+    },
+    {
+      "id": 6030,
+      "word": "inc",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6030,
+        "word": "inc",
+        "phonetic": "/ɪŋk/",
+        "pos": "abbr.",
+        "meaning": "incorporated 的缩写，通常写作 Inc.，用于美国公司名称之后",
+        "example": "She founded a software company called Bright Future Inc.",
+        "exampleCn": "她创办了一家名为 Bright Future Inc. 的软件公司。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 6069,
+      "word": "corp",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6069,
+        "word": "corp",
+        "phonetic": "/kɔːrp/",
+        "pos": "abbr.",
+        "meaning": "corporation 的缩写，通常写作 Corp.，表示公司；此处不取 corporal 的军事义",
+        "example": "Green Valley Corp. grew quickly after launching its new software product.",
+        "exampleCn": "Green Valley 公司推出新软件产品后迅速发展。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 6080,
+      "word": "significantly",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6080,
+        "word": "significantly",
+        "phonetic": "/sɪɡˈnɪfɪkəntli/",
+        "pos": "adv.",
+        "meaning": "显著地；明显地；意味深长地",
+        "example": "The two groups differed significantly.",
+        "exampleCn": "两组之间存在显著差异。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "correctedFields": [
+        "meaning",
+        "exampleCn",
+        "phonetic"
+      ]
+    },
+    {
+      "id": 6088,
+      "word": "iii",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6125,
+      "word": "steve",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6127,
+      "word": "dec",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6127,
+        "word": "dec",
+        "phonetic": "/dɛk/",
+        "pos": "abbr.",
+        "meaning": "美国数字设备公司（Digital Equipment Corporation，通常写作 DEC；本条例句为公司名，不是月份缩写 Dec.）",
+        "example": "She worked as a software engineer at DEC before the company was taken over by a larger firm.",
+        "exampleCn": "她在 DEC 被更大的公司收购之前在那里担任软件工程师。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ]
+    },
+    {
+      "id": 6147,
+      "word": "unix",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6148,
+      "word": "remaining",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6148,
+        "word": "remaining",
+        "phonetic": "/rɪˈmeɪnɪŋ/",
+        "pos": "adj.",
+        "meaning": "剩余的",
+        "example": "We saved the remaining sandwiches for supper.",
+        "exampleCn": "我们把剩下的三明治留作晚餐。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "correctedFields": [
+        "pos",
+        "phonetic",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 6241,
+      "word": "ceo",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6241,
+        "word": "ceo",
+        "phonetic": "/ˌsiː iː ˈəʊ/",
+        "pos": "n.",
+        "meaning": "首席执行官（通常写作 CEO，为 chief executive officer 的缩写）",
+        "example": "The CEO announced that the company would open offices in three new countries next year.",
+        "exampleCn": "首席执行官宣布公司明年将在三个新的国家开设办事处。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 6246,
+      "word": "stairs",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6246,
+        "word": "stairs",
+        "phonetic": "/steəz/",
+        "pos": "n.",
+        "meaning": "楼梯（复数形式；一级台阶常用 step）",
+        "example": "She ran up the stairs two at a time to answer the ringing phone on the second floor.",
+        "exampleCn": "她一步两级地跑上楼梯去接二楼响着的电话。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 6258,
+      "word": "online",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6258,
+        "word": "online",
+        "phonetic": "/ˌɒnˈlaɪn/",
+        "pos": "adj./adv.",
+        "meaning": "adj. 在线的；联网的；adv. 在网上；在线地",
+        "example": "She prefers to do her grocery shopping online rather than going to the crowded supermarket.",
+        "exampleCn": "她更喜欢在网上买菜而不是去拥挤的超市。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "pos",
+        "meaning",
+        "phonetic"
+      ]
+    },
+    {
+      "id": 6260,
+      "word": "proposed",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6260,
+        "word": "proposed",
+        "phonetic": "/prəˈpəʊzd/",
+        "pos": "v./adj.",
+        "meaning": "v. 提议；提出（propose 的过去式或过去分词）；adj. 拟议中的",
+        "example": "The senator proposed a change to the tax rules.",
+        "exampleCn": "这位参议员提议修改税收规定。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 6287,
+      "word": "oct",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6287,
+        "word": "oct",
+        "phonetic": "/ɒkˈtəʊbə(r)/",
+        "pos": "abbr.",
+        "meaning": "十月（October 的书面缩写，通常写作 Oct.，朗读时读全称）",
+        "example": "The new term begins in early Oct. and ends in December.",
+        "exampleCn": "新学期于十月初开始，十二月结束。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 6327,
+      "word": "thatcher",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6329,
+      "word": "dna",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6329,
+        "word": "dna",
+        "phonetic": "/ˌdiː en ˈeɪ/",
+        "pos": "n.",
+        "meaning": "脱氧核糖核酸（通常写作 DNA，是携带遗传信息的分子）",
+        "example": "The laboratory compared DNA from the two samples.",
+        "exampleCn": "实验室对比了两个样本中的 DNA。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 6330,
+      "word": "nov",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6330,
+        "word": "nov",
+        "phonetic": "/nəʊˈvembə(r)/",
+        "pos": "abbr.",
+        "meaning": "十一月（November 的书面缩写，通常写作 Nov.，朗读时读全称）",
+        "example": "The first heavy snow usually arrives in early Nov.",
+        "exampleCn": "第一场大雪通常在十一月初到来。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 6368,
+      "word": "neil",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6396,
+      "word": "feb",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6396,
+        "word": "feb",
+        "phonetic": "/ˈfebruəri/",
+        "pos": "abbr.",
+        "meaning": "二月（February 的书面缩写，通常写作 Feb.，朗读时读全称）",
+        "example": "The days become noticeably longer in the middle of Feb.",
+        "exampleCn": "二月中旬，白昼明显变长。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 6397,
+      "word": "aug",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6397,
+        "word": "aug",
+        "phonetic": "/ˈɔːɡəst/",
+        "pos": "abbr.",
+        "meaning": "八月（August 的书面缩写，通常写作 Aug.，朗读时读全称）",
+        "example": "They go camping by the lake in early Aug.",
+        "exampleCn": "他们八月初去湖边露营。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 6407,
+      "word": "politically",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6407,
+        "word": "politically",
+        "phonetic": "/pəˈlɪtɪkli/",
+        "pos": "adv.",
+        "meaning": "在政治上；从政治角度而言",
+        "example": "The proposal was politically unpopular but economically useful.",
+        "exampleCn": "这项提议在政治上不受欢迎，但在经济上有益。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 6413,
+      "word": "charlie",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6413,
+        "word": "charlie",
+        "phonetic": "/ˈtʃɑːli/",
+        "pos": "n.",
+        "meaning": "n. 查理（人名，写作 Charlie，是 Charles 的昵称）；[通信] 字母 C 的代码词",
+        "example": "Charlie has been working as a firefighter at the central station for over fifteen years now.",
+        "exampleCn": "查理在中央消防站做了超过十五年的消防员。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic"
+      ]
+    },
+    {
+      "id": 6438,
+      "word": "matthew",
+      "rule": "possible_sense_alignment",
+      "status": "retired_reference_only",
+      "finding": "原释义：n. 马太, 马太福音；提示范围：专有名词 · 马修。两者不同不自动代表错误。",
+      "correctedFields": []
+    },
+    {
+      "id": 6441,
+      "word": "depending",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6441,
+        "word": "depending",
+        "phonetic": "/dɪˈpendɪŋ/",
+        "pos": "v.",
+        "meaning": "取决于；依赖（depend 的现在分词；depending on 常引出条件）",
+        "example": "The price of the ticket varies depending on the time of year and how early you book it.",
+        "exampleCn": "票价因一年中的时间和预订的早晚而异。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 6474,
+      "word": "nhs",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6480,
+      "word": "girlfriend",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6480,
+        "word": "girlfriend",
+        "phonetic": "/ˈɡɜːlfrend/",
+        "pos": "n.",
+        "meaning": "女朋友；女性朋友（具体关系须看语境）",
+        "example": "Mary and her girlfriend organized the party.",
+        "exampleCn": "玛丽和她的女朋友组织了这次聚会。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 6569,
+      "word": "expected",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6569,
+        "word": "expected",
+        "phonetic": "/ɪkˈspektɪd/",
+        "pos": "adj./v.",
+        "meaning": "adj. 预期的；预计的；v. expect 的过去式或过去分词",
+        "example": "The team prepared for the expected storm.",
+        "exampleCn": "团队为预计将要到来的风暴做好了准备。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 6581,
+      "word": "traditionally",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6581,
+        "word": "traditionally",
+        "phonetic": "/trəˈdɪʃənəli/",
+        "pos": "adv.",
+        "meaning": "按照传统；传统上",
+        "example": "Traditionally, we eat fried foods on Hanukah.",
+        "exampleCn": "传统上，我们在光明节吃油炸食品。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 6589,
+      "word": "clarke",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6600,
+      "word": "davies",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6601,
+      "word": "swindon",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6604,
+      "word": "estimated",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6604,
+        "word": "estimated",
+        "phonetic": "/ˈestɪmeɪtɪd/",
+        "pos": "adj./v.",
+        "meaning": "adj. 估算的；预计的；v. estimate 的过去式或过去分词",
+        "example": "The estimated cost of repairing the old stone bridge turned out to be twice the original budget.",
+        "exampleCn": "修复那座老石桥的估算成本最后是原预算的两倍。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ]
+    },
+    {
+      "id": 6634,
+      "word": "lords",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6634,
+        "word": "lords",
+        "phonetic": "/lɔːdz/",
+        "pos": "n.",
+        "meaning": "贵族；勋爵（lord 的复数）；the Lords 或 House of Lords 指英国上议院",
+        "example": "The proposed law was debated for hours in the House of Lords before being passed last night.",
+        "exampleCn": "上议院对这项提案进行了数小时的辩论最终在昨晚深夜通过。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 6636,
+      "word": "raf",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6642,
+      "word": "microsoft",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6658,
+      "word": "joan",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6661,
+      "word": "freshman",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6661,
+        "word": "freshman",
+        "phonetic": "/ˈfreʃmən/",
+        "pos": "n.",
+        "meaning": "（美式）高中或大学一年级学生；初入某领域的人；新任议员等",
+        "example": "The freshman senator asked several questions at the meeting.",
+        "exampleCn": "这位新任参议员在会上提出了几个问题。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 6674,
+      "word": "ross",
+      "rule": "possible_sense_alignment",
+      "status": "retired_reference_only",
+      "finding": "原释义：n. 罗丝（女性名）；提示范围：专有名词 · 罗斯。两者不同不自动代表错误。",
+      "correctedFields": []
+    },
+    {
+      "id": 6680,
+      "word": "associated",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6680,
+        "word": "associated",
+        "phonetic": "/əˈsəʊsieɪtɪd/",
+        "pos": "adj./v.",
+        "meaning": "adj. 有关联的；相关的；v. associate 的过去式或过去分词",
+        "example": "Her research is closely associated with the groundbreaking work done at the university a decade ago.",
+        "exampleCn": "她的研究与十年前大学所做的开创性工作密切相关。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ]
+    },
+    {
+      "id": 6682,
+      "word": "korea",
+      "rule": "possible_sense_alignment",
+      "status": "resolved_source_review",
+      "finding": "原释义：n. 朝鲜, 韩国；提示范围：专有名词 · 朝鲜半岛。两者不同不自动代表错误。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6682,
+        "word": "korea",
+        "phonetic": "/kəˈriːə/",
+        "pos": "n.",
+        "meaning": "朝鲜半岛地区（专名，规范写法 Korea；现代国家名称应区分 North Korea 与 South Korea）",
+        "example": "The atlas includes a detailed map of Korea.",
+        "exampleCn": "这本地图集收录了一张详细的朝鲜半岛地图。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 6717,
+      "word": "malcolm",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6736,
+      "word": "faster",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6736,
+        "word": "faster",
+        "phonetic": "/ˈfɑːstə(r)/",
+        "pos": "adj./adv.",
+        "meaning": "更快的；更快地（fast 的比较级）",
+        "example": "Grass courts are faster than clay.",
+        "exampleCn": "草地球场比红土球场更快。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "pos",
+        "meaning",
+        "phonetic"
+      ]
+    },
+    {
+      "id": 6739,
+      "word": "obliged",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6739,
+        "word": "obliged",
+        "phonetic": "/əˈblaɪdʒd/",
+        "pos": "adj./v.",
+        "meaning": "有义务的；不得不的；感激的（oblige 的过去分词；be obliged to do 表示必须做）",
+        "example": "I felt obliged to help the elderly neighbour after seeing how much work she had to do alone.",
+        "exampleCn": "看到老邻居一个人要做那么多活我觉得有义务帮忙。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ]
+    },
+    {
+      "id": 6752,
+      "word": "geoffrey",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6764,
+      "word": "clark",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6770,
+      "word": "sexually",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6770,
+        "word": "sexually",
+        "phonetic": "/ˈsekʃəli/",
+        "pos": "adv.",
+        "meaning": "在性活动、性吸引或性成熟方面",
+        "example": "The study examined how animals become sexually mature.",
+        "exampleCn": "这项研究考察了动物如何达到性成熟。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 6771,
+      "word": "hughes",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6774,
+      "word": "organiser",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6774,
+        "word": "organiser",
+        "phonetic": "/ˈɔːɡənaɪzə(r)/",
+        "pos": "n.",
+        "meaning": "组织者；筹办者（英式拼写，美式常写 organizer）",
+        "example": "The organiser of the festival worked tirelessly for six months to make sure everything ran perfectly.",
+        "exampleCn": "节日组织者不知疲倦地工作了六个月以确保一切完美进行。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 6779,
+      "word": "liz",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6786,
+      "word": "ussr",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6787,
+      "word": "harriet",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6791,
+      "word": "gorbachev",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6793,
+      "word": "impressed",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6793,
+        "word": "impressed",
+        "phonetic": "/ɪmˈprest/",
+        "pos": "v./adj.",
+        "meaning": "v. 给……留下印象（impress 的过去式或过去分词）；adj. 感到钦佩的",
+        "example": "This child impressed me as unusually mature.",
+        "exampleCn": "这个孩子给我的印象是异常成熟。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ]
+    },
+    {
+      "id": 6829,
+      "word": "kenneth",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6845,
+      "word": "hiv",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6845,
+        "word": "hiv",
+        "phonetic": "/ˌeɪtʃ aɪ ˈviː/",
+        "pos": "n.",
+        "meaning": "人类免疫缺陷病毒（通常写作 HIV；病毒名称，不等同于 AIDS）",
+        "example": "The charity works to raise awareness about HIV and support those living with the virus every day.",
+        "exampleCn": "这家慈善机构致力于提高对HIV的认识并每天支持病毒携带者。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 6846,
+      "word": "corbett",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6856,
+      "word": "workplace",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6856,
+        "word": "workplace",
+        "phonetic": "/ˈwɜːkpleɪs/",
+        "pos": "n.",
+        "meaning": "工作场所",
+        "example": "The company introduced flexible hours to make the workplace more welcoming for parents with children.",
+        "exampleCn": "公司引入了弹性工作制使工作场所对有小孩的父母更加友好。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 6879,
+      "word": "gop",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6880,
+      "word": "norwich",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6911,
+      "word": "takeover",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6911,
+        "word": "takeover",
+        "phonetic": "/ˈteɪkəʊvə(r)/",
+        "pos": "n.",
+        "meaning": "接管；收购（名词；动词短语 take over 分写）",
+        "example": "The takeover of the small startup by the larger company was completed at the end of last year.",
+        "exampleCn": "那家大公司对那家小型创业公司的收购于去年年底完成。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 6924,
+      "word": "kinnock",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 6926,
+      "word": "genuinely",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6926,
+        "word": "genuinely",
+        "phonetic": "/ˈdʒenjuɪnli/",
+        "pos": "adv.",
+        "meaning": "真正地；真诚地",
+        "example": "The town welcomed a genuinely open discussion of the problem.",
+        "exampleCn": "镇上的人们欢迎对这个问题开展真正开放的讨论。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 6931,
+      "word": "emerging",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6931,
+        "word": "emerging",
+        "phonetic": "/ɪˈmɜːdʒɪŋ/",
+        "pos": "adj./v.",
+        "meaning": "adj. 新兴的；正在出现的；v. emerge 的现在分词",
+        "example": "Scientists are closely watching the emerging virus strain that has appeared in several countries over the past month.",
+        "exampleCn": "科学家正密切关注上个月在几个国家出现的新的病毒株。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ]
+    },
+    {
+      "id": 6939,
+      "word": "closest",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6939,
+        "word": "closest",
+        "phonetic": "/ˈkləʊsɪst/",
+        "pos": "adj.",
+        "meaning": "最近的；最靠近的（close 的最高级）",
+        "example": "She moved to the chair closest to the fire and wrapped herself in a soft blanket.",
+        "exampleCn": "她移到离壁炉最近的椅子上用柔软的毯子裹住自己。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 6958,
+      "word": "bored",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 6958,
+        "word": "bored",
+        "phonetic": "/bɔːd/",
+        "pos": "adj.",
+        "meaning": "感到无聊的；厌倦的（描述感受，区别于 boring 令人无聊的）",
+        "example": "I felt bored during the long wait at the station.",
+        "exampleCn": "在车站漫长的等待中，我感到无聊。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "pos",
+        "meaning",
+        "phonetic",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 6985,
+      "word": "aberdeen",
+      "rule": "possible_sense_alignment",
+      "status": "retired_reference_only",
+      "finding": "原释义：n. 亚伯丁（英国苏格兰一郡 ）；苏格兰粗毛猎狐狗（等于Aberdeenterrier）；提示范围：专有名词 · 阿伯丁。两者不同不自动代表错误。",
+      "correctedFields": []
+    },
+    {
+      "id": 6991,
+      "word": "julie",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 7009,
+      "word": "importantly",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 7009,
+        "word": "importantly",
+        "phonetic": "/ɪmˈpɔːtntli/",
+        "pos": "adv.",
+        "meaning": "重要的是；重要地；more importantly 表示更重要的是",
+        "example": "More importantly, everyone had a chance to explain their idea.",
+        "exampleCn": "更重要的是，每个人都有机会解释自己的想法。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 7013,
+      "word": "privately",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 7013,
+        "word": "privately",
+        "phonetic": "/ˈpraɪvətli/",
+        "pos": "adv.",
+        "meaning": "私下地；不公开地；由私人经营或资助地",
+        "example": "It was discussed privately between the two men.",
+        "exampleCn": "两人私下讨论了此事。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 7016,
+      "word": "varying",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 7016,
+        "word": "varying",
+        "phonetic": "/ˈveəriɪŋ/",
+        "pos": "adj./v.",
+        "meaning": "adj. 各不相同的；变化的；v. vary 的现在分词",
+        "example": "The workers measured the varying angles of the roof.",
+        "exampleCn": "工人们测量了屋顶各不相同的角度。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "pos",
+        "meaning",
+        "phonetic",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 7018,
+      "word": "routinely",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 7018,
+        "word": "routinely",
+        "phonetic": "/ruːˈtiːnli/",
+        "pos": "adv.",
+        "meaning": "例行地；惯常地；经常地",
+        "example": "He routinely parked in a no-parking zone.",
+        "exampleCn": "他经常把车停在禁止停车区。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 7055,
+      "word": "counselling",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 7055,
+        "word": "counselling",
+        "phonetic": "/ˈkaʊnsəlɪŋ/",
+        "pos": "n.",
+        "meaning": "专业咨询；心理辅导（英式拼写，通常不可数；美式 counseling）",
+        "example": "The university offers free counselling to all students who are struggling with stress or anxiety during their studies.",
+        "exampleCn": "大学为所有在学习期间因压力或焦虑而挣扎的学生提供免费咨询。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 7063,
+      "word": "ron",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 7070,
+      "word": "explicitly",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 7070,
+        "word": "explicitly",
+        "phonetic": "/ɪkˈsplɪsɪtli/",
+        "pos": "adv.",
+        "meaning": "明确地；清楚直接地",
+        "example": "In his foreword Professor Clark puts it explicitly.",
+        "exampleCn": "克拉克教授在他的前言中明确指出了这一点。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 7085,
+      "word": "ali",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 7090,
+      "word": "kim",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 7099,
+      "word": "eec",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 7105,
+      "word": "gabriel",
+      "rule": "possible_sense_alignment",
+      "status": "retired_reference_only",
+      "finding": "原释义：n. 加百利(<<经经>>中七大天使之一)；提示范围：专有名词 · 加布里埃尔。两者不同不自动代表错误。",
+      "correctedFields": []
+    },
+    {
+      "id": 7118,
+      "word": "website",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 7118,
+        "word": "website",
+        "phonetic": "/ˈwebsaɪt/",
+        "pos": "n.",
+        "meaning": "网站；由相关网页组成的站点",
+        "example": "She spent the afternoon redesigning the company website to make it more user-friendly and attractive to new visitors.",
+        "exampleCn": "她整个下午都在重新设计公司网站使其对用户更友好对新访客更有吸引力。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 7155,
+      "word": "lyrics",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 7155,
+        "word": "lyrics",
+        "phonetic": "/ˈlɪrɪks/",
+        "pos": "n.",
+        "meaning": "歌词（通常用复数）",
+        "example": "His compositions always started with the lyrics.",
+        "exampleCn": "他的作品总是从歌词开始。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 7180,
+      "word": "des",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 7186,
+      "word": "phillips",
+      "rule": "missing_phonetic",
+      "status": "retired_reference_only",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "correctedFields": []
+    },
+    {
+      "id": 7459,
+      "word": "theatre",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 7459,
+        "word": "theatre",
+        "phonetic": "/ˈθɪətə(r)/",
+        "pos": "n.",
+        "meaning": "剧院；戏剧（英式拼写，美式常写 theater）",
+        "example": "They went to the theatre last night to see a new play and were blown away.",
+        "exampleCn": "他们昨晚去戏院看了新话剧被台上精彩的表演震撼了。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 7720,
+      "word": "surprisingly",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 7720,
+        "word": "surprisingly",
+        "phonetic": "/səˈpraɪzɪŋli/",
+        "pos": "adv.",
+        "meaning": "出乎意料地；令人惊讶地",
+        "example": "He was surprisingly friendly.",
+        "exampleCn": "他出奇地友善。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 8175,
+      "word": "waggon",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 8175,
+        "word": "waggon",
+        "phonetic": "/ˈwæɡən/",
+        "pos": "n.",
+        "meaning": "n. 运货马车；货车（wagon 的英式拼写变体）",
+        "example": "The old waggon loaded with hay creaked slowly along the dusty lane pulled by two tired grey horses.",
+        "exampleCn": "两匹疲惫的灰马拉着装满干草的旧马车，沿着尘土飞扬的小路缓缓前行，车身吱吱作响。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "correctedFields": [
+        "meaning",
+        "exampleCn",
+        "phonetic"
+      ]
+    },
+    {
+      "id": 8267,
+      "word": "consistently",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 8267,
+        "word": "consistently",
+        "phonetic": "/kənˈsɪstəntli/",
+        "pos": "adv.",
+        "meaning": "一贯地；始终如一地；持续保持同样水平地",
+        "example": "She has consistently earned high marks throughout the school year.",
+        "exampleCn": "整个学年，她的成绩一直保持在较高水平。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    },
+    {
+      "id": 8367,
+      "word": "positively",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 8367,
+        "word": "positively",
+        "phonetic": "/ˈpɒzətɪvli/",
+        "pos": "adv.",
+        "meaning": "确实；简直（用于强调）；积极地；肯定地",
+        "example": "It was positively monumental.",
+        "exampleCn": "这绝对是具有纪念意义的。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 8377,
+      "word": "ironically",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 8377,
+        "word": "ironically",
+        "phonetic": "/aɪˈrɒnɪkli/",
+        "pos": "adv.",
+        "meaning": "讽刺地；出乎意料而具有反讽意味地",
+        "example": "Ironically, he ended up losing money under his own plan.",
+        "exampleCn": "讽刺的是，他最终按照自己的计划赔了钱。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 8407,
+      "word": "predominantly",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 8407,
+        "word": "predominantly",
+        "phonetic": "/prɪˈdɒmɪnəntli/",
+        "pos": "adv.",
+        "meaning": "主要地；大部分地",
+        "example": "The patients are predominantly indigenous.",
+        "exampleCn": "患者主要是土著。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ]
+    },
+    {
+      "id": 8504,
+      "word": "consultancy",
+      "rule": "missing_phonetic",
+      "status": "resolved_source_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。",
+      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
+      "checkedAt": "2026-10-25",
+      "current": {
+        "id": 8504,
+        "word": "consultancy",
+        "phonetic": "/kənˈsʌltənsi/",
+        "pos": "n.",
+        "meaning": "咨询公司；咨询业务；专业咨询服务",
+        "example": "She works for a small business management consultancy.",
+        "exampleCn": "她在一家小型企业管理咨询公司工作。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "correctedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ]
+    }
+  ],
+  "sense": [
+    {
+      "id": 3125,
+      "word": "cripple",
+      "decision": "sense_review",
+      "finding": "不整词删除：需逐义区分历史族群称呼、残障指称与当代普通形容词/动词用法，并核对中文语域。当前数据不宜把所有义项当作可互换的中性表达。",
+      "status": "partially_corrected_followup_required",
+      "correctedFields": [
+        "meaning"
+      ],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 3367,
+      "word": "aborigine",
+      "decision": "sense_review",
+      "finding": "不整词删除：需逐义区分历史族群称呼、残障指称与当代普通形容词/动词用法，并核对中文语域。当前数据不宜把所有义项当作可互换的中性表达。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 3491,
+      "word": "Caucasian",
+      "decision": "sense_review",
+      "finding": "不整词删除：需逐义区分历史族群称呼、残障指称与当代普通形容词/动词用法，并核对中文语域。当前数据不宜把所有义项当作可互换的中性表达。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 3660,
+      "word": "oriental",
+      "decision": "sense_review",
+      "finding": "不整词删除：需逐义区分历史族群称呼、残障指称与当代普通形容词/动词用法，并核对中文语域。当前数据不宜把所有义项当作可互换的中性表达。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 5392,
+      "word": "dumb",
+      "decision": "sense_review",
+      "finding": "不整词删除：需逐义区分历史族群称呼、残障指称与当代普通形容词/动词用法，并核对中文语域。当前数据不宜把所有义项当作可互换的中性表达。",
+      "status": "partially_corrected_followup_required",
+      "correctedFields": [
+        "meaning"
+      ],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 5463,
+      "word": "may",
+      "decision": "sense_review",
+      "finding": "保留学习价值，但词条兼有普通词、月份或专有短语义。先按具体义项/短语对齐教学目标，不把某个人名/机构义覆盖整个拼写。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 5941,
+      "word": "states",
+      "decision": "sense_review",
+      "finding": "保留学习价值，但词条兼有普通词、月份或专有短语义。先按具体义项/短语对齐教学目标，不把某个人名/机构义覆盖整个拼写。",
+      "status": "partially_corrected_followup_required",
+      "correctedFields": [
+        "meaning",
+        "exampleCn",
+        "phonetic"
+      ],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 5956,
+      "word": "august",
+      "decision": "sense_review",
+      "finding": "保留学习价值，但词条兼有普通词、月份或专有短语义。先按具体义项/短语对齐教学目标，不把某个人名/机构义覆盖整个拼写。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 5967,
+      "word": "henry",
+      "decision": "sense_review",
+      "finding": "姓名/专名例句与单位、马种、甜点或采锡专业义提示不一致。先按 ID 确定教学义项；专名义建议选学，专业义也不能直接当作日常核心。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6105,
+      "word": "jones",
+      "decision": "sense_review",
+      "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6127,
+      "word": "dec",
+      "decision": "sense_review",
+      "finding": "当前基础释义/例句与月份缩写提示不同。先确定要教授的义项，再核验大小写、释义、例句和音频；不能在旧 ID 下静默换义。",
+      "status": "partially_corrected_followup_required",
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6134,
+      "word": "joe",
+      "decision": "sense_review",
+      "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6281,
+      "word": "lewis",
+      "decision": "sense_review",
+      "finding": "基础释义与原例句是实际普通词义，提示却转成人名/地名。建议按当前冷僻/专业义转专题选学，并先对齐提示，不能直接改成人名或删词。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6344,
+      "word": "commons",
+      "decision": "sense_review",
+      "finding": "保留学习价值，但词条兼有普通词、月份或专有短语义。先按具体义项/短语对齐教学目标，不把某个人名/机构义覆盖整个拼写。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6356,
+      "word": "teen",
+      "decision": "sense_review",
+      "finding": "值得保留青少年/青少年时期义，但当前基础释义为“愤怒、悲哀”，与例句和提示不同；须修正主教学义而非剔除这个常用词。",
+      "status": "partially_corrected_followup_required",
+      "correctedFields": [
+        "pos",
+        "meaning"
+      ],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6358,
+      "word": "sept",
+      "decision": "sense_review",
+      "finding": "当前基础释义/例句与月份缩写提示不同。先确定要教授的义项，再核验大小写、释义、例句和音频；不能在旧 ID 下静默换义。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6366,
+      "word": "disabled",
+      "decision": "sense_review",
+      "finding": "不整词删除：需逐义区分历史族群称呼、残障指称与当代普通形容词/动词用法，并核对中文语域。当前数据不宜把所有义项当作可互换的中性表达。",
+      "status": "partially_corrected_followup_required",
+      "correctedFields": [
+        "pos",
+        "meaning"
+      ],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6379,
+      "word": "ruth",
+      "decision": "sense_review",
+      "finding": "基础释义与原例句是实际普通词义，提示却转成人名/地名。建议按当前冷僻/专业义转专题选学，并先对齐提示，不能直接改成人名或删词。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6409,
+      "word": "kong",
+      "decision": "sense_review",
+      "finding": "姓名/专名例句与单位、马种、甜点或采锡专业义提示不一致。先按 ID 确定教学义项；专名义建议选学，专业义也不能直接当作日常核心。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "核实基础释义、King Kong 专名例句与专业义提示冲突；不可静默换义或迁移成绩。"
+    },
+    {
+      "id": 6413,
+      "word": "charlie",
+      "decision": "sense_review",
+      "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
+      "status": "partially_corrected_followup_required",
+      "correctedFields": [
+        "phonetic"
+      ],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6434,
+      "word": "victoria",
+      "decision": "sense_review",
+      "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6500,
+      "word": "ulster",
+      "decision": "sense_review",
+      "finding": "基础释义与原例句是实际普通词义，提示却转成人名/地名。建议按当前冷僻/专业义转专题选学，并先对齐提示，不能直接改成人名或删词。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6588,
+      "word": "kelly",
+      "decision": "sense_review",
+      "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6591,
+      "word": "clare",
+      "decision": "sense_review",
+      "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6634,
+      "word": "lords",
+      "decision": "sense_review",
+      "finding": "保留学习价值，但词条兼有普通词、月份或专有短语义。先按具体义项/短语对齐教学目标，不把某个人名/机构义覆盖整个拼写。",
+      "status": "partially_corrected_followup_required",
+      "correctedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6684,
+      "word": "caroline",
+      "decision": "sense_review",
+      "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6724,
+      "word": "morgan",
+      "decision": "sense_review",
+      "finding": "姓名/专名例句与单位、马种、甜点或采锡专业义提示不一致。先按 ID 确定教学义项；专名义建议选学，专业义也不能直接当作日常核心。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6820,
+      "word": "surrey",
+      "decision": "sense_review",
+      "finding": "基础释义与原例句是实际普通词义，提示却转成人名/地名。建议按当前冷僻/专业义转专题选学，并先对齐提示，不能直接改成人名或删词。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6827,
+      "word": "jonathan",
+      "decision": "sense_review",
+      "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6831,
+      "word": "charlotte",
+      "decision": "sense_review",
+      "finding": "姓名/专名例句与单位、马种、甜点或采锡专业义提示不一致。先按 ID 确定教学义项；专名义建议选学，专业义也不能直接当作日常核心。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 6914,
+      "word": "mick",
+      "decision": "restricted_context",
+      "finding": "仅在历史引文/词语辨析中解释，不建议默认产出练习或要求学习者用其称呼他人。Mick 还可为人名，需与族群贬称分开。原 ID、记录和历史音频仍保留。",
+      "status": "partially_corrected_followup_required",
+      "correctedFields": [
+        "meaning"
+      ],
+      "nextAction": "核实限定语境的展示与出题策略；历史记录与已发布快照保留。"
+    },
+    {
+      "id": 6980,
+      "word": "betty",
+      "decision": "sense_review",
+      "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 7123,
+      "word": "tech",
+      "decision": "sense_review",
+      "finding": "保留实际使用价值，但须按复数 jeans、wagon 拼写变体或 tech 的具体义项组织教学。不能因表面像人名/冷僻形式就删除整条，也不宜重复计算学习负担。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 7177,
+      "word": "ralph",
+      "decision": "sense_review",
+      "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 8123,
+      "word": "lame",
+      "decision": "sense_review",
+      "finding": "不整词删除：需逐义区分历史族群称呼、残障指称与当代普通形容词/动词用法，并核对中文语域。当前数据不宜把所有义项当作可互换的中性表达。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "区分 lame 与织物名 lamé；需明确教学义项、重写基础例句并重制例句录音，再发布。"
+    },
+    {
+      "id": 8164,
+      "word": "negro",
+      "decision": "restricted_context",
+      "finding": "仅在历史引文/词语辨析中解释，不建议默认产出练习或要求学习者用其称呼他人。Mick 还可为人名，需与族群贬称分开。原 ID、记录和历史音频仍保留。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "核实限定语境的展示与出题策略；历史记录与已发布快照保留。"
+    },
+    {
+      "id": 8175,
+      "word": "waggon",
+      "decision": "sense_review",
+      "finding": "保留实际使用价值，但须按复数 jeans、wagon 拼写变体或 tech 的具体义项组织教学。不能因表面像人名/冷僻形式就删除整条，也不宜重复计算学习负担。",
+      "status": "partially_corrected_followup_required",
+      "correctedFields": [
+        "meaning",
+        "exampleCn",
+        "phonetic"
+      ],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    },
+    {
+      "id": 8213,
+      "word": "jean",
+      "decision": "sense_review",
+      "finding": "保留实际使用价值，但须按复数 jeans、wagon 拼写变体或 tech 的具体义项组织教学。不能因表面像人名/冷僻形式就删除整条，也不宜重复计算学习负担。",
+      "status": "needs_source_review",
+      "correctedFields": [],
+      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+    }
+  ]
+}

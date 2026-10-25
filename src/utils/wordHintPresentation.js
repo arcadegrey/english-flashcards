@@ -1,0 +1,25 @@
+// Clean import formatting for display without modifying the source entry.
+export const formatWordDefinition = (meaning) => String(meaning || '')
+  .replace(/\\r\\n|\\[nr]|\r?\n/g, '；')
+  .replace(/；\s*；/g, '；')
+  .trim();
+
+export const getWordMeaningLine = (word = {}) => {
+  const meaning = formatWordDefinition(word.meaning);
+  if (!meaning) return '暂无释义';
+  // Dictionary definitions often already include per-sense parts of speech.
+  return /^(?:n|v|vt|vi|a|adj|ad|adv|prep|pron|conj|int|interj|aux|num|art|det)\./i.test(meaning)
+    ? meaning : [word.pos, meaning].filter(Boolean).join(' ');
+};
+
+
+export const getEntryWordHints = (word = {}) => {
+  const practice = { label: '回忆练习', text: '暂时遮住释义，回想词义后再核对；需要提示时，可以选择“不认识”继续复习。' };
+  return [
+    { label: '词义回顾', text: formatWordDefinition(word.meaning) || '暂无释义，先跳过这个单词。' },
+    { label: '例句练习', text: word.example
+      ? `读一遍例句，试着说明 ${word.word || '这个词'} 在句中的含义，${word.exampleCn ? '再对照已有译文' : '再对照释义核对'}。`
+      : '当前没有例句，可先朗读单词并回忆已有释义。' },
+    practice,
+  ];
+};

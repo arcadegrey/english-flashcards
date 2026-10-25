@@ -1,3 +1,4 @@
+import { studyDayStart } from '../shared/studyDate.js';
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import catalog from '../worker/data/assignment-vocabulary.json' with { type: 'json' };
@@ -86,10 +87,10 @@ test('owning teacher sees synced test history and membership removal immediately
   } finally { f.sqlite.close(); }
 });
 
-test('weekly summaries use current members, UTC week bounds and weighted daily rates without double-counting saved tests', () => {
+test('weekly summaries use current members, Beijing week bounds and weighted daily rates without double-counting saved tests', () => {
   const range = weekRange('2026-10-22T16:00:00Z');
   assert.deepEqual(range, { start: '2026-10-19', end: '2026-10-26', last: '2026-10-25' });
-  assert.equal(weekRange('2026-10-25T23:59:59Z').start, range.start);
+  assert.equal(weekRange('2026-10-25T15:59:59Z').start, range.start);
   const students = [{ id: 2, display_name: '学生', study_history: JSON.stringify([
     { date: '2026-10-18', wordsLearned: 999 }, { date: range.start, wordsLearned: 3, examQuestionsAnswered: 10, examQuestionsCorrect: 8 },
     { date: '2026-10-20', readingQuestionsAnswered: 2, readingQuestionsCorrect: 1, examQuestionsAnswered: 2, examQuestionsCorrect: 0 },
@@ -101,6 +102,28 @@ test('weekly summaries use current members, UTC week bounds and weighted daily r
   assert.equal(result.totals.readingAccuracy, 50); assert.equal(result.students[0].activeDays, 2); assert.equal(result.totals.savedTests, 1);
   assert.equal(result.commonWords.length, 1); assert.equal(result.commonWords[0].students, 1); assert.equal(result.suggestedWords.length, 5);
   assert.equal(new Set(result.suggestedWords.map(word => word.id)).size, 5);
+});
+
+test('weekly report SQL includes Beijing Monday midnight and excludes the following midnight', async () => {
+  const f = await setup();
+  try {
+    const records = [
+      ['before-start', '2026-10-11T15:59:59.999Z'],
+      ['at-start', '2026-10-11T16:00:00.000Z'],
+      ['before-end', '2026-10-18T15:59:59.999Z'],
+      ['at-end', '2026-10-18T16:00:00.000Z'],
+    ];
+    for (const [id, completedAt] of records) {
+      const attempt = createExamAttempt(makeAttempt(id, 'quiz', completedAt), catalog);
+      f.sqlite.prepare('INSERT INTO exam_attempts (user_id,id,attempt_json,completed_at) VALUES (?,?,?,?)')
+        .run(2, id, JSON.stringify(attempt), completedAt);
+    }
+    const response = await f.api(1, `/classes/${f.classroom.id}/weekly-report?week=2026-10-12`);
+    assert.equal(response.status, 200);
+    assert.equal(response.body.totals.savedTests, 2);
+    assert.equal(response.body.students[0].activeDays, 2);
+    assert.equal(response.body.commonWords[0].errors, 2);
+  } finally { f.sqlite.close(); }
 });
 
 test('weekly reading weaknesses use the latest same question and do not count assignment review twice', async () => {
@@ -142,8 +165,8 @@ test('a report can publish an exact weak-word set with frozen server-scored assi
     await f.api(2, '/exam-attempts', 'POST', makeAttempt());
     const wordIds = (await f.api(1, report)).body.suggestedWords.map(word => word.id);
     const path = `/classes/${f.classroom.id}/word-assignments`;
-    // Keep this assignment in the report's UTC week, including Sunday runs.
-    const body = { category: 'all', wordIds, dueAt: new Date(Date.parse(`${weekRange().end}T00:00:00.000Z`) - 1).toISOString() };
+    // Keep this assignment in the report's Beijing week, including Sunday runs.
+    const body = { category: 'all', wordIds, dueAt: new Date(Date.parse(studyDayStart(weekRange().end)) - 1).toISOString() };
     const published = await f.api(1, path, 'POST', body);
     assert.equal(published.status, 201, JSON.stringify(published.body));
     assert.deepEqual(published.body.assignment.scope.wordIds, wordIds);

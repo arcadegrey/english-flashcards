@@ -1,0 +1,388 @@
+{
+  "4579": {
+    "word": "an odd fish",
+    "hint": {
+      "label": "用法提示",
+      "scope": "名词短语 · 古怪的人",
+      "text": "an odd fish 是英式、较旧的说法，指行为或性格有些古怪的人；虽然可用于玩笑，直接评价别人仍可能失礼，不是鱼类的分类名称。",
+      "exampleWords": [
+        "an odd fish"
+      ],
+      "examples": [
+        {
+          "en": "The neighbours called him an odd fish because of his unusual habits.",
+          "zh": "邻居们因他不寻常的习惯而说他是个怪人。"
+        },
+        {
+          "en": "In the old novel, the teacher describes the visitor as an odd fish.",
+          "zh": "在那本旧小说中，老师把来客描述成一个古怪的人。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "followup-4579-0",
+          "title": "牛津学习词典 · an odd fish",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/odd",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "id": "followup-4579-1",
+          "title": "牛津学习词典 · an odd fish",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fish_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "5674": {
+    "word": "including",
+    "hint": {
+      "label": "用法提示",
+      "scope": "介词 · 包括在内",
+      "text": "including 在本条例句中作介词，引出已包含在整体内的项目；其后的餐食和住宿本来就在总价之内，不是另行追加的费用。",
+      "exampleWords": [
+        "including"
+      ],
+      "examples": [
+        {
+          "en": "The ticket covers several activities, including a guided walk.",
+          "zh": "票价包含几项活动，包括一次导览步行。"
+        },
+        {
+          "en": "Five people, including our teacher, joined the discussion.",
+          "zh": "五个人参加了讨论，其中包括我们的老师。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "followup-5674-0",
+          "title": "牛津学习词典 · including",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/including",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "5896": {
+    "word": "earlier",
+    "hint": {
+      "label": "用法提示",
+      "scope": "形容词与副词 · 更早",
+      "text": "earlier 是 early 的比较级，修饰 train 等名词时表示更早的，修饰 arrived 等动作时表示更早地；比较时间先后时可接 than。",
+      "exampleWords": [
+        "earlier"
+      ],
+      "examples": [
+        {
+          "en": "An earlier train would give us more time in the city.",
+          "zh": "乘更早的火车会让我们在城里有更多时间。"
+        },
+        {
+          "en": "We arrived earlier than the rest of the group.",
+          "zh": "我们比组里的其他人更早到达。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "followup-5896-0",
+          "title": "牛津学习词典 · earlier",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/early_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "id": "followup-5896-1",
+          "title": "韦氏词典 · earlier",
+          "url": "https://www.merriam-webster.com/dictionary/earlier",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "5963": {
+    "word": "terms",
+    "hint": {
+      "label": "用法提示",
+      "scope": "复数名词 · 关系与条款",
+      "text": "on good terms with somebody 表示与某人关系融洽，基础例句教授的是关系义；terms 也可指协议条款或条件，不要把一个词的不同义项硬套到所有语境。",
+      "exampleWords": [
+        "terms"
+      ],
+      "examples": [
+        {
+          "en": "After the disagreement, the two families remained on good terms.",
+          "zh": "分歧过后，两家人仍保持融洽的关系。"
+        },
+        {
+          "en": "Read the payment terms before signing the order.",
+          "zh": "签署订单前要阅读付款条款。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "followup-5963-0",
+          "title": "牛津学习词典 · terms",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/term_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "id": "followup-5963-1",
+          "title": "韦氏词典 · terms",
+          "url": "https://www.merriam-webster.com/dictionary/terms",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "6009": {
+    "word": "thanks",
+    "hint": {
+      "label": "用法提示",
+      "scope": "名词与表达 · 感谢及 thanks to",
+      "text": "thanks 可表达谢意；thanks to 后接原因，常译为多亏或由于，不是向后面的原因直接说谢谢。基础例句是后一种用法。",
+      "exampleWords": [
+        "thanks"
+      ],
+      "examples": [
+        {
+          "en": "Thanks to careful planning, the move went smoothly.",
+          "zh": "多亏周密安排，搬家进行得很顺利。"
+        },
+        {
+          "en": "Please give my thanks to everyone who helped.",
+          "zh": "请向所有帮过忙的人转达我的谢意。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "followup-6009-0",
+          "title": "牛津学习词典 · thanks",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/thanks_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "id": "followup-6009-1",
+          "title": "韦氏词典 · thanks",
+          "url": "https://www.merriam-webster.com/dictionary/thanks",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "6127": {
+    "word": "dec",
+    "hint": {
+      "label": "用法提示",
+      "scope": "公司缩写 · Digital Equipment Corporation",
+      "text": "本条的 DEC 是数字设备公司的名称缩写，常读作 deck 的音，不是月份 Dec.。在日期中 Dec. 才通常代表 December，阅读时必须先看大小写和语境。",
+      "exampleWords": [
+        "dec"
+      ],
+      "examples": [
+        {
+          "en": "The museum displays a computer made by DEC.",
+          "zh": "博物馆展出了一台由数字设备公司制造的计算机。"
+        },
+        {
+          "en": "She kept an old DEC manual on her bookshelf.",
+          "zh": "她在书架上保留了一本旧的数字设备公司手册。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "followup-6127-0",
+          "title": "计算机历史博物馆 · dec",
+          "url": "https://www.computerhistory.org/brochures/d-f/digital-equipment-corporation-dec/",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "id": "followup-6127-1",
+          "title": "CMU 发音词典 · dec",
+          "url": "https://github.com/cmusphinx/cmudict",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "6260": {
+    "word": "proposed",
+    "hint": {
+      "label": "用法提示",
+      "scope": "动词与形容词 · 提出与拟议中的",
+      "text": "proposed 可作 propose 的过去式，表示某人提出了建议；在 proposed changes 等结构中也可表示拟议中的。拟议并不等于已获得批准或已经实施。",
+      "exampleWords": [
+        "proposed"
+      ],
+      "examples": [
+        {
+          "en": "The committee proposed a simpler registration form.",
+          "zh": "委员会提议采用一份更简单的登记表。"
+        },
+        {
+          "en": "Residents discussed the proposed changes to the park.",
+          "zh": "居民们讨论了公园拟议中的改动。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "followup-6260-0",
+          "title": "牛津学习词典 · proposed",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/propose",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "6413": {
+    "word": "charlie",
+    "hint": {
+      "label": "用法提示",
+      "scope": "专有名词 · 人名 Charlie",
+      "text": "基础释义和例句中的 Charlie 是 Charles 的昵称，作为人名应大写；小写 charlie 在较旧英式口语中另有傻瓜义，不能把姓名例句解释成这个贬义。",
+      "exampleWords": [
+        "charlie"
+      ],
+      "examples": [
+        {
+          "en": "Charlie helped his sister carry the shopping bags.",
+          "zh": "查理帮妹妹提购物袋。"
+        },
+        {
+          "en": "We invited Charlie to our family picnic.",
+          "zh": "我们邀请查理参加家庭野餐。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "followup-6413-0",
+          "title": "牛津学习词典 · charlie",
+          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/charlie_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "6661": {
+    "word": "freshman",
+    "hint": {
+      "label": "用法提示",
+      "scope": "名词与修饰用法 · 新生及新任者",
+      "text": "freshman 在美式英语中常指高中或大学一年级学生，也可修饰 senator 等表示初任该职位的人；基础例句中的 freshman senator 不是学生参议员。",
+      "exampleWords": [
+        "freshman"
+      ],
+      "examples": [
+        {
+          "en": "A freshman senator visited the local library.",
+          "zh": "一位新任参议员参观了当地图书馆。"
+        },
+        {
+          "en": "The college runs a writing course for every freshman.",
+          "zh": "学院为每位一年级新生开设写作课。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "followup-6661-0",
+          "title": "牛津学习词典 · freshman",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/freshman",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "id": "followup-6661-1",
+          "title": "韦氏词典 · freshman",
+          "url": "https://www.merriam-webster.com/dictionary/freshman",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "6682": {
+    "word": "korea",
+    "hint": {
+      "label": "用法提示",
+      "scope": "专有名词 · 朝鲜半岛地区",
+      "text": "Korea 作为地理或历史名称可指朝鲜半岛地区；谈具体的现代国家时，用 North Korea 或 South Korea 更明确。基础例句采用地图语境，不从不明确的上下文擅自推断南北。",
+      "exampleWords": [
+        "korea"
+      ],
+      "examples": [
+        {
+          "en": "The students found Korea on a map of East Asia.",
+          "zh": "学生们在东亚地图上找到了朝鲜半岛。"
+        },
+        {
+          "en": "The book contains historical maps of Korea.",
+          "zh": "这本书收录了朝鲜半岛的历史地图。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "followup-6682-0",
+          "title": "牛津学习词典 · korea",
+          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/korea",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "id": "followup-6682-1",
+          "title": "柯林斯词典 · korea",
+          "url": "https://www.collinsdictionary.com/dictionary/english/korea",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "6736": {
+    "word": "faster",
+    "hint": {
+      "label": "用法提示",
+      "scope": "形容词与副词比较级 · 更快",
+      "text": "faster 是 fast 的比较级；描述交通工具等事物可表示更快的，修饰 walk 等动作则表示更快地。网球场地的 faster 指球的运行或比赛节奏更快。",
+      "exampleWords": [
+        "faster"
+      ],
+      "examples": [
+        {
+          "en": "The faster train reaches the coast before noon.",
+          "zh": "速度更快的那班火车在中午前到达海边。"
+        },
+        {
+          "en": "The team moved faster after clearing the path.",
+          "zh": "清理道路后，队伍前进得更快了。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "followup-6736-0",
+          "title": "牛津学习词典 · faster",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fast_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "id": "followup-6736-1",
+          "title": "韦氏词典 · faster",
+          "url": "https://www.merriam-webster.com/dictionary/faster",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  }
+}

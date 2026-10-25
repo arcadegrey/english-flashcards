@@ -43,6 +43,8 @@ const copyPublicAppAssets = () => ({
           cp(path.join(publicDir, entry.name), path.join(outDir, entry.name), {
             recursive: true,
             force: true,
+            // Original design sheets are retained in source, never shipped.
+            filter: source => !/(?:-source|-alpha|sprite[^/]*)\.png$/.test(source),
           })
         )
     )
@@ -71,22 +73,6 @@ export default defineConfig({
     copyPublicDir: false,
     minify: 'esbuild',
     reportCompressedSize: false,
-    // Keep each added content batch within the PWA precache asset limit.
-    // Static imports retain the existing startup and offline hint behavior.
-    rolldownOptions: {
-      output: {
-        codeSplitting: {
-          groups: [
-            { name: 'word-notes-four', test: /[\\/]src[\\/]data[\\/]expansionFourWordNotes\.js$/ },
-            { name: 'word-notes-five', test: /[\\/]src[\\/]data[\\/]expansionFiveWordNotes\.js$/ },
-            { name: 'word-notes-six', test: /[\\/]src[\\/]data[\\/]expansionSixWordNotes\.js$/ },
-            { name: 'word-notes-seven', test: /[\\/]src[\\/]data[\\/]expansionSevenWordNotes\.js$/ },
-            { name: 'word-notes-eight', test: /[\\/]src[\\/]data[\\/]expansionEightWordNotes\.js$/ },
-            { name: 'word-notes-nine', test: /[\\/]src[\\/]data[\\/]expansionNineWordNotes\.js$/ },
-          ],
-        },
-      },
-    },
   },
   server: {
     watch: {
@@ -112,8 +98,8 @@ export default defineConfig({
         description: '四六级核心词汇学习应用，支持卡片学习和测验模式',
         start_url: '/',
         scope: '/',
-        theme_color: '#8b5cf6',
-        background_color: '#f5f7fa',
+        theme_color: '#4F7CFF',
+        background_color: '#F7FAFF',
         display: 'standalone',
         orientation: 'portrait',
         lang: 'zh-CN',

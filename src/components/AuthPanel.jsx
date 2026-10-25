@@ -115,16 +115,17 @@ function AuthPanel({
     }
   };
 
-  const handleLogout = async () => {
+  const handleLogout = async (allDevices = false) => {
+    if (busy) return;
     if (!onLogout) return;
     setBusy(true);
     setError('');
     setMessage('');
     try {
-      await onLogout();
+      await onLogout({ allDevices });
       setEmail('');
       setVerificationCode('');
-      setMessage('已退出登录。');
+      setMessage(allDevices ? '已退出全部设备。' : '已退出当前设备。');
     } catch (logoutError) {
       setError(normalizeError(logoutError?.message || logoutError));
     } finally {
@@ -236,12 +237,13 @@ function AuthPanel({
               <button
                 type="button"
                 disabled={busy}
-                onClick={handleLogout}
+                onClick={() => handleLogout(false)}
                 className="auth-logout-button"
               >
                 <AuthIcon name="logout" />
-                退出登录
+                退出当前设备
               </button>
+              <button type="button" disabled={busy} onClick={() => handleLogout(true)} className="auth-logout-button">退出全部设备</button>
               <span className="auth-storage-note"><AuthIcon name="shield" />{isSynced ? '学习记录已保存至云端' : '学习记录保留在当前设备'}</span>
             </div>
           </div>

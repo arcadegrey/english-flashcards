@@ -1,5 +1,6 @@
 import { VOCABULARY_AUDIO_UPDATES } from './vocabularyAudioUpdates.js';
 import { PRACTICAL_VOCABULARY_AUDIO } from './practicalVocabularyAudio.js';
+import { FOLLOWUP_VOCABULARY_AUDIO } from './followupVocabularyAudio.js';
 
 const voices = new Set(['af_bella', 'am_michael', 'bf_emma', 'bm_george']);
 export const AUDIO_UPDATES_BASE_URL = (import.meta.env?.VITE_AUDIO_UPDATES_BASE_URL
@@ -8,6 +9,10 @@ export const AUDIO_UPDATES_BASE_URL = (import.meta.env?.VITE_AUDIO_UPDATES_BASE_
 export function correctedVocabularyAudioUrl(word, field, voice) {
   if (!word || !['word', 'example'].includes(field) || !voices.has(voice)) return null;
   const id = String(word.id ?? '');
+  const followup = FOLLOWUP_VOCABULARY_AUDIO[id]?.[field];
+  if (followup && word[field] === followup.text) {
+    return `${AUDIO_UPDATES_BASE_URL}/2026-10-25-followup/${field}/${voice}/${id}-${followup.revision}.mp3`;
+  }
   const practical = Object.hasOwn(PRACTICAL_VOCABULARY_AUDIO, id);
   const updates = practical ? PRACTICAL_VOCABULARY_AUDIO : VOCABULARY_AUDIO_UPDATES;
   if (!Object.hasOwn(updates, id)) return null;

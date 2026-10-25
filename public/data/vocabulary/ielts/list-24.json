@@ -1210,9 +1210,9 @@
   {
     "id": 4322,
     "word": "plunge whole-heartedly",
-    "phonetic": "",
-    "pos": "v.",
-    "meaning": "全心投入",
+    "phonetic": "/plʌndʒ ˌhəʊlˈhɑːtɪdli/",
+    "pos": "v. phr.",
+    "meaning": "全身心投入（通常接 into；wholeheartedly 常连写）",
     "example": "She plunged whole-heartedly into her studies.",
     "exampleCn": "她全身心地投入到了学习中。",
     "category": "ielts",
@@ -1518,8 +1518,8 @@
   {
     "id": 4340,
     "word": "take a bow",
-    "phonetic": "",
-    "pos": "v.",
+    "phonetic": "/teɪk ə ˈbaʊ/",
+    "pos": "v. phr.",
     "meaning": "鞠躬谢幕",
     "example": "The cast came on stage to take a bow.",
     "exampleCn": "全体演员走上舞台鞠躬谢幕。",

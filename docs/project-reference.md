@@ -119,3 +119,10 @@ VITE_EXAMPLE_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/
 
 - CSV parser is custom and does not fully cover complex Excel dialects or semicolon-delimited files.
 - `public/images/ielts-nature-geography-bg.png` may still be an old uncommitted-bound PNG; CSS currently uses WebP.
+# 2026-10-25 稳定性/提示加载补充
+
+后续 73 条基础候选已复核：来源、音标方法、23 条例句和 11 条提示更新、400 个 R2 版本音频及兼容要求见 `vocabulary-followup-73-2026-10-25.md`。原 38 条义项/语境课程清单继续独立跟踪。
+
+词库合并使用 `src/utils/vocabularyMerge.js`，按稳定 ID 保留同形记录；学习日期使用 `shared/studyDate.js` 的 Asia/Shanghai 口径，旧日期汇总不搬移。新登录保留其他有效会话，`POST /api/auth/logout` 退出当前会话，`POST /api/auth/logout-all` 验证当前账号后退出其全部会话。复习计划按 `lastReviewed` 防止旧设备覆盖新记录。
+
+提示源码继续通过 `src/utils/wordHints.js` 编译，运行时通过 `src/hooks/useWordHints.js` 与公共 JSON 批次按需加载，不再将整份提示数据静态打进 JS。发布需包含 `public/data/word-hints/` 与对应 manifest；没有额外 D1 迁移或新音频。维护、兼容与验证见 `optimization-2026-10-25.md`。

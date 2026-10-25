@@ -1,0 +1,4635 @@
+{
+  "date": "2026-10-25",
+  "scope": "明确73条基础候选的逐条来源复核和修复；不关闭另一份38条义项/语境课程清单，不等同于独立语言专家审校。",
+  "baselineSha256": "c4ac1015082a95c446a207aa09cba95c80b476a68de2e0741915ea8a3ae7aa5e",
+  "targetIds": [
+    4322,
+    4340,
+    4347,
+    4544,
+    4579,
+    4609,
+    4698,
+    4718,
+    4719,
+    4720,
+    4842,
+    5649,
+    5674,
+    5873,
+    5896,
+    5900,
+    5941,
+    5947,
+    5963,
+    6009,
+    6030,
+    6069,
+    6080,
+    6127,
+    6148,
+    6241,
+    6246,
+    6258,
+    6260,
+    6287,
+    6329,
+    6330,
+    6396,
+    6397,
+    6407,
+    6413,
+    6441,
+    6480,
+    6569,
+    6581,
+    6604,
+    6634,
+    6661,
+    6680,
+    6682,
+    6736,
+    6739,
+    6770,
+    6774,
+    6793,
+    6845,
+    6856,
+    6911,
+    6926,
+    6931,
+    6939,
+    6958,
+    7009,
+    7013,
+    7016,
+    7018,
+    7055,
+    7070,
+    7118,
+    7155,
+    7459,
+    7720,
+    8175,
+    8267,
+    8367,
+    8377,
+    8407,
+    8504
+  ],
+  "summary": {
+    "reviewed": 73,
+    "missingPhoneticsFilled": 72,
+    "senseAlignmentReviewed": 1,
+    "exampleRewrites": 23
+  },
+  "reviews": [
+    {
+      "id": 4322,
+      "word": "plunge whole-heartedly",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-phrase",
+      "accent": "en-GB",
+      "before": {
+        "id": 4322,
+        "word": "plunge whole-heartedly",
+        "phonetic": "",
+        "pos": "v.",
+        "meaning": "全心投入",
+        "example": "She plunged whole-heartedly into her studies.",
+        "exampleCn": "她全身心地投入到了学习中。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "24",
+        "ieltsLists": [
+          "24"
+        ]
+      },
+      "after": {
+        "id": 4322,
+        "word": "plunge whole-heartedly",
+        "phonetic": "/plʌndʒ ˌhəʊlˈhɑːtɪdli/",
+        "pos": "v. phr.",
+        "meaning": "全身心投入（通常接 into；wholeheartedly 常连写）",
+        "example": "She plunged whole-heartedly into her studies.",
+        "exampleCn": "她全身心地投入到了学习中。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "24",
+        "ieltsLists": [
+          "24"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/plunge_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/wholeheartedly",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 4340,
+      "word": "take a bow",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-phrase",
+      "accent": "en-GB",
+      "before": {
+        "id": 4340,
+        "word": "take a bow",
+        "phonetic": "",
+        "pos": "v.",
+        "meaning": "鞠躬谢幕",
+        "example": "The cast came on stage to take a bow.",
+        "exampleCn": "全体演员走上舞台鞠躬谢幕。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "24",
+        "ieltsLists": [
+          "24"
+        ]
+      },
+      "after": {
+        "id": 4340,
+        "word": "take a bow",
+        "phonetic": "/teɪk ə ˈbaʊ/",
+        "pos": "v. phr.",
+        "meaning": "鞠躬谢幕",
+        "example": "The cast came on stage to take a bow.",
+        "exampleCn": "全体演员走上舞台鞠躬谢幕。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "24",
+        "ieltsLists": [
+          "24"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos"
+      ],
+      "sources": [
+        {
+          "url": "https://www.merriam-webster.com/dictionary/take%20a%20bow",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/bow",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 4347,
+      "word": "raw material",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 4347,
+        "word": "raw material",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "原材料",
+        "example": "Oil is a key raw material for the chemical industry.",
+        "exampleCn": "石油是化学工业的关键原材料。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "25",
+        "ieltsLists": [
+          "25"
+        ]
+      },
+      "after": {
+        "id": 4347,
+        "word": "raw material",
+        "phonetic": "/ˌrɔː məˈtɪəriəl/",
+        "pos": "n. phr.",
+        "meaning": "原材料",
+        "example": "Oil is a key raw material for the chemical industry.",
+        "exampleCn": "石油是化学工业的关键原材料。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "25",
+        "ieltsLists": [
+          "25"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/raw-material",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 4544,
+      "word": "alcoholic beverage",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-phrase",
+      "accent": "en-GB",
+      "before": {
+        "id": 4544,
+        "word": "alcoholic beverage",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "酒精饮料",
+        "example": "Beer is a type of alcoholic beverage.",
+        "exampleCn": "啤酒是一种酒精饮料。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "30",
+        "ieltsLists": [
+          "30"
+        ]
+      },
+      "after": {
+        "id": 4544,
+        "word": "alcoholic beverage",
+        "phonetic": "/ˌælkəˈhɒlɪk ˈbevərɪdʒ/",
+        "pos": "n. phr.",
+        "meaning": "酒精饮料",
+        "example": "Beer is a type of alcoholic beverage.",
+        "exampleCn": "啤酒是一种酒精饮料。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "30",
+        "ieltsLists": [
+          "30"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/alcoholic_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/beverage",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 4579,
+      "word": "an odd fish",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-phrase",
+      "accent": "en-GB",
+      "before": {
+        "id": 4579,
+        "word": "an odd fish",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "古怪的人",
+        "example": "He is an odd fish, but everyone likes him.",
+        "exampleCn": "他是个古怪的人，但大家都喜欢他。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "31",
+        "ieltsLists": [
+          "31"
+        ]
+      },
+      "after": {
+        "id": 4579,
+        "word": "an odd fish",
+        "phonetic": "/ən ɒd ˈfɪʃ/",
+        "pos": "n. phr.",
+        "meaning": "古怪的人（英式、较旧的非正式说法，称人时可能失礼）",
+        "example": "He is an odd fish, but everyone likes him.",
+        "exampleCn": "他是个古怪的人，但大家都喜欢他。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "31",
+        "ieltsLists": [
+          "31"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/odd",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fish_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 4609,
+      "word": "soy sauce",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 4609,
+        "word": "soy sauce",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "酱油",
+        "example": "Add a dash of soy sauce to the stir-fry.",
+        "exampleCn": "往炒菜里加一点点酱油。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "32",
+        "ieltsLists": [
+          "32"
+        ]
+      },
+      "after": {
+        "id": 4609,
+        "word": "soy sauce",
+        "phonetic": "/ˌsɔɪ ˈsɔːs/",
+        "pos": "n. phr.",
+        "meaning": "酱油",
+        "example": "Add a dash of soy sauce to the stir-fry.",
+        "exampleCn": "往炒菜里加一点点酱油。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "32",
+        "ieltsLists": [
+          "32"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/soy-sauce",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 4698,
+      "word": "span of life",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-phrase",
+      "accent": "en-GB",
+      "before": {
+        "id": 4698,
+        "word": "span of life",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "寿命/一生",
+        "example": "The span of life varies among different species.",
+        "exampleCn": "不同物种的寿命各不相同。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "35",
+        "ieltsLists": [
+          "35"
+        ]
+      },
+      "after": {
+        "id": 4698,
+        "word": "span of life",
+        "phonetic": "/ˌspæn əv ˈlaɪf/",
+        "pos": "n. phr.",
+        "meaning": "寿命/一生",
+        "example": "The span of life varies among different species.",
+        "exampleCn": "不同物种的寿命各不相同。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "35",
+        "ieltsLists": [
+          "35"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/span_2",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/life_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 4718,
+      "word": "traffic regulations",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-phrase",
+      "accent": "en-GB",
+      "before": {
+        "id": 4718,
+        "word": "traffic regulations",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "交通规则",
+        "example": "Drivers must obey traffic regulations.",
+        "exampleCn": "司机必须遵守交通规则。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "36",
+        "ieltsLists": [
+          "36"
+        ]
+      },
+      "after": {
+        "id": 4718,
+        "word": "traffic regulations",
+        "phonetic": "/ˈtræfɪk ˌreɡjuˈleɪʃnz/",
+        "pos": "n. phr.",
+        "meaning": "交通规则",
+        "example": "Drivers must obey traffic regulations.",
+        "exampleCn": "司机必须遵守交通规则。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "36",
+        "ieltsLists": [
+          "36"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/traffic_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/regulation",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 4719,
+      "word": "traffic jam",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 4719,
+        "word": "traffic jam",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "交通堵塞",
+        "example": "We were stuck in a traffic jam for over an hour.",
+        "exampleCn": "我们在交通堵塞中被堵了一个多小时。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "36",
+        "ieltsLists": [
+          "36"
+        ]
+      },
+      "after": {
+        "id": 4719,
+        "word": "traffic jam",
+        "phonetic": "/ˈtræfɪk dʒæm/",
+        "pos": "n. phr.",
+        "meaning": "交通堵塞",
+        "example": "We were stuck in a traffic jam for over an hour.",
+        "exampleCn": "我们在交通堵塞中被堵了一个多小时。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "36",
+        "ieltsLists": [
+          "36"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/traffic-jam",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 4720,
+      "word": "traffic congestion",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-phrase",
+      "accent": "en-GB",
+      "before": {
+        "id": 4720,
+        "word": "traffic congestion",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "交通拥堵",
+        "example": "Traffic congestion is a major problem in big cities.",
+        "exampleCn": "交通拥堵是大城市的一个主要问题。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "36",
+        "ieltsLists": [
+          "36"
+        ]
+      },
+      "after": {
+        "id": 4720,
+        "word": "traffic congestion",
+        "phonetic": "/ˈtræfɪk kənˈdʒestʃən/",
+        "pos": "n. phr.",
+        "meaning": "交通拥堵",
+        "example": "Traffic congestion is a major problem in big cities.",
+        "exampleCn": "交通拥堵是大城市的一个主要问题。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "36",
+        "ieltsLists": [
+          "36"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/traffic_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/congestion",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 4842,
+      "word": "establish a nation",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-phrase",
+      "accent": "en-GB",
+      "before": {
+        "id": 4842,
+        "word": "establish a nation",
+        "phonetic": "",
+        "pos": "v.",
+        "meaning": "建国/建立国家",
+        "example": "They worked to establish a nation free from colonial rule.",
+        "exampleCn": "他们为建立摆脱殖民统治的国家而奋斗。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "39",
+        "ieltsLists": [
+          "39"
+        ]
+      },
+      "after": {
+        "id": 4842,
+        "word": "establish a nation",
+        "phonetic": "/ɪˈstæblɪʃ ə ˈneɪʃn/",
+        "pos": "v. phr.",
+        "meaning": "建国/建立国家",
+        "example": "They worked to establish a nation free from colonial rule.",
+        "exampleCn": "他们为建立摆脱殖民统治的国家而奋斗。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "39",
+        "ieltsLists": [
+          "39"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/establish",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/nation",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 5649,
+      "word": "others",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-inflection",
+      "accent": "en-GB",
+      "before": {
+        "id": 5649,
+        "word": "others",
+        "phonetic": "",
+        "pos": "pron.",
+        "meaning": "pron. 其他人",
+        "example": "Some people prefer strong black tea while others cannot start the day without coffee.",
+        "exampleCn": "有些人喜欢浓红茶，而另一些人没有咖啡就无法开始一天。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5649,
+        "word": "others",
+        "phonetic": "/ˈʌðəz/",
+        "pos": "pron.",
+        "meaning": "其他人；其他事物（other 的复数代词用法）",
+        "example": "Some people prefer strong black tea while others cannot start the day without coffee.",
+        "exampleCn": "有些人喜欢浓红茶，而另一些人没有咖啡就无法开始一天。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/other",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 5674,
+      "word": "including",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 5674,
+        "word": "including",
+        "phonetic": "",
+        "pos": "prep.",
+        "meaning": "prep. 包含, 包括\\n[经] 包括, 算入",
+        "example": "The price of the guided tour covers everything you need, including meals and hotel stays.",
+        "exampleCn": "导游团的价格涵盖了所需的一切，包括餐食和酒店住宿。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5674,
+        "word": "including",
+        "phonetic": "/ɪnˈkluːdɪŋ/",
+        "pos": "prep.",
+        "meaning": "包括；包含……在内",
+        "example": "The price of the guided tour covers everything you need, including meals and hotel stays.",
+        "exampleCn": "导游团的价格涵盖了所需的一切，包括餐食和酒店住宿。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/including",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 5873,
+      "word": "sales",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-inflection",
+      "accent": "en-GB",
+      "before": {
+        "id": 5873,
+        "word": "sales",
+        "phonetic": "",
+        "pos": "n./adj.",
+        "meaning": "n. 销售活动；销售额；销量；adj. 销售的",
+        "example": "They tried to boost sales.",
+        "exampleCn": "他们试图提高销售额。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5873,
+        "word": "sales",
+        "phonetic": "/seɪlz/",
+        "pos": "n./adj.",
+        "meaning": "n. 销售活动；销售额；销量；adj. 销售的",
+        "example": "They tried to boost sales.",
+        "exampleCn": "他们试图提高销售额。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "changedFields": [
+        "phonetic"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/sale",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/sales",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 5896,
+      "word": "earlier",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-inflection",
+      "accent": "en-GB",
+      "before": {
+        "id": 5896,
+        "word": "earlier",
+        "phonetic": "",
+        "pos": "adj.",
+        "meaning": "a. 早的；初期的",
+        "example": "A fashion popular in earlier times.",
+        "exampleCn": "早期流行的一种时尚。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5896,
+        "word": "earlier",
+        "phonetic": "/ˈɜːliə(r)/",
+        "pos": "adj./adv.",
+        "meaning": "更早的；较早的；更早地（early 的比较级）",
+        "example": "We caught an earlier train to avoid the crowds.",
+        "exampleCn": "我们乘坐了更早的一班火车，以避开人群。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/early_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/earlier",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 5900,
+      "word": "planning",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 5900,
+        "word": "planning",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 计划的制订, 策划, 设计, 规划\\n[计] 计划, 规划",
+        "example": "The planning was more fun than the trip itself.",
+        "exampleCn": "计划比旅行本身更有趣。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5900,
+        "word": "planning",
+        "phonetic": "/ˈplænɪŋ/",
+        "pos": "n.",
+        "meaning": "规划；筹划；制定计划的过程",
+        "example": "The planning was more fun than the trip itself.",
+        "exampleCn": "计划比旅行本身更有趣。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/planning",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 5941,
+      "word": "states",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-inflection",
+      "accent": "en-GB",
+      "before": {
+        "id": 5941,
+        "word": "states",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 州；国家；状态（state 的复数）；the States 指美国",
+        "example": "He has travelled to all fifty states and has countless stories from his road trips.",
+        "exampleCn": "他走遍了全部五十个州，积累了无数公路旅行的故事。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5941,
+        "word": "states",
+        "phonetic": "/steɪts/",
+        "pos": "n.",
+        "meaning": "n. 州；国家；状态（state 的复数）；the States 指美国",
+        "example": "He has travelled to all fifty states and has countless stories from his road trips.",
+        "exampleCn": "他走遍了全部五十个州，积累了无数公路旅行的故事。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "changedFields": [
+        "phonetic"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/state_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 5947,
+      "word": "works",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-inflection",
+      "accent": "en-GB",
+      "before": {
+        "id": 5947,
+        "word": "works",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 作品；工厂；机器的活动部件；the works（非正式）全套东西、所有配料",
+        "example": "A hotdog with the works.",
+        "exampleCn": "一个加了全部配料的热狗。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5947,
+        "word": "works",
+        "phonetic": "/wɜːks/",
+        "pos": "n.",
+        "meaning": "n. 作品；工厂；机器的活动部件；the works（非正式）全套东西、所有配料",
+        "example": "I ordered a hot dog with the works.",
+        "exampleCn": "我点了一个加上全部配料的热狗。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/work_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/the%20works",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 5963,
+      "word": "terms",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-inflection",
+      "accent": "en-GB",
+      "before": {
+        "id": 5963,
+        "word": "terms",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 条件, 条款, 费用, 价钱, 关系, 地位, 交谊\\n[经] 条件",
+        "example": "On good terms with her in-laws.",
+        "exampleCn": "与她的姻亲和睦相处。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5963,
+        "word": "terms",
+        "phonetic": "/tɜːmz/",
+        "pos": "n.",
+        "meaning": "条件；条款；关系（如 on good terms 关系融洽）；术语（term 的复数）",
+        "example": "She is on good terms with her neighbours.",
+        "exampleCn": "她和邻居们关系融洽。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/term_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/terms",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 6009,
+      "word": "thanks",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6009,
+        "word": "thanks",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 感谢, 谢意, 谢忱\\ninterj. 谢谢, 谢谢你",
+        "example": "Thanks to hard work it was a great success.",
+        "exampleCn": "由于努力工作，它取得了巨大的成功。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 6009,
+        "word": "thanks",
+        "phonetic": "/θæŋks/",
+        "pos": "n./interj.",
+        "meaning": "感谢；谢谢；thanks to 表示由于、多亏",
+        "example": "Thanks to hard work it was a great success.",
+        "exampleCn": "由于努力工作，它取得了巨大的成功。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/thanks_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/thanks",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6030,
+      "word": "inc",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6030,
+        "word": "inc",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "a. 根据法律组成的公司, 公司",
+        "example": "She started her own software company, Bright Future Inc, right after graduating from university.",
+        "exampleCn": "她大学一毕业就创办了自己的软件公司 Bright Future Inc。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 6030,
+        "word": "inc",
+        "phonetic": "/ɪŋk/",
+        "pos": "abbr.",
+        "meaning": "incorporated 的缩写，通常写作 Inc.，用于美国公司名称之后",
+        "example": "She founded a software company called Bright Future Inc.",
+        "exampleCn": "她创办了一家名为 Bright Future Inc. 的软件公司。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/inc_2",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6069,
+      "word": "corp",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-arpabet-en-US",
+      "accent": "en-US",
+      "before": {
+        "id": 6069,
+        "word": "corp",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "公司",
+        "example": "The small corp grew quickly after launching its new software product.",
+        "exampleCn": "这家小公司推出新软件产品后迅速发展。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 6069,
+        "word": "corp",
+        "phonetic": "/kɔːrp/",
+        "pos": "abbr.",
+        "meaning": "corporation 的缩写，通常写作 Corp.，表示公司；此处不取 corporal 的军事义",
+        "example": "Green Valley Corp. grew quickly after launching its new software product.",
+        "exampleCn": "Green Valley 公司推出新软件产品后迅速发展。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/corp",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/corp",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://github.com/cmusphinx/cmudict",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 6080,
+      "word": "significantly",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6080,
+        "word": "significantly",
+        "phonetic": "",
+        "pos": "adv.",
+        "meaning": "显著地；明显地；意味深长地",
+        "example": "The two groups differed significantly.",
+        "exampleCn": "两组之间存在显著差异。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 6080,
+        "word": "significantly",
+        "phonetic": "/sɪɡˈnɪfɪkəntli/",
+        "pos": "adv.",
+        "meaning": "显著地；明显地；意味深长地",
+        "example": "The two groups differed significantly.",
+        "exampleCn": "两组之间存在显著差异。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "changedFields": [
+        "phonetic"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/significantly",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6127,
+      "word": "dec",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-arpabet-en-US",
+      "accent": "en-US",
+      "before": {
+        "id": 6127,
+        "word": "dec",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "美国数字电子公司\\n[计] 数字设备公司",
+        "example": "She worked as a software engineer at DEC before the company was taken over by a larger firm.",
+        "exampleCn": "她在 DEC 被更大的公司收购之前在那里担任软件工程师。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 6127,
+        "word": "dec",
+        "phonetic": "/dɛk/",
+        "pos": "abbr.",
+        "meaning": "美国数字设备公司（Digital Equipment Corporation，通常写作 DEC；本条例句为公司名，不是月份缩写 Dec.）",
+        "example": "She worked as a software engineer at DEC before the company was taken over by a larger firm.",
+        "exampleCn": "她在 DEC 被更大的公司收购之前在那里担任软件工程师。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.computerhistory.org/brochures/d-f/digital-equipment-corporation-dec/",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://github.com/cmusphinx/cmudict",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 6148,
+      "word": "remaining",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6148,
+        "word": "remaining",
+        "phonetic": "",
+        "pos": "adj.",
+        "meaning": "剩余的",
+        "example": "Saved the remaining sandwiches for supper.",
+        "exampleCn": "把剩下的三明治留作晚餐。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 6148,
+        "word": "remaining",
+        "phonetic": "/rɪˈmeɪnɪŋ/",
+        "pos": "adj.",
+        "meaning": "剩余的",
+        "example": "We saved the remaining sandwiches for supper.",
+        "exampleCn": "我们把剩下的三明治留作晚餐。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/remaining",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6241,
+      "word": "ceo",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6241,
+        "word": "ceo",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "abbr. 首席执行官；执行总裁（chief executive officer）",
+        "example": "The CEO announced that the company would open offices in three new countries next year.",
+        "exampleCn": "首席执行官宣布公司明年将在三个新的国家开设办事处。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6241,
+        "word": "ceo",
+        "phonetic": "/ˌsiː iː ˈəʊ/",
+        "pos": "n.",
+        "meaning": "首席执行官（通常写作 CEO，为 chief executive officer 的缩写）",
+        "example": "The CEO announced that the company would open offices in three new countries next year.",
+        "exampleCn": "首席执行官宣布公司明年将在三个新的国家开设办事处。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ceo",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6246,
+      "word": "stairs",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6246,
+        "word": "stairs",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 楼梯",
+        "example": "She ran up the stairs two at a time to answer the ringing phone on the second floor.",
+        "exampleCn": "她一步两级地跑上楼梯去接二楼响着的电话。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6246,
+        "word": "stairs",
+        "phonetic": "/steəz/",
+        "pos": "n.",
+        "meaning": "楼梯（复数形式；一级台阶常用 step）",
+        "example": "She ran up the stairs two at a time to answer the ringing phone on the second floor.",
+        "exampleCn": "她一步两级地跑上楼梯去接二楼响着的电话。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://dictionary.cambridge.org/us/dictionary/essential-british-english/stairs",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6258,
+      "word": "online",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6258,
+        "word": "online",
+        "phonetic": "",
+        "pos": "adj./adv.",
+        "meaning": "adj. 在线的；联网的；adv. 在网上；在线地",
+        "example": "She prefers to do her grocery shopping online rather than going to the crowded supermarket.",
+        "exampleCn": "她更喜欢在网上买菜而不是去拥挤的超市。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6258,
+        "word": "online",
+        "phonetic": "/ˌɒnˈlaɪn/",
+        "pos": "adj./adv.",
+        "meaning": "adj. 在线的；联网的；adv. 在网上；在线地",
+        "example": "She prefers to do her grocery shopping online rather than going to the crowded supermarket.",
+        "exampleCn": "她更喜欢在网上买菜而不是去拥挤的超市。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/online_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6260,
+      "word": "proposed",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-inflection",
+      "accent": "en-GB",
+      "before": {
+        "id": 6260,
+        "word": "proposed",
+        "phonetic": "",
+        "pos": "v.",
+        "meaning": "a. 被提议的；所推荐的",
+        "example": "The senator proposed to abolish the sales tax.",
+        "exampleCn": "参议员提议废除销售税。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6260,
+        "word": "proposed",
+        "phonetic": "/prəˈpəʊzd/",
+        "pos": "v./adj.",
+        "meaning": "v. 提议；提出（propose 的过去式或过去分词）；adj. 拟议中的",
+        "example": "The senator proposed a change to the tax rules.",
+        "exampleCn": "这位参议员提议修改税收规定。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/propose",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6287,
+      "word": "oct",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "expanded-abbreviation",
+      "accent": "en-GB",
+      "before": {
+        "id": 6287,
+        "word": "oct",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "abbr. 十月（October）",
+        "example": "The new academic term begins in early Oct and runs right through until the end of December.",
+        "exampleCn": "新学期从十月初开始一直持续到十二月底。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6287,
+        "word": "oct",
+        "phonetic": "/ɒkˈtəʊbə(r)/",
+        "pos": "abbr.",
+        "meaning": "十月（October 的书面缩写，通常写作 Oct.，朗读时读全称）",
+        "example": "The new term begins in early Oct. and ends in December.",
+        "exampleCn": "新学期于十月初开始，十二月结束。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/october",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。月份缩写按全称朗读，音标标注全称读法。"
+    },
+    {
+      "id": 6329,
+      "word": "dna",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6329,
+        "word": "dna",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "脱氧核糖核酸\\n[计] 无效数据, 数字网络体系结构, 分布式网络体系结构",
+        "example": "DNA is the king of molecules.",
+        "exampleCn": "DNA是分子之王。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6329,
+        "word": "dna",
+        "phonetic": "/ˌdiː en ˈeɪ/",
+        "pos": "n.",
+        "meaning": "脱氧核糖核酸（通常写作 DNA，是携带遗传信息的分子）",
+        "example": "The laboratory compared DNA from the two samples.",
+        "exampleCn": "实验室对比了两个样本中的 DNA。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/dna",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6330,
+      "word": "nov",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "expanded-abbreviation",
+      "accent": "en-GB",
+      "before": {
+        "id": 6330,
+        "word": "nov",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "abbr. 十一月（November）",
+        "example": "The first heavy snow of the year usually arrives here sometime in early Nov.",
+        "exampleCn": "这里每年的第一场大雪通常在十一月初到来。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6330,
+        "word": "nov",
+        "phonetic": "/nəʊˈvembə(r)/",
+        "pos": "abbr.",
+        "meaning": "十一月（November 的书面缩写，通常写作 Nov.，朗读时读全称）",
+        "example": "The first heavy snow usually arrives in early Nov.",
+        "exampleCn": "第一场大雪通常在十一月初到来。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/november",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。月份缩写按全称朗读，音标标注全称读法。"
+    },
+    {
+      "id": 6396,
+      "word": "feb",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "expanded-abbreviation",
+      "accent": "en-GB",
+      "before": {
+        "id": 6396,
+        "word": "feb",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "abbr. 二月（February）",
+        "example": "The days start to get noticeably longer here once we reach the middle of Feb each year.",
+        "exampleCn": "每年一到二月中旬白昼就开始明显变长。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6396,
+        "word": "feb",
+        "phonetic": "/ˈfebruəri/",
+        "pos": "abbr.",
+        "meaning": "二月（February 的书面缩写，通常写作 Feb.，朗读时读全称）",
+        "example": "The days become noticeably longer in the middle of Feb.",
+        "exampleCn": "二月中旬，白昼明显变长。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/february",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。月份缩写按全称朗读，音标标注全称读法。"
+    },
+    {
+      "id": 6397,
+      "word": "aug",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "expanded-abbreviation",
+      "accent": "en-GB",
+      "before": {
+        "id": 6397,
+        "word": "aug",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "abbr. 八月（August）",
+        "example": "They always go camping by the lake in early Aug before the summer crowds start to thin out.",
+        "exampleCn": "他们总是在八月初去湖边露营趁夏季人群开始散去之前。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6397,
+        "word": "aug",
+        "phonetic": "/ˈɔːɡəst/",
+        "pos": "abbr.",
+        "meaning": "八月（August 的书面缩写，通常写作 Aug.，朗读时读全称）",
+        "example": "They go camping by the lake in early Aug.",
+        "exampleCn": "他们八月初去湖边露营。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/august_2",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。月份缩写按全称朗读，音标标注全称读法。"
+    },
+    {
+      "id": 6407,
+      "word": "politically",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6407,
+        "word": "politically",
+        "phonetic": "",
+        "pos": "adv.",
+        "meaning": "adv. 政治上",
+        "example": "Politically correct clothing.",
+        "exampleCn": "政治正确的服装。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6407,
+        "word": "politically",
+        "phonetic": "/pəˈlɪtɪkli/",
+        "pos": "adv.",
+        "meaning": "在政治上；从政治角度而言",
+        "example": "The proposal was politically unpopular but economically useful.",
+        "exampleCn": "这项提议在政治上不受欢迎，但在经济上有益。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/politically",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6413,
+      "word": "charlie",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6413,
+        "word": "charlie",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 查理（人名，写作 Charlie，是 Charles 的昵称）；[通信] 字母 C 的代码词",
+        "example": "Charlie has been working as a firefighter at the central station for over fifteen years now.",
+        "exampleCn": "查理在中央消防站做了超过十五年的消防员。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6413,
+        "word": "charlie",
+        "phonetic": "/ˈtʃɑːli/",
+        "pos": "n.",
+        "meaning": "n. 查理（人名，写作 Charlie，是 Charles 的昵称）；[通信] 字母 C 的代码词",
+        "example": "Charlie has been working as a firefighter at the central station for over fifteen years now.",
+        "exampleCn": "查理在中央消防站做了超过十五年的消防员。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/charlie_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6441,
+      "word": "depending",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-inflection",
+      "accent": "en-GB",
+      "before": {
+        "id": 6441,
+        "word": "depending",
+        "phonetic": "",
+        "pos": "v.",
+        "meaning": "依赖",
+        "example": "The price of the ticket varies depending on the time of year and how early you book it.",
+        "exampleCn": "票价因一年中的时间和预订的早晚而异。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6441,
+        "word": "depending",
+        "phonetic": "/dɪˈpendɪŋ/",
+        "pos": "v.",
+        "meaning": "取决于；依赖（depend 的现在分词；depending on 常引出条件）",
+        "example": "The price of the ticket varies depending on the time of year and how early you book it.",
+        "exampleCn": "票价因一年中的时间和预订的早晚而异。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/depend",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6480,
+      "word": "girlfriend",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6480,
+        "word": "girlfriend",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 女朋友",
+        "example": "Mary and her girlfriend organized the party.",
+        "exampleCn": "玛丽和她的女朋友组织了这次聚会。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6480,
+        "word": "girlfriend",
+        "phonetic": "/ˈɡɜːlfrend/",
+        "pos": "n.",
+        "meaning": "女朋友；女性朋友（具体关系须看语境）",
+        "example": "Mary and her girlfriend organized the party.",
+        "exampleCn": "玛丽和她的女朋友组织了这次聚会。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/girlfriend",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6569,
+      "word": "expected",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6569,
+        "word": "expected",
+        "phonetic": "",
+        "pos": "v.",
+        "meaning": "a. 预期的；预料的",
+        "example": "Prepared for the expected attack.",
+        "exampleCn": "为预期的攻击做好了准备。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6569,
+        "word": "expected",
+        "phonetic": "/ɪkˈspektɪd/",
+        "pos": "adj./v.",
+        "meaning": "adj. 预期的；预计的；v. expect 的过去式或过去分词",
+        "example": "The team prepared for the expected storm.",
+        "exampleCn": "团队为预计将要到来的风暴做好了准备。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/expected",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6581,
+      "word": "traditionally",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6581,
+        "word": "traditionally",
+        "phonetic": "",
+        "pos": "adv.",
+        "meaning": "adv. 传统上；传说上；习惯上",
+        "example": "Traditionally, we eat fried foods on Hanukah.",
+        "exampleCn": "传统上，我们在光明节吃油炸食品。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6581,
+        "word": "traditionally",
+        "phonetic": "/trəˈdɪʃənəli/",
+        "pos": "adv.",
+        "meaning": "按照传统；传统上",
+        "example": "Traditionally, we eat fried foods on Hanukah.",
+        "exampleCn": "传统上，我们在光明节吃油炸食品。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/traditionally",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6604,
+      "word": "estimated",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-inflection",
+      "accent": "en-GB",
+      "before": {
+        "id": 6604,
+        "word": "estimated",
+        "phonetic": "",
+        "pos": "v.",
+        "meaning": "a. 估算的；估计的；预计的",
+        "example": "The estimated cost of repairing the old stone bridge turned out to be twice the original budget.",
+        "exampleCn": "修复那座老石桥的估算成本最后是原预算的两倍。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6604,
+        "word": "estimated",
+        "phonetic": "/ˈestɪmeɪtɪd/",
+        "pos": "adj./v.",
+        "meaning": "adj. 估算的；预计的；v. estimate 的过去式或过去分词",
+        "example": "The estimated cost of repairing the old stone bridge turned out to be twice the original budget.",
+        "exampleCn": "修复那座老石桥的估算成本最后是原预算的两倍。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/estimate_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6634,
+      "word": "lords",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-inflection",
+      "accent": "en-GB",
+      "before": {
+        "id": 6634,
+        "word": "lords",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 上议院；（前面与the连用）上院议员",
+        "example": "The proposed law was debated for hours in the House of Lords before being passed last night.",
+        "exampleCn": "上议院对这项提案进行了数小时的辩论最终在昨晚深夜通过。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6634,
+        "word": "lords",
+        "phonetic": "/lɔːdz/",
+        "pos": "n.",
+        "meaning": "贵族；勋爵（lord 的复数）；the Lords 或 House of Lords 指英国上议院",
+        "example": "The proposed law was debated for hours in the House of Lords before being passed last night.",
+        "exampleCn": "上议院对这项提案进行了数小时的辩论最终在昨晚深夜通过。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lord_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 6661,
+      "word": "freshman",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6661,
+        "word": "freshman",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 新手, 生手, 大学一年级学生, (美)中学一年级学生",
+        "example": "A freshman senator.",
+        "exampleCn": "一位新参议员。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6661,
+        "word": "freshman",
+        "phonetic": "/ˈfreʃmən/",
+        "pos": "n.",
+        "meaning": "（美式）高中或大学一年级学生；初入某领域的人；新任议员等",
+        "example": "The freshman senator asked several questions at the meeting.",
+        "exampleCn": "这位新任参议员在会上提出了几个问题。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/freshman",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/freshman",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6680,
+      "word": "associated",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6680,
+        "word": "associated",
+        "phonetic": "",
+        "pos": "v.",
+        "meaning": "a. 联合的\\n[计] 关联的; 结合的",
+        "example": "Her research is closely associated with the groundbreaking work done at the university a decade ago.",
+        "exampleCn": "她的研究与十年前大学所做的开创性工作密切相关。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6680,
+        "word": "associated",
+        "phonetic": "/əˈsəʊsieɪtɪd/",
+        "pos": "adj./v.",
+        "meaning": "adj. 有关联的；相关的；v. associate 的过去式或过去分词",
+        "example": "Her research is closely associated with the groundbreaking work done at the university a decade ago.",
+        "exampleCn": "她的研究与十年前大学所做的开创性工作密切相关。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/associated",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6682,
+      "word": "korea",
+      "status": "resolved",
+      "rule": "possible_sense_alignment",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6682,
+        "word": "korea",
+        "phonetic": "kә'riә",
+        "pos": "n.",
+        "meaning": "n. 朝鲜, 韩国",
+        "example": "She taught English in Korea for three years and fell in love with the food there.",
+        "exampleCn": "她在韩国教了三年英语爱上了那里的美食。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6682,
+        "word": "korea",
+        "phonetic": "/kəˈriːə/",
+        "pos": "n.",
+        "meaning": "朝鲜半岛地区（专名，规范写法 Korea；现代国家名称应区分 North Korea 与 South Korea）",
+        "example": "The atlas includes a detailed map of Korea.",
+        "exampleCn": "这本地图集收录了一张详细的朝鲜半岛地图。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/korea",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.collinsdictionary.com/dictionary/english/korea",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6736,
+      "word": "faster",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-inflection",
+      "accent": "en-GB",
+      "before": {
+        "id": 6736,
+        "word": "faster",
+        "phonetic": "",
+        "pos": "adj./adv.",
+        "meaning": "更快的；更快地（fast 的比较级）",
+        "example": "Grass courts are faster than clay.",
+        "exampleCn": "草地球场比红土球场更快。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6736,
+        "word": "faster",
+        "phonetic": "/ˈfɑːstə(r)/",
+        "pos": "adj./adv.",
+        "meaning": "更快的；更快地（fast 的比较级）",
+        "example": "Grass courts are faster than clay.",
+        "exampleCn": "草地球场比红土球场更快。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fast_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/faster",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 6739,
+      "word": "obliged",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-inflection",
+      "accent": "en-GB",
+      "before": {
+        "id": 6739,
+        "word": "obliged",
+        "phonetic": "",
+        "pos": "v.",
+        "meaning": "a. 感激的；有责任的；必须的",
+        "example": "I felt obliged to help the elderly neighbour after seeing how much work she had to do alone.",
+        "exampleCn": "看到老邻居一个人要做那么多活我觉得有义务帮忙。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6739,
+        "word": "obliged",
+        "phonetic": "/əˈblaɪdʒd/",
+        "pos": "adj./v.",
+        "meaning": "有义务的；不得不的；感激的（oblige 的过去分词；be obliged to do 表示必须做）",
+        "example": "I felt obliged to help the elderly neighbour after seeing how much work she had to do alone.",
+        "exampleCn": "看到老邻居一个人要做那么多活我觉得有义务帮忙。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/oblige",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/obliged",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6770,
+      "word": "sexually",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6770,
+        "word": "sexually",
+        "phonetic": "",
+        "pos": "adv.",
+        "meaning": "adv. 性别地；两性之间地",
+        "example": "Sexually ambiguous.",
+        "exampleCn": "性别暧昧。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6770,
+        "word": "sexually",
+        "phonetic": "/ˈsekʃəli/",
+        "pos": "adv.",
+        "meaning": "在性活动、性吸引或性成熟方面",
+        "example": "The study examined how animals become sexually mature.",
+        "exampleCn": "这项研究考察了动物如何达到性成熟。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/sexually",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6774,
+      "word": "organiser",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-spelling-variant",
+      "accent": "en-GB",
+      "before": {
+        "id": 6774,
+        "word": "organiser",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "组织者, 创立人, 发起人",
+        "example": "The organiser of the festival worked tirelessly for six months to make sure everything ran perfectly.",
+        "exampleCn": "节日组织者不知疲倦地工作了六个月以确保一切完美进行。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6774,
+        "word": "organiser",
+        "phonetic": "/ˈɔːɡənaɪzə(r)/",
+        "pos": "n.",
+        "meaning": "组织者；筹办者（英式拼写，美式常写 organizer）",
+        "example": "The organiser of the festival worked tirelessly for six months to make sure everything ran perfectly.",
+        "exampleCn": "节日组织者不知疲倦地工作了六个月以确保一切完美进行。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/organizer",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6793,
+      "word": "impressed",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-inflection",
+      "accent": "en-GB",
+      "before": {
+        "id": 6793,
+        "word": "impressed",
+        "phonetic": "",
+        "pos": "v.",
+        "meaning": "a. 外加的；印象深刻的；了不起的；受感动的",
+        "example": "This child impressed me as unusually mature.",
+        "exampleCn": "这个孩子给我的印象是异常成熟。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6793,
+        "word": "impressed",
+        "phonetic": "/ɪmˈprest/",
+        "pos": "v./adj.",
+        "meaning": "v. 给……留下印象（impress 的过去式或过去分词）；adj. 感到钦佩的",
+        "example": "This child impressed me as unusually mature.",
+        "exampleCn": "这个孩子给我的印象是异常成熟。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/impress",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/impressed",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6845,
+      "word": "hiv",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6845,
+        "word": "hiv",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "abbr. 艾滋病病毒（human immunodeficiency virus）",
+        "example": "The charity works to raise awareness about HIV and support those living with the virus every day.",
+        "exampleCn": "这家慈善机构致力于提高对HIV的认识并每天支持病毒携带者。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6845,
+        "word": "hiv",
+        "phonetic": "/ˌeɪtʃ aɪ ˈviː/",
+        "pos": "n.",
+        "meaning": "人类免疫缺陷病毒（通常写作 HIV；病毒名称，不等同于 AIDS）",
+        "example": "The charity works to raise awareness about HIV and support those living with the virus every day.",
+        "exampleCn": "这家慈善机构致力于提高对HIV的认识并每天支持病毒携带者。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/hiv",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6856,
+      "word": "workplace",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6856,
+        "word": "workplace",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 工作场所, 工厂, 车间",
+        "example": "The company introduced flexible hours to make the workplace more welcoming for parents with children.",
+        "exampleCn": "公司引入了弹性工作制使工作场所对有小孩的父母更加友好。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6856,
+        "word": "workplace",
+        "phonetic": "/ˈwɜːkpleɪs/",
+        "pos": "n.",
+        "meaning": "工作场所",
+        "example": "The company introduced flexible hours to make the workplace more welcoming for parents with children.",
+        "exampleCn": "公司引入了弹性工作制使工作场所对有小孩的父母更加友好。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/workplace",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6911,
+      "word": "takeover",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6911,
+        "word": "takeover",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 接管, 接收\\n[经] 接收",
+        "example": "The takeover of the small startup by the larger company was completed at the end of last year.",
+        "exampleCn": "那家大公司对那家小型创业公司的收购于去年年底完成。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6911,
+        "word": "takeover",
+        "phonetic": "/ˈteɪkəʊvə(r)/",
+        "pos": "n.",
+        "meaning": "接管；收购（名词；动词短语 take over 分写）",
+        "example": "The takeover of the small startup by the larger company was completed at the end of last year.",
+        "exampleCn": "那家大公司对那家小型创业公司的收购于去年年底完成。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/takeover",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6926,
+      "word": "genuinely",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6926,
+        "word": "genuinely",
+        "phonetic": "",
+        "pos": "adv.",
+        "meaning": "adv. 真诚地；诚实地",
+        "example": "A genuinely open society.",
+        "exampleCn": "一个真正开放的社会。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6926,
+        "word": "genuinely",
+        "phonetic": "/ˈdʒenjuɪnli/",
+        "pos": "adv.",
+        "meaning": "真正地；真诚地",
+        "example": "The town welcomed a genuinely open discussion of the problem.",
+        "exampleCn": "镇上的人们欢迎对这个问题开展真正开放的讨论。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/genuinely",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6931,
+      "word": "emerging",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6931,
+        "word": "emerging",
+        "phonetic": "",
+        "pos": "v.",
+        "meaning": "出现的, 发生的, 形成的",
+        "example": "Scientists are closely watching the emerging virus strain that has appeared in several countries over the past month.",
+        "exampleCn": "科学家正密切关注上个月在几个国家出现的新的病毒株。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6931,
+        "word": "emerging",
+        "phonetic": "/ɪˈmɜːdʒɪŋ/",
+        "pos": "adj./v.",
+        "meaning": "adj. 新兴的；正在出现的；v. emerge 的现在分词",
+        "example": "Scientists are closely watching the emerging virus strain that has appeared in several countries over the past month.",
+        "exampleCn": "科学家正密切关注上个月在几个国家出现的新的病毒株。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/emerging",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 6939,
+      "word": "closest",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-inflection",
+      "accent": "en-GB",
+      "before": {
+        "id": 6939,
+        "word": "closest",
+        "phonetic": "",
+        "pos": "adj.",
+        "meaning": "a. 最靠近的（close的最高级）",
+        "example": "She moved to the chair closest to the fire and wrapped herself in a soft blanket.",
+        "exampleCn": "她移到离壁炉最近的椅子上用柔软的毯子裹住自己。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6939,
+        "word": "closest",
+        "phonetic": "/ˈkləʊsɪst/",
+        "pos": "adj.",
+        "meaning": "最近的；最靠近的（close 的最高级）",
+        "example": "She moved to the chair closest to the fire and wrapped herself in a soft blanket.",
+        "exampleCn": "她移到离壁炉最近的椅子上用柔软的毯子裹住自己。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/close2_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 6958,
+      "word": "bored",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 6958,
+        "word": "bored",
+        "phonetic": "",
+        "pos": "adj.",
+        "meaning": "感到无聊的；厌倦的（描述感受，区别于 boring 令人无聊的）",
+        "example": "Bored with life.",
+        "exampleCn": "对生活感到厌倦。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6958,
+        "word": "bored",
+        "phonetic": "/bɔːd/",
+        "pos": "adj.",
+        "meaning": "感到无聊的；厌倦的（描述感受，区别于 boring 令人无聊的）",
+        "example": "I felt bored during the long wait at the station.",
+        "exampleCn": "在车站漫长的等待中，我感到无聊。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/bored",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 7009,
+      "word": "importantly",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 7009,
+        "word": "importantly",
+        "phonetic": "",
+        "pos": "adv.",
+        "meaning": "adv. 重要地；大量地；有名望地；自命不凡地",
+        "example": "More importantly, Weber held that the manifold meaning attached to the event by the social scientist could alter his definition of the concrete event itself.",
+        "exampleCn": "更重要的是，韦伯认为社会科学家赋予事件的多重意义可能会改变他对具体事件本身的定义。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 7009,
+        "word": "importantly",
+        "phonetic": "/ɪmˈpɔːtntli/",
+        "pos": "adv.",
+        "meaning": "重要的是；重要地；more importantly 表示更重要的是",
+        "example": "More importantly, everyone had a chance to explain their idea.",
+        "exampleCn": "更重要的是，每个人都有机会解释自己的想法。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/importantly",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 7013,
+      "word": "privately",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 7013,
+        "word": "privately",
+        "phonetic": "",
+        "pos": "adv.",
+        "meaning": "adv. 秘密地；私下地",
+        "example": "It was discussed privately between the two men.",
+        "exampleCn": "两人私下讨论了此事。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 7013,
+        "word": "privately",
+        "phonetic": "/ˈpraɪvətli/",
+        "pos": "adv.",
+        "meaning": "私下地；不公开地；由私人经营或资助地",
+        "example": "It was discussed privately between the two men.",
+        "exampleCn": "两人私下讨论了此事。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/privately",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 7016,
+      "word": "varying",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-inflection",
+      "accent": "en-GB",
+      "before": {
+        "id": 7016,
+        "word": "varying",
+        "phonetic": "",
+        "pos": "adj./v.",
+        "meaning": "adj. 各不相同的；变化的；v. vary 的现在分词",
+        "example": "The varying angles of roof slope.",
+        "exampleCn": "屋顶坡度的不同角度。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 7016,
+        "word": "varying",
+        "phonetic": "/ˈveəriɪŋ/",
+        "pos": "adj./v.",
+        "meaning": "adj. 各不相同的；变化的；v. vary 的现在分词",
+        "example": "The workers measured the varying angles of the roof.",
+        "exampleCn": "工人们测量了屋顶各不相同的角度。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/vary",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 7018,
+      "word": "routinely",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 7018,
+        "word": "routinely",
+        "phonetic": "",
+        "pos": "adv.",
+        "meaning": "adv. 日常, 乏味, 常规, 例行",
+        "example": "He routinely parked in a no-parking zone.",
+        "exampleCn": "他经常把车停在禁止停车区。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 7018,
+        "word": "routinely",
+        "phonetic": "/ruːˈtiːnli/",
+        "pos": "adv.",
+        "meaning": "例行地；惯常地；经常地",
+        "example": "He routinely parked in a no-parking zone.",
+        "exampleCn": "他经常把车停在禁止停车区。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/routinely",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 7055,
+      "word": "counselling",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 7055,
+        "word": "counselling",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "评议, 商议, 指导",
+        "example": "The university offers free counselling to all students who are struggling with stress or anxiety during their studies.",
+        "exampleCn": "大学为所有在学习期间因压力或焦虑而挣扎的学生提供免费咨询。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 7055,
+        "word": "counselling",
+        "phonetic": "/ˈkaʊnsəlɪŋ/",
+        "pos": "n.",
+        "meaning": "专业咨询；心理辅导（英式拼写，通常不可数；美式 counseling）",
+        "example": "The university offers free counselling to all students who are struggling with stress or anxiety during their studies.",
+        "exampleCn": "大学为所有在学习期间因压力或焦虑而挣扎的学生提供免费咨询。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/counselling",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 7070,
+      "word": "explicitly",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 7070,
+        "word": "explicitly",
+        "phonetic": "",
+        "pos": "adv.",
+        "meaning": "adv. 明确地；明白地",
+        "example": "In his foreword Professor Clark puts it explicitly.",
+        "exampleCn": "克拉克教授在他的前言中明确指出了这一点。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 7070,
+        "word": "explicitly",
+        "phonetic": "/ɪkˈsplɪsɪtli/",
+        "pos": "adv.",
+        "meaning": "明确地；清楚直接地",
+        "example": "In his foreword Professor Clark puts it explicitly.",
+        "exampleCn": "克拉克教授在他的前言中明确指出了这一点。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/explicitly",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 7118,
+      "word": "website",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 7118,
+        "word": "website",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 网站（全球资讯网的主机站）",
+        "example": "She spent the afternoon redesigning the company website to make it more user-friendly and attractive to new visitors.",
+        "exampleCn": "她整个下午都在重新设计公司网站使其对用户更友好对新访客更有吸引力。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 7118,
+        "word": "website",
+        "phonetic": "/ˈwebsaɪt/",
+        "pos": "n.",
+        "meaning": "网站；由相关网页组成的站点",
+        "example": "She spent the afternoon redesigning the company website to make it more user-friendly and attractive to new visitors.",
+        "exampleCn": "她整个下午都在重新设计公司网站使其对用户更友好对新访客更有吸引力。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/website",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 7155,
+      "word": "lyrics",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "editorial-inflection",
+      "accent": "en-GB",
+      "before": {
+        "id": 7155,
+        "word": "lyrics",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 歌词",
+        "example": "His compositions always started with the lyrics.",
+        "exampleCn": "他的作品总是从歌词开始。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 7155,
+        "word": "lyrics",
+        "phonetic": "/ˈlɪrɪks/",
+        "pos": "n.",
+        "meaning": "歌词（通常用复数）",
+        "example": "His compositions always started with the lyrics.",
+        "exampleCn": "他的作品总是从歌词开始。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lyric_1",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标为参考组成词/词形事实后的编辑转写，不声称整串来自单一词条。"
+    },
+    {
+      "id": 7459,
+      "word": "theatre",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 7459,
+        "word": "theatre",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 戏院, 电影院, 剧场, 全体观众, 戏剧, 戏剧效果, 阶梯式讲堂, 场所",
+        "example": "They went to the theatre last night to see a new play and were blown away.",
+        "exampleCn": "他们昨晚去戏院看了新话剧被台上精彩的表演震撼了。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "after": {
+        "id": 7459,
+        "word": "theatre",
+        "phonetic": "/ˈθɪətə(r)/",
+        "pos": "n.",
+        "meaning": "剧院；戏剧（英式拼写，美式常写 theater）",
+        "example": "They went to the theatre last night to see a new play and were blown away.",
+        "exampleCn": "他们昨晚去戏院看了新话剧被台上精彩的表演震撼了。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/theatre",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 7720,
+      "word": "surprisingly",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 7720,
+        "word": "surprisingly",
+        "phonetic": "",
+        "pos": "adv.",
+        "meaning": "adv. 使人惊奇, 出人意外, 惊人, 令人惊讶",
+        "example": "He was surprisingly friendly.",
+        "exampleCn": "他出奇地友善。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "after": {
+        "id": 7720,
+        "word": "surprisingly",
+        "phonetic": "/səˈpraɪzɪŋli/",
+        "pos": "adv.",
+        "meaning": "出乎意料地；令人惊讶地",
+        "example": "He was surprisingly friendly.",
+        "exampleCn": "他出奇地友善。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/surprisingly",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 8175,
+      "word": "waggon",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-spelling-variant",
+      "accent": "en-GB",
+      "before": {
+        "id": 8175,
+        "word": "waggon",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 运货马车；货车（wagon 的英式拼写变体）",
+        "example": "The old waggon loaded with hay creaked slowly along the dusty lane pulled by two tired grey horses.",
+        "exampleCn": "两匹疲惫的灰马拉着装满干草的旧马车，沿着尘土飞扬的小路缓缓前行，车身吱吱作响。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "after": {
+        "id": 8175,
+        "word": "waggon",
+        "phonetic": "/ˈwæɡən/",
+        "pos": "n.",
+        "meaning": "n. 运货马车；货车（wagon 的英式拼写变体）",
+        "example": "The old waggon loaded with hay creaked slowly along the dusty lane pulled by two tired grey horses.",
+        "exampleCn": "两匹疲惫的灰马拉着装满干草的旧马车，沿着尘土飞扬的小路缓缓前行，车身吱吱作响。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "changedFields": [
+        "phonetic"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/wagon",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/waggon",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 8267,
+      "word": "consistently",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 8267,
+        "word": "consistently",
+        "phonetic": "",
+        "pos": "adv.",
+        "meaning": "adv. 坚固, 坚实, 一致, 始终如一, 连贯\\n[计] 相容地",
+        "example": "She has consistently scored the highest marks in her class and her teachers all predict a brilliant academic.",
+        "exampleCn": "她的成绩一直在班上名列前茅老师们都预言她未来会有一个辉煌的学术前景。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "after": {
+        "id": 8267,
+        "word": "consistently",
+        "phonetic": "/kənˈsɪstəntli/",
+        "pos": "adv.",
+        "meaning": "一贯地；始终如一地；持续保持同样水平地",
+        "example": "She has consistently earned high marks throughout the school year.",
+        "exampleCn": "整个学年，她的成绩一直保持在较高水平。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/consistently",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 8367,
+      "word": "positively",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 8367,
+        "word": "positively",
+        "phonetic": "",
+        "pos": "adv.",
+        "meaning": "adv. 明确地, 肯定地, 无疑地, (非正式)确实地, 真正地",
+        "example": "It was positively monumental.",
+        "exampleCn": "这绝对是具有纪念意义的。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "after": {
+        "id": 8367,
+        "word": "positively",
+        "phonetic": "/ˈpɒzətɪvli/",
+        "pos": "adv.",
+        "meaning": "确实；简直（用于强调）；积极地；肯定地",
+        "example": "It was positively monumental.",
+        "exampleCn": "这绝对是具有纪念意义的。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/positively",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 8377,
+      "word": "ironically",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 8377,
+        "word": "ironically",
+        "phonetic": "",
+        "pos": "adv.",
+        "meaning": "adv. 冷嘲地, 挖苦地, 讽刺地, 令人啼笑皆非地",
+        "example": "Ironically, he ended up losing money under his own plan.",
+        "exampleCn": "讽刺的是，他最终按照自己的计划赔了钱。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "after": {
+        "id": 8377,
+        "word": "ironically",
+        "phonetic": "/aɪˈrɒnɪkli/",
+        "pos": "adv.",
+        "meaning": "讽刺地；出乎意料而具有反讽意味地",
+        "example": "Ironically, he ended up losing money under his own plan.",
+        "exampleCn": "讽刺的是，他最终按照自己的计划赔了钱。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ironically",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 8407,
+      "word": "predominantly",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 8407,
+        "word": "predominantly",
+        "phonetic": "",
+        "pos": "adv.",
+        "meaning": "adv. 主要地, 显著地, 大多数地, 突出地",
+        "example": "The patients are predominantly indigenous.",
+        "exampleCn": "患者主要是土著。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "after": {
+        "id": 8407,
+        "word": "predominantly",
+        "phonetic": "/prɪˈdɒmɪnəntli/",
+        "pos": "adv.",
+        "meaning": "主要地；大部分地",
+        "example": "The patients are predominantly indigenous.",
+        "exampleCn": "患者主要是土著。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/predominantly",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    },
+    {
+      "id": 8504,
+      "word": "consultancy",
+      "status": "resolved",
+      "rule": "missing_phonetic",
+      "checkedAt": "2026-10-25",
+      "phoneticMethod": "dictionary-ipa",
+      "accent": "en-GB",
+      "before": {
+        "id": 8504,
+        "word": "consultancy",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 商量, 协商, 磋商, 会诊, 与...商量, 咨询, 请教, 找(医生)看病, 查阅, 考虑\\n[经] 咨询业务, 咨询服务",
+        "example": "A business management consultancy.",
+        "exampleCn": "一家企业管理咨询公司。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "after": {
+        "id": 8504,
+        "word": "consultancy",
+        "phonetic": "/kənˈsʌltənsi/",
+        "pos": "n.",
+        "meaning": "咨询公司；咨询业务；专业咨询服务",
+        "example": "She works for a small business management consultancy.",
+        "exampleCn": "她在一家小型企业管理咨询公司工作。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/consultancy",
+          "checkedAt": "2026-10-25",
+          "use": "factual-reference"
+        }
+      ],
+      "reviewNote": "词头、ID及分类保留；按实际例句核对词性和教学义项。音标核对词典中相应词条、明确词形或拼写变体。"
+    }
+  ],
+  "baselineCandidates": [
+    {
+      "id": 3849,
+      "word": "tame nature",
+      "rule": "missing_pos",
+      "status": "needs_review",
+      "finding": "缺少 pos；需人工补核，不自动生成。"
+    },
+    {
+      "id": 4322,
+      "word": "plunge whole-heartedly",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 4340,
+      "word": "take a bow",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 4347,
+      "word": "raw material",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 4544,
+      "word": "alcoholic beverage",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 4579,
+      "word": "an odd fish",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 4609,
+      "word": "soy sauce",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 4698,
+      "word": "span of life",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 4718,
+      "word": "traffic regulations",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 4719,
+      "word": "traffic jam",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 4720,
+      "word": "traffic congestion",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 4842,
+      "word": "establish a nation",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 5649,
+      "word": "others",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 5674,
+      "word": "including",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 5873,
+      "word": "sales",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 5896,
+      "word": "earlier",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 5900,
+      "word": "planning",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 5941,
+      "word": "states",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 5947,
+      "word": "works",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 5963,
+      "word": "terms",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 5986,
+      "word": "thomas",
+      "rule": "possible_sense_alignment",
+      "status": "needs_review",
+      "finding": "原释义：n. 多马(耶稣十二门徒之一)；提示范围：专有名词 · 托马斯。两者不同不自动代表错误。"
+    },
+    {
+      "id": 6009,
+      "word": "thanks",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6030,
+      "word": "inc",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6069,
+      "word": "corp",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6080,
+      "word": "significantly",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6088,
+      "word": "iii",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6125,
+      "word": "steve",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6127,
+      "word": "dec",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6147,
+      "word": "unix",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6148,
+      "word": "remaining",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6241,
+      "word": "ceo",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6246,
+      "word": "stairs",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6258,
+      "word": "online",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6260,
+      "word": "proposed",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6287,
+      "word": "oct",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6327,
+      "word": "thatcher",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6329,
+      "word": "dna",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6330,
+      "word": "nov",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6368,
+      "word": "neil",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6396,
+      "word": "feb",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6397,
+      "word": "aug",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6407,
+      "word": "politically",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6413,
+      "word": "charlie",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6438,
+      "word": "matthew",
+      "rule": "possible_sense_alignment",
+      "status": "needs_review",
+      "finding": "原释义：n. 马太, 马太福音；提示范围：专有名词 · 马修。两者不同不自动代表错误。"
+    },
+    {
+      "id": 6441,
+      "word": "depending",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6474,
+      "word": "nhs",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6480,
+      "word": "girlfriend",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6569,
+      "word": "expected",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6581,
+      "word": "traditionally",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6589,
+      "word": "clarke",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6600,
+      "word": "davies",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6601,
+      "word": "swindon",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6604,
+      "word": "estimated",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6634,
+      "word": "lords",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6636,
+      "word": "raf",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6642,
+      "word": "microsoft",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6658,
+      "word": "joan",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6661,
+      "word": "freshman",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6674,
+      "word": "ross",
+      "rule": "possible_sense_alignment",
+      "status": "needs_review",
+      "finding": "原释义：n. 罗丝（女性名）；提示范围：专有名词 · 罗斯。两者不同不自动代表错误。"
+    },
+    {
+      "id": 6680,
+      "word": "associated",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6682,
+      "word": "korea",
+      "rule": "possible_sense_alignment",
+      "status": "needs_review",
+      "finding": "原释义：n. 朝鲜, 韩国；提示范围：专有名词 · 朝鲜半岛。两者不同不自动代表错误。"
+    },
+    {
+      "id": 6717,
+      "word": "malcolm",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6736,
+      "word": "faster",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6739,
+      "word": "obliged",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6752,
+      "word": "geoffrey",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6764,
+      "word": "clark",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6770,
+      "word": "sexually",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6771,
+      "word": "hughes",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6774,
+      "word": "organiser",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6779,
+      "word": "liz",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6786,
+      "word": "ussr",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6787,
+      "word": "harriet",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6791,
+      "word": "gorbachev",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6793,
+      "word": "impressed",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6829,
+      "word": "kenneth",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6845,
+      "word": "hiv",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6846,
+      "word": "corbett",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6856,
+      "word": "workplace",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6879,
+      "word": "gop",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6880,
+      "word": "norwich",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6911,
+      "word": "takeover",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6924,
+      "word": "kinnock",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6926,
+      "word": "genuinely",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6931,
+      "word": "emerging",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6939,
+      "word": "closest",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6958,
+      "word": "bored",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 6985,
+      "word": "aberdeen",
+      "rule": "possible_sense_alignment",
+      "status": "needs_review",
+      "finding": "原释义：n. 亚伯丁（英国苏格兰一郡 ）；苏格兰粗毛猎狐狗（等于Aberdeenterrier）；提示范围：专有名词 · 阿伯丁。两者不同不自动代表错误。"
+    },
+    {
+      "id": 6991,
+      "word": "julie",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 7009,
+      "word": "importantly",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 7013,
+      "word": "privately",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 7016,
+      "word": "varying",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 7018,
+      "word": "routinely",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 7055,
+      "word": "counselling",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 7063,
+      "word": "ron",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 7070,
+      "word": "explicitly",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 7085,
+      "word": "ali",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 7090,
+      "word": "kim",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 7099,
+      "word": "eec",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 7105,
+      "word": "gabriel",
+      "rule": "possible_sense_alignment",
+      "status": "needs_review",
+      "finding": "原释义：n. 加百利(<<经经>>中七大天使之一)；提示范围：专有名词 · 加布里埃尔。两者不同不自动代表错误。"
+    },
+    {
+      "id": 7118,
+      "word": "website",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 7155,
+      "word": "lyrics",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 7180,
+      "word": "des",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 7186,
+      "word": "phillips",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 7459,
+      "word": "theatre",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 7720,
+      "word": "surprisingly",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 8175,
+      "word": "waggon",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 8267,
+      "word": "consistently",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 8367,
+      "word": "positively",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 8377,
+      "word": "ironically",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 8407,
+      "word": "predominantly",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    },
+    {
+      "id": 8504,
+      "word": "consultancy",
+      "rule": "missing_phonetic",
+      "status": "needs_review",
+      "finding": "缺少 phonetic；需人工补核，不自动生成。"
+    }
+  ]
+}

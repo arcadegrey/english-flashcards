@@ -1,0 +1,15 @@
+{
+  "batch": "2026-10-25-followup",
+  "checkedAt": "2026-10-25T14:59:48.833Z",
+  "baseUrl": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates",
+  "newAudioFiles": 400,
+  "newManifestFiles": 1,
+  "audioBytes": 2870856,
+  "manifestSha256": "76bd8ca78596babac09d3786fded2f4d123ce7e6e81aba058118ea7d0cd5e6dc",
+  "newFilesAllPublicHashAndSizeMatched": true,
+  "failedFiles": 0,
+  "totalVersionedAudioFiles": 2436,
+  "mode": "400 new files read from public R2; existing immutable-file receipts reused after all 3 public manifests were checked",
+  "verificationCheckpointSha256": "d74c1ea248e79a67791df74a9d507d2e1437e7b95257723e43085ebe52f6d700",
+  "applicationDeployment": false
+}

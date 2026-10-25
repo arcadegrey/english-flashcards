@@ -1,3 +1,4 @@
+import { beforeQualityReview, beforeFollowupReview } from './helpers/vocabulary-history.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
@@ -9,6 +10,7 @@ import { parseVocabularyCsv } from '../src/utils/csvImport.js';
 import { buildWordAssignment, gradeWordAssignment } from '../shared/wordAssignments.js';
 import { createExamAttempt } from '../shared/examAttempts.js';
 import { correctedVocabularyAudioUrl } from '../shared/vocabularyAudio.js';
+import { FOLLOWUP_VOCABULARY_AUDIO } from '../shared/followupVocabularyAudio.js';
 import { RETIRED_VOCABULARY } from '../shared/retiredVocabulary.js';
 
 const root = new URL('../', import.meta.url);
@@ -26,14 +28,14 @@ test('the 33 repairs remain intact in active or historical data; their original 
   const restored = new Map();
   for (const review of register.reviews) {
     assert.equal(review.status, 'resolved');
-    assert.deepEqual(byId.get(review.id), review.after);
+    assert.deepEqual(beforeFollowupReview([byId.get(review.id)])[0], review.after);
     assert.notDeepEqual(review.before, review.after);
     for (const key of ['id', 'category', 'categories', 'level', 'list', 'ieltsList', 'ieltsLists']) {
       assert.deepEqual(review.before[key], review.after[key], `${review.word} ${key}`);
     }
     restored.set(review.id, review.before);
   }
-  const original = JSON.stringify(referenceVocabulary.filter(word => word.id <= 8699).sort((a, b) => a.id - b.id).map(word => restored.get(word.id) || word), null, 2) + '\n';
+  const original = JSON.stringify(beforeQualityReview(referenceVocabulary).filter(word => word.id <= 8699).sort((a, b) => a.id - b.id).map(word => restored.get(word.id) || word), null, 2) + '\n';
   assert.equal(createHash('sha256').update(original).digest('hex'), register.baselineSha256);
 });
 
@@ -113,7 +115,11 @@ test('every changed R2 recording has four versioned manifest entries and matchin
         || (field === 'word' && ['les', 'sara'].includes(review.after.word));
       for (const voice of manifest.voices) {
         const url = correctedVocabularyAudioUrl(review.after, field, voice);
-        if (!changed) { assert.equal(url, null); continue; }
+        if (!changed) {
+          if (FOLLOWUP_VOCABULARY_AUDIO[review.id]?.[field]) assert.match(url, /2026-10-25-followup/);
+          else assert.equal(url, null);
+          continue;
+        }
         const entry = manifest.files.find(file => file.path === new URL(url).pathname);
         assert(entry, `${review.word} ${field} ${voice}`);
         assert.equal(entry.text, review.after[field]);

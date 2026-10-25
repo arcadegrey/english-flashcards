@@ -1,3 +1,4 @@
+import { getStudyDateKey } from '../../shared/studyDate.js';
 import { normalizeWordBookmarks, mergeWordBookmarks, changeWordBookmark } from '../../shared/wordBookmarks.js';
 
 import { DAILY_NEW_WORD_TARGETS, normalizePlanCategory } from './studyPlan.js';
@@ -470,7 +471,7 @@ export const storage = {
           ? wordsLearned
           : { wordsLearned, wordsMastered, timeSpent, ...extra };
       const history = storage.getStudyHistory();
-      const today = new Date().toISOString().split('T')[0];
+      const today = getStudyDateKey();
       const existingToday = history.findIndex(h => h.date === today);
       
       if (existingToday >= 0) {

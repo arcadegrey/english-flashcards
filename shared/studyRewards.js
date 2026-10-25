@@ -1,10 +1,11 @@
+import { getStudyDateKey } from './studyDate.js';
 import { weekRange } from './weeklyReport.js';
 import { mergeStudyHistory } from './studyHistory.js';
 
 // Existing progress retains 90 learning days; milestones stay within that verifiable range.
 export const STREAK_MILESTONES = [3, 7, 14, 30, 60, 90];
 export function studyRewardProgress(history, now = new Date()) {
-  const range = weekRange(now), today = now.toISOString().slice(0, 10);
+  const range = weekRange(now), today = getStudyDateKey(now);
   const active = mergeStudyHistory([], history).filter(day => day.date <= today && day.wordsLearned + day.wordsMastered + day.readingsCompleted + day.readingQuestionsAnswered + day.examQuestionsAnswered > 0);
   const dates = new Set(active.map(day => day.date));
   let streak = 0;

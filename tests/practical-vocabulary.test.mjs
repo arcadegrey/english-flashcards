@@ -1,3 +1,4 @@
+import { beforeQualityReview } from './helpers/vocabulary-history.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -22,7 +23,7 @@ test('exactly the 247 authorized IDs leave active courses; every other original 
   assert.equal(additions.length, 247);
   assert.equal(new Set(vocabulary.map(word => word.id)).size, 8699);
   assert(vocabulary.every(word => !isRetiredVocabularyId(word.id)));
-  const old = [...vocabulary.filter(word => word.id <= 8699), ...RETIRED_VOCABULARY].sort((a, b) => a.id - b.id);
+  const old = [...beforeQualityReview(vocabulary).filter(word => word.id <= 8699), ...RETIRED_VOCABULARY].sort((a, b) => a.id - b.id);
   assert.equal(hash(JSON.stringify(old, null, 2) + '\n'), audit.inputSha256);
   const previousSpellings = new Set(old.map(word => word.word.toLowerCase()));
   for (const [index, word] of additions.entries()) {

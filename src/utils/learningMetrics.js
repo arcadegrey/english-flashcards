@@ -1,8 +1,9 @@
+import { getStudyDateKey, shiftStudyDate, studyDayOfWeek, studyWeekRange } from '../../shared/studyDate.js';
 const DAY_NAMES_CN = ['日', '一', '二', '三', '四', '五', '六'];
 
 const toNumber = (value) => (Number.isFinite(Number(value)) ? Number(value) : 0);
 
-export const getDateKey = (date = new Date()) => date.toISOString().split('T')[0];
+export const getDateKey = getStudyDateKey;
 
 export const isActiveStudyDay = (item = {}) =>
   toNumber(item.wordsLearned) +
@@ -24,18 +25,18 @@ export const calculateStudyStreak = (studyHistory = []) => {
   const activeDates = getActiveStudyDates(studyHistory);
   const todayKey = getDateKey();
   let streak = 0;
-  const cursor = new Date();
+  let cursor = getDateKey();
 
   while (true) {
     const dateKey = getDateKey(cursor);
     if (activeDates.has(dateKey)) {
       streak += 1;
-      cursor.setDate(cursor.getDate() - 1);
+      cursor = shiftStudyDate(cursor, -1);
       continue;
     }
 
     if (dateKey === todayKey) {
-      cursor.setDate(cursor.getDate() - 1);
+      cursor = shiftStudyDate(cursor, -1);
       continue;
     }
 
@@ -47,20 +48,16 @@ export const calculateStudyStreak = (studyHistory = []) => {
 
 export const getWeekStudyDays = (studyHistory = []) => {
   const activeDates = getActiveStudyDates(studyHistory);
-  const today = new Date();
-  const monday = new Date(today);
-  const day = monday.getDay();
-  const diffToMonday = day === 0 ? -6 : 1 - day;
-  monday.setDate(monday.getDate() + diffToMonday);
+  const today = getDateKey();
+  const monday = studyWeekRange().start;
 
   return Array.from({ length: 7 }, (_, index) => {
-    const date = new Date(monday);
-    date.setDate(monday.getDate() + index);
+    const date = shiftStudyDate(monday, index);
     const dateKey = getDateKey(date);
 
     return {
       date: dateKey,
-      label: DAY_NAMES_CN[date.getDay()],
+      label: DAY_NAMES_CN[studyDayOfWeek(getDateKey(date))],
       isDone: activeDates.has(dateKey),
       isToday: dateKey === getDateKey(today),
     };
@@ -70,18 +67,17 @@ export const getWeekStudyDays = (studyHistory = []) => {
 export const getLast7StudyDays = (studyHistory = []) => {
   const safeHistory = Array.isArray(studyHistory) ? studyHistory : [];
   const days = [];
-  const today = new Date();
+  const today = getDateKey();
 
   for (let i = 6; i >= 0; i -= 1) {
-    const date = new Date(today);
-    date.setDate(date.getDate() - i);
+    const date = shiftStudyDate(today, -i);
     const dateStr = getDateKey(date);
     const dayData = safeHistory.find((item) => item.date === dateStr) || {};
 
     days.push({
       date: dateStr,
-      dayName: DAY_NAMES_CN[date.getDay()],
-      day: date.getDate(),
+      dayName: DAY_NAMES_CN[studyDayOfWeek(getDateKey(date))],
+      day: Number(date.slice(-2)),
       wordsLearned: toNumber(dayData.wordsLearned),
       wordsMastered: toNumber(dayData.wordsMastered),
       readingsCompleted: toNumber(dayData.readingsCompleted),

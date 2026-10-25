@@ -22,8 +22,9 @@
     "audio:upload-updates-r2": "node scripts/upload-word-audio-r2.mjs --source public/audio-updates --prefix audio-updates --wrangler \"node node_modules/wrangler/bin/wrangler.js\"",
     "audio:verify-updates-r2": "node scripts/verify-audio-updates-r2.mjs",
     "d1:migrate": "node scripts/apply-d1-schema.mjs",
-    "prebuild": "node scripts/build-assignment-catalog.mjs",
-    "words:assignment-catalog": "node scripts/build-assignment-catalog.mjs"
+    "prebuild": "node scripts/build-assignment-catalog.mjs && node scripts/build-word-hints.mjs",
+    "words:assignment-catalog": "node scripts/build-assignment-catalog.mjs",
+    "hints:build": "node scripts/build-word-hints.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

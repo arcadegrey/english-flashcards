@@ -1,3 +1,5 @@
+import { formatWordDefinition } from './wordHintPresentation.js';
+import { getReviewedWordHints } from '../data/reviewedWordNotes.js';
 import { CORE_WORD_NOTES, CORE_SYNONYM_GROUPS, CORE_WORD_FORMATIONS, WORD_NOTE_SOURCES } from '../data/coreWordNotes.js';
 import { vocabularyNoteKey } from '../../shared/vocabularyAliases.js';
 
@@ -41,6 +43,8 @@ export const getHintExampleParts = (example, words = []) => {
 };
 
 export const getCoreWordHints = (word = {}) => {
+  const reviewed = getReviewedWordHints(word);
+  if (reviewed) return reviewed;
   const key = vocabularyNoteKey(word);
   if (!Object.hasOwn(CORE_WORD_NOTES, key)) return [];
   const entry = CORE_WORD_NOTES[key];
@@ -72,19 +76,7 @@ export const getCoreWordHints = (word = {}) => {
   return hints;
 };
 
-// Clean import formatting for display without modifying the source entry.
-export const formatWordDefinition = (meaning) => String(meaning || '')
-  .replace(/\\r\\n|\\[nr]|\r?\n/g, '；')
-  .replace(/；\s*；/g, '；')
-  .trim();
-
-export const getWordMeaningLine = (word = {}) => {
-  const meaning = formatWordDefinition(word.meaning);
-  if (!meaning) return '暂无释义';
-  // Dictionary definitions often already include per-sense parts of speech.
-  return /^(?:n|v|vt|vi|a|adj|ad|adv|prep|pron|conj|int|interj|aux|num|art|det)\./i.test(meaning)
-    ? meaning : [word.pos, meaning].filter(Boolean).join(' ');
-};
+export { formatWordDefinition, getWordMeaningLine } from './wordHintPresentation.js';
 
 // Prefer source-checked editorial notes; otherwise use the current entry only.
 export const getWordHints = (word = {}) => {

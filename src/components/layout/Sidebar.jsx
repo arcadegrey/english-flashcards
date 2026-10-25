@@ -1,64 +1,9 @@
+import { calculateStudyStreak, getWeekStudyDays } from '../../utils/learningMetrics.js';
 import { appShellIcons } from './icons';
 
-const WEEK_DAYS = ['一', '二', '三', '四', '五', '六', '日'];
-
-const toDateKey = (date) => date.toISOString().split('T')[0];
-
-const getActiveDates = (studyHistory) =>
-  new Set(
-    (Array.isArray(studyHistory) ? studyHistory : [])
-      .filter((item) => Number(item?.wordsLearned || 0) + Number(item?.wordsMastered || 0) > 0)
-      .map((item) => item.date)
-      .filter(Boolean)
-  );
-
-const calculateStreak = (activeDates) => {
-  const today = new Date();
-  const todayKey = toDateKey(today);
-  const cursor = new Date(today);
-  let streak = 0;
-
-  while (true) {
-    const dateKey = toDateKey(cursor);
-    if (activeDates.has(dateKey)) {
-      streak += 1;
-      cursor.setDate(cursor.getDate() - 1);
-      continue;
-    }
-
-    if (dateKey === todayKey) {
-      cursor.setDate(cursor.getDate() - 1);
-      continue;
-    }
-
-    break;
-  }
-
-  return streak;
-};
-
-const getCurrentWeek = (activeDates) => {
-  const today = new Date();
-  const day = today.getDay() || 7;
-  const monday = new Date(today);
-  monday.setDate(today.getDate() - day + 1);
-
-  return WEEK_DAYS.map((label, index) => {
-    const date = new Date(monday);
-    date.setDate(monday.getDate() + index);
-    return {
-      label,
-      dateKey: toDateKey(date),
-      isDone: activeDates.has(toDateKey(date)),
-      isToday: toDateKey(date) === toDateKey(today),
-    };
-  });
-};
-
 function Sidebar({ active = 'plan', items = [], studyHistory = [] }) {
-  const activeDates = getActiveDates(studyHistory);
-  const streak = calculateStreak(activeDates);
-  const weekDays = getCurrentWeek(activeDates);
+  const streak = calculateStudyStreak(studyHistory);
+  const weekDays = getWeekStudyDays(studyHistory);
 
   return (
     <aside className="ds-sidebar">
@@ -97,7 +42,7 @@ function Sidebar({ active = 'plan', items = [], studyHistory = [] }) {
           <span className="ds-streak-week" aria-hidden="true">
             {weekDays.map((day) => (
               <span
-                key={day.dateKey}
+                key={day.date}
                 className={`${day.isDone ? 'is-done' : ''} ${day.isToday ? 'is-today' : ''}`.trim()}
               >
                 <i />

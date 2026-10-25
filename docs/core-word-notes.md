@@ -223,3 +223,11 @@ forms: [{
 ## 基础词库修复后的提示兼容（2026-10-24）
 
 后续 33 条基础词库修复保留全部 8699 个 ID，两个错拼修正后形成两对同形词（8697 个不同词头）。提示登记仍为 8699 份，`vocabularyNoteKey` 按稳定 ID 为 1234／3318 保留原提示键与来源，不覆盖既有 spectator／precaution 的提示。旧键仅用于兼容和历史说明，不作为新拼写题正确答案。Sam 的提示已与人名义项对齐，jean 提示明确布料义与 jeans 裤子义。其余修复、音频与验收见 `vocabulary-repair-2026-10-24.md`。
+# 2026-10-25 提示发布方式更新
+
+词卡不再静态导入全部提示模块。原编辑数据仍是来源，`scripts/build-word-hints.mjs` 编译为 `public/data/word-hints/` 的 45 个内容哈希批次，`src/data/wordHintsManifest.json` 提供运行时索引；WordCard 按词条 ID 和词头匹配后加载。所有活动与历史词的文字、引用和例句强调均由全量一致性测试核对。修改内容后先运行 `npm run hints:build`，再运行测试；`prebuild` 也会自动重建。仅已缓存批次可离线使用，新访问批次提供基础提示和重试。
+
+16 条词性/释义/中文译文修复与 4 条提示对齐见 `optimization-2026-10-25.md`，登记于 `data/vocabulary-quality-2026-10-25.json`；这不表示全部语言审校完成。
+# 73 条基础候选后续复核
+
+`src/data/followupWordNotes.json` 按 ID 保存 11 条对齐后的教学提示，优先于原组内容；原稿仍保留历史用途。新增版本录音、73 条 before/after 和实际验收见 `vocabulary-followup-73-2026-10-25.md`。更改提示后重建公共 JSON 批次，先前的 4 条 ID 复核加本批 11 条共 15 条实际覆盖，不额外增加覆盖词数。

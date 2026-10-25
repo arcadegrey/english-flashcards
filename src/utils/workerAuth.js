@@ -187,8 +187,10 @@ export const signInWithEmail = async ({ email, verificationCode = '', password =
   return { session, user };
 };
 
-export const signOut = async () => {
-  await requestApi('/auth/logout', { method: 'POST', allowUnauthorized: true });
+export const signOut = async ({ allDevices = false, expectedUserId } = {}) => {
+  await requestApi(allDevices ? '/auth/logout-all' : '/auth/logout', {
+    method: 'POST', body: {}, expectedUserId, allowUnauthorized: !allDevices,
+  });
 };
 
 export const refreshSession = async () => {

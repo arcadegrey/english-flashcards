@@ -1,12 +1,16 @@
+import PageLoadBoundary from './components/PageLoadBoundary.jsx'
+import { mergeWordProgress } from '../shared/wordProgress.js'
+import { getStudyDateKey } from '../shared/studyDate.js'
+import { useStudyDay } from './hooks/useStudyDay.js'
+import { mergeVocabularyList, pickRicherWord } from './utils/vocabularyMerge.js'
 import { WordBookmarksContext } from './context/word-bookmarks-context'
 import { RETIRED_VOCABULARY, activeProgressIds } from '../shared/retiredVocabulary.js'
 import { mergeWordBookmarks } from '../shared/wordBookmarks.js'
-import WordAssignmentSession from './components/classroom/WordAssignmentSession'
 import { wrongReadingQuestions } from '../shared/readingAttempts.js'
 import { submitReadingAssignment } from './utils/classroomApi'
 import { normalizePreferences, mergePreferences } from '../shared/planPreferences.js'
 import { normalizeStudyHistoryItem, normalizeStudyHistory, mergeStudyHistory } from '../shared/studyHistory.js'
-import { useState, useEffect, useMemo, useRef, useCallback } from 'react'
+import { useState, useEffect, useMemo, useRef, useCallback, lazy, Suspense } from 'react'
 import { ThemeProvider } from './context/ThemeContext'
 import { useTheme } from './context/theme-context'
 import {
@@ -20,20 +24,9 @@ import {
 import readings from './data/readings'
 import categories from './data/categories'
 import StudyHub from './components/StudyHub'
-import HomeScreen from './components/HomeScreen'
-import LearningView from './components/LearningView'
-import Statistics from './components/Statistics'
 import AppLayout from './components/layout/AppLayout'
-import WordCollectionView from './components/WordCollectionView'
-import ToeflSelectionView from './components/ToeflSelectionView'
-import ReadingSessionView from './components/ReadingSessionView'
-import ExamPracticeView from './components/ExamPracticeView'
-import PlanSettingsView from './components/PlanSettingsView'
-import AuthPanel from './components/AuthPanel'
-import ClassroomView from './components/ClassroomView'
 import ExamHistoryProvider from './context/ExamHistoryProvider'
 import { getAccountRoleLabel } from './utils/classroom'
-import VoiceSettings from './components/VoiceSettings'
 import { storage, WORD_BOOKMARKS_STORAGE_KEY } from './utils/storage'
 import { getExamVocabulary, getPlanVocabulary, getPlanWordStats, normalizePlanCategory, recordPlanExamAnswer } from './utils/studyPlan'
 import { buildWordLookup, isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from './utils/readingText'
@@ -41,7 +34,6 @@ import { calculateNextReview, getWordsForReview, initializeWordProgress } from '
 import { speak } from './utils/speech'
 import {
   getWordCategories,
-  mergeCategoryLists,
   wordBelongsToCategory,
   getWordIeltsLists,
   wordHasIeltsCategory,
@@ -57,6 +49,19 @@ import {
   signUpWithEmail,
   upsertCloudProgress,
 } from './utils/workerAuth'
+
+const WordAssignmentSession = lazy(() => import('./components/classroom/WordAssignmentSession'))
+const HomeScreen = lazy(() => import('./components/HomeScreen'))
+const LearningView = lazy(() => import('./components/LearningView'))
+const Statistics = lazy(() => import('./components/Statistics'))
+const WordCollectionView = lazy(() => import('./components/WordCollectionView'))
+const ToeflSelectionView = lazy(() => import('./components/ToeflSelectionView'))
+const ReadingSessionView = lazy(() => import('./components/ReadingSessionView'))
+const ExamPracticeView = lazy(() => import('./components/ExamPracticeView'))
+const PlanSettingsView = lazy(() => import('./components/PlanSettingsView'))
+const AuthPanel = lazy(() => import('./components/AuthPanel'))
+const ClassroomView = lazy(() => import('./components/ClassroomView'))
+const VoiceSettings = lazy(() => import('./components/VoiceSettings'))
 
 const TOEFL_UNKNOWN_LEVEL = 'unknown'
 const TOEFL_UNKNOWN_LIST = 'unknown'
@@ -82,31 +87,6 @@ const dedupeIdList = (list) => {
   return result
 }
 
-const countFilledFields = (word) => {
-  if (!word || typeof word !== 'object') return 0
-  const keys = ['phonetic', 'pos', 'meaning', 'example', 'exampleCn', 'category', 'categories', 'level', 'list', 'ieltsList', 'ieltsLists']
-  return keys.reduce((count, key) => {
-    const value = Array.isArray(word[key]) ? word[key].join('|') : String(word[key] ?? '').trim()
-    return value ? count + 1 : count
-  }, 0)
-}
-
-const pickRicherWord = (currentWord, incomingWord) => {
-  if (!currentWord) return incomingWord
-  if (!incomingWord) return currentWord
-  const pickedWord = countFilledFields(incomingWord) >= countFilledFields(currentWord) ? incomingWord : currentWord
-  const categories = mergeCategoryLists(currentWord.categories, currentWord.category, incomingWord.categories, incomingWord.category)
-
-  if (categories.length === 0) {
-    return pickedWord
-  }
-
-  return {
-    ...pickedWord,
-    category: pickedWord.category || categories[0],
-    categories,
-  }
-}
 
 const mergeCustomWordList = (baseList, extraList) => {
   const map = new Map()
@@ -124,38 +104,6 @@ const mergeCustomWordList = (baseList, extraList) => {
   return Array.from(map.values())
 }
 
-const mergeVocabularyList = (baseList, extraList) => {
-  const byId = new Map()
-  const byWord = new Map()
-  const merged = []
-
-  const upsertWord = (word) => {
-    if (!word || typeof word !== 'object') return
-    const idKey = word.id == null ? '' : String(word.id)
-    const wordKey = String(word.word || '').trim().toLowerCase()
-    let existingIndex = idKey ? byId.get(idKey) : undefined
-    if (existingIndex === undefined && wordKey) {
-      existingIndex = byWord.get(wordKey)
-    }
-
-    if (existingIndex !== undefined) {
-      const current = merged[existingIndex]
-      const nextWord = pickRicherWord(current, word)
-      merged[existingIndex] = nextWord
-      if (nextWord.id != null) byId.set(String(nextWord.id), existingIndex)
-      if (nextWord.word) byWord.set(String(nextWord.word).trim().toLowerCase(), existingIndex)
-      return
-    }
-
-    const nextIndex = merged.length
-    merged.push(word)
-    if (idKey) byId.set(idKey, nextIndex)
-    if (wordKey) byWord.set(wordKey, nextIndex)
-  }
-
-  ;[...(Array.isArray(baseList) ? baseList : []), ...(Array.isArray(extraList) ? extraList : [])].forEach(upsertWord)
-  return merged.sort((a, b) => Number(a.id || 0) - Number(b.id || 0))
-}
 
 const normalizeRecord = (value) => (value && typeof value === 'object' && !Array.isArray(value) ? value : {})
 
@@ -203,10 +151,7 @@ const mergeProgress = (localProgress, cloudProgress) => {
     learnedWords: [...(cloudProgress.learnedWords || []), ...(localProgress.learnedWords || [])],
     masteredWords: [...(cloudProgress.masteredWords || []), ...(localProgress.masteredWords || [])],
     customWords: mergeCustomWordList(cloudProgress.customWords || [], localProgress.customWords || []),
-    wordProgress: {
-      ...(cloudProgress.wordProgress || {}),
-      ...(localProgress.wordProgress || {}),
-    },
+    wordProgress: mergeWordProgress(cloudProgress.wordProgress, localProgress.wordProgress),
     wrongWords: [...(cloudProgress.wrongWords || []), ...(localProgress.wrongWords || [])],
     studyHistory: mergeStudyHistory(cloudProgress.studyHistory || [], localProgress.studyHistory || []),
     preferences: mergePreferences(cloudProgress?.preferences, localProgress?.preferences),
@@ -383,6 +328,7 @@ const sortNumericKeyWithUnknownLast = (a, b, unknownKey) => {
 }
 
 function AppContent() {
+  const studyDay = useStudyDay()
   const [initialLocalProgress] = useState(() => {
     try { return storage.switchLearningAccount(storage.getAuthSession()?.user?.id) }
     catch { return storage.getLearningSnapshot() }
@@ -466,11 +412,12 @@ function AppContent() {
     const previousFocus = document.activeElement
     const previousOverflow = document.body.style.overflow
     const modal = authModalRef.current
-    const getFocusable = () => [...modal.querySelectorAll('button:not(:disabled), input:not(:disabled)')]
+    const getFocusable = () => [...(modal?.querySelectorAll('button:not(:disabled), input:not(:disabled)') || [])]
       .filter((element) => element.getClientRects().length > 0)
 
     document.body.style.overflow = 'hidden'
-    getFocusable()[0]?.focus()
+    const initialFocus = getFocusable()[0] || modal
+    initialFocus?.focus()
 
     const handleModalKey = (event) => {
       if (event.key === 'Escape') {
@@ -482,7 +429,7 @@ function AppContent() {
       const first = focusable[0]
       const last = focusable.at(-1)
       if (!first) return
-      if (!modal.contains(document.activeElement) || (event.shiftKey && document.activeElement === first)) {
+      if (!modal?.contains(document.activeElement) || (event.shiftKey && document.activeElement === first)) {
         event.preventDefault()
         const target = event.shiftKey ? last : first
         target.focus()
@@ -572,7 +519,7 @@ function AppContent() {
     [readingRetry, activeReadingAssignment, readingLibrary, selectedReadingId]
   )
   const todayStudyStats = useMemo(() => {
-    const today = new Date().toISOString().split('T')[0]
+    const today = studyDay
     const todayData = studyHistory.find((item) => item.date === today) || {}
     return {
       wordsLearned: Number(todayData.wordsLearned || 0),
@@ -584,7 +531,7 @@ function AppContent() {
       examQuestionsCorrect: Number(todayData.examQuestionsCorrect || 0),
       readingArticleIds: uniqueStringList(todayData.readingArticleIds),
     }
-  }, [studyHistory])
+  }, [studyHistory, studyDay])
   const suggestedReading = useMemo(
     () =>
       readingLibrary.find((item) => item.examType === 'IELTS' && String(item.level).toUpperCase() === 'B2') ||
@@ -622,9 +569,9 @@ function AppContent() {
   const planCategoryName = categories.find((category) => category.id === studyPlanCategory)?.name || '全部单词'
   const planVocabulary = useMemo(() => getPlanVocabulary(allVocabulary, studyPlanCategory), [allVocabulary, studyPlanCategory])
   const planWordCount = studyPlanCategory === 'all' ? wordCounts.all : wordCounts[studyPlanCategory] || 0
-  const planWordStats = useMemo(() => getPlanWordStats(planVocabulary, wordProgress, learnedWords, masteredWords),
-    [planVocabulary, wordProgress, learnedWords, masteredWords])
-  const planExamStats = planExamActivity.date === new Date().toISOString().slice(0, 10)
+  const planWordStats = useMemo(() => getPlanWordStats(planVocabulary, wordProgress, learnedWords, masteredWords, studyDay),
+    [planVocabulary, wordProgress, learnedWords, masteredWords, studyDay])
+  const planExamStats = planExamActivity.date === getStudyDateKey()
     ? planExamActivity.categories?.[studyPlanCategory] || {} : {}
   const planTodayWordsLearned = studyPlanCategory === 'all'
     ? todayStudyStats.wordsLearned + todayStudyStats.wordsMastered : planWordStats.todayStudied
@@ -1488,7 +1435,7 @@ function AppContent() {
     }
   }
 
-  const handleAuthLogout = async () => {
+  const handleAuthLogout = async ({ allDevices = false } = {}) => {
     if (authSession?.access_token && authUser?.id) {
       try {
         await flushCloudProgress()
@@ -1498,11 +1445,8 @@ function AppContent() {
     }
 
     if (authSession?.access_token) {
-      try {
-        await signOut()
-      } catch {
-        // Logout failure does not block local sign-out.
-      }
+      // Do not report remote revocation as successful when the request failed.
+      await signOut({ allDevices, expectedUserId: authUser?.id })
     }
 
     const guestProgress = storage.switchLearningAccount(null, latestProgressRef.current)
@@ -1605,9 +1549,9 @@ function AppContent() {
     return result
   }
 
-  const handleModalLogout = async () => {
-    await handleAuthLogout()
-    showNotice('已退出登录。', 'info')
+  const handleModalLogout = async (options = {}) => {
+    await handleAuthLogout(options)
+    showNotice(options.allDevices ? '已退出全部设备。' : '已退出当前设备。', 'info')
   }
 
   const handleModalSyncNow = async () => {
@@ -1736,7 +1680,7 @@ function AppContent() {
             timeSpent: timeSpentDelta,
             ...extraDelta,
           }
-    const today = new Date().toISOString().split('T')[0]
+    const today = getStudyDateKey()
     setStudyHistory((prev) => {
       const safeList = normalizeStudyHistory(prev)
       const index = safeList.findIndex((item) => item.date === today)
@@ -1774,7 +1718,7 @@ function AppContent() {
 
   const recordReadingCompletion = ({ articleId, questionsAnswered = 0, questionsCorrect = 0, timeSpent = 0 } = {}) => {
     if (articleId == null) return
-    const today = new Date().toISOString().split('T')[0]
+    const today = getStudyDateKey()
     const articleKey = String(articleId)
 
     setStudyHistory((prev) => {
@@ -2455,7 +2399,7 @@ function AppContent() {
   }, [learnedWords, masteredWords, vocabularyMap])
 
   const todayReviewWordList = useMemo(() => {
-    const dueWords = getWordsForReview(reviewBaseWordList, wordProgress)
+    const dueWords = getWordsForReview(reviewBaseWordList, wordProgress, studyDay)
     const uninitializedWords = reviewBaseWordList.filter((word) => !wordProgress?.[word.id])
     const seen = new Set()
     return [...dueWords, ...uninitializedWords].filter((word) => {
@@ -2464,7 +2408,7 @@ function AppContent() {
       seen.add(key)
       return true
     })
-  }, [reviewBaseWordList, wordProgress])
+  }, [reviewBaseWordList, wordProgress, studyDay])
 
   const wrongWordList = useMemo(
     () => wrongWords.map((id) => vocabularyMap.get(id)).filter(Boolean),
@@ -2482,28 +2426,32 @@ function AppContent() {
           className="auth-modal-backdrop absolute inset-0"
           onClick={() => setShowAuthModal(false)}
         />
-        <div ref={authModalRef} className="auth-modal-card" role="dialog" aria-modal="true" aria-label="账号与云同步">
-          <AuthPanel
-            enabled={cloudEnabled}
-            loading={authLoading}
-            user={authUser}
-            learnedCount={learnedWords.length}
-            masteredCount={masteredWords.length}
-            onClose={() => setShowAuthModal(false)}
-            onOpenSavedWords={handleOpenSavedWords}
-            syncStatusText={getSyncStatusText({
-              authLoading,
-              hasUser: Boolean(authUser?.id),
-              syncState,
-              lastSyncedAt,
-            })}
-            syncError={syncError || authError}
-            onLogin={handleModalLogin}
-            onRegister={handleModalRegister}
-            onLogout={handleModalLogout}
-            onSyncNow={handleModalSyncNow}
-            onOpenClassroom={handleOpenClassroom}
-          />
+        <div ref={authModalRef} className="auth-modal-card" tabIndex={-1} role="dialog" aria-modal="true" aria-label="账号与云同步">
+          <PageLoadBoundary>
+            <Suspense fallback={<p className="auth-loading-text" role="status">正在准备账号面板…</p>}>
+              <AuthPanel
+                enabled={cloudEnabled}
+                loading={authLoading}
+                user={authUser}
+                learnedCount={learnedWords.length}
+                masteredCount={masteredWords.length}
+                onClose={() => setShowAuthModal(false)}
+                onOpenSavedWords={handleOpenSavedWords}
+                syncStatusText={getSyncStatusText({
+                  authLoading,
+                  hasUser: Boolean(authUser?.id),
+                  syncState,
+                  lastSyncedAt,
+                })}
+                syncError={syncError || authError}
+                onLogin={handleModalLogin}
+                onRegister={handleModalRegister}
+                onLogout={handleModalLogout}
+                onSyncNow={handleModalSyncNow}
+                onOpenClassroom={handleOpenClassroom}
+              />
+            </Suspense>
+          </PageLoadBoundary>
         </div>
       </div>
     )
@@ -2822,7 +2770,7 @@ function AppContent() {
             onSyncAccount={handleHomeSync}
             onCompleteReading={recordReadingCompletion}
             isCompletedToday={todayStudyStats.readingArticleIds.includes(String(selectedReading?.id))}
-            completedResult={studyHistory.find((day) => day.date === new Date().toISOString().slice(0, 10))?.readingArticleResults?.find((result) => result.articleId === String(selectedReading?.id))}
+            completedResult={studyHistory.find((day) => day.date === getStudyDateKey())?.readingArticleResults?.find((result) => result.articleId === String(selectedReading?.id))}
           />
         )
       case 'toeflLevels':
@@ -3099,34 +3047,19 @@ function AppContent() {
     }
   }
 
-  if (
-    view === 'studyHub' ||
-    view === 'planSettings' ||
-    view === 'home' ||
-    view === 'learn' ||
-    view === 'learnedWords' ||
-    view === 'masteredWords' ||
-    view === 'savedWords' ||
-    view === 'todayReview' ||
-    view === 'wrongWords' ||
-    view === 'readingSession' ||
-    view === 'statistics' ||
-    view === 'examPractice'
-  ) {
-    return (
-      <div className={`min-h-screen ${appBackground}`}>
-        <WordBookmarksContext.Provider value={wordBookmarkContext}><ExamHistoryProvider key={authUser?.id || 'guest'} ownerId={authUser?.id}>{renderView()}</ExamHistoryProvider></WordBookmarksContext.Provider>
-        {showVoiceSettings && <VoiceSettings onClose={() => setShowVoiceSettings(false)} />}
-        {renderAuthModal()}
-        {renderAuthTransitionOverlay()}
-      </div>
-    )
-  }
 
   return (
     <div className={`min-h-screen ${appBackground}`}>
-      <WordBookmarksContext.Provider value={wordBookmarkContext}><ExamHistoryProvider key={authUser?.id || 'guest'} ownerId={authUser?.id}>{renderView()}</ExamHistoryProvider></WordBookmarksContext.Provider>
-      {showVoiceSettings && <VoiceSettings onClose={() => setShowVoiceSettings(false)} />}
+      <WordBookmarksContext.Provider value={wordBookmarkContext}>
+        <ExamHistoryProvider key={authUser?.id || 'guest'} ownerId={authUser?.id}>
+          <PageLoadBoundary key={view}>
+            <Suspense fallback={<p className="auth-loading-text" role="status">正在准备学习页面…</p>}>
+              {renderView()}
+            </Suspense>
+          </PageLoadBoundary>
+        </ExamHistoryProvider>
+      </WordBookmarksContext.Provider>
+      {showVoiceSettings && <PageLoadBoundary><Suspense fallback={<p role="status">正在准备语音设置…</p>}><VoiceSettings onClose={() => setShowVoiceSettings(false)} /></Suspense></PageLoadBoundary>}
       {renderAuthModal()}
       {renderAuthTransitionOverlay()}
     </div>

@@ -1,3 +1,4 @@
+import { getStudyDateKey } from '../shared/studyDate.js';
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import { createClassroomFixture } from './helpers/classroom-db.mjs'
@@ -79,7 +80,7 @@ test('joining is idempotent; the owning teacher sees synced progress and only sh
     learnedWords: [1, 'custom-shared'], masteredWords: [2], wrongWords: [1],
     customWords: [{ id: 'custom-shared', word: 'shared', meaning: '已学习的自定义词' }, { id: 'private', word: 'private', meaning: '未学习的自定义词' }],
     wordProgress: { 1: { lastReviewed: new Date().toISOString() }, private: { lastReviewed: 'private' } },
-    studyHistory: [{ date: new Date().toISOString().slice(0, 10), wordsLearned: 2, wordsMastered: 1 }],
+    studyHistory: [{ date: getStudyDateKey(), wordsLearned: 2, wordsMastered: 1 }],
   } })
   assert.equal(saved.status, 200)
   const roster = await f.api(1, `/classes/${id}/students`)
@@ -156,7 +157,7 @@ test('roster pagination counts all enrolled students and exposes only the reques
 test('reading records survive SQL sync conflicts and appear in the owning teacher roster and details', async () => {
   const f = await setup()
   try {
-    const date = new Date().toISOString().slice(0, 10)
+    const date = getStudyDateKey()
     await f.api(2, '/classes/join', 'POST', { inviteCode: f.classroom.inviteCode })
     const makeProgress = (articleId, correct) => ({ studyHistory: [{ date,
       readingsCompleted: 1, readingQuestionsAnswered: 5, readingQuestionsCorrect: correct,

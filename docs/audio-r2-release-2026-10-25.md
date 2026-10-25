@@ -1,5 +1,7 @@
 # 版本音频R2发布（2026-10-25）
 
+后续发布：`audio-updates/2026-10-25-followup/` 新增 400 个音频与一份清单，已逐个公开读取核验；当前版本音频合计 2436 个，旧对象保留。后续批次回执见 `data/vocabulary-followup/audio-r2-release-2026-10-25.json`，73 条内容复核见 `vocabulary-followup-73-2026-10-25.md`。下文保留原 2036 个音频的发布记录。
+
 ## 发布范围
 
 使用用户指定的 cloudflare-deploy 技能，经 `wrangler whoami` 核验现有账号，上传到已有 `english-flashcards-audio` 桶。没有新建桶或改动D1。

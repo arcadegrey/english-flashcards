@@ -15,6 +15,7 @@ import { EXPANSION_SEVEN_WORD_NOTES } from '../src/data/expansionSevenWordNotes.
 import { EXPANSION_EIGHT_WORD_NOTES } from '../src/data/expansionEightWordNotes.js';
 import { EXPANSION_NINE_WORD_NOTES } from '../src/data/expansionNineWordNotes.js';
 import { getCoreWordHints } from '../src/utils/wordHints.js';
+import { getReviewedWordHints } from '../src/data/reviewedWordNotes.js';
 
 const vocabulary = JSON.parse(await readFile(new URL('../public/data/vocabulary.json', import.meta.url), 'utf8'));
 const words = new Set(Object.keys(CORE_WORD_NOTES));
@@ -30,16 +31,19 @@ const synonymCount = groups.filter(group => !group.comparisonType || group.compa
 const confusableCount = groups.filter(group => group.comparisonType === 'confusable').length;
 const usageCount = groups.filter(group => group.comparisonType === 'usage').length;
 const corrections = groups.filter(group => group.correction?.canonical);
+const reviewedEntries = vocabulary.map(entry => ({ entry, hints: getReviewedWordHints(entry) })).filter(item => item.hints);
 const lines = [
   '# 核心词提示覆盖率与新增批次来源', '',
   '汇总日期：2026-10-25（逐条核对日期保留在来源与内容中）。运行 `node scripts/report-word-notes.mjs > docs/word-notes-coverage.md` 可重新生成。', '',
   '## 覆盖口径', '',
   `- 活动词库记录（稳定 ID）：${vocabulary.length}；历史兼容记录：${RETIRED_VOCABULARY.length}；已登记提示（含历史）：${words.size}；可展示提示（含历史）：${displayed.length}。`,
   `- 内容：${groups.length} 组（近义 ${synonymCount}；易混 ${confusableCount}；单词用法 ${usageCount}），共 ${groups.reduce((sum, group) => sum + group.examples.length, 0)} 条双语例句。`,
+  `- 当前另有 ${reviewedEntries.length} 条按稳定 ID 复核的提示覆盖原组内容，不增加覆盖词数；下方旧组数据保留为编辑来源，实际显示内容见“按 ID 复核的教学义项”。`,
   `- 构词／词族说明：${withFormation} 词，${Object.keys(CORE_WORD_FORMATIONS).length} 组。此次保留原有构词，不为凑覆盖率增加推断。`,
   `- 显式例句词形：${exampleForms.length} 处，逐例登记词头、实际词形、来源和核对状态；不自动推断未标注词形。`,
   `- 显式规范拼写／表达映射：${corrections.length} 组；保留原词条键和用户记录，提示说明规范拼写或推荐表达，例句使用已核验目标。`,
   `- 待核验条目：${pending.length}；缺失来源的条目：${missingSources.length}；无法匹配原词库的提示：${orphaned.length}。`,
+  '- 上行仅检查提示来源登记和映射状态，不表示词库音标、义项或独立语言审校已经完成；剩余问题见 `vocabulary-quality-followup.json`。',
   '- 未覆盖的词继续使用词条基础提示；无构词内容不代表该词没有构词关系。',
   '- source-checked 表示已参考公开词条／语法资料核对。本项目综合这些事实编写中文辨析与原创例句，未导入词典原文；独立语言专家审校仍待进行。',
   '- 分类别统计按 categories（缺失时按 category）计算，一个词可属于多个类别，不能将行数相加作为独立词数。', '',
@@ -50,6 +54,11 @@ for (const category of ['daily', 'cet4', 'cet6', 'toefl', 'ielts']) {
   const entries = vocabulary.filter(entry => (entry.categories || [entry.category]).includes(category));
   const covered = entries.filter(entry => words.has(vocabularyNoteKey(entry)));
   lines.push(`| ${category} | ${entries.length} | ${covered.length} | ${(covered.length / entries.length * 100).toFixed(2)}% | ${covered.filter(entry => CORE_WORD_NOTES[vocabularyNoteKey(entry)].formation).length} |`);
+}
+lines.push('', '## 按 ID 复核的教学义项', '',
+  '| ID | 词条 | 当前教学范围 | 当前来源 |', '| ---: | --- | --- | --- |');
+for (const { entry, hints } of reviewedEntries) {
+  for (const hint of hints) lines.push(`| ${entry.id} | ${entry.word} | ${hint.scope} | ${hint.sources.map(source => `[${source.title}](${source.url})`).join('、')} |`);
 }
 lines.push('', '## 规范拼写与表达映射', '',
   '| 原词条 | 例句目标 | 核对说明 | 来源 |', '| --- | --- | --- | --- |');

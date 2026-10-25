@@ -1,3 +1,4 @@
+import { getStudyDateKey, shiftStudyDate, studyDayStart } from '../../shared/studyDate.js';
 // SM-2 Spaced Repetition Algorithm Implementation
 // Based on the SuperMemo-2 algorithm
 
@@ -52,8 +53,7 @@ export const calculateNextReview = (wordProgress = {}, rating) => {
   }
 
   // Calculate next review date
-  const nextReview = new Date();
-  nextReview.setDate(nextReview.getDate() + interval);
+  const nextReview = new Date(studyDayStart(shiftStudyDate(getStudyDateKey(), interval)));
 
   return {
     nextReview,
@@ -69,9 +69,7 @@ export const calculateNextReview = (wordProgress = {}, rating) => {
  * @param {Object} wordProgress - Word progress data { wordId: { nextReview, ... } }
  * @returns {Array} - Words due for review
  */
-export const getWordsForReview = (allWords, wordProgress = {}) => {
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
+export const getWordsForReview = (allWords, wordProgress = {}, day = getStudyDateKey()) => {
 
   return allWords.filter((word) => {
     const progress = wordProgress[word.id];
@@ -81,11 +79,10 @@ export const getWordsForReview = (allWords, wordProgress = {}) => {
       return false; // New words handled separately in learn mode
     }
 
-    const nextReviewDate = new Date(progress.nextReview);
-    nextReviewDate.setHours(0, 0, 0, 0);
+    const nextReviewDate = getStudyDateKey(progress.nextReview || '');
 
     // Due if next review is today or in the past
-    return nextReviewDate <= today;
+    return Boolean(nextReviewDate) && nextReviewDate <= day;
   });
 };
 
@@ -107,8 +104,7 @@ export const initializeWordProgress = () => ({
  * @returns {Object} - Statistics object
  */
 export const getReviewStats = (allWords, wordProgress = {}) => {
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
+  const today = getStudyDateKey();
 
   let dueCount = 0;
   let learnedCount = 0;
@@ -127,10 +123,9 @@ export const getReviewStats = (allWords, wordProgress = {}) => {
       learnedCount++;
     }
 
-    const nextReviewDate = new Date(progress.nextReview);
-    nextReviewDate.setHours(0, 0, 0, 0);
+    const nextReviewDate = getStudyDateKey(progress.nextReview || '');
 
-    if (nextReviewDate <= today) {
+    if (nextReviewDate && nextReviewDate <= today) {
       dueCount++;
     }
   });
@@ -150,8 +145,7 @@ export const getReviewStats = (allWords, wordProgress = {}) => {
  * @returns {Object} - { overdue: [], due: [], upcoming: [] }
  */
 export const getWordsByPriority = (allWords, wordProgress = {}) => {
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
+  const today = getStudyDateKey();
 
   const overdue = [];
   const due = [];
@@ -164,10 +158,9 @@ export const getWordsByPriority = (allWords, wordProgress = {}) => {
       return;
     }
 
-    const nextReviewDate = new Date(progress.nextReview);
-    nextReviewDate.setHours(0, 0, 0, 0);
+    const nextReviewDate = getStudyDateKey(progress.nextReview || '');
 
-    const daysUntilReview = Math.ceil((nextReviewDate - today) / (1000 * 60 * 60 * 24));
+    const daysUntilReview = Math.round((Date.parse(nextReviewDate) - Date.parse(today)) / 86400000);
 
     if (daysUntilReview < 0) {
       overdue.push({ ...word, daysOverdue: Math.abs(daysUntilReview), ...progress });

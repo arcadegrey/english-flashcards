@@ -1,3 +1,4 @@
+import { studyDayStart } from '../shared/studyDate.js';
 import { weekRange, buildWeeklyReport } from '../shared/weeklyReport.js';
 import catalog from './data/assignment-vocabulary.json' with { type: 'json' };
 import articles from '../src/data/readings.js';
@@ -20,7 +21,7 @@ export async function handleWeeklyReport(request, env, user) {
     range = weekRange(week || new Date());
     if (range.start > weekRange().start) throw new Error();
   } catch { return json({ error: '请选择有效的本周或历史周。' }, 400); }
-  const db = env.DB, from = `${range.start}T00:00:00.000Z`, to = `${range.end}T00:00:00.000Z`;
+  const db = env.DB, from = studyDayStart(range.start), to = studyDayStart(range.end);
   const results = await Promise.all([
     db.prepare(`SELECT u.id,u.email,p.display_name,up.study_history,up.updated_at FROM class_memberships m
       JOIN users u ON u.id=m.student_id JOIN account_profiles p ON p.user_id=u.id AND p.role='student'

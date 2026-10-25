@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import { useWordBookmarks } from '../context/word-bookmarks-context';
-import { getHintExampleParts, getWordHints, getWordMeaningLine } from '../utils/wordHints';
+import { getWordMeaningLine } from '../utils/wordHintPresentation.js';
+import { useWordHints } from '../hooks/useWordHints.js';
 import { speakExample, speakWord } from '../utils/speech';
+import '../styles/word-learning-refresh.css';
 
 function WordCard({ word, showHint = false }) {
   const bookmarks = useWordBookmarks();
   const [notice, setNotice] = useState(null);
   const isSaved = Boolean(bookmarks?.entries?.[String(word?.id)]?.saved);
-  const hints = getWordHints(word || {});
+  const { hints, status: hintStatus, error: hintError, retry: retryHints } = useWordHints(word);
   const toggleSaved = () => {
     try {
       bookmarks.toggle(word.id, !isSaved);
@@ -98,6 +100,8 @@ function WordCard({ word, showHint = false }) {
       <section className={`learn-refresh-expandable ${showHint ? 'is-open' : ''}`} aria-hidden={!showHint} inert={!showHint}>
         <div className="learn-refresh-expandable-inner">
           <h2 className="learn-refresh-expandable-title">学习提示</h2>
+          {hintStatus && <p className="learn-refresh-hint-scope" role="status">{hintStatus}</p>}
+          {hintError && <button type="button" className="learn-refresh-example-audio" onClick={retryHints}>重试加载提示</button>}
           {hints.map((hint, index) => (
             <div key={hint.label} className="learn-refresh-hint-item" style={{ '--hint-index': index }}>
               <span className="learn-refresh-hint-label">{hint.label}</span>
@@ -109,7 +113,7 @@ function WordCard({ word, showHint = false }) {
               </p>
               {hint.examples?.map((example) => (
                 <p className="learn-refresh-hint-example" key={example.en}>
-                  <span lang="en">{getHintExampleParts(example, hint.exampleWords).map((part, partIndex) =>
+                  <span lang="en">{(example.parts || [{ text: example.en, highlighted: false }]).map((part, partIndex) =>
                     part.highlighted ? <strong key={partIndex}>{part.text}</strong> : part.text
                   )}</span><br />
                   <span>{example.zh}</span>

@@ -711,8 +711,8 @@
   {
     "id": 4718,
     "word": "traffic regulations",
-    "phonetic": "",
-    "pos": "n.",
+    "phonetic": "/ˈtræfɪk ˌreɡjuˈleɪʃnz/",
+    "pos": "n. phr.",
     "meaning": "交通规则",
     "example": "Drivers must obey traffic regulations.",
     "exampleCn": "司机必须遵守交通规则。",
@@ -728,8 +728,8 @@
   {
     "id": 4719,
     "word": "traffic jam",
-    "phonetic": "",
-    "pos": "n.",
+    "phonetic": "/ˈtræfɪk dʒæm/",
+    "pos": "n. phr.",
     "meaning": "交通堵塞",
     "example": "We were stuck in a traffic jam for over an hour.",
     "exampleCn": "我们在交通堵塞中被堵了一个多小时。",
@@ -745,8 +745,8 @@
   {
     "id": 4720,
     "word": "traffic congestion",
-    "phonetic": "",
-    "pos": "n.",
+    "phonetic": "/ˈtræfɪk kənˈdʒestʃən/",
+    "pos": "n. phr.",
     "meaning": "交通拥堵",
     "example": "Traffic congestion is a major problem in big cities.",
     "exampleCn": "交通拥堵是大城市的一个主要问题。",

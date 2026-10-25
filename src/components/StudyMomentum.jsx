@@ -1,3 +1,4 @@
+import { useStudyDay } from '../hooks/useStudyDay.js';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { BaseCard } from './ui/Cards';
 import { LinearProgress } from './ui/Progress';
@@ -8,8 +9,8 @@ import '../styles/study-momentum.css';
 export default function StudyMomentum({ ownerId, history, wordsDone, readingDone, examDone, allDone, ready = true }) {
   const [notice, setNotice] = useState('');
   const [trigger, setTrigger] = useState(0);
-  const progress = useMemo(() => studyRewardProgress(history), [history]);
-  const today = new Date().toISOString().slice(0, 10);
+  const today = useStudyDay();
+  const progress = useMemo(() => studyRewardProgress(history, new Date(`${today}T12:00:00+08:00`)), [history, today]);
   const seenInMemory = useRef(new Set());
   useEffect(() => {
     if (!ready) return;

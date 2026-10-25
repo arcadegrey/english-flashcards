@@ -1,3 +1,4 @@
+import { getStudyDateKey } from '../../shared/studyDate.js';
 import { wordBelongsToCategory } from './wordCategories.js'
 
 import { PLAN_CATEGORY_IDS } from '../../shared/planPreferences.js'
@@ -15,10 +16,10 @@ export const getExamVocabulary = (vocabulary, { category = 'all', scope = 'all',
   return categoryWords.filter((word) => ids.has(String(word.id)))
 }
 
-export const getPlanWordStats = (vocabulary, wordProgress, learnedWords, masteredWords, date = new Date().toISOString().slice(0, 10)) => {
+export const getPlanWordStats = (vocabulary, wordProgress, learnedWords, masteredWords, date = getStudyDateKey()) => {
   const seenIds = new Set([...learnedWords, ...masteredWords].map(String))
   const masteredIds = new Set(masteredWords.map(String))
-  const reviewedToday = vocabulary.filter((word) => String(wordProgress[word.id]?.lastReviewed || '').slice(0, 10) === date)
+  const reviewedToday = vocabulary.filter((word) => getStudyDateKey(wordProgress[word.id]?.lastReviewed || '') === date)
   return {
     todayStudied: reviewedToday.length,
     todayMastered: reviewedToday.filter((word) => masteredIds.has(String(word.id))).length,
@@ -26,7 +27,7 @@ export const getPlanWordStats = (vocabulary, wordProgress, learnedWords, mastere
   }
 }
 
-export const recordPlanExamAnswer = (activity, category, isCorrect, date = new Date().toISOString().slice(0, 10)) => {
+export const recordPlanExamAnswer = (activity, category, isCorrect, date = getStudyDateKey()) => {
   const categories = activity?.date === date ? activity.categories || {} : {}
   const current = categories[category] || {}
   return {

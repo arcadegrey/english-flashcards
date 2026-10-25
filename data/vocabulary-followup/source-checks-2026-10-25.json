@@ -1,0 +1,954 @@
+{
+  "scope": "词典网页事实核对；仅保存来源信息和音标事实，不复制释义或例句正文。",
+  "sources": [
+    {
+      "url": "https://www.merriam-webster.com/dictionary/earlier",
+      "title": "EARLIER Definition & Meaning - Merriam-Webster",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/planning",
+      "title": "PLANNING Definition & Meaning - Merriam-Webster",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/terms",
+      "title": "TERMS Definition & Meaning - Merriam-Webster",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/thanks",
+      "title": "THANKS Definition & Meaning - Merriam-Webster",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/including",
+      "title": "including preposition - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ɪnˈkluːdɪŋ"
+      ]
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/inc",
+      "title": "INC Definition & Meaning - Merriam-Webster",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/corp",
+      "title": "CORP Definition & Meaning - Merriam-Webster",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/CEO",
+      "title": "CEO Definition & Meaning - Merriam-Webster",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/wholeheartedly",
+      "title": "wholeheartedly adverb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˌhəʊlˈhɑːtɪdli",
+        "ˌhəʊlˈhɑːrtɪdli"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/raw-material",
+      "title": "raw material noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˌrɔː məˈtɪəriəl",
+        "ˌrɔː məˈtɪriəl"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/beverage",
+      "title": "beverage noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈbevərɪdʒ"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/soy-sauce",
+      "title": "soy sauce noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˌsɔɪ ˈsɔːs"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/traffic-jam",
+      "title": "traffic jam noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈtræfɪk dʒæm"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/congestion",
+      "title": "congestion noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "kənˈdʒestʃən"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/regulation",
+      "title": "regulation noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˌreɡjuˈleɪʃn"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/establish",
+      "title": "establish verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ɪˈstæblɪʃ"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/nation",
+      "title": "nation noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈneɪʃn"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/other",
+      "title": "other adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈʌðə(r)",
+        "ˈʌðər"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/early_1",
+      "title": "early adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈɜːli",
+        "ˈɜːrli"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/planning",
+      "title": "planning noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈplænɪŋ"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/state_1",
+      "title": "state noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "steɪt"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/work_1",
+      "title": "work verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "wɜːk",
+        "wɜːrk",
+        "wɜːks"
+      ],
+      "formEvidence": "音标亦核对已读取词条的 Verb Forms 中明确列出的词形；不由运行时推导。"
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/term_1",
+      "title": "term noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "tɜːm",
+        "tɜːrm"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/corp",
+      "title": "Corp. abbreviation - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/significantly",
+      "title": "significantly adverb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "sɪɡˈnɪfɪkəntli"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/remaining",
+      "title": "remaining adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "rɪˈmeɪnɪŋ"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ceo",
+      "title": "CEO noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˌsiː iː ˈəʊ"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/propose",
+      "title": "propose verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "prəˈpəʊz",
+        "prəˈpəʊzd"
+      ],
+      "formEvidence": "音标亦核对已读取词条的 Verb Forms 中明确列出的词形；不由运行时推导。"
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/dna",
+      "title": "DNA noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˌdiː en ˈeɪ"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/politically",
+      "title": "politically adverb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "pəˈlɪtɪkli"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/depend",
+      "title": "depend verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "dɪˈpend",
+        "dɪˈpendɪŋ"
+      ],
+      "formEvidence": "音标亦核对已读取词条的 Verb Forms 中明确列出的词形；不由运行时推导。"
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/girlfriend",
+      "title": "girlfriend noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈɡɜːlfrend",
+        "ˈɡɜːrlfrend"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/expected",
+      "title": "expected adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ɪkˈspektɪd"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/traditionally",
+      "title": "traditionally adverb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "trəˈdɪʃənəli"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/estimate_1",
+      "title": "estimate verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈestɪmeɪt",
+        "ˈestɪmeɪtɪd"
+      ],
+      "formEvidence": "音标亦核对已读取词条的 Verb Forms 中明确列出的词形；不由运行时推导。"
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lord_1",
+      "title": "lord noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "lɔːd",
+        "lɔːrd"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/freshman",
+      "title": "freshman noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈfreʃmən"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/associated",
+      "title": "associated adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "əˈsəʊsieɪtɪd",
+        "əˈsəʊʃieɪtɪd"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fast_1",
+      "title": "fast adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "fɑːst",
+        "fæst"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/obliged",
+      "title": "obliged adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "əˈblaɪdʒd"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/sexually",
+      "title": "sexually adverb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈsekʃəli"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/organizer",
+      "title": "organizer noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈɔːɡənaɪzə(r)",
+        "ˈɔːrɡənaɪzər"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/impress",
+      "title": "impress verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ɪmˈpres",
+        "ɪmˈprest"
+      ],
+      "formEvidence": "音标亦核对已读取词条的 Verb Forms 中明确列出的词形；不由运行时推导。"
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/hiv",
+      "title": "HIV noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˌeɪtʃ aɪ ˈviː"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/workplace",
+      "title": "workplace noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈwɜːkpleɪs",
+        "ˈwɜːrkpleɪs"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/takeover",
+      "title": "takeover noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈteɪkəʊvə(r)",
+        "ˈteɪkəʊvər"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/genuinely",
+      "title": "genuinely adverb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈdʒenjuɪnli"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/emerging",
+      "title": "emerging adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ɪˈmɜːdʒɪŋ",
+        "ɪˈmɜːrdʒɪŋ"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/bored",
+      "title": "bored adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "bɔːd",
+        "bɔːrd"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/importantly",
+      "title": "importantly adverb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ɪmˈpɔːtntli",
+        "ɪmˈpɔːrtntli"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/privately",
+      "title": "privately adverb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈpraɪvətli"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/vary",
+      "title": "vary verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈveəri",
+        "ˈveri",
+        "ˈværi",
+        "ˈveəriɪŋ"
+      ],
+      "formEvidence": "音标亦核对已读取词条的 Verb Forms 中明确列出的词形；不由运行时推导。"
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/routinely",
+      "title": "routinely adverb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ruːˈtiːnli"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/counselling",
+      "title": "counselling noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈkaʊnsəlɪŋ"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/explicitly",
+      "title": "explicitly adverb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ɪkˈsplɪsɪtli"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/website",
+      "title": "website noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈwebsaɪt"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/theatre",
+      "title": "theatre noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈθɪətə(r)",
+        "ˈθiːətər"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/surprisingly",
+      "title": "surprisingly adverb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "səˈpraɪzɪŋli",
+        "sərˈpraɪzɪŋli"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/wagon",
+      "title": "wagon noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈwæɡən"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/consistently",
+      "title": "consistently adverb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "kənˈsɪstəntli"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/positively",
+      "title": "positively adverb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈpɒzətɪvli",
+        "ˈpɑːzətɪvli"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ironically",
+      "title": "ironically adverb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "aɪˈrɒnɪkli",
+        "aɪˈrɑːnɪkli"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/predominantly",
+      "title": "predominantly adverb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "prɪˈdɒmɪnəntli",
+        "prɪˈdɑːmɪnəntli",
+        "prɪˈdɒmɪnətli",
+        "prɪˈdɑːmɪnətli"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/consultancy",
+      "title": "consultancy noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "kənˈsʌltənsi"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/plunge_1",
+      "title": "plunge verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "plʌndʒ"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/alcoholic_1",
+      "title": "alcoholic adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˌælkəˈhɒlɪk",
+        "ˌælkəˈhɑːlɪk"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/odd",
+      "title": "odd adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ɒd",
+        "ɑːd"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/span_1",
+      "title": "span verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "spæn"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/traffic_1",
+      "title": "traffic noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈtræfɪk"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/online_1",
+      "title": "online adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˌɒnˈlaɪn",
+        "ˌɑːnˈlaɪn"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/october",
+      "title": "October noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ɒkˈtəʊbə(r)",
+        "ɑːkˈtəʊbər"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/november",
+      "title": "November noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "nəʊˈvembə(r)",
+        "nəʊˈvembər"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/february",
+      "title": "February noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈfebruəri",
+        "ˈfebrueri"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/august_1",
+      "title": "august adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ɔːˈɡʌst"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lyric_1",
+      "title": "lyric noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈlɪrɪk"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/fish_1",
+      "title": "fish noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "fɪʃ"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/life_1",
+      "title": "life noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "laɪf",
+        "laɪvz"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/span_2",
+      "title": "span noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "spæn"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/sale",
+      "title": "sale noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "seɪl"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/thanks_1",
+      "title": "thanks exclamation - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "θæŋks"
+      ]
+    },
+    {
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/inc",
+      "title": "Inc. | definition in the Cambridge English Dictionary",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/charlie_1",
+      "title": "charlie noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈtʃɑːli",
+        "ˈtʃɑːrli"
+      ]
+    },
+    {
+      "url": "https://www.computerhistory.org/timeline/computers/?curator=upstract.com",
+      "title": "Computers | Timeline of Computer History | Computer History Museum",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://archive.computerhistory.org/resources/access/text/2018/08/102740418-05-01-acc.pdf",
+      "title": "The 41 year life and trials of",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.computerhistory.org/pdp-1/origins-of-the-pdp-1/",
+      "title": "Origins of the PDP-1 | PDP-1 Restoration Project | Computer History Museum",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://s3data.computerhistory.org/core/core-2010-2011.pdf",
+      "title": "!chm_core10_12-27.indd",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://bitsavers.computerhistory.org/magazines/Datamation/198204.pdf",
+      "title": "FINALLY,AN",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://dictionary.cambridge.org/us/dictionary/essential-british-english/stairs",
+      "title": "STAIRS definition | Cambridge Essential English Dictionary",
+      "checkedAt": "2026-10-25",
+      "method": "web-search-result-read",
+      "dictionaryIpa": [
+        "steəz"
+      ]
+    },
+    {
+      "url": "https://dictionary.cambridge.org/dictionary/english/take-a-bow",
+      "title": "TAKE A BOW | English meaning - Cambridge Dictionary",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.collinsdictionary.com/dictionary/english/korea",
+      "title": "KOREA definition and meaning | Collins English Dictionary",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/august_2",
+      "title": "August noun - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ˈɔːɡəst"
+      ]
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/bow",
+      "title": "BOW Definition & Meaning - Merriam-Webster",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/inc_2",
+      "title": "Inc. abbreviation - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ɪŋk"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/close2_1",
+      "title": "close2 adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "kləʊs"
+      ]
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/oblige",
+      "title": "oblige verb - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "əˈblaɪdʒ",
+        "əˈblaɪdʒd"
+      ],
+      "formEvidence": "音标亦核对已读取词条的 Verb Forms 中明确列出的词形；不由运行时推导。"
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/impressed",
+      "title": "impressed adjective - Definition, pictures, pronunciation and usage notes | Oxford Advanced Learner's Dictionary at OxfordLearnersDictionaries.com",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": [
+        "ɪmˈprest"
+      ]
+    },
+    {
+      "url": "https://www.collinsdictionary.com/dictionary/english/corp",
+      "title": "CORP. definition and meaning | Collins English Dictionary",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/take%20a%20bow",
+      "title": "TAKE A BOW Definition & Meaning - Merriam-Webster",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/freshman",
+      "title": "FRESHMAN Definition & Meaning - Merriam-Webster",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/korea",
+      "title": "Oxford · Korea",
+      "dictionaryIpa": [
+        "kəˈriːə"
+      ],
+      "method": "web-search-result-read",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "url": "https://github.com/cmusphinx/cmudict",
+      "title": "CMU Pronouncing Dictionary · corp / dec",
+      "dictionaryIpa": [],
+      "method": "official-project-and-local-dataset-read",
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/sales",
+      "title": "SALES Definition & Meaning - Merriam-Webster",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/the%20works",
+      "title": "THE WORKS Definition & Meaning - Merriam-Webster",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.computerhistory.org/brochures/d-f/digital-equipment-corporation-dec/",
+      "title": "Digital Equipment Corporation (DEC) | Selling the Computer Revolution | Computer History Museum",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/faster",
+      "title": "FASTER Definition & Meaning - Merriam-Webster",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/waggon",
+      "title": "WAGGON Definition & Meaning - Merriam-Webster",
+      "checkedAt": "2026-10-25",
+      "method": "web-tool-read",
+      "dictionaryIpa": []
+    }
+  ]
+}

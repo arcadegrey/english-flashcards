@@ -49,7 +49,7 @@ export default function ClassWeeklyReport({ classId, userId, refreshKey, onSelec
   const totalPages = Math.max(1, Math.ceil((data?.students.length || 0) / 10));
   const currentPage = Math.min(page, totalPages);
   return <section className="classroom-weekly" aria-label="班级周报">
-    <div className="classroom-heading"><div><span className="classroom-badge">每周学习概览</span><h3>班级周报</h3><p>{week} — {shiftWeek(week, 6)} · 与学习历史一致，按 UTC 周一至周日统计</p></div>
+    <div className="classroom-heading"><div><span className="classroom-badge">每周学习概览</span><h3>班级周报</h3><p>{week} — {shiftWeek(week, 6)} · 按北京时间周一至周日统计；旧日汇总保留原日期</p></div>
       <div className="classroom-actions"><SecondaryButton disabled={busy} onClick={() => chooseWeek(shiftWeek(week, -7))}>上一周</SecondaryButton><SecondaryButton disabled={busy || week >= weekRange().start} onClick={() => chooseWeek(shiftWeek(week, 7))}>下一周</SecondaryButton><SecondaryButton disabled={loading || busy} onClick={() => setRefresh(value => value + 1)}>刷新周报</SecondaryButton></div>
     </div>
     {error && <p className="classroom-alert" role="alert">{error}</p>}{notice && <p className="classroom-notice" role="status">{notice}</p>}

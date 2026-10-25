@@ -6,10 +6,12 @@
 
 - 活动词库记录（稳定 ID）：8699；历史兼容记录：247；已登记提示（含历史）：8946；可展示提示（含历史）：8946。
 - 内容：8788 组（近义 92；易混 78；单词用法 8618），共 17576 条双语例句。
+- 当前另有 15 条按稳定 ID 复核的提示覆盖原组内容，不增加覆盖词数；下方旧组数据保留为编辑来源，实际显示内容见“按 ID 复核的教学义项”。
 - 构词／词族说明：47 词，38 组。此次保留原有构词，不为凑覆盖率增加推断。
 - 显式例句词形：144 处，逐例登记词头、实际词形、来源和核对状态；不自动推断未标注词形。
 - 显式规范拼写／表达映射：6 组；保留原词条键和用户记录，提示说明规范拼写或推荐表达，例句使用已核验目标。
 - 待核验条目：0；缺失来源的条目：0；无法匹配原词库的提示：0。
+- 上行仅检查提示来源登记和映射状态，不表示词库音标、义项或独立语言审校已经完成；剩余问题见 `vocabulary-quality-followup.json`。
 - 未覆盖的词继续使用词条基础提示；无构词内容不代表该词没有构词关系。
 - source-checked 表示已参考公开词条／语法资料核对。本项目综合这些事实编写中文辨析与原创例句，未导入词典原文；独立语言专家审校仍待进行。
 - 分类别统计按 categories（缺失时按 category）计算，一个词可属于多个类别，不能将行数相加作为独立词数。
@@ -21,6 +23,26 @@
 | cet6 | 1520 | 1520 | 100.00% | 12 |
 | toefl | 3251 | 3251 | 100.00% | 0 |
 | ielts | 3257 | 3257 | 100.00% | 5 |
+
+## 按 ID 复核的教学义项
+
+| ID | 词条 | 当前教学范围 | 当前来源 |
+| ---: | --- | --- | --- |
+| 4579 | an odd fish | 名词短语 · 古怪的人 | [牛津学习词典 · an odd fish](https://www.oxfordlearnersdictionaries.com/definition/english/odd)、[牛津学习词典 · an odd fish](https://www.oxfordlearnersdictionaries.com/definition/english/fish_1) |
+| 5674 | including | 介词 · 包括在内 | [牛津学习词典 · including](https://www.oxfordlearnersdictionaries.com/definition/english/including) |
+| 5873 | sales | 名词与修饰用法 · 销售 | [韦氏词典 · sale](https://www.merriam-webster.com/dictionary/sale)、[韦氏词典 · sales](https://www.merriam-webster.com/dictionary/sales) |
+| 5896 | earlier | 形容词与副词 · 更早 | [牛津学习词典 · earlier](https://www.oxfordlearnersdictionaries.com/definition/english/early_1)、[韦氏词典 · earlier](https://www.merriam-webster.com/dictionary/earlier) |
+| 5941 | states | 复数名词 · 州与美国的称呼 | [韦氏词典 · state](https://www.merriam-webster.com/dictionary/state) |
+| 5947 | works | 短语用法 · 全套东西或配料 | [韦氏词典 · the works](https://www.merriam-webster.com/dictionary/the%20works) |
+| 5963 | terms | 复数名词 · 关系与条款 | [牛津学习词典 · terms](https://www.oxfordlearnersdictionaries.com/definition/english/term_1)、[韦氏词典 · terms](https://www.merriam-webster.com/dictionary/terms) |
+| 6009 | thanks | 名词与表达 · 感谢及 thanks to | [牛津学习词典 · thanks](https://www.oxfordlearnersdictionaries.com/definition/english/thanks_1)、[韦氏词典 · thanks](https://www.merriam-webster.com/dictionary/thanks) |
+| 6127 | dec | 公司缩写 · Digital Equipment Corporation | [计算机历史博物馆 · dec](https://www.computerhistory.org/brochures/d-f/digital-equipment-corporation-dec/)、[CMU 发音词典 · dec](https://github.com/cmusphinx/cmudict) |
+| 6258 | online | 形容词与副词 · 在线 | [韦氏词典 · online](https://www.merriam-webster.com/dictionary/online) |
+| 6260 | proposed | 动词与形容词 · 提出与拟议中的 | [牛津学习词典 · proposed](https://www.oxfordlearnersdictionaries.com/definition/english/propose) |
+| 6413 | charlie | 专有名词 · 人名 Charlie | [牛津学习词典 · charlie](https://www.oxfordlearnersdictionaries.com/us/definition/english/charlie_1) |
+| 6661 | freshman | 名词与修饰用法 · 新生及新任者 | [牛津学习词典 · freshman](https://www.oxfordlearnersdictionaries.com/definition/english/freshman)、[韦氏词典 · freshman](https://www.merriam-webster.com/dictionary/freshman) |
+| 6682 | korea | 专有名词 · 朝鲜半岛地区 | [牛津学习词典 · korea](https://www.oxfordlearnersdictionaries.com/us/definition/english/korea)、[柯林斯词典 · korea](https://www.collinsdictionary.com/dictionary/english/korea) |
+| 6736 | faster | 形容词与副词比较级 · 更快 | [牛津学习词典 · faster](https://www.oxfordlearnersdictionaries.com/definition/english/fast_1)、[韦氏词典 · faster](https://www.merriam-webster.com/dictionary/faster) |
 
 ## 规范拼写与表达映射
 

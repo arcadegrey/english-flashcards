@@ -62,3 +62,6 @@ npm run audio:verify-updates-r2
 - 线上 API 默认同源：`/api`
 - 不再依赖 CloudBase 配置
 - 如需本地调试 API，建议用 `wrangler dev` 与 Vite 联调
+# 2026-10-25 发布前检查更新
+
+部署工作流先复用 `.github/workflows/quality.yml`，完成测试、lint、跨时区回归、前端构建和 Worker dry-run；检查未通过时不进入迁移或部署。`npm run build` 的 prebuild 会生成服务端词库和提示 JSON 批次，必须一并发布。详见 `optimization-2026-10-25.md`。

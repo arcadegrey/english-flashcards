@@ -1,4 +1,5 @@
 import { normalizePreferences, mergePreferences } from '../shared/planPreferences.js';
+import { mergeWordProgress } from '../shared/wordProgress.js';
 import { normalizeStudyHistory, mergeStudyHistory } from '../shared/studyHistory.js';
 import { handleClassroomApi, profileFields } from './classroom.js';
 import { handleReadingApi } from './readingAssignments.js';
@@ -170,10 +171,7 @@ export const mergeProgress = (baseProgress, incomingProgress) => {
     ...(incoming.learnedWords || []),
   ]).filter((item) => !masteredSet.has(String(item)));
   const customWords = mergeCustomWordList(base.customWords || [], incoming.customWords || []);
-  const wordProgress = {
-    ...(base.wordProgress || {}),
-    ...(incoming.wordProgress || {}),
-  };
+  const wordProgress = mergeWordProgress(base.wordProgress, incoming.wordProgress);
   const wrongWords = normalizeIdArray([...(base.wrongWords || []), ...(incoming.wrongWords || [])]).filter(
     (item) => !masteredSet.has(String(item))
   );
@@ -411,7 +409,11 @@ const handleVerifyCode = async (request, env) => {
     return errorJson('验证码错误，请重试。', 400, 'CODE_MISMATCH');
   }
 
-  await env.DB.prepare('UPDATE login_codes SET consumed_at = ? WHERE id = ?').bind(nowIso(), codeRow.id).run();
+  const claimedAt = nowIso();
+  const claimed = await env.DB.prepare(`UPDATE login_codes SET consumed_at = ?
+    WHERE id = ? AND consumed_at IS NULL AND attempts < 5 AND expires_at > ?`)
+    .bind(claimedAt, codeRow.id, claimedAt).run();
+  if (!claimed.meta.changes) return errorJson('验证码已使用或失效，请重新发送。', 400, 'CODE_ALREADY_USED');
 
   let user = await getUserByEmail(env, email);
   const loginAt = nowIso();
@@ -436,7 +438,8 @@ const handleVerifyCode = async (request, env) => {
   }
 
   await env.DB.prepare('UPDATE users SET last_login_at = ? WHERE id = ?').bind(loginAt, user.id).run();
-  await env.DB.prepare('DELETE FROM sessions WHERE user_id = ? OR expires_at <= ?').bind(user.id, nowIso()).run();
+  // A new device gets its own session; other active devices remain signed in.
+  await env.DB.prepare('DELETE FROM sessions WHERE expires_at <= ?').bind(nowIso()).run();
 
   const sessionTtlSeconds = toInt(env.SESSION_TTL_SECONDS, 60 * 60 * 24 * 30);
   const rawToken = randomToken(32);
@@ -481,27 +484,23 @@ const handleAuthMe = async (request, env) => {
   });
 };
 
-const handleLogout = async (request, env) => {
-  try {
-    const cookies = parseCookie(request.headers.get('cookie') || '');
-    const sessionToken = cookies[COOKIE_NAME] || '';
-    if (sessionToken && env?.SESSION_SECRET && env?.DB) {
-      const hash = await hashSessionToken(sessionToken, env.SESSION_SECRET);
-      await env.DB.prepare('DELETE FROM sessions WHERE id = ?').bind(hash).run();
-    }
-  } catch {
-    // ignore logout cleanup failure
+const handleLogout = async (request, env, allDevices = false) => {
+  const origin = request.headers.get('origin');
+  if (request.headers.get('sec-fetch-site') === 'cross-site' || (origin && origin !== new URL(request.url).origin)) {
+    return errorJson('不允许跨站操作。', 403, 'CROSS_SITE');
   }
-
-  return json(
-    {
-      message: '已退出登录。',
-    },
-    200,
-    {
-      'Set-Cookie': clearSessionCookie(request),
-    }
-  );
+  if (allDevices) {
+    if (!request.headers.get('content-type')?.startsWith('application/json')) return errorJson('请使用 JSON 提交。', 415);
+    const user = await getSessionUser(env, request);
+    if (!user) return errorJson('请先登录账号。', 401, 'UNAUTHORIZED');
+    await env.DB.prepare('DELETE FROM sessions WHERE user_id = ?').bind(user.id).run();
+  } else {
+    const token = parseCookie(request.headers.get('cookie') || '')[COOKIE_NAME];
+    if (token) await env.DB.prepare('DELETE FROM sessions WHERE id = ?').bind(await hashSessionToken(token, env.SESSION_SECRET)).run();
+  }
+  return json({ message: allDevices ? '已退出全部设备。' : '已退出当前设备。' }, 200, {
+    'Set-Cookie': clearSessionCookie(request),
+  });
 };
 
 const handleGetProgress = async (request, env) => {
@@ -614,6 +613,9 @@ const handleApi = async (request, env) => {
   }
   if (request.method === 'GET' && pathname === '/api/auth/me') {
     return handleAuthMe(request, env);
+  }
+  if (request.method === 'POST' && pathname === '/api/auth/logout-all') {
+    return handleLogout(request, env, true);
   }
   if (request.method === 'POST' && pathname === '/api/auth/logout') {
     return handleLogout(request, env);

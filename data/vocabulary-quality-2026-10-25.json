@@ -1,0 +1,749 @@
+{
+  "date": "2026-10-25",
+  "scope": "本轮16条高优先级词性/释义/中文译文修复；不代表全部候选已审校。",
+  "baselineSha256": "6cf11e83b401da0c3d23fffcc65c791144edebd6120bc31e8ada9c3338c937a8",
+  "reviews": [
+    {
+      "id": 3849,
+      "word": "tame nature",
+      "status": "resolved_fields",
+      "finding": "tame 为动词，nature 为宾语；补齐短语词性。",
+      "changedFields": [
+        "pos"
+      ],
+      "before": {
+        "id": 3849,
+        "word": "tame nature",
+        "phonetic": "teɪm ˈneɪtʃə",
+        "pos": "",
+        "meaning": "征服自然",
+        "example": "Humans have long tried to tame nature.",
+        "exampleCn": "人类长期以来一直试图征服自然。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "9"
+      },
+      "after": {
+        "id": 3849,
+        "word": "tame nature",
+        "phonetic": "teɪm ˈneɪtʃə",
+        "pos": "v. phr.",
+        "meaning": "征服自然",
+        "example": "Humans have long tried to tame nature.",
+        "exampleCn": "人类长期以来一直试图征服自然。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "9"
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · tame",
+          "url": "https://www.merriam-webster.com/dictionary/tame",
+          "checkedAt": "2026-10-25",
+          "method": "web tool: dictionary definition and usage labels read; no dictionary examples copied"
+        }
+      ]
+    },
+    {
+      "id": 5873,
+      "word": "sales",
+      "status": "resolved_fields",
+      "finding": "基础例句 boost sales 使用名词义，补入名词义并保留修饰用法。",
+      "changedFields": [
+        "pos",
+        "meaning"
+      ],
+      "before": {
+        "id": 5873,
+        "word": "sales",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "a. 销售的\\n[计] 销售",
+        "example": "They tried to boost sales.",
+        "exampleCn": "他们试图提高销售额。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5873,
+        "word": "sales",
+        "phonetic": "",
+        "pos": "n./adj.",
+        "meaning": "n. 销售活动；销售额；销量；adj. 销售的",
+        "example": "They tried to boost sales.",
+        "exampleCn": "他们试图提高销售额。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · sale",
+          "url": "https://www.merriam-webster.com/dictionary/sale",
+          "checkedAt": "2026-10-25",
+          "method": "web tool: dictionary definition and usage labels read; no dictionary examples copied"
+        },
+        {
+          "title": "Merriam-Webster · sales",
+          "url": "https://www.merriam-webster.com/dictionary/sales",
+          "checkedAt": "2026-10-25",
+          "method": "web tool: dictionary definition and usage labels read; no dictionary examples copied"
+        }
+      ]
+    },
+    {
+      "id": 5941,
+      "word": "states",
+      "status": "resolved_fields",
+      "finding": "例句 fifty states 是五十个州，不把复数 states 一概解释为美国。",
+      "changedFields": [
+        "meaning",
+        "exampleCn"
+      ],
+      "before": {
+        "id": 5941,
+        "word": "states",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 美国",
+        "example": "He has travelled to all fifty states and has countless stories from his road trips.",
+        "exampleCn": "他去过全部五十个州有无数的公路旅行故事。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5941,
+        "word": "states",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 州；国家；状态（state 的复数）；the States 指美国",
+        "example": "He has travelled to all fifty states and has countless stories from his road trips.",
+        "exampleCn": "他走遍了全部五十个州，积累了无数公路旅行的故事。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · state",
+          "url": "https://www.merriam-webster.com/dictionary/state",
+          "checkedAt": "2026-10-25",
+          "method": "web tool: dictionary definition and usage labels read; no dictionary examples copied"
+        }
+      ]
+    },
+    {
+      "id": 5947,
+      "word": "works",
+      "status": "resolved_fields",
+      "finding": "with the works 表示全部配料；并非作品。",
+      "changedFields": [
+        "meaning",
+        "exampleCn"
+      ],
+      "before": {
+        "id": 5947,
+        "word": "works",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 工程, 工厂, 工事, 活动部件, 机件, 著作, 作品, 善行, 德行\\n[机] 工厂, 工场",
+        "example": "A hotdog with the works.",
+        "exampleCn": "带有作品的热狗。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5947,
+        "word": "works",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 作品；工厂；机器的活动部件；the works（非正式）全套东西、所有配料",
+        "example": "A hotdog with the works.",
+        "exampleCn": "一个加了全部配料的热狗。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · the works",
+          "url": "https://www.merriam-webster.com/dictionary/the%20works",
+          "checkedAt": "2026-10-25",
+          "method": "web tool: dictionary definition and usage labels read; no dictionary examples copied"
+        }
+      ]
+    },
+    {
+      "id": 6080,
+      "word": "significantly",
+      "status": "resolved_fields",
+      "finding": "补回与基础例句对应的显著差异义。",
+      "changedFields": [
+        "meaning",
+        "exampleCn"
+      ],
+      "before": {
+        "id": 6080,
+        "word": "significantly",
+        "phonetic": "",
+        "pos": "adv.",
+        "meaning": "adv. 值得注目地；意味深长地",
+        "example": "The two groups differed significantly.",
+        "exampleCn": "两组差异显着。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 6080,
+        "word": "significantly",
+        "phonetic": "",
+        "pos": "adv.",
+        "meaning": "显著地；明显地；意味深长地",
+        "example": "The two groups differed significantly.",
+        "exampleCn": "两组之间存在显著差异。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · significantly",
+          "url": "https://www.merriam-webster.com/dictionary/significantly",
+          "checkedAt": "2026-10-25",
+          "method": "web tool: dictionary definition and usage labels read; no dictionary examples copied"
+        }
+      ]
+    },
+    {
+      "id": 6148,
+      "word": "remaining",
+      "status": "resolved_fields",
+      "finding": "remaining sandwiches 是形容词修饰名词。",
+      "changedFields": [
+        "pos"
+      ],
+      "before": {
+        "id": 6148,
+        "word": "remaining",
+        "phonetic": "",
+        "pos": "v.",
+        "meaning": "剩余的",
+        "example": "Saved the remaining sandwiches for supper.",
+        "exampleCn": "把剩下的三明治留作晚餐。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 6148,
+        "word": "remaining",
+        "phonetic": "",
+        "pos": "adj.",
+        "meaning": "剩余的",
+        "example": "Saved the remaining sandwiches for supper.",
+        "exampleCn": "把剩下的三明治留作晚餐。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · remaining",
+          "url": "https://www.merriam-webster.com/dictionary/remaining",
+          "checkedAt": "2026-10-25",
+          "method": "web tool: dictionary definition and usage labels read; no dictionary examples copied"
+        }
+      ]
+    },
+    {
+      "id": 6258,
+      "word": "online",
+      "status": "resolved_fields",
+      "finding": "基础例句购物 online 为副词，保留形容词义。",
+      "changedFields": [
+        "pos",
+        "meaning"
+      ],
+      "before": {
+        "id": 6258,
+        "word": "online",
+        "phonetic": "",
+        "pos": "adj.",
+        "meaning": "联机",
+        "example": "She prefers to do her grocery shopping online rather than going to the crowded supermarket.",
+        "exampleCn": "她更喜欢在网上买菜而不是去拥挤的超市。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6258,
+        "word": "online",
+        "phonetic": "",
+        "pos": "adj./adv.",
+        "meaning": "adj. 在线的；联网的；adv. 在网上；在线地",
+        "example": "She prefers to do her grocery shopping online rather than going to the crowded supermarket.",
+        "exampleCn": "她更喜欢在网上买菜而不是去拥挤的超市。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · online",
+          "url": "https://www.merriam-webster.com/dictionary/online",
+          "checkedAt": "2026-10-25",
+          "method": "web tool: dictionary definition and usage labels read; no dictionary examples copied"
+        }
+      ]
+    },
+    {
+      "id": 6356,
+      "word": "teen",
+      "status": "resolved_fields",
+      "finding": "恢复现代主教学义，保留并标注古义，不把古义当常用义。",
+      "changedFields": [
+        "pos",
+        "meaning"
+      ],
+      "before": {
+        "id": 6356,
+        "word": "teen",
+        "phonetic": "ti:n",
+        "pos": "n.",
+        "meaning": "n. 愤怒, 悲哀",
+        "example": "The teen years.",
+        "exampleCn": "青少年时期。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6356,
+        "word": "teen",
+        "phonetic": "ti:n",
+        "pos": "n./adj.",
+        "meaning": "n. 青少年；adj. 青少年的（通常为十三至十九岁）；古义：苦难、悲哀",
+        "example": "The teen years.",
+        "exampleCn": "青少年时期。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · teen",
+          "url": "https://www.merriam-webster.com/dictionary/teen",
+          "checkedAt": "2026-10-25",
+          "method": "web tool: dictionary definition and usage labels read; no dictionary examples copied"
+        }
+      ]
+    },
+    {
+      "id": 6736,
+      "word": "faster",
+      "status": "resolved_fields",
+      "finding": "修正动词式的加快释义。",
+      "changedFields": [
+        "pos",
+        "meaning"
+      ],
+      "before": {
+        "id": 6736,
+        "word": "faster",
+        "phonetic": "",
+        "pos": "adj.",
+        "meaning": "加快",
+        "example": "Grass courts are faster than clay.",
+        "exampleCn": "草地球场比红土球场更快。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6736,
+        "word": "faster",
+        "phonetic": "",
+        "pos": "adj./adv.",
+        "meaning": "更快的；更快地（fast 的比较级）",
+        "example": "Grass courts are faster than clay.",
+        "exampleCn": "草地球场比红土球场更快。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · faster",
+          "url": "https://www.merriam-webster.com/dictionary/faster",
+          "checkedAt": "2026-10-25",
+          "method": "web tool: dictionary definition and usage labels read; no dictionary examples copied"
+        }
+      ]
+    },
+    {
+      "id": 6958,
+      "word": "bored",
+      "status": "resolved_fields",
+      "finding": "区分感到无聊与令人无聊。",
+      "changedFields": [
+        "pos",
+        "meaning"
+      ],
+      "before": {
+        "id": 6958,
+        "word": "bored",
+        "phonetic": "",
+        "pos": "v.",
+        "meaning": "a. 无聊的；烦人的；无趣的",
+        "example": "Bored with life.",
+        "exampleCn": "对生活感到厌倦。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6958,
+        "word": "bored",
+        "phonetic": "",
+        "pos": "adj.",
+        "meaning": "感到无聊的；厌倦的（描述感受，区别于 boring 令人无聊的）",
+        "example": "Bored with life.",
+        "exampleCn": "对生活感到厌倦。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · bored",
+          "url": "https://www.merriam-webster.com/dictionary/bored",
+          "checkedAt": "2026-10-25",
+          "method": "web tool: dictionary definition and usage labels read; no dictionary examples copied"
+        }
+      ]
+    },
+    {
+      "id": 7016,
+      "word": "varying",
+      "status": "resolved_fields",
+      "finding": "基础例句角度不同，不能只给出动词改变。",
+      "changedFields": [
+        "pos",
+        "meaning"
+      ],
+      "before": {
+        "id": 7016,
+        "word": "varying",
+        "phonetic": "",
+        "pos": "v.",
+        "meaning": "改变",
+        "example": "The varying angles of roof slope.",
+        "exampleCn": "屋顶坡度的不同角度。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 7016,
+        "word": "varying",
+        "phonetic": "",
+        "pos": "adj./v.",
+        "meaning": "adj. 各不相同的；变化的；v. vary 的现在分词",
+        "example": "The varying angles of roof slope.",
+        "exampleCn": "屋顶坡度的不同角度。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · varying",
+          "url": "https://www.merriam-webster.com/dictionary/varying",
+          "checkedAt": "2026-10-25",
+          "method": "web tool: dictionary definition and usage labels read; no dictionary examples copied"
+        }
+      ]
+    },
+    {
+      "id": 8175,
+      "word": "waggon",
+      "status": "resolved_fields",
+      "finding": "将误译牛车改为马车，删除英文没有的日落细节。",
+      "changedFields": [
+        "meaning",
+        "exampleCn"
+      ],
+      "before": {
+        "id": 8175,
+        "word": "waggon",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 运货车, 四轮运货马车, (英)铁路货车, 流动服务车, 小型客车, 囚车, 童车",
+        "example": "The old waggon loaded with hay creaked slowly along the dusty lane pulled by two tired grey horses.",
+        "exampleCn": "装满干草的老牛车在尘土飞扬的小路上吱吱作响在日落时由两匹疲惫的灰马拉着。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "after": {
+        "id": 8175,
+        "word": "waggon",
+        "phonetic": "",
+        "pos": "n.",
+        "meaning": "n. 运货马车；货车（wagon 的英式拼写变体）",
+        "example": "The old waggon loaded with hay creaked slowly along the dusty lane pulled by two tired grey horses.",
+        "exampleCn": "两匹疲惫的灰马拉着装满干草的旧马车，沿着尘土飞扬的小路缓缓前行，车身吱吱作响。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · waggon",
+          "url": "https://www.merriam-webster.com/dictionary/waggon",
+          "checkedAt": "2026-10-25",
+          "method": "web tool: dictionary definition and usage labels read; no dictionary examples copied"
+        },
+        {
+          "title": "Merriam-Webster · wagon",
+          "url": "https://www.merriam-webster.com/dictionary/wagon",
+          "checkedAt": "2026-10-25",
+          "method": "web tool: dictionary definition and usage labels read; no dictionary examples copied"
+        }
+      ]
+    },
+    {
+      "id": 3125,
+      "word": "cripple",
+      "status": "resolved_fields",
+      "finding": "保留交通系统受损的动词义，给称人名词义添加语域边界。",
+      "changedFields": [
+        "meaning"
+      ],
+      "before": {
+        "id": 3125,
+        "word": "cripple",
+        "phonetic": "/ˈkrɪpl/",
+        "pos": "v./n.",
+        "meaning": "严重损害/使残疾/跛者",
+        "example": "The storm crippled the city’s transportation system.",
+        "exampleCn": "暴风雨严重破坏了城市的交通系统。",
+        "category": "toefl",
+        "categories": [
+          "toefl"
+        ],
+        "level": "5",
+        "list": "8"
+      },
+      "after": {
+        "id": 3125,
+        "word": "cripple",
+        "phonetic": "/ˈkrɪpl/",
+        "pos": "v./n.",
+        "meaning": "v. 严重损害；使瘫痪；n. 对残障人士的过时、冒犯性称呼（不宜用于称呼他人）",
+        "example": "The storm crippled the city’s transportation system.",
+        "exampleCn": "暴风雨严重破坏了城市的交通系统。",
+        "category": "toefl",
+        "categories": [
+          "toefl"
+        ],
+        "level": "5",
+        "list": "8"
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · cripple",
+          "url": "https://www.merriam-webster.com/dictionary/cripple",
+          "checkedAt": "2026-10-25",
+          "method": "web tool: dictionary definition and usage labels read; no dictionary examples copied"
+        }
+      ]
+    },
+    {
+      "id": 5392,
+      "word": "dumb",
+      "status": "resolved_fields",
+      "finding": "保留 struck dumb 的例句义，区分描述言语障碍时的冒犯用法。",
+      "changedFields": [
+        "meaning"
+      ],
+      "before": {
+        "id": 5392,
+        "word": "dumb",
+        "phonetic": "dʌm",
+        "pos": "adj.",
+        "meaning": "哑的/愚蠢的/说不出话",
+        "example": "She was struck dumb with fear.",
+        "exampleCn": "她吓得说不出话来。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "56",
+        "ieltsLists": [
+          "56"
+        ]
+      },
+      "after": {
+        "id": 5392,
+        "word": "dumb",
+        "phonetic": "dʌm",
+        "pos": "adj.",
+        "meaning": "因震惊或恐惧而说不出话的；愚蠢的（贬义）；旧指不能说话的人时已过时且具有冒犯性",
+        "example": "She was struck dumb with fear.",
+        "exampleCn": "她吓得说不出话来。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "56",
+        "ieltsLists": [
+          "56"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · dumb",
+          "url": "https://www.merriam-webster.com/dictionary/dumb",
+          "checkedAt": "2026-10-25",
+          "method": "web tool: dictionary definition and usage labels read; no dictionary examples copied"
+        }
+      ]
+    },
+    {
+      "id": 6366,
+      "word": "disabled",
+      "status": "resolved_fields",
+      "finding": "纠正名词词性及中文残废的标签，保留设备义。",
+      "changedFields": [
+        "pos",
+        "meaning"
+      ],
+      "before": {
+        "id": 6366,
+        "word": "disabled",
+        "phonetic": "dis'eibld",
+        "pos": "n.",
+        "meaning": "a. 残废的, 有缺陷的, 失效的\\n[计] 失效的",
+        "example": "Technology to help the elderly and the disabled.",
+        "exampleCn": "帮助老年人和残疾人的技术。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6366,
+        "word": "disabled",
+        "phonetic": "dis'eibld",
+        "pos": "adj.",
+        "meaning": "有残障的；因伤病而行动受限的；（设备、功能）失效的或被禁用的",
+        "example": "Technology to help the elderly and the disabled.",
+        "exampleCn": "帮助老年人和残疾人的技术。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · disabled",
+          "url": "https://www.merriam-webster.com/dictionary/disabled",
+          "checkedAt": "2026-10-25",
+          "method": "web tool: dictionary definition and usage labels read; no dictionary examples copied"
+        }
+      ]
+    },
+    {
+      "id": 6914,
+      "word": "mick",
+      "status": "resolved_fields",
+      "finding": "补足蔑称语域；区分原例句中作为人名的 Mick。",
+      "changedFields": [
+        "meaning"
+      ],
+      "before": {
+        "id": 6914,
+        "word": "mick",
+        "phonetic": "mik",
+        "pos": "n.",
+        "meaning": "n. 爱尔兰人",
+        "example": "Mick has been playing folk songs on his guitar at the local pub every Friday night for years.",
+        "exampleCn": "米克多年来每个周五晚上都在当地酒馆弹吉他唱民歌。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6914,
+        "word": "mick",
+        "phonetic": "mik",
+        "pos": "n.",
+        "meaning": "n. 针对爱尔兰人的冒犯性蔑称，不宜用来称呼他人；Mick 也可为人名米克（Michael 的昵称），本条例句使用人名义",
+        "example": "Mick has been playing folk songs on his guitar at the local pub every Friday night for years.",
+        "exampleCn": "米克多年来每个周五晚上都在当地酒馆弹吉他唱民歌。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Merriam-Webster · mick",
+          "url": "https://www.merriam-webster.com/dictionary/mick",
+          "checkedAt": "2026-10-25",
+          "method": "web tool: dictionary definition and usage labels read; no dictionary examples copied"
+        }
+      ]
+    }
+  ],
+  "audio": "词头、英文例句、音标全部保持原值，因此本批没有新增录音。未完成全量人工听审。"
+}

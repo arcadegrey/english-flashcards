@@ -1,3 +1,4 @@
+import { getStudyDateKey } from '../../shared/studyDate.js';
 import { summarizeStudyHistory } from '../../shared/studyHistory.js';
 
 export const getAccountRoleLabel = (user) => user?.profileConfigured
@@ -16,13 +17,11 @@ export const buildStudentWordRows = (progress = {}, vocabulary = [], now = new D
   const learned = new Set((progress.learnedWords || []).map(String));
   const mastered = new Set((progress.masteredWords || []).map(String));
   const wrong = new Set((progress.wrongWords || []).map(String));
-  const today = new Date(now);
-  today.setHours(0, 0, 0, 0);
+  const today = getStudyDateKey(now);
   return [...new Set([...learned, ...mastered, ...wrong])].map((id) => {
     const word = lookup.get(id);
     const schedule = progress.wordProgress?.[id] || {};
-    const dueDate = new Date(schedule.nextReview);
-    dueDate.setHours(0, 0, 0, 0);
+    const dueDate = getStudyDateKey(schedule.nextReview || '');
     const isMastered = mastered.has(id);
     const hasSchedule = Boolean(progress.wordProgress?.[id]);
     return {
@@ -30,7 +29,7 @@ export const buildStudentWordRows = (progress = {}, vocabulary = [], now = new D
       phonetic: word?.phonetic || '', missing: !word,
       status: isMastered ? 'mastered' : learned.has(id) ? 'learned' : 'wrong',
       wrong: wrong.has(id) && !isMastered,
-      due: (learned.has(id) || isMastered) && (!hasSchedule || (!Number.isNaN(dueDate.getTime()) && dueDate <= today)),
+      due: (learned.has(id) || isMastered) && (!hasSchedule || (Boolean(dueDate) && dueDate <= today)),
       lastReviewed: schedule.lastReviewed || '', nextReview: schedule.nextReview || '',
     };
   });

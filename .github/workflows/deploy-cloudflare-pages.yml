@@ -7,7 +7,13 @@ on:
   workflow_dispatch:
 
 jobs:
+  quality:
+    uses: ./.github/workflows/quality.yml
+    permissions:
+      contents: read
+
   deploy:
+    needs: quality
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -52,9 +58,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Install Wrangler CLI
-        run: npm i -g wrangler@4
-
       - name: Inject Deploy-Time Vars
         run: |
           node --input-type=module -e '
@@ -85,4 +88,4 @@ jobs:
         run: |
           set -euo pipefail
           echo "Deploying Worker + static assets with wrangler.toml"
-          wrangler deploy
+          npx --no-install wrangler deploy

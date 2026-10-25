@@ -1,3 +1,4 @@
+import { getStudyDateKey } from './studyDate.js';
 const amount = (value) => Number.isFinite(Number(value)) ? Math.max(0, Number(value)) : 0;
 const count = (value) => Math.floor(amount(value));
 const uniqueIds = (values) => [...new Set((Array.isArray(values) ? values : [])
@@ -53,8 +54,8 @@ export const mergeStudyHistory = (baseList, incomingList) => {
 
 export const summarizeStudyHistory = (value, now = new Date()) => {
   const history = mergeStudyHistory([], value);
-  const today = history.find((item) => item.date === now.toISOString().slice(0, 10))
-    || normalizeStudyHistoryItem({ date: now.toISOString().slice(0, 10) });
+  const today = history.find((item) => item.date === getStudyDateKey(now))
+    || normalizeStudyHistoryItem({ date: getStudyDateKey(now) });
   const totals = Object.fromEntries(counters.map((key) => [key, history.reduce((sum, item) => sum + item[key], 0)]));
   return { history, today, totals };
 };
