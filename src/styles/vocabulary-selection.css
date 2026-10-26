@@ -1,0 +1,284 @@
+/* TOEFL uses the shared white/blue module system; IELTS retains its own view. */
+.toefl-selection-page.is-toefl-view {
+  min-width: 0;
+}
+
+.is-toefl-view .toefl-selection-panel {
+  padding: 24px 28px 28px;
+  border: 1px solid rgba(126, 166, 255, 0.18);
+  border-radius: 24px;
+  background: var(--ds-card);
+  box-shadow: 0 8px 28px rgba(79, 124, 255, 0.04);
+}
+
+.is-toefl-view .toefl-selection-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #edf2fb;
+}
+
+.is-toefl-view .toefl-selection-toolbar .ds-button {
+  min-height: 40px;
+  padding: 0 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 650;
+  color: var(--ds-muted);
+  background: transparent;
+  box-shadow: none;
+}
+
+.is-toefl-view .toefl-selection-toolbar .ds-button:hover {
+  color: #2f6dff;
+  background: #f4f7ff;
+}
+
+.is-toefl-view .toefl-selection-toolbar svg {
+  width: 17px;
+  height: 17px;
+}
+
+.is-toefl-view .toefl-selection-sync {
+  margin-left: auto;
+}
+
+.is-toefl-view .toefl-selection-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 26px 0;
+}
+
+.is-toefl-view .toefl-selection-heading-copy {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.is-toefl-view .toefl-selection-heading-art {
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.is-toefl-view .toefl-selection-heading h2 {
+  margin: 0;
+  color: var(--ds-text);
+  font-size: 23px;
+  font-weight: 750;
+  line-height: 1.35;
+  letter-spacing: -0.5px;
+}
+
+.is-toefl-view .toefl-selection-heading p {
+  margin: 6px 0 0;
+  color: var(--ds-muted);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.is-toefl-view .toefl-selection-start {
+  min-height: 44px;
+  padding: 10px 18px;
+  border-radius: 13px;
+  background: var(--ds-blue);
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.5;
+  box-shadow: 0 6px 14px rgba(79, 124, 255, 0.14);
+}
+
+.is-toefl-view .toefl-selection-start:hover {
+  background: #2f6dff;
+}
+
+.is-toefl-view .toefl-selection-start svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+.is-toefl-view .toefl-selection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.is-toefl-view .toefl-selection-grid.is-level-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.is-toefl-view .toefl-selection-grid.is-single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.is-toefl-view .toefl-selection-card {
+  min-width: 0;
+  min-height: 108px;
+  padding: 22px 64px 22px 22px;
+  border: 1px solid #e5ecfa;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: none;
+}
+
+.is-toefl-view .toefl-selection-card::before,
+.is-toefl-view .toefl-selection-card::after {
+  display: none;
+}
+
+.is-toefl-view .toefl-selection-card h3 {
+  max-width: none;
+  margin: 0;
+  color: var(--ds-text);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.25px;
+}
+
+.is-toefl-view .toefl-selection-card p {
+  max-width: none;
+  margin: 7px 0 0;
+  color: var(--ds-muted);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.is-toefl-view .toefl-selection-module-meta {
+  display: inline-block;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #dfe7f4;
+}
+
+.is-toefl-view .toefl-selection-card .ds-module-arrow {
+  top: calc(50% - 17px);
+  right: 20px;
+  bottom: auto;
+  width: 34px;
+  height: 34px;
+  background: #f3f6ff;
+  color: #7c99d8;
+  box-shadow: none;
+  transition: color 180ms ease, background-color 180ms ease;
+}
+
+.is-toefl-view .toefl-selection-card .ds-module-arrow svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 1.8;
+}
+
+.is-toefl-view .toefl-selection-card:hover {
+  transform: translateY(-2px);
+  border-color: #aac2ff;
+  background: #fbfcff;
+  box-shadow: 0 6px 18px rgba(79, 124, 255, 0.07);
+}
+
+.is-toefl-view .toefl-selection-card:hover .ds-module-arrow {
+  color: #2f6dff;
+  background: #eaf0ff;
+}
+
+.is-toefl-view button:focus-visible {
+  outline: 3px solid rgba(79, 124, 255, 0.5);
+  outline-offset: 3px;
+}
+
+.is-toefl-view .word-home-empty {
+  padding: 36px 20px;
+  border: 1px dashed #dce6fa;
+  border-radius: 18px;
+  color: var(--ds-muted);
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .is-toefl-view .toefl-selection-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .is-toefl-view .toefl-selection-panel {
+    padding: 12px 16px 18px;
+    border-radius: 22px;
+  }
+
+  .is-toefl-view .toefl-selection-toolbar {
+    gap: 8px;
+    padding-bottom: 12px;
+  }
+
+  .is-toefl-view .toefl-selection-toolbar .ds-button {
+    padding: 0 5px;
+    width: auto;
+  }
+
+  .is-toefl-view .toefl-selection-heading {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+    padding: 22px 0;
+  }
+
+  .is-toefl-view .toefl-selection-heading-copy {
+    gap: 12px;
+  }
+
+  .is-toefl-view .toefl-selection-heading-art {
+    width: 50px;
+    height: 50px;
+  }
+
+  .is-toefl-view .toefl-selection-heading h2 {
+    font-size: 20px;
+  }
+
+  .is-toefl-view .toefl-selection-grid,
+  .is-toefl-view .toefl-selection-grid.is-level-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .is-toefl-view .toefl-selection-card {
+    min-height: 92px;
+    padding: 18px 58px 18px 18px;
+    border-radius: 17px;
+  }
+
+  .is-toefl-view .toefl-selection-card h3 {
+    font-size: 18px;
+  }
+
+  .is-toefl-view .toefl-selection-card .ds-module-arrow {
+    right: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .is-toefl-view .ds-button,
+  .is-toefl-view .toefl-selection-card,
+  .is-toefl-view .ds-module-arrow {
+    transition: none;
+  }
+
+  .is-toefl-view .toefl-selection-card:hover {
+    transform: none;
+  }
+}

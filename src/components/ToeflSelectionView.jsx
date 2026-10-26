@@ -1,6 +1,9 @@
 import { useMemo, useRef } from 'react';
 import AppLayout from './layout/AppLayout';
+import { ModuleCard } from './ui/Cards';
+import { PrimaryButton, SecondaryButton } from './ui/Buttons';
 import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
+import '../styles/vocabulary-selection.css';
 
 function SyncIcon() {
   return (
@@ -57,6 +60,7 @@ function ToeflSelectionView({
   selectionKind = 'toefl-level',
 }) {
   const isTopicView = selectionKind === 'ielts-topic';
+  const isToeflView = selectionKind.startsWith('toefl-');
   const emptyText = mode === 'level' ? `当前没有可用的${vocabularyLabel}分级数据。` : '当前暂时没有可用的 List。';
 
   const resolvedSubtitle = useMemo(() => {
@@ -68,7 +72,7 @@ function ToeflSelectionView({
 
   const progressLabel = mode === 'level' ? (isTopicView ? `${items.length} 个主题` : `${items.length} 个 Level`) : `${items.length} 个 List`;
   const progressSub = mode === 'level' ? vocabularyLabel : listLabel;
-  const gridClass = items.length === 1 ? 'toefl-selection-grid is-single' : 'toefl-selection-grid';
+  const gridClass = `toefl-selection-grid ${items.length === 1 ? 'is-single' : ''} ${isToeflView && mode === 'level' ? 'is-level-grid' : ''}`;
   const panelTitle = isTopicView ? '选择学习主题' : mode === 'level' ? title : `${progressSub} 选择`;
   const selectionRef = useRef(null);
 
@@ -100,15 +104,48 @@ function ToeflSelectionView({
       subtitle={resolvedSubtitle}
       topbarProps={topbarProps}
     >
-      <main className={`toefl-selection-page ${isTopicView ? 'is-topic-view' : 'is-standard-view'}`}>
+      <div className={`toefl-selection-page ${isTopicView ? 'is-topic-view' : 'is-standard-view'} ${isToeflView ? 'is-toefl-view' : ''}`}>
         <section ref={selectionRef} className="toefl-selection-panel" aria-label={`${vocabularyLabel}选择`}>
-          <div className="toefl-selection-panel-head">
-            <div className="toefl-selection-panel-nav">
-              {onBack && (
-                <button type="button" className="toefl-selection-action is-back" onClick={onBack}>
-                  <ArrowIcon />
-                  <span>返回上一级</span>
-                </button>
+          {isToeflView ? (
+            <>
+              <div className="toefl-selection-toolbar">
+                {onBack && (
+                  <SecondaryButton className="toefl-selection-back" onClick={onBack}>
+                    <ArrowIcon />
+                    <span>返回上一级</span>
+                  </SecondaryButton>
+                )}
+                {onSyncAccount && (
+                  <SecondaryButton className="toefl-selection-sync" onClick={onSyncAccount}>
+                    <SyncIcon />
+                    <span>同步进度</span>
+                  </SecondaryButton>
+                )}
+              </div>
+              <div className="toefl-selection-heading">
+                <div className="toefl-selection-heading-copy">
+                  <img className="toefl-selection-heading-art" src="/images/ui-assets/category-toefl-blue-v1.png" alt="" aria-hidden="true" />
+                  <div>
+                    <h2>{mode === 'level' ? '选择词汇级别' : '选择学习词表'}</h2>
+                    <p>{progressLabel} · 共 {totalCount} 个单词</p>
+                  </div>
+                </div>
+                {onSelectAll && (
+                  <PrimaryButton className="toefl-selection-start" onClick={onSelectAll}>
+                    <span>{selectAllLabel}</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" /></svg>
+                  </PrimaryButton>
+                )}
+              </div>
+            </>
+          ) : (
+            <div className="toefl-selection-panel-head">
+              <div className="toefl-selection-panel-nav">
+                {onBack && (
+                  <button type="button" className="toefl-selection-action is-back" onClick={onBack}>
+                    <ArrowIcon />
+                    <span>返回上一级</span>
+                  </button>
               )}
             </div>
             <div className="toefl-selection-panel-title">
@@ -131,12 +168,21 @@ function ToeflSelectionView({
               )}
             </div>
           </div>
+          )}
 
           {items.length === 0 ? (
             <div className="word-home-empty">{emptyText}</div>
           ) : (
             <div className={gridClass}>
-              {items.map((item) => (
+              {items.map((item) => isToeflView ? (
+                <ModuleCard
+                  key={item.key}
+                  className={`ds-module-card ${getSelectionCardClassName(item, selectionKind)}`}
+                  title={item.label}
+                  meta={<>{item.count} 个单词{item.meta && <span className="toefl-selection-module-meta">{item.meta}</span>}</>}
+                  onClick={() => onSelect?.(item.key)}
+                />
+              ) : (
                 <button
                   key={item.key}
                   type="button"
@@ -153,7 +199,7 @@ function ToeflSelectionView({
             </div>
           )}
         </section>
-      </main>
+      </div>
     </AppLayout>
   );
 }
