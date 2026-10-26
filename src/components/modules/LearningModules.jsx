@@ -57,6 +57,7 @@ export function MotivationBand() {
 }
 
 export function PlanStatusCards({
+  plan,
   reviewComplete,
   reviewCount,
   newWordProgress,
@@ -73,9 +74,14 @@ export function PlanStatusCards({
   onReading,
   onExam,
 }) {
-  const progress = Math.round((Math.min(newWordProgress, newWordTarget) / newWordTarget) * 100)
-  const readingComplete = readingsCompleted > 0
-  const examTarget = 5
+  const wordGoal = plan?.tasks.words.goal ?? newWordTarget
+  const wordsAvailable = plan?.tasks.words.available ?? wordCount > 0
+  const wordsExhausted = plan?.tasks.words.exhausted ?? false
+  const progress = wordGoal > 0 ? Math.round((Math.min(newWordProgress, wordGoal) / wordGoal) * 100) : undefined
+  const readingComplete = plan?.tasks.reading.complete ?? readingsCompleted > 0
+  const readingAvailable = plan?.tasks.reading.available ?? true
+  const examAvailable = plan?.tasks.exam.available ?? true
+  const examTarget = plan?.tasks.exam.goal ?? 5
   const examProgress = Math.round((Math.min(examQuestionsAnswered, examTarget) / examTarget) * 100)
   const examAccuracy = examQuestionsAnswered > 0
     ? Math.round((examQuestionsCorrect / examQuestionsAnswered) * 100)
@@ -97,42 +103,42 @@ export function PlanStatusCards({
       />
       <StatusCard
         label="新词"
-        title={`${newWordProgress} / ${newWordTarget} 个`}
-        meta={isPreparingWords ? `${categoryName} · 正在准备词库` : `${categoryName} · ${wordCount} 词可学`}
+        title={!wordsAvailable ? '暂无可学词汇' : wordGoal === 0 ? '当前词库已学完' : `${newWordProgress} / ${wordGoal} 个`}
+        meta={isPreparingWords ? `${categoryName} · 正在准备词库` : !wordsAvailable ? `${categoryName} · 调整计划选择可学词库` : plan?.tasks.words.reduced ? `${categoryName} · 剩余新词不足 ${newWordTarget}，按可学数量完成` : `${categoryName} · ${wordCount} 词可学`}
         tone="blue"
         iconSrc={UI_ASSETS.newWords}
         illustrationSrc={UI_ASSETS.newWords}
         progress={progress}
         actionLabel="调整计划"
         onAction={onAdjustPlan}
-        onOpen={onWords}
+        onOpen={wordsAvailable && !wordsExhausted ? onWords : undefined}
         openLabel={`开始学习${categoryName}`}
         busy={isPreparingWords}
       />
       <StatusCard
         label="阅读"
-        title={readingComplete ? `已完成 ${readingsCompleted} 篇` : '完成 1 篇阅读'}
-        meta={readingComplete ? '今日阅读已打卡' : '推荐 3-5 分钟短阅读'}
+        title={readingComplete ? `已完成 ${readingsCompleted} 篇` : readingAvailable ? '完成 1 篇阅读' : '暂无阅读内容'}
+        meta={readingComplete ? '今日阅读已打卡' : readingAvailable ? '推荐 3-5 分钟短阅读' : '其他学习任务可以继续'}
         tone="cyan"
         iconSrc={UI_ASSETS.hero}
         illustrationSrc={UI_ASSETS.hero}
         progress={readingComplete ? 100 : 0}
-        actionLabel={readingComplete ? '继续阅读' : '开始阅读'}
-        onAction={onReading}
-        onOpen={onReading}
+        actionLabel={readingAvailable ? readingComplete ? '继续阅读' : '开始阅读' : undefined}
+        onAction={readingAvailable ? onReading : undefined}
+        onOpen={readingAvailable ? onReading : undefined}
         openLabel="进入推荐阅读"
       />
       <StatusCard
         label="巩固"
-        title={`${examQuestionsAnswered} / ${examTarget} 题`}
-        meta={examQuestionsAnswered > 0 ? `${categoryName} · 正确率 ${examAccuracy}%` : `${categoryName} · 完成一组考试练习`}
+        title={examAvailable ? `${examQuestionsAnswered} / ${examTarget} 题` : '暂无可测词汇'}
+        meta={examQuestionsAnswered > 0 ? `${categoryName} · 正确率 ${examAccuracy}%` : examAvailable ? `${categoryName} · 完成 ${examTarget} 题日巩固任务` : '调整计划后可继续巩固'}
         tone="indigo"
         iconSrc={UI_ASSETS.target}
         illustrationSrc={UI_ASSETS.target}
         progress={examProgress}
-        actionLabel={examQuestionsAnswered >= examTarget ? '继续巩固' : '开始练习'}
-        onAction={onExam}
-        onOpen={onExam}
+        actionLabel={examAvailable ? examQuestionsAnswered >= examTarget ? '继续巩固' : '开始练习' : undefined}
+        onAction={examAvailable ? onExam : undefined}
+        onOpen={examAvailable ? onExam : undefined}
         openLabel={`进入${categoryName}测试`}
       />
     </div>

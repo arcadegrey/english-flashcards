@@ -18,8 +18,10 @@ const checkedExampleForms = (example, words) => {
   const tokens = new Set(splitExampleText(example.en || '').map(part => part.toLowerCase()));
   return (Array.isArray(example.forms) ? example.forms : []).filter(form =>
     isSourceChecked(form) && words.includes(form.word) &&
-    typeof form.form === 'string' && /^[a-z]+(?:[-'’][a-z]+)*$/i.test(form.form) &&
-    tokens.has(form.form.toLowerCase())
+    typeof form.form === 'string' && /^[a-z]+(?:[-'’ ][a-z]+)*$/i.test(form.form) &&
+    (form.form.includes(' ')
+      ? form.word.includes(' ') && new RegExp(`(?<![\\p{L}\\p{M}\\p{N}_-])(?<![\\p{L}\\p{M}\\p{N}_]['’])${form.form.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![\\p{L}\\p{M}\\p{N}_-])(?!['’][\\p{L}\\p{M}\\p{N}_])`, 'iu').test(example.en || '')
+      : tokens.has(form.form.toLowerCase()))
   );
 };
 

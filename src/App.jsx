@@ -9,7 +9,9 @@ import { mergeWordBookmarks } from '../shared/wordBookmarks.js'
 import { wrongReadingQuestions } from '../shared/readingAttempts.js'
 import { submitReadingAssignment } from './utils/classroomApi'
 import { normalizePreferences, mergePreferences } from '../shared/planPreferences.js'
-import { normalizeStudyHistoryItem, normalizeStudyHistory, mergeStudyHistory } from '../shared/studyHistory.js'
+import { normalizeStudyHistoryItem, normalizeStudyHistory, mergeStudyHistory, recordDailyExamAnswer, mergeLegacyPlanExamActivity } from '../shared/studyHistory.js'
+import { getDailyPlanExamActivity } from '../shared/planActivity.js'
+import { buildTomorrowPlan, needsPlanCatalog } from './utils/dailyPlan.js'
 import { useState, useEffect, useMemo, useRef, useCallback, lazy, Suspense } from 'react'
 import { ThemeProvider } from './context/ThemeContext'
 import { useTheme } from './context/theme-context'
@@ -347,6 +349,7 @@ function AppContent() {
   const [planExamActivity, setPlanExamActivity] = useState(() => storage.getPlanExamActivity())
   const [planPreparing, setPlanPreparing] = useState(false)
   const [planPreparationError, setPlanPreparationError] = useState('')
+  const [planPreparationAttempt, setPlanPreparationAttempt] = useState(0)
   const [assessmentBackTarget, setAssessmentBackTarget] = useState('home')
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [selectedToeflLevel, setSelectedToeflLevel] = useState('')
@@ -367,7 +370,7 @@ function AppContent() {
   const [savedWordsLoading, setSavedWordsLoading] = useState(false)
   const [savedWordsError, setSavedWordsError] = useState('')
   const [wordProgress, setWordProgress] = useState(initialLocalProgress.wordProgress)
-  const [studyHistory, setStudyHistory] = useState(initialLocalProgress.studyHistory)
+  const [studyHistory, setStudyHistory] = useState(() => mergeLegacyPlanExamActivity(initialLocalProgress.studyHistory, initialLocalProgress.planExamActivity))
   const [customWords, setCustomWords] = useState(initialLocalProgress.customWords)
   const [dailyNewWordTarget, setDailyNewWordTarget] = useState(() => storage.getDailyNewWordTarget())
   const [planPreferencesUpdatedAt, setPlanPreferencesUpdatedAt] = useState(() => storage.getPlanPreferencesUpdatedAt())
@@ -530,6 +533,7 @@ function AppContent() {
       examQuestionsAnswered: Number(todayData.examQuestionsAnswered || 0),
       examQuestionsCorrect: Number(todayData.examQuestionsCorrect || 0),
       readingArticleIds: uniqueStringList(todayData.readingArticleIds),
+      examByCategory: todayData.examByCategory,
     }
   }, [studyHistory, studyDay])
   const suggestedReading = useMemo(
@@ -571,12 +575,14 @@ function AppContent() {
   const planWordCount = studyPlanCategory === 'all' ? wordCounts.all : wordCounts[studyPlanCategory] || 0
   const planWordStats = useMemo(() => getPlanWordStats(planVocabulary, wordProgress, learnedWords, masteredWords, studyDay),
     [planVocabulary, wordProgress, learnedWords, masteredWords, studyDay])
-  const planExamStats = planExamActivity.date === getStudyDateKey()
-    ? planExamActivity.categories?.[studyPlanCategory] || {} : {}
+  const planNeedsCatalog = useMemo(() => needsPlanCatalog(allVocabulary,
+    activeProgressIds([...learnedWords, ...masteredWords, ...Object.keys(wordProgress)]), studyPlanCategory),
+    [allVocabulary, learnedWords, masteredWords, wordProgress, studyPlanCategory])
+  const planExamStats = getDailyPlanExamActivity({ ...todayStudyStats, date: studyDay }, studyPlanCategory, planExamActivity)
   const planTodayWordsLearned = studyPlanCategory === 'all'
     ? todayStudyStats.wordsLearned + todayStudyStats.wordsMastered : planWordStats.todayStudied
-  const planTodayExamAnswered = studyPlanCategory === 'all' ? todayStudyStats.examQuestionsAnswered : Number(planExamStats.answered) || 0
-  const planTodayExamCorrect = studyPlanCategory === 'all' ? todayStudyStats.examQuestionsCorrect : Number(planExamStats.correct) || 0
+  const planTodayExamAnswered = planExamStats.answered
+  const planTodayExamCorrect = planExamStats.correct
   const planLearnedCount = useMemo(() => getExamVocabulary(allVocabulary, { category: studyPlanCategory, scope: 'learned', learnedWords }).length,
     [allVocabulary, studyPlanCategory, learnedWords])
   const planMasteredCount = useMemo(() => getExamVocabulary(allVocabulary, { category: studyPlanCategory, scope: 'mastered', masteredWords }).length,
@@ -870,7 +876,7 @@ function AppContent() {
     let cancelled = false
     const preparePlan = async () => {
       setPlanPreparationError('')
-      if (studyPlanCategory === 'all' || fullVocabularyLoadedRef.current || !['studyHub', 'planSettings', 'examPractice'].includes(view)) {
+      if (!planNeedsCatalog || fullVocabularyLoadedRef.current || !['studyHub', 'planSettings', 'examPractice'].includes(view)) {
         setPlanPreparing(false)
         return
       }
@@ -888,7 +894,7 @@ function AppContent() {
     }
     preparePlan()
     return () => { cancelled = true }
-  }, [studyPlanCategory, vocabularyLoading, view])
+  }, [planNeedsCatalog, studyPlanCategory, vocabularyLoading, view, planPreparationAttempt])
 
   useEffect(() => {
     storage.setPlanExamActivity(planExamActivity)
@@ -934,7 +940,7 @@ function AppContent() {
     setCustomWords(Array.isArray(savedCustomWords) ? savedCustomWords : [])
     setWrongWords(Array.isArray(savedWrongWords) ? savedWrongWords : [])
     setWordProgress(savedWordProgress && typeof savedWordProgress === 'object' ? savedWordProgress : {})
-    setStudyHistory(Array.isArray(savedStudyHistory) ? savedStudyHistory : [])
+    setStudyHistory(mergeLegacyPlanExamActivity(Array.isArray(savedStudyHistory) ? savedStudyHistory : [], storage.getPlanExamActivity()))
     setLocalDataLoaded(true)
   }, [])
 
@@ -975,6 +981,7 @@ function AppContent() {
 
   const applyMergedProgress = useCallback((mergedProgress, { skipNextPush = false } = {}) => {
     const normalized = normalizeProgressState(mergedProgress)
+    normalized.studyHistory = mergeLegacyPlanExamActivity(normalized.studyHistory, storage.getPlanExamActivity())
     const bookmarks = mergeWordBookmarks(storage.getWordBookmarks(), normalized.preferences.wordBookmarks)
     normalized.preferences.wordBookmarks = bookmarks
     storage.setWordBookmarks(bookmarks)
@@ -1032,6 +1039,9 @@ function AppContent() {
     }
 
     const progressToSync = normalizeProgressState(progress || latestProgressRef.current || {})
+    if (String(storage.getLearningOwner()) === String(user.id)) {
+      progressToSync.studyHistory = mergeLegacyPlanExamActivity(progressToSync.studyHistory, storage.getPlanExamActivity())
+    }
 
     setSyncState('syncing')
     setSyncError('')
@@ -1101,6 +1111,9 @@ function AppContent() {
     if (String(storage.getAuthSession()?.user?.id) !== String(user.id)) return
 
     const merged = mergeProgress(localProgress || latestProgressRef.current || {}, cloudProgress)
+    if (String(storage.getLearningOwner()) === String(user.id)) {
+      merged.studyHistory = mergeLegacyPlanExamActivity(merged.studyHistory, storage.getPlanExamActivity())
+    }
     merged.preferences.wordBookmarks = mergeWordBookmarks(merged.preferences.wordBookmarks, storage.getWordBookmarks())
 
     applyMergedProgress(merged, { skipNextPush: true })
@@ -1771,11 +1784,10 @@ function AppContent() {
   }
 
   const recordAssessmentAnswer = (isCorrect) => {
-    setPlanExamActivity((activity) => recordPlanExamAnswer(activity, studyPlanCategory, isCorrect))
-    recordStudyEvent({
-      examQuestionsAnswered: 1,
-      examQuestionsCorrect: isCorrect ? 1 : 0,
-    })
+    const date = getStudyDateKey()
+    setPlanExamActivity((activity) => recordPlanExamAnswer(activity, studyPlanCategory, isCorrect, date))
+    setStudyHistory(history => recordDailyExamAnswer(history, { category: studyPlanCategory, correct: isCorrect,
+      date, legacy: planExamActivity }))
   }
 
   const updateReviewProgress = (wordId, rating) => {
@@ -2415,6 +2427,16 @@ function AppContent() {
     [wrongWords, vocabularyMap]
   )
 
+  const remainingPlanWordCount = studyPlanCategory === 'all'
+    ? Math.max(0, planWordCount - new Set([...activeProgressIds(learnedWords), ...activeProgressIds(masteredWords)].map(String)).size)
+    : planWordStats.remaining
+  const planDataReady = !vocabularyLoading && !planPreparing && !planPreparationError
+    && (!planNeedsCatalog || fullVocabularyLoadedRef.current)
+  const tomorrowPlan = useMemo(() => buildTomorrowPlan({ reviewWords: reviewBaseWordList, wordProgress,
+    remaining: remainingPlanWordCount, target: dailyNewWordTarget, readingCount: readingLibrary.length,
+    wordCount: planWordCount, date: studyDay }),
+    [reviewBaseWordList, wordProgress, remainingPlanWordCount, dailyNewWordTarget, readingLibrary.length, planWordCount, studyDay])
+
   const renderAuthModal = () => {
     if (!showAuthModal) return null
 
@@ -2607,6 +2629,9 @@ function AppContent() {
           <StudyHub
             key={authUser?.id || 'guest'}
             rewardsReady={!authLoading && localDataLoaded}
+            planReady={planDataReady}
+            tomorrowPlan={tomorrowPlan}
+            onRetryPlan={() => setPlanPreparationAttempt(value => value + 1)}
             onOpenWordStudy={handleStartPlanLearning}
             onStartAssignment={handleStartReadingAssignment}
             onOpenTraining={handleBackToHome}
@@ -2627,7 +2652,7 @@ function AppContent() {
             })}
             accountNotice={homeAccountNotice}
             wordCount={planWordCount}
-            remainingWordCount={studyPlanCategory === 'all' ? Math.max(0, planWordCount - new Set([...activeProgressIds(learnedWords), ...activeProgressIds(masteredWords)].map(String)).size) : planWordStats.remaining}
+            remainingWordCount={remainingPlanWordCount}
             planCategoryName={planCategoryName}
             isPreparingWords={planPreparing}
             planError={planPreparationError}

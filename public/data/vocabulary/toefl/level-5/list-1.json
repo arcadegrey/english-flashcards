@@ -141,21 +141,6 @@
     "list": "1"
   },
   {
-    "id": 2442,
-    "word": "Scandinavia",
-    "phonetic": "/ˌskændɪˈneɪviə/",
-    "pos": "n.",
-    "meaning": "斯堪的纳维亚",
-    "example": "Scandinavia is known for its long winters.",
-    "exampleCn": "斯堪的纳维亚以漫长的冬季闻名。",
-    "category": "toefl",
-    "categories": [
-      "toefl"
-    ],
-    "level": "5",
-    "list": "1"
-  },
-  {
     "id": 2443,
     "word": "norm",
     "phonetic": "/nɔːrm/",

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { readFile, writeFile } from 'node:fs/promises';
-import { RETIRED_VOCABULARY } from '../shared/retiredVocabulary.js';
+import { ORIGINAL_RETIRED_VOCABULARY as RETIRED_VOCABULARY } from '../shared/retiredVocabulary.js';
 
 const root = new URL('../', import.meta.url);
 const read = path => readFile(new URL(path, root), 'utf8');

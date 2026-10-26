@@ -1616,23 +1616,6 @@
     "list": "1"
   },
   {
-    "id": 587,
-    "word": "Antarctic",
-    "phonetic": "/ænˈtɑːktɪk/",
-    "pos": "adj./n.",
-    "meaning": "南极的；南极洲",
-    "example": "The Antarctic is covered with ice.",
-    "exampleCn": "南极洲被冰雪覆盖。",
-    "category": "toefl",
-    "categories": [
-      "toefl",
-      "ielts"
-    ],
-    "level": "3",
-    "list": "1",
-    "ieltsList": "2"
-  },
-  {
     "id": 588,
     "word": "necessarily",
     "phonetic": "/ˌnesəˈserəli/",

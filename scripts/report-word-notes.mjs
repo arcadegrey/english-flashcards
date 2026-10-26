@@ -34,7 +34,7 @@ const corrections = groups.filter(group => group.correction?.canonical);
 const reviewedEntries = vocabulary.map(entry => ({ entry, hints: getReviewedWordHints(entry) })).filter(item => item.hints);
 const lines = [
   '# 核心词提示覆盖率与新增批次来源', '',
-  '汇总日期：2026-10-25（逐条核对日期保留在来源与内容中）。运行 `node scripts/report-word-notes.mjs > docs/word-notes-coverage.md` 可重新生成。', '',
+  '汇总日期：2026-10-26（逐条核对日期保留在来源与内容中）。运行 `node scripts/report-word-notes.mjs > docs/word-notes-coverage.md` 可重新生成。', '',
   '## 覆盖口径', '',
   `- 活动词库记录（稳定 ID）：${vocabulary.length}；历史兼容记录：${RETIRED_VOCABULARY.length}；已登记提示（含历史）：${words.size}；可展示提示（含历史）：${displayed.length}。`,
   `- 内容：${groups.length} 组（近义 ${synonymCount}；易混 ${confusableCount}；单词用法 ${usageCount}），共 ${groups.reduce((sum, group) => sum + group.examples.length, 0)} 条双语例句。`,

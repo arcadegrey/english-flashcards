@@ -627,23 +627,6 @@
     "list": "5"
   },
   {
-    "id": 3568,
-    "word": "Oceania",
-    "phonetic": "/ˌoʊʃiˈɑːniə/",
-    "pos": "n.",
-    "meaning": "大洋洲",
-    "example": "Oceania includes Australia, New Zealand, and many Pacific islands.",
-    "exampleCn": "大洋洲包括澳大利亚、新西兰和许多太平洋岛屿。",
-    "category": "toefl",
-    "categories": [
-      "toefl",
-      "ielts"
-    ],
-    "level": "6",
-    "list": "5",
-    "ieltsList": "2"
-  },
-  {
     "id": 3569,
     "word": "geyser",
     "phonetic": "/ˈɡaɪzər/",

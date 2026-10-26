@@ -1,5 +1,9 @@
 # Project Reference
 
+Daily plan loop (2026-10-26): task order/eligibility, cold-catalog review restoration and a Beijing tomorrow preview are implemented. Scoped daily exam counters use optional `studyHistory[].examByCategory`, carry known legacy local totals without adding answers, retain max-count merging, and survive old-client exact-version saves. No new schema; publish Worker and frontend together. Checks and limits: `daily-plan-loop-2026-10-26.md`.
+
+Latest vocabulary stage (2026-10-26): 80 remaining person/place names and rare context-conflicted entries replaced with new `daily` IDs 8947–9026; active 8699, archived 327, startup core 3495. Old progress never transfers to replacements. The old 38-item queue is now 19 archived + 19 source-reviewed. 676 new R2 recordings and both manifests are uploaded and verified; all versioned audio totals 3112. No new schema; frontend and Worker publish together. See `name-place-replacement-2026-10-26.md` for sources, exact compatibility, commands and verification limits.
+
 Low-frequency project details moved out of `PROJECT_CONTEXT.md` to keep startup context small.
 
 ## Maintenance Commands

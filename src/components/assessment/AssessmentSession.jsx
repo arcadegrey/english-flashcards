@@ -7,6 +7,7 @@ import { PrimaryButton, SecondaryButton } from '../ui/Buttons';
 import { EXAM_ROUND_SIZE, createExamAttempt } from '../../../shared/examAttempts.js';
 import { useExamHistory } from '../../context/exam-history-context';
 import { examDraftKey } from '../../utils/examHistory';
+import { practiceVocabulary } from '../../../shared/vocabularyPracticePolicy.js';
 
 function readDraft(key, meta, history) {
   try {
@@ -25,8 +26,8 @@ export default function AssessmentSession({ mode, category, scope, vocabulary, o
   const [draft, setDraft] = useState(() => readDraft(key, { mode, category, scope }, history));
   const latest = useRef(draft);
   // Keep the scope stable as correct answers update learned/mastered membership.
-  const [pool] = useState(vocabulary);
-  const [options] = useState(optionVocabulary);
+  const [pool] = useState(() => practiceVocabulary(vocabulary));
+  const [options] = useState(() => practiceVocabulary(optionVocabulary));
   const [result, setResult] = useState(null);
   const [error, setError] = useState('');
   const [storageFailed, setStorageFailed] = useState(false);
@@ -65,7 +66,7 @@ export default function AssessmentSession({ mode, category, scope, vocabulary, o
       <div className="assessment-progress-track" aria-hidden="true"><span style={{ width: `${result ? 100 : count / EXAM_ROUND_SIZE * 100}%` }} /></div><strong>{result ? `${count} 次已保存` : `${count} / ${EXAM_ROUND_SIZE}`}</strong>
     </div>
     <div className="assessment-history-status">
-      <span>{result ? '本次成绩已保存' : storageFailed ? '答题暂存于内存，请先重试保存' : count ? `已记录 ${count} 次答题，可稍后回到相同模式续答` : '每组最多 20 次答题，也可提前结束'}{mode === 'matching' ? ' · 每次配对尝试计一次' : ''}</span>
+      <span>{result ? '本次成绩已保存' : storageFailed ? '答题暂存于内存，请先重试保存' : count ? `已记录 ${count} 次答题，可稍后回到相同模式续答` : '每组最多 20 次答题，也可提前结束'}{mode === 'matching' ? ' · 每次配对尝试计一次' : ''}{pool.length < vocabulary.length ? ' · 历史语境识读词不参与出题' : ''}</span>
       {!result && <SecondaryButton disabled={!count} onClick={() => finish()}>结束本次</SecondaryButton>}
     </div>
     {error && <div className="classroom-alert" role="alert">{error}<SecondaryButton onClick={count >= EXAM_ROUND_SIZE ? () => finish() : retry}>重试保存</SecondaryButton></div>}

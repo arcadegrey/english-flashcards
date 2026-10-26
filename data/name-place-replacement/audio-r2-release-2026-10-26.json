@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-26",
+  "checkedAt": "2026-10-26T03:42:08.800Z",
+  "bucket": "english-flashcards-audio",
+  "baseUrl": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates",
+  "batches": [
+    {
+      "batch": "2026-10-26-name-place",
+      "files": 640,
+      "sha256": "b774058fe87c4bfb238367e4bd20d10d1115cc121d42f8bc685316bc20219caa"
+    },
+    {
+      "batch": "2026-10-26-sense",
+      "files": 36,
+      "sha256": "4d7f079f6623cfe8de0c2d4c014d837303589a5c2265dbcb6e1e142da3863867"
+    }
+  ],
+  "newFiles": 676,
+  "newBytes": 5330952,
+  "verifiedNewFiles": 676,
+  "totalVersionedFiles": 3112,
+  "allManifestsRechecked": 5,
+  "priorFilesReusedFromSuccessfulHashReceipts": 2436,
+  "failures": 0,
+  "verification": "All new public MP3s read and matched SHA-256, size and audio/mpeg. Previous immutable objects were retained; existing successful receipts reused for prior MP3s. All public manifests fetched and SHA-256 checked.",
+  "localValidation": "676/676 size/hash, ffprobe 24kHz mono MP3 and full ffmpeg decode passed.",
+  "manualListening": "Not a complete human listening review.",
+  "applicationDeployment": "Not performed; publish frontend and Worker together; no new schema.",
+  "browserPlayback": {
+    "passed": 9,
+    "samples": [
+      "boarding pass word/example",
+      "proofread word/example",
+      "august word/example",
+      "Sept. word/example",
+      "lame example"
+    ],
+    "result": "Real WordCard clicks used new R2 URLs and ended without audio errors."
+  }
+}

@@ -4,8 +4,9 @@ import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { getCoreWordHints } from '../src/utils/wordHints.js';
 import { beforeQualityReview, beforeFollowupReview } from './helpers/vocabulary-history.mjs';
+import { beforeNamePlaceReplacement } from '../shared/vocabularyHistory.js';
 const read = async path => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'));
-const vocabulary = await read('../public/data/vocabulary.json');
+const vocabulary = beforeNamePlaceReplacement(await read('../public/data/vocabulary.json'));
 const register = await read('../data/vocabulary-quality-2026-10-25.json');
 
 test('reviewed corrections preserve all unrelated records, IDs, categories and spoken text', () => {
@@ -31,6 +32,6 @@ test('high-risk meanings and corresponding hint senses are aligned', () => {
     const [hint] = getCoreWordHints(word(id));
     assert.match(hint.scope, sense);
     assert.equal(hint.examples.length, 2);
-    assert(hint.sources.every(source => source.checkedAt === '2026-10-25'));
+    assert(hint.sources.every(source => ['2026-10-25', '2026-10-26'].includes(source.checkedAt)));
   }
 });

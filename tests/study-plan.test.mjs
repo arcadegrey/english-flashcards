@@ -27,7 +27,7 @@ test('all three exam scopes are intersections of the chosen category and progres
 
 test('real TOEFL and IELTS plans use complete category vocabulary, including core overlaps', async () => {
   const vocabulary = JSON.parse(await readFile(new URL('../public/data/vocabulary.json', import.meta.url), 'utf8'))
-  const counts = { all: 8699, daily: 2029, cet4: 2075, cet6: 1520, toefl: 3251, ielts: 3257 }
+  const counts = { all: 8699, daily: 2047, cet4: 2028, cet6: 1516, toefl: 3245, ielts: 3246 }
   for (const [category, count] of Object.entries(counts)) {
     const pool = getExamVocabulary(vocabulary, { category })
     assert.equal(pool.length, count, category)

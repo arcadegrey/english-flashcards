@@ -1,0 +1,482 @@
+{
+  "checkout": {
+    "ipa": "/ˈtʃekaʊt/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/checkout",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "username": {
+    "ipa": "/ˈjuːzəneɪm/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/username",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "screenshot": {
+    "ipa": "/ˈskriːnʃɒt/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/screenshot",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "headphones": {
+    "ipa": "/ˈhedfəʊnz/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/headphones",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "charger": {
+    "ipa": "/ˈtʃɑːdʒə(r)/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/charger",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "power bank": {
+    "ipa": "/ˈpaʊə bæŋk/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.collinsdictionary.com/dictionary/english/power-bank",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "reusable": {
+    "ipa": "/ˌriːˈjuːzəbl/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/reusable",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "childcare": {
+    "ipa": "/ˈtʃaɪldkeə(r)/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/childcare",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "sunscreen": {
+    "ipa": "/ˈsʌnskriːn/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/sunscreen",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "toothpaste": {
+    "ipa": "/ˈtuːθpeɪst/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/toothpaste",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "groceries": {
+    "ipa": "/ˈɡrəʊsəriz/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/grocery",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "leftovers": {
+    "ipa": "/ˈleftəʊvəz/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/leftover_2",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "settings": {
+    "ipa": "/ˈsetɪŋz/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/setting",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "log in": {
+    "ipa": "/lɒɡ ˈɪn/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/log-in",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "log out": {
+    "ipa": "/lɒɡ ˈaʊt/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/log-out",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "sign up": {
+    "ipa": "/saɪn ˈʌp/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/sign-up",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "fill in": {
+    "ipa": "/fɪl ˈɪn/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/fill-in",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "look up": {
+    "ipa": "/lʊk ˈʌp/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/look-up",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "look after": {
+    "ipa": "/lʊk ˈɑːftə/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/look-after",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "look for": {
+    "ipa": "/ˈlʊk fə/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/look_1",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "look forward to": {
+    "ipa": "/lʊk ˈfɔːwəd tə/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/look-forward-to",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "put off": {
+    "ipa": "/pʊt ˈɒf/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/put-off",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "pick up": {
+    "ipa": "/pɪk ˈʌp/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/pick-up",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "drop off": {
+    "ipa": "/drɒp ˈɒf/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/drop_1",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "turn on": {
+    "ipa": "/tɜːn ˈɒn/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/turn-on",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "turn off": {
+    "ipa": "/tɜːn ˈɒf/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/turn-off",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "run out of": {
+    "ipa": "/rʌn ˈaʊt əv/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/run-out",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "figure out": {
+    "ipa": "/fɪɡər ˈaʊt/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/figure-out",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "work out": {
+    "ipa": "/wɜːk ˈaʊt/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/work-out",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "set up": {
+    "ipa": "/set ˈʌp/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/set-up",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "keep up with": {
+    "ipa": "/kiːp ˈʌp wɪð/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/keep-up",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "catch up": {
+    "ipa": "/kætʃ ˈʌp/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/catch-up",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "get along": {
+    "ipa": "/ɡet əˈlɒŋ/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/get-on",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "put away": {
+    "ipa": "/pʊt əˈweɪ/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/put-away",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "try on": {
+    "ipa": "/traɪ ˈɒn/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/try-on",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "take off": {
+    "ipa": "/teɪk ˈɒf/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/take-off",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "put on": {
+    "ipa": "/pʊt ˈɒn/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/put-on",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "hand in": {
+    "ipa": "/hænd ˈɪn/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/hand-in",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "sort out": {
+    "ipa": "/sɔːt ˈaʊt/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/sort-out",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "pay back": {
+    "ipa": "/peɪ ˈbæk/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/pay-back",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "cut down on": {
+    "ipa": "/kʌt ˈdaʊn ɒn/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/cut-down",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "make up": {
+    "ipa": "/meɪk ˈʌp/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/make-up",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "take part in": {
+    "ipa": "/teɪk ˈpɑːt ɪn/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/part_1",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "pay attention to": {
+    "ipa": "/peɪ əˈtenʃn tə/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/attention",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "deal with": {
+    "ipa": "/ˈdiːl wɪð/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/deal-with",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "depend on": {
+    "ipa": "/dɪˈpend ɒn/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/depend-on",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "apply for": {
+    "ipa": "/əˈplaɪ fə/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/apply",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "ask for": {
+    "ipa": "/ˈɑːsk fə/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/ask",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "wait for": {
+    "ipa": "/ˈweɪt fə/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/wait_1",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "listen to": {
+    "ipa": "/ˈlɪsn tə/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/listen",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "be able to": {
+    "ipa": "/bi ˈeɪbl tə/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/able",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "be supposed to": {
+    "ipa": "/bi səˈpəʊst tə/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/suppose",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "make an effort": {
+    "ipa": "/meɪk ən ˈefət/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/effort",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "take a break": {
+    "ipa": "/teɪk ə ˈbreɪk/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/break_2",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "make a decision": {
+    "ipa": "/meɪk ə dɪˈsɪʒn/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/decision",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "keep in mind": {
+    "ipa": "/kiːp ɪn ˈmaɪnd/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/mind_1",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "boarding pass": {
+    "ipa": "/ˈbɔːdɪŋ pɑːs/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.collinsdictionary.com/dictionary/english/boarding-pass",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "public transport": {
+    "ipa": "/ˌpʌblɪk ˈtrænspɔːt/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/public-transport",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "seat belt": {
+    "ipa": "/ˈsiːt belt/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/seat-belt",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "waiting room": {
+    "ipa": "/ˈweɪtɪŋ ruːm/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/waiting-room",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "customer service": {
+    "ipa": "/ˌkʌstəmə ˈsɜːvɪs/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/customer-service",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "health insurance": {
+    "ipa": "/ˈhelθ ɪnˌʃʊərəns/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.collinsdictionary.com/dictionary/english/health-insurance",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "return ticket": {
+    "ipa": "/rɪˌtɜːn ˈtɪkɪt/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/return-ticket",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "single ticket": {
+    "ipa": "/ˌsɪŋɡl ˈtɪkɪt/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/single_2",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "round trip": {
+    "ipa": "/ˌraʊnd ˈtrɪp/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/round-trip",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "bank account": {
+    "ipa": "/ˈbæŋk əkaʊnt/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/bank-account",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "exchange rate": {
+    "ipa": "/ɪksˈtʃeɪndʒ reɪt/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.collinsdictionary.com/dictionary/english/exchange-rate",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "interest rate": {
+    "ipa": "/ˈɪntrəst reɪt/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.collinsdictionary.com/dictionary/english/interest-rate",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "savings account": {
+    "ipa": "/ˈseɪvɪŋz əkaʊnt/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/savings-account",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "mobile data": {
+    "ipa": "/ˌməʊbaɪl ˈdeɪtə/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.samsung.com/uk/mobile-phone-buying-guide/what-is-mobile-data/",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "airplane mode": {
+    "ipa": "/ˈeəpleɪn məʊd/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/airplane-mode",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "voicemail": {
+    "ipa": "/ˈvɔɪsmeɪl/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/voicemail",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "video call": {
+    "ipa": "/ˈvɪdiəʊ kɔːl/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/video-call",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "proofread": {
+    "ipa": "/ˈpruːfriːd/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/proofread",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "restroom": {
+    "ipa": "/ˈrestruːm/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/restroom",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "parking space": {
+    "ipa": "/ˈpɑːkɪŋ speɪs/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/parking",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "phone number": {
+    "ipa": "/ˈfəʊn nʌmbə(r)/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/phone-number",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "email address": {
+    "ipa": "/ˈiːmeɪl ədres/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/email_1",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  },
+  "postal code": {
+    "ipa": "/ˈpəʊstl kəʊd/",
+    "method": "dictionary-IPA",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/postal-code",
+    "note": "词典对应词条的首个英式 IPA。"
+  },
+  "date of birth": {
+    "ipa": "/ˌdeɪt əv ˈbɜːθ/",
+    "method": "editor-transcribed-UK (phrase/inflection)",
+    "source": "https://www.oxfordlearnersdictionaries.com/definition/english/birth",
+    "note": "英式宽式编辑转写；弱读、重音随语境变化，不声称词典对整串文字直接提供此音标。"
+  }
+}

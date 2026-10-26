@@ -1,0 +1,1042 @@
+[
+  {
+    "id": 8947,
+    "word": "checkout",
+    "phonetic": "/ˈtʃekaʊt/",
+    "pos": "n.",
+    "meaning": "付款结账；结账处",
+    "example": "Please review your order before checkout.",
+    "exampleCn": "请在付款结账前核对订单。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8948,
+    "word": "username",
+    "phonetic": "/ˈjuːzəneɪm/",
+    "pos": "n.",
+    "meaning": "用户名",
+    "example": "Choose a username that is easy to remember.",
+    "exampleCn": "选择一个容易记住的用户名。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8949,
+    "word": "screenshot",
+    "phonetic": "/ˈskriːnʃɒt/",
+    "pos": "n.",
+    "meaning": "屏幕截图",
+    "example": "Send a screenshot of the error message.",
+    "exampleCn": "发送一张错误信息的屏幕截图。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8950,
+    "word": "headphones",
+    "phonetic": "/ˈhedfəʊnz/",
+    "pos": "n. pl.",
+    "meaning": "耳机",
+    "example": "I use headphones when I study in the library.",
+    "exampleCn": "在图书馆学习时，我会戴耳机。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8951,
+    "word": "charger",
+    "phonetic": "/ˈtʃɑːdʒə(r)/",
+    "pos": "n.",
+    "meaning": "充电器",
+    "example": "I left my phone charger at the office.",
+    "exampleCn": "我把手机充电器落在办公室了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8952,
+    "word": "power bank",
+    "phonetic": "/ˈpaʊə bæŋk/",
+    "pos": "n.",
+    "meaning": "移动电源；充电宝",
+    "example": "I packed a power bank for the long journey.",
+    "exampleCn": "我为这次长途旅行带上了充电宝。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8953,
+    "word": "reusable",
+    "phonetic": "/ˌriːˈjuːzəbl/",
+    "pos": "adj.",
+    "meaning": "可重复使用的",
+    "example": "Bring a reusable bag when you go shopping.",
+    "exampleCn": "购物时请带上可重复使用的袋子。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8954,
+    "word": "childcare",
+    "phonetic": "/ˈtʃaɪldkeə(r)/",
+    "pos": "n.",
+    "meaning": "儿童照料；托育",
+    "example": "The company offers help with childcare costs.",
+    "exampleCn": "公司为托育费用提供补助。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8955,
+    "word": "sunscreen",
+    "phonetic": "/ˈsʌnskriːn/",
+    "pos": "n.",
+    "meaning": "防晒霜；防晒用品",
+    "example": "Apply sunscreen before going outside.",
+    "exampleCn": "出门前涂好防晒霜。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8956,
+    "word": "toothpaste",
+    "phonetic": "/ˈtuːθpeɪst/",
+    "pos": "n.",
+    "meaning": "牙膏",
+    "example": "We need a new tube of toothpaste.",
+    "exampleCn": "我们需要一支新牙膏。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8957,
+    "word": "groceries",
+    "phonetic": "/ˈɡrəʊsəriz/",
+    "pos": "n. pl.",
+    "meaning": "食品杂货",
+    "example": "We bought groceries on the way home.",
+    "exampleCn": "我们在回家的路上买了食品杂货。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8958,
+    "word": "leftovers",
+    "phonetic": "/ˈleftəʊvəz/",
+    "pos": "n. pl.",
+    "meaning": "剩饭菜；吃剩的食物",
+    "example": "Put the leftovers in the fridge after dinner.",
+    "exampleCn": "晚饭后把剩饭菜放进冰箱。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8959,
+    "word": "settings",
+    "phonetic": "/ˈsetɪŋz/",
+    "pos": "n. pl.",
+    "meaning": "设置；配置选项",
+    "example": "You can change the language in the settings.",
+    "exampleCn": "你可以在设置中更改语言。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8960,
+    "word": "log in",
+    "phonetic": "/lɒɡ ˈɪn/",
+    "pos": "v. phr.",
+    "meaning": "登录",
+    "example": "You need to log in before viewing your results.",
+    "exampleCn": "你需要先登录才能查看成绩。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8961,
+    "word": "log out",
+    "phonetic": "/lɒɡ ˈaʊt/",
+    "pos": "v. phr.",
+    "meaning": "退出登录",
+    "example": "Remember to log out when you finish using the computer.",
+    "exampleCn": "用完电脑后记得退出登录。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8962,
+    "word": "sign up",
+    "phonetic": "/saɪn ˈʌp/",
+    "pos": "v. phr.",
+    "meaning": "报名；注册",
+    "example": "You can sign up for the course online.",
+    "exampleCn": "你可以在线报名这门课程。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8963,
+    "word": "fill in",
+    "phonetic": "/fɪl ˈɪn/",
+    "pos": "v. phr.",
+    "meaning": "填写",
+    "example": "Please fill in your address on this form.",
+    "exampleCn": "请在这张表格上填写你的地址。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8964,
+    "word": "look up",
+    "phonetic": "/lʊk ˈʌp/",
+    "pos": "v. phr.",
+    "meaning": "查找；查阅",
+    "example": "You can look up the word in a dictionary.",
+    "exampleCn": "你可以在词典里查这个词。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8965,
+    "word": "look after",
+    "phonetic": "/lʊk ˈɑːftə/",
+    "pos": "v. phr.",
+    "meaning": "照顾；照料",
+    "example": "Can you look after the cat this weekend?",
+    "exampleCn": "这个周末你能照顾一下猫吗？",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8966,
+    "word": "look for",
+    "phonetic": "/ˈlʊk fə/",
+    "pos": "v. phr.",
+    "meaning": "寻找",
+    "example": "We need to look for a quieter place to study.",
+    "exampleCn": "我们需要找一个更安静的地方学习。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8967,
+    "word": "look forward to",
+    "phonetic": "/lʊk ˈfɔːwəd tə/",
+    "pos": "v. phr.",
+    "meaning": "期待；盼望",
+    "example": "I look forward to meeting your team.",
+    "exampleCn": "我期待与你们的团队见面。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8968,
+    "word": "put off",
+    "phonetic": "/pʊt ˈɒf/",
+    "pos": "v. phr.",
+    "meaning": "推迟",
+    "example": "We had to put off the meeting until Monday.",
+    "exampleCn": "我们不得不把会议推迟到星期一。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8969,
+    "word": "pick up",
+    "phonetic": "/pɪk ˈʌp/",
+    "pos": "v. phr.",
+    "meaning": "接人；取走",
+    "example": "I will pick up the parcel after work.",
+    "exampleCn": "下班后我会去取包裹。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8970,
+    "word": "drop off",
+    "phonetic": "/drɒp ˈɒf/",
+    "pos": "v. phr.",
+    "meaning": "送到；顺路送达",
+    "example": "I can drop off the package on my way to work.",
+    "exampleCn": "我可以在上班路上把包裹送过去。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8971,
+    "word": "turn on",
+    "phonetic": "/tɜːn ˈɒn/",
+    "pos": "v. phr.",
+    "meaning": "打开；接通",
+    "example": "Please turn on the light above the desk.",
+    "exampleCn": "请打开书桌上方的灯。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8972,
+    "word": "turn off",
+    "phonetic": "/tɜːn ˈɒf/",
+    "pos": "v. phr.",
+    "meaning": "关闭；关掉",
+    "example": "Please turn off the lights before leaving.",
+    "exampleCn": "离开前请关灯。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8973,
+    "word": "run out of",
+    "phonetic": "/rʌn ˈaʊt əv/",
+    "pos": "v. phr.",
+    "meaning": "用完；耗尽",
+    "example": "We may run out of milk before the weekend.",
+    "exampleCn": "我们可能周末前就把牛奶喝完了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8974,
+    "word": "figure out",
+    "phonetic": "/fɪɡər ˈaʊt/",
+    "pos": "v. phr.",
+    "meaning": "弄清楚；想出",
+    "example": "We need to figure out why the door will not close.",
+    "exampleCn": "我们需要弄清楚门为什么关不上。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8975,
+    "word": "work out",
+    "phonetic": "/wɜːk ˈaʊt/",
+    "pos": "v. phr.",
+    "meaning": "算出；想出解决办法",
+    "example": "Let us work out the total cost first.",
+    "exampleCn": "我们先算出总费用吧。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8976,
+    "word": "set up",
+    "phonetic": "/set ˈʌp/",
+    "pos": "v. phr.",
+    "meaning": "建立；设置",
+    "example": "We need to set up a new account for the team.",
+    "exampleCn": "我们需要为团队创建一个新账户。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8977,
+    "word": "keep up with",
+    "phonetic": "/kiːp ˈʌp wɪð/",
+    "pos": "v. phr.",
+    "meaning": "跟上；及时了解",
+    "example": "It is hard to keep up with all the new messages.",
+    "exampleCn": "很难及时跟上所有新消息。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8978,
+    "word": "catch up",
+    "phonetic": "/kætʃ ˈʌp/",
+    "pos": "v. phr.",
+    "meaning": "赶上；补上落下的进度",
+    "example": "I missed two lessons and need to catch up.",
+    "exampleCn": "我缺了两节课，需要补上进度。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8979,
+    "word": "get along",
+    "phonetic": "/ɡet əˈlɒŋ/",
+    "pos": "v. phr.",
+    "meaning": "相处融洽",
+    "example": "The new classmates seem to get along well.",
+    "exampleCn": "新同学们似乎相处得很好。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8980,
+    "word": "put away",
+    "phonetic": "/pʊt əˈweɪ/",
+    "pos": "v. phr.",
+    "meaning": "收好；放回原处",
+    "example": "Please put away your books before dinner.",
+    "exampleCn": "晚饭前请把书收好。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8981,
+    "word": "try on",
+    "phonetic": "/traɪ ˈɒn/",
+    "pos": "v. phr.",
+    "meaning": "试穿；试戴",
+    "example": "May I try on this jacket in a larger size?",
+    "exampleCn": "我可以试穿一件大一码的这款夹克吗？",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8982,
+    "word": "take off",
+    "phonetic": "/teɪk ˈɒf/",
+    "pos": "v. phr.",
+    "meaning": "脱下；摘下",
+    "example": "Please take off your shoes at the door.",
+    "exampleCn": "请在门口脱鞋。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8983,
+    "word": "put on",
+    "phonetic": "/pʊt ˈɒn/",
+    "pos": "v. phr.",
+    "meaning": "穿上；戴上",
+    "example": "Put on a warm coat before going out.",
+    "exampleCn": "出门前穿上一件暖和的外套。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8984,
+    "word": "hand in",
+    "phonetic": "/hænd ˈɪn/",
+    "pos": "v. phr.",
+    "meaning": "提交；交上",
+    "example": "Please hand in your homework before lunch.",
+    "exampleCn": "请在午饭前交作业。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8985,
+    "word": "sort out",
+    "phonetic": "/sɔːt ˈaʊt/",
+    "pos": "v. phr.",
+    "meaning": "解决；整理清楚",
+    "example": "We need to sort out the booking problem today.",
+    "exampleCn": "我们需要今天解决预订问题。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8986,
+    "word": "pay back",
+    "phonetic": "/peɪ ˈbæk/",
+    "pos": "v. phr.",
+    "meaning": "归还借款；偿还",
+    "example": "I will pay back the money next week.",
+    "exampleCn": "我会在下周还钱。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8987,
+    "word": "cut down on",
+    "phonetic": "/kʌt ˈdaʊn ɒn/",
+    "pos": "v. phr.",
+    "meaning": "减少使用；减少摄入",
+    "example": "I am trying to cut down on sugary drinks.",
+    "exampleCn": "我正努力少喝含糖饮料。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8988,
+    "word": "make up",
+    "phonetic": "/meɪk ˈʌp/",
+    "pos": "v. phr.",
+    "meaning": "编造；虚构",
+    "example": "Do not make up an excuse for being late.",
+    "exampleCn": "不要为迟到编造借口。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8989,
+    "word": "take part in",
+    "phonetic": "/teɪk ˈpɑːt ɪn/",
+    "pos": "v. phr.",
+    "meaning": "参加；参与",
+    "example": "Everyone can take part in the discussion.",
+    "exampleCn": "每个人都可以参与讨论。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8990,
+    "word": "pay attention to",
+    "phonetic": "/peɪ əˈtenʃn tə/",
+    "pos": "v. phr.",
+    "meaning": "注意；留意",
+    "example": "Please pay attention to the safety instructions.",
+    "exampleCn": "请注意安全说明。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8991,
+    "word": "deal with",
+    "phonetic": "/ˈdiːl wɪð/",
+    "pos": "v. phr.",
+    "meaning": "处理；应对",
+    "example": "We need to deal with this problem before Friday.",
+    "exampleCn": "我们需要在星期五之前处理这个问题。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8992,
+    "word": "depend on",
+    "phonetic": "/dɪˈpend ɒn/",
+    "pos": "v. phr.",
+    "meaning": "取决于；依靠",
+    "example": "Our travel plans depend on the weather.",
+    "exampleCn": "我们的旅行计划取决于天气。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8993,
+    "word": "apply for",
+    "phonetic": "/əˈplaɪ fə/",
+    "pos": "v. phr.",
+    "meaning": "申请",
+    "example": "You can apply for the job through the website.",
+    "exampleCn": "你可以通过网站申请这份工作。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8994,
+    "word": "ask for",
+    "phonetic": "/ˈɑːsk fə/",
+    "pos": "v. phr.",
+    "meaning": "请求；索要",
+    "example": "You can ask for help at the information desk.",
+    "exampleCn": "你可以在问讯处寻求帮助。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8995,
+    "word": "wait for",
+    "phonetic": "/ˈweɪt fə/",
+    "pos": "v. phr.",
+    "meaning": "等待",
+    "example": "We can wait for the bus near the station entrance.",
+    "exampleCn": "我们可以在车站入口附近等公交车。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8996,
+    "word": "listen to",
+    "phonetic": "/ˈlɪsn tə/",
+    "pos": "v. phr.",
+    "meaning": "听；倾听",
+    "example": "Please listen to the recording twice.",
+    "exampleCn": "请把录音听两遍。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8997,
+    "word": "be able to",
+    "phonetic": "/bi ˈeɪbl tə/",
+    "pos": "v. phr.",
+    "meaning": "能够",
+    "example": "You will be able to review your answers after the test.",
+    "exampleCn": "测试结束后，你就能回看答案。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8998,
+    "word": "be supposed to",
+    "phonetic": "/bi səˈpəʊst tə/",
+    "pos": "v. phr.",
+    "meaning": "按规定应当；理应",
+    "example": "We are supposed to return the keys before noon.",
+    "exampleCn": "按规定，我们应在中午前归还钥匙。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8999,
+    "word": "make an effort",
+    "phonetic": "/meɪk ən ˈefət/",
+    "pos": "v. phr.",
+    "meaning": "努力；作出努力",
+    "example": "We should make an effort to learn each other’s names.",
+    "exampleCn": "我们应该努力记住彼此的名字。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9000,
+    "word": "take a break",
+    "phonetic": "/teɪk ə ˈbreɪk/",
+    "pos": "v. phr.",
+    "meaning": "休息一会儿",
+    "example": "Let us take a break after this exercise.",
+    "exampleCn": "做完这道练习后，我们休息一会儿吧。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9001,
+    "word": "make a decision",
+    "phonetic": "/meɪk ə dɪˈsɪʒn/",
+    "pos": "v. phr.",
+    "meaning": "作出决定",
+    "example": "We need to make a decision before the tickets sell out.",
+    "exampleCn": "我们需要在票售完之前作出决定。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9002,
+    "word": "keep in mind",
+    "phonetic": "/kiːp ɪn ˈmaɪnd/",
+    "pos": "v. phr.",
+    "meaning": "记住；牢记",
+    "example": "Please keep in mind that the library closes early today.",
+    "exampleCn": "请记住，图书馆今天提早关门。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9003,
+    "word": "boarding pass",
+    "phonetic": "/ˈbɔːdɪŋ pɑːs/",
+    "pos": "n.",
+    "meaning": "登机牌",
+    "example": "Have your boarding pass ready at the gate.",
+    "exampleCn": "请在登机口准备好登机牌。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9004,
+    "word": "public transport",
+    "phonetic": "/ˌpʌblɪk ˈtrænspɔːt/",
+    "pos": "n.",
+    "meaning": "公共交通",
+    "example": "Public transport is cheaper than driving in this city.",
+    "exampleCn": "在这座城市，乘公共交通比开车便宜。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9005,
+    "word": "seat belt",
+    "phonetic": "/ˈsiːt belt/",
+    "pos": "n.",
+    "meaning": "安全带",
+    "example": "Please fasten your seat belt before we leave.",
+    "exampleCn": "出发前请系好安全带。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9006,
+    "word": "waiting room",
+    "phonetic": "/ˈweɪtɪŋ ruːm/",
+    "pos": "n.",
+    "meaning": "等候室",
+    "example": "Please take a seat in the waiting room.",
+    "exampleCn": "请在等候室就座。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9007,
+    "word": "customer service",
+    "phonetic": "/ˌkʌstəmə ˈsɜːvɪs/",
+    "pos": "n.",
+    "meaning": "客户服务；客服",
+    "example": "Contact customer service if your order does not arrive.",
+    "exampleCn": "如果订单没有送达，请联系客服。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9008,
+    "word": "health insurance",
+    "phonetic": "/ˈhelθ ɪnˌʃʊərəns/",
+    "pos": "n.",
+    "meaning": "医疗保险",
+    "example": "Does your health insurance cover this treatment?",
+    "exampleCn": "你的医疗保险涵盖这项治疗吗？",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9009,
+    "word": "return ticket",
+    "phonetic": "/rɪˌtɜːn ˈtɪkɪt/",
+    "pos": "n.",
+    "meaning": "往返票",
+    "example": "A return ticket costs less than two single tickets.",
+    "exampleCn": "一张往返票比两张单程票便宜。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9010,
+    "word": "single ticket",
+    "phonetic": "/ˌsɪŋɡl ˈtɪkɪt/",
+    "pos": "n.",
+    "meaning": "单程票",
+    "example": "I only need a single ticket to the airport.",
+    "exampleCn": "我只需要一张去机场的单程票。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9011,
+    "word": "round trip",
+    "phonetic": "/ˌraʊnd ˈtrɪp/",
+    "pos": "n.",
+    "meaning": "往返行程",
+    "example": "The round trip takes about three hours.",
+    "exampleCn": "往返行程大约需要三小时。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9012,
+    "word": "bank account",
+    "phonetic": "/ˈbæŋk əkaʊnt/",
+    "pos": "n.",
+    "meaning": "银行账户",
+    "example": "You need a bank account to receive the payment.",
+    "exampleCn": "你需要一个银行账户来收款。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9013,
+    "word": "exchange rate",
+    "phonetic": "/ɪksˈtʃeɪndʒ reɪt/",
+    "pos": "n.",
+    "meaning": "汇率",
+    "example": "Check the exchange rate before changing your money.",
+    "exampleCn": "兑换货币前请查看汇率。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9014,
+    "word": "interest rate",
+    "phonetic": "/ˈɪntrəst reɪt/",
+    "pos": "n.",
+    "meaning": "利率",
+    "example": "Ask about the interest rate before taking out a loan.",
+    "exampleCn": "贷款前请询问利率。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9015,
+    "word": "savings account",
+    "phonetic": "/ˈseɪvɪŋz əkaʊnt/",
+    "pos": "n.",
+    "meaning": "储蓄账户",
+    "example": "She opened a savings account for future expenses.",
+    "exampleCn": "她开了一个储蓄账户，为未来的开支作准备。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9016,
+    "word": "mobile data",
+    "phonetic": "/ˌməʊbaɪl ˈdeɪtə/",
+    "pos": "n.",
+    "meaning": "移动数据；手机流量",
+    "example": "Turn off mobile data if you do not need internet access.",
+    "exampleCn": "如果不需要联网，可以关闭移动数据。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9017,
+    "word": "airplane mode",
+    "phonetic": "/ˈeəpleɪn məʊd/",
+    "pos": "n.",
+    "meaning": "飞行模式",
+    "example": "Please switch your phone to airplane mode.",
+    "exampleCn": "请把手机切换到飞行模式。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9018,
+    "word": "voicemail",
+    "phonetic": "/ˈvɔɪsmeɪl/",
+    "pos": "n.",
+    "meaning": "语音信箱；语音留言",
+    "example": "Please leave a voicemail if I do not answer.",
+    "exampleCn": "如果我没有接电话，请留下语音留言。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9019,
+    "word": "video call",
+    "phonetic": "/ˈvɪdiəʊ kɔːl/",
+    "pos": "n.",
+    "meaning": "视频通话",
+    "example": "We can discuss the plan on a video call.",
+    "exampleCn": "我们可以通过视频通话讨论这个计划。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9020,
+    "word": "proofread",
+    "phonetic": "/ˈpruːfriːd/",
+    "pos": "v.",
+    "meaning": "校对",
+    "example": "Please proofread your application before sending it.",
+    "exampleCn": "发送申请前，请先校对。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9021,
+    "word": "restroom",
+    "phonetic": "/ˈrestruːm/",
+    "pos": "n.",
+    "meaning": "洗手间；公共厕所",
+    "example": "Is there a restroom near the entrance?",
+    "exampleCn": "入口附近有洗手间吗？",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9022,
+    "word": "parking space",
+    "phonetic": "/ˈpɑːkɪŋ speɪs/",
+    "pos": "n.",
+    "meaning": "停车位",
+    "example": "We found a parking space near the supermarket.",
+    "exampleCn": "我们在超市附近找到了一个停车位。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9023,
+    "word": "phone number",
+    "phonetic": "/ˈfəʊn nʌmbə(r)/",
+    "pos": "n.",
+    "meaning": "电话号码",
+    "example": "Please write your phone number on the form.",
+    "exampleCn": "请在表格上填写你的电话号码。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9024,
+    "word": "email address",
+    "phonetic": "/ˈiːmeɪl ədres/",
+    "pos": "n.",
+    "meaning": "电子邮箱地址",
+    "example": "Please enter a valid email address.",
+    "exampleCn": "请输入有效的电子邮箱地址。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9025,
+    "word": "postal code",
+    "phonetic": "/ˈpəʊstl kəʊd/",
+    "pos": "n.",
+    "meaning": "邮政编码",
+    "example": "Please include your postal code in the delivery address.",
+    "exampleCn": "请在收货地址中填写邮政编码。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 9026,
+    "word": "date of birth",
+    "phonetic": "/ˌdeɪt əv ˈbɜːθ/",
+    "pos": "n. phr.",
+    "meaning": "出生日期",
+    "example": "The form asks for your date of birth.",
+    "exampleCn": "这张表格要求填写你的出生日期。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  }
+]

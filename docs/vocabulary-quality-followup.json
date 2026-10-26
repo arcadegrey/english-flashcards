@@ -1,17 +1,17 @@
 {
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "scope": "历史待核项去重分流与本轮字段修复跟踪；不是全量语言审校完成证明。",
   "summary": {
     "baseCandidates": {
       "resolved_field": 1,
-      "resolved_source_review": 73,
-      "retired_reference_only": 37
+      "resolved_source_review": 71,
+      "retired_reference_only": 39
     },
     "inclusionCandidates": {
-      "partially_corrected_followup_required": 10,
-      "needs_source_review": 28
+      "resolved_source_review": 19,
+      "retired_reference_only": 19
     },
-    "correctedRecords": 79
+    "correctedRecords": 90
   },
   "base": [
     {
@@ -1096,24 +1096,8 @@
       "id": 6413,
       "word": "charlie",
       "rule": "missing_phonetic",
-      "status": "resolved_source_review",
+      "status": "retired_reference_only",
       "finding": "缺少 phonetic；需人工补核，不自动生成。",
-      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
-      "checkedAt": "2026-10-25",
-      "current": {
-        "id": 6413,
-        "word": "charlie",
-        "phonetic": "/ˈtʃɑːli/",
-        "pos": "n.",
-        "meaning": "n. 查理（人名，写作 Charlie，是 Charles 的昵称）；[通信] 字母 C 的代码词",
-        "example": "Charlie has been working as a firefighter at the central station for over fifteen years now.",
-        "exampleCn": "查理在中央消防站做了超过十五年的消防员。",
-        "category": "daily",
-        "categories": [
-          "daily",
-          "cet4"
-        ]
-      },
       "correctedFields": [
         "phonetic"
       ]
@@ -1312,7 +1296,7 @@
         "pos": "n.",
         "meaning": "贵族；勋爵（lord 的复数）；the Lords 或 House of Lords 指英国上议院",
         "example": "The proposed law was debated for hours in the House of Lords before being passed last night.",
-        "exampleCn": "上议院对这项提案进行了数小时的辩论最终在昨晚深夜通过。",
+        "exampleCn": "这项法律提案在英国上议院辩论了数小时，昨晚才获通过。",
         "category": "daily",
         "categories": [
           "daily",
@@ -1321,7 +1305,8 @@
       },
       "correctedFields": [
         "phonetic",
-        "meaning"
+        "meaning",
+        "exampleCn"
       ]
     },
     {
@@ -1417,24 +1402,8 @@
       "id": 6682,
       "word": "korea",
       "rule": "possible_sense_alignment",
-      "status": "resolved_source_review",
+      "status": "retired_reference_only",
       "finding": "原释义：n. 朝鲜, 韩国；提示范围：专有名词 · 朝鲜半岛。两者不同不自动代表错误。",
-      "reviewRegister": "data/vocabulary-followup/reviews-2026-10-25.json",
-      "checkedAt": "2026-10-25",
-      "current": {
-        "id": 6682,
-        "word": "korea",
-        "phonetic": "/kəˈriːə/",
-        "pos": "n.",
-        "meaning": "朝鲜半岛地区（专名，规范写法 Korea；现代国家名称应区分 North Korea 与 South Korea）",
-        "example": "The atlas includes a detailed map of Korea.",
-        "exampleCn": "这本地图集收录了一张详细的朝鲜半岛地图。",
-        "category": "daily",
-        "categories": [
-          "daily",
-          "cet4"
-        ]
-      },
       "correctedFields": [
         "phonetic",
         "meaning",
@@ -2397,371 +2366,413 @@
       "word": "cripple",
       "decision": "sense_review",
       "finding": "不整词删除：需逐义区分历史族群称呼、残障指称与当代普通形容词/动词用法，并核对中文语域。当前数据不宜把所有义项当作可互换的中性表达。",
-      "status": "partially_corrected_followup_required",
+      "status": "resolved_source_review",
       "correctedFields": [
         "meaning"
       ],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     },
     {
       "id": 3367,
       "word": "aborigine",
       "decision": "sense_review",
       "finding": "不整词删除：需逐义区分历史族群称呼、残障指称与当代普通形容词/动词用法，并核对中文语域。当前数据不宜把所有义项当作可互换的中性表达。",
-      "status": "needs_source_review",
-      "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "status": "resolved_source_review",
+      "correctedFields": [
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     },
     {
       "id": 3491,
       "word": "Caucasian",
       "decision": "sense_review",
       "finding": "不整词删除：需逐义区分历史族群称呼、残障指称与当代普通形容词/动词用法，并核对中文语域。当前数据不宜把所有义项当作可互换的中性表达。",
-      "status": "needs_source_review",
-      "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "status": "resolved_source_review",
+      "correctedFields": [
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     },
     {
       "id": 3660,
       "word": "oriental",
       "decision": "sense_review",
       "finding": "不整词删除：需逐义区分历史族群称呼、残障指称与当代普通形容词/动词用法，并核对中文语域。当前数据不宜把所有义项当作可互换的中性表达。",
-      "status": "needs_source_review",
-      "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "status": "resolved_source_review",
+      "correctedFields": [
+        "pos",
+        "meaning"
+      ],
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     },
     {
       "id": 5392,
       "word": "dumb",
       "decision": "sense_review",
       "finding": "不整词删除：需逐义区分历史族群称呼、残障指称与当代普通形容词/动词用法，并核对中文语域。当前数据不宜把所有义项当作可互换的中性表达。",
-      "status": "partially_corrected_followup_required",
+      "status": "resolved_source_review",
       "correctedFields": [
         "meaning"
       ],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     },
     {
       "id": 5463,
       "word": "may",
       "decision": "sense_review",
       "finding": "保留学习价值，但词条兼有普通词、月份或专有短语义。先按具体义项/短语对齐教学目标，不把某个人名/机构义覆盖整个拼写。",
-      "status": "needs_source_review",
-      "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "status": "resolved_source_review",
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ],
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     },
     {
       "id": 5941,
       "word": "states",
       "decision": "sense_review",
       "finding": "保留学习价值，但词条兼有普通词、月份或专有短语义。先按具体义项/短语对齐教学目标，不把某个人名/机构义覆盖整个拼写。",
-      "status": "partially_corrected_followup_required",
+      "status": "resolved_source_review",
       "correctedFields": [
         "meaning",
         "exampleCn",
         "phonetic"
       ],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     },
     {
       "id": 5956,
       "word": "august",
       "decision": "sense_review",
       "finding": "保留学习价值，但词条兼有普通词、月份或专有短语义。先按具体义项/短语对齐教学目标，不把某个人名/机构义覆盖整个拼写。",
-      "status": "needs_source_review",
-      "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "status": "resolved_source_review",
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     },
     {
       "id": 5967,
       "word": "henry",
       "decision": "sense_review",
       "finding": "姓名/专名例句与单位、马种、甜点或采锡专业义提示不一致。先按 ID 确定教学义项；专名义建议选学，专业义也不能直接当作日常核心。",
-      "status": "needs_source_review",
+      "status": "retired_reference_only",
       "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 6105,
       "word": "jones",
       "decision": "sense_review",
       "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
-      "status": "needs_source_review",
+      "status": "retired_reference_only",
       "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 6127,
       "word": "dec",
       "decision": "sense_review",
       "finding": "当前基础释义/例句与月份缩写提示不同。先确定要教授的义项，再核验大小写、释义、例句和音频；不能在旧 ID 下静默换义。",
-      "status": "partially_corrected_followup_required",
+      "status": "resolved_source_review",
       "correctedFields": [
         "phonetic",
         "pos",
         "meaning"
       ],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     },
     {
       "id": 6134,
       "word": "joe",
       "decision": "sense_review",
       "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
-      "status": "needs_source_review",
+      "status": "retired_reference_only",
       "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 6281,
       "word": "lewis",
       "decision": "sense_review",
       "finding": "基础释义与原例句是实际普通词义，提示却转成人名/地名。建议按当前冷僻/专业义转专题选学，并先对齐提示，不能直接改成人名或删词。",
-      "status": "needs_source_review",
+      "status": "retired_reference_only",
       "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 6344,
       "word": "commons",
       "decision": "sense_review",
       "finding": "保留学习价值，但词条兼有普通词、月份或专有短语义。先按具体义项/短语对齐教学目标，不把某个人名/机构义覆盖整个拼写。",
-      "status": "needs_source_review",
-      "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "status": "resolved_source_review",
+      "correctedFields": [
+        "meaning"
+      ],
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     },
     {
       "id": 6356,
       "word": "teen",
       "decision": "sense_review",
       "finding": "值得保留青少年/青少年时期义，但当前基础释义为“愤怒、悲哀”，与例句和提示不同；须修正主教学义而非剔除这个常用词。",
-      "status": "partially_corrected_followup_required",
+      "status": "resolved_source_review",
       "correctedFields": [
         "pos",
-        "meaning"
+        "meaning",
+        "example",
+        "exampleCn"
       ],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     },
     {
       "id": 6358,
       "word": "sept",
       "decision": "sense_review",
       "finding": "当前基础释义/例句与月份缩写提示不同。先确定要教授的义项，再核验大小写、释义、例句和音频；不能在旧 ID 下静默换义。",
-      "status": "needs_source_review",
-      "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "status": "resolved_source_review",
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     },
     {
       "id": 6366,
       "word": "disabled",
       "decision": "sense_review",
       "finding": "不整词删除：需逐义区分历史族群称呼、残障指称与当代普通形容词/动词用法，并核对中文语域。当前数据不宜把所有义项当作可互换的中性表达。",
-      "status": "partially_corrected_followup_required",
+      "status": "resolved_source_review",
       "correctedFields": [
         "pos",
-        "meaning"
+        "meaning",
+        "example",
+        "exampleCn"
       ],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     },
     {
       "id": 6379,
       "word": "ruth",
       "decision": "sense_review",
       "finding": "基础释义与原例句是实际普通词义，提示却转成人名/地名。建议按当前冷僻/专业义转专题选学，并先对齐提示，不能直接改成人名或删词。",
-      "status": "needs_source_review",
+      "status": "retired_reference_only",
       "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 6409,
       "word": "kong",
       "decision": "sense_review",
       "finding": "姓名/专名例句与单位、马种、甜点或采锡专业义提示不一致。先按 ID 确定教学义项；专名义建议选学，专业义也不能直接当作日常核心。",
-      "status": "needs_source_review",
+      "status": "retired_reference_only",
       "correctedFields": [],
-      "nextAction": "核实基础释义、King Kong 专名例句与专业义提示冲突；不可静默换义或迁移成绩。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 6413,
       "word": "charlie",
       "decision": "sense_review",
       "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
-      "status": "partially_corrected_followup_required",
+      "status": "retired_reference_only",
       "correctedFields": [
         "phonetic"
       ],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 6434,
       "word": "victoria",
       "decision": "sense_review",
       "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
-      "status": "needs_source_review",
+      "status": "retired_reference_only",
       "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 6500,
       "word": "ulster",
       "decision": "sense_review",
       "finding": "基础释义与原例句是实际普通词义，提示却转成人名/地名。建议按当前冷僻/专业义转专题选学，并先对齐提示，不能直接改成人名或删词。",
-      "status": "needs_source_review",
+      "status": "retired_reference_only",
       "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 6588,
       "word": "kelly",
       "decision": "sense_review",
       "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
-      "status": "needs_source_review",
+      "status": "retired_reference_only",
       "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 6591,
       "word": "clare",
       "decision": "sense_review",
       "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
-      "status": "needs_source_review",
+      "status": "retired_reference_only",
       "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 6634,
       "word": "lords",
       "decision": "sense_review",
       "finding": "保留学习价值，但词条兼有普通词、月份或专有短语义。先按具体义项/短语对齐教学目标，不把某个人名/机构义覆盖整个拼写。",
-      "status": "partially_corrected_followup_required",
+      "status": "resolved_source_review",
       "correctedFields": [
         "phonetic",
-        "meaning"
+        "meaning",
+        "exampleCn"
       ],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     },
     {
       "id": 6684,
       "word": "caroline",
       "decision": "sense_review",
       "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
-      "status": "needs_source_review",
+      "status": "retired_reference_only",
       "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 6724,
       "word": "morgan",
       "decision": "sense_review",
       "finding": "姓名/专名例句与单位、马种、甜点或采锡专业义提示不一致。先按 ID 确定教学义项；专名义建议选学，专业义也不能直接当作日常核心。",
-      "status": "needs_source_review",
+      "status": "retired_reference_only",
       "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 6820,
       "word": "surrey",
       "decision": "sense_review",
       "finding": "基础释义与原例句是实际普通词义，提示却转成人名/地名。建议按当前冷僻/专业义转专题选学，并先对齐提示，不能直接改成人名或删词。",
-      "status": "needs_source_review",
+      "status": "retired_reference_only",
       "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 6827,
       "word": "jonathan",
       "decision": "sense_review",
       "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
-      "status": "needs_source_review",
+      "status": "retired_reference_only",
       "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 6831,
       "word": "charlotte",
       "decision": "sense_review",
       "finding": "姓名/专名例句与单位、马种、甜点或采锡专业义提示不一致。先按 ID 确定教学义项；专名义建议选学，专业义也不能直接当作日常核心。",
-      "status": "needs_source_review",
+      "status": "retired_reference_only",
       "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 6914,
       "word": "mick",
       "decision": "restricted_context",
       "finding": "仅在历史引文/词语辨析中解释，不建议默认产出练习或要求学习者用其称呼他人。Mick 还可为人名，需与族群贬称分开。原 ID、记录和历史音频仍保留。",
-      "status": "partially_corrected_followup_required",
+      "status": "retired_reference_only",
       "correctedFields": [
         "meaning"
       ],
-      "nextAction": "核实限定语境的展示与出题策略；历史记录与已发布快照保留。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 6980,
       "word": "betty",
       "decision": "sense_review",
       "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
-      "status": "needs_source_review",
+      "status": "retired_reference_only",
       "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 7123,
       "word": "tech",
       "decision": "sense_review",
       "finding": "保留实际使用价值，但须按复数 jeans、wagon 拼写变体或 tech 的具体义项组织教学。不能因表面像人名/冷僻形式就删除整条，也不宜重复计算学习负担。",
-      "status": "needs_source_review",
-      "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "status": "resolved_source_review",
+      "correctedFields": [
+        "meaning"
+      ],
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     },
     {
       "id": 7177,
       "word": "ralph",
       "decision": "sense_review",
       "finding": "基础词条或例句以姓名为主，提示转向口语/俚语、食品或地名等其他义项。姓名义不建议默认必背；其他义需独立核对语域和例句后再决定课程。",
-      "status": "needs_source_review",
+      "status": "retired_reference_only",
       "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "已按用户要求退出活动词库；保留历史 ID、文本与音频，不把旧进度转给新词。"
     },
     {
       "id": 8123,
       "word": "lame",
       "decision": "sense_review",
       "finding": "不整词删除：需逐义区分历史族群称呼、残障指称与当代普通形容词/动词用法，并核对中文语域。当前数据不宜把所有义项当作可互换的中性表达。",
-      "status": "needs_source_review",
-      "correctedFields": [],
-      "nextAction": "区分 lame 与织物名 lamé；需明确教学义项、重写基础例句并重制例句录音，再发布。"
+      "status": "resolved_source_review",
+      "correctedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     },
     {
       "id": 8164,
       "word": "negro",
       "decision": "restricted_context",
       "finding": "仅在历史引文/词语辨析中解释，不建议默认产出练习或要求学习者用其称呼他人。Mick 还可为人名，需与族群贬称分开。原 ID、记录和历史音频仍保留。",
-      "status": "needs_source_review",
+      "status": "resolved_source_review",
       "correctedFields": [],
-      "nextAction": "核实限定语境的展示与出题策略；历史记录与已发布快照保留。"
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     },
     {
       "id": 8175,
       "word": "waggon",
       "decision": "sense_review",
       "finding": "保留实际使用价值，但须按复数 jeans、wagon 拼写变体或 tech 的具体义项组织教学。不能因表面像人名/冷僻形式就删除整条，也不宜重复计算学习负担。",
-      "status": "partially_corrected_followup_required",
+      "status": "resolved_source_review",
       "correctedFields": [
         "meaning",
         "exampleCn",
         "phonetic"
       ],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     },
     {
       "id": 8213,
       "word": "jean",
       "decision": "sense_review",
       "finding": "保留实际使用价值，但须按复数 jeans、wagon 拼写变体或 tech 的具体义项组织教学。不能因表面像人名/冷僻形式就删除整条，也不宜重复计算学习负担。",
-      "status": "needs_source_review",
+      "status": "resolved_source_review",
       "correctedFields": [],
-      "nextAction": "逐条核实当前教学义项、提示、语域和英文例句；文本或读音变化须同步版本音频。"
+      "nextAction": "本轮来源复核完成；独立语言审校与生产验收仍需另行执行。"
     }
   ]
 }

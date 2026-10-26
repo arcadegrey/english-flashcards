@@ -1,5 +1,6 @@
-// Retired from active courses on 2026-10-25. Preserve IDs/text for historical records.
-export const RETIRED_VOCABULARY = [
+// Preserve each retirement stage unchanged for historical records and reproducible audits.
+import namePlaceRetired from '../data/name-place-replacement/retired-2026-10-26.json' with { type: 'json' };
+export const ORIGINAL_RETIRED_VOCABULARY = [
   {
     "id": 2735,
     "word": "isle",
@@ -3427,6 +3428,7 @@ export const RETIRED_VOCABULARY = [
   }
 ];
 
+export const RETIRED_VOCABULARY = [...ORIGINAL_RETIRED_VOCABULARY, ...namePlaceRetired];
 const retiredIds = new Set(RETIRED_VOCABULARY.map(word => String(word.id)));
 export const isRetiredVocabularyId = id => retiredIds.has(String(id));
 export const activeProgressIds = ids => (ids || []).filter(id => !isRetiredVocabularyId(id));

@@ -1,4 +1,5 @@
 import { normalizeVocabularyHeadword } from './vocabularyAliases.js';
+import { isContextOnlyVocabulary } from './vocabularyPracticePolicy.js';
 
 export const WORD_ASSIGNMENT_CATEGORIES = {
   all: '全部单词', daily: '日常常用', cet4: '四级核心', cet6: '六级核心', toefl: '托福词汇', ielts: '雅思词汇',
@@ -13,6 +14,7 @@ export function selectAssignmentWords(catalog, { category, start, count, wordIds
     const lookup = new Map(catalog.filter(word => category === 'all' || word.categories.includes(category)).map(word => [String(word.id), word]));
     const selected = wordIds.map(id => lookup.get(String(id)));
     if (selected.some(word => !word)) throw new Error('所选词汇不在当前词库中。');
+    if (selected.some(isContextOnlyVocabulary)) throw new Error('所选词汇含仅供历史语境识读的条目，请调整范围。');
     return selected;
   }
   if (!Number.isInteger(start) || start < 1 || !Number.isInteger(count) || count < 5 || count > 50) {
@@ -20,10 +22,13 @@ export function selectAssignmentWords(catalog, { category, start, count, wordIds
   }
   const pool = catalog.filter((word) => category === 'all' || word.categories.includes(category));
   if (start + count - 1 > pool.length) throw new Error(`所选范围超出词库，共 ${pool.length} 个词。`);
-  return pool.slice(start - 1, start - 1 + count);
+  const selected = pool.slice(start - 1, start - 1 + count);
+  if (selected.some(isContextOnlyVocabulary)) throw new Error('所选词汇含仅供历史语境识读的条目，请调整范围。');
+  return selected;
 }
 
 export function buildWordAssignment(words) {
+  if (words.some(isContextOnlyVocabulary)) throw new Error('历史语境识读词不用于新的词汇作业。');
   return words.map((word, index) => {
     const distractors = [...new Set(words.filter((other) => other.meaning !== word.meaning
       && normalizeVocabularyHeadword(other.word) !== normalizeVocabularyHeadword(word.word)).map((other) => other.meaning))].slice(0, 3);

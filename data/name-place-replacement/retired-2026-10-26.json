@@ -1,0 +1,1130 @@
+[
+  {
+    "id": 587,
+    "word": "Antarctic",
+    "phonetic": "/ænˈtɑːktɪk/",
+    "pos": "adj./n.",
+    "meaning": "南极的；南极洲",
+    "example": "The Antarctic is covered with ice.",
+    "exampleCn": "南极洲被冰雪覆盖。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "3",
+    "list": "1",
+    "ieltsList": "2"
+  },
+  {
+    "id": 2256,
+    "word": "Mediterranean",
+    "phonetic": "/ˌmedɪtəˈreɪniən/",
+    "pos": "adj./n.",
+    "meaning": "地中海的/地中海地区",
+    "example": "Mediterranean climates are often dry in summer.",
+    "exampleCn": "地中海气候夏季通常干燥。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "4",
+    "list": "9",
+    "ieltsList": "2"
+  },
+  {
+    "id": 2442,
+    "word": "Scandinavia",
+    "phonetic": "/ˌskændɪˈneɪviə/",
+    "pos": "n.",
+    "meaning": "斯堪的纳维亚",
+    "example": "Scandinavia is known for its long winters.",
+    "exampleCn": "斯堪的纳维亚以漫长的冬季闻名。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "1"
+  },
+  {
+    "id": 3140,
+    "word": "Antarctica",
+    "phonetic": "/ænˈtɑːrktɪkə/",
+    "pos": "n.",
+    "meaning": "南极洲",
+    "example": "Antarctica contains most of the world’s fresh water in the form of ice.",
+    "exampleCn": "南极洲以冰的形式储存了世界上大部分淡水。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "5",
+    "list": "8"
+  },
+  {
+    "id": 3416,
+    "word": "Himalayas",
+    "phonetic": "/ˌhɪməˈleɪəz/",
+    "pos": "n.",
+    "meaning": "喜马拉雅山脉",
+    "example": "The Himalayas contain some of the world’s highest mountains.",
+    "exampleCn": "喜马拉雅山脉包含世界上一些最高的山峰。",
+    "category": "toefl",
+    "categories": [
+      "toefl"
+    ],
+    "level": "6",
+    "list": "2"
+  },
+  {
+    "id": 3568,
+    "word": "Oceania",
+    "phonetic": "/ˌoʊʃiˈɑːniə/",
+    "pos": "n.",
+    "meaning": "大洋洲",
+    "example": "Oceania includes Australia, New Zealand, and many Pacific islands.",
+    "exampleCn": "大洋洲包括澳大利亚、新西兰和许多太平洋岛屿。",
+    "category": "toefl",
+    "categories": [
+      "toefl",
+      "ielts"
+    ],
+    "level": "6",
+    "list": "5",
+    "ieltsList": "2"
+  },
+  {
+    "id": 3610,
+    "word": "Arctic",
+    "phonetic": "/ˈɑːk.tɪk/",
+    "pos": "n./adj.",
+    "meaning": "北极/北极的",
+    "example": "Arctic sea ice is thinner than it used to be.",
+    "exampleCn": "北极海冰比过去更薄。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3613,
+    "word": "Atlantic",
+    "phonetic": "/ətˈlæn.tɪk/",
+    "pos": "n./adj.",
+    "meaning": "大西洋/大西洋的",
+    "example": "The ship crossed the Atlantic in six days.",
+    "exampleCn": "这艘船六天横渡了大西洋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 3615,
+    "word": "Pacific",
+    "phonetic": "/pəˈsɪf.ɪk/",
+    "pos": "n./adj.",
+    "meaning": "太平洋/太平洋的",
+    "example": "Many islands are located in the Pacific.",
+    "exampleCn": "许多岛屿位于太平洋。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "2"
+  },
+  {
+    "id": 4894,
+    "word": "Australia",
+    "phonetic": "ɒˈstreɪliə",
+    "pos": "n.",
+    "meaning": "澳大利亚",
+    "example": "Australia is famous for its beaches and wildlife.",
+    "exampleCn": "澳大利亚以海滩和野生动物闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4895,
+    "word": "New Zealand",
+    "phonetic": "ˌnjuː ˈziːlənd",
+    "pos": "n.",
+    "meaning": "新西兰",
+    "example": "New Zealand is known for its stunning landscapes.",
+    "exampleCn": "新西兰以其绝美的风景而闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4896,
+    "word": "Britain",
+    "phonetic": "ˈbrɪtn",
+    "pos": "n.",
+    "meaning": "英国/不列颠",
+    "example": "Britain is made up of England, Scotland, and Wales.",
+    "exampleCn": "大不列颠由英格兰、苏格兰和威尔士组成。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4897,
+    "word": "France",
+    "phonetic": "frɑːns",
+    "pos": "n.",
+    "meaning": "法国",
+    "example": "France is known for its art and cuisine.",
+    "exampleCn": "法国以其艺术和美食闻名。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 4898,
+    "word": "Germany",
+    "phonetic": "ˈdʒɜːməni",
+    "pos": "n.",
+    "meaning": "德国",
+    "example": "Germany is the largest economy in Europe.",
+    "exampleCn": "德国是欧洲最大的经济体。",
+    "category": "ielts",
+    "categories": [
+      "ielts"
+    ],
+    "ieltsList": "41",
+    "ieltsLists": [
+      "41"
+    ]
+  },
+  {
+    "id": 5595,
+    "word": "london",
+    "phonetic": "'lʌndәn",
+    "pos": "n.",
+    "meaning": "n. 伦敦",
+    "example": "He lived in London for six wonderful years before moving to New York for work.",
+    "exampleCn": "他在伦敦住了精彩的六年才因为工作搬到了纽约。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 5684,
+    "word": "england",
+    "phonetic": "'iŋglәnd",
+    "pos": "n.",
+    "meaning": "n. 英格兰\\n[法] 英格兰, 英国",
+    "example": "She has always dreamed of visiting England to see its rolling green hills and ancient castles.",
+    "exampleCn": "她一直梦想去英格兰看看那里起伏的绿色山丘和古老的城堡。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 5741,
+    "word": "europe",
+    "phonetic": "'juәrәp",
+    "pos": "n.",
+    "meaning": "n. 欧洲",
+    "example": "The Marshall Plan helped Europe recover from World War II.",
+    "exampleCn": "马歇尔计划帮助欧洲从第二次世界大战中恢复过来。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 5830,
+    "word": "scotland",
+    "phonetic": "'skɒtlәnd",
+    "pos": "n.",
+    "meaning": "n. 苏格兰",
+    "example": "They spent an unforgettable week hiking through the breathtaking highlands of Scotland last summer.",
+    "exampleCn": "他们去年夏天在苏格兰令人叹为观止的高地上徒步了一周，令人难忘。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 5875,
+    "word": "america",
+    "phonetic": "ә'merikә",
+    "pos": "n.",
+    "meaning": "n. 美洲, 美国",
+    "example": "She moved to America five years ago to pursue her dream of becoming a doctor.",
+    "exampleCn": "她五年前搬到美国去追逐成为医生的梦想。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 5901,
+    "word": "ireland",
+    "phonetic": "'aiәlәnd",
+    "pos": "n.",
+    "meaning": "n. 爱尔兰",
+    "example": "He traced his family roots back to a tiny coastal village in western Ireland.",
+    "exampleCn": "他把家族的根源追溯到爱尔兰西部一个安静的海滨小村。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 5910,
+    "word": "wales",
+    "phonetic": "weilz",
+    "pos": "n.",
+    "meaning": "n. 威尔士",
+    "example": "They spent a rainy but wonderful week hiking along the stunning coast of Wales.",
+    "exampleCn": "他们在威尔士壮丽的海岸线上徒步了一周虽然下雨但非常美好。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 5967,
+    "word": "henry",
+    "phonetic": "'henri",
+    "pos": "n.",
+    "meaning": "n. 亨利\\n[医] 亨[利](电感应单位)",
+    "example": "Henry has been learning to play the violin since he was just six years old.",
+    "exampleCn": "亨利从六岁起就一直在学小提琴。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 6003,
+    "word": "japan",
+    "phonetic": "dʒә'pæn",
+    "pos": "n.",
+    "meaning": "n. 日本\\n[化] 天然漆; 大漆; 漆器",
+    "example": "They visited Japan last spring and were amazed by the cherry blossoms in full bloom.",
+    "exampleCn": "他们去年春天去了日本被盛开的樱花惊艳到了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 6015,
+    "word": "paris",
+    "phonetic": "'pæris",
+    "pos": "n.",
+    "meaning": "n. 巴黎\\n[医] 重楼属",
+    "example": "They spent their honeymoon wandering through the charming narrow streets of Paris last June.",
+    "exampleCn": "他们去年六月在巴黎迷人的狭窄街道上漫步度过了蜜月。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 6078,
+    "word": "usa",
+    "phonetic": "ju: es 'ei",
+    "pos": "n.",
+    "meaning": "美国, 美利坚合众国, 美国陆军",
+    "example": "She dreamed of studying in the USA from a young age and finally made it happen last year.",
+    "exampleCn": "她从小梦想去美国留学去年终于实现了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 6082,
+    "word": "italy",
+    "phonetic": "'itәli",
+    "pos": "n.",
+    "meaning": "n. 意大利",
+    "example": "They spent three unforgettable weeks driving through the rolling green hills of Tuscany in Italy.",
+    "exampleCn": "他们在意大利托斯卡纳起伏的绿色山丘间开车度过了难忘的三周。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 6105,
+    "word": "jones",
+    "phonetic": "dʒәunz",
+    "pos": "n.",
+    "meaning": "n. 琼斯（姓氏）",
+    "example": "Mr Jones has been our next-door neighbour for more than fifteen years now.",
+    "exampleCn": "Jones 先生做我们隔壁邻居已经超过十五年了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 6113,
+    "word": "spain",
+    "phonetic": "spein",
+    "pos": "n.",
+    "meaning": "n. 西班牙",
+    "example": "They spent two wonderful weeks exploring the sunny beaches and old towns of Spain last summer.",
+    "exampleCn": "他们去年夏天在西班牙阳光明媚的海滩和古老小镇间探索了两周。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 6133,
+    "word": "russia",
+    "phonetic": "'rʌʃә",
+    "pos": "n.",
+    "meaning": "n. 俄国, 俄罗斯\\n[法] 俄罗斯, 苏联",
+    "example": "Russia covers a vast area across Europe and Asia.",
+    "exampleCn": "俄罗斯横跨欧洲和亚洲，幅员辽阔。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 6134,
+    "word": "joe",
+    "phonetic": "dʒәu",
+    "pos": "n.",
+    "meaning": "n. 乔（男子名）",
+    "example": "Joe opened a small coffee shop downtown after years of dreaming about owning his own business.",
+    "exampleCn": "乔在梦想了多年拥有自己的生意后在市中心开了一家小咖啡馆。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 6203,
+    "word": "africa",
+    "phonetic": "'æfrikә",
+    "pos": "n.",
+    "meaning": "n. 非洲",
+    "example": "He spent six months volunteering at a wildlife reserve in South Africa two years ago.",
+    "exampleCn": "他两年前在南非的一个野生动物保护区做了六个月的志愿者。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6281,
+    "word": "lewis",
+    "phonetic": "'lu:is",
+    "pos": "n.",
+    "meaning": "n. 吊楔",
+    "example": "The construction workers used a lewis to lift the heavy stone block into its proper place.",
+    "exampleCn": "建筑工人用吊楔把沉重的石块吊到了合适的位置。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6317,
+    "word": "rome",
+    "phonetic": "rәum",
+    "pos": "n.",
+    "meaning": "n. 罗马",
+    "example": "They spent four amazing days exploring the ancient ruins and lively streets of Rome.",
+    "exampleCn": "他们在罗马花了四天时间探索古迹和热闹的街道。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6355,
+    "word": "israel",
+    "phonetic": "'izreil",
+    "pos": "n.",
+    "meaning": "n. 以色列, 以色列后裔, 犹太人",
+    "example": "He studied archaeology at a university in Israel before returning home to write his book.",
+    "exampleCn": "他在以色列的一所大学学完考古学后回家写他的书。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6357,
+    "word": "iraq",
+    "phonetic": "i'rɑ:k",
+    "pos": "n.",
+    "meaning": "n. 伊拉克",
+    "example": "The ancient city of Babylon in Iraq was once the centre of a vast and powerful empire.",
+    "exampleCn": "伊拉克的巴比伦古城曾是一个庞大强盛帝国的中心。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6375,
+    "word": "asia",
+    "phonetic": "'eiʒә",
+    "pos": "n.",
+    "meaning": "n. 亚洲",
+    "example": "She spent a year backpacking across Asia and came home with thousands of photographs and stories.",
+    "exampleCn": "她用了一年时间背包穿越亚洲带回家成千上万的照片和故事。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6376,
+    "word": "moscow",
+    "phonetic": "'mɒskau",
+    "pos": "n.",
+    "meaning": "n. 莫斯科",
+    "example": "The winters in Moscow can be brutally cold with temperatures dropping well below twenty degrees below zero.",
+    "exampleCn": "莫斯科的冬天可能冷得刺骨气温降到零下二十度以下。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6379,
+    "word": "ruth",
+    "phonetic": "ru:θ",
+    "pos": "n.",
+    "meaning": "n. 怜悯, 悲哀",
+    "example": "She looked at the abandoned puppy with deep ruth and decided to take it home that very day.",
+    "exampleCn": "她深深怜悯地看着那只被遗弃的小狗当天就决定把它带回家。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6386,
+    "word": "canada",
+    "phonetic": "'kænәdә",
+    "pos": "n.",
+    "meaning": "n. 加拿大",
+    "example": "The border between the United States and Canada is the longest unguarded border in the world.",
+    "exampleCn": "美国和加拿大之间的边境是世界上最长的无人防守的边境。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6409,
+    "word": "kong",
+    "phonetic": "kɔŋ",
+    "pos": "n.",
+    "meaning": "n. 含锡砾石下的无矿基岩；钢",
+    "example": "The original King Kong film from 1933 is still considered a classic of early cinema today.",
+    "exampleCn": "1933年的原版《金刚》电影至今仍被视为早期电影的经典。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6413,
+    "word": "charlie",
+    "phonetic": "/ˈtʃɑːli/",
+    "pos": "n.",
+    "meaning": "n. 查理（人名，写作 Charlie，是 Charles 的昵称）；[通信] 字母 C 的代码词",
+    "example": "Charlie has been working as a firefighter at the central station for over fifteen years now.",
+    "exampleCn": "查理在中央消防站做了超过十五年的消防员。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6428,
+    "word": "berlin",
+    "phonetic": "bә:'lin",
+    "pos": "n.",
+    "meaning": "n. 柏林, (软质)柏林毛线",
+    "example": "She moved to Berlin five years ago and now speaks German almost as well as a native speaker.",
+    "exampleCn": "她五年前搬到柏林现在德语说得几乎像母语者一样好。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6434,
+    "word": "victoria",
+    "phonetic": "vik'tɔ:riә",
+    "pos": "n.",
+    "meaning": "n. 维多利亚（女子名）",
+    "example": "Victoria spent her gap year teaching English to young children in a remote village in Thailand.",
+    "exampleCn": "维多利亚用她的间隔年在泰国一个偏远村庄教小朋友英语。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6500,
+    "word": "ulster",
+    "phonetic": "'ʌlstә",
+    "pos": "n.",
+    "meaning": "n. 有带的宽大长外套",
+    "example": "He wore a heavy ulster to keep warm during the freezing walk across the snowy moor.",
+    "exampleCn": "他穿着一件厚长外套以在穿越雪原的寒冷步行中保暖。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6514,
+    "word": "dublin",
+    "phonetic": "'dʌblin",
+    "pos": "n.",
+    "meaning": "n. 都柏林",
+    "example": "They spent a rainy weekend exploring the cosy pubs and historic libraries of Dublin last autumn.",
+    "exampleCn": "他们去年秋天在都柏林度过了一个下雨的周末探索了舒适的酒吧和历史悠久的图书馆。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6534,
+    "word": "egypt",
+    "phonetic": "'i:dʒipt",
+    "pos": "n.",
+    "meaning": "n. 埃及",
+    "example": "They spent two weeks in Egypt visiting the ancient pyramids and sailing down the Nile at sunset.",
+    "exampleCn": "他们在埃及呆了两周参观了古金字塔并在日落时沿着尼罗河航行。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6584,
+    "word": "poland",
+    "phonetic": "'pәulәnd",
+    "pos": "n.",
+    "meaning": "n. 波兰",
+    "example": "She visited Poland last winter and was amazed by the beautiful Christmas markets and the warm hospitality.",
+    "exampleCn": "她去年冬天去了波兰被美丽的圣诞市场和热情的款待所惊艳。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6588,
+    "word": "kelly",
+    "phonetic": "'keli",
+    "pos": "n.",
+    "meaning": "n. 凯利（男子名）；[古]战士",
+    "example": "Kelly has been practising yoga on the rooftop every morning before work for the past two years.",
+    "exampleCn": "凯利过去两年来每个早晨上班前都在屋顶上练习瑜伽。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6591,
+    "word": "clare",
+    "phonetic": "kleә",
+    "pos": "n.",
+    "meaning": "n. 克莱尔（女子名）",
+    "example": "Clare spent her Sunday afternoons painting watercolour landscapes of the rolling hills near her home.",
+    "exampleCn": "克莱尔周日午后的时间用来画她家附近起伏山丘的水彩风景画。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6638,
+    "word": "iran",
+    "phonetic": "i'rɑ:n",
+    "pos": "n.",
+    "meaning": "n. 伊朗",
+    "example": "She studied Persian art and architecture during a semester at a university in Iran three years ago.",
+    "exampleCn": "她三年前在伊朗一所大学的一个学期里学习了波斯艺术和建筑。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6682,
+    "word": "korea",
+    "phonetic": "/kəˈriːə/",
+    "pos": "n.",
+    "meaning": "朝鲜半岛地区（专名，规范写法 Korea；现代国家名称应区分 North Korea 与 South Korea）",
+    "example": "The atlas includes a detailed map of Korea.",
+    "exampleCn": "这本地图集收录了一张详细的朝鲜半岛地图。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6684,
+    "word": "caroline",
+    "phonetic": "'kærәlaiŋ",
+    "pos": "n.",
+    "meaning": "n. 凯若琳（女子名）",
+    "example": "Caroline spent her summer cycling through the quiet villages of the French countryside near Bordeaux.",
+    "exampleCn": "卡罗琳用夏天骑车穿过波尔多附近法国乡村的安静村庄。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6724,
+    "word": "morgan",
+    "phonetic": "'mɒ:gәn",
+    "pos": "n.",
+    "meaning": "n. 摩根马",
+    "example": "Morgan spent his weekends volunteering at a horse rescue ranch on the outskirts of the town.",
+    "exampleCn": "摩根周末在镇郊的一个马匹救助牧场做志愿者。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6729,
+    "word": "vietnam",
+    "phonetic": ".vjet'næm",
+    "pos": "n.",
+    "meaning": "n. 越南",
+    "example": "They spent a month travelling through Vietnam by train from the northern mountains down to the southern coast.",
+    "exampleCn": "他们用一个月时间坐火车穿越越南从北部山区一直到南部海岸。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6732,
+    "word": "pakistan",
+    "phonetic": ".pɑ:ki'stɑ:n",
+    "pos": "n.",
+    "meaning": "n. 巴基斯坦",
+    "example": "He visited Pakistan last year and was deeply moved by the warmth and hospitality of the local people.",
+    "exampleCn": "他去年去了巴基斯坦被当地人的热情和好客深深打动。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6747,
+    "word": "greece",
+    "phonetic": "gri:s",
+    "pos": "n.",
+    "meaning": "n. 希腊",
+    "example": "They spent their honeymoon island hopping around Greece and swimming in the crystal clear blue sea.",
+    "exampleCn": "他们在希腊各岛间度蜜月在清澈蔚蓝的海中游泳。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6760,
+    "word": "sweden",
+    "phonetic": "'swi:dn",
+    "pos": "n.",
+    "meaning": "n. 瑞典",
+    "example": "She moved to Sweden for work and soon became fascinated by the local tradition of fika every afternoon.",
+    "exampleCn": "她因工作搬到瑞典很快就迷上了当地人每天下午休息喝咖啡的传统。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6772,
+    "word": "brazil",
+    "phonetic": "brә'zil",
+    "pos": "n.",
+    "meaning": "n. 巴西",
+    "example": "They travelled to Brazil last year to see the Amazon rainforest and the spectacular waterfalls at Iguazu.",
+    "exampleCn": "他们去年去了巴西看亚马逊雨林和伊瓜苏壮观的瀑布。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6805,
+    "word": "holland",
+    "phonetic": "'hɒlәnd",
+    "pos": "n.",
+    "meaning": "n. 荷兰",
+    "example": "They cycled through Holland last spring and were amazed by the endless fields of colourful tulips everywhere.",
+    "exampleCn": "他们去年春天骑车穿过荷兰被到处无边无际的彩色郁金香田所惊艳。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6815,
+    "word": "mexico",
+    "phonetic": "'meksikәu",
+    "pos": "n.",
+    "meaning": "n. 墨西哥",
+    "example": "They explored the ancient Mayan ruins deep in the jungle during their trip to Mexico last December.",
+    "exampleCn": "他们去年十二月在墨西哥旅行期间探索了丛林深处的古玛雅遗址。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6820,
+    "word": "surrey",
+    "phonetic": "'sʌri",
+    "pos": "n.",
+    "meaning": "n. 四轮双座轻便游览马车",
+    "example": "They rode through the countryside in an old surrey on a sunny afternoon in June.",
+    "exampleCn": "六月一个晴朗的午后他们坐着老式四轮马车穿过乡间。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6827,
+    "word": "jonathan",
+    "phonetic": "'dʒɔnәθәn",
+    "pos": "n.",
+    "meaning": "n. 乔纳森（男子名）",
+    "example": "Jonathan has been learning the saxophone for three years and now performs at local jazz clubs.",
+    "exampleCn": "乔纳森学吹萨克斯管已经三年了现在在当地爵士俱乐部演出。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6831,
+    "word": "charlotte",
+    "phonetic": "'ʃɑ:lәt",
+    "pos": "n.",
+    "meaning": "n. 水果奶油布丁",
+    "example": "Charlotte spent her Sunday afternoons baking cakes and reading novels in the sunny bay window.",
+    "exampleCn": "夏洛特星期天下午在阳光明媚的飘窗旁烤蛋糕读小说。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6844,
+    "word": "kuwait",
+    "phonetic": "kә'wait",
+    "pos": "n.",
+    "meaning": "n. 科威特",
+    "example": "He worked as an engineer in Kuwait for five years before returning home to start his own business.",
+    "exampleCn": "他在科威特做了五年工程师才回国创办自己的企业。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6871,
+    "word": "switzerland",
+    "phonetic": "'switsәlәnd",
+    "pos": "n.",
+    "meaning": "n. 瑞士",
+    "example": "They spent Christmas in Switzerland skiing down the majestic slopes of the Alps under bright blue skies.",
+    "exampleCn": "他们在瑞士度过了圣诞节在明亮的蓝天下从雄伟的阿尔卑斯山坡上滑下。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6882,
+    "word": "norway",
+    "phonetic": "'nɒ:wei",
+    "pos": "n.",
+    "meaning": "n. 挪威",
+    "example": "They travelled to Norway last winter to see the northern lights dancing across the dark Arctic sky.",
+    "exampleCn": "他们去年冬天去挪威看了在黑暗的北极天空中舞动的北极光。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6901,
+    "word": "hungary",
+    "phonetic": "'hʌŋgәri",
+    "pos": "n.",
+    "meaning": "n. 匈牙利",
+    "example": "They visited Hungary last autumn and fell in love with the thermal baths and the stunning old architecture.",
+    "exampleCn": "他们去年秋天去了匈牙利爱上了温泉浴场和令人惊叹的古老建筑。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6904,
+    "word": "jordan",
+    "phonetic": "'dʒɒ:dәn",
+    "pos": "n.",
+    "meaning": "n. 约旦, 约旦河, 尿壶",
+    "example": "She travelled to Jordan last spring to visit the ancient city of Petra carved into the rose-red cliffs.",
+    "exampleCn": "她去年春天去了约旦参观了雕刻在玫瑰红悬崖中的佩特拉古城。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6914,
+    "word": "mick",
+    "phonetic": "mik",
+    "pos": "n.",
+    "meaning": "n. 针对爱尔兰人的冒犯性蔑称，不宜用来称呼他人；Mick 也可为人名米克（Michael 的昵称），本条例句使用人名义",
+    "example": "Mick has been playing folk songs on his guitar at the local pub every Friday night for years.",
+    "exampleCn": "米克多年来每个周五晚上都在当地酒馆弹吉他唱民歌。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6942,
+    "word": "belgium",
+    "phonetic": "'beldʒәm",
+    "pos": "n.",
+    "meaning": "n. 比利时",
+    "example": "They visited Belgium last spring to taste the famous chocolate and wander through the medieval streets of Bruges.",
+    "exampleCn": "他们去年春天去了比利时品尝著名的巧克力并在布鲁日的中世纪街道上漫步。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6980,
+    "word": "betty",
+    "phonetic": "'beti",
+    "pos": "n.",
+    "meaning": "n. 贝蒂（女子名）",
+    "example": "Betty has been baking apple pies for the village fair every single autumn for more than forty years.",
+    "exampleCn": "贝蒂每年秋天为村里的集市烤苹果派已经四十多年了。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 6990,
+    "word": "netherlands",
+    "phonetic": "'neðәlәndz",
+    "pos": "n.",
+    "meaning": "n. 荷兰",
+    "example": "They cycled through the Netherlands last spring and were amazed by the endless fields of colourful tulips.",
+    "exampleCn": "他们去年春天骑车穿过荷兰被无边无际的彩色郁金香田所惊艳。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 7039,
+    "word": "denmark",
+    "phonetic": "'denmɑ:k",
+    "pos": "n.",
+    "meaning": "n. 丹麦",
+    "example": "They visited Denmark last summer and were charmed by the colourful houses along the waterfront in Copenhagen.",
+    "exampleCn": "他们去年夏天去了丹麦被哥本哈根水边五颜六色的房屋迷住了。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 7043,
+    "word": "austria",
+    "phonetic": "'ɒstriә",
+    "pos": "n.",
+    "meaning": "n. 奥地利",
+    "example": "They went skiing in Austria last winter and stayed in a cosy wooden chalet for two weeks.",
+    "exampleCn": "他们去年冬天去奥地利滑雪在一间舒适的木屋住了两周。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 7177,
+    "word": "ralph",
+    "phonetic": "reif, rælf",
+    "pos": "n.",
+    "meaning": "n. 拉尔夫（男子名）",
+    "example": "Ralph spent his summers sailing along the rugged coast and camping under the stars on empty beaches.",
+    "exampleCn": "拉尔夫夏天沿着崎岖的海岸航行在空旷的星空下沙滩上露营。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 7184,
+    "word": "santa",
+    "phonetic": "'sæntә",
+    "pos": "n.",
+    "meaning": "n. 圣诞老人（等于Santa Claus）",
+    "example": "The children wrote letters to Santa and left a plate of mince pies by the fireplace on Christmas.",
+    "exampleCn": "孩子们写了信给圣诞老人并在圣诞夜在壁炉旁留了一盘肉馅饼。",
+    "category": "daily",
+    "categories": [
+      "daily",
+      "cet4"
+    ]
+  },
+  {
+    "id": 7554,
+    "word": "india",
+    "phonetic": "'indjә",
+    "pos": "n.",
+    "meaning": "n. 印度",
+    "example": "She spent six months travelling through India by train and came back with a lifetime of incredible stories.",
+    "exampleCn": "她花了六个月坐火车穿越印度带回了值得讲述一生的不可思议故事。",
+    "category": "cet4",
+    "categories": [
+      "cet4",
+      "cet6"
+    ]
+  },
+  {
+    "id": 8184,
+    "word": "jesus",
+    "phonetic": "'dʒi:zәs",
+    "pos": "n.",
+    "meaning": "n. 耶稣",
+    "example": "The teachings of Jesus have inspired billions of people around the world for over two thousand years.",
+    "exampleCn": "两千多年来耶稣的教导激励了全世界数十亿人。",
+    "category": "cet6",
+    "categories": [
+      "cet6"
+    ]
+  },
+  {
+    "id": 8191,
+    "word": "christ",
+    "phonetic": "kraist",
+    "pos": "n.",
+    "meaning": "n. 基督, 救世主",
+    "example": "The old church on the hill has been standing since the time of Christ and still holds services.",
+    "exampleCn": "山上的老教堂自基督时代以来一直矗立着至今每个星期天早上仍在举行礼拜。",
+    "category": "cet6",
+    "categories": [
+      "cet6"
+    ]
+  },
+  {
+    "id": 8655,
+    "word": "mars",
+    "phonetic": "mɑ:z",
+    "pos": "n.",
+    "meaning": "n. 火星, 战神\\n[医] 铁",
+    "example": "Mars has two satellites.",
+    "exampleCn": "火星有两颗卫星。",
+    "category": "cet6",
+    "categories": [
+      "cet6"
+    ]
+  }
+]

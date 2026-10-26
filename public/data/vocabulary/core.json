@@ -2315,6 +2315,45 @@
     ]
   },
   {
+    "id": 8947,
+    "word": "checkout",
+    "phonetic": "/ˈtʃekaʊt/",
+    "pos": "n.",
+    "meaning": "付款结账；结账处",
+    "example": "Please review your order before checkout.",
+    "exampleCn": "请在付款结账前核对订单。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8948,
+    "word": "username",
+    "phonetic": "/ˈjuːzəneɪm/",
+    "pos": "n.",
+    "meaning": "用户名",
+    "example": "Choose a username that is easy to remember.",
+    "exampleCn": "选择一个容易记住的用户名。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8949,
+    "word": "screenshot",
+    "phonetic": "/ˈskriːnʃɒt/",
+    "pos": "n.",
+    "meaning": "屏幕截图",
+    "example": "Send a screenshot of the error message.",
+    "exampleCn": "发送一张错误信息的屏幕截图。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
     "id": 8700,
     "word": "a",
     "phonetic": "/ə/",
@@ -2322,6 +2361,19 @@
     "meaning": "一；一个（不定冠词）",
     "example": "I need a clean cup.",
     "exampleCn": "我需要一个干净的杯子。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8950,
+    "word": "headphones",
+    "phonetic": "/ˈhedfəʊnz/",
+    "pos": "n. pl.",
+    "meaning": "耳机",
+    "example": "I use headphones when I study in the library.",
+    "exampleCn": "在图书馆学习时，我会戴耳机。",
     "category": "daily",
     "categories": [
       "daily"
@@ -2341,6 +2393,19 @@
     ]
   },
   {
+    "id": 8951,
+    "word": "charger",
+    "phonetic": "/ˈtʃɑːdʒə(r)/",
+    "pos": "n.",
+    "meaning": "充电器",
+    "example": "I left my phone charger at the office.",
+    "exampleCn": "我把手机充电器落在办公室了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
     "id": 8702,
     "word": "as",
     "phonetic": "/æz/",
@@ -2348,6 +2413,123 @@
     "meaning": "当……时；随着",
     "example": "The lights came on as the sun went down.",
     "exampleCn": "太阳落山时，灯亮了。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8952,
+    "word": "power bank",
+    "phonetic": "/ˈpaʊə bæŋk/",
+    "pos": "n.",
+    "meaning": "移动电源；充电宝",
+    "example": "I packed a power bank for the long journey.",
+    "exampleCn": "我为这次长途旅行带上了充电宝。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8953,
+    "word": "reusable",
+    "phonetic": "/ˌriːˈjuːzəbl/",
+    "pos": "adj.",
+    "meaning": "可重复使用的",
+    "example": "Bring a reusable bag when you go shopping.",
+    "exampleCn": "购物时请带上可重复使用的袋子。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8954,
+    "word": "childcare",
+    "phonetic": "/ˈtʃaɪldkeə(r)/",
+    "pos": "n.",
+    "meaning": "儿童照料；托育",
+    "example": "The company offers help with childcare costs.",
+    "exampleCn": "公司为托育费用提供补助。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8955,
+    "word": "sunscreen",
+    "phonetic": "/ˈsʌnskriːn/",
+    "pos": "n.",
+    "meaning": "防晒霜；防晒用品",
+    "example": "Apply sunscreen before going outside.",
+    "exampleCn": "出门前涂好防晒霜。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8956,
+    "word": "toothpaste",
+    "phonetic": "/ˈtuːθpeɪst/",
+    "pos": "n.",
+    "meaning": "牙膏",
+    "example": "We need a new tube of toothpaste.",
+    "exampleCn": "我们需要一支新牙膏。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8957,
+    "word": "groceries",
+    "phonetic": "/ˈɡrəʊsəriz/",
+    "pos": "n. pl.",
+    "meaning": "食品杂货",
+    "example": "We bought groceries on the way home.",
+    "exampleCn": "我们在回家的路上买了食品杂货。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8958,
+    "word": "leftovers",
+    "phonetic": "/ˈleftəʊvəz/",
+    "pos": "n. pl.",
+    "meaning": "剩饭菜；吃剩的食物",
+    "example": "Put the leftovers in the fridge after dinner.",
+    "exampleCn": "晚饭后把剩饭菜放进冰箱。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8959,
+    "word": "settings",
+    "phonetic": "/ˈsetɪŋz/",
+    "pos": "n. pl.",
+    "meaning": "设置；配置选项",
+    "example": "You can change the language in the settings.",
+    "exampleCn": "你可以在设置中更改语言。",
+    "category": "daily",
+    "categories": [
+      "daily"
+    ]
+  },
+  {
+    "id": 8960,
+    "word": "log in",
+    "phonetic": "/lɒɡ ˈɪn/",
+    "pos": "v. phr.",
+    "meaning": "登录",
+    "example": "You need to log in before viewing your results.",
+    "exampleCn": "你需要先登录才能查看成绩。",
     "category": "daily",
     "categories": [
       "daily"
@@ -3175,9 +3357,9 @@
   {
     "id": 5463,
     "word": "may",
-    "phonetic": "mei",
-    "pos": "aux.",
-    "meaning": "n. 五月\\naux. 愿能, 可以, 愿意",
+    "phonetic": "/meɪ/",
+    "pos": "modal v.",
+    "meaning": "可以（表示许可）；可能（表示可能性）；May 表示五月，是另一个专名用法",
     "example": "You may borrow my bicycle for the afternoon if you return it before sunset.",
     "exampleCn": "如果你日落前还回来，下午你可以借我的自行车。",
     "category": "daily",
@@ -4889,13 +5071,13 @@
     ]
   },
   {
-    "id": 5595,
-    "word": "london",
-    "phonetic": "'lʌndәn",
-    "pos": "n.",
-    "meaning": "n. 伦敦",
-    "example": "He lived in London for six wonderful years before moving to New York for work.",
-    "exampleCn": "他在伦敦住了精彩的六年才因为工作搬到了纽约。",
+    "id": 8961,
+    "word": "log out",
+    "phonetic": "/lɒɡ ˈaʊt/",
+    "pos": "v. phr.",
+    "meaning": "退出登录",
+    "example": "Remember to log out when you finish using the computer.",
+    "exampleCn": "用完电脑后记得退出登录。",
     "category": "daily",
     "categories": [
       "daily"
@@ -6046,13 +6228,13 @@
     ]
   },
   {
-    "id": 5684,
-    "word": "england",
-    "phonetic": "'iŋglәnd",
-    "pos": "n.",
-    "meaning": "n. 英格兰\\n[法] 英格兰, 英国",
-    "example": "She has always dreamed of visiting England to see its rolling green hills and ancient castles.",
-    "exampleCn": "她一直梦想去英格兰看看那里起伏的绿色山丘和古老的城堡。",
+    "id": 8962,
+    "word": "sign up",
+    "phonetic": "/saɪn ˈʌp/",
+    "pos": "v. phr.",
+    "meaning": "报名；注册",
+    "example": "You can sign up for the course online.",
+    "exampleCn": "你可以在线报名这门课程。",
     "category": "daily",
     "categories": [
       "daily"
@@ -6787,13 +6969,13 @@
     ]
   },
   {
-    "id": 5741,
-    "word": "europe",
-    "phonetic": "'juәrәp",
-    "pos": "n.",
-    "meaning": "n. 欧洲",
-    "example": "The Marshall Plan helped Europe recover from World War II.",
-    "exampleCn": "马歇尔计划帮助欧洲从第二次世界大战中恢复过来。",
+    "id": 8963,
+    "word": "fill in",
+    "phonetic": "/fɪl ˈɪn/",
+    "pos": "v. phr.",
+    "meaning": "填写",
+    "example": "Please fill in your address on this form.",
+    "exampleCn": "请在这张表格上填写你的地址。",
     "category": "daily",
     "categories": [
       "daily"
@@ -7944,13 +8126,13 @@
     ]
   },
   {
-    "id": 5830,
-    "word": "scotland",
-    "phonetic": "'skɒtlәnd",
-    "pos": "n.",
-    "meaning": "n. 苏格兰",
-    "example": "They spent an unforgettable week hiking through the breathtaking highlands of Scotland last summer.",
-    "exampleCn": "他们去年夏天在苏格兰令人叹为观止的高地上徒步了一周，令人难忘。",
+    "id": 8964,
+    "word": "look up",
+    "phonetic": "/lʊk ˈʌp/",
+    "pos": "v. phr.",
+    "meaning": "查找；查阅",
+    "example": "You can look up the word in a dictionary.",
+    "exampleCn": "你可以在词典里查这个词。",
     "category": "daily",
     "categories": [
       "daily"
@@ -8529,13 +8711,13 @@
     ]
   },
   {
-    "id": 5875,
-    "word": "america",
-    "phonetic": "ә'merikә",
-    "pos": "n.",
-    "meaning": "n. 美洲, 美国",
-    "example": "She moved to America five years ago to pursue her dream of becoming a doctor.",
-    "exampleCn": "她五年前搬到美国去追逐成为医生的梦想。",
+    "id": 8965,
+    "word": "look after",
+    "phonetic": "/lʊk ˈɑːftə/",
+    "pos": "v. phr.",
+    "meaning": "照顾；照料",
+    "example": "Can you look after the cat this weekend?",
+    "exampleCn": "这个周末你能照顾一下猫吗？",
     "category": "daily",
     "categories": [
       "daily"
@@ -8867,13 +9049,13 @@
     ]
   },
   {
-    "id": 5901,
-    "word": "ireland",
-    "phonetic": "'aiәlәnd",
-    "pos": "n.",
-    "meaning": "n. 爱尔兰",
-    "example": "He traced his family roots back to a tiny coastal village in western Ireland.",
-    "exampleCn": "他把家族的根源追溯到爱尔兰西部一个安静的海滨小村。",
+    "id": 8966,
+    "word": "look for",
+    "phonetic": "/ˈlʊk fə/",
+    "pos": "v. phr.",
+    "meaning": "寻找",
+    "example": "We need to look for a quieter place to study.",
+    "exampleCn": "我们需要找一个更安静的地方学习。",
     "category": "daily",
     "categories": [
       "daily"
@@ -8984,13 +9166,13 @@
     ]
   },
   {
-    "id": 5910,
-    "word": "wales",
-    "phonetic": "weilz",
-    "pos": "n.",
-    "meaning": "n. 威尔士",
-    "example": "They spent a rainy but wonderful week hiking along the stunning coast of Wales.",
-    "exampleCn": "他们在威尔士壮丽的海岸线上徒步了一周虽然下雨但非常美好。",
+    "id": 8967,
+    "word": "look forward to",
+    "phonetic": "/lʊk ˈfɔːwəd tə/",
+    "pos": "v. phr.",
+    "meaning": "期待；盼望",
+    "example": "I look forward to meeting your team.",
+    "exampleCn": "我期待与你们的团队见面。",
     "category": "daily",
     "categories": [
       "daily"
@@ -9584,11 +9766,11 @@
   {
     "id": 5956,
     "word": "august",
-    "phonetic": "ɒ:'gʌst. 'ɒ:gәst",
-    "pos": "n.",
-    "meaning": "n. 八月\\na. 威严的, 令人敬畏的",
-    "example": "Of august lineage.",
-    "exampleCn": "属于庄严的血统。",
+    "phonetic": "/ɔːˈɡʌst/",
+    "pos": "adj.",
+    "meaning": "庄严的；令人敬畏的（正式）；月份 August 另读 /ˈɔːɡəst/",
+    "example": "The ceremony took place in an august hall.",
+    "exampleCn": "典礼在一座庄严的大厅里举行。",
     "category": "daily",
     "categories": [
       "daily"
@@ -9725,13 +9907,13 @@
     ]
   },
   {
-    "id": 5967,
-    "word": "henry",
-    "phonetic": "'henri",
-    "pos": "n.",
-    "meaning": "n. 亨利\\n[医] 亨[利](电感应单位)",
-    "example": "Henry has been learning to play the violin since he was just six years old.",
-    "exampleCn": "亨利从六岁起就一直在学小提琴。",
+    "id": 8968,
+    "word": "put off",
+    "phonetic": "/pʊt ˈɒf/",
+    "pos": "v. phr.",
+    "meaning": "推迟",
+    "example": "We had to put off the meeting until Monday.",
+    "exampleCn": "我们不得不把会议推迟到星期一。",
     "category": "daily",
     "categories": [
       "daily"
@@ -10193,13 +10375,13 @@
     ]
   },
   {
-    "id": 6003,
-    "word": "japan",
-    "phonetic": "dʒә'pæn",
-    "pos": "n.",
-    "meaning": "n. 日本\\n[化] 天然漆; 大漆; 漆器",
-    "example": "They visited Japan last spring and were amazed by the cherry blossoms in full bloom.",
-    "exampleCn": "他们去年春天去了日本被盛开的樱花惊艳到了。",
+    "id": 8969,
+    "word": "pick up",
+    "phonetic": "/pɪk ˈʌp/",
+    "pos": "v. phr.",
+    "meaning": "接人；取走",
+    "example": "I will pick up the parcel after work.",
+    "exampleCn": "下班后我会去取包裹。",
     "category": "daily",
     "categories": [
       "daily"
@@ -10349,13 +10531,13 @@
     ]
   },
   {
-    "id": 6015,
-    "word": "paris",
-    "phonetic": "'pæris",
-    "pos": "n.",
-    "meaning": "n. 巴黎\\n[医] 重楼属",
-    "example": "They spent their honeymoon wandering through the charming narrow streets of Paris last June.",
-    "exampleCn": "他们去年六月在巴黎迷人的狭窄街道上漫步度过了蜜月。",
+    "id": 8970,
+    "word": "drop off",
+    "phonetic": "/drɒp ˈɒf/",
+    "pos": "v. phr.",
+    "meaning": "送到；顺路送达",
+    "example": "I can drop off the package on my way to work.",
+    "exampleCn": "我可以在上班路上把包裹送过去。",
     "category": "daily",
     "categories": [
       "daily"
@@ -11168,13 +11350,13 @@
     ]
   },
   {
-    "id": 6078,
-    "word": "usa",
-    "phonetic": "ju: es 'ei",
-    "pos": "n.",
-    "meaning": "美国, 美利坚合众国, 美国陆军",
-    "example": "She dreamed of studying in the USA from a young age and finally made it happen last year.",
-    "exampleCn": "她从小梦想去美国留学去年终于实现了。",
+    "id": 8971,
+    "word": "turn on",
+    "phonetic": "/tɜːn ˈɒn/",
+    "pos": "v. phr.",
+    "meaning": "打开；接通",
+    "example": "Please turn on the light above the desk.",
+    "exampleCn": "请打开书桌上方的灯。",
     "category": "daily",
     "categories": [
       "daily"
@@ -11220,13 +11402,13 @@
     ]
   },
   {
-    "id": 6082,
-    "word": "italy",
-    "phonetic": "'itәli",
-    "pos": "n.",
-    "meaning": "n. 意大利",
-    "example": "They spent three unforgettable weeks driving through the rolling green hills of Tuscany in Italy.",
-    "exampleCn": "他们在意大利托斯卡纳起伏的绿色山丘间开车度过了难忘的三周。",
+    "id": 8972,
+    "word": "turn off",
+    "phonetic": "/tɜːn ˈɒf/",
+    "pos": "v. phr.",
+    "meaning": "关闭；关掉",
+    "example": "Please turn off the lights before leaving.",
+    "exampleCn": "离开前请关灯。",
     "category": "daily",
     "categories": [
       "daily"
@@ -11519,13 +11701,13 @@
     ]
   },
   {
-    "id": 6105,
-    "word": "jones",
-    "phonetic": "dʒәunz",
-    "pos": "n.",
-    "meaning": "n. 琼斯（姓氏）",
-    "example": "Mr Jones has been our next-door neighbour for more than fifteen years now.",
-    "exampleCn": "Jones 先生做我们隔壁邻居已经超过十五年了。",
+    "id": 8973,
+    "word": "run out of",
+    "phonetic": "/rʌn ˈaʊt əv/",
+    "pos": "v. phr.",
+    "meaning": "用完；耗尽",
+    "example": "We may run out of milk before the weekend.",
+    "exampleCn": "我们可能周末前就把牛奶喝完了。",
     "category": "daily",
     "categories": [
       "daily"
@@ -11623,13 +11805,13 @@
     ]
   },
   {
-    "id": 6113,
-    "word": "spain",
-    "phonetic": "spein",
-    "pos": "n.",
-    "meaning": "n. 西班牙",
-    "example": "They spent two wonderful weeks exploring the sunny beaches and old towns of Spain last summer.",
-    "exampleCn": "他们去年夏天在西班牙阳光明媚的海滩和古老小镇间探索了两周。",
+    "id": 8974,
+    "word": "figure out",
+    "phonetic": "/fɪɡər ˈaʊt/",
+    "pos": "v. phr.",
+    "meaning": "弄清楚；想出",
+    "example": "We need to figure out why the door will not close.",
+    "exampleCn": "我们需要弄清楚门为什么关不上。",
     "category": "daily",
     "categories": [
       "daily"
@@ -11883,26 +12065,26 @@
     ]
   },
   {
-    "id": 6133,
-    "word": "russia",
-    "phonetic": "'rʌʃә",
-    "pos": "n.",
-    "meaning": "n. 俄国, 俄罗斯\\n[法] 俄罗斯, 苏联",
-    "example": "Russia covers a vast area across Europe and Asia.",
-    "exampleCn": "俄罗斯横跨欧洲和亚洲，幅员辽阔。",
+    "id": 8975,
+    "word": "work out",
+    "phonetic": "/wɜːk ˈaʊt/",
+    "pos": "v. phr.",
+    "meaning": "算出；想出解决办法",
+    "example": "Let us work out the total cost first.",
+    "exampleCn": "我们先算出总费用吧。",
     "category": "daily",
     "categories": [
       "daily"
     ]
   },
   {
-    "id": 6134,
-    "word": "joe",
-    "phonetic": "dʒәu",
-    "pos": "n.",
-    "meaning": "n. 乔（男子名）",
-    "example": "Joe opened a small coffee shop downtown after years of dreaming about owning his own business.",
-    "exampleCn": "乔在梦想了多年拥有自己的生意后在市中心开了一家小咖啡馆。",
+    "id": 8976,
+    "word": "set up",
+    "phonetic": "/set ˈʌp/",
+    "pos": "v. phr.",
+    "meaning": "建立；设置",
+    "example": "We need to set up a new account for the team.",
+    "exampleCn": "我们需要为团队创建一个新账户。",
     "category": "daily",
     "categories": [
       "daily"
@@ -12846,17 +13028,16 @@
     ]
   },
   {
-    "id": 6203,
-    "word": "africa",
-    "phonetic": "'æfrikә",
-    "pos": "n.",
-    "meaning": "n. 非洲",
-    "example": "He spent six months volunteering at a wildlife reserve in South Africa two years ago.",
-    "exampleCn": "他两年前在南非的一个野生动物保护区做了六个月的志愿者。",
+    "id": 8977,
+    "word": "keep up with",
+    "phonetic": "/kiːp ˈʌp wɪð/",
+    "pos": "v. phr.",
+    "meaning": "跟上；及时了解",
+    "example": "It is hard to keep up with all the new messages.",
+    "exampleCn": "很难及时跟上所有新消息。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -13935,17 +14116,16 @@
     ]
   },
   {
-    "id": 6281,
-    "word": "lewis",
-    "phonetic": "'lu:is",
-    "pos": "n.",
-    "meaning": "n. 吊楔",
-    "example": "The construction workers used a lewis to lift the heavy stone block into its proper place.",
-    "exampleCn": "建筑工人用吊楔把沉重的石块吊到了合适的位置。",
+    "id": 8978,
+    "word": "catch up",
+    "phonetic": "/kætʃ ˈʌp/",
+    "pos": "v. phr.",
+    "meaning": "赶上；补上落下的进度",
+    "example": "I missed two lessons and need to catch up.",
+    "exampleCn": "我缺了两节课，需要补上进度。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -14432,17 +14612,16 @@
     ]
   },
   {
-    "id": 6317,
-    "word": "rome",
-    "phonetic": "rәum",
-    "pos": "n.",
-    "meaning": "n. 罗马",
-    "example": "They spent four amazing days exploring the ancient ruins and lively streets of Rome.",
-    "exampleCn": "他们在罗马花了四天时间探索古迹和热闹的街道。",
+    "id": 8979,
+    "word": "get along",
+    "phonetic": "/ɡet əˈlɒŋ/",
+    "pos": "v. phr.",
+    "meaning": "相处融洽",
+    "example": "The new classmates seem to get along well.",
+    "exampleCn": "新同学们似乎相处得很好。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -14808,7 +14987,7 @@
     "word": "commons",
     "phonetic": "'kɒmәns",
     "pos": "n.",
-    "meaning": "n. 平民, 下议院, 公共食堂\\n[法] 平民, 下议院议员, 下院",
+    "meaning": "the Commons／House of Commons 指英国下议院；commons 另可指平民或公共食堂，本条例句为议会义",
     "example": "The bill passed through the House of Commons after a long and heated debate that lasted hours.",
     "exampleCn": "这项法案经过持续数小时的漫长激烈辩论后在下议院通过了。",
     "category": "daily",
@@ -14954,17 +15133,16 @@
     ]
   },
   {
-    "id": 6355,
-    "word": "israel",
-    "phonetic": "'izreil",
-    "pos": "n.",
-    "meaning": "n. 以色列, 以色列后裔, 犹太人",
-    "example": "He studied archaeology at a university in Israel before returning home to write his book.",
-    "exampleCn": "他在以色列的一所大学学完考古学后回家写他的书。",
+    "id": 8980,
+    "word": "put away",
+    "phonetic": "/pʊt əˈweɪ/",
+    "pos": "v. phr.",
+    "meaning": "收好；放回原处",
+    "example": "Please put away your books before dinner.",
+    "exampleCn": "晚饭前请把书收好。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -14972,9 +15150,9 @@
     "word": "teen",
     "phonetic": "ti:n",
     "pos": "n./adj.",
-    "meaning": "n. 青少年；adj. 青少年的（通常为十三至十九岁）；古义：苦难、悲哀",
-    "example": "The teen years.",
-    "exampleCn": "青少年时期。",
+    "meaning": "青少年；青少年的（通常为十三至十九岁）；古义中的苦难或悲哀不作为本条学习目标",
+    "example": "The library runs a reading group for teen readers.",
+    "exampleCn": "图书馆为青少年读者开设了一个阅读小组。",
     "category": "daily",
     "categories": [
       "daily",
@@ -14982,27 +15160,26 @@
     ]
   },
   {
-    "id": 6357,
-    "word": "iraq",
-    "phonetic": "i'rɑ:k",
-    "pos": "n.",
-    "meaning": "n. 伊拉克",
-    "example": "The ancient city of Babylon in Iraq was once the centre of a vast and powerful empire.",
-    "exampleCn": "伊拉克的巴比伦古城曾是一个庞大强盛帝国的中心。",
+    "id": 8981,
+    "word": "try on",
+    "phonetic": "/traɪ ˈɒn/",
+    "pos": "v. phr.",
+    "meaning": "试穿；试戴",
+    "example": "May I try on this jacket in a larger size?",
+    "exampleCn": "我可以试穿一件大一码的这款夹克吗？",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
     "id": 6358,
     "word": "sept",
-    "phonetic": "sept",
-    "pos": "n.",
-    "meaning": "n. 氏族\\n[经] 九月",
-    "example": "The new term starts in early Sept and students begin arriving on campus the week before.",
-    "exampleCn": "新学期从九月初开始学生在开学前一周就开始抵达校园。",
+    "phonetic": "/sepˈtembə(r)/",
+    "pos": "abbr.",
+    "meaning": "九月的缩写（规范写作 Sept.，朗读时通常读完整的 September）；名词 sept 的氏族义不用于本例",
+    "example": "The new term begins on 5 Sept.",
+    "exampleCn": "新学期于九月五日开始。",
     "category": "daily",
     "categories": [
       "daily",
@@ -15112,8 +15289,8 @@
     "phonetic": "dis'eibld",
     "pos": "adj.",
     "meaning": "有残障的；因伤病而行动受限的；（设备、功能）失效的或被禁用的",
-    "example": "Technology to help the elderly and the disabled.",
-    "exampleCn": "帮助老年人和残疾人的技术。",
+    "example": "The new entrance improves access for disabled visitors.",
+    "exampleCn": "新入口改善了残障访客的通行条件。",
     "category": "daily",
     "categories": [
       "daily",
@@ -15230,31 +15407,29 @@
     ]
   },
   {
-    "id": 6375,
-    "word": "asia",
-    "phonetic": "'eiʒә",
-    "pos": "n.",
-    "meaning": "n. 亚洲",
-    "example": "She spent a year backpacking across Asia and came home with thousands of photographs and stories.",
-    "exampleCn": "她用了一年时间背包穿越亚洲带回家成千上万的照片和故事。",
+    "id": 8982,
+    "word": "take off",
+    "phonetic": "/teɪk ˈɒf/",
+    "pos": "v. phr.",
+    "meaning": "脱下；摘下",
+    "example": "Please take off your shoes at the door.",
+    "exampleCn": "请在门口脱鞋。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
-    "id": 6376,
-    "word": "moscow",
-    "phonetic": "'mɒskau",
-    "pos": "n.",
-    "meaning": "n. 莫斯科",
-    "example": "The winters in Moscow can be brutally cold with temperatures dropping well below twenty degrees below zero.",
-    "exampleCn": "莫斯科的冬天可能冷得刺骨气温降到零下二十度以下。",
+    "id": 8983,
+    "word": "put on",
+    "phonetic": "/pʊt ˈɒn/",
+    "pos": "v. phr.",
+    "meaning": "穿上；戴上",
+    "example": "Put on a warm coat before going out.",
+    "exampleCn": "出门前穿上一件暖和的外套。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -15286,17 +15461,16 @@
     ]
   },
   {
-    "id": 6379,
-    "word": "ruth",
-    "phonetic": "ru:θ",
-    "pos": "n.",
-    "meaning": "n. 怜悯, 悲哀",
-    "example": "She looked at the abandoned puppy with deep ruth and decided to take it home that very day.",
-    "exampleCn": "她深深怜悯地看着那只被遗弃的小狗当天就决定把它带回家。",
+    "id": 8984,
+    "word": "hand in",
+    "phonetic": "/hænd ˈɪn/",
+    "pos": "v. phr.",
+    "meaning": "提交；交上",
+    "example": "Please hand in your homework before lunch.",
+    "exampleCn": "请在午饭前交作业。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -15384,17 +15558,16 @@
     ]
   },
   {
-    "id": 6386,
-    "word": "canada",
-    "phonetic": "'kænәdә",
-    "pos": "n.",
-    "meaning": "n. 加拿大",
-    "example": "The border between the United States and Canada is the longest unguarded border in the world.",
-    "exampleCn": "美国和加拿大之间的边境是世界上最长的无人防守的边境。",
+    "id": 8985,
+    "word": "sort out",
+    "phonetic": "/sɔːt ˈaʊt/",
+    "pos": "v. phr.",
+    "meaning": "解决；整理清楚",
+    "example": "We need to sort out the booking problem today.",
+    "exampleCn": "我们需要今天解决预订问题。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -15704,17 +15877,16 @@
     ]
   },
   {
-    "id": 6409,
-    "word": "kong",
-    "phonetic": "kɔŋ",
-    "pos": "n.",
-    "meaning": "n. 含锡砾石下的无矿基岩；钢",
-    "example": "The original King Kong film from 1933 is still considered a classic of early cinema today.",
-    "exampleCn": "1933年的原版《金刚》电影至今仍被视为早期电影的经典。",
+    "id": 8986,
+    "word": "pay back",
+    "phonetic": "/peɪ ˈbæk/",
+    "pos": "v. phr.",
+    "meaning": "归还借款；偿还",
+    "example": "I will pay back the money next week.",
+    "exampleCn": "我会在下周还钱。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -15758,17 +15930,16 @@
     ]
   },
   {
-    "id": 6413,
-    "word": "charlie",
-    "phonetic": "/ˈtʃɑːli/",
-    "pos": "n.",
-    "meaning": "n. 查理（人名，写作 Charlie，是 Charles 的昵称）；[通信] 字母 C 的代码词",
-    "example": "Charlie has been working as a firefighter at the central station for over fifteen years now.",
-    "exampleCn": "查理在中央消防站做了超过十五年的消防员。",
+    "id": 8987,
+    "word": "cut down on",
+    "phonetic": "/kʌt ˈdaʊn ɒn/",
+    "pos": "v. phr.",
+    "meaning": "减少使用；减少摄入",
+    "example": "I am trying to cut down on sugary drinks.",
+    "exampleCn": "我正努力少喝含糖饮料。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -15962,17 +16133,16 @@
     ]
   },
   {
-    "id": 6428,
-    "word": "berlin",
-    "phonetic": "bә:'lin",
-    "pos": "n.",
-    "meaning": "n. 柏林, (软质)柏林毛线",
-    "example": "She moved to Berlin five years ago and now speaks German almost as well as a native speaker.",
-    "exampleCn": "她五年前搬到柏林现在德语说得几乎像母语者一样好。",
+    "id": 8988,
+    "word": "make up",
+    "phonetic": "/meɪk ˈʌp/",
+    "pos": "v. phr.",
+    "meaning": "编造；虚构",
+    "example": "Do not make up an excuse for being late.",
+    "exampleCn": "不要为迟到编造借口。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -16044,17 +16214,16 @@
     ]
   },
   {
-    "id": 6434,
-    "word": "victoria",
-    "phonetic": "vik'tɔ:riә",
-    "pos": "n.",
-    "meaning": "n. 维多利亚（女子名）",
-    "example": "Victoria spent her gap year teaching English to young children in a remote village in Thailand.",
-    "exampleCn": "维多利亚用她的间隔年在泰国一个偏远村庄教小朋友英语。",
+    "id": 8989,
+    "word": "take part in",
+    "phonetic": "/teɪk ˈpɑːt ɪn/",
+    "pos": "v. phr.",
+    "meaning": "参加；参与",
+    "example": "Everyone can take part in the discussion.",
+    "exampleCn": "每个人都可以参与讨论。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -16953,17 +17122,16 @@
     ]
   },
   {
-    "id": 6500,
-    "word": "ulster",
-    "phonetic": "'ʌlstә",
-    "pos": "n.",
-    "meaning": "n. 有带的宽大长外套",
-    "example": "He wore a heavy ulster to keep warm during the freezing walk across the snowy moor.",
-    "exampleCn": "他穿着一件厚长外套以在穿越雪原的寒冷步行中保暖。",
+    "id": 8990,
+    "word": "pay attention to",
+    "phonetic": "/peɪ əˈtenʃn tə/",
+    "pos": "v. phr.",
+    "meaning": "注意；留意",
+    "example": "Please pay attention to the safety instructions.",
+    "exampleCn": "请注意安全说明。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -17145,17 +17313,16 @@
     ]
   },
   {
-    "id": 6514,
-    "word": "dublin",
-    "phonetic": "'dʌblin",
-    "pos": "n.",
-    "meaning": "n. 都柏林",
-    "example": "They spent a rainy weekend exploring the cosy pubs and historic libraries of Dublin last autumn.",
-    "exampleCn": "他们去年秋天在都柏林度过了一个下雨的周末探索了舒适的酒吧和历史悠久的图书馆。",
+    "id": 8991,
+    "word": "deal with",
+    "phonetic": "/ˈdiːl wɪð/",
+    "pos": "v. phr.",
+    "meaning": "处理；应对",
+    "example": "We need to deal with this problem before Friday.",
+    "exampleCn": "我们需要在星期五之前处理这个问题。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -17422,17 +17589,16 @@
     ]
   },
   {
-    "id": 6534,
-    "word": "egypt",
-    "phonetic": "'i:dʒipt",
-    "pos": "n.",
-    "meaning": "n. 埃及",
-    "example": "They spent two weeks in Egypt visiting the ancient pyramids and sailing down the Nile at sunset.",
-    "exampleCn": "他们在埃及呆了两周参观了古金字塔并在日落时沿着尼罗河航行。",
+    "id": 8992,
+    "word": "depend on",
+    "phonetic": "/dɪˈpend ɒn/",
+    "pos": "v. phr.",
+    "meaning": "取决于；依靠",
+    "example": "Our travel plans depend on the weather.",
+    "exampleCn": "我们的旅行计划取决于天气。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -18109,17 +18275,16 @@
     ]
   },
   {
-    "id": 6584,
-    "word": "poland",
-    "phonetic": "'pәulәnd",
-    "pos": "n.",
-    "meaning": "n. 波兰",
-    "example": "She visited Poland last winter and was amazed by the beautiful Christmas markets and the warm hospitality.",
-    "exampleCn": "她去年冬天去了波兰被美丽的圣诞市场和热情的款待所惊艳。",
+    "id": 8993,
+    "word": "apply for",
+    "phonetic": "/əˈplaɪ fə/",
+    "pos": "v. phr.",
+    "meaning": "申请",
+    "example": "You can apply for the job through the website.",
+    "exampleCn": "你可以通过网站申请这份工作。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -18163,17 +18328,16 @@
     ]
   },
   {
-    "id": 6588,
-    "word": "kelly",
-    "phonetic": "'keli",
-    "pos": "n.",
-    "meaning": "n. 凯利（男子名）；[古]战士",
-    "example": "Kelly has been practising yoga on the rooftop every morning before work for the past two years.",
-    "exampleCn": "凯利过去两年来每个早晨上班前都在屋顶上练习瑜伽。",
+    "id": 8994,
+    "word": "ask for",
+    "phonetic": "/ˈɑːsk fə/",
+    "pos": "v. phr.",
+    "meaning": "请求；索要",
+    "example": "You can ask for help at the information desk.",
+    "exampleCn": "你可以在问讯处寻求帮助。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -18204,17 +18368,16 @@
     ]
   },
   {
-    "id": 6591,
-    "word": "clare",
-    "phonetic": "kleә",
-    "pos": "n.",
-    "meaning": "n. 克莱尔（女子名）",
-    "example": "Clare spent her Sunday afternoons painting watercolour landscapes of the rolling hills near her home.",
-    "exampleCn": "克莱尔周日午后的时间用来画她家附近起伏山丘的水彩风景画。",
+    "id": 8995,
+    "word": "wait for",
+    "phonetic": "/ˈweɪt fə/",
+    "pos": "v. phr.",
+    "meaning": "等待",
+    "example": "We can wait for the bus near the station entrance.",
+    "exampleCn": "我们可以在车站入口附近等公交车。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -18805,7 +18968,7 @@
     "pos": "n.",
     "meaning": "贵族；勋爵（lord 的复数）；the Lords 或 House of Lords 指英国上议院",
     "example": "The proposed law was debated for hours in the House of Lords before being passed last night.",
-    "exampleCn": "上议院对这项提案进行了数小时的辩论最终在昨晚深夜通过。",
+    "exampleCn": "这项法律提案在英国上议院辩论了数小时，昨晚才获通过。",
     "category": "daily",
     "categories": [
       "daily",
@@ -18854,17 +19017,16 @@
     ]
   },
   {
-    "id": 6638,
-    "word": "iran",
-    "phonetic": "i'rɑ:n",
-    "pos": "n.",
-    "meaning": "n. 伊朗",
-    "example": "She studied Persian art and architecture during a semester at a university in Iran three years ago.",
-    "exampleCn": "她三年前在伊朗一所大学的一个学期里学习了波斯艺术和建筑。",
+    "id": 8996,
+    "word": "listen to",
+    "phonetic": "/ˈlɪsn tə/",
+    "pos": "v. phr.",
+    "meaning": "听；倾听",
+    "example": "Please listen to the recording twice.",
+    "exampleCn": "请把录音听两遍。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -19458,17 +19620,16 @@
     ]
   },
   {
-    "id": 6682,
-    "word": "korea",
-    "phonetic": "/kəˈriːə/",
-    "pos": "n.",
-    "meaning": "朝鲜半岛地区（专名，规范写法 Korea；现代国家名称应区分 North Korea 与 South Korea）",
-    "example": "The atlas includes a detailed map of Korea.",
-    "exampleCn": "这本地图集收录了一张详细的朝鲜半岛地图。",
+    "id": 8997,
+    "word": "be able to",
+    "phonetic": "/bi ˈeɪbl tə/",
+    "pos": "v. phr.",
+    "meaning": "能够",
+    "example": "You will be able to review your answers after the test.",
+    "exampleCn": "测试结束后，你就能回看答案。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -19486,17 +19647,16 @@
     ]
   },
   {
-    "id": 6684,
-    "word": "caroline",
-    "phonetic": "'kærәlaiŋ",
-    "pos": "n.",
-    "meaning": "n. 凯若琳（女子名）",
-    "example": "Caroline spent her summer cycling through the quiet villages of the French countryside near Bordeaux.",
-    "exampleCn": "卡罗琳用夏天骑车穿过波尔多附近法国乡村的安静村庄。",
+    "id": 8998,
+    "word": "be supposed to",
+    "phonetic": "/bi səˈpəʊst tə/",
+    "pos": "v. phr.",
+    "meaning": "按规定应当；理应",
+    "example": "We are supposed to return the keys before noon.",
+    "exampleCn": "按规定，我们应在中午前归还钥匙。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -20040,17 +20200,16 @@
     ]
   },
   {
-    "id": 6724,
-    "word": "morgan",
-    "phonetic": "'mɒ:gәn",
-    "pos": "n.",
-    "meaning": "n. 摩根马",
-    "example": "Morgan spent his weekends volunteering at a horse rescue ranch on the outskirts of the town.",
-    "exampleCn": "摩根周末在镇郊的一个马匹救助牧场做志愿者。",
+    "id": 8999,
+    "word": "make an effort",
+    "phonetic": "/meɪk ən ˈefət/",
+    "pos": "v. phr.",
+    "meaning": "努力；作出努力",
+    "example": "We should make an effort to learn each other’s names.",
+    "exampleCn": "我们应该努力记住彼此的名字。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -20108,17 +20267,16 @@
     ]
   },
   {
-    "id": 6729,
-    "word": "vietnam",
-    "phonetic": ".vjet'næm",
-    "pos": "n.",
-    "meaning": "n. 越南",
-    "example": "They spent a month travelling through Vietnam by train from the northern mountains down to the southern coast.",
-    "exampleCn": "他们用一个月时间坐火车穿越越南从北部山区一直到南部海岸。",
+    "id": 9000,
+    "word": "take a break",
+    "phonetic": "/teɪk ə ˈbreɪk/",
+    "pos": "v. phr.",
+    "meaning": "休息一会儿",
+    "example": "Let us take a break after this exercise.",
+    "exampleCn": "做完这道练习后，我们休息一会儿吧。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -20149,17 +20307,16 @@
     ]
   },
   {
-    "id": 6732,
-    "word": "pakistan",
-    "phonetic": ".pɑ:ki'stɑ:n",
-    "pos": "n.",
-    "meaning": "n. 巴基斯坦",
-    "example": "He visited Pakistan last year and was deeply moved by the warmth and hospitality of the local people.",
-    "exampleCn": "他去年去了巴基斯坦被当地人的热情和好客深深打动。",
+    "id": 9001,
+    "word": "make a decision",
+    "phonetic": "/meɪk ə dɪˈsɪʒn/",
+    "pos": "v. phr.",
+    "meaning": "作出决定",
+    "example": "We need to make a decision before the tickets sell out.",
+    "exampleCn": "我们需要在票售完之前作出决定。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -20358,17 +20515,16 @@
     ]
   },
   {
-    "id": 6747,
-    "word": "greece",
-    "phonetic": "gri:s",
-    "pos": "n.",
-    "meaning": "n. 希腊",
-    "example": "They spent their honeymoon island hopping around Greece and swimming in the crystal clear blue sea.",
-    "exampleCn": "他们在希腊各岛间度蜜月在清澈蔚蓝的海中游泳。",
+    "id": 9002,
+    "word": "keep in mind",
+    "phonetic": "/kiːp ɪn ˈmaɪnd/",
+    "pos": "v. phr.",
+    "meaning": "记住；牢记",
+    "example": "Please keep in mind that the library closes early today.",
+    "exampleCn": "请记住，图书馆今天提早关门。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -20537,17 +20693,16 @@
     ]
   },
   {
-    "id": 6760,
-    "word": "sweden",
-    "phonetic": "'swi:dn",
+    "id": 9003,
+    "word": "boarding pass",
+    "phonetic": "/ˈbɔːdɪŋ pɑːs/",
     "pos": "n.",
-    "meaning": "n. 瑞典",
-    "example": "She moved to Sweden for work and soon became fascinated by the local tradition of fika every afternoon.",
-    "exampleCn": "她因工作搬到瑞典很快就迷上了当地人每天下午休息喝咖啡的传统。",
+    "meaning": "登机牌",
+    "example": "Have your boarding pass ready at the gate.",
+    "exampleCn": "请在登机口准备好登机牌。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -20701,17 +20856,16 @@
     ]
   },
   {
-    "id": 6772,
-    "word": "brazil",
-    "phonetic": "brә'zil",
+    "id": 9004,
+    "word": "public transport",
+    "phonetic": "/ˌpʌblɪk ˈtrænspɔːt/",
     "pos": "n.",
-    "meaning": "n. 巴西",
-    "example": "They travelled to Brazil last year to see the Amazon rainforest and the spectacular waterfalls at Iguazu.",
-    "exampleCn": "他们去年去了巴西看亚马逊雨林和伊瓜苏壮观的瀑布。",
+    "meaning": "公共交通",
+    "example": "Public transport is cheaper than driving in this city.",
+    "exampleCn": "在这座城市，乘公共交通比开车便宜。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -21156,17 +21310,16 @@
     ]
   },
   {
-    "id": 6805,
-    "word": "holland",
-    "phonetic": "'hɒlәnd",
+    "id": 9005,
+    "word": "seat belt",
+    "phonetic": "/ˈsiːt belt/",
     "pos": "n.",
-    "meaning": "n. 荷兰",
-    "example": "They cycled through Holland last spring and were amazed by the endless fields of colourful tulips everywhere.",
-    "exampleCn": "他们去年春天骑车穿过荷兰被到处无边无际的彩色郁金香田所惊艳。",
+    "meaning": "安全带",
+    "example": "Please fasten your seat belt before we leave.",
+    "exampleCn": "出发前请系好安全带。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -21294,17 +21447,16 @@
     ]
   },
   {
-    "id": 6815,
-    "word": "mexico",
-    "phonetic": "'meksikәu",
+    "id": 9006,
+    "word": "waiting room",
+    "phonetic": "/ˈweɪtɪŋ ruːm/",
     "pos": "n.",
-    "meaning": "n. 墨西哥",
-    "example": "They explored the ancient Mayan ruins deep in the jungle during their trip to Mexico last December.",
-    "exampleCn": "他们去年十二月在墨西哥旅行期间探索了丛林深处的古玛雅遗址。",
+    "meaning": "等候室",
+    "example": "Please take a seat in the waiting room.",
+    "exampleCn": "请在等候室就座。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -21364,17 +21516,16 @@
     ]
   },
   {
-    "id": 6820,
-    "word": "surrey",
-    "phonetic": "'sʌri",
+    "id": 9007,
+    "word": "customer service",
+    "phonetic": "/ˌkʌstəmə ˈsɜːvɪs/",
     "pos": "n.",
-    "meaning": "n. 四轮双座轻便游览马车",
-    "example": "They rode through the countryside in an old surrey on a sunny afternoon in June.",
-    "exampleCn": "六月一个晴朗的午后他们坐着老式四轮马车穿过乡间。",
+    "meaning": "客户服务；客服",
+    "example": "Contact customer service if your order does not arrive.",
+    "exampleCn": "如果订单没有送达，请联系客服。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -21460,17 +21611,16 @@
     ]
   },
   {
-    "id": 6827,
-    "word": "jonathan",
-    "phonetic": "'dʒɔnәθәn",
+    "id": 9008,
+    "word": "health insurance",
+    "phonetic": "/ˈhelθ ɪnˌʃʊərəns/",
     "pos": "n.",
-    "meaning": "n. 乔纳森（男子名）",
-    "example": "Jonathan has been learning the saxophone for three years and now performs at local jazz clubs.",
-    "exampleCn": "乔纳森学吹萨克斯管已经三年了现在在当地爵士俱乐部演出。",
+    "meaning": "医疗保险",
+    "example": "Does your health insurance cover this treatment?",
+    "exampleCn": "你的医疗保险涵盖这项治疗吗？",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -21515,17 +21665,16 @@
     ]
   },
   {
-    "id": 6831,
-    "word": "charlotte",
-    "phonetic": "'ʃɑ:lәt",
+    "id": 9009,
+    "word": "return ticket",
+    "phonetic": "/rɪˌtɜːn ˈtɪkɪt/",
     "pos": "n.",
-    "meaning": "n. 水果奶油布丁",
-    "example": "Charlotte spent her Sunday afternoons baking cakes and reading novels in the sunny bay window.",
-    "exampleCn": "夏洛特星期天下午在阳光明媚的飘窗旁烤蛋糕读小说。",
+    "meaning": "往返票",
+    "example": "A return ticket costs less than two single tickets.",
+    "exampleCn": "一张往返票比两张单程票便宜。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -21691,17 +21840,16 @@
     ]
   },
   {
-    "id": 6844,
-    "word": "kuwait",
-    "phonetic": "kә'wait",
+    "id": 9010,
+    "word": "single ticket",
+    "phonetic": "/ˌsɪŋɡl ˈtɪkɪt/",
     "pos": "n.",
-    "meaning": "n. 科威特",
-    "example": "He worked as an engineer in Kuwait for five years before returning home to start his own business.",
-    "exampleCn": "他在科威特做了五年工程师才回国创办自己的企业。",
+    "meaning": "单程票",
+    "example": "I only need a single ticket to the airport.",
+    "exampleCn": "我只需要一张去机场的单程票。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -22068,17 +22216,16 @@
     ]
   },
   {
-    "id": 6871,
-    "word": "switzerland",
-    "phonetic": "'switsәlәnd",
+    "id": 9011,
+    "word": "round trip",
+    "phonetic": "/ˌraʊnd ˈtrɪp/",
     "pos": "n.",
-    "meaning": "n. 瑞士",
-    "example": "They spent Christmas in Switzerland skiing down the majestic slopes of the Alps under bright blue skies.",
-    "exampleCn": "他们在瑞士度过了圣诞节在明亮的蓝天下从雄伟的阿尔卑斯山坡上滑下。",
+    "meaning": "往返行程",
+    "example": "The round trip takes about three hours.",
+    "exampleCn": "往返行程大约需要三小时。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -22219,17 +22366,16 @@
     ]
   },
   {
-    "id": 6882,
-    "word": "norway",
-    "phonetic": "'nɒ:wei",
+    "id": 9012,
+    "word": "bank account",
+    "phonetic": "/ˈbæŋk əkaʊnt/",
     "pos": "n.",
-    "meaning": "n. 挪威",
-    "example": "They travelled to Norway last winter to see the northern lights dancing across the dark Arctic sky.",
-    "exampleCn": "他们去年冬天去挪威看了在黑暗的北极天空中舞动的北极光。",
+    "meaning": "银行账户",
+    "example": "You need a bank account to receive the payment.",
+    "exampleCn": "你需要一个银行账户来收款。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -22478,17 +22624,16 @@
     ]
   },
   {
-    "id": 6901,
-    "word": "hungary",
-    "phonetic": "'hʌŋgәri",
+    "id": 9013,
+    "word": "exchange rate",
+    "phonetic": "/ɪksˈtʃeɪndʒ reɪt/",
     "pos": "n.",
-    "meaning": "n. 匈牙利",
-    "example": "They visited Hungary last autumn and fell in love with the thermal baths and the stunning old architecture.",
-    "exampleCn": "他们去年秋天去了匈牙利爱上了温泉浴场和令人惊叹的古老建筑。",
+    "meaning": "汇率",
+    "example": "Check the exchange rate before changing your money.",
+    "exampleCn": "兑换货币前请查看汇率。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -22519,17 +22664,16 @@
     ]
   },
   {
-    "id": 6904,
-    "word": "jordan",
-    "phonetic": "'dʒɒ:dәn",
+    "id": 9014,
+    "word": "interest rate",
+    "phonetic": "/ˈɪntrəst reɪt/",
     "pos": "n.",
-    "meaning": "n. 约旦, 约旦河, 尿壶",
-    "example": "She travelled to Jordan last spring to visit the ancient city of Petra carved into the rose-red cliffs.",
-    "exampleCn": "她去年春天去了约旦参观了雕刻在玫瑰红悬崖中的佩特拉古城。",
+    "meaning": "利率",
+    "example": "Ask about the interest rate before taking out a loan.",
+    "exampleCn": "贷款前请询问利率。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -22654,17 +22798,16 @@
     ]
   },
   {
-    "id": 6914,
-    "word": "mick",
-    "phonetic": "mik",
+    "id": 9015,
+    "word": "savings account",
+    "phonetic": "/ˈseɪvɪŋz əkaʊnt/",
     "pos": "n.",
-    "meaning": "n. 针对爱尔兰人的冒犯性蔑称，不宜用来称呼他人；Mick 也可为人名米克（Michael 的昵称），本条例句使用人名义",
-    "example": "Mick has been playing folk songs on his guitar at the local pub every Friday night for years.",
-    "exampleCn": "米克多年来每个周五晚上都在当地酒馆弹吉他唱民歌。",
+    "meaning": "储蓄账户",
+    "example": "She opened a savings account for future expenses.",
+    "exampleCn": "她开了一个储蓄账户，为未来的开支作准备。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -23043,17 +23186,16 @@
     ]
   },
   {
-    "id": 6942,
-    "word": "belgium",
-    "phonetic": "'beldʒәm",
+    "id": 9016,
+    "word": "mobile data",
+    "phonetic": "/ˌməʊbaɪl ˈdeɪtə/",
     "pos": "n.",
-    "meaning": "n. 比利时",
-    "example": "They visited Belgium last spring to taste the famous chocolate and wander through the medieval streets of Bruges.",
-    "exampleCn": "他们去年春天去了比利时品尝著名的巧克力并在布鲁日的中世纪街道上漫步。",
+    "meaning": "移动数据；手机流量",
+    "example": "Turn off mobile data if you do not need internet access.",
+    "exampleCn": "如果不需要联网，可以关闭移动数据。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -23566,17 +23708,16 @@
     ]
   },
   {
-    "id": 6980,
-    "word": "betty",
-    "phonetic": "'beti",
+    "id": 9017,
+    "word": "airplane mode",
+    "phonetic": "/ˈeəpleɪn məʊd/",
     "pos": "n.",
-    "meaning": "n. 贝蒂（女子名）",
-    "example": "Betty has been baking apple pies for the village fair every single autumn for more than forty years.",
-    "exampleCn": "贝蒂每年秋天为村里的集市烤苹果派已经四十多年了。",
+    "meaning": "飞行模式",
+    "example": "Please switch your phone to airplane mode.",
+    "exampleCn": "请把手机切换到飞行模式。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -23704,17 +23845,16 @@
     ]
   },
   {
-    "id": 6990,
-    "word": "netherlands",
-    "phonetic": "'neðәlәndz",
+    "id": 9018,
+    "word": "voicemail",
+    "phonetic": "/ˈvɔɪsmeɪl/",
     "pos": "n.",
-    "meaning": "n. 荷兰",
-    "example": "They cycled through the Netherlands last spring and were amazed by the endless fields of colourful tulips.",
-    "exampleCn": "他们去年春天骑车穿过荷兰被无边无际的彩色郁金香田所惊艳。",
+    "meaning": "语音信箱；语音留言",
+    "example": "Please leave a voicemail if I do not answer.",
+    "exampleCn": "如果我没有接电话，请留下语音留言。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -24385,17 +24525,16 @@
     ]
   },
   {
-    "id": 7039,
-    "word": "denmark",
-    "phonetic": "'denmɑ:k",
+    "id": 9019,
+    "word": "video call",
+    "phonetic": "/ˈvɪdiəʊ kɔːl/",
     "pos": "n.",
-    "meaning": "n. 丹麦",
-    "example": "They visited Denmark last summer and were charmed by the colourful houses along the waterfront in Copenhagen.",
-    "exampleCn": "他们去年夏天去了丹麦被哥本哈根水边五颜六色的房屋迷住了。",
+    "meaning": "视频通话",
+    "example": "We can discuss the plan on a video call.",
+    "exampleCn": "我们可以通过视频通话讨论这个计划。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -24441,17 +24580,16 @@
     ]
   },
   {
-    "id": 7043,
-    "word": "austria",
-    "phonetic": "'ɒstriә",
-    "pos": "n.",
-    "meaning": "n. 奥地利",
-    "example": "They went skiing in Austria last winter and stayed in a cosy wooden chalet for two weeks.",
-    "exampleCn": "他们去年冬天去奥地利滑雪在一间舒适的木屋住了两周。",
+    "id": 9020,
+    "word": "proofread",
+    "phonetic": "/ˈpruːfriːd/",
+    "pos": "v.",
+    "meaning": "校对",
+    "example": "Please proofread your application before sending it.",
+    "exampleCn": "发送申请前，请先校对。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -25540,7 +25678,7 @@
     "word": "tech",
     "phonetic": "tek",
     "pos": "n.",
-    "meaning": "n. 技术学院或学校",
+    "meaning": "技术学院（英式非正式）；技术、科技或技术人员的非正式简称，需依语境判断",
     "example": "She studied at a tech college for two years before landing her first job at a city startup.",
     "exampleCn": "她在技术学院学了两年后在城里创业公司找到第一份工作。",
     "category": "daily",
@@ -26283,17 +26421,16 @@
     ]
   },
   {
-    "id": 7177,
-    "word": "ralph",
-    "phonetic": "reif, rælf",
+    "id": 9021,
+    "word": "restroom",
+    "phonetic": "/ˈrestruːm/",
     "pos": "n.",
-    "meaning": "n. 拉尔夫（男子名）",
-    "example": "Ralph spent his summers sailing along the rugged coast and camping under the stars on empty beaches.",
-    "exampleCn": "拉尔夫夏天沿着崎岖的海岸航行在空旷的星空下沙滩上露营。",
+    "meaning": "洗手间；公共厕所",
+    "example": "Is there a restroom near the entrance?",
+    "exampleCn": "入口附近有洗手间吗？",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -26378,17 +26515,16 @@
     ]
   },
   {
-    "id": 7184,
-    "word": "santa",
-    "phonetic": "'sæntә",
+    "id": 9022,
+    "word": "parking space",
+    "phonetic": "/ˈpɑːkɪŋ speɪs/",
     "pos": "n.",
-    "meaning": "n. 圣诞老人（等于Santa Claus）",
-    "example": "The children wrote letters to Santa and left a plate of mince pies by the fireplace on Christmas.",
-    "exampleCn": "孩子们写了信给圣诞老人并在圣诞夜在壁炉旁留了一盘肉馅饼。",
+    "meaning": "停车位",
+    "example": "We found a parking space near the supermarket.",
+    "exampleCn": "我们在超市附近找到了一个停车位。",
     "category": "daily",
     "categories": [
-      "daily",
-      "cet4"
+      "daily"
     ]
   },
   {
@@ -31552,17 +31688,16 @@
     ]
   },
   {
-    "id": 7554,
-    "word": "india",
-    "phonetic": "'indjә",
+    "id": 9023,
+    "word": "phone number",
+    "phonetic": "/ˈfəʊn nʌmbə(r)/",
     "pos": "n.",
-    "meaning": "n. 印度",
-    "example": "She spent six months travelling through India by train and came back with a lifetime of incredible stories.",
-    "exampleCn": "她花了六个月坐火车穿越印度带回了值得讲述一生的不可思议故事。",
-    "category": "cet4",
+    "meaning": "电话号码",
+    "example": "Please write your phone number on the form.",
+    "exampleCn": "请在表格上填写你的电话号码。",
+    "category": "daily",
     "categories": [
-      "cet4",
-      "cet6"
+      "daily"
     ]
   },
   {
@@ -39520,11 +39655,11 @@
   {
     "id": 8123,
     "word": "lame",
-    "phonetic": "leim",
-    "pos": "v.",
-    "meaning": "a. 跛足的, 僵痛的, 不完全的, 金属薄板, 不知内情的人\\nvi. 变跛\\nvt. 使成残废, 使无用",
-    "example": "She wore a gold lame dress.",
-    "exampleCn": "她穿着一件金色的蹩脚连衣裙。",
+    "phonetic": "/leɪm/",
+    "pos": "adj.",
+    "meaning": "（借口、解释等）站不住脚的；（尤指动物）跛的。用于贬低人时不礼貌；织物 lamé 是另一个词",
+    "example": "He gave a lame excuse for missing the meeting.",
+    "exampleCn": "他为缺席会议找了一个站不住脚的借口。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -40365,16 +40500,16 @@
     ]
   },
   {
-    "id": 8184,
-    "word": "jesus",
-    "phonetic": "'dʒi:zәs",
+    "id": 9024,
+    "word": "email address",
+    "phonetic": "/ˈiːmeɪl ədres/",
     "pos": "n.",
-    "meaning": "n. 耶稣",
-    "example": "The teachings of Jesus have inspired billions of people around the world for over two thousand years.",
-    "exampleCn": "两千多年来耶稣的教导激励了全世界数十亿人。",
-    "category": "cet6",
+    "meaning": "电子邮箱地址",
+    "example": "Please enter a valid email address.",
+    "exampleCn": "请输入有效的电子邮箱地址。",
+    "category": "daily",
     "categories": [
-      "cet6"
+      "daily"
     ]
   },
   {
@@ -40456,16 +40591,16 @@
     ]
   },
   {
-    "id": 8191,
-    "word": "christ",
-    "phonetic": "kraist",
+    "id": 9025,
+    "word": "postal code",
+    "phonetic": "/ˈpəʊstl kəʊd/",
     "pos": "n.",
-    "meaning": "n. 基督, 救世主",
-    "example": "The old church on the hill has been standing since the time of Christ and still holds services.",
-    "exampleCn": "山上的老教堂自基督时代以来一直矗立着至今每个星期天早上仍在举行礼拜。",
-    "category": "cet6",
+    "meaning": "邮政编码",
+    "example": "Please include your postal code in the delivery address.",
+    "exampleCn": "请在收货地址中填写邮政编码。",
+    "category": "daily",
     "categories": [
-      "cet6"
+      "daily"
     ]
   },
   {
@@ -46488,16 +46623,16 @@
     ]
   },
   {
-    "id": 8655,
-    "word": "mars",
-    "phonetic": "mɑ:z",
-    "pos": "n.",
-    "meaning": "n. 火星, 战神\\n[医] 铁",
-    "example": "Mars has two satellites.",
-    "exampleCn": "火星有两颗卫星。",
-    "category": "cet6",
+    "id": 9026,
+    "word": "date of birth",
+    "phonetic": "/ˌdeɪt əv ˈbɜːθ/",
+    "pos": "n. phr.",
+    "meaning": "出生日期",
+    "example": "The form asks for your date of birth.",
+    "exampleCn": "这张表格要求填写你的出生日期。",
+    "category": "daily",
     "categories": [
-      "cet6"
+      "daily"
     ]
   },
   {

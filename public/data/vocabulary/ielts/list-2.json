@@ -62,23 +62,6 @@
     "ieltsList": "2"
   },
   {
-    "id": 587,
-    "word": "Antarctic",
-    "phonetic": "/ænˈtɑːktɪk/",
-    "pos": "adj./n.",
-    "meaning": "南极的；南极洲",
-    "example": "The Antarctic is covered with ice.",
-    "exampleCn": "南极洲被冰雪覆盖。",
-    "category": "toefl",
-    "categories": [
-      "toefl",
-      "ielts"
-    ],
-    "level": "3",
-    "list": "1",
-    "ieltsList": "2"
-  },
-  {
     "id": 888,
     "word": "smooth",
     "phonetic": "/smuːð/",
@@ -283,23 +266,6 @@
     "ieltsList": "2"
   },
   {
-    "id": 2256,
-    "word": "Mediterranean",
-    "phonetic": "/ˌmedɪtəˈreɪniən/",
-    "pos": "adj./n.",
-    "meaning": "地中海的/地中海地区",
-    "example": "Mediterranean climates are often dry in summer.",
-    "exampleCn": "地中海气候夏季通常干燥。",
-    "category": "toefl",
-    "categories": [
-      "toefl",
-      "ielts"
-    ],
-    "level": "4",
-    "list": "9",
-    "ieltsList": "2"
-  },
-  {
     "id": 2374,
     "word": "equator",
     "phonetic": "/ɪˈkweɪtər/",
@@ -474,23 +440,6 @@
     "ieltsList": "2"
   },
   {
-    "id": 3568,
-    "word": "Oceania",
-    "phonetic": "/ˌoʊʃiˈɑːniə/",
-    "pos": "n.",
-    "meaning": "大洋洲",
-    "example": "Oceania includes Australia, New Zealand, and many Pacific islands.",
-    "exampleCn": "大洋洲包括澳大利亚、新西兰和许多太平洋岛屿。",
-    "category": "toefl",
-    "categories": [
-      "toefl",
-      "ielts"
-    ],
-    "level": "6",
-    "list": "5",
-    "ieltsList": "2"
-  },
-  {
     "id": 3606,
     "word": "plain",
     "phonetic": "/pleɪn/",
@@ -547,20 +496,6 @@
     "ieltsList": "2"
   },
   {
-    "id": 3610,
-    "word": "Arctic",
-    "phonetic": "/ˈɑːk.tɪk/",
-    "pos": "n./adj.",
-    "meaning": "北极/北极的",
-    "example": "Arctic sea ice is thinner than it used to be.",
-    "exampleCn": "北极海冰比过去更薄。",
-    "category": "ielts",
-    "categories": [
-      "ielts"
-    ],
-    "ieltsList": "2"
-  },
-  {
     "id": 3611,
     "word": "pole",
     "phonetic": "/pəʊl/",
@@ -593,20 +528,6 @@
     "ieltsList": "2"
   },
   {
-    "id": 3613,
-    "word": "Atlantic",
-    "phonetic": "/ətˈlæn.tɪk/",
-    "pos": "n./adj.",
-    "meaning": "大西洋/大西洋的",
-    "example": "The ship crossed the Atlantic in six days.",
-    "exampleCn": "这艘船六天横渡了大西洋。",
-    "category": "ielts",
-    "categories": [
-      "ielts"
-    ],
-    "ieltsList": "2"
-  },
-  {
     "id": 3614,
     "word": "ocean",
     "phonetic": "/ˈəʊ.ʃən/",
@@ -614,20 +535,6 @@
     "meaning": "海洋",
     "example": "The ocean absorbs a large amount of heat.",
     "exampleCn": "海洋吸收大量热量。",
-    "category": "ielts",
-    "categories": [
-      "ielts"
-    ],
-    "ieltsList": "2"
-  },
-  {
-    "id": 3615,
-    "word": "Pacific",
-    "phonetic": "/pəˈsɪf.ɪk/",
-    "pos": "n./adj.",
-    "meaning": "太平洋/太平洋的",
-    "example": "Many islands are located in the Pacific.",
-    "exampleCn": "许多岛屿位于太平洋。",
     "category": "ielts",
     "categories": [
       "ielts"

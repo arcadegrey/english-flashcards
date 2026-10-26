@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-10-25T14:46:14.444Z",
+  "generatedAt": "2026-10-26T03:32:28.195Z",
   "source": "/data/vocabulary.json",
   "sourceTotal": 8699,
   "core": {
     "path": "/data/vocabulary/core.json",
-    "count": 3481
+    "count": 3495
   },
   "toefl": {
-    "total": 3251,
+    "total": 3245,
     "levels": [
       {
         "key": "3",
         "label": "Level 3",
-        "count": 1010,
+        "count": 1009,
         "lists": [
           {
             "key": "1",
             "label": "List 1",
-            "count": 98,
+            "count": 97,
             "path": "/data/vocabulary/toefl/level-3/list-1.json"
           },
           {
@@ -80,7 +80,7 @@
       {
         "key": "4",
         "label": "Level 4",
-        "count": 1072,
+        "count": 1071,
         "lists": [
           {
             "key": "1",
@@ -133,7 +133,7 @@
           {
             "key": "9",
             "label": "List 9",
-            "count": 100,
+            "count": 99,
             "path": "/data/vocabulary/toefl/level-4/list-9.json"
           },
           {
@@ -148,12 +148,12 @@
       {
         "key": "5",
         "label": "Level 5",
-        "count": 922,
+        "count": 920,
         "lists": [
           {
             "key": "1",
             "label": "List 1",
-            "count": 100,
+            "count": 99,
             "path": "/data/vocabulary/toefl/level-5/list-1.json"
           },
           {
@@ -195,7 +195,7 @@
           {
             "key": "8",
             "label": "List 8",
-            "count": 99,
+            "count": 98,
             "path": "/data/vocabulary/toefl/level-5/list-8.json"
           },
           {
@@ -216,7 +216,7 @@
       {
         "key": "6",
         "label": "Level 6",
-        "count": 247,
+        "count": 245,
         "lists": [
           {
             "key": "1",
@@ -227,7 +227,7 @@
           {
             "key": "2",
             "label": "List 2",
-            "count": 50,
+            "count": 49,
             "path": "/data/vocabulary/toefl/level-6/list-2.json"
           },
           {
@@ -245,7 +245,7 @@
           {
             "key": "5",
             "label": "List 5",
-            "count": 50,
+            "count": 49,
             "path": "/data/vocabulary/toefl/level-6/list-5.json"
           }
         ],

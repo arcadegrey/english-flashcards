@@ -6,8 +6,9 @@ import { getCoreWordHints } from '../src/utils/wordHints.js';
 import { CORE_SYNONYM_GROUPS } from '../src/data/coreWordNotes.js';
 import { correctedVocabularyAudioUrl } from '../shared/vocabularyAudio.js';
 import { buildWordAssignment, gradeWordAssignment } from '../shared/wordAssignments.js';
+import { beforeNamePlaceReplacement } from '../shared/vocabularyHistory.js';
 const read = async path => JSON.parse(await readFile(new URL(`../${path}`, import.meta.url), 'utf8'));
-const vocabulary = await read('public/data/vocabulary.json');
+const vocabulary = beforeNamePlaceReplacement(await read('public/data/vocabulary.json'));
 const register = await read('data/vocabulary-followup/reviews-2026-10-25.json');
 const historicalAudit = await read('docs/base-vocabulary-audit.json');
 const checks = await read('data/vocabulary-followup/source-checks-2026-10-25.json');
@@ -110,11 +111,11 @@ test('previously published assignments keep their snapshots and IDs after source
   assert.equal(snapshot[0].word, oldWords[0].word);
 });
 
-test('the 73-item base queue closes while the independent 38-item sense/register queue stays open', async () => {
+test('the base queue stays closed and the 38-item sense/register queue accounts for later retirements', async () => {
   const queue = await read('docs/vocabulary-quality-followup.json');
   assert.equal(queue.base.filter(item => item.status === 'needs_source_review').length, 0);
-  assert.equal(queue.base.filter(item => item.status === 'resolved_source_review').length, 73);
-  assert.equal(queue.base.filter(item => item.status === 'retired_reference_only').length, 37);
+  assert.equal(queue.base.length, 111);
+  assert.equal(queue.base.filter(item => ['resolved_source_review', 'retired_reference_only', 'resolved_source_review'].includes(item.status)).length, 110);
   assert.equal(queue.sense.length, 38);
-  assert(queue.sense.every(item => ['needs_source_review', 'partially_corrected_followup_required'].includes(item.status)));
+  assert(queue.sense.every(item => ['needs_source_review', 'partially_corrected_followup_required', 'retired_reference_only', 'resolved_source_review'].includes(item.status)));
 });

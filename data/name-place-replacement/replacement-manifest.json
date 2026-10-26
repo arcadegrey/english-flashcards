@@ -1,0 +1,732 @@
+{
+  "date": "2026-10-26",
+  "baselineSha256": "51c107405445eea298f07b0175a6d7eabccbf226443ef97db7c19417ed177de0",
+  "activeCount": 8699,
+  "removedIds": [
+    587,
+    2256,
+    2442,
+    3140,
+    3416,
+    3568,
+    3610,
+    3613,
+    3615,
+    4894,
+    4895,
+    4896,
+    4897,
+    4898,
+    5595,
+    5684,
+    5741,
+    5830,
+    5875,
+    5901,
+    5910,
+    5967,
+    6003,
+    6015,
+    6078,
+    6082,
+    6105,
+    6113,
+    6133,
+    6134,
+    6203,
+    6281,
+    6317,
+    6355,
+    6357,
+    6375,
+    6376,
+    6379,
+    6386,
+    6409,
+    6413,
+    6428,
+    6434,
+    6500,
+    6514,
+    6534,
+    6584,
+    6588,
+    6591,
+    6638,
+    6682,
+    6684,
+    6724,
+    6729,
+    6732,
+    6747,
+    6760,
+    6772,
+    6805,
+    6815,
+    6820,
+    6827,
+    6831,
+    6844,
+    6871,
+    6882,
+    6901,
+    6904,
+    6914,
+    6942,
+    6980,
+    6990,
+    7039,
+    7043,
+    7177,
+    7184,
+    7554,
+    8184,
+    8191,
+    8655
+  ],
+  "addedIds": [
+    8947,
+    8948,
+    8949,
+    8950,
+    8951,
+    8952,
+    8953,
+    8954,
+    8955,
+    8956,
+    8957,
+    8958,
+    8959,
+    8960,
+    8961,
+    8962,
+    8963,
+    8964,
+    8965,
+    8966,
+    8967,
+    8968,
+    8969,
+    8970,
+    8971,
+    8972,
+    8973,
+    8974,
+    8975,
+    8976,
+    8977,
+    8978,
+    8979,
+    8980,
+    8981,
+    8982,
+    8983,
+    8984,
+    8985,
+    8986,
+    8987,
+    8988,
+    8989,
+    8990,
+    8991,
+    8992,
+    8993,
+    8994,
+    8995,
+    8996,
+    8997,
+    8998,
+    8999,
+    9000,
+    9001,
+    9002,
+    9003,
+    9004,
+    9005,
+    9006,
+    9007,
+    9008,
+    9009,
+    9010,
+    9011,
+    9012,
+    9013,
+    9014,
+    9015,
+    9016,
+    9017,
+    9018,
+    9019,
+    9020,
+    9021,
+    9022,
+    9023,
+    9024,
+    9025,
+    9026
+  ],
+  "replacements": [
+    {
+      "retiredId": 587,
+      "retiredWord": "Antarctic",
+      "newId": 8947,
+      "newWord": "checkout",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 2256,
+      "retiredWord": "Mediterranean",
+      "newId": 8948,
+      "newWord": "username",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 2442,
+      "retiredWord": "Scandinavia",
+      "newId": 8949,
+      "newWord": "screenshot",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 3140,
+      "retiredWord": "Antarctica",
+      "newId": 8950,
+      "newWord": "headphones",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 3416,
+      "retiredWord": "Himalayas",
+      "newId": 8951,
+      "newWord": "charger",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 3568,
+      "retiredWord": "Oceania",
+      "newId": 8952,
+      "newWord": "power bank",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 3610,
+      "retiredWord": "Arctic",
+      "newId": 8953,
+      "newWord": "reusable",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 3613,
+      "retiredWord": "Atlantic",
+      "newId": 8954,
+      "newWord": "childcare",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 3615,
+      "retiredWord": "Pacific",
+      "newId": 8955,
+      "newWord": "sunscreen",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 4894,
+      "retiredWord": "Australia",
+      "newId": 8956,
+      "newWord": "toothpaste",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 4895,
+      "retiredWord": "New Zealand",
+      "newId": 8957,
+      "newWord": "groceries",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 4896,
+      "retiredWord": "Britain",
+      "newId": 8958,
+      "newWord": "leftovers",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 4897,
+      "retiredWord": "France",
+      "newId": 8959,
+      "newWord": "settings",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 4898,
+      "retiredWord": "Germany",
+      "newId": 8960,
+      "newWord": "log in",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 5595,
+      "retiredWord": "london",
+      "newId": 8961,
+      "newWord": "log out",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 5684,
+      "retiredWord": "england",
+      "newId": 8962,
+      "newWord": "sign up",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 5741,
+      "retiredWord": "europe",
+      "newId": 8963,
+      "newWord": "fill in",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 5830,
+      "retiredWord": "scotland",
+      "newId": 8964,
+      "newWord": "look up",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 5875,
+      "retiredWord": "america",
+      "newId": 8965,
+      "newWord": "look after",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 5901,
+      "retiredWord": "ireland",
+      "newId": 8966,
+      "newWord": "look for",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 5910,
+      "retiredWord": "wales",
+      "newId": 8967,
+      "newWord": "look forward to",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 5967,
+      "retiredWord": "henry",
+      "newId": 8968,
+      "newWord": "put off",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6003,
+      "retiredWord": "japan",
+      "newId": 8969,
+      "newWord": "pick up",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6015,
+      "retiredWord": "paris",
+      "newId": 8970,
+      "newWord": "drop off",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6078,
+      "retiredWord": "usa",
+      "newId": 8971,
+      "newWord": "turn on",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6082,
+      "retiredWord": "italy",
+      "newId": 8972,
+      "newWord": "turn off",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6105,
+      "retiredWord": "jones",
+      "newId": 8973,
+      "newWord": "run out of",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6113,
+      "retiredWord": "spain",
+      "newId": 8974,
+      "newWord": "figure out",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6133,
+      "retiredWord": "russia",
+      "newId": 8975,
+      "newWord": "work out",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6134,
+      "retiredWord": "joe",
+      "newId": 8976,
+      "newWord": "set up",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6203,
+      "retiredWord": "africa",
+      "newId": 8977,
+      "newWord": "keep up with",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6281,
+      "retiredWord": "lewis",
+      "newId": 8978,
+      "newWord": "catch up",
+      "reason": "少见同形义与人名／地名提示或例句混淆，按本轮实用词优先方向整条替换；并非否认该普通词义存在。"
+    },
+    {
+      "retiredId": 6317,
+      "retiredWord": "rome",
+      "newId": 8979,
+      "newWord": "get along",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6355,
+      "retiredWord": "israel",
+      "newId": 8980,
+      "newWord": "put away",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6357,
+      "retiredWord": "iraq",
+      "newId": 8981,
+      "newWord": "try on",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6375,
+      "retiredWord": "asia",
+      "newId": 8982,
+      "newWord": "take off",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6376,
+      "retiredWord": "moscow",
+      "newId": 8983,
+      "newWord": "put on",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6379,
+      "retiredWord": "ruth",
+      "newId": 8984,
+      "newWord": "hand in",
+      "reason": "少见同形义与人名／地名提示或例句混淆，按本轮实用词优先方向整条替换；并非否认该普通词义存在。"
+    },
+    {
+      "retiredId": 6386,
+      "retiredWord": "canada",
+      "newId": 8985,
+      "newWord": "sort out",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6409,
+      "retiredWord": "kong",
+      "newId": 8986,
+      "newWord": "pay back",
+      "reason": "少见同形义与人名／地名提示或例句混淆，按本轮实用词优先方向整条替换；并非否认该普通词义存在。"
+    },
+    {
+      "retiredId": 6413,
+      "retiredWord": "charlie",
+      "newId": 8987,
+      "newWord": "cut down on",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6428,
+      "retiredWord": "berlin",
+      "newId": 8988,
+      "newWord": "make up",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6434,
+      "retiredWord": "victoria",
+      "newId": 8989,
+      "newWord": "take part in",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6500,
+      "retiredWord": "ulster",
+      "newId": 8990,
+      "newWord": "pay attention to",
+      "reason": "少见同形义与人名／地名提示或例句混淆，按本轮实用词优先方向整条替换；并非否认该普通词义存在。"
+    },
+    {
+      "retiredId": 6514,
+      "retiredWord": "dublin",
+      "newId": 8991,
+      "newWord": "deal with",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6534,
+      "retiredWord": "egypt",
+      "newId": 8992,
+      "newWord": "depend on",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6584,
+      "retiredWord": "poland",
+      "newId": 8993,
+      "newWord": "apply for",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6588,
+      "retiredWord": "kelly",
+      "newId": 8994,
+      "newWord": "ask for",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6591,
+      "retiredWord": "clare",
+      "newId": 8995,
+      "newWord": "wait for",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6638,
+      "retiredWord": "iran",
+      "newId": 8996,
+      "newWord": "listen to",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6682,
+      "retiredWord": "korea",
+      "newId": 8997,
+      "newWord": "be able to",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6684,
+      "retiredWord": "caroline",
+      "newId": 8998,
+      "newWord": "be supposed to",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6724,
+      "retiredWord": "morgan",
+      "newId": 8999,
+      "newWord": "make an effort",
+      "reason": "少见同形义与人名／地名提示或例句混淆，按本轮实用词优先方向整条替换；并非否认该普通词义存在。"
+    },
+    {
+      "retiredId": 6729,
+      "retiredWord": "vietnam",
+      "newId": 9000,
+      "newWord": "take a break",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6732,
+      "retiredWord": "pakistan",
+      "newId": 9001,
+      "newWord": "make a decision",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6747,
+      "retiredWord": "greece",
+      "newId": 9002,
+      "newWord": "keep in mind",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6760,
+      "retiredWord": "sweden",
+      "newId": 9003,
+      "newWord": "boarding pass",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6772,
+      "retiredWord": "brazil",
+      "newId": 9004,
+      "newWord": "public transport",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6805,
+      "retiredWord": "holland",
+      "newId": 9005,
+      "newWord": "seat belt",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6815,
+      "retiredWord": "mexico",
+      "newId": 9006,
+      "newWord": "waiting room",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6820,
+      "retiredWord": "surrey",
+      "newId": 9007,
+      "newWord": "customer service",
+      "reason": "少见同形义与人名／地名提示或例句混淆，按本轮实用词优先方向整条替换；并非否认该普通词义存在。"
+    },
+    {
+      "retiredId": 6827,
+      "retiredWord": "jonathan",
+      "newId": 9008,
+      "newWord": "health insurance",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6831,
+      "retiredWord": "charlotte",
+      "newId": 9009,
+      "newWord": "return ticket",
+      "reason": "少见同形义与人名／地名提示或例句混淆，按本轮实用词优先方向整条替换；并非否认该普通词义存在。"
+    },
+    {
+      "retiredId": 6844,
+      "retiredWord": "kuwait",
+      "newId": 9010,
+      "newWord": "single ticket",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6871,
+      "retiredWord": "switzerland",
+      "newId": 9011,
+      "newWord": "round trip",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6882,
+      "retiredWord": "norway",
+      "newId": 9012,
+      "newWord": "bank account",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6901,
+      "retiredWord": "hungary",
+      "newId": 9013,
+      "newWord": "exchange rate",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6904,
+      "retiredWord": "jordan",
+      "newId": 9014,
+      "newWord": "interest rate",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6914,
+      "retiredWord": "mick",
+      "newId": 9015,
+      "newWord": "savings account",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6942,
+      "retiredWord": "belgium",
+      "newId": 9016,
+      "newWord": "mobile data",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6980,
+      "retiredWord": "betty",
+      "newId": 9017,
+      "newWord": "airplane mode",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 6990,
+      "retiredWord": "netherlands",
+      "newId": 9018,
+      "newWord": "voicemail",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 7039,
+      "retiredWord": "denmark",
+      "newId": 9019,
+      "newWord": "video call",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 7043,
+      "retiredWord": "austria",
+      "newId": 9020,
+      "newWord": "proofread",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 7177,
+      "retiredWord": "ralph",
+      "newId": 9021,
+      "newWord": "restroom",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 7184,
+      "retiredWord": "santa",
+      "newId": 9022,
+      "newWord": "parking space",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 7554,
+      "retiredWord": "india",
+      "newId": 9023,
+      "newWord": "phone number",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 8184,
+      "retiredWord": "jesus",
+      "newId": 9024,
+      "newWord": "email address",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 8191,
+      "retiredWord": "christ",
+      "newId": 9025,
+      "newWord": "postal code",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    },
+    {
+      "retiredId": 8655,
+      "retiredWord": "mars",
+      "newId": 9026,
+      "newWord": "date of birth",
+      "reason": "当前以具体人名、姓氏、地名或具名人物／天体为教学内容。"
+    }
+  ],
+  "policy": "Preserve archived IDs and snapshots; never transfer progress, rewrite history, or label unverified additions CET4."
+}

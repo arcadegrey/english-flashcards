@@ -1,14 +1,14 @@
 # 核心词提示覆盖率与新增批次来源
 
-汇总日期：2026-10-25（逐条核对日期保留在来源与内容中）。运行 `node scripts/report-word-notes.mjs > docs/word-notes-coverage.md` 可重新生成。
+汇总日期：2026-10-26（逐条核对日期保留在来源与内容中）。运行 `node scripts/report-word-notes.mjs > docs/word-notes-coverage.md` 可重新生成。
 
 ## 覆盖口径
 
-- 活动词库记录（稳定 ID）：8699；历史兼容记录：247；已登记提示（含历史）：8946；可展示提示（含历史）：8946。
-- 内容：8788 组（近义 92；易混 78；单词用法 8618），共 17576 条双语例句。
-- 当前另有 15 条按稳定 ID 复核的提示覆盖原组内容，不增加覆盖词数；下方旧组数据保留为编辑来源，实际显示内容见“按 ID 复核的教学义项”。
+- 活动词库记录（稳定 ID）：8699；历史兼容记录：327；已登记提示（含历史）：9026；可展示提示（含历史）：9026。
+- 内容：8868 组（近义 92；易混 78；单词用法 8698），共 17736 条双语例句。
+- 当前另有 30 条按稳定 ID 复核的提示覆盖原组内容，不增加覆盖词数；下方旧组数据保留为编辑来源，实际显示内容见“按 ID 复核的教学义项”。
 - 构词／词族说明：47 词，38 组。此次保留原有构词，不为凑覆盖率增加推断。
-- 显式例句词形：144 处，逐例登记词头、实际词形、来源和核对状态；不自动推断未标注词形。
+- 显式例句词形：146 处，逐例登记词头、实际词形、来源和核对状态；不自动推断未标注词形。
 - 显式规范拼写／表达映射：6 组；保留原词条键和用户记录，提示说明规范拼写或推荐表达，例句使用已核验目标。
 - 待核验条目：0；缺失来源的条目：0；无法匹配原词库的提示：0。
 - 上行仅检查提示来源登记和映射状态，不表示词库音标、义项或独立语言审校已经完成；剩余问题见 `vocabulary-quality-followup.json`。
@@ -18,31 +18,46 @@
 
 | 词库类别 | 原有词条 | 已覆盖提示 | 覆盖比例 | 构词／词族覆盖 |
 | --- | ---: | ---: | ---: | ---: |
-| daily | 2029 | 2029 | 100.00% | 26 |
-| cet4 | 2075 | 2075 | 100.00% | 20 |
-| cet6 | 1520 | 1520 | 100.00% | 12 |
-| toefl | 3251 | 3251 | 100.00% | 0 |
-| ielts | 3257 | 3257 | 100.00% | 5 |
+| daily | 2047 | 2047 | 100.00% | 26 |
+| cet4 | 2028 | 2028 | 100.00% | 20 |
+| cet6 | 1516 | 1516 | 100.00% | 12 |
+| toefl | 3245 | 3245 | 100.00% | 0 |
+| ielts | 3246 | 3246 | 100.00% | 5 |
 
 ## 按 ID 复核的教学义项
 
 | ID | 词条 | 当前教学范围 | 当前来源 |
 | ---: | --- | --- | --- |
+| 3125 | cripple | 动词 · 严重损害；名词称人有冒犯性 | [韦氏词典 · cripple](https://www.merriam-webster.com/dictionary/cripple) |
+| 3367 | aborigine | 历史词语识读 · 原住民的旧称 | [韦氏词典 · aborigine](https://www.merriam-webster.com/dictionary/aborigine) |
+| 3491 | Caucasian | 地理形容词与历史分类 · 注意语境 | [韦氏词典 · Caucasian](https://www.merriam-webster.com/dictionary/Caucasian)、[科罗拉多大学 · 编辑指南 · Caucasian](https://www.cudenver.edu/university-communications/resources/editorial-style-guide) |
+| 3660 | oriental | 语域辨析 · 东方的旧式表达 | [韦氏词典 · oriental](https://www.merriam-webster.com/dictionary/oriental) |
 | 4579 | an odd fish | 名词短语 · 古怪的人 | [牛津学习词典 · an odd fish](https://www.oxfordlearnersdictionaries.com/definition/english/odd)、[牛津学习词典 · an odd fish](https://www.oxfordlearnersdictionaries.com/definition/english/fish_1) |
+| 5392 | dumb | 形容词 · 一时说不出话；注意贬义和旧称 | [韦氏词典 · dumb](https://www.merriam-webster.com/dictionary/dumb) |
+| 5463 | may | 情态动词 · 许可与可能 | [牛津学习词典 · may](https://www.oxfordlearnersdictionaries.com/definition/english/may_1) |
 | 5674 | including | 介词 · 包括在内 | [牛津学习词典 · including](https://www.oxfordlearnersdictionaries.com/definition/english/including) |
 | 5873 | sales | 名词与修饰用法 · 销售 | [韦氏词典 · sale](https://www.merriam-webster.com/dictionary/sale)、[韦氏词典 · sales](https://www.merriam-webster.com/dictionary/sales) |
 | 5896 | earlier | 形容词与副词 · 更早 | [牛津学习词典 · earlier](https://www.oxfordlearnersdictionaries.com/definition/english/early_1)、[韦氏词典 · earlier](https://www.merriam-webster.com/dictionary/earlier) |
-| 5941 | states | 复数名词 · 州与美国的称呼 | [韦氏词典 · state](https://www.merriam-webster.com/dictionary/state) |
+| 5941 | states | 复数名词 · 州；the States 指美国 | [韦氏词典 · states](https://www.merriam-webster.com/dictionary/state) |
 | 5947 | works | 短语用法 · 全套东西或配料 | [韦氏词典 · the works](https://www.merriam-webster.com/dictionary/the%20works) |
+| 5956 | august | 正式形容词 · 庄严的；与月份区别 | [牛津学习词典 · august](https://www.oxfordlearnersdictionaries.com/definition/english/august_1)、[韦氏词典 · august](https://www.merriam-webster.com/dictionary/august) |
 | 5963 | terms | 复数名词 · 关系与条款 | [牛津学习词典 · terms](https://www.oxfordlearnersdictionaries.com/definition/english/term_1)、[韦氏词典 · terms](https://www.merriam-webster.com/dictionary/terms) |
 | 6009 | thanks | 名词与表达 · 感谢及 thanks to | [牛津学习词典 · thanks](https://www.oxfordlearnersdictionaries.com/definition/english/thanks_1)、[韦氏词典 · thanks](https://www.merriam-webster.com/dictionary/thanks) |
-| 6127 | dec | 公司缩写 · Digital Equipment Corporation | [计算机历史博物馆 · dec](https://www.computerhistory.org/brochures/d-f/digital-equipment-corporation-dec/)、[CMU 发音词典 · dec](https://github.com/cmusphinx/cmudict) |
+| 6127 | dec | 公司缩写 · DEC，区别于月份 Dec. | [计算机历史博物馆 · dec](https://www.computerhistory.org/brochures/d-f/digital-equipment-corporation-dec/) |
 | 6258 | online | 形容词与副词 · 在线 | [韦氏词典 · online](https://www.merriam-webster.com/dictionary/online) |
 | 6260 | proposed | 动词与形容词 · 提出与拟议中的 | [牛津学习词典 · proposed](https://www.oxfordlearnersdictionaries.com/definition/english/propose) |
-| 6413 | charlie | 专有名词 · 人名 Charlie | [牛津学习词典 · charlie](https://www.oxfordlearnersdictionaries.com/us/definition/english/charlie_1) |
+| 6344 | commons | 机构短语 · 下议院 | [韦氏词典 · commons](https://www.merriam-webster.com/dictionary/commons) |
+| 6356 | teen | 名词与形容词 · 青少年 | [韦氏词典 · teen](https://www.merriam-webster.com/dictionary/teen) |
+| 6358 | sept | 月份缩写 · 九月，朗读全称 | [牛津学习词典 · sept](https://www.oxfordlearnersdictionaries.com/definition/english/september)、[韦氏词典 · sept](https://www.merriam-webster.com/dictionary/sept) |
+| 6366 | disabled | 形容词 · 残障；设备禁用另按语境 | [韦氏词典 · disabled](https://www.merriam-webster.com/dictionary/disabled) |
+| 6634 | lords | 复数名词与机构短语 · 勋爵；上议院 | [韦氏词典 · lords](https://www.merriam-webster.com/dictionary/lords)、[牛津学习词典 · lords](https://www.oxfordlearnersdictionaries.com/definition/english/the-house-of-lords) |
 | 6661 | freshman | 名词与修饰用法 · 新生及新任者 | [牛津学习词典 · freshman](https://www.oxfordlearnersdictionaries.com/definition/english/freshman)、[韦氏词典 · freshman](https://www.merriam-webster.com/dictionary/freshman) |
-| 6682 | korea | 专有名词 · 朝鲜半岛地区 | [牛津学习词典 · korea](https://www.oxfordlearnersdictionaries.com/us/definition/english/korea)、[柯林斯词典 · korea](https://www.collinsdictionary.com/dictionary/english/korea) |
 | 6736 | faster | 形容词与副词比较级 · 更快 | [牛津学习词典 · faster](https://www.oxfordlearnersdictionaries.com/definition/english/fast_1)、[韦氏词典 · faster](https://www.merriam-webster.com/dictionary/faster) |
+| 7123 | tech | 非正式用法 · 技术学院与科技 | [柯林斯词典 · tech](https://www.collinsdictionary.com/dictionary/english/tech)、[韦氏词典 · tech](https://www.merriam-webster.com/dictionary/tech) |
+| 8123 | lame | 形容词 · 站不住脚；区别于织物 lamé | [牛津学习词典 · lame](https://www.oxfordlearnersdictionaries.com/definition/english/lame_1)、[剑桥词典 · lame](https://dictionary.cambridge.org/dictionary/english/lame) |
+| 8164 | negro | 仅历史语境识读 · 过时且常具冒犯性的旧称 | [韦氏词典 · negro](https://www.merriam-webster.com/dictionary/Negro) |
+| 8175 | waggon | 拼写变体 · 运货马车 | [韦氏词典 · waggon](https://www.merriam-webster.com/dictionary/waggon)、[牛津学习词典 · waggon](https://www.oxfordlearnersdictionaries.com/definition/english/wagon) |
+| 8213 | jean | 名词 · 布料；裤子通常用 jeans | [韦氏词典 · jean](https://www.merriam-webster.com/dictionary/jean) |
 
 ## 规范拼写与表达映射
 
@@ -203,6 +218,8 @@
 | doze → dozed | She dozed in the armchair after lunch. | 2026-10-24 · [剑桥词典 · doze](https://dictionary.cambridge.org/dictionary/english/doze) |
 | jones → jonesing | He joked that he was jonesing for a holiday. | 2026-10-24 · [剑桥词典 · jones](https://dictionary.cambridge.org/dictionary/english/jones) |
 | don → donned | She donned her raincoat before stepping outside. | 2026-10-24 · [剑桥词典 · don](https://dictionary.cambridge.org/dictionary/english/don) |
+| be supposed to → are supposed to | We are supposed to return the keys before noon. | 2026-10-26 · [牛津学习词典 · be supposed to](https://www.oxfordlearnersdictionaries.com/definition/english/suppose) |
+| be supposed to → are supposed to | You are supposed to wear a helmet on this ride. | 2026-10-26 · [牛津学习词典 · be supposed to](https://www.oxfordlearnersdictionaries.com/definition/english/suppose) |
 
 ## 新增批次与逐组来源
 

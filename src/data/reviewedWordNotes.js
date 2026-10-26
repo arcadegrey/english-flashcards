@@ -1,6 +1,7 @@
 // ID-bound editorial follow-up. Definitions and examples are original;
 // dictionary references verify the senses, not copied prose.
 import followup from './followupWordNotes.json' with { type: 'json' };
+import senseReview from './senseReviewWordNotes.json' with { type: 'json' };
 const rows = [
   [5873, 'sales', '名词与修饰用法 · 销售',
     '基础例句 boost sales 指提高销量或销售额；sales 也可表示销售业务，放在名词前可修饰 team、office 等。不要把这些用法与一次降价促销混为一谈。',
@@ -28,6 +29,7 @@ const reviewed = new Map(rows.map(([id, word, scope, text, en1, zh1, en2, zh2, r
 }]));
 export const getReviewedWordHints = word => {
   const id = String(word?.id);
-  const entry = (Object.hasOwn(followup, id) ? followup[id] : undefined) || reviewed.get(id);
+  const entry = (Object.hasOwn(senseReview, id) ? senseReview[id] : undefined)
+    || (Object.hasOwn(followup, id) ? followup[id] : undefined) || reviewed.get(id);
   return entry && entry.word === word?.word ? [entry.hint] : null;
 };

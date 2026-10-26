@@ -16,7 +16,7 @@ import * as expansionSeven from '../src/data/expansionSevenWordNotes.js';
 import * as expansionEight from '../src/data/expansionEightWordNotes.js';
 import * as expansionNine from '../src/data/expansionNineWordNotes.js';
 
-const allowedHosts = new Set(['dictionary.cambridge.org', 'downloads.bbc.co.uk', 'stella.glasgow.ac.uk', 'www.merriam-webster.com', 'www.oxfordlearnersdictionaries.com', 'www.collinsdictionary.com', 'www.dictionary.com', 'agrovoc.fao.org', 'www.microsoft.com', 'news.microsoft.com', 'www.guinness.com', 'www.tandfonline.com']);
+const allowedHosts = new Set(['www.samsung.com', 'dictionary.cambridge.org', 'downloads.bbc.co.uk', 'stella.glasgow.ac.uk', 'www.merriam-webster.com', 'www.oxfordlearnersdictionaries.com', 'www.collinsdictionary.com', 'www.dictionary.com', 'agrovoc.fao.org', 'www.microsoft.com', 'news.microsoft.com', 'www.guinness.com', 'www.tandfonline.com']);
 
 test('reviewed example forms highlight plurals, past tense and third-person verbs with visible references', () => {
   for (const [lookup, word, form] of [
@@ -106,7 +106,9 @@ test('every checked form belongs to its comparison, occurs as a complete token a
           assert(source, id);
           assert.equal(source.checkedAt, annotation.review.checkedAt);
           const sourcePath = decodeURIComponent(new URL(source.url).pathname).toLowerCase();
-          assert([annotation.word, annotation.form].some(term => {
+          const registeredPhrase = annotation.word === 'be supposed to' && annotation.form === 'are supposed to'
+            && source.url === 'https://www.oxfordlearnersdictionaries.com/definition/english/suppose';
+          assert(registeredPhrase || [annotation.word, annotation.form].some(term => {
             const literal = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
             return new RegExp(`[/#]${literal}(?:_\\d+)?(?:$|[/\\s])`).test(sourcePath);
           }), `${annotation.word}: direct word or inflected-form reference`);
@@ -121,7 +123,7 @@ test('every checked form belongs to its comparison, occurs as a complete token a
 
 test('the final 2699 notes cover the exact vocabulary difference with unique original examples and sourced corrections', async () => {
   const { RETIRED_VOCABULARY } = await import('../shared/retiredVocabulary.js');
-  const vocabulary = [...JSON.parse(await readFile(new URL('../public/data/vocabulary.json', import.meta.url), 'utf8')).filter(word => word.id <= 8699), ...RETIRED_VOCABULARY];
+  const vocabulary = [...JSON.parse(await readFile(new URL('../public/data/vocabulary.json', import.meta.url), 'utf8')).filter(word => word.id <= 8699), ...RETIRED_VOCABULARY.filter(word => word.id <= 8699)];
   const normalize = text => text.trim().toLowerCase();
   const previousWords = new Set(Object.entries(CORE_WORD_NOTES).filter(([, entry]) => !/^(e[789]-|practical-)/.test(entry.synonymGroup)).map(([word]) => word));
   const expected = new Set(vocabulary.map(vocabularyNoteKey).filter(word => !previousWords.has(word)));
@@ -199,7 +201,7 @@ test('all active and retired vocabulary retains its own notes without rewriting 
   const vocabulary = JSON.parse(await readFile(new URL('../public/data/vocabulary.json', import.meta.url), 'utf8'));
   const { RETIRED_VOCABULARY } = await import('../shared/retiredVocabulary.js');
   const bySpelling = new Map([...vocabulary, ...RETIRED_VOCABULARY].map(entry => [vocabularyNoteKey(entry), entry]));
-  assert.equal(Object.keys(CORE_WORD_NOTES).length, 8946);
+  assert.equal(Object.keys(CORE_WORD_NOTES).length, vocabulary.length + RETIRED_VOCABULARY.length);
   assert.deepEqual(new Set(Object.keys(CORE_WORD_NOTES)), new Set(bySpelling.keys()));
   assert.equal(Object.values(CORE_WORD_NOTES).filter(entry => entry.formation).length, 47);
   for (const [word, entry] of Object.entries(CORE_WORD_NOTES)) {

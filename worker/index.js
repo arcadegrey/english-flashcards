@@ -1,6 +1,6 @@
 import { normalizePreferences, mergePreferences } from '../shared/planPreferences.js';
 import { mergeWordProgress } from '../shared/wordProgress.js';
-import { normalizeStudyHistory, mergeStudyHistory } from '../shared/studyHistory.js';
+import { normalizeStudyHistory, mergeStudyHistory, preserveExamCategoryHistory } from '../shared/studyHistory.js';
 import { handleClassroomApi, profileFields } from './classroom.js';
 import { handleReadingApi } from './readingAssignments.js';
 import { handleWordAssignments } from './wordAssignments.js';
@@ -562,6 +562,7 @@ const handlePutProgress = async (request, env) => {
     const finalProgress = conflictResolved ? mergeProgress(existingProgress, normalized) : normalized;
     // An older client omitting preferences must never erase saved settings.
     finalProgress.preferences = mergePreferences(existingProgress.preferences, normalized.preferences);
+    finalProgress.studyHistory = preserveExamCategoryHistory(existingProgress.studyHistory, finalProgress.studyHistory);
     const updatedAt = new Date(Math.max(Date.now(), (Date.parse(existing?.updated_at) || 0) + 1)).toISOString();
     const saved = await env.DB.prepare(
       `INSERT INTO user_progress (user_id, learned_words, mastered_words, custom_words, word_progress, wrong_words, study_history, preferences, updated_at)

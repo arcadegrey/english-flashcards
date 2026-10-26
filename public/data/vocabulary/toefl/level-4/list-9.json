@@ -1492,23 +1492,6 @@
     "list": "9"
   },
   {
-    "id": 2256,
-    "word": "Mediterranean",
-    "phonetic": "/ˌmedɪtəˈreɪniən/",
-    "pos": "adj./n.",
-    "meaning": "地中海的/地中海地区",
-    "example": "Mediterranean climates are often dry in summer.",
-    "exampleCn": "地中海气候夏季通常干燥。",
-    "category": "toefl",
-    "categories": [
-      "toefl",
-      "ielts"
-    ],
-    "level": "4",
-    "list": "9",
-    "ieltsList": "2"
-  },
-  {
     "id": 2257,
     "word": "distinctive",
     "phonetic": "/dɪˈstɪŋktɪv/",

@@ -3,7 +3,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
-import { RETIRED_VOCABULARY, activeProgressIds, isRetiredVocabularyId } from '../shared/retiredVocabulary.js';
+import { ORIGINAL_RETIRED_VOCABULARY as RETIRED_VOCABULARY, activeProgressIds, isRetiredVocabularyId } from '../shared/retiredVocabulary.js';
 import { getCoreWordHints } from '../src/utils/wordHints.js';
 import { selectAssignmentWords, buildWordAssignment, gradeWordAssignment } from '../shared/wordAssignments.js';
 import { createClassroomFixture } from './helpers/classroom-db.mjs';
@@ -60,10 +60,10 @@ test('all 494 replacement examples are distinct from each other and previous voc
   const previous = new Set([
     ...vocabulary.filter(word => word.id <= 8699).map(word => word.example),
     ...RETIRED_VOCABULARY.map(word => word.example),
-    ...Object.entries(CORE_SYNONYM_GROUPS).filter(([id]) => !id.startsWith('practical-')).flatMap(([, group]) => group.examples.map(example => example.en)),
+    ...Object.entries(CORE_SYNONYM_GROUPS).filter(([id]) => !/^practical-\d+$/.test(id)).flatMap(([, group]) => group.examples.map(example => example.en)),
   ].filter(Boolean).map(normalize));
   const seen = new Set();
-  for (const [id, group] of Object.entries(CORE_SYNONYM_GROUPS).filter(([id]) => id.startsWith('practical-'))) {
+  for (const [id, group] of Object.entries(CORE_SYNONYM_GROUPS).filter(([id]) => /^practical-\d+$/.test(id))) {
     for (const example of group.examples) {
       const key = normalize(example.en);
       assert(!seen.has(key) && !previous.has(key), `${id}: ${example.en}`);

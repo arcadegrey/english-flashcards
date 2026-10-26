@@ -523,21 +523,6 @@
     "list": "8"
   },
   {
-    "id": 3140,
-    "word": "Antarctica",
-    "phonetic": "/ænˈtɑːrktɪkə/",
-    "pos": "n.",
-    "meaning": "南极洲",
-    "example": "Antarctica contains most of the world’s fresh water in the form of ice.",
-    "exampleCn": "南极洲以冰的形式储存了世界上大部分淡水。",
-    "category": "toefl",
-    "categories": [
-      "toefl"
-    ],
-    "level": "5",
-    "list": "8"
-  },
-  {
     "id": 3141,
     "word": "surge",
     "phonetic": "/sɜːrdʒ/",

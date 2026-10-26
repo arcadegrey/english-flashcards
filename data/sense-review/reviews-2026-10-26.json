@@ -1,0 +1,996 @@
+{
+  "date": "2026-10-26",
+  "baselineSha256": "960381f6f612d3f0c3ec6091d0eaa47296547b7d2745637df6f025865e36b3ac",
+  "reviews": [
+    {
+      "id": 3125,
+      "word": "cripple",
+      "before": {
+        "id": 3125,
+        "word": "cripple",
+        "phonetic": "/ˈkrɪpl/",
+        "pos": "v./n.",
+        "meaning": "v. 严重损害；使瘫痪；n. 对残障人士的过时、冒犯性称呼（不宜用于称呼他人）",
+        "example": "The storm crippled the city’s transportation system.",
+        "exampleCn": "暴风雨严重破坏了城市的交通系统。",
+        "category": "toefl",
+        "categories": [
+          "toefl"
+        ],
+        "level": "5",
+        "list": "8"
+      },
+      "after": {
+        "id": 3125,
+        "word": "cripple",
+        "phonetic": "/ˈkrɪpl/",
+        "pos": "v./n.",
+        "meaning": "v. 严重损害；使瘫痪；n. 对残障人士的过时、冒犯性称呼（不宜用于称呼他人）",
+        "example": "The storm crippled the city’s transportation system.",
+        "exampleCn": "暴风雨严重破坏了城市的交通系统。",
+        "category": "toefl",
+        "categories": [
+          "toefl"
+        ],
+        "level": "5",
+        "list": "8"
+      },
+      "changedFields": [],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-3125-0",
+          "title": "韦氏词典 · cripple",
+          "url": "https://www.merriam-webster.com/dictionary/cripple",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "动词 · 严重损害；名词称人有冒犯性",
+      "practicePolicy": "teach stated sense; do not treat old or offensive senses as neutral",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    },
+    {
+      "id": 3367,
+      "word": "aborigine",
+      "before": {
+        "id": 3367,
+        "word": "aborigine",
+        "phonetic": "/ˌæbəˈrɪdʒəni/",
+        "pos": "n.",
+        "meaning": "土著居民/原住民",
+        "example": "The museum displayed tools made by an aborigine community.",
+        "exampleCn": "博物馆展出了一个原住民群体制作的工具。",
+        "category": "toefl",
+        "categories": [
+          "toefl"
+        ],
+        "level": "6",
+        "list": "1"
+      },
+      "after": {
+        "id": 3367,
+        "word": "aborigine",
+        "phonetic": "/ˌæbəˈrɪdʒəni/",
+        "pos": "n.",
+        "meaning": "原住民（旧称）；用于澳大利亚原住民的 Aborigine 可具有冒犯性，现代称呼应尊重具体族群的自称",
+        "example": "The editor explained why the old report used the term aborigine.",
+        "exampleCn": "编辑解释了为什么旧报告使用了 aborigine 这个词。",
+        "category": "toefl",
+        "categories": [
+          "toefl"
+        ],
+        "level": "6",
+        "list": "1"
+      },
+      "changedFields": [
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-3367-0",
+          "title": "韦氏词典 · aborigine",
+          "url": "https://www.merriam-webster.com/dictionary/aborigine",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "历史词语识读 · 原住民的旧称",
+      "practicePolicy": "teach stated sense; do not treat old or offensive senses as neutral",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    },
+    {
+      "id": 3491,
+      "word": "Caucasian",
+      "before": {
+        "id": 3491,
+        "word": "Caucasian",
+        "phonetic": "/kɔːˈkeɪʒən/",
+        "pos": "adj./n.",
+        "meaning": "高加索的/白种人的/白种人",
+        "example": "The study included participants of Caucasian and Asian backgrounds.",
+        "exampleCn": "这项研究包括白种人和亚洲背景的参与者。",
+        "category": "toefl",
+        "categories": [
+          "toefl"
+        ],
+        "level": "6",
+        "list": "4"
+      },
+      "after": {
+        "id": 3491,
+        "word": "Caucasian",
+        "phonetic": "/kɔːˈkeɪʒən/",
+        "pos": "adj./n.",
+        "meaning": "高加索地区的／居民；旧种族分类中指白人的称呼，现代语境宜避免把它当作精确种族分类",
+        "example": "The article examines the historical use of the label Caucasian.",
+        "exampleCn": "这篇文章考察了 Caucasian 这一标签在历史上的用法。",
+        "category": "toefl",
+        "categories": [
+          "toefl"
+        ],
+        "level": "6",
+        "list": "4"
+      },
+      "changedFields": [
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-3491-0",
+          "title": "韦氏词典 · Caucasian",
+          "url": "https://www.merriam-webster.com/dictionary/Caucasian",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        },
+        {
+          "id": "sense-2026-10-26-3491-1",
+          "title": "科罗拉多大学 · 编辑指南 · Caucasian",
+          "url": "https://www.cudenver.edu/university-communications/resources/editorial-style-guide",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "地理形容词与历史分类 · 注意语境",
+      "practicePolicy": "teach stated sense; do not treat old or offensive senses as neutral",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    },
+    {
+      "id": 3660,
+      "word": "oriental",
+      "before": {
+        "id": 3660,
+        "word": "oriental",
+        "phonetic": "ˌɔːriˈentl",
+        "pos": "n.",
+        "meaning": "东方人/东方的",
+        "example": "Oriental art has a long and rich history.",
+        "exampleCn": "东方艺术有着悠久而丰富的历史。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "3"
+      },
+      "after": {
+        "id": 3660,
+        "word": "oriental",
+        "phonetic": "ˌɔːriˈentl",
+        "pos": "adj./n.",
+        "meaning": "东方的；旧时指亚洲的表达，常显陈旧；作为人的称呼通常具有冒犯性，仅按具体语境识读",
+        "example": "Oriental art has a long and rich history.",
+        "exampleCn": "东方艺术有着悠久而丰富的历史。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "3"
+      },
+      "changedFields": [
+        "pos",
+        "meaning"
+      ],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-3660-0",
+          "title": "韦氏词典 · oriental",
+          "url": "https://www.merriam-webster.com/dictionary/oriental",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "语域辨析 · 东方的旧式表达",
+      "practicePolicy": "teach stated sense; do not treat old or offensive senses as neutral",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    },
+    {
+      "id": 5392,
+      "word": "dumb",
+      "before": {
+        "id": 5392,
+        "word": "dumb",
+        "phonetic": "dʌm",
+        "pos": "adj.",
+        "meaning": "因震惊或恐惧而说不出话的；愚蠢的（贬义）；旧指不能说话的人时已过时且具有冒犯性",
+        "example": "She was struck dumb with fear.",
+        "exampleCn": "她吓得说不出话来。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "56",
+        "ieltsLists": [
+          "56"
+        ]
+      },
+      "after": {
+        "id": 5392,
+        "word": "dumb",
+        "phonetic": "dʌm",
+        "pos": "adj.",
+        "meaning": "因震惊或恐惧而说不出话的；愚蠢的（贬义）；旧指不能说话的人时已过时且具有冒犯性",
+        "example": "She was struck dumb with fear.",
+        "exampleCn": "她吓得说不出话来。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "56",
+        "ieltsLists": [
+          "56"
+        ]
+      },
+      "changedFields": [],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-5392-0",
+          "title": "韦氏词典 · dumb",
+          "url": "https://www.merriam-webster.com/dictionary/dumb",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "形容词 · 一时说不出话；注意贬义和旧称",
+      "practicePolicy": "teach stated sense; do not treat old or offensive senses as neutral",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    },
+    {
+      "id": 5463,
+      "word": "may",
+      "before": {
+        "id": 5463,
+        "word": "may",
+        "phonetic": "mei",
+        "pos": "aux.",
+        "meaning": "n. 五月\\naux. 愿能, 可以, 愿意",
+        "example": "You may borrow my bicycle for the afternoon if you return it before sunset.",
+        "exampleCn": "如果你日落前还回来，下午你可以借我的自行车。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5463,
+        "word": "may",
+        "phonetic": "/meɪ/",
+        "pos": "modal v.",
+        "meaning": "可以（表示许可）；可能（表示可能性）；May 表示五月，是另一个专名用法",
+        "example": "You may borrow my bicycle for the afternoon if you return it before sunset.",
+        "exampleCn": "如果你日落前还回来，下午你可以借我的自行车。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning"
+      ],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-5463-0",
+          "title": "牛津学习词典 · may",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/may_1",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "情态动词 · 许可与可能",
+      "practicePolicy": "teach stated sense; do not treat old or offensive senses as neutral",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    },
+    {
+      "id": 5941,
+      "word": "states",
+      "before": {
+        "id": 5941,
+        "word": "states",
+        "phonetic": "/steɪts/",
+        "pos": "n.",
+        "meaning": "n. 州；国家；状态（state 的复数）；the States 指美国",
+        "example": "He has travelled to all fifty states and has countless stories from his road trips.",
+        "exampleCn": "他走遍了全部五十个州，积累了无数公路旅行的故事。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5941,
+        "word": "states",
+        "phonetic": "/steɪts/",
+        "pos": "n.",
+        "meaning": "n. 州；国家；状态（state 的复数）；the States 指美国",
+        "example": "He has travelled to all fifty states and has countless stories from his road trips.",
+        "exampleCn": "他走遍了全部五十个州，积累了无数公路旅行的故事。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "changedFields": [],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-5941-0",
+          "title": "韦氏词典 · states",
+          "url": "https://www.merriam-webster.com/dictionary/state",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "复数名词 · 州；the States 指美国",
+      "practicePolicy": "teach stated sense; do not treat old or offensive senses as neutral",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    },
+    {
+      "id": 5956,
+      "word": "august",
+      "before": {
+        "id": 5956,
+        "word": "august",
+        "phonetic": "ɒ:'gʌst. 'ɒ:gәst",
+        "pos": "n.",
+        "meaning": "n. 八月\\na. 威严的, 令人敬畏的",
+        "example": "Of august lineage.",
+        "exampleCn": "属于庄严的血统。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5956,
+        "word": "august",
+        "phonetic": "/ɔːˈɡʌst/",
+        "pos": "adj.",
+        "meaning": "庄严的；令人敬畏的（正式）；月份 August 另读 /ˈɔːɡəst/",
+        "example": "The ceremony took place in an august hall.",
+        "exampleCn": "典礼在一座庄严的大厅里举行。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-5956-0",
+          "title": "牛津学习词典 · august",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/august_1",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        },
+        {
+          "id": "sense-2026-10-26-5956-1",
+          "title": "韦氏词典 · august",
+          "url": "https://www.merriam-webster.com/dictionary/august",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "正式形容词 · 庄严的；与月份区别",
+      "practicePolicy": "teach stated sense; do not treat old or offensive senses as neutral",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    },
+    {
+      "id": 6127,
+      "word": "dec",
+      "before": {
+        "id": 6127,
+        "word": "dec",
+        "phonetic": "/dɛk/",
+        "pos": "abbr.",
+        "meaning": "美国数字设备公司（Digital Equipment Corporation，通常写作 DEC；本条例句为公司名，不是月份缩写 Dec.）",
+        "example": "She worked as a software engineer at DEC before the company was taken over by a larger firm.",
+        "exampleCn": "她在 DEC 被更大的公司收购之前在那里担任软件工程师。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 6127,
+        "word": "dec",
+        "phonetic": "/dɛk/",
+        "pos": "abbr.",
+        "meaning": "美国数字设备公司（Digital Equipment Corporation，通常写作 DEC；本条例句为公司名，不是月份缩写 Dec.）",
+        "example": "She worked as a software engineer at DEC before the company was taken over by a larger firm.",
+        "exampleCn": "她在 DEC 被更大的公司收购之前在那里担任软件工程师。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "changedFields": [],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-6127-0",
+          "title": "计算机历史博物馆 · dec",
+          "url": "https://www.computerhistory.org/brochures/d-f/digital-equipment-corporation-dec/",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "公司缩写 · DEC，区别于月份 Dec.",
+      "practicePolicy": "teach stated sense; do not treat old or offensive senses as neutral",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    },
+    {
+      "id": 6344,
+      "word": "commons",
+      "before": {
+        "id": 6344,
+        "word": "commons",
+        "phonetic": "'kɒmәns",
+        "pos": "n.",
+        "meaning": "n. 平民, 下议院, 公共食堂\\n[法] 平民, 下议院议员, 下院",
+        "example": "The bill passed through the House of Commons after a long and heated debate that lasted hours.",
+        "exampleCn": "这项法案经过持续数小时的漫长激烈辩论后在下议院通过了。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6344,
+        "word": "commons",
+        "phonetic": "'kɒmәns",
+        "pos": "n.",
+        "meaning": "the Commons／House of Commons 指英国下议院；commons 另可指平民或公共食堂，本条例句为议会义",
+        "example": "The bill passed through the House of Commons after a long and heated debate that lasted hours.",
+        "exampleCn": "这项法案经过持续数小时的漫长激烈辩论后在下议院通过了。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "meaning"
+      ],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-6344-0",
+          "title": "韦氏词典 · commons",
+          "url": "https://www.merriam-webster.com/dictionary/commons",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "机构短语 · 下议院",
+      "practicePolicy": "teach stated sense; do not treat old or offensive senses as neutral",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    },
+    {
+      "id": 6356,
+      "word": "teen",
+      "before": {
+        "id": 6356,
+        "word": "teen",
+        "phonetic": "ti:n",
+        "pos": "n./adj.",
+        "meaning": "n. 青少年；adj. 青少年的（通常为十三至十九岁）；古义：苦难、悲哀",
+        "example": "The teen years.",
+        "exampleCn": "青少年时期。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6356,
+        "word": "teen",
+        "phonetic": "ti:n",
+        "pos": "n./adj.",
+        "meaning": "青少年；青少年的（通常为十三至十九岁）；古义中的苦难或悲哀不作为本条学习目标",
+        "example": "The library runs a reading group for teen readers.",
+        "exampleCn": "图书馆为青少年读者开设了一个阅读小组。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-6356-0",
+          "title": "韦氏词典 · teen",
+          "url": "https://www.merriam-webster.com/dictionary/teen",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "名词与形容词 · 青少年",
+      "practicePolicy": "teach stated sense; do not treat old or offensive senses as neutral",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    },
+    {
+      "id": 6358,
+      "word": "sept",
+      "before": {
+        "id": 6358,
+        "word": "sept",
+        "phonetic": "sept",
+        "pos": "n.",
+        "meaning": "n. 氏族\\n[经] 九月",
+        "example": "The new term starts in early Sept and students begin arriving on campus the week before.",
+        "exampleCn": "新学期从九月初开始学生在开学前一周就开始抵达校园。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6358,
+        "word": "sept",
+        "phonetic": "/sepˈtembə(r)/",
+        "pos": "abbr.",
+        "meaning": "九月的缩写（规范写作 Sept.，朗读时通常读完整的 September）；名词 sept 的氏族义不用于本例",
+        "example": "The new term begins on 5 Sept.",
+        "exampleCn": "新学期于九月五日开始。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-6358-0",
+          "title": "牛津学习词典 · sept",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/september",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        },
+        {
+          "id": "sense-2026-10-26-6358-1",
+          "title": "韦氏词典 · sept",
+          "url": "https://www.merriam-webster.com/dictionary/sept",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "月份缩写 · 九月，朗读全称",
+      "practicePolicy": "teach stated sense; do not treat old or offensive senses as neutral",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    },
+    {
+      "id": 6366,
+      "word": "disabled",
+      "before": {
+        "id": 6366,
+        "word": "disabled",
+        "phonetic": "dis'eibld",
+        "pos": "adj.",
+        "meaning": "有残障的；因伤病而行动受限的；（设备、功能）失效的或被禁用的",
+        "example": "Technology to help the elderly and the disabled.",
+        "exampleCn": "帮助老年人和残疾人的技术。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6366,
+        "word": "disabled",
+        "phonetic": "dis'eibld",
+        "pos": "adj.",
+        "meaning": "有残障的；因伤病而行动受限的；（设备、功能）失效的或被禁用的",
+        "example": "The new entrance improves access for disabled visitors.",
+        "exampleCn": "新入口改善了残障访客的通行条件。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "example",
+        "exampleCn"
+      ],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-6366-0",
+          "title": "韦氏词典 · disabled",
+          "url": "https://www.merriam-webster.com/dictionary/disabled",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "形容词 · 残障；设备禁用另按语境",
+      "practicePolicy": "teach stated sense; do not treat old or offensive senses as neutral",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    },
+    {
+      "id": 6634,
+      "word": "lords",
+      "before": {
+        "id": 6634,
+        "word": "lords",
+        "phonetic": "/lɔːdz/",
+        "pos": "n.",
+        "meaning": "贵族；勋爵（lord 的复数）；the Lords 或 House of Lords 指英国上议院",
+        "example": "The proposed law was debated for hours in the House of Lords before being passed last night.",
+        "exampleCn": "上议院对这项提案进行了数小时的辩论最终在昨晚深夜通过。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6634,
+        "word": "lords",
+        "phonetic": "/lɔːdz/",
+        "pos": "n.",
+        "meaning": "贵族；勋爵（lord 的复数）；the Lords 或 House of Lords 指英国上议院",
+        "example": "The proposed law was debated for hours in the House of Lords before being passed last night.",
+        "exampleCn": "这项法律提案在英国上议院辩论了数小时，昨晚才获通过。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "exampleCn"
+      ],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-6634-0",
+          "title": "韦氏词典 · lords",
+          "url": "https://www.merriam-webster.com/dictionary/lords",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        },
+        {
+          "id": "sense-2026-10-26-6634-1",
+          "title": "牛津学习词典 · lords",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/the-house-of-lords",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "复数名词与机构短语 · 勋爵；上议院",
+      "practicePolicy": "teach stated sense; do not treat old or offensive senses as neutral",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    },
+    {
+      "id": 7123,
+      "word": "tech",
+      "before": {
+        "id": 7123,
+        "word": "tech",
+        "phonetic": "tek",
+        "pos": "n.",
+        "meaning": "n. 技术学院或学校",
+        "example": "She studied at a tech college for two years before landing her first job at a city startup.",
+        "exampleCn": "她在技术学院学了两年后在城里创业公司找到第一份工作。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 7123,
+        "word": "tech",
+        "phonetic": "tek",
+        "pos": "n.",
+        "meaning": "技术学院（英式非正式）；技术、科技或技术人员的非正式简称，需依语境判断",
+        "example": "She studied at a tech college for two years before landing her first job at a city startup.",
+        "exampleCn": "她在技术学院学了两年后在城里创业公司找到第一份工作。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "changedFields": [
+        "meaning"
+      ],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-7123-0",
+          "title": "柯林斯词典 · tech",
+          "url": "https://www.collinsdictionary.com/dictionary/english/tech",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        },
+        {
+          "id": "sense-2026-10-26-7123-1",
+          "title": "韦氏词典 · tech",
+          "url": "https://www.merriam-webster.com/dictionary/tech",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "非正式用法 · 技术学院与科技",
+      "practicePolicy": "teach stated sense; do not treat old or offensive senses as neutral",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    },
+    {
+      "id": 8123,
+      "word": "lame",
+      "before": {
+        "id": 8123,
+        "word": "lame",
+        "phonetic": "leim",
+        "pos": "v.",
+        "meaning": "a. 跛足的, 僵痛的, 不完全的, 金属薄板, 不知内情的人\\nvi. 变跛\\nvt. 使成残废, 使无用",
+        "example": "She wore a gold lame dress.",
+        "exampleCn": "她穿着一件金色的蹩脚连衣裙。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "after": {
+        "id": 8123,
+        "word": "lame",
+        "phonetic": "/leɪm/",
+        "pos": "adj.",
+        "meaning": "（借口、解释等）站不住脚的；（尤指动物）跛的。用于贬低人时不礼貌；织物 lamé 是另一个词",
+        "example": "He gave a lame excuse for missing the meeting.",
+        "exampleCn": "他为缺席会议找了一个站不住脚的借口。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-8123-0",
+          "title": "牛津学习词典 · lame",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/lame_1",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        },
+        {
+          "id": "sense-2026-10-26-8123-1",
+          "title": "剑桥词典 · lame",
+          "url": "https://dictionary.cambridge.org/dictionary/english/lame",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "形容词 · 站不住脚；区别于织物 lamé",
+      "practicePolicy": "teach stated sense; do not treat old or offensive senses as neutral",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    },
+    {
+      "id": 8164,
+      "word": "negro",
+      "before": {
+        "id": 8164,
+        "word": "negro",
+        "phonetic": "'ni:grәu",
+        "pos": "n./adj.",
+        "meaning": "n. 对黑人的旧称；adj. 黑人的（均已过时且具有冒犯性，仅用于理解历史引文或讨论这个词，不宜用来称呼他人）",
+        "example": "The guide explained why the word Negro in the old document is offensive today.",
+        "exampleCn": "讲解员解释了为什么旧文件中的 Negro 一词在今天具有冒犯性。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "after": {
+        "id": 8164,
+        "word": "negro",
+        "phonetic": "'ni:grәu",
+        "pos": "n./adj.",
+        "meaning": "n. 对黑人的旧称；adj. 黑人的（均已过时且具有冒犯性，仅用于理解历史引文或讨论这个词，不宜用来称呼他人）",
+        "example": "The guide explained why the word Negro in the old document is offensive today.",
+        "exampleCn": "讲解员解释了为什么旧文件中的 Negro 一词在今天具有冒犯性。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "changedFields": [],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-8164-0",
+          "title": "韦氏词典 · negro",
+          "url": "https://www.merriam-webster.com/dictionary/Negro",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "仅历史语境识读 · 过时且常具冒犯性的旧称",
+      "practicePolicy": "context-only; excluded from new assessments and assignments",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    },
+    {
+      "id": 8175,
+      "word": "waggon",
+      "before": {
+        "id": 8175,
+        "word": "waggon",
+        "phonetic": "/ˈwæɡən/",
+        "pos": "n.",
+        "meaning": "n. 运货马车；货车（wagon 的英式拼写变体）",
+        "example": "The old waggon loaded with hay creaked slowly along the dusty lane pulled by two tired grey horses.",
+        "exampleCn": "两匹疲惫的灰马拉着装满干草的旧马车，沿着尘土飞扬的小路缓缓前行，车身吱吱作响。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "after": {
+        "id": 8175,
+        "word": "waggon",
+        "phonetic": "/ˈwæɡən/",
+        "pos": "n.",
+        "meaning": "n. 运货马车；货车（wagon 的英式拼写变体）",
+        "example": "The old waggon loaded with hay creaked slowly along the dusty lane pulled by two tired grey horses.",
+        "exampleCn": "两匹疲惫的灰马拉着装满干草的旧马车，沿着尘土飞扬的小路缓缓前行，车身吱吱作响。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "changedFields": [],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-8175-0",
+          "title": "韦氏词典 · waggon",
+          "url": "https://www.merriam-webster.com/dictionary/waggon",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        },
+        {
+          "id": "sense-2026-10-26-8175-1",
+          "title": "牛津学习词典 · waggon",
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/wagon",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "拼写变体 · 运货马车",
+      "practicePolicy": "teach stated sense; do not treat old or offensive senses as neutral",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    },
+    {
+      "id": 8213,
+      "word": "jean",
+      "before": {
+        "id": 8213,
+        "word": "jean",
+        "phonetic": "dʒi:n",
+        "pos": "n.",
+        "meaning": "n. 斜纹棉布；牛仔裤（裤子义通常用复数 jeans 或 a pair of jeans）",
+        "example": "She put on her favourite jeans before going out for a walk.",
+        "exampleCn": "她穿上最喜欢的牛仔裤，然后出门散步。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "after": {
+        "id": 8213,
+        "word": "jean",
+        "phonetic": "dʒi:n",
+        "pos": "n.",
+        "meaning": "n. 斜纹棉布；牛仔裤（裤子义通常用复数 jeans 或 a pair of jeans）",
+        "example": "She put on her favourite jeans before going out for a walk.",
+        "exampleCn": "她穿上最喜欢的牛仔裤，然后出门散步。",
+        "category": "cet6",
+        "categories": [
+          "cet6"
+        ]
+      },
+      "changedFields": [],
+      "status": "resolved_source_review",
+      "checkedAt": "2026-10-26",
+      "sources": [
+        {
+          "id": "sense-2026-10-26-8213-0",
+          "title": "韦氏词典 · jean",
+          "url": "https://www.merriam-webster.com/dictionary/jean",
+          "checkedAt": "2026-10-26",
+          "use": "factual-reference"
+        }
+      ],
+      "finding": "名词 · 布料；裤子通常用 jeans",
+      "practicePolicy": "teach stated sense; do not treat old or offensive senses as neutral",
+      "evidenceBoundary": "模型参考公开来源核对；释义、中文说明与例句由本项目编写，不代表独立语言专家审校。"
+    }
+  ]
+}

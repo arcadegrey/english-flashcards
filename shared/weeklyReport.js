@@ -1,5 +1,6 @@
 import { getStudyDateKey } from './studyDate.js';
 import { mergeStudyHistory } from './studyHistory.js';
+import { practiceVocabulary } from './vocabularyPracticePolicy.js';
 
 export { studyWeekRange as weekRange } from './studyDate.js';
 const activeDay = day => day.wordsLearned + day.wordsMastered + day.readingsCompleted + day.readingQuestionsAnswered + day.examQuestionsAnswered > 0;
@@ -78,9 +79,9 @@ export function buildWeeklyReport({ students, exams, readings, assignments, subm
     .sort((a, b) => a.accuracy - b.accuracy || b.answered - a.answered).slice(0, 8);
   const commonWords = [...mistakes.values()].map(item => ({ ...item, students: item.students.size }))
     .sort((a, b) => b.students - a.students || b.errors - a.errors || a.word.localeCompare(b.word)).slice(0, 15);
-  const recommended = commonWords.map(item => wordLookup.get(item.wordId));
+  const recommended = practiceVocabulary(commonWords.map(item => wordLookup.get(item.wordId)));
   if (recommended.length && (recommended.length < 5 || new Set(recommended.map(word => word.meaning)).size < 4)) {
-    for (const word of catalog) {
+    for (const word of practiceVocabulary(catalog)) {
       if (!recommended.some(item => String(item.id) === String(word.id)) && !recommended.some(item => item.meaning === word.meaning)) recommended.push(word);
       if (recommended.length >= 5 && new Set(recommended.map(word => word.meaning)).size >= 4) break;
     }
