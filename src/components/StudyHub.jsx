@@ -161,7 +161,7 @@ function StudyHub({
           <DashboardQuickStart reviewCount={reviewCount} wrongCount={wrongCount} onReview={onOpenTodayReview} onCatalog={catalog}
             onWrongWords={onOpenWrongWords} onExam={onOpenExamPractice} />
         </div>
-        <StudyMomentum ownerId={authUser?.id} history={studyHistory} wordsDone={plan.tasks.words.goal > 0 && plan.tasks.words.complete} readingDone={readingTaskComplete} examDone={examTaskComplete} allDone={allDailyTasksComplete} ready={rewardsReady && planReady && !isPreparingWords} />
+        <StudyMomentum ownerId={authUser?.id} history={studyHistory} wordsDone={plan.tasks.words.goal > 0 && plan.tasks.words.complete} readingDone={readingTaskComplete} examDone={examTaskComplete} allDone={allDailyTasksComplete} ready={rewardsReady && planReady && !isPreparingWords} onOpenDetails={onOpenStatistics} />
 
         {allDailyTasksComplete && (
           <section className="study-hub-completion-summary" aria-label="今日任务总结">

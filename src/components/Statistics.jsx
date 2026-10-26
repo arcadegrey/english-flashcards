@@ -1,7 +1,8 @@
 import { useRef } from 'react';
 import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
-import { calculateStudyStreak, getLast7StudyDays, summarizeStudyHistory } from '../utils/learningMetrics';
+import { getLast7StudyDays, summarizeStudyHistory } from '../utils/learningMetrics';
 import { activeProgressIds } from '../../shared/retiredVocabulary.js';
+import WeeklyLearningOverview from './statistics/WeeklyLearningOverview';
 
 const normalizeHistory = (value) => (Array.isArray(value) ? value : []);
 
@@ -25,6 +26,9 @@ function Statistics({
   studyHistory = [],
   totalWords = 0,
   dueReviewCount = 0,
+  ready = true,
+  authUser,
+  onAuthOpen,
 }) {
   const statsRef = useRef(null);
   const safeHistory = normalizeHistory(studyHistory);
@@ -42,14 +46,12 @@ function Statistics({
   );
   const learnedCount = activeProgressIds(learnedWords).length;
   const masteredCount = masteredWords.length;
-  const streak = calculateStudyStreak(safeHistory);
   const masteredPercent = totalWords > 0 ? Math.round((masteredCount / totalWords) * 100) : 0;
   const readingAccuracy = totals.readingQuestions > 0 ? Math.round((totals.readingCorrect / totals.readingQuestions) * 100) : 0;
   const examAccuracy = totals.examQuestions > 0 ? Math.round((totals.examCorrect / totals.examQuestions) * 100) : 0;
 
   const cards = [
     { label: '今日复习', value: dueReviewCount, sub: '到期单词', tone: 'blue' },
-    { label: '连续学习', value: `${streak} 天`, sub: '阅读/巩固也计入', tone: 'orange' },
     { label: '词汇训练', value: totals.words, sub: `${learnedCount} 个在复习队列`, tone: 'violet' },
     { label: '标记认识', value: masteredCount, sub: `${masteredPercent}% 标记认识`, tone: 'green' },
     { label: '阅读完成', value: totals.readings, sub: `题目正确率 ${readingAccuracy}%`, tone: 'cyan' },
@@ -92,86 +94,88 @@ function Statistics({
       }
     );
   }, {
-    dependencies: [dueReviewCount, masteredCount, wrongWords.length, totals.words, totals.readings, totals.examQuestions, streak],
+    dependencies: [dueReviewCount, masteredCount, wrongWords.length, totals.words, totals.readings, totals.examQuestions],
     scope: statsRef,
     revertOnUpdate: true,
   });
 
   return (
-    <section ref={statsRef} className="statistics-dashboard ds-card learn-refresh-card-enter">
-      <header className="statistics-dashboard-head">
-        <span className="statistics-dashboard-kicker">Learning Dashboard</span>
-        <h1>学习统计</h1>
-        <p>用真实学习记录追踪复习、错题和认识标记；认识标记来自自评或练习记录，不代表已验证长期记忆。</p>
-      </header>
+    <div className="statistics-page ds-stack">
+      <WeeklyLearningOverview history={safeHistory} ready={ready} authUser={authUser} onAuthOpen={onAuthOpen} />
+      <section ref={statsRef} className="statistics-dashboard ds-card learn-refresh-card-enter" aria-label="累计学习统计">
+        <header className="statistics-dashboard-head">
+          <h2>学习总览</h2>
+          <p>用真实学习记录追踪复习、错题和认识标记；认识标记来自自评或练习记录，不代表已验证长期记忆。</p>
+        </header>
 
-      <div className="statistics-card-grid">
-        {cards.map((card) => {
-          const countMeta = getCountMeta(card.value);
+        <div className="statistics-card-grid">
+          {cards.map((card) => {
+            const countMeta = getCountMeta(card.value);
 
-          return (
-            <article
-              key={card.label}
-              className={`statistics-metric-card is-${card.tone}`}
-            >
-              <p className="statistics-metric-label">{card.label}</p>
-              <p
-                className="statistics-metric-value"
-                data-stat-value={countMeta.number ?? undefined}
-                data-stat-suffix={countMeta.suffix}
-              >
-                {card.value}
-              </p>
-              <p className="statistics-metric-sub">{card.sub}</p>
-            </article>
-          );
-        })}
-      </div>
-
-      <section className="statistics-chart-panel">
-        <div className="statistics-chart-head">
-          <div>
-            <h2>近 7 天学习趋势</h2>
-            <p>单词 / 阅读 / 考试巩固</p>
-          </div>
-          <span>7 days</span>
-        </div>
-        <div className="statistics-chart-legend" aria-hidden="true">
-          <span><i className="is-word" />单词</span>
-          <span><i className="is-reading" />阅读</span>
-          <span><i className="is-exam" />巩固</span>
-        </div>
-        <div className="statistics-bar-chart">
-          {last7Days.map((day) => {
-            const wordsActivity = day.wordsLearned + day.wordsMastered;
-            const readingActivity = day.readingQuestionsAnswered;
-            const examActivity = day.examQuestionsAnswered;
-            const activity = wordsActivity + readingActivity + examActivity;
-            const height = Math.max((activity / maxActivity) * 100, activity > 0 ? 12 : 5);
-            const wordHeight = activity > 0 ? (wordsActivity / activity) * 100 : 0;
-            const readingHeight = activity > 0 ? (readingActivity / activity) * 100 : 0;
-            const examHeight = activity > 0 ? (examActivity / activity) * 100 : 0;
             return (
-              <div key={day.date} className="statistics-bar-item">
-                <div className="statistics-bar-track">
-                  <div
-                    className="statistics-refresh-bar"
-                    style={{ height: `${height}%`, opacity: activity > 0 ? 1 : 0.12 }}
-                    title={`${day.date}: ${activity}`}
-                  >
-                    <span className="is-exam" style={{ height: `${examHeight}%` }} />
-                    <span className="is-reading" style={{ height: `${readingHeight}%` }} />
-                    <span className="is-word" style={{ height: `${wordHeight}%` }} />
-                  </div>
-                </div>
-                <p className="statistics-bar-day">周{day.dayName}</p>
-                <p className="statistics-bar-value">{activity}</p>
-              </div>
+              <article
+                key={card.label}
+                className={`statistics-metric-card is-${card.tone}`}
+              >
+                <p className="statistics-metric-label">{card.label}</p>
+                <p
+                  className="statistics-metric-value"
+                  data-stat-value={countMeta.number ?? undefined}
+                  data-stat-suffix={countMeta.suffix}
+                >
+                  {card.value}
+                </p>
+                <p className="statistics-metric-sub">{card.sub}</p>
+              </article>
             );
           })}
         </div>
+
+        <section className="statistics-chart-panel">
+          <div className="statistics-chart-head">
+            <div>
+              <h2>近 7 天学习趋势</h2>
+              <p>单词 / 阅读 / 考试巩固</p>
+            </div>
+            <span>7 days</span>
+          </div>
+          <div className="statistics-chart-legend" aria-hidden="true">
+            <span><i className="is-word" />单词</span>
+            <span><i className="is-reading" />阅读</span>
+            <span><i className="is-exam" />巩固</span>
+          </div>
+          <div className="statistics-bar-chart">
+            {last7Days.map((day) => {
+              const wordsActivity = day.wordsLearned + day.wordsMastered;
+              const readingActivity = day.readingQuestionsAnswered;
+              const examActivity = day.examQuestionsAnswered;
+              const activity = wordsActivity + readingActivity + examActivity;
+              const height = Math.max((activity / maxActivity) * 100, activity > 0 ? 12 : 5);
+              const wordHeight = activity > 0 ? (wordsActivity / activity) * 100 : 0;
+              const readingHeight = activity > 0 ? (readingActivity / activity) * 100 : 0;
+              const examHeight = activity > 0 ? (examActivity / activity) * 100 : 0;
+              return (
+                <div key={day.date} className="statistics-bar-item">
+                  <div className="statistics-bar-track">
+                    <div
+                      className="statistics-refresh-bar"
+                      style={{ height: `${height}%`, opacity: activity > 0 ? 1 : 0.12 }}
+                      title={`${day.date}: ${activity}`}
+                    >
+                      <span className="is-exam" style={{ height: `${examHeight}%` }} />
+                      <span className="is-reading" style={{ height: `${readingHeight}%` }} />
+                      <span className="is-word" style={{ height: `${wordHeight}%` }} />
+                    </div>
+                  </div>
+                  <p className="statistics-bar-day">周{day.dayName}</p>
+                  <p className="statistics-bar-value">{activity}</p>
+                </div>
+              );
+            })}
+          </div>
+        </section>
       </section>
-    </section>
+    </div>
   );
 }
 

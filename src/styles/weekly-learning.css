@@ -1,0 +1,184 @@
+.weekly-learning { --weekly-border: #e3ecff; --weekly-muted: #70809f; min-width: 0; }
+.weekly-learning-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.weekly-learning-kicker { display: block; margin-bottom: 7px; color: #4f7cff; font-size: 12px; font-weight: 600; }
+.weekly-learning-heading h2 { margin: 0; color: #0f172a; font-size: 25px; line-height: 1.3; font-weight: 750; letter-spacing: -0.5px; }
+.weekly-learning-range { flex-shrink: 0; padding: 9px 13px; border: 1px solid var(--weekly-border); border-radius: 999px; background: #fff; color: #70809f; font-size: 12px; white-space: nowrap; }
+.weekly-learning-grid { display: grid; grid-template-columns: minmax(300px, 0.85fr) minmax(0, 1.65fr); gap: 18px; align-items: stretch; }
+.weekly-learning .ds-card { min-width: 0; border: 1px solid var(--weekly-border); border-radius: 24px; background: #fff; box-shadow: 0 8px 26px #4f7cff06; }
+.weekly-panel-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.weekly-panel-head h3 { display: flex; align-items: center; gap: 9px; margin: 0; color: #0f172a; font-size: 16px; line-height: 1.4; font-weight: 650; }
+.weekly-panel-head > span { color: var(--weekly-muted); font-size: 11px; }
+.weekly-heading-icon { display: grid; place-items: center; flex-shrink: 0; width: 34px; height: 34px; border-radius: 12px; background: #edf4ff; }
+.weekly-heading-icon img { width: 35px; height: 35px; object-fit: contain; }
+.weekly-learning .weekly-goal-card { position: relative; display: flex; flex-direction: column; align-items: stretch; padding: 24px; background: radial-gradient(ellipse at 100% 0, #eaf2ff, transparent 55%), linear-gradient(150deg, #fff 35%, #f7faff); overflow: hidden; }
+.weekly-goal-target { flex-shrink: 0; padding: 5px 9px; border: 1px solid #e2ebff; border-radius: 999px; background: #f5f8ff; color: #6c87b3 !important; font-size: 11px; white-space: nowrap; }
+.weekly-goal-ring { position: relative; display: grid; place-items: center; width: min(220px, 100%); aspect-ratio: 1; align-self: center; margin: 10px 0 0; }
+.weekly-goal-ring > svg { position: absolute; inset: 0; width: 100%; height: 100%; transform: rotate(-90deg); }
+.weekly-ring-track, .weekly-ring-fill { fill: none; stroke-width: 13px; }
+.weekly-ring-track { stroke: #e5edfa; }
+.weekly-ring-fill { stroke-linecap: round; transition: stroke-dashoffset 450ms ease; }
+.weekly-goal-ring > div { text-align: center; }
+.weekly-goal-ring strong { color: #13213d; font-size: 58px; line-height: 1; font-weight: 750; letter-spacing: -3px; }
+.weekly-goal-ring strong span { margin-left: 7px; color: #9baac1; font-size: 23px; font-weight: 500; letter-spacing: -0.5px; }
+.weekly-goal-ring small { display: block; margin-top: 12px; color: #7c8da9; font-size: 11px; }
+.weekly-goal-caption { position: relative; margin: 10px 0 8px; text-align: center; color: #17243e; font-size: 18px; line-height: 1.4; font-weight: 650; }
+.weekly-goal-helper { max-width: 260px; margin: 0 auto; text-align: center; color: var(--weekly-muted); font-size: 12px; line-height: 1.7; }
+.weekly-goal-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; padding-top: 20px; border-top: 1px solid #e8effb; color: #70809f; font-size: 12px; }
+.weekly-goal-helper + .weekly-goal-footer { margin-top: 24px; }
+.weekly-goal-footer strong { color: #2f6dff; font-size: 17px; font-weight: 650; }
+.weekly-goal-star { position: absolute; pointer-events: none; width: 37px; height: 37px; top: 98px; right: 24px; opacity: 0.85; object-fit: contain; }
+.weekly-learning-records { display: grid; grid-template-rows: auto 1fr; gap: 18px; min-width: 0; }
+.weekly-calendar-card { padding: 22px; }
+.weekly-calendar { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; margin-top: 20px; }
+.weekly-calendar-day { display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px; min-width: 0; min-height: 104px; padding: 12px 2px; border: 1px solid #edf1fa; border-radius: 15px; background: #f9fbff; color: #8796b0; transition: border-color 160ms ease, background 160ms ease, transform 160ms ease; }
+.weekly-calendar-weekday { font-size: 11px; line-height: 1.4; }
+.weekly-calendar-day > strong { color: #637795; font-size: 20px; line-height: 1.2; font-weight: 650; }
+.weekly-calendar-status { display: grid; place-items: center; height: 15px; }
+.weekly-calendar-status i { width: 5px; height: 5px; border-radius: 50%; background: #cbd6e8; }
+.weekly-calendar-status svg { width: 16px; height: 16px; stroke: #4f7cff; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+.weekly-calendar-day[aria-current=date] { border-color: #c1d7ff; }
+.weekly-calendar-day[aria-pressed=true] { background: #edf5ff; border-color: #7ea6ff; box-shadow: 0 5px 14px #4f7cff0a; }
+.weekly-calendar-day[aria-pressed=true] > strong,
+.weekly-calendar-day[aria-current=date] > span:first-child { color: #2f6dff; }
+.weekly-calendar-day:disabled { opacity: 0.55; cursor: default; }
+.weekly-calendar-day:not(:disabled):hover { transform: translateY(-2px); border-color: #a8c4ff; }
+.weekly-calendar-day:focus-visible { outline: 2px solid #4f7cff; outline-offset: 3px; }
+.weekly-day-card { padding: 22px; }
+.weekly-day-card .weekly-panel-head p { margin: 6px 0 0; color: #7c8da9; font-size: 11px; line-height: 1.5; }
+.weekly-day-state { flex-shrink: 0; padding: 6px 9px; border-radius: 9px; background: #f3f6fc; white-space: nowrap; }
+.weekly-day-state.is-active { color: #2f6dff; background: #edf4ff; }
+.weekly-day-metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 9px; margin-top: 18px; }
+.weekly-day-metric { min-width: 0; padding: 13px 10px; border: 1px solid #eaf0fa; border-radius: 16px; background: #fcfdff; }
+.weekly-metric-icon { display: grid; place-items: center; width: 36px; height: 36px; margin-bottom: 12px; border-radius: 12px; background: #edf4ff; }
+.weekly-metric-icon img { width: 36px; height: 36px; object-fit: contain; }
+.weekly-day-metric.is-violet .weekly-metric-icon { background: #f2edff; }
+.weekly-day-metric.is-cyan .weekly-metric-icon { background: #eaf8fb; }
+.weekly-day-metric.is-orange .weekly-metric-icon { background: #fff3e9; }
+.weekly-metric-icon svg { width: 23px; height: 23px; fill: none; stroke: #eb9c55; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.weekly-day-metric > span:not(.weekly-metric-icon) { color: #70809f; font-size: 11px; line-height: 1.5; }
+.weekly-day-metric > strong { display: block; margin-top: 5px; color: #17243e; font-size: 20px; line-height: 1.3; font-weight: 700; letter-spacing: -0.4px; overflow-wrap: anywhere; }
+.weekly-day-metric > strong small { margin-left: 4px; color: #8b9ab2; font-size: 10px; font-weight: 450; letter-spacing: 0; }
+.weekly-day-metric p { margin: 6px 0 0; color: #8b9ab2; font-size: 10px; line-height: 1.5; overflow-wrap: anywhere; }
+.weekly-milestone-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 18px; }
+.weekly-learning .weekly-milestone-card { display: flex; align-items: center; gap: 14px; padding: 20px 24px; border-radius: 20px; }
+.weekly-milestone-icon { display: grid; place-items: center; flex-shrink: 0; width: 48px; height: 48px; border-radius: 15px; background: #fff3ed; }
+.weekly-milestone-icon.is-star { background: #f2f0ff; }
+.weekly-milestone-icon img { width: 46px; height: 46px; object-fit: contain; }
+.weekly-milestone-card > div { min-width: 0; }
+.weekly-milestone-card h3 { margin: 0 0 6px; color: #70809f; font-size: 12px; font-weight: 450; }
+.weekly-milestone-card strong { color: #17243e; font-size: 21px; line-height: 1.3; font-weight: 700; }
+.weekly-milestone-card strong small { font-size: 13px; font-weight: 450; }
+.weekly-milestone-card p { margin: 6px 0 0; color: #8b9ab2; font-size: 11px; line-height: 1.5; }
+.weekly-login-banner { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 18px; padding: 18px 22px; border: 1px solid #dfeaff; border-radius: 20px; background: linear-gradient(110deg, #f0f6ff, #fff 80%); }
+.weekly-login-banner > div { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.weekly-login-icon { display: grid; place-items: center; flex-shrink: 0; width: 40px; height: 40px; border-radius: 12px; background: #e6f0ff; }
+.weekly-login-icon svg { width: 23px; height: 23px; stroke: #4f7cff; stroke-width: 1.7; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.weekly-login-banner strong { color: #344563; font-size: 13px; font-weight: 650; }
+.weekly-login-banner p { margin: 5px 0 0; color: #7c8da9; font-size: 11px; line-height: 1.5; }
+.weekly-login-banner .ds-button { flex-shrink: 0; min-height: 38px; border-radius: 12px; padding: 8px 16px; font-size: 12px; background: #4f7cff; box-shadow: 0 5px 12px #4f7cff1a; }
+.statistics-page .statistics-dashboard { padding: 26px; gap: 22px; box-shadow: 0 8px 26px #4f7cff06; }
+.statistics-page .statistics-dashboard-head { gap: 8px; }
+.statistics-page .statistics-dashboard-head h2 { margin: 0; color: #0f172a; font-size: 21px; font-weight: 650; }
+.statistics-page .statistics-dashboard-head p { max-width: 760px; font-size: 12px; line-height: 1.7; font-weight: 450; }
+.statistics-page .statistics-metric-card { min-height: 122px; border-color: #e6edfc; background: #fbfcff; box-shadow: none; }
+.statistics-page .statistics-metric-label { font-weight: 500; }
+.statistics-page .statistics-metric-value { font-size: 30px; font-weight: 700; }
+.statistics-page .statistics-metric-sub { font-size: 11px; font-weight: 450; }
+.statistics-page .statistics-chart-panel { box-shadow: none; }
+.statistics-page .statistics-chart-head h2 { font-size: 19px; font-weight: 650; }
+.statistics-page .statistics-chart-head p,
+.statistics-page .statistics-chart-head > span { font-size: 12px; font-weight: 500; }
+
+@media (max-width: 1200px) {
+  .weekly-learning-grid { grid-template-columns: minmax(270px, 0.85fr) minmax(0, 1.4fr); gap: 14px; }
+  .weekly-learning .weekly-goal-card { padding: 20px; }
+  .weekly-calendar-card, .weekly-day-card { padding: 18px; }
+  .weekly-day-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .weekly-day-metric { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 3px 9px; padding: 11px; }
+  .weekly-metric-icon { grid-row: span 3; width: 32px; height: 36px; margin: 0; }
+  .weekly-metric-icon img { width: 33px; height: 33px; }
+  .weekly-day-metric > strong { font-size: 18px; margin: 0; }
+  .weekly-day-metric p { margin: 0; }
+  .weekly-goal-ring { margin-top: 26px; }
+  .weekly-goal-helper + .weekly-goal-footer { margin-top: auto; }
+}
+
+@media (max-width: 1000px) {
+  .weekly-learning-grid { grid-template-columns: 1fr; }
+  .weekly-learning .weekly-goal-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(200px, 0.8fr); column-gap: 20px; align-items: center; }
+  .weekly-goal-card > .weekly-panel-head { grid-column: 1 / -1; }
+  .weekly-goal-ring { grid-column: 2; grid-row: 2 / 5; margin: 6px 0; justify-self: center; width: 188px; }
+  .weekly-goal-caption { grid-row: 2; margin-top: 18px; text-align: left; }
+  .weekly-goal-helper { margin: 0; text-align: left; }
+  .weekly-goal-helper + .weekly-goal-footer { margin: 18px 0 4px; padding-top: 16px; }
+  .weekly-goal-star { display: none; }
+  .weekly-learning-records { grid-template-columns: 1fr; }
+  .weekly-calendar-day { min-height: 88px; }
+  .weekly-day-metrics { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .weekly-day-metric { display: block; padding: 13px; }
+  .weekly-metric-icon { margin-bottom: 12px; }
+  .weekly-day-metric > strong { margin-top: 5px; }
+  .weekly-day-metric p { margin-top: 6px; }
+}
+
+@media (max-width: 640px) {
+  .weekly-learning-heading { align-items: flex-end; gap: 10px; margin: 4px 0 16px; }
+  .weekly-learning-heading h2 { font-size: 23px; }
+  .weekly-learning-kicker { font-size: 11px; margin-bottom: 5px; }
+  .weekly-learning-range { padding: 6px 8px; font-size: 10px; }
+  .weekly-learning .ds-card { border-radius: 21px; }
+  .weekly-learning .weekly-goal-card { display: flex; align-items: stretch; gap: 0; padding: 19px; }
+  .weekly-panel-head h3 { font-size: 15px; }
+  .weekly-heading-icon { width: 30px; height: 30px; border-radius: 10px; }
+  .weekly-heading-icon img { width: 32px; height: 32px; }
+  .weekly-goal-ring { width: 190px; margin: 8px 0 0; }
+  .weekly-goal-ring strong { font-size: 53px; }
+  .weekly-goal-caption { margin: 8px 0 7px; text-align: center; font-size: 17px; }
+  .weekly-goal-helper { max-width: 270px; margin: 0 auto; text-align: center; font-size: 11px; }
+  .weekly-goal-helper + .weekly-goal-footer { margin-top: 18px; margin-bottom: 0; padding-top: 14px; }
+  .weekly-calendar-card, .weekly-day-card { padding: 17px 14px; }
+  .weekly-calendar { gap: 5px; margin-top: 17px; }
+  .weekly-calendar-day { min-height: 82px; padding: 10px 1px; gap: 8px; border-radius: 12px; }
+  .weekly-calendar-weekday { font-size: 10px; }
+  .weekly-calendar-day > strong { font-size: 17px; }
+  .weekly-panel-head > span { font-size: 10px; }
+  .weekly-day-card .weekly-panel-head p { font-size: 10px; }
+  .weekly-day-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 15px; }
+  .weekly-day-metric { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 3px 7px; padding: 12px 9px; }
+  .weekly-metric-icon { grid-row: span 3; width: 30px; height: 34px; margin: 0; border-radius: 10px; }
+  .weekly-metric-icon img { width: 31px; height: 31px; }
+  .weekly-day-metric > span:not(.weekly-metric-icon) { font-size: 10px; }
+  .weekly-day-metric > strong { margin: 0; font-size: 18px; }
+  .weekly-day-metric > strong small { margin-left: 3px; font-size: 9px; }
+  .weekly-day-metric p { margin: 0; font-size: 9px; }
+  .weekly-milestone-grid { grid-template-columns: 1fr; gap: 10px; margin-top: 14px; }
+  .weekly-learning .weekly-milestone-card { gap: 12px; padding: 16px; border-radius: 18px; }
+  .weekly-milestone-icon { width: 42px; height: 42px; border-radius: 13px; }
+  .weekly-milestone-icon img { width: 42px; height: 42px; }
+  .weekly-milestone-card strong { font-size: 20px; }
+  .weekly-milestone-card p { font-size: 10px; }
+  .weekly-login-banner { flex-wrap: wrap; gap: 14px; padding: 16px; border-radius: 18px; }
+  .weekly-login-banner .ds-button { margin-left: auto; }
+  .statistics-page .statistics-dashboard { padding: 18px 14px; gap: 18px; border-radius: 21px; }
+  .statistics-page .statistics-dashboard-head h2 { font-size: 19px; }
+  .statistics-page .statistics-dashboard-head p { font-size: 11px; }
+  .statistics-page .statistics-card-grid { gap: 9px; }
+  .statistics-page .statistics-metric-card { min-height: 114px; padding: 14px 11px; border-radius: 17px; }
+  .statistics-page .statistics-metric-value { font-size: 26px; margin-top: 12px; }
+  .statistics-page .statistics-metric-label { font-size: 11px; }
+  .statistics-page .statistics-metric-sub { font-size: 10px; line-height: 1.5; }
+  .statistics-page .statistics-chart-panel { padding: 16px 10px; }
+  .statistics-page .statistics-chart-head h2 { font-size: 16px; }
+}
+
+@media (max-width: 359px) {
+  .weekly-learning-heading { flex-wrap: wrap; align-items: center; }
+  .weekly-day-metric { display: block; }
+  .weekly-metric-icon { margin-bottom: 9px; }
+  .weekly-day-metric > strong { margin-top: 4px; }
+  .weekly-day-metric p { margin-top: 5px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .weekly-ring-fill, .weekly-calendar-day { transition: none; }
+}

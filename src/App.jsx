@@ -2858,6 +2858,9 @@ function AppContent() {
               wrongWords={wrongWords}
               studyHistory={studyHistory}
               dueReviewCount={todayReviewWordList.length}
+              ready={!authLoading && localDataLoaded}
+              authUser={authUser}
+              onAuthOpen={() => setShowAuthModal(true)}
             />
           </AppLayout>
         )
