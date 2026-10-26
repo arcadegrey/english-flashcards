@@ -4,6 +4,7 @@ import {
   speakWord,
   setTtsProvider as setGlobalProvider,
   KOKORO_WORD_AUDIO_VOICES,
+  stopSpeak,
 } from '../utils/speech';
 import { storage } from '../utils/storage';
 
@@ -31,9 +32,11 @@ function VoiceSettings({ onClose }) {
   useEffect(() => {
     storage.setTtsProvider('kokoro');
     setGlobalProvider('kokoro');
+    return stopSpeak;
   }, []);
 
   const handleKokoroVoiceChange = (voiceId) => {
+    stopSpeak();
     setKokoroVoiceState(voiceId);
     storage.setKokoroVoice(voiceId);
   };
@@ -91,6 +94,7 @@ function VoiceSettings({ onClose }) {
                 step="0.05"
                 value={kokoroSpeed}
                 onChange={(event) => {
+                  stopSpeak();
                   const value = Number(event.target.value);
                   setKokoroSpeedState(value);
                   storage.setKokoroSpeed(value);

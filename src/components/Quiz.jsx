@@ -2,48 +2,20 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { speakWord } from '../utils/speech';
 import { playSuccessChime } from '../utils/feedback';
 import CorrectAnswerCelebration from './CorrectAnswerCelebration';
-import { distinctVocabularyWords } from '../../shared/vocabularyAliases.js';
+import { createQuizRound } from '../utils/assessmentRounds.js';
 
-const createQuizRound = (vocabulary = [], optionVocabulary = []) => {
-  if (!Array.isArray(vocabulary) || vocabulary.length === 0) {
-    return { question: null, options: [] };
-  }
-
-  const shuffled = [...vocabulary].sort(() => Math.random() - 0.5);
-  const correctWord = shuffled[0];
-
-  const distractorBase =
-    optionVocabulary.length > 0
-      ? optionVocabulary.filter((word) => word.id !== correctWord.id)
-      : vocabulary.filter((word) => word.id !== correctWord.id);
-
-  const shuffledDistractors = [...distractorBase].sort(() => Math.random() - 0.5);
-  const wrongOptions = distinctVocabularyWords(shuffledDistractors, [correctWord]).slice(0, 3);
-
-  if (wrongOptions.length < 3) {
-    const fallbackPool = vocabulary.filter(
-      (word) => word.id !== correctWord.id && !wrongOptions.some((wrong) => wrong.id === word.id)
-    );
-    wrongOptions.push(...distinctVocabularyWords(fallbackPool, [correctWord, ...wrongOptions]).slice(0, 3 - wrongOptions.length));
-  }
-
-  return {
-    question: correctWord,
-    options: [correctWord, ...wrongOptions].sort(() => Math.random() - 0.5),
-  };
-};
+const EMPTY_OPTIONS = [];
 
 function Quiz({
   vocabulary,
-  optionVocabulary = [],
+  optionVocabulary = EMPTY_OPTIONS,
   sourceLabel = '题库测验',
   onAddMastered,
   onWrongAnswer,
   onAnswer,
 }) {
-  const initialRound = createQuizRound(vocabulary, optionVocabulary);
-  const [currentQuestion, setCurrentQuestion] = useState(() => initialRound.question);
-  const [options, setOptions] = useState(() => initialRound.options);
+  const [round, setRound] = useState(() => createQuizRound(vocabulary, optionVocabulary));
+  const { question: currentQuestion, options } = round;
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
   const [score, setScore] = useState(0);
@@ -54,9 +26,7 @@ function Quiz({
   const nextQuestionTimer = useRef(null);
 
   const generateQuestion = useCallback(() => {
-    const nextRound = createQuizRound(vocabulary, optionVocabulary);
-    setCurrentQuestion(nextRound.question);
-    setOptions(nextRound.options);
+    setRound(createQuizRound(vocabulary, optionVocabulary));
     setSelectedAnswer(null);
     setIsCorrect(null);
   }, [vocabulary, optionVocabulary]);

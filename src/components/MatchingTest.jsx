@@ -1,38 +1,11 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { playSuccessChime } from '../utils/feedback';
 import CorrectAnswerCelebration from './CorrectAnswerCelebration';
-import { distinctVocabularyWords } from '../../shared/vocabularyAliases.js';
-
-const ROUND_SIZE = 5;
-
-const shuffle = (list = []) => [...list].sort(() => Math.random() - 0.5);
-
-const createMatchingRound = (vocabulary = []) => {
-  const candidates = Array.isArray(vocabulary)
-    ? distinctVocabularyWords(shuffle(vocabulary.filter((item) => item?.id != null && item?.word && item?.meaning)))
-    : [];
-
-  if (candidates.length < 2) {
-    return {
-      error: '当前范围至少需要 2 个带释义的单词，才能生成连线题。',
-      words: [],
-      meanings: [],
-    };
-  }
-
-  const words = shuffle(candidates).slice(0, Math.min(ROUND_SIZE, candidates.length));
-  return {
-    error: '',
-    words,
-    meanings: shuffle(words),
-  };
-};
+import { createMatchingRound } from '../utils/assessmentRounds.js';
 
 function MatchingTest({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswer, onAnswer }) {
-  const initialRound = createMatchingRound(vocabulary);
-  const [words, setWords] = useState(() => initialRound.words);
-  const [meanings, setMeanings] = useState(() => initialRound.meanings);
-  const [roundError, setRoundError] = useState(() => initialRound.error);
+  const [round, setRound] = useState(() => createMatchingRound(vocabulary));
+  const { words, meanings, error: roundError } = round;
   const [selectedWordId, setSelectedWordId] = useState(null);
   const [matchedIds, setMatchedIds] = useState([]);
   const [wrongPair, setWrongPair] = useState(null);
@@ -51,10 +24,7 @@ function MatchingTest({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAn
   const matchedIdSet = useMemo(() => new Set(matchedIds.map(String)), [matchedIds]);
 
   const generateRound = useCallback(() => {
-    const nextRound = createMatchingRound(vocabulary);
-    setWords(nextRound.words);
-    setMeanings(nextRound.meanings);
-    setRoundError(nextRound.error);
+    setRound(createMatchingRound(vocabulary));
     setSelectedWordId(null);
     setMatchedIds([]);
     setWrongPair(null);

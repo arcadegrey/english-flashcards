@@ -2,110 +2,24 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { speakExample } from '../utils/speech';
 import { playSuccessChime } from '../utils/feedback';
 import CorrectAnswerCelebration from './CorrectAnswerCelebration';
-import { distinctVocabularyWords } from '../../shared/vocabularyAliases.js';
-
-const BLANK_TOKEN = '______';
-
-const escapeRegExp = (value = '') => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-
-const buildHiddenSentence = (example = '', answerWord = '') => {
-  const safeExample = String(example || '').trim();
-  const safeWord = String(answerWord || '').trim();
-  if (!safeExample || !safeWord) return '';
-
-  const escapedWord = escapeRegExp(safeWord);
-  const exactRegex = new RegExp(`\\b${escapedWord}\\b`, 'i');
-  if (exactRegex.test(safeExample)) {
-    return safeExample.replace(exactRegex, BLANK_TOKEN);
-  }
-
-  const inflectionRegex = new RegExp(`\\b${escapedWord}(s|es|ed|ing)?\\b`, 'i');
-  if (inflectionRegex.test(safeExample)) {
-    return safeExample.replace(inflectionRegex, BLANK_TOKEN);
-  }
-
-  return '';
-};
-
-const createFillBlankRound = (vocabulary = []) => {
-  if (!Array.isArray(vocabulary) || vocabulary.length === 0) {
-    return {
-      error: '当前词库为空，暂时无法生成填空题。',
-      question: null,
-      options: [],
-      sentence: '',
-    };
-  }
-
-  const candidates = vocabulary.filter((item) => item?.word && item?.example);
-  if (candidates.length === 0) {
-    return {
-      error: '当前词库缺少可用例句，暂时无法生成填空题。',
-      question: null,
-      options: [],
-      sentence: '',
-    };
-  }
-
-  const shuffledCandidates = [...candidates].sort(() => Math.random() - 0.5);
-
-  let selectedWord = null;
-  let hiddenSentence = '';
-
-  for (const item of shuffledCandidates) {
-    const nextHiddenSentence = buildHiddenSentence(item.example, item.word);
-    if (nextHiddenSentence && nextHiddenSentence !== item.example) {
-      selectedWord = item;
-      hiddenSentence = nextHiddenSentence;
-      break;
-    }
-  }
-
-  if (!selectedWord) {
-    return {
-      error: '当前例句中无法自动挖空目标词，请切换词库后重试。',
-      question: null,
-      options: [],
-      sentence: '',
-    };
-  }
-
-  const distractorPool = distinctVocabularyWords(vocabulary, [selectedWord]);
-  const wrongOptions = [...distractorPool]
-    .sort(() => Math.random() - 0.5)
-    .slice(0, Math.min(3, distractorPool.length));
-
-  return {
-    error: '',
-    question: selectedWord,
-    options: [selectedWord, ...wrongOptions].sort(() => Math.random() - 0.5),
-    sentence: hiddenSentence,
-  };
-};
+import { createFillBlankRound } from '../utils/assessmentRounds.js';
 
 function FillBlank({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswer, onAnswer }) {
-  const initialRound = createFillBlankRound(vocabulary);
-  const [currentQuestion, setCurrentQuestion] = useState(() => initialRound.question);
-  const [options, setOptions] = useState(() => initialRound.options);
+  const [round, setRound] = useState(() => createFillBlankRound(vocabulary));
+  const { question: currentQuestion, options, sentence, error: questionError } = round;
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
   const [score, setScore] = useState(0);
   const [questionCount, setQuestionCount] = useState(0);
   const [streak, setStreak] = useState(0);
-  const [sentence, setSentence] = useState(() => initialRound.sentence);
-  const [questionError, setQuestionError] = useState(() => initialRound.error);
   const [celebrationTrigger, setCelebrationTrigger] = useState(0);
   const isFirstRenderRef = useRef(true);
   const nextQuestionTimer = useRef(null);
 
   const generateQuestion = useCallback(() => {
-    const nextRound = createFillBlankRound(vocabulary);
-    setQuestionError(nextRound.error);
-    setCurrentQuestion(nextRound.question);
-    setOptions(nextRound.options);
+    setRound(createFillBlankRound(vocabulary));
     setSelectedAnswer(null);
     setIsCorrect(null);
-    setSentence(nextRound.sentence);
   }, [vocabulary]);
 
   useEffect(() => {
@@ -119,9 +33,7 @@ function FillBlank({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswe
     }
 
     const initTimer = setTimeout(() => {
-      if (vocabulary.length > 0) {
-        generateQuestion();
-      }
+      generateQuestion();
     }, 0);
 
     return () => {

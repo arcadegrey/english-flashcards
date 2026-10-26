@@ -1,15 +1,16 @@
+import { dedupeIdList, normalizeProgressState, mergeProgress, areProgressStatesEqual, serializeProgressState, rebaseProgress } from './utils/progressState.js'
+import { createProgressSyncQueue } from './utils/progressSync.js'
+import { prepareReadingContent, indexReadingVocabulary, applyReadingProgress } from './utils/readingLibrary.js'
 import PageLoadBoundary from './components/PageLoadBoundary.jsx'
-import { mergeWordProgress } from '../shared/wordProgress.js'
 import { getStudyDateKey } from '../shared/studyDate.js'
 import { useStudyDay } from './hooks/useStudyDay.js'
-import { mergeVocabularyList, pickRicherWord } from './utils/vocabularyMerge.js'
+import { mergeVocabularyList } from './utils/vocabularyMerge.js'
 import { WordBookmarksContext } from './context/word-bookmarks-context'
 import { RETIRED_VOCABULARY, activeProgressIds } from '../shared/retiredVocabulary.js'
 import { mergeWordBookmarks } from '../shared/wordBookmarks.js'
 import { wrongReadingQuestions } from '../shared/readingAttempts.js'
 import { submitReadingAssignment } from './utils/classroomApi'
-import { normalizePreferences, mergePreferences } from '../shared/planPreferences.js'
-import { normalizeStudyHistoryItem, normalizeStudyHistory, mergeStudyHistory, recordDailyExamAnswer, mergeLegacyPlanExamActivity } from '../shared/studyHistory.js'
+import { normalizeStudyHistoryItem, normalizeStudyHistory, recordDailyExamAnswer, mergeLegacyPlanExamActivity } from '../shared/studyHistory.js'
 import { getDailyPlanExamActivity } from '../shared/planActivity.js'
 import { buildTomorrowPlan, needsPlanCatalog } from './utils/dailyPlan.js'
 import { useState, useEffect, useMemo, useRef, useCallback, lazy, Suspense } from 'react'
@@ -31,9 +32,9 @@ import ExamHistoryProvider from './context/ExamHistoryProvider'
 import { getAccountRoleLabel } from './utils/classroom'
 import { storage, WORD_BOOKMARKS_STORAGE_KEY } from './utils/storage'
 import { getExamVocabulary, getPlanVocabulary, getPlanWordStats, normalizePlanCategory, recordPlanExamAnswer } from './utils/studyPlan'
-import { buildWordLookup, isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from './utils/readingText'
+import { buildWordLookup } from './utils/readingText'
 import { calculateNextReview, getWordsForReview, initializeWordProgress } from './utils/spacedRepetition'
-import { speak } from './utils/speech'
+import { speak, stopSpeak } from './utils/speech'
 import {
   getWordCategories,
   wordBelongsToCategory,
@@ -70,44 +71,9 @@ const TOEFL_UNKNOWN_LIST = 'unknown'
 const IELTS_UNKNOWN_TOPIC = 'unknown'
 const NAVIGATION_STATE_KEY = 'english_flashcards_navigation_v1'
 const AUTH_TRANSITION_MIN_MS = 900
+const preparedReadings = prepareReadingContent(readings)
 
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
-
-const dedupeIdList = (list) => {
-  const safeList = Array.isArray(list) ? list : []
-  const seen = new Set()
-  const result = []
-
-  safeList.forEach((item) => {
-    if (item === null || item === undefined) return
-    const key = String(item)
-    if (seen.has(key)) return
-    seen.add(key)
-    result.push(item)
-  })
-
-  return result
-}
-
-
-const mergeCustomWordList = (baseList, extraList) => {
-  const map = new Map()
-  const applyList = (list) => {
-    const safeList = Array.isArray(list) ? list : []
-    safeList.forEach((word) => {
-      const key = String(word?.word || '').trim().toLowerCase()
-      if (!key) return
-      map.set(key, pickRicherWord(map.get(key), word))
-    })
-  }
-
-  applyList(baseList)
-  applyList(extraList)
-  return Array.from(map.values())
-}
-
-
-const normalizeRecord = (value) => (value && typeof value === 'object' && !Array.isArray(value) ? value : {})
 
 const toNumber = (value) => (Number.isFinite(Number(value)) ? Number(value) : 0)
 
@@ -126,55 +92,6 @@ const uniqueStringList = (value) => {
 
   return output
 }
-
-const normalizeProgressState = (progress) => {
-  const masteredWords = dedupeIdList(progress?.masteredWords || [])
-  const masteredSet = new Set(masteredWords.map((item) => String(item)))
-  const learnedWords = dedupeIdList(progress?.learnedWords || []).filter(
-    (item) => !masteredSet.has(String(item))
-  )
-  const wrongWords = dedupeIdList(progress?.wrongWords || []).filter(
-    (item) => !masteredSet.has(String(item))
-  )
-
-  return {
-    learnedWords,
-    masteredWords,
-    customWords: mergeCustomWordList([], progress?.customWords || []),
-    wordProgress: normalizeRecord(progress?.wordProgress),
-    wrongWords,
-    studyHistory: normalizeStudyHistory(progress?.studyHistory),
-    preferences: normalizePreferences(progress?.preferences),
-  }
-}
-
-const mergeProgress = (localProgress, cloudProgress) => {
-  return normalizeProgressState({
-    learnedWords: [...(cloudProgress.learnedWords || []), ...(localProgress.learnedWords || [])],
-    masteredWords: [...(cloudProgress.masteredWords || []), ...(localProgress.masteredWords || [])],
-    customWords: mergeCustomWordList(cloudProgress.customWords || [], localProgress.customWords || []),
-    wordProgress: mergeWordProgress(cloudProgress.wordProgress, localProgress.wordProgress),
-    wrongWords: [...(cloudProgress.wrongWords || []), ...(localProgress.wrongWords || [])],
-    studyHistory: mergeStudyHistory(cloudProgress.studyHistory || [], localProgress.studyHistory || []),
-    preferences: mergePreferences(cloudProgress?.preferences, localProgress?.preferences),
-  })
-}
-
-const areProgressStatesEqual = (left, right) => {
-  const l = normalizeProgressState(left)
-  const r = normalizeProgressState(right)
-  return (
-    JSON.stringify(l.learnedWords) === JSON.stringify(r.learnedWords) &&
-    JSON.stringify(l.masteredWords) === JSON.stringify(r.masteredWords) &&
-    JSON.stringify(l.customWords) === JSON.stringify(r.customWords) &&
-    JSON.stringify(l.wordProgress) === JSON.stringify(r.wordProgress) &&
-    JSON.stringify(l.wrongWords) === JSON.stringify(r.wrongWords) &&
-    JSON.stringify(l.studyHistory) === JSON.stringify(r.studyHistory) &&
-    JSON.stringify(l.preferences) === JSON.stringify(r.preferences)
-  )
-}
-
-const serializeProgressState = (progress) => JSON.stringify(normalizeProgressState(progress))
 
 const isBrowserOnline = () => typeof navigator === 'undefined' || navigator.onLine !== false
 
@@ -397,8 +314,9 @@ function AppContent() {
   const [lastSyncedAt, setLastSyncedAt] = useState('')
   const authBootstrappedRef = useRef(false)
   const cloudHydratedRef = useRef(false)
-  const skipNextCloudPushRef = useRef(false)
   const cloudSyncTimerRef = useRef(null)
+  const [progressSyncQueue] = useState(createProgressSyncQueue)
+  const learningResetRef = useRef(0)
   const cloudProgressVersionRef = useRef('')
   const latestProgressRef = useRef(null)
   const lastSyncedProgressRef = useRef('')
@@ -409,6 +327,11 @@ function AppContent() {
   const [homeAccountNotice, setHomeAccountNotice] = useState(null)
   const [authTransition, setAuthTransition] = useState(null)
   const homeNoticeTimerRef = useRef(null)
+
+  useEffect(() => {
+    stopSpeak()
+    return stopSpeak
+  }, [view, mode, currentIndex, selectedReadingId, selectedCategory])
 
   useEffect(() => {
     if (!showAuthModal) return undefined
@@ -467,37 +390,8 @@ function AppContent() {
     () => new Set(masteredWords.map((item) => String(item))),
     [masteredWords]
   )
-  const readingLibrary = useMemo(
-    () =>
-      readings.map((item) => {
-        const tokens = tokenizeReadingText(item.content)
-        let englishWordCount = 0
-        const trackedWords = new Set()
-        const unmasteredWords = new Set()
-
-        tokens.forEach((token) => {
-          if (!isEnglishWordToken(token)) return
-          englishWordCount += 1
-          const matchedWord = resolveVocabularyWord(token, vocabularyLookup)
-          if (!matchedWord?.id) return
-          const idKey = String(matchedWord.id)
-          trackedWords.add(idKey)
-          if (!masteredWordIdSet.has(idKey)) {
-            unmasteredWords.add(idKey)
-          }
-        })
-
-        const estimatedMinutes = Math.max(1, Math.round(englishWordCount / 180))
-
-        return {
-          ...item,
-          estimatedMinutes,
-          trackedWordCount: trackedWords.size,
-          unmasteredCount: unmasteredWords.size,
-        }
-      }),
-    [masteredWordIdSet, vocabularyLookup]
-  )
+  const indexedReadings = useMemo(() => indexReadingVocabulary(preparedReadings, vocabularyLookup), [vocabularyLookup])
+  const readingLibrary = useMemo(() => applyReadingProgress(indexedReadings, masteredWordIdSet), [indexedReadings, masteredWordIdSet])
 
   const currentProgress = useMemo(
     () => ({
@@ -979,17 +873,14 @@ function AppContent() {
     }
   }, [])
 
-  const applyMergedProgress = useCallback((mergedProgress, { skipNextPush = false } = {}) => {
+  const applyMergedProgress = useCallback((mergedProgress) => {
     const normalized = normalizeProgressState(mergedProgress)
     normalized.studyHistory = mergeLegacyPlanExamActivity(normalized.studyHistory, storage.getPlanExamActivity())
     const bookmarks = mergeWordBookmarks(storage.getWordBookmarks(), normalized.preferences.wordBookmarks)
     normalized.preferences.wordBookmarks = bookmarks
+    latestProgressRef.current = normalized
     storage.setWordBookmarks(bookmarks)
     setWordBookmarks(bookmarks)
-
-    if (skipNextPush) {
-      skipNextCloudPushRef.current = true
-    }
 
     setLearnedWords(normalized.learnedWords)
     setMasteredWords(normalized.masteredWords)
@@ -1038,91 +929,102 @@ function AppContent() {
       return ''
     }
 
-    const progressToSync = normalizeProgressState(progress || latestProgressRef.current || {})
-    if (String(storage.getLearningOwner()) === String(user.id)) {
-      progressToSync.studyHistory = mergeLegacyPlanExamActivity(progressToSync.studyHistory, storage.getPlanExamActivity())
-    }
-
-    setSyncState('syncing')
-    setSyncError('')
-
-    let syncResult
-    try {
-      syncResult = await upsertCloudProgress({
-        progress: progressToSync,
-        expectedUserId: user.id,
-        baseUpdatedAt:
-          typeof options.baseUpdatedAt === 'string'
-            ? options.baseUpdatedAt
-            : cloudProgressVersionRef.current,
-      })
-    } catch (error) {
+    const requestedVersion = cloudProgressVersionRef.current
+    return progressSyncQueue.enqueue(async (isCurrent) => {
       if (String(storage.getAuthSession()?.user?.id) !== String(user.id)) return ''
-      progressDirtyRef.current = true
-      setSyncState('error')
-      setSyncError(error?.message || '同步失败，请重试')
-      throw error
-    }
-    if (String(storage.getAuthSession()?.user?.id) !== String(user.id)) return ''
-    const syncedAtIso = syncResult?.updatedAt || new Date().toISOString()
-    cloudProgressVersionRef.current = syncedAtIso
-
-    if (syncResult?.conflictResolved && syncResult?.progress) {
-      const hasDiff = !areProgressStatesEqual(
-        latestProgressRef.current,
-        syncResult.progress
-      )
-      if (hasDiff) {
-        applyMergedProgress(syncResult.progress, { skipNextPush: true })
+      const resetAtStart = learningResetRef.current
+      const progressToSync = normalizeProgressState(latestProgressRef.current || progress || {})
+      if (String(storage.getLearningOwner()) === String(user.id)) {
+        progressToSync.studyHistory = mergeLegacyPlanExamActivity(progressToSync.studyHistory, storage.getPlanExamActivity())
       }
-    }
 
-    const syncedAtText = new Date(syncedAtIso).toLocaleString('zh-CN', {
-      hour12: false,
-      month: '2-digit',
-      day: '2-digit',
-      hour: '2-digit',
-      minute: '2-digit',
+      setSyncState('syncing')
+      setSyncError('')
+
+      let syncResult
+      try {
+        syncResult = await upsertCloudProgress({
+          progress: progressToSync,
+          expectedUserId: user.id,
+          baseUpdatedAt:
+            typeof options.baseUpdatedAt === 'string' && requestedVersion === cloudProgressVersionRef.current
+              ? options.baseUpdatedAt
+              : cloudProgressVersionRef.current,
+        })
+      } catch (error) {
+        if (!isCurrent() || String(storage.getAuthSession()?.user?.id) !== String(user.id)) return ''
+        progressDirtyRef.current = true
+        setSyncState('error')
+        setSyncError(error?.message || '同步失败，请重试')
+        throw error
+      }
+      if (!isCurrent() || String(storage.getAuthSession()?.user?.id) !== String(user.id)) return ''
+      const syncedAtIso = syncResult?.updatedAt || new Date().toISOString()
+      cloudProgressVersionRef.current = syncedAtIso
+
+      const syncedProgress = normalizeProgressState(syncResult?.progress || progressToSync)
+      const rebased = rebaseProgress(progressToSync, latestProgressRef.current || progressToSync, syncedProgress,
+        { resetLearning: learningResetRef.current !== resetAtStart })
+      if (!areProgressStatesEqual(latestProgressRef.current, rebased)) {
+        applyMergedProgress(rebased)
+      }
+
+      const syncedAtText = new Date(syncedAtIso).toLocaleString('zh-CN', {
+        hour12: false,
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+      })
+
+      const syncedSnapshot = serializeProgressState(syncedProgress)
+      const latestSnapshot = serializeProgressState(latestProgressRef.current || progressToSync)
+      lastSyncedProgressRef.current = syncedSnapshot
+
+      if (latestSnapshot === syncedSnapshot) {
+        progressDirtyRef.current = false
+        setSyncState('synced')
+        setSyncError('')
+      } else {
+        progressDirtyRef.current = true
+        setSyncState('pending')
+        setSyncError('')
+      }
+
+      setLastSyncedAt(syncedAtText)
+      return syncedAtText
     })
-
-    const syncedProgress = normalizeProgressState(syncResult?.progress || progressToSync)
-    const syncedSnapshot = serializeProgressState(syncedProgress)
-    const latestSnapshot = serializeProgressState(latestProgressRef.current || progressToSync)
-    lastSyncedProgressRef.current = syncedSnapshot
-
-    if (latestSnapshot === syncedSnapshot) {
-      progressDirtyRef.current = false
-      setSyncState('synced')
-      setSyncError('')
-    } else {
-      progressDirtyRef.current = true
-      setSyncState('pending')
-      setSyncError('')
-    }
-
-    setLastSyncedAt(syncedAtText)
-    return syncedAtText
-  }, [applyMergedProgress, cloudEnabled])
+  }, [applyMergedProgress, cloudEnabled, progressSyncQueue])
 
   const hydrateFromCloud = useCallback(async ({ session, user, localProgress }) => {
     if (!cloudEnabled || !session?.access_token || !user?.id) return
 
-    const { progress: cloudProgress, updatedAt } = await loadCloudProgress(user.id)
-    if (String(storage.getAuthSession()?.user?.id) !== String(user.id)) return
+    const hydrated = await progressSyncQueue.enqueue(async (isCurrent) => {
+      if (String(storage.getAuthSession()?.user?.id) !== String(user.id)) return null
+      const localAtStart = normalizeProgressState(latestProgressRef.current || localProgress || {})
+      const resetAtStart = learningResetRef.current
+      const { progress: cloudProgress, updatedAt } = await loadCloudProgress(user.id)
+      if (!isCurrent() || String(storage.getAuthSession()?.user?.id) !== String(user.id)) return null
 
-    const merged = mergeProgress(localProgress || latestProgressRef.current || {}, cloudProgress)
-    if (String(storage.getLearningOwner()) === String(user.id)) {
-      merged.studyHistory = mergeLegacyPlanExamActivity(merged.studyHistory, storage.getPlanExamActivity())
-    }
-    merged.preferences.wordBookmarks = mergeWordBookmarks(merged.preferences.wordBookmarks, storage.getWordBookmarks())
+      const merged = rebaseProgress(localAtStart, latestProgressRef.current || localAtStart, mergeProgress(localAtStart, cloudProgress),
+        { resetLearning: learningResetRef.current !== resetAtStart })
+      if (String(storage.getLearningOwner()) === String(user.id)) {
+        merged.studyHistory = mergeLegacyPlanExamActivity(merged.studyHistory, storage.getPlanExamActivity())
+      }
+      merged.preferences.wordBookmarks = mergeWordBookmarks(merged.preferences.wordBookmarks, storage.getWordBookmarks())
 
-    applyMergedProgress(merged, { skipNextPush: true })
-    cloudHydratedRef.current = true
-    await pushProgressToCloud(session, user, merged, { baseUpdatedAt: updatedAt })
+      applyMergedProgress(merged)
+      cloudProgressVersionRef.current = updatedAt
+      cloudHydratedRef.current = true
+      return isCurrent
+    })
+    if (hydrated?.()) await pushProgressToCloud(session, user, latestProgressRef.current)
+
   }, [
     applyMergedProgress,
     cloudEnabled,
     pushProgressToCloud,
+    progressSyncQueue,
   ])
 
   const ensureFreshSession = useCallback(async (session) => {
@@ -1250,19 +1152,6 @@ function AppContent() {
       return
     }
 
-    if (skipNextCloudPushRef.current) {
-      skipNextCloudPushRef.current = false
-      const currentSnapshot = serializeProgressState(currentProgress)
-      if (currentSnapshot === lastSyncedProgressRef.current) {
-        progressDirtyRef.current = false
-        setSyncState((previousState) => (previousState === 'syncing' ? previousState : 'synced'))
-      } else {
-        progressDirtyRef.current = true
-        setSyncState((previousState) => (previousState === 'syncing' ? previousState : 'pending'))
-      }
-      return
-    }
-
     const progressSnapshot = serializeProgressState(currentProgress)
     if (!progressDirtyRef.current && progressSnapshot === lastSyncedProgressRef.current) {
       return
@@ -1337,6 +1226,14 @@ function AppContent() {
     }
   }, [authSession, authUser, cloudEnabled, flushCloudProgress, hydrateFromCloud])
 
+  const beginProgressSession = () => {
+    progressSyncQueue.invalidate()
+    cloudHydratedRef.current = false
+    cloudProgressVersionRef.current = ''
+    lastSyncedProgressRef.current = ''
+    progressDirtyRef.current = false
+  }
+
   const handleAuthLogin = async ({ email, password, verificationCode }) => {
     if (!cloudEnabled) {
       throw new Error('云端账号服务未配置')
@@ -1367,6 +1264,7 @@ function AppContent() {
           sessionReady: false,
         }
       }
+      beginProgressSession()
       const guestProgress = storage.getLearningOwner() === 'guest' ? latestProgressRef.current : null
       const accountProgress = storage.switchLearningAccount(user.id, latestProgressRef.current)
       const localProgress = guestProgress ? mergeProgress(guestProgress, accountProgress) : accountProgress
@@ -1426,6 +1324,7 @@ function AppContent() {
       }
 
       const accountUser = user || session.user
+      beginProgressSession()
       const guestProgress = storage.getLearningOwner() === 'guest' ? latestProgressRef.current : null
       const accountProgress = storage.switchLearningAccount(accountUser.id, latestProgressRef.current)
       const localProgress = guestProgress ? mergeProgress(guestProgress, accountProgress) : accountProgress
@@ -1462,6 +1361,7 @@ function AppContent() {
       await signOut({ allDevices, expectedUserId: authUser?.id })
     }
 
+    beginProgressSession()
     const guestProgress = storage.switchLearningAccount(null, latestProgressRef.current)
     applyMergedProgress(guestProgress)
     latestProgressRef.current = guestProgress
@@ -2337,6 +2237,7 @@ function AppContent() {
   }
 
   const resetProgress = () => {
+    learningResetRef.current += 1
     setLearnedWords([])
     setMasteredWords([])
     setWrongWords([])
