@@ -558,8 +558,8 @@
   .study-carousel-copy { position: absolute; inset: 0; display: block; width: 100%; padding: 24px; }
   .study-carousel-eyebrow { min-height: 27px; padding: 4px 11px; background: #ffffffd9; color: #2f6dff; box-shadow: 0 4px 14px #4f7cff08; }
   .study-carousel-copy h2 { max-width: 85%; margin-top: 16px; font-size: 27px; line-height: 1.2; font-weight: 780; }
-  .study-carousel-meta { max-width: 65%; font-size: 13px; line-height: 1.55; font-weight: 450; color: #596d95; }
-  .study-carousel-artwork { z-index: 1; top: 56px; right: -24px; width: 76%; height: 184px; opacity: 0.95; }
+  .study-carousel-meta { max-width: 46%; font-size: 13px; line-height: 1.55; font-weight: 450; color: #4f6385; word-break: keep-all; overflow-wrap: anywhere; }
+  .study-carousel-artwork { z-index: 1; top: 64px; right: -24px; width: 64%; height: 176px; opacity: 0.9; }
   .study-carousel-artwork::before { display: none; }
   .study-carousel-art { top: 0; height: 100%; filter: drop-shadow(0 13px 10px #4f7cff19); }
   .study-carousel-copy { z-index: 2; }
@@ -567,9 +567,7 @@
   .study-carousel-progress { left: 24px; bottom: 86px; width: 64%; }
   .study-carousel-progress .ds-linear-progress { height: 6px; background: #bfcfeb90; }
   .study-carousel-progress > span { margin-top: 6px; color: #576e98; font-size: 11px; line-height: 1.5; }
-  .study-carousel-card:not(.is-current) .study-carousel-artwork { width: 76%; height: 180px; right: -22px; top: 60px; }
-  .study-carousel-card.is-lavender .study-carousel-artwork { top: 8px; right: 0; width: 46%; height: 144px; opacity: 0.5; }
-  .study-carousel-card.is-lavender .study-carousel-meta { max-width: 85%; }
+  .study-carousel-card:not(.is-current) .study-carousel-artwork { width: 64%; height: 176px; right: -24px; top: 64px; }
   .study-carousel-card.is-previous { transform: translate3d(calc(-145% + var(--study-drag-x) * 0.25), 0, -45px) rotateY(12deg) scale(0.93); }
   .study-carousel-card.is-next { transform: translate3d(calc(45% + var(--study-drag-x) * 0.25), 0, -45px) rotateY(-12deg) scale(0.93); }
   .study-carousel-arrow { top: 148px; width: 28px; height: 36px; border-radius: 12px; background: #ffffffb8; }
@@ -608,4 +606,65 @@
   .study-carousel-copy h2 { font-size: 24px; }
   .study-carousel .study-carousel-start { left: 20px; right: 20px; width: calc(100% - 40px); }
   .study-carousel-progress { left: 20px; }
+}
+
+/* A light glass companion: translucent surfaces retain the existing blue palette. */
+:root:not(.dark) .study-carousel-stage {
+  background: radial-gradient(ellipse closest-side at 50% 55%, #7ea6ff24, transparent 100%);
+}
+
+:root:not(.dark) .study-carousel-card {
+  --study-glass-tint: 201, 222, 255;
+  border-color: #abc9f58c;
+  background: linear-gradient(118deg, #ffffffed 8%, #ffffffad 51%, rgba(var(--study-glass-tint), 0.66) 100%);
+  -webkit-backdrop-filter: blur(18px) saturate(1.12);
+  backdrop-filter: blur(18px) saturate(1.12);
+  box-shadow: inset 0 1px 1px #fff, inset 0 -1px 0 #92b8ef40, 0 16px 34px #416dba1a;
+}
+
+:root:not(.dark) .study-carousel-card.is-cyan { --study-glass-tint: 199, 233, 250; }
+:root:not(.dark) .study-carousel-card.is-lavender { --study-glass-tint: 221, 222, 252; }
+:root:not(.dark) .study-carousel-card.is-peach { --study-glass-tint: 250, 229, 209; }
+
+:root:not(.dark) .study-carousel-card::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(140deg, #ffffff70, #ffffff00 34%, #ffffff00 72%, #ffffff30);
+  box-shadow: inset 1px 1px 0 #ffffffbf, inset -1px -1px 0 #ffffff59;
+}
+
+:root:not(.dark) .study-carousel-card.is-previous,
+:root:not(.dark) .study-carousel-card.is-next {
+  box-shadow: inset 0 1px 1px #fff, inset 0 -1px 0 #92b8ef33, 0 12px 28px #416dba12;
+}
+
+:root:not(.dark) .study-dashboard :is(.study-dashboard-stat, .study-dashboard-tasks, .study-dashboard-quick, .study-momentum.ds-card) {
+  border-color: #abc9f54d;
+  background: #ffffffc9;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow: inset 0 1px 0 #fff, 0 8px 24px #4f7cff0b;
+}
+
+:root:not(.dark) .study-dashboard-stat:hover {
+  border-color: #a7c3f3;
+  box-shadow: inset 0 1px 0 #fff, 0 10px 26px #4f7cff16;
+}
+
+@media (max-width: 640px) {
+  :root:not(.dark) .study-carousel-card {
+    --study-glass-tint: 201, 222, 255;
+    -webkit-backdrop-filter: blur(12px) saturate(1.08);
+    backdrop-filter: blur(12px) saturate(1.08);
+  }
+
+  :root:not(.dark) .study-carousel-card::before {
+    background: linear-gradient(180deg, #ffffffb3, #ffffff26 54%, #e8f1ffcc 88%), url('/images/ui-assets/mobile-learning-landscape-v1.png') 58% center / auto 100%;
+    opacity: 0.88;
+  }
+
 }

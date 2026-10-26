@@ -4,6 +4,8 @@ import { appShellIcons } from './icons';
 export function MobileTopbar({
   title,
   onCalendar,
+  onThemeToggle,
+  isDarkTheme = false,
   onNotify,
   notifyBadge,
   onVoiceSettings,
@@ -18,6 +20,11 @@ export function MobileTopbar({
       {mobileBrand ? <div className="ds-mobile-brand"><strong>英语单词</strong><span>English Flashcards</span></div> : <h1>{title}</h1>}
       <div className="ds-mobile-actions">
         {onCalendar && <IconButton label="日历" onClick={onCalendar}>{appShellIcons.calendar}</IconButton>}
+        {onThemeToggle && (
+          <IconButton className="ds-theme-toggle" label={isDarkTheme ? '切换到浅色模式' : '切换到深色模式'} title={isDarkTheme ? '切换到浅色模式' : '切换到深色模式'} aria-pressed={isDarkTheme} onClick={onThemeToggle}>
+            {isDarkTheme ? appShellIcons.sun : appShellIcons.moon}
+          </IconButton>
+        )}
         {onVoiceSettings && (
           <IconButton className="ds-voice-toggle" label="语音设置" onClick={onVoiceSettings}>
             {appShellIcons.voice}

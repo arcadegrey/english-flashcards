@@ -30,7 +30,7 @@ Less common maintenance commands are listed in `docs/project-reference.md`.
 - Mobile uses shared `MobileTopbar` and `MobileBottomNav`, except mobile word-learning mode, which uses `.ds-app-layout--mobile-study`.
 - Use generated assets only for decorative art/icons/empty states. Buttons, text, stats, progress, navigation, and cards must be real frontend components.
 - Production module/category icons should use assets from `public/images/ui-assets/`, not emoji.
-- Product is currently fixed to light mode. `ThemeContext` remains, but startup forces light and global theme toggles are not rendered.
+- Light remains the default. Home now has a dark companion using the same components, blue accents and decorative assets. Shared desktop/mobile topbars expose theme toggles; `ThemeContext` and startup restore the existing local `flashcards_theme` preference. No theme cloud sync or new storage keys. Scope and verification: `docs/home-dark-mode-2026-10-26.md`.
 
 ## Key Screens
 

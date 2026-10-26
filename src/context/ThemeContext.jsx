@@ -1,33 +1,30 @@
-import { useEffect, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import { ThemeContext } from './theme-context';
 import { storage } from '../utils/storage';
 
 const getInitialTheme = () => {
-  return 'light';
+  return storage.getTheme() || 'light';
 };
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setThemeState] = useState(getInitialTheme);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (typeof document === 'undefined') return;
 
     const root = document.documentElement;
-    root.classList.remove('dark');
+    root.classList.toggle('dark', theme === 'dark');
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#101724' : '#4F7CFF');
   }, [theme]);
 
-  useEffect(() => {
-    storage.setTheme('light');
-  }, []);
-
-  const setTheme = () => {
-    storage.setTheme('light');
-    setThemeState('light');
+  const setTheme = (nextTheme) => {
+    if (nextTheme !== 'light' && nextTheme !== 'dark') return;
+    storage.setTheme(nextTheme);
+    setThemeState(nextTheme);
   };
 
   const toggleTheme = () => {
-    storage.setTheme('light');
-    setThemeState('light');
+    setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
   return (

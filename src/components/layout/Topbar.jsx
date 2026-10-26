@@ -8,6 +8,8 @@ function Topbar({
   searchPlaceholder,
   onSearchChange,
   onCalendar,
+  onThemeToggle,
+  isDarkTheme = false,
   onNotify,
   notifyBadge,
   onVoiceSettings,
@@ -40,6 +42,11 @@ function Topbar({
 
       <div className="ds-topbar-actions">
         {onCalendar && <IconButton label="日历" onClick={onCalendar}>{appShellIcons.calendar}</IconButton>}
+        {onThemeToggle && (
+          <IconButton className="ds-theme-toggle" label={isDarkTheme ? '切换到浅色模式' : '切换到深色模式'} title={isDarkTheme ? '切换到浅色模式' : '切换到深色模式'} aria-pressed={isDarkTheme} onClick={onThemeToggle}>
+            {isDarkTheme ? appShellIcons.sun : appShellIcons.moon}
+          </IconButton>
+        )}
         {onVoiceSettings && (
           <IconButton className="ds-voice-toggle" label="语音设置" onClick={onVoiceSettings}>
             {appShellIcons.voice}

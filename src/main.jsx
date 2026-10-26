@@ -5,9 +5,7 @@ import App from './App.jsx'
 
 const applyInitialTheme = () => {
   try {
-    localStorage.setItem('flashcards_theme', 'light')
-    localStorage.setItem('flashcards_theme_explicit', '1')
-    document.documentElement.classList.remove('dark')
+    document.documentElement.classList.toggle('dark', localStorage.getItem('flashcards_theme') === 'dark')
   } catch {
     document.documentElement.classList.remove('dark')
   }

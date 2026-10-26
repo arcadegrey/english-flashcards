@@ -17,11 +17,14 @@
 }
 
 :root.dark {
-  --ds-background: #10172a;
-  --ds-card: #151f35;
+  --ds-background: #101724;
+  --ds-card: #192334;
   --ds-text: #edf3ff;
-  --ds-muted: #a8b4cc;
-  --ds-line: rgba(148, 163, 184, 0.22);
+  --ds-muted: #a4b3cc;
+  --ds-line: rgba(145, 174, 220, 0.16);
+  --ds-dark-raised: #1e2b40;
+  --ds-dark-inset: #141e2e;
+  --ds-dark-link: #9bbcff;
   --ds-shadow: 0 24px 48px rgba(0, 0, 0, 0.34);
   --ds-shadow-soft: 0 16px 32px rgba(0, 0, 0, 0.24);
 }

@@ -1,0 +1,160 @@
+/* Dark companion to the approved light home. Layout and artwork stay shared. */
+.dark .ds-app-layout {
+  background: radial-gradient(ellipse at 65% 0%, #243a5b30, transparent 48%), var(--ds-background);
+}
+
+.dark .ds-sidebar {
+  background: #121c2c;
+  box-shadow: inset -1px 0 0 var(--ds-line);
+}
+
+.dark .ds-sidebar-item:hover:not(.is-active) { background: #1d2b42; }
+.dark .ds-sidebar-item.is-active { box-shadow: 0 8px 22px #07132866; }
+.dark .ds-streak-card { background: var(--ds-card); border-color: var(--ds-line); box-shadow: none; }
+.dark .ds-streak-week i { background: #24324a; border-color: #40516c; }
+.dark .ds-streak-week .is-done i { background: #6899ff; border-color: #6899ff; }
+.dark .ds-topbar-title p { color: var(--ds-muted); }
+.dark .ds-topbar .ds-icon-button { background: var(--ds-card); color: #b9c9e2; box-shadow: inset 0 0 0 1px var(--ds-line); }
+.dark .ds-topbar .ds-icon-button:hover { background: var(--ds-dark-raised); color: var(--ds-text); }
+.dark .ds-topbar .ds-theme-toggle { background: #26395a; color: #b6d0ff; }
+.dark .ds-user-chip { background: var(--ds-card); border-color: var(--ds-line); box-shadow: none; }
+.dark .ds-user-chip:hover { border-color: #5477ac; }
+
+.ds-theme-toggle:focus-visible { outline: 2px solid #7ea6ff; outline-offset: 3px; }
+
+.dark .study-dashboard {
+  --dashboard-line: var(--ds-line);
+  --dashboard-muted: var(--ds-muted);
+}
+
+.dark .study-carousel-card {
+  border-color: #395579;
+  background: linear-gradient(115deg, #1c2b43 20%, #233b60 100%);
+  box-shadow: inset 0 1px 0 #a7c7ff12, 0 18px 36px #060e1c38;
+}
+
+.dark .study-carousel-card.is-cyan { background: linear-gradient(115deg, #1b2c3e 20%, #214455 100%); }
+.dark .study-carousel-card.is-lavender { background: linear-gradient(115deg, #242b43 20%, #353e63 100%); }
+.dark .study-carousel-card.is-peach { background: linear-gradient(115deg, #2a2b38 20%, #413c4a 100%); }
+.dark .study-carousel-card.is-previous,
+.dark .study-carousel-card.is-next { border-color: #35435d; box-shadow: inset 0 1px 0 #a7c7ff0d, 0 12px 26px #060e1c26; }
+.dark .study-carousel-eyebrow { background: #81adff1a; color: #b6d0ff; box-shadow: none; }
+.dark .study-carousel-eyebrow > span { background: #83acff; box-shadow: 3px -2px 0 #49658e; }
+.dark .study-carousel-copy h2 { color: #f1f5ff; }
+.dark .study-carousel-meta { color: #c0cfe5; }
+.dark .study-carousel-description { color: #b0c0d9; }
+.dark .study-carousel-progress > span { color: #b5c6e1; }
+.dark .study-carousel-progress .ds-linear-progress,
+.dark .study-dashboard-stat .ds-linear-progress { background: #91b3ec26; }
+.dark .study-carousel-art { filter: brightness(0.9) saturate(0.88) drop-shadow(0 18px 20px #060e1c30); }
+.dark .study-carousel-artwork::before { background: radial-gradient(ellipse, #80b5ff1c, transparent 70%); }
+.dark .study-carousel .study-carousel-start { background: linear-gradient(115deg, #356df2, #537ff5); color: #fff; box-shadow: inset 0 1px 0 #c7ddff40, 0 8px 20px #06163440; }
+.dark .study-carousel .study-carousel-start:hover:not(:disabled) { background: linear-gradient(115deg, #417afa, #638eff); }
+.dark .study-carousel-arrow { background: #1b2a40f5; border-color: #445a7b; color: #bdd0ed; box-shadow: 0 5px 16px #060e1c33; }
+.dark .study-carousel-arrow:hover { background: #2a3e5e; color: #fff; }
+.dark .study-carousel-dots button::after { background: #3b4a63; }
+.dark .study-carousel-dots button[aria-pressed='true']::after { background: #85aaff; }
+
+.dark .study-dashboard-stat,
+.dark .study-dashboard .study-dashboard-tasks,
+.dark .study-dashboard .study-dashboard-quick,
+.dark .study-dashboard .study-momentum.ds-card,
+.dark .study-hub-completion-summary {
+  background: var(--ds-card);
+  border-color: var(--ds-line);
+  box-shadow: 0 8px 24px #070e1a1f;
+}
+
+.dark .study-dashboard-stat-copy > strong,
+.dark .study-dashboard-panel-head h2,
+.dark .study-dashboard-task-copy h3,
+.dark .study-dashboard-shortcut strong,
+.dark .study-momentum-head h2 { color: var(--ds-text); }
+.dark .study-dashboard-stat-copy > small,
+.dark .study-dashboard-task-copy p,
+.dark .study-dashboard-shortcut small,
+.dark .study-momentum-head p,
+.dark .study-momentum-head strong span { color: var(--ds-muted); }
+.dark .study-dashboard-panel-head > button,
+.dark .study-dashboard-account-link,
+.dark .study-momentum-head strong,
+.dark .study-momentum-details { color: var(--ds-dark-link); }
+
+.dark .study-dashboard-task,
+.dark .study-dashboard-shortcut { background: var(--ds-dark-inset); border-color: var(--ds-line); }
+.dark .study-dashboard-task.is-priority { background: #1c2e49; border-color: #426292; }
+.dark .study-dashboard-stat:hover,
+.dark .study-dashboard-shortcut:hover { border-color: #536f9c; box-shadow: 0 8px 20px #080f1f30; }
+.dark .study-dashboard-task-action button,
+.dark .study-hub-completion-summary .study-hub-tomorrow button { background: #253956; border-color: #3f587c; color: #b5cfff; }
+.dark .study-dashboard-task-action button:hover:not(:disabled) { background: #30496c; border-color: #7396cb; }
+.dark .study-dashboard-task-action button:disabled { background: #1b2535; color: #8493aa; border-color: var(--ds-line); }
+.dark .study-dashboard-task-status { color: #91d4b4; }
+
+.dark .study-dashboard-stat-icon,
+.dark .study-dashboard-task-icon,
+.dark .study-dashboard-shortcut-icon,
+.dark .study-momentum-icon { background: #263956; }
+.dark .study-dashboard-stat.is-lavender .study-dashboard-stat-icon,
+.dark .study-dashboard-task.is-lavender .study-dashboard-task-icon,
+.dark .study-dashboard-shortcut.is-lavender .study-dashboard-shortcut-icon { background: #342e4f; }
+.dark .study-dashboard-stat.is-peach .study-dashboard-stat-icon,
+.dark .study-dashboard-task.is-peach .study-dashboard-task-icon,
+.dark .study-dashboard-shortcut.is-peach .study-dashboard-shortcut-icon { background: #3d3230; }
+.dark .study-dashboard-stat.is-mint .study-dashboard-stat-icon,
+.dark .study-dashboard-shortcut.is-mint .study-dashboard-shortcut-icon { background: #203c3b; }
+.dark .study-dashboard-stat-icon svg { stroke: #b69aec; }
+
+.dark .study-momentum-days li > span { background: var(--ds-dark-inset); border-color: #35465f; color: #a4b3cc; }
+.dark .study-momentum-days .is-active > span { background: #294369; border-color: #4c70a6; color: #c1d6ff; }
+.dark .study-momentum-days [aria-current=date] > span { border-color: #88acff; color: #c1d6ff; box-shadow: 0 0 0 2px #7ea6ff15; }
+.dark .study-momentum-notice { background: #233b5e; color: #c1d6ff; }
+.dark .study-momentum-notice button { color: #b4c7e5; }
+.dark .study-hub-completion-summary span { background: #294164; color: #b5cfff; }
+.dark .study-hub-tomorrow { border-color: var(--ds-line); }
+.dark .study-hub-account-summary { background: var(--ds-card); border-color: var(--ds-line); box-shadow: none; }
+.dark .study-hub-account-summary::before { background: #739fff; }
+.dark .study-hub-account-summary span:last-child { color: var(--ds-muted); }
+
+/* Keep the adjacent training home in the same material system. */
+.dark .training-home-shell .ds-module-card { background: var(--ds-card); border-color: var(--ds-line); box-shadow: 0 8px 24px #070e1a1f; }
+.dark .training-home-shell .ds-module-card.is-active { background: #2f62d1; border-color: #729cff; }
+.dark .training-home-shell .ds-module-card h3 { color: var(--ds-text); }
+.dark .training-home-shell .ds-module-card p { color: var(--ds-muted); }
+.dark .training-home-shell .ds-module-card.is-active p { color: #e0eaff; }
+.dark .training-home-shell .ds-module-arrow { background: #2a3e5c; color: #b5cfff; }
+.dark .training-home-shell .ds-module-card:hover { border-color: #587db4; }
+.dark .training-home-shell .ds-hero-label { background: #2b4265; color: #bdd3ff; }
+.dark .training-home-shell .ds-motivation-band,
+.dark .training-home-shell .ds-stat-row,
+.dark .training-home-shell .training-picker-panel { background: var(--ds-card); border-color: var(--ds-line); box-shadow: none; }
+
+@media (max-width: 640px) {
+  .dark .study-home-shell.ds-app-layout,
+  .dark .training-home-shell.ds-app-layout { background: radial-gradient(ellipse at 100% 10%, #2d46651f, transparent 40%), var(--ds-background); }
+  .dark .ds-mobile-topbar .ds-icon-button { color: #becde3; }
+  .dark .ds-mobile-topbar .ds-theme-toggle { color: #a9c7ff; }
+  .dark .ds-mobile-bottom-nav { background: #192537ed; border-color: #8dadd12b; box-shadow: 0 9px 30px #050d2059; }
+  .dark .ds-mobile-bottom-nav .ds-mobile-nav-item { color: #a4b3cc; }
+  .dark .ds-mobile-bottom-nav .ds-mobile-nav-item.is-active { background: transparent; color: #a9c7ff; box-shadow: none; }
+  .dark .ds-mobile-bottom-nav .is-active .ds-mobile-nav-icon { background: #2a4165; box-shadow: inset 0 1px 0 #aecbff1a; }
+  .dark .study-carousel-card { box-shadow: inset 0 0 0 1px #a7c7ff0b, 0 12px 26px #060e1c30; }
+  .dark .study-carousel-card::before {
+    background: linear-gradient(180deg, #1b2b43ed, #17263ec4 52%, #1b2d49f5 92%), url('/images/ui-assets/mobile-learning-landscape-v1.png') 58% center / auto 100%;
+  }
+  .dark .study-carousel-eyebrow { background: #263e60ed; color: #c1d6ff; }
+  .dark .study-carousel-arrow { background: #23344ee8; }
+  .dark .training-home-content > .ds-hero-card.is-soft { background: transparent; }
+  .dark .training-main-modules .ds-module-card::before {
+    background: linear-gradient(90deg, #192334 3%, #192334ed 40%, #19233480), url('/images/ui-assets/mobile-learning-landscape-v1.png') center 65% / cover;
+  }
+  .dark .training-main-modules .ds-module-card .ds-module-arrow { background: #2a3e5cf0; color: #b5cfff; box-shadow: none; }
+  .dark .training-home-content > .ds-hero-card.is-soft .ds-hero-subtitle { color: var(--ds-muted); }
+  .dark .training-recommendations-head h2,
+  .dark .training-reading-card > strong { color: var(--ds-text); }
+  .dark .training-recommendations-head button { color: var(--ds-dark-link); }
+  .dark .training-reading-card { background: var(--ds-card); border-color: var(--ds-line); box-shadow: none; }
+  .dark .training-reading-card > img { filter: brightness(0.82) saturate(0.85); }
+  .dark .training-reading-tag { background: #263e60; border-color: #4a6385; color: #bdd3ff; }
+  .dark .training-reading-meta { color: var(--ds-muted); }
+}

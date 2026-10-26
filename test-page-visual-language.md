@@ -44,6 +44,18 @@ Rules:
 - Yellow/orange must stay small: stars, streaks, tiny highlights, matching mode accents, or selected detail marks.
 - Large page surfaces should remain white, light blue, or very soft tinted white.
 
+## Dark home companion (2026-10-26)
+
+The user requested a dark version of the existing home. Preserve its composition, spacing, real data and interactions; light remains the default and the visual benchmark.
+
+- Background: `#101724`; shared sidebar: `#121C2C`.
+- Card: `#192334`; raised controls: `#1E2B40`; inset rows: `#141E2E`.
+- Text: `#EDF3FF`; muted text: `#A4B3CC`; text links: `#9BBCFF`.
+- Keep the established primary blue buttons and selected navigation. Pastel mode colors become small muted icon surfaces or subtle carousel tints.
+- Keep existing transparent artwork; reduce brightness slightly and darken the mobile landscape behind real text. Do not invert the page or images.
+- Desktop and mobile share theme controls through the existing topbars. Restore the saved local preference on startup; do not force dark or follow the OS automatically.
+- Dark home and adjacent Training Center styles live in `src/styles/dark-home.css`; this is not a redesign of every learning, classroom or account screen.
+
 --------------------------------
 # PAGE COMPOSITION
 
@@ -75,6 +87,10 @@ Use the Test page card language everywhere:
 - shadow: soft blue-tinted shadow only
 - selected state: stronger blue border, soft blue glow, real check indicator if selection is needed
 - hover: small lift, stronger border, slightly stronger shadow
+
+Home light material: the existing carousel may use a translucent white-blue surface, restrained backdrop blur, thin white inner highlights and a soft blue shadow. Supporting dashboard panels use a lighter version of the same material. Keep foreground text and controls crisp; highlight layers must not intercept input. These light-only rules live in `study-dashboard.css` and do not override the dark companion or other page cards.
+
+Home carousel artwork: all four study previews use the frosted flashcard illustration as their material reference, with matching frosted review/book/target assets. Keep one shared artwork frame and opacity across cards in each responsive layout and theme. Do not restore per-module placement, scale or opacity fixes. Small task icons remain independent from hero artwork.
 
 Avoid:
 - heavy borders
