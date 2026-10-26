@@ -1,7 +1,9 @@
 import { StudentReadingAssignments } from './classroom/ReadingAssignments'
 import AppLayout from './layout/AppLayout'
-import { HeroCard } from './ui/Cards'
-import { PlanStatusCards, StatsRow } from './modules/LearningModules'
+import StudyCarousel from './home/StudyCarousel'
+import { DashboardStats, DashboardTasks, DashboardQuickStart } from './home/StudyDashboardPanels'
+import { buildStudyDeck, dashboardGreeting } from '../utils/studyDashboard.js'
+import '../styles/study-dashboard.css'
 import { calculateStudyStreak } from '../utils/learningMetrics'
 import { getAccountRoleLabel } from '../utils/classroom'
 import StudyMomentum from './StudyMomentum'
@@ -10,6 +12,7 @@ import { buildDailyPlan } from '../utils/dailyPlan.js'
 function StudyHub({
   onOpenWordStudy,
   onOpenTraining,
+  onOpenWordCatalog,
   onOpenReading,
   onOpenSuggestedReading,
   onOpenTodayReview,
@@ -48,49 +51,27 @@ function StudyHub({
 }) {
   const plan = buildDailyPlan({ reviewCount, wordsStudied: todayWordsLearned, target: newWordTarget,
     remaining: remainingWordCount, wordCount, readingCount, readingsCompleted: todayReadingsCompleted,
-    examAnswered: todayExamQuestionsAnswered, examCorrect: todayExamQuestionsCorrect, ready: planReady && rewardsReady });
-  const reviewTaskComplete = plan.tasks.review.complete;
+    examAnswered: todayExamQuestionsAnswered, examCorrect: todayExamQuestionsCorrect, ready: planReady && rewardsReady && !isPreparingWords });
   const newWordProgress = plan.tasks.words.progress;
   const readingTaskComplete = plan.tasks.reading.complete;
   const examTaskComplete = plan.tasks.exam.complete;
   const streak = calculateStudyStreak(studyHistory);
   const allDailyTasksComplete = plan.complete;
   const isSignedIn = Boolean(authUser?.email);
-  const priorities = {
-    review: {
-      title: '先清掉到期复习',
-      meta: `${reviewCount} 个词会影响记忆曲线`,
-      actionLabel: '开始复习',
-      onClick: onOpenTodayReview,
-    },
-    words: {
-      title: '补上今日新词',
-      meta: `词汇进度 ${newWordProgress} / ${plan.tasks.words.goal} 个`,
-      actionLabel: '去背单词',
-      onClick: onOpenWordStudy,
-    },
-    reading: {
-      title: '做一篇考试阅读',
-      meta: suggestedReading ? `${suggestedReading.examType || '阅读'} · ${suggestedReading.level || 'B2'} · ${suggestedReading.estimatedMinutes || 4} 分钟` : '选择一篇阅读，完成今天的阅读任务',
-      actionLabel: '开始阅读',
-      onClick: onOpenSuggestedReading || onOpenReading,
-    },
-    complete: {
-      title: '今天的学习闭环完成',
-      meta: '今天可用的学习任务已经完成',
-      actionLabel: '查看统计',
-      onClick: onOpenStatistics,
-    },
-    exam: {
-      title: '做一组考试巩固',
-      meta: `${plan.tasks.exam.answered} / ${plan.tasks.exam.goal} 题 · 测验、填空、拼写或配对`,
-      actionLabel: '开始练习',
-      onClick: onOpenExamPractice,
-    },
-    preparing: { title: planError ? '计划暂未准备好' : '正在准备今日计划', meta: '加载完成后显示当前学习进度', actionLabel: planError ? '重试' : '正在准备', onClick: planError ? onRetryPlan : undefined },
-    empty: { title: '从训练中心开始今天的学习', meta: '当前没有可安排的词汇或阅读内容', actionLabel: '去训练中心', onClick: onOpenTraining || onOpenWordStudy },
+  const cards = buildStudyDeck({ plan, categoryName: planCategoryName, remaining: remainingWordCount,
+    wordCount, suggestedReading, planError });
+  const actions = {
+    words: onOpenWordStudy,
+    review: onOpenTodayReview,
+    reading: onOpenSuggestedReading || onOpenReading,
+    exam: onOpenExamPractice,
+    statistics: onOpenStatistics,
+    training: onOpenTraining || onOpenWordStudy,
+    settings: onAdjustPlan,
+    retry: onRetryPlan || onOpenWordStudy,
   };
-  const priorityTask = priorities[plan.priority];
+  const act = action => actions[action]?.();
+  const catalog = onOpenWordCatalog || onOpenTraining || onOpenWordStudy;
   const tomorrowLabel = tomorrowPlan ? `${Number(tomorrowPlan.date.slice(5, 7))} 月 ${Number(tomorrowPlan.date.slice(8))} 日` : '';
 
   const navItems = [
@@ -140,11 +121,13 @@ function StudyHub({
 
   return (
     <AppLayout
+      className="study-home-shell"
       active="plan"
       navItems={navItems}
-      title="今日计划"
+      title={dashboardGreeting(authUser)}
       subtitle="坚持每天进步一点点，积累现在，收获未来"
       topbarProps={{
+        mobileBrand: true,
         onCalendar: onOpenStatistics,
         onNotify: onOpenWrongWords,
         notifyBadge: wrongCount ? String(Math.min(wrongCount, 9)) : undefined,
@@ -156,41 +139,11 @@ function StudyHub({
         sidebarProps: { studyHistory },
       }}
     >
-      <div className="ds-stack">
-        <HeroCard
-          soft
-          label={`每日进步一点点 · ${planCategoryName}`}
-          title="今天先做这一步"
-          subtitle={priorityTask.title}
-          meta={
-            <div className="study-hub-hero-actions">
-              <p>{priorityTask.meta}</p>
-              <p>
-                {isSignedIn
-                  ? `${authUser.email} · ${syncStatusText || '学习记录已连接账号'}`
-                  : '登录后可同步背词记录、阅读进度和错题统计'}
-              </p>
-              <div className="study-hub-hero-buttons" aria-label="今日计划操作">
-                <button type="button" className="study-hub-hero-button is-primary" onClick={priorityTask.onClick} disabled={!priorityTask.onClick || (priorityTask.onClick === onOpenWordStudy && isPreparingWords)}>
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M5 5.5A2.5 2.5 0 0 1 7.5 3H20v16H7.5A2.5 2.5 0 0 0 5 21.5Z" />
-                    <path d="M5 5.5v16" />
-                    <path d="M9 7h7" />
-                  </svg>
-                  <span>{priorityTask.onClick === onOpenWordStudy && isPreparingWords ? '正在准备词库' : priorityTask.actionLabel}</span>
-                </button>
-                <button type="button" className="study-hub-hero-button is-secondary" onClick={onAuthOpen}>
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <circle cx="12" cy="8" r="4" />
-                    <path d="M5 21a7 7 0 0 1 14 0" />
-                  </svg>
-                  <span>{isSignedIn ? '查看账号' : '登录保存进度'}</span>
-                </button>
-              </div>
-            </div>
-          }
-          illustrationSrc="/images/ui-assets/training-hero-flashcards-blue-v1.png"
-        />
+      <div className="ds-stack study-dashboard">
+        <div className="study-mobile-greeting">
+          <h1>{dashboardGreeting(authUser)}</h1>
+        </div>
+        <StudyCarousel cards={cards} initialId={plan.priority} onAction={act} />
 
         {authUser?.profileConfigured && authUser.role === 'student' && <StudentReadingAssignments userId={authUser.id} onStart={onStartAssignment} />}
 
@@ -201,27 +154,14 @@ function StudyHub({
           </div>
         )}
 
-        <PlanStatusCards
-          plan={plan}
-          reviewComplete={reviewTaskComplete}
-          reviewCount={reviewCount}
-          newWordProgress={newWordProgress}
-          newWordTarget={newWordTarget}
-          readingsCompleted={todayReadingsCompleted}
-          examQuestionsAnswered={todayExamQuestionsAnswered}
-          examQuestionsCorrect={todayExamQuestionsCorrect}
-          wordCount={wordCount}
-          categoryName={planCategoryName}
-          isPreparingWords={isPreparingWords}
-          onReview={onOpenTodayReview}
-          onWords={onOpenWordStudy}
-          onAdjustPlan={onAdjustPlan}
-          onReading={onOpenSuggestedReading || onOpenReading}
-          onExam={onOpenExamPractice}
-        />
-
-        <StatsRow streak={streak} target={newWordTarget} remaining={remainingWordCount} />
-        <StudyMomentum ownerId={authUser?.id} history={studyHistory} wordsDone={plan.tasks.words.goal > 0 && plan.tasks.words.complete} readingDone={readingTaskComplete} examDone={examTaskComplete} allDone={allDailyTasksComplete} ready={rewardsReady && planReady} />
+        <DashboardStats plan={plan} streak={streak} history={studyHistory} wordCount={wordCount} categoryName={planCategoryName}
+          onAdjustPlan={onAdjustPlan} onStatistics={onOpenStatistics} onCatalog={catalog} />
+        <div className="study-dashboard-workspace">
+          <DashboardTasks cards={cards} priority={plan.priority} ready={plan.priority !== 'preparing'} plan={plan} onAction={act} onAdjustPlan={onAdjustPlan} />
+          <DashboardQuickStart reviewCount={reviewCount} wrongCount={wrongCount} onReview={onOpenTodayReview} onCatalog={catalog}
+            onWrongWords={onOpenWrongWords} onExam={onOpenExamPractice} />
+        </div>
+        <StudyMomentum ownerId={authUser?.id} history={studyHistory} wordsDone={plan.tasks.words.goal > 0 && plan.tasks.words.complete} readingDone={readingTaskComplete} examDone={examTaskComplete} allDone={allDailyTasksComplete} ready={rewardsReady && planReady && !isPreparingWords} />
 
         {allDailyTasksComplete && (
           <section className="study-hub-completion-summary" aria-label="今日任务总结">
@@ -247,6 +187,7 @@ function StudyHub({
         )}
 
         <section className="study-hub-account-summary" aria-live="polite">
+          <button type="button" className="study-dashboard-account-link" onClick={onAuthOpen}>{isSignedIn ? '查看账号' : '登录保存进度'}</button>
           <span>{authUser?.email ? `当前账号：${authUser.email}` : syncStatusText || '当前未登录'}</span>
           {accountNotice && (
             <span className={`is-${accountNotice.type || 'info'}`}>{accountNotice.message}</span>

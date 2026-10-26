@@ -2536,6 +2536,7 @@ function AppContent() {
             onOpenWordStudy={handleStartPlanLearning}
             onStartAssignment={handleStartReadingAssignment}
             onOpenTraining={handleBackToHome}
+            onOpenWordCatalog={handleOpenWordStudy}
             onOpenReading={handleOpenReadingList}
             onOpenSuggestedReading={handleOpenSuggestedReading}
             onOpenTodayReview={handleOpenTodayReview}

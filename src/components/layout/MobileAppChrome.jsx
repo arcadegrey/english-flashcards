@@ -8,13 +8,14 @@ export function MobileTopbar({
   notifyBadge,
   onVoiceSettings,
   onUserClick,
+  mobileBrand = false,
 }) {
   return (
-    <header className="ds-mobile-topbar">
+    <header className={`ds-mobile-topbar ${mobileBrand ? 'is-brand-header' : ''}`}>
       <button type="button" className="ds-mobile-avatar-button" aria-label="账号" onClick={onUserClick}>
         <span className="ds-avatar" aria-hidden="true">Aa</span>
       </button>
-      <h1>{title}</h1>
+      {mobileBrand ? <div className="ds-mobile-brand"><strong>英语单词</strong><span>English Flashcards</span></div> : <h1>{title}</h1>}
       <div className="ds-mobile-actions">
         {onCalendar && <IconButton label="日历" onClick={onCalendar}>{appShellIcons.calendar}</IconButton>}
         {onVoiceSettings && (
@@ -48,10 +49,11 @@ export function MobileBottomNav({ active, items = [], onUserClick }) {
           key={item.id}
           type="button"
           className={`ds-mobile-nav-item ${active === item.id ? 'is-active' : ''}`}
+          aria-current={active === item.id ? 'page' : undefined}
           onClick={item.onClick}
         >
           <span className="ds-mobile-nav-icon" aria-hidden="true">
-            {appShellIcons[item.icon] || appShellIcons.plan}
+            {appShellIcons[item.id === 'training' ? 'reading' : item.icon] || appShellIcons.plan}
           </span>
           <span className="ds-mobile-nav-label">
             {item.id === 'plan' ? '今日' : item.id === 'training' ? '训练' : item.label}

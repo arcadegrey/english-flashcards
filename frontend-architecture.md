@@ -46,8 +46,11 @@ Build a scalable production edtech SaaS frontend using the shared design system.
 今日计划:
 
 ```text
-AppLayout -> HeroCard -> PlanStatusCards -> StatsRow -> Status summary
+AppLayout -> StudyCarousel -> DashboardStats -> DashboardTasks / DashboardQuickStart
+          -> StudyMomentum -> completion / tomorrow forecast -> account summary
 ```
+
+The homepage carousel is the user-approved dashboard direction from 2026-10-26. It previews the current real study plan and daily tasks; dragging changes only local preview state. Use `src/components/home/StudyCarousel.jsx` and `StudyDashboardPanels.jsx`, with presentation models in `src/utils/studyDashboard.js`. Existing daily-plan eligibility, completion, timezone, storage and sync contracts remain authoritative. See `docs/study-dashboard-2026-10-26.md`. Mobile home/training styling is scoped in `src/styles/mobile-learning.css` and the mobile rules of `study-dashboard.css`; shared `MobileAppChrome` remains authoritative. Recommended reading cards consume the supplied library and reuse the existing reading-session callback without persisted state. See `docs/mobile-learning-2026-10-26.md`.
 
 训练中心:
 

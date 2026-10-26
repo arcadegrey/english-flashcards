@@ -49,6 +49,14 @@ Rules:
 
 ## Module Components
 
+今日计划 dashboard (user-approved 2026-10-26):
+
+- `home/StudyCarousel.jsx`: real draggable study previews, arrows/dots/keyboard and snap behavior; no autoplay or storage writes while previewing.
+- `home/StudyDashboardPanels.jsx`: real daily targets, streak, recorded duration, vocabulary count, task rows and quick actions.
+- Reuse `BaseCard`, `PrimaryButton` and `LinearProgress`, existing transparent decorative PNGs, and the shared `AppLayout` chrome.
+- Keep original weekly rewards, student assignments, completion summary and tomorrow forecast. Account names come from the current authenticated user; reference-image names and lesson data are not product defaults.
+- Mobile uses shared brand chrome and four destinations. At 640px and below, keep the home greeting compact, study preview cards at 316px, and stats in two columns. Training uses the same four ModuleCards as illustrated rows; `reading/RecommendedReadings.jsx` displays real library entries and opens the existing reading session.
+
 Core module surfaces:
 
 - `VocabularyModule`

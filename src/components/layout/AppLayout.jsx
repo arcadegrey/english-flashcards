@@ -1,6 +1,7 @@
 import Sidebar from './Sidebar';
 import Topbar from './Topbar';
 import { MobileBottomNav, MobileTopbar } from './MobileAppChrome';
+import '../../styles/mobile-learning.css';
 
 export { Sidebar, Topbar, MobileBottomNav, MobileTopbar };
 

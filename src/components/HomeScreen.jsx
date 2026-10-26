@@ -7,6 +7,7 @@ import { MotivationBand, StatsRow } from './modules/LearningModules';
 import { ReadingPickerContent } from './reading/ReadingPicker';
 import { buildReadingLevelOptions } from './reading/readingPickerModel';
 import { calculateStudyStreak } from '../utils/learningMetrics';
+import RecommendedReadings from './reading/RecommendedReadings';
 
 const UI_ASSETS = {
   hero: '/images/ui-assets/training-hero-flashcards-blue-v1.png',
@@ -218,6 +219,7 @@ function HomeScreen({
       id: 'all',
       variant: 'vocabulary',
       title: '背单词',
+      helper: '从常用词到考试词汇，逐步积累',
       meta: `${wordCounts.all || 0} 词可学`,
       artSrc: UI_ASSETS.vocabulary,
       onClick: handleOpenWordPicker,
@@ -226,6 +228,7 @@ function HomeScreen({
       id: 'reading',
       variant: 'reading',
       title: '做阅读',
+      helper: '通过真实文章提升理解能力',
       meta: `${readingCount} 篇短文`,
       artSrc: UI_ASSETS.reading,
       onClick: handleOpenReadingPicker,
@@ -234,6 +237,7 @@ function HomeScreen({
       id: 'review',
       variant: 'review',
       title: '今日复习',
+      helper: '跟随记忆节奏，巩固已学词汇',
       meta: `${todayReviewWordIds.length} 个到期词`,
       artSrc: UI_ASSETS.review,
       onClick: onOpenTodayReview,
@@ -242,7 +246,8 @@ function HomeScreen({
       id: 'test',
       variant: 'test',
       title: '做测试',
-      meta: '挑战自我，检验学习成效',
+      helper: '多种题型，检验你的学习成果',
+      meta: '测验 · 填空 · 拼写 · 连线',
       artSrc: UI_ASSETS.target,
       onClick: onOpenExamPractice,
     },
@@ -250,11 +255,13 @@ function HomeScreen({
 
   return (
     <AppLayout
+      className="training-home-shell"
       active="training"
       navItems={navItems}
       title="训练中心"
       subtitle="想自由切换时，可以从这里进入任意模块。"
       topbarProps={{
+        mobileBrand: true,
         onCalendar: onOpenStatistics,
         onNotify: onOpenWrongWords,
         notifyBadge: wrongWordIds.length ? String(Math.min(wrongWordIds.length, 9)) : undefined,
@@ -266,18 +273,19 @@ function HomeScreen({
         sidebarProps: { studyHistory },
       }}
     >
-      <div className="ds-stack">
+      <div className="ds-stack training-home-content">
         <HeroCard
           soft
           label="English Flashcards"
-          title="全部训练入口"
-          subtitle="想自由切换时，可以从这里进入任意模块。"
+          title={<><span className="training-desktop-copy">全部训练入口</span><span className="training-mobile-copy">学习</span></>}
+          subtitle={<><span className="training-desktop-copy">想自由切换时，可以从这里进入任意模块。</span><span className="training-mobile-copy">选择感兴趣的内容，开始学习吧。</span></>}
           illustrationSrc={UI_ASSETS.hero}
         />
 
-        <section className="ds-module-grid" aria-label="训练模块">
+        <section className="ds-module-grid training-main-modules" aria-label="训练模块">
           {mainModules.map((module) => (
-            <ModuleCard key={module.id} {...module} />
+            <ModuleCard key={module.id} variant={module.variant} title={module.title} artSrc={module.artSrc} onClick={module.onClick}
+              meta={<><span className="training-module-helper">{module.helper}</span><span>{module.meta}</span></>} />
           ))}
         </section>
 
@@ -329,6 +337,11 @@ function HomeScreen({
           />
           <ReadingReviewPanel key={authUser?.id || 'guest'} userId={authUser?.id} onRetry={onRetryReading} />
         </BaseCard>
+
+        <RecommendedReadings readings={readings} onOpenArticle={(article) => {
+          if (typeof onOpenReadingSession === 'function') onOpenReadingSession(article.id);
+          else handleOpenReadingPicker();
+        }} />
 
         <MotivationBand />
 
