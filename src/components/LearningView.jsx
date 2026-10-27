@@ -11,6 +11,7 @@ import { calculateStudyStreak, getWeekStudyDays } from '../utils/learningMetrics
 import { getExamVocabulary, getPlanVocabulary } from '../utils/studyPlan';
 import { getCategoryById } from '../data/categories';
 import '../styles/word-learning-refresh.css';
+import '../styles/test-workspace.css';
 
 function LearningView({
   mode,
@@ -397,28 +398,7 @@ function LearningView({
       }}
     >
       <main ref={mainRef} className="learn-refresh-main learn-refresh-main--assessment">
-        <section className="assessment-study-shell" aria-label="测试进行中">
-          <div className="assessment-control-card" aria-label="考试控制">
-            <button type="button" className="assessment-back-button" onClick={onBack}>
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M19 12H5" />
-                <path d="m12 19-7-7 7-7" />
-              </svg>
-              <span>返回</span>
-            </button>
-
-            <div className="assessment-question-count">{currentModeMeta.label} · 每组 20 次</div>
-
-            <div className="assessment-control-actions">
-              <QuickMenu
-                mode={mode}
-                onOpenMode={setMode}
-                onOpenReading={onOpenReading}
-                onSlowSpeechChange={setToast}
-              />
-            </div>
-          </div>
-
+        <section className={`assessment-study-shell test-workspace is-${mode}`} aria-label="测试进行中">
           <AssessmentSession
             key={`${mode}:${examCategory}:${examScope}`}
             mode={mode}
@@ -427,6 +407,7 @@ function LearningView({
             vocabulary={examVocabulary}
             optionVocabulary={examOptionVocabulary}
             sourceLabel={examSourceTitle}
+            tools={<QuickMenu mode={mode} onOpenMode={setMode} onOpenReading={onOpenReading} onSlowSpeechChange={setToast} />}
             onAddMastered={onAddMastered}
             onWrongAnswer={onWrongAnswer}
             onAnswer={onAssessmentAnswer}

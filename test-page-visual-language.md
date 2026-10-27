@@ -155,3 +155,14 @@ For every page converted to this direction:
 - mobile `390px` width should have no clipped text or overlapping controls
 - generated assets must remain decorative only
 - UI-only changes must preserve app logic, routes, storage, sync, progress, and learning behavior; requested functional changes require relevant tests and compatibility checks
+
+## Test workspace refinement (2026-10-27)
+
+The test entry and all four practice modes now follow the same calm white-blue system as home and Training Center. Scope these refinements with `test-center` / `test-workspace` in `src/styles/test-workspace.css`.
+
+- Entry: compact scope choices with real counts and a blue selected state, followed by four shared `ModuleCard` actions and existing history. The scope action reads “选择题型”; only choosing a mode starts a practice. Do not restore the decorative scope-position progress bar.
+- Practice: one content-level control strip combines mode/scope, return/menu/finish actions and the real 0–20 answer-attempt progress. Keep shared app chrome and one primary white question card. Use local semantic colors only for feedback and small mode artwork.
+- Long words scale within the question or pairing cell. Mobile matching keeps two columns; supporting metrics remain in normal document flow and can scroll clear of the shared floating navigation.
+- Result: use the existing circular progress primitive for actual accuracy, show saved answer/correct/consolidation counts, and expose the current group's saved mistakes in an expandable list. Keep “再练一组” / “返回测试” and the real local/cloud save state.
+- Per-round counters retain their original semantics and are labeled “本轮”; the session progress and result include resumed answers. No invented mastery, rankings, timing scores or new storage formats.
+- Light/dark themes and reduced-motion support are required; check the production build as well as the dev server because older learning styles can arrive in a different order.

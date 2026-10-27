@@ -217,7 +217,7 @@ function MatchingTest({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAn
   const accuracy = attemptCount > 0 ? Math.round((score / attemptCount) * 100) : 0;
 
   return (
-    <div className="space-y-4 pb-[108px] md:space-y-5 md:pb-[124px]">
+    <div className="test-question-stage">
       <CorrectAnswerCelebration trigger={celebrationTrigger} />
 
       <section className="learn-refresh-card learn-refresh-card-enter matching-refresh-card">
@@ -275,7 +275,7 @@ function MatchingTest({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAn
                   <span className="matching-refresh-index">
                     {String.fromCharCode(65 + index)}
                   </span>
-                  <span className="matching-refresh-word-main">{word.word}</span>
+                  <span className="matching-refresh-word-main" style={{ '--match-word-length': Math.max(8, word.word.length) }}>{word.word}</span>
                   <span className="matching-refresh-word-sub">{word.phonetic || 'N/A'}</span>
                 </button>
               );
@@ -332,11 +332,11 @@ function MatchingTest({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAn
             </span>
           </div>
           <div className="learn-refresh-assessment-stat">
-            <span className="learn-refresh-assessment-stat-label">连击</span>
+            <span className="learn-refresh-assessment-stat-label">本轮连击</span>
             <span className="learn-refresh-assessment-stat-value">{streak}</span>
           </div>
           <div className="learn-refresh-assessment-stat">
-            <span className="learn-refresh-assessment-stat-label">正确率</span>
+            <span className="learn-refresh-assessment-stat-label">本轮正确率</span>
             <span className="learn-refresh-assessment-stat-value">{accuracy}%</span>
           </div>
         </div>

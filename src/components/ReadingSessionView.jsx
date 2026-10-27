@@ -9,6 +9,7 @@ import { speak, speakWord } from '../utils/speech';
 import { isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from '../utils/readingText';
 import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
 import { useWordDetails } from '../hooks/useWordDetails.js';
+import '../styles/reading-question-options.css';
 
 function ReadingSessionView({
   article,
@@ -378,6 +379,7 @@ function ReadingSessionView({
                                 <button
                                   key={option.id}
                                   type="button"
+                                  aria-pressed={isSelected}
                                   disabled={Boolean(assignment?.submittedAt) || submissionBusy}
                                   className={[
                                     'reading-question-option',
@@ -393,7 +395,10 @@ function ReadingSessionView({
                                   }
                                 >
                                   <span className="reading-question-option-key">{option.id}</span>
-                                  <span>{option.label}</span>
+                                  <span className="reading-question-option-label">{option.label}</span>
+                                  <span className="reading-question-option-mark" aria-hidden="true">
+                                    {isSelected && <svg viewBox="0 0 20 20"><path d={answerState?.isCorrect === false ? 'm6 6 8 8M14 6l-8 8' : 'm5 10 3 3 7-7'} /></svg>}
+                                  </span>
                                 </button>
                               );
                             })}

@@ -1,5 +1,8 @@
-import LoadingState, { LoadingAnimation } from './ui/LoadingState';
-import AssetImage from './ui/AssetImage';
+import LoadingState from './ui/LoadingState';
+import { useRef } from 'react';
+import { BaseCard, ModuleCard } from './ui/Cards';
+import { SecondaryButton } from './ui/Buttons';
+import '../styles/test-workspace.css';
 import AppLayout from './layout/AppLayout';
 import QuickMenu from './QuickMenu';
 import ExamHistoryPanel from './assessment/ExamHistoryPanel';
@@ -10,7 +13,7 @@ const EXAM_MODES = [
     iconSrc: '/images/ui-assets/exam-mode-quiz-blue-v1.png',
     title: '测验',
     meta: '选择正确释义',
-    helper: '适合快速确认单词含义，训练即时反应。',
+    helper: '看单词，选择对应的中文释义。',
     tone: 'blue',
   },
   {
@@ -18,7 +21,7 @@ const EXAM_MODES = [
     iconSrc: '/images/ui-assets/exam-mode-fillblank-violet-v1.png',
     title: '填空',
     meta: '根据例句补全单词',
-    helper: '把词义放回语境里，强化真实使用感。',
+    helper: '结合例句，找出缺少的单词。',
     tone: 'violet',
   },
   {
@@ -26,7 +29,7 @@ const EXAM_MODES = [
     iconSrc: '/images/ui-assets/exam-mode-spelling-cyan-v1.png',
     title: '拼写',
     meta: '听发音拼写单词',
-    helper: '连接发音与字形，适合考前查漏。',
+    helper: '播放发音，输入你听到的单词。',
     tone: 'cyan',
   },
   {
@@ -34,7 +37,7 @@ const EXAM_MODES = [
     iconSrc: '/images/ui-assets/exam-mode-matching-orange-v1.png',
     title: '连线',
     meta: '单词和释义配对',
-    helper: '用配对节奏做整组复盘，适合大范围扫盲。',
+    helper: '将一组单词与释义逐一配对。',
     tone: 'orange',
   },
 ];
@@ -109,13 +112,12 @@ function ExamPracticeView({
     : scope);
   const selectedScopeMeta = scopes.find((item) => item.id === selectedScope) || scopes[0];
   const selectedScopeCount = selectedScopeMeta.getCount(scopeCounts);
-  const activeScopeIndex = Math.max(
-    0,
-    EXAM_SCOPES.findIndex((item) => item.id === selectedScope)
-  );
-  const focusModeOptions = (event) => {
-    event.stopPropagation();
-    document.querySelector('.exam-mode-card')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const modePanelRef = useRef(null);
+  const modeHeadingRef = useRef(null);
+  const focusModeOptions = () => {
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    modePanelRef.current?.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'start' });
+    modeHeadingRef.current?.focus({ preventScroll: true });
   };
 
   return (
@@ -126,117 +128,47 @@ function ExamPracticeView({
       subtitle={`${categoryName} · 选择范围和题型，开始一组巩固练习。`}
       topbarProps={topbarProps}
     >
-      <div className="exam-page ds-stack">
-        <section className="exam-scope-card ds-card" aria-label="考试范围">
-          <div className="exam-section-head">
-            <div>
-              <h3>选择测试范围</h3>
-              <p>当前计划：{categoryName}。以下范围都限定在该词库内。</p>
+      <div className="exam-page ds-stack test-center">
+        <BaseCard className="test-scope-panel" aria-label="考试范围">
+          <header className="test-panel-heading">
+            <div><span className="test-eyebrow">当前计划 · {categoryName}</span><h2>选择测试范围</h2></div>
+            <div className="test-content-actions" aria-label="考试操作">
+              <SecondaryButton onClick={onBack}>返回今日计划</SecondaryButton>
+              <SecondaryButton loading={syncing} onClick={onSyncAccount}>{syncing ? '同步中…' : '同步进度'}</SecondaryButton>
+              <QuickMenu mode={mode} onOpenMode={onOpenMode} onOpenReading={onOpenReading} />
             </div>
-            <div className="exam-section-tools">
-              <span className="exam-section-pill">{selectedScopeMeta.label} · {selectedScopeCount} 词</span>
-              <div className="exam-section-actions" aria-label="考试操作">
-                <button type="button" className="exam-back-button" onClick={onBack}>
-                  返回今日计划
-                </button>
-                <button type="button" className="exam-sync-button" onClick={onSyncAccount} disabled={syncing} aria-busy={syncing || undefined}>
-                  {syncing && <LoadingAnimation compact />}
-                  同步进度
-                </button>
-                <QuickMenu mode={mode} onOpenMode={onOpenMode} onOpenReading={onOpenReading} />
-              </div>
-            </div>
+          </header>
+          <div className="test-scope-options" role="group" aria-label="测试范围">
+            {scopes.map(item => <button key={item.id} type="button"
+              className={`test-scope-choice ${selectedScope === item.id ? 'is-selected' : ''}`}
+              aria-pressed={selectedScope === item.id} onClick={() => onSelectScope?.(item.id)}>
+              <span className="test-scope-symbol" aria-hidden="true">{item.icon}</span>
+              <span className="test-scope-name">{item.label}</span>
+              <strong>{item.getCount(scopeCounts).toLocaleString('zh-CN')}<small>词</small></strong>
+              <span className="test-scope-selected" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="m5 10 3 3 7-7" /></svg></span>
+            </button>)}
           </div>
+          <div className="test-scope-footer">
+            <p>{selectedScopeMeta.helper}<span>当前可选 {selectedScopeCount.toLocaleString('zh-CN')} 词。</span></p>
+            <SecondaryButton onClick={focusModeOptions}>选择题型<svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4" /></svg></SecondaryButton>
+          </div>
+        </BaseCard>
 
-          <div className="exam-scope-grid">
-            {scopes.map((item, index) => {
-              const count = item.getCount(scopeCounts);
-              const isActive = selectedScope === item.id;
-              return (
-                <div
-                  key={item.id}
-                  className={`exam-scope-option-shell ${isActive ? 'is-active' : ''}`}
-                  style={{ '--scope-index': index }}
-                >
-                  <button
-                    type="button"
-                    className={`exam-scope-option is-${item.tone} ${isActive ? 'is-active' : ''}`}
-                    onClick={() => onSelectScope?.(item.id)}
-                  >
-                    <span className="exam-scope-icon" aria-hidden="true">{item.icon}</span>
-                    <span className="exam-scope-copy">
-                      <span className="exam-scope-label">{item.label}</span>
-                      <span>{item.title}</span>
-                      <small>{item.helper}</small>
-                    </span>
-                    <strong>{count} 词</strong>
-                    <span className="exam-scope-check" aria-hidden="true">
-                      <svg viewBox="0 0 24 24">
-                        <path d="m6 12 4 4 8-8" />
-                      </svg>
-                    </span>
-                  </button>
-                  {isActive && (
-                    <button
-                      type="button"
-                      className="exam-scope-start"
-                      onClick={focusModeOptions}
-                    >
-                      开始测试
-                    </button>
-                  )}
-                </div>
-              );
-            })}
+        <BaseCard ref={modePanelRef} className="test-mode-panel" aria-label="考试模式">
+          <header className="test-panel-heading">
+            <div><h2 ref={modeHeadingRef} tabIndex={-1}>选择练习方式</h2><p>每组最多 20 次答题，可以提前结束并保存。</p></div>
+            <span className="test-scope-summary">{selectedScopeMeta.label} · {selectedScopeCount.toLocaleString('zh-CN')} 词</span>
+          </header>
+          {isPreparing && <LoadingState variant="inline" className="test-preparation" title={`正在准备${categoryName === '全部单词' ? '全范围词库' : categoryName}`} />}
+          {preparationError && <div className="test-preparation is-error" role="alert"><span>{preparationError}</span><SecondaryButton onClick={onRetryPreparation}>重试</SecondaryButton></div>}
+          {!isPreparing && !preparationError && selectedScopeCount === 0 && <p className="test-preparation" role="status">当前范围暂无单词，可以切换范围后继续。</p>}
+          <div className="test-mode-grid">
+            {EXAM_MODES.map(item => <ModuleCard key={item.id} variant={item.tone}
+              title={item.title} meta={<><span className="test-mode-meta">{item.meta}</span><span className="test-mode-helper">{item.helper}</span></>}
+              iconSrc={item.iconSrc} disabled={isPreparing || selectedScopeCount === 0}
+              onClick={() => onSelectMode?.(item.id, selectedScope)} />)}
           </div>
-
-          <div className="exam-scope-track" aria-hidden="true">
-            <span style={{ '--scope-progress': `${((activeScopeIndex + 1) / EXAM_SCOPES.length) * 100}%` }} />
-          </div>
-        </section>
-
-        <section className="exam-mode-card ds-card" aria-label="考试模式">
-          <div className="exam-section-head">
-            <div>
-              <h3>选择练习方式</h3>
-              <p>每一种模式都会保留原来的答题逻辑和学习进度记录。</p>
-            </div>
-            {isPreparing && <LoadingState variant="inline" className="exam-empty-note" title={`正在准备${categoryName === '全部单词' ? '全范围词库' : categoryName}`} />}
-            {preparationError && (
-              <div className="exam-section-actions exam-preparation-feedback" role="alert">
-                <span className="exam-empty-note">{preparationError}</span>
-                <button type="button" className="exam-back-button" onClick={onRetryPreparation}>重试</button>
-              </div>
-            )}
-            {!isPreparing && selectedScopeCount === 0 && <span className="exam-empty-note">当前范围暂无单词</span>}
-          </div>
-
-          <div className="exam-mode-grid">
-            {EXAM_MODES.map((item) => (
-              <button
-                key={item.id}
-                type="button"
-                className={`exam-mode-option is-${item.tone}`}
-                onClick={() => onSelectMode?.(item.id, selectedScope)}
-                disabled={isPreparing || selectedScopeCount === 0}
-              >
-                <span className="exam-mode-icon" aria-hidden="true">
-                  <AssetImage src={item.iconSrc} alt="" loading="lazy" />
-                </span>
-                <span className="exam-mode-copy">
-                  <strong>{item.title}</strong>
-                  <span>{item.meta}</span>
-                  <small>{item.helper}</small>
-                </span>
-                <span className="exam-mode-arrow" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M9 5l7 7-7 7" />
-                  </svg>
-                </span>
-              </button>
-            ))}
-          </div>
-        </section>
+        </BaseCard>
         <ExamHistoryPanel />
       </div>
     </AppLayout>

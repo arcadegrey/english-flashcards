@@ -109,7 +109,7 @@ function FillBlank({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswe
   const accuracy = questionCount > 0 ? Math.round((score / questionCount) * 100) : 0;
 
   return (
-    <div className="space-y-4 pb-[108px] md:space-y-5 md:pb-[124px]">
+    <div className="test-question-stage">
       <CorrectAnswerCelebration trigger={celebrationTrigger} />
 
       <section className="learn-refresh-card learn-refresh-card-enter">
@@ -189,15 +189,15 @@ function FillBlank({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswe
       <footer className="learn-refresh-assessment-dock">
         <div className="learn-refresh-assessment-dock-inner">
           <div className="learn-refresh-assessment-stat">
-            <span className="learn-refresh-assessment-stat-label">得分</span>
+            <span className="learn-refresh-assessment-stat-label">本轮答对</span>
             <span className="learn-refresh-assessment-stat-value">{score}</span>
           </div>
           <div className="learn-refresh-assessment-stat">
-            <span className="learn-refresh-assessment-stat-label">连击</span>
+            <span className="learn-refresh-assessment-stat-label">本轮连击</span>
             <span className="learn-refresh-assessment-stat-value">{streak}</span>
           </div>
           <div className="learn-refresh-assessment-stat">
-            <span className="learn-refresh-assessment-stat-label">正确率</span>
+            <span className="learn-refresh-assessment-stat-label">本轮正确率</span>
             <span className="learn-refresh-assessment-stat-value">{accuracy}%</span>
           </div>
         </div>

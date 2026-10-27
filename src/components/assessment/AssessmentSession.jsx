@@ -1,10 +1,12 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Quiz from '../Quiz';
 import FillBlank from '../FillBlank';
 import SpellingTest from '../SpellingTest';
 import MatchingTest from '../MatchingTest';
 import { PrimaryButton, SecondaryButton } from '../ui/Buttons';
-import { EXAM_ROUND_SIZE, createExamAttempt } from '../../../shared/examAttempts.js';
+import { BaseCard } from '../ui/Cards';
+import { CircularProgress } from '../ui/Progress';
+import { EXAM_ROUND_SIZE, EXAM_MODE_LABELS, createExamAttempt } from '../../../shared/examAttempts.js';
 import { useExamHistory } from '../../context/exam-history-context';
 import { examDraftKey } from '../../utils/examHistory';
 import { practiceVocabulary } from '../../../shared/vocabularyPracticePolicy.js';
@@ -20,7 +22,7 @@ function readDraft(key, meta, history) {
   return { ...meta, id: crypto.randomUUID(), startedAt: new Date().toISOString(), answers: [] };
 }
 
-export default function AssessmentSession({ mode, category, scope, vocabulary, optionVocabulary, sourceLabel, onAddMastered, onWrongAnswer, onAnswer, onBack }) {
+export default function AssessmentSession({ mode, category, scope, vocabulary, optionVocabulary, sourceLabel, onAddMastered, onWrongAnswer, onAnswer, onBack, tools }) {
   const history = useExamHistory();
   const key = examDraftKey(history.ownerId, mode, category, scope);
   const [draft, setDraft] = useState(() => readDraft(key, { mode, category, scope }, history));
@@ -31,6 +33,10 @@ export default function AssessmentSession({ mode, category, scope, vocabulary, o
   const [result, setResult] = useState(null);
   const [error, setError] = useState('');
   const [storageFailed, setStorageFailed] = useState(false);
+  const resultHeadingRef = useRef(null);
+  useEffect(() => {
+    if (result) resultHeadingRef.current?.focus({ preventScroll: true });
+  }, [result]);
   const finish = (value = latest.current) => {
     if (!value.answers.length) return;
     try {
@@ -61,21 +67,44 @@ export default function AssessmentSession({ mode, category, scope, vocabulary, o
   const count = draft.answers.length;
   const savedResult = result && (history.attempts.find(item => item.id === result.id) || result);
   const canAnswer = !result && !storageFailed && count < EXAM_ROUND_SIZE;
+  const wrongAnswers = savedResult?.answers.filter(item => !item.correct) || [];
   return <>
-    <div className="assessment-progress-row" aria-label={result ? `本次 ${count} 次答题已保存` : `本次已答 ${count} / ${EXAM_ROUND_SIZE} 次`}>
-      <div className="assessment-progress-track" aria-hidden="true"><span style={{ width: `${result ? 100 : count / EXAM_ROUND_SIZE * 100}%` }} /></div><strong>{result ? `${count} 次已保存` : `${count} / ${EXAM_ROUND_SIZE}`}</strong>
-    </div>
-    <div className="assessment-history-status">
-      <span>{result ? '本次成绩已保存' : storageFailed ? '答题暂存于内存，请先重试保存' : count ? `已记录 ${count} 次答题，可稍后回到相同模式续答` : '每组最多 20 次答题，也可提前结束'}{mode === 'matching' ? ' · 每次配对尝试计一次' : ''}{pool.length < vocabulary.length ? ' · 历史语境识读词不参与出题' : ''}</span>
-      {!result && <SecondaryButton disabled={!count} onClick={() => finish()}>结束本次</SecondaryButton>}
-    </div>
+    <BaseCard className="test-session-header" aria-label="练习进度与操作">
+      <div className="test-session-toolbar">
+        <SecondaryButton className="test-session-back" aria-label="返回" onClick={onBack}><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 10H4m5-5-5 5 5 5" /></svg><span>返回</span></SecondaryButton>
+        <div className="test-session-identity"><h2>{EXAM_MODE_LABELS[mode]}</h2><p>{sourceLabel}</p></div>
+        <div className="test-session-tools">
+          {!result && <SecondaryButton disabled={!count} onClick={() => finish()}>结束本次</SecondaryButton>}
+          {tools}
+        </div>
+      </div>
+      <div className="assessment-progress-row" role="progressbar" aria-label="本次答题进度" aria-valuemin={0} aria-valuemax={EXAM_ROUND_SIZE} aria-valuenow={count}
+        aria-valuetext={result ? `本次 ${count} 次答题已保存` : `已答 ${count} / ${EXAM_ROUND_SIZE} 次`}>
+        <div className="assessment-progress-track" aria-hidden="true"><span style={{ width: `${count / EXAM_ROUND_SIZE * 100}%` }} /></div>
+        <strong>{result ? `${count} 次已保存` : `已答 ${count} / ${EXAM_ROUND_SIZE} 次`}</strong>
+      </div>
+      <p className="test-session-note">{result ? '本次练习已结束，成绩已保留。' : storageFailed ? '答题暂存于内存，请先重试保存。' : count ? `已记录 ${count} 次答题，可回到相同模式续答。` : '每组最多 20 次答题，也可提前结束。'}{mode === 'matching' ? ' 每次配对尝试计一次。' : ''}{pool.length < vocabulary.length ? ' 历史语境识读词不参与出题。' : ''}</p>
+    </BaseCard>
     {error && <div className="classroom-alert" role="alert">{error}<SecondaryButton onClick={count >= EXAM_ROUND_SIZE ? () => finish() : retry}>重试保存</SecondaryButton></div>}
     {history.error && <p className="classroom-helper" role="status">成绩已保留本机，云端暂未同步。可在测试页点击“同步成绩”重试。</p>}
-    {result ? <section className="ds-card assessment-result" aria-label="本次测试结果">
-      <span className="classroom-badge">自主练习完成</span><h2>{Math.round(savedResult.questionsCorrect / savedResult.questionsAnswered * 100)}%</h2><p>答对 {savedResult.questionsCorrect} / {savedResult.questionsAnswered} 次 · {savedResult.questionsAnswered - savedResult.questionsCorrect} 次需要巩固</p>
-      <p className="classroom-helper">{history.ownerId ? history.pending.includes(result.id) ? '本机已保存，正在等待同步；同步后班级老师可查看。' : '成绩已同步，当前班级老师可查看。' : '访客成绩已保存到当前设备。'}</p>
-      <div className="classroom-actions"><PrimaryButton onClick={nextRound}>再练一组</PrimaryButton><SecondaryButton onClick={onBack}>返回测试</SecondaryButton></div>
-    </section> : canAnswer && <AssessmentQuestions key={draft.id} mode={mode} vocabulary={pool} optionVocabulary={options} sourceLabel={sourceLabel} onAddMastered={onAddMastered} onWrongAnswer={onWrongAnswer} onAnswer={answer} />}
+    {result ? <BaseCard className="assessment-result test-result" aria-label="本次测试结果">
+      <div className="test-result-summary">
+        <CircularProgress value={Math.round(savedResult.questionsCorrect / savedResult.questionsAnswered * 100)} label="正确率" />
+        <div className="test-result-copy"><span className="test-eyebrow">{EXAM_MODE_LABELS[mode]} · 自主练习</span><h2 ref={resultHeadingRef} tabIndex={-1}>本次练习已完成</h2><p>{sourceLabel}</p>
+          <dl className="test-result-counts">
+            <div><dt>已答</dt><dd>{savedResult.questionsAnswered}<span>次</span></dd></div>
+            <div><dt>答对</dt><dd>{savedResult.questionsCorrect}<span>次</span></dd></div>
+            <div><dt>待巩固</dt><dd>{wrongAnswers.length}<span>次</span></dd></div>
+          </dl>
+        </div>
+      </div>
+      <p className="test-result-save" role="status">{history.ownerId ? history.pending.includes(result.id) ? '本机已保存，等待同步后班级老师可查看。' : '成绩已同步，当前班级老师可查看。' : '访客成绩已保存到当前设备。'}</p>
+      {wrongAnswers.length ? <details className="test-result-review">
+        <summary>查看本组错题<span>{wrongAnswers.length} 次答题需要巩固</span></summary>
+        <ol>{wrongAnswers.map((item, index) => <li key={index}><span className="test-review-index">{index + 1}</span><div><strong lang="en">{item.word}</strong><p>{item.meaning}</p>{mode === 'spelling' && <small>你的拼写：<span lang="en">{item.input}</span></small>}</div></li>)}</ol>
+      </details> : <p className="test-result-perfect"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7" /></svg>本组全部答对，继续保持。</p>}
+      <div className="test-result-actions"><PrimaryButton onClick={nextRound}>再练一组</PrimaryButton><SecondaryButton onClick={onBack}>返回测试</SecondaryButton></div>
+    </BaseCard> : canAnswer && <AssessmentQuestions key={draft.id} mode={mode} vocabulary={pool} optionVocabulary={options} sourceLabel="" onAddMastered={onAddMastered} onWrongAnswer={onWrongAnswer} onAnswer={answer} />}
     {!result && count >= EXAM_ROUND_SIZE && !error && <SecondaryButton onClick={() => finish()}>保存已完成测试</SecondaryButton>}
   </>;
 }
