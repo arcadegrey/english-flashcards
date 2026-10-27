@@ -15,6 +15,8 @@ const hashVocabularyDirectory = (directory) => {
     .forEach((entry) => {
       const filePath = path.join(directory, entry.name)
       if (entry.isDirectory()) hashVocabularyDirectory(filePath)
+      // Derived from the canonical full/core files already included in this hash.
+      else if (entry.name === 'extended.json') return
       else if (entry.name.endsWith('.json')) {
         vocabularyHash.update(filePath)
         vocabularyHash.update(readFileSync(filePath))

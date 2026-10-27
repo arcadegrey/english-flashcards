@@ -18,6 +18,9 @@ import { ThemeProvider } from './context/ThemeContext'
 import { useTheme } from './context/theme-context'
 import {
   loadFullVocabulary,
+  loadVocabularyByIds,
+  hasBundledVocabularyId,
+  VOCABULARY_COUNTS,
   loadIeltsListVocabulary,
   loadIeltsManifest,
   loadToeflListVocabulary,
@@ -441,8 +444,8 @@ function AppContent() {
   )
 
   const wordCounts = useMemo(() => {
-    const counts = { all: allVocabulary.length }
-    allVocabulary.forEach((word) => {
+    const counts = { ...VOCABULARY_COUNTS }
+    customWords.filter(word => !hasBundledVocabularyId(word.id)).forEach((word) => {
       getWordCategories(word).forEach((categoryId) => {
         counts[categoryId] = (counts[categoryId] || 0) + 1
       })
@@ -453,9 +456,9 @@ function AppContent() {
     if (ieltsManifest?.ielts?.total) {
       counts.ielts = Number(ieltsManifest.ielts.total) || counts.ielts || 0
     }
-    counts.all = Number(toeflManifest?.sourceTotal) || Number(ieltsManifest?.sourceTotal) || allVocabulary.length
+    counts.all = Number(toeflManifest?.sourceTotal) || Number(ieltsManifest?.sourceTotal) || VOCABULARY_COUNTS.all
     return counts
-  }, [allVocabulary, ieltsManifest, toeflManifest])
+  }, [customWords, ieltsManifest, toeflManifest])
 
   const statisticsWordCount = useMemo(() => {
     const recordedIds = new Set([...learnedWords, ...masteredWords].map(String))
@@ -469,9 +472,15 @@ function AppContent() {
   const planWordCount = studyPlanCategory === 'all' ? wordCounts.all : wordCounts[studyPlanCategory] || 0
   const planWordStats = useMemo(() => getPlanWordStats(planVocabulary, wordProgress, learnedWords, masteredWords, studyDay),
     [planVocabulary, wordProgress, learnedWords, masteredWords, studyDay])
-  const planNeedsCatalog = useMemo(() => needsPlanCatalog(allVocabulary,
-    activeProgressIds([...learnedWords, ...masteredWords, ...Object.keys(wordProgress)]), studyPlanCategory),
-    [allVocabulary, learnedWords, masteredWords, wordProgress, studyPlanCategory])
+  const planRecordedIds = useMemo(() => dedupeIdList(activeProgressIds([
+    ...learnedWords, ...masteredWords, ...Object.keys(wordProgress),
+  ])).filter(hasBundledVocabularyId), [learnedWords, masteredWords, wordProgress])
+  const planMissingIds = useMemo(() => {
+    const loadedIds = new Set(allVocabulary.map(word => String(word.id)))
+    return planRecordedIds.filter(id => !loadedIds.has(String(id)))
+  }, [allVocabulary, planRecordedIds])
+  const planNeedsCatalog = useMemo(() => needsPlanCatalog(allVocabulary, planRecordedIds, studyPlanCategory),
+    [allVocabulary, planRecordedIds, studyPlanCategory])
   const planExamStats = getDailyPlanExamActivity({ ...todayStudyStats, date: studyDay }, studyPlanCategory, planExamActivity)
   const planTodayWordsLearned = studyPlanCategory === 'all'
     ? todayStudyStats.wordsLearned + todayStudyStats.wordsMastered : planWordStats.todayStudied
@@ -776,10 +785,12 @@ function AppContent() {
       }
       setPlanPreparing(true)
       try {
-        const words = await loadFullVocabulary()
+        const words = studyPlanCategory === 'all'
+          ? await loadVocabularyByIds(planMissingIds)
+          : await loadFullVocabulary()
         if (cancelled) return
         if (!fullVocabularyLoadedRef.current) setVocabulary((prev) => mergeVocabularyList(prev, words))
-        fullVocabularyLoadedRef.current = true
+        if (studyPlanCategory !== 'all') fullVocabularyLoadedRef.current = true
       } catch (error) {
         if (!cancelled) setPlanPreparationError(error?.message || '计划词库加载失败，请重试')
       } finally {
@@ -788,7 +799,7 @@ function AppContent() {
     }
     preparePlan()
     return () => { cancelled = true }
-  }, [planNeedsCatalog, studyPlanCategory, vocabularyLoading, view, planPreparationAttempt])
+  }, [planNeedsCatalog, planMissingIds, studyPlanCategory, vocabularyLoading, view, planPreparationAttempt])
 
   useEffect(() => {
     storage.setPlanExamActivity(planExamActivity)
@@ -1989,11 +2000,11 @@ function AppContent() {
     setSavedWordsError('')
     const savedIds = Object.entries(wordBookmarks).filter(([, entry]) => entry.saved).map(([id]) => id)
     if (fullVocabularyLoadedRef.current || savedIds.every((id) => allVocabulary.some((word) => String(word.id) === id))) return
+    const loadedIds = new Set(allVocabulary.map(word => String(word.id)))
     setSavedWordsLoading(true)
     try {
-      const words = await loadFullVocabulary()
+      const words = await loadVocabularyByIds(savedIds.filter(id => !loadedIds.has(id)))
       setVocabulary((current) => mergeVocabularyList(current, words))
-      fullVocabularyLoadedRef.current = true
     } catch {
       setSavedWordsError('部分收藏词汇尚未加载，请联网后重试。已保存的收藏不会丢失。')
     } finally {

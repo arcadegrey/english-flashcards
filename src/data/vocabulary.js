@@ -1,18 +1,24 @@
 import { createVocabularyLoader } from './vocabularyCache.js'
+import { createVocabularyDelivery } from './vocabularyDelivery.js'
+import vocabularyIndex from './vocabularyIndex.json'
 
 export const VOCABULARY_URL = '/data/vocabulary/core.json'
 export const FULL_VOCABULARY_URL = '/data/vocabulary.json'
 export const TOEFL_MANIFEST_URL = '/data/vocabulary/toefl/manifest.json'
 export const IELTS_MANIFEST_URL = '/data/vocabulary/ielts/manifest.json'
+export const VOCABULARY_COUNTS = vocabularyIndex.counts
 
 const fetchJson = createVocabularyLoader({
   version: import.meta.env?.VITE_VOCABULARY_VERSION || 'development',
 })
 
-export const loadFullVocabulary = () => fetchJson(FULL_VOCABULARY_URL, '全范围词库加载失败')
+const delivery = createVocabularyDelivery({ fetchJson, index: vocabularyIndex })
+export const loadFullVocabulary = delivery.loadFull
+export const loadVocabularyByIds = delivery.loadIds
+export const hasBundledVocabularyId = delivery.hasWord
 
 export const loadVocabulary = async () => {
-  const vocabulary = await fetchJson(VOCABULARY_URL, '词库加载失败')
+  const vocabulary = await delivery.loadCore()
 
   if (!Array.isArray(vocabulary)) {
     throw new Error('词库格式无效')
