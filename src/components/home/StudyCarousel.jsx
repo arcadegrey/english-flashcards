@@ -1,3 +1,4 @@
+import AssetImage from '../ui/AssetImage';
 import { useRef, useState } from 'react';
 import { PrimaryButton } from '../ui/Buttons';
 import { LinearProgress } from '../ui/Progress';
@@ -86,7 +87,8 @@ export default function StudyCarousel({
             </PrimaryButton>
           </div>
           <div className="study-carousel-artwork" aria-hidden="true">
-            <img className="study-carousel-art" src={card.art} alt="" draggable={false} loading={isActive ? 'eager' : 'lazy'} />
+            {Math.abs(position) <= 1 && <AssetImage className="study-carousel-art" src={card.art} alt="" draggable={false}
+              loading={isActive ? 'eager' : 'lazy'} fetchPriority={isActive ? 'high' : 'low'} />}
           </div>
           {card.progress !== undefined && <div className="study-carousel-progress"><LinearProgress value={Math.round(card.progress)} /><span>{card.progressLabel}</span></div>}
         </article>;

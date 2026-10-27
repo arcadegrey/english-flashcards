@@ -552,7 +552,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, #ffffffbb, #ffffff15 54%, #e8f1ffe6 88%), url('/images/ui-assets/mobile-learning-landscape-v1.png') 58% center / auto 100%;
+    background: linear-gradient(180deg, #ffffffbb, #ffffff15 54%, #e8f1ffe6 88%), var(--study-landscape-image) 58% center / auto 100%;
   }
   .study-carousel-card.is-cyan,
   .study-carousel-card.is-lavender,
@@ -677,7 +677,7 @@
   }
 
   :root:not(.dark) .study-carousel-card::before {
-    background: linear-gradient(180deg, #ffffffb3, #ffffff26 54%, #e8f1ffcc 88%), url('/images/ui-assets/mobile-learning-landscape-v1.png') 58% center / auto 100%;
+    background: linear-gradient(180deg, #ffffffb3, #ffffff26 54%, #e8f1ffcc 88%), var(--study-landscape-image) 58% center / auto 100%;
     opacity: 0.88;
   }
 

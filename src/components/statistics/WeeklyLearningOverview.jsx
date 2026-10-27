@@ -1,3 +1,4 @@
+import AssetImage from '../ui/AssetImage';
 import { useId, useMemo, useState } from 'react';
 import { useStudyDay } from '../../hooks/useStudyDay';
 import { BaseCard } from '../ui/Cards';
@@ -40,7 +41,7 @@ export default function WeeklyLearningOverview({ history = [], ready = true, aut
 
     <div className="weekly-learning-grid">
       <BaseCard className="weekly-goal-card">
-        <header className="weekly-panel-head"><h3><span className="weekly-heading-icon"><img src="/images/ui-assets/stat-target.png" alt="" aria-hidden="true" /></span>本周达成率</h3><span className="weekly-goal-target">目标 {view.targetDays} 天</span></header>
+        <header className="weekly-panel-head"><h3><span className="weekly-heading-icon"><AssetImage src="/images/ui-assets/stat-target.png" alt="" aria-hidden="true" /></span>本周达成率</h3><span className="weekly-goal-target">目标 {view.targetDays} 天</span></header>
         <div className="weekly-goal-ring" role="img" aria-label={ready ? `本周已学习 ${view.activeDays} 天，目标 ${view.targetDays} 天，达成率 ${view.percent}%` : '正在恢复每周学习记录'}>
           <svg viewBox="0 0 220 220" aria-hidden="true">
             <defs><linearGradient id={gradientId} x1="0" y1="0" x2="1" y2="1"><stop stopColor="#7EA6FF" /><stop offset="1" stopColor="#2F6DFF" /></linearGradient></defs>
@@ -53,7 +54,7 @@ export default function WeeklyLearningOverview({ history = [], ready = true, aut
         <h3 className="weekly-goal-caption">{ready && view.activeDays >= view.targetDays ? '本周目标已达成' : '一周五天，稳步进步'}</h3>
         <p className="weekly-goal-helper">完成新词、复习、阅读或测试中的任一学习活动，即可点亮当天。</p>
         <div className="weekly-goal-footer"><span>本周学习进度</span><strong>{ready ? `${view.percent}%` : '—'}</strong></div>
-        <img className="weekly-goal-star" src="/images/ui-assets/stat-star.png" alt="" aria-hidden="true" />
+        <AssetImage className="weekly-goal-star" src="/images/ui-assets/stat-star.png" alt="" aria-hidden="true" />
       </BaseCard>
 
       <div className="weekly-learning-records">
@@ -77,7 +78,7 @@ export default function WeeklyLearningOverview({ history = [], ready = true, aut
           </header>
           <div className="weekly-day-metrics" aria-live="polite" aria-atomic="true">
             {metrics.map(metric => <article key={metric.id} className={`weekly-day-metric is-${metric.tone}`} data-metric={metric.id}>
-              <span className="weekly-metric-icon" aria-hidden="true">{metric.art ? <img src={`/images/ui-assets/${metric.art}`} alt="" /> : <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" /><path d="M12 7v5l3 2" /></svg>}</span>
+              <span className="weekly-metric-icon" aria-hidden="true">{metric.art ? <AssetImage src={`/images/ui-assets/${metric.art}`} alt="" /> : <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" /><path d="M12 7v5l3 2" /></svg>}</span>
               <span>{metric.label}</span><strong>{ready ? metric.value : '—'}{metric.unit && ready && <small>{metric.unit}</small>}</strong><p>{ready ? metric.helper : '正在恢复记录'}</p>
             </article>)}
           </div>
@@ -86,8 +87,8 @@ export default function WeeklyLearningOverview({ history = [], ready = true, aut
     </div>
 
     <div className="weekly-milestone-grid">
-      <BaseCard className="weekly-milestone-card"><span className="weekly-milestone-icon is-flame"><img src="/images/ui-assets/stat-flame.png" alt="" aria-hidden="true" /></span><div><h3>连续学习</h3><strong>{ready ? view.streak : '—'} <small>天</small></strong><p>新词、复习、阅读与巩固均计入</p></div></BaseCard>
-      <BaseCard className="weekly-milestone-card"><span className="weekly-milestone-icon is-star"><img src="/images/ui-assets/stat-star.png" alt="" aria-hidden="true" /></span><div><h3>{view.nextMilestone ? '下一阶段里程碑' : '连续学习里程碑'}</h3>
+      <BaseCard className="weekly-milestone-card"><span className="weekly-milestone-icon is-flame"><AssetImage src="/images/ui-assets/stat-flame.png" alt="" aria-hidden="true" /></span><div><h3>连续学习</h3><strong>{ready ? view.streak : '—'} <small>天</small></strong><p>新词、复习、阅读与巩固均计入</p></div></BaseCard>
+      <BaseCard className="weekly-milestone-card"><span className="weekly-milestone-icon is-star"><AssetImage src="/images/ui-assets/stat-star.png" alt="" aria-hidden="true" /></span><div><h3>{view.nextMilestone ? '下一阶段里程碑' : '连续学习里程碑'}</h3>
         <strong>{!ready ? '—' : view.nextMilestone ? `还差 ${view.nextMilestone - view.streak} 天` : `已达成 ${view.milestone} 天`}</strong><p>{!ready ? '正在恢复学习记录' : view.nextMilestone ? `连续学习 ${view.nextMilestone} 天，即可达成` : '继续保持你的学习节奏'}</p></div></BaseCard>
     </div>
 

@@ -1,0 +1,296 @@
+{
+  "/images/ui-assets/category-all-words-blue-v1.png": {
+    "src": "/images/optimized/category-all-words-blue-v1-12f50e1bc2ee25db.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 15588,
+    "originalBytes": 137456
+  },
+  "/images/ui-assets/category-all-words-v1.png": {
+    "src": "/images/optimized/category-all-words-v1-987edec9d0c98647.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 13050,
+    "originalBytes": 123005
+  },
+  "/images/ui-assets/category-cet4-blue-v1.png": {
+    "src": "/images/optimized/category-cet4-blue-v1-565436784df1db51.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 14132,
+    "originalBytes": 125499
+  },
+  "/images/ui-assets/category-cet4-v1.png": {
+    "src": "/images/optimized/category-cet4-v1-bda9125a4f90ec0c.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 20710,
+    "originalBytes": 183979
+  },
+  "/images/ui-assets/category-cet6-blue-v1.png": {
+    "src": "/images/optimized/category-cet6-blue-v1-6ce2b1e6bdd7c260.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 13874,
+    "originalBytes": 124751
+  },
+  "/images/ui-assets/category-cet6-v1.png": {
+    "src": "/images/optimized/category-cet6-v1-3e526ea06e6f24b8.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 22806,
+    "originalBytes": 195567
+  },
+  "/images/ui-assets/category-daily-words-blue-v1.png": {
+    "src": "/images/optimized/category-daily-words-blue-v1-ab57779a0500a76f.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 15000,
+    "originalBytes": 140739
+  },
+  "/images/ui-assets/category-daily-words-v1.png": {
+    "src": "/images/optimized/category-daily-words-v1-7ca3a879d7f9f64b.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 16360,
+    "originalBytes": 150206
+  },
+  "/images/ui-assets/category-ielts-blue-v1.png": {
+    "src": "/images/optimized/category-ielts-blue-v1-b939551af4d7a640.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 14478,
+    "originalBytes": 123257
+  },
+  "/images/ui-assets/category-ielts-v1.png": {
+    "src": "/images/optimized/category-ielts-v1-bee34990f9157720.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 15560,
+    "originalBytes": 148445
+  },
+  "/images/ui-assets/category-toefl-blue-v1.png": {
+    "src": "/images/optimized/category-toefl-blue-v1-664baf10406a4990.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 21994,
+    "originalBytes": 161305
+  },
+  "/images/ui-assets/category-toefl-v1.png": {
+    "src": "/images/optimized/category-toefl-v1-68e2b04bc18b4308.webp",
+    "width": 512,
+    "height": 512,
+    "bytes": 20160,
+    "originalBytes": 165531
+  },
+  "/images/ui-assets/dashboard-exam-frosted-v1.png": {
+    "src": "/images/optimized/dashboard-exam-frosted-v1-7b82ed4f877b010d.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 62506,
+    "originalBytes": 1128253
+  },
+  "/images/ui-assets/dashboard-flashcards-frosted-v1.png": {
+    "src": "/images/optimized/dashboard-flashcards-frosted-v1-77255064de2ccce3.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 63468,
+    "originalBytes": 1177820
+  },
+  "/images/ui-assets/dashboard-reading-frosted-v1.png": {
+    "src": "/images/optimized/dashboard-reading-frosted-v1-1100c18851e3c3b8.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 57702,
+    "originalBytes": 1073655
+  },
+  "/images/ui-assets/dashboard-review-frosted-v1.png": {
+    "src": "/images/optimized/dashboard-review-frosted-v1-b3bb1933350af00a.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 54700,
+    "originalBytes": 1102493
+  },
+  "/images/ui-assets/exam-mode-fillblank-violet-v1.png": {
+    "src": "/images/optimized/exam-mode-fillblank-violet-v1-e1cde9f33d7f0895.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 18134,
+    "originalBytes": 972669
+  },
+  "/images/ui-assets/exam-mode-matching-orange-v1.png": {
+    "src": "/images/optimized/exam-mode-matching-orange-v1-e0979a3f3e1f7b79.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 26718,
+    "originalBytes": 666675
+  },
+  "/images/ui-assets/exam-mode-quiz-blue-v1.png": {
+    "src": "/images/optimized/exam-mode-quiz-blue-v1-03f7ce8e8a9a205d.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 25510,
+    "originalBytes": 942277
+  },
+  "/images/ui-assets/exam-mode-spelling-cyan-v1.png": {
+    "src": "/images/optimized/exam-mode-spelling-cyan-v1-628bda52d17a59e1.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 24176,
+    "originalBytes": 1056559
+  },
+  "/images/ui-assets/hero-flashcards.png": {
+    "src": "/images/optimized/hero-flashcards-e658a2bd2279cba1.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 32674,
+    "originalBytes": 601790
+  },
+  "/images/ui-assets/mobile-learning-landscape-v1.png": {
+    "src": "/images/optimized/mobile-learning-landscape-v1-91fe086accfd4c5c.webp",
+    "width": 960,
+    "height": 540,
+    "bytes": 34276,
+    "originalBytes": 1675695
+  },
+  "/images/ui-assets/new-words.png": {
+    "src": "/images/optimized/new-words-ae8d5dbe4549facd.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 28068,
+    "originalBytes": 633890
+  },
+  "/images/ui-assets/review-complete.png": {
+    "src": "/images/optimized/review-complete-a4629dc09372c3bd.webp",
+    "width": 640,
+    "height": 480,
+    "bytes": 20190,
+    "originalBytes": 564336
+  },
+  "/images/ui-assets/stat-flame.png": {
+    "src": "/images/optimized/stat-flame-b36dd8cdee56e67d.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 18666,
+    "originalBytes": 537679
+  },
+  "/images/ui-assets/stat-star.png": {
+    "src": "/images/optimized/stat-star-c51b37dad0bbd78e.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 17358,
+    "originalBytes": 524562
+  },
+  "/images/ui-assets/stat-target.png": {
+    "src": "/images/optimized/stat-target-817ef8f931486b30.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 21812,
+    "originalBytes": 579466
+  },
+  "/images/ui-assets/training-card-reading-blue-v1.png": {
+    "src": "/images/optimized/training-card-reading-blue-v1-33dc6d0e74509c19.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 16502,
+    "originalBytes": 154806
+  },
+  "/images/ui-assets/training-card-review-blue-v1.png": {
+    "src": "/images/optimized/training-card-review-blue-v1-1b271dcb92316918.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 24950,
+    "originalBytes": 153409
+  },
+  "/images/ui-assets/training-card-test-blue-v1.png": {
+    "src": "/images/optimized/training-card-test-blue-v1-bb6997ed0456b37e.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 17922,
+    "originalBytes": 153439
+  },
+  "/images/ui-assets/training-card-vocabulary-blue-v1.png": {
+    "src": "/images/optimized/training-card-vocabulary-blue-v1-8e28e9fdbffa4c3d.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 18692,
+    "originalBytes": 162129
+  },
+  "/images/ui-assets/training-hero-flashcards-blue-v1.png": {
+    "src": "/images/optimized/training-hero-flashcards-blue-v1-a2b09d765a98360a.webp",
+    "width": 640,
+    "height": 427,
+    "bytes": 24606,
+    "originalBytes": 619378
+  },
+  "/images/ui-assets/training-reading-a1-frosted-v2.png": {
+    "src": "/images/optimized/training-reading-a1-frosted-v2-048373392d76c662.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 44290,
+    "originalBytes": 844264
+  },
+  "/images/ui-assets/training-reading-a2-frosted-v2.png": {
+    "src": "/images/optimized/training-reading-a2-frosted-v2-9503d30a954c1ff8.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 39110,
+    "originalBytes": 1130454
+  },
+  "/images/ui-assets/training-reading-all-frosted-v2.png": {
+    "src": "/images/optimized/training-reading-all-frosted-v2-cf8dc08bd7ab764d.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 61400,
+    "originalBytes": 1553460
+  },
+  "/images/ui-assets/training-reading-b2-frosted-v2.png": {
+    "src": "/images/optimized/training-reading-b2-frosted-v2-3fd145dbd82ea420.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 33040,
+    "originalBytes": 876493
+  },
+  "/images/ui-assets/training-reading-c1-frosted-v2.png": {
+    "src": "/images/optimized/training-reading-c1-frosted-v2-7d2274b63064eea8.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 45216,
+    "originalBytes": 947820
+  },
+  "/images/ui-assets/training-vocabulary-cet4-frosted-v2.png": {
+    "src": "/images/optimized/training-vocabulary-cet4-frosted-v2-bb64fa5e6f5e09f4.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 56702,
+    "originalBytes": 1141438
+  },
+  "/images/ui-assets/training-vocabulary-cet6-frosted-v2.png": {
+    "src": "/images/optimized/training-vocabulary-cet6-frosted-v2-eb49466ca155ea4b.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 57726,
+    "originalBytes": 1021841
+  },
+  "/images/ui-assets/training-vocabulary-daily-frosted-v2.png": {
+    "src": "/images/optimized/training-vocabulary-daily-frosted-v2-83d0e156997be45c.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 55228,
+    "originalBytes": 1170634
+  },
+  "/images/ui-assets/training-vocabulary-ielts-frosted-v2.png": {
+    "src": "/images/optimized/training-vocabulary-ielts-frosted-v2-d11f68000edd2380.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 60878,
+    "originalBytes": 1159634
+  },
+  "/images/ui-assets/training-vocabulary-toefl-frosted-v2.png": {
+    "src": "/images/optimized/training-vocabulary-toefl-frosted-v2-f2e0b5fd512e9d91.webp",
+    "width": 640,
+    "height": 640,
+    "bytes": 77822,
+    "originalBytes": 1277880
+  }
+}

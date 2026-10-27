@@ -97,7 +97,7 @@
     position: absolute;
     z-index: -1;
     inset: 0;
-    background: linear-gradient(90deg, #ffffff 3%, #ffffffeb 35%, #ffffff38 70%, #ffffff15), url('/images/ui-assets/mobile-learning-landscape-v1.png') center 65% / cover;
+    background: linear-gradient(90deg, #ffffff 3%, #ffffffeb 35%, #ffffff38 70%, #ffffff15), var(--study-landscape-image) center 65% / cover;
     opacity: 0.85;
   }
 

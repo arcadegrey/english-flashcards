@@ -1,3 +1,4 @@
+import AssetImage from './ui/AssetImage';
 import { TeacherReadingAssignments, StudentReadingAssignments } from './classroom/ReadingAssignments';
 import { useEffect, useState } from 'react';
 import AppLayout from './layout/AppLayout';
@@ -63,7 +64,7 @@ function StudentRoster({ classroom, refreshKey, onSelectStudent, onChanged }) {
       </div>
       {error && <div className="classroom-alert" role="alert">{error}<SecondaryButton onClick={() => setRetry((value) => value + 1)}>重试</SecondaryButton></div>}
       {loading ? <p className="classroom-empty" role="status">正在读取学生进度…</p> : !error && data?.students.length === 0 ? (
-        <div className="classroom-empty"><img src="/images/ui-assets/category-all-words-blue-v1.png" alt="" /><h3>等待学生加入</h3><p>把班级邀请码发给学生，加入后即可在这里查看学习记录。</p></div>
+        <div className="classroom-empty"><AssetImage src="/images/ui-assets/category-all-words-blue-v1.png" alt="" /><h3>等待学生加入</h3><p>把班级邀请码发给学生，加入后即可在这里查看学习记录。</p></div>
       ) : !error && (
         <>
           <div className="classroom-roster-labels" aria-hidden="true"><span>学生</span><span>今日练词</span><span>已学习</span><span>标记认识</span><span>今日阅读</span><span>最近同步</span><span /></div>
@@ -188,7 +189,7 @@ export default function ClassroomView({ user, navItems, topbarProps, onAuthOpen,
                 </BaseCard>
                 <BaseCard className="classroom-panel"><div className="classroom-heading"><div><h2>已加入的班级</h2><p>老师看到的是最近一次成功同步的记录。</p></div><SecondaryButton disabled={busy} onClick={() => perform(() => onSync?.(), '学习进度已同步。')}>同步学习进度</SecondaryButton></div>
                   {data.classes.length ? <ul className="classroom-memberships">{data.classes.map((item) => <li key={item.id}><div><h3>{item.name}</h3><p>老师：{item.teacherName} · 加入于 {formatClassroomDate(item.joinedAt)}</p></div><SecondaryButton disabled={busy} onClick={() => perform(() => leaveClassroom(item.id), '已退出班级，老师无法再查看你的记录。')}>退出班级</SecondaryButton></li>)}</ul>
-                    : <div className="classroom-empty"><img src="/images/ui-assets/category-all-words-blue-v1.png" alt="" /><h3>还没有加入班级</h3><p>向老师获取邀请码，在上方输入即可加入。</p></div>}
+                    : <div className="classroom-empty"><AssetImage src="/images/ui-assets/category-all-words-blue-v1.png" alt="" /><h3>还没有加入班级</h3><p>向老师获取邀请码，在上方输入即可加入。</p></div>}
                 </BaseCard>
               </>
             )}

@@ -1,3 +1,4 @@
+import AssetImage from './AssetImage';
 import { PrimaryButton, SecondaryButton } from './Buttons'
 import { CircularProgress, LinearProgress } from './Progress'
 import { forwardRef } from 'react'
@@ -45,7 +46,7 @@ export function HeroCard({
 
         <div className="ds-hero-visual" aria-hidden="true">
           {illustrationSrc ? (
-            <img className="ds-hero-asset" src={illustrationSrc} alt="" loading="eager" />
+            <AssetImage className="ds-hero-asset" src={illustrationSrc} alt="" loading="eager" />
           ) : (
             <div className="ds-aa-orbit">
               <span className="ds-sparkle one">✦</span>
@@ -76,13 +77,13 @@ export function ModuleCard({ title, meta, icon, iconSrc, art, artSrc, active = f
     >
       {(iconSrc || icon) && (
         <span className="ds-module-icon" aria-hidden="true">
-          {iconSrc ? <img className="ds-module-icon-img" src={iconSrc} alt="" loading="lazy" /> : icon}
+          {iconSrc ? <AssetImage className="ds-module-icon-img" src={iconSrc} alt="" loading="lazy" /> : icon}
         </span>
       )}
       <h3>{title}</h3>
       {meta && <p>{meta}</p>}
       {artSrc ? (
-        <img className="ds-module-art-image" src={artSrc} alt="" loading="lazy" aria-hidden="true" />
+        <AssetImage className="ds-module-art-image" src={artSrc} alt="" loading="lazy" aria-hidden="true" />
       ) : art ? (
         <span className="ds-module-art" aria-hidden="true">{art}</span>
       ) : null}
@@ -99,7 +100,7 @@ export function StatCard({ icon, iconSrc, value, label }) {
   return (
     <article className="ds-stat-card">
       <span className="ds-stat-icon" aria-hidden="true">
-        {iconSrc ? <img className="ds-stat-icon-img" src={iconSrc} alt="" loading="lazy" /> : icon}
+        {iconSrc ? <AssetImage className="ds-stat-icon-img" src={iconSrc} alt="" loading="lazy" /> : icon}
       </span>
       <div>
         <p className="ds-stat-value">{value}</p>
@@ -123,7 +124,7 @@ export function StatusCard({ label, title, meta, icon, iconSrc, art, illustratio
         />
       )}
       <span className="ds-status-icon" aria-hidden="true">
-        {iconSrc ? <img className="ds-status-icon-img" src={iconSrc} alt="" loading="lazy" /> : icon}
+        {iconSrc ? <AssetImage className="ds-status-icon-img" src={iconSrc} alt="" loading="lazy" /> : icon}
       </span>
       <div>
         <span className="ds-status-label">{label}</span>
@@ -133,7 +134,7 @@ export function StatusCard({ label, title, meta, icon, iconSrc, art, illustratio
       </div>
       <div className="ds-status-side">
         {illustrationSrc ? (
-          <img className="ds-status-art-image" src={illustrationSrc} alt="" loading="lazy" aria-hidden="true" />
+          <AssetImage className="ds-status-art-image" src={illustrationSrc} alt="" loading="lazy" aria-hidden="true" />
         ) : art ? (
           <span className="ds-module-art" aria-hidden="true">{art}</span>
         ) : null}

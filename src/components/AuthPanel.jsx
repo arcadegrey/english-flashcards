@@ -1,3 +1,4 @@
+import AssetImage from './ui/AssetImage';
 import { useState } from 'react';
 import AccountRoleChoice from './AccountRoleChoice';
 import { getAccountRoleLabel } from '../utils/classroom';
@@ -214,7 +215,7 @@ function AuthPanel({
                   <AuthIcon name="arrow" />
                 </PrimaryButton>
               </div>
-              <img className="auth-classroom-art" src="/images/ui-assets/category-all-words-blue-v1.png" alt="" width="512" height="512" />
+              <AssetImage className="auth-classroom-art" src="/images/ui-assets/category-all-words-blue-v1.png" alt="" width="512" height="512" />
             </div>
             <div className={`auth-sync-section is-${syncTone}`}>
               <div className="auth-sync-row">

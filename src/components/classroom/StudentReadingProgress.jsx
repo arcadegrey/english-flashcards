@@ -1,3 +1,4 @@
+import AssetImage from '../ui/AssetImage';
 import { useMemo, useState } from 'react';
 import { StatCard } from '../ui/Cards';
 import { SecondaryButton } from '../ui/Buttons';
@@ -48,7 +49,7 @@ export default function StudentReadingProgress({ history = [] }) {
         </ul>
       ) : (
         <div className="classroom-empty">
-          <img src="/images/ui-assets/training-card-reading-blue-v1.png" alt="" />
+          <AssetImage src="/images/ui-assets/training-card-reading-blue-v1.png" alt="" />
           <h3>{overview.totals.readingsCompleted ? '暂无逐篇阅读明细' : '暂无已同步的阅读记录'}</h3>
           <p>{overview.totals.readingsCompleted ? '已有记录只包含汇总数据，后续完成阅读会显示文章与成绩。' : '学生完成一篇阅读并同步后，可以在这里查看文章与答题成绩。'}</p>
         </div>

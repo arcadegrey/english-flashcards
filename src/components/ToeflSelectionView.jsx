@@ -1,3 +1,4 @@
+import AssetImage from './ui/AssetImage';
 import { useMemo, useRef } from 'react';
 import AppLayout from './layout/AppLayout';
 import { ModuleCard } from './ui/Cards';
@@ -124,7 +125,7 @@ function ToeflSelectionView({
               </div>
               <div className="toefl-selection-heading">
                 <div className="toefl-selection-heading-copy">
-                  <img className="toefl-selection-heading-art" src="/images/ui-assets/category-toefl-blue-v1.png" alt="" aria-hidden="true" />
+                  <AssetImage className="toefl-selection-heading-art" src="/images/ui-assets/category-toefl-blue-v1.png" alt="" aria-hidden="true" />
                   <div>
                     <h2>{mode === 'level' ? '选择词汇级别' : '选择学习词表'}</h2>
                     <p>{progressLabel} · 共 {totalCount} 个单词</p>

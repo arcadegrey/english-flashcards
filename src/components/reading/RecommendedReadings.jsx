@@ -1,3 +1,4 @@
+import AssetImage from '../ui/AssetImage';
 import { useRef, useState } from 'react';
 import { formatReadingLevelLabel } from './readingPickerModel';
 
@@ -33,7 +34,7 @@ export default function RecommendedReadings({ readings = [], onOpenArticle }) {
     </header>
     <div className="training-recommendations-rail" ref={rail}>
       {articles.map(article => <button type="button" key={article.id} className="training-reading-card" onClick={() => onOpenArticle(article)}>
-        <img src={coverFor(article)} alt="" loading="lazy" aria-hidden="true" />
+        <AssetImage src={coverFor(article)} alt="" loading="lazy" aria-hidden="true" />
         <span className="training-reading-tag">{article.examType || '阅读'}</span>
         <strong>{article.title}</strong>
         <span className="training-reading-meta">{article.estimatedMinutes ? `${article.estimatedMinutes} 分钟 · ` : ''}{formatReadingLevelLabel(article.level)}</span>

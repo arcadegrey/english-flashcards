@@ -1,3 +1,4 @@
+import AssetImage from './ui/AssetImage';
 import { useStudyDay } from '../hooks/useStudyDay.js';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { BaseCard } from './ui/Cards';
@@ -32,7 +33,7 @@ export default function StudyMomentum({ ownerId, history, wordsDone, readingDone
     <CorrectAnswerCelebration trigger={trigger} />
     <div className="study-momentum-summary">
       <div className="study-momentum-head">
-        <span className="study-momentum-icon"><img src="/images/ui-assets/stat-target.png" alt="" aria-hidden="true" /></span>
+        <span className="study-momentum-icon"><AssetImage src="/images/ui-assets/stat-target.png" alt="" aria-hidden="true" /></span>
         <h2>每周小目标</h2>
         <p>本周 <strong>{ready ? progress.activeDays : '—'}<span> / {progress.targetDays}</span></strong> 天</p>
       </div>

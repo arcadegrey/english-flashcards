@@ -131,8 +131,25 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,json,ico,txt,woff2,webmanifest}'],
-        globIgnores: ['**/audio/**', '**/audio-updates/**', '**/data/**/*.json'],
+        globIgnores: ['**/audio/**', '**/audio-updates/**', '**/data/**/*.json', '**/images/**'],
         runtimeCaching: [
+          {
+            urlPattern: ({ url }) => url.origin === self.location.origin && url.pathname.startsWith('/images/') && url.pathname.endsWith('.webp'),
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'flashcards-images-v1',
+              matchOptions: { ignoreSearch: true },
+              expiration: {
+                maxEntries: 80,
+                maxAgeSeconds: 60 * 60 * 24 * 30,
+                purgeOnQuotaError: true,
+              },
+              cacheableResponse: {
+                statuses: [200],
+                headers: { 'content-type': 'image/webp' },
+              },
+            },
+          },
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
             handler: 'CacheFirst',

@@ -1,3 +1,4 @@
+import AssetImage from './ui/AssetImage';
 import { useEffect, useMemo, useState } from 'react';
 import WordCard from './WordCard';
 import QuickMenu from './QuickMenu';
@@ -234,7 +235,7 @@ function WordCollectionView({
         {collectionStatus && <p className="classroom-helper" role="status">{collectionStatus} {onRetry && <button type="button" className="collection-tool-button" onClick={onRetry}>重试加载</button>}</p>}
         {words.length === 0 ? (
           <article className="collection-empty-state">
-            <img src={emptyArtSrc} alt="" aria-hidden="true" />
+            <AssetImage src={emptyArtSrc} alt="" aria-hidden="true" />
             <div>
               <h3>{emptyTitle}</h3>
               <p>{emptyHint}</p>
@@ -242,7 +243,7 @@ function WordCollectionView({
           </article>
         ) : filteredWords.length === 0 ? (
           <article className="collection-empty-state">
-            <img src={emptyArtSrc} alt="" aria-hidden="true" />
+            <AssetImage src={emptyArtSrc} alt="" aria-hidden="true" />
             <div>
               <h3>没有匹配结果</h3>
               <p>试试别的关键词，或隐藏搜索继续当前集合。</p>

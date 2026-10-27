@@ -1,3 +1,4 @@
+import AssetImage from './ui/AssetImage';
 import AppLayout from './layout/AppLayout';
 import QuickMenu from './QuickMenu';
 import ExamHistoryPanel from './assessment/ExamHistoryPanel';
@@ -217,7 +218,7 @@ function ExamPracticeView({
                 disabled={isPreparing || selectedScopeCount === 0}
               >
                 <span className="exam-mode-icon" aria-hidden="true">
-                  <img src={item.iconSrc} alt="" loading="lazy" />
+                  <AssetImage src={item.iconSrc} alt="" loading="lazy" />
                 </span>
                 <span className="exam-mode-copy">
                   <strong>{item.title}</strong>
