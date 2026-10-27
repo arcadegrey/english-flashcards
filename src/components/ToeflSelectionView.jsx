@@ -1,3 +1,4 @@
+import { LoadingAnimation } from './ui/LoadingState';
 import AssetImage from './ui/AssetImage';
 import { useMemo, useRef } from 'react';
 import AppLayout from './layout/AppLayout';
@@ -52,6 +53,7 @@ function ToeflSelectionView({
   onSelect,
   onSelectAll,
   onSyncAccount,
+  syncing = false,
   selectAllLabel = '学习全部',
   vocabularyLabel = '托福词汇',
   listLabel = '托福 List',
@@ -117,7 +119,7 @@ function ToeflSelectionView({
                   </SecondaryButton>
                 )}
                 {onSyncAccount && (
-                  <SecondaryButton className="toefl-selection-sync" onClick={onSyncAccount}>
+                  <SecondaryButton className="toefl-selection-sync" loading={syncing} onClick={onSyncAccount}>
                     <SyncIcon />
                     <span>同步进度</span>
                   </SecondaryButton>
@@ -162,8 +164,8 @@ function ToeflSelectionView({
                 </button>
               )}
               {onSyncAccount && (
-                <button type="button" className="toefl-selection-action" onClick={onSyncAccount}>
-                  <SyncIcon />
+                <button type="button" className="toefl-selection-action" onClick={onSyncAccount} disabled={syncing} aria-busy={syncing || undefined}>
+                  {syncing ? <LoadingAnimation compact /> : <SyncIcon />}
                   <span>同步进度</span>
                 </button>
               )}

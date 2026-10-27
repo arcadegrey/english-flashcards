@@ -1,3 +1,4 @@
+import LoadingState from '../ui/LoadingState';
 import { useEffect, useState } from 'react';
 import { weekRange } from '../../../shared/weeklyReport.js';
 import { StatCard } from '../ui/Cards';
@@ -53,7 +54,7 @@ export default function ClassWeeklyReport({ classId, userId, refreshKey, onSelec
       <div className="classroom-actions"><SecondaryButton disabled={busy} onClick={() => chooseWeek(shiftWeek(week, -7))}>上一周</SecondaryButton><SecondaryButton disabled={busy || week >= weekRange().start} onClick={() => chooseWeek(shiftWeek(week, 7))}>下一周</SecondaryButton><SecondaryButton disabled={loading || busy} onClick={() => setRefresh(value => value + 1)}>刷新周报</SecondaryButton></div>
     </div>
     {error && <p className="classroom-alert" role="alert">{error}</p>}{notice && <p className="classroom-notice" role="status">{notice}</p>}
-    {loading ? <p role="status" className="classroom-helper">正在汇总班级学习记录…</p> : data && <>
+    {loading ? <LoadingState title="正在汇总班级学习记录…" /> : data && <>
       <div className="classroom-stat-grid">
         <StatCard value={`${data.totals.activeStudents}/${data.totals.studentCount}`} label="本周活跃学生" iconSrc="/images/ui-assets/stat-star.png" />
         <StatCard value={data.totals.wordsStudied} label="练词次数" iconSrc="/images/ui-assets/training-card-vocabulary-blue-v1.png" />
@@ -74,7 +75,7 @@ export default function ClassWeeklyReport({ classId, userId, refreshKey, onSelec
         <h4>{recommendation.type === 'words' ? '词汇巩固作业预览' : `阅读巩固：${recommendation.title}`}</h4>
         {recommendation.type === 'words' && <><p className="classroom-helper">共 {data.suggestedWords.length} 词，其中 {Math.min(data.commonWords.length, data.suggestedWords.length)} 个来自本周常错词；不足 5 词时补充其他词。发布后全班接收。</p><p className="classroom-recommended-words">{data.suggestedWords.map(word => word.word).join(' · ')}</p></>}
         <label className="classroom-field">截止时间<input className="classroom-input" type="datetime-local" required value={dueAt} disabled={busy} onChange={event => setDueAt(event.target.value)} /></label>
-        <div className="classroom-actions"><PrimaryButton type="submit" disabled={busy}>{busy ? '发布中…' : '发布巩固作业'}</PrimaryButton><SecondaryButton disabled={busy} onClick={() => setRecommendation(null)}>取消</SecondaryButton></div>
+        <div className="classroom-actions"><PrimaryButton type="submit" loading={busy} disabled={busy}>{busy ? '发布中…' : '发布巩固作业'}</PrimaryButton><SecondaryButton disabled={busy} onClick={() => setRecommendation(null)}>取消</SecondaryButton></div>
       </form>}
       <h4>学生本周概览</h4>
       <ul className="classroom-assignment-list">{data.students.slice((currentPage - 1) * 10, currentPage * 10).map(student => <li key={student.id}><div><strong>{student.displayName}</strong><p>活跃 {student.activeDays} 天 · 练词 {student.wordsStudied} 次 · 阅读 {student.readingsCompleted} 篇次 · 测试 {student.examAnswered} 次答题</p><p>本周到期作业 {student.assignmentsSubmitted}/{student.assignmentsExpected} 已交 · 测试正确率 {student.examAccuracy == null ? '—' : `${student.examAccuracy}%`}</p></div><SecondaryButton onClick={() => onSelectStudent(student)}>查看学习记录</SecondaryButton></li>)}</ul>

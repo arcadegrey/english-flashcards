@@ -1,3 +1,4 @@
+import LoadingState from './LoadingState';
 import AssetImage from './AssetImage';
 import { PrimaryButton, SecondaryButton } from './Buttons'
 import { CircularProgress, LinearProgress } from './Progress'
@@ -129,7 +130,7 @@ export function StatusCard({ label, title, meta, icon, iconSrc, art, illustratio
       <div>
         <span className="ds-status-label">{label}</span>
         <h3>{title}</h3>
-        <p>{meta}</p>
+        <p>{busy ? <LoadingState variant="inline" title={meta} /> : meta}</p>
         {progress !== undefined && <LinearProgress value={progress} />}
       </div>
       <div className="ds-status-side">

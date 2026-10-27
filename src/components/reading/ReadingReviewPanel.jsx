@@ -11,7 +11,7 @@ export default function ReadingReviewPanel({ userId, onRetry }) {
   const mistakes=useMemo(()=>collectReadingMistakes(history.attempts),[history.attempts]);
   const rows=tab==='history' ? history.attempts : [...new Map(mistakes.map(item=>[item.attempt.id,item.attempt])).values()];
   return <section className="reading-review-panel" aria-label="阅读历史与错题本">
-    <div className="classroom-heading"><div><h3>阅读复盘</h3><p>保留最近 100 次练习的答案与解析。重做错题不会改变原成绩。</p></div>{userId && <SecondaryButton disabled={history.busy} onClick={history.sync}>{history.busy?'同步中…':'同步历史'}</SecondaryButton>}</div>
+    <div className="classroom-heading"><div><h3>阅读复盘</h3><p>保留最近 100 次练习的答案与解析。重做错题不会改变原成绩。</p></div>{userId && <SecondaryButton loading={history.busy} disabled={history.busy} onClick={history.sync}>{history.busy?'同步中…':'同步历史'}</SecondaryButton>}</div>
     <div className="classroom-tabs" role="group" aria-label="阅读复盘分类"><button type="button" className={tab==='history'?'is-active':''} aria-pressed={tab==='history'} onClick={()=>setTab('history')}>练习历史 · {history.attempts.length}</button><button type="button" className={tab==='wrong'?'is-active':''} aria-pressed={tab==='wrong'} onClick={()=>setTab('wrong')}>阅读错题 · {mistakes.length}</button></div>
     <p className="classroom-helper">{!userId?'访客记录保存在当前设备，登录账号后的记录独立保存。':history.pending?`${history.pending} 次练习待同步，本机记录已保留。`:'当前账号的练习历史'} {history.error && <span role="alert">{history.error} 请点击同步历史重试。</span>}</p>
     {rows.length ? rows.map(attempt=>{

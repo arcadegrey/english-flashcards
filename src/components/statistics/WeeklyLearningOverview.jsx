@@ -1,3 +1,4 @@
+import LoadingState from '../ui/LoadingState';
 import AssetImage from '../ui/AssetImage';
 import { useId, useMemo, useState } from 'react';
 import { useStudyDay } from '../../hooks/useStudyDay';
@@ -39,6 +40,7 @@ export default function WeeklyLearningOverview({ history = [], ready = true, aut
       <span className="weekly-learning-range">{formatStudyMonthDay(view.range.start)} — {formatStudyMonthDay(view.range.last)}</span>
     </header>
 
+    {!ready && <LoadingState variant="inline" title="正在恢复学习记录…" />}
     <div className="weekly-learning-grid">
       <BaseCard className="weekly-goal-card">
         <header className="weekly-panel-head"><h3><span className="weekly-heading-icon"><AssetImage src="/images/ui-assets/stat-target.png" alt="" aria-hidden="true" /></span>本周达成率</h3><span className="weekly-goal-target">目标 {view.targetDays} 天</span></header>

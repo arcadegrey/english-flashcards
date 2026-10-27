@@ -26,7 +26,7 @@ export function ExamAttemptList({ attempts = [] }) {
 export default function ExamHistoryPanel() {
   const history = useExamHistory();
   return <section className="exam-scope-card ds-card" aria-label="我的测试成绩">
-    <div className="classroom-heading"><div><h3>我的测试成绩</h3><p>最近 100 次自主练习 · 每组最多 20 次答题，也可提前结束。</p></div>{history.ownerId && <SecondaryButton disabled={history.busy} onClick={history.sync}>{history.busy ? '同步中…' : '同步成绩'}</SecondaryButton>}</div>
+    <div className="classroom-heading"><div><h3>我的测试成绩</h3><p>最近 100 次自主练习 · 每组最多 20 次答题，也可提前结束。</p></div>{history.ownerId && <SecondaryButton loading={history.busy} disabled={history.busy} onClick={history.sync}>{history.busy ? '同步中…' : '同步成绩'}</SecondaryButton>}</div>
     <p className="classroom-helper">{!history.ownerId ? '访客成绩仅保存在当前设备，与登录账号分开。' : history.pending.length ? `${history.pending.length} 次成绩待同步，已保留本机记录。` : '已同步的成绩可由当前班级老师查看。'} 自主练习允许提示和重试，成绩用于学习反馈。</p>
     {history.error && <p role="alert" className="classroom-alert">{history.error} 请点击同步成绩重试。</p>}
     <ExamAttemptList attempts={history.attempts} />

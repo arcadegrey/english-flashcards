@@ -1,3 +1,4 @@
+import LoadingState from './ui/LoadingState';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { speakWord } from '../utils/speech';
 import { playSuccessChime } from '../utils/feedback';
@@ -91,9 +92,7 @@ function SpellingTest({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAn
 
   if (!currentWord) {
     return (
-      <div className="rounded-[20px] border border-[#e8e8ed] bg-white p-8 text-center text-[#6e6e73]">
-        题目加载中...
-      </div>
+      <LoadingState title="正在准备题目…" />
     );
   }
 

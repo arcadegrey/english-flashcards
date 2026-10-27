@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { LoadingAnimation } from './ui/LoadingState';
 import { createPortal } from 'react-dom';
 import {
   speakWord,
@@ -136,6 +137,7 @@ function VoiceSettings({ onClose }) {
               disabled={isPlaying === 'kokoro'}
               className="voice-settings-primary"
             >
+              {isPlaying === 'kokoro' && <LoadingAnimation compact />}
               {isPlaying === 'kokoro' ? '试听中...' : '试听发音'}
             </button>
           </div>

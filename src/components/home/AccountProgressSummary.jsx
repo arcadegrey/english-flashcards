@@ -1,3 +1,4 @@
+import { LoadingAnimation } from '../ui/LoadingState';
 import { BaseCard } from '../ui/Cards';
 import { PrimaryButton, SecondaryButton } from '../ui/Buttons';
 import '../../styles/account-progress-summary.css';
@@ -28,7 +29,7 @@ export default function AccountProgressSummary({
       <div className="study-account-copy">
         <div className="study-account-heading">
           <h2>学习记录</h2>
-          <span className="study-account-status" role="status">{syncStatusText || (signedIn ? '已登录' : '未登录')}</span>
+          <span className="study-account-status" role="status">{syncStatusText === '同步中' || syncStatusText === '初始化中' ? <LoadingAnimation compact /> : null}{syncStatusText || (signedIn ? '已登录' : '未登录')}</span>
         </div>
         <p className="study-account-detail">{signedIn ? authUser.email : '进度保存在当前设备'}</p>
       </div>

@@ -1,3 +1,4 @@
+import LoadingState from './ui/LoadingState';
 import AssetImage from './ui/AssetImage';
 import { useStudyDay } from '../hooks/useStudyDay.js';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -31,6 +32,7 @@ export default function StudyMomentum({ ownerId, history, wordsDone, readingDone
   }, [ownerId, ready, progress, today, wordsDone, readingDone, examDone, allDone]);
   return <BaseCard className="study-momentum" aria-label="每周学习目标" aria-busy={!ready}>
     <CorrectAnswerCelebration trigger={trigger} />
+    {!ready && <LoadingState variant="inline" title="正在恢复每周学习记录…" />}
     <div className="study-momentum-summary">
       <div className="study-momentum-head">
         <span className="study-momentum-icon"><AssetImage src="/images/ui-assets/stat-target.png" alt="" aria-hidden="true" /></span>

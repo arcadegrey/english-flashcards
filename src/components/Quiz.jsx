@@ -1,3 +1,4 @@
+import LoadingState from './ui/LoadingState';
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { speakWord } from '../utils/speech';
 import { playSuccessChime } from '../utils/feedback';
@@ -86,9 +87,7 @@ function Quiz({
 
   if (!currentQuestion) {
     return (
-      <div className="learn-refresh-empty-state">
-        词库加载中...
-      </div>
+      <LoadingState title="正在加载词库…" />
     );
   }
 

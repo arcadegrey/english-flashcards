@@ -1,3 +1,4 @@
+import LoadingState, { LoadingAnimation } from './ui/LoadingState';
 import useReadingAttempts from '../hooks/useReadingAttempts';
 import { normalizeReadingQuestions } from '../../shared/readingQuestions.js';
 import useReadingDraft from '../hooks/useReadingDraft';
@@ -54,7 +55,7 @@ function ReadingSessionView({
       isCorrect: question.answer ? selectedAnswers[question.id].toLowerCase() === question.answer.toLowerCase() : null }]));
 
   useEffect(() => {
-    if (!toast) return undefined;
+    if (!toast || toast === '正在同步账号...') return undefined;
     const timer = setTimeout(() => setToast(''), 1600);
     return () => clearTimeout(timer);
   }, [toast]);
@@ -437,7 +438,7 @@ function ReadingSessionView({
 
             <div className="reading-save-status" aria-live="polite">
               {assignment && <p>{assignment.submittedAt ? '本次作业已提交，成绩已保存。' : '班级阅读作业：完成全部题目后提交；首次提交计成绩，逾期可补交。'}</p>}
-              <p>{draft.status === 'loading' ? '正在恢复答题记录…' : draft.status === 'synced' ? '答题记录已同步' : draft.status === 'syncing' ? '正在同步答题…' : Object.keys(draft.session.answers).length ? '答题已保留在本机' : '选择答案后将自动保存'}</p>
+              <p>{(draft.status === 'loading' || draft.status === 'syncing') && <LoadingAnimation compact />} {draft.status === 'loading' ? '正在恢复答题记录…' : draft.status === 'synced' ? '答题记录已同步' : draft.status === 'syncing' ? '正在同步答题…' : Object.keys(draft.session.answers).length ? '答题已保留在本机' : '选择答案后将自动保存'}</p>
               {draft.error && <p role="status">{draft.error} <button type="button" className="classroom-text-button" onClick={() => draft.flush().catch(() => {})}>重试保存</button></p>}
               {history.pending > 0 && <p>有 {history.pending} 次练习待同步。<button type="button" className="classroom-text-button" onClick={history.sync}>同步历史</button></p>}
               {history.error && <p role="alert">{history.error}</p>}
@@ -498,7 +499,7 @@ function ReadingSessionView({
                       <path d="M5 12.5 10 17l9-10" />
                     </svg>
                   </span>
-                  <span>{assignment ? assignment.submittedAt ? '作业已提交' : submissionBusy ? '提交中…' : '提交阅读作业' : completionSummary ? '练习已保存' : retryAttempt ? '保存错题练习' : hasReadingQuestions ? '保存本次练习' : '完成阅读'}</span>
+                  <span>{submissionBusy && <LoadingAnimation compact />} {assignment ? assignment.submittedAt ? '作业已提交' : submissionBusy ? '提交中…' : '提交阅读作业' : completionSummary ? '练习已保存' : retryAttempt ? '保存错题练习' : hasReadingQuestions ? '保存本次练习' : '完成阅读'}</span>
                 </button>
               </div>
             </footer>
@@ -618,7 +619,7 @@ function ReadingSessionView({
               <div className="learn-refresh-example-head">
                 <span className="learn-refresh-example-label">例句</span>
               </div>
-              {activeDetails.loading ? <p className="learn-refresh-hint-scope" role="status">正在加载例句…</p>
+              {activeDetails.loading ? <LoadingState variant="inline" className="learn-refresh-hint-scope" title="正在加载例句…" />
                 : activeDetails.error ? <><p className="learn-refresh-hint-scope" role="status">例句暂时无法加载。</p><button type="button" className="learn-refresh-example-audio" onClick={activeDetails.retry}>重试加载例句</button></>
                 : <><p className="learn-refresh-example-en">{activeDetails.word.example || '暂无英文例句。'}</p><p className="learn-refresh-example-cn">{activeDetails.word.exampleCn || '暂无中文例句。'}</p></>}
             </section>
@@ -644,7 +645,7 @@ function ReadingSessionView({
 
       {toast && (
         <div className="learn-refresh-toast" role="status" aria-live="polite">
-          {toast}
+          {toast === '正在同步账号...' && <LoadingAnimation compact />}{toast}
         </div>
       )}
     </AppLayout>

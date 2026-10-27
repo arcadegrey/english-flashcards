@@ -1,3 +1,4 @@
+import LoadingState from '../ui/LoadingState';
 import { useEffect, useMemo, useState } from 'react';
 import { StatCard } from '../ui/Cards';
 import { SecondaryButton } from '../ui/Buttons';
@@ -54,7 +55,7 @@ export default function StudentProgressPanel({ classId, student, onBack, initial
   return (
     <section aria-label="学生学习记录" className="classroom-student-detail">
       <div className="classroom-heading"><div><h2>{student.displayName}的学习记录</h2><p>{student.email} · 只读查看</p></div><div className="classroom-actions"><SecondaryButton onClick={onBack}>返回学生列表</SecondaryButton><SecondaryButton disabled={loading} onClick={() => setRefresh((value) => value + 1)}>刷新记录</SecondaryButton></div></div>
-      {loading ? <p role="status" className="classroom-empty">正在读取学习记录…</p> : error ? <div role="alert" className="classroom-alert">{error}<SecondaryButton onClick={() => setRefresh((value) => value + 1)}>重试</SecondaryButton></div> : data && (
+      {loading ? <LoadingState title="正在读取学习记录…" /> : error ? <div role="alert" className="classroom-alert">{error}<SecondaryButton onClick={() => setRefresh((value) => value + 1)}>重试</SecondaryButton></div> : data && (
         <>
           <p className="classroom-helper">最近同步：{formatClassroomDate(data.updatedAt)}。学生尚未同步的本机学习不会显示。</p>
           <div className="classroom-tabs classroom-record-tabs" role="group" aria-label="学习记录类型">

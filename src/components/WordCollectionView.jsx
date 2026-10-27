@@ -1,3 +1,4 @@
+import LoadingState, { LoadingAnimation } from './ui/LoadingState';
 import AssetImage from './ui/AssetImage';
 import { useEffect, useMemo, useState } from 'react';
 import WordCard from './WordCard';
@@ -32,6 +33,7 @@ function WordCollectionView({
   emptyHint,
   emptyTitle = '今天节奏很好',
   statusMessage,
+  loading = false,
   onRetry,
   onMarkAsMastered,
   onMarkAsUnknown,
@@ -86,7 +88,7 @@ function WordCollectionView({
   const displaySubtitle = subtitle || '按学习记录生成的复习集合，答题逻辑和进度保持不变。';
 
   useEffect(() => {
-    if (!toast) return undefined;
+    if (!toast || toast === '正在同步账号...') return undefined;
 
     const timer = setTimeout(() => setToast(''), 1600);
     return () => clearTimeout(timer);
@@ -232,8 +234,9 @@ function WordCollectionView({
           </section>
         )}
 
-        {collectionStatus && <p className="classroom-helper" role="status">{collectionStatus} {onRetry && <button type="button" className="collection-tool-button" onClick={onRetry}>重试加载</button>}</p>}
-        {words.length === 0 ? (
+        {!loading && collectionStatus && <p className="classroom-helper" role="status">{collectionStatus} {onRetry && <button type="button" className="collection-tool-button" onClick={onRetry}>重试加载</button>}</p>}
+        {loading && words.length > 0 && <LoadingState variant="inline" title={emptyHint} />}
+        {loading && words.length === 0 ? <LoadingState title={emptyTitle} detail={emptyHint} /> : words.length === 0 ? (
           <article className="collection-empty-state">
             <AssetImage src={emptyArtSrc} alt="" aria-hidden="true" />
             <div>
@@ -290,7 +293,7 @@ function WordCollectionView({
 
       {toast && (
         <div className="learn-refresh-toast" role="status" aria-live="polite">
-          {toast}
+          {toast === '正在同步账号...' && <LoadingAnimation compact />}{toast}
         </div>
       )}
     </>

@@ -608,7 +608,6 @@
   }
 }
 
-.dark .auth-transition-panel,
 .dark .voice-settings-dialog,
 .dark .study-hub-plan-card,
 .dark .study-hub-card,
@@ -622,7 +621,6 @@
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
 }
 
-.dark .auth-transition-copy h2,
 .dark .study-hub-plan-title,
 .dark .study-hub-plan-priority,
 .dark .study-hub-plan-task-title,
@@ -632,7 +630,6 @@
   color: var(--wl-text);
 }
 
-.dark .auth-transition-copy p:last-child,
 .dark .study-hub-eyebrow,
 .dark .study-hub-plan-meta,
 .dark .study-hub-plan-task-meta,
@@ -642,10 +639,6 @@
 .dark .study-hub-account-notice,
 .dark .study-hub-action-meta {
   color: var(--wl-subtext);
-}
-
-.dark .auth-transition-steps span {
-  background: #334155;
 }
 
 .dark .study-hub-page {

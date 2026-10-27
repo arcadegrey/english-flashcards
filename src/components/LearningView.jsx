@@ -1,3 +1,4 @@
+import LoadingState, { LoadingAnimation } from './ui/LoadingState';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import WordCard from './WordCard';
 import AssessmentSession from './assessment/AssessmentSession';
@@ -15,6 +16,7 @@ function LearningView({
   mode,
   setMode,
   allVocabulary,
+  vocabularyLoading = false,
   currentWord,
   nextWord,
   filteredVocabulary,
@@ -87,7 +89,7 @@ function LearningView({
   const weekDays = useMemo(() => getWeekStudyDays(studyHistory), [studyHistory]);
 
   useEffect(() => {
-    if (!toast) {
+    if (!toast || toast === '正在同步账号...') {
       return undefined;
     }
 
@@ -198,12 +200,13 @@ function LearningView({
           <span className="learn-refresh-goal-percent">{studyGoalPercent}%</span>
         </div>
 
-        <WordCard
+        {vocabularyLoading && currentWord && <LoadingState variant="inline" title="正在加载所选词库…" />}
+        {vocabularyLoading && !currentWord ? <LoadingState title="正在加载所选词库…" /> : <WordCard
           key={`${currentWord?.id || 'learn-empty'}-${currentIndex}`}
           word={currentWord}
           nextWord={nextWord}
           showHint={showHint}
-        />
+        />}
 
         <footer className="learn-refresh-bottombar">
           <div className="learn-refresh-bottombar-inner">
@@ -369,7 +372,7 @@ function LearningView({
         </div>
         {toast && (
           <div className="learn-refresh-toast" role="status" aria-live="polite">
-            {toast}
+            {toast === '正在同步账号...' && <LoadingAnimation compact />}{toast}
           </div>
         )}
       </AppLayout>
@@ -434,7 +437,7 @@ function LearningView({
 
       {toast && (
         <div className="learn-refresh-toast" role="status" aria-live="polite">
-          {toast}
+          {toast === '正在同步账号...' && <LoadingAnimation compact />}{toast}
         </div>
       )}
     </AppLayout>

@@ -1,3 +1,4 @@
+import LoadingState from './components/ui/LoadingState'
 import { dedupeIdList, normalizeProgressState, mergeProgress, areProgressStatesEqual, serializeProgressState, rebaseProgress } from './utils/progressState.js'
 import { createProgressSyncQueue } from './utils/progressSync.js'
 import { prepareReadingContent, indexReadingVocabulary, applyReadingProgress } from './utils/readingLibrary.js'
@@ -306,6 +307,7 @@ function AppContent() {
   const pendingStartWordIdRef = useRef(null)
   const loadingToeflListsRef = useRef(new Set())
   const loadingIeltsListsRef = useRef(new Set())
+  const [listLoads, setListLoads] = useState(0)
   const cloudEnabled = isCloudAuthConfigured()
   const [localDataLoaded, setLocalDataLoaded] = useState(false)
   const [authLoading, setAuthLoading] = useState(cloudEnabled)
@@ -1754,6 +1756,7 @@ function AppContent() {
       const cacheKey = `${levelKey}::${listKey}`
       if (loadingToeflListsRef.current.has(cacheKey)) return
       loadingToeflListsRef.current.add(cacheKey)
+      setListLoads(count => count + 1)
 
       try {
         const listVocabulary = await loadToeflListVocabulary(toeflManifest, levelKey, listKey)
@@ -1762,6 +1765,7 @@ function AppContent() {
         setVocabularyError(error?.message || '托福 List 加载失败')
       } finally {
         loadingToeflListsRef.current.delete(cacheKey)
+        setListLoads(count => count - 1)
       }
     },
     [toeflManifest]
@@ -1789,6 +1793,7 @@ function AppContent() {
 
       if (loadingIeltsListsRef.current.has(listKey)) return
       loadingIeltsListsRef.current.add(listKey)
+      setListLoads(count => count + 1)
 
       try {
         const listVocabulary = await loadIeltsListVocabulary(ieltsManifest, listKey)
@@ -1797,6 +1802,7 @@ function AppContent() {
         setVocabularyError(error?.message || '雅思 List 加载失败')
       } finally {
         loadingIeltsListsRef.current.delete(listKey)
+        setListLoads(count => count - 1)
       }
     },
     [ieltsManifest]
@@ -2362,7 +2368,7 @@ function AppContent() {
         />
         <div ref={authModalRef} className="auth-modal-card" tabIndex={-1} role="dialog" aria-modal="true" aria-label="账号与云同步">
           <PageLoadBoundary>
-            <Suspense fallback={<p className="auth-loading-text" role="status">正在准备账号面板…</p>}>
+            <Suspense fallback={<LoadingState title="正在准备账号面板…" />}>
               <AuthPanel
                 enabled={cloudEnabled}
                 loading={authLoading}
@@ -2394,30 +2400,8 @@ function AppContent() {
   const renderAuthTransitionOverlay = () => {
     if (!authTransition) return null
 
-    return (
-      <div className="auth-transition-overlay" role="status" aria-live="polite" aria-busy="true">
-        <div className="auth-transition-panel">
-          <div className="auth-transition-orbit" aria-hidden="true">
-            <span className="auth-transition-dot auth-transition-dot--blue" />
-            <span className="auth-transition-dot auth-transition-dot--green" />
-            <span className="auth-transition-dot auth-transition-dot--amber" />
-            <span className="auth-transition-core" />
-          </div>
-          <div className="auth-transition-copy">
-            <p className="auth-transition-kicker">
-              {authTransition.mode === 'register' ? '欢迎加入' : '欢迎回来'}
-            </p>
-            <h2>{authTransition.title}</h2>
-            <p>{authTransition.detail}</p>
-          </div>
-          <div className="auth-transition-steps" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-          </div>
-        </div>
-      </div>
-    )
+    return <LoadingState variant="overlay" title={authTransition.title} detail={authTransition.detail}
+      kicker={authTransition.mode === 'register' ? '欢迎加入' : '欢迎回来'} />
   }
 
   const appBackground = useMemo(() => {
@@ -2454,14 +2438,7 @@ function AppContent() {
   }, [isDark, view])
 
   if (vocabularyLoading) {
-    return (
-      <div className={`min-h-screen ${appBackground} flex items-center justify-center px-4`}>
-        <div className="w-full max-w-[360px] rounded-[16px] border border-[var(--app-border)] bg-[var(--app-surface)] p-6 text-center shadow-[var(--app-shadow)]">
-          <p className="text-lg font-semibold text-[var(--app-text)]">正在加载词库</p>
-          <p className="mt-2 text-sm text-[var(--app-muted)]">首次打开会缓存到本机，之后会更快。</p>
-        </div>
-      </div>
-    )
+    return <LoadingState variant="screen" title="正在加载词库" detail="首次打开会缓存到本机，之后会更快。" />
   }
 
   if (vocabularyError) {
@@ -2606,6 +2583,7 @@ function AppContent() {
       case 'examPractice':
         return (
           <ExamPracticeView
+            syncing={syncState === 'syncing'}
             onBack={handleBackToStudyHub}
             onHome={handleBackToStudyHub}
             onSelectMode={handleStartExamPractice}
@@ -2714,6 +2692,7 @@ function AppContent() {
       case 'toeflLevels':
         return (
           <ToeflSelectionView
+            syncing={syncState === 'syncing'}
             mode="level"
             title="托福词汇分级"
             subtitle="先选择 Level，再进入对应 List；也可以直接学习全部托福词汇。"
@@ -2740,6 +2719,7 @@ function AppContent() {
 
         return (
           <ToeflSelectionView
+            syncing={syncState === 'syncing'}
             mode="list"
             title={levelLabel}
             subtitle="选择 List 开始学习，或者直接学习当前 Level 全部词汇。"
@@ -2763,6 +2743,7 @@ function AppContent() {
       case 'ieltsTopics':
         return (
           <ToeflSelectionView
+            syncing={syncState === 'syncing'}
             mode="level"
             title="雅思词汇主题"
             subtitle="先选择主题，再进入对应 List；也可以直接学习全部雅思词汇。"
@@ -2789,6 +2770,7 @@ function AppContent() {
 
         return (
           <ToeflSelectionView
+            syncing={syncState === 'syncing'}
             mode="list"
             title={topicLabel}
             subtitle="选择 List 开始学习，或者直接学习当前主题全部词汇。"
@@ -2816,6 +2798,7 @@ function AppContent() {
             mode={mode}
             setMode={setMode}
             allVocabulary={allVocabulary}
+            vocabularyLoading={listLoads > 0}
             currentWord={currentWord}
             nextWord={shuffledWords[currentIndex + 1]}
             filteredVocabulary={filteredVocabulary}
@@ -2881,6 +2864,7 @@ function AppContent() {
           title="我的收藏"
           subtitle={authUser?.id ? '收藏独立于学习状态，随账号同步。取消收藏不会删除学习记录。' : '访客收藏仅保存在当前设备，登录后可随学习进度合并到账号。'}
           words={savedWordList}
+          loading={savedWordsLoading}
           emptyTitle={savedWordsLoading ? '正在准备收藏' : savedWordsError ? '收藏词汇暂不可用' : '还没有收藏'}
           emptyHint={savedWordsLoading ? '正在加载收藏词汇…' : savedWordsError || '还没有收藏，点击单词卡右上角的星标即可保存。'}
           statusMessage={savedWordsLoading ? '正在加载完整词库…' : savedWordsError || (unavailableSavedCount ? `${unavailableSavedCount} 个收藏词暂时无法匹配，收藏记录已保留。` : '')}
@@ -2995,13 +2979,13 @@ function AppContent() {
       <WordBookmarksContext.Provider value={wordBookmarkContext}>
         <ExamHistoryProvider key={authUser?.id || 'guest'} ownerId={authUser?.id}>
           <PageLoadBoundary key={view}>
-            <Suspense fallback={<p className="auth-loading-text" role="status">正在准备学习页面…</p>}>
+            <Suspense fallback={<LoadingState variant="screen" title="正在准备学习页面…" />}>
               {renderView()}
             </Suspense>
           </PageLoadBoundary>
         </ExamHistoryProvider>
       </WordBookmarksContext.Provider>
-      {showVoiceSettings && <PageLoadBoundary><Suspense fallback={<p role="status">正在准备语音设置…</p>}><VoiceSettings onClose={() => setShowVoiceSettings(false)} /></Suspense></PageLoadBoundary>}
+      {showVoiceSettings && <PageLoadBoundary><Suspense fallback={<LoadingState variant="overlay" title="正在准备语音设置…" />}><VoiceSettings onClose={() => setShowVoiceSettings(false)} /></Suspense></PageLoadBoundary>}
       {renderAuthModal()}
       {renderAuthTransitionOverlay()}
     </div>

@@ -1,3 +1,4 @@
+import LoadingState from './ui/LoadingState';
 import AssetImage from './ui/AssetImage';
 import { useState } from 'react';
 import AccountRoleChoice from './AccountRoleChoice';
@@ -150,7 +151,7 @@ function AuthPanel({
     return (
       <section className="auth-panel">
         <AuthHeader onClose={onClose} />
-        <p className="auth-loading-text">正在恢复账号会话...</p>
+        <LoadingState title="正在恢复账号会话…" />
       </section>
     );
   }
@@ -206,6 +207,7 @@ function AuthPanel({
 
         {isLoggedIn ? (
           <div className="auth-account-content">
+            {busy && !isSyncing && <LoadingState variant="inline" title="正在处理账号请求…" />}
             <div className="auth-classroom-entry">
               <div className="auth-classroom-copy">
                 <h3>{classroomTitle}</h3>
@@ -226,6 +228,7 @@ function AuthPanel({
                 </div>
                 <SecondaryButton
                   disabled={busy || isSyncing}
+                  loading={isSyncing}
                   onClick={handleSyncNow}
                   className="auth-secondary-button"
                 >
@@ -313,6 +316,7 @@ function AuthPanel({
 
             <PrimaryButton
               type="submit"
+              loading={busy}
               disabled={busy}
               className="auth-primary-button"
             >

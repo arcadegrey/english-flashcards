@@ -1,3 +1,4 @@
+import LoadingState from './ui/LoadingState';
 import AssetImage from './ui/AssetImage';
 import { TeacherReadingAssignments, StudentReadingAssignments } from './classroom/ReadingAssignments';
 import { useEffect, useState } from 'react';
@@ -21,7 +22,7 @@ function ProfileEditor({ profile, locked, busy, onSave }) {
         <input className="classroom-input" value={name} onChange={(event) => setName(event.target.value)} required maxLength={40} />
       </label>
       <p className="classroom-helper">{locked ? '已有班级关联时身份不可切换，姓名仍可修改。' : '学生通过邀请码加入班级，老师仅能查看自己班级的学生。'}</p>
-      <PrimaryButton type="submit" disabled={busy || !name.trim()}>{busy ? '正在保存…' : '保存身份资料'}</PrimaryButton>
+      <PrimaryButton type="submit" loading={busy} disabled={busy || !name.trim()}>{busy ? '正在保存…' : '保存身份资料'}</PrimaryButton>
     </form>
   );
 }
@@ -62,8 +63,9 @@ function StudentRoster({ classroom, refreshKey, onSelectStudent, onChanged }) {
       <div className="classroom-heading"><div><h3>学生学习进度</h3><p>共 {data?.total ?? classroom.studentCount} 位学生 · 点击学生查看单词与阅读记录</p></div>
         <SecondaryButton disabled={loading} onClick={onChanged}>刷新进度</SecondaryButton>
       </div>
+      {busy && <LoadingState variant="inline" title="正在更新班级成员…" />}
       {error && <div className="classroom-alert" role="alert">{error}<SecondaryButton onClick={() => setRetry((value) => value + 1)}>重试</SecondaryButton></div>}
-      {loading ? <p className="classroom-empty" role="status">正在读取学生进度…</p> : !error && data?.students.length === 0 ? (
+      {loading ? <LoadingState title="正在读取学生进度…" /> : !error && data?.students.length === 0 ? (
         <div className="classroom-empty"><AssetImage src="/images/ui-assets/category-all-words-blue-v1.png" alt="" /><h3>等待学生加入</h3><p>把班级邀请码发给学生，加入后即可在这里查看学习记录。</p></div>
       ) : !error && (
         <>
@@ -146,9 +148,10 @@ export default function ClassroomView({ user, navItems, topbarProps, onAuthOpen,
       <div className="ds-stack classroom-page">
         {!userId ? <BaseCard className="classroom-panel classroom-empty"><h2>登录后使用班级功能</h2><p>老师可以创建班级，学生可以通过邀请码加入。</p><PrimaryButton onClick={onAuthOpen}>登录 / 注册</PrimaryButton></BaseCard> : (
           <>
+            {busy && <LoadingState variant="inline" title="正在保存班级更改…" />}
             {error && <div className="classroom-alert" role="alert">{error}<SecondaryButton onClick={() => setRefresh((value) => value + 1)}>重新加载</SecondaryButton></div>}
             {notice && <p className="classroom-notice" role="status">{notice}</p>}
-            {!data && loading && <BaseCard className="classroom-panel" role="status">正在加载班级…</BaseCard>}
+            {!data && loading && <BaseCard className="classroom-panel"><LoadingState title="正在加载班级…" /></BaseCard>}
             {profile && <BaseCard className="classroom-panel">
               <div className="classroom-heading"><div><span className="exam-section-pill">{getAccountRoleLabel(profile)}</span><h2>{profile.displayName}，{teacher ? '查看班级的学习情况' : '和老师一起保持学习节奏'}</h2><p>{profile.email}</p></div></div>
               {profile.profileConfigured ? <details className="classroom-profile-details"><summary>修改身份资料</summary><ProfileEditor key={`${profile.role}:${profile.displayName}:${data.classes.length > 0}`} profile={profile} locked={data.classes.length > 0} busy={busy} onSave={(values) => perform(async () => { const result = await saveClassroomProfile(values); onProfileUpdated(result.user); }, '资料已保存。')} /></details>

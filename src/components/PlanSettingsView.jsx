@@ -1,3 +1,4 @@
+import LoadingState from './ui/LoadingState';
 import AppLayout from './layout/AppLayout';
 import { ModuleCard } from './ui/Cards';
 import categories from '../data/categories';
@@ -128,7 +129,7 @@ function PlanSettingsView({
                   返回今日计划
                 </button>
                 <button type="button" className="exam-sync-button" onClick={onStartLearning} disabled={isPreparing}>
-                  {isPreparing ? '正在准备词库' : '去背单词'}
+                  {isPreparing ? <LoadingState variant="inline" title="正在准备词库" /> : '去背单词'}
                 </button>
               </div>
             </div>

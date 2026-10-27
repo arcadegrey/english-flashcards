@@ -1,3 +1,4 @@
+import LoadingState from '../ui/LoadingState';
 import AssetImage from '../ui/AssetImage';
 import { resolveImageAsset } from '../../utils/imageAssets';
 import { BaseCard } from '../ui/Cards';
@@ -58,7 +59,7 @@ export function DashboardTasks({ cards, priority, ready, plan, onAction, onAdjus
     <header className="study-dashboard-panel-head"><h2><span className="study-dashboard-panel-symbol" aria-hidden="true"><DashboardArtwork src="/images/ui-assets/training-card-vocabulary-blue-v1.png" /></span>今日学习计划</h2>
       <button type="button" onClick={onAdjustPlan}>调整计划<Chevron /></button>
     </header>
-    {!ready && <p className="study-dashboard-preparing" role="status">正在准备今日学习任务…</p>}
+    {!ready && <LoadingState variant="inline" className="study-dashboard-preparing" title="正在准备今日学习任务…" />}
     {ready && !tasks.length && <p className="study-dashboard-preparing">当前暂无可安排的任务，从训练中心选择内容开始。</p>}
     <div className="study-dashboard-task-list">{tasks.map(task => <div key={task.id} className={`study-dashboard-task is-${task.tone} ${priority === task.id ? 'is-priority' : ''}`}>
       <span className="study-dashboard-task-icon"><DashboardArtwork src={DASHBOARD_ART[task.id]} /></span>

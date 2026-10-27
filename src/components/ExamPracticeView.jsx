@@ -1,3 +1,4 @@
+import LoadingState, { LoadingAnimation } from './ui/LoadingState';
 import AssetImage from './ui/AssetImage';
 import AppLayout from './layout/AppLayout';
 import QuickMenu from './QuickMenu';
@@ -86,6 +87,7 @@ function ExamPracticeView({
   onBack,
   onSelectMode,
   onSyncAccount,
+  syncing = false,
   mode = 'learn',
   onOpenMode,
   onOpenReading,
@@ -137,7 +139,8 @@ function ExamPracticeView({
                 <button type="button" className="exam-back-button" onClick={onBack}>
                   返回今日计划
                 </button>
-                <button type="button" className="exam-sync-button" onClick={onSyncAccount}>
+                <button type="button" className="exam-sync-button" onClick={onSyncAccount} disabled={syncing} aria-busy={syncing || undefined}>
+                  {syncing && <LoadingAnimation compact />}
                   同步进度
                 </button>
                 <QuickMenu mode={mode} onOpenMode={onOpenMode} onOpenReading={onOpenReading} />
@@ -198,7 +201,7 @@ function ExamPracticeView({
               <h3>选择练习方式</h3>
               <p>每一种模式都会保留原来的答题逻辑和学习进度记录。</p>
             </div>
-            {isPreparing && <span className="exam-empty-note" role="status">正在准备{categoryName === '全部单词' ? '全范围词库' : categoryName}</span>}
+            {isPreparing && <LoadingState variant="inline" className="exam-empty-note" title={`正在准备${categoryName === '全部单词' ? '全范围词库' : categoryName}`} />}
             {preparationError && (
               <div className="exam-section-actions exam-preparation-feedback" role="alert">
                 <span className="exam-empty-note">{preparationError}</span>

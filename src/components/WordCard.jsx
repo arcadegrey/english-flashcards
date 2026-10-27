@@ -1,3 +1,4 @@
+import LoadingState from './ui/LoadingState';
 import { useEffect, useState } from 'react';
 import { useWordBookmarks } from '../context/word-bookmarks-context';
 import { getWordMeaningLine } from '../utils/wordHintPresentation.js';
@@ -12,7 +13,7 @@ function WordCard({ word: entry, nextWord, showHint = false }) {
   const bookmarks = useWordBookmarks();
   const [notice, setNotice] = useState(null);
   const isSaved = Boolean(bookmarks?.entries?.[String(word?.id)]?.saved);
-  const { hints, status: hintStatus, error: hintError, retry: retryHints } = useWordHints(word, { enabled: showHint });
+  const { hints, status: hintStatus, loading: hintLoading, error: hintError, retry: retryHints } = useWordHints(word, { enabled: showHint });
   useEffect(() => {
     if (word && !exampleLoading && !exampleError && nextWord) void loadWordDetails(nextWord).catch(() => {});
   }, [word, nextWord, exampleLoading, exampleError]);
@@ -99,7 +100,7 @@ function WordCard({ word: entry, nextWord, showHint = false }) {
             <span>播放例句</span>
           </button>
         </div>
-        {exampleLoading ? <p className="learn-refresh-hint-scope" role="status">正在加载例句…</p>
+        {exampleLoading ? <LoadingState variant="inline" className="learn-refresh-hint-scope" title="正在加载例句…" />
           : exampleError ? <><p className="learn-refresh-hint-scope" role="status">例句暂时无法加载，当前词义仍可学习。</p><button type="button" className="learn-refresh-example-audio" onClick={retryExample}>重试加载例句</button></>
           : <><p className="learn-refresh-example-en">{word.example || '暂无英文例句。'}</p><p className="learn-refresh-example-cn">{word.exampleCn || '暂无中文例句。'}</p></>}
       </section>
@@ -107,7 +108,7 @@ function WordCard({ word: entry, nextWord, showHint = false }) {
       <section className={`learn-refresh-expandable ${showHint ? 'is-open' : ''}`} aria-hidden={!showHint} inert={!showHint}>
         <div className="learn-refresh-expandable-inner">
           <h2 className="learn-refresh-expandable-title">学习提示</h2>
-          {hintStatus && <p className="learn-refresh-hint-scope" role="status">{hintStatus}</p>}
+          {hintLoading ? <LoadingState variant="inline" className="learn-refresh-hint-scope" title={hintStatus} /> : hintStatus && <p className="learn-refresh-hint-scope" role="status">{hintStatus}</p>}
           {hintError && <button type="button" className="learn-refresh-example-audio" onClick={retryHints}>重试加载提示</button>}
           {hints.map((hint, index) => (
             <div key={hint.label} className="learn-refresh-hint-item" style={{ '--hint-index': index }}>

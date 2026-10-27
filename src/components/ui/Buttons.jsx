@@ -1,14 +1,18 @@
-export function PrimaryButton({ children, className = '', ...props }) {
+import { LoadingAnimation } from './LoadingState';
+
+export function PrimaryButton({ children, className = '', loading = false, disabled, ...props }) {
   return (
-    <button type="button" className={`ds-button ds-button-primary ${className}`} {...props}>
+    <button type="button" className={`ds-button ds-button-primary ${className}`} {...props} disabled={disabled || loading} aria-busy={loading || undefined}>
+      {loading && <LoadingAnimation compact />}
       {children}
     </button>
   )
 }
 
-export function SecondaryButton({ children, className = '', ...props }) {
+export function SecondaryButton({ children, className = '', loading = false, disabled, ...props }) {
   return (
-    <button type="button" className={`ds-button ds-button-secondary ${className}`} {...props}>
+    <button type="button" className={`ds-button ds-button-secondary ${className}`} {...props} disabled={disabled || loading} aria-busy={loading || undefined}>
+      {loading && <LoadingAnimation compact />}
       {children}
     </button>
   )
