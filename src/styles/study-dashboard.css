@@ -411,12 +411,15 @@
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  min-height: 32px;
   margin-bottom: 16px;
 }
 
 .study-dashboard-panel-head h2 { display: flex; align-items: center; gap: 10px; margin: 0; color: #17233e; font-size: 18px; line-height: 1.4; font-weight: 750; }
 .study-dashboard-panel-head h2 img { width: 30px; height: 30px; object-fit: contain; }
 .study-dashboard-panel-head h2 svg { width: 25px; height: 25px; fill: #6190ff; stroke: #6190ff; stroke-width: 1; }
+.study-dashboard-panel-symbol { display: grid; place-items: center; flex: 0 0 28px; width: 28px; height: 28px; }
+.study-dashboard-panel-head h2 .study-dashboard-panel-symbol > svg { display: block; width: 26px; height: 26px; }
 .study-dashboard-panel-head > button { display: inline-flex; align-items: center; gap: 3px; padding: 6px 0 6px 6px; border: 0; background: transparent; color: #4f7cff; font-size: 12px; font-weight: 550; white-space: nowrap; }
 .study-dashboard-preparing { padding: 25px 8px; color: var(--dashboard-muted); font-size: 14px; line-height: 1.7; }
 .study-dashboard-task-list { display: grid; gap: 8px; }
@@ -434,8 +437,8 @@
 }
 
 .study-dashboard-task.is-priority { border-color: #d4e1ff; background: #f9fbff; }
-.study-dashboard-task-icon { display: grid; place-items: center; flex-shrink: 0; width: 38px; height: 38px; border-radius: 12px; background: #eef4ff; }
-.study-dashboard-task-icon img { width: 33px; height: 33px; object-fit: contain; }
+.study-dashboard-task-icon { display: grid; place-items: center; flex: 0 0 40px; width: 40px; height: 40px; border-radius: 12px; background: #eef4ff; }
+.study-dashboard-artwork { display: block; flex-shrink: 0; width: 28px; height: 28px; object-fit: contain; overflow: hidden; pointer-events: none; }
 .study-dashboard-task.is-lavender .study-dashboard-task-icon { background: #f2efff; }
 .study-dashboard-task.is-peach .study-dashboard-task-icon { background: #fff4e9; }
 .study-dashboard-task-copy { min-width: 0; flex: 1; }
@@ -447,8 +450,7 @@
 .study-dashboard-task-status { color: #73a28a; font-size: 10px; white-space: nowrap; }
 .study-dashboard-quick-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .study-dashboard-shortcut { display: flex; align-items: center; gap: 9px; min-width: 0; min-height: 88px; padding: 14px 11px; border: 1px solid #e6edff; border-radius: 16px; background: #f8faff; text-align: left; }
-.study-dashboard-shortcut-icon { flex-shrink: 0; display: grid; place-items: center; width: 39px; height: 39px; border-radius: 13px; background: #eaf2ff; }
-.study-dashboard-shortcut-icon img { width: 35px; height: 35px; object-fit: contain; }
+.study-dashboard-shortcut-icon { flex: 0 0 40px; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; background: #eaf2ff; }
 .study-dashboard-shortcut > span:nth-child(2) { min-width: 0; flex: 1; }
 .study-dashboard-shortcut strong { display: block; color: #23314e; font-size: 13px; font-weight: 650; line-height: 1.4; }
 .study-dashboard-shortcut small { display: block; margin-top: 5px; color: #8794ac; font-size: 11px; line-height: 1.4; }
@@ -523,18 +525,18 @@
   .study-dashboard-panel-head h2 img { width: 25px; height: 25px; }
   .study-dashboard-panel-head > button { font-size: 11px; }
   .study-dashboard-task { padding: 10px 8px; gap: 7px; }
-  .study-dashboard-task-icon { width: 30px; height: 32px; border-radius: 10px; }
-  .study-dashboard-task-icon img { width: 27px; height: 27px; }
+  .study-dashboard-task-icon { flex-basis: 34px; width: 34px; height: 34px; border-radius: 11px; }
+  .study-dashboard-artwork { width: 24px; height: 24px; }
   .study-dashboard-task-copy h3 { font-size: 12px; }
   .study-dashboard-task-copy p { font-size: 10px; }
   .study-dashboard-task-action button { padding: 5px 7px; font-size: 10px; }
   .study-dashboard-task-action button svg { width: 12px; height: 12px; }
   .study-dashboard-quick-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
-  .study-dashboard-shortcut { flex-direction: row; gap: 8px; padding: 12px 10px; min-height: 82px; }
-  .study-dashboard-shortcut-icon { width: 34px; height: 34px; border-radius: 11px; }
-  .study-dashboard-shortcut-icon img { width: 31px; height: 31px; }
-  .study-dashboard-shortcut strong { font-size: 12px; }
-  .study-dashboard-shortcut small { font-size: 10px; }
+  .study-dashboard-shortcut { flex-direction: row; align-items: center; justify-content: flex-start; gap: 8px; padding: 8px; min-height: 76px; text-align: center; }
+  .study-dashboard-shortcut > span:nth-child(2) { flex: 1; }
+  .study-dashboard-shortcut-icon { flex-basis: 34px; width: 34px; height: 34px; border-radius: 11px; }
+  .study-dashboard-shortcut strong { font-size: 14px; }
+  .study-dashboard-shortcut small { font-size: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -590,8 +592,7 @@
   .study-dashboard-panel-head h2 { font-size: 17px; gap: 6px; }
   .study-dashboard-panel-head h2 img { width: 28px; height: 28px; }
   .study-dashboard-task { min-height: 66px; padding: 10px 8px; border-radius: 16px; gap: 8px; }
-  .study-dashboard-task-icon { width: 34px; height: 38px; border-radius: 12px; }
-  .study-dashboard-task-icon img { width: 32px; height: 32px; }
+  .study-dashboard-task-icon { width: 34px; height: 34px; border-radius: 11px; }
   .study-dashboard-task-copy h3 { font-size: 12px; font-weight: 650; }
   .study-dashboard-task-copy p { font-size: 10px; line-height: 1.5; }
   .study-dashboard-task-action button { min-height: 32px; border-radius: 11px; font-size: 10px; padding: 5px 7px; }
@@ -653,6 +654,19 @@
 :root:not(.dark) .study-dashboard-stat:hover {
   border-color: #a7c3f3;
   box-shadow: inset 0 1px 0 #fff, 0 10px 26px #4f7cff16;
+}
+
+/* Keep matching icon/text insets in task rows and quick-start entries. */
+.study-dashboard-workspace { --dashboard-entry-inset: 12px; --dashboard-entry-gap: 11px; }
+.study-dashboard-workspace :is(.study-dashboard-task, .study-dashboard-shortcut) {
+  padding-inline: var(--dashboard-entry-inset);
+  column-gap: var(--dashboard-entry-gap);
+}
+@media (max-width: 767px) {
+  .study-dashboard-workspace { --dashboard-entry-inset: 8px; --dashboard-entry-gap: 7px; }
+}
+@media (max-width: 640px) {
+  .study-dashboard-workspace { --dashboard-entry-gap: 8px; }
 }
 
 @media (max-width: 640px) {

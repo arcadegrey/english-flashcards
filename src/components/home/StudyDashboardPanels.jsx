@@ -6,6 +6,28 @@ function Chevron() {
   return <svg className="study-dashboard-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg>;
 }
 
+// Canvas size and visible alpha bounds (>16), measured from the existing PNGs.
+// A square viewport with 6% padding centers the subject, not its transparent canvas.
+const ARTWORK_FRAMES = {
+  '/images/ui-assets/training-card-vocabulary-blue-v1.png': [768, 512, 320, 91, 350, 371],
+  '/images/ui-assets/training-card-reading-blue-v1.png': [768, 512, 78, 70, 338, 411],
+  '/images/ui-assets/training-card-review-blue-v1.png': [768, 512, 283, 42, 380, 376],
+  '/images/ui-assets/training-card-test-blue-v1.png': [768, 512, 87, 71, 383, 335],
+  '/images/ui-assets/training-hero-flashcards-blue-v1.png': [1536, 1024, 246, 118, 1010, 745],
+  '/images/ui-assets/category-all-words-blue-v1.png': [512, 512, 135, 109, 339, 350],
+};
+
+function DashboardArtwork({ src }) {
+  const frame = ARTWORK_FRAMES[src];
+  if (!frame) return <img className="study-dashboard-artwork" src={src} alt="" aria-hidden="true" />;
+  const [canvasWidth, canvasHeight, x, y, width, height] = frame;
+  const size = Math.max(width, height) * 1.12;
+  const viewBox = `${x + (width - size) / 2} ${y + (height - size) / 2} ${size} ${size}`;
+  return <svg className="study-dashboard-artwork" viewBox={viewBox} aria-hidden="true" focusable="false">
+    <image href={src} width={canvasWidth} height={canvasHeight} />
+  </svg>;
+}
+
 export function DashboardStats({ plan, streak, history, wordCount, categoryName, onAdjustPlan, onStatistics, onCatalog }) {
   const time = dashboardStudyTime(history);
   const progress = plan.tasks.words.goal ? Math.min(100, plan.tasks.words.progress / plan.tasks.words.goal * 100) : 0;
@@ -31,13 +53,13 @@ export function DashboardTasks({ cards, priority, ready, plan, onAction, onAdjus
   const tasks = ['review', 'words', 'reading', 'exam'].map(id => cards.find(card => card.id === id))
     .filter(card => card && (card.id !== 'review' || plan.tasks.review.count > 0));
   return <BaseCard className="study-dashboard-tasks" aria-label="今日学习计划">
-    <header className="study-dashboard-panel-head"><h2><img src="/images/ui-assets/training-card-vocabulary-blue-v1.png" alt="" aria-hidden="true" />今日学习计划</h2>
+    <header className="study-dashboard-panel-head"><h2><span className="study-dashboard-panel-symbol" aria-hidden="true"><DashboardArtwork src="/images/ui-assets/training-card-vocabulary-blue-v1.png" /></span>今日学习计划</h2>
       <button type="button" onClick={onAdjustPlan}>调整计划<Chevron /></button>
     </header>
     {!ready && <p className="study-dashboard-preparing" role="status">正在准备今日学习任务…</p>}
     {ready && !tasks.length && <p className="study-dashboard-preparing">当前暂无可安排的任务，从训练中心选择内容开始。</p>}
     <div className="study-dashboard-task-list">{tasks.map(task => <div key={task.id} className={`study-dashboard-task is-${task.tone} ${priority === task.id ? 'is-priority' : ''}`}>
-      <span className="study-dashboard-task-icon"><img src={DASHBOARD_ART[task.id]} alt="" aria-hidden="true" /></span>
+      <span className="study-dashboard-task-icon"><DashboardArtwork src={DASHBOARD_ART[task.id]} /></span>
       <div className="study-dashboard-task-copy"><h3>{task.id === 'words' ? `词汇学习 · ${task.title}` : task.id === 'reading' ? `阅读 · ${task.title}` : task.id === 'exam' ? '快速练习 · 词汇巩固' : task.title}</h3>
         <p>{task.id === 'words' ? task.progressLabel : task.id === 'review' ? task.meta : task.id === 'reading' ? task.meta : task.progressLabel}</p>
       </div>
@@ -57,9 +79,9 @@ export function DashboardQuickStart({ reviewCount, wrongCount, onReview, onCatal
     { id: 'exam', title: '做测试', detail: '选择范围与题型', art: DASHBOARD_ART.exam, tone: 'mint', action: onExam },
   ];
   return <BaseCard className="study-dashboard-quick" aria-label="快速开始">
-    <header className="study-dashboard-panel-head"><h2><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m13 2-9 12h7l-1 8 10-13h-7z" /></svg>快速开始</h2></header>
+    <header className="study-dashboard-panel-head"><h2><span className="study-dashboard-panel-symbol" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 10-13h-7z" /></svg></span>快速开始</h2></header>
     <div className="study-dashboard-quick-grid">{entries.map(entry => <button key={entry.id} type="button" className={`study-dashboard-shortcut is-${entry.tone}`} onClick={entry.action}>
-      <span className="study-dashboard-shortcut-icon"><img src={entry.art} alt="" aria-hidden="true" /></span>
+      <span className="study-dashboard-shortcut-icon"><DashboardArtwork src={entry.art} /></span>
       <span><strong>{entry.title}</strong><small>{entry.detail}</small></span><Chevron />
     </button>)}</div>
   </BaseCard>;
