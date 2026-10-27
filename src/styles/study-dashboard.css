@@ -460,7 +460,6 @@
 .study-dashboard-shortcut.is-mint .study-dashboard-shortcut-icon { background: #e9f8f3; }
 .study-dashboard-stat, .study-dashboard-shortcut { transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease; }
 .study-dashboard-stat:hover, .study-dashboard-shortcut:hover { transform: translateY(-2px); border-color: #c7d8ff; box-shadow: 0 8px 18px rgba(79, 124, 255, 0.06); }
-.study-dashboard-account-link { border: 0; background: transparent; color: #4f7cff; font-size: 13px; font-weight: 650; padding: 4px 0; }
 .study-dashboard button:focus-visible, .study-carousel:focus-visible { outline: 3px solid rgba(79, 124, 255, 0.45); outline-offset: 3px; }
 
 @media (max-width: 1200px) {

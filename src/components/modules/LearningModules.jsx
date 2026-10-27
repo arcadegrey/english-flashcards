@@ -1,4 +1,3 @@
-import AssetImage from '../ui/AssetImage';
 import { BaseCard, ModuleCard, StatCard, StatusCard } from '../ui/Cards'
 
 const UI_ASSETS = {
@@ -39,21 +38,6 @@ export function StatsRow({ streak, target, remaining }) {
         <StatCard iconSrc={UI_ASSETS.star} value={remaining} label="剩余词汇" />
       </div>
     </BaseCard>
-  )
-}
-
-export function MotivationBand() {
-  return (
-    <section className="ds-motivation-band">
-      <span className="ds-stat-icon" aria-hidden="true">
-        <AssetImage className="ds-stat-icon-img" src={UI_ASSETS.target} alt="" loading="lazy" />
-      </span>
-      <div>
-        <h3>坚持每天进步一点点</h3>
-        <p>积累现在，收获未来</p>
-      </div>
-      <AssetImage className="ds-motivation-art-image" src={UI_ASSETS.star} alt="" loading="lazy" aria-hidden="true" />
-    </section>
   )
 }
 

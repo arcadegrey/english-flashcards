@@ -3,7 +3,7 @@ import { useCallback, useEffect, useRef, useState, useMemo } from 'react';
 import categories from '../data/categories';
 import AppLayout from './layout/AppLayout';
 import { ModuleCard, BaseCard } from './ui/Cards';
-import { MotivationBand, StatsRow } from './modules/LearningModules';
+import { StatsRow } from './modules/LearningModules';
 import { ReadingPickerContent } from './reading/ReadingPicker';
 import { buildReadingLevelOptions } from './reading/readingPickerModel';
 import { calculateStudyStreak } from '../utils/learningMetrics';
@@ -359,8 +359,6 @@ function HomeScreen({
           if (typeof onOpenReadingSession === 'function') onOpenReadingSession(article.id);
           else handleOpenReadingPicker();
         }} />
-
-        <MotivationBand />
 
         <StatsRow streak={streak} target={dailyTarget} remaining={wordCounts.all || 0} />
       </div>

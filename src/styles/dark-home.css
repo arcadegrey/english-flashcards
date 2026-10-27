@@ -76,7 +76,6 @@
 .dark .study-momentum-head p,
 .dark .study-momentum-head strong span { color: var(--ds-muted); }
 .dark .study-dashboard-panel-head > button,
-.dark .study-dashboard-account-link,
 .dark .study-momentum-head strong,
 .dark .study-momentum-details { color: var(--ds-dark-link); }
 
@@ -112,9 +111,6 @@
 .dark .study-momentum-notice button { color: #b4c7e5; }
 .dark .study-hub-completion-summary span { background: #294164; color: #b5cfff; }
 .dark .study-hub-tomorrow { border-color: var(--ds-line); }
-.dark .study-hub-account-summary { background: var(--ds-card); border-color: var(--ds-line); box-shadow: none; }
-.dark .study-hub-account-summary::before { background: #739fff; }
-.dark .study-hub-account-summary span:last-child { color: var(--ds-muted); }
 
 /* Keep the adjacent training home in the same material system. */
 .dark .training-home-shell .ds-module-card { background: var(--ds-card); border-color: var(--ds-line); box-shadow: 0 8px 24px #070e1a1f; }
@@ -125,7 +121,6 @@
 .dark .training-home-shell .ds-module-arrow { background: #2a3e5c; color: #b5cfff; }
 .dark .training-home-shell .ds-module-card:hover { border-color: #587db4; }
 .dark .training-home-shell .ds-hero-label { background: #2b4265; color: #bdd3ff; }
-.dark .training-home-shell .ds-motivation-band,
 .dark .training-home-shell .ds-stat-row,
 .dark .training-home-shell .training-picker-panel { background: var(--ds-card); border-color: var(--ds-line); box-shadow: none; }
 

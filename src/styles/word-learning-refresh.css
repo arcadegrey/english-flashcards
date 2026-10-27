@@ -212,6 +212,10 @@
   padding-bottom: 0;
 }
 
+.ds-app-layout .learn-refresh-main--assessment .learn-refresh-card.quiz-refresh-card {
+  padding-bottom: 28px;
+}
+
 .ds-app-layout .learn-refresh-main--assessment .assessment-refresh-top {
   display: flex;
   align-items: center;
@@ -547,6 +551,10 @@
   .ds-app-layout .learn-refresh-main--assessment .learn-refresh-card:not(.learn-refresh-word-card) {
     width: 100%;
     padding: 20px 20px 0;
+  }
+
+  .ds-app-layout .learn-refresh-main--assessment .learn-refresh-card.quiz-refresh-card {
+    padding-bottom: 20px;
   }
 }
 

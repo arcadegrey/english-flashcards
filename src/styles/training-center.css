@@ -214,19 +214,12 @@
 .training-home-shell .reading-review-panel .classroom-empty { padding: 20px 12px; font-size: 12px; }
 .training-home-shell .reading-review-panel .classroom-empty h3 { font-size: 14px; font-weight: 600; }
 
-.training-home-shell .ds-motivation-band,
 .training-home-shell .ds-stat-row {
   border: 1px solid var(--training-border);
   border-radius: 20px;
   background: var(--training-surface);
   box-shadow: var(--training-shadow);
 }
-.training-home-shell .ds-motivation-band { justify-content: flex-start; min-height: 68px; padding: 12px 22px; gap: 14px; }
-.training-home-shell .ds-motivation-band .ds-stat-icon { width: 36px; height: 36px; border-radius: 12px; box-shadow: none; background: var(--training-inset); }
-.training-home-shell .ds-motivation-band .ds-stat-icon-img { width: 36px; height: 36px; }
-.training-home-shell .ds-motivation-band h3 { font-size: 14px; line-height: 1.5; font-weight: 650; }
-.training-home-shell .ds-motivation-band p { margin-top: 2px; font-size: 12px; font-weight: 450; }
-.training-home-shell .ds-motivation-art-image { margin-left: auto; width: 38px; height: 38px; filter: none; }
 .training-home-shell .ds-stat-row { min-height: 96px; padding: 18px 22px; gap: 18px; grid-template-columns: 140px minmax(0, 1fr); }
 .training-home-shell .ds-stat-row-head { min-height: 52px; }
 .training-home-shell .ds-stat-row-head > p { font-size: 9px; font-weight: 600; }
@@ -289,10 +282,6 @@
   .training-home-shell .training-picker-panel .word-home-category-head { gap: 10px; padding-bottom: 14px; margin-bottom: 14px; }
   .training-home-shell .word-home-category-head h2 { font-size: 18px; }
   .training-home-shell .word-home-category-head p { font-size: 11px; }
-  .training-home-shell .ds-motivation-band { padding: 12px 14px; gap: 10px; }
-  .training-home-shell .ds-motivation-band h3 { font-size: 13px; }
-  .training-home-shell .ds-motivation-band p { font-size: 11px; }
-  .training-home-shell .ds-motivation-art-image { width: 30px; height: 30px; }
   .training-home-shell .ds-stat-row { grid-template-columns: 1fr; gap: 14px; padding: 16px 14px; }
   .training-home-shell .ds-stat-row-head { display: flex; align-items: center; gap: 10px; min-height: 0; border: 0; }
   .training-home-shell .ds-stat-row-head h3 { margin: 0; order: -1; }

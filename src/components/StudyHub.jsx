@@ -1,6 +1,7 @@
 import { StudentReadingAssignments } from './classroom/ReadingAssignments'
 import AppLayout from './layout/AppLayout'
 import StudyCarousel from './home/StudyCarousel'
+import AccountProgressSummary from './home/AccountProgressSummary'
 import { DashboardStats, DashboardTasks, DashboardQuickStart } from './home/StudyDashboardPanels'
 import { buildStudyDeck, dashboardGreeting } from '../utils/studyDashboard.js'
 import '../styles/study-dashboard.css'
@@ -57,7 +58,6 @@ function StudyHub({
   const examTaskComplete = plan.tasks.exam.complete;
   const streak = calculateStudyStreak(studyHistory);
   const allDailyTasksComplete = plan.complete;
-  const isSignedIn = Boolean(authUser?.email);
   const cards = buildStudyDeck({ plan, categoryName: planCategoryName, remaining: remainingWordCount,
     wordCount, suggestedReading, planError });
   const actions = {
@@ -186,14 +186,9 @@ function StudyHub({
           </section>
         )}
 
-        <section className="study-hub-account-summary" aria-live="polite">
-          <button type="button" className="study-dashboard-account-link" onClick={onAuthOpen}>{isSignedIn ? '查看账号' : '登录保存进度'}</button>
-          <span>{authUser?.email ? `当前账号：${authUser.email}` : syncStatusText || '当前未登录'}</span>
-          {accountNotice && (
-            <span className={`is-${accountNotice.type || 'info'}`}>{accountNotice.message}</span>
-          )}
-          <span>今日标记认识 {todayWordsMastered} 个词 · 阅读 {todayReadingsCompleted}/{readingCount} 篇 · 巩固 {todayExamQuestionsAnswered} 题 · 错题 {wrongCount} 个</span>
-        </section>
+        <AccountProgressSummary authUser={authUser} onAuthOpen={onAuthOpen} syncStatusText={syncStatusText}
+          accountNotice={accountNotice} todayWordsMastered={todayWordsMastered} todayReadingsCompleted={todayReadingsCompleted}
+          readingCount={readingCount} todayExamQuestionsAnswered={todayExamQuestionsAnswered} wrongCount={wrongCount} />
       </div>
     </AppLayout>
   );
