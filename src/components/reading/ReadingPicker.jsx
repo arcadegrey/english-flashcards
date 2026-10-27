@@ -1,6 +1,8 @@
 import { useMemo } from 'react';
 import { READING_LEVEL_META, buildReadingLevelOptions, filterReadingsByLevel } from './readingPickerModel';
 import { buildReadingCompletionMap } from '../../utils/learningMetrics';
+import StudyCarousel from '../home/StudyCarousel';
+import { READING_PICKER_VISUALS } from '../training/pickerVisuals';
 
 function ReadingPanelIcon() {
   return (
@@ -8,84 +10,6 @@ function ReadingPanelIcon() {
       <path d="M4.5 5.5h5.25c1.24 0 2.25 1 2.25 2.25v10.75c0-1.2-1.04-2.25-2.25-2.25H4.5V5.5Z" />
       <path d="M19.5 5.5h-5.25c-1.24 0-2.25 1-2.25 2.25v10.75c0-1.2 1.04-2.25 2.25-2.25h5.25V5.5Z" />
     </svg>
-  );
-}
-
-function ReadingLevelIcon({ levelId, label }) {
-  if (levelId === 'all') {
-    return (
-      <svg viewBox="0 0 32 32" aria-hidden="true">
-        <rect x="5" y="5" width="9" height="9" rx="2.2" />
-        <rect x="18" y="5" width="9" height="9" rx="2.2" />
-        <rect x="5" y="18" width="9" height="9" rx="2.2" />
-        <rect x="18" y="18" width="9" height="9" rx="2.2" />
-      </svg>
-    );
-  }
-
-  return <span>{String(label || '').split(' ')[0] || levelId.toUpperCase()}</span>;
-}
-
-function ReadingLevelArt({ levelId }) {
-  if (levelId === 'all') {
-    return <span className="reading-level-art-grid" aria-hidden="true" />;
-  }
-
-  if (levelId === 'b1' || levelId === 'a1' || levelId === 'a2') {
-    return (
-      <span className="reading-level-art-sprout" aria-hidden="true">
-        <span />
-        <span />
-        <span />
-      </span>
-    );
-  }
-
-  if (levelId === 'b2') {
-    return (
-      <span className="reading-level-art-mountain" aria-hidden="true">
-        <span />
-      </span>
-    );
-  }
-
-  return (
-    <span className="reading-level-art-crown" aria-hidden="true">
-      <span />
-      <span />
-      <span />
-    </span>
-  );
-}
-
-export function ReadingLevelCard({ level, onClick }) {
-  const meta = READING_LEVEL_META[level.id] || READING_LEVEL_META.unknown;
-  const count = Number(level.count || 0);
-
-  return (
-    <button
-      type="button"
-      className={`reading-level-card is-${meta.tone || 'slate'} is-${level.id}`}
-      onClick={onClick}
-    >
-      <span className="reading-level-badge" aria-hidden="true">
-        <ReadingLevelIcon levelId={level.id} label={level.title} />
-      </span>
-      <ReadingLevelArt levelId={level.id} />
-      <span className="reading-level-copy">
-        <span className="reading-level-title">{level.title}</span>
-        <span className="reading-level-count">{count} 篇文章</span>
-        <span className="reading-level-helper">
-          <span />
-          {meta.helper}
-        </span>
-      </span>
-      <span className="reading-level-arrow" aria-hidden="true">
-        <svg viewBox="0 0 24 24">
-          <path d="m9 18 6-6-6-6" />
-        </svg>
-      </span>
-    </button>
   );
 }
 
@@ -193,6 +117,20 @@ export function ReadingPickerContent({
   );
   const completionMap = useMemo(() => buildReadingCompletionMap(studyHistory), [studyHistory]);
   const activeLevelLabel = levelOptions.find((item) => item.id === resolvedLevel)?.title || READING_LEVEL_META.all.label;
+  const levelCards = useMemo(() => levelOptions.map(level => ({
+    id: level.id,
+    title: level.title,
+    eyebrow: '阅读训练',
+    meta: `${level.count} 篇文章`,
+    description: (READING_LEVEL_META[level.id] || READING_LEVEL_META.unknown).helper,
+    tone: 'blue',
+    art: (READING_PICKER_VISUALS[level.id] || READING_PICKER_VISUALS.unknown).art,
+    accent: (READING_PICKER_VISUALS[level.id] || READING_PICKER_VISUALS.unknown).accent,
+    levelCode: level.id === 'all' ? 'ALL' : level.id === 'unknown' ? '—' : level.id.toUpperCase(),
+    heading: (READING_PICKER_VISUALS[level.id] || { heading: level.title }).heading,
+    action: level.id,
+    actionLabel: '查看文章',
+  })), [levelOptions]);
 
   return (
     <>
@@ -208,15 +146,17 @@ export function ReadingPickerContent({
 
       {!resolvedLevel ? (
         <>
-          <div className="reading-level-grid">
-            {levelOptions.map((level) => (
-              <ReadingLevelCard
-                key={level.id}
-                level={level}
-                onClick={() => onSelectLevel?.(level.id)}
-              />
-            ))}
-          </div>
+          <StudyCarousel
+            cards={levelCards}
+            initialId="all"
+            className="training-picker-carousel"
+            label="阅读等级选择预览"
+            previousLabel="上一个阅读等级"
+            nextLabel="下一个阅读等级"
+            selectionLabel="选择阅读等级预览"
+            previewLabel={card => `预览${card.title}阅读`}
+            onAction={levelId => onSelectLevel?.(levelId)}
+          />
           {readings.length === 0 && <p className="word-home-empty">暂无阅读文章，请先导入 CSV。</p>}
         </>
       ) : (

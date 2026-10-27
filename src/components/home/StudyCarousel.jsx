@@ -2,12 +2,23 @@ import { useRef, useState } from 'react';
 import { PrimaryButton } from '../ui/Buttons';
 import { LinearProgress } from '../ui/Progress';
 import { carouselPosition, carouselDragStep } from '../../utils/studyDashboard.js';
+import '../../styles/study-dashboard.css';
 
 function Arrow({ back = false }) {
   return <svg viewBox="0 0 24 24" aria-hidden="true"><path d={back ? 'm14 5-7 7 7 7' : 'm10 5 7 7-7 7'} /></svg>;
 }
 
-export default function StudyCarousel({ cards, initialId, onAction }) {
+export default function StudyCarousel({
+  cards,
+  initialId,
+  onAction,
+  className = '',
+  label = '学习内容预览',
+  previousLabel = '上一个学习内容',
+  nextLabel = '下一个学习内容',
+  selectionLabel = '选择学习内容',
+  previewLabel = card => `预览${card.eyebrow}`,
+}) {
   const [selectedId, setSelectedId] = useState(null);
   const stage = useRef(null);
   const gesture = useRef(null);
@@ -55,18 +66,20 @@ export default function StudyCarousel({ cards, initialId, onAction }) {
     event.preventDefault(); select(next);
   };
 
-  return <section className="study-carousel" role="region" aria-roledescription="轮播" aria-label="学习内容预览" tabIndex={0} onKeyDown={keyboard}>
+  if (!active) return null;
+
+  return <section className={`study-carousel ${className}`.trim()} role="region" aria-roledescription="轮播" aria-label={label} tabIndex={0} onKeyDown={keyboard}>
     <div className="study-carousel-stage" ref={stage} onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={resetDrag}
       onClickCapture={event => { if (performance.now() < suppressClick.current) { event.preventDefault(); event.stopPropagation(); } }}>
       {cards.map((card, index) => {
         const position = carouselPosition(index, activeIndex, cards.length);
         const isActive = index === activeIndex;
         const state = isActive ? 'is-current' : position === -1 ? 'is-previous' : position === 1 ? 'is-next' : 'is-away';
-        return <article key={card.id} className={`study-carousel-card is-${card.tone} ${state}`} inert={!isActive} aria-hidden={!isActive}
+        return <article key={card.id} className={`study-carousel-card is-${card.tone} ${card.levelCode ? 'has-level-code' : ''} ${state}`} data-picker-accent={card.accent} inert={!isActive} aria-hidden={!isActive}
           role="group" aria-roledescription="幻灯片" aria-label={`${card.title}，第 ${index + 1} 张，共 ${cards.length} 张`}>
           <div className="study-carousel-copy">
             <span className="study-carousel-eyebrow"><span aria-hidden="true" />{card.eyebrow}</span>
-            <h2>{card.title}</h2><p className="study-carousel-meta">{card.meta}</p>
+            <h2>{card.levelCode ? <><span className="study-carousel-level-code">{card.levelCode}</span><span className="study-carousel-level-title">{card.heading || card.title}</span></> : card.title}</h2><p className="study-carousel-meta">{card.meta}</p>
             <p className="study-carousel-description">{card.description}</p>
             <PrimaryButton className="study-carousel-start" disabled={!card.action} onClick={() => onAction(card.action)}>
               {card.actionLabel}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" /></svg>
@@ -80,9 +93,9 @@ export default function StudyCarousel({ cards, initialId, onAction }) {
       })}
     </div>
     {cards.length > 1 && <>
-      <button type="button" className="study-carousel-arrow is-back" aria-label="上一个学习内容" onClick={() => select(activeIndex - 1)}><Arrow back /></button>
-      <button type="button" className="study-carousel-arrow is-forward" aria-label="下一个学习内容" onClick={() => select(activeIndex + 1)}><Arrow /></button>
-      <div className="study-carousel-dots" aria-label="选择学习内容">{cards.map((card, index) => <button key={card.id} type="button" aria-label={`预览${card.eyebrow}`} aria-pressed={index === activeIndex} onClick={() => select(index)} />)}</div>
+      <button type="button" className="study-carousel-arrow is-back" aria-label={previousLabel} onClick={() => select(activeIndex - 1)}><Arrow back /></button>
+      <button type="button" className="study-carousel-arrow is-forward" aria-label={nextLabel} onClick={() => select(activeIndex + 1)}><Arrow /></button>
+      <div className="study-carousel-dots" aria-label={selectionLabel}>{cards.map((card, index) => <button key={card.id} type="button" aria-label={previewLabel(card)} aria-pressed={index === activeIndex} onClick={() => select(index)} />)}</div>
     </>}
     <span className="study-dashboard-sr-only" aria-live="polite" aria-atomic="true">{active.title}，第 {activeIndex + 1} 张，共 {cards.length} 张</span>
   </section>;

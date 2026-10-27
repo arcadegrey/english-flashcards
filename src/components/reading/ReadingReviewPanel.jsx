@@ -3,6 +3,7 @@ import { SecondaryButton } from '../ui/Buttons';
 import useReadingAttempts from '../../hooks/useReadingAttempts';
 import { collectReadingMistakes, wrongReadingQuestions } from '../../../shared/readingAttempts.js';
 import { formatClassroomDate } from '../../utils/classroom';
+import '../../styles/classroom.css';
 
 export default function ReadingReviewPanel({ userId, onRetry }) {
   const history=useReadingAttempts(userId);
