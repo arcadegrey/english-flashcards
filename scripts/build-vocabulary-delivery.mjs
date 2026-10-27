@@ -1,7 +1,9 @@
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, readdir, unlink } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import { isDeepStrictEqual } from 'node:util';
 import { pathToFileURL } from 'node:url';
 import { getWordCategories } from '../src/utils/wordCategories.js';
+import { summarizeVocabularyWord } from '../src/data/vocabularySummary.js';
 
 const root = new URL('../', import.meta.url);
 const readJson = async path => JSON.parse(await readFile(new URL(path, root), 'utf8'));
@@ -48,11 +50,39 @@ export async function buildVocabularyDelivery() {
   if (extended.some(word => !Object.hasOwn(wordPaths, String(word.id)))) throw new Error('Vocabulary index is incomplete');
   const counts = { all: vocabulary.length };
   for (const word of vocabulary) for (const category of getWordCategories(word)) counts[category] = (counts[category] || 0) + 1;
+  const generated = { catalog: new Set(), details: new Set() };
+  for (const directory of Object.keys(generated)) await mkdir(new URL(`public/data/vocabulary/${directory}/`, root), { recursive: true });
+  const writeHashed = async (directory, name, data) => {
+    const json = JSON.stringify(data), hash = createHash('sha256').update(json).digest('hex').slice(0, 16);
+    const file = `${name}-${hash}.json`;
+    generated[directory].add(file);
+    await writeIfChanged(`public/data/vocabulary/${directory}/${file}`, data);
+    return { path: `/data/vocabulary/${directory}/${file}`, size: Buffer.byteLength(json), count: data.length };
+  };
+  const catalog = {
+    core: await writeHashed('catalog', 'core', core.map(summarizeVocabularyWord)),
+    extended: await writeHashed('catalog', 'extended', extended.map(summarizeVocabularyWord)),
+    lists: {},
+  };
+  for (const shard of shards) {
+    catalog.lists[shard.path] = await writeHashed('catalog', shard.path.replace('/data/vocabulary/', '').replace(/\.json$/, '').replaceAll('/', '-'), shard.words.map(summarizeVocabularyWord));
+  }
+  const details = { batchSize: 50, batches: {} }, batches = new Map();
+  for (const { id, word, example, exampleCn } of vocabulary) {
+    const key = Math.floor(Number(id) / details.batchSize);
+    if (!batches.has(key)) batches.set(key, []);
+    batches.get(key).push({ id, word, example, exampleCn });
+  }
+  for (const [key, entries] of batches) details.batches[key] = (await writeHashed('details', String(key), entries)).path;
   const index = { total: vocabulary.length, counts, core: '/data/vocabulary/core.json', extended: '/data/vocabulary/extended.json',
     extendedBytes: Buffer.byteLength(JSON.stringify(extended)), coreIds: core.map(word => word.id),
-    paths: selectedPaths, sizes: selectedPaths.map(path => shards.find(shard => shard.path === path).size), wordPaths };
+    paths: selectedPaths, sizes: selectedPaths.map(path => shards.find(shard => shard.path === path).size), wordPaths, catalog, details };
   await writeIfChanged('public/data/vocabulary/extended.json', extended);
   await writeIfChanged('src/data/vocabularyIndex.json', index);
+  for (const [directory, files] of Object.entries(generated)) {
+    const base = new URL(`public/data/vocabulary/${directory}/`, root);
+    for (const file of await readdir(base)) if (file.endsWith('.json') && !files.has(file)) await unlink(new URL(file, base));
+  }
   console.log(`Vocabulary delivery: ${core.length} core + ${extended.length} extended; ${selectedPaths.length} reusable Lists`);
   return index;
 }

@@ -33,7 +33,7 @@ const BLANK_TOKEN = '______';
 
 const escapeRegExp = (value = '') => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-const buildHiddenSentence = (example = '', answerWord = '') => {
+export const buildHiddenSentence = (example = '', answerWord = '') => {
   const safeExample = String(example || '').trim();
   const safeWord = String(answerWord || '').trim();
   if (!safeExample || !safeWord) return '';
@@ -62,7 +62,8 @@ export const createFillBlankRound = (vocabulary = []) => {
     };
   }
 
-  const candidates = vocabulary.filter((item) => item?.word && item?.example);
+  const candidates = vocabulary.filter((item) => item?.word && (item.example
+    || item.exampleDeferred && item.fillBlankAvailable !== false));
   if (candidates.length === 0) {
     return {
       error: '当前词库缺少可用例句，暂时无法生成填空题。',
@@ -78,6 +79,12 @@ export const createFillBlankRound = (vocabulary = []) => {
   let hiddenSentence = '';
 
   for (const item of shuffledCandidates) {
+    // The build has checked eligibility against the canonical sentence. Fetch
+    // only this question's sentence before exposing its answer buttons.
+    if (item.exampleDeferred && item.fillBlankAvailable !== false && !item.example) {
+      selectedWord = item;
+      break;
+    }
     const nextHiddenSentence = buildHiddenSentence(item.example, item.word);
     if (nextHiddenSentence && nextHiddenSentence !== item.example) {
       selectedWord = item;

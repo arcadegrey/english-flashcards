@@ -253,6 +253,7 @@ function WordCollectionView({
             <WordCard
               key={`${currentWord?.id || 'collection-empty'}-${safeCurrentIndex}`}
               word={currentWord}
+              nextWord={filteredWords[safeCurrentIndex + 1]}
               showHint={showHint}
             />
           </div>

@@ -1,15 +1,21 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useWordBookmarks } from '../context/word-bookmarks-context';
 import { getWordMeaningLine } from '../utils/wordHintPresentation.js';
 import { useWordHints } from '../hooks/useWordHints.js';
+import { useWordDetails } from '../hooks/useWordDetails.js';
+import { loadWordDetails } from '../data/vocabulary.js';
 import { speakExample, speakWord } from '../utils/speech';
 import '../styles/word-learning-refresh.css';
 
-function WordCard({ word, showHint = false }) {
+function WordCard({ word: entry, nextWord, showHint = false }) {
+  const { word, loading: exampleLoading, error: exampleError, retry: retryExample } = useWordDetails(entry);
   const bookmarks = useWordBookmarks();
   const [notice, setNotice] = useState(null);
   const isSaved = Boolean(bookmarks?.entries?.[String(word?.id)]?.saved);
-  const { hints, status: hintStatus, error: hintError, retry: retryHints } = useWordHints(word);
+  const { hints, status: hintStatus, error: hintError, retry: retryHints } = useWordHints(word, { enabled: showHint });
+  useEffect(() => {
+    if (word && !exampleLoading && !exampleError && nextWord) void loadWordDetails(nextWord).catch(() => {});
+  }, [word, nextWord, exampleLoading, exampleError]);
   const toggleSaved = () => {
     try {
       bookmarks.toggle(word.id, !isSaved);
@@ -93,8 +99,9 @@ function WordCard({ word, showHint = false }) {
             <span>播放例句</span>
           </button>
         </div>
-        <p className="learn-refresh-example-en">{word.example || '暂无英文例句。'}</p>
-        <p className="learn-refresh-example-cn">{word.exampleCn || '暂无中文例句。'}</p>
+        {exampleLoading ? <p className="learn-refresh-hint-scope" role="status">正在加载例句…</p>
+          : exampleError ? <><p className="learn-refresh-hint-scope" role="status">例句暂时无法加载，当前词义仍可学习。</p><button type="button" className="learn-refresh-example-audio" onClick={retryExample}>重试加载例句</button></>
+          : <><p className="learn-refresh-example-en">{word.example || '暂无英文例句。'}</p><p className="learn-refresh-example-cn">{word.exampleCn || '暂无中文例句。'}</p></>}
       </section>
 
       <section className={`learn-refresh-expandable ${showHint ? 'is-open' : ''}`} aria-hidden={!showHint} inert={!showHint}>

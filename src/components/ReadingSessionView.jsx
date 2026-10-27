@@ -7,6 +7,7 @@ import AppLayout from './layout/AppLayout';
 import { speak, speakWord } from '../utils/speech';
 import { isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from '../utils/readingText';
 import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
+import { useWordDetails } from '../hooks/useWordDetails.js';
 
 function ReadingSessionView({
   article,
@@ -30,6 +31,7 @@ function ReadingSessionView({
 }) {
   const [showTranslation, setShowTranslation] = useState(false);
   const [activeWord, setActiveWord] = useState(null);
+  const activeDetails = useWordDetails(activeWord);
   const history = useReadingAttempts(userId);
   const draft = useReadingDraft(userId, retryAttempt ? `retry:${retryAttempt.id}` : assignment ? `assignment:${assignment.id}` : `reading:${article?.id}`);
   const [submissionBusy, setSubmissionBusy] = useState(false);
@@ -616,8 +618,9 @@ function ReadingSessionView({
               <div className="learn-refresh-example-head">
                 <span className="learn-refresh-example-label">例句</span>
               </div>
-              <p className="learn-refresh-example-en">{activeWord.example || '暂无英文例句。'}</p>
-              <p className="learn-refresh-example-cn">{activeWord.exampleCn || '暂无中文例句。'}</p>
+              {activeDetails.loading ? <p className="learn-refresh-hint-scope" role="status">正在加载例句…</p>
+                : activeDetails.error ? <><p className="learn-refresh-hint-scope" role="status">例句暂时无法加载。</p><button type="button" className="learn-refresh-example-audio" onClick={activeDetails.retry}>重试加载例句</button></>
+                : <><p className="learn-refresh-example-en">{activeDetails.word.example || '暂无英文例句。'}</p><p className="learn-refresh-example-cn">{activeDetails.word.exampleCn || '暂无中文例句。'}</p></>}
             </section>
             <div className="reading-word-modal-actions">
               <button

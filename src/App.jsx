@@ -17,15 +17,15 @@ import { useState, useEffect, useMemo, useRef, useCallback, lazy, Suspense } fro
 import { ThemeProvider } from './context/ThemeContext'
 import { useTheme } from './context/theme-context'
 import {
-  loadFullVocabulary,
-  loadVocabularyByIds,
+  loadFullVocabularyCatalog as loadFullVocabulary,
+  loadVocabularyCatalogByIds as loadVocabularyByIds,
   hasBundledVocabularyId,
   VOCABULARY_COUNTS,
-  loadIeltsListVocabulary,
+  loadIeltsListCatalog as loadIeltsListVocabulary,
   loadIeltsManifest,
-  loadToeflListVocabulary,
+  loadToeflListCatalog as loadToeflListVocabulary,
   loadToeflManifest,
-  loadVocabulary,
+  loadVocabularyCatalog as loadVocabulary,
 } from './data/vocabulary'
 import readings from './data/readings'
 import categories from './data/categories'
@@ -2817,6 +2817,7 @@ function AppContent() {
             setMode={setMode}
             allVocabulary={allVocabulary}
             currentWord={currentWord}
+            nextWord={shuffledWords[currentIndex + 1]}
             filteredVocabulary={filteredVocabulary}
             currentIndex={currentIndex}
             onMarkLearned={markAsLearned}

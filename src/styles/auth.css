@@ -520,6 +520,87 @@
   background: var(--ds-background);
 }
 
+/* Match the shared dark surfaces without changing the light account panel. */
+.dark .auth-modal-backdrop {
+  background: rgba(4, 10, 22, 0.68);
+}
+
+.dark .auth-modal-card {
+  border-color: var(--ds-line);
+  box-shadow: var(--ds-shadow);
+}
+
+.dark .auth-stat-card,
+.dark .auth-stat-card.is-green,
+.dark .auth-mode-toggle,
+.dark .auth-input-field,
+.dark .auth-panel .classroom-role-options button {
+  border-color: var(--ds-line);
+  background: var(--ds-dark-inset);
+}
+
+.dark .auth-stat-icon,
+.dark .auth-sync-icon,
+.dark .auth-role-badge {
+  color: var(--ds-dark-link);
+  background: var(--ds-dark-raised);
+}
+
+.dark .auth-stat-card.is-green .auth-stat-icon {
+  color: var(--ds-green);
+  background: rgba(53, 201, 121, 0.12);
+}
+
+.dark .auth-mode-toggle {
+  box-shadow: inset 0 0 0 1px var(--ds-line);
+}
+
+.dark .auth-mode-toggle button.is-active,
+.dark .auth-panel .classroom-role-options button.is-active {
+  color: var(--ds-dark-link);
+  border-color: rgba(126, 166, 255, 0.48);
+  background: var(--ds-dark-raised);
+  box-shadow: inset 0 0 0 1px rgba(126, 166, 255, 0.24);
+}
+
+.dark .auth-panel .classroom-role-options button.is-active strong,
+.dark .auth-panel .auth-secondary-button,
+.dark .auth-logout-button {
+  color: var(--ds-dark-link);
+}
+
+.dark .auth-close-button:hover,
+.dark .auth-panel .auth-secondary-button:hover,
+.dark .auth-logout-button:hover {
+  color: var(--ds-dark-link);
+  background: var(--ds-dark-raised);
+}
+
+.dark .auth-classroom-entry {
+  border-color: var(--ds-line);
+  background: var(--ds-dark-inset);
+}
+
+.dark .auth-input-field:focus-within {
+  border-color: #7ea6ff;
+  box-shadow: 0 0 0 3px rgba(126, 166, 255, 0.14);
+}
+
+.dark .auth-session-status,
+.dark .auth-message {
+  color: var(--ds-green);
+}
+
+.dark .auth-message {
+  background: rgba(53, 201, 121, 0.1);
+}
+
+.dark .auth-error,
+.dark .auth-sync-section.is-error .auth-sync-icon {
+  color: #fda4af;
+  background: rgba(248, 113, 113, 0.1);
+}
+
 @media (max-width: 640px) {
   .auth-modal-overlay {
     padding: 16px;

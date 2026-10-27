@@ -59,12 +59,12 @@ Less common maintenance commands are listed in `docs/project-reference.md`.
 
 ## Core Data
 
-- Startup vocabulary: `public/data/vocabulary/core.json`
+- Startup vocabulary: generated light core referenced by `src/data/vocabularyIndex.json`; original `public/data/vocabulary/core.json` remains the complete authoring/compatibility source.
 - Full vocabulary: `public/data/vocabulary.json`
 - TOEFL shards: `public/data/vocabulary/toefl/`
 - IELTS shards: `public/data/vocabulary/ielts/`
 - User progress: local storage, optionally synced through Cloudflare Worker + D1.
-- App startup loads only `core.json` plus TOEFL/IELTS manifests; specific TOEFL/IELTS ranges load shards on demand.
+- App startup loads the light core plus TOEFL/IELTS manifests. Learning uses complete basic catalogs and on-demand 50-word example batches; specific TOEFL/IELTS ranges use light List catalogs. Original complete-data APIs remain available.
 - Production build does not copy `public/audio` into `dist`.
 
 ## Reading Rules
@@ -119,6 +119,10 @@ Less common maintenance commands are listed in `docs/project-reference.md`.
 - Handoff, evidence and commands: `docs/practical-vocabulary-replacement-2026-10-25.md`. Deploy frontend, Worker and audio together; no D1 migration, Git push or production deployment performed. Local checks: 123 tests, lint, production build/PWA, Worker dry-run, all-file audio decode/hash checks and isolated desktop/mobile browser checks. No full manual listening or authenticated production acceptance.
 
 ## Next Work
+
+- **2026-10-27 Dark account modal:** Auth statistics, login/register rail, registration roles, inputs and signed-in account/status surfaces now use the existing dark tokens; light styles and all auth/storage/sync behavior remain unchanged. CSS only, 103 isolated browser checks plus lint/build passed; no deployment. Handoff: `docs/auth-dark-mode-2026-10-27.md`.
+
+- **2026-10-27 Layered vocabulary details:** Learning, reading popups, review and bookmarks now hydrate bilingual examples on demand from 50-word groups; the next study word is prefetched and hidden hints wait until expanded. Full 8699-word study/test pools and fill-blank eligibility remain intact. Generated core/extension gzip drops to ~161/~177 KB; complete legacy APIs/caches stay compatible. Real PWA offline bookmark recovery passed. `predev`/`prebuild` generate both catalog/detail directories and the index; publish them together. Frontend only, not deployed. Handoff and exact verification limits: `docs/vocabulary-layered-loading-2026-10-27.md`.
 
 - **2026-10-27 Vocabulary startup performance:** All-category plans and bookmarks hydrate missing IDs from existing Lists instead of loading the full catalog. Full study/test loads cached core plus a generated 5204-word extension; extra gzip bytes drop from ~795 KB to ~407 KB. `predev`/`prebuild` validate and generate the ID index/extension; bundle category counts stay complete. Old full-file offline caches remain usable. Frontend only, not deployed; measured conditions and checks: `docs/vocabulary-loading-performance-2026-10-27.md`.
 

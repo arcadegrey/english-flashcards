@@ -12,6 +12,7 @@ import { createExamAttempt } from '../shared/examAttempts.js';
 import { correctedVocabularyAudioUrl } from '../shared/vocabularyAudio.js';
 import { FOLLOWUP_VOCABULARY_AUDIO } from '../shared/followupVocabularyAudio.js';
 import { RETIRED_VOCABULARY } from '../shared/retiredVocabulary.js';
+import { summarizeVocabularyWord } from '../src/data/vocabularySummary.js';
 
 const root = new URL('../', import.meta.url);
 const readJson = async path => JSON.parse(await readFile(new URL(path, root), 'utf8'));
@@ -46,7 +47,15 @@ test('all shipped shards and the server assignment catalog match the corrected s
       if (entry.isDirectory()) await visit(child);
       else if (entry.name.endsWith('.json')) {
         const data = await readJson(child);
-        if (Array.isArray(data)) for (const word of data) assert.deepEqual(word, byId.get(word.id), child);
+        if (Array.isArray(data)) for (const word of data) {
+          const source = byId.get(word.id);
+          assert(source, `${child}: unknown word ${word.id}`);
+          const expected = child.startsWith('public/data/vocabulary/catalog/') ? summarizeVocabularyWord(source)
+            : child.startsWith('public/data/vocabulary/details/')
+              ? { id: source.id, word: source.word, example: source.example, exampleCn: source.exampleCn }
+              : source;
+          assert.deepEqual(word, expected, child);
+        }
       }
     }
   }

@@ -117,7 +117,11 @@ export const createVocabularyLoader = ({
   }
 
   const fetchJson = (url, errorLabel, validate = Array.isArray) => {
-    if (memory.has(url)) return Promise.resolve(memory.get(url))
+    if (memory.has(url)) {
+      const data = memory.get(url)
+      if (validate(data)) return Promise.resolve(data)
+      memory.delete(url)
+    }
     if (pending.has(url)) return pending.get(url)
 
     const request = load(url, errorLabel, validate)
@@ -129,7 +133,7 @@ export const createVocabularyLoader = ({
     pending.set(url, request)
     return request
   }
-  fetchJson.readCached = (url, validate = Array.isArray) => memory.has(url)
+  fetchJson.readCached = (url, validate = Array.isArray) => memory.has(url) && validate(memory.get(url))
     ? Promise.resolve(memory.get(url))
     : readCache(`${url}?v=${encodeURIComponent(version)}`, validate)
   return fetchJson

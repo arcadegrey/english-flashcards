@@ -16,6 +16,7 @@ function LearningView({
   setMode,
   allVocabulary,
   currentWord,
+  nextWord,
   filteredVocabulary,
   currentIndex,
   onMarkLearned,
@@ -200,6 +201,7 @@ function LearningView({
         <WordCard
           key={`${currentWord?.id || 'learn-empty'}-${currentIndex}`}
           word={currentWord}
+          nextWord={nextWord}
           showHint={showHint}
         />
 

@@ -16,6 +16,11 @@ const delivery = createVocabularyDelivery({ fetchJson, index: vocabularyIndex })
 export const loadFullVocabulary = delivery.loadFull
 export const loadVocabularyByIds = delivery.loadIds
 export const hasBundledVocabularyId = delivery.hasWord
+export const loadVocabularyCatalog = delivery.loadCoreCatalog
+export const loadFullVocabularyCatalog = delivery.loadFullCatalog
+export const loadVocabularyCatalogByIds = delivery.loadCatalogIds
+export const loadWordDetails = delivery.loadDetails
+export const peekWordDetails = delivery.peekDetails
 
 export const loadVocabulary = async () => {
   const vocabulary = await delivery.loadCore()
@@ -86,4 +91,16 @@ export const loadIeltsListVocabulary = async (manifest, listKey) => {
   }
 
   return vocabulary
+}
+
+export const loadToeflListCatalog = async (manifest, levelKey, listKey) => {
+  const entry = findToeflListEntry(manifest, levelKey, listKey)
+  if (!entry?.path) throw new Error('未找到托福 List 数据')
+  return delivery.loadListCatalog(entry.path)
+}
+
+export const loadIeltsListCatalog = async (manifest, listKey) => {
+  const entry = findIeltsListEntry(manifest, listKey)
+  if (!entry?.path) throw new Error('未找到雅思 List 数据')
+  return delivery.loadListCatalog(entry.path)
 }

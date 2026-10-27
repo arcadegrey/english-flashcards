@@ -13,6 +13,7 @@ const hashVocabularyDirectory = (directory) => {
   readdirSync(directory, { withFileTypes: true })
     .sort((a, b) => a.name.localeCompare(b.name))
     .forEach((entry) => {
+      if (entry.isDirectory() && ['catalog', 'details'].includes(entry.name)) return
       const filePath = path.join(directory, entry.name)
       if (entry.isDirectory()) hashVocabularyDirectory(filePath)
       // Derived from the canonical full/core files already included in this hash.

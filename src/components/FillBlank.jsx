@@ -2,11 +2,15 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { speakExample } from '../utils/speech';
 import { playSuccessChime } from '../utils/feedback';
 import CorrectAnswerCelebration from './CorrectAnswerCelebration';
-import { createFillBlankRound } from '../utils/assessmentRounds.js';
+import { buildHiddenSentence, createFillBlankRound } from '../utils/assessmentRounds.js';
+import { useWordDetails } from '../hooks/useWordDetails.js';
 
 function FillBlank({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswer, onAnswer }) {
   const [round, setRound] = useState(() => createFillBlankRound(vocabulary));
-  const { question: currentQuestion, options, sentence, error: questionError } = round;
+  const { options, error: questionError } = round;
+  const details = useWordDetails(round.question);
+  const currentQuestion = details.word;
+  const sentence = round.sentence || buildHiddenSentence(currentQuestion?.example, currentQuestion?.word);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
   const [score, setScore] = useState(0);
@@ -89,6 +93,11 @@ function FillBlank({ vocabulary, sourceLabel = '', onWrongAnswer, onCorrectAnswe
       </div>
     );
   }
+
+  if (details.error) return <div className="learn-refresh-empty-state" role="status">
+    <p>例句暂时无法加载，请联网后重试。</p>
+    <button type="button" className="learn-refresh-example-audio" onClick={details.retry}>重试加载例句</button>
+  </div>;
 
   if (!currentQuestion || !sentence) {
     return (
