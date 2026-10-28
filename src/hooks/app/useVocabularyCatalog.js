@@ -1,6 +1,7 @@
 import { loadVocabularyRange } from '../../utils/vocabularyPreparation.js'
 import { useVocabularySelection } from '../useVocabularySelection.js'
 import { mergeVocabularyList } from '../../utils/vocabularyMerge.js'
+import { needsPlanCatalog } from '../../utils/dailyPlan.js'
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react'
 import {
   loadFullVocabularyCatalog as loadFullVocabulary, loadVocabularyCatalogByIds as loadVocabularyByIds,
@@ -8,6 +9,7 @@ import {
   loadIeltsManifest, loadToeflListCatalog as loadToeflListVocabulary, loadToeflManifest,
   loadVocabularyCatalog as loadVocabulary,
   preloadWordDetails,
+  loadVocabularyCategoryCatalog,
 } from '../../data/vocabulary'
 import { getWordCategories } from '../../utils/wordCategories'
 
@@ -108,13 +110,15 @@ export function useVocabularyCatalog(learning, navigationState) {
     loadToeflList: loadToeflListVocabulary, loadIeltsList: loadIeltsListVocabulary,
   }), [toeflManifest, ieltsManifest])
 
-  const loadAllExamVocabulary = useCallback(async () => {
+  const loadAllExamVocabulary = useCallback(async (category = 'all') => {
     // Confirmed learning intent: overlap the small example locator with both
     // page code and complete summaries; never prefetch the full ID/List index.
     void preloadWordDetails().catch(() => {})
     if (fullVocabularyLoadedRef.current) return null
-    return loadFullVocabulary()
-  }, [])
+    if (category === 'all') return loadFullVocabulary()
+    if (!needsPlanCatalog(vocabulary, [], category, VOCABULARY_COUNTS[category])) return null
+    return loadVocabularyCategoryCatalog(category)
+  }, [vocabulary])
 
   const prepareSavedWords = async (wordBookmarks) => {
     setSavedWordsError('')

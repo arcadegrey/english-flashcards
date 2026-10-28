@@ -7,8 +7,8 @@ import { getDailyPlanExamActivity } from '../../../shared/planActivity.js'
 import { buildTomorrowPlan, needsPlanCatalog } from '../../utils/dailyPlan.js'
 import { useState, useEffect, useMemo } from 'react'
 import {
-  loadFullVocabularyCatalog as loadFullVocabulary, loadVocabularyCatalogByIds as loadVocabularyByIds,
-  hasBundledVocabularyId,
+  loadVocabularyCategoryCatalog, loadVocabularyCatalogByIds as loadVocabularyByIds,
+  hasBundledVocabularyId, VOCABULARY_COUNTS,
 } from '../../data/vocabulary'
 import readings from '../../data/readings'
 import categories from '../../data/categories'
@@ -75,9 +75,9 @@ export function useStudyOverview(learning, catalog, navigationState, clock) {
   const statisticsWordCount = useMemo(() => {
     const recordedIds = new Set([...learnedWords, ...masteredWords].map(String))
     const archivedCount = RETIRED_VOCABULARY_IDS.filter(id => recordedIds.has(String(id))).length
-    const activeCount = Number(toeflManifest?.sourceTotal) || Number(ieltsManifest?.sourceTotal) || vocabulary.length
+    const activeCount = Number(toeflManifest?.sourceTotal) || Number(ieltsManifest?.sourceTotal) || VOCABULARY_COUNTS.all
     return activeCount + customWords.length + archivedCount
-  }, [customWords.length, ieltsManifest, learnedWords, masteredWords, toeflManifest, vocabulary.length])
+  }, [customWords.length, ieltsManifest, learnedWords, masteredWords, toeflManifest])
 
   const planCategoryName = categories.find((category) => category.id === studyPlanCategory)?.name || '全部单词'
   const planVocabulary = useMemo(() => getPlanVocabulary(allVocabulary, studyPlanCategory), [allVocabulary, studyPlanCategory])
@@ -85,14 +85,14 @@ export function useStudyOverview(learning, catalog, navigationState, clock) {
   const planWordStats = useMemo(() => getPlanWordStats(planVocabulary, wordProgress, learnedWords, masteredWords, studyDay),
     [planVocabulary, wordProgress, learnedWords, masteredWords, studyDay])
   const planRecordedIds = useMemo(() => dedupeIdList(activeProgressIds([
-    ...learnedWords, ...masteredWords, ...Object.keys(wordProgress),
-  ])).filter(hasBundledVocabularyId), [learnedWords, masteredWords, wordProgress])
+    ...learnedWords, ...masteredWords, ...wrongWords, ...Object.keys(wordProgress),
+  ])).filter(hasBundledVocabularyId), [learnedWords, masteredWords, wrongWords, wordProgress])
   const planMissingIds = useMemo(() => {
-    const loadedIds = new Set(allVocabulary.map(word => String(word.id)))
+    const loadedIds = new Set(vocabulary.map(word => String(word.id)))
     return planRecordedIds.filter(id => !loadedIds.has(String(id)))
-  }, [allVocabulary, planRecordedIds])
-  const planNeedsCatalog = useMemo(() => needsPlanCatalog(allVocabulary, planRecordedIds, studyPlanCategory),
-    [allVocabulary, planRecordedIds, studyPlanCategory])
+  }, [vocabulary, planRecordedIds])
+  const planNeedsCatalog = useMemo(() => needsPlanCatalog(vocabulary, planRecordedIds, studyPlanCategory,
+    VOCABULARY_COUNTS[studyPlanCategory]), [vocabulary, planRecordedIds, studyPlanCategory])
   const planExamStats = getDailyPlanExamActivity({ ...todayStudyStats, date: studyDay }, studyPlanCategory, planExamActivity)
   const planTodayWordsLearned = studyPlanCategory === 'all'
     ? todayStudyStats.wordsLearned + todayStudyStats.wordsMastered : planWordStats.todayStudied
@@ -114,12 +114,12 @@ export function useStudyOverview(learning, catalog, navigationState, clock) {
       }
       setPlanPreparing(true)
       try {
-        const words = studyPlanCategory === 'all'
-          ? await loadVocabularyByIds(planMissingIds)
-          : await loadFullVocabulary()
+        const categoryWords = studyPlanCategory === 'all' ? [] : await loadVocabularyCategoryCatalog(studyPlanCategory)
         if (cancelled) return
-        if (!fullVocabularyLoadedRef.current) setVocabulary((prev) => mergeVocabularyList(prev, words))
-        if (studyPlanCategory !== 'all') fullVocabularyLoadedRef.current = true
+        const categoryIds = new Set(categoryWords.map(word => String(word.id)))
+        const recordedWords = await loadVocabularyByIds(planMissingIds.filter(id => !categoryIds.has(String(id))))
+        if (cancelled) return
+        if (!fullVocabularyLoadedRef.current) setVocabulary((prev) => mergeVocabularyList(prev, [...categoryWords, ...recordedWords]))
       } catch (error) {
         if (!cancelled) setPlanPreparationError(error?.message || '计划词库加载失败，请重试')
       } finally {

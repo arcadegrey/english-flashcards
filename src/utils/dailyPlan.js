@@ -1,5 +1,6 @@
 import { getStudyDateKey, shiftStudyDate } from '../../shared/studyDate.js';
 import { isRetiredVocabularyId } from '../../shared/retiredVocabularyIds.js';
+import { wordBelongsToCategory } from './wordCategories.js';
 
 export const DAILY_EXAM_TARGET = 5;
 const count = value => Number.isFinite(Number(value)) ? Math.max(0, Math.floor(Number(value))) : 0;
@@ -41,8 +42,9 @@ export function buildTomorrowPlan({ reviewWords = [], wordProgress = {}, remaini
     readingTarget: count(readingCount) ? 1 : 0, examTarget: count(wordCount) ? DAILY_EXAM_TARGET : 0 };
 }
 
-export function needsPlanCatalog(vocabulary, recordedIds, category = 'all') {
-  if (category !== 'all') return true;
+export function needsPlanCatalog(vocabulary, recordedIds, category = 'all', categoryCount = Infinity) {
   const known = new Set(vocabulary.map(word => String(word.id)));
+  if (category !== 'all' && new Set(vocabulary.filter(word => wordBelongsToCategory(word, category))
+    .map(word => String(word.id))).size !== categoryCount) return true;
   return recordedIds.some(id => !known.has(String(id)));
 }

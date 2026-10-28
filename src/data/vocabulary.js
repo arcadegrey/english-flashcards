@@ -12,6 +12,7 @@ export const FULL_VOCABULARY_URL = '/data/vocabulary.json'
 export const TOEFL_MANIFEST_URL = '/data/vocabulary/toefl/manifest.json'
 export const IELTS_MANIFEST_URL = '/data/vocabulary/ielts/manifest.json'
 let delivery, indexRequest, detailsService, detailsRequest, legacyDetailsService
+let categoryLoaderRequest
 const getIndex = () => {
   indexRequest ??= import('./vocabularyIndex.json').then(module => module.default)
     .catch(error => { indexRequest = null; throw new Error('词库索引加载失败，请重试', { cause: error }) })
@@ -49,6 +50,16 @@ export const loadFullVocabularyCatalog = createFullVocabularyCatalogLoader({
 })
 export const preloadWordDetails = getDetailsService
 export const loadVocabularyCatalogByIds = async ids => ids.some(hasBundledVocabularyId) ? (await getDelivery()).loadCatalogIds(ids) : []
+export const loadVocabularyCategoryCatalog = async category => {
+  if (category === 'all') return loadFullVocabularyCatalog()
+  categoryLoaderRequest ??= Promise.all([
+    import('./categoryVocabularyCatalog.js'), import('./vocabularyCategoryIndex.json'),
+  ]).then(([{ createCategoryVocabularyCatalogLoader }, { default: categories }]) =>
+    createCategoryVocabularyCatalogLoader({ fetchJson, categories, startup,
+      loadCoreCatalog: loadCoreVocabularyCatalog, loadByIds: loadVocabularyCatalogByIds }))
+    .catch(error => { categoryLoaderRequest = null; throw error })
+  return (await categoryLoaderRequest)(category)
+}
 export const peekWordDetails = word => typeof word?.example === 'string' && typeof word?.exampleCn === 'string'
   ? word : detailsService?.peekDetails(word) || delivery?.peekDetails(word) || legacyDetailsService?.peekDetails(word) || null
 export const loadWordDetails = word => {

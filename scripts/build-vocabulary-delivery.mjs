@@ -4,6 +4,19 @@ import { isDeepStrictEqual } from 'node:util';
 import { pathToFileURL } from 'node:url';
 import { getWordCategories } from '../src/utils/wordCategories.js';
 import { summarizeVocabularyWord } from '../src/data/vocabularySummary.js';
+import { PLAN_CATEGORY_IDS } from '../shared/planPreferences.js';
+
+const toIdRanges = words => {
+  const ranges = [];
+  for (const id of words.map(word => word.id).sort((a, b) => a - b)) {
+    if (!Number.isSafeInteger(id) || id <= 0) throw new Error(`Invalid canonical vocabulary ID: ${id}`);
+    const previous = ranges.at(-1);
+    if (previous && id <= previous[1]) throw new Error(`Duplicate canonical vocabulary ID: ${id}`);
+    if (previous && id === previous[1] + 1) previous[1] = id;
+    else ranges.push([id, id]);
+  }
+  return ranges;
+};
 
 const root = new URL('../', import.meta.url);
 const readJson = async path => JSON.parse(await readFile(new URL(path, root), 'utf8'));
@@ -67,6 +80,17 @@ export async function buildVocabularyDelivery() {
   for (const shard of shards) {
     catalog.lists[shard.path] = await writeHashed('catalog', shard.path.replace('/data/vocabulary/', '').replace(/\.json$/, '').replaceAll('/', '-'), shard.words.map(summarizeVocabularyWord));
   }
+  // Category plans fill only the canonical IDs absent from the validated core.
+  // Keep exact membership in a lazy index, outside the startup/all-study path.
+  const categories = {};
+  for (const category of PLAN_CATEGORY_IDS.filter(id => id !== 'all')) {
+    const words = vocabulary.filter(word => getWordCategories(word).includes(category));
+    const missing = words.filter(word => !coreIds.has(String(word.id)));
+    categories[category] = { count: words.length, idRanges: toIdRanges(words),
+      missing: { ...await writeHashed('catalog', `category-${category}`, missing.map(summarizeVocabularyWord)),
+        idRanges: toIdRanges(missing) } };
+  }
+  await writeIfChanged('src/data/vocabularyCategoryIndex.json', categories);
   const details = { batchSize: 50, batches: {} }, batches = new Map();
   for (const { id, word, example, exampleCn } of vocabulary) {
     const key = Math.floor(Number(id) / details.batchSize);
@@ -80,14 +104,7 @@ export async function buildVocabularyDelivery() {
   await writeIfChanged('public/data/vocabulary/extended.json', extended);
   await writeIfChanged('src/data/vocabularyIndex.json', index);
   await writeIfChanged('src/data/vocabularyDetailsIndex.json', details);
-  const idRanges = [];
-  for (const id of vocabulary.map(word => word.id).sort((a, b) => a - b)) {
-    if (!Number.isSafeInteger(id) || id <= 0) throw new Error(`Invalid canonical vocabulary ID: ${id}`);
-    const previous = idRanges.at(-1);
-    if (previous && id <= previous[1]) throw new Error(`Duplicate canonical vocabulary ID: ${id}`);
-    if (previous && id === previous[1] + 1) previous[1] = id;
-    else idRanges.push([id, id]);
-  }
+  const idRanges = toIdRanges(vocabulary);
   await writeIfChanged('src/data/vocabularyStartup.json', {
     total: index.total, counts, core: index.core, coreCatalog: catalog.core,
     extended: index.extended, catalog: { extended: catalog.extended }, idRanges,

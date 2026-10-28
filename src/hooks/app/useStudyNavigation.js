@@ -187,11 +187,11 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
     setPlanPreparing(true)
     setPlanPreparationError('')
     try {
-      const [words] = await Promise.all([loadAllExamVocabulary(), loadLearningView()])
+      const [words] = await Promise.all([loadAllExamVocabulary(studyPlanCategory), loadLearningView()])
       if (requestId !== planRequestRef.current) return
       if (words) {
         setVocabulary((prev) => mergeVocabularyList(prev, words))
-        fullVocabularyLoadedRef.current = true
+        if (studyPlanCategory === 'all') fullVocabularyLoadedRef.current = true
       }
       pendingStartWordIdRef.current = null
       setAssessmentBackTarget('studyHub')
@@ -230,11 +230,11 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
     setExamPreparationError(null)
 
     try {
-      const [loadedVocabulary] = await Promise.all([loadAllExamVocabulary(), loadLearningView()])
+      const [loadedVocabulary] = await Promise.all([loadAllExamVocabulary(studyPlanCategory), loadLearningView()])
       if (requestId !== examRequestRef.current) return
       if (loadedVocabulary) {
         setVocabulary((prev) => mergeVocabularyList(prev, loadedVocabulary))
-        fullVocabularyLoadedRef.current = true
+        if (studyPlanCategory === 'all') fullVocabularyLoadedRef.current = true
       }
 
       setSelectedCategory(studyPlanCategory)
