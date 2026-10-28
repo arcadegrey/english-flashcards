@@ -70,6 +70,20 @@ AppLayout -> goal strip -> large reading card -> desktop status aside -> bottom 
 AppLayout -> control card -> thin progress bar -> centered answer card
 ```
 
+## App Responsibility Boundaries (2026-10-28)
+
+- `src/utils/vocabularyCatalog.js` owns pure directory, selection and label projections; it must not fetch data or write progress.
+- `src/hooks/useVocabularySelection.js` owns memoization of those projections, preserving dependencies and result identity.
+- `src/hooks/useNavigationHistory.js` mirrors feature-owned navigation state into browser history and resets scroll on view changes. Keep its setters stable and preserve old history compatibility.
+- `src/components/account/AccountModal.jsx` owns account-dialog presentation, lazy content and focus/scroll lifecycle. Auth and progress actions remain in the feature hooks; pass a stable close callback.
+- `App.jsx` composes feature hooks, app providers, canonical chrome and global modals. Screen wiring lives in `components/app/AppPages.jsx`, with feature objects rather than a flat setter list.
+- `hooks/app/useLearningProgress.js` owns local progress, events, bookmarks and reset revisions; pure history updates live in `utils/learningEvents.js`.
+- `hooks/app/useAccountSession.js` owns identity and account transitions; `useCloudProgressSync.js` owns the internal queue, versions, rebasing, debounce and reconnect lifecycle. Keep their stable refs and expected-account checks together.
+- `hooks/app/useVocabularyCatalog.js` owns resource loading and `useStudyOverview.js` owns daily plan/reading/collection projections and plan preparation.
+- `hooks/app/useAppNavigationState.js` owns shared view/selection state; `useStudyNavigation.js` coordinates entry/back actions and request invalidation, while `useVocabularyNavigation.js` handles exam-vocabulary selection.
+- Keep mutation behind feature methods. Publish committed progress refs before passive sync effects, and capture the study date before queueing learning-event state updates.
+- Scope and verification: `docs/app-responsibility-refactor-2026-10-28.md`.
+
 ## Behavior Boundaries
 
 - `HomeScreen` is the Training Center view.
