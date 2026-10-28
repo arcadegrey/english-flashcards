@@ -352,7 +352,7 @@ function HomeScreen({
               onOpenReading?.();
             }}
           />
-          <ReadingReviewPanel key={authUser?.id || 'guest'} userId={authUser?.id} onRetry={onRetryReading} />
+          <ReadingReviewPanel key={authUser?.id || 'guest'} userId={authUser?.id} onRetry={onRetryReading} onChooseArticle={() => handleSelectReadingLevel(activeReadingLevel || 'all')} />
         </BaseCard>
 
         <RecommendedReadings readings={readings} onOpenArticle={(article) => {

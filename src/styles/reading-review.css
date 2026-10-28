@@ -1,0 +1,99 @@
+/* Reading review owns its styles, independent of classroom / lazy CSS order. */
+.reading-review-panel {
+  --review-surface: #f5f8ff;
+  --review-raised: #fff;
+  --review-border: rgba(126, 166, 255, .28);
+  --review-blue: #2f6dff;
+  --review-badge: #e7efff;
+  --review-shadow: 0 4px 14px #244f9b0c;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--review-border);
+  color: var(--ds-text);
+}
+.reading-review-panel svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+.reading-review-panel button:focus-visible,
+.reading-review-panel summary:focus-visible { outline: 3px solid #7ea6ff; outline-offset: 4px; }
+.reading-review-heading { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+.reading-review-heading-icon { display: grid; place-items: center; flex-shrink: 0; width: 50px; height: 50px; border-radius: 16px; color: var(--review-blue); background: var(--review-badge); }
+.reading-review-heading-icon svg { width: 27px; height: 27px; }
+.reading-review-heading-copy { flex: 1; min-width: 0; }
+.reading-review-heading-copy h3 { margin: 0 0 4px; font-size: 20px; line-height: 1.4; font-weight: 700; }
+.reading-review-heading-copy p { margin: 0; font-size: 13px; line-height: 1.65; color: var(--ds-muted); }
+.reading-review-heading-actions { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 10px; }
+.reading-review-limit { padding: 6px 12px; border-radius: 99px; background: var(--review-surface); color: var(--ds-muted); font-size: 11px; white-space: nowrap; }
+.reading-review-tabs { display: inline-flex; max-width: 100%; gap: 4px; padding: 4px; margin-bottom: 14px; border-radius: 16px; background: var(--review-surface); }
+.reading-review-tabs button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 42px; border: 1px solid transparent; border-radius: 12px; padding: 8px 20px; background: transparent; color: var(--ds-muted); font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; transition: background .16s ease, color .16s ease, box-shadow .16s ease; }
+.reading-review-tabs button:hover { color: var(--review-blue); }
+.reading-review-tabs button.is-active { color: var(--review-blue); background: var(--review-raised); box-shadow: var(--review-shadow); }
+.reading-review-tabs button span { display: grid; place-items: center; min-width: 22px; height: 22px; padding: 0 5px; border-radius: 99px; background: var(--review-badge); font-size: 11px; font-variant-numeric: tabular-nums; }
+.reading-review-empty { display: grid; grid-template-columns: 180px minmax(0, 1fr) auto; align-items: center; gap: 24px; min-height: 196px; padding: 18px 28px; border: 1px solid var(--review-border); border-radius: 22px; background: var(--review-surface); box-shadow: inset 0 1px 0 #ffffff40; }
+.reading-review-art { display: block; width: 180px; height: 160px; object-fit: contain; }
+.reading-review-empty-copy { min-width: 0; }
+.reading-review-empty-copy h4 { margin: 0 0 10px; font-size: 22px; line-height: 1.4; font-weight: 700; }
+.reading-review-empty-copy p { margin: 0; color: var(--ds-muted); font-size: 13px; line-height: 1.8; overflow-wrap: anywhere; }
+.reading-review-empty-actions { text-align: center; }
+.reading-review-empty-actions .ds-button { min-height: 46px; gap: 12px; padding: 12px 24px; border-radius: 99px; white-space: nowrap; }
+.reading-review-empty-actions svg { width: 19px; height: 19px; }
+.reading-review-empty-actions p { margin: 12px 0 0; color: var(--ds-muted); font-size: 11px; line-height: 1.6; }
+.reading-review-status { display: flex; align-items: flex-start; gap: 8px; margin-top: 14px; color: var(--ds-muted); }
+.reading-review-status > svg { width: 17px; height: 17px; margin-top: 2px; }
+.reading-review-status p { margin: 0; font-size: 12px; line-height: 1.8; overflow-wrap: anywhere; }
+.reading-review-error { display: block; color: var(--ds-text); }
+.reading-review-loading { display: grid; place-items: center; min-height: 196px; border: 1px solid var(--review-border); border-radius: 22px; background: var(--review-surface); }
+.reading-review-records { display: grid; gap: 10px; }
+.reading-review-detail { min-width: 0; border: 1px solid var(--review-border); border-radius: 18px; background: var(--review-raised); }
+.reading-review-detail summary { display: flex; align-items: center; gap: 14px; padding: 18px; border-radius: 18px; color: var(--ds-text); cursor: pointer; list-style: none; }
+.reading-review-detail summary::-webkit-details-marker { display: none; }
+.reading-review-level { flex-shrink: 0; padding: 8px; border-radius: 10px; color: var(--review-blue); background: var(--review-badge); font-size: 12px; font-weight: 650; }
+.reading-review-record-copy { flex: 1; min-width: 0; }
+.reading-review-record-title { display: block; font-size: 14px; line-height: 1.5; font-weight: 650; overflow-wrap: anywhere; }
+.reading-review-record-meta { display: block; margin-top: 4px; color: var(--ds-muted); font-size: 11px; line-height: 1.6; }
+.reading-review-score { flex-shrink: 0; color: var(--review-blue); font-size: 13px; font-weight: 650; font-variant-numeric: tabular-nums; }
+.reading-review-chevron { width: 16px; height: 16px; color: var(--ds-muted); transition: transform .16s ease; }
+.reading-review-detail[open] .reading-review-chevron { transform: rotate(90deg); }
+.reading-review-answers { padding: 0 18px 18px; }
+.reading-review-panel .reading-review-detail .reading-question-card { margin: 0 0 12px; padding: 16px; border-color: var(--review-border); background: var(--review-surface); }
+.reading-review-panel .reading-review-detail .reading-question-prompt { font-size: 14px; }
+.reading-review-panel .reading-review-detail .classroom-helper,
+.reading-review-panel .reading-review-detail .reading-question-feedback { font-size: 13px; overflow-wrap: anywhere; }
+.dark .reading-review-panel {
+  --review-surface: #162237;
+  --review-raised: #1e2b40;
+  --review-border: #8dadd12b;
+  --review-blue: #a6c2ff;
+  --review-badge: #293d5c;
+  --review-shadow: 0 4px 14px #0002;
+}
+@media (max-width: 1200px) {
+  .reading-review-empty { grid-template-columns: 132px minmax(0, 1fr); gap: 12px 20px; padding: 22px; }
+  .reading-review-art { grid-row: span 2; width: 132px; height: 142px; }
+  .reading-review-empty-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 14px; text-align: left; }
+  .reading-review-empty-actions p { margin: 0; }
+  .reading-review-empty-copy h4 { font-size: 20px; }
+}
+@media (max-width: 640px) {
+  .reading-review-panel { margin-top: 22px; padding-top: 20px; }
+  .reading-review-heading { gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+  .reading-review-heading-icon { width: 40px; height: 40px; border-radius: 12px; }
+  .reading-review-heading-icon svg { width: 23px; height: 23px; }
+  .reading-review-heading-copy h3 { font-size: 18px; }
+  .reading-review-heading-copy p { font-size: 12px; }
+  .reading-review-heading-actions { width: 100%; justify-content: space-between; padding-left: 50px; }
+  .reading-review-limit { padding: 4px 10px; }
+  .reading-review-tabs { display: flex; }
+  .reading-review-tabs button { flex: 1; padding: 8px; min-width: 0; }
+  .reading-review-empty { grid-template-columns: minmax(0, 1fr); gap: 10px; padding: 18px 16px 22px; text-align: center; }
+  .reading-review-art { grid-row: auto; justify-self: center; width: 144px; height: 116px; }
+  .reading-review-empty-copy h4 { margin-bottom: 8px; font-size: 19px; }
+  .reading-review-empty-copy p { font-size: 12px; }
+  .reading-review-empty-actions { flex-direction: column; text-align: center; gap: 10px; margin-top: 8px; }
+  .reading-review-status p { font-size: 11px; }
+  .reading-review-detail summary { flex-wrap: wrap; gap: 10px; padding: 14px; }
+  .reading-review-record-copy { flex-basis: calc(100% - 60px); }
+  .reading-review-score { margin-left: auto; }
+  .reading-review-answers { padding: 0 12px 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reading-review-tabs button, .reading-review-chevron { transition: none; }
+}
