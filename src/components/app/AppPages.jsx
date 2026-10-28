@@ -5,10 +5,11 @@ import StudyHub from '../StudyHub'
 import AppLayout from '../layout/AppLayout'
 import { getAccountRoleLabel } from '../../utils/classroom'
 import { speak } from '../../utils/speech'
+import { loadLearningView } from '../../utils/learningViewLoader.js'
 
 const WordAssignmentSession = lazy(() => import('../classroom/WordAssignmentSession'))
 const HomeScreen = lazy(() => import('../HomeScreen'))
-const LearningView = lazy(() => import('../LearningView'))
+const LearningView = lazy(loadLearningView)
 const Statistics = lazy(() => import('../Statistics'))
 const WordCollectionView = lazy(() => import('../WordCollectionView'))
 const ToeflSelectionView = lazy(() => import('../ToeflSelectionView'))
@@ -41,7 +42,7 @@ export default function AppPages({ navigation, learning, catalog, overview, acco
             rewardsReady={!account.authLoading && learning.localDataLoaded}
             planReady={overview.planDataReady}
             tomorrowPlan={overview.tomorrowPlan}
-            onRetryPlan={() => overview.setPlanPreparationAttempt(value => value + 1)}
+            onRetryPlan={navigation.handleRetryPlanPreparation}
             onOpenWordStudy={navigation.handleStartPlanLearning}
             onStartAssignment={navigation.handleStartReadingAssignment}
             onOpenTraining={navigation.handleBackToHome}
@@ -69,7 +70,7 @@ export default function AppPages({ navigation, learning, catalog, overview, acco
             planError={overview.planPreparationError}
             readingCount={overview.readingLibrary.length}
             reviewCount={overview.todayReviewWordList.length}
-            wrongCount={overview.wrongWordList.length}
+            wrongCount={overview.wrongWordCount}
             todayWordsLearned={overview.planTodayWordsLearned}
             todayWordsMastered={overview.todayStudyStats.wordsMastered}
             todayReadingsCompleted={overview.todayStudyStats.readingsCompleted}
@@ -391,6 +392,7 @@ export default function AppPages({ navigation, learning, catalog, overview, acco
           title="我的收藏"
           subtitle={account.authUser?.id ? '收藏独立于学习状态，随账号同步。取消收藏不会删除学习记录。' : '访客收藏仅保存在当前设备，登录后可随学习进度合并到账号。'}
           words={overview.savedWordList}
+          wordIds={Object.entries(learning.wordBookmarks).filter(([, entry]) => entry.saved).map(([id]) => id)}
           loading={catalog.savedWordsLoading}
           emptyTitle={catalog.savedWordsLoading ? '正在准备收藏' : catalog.savedWordsError ? '收藏词汇暂不可用' : '还没有收藏'}
           emptyHint={catalog.savedWordsLoading ? '正在加载收藏词汇…' : catalog.savedWordsError || '还没有收藏，点击单词卡右上角的星标即可保存。'}
@@ -436,6 +438,7 @@ export default function AppPages({ navigation, learning, catalog, overview, acco
             title="错题本"
             subtitle="这里会展示你在测验、填空、拼写中答错过的单词"
             words={overview.wrongWordList}
+            wordIds={learning.wrongWords}
             mode={navigation.mode}
             emptyHint="错题本暂时是空的，答错的词会自动出现在这里。"
             onBack={navigation.handleBackToHome}
@@ -458,6 +461,7 @@ export default function AppPages({ navigation, learning, catalog, overview, acco
             title="已学习单词"
             subtitle="这里会展示你标记为“已学习”的所有单词"
             words={overview.learnedWordList}
+            wordIds={learning.learnedWords}
             mode={navigation.mode}
             emptyHint="你还没有已学习单词，先进入学习模式标记一些吧。"
             onBack={navigation.handleBackToHome}
@@ -480,6 +484,7 @@ export default function AppPages({ navigation, learning, catalog, overview, acco
             title="认识标记"
             subtitle="来自自评或练习结果的认识标记，不代表已验证长期记忆；仍按计划复习。"
             words={overview.masteredWordList}
+            wordIds={learning.masteredWords}
             mode={navigation.mode}
             emptyHint="还没有认识标记，可在学习或练习中记录。"
             onBack={navigation.handleBackToHome}

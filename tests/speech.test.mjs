@@ -4,7 +4,7 @@ import { createSpeechService } from '../src/utils/speechEngine.js';
 
 const tick = () => new Promise(resolve => setImmediate(resolve));
 const response = () => ({ ok: true, headers: { get: () => 'audio/mpeg' }, blob: async () => new Blob(['audio']) });
-function harness({ provider = 'kokoro', globalRate = 1, speed = 1, staticFails = false, blobFails = false, networkFails = false, deferred = false, autoEnd = true, browser = true, emptyVoices = false } = {}) {
+function harness({ provider = 'kokoro', globalRate = 1, speed = 1, staticFails = false, blobFails = false, networkFails = false, deferred = false, autoEnd = true, browser = true, emptyVoices = false, correctedAudioUrl } = {}) {
   const played = [], requests = [], utterances = [], revoked = [];
   const events = new EventTarget();
   let voices = emptyVoices ? [] : [{ name: 'Saved Voice', lang: 'en-GB' }];
@@ -42,7 +42,7 @@ function harness({ provider = 'kokoro', globalRate = 1, speed = 1, staticFails =
       speak(utterance) { utterances.push(utterance); if (autoEnd) queueMicrotask(() => utterance.onend?.()); },
     } } : {}),
   };
-  const service = createSpeechService({ storage, runtime, correctedAudioUrl: (word, field) => `/versioned/${field}/${word.id}.mp3` });
+  const service = createSpeechService({ storage, runtime, correctedAudioUrl: correctedAudioUrl || ((word, field) => `/versioned/${field}/${word.id}.mp3`) });
   return { ...service, played, requests, utterances, revoked,
     loadVoices() { voices = [{ name: 'Saved Voice', lang: 'en-GB' }]; events.dispatchEvent(new Event('voiceschanged')); } };
 }
@@ -151,4 +151,40 @@ test('provider/rate changes cancel pending playback and browser-only rate exclud
   assert.equal(h.utterances[0].rate, 0.8);
   h.requests[0].respond(); await tick();
   assert.equal(h.played.length, 0);
+});
+
+test('late audio mappings cannot play after stop, provider change or a newer word request', async () => {
+  const pending = [];
+  const h = harness({ correctedAudioUrl: () => new Promise(resolve => pending.push(resolve)) });
+  const first = h.speakWord(word);
+  assert.equal(h.played.length, 0);
+  h.stopSpeak();
+  assert.deepEqual(await first, { cancelled: true });
+  pending[0]('/late-old.mp3'); await tick();
+  assert.equal(h.played.length, 0);
+  const second = h.speakWord(word);
+  const third = h.speakExample(word);
+  pending[2]('/current-example.mp3'); await third;
+  pending[1]('/late-word.mp3'); await second; await tick();
+  assert.deepEqual(h.played.map(audio => audio.src), ['/current-example.mp3']);
+  const fourth = h.speakWord(word);
+  h.setTtsProvider('browser');
+  assert.deepEqual(await fourth, { cancelled: true });
+  pending[3]('/late-provider.mp3'); await tick();
+  assert.equal(h.played.length, 1);
+  assert.equal(h.requests.length, 0);
+  assert.equal(h.utterances.length, 0);
+});
+
+test('mapping failures preserve text fallback without playing potentially stale static audio', async () => {
+  const h = harness({ correctedAudioUrl: async () => { throw new Error('mapping unavailable'); } });
+  await h.speakWord(word);
+  assert.equal(h.requests.length, 1);
+  assert.equal(JSON.parse(h.requests[0].body).input, word.word);
+  assert(h.played.every(audio => audio.src.startsWith('blob:')));
+  await assert.rejects(h.speakStaticKokoroWordAudio(word), /mapping unavailable/);
+  assert.equal(h.requests.length, 1);
+  const browser = harness({ provider: 'browser', correctedAudioUrl: () => { throw new Error('must remain lazy'); } });
+  await browser.speakWord(word);
+  assert.equal(browser.utterances[0].text, word.word);
 });

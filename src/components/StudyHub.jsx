@@ -1,6 +1,7 @@
 import { StudentReadingAssignments } from './classroom/ReadingAssignments'
 import AppLayout from './layout/AppLayout'
 import StudyCarousel from './home/StudyCarousel'
+import HomeArtworkProvider from './home/HomeArtworkProvider.jsx'
 import AccountProgressSummary from './home/AccountProgressSummary'
 import { DashboardStats, DashboardTasks, DashboardQuickStart } from './home/StudyDashboardPanels'
 import { buildStudyDeck, dashboardGreeting } from '../utils/studyDashboard.js'
@@ -139,6 +140,7 @@ function StudyHub({
         sidebarProps: { studyHistory },
       }}
     >
+      <HomeArtworkProvider paused={!planReady || !rewardsReady || isPreparingWords}>
       <div className="ds-stack study-dashboard">
         <div className="study-mobile-greeting">
           <h1>{dashboardGreeting(authUser)}</h1>
@@ -190,6 +192,7 @@ function StudyHub({
           accountNotice={accountNotice} todayWordsMastered={todayWordsMastered} todayReadingsCompleted={todayReadingsCompleted}
           readingCount={readingCount} todayExamQuestionsAnswered={todayExamQuestionsAnswered} wrongCount={wrongCount} />
       </div>
+      </HomeArtworkProvider>
     </AppLayout>
   );
 }

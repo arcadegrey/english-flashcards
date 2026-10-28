@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
 import { getLast7StudyDays, summarizeStudyHistory } from '../utils/learningMetrics';
-import { activeProgressIds } from '../../shared/retiredVocabulary.js';
+import { activeProgressIds } from '../../shared/retiredVocabularyIds.js';
 import WeeklyLearningOverview from './statistics/WeeklyLearningOverview';
 
 const normalizeHistory = (value) => (Array.isArray(value) ? value : []);

@@ -79,6 +79,19 @@ export async function buildVocabularyDelivery() {
     paths: selectedPaths, sizes: selectedPaths.map(path => shards.find(shard => shard.path === path).size), wordPaths, catalog, details };
   await writeIfChanged('public/data/vocabulary/extended.json', extended);
   await writeIfChanged('src/data/vocabularyIndex.json', index);
+  await writeIfChanged('src/data/vocabularyDetailsIndex.json', details);
+  const idRanges = [];
+  for (const id of vocabulary.map(word => word.id).sort((a, b) => a - b)) {
+    if (!Number.isSafeInteger(id) || id <= 0) throw new Error(`Invalid canonical vocabulary ID: ${id}`);
+    const previous = idRanges.at(-1);
+    if (previous && id <= previous[1]) throw new Error(`Duplicate canonical vocabulary ID: ${id}`);
+    if (previous && id === previous[1] + 1) previous[1] = id;
+    else idRanges.push([id, id]);
+  }
+  await writeIfChanged('src/data/vocabularyStartup.json', {
+    total: index.total, counts, core: index.core, coreCatalog: catalog.core,
+    extended: index.extended, catalog: { extended: catalog.extended }, idRanges,
+  });
   for (const [directory, files] of Object.entries(generated)) {
     const base = new URL(`public/data/vocabulary/${directory}/`, root);
     for (const file of await readdir(base)) if (file.endsWith('.json') && !files.has(file)) await unlink(new URL(file, base));

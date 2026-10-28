@@ -139,7 +139,10 @@ export function createSpeechService({ storage, correctedAudioUrl = () => '', env
     const voice = storage.getKokoroVoice();
     if (!KOKORO_WORD_AUDIO_VOICES.some(item => item.id === voice)) throw new Error(`未预生成音色: ${voice}`);
     const base = field === 'word' ? env.VITE_WORD_AUDIO_BASE_URL || '/audio/words' : env.VITE_EXAMPLE_AUDIO_BASE_URL || '/audio/examples';
-    const url = correctedAudioUrl(word, field, voice)
+    const correction = correctedAudioUrl(word, field, voice);
+    const mappedUrl = correction && typeof correction.then === 'function' ? await correction : correction;
+    assertActive(session);
+    const url = mappedUrl
       || `${base.trim().replace(/\/$/, '')}/${encodeURIComponent(voice)}/${encodeURIComponent(id)}.mp3`;
     await playSource(url, session, rate);
   };

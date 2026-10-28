@@ -3429,6 +3429,4 @@ export const ORIGINAL_RETIRED_VOCABULARY = [
 ];
 
 export const RETIRED_VOCABULARY = [...ORIGINAL_RETIRED_VOCABULARY, ...namePlaceRetired];
-const retiredIds = new Set(RETIRED_VOCABULARY.map(word => String(word.id)));
-export const isRetiredVocabularyId = id => retiredIds.has(String(id));
-export const activeProgressIds = ids => (ids || []).filter(id => !isRetiredVocabularyId(id));
+export { isRetiredVocabularyId, activeProgressIds } from './retiredVocabularyIds.js';

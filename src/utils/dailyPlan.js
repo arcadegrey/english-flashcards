@@ -1,5 +1,5 @@
 import { getStudyDateKey, shiftStudyDate } from '../../shared/studyDate.js';
-import { isRetiredVocabularyId } from '../../shared/retiredVocabulary.js';
+import { isRetiredVocabularyId } from '../../shared/retiredVocabularyIds.js';
 
 export const DAILY_EXAM_TARGET = 5;
 const count = value => Number.isFinite(Number(value)) ? Math.max(0, Math.floor(Number(value))) : 0;

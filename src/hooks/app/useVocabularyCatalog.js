@@ -7,6 +7,7 @@ import {
   hasBundledVocabularyId, VOCABULARY_COUNTS, loadIeltsListCatalog as loadIeltsListVocabulary,
   loadIeltsManifest, loadToeflListCatalog as loadToeflListVocabulary, loadToeflManifest,
   loadVocabularyCatalog as loadVocabulary,
+  preloadWordDetails,
 } from '../../data/vocabulary'
 import { getWordCategories } from '../../utils/wordCategories'
 
@@ -108,6 +109,9 @@ export function useVocabularyCatalog(learning, navigationState) {
   }), [toeflManifest, ieltsManifest])
 
   const loadAllExamVocabulary = useCallback(async () => {
+    // Confirmed learning intent: overlap the small example locator with both
+    // page code and complete summaries; never prefetch the full ID/List index.
+    void preloadWordDetails().catch(() => {})
     if (fullVocabularyLoadedRef.current) return null
     return loadFullVocabulary()
   }, [])

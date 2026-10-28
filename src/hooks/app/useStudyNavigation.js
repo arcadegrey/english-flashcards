@@ -7,6 +7,7 @@ import { storage } from '../../utils/storage'
 import { normalizePlanCategory } from '../../utils/studyPlan'
 import { stopSpeak } from '../../utils/speech'
 import { useVocabularyNavigation } from './useVocabularyNavigation.js'
+import { loadLearningView } from '../../utils/learningViewLoader.js'
 
 // Coordinate view transitions and invalidate late study preparation responses.
 export function useStudyNavigation(navigationState, learning, catalog, overview, account) {
@@ -27,25 +28,28 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
     setVocabulary, fullVocabularyLoadedRef, filteredVocabulary, loadAllExamVocabulary, prepareSavedWords,
   } = catalog
   const {
-    readingLibrary, suggestedReading, setPlanPreparing, setPlanPreparationError,
+    readingLibrary, suggestedReading, setPlanPreparing, setPlanPreparationError, setPlanPreparationAttempt,
   } = overview
   const {
     authUser, setShowAuthModal,
   } = account
 
   const vocabularyNavigation = useVocabularyNavigation(navigationState, catalog, authUser?.id)
+  const planStartRetryRef = useRef(false)
 
   useEffect(() => {
     stopSpeak()
     return stopSpeak
   }, [view, mode, currentIndex, selectedReadingId, selectedCategory])
 
-  useEffect(() => () => {
-    // Ignore a late response after the user leaves the test picker.
+  useLayoutEffect(() => () => {
+    // Both resources may finish late; neither can adopt an obsolete view/account/plan.
     examRequestRef.current += 1
     planRequestRef.current += 1
     setExamPreparing(false)
-  }, [examRequestRef, planRequestRef, setExamPreparing, view])
+    setPlanPreparing(false)
+    planStartRetryRef.current = false
+  }, [examRequestRef, planRequestRef, setExamPreparing, setPlanPreparing, view, mode, authUser?.id, studyPlanCategory])
 
   const activeScopeRef = useRef(null)
   const scopeKey = JSON.stringify([authUser?.id || 'guest', selectedCategory,
@@ -176,11 +180,14 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
   }
 
   const handleStartPlanLearning = async () => {
+    planStartRetryRef.current = false
+    examRequestRef.current += 1
+    setExamPreparing(false)
     const requestId = ++planRequestRef.current
     setPlanPreparing(true)
     setPlanPreparationError('')
     try {
-      const words = await loadAllExamVocabulary()
+      const [words] = await Promise.all([loadAllExamVocabulary(), loadLearningView()])
       if (requestId !== planRequestRef.current) return
       if (words) {
         setVocabulary((prev) => mergeVocabularyList(prev, words))
@@ -197,13 +204,24 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
       setMode('learn')
       setView('learn')
     } catch (error) {
-      if (requestId === planRequestRef.current) setPlanPreparationError(error?.message || '计划词库加载失败，请重试')
+      if (requestId === planRequestRef.current) {
+        planStartRetryRef.current = true
+        setPlanPreparationError(error?.message || '计划词库加载失败，请重试')
+      }
     } finally {
       if (requestId === planRequestRef.current) setPlanPreparing(false)
     }
   }
 
+  const handleRetryPlanPreparation = () => {
+    if (planStartRetryRef.current) return handleStartPlanLearning()
+    setPlanPreparationAttempt(value => value + 1)
+  }
+
   const handleStartExamPractice = async (nextMode, scope = examScope, backTarget = 'examPractice') => {
+    planStartRetryRef.current = false
+    planRequestRef.current += 1
+    setPlanPreparing(false)
     const requestId = ++examRequestRef.current
     pendingStartWordIdRef.current = null
     setAssessmentBackTarget(backTarget)
@@ -212,7 +230,7 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
     setExamPreparationError(null)
 
     try {
-      const loadedVocabulary = await loadAllExamVocabulary()
+      const [loadedVocabulary] = await Promise.all([loadAllExamVocabulary(), loadLearningView()])
       if (requestId !== examRequestRef.current) return
       if (loadedVocabulary) {
         setVocabulary((prev) => mergeVocabularyList(prev, loadedVocabulary))
@@ -365,7 +383,7 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
     handleSelectExamScope, currentWord, selectedReading, handleBackToHome, handleOpenWordStudy, handleOpenReadingList,
     handleOpenTodayReview, handleOpenSavedWords, handleOpenWrongWords, handleOpenStatistics,
     handleOpenClassroom, handleOpenExamPractice, handleOpenPlanSettings, handleSelectPlanCategory,
-    handleStartPlanLearning, handleStartExamPractice, handleOpenReadingSession, handleStartReadingAssignment,
+    handleStartPlanLearning, handleRetryPlanPreparation, handleStartExamPractice, handleOpenReadingSession, handleStartReadingAssignment,
     handleRetryReading, handleSubmitReadingAssignment, handleOpenSuggestedReading, handleBackToStudyHub,
     handleBackToReadingList, handleOpenModeFromReading, handleOpenModeFromHome, handleOpenModeFromCollection,
     handleLearningBack, markAsLearned, markAsMastered, markLearnedWordAsMastered, markMasteredWordAsLearned,

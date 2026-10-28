@@ -1,6 +1,7 @@
 import LoadingState from '../ui/LoadingState';
 import AssetImage from '../ui/AssetImage';
-import { resolveImageAsset } from '../../utils/imageAssets';
+import ScheduledAssetImage from '../ui/ScheduledAssetImage.jsx';
+import { useScheduledArtwork } from '../../hooks/useScheduledArtwork.js';
 import { BaseCard } from '../ui/Cards';
 import { LinearProgress } from '../ui/Progress';
 import { dashboardStudyTime, formatStudyMinutes, DASHBOARD_ART } from '../../utils/studyDashboard.js';
@@ -21,13 +22,16 @@ const ARTWORK_FRAMES = {
 };
 
 function DashboardArtwork({ src }) {
+  const { target, allowed, paused } = useScheduledArtwork(src, { variant: 'small' });
   const frame = ARTWORK_FRAMES[src];
-  if (!frame) return <AssetImage className="study-dashboard-artwork" src={src} alt="" aria-hidden="true" />;
+  if (!frame) return allowed
+    ? <AssetImage ref={target} className="study-dashboard-artwork" src={src} variant="small" retryPaused={paused} alt="" aria-hidden="true" />
+    : <img ref={target} className="study-dashboard-artwork" alt="" aria-hidden="true" />;
   const [canvasWidth, canvasHeight, x, y, width, height] = frame;
   const size = Math.max(width, height) * 1.12;
   const viewBox = `${x + (width - size) / 2} ${y + (height - size) / 2} ${size} ${size}`;
-  return <svg className="study-dashboard-artwork" viewBox={viewBox} aria-hidden="true" focusable="false">
-    <image href={resolveImageAsset(src)} width={canvasWidth} height={canvasHeight} />
+  return <svg ref={target} className="study-dashboard-artwork" viewBox={viewBox} aria-hidden="true" focusable="false">
+    {allowed && <AssetImage svg src={src} variant="small" retryPaused={paused} width={canvasWidth} height={canvasHeight} />}
   </svg>;
 }
 
@@ -45,7 +49,7 @@ export function DashboardStats({ plan, streak, history, wordCount, categoryName,
       art: '/images/ui-assets/category-all-words-blue-v1.png', tone: 'mint', action: onCatalog },
   ];
   return <div className="study-dashboard-stats" aria-label="学习概览">{stats.map(stat => <button key={stat.key} type="button" className={`study-dashboard-stat is-${stat.tone}`} onClick={stat.action}>
-    <span className="study-dashboard-stat-icon" aria-hidden="true">{stat.art ? <AssetImage src={stat.art} alt="" /> : <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" /><path d="M12 7v5l3 2" /></svg>}</span>
+    <span className="study-dashboard-stat-icon" aria-hidden="true">{stat.art ? <ScheduledAssetImage src={stat.art} variant="small" alt="" fetchPriority="low" /> : <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" /><path d="M12 7v5l3 2" /></svg>}</span>
     <span className="study-dashboard-stat-copy"><span>{stat.label}</span><strong>{plan.priority === 'preparing' ? '—' : stat.value}</strong><small>{plan.priority === 'preparing' ? '正在恢复学习记录' : stat.meta}</small>
       {stat.progress !== undefined && plan.priority !== 'preparing' && <LinearProgress value={Math.round(stat.progress)} />}
     </span><Chevron />

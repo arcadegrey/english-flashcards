@@ -39,3 +39,27 @@ test('the CSS landscape uses the same versioned WebP as the image manifest', asy
   const css = await readFile(new URL('src/styles/image-assets.css', root), 'utf8');
   assert.ok(css.includes(manifest['/images/ui-assets/mobile-learning-landscape-v1.png'].src));
 });
+
+test('home icon variants keep original canvas proportions and alpha, with distinct immutable delivery URLs', async () => {
+  const small = Object.entries(manifest).filter(([, asset]) => asset.variants?.small);
+  assert.equal(small.length, 8);
+  let fullBytes = 0, smallBytes = 0;
+  for (const [source, asset] of small) {
+    const variant = asset.variants.small;
+    const bytes = await readFile(new URL(`public${variant.src}`, root));
+    const hash = createHash('sha256').update(bytes).digest('hex').slice(0, 16);
+    const metadata = await sharp(bytes).metadata();
+    const original = await sharp(await readFile(new URL(`public${source}`, root))).metadata();
+    assert(variant.src.endsWith(`-small-${hash}.webp`));
+    assert.notEqual(variant.src, asset.src);
+    assert.equal(metadata.width, 192);
+    assert.equal(metadata.height, variant.height);
+    assert.equal(metadata.hasAlpha, original.hasAlpha);
+    assert(Math.abs(metadata.width / metadata.height - original.width / original.height) < 0.004);
+    assert.equal(bytes.length, variant.bytes);
+    assert(bytes.length < asset.bytes);
+    fullBytes += asset.bytes; smallBytes += variant.bytes;
+    await sharp(bytes).raw().toBuffer();
+  }
+  assert(smallBytes < fullBytes * 0.3);
+});

@@ -1,5 +1,4 @@
 import { storage } from './storage.js';
-import { correctedVocabularyAudioUrl } from '../../shared/vocabularyAudio.js';
 import { createSpeechService } from './speechEngine.js';
 
 export {
@@ -7,7 +6,17 @@ export {
   KOKORO_WORD_AUDIO_VOICES, KOKORO_EXAMPLE_AUDIO_VOICES,
 } from './speechEngine.js';
 
-const speech = createSpeechService({ storage, correctedAudioUrl: correctedVocabularyAudioUrl, env: import.meta.env || {} });
+let audioMapping, audioMappingRequest;
+const correctedAudioUrl = (...args) => {
+  if (audioMapping) return audioMapping.correctedVocabularyAudioUrl(...args);
+  audioMappingRequest ??= import('../../shared/vocabularyAudio.js').then(module => {
+    audioMapping = module;
+    return module;
+  }).catch(error => { audioMappingRequest = null; throw error; });
+  return audioMappingRequest.then(module => module.correctedVocabularyAudioUrl(...args));
+};
+
+const speech = createSpeechService({ storage, correctedAudioUrl, env: import.meta.env || {} });
 export const {
   speak, speakWord, speakExample, speakStaticKokoroWordAudio, stopSpeak,
   getAvailableVoices, setVoice, getCurrentVoice, setTtsProvider, getTtsProvider,

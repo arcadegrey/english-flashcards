@@ -2,7 +2,7 @@ import { uniqueReadingArticleIds } from '../../utils/learningEvents.js'
 import { dedupeIdList } from '../../utils/progressState.js'
 import { prepareReadingContent, indexReadingVocabulary, applyReadingProgress } from '../../utils/readingLibrary.js'
 import { mergeVocabularyList } from '../../utils/vocabularyMerge.js'
-import { RETIRED_VOCABULARY, activeProgressIds } from '../../../shared/retiredVocabulary.js'
+import { RETIRED_VOCABULARY_IDS, activeProgressIds, isRetiredVocabularyId } from '../../../shared/retiredVocabularyIds.js'
 import { getDailyPlanExamActivity } from '../../../shared/planActivity.js'
 import { buildTomorrowPlan, needsPlanCatalog } from '../../utils/dailyPlan.js'
 import { useState, useEffect, useMemo } from 'react'
@@ -74,7 +74,7 @@ export function useStudyOverview(learning, catalog, navigationState, clock) {
 
   const statisticsWordCount = useMemo(() => {
     const recordedIds = new Set([...learnedWords, ...masteredWords].map(String))
-    const archivedCount = RETIRED_VOCABULARY.filter(word => recordedIds.has(String(word.id))).length
+    const archivedCount = RETIRED_VOCABULARY_IDS.filter(id => recordedIds.has(String(id))).length
     const activeCount = Number(toeflManifest?.sourceTotal) || Number(ieltsManifest?.sourceTotal) || vocabulary.length
     return activeCount + customWords.length + archivedCount
   }, [customWords.length, ieltsManifest, learnedWords, masteredWords, toeflManifest, vocabulary.length])
@@ -132,8 +132,8 @@ export function useStudyOverview(learning, catalog, navigationState, clock) {
 
   const vocabularyMap = useMemo(() => {
     const map = new Map()
-    // Historical collections can still resolve old IDs; active courses only use allVocabulary.
-    ;[...RETIRED_VOCABULARY, ...allVocabulary].forEach((word) => {
+    // Full historical records arrive with the lazy collection page, never active courses.
+    allVocabulary.forEach((word) => {
       map.set(word.id, word)
       map.set(String(word.id), word)
     })
@@ -171,6 +171,7 @@ export function useStudyOverview(learning, catalog, navigationState, clock) {
     () => wrongWords.map((id) => vocabularyMap.get(id)).filter(Boolean),
     [wrongWords, vocabularyMap]
   )
+  const wrongWordCount = wrongWords.filter(id => vocabularyMap.has(id) || isRetiredVocabularyId(id)).length
 
   const remainingPlanWordCount = studyPlanCategory === 'all'
     ? Math.max(0, planWordCount - new Set([...activeProgressIds(learnedWords), ...activeProgressIds(masteredWords)].map(String)).size)
@@ -184,14 +185,14 @@ export function useStudyOverview(learning, catalog, navigationState, clock) {
 
   const savedWordIds = Object.entries(wordBookmarks).filter(([, entry]) => entry.saved).map(([id]) => id)
   const savedWordList = savedWordIds.map((id) => vocabularyMap.get(id)).filter(Boolean)
-  const unavailableSavedCount = savedWordIds.length - savedWordList.length
+  const unavailableSavedCount = savedWordIds.filter(id => !vocabularyMap.has(id) && !isRetiredVocabularyId(id)).length
 
   return {
     readingLibrary, vocabularyLookup, todayStudyStats, suggestedReading, statisticsWordCount, planCategoryName,
     planVocabulary, planWordCount, planWordStats, planTodayWordsLearned, planTodayExamAnswered,
     planTodayExamCorrect, planLearnedCount, planMasteredCount, planPreparing, setPlanPreparing,
     planPreparationError, setPlanPreparationError, setPlanPreparationAttempt, vocabularyMap, learnedWordList,
-    masteredWordList, reviewBaseWordList, todayReviewWordList, wrongWordList, remainingPlanWordCount,
+    masteredWordList, reviewBaseWordList, todayReviewWordList, wrongWordList, wrongWordCount, remainingPlanWordCount,
     planDataReady, tomorrowPlan, savedWordList, unavailableSavedCount,
   }
 }

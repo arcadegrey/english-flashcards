@@ -1,5 +1,6 @@
-import AssetImage from '../ui/AssetImage';
-import { useRef, useState } from 'react';
+import ScheduledAssetImage from '../ui/ScheduledAssetImage.jsx';
+import { useContext, useLayoutEffect, useRef, useState } from 'react';
+import { HomeArtworkContext } from '../../context/home-artwork-context.js';
 import { PrimaryButton } from '../ui/Buttons';
 import { LinearProgress } from '../ui/Progress';
 import { carouselPosition, carouselDragStep } from '../../utils/studyDashboard.js';
@@ -26,6 +27,16 @@ export default function StudyCarousel({
   const suppressClick = useRef(0);
   const activeIndex = Math.max(0, cards.findIndex(card => card.id === (selectedId || initialId)));
   const active = cards[activeIndex];
+  const artwork = useContext(HomeArtworkContext);
+  const scheduler = artwork?.scheduler;
+  const primaryToken = active?.art ? `${active.id}|${active.art}` : null;
+  useLayoutEffect(() => {
+    if (!scheduler) return;
+    scheduler.holdPrimary(primaryToken);
+    const image = stage.current?.querySelector('.is-current .study-carousel-art');
+    if (image?.getAttribute('src') && image.complete) scheduler.settlePrimary(primaryToken);
+    return () => scheduler.settlePrimary(primaryToken);
+  }, [scheduler, primaryToken]);
   const select = index => setSelectedId(cards[(index + cards.length) % cards.length].id);
   const resetDrag = () => {
     stage.current?.style.setProperty('--study-drag-x', '0px');
@@ -87,8 +98,10 @@ export default function StudyCarousel({
             </PrimaryButton>
           </div>
           <div className="study-carousel-artwork" aria-hidden="true">
-            {Math.abs(position) <= 1 && <AssetImage className="study-carousel-art" src={card.art} alt="" draggable={false}
-              loading={isActive ? 'eager' : 'lazy'} fetchPriority={isActive ? 'high' : 'low'} />}
+            {Math.abs(position) <= 1 && <ScheduledAssetImage className="study-carousel-art" src={card.art} alt="" draggable={false}
+              critical={isActive} loading={scheduler || isActive ? 'eager' : 'lazy'} fetchPriority={isActive ? 'high' : 'low'}
+              onLoad={() => { if (isActive) scheduler?.settlePrimary(primaryToken); }}
+              onError={() => { if (isActive) scheduler?.settlePrimary(primaryToken); }} />}
           </div>
           {card.progress !== undefined && <div className="study-carousel-progress"><LinearProgress value={Math.round(card.progress)} /><span>{card.progressLabel}</span></div>}
         </article>;

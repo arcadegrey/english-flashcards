@@ -4,7 +4,15 @@
     "width": 512,
     "height": 512,
     "bytes": 15588,
-    "originalBytes": 137456
+    "originalBytes": 137456,
+    "variants": {
+      "small": {
+        "src": "/images/optimized/category-all-words-blue-v1-small-4dd6b40fca03c5b1.webp",
+        "width": 192,
+        "height": 192,
+        "bytes": 6252
+      }
+    }
   },
   "/images/ui-assets/category-all-words-v1.png": {
     "src": "/images/optimized/category-all-words-v1-987edec9d0c98647.webp",
@@ -179,7 +187,15 @@
     "width": 640,
     "height": 640,
     "bytes": 18666,
-    "originalBytes": 537679
+    "originalBytes": 537679,
+    "variants": {
+      "small": {
+        "src": "/images/optimized/stat-flame-small-dc995efe587a31e7.webp",
+        "width": 192,
+        "height": 192,
+        "bytes": 4772
+      }
+    }
   },
   "/images/ui-assets/stat-star.png": {
     "src": "/images/optimized/stat-star-c51b37dad0bbd78e.webp",
@@ -193,42 +209,90 @@
     "width": 640,
     "height": 640,
     "bytes": 21812,
-    "originalBytes": 579466
+    "originalBytes": 579466,
+    "variants": {
+      "small": {
+        "src": "/images/optimized/stat-target-small-a43334db9e31bc88.webp",
+        "width": 192,
+        "height": 192,
+        "bytes": 5538
+      }
+    }
   },
   "/images/ui-assets/training-card-reading-blue-v1.png": {
     "src": "/images/optimized/training-card-reading-blue-v1-33dc6d0e74509c19.webp",
     "width": 640,
     "height": 427,
     "bytes": 16502,
-    "originalBytes": 154806
+    "originalBytes": 154806,
+    "variants": {
+      "small": {
+        "src": "/images/optimized/training-card-reading-blue-v1-small-5a4e692b0e00f26f.webp",
+        "width": 192,
+        "height": 128,
+        "bytes": 4172
+      }
+    }
   },
   "/images/ui-assets/training-card-review-blue-v1.png": {
     "src": "/images/optimized/training-card-review-blue-v1-1b271dcb92316918.webp",
     "width": 640,
     "height": 427,
     "bytes": 24950,
-    "originalBytes": 153409
+    "originalBytes": 153409,
+    "variants": {
+      "small": {
+        "src": "/images/optimized/training-card-review-blue-v1-small-f12447835e690f61.webp",
+        "width": 192,
+        "height": 128,
+        "bytes": 5626
+      }
+    }
   },
   "/images/ui-assets/training-card-test-blue-v1.png": {
     "src": "/images/optimized/training-card-test-blue-v1-bb6997ed0456b37e.webp",
     "width": 640,
     "height": 427,
     "bytes": 17922,
-    "originalBytes": 153439
+    "originalBytes": 153439,
+    "variants": {
+      "small": {
+        "src": "/images/optimized/training-card-test-blue-v1-small-8e76989203275e97.webp",
+        "width": 192,
+        "height": 128,
+        "bytes": 4274
+      }
+    }
   },
   "/images/ui-assets/training-card-vocabulary-blue-v1.png": {
     "src": "/images/optimized/training-card-vocabulary-blue-v1-8e28e9fdbffa4c3d.webp",
     "width": 640,
     "height": 427,
     "bytes": 18692,
-    "originalBytes": 162129
+    "originalBytes": 162129,
+    "variants": {
+      "small": {
+        "src": "/images/optimized/training-card-vocabulary-blue-v1-small-10b592913c178cf8.webp",
+        "width": 192,
+        "height": 128,
+        "bytes": 4444
+      }
+    }
   },
   "/images/ui-assets/training-hero-flashcards-blue-v1.png": {
     "src": "/images/optimized/training-hero-flashcards-blue-v1-a2b09d765a98360a.webp",
     "width": 640,
     "height": 427,
     "bytes": 24606,
-    "originalBytes": 619378
+    "originalBytes": 619378,
+    "variants": {
+      "small": {
+        "src": "/images/optimized/training-hero-flashcards-blue-v1-small-2eab652713602520.webp",
+        "width": 192,
+        "height": 128,
+        "bytes": 6188
+      }
+    }
   },
   "/images/ui-assets/training-reading-a1-frosted-v2.png": {
     "src": "/images/optimized/training-reading-a1-frosted-v2-048373392d76c662.webp",

@@ -1,5 +1,7 @@
 import { mergeVocabularyList } from '../utils/vocabularyMerge.js'
-import { needsWordDetails } from './vocabularySummary.js'
+import { createVocabularyDetailsLoader } from './vocabularyDetails.js'
+import { loadVocabularyCatalogEntry } from './vocabularyCatalogEntry.js'
+import { createFullVocabularyCatalogLoader } from './fullVocabularyCatalog.js'
 
 // Public content only: selection uses stable IDs, never spelling or account data.
 export function createVocabularyDelivery({ fetchJson, index }) {
@@ -42,28 +44,9 @@ export function createVocabularyDelivery({ fetchJson, index }) {
     return words
   }
 
-  const cachedOrFetchCatalog = async (legacyPath, entry) => {
-    const validate = words => Array.isArray(words) && words.length === entry.count
-      && new Set(words.map(word => word?.id)).size === words.length
-      && words.every(word => hasWord(word?.id) && typeof word?.word === 'string' && typeof word?.meaning === 'string')
-    const cached = await fetchJson.readCached?.(legacyPath, validate)
-    return cached || fetchJson(entry.path, '词库目录加载失败', validate)
-  }
+  const cachedOrFetchCatalog = (legacyPath, entry) => loadVocabularyCatalogEntry(fetchJson, legacyPath, entry, hasWord)
   const loadCoreCatalog = () => cachedOrFetchCatalog(index.core, index.catalog.core)
-  let catalogRequest
-  const loadFullCatalog = () => {
-    catalogRequest ??= (async () => {
-      const cached = await fetchJson.readCached?.('/data/vocabulary.json')
-      if (cached?.length === index.total) return cached
-      const [core, extended] = await Promise.all([
-        loadCoreCatalog(), cachedOrFetchCatalog(index.extended, index.catalog.extended),
-      ])
-      const words = mergeVocabularyList(core, extended)
-      if (words.length !== index.total) throw new Error('全范围词库目录加载失败：词库数据不完整')
-      return words
-    })().catch(error => { catalogRequest = null; throw error })
-    return catalogRequest
-  }
+  const loadFullCatalog = createFullVocabularyCatalogLoader({ fetchJson, index, loadCoreCatalog, hasWord })
   const loadListCatalog = legacyPath => cachedOrFetchCatalog(legacyPath, index.catalog.lists[legacyPath])
   const loadCatalogIds = async ids => {
     const requested = new Set(ids.map(String).filter(hasWord))
@@ -94,44 +77,11 @@ export function createVocabularyDelivery({ fetchJson, index }) {
     return words
   }
 
-  const details = new Map()
-  const keyFor = word => `${word?.id}\0${word?.word}`
-  const completeExample = word => typeof word?.example === 'string' && typeof word?.exampleCn === 'string'
-  const peekDetails = word => completeExample(word) ? word : details.get(keyFor(word)) || null
-  const matchDetails = (words, word) => {
-    const entry = words?.find(item => String(item.id) === String(word.id) && item.word === word.word)
-    if (!completeExample(entry)) return null
-    const result = { id: entry.id, word: entry.word, example: entry.example, exampleCn: entry.exampleCn }
-    details.set(keyFor(word), result)
-    return result
-  }
-  const loadDetails = async word => {
-    const cached = peekDetails(word)
-    if (cached) return cached
-    // Custom and retired words keep their own inline content and never borrow
-    // a canonical sentence just because their spelling happens to match.
-    if (!needsWordDetails(word) || !hasWord(word.id)) return null
-    const path = index.details.batches[Math.floor(Number(word.id) / index.details.batchSize)]
-    try {
-      if (!path) throw new Error('例句索引缺失')
-      const batch = await fetchJson(path, '例句加载失败', entries => Array.isArray(entries)
-        && entries.every(entry => completeExample(entry) && typeof entry.word === 'string')
-        && entries.some(entry => String(entry.id) === String(word.id) && entry.word === word.word))
-      const result = matchDetails(batch, word)
-      if (!result) throw new Error('例句与当前词条不匹配，请重试')
-      return result
-    } catch (error) {
-      // Offline upgrades can still use previously saved complete vocabulary.
-      // These are cache-only reads; a missing sentence never downloads a full library.
-      const legacyPaths = coreIds.has(String(word.id)) ? [index.core] : [index.paths[index.wordPaths[String(word.id)]], index.extended]
-      for (const legacyPath of [...legacyPaths, '/data/vocabulary.json']) {
-        const old = await fetchJson.readCached?.(legacyPath)
-        const result = matchDetails(old, word)
-        if (result) return result
-      }
-      throw error
-    }
-  }
+  const { loadDetails, peekDetails } = createVocabularyDetailsLoader({
+    fetchJson, hasWord, config: index.details,
+    getLegacyPaths: word => [...(coreIds.has(String(word.id)) ? [index.core]
+      : [index.paths[index.wordPaths[String(word.id)]], index.extended]), '/data/vocabulary.json'],
+  })
 
   return { loadCore, loadFull, loadIds, hasWord, loadCoreCatalog, loadFullCatalog, loadListCatalog, loadCatalogIds, loadDetails, peekDetails }
 }

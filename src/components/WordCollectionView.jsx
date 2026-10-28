@@ -6,7 +6,8 @@ import QuickMenu from './QuickMenu';
 import AppLayout from './layout/AppLayout';
 import { speakWord } from '../utils/speech';
 import { matchesVocabularyQuery } from '../../shared/vocabularyAliases.js';
-import { isRetiredVocabularyId } from '../../shared/retiredVocabulary.js';
+import { RETIRED_VOCABULARY, isRetiredVocabularyId } from '../../shared/retiredVocabulary.js';
+import { resolveCollectionWords } from '../utils/collectionVocabulary.js';
 
 const SearchIcon = (
   <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -26,7 +27,8 @@ const HideSearchIcon = (
 function WordCollectionView({
   title,
   subtitle,
-  words,
+  words: activeWords,
+  wordIds,
   onBack,
   mode = 'learn',
   onOpenMode,
@@ -48,6 +50,7 @@ function WordCollectionView({
   active = 'review',
   emptyArtSrc = '/images/ui-assets/training-card-review-blue-v1.png',
 }) {
+  const words = useMemo(() => resolveCollectionWords(activeWords, wordIds, RETIRED_VOCABULARY), [activeWords, wordIds]);
   const [query, setQuery] = useState('');
   const [showSearch, setShowSearch] = useState(false);
   const [hintOpenForWordId, setHintOpenForWordId] = useState(null);

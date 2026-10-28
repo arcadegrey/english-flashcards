@@ -1,9 +1,9 @@
 import LoadingState from './ui/LoadingState';
-import AssetImage from './ui/AssetImage';
+import ScheduledAssetImage from './ui/ScheduledAssetImage.jsx';
 import { useStudyDay } from '../hooks/useStudyDay.js';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { BaseCard } from './ui/Cards';
-import CorrectAnswerCelebration from './CorrectAnswerCelebration';
+import DeferredCelebration from './DeferredCelebration';
 import { availableStudyRewards, studyRewardProgress } from '../../shared/studyRewards.js';
 import '../styles/study-momentum.css';
 
@@ -31,11 +31,11 @@ export default function StudyMomentum({ ownerId, history, wordsDone, readingDone
     return () => clearTimeout(timer);
   }, [ownerId, ready, progress, today, wordsDone, readingDone, examDone, allDone]);
   return <BaseCard className="study-momentum" aria-label="每周学习目标" aria-busy={!ready}>
-    <CorrectAnswerCelebration trigger={trigger} />
+    <DeferredCelebration trigger={trigger} />
     {!ready && <LoadingState variant="inline" title="正在恢复每周学习记录…" />}
     <div className="study-momentum-summary">
       <div className="study-momentum-head">
-        <span className="study-momentum-icon"><AssetImage src="/images/ui-assets/stat-target.png" alt="" aria-hidden="true" /></span>
+        <span className="study-momentum-icon"><ScheduledAssetImage src="/images/ui-assets/stat-target.png" variant="small" fetchPriority="low" alt="" aria-hidden="true" /></span>
         <h2>每周小目标</h2>
         <p>本周 <strong>{ready ? progress.activeDays : '—'}<span> / {progress.targetDays}</span></strong> 天</p>
       </div>

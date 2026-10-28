@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef, useState } from 'react'
 import { mergeVocabularyList } from '../../utils/vocabularyMerge.js'
 import { getIeltsTopicKey } from '../../utils/vocabularyCatalog.js'
+import { loadLearningView } from '../../utils/learningViewLoader.js'
 
 // Coordinate TOEFL/IELTS selection with the existing catalog loaders.
 export function useVocabularyNavigation(navigationState, catalog, ownerId) {
@@ -25,7 +26,10 @@ export function useVocabularyNavigation(navigationState, catalog, ownerId) {
     const request = ++requestRef.current
     setPreparation({ selection, loading: true, error: '' })
     try {
-      const words = await prepareVocabularyRange(selection, () => request === requestRef.current)
+      const [words] = await Promise.all([
+        prepareVocabularyRange(selection, () => request === requestRef.current),
+        loadLearningView(),
+      ])
       if (request !== requestRef.current) return
       // One catalog commit and one navigation, never a sequence of partially ready pools.
       setVocabulary(current => mergeVocabularyList(current, words))
