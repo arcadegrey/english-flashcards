@@ -1,3 +1,4 @@
+import { loadVocabularyRange } from '../../utils/vocabularyPreparation.js'
 import { useVocabularySelection } from '../useVocabularySelection.js'
 import { mergeVocabularyList } from '../../utils/vocabularyMerge.js'
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react'
@@ -25,9 +26,6 @@ export function useVocabularyCatalog(learning, navigationState) {
   const [toeflManifest, setToeflManifest] = useState(null)
   const [ieltsManifest, setIeltsManifest] = useState(null)
   const fullVocabularyLoadedRef = useRef(false)
-  const loadingToeflListsRef = useRef(new Set())
-  const loadingIeltsListsRef = useRef(new Set())
-  const [listLoads, setListLoads] = useState(0)
   const [savedWordsLoading, setSavedWordsLoading] = useState(false)
   const [savedWordsError, setSavedWordsError] = useState('')
 
@@ -93,85 +91,26 @@ export function useVocabularyCatalog(learning, navigationState) {
     }
   }, [vocabularyReloadKey])
 
-  const ensureToeflListLoaded = useCallback(
-    async (levelKey, listKey) => {
-      if (!toeflManifest || !levelKey || !listKey) return
-
-      const cacheKey = `${levelKey}::${listKey}`
-      if (loadingToeflListsRef.current.has(cacheKey)) return
-      loadingToeflListsRef.current.add(cacheKey)
-      setListLoads(count => count + 1)
-
-      try {
-        const listVocabulary = await loadToeflListVocabulary(toeflManifest, levelKey, listKey)
-        setVocabulary((prev) => mergeVocabularyList(prev, listVocabulary))
-      } catch (error) {
-        setVocabularyError(error?.message || '托福 List 加载失败')
-      } finally {
-        loadingToeflListsRef.current.delete(cacheKey)
-        setListLoads(count => count - 1)
-      }
+  const prepareVocabularyRange = useCallback((selection, isCurrent) => loadVocabularyRange(selection, {
+    isCurrent,
+    toeflManifest, ieltsManifest,
+    loadToeflManifest: async () => {
+      const manifest = await loadToeflManifest()
+      if (!isCurrent || isCurrent()) setToeflManifest(manifest)
+      return manifest
     },
-    [toeflManifest]
-  )
-
-  const ensureToeflLevelLoaded = useCallback(
-    (levelKey) => {
-      const lists = toeflGrouping.listsByLevel[levelKey] || []
-      lists.forEach((item) => {
-        ensureToeflListLoaded(levelKey, item.key)
-      })
+    loadIeltsManifest: async () => {
+      const manifest = await loadIeltsManifest()
+      if (!isCurrent || isCurrent()) setIeltsManifest(manifest)
+      return manifest
     },
-    [ensureToeflListLoaded, toeflGrouping.listsByLevel]
-  )
-
-  const ensureAllToeflLoaded = useCallback(() => {
-    toeflGrouping.levels.forEach((level) => {
-      ensureToeflLevelLoaded(level.key)
-    })
-  }, [ensureToeflLevelLoaded, toeflGrouping.levels])
-
-  const ensureIeltsListLoaded = useCallback(
-    async (listKey) => {
-      if (!ieltsManifest || !listKey) return
-
-      if (loadingIeltsListsRef.current.has(listKey)) return
-      loadingIeltsListsRef.current.add(listKey)
-      setListLoads(count => count + 1)
-
-      try {
-        const listVocabulary = await loadIeltsListVocabulary(ieltsManifest, listKey)
-        setVocabulary((prev) => mergeVocabularyList(prev, listVocabulary))
-      } catch (error) {
-        setVocabularyError(error?.message || '雅思 List 加载失败')
-      } finally {
-        loadingIeltsListsRef.current.delete(listKey)
-        setListLoads(count => count - 1)
-      }
-    },
-    [ieltsManifest]
-  )
-
-  const ensureAllIeltsLoaded = useCallback(() => {
-    ieltsGrouping.lists.forEach((item) => {
-      ensureIeltsListLoaded(item.key)
-    })
-  }, [ensureIeltsListLoaded, ieltsGrouping.lists])
+    loadToeflList: loadToeflListVocabulary, loadIeltsList: loadIeltsListVocabulary,
+  }), [toeflManifest, ieltsManifest])
 
   const loadAllExamVocabulary = useCallback(async () => {
     if (fullVocabularyLoadedRef.current) return null
     return loadFullVocabulary()
   }, [])
-
-  const ensureIeltsTopicLoaded = useCallback(
-    (topicKey) => {
-      const lists = ieltsGrouping.listsByTopic[topicKey] || []
-      lists.forEach((item) => {
-        ensureIeltsListLoaded(item.key)
-      })
-    },
-    [ensureIeltsListLoaded, ieltsGrouping.listsByTopic]
-  )
 
   const prepareSavedWords = async (wordBookmarks) => {
     setSavedWordsError('')
@@ -191,10 +130,9 @@ export function useVocabularyCatalog(learning, navigationState) {
 
   return {
     vocabulary, setVocabulary, vocabularyLoading, vocabularyError, vocabularyReloadKey, setVocabularyReloadKey,
-    toeflManifest, ieltsManifest, allVocabulary, wordCounts, fullVocabularyLoadedRef, listLoads,
+    toeflManifest, ieltsManifest, allVocabulary, wordCounts, fullVocabularyLoadedRef,
     filteredVocabulary, toeflGrouping, ieltsGrouping, toeflListsForSelectedLevel, ieltsListsForSelectedTopic,
-    currentCategoryName, ensureToeflListLoaded, ensureToeflLevelLoaded, ensureAllToeflLoaded,
-    ensureIeltsListLoaded, ensureAllIeltsLoaded, loadAllExamVocabulary, ensureIeltsTopicLoaded,
+    currentCategoryName, prepareVocabularyRange, loadAllExamVocabulary,
     savedWordsLoading, savedWordsError, prepareSavedWords,
   }
 }

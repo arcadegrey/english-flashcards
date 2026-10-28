@@ -2,7 +2,7 @@ import { useNavigationHistory } from '../useNavigationHistory.js'
 import { mergeVocabularyList } from '../../utils/vocabularyMerge.js'
 import { wrongReadingQuestions } from '../../../shared/readingAttempts.js'
 import { submitReadingAssignment } from '../../utils/classroomApi'
-import { useEffect, useMemo } from 'react'
+import { useEffect, useLayoutEffect, useMemo, useRef } from 'react'
 import { storage } from '../../utils/storage'
 import { normalizePlanCategory } from '../../utils/studyPlan'
 import { stopSpeak } from '../../utils/speech'
@@ -33,7 +33,7 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
     authUser, setShowAuthModal,
   } = account
 
-  const vocabularyNavigation = useVocabularyNavigation(navigationState, catalog)
+  const vocabularyNavigation = useVocabularyNavigation(navigationState, catalog, authUser?.id)
 
   useEffect(() => {
     stopSpeak()
@@ -47,7 +47,18 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
     setExamPreparing(false)
   }, [examRequestRef, planRequestRef, setExamPreparing, view])
 
-  useEffect(() => {
+  const activeScopeRef = useRef(null)
+  const scopeKey = JSON.stringify([authUser?.id || 'guest', selectedCategory,
+    selectedToeflLevel, selectedToeflList, selectedIeltsTopic, selectedIeltsList, mode])
+
+  useLayoutEffect(() => {
+    if (view !== 'learn') {
+      activeScopeRef.current = null
+      return
+    }
+    // A running word session keeps its order even if unrelated catalog data arrives.
+    if (mode === 'learn' && activeScopeRef.current === scopeKey) return
+    activeScopeRef.current = scopeKey
     const pendingStartWordId = pendingStartWordIdRef.current
     pendingStartWordIdRef.current = null
 
@@ -71,7 +82,7 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
     const shuffled = [...filteredVocabulary].sort(() => Math.random() - 0.5)
     setShuffledWords(shuffled)
     setCurrentIndex(0)
-  }, [filteredVocabulary, pendingStartWordIdRef, setCurrentIndex, setShuffledWords])
+  }, [view, mode, scopeKey, filteredVocabulary, pendingStartWordIdRef, setCurrentIndex, setShuffledWords])
 
   useNavigationHistory({
     view, mode, selectedCategory, selectedToeflLevel, selectedToeflList, selectedIeltsTopic, selectedIeltsList, selectedReadingId,

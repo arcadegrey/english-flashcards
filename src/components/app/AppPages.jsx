@@ -208,6 +208,9 @@ export default function AppPages({ navigation, learning, catalog, overview, acco
       case 'toeflLevels':
         return (
           <ToeflSelectionView
+            isPreparing={navigation.vocabularyPreparing}
+            preparationError={navigation.vocabularyPreparationError}
+            onRetryPreparation={navigation.retryVocabularyPreparation}
             syncing={account.syncState === 'syncing'}
             mode="level"
             title="托福词汇分级"
@@ -235,6 +238,9 @@ export default function AppPages({ navigation, learning, catalog, overview, acco
 
         return (
           <ToeflSelectionView
+            isPreparing={navigation.vocabularyPreparing}
+            preparationError={navigation.vocabularyPreparationError}
+            onRetryPreparation={navigation.retryVocabularyPreparation}
             syncing={account.syncState === 'syncing'}
             mode="list"
             title={levelLabel}
@@ -259,6 +265,9 @@ export default function AppPages({ navigation, learning, catalog, overview, acco
       case 'ieltsTopics':
         return (
           <ToeflSelectionView
+            isPreparing={navigation.vocabularyPreparing}
+            preparationError={navigation.vocabularyPreparationError}
+            onRetryPreparation={navigation.retryVocabularyPreparation}
             syncing={account.syncState === 'syncing'}
             mode="level"
             title="雅思词汇主题"
@@ -286,6 +295,9 @@ export default function AppPages({ navigation, learning, catalog, overview, acco
 
         return (
           <ToeflSelectionView
+            isPreparing={navigation.vocabularyPreparing}
+            preparationError={navigation.vocabularyPreparationError}
+            onRetryPreparation={navigation.retryVocabularyPreparation}
             syncing={account.syncState === 'syncing'}
             mode="list"
             title={topicLabel}
@@ -314,10 +326,9 @@ export default function AppPages({ navigation, learning, catalog, overview, acco
             mode={navigation.mode}
             setMode={navigation.setMode}
             allVocabulary={catalog.allVocabulary}
-            vocabularyLoading={catalog.listLoads > 0}
             currentWord={navigation.currentWord}
             nextWord={navigation.shuffledWords[navigation.currentIndex + 1]}
-            filteredVocabulary={catalog.filteredVocabulary}
+            filteredVocabulary={navigation.mode === 'learn' ? navigation.shuffledWords : catalog.filteredVocabulary}
             currentIndex={navigation.currentIndex}
             onMarkLearned={navigation.markAsLearned}
             onMarkMastered={navigation.markAsMastered}

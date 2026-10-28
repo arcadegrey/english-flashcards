@@ -76,6 +76,7 @@ Less common maintenance commands are listed in `docs/project-reference.md`.
 
 ## Current Risks
 
+- **2026-10-28 measured load audit:** `docs/performance-audit-2026-10-28.md` records bundle/network/CPU evidence. Its confirmed 35-List auto-replacement bug is fixed locally by complete range preparation and stable active word pools; see `docs/vocabulary-study-stability-2026-10-28.md`. Remaining priorities: parallel page/data preparation, startup data/dependency deferral, image scheduling and category increments. Preserve historical compatibility and incomplete-core category checks.
 - Reading highlights may need a dedicated lookup or shard preloading for TOEFL/IELTS words that are not loaded yet.
 - Worker login depends on Resend and production secrets.
 - Daily target and plan category now sync through versioned `user_progress.preferences`; older databases require the existing idempotent migration step.
@@ -119,6 +120,8 @@ Less common maintenance commands are listed in `docs/project-reference.md`.
 - Handoff, evidence and commands: `docs/practical-vocabulary-replacement-2026-10-25.md`. Deploy frontend, Worker and audio together; no D1 migration, Git push or production deployment performed. Local checks: 123 tests, lint, production build/PWA, Worker dry-run, all-file audio decode/hash checks and isolated desktop/mobile browser checks. No full manual listening or authenticated production acceptance.
 
 ## Next Work
+
+- **2026-10-28 Vocabulary study stability:** Training TOEFL/IELTS List/Level/topic/all entry waits for a complete private batch (four downloads max), then commits once. Picker loading/retry and stale view/scope/account invalidation are shared. Active word pools retain order/index through background catalog changes; warm caches still work offline. IELTS cold entry now imports its existing selector styles. 272 tests and 62 isolated browser assertions passed; original slow-network reproduction changed from 35 displayed heads to one initial head with no automatic replacement. Frontend only; committed locally, no migrations, push or deployment. Handoff: `docs/vocabulary-study-stability-2026-10-28.md`.
 
 - **2026-10-28 App responsibility split (continued):** App is now a 168-line composition root. Dedicated hooks own account sessions, sync queue/rebasing, local learning progress/events, vocabulary loading, plan/reading/collection projections and navigation. `AppPages` retains original screen wiring. Local initialization is single-pass, committed progress refs publish in layout effects, and event dates are captured before queued updates. No UI/schema/protocol changes. 261 tests, 320 event baseline comparisons and isolated hook/app/production-browser checks passed; exact scope and limits: `docs/app-responsibility-refactor-2026-10-28.md`. Committed locally; not pushed/deployed.
 

@@ -282,3 +282,6 @@
     transform: none;
   }
 }
+
+.toefl-selection-feedback { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; }
+.toefl-selection-feedback .ds-button-secondary { background: var(--ds-card); color: var(--ds-text); border-color: var(--ds-line); }

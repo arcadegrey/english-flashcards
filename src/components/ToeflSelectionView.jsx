@@ -1,10 +1,12 @@
-import { LoadingAnimation } from './ui/LoadingState';
+import LoadingState, { LoadingAnimation } from './ui/LoadingState';
 import AssetImage from './ui/AssetImage';
 import { useMemo, useRef } from 'react';
 import AppLayout from './layout/AppLayout';
 import { ModuleCard } from './ui/Cards';
 import { PrimaryButton, SecondaryButton } from './ui/Buttons';
 import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
+// IELTS selector rules must also be present on a cold visit, before LearningView loads.
+import '../styles/word-learning-refresh.css';
 import '../styles/vocabulary-selection.css';
 
 function SyncIcon() {
@@ -54,6 +56,9 @@ function ToeflSelectionView({
   onSelectAll,
   onSyncAccount,
   syncing = false,
+  isPreparing = false,
+  preparationError = '',
+  onRetryPreparation,
   selectAllLabel = '学习全部',
   vocabularyLabel = '托福词汇',
   listLabel = '托福 List',
@@ -134,7 +139,7 @@ function ToeflSelectionView({
                   </div>
                 </div>
                 {onSelectAll && (
-                  <PrimaryButton className="toefl-selection-start" onClick={onSelectAll}>
+                  <PrimaryButton className="toefl-selection-start" onClick={onSelectAll} loading={isPreparing}>
                     <span>{selectAllLabel}</span>
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" /></svg>
                   </PrimaryButton>
@@ -157,7 +162,7 @@ function ToeflSelectionView({
             </div>
             <div className="toefl-selection-actions" aria-label="页面操作">
               {onSelectAll && (
-                <button type="button" className="toefl-selection-action is-primary" onClick={onSelectAll}>
+                <button type="button" className="toefl-selection-action is-primary" onClick={onSelectAll} disabled={isPreparing} aria-busy={isPreparing || undefined}>
                   <SparkIcon />
                   <span>{selectAllLabel}</span>
                   <strong>{totalCount} 词</strong>
@@ -173,6 +178,11 @@ function ToeflSelectionView({
           </div>
           )}
 
+          {isPreparing && <LoadingState variant="inline" className="toefl-selection-feedback" title="正在准备所选词库…" />}
+          {preparationError && <div className="toefl-selection-feedback" role="alert">
+            <span>{preparationError}</span><SecondaryButton onClick={onRetryPreparation}>重试</SecondaryButton>
+          </div>}
+
           {items.length === 0 ? (
             <div className="word-home-empty">{emptyText}</div>
           ) : (
@@ -183,12 +193,14 @@ function ToeflSelectionView({
                   className={`ds-module-card ${getSelectionCardClassName(item, selectionKind)}`}
                   title={item.label}
                   meta={<>{item.count} 个单词{item.meta && <span className="toefl-selection-module-meta">{item.meta}</span>}</>}
+                  disabled={isPreparing}
                   onClick={() => onSelect?.(item.key)}
                 />
               ) : (
                 <button
                   key={item.key}
                   type="button"
+                  disabled={isPreparing}
                   onClick={() => onSelect?.(item.key)}
                   className={getSelectionCardClassName(item, selectionKind)}
                 >
