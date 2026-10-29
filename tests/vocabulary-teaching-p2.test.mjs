@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
-import { beforeTeachingP2Review } from '../shared/vocabularyHistory.js';
+import { beforeTeachingP2Review, beforeShortExampleReview } from '../shared/vocabularyHistory.js';
 import { correctedVocabularyAudioUrl } from '../shared/vocabularyAudio.js';
 import { TEACHING_P2_VOCABULARY_AUDIO } from '../shared/teachingP2VocabularyAudio.js';
 import { buildHiddenSentence } from '../src/utils/assessmentRounds.js';
@@ -12,7 +12,8 @@ import { applyWordDetails } from '../src/data/vocabularySummary.js';
 import { createSpeechService } from '../src/utils/speechEngine.js';
 
 const read = async path => JSON.parse(await readFile(new URL(`../${path}`,import.meta.url),'utf8'));
-const vocabulary = await read('public/data/vocabulary.json');
+const currentVocabulary = await read('public/data/vocabulary.json');
+const vocabulary = beforeShortExampleReview(currentVocabulary);
 const register = await read('data/vocabulary-p2-repair/reviews-2026-10-29.json');
 const patches = await read('data/vocabulary-p2-repair/patches-2026-10-29.json');
 const p1 = await read('data/vocabulary-p1-repair/reviews-2026-10-29.json');
@@ -107,7 +108,7 @@ test('historical word-assignment snapshots keep their labels and scores while ne
 
 test('P1 and P2 issue resolutions are complete while original screening evidence remains a historical snapshot',()=>{
   assert.equal(audit.summary.locallyResolvedItems,303);assert.equal(audit.summary.openP1Items,0);assert.equal(audit.summary.openP2Items,0);
-  assert.equal(audit.currentSourceSha256,register.afterSha256);
+  assert.equal(audit.currentSourceSha256,hash(serialize(currentVocabulary)));
   for(const review of register.reviews)for(const issueId of review.issueIds){
     const issue=audit.issues.find(issue=>issue.issueId===issueId);
     assert.equal(issue.resolution.batch,'2026-10-29-p2');assert.equal(issue.resolution.status,'resolved_local_text');

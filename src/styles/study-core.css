@@ -483,8 +483,8 @@
 
 .learn-refresh-study-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 388px);
-  gap: 32px;
+  grid-template-columns: minmax(0, 1fr) clamp(240px, 24%, 288px);
+  gap: 24px;
   align-items: start;
 }
 
@@ -1115,6 +1115,106 @@
 
 .dark .learn-refresh-ring > div {
   background: #111827;
+}
+
+/* Keep the desktop status rail secondary to the word card, including tablets
+   just above the shared shell's 1180px compact breakpoint. */
+@media (min-width: 1181px) {
+  .learn-refresh-study-aside {
+    min-width: 0;
+    gap: 14px;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-side-summary {
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-side-row {
+    gap: 8px;
+    min-height: 58px;
+    padding-inline: 12px;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-side-row span {
+    font-size: 13px;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-side-row strong {
+    font-size: 20px;
+    white-space: nowrap;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-side-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-side-card {
+    padding: 16px;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-side-card h2 {
+    margin-bottom: 14px;
+    font-size: 16px;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-ring-row {
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-ring {
+    width: 88px;
+    height: 88px;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-ring > div {
+    width: 70px;
+    height: 70px;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-ring strong {
+    font-size: 22px;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-ring span {
+    font-size: 11px;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-ring-stats {
+    gap: 10px;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-ring-stats div {
+    gap: 8px;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-ring-stats dt {
+    gap: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-ring-stats dt span {
+    width: 6px;
+    height: 6px;
+    flex-shrink: 0;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-ring-stats dd {
+    font-size: 14px;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-week-row {
+    gap: 4px;
+  }
+
+  .learn-refresh-study-aside .learn-refresh-week-row small,
+  .learn-refresh-study-aside .learn-refresh-week-row b {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 @media (max-width: 1180px) {

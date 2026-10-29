@@ -3,7 +3,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
 import { getCoreWordHints } from '../src/utils/wordHints.js';
-import { beforeTeachingP1Review, beforeTeachingP2Review } from '../shared/vocabularyHistory.js';
+import { beforeTeachingP1Review, beforeTeachingP2Review, beforeShortExampleReview } from '../shared/vocabularyHistory.js';
 
 const root = new URL('../', import.meta.url);
 const read = async path => JSON.parse(await readFile(new URL(path, root), 'utf8'));
@@ -19,7 +19,9 @@ const register = await read('data/vocabulary-teaching-audit/reviews-2026-10-29.j
 const syntax = await read('data/vocabulary-teaching-audit/syntax-screen-2026-10-29.json');
 const p1Repair = await read('data/vocabulary-p1-repair/reviews-2026-10-29.json');
 const p2Repair = await read('data/vocabulary-p2-repair/reviews-2026-10-29.json');
-assert.equal(p2Repair.afterSha256, currentSourceHash, 'Unregistered vocabulary changes: do not claim current repair status.');
+const shortRepair = await read('data/vocabulary-short-example-repair/reviews-2026-10-29.json');
+assert.equal(shortRepair.afterSha256, currentSourceHash, 'Unregistered latest vocabulary edits.');
+assert.equal(p2Repair.afterSha256, hash(JSON.stringify(beforeShortExampleReview(currentVocabulary),null,2)+'\n'), 'Unregistered vocabulary changes: do not claim current repair status.');
 assert.equal(p1Repair.afterSha256, hash(JSON.stringify(beforeTeachingP2Review(currentVocabulary),null,2)+'\n'));
 assert.equal(register.inputSha256, sourceHash, 'Vocabulary changed: review a new snapshot instead of overwriting this historical audit.');
 assert.equal(syntax.inputSha256, sourceHash, 'Syntax cues are stale.');
@@ -121,7 +123,7 @@ const report = { auditDate: register.date, input: 'public/data/vocabulary.json',
     'Registered items include confirmed record inconsistencies, product-level fragment improvements, editorial suggestions and a source-review item. Do not add them up as confirmed lexical mistranslations.',
     'Some words have several items; status and counts are item-level unless explicitly labelled distinct records. Pending cues may overlap a reviewed issue of another kind.',
     'Only base English example fields were parsed across the full library; hint scopes were compared for reviewed items. No exhaustive hint-example, translation, pronunciation or audio listening audit.',
-    'This generator only writes reports. Screening statistics describe the pre-P1/P2 snapshot; issue resolutions and current records use the registered P2 after-state. Audio release and application checks are documented separately.',
+    'This generator only writes reports. Screening statistics describe the pre-P1/P2 snapshot; issue resolutions retain their P1/P2 batch; current records use the registered latest short-example after-state. Audio release and application checks are documented separately.',
   ], summary, ruleLabels, syntaxMethod: syntax.method, sources: register.sources, issues,
   reviewedExclusions: [...exclusions.values()], candidates, trace: register.trace };
 const cell = value => String(value ?? '').replaceAll('\\n', ' / ').replace(/\r?\n/g, ' / ').replaceAll('|', '\\|');

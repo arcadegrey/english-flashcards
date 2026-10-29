@@ -1,0 +1,1284 @@
+[
+  {
+    "id": 5459,
+    "example": "The soup is very hot today.",
+    "exampleCn": "今天的汤很烫。",
+    "pos": "adv./adj."
+  },
+  {
+    "id": 5464,
+    "example": "This is the quickest way to the station.",
+    "exampleCn": "这是去车站最快的路线。"
+  },
+  {
+    "id": 5472,
+    "example": "We went for a walk after dinner.",
+    "exampleCn": "晚饭后我们出去散步了。",
+    "pos": "prep./conj./adv."
+  },
+  {
+    "id": 5488,
+    "example": "Please sit still for a moment.",
+    "exampleCn": "请坐着别动一会儿。",
+    "pos": "conj./n./v./adj./adv."
+  },
+  {
+    "id": 5501,
+    "example": "We had a great day at the park.",
+    "exampleCn": "我们在公园里度过了美好的一天。",
+    "pos": "adv./adj./n."
+  },
+  {
+    "id": 5532,
+    "example": "She wants to visit another country.",
+    "exampleCn": "她想去另一个国家旅行。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 5571,
+    "example": "I am working from home today.",
+    "exampleCn": "我今天在家办公。",
+    "pos": "adv./n."
+  },
+  {
+    "id": 5598,
+    "example": "She wore a black coat to work.",
+    "exampleCn": "她穿了一件黑色外套去上班。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 5606,
+    "example": "We walked around the lake after lunch.",
+    "exampleCn": "午饭后，我们绕着湖散步。",
+    "pos": "prep./adv."
+  },
+  {
+    "id": 5623,
+    "example": "The road is closed for repairs.",
+    "exampleCn": "这条路正在维修，暂时封闭。"
+  },
+  {
+    "id": 5689,
+    "example": "She stood behind me in the queue.",
+    "exampleCn": "她排在我后面。",
+    "pos": "prep./adv."
+  },
+  {
+    "id": 5717,
+    "example": "Please sort the books according to size.",
+    "exampleCn": "请按大小给这些书分类。",
+    "pos": "prep./adj./adv.",
+    "meaning": "prep.（用于 according to）根据；按照；adj. 相符的；adv. 相应地"
+  },
+  {
+    "id": 5833,
+    "example": "Science is my favorite subject at school.",
+    "exampleCn": "科学是我在学校最喜欢的科目。"
+  },
+  {
+    "id": 5876,
+    "example": "The well is too deep to see the bottom.",
+    "exampleCn": "这口井太深，看不到井底。",
+    "pos": "adv./adj./n."
+  },
+  {
+    "id": 5877,
+    "example": "This old coin is worth ten dollars.",
+    "exampleCn": "这枚旧硬币值十美元。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 6002,
+    "example": "The baby is healthy and happy.",
+    "exampleCn": "这个婴儿健康又快乐。"
+  },
+  {
+    "id": 6031,
+    "example": "I totally agree with your suggestion.",
+    "exampleCn": "我完全同意你的建议。"
+  },
+  {
+    "id": 6049,
+    "example": "She was angry about the delay.",
+    "exampleCn": "她对这次延误感到生气。"
+  },
+  {
+    "id": 6200,
+    "example": "I am absolutely certain about the date.",
+    "exampleCn": "我对日期十分确定。"
+  },
+  {
+    "id": 6215,
+    "example": "This is my favorite place to read.",
+    "exampleCn": "这是我最喜欢的读书地点。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 6321,
+    "example": "The weather is constantly changing here.",
+    "exampleCn": "这里的天气不断变化。"
+  },
+  {
+    "id": 6331,
+    "example": "Can we stay a little longer?",
+    "exampleCn": "我们能再多待一会儿吗？"
+  },
+  {
+    "id": 6443,
+    "example": "There is uncertainty about the date of the event.",
+    "exampleCn": "活动日期还不确定。"
+  },
+  {
+    "id": 6450,
+    "example": "We planned a celebration for her birthday.",
+    "exampleCn": "我们为她的生日安排了一场庆祝活动。"
+  },
+  {
+    "id": 6504,
+    "example": "She received a nomination for the award.",
+    "exampleCn": "她获得了这个奖项的提名。"
+  },
+  {
+    "id": 6532,
+    "example": "This book describes everyday life in the city.",
+    "exampleCn": "这本书描写了城市中的日常生活。"
+  },
+  {
+    "id": 6781,
+    "example": "The book explores ideological differences between the groups.",
+    "exampleCn": "这本书探讨了这些群体之间的思想差异。"
+  },
+  {
+    "id": 6854,
+    "example": "She chose a sexy dress for the party.",
+    "exampleCn": "她为聚会选了一条性感的连衣裙。",
+    "meaning": "adj. 性感的；有性吸引力的；（非正式）吸引人的"
+  },
+  {
+    "id": 6864,
+    "example": "Careful handling prevents damage to the equipment.",
+    "exampleCn": "小心搬运能防止设备受损。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 6875,
+    "example": "The course starts in mid-June.",
+    "exampleCn": "这门课程在六月中旬开始。",
+    "pos": "pref./adj./prep.",
+    "meaning": "adj. 中间的；pref.（mid-）…中期；…中间；prep. 在…之中（较旧用法）"
+  },
+  {
+    "id": 6932,
+    "example": "The making of this film took two years.",
+    "exampleCn": "这部电影的制作花了两年时间。"
+  },
+  {
+    "id": 6945,
+    "example": "Honest dealing builds trust between people.",
+    "exampleCn": "诚信交易能建立人与人之间的信任。"
+  },
+  {
+    "id": 6946,
+    "example": "My family was supportive during a difficult time.",
+    "exampleCn": "在困难时期，家人给了我支持。",
+    "meaning": "adj. 支持的；给予帮助的；鼓励的；支撑的"
+  },
+  {
+    "id": 6966,
+    "example": "She studies developmental psychology at university.",
+    "exampleCn": "她在大学学习发展心理学。"
+  },
+  {
+    "id": 6973,
+    "example": "We shared a meal at a Turkish restaurant.",
+    "exampleCn": "我们在一家土耳其餐馆一起吃了饭。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7000,
+    "example": "The class discussed a philosophical question.",
+    "exampleCn": "全班讨论了一个哲学问题。"
+  },
+  {
+    "id": 7014,
+    "example": "We are busy preparing for the coming holiday.",
+    "exampleCn": "我们正忙着为即将到来的假期做准备。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7020,
+    "example": "I am terribly sorry for being late.",
+    "exampleCn": "迟到了，我十分抱歉。"
+  },
+  {
+    "id": 7021,
+    "example": "He borrowed a book about theological ideas.",
+    "exampleCn": "他借了一本介绍神学思想的书。"
+  },
+  {
+    "id": 7026,
+    "example": "The rental includes heating and water.",
+    "exampleCn": "租金包含暖气费和水费。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7027,
+    "example": "I listen to music for relaxation.",
+    "exampleCn": "我听音乐来放松。"
+  },
+  {
+    "id": 7053,
+    "example": "The news was disturbing to everyone.",
+    "exampleCn": "这个消息令所有人不安。"
+  },
+  {
+    "id": 7072,
+    "example": "An unidentified bird flew past the window.",
+    "exampleCn": "一只尚未辨认出的鸟从窗外飞过。"
+  },
+  {
+    "id": 7075,
+    "example": "We spent a sunny afternoon in the park.",
+    "exampleCn": "我们在公园里度过了一个阳光明媚的下午。"
+  },
+  {
+    "id": 7092,
+    "example": "The title gave him lordship over the land.",
+    "exampleCn": "这个头衔赋予了他对这片土地的领主权。"
+  },
+  {
+    "id": 7097,
+    "example": "She hit an ace to win the game.",
+    "exampleCn": "她发出一记直接得分球，赢得了比赛。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7121,
+    "example": "Smoking is not allowed in this room.",
+    "exampleCn": "这个房间内不允许吸烟。"
+  },
+  {
+    "id": 7124,
+    "example": "Please be polite to our guests.",
+    "exampleCn": "请礼貌地对待我们的客人。"
+  },
+  {
+    "id": 7134,
+    "example": "The gallery displays work by an Iranian artist.",
+    "exampleCn": "这家画廊展出了一位伊朗艺术家的作品。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7141,
+    "example": "There is a variance between the two results.",
+    "exampleCn": "这两个结果之间存在差异。"
+  },
+  {
+    "id": 7149,
+    "example": "We spent countless hours on this project.",
+    "exampleCn": "我们在这个项目上花了无数个小时。"
+  },
+  {
+    "id": 7152,
+    "example": "She is preparing for an upcoming exam.",
+    "exampleCn": "她正在为即将到来的考试做准备。"
+  },
+  {
+    "id": 7164,
+    "example": "The guide explained the building's architectural style.",
+    "exampleCn": "导游介绍了这座建筑的建筑风格。"
+  },
+  {
+    "id": 7187,
+    "example": "The team played poorly in the first half.",
+    "exampleCn": "球队在上半场表现不佳。",
+    "pos": "adv./adj.",
+    "meaning": "adv. 差地；不好地；不充分地；贫乏地；adj. 身体不舒服的（英式非正式）"
+  },
+  {
+    "id": 7188,
+    "example": "The class discussed global warming today.",
+    "exampleCn": "今天全班讨论了全球变暖。"
+  },
+  {
+    "id": 7196,
+    "example": "The church has beautiful Gothic windows.",
+    "exampleCn": "这座教堂有漂亮的哥特式窗户。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7203,
+    "example": "The club organizes social events for its members.",
+    "exampleCn": "这家俱乐部为会员组织社交活动。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7235,
+    "example": "Please be patient while we check your ticket.",
+    "exampleCn": "我们检查您的票时，请耐心等候。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7243,
+    "example": "The city hosts an international film festival.",
+    "exampleCn": "这座城市举办国际电影节。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7264,
+    "example": "We have several interests in common.",
+    "exampleCn": "我们有几个共同的兴趣。"
+  },
+  {
+    "id": 7280,
+    "example": "She is studying at a medical college.",
+    "exampleCn": "她正在一所医学院学习。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7289,
+    "example": "The region is famous for its apples.",
+    "exampleCn": "这个地区以苹果闻名。"
+  },
+  {
+    "id": 7308,
+    "example": "She wore a pretty blue hat.",
+    "exampleCn": "她戴了一顶漂亮的蓝色帽子。",
+    "pos": "adv./adj."
+  },
+  {
+    "id": 7315,
+    "example": "The previous owner painted the door green.",
+    "exampleCn": "前任房主把门漆成了绿色。"
+  },
+  {
+    "id": 7323,
+    "example": "The executive spoke at the company meeting.",
+    "exampleCn": "这位主管在公司会议上发了言。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7324,
+    "example": "The town has a large industrial area.",
+    "exampleCn": "这座小镇有一大片工业区。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7329,
+    "example": "The museum displays religious art.",
+    "exampleCn": "这家博物馆展出宗教艺术品。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7337,
+    "example": "The event was successful.",
+    "exampleCn": "这次活动很成功。"
+  },
+  {
+    "id": 7339,
+    "example": "This park is popular with local families.",
+    "exampleCn": "这个公园很受当地家庭欢迎。"
+  },
+  {
+    "id": 7340,
+    "example": "We cooked a traditional meal for the festival.",
+    "exampleCn": "我们为节日做了一顿传统饭菜。"
+  },
+  {
+    "id": 7354,
+    "example": "The speaker answered questions after the talk.",
+    "exampleCn": "演讲者在讲座结束后回答了问题。"
+  },
+  {
+    "id": 7356,
+    "example": "The form asks about sexual orientation.",
+    "exampleCn": "这张表格询问性取向。"
+  },
+  {
+    "id": 7359,
+    "example": "He is learning German at night school.",
+    "exampleCn": "他正在夜校学习德语。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7370,
+    "example": "She is responsible for booking the tickets.",
+    "exampleCn": "她负责订票。"
+  },
+  {
+    "id": 7371,
+    "example": "She hung a painting above the sofa.",
+    "exampleCn": "她在沙发上方挂了一幅画。"
+  },
+  {
+    "id": 7373,
+    "example": "Keep your money in a safe place.",
+    "exampleCn": "把钱放在安全的地方。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7378,
+    "example": "Her work is highly valued by the team.",
+    "exampleCn": "她的工作受到团队的高度重视。"
+  },
+  {
+    "id": 7381,
+    "example": "We bought fresh bread this morning.",
+    "exampleCn": "我们今天早上买了新鲜面包。",
+    "pos": "adv./adj./n."
+  },
+  {
+    "id": 7425,
+    "example": "A tiny bird landed on the fence.",
+    "exampleCn": "一只小鸟落在了围栏上。"
+  },
+  {
+    "id": 7443,
+    "example": "The road is extremely busy at this time.",
+    "exampleCn": "这个时候路上非常繁忙。"
+  },
+  {
+    "id": 7453,
+    "example": "Snow covered the northern part of the country.",
+    "exampleCn": "积雪覆盖了这个国家的北部。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7457,
+    "example": "The team organized the distribution of food.",
+    "exampleCn": "团队组织了食物分发。"
+  },
+  {
+    "id": 7458,
+    "example": "This job requires proper training.",
+    "exampleCn": "这项工作需要适当的培训。",
+    "pos": "adv./adj."
+  },
+  {
+    "id": 7461,
+    "example": "We visited a museum of historical objects.",
+    "exampleCn": "我们参观了一家收藏历史文物的博物馆。"
+  },
+  {
+    "id": 7470,
+    "example": "Her voice sounds familiar to me.",
+    "exampleCn": "她的声音让我觉得熟悉。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7478,
+    "example": "She plays a leading role in the team.",
+    "exampleCn": "她在团队中发挥着主导作用。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7483,
+    "example": "The children played in the pool.",
+    "exampleCn": "孩子们在游泳池里玩耍。",
+    "pos": "v./n."
+  },
+  {
+    "id": 7488,
+    "example": "The students carried out a scientific experiment.",
+    "exampleCn": "学生们进行了一项科学实验。"
+  },
+  {
+    "id": 7511,
+    "example": "These shoes are comfortable for walking.",
+    "exampleCn": "这双鞋走路时穿着很舒服。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7520,
+    "example": "Put the books on the upper shelf.",
+    "exampleCn": "把书放在上层架子上。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7552,
+    "example": "The weather was terrible all weekend.",
+    "exampleCn": "整个周末的天气都很糟。"
+  },
+  {
+    "id": 7561,
+    "example": "She is proud of her daughter's work.",
+    "exampleCn": "她为女儿的作品感到自豪。"
+  },
+  {
+    "id": 7562,
+    "example": "The old bridge is too weak for trucks.",
+    "exampleCn": "这座旧桥不够坚固，无法承受卡车通行。"
+  },
+  {
+    "id": 7572,
+    "example": "Be careful with that sharp knife.",
+    "exampleCn": "小心那把锋利的刀。",
+    "pos": "adv./n./adj."
+  },
+  {
+    "id": 7573,
+    "example": "I can hear you perfectly.",
+    "exampleCn": "我能非常清楚地听到你说话。"
+  },
+  {
+    "id": 7574,
+    "example": "It is unusual to see snow here.",
+    "exampleCn": "在这里见到雪很不寻常。"
+  },
+  {
+    "id": 7576,
+    "example": "The children found a creative solution.",
+    "exampleCn": "孩子们想出了一个有创意的解决办法。"
+  },
+  {
+    "id": 7581,
+    "example": "The player made an illegal move in chess.",
+    "exampleCn": "这位棋手在国际象棋比赛中走了一步违规的棋。"
+  },
+  {
+    "id": 7607,
+    "example": "Beans are a good source of protein.",
+    "exampleCn": "豆类是蛋白质的良好来源。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7611,
+    "example": "Please close the door gently.",
+    "exampleCn": "请轻轻关门。"
+  },
+  {
+    "id": 7613,
+    "example": "The cover protects the bike from exposure to rain.",
+    "exampleCn": "这个罩子保护自行车免受雨淋。"
+  },
+  {
+    "id": 7615,
+    "example": "A sudden change of plan surprised everyone.",
+    "exampleCn": "计划突然改变，让所有人都吃了一惊。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7635,
+    "example": "I feel nervous before an exam.",
+    "exampleCn": "考试前我会感到紧张。"
+  },
+  {
+    "id": 7636,
+    "example": "The village holds a festival every spring.",
+    "exampleCn": "这个村庄每年春天都举办节庆活动。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7639,
+    "example": "The shop sells electronic equipment.",
+    "exampleCn": "这家商店销售电子设备。"
+  },
+  {
+    "id": 7643,
+    "example": "We walked to a nearby shop.",
+    "exampleCn": "我们步行去了一家附近的商店。",
+    "pos": "prep./adj./adv."
+  },
+  {
+    "id": 7662,
+    "example": "I made a stupid mistake on the form.",
+    "exampleCn": "我在表格上犯了一个愚蠢的错误。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7666,
+    "example": "She feels confident about her presentation.",
+    "exampleCn": "她对自己的演讲很有信心。"
+  },
+  {
+    "id": 7670,
+    "example": "Our ultimate goal is to finish the project.",
+    "exampleCn": "我们的最终目标是完成这个项目。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7676,
+    "example": "The milk has an awful smell.",
+    "exampleCn": "这牛奶的气味很难闻。"
+  },
+  {
+    "id": 7681,
+    "example": "The company made a strategic decision.",
+    "exampleCn": "公司作出了一项战略决策。"
+  },
+  {
+    "id": 7688,
+    "example": "The judge found him innocent.",
+    "exampleCn": "法官认定他无罪。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7690,
+    "example": "She gave the child a gentle hug.",
+    "exampleCn": "她轻轻地拥抱了那个孩子。"
+  },
+  {
+    "id": 7707,
+    "example": "I am grateful for your help.",
+    "exampleCn": "我很感激你的帮助。"
+  },
+  {
+    "id": 7724,
+    "example": "A wealthy family donated money to the library.",
+    "exampleCn": "一个富裕家庭向图书馆捐了款。"
+  },
+  {
+    "id": 7736,
+    "example": "The school has strict rules about attendance.",
+    "exampleCn": "这所学校对出勤有严格规定。"
+  },
+  {
+    "id": 7741,
+    "example": "The child was curious about the old map.",
+    "exampleCn": "那个孩子对这张旧地图很好奇。"
+  },
+  {
+    "id": 7747,
+    "example": "She sent me an invitation to dinner.",
+    "exampleCn": "她给我发来了晚餐邀请。"
+  },
+  {
+    "id": 7748,
+    "example": "That was a generous gift.",
+    "exampleCn": "那是一份慷慨的馈赠。"
+  },
+  {
+    "id": 7749,
+    "example": "We meet weekly to discuss our progress.",
+    "exampleCn": "我们每周见面讨论进展。",
+    "pos": "adv./n./adj."
+  },
+  {
+    "id": 7750,
+    "example": "The squirrel found a nut under the tree.",
+    "exampleCn": "松鼠在树下找到了一颗坚果。"
+  },
+  {
+    "id": 7752,
+    "example": "An electrical fault caused the lights to go out.",
+    "exampleCn": "一个电气故障导致灯灭了。"
+  },
+  {
+    "id": 7761,
+    "example": "The quality of the work was satisfactory.",
+    "exampleCn": "这项工作的质量令人满意。",
+    "meaning": "adj. 令人满意的；足够的；（旧宗教用法）赎罪的"
+  },
+  {
+    "id": 7764,
+    "example": "The museum has an exhibition about the invasion.",
+    "exampleCn": "博物馆有一个关于那次入侵的展览。"
+  },
+  {
+    "id": 7783,
+    "example": "Good communication is a desirable skill.",
+    "exampleCn": "良好的沟通能力是一项可取的技能。"
+  },
+  {
+    "id": 7799,
+    "example": "The clock has a mechanical movement.",
+    "exampleCn": "这只钟采用机械机芯。"
+  },
+  {
+    "id": 7801,
+    "example": "I am uncertain about the best route.",
+    "exampleCn": "我不确定哪条路线最好。"
+  },
+  {
+    "id": 7807,
+    "example": "He was unhappy with the result.",
+    "exampleCn": "他对结果不满意。"
+  },
+  {
+    "id": 7812,
+    "example": "We enjoyed a peaceful afternoon in the garden.",
+    "exampleCn": "我们在花园里度过了一个宁静的下午。"
+  },
+  {
+    "id": 7834,
+    "example": "She is an influential member of the team.",
+    "exampleCn": "她是团队中一位有影响力的成员。"
+  },
+  {
+    "id": 7849,
+    "example": "The machine is now fully operational.",
+    "exampleCn": "这台机器现在已经可以正常运转。",
+    "meaning": "adj. 可正常运作的；操作上的；运作的；业务上的"
+  },
+  {
+    "id": 7854,
+    "example": "That story is complete nonsense.",
+    "exampleCn": "那个故事完全是胡说八道。"
+  },
+  {
+    "id": 7858,
+    "example": "We had a lively discussion about the book.",
+    "exampleCn": "我们围绕这本书展开了热烈讨论。"
+  },
+  {
+    "id": 7859,
+    "example": "She is optimistic about the future.",
+    "exampleCn": "她对未来很乐观。"
+  },
+  {
+    "id": 7868,
+    "example": "Helping at the library is a worthwhile activity.",
+    "exampleCn": "在图书馆帮忙是一项值得做的活动。"
+  },
+  {
+    "id": 7870,
+    "example": "His conscience told him to return the money.",
+    "exampleCn": "他的良心告诉他应该把钱还回去。"
+  },
+  {
+    "id": 7873,
+    "example": "The company made a costly mistake.",
+    "exampleCn": "公司犯了一个代价高昂的错误。"
+  },
+  {
+    "id": 7881,
+    "example": "She stayed at home with a fever.",
+    "exampleCn": "她因为发烧待在家里。"
+  },
+  {
+    "id": 7885,
+    "example": "She recognized him in an instant.",
+    "exampleCn": "她一下子就认出了他。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7904,
+    "example": "There is an unpleasant smell in the kitchen.",
+    "exampleCn": "厨房里有一股难闻的气味。"
+  },
+  {
+    "id": 7906,
+    "example": "We stayed overnight at a small hotel.",
+    "exampleCn": "我们在一家小旅馆住了一夜。",
+    "pos": "adv./n./adj."
+  },
+  {
+    "id": 7911,
+    "example": "She made a noble effort to help others.",
+    "exampleCn": "她为帮助他人作出了高尚的努力。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7912,
+    "example": "The students solved a mathematical problem.",
+    "exampleCn": "学生们解答了一道数学题。"
+  },
+  {
+    "id": 7920,
+    "example": "She is fond of reading adventure stories.",
+    "exampleCn": "她喜欢读冒险故事。"
+  },
+  {
+    "id": 7923,
+    "example": "She is a competent driver.",
+    "exampleCn": "她是一位技术熟练的司机。"
+  },
+  {
+    "id": 7924,
+    "example": "She has been a faithful friend for years.",
+    "exampleCn": "多年来，她一直是一位忠实的朋友。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 7928,
+    "example": "He sounded cheerful on the phone.",
+    "exampleCn": "他在电话里听起来很高兴。"
+  },
+  {
+    "id": 7941,
+    "example": "The cafe was too noisy for conversation.",
+    "exampleCn": "这家咖啡馆太吵，不适合交谈。"
+  },
+  {
+    "id": 7963,
+    "example": "It is rude to interrupt someone.",
+    "exampleCn": "打断别人说话很不礼貌。"
+  },
+  {
+    "id": 7970,
+    "example": "We found an inexpensive hotel near the station.",
+    "exampleCn": "我们在车站附近找到了一家便宜的旅馆。"
+  },
+  {
+    "id": 7986,
+    "example": "The shop sells photographic equipment.",
+    "exampleCn": "这家商店销售摄影器材。"
+  },
+  {
+    "id": 7990,
+    "example": "The child was fearful of the dark.",
+    "exampleCn": "那个孩子怕黑。"
+  },
+  {
+    "id": 7998,
+    "example": "The seat next to me is vacant.",
+    "exampleCn": "我旁边的座位空着。"
+  },
+  {
+    "id": 8001,
+    "example": "The family faced hardship after losing their home.",
+    "exampleCn": "失去住所后，这个家庭面临困境。"
+  },
+  {
+    "id": 8008,
+    "example": "I felt helpless when the car broke down.",
+    "exampleCn": "汽车抛锚时，我感到无助。"
+  },
+  {
+    "id": 8024,
+    "example": "The weather is worse today.",
+    "exampleCn": "今天的天气更糟了。",
+    "pos": "adv./n./adj."
+  },
+  {
+    "id": 8030,
+    "example": "The damage was accidental.",
+    "exampleCn": "这次损坏是意外造成的。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8031,
+    "example": "I was ignorant of the new rules.",
+    "exampleCn": "我当时不知道这些新规定。"
+  },
+  {
+    "id": 8032,
+    "example": "The sky looked gloomy before the storm.",
+    "exampleCn": "暴风雨前，天空显得阴沉。"
+  },
+  {
+    "id": 8037,
+    "example": "The address on the package is incorrect.",
+    "exampleCn": "包裹上的地址不正确。"
+  },
+  {
+    "id": 8039,
+    "example": "The naughty puppy chewed my shoe.",
+    "exampleCn": "那只淘气的小狗咬了我的鞋。"
+  },
+  {
+    "id": 8045,
+    "example": "We stayed indoors on a rainy afternoon.",
+    "exampleCn": "在一个下雨的下午，我们待在室内。"
+  },
+  {
+    "id": 8056,
+    "example": "Be careful on the slippery floor.",
+    "exampleCn": "地板很滑，请小心。"
+  },
+  {
+    "id": 8064,
+    "example": "We need a practicable plan for the project.",
+    "exampleCn": "我们需要一个切实可行的项目计划。"
+  },
+  {
+    "id": 8074,
+    "example": "The students were respectful to their teacher.",
+    "exampleCn": "学生们对老师很尊敬。"
+  },
+  {
+    "id": 8080,
+    "example": "Our host was gracious to every guest.",
+    "exampleCn": "主人对每一位客人都很亲切。"
+  },
+  {
+    "id": 8083,
+    "example": "They made a solemn promise to help.",
+    "exampleCn": "他们郑重承诺提供帮助。"
+  },
+  {
+    "id": 8089,
+    "example": "The broken watch is worthless.",
+    "exampleCn": "那只坏表一文不值。"
+  },
+  {
+    "id": 8092,
+    "example": "We had to tramp through the mud.",
+    "exampleCn": "我们不得不踩着泥泞艰难前行。",
+    "pos": "v./n."
+  },
+  {
+    "id": 8093,
+    "example": "The club holds a yearly meeting.",
+    "exampleCn": "俱乐部每年召开一次会议。",
+    "pos": "adv./adj."
+  },
+  {
+    "id": 8099,
+    "example": "The sly fox stole food from the garden.",
+    "exampleCn": "那只狡猾的狐狸偷走了花园里的食物。"
+  },
+  {
+    "id": 8102,
+    "example": "We rested in a shady corner of the garden.",
+    "exampleCn": "我们在花园一个荫凉的角落休息。"
+  },
+  {
+    "id": 8104,
+    "example": "The students were attentive during the lesson.",
+    "exampleCn": "学生们上课时很专心。"
+  },
+  {
+    "id": 8105,
+    "example": "He told a humorous story at dinner.",
+    "exampleCn": "他在晚餐时讲了一个幽默的故事。"
+  },
+  {
+    "id": 8110,
+    "example": "The broken lock is troublesome.",
+    "exampleCn": "这把坏锁很让人头疼。"
+  },
+  {
+    "id": 8111,
+    "example": "The gate is old and rusty.",
+    "exampleCn": "这扇大门又旧又生锈。"
+  },
+  {
+    "id": 8114,
+    "example": "The players thought the decision was unjust.",
+    "exampleCn": "球员们认为这个决定不公平。"
+  },
+  {
+    "id": 8116,
+    "example": "He made a vain attempt to open the door.",
+    "exampleCn": "他试图打开门，却没有成功。"
+  },
+  {
+    "id": 8121,
+    "example": "The fabric is soft and elastic.",
+    "exampleCn": "这种面料柔软而有弹性。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8140,
+    "example": "The victorious team lifted the trophy.",
+    "exampleCn": "获胜的球队举起了奖杯。"
+  },
+  {
+    "id": 8147,
+    "example": "She was indignant about the unfair decision.",
+    "exampleCn": "她对这个不公平的决定感到愤慨。"
+  },
+  {
+    "id": 8159,
+    "example": "She gave us a cordial welcome.",
+    "exampleCn": "她热情地欢迎了我们。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8177,
+    "example": "The group studies environmental problems.",
+    "exampleCn": "这个小组研究环境问题。"
+  },
+  {
+    "id": 8205,
+    "example": "She works in clinical research at a hospital.",
+    "exampleCn": "她在一家医院从事临床研究。"
+  },
+  {
+    "id": 8221,
+    "example": "The school has excellent athletic facilities.",
+    "exampleCn": "这所学校有很好的体育设施。"
+  },
+  {
+    "id": 8249,
+    "example": "The restaurant serves superb food.",
+    "exampleCn": "这家餐馆的饭菜非常出色。"
+  },
+  {
+    "id": 8254,
+    "example": "The manager denied the allegation.",
+    "exampleCn": "经理否认了这项指控。"
+  },
+  {
+    "id": 8265,
+    "example": "She works in the diplomatic service.",
+    "exampleCn": "她从事外交工作。"
+  },
+  {
+    "id": 8270,
+    "example": "The teacher chose a name at random.",
+    "exampleCn": "老师随机选了一个名字。",
+    "pos": "adv./n./adj."
+  },
+  {
+    "id": 8274,
+    "example": "He visited a doctor for chronic back pain.",
+    "exampleCn": "他因长期背痛去看了医生。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8276,
+    "example": "The council approved the adoption of the new plan.",
+    "exampleCn": "委员会批准采用这项新计划。"
+  },
+  {
+    "id": 8285,
+    "example": "They had a meaningful conversation about their future.",
+    "exampleCn": "他们就自己的未来进行了一次有意义的交谈。",
+    "meaning": "adj. 有意义的；有价值的；意味深长的"
+  },
+  {
+    "id": 8314,
+    "example": "The notice gives details of the forthcoming meeting.",
+    "exampleCn": "通知介绍了即将召开的会议的详情。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8315,
+    "example": "The blanket is made from virgin wool.",
+    "exampleCn": "这条毯子由初次使用的纯羊毛制成。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8319,
+    "example": "The company faced bankruptcy after years of losses.",
+    "exampleCn": "连年亏损后，这家公司面临破产。",
+    "meaning": "n. 破产；倒闭；（比喻）彻底缺乏"
+  },
+  {
+    "id": 8328,
+    "example": "The film tells a tragic story.",
+    "exampleCn": "这部电影讲述了一个悲惨的故事。"
+  },
+  {
+    "id": 8342,
+    "example": "We saw a shark at the aquarium.",
+    "exampleCn": "我们在水族馆里看到了一条鲨鱼。",
+    "pos": "v./n."
+  },
+  {
+    "id": 8346,
+    "example": "The singer practices vocal exercises every morning.",
+    "exampleCn": "这位歌手每天早上练声。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8353,
+    "example": "We had dreadful weather during the trip.",
+    "exampleCn": "旅行期间的天气糟透了。"
+  },
+  {
+    "id": 8366,
+    "example": "The report described the prison's brutal conditions.",
+    "exampleCn": "这份报告描述了监狱里残酷的生活条件。"
+  },
+  {
+    "id": 8369,
+    "example": "Please leave your shoes at the threshold.",
+    "exampleCn": "请把鞋留在门槛边。"
+  },
+  {
+    "id": 8373,
+    "example": "We had a fantastic time at the beach.",
+    "exampleCn": "我们在海滩上玩得非常开心。"
+  },
+  {
+    "id": 8378,
+    "example": "He has blond hair and brown eyes.",
+    "exampleCn": "他有金色头发和棕色眼睛。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8384,
+    "example": "The diagram shows the molecular structure of water.",
+    "exampleCn": "这张图展示了水的分子结构。"
+  },
+  {
+    "id": 8396,
+    "example": "The school follows an orthodox teaching method.",
+    "exampleCn": "这所学校采用传统的教学方法。"
+  },
+  {
+    "id": 8409,
+    "example": "She joined the medical corps last year.",
+    "exampleCn": "她去年加入了医疗队。"
+  },
+  {
+    "id": 8422,
+    "example": "The report gave a grim picture of the damage.",
+    "exampleCn": "这份报告呈现了令人担忧的受损状况。",
+    "meaning": "adj. 严峻的；令人担忧的；冷酷的；坚定的；可怕的"
+  },
+  {
+    "id": 8430,
+    "example": "The old door began to rattle in the wind.",
+    "exampleCn": "旧门开始在风中咯咯作响。",
+    "pos": "v./n."
+  },
+  {
+    "id": 8432,
+    "example": "The garden looks gorgeous in spring.",
+    "exampleCn": "这座花园在春天看起来很美。"
+  },
+  {
+    "id": 8441,
+    "example": "I sent the photo as an email attachment.",
+    "exampleCn": "我把照片作为电子邮件附件发了出去。"
+  },
+  {
+    "id": 8464,
+    "example": "The novel describes bourgeois life in the city.",
+    "exampleCn": "这部小说描写了城市中产阶级的生活。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8477,
+    "example": "I ate a bowl of cereal for breakfast.",
+    "exampleCn": "我早餐吃了一碗麦片。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8511,
+    "example": "The old printer is incapable of printing photos.",
+    "exampleCn": "这台旧打印机无法打印照片。"
+  },
+  {
+    "id": 8512,
+    "example": "You need a token to use this machine.",
+    "exampleCn": "使用这台机器需要一枚代币。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8514,
+    "example": "It is premature to make a decision now.",
+    "exampleCn": "现在作决定为时过早。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8539,
+    "example": "The equipment must pass rigorous tests.",
+    "exampleCn": "这些设备必须通过严格测试。"
+  },
+  {
+    "id": 8540,
+    "example": "We need a sturdy table for the workshop.",
+    "exampleCn": "工作间需要一张结实的桌子。",
+    "meaning": "a. 结实的, 强健的, 健全的\\n[医] 羊晕倒病, 羊蹒跚病"
+  },
+  {
+    "id": 8547,
+    "example": "The teacher used a diagnostic test.",
+    "exampleCn": "老师进行了一次诊断性测试。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8571,
+    "example": "The old roof is susceptible to damage.",
+    "exampleCn": "旧屋顶很容易受损。"
+  },
+  {
+    "id": 8572,
+    "example": "The lesson explains how immunity works.",
+    "exampleCn": "这节课解释了免疫的运作原理。"
+  },
+  {
+    "id": 8577,
+    "example": "The rope became slack when he let go.",
+    "exampleCn": "他一松手，绳子就松了。",
+    "pos": "adv./n./adj./v."
+  },
+  {
+    "id": 8579,
+    "example": "He gave us a benign smile.",
+    "exampleCn": "他朝我们和善地笑了笑。"
+  },
+  {
+    "id": 8593,
+    "example": "The postal service delivers letters every weekday.",
+    "exampleCn": "邮政部门每个工作日都投递信件。"
+  },
+  {
+    "id": 8598,
+    "example": "The filter removes residual dirt from the water.",
+    "exampleCn": "过滤器去除水中残留的污物。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8608,
+    "example": "The teacher explained the scientific terminology.",
+    "exampleCn": "老师解释了这些科学术语。"
+  },
+  {
+    "id": 8613,
+    "example": "The jacket has a masculine style.",
+    "exampleCn": "这件夹克带有男性化的风格。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8616,
+    "example": "The speaker asked a provocative question.",
+    "exampleCn": "演讲者提出了一个发人深省的问题。",
+    "meaning": "adj. 引发思考或反应的；挑衅的；刺激的；n. 刺激物；挑拨物",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8620,
+    "example": "The box has an intricate design.",
+    "exampleCn": "这个盒子的设计很复杂。"
+  },
+  {
+    "id": 8624,
+    "example": "The test revealed her latent talent.",
+    "exampleCn": "这次测试显示了她潜在的才能。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8630,
+    "example": "The road has a steep gradient.",
+    "exampleCn": "这条路的坡度很陡。"
+  },
+  {
+    "id": 8639,
+    "example": "He is too stubborn to change his mind.",
+    "exampleCn": "他太固执，不肯改变主意。"
+  },
+  {
+    "id": 8646,
+    "example": "Her mastery of the language impressed us.",
+    "exampleCn": "她对这门语言的精通让我们印象深刻。"
+  },
+  {
+    "id": 8647,
+    "example": "His arrogant manner upset his colleagues.",
+    "exampleCn": "他傲慢的态度让同事们不快。"
+  },
+  {
+    "id": 8667,
+    "example": "Several bills are still unpaid.",
+    "exampleCn": "几张账单仍未支付。"
+  },
+  {
+    "id": 8673,
+    "example": "The old chair is too frail to use.",
+    "exampleCn": "这把旧椅子太脆弱，不能再用了。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8675,
+    "example": "The two programs are incompatible with each other.",
+    "exampleCn": "这两个程序互不兼容。"
+  },
+  {
+    "id": 8692,
+    "example": "We roasted a chestnut over the fire.",
+    "exampleCn": "我们在火上烤了一颗栗子。",
+    "pos": "n./adj."
+  },
+  {
+    "id": 8694,
+    "example": "We took a roundabout route to the station.",
+    "exampleCn": "我们绕道去了车站。",
+    "pos": "n./adj."
+  }
+]

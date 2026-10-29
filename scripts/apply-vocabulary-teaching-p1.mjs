@@ -10,6 +10,13 @@ const hash = value => createHash('sha256').update(value).digest('hex');
 const serialize = value => JSON.stringify(value, null, 2) + '\n';
 const vocabularyPath = new URL('public/data/vocabulary.json', root);
 const raw = await readFile(vocabularyPath, 'utf8'), vocabulary = JSON.parse(raw);
+let laterShortExamples;
+try { laterShortExamples = await read('data/vocabulary-short-example-repair/reviews-2026-10-29.json'); }
+catch (error) { if (error.code !== 'ENOENT') throw error; }
+if (laterShortExamples && hash(serialize(vocabulary)) === laterShortExamples.afterSha256) {
+  console.log('Preserving the later registered short-example repairs.');
+  process.exit(0);
+}
 let laterP2;
 try { laterP2 = await read('data/vocabulary-p2-repair/reviews-2026-10-29.json'); }
 catch (error) { if (error.code !== 'ENOENT') throw error; }
