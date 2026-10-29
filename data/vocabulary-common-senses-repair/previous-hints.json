@@ -1,0 +1,356 @@
+{
+  "4002": [
+    {
+      "label": "用法提示",
+      "scope": "名词 · 平均值",
+      "text": "统计中通常指算术平均数，可说the mean of；不同于取中间位置的中位数。",
+      "examples": [
+        {
+          "en": "The mean of these values is six.",
+          "zh": "这些数的平均值是六。"
+        },
+        {
+          "en": "Calculate the mean before drawing the graph.",
+          "zh": "画图前先计算平均值。"
+        }
+      ],
+      "exampleWords": [
+        "mean"
+      ],
+      "sources": [
+        {
+          "id": "e8-source-mean",
+          "title": "剑桥词典 · mean",
+          "url": "https://dictionary.cambridge.org/dictionary/english/mean",
+          "checkedAt": "2026-10-24",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  ],
+  "4058": [
+    {
+      "label": "用法提示",
+      "scope": "名词 · 要点；观点",
+      "text": "表达讨论中的想法或重点时可数；make a point指提出观点，get the point指领会意思。",
+      "examples": [
+        {
+          "en": "Your final point deserves more discussion.",
+          "zh": "你最后的观点值得进一步讨论。"
+        },
+        {
+          "en": "I understand the point of this exercise.",
+          "zh": "我明白这项练习的目的。"
+        }
+      ],
+      "exampleWords": [
+        "point"
+      ],
+      "sources": [
+        {
+          "id": "e8-source-point",
+          "title": "剑桥词典 · point",
+          "url": "https://dictionary.cambridge.org/dictionary/english/point",
+          "checkedAt": "2026-10-24",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  ],
+  "4326": [
+    {
+      "label": "用法提示",
+      "scope": "名词 · 比赛",
+      "text": "本处指比速度的赛事，可数；win a race表示获胜，参加则用enter或take part in。",
+      "examples": [
+        {
+          "en": "The race starts beside the lighthouse.",
+          "zh": "比赛在灯塔旁开始。"
+        },
+        {
+          "en": "She entered a five-kilometre race.",
+          "zh": "她报名参加了五公里赛跑。"
+        }
+      ],
+      "exampleWords": [
+        "race"
+      ],
+      "sources": [
+        {
+          "id": "e8-source-race",
+          "title": "剑桥词典 · race",
+          "url": "https://dictionary.cambridge.org/dictionary/english/race",
+          "checkedAt": "2026-10-24",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  ],
+  "4378": [
+    {
+      "label": "用法提示",
+      "scope": "名词 · 火柴；比赛",
+      "text": "一根火柴可数，strike a match表示划火柴；运动义一场比赛也可数，依语境区分。",
+      "examples": [
+        {
+          "en": "The match went out in the wind.",
+          "zh": "火柴被风吹灭了。"
+        },
+        {
+          "en": "We struck a match to light the stove.",
+          "zh": "我们划火柴点炉子。"
+        }
+      ],
+      "exampleWords": [
+        "match"
+      ],
+      "sources": [
+        {
+          "id": "e8-source-match",
+          "title": "剑桥词典 · match",
+          "url": "https://dictionary.cambridge.org/dictionary/english/match",
+          "checkedAt": "2026-10-24",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  ],
+  "4384": [
+    {
+      "label": "用法提示",
+      "scope": "名词 · 封面；罩子",
+      "text": "可数时可指书籍封面或保护物的罩子；the cover of说明所附属物，与正文内容区分。",
+      "examples": [
+        {
+          "en": "The cover shows a coastal village.",
+          "zh": "封面展示一个沿海村庄。"
+        },
+        {
+          "en": "Put a cover over the equipment.",
+          "zh": "给设备盖上罩子。"
+        }
+      ],
+      "exampleWords": [
+        "cover"
+      ],
+      "sources": [
+        {
+          "id": "e8-source-cover",
+          "title": "剑桥词典 · cover",
+          "url": "https://dictionary.cambridge.org/dictionary/english/cover",
+          "checkedAt": "2026-10-24",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  ],
+  "4416": [
+    {
+      "label": "用法提示",
+      "scope": "名词 · 罐；情态动词 · 能",
+      "text": "容器义可数，a can of后接内容物；表示能力时can后接动词原形，不加to。",
+      "examples": [
+        {
+          "en": "A can of beans is on the shelf.",
+          "zh": "一罐豆子在架子上。"
+        },
+        {
+          "en": "We can repair the broken latch.",
+          "zh": "我们能修好坏门闩。"
+        }
+      ],
+      "exampleWords": [
+        "can"
+      ],
+      "sources": [
+        {
+          "id": "e8-source-can",
+          "title": "剑桥词典 · can",
+          "url": "https://dictionary.cambridge.org/dictionary/english/can",
+          "checkedAt": "2026-10-24",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  ],
+  "5451": [
+    {
+      "label": "近义词辨析",
+      "scope": "动词 · 喜欢、从中获得乐趣",
+      "emphasis": "enjoy",
+      "text": "enjoy：like 可表达一般喜好；enjoy 常强调某项活动或经历带来的乐趣。enjoy 后接动作时用 -ing 形式，不直接接 to do。",
+      "examples": [
+        {
+          "en": "I like short stories with surprising endings.",
+          "zh": "我喜欢结尾出人意料的短篇故事。"
+        },
+        {
+          "en": "We enjoy reading them aloud after dinner.",
+          "zh": "我们喜欢在晚饭后大声读这些故事。"
+        }
+      ],
+      "exampleWords": [
+        "like",
+        "enjoy"
+      ],
+      "sources": [
+        {
+          "id": "daily-enjoy",
+          "title": "剑桥词典 · enjoy",
+          "url": "https://dictionary.cambridge.org/dictionary/english/enjoy",
+          "checkedAt": "2026-10-23",
+          "use": "factual-reference"
+        }
+      ]
+    },
+    {
+      "label": "词根词缀",
+      "scope": "词族拓展 · like → dislike",
+      "emphasis": "dis- + like → dislike",
+      "text": "dis- + like → dislike。dis- 在这里表示否定；dislike 表示不喜欢。前缀与完整词基 like 组合。",
+      "sources": [
+        {
+          "id": "prefixes",
+          "title": "剑桥语法 · 前缀",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/prefixes",
+          "checkedAt": "2026-10-23",
+          "use": "factual-reference"
+        },
+        {
+          "id": "daily-enjoy",
+          "title": "剑桥词典 · enjoy",
+          "url": "https://dictionary.cambridge.org/dictionary/english/enjoy",
+          "checkedAt": "2026-10-23",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  ],
+  "5596": [
+    {
+      "label": "近义词辨析",
+      "scope": "形容词 · 待人友善",
+      "emphasis": "friendly",
+      "text": "friendly：kind 强调体贴、愿意帮助别人；friendly 强调交往时亲切友好。本条不适用于 kind 作名词表示“种类”的用法。",
+      "examples": [
+        {
+          "en": "It was kind of Ben to carry my heavy bag upstairs.",
+          "zh": "本帮我把沉重的包提上楼，真体贴。"
+        },
+        {
+          "en": "The receptionist gave every visitor a friendly greeting.",
+          "zh": "接待员友好地问候了每位来访者。"
+        }
+      ],
+      "exampleWords": [
+        "kind",
+        "friendly"
+      ],
+      "sources": [
+        {
+          "id": "kind",
+          "title": "剑桥词典 · kind",
+          "url": "https://dictionary.cambridge.org/dictionary/english/kind",
+          "checkedAt": "2026-10-23",
+          "use": "factual-reference"
+        },
+        {
+          "id": "friendly",
+          "title": "剑桥词典 · friendly",
+          "url": "https://dictionary.cambridge.org/dictionary/english/friendly",
+          "checkedAt": "2026-10-23",
+          "use": "factual-reference"
+        }
+      ]
+    },
+    {
+      "label": "词根词缀",
+      "scope": "词族拓展 · kind → unkind",
+      "emphasis": "un- + kind → unkind",
+      "text": "un- + kind → unkind。以形容词 kind（体贴的）为词基，un- 表示否定，unkind 表示不友善的；与名词 kind（种类）无关。",
+      "sources": [
+        {
+          "id": "prefixes",
+          "title": "剑桥语法 · 前缀",
+          "url": "https://dictionary.cambridge.org/us/grammar/british-grammar/prefixes",
+          "checkedAt": "2026-10-23",
+          "use": "factual-reference"
+        },
+        {
+          "id": "kind",
+          "title": "剑桥词典 · kind",
+          "url": "https://dictionary.cambridge.org/dictionary/english/kind",
+          "checkedAt": "2026-10-23",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  ],
+  "5709": [
+    {
+      "label": "易混词辨析",
+      "scope": "形容词 · 光线足、浅色与明亮",
+      "emphasis": "bright",
+      "text": "bright：light 作形容词可指光线充足或颜色浅；bright 在发光义下强调明亮或反光强。light 的重量轻义和 bright 的聪明义不属于这里的比较范围。",
+      "examples": [
+        {
+          "en": "The kitchen is light because it has two large windows.",
+          "zh": "厨房有两扇大窗户，因此光线充足。"
+        },
+        {
+          "en": "A bright lamp helps me read at night.",
+          "zh": "一盏明亮的灯方便我晚上阅读。"
+        }
+      ],
+      "exampleWords": [
+        "light",
+        "bright"
+      ],
+      "sources": [
+        {
+          "id": "expansion-mw-light",
+          "title": "韦氏词典 · light",
+          "url": "https://www.merriam-webster.com/dictionary/light",
+          "checkedAt": "2026-10-23",
+          "use": "factual-reference"
+        },
+        {
+          "id": "expansion-mw-bright",
+          "title": "韦氏词典 · bright",
+          "url": "https://www.merriam-webster.com/dictionary/bright",
+          "checkedAt": "2026-10-23",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  ],
+  "5721": [
+    {
+      "label": "用法提示",
+      "scope": "名词 · 手臂",
+      "text": "表示人体部位时可数，可用 left 或 right 指明一侧；不要把武器义的复数 arms 套入本义。",
+      "examples": [
+        {
+          "en": "He carried the blankets under one arm.",
+          "zh": "他把毯子夹在一条胳膊下。"
+        },
+        {
+          "en": "The child held her father's arm on the steps.",
+          "zh": "孩子在台阶上挽着父亲的胳膊。"
+        }
+      ],
+      "exampleWords": [
+        "arm"
+      ],
+      "sources": [
+        {
+          "id": "e6-source-arm",
+          "title": "剑桥词典 · arm",
+          "url": "https://dictionary.cambridge.org/dictionary/english/arm",
+          "checkedAt": "2026-10-24",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  ]
+}

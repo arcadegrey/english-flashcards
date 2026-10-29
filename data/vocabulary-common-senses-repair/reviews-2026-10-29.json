@@ -1,0 +1,551 @@
+{
+  "date": "2026-10-29",
+  "batch": "2026-10-29-common-senses",
+  "scope": "Exactly ten existing coverage-review IDs; no additions, reclassification or personal-data migration.",
+  "baselineSha256": "fda962f32cb674b1610af43715d4147616570a7c0c3defd654d1a1a3f9e445a6",
+  "afterSha256": "8fa31adcf6b64f9dd9e5c1cef7bf29fd2fa3302c30a3ff69f6e9bcf50655f6ba",
+  "sources": [
+    {
+      "id": 4416,
+      "word": "can",
+      "url": "https://www.merriam-webster.com/dictionary/can",
+      "checkedAt": "2026-10-29",
+      "fact": "情态动词 · 能、可以；名词 · 罐。can 后接动词原形，不加 to；第三人称单数也不加 -s。容器义用 a can of 加内容物。",
+      "method": "Dictionary entry read; Chinese glosses, teaching notes and examples independently authored. Cambridge fetch returned 403, not used as newly verified evidence."
+    },
+    {
+      "id": 4002,
+      "word": "mean",
+      "url": "https://www.merriam-webster.com/dictionary/mean",
+      "checkedAt": "2026-10-29",
+      "fact": "动词 · 意思是、打算；兼有名词和形容词。询问词义可用 What does ... mean?；mean to do 表示打算做。mean 作名词可指平均值，形容词可指吝啬、刻薄或平均的，需按语境区分。",
+      "method": "Dictionary entry read; Chinese glosses, teaching notes and examples independently authored. Cambridge fetch returned 403, not used as newly verified evidence."
+    },
+    {
+      "id": 4384,
+      "word": "cover",
+      "url": "https://www.merriam-webster.com/dictionary/cover",
+      "checkedAt": "2026-10-29",
+      "fact": "动词 · 覆盖、包括；名词 · 封面、盖子。cover A with B 表示用 B 盖住 A；cover 也可表示课程或书籍涉及某个主题。名词义指封面、盖子或罩子。",
+      "method": "Dictionary entry read; Chinese glosses, teaching notes and examples independently authored. Cambridge fetch returned 403, not used as newly verified evidence."
+    },
+    {
+      "id": 4378,
+      "word": "match",
+      "url": "https://www.merriam-webster.com/dictionary/match",
+      "checkedAt": "2026-10-29",
+      "fact": "动词 · 相配、配对；名词 · 火柴、比赛。表示颜色或样式相配时，match 可直接接对象；match A with B 表示将两者配对。火柴和比赛是不同的名词义。",
+      "method": "Dictionary entry read; Chinese glosses, teaching notes and examples independently authored. Cambridge fetch returned 403, not used as newly verified evidence."
+    },
+    {
+      "id": 4058,
+      "word": "point",
+      "url": "https://www.merriam-webster.com/dictionary/point",
+      "checkedAt": "2026-10-29",
+      "fact": "动词 · 指向；名词 · 要点、点、分数。point to 或 point at 后可接所指对象；point out 表示指出。名词 point 依语境可指要点、观点、位置上的点、尖端或分数。",
+      "method": "Dictionary entry read; Chinese glosses, teaching notes and examples independently authored. Cambridge fetch returned 403, not used as newly verified evidence."
+    },
+    {
+      "id": 4326,
+      "word": "race",
+      "url": "https://www.merriam-webster.com/dictionary/race",
+      "checkedAt": "2026-10-29",
+      "fact": "动词 · 比速度、疾行；名词 · 竞赛、族群。race 可作动词，表示与人比速度或快速移动；作名词时既可指竞赛，也可指种族或族群。后一义与比赛无关，不表示优劣之分。",
+      "method": "Dictionary entry read; Chinese glosses, teaching notes and examples independently authored. Cambridge fetch returned 403, not used as newly verified evidence."
+    },
+    {
+      "id": 5721,
+      "word": "arm",
+      "url": "https://www.merriam-webster.com/dictionary/arm",
+      "checkedAt": "2026-10-29",
+      "fact": "名词 · 手臂；动词 · 装备。人体的手臂可数；机械上的臂状部件也可叫 arm。武器义通常用复数 arms。arm 作动词表示武装或装备，可用 arm someone with something。",
+      "method": "Dictionary entry read; Chinese glosses, teaching notes and examples independently authored. Cambridge fetch returned 403, not used as newly verified evidence."
+    },
+    {
+      "id": 5451,
+      "word": "like",
+      "url": "https://www.merriam-webster.com/dictionary/like",
+      "checkedAt": "2026-10-29",
+      "fact": "动词 · 喜欢；介词 · 像。like 作动词表示喜欢，可接名词、-ing 或 to do；would like 表示想要。介词 like 表示像或例如，不能只凭拼写把它们当成同一种词性。",
+      "method": "Dictionary entry read; Chinese glosses, teaching notes and examples independently authored. Cambridge fetch returned 403, not used as newly verified evidence."
+    },
+    {
+      "id": 5709,
+      "word": "light",
+      "url": "https://www.merriam-webster.com/dictionary/light",
+      "checkedAt": "2026-10-29",
+      "fact": "形容词、名词、动词与副词 · 根据搭配区分。light 可指重量轻、颜色浅或光线足；名词指光或灯，动词可指点燃或照亮。travel light 中是副词，表示少带行李，不是把所有 light 都标成副词。",
+      "method": "Dictionary entry read; Chinese glosses, teaching notes and examples independently authored. Cambridge fetch returned 403, not used as newly verified evidence."
+    },
+    {
+      "id": 5596,
+      "word": "kind",
+      "url": "https://www.merriam-webster.com/dictionary/kind",
+      "checkedAt": "2026-10-29",
+      "fact": "形容词 · 友善；名词 · 种类。be kind to someone 表示对某人友善；a kind of 后接事物，表示一种。词族 unkind 来自形容词 kind，与种类名词无关。",
+      "method": "Dictionary entry read; Chinese glosses, teaching notes and examples independently authored. Cambridge fetch returned 403, not used as newly verified evidence."
+    }
+  ],
+  "reviews": [
+    {
+      "id": 4416,
+      "word": "can",
+      "checkedAt": "2026-10-29",
+      "status": "resolved_local_text",
+      "changedFields": [
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "audioFields": [
+        "example"
+      ],
+      "before": {
+        "id": 4416,
+        "word": "can",
+        "phonetic": "kæn",
+        "pos": "n.",
+        "meaning": "罐头/金属罐",
+        "example": "He opened a can of soup for lunch.",
+        "exampleCn": "他开了一罐汤当午饭。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "27",
+        "ieltsLists": [
+          "27"
+        ]
+      },
+      "after": {
+        "id": 4416,
+        "word": "can",
+        "phonetic": "kæn",
+        "pos": "modal v. / n.",
+        "meaning": "modal v. 能；会；可以（表示能力、可能或许可）\nn. 金属罐；一罐（食物或饮料）",
+        "example": "I can carry this bag for you.",
+        "exampleCn": "我可以帮你提这个包。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "27",
+        "ieltsLists": [
+          "27"
+        ]
+      }
+    },
+    {
+      "id": 4002,
+      "word": "mean",
+      "checkedAt": "2026-10-29",
+      "status": "resolved_local_text",
+      "changedFields": [
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "audioFields": [
+        "example"
+      ],
+      "before": {
+        "id": 4002,
+        "word": "mean",
+        "phonetic": "miːn",
+        "pos": "n.",
+        "meaning": "平均数/平均值",
+        "example": "The mean of these three numbers is twenty.",
+        "exampleCn": "这三个数的平均数是二十。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "14",
+        "ieltsLists": [
+          "14"
+        ]
+      },
+      "after": {
+        "id": 4002,
+        "word": "mean",
+        "phonetic": "miːn",
+        "pos": "v. / n. / adj.",
+        "meaning": "v. 意思是；意味着；意指；打算\nn. 平均数；平均值\nadj. 吝啬的；刻薄的；平均的",
+        "example": "What does this word mean?",
+        "exampleCn": "这个词是什么意思？",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "14",
+        "ieltsLists": [
+          "14"
+        ]
+      }
+    },
+    {
+      "id": 4384,
+      "word": "cover",
+      "checkedAt": "2026-10-29",
+      "status": "resolved_local_text",
+      "changedFields": [
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "audioFields": [
+        "example"
+      ],
+      "before": {
+        "id": 4384,
+        "word": "cover",
+        "phonetic": "ˈkʌvə",
+        "pos": "n.",
+        "meaning": "封面/盖子",
+        "example": "The book has a colourful cover.",
+        "exampleCn": "这本书有一个彩色的封面。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "26",
+        "ieltsLists": [
+          "26"
+        ]
+      },
+      "after": {
+        "id": 4384,
+        "word": "cover",
+        "phonetic": "ˈkʌvə",
+        "pos": "v. / n.",
+        "meaning": "v. 覆盖；盖上；包括；涉及\nn. 封面；盖子；罩子",
+        "example": "Please cover the food with a clean cloth.",
+        "exampleCn": "请用一块干净的布盖住食物。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "26",
+        "ieltsLists": [
+          "26"
+        ]
+      }
+    },
+    {
+      "id": 4378,
+      "word": "match",
+      "checkedAt": "2026-10-29",
+      "status": "resolved_local_text",
+      "changedFields": [
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "audioFields": [
+        "example"
+      ],
+      "before": {
+        "id": 4378,
+        "word": "match",
+        "phonetic": "mætʃ",
+        "pos": "n.",
+        "meaning": "火柴/比赛",
+        "example": "He struck a match to light the candle.",
+        "exampleCn": "他划了一根火柴点燃了蜡烛。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "26",
+        "ieltsLists": [
+          "26"
+        ]
+      },
+      "after": {
+        "id": 4378,
+        "word": "match",
+        "phonetic": "mætʃ",
+        "pos": "v. / n.",
+        "meaning": "v. 与……相配；匹配；使配对\nn. 火柴；比赛；相配的人或物",
+        "example": "Your shoes match your coat.",
+        "exampleCn": "你的鞋子和外套很相配。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "26",
+        "ieltsLists": [
+          "26"
+        ]
+      }
+    },
+    {
+      "id": 4058,
+      "word": "point",
+      "checkedAt": "2026-10-29",
+      "status": "resolved_local_text",
+      "changedFields": [
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "audioFields": [
+        "example"
+      ],
+      "before": {
+        "id": 4058,
+        "word": "point",
+        "phonetic": "pɔɪnt",
+        "pos": "n.",
+        "meaning": "要点/观点",
+        "example": "He made several important points during the discussion.",
+        "exampleCn": "他在讨论中提出了几个重要的观点。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "16",
+        "ieltsLists": [
+          "16"
+        ]
+      },
+      "after": {
+        "id": 4058,
+        "word": "point",
+        "phonetic": "pɔɪnt",
+        "pos": "v. / n.",
+        "meaning": "v. 指向；指；指明\nn. 要点；观点；点；尖端；分数",
+        "example": "Please point to your name on the list.",
+        "exampleCn": "请指一下名单上你的名字。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "16",
+        "ieltsLists": [
+          "16"
+        ]
+      }
+    },
+    {
+      "id": 4326,
+      "word": "race",
+      "checkedAt": "2026-10-29",
+      "status": "resolved_local_text",
+      "changedFields": [
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "audioFields": [
+        "example"
+      ],
+      "before": {
+        "id": 4326,
+        "word": "race",
+        "phonetic": "reɪs",
+        "pos": "n.",
+        "meaning": "赛跑/竞赛",
+        "example": "She won the hundred-metre race by a narrow margin.",
+        "exampleCn": "她以微弱的优势赢得了百米赛跑。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "24",
+        "ieltsLists": [
+          "24",
+          "39"
+        ]
+      },
+      "after": {
+        "id": 4326,
+        "word": "race",
+        "phonetic": "reɪs",
+        "pos": "v. / n.",
+        "meaning": "v. 赛跑；参加竞速比赛；快速移动\nn. 赛跑；竞赛；种族；族群",
+        "example": "We race each other across the playground.",
+        "exampleCn": "我们在操场上互相比赛跑步。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "24",
+        "ieltsLists": [
+          "24",
+          "39"
+        ]
+      }
+    },
+    {
+      "id": 5721,
+      "word": "arm",
+      "checkedAt": "2026-10-29",
+      "status": "resolved_local_text",
+      "changedFields": [
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "audioFields": [
+        "example"
+      ],
+      "before": {
+        "id": 5721,
+        "word": "arm",
+        "phonetic": "ɑ:m",
+        "pos": "v.",
+        "meaning": "n. 手臂, 袖子, 狭长港湾, 武器\\nvt. 武装, 装备\\nvi. 武装起来\\n[计] 异步应答方式; 自动货品销路管理",
+        "example": "The arm of the record player.",
+        "exampleCn": "唱片播放器的手臂。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5721,
+        "word": "arm",
+        "phonetic": "ɑ:m",
+        "pos": "n. / v.",
+        "meaning": "n. 手臂；扶手；机械臂；袖子；狭长港湾；武器（通常用复数 arms）\nv. 武装；装备",
+        "example": "She held the baby in one arm.",
+        "exampleCn": "她用一只手臂抱着宝宝。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      }
+    },
+    {
+      "id": 5451,
+      "word": "like",
+      "checkedAt": "2026-10-29",
+      "status": "resolved_local_text",
+      "changedFields": [
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "audioFields": [
+        "example"
+      ],
+      "before": {
+        "id": 5451,
+        "word": "like",
+        "phonetic": "laik",
+        "pos": "prep.",
+        "meaning": "a. 相似的, 同样的\\nvt. 喜欢, 愿意, 想\\nvi. 喜欢, 希望\\nn. 爱好, 同样的人(或物)\\nprep. 象, 如同\\nadv. 可能",
+        "example": "Dogs, foxes, and the like.",
+        "exampleCn": "狗、狐狸等。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5451,
+        "word": "like",
+        "phonetic": "laik",
+        "pos": "v. / prep. / adj. / n. / adv.",
+        "meaning": "v. 喜欢；想要（常用 would like）\nprep. 像；如同；例如\nadj. 相似的；同样的\nn. 喜好；同样的人或物\nadv. 大约（非正式）；可能（方言用法）",
+        "example": "I like reading before bed.",
+        "exampleCn": "我喜欢在睡前阅读。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      }
+    },
+    {
+      "id": 5709,
+      "word": "light",
+      "checkedAt": "2026-10-29",
+      "status": "resolved_local_text",
+      "changedFields": [
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "audioFields": [
+        "example"
+      ],
+      "before": {
+        "id": 5709,
+        "word": "light",
+        "phonetic": "lait",
+        "pos": "adv.",
+        "meaning": "n. 光, 光亮, 灯, 日光, 发光体, 光源, 杰出人物, 火花, 眼光\\na. 轻的, 少量的, 轻微的, 轻快的, 轻浮的, 明亮的, 淡色的, 容易的\\nvt. 点燃, 照亮\\nvi. 点着, 变亮, 突降, 偶然碰到\\nadv.",
+        "example": "The light was filtered through a soft glass window.",
+        "exampleCn": "通过柔软的玻璃窗过滤光线。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5709,
+        "word": "light",
+        "phonetic": "lait",
+        "pos": "adj. / n. / v. / adv.",
+        "meaning": "adj. 轻的；少量的；轻微的；轻快的；轻浮的；明亮的；浅色的；容易的\nn. 光；光亮；灯；日光；光源；杰出人物；火花；看法\nv. 点燃；照亮；变亮；落下；偶然碰到（light on）\nadv. 轻轻地；轻装地",
+        "example": "This bag is light enough to carry.",
+        "exampleCn": "这个包很轻，可以提得动。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      }
+    },
+    {
+      "id": 5596,
+      "word": "kind",
+      "checkedAt": "2026-10-29",
+      "status": "resolved_local_text",
+      "changedFields": [
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "audioFields": [
+        "example"
+      ],
+      "before": {
+        "id": 5596,
+        "word": "kind",
+        "phonetic": "kaind",
+        "pos": "n.",
+        "meaning": "n. 种类, 性质, 方式\\na. 亲切的, 仁慈的, 和蔼的",
+        "example": "Kind to sick patients.",
+        "exampleCn": "善待生病的患者。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5596,
+        "word": "kind",
+        "phonetic": "kaind",
+        "pos": "adj. / n.",
+        "meaning": "adj. 友善的；体贴的；仁慈的\nn. 种类；性质；方式",
+        "example": "Our neighbor is kind to everyone.",
+        "exampleCn": "我们的邻居对每个人都很友善。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      }
+    }
+  ]
+}

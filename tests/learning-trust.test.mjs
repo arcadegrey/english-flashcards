@@ -17,6 +17,7 @@ test('dictionary formatting removes literal newlines and duplicate part-of-speec
   assert.equal(getWordMeaningLine({ pos: 'v.', meaning: 'n. 工作\nvt. 使运转' }), 'n. 工作；vt. 使运转');
   assert.equal(getWordMeaningLine({ pos: 'n.', meaning: '能力' }), 'n. 能力');
   assert.equal(getWordMeaningLine({ pos: 'n.' }), '暂无释义');
+  assert.equal(getWordMeaningLine({ pos: 'modal v. / n.', meaning: 'modal v. 能；可以\nn. 金属罐' }), 'modal v. 能；可以；n. 金属罐');
   assert.match(getWordHints({ word: 'unlistedwordfortest', example: 'An example without a translation.' })[1].text, /对照释义/);
 });
 

@@ -760,10 +760,10 @@
     "id": 4416,
     "word": "can",
     "phonetic": "kæn",
-    "pos": "n.",
-    "meaning": "罐头/金属罐",
-    "example": "He opened a can of soup for lunch.",
-    "exampleCn": "他开了一罐汤当午饭。",
+    "pos": "modal v. / n.",
+    "meaning": "modal v. 能；会；可以（表示能力、可能或许可）\nn. 金属罐；一罐（食物或饮料）",
+    "example": "I can carry this bag for you.",
+    "exampleCn": "我可以帮你提这个包。",
     "category": "ielts",
     "categories": [
       "ielts"

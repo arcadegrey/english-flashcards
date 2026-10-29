@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-29",
+  "scope": "Ten existing coverage-review entries; original IDs and personal data preserved.",
+  "canonicalSha256": "8fa31adcf6b64f9dd9e5c1cef7bf29fd2fa3302c30a3ff69f6e9bcf50655f6ba",
+  "fullSuite": {
+    "passed": 367,
+    "failed": 0
+  },
+  "finalFocusedChecksAfterModalDisplayFix": {
+    "passed": 15,
+    "failed": 0
+  },
+  "lint": "pass",
+  "productionBuildPwa": "pass",
+  "gitDiffCheck": "pass",
+  "localAudio": {
+    "passed": 40,
+    "manifestSha256": "1511f85f26e11b8c3f61774b1f7ebdb9bc1c659035ef825a3d693c691ae6b9e4",
+    "checks": [
+      "hash",
+      "size",
+      "24kHz mono",
+      "complete decode",
+      "finite samples",
+      "non-silent"
+    ]
+  },
+  "publicAudio": {
+    "passed": 40,
+    "manifestSha256": "1511f85f26e11b8c3f61774b1f7ebdb9bc1c659035ef825a3d693c691ae6b9e4",
+    "checks": [
+      "HTTP 200",
+      "SHA-256",
+      "size",
+      "audio/mpeg",
+      "manifest hash"
+    ]
+  },
+  "realWordCard": {
+    "widths": [
+      1440,
+      390
+    ],
+    "passed": 20,
+    "pageErrors": [],
+    "overflow": false
+  },
+  "nativePublicAudioPlaybacks": {
+    "passed": 40,
+    "uniqueIdVoicePairs": 40
+  },
+  "maintenanceReplay": {
+    "verifiedFiles": 461,
+    "byteIdentical": true,
+    "scripts": [
+      "apply-vocabulary-reviews",
+      "apply-vocabulary-teaching-p1",
+      "apply-vocabulary-teaching-p2",
+      "apply-vocabulary-short-examples",
+      "apply-vocabulary-common-senses",
+      "build-vocabulary-delivery",
+      "build-assignment-catalog",
+      "build-word-hints",
+      "audit-vocabulary-teaching",
+      "audit-short-examples",
+      "audit-vocabulary-coverage"
+    ]
+  },
+  "release": {
+    "audioPublished": true,
+    "applicationDeployed": false,
+    "gitCommit": true,
+    "gitPush": false,
+    "migrationRequired": false,
+    "deployTogether": [
+      "frontend generated delivery/hints/audio mappings",
+      "Worker assignment catalog"
+    ]
+  },
+  "humanListeningCertified": false
+}

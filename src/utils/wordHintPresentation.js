@@ -8,7 +8,7 @@ export const getWordMeaningLine = (word = {}) => {
   const meaning = formatWordDefinition(word.meaning);
   if (!meaning) return '暂无释义';
   // Dictionary definitions often already include per-sense parts of speech.
-  return /^(?:n|v|vt|vi|a|adj|ad|adv|prep|pron|conj|int|interj|aux|num|art|det)\./i.test(meaning)
+  return /^(?:modal\s+v|n|v|vt|vi|a|adj|ad|adv|prep|pron|conj|int|interj|aux|num|art|det)\./i.test(meaning)
     ? meaning : [word.pos, meaning].filter(Boolean).join(' ');
 };
 

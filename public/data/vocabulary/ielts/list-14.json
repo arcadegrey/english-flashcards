@@ -744,10 +744,10 @@
     "id": 4002,
     "word": "mean",
     "phonetic": "miːn",
-    "pos": "n.",
-    "meaning": "平均数/平均值",
-    "example": "The mean of these three numbers is twenty.",
-    "exampleCn": "这三个数的平均数是二十。",
+    "pos": "v. / n. / adj.",
+    "meaning": "v. 意思是；意味着；意指；打算\nn. 平均数；平均值\nadj. 吝啬的；刻薄的；平均的",
+    "example": "What does this word mean?",
+    "exampleCn": "这个词是什么意思？",
     "category": "ielts",
     "categories": [
       "ielts"

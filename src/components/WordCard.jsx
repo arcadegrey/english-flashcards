@@ -111,7 +111,7 @@ function WordCard({ word: entry, nextWord, showHint = false }) {
           {hintLoading ? <LoadingState variant="inline" className="learn-refresh-hint-scope" title={hintStatus} /> : hintStatus && <p className="learn-refresh-hint-scope" role="status">{hintStatus}</p>}
           {hintError && <button type="button" className="learn-refresh-example-audio" onClick={retryHints}>重试加载提示</button>}
           {hints.map((hint, index) => (
-            <div key={hint.label} className="learn-refresh-hint-item" style={{ '--hint-index': index }}>
+            <div key={`${hint.label}-${index}`} className="learn-refresh-hint-item" style={{ '--hint-index': index }}>
               <span className="learn-refresh-hint-label">{hint.label}</span>
               {hint.scope && <p className="learn-refresh-hint-scope">适用：{hint.scope}</p>}
               <p className="learn-refresh-hint-text">

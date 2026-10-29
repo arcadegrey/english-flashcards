@@ -3,7 +3,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
 import { getCoreWordHints } from '../src/utils/wordHints.js';
-import { beforeTeachingP1Review, beforeTeachingP2Review, beforeShortExampleReview } from '../shared/vocabularyHistory.js';
+import { beforeTeachingP1Review, beforeTeachingP2Review, beforeShortExampleReview, beforeCommonSensesReview } from '../shared/vocabularyHistory.js';
 
 const root = new URL('../', import.meta.url);
 const read = async path => JSON.parse(await readFile(new URL(path, root), 'utf8'));
@@ -20,7 +20,9 @@ const syntax = await read('data/vocabulary-teaching-audit/syntax-screen-2026-10-
 const p1Repair = await read('data/vocabulary-p1-repair/reviews-2026-10-29.json');
 const p2Repair = await read('data/vocabulary-p2-repair/reviews-2026-10-29.json');
 const shortRepair = await read('data/vocabulary-short-example-repair/reviews-2026-10-29.json');
-assert.equal(shortRepair.afterSha256, currentSourceHash, 'Unregistered latest vocabulary edits.');
+const latestRepair = await read('data/vocabulary-common-senses-repair/reviews-2026-10-29.json');
+assert.equal(latestRepair.afterSha256, currentSourceHash, 'Unregistered latest vocabulary edits.');
+assert.equal(shortRepair.afterSha256, hash(JSON.stringify(beforeCommonSensesReview(currentVocabulary),null,2)+'\n'), 'Unregistered latest vocabulary edits.');
 assert.equal(p2Repair.afterSha256, hash(JSON.stringify(beforeShortExampleReview(currentVocabulary),null,2)+'\n'), 'Unregistered vocabulary changes: do not claim current repair status.');
 assert.equal(p1Repair.afterSha256, hash(JSON.stringify(beforeTeachingP2Review(currentVocabulary),null,2)+'\n'));
 assert.equal(register.inputSha256, sourceHash, 'Vocabulary changed: review a new snapshot instead of overwriting this historical audit.');

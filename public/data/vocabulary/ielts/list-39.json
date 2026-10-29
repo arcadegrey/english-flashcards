@@ -586,10 +586,10 @@
     "id": 4326,
     "word": "race",
     "phonetic": "reɪs",
-    "pos": "n.",
-    "meaning": "赛跑/竞赛",
-    "example": "She won the hundred-metre race by a narrow margin.",
-    "exampleCn": "她以微弱的优势赢得了百米赛跑。",
+    "pos": "v. / n.",
+    "meaning": "v. 赛跑；参加竞速比赛；快速移动\nn. 赛跑；竞赛；种族；族群",
+    "example": "We race each other across the playground.",
+    "exampleCn": "我们在操场上互相比赛跑步。",
     "category": "ielts",
     "categories": [
       "ielts"

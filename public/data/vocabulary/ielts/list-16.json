@@ -980,10 +980,10 @@
     "id": 4058,
     "word": "point",
     "phonetic": "pɔɪnt",
-    "pos": "n.",
-    "meaning": "要点/观点",
-    "example": "He made several important points during the discussion.",
-    "exampleCn": "他在讨论中提出了几个重要的观点。",
+    "pos": "v. / n.",
+    "meaning": "v. 指向；指；指明\nn. 要点；观点；点；尖端；分数",
+    "example": "Please point to your name on the list.",
+    "exampleCn": "请指一下名单上你的名字。",
     "category": "ielts",
     "categories": [
       "ielts"

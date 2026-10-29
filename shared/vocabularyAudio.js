@@ -1,3 +1,4 @@
+import { COMMON_SENSES_VOCABULARY_AUDIO } from './commonSensesVocabularyAudio.js';
 import { VOCABULARY_AUDIO_UPDATES } from './vocabularyAudioUpdates.js';
 import { PRACTICAL_VOCABULARY_AUDIO } from './practicalVocabularyAudio.js';
 import { FOLLOWUP_VOCABULARY_AUDIO } from './followupVocabularyAudio.js';
@@ -16,7 +17,7 @@ export const AUDIO_UPDATES_BASE_URL = (import.meta.env?.VITE_AUDIO_UPDATES_BASE_
 export function correctedVocabularyAudioUrl(word, field, voice) {
   if (!word || !['word', 'example'].includes(field) || !voices.has(voice)) return null;
   const id = String(word.id ?? '');
-  for (const [batch, updates] of [['2026-10-29-short-examples', SHORT_EXAMPLE_VOCABULARY_AUDIO], ['2026-10-29-p2', TEACHING_P2_VOCABULARY_AUDIO], ['2026-10-29-p1', TEACHING_P1_VOCABULARY_AUDIO], ['2026-10-29-feedback', FEEDBACK_VOCABULARY_AUDIO], ['2026-10-26-sense', SENSE_REVIEW_VOCABULARY_AUDIO], ['2026-10-26-name-place', NAME_PLACE_VOCABULARY_AUDIO]]) {
+  for (const [batch, updates] of [['2026-10-29-common-senses', COMMON_SENSES_VOCABULARY_AUDIO], ['2026-10-29-short-examples', SHORT_EXAMPLE_VOCABULARY_AUDIO], ['2026-10-29-p2', TEACHING_P2_VOCABULARY_AUDIO], ['2026-10-29-p1', TEACHING_P1_VOCABULARY_AUDIO], ['2026-10-29-feedback', FEEDBACK_VOCABULARY_AUDIO], ['2026-10-26-sense', SENSE_REVIEW_VOCABULARY_AUDIO], ['2026-10-26-name-place', NAME_PLACE_VOCABULARY_AUDIO]]) {
     const revision = Object.hasOwn(updates, id) ? updates[id][field] : null;
     if (revision && word[field] === revision.text
       && Object.entries(revision.guards || {}).every(([key, value]) => word[key] === value)) {

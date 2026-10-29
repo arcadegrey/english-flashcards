@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-29T11:14:45.965Z",
+  "baselineCommit": "558043b0a7607cfd6d58d7eac616cadf17008a1e",
+  "canonicalBeforeSha256": "fda962f32cb674b1610af43715d4147616570a7c0c3defd654d1a1a3f9e445a6",
+  "canonicalAfterSha256": "fda962f32cb674b1610af43715d4147616570a7c0c3defd654d1a1a3f9e445a6",
+  "protectedGitTreesUnchanged": [
+    "public",
+    "src",
+    "shared",
+    "worker"
+  ],
+  "sourcePdfHashChecks": 5,
+  "focusedTests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "deterministicReportFiles": 11,
+  "reportHashes": {
+    "data/vocabulary-coverage-2026-10-29/category-mapping-review.csv": "c41526c185b4c6a36bb8437cdc381f54b1bfad4b06bf1601dd0fb91dcfb77e22",
+    "data/vocabulary-coverage-2026-10-29/existing-field-reviews.csv": "fd62854d01f562563dac430c062242f915206e963c0393d0f1abeb73acc66f37",
+    "data/vocabulary-coverage-2026-10-29/first-batch-proposal.csv": "48ba9bb60c59170c6dcb4128128f3db1f8c36fffb36c7524142500008fb978b3",
+    "data/vocabulary-coverage-2026-10-29/first-batch-proposal.json": "7591aada5e92c879b66f81a8cdb54fef569146dcf2a67246d2fcdb61e5e52d5e",
+    "data/vocabulary-coverage-2026-10-29/gaps.csv": "1eec203b6e36d24873e124bed1ac53ebe9582ee14a9d4e3ff2596fce86b0c5c3",
+    "data/vocabulary-coverage-2026-10-29/morphology-reviews.json": "2d62c8ffc4f57a70116f8fdd831dad76121c5eeefdb2e95566848ca22035761a",
+    "data/vocabulary-coverage-2026-10-29/normalization-reviews.json": "4564776c6d9c9f4f3cf80f76329e9ea6f0200d6dc9aeace6fa9a474c738e112b",
+    "data/vocabulary-coverage-2026-10-29/reference-sources.json": "52adf953ddd0bfbf6b535f081ba41495e7df8e11f565906831c2c765de88276a",
+    "data/vocabulary-coverage-2026-10-29/report.json": "b7414122ff05d662d2a4f4f9b3af44aa43b58db4571645a8df3d1009721eade2",
+    "data/vocabulary-coverage-2026-10-29/source-format-reviews.json": "a7133e9b562832c8d9b016b93240bd375d9b961ae358553bba78d3cf5d077c57",
+    "docs/vocabulary-coverage-audit-2026-10-29.md": "4f83e847c6ec6886e5b40244e6a2ad472e5bfb7953f5fe65b452b84207c348f7"
+  },
+  "cetCountReconciliation": {
+    "status": "not_certified",
+    "printedMainEntries": 5418,
+    "parsedPhysicalMainGroups": 5377,
+    "officialCompleteCoverageClaim": false
+  },
+  "applicationDataModified": false,
+  "importedEntries": 0,
+  "audioFilesChanged": 0
+}

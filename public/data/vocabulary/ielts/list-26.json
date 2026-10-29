@@ -704,10 +704,10 @@
     "id": 4378,
     "word": "match",
     "phonetic": "mætʃ",
-    "pos": "n.",
-    "meaning": "火柴/比赛",
-    "example": "He struck a match to light the candle.",
-    "exampleCn": "他划了一根火柴点燃了蜡烛。",
+    "pos": "v. / n.",
+    "meaning": "v. 与……相配；匹配；使配对\nn. 火柴；比赛；相配的人或物",
+    "example": "Your shoes match your coat.",
+    "exampleCn": "你的鞋子和外套很相配。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -806,10 +806,10 @@
     "id": 4384,
     "word": "cover",
     "phonetic": "ˈkʌvə",
-    "pos": "n.",
-    "meaning": "封面/盖子",
-    "example": "The book has a colourful cover.",
-    "exampleCn": "这本书有一个彩色的封面。",
+    "pos": "v. / n.",
+    "meaning": "v. 覆盖；盖上；包括；涉及\nn. 封面；盖子；罩子",
+    "example": "Please cover the food with a clean cloth.",
+    "exampleCn": "请用一块干净的布盖住食物。",
     "category": "ielts",
     "categories": [
       "ielts"

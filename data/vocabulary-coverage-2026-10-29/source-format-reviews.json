@@ -1,0 +1,57 @@
+[
+  {
+    "sourceId": "cet2016",
+    "rawLabel": "accordingto",
+    "forms": [
+      "according to"
+    ],
+    "status": "explicit_spacing_normalization",
+    "page": 21
+  },
+  {
+    "sourceId": "cet2016",
+    "rawLabel": "oughtto",
+    "forms": [
+      "ought to"
+    ],
+    "status": "explicit_spacing_normalization",
+    "page": 101
+  },
+  {
+    "sourceId": "cet2016",
+    "rawLabel": "babyboom",
+    "status": "explicit_spacing_normalization",
+    "page": 29,
+    "forms": [
+      "baby boom"
+    ],
+    "evidence": "已查看原PDF第29页图像，印刷正文为 baby boom。"
+  },
+  {
+    "sourceId": "cet2016",
+    "rawLabel": "hotdog",
+    "suggestedSpellings": [
+      "hot dog"
+    ],
+    "status": "source_spelling_or_spacing_review_not_credited",
+    "page": 78
+  },
+  {
+    "sourceId": "cet2016",
+    "rawLabel": "jetlag",
+    "suggestedSpellings": [
+      "jet lag"
+    ],
+    "status": "source_spelling_or_spacing_review_not_credited",
+    "page": 84
+  },
+  {
+    "sourceId": "cet2016",
+    "rawLabel": "knowhow",
+    "suggestedSpellings": [
+      "know-how"
+    ],
+    "status": "source_spelling_or_spacing_review_not_credited",
+    "page": 86
+  }
+]

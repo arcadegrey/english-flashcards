@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
-import { beforeShortExampleReview } from '../shared/vocabularyHistory.js';
+import { beforeShortExampleReview, beforeCommonSensesReview } from '../shared/vocabularyHistory.js';
 import { correctedVocabularyAudioUrl } from '../shared/vocabularyAudio.js';
 import { buildHiddenSentence } from '../src/utils/assessmentRounds.js';
 import { buildWordAssignment, gradeWordAssignment } from '../shared/wordAssignments.js';
@@ -13,10 +13,11 @@ import { createSpeechService } from '../src/utils/speechEngine.js';
 const read=async path=>JSON.parse(await readFile(new URL(`../${path}`,import.meta.url),'utf8'));
 const serialize=value=>JSON.stringify(value,null,2)+'\n';
 const hash=value=>createHash('sha256').update(value).digest('hex');
-const words=await read('public/data/vocabulary.json'),byId=new Map(words.map(w=>[w.id,w]));
+const words=beforeCommonSensesReview(await read('public/data/vocabulary.json')),byId=new Map(words.map(w=>[w.id,w]));
 const register=await read('data/vocabulary-short-example-repair/reviews-2026-10-29.json');
 const audit=await read('data/vocabulary-short-example-audit/examples-2026-10-29.json');
 const p2=await read('data/vocabulary-p2-repair/reviews-2026-10-29.json');
+const latestRegister=await read('data/vocabulary-common-senses-repair/reviews-2026-10-29.json');
 const baseline=beforeShortExampleReview(words);
 
 test('237 reviewed short candidates and the explicitly requested smoking example retain all IDs, order, IPA, categories and unrelated records',()=>{
@@ -101,7 +102,7 @@ test('old assignment snapshots keep their original meanings and scores; new assi
 });
 
 test('the original 238 screening cues remain historical; one false positive is excluded and smoking is an explicit extra request',()=>{
- assert.equal(audit.inputSha256,p2.afterSha256);assert.equal(audit.currentSourceSha256,register.afterSha256);
+ assert.equal(audit.inputSha256,p2.afterSha256);assert.equal(audit.currentSourceSha256,latestRegister.afterSha256);
  assert.deepEqual(audit.repairStatus,{batch:register.batch,repairedCandidates:237,reviewedExclusions:1,extraUserRequests:1,openCandidates:0});
  assert.equal(audit.totals.flagged,238);assert(!audit.examples.some(w=>w.id===7121));
  assert.equal(audit.additionalUserRequests[0].before.example,'Smoking stinks.');

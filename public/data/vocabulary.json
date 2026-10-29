@@ -66579,10 +66579,10 @@
     "id": 4002,
     "word": "mean",
     "phonetic": "miːn",
-    "pos": "n.",
-    "meaning": "平均数/平均值",
-    "example": "The mean of these three numbers is twenty.",
-    "exampleCn": "这三个数的平均数是二十。",
+    "pos": "v. / n. / adj.",
+    "meaning": "v. 意思是；意味着；意指；打算\nn. 平均数；平均值\nadj. 吝啬的；刻薄的；平均的",
+    "example": "What does this word mean?",
+    "exampleCn": "这个词是什么意思？",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -67531,10 +67531,10 @@
     "id": 4058,
     "word": "point",
     "phonetic": "pɔɪnt",
-    "pos": "n.",
-    "meaning": "要点/观点",
-    "example": "He made several important points during the discussion.",
-    "exampleCn": "他在讨论中提出了几个重要的观点。",
+    "pos": "v. / n.",
+    "meaning": "v. 指向；指；指明\nn. 要点；观点；点；尖端；分数",
+    "example": "Please point to your name on the list.",
+    "exampleCn": "请指一下名单上你的名字。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -72092,10 +72092,10 @@
     "id": 4326,
     "word": "race",
     "phonetic": "reɪs",
-    "pos": "n.",
-    "meaning": "赛跑/竞赛",
-    "example": "She won the hundred-metre race by a narrow margin.",
-    "exampleCn": "她以微弱的优势赢得了百米赛跑。",
+    "pos": "v. / n.",
+    "meaning": "v. 赛跑；参加竞速比赛；快速移动\nn. 赛跑；竞赛；种族；族群",
+    "example": "We race each other across the playground.",
+    "exampleCn": "我们在操场上互相比赛跑步。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -72980,10 +72980,10 @@
     "id": 4378,
     "word": "match",
     "phonetic": "mætʃ",
-    "pos": "n.",
-    "meaning": "火柴/比赛",
-    "example": "He struck a match to light the candle.",
-    "exampleCn": "他划了一根火柴点燃了蜡烛。",
+    "pos": "v. / n.",
+    "meaning": "v. 与……相配；匹配；使配对\nn. 火柴；比赛；相配的人或物",
+    "example": "Your shoes match your coat.",
+    "exampleCn": "你的鞋子和外套很相配。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -73082,10 +73082,10 @@
     "id": 4384,
     "word": "cover",
     "phonetic": "ˈkʌvə",
-    "pos": "n.",
-    "meaning": "封面/盖子",
-    "example": "The book has a colourful cover.",
-    "exampleCn": "这本书有一个彩色的封面。",
+    "pos": "v. / n.",
+    "meaning": "v. 覆盖；盖上；包括；涉及\nn. 封面；盖子；罩子",
+    "example": "Please cover the food with a clean cloth.",
+    "exampleCn": "请用一块干净的布盖住食物。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -73627,10 +73627,10 @@
     "id": 4416,
     "word": "can",
     "phonetic": "kæn",
-    "pos": "n.",
-    "meaning": "罐头/金属罐",
-    "example": "He opened a can of soup for lunch.",
-    "exampleCn": "他开了一罐汤当午饭。",
+    "pos": "modal v. / n.",
+    "meaning": "modal v. 能；会；可以（表示能力、可能或许可）\nn. 金属罐；一罐（食物或饮料）",
+    "example": "I can carry this bag for you.",
+    "exampleCn": "我可以帮你提这个包。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -91002,10 +91002,10 @@
     "id": 5451,
     "word": "like",
     "phonetic": "laik",
-    "pos": "prep.",
-    "meaning": "a. 相似的, 同样的\\nvt. 喜欢, 愿意, 想\\nvi. 喜欢, 希望\\nn. 爱好, 同样的人(或物)\\nprep. 象, 如同\\nadv. 可能",
-    "example": "Dogs, foxes, and the like.",
-    "exampleCn": "狗、狐狸等。",
+    "pos": "v. / prep. / adj. / n. / adv.",
+    "meaning": "v. 喜欢；想要（常用 would like）\nprep. 像；如同；例如\nadj. 相似的；同样的\nn. 喜好；同样的人或物\nadv. 大约（非正式）；可能（方言用法）",
+    "example": "I like reading before bed.",
+    "exampleCn": "我喜欢在睡前阅读。",
     "category": "daily",
     "categories": [
       "daily"
@@ -92887,10 +92887,10 @@
     "id": 5596,
     "word": "kind",
     "phonetic": "kaind",
-    "pos": "n.",
-    "meaning": "n. 种类, 性质, 方式\\na. 亲切的, 仁慈的, 和蔼的",
-    "example": "Kind to sick patients.",
-    "exampleCn": "善待生病的患者。",
+    "pos": "adj. / n.",
+    "meaning": "adj. 友善的；体贴的；仁慈的\nn. 种类；性质；方式",
+    "example": "Our neighbor is kind to everyone.",
+    "exampleCn": "我们的邻居对每个人都很友善。",
     "category": "daily",
     "categories": [
       "daily"
@@ -94356,10 +94356,10 @@
     "id": 5709,
     "word": "light",
     "phonetic": "lait",
-    "pos": "adv.",
-    "meaning": "n. 光, 光亮, 灯, 日光, 发光体, 光源, 杰出人物, 火花, 眼光\\na. 轻的, 少量的, 轻微的, 轻快的, 轻浮的, 明亮的, 淡色的, 容易的\\nvt. 点燃, 照亮\\nvi. 点着, 变亮, 突降, 偶然碰到\\nadv.",
-    "example": "The light was filtered through a soft glass window.",
-    "exampleCn": "通过柔软的玻璃窗过滤光线。",
+    "pos": "adj. / n. / v. / adv.",
+    "meaning": "adj. 轻的；少量的；轻微的；轻快的；轻浮的；明亮的；浅色的；容易的\nn. 光；光亮；灯；日光；光源；杰出人物；火花；看法\nv. 点燃；照亮；变亮；落下；偶然碰到（light on）\nadv. 轻轻地；轻装地",
+    "example": "This bag is light enough to carry.",
+    "exampleCn": "这个包很轻，可以提得动。",
     "category": "daily",
     "categories": [
       "daily"
@@ -94512,10 +94512,10 @@
     "id": 5721,
     "word": "arm",
     "phonetic": "ɑ:m",
-    "pos": "v.",
-    "meaning": "n. 手臂, 袖子, 狭长港湾, 武器\\nvt. 武装, 装备\\nvi. 武装起来\\n[计] 异步应答方式; 自动货品销路管理",
-    "example": "The arm of the record player.",
-    "exampleCn": "唱片播放器的手臂。",
+    "pos": "n. / v.",
+    "meaning": "n. 手臂；扶手；机械臂；袖子；狭长港湾；武器（通常用复数 arms）\nv. 武装；装备",
+    "example": "She held the baby in one arm.",
+    "exampleCn": "她用一只手臂抱着宝宝。",
     "category": "daily",
     "categories": [
       "daily"

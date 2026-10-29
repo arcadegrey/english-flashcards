@@ -2,7 +2,7 @@
   "auditDate": "2026-10-29",
   "input": "public/data/vocabulary.json",
   "inputSha256": "ae4abc959df187f198e54477dc7a69a4f7baa283f10f07854915ba74c1a4c163",
-  "currentSourceSha256": "fda962f32cb674b1610af43715d4147616570a7c0c3defd654d1a1a3f9e445a6",
+  "currentSourceSha256": "8fa31adcf6b64f9dd9e5c1cef7bf29fd2fa3302c30a3ff69f6e9bcf50655f6ba",
   "screeningAppliesTo": "captured pre-P1/P2 audit snapshot, not the repaired canonical examples",
   "scope": "Reported four repaired IDs excluded; all other active entries screened, bounded candidates reviewed. No runtime or vocabulary edits.",
   "reviewer": "single-model editorial review; not independent human language review",
@@ -23298,10 +23298,10 @@
         "id": 5451,
         "word": "like",
         "phonetic": "laik",
-        "pos": "prep.",
-        "meaning": "a. 相似的, 同样的\\nvt. 喜欢, 愿意, 想\\nvi. 喜欢, 希望\\nn. 爱好, 同样的人(或物)\\nprep. 象, 如同\\nadv. 可能",
-        "example": "Dogs, foxes, and the like.",
-        "exampleCn": "狗、狐狸等。",
+        "pos": "v. / prep. / adj. / n. / adv.",
+        "meaning": "v. 喜欢；想要（常用 would like）\nprep. 像；如同；例如\nadj. 相似的；同样的\nn. 喜好；同样的人或物\nadv. 大约（非正式）；可能（方言用法）",
+        "example": "I like reading before bed.",
+        "exampleCn": "我喜欢在睡前阅读。",
         "category": "daily",
         "categories": [
           "daily"
@@ -28131,10 +28131,10 @@
         "id": 5596,
         "word": "kind",
         "phonetic": "kaind",
-        "pos": "n.",
-        "meaning": "n. 种类, 性质, 方式\\na. 亲切的, 仁慈的, 和蔼的",
-        "example": "Kind to sick patients.",
-        "exampleCn": "善待生病的患者。",
+        "pos": "adj. / n.",
+        "meaning": "adj. 友善的；体贴的；仁慈的\nn. 种类；性质；方式",
+        "example": "Our neighbor is kind to everyone.",
+        "exampleCn": "我们的邻居对每个人都很友善。",
         "category": "daily",
         "categories": [
           "daily"
@@ -31309,10 +31309,10 @@
         "id": 5709,
         "word": "light",
         "phonetic": "lait",
-        "pos": "adv.",
-        "meaning": "n. 光, 光亮, 灯, 日光, 发光体, 光源, 杰出人物, 火花, 眼光\\na. 轻的, 少量的, 轻微的, 轻快的, 轻浮的, 明亮的, 淡色的, 容易的\\nvt. 点燃, 照亮\\nvi. 点着, 变亮, 突降, 偶然碰到\\nadv.",
-        "example": "The light was filtered through a soft glass window.",
-        "exampleCn": "通过柔软的玻璃窗过滤光线。",
+        "pos": "adj. / n. / v. / adv.",
+        "meaning": "adj. 轻的；少量的；轻微的；轻快的；轻浮的；明亮的；浅色的；容易的\nn. 光；光亮；灯；日光；光源；杰出人物；火花；看法\nv. 点燃；照亮；变亮；落下；偶然碰到（light on）\nadv. 轻轻地；轻装地",
+        "example": "This bag is light enough to carry.",
+        "exampleCn": "这个包很轻，可以提得动。",
         "category": "daily",
         "categories": [
           "daily"
@@ -31908,10 +31908,10 @@
         "id": 5721,
         "word": "arm",
         "phonetic": "ɑ:m",
-        "pos": "v.",
-        "meaning": "n. 手臂, 袖子, 狭长港湾, 武器\\nvt. 武装, 装备\\nvi. 武装起来\\n[计] 异步应答方式; 自动货品销路管理",
-        "example": "The arm of the record player.",
-        "exampleCn": "唱片播放器的手臂。",
+        "pos": "n. / v.",
+        "meaning": "n. 手臂；扶手；机械臂；袖子；狭长港湾；武器（通常用复数 arms）\nv. 武装；装备",
+        "example": "She held the baby in one arm.",
+        "exampleCn": "她用一只手臂抱着宝宝。",
         "category": "daily",
         "categories": [
           "daily"

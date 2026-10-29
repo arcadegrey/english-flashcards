@@ -9,6 +9,11 @@ const serialize = value => JSON.stringify(value, null, 2) + '\n';
 const hash = value => createHash('sha256').update(value).digest('hex');
 const path = new URL('public/data/vocabulary.json', root);
 const vocabulary = JSON.parse(await readFile(path, 'utf8'));
+const latestCommonSenses = await read('data/vocabulary-common-senses-repair/reviews-2026-10-29.json');
+if (hash(serialize(vocabulary)) === latestCommonSenses.afterSha256) {
+  console.log('Preserving the later registered common-sense repairs.');
+  process.exit(0);
+}
 let laterShortExamples;
 try { laterShortExamples = await read('data/vocabulary-short-example-repair/reviews-2026-10-29.json'); }
 catch (error) { if (error.code !== 'ENOENT') throw error; }

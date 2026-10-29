@@ -1,3 +1,4 @@
+import commonSenses from '../../data/vocabulary-common-senses-repair/hints-2026-10-29.json' with { type: 'json' };
 import { formatWordDefinition } from './wordHintPresentation.js';
 import { getReviewedWordHints } from '../data/reviewedWordNotes.js';
 import { CORE_WORD_NOTES, CORE_SYNONYM_GROUPS, CORE_WORD_FORMATIONS, WORD_NOTE_SOURCES } from '../data/coreWordNotes.js';
@@ -44,7 +45,7 @@ export const getHintExampleParts = (example, words = []) => {
   return parts;
 };
 
-export const getCoreWordHints = (word = {}) => {
+const getExistingCoreWordHints = (word = {}) => {
   const reviewed = getReviewedWordHints(word);
   if (reviewed) return reviewed;
   const key = vocabularyNoteKey(word);
@@ -92,4 +93,13 @@ export const getWordHints = (word = {}) => {
       : '当前没有例句，可先朗读单词并回忆已有释义。' },
     practice,
   ];
+};
+
+// Supplement existing comparisons and word families only for the reviewed record.
+// Historical snapshots and custom IDs retain their original hints.
+export const getCoreWordHints = (word = {}) => {
+  const hints = getExistingCoreWordHints(word);
+  const review = Object.hasOwn(commonSenses, String(word.id)) ? commonSenses[word.id] : null;
+  return review && review.word === word.word && Object.entries(review.guards).every(([key, value]) => word[key] === value)
+    ? [...hints, review.hint] : hints;
 };

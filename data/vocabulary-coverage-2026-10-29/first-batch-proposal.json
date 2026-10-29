@@ -1,0 +1,1684 @@
+{
+  "date": "2026-10-29",
+  "scope": "50 new learning-unit proposals + 10 existing-ID field reviews; no import or ID allocation.",
+  "limitations": "中文为候选教学义方向，不是已发布的完整释义。CEFR仅引用相应来源；无来源等级的词不自行分级。顺序是产品建议，不是官方频率排名。",
+  "newCandidates": [
+    {
+      "queueId": "NEW-01",
+      "candidate": "thank you",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "谢谢",
+      "scenario": "礼貌与感谢",
+      "sourceLevels": [
+        "A1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "thank you",
+          "level": "A1",
+          "page": 2
+        }
+      ],
+      "note": "在现有例句／提示中有字面出现；本候选用于规划独立学习单元，非首次出现该表达。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-02",
+      "candidate": "you're welcome",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "不客气",
+      "scenario": "礼貌回应",
+      "sourceLevels": [
+        "A1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "You’re welcome",
+          "level": "A1",
+          "page": 2
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-03",
+      "candidate": "how are you",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "你好吗",
+      "scenario": "问候",
+      "sourceLevels": [
+        "A1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "How are you?",
+          "level": "A1",
+          "page": 1
+        }
+      ],
+      "note": "在现有例句／提示中有字面出现；本候选用于规划独立学习单元，非首次出现该表达。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-04",
+      "candidate": "i'm sorry",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "对不起；我很遗憾",
+      "scenario": "道歉与安慰",
+      "sourceLevels": [
+        "A1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "I’m sorry",
+          "level": "A1",
+          "page": 1
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-05",
+      "candidate": "how about",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "……怎么样",
+      "scenario": "建议",
+      "sourceLevels": [
+        "A1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "How about...?",
+          "level": "A1",
+          "page": 1
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-06",
+      "candidate": "what about",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "……怎么样；那么……呢",
+      "scenario": "询问与建议",
+      "sourceLevels": [
+        "A1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "What about...?",
+          "level": "A1",
+          "page": 2
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-07",
+      "candidate": "would you like",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "你想要……吗",
+      "scenario": "礼貌邀请",
+      "sourceLevels": [
+        "A1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "Would you like...?",
+          "level": "A1",
+          "page": 2
+        }
+      ],
+      "note": "在现有例句／提示中有字面出现；本候选用于规划独立学习单元，非首次出现该表达。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-08",
+      "candidate": "right now",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "现在；立刻",
+      "scenario": "时间表达",
+      "sourceLevels": [
+        "A1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "right now",
+          "level": "A1",
+          "page": 1
+        }
+      ],
+      "note": "在现有例句／提示中有字面出现；本候选用于规划独立学习单元，非首次出现该表达。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-09",
+      "candidate": "look at",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "看；看着",
+      "scenario": "视觉动作搭配",
+      "sourceLevels": [
+        "A1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "look at sb/sth",
+          "level": "A1",
+          "page": 1
+        }
+      ],
+      "note": "在现有例句／提示中有字面出现；本候选用于规划独立学习单元，非首次出现该表达。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-10",
+      "candidate": "wake up",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "醒来；叫醒",
+      "scenario": "作息",
+      "sourceLevels": [
+        "A1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "wake up",
+          "level": "A1",
+          "page": 2
+        }
+      ],
+      "note": "在现有例句／提示中有字面出现；本候选用于规划独立学习单元，非首次出现该表达。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-11",
+      "candidate": "i think so",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "我想是的",
+      "scenario": "表达判断",
+      "sourceLevels": [
+        "A2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "I think so",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-12",
+      "candidate": "in the middle",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "在中间",
+      "scenario": "空间与时间位置",
+      "sourceLevels": [
+        "A2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "in the middle",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "note": "在现有例句／提示中有字面出现；本候选用于规划独立学习单元，非首次出现该表达。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-13",
+      "candidate": "as long as",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "只要",
+      "scenario": "条件表达",
+      "sourceLevels": [
+        "B2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "as long as...",
+          "level": "B2",
+          "page": 4
+        }
+      ],
+      "note": "在现有例句／提示中有字面出现；本候选用于规划独立学习单元，非首次出现该表达。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-14",
+      "candidate": "due to",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "由于",
+      "scenario": "原因表达",
+      "sourceLevels": [
+        "B1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "due to sb/sth",
+          "level": "B1",
+          "page": 3
+        }
+      ],
+      "note": "在现有例句／提示中有字面出现；本候选用于规划独立学习单元，非首次出现该表达。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-15",
+      "candidate": "come on",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "快点；加油",
+      "scenario": "口语回应",
+      "sourceLevels": [
+        "A2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "Come on!",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-16",
+      "candidate": "get lost",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "迷路",
+      "scenario": "出行",
+      "sourceLevels": [
+        "A2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "get lost",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-17",
+      "candidate": "no way",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "不可能；没门",
+      "scenario": "口语态度",
+      "sourceLevels": [
+        "A2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "no way",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-18",
+      "candidate": "it depends",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "看情况",
+      "scenario": "回应不确定情况",
+      "sourceLevels": [
+        "A2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "it depends",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "note": "在现有例句／提示中有字面出现；本候选用于规划独立学习单元，非首次出现该表达。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-19",
+      "candidate": "let me know",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "告诉我；通知我",
+      "scenario": "沟通",
+      "sourceLevels": [
+        "A2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "let me know",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "note": "在现有例句／提示中有字面出现；本候选用于规划独立学习单元，非首次出现该表达。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-20",
+      "candidate": "feel like",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "想要；感觉像",
+      "scenario": "意愿与感受",
+      "sourceLevels": [
+        "A2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "feel like sth",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "note": "在现有例句／提示中有字面出现；本候选用于规划独立学习单元，非首次出现该表达。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-21",
+      "candidate": "get out",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "出去；离开",
+      "scenario": "移动",
+      "sourceLevels": [
+        "A2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "get out",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "note": "在现有例句／提示中有字面出现；本候选用于规划独立学习单元，非首次出现该表达。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-22",
+      "candidate": "go away",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "离开；走开",
+      "scenario": "移动与口语",
+      "sourceLevels": [
+        "A2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "go away",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-23",
+      "candidate": "on top of",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "在……上面",
+      "scenario": "位置",
+      "sourceLevels": [
+        "A2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "on top of sth/sb",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "note": "在现有例句／提示中有字面出现；本候选用于规划独立学习单元，非首次出现该表达。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-24",
+      "candidate": "as part of",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "作为……的一部分",
+      "scenario": "学习与工作",
+      "sourceLevels": [
+        "A2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "as part of sth",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-25",
+      "candidate": "in this way",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "用这种方式",
+      "scenario": "说明方法",
+      "sourceLevels": [
+        "A2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "in this way",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-26",
+      "candidate": "for this reason",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "因此；由于这个原因",
+      "scenario": "逻辑衔接",
+      "sourceLevels": [
+        "A2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "for this reason",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-27",
+      "candidate": "so that",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "以便；因此",
+      "scenario": "目的与结果",
+      "sourceLevels": [
+        "A2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "so that...",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "note": "在现有例句／提示中有字面出现；本候选用于规划独立学习单元，非首次出现该表达。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-28",
+      "candidate": "why not",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "为什么不……",
+      "scenario": "提出建议",
+      "sourceLevels": [
+        "A2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "Why not...?",
+          "level": "A2",
+          "page": 3
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-29",
+      "candidate": "belong to",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "属于",
+      "scenario": "归属",
+      "sourceLevels": [
+        "A2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "belong to sb",
+          "level": "A2",
+          "page": 2
+        },
+        {
+          "sourceId": "oxford-phrases",
+          "label": "belong to sth",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "note": "在现有例句／提示中有字面出现；本候选用于规划独立学习单元，非首次出现该表达。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-30",
+      "candidate": "focus on",
+      "kind": "phrase",
+      "priority": "P1-candidate",
+      "meaningDirection": "集中于；关注",
+      "scenario": "注意与工作",
+      "sourceLevels": [
+        "A2"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "focus on sb/sth",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "note": "在现有例句／提示中有字面出现；本候选用于规划独立学习单元，非首次出现该表达。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-31",
+      "candidate": "aloud",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "出声地",
+      "scenario": "课堂朗读",
+      "sourceLevels": [],
+      "sourceRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "aloud",
+          "starred": false,
+          "derived": [],
+          "page": 24
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-32",
+      "candidate": "ant",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "蚂蚁",
+      "scenario": "常见动物",
+      "sourceLevels": [],
+      "sourceRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "ant",
+          "starred": false,
+          "derived": [],
+          "page": 26
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-33",
+      "candidate": "attic",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "阁楼",
+      "scenario": "居住场景",
+      "sourceLevels": [],
+      "sourceRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "attic",
+          "starred": false,
+          "derived": [],
+          "page": 28
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-34",
+      "candidate": "classmate",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "同班同学",
+      "scenario": "校园",
+      "sourceLevels": [],
+      "sourceRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "classmate",
+          "starred": false,
+          "derived": [],
+          "page": 42
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-35",
+      "candidate": "cough",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "咳嗽",
+      "scenario": "日常身体状态表达",
+      "sourceLevels": [],
+      "sourceRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "cough",
+          "starred": false,
+          "derived": [],
+          "page": 48
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-36",
+      "candidate": "housework",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "家务",
+      "scenario": "家庭生活",
+      "sourceLevels": [],
+      "sourceRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "housework",
+          "starred": false,
+          "derived": [],
+          "page": 78
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-37",
+      "candidate": "noodle",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "面条",
+      "scenario": "饮食",
+      "sourceLevels": [],
+      "sourceRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "noodle",
+          "starred": false,
+          "derived": [],
+          "page": 98
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-38",
+      "candidate": "zoo",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "动物园",
+      "scenario": "生活与出行",
+      "sourceLevels": [],
+      "sourceRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "zoo",
+          "starred": false,
+          "derived": [],
+          "page": 148
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-39",
+      "candidate": "kilogram",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "千克；公斤",
+      "scenario": "重量计量",
+      "sourceLevels": [],
+      "sourceRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "kilogram(me)/kilo",
+          "starred": false,
+          "derived": [],
+          "page": 85
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-40",
+      "candidate": "upload",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "上传",
+      "scenario": "数字生活",
+      "sourceLevels": [],
+      "sourceRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "upload",
+          "starred": false,
+          "derived": [],
+          "page": 142
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-41",
+      "candidate": "append",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "追加；附加",
+      "scenario": "文档与技术表达",
+      "sourceLevels": [],
+      "sourceRefs": [
+        {
+          "sourceId": "awl-headwords",
+          "label": "append",
+          "sublist": 8,
+          "page": 1
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-42",
+      "candidate": "automate",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "使自动化",
+      "scenario": "工作与技术",
+      "sourceLevels": [],
+      "sourceRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "automate",
+          "starred": false,
+          "derived": [
+            "automation",
+            "automatic",
+            "automatically"
+          ],
+          "page": 29
+        },
+        {
+          "sourceId": "awl-headwords",
+          "label": "automate",
+          "sublist": 8,
+          "page": 1
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-43",
+      "candidate": "discriminate",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "辨别；歧视（需区分搭配）",
+      "scenario": "学术阅读与语境区分",
+      "sourceLevels": [],
+      "sourceRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "discriminate",
+          "starred": false,
+          "derived": [
+            "discrimination",
+            "discriminatory"
+          ],
+          "page": 56
+        },
+        {
+          "sourceId": "awl-headwords",
+          "label": "discriminate",
+          "sublist": 6,
+          "page": 3
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-44",
+      "candidate": "finite",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "有限的",
+      "scenario": "数量与学术表达",
+      "sourceLevels": [],
+      "sourceRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "finite",
+          "starred": true,
+          "derived": [],
+          "page": 67
+        },
+        {
+          "sourceId": "awl-headwords",
+          "label": "finite",
+          "sublist": 7,
+          "page": 3
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-45",
+      "candidate": "maximize",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "使最大化",
+      "scenario": "程度与效率",
+      "sourceLevels": [
+        "C1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford5000-additional",
+          "label": "maximize",
+          "pos": "v.",
+          "level": "C1",
+          "page": 6
+        },
+        {
+          "sourceId": "awl-headwords",
+          "label": "maximise",
+          "sublist": 3,
+          "page": 4
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-46",
+      "candidate": "negate",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "否定；使无效",
+      "scenario": "论证",
+      "sourceLevels": [],
+      "sourceRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "negate",
+          "starred": false,
+          "derived": [
+            "negation",
+            "negative"
+          ],
+          "page": 97
+        },
+        {
+          "sourceId": "awl-headwords",
+          "label": "negate",
+          "sublist": 3,
+          "page": 5
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-47",
+      "candidate": "underlie",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "构成……的基础",
+      "scenario": "学术说明",
+      "sourceLevels": [],
+      "sourceRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "underlie",
+          "starred": true,
+          "derived": [
+            "underlying"
+          ],
+          "page": 141
+        },
+        {
+          "sourceId": "awl-headwords",
+          "label": "underlie",
+          "sublist": 6,
+          "page": 7
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-48",
+      "candidate": "clarity",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "清晰；清楚",
+      "scenario": "表达与理解",
+      "sourceLevels": [
+        "C1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford5000-additional",
+          "label": "clarity",
+          "pos": "n.",
+          "level": "C1",
+          "page": 4
+        },
+        {
+          "sourceId": "cet2016",
+          "label": "clarity",
+          "starred": false,
+          "derived": [
+            "clarify",
+            "clarification"
+          ],
+          "page": 42
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-49",
+      "candidate": "credible",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "可信的",
+      "scenario": "信息判断",
+      "sourceLevels": [
+        "C1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford5000-additional",
+          "label": "credible",
+          "pos": "adj.",
+          "level": "C1",
+          "page": 4
+        },
+        {
+          "sourceId": "cet2016",
+          "label": "credible",
+          "starred": true,
+          "derived": [
+            "credibility"
+          ],
+          "page": 49
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    },
+    {
+      "queueId": "NEW-50",
+      "candidate": "resilience",
+      "kind": "lexeme",
+      "priority": "P1-candidate",
+      "meaningDirection": "恢复力；韧性",
+      "scenario": "适应与恢复",
+      "sourceLevels": [
+        "C1"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "oxford5000-additional",
+          "label": "resilience",
+          "pos": "n.",
+          "level": "C1",
+          "page": 7
+        }
+      ],
+      "note": "未命中独立词卡；不据此推断其它学习内容完全未涉及该用法。",
+      "status": "reviewed_proposal_not_import_ready",
+      "id": null,
+      "example": null,
+      "audio": null
+    }
+  ],
+  "existingReviews": [
+    {
+      "queueId": "EXISTING-01",
+      "id": 4416,
+      "word": "can",
+      "kind": "base_sense_gap",
+      "priority": "P0-review",
+      "finding": "基础词性与释义只有罐头／金属罐；提示已有情态动词能力义，需要对齐基础字段。",
+      "recommendation": "补情态动词能／可以义，保留容器名词。",
+      "current": {
+        "id": 4416,
+        "word": "can",
+        "phonetic": "kæn",
+        "pos": "n.",
+        "meaning": "罐头/金属罐",
+        "example": "He opened a can of soup for lunch.",
+        "exampleCn": "他开了一罐汤当午饭。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "27",
+        "ieltsLists": [
+          "27"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "oxford3000",
+          "label": "can1",
+          "pos": "modal v.",
+          "level": "A1",
+          "page": 1
+        },
+        {
+          "sourceId": "oxford3000",
+          "label": "can2",
+          "pos": "n.",
+          "level": "A2",
+          "page": 4
+        }
+      ],
+      "status": "single_model_field_review_not_modified"
+    },
+    {
+      "queueId": "EXISTING-02",
+      "id": 4002,
+      "word": "mean",
+      "kind": "base_sense_gap",
+      "priority": "P0-review",
+      "finding": "基础释义与提示只教平均值，没有初级常用动词意味着／意指。",
+      "recommendation": "保留平均数名词，补常用动词义和相应例句。",
+      "current": {
+        "id": 4002,
+        "word": "mean",
+        "phonetic": "miːn",
+        "pos": "n.",
+        "meaning": "平均数/平均值",
+        "example": "The mean of these three numbers is twenty.",
+        "exampleCn": "这三个数的平均数是二十。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "14",
+        "ieltsLists": [
+          "14"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "oxford3000",
+          "label": "mean",
+          "pos": "v.",
+          "level": "A1",
+          "page": 2
+        }
+      ],
+      "status": "single_model_field_review_not_modified"
+    },
+    {
+      "queueId": "EXISTING-03",
+      "id": 4384,
+      "word": "cover",
+      "kind": "base_sense_gap",
+      "priority": "P0-review",
+      "finding": "基础字段和提示只教封面／盖子，缺常用动词覆盖／包括等义。",
+      "recommendation": "保留名词，先补常用动词教学义。",
+      "current": {
+        "id": 4384,
+        "word": "cover",
+        "phonetic": "ˈkʌvə",
+        "pos": "n.",
+        "meaning": "封面/盖子",
+        "example": "The book has a colourful cover.",
+        "exampleCn": "这本书有一个彩色的封面。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "26",
+        "ieltsLists": [
+          "26"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "oxford3000",
+          "label": "cover",
+          "pos": "v.",
+          "level": "A2",
+          "page": 4
+        },
+        {
+          "sourceId": "oxford3000",
+          "label": "cover",
+          "pos": "n.",
+          "level": "B1",
+          "page": 8
+        }
+      ],
+      "status": "single_model_field_review_not_modified"
+    },
+    {
+      "queueId": "EXISTING-04",
+      "id": 4378,
+      "word": "match",
+      "kind": "base_sense_gap",
+      "priority": "P0-review",
+      "finding": "基础字段和提示只教火柴／比赛，未列匹配／相配动词用法。",
+      "recommendation": "保留名词，补动词匹配／相配。",
+      "current": {
+        "id": 4378,
+        "word": "match",
+        "phonetic": "mætʃ",
+        "pos": "n.",
+        "meaning": "火柴/比赛",
+        "example": "He struck a match to light the candle.",
+        "exampleCn": "他划了一根火柴点燃了蜡烛。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "26",
+        "ieltsLists": [
+          "26"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "oxford3000",
+          "label": "match (contest/correspond)",
+          "pos": "n., v.",
+          "level": "A1",
+          "page": 2
+        }
+      ],
+      "status": "single_model_field_review_not_modified"
+    },
+    {
+      "queueId": "EXISTING-05",
+      "id": 4058,
+      "word": "point",
+      "kind": "base_sense_gap",
+      "priority": "P0-review",
+      "finding": "基础字段和提示只教要点／观点，缺指向动词等常用用法。",
+      "recommendation": "保留已有观点义，优先补指向动词；具体点／分数等义按语境再选。",
+      "current": {
+        "id": 4058,
+        "word": "point",
+        "phonetic": "pɔɪnt",
+        "pos": "n.",
+        "meaning": "要点/观点",
+        "example": "He made several important points during the discussion.",
+        "exampleCn": "他在讨论中提出了几个重要的观点。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "16",
+        "ieltsLists": [
+          "16"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "oxford3000",
+          "label": "point",
+          "pos": "n.",
+          "level": "A1",
+          "page": 3
+        },
+        {
+          "sourceId": "oxford3000",
+          "label": "point",
+          "pos": "v.",
+          "level": "B1",
+          "page": 9
+        }
+      ],
+      "status": "single_model_field_review_not_modified"
+    },
+    {
+      "queueId": "EXISTING-06",
+      "id": 4326,
+      "word": "race",
+      "kind": "base_sense_gap",
+      "priority": "P0-review",
+      "finding": "基础字段和提示只教赛跑／竞赛名词，没有相应动词义。",
+      "recommendation": "保留名词，补赛跑／竞速动词用法。",
+      "current": {
+        "id": 4326,
+        "word": "race",
+        "phonetic": "reɪs",
+        "pos": "n.",
+        "meaning": "赛跑/竞赛",
+        "example": "She won the hundred-metre race by a narrow margin.",
+        "exampleCn": "她以微弱的优势赢得了百米赛跑。",
+        "category": "ielts",
+        "categories": [
+          "ielts"
+        ],
+        "ieltsList": "24",
+        "ieltsLists": [
+          "24",
+          "39"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "oxford3000",
+          "label": "race (competition)",
+          "pos": "n., v.",
+          "level": "A2",
+          "page": 6
+        },
+        {
+          "sourceId": "oxford3000",
+          "label": "race (of people)",
+          "pos": "n.",
+          "level": "B1",
+          "page": 9
+        }
+      ],
+      "status": "single_model_field_review_not_modified"
+    },
+    {
+      "queueId": "EXISTING-07",
+      "id": 5721,
+      "word": "arm",
+      "kind": "pos_alignment_review",
+      "priority": "P1-review",
+      "finding": "释义已有手臂等名词，当前 pos 只写 v.，提示教名词手臂。",
+      "recommendation": "保留ID，按已核实的名词／动词义补齐标签。",
+      "current": {
+        "id": 5721,
+        "word": "arm",
+        "phonetic": "ɑ:m",
+        "pos": "v.",
+        "meaning": "n. 手臂, 袖子, 狭长港湾, 武器\\nvt. 武装, 装备\\nvi. 武装起来\\n[计] 异步应答方式; 自动货品销路管理",
+        "example": "The arm of the record player.",
+        "exampleCn": "唱片播放器的手臂。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "oxford3000",
+          "label": "arm",
+          "pos": "n.",
+          "level": "A1",
+          "page": 1
+        },
+        {
+          "sourceId": "oxford5000-additional",
+          "label": "arm",
+          "pos": "v.",
+          "level": "C1",
+          "page": 3
+        }
+      ],
+      "status": "single_model_field_review_not_modified"
+    },
+    {
+      "queueId": "EXISTING-08",
+      "id": 5451,
+      "word": "like",
+      "kind": "pos_alignment_review",
+      "priority": "P1-review",
+      "finding": "释义和提示已有喜欢等动词用法，当前 pos 只有 prep.。",
+      "recommendation": "对齐词性标签与默认教学用法，不删合理多义。",
+      "current": {
+        "id": 5451,
+        "word": "like",
+        "phonetic": "laik",
+        "pos": "prep.",
+        "meaning": "a. 相似的, 同样的\\nvt. 喜欢, 愿意, 想\\nvi. 喜欢, 希望\\nn. 爱好, 同样的人(或物)\\nprep. 象, 如同\\nadv. 可能",
+        "example": "Dogs, foxes, and the like.",
+        "exampleCn": "狗、狐狸等。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "oxford3000",
+          "label": "like (similar)",
+          "pos": "prep.",
+          "level": "A1",
+          "page": 2
+        },
+        {
+          "sourceId": "oxford3000",
+          "label": "like (find sb/sth pleasant)",
+          "pos": "v.",
+          "level": "A1",
+          "page": 2
+        },
+        {
+          "sourceId": "oxford3000",
+          "label": "like (find sb/sth pleasant)",
+          "pos": "n.",
+          "level": "B1",
+          "page": 8
+        }
+      ],
+      "status": "single_model_field_review_not_modified"
+    },
+    {
+      "queueId": "EXISTING-09",
+      "id": 5709,
+      "word": "light",
+      "kind": "pos_alignment_review",
+      "priority": "P1-review",
+      "finding": "释义已含光、轻的、点燃等义，当前 pos 仅 adv.，提示教形容词。",
+      "recommendation": "逐项对齐词性与义项，不将所有用法统一成副词。",
+      "current": {
+        "id": 5709,
+        "word": "light",
+        "phonetic": "lait",
+        "pos": "adv.",
+        "meaning": "n. 光, 光亮, 灯, 日光, 发光体, 光源, 杰出人物, 火花, 眼光\\na. 轻的, 少量的, 轻微的, 轻快的, 轻浮的, 明亮的, 淡色的, 容易的\\nvt. 点燃, 照亮\\nvi. 点着, 变亮, 突降, 偶然碰到\\nadv.",
+        "example": "The light was filtered through a soft glass window.",
+        "exampleCn": "通过柔软的玻璃窗过滤光线。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "oxford3000",
+          "label": "light (from the sun/a lamp)",
+          "pos": "n., adj.",
+          "level": "A1",
+          "page": 2
+        },
+        {
+          "sourceId": "oxford3000",
+          "label": "light (from the sun/a lamp)",
+          "pos": "v.",
+          "level": "A2",
+          "page": 5
+        },
+        {
+          "sourceId": "oxford3000",
+          "label": "light (not heavy)",
+          "pos": "adj.",
+          "level": "A2",
+          "page": 5
+        }
+      ],
+      "status": "single_model_field_review_not_modified"
+    },
+    {
+      "queueId": "EXISTING-10",
+      "id": 5596,
+      "word": "kind",
+      "kind": "pos_alignment_review",
+      "priority": "P1-review",
+      "finding": "释义已有种类和亲切的，当前 pos 只写 n.，提示教形容词。",
+      "recommendation": "保留种类名词，补齐友善的形容词标签。",
+      "current": {
+        "id": 5596,
+        "word": "kind",
+        "phonetic": "kaind",
+        "pos": "n.",
+        "meaning": "n. 种类, 性质, 方式\\na. 亲切的, 仁慈的, 和蔼的",
+        "example": "Kind to sick patients.",
+        "exampleCn": "善待生病的患者。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "sourceId": "oxford3000",
+          "label": "kind (type)",
+          "pos": "n.",
+          "level": "A1",
+          "page": 2
+        },
+        {
+          "sourceId": "oxford3000",
+          "label": "kind (caring)",
+          "pos": "adj.",
+          "level": "B1",
+          "page": 8
+        }
+      ],
+      "status": "single_model_field_review_not_modified"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import commonSenses from '../data/vocabulary-common-senses-repair/hints-2026-10-29.json' with { type: 'json' };
 import { vocabularyNoteKey } from '../shared/vocabularyAliases.js';
 import assert from 'node:assert/strict';
 import test from 'node:test';
@@ -212,7 +213,9 @@ test('all active and retired vocabulary retains its own notes without rewriting 
     const hints = getCoreWordHints(frozen);
     const type = CORE_SYNONYM_GROUPS[entry.synonymGroup].comparisonType;
     assert.equal(hints[0].label, type === 'usage' ? '用法提示' : type === 'confusable' ? '易混词辨析' : '近义词辨析');
-    assert.equal(hints.length, entry.formation ? 2 : 1);
+    const supplement = Object.hasOwn(commonSenses, String(stored.id)) ? commonSenses[stored.id] : null;
+    const added = supplement?.word === stored.word && Object.entries(supplement.guards).every(([key, value]) => stored[key] === value) ? 1 : 0;
+    assert.equal(hints.length, (entry.formation ? 2 : 1) + added);
     assert.equal(JSON.stringify(frozen), before);
     assert(CORE_SYNONYM_GROUPS[entry.synonymGroup].words.includes(word));
   }

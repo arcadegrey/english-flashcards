@@ -1,0 +1,110 @@
+[
+  {
+    "forms": [
+      "non-profit",
+      "nonprofit"
+    ],
+    "url": "https://dictionary.cambridge.org/us/dictionary/english/nonprofit",
+    "fact": "连字符与连写变体；不包含 not-for-profit 等进一步的意义推断。",
+    "checkedAt": "2026-10-29",
+    "allowedIds": [
+      6710
+    ]
+  },
+  {
+    "forms": [
+      "long-time",
+      "longtime"
+    ],
+    "url": "https://dictionary.cambridge.org/dictionary/english/long-time",
+    "fact": "同一形容词的连字符／连写形式；不包含 long time 这一普通名词短语。",
+    "checkedAt": "2026-10-29",
+    "allowedIds": [
+      6618
+    ]
+  },
+  {
+    "forms": [
+      "minimise",
+      "minimize"
+    ],
+    "url": "https://dictionary.cambridge.org/us/dictionary/english/minimize",
+    "fact": "英美拼写差异；不据此自动替换任意 -ise/-ize 词。",
+    "checkedAt": "2026-10-29",
+    "allowedIds": [
+      1098
+    ]
+  },
+  {
+    "forms": [
+      "cell-phone",
+      "cell phone"
+    ],
+    "allowedIds": [
+      8883
+    ],
+    "url": "https://www.merriam-webster.com/dictionary/cell%20phone",
+    "fact": "CET 2016 连字符写法对照现有手机名词；仅限8883。",
+    "checkedAt": "2026-10-29"
+  },
+  {
+    "forms": [
+      "ice-cream",
+      "ice cream"
+    ],
+    "allowedIds": [
+      8718
+    ],
+    "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+    "fact": "CET 2016 的连字符词目对应 Oxford 3000 的 ice cream 与现有8718冰淇淋名词。",
+    "checkedAt": "2026-10-29"
+  },
+  {
+    "forms": [
+      "yoghurt",
+      "yogurt"
+    ],
+    "allowedIds": [
+      4584
+    ],
+    "url": "https://dictionary.cambridge.org/us/dictionary/english/yogurt",
+    "fact": "词典明列两种拼写；现有4584明确教酸奶。",
+    "checkedAt": "2026-10-29"
+  },
+  {
+    "forms": [
+      "vigor",
+      "vigour"
+    ],
+    "allowedIds": [
+      8648
+    ],
+    "url": "https://www.collinsdictionary.com/us/dictionary/english/vigour",
+    "fact": "英美拼写；现有8648明确教精力、活力。",
+    "checkedAt": "2026-10-29"
+  },
+  {
+    "forms": [
+      "résumé",
+      "resume"
+    ],
+    "allowedIds": [
+      2043
+    ],
+    "url": "https://www.merriam-webster.com/dictionary/resume",
+    "fact": "仅因现有2043的 n. 及简历义均已明确才接受名词变体；不将任意动词 resume 与 résumé 合并。",
+    "checkedAt": "2026-10-29"
+  },
+  {
+    "forms": [
+      "gaol",
+      "jail"
+    ],
+    "allowedIds": [
+      5025
+    ],
+    "url": "https://cet.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf",
+    "fact": "2016词表明确并列 jail/gaol；现有5025的名词义为监狱／看守所。",
+    "checkedAt": "2026-10-29"
+  }
+]

@@ -1,0 +1,346 @@
+{
+  "4002": {
+    "word": "mean",
+    "guards": {
+      "pos": "v. / n. / adj.",
+      "meaning": "v. 意思是；意味着；意指；打算\nn. 平均数；平均值\nadj. 吝啬的；刻薄的；平均的"
+    },
+    "hint": {
+      "label": "用法提示",
+      "scope": "动词 · 意思是、打算；兼有名词和形容词",
+      "text": "询问词义可用 What does ... mean?；mean to do 表示打算做。mean 作名词可指平均值，形容词可指吝啬、刻薄或平均的，需按语境区分。",
+      "exampleWords": [
+        "mean"
+      ],
+      "examples": [
+        {
+          "en": "I did not mean to wake you.",
+          "zh": "我不是有意吵醒你的。"
+        },
+        {
+          "en": "That was a mean thing to say.",
+          "zh": "那样说话很刻薄。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "common-senses-2026-10-29-4002",
+          "title": "韦氏词典 · mean",
+          "url": "https://www.merriam-webster.com/dictionary/mean",
+          "checkedAt": "2026-10-29",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "4058": {
+    "word": "point",
+    "guards": {
+      "pos": "v. / n.",
+      "meaning": "v. 指向；指；指明\nn. 要点；观点；点；尖端；分数"
+    },
+    "hint": {
+      "label": "用法提示",
+      "scope": "动词 · 指向；名词 · 要点、点、分数",
+      "text": "point to 或 point at 后可接所指对象；point out 表示指出。名词 point 依语境可指要点、观点、位置上的点、尖端或分数。",
+      "exampleWords": [
+        "point"
+      ],
+      "examples": [
+        {
+          "en": "Do not point at people.",
+          "zh": "不要用手指着别人。"
+        },
+        {
+          "en": "Our team needs one more point to win.",
+          "zh": "我们队还需要一分才能获胜。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "common-senses-2026-10-29-4058",
+          "title": "韦氏词典 · point",
+          "url": "https://www.merriam-webster.com/dictionary/point",
+          "checkedAt": "2026-10-29",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "4326": {
+    "word": "race",
+    "guards": {
+      "pos": "v. / n.",
+      "meaning": "v. 赛跑；参加竞速比赛；快速移动\nn. 赛跑；竞赛；种族；族群"
+    },
+    "hint": {
+      "label": "用法提示",
+      "scope": "动词 · 比速度、疾行；名词 · 竞赛、族群",
+      "text": "race 可作动词，表示与人比速度或快速移动；作名词时既可指竞赛，也可指种族或族群。后一义与比赛无关，不表示优劣之分。",
+      "exampleWords": [
+        "race"
+      ],
+      "examples": [
+        {
+          "en": "The children race to the gate after class.",
+          "zh": "下课后，孩子们飞快地跑向大门。"
+        },
+        {
+          "en": "People of every race are welcome here.",
+          "zh": "这里欢迎所有种族的人。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "common-senses-2026-10-29-4326",
+          "title": "韦氏词典 · race",
+          "url": "https://www.merriam-webster.com/dictionary/race",
+          "checkedAt": "2026-10-29",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "4378": {
+    "word": "match",
+    "guards": {
+      "pos": "v. / n.",
+      "meaning": "v. 与……相配；匹配；使配对\nn. 火柴；比赛；相配的人或物"
+    },
+    "hint": {
+      "label": "用法提示",
+      "scope": "动词 · 相配、配对；名词 · 火柴、比赛",
+      "text": "表示颜色或样式相配时，match 可直接接对象；match A with B 表示将两者配对。火柴和比赛是不同的名词义。",
+      "exampleWords": [
+        "match"
+      ],
+      "examples": [
+        {
+          "en": "Please match each picture with a word.",
+          "zh": "请把每张图片与一个单词配对。"
+        },
+        {
+          "en": "We watched a tennis match after lunch.",
+          "zh": "午饭后我们看了一场网球比赛。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "common-senses-2026-10-29-4378",
+          "title": "韦氏词典 · match",
+          "url": "https://www.merriam-webster.com/dictionary/match",
+          "checkedAt": "2026-10-29",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "4384": {
+    "word": "cover",
+    "guards": {
+      "pos": "v. / n.",
+      "meaning": "v. 覆盖；盖上；包括；涉及\nn. 封面；盖子；罩子"
+    },
+    "hint": {
+      "label": "用法提示",
+      "scope": "动词 · 覆盖、包括；名词 · 封面、盖子",
+      "text": "cover A with B 表示用 B 盖住 A；cover 也可表示课程或书籍涉及某个主题。名词义指封面、盖子或罩子。",
+      "exampleWords": [
+        "cover"
+      ],
+      "examples": [
+        {
+          "en": "This course will cover basic grammar.",
+          "zh": "这门课程将涉及基础语法。"
+        },
+        {
+          "en": "We need to cover the chairs before painting.",
+          "zh": "刷漆前我们需要把椅子盖好。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "common-senses-2026-10-29-4384",
+          "title": "韦氏词典 · cover",
+          "url": "https://www.merriam-webster.com/dictionary/cover",
+          "checkedAt": "2026-10-29",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "4416": {
+    "word": "can",
+    "guards": {
+      "pos": "modal v. / n.",
+      "meaning": "modal v. 能；会；可以（表示能力、可能或许可）\nn. 金属罐；一罐（食物或饮料）"
+    },
+    "hint": {
+      "label": "用法提示",
+      "scope": "情态动词 · 能、可以；名词 · 罐",
+      "text": "can 后接动词原形，不加 to；第三人称单数也不加 -s。容器义用 a can of 加内容物。",
+      "exampleWords": [
+        "can"
+      ],
+      "examples": [
+        {
+          "en": "You can use my pencil.",
+          "zh": "你可以用我的铅笔。"
+        },
+        {
+          "en": "Please put a can of soup in the basket.",
+          "zh": "请把一罐汤放进篮子里。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "common-senses-2026-10-29-4416",
+          "title": "韦氏词典 · can",
+          "url": "https://www.merriam-webster.com/dictionary/can",
+          "checkedAt": "2026-10-29",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "5451": {
+    "word": "like",
+    "guards": {
+      "pos": "v. / prep. / adj. / n. / adv.",
+      "meaning": "v. 喜欢；想要（常用 would like）\nprep. 像；如同；例如\nadj. 相似的；同样的\nn. 喜好；同样的人或物\nadv. 大约（非正式）；可能（方言用法）"
+    },
+    "hint": {
+      "label": "用法提示",
+      "scope": "动词 · 喜欢；介词 · 像",
+      "text": "like 作动词表示喜欢，可接名词、-ing 或 to do；would like 表示想要。介词 like 表示像或例如，不能只凭拼写把它们当成同一种词性。",
+      "exampleWords": [
+        "like"
+      ],
+      "examples": [
+        {
+          "en": "Would you like a cup of tea?",
+          "zh": "你想喝杯茶吗？"
+        },
+        {
+          "en": "This cloud looks like a bird.",
+          "zh": "这朵云看起来像一只鸟。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "common-senses-2026-10-29-5451",
+          "title": "韦氏词典 · like",
+          "url": "https://www.merriam-webster.com/dictionary/like",
+          "checkedAt": "2026-10-29",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "5596": {
+    "word": "kind",
+    "guards": {
+      "pos": "adj. / n.",
+      "meaning": "adj. 友善的；体贴的；仁慈的\nn. 种类；性质；方式"
+    },
+    "hint": {
+      "label": "用法提示",
+      "scope": "形容词 · 友善；名词 · 种类",
+      "text": "be kind to someone 表示对某人友善；a kind of 后接事物，表示一种。词族 unkind 来自形容词 kind，与种类名词无关。",
+      "exampleWords": [
+        "kind"
+      ],
+      "examples": [
+        {
+          "en": "It is kind of you to help us.",
+          "zh": "你愿意帮助我们，真体贴。"
+        },
+        {
+          "en": "What kind of music do you like?",
+          "zh": "你喜欢什么类型的音乐？"
+        }
+      ],
+      "sources": [
+        {
+          "id": "common-senses-2026-10-29-5596",
+          "title": "韦氏词典 · kind",
+          "url": "https://www.merriam-webster.com/dictionary/kind",
+          "checkedAt": "2026-10-29",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "5709": {
+    "word": "light",
+    "guards": {
+      "pos": "adj. / n. / v. / adv.",
+      "meaning": "adj. 轻的；少量的；轻微的；轻快的；轻浮的；明亮的；浅色的；容易的\nn. 光；光亮；灯；日光；光源；杰出人物；火花；看法\nv. 点燃；照亮；变亮；落下；偶然碰到（light on）\nadv. 轻轻地；轻装地"
+    },
+    "hint": {
+      "label": "用法提示",
+      "scope": "形容词、名词、动词与副词 · 根据搭配区分",
+      "text": "light 可指重量轻、颜色浅或光线足；名词指光或灯，动词可指点燃或照亮。travel light 中是副词，表示少带行李，不是把所有 light 都标成副词。",
+      "exampleWords": [
+        "light"
+      ],
+      "examples": [
+        {
+          "en": "Please turn off the light.",
+          "zh": "请关灯。"
+        },
+        {
+          "en": "We use a match to light the candle.",
+          "zh": "我们用火柴点燃蜡烛。"
+        },
+        {
+          "en": "I always travel light.",
+          "zh": "我旅行时总是轻装出行。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "common-senses-2026-10-29-5709",
+          "title": "韦氏词典 · light",
+          "url": "https://www.merriam-webster.com/dictionary/light",
+          "checkedAt": "2026-10-29",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  },
+  "5721": {
+    "word": "arm",
+    "guards": {
+      "pos": "n. / v.",
+      "meaning": "n. 手臂；扶手；机械臂；袖子；狭长港湾；武器（通常用复数 arms）\nv. 武装；装备"
+    },
+    "hint": {
+      "label": "用法提示",
+      "scope": "名词 · 手臂；动词 · 装备",
+      "text": "人体的手臂可数；机械上的臂状部件也可叫 arm。武器义通常用复数 arms。arm 作动词表示武装或装备，可用 arm someone with something。",
+      "exampleWords": [
+        "arm"
+      ],
+      "examples": [
+        {
+          "en": "The chair has a broken arm.",
+          "zh": "这把椅子有一个坏了的扶手。"
+        },
+        {
+          "en": "These lessons arm students with useful skills.",
+          "zh": "这些课程使学生具备实用技能。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "common-senses-2026-10-29-5721",
+          "title": "韦氏词典 · arm",
+          "url": "https://www.merriam-webster.com/dictionary/arm",
+          "checkedAt": "2026-10-29",
+          "use": "factual-reference"
+        }
+      ]
+    }
+  }
+}

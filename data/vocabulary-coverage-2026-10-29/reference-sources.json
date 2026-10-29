@@ -1,0 +1,81 @@
+{
+  "checkedAt": "2026-10-29",
+  "canonicalInputSha256": "fda962f32cb674b1610af43715d4147616570a7c0c3defd654d1a1a3f9e445a6",
+  "sources": [
+    {
+      "id": "oxford3000",
+      "title": "Oxford 3000 by CEFR level",
+      "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+      "finalUrl": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000_by_CEFR_level.pdf",
+      "sha256": "441aa79b39a720afbe78bf944f8df49bce9f61977c8ac2be9fbcbc81cd94046f",
+      "bytes": 336931,
+      "pages": 12,
+      "expectedParsedRows": 3313,
+      "version": "本次下载PDF的固定哈希版本；不根据网页索引日期推断词表修订年份"
+    },
+    {
+      "id": "oxford5000-additional",
+      "title": "Oxford 5000 by CEFR level — additional list only",
+      "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+      "finalUrl": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000_by_CEFR_level.pdf",
+      "sha256": "41bb14648657bb5b6e0ac64fa6172b6c1f91b1960c5c282746470745de560a20",
+      "bytes": 217257,
+      "pages": 8,
+      "expectedParsedRows": 2012,
+      "version": "本次下载PDF的固定哈希版本；不根据网页索引日期推断词表修订年份"
+    },
+    {
+      "id": "cet2016",
+      "title": "全国大学英语四、六级考试大纲（2016年修订版）词表",
+      "url": "https://cet.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf",
+      "finalUrl": "https://cet.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf",
+      "sha256": "9166d3c03b7bc43abd9d9df91bd2ef8085b4419286f1e5ca100dea68f3cfd1f1",
+      "bytes": 12070155,
+      "pages": 215,
+      "expectedParsedRows": 5377,
+      "version": "2016年修订版"
+    },
+    {
+      "id": "awl-headwords",
+      "title": "Headwords of the Academic Word List",
+      "url": "https://www.wgtn.ac.nz/lals/resources/academicwordlist/awl-headwords/Headwords-of-the-Academic-Word-List.pdf",
+      "finalUrl": "https://www.wgtn.ac.nz/lals/resources/academicwordlist/awl-headwords/Headwords-of-the-Academic-Word-List.pdf",
+      "sha256": "66a54df3d2881921d42704d20e2524c36c2c454fcf3f816170eb06036cf6209b",
+      "bytes": 109076,
+      "pages": 8,
+      "expectedParsedRows": 570,
+      "version": "本次下载PDF的固定哈希版本；不根据网页索引日期推断词表修订年份"
+    },
+    {
+      "id": "oxford-phrases",
+      "title": "Oxford Phrase List — main headings only",
+      "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-phrase-list/Oxford%20Phrase%20List.pdf",
+      "finalUrl": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-phrase-list/Oxford%20Phrase%20List.pdf",
+      "sha256": "35da430c8c0353d4a44c6293ca0d05ae00787488562beaed1ff2835c6e37e118",
+      "bytes": 63334,
+      "pages": 4,
+      "expectedParsedRows": 750,
+      "version": "本次下载PDF的固定哈希版本；不根据网页索引日期推断词表修订年份"
+    }
+  ],
+  "otherTargets": [
+    {
+      "id": "kaoyan",
+      "status": "complete_current_wordlist_not_verified",
+      "reason": "本轮未取得可核验完整当前考研词表，不以网页摘要或书籍简介凑成5500词参照。",
+      "url": "https://yankao.neea.edu.cn/html1/category/1509/6235-2.htm"
+    },
+    {
+      "id": "ielts",
+      "status": "complete_exam_wordlist_not_verified",
+      "reason": "官方备考及词汇评价资料作为背景，AWL仅作学术参考，不报完整考试词汇覆盖率。",
+      "url": "https://takeielts.britishcouncil.org/blog/vocabulary-for-ielts"
+    },
+    {
+      "id": "toefl",
+      "status": "complete_exam_wordlist_not_verified",
+      "reason": "未取得可核验完整官方词表，AWL不改名为托福必考词表。",
+      "url": "https://www.ets.org/toefl/test-takers/ibt/prepare.html"
+    }
+  ]
+}
