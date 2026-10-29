@@ -5,6 +5,7 @@ import { NAME_PLACE_VOCABULARY_AUDIO } from './namePlaceVocabularyAudio.js';
 import { SENSE_REVIEW_VOCABULARY_AUDIO } from './senseReviewVocabularyAudio.js';
 import { FEEDBACK_VOCABULARY_AUDIO } from './feedbackVocabularyAudio.js';
 import { TEACHING_P1_VOCABULARY_AUDIO } from './teachingP1VocabularyAudio.js';
+import { TEACHING_P2_VOCABULARY_AUDIO } from './teachingP2VocabularyAudio.js';
 
 const voices = new Set(['af_bella', 'am_michael', 'bf_emma', 'bm_george']);
 export const AUDIO_UPDATES_BASE_URL = (import.meta.env?.VITE_AUDIO_UPDATES_BASE_URL
@@ -13,7 +14,7 @@ export const AUDIO_UPDATES_BASE_URL = (import.meta.env?.VITE_AUDIO_UPDATES_BASE_
 export function correctedVocabularyAudioUrl(word, field, voice) {
   if (!word || !['word', 'example'].includes(field) || !voices.has(voice)) return null;
   const id = String(word.id ?? '');
-  for (const [batch, updates] of [['2026-10-29-p1', TEACHING_P1_VOCABULARY_AUDIO], ['2026-10-29-feedback', FEEDBACK_VOCABULARY_AUDIO], ['2026-10-26-sense', SENSE_REVIEW_VOCABULARY_AUDIO], ['2026-10-26-name-place', NAME_PLACE_VOCABULARY_AUDIO]]) {
+  for (const [batch, updates] of [['2026-10-29-p2', TEACHING_P2_VOCABULARY_AUDIO], ['2026-10-29-p1', TEACHING_P1_VOCABULARY_AUDIO], ['2026-10-29-feedback', FEEDBACK_VOCABULARY_AUDIO], ['2026-10-26-sense', SENSE_REVIEW_VOCABULARY_AUDIO], ['2026-10-26-name-place', NAME_PLACE_VOCABULARY_AUDIO]]) {
     const revision = Object.hasOwn(updates, id) ? updates[id][field] : null;
     if (revision && word[field] === revision.text
       && Object.entries(revision.guards || {}).every(([key, value]) => word[key] === value)) {

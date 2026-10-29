@@ -3,7 +3,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
 import { getCoreWordHints } from '../src/utils/wordHints.js';
-import { beforeTeachingP1Review } from '../shared/vocabularyHistory.js';
+import { beforeTeachingP1Review, beforeTeachingP2Review } from '../shared/vocabularyHistory.js';
 
 const root = new URL('../', import.meta.url);
 const read = async path => JSON.parse(await readFile(new URL(path, root), 'utf8'));
@@ -18,15 +18,20 @@ const sourceHash = hash(JSON.stringify(vocabulary, null, 2) + '\n');
 const register = await read('data/vocabulary-teaching-audit/reviews-2026-10-29.json');
 const syntax = await read('data/vocabulary-teaching-audit/syntax-screen-2026-10-29.json');
 const p1Repair = await read('data/vocabulary-p1-repair/reviews-2026-10-29.json');
-assert.equal(p1Repair.afterSha256, currentSourceHash, 'Unregistered vocabulary changes: do not claim current repair status.');
+const p2Repair = await read('data/vocabulary-p2-repair/reviews-2026-10-29.json');
+assert.equal(p2Repair.afterSha256, currentSourceHash, 'Unregistered vocabulary changes: do not claim current repair status.');
+assert.equal(p1Repair.afterSha256, hash(JSON.stringify(beforeTeachingP2Review(currentVocabulary),null,2)+'\n'));
 assert.equal(register.inputSha256, sourceHash, 'Vocabulary changed: review a new snapshot instead of overwriting this historical audit.');
 assert.equal(syntax.inputSha256, sourceHash, 'Syntax cues are stale.');
 assert.equal(syntax.records.length, vocabulary.length);
 assert.equal(new Set(syntax.records.map(row => row.id)).size, vocabulary.length);
 const byId = new Map(vocabulary.map(word => [word.id, word]));
 const currentById = new Map(currentVocabulary.map(word => [word.id, word]));
-const resolutions = new Map(p1Repair.reviews.flatMap(review => [...review.issueIds, ...review.alsoResolvedIssueIds]
-  .map(issueId => [issueId, review])));
+const resolutions = new Map([
+  ...p1Repair.reviews.flatMap(review => [...review.issueIds, ...review.alsoResolvedIssueIds]
+    .map(issueId => [issueId, {reviewId:review.id,batch:'2026-10-29-p1'}])),
+  ...p2Repair.reviews.flatMap(review => review.issueIds.map(issueId => [issueId,{reviewId:review.id,batch:'2026-10-29-p2'}])),
+]);
 const cues = new Map(syntax.records.map(row => [row.id, row]));
 const repaired = new Set([6508, 6718, 6919, 7580]);
 const normalizeTag = value => ({ a: 'adj', ad: 'adv', vt: 'v', vi: 'v', int: 'interj', art: 'det', article: 'det', modal: 'aux' }[value] || value);
@@ -54,7 +59,7 @@ const issues = register.issues.map((issue, index) => {
   const hints = getCoreWordHints(byId.get(issue.id));
   const issueId = `TQ-${String(index + 1).padStart(3, '0')}`, repair = resolutions.get(issueId);
   return { issueId, ...issue, auditSnapshot: issue.current, current: currentById.get(issue.id),
-    resolution: repair ? { status:'resolved_local_text', batch:'2026-10-29-p1', reviewId:repair.id }
+    resolution: repair ? { status:'resolved_local_text', ...repair }
       : { status:'open' },
     hintScopes: hints.map(hint => hint.scope).filter(Boolean) };
 });
@@ -108,7 +113,7 @@ const summary = {
   openP2Items: issues.filter(issue => issue.priority === 'P2' && issue.resolution.status === 'open').length,
 };
 const report = { auditDate: register.date, input: 'public/data/vocabulary.json', inputSha256: sourceHash,
-  currentSourceSha256: currentSourceHash, screeningAppliesTo:'captured pre-P1 audit snapshot, not the repaired canonical examples',
+  currentSourceSha256: currentSourceHash, screeningAppliesTo:'captured pre-P1/P2 audit snapshot, not the repaired canonical examples',
   scope: register.scope, reviewer: register.reviewer,
   limitations: [
     'All 8699 records received mechanical screening; only listed items and exclusions received this single-model review. No exhaustive word-by-word expert certification.',
@@ -116,7 +121,7 @@ const report = { auditDate: register.date, input: 'public/data/vocabulary.json',
     'Registered items include confirmed record inconsistencies, product-level fragment improvements, editorial suggestions and a source-review item. Do not add them up as confirmed lexical mistranslations.',
     'Some words have several items; status and counts are item-level unless explicitly labelled distinct records. Pending cues may overlap a reviewed issue of another kind.',
     'Only base English example fields were parsed across the full library; hint scopes were compared for reviewed items. No exhaustive hint-example, translation, pronunciation or audio listening audit.',
-    'This generator only writes reports. Screening statistics describe the pre-P1 snapshot; issue resolutions and current records use the registered P1 after-state. Audio release and application checks are documented separately.',
+    'This generator only writes reports. Screening statistics describe the pre-P1/P2 snapshot; issue resolutions and current records use the registered P2 after-state. Audio release and application checks are documented separately.',
   ], summary, ruleLabels, syntaxMethod: syntax.method, sources: register.sources, issues,
   reviewedExclusions: [...exclusions.values()], candidates, trace: register.trace };
 const cell = value => String(value ?? '').replaceAll('\\n', ' / ').replace(/\r?\n/g, ' / ').replaceAll('|', '\\|');
@@ -132,14 +137,14 @@ const sourceLinks = ids => ids.map(id => { const source = register.sources.find(
 const lines = [
   '# 词库释义、词性与例句质量：首批问题清单（2026-10-29）', '',
   '**本页保留修复前的审计原文与线索统计，并单列后续修复状态。报告生成器只写文档；全库程序筛查不等于全库逐词审校，独立语言专家复核尚未完成。**', '',
-  `**P1 后续状态：125 项 P1 已在本地文本修复，另联动关闭 2 项同词短语问题；当前 P1 未修复 ${summary.openP1Items} 项，P2 未修复 ${summary.openP2Items} 项。音频及应用验收见 [P1 修复交接](vocabulary-teaching-p1-repair-2026-10-29.md)。**`, '',
+  `**后续修复状态：P1 批次修复 125 项 P1 及 2 项关联 P2，P2 批次修复其余 176 项。当前清单 P1 未修复 ${summary.openP1Items} 项，P2 未修复 ${summary.openP2Items} 项。此结论限本清单，不代表全部未复核线索均无问题。音频及应用验收见 [P1 交接](vocabulary-teaching-p1-repair-2026-10-29.md)和 [P2 交接](vocabulary-teaching-p2-repair-2026-10-29.md)。**`, '',
   `- 筛查 ${summary.recordsScreened} 条活动词条；上轮已修的 gifted／teenage／ulcer／kingdom 四条不作为新问题重复登记。`,
   `- 首批登记 **${summary.registeredItems} 项待办，涉及 ${summary.registeredDistinctRecords} 个不同词条**；同词可同时有词性、短语和释义问题，不能把事项数当单词数。`,
   `- P1 涉及 ${summary.priorityOneDistinctRecords} 个不同词条；仅 P2 涉及 ${summary.priorityTwoOnlyDistinctRecords} 个。P1 是字段／语法／含义对齐优先，P2 包括有效短语的完整例句改写和教学改进，并非所有原表达都不合法。`,
   `- 程序共有 ${summary.screeningHitRecords} 条记录命中至少一条线索；其中 ${summary.recordsWithNoReviewYet} 条尚无本轮逐条结论，另有已复核记录的其他线索仍待核。完整原文和规则见同名 JSON，不能把全部命中都说成错误。`,
   '- 报告中“已复核”指本轮单模型对照原文与注明来源，不是独立语言专家签字。词典链接只支持相应事实，不表示出版社审核过本项目例句。', '',
   '## 优先线索：此前“溃疡、两词例句”', '',
-  '**gastric（6602）** 当前基础例句正是 `Gastric ulcer.`，中文“胃溃疡。”。这是可核验的相关候选，尚不能确认用户当时看到的卡片就是它；ulcer（6919）当前已修内容不回滚。', '',
+  `**gastric（6602）** 审计时的原句为 \`Gastric ulcer.\`／“胃溃疡。”，已由 P2 批次改成完整句 \`${currentById.get(6602).example}\`。它仍只是与用户原反馈接近的来源候选，不能确认当时展示的具体卡片；ulcer（6919）的既有修复保持不变。`, '',
   '## 分类数量（按事项计，类别之间可能涉及同一个词）', '',
   '| 类型 | 事项数 |', '| --- | ---: |',
   ...Object.entries(summary.registeredItemsByKind).map(([kind, count]) => `| ${kindNames[kind]} | ${count} |`), '',
@@ -174,10 +179,10 @@ lines.push('## 自动筛查规则与待复核范围', '', '| 线索 | 命中记�
   '5. 本次不做发音准确性推断或全库听音，也不因本次新清单而重置历史审查批次的已关闭状态。', '',
   '## 复现与完整性验证', '',
   '- 登记源：`data/vocabulary-teaching-audit/reviews-2026-10-29.json`；结构线索快照：同目录 `syntax-screen-2026-10-29.json`。',
-  '- 执行 `node scripts/audit-vocabulary-teaching.mjs` 只重建本 Markdown 与同名 JSON，使用登记的 P1 before 快照重建原筛查输入，同时严格核对当前库等于登记的 after 状态；不接受未登记的新修改，也不把旧句法线索当成修复后结论。',
+  '- 执行 `node scripts/audit-vocabulary-teaching.mjs` 只重建本 Markdown 与同名 JSON，依次撤销登记的 P2／P1 before 快照重建原筛查输入，同时严格核对当前库等于登记的最新 after 状态；不接受未登记的新修改，也不把旧句法线索当成修复后结论。',
   '- spaCy 3.8.18／en_core_web_sm 3.8.0 的句法解析仅作用于基础英文例句；完整解析日志在忽略目录 `output/vocabulary-quality-audit/`。',
   `- 输入 SHA-256：\`${sourceHash}\`。`,
-  `- 修复后当前词库 SHA-256：\`${currentSourceHash}\`。本生成器不改业务数据；实际应用回归及音频发布以 P1 交接为准。`, '',
+  `- 修复后当前词库 SHA-256：\`${currentSourceHash}\`。本生成器不改业务数据；实际应用回归及音频发布以 P1／P2 交接为准。`, '',
   '## 核对来源', '',
   ...register.sources.map(source => `- [${source.title}](${source.url})：${source.fact}（2026-10-29，${source.access === 'page' ? '读取词典正文' : '核对检索返回正文片段；直开可能受限'}）`), '',
 );

@@ -10,6 +10,13 @@ const hash = value => createHash('sha256').update(value).digest('hex');
 const serialize = value => JSON.stringify(value, null, 2) + '\n';
 const vocabularyPath = new URL('public/data/vocabulary.json', root);
 const raw = await readFile(vocabularyPath, 'utf8'), vocabulary = JSON.parse(raw);
+let laterP2;
+try { laterP2 = await read('data/vocabulary-p2-repair/reviews-2026-10-29.json'); }
+catch (error) { if (error.code !== 'ENOENT') throw error; }
+if (laterP2 && hash(raw) === laterP2.afterSha256) {
+  console.log('P1 is already included in the registered P2 state; preserving all later repairs.');
+  process.exit(0);
+}
 const audit = await read('docs/vocabulary-teaching-quality-audit-2026-10-29.json');
 const patches = await read('data/vocabulary-p1-repair/patches-2026-10-29.json');
 const issues = audit.issues.filter(issue => issue.priority === 'P1');

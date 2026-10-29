@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
-import { beforeTeachingP1Review } from '../shared/vocabularyHistory.js';
+import { beforeTeachingP1Review, beforeTeachingP2Review } from '../shared/vocabularyHistory.js';
 import { correctedVocabularyAudioUrl } from '../shared/vocabularyAudio.js';
 import { TEACHING_P1_VOCABULARY_AUDIO } from '../shared/teachingP1VocabularyAudio.js';
 import { buildWordAssignment, gradeWordAssignment } from '../shared/wordAssignments.js';
@@ -11,7 +11,8 @@ import { getCoreWordHints } from '../src/utils/wordHints.js';
 import { createSpeechService } from '../src/utils/speechEngine.js';
 
 const read = async path => JSON.parse(await readFile(new URL(`../${path}`, import.meta.url), 'utf8'));
-const vocabulary = await read('public/data/vocabulary.json');
+// Assert this historical stage exactly; the later P2 stage has its own tests.
+const vocabulary = beforeTeachingP2Review(await read('public/data/vocabulary.json'));
 const register = await read('data/vocabulary-p1-repair/reviews-2026-10-29.json');
 const audit = await read('data/vocabulary-teaching-audit/reviews-2026-10-29.json');
 const manifest = await read('public/audio-updates/2026-10-29-p1/manifest.json');
