@@ -7,7 +7,7 @@ const unique = (list) => Array.from(new Set(list.filter(Boolean)));
 
 const trimPossessive = (token) => token.replace(/'s$/i, '').replace(/s'$/i, '');
 
-const deriveVariants = (token = '') => {
+export const deriveReadingVariants = (token = '') => {
   const lower = trimPossessive(String(token).toLowerCase());
   if (!lower) return [];
 
@@ -63,7 +63,7 @@ export const buildWordLookup = (words = []) => {
 
 export const resolveVocabularyWord = (token, wordLookup) => {
   if (!isEnglishWordToken(token) || !wordLookup) return null;
-  const variants = deriveVariants(token);
+  const variants = deriveReadingVariants(token);
   for (const variant of variants) {
     const matched = wordLookup.get(normalizeVocabularyHeadword(variant));
     if (matched) return matched;

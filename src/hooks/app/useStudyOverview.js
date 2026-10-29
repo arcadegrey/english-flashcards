@@ -10,10 +10,10 @@ import {
   loadVocabularyCategoryCatalog, loadVocabularyCatalogByIds as loadVocabularyByIds,
   hasBundledVocabularyId, VOCABULARY_COUNTS,
 } from '../../data/vocabulary'
-import { preparedReadings } from '../../data/readingMetadata.js'
+import { preparedReadings, readingVocabularyIndex } from '../../data/readingMetadata.js'
 import categories from '../../data/categories'
 import { getExamVocabulary, getPlanVocabulary, getPlanWordStats } from '../../utils/studyPlan'
-import { buildWordLookup } from '../../utils/readingText'
+import { buildReadingWordLookup } from '../../data/readingVocabularyLoader.js'
 import { getWordsForReview } from '../../utils/spacedRepetition'
 
 // Project reading, collection and daily-plan data and prepare missing plan vocabulary.
@@ -37,7 +37,7 @@ export function useStudyOverview(learning, catalog, navigationState, clock) {
   const [planPreparationError, setPlanPreparationError] = useState('')
   const [planPreparationAttempt, setPlanPreparationAttempt] = useState(0)
 
-  const vocabularyLookup = useMemo(() => buildWordLookup(allVocabulary), [allVocabulary])
+  const vocabularyLookup = useMemo(() => buildReadingWordLookup(readingVocabularyIndex, customWords), [customWords])
   const masteredWordIdSet = useMemo(
     () => new Set(masteredWords.map((item) => String(item))),
     [masteredWords]

@@ -200,7 +200,7 @@ export default function AppPages({ navigation, learning, catalog, overview, acco
             navItems={shell.selectionNavItems}
             topbarProps={shell.selectionTopbarProps}
             masteredWords={learning.masteredWords}
-            wordLookup={overview.vocabularyLookup}
+            wordLookup={navigation.readingWordLookup}
             onMarkAsLearned={learning.setWordAsLearned}
             onMarkAsMastered={learning.setWordAsMastered}
             onSyncAccount={account.handleHomeSync}

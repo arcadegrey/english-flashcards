@@ -5,3 +5,6 @@ import config from './readingCatalog.json'
 export const preparedReadings = config.entries
 export const readingMetadata = preparedReadings.map(entry => entry.article)
 export const READING_CONTENT_VERSION = config.version
+// Only identity/spelling enters startup; meanings/IPA remain lazy reading data.
+export const readingVocabularyIndex = config.vocabulary
+export const readingVocabularyCatalog = config.vocabularyCatalog

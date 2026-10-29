@@ -9,6 +9,7 @@ import { stopSpeak } from '../../utils/speech'
 import { useVocabularyNavigation } from './useVocabularyNavigation.js'
 import { loadLearningView } from '../../utils/learningViewLoader.js'
 import { useReadingArticle } from '../useReadingArticle.js'
+import { useReadingVocabulary } from '../useReadingVocabulary.js'
 import { createStudyWordOrder } from '../../utils/studyOrder.js'
 
 // Coordinate view transitions and invalidate late study preparation responses.
@@ -24,7 +25,7 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
   } = navigationState
   const {
     wordBookmarks, studyPlanCategory, setPlanPreferencesUpdatedAt, setStudyPlanCategory,
-    recordReadingCompletion, setWordAsLearned, setWordAsMastered, resetLearningProgress,
+    recordReadingCompletion, setWordAsLearned, setWordAsMastered, resetLearningProgress, customWords,
   } = learning
   const {
     setVocabulary, fullVocabularyLoadedRef, filteredVocabulary, loadAllExamVocabulary, prepareSavedWords,
@@ -86,6 +87,8 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
     [readingRetry, activeReadingAssignment, readingLibrary, selectedReadingId]
   )
   const readingContent = useReadingArticle(view === 'readingSession' ? sourceReading : null)
+  const readingWords = useReadingVocabulary(view === 'readingSession' ? sourceReading : null, customWords,
+    JSON.stringify([authUser?.id || 'guest', selectedReadingId, activeReadingAssignment?.id, readingRetry?.id]))
   const selectedReading = view === 'readingSession' ? readingContent.article : sourceReading
 
   const handleBackToHome = () => {
@@ -365,8 +368,10 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
   }
 
   return {
-    handleSelectExamScope, currentWord, selectedReading, readingLoading: readingContent.loading,
-    readingError: readingContent.error, retryReadingLoad: readingContent.retry,
+    handleSelectExamScope, currentWord, selectedReading,
+    readingLoading: !(readingContent.error || readingWords.error) && (readingContent.loading || readingWords.loading),
+    readingError: readingContent.error || readingWords.error, readingWordLookup: readingWords.wordLookup,
+    retryReadingLoad: () => { readingContent.retry(); readingWords.retry() },
     handleBackToHome, handleOpenWordStudy, handleOpenReadingList,
     handleOpenTodayReview, handleOpenSavedWords, handleOpenWrongWords, handleOpenStatistics,
     handleOpenClassroom, handleOpenExamPractice, handleOpenPlanSettings, handleSelectPlanCategory,

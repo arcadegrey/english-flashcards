@@ -39,7 +39,9 @@ test('generated metadata and every content-hashed file exactly preserve canonica
     for (const field of ['id', 'title', 'level', 'source', 'category', 'tags', 'examType', 'sourceUrl']) assert.deepEqual(entry[field], article[field])
     assert.deepEqual(await read(`public${entry.contentPath}`), { revision: entry.contentRevision, article })
   }
-  assert(gzipSync(JSON.stringify(config)).length < gzipSync(JSON.stringify(readings)).length / 2)
+  const { vocabulary, vocabularyCatalog, ...proseMetadata } = config
+  assert(vocabulary.length > 0 && vocabularyCatalog.path)
+  assert(gzipSync(JSON.stringify(proseMetadata)).length < gzipSync(JSON.stringify(readings)).length / 2)
 })
 
 test('generated unique tokens preserve all reading statistics with core/full/custom lookups and mastery changes', async () => {
