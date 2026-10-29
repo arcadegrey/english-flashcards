@@ -8,6 +8,7 @@ import { speakWord } from '../utils/speech';
 import { matchesVocabularyQuery } from '../../shared/vocabularyAliases.js';
 import { RETIRED_VOCABULARY, isRetiredVocabularyId } from '../../shared/retiredVocabulary.js';
 import { resolveCollectionWords } from '../utils/collectionVocabulary.js';
+import '../styles/study-collection.css';
 
 const SearchIcon = (
   <svg viewBox="0 0 24 24" aria-hidden="true">

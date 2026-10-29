@@ -10,6 +10,8 @@ import { EXAM_ROUND_SIZE, EXAM_MODE_LABELS, createExamAttempt } from '../../../s
 import { useExamHistory } from '../../context/exam-history-context';
 import { examDraftKey } from '../../utils/examHistory';
 import { practiceVocabulary } from '../../../shared/vocabularyPracticePolicy.js';
+import '../../styles/study-assessment.css';
+import '../../styles/test-workspace.css';
 
 function readDraft(key, meta, history) {
   try {

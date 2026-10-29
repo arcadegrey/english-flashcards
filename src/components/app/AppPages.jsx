@@ -191,6 +191,9 @@ export default function AppPages({ navigation, learning, catalog, overview, acco
             retryAttempt={navigation.readingRetry}
             onSubmitAssignment={navigation.handleSubmitReadingAssignment}
             article={navigation.selectedReading}
+            loading={navigation.readingLoading}
+            loadError={navigation.readingError}
+            onRetryLoad={navigation.retryReadingLoad}
             mode={navigation.mode}
             onBack={navigation.handleBackToReadingList}
             onOpenMode={navigation.handleOpenModeFromReading}

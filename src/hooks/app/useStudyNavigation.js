@@ -8,6 +8,8 @@ import { normalizePlanCategory } from '../../utils/studyPlan'
 import { stopSpeak } from '../../utils/speech'
 import { useVocabularyNavigation } from './useVocabularyNavigation.js'
 import { loadLearningView } from '../../utils/learningViewLoader.js'
+import { useReadingArticle } from '../useReadingArticle.js'
+import { createStudyWordOrder } from '../../utils/studyOrder.js'
 
 // Coordinate view transitions and invalidate late study preparation responses.
 export function useStudyNavigation(navigationState, learning, catalog, overview, account) {
@@ -66,25 +68,7 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
     const pendingStartWordId = pendingStartWordIdRef.current
     pendingStartWordIdRef.current = null
 
-    if (pendingStartWordId != null) {
-      const startWordIndex = filteredVocabulary.findIndex(
-        (word) => String(word.id) === String(pendingStartWordId)
-      )
-
-      if (startWordIndex >= 0) {
-        const startWord = filteredVocabulary[startWordIndex]
-        const restWords = filteredVocabulary
-          .filter((_, index) => index !== startWordIndex)
-          .sort(() => Math.random() - 0.5)
-
-        setShuffledWords([startWord, ...restWords])
-        setCurrentIndex(0)
-        return
-      }
-    }
-
-    const shuffled = [...filteredVocabulary].sort(() => Math.random() - 0.5)
-    setShuffledWords(shuffled)
+    setShuffledWords(createStudyWordOrder(filteredVocabulary, pendingStartWordId))
     setCurrentIndex(0)
   }, [view, mode, scopeKey, filteredVocabulary, pendingStartWordIdRef, setCurrentIndex, setShuffledWords])
 
@@ -97,10 +81,12 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
 
   const currentWord = shuffledWords[currentIndex]
 
-  const selectedReading = useMemo(
+  const sourceReading = useMemo(
     () => readingRetry?.article || activeReadingAssignment?.article || readingLibrary.find((item) => String(item.id) === String(selectedReadingId)) || null,
     [readingRetry, activeReadingAssignment, readingLibrary, selectedReadingId]
   )
+  const readingContent = useReadingArticle(view === 'readingSession' ? sourceReading : null)
+  const selectedReading = view === 'readingSession' ? readingContent.article : sourceReading
 
   const handleBackToHome = () => {
     setAssessmentBackTarget('home')
@@ -230,7 +216,7 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
     setExamPreparationError(null)
 
     try {
-      const [loadedVocabulary] = await Promise.all([loadAllExamVocabulary(studyPlanCategory), loadLearningView()])
+      const [loadedVocabulary] = await Promise.all([loadAllExamVocabulary(studyPlanCategory), loadLearningView(nextMode)])
       if (requestId !== examRequestRef.current) return
       if (loadedVocabulary) {
         setVocabulary((prev) => mergeVocabularyList(prev, loadedVocabulary))
@@ -375,12 +361,13 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
   const resetProgress = () => {
     resetLearningProgress()
     setCurrentIndex(0)
-    const shuffled = [...filteredVocabulary].sort(() => Math.random() - 0.5)
-    setShuffledWords(shuffled)
+    setShuffledWords(createStudyWordOrder(filteredVocabulary))
   }
 
   return {
-    handleSelectExamScope, currentWord, selectedReading, handleBackToHome, handleOpenWordStudy, handleOpenReadingList,
+    handleSelectExamScope, currentWord, selectedReading, readingLoading: readingContent.loading,
+    readingError: readingContent.error, retryReadingLoad: readingContent.retry,
+    handleBackToHome, handleOpenWordStudy, handleOpenReadingList,
     handleOpenTodayReview, handleOpenSavedWords, handleOpenWrongWords, handleOpenStatistics,
     handleOpenClassroom, handleOpenExamPractice, handleOpenPlanSettings, handleSelectPlanCategory,
     handleStartPlanLearning, handleRetryPlanPreparation, handleStartExamPractice, handleOpenReadingSession, handleStartReadingAssignment,

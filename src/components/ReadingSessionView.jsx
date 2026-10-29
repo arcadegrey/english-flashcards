@@ -9,6 +9,7 @@ import { speak, speakWord } from '../utils/speech';
 import { isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from '../utils/readingText';
 import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
 import { useWordDetails } from '../hooks/useWordDetails.js';
+import '../styles/study-reading.css';
 import '../styles/reading-question-options.css';
 
 function ReadingSessionView({
@@ -657,4 +658,21 @@ function ReadingSessionView({
   );
 }
 
-export default ReadingSessionView;
+// Keep draft/history hooks unmounted until canonical content is complete. A
+// metadata-only placeholder must never create a session or record completion.
+export default function ReadingSessionPage(props) {
+  const { article, loading, loadError, onRetryLoad, onBack, navItems, topbarProps } = props;
+  if (!loading && !loadError) return <ReadingSessionView {...props} />;
+  return <AppLayout active="reading" title="阅读训练" subtitle={article?.title || '选择文章后开始阅读'}
+    navItems={navItems} topbarProps={topbarProps}>
+    <div className="reading-session-study-main">
+      <article className="learn-refresh-card reading-session-study-card">
+        {loading ? <LoadingState title="正在加载阅读文章…" /> : <div role="alert">
+          <p className="learn-refresh-empty">{loadError}</p>
+          <button type="button" className="learn-refresh-example-audio" onClick={onRetryLoad}>重试加载文章</button>
+        </div>}
+        <button type="button" className="learn-refresh-example-audio" onClick={onBack}>返回列表</button>
+      </article>
+    </div>
+  </AppLayout>;
+}

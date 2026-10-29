@@ -95,6 +95,14 @@ AppLayout -> control card -> thin progress bar -> centered answer card
 - Internal exam modes render through `LearningView` when `mode !== "learn"`.
 - Theme state stays in `ThemeProvider` / `useTheme`; do not add a second theme storage contract.
 
+## Style Loading Boundaries
+
+- `src/main.jsx` imports `src/styles/app-base.css`, which keeps the existing `index.css` resets before `study-core.css`. Shared study primitives load once, before lazy page styles; do not introduce a lower-priority CSS layer beneath the existing unlayered resets.
+- Word cards/study use `study-word.css`; reading uses `study-reading.css` followed by `reading-question-options.css`; collections use `study-collection.css`; vocabulary directories use `vocabulary-selection.css` followed by `study-catalog.css`; voice settings own `study-voice.css`.
+- `AssessmentSession` is lazy and owns `study-assessment.css` plus `test-workspace.css`. Explicit assessment starts call `loadLearningView(mode)` so page code, assessment styles and vocabulary prepare concurrently. The lazy renderer shares that request; preserve stylesheet retry handling.
+- `word-learning-refresh.css` is a compatibility import entry, including retained `study-legacy.css` rules. New app pages import their own styles instead of restoring the full stylesheet.
+- Keep explicit first-word selection and study-pool stability through `createStudyWordOrder`; use the shared Fisher–Yates shuffle instead of a random sort comparator.
+
 ## Verification
 
 Run:

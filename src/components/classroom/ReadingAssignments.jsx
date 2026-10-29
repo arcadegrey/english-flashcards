@@ -2,7 +2,7 @@ import LoadingState from '../ui/LoadingState';
 import { useEffect, useState } from 'react';
 import { BaseCard } from '../ui/Cards';
 import { PrimaryButton, SecondaryButton } from '../ui/Buttons';
-import readings from '../../data/readings';
+import { readingMetadata as readings } from '../../data/readingMetadata.js';
 import { WORD_ASSIGNMENT_CATEGORIES } from '../../../shared/wordAssignments.js';
 import { formatClassroomDate } from '../../utils/classroom';
 import { loadReadingAssignments, publishReadingAssignment, loadAssignmentSubmissions, loadStudentAssignments,
@@ -19,7 +19,7 @@ const combine = (reading, words) => [...reading.assignments.map(item=>({...item,
   .sort((a,b)=>Number(Boolean(a.submittedAt))-Number(Boolean(b.submittedAt)) || a.dueAt.localeCompare(b.dueAt));
 
 export function TeacherReadingAssignments({ classId, userId }) {
-  const options=readings.filter(article=>article.questions?.length);
+  const options=readings.filter(article=>article.questionCount);
   const [type,setType]=useState('reading');
   const [articleId,setArticleId]=useState(String(options[0]?.id || ''));
   const [category,setCategory]=useState('daily');
@@ -71,7 +71,7 @@ export function TeacherReadingAssignments({ classId, userId }) {
     <div className="classroom-tabs" role="group" aria-label="作业类型">{[['reading','阅读作业'],['words','词汇作业']].map(([id,label])=><button key={id} type="button" disabled={busy} aria-pressed={type===id} className={type===id?'is-active':''} onClick={()=>setType(id)}>{label}</button>)}</div>
     {error && <p className="classroom-alert" role="alert">{error}</p>}{notice && <p className="classroom-notice" role="status">{notice}</p>}
     <form className="classroom-assignment-form" onSubmit={publish}>
-      {type==='reading' ? <label className="classroom-field">阅读文章<select aria-label="阅读文章" className="classroom-input" value={articleId} disabled={busy} onChange={event=>setArticleId(event.target.value)} required>{options.map(article=><option key={article.id} value={article.id}>{article.level} · {article.title} · {article.questions.length} 题</option>)}</select></label>
+      {type==='reading' ? <label className="classroom-field">阅读文章<select aria-label="阅读文章" className="classroom-input" value={articleId} disabled={busy} onChange={event=>setArticleId(event.target.value)} required>{options.map(article=><option key={article.id} value={article.id}>{article.level} · {article.title} · {article.questionCount} 题</option>)}</select></label>
         : <div className="word-assignment-range"><label className="classroom-field">词库<select aria-label="词库" className="classroom-input" disabled={busy} value={category} onChange={event=>setCategory(event.target.value)}>{Object.entries(WORD_ASSIGNMENT_CATEGORIES).map(([id,label])=><option key={id} value={id}>{label}</option>)}</select></label>
           <label className="classroom-field">起始序号<input className="classroom-input" type="number" min="1" step="1" value={start} disabled={busy} required onChange={event=>setStart(event.target.value)} /></label>
           <label className="classroom-field">词数<input className="classroom-input" type="number" min="5" max="50" step="1" value={count} disabled={busy} required onChange={event=>setCount(event.target.value)} /></label></div>}

@@ -6,7 +6,7 @@ import { useWordHints } from '../hooks/useWordHints.js';
 import { useWordDetails } from '../hooks/useWordDetails.js';
 import { loadWordDetails } from '../data/vocabulary.js';
 import { speakExample, speakWord } from '../utils/speech';
-import '../styles/word-learning-refresh.css';
+import '../styles/study-word.css';
 
 function WordCard({ word: entry, nextWord, showHint = false }) {
   const { word, loading: exampleLoading, error: exampleError, retry: retryExample } = useWordDetails(entry);

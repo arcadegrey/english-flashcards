@@ -9,4 +9,4 @@ export function sample(list = [], count = list.length, random = Math.random) {
   return pool.slice(0, size);
 }
 
-export const shuffle = (list = []) => sample(list);
+export const shuffle = (list = [], random = Math.random) => sample(list, list.length, random);

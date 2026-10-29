@@ -88,6 +88,31 @@ test('IELTS filters intersect topics and Lists, including shared TOEFL/IELTS ent
   assert.deepEqual(ids(words, { selectedCategory: 'daily', selectedIeltsList: '2' }), [1])
 })
 
+test('IELTS without a manifest counts normalized List memberships and preserves unknown entries', () => {
+  const words = freeze([
+    { id: 1, category: 'ielts', list: 'List 2' },
+    { id: 2, categories: ['toefl', 'ielts'], list: '30', ieltsLists: ['2', '11', '2'] },
+    { id: 3, category: 'ielts', ieltsList: 'List 11' },
+    { id: 4, category: 'ielts' },
+    { id: 5, category: 'daily', list: '2' },
+  ])
+  const grouped = buildIeltsGrouping(words, null)
+  assert.deepEqual(grouped.lists.map(item => [item.key, item.count]), [['2', 2], ['11', 2], ['unknown', 1]])
+  assert.equal(grouped.total, 5)
+  assert.deepEqual(grouped.topics.map(item => [item.key, item.count]), [['nature-geography', 2], ['school-education', 2], ['unknown', 1]])
+  for (const list of grouped.lists) assert.equal(ids(words, { selectedCategory: 'ielts', selectedIeltsList: list.key }).length, list.count)
+  assert.deepEqual(ids(words, { selectedCategory: 'ielts', selectedIeltsList: '30' }), [])
+})
+
+test('every real IELTS fallback List agrees with the manifest and the actual filter', async () => {
+  const words = JSON.parse(await readFile(new URL('../public/data/vocabulary.json', import.meta.url), 'utf8'))
+  const manifest = JSON.parse(await readFile(new URL('../public/data/vocabulary/ielts/manifest.json', import.meta.url), 'utf8'))
+  const local = buildIeltsGrouping(words, null), canonical = buildIeltsGrouping(words, manifest)
+  assert.deepEqual(local.lists.map(item => [item.key, item.count]), canonical.lists.map(item => [item.key, item.count]))
+  assert.equal(local.total, canonical.total)
+  for (const list of local.lists) assert.equal(ids(words, { selectedCategory: 'ielts', selectedIeltsList: list.key }).length, list.count)
+})
+
 test('empty directories and missing ranges yield empty choices without modifying vocabulary', () => {
   assert.deepEqual(buildToeflGrouping([], null), { total: 0, levels: [], listsByLevel: {} })
   assert.deepEqual(buildIeltsGrouping([], null), { total: 0, topics: [], listsByTopic: {}, lists: [] })

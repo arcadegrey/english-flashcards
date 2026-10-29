@@ -8,6 +8,7 @@ import {
   stopSpeak,
 } from '../utils/speech';
 import { storage } from '../utils/storage';
+import '../styles/study-voice.css';
 
 const KOKORO_VOICE_DETAILS = {
   af_bella: '美音女声，清晰自然，适合默认单词发音',

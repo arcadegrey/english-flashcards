@@ -7,10 +7,11 @@ export const createVocabularyLoader = ({
   cacheStorage = globalThis.caches,
   timeoutMs = 20000,
   cacheReadTimeoutMs = 300,
+  cachePrefix = CACHE_PREFIX,
 } = {}) => {
   const memory = new Map()
   const pending = new Map()
-  const cacheName = `${CACHE_PREFIX}${version}`
+  const cacheName = `${cachePrefix}${version}`
   let cachePromise
 
   const openCache = () => {
@@ -105,7 +106,7 @@ export const createVocabularyLoader = ({
             }))
             const names = await cacheStorage.keys()
             await Promise.all(names
-              .filter((name) => name.startsWith(CACHE_PREFIX) && name !== cacheName)
+              .filter((name) => name.startsWith(cachePrefix) && name !== cacheName)
               .map((name) => cacheStorage.delete(name)))
           }).catch(() => {})
           return data

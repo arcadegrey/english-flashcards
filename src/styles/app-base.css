@@ -1,0 +1,4 @@
+/* Keep existing global resets before the shared study primitives. Page-specific
+   styles arrive later, so their cascade never depends on shared chunk order. */
+@import "../index.css";
+@import "./study-core.css";

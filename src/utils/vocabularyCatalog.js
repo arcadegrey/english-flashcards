@@ -291,9 +291,10 @@ export function buildIeltsGrouping(allVocabulary, ieltsManifest) {
   const listBuckets = new Map()
   allVocabulary.forEach((word) => {
     if (!wordHasIeltsCategory(word)) return
-    const { list } = getIeltsMeta(word)
-    const listKey = list ? String(list) : TOEFL_UNKNOWN_LIST
-    listBuckets.set(listKey, (listBuckets.get(listKey) || 0) + 1)
+    const { lists } = getIeltsMeta(word)
+    for (const listKey of lists.length ? lists : [TOEFL_UNKNOWN_LIST]) {
+      listBuckets.set(listKey, (listBuckets.get(listKey) || 0) + 1)
+    }
   })
 
   const lists = Array.from(listBuckets.entries())

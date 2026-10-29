@@ -1,7 +1,7 @@
 import LoadingState, { LoadingAnimation } from './ui/LoadingState';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { lazy, useEffect, useMemo, useRef, useState } from 'react';
 import WordCard from './WordCard';
-import AssessmentSession from './assessment/AssessmentSession';
+import { loadAssessmentSession } from '../utils/learningViewLoader.js';
 import QuickMenu from './QuickMenu';
 import AppLayout from './layout/AppLayout';
 import { appShellIcons } from './layout/icons';
@@ -10,8 +10,9 @@ import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
 import { calculateStudyStreak, getWeekStudyDays } from '../utils/learningMetrics';
 import { getExamVocabulary, getPlanVocabulary } from '../utils/studyPlan';
 import { getCategoryById } from '../data/categories';
-import '../styles/word-learning-refresh.css';
-import '../styles/test-workspace.css';
+import '../styles/study-word.css';
+
+const AssessmentSession = lazy(loadAssessmentSession);
 
 function LearningView({
   mode,

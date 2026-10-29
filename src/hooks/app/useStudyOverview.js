@@ -1,6 +1,6 @@
 import { uniqueReadingArticleIds } from '../../utils/learningEvents.js'
 import { dedupeIdList } from '../../utils/progressState.js'
-import { prepareReadingContent, indexReadingVocabulary, applyReadingProgress } from '../../utils/readingLibrary.js'
+import { indexReadingVocabulary, applyReadingProgress } from '../../utils/readingLibrary.js'
 import { mergeVocabularyList } from '../../utils/vocabularyMerge.js'
 import { RETIRED_VOCABULARY_IDS, activeProgressIds, isRetiredVocabularyId } from '../../../shared/retiredVocabularyIds.js'
 import { getDailyPlanExamActivity } from '../../../shared/planActivity.js'
@@ -10,13 +10,11 @@ import {
   loadVocabularyCategoryCatalog, loadVocabularyCatalogByIds as loadVocabularyByIds,
   hasBundledVocabularyId, VOCABULARY_COUNTS,
 } from '../../data/vocabulary'
-import readings from '../../data/readings'
+import { preparedReadings } from '../../data/readingMetadata.js'
 import categories from '../../data/categories'
 import { getExamVocabulary, getPlanVocabulary, getPlanWordStats } from '../../utils/studyPlan'
 import { buildWordLookup } from '../../utils/readingText'
 import { getWordsForReview } from '../../utils/spacedRepetition'
-
-const preparedReadings = prepareReadingContent(readings)
 
 // Project reading, collection and daily-plan data and prepare missing plan vocabulary.
 export function useStudyOverview(learning, catalog, navigationState, clock) {

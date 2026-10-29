@@ -14,9 +14,11 @@ export function createLearningViewLoader(importView) {
 }
 
 const failedStyles = new Set()
+const stylesheetRetries = new Map()
 
 function retryStylesheet(href) {
-  return new Promise((resolve, reject) => {
+  if (stylesheetRetries.has(href)) return stylesheetRetries.get(href)
+  const request = new Promise((resolve, reject) => {
     const oldLink = [...document.querySelectorAll('link[rel="stylesheet"]')].find(link => link.href === href)
     const link = oldLink ? oldLink.cloneNode() : document.createElement('link')
     link.rel = 'stylesheet'
@@ -28,10 +30,12 @@ function retryStylesheet(href) {
     link.onerror = () => reject(new Error(`Unable to preload CSS for ${href}`))
     if (oldLink) oldLink.replaceWith(link)
     else document.head.appendChild(link)
-  })
+  }).finally(() => stylesheetRetries.delete(href))
+  stylesheetRetries.set(href, request)
+  return request
 }
 
-export const loadLearningView = createLearningViewLoader(async () => {
+const withStylesheetRetry = importView => async () => {
   // Vite remembers preload URLs even after a CSS failure. Restore failed links
   // explicitly before retrying the import, so retry cannot enter an unstyled page.
   const recordFailure = event => {
@@ -40,8 +44,14 @@ export const loadLearningView = createLearningViewLoader(async () => {
   window.addEventListener('error', recordFailure, true)
   try {
     await Promise.all([...failedStyles].map(retryStylesheet))
-    return await import('../components/LearningView.jsx')
+    return await importView()
   } finally {
     window.removeEventListener('error', recordFailure, true)
   }
-})
+}
+
+const loadBaseLearningView = createLearningViewLoader(withStylesheetRetry(() => import('../components/LearningView.jsx')))
+export const loadAssessmentSession = createLearningViewLoader(withStylesheetRetry(() => import('../components/assessment/AssessmentSession.jsx')))
+
+export const loadLearningView = (mode = 'learn') => mode === 'learn' ? loadBaseLearningView()
+  : Promise.all([loadBaseLearningView(), loadAssessmentSession()]).then(([module]) => module)

@@ -2,7 +2,7 @@ import AssetImage from '../ui/AssetImage';
 import { useMemo, useState } from 'react';
 import { StatCard } from '../ui/Cards';
 import { SecondaryButton } from '../ui/Buttons';
-import readings from '../../data/readings';
+import { readingMetadata as readings } from '../../data/readingMetadata.js';
 import { buildStudentReadingOverview, formatClassroomDate } from '../../utils/classroom';
 
 export default function StudentReadingProgress({ history = [] }) {

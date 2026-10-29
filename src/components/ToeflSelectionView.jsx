@@ -6,8 +6,8 @@ import { ModuleCard } from './ui/Cards';
 import { PrimaryButton, SecondaryButton } from './ui/Buttons';
 import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
 // IELTS selector rules must also be present on a cold visit, before LearningView loads.
-import '../styles/word-learning-refresh.css';
 import '../styles/vocabulary-selection.css';
+import '../styles/study-catalog.css';
 
 function SyncIcon() {
   return (
