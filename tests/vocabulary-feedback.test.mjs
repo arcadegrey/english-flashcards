@@ -1,3 +1,4 @@
+import {beforeExpansion50Review} from '../shared/vocabularyHistory.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -10,7 +11,7 @@ import { buildHiddenSentence } from '../src/utils/assessmentRounds.js';
 import { getCoreWordHints } from '../src/utils/wordHints.js';
 
 const read = async path => JSON.parse(await readFile(new URL(`../${path}`, import.meta.url), 'utf8'));
-const vocabulary = await read('public/data/vocabulary.json');
+const vocabulary = beforeExpansion50Review(await read('public/data/vocabulary.json'));
 const register = await read('data/vocabulary-feedback/reviews-2026-10-29.json');
 const byId = new Map(vocabulary.map(word => [word.id, word]));
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');

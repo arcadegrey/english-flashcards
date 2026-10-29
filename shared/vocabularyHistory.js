@@ -1,3 +1,6 @@
+import expansion50 from '../data/vocabulary-expansion-50/register-2026-10-29.json' with { type: 'json' };
+const expansion50Ids = new Set(expansion50.ids);
+export const beforeExpansion50Review = words => words.filter(word => !expansion50Ids.has(word?.id));
 // Reconstruct earlier editorial stages for maintenance/audits, never user progress.
 import replacements from '../data/name-place-replacement/replacement-manifest.json' with { type: 'json' };
 import retired from '../data/name-place-replacement/retired-2026-10-26.json' with { type: 'json' };
@@ -8,7 +11,7 @@ import teachingP2 from '../data/vocabulary-p2-repair/reviews-2026-10-29.json' wi
 import shortExamples from '../data/vocabulary-short-example-repair/reviews-2026-10-29.json' with { type: 'json' };
 import commonSenses from '../data/vocabulary-common-senses-repair/reviews-2026-10-29.json' with { type: 'json' };
 const beforeCommonSenses = new Map(commonSenses.reviews.map(review => [review.id, review.before]));
-export const beforeCommonSensesReview = words => words.map(word => beforeCommonSenses.get(word?.id) || word);
+export const beforeCommonSensesReview = words => beforeExpansion50Review(words).map(word => beforeCommonSenses.get(word?.id) || word);
 const byId = new Map(retired.map(word => [word.id, word]));
 const previous = new Map(replacements.replacements.map(item => [item.newId, byId.get(item.retiredId)]));
 const beforeSense = new Map(senseReview.reviews.map(review => [review.id, review.before]));

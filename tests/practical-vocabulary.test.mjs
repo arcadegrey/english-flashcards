@@ -1,3 +1,4 @@
+import {beforeExpansion50Review} from '../shared/vocabularyHistory.js';
 import { beforeQualityReview } from './helpers/vocabulary-history.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -11,7 +12,7 @@ import { correctedVocabularyAudioUrl } from '../shared/vocabularyAudio.js';
 import catalog from '../worker/data/assignment-vocabulary.json' with { type: 'json' };
 
 const json = async path => JSON.parse(await readFile(new URL(`../${path}`, import.meta.url), 'utf8'));
-const vocabulary = await json('public/data/vocabulary.json');
+const vocabulary = beforeExpansion50Review(await json('public/data/vocabulary.json'));
 const additions = await json('data/vocabulary-replacement/practical-2026-10-25.json');
 const audit = await json('docs/vocabulary-inclusion-audit.json');
 const hash = value => createHash('sha256').update(value).digest('hex');

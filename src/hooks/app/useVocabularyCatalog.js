@@ -46,7 +46,7 @@ export function useVocabularyCatalog(learning, navigationState) {
     if (ieltsManifest?.ielts?.total) {
       counts.ielts = Number(ieltsManifest.ielts.total) || counts.ielts || 0
     }
-    counts.all = Number(toeflManifest?.sourceTotal) || Number(ieltsManifest?.sourceTotal) || VOCABULARY_COUNTS.all
+    counts.all = VOCABULARY_COUNTS.all
     return counts
   }, [customWords, ieltsManifest, toeflManifest])
 

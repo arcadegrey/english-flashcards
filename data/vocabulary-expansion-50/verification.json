@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-29",
+  "batch": "2026-10-29-expansion-50",
+  "ids": [
+    9027,
+    9028,
+    9029,
+    9030,
+    9031,
+    9032,
+    9033,
+    9034,
+    9035,
+    9036,
+    9037,
+    9038,
+    9039,
+    9040,
+    9041,
+    9042,
+    9043,
+    9044,
+    9045,
+    9046,
+    9047,
+    9048,
+    9049,
+    9050,
+    9051,
+    9052,
+    9053,
+    9054,
+    9055,
+    9056,
+    9057,
+    9058,
+    9059,
+    9060,
+    9061,
+    9062,
+    9063,
+    9064,
+    9065,
+    9066,
+    9067,
+    9068,
+    9069,
+    9070,
+    9071,
+    9072,
+    9073,
+    9074,
+    9075,
+    9076
+  ],
+  "canonicalSha256": "a64fe9ac333f29f9730f734b3c29d1fe5b57a75f4b4442fb603228df616efcbe",
+  "counts": {
+    "active": 8749,
+    "core": 3545,
+    "daily": 2097,
+    "newUnits": 50,
+    "newExamples": 50,
+    "newHintExamples": 100
+  },
+  "checks": {
+    "testsPassed": 374,
+    "testsFailed": 0,
+    "lint": "pass",
+    "productionBuildPwa": "pass",
+    "diffCheck": "pass",
+    "localAudio": {
+      "files": 400,
+      "checks": [
+        "size",
+        "SHA-256",
+        "format",
+        "full decode",
+        "finite samples",
+        "non-silent RMS"
+      ]
+    },
+    "publicAudio": {
+      "files": 400,
+      "manifestSha256": "56a9f37e6fc78e668058196619b2fdb0cfb4a3732e1386d361582f5e63506dc1",
+      "checks": [
+        "HTTP 200",
+        "size",
+        "SHA-256",
+        "audio/mpeg",
+        "manifest hash"
+      ]
+    },
+    "realWordCard": {
+      "checks": 100,
+      "widths": [
+        1440,
+        390
+      ],
+      "pageErrors": []
+    },
+    "nativePublicAudio": {
+      "playbacks": 64,
+      "representativeWords": 8,
+      "fields": [
+        "word",
+        "example"
+      ],
+      "voices": 4
+    },
+    "maintenanceReplay": {
+      "verifiedFiles": 471,
+      "byteIdentical": true
+    },
+    "staleManifestCounts": {
+      "staleManifestSourceTotal": 8699,
+      "passed": true,
+      "result": {
+        "loading": false,
+        "manifestLoaded": true,
+        "all": 8749,
+        "daily": 2097,
+        "statistics": 8749,
+        "plan": 8749,
+        "remaining": 8746,
+        "learned": [
+          4416,
+          6508,
+          9026
+        ]
+      },
+      "errors": []
+    }
+  },
+  "release": {
+    "audioPublished": true,
+    "gitCommit": false,
+    "gitPush": false,
+    "applicationDeployment": false,
+    "migrationRequired": false
+  },
+  "humanListeningCertified": false
+}

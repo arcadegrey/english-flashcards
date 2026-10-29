@@ -1,3 +1,4 @@
+import {beforeExpansion50Review} from '../shared/vocabularyHistory.js';
 import {createSpeechService} from '../src/utils/speechEngine.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -13,7 +14,7 @@ import {applyWordDetails} from '../src/data/vocabularySummary.js';
 const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
 const hash=v=>createHash('sha256').update(v).digest('hex'),serialize=v=>JSON.stringify(v,null,2)+'\n';
 const register=await read('data/vocabulary-common-senses-repair/reviews-2026-10-29.json');
-const words=await read('public/data/vocabulary.json'),byId=new Map(words.map(w=>[w.id,w]));
+const words=beforeExpansion50Review(await read('public/data/vocabulary.json')),byId=new Map(words.map(w=>[w.id,w]));
 const proposal=await read('data/vocabulary-coverage-2026-10-29/first-batch-proposal.json');
 const oldHints=await read('data/vocabulary-common-senses-repair/previous-hints.json');
 const hints=await read('data/vocabulary-common-senses-repair/hints-2026-10-29.json');

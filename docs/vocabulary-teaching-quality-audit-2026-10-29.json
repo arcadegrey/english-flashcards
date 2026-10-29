@@ -2,7 +2,7 @@
   "auditDate": "2026-10-29",
   "input": "public/data/vocabulary.json",
   "inputSha256": "ae4abc959df187f198e54477dc7a69a4f7baa283f10f07854915ba74c1a4c163",
-  "currentSourceSha256": "8fa31adcf6b64f9dd9e5c1cef7bf29fd2fa3302c30a3ff69f6e9bcf50655f6ba",
+  "currentSourceSha256": "a64fe9ac333f29f9730f734b3c29d1fe5b57a75f4b4442fb603228df616efcbe",
   "screeningAppliesTo": "captured pre-P1/P2 audit snapshot, not the repaired canonical examples",
   "scope": "Reported four repaired IDs excluded; all other active entries screened, bounded candidates reviewed. No runtime or vocabulary edits.",
   "reviewer": "single-model editorial review; not independent human language review",

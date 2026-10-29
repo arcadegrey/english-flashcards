@@ -1,0 +1,1861 @@
+{
+  "date": "2026-10-29",
+  "batch": "2026-10-29-expansion-50",
+  "baselineSha256": "8fa31adcf6b64f9dd9e5c1cef7bf29fd2fa3302c30a3ff69f6e9bcf50655f6ba",
+  "afterSha256": "a64fe9ac333f29f9730f734b3c29d1fe5b57a75f4b4442fb603228df616efcbe",
+  "beforeCount": 8699,
+  "afterCount": 8749,
+  "coreBeforeSha256": "4f08b412409afcb70ec5f534931604f42309b3c6802b710db15ad5de42eb9dd2",
+  "coreAfterSha256": "ec5726fb4e384c005071de45dc61d320d5f880249ae2edd92c551f235589a753",
+  "ids": [
+    9027,
+    9028,
+    9029,
+    9030,
+    9031,
+    9032,
+    9033,
+    9034,
+    9035,
+    9036,
+    9037,
+    9038,
+    9039,
+    9040,
+    9041,
+    9042,
+    9043,
+    9044,
+    9045,
+    9046,
+    9047,
+    9048,
+    9049,
+    9050,
+    9051,
+    9052,
+    9053,
+    9054,
+    9055,
+    9056,
+    9057,
+    9058,
+    9059,
+    9060,
+    9061,
+    9062,
+    9063,
+    9064,
+    9065,
+    9066,
+    9067,
+    9068,
+    9069,
+    9070,
+    9071,
+    9072,
+    9073,
+    9074,
+    9075,
+    9076
+  ],
+  "entries": [
+    {
+      "id": 9027,
+      "word": "thank you",
+      "phonetic": "θæŋk juː",
+      "pos": "phr.",
+      "meaning": "谢谢；感谢你",
+      "example": "Thank you for helping me today.",
+      "exampleCn": "谢谢你今天帮助我。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9028,
+      "word": "you're welcome",
+      "phonetic": "jɔː ˈwelkəm",
+      "pos": "phr.",
+      "meaning": "不客气（回应感谢）",
+      "example": "You're welcome, and I am happy to help.",
+      "exampleCn": "不客气，我很乐意帮忙。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9029,
+      "word": "how are you",
+      "phonetic": "haʊ ɑː juː",
+      "pos": "phr.",
+      "meaning": "你好吗（问候语）",
+      "example": "How are you feeling this morning?",
+      "exampleCn": "你今天早上感觉怎么样？",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9030,
+      "word": "I'm sorry",
+      "phonetic": "aɪm ˈsɒri",
+      "pos": "phr.",
+      "meaning": "对不起；我很遗憾",
+      "example": "I'm sorry I broke your cup.",
+      "exampleCn": "对不起，我打碎了你的杯子。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9031,
+      "word": "how about",
+      "phonetic": "haʊ əˈbaʊt",
+      "pos": "phr.",
+      "meaning": "……怎么样（提出建议或询问）",
+      "example": "How about taking a short break?",
+      "exampleCn": "休息一小会儿怎么样？",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9032,
+      "word": "what about",
+      "phonetic": "wɒt əˈbaʊt",
+      "pos": "phr.",
+      "meaning": "……怎么样；那么……呢",
+      "example": "What about the bags we left upstairs?",
+      "exampleCn": "我们留在楼上的包怎么办？",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9033,
+      "word": "would you like",
+      "phonetic": "wʊd juː laɪk",
+      "pos": "phr.",
+      "meaning": "你想要……吗（礼貌提议或邀请）",
+      "example": "Would you like some orange juice?",
+      "exampleCn": "你想喝点橙汁吗？",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9034,
+      "word": "right now",
+      "phonetic": "raɪt naʊ",
+      "pos": "adv.",
+      "meaning": "现在；立刻",
+      "example": "I cannot answer the phone right now.",
+      "exampleCn": "我现在无法接电话。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9035,
+      "word": "look at",
+      "phonetic": "lʊk æt",
+      "pos": "v.",
+      "meaning": "看；注视；查看",
+      "example": "Please look at the picture on the wall.",
+      "exampleCn": "请看墙上的那幅画。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9036,
+      "word": "wake up",
+      "phonetic": "weɪk ʌp",
+      "pos": "v.",
+      "meaning": "醒来；叫醒",
+      "example": "I wake up before seven every day.",
+      "exampleCn": "我每天七点前醒来。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9037,
+      "word": "I think so",
+      "phonetic": "aɪ θɪŋk səʊ",
+      "pos": "phr.",
+      "meaning": "我想是的；我认为如此",
+      "example": "I think so, but I will check the time.",
+      "exampleCn": "我想是的，不过我会核对时间。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9038,
+      "word": "in the middle",
+      "phonetic": "ɪn ðə ˈmɪdl",
+      "pos": "adv.",
+      "meaning": "在中间；在……期间（常接 of）",
+      "example": "The child in the middle is my brother.",
+      "exampleCn": "中间那个孩子是我的弟弟。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9039,
+      "word": "as long as",
+      "phonetic": "æz lɒŋ æz",
+      "pos": "conj. / phr.",
+      "meaning": "conj. 只要\nphr. 与……一样长（或久）",
+      "example": "You can borrow it as long as you return it.",
+      "exampleCn": "只要你归还，就可以借走它。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9040,
+      "word": "due to",
+      "phonetic": "djuː tuː",
+      "pos": "prep.",
+      "meaning": "由于；因为",
+      "example": "The train is late due to heavy snow.",
+      "exampleCn": "由于大雪，火车晚点了。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9041,
+      "word": "come on",
+      "phonetic": "kʌm ɒn",
+      "pos": "phr.",
+      "meaning": "快点；加油；得了吧（依语气而定）",
+      "example": "Come on, we can finish this together!",
+      "exampleCn": "加油，我们能一起完成这件事！",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9042,
+      "word": "get lost",
+      "phonetic": "ɡet lɒst",
+      "pos": "v.",
+      "meaning": "迷路；走开（命令语气时不礼貌）",
+      "example": "We might get lost without a map.",
+      "exampleCn": "没有地图，我们可能会迷路。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9043,
+      "word": "no way",
+      "phonetic": "nəʊ weɪ",
+      "pos": "phr.",
+      "meaning": "不可能；绝不；没门（非正式）",
+      "example": "There is no way we can finish today.",
+      "exampleCn": "我们今天不可能完成。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9044,
+      "word": "it depends",
+      "phonetic": "ɪt dɪˈpendz",
+      "pos": "phr.",
+      "meaning": "看情况；那得视情况而定",
+      "example": "It depends on how much time we have.",
+      "exampleCn": "这取决于我们有多少时间。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9045,
+      "word": "let me know",
+      "phonetic": "let miː nəʊ",
+      "pos": "phr.",
+      "meaning": "告诉我；让我知道",
+      "example": "Please let me know when you arrive.",
+      "exampleCn": "你到了请告诉我。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9046,
+      "word": "feel like",
+      "phonetic": "fiːl laɪk",
+      "pos": "v.",
+      "meaning": "想要；感觉像",
+      "example": "I feel like going for a walk.",
+      "exampleCn": "我想去散步。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9047,
+      "word": "get out",
+      "phonetic": "ɡet aʊt",
+      "pos": "v.",
+      "meaning": "出去；离开；传开（消息）",
+      "example": "Please get out of the car carefully.",
+      "exampleCn": "请小心地下车。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9048,
+      "word": "go away",
+      "phonetic": "ɡəʊ əˈweɪ",
+      "pos": "v.",
+      "meaning": "离开；消失",
+      "example": "The dark clouds will go away soon.",
+      "exampleCn": "乌云很快就会散去。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9049,
+      "word": "on top of",
+      "phonetic": "ɒn tɒp əv",
+      "pos": "prep.",
+      "meaning": "在……上面；除……之外还",
+      "example": "Your keys are on top of the fridge.",
+      "exampleCn": "你的钥匙在冰箱顶上。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9050,
+      "word": "as part of",
+      "phonetic": "æz pɑːt əv",
+      "pos": "phr.",
+      "meaning": "作为……的一部分",
+      "example": "We read a story as part of the lesson.",
+      "exampleCn": "我们把读一篇故事作为这堂课的一部分。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9051,
+      "word": "in this way",
+      "phonetic": "ɪn ðɪs weɪ",
+      "pos": "phr.",
+      "meaning": "用这种方式；这样",
+      "example": "Fold the paper in this way to make a boat.",
+      "exampleCn": "像这样折纸，就能做出一只船。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9052,
+      "word": "for this reason",
+      "phonetic": "fə ðɪs ˈriːzn",
+      "pos": "phr.",
+      "meaning": "因此；由于这个原因",
+      "example": "The road is icy; for this reason, we walk slowly.",
+      "exampleCn": "道路结冰了，因此我们走得很慢。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9053,
+      "word": "so that",
+      "phonetic": "səʊ ðæt",
+      "pos": "conj.",
+      "meaning": "以便；因此（连接目的或结果）",
+      "example": "Speak clearly so that everyone can hear you.",
+      "exampleCn": "说清楚些，以便每个人都能听见。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9054,
+      "word": "why not",
+      "phonetic": "waɪ nɒt",
+      "pos": "phr.",
+      "meaning": "为什么不……（建议）；好啊（表示同意）",
+      "example": "Why not take the bus instead?",
+      "exampleCn": "为什么不改乘公共汽车呢？",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9055,
+      "word": "belong to",
+      "phonetic": "bɪˈlɒŋ tuː",
+      "pos": "v.",
+      "meaning": "属于；是……的成员",
+      "example": "These books belong to the school.",
+      "exampleCn": "这些书属于学校。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9056,
+      "word": "focus on",
+      "phonetic": "ˈfəʊkəs ɒn",
+      "pos": "v.",
+      "meaning": "集中于；关注",
+      "example": "Let us focus on one question at a time.",
+      "exampleCn": "我们一次集中处理一个问题吧。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9057,
+      "word": "aloud",
+      "phonetic": "əˈlaʊd",
+      "pos": "adv.",
+      "meaning": "出声地；让人听得见地",
+      "example": "Please read the first sentence aloud.",
+      "exampleCn": "请把第一句话读出声来。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9058,
+      "word": "ant",
+      "phonetic": "ænt",
+      "pos": "n.",
+      "meaning": "蚂蚁",
+      "example": "An ant is carrying a tiny leaf.",
+      "exampleCn": "一只蚂蚁正搬着一片小叶子。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9059,
+      "word": "attic",
+      "phonetic": "ˈætɪk",
+      "pos": "n.",
+      "meaning": "阁楼；屋顶下的储藏空间",
+      "example": "We keep old toys in the attic.",
+      "exampleCn": "我们把旧玩具存放在阁楼里。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9060,
+      "word": "classmate",
+      "phonetic": "ˈklɑːsmeɪt",
+      "pos": "n.",
+      "meaning": "同班同学",
+      "example": "My classmate lent me a blue pen.",
+      "exampleCn": "我的同班同学借给我一支蓝笔。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9061,
+      "word": "cough",
+      "phonetic": "kɒf",
+      "pos": "v. / n.",
+      "meaning": "v. 咳嗽\nn. 咳嗽；咳嗽声",
+      "example": "Please cover your mouth when you cough.",
+      "exampleCn": "咳嗽时请捂住嘴。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9062,
+      "word": "housework",
+      "phonetic": "ˈhaʊswɜːk",
+      "pos": "n.",
+      "meaning": "家务劳动",
+      "example": "We share the housework at home.",
+      "exampleCn": "我们在家分担家务。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9063,
+      "word": "noodle",
+      "phonetic": "ˈnuːdl",
+      "pos": "n.",
+      "meaning": "面条（通常用复数 noodles）",
+      "example": "A long noodle fell from my fork.",
+      "exampleCn": "一根长面条从我的叉子上掉了下来。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9064,
+      "word": "zoo",
+      "phonetic": "zuː",
+      "pos": "n.",
+      "meaning": "动物园",
+      "example": "We saw two pandas at the zoo.",
+      "exampleCn": "我们在动物园看到了两只熊猫。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9065,
+      "word": "kilogram",
+      "phonetic": "ˈkɪləɡræm",
+      "pos": "n.",
+      "meaning": "千克；公斤",
+      "example": "This bag of rice weighs one kilogram.",
+      "exampleCn": "这袋米重一千克。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9066,
+      "word": "upload",
+      "phonetic": "ˌʌpˈləʊd",
+      "pos": "v.",
+      "meaning": "上传（文件或数据）",
+      "example": "Please upload your photo to the website.",
+      "exampleCn": "请把你的照片上传到网站。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9067,
+      "word": "append",
+      "phonetic": "əˈpend",
+      "pos": "v.",
+      "meaning": "追加；附加在末尾",
+      "example": "Please append your name to the list.",
+      "exampleCn": "请把你的名字加在名单末尾。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9068,
+      "word": "automate",
+      "phonetic": "ˈɔːtəmeɪt",
+      "pos": "v.",
+      "meaning": "使自动化",
+      "example": "This tool can automate simple office tasks.",
+      "exampleCn": "这个工具能让简单的办公任务自动完成。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9069,
+      "word": "discriminate",
+      "phonetic": "dɪˈskrɪmɪneɪt",
+      "pos": "v.",
+      "meaning": "辨别；区别对待；歧视",
+      "example": "We should not discriminate against anyone.",
+      "exampleCn": "我们不应歧视任何人。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9070,
+      "word": "finite",
+      "phonetic": "ˈfaɪnaɪt",
+      "pos": "adj.",
+      "meaning": "有限的；有界限的",
+      "example": "We have a finite amount of time.",
+      "exampleCn": "我们的时间是有限的。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9071,
+      "word": "maximize",
+      "phonetic": "ˈmæksɪmaɪz",
+      "pos": "v.",
+      "meaning": "使最大化；充分利用",
+      "example": "We arranged the desks to maximize space.",
+      "exampleCn": "我们调整了课桌位置，以充分利用空间。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9072,
+      "word": "negate",
+      "phonetic": "nɪˈɡeɪt",
+      "pos": "v.",
+      "meaning": "否定；使无效；抵消",
+      "example": "One error can negate all our hard work.",
+      "exampleCn": "一个错误就可能使我们的全部努力付诸东流。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9073,
+      "word": "underlie",
+      "phonetic": "ˌʌndəˈlaɪ",
+      "pos": "v.",
+      "meaning": "构成……的基础；位于……之下",
+      "example": "Simple rules underlie this complex game.",
+      "exampleCn": "简单的规则构成了这个复杂游戏的基础。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9074,
+      "word": "clarity",
+      "phonetic": "ˈklærəti",
+      "pos": "n.",
+      "meaning": "清晰；清楚；明晰",
+      "example": "The teacher explained the rules with clarity.",
+      "exampleCn": "老师清楚地解释了规则。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9075,
+      "word": "credible",
+      "phonetic": "ˈkredəbl",
+      "pos": "adj.",
+      "meaning": "可信的；可靠的",
+      "example": "We need credible evidence before making a decision.",
+      "exampleCn": "做决定前，我们需要可信的证据。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    },
+    {
+      "id": 9076,
+      "word": "resilience",
+      "phonetic": "rɪˈzɪliəns",
+      "pos": "n.",
+      "meaning": "恢复力；韧性；适应力",
+      "example": "The team showed resilience after losing the first game.",
+      "exampleCn": "输掉首场比赛后，这支队伍展现了韧性。",
+      "category": "daily",
+      "categories": [
+        "daily"
+      ]
+    }
+  ],
+  "classification": "daily only: general expressions and vocabulary; no official exam membership asserted",
+  "sources": [
+    {
+      "id": "expansion50-9027",
+      "title": "韦氏词典 · thank（thank you 表达）",
+      "url": "https://www.merriam-webster.com/dictionary/thank",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "thank you",
+      "queueId": "NEW-01",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "thank you",
+          "level": "A1",
+          "page": 2
+        }
+      ],
+      "selectedSense": "谢谢；感谢你",
+      "usageReview": "用于表达感谢；thank you for 后接名词或 -ing。不要与有连字符的名词 thank-you 混为一谈。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9028",
+      "title": "韦氏词典 · welcome",
+      "url": "https://www.merriam-webster.com/dictionary/welcome",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "you're welcome",
+      "queueId": "NEW-02",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "You’re welcome",
+          "level": "A1",
+          "page": 2
+        }
+      ],
+      "selectedSense": "不客气（回应感谢）",
+      "usageReview": "回应他人的感谢；you're 是 you are 的缩写，此处 welcome 不是欢迎客人的动词。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9029",
+      "title": "韦氏词典 · how",
+      "url": "https://www.merriam-webster.com/dictionary/how",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "how are you",
+      "queueId": "NEW-03",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "How are you?",
+          "level": "A1",
+          "page": 1
+        }
+      ],
+      "selectedSense": "你好吗（问候语）",
+      "usageReview": "问候对方近况；日常答语可以很简短。how are you feeling 可具体询问感受或身体状况。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9030",
+      "title": "韦氏词典 · sorry",
+      "url": "https://www.merriam-webster.com/dictionary/sorry",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "I'm sorry",
+      "queueId": "NEW-04",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "I’m sorry",
+          "level": "A1",
+          "page": 1
+        }
+      ],
+      "selectedSense": "对不起；我很遗憾",
+      "usageReview": "可用于道歉，也可表示同情；I'm sorry about 后接事情，I'm sorry to hear that 表示听到坏消息很遗憾。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9031",
+      "title": "韦氏词典 · how about",
+      "url": "https://www.merriam-webster.com/dictionary/how%20about",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "how about",
+      "queueId": "NEW-05",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "How about...?",
+          "level": "A1",
+          "page": 1
+        }
+      ],
+      "selectedSense": "……怎么样（提出建议或询问）",
+      "usageReview": "提出建议时可接名词或 -ing；How about you? 可把同一个问题转问对方。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9032",
+      "title": "韦氏词典 · what about",
+      "url": "https://www.merriam-webster.com/dictionary/what%20about",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "what about",
+      "queueId": "NEW-06",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "What about...?",
+          "level": "A1",
+          "page": 2
+        }
+      ],
+      "selectedSense": "……怎么样；那么……呢",
+      "usageReview": "可提出建议，也可追问尚未处理的事；后接名词或 -ing，不机械等同于 What is。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9033",
+      "title": "韦氏词典 · would",
+      "url": "https://www.merriam-webster.com/dictionary/would",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "would you like",
+      "queueId": "NEW-07",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "Would you like...?",
+          "level": "A1",
+          "page": 2
+        }
+      ],
+      "selectedSense": "你想要……吗（礼貌提议或邀请）",
+      "usageReview": "would you like 后接名词或 to do；邀请某人做事时保留 to，区别于询问一般喜好的 Do you like。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations.",
+      "additionalSenseSource": "https://www.merriam-webster.com/dictionary/like"
+    },
+    {
+      "id": "expansion50-9034",
+      "title": "韦氏词典 · right now",
+      "url": "https://www.merriam-webster.com/dictionary/right%20now",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "right now",
+      "queueId": "NEW-08",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "right now",
+          "level": "A1",
+          "page": 1
+        }
+      ],
+      "selectedSense": "现在；立刻",
+      "usageReview": "表示就在此刻，也可强调立刻行动；按语境区分当前状态与马上执行。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9035",
+      "title": "韦氏词典 · look at",
+      "url": "https://www.merriam-webster.com/dictionary/look%20at",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "look at",
+      "queueId": "NEW-09",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "look at sb/sth",
+          "level": "A1",
+          "page": 1
+        }
+      ],
+      "selectedSense": "看；注视；查看",
+      "usageReview": "look at 后接所看的对象；look 强调把视线转过去，see 可表示看见的结果。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9036",
+      "title": "韦氏词典 · wake up",
+      "url": "https://www.merriam-webster.com/dictionary/wake%20up",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "wake up",
+      "queueId": "NEW-10",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "wake up",
+          "level": "A1",
+          "page": 2
+        }
+      ],
+      "selectedSense": "醒来；叫醒",
+      "usageReview": "可不带宾语表示醒来，也可叫醒他人；代词放中间，如 wake him up。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9037",
+      "title": "韦氏词典 · I think so",
+      "url": "https://www.merriam-webster.com/dictionary/I%20think%20so",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "I think so",
+      "queueId": "NEW-11",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "I think so",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "selectedSense": "我想是的；我认为如此",
+      "usageReview": "用 so 代替前面提到的看法，表示倾向于赞同；通常比直接肯定更保留。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9038",
+      "title": "韦氏词典 · in the middle",
+      "url": "https://www.merriam-webster.com/dictionary/in%20the%20middle",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "in the middle",
+      "queueId": "NEW-12",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "in the middle",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "selectedSense": "在中间；在……期间（常接 of）",
+      "usageReview": "可指位置居中；in the middle of 后接地点、事件或进行中的活动。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9039",
+      "title": "韦氏词典 · as long as",
+      "url": "https://www.merriam-webster.com/dictionary/as%20long%20as",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "as long as",
+      "queueId": "NEW-13",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "as long as...",
+          "level": "B2",
+          "page": 4
+        }
+      ],
+      "selectedSense": "conj. 只要；phr. 与……一样长（或久）",
+      "usageReview": "条件义后接完整从句；也可比较长度或时间，不能在所有句子里都译成只要。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9040",
+      "title": "韦氏词典 · due to",
+      "url": "https://www.merriam-webster.com/dictionary/due%20to",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "due to",
+      "queueId": "NEW-14",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "due to sb/sth",
+          "level": "B1",
+          "page": 3
+        }
+      ],
+      "selectedSense": "由于；因为",
+      "usageReview": "后接名词或名词短语表示原因；区别于接完整从句的 because。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9041",
+      "title": "韦氏词典 · come on",
+      "url": "https://www.merriam-webster.com/dictionary/come%20on",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "come on",
+      "queueId": "NEW-15",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "Come on!",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "selectedSense": "快点；加油；得了吧（依语气而定）",
+      "usageReview": "鼓励或催促时常独立使用；也可能表达不相信或不耐烦，留意语气和上下文。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9042",
+      "title": "剑桥词典／语法 · get lost",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/get-lost",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "get lost",
+      "queueId": "NEW-16",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "get lost",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "selectedSense": "迷路；走开（命令语气时不礼貌）",
+      "usageReview": "默认教迷路；单独命令 Get lost! 是不礼貌地赶人走，不用作问路或礼貌告别。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9043",
+      "title": "韦氏词典 · no way",
+      "url": "https://www.merriam-webster.com/dictionary/no%20way",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "no way",
+      "queueId": "NEW-17",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "no way",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "selectedSense": "不可能；绝不；没门（非正式）",
+      "usageReview": "非正式地表示不可能或强烈拒绝；单独说 No way! 语气很强，需看场合。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9044",
+      "title": "韦氏词典 · it depends",
+      "url": "https://www.merriam-webster.com/dictionary/it%20depends",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "it depends",
+      "queueId": "NEW-18",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "it depends",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "selectedSense": "看情况；那得视情况而定",
+      "usageReview": "可单独回应未确定的问题；说明条件时用 depend on 后接名词或疑问从句。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9045",
+      "title": "韦氏词典 · let know",
+      "url": "https://www.merriam-webster.com/dictionary/let%20know",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "let me know",
+      "queueId": "NEW-19",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "let me know",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "selectedSense": "告诉我；让我知道",
+      "usageReview": "let 后用宾语加动词原形；me 是被告知的人，换成其他人时用 let us know 等。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9046",
+      "title": "韦氏词典 · feel like",
+      "url": "https://www.merriam-webster.com/dictionary/feel%20like",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "feel like",
+      "queueId": "NEW-20",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "feel like sth",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "selectedSense": "想要；感觉像",
+      "usageReview": "想做某事时接 -ing，不接 to do；接名词时也可表示感觉像某物。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9047",
+      "title": "韦氏词典 · get out",
+      "url": "https://www.merriam-webster.com/dictionary/get%20out",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "get out",
+      "queueId": "NEW-21",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "get out",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "selectedSense": "出去；离开；传开（消息）",
+      "usageReview": "离开容器或车辆时常用 get out of；单独命令 Get out! 可能很强硬。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9048",
+      "title": "韦氏词典 · go away",
+      "url": "https://www.merriam-webster.com/dictionary/go%20away",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "go away",
+      "queueId": "NEW-22",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "go away",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "selectedSense": "离开；消失",
+      "usageReview": "可指人离开，也可指问题或感觉消失；直接命令人 Go away! 往往不友好。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9049",
+      "title": "韦氏词典 · on top of",
+      "url": "https://www.merriam-webster.com/dictionary/on%20top%20of",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "on top of",
+      "queueId": "NEW-23",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "on top of sth/sb",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "selectedSense": "在……上面；除……之外还",
+      "usageReview": "位置义可指物体顶部；另有在已有事项之外再加一项的意思，按语境判断。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9050",
+      "title": "韦氏词典 · part",
+      "url": "https://www.merriam-webster.com/dictionary/part",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "as part of",
+      "queueId": "NEW-24",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "as part of sth",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "selectedSense": "作为……的一部分",
+      "usageReview": "part 作整体中的一部分；as part of 后接所属的活动、计划或整体。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9051",
+      "title": "韦氏词典 · way",
+      "url": "https://www.merriam-webster.com/dictionary/way",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "in this way",
+      "queueId": "NEW-25",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "in this way",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "selectedSense": "用这种方式；这样",
+      "usageReview": "this 指上下文说明的方法；这里的 way 是方式，不是道路。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9052",
+      "title": "韦氏词典 · reason",
+      "url": "https://www.merriam-webster.com/dictionary/reason",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "for this reason",
+      "queueId": "NEW-26",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "for this reason",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "selectedSense": "因此；由于这个原因",
+      "usageReview": "连接前面的原因与后面的结果；this reason 指刚说明的原因，注意句间标点。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9053",
+      "title": "韦氏词典 · so that",
+      "url": "https://www.merriam-webster.com/dictionary/so%20that",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "so that",
+      "queueId": "NEW-27",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "so that...",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "selectedSense": "以便；因此（连接目的或结果）",
+      "usageReview": "后接完整从句；目的义常与 can、could 等连用，结果义需按上下文判断。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9054",
+      "title": "剑桥词典／语法 · why not",
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/suggestions",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "why not",
+      "queueId": "NEW-28",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "Why not...?",
+          "level": "A2",
+          "page": 3
+        }
+      ],
+      "selectedSense": "为什么不……（建议）；好啊（表示同意）",
+      "usageReview": "建议时用 why not 加动词原形，不加 to；单独回应 Why not? 可表示同意提议。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9055",
+      "title": "韦氏词典 · belong",
+      "url": "https://www.merriam-webster.com/dictionary/belong",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "belong to",
+      "queueId": "NEW-29",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "belong to sb",
+          "level": "A2",
+          "page": 2
+        },
+        {
+          "sourceId": "oxford-phrases",
+          "label": "belong to sth",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "selectedSense": "属于；是……的成员",
+      "usageReview": "表示归属或成员关系，通常不用进行时；to 后接拥有者或组织。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9056",
+      "title": "韦氏词典 · focus",
+      "url": "https://www.merriam-webster.com/dictionary/focus",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "focus on",
+      "queueId": "NEW-30",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford-phrases",
+          "label": "focus on sb/sth",
+          "level": "A2",
+          "page": 2
+        }
+      ],
+      "selectedSense": "集中于；关注",
+      "usageReview": "后接名词或 -ing；focus on 表示把注意力集中在某事上，区别于泛泛地看一眼。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9057",
+      "title": "韦氏词典 · aloud",
+      "url": "https://www.merriam-webster.com/dictionary/aloud",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "aloud",
+      "queueId": "NEW-31",
+      "proposalRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "aloud",
+          "starred": false,
+          "derived": [],
+          "page": 24
+        }
+      ],
+      "selectedSense": "出声地；让人听得见地",
+      "usageReview": "read aloud 指读出声音，不一定很大声；loudly 强调音量大，二者不总能互换。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9058",
+      "title": "韦氏词典 · ant",
+      "url": "https://www.merriam-webster.com/dictionary/ant",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "ant",
+      "queueId": "NEW-32",
+      "proposalRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "ant",
+          "starred": false,
+          "derived": [],
+          "page": 26
+        }
+      ],
+      "selectedSense": "蚂蚁",
+      "usageReview": "可数名词；单数前用 an，复数为 ants。不要与 aunt 的拼写混淆。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9059",
+      "title": "韦氏词典 · attic",
+      "url": "https://www.merriam-webster.com/dictionary/attic",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "attic",
+      "queueId": "NEW-33",
+      "proposalRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "attic",
+          "starred": false,
+          "derived": [],
+          "page": 28
+        }
+      ],
+      "selectedSense": "阁楼；屋顶下的储藏空间",
+      "usageReview": "可数名词，指屋顶下的空间；常用 in the attic，区别于地下室 basement。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9060",
+      "title": "韦氏词典 · classmate",
+      "url": "https://www.merriam-webster.com/dictionary/classmate",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "classmate",
+      "queueId": "NEW-34",
+      "proposalRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "classmate",
+          "starred": false,
+          "derived": [],
+          "page": 42
+        }
+      ],
+      "selectedSense": "同班同学",
+      "usageReview": "可数名词；classmate 特指同班同学，不泛指所有同校学生。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9061",
+      "title": "韦氏词典 · cough",
+      "url": "https://www.merriam-webster.com/dictionary/cough",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "cough",
+      "queueId": "NEW-35",
+      "proposalRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "cough",
+          "starred": false,
+          "derived": [],
+          "page": 48
+        }
+      ],
+      "selectedSense": "v. 咳嗽；n. 咳嗽；咳嗽声",
+      "usageReview": "作动词可直接表示咳嗽；作名词可说 have a cough。gh 在这里发 /f/。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9062",
+      "title": "韦氏词典 · housework",
+      "url": "https://www.merriam-webster.com/dictionary/housework",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "housework",
+      "queueId": "NEW-36",
+      "proposalRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "housework",
+          "starred": false,
+          "derived": [],
+          "page": 78
+        }
+      ],
+      "selectedSense": "家务劳动",
+      "usageReview": "通常不可数，常用 do housework；区别于课后作业 homework，不说 a housework。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9063",
+      "title": "韦氏词典 · noodle",
+      "url": "https://www.merriam-webster.com/dictionary/noodle",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "noodle",
+      "queueId": "NEW-37",
+      "proposalRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "noodle",
+          "starred": false,
+          "derived": [],
+          "page": 98
+        }
+      ],
+      "selectedSense": "面条（通常用复数 noodles）",
+      "usageReview": "单根可数，但表示一道面食时通常用 noodles；注意 noodle 与 needle 的拼写不同。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9064",
+      "title": "韦氏词典 · zoo",
+      "url": "https://www.merriam-webster.com/dictionary/zoo",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "zoo",
+      "queueId": "NEW-38",
+      "proposalRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "zoo",
+          "starred": false,
+          "derived": [],
+          "page": 148
+        }
+      ],
+      "selectedSense": "动物园",
+      "usageReview": "可数名词；复数为 zoos，不加 -es；常用 at the zoo。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9065",
+      "title": "韦氏词典 · kilogram",
+      "url": "https://www.merriam-webster.com/dictionary/kilogram",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "kilogram",
+      "queueId": "NEW-39",
+      "proposalRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "kilogram(me)/kilo",
+          "starred": false,
+          "derived": [],
+          "page": 85
+        }
+      ],
+      "selectedSense": "千克；公斤",
+      "usageReview": "可数计量名词，缩写 kg；one kilogram，two kilograms。千克是质量单位。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9066",
+      "title": "韦氏词典 · upload",
+      "url": "https://www.merriam-webster.com/dictionary/upload",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "upload",
+      "queueId": "NEW-40",
+      "proposalRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "upload",
+          "starred": false,
+          "derived": [],
+          "page": 142
+        }
+      ],
+      "selectedSense": "上传（文件或数据）",
+      "usageReview": "把文件从本地传到网站或服务器；upload something to somewhere，方向与 download 相反。本卡教动词读音。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations.",
+      "pronunciationSource": "https://www.oxfordlearnersdictionaries.com/definition/english/upload_1"
+    },
+    {
+      "id": "expansion50-9067",
+      "title": "韦氏词典 · append",
+      "url": "https://www.merriam-webster.com/dictionary/append",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "append",
+      "queueId": "NEW-41",
+      "proposalRefs": [
+        {
+          "sourceId": "awl-headwords",
+          "label": "append",
+          "sublist": 8,
+          "page": 1
+        }
+      ],
+      "selectedSense": "追加；附加在末尾",
+      "usageReview": "常用 append A to B，表示把 A 加到 B 末尾；较常见于书面或技术语境。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9068",
+      "title": "韦氏词典 · automate",
+      "url": "https://www.merriam-webster.com/dictionary/automate",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "automate",
+      "queueId": "NEW-42",
+      "proposalRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "automate",
+          "starred": false,
+          "derived": [
+            "automation",
+            "automatic",
+            "automatically"
+          ],
+          "page": 29
+        },
+        {
+          "sourceId": "awl-headwords",
+          "label": "automate",
+          "sublist": 8,
+          "page": 1
+        }
+      ],
+      "selectedSense": "使自动化",
+      "usageReview": "常接 process、task 等对象，表示让机器或软件执行；自动化并不等于完全不需人参与。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9069",
+      "title": "韦氏词典 · discriminate",
+      "url": "https://www.merriam-webster.com/dictionary/discriminate",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "discriminate",
+      "queueId": "NEW-43",
+      "proposalRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "discriminate",
+          "starred": false,
+          "derived": [
+            "discrimination",
+            "discriminatory"
+          ],
+          "page": 56
+        },
+        {
+          "sourceId": "awl-headwords",
+          "label": "discriminate",
+          "sublist": 6,
+          "page": 3
+        }
+      ],
+      "selectedSense": "辨别；区别对待；歧视",
+      "usageReview": "discriminate between A and B 可中性表示辨别；discriminate against someone 表示歧视，不能混淆搭配。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9070",
+      "title": "韦氏词典 · finite",
+      "url": "https://www.merriam-webster.com/dictionary/finite",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "finite",
+      "queueId": "NEW-44",
+      "proposalRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "finite",
+          "starred": true,
+          "derived": [],
+          "page": 67
+        },
+        {
+          "sourceId": "awl-headwords",
+          "label": "finite",
+          "sublist": 7,
+          "page": 3
+        }
+      ],
+      "selectedSense": "有限的；有界限的",
+      "usageReview": "与 infinite 无限的相对；finite 描述数量、时间或资源有界限，不等同于已经用完。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9071",
+      "title": "韦氏词典 · maximize",
+      "url": "https://www.merriam-webster.com/dictionary/maximize",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "maximize",
+      "queueId": "NEW-45",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford5000-additional",
+          "label": "maximize",
+          "pos": "v.",
+          "level": "C1",
+          "page": 6
+        },
+        {
+          "sourceId": "awl-headwords",
+          "label": "maximise",
+          "sublist": 3,
+          "page": 4
+        }
+      ],
+      "selectedSense": "使最大化；充分利用",
+      "usageReview": "美式常写 maximize，英式也常见 maximise；可表示提高到最大程度或充分利用。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9072",
+      "title": "韦氏词典 · negate",
+      "url": "https://www.merriam-webster.com/dictionary/negate",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "negate",
+      "queueId": "NEW-46",
+      "proposalRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "negate",
+          "starred": false,
+          "derived": [
+            "negation",
+            "negative"
+          ],
+          "page": 97
+        },
+        {
+          "sourceId": "awl-headwords",
+          "label": "negate",
+          "sublist": 3,
+          "page": 5
+        }
+      ],
+      "selectedSense": "否定；使无效；抵消",
+      "usageReview": "作及物动词，可否认陈述，也可使效果失效；本卡主要示范抵消效果，不机械译成说不。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9073",
+      "title": "韦氏词典 · underlie",
+      "url": "https://www.merriam-webster.com/dictionary/underlie",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "underlie",
+      "queueId": "NEW-47",
+      "proposalRefs": [
+        {
+          "sourceId": "cet2016",
+          "label": "underlie",
+          "starred": true,
+          "derived": [
+            "underlying"
+          ],
+          "page": 141
+        },
+        {
+          "sourceId": "awl-headwords",
+          "label": "underlie",
+          "sublist": 6,
+          "page": 7
+        }
+      ],
+      "selectedSense": "构成……的基础；位于……之下",
+      "usageReview": "通常直接接宾语；过去式 underlay，过去分词 underlain，-ing 形式 underlying。不要与 underlay 的其他独立用法混淆。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9074",
+      "title": "韦氏词典 · clarity",
+      "url": "https://www.merriam-webster.com/dictionary/clarity",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "clarity",
+      "queueId": "NEW-48",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford5000-additional",
+          "label": "clarity",
+          "pos": "n.",
+          "level": "C1",
+          "page": 4
+        },
+        {
+          "sourceId": "cet2016",
+          "label": "clarity",
+          "starred": false,
+          "derived": [
+            "clarify",
+            "clarification"
+          ],
+          "page": 42
+        }
+      ],
+      "selectedSense": "清晰；清楚；明晰",
+      "usageReview": "常作不可数名词；可指表达易懂、思路清晰或视觉清楚，with clarity 表示清楚地。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9075",
+      "title": "韦氏词典 · credible",
+      "url": "https://www.merriam-webster.com/dictionary/credible",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "credible",
+      "queueId": "NEW-49",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford5000-additional",
+          "label": "credible",
+          "pos": "adj.",
+          "level": "C1",
+          "page": 4
+        },
+        {
+          "sourceId": "cet2016",
+          "label": "credible",
+          "starred": true,
+          "derived": [
+            "credibility"
+          ],
+          "page": 49
+        }
+      ],
+      "selectedSense": "可信的；可靠的",
+      "usageReview": "常修饰 evidence、source、explanation；credible 表示值得相信，区别于 credulous 轻信的。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    },
+    {
+      "id": "expansion50-9076",
+      "title": "韦氏词典 · resilience",
+      "url": "https://www.merriam-webster.com/dictionary/resilience",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference",
+      "word": "resilience",
+      "queueId": "NEW-50",
+      "proposalRefs": [
+        {
+          "sourceId": "oxford5000-additional",
+          "label": "resilience",
+          "pos": "n.",
+          "level": "C1",
+          "page": 7
+        }
+      ],
+      "selectedSense": "恢复力；韧性；适应力",
+      "usageReview": "通常不可数，可指受挫后的恢复适应能力，也可指材料恢复形状的能力；不等于从不遇到困难。",
+      "pronunciationMethod": "Editor-transcribed UK citation-form IPA from established lexical pronunciations; multiword stress/weak forms are an editorial reading, not a copied phrase-dictionary transcription.",
+      "scope": "Selected common teaching senses; not an exhaustive dictionary entry. Original examples and Chinese translations."
+    }
+  ]
+}

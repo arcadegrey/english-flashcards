@@ -15,7 +15,8 @@ const ranks={A1:1,A2:2,B1:3,B2:4,C1:5,C2:6};
 export async function runCoverageAudit({referencePath='output/vocabulary-coverage-2026-10-29/reference-rows.json'}={}){
  const raw=await readFile(new URL('public/data/vocabulary.json',root),'utf8'),currentWords=JSON.parse(raw),words=beforeCommonSensesReview(currentWords),sourceHash=hash(serialize(words));
  const repair=await read('data/vocabulary-common-senses-repair/reviews-2026-10-29.json');
- assert([repair.baselineSha256,repair.afterSha256].includes(hash(raw)),'Unregistered vocabulary edits; do not overwrite the historical audit.');
+ const expansion=await read('data/vocabulary-expansion-50/register-2026-10-29.json');
+ assert([repair.baselineSha256,repair.afterSha256,expansion.afterSha256].includes(hash(raw)),'Unregistered vocabulary edits; do not overwrite the historical audit.');
  const references=await read(referencePath),normalization=await read(`${dataDir}/normalization-reviews.json`);
  const sourceRegistry=await read(`${dataDir}/reference-sources.json`);
  const formatting=await read(`${dataDir}/source-format-reviews.json`);

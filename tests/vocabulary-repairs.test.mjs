@@ -24,8 +24,8 @@ const byId = new Map(referenceVocabulary.map(word => [word.id, word]));
 test('the 33 repairs remain intact in active or historical data; their original baseline is recoverable', () => {
   assert.equal(register.reviews.length, 33);
   assert.equal(new Set(register.reviews.map(item => item.id)).size, 33);
-  assert.equal(vocabulary.length, 8699);
-  assert.equal(byId.size, 8699 + RETIRED_VOCABULARY.length);
+  assert.equal(vocabulary.length, 8749);
+  assert.equal(byId.size, 8749 + RETIRED_VOCABULARY.length);
   const restored = new Map();
   for (const review of register.reviews) {
     assert.equal(review.status, 'resolved');

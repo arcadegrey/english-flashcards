@@ -1,6 +1,6 @@
 {
   "batchSize": 200,
-  "count": 9026,
+  "count": 9076,
   "batches": {
     "0": "/data/word-hints/0-f9e63f83467c9a1d.json",
     "1": "/data/word-hints/1-fe4cfc15a7f7abb5.json",
@@ -47,6 +47,6 @@
     "42": "/data/word-hints/42-5bab9aa3dcc21d17.json",
     "43": "/data/word-hints/43-7e718c0014367a97.json",
     "44": "/data/word-hints/44-2dff6e9b5d5b97e6.json",
-    "45": "/data/word-hints/45-3048d16f4cae415e.json"
+    "45": "/data/word-hints/45-536cae3f8de36a71.json"
   }
 }

@@ -8,6 +8,11 @@ const read=async path=>JSON.parse(await readFile(new URL(path,root),'utf8'));
 const serialize=value=>JSON.stringify(value,null,2)+'\n';
 const hash=value=>createHash('sha256').update(value).digest('hex');
 const vocabulary=await read('public/data/vocabulary.json');
+const expansion = await read('data/vocabulary-expansion-50/register-2026-10-29.json');
+if (hash(serialize(vocabulary)) === expansion.afterSha256) {
+ console.log('Preserving the registered 50-unit expansion.');
+ process.exit(0);
+}
 const latestCommonSenses = await read('data/vocabulary-common-senses-repair/reviews-2026-10-29.json');
 if (hash(serialize(vocabulary)) === latestCommonSenses.afterSha256) {
   console.log('Preserving the later registered common-sense repairs.');

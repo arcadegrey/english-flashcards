@@ -7,6 +7,11 @@ const root=new URL('../',import.meta.url),dir='data/vocabulary-common-senses-rep
 const read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
 const serialize=v=>JSON.stringify(v,null,2)+'\n',hash=v=>createHash('sha256').update(v).digest('hex');
 const words=await read('public/data/vocabulary.json');
+const expansion = await read('data/vocabulary-expansion-50/register-2026-10-29.json');
+if (hash(serialize(words)) === expansion.afterSha256) {
+ console.log('Preserving the registered 50-unit expansion.');
+ process.exit(0);
+}
 const previousBatch=await read('data/vocabulary-short-example-repair/reviews-2026-10-29.json');
 const proposal=await read('data/vocabulary-coverage-2026-10-29/first-batch-proposal.json');
 const patches=await read(`${dir}/patches-2026-10-29.json`);

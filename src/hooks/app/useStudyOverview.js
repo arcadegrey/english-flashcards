@@ -23,7 +23,7 @@ export function useStudyOverview(learning, catalog, navigationState, clock) {
     dailyNewWordTarget, studyPlanCategory, planExamActivity,
   } = learning
   const {
-    vocabulary, setVocabulary, vocabularyLoading, toeflManifest, ieltsManifest, allVocabulary, wordCounts,
+    vocabulary, setVocabulary, vocabularyLoading, allVocabulary, wordCounts,
     fullVocabularyLoadedRef,
   } = catalog
   const {
@@ -73,9 +73,9 @@ export function useStudyOverview(learning, catalog, navigationState, clock) {
   const statisticsWordCount = useMemo(() => {
     const recordedIds = new Set([...learnedWords, ...masteredWords].map(String))
     const archivedCount = RETIRED_VOCABULARY_IDS.filter(id => recordedIds.has(String(id))).length
-    const activeCount = Number(toeflManifest?.sourceTotal) || Number(ieltsManifest?.sourceTotal) || VOCABULARY_COUNTS.all
+    const activeCount = VOCABULARY_COUNTS.all
     return activeCount + customWords.length + archivedCount
-  }, [customWords.length, ieltsManifest, learnedWords, masteredWords, toeflManifest])
+  }, [customWords.length, learnedWords, masteredWords])
 
   const planCategoryName = categories.find((category) => category.id === studyPlanCategory)?.name || '全部单词'
   const planVocabulary = useMemo(() => getPlanVocabulary(allVocabulary, studyPlanCategory), [allVocabulary, studyPlanCategory])

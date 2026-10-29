@@ -1,0 +1,1734 @@
+{
+  "sources": {
+    "expansion50-9027": {
+      "url": "https://www.merriam-webster.com/dictionary/thank",
+      "title": "韦氏词典 · thank（thank you 表达）",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9028": {
+      "url": "https://www.merriam-webster.com/dictionary/welcome",
+      "title": "韦氏词典 · welcome",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9029": {
+      "url": "https://www.merriam-webster.com/dictionary/how",
+      "title": "韦氏词典 · how",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9030": {
+      "url": "https://www.merriam-webster.com/dictionary/sorry",
+      "title": "韦氏词典 · sorry",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9031": {
+      "url": "https://www.merriam-webster.com/dictionary/how%20about",
+      "title": "韦氏词典 · how about",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9032": {
+      "url": "https://www.merriam-webster.com/dictionary/what%20about",
+      "title": "韦氏词典 · what about",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9033": {
+      "url": "https://www.merriam-webster.com/dictionary/would",
+      "title": "韦氏词典 · would",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9034": {
+      "url": "https://www.merriam-webster.com/dictionary/right%20now",
+      "title": "韦氏词典 · right now",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9035": {
+      "url": "https://www.merriam-webster.com/dictionary/look%20at",
+      "title": "韦氏词典 · look at",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9036": {
+      "url": "https://www.merriam-webster.com/dictionary/wake%20up",
+      "title": "韦氏词典 · wake up",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9037": {
+      "url": "https://www.merriam-webster.com/dictionary/I%20think%20so",
+      "title": "韦氏词典 · I think so",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9038": {
+      "url": "https://www.merriam-webster.com/dictionary/in%20the%20middle",
+      "title": "韦氏词典 · in the middle",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9039": {
+      "url": "https://www.merriam-webster.com/dictionary/as%20long%20as",
+      "title": "韦氏词典 · as long as",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9040": {
+      "url": "https://www.merriam-webster.com/dictionary/due%20to",
+      "title": "韦氏词典 · due to",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9041": {
+      "url": "https://www.merriam-webster.com/dictionary/come%20on",
+      "title": "韦氏词典 · come on",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9042": {
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/get-lost",
+      "title": "剑桥词典／语法 · get lost",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9043": {
+      "url": "https://www.merriam-webster.com/dictionary/no%20way",
+      "title": "韦氏词典 · no way",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9044": {
+      "url": "https://www.merriam-webster.com/dictionary/it%20depends",
+      "title": "韦氏词典 · it depends",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9045": {
+      "url": "https://www.merriam-webster.com/dictionary/let%20know",
+      "title": "韦氏词典 · let know",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9046": {
+      "url": "https://www.merriam-webster.com/dictionary/feel%20like",
+      "title": "韦氏词典 · feel like",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9047": {
+      "url": "https://www.merriam-webster.com/dictionary/get%20out",
+      "title": "韦氏词典 · get out",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9048": {
+      "url": "https://www.merriam-webster.com/dictionary/go%20away",
+      "title": "韦氏词典 · go away",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9049": {
+      "url": "https://www.merriam-webster.com/dictionary/on%20top%20of",
+      "title": "韦氏词典 · on top of",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9050": {
+      "url": "https://www.merriam-webster.com/dictionary/part",
+      "title": "韦氏词典 · part",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9051": {
+      "url": "https://www.merriam-webster.com/dictionary/way",
+      "title": "韦氏词典 · way",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9052": {
+      "url": "https://www.merriam-webster.com/dictionary/reason",
+      "title": "韦氏词典 · reason",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9053": {
+      "url": "https://www.merriam-webster.com/dictionary/so%20that",
+      "title": "韦氏词典 · so that",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9054": {
+      "url": "https://dictionary.cambridge.org/grammar/british-grammar/suggestions",
+      "title": "剑桥词典／语法 · why not",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9055": {
+      "url": "https://www.merriam-webster.com/dictionary/belong",
+      "title": "韦氏词典 · belong",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9056": {
+      "url": "https://www.merriam-webster.com/dictionary/focus",
+      "title": "韦氏词典 · focus",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9057": {
+      "url": "https://www.merriam-webster.com/dictionary/aloud",
+      "title": "韦氏词典 · aloud",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9058": {
+      "url": "https://www.merriam-webster.com/dictionary/ant",
+      "title": "韦氏词典 · ant",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9059": {
+      "url": "https://www.merriam-webster.com/dictionary/attic",
+      "title": "韦氏词典 · attic",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9060": {
+      "url": "https://www.merriam-webster.com/dictionary/classmate",
+      "title": "韦氏词典 · classmate",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9061": {
+      "url": "https://www.merriam-webster.com/dictionary/cough",
+      "title": "韦氏词典 · cough",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9062": {
+      "url": "https://www.merriam-webster.com/dictionary/housework",
+      "title": "韦氏词典 · housework",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9063": {
+      "url": "https://www.merriam-webster.com/dictionary/noodle",
+      "title": "韦氏词典 · noodle",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9064": {
+      "url": "https://www.merriam-webster.com/dictionary/zoo",
+      "title": "韦氏词典 · zoo",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9065": {
+      "url": "https://www.merriam-webster.com/dictionary/kilogram",
+      "title": "韦氏词典 · kilogram",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9066": {
+      "url": "https://www.merriam-webster.com/dictionary/upload",
+      "title": "韦氏词典 · upload",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9067": {
+      "url": "https://www.merriam-webster.com/dictionary/append",
+      "title": "韦氏词典 · append",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9068": {
+      "url": "https://www.merriam-webster.com/dictionary/automate",
+      "title": "韦氏词典 · automate",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9069": {
+      "url": "https://www.merriam-webster.com/dictionary/discriminate",
+      "title": "韦氏词典 · discriminate",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9070": {
+      "url": "https://www.merriam-webster.com/dictionary/finite",
+      "title": "韦氏词典 · finite",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9071": {
+      "url": "https://www.merriam-webster.com/dictionary/maximize",
+      "title": "韦氏词典 · maximize",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9072": {
+      "url": "https://www.merriam-webster.com/dictionary/negate",
+      "title": "韦氏词典 · negate",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9073": {
+      "url": "https://www.merriam-webster.com/dictionary/underlie",
+      "title": "韦氏词典 · underlie",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9074": {
+      "url": "https://www.merriam-webster.com/dictionary/clarity",
+      "title": "韦氏词典 · clarity",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9075": {
+      "url": "https://www.merriam-webster.com/dictionary/credible",
+      "title": "韦氏词典 · credible",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    },
+    "expansion50-9076": {
+      "url": "https://www.merriam-webster.com/dictionary/resilience",
+      "title": "韦氏词典 · resilience",
+      "checkedAt": "2026-10-29",
+      "use": "factual-reference"
+    }
+  },
+  "groups": {
+    "expansion50-9027": {
+      "words": [
+        "thank you"
+      ],
+      "comparisonType": "usage",
+      "sense": "phr. · 谢谢；感谢你",
+      "note": "用于表达感谢；thank you for 后接名词或 -ing。不要与有连字符的名词 thank-you 混为一谈。",
+      "examples": [
+        {
+          "en": "Thank you for the lovely flowers.",
+          "zh": "谢谢你送来漂亮的花。"
+        },
+        {
+          "en": "Thank you for waiting outside.",
+          "zh": "谢谢你在外面等候。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9027"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9028": {
+      "words": [
+        "you're welcome"
+      ],
+      "comparisonType": "usage",
+      "sense": "phr. · 不客气（回应感谢）",
+      "note": "回应他人的感谢；you're 是 you are 的缩写，此处 welcome 不是欢迎客人的动词。",
+      "examples": [
+        {
+          "en": "You're welcome, and please visit us again.",
+          "zh": "不客气，欢迎你再来。"
+        },
+        {
+          "en": "You're welcome, and I hope the map helps.",
+          "zh": "不客气，希望这张地图能帮上忙。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9028"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9029": {
+      "words": [
+        "how are you"
+      ],
+      "comparisonType": "usage",
+      "sense": "phr. · 你好吗（问候语）",
+      "note": "问候对方近况；日常答语可以很简短。how are you feeling 可具体询问感受或身体状况。",
+      "examples": [
+        {
+          "en": "How are you after your long trip?",
+          "zh": "长途旅行之后，你感觉怎么样？"
+        },
+        {
+          "en": "How are you doing at your new school?",
+          "zh": "你在新学校过得怎么样？"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9029"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9030": {
+      "words": [
+        "i'm sorry"
+      ],
+      "comparisonType": "usage",
+      "sense": "phr. · 对不起；我很遗憾",
+      "note": "可用于道歉，也可表示同情；I'm sorry about 后接事情，I'm sorry to hear that 表示听到坏消息很遗憾。",
+      "examples": [
+        {
+          "en": "I'm sorry about the noise last night.",
+          "zh": "昨晚的噪音真是对不起。"
+        },
+        {
+          "en": "I'm sorry to hear that your dog is ill.",
+          "zh": "听说你的狗病了，我很难过。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9030"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9031": {
+      "words": [
+        "how about"
+      ],
+      "comparisonType": "usage",
+      "sense": "phr. · ……怎么样（提出建议或询问）",
+      "note": "提出建议时可接名词或 -ing；How about you? 可把同一个问题转问对方。",
+      "examples": [
+        {
+          "en": "How about a picnic by the lake?",
+          "zh": "去湖边野餐怎么样？"
+        },
+        {
+          "en": "How about meeting after lunch?",
+          "zh": "午饭后见面怎么样？"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9031"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9032": {
+      "words": [
+        "what about"
+      ],
+      "comparisonType": "usage",
+      "sense": "phr. · ……怎么样；那么……呢",
+      "note": "可提出建议，也可追问尚未处理的事；后接名词或 -ing，不机械等同于 What is。",
+      "examples": [
+        {
+          "en": "What about having dinner together?",
+          "zh": "一起吃晚饭怎么样？"
+        },
+        {
+          "en": "What about your sister's ticket?",
+          "zh": "那你姐姐的票呢？"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9032"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9033": {
+      "words": [
+        "would you like"
+      ],
+      "comparisonType": "usage",
+      "sense": "phr. · 你想要……吗（礼貌提议或邀请）",
+      "note": "would you like 后接名词或 to do；邀请某人做事时保留 to，区别于询问一般喜好的 Do you like。",
+      "examples": [
+        {
+          "en": "Would you like to sit by the window?",
+          "zh": "你想坐在窗边吗？"
+        },
+        {
+          "en": "Would you like another slice of bread?",
+          "zh": "你还想要一片面包吗？"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9033"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9034": {
+      "words": [
+        "right now"
+      ],
+      "comparisonType": "usage",
+      "sense": "adv. · 现在；立刻",
+      "note": "表示就在此刻，也可强调立刻行动；按语境区分当前状态与马上执行。",
+      "examples": [
+        {
+          "en": "The children are at school right now.",
+          "zh": "孩子们现在在学校。"
+        },
+        {
+          "en": "We need to leave right now.",
+          "zh": "我们需要立刻出发。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9034"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9035": {
+      "words": [
+        "look at"
+      ],
+      "comparisonType": "usage",
+      "sense": "v. · 看；注视；查看",
+      "note": "look at 后接所看的对象；look 强调把视线转过去，see 可表示看见的结果。",
+      "examples": [
+        {
+          "en": "We can look at the menu together.",
+          "zh": "我们可以一起看看菜单。"
+        },
+        {
+          "en": "Please look at both sides of the coin.",
+          "zh": "请看看硬币的两面。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9035"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9036": {
+      "words": [
+        "wake up"
+      ],
+      "comparisonType": "usage",
+      "sense": "v. · 醒来；叫醒",
+      "note": "可不带宾语表示醒来，也可叫醒他人；代词放中间，如 wake him up。",
+      "examples": [
+        {
+          "en": "Please wake me up at six.",
+          "zh": "请六点叫醒我。",
+          "forms": [
+            {
+              "word": "wake up",
+              "form": "wake me up",
+              "sourceIds": [
+                "expansion50-9036"
+              ],
+              "review": {
+                "status": "source-checked",
+                "checkedAt": "2026-10-29"
+              }
+            }
+          ]
+        },
+        {
+          "en": "The birds wake up when the sun rises.",
+          "zh": "太阳升起时，鸟儿醒来。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9036"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9037": {
+      "words": [
+        "i think so"
+      ],
+      "comparisonType": "usage",
+      "sense": "phr. · 我想是的；我认为如此",
+      "note": "用 so 代替前面提到的看法，表示倾向于赞同；通常比直接肯定更保留。",
+      "examples": [
+        {
+          "en": "I think so, but we should ask the teacher.",
+          "zh": "我想是的，不过我们应该问问老师。"
+        },
+        {
+          "en": "I think so, because the lights are still on.",
+          "zh": "我想是的，因为灯还亮着。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9037"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9038": {
+      "words": [
+        "in the middle"
+      ],
+      "comparisonType": "usage",
+      "sense": "adv. · 在中间；在……期间（常接 of）",
+      "note": "可指位置居中；in the middle of 后接地点、事件或进行中的活动。",
+      "examples": [
+        {
+          "en": "Put the small bowl in the middle.",
+          "zh": "把小碗放在中间。"
+        },
+        {
+          "en": "The phone rang in the middle of dinner.",
+          "zh": "晚饭吃到一半时，电话响了。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9038"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9039": {
+      "words": [
+        "as long as"
+      ],
+      "comparisonType": "usage",
+      "sense": "条件连词与比较结构 · 只要；与……一样长（或久）",
+      "note": "条件义后接完整从句；也可比较长度或时间，不能在所有句子里都译成只要。",
+      "examples": [
+        {
+          "en": "You may stay as long as you keep quiet.",
+          "zh": "只要保持安静，你就可以留下。"
+        },
+        {
+          "en": "This rope is as long as that one.",
+          "zh": "这根绳子和那根一样长。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9039"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9040": {
+      "words": [
+        "due to"
+      ],
+      "comparisonType": "usage",
+      "sense": "prep. · 由于；因为",
+      "note": "后接名词或名词短语表示原因；区别于接完整从句的 because。",
+      "examples": [
+        {
+          "en": "The match was cancelled due to rain.",
+          "zh": "比赛因下雨而取消。"
+        },
+        {
+          "en": "The shop is closed due to repairs.",
+          "zh": "商店因维修而关闭。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9040"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9041": {
+      "words": [
+        "come on"
+      ],
+      "comparisonType": "usage",
+      "sense": "phr. · 快点；加油；得了吧（依语气而定）",
+      "note": "鼓励或催促时常独立使用；也可能表达不相信或不耐烦，留意语气和上下文。",
+      "examples": [
+        {
+          "en": "Come on, the bus is waiting!",
+          "zh": "快点，公共汽车在等着呢！"
+        },
+        {
+          "en": "Come on, give the puzzle another try!",
+          "zh": "加油，再试一次这道谜题！"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9041"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9042": {
+      "words": [
+        "get lost"
+      ],
+      "comparisonType": "usage",
+      "sense": "v. · 迷路；走开（命令语气时不礼貌）",
+      "note": "默认教迷路；单独命令 Get lost! 是不礼貌地赶人走，不用作问路或礼貌告别。",
+      "examples": [
+        {
+          "en": "It is easy to get lost in this forest.",
+          "zh": "在这片森林里很容易迷路。"
+        },
+        {
+          "en": "Take your phone so you do not get lost.",
+          "zh": "带上手机，以免迷路。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9042"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9043": {
+      "words": [
+        "no way"
+      ],
+      "comparisonType": "usage",
+      "sense": "phr. · 不可能；绝不；没门（非正式）",
+      "note": "非正式地表示不可能或强烈拒绝；单独说 No way! 语气很强，需看场合。",
+      "examples": [
+        {
+          "en": "There is no way to open it from outside.",
+          "zh": "从外面无法打开它。"
+        },
+        {
+          "en": "No way am I leaving you here alone!",
+          "zh": "我绝不会把你独自留在这里！"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9043"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9044": {
+      "words": [
+        "it depends"
+      ],
+      "comparisonType": "usage",
+      "sense": "phr. · 看情况；那得视情况而定",
+      "note": "可单独回应未确定的问题；说明条件时用 depend on 后接名词或疑问从句。",
+      "examples": [
+        {
+          "en": "It depends on the weather tomorrow.",
+          "zh": "这取决于明天的天气。"
+        },
+        {
+          "en": "It depends on whether the shop is open.",
+          "zh": "那要看商店是否开门。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9044"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9045": {
+      "words": [
+        "let me know"
+      ],
+      "comparisonType": "usage",
+      "sense": "phr. · 告诉我；让我知道",
+      "note": "let 后用宾语加动词原形；me 是被告知的人，换成其他人时用 let us know 等。",
+      "examples": [
+        {
+          "en": "Let me know if you need a pencil.",
+          "zh": "如果需要铅笔，请告诉我。"
+        },
+        {
+          "en": "Please let me know your answer by Friday.",
+          "zh": "请在星期五之前告诉我你的答复。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9045"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9046": {
+      "words": [
+        "feel like"
+      ],
+      "comparisonType": "usage",
+      "sense": "v. · 想要；感觉像",
+      "note": "想做某事时接 -ing，不接 to do；接名词时也可表示感觉像某物。",
+      "examples": [
+        {
+          "en": "Do you feel like a hot drink?",
+          "zh": "你想喝点热饮吗？"
+        },
+        {
+          "en": "These soft socks feel like cotton.",
+          "zh": "这些柔软的袜子摸起来像棉质的。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9046"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9047": {
+      "words": [
+        "get out"
+      ],
+      "comparisonType": "usage",
+      "sense": "v. · 出去；离开；传开（消息）",
+      "note": "离开容器或车辆时常用 get out of；单独命令 Get out! 可能很强硬。",
+      "examples": [
+        {
+          "en": "We need to get out before the gate closes.",
+          "zh": "我们需要在大门关闭前出去。"
+        },
+        {
+          "en": "How did the secret get out?",
+          "zh": "这个秘密是怎么传出去的？"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9047"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9048": {
+      "words": [
+        "go away"
+      ],
+      "comparisonType": "usage",
+      "sense": "v. · 离开；消失",
+      "note": "可指人离开，也可指问题或感觉消失；直接命令人 Go away! 往往不友好。",
+      "examples": [
+        {
+          "en": "We plan to go away for the weekend.",
+          "zh": "我们打算周末外出。"
+        },
+        {
+          "en": "This headache will not go away.",
+          "zh": "这阵头痛一直不消退。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9048"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9049": {
+      "words": [
+        "on top of"
+      ],
+      "comparisonType": "usage",
+      "sense": "prep. · 在……上面；除……之外还",
+      "note": "位置义可指物体顶部；另有在已有事项之外再加一项的意思，按语境判断。",
+      "examples": [
+        {
+          "en": "Do not put heavy books on top of the box.",
+          "zh": "不要把重书放在盒子上面。"
+        },
+        {
+          "en": "She has exams on top of her daily work.",
+          "zh": "除了日常工作，她还要参加考试。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9049"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9050": {
+      "words": [
+        "as part of"
+      ],
+      "comparisonType": "usage",
+      "sense": "phr. · 作为……的一部分",
+      "note": "part 作整体中的一部分；as part of 后接所属的活动、计划或整体。",
+      "examples": [
+        {
+          "en": "They planted trees as part of the project.",
+          "zh": "他们植树作为这个项目的一部分。"
+        },
+        {
+          "en": "I keep a diary as part of my study routine.",
+          "zh": "写日记是我日常学习的一部分。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9050"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9051": {
+      "words": [
+        "in this way"
+      ],
+      "comparisonType": "usage",
+      "sense": "phr. · 用这种方式；这样",
+      "note": "this 指上下文说明的方法；这里的 way 是方式，不是道路。",
+      "examples": [
+        {
+          "en": "Hold the brush in this way for better control.",
+          "zh": "这样握画笔会更容易控制。"
+        },
+        {
+          "en": "We can save water in this way.",
+          "zh": "我们可以用这种方式节水。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9051"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9052": {
+      "words": [
+        "for this reason"
+      ],
+      "comparisonType": "usage",
+      "sense": "phr. · 因此；由于这个原因",
+      "note": "连接前面的原因与后面的结果；this reason 指刚说明的原因，注意句间标点。",
+      "examples": [
+        {
+          "en": "The room is quiet; for this reason, I study here.",
+          "zh": "房间很安静，因此我在这里学习。"
+        },
+        {
+          "en": "The bridge is closed; for this reason, we took another road.",
+          "zh": "桥封闭了，因此我们走了另一条路。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9052"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9053": {
+      "words": [
+        "so that"
+      ],
+      "comparisonType": "usage",
+      "sense": "conj. · 以便；因此（连接目的或结果）",
+      "note": "后接完整从句；目的义常与 can、could 等连用，结果义需按上下文判断。",
+      "examples": [
+        {
+          "en": "I wrote it down so that I would remember.",
+          "zh": "我把它写下来，以便记住。"
+        },
+        {
+          "en": "Move the chair so that the door can open.",
+          "zh": "挪开椅子，好让门能打开。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9053"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9054": {
+      "words": [
+        "why not"
+      ],
+      "comparisonType": "usage",
+      "sense": "phr. · 为什么不……（建议）；好啊（表示同意）",
+      "note": "建议时用 why not 加动词原形，不加 to；单独回应 Why not? 可表示同意提议。",
+      "examples": [
+        {
+          "en": "Why not ask your teacher for help?",
+          "zh": "为什么不请老师帮忙呢？"
+        },
+        {
+          "en": "Why not try the green one?",
+          "zh": "为什么不试试绿色的那个呢？"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9054"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9055": {
+      "words": [
+        "belong to"
+      ],
+      "comparisonType": "usage",
+      "sense": "v. · 属于；是……的成员",
+      "note": "表示归属或成员关系，通常不用进行时；to 后接拥有者或组织。",
+      "examples": [
+        {
+          "en": "Does this umbrella belong to you?",
+          "zh": "这把伞是你的吗？"
+        },
+        {
+          "en": "Many students belong to the music club.",
+          "zh": "很多学生是音乐社团的成员。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9055"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9056": {
+      "words": [
+        "focus on"
+      ],
+      "comparisonType": "usage",
+      "sense": "v. · 集中于；关注",
+      "note": "后接名词或 -ing；focus on 表示把注意力集中在某事上，区别于泛泛地看一眼。",
+      "examples": [
+        {
+          "en": "Please focus on the road while driving.",
+          "zh": "开车时请专心看路。"
+        },
+        {
+          "en": "We focus on helping new students.",
+          "zh": "我们着重帮助新同学。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9056"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9057": {
+      "words": [
+        "aloud"
+      ],
+      "comparisonType": "usage",
+      "sense": "adv. · 出声地；让人听得见地",
+      "note": "read aloud 指读出声音，不一定很大声；loudly 强调音量大，二者不总能互换。",
+      "examples": [
+        {
+          "en": "She practises speaking aloud at home.",
+          "zh": "她在家练习出声说话。"
+        },
+        {
+          "en": "We read the poem aloud together.",
+          "zh": "我们一起朗读这首诗。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9057"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9058": {
+      "words": [
+        "ant"
+      ],
+      "comparisonType": "usage",
+      "sense": "n. · 蚂蚁",
+      "note": "可数名词；单数前用 an，复数为 ants。不要与 aunt 的拼写混淆。",
+      "examples": [
+        {
+          "en": "We watched an ant climb the wall.",
+          "zh": "我们看着一只蚂蚁爬墙。"
+        },
+        {
+          "en": "An ant found a crumb near the door.",
+          "zh": "一只蚂蚁在门边找到了一块面包屑。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9058"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9059": {
+      "words": [
+        "attic"
+      ],
+      "comparisonType": "usage",
+      "sense": "n. · 阁楼；屋顶下的储藏空间",
+      "note": "可数名词，指屋顶下的空间；常用 in the attic，区别于地下室 basement。",
+      "examples": [
+        {
+          "en": "There is a small window in our attic.",
+          "zh": "我们的阁楼有一扇小窗。"
+        },
+        {
+          "en": "She found a wooden box in the attic.",
+          "zh": "她在阁楼里找到一个木盒。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9059"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9060": {
+      "words": [
+        "classmate"
+      ],
+      "comparisonType": "usage",
+      "sense": "n. · 同班同学",
+      "note": "可数名词；classmate 特指同班同学，不泛指所有同校学生。",
+      "examples": [
+        {
+          "en": "I sit beside my classmate at lunch.",
+          "zh": "午饭时我坐在同班同学旁边。"
+        },
+        {
+          "en": "A new classmate joined us on Monday.",
+          "zh": "星期一，一位新同学加入了我们班。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9060"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9061": {
+      "words": [
+        "cough"
+      ],
+      "comparisonType": "usage",
+      "sense": "v. / n. · v. 咳嗽",
+      "note": "作动词可直接表示咳嗽；作名词可说 have a cough。gh 在这里发 /f/。",
+      "examples": [
+        {
+          "en": "He has a cough but no fever.",
+          "zh": "他咳嗽，但不发烧。"
+        },
+        {
+          "en": "Dust can make people cough.",
+          "zh": "灰尘会让人咳嗽。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9061"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9062": {
+      "words": [
+        "housework"
+      ],
+      "comparisonType": "usage",
+      "sense": "n. · 家务劳动",
+      "note": "通常不可数，常用 do housework；区别于课后作业 homework，不说 a housework。",
+      "examples": [
+        {
+          "en": "I do housework before lunch.",
+          "zh": "我在午饭前做家务。"
+        },
+        {
+          "en": "Music makes the housework less boring.",
+          "zh": "音乐让家务不那么枯燥。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9062"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9063": {
+      "words": [
+        "noodle"
+      ],
+      "comparisonType": "usage",
+      "sense": "n. · 面条（通常用复数 noodles）",
+      "note": "单根可数，但表示一道面食时通常用 noodles；注意 noodle 与 needle 的拼写不同。",
+      "examples": [
+        {
+          "en": "She picked up a noodle with her chopsticks.",
+          "zh": "她用筷子夹起了一根面条。"
+        },
+        {
+          "en": "We ate noodles with vegetables for dinner.",
+          "zh": "晚饭我们吃了蔬菜面。",
+          "forms": [
+            {
+              "word": "noodle",
+              "form": "noodles",
+              "sourceIds": [
+                "expansion50-9063"
+              ],
+              "review": {
+                "status": "source-checked",
+                "checkedAt": "2026-10-29"
+              }
+            }
+          ]
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9063"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9064": {
+      "words": [
+        "zoo"
+      ],
+      "comparisonType": "usage",
+      "sense": "n. · 动物园",
+      "note": "可数名词；复数为 zoos，不加 -es；常用 at the zoo。",
+      "examples": [
+        {
+          "en": "The zoo opens at nine in the morning.",
+          "zh": "动物园早上九点开门。"
+        },
+        {
+          "en": "Our class will visit the zoo next week.",
+          "zh": "我们班下周将参观动物园。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9064"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9065": {
+      "words": [
+        "kilogram"
+      ],
+      "comparisonType": "usage",
+      "sense": "n. · 千克；公斤",
+      "note": "可数计量名词，缩写 kg；one kilogram，two kilograms。千克是质量单位。",
+      "examples": [
+        {
+          "en": "We bought half a kilogram of apples.",
+          "zh": "我们买了半公斤苹果。"
+        },
+        {
+          "en": "The box weighs less than a kilogram.",
+          "zh": "这个盒子重不到一千克。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9065"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9066": {
+      "words": [
+        "upload"
+      ],
+      "comparisonType": "usage",
+      "sense": "v. · 上传（文件或数据）",
+      "note": "把文件从本地传到网站或服务器；upload something to somewhere，方向与 download 相反。本卡教动词读音。",
+      "examples": [
+        {
+          "en": "I need to upload the report before lunch.",
+          "zh": "我需要在午饭前上传报告。"
+        },
+        {
+          "en": "You can upload a file from your phone.",
+          "zh": "你可以从手机上传一个文件。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9066"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9067": {
+      "words": [
+        "append"
+      ],
+      "comparisonType": "usage",
+      "sense": "v. · 追加；附加在末尾",
+      "note": "常用 append A to B，表示把 A 加到 B 末尾；较常见于书面或技术语境。",
+      "examples": [
+        {
+          "en": "We will append the notes to the report.",
+          "zh": "我们会把笔记附在报告后面。"
+        },
+        {
+          "en": "The program can append a date to each file.",
+          "zh": "这个程序可以把日期添加到每个文件末尾。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9067"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9068": {
+      "words": [
+        "automate"
+      ],
+      "comparisonType": "usage",
+      "sense": "v. · 使自动化",
+      "note": "常接 process、task 等对象，表示让机器或软件执行；自动化并不等于完全不需人参与。",
+      "examples": [
+        {
+          "en": "We want to automate the daily backup.",
+          "zh": "我们想让每日备份自动进行。"
+        },
+        {
+          "en": "The factory plans to automate its packing process.",
+          "zh": "工厂计划将包装流程自动化。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9068"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9069": {
+      "words": [
+        "discriminate"
+      ],
+      "comparisonType": "usage",
+      "sense": "v. · 辨别；区别对待；歧视",
+      "note": "discriminate between A and B 可中性表示辨别；discriminate against someone 表示歧视，不能混淆搭配。",
+      "examples": [
+        {
+          "en": "The test can discriminate between similar sounds.",
+          "zh": "这项测试能区分相似的声音。"
+        },
+        {
+          "en": "Employers must not discriminate against older workers.",
+          "zh": "雇主不得歧视年长的员工。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9069"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9070": {
+      "words": [
+        "finite"
+      ],
+      "comparisonType": "usage",
+      "sense": "adj. · 有限的；有界限的",
+      "note": "与 infinite 无限的相对；finite 描述数量、时间或资源有界限，不等同于已经用完。",
+      "examples": [
+        {
+          "en": "The game has a finite number of levels.",
+          "zh": "这个游戏的关卡数量有限。"
+        },
+        {
+          "en": "Our planet has finite resources.",
+          "zh": "我们星球的资源是有限的。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9070"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9071": {
+      "words": [
+        "maximize"
+      ],
+      "comparisonType": "usage",
+      "sense": "v. · 使最大化；充分利用",
+      "note": "美式常写 maximize，英式也常见 maximise；可表示提高到最大程度或充分利用。",
+      "examples": [
+        {
+          "en": "Open the curtains to maximize natural light.",
+          "zh": "拉开窗帘以尽量利用自然光。"
+        },
+        {
+          "en": "Careful planning can maximize our study time.",
+          "zh": "认真规划能让我们的学习时间得到充分利用。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9071"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9072": {
+      "words": [
+        "negate"
+      ],
+      "comparisonType": "usage",
+      "sense": "v. · 否定；使无效；抵消",
+      "note": "作及物动词，可否认陈述，也可使效果失效；本卡主要示范抵消效果，不机械译成说不。",
+      "examples": [
+        {
+          "en": "These delays could negate the benefit of leaving early.",
+          "zh": "这些延误可能抵消早出发的好处。"
+        },
+        {
+          "en": "The new evidence does not negate her claim.",
+          "zh": "新证据并没有否定她的说法。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9072"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9073": {
+      "words": [
+        "underlie"
+      ],
+      "comparisonType": "usage",
+      "sense": "v. · 构成……的基础；位于……之下",
+      "note": "通常直接接宾语；过去式 underlay，过去分词 underlain，-ing 形式 underlying。不要与 underlay 的其他独立用法混淆。",
+      "examples": [
+        {
+          "en": "Shared values underlie their friendship.",
+          "zh": "共同的价值观是他们友谊的基础。"
+        },
+        {
+          "en": "Several problems underlie the recent delays.",
+          "zh": "最近的延误背后有几个根本问题。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9073"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9074": {
+      "words": [
+        "clarity"
+      ],
+      "comparisonType": "usage",
+      "sense": "n. · 清晰；清楚；明晰",
+      "note": "常作不可数名词；可指表达易懂、思路清晰或视觉清楚，with clarity 表示清楚地。",
+      "examples": [
+        {
+          "en": "Short sentences can improve the clarity of a report.",
+          "zh": "短句能提高报告的清晰度。"
+        },
+        {
+          "en": "We need more clarity about the next step.",
+          "zh": "我们需要更清楚地了解下一步。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9074"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9075": {
+      "words": [
+        "credible"
+      ],
+      "comparisonType": "usage",
+      "sense": "adj. · 可信的；可靠的",
+      "note": "常修饰 evidence、source、explanation；credible 表示值得相信，区别于 credulous 轻信的。",
+      "examples": [
+        {
+          "en": "The newspaper quoted a credible source.",
+          "zh": "报纸引用了一个可靠的消息来源。"
+        },
+        {
+          "en": "Her explanation sounds credible to me.",
+          "zh": "我觉得她的解释听起来可信。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9075"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    },
+    "expansion50-9076": {
+      "words": [
+        "resilience"
+      ],
+      "comparisonType": "usage",
+      "sense": "n. · 恢复力；韧性；适应力",
+      "note": "通常不可数，可指受挫后的恢复适应能力，也可指材料恢复形状的能力；不等于从不遇到困难。",
+      "examples": [
+        {
+          "en": "Support from friends can build resilience.",
+          "zh": "朋友的支持能增强应对挫折的能力。"
+        },
+        {
+          "en": "The material has enough resilience to regain its shape.",
+          "zh": "这种材料有足够的回弹力来恢复形状。"
+        }
+      ],
+      "sourceIds": [
+        "expansion50-9076"
+      ],
+      "review": {
+        "status": "source-checked",
+        "checkedAt": "2026-10-29"
+      }
+    }
+  },
+  "notes": {
+    "thank you": {
+      "synonymGroup": "expansion50-9027"
+    },
+    "you're welcome": {
+      "synonymGroup": "expansion50-9028"
+    },
+    "how are you": {
+      "synonymGroup": "expansion50-9029"
+    },
+    "i'm sorry": {
+      "synonymGroup": "expansion50-9030"
+    },
+    "how about": {
+      "synonymGroup": "expansion50-9031"
+    },
+    "what about": {
+      "synonymGroup": "expansion50-9032"
+    },
+    "would you like": {
+      "synonymGroup": "expansion50-9033"
+    },
+    "right now": {
+      "synonymGroup": "expansion50-9034"
+    },
+    "look at": {
+      "synonymGroup": "expansion50-9035"
+    },
+    "wake up": {
+      "synonymGroup": "expansion50-9036"
+    },
+    "i think so": {
+      "synonymGroup": "expansion50-9037"
+    },
+    "in the middle": {
+      "synonymGroup": "expansion50-9038"
+    },
+    "as long as": {
+      "synonymGroup": "expansion50-9039"
+    },
+    "due to": {
+      "synonymGroup": "expansion50-9040"
+    },
+    "come on": {
+      "synonymGroup": "expansion50-9041"
+    },
+    "get lost": {
+      "synonymGroup": "expansion50-9042"
+    },
+    "no way": {
+      "synonymGroup": "expansion50-9043"
+    },
+    "it depends": {
+      "synonymGroup": "expansion50-9044"
+    },
+    "let me know": {
+      "synonymGroup": "expansion50-9045"
+    },
+    "feel like": {
+      "synonymGroup": "expansion50-9046"
+    },
+    "get out": {
+      "synonymGroup": "expansion50-9047"
+    },
+    "go away": {
+      "synonymGroup": "expansion50-9048"
+    },
+    "on top of": {
+      "synonymGroup": "expansion50-9049"
+    },
+    "as part of": {
+      "synonymGroup": "expansion50-9050"
+    },
+    "in this way": {
+      "synonymGroup": "expansion50-9051"
+    },
+    "for this reason": {
+      "synonymGroup": "expansion50-9052"
+    },
+    "so that": {
+      "synonymGroup": "expansion50-9053"
+    },
+    "why not": {
+      "synonymGroup": "expansion50-9054"
+    },
+    "belong to": {
+      "synonymGroup": "expansion50-9055"
+    },
+    "focus on": {
+      "synonymGroup": "expansion50-9056"
+    },
+    "aloud": {
+      "synonymGroup": "expansion50-9057"
+    },
+    "ant": {
+      "synonymGroup": "expansion50-9058"
+    },
+    "attic": {
+      "synonymGroup": "expansion50-9059"
+    },
+    "classmate": {
+      "synonymGroup": "expansion50-9060"
+    },
+    "cough": {
+      "synonymGroup": "expansion50-9061"
+    },
+    "housework": {
+      "synonymGroup": "expansion50-9062"
+    },
+    "noodle": {
+      "synonymGroup": "expansion50-9063"
+    },
+    "zoo": {
+      "synonymGroup": "expansion50-9064"
+    },
+    "kilogram": {
+      "synonymGroup": "expansion50-9065"
+    },
+    "upload": {
+      "synonymGroup": "expansion50-9066"
+    },
+    "append": {
+      "synonymGroup": "expansion50-9067"
+    },
+    "automate": {
+      "synonymGroup": "expansion50-9068"
+    },
+    "discriminate": {
+      "synonymGroup": "expansion50-9069"
+    },
+    "finite": {
+      "synonymGroup": "expansion50-9070"
+    },
+    "maximize": {
+      "synonymGroup": "expansion50-9071"
+    },
+    "negate": {
+      "synonymGroup": "expansion50-9072"
+    },
+    "underlie": {
+      "synonymGroup": "expansion50-9073"
+    },
+    "clarity": {
+      "synonymGroup": "expansion50-9074"
+    },
+    "credible": {
+      "synonymGroup": "expansion50-9075"
+    },
+    "resilience": {
+      "synonymGroup": "expansion50-9076"
+    }
+  }
+}

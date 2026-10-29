@@ -1,3 +1,4 @@
+import {beforeExpansion50Review} from '../shared/vocabularyHistory.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -11,7 +12,7 @@ import { selectAssignmentWords, buildWordAssignment, gradeWordAssignment } from 
 import { practiceVocabulary } from '../shared/vocabularyPracticePolicy.js';
 import { createClassroomFixture } from './helpers/classroom-db.mjs';
 const read = async path => JSON.parse(await readFile(new URL(`../${path}`, import.meta.url), 'utf8'));
-const vocabulary = await read('public/data/vocabulary.json');
+const vocabulary = beforeExpansion50Review(await read('public/data/vocabulary.json'));
 const additions = await read('data/name-place-replacement/practical-2026-10-26.json');
 const retired = await read('data/name-place-replacement/retired-2026-10-26.json');
 const manifest = await read('data/name-place-replacement/replacement-manifest.json');

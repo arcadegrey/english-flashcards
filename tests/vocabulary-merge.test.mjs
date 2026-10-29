@@ -9,7 +9,7 @@ test('loading full vocabulary after core retains every ID and both homograph rec
   const full = await read('../public/data/vocabulary.json');
   const core = await read('../public/data/vocabulary/core.json');
   for (const merged of [mergeVocabularyList(core, full), mergeVocabularyList(full, core)]) {
-    assert.equal(merged.length, 8699);
+    assert.equal(merged.length, full.length);
     assert.deepEqual(new Set(merged.map(word => word.id)), new Set(full.map(word => word.id)));
     for (const id of [1234, 4293, 3318, 7977]) assert.deepEqual(merged.find(word => word.id === id), full.find(word => word.id === id));
     assert.deepEqual(mergeVocabularyList(merged, full), merged);
