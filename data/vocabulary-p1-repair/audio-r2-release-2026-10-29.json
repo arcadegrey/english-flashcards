@@ -1,0 +1,1249 @@
+{
+  "batch": "2026-10-29-p1",
+  "checkedAt": "2026-10-29T06:19:04.963Z",
+  "remote": true,
+  "verifiedFiles": 124,
+  "manifestSha256": "d1ee5cbd2f73e72941ac6c886fd52754206d30349de6c636d64e250e8797469d",
+  "files": [
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/5854-340b9a041f6c.mp3",
+      "sha256": "a94cccfb7b0792aed796364cb6236bfbc5119f0f442b2868c0d2e4137a153e9a",
+      "bytes": 9144,
+      "decodedSeconds": 3.048,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/5854-340b9a041f6c.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/6109-5dcbc4d5b707.mp3",
+      "sha256": "08fc422150cbee2a90689e53aa88d26ca40321eb64171ed710a3c1a30dadf1e9",
+      "bytes": 7344,
+      "decodedSeconds": 2.448,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/6109-5dcbc4d5b707.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/6369-a6930f5ac017.mp3",
+      "sha256": "6ee4b53939969b1a3236ff746deaed96544fa9218e9a1c2ef65668054040271d",
+      "bytes": 10008,
+      "decodedSeconds": 3.336,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/6369-a6930f5ac017.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/6551-3ddfb1ce5d47.mp3",
+      "sha256": "78579b62518273635ca63fb6158fcc1a60fb225778d16c6c1e5b7f12bf32a8cd",
+      "bytes": 10584,
+      "decodedSeconds": 3.528,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/6551-3ddfb1ce5d47.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/6850-300d35a3a672.mp3",
+      "sha256": "a11c6b5e1960727af0a690773c3c54ec4845bc36140f17655d132827e9a44a9f",
+      "bytes": 9288,
+      "decodedSeconds": 3.096,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/6850-300d35a3a672.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/6968-1b8bd19e705f.mp3",
+      "sha256": "83270c545bad01f67da2ccc5d6468dde07665938e5349ad7e35c743dc7473e4d",
+      "bytes": 9648,
+      "decodedSeconds": 3.216,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/6968-1b8bd19e705f.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/7003-14c92732b385.mp3",
+      "sha256": "50c804ee2f6294be18c0cace59a927d6f53d13d42da79d7183eccf06b16f9ae8",
+      "bytes": 7488,
+      "decodedSeconds": 2.496,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/7003-14c92732b385.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/7127-4273b7a3107a.mp3",
+      "sha256": "62976e10cc3ce47c0cb1d84f337080e640bc8bf730ca3c1f82e15d5b2c657268",
+      "bytes": 9072,
+      "decodedSeconds": 3.024,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/7127-4273b7a3107a.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/7194-ff571311bd59.mp3",
+      "sha256": "b5e77e21d0afb082872c7c1b84159a4a43e98ce16920dc5f1dfa6b1ff3fcfe80",
+      "bytes": 8424,
+      "decodedSeconds": 2.808,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/7194-ff571311bd59.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/7345-8b8219377a8b.mp3",
+      "sha256": "7d78a37e86dcb2c34a092f0ec3c58f150dd3669f099b4007e932a9562feee877",
+      "bytes": 9072,
+      "decodedSeconds": 3.024,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/7345-8b8219377a8b.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/7577-2ded7f1df336.mp3",
+      "sha256": "5e397d88b300666f3c2fefd1e4eefdfd32af7789b73a1405b1c9dd39fcf68237",
+      "bytes": 8352,
+      "decodedSeconds": 2.784,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/7577-2ded7f1df336.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/7777-250cf3d4a07b.mp3",
+      "sha256": "343ceb106220ce18694375eba44eeb7c731cd709dd618dc5dac1cb33c57c7b6e",
+      "bytes": 10512,
+      "decodedSeconds": 3.504,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/7777-250cf3d4a07b.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/7803-3d27baa425b5.mp3",
+      "sha256": "1b3cffdfe59634e471877e31ae2231fb9636cd5a5f833a2638af01c9234adce5",
+      "bytes": 8856,
+      "decodedSeconds": 2.952,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/7803-3d27baa425b5.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/7820-2b3e21a00843.mp3",
+      "sha256": "b1c026c1315069c2feea6249d84381deb9e2c86dd392c04b6724a635efc6cfc7",
+      "bytes": 8496,
+      "decodedSeconds": 2.832,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/7820-2b3e21a00843.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/7866-880e20ee8f7b.mp3",
+      "sha256": "d5688aef5b27c6b1368fe2d6b781ef57b7cc561553987128b520c3af020eda79",
+      "bytes": 10728,
+      "decodedSeconds": 3.576,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/7866-880e20ee8f7b.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/7871-e78fb299c2dc.mp3",
+      "sha256": "d43df3c527c37a9e1998ea291a65cf0d5e560663fc51868d0a08876092c88eb5",
+      "bytes": 10008,
+      "decodedSeconds": 3.336,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/7871-e78fb299c2dc.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/7926-f0cc128516cb.mp3",
+      "sha256": "eba30fc62625eb3f8254f78100352e1afb7b5c481a029235d83de0ad2569350e",
+      "bytes": 9288,
+      "decodedSeconds": 3.096,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/7926-f0cc128516cb.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/8017-70e657a397fd.mp3",
+      "sha256": "25f76ac7b3cb265ee80d73a013bb470e0880362387c3fe1a024f6f6300de8740",
+      "bytes": 6480,
+      "decodedSeconds": 2.16,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/8017-70e657a397fd.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/word/af_bella/8017-ad6f70228841.mp3",
+      "sha256": "bc137058133962c6dcfbff224b8acb948b2cdbf08e34a85f4f62a38bdc96efb5",
+      "bytes": 4680,
+      "decodedSeconds": 1.56,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/word/af_bella/8017-ad6f70228841.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/8040-4a1f5768adf4.mp3",
+      "sha256": "7e3a51e285e498f829a2bde01693ba1a8fb2b8124231d01488bed7dffeaed186",
+      "bytes": 9000,
+      "decodedSeconds": 3,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/8040-4a1f5768adf4.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/8146-070b0f933a87.mp3",
+      "sha256": "9647a3665f0ef2e2499eb4e656451dd50771a77c1614a72f5651ca7860df8673",
+      "bytes": 7704,
+      "decodedSeconds": 2.568,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/8146-070b0f933a87.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/8232-b1ef024dd581.mp3",
+      "sha256": "da0341709af744936a1405fc14526ef572e6ca0d6393fc727d1f49f9aa813cf1",
+      "bytes": 9936,
+      "decodedSeconds": 3.312,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/8232-b1ef024dd581.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/8259-aa57d1dcd525.mp3",
+      "sha256": "c29fbe236e0e789267a9d810d171995a749d2d3b4c7458af86e7f6cc15532e1b",
+      "bytes": 8568,
+      "decodedSeconds": 2.856,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/8259-aa57d1dcd525.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/8329-8955a2231213.mp3",
+      "sha256": "e49769f88c125837764c2bea31c7dba0aea8f3b8d0af475f7596c001c67fa994",
+      "bytes": 6624,
+      "decodedSeconds": 2.208,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/8329-8955a2231213.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/8349-5ca3229303d1.mp3",
+      "sha256": "1a9b797e6e55d5a1384e0c94f5b8c6fe0688a0b6a610e31f3c688d01c4290cbe",
+      "bytes": 8568,
+      "decodedSeconds": 2.856,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/8349-5ca3229303d1.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/8404-bb9dca3f0109.mp3",
+      "sha256": "39eab8d21c1d4e5a28e723e92220e8d3f028dde377b6ae6651f3836fc89b586e",
+      "bytes": 7992,
+      "decodedSeconds": 2.664,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/8404-bb9dca3f0109.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/8481-36ca0b106e53.mp3",
+      "sha256": "595fe74c12d5616024f97da04831ad9613e8c106f5d521721e51c4578b1e8038",
+      "bytes": 7272,
+      "decodedSeconds": 2.424,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/8481-36ca0b106e53.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/8495-b7c5f450a146.mp3",
+      "sha256": "651f71ede82f327768a07f279e22f62cfdf5b86876fc99095f2dc9b5d65d056b",
+      "bytes": 7488,
+      "decodedSeconds": 2.496,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/8495-b7c5f450a146.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/8529-9d816e2ddd6a.mp3",
+      "sha256": "4cb353cab3163cb7f338f1af36310bdb42a7f21093ab9926fc71c73611bc5e90",
+      "bytes": 9360,
+      "decodedSeconds": 3.12,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/8529-9d816e2ddd6a.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/8651-71a6c3d94710.mp3",
+      "sha256": "719bcde7fbaa76528251db8ca47576c8577eb2151d47cd5e743e5dd36c9163b3",
+      "bytes": 9792,
+      "decodedSeconds": 3.264,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/8651-71a6c3d94710.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/af_bella/8668-abf19ebd1f47.mp3",
+      "sha256": "1f1d28b0050f6a7ccb68b5e77ea1da98eea6981413f827edc53758e19df77b85",
+      "bytes": 9504,
+      "decodedSeconds": 3.168,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/af_bella/8668-abf19ebd1f47.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/5854-340b9a041f6c.mp3",
+      "sha256": "4dbdfdd76b79f83390a919114a40d894f1ae2a09d56f393edcb8995a38e18467",
+      "bytes": 9648,
+      "decodedSeconds": 3.216,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/5854-340b9a041f6c.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/6109-5dcbc4d5b707.mp3",
+      "sha256": "3246c0b3ae47e6f22fc566ab28a48b115f9de0257c6e4b1cd0b62460e9923a0d",
+      "bytes": 7200,
+      "decodedSeconds": 2.4,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/6109-5dcbc4d5b707.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/6369-a6930f5ac017.mp3",
+      "sha256": "b8843b666c8147883acfca76afdc5ca79feb3d282c9d84cada690bb28ae302c5",
+      "bytes": 10584,
+      "decodedSeconds": 3.528,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/6369-a6930f5ac017.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/6551-3ddfb1ce5d47.mp3",
+      "sha256": "716995c9e857605561ddc50dc5a0192c65e512ab72166fe8ea60569f335041a5",
+      "bytes": 10800,
+      "decodedSeconds": 3.6,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/6551-3ddfb1ce5d47.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/6850-300d35a3a672.mp3",
+      "sha256": "8df2fb04372adfc7cab64aa978eebb2dba8cbae148bbe83d52e67f62bdb775de",
+      "bytes": 9720,
+      "decodedSeconds": 3.24,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/6850-300d35a3a672.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/6968-1b8bd19e705f.mp3",
+      "sha256": "a7db9e4cb761c99d0d684525a8dc93888c45555d06fdd8c8f07b1bec726ccf2f",
+      "bytes": 10224,
+      "decodedSeconds": 3.408,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/6968-1b8bd19e705f.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/7003-14c92732b385.mp3",
+      "sha256": "0a558630107bf805d7ea8757c0c4f962147aca4d999a6e0cd04fcd09662e70ad",
+      "bytes": 7920,
+      "decodedSeconds": 2.64,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/7003-14c92732b385.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/7127-4273b7a3107a.mp3",
+      "sha256": "fec8c92a17eba95b8376eb5c4a5755e17cb6ef9138cf36c9c4adc8d37ae0c7c7",
+      "bytes": 9936,
+      "decodedSeconds": 3.312,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/7127-4273b7a3107a.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/7194-ff571311bd59.mp3",
+      "sha256": "610cd4d03d816ad95ffd089038219f4e105827aa583615bf49d3bcd4b0911a9e",
+      "bytes": 8784,
+      "decodedSeconds": 2.928,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/7194-ff571311bd59.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/7345-8b8219377a8b.mp3",
+      "sha256": "734d9a26c2e850d8c0280e1103baced3cebdeacaa41009bd28be817b975709e5",
+      "bytes": 9576,
+      "decodedSeconds": 3.192,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/7345-8b8219377a8b.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/7577-2ded7f1df336.mp3",
+      "sha256": "3ccbbf9cd533ff06f1322ddb1858f59db8a9c25601907163d150ae7fd1fad374",
+      "bytes": 8856,
+      "decodedSeconds": 2.952,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/7577-2ded7f1df336.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/7777-250cf3d4a07b.mp3",
+      "sha256": "aa4c32cb7f2263faaa40183145255b55675fd521518fdede7f3788bc4cfdd4eb",
+      "bytes": 10368,
+      "decodedSeconds": 3.456,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/7777-250cf3d4a07b.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/7803-3d27baa425b5.mp3",
+      "sha256": "79b8265c984284bc77f4cfee24f0b013608cba4fa271bddf3aa83472bea8fc86",
+      "bytes": 9648,
+      "decodedSeconds": 3.216,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/7803-3d27baa425b5.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/7820-2b3e21a00843.mp3",
+      "sha256": "dbf2bc02824bc7548192409e428d5c07f8bca86caaa9117386472e03d448bbf0",
+      "bytes": 9072,
+      "decodedSeconds": 3.024,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/7820-2b3e21a00843.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/7866-880e20ee8f7b.mp3",
+      "sha256": "667940d14931e7e64b114c0831584fa18b802a79febcb4ab191e3b1a2eb1246f",
+      "bytes": 10800,
+      "decodedSeconds": 3.6,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/7866-880e20ee8f7b.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/7871-e78fb299c2dc.mp3",
+      "sha256": "5ed26710381cf3694a208d9700bf30712987c9e9825979d8e8b8009d56d741b0",
+      "bytes": 10584,
+      "decodedSeconds": 3.528,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/7871-e78fb299c2dc.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/7926-f0cc128516cb.mp3",
+      "sha256": "eb84b73defc9ec26e70ab300e94b3b4f6d1aa95ee7bde153ee9e926465c41c79",
+      "bytes": 9864,
+      "decodedSeconds": 3.288,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/7926-f0cc128516cb.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/8017-70e657a397fd.mp3",
+      "sha256": "8cd0a44cc8c679840c02fb6a3dd1795231d652dfbe6e56550fb6662bcecf6638",
+      "bytes": 7272,
+      "decodedSeconds": 2.424,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/8017-70e657a397fd.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/word/am_michael/8017-ad6f70228841.mp3",
+      "sha256": "1becaed1545ad3b41960ecee66257a8824336e34a76f16900e3cd9de1b01279b",
+      "bytes": 4536,
+      "decodedSeconds": 1.512,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/word/am_michael/8017-ad6f70228841.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/8040-4a1f5768adf4.mp3",
+      "sha256": "310448384c27371b2fe606cf1de950e3e3c163bf5a89f00007be1e6f5c09f4e2",
+      "bytes": 9720,
+      "decodedSeconds": 3.24,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/8040-4a1f5768adf4.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/8146-070b0f933a87.mp3",
+      "sha256": "6ef3a90481fc05f564e81cc984e0e83b1ba1da9e18c3c029f1ec04ea0fe4af5d",
+      "bytes": 8136,
+      "decodedSeconds": 2.712,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/8146-070b0f933a87.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/8232-b1ef024dd581.mp3",
+      "sha256": "7bb132bd61483f78b382d5127bad43485cb1ac74ccc3c19630f7152224402cec",
+      "bytes": 10224,
+      "decodedSeconds": 3.408,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/8232-b1ef024dd581.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/8259-aa57d1dcd525.mp3",
+      "sha256": "fcef58fd57f291374aeb735daffb62944968e073b654395e8b90edf8a7baa437",
+      "bytes": 9432,
+      "decodedSeconds": 3.144,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/8259-aa57d1dcd525.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/8329-8955a2231213.mp3",
+      "sha256": "a6a97d1931dbf375ddeda2bcc1f960ce30a77484a2b84b316839d6c57846cf31",
+      "bytes": 6912,
+      "decodedSeconds": 2.304,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/8329-8955a2231213.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/8349-5ca3229303d1.mp3",
+      "sha256": "2e72fe0885b32b4cc6afb7d61b46fb684c870b5ccec8428b32d32b33f7ade4dd",
+      "bytes": 9288,
+      "decodedSeconds": 3.096,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/8349-5ca3229303d1.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/8404-bb9dca3f0109.mp3",
+      "sha256": "f2e358780a1d2c764aa0c4b36d2ebb947b3063507e303ede7b0ce9c2a4031f6e",
+      "bytes": 8496,
+      "decodedSeconds": 2.832,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/8404-bb9dca3f0109.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/8481-36ca0b106e53.mp3",
+      "sha256": "cb4f5b0f5f40afcfe022f4bef1e66a228be1da329cb2216a8f9533c9f4061884",
+      "bytes": 7992,
+      "decodedSeconds": 2.664,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/8481-36ca0b106e53.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/8495-b7c5f450a146.mp3",
+      "sha256": "c213af8705376944eab048596e61eb27ab42f20688ce175343d71878b17f49a9",
+      "bytes": 8352,
+      "decodedSeconds": 2.784,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/8495-b7c5f450a146.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/8529-9d816e2ddd6a.mp3",
+      "sha256": "3009e0f5aab658d31853602a5935c73c0e9627b570efabaff7c0600e520b5221",
+      "bytes": 10008,
+      "decodedSeconds": 3.336,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/8529-9d816e2ddd6a.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/8651-71a6c3d94710.mp3",
+      "sha256": "6b7a4bf2b0c8ec6d4907dc230a792bfdf012279a4b8297068b3569693e883778",
+      "bytes": 10080,
+      "decodedSeconds": 3.36,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/8651-71a6c3d94710.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/am_michael/8668-abf19ebd1f47.mp3",
+      "sha256": "e9c824d11c7eb14ad83e5ddeceac9ab7845dce31e1fc075a73d4403c569d17cf",
+      "bytes": 9648,
+      "decodedSeconds": 3.216,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/am_michael/8668-abf19ebd1f47.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/5854-340b9a041f6c.mp3",
+      "sha256": "1356dac2ce96c65af0d58985a861f0cdad360bf7db09f320ef836ec9d2503ff5",
+      "bytes": 9432,
+      "decodedSeconds": 3.144,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/5854-340b9a041f6c.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/6109-5dcbc4d5b707.mp3",
+      "sha256": "19ae96df96308b6d84ed356f3ea94e236a29bd820094aaa22f9fa0c8a5973ed8",
+      "bytes": 7200,
+      "decodedSeconds": 2.4,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/6109-5dcbc4d5b707.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/6369-a6930f5ac017.mp3",
+      "sha256": "b16adcf84dcd21c1bbe72f05f30e098e58cd100d60b0bc54b18856ed89cd80f7",
+      "bytes": 10440,
+      "decodedSeconds": 3.48,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/6369-a6930f5ac017.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/6551-3ddfb1ce5d47.mp3",
+      "sha256": "5a81fca4fc11066adfaac480a0de561ad75f4520ae44891f08c582298068ee8c",
+      "bytes": 10440,
+      "decodedSeconds": 3.48,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/6551-3ddfb1ce5d47.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/6850-300d35a3a672.mp3",
+      "sha256": "22fd2fe1c6443739ebc18808c57efbbab15023faf2e00c4eb30120b78b1e1f77",
+      "bytes": 9792,
+      "decodedSeconds": 3.264,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/6850-300d35a3a672.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/6968-1b8bd19e705f.mp3",
+      "sha256": "beea02cfa432a54c870a9c2d83810cd5c192734d29ea5bea73dce785dfb88233",
+      "bytes": 9576,
+      "decodedSeconds": 3.192,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/6968-1b8bd19e705f.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/7003-14c92732b385.mp3",
+      "sha256": "fa5c4c0b2153707ec9be3c54c89c19dc5313b8b07a7bbd6997e45d4e1b0cae93",
+      "bytes": 7920,
+      "decodedSeconds": 2.64,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/7003-14c92732b385.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/7127-4273b7a3107a.mp3",
+      "sha256": "16d7c29250de1b16857f7afbab8f39af93e4e1f49d480f0f5c0878978799f62e",
+      "bytes": 9288,
+      "decodedSeconds": 3.096,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/7127-4273b7a3107a.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/7194-ff571311bd59.mp3",
+      "sha256": "d3570ff45cbed254fc2a6a012ee3dcf15121f89e3ed0e275556336593fb9b731",
+      "bytes": 9072,
+      "decodedSeconds": 3.024,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/7194-ff571311bd59.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/7345-8b8219377a8b.mp3",
+      "sha256": "ebb35e92c3eb6461b6f05a75cf52a0a4e19fdaa43403a037e95f0df43807a408",
+      "bytes": 9000,
+      "decodedSeconds": 3,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/7345-8b8219377a8b.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/7577-2ded7f1df336.mp3",
+      "sha256": "b4852c30751fc184d2b35d1af7e8565a964f120173ba2d1ffc8ef8f411065efe",
+      "bytes": 8496,
+      "decodedSeconds": 2.832,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/7577-2ded7f1df336.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/7777-250cf3d4a07b.mp3",
+      "sha256": "2463416aca8f1f0f63ffb373933751d4c5d074c69451d94439dd1a46321b0e40",
+      "bytes": 9936,
+      "decodedSeconds": 3.312,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/7777-250cf3d4a07b.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/7803-3d27baa425b5.mp3",
+      "sha256": "e2207e1531a6218f0eed57cf8b787b27606be1fb4f567143ec092dd989084ce8",
+      "bytes": 9288,
+      "decodedSeconds": 3.096,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/7803-3d27baa425b5.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/7820-2b3e21a00843.mp3",
+      "sha256": "ede9abf30a0c6814fd8cd5898f5e73ac0278b901313ae2ee2c7cb376ae4a097e",
+      "bytes": 8784,
+      "decodedSeconds": 2.928,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/7820-2b3e21a00843.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/7866-880e20ee8f7b.mp3",
+      "sha256": "0daeaae8d8dced31f4f6b04cfe99c7640a91596535cc98dfedf841785e0d8cd3",
+      "bytes": 10872,
+      "decodedSeconds": 3.624,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/7866-880e20ee8f7b.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/7871-e78fb299c2dc.mp3",
+      "sha256": "0703af6f4bb1757227394dbf90a2d753ef9cc4cc830b24f08a026dbc9b10c81d",
+      "bytes": 9864,
+      "decodedSeconds": 3.288,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/7871-e78fb299c2dc.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/7926-f0cc128516cb.mp3",
+      "sha256": "a487abe9fc2e3fbf9093097a61d7aefde750c21a73bc4573514f147255ffe0db",
+      "bytes": 9576,
+      "decodedSeconds": 3.192,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/7926-f0cc128516cb.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/8017-70e657a397fd.mp3",
+      "sha256": "0cf515ca392f9e2c0193dc5ffedd4f4a92cc0e5e9e20109648b585ab64e67ba7",
+      "bytes": 7488,
+      "decodedSeconds": 2.496,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/8017-70e657a397fd.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/word/bf_emma/8017-ad6f70228841.mp3",
+      "sha256": "4e176dd411f7f60e49dc8cecbd03a51ccd2839bfedb03c9b062d008e02a8018c",
+      "bytes": 3168,
+      "decodedSeconds": 1.056,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/word/bf_emma/8017-ad6f70228841.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/8040-4a1f5768adf4.mp3",
+      "sha256": "209bce07c4b05b61ed04a1d7d25cae0c24dddb2e5dbb7faa71a3544e7215ae12",
+      "bytes": 9144,
+      "decodedSeconds": 3.048,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/8040-4a1f5768adf4.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/8146-070b0f933a87.mp3",
+      "sha256": "38a26fdb05382599c6386c174bd7fed075be776e2bfdf180de3497df4bd3cc93",
+      "bytes": 8280,
+      "decodedSeconds": 2.76,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/8146-070b0f933a87.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/8232-b1ef024dd581.mp3",
+      "sha256": "258fec701af6c0ef5103fe54754607ccf50e0bd5702e9aa2909a381634a31c1d",
+      "bytes": 10008,
+      "decodedSeconds": 3.336,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/8232-b1ef024dd581.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/8259-aa57d1dcd525.mp3",
+      "sha256": "cabf94937c47f369b01fa95683632576688c615de051deb001c12e44346fa28c",
+      "bytes": 8928,
+      "decodedSeconds": 2.976,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/8259-aa57d1dcd525.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/8329-8955a2231213.mp3",
+      "sha256": "9a8917a5a4b7e7a867ad5809ddd946234359005387471a106bb870507a84af2e",
+      "bytes": 7344,
+      "decodedSeconds": 2.448,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/8329-8955a2231213.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/8349-5ca3229303d1.mp3",
+      "sha256": "bee75e66262f50cb2d50176ea9d2dc699f2dbfa1f15e38b0a9c3f0fff5a27dc9",
+      "bytes": 8712,
+      "decodedSeconds": 2.904,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/8349-5ca3229303d1.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/8404-bb9dca3f0109.mp3",
+      "sha256": "7ff91d8b7bca2ea4766387aa1c764df56090905caa5ecc7f1706d9a559aa87fa",
+      "bytes": 8424,
+      "decodedSeconds": 2.808,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/8404-bb9dca3f0109.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/8481-36ca0b106e53.mp3",
+      "sha256": "4012c82cb7e9526ccd782938f2f4c29c3669284cc9d3c2a44cbe6f362bf6c815",
+      "bytes": 8064,
+      "decodedSeconds": 2.688,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/8481-36ca0b106e53.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/8495-b7c5f450a146.mp3",
+      "sha256": "970557f474a7643547dc516854117bb8ef780a6ac69f940ac3b608fc5661b601",
+      "bytes": 8136,
+      "decodedSeconds": 2.712,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/8495-b7c5f450a146.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/8529-9d816e2ddd6a.mp3",
+      "sha256": "919394abec1dc4f35762fee53cf5ea984b957eb4d75e38ff689bdff1cb86625d",
+      "bytes": 10008,
+      "decodedSeconds": 3.336,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/8529-9d816e2ddd6a.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/8651-71a6c3d94710.mp3",
+      "sha256": "cd64660e12d5f4645e6224146174b549bb1f23799790bd34a34b3fea13a47422",
+      "bytes": 9792,
+      "decodedSeconds": 3.264,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/8651-71a6c3d94710.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bf_emma/8668-abf19ebd1f47.mp3",
+      "sha256": "f3f657d531791d4337ab9e036946cf4d05e2a38ccf3ad1a1a13f474988001fb1",
+      "bytes": 9432,
+      "decodedSeconds": 3.144,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bf_emma/8668-abf19ebd1f47.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/5854-340b9a041f6c.mp3",
+      "sha256": "5ca310ac073a7ea0a607c003ba88aaf333feaa9b54714af8252aca04be4ab062",
+      "bytes": 10440,
+      "decodedSeconds": 3.48,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/5854-340b9a041f6c.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/6109-5dcbc4d5b707.mp3",
+      "sha256": "fc2837195bcd96a95eea918b9a04272930c102b5acdbbcae5a5e4b7b0e47ca92",
+      "bytes": 7272,
+      "decodedSeconds": 2.424,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/6109-5dcbc4d5b707.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/6369-a6930f5ac017.mp3",
+      "sha256": "cd755051ae0f6374aa92bf2f4838e3a7526e2632e075889384c7d00df49adce3",
+      "bytes": 11376,
+      "decodedSeconds": 3.792,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/6369-a6930f5ac017.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/6551-3ddfb1ce5d47.mp3",
+      "sha256": "b3d1c4a3a9475e33045102ec0386fa96576b4caaa0cb04b7bb2a7d9bef03dbef",
+      "bytes": 11592,
+      "decodedSeconds": 3.864,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/6551-3ddfb1ce5d47.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/6850-300d35a3a672.mp3",
+      "sha256": "1d5f53016ac8a6f85b8bdec7b91ee2e06213f45ef4bd6c17b7d64f901e8071bd",
+      "bytes": 10944,
+      "decodedSeconds": 3.648,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/6850-300d35a3a672.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/6968-1b8bd19e705f.mp3",
+      "sha256": "50176bd13639e68240661b047e0db59fe6162ad0e21fdebd22e0a11c07b6b495",
+      "bytes": 10872,
+      "decodedSeconds": 3.624,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/6968-1b8bd19e705f.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/7003-14c92732b385.mp3",
+      "sha256": "2f07a0c8563611aff2822b10ca97914e2466e8f19400229c9fc434abdf7ffa24",
+      "bytes": 8928,
+      "decodedSeconds": 2.976,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/7003-14c92732b385.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/7127-4273b7a3107a.mp3",
+      "sha256": "8a497a79b8f3a17f4b8c37b1aea53e9f0511a0a10147ee664cd65c3c76c63b98",
+      "bytes": 10512,
+      "decodedSeconds": 3.504,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/7127-4273b7a3107a.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/7194-ff571311bd59.mp3",
+      "sha256": "ba6878891447126b71f2c029602598e381777a06c410e17457463da11e0afeec",
+      "bytes": 10008,
+      "decodedSeconds": 3.336,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/7194-ff571311bd59.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/7345-8b8219377a8b.mp3",
+      "sha256": "58b1305b168abec8f8beada0456e8bd15145b2c82e37b8de251878927848d0bd",
+      "bytes": 9864,
+      "decodedSeconds": 3.288,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/7345-8b8219377a8b.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/7577-2ded7f1df336.mp3",
+      "sha256": "00eea74789bcc8c0d11df5eed3882a3eb5d06c942944fd1eb88fabd902a6616c",
+      "bytes": 9648,
+      "decodedSeconds": 3.216,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/7577-2ded7f1df336.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/7777-250cf3d4a07b.mp3",
+      "sha256": "37b5d3ab15a0141723e81f09412f01be3304309ddc944432d6e2417e132dfb37",
+      "bytes": 11664,
+      "decodedSeconds": 3.888,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/7777-250cf3d4a07b.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/7803-3d27baa425b5.mp3",
+      "sha256": "a7a5356f3fc78102f713fa436909a01ba132b72da50d1e3aad47c8138774b355",
+      "bytes": 9864,
+      "decodedSeconds": 3.288,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/7803-3d27baa425b5.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/7820-2b3e21a00843.mp3",
+      "sha256": "aba464c557fa4dc225e1213f66ea22321444c86e31c39c62ec9ba3260f8e217e",
+      "bytes": 10008,
+      "decodedSeconds": 3.336,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/7820-2b3e21a00843.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/7866-880e20ee8f7b.mp3",
+      "sha256": "a0aa352e98aeb289576137217f6916a98bddf548f20da705288b5eb7873f842d",
+      "bytes": 11808,
+      "decodedSeconds": 3.936,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/7866-880e20ee8f7b.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/7871-e78fb299c2dc.mp3",
+      "sha256": "9dbc6546ed0cdc51bc9e4da935cf6aa1026be0dd47c63b1648e316e06ad08c83",
+      "bytes": 11304,
+      "decodedSeconds": 3.768,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/7871-e78fb299c2dc.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/7926-f0cc128516cb.mp3",
+      "sha256": "526ed7e34593b5a47ece7662208348310f25bc674a28fa151e8c7d1422fe8ea9",
+      "bytes": 10440,
+      "decodedSeconds": 3.48,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/7926-f0cc128516cb.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/8017-70e657a397fd.mp3",
+      "sha256": "3c08909209af510e5f5388766ed466b17a6f59d777e79a3b12ccb05ad803fd2f",
+      "bytes": 8064,
+      "decodedSeconds": 2.688,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/8017-70e657a397fd.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/word/bm_george/8017-ad6f70228841.mp3",
+      "sha256": "138a75cb880d335d70fb14ae95e69fa51cb5338c2b10e192b5e69224ecb1c4ce",
+      "bytes": 4392,
+      "decodedSeconds": 1.464,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/word/bm_george/8017-ad6f70228841.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/8040-4a1f5768adf4.mp3",
+      "sha256": "708896f21d6cf4da9c46121acabdc0bc4126bde994b403a52764d099f466004d",
+      "bytes": 10224,
+      "decodedSeconds": 3.408,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/8040-4a1f5768adf4.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/8146-070b0f933a87.mp3",
+      "sha256": "d423481a36e9a63e80e0ee683e341ab8d0ee77d79c014e2d8c2491356202a219",
+      "bytes": 9000,
+      "decodedSeconds": 3,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/8146-070b0f933a87.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/8232-b1ef024dd581.mp3",
+      "sha256": "92fa6dd8710ea3a45c8ef91a8b66fb5ef7714315afcd964d5edb84eb80a34a5c",
+      "bytes": 10440,
+      "decodedSeconds": 3.48,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/8232-b1ef024dd581.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/8259-aa57d1dcd525.mp3",
+      "sha256": "152ca0d01195ff214c3935aede91b3b9fb2828708cf1b28cafb07728bf8a79bf",
+      "bytes": 9648,
+      "decodedSeconds": 3.216,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/8259-aa57d1dcd525.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/8329-8955a2231213.mp3",
+      "sha256": "2f5cfbab44fda8f0593cc14af88e4a70faf4d99c66c2bcdaf22c97642ab96a36",
+      "bytes": 7056,
+      "decodedSeconds": 2.352,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/8329-8955a2231213.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/8349-5ca3229303d1.mp3",
+      "sha256": "ea5e163a88fa72e8aacd5e9c2f441300ab902b60873a99b8eefa53d864c211a3",
+      "bytes": 9936,
+      "decodedSeconds": 3.312,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/8349-5ca3229303d1.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/8404-bb9dca3f0109.mp3",
+      "sha256": "45ef47027ba4574b981d5519ab8637b05d1a2acf2195506a8478d3c8420a8996",
+      "bytes": 9144,
+      "decodedSeconds": 3.048,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/8404-bb9dca3f0109.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/8481-36ca0b106e53.mp3",
+      "sha256": "8150bb71b11512085c8100e0f754a546b2525e7a06b9321e63ec142f89b7cca8",
+      "bytes": 9000,
+      "decodedSeconds": 3,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/8481-36ca0b106e53.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/8495-b7c5f450a146.mp3",
+      "sha256": "87f1b9304f63273c7381cec5b131d1f4a146f0db3db375f497dd761768318f8b",
+      "bytes": 9360,
+      "decodedSeconds": 3.12,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/8495-b7c5f450a146.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/8529-9d816e2ddd6a.mp3",
+      "sha256": "10e8105ea6c8f84e935311536a1c5207016b8a4242378c0909cc61a60f14e88b",
+      "bytes": 11160,
+      "decodedSeconds": 3.72,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/8529-9d816e2ddd6a.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/8651-71a6c3d94710.mp3",
+      "sha256": "33315b0dce765be16714e23d851f47183d9466ca9f48820666dab6bf317a496a",
+      "bytes": 11088,
+      "decodedSeconds": 3.696,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/8651-71a6c3d94710.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    },
+    {
+      "path": "/audio-updates/2026-10-29-p1/example/bm_george/8668-abf19ebd1f47.mp3",
+      "sha256": "f69f8a2c8b7ba33768e8847a640b2c1020d06263e2120bc383e805bb37f130c2",
+      "bytes": 10296,
+      "decodedSeconds": 3.432,
+      "url": "https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates/2026-10-29-p1/example/bm_george/8668-abf19ebd1f47.mp3",
+      "contentType": "audio/mpeg",
+      "cors": "*",
+      "cacheControl": "public, max-age=31536000, immutable"
+    }
+  ]
+}

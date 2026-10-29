@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-29",
+  "scope": "Four reported entries only; original example sentences, no exhaustive corpus or human listening claim.",
+  "baselineSha256": "32d1d91a7552fc22a6876794034a12e0df091cfaf7007e40ba4808e4d3960df2",
+  "reviews": [
+    {
+      "id": 6508,
+      "word": "gifted",
+      "status": "source-reviewed",
+      "checkedAt": "2026-10-29",
+      "finding": "默认形容词义统一为有天赋的／有才华的，修复误标 v.；名词短语改为完整句。原有天才的并非不存在的译法，但不作为本产品默认释义。",
+      "sources": [
+        {
+          "url": "https://en.pons.com/translate/english-chinese/gifted",
+          "fact": "gifted 标为形容词；译为有才华的、有天赋的。"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/gifted",
+          "fact": "形容词，指特殊能力或才智；IPA /ˈɡɪftɪd/（英音）。"
+        }
+      ],
+      "changedFields": [
+        "phonetic",
+        "pos",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "before": {
+        "id": 6508,
+        "word": "gifted",
+        "phonetic": "'giftid",
+        "pos": "v.",
+        "meaning": "a. 有天才的",
+        "example": "A gifted writer.",
+        "exampleCn": "一位有天赋的作家。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6508,
+        "word": "gifted",
+        "phonetic": "/ˈɡɪftɪd/",
+        "pos": "adj.",
+        "meaning": "adj. 有天赋的；有才华的",
+        "example": "My sister is a gifted singer.",
+        "exampleCn": "我姐姐是一位有天赋的歌手。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      }
+    },
+    {
+      "id": 6718,
+      "word": "teenage",
+      "status": "source-reviewed",
+      "checkedAt": "2026-10-29",
+      "finding": "旧音标缺少 age 的双元音 /eɪ/；两词片段改为校园日常完整句。旧录音问题另作技术核查，不能仅依据音标判定录音错误。",
+      "sources": [
+        {
+          "url": "https://dictionary.cambridge.org/pronunciation/english/teenage",
+          "fact": "英美均 /ˈtiːn.eɪdʒ/，末尾含 /eɪ/ 与 /dʒ/。"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/teenage",
+          "fact": "形容词，通常放在名词前，表示十三至十九岁及相关事物。"
+        }
+      ],
+      "changedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "before": {
+        "id": 6718,
+        "word": "teenage",
+        "phonetic": "'ti:nidʒ",
+        "pos": "adj.",
+        "meaning": "a. 十三岁到十九岁的",
+        "example": "Teenage mothers.",
+        "exampleCn": "十几岁的母亲。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6718,
+        "word": "teenage",
+        "phonetic": "/ˈtiːneɪdʒ/",
+        "pos": "adj.",
+        "meaning": "adj. 十三至十九岁的；青少年时期的",
+        "example": "My teenage brother plays basketball after school.",
+        "exampleCn": "我十几岁的弟弟放学后打篮球。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      }
+    },
+    {
+      "id": 6919,
+      "word": "ulcer",
+      "status": "source-reviewed",
+      "checkedAt": "2026-10-29",
+      "finding": "当前基础和提示均不是用户所说两词短语，所见历史来源仍未定位；基础句冗长且病因表述不严谨，改为不涉及病因或治疗建议的口腔溃疡完整句；去掉腐烂物等旧释义噪声。",
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ulcer",
+          "fact": "名词，皮肤或器官表面的溃疡，mouth ulcer 为常见搭配；英音 /ˈʌlsə(r)/。"
+        }
+      ],
+      "changedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "before": {
+        "id": 6919,
+        "word": "ulcer",
+        "phonetic": "'ʌlsә",
+        "pos": "n.",
+        "meaning": "n. 溃疡, 腐烂物\\n[医] 溃疡",
+        "example": "Stress and poor diet can lead to a painful stomach ulcer over time the doctor warned him sternly.",
+        "exampleCn": "医生严厉警告他说压力和不良饮食长期可能导致疼痛的胃溃疡。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      },
+      "after": {
+        "id": 6919,
+        "word": "ulcer",
+        "phonetic": "/ˈʌlsə(r)/",
+        "pos": "n.",
+        "meaning": "n. 溃疡",
+        "example": "She has a mouth ulcer.",
+        "exampleCn": "她得了口腔溃疡。",
+        "category": "daily",
+        "categories": [
+          "daily",
+          "cet4"
+        ]
+      }
+    },
+    {
+      "id": 7580,
+      "word": "kingdom",
+      "status": "source-reviewed",
+      "checkedAt": "2026-10-29",
+      "finding": "抽象文学名词短语改为国王与王国的具体完整句；保留王国、领域、生物分类界的义项并移除错误的医标签。",
+      "sources": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/kingdom",
+          "fact": "名词 /ˈkɪŋdəm/；主要义为以国王或女王为国家元首的国家，亦指领域及生物分类界。"
+        }
+      ],
+      "changedFields": [
+        "phonetic",
+        "meaning",
+        "example",
+        "exampleCn"
+      ],
+      "before": {
+        "id": 7580,
+        "word": "kingdom",
+        "phonetic": "'kiŋdәm",
+        "pos": "n.",
+        "meaning": "n. 王国, 领域\\n[医] 界(动物,植物,矿物)",
+        "example": "The untroubled kingdom of reason.",
+        "exampleCn": "无忧无虑的理性王国。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      },
+      "after": {
+        "id": 7580,
+        "word": "kingdom",
+        "phonetic": "/ˈkɪŋdəm/",
+        "pos": "n.",
+        "meaning": "n. 王国；领域；（生物分类）界",
+        "example": "The king ruled a small kingdom.",
+        "exampleCn": "这位国王统治着一个小王国。",
+        "category": "cet4",
+        "categories": [
+          "cet4",
+          "cet6"
+        ]
+      }
+    }
+  ]
+}

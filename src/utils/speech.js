@@ -16,7 +16,10 @@ const correctedAudioUrl = (...args) => {
   return audioMappingRequest.then(module => module.correctedVocabularyAudioUrl(...args));
 };
 
-const speech = createSpeechService({ storage, correctedAudioUrl, env: import.meta.env || {} });
+const speech = createSpeechService({ storage, correctedAudioUrl, env: {
+  VITE_WORD_AUDIO_BASE_URL: import.meta.env?.VITE_WORD_AUDIO_BASE_URL,
+  VITE_EXAMPLE_AUDIO_BASE_URL: import.meta.env?.VITE_EXAMPLE_AUDIO_BASE_URL,
+} });
 export const {
   speak, speakWord, speakExample, speakStaticKokoroWordAudio, stopSpeak,
   getAvailableVoices, setVoice, getCurrentVoice, setTtsProvider, getTtsProvider,

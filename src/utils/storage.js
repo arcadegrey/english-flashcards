@@ -338,7 +338,7 @@ export const storage = {
     }
   },
 
-  // Kokoro endpoint, e.g. http://127.0.0.1:8880/v1/audio/speech
+  // Legacy endpoint preference kept for compatibility; playback no longer uses it.
   getKokoroEndpoint: () => {
     try {
       return localStorage.getItem(STORAGE_KEYS.KOKORO_ENDPOINT) || '';

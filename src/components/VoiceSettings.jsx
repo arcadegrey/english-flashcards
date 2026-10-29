@@ -88,7 +88,7 @@ function VoiceSettings({ onClose }) {
         <div className="voice-settings-body">
           <div className="voice-settings-section voice-settings-section--simple">
             <label className="voice-settings-field voice-settings-speed-field">
-              <span>语速 {kokoroSpeed.toFixed(2)}x</span>
+              <span>单词与例句语速 {kokoroSpeed.toFixed(2)}x</span>
               <input
                 type="range"
                 min="0.5"
@@ -110,6 +110,7 @@ function VoiceSettings({ onClose }) {
               <p className="voice-settings-field-note">
                 当前：{selectedKokoroVoice.label} · {selectedKokoroDetail}
               </p>
+              <p className="voice-settings-field-note">单词和例句使用所选音色，阅读点读使用浏览器英语语音。</p>
             </div>
 
             <div className="voice-settings-voice-cards">

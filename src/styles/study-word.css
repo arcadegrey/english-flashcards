@@ -1,13 +1,4 @@
 /* Existing word rules extracted from word-learning-refresh.css. */
-.learn-refresh-inline-audio svg {
-  width: 19px;
-  height: 19px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 
 .learn-refresh-main {
   width: 100%;
@@ -29,63 +20,6 @@
   flex-direction: column;
   align-items: center;
   gap: 12px;
-}
-
-.learn-refresh-word {
-  margin: 0;
-  text-align: center;
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 1.15;
-  letter-spacing: -0.01em;
-  color: var(--wl-text);
-  word-break: break-word;
-}
-
-.learn-refresh-phonetic-row {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.learn-refresh-phonetic {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 400;
-  color: var(--wl-subtext);
-  word-break: break-all;
-}
-
-.learn-refresh-inline-audio {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  min-width: 34px;
-  border-radius: 999px;
-  border: 1px solid var(--wl-line);
-  background: #fff;
-  color: var(--wl-subtext);
-  transition: background-color 240ms cubic-bezier(0.22, 1, 0.36, 1),
-    border-color 240ms cubic-bezier(0.22, 1, 0.36, 1),
-    color 240ms cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.learn-refresh-inline-audio:hover {
-  background: var(--wl-hover);
-  border-color: #d8d8dd;
-  color: var(--wl-text);
-}
-
-.learn-refresh-meaning {
-  margin: 24px 0 0;
-  text-align: center;
-  color: var(--wl-text);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1.45;
-  word-break: break-word;
 }
 
 .learn-refresh-expandable {
@@ -424,22 +358,9 @@
   display: none;
 }
 
-.learn-refresh-inline-audio:focus-visible {
-  outline: 2px solid var(--wl-blue);
-  outline-offset: 2px;
-}
-
 @media (max-width: 1023px) {
   .learn-refresh-main {
     max-width: 92%;
-  }
-
-  .learn-refresh-word {
-    font-size: 44px;
-  }
-
-  .learn-refresh-meaning {
-    font-size: 22px;
   }
 }
 
@@ -448,19 +369,6 @@
   .learn-refresh-main {
     max-width: 100%;
     padding: calc(76px + env(safe-area-inset-top)) 16px 16px;
-  }
-
-  .learn-refresh-word {
-    font-size: clamp(36px, 9vw, 40px);
-  }
-
-  .learn-refresh-phonetic {
-    font-size: 18px;
-  }
-
-  .learn-refresh-meaning {
-    margin-top: 20px;
-    font-size: 22px;
   }
 }
 

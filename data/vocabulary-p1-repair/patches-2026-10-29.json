@@ -1,0 +1,575 @@
+[
+  {
+    "id": 5429,
+    "pos": "n./v./adj."
+  },
+  {
+    "id": 5442,
+    "pos": "n./v."
+  },
+  {
+    "id": 5464,
+    "pos": "n./adv."
+  },
+  {
+    "id": 5470,
+    "pos": "n./v."
+  },
+  {
+    "id": 5487,
+    "pos": "n./adj./v."
+  },
+  {
+    "id": 5497,
+    "pos": "n./v."
+  },
+  {
+    "id": 5511,
+    "pos": "n./v."
+  },
+  {
+    "id": 5518,
+    "pos": "n./v."
+  },
+  {
+    "id": 5519,
+    "pos": "n./v."
+  },
+  {
+    "id": 5529,
+    "pos": "n./v."
+  },
+  {
+    "id": 5530,
+    "pos": "n./v.",
+    "exampleCn": "雇工修好了栏杆。"
+  },
+  {
+    "id": 5535,
+    "pos": "adj./adv./n."
+  },
+  {
+    "id": 5545,
+    "pos": "adj./adv."
+  },
+  {
+    "id": 5549,
+    "pos": "n./v."
+  },
+  {
+    "id": 5554,
+    "pos": "n./v."
+  },
+  {
+    "id": 5555,
+    "pos": "n./v."
+  },
+  {
+    "id": 5558,
+    "pos": "n./v."
+  },
+  {
+    "id": 5562,
+    "pos": "n./v."
+  },
+  {
+    "id": 5564,
+    "pos": "n./v./adj."
+  },
+  {
+    "id": 5568,
+    "pos": "n./adj./v."
+  },
+  {
+    "id": 5569,
+    "pos": "n./v./adj."
+  },
+  {
+    "id": 5777,
+    "pos": "adj."
+  },
+  {
+    "id": 5824,
+    "pos": "adj."
+  },
+  {
+    "id": 5854,
+    "pos": "adj./v.",
+    "meaning": "adj. 团结的；联合的；v.（unite 的过去式和过去分词）使团结；使联合",
+    "example": "Our team stayed united during the game.",
+    "exampleCn": "比赛期间，我们的队伍始终团结一致。"
+  },
+  {
+    "id": 5895,
+    "pos": "adj."
+  },
+  {
+    "id": 5908,
+    "pos": "adj."
+  },
+  {
+    "id": 5927,
+    "pos": "adj."
+  },
+  {
+    "id": 5988,
+    "pos": "adj."
+  },
+  {
+    "id": 6006,
+    "pos": "adj./n.",
+    "meaning": "adj. 可爱的；美丽的；令人愉快的；n. 漂亮的人或物"
+  },
+  {
+    "id": 6109,
+    "pos": "interj./n./v.",
+    "meaning": "interj. 哦；哇（表示惊讶、赞叹等）；n. 哦的一声；v. 发出惊叹声",
+    "example": "Ooh, this cake looks good!",
+    "exampleCn": "哇，这块蛋糕看起来真不错！"
+  },
+  {
+    "id": 6223,
+    "pos": "adj./n.",
+    "meaning": "adj. 年老的；上了年纪的；n.（the elderly）老年人（统称）"
+  },
+  {
+    "id": 6237,
+    "pos": "adj."
+  },
+  {
+    "id": 6269,
+    "pos": "adj."
+  },
+  {
+    "id": 6322,
+    "pos": "adj."
+  },
+  {
+    "id": 6360,
+    "pos": "adj."
+  },
+  {
+    "id": 6361,
+    "pos": "adj./n.",
+    "meaning": "adj. 加拿大的；加拿大人的；n. 加拿大人"
+  },
+  {
+    "id": 6363,
+    "pos": "adj."
+  },
+  {
+    "id": 6369,
+    "pos": "adj./n.",
+    "meaning": "adj. 宪法的；符合宪法的；体质的；全身性的；n. 为锻炼身体而进行的散步",
+    "example": "The court protects our constitutional rights.",
+    "exampleCn": "法院保护我们的宪法权利。"
+  },
+  {
+    "id": 6439,
+    "pos": "adj."
+  },
+  {
+    "id": 6551,
+    "pos": "adj./n.",
+    "meaning": "adj. 无家可归的；n.（the homeless）无家可归的人（统称）",
+    "example": "The shelter provides meals for homeless people.",
+    "exampleCn": "收容所为无家可归的人提供餐食。"
+  },
+  {
+    "id": 6563,
+    "pos": "adj."
+  },
+  {
+    "id": 6564,
+    "pos": "adj."
+  },
+  {
+    "id": 6567,
+    "pos": "adj.",
+    "exampleCn": "医学研究中令人鼓舞的进展。"
+  },
+  {
+    "id": 6568,
+    "pos": "adj."
+  },
+  {
+    "id": 6571,
+    "pos": "adj."
+  },
+  {
+    "id": 6605,
+    "pos": "adj."
+  },
+  {
+    "id": 6609,
+    "pos": "adj./n.",
+    "meaning": "adj. 西语裔的；西班牙语国家文化的；西班牙的；n. 西语裔人士（常指美国的西语裔）"
+  },
+  {
+    "id": 6617,
+    "pos": "adj."
+  },
+  {
+    "id": 6692,
+    "pos": "adj."
+  },
+  {
+    "id": 6710,
+    "pos": "adj./n.",
+    "meaning": "adj. 非营利的；不以营利为目的的；n. 非营利组织"
+  },
+  {
+    "id": 6754,
+    "pos": "adj."
+  },
+  {
+    "id": 6775,
+    "pos": "adj."
+  },
+  {
+    "id": 6780,
+    "pos": "adj."
+  },
+  {
+    "id": 6799,
+    "pos": "adj."
+  },
+  {
+    "id": 6850,
+    "pos": "adj./v.",
+    "meaning": "adj. 沮丧的；抑郁的；降低的；凹陷的；v.（depress 的过去式和过去分词）使沮丧；使降低",
+    "example": "She felt depressed after hearing the news.",
+    "exampleCn": "听到这个消息后，她感到很沮丧。"
+  },
+  {
+    "id": 6961,
+    "pos": "adj."
+  },
+  {
+    "id": 6968,
+    "meaning": "n. 骚扰；不断的烦扰；受骚扰的处境",
+    "example": "She reported the harassment to her manager.",
+    "exampleCn": "她向经理举报了骚扰行为。"
+  },
+  {
+    "id": 7003,
+    "pos": "adj./v.",
+    "meaning": "adj. 印刷的；打印的；印有图案的；v.（print 的过去式和过去分词）印刷；打印",
+    "example": "Please sign the printed form.",
+    "exampleCn": "请在打印好的表格上签名。"
+  },
+  {
+    "id": 7015,
+    "pos": "adj."
+  },
+  {
+    "id": 7025,
+    "pos": "adj."
+  },
+  {
+    "id": 7033,
+    "pos": "adj."
+  },
+  {
+    "id": 7053,
+    "pos": "adj."
+  },
+  {
+    "id": 7057,
+    "pos": "adj."
+  },
+  {
+    "id": 7059,
+    "pos": "adj."
+  },
+  {
+    "id": 7086,
+    "pos": "adj."
+  },
+  {
+    "id": 7089,
+    "pos": "adj."
+  },
+  {
+    "id": 7094,
+    "pos": "adj."
+  },
+  {
+    "id": 7106,
+    "pos": "adj."
+  },
+  {
+    "id": 7127,
+    "pos": "adj.",
+    "meaning": "adj. 有挑战性的；考验能力的；引起争论的",
+    "example": "This is a challenging task for our team.",
+    "exampleCn": "这对我们的团队来说是一项有挑战性的任务。"
+  },
+  {
+    "id": 7145,
+    "pos": "adj."
+  },
+  {
+    "id": 7194,
+    "example": "The two countries signed a peace pact.",
+    "exampleCn": "两国签署了和平协定。"
+  },
+  {
+    "id": 7205,
+    "pos": "adj./n.",
+    "meaning": "adj. 国家的；全国性的；民族的；国立的；n. 某国国民"
+  },
+  {
+    "id": 7258,
+    "pos": "adj."
+  },
+  {
+    "id": 7264,
+    "pos": "adj."
+  },
+  {
+    "id": 7268,
+    "pos": "adj."
+  },
+  {
+    "id": 7269,
+    "pos": "adj."
+  },
+  {
+    "id": 7345,
+    "example": "Her advice helped me solve the problem.",
+    "exampleCn": "她的建议帮我解决了这个问题。"
+  },
+  {
+    "id": 7415,
+    "pos": "adj."
+  },
+  {
+    "id": 7444,
+    "pos": "adj."
+  },
+  {
+    "id": 7501,
+    "pos": "adj./n."
+  },
+  {
+    "id": 7527,
+    "pos": "adj."
+  },
+  {
+    "id": 7577,
+    "pos": "adj./n.",
+    "meaning": "adj. 同性恋的；（较旧用法）快乐的、鲜艳的；n. 同性恋者（称呼他人时可能冒犯，宜优先使用形容词并尊重本人用词）",
+    "example": "The story is about a gay couple.",
+    "exampleCn": "这个故事讲的是一对同性伴侣。"
+  },
+  {
+    "id": 7640,
+    "pos": "adj."
+  },
+  {
+    "id": 7648,
+    "pos": "adj."
+  },
+  {
+    "id": 7660,
+    "pos": "adj."
+  },
+  {
+    "id": 7664,
+    "pos": "adj."
+  },
+  {
+    "id": 7690,
+    "pos": "adj."
+  },
+  {
+    "id": 7743,
+    "pos": "adj."
+  },
+  {
+    "id": 7744,
+    "pos": "adj./n.",
+    "meaning": "adj. 浪漫的；爱情的；富于幻想的；浪漫主义的；n. 浪漫的人；浪漫主义者"
+  },
+  {
+    "id": 7774,
+    "pos": "adj./n.",
+    "meaning": "adj. 独有的；专用的；排外的；n. 独家新闻；专有权"
+  },
+  {
+    "id": 7777,
+    "example": "The illustration shows a cat under a tree.",
+    "exampleCn": "这幅插图画的是一只在树下的猫。"
+  },
+  {
+    "id": 7794,
+    "pos": "adj."
+  },
+  {
+    "id": 7803,
+    "example": "His refusal to help surprised me.",
+    "exampleCn": "他拒绝帮忙，这让我很惊讶。"
+  },
+  {
+    "id": 7820,
+    "example": "We get vitamin C from oranges.",
+    "exampleCn": "我们从橙子中摄取维生素C。"
+  },
+  {
+    "id": 7866,
+    "example": "Whoever finishes first can choose the next game.",
+    "exampleCn": "谁先完成，谁就可以选择下一个游戏。"
+  },
+  {
+    "id": 7871,
+    "pos": "adj./n.",
+    "meaning": "adj. 同情的；体谅的；赞同的；（医学）交感神经的；n.（医学）交感神经系统",
+    "example": "The teacher was sympathetic to my problem.",
+    "exampleCn": "老师体谅我的困难。"
+  },
+  {
+    "id": 7926,
+    "pos": "adj./n.",
+    "meaning": "adj. 昏迷的；失去知觉的；无意识的；未察觉的；n.（心理学）无意识",
+    "example": "He was unconscious after the accident.",
+    "exampleCn": "事故发生后，他失去了知觉。"
+  },
+  {
+    "id": 8002,
+    "pos": "adj."
+  },
+  {
+    "id": 8017,
+    "pos": "adj./v.",
+    "phonetic": "/ˈlɜːnɪd/",
+    "meaning": "adj. 博学的；有学问的（双音节）；通过学习获得的（通常单音节）；v. learn 的过去式和过去分词（通常单音节）",
+    "example": "He is a learned teacher.",
+    "exampleCn": "他是一位学识渊博的老师。"
+  },
+  {
+    "id": 8040,
+    "example": "I heard the child sob in the next room.",
+    "exampleCn": "我听到孩子在隔壁房间里抽泣。",
+    "pos": "v./n."
+  },
+  {
+    "id": 8115,
+    "pos": "adj./n.",
+    "meaning": "adj. 狡猾的；巧妙的；（特定语境）可爱的；n. 狡诈；机巧"
+  },
+  {
+    "id": 8126,
+    "pos": "adj./n.",
+    "meaning": "adj. 公制的；米制的；计量的；n. 度量标准；指标"
+  },
+  {
+    "id": 8146,
+    "pos": "adj./n./v.",
+    "meaning": "adj.（较旧用法）奇怪的；不舒服的；（身份等语境）酷儿的；n. 酷儿（称呼他人时可能冒犯，应尊重本人用词）；v. 使受挫；破坏",
+    "example": "I heard a queer noise outside.",
+    "exampleCn": "我听到外面有一种奇怪的声音。"
+  },
+  {
+    "id": 8214,
+    "pos": "adj."
+  },
+  {
+    "id": 8232,
+    "pos": "adj./n.",
+    "meaning": "adj. 冒犯的；令人不快的；进攻性的；n. 进攻；攻势",
+    "example": "He apologized for his offensive remark.",
+    "exampleCn": "他为自己的冒犯性言论道歉。"
+  },
+  {
+    "id": 8242,
+    "pos": "adj."
+  },
+  {
+    "id": 8259,
+    "example": "He began to plead for another chance.",
+    "exampleCn": "他开始恳求再给他一次机会。"
+  },
+  {
+    "id": 8298,
+    "pos": "adj."
+  },
+  {
+    "id": 8327,
+    "pos": "adj./n.",
+    "meaning": "adj. 合作的；乐于配合的；合作社的；n. 合作社"
+  },
+  {
+    "id": 8329,
+    "example": "We had fruit for dessert.",
+    "exampleCn": "我们饭后吃水果作甜点。"
+  },
+  {
+    "id": 8349,
+    "pos": "adj.",
+    "example": "We often visit the neighbouring town.",
+    "exampleCn": "我们经常去邻近的镇子。"
+  },
+  {
+    "id": 8386,
+    "pos": "adj."
+  },
+  {
+    "id": 8404,
+    "example": "Turn the valve to stop the water.",
+    "exampleCn": "转动阀门，把水关掉。",
+    "pos": "n./v."
+  },
+  {
+    "id": 8460,
+    "pos": "adj."
+  },
+  {
+    "id": 8467,
+    "pos": "adj."
+  },
+  {
+    "id": 8481,
+    "example": "Please pass me the soy sauce.",
+    "exampleCn": "请把酱油递给我。"
+  },
+  {
+    "id": 8495,
+    "example": "She put some ham in the sandwich.",
+    "exampleCn": "她在三明治里放了一些火腿。",
+    "pos": "n./adj./v."
+  },
+  {
+    "id": 8519,
+    "pos": "adj."
+  },
+  {
+    "id": 8529,
+    "example": "She spoke out against cruelty to animals.",
+    "exampleCn": "她公开反对虐待动物。"
+  },
+  {
+    "id": 8589,
+    "pos": "interj."
+  },
+  {
+    "id": 8590,
+    "pos": "adj."
+  },
+  {
+    "id": 8610,
+    "pos": "adj./n.",
+    "meaning": "adj. 好战的；激进的；n. 激进分子"
+  },
+  {
+    "id": 8651,
+    "example": "Your generosity helped many families.",
+    "exampleCn": "你的慷慨帮助了许多家庭。"
+  },
+  {
+    "id": 8668,
+    "example": "To my dismay, I missed the last bus.",
+    "exampleCn": "令我沮丧的是，我错过了末班公交车。",
+    "pos": "n./v."
+  }
+]

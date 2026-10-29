@@ -5,10 +5,12 @@ import useReadingDraft from '../hooks/useReadingDraft';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import QuickMenu from './QuickMenu';
 import AppLayout from './layout/AppLayout';
-import { speak, speakWord } from '../utils/speech';
+import { speakWord } from '../utils/speech';
 import { isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from '../utils/readingText';
 import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
 import { useWordDetails } from '../hooks/useWordDetails.js';
+import { useSentencePlayback } from '../hooks/useSentencePlayback.js';
+import { buildReadingSentences } from '../utils/readingSentences.js';
 import '../styles/study-reading.css';
 import '../styles/reading-question-options.css';
 
@@ -42,6 +44,11 @@ function ReadingSessionView({
   const [completionSummary, setCompletionSummary] = useState(null);
   const [toast, setToast] = useState('');
   const wordModalRef = useRef(null);
+  const paragraphs = useMemo(() => buildReadingSentences(article?.content), [article?.content]);
+  const speechScope = JSON.stringify([userId || 'guest', article?.id, assignment?.id, retryAttempt?.id]);
+  const sentencePlayback = useSentencePlayback(article?.content, speechScope);
+  const { sentenceId: activeSentenceId, status: speechStatus, toggle: toggleSentence, stop: stopSentence } = sentencePlayback;
+  const activeSentence = paragraphs.flatMap(paragraph => paragraph.sentences).find(sentence => sentence.id === activeSentenceId);
   const masteredWordSet = useMemo(
     () => new Set((masteredWords || []).map((item) => String(item))),
     [masteredWords]
@@ -135,8 +142,8 @@ function ReadingSessionView({
     : '选择文章后开始阅读';
 
   const handleSpeakArticle = () => {
-    if (!article?.content) return;
-    speak(article.content, { rate: 1 });
+    if (activeSentenceId) stopSentence();
+    else if (paragraphs[0]?.sentences[0]) void toggleSentence(paragraphs[0].sentences[0]);
   };
 
   const handleSyncAccount = async () => {
@@ -222,19 +229,15 @@ function ReadingSessionView({
   };
 
   const contentBlocks = useMemo(() => {
-    const paragraphs = String(article?.content || '')
-      .split(/\n{2,}/)
-      .map((item) => item.trim())
-      .filter(Boolean);
-
-    return paragraphs.map((paragraph, paragraphIndex) => {
-      const tokens = tokenizeReadingText(paragraph);
+    return paragraphs.map((paragraph) => {
       return (
-        <p key={`p-${paragraphIndex}`} className="reading-session-paragraph">
-          {tokens.map((token, tokenIndex) => {
+        <p key={paragraph.id} className="reading-session-paragraph">
+          {paragraph.sentences.map(sentence => <span key={sentence.id}
+            className={`reading-session-sentence${activeSentenceId === sentence.id ? ' is-active' : ''}`}>
+            <span className="reading-sentence-text">{tokenizeReadingText(sentence.text).map((token, tokenIndex) => {
             if (!isEnglishWordToken(token)) {
               return (
-                <span key={`t-${paragraphIndex}-${tokenIndex}`} className="reading-token-plain">
+                <span key={tokenIndex} className="reading-token-plain">
                   {token}
                 </span>
               );
@@ -247,7 +250,7 @@ function ReadingSessionView({
 
             if (!isHighlight) {
               return (
-                <span key={`t-${paragraphIndex}-${tokenIndex}`} className="reading-token-plain">
+                <span key={tokenIndex} className="reading-token-plain">
                   {token}
                 </span>
               );
@@ -255,19 +258,29 @@ function ReadingSessionView({
 
             return (
               <button
-                key={`t-${paragraphIndex}-${tokenIndex}`}
+                key={tokenIndex}
                 type="button"
                 className="reading-token-highlight"
-                onClick={() => setActiveWord(matchedWord)}
+                onClick={() => { stopSentence(); setActiveWord(matchedWord); }}
               >
                 {token}
               </button>
             );
-          })}
+          })}</span>
+            <button type="button" className="learn-refresh-example-audio reading-sentence-play"
+              aria-label={`${activeSentenceId === sentence.id ? '停止朗读' : '朗读'}第 ${sentence.ordinal} 句`}
+              title={`${activeSentenceId === sentence.id ? '停止朗读' : '朗读'}第 ${sentence.ordinal} 句`}
+              aria-pressed={activeSentenceId === sentence.id}
+              onClick={() => { void toggleSentence(sentence); }}>
+              {activeSentenceId === sentence.id && speechStatus === 'preparing' ? <LoadingAnimation compact />
+                : activeSentenceId === sentence.id ? <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2" /></svg>
+                : <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 10 7-10 7Z" /></svg>}
+            </button>
+          </span>)}
         </p>
       );
     });
-  }, [article?.content, masteredWordSet, wordLookup]);
+  }, [paragraphs, masteredWordSet, wordLookup, activeSentenceId, speechStatus, toggleSentence, stopSentence]);
 
   if (!article) {
     return (
@@ -328,7 +341,13 @@ function ReadingSessionView({
                 </div>
               </header>
 
-              <section className="reading-session-content">{contentBlocks}</section>
+              <section className="reading-session-content">
+                <p className="reading-speech-status" role={sentencePlayback.error ? 'alert' : 'status'} aria-live="polite">
+                  {sentencePlayback.error || (activeSentence ? `${speechStatus === 'preparing' ? '正在准备' : '正在朗读'}第 ${activeSentence.ordinal} 句，点击同一按钮可停止。`
+                    : '点击句末的朗读按钮，每次播放一句。')}
+                </p>
+                {contentBlocks}
+              </section>
 
               {article.translation && (
                 <section className="learn-refresh-example-block reading-session-translation">
@@ -484,6 +503,7 @@ function ReadingSessionView({
                   type="button"
                   className="learn-refresh-action learn-refresh-action-ghost"
                   onClick={handleSpeakArticle}
+                  disabled={!paragraphs[0]?.sentences.length}
                 >
                   <span className="learn-refresh-action-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24">
@@ -492,7 +512,7 @@ function ReadingSessionView({
                       <path d="M19.5 6a8 8 0 0 1 0 12" />
                     </svg>
                   </span>
-                  <span>朗读全文</span>
+                  <span>{activeSentenceId ? '停止朗读' : '朗读首句'}</span>
                 </button>
                 <button
                   type="button"

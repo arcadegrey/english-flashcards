@@ -20,7 +20,7 @@ def synthesis_for(word, field):
     return word[field]
 
 
-def generate_batch(jobs, batch, module_name, export_name, synthesis_fn):
+def generate_batch(jobs, batch, module_name, export_name, synthesis_fn, *, synthesis_for_voice=None, guards_fn=None):
     import numpy as np
     from generate_kokoro_word_audio import get_pipeline, lang_code_for_voice, write_mp3
     output = ROOT / 'public/audio-updates' / batch
@@ -39,8 +39,12 @@ def generate_batch(jobs, batch, module_name, export_name, synthesis_fn):
     for voice in VOICES:
         pipeline = get_pipeline(lang_code_for_voice(voice), pipelines)
         for word, field in jobs:
-            text, synthesis = word[field], synthesis_fn(word, field)
-            revision = digest((text + '|' + synthesis + '|kokoro-82m|24k|name-place-v1').encode())[:12]
+            text = word[field]
+            synthesis = synthesis_for_voice(word, field, voice) if synthesis_for_voice else synthesis_fn(word, field)
+            # One revision covers every accent variant so the shared URL mapping
+            # cannot point American voices at a British-only filename (or vice versa).
+            revision_synthesis = '|'.join(synthesis_for_voice(word, field, item) for item in VOICES) if synthesis_for_voice else synthesis
+            revision = digest((text + '|' + revision_synthesis + '|kokoro-82m|24k|name-place-v1').encode())[:12]
             target = output / field / voice / f"{word['id']}-{revision}.mp3"
             url = '/' + target.relative_to(ROOT / 'public').as_posix()
             cached = prior.get(url)
@@ -61,6 +65,9 @@ def generate_batch(jobs, batch, module_name, export_name, synthesis_fn):
                                   textSha256=digest(text.encode()), path=url, sha256=digest(target.read_bytes()),
                                   bytes=target.stat().st_size, seconds=round(len(audio) / 24000, 3), phonemes=' '.join(phones)))
             updates.setdefault(str(word['id']), {})[field] = dict(text=text, revision=revision)
+            guards = guards_fn(word, field) if guards_fn else None
+            if guards:
+                updates[str(word['id'])][field]['guards'] = guards
             checkpoint()
             print(f'{len(files)}/{len(jobs) * len(VOICES)} {voice} {word["id"]} {field}', flush=True)
     checkpoint(ready=True)
