@@ -1,8 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import Quiz from '../Quiz';
 import FillBlank from '../FillBlank';
 import SpellingTest from '../SpellingTest';
 import MatchingTest from '../MatchingTest';
+import SentenceDictation from '../SentenceDictation';
+import DictationFeedback from './DictationFeedback';
 import { PrimaryButton, SecondaryButton } from '../ui/Buttons';
 import { BaseCard } from '../ui/Cards';
 import { CircularProgress } from '../ui/Progress';
@@ -16,8 +18,9 @@ import '../../styles/test-workspace.css';
 function readDraft(key, meta, history) {
   try {
     const saved = JSON.parse(localStorage.getItem(key));
-    if (saved && saved.mode === meta.mode && saved.category === meta.category && saved.scope === meta.scope && !history.attempts.some(item => item.id === saved.id)) {
-      createExamAttempt({ ...saved, completedAt: new Date().toISOString() });
+    if (saved && Array.isArray(saved.answers) && saved.mode === meta.mode && saved.category === meta.category && saved.scope === meta.scope && !history.attempts.some(item => item.id === saved.id)) {
+      if (saved.answers.length || meta.mode !== 'dictation') createExamAttempt({ ...saved, completedAt: new Date().toISOString() });
+      else if (typeof saved.id !== 'string' || !/^[\w-]{1,80}$/.test(saved.id) || !Number.isFinite(Date.parse(saved.startedAt))) throw new Error('无效草稿');
       return saved;
     }
   } catch { /* Start fresh when no valid draft exists. */ }
@@ -36,6 +39,13 @@ export default function AssessmentSession({ mode, category, scope, vocabulary, o
   const [error, setError] = useState('');
   const [storageFailed, setStorageFailed] = useState(false);
   const resultHeadingRef = useRef(null);
+  const saveQuestion = useCallback(question => {
+    if (latest.current.answers.length >= EXAM_ROUND_SIZE) return;
+    const next = { ...latest.current, question };
+    latest.current = next;
+    try { localStorage.setItem(key, JSON.stringify(next)); }
+    catch { setStorageFailed(true); setError('本机存储空间不足，请保持页面打开，重试保存。'); }
+  }, [key]);
   useEffect(() => {
     if (result) resultHeadingRef.current?.focus({ preventScroll: true });
   }, [result]);
@@ -103,10 +113,12 @@ export default function AssessmentSession({ mode, category, scope, vocabulary, o
       <p className="test-result-save" role="status">{history.ownerId ? history.pending.includes(result.id) ? '本机已保存，等待同步后班级老师可查看。' : '成绩已同步，当前班级老师可查看。' : '访客成绩已保存到当前设备。'}</p>
       {wrongAnswers.length ? <details className="test-result-review">
         <summary>查看本组错题<span>{wrongAnswers.length} 次答题需要巩固</span></summary>
-        <ol>{wrongAnswers.map((item, index) => <li key={index}><span className="test-review-index">{index + 1}</span><div><strong lang="en">{item.word}</strong><p>{item.meaning}</p>{mode === 'spelling' && <small>你的拼写：<span lang="en">{item.input}</span></small>}</div></li>)}</ol>
+        <ol>{wrongAnswers.map((item, index) => <li key={index}><span className="test-review-index">{index + 1}</span><div><strong lang="en">{mode === 'dictation' ? item.example : item.word}</strong><p>{mode === 'dictation' ? item.exampleCn : item.meaning}</p>{['spelling', 'dictation'].includes(mode) && <small>你的输入：<span lang="en">{item.input || '未填写'}</span></small>}{mode === 'dictation' && <DictationFeedback example={item.example} input={item.input} />}</div></li>)}</ol>
       </details> : <p className="test-result-perfect"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 10 3 3 7-7" /></svg>本组全部答对，继续保持。</p>}
       <div className="test-result-actions"><PrimaryButton onClick={nextRound}>再练一组</PrimaryButton><SecondaryButton onClick={onBack}>返回测试</SecondaryButton></div>
-    </BaseCard> : canAnswer && <AssessmentQuestions key={draft.id} mode={mode} vocabulary={pool} optionVocabulary={options} sourceLabel="" onAddMastered={onAddMastered} onWrongAnswer={onWrongAnswer} onAnswer={answer} />}
+    </BaseCard> : canAnswer && (mode === 'dictation'
+      ? <SentenceDictation key={draft.id} vocabulary={pool} answers={draft.answers} initialQuestion={latest.current.question} onQuestionChange={saveQuestion} onAnswer={answer} />
+      : <AssessmentQuestions key={draft.id} mode={mode} vocabulary={pool} optionVocabulary={options} sourceLabel="" onAddMastered={onAddMastered} onWrongAnswer={onWrongAnswer} onAnswer={answer} />)}
     {!result && count >= EXAM_ROUND_SIZE && !error && <SecondaryButton onClick={() => finish()}>保存已完成测试</SecondaryButton>}
   </>;
 }

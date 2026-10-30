@@ -43,6 +43,44 @@ function harness({ provider = 'kokoro', globalRate = 1, speed = 1, staticFails =
 }
 const word = { id: 1, word: 'abandon', example: 'Do not abandon the plan.' };
 
+test('optional static preference uses versioned example audio and preserves other modes browser fallback', async () => {
+  const h = harness({ provider: 'browser', autoEnd: false });
+  let starts = 0;
+  const pending = h.speakExample(word, { preferStatic: true, rate: 0.75, onStart: () => starts++ });
+  await tick();
+  assert.equal(h.played[0].src, '/versioned/example/1.mp3');
+  assert.equal(h.played[0].playbackRate, 0.75); assert.equal(starts, 1);
+  h.played[0].onended(); await pending; assert.equal(h.utterances.length, 0);
+  const fallback = harness({ provider: 'browser', staticFails: true });
+  await fallback.speakExample(word, { preferStatic: true, rate: 0.75 });
+  assert.equal(fallback.utterances[0].text, word.example); assert.equal(fallback.utterances[0].rate, 0.75);
+  assert.equal(fallback.requests.length, 0);
+});
+
+test('recording-only sentence playback uses existing MP3s regardless of the saved provider', async () => {
+  const h = harness({ provider: 'browser', autoEnd: false });
+  const pending = h.speakExample(word, { recordingOnly: true, rate: 0.75 });
+  await tick();
+  assert.equal(h.played[0].src, '/versioned/example/1.mp3');
+  assert.equal(h.played[0].playbackRate, 0.75);
+  h.played[0].onended(); await pending;
+  assert.equal(h.utterances.length, 0); assert.equal(h.requests.length, 0);
+});
+
+test('recording-only sentence failures never synthesize speech, including missing IDs and failed mappings', async () => {
+  for (const options of [{ staticFails: true }, { correctedAudioUrl: () => Promise.reject(new Error('mapping unavailable')) }]) {
+    const h = harness({ provider: 'browser', ...options });
+    await assert.rejects(h.speakExample(word, { recordingOnly: true }));
+    assert.equal(h.utterances.length, 0); assert.equal(h.requests.length, 0);
+    // The option belongs to one call and does not remove other modes' fallback.
+    await h.speakExample(word);
+    assert.equal(h.utterances.length, 1);
+  }
+  const missing = harness();
+  await assert.rejects(missing.speakExample('An example without an audio ID.', { recordingOnly: true }), /id/);
+  assert.equal(missing.utterances.length, 0); assert.equal(missing.played.length, 0);
+});
+
 for (const rate of [0.5, 0.8, 1, 1.5]) {
   test(`speech rate ${rate} is applied once to recordings, direct text and browser fallback`, async () => {
     const recordings = harness({ globalRate: rate });

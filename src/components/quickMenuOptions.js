@@ -4,6 +4,7 @@ export const QUICK_MENU_MODE_OPTIONS = [
   { id: 'fillblank', icon: '🧩', label: '填空' },
   { id: 'spelling', icon: '🔤', label: '拼写' },
   { id: 'matching', icon: '🔗', label: '连线' },
+  { id: 'dictation', label: '句子听写' },
 ];
 
 export const QUICK_MENU_READING_OPTION = {

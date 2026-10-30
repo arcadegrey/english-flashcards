@@ -11,6 +11,11 @@ import { QUICK_MENU_MODE_OPTIONS, QUICK_MENU_READING_OPTION } from './quickMenuO
 const MENU_CLOSE_DURATION_MS = 220;
 
 const menuIcons = {
+  dictation: (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 13v-1a8 8 0 0 1 16 0v1M4 12h3v7H4zM17 12h3v7h-3zM10 16h4M10 20h4" />
+    </svg>
+  ),
   learn: (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <circle cx="12" cy="12" r="8" />

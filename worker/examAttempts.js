@@ -1,4 +1,5 @@
 import catalog from './data/assignment-vocabulary.json' with { type: 'json' };
+import dictationCatalog from './data/dictation-examples.json' with { type: 'json' };
 import { RETIRED_VOCABULARY } from '../shared/retiredVocabulary.js';
 import { createExamAttempt } from '../shared/examAttempts.js';
 
@@ -29,7 +30,12 @@ export async function handleExamAttempts(request, env, user) {
   const gradingCatalog = [...catalog, ...RETIRED_VOCABULARY];
   const builtInIds = new Set(gradingCatalog.map(word => String(word.id)));
   let attempt;
-  try { attempt = createExamAttempt(body, [...gradingCatalog, ...custom.filter(word => !builtInIds.has(String(word.id)))]); }
+  // Only built-in IDs use the registered historical sentences. Custom sentences
+  // must come from the authenticated account's saved custom vocabulary.
+  const customWords = custom.filter(word => !builtInIds.has(String(word.id)));
+  const examples = body.mode === 'dictation' ? { ...dictationCatalog,
+    ...Object.fromEntries(customWords.map(word => [String(word.id), [word]])) } : undefined;
+  try { attempt = createExamAttempt(body, [...gradingCatalog, ...customWords], examples); }
   catch (err) { return json({ error: err.message }, 400); }
   await env.DB.prepare('INSERT INTO exam_attempts (user_id,id,attempt_json,completed_at) VALUES (?,?,?,?) ON CONFLICT(user_id,id) DO NOTHING')
     .bind(user.id, attempt.id, JSON.stringify(attempt), attempt.completedAt).run();

@@ -5,6 +5,8 @@ import { useExamHistory } from '../../context/exam-history-context';
 import { SecondaryButton } from '../ui/Buttons';
 import { formatClassroomDate } from '../../utils/classroom';
 import '../../styles/classroom.css';
+import DictationFeedback from './DictationFeedback';
+import '../../styles/sentence-dictation.css';
 
 export function ExamAttemptList({ attempts = [] }) {
   const [page, setPage] = useState(1);
@@ -15,7 +17,7 @@ export function ExamAttemptList({ attempts = [] }) {
       <summary>{EXAM_MODE_LABELS[attempt.mode]} · {WORD_ASSIGNMENT_CATEGORIES[attempt.category]} · {Math.round(attempt.questionsCorrect / attempt.questionsAnswered * 100)}%（{attempt.questionsCorrect}/{attempt.questionsAnswered} 次） · {formatClassroomDate(attempt.completedAt)}</summary>
       <p className="classroom-helper">范围：{({ all: '随机抽测', learned: '已学习', mastered: '标记认识' })[attempt.scope]} · {attempt.questionsAnswered < 20 ? '提前结束' : '完成一组'}</p>
       <ul className="classroom-assignment-list">{attempt.answers.map((answer, index) => <li key={index}>
-        <div><strong>{answer.word}</strong><p>{answer.meaning}</p>{attempt.mode === 'spelling' && <p>输入：{answer.input}</p>}</div>
+        <div><strong lang="en">{attempt.mode === 'dictation' ? answer.example : answer.word}</strong><p>{attempt.mode === 'dictation' ? answer.exampleCn : answer.meaning}</p>{['spelling', 'dictation'].includes(attempt.mode) && <p>输入：<span lang="en">{answer.input || '未填写'}</span></p>}{attempt.mode === 'dictation' && <><p className="classroom-helper">{answer.hintUsed ? '使用中文提示' : '未使用中文提示'}{answer.revealed ? ' · 查看原文' : ''}</p><DictationFeedback example={answer.example} input={answer.input} /></>}</div>
         <span className={`classroom-badge ${answer.correct ? 'is-mastered' : 'is-wrong'}`}>{answer.correct ? '正确' : '需巩固'}</span>
       </li>)}</ul>
     </details>) : <div className="classroom-empty"><h3>还没有测试记录</h3><p>完成一组练习或提前结束后，即可在这里查看成绩。</p></div>}

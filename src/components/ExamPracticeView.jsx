@@ -40,6 +40,14 @@ const EXAM_MODES = [
     helper: '将一组单词与释义逐一配对。',
     tone: 'orange',
   },
+  {
+    id: 'dictation',
+    iconSrc: '/images/ui-assets/exam-mode-spelling-cyan-v1.png',
+    title: '句子听写',
+    meta: '精听例句 · 写下整句',
+    helper: '重播、慢速听音，答后逐词核对。',
+    tone: 'blue',
+  },
 ];
 
 const EXAM_SCOPES = [

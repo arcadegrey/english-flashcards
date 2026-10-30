@@ -33,7 +33,8 @@ export function buildWeeklyReport({ students, exams, readings, assignments, subm
         correct: String(answers?.[question.id] || '').toLowerCase() === String(question.answer).toLowerCase() });
     }
   };
-  for (const exam of examList) for (const answer of exam.answers || []) if (!answer.correct) addWord(answer.wordId, exam.userId);
+  // A sentence transcription error does not identify which vocabulary word is weak.
+  for (const exam of examList.filter(exam => exam.mode !== 'dictation')) for (const answer of exam.answers || []) if (!answer.correct) addWord(answer.wordId, exam.userId);
   for (const attempt of readingList) addReading(attempt.userId, attempt.article, attempt.answers, attempt.completedAt);
   for (const submission of currentSubmissions) {
     if (!inWeek(submission.submitted_at, range)) continue;

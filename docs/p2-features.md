@@ -49,7 +49,7 @@
 1. `npm run d1:migrate`
 2. 部署 Worker 与前端（原 GitHub Actions 流程仍按此顺序执行）。
 
-2026-10-22 已按用户要求完成生产 D1 迁移并核验，见 `d1-p2-deployment.md`。Worker 与前端未部署；Git 推送由用户手动完成。原 GitHub Actions 可安全重复执行幂等 schema 步骤。
+2026-10-22 已按用户要求完成生产 D1 迁移并核验，见 `d1-p2-deployment.md`；当次未部署 Worker 与前端。后续 2026-10-29 核对已确认截至 `5de1c1f` 的代码推送及 Actions #150 自动部署成功，包含 P2，原 GitHub Actions 已执行幂等 schema 与部署步骤。P2 不再等待首次发布；真实生产账号验收仍待完成。凭据及验证边界见[发布状态](release-status.md)。
 
 ## 验证
 

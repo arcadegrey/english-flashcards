@@ -71,7 +71,7 @@ export function createSpeechService({ storage, correctedAudioUrl = () => '', env
     active = null;
     synthesis?.cancel();
   };
-  const playSource = (src, session, rate) => {
+  const playSource = (src, session, rate, onStart) => {
     assertActive(session);
     return new Promise((resolve, reject) => {
       const audio = new runtime.Audio();
@@ -95,10 +95,12 @@ export function createSpeechService({ storage, correctedAudioUrl = () => '', env
       // Resource loading can reset playbackRate to defaultPlaybackRate.
       audio.defaultPlaybackRate = rate;
       audio.playbackRate = rate;
-      try { Promise.resolve(audio.play()).catch(finish); } catch (error) { finish(error); }
+      try { Promise.resolve(audio.play()).then(() => {
+        if (!settled && active === session && !session.signal.aborted) onStart?.();
+      }).catch(finish); } catch (error) { finish(error); }
     });
   };
-  const staticSpeech = async (word, field, session, rate) => {
+  const staticSpeech = async (word, field, session, rate, onStart) => {
     const id = String(word?.id ?? '').trim();
     if (!id) throw new Error('缺少单词音频 id');
     const voice = storage.getKokoroVoice();
@@ -109,7 +111,7 @@ export function createSpeechService({ storage, correctedAudioUrl = () => '', env
     assertActive(session);
     const url = mappedUrl
       || `${base.trim().replace(/\/$/, '')}/${encodeURIComponent(voice)}/${encodeURIComponent(id)}.mp3`;
-    await playSource(url, session, rate);
+    await playSource(url, session, rate, onStart);
   };
   const browserSpeech = async (text, session, options) => {
     if (!synthesis) throw new Error('当前环境不支持浏览器语音合成');
@@ -155,14 +157,15 @@ export function createSpeechService({ storage, correctedAudioUrl = () => '', env
     });
   };
   const run = async (text, options = {}, word, field, staticOnly = false) => {
+    const requireRecording = staticOnly || options.recordingOnly === true;
     text = String(text || '').trim();
-    if (!text && !staticOnly) return;
+    if (!text && !requireRecording) return;
     if (options.signal?.aborted) return { cancelled: true };
     stopSpeak();
     const controller = new AbortController();
     const session = { controller, signal: controller.signal };
     active = session;
-    const staticPreferred = staticOnly || provider === 'kokoro' && word?.id != null;
+    const staticPreferred = requireRecording || options.preferStatic === true || provider === 'kokoro' && word?.id != null;
     const rate = clamp(number(options.rate ?? 1) * number(storage.getSpeechRate()) * (staticPreferred ? number(storage.getKokoroSpeed()) : 1));
     const abortOwned = () => {
       if (active === session) stopSpeak();
@@ -175,9 +178,9 @@ export function createSpeechService({ storage, correctedAudioUrl = () => '', env
       session.signal.addEventListener('abort', cancelListener, { once: true });
     });
     const operation = async () => {
-      if (staticPreferred && word?.id != null) {
-        try { await staticSpeech(word, field, session, rate); return; }
-        catch (error) { assertActive(session); if (staticOnly) throw error; }
+      if (requireRecording || staticPreferred && word?.id != null) {
+        try { await staticSpeech(word, field, session, rate, options.onStart); return; }
+        catch (error) { assertActive(session); if (requireRecording) throw error; }
       }
       // Plain text and unavailable static recordings use browser speech directly.
       // Old saved endpoints / build-time Railway URLs are intentionally ignored.
