@@ -629,10 +629,10 @@
     "id": 2205,
     "word": "pitch",
     "phonetic": "/pɪtʃ/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "音高/球场/投掷/推销",
-    "example": "The singer’s pitch was clear and accurate.",
-    "exampleCn": "歌手的音高清晰而准确。",
+    "example": "The note has a high pitch.",
+    "exampleCn": "这个音的音高很高。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -644,6 +644,28 @@
     "ieltsLists": [
       "24",
       "27"
+    ],
+    "examples": [
+      {
+        "sense": "n. 音高",
+        "en": "The note has a high pitch.",
+        "zh": "这个音的音高很高。"
+      },
+      {
+        "sense": "n. 球场（英式）",
+        "en": "The players ran onto the pitch.",
+        "zh": "球员们跑进球场。"
+      },
+      {
+        "sense": "v. 投掷",
+        "en": "He can pitch the ball fast.",
+        "zh": "他能把球投得很快。"
+      },
+      {
+        "sense": "v. 推销想法",
+        "en": "I will pitch my idea tomorrow.",
+        "zh": "我明天要推介自己的想法。"
+      }
     ]
   },
   {
@@ -880,10 +902,10 @@
     "id": 2220,
     "word": "lap",
     "phonetic": "/læp/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "大腿上部/一圈/舔/轻拍",
-    "example": "The runner completed one lap around the track.",
-    "exampleCn": "跑者绕跑道完成了一圈。",
+    "example": "The child sat on her lap.",
+    "exampleCn": "孩子坐在她的大腿上。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -894,6 +916,28 @@
     "ieltsList": "56",
     "ieltsLists": [
       "56"
+    ],
+    "examples": [
+      {
+        "sense": "n. 大腿上部",
+        "en": "The child sat on her lap.",
+        "zh": "孩子坐在她的大腿上。"
+      },
+      {
+        "sense": "n. 一圈",
+        "en": "Run one lap around the track.",
+        "zh": "绕跑道跑一圈。"
+      },
+      {
+        "sense": "v. 舔着喝",
+        "en": "The cat will lap up the milk.",
+        "zh": "猫会舔着喝牛奶。"
+      },
+      {
+        "sense": "v. 轻拍",
+        "en": "Small waves lap against the boat.",
+        "zh": "小浪轻拍着船身。"
+      }
     ]
   },
   {
@@ -1140,10 +1184,10 @@
     "id": 2235,
     "word": "bound",
     "phonetic": "/baʊnd/",
-    "pos": "adj./v./n.",
+    "pos": "adj. / v. / n.",
     "meaning": "一定会的/受约束的/跳跃/边界",
-    "example": "The project is bound to succeed with enough support.",
-    "exampleCn": "有足够支持，这个项目一定会成功。",
+    "example": "You are bound to make mistakes.",
+    "exampleCn": "你难免会犯错。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -1154,6 +1198,28 @@
     "ieltsList": "44",
     "ieltsLists": [
       "44"
+    ],
+    "examples": [
+      {
+        "sense": "adj. 一定会的（be bound to）",
+        "en": "You are bound to make mistakes.",
+        "zh": "你难免会犯错。"
+      },
+      {
+        "sense": "v. 捆绑（bind 的过去分词）",
+        "en": "His hands were bound with rope.",
+        "zh": "他的双手被绳子捆住了。"
+      },
+      {
+        "sense": "v. 跳跃",
+        "en": "The dog will bound across the field.",
+        "zh": "那只狗会跳着跑过田野。"
+      },
+      {
+        "sense": "n. 界限（常用复数 bounds）",
+        "en": "Please keep within these bounds.",
+        "zh": "请不要超出这些界限。"
+      }
     ]
   },
   {
@@ -1459,10 +1525,10 @@
     "id": 2254,
     "word": "tap",
     "phonetic": "/tæp/",
-    "pos": "v./n.",
+    "pos": "v. / n.",
     "meaning": "轻拍/水龙头/开发利用",
-    "example": "Please tap the screen to start the program.",
-    "exampleCn": "请轻点屏幕来启动程序。",
+    "example": "Tap the screen to continue.",
+    "exampleCn": "轻点屏幕以继续。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -1474,6 +1540,23 @@
     "ieltsLists": [
       "25",
       "51"
+    ],
+    "examples": [
+      {
+        "sense": "v. 轻拍",
+        "en": "Tap the screen to continue.",
+        "zh": "轻点屏幕以继续。"
+      },
+      {
+        "sense": "n. 水龙头（英式）",
+        "en": "Please turn off the tap.",
+        "zh": "请关掉水龙头。"
+      },
+      {
+        "sense": "v. 开发利用",
+        "en": "We can tap the sun's energy.",
+        "zh": "我们可以利用太阳能。"
+      }
     ]
   },
   {

@@ -179,10 +179,10 @@
     "id": 1413,
     "word": "sink",
     "phonetic": "/sɪŋk/",
-    "pos": "v./n.",
+    "pos": "v. / n.",
     "meaning": "下沉；沉没/水槽",
-    "example": "The boat began to sink in the storm.",
-    "exampleCn": "这艘船在暴风雨中开始下沉。",
+    "example": "The boat began to sink.",
+    "exampleCn": "船开始下沉。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -193,6 +193,18 @@
     "ieltsList": "54",
     "ieltsLists": [
       "54"
+    ],
+    "examples": [
+      {
+        "sense": "v. 下沉",
+        "en": "The boat began to sink.",
+        "zh": "船开始下沉。"
+      },
+      {
+        "sense": "n. 水槽",
+        "en": "Please wash the cups in the sink.",
+        "zh": "请在水槽里洗杯子。"
+      }
     ]
   },
   {

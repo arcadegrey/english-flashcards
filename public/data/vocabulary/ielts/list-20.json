@@ -1131,9 +1131,9 @@
     "word": "temple",
     "phonetic": "ˈtempl",
     "pos": "n.",
-    "meaning": "庙宇/寺院",
-    "example": "The ancient temple stands on top of the hill.",
-    "exampleCn": "古庙矗立在山顶上。",
+    "meaning": "n. 庙宇；寺院；太阳穴",
+    "example": "We visited a temple by the river.",
+    "exampleCn": "我们参观了河边的一座寺庙。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -1141,6 +1141,18 @@
     "ieltsList": "20",
     "ieltsLists": [
       "20"
+    ],
+    "examples": [
+      {
+        "sense": "n. 庙宇；寺院",
+        "en": "We visited a temple by the river.",
+        "zh": "我们参观了河边的一座寺庙。"
+      },
+      {
+        "sense": "n. 太阳穴",
+        "en": "He gently rubbed his temple.",
+        "zh": "他轻轻揉了揉太阳穴。"
+      }
     ]
   },
   {

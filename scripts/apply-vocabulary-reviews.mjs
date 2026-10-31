@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { isDeepStrictEqual } from 'node:util';
 import { RETIRED_VOCABULARY } from '../shared/retiredVocabulary.js';
 const root = new URL('../', import.meta.url);
-const registers = await Promise.all(['data/vocabulary-quality-2026-10-25.json', 'data/vocabulary-followup/reviews-2026-10-25.json', 'data/sense-review/reviews-2026-10-26.json', 'data/vocabulary-feedback/reviews-2026-10-29.json', 'data/vocabulary-p1-repair/reviews-2026-10-29.json', 'data/vocabulary-p2-repair/reviews-2026-10-29.json', 'data/vocabulary-short-example-repair/reviews-2026-10-29.json', 'data/vocabulary-common-senses-repair/reviews-2026-10-29.json', 'data/vocabulary-single-example/reviews-2026-10-31.json']
+const registers = await Promise.all(['data/vocabulary-quality-2026-10-25.json', 'data/vocabulary-followup/reviews-2026-10-25.json', 'data/sense-review/reviews-2026-10-26.json', 'data/vocabulary-feedback/reviews-2026-10-29.json', 'data/vocabulary-p1-repair/reviews-2026-10-29.json', 'data/vocabulary-p2-repair/reviews-2026-10-29.json', 'data/vocabulary-short-example-repair/reviews-2026-10-29.json', 'data/vocabulary-common-senses-repair/reviews-2026-10-29.json', 'data/vocabulary-single-example/reviews-2026-10-31.json', 'data/vocabulary-multi-sense-repair/reviews-2026-10-31.json']
   .map(async path => JSON.parse(await readFile(new URL(path, root), 'utf8'))));
 const states = new Map();
 for (const register of registers) for (const review of register.reviews) {

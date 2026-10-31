@@ -1,0 +1,1332 @@
+[
+  {
+    "id": "cambridge-bear",
+    "word": "bear",
+    "title": "Cambridge Dictionary · bear",
+    "url": "https://dictionary.cambridge.org/dictionary/english/bear",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "e13dcb159436d64cd6bc190bff1a5922893925ea7b68bdaff61f46011c52bcc0",
+    "definitionCount": 21,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-bow",
+    "word": "bow",
+    "title": "Cambridge Dictionary · bow",
+    "url": "https://dictionary.cambridge.org/dictionary/english/bow",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "834f462dbc0772967ae2798aa2415a9ebddb883a97c8b8c5bd77519368121238",
+    "definitionCount": 15,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-wound",
+    "word": "wound",
+    "title": "Cambridge Dictionary · wound",
+    "url": "https://dictionary.cambridge.org/dictionary/english/wound",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "6594b0ec595308ee0be294aef0393adc27ea6a33a8942f798466a558cbc5dde9",
+    "definitionCount": 8,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-sole",
+    "word": "sole",
+    "title": "Cambridge Dictionary · sole",
+    "url": "https://dictionary.cambridge.org/dictionary/english/sole",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "179f9de8f4ab9cf65f3b13eccbc2a2a88657e1e3cb2f8eeafafba5ace40b3573",
+    "definitionCount": 10,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-bark",
+    "word": "bark",
+    "title": "Cambridge Dictionary · bark",
+    "url": "https://dictionary.cambridge.org/dictionary/english/bark",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "886549cd7b751a2709f314d8a694b67c367324e01da56df76d5e529d9c113a1c",
+    "definitionCount": 9,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-object",
+    "word": "object",
+    "title": "Cambridge Dictionary · object",
+    "url": "https://dictionary.cambridge.org/dictionary/english/object",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "5c215d669b5a33b16f1057e65c01ed91528f28b9c3602464c20c0d52d3722858",
+    "definitionCount": 18,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-scale",
+    "word": "scale",
+    "title": "Cambridge Dictionary · scale",
+    "url": "https://dictionary.cambridge.org/dictionary/english/scale",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "f2122525b16df3d02bef6c5ecf49f9aa4432d2d3986187257f08760c328ae4a8",
+    "definitionCount": 20,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-stock",
+    "word": "stock",
+    "title": "Cambridge Dictionary · stock",
+    "url": "https://dictionary.cambridge.org/dictionary/english/stock",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "10e64eb56f5cc9afc3d5355c860e046cdd756e5ac172942d247f6ff36656f1c4",
+    "definitionCount": 33,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-sink",
+    "word": "sink",
+    "title": "Cambridge Dictionary · sink",
+    "url": "https://dictionary.cambridge.org/dictionary/english/sink",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "51e9c21073ca7e49eb4fcfa3446074eab8dcaea96e5226fe254cc2e335a13b31",
+    "definitionCount": 14,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-tie",
+    "word": "tie",
+    "title": "Cambridge Dictionary · tie",
+    "url": "https://dictionary.cambridge.org/dictionary/english/tie",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "40522167f450c6079c6952551549636648c05ca56c5dd5b077eeec4172ee941c",
+    "definitionCount": 19,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-stake",
+    "word": "stake",
+    "title": "Cambridge Dictionary · stake",
+    "url": "https://dictionary.cambridge.org/dictionary/english/stake",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "2706b2d40070743df476d6021b3df3aa18f69d19457ca7777443c19f6f925390",
+    "definitionCount": 24,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-seal",
+    "word": "seal",
+    "title": "Cambridge Dictionary · seal",
+    "url": "https://dictionary.cambridge.org/dictionary/english/seal",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "a765056f3eeb4ad4a1dce87d5ee69e0133696761a4285c81dd5134242736410f",
+    "definitionCount": 20,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-rear",
+    "word": "rear",
+    "title": "Cambridge Dictionary · rear",
+    "url": "https://dictionary.cambridge.org/dictionary/english/rear",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "0c7cab6b3ffd9a9c7d919c20a6c65a1ed8e86217d2e541c8ab45771df9bc7613",
+    "definitionCount": 9,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-plot",
+    "word": "plot",
+    "title": "Cambridge Dictionary · plot",
+    "url": "https://dictionary.cambridge.org/dictionary/english/plot",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "12e9df7dd78159d5fa34f31a0e0eb879749ae429a95b3f1c933c2f97354d1fb3",
+    "definitionCount": 17,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-stroke",
+    "word": "stroke",
+    "title": "Cambridge Dictionary · stroke",
+    "url": "https://dictionary.cambridge.org/dictionary/english/stroke",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "4c92afa347e27101c0c4cadc2dae4e734b4616601e17c123c5b6065a228b9455",
+    "definitionCount": 19,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-shed",
+    "word": "shed",
+    "title": "Cambridge Dictionary · shed",
+    "url": "https://dictionary.cambridge.org/dictionary/english/shed",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "79622ebfeee42fb6f9f6b1703fdfdef7073d2c4cee5ab423c381e4cc252691fd",
+    "definitionCount": 14,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-switch",
+    "word": "switch",
+    "title": "Cambridge Dictionary · switch",
+    "url": "https://dictionary.cambridge.org/dictionary/english/switch",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "06057b246ef86db56900b14cca7d47ad7dda925acaccdd43a672c01ce7b420d2",
+    "definitionCount": 13,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-grave",
+    "word": "grave",
+    "title": "Cambridge Dictionary · grave",
+    "url": "https://dictionary.cambridge.org/dictionary/english/grave",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "bac5187c7753c25efe6326524a66badc266a67c9cd46ea6f4a8f867791f26220",
+    "definitionCount": 4,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-row",
+    "word": "row",
+    "title": "Cambridge Dictionary · row",
+    "url": "https://dictionary.cambridge.org/dictionary/english/row",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "636c46962c0db487178d823a6c431e457369d9eab629cf9b0225292b0f8375aa",
+    "definitionCount": 12,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-pitch",
+    "word": "pitch",
+    "title": "Cambridge Dictionary · pitch",
+    "url": "https://dictionary.cambridge.org/dictionary/english/pitch",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "d1db3ec16162a786481a9c1132b59606f2453675c2844a2c39e3754a5d9ba288",
+    "definitionCount": 30,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-lap",
+    "word": "lap",
+    "title": "Cambridge Dictionary · lap",
+    "url": "https://dictionary.cambridge.org/dictionary/english/lap",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "999bb734be2ba3c2c4bf63a83a76b0dfb61eee7632c134cfe3657e4a94983996",
+    "definitionCount": 9,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-bound",
+    "word": "bound",
+    "title": "Cambridge Dictionary · bound",
+    "url": "https://dictionary.cambridge.org/dictionary/english/bound",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "648a23fe67dca3c8307d9e5df01ad83e3ae34afbc2b0f9c4844972812640f574",
+    "definitionCount": 22,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-tap",
+    "word": "tap",
+    "title": "Cambridge Dictionary · tap",
+    "url": "https://dictionary.cambridge.org/dictionary/english/tap",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "c823f8ca32969db2ebf0e2998021ff86b007b66612e9754b3de8911df6557cd1",
+    "definitionCount": 32,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-court",
+    "word": "court",
+    "title": "Cambridge Dictionary · court",
+    "url": "https://dictionary.cambridge.org/dictionary/english/court",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "df01233cdab90d3f270a91d712653b6372d92fce86025b039cbcbbe0867271d9",
+    "definitionCount": 21,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-crane",
+    "word": "crane",
+    "title": "Cambridge Dictionary · crane",
+    "url": "https://dictionary.cambridge.org/dictionary/english/crane",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "8a46ef1170f3e8a57c5fa7eb469d87e39c12e8282df67c9ca5a6b4e33699f097",
+    "definitionCount": 6,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-hail",
+    "word": "hail",
+    "title": "Cambridge Dictionary · hail",
+    "url": "https://dictionary.cambridge.org/dictionary/english/hail",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "22f5d18c7551768a47de8b348f574a2e91fd55ad93c293774065d1bd9f215646",
+    "definitionCount": 8,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-jar",
+    "word": "jar",
+    "title": "Cambridge Dictionary · jar",
+    "url": "https://dictionary.cambridge.org/dictionary/english/jar",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "a492e6efbb2457be5687b225711af44245a0cfa0d6164802b64f3c216169cfad",
+    "definitionCount": 10,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-bolt",
+    "word": "bolt",
+    "title": "Cambridge Dictionary · bolt",
+    "url": "https://dictionary.cambridge.org/dictionary/english/bolt",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "e15e3bf8e1e7791dbffc08778e79401f71db445525fb2bf79a9964efeca5f3d2",
+    "definitionCount": 20,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-toll",
+    "word": "toll",
+    "title": "Cambridge Dictionary · toll",
+    "url": "https://dictionary.cambridge.org/dictionary/english/toll",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "83301252d22636722eea59559a205fb9c06855d2534a5b967238913601dfba29",
+    "definitionCount": 12,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-mean",
+    "word": "mean",
+    "title": "Cambridge Dictionary · mean",
+    "url": "https://dictionary.cambridge.org/dictionary/english/mean",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "3f23141401084ce4b7aaa43dae51b541b73ca220eca1a91584a96ca067bf995e",
+    "definitionCount": 24,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-race",
+    "word": "race",
+    "title": "Cambridge Dictionary · race",
+    "url": "https://dictionary.cambridge.org/dictionary/english/race",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "6536fcb2e2f220cdd278b2ee96f65c28215fc9308ef2316b15d87f456a378aef",
+    "definitionCount": 14,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-match",
+    "word": "match",
+    "title": "Cambridge Dictionary · match",
+    "url": "https://dictionary.cambridge.org/dictionary/english/match",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "7ab6fd281556dedad8a037813e7593ed83cd0df84c703d3669b52271f8681ebd",
+    "definitionCount": 21,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-order",
+    "word": "order",
+    "title": "Cambridge Dictionary · order",
+    "url": "https://dictionary.cambridge.org/dictionary/english/order",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "2d6ba24780a74813f39c77445ea1dc5f7d0c7fee194b647af07f65875735fc22",
+    "definitionCount": 54,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-store",
+    "word": "store",
+    "title": "Cambridge Dictionary · store",
+    "url": "https://dictionary.cambridge.org/dictionary/english/store",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "845b77ab0bdbbbca61cbf7a98e4bce282484f806cd87d160a5acee338df7ab2d",
+    "definitionCount": 15,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-state",
+    "word": "state",
+    "title": "Cambridge Dictionary · state",
+    "url": "https://dictionary.cambridge.org/dictionary/english/state",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "059f180cda117cd3f48f76c8eba4dfcfdc3470dde20809c6c8be55464b1d7844",
+    "definitionCount": 27,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-deal",
+    "word": "deal",
+    "title": "Cambridge Dictionary · deal",
+    "url": "https://dictionary.cambridge.org/dictionary/english/deal",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "dd28723f1ac67447a949f29d031c91186ddcd0192d1e87929995152d1966c4c5",
+    "definitionCount": 15,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-sentence",
+    "word": "sentence",
+    "title": "Cambridge Dictionary · sentence",
+    "url": "https://dictionary.cambridge.org/dictionary/english/sentence",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "417fb900d96e8259967d27529339e2928ed9b5db3f8a893561fda87b39252bca",
+    "definitionCount": 7,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-fine",
+    "word": "fine",
+    "title": "Cambridge Dictionary · fine",
+    "url": "https://dictionary.cambridge.org/dictionary/english/fine",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "c04beed3c6cc36a391afc9fea44aadfee5161391885920dacf95f67cd7b8fd20",
+    "definitionCount": 16,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-matter",
+    "word": "matter",
+    "title": "Cambridge Dictionary · matter",
+    "url": "https://dictionary.cambridge.org/dictionary/english/matter",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "ee6e982ed56a25d1aa3256abfbc4d13afe5503c84d1653978646759afb4bdf73",
+    "definitionCount": 12,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-mind",
+    "word": "mind",
+    "title": "Cambridge Dictionary · mind",
+    "url": "https://dictionary.cambridge.org/dictionary/english/mind",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "fd4e6ad655369faa960073e3ab4de8909b5b2cfbab592f0ed1c3c013f0b6d16d",
+    "definitionCount": 13,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-like",
+    "word": "like",
+    "title": "Cambridge Dictionary · like",
+    "url": "https://dictionary.cambridge.org/dictionary/english/like",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "5913bddaf4757bbf9d28bef412299cc51a26a4f7d7a00de698f0c009ae161c6c",
+    "definitionCount": 31,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-still",
+    "word": "still",
+    "title": "Cambridge Dictionary · still",
+    "url": "https://dictionary.cambridge.org/dictionary/english/still",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "35c81622d6576712da96ea65db9a91907db8abdd9f5c64873dde608846c0ceae",
+    "definitionCount": 12,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-school",
+    "word": "school",
+    "title": "Cambridge Dictionary · school",
+    "url": "https://dictionary.cambridge.org/dictionary/english/school",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "75e60615e23856d480b13e530f77b2d421965fa6f0283b0e295e08848069f098",
+    "definitionCount": 20,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-set",
+    "word": "set",
+    "title": "Cambridge Dictionary · set",
+    "url": "https://dictionary.cambridge.org/dictionary/english/set",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "769d4155ba800b5610cde5aa821dfb457696c9254b91660b64dc0f55f565f5e7",
+    "definitionCount": 60,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-long",
+    "word": "long",
+    "title": "Cambridge Dictionary · long",
+    "url": "https://dictionary.cambridge.org/dictionary/english/long",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "02804b0e59e94b7ff8a02c786e926a875b84f7e8527e2167b9f946a14d651983",
+    "definitionCount": 17,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-kind",
+    "word": "kind",
+    "title": "Cambridge Dictionary · kind",
+    "url": "https://dictionary.cambridge.org/dictionary/english/kind",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "4c2ea588a09e8ea97e38a11274404857ece18fe2cc3e4465cad183b4f55b32eb",
+    "definitionCount": 5,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-light",
+    "word": "light",
+    "title": "Cambridge Dictionary · light",
+    "url": "https://dictionary.cambridge.org/dictionary/english/light",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "872e8ca27edfff41dd46a4864b0756a7eeb077a097724a42cf9afab8fe8a91e9",
+    "definitionCount": 48,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-kid",
+    "word": "kid",
+    "title": "Cambridge Dictionary · kid",
+    "url": "https://dictionary.cambridge.org/dictionary/english/kid",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "8aed6893b742885e016323b485bb7fdd031f4f36e1f34ee8c13c18916611a442",
+    "definitionCount": 13,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-patient",
+    "word": "patient",
+    "title": "Cambridge Dictionary · patient",
+    "url": "https://dictionary.cambridge.org/dictionary/english/patient",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "d51c93b9de6586806a70b6f41b2493c74350034872d16f72c658f296ee036f8d",
+    "definitionCount": 3,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-pretty",
+    "word": "pretty",
+    "title": "Cambridge Dictionary · pretty",
+    "url": "https://dictionary.cambridge.org/dictionary/english/pretty",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "f3f6d084ebb9f4415217d8e2901a4b799e31277cfc628c74ac5488ba3f4f4fdd",
+    "definitionCount": 5,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-safe",
+    "word": "safe",
+    "title": "Cambridge Dictionary · safe",
+    "url": "https://dictionary.cambridge.org/dictionary/english/safe",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "06ce130476e6d8b702eb0adea7c8198567a218bdffa3fcaa4e793c3de1667631",
+    "definitionCount": 24,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-pool",
+    "word": "pool",
+    "title": "Cambridge Dictionary · pool",
+    "url": "https://dictionary.cambridge.org/dictionary/english/pool",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "717fc51a2c6861d525d776658879d38d3f45bc05f08d646222e384a5f74f0443",
+    "definitionCount": 20,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-novel",
+    "word": "novel",
+    "title": "Cambridge Dictionary · novel",
+    "url": "https://dictionary.cambridge.org/dictionary/english/novel",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "50891600e6fffafd5ff1c3eb210b7823c09e4f7a4ad9ff4fd6f58c2ceed4a5dc",
+    "definitionCount": 5,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-sharp",
+    "word": "sharp",
+    "title": "Cambridge Dictionary · sharp",
+    "url": "https://dictionary.cambridge.org/dictionary/english/sharp",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "eb8083c29554cb03bd3711be2a565d7c8793fc4905d8572d3a43e01877a6d0cd",
+    "definitionCount": 26,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-case",
+    "word": "case",
+    "title": "Cambridge Dictionary · case",
+    "url": "https://dictionary.cambridge.org/dictionary/english/case",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "cfc3d1ef0d376f34632ece5760ec82c9f953ade6e46b6bf8253981653c9c2d6e",
+    "definitionCount": 30,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-chest",
+    "word": "chest",
+    "title": "Cambridge Dictionary · chest",
+    "url": "https://dictionary.cambridge.org/dictionary/english/chest",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "f38d94fe82a701d2755c1a0e14fc9b629d15b2a220b241b989a6eb0254916d95",
+    "definitionCount": 4,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-organ",
+    "word": "organ",
+    "title": "Cambridge Dictionary · organ",
+    "url": "https://dictionary.cambridge.org/dictionary/english/organ",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "9e5242eae9a42b3a9c96b05985e2b800066523d1e12061b952190acbb13dd7d2",
+    "definitionCount": 7,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-trunk",
+    "word": "trunk",
+    "title": "Cambridge Dictionary · trunk",
+    "url": "https://dictionary.cambridge.org/dictionary/english/trunk",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "dd385f7b07b472639d79bbf101e4d5097883f481cbf0302e7aad80ad84a839d6",
+    "definitionCount": 13,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-vessel",
+    "word": "vessel",
+    "title": "Cambridge Dictionary · vessel",
+    "url": "https://dictionary.cambridge.org/dictionary/english/vessel",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "5130d2ceeca2f4191d2e0d262329ef1367f8dc3c9cea7b182481d31c12187faf",
+    "definitionCount": 7,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-plate",
+    "word": "plate",
+    "title": "Cambridge Dictionary · plate",
+    "url": "https://dictionary.cambridge.org/dictionary/english/plate",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "e50905e3c3fa610c85a22f197778198ee792993bacaf74d8be2ac957c1c2a2cf",
+    "definitionCount": 16,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-spring",
+    "word": "spring",
+    "title": "Cambridge Dictionary · spring",
+    "url": "https://dictionary.cambridge.org/dictionary/english/spring",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "7b74ef51d658b3da5bbc971a0022ad06a66d0955a82af9ab9d3118dda75a5a06",
+    "definitionCount": 12,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-record",
+    "word": "record",
+    "title": "Cambridge Dictionary · record",
+    "url": "https://dictionary.cambridge.org/dictionary/english/record",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "297fc9bf203df395f9a9c4bf5ae79eea109d5bd125d862a0a4cd64b917113604",
+    "definitionCount": 28,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-table",
+    "word": "table",
+    "title": "Cambridge Dictionary · table",
+    "url": "https://dictionary.cambridge.org/dictionary/english/table",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "4f99ec1271a55ef7a511e2488a57348de7854f14d7f851fa22b50207a4197085",
+    "definitionCount": 23,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-press",
+    "word": "press",
+    "title": "Cambridge Dictionary · press",
+    "url": "https://dictionary.cambridge.org/dictionary/english/press",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "590c3e64d437a83696a0e0db09e92052e45b93454f87e99a2bb5eca26975e3b9",
+    "definitionCount": 30,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-nail",
+    "word": "nail",
+    "title": "Cambridge Dictionary · nail",
+    "url": "https://dictionary.cambridge.org/dictionary/english/nail",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "fee349d146fa8715c5179a117ccb23062b78762ba3fe31d015976f32a77933f9",
+    "definitionCount": 13,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-iron",
+    "word": "iron",
+    "title": "Cambridge Dictionary · iron",
+    "url": "https://dictionary.cambridge.org/dictionary/english/iron",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "758fa39cb96684c501adf1e23f038698f564d96aad869d611cf413f5d85f903a",
+    "definitionCount": 13,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-mine",
+    "word": "mine",
+    "title": "Cambridge Dictionary · mine",
+    "url": "https://dictionary.cambridge.org/dictionary/english/mine",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "76867a5b8620b4cc396bd5acc5f2a94e00bdb66c043486de04723f6ebf012ea3",
+    "definitionCount": 16,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-jam",
+    "word": "jam",
+    "title": "Cambridge Dictionary · jam",
+    "url": "https://dictionary.cambridge.org/dictionary/english/jam",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "469005a1355b21a3e09cdbe26a5f25f8173e86c0580309ad8e0fc08f60facf20",
+    "definitionCount": 16,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-vault",
+    "word": "vault",
+    "title": "Cambridge Dictionary · vault",
+    "url": "https://dictionary.cambridge.org/dictionary/english/vault",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "55d20c2068094e8dcbb0d5911add1806735504a638cf910f8219f6788f1fdcb2",
+    "definitionCount": 13,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-stamp",
+    "word": "stamp",
+    "title": "Cambridge Dictionary · stamp",
+    "url": "https://dictionary.cambridge.org/dictionary/english/stamp",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "ef78fb4084cd1808f42735996c03383a9c3e7b4540984855145a8ecb78abb0d5",
+    "definitionCount": 19,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-palm",
+    "word": "palm",
+    "title": "Cambridge Dictionary · palm",
+    "url": "https://dictionary.cambridge.org/dictionary/english/palm",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "8376b8a7b37a6fa8b7a109ba4a0ba7560038f1674c2f8ea3a6480f50c5d1e529",
+    "definitionCount": 6,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-will",
+    "word": "will",
+    "title": "Cambridge Dictionary · will",
+    "url": "https://dictionary.cambridge.org/dictionary/english/will",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "d2d3ae0306de9e772352c0dbee425ed8a4772f5af03706c3deaf3ea6728ab215",
+    "definitionCount": 26,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-well",
+    "word": "well",
+    "title": "Cambridge Dictionary · well",
+    "url": "https://dictionary.cambridge.org/dictionary/english/well",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "164ebd3670432a220e0968becf520121ecd8af5b595d2ecd53998a1bef4a05ed",
+    "definitionCount": 21,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-lot",
+    "word": "lot",
+    "title": "Cambridge Dictionary · lot",
+    "url": "https://dictionary.cambridge.org/dictionary/english/lot",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "e14d36040a76b20dd5df01164f7c1f293aa0516687374a90dac7ddb18e84a333",
+    "definitionCount": 17,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-second",
+    "word": "second",
+    "title": "Cambridge Dictionary · second",
+    "url": "https://dictionary.cambridge.org/dictionary/english/second",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "6fe1ee65067a0ae06a823ce5342de1e6dbf0d1d18141d4ae642e6297c827a1fd",
+    "definitionCount": 29,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-watch",
+    "word": "watch",
+    "title": "Cambridge Dictionary · watch",
+    "url": "https://dictionary.cambridge.org/dictionary/english/watch",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "5f68c884b57070d897ed7b5bda5354d94e1699ca96c20ad08ba206994a8c80a4",
+    "definitionCount": 12,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-bank",
+    "word": "bank",
+    "title": "Cambridge Dictionary · bank",
+    "url": "https://dictionary.cambridge.org/dictionary/english/bank",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "8e995977b9482a69ec380cb654d4bd8b25ba3f91fba813b0f8ad9b625ad2ce04",
+    "definitionCount": 23,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-pass",
+    "word": "pass",
+    "title": "Cambridge Dictionary · pass",
+    "url": "https://dictionary.cambridge.org/dictionary/english/pass",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "ed8f5ac433375f6b0aae8f095b19c6454d8eda8241ceeafaa9319e0d21c2d0bd",
+    "definitionCount": 49,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-ground",
+    "word": "ground",
+    "title": "Cambridge Dictionary · ground",
+    "url": "https://dictionary.cambridge.org/dictionary/english/ground",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "b2ba369d7c0ef1c11cbf7c5fd0d7a325a35472b3e86871d6b1f0b3cc1ccaae25",
+    "definitionCount": 33,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-lie",
+    "word": "lie",
+    "title": "Cambridge Dictionary · lie",
+    "url": "https://dictionary.cambridge.org/dictionary/english/lie",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "7e754a1b96d509251df01c9670e5d192d2dc765259cf0ca072b85fac9f6b2fd4",
+    "definitionCount": 10,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-season",
+    "word": "season",
+    "title": "Cambridge Dictionary · season",
+    "url": "https://dictionary.cambridge.org/dictionary/english/season",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "c1c08fd0e082cc884f7059b2c9b6d13e02db1d8988b07be8d5f590e5eeb2248f",
+    "definitionCount": 27,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-wear",
+    "word": "wear",
+    "title": "Cambridge Dictionary · wear",
+    "url": "https://dictionary.cambridge.org/dictionary/english/wear",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "273d3cceb9ba599c66f77c8c05b719fab5fc94fe8b850f78a5ef83ac66dbee16",
+    "definitionCount": 16,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-bit",
+    "word": "bit",
+    "title": "Cambridge Dictionary · bit",
+    "url": "https://dictionary.cambridge.org/dictionary/english/bit",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "c41a7adad820bb546a552bbfaf4b949086a16835334a8cebeb232ed5a956a2fb",
+    "definitionCount": 25,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-plant",
+    "word": "plant",
+    "title": "Cambridge Dictionary · plant",
+    "url": "https://dictionary.cambridge.org/dictionary/english/plant",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "782cd95be2139512d046b450c6b473296e453714b9890a8f811eb152e4dc27b9",
+    "definitionCount": 20,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-page",
+    "word": "page",
+    "title": "Cambridge Dictionary · page",
+    "url": "https://dictionary.cambridge.org/dictionary/english/page",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "452686cbf899a46ac31d1e31214b330f432c75dd6ec4b615f20ecbdb176d4918",
+    "definitionCount": 19,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-rest",
+    "word": "rest",
+    "title": "Cambridge Dictionary · rest",
+    "url": "https://dictionary.cambridge.org/dictionary/english/rest",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "2520362fae35a157647aa2d8f71098f16fbbe6fb8b5a018e6d30384368a80fae",
+    "definitionCount": 17,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-present",
+    "word": "present",
+    "title": "Cambridge Dictionary · present",
+    "url": "https://dictionary.cambridge.org/dictionary/english/present",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "0ca48a16b92b77f144c9489e24a2107bfb869c852c136ac29dcf9f6049615d15",
+    "definitionCount": 25,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-sound",
+    "word": "sound",
+    "title": "Cambridge Dictionary · sound",
+    "url": "https://dictionary.cambridge.org/dictionary/english/sound",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "3b6063a6b4c4fda76eea5327c03d129381a76099e8ff80244b8b664411a7aeca",
+    "definitionCount": 30,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-miss",
+    "word": "miss",
+    "title": "Cambridge Dictionary · miss",
+    "url": "https://dictionary.cambridge.org/dictionary/english/miss",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "0a7f296df0f86c843d3b20fa778a29a5b687d4f1de98a7bff4a6f32983d68cca",
+    "definitionCount": 22,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-park",
+    "word": "park",
+    "title": "Cambridge Dictionary · park",
+    "url": "https://dictionary.cambridge.org/dictionary/english/park",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "b7416088a7a3a3f3339659f56b993b9392366a20677d16359939776b574a64cd",
+    "definitionCount": 13,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-fly",
+    "word": "fly",
+    "title": "Cambridge Dictionary · fly",
+    "url": "https://dictionary.cambridge.org/dictionary/english/fly",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "e95a4c4d037e392fe9514a4ee6b884c776fddb0d495dc2b3d084bac757030834",
+    "definitionCount": 24,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-fit",
+    "word": "fit",
+    "title": "Cambridge Dictionary · fit",
+    "url": "https://dictionary.cambridge.org/dictionary/english/fit",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "18ace75b76ec4830c44d0c117c533273b562fa093edb3e7949d165abfab0766a",
+    "definitionCount": 33,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-wind",
+    "word": "wind",
+    "title": "Cambridge Dictionary · wind",
+    "url": "https://dictionary.cambridge.org/dictionary/english/wind",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "3b8249e0a32723739dae013be9c36d407e362ad83a9893b31c461a5909c19b65",
+    "definitionCount": 15,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-key",
+    "word": "key",
+    "title": "Cambridge Dictionary · key",
+    "url": "https://dictionary.cambridge.org/dictionary/english/key",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "871a1bc6d4c5eabb3ccc7bbc80f5c83a85585b67abf06ac70a627d7ed9b30abb",
+    "definitionCount": 18,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-ring",
+    "word": "ring",
+    "title": "Cambridge Dictionary · ring",
+    "url": "https://dictionary.cambridge.org/dictionary/english/ring",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "60d50be7f80f3ba212ac5a0dee76405058c46a301eb7f7f9f5f44985b15e6c4f",
+    "definitionCount": 26,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-wake",
+    "word": "wake",
+    "title": "Cambridge Dictionary · wake",
+    "url": "https://dictionary.cambridge.org/dictionary/english/wake",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "b47ca19caf2cbad34f85b12cc2f2ba469ed2698e22a9a616e37923f1cf44e7e0",
+    "definitionCount": 6,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-base",
+    "word": "base",
+    "title": "Cambridge Dictionary · base",
+    "url": "https://dictionary.cambridge.org/dictionary/english/base",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "75dd144d6011ded53f91d0502ece432348f31bbcd769bd93c547e09957c37b1c",
+    "definitionCount": 26,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-pen",
+    "word": "pen",
+    "title": "Cambridge Dictionary · pen",
+    "url": "https://dictionary.cambridge.org/dictionary/english/pen",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "3d1b467f7a13de049fe93d1843d4a6005789bab0f8fa61893d49170463478d41",
+    "definitionCount": 11,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-bat",
+    "word": "bat",
+    "title": "Cambridge Dictionary · bat",
+    "url": "https://dictionary.cambridge.org/dictionary/english/bat",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "890ac15a5d441de4e0e6bc3643193597804c9f869fed6827e9c0affa6081b97d",
+    "definitionCount": 10,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-line",
+    "word": "line",
+    "title": "Cambridge Dictionary · line",
+    "url": "https://dictionary.cambridge.org/dictionary/english/line",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "2643444a70f1cff40362b23cf401d5a7b6f79bc69f631cf60c45d8d3f1d171c0",
+    "definitionCount": 69,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-type",
+    "word": "type",
+    "title": "Cambridge Dictionary · type",
+    "url": "https://dictionary.cambridge.org/dictionary/english/type",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "903c095598178eafe3158283f2c8fb11cd98c5e86f18b322568236ef7f2a23fe",
+    "definitionCount": 10,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-staff",
+    "word": "staff",
+    "title": "Cambridge Dictionary · staff",
+    "url": "https://dictionary.cambridge.org/dictionary/english/staff",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "646b704ecf3b7c87ef41d90c672d4005c7446f83cb93db740d8395e686f5fc60",
+    "definitionCount": 10,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-rule",
+    "word": "rule",
+    "title": "Cambridge Dictionary · rule",
+    "url": "https://dictionary.cambridge.org/dictionary/english/rule",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "6eed564f19c92e70563348b46f6954972e71f053ca1dfd278b7186eaf4986ef1",
+    "definitionCount": 13,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-pound",
+    "word": "pound",
+    "title": "Cambridge Dictionary · pound",
+    "url": "https://dictionary.cambridge.org/dictionary/english/pound",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "adc764020259832315ac8e2ea4509a49880f5646d06c80f44641c6f3dc6700df",
+    "definitionCount": 14,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-top",
+    "word": "top",
+    "title": "Cambridge Dictionary · top",
+    "url": "https://dictionary.cambridge.org/dictionary/english/top",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "f350ab979ddca76b5a8fd4cbb3c5dafd8669c9ac98a553442a76074ba329b871",
+    "definitionCount": 47,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-shoot",
+    "word": "shoot",
+    "title": "Cambridge Dictionary · shoot",
+    "url": "https://dictionary.cambridge.org/dictionary/english/shoot",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "1e7b03b2ddd7e1c9a247ea3e49887e90e00d701185d4208341496b72c1bf1ff8",
+    "definitionCount": 22,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-rock",
+    "word": "rock",
+    "title": "Cambridge Dictionary · rock",
+    "url": "https://dictionary.cambridge.org/dictionary/english/rock",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "5e52c1c230e35d9e310546d1586531bef2a6d9483750c7038609369a6591951d",
+    "definitionCount": 18,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-yard",
+    "word": "yard",
+    "title": "Cambridge Dictionary · yard",
+    "url": "https://dictionary.cambridge.org/dictionary/english/yard",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "79f8c74649315a2669a9c84f4b7a3bccfa5f424d0005f699ee03f03a03c23780",
+    "definitionCount": 10,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-trust",
+    "word": "trust",
+    "title": "Cambridge Dictionary · trust",
+    "url": "https://dictionary.cambridge.org/dictionary/english/trust",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "d663310af697da07f52f79aa7cb3a00e9d16f957a2d204a617163e594e408839",
+    "definitionCount": 14,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-stick",
+    "word": "stick",
+    "title": "Cambridge Dictionary · stick",
+    "url": "https://dictionary.cambridge.org/dictionary/english/stick",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "56f57aa1744fcab0fe3914574d1fc77a5c9cd76104efb06368338437f7c18d07",
+    "definitionCount": 26,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-wave",
+    "word": "wave",
+    "title": "Cambridge Dictionary · wave",
+    "url": "https://dictionary.cambridge.org/dictionary/english/wave",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "b712ee3c9a6044eb8739ca191c79cde1077f5f80dcf4d6269a825a42e9e4b13d",
+    "definitionCount": 19,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-suit",
+    "word": "suit",
+    "title": "Cambridge Dictionary · suit",
+    "url": "https://dictionary.cambridge.org/dictionary/english/suit",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "049680589f6c300a9cc2e0d9700557c41a87e9eca29058083d7bbbb541eab16f",
+    "definitionCount": 19,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-tear",
+    "word": "tear",
+    "title": "Cambridge Dictionary · tear",
+    "url": "https://dictionary.cambridge.org/dictionary/english/tear",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "831a7fadd01c4996d67bf55328acbb68ac743285f3466025be95587531c62475",
+    "definitionCount": 13,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-tip",
+    "word": "tip",
+    "title": "Cambridge Dictionary · tip",
+    "url": "https://dictionary.cambridge.org/dictionary/english/tip",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "8b7e0d2a9ad74ef75d6734a866edefe3f2a77f3cbd03c7ba28b1b5e78f404392",
+    "definitionCount": 27,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-net",
+    "word": "net",
+    "title": "Cambridge Dictionary · net",
+    "url": "https://dictionary.cambridge.org/dictionary/english/net",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "b0fd8676eb15dcb5084bab590b3b7077beaa23038e24e81f1d021cc7e5c5ef51",
+    "definitionCount": 31,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-spell",
+    "word": "spell",
+    "title": "Cambridge Dictionary · spell",
+    "url": "https://dictionary.cambridge.org/dictionary/english/spell",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "2b5c0027b2a093086198c85240a2646de7e88f7c30cc05a4f7f354497b4be780",
+    "definitionCount": 10,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-duck",
+    "word": "duck",
+    "title": "Cambridge Dictionary · duck",
+    "url": "https://dictionary.cambridge.org/dictionary/english/duck",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "24c4d545a1bd7ebd5ac8df489b344180ae5104374af94fd541f32e87ee90daf1",
+    "definitionCount": 12,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-tender",
+    "word": "tender",
+    "title": "Cambridge Dictionary · tender",
+    "url": "https://dictionary.cambridge.org/dictionary/english/tender",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "f2cdd79e74f88d7f34bd1108a7943b42846edac1e40d2069b3462bcccfbce12a",
+    "definitionCount": 24,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-pupil",
+    "word": "pupil",
+    "title": "Cambridge Dictionary · pupil",
+    "url": "https://dictionary.cambridge.org/dictionary/english/pupil",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "dca044f29d7b8dad5572845a3942eeac3c765408a480ea195774e642135d55ca",
+    "definitionCount": 5,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-temple",
+    "word": "temple",
+    "title": "Cambridge Dictionary · temple",
+    "url": "https://dictionary.cambridge.org/dictionary/english/temple",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "467a8a650cfbb8405d6639ebfbaa296193177a8a373c1f808106e0e019f59111",
+    "definitionCount": 4,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-trip",
+    "word": "trip",
+    "title": "Cambridge Dictionary · trip",
+    "url": "https://dictionary.cambridge.org/dictionary/english/trip",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "6b01e9c3241214288e4aa822ef16c6178a46dda07e37aa33ad06b5edba5b81bc",
+    "definitionCount": 14,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-tire",
+    "word": "tire",
+    "title": "Cambridge Dictionary · tire",
+    "url": "https://dictionary.cambridge.org/dictionary/english/tire",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "9577c6b994fa0cb14eab9dc8a71759d1f450640953b6a8f12ab1c6dc03c6e3dc",
+    "definitionCount": 5,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-shoulder",
+    "word": "shoulder",
+    "title": "Cambridge Dictionary · shoulder",
+    "url": "https://dictionary.cambridge.org/dictionary/english/shoulder",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "7409e154f818344e12c67cf8e4130e2c6e46a689a362950da7fe0f2eddb9f67f",
+    "definitionCount": 13,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-coach",
+    "word": "coach",
+    "title": "Cambridge Dictionary · coach",
+    "url": "https://dictionary.cambridge.org/dictionary/english/coach",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "9b8c821ccdcbbe34702e3c2db1c060ed377587e2cac95b1c58b1f9883f51ea47",
+    "definitionCount": 19,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-hide",
+    "word": "hide",
+    "title": "Cambridge Dictionary · hide",
+    "url": "https://dictionary.cambridge.org/dictionary/english/hide",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "1ce9adaedb5aefe3575a1519cc55017c6a404b437d17fe015d4d2cba555105ca",
+    "definitionCount": 11,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-crop",
+    "word": "crop",
+    "title": "Cambridge Dictionary · crop",
+    "url": "https://dictionary.cambridge.org/dictionary/english/crop",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "c1b97af51e970dac05d486f686d48337221d9f4c74e866c34a3c1cb6da300b62",
+    "definitionCount": 16,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-fan",
+    "word": "fan",
+    "title": "Cambridge Dictionary · fan",
+    "url": "https://dictionary.cambridge.org/dictionary/english/fan",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "cb86590698e581b1ded5b1a049f2ab7377cec26b76f366782dc61090b0ac942c",
+    "definitionCount": 11,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-file",
+    "word": "file",
+    "title": "Cambridge Dictionary · file",
+    "url": "https://dictionary.cambridge.org/dictionary/english/file",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "c4375a2dca7627c5452f5e154c9d409d8cbacf687e3d0ed24a24a900c94e3881",
+    "definitionCount": 25,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-story",
+    "word": "story",
+    "title": "Cambridge Dictionary · story",
+    "url": "https://dictionary.cambridge.org/dictionary/english/story",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "c805ec3609b4969bda65292e19be306229d13b6d7c77e961f3695a8102aeab01",
+    "definitionCount": 6,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-club",
+    "word": "club",
+    "title": "Cambridge Dictionary · club",
+    "url": "https://dictionary.cambridge.org/dictionary/english/club",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "c7d00ec99c007aea112c06320dc9c52f79bb9ec573d38f1d7383a03fd7de21a8",
+    "definitionCount": 16,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-box",
+    "word": "box",
+    "title": "Cambridge Dictionary · box",
+    "url": "https://dictionary.cambridge.org/dictionary/english/box",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "2b7b853846755971e60717d40e3b04fc9c0bf05117ac946a1097109177e9cd27",
+    "definitionCount": 24,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-lead",
+    "word": "lead",
+    "title": "Cambridge Dictionary · lead",
+    "url": "https://dictionary.cambridge.org/dictionary/english/lead",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "2c7128bd1f9cdfcf8a808d9c9e574b3aa78b356bd3cc270fc648aec0059abe1a",
+    "definitionCount": 42,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  },
+  {
+    "id": "cambridge-close",
+    "word": "close",
+    "title": "Cambridge Dictionary · close",
+    "url": "https://dictionary.cambridge.org/dictionary/english/close",
+    "checkedAt": "2026-10-31",
+    "pageSha256": "d9e799096634b605291bc4bbf912c25dc22622b68af3d827b609f73ce742a66e",
+    "definitionCount": 40,
+    "scope": "Illustrated senses, grammar and explicit additions; preserved legacy technical glosses are not claimed as newly source-checked."
+  }
+]

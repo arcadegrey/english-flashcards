@@ -383,10 +383,10 @@
     "id": 1466,
     "word": "stake",
     "phonetic": "/steɪk/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "桩/股份/利害关系/用桩支撑",
-    "example": "The company has a large stake in the success of the project.",
-    "exampleCn": "公司在这个项目的成功中有很大的利害关系。",
+    "example": "Push the stake into the ground.",
+    "exampleCn": "把这根桩打进地里。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -397,6 +397,28 @@
     "ieltsList": "52",
     "ieltsLists": [
       "52"
+    ],
+    "examples": [
+      {
+        "sense": "n. 桩",
+        "en": "Push the stake into the ground.",
+        "zh": "把这根桩打进地里。"
+      },
+      {
+        "sense": "n. 股份",
+        "en": "She owns a stake in the company.",
+        "zh": "她持有这家公司的股份。"
+      },
+      {
+        "sense": "n. 利害关系",
+        "en": "They have a stake in its success.",
+        "zh": "这件事成功与否关系到他们的利益。"
+      },
+      {
+        "sense": "v. 用桩支撑",
+        "en": "He staked the young tree.",
+        "zh": "他给那棵小树打桩支撑。"
+      }
     ]
   },
   {

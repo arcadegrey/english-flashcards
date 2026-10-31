@@ -483,10 +483,10 @@
     "id": 1719,
     "word": "grave",
     "phonetic": "/ɡreɪv/",
-    "pos": "adj./n.",
+    "pos": "adj. / n.",
     "meaning": "严重的/坟墓",
-    "example": "The scientist warned of grave damage to the ecosystem.",
-    "exampleCn": "这位科学家警告生态系统会受到严重破坏。",
+    "example": "This is a grave mistake.",
+    "exampleCn": "这是一个严重的错误。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -497,6 +497,18 @@
     "ieltsList": "48",
     "ieltsLists": [
       "48"
+    ],
+    "examples": [
+      {
+        "sense": "adj. 严重的",
+        "en": "This is a grave mistake.",
+        "zh": "这是一个严重的错误。"
+      },
+      {
+        "sense": "n. 坟墓",
+        "en": "They placed flowers on the grave.",
+        "zh": "他们在坟墓上放了鲜花。"
+      }
     ]
   },
   {
@@ -804,10 +816,10 @@
     "id": 5118,
     "word": "matter",
     "phonetic": "ˈmætə",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "事情/物质/要紧",
-    "example": "What is the matter with your car?",
-    "exampleCn": "你的车出了什么问题？",
+    "example": "This is a private matter.",
+    "exampleCn": "这是一件私事。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -815,6 +827,23 @@
     "ieltsList": "48",
     "ieltsLists": [
       "48"
+    ],
+    "examples": [
+      {
+        "sense": "n. 事情",
+        "en": "This is a private matter.",
+        "zh": "这是一件私事。"
+      },
+      {
+        "sense": "n. 物质",
+        "en": "Matter can be solid, liquid, or gas.",
+        "zh": "物质可以呈固态、液态或气态。"
+      },
+      {
+        "sense": "v. 要紧；重要",
+        "en": "Your opinion matters to me.",
+        "zh": "你的看法对我很重要。"
+      }
     ]
   },
   {

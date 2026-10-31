@@ -446,7 +446,7 @@
     "id": 1662,
     "word": "shed",
     "phonetic": "/ʃed/",
-    "pos": "v./n.",
+    "pos": "v. / n.",
     "meaning": "脱落/流出/棚屋",
     "example": "Trees shed their leaves in autumn.",
     "exampleCn": "树木在秋天落叶。",
@@ -460,6 +460,18 @@
     "ieltsList": "33",
     "ieltsLists": [
       "33"
+    ],
+    "examples": [
+      {
+        "sense": "v. 脱落",
+        "en": "Trees shed their leaves in autumn.",
+        "zh": "树木在秋天落叶。"
+      },
+      {
+        "sense": "n. 棚屋",
+        "en": "We keep bikes in the shed.",
+        "zh": "我们把自行车放在棚屋里。"
+      }
     ]
   },
   {

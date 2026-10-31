@@ -244,9 +244,9 @@
     "word": "trunk",
     "phonetic": "/trʌŋk/",
     "pos": "n.",
-    "meaning": "树干/躯干/行李箱",
-    "example": "The trunk of the tree stores water during dry seasons.",
-    "exampleCn": "树干在旱季储存水分。",
+    "meaning": "树干/躯干/行李箱\nn. 象鼻；汽车后备箱（美式，英式常说 boot）",
+    "example": "The tree has a thick trunk.",
+    "exampleCn": "这棵树的树干很粗。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -258,6 +258,28 @@
     "ieltsLists": [
       "6",
       "8"
+    ],
+    "examples": [
+      {
+        "sense": "n. 树干",
+        "en": "The tree has a thick trunk.",
+        "zh": "这棵树的树干很粗。"
+      },
+      {
+        "sense": "n. 躯干",
+        "en": "Keep your trunk straight during this exercise.",
+        "zh": "做这个动作时保持躯干挺直。"
+      },
+      {
+        "sense": "n. 汽车后备箱（美式）",
+        "en": "Put the bags in the trunk.",
+        "zh": "把包放进汽车后备箱里。"
+      },
+      {
+        "sense": "n. 象鼻",
+        "en": "The elephant lifted its trunk.",
+        "zh": "大象抬起了鼻子。"
+      }
     ]
   },
   {

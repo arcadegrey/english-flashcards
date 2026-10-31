@@ -256,11 +256,11 @@
   {
     "id": 1170,
     "word": "object",
-    "phonetic": "/ˈɑːbdʒɪkt/;/əbˈdʒekt/",
-    "pos": "n./v.",
+    "phonetic": "/ˈɒbdʒɪkt/（名词）；/əbˈdʒekt/（动词）",
+    "pos": "n. / v.",
     "meaning": "物体；目标/反对",
-    "example": "Some students objected to the new rule.",
-    "exampleCn": "一些学生反对这项新规定。",
+    "example": "Please move this heavy object.",
+    "exampleCn": "请把这个重物挪开。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -271,6 +271,23 @@
     "ieltsList": "13",
     "ieltsLists": [
       "13"
+    ],
+    "examples": [
+      {
+        "sense": "n. 物体（/ˈɒbdʒekt/）",
+        "en": "Please move this heavy object.",
+        "zh": "请把这个重物挪开。"
+      },
+      {
+        "sense": "n. 目标（较正式）",
+        "en": "Our main object is to save time.",
+        "zh": "我们的主要目标是节省时间。"
+      },
+      {
+        "sense": "v. 反对（/əbˈdʒekt/）",
+        "en": "I object to this unfair rule.",
+        "zh": "我反对这条不公平的规定。"
+      }
     ]
   },
   {
@@ -515,9 +532,9 @@
     "word": "story",
     "phonetic": "ˈstɔːri",
     "pos": "n.",
-    "meaning": "故事/情节",
-    "example": "The story captivated readers around the world.",
-    "exampleCn": "这个故事吸引了全世界的读者。",
+    "meaning": "n. 故事；情节；新闻报道；楼层（美式，英式拼写 storey）",
+    "example": "She told me a funny story.",
+    "exampleCn": "她给我讲了一个有趣的故事。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -525,6 +542,23 @@
     "ieltsList": "13",
     "ieltsLists": [
       "13"
+    ],
+    "examples": [
+      {
+        "sense": "n. 故事",
+        "en": "She told me a funny story.",
+        "zh": "她给我讲了一个有趣的故事。"
+      },
+      {
+        "sense": "n. 新闻报道",
+        "en": "The story appeared in today's newspaper.",
+        "zh": "这则报道刊登在今天的报纸上。"
+      },
+      {
+        "sense": "n. 楼层（美式）",
+        "en": "This house has only one story.",
+        "zh": "这栋房子只有一层。"
+      }
     ]
   },
   {
@@ -633,11 +667,11 @@
   {
     "id": 3964,
     "word": "record",
-    "phonetic": "ˈrekɔːd",
-    "pos": "n.",
-    "meaning": "记录/唱片",
-    "example": "The athlete broke the world record.",
-    "exampleCn": "这位运动员打破了世界纪录。",
+    "phonetic": "/ˈrekɔːd/（名词）；/rɪˈkɔːd/（动词）",
+    "pos": "n. / v.",
+    "meaning": "记录/唱片\nv. 录制；记录",
+    "example": "She set a new record.",
+    "exampleCn": "她创造了一项新纪录。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -645,16 +679,33 @@
     "ieltsList": "13",
     "ieltsLists": [
       "13"
+    ],
+    "examples": [
+      {
+        "sense": "n. 记录（/ˈrekɔːd/）",
+        "en": "She set a new record.",
+        "zh": "她创造了一项新纪录。"
+      },
+      {
+        "sense": "n. 唱片（/ˈrekɔːd/）",
+        "en": "This record belonged to my grandfather.",
+        "zh": "这张唱片以前属于我的祖父。"
+      },
+      {
+        "sense": "v. 录制（/rɪˈkɔːd/）",
+        "en": "Please record the lesson.",
+        "zh": "请把这节课录下来。"
+      }
     ]
   },
   {
     "id": 3965,
     "word": "file",
     "phonetic": "faɪl",
-    "pos": "n.",
-    "meaning": "文件/档案",
-    "example": "He saved the document as a PDF file.",
-    "exampleCn": "他把文件保存为一个PDF文件。",
+    "pos": "n. / v.",
+    "meaning": "n. 文件；档案；锉刀；一列人或物\nv. 归档；提交文件；排成一列行进；用锉刀锉",
+    "example": "Save the file before closing.",
+    "exampleCn": "关闭前保存文件。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -662,6 +713,28 @@
     "ieltsList": "13",
     "ieltsLists": [
       "13"
+    ],
+    "examples": [
+      {
+        "sense": "n. 文件",
+        "en": "Save the file before closing.",
+        "zh": "关闭前保存文件。"
+      },
+      {
+        "sense": "n. 锉刀",
+        "en": "Use a file to smooth the edge.",
+        "zh": "用锉刀把边缘锉平。"
+      },
+      {
+        "sense": "v. 列队行进",
+        "en": "The pupils filed into the hall.",
+        "zh": "学生们排着队走进大厅。"
+      },
+      {
+        "sense": "v. 归档",
+        "en": "Please file these letters by date.",
+        "zh": "请按日期给这些信件归档。"
+      }
     ]
   },
   {

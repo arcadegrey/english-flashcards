@@ -59,11 +59,11 @@
   {
     "id": 290,
     "word": "bow",
-    "phonetic": "/baʊ/",
-    "pos": "v./n.",
+    "phonetic": "/baʊ/（鞠躬）；/bəʊ/（弓、蝴蝶结）",
+    "pos": "v. / n.",
     "meaning": "鞠躬；弓",
-    "example": "The actor took a bow after the show.",
-    "exampleCn": "演员在演出结束后鞠躬致谢。",
+    "example": "Please bow to the audience.",
+    "exampleCn": "请向观众鞠躬。",
     "category": "daily",
     "categories": [
       "daily",
@@ -74,6 +74,23 @@
       "24",
       "37",
       "46"
+    ],
+    "examples": [
+      {
+        "sense": "v. 鞠躬（/baʊ/）",
+        "en": "Please bow to the audience.",
+        "zh": "请向观众鞠躬。"
+      },
+      {
+        "sense": "n. 弓（/bəʊ/）",
+        "en": "He carried a bow and arrows.",
+        "zh": "他带着一把弓和一些箭。"
+      },
+      {
+        "sense": "n. 蝴蝶结（/bəʊ/）",
+        "en": "She tied the ribbon in a bow.",
+        "zh": "她把丝带打成蝴蝶结。"
+      }
     ]
   },
   {
@@ -261,8 +278,8 @@
     "phonetic": "/ˈvesl/",
     "pos": "n.",
     "meaning": "船只/容器/血管",
-    "example": "The vessel carried supplies across the ocean.",
-    "exampleCn": "这艘船把物资运过海洋。",
+    "example": "This vessel carries food to the island.",
+    "exampleCn": "这艘船向岛上运送食物。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -273,6 +290,23 @@
     "ieltsList": "37",
     "ieltsLists": [
       "37"
+    ],
+    "examples": [
+      {
+        "sense": "n. 船只（较正式）",
+        "en": "This vessel carries food to the island.",
+        "zh": "这艘船向岛上运送食物。"
+      },
+      {
+        "sense": "n. 容器（较正式）",
+        "en": "Fill the vessel with clean water.",
+        "zh": "往容器里装上干净的水。"
+      },
+      {
+        "sense": "n. 血管（blood vessel）",
+        "en": "A blood vessel carries blood.",
+        "zh": "血管输送血液。"
+      }
     ]
   },
   {
@@ -959,10 +993,10 @@
     "id": 4790,
     "word": "stamp",
     "phonetic": "stæmp",
-    "pos": "n.",
-    "meaning": "邮票/印章",
-    "example": "He stuck a stamp on the envelope.",
-    "exampleCn": "他在信封上贴了一张邮票。",
+    "pos": "n. / v.",
+    "meaning": "邮票/印章\nv. 盖章；跺脚",
+    "example": "Put a stamp on the envelope.",
+    "exampleCn": "在信封上贴一张邮票。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -970,6 +1004,28 @@
     "ieltsList": "37",
     "ieltsLists": [
       "37"
+    ],
+    "examples": [
+      {
+        "sense": "n. 邮票",
+        "en": "Put a stamp on the envelope.",
+        "zh": "在信封上贴一张邮票。"
+      },
+      {
+        "sense": "n. 印章",
+        "en": "Use this stamp on the form.",
+        "zh": "在表格上使用这个印章。"
+      },
+      {
+        "sense": "v. 盖章",
+        "en": "Please stamp this form.",
+        "zh": "请在这张表格上盖章。"
+      },
+      {
+        "sense": "v. 跺脚",
+        "en": "Do not stamp your feet.",
+        "zh": "不要跺脚。"
+      }
     ]
   },
   {

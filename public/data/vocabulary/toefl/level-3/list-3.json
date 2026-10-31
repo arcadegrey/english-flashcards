@@ -718,8 +718,8 @@
     "phonetic": "/ˈɔːɡən/",
     "pos": "n.",
     "meaning": "器官；机构；风琴",
-    "example": "The heart is a vital organ.",
-    "exampleCn": "心脏是重要器官。",
+    "example": "The heart is an important organ.",
+    "exampleCn": "心脏是一个重要器官。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -730,6 +730,23 @@
     "ieltsList": "56",
     "ieltsLists": [
       "56"
+    ],
+    "examples": [
+      {
+        "sense": "n. 器官",
+        "en": "The heart is an important organ.",
+        "zh": "心脏是一个重要器官。"
+      },
+      {
+        "sense": "n. 机构（较正式）",
+        "en": "The court is an organ of the state.",
+        "zh": "法院是国家的一个机构。"
+      },
+      {
+        "sense": "n. 管风琴",
+        "en": "She plays the organ at church.",
+        "zh": "她在教堂弹管风琴。"
+      }
     ]
   },
   {

@@ -795,10 +795,10 @@
     "id": 4876,
     "word": "state",
     "phonetic": "steɪt",
-    "pos": "v./n.",
-    "meaning": "陈述/国家/州",
-    "example": "He stated his opinion clearly at the meeting.",
-    "exampleCn": "他在会上清楚地陈述了自己的意见。",
+    "pos": "v. / n.",
+    "meaning": "陈述/国家/州\nn. 状态；状况",
+    "example": "Please state your name.",
+    "exampleCn": "请说出你的姓名。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -806,6 +806,28 @@
     "ieltsList": "40",
     "ieltsLists": [
       "40"
+    ],
+    "examples": [
+      {
+        "sense": "v. 陈述",
+        "en": "Please state your name.",
+        "zh": "请说出你的姓名。"
+      },
+      {
+        "sense": "n. 州",
+        "en": "Texas is a large state.",
+        "zh": "得克萨斯是一个大州。"
+      },
+      {
+        "sense": "n. 状态",
+        "en": "The house is in a poor state.",
+        "zh": "这座房子的状况很差。"
+      },
+      {
+        "sense": "n. 国家",
+        "en": "These states share a border.",
+        "zh": "这些国家有共同边界。"
+      }
     ]
   },
   {

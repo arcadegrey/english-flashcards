@@ -394,10 +394,10 @@
     "id": 2881,
     "word": "jar",
     "phonetic": "/dʒɑːr/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "罐子/刺耳地震动/使不快",
-    "example": "The jam was stored in a glass jar.",
-    "exampleCn": "果酱被装在玻璃罐里。",
+    "example": "Put the jam in this jar.",
+    "exampleCn": "把果酱放进这个罐子里。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -408,6 +408,18 @@
     "ieltsList": "26",
     "ieltsLists": [
       "26"
+    ],
+    "examples": [
+      {
+        "sense": "n. 罐子",
+        "en": "Put the jam in this jar.",
+        "zh": "把果酱放进这个罐子里。"
+      },
+      {
+        "sense": "v. 使不适；刺激",
+        "en": "The sudden noise jarred my nerves.",
+        "zh": "突如其来的噪声让我心神不宁。"
+      }
     ]
   },
   {
@@ -474,10 +486,10 @@
     "id": 3156,
     "word": "bolt",
     "phonetic": "/boʊlt/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "螺栓/闪电/猛冲/闩上",
-    "example": "A loose bolt caused the machine to shake loudly.",
-    "exampleCn": "一颗松动的螺栓导致机器剧烈震动。",
+    "example": "Please tighten this loose bolt.",
+    "exampleCn": "请拧紧这颗松动的螺栓。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -488,6 +500,28 @@
     "ieltsList": "26",
     "ieltsLists": [
       "26"
+    ],
+    "examples": [
+      {
+        "sense": "n. 螺栓",
+        "en": "Please tighten this loose bolt.",
+        "zh": "请拧紧这颗松动的螺栓。"
+      },
+      {
+        "sense": "n. 闪电（a bolt of lightning）",
+        "en": "A bolt of lightning lit the sky.",
+        "zh": "一道闪电照亮了天空。"
+      },
+      {
+        "sense": "v. 猛冲",
+        "en": "The dog may bolt through the gate.",
+        "zh": "那只狗可能会冲出大门。"
+      },
+      {
+        "sense": "v. 闩上",
+        "en": "Please bolt the back door.",
+        "zh": "请闩上后门。"
+      }
     ]
   },
   {
@@ -655,8 +689,8 @@
     "phonetic": "neɪl",
     "pos": "n.",
     "meaning": "钉子/指甲",
-    "example": "He hammered a nail into the wall.",
-    "exampleCn": "他把钉子锤进了墙里。",
+    "example": "Use a nail to hang the picture.",
+    "exampleCn": "用一颗钉子把画挂起来。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -664,6 +698,18 @@
     "ieltsList": "26",
     "ieltsLists": [
       "26"
+    ],
+    "examples": [
+      {
+        "sense": "n. 钉子",
+        "en": "Use a nail to hang the picture.",
+        "zh": "用一颗钉子把画挂起来。"
+      },
+      {
+        "sense": "n. 指甲",
+        "en": "There is paint on my nail.",
+        "zh": "我的指甲上沾着油漆。"
+      }
     ]
   },
   {
@@ -706,8 +752,8 @@
     "phonetic": "mætʃ",
     "pos": "v. / n.",
     "meaning": "v. 与……相配；匹配；使配对\nn. 火柴；比赛；相配的人或物",
-    "example": "Your shoes match your coat.",
-    "exampleCn": "你的鞋子和外套很相配。",
+    "example": "My shoes match this coat.",
+    "exampleCn": "我的鞋和这件外套很配。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -715,6 +761,23 @@
     "ieltsList": "26",
     "ieltsLists": [
       "26"
+    ],
+    "examples": [
+      {
+        "sense": "v. 相配",
+        "en": "My shoes match this coat.",
+        "zh": "我的鞋和这件外套很配。"
+      },
+      {
+        "sense": "n. 火柴",
+        "en": "Light the candle with a match.",
+        "zh": "用一根火柴点燃蜡烛。"
+      },
+      {
+        "sense": "n. 比赛",
+        "en": "The match begins at seven.",
+        "zh": "比赛七点开始。"
+      }
     ]
   },
   {

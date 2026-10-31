@@ -1621,10 +1621,10 @@
     "id": 1413,
     "word": "sink",
     "phonetic": "/sɪŋk/",
-    "pos": "v./n.",
+    "pos": "v. / n.",
     "meaning": "下沉；沉没/水槽",
-    "example": "The boat began to sink in the storm.",
-    "exampleCn": "这艘船在暴风雨中开始下沉。",
+    "example": "The boat began to sink.",
+    "exampleCn": "船开始下沉。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -1635,22 +1635,51 @@
     "ieltsList": "54",
     "ieltsLists": [
       "54"
+    ],
+    "examples": [
+      {
+        "sense": "v. 下沉",
+        "en": "The boat began to sink.",
+        "zh": "船开始下沉。"
+      },
+      {
+        "sense": "n. 水槽",
+        "en": "Please wash the cups in the sink.",
+        "zh": "请在水槽里洗杯子。"
+      }
     ]
   },
   {
     "id": 1414,
     "word": "tie",
     "phonetic": "/taɪ/",
-    "pos": "v./n.",
+    "pos": "v. / n.",
     "meaning": "系；连接/领带；平局",
-    "example": "Please tie the package with a strong rope.",
-    "exampleCn": "请用结实的绳子把包裹系好。",
+    "example": "Please tie your shoes before running.",
+    "exampleCn": "跑步前请系好鞋带。",
     "category": "toefl",
     "categories": [
       "toefl"
     ],
     "level": "3",
-    "list": "10"
+    "list": "10",
+    "examples": [
+      {
+        "sense": "v. 系；绑",
+        "en": "Please tie your shoes before running.",
+        "zh": "跑步前请系好鞋带。"
+      },
+      {
+        "sense": "n. 领带",
+        "en": "He wore a blue tie.",
+        "zh": "他戴着一条蓝色领带。"
+      },
+      {
+        "sense": "n. 平局",
+        "en": "The game ended in a tie.",
+        "zh": "比赛以平局结束。"
+      }
+    ]
   },
   {
     "id": 1415,

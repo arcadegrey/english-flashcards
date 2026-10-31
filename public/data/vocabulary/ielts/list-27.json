@@ -243,10 +243,10 @@
     "id": 1694,
     "word": "switch",
     "phonetic": "/swɪtʃ/",
-    "pos": "v./n.",
+    "pos": "v. / n.",
     "meaning": "转换/开关",
-    "example": "You can switch off the lights before leaving.",
-    "exampleCn": "离开前你可以关灯。",
+    "example": "We can switch to another plan.",
+    "exampleCn": "我们可以改用另一个计划。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -257,6 +257,23 @@
     "ieltsList": "27",
     "ieltsLists": [
       "27"
+    ],
+    "examples": [
+      {
+        "sense": "v. 转换",
+        "en": "We can switch to another plan.",
+        "zh": "我们可以改用另一个计划。"
+      },
+      {
+        "sense": "n. 开关",
+        "en": "The switch is beside the door.",
+        "zh": "开关在门旁边。"
+      },
+      {
+        "sense": "v. 关掉（switch off）",
+        "en": "Please switch off the kitchen light.",
+        "zh": "请关掉厨房的灯。"
+      }
     ]
   },
   {
@@ -343,10 +360,10 @@
     "id": 2205,
     "word": "pitch",
     "phonetic": "/pɪtʃ/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "音高/球场/投掷/推销",
-    "example": "The singer’s pitch was clear and accurate.",
-    "exampleCn": "歌手的音高清晰而准确。",
+    "example": "The note has a high pitch.",
+    "exampleCn": "这个音的音高很高。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -358,6 +375,28 @@
     "ieltsLists": [
       "24",
       "27"
+    ],
+    "examples": [
+      {
+        "sense": "n. 音高",
+        "en": "The note has a high pitch.",
+        "zh": "这个音的音高很高。"
+      },
+      {
+        "sense": "n. 球场（英式）",
+        "en": "The players ran onto the pitch.",
+        "zh": "球员们跑进球场。"
+      },
+      {
+        "sense": "v. 投掷",
+        "en": "He can pitch the ball fast.",
+        "zh": "他能把球投得很快。"
+      },
+      {
+        "sense": "v. 推销想法",
+        "en": "I will pitch my idea tomorrow.",
+        "zh": "我明天要推介自己的想法。"
+      }
     ]
   },
   {
@@ -606,10 +645,10 @@
     "id": 4407,
     "word": "fan",
     "phonetic": "fæn",
-    "pos": "n.",
-    "meaning": "风扇/扇子",
-    "example": "The fan kept the room cool on hot days.",
-    "exampleCn": "风扇在热天里保持着房间的凉爽。",
+    "pos": "n. / v.",
+    "meaning": "n. 风扇；扇子；粉丝；爱好者\nv. 扇风；扇动",
+    "example": "The fan keeps the room cool.",
+    "exampleCn": "风扇让房间保持凉爽。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -617,6 +656,23 @@
     "ieltsList": "27",
     "ieltsLists": [
       "27"
+    ],
+    "examples": [
+      {
+        "sense": "n. 风扇；扇子",
+        "en": "The fan keeps the room cool.",
+        "zh": "风扇让房间保持凉爽。"
+      },
+      {
+        "sense": "n. 粉丝；爱好者",
+        "en": "She is a big fan of this band.",
+        "zh": "她是这个乐队的忠实粉丝。"
+      },
+      {
+        "sense": "v. 扇动",
+        "en": "She fanned her face with a book.",
+        "zh": "她拿一本书给脸扇风。"
+      }
     ]
   },
   {
@@ -794,10 +850,10 @@
     "id": 4418,
     "word": "iron",
     "phonetic": "ˈaɪən",
-    "pos": "n.",
-    "meaning": "铁/熨斗",
-    "example": "The bridge is made of iron and steel.",
-    "exampleCn": "这座桥是由铁和钢制成的。",
+    "pos": "n. / v.",
+    "meaning": "铁/熨斗\nv. 熨烫",
+    "example": "Iron is a useful metal.",
+    "exampleCn": "铁是一种有用的金属。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -805,16 +861,33 @@
     "ieltsList": "27",
     "ieltsLists": [
       "27"
+    ],
+    "examples": [
+      {
+        "sense": "n. 铁",
+        "en": "Iron is a useful metal.",
+        "zh": "铁是一种有用的金属。"
+      },
+      {
+        "sense": "n. 熨斗",
+        "en": "The iron is too hot.",
+        "zh": "熨斗太烫了。"
+      },
+      {
+        "sense": "v. 熨烫",
+        "en": "Please iron this shirt.",
+        "zh": "请熨一下这件衬衫。"
+      }
     ]
   },
   {
     "id": 4419,
     "word": "lead",
-    "phonetic": "led",
-    "pos": "n.",
-    "meaning": "铅",
-    "example": "Lead pipes were once used in plumbing.",
-    "exampleCn": "铅管曾一度用于自来水管道。",
+    "phonetic": "/led/（铅）；/liːd/（带领、领先）",
+    "pos": "n. / v.",
+    "meaning": "n. 铅（读 /led/）；领先地位（读 /liːd/）\nv. 带领；领导；导致（读 /liːd/）",
+    "example": "Lead is a heavy metal.",
+    "exampleCn": "铅是一种重金属。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -822,6 +895,23 @@
     "ieltsList": "27",
     "ieltsLists": [
       "27"
+    ],
+    "examples": [
+      {
+        "sense": "n. 铅（/led/）",
+        "en": "Lead is a heavy metal.",
+        "zh": "铅是一种重金属。"
+      },
+      {
+        "sense": "v. 带领（/liːd/）",
+        "en": "Please lead us to the station.",
+        "zh": "请带我们去车站。"
+      },
+      {
+        "sense": "n. 领先（/liːd/）",
+        "en": "She has a lead of two points.",
+        "zh": "她领先两分。"
+      }
     ]
   },
   {
@@ -1015,10 +1105,10 @@
     "id": 4431,
     "word": "mine",
     "phonetic": "maɪn",
-    "pos": "n.",
-    "meaning": "矿/矿山",
-    "example": "He worked in a coal mine for twenty years.",
-    "exampleCn": "他在煤矿工作了二十年。",
+    "pos": "n. / pron. / v.",
+    "meaning": "n. 矿井；矿山；地雷\npron. 我的东西；属于我的人或物\nv. 采矿；开采",
+    "example": "It is dark inside the mine.",
+    "exampleCn": "矿井里很暗。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -1026,6 +1116,28 @@
     "ieltsList": "27",
     "ieltsLists": [
       "27"
+    ],
+    "examples": [
+      {
+        "sense": "n. 矿井",
+        "en": "It is dark inside the mine.",
+        "zh": "矿井里很暗。"
+      },
+      {
+        "sense": "pron. 我的东西",
+        "en": "This blue coat is mine.",
+        "zh": "这件蓝外套是我的。"
+      },
+      {
+        "sense": "n. 地雷",
+        "en": "The road was closed because of a mine.",
+        "zh": "这条路因发现地雷而封闭了。"
+      },
+      {
+        "sense": "v. 采矿",
+        "en": "They mine coal in this area.",
+        "zh": "他们在这个地区采煤。"
+      }
     ]
   },
   {

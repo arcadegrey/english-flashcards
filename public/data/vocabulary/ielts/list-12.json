@@ -749,9 +749,9 @@
     "word": "pupil",
     "phonetic": "ˈpjuːpl",
     "pos": "n.",
-    "meaning": "学生/小学生",
-    "example": "The school has over 1,000 pupils.",
-    "exampleCn": "这所学校有1000多名学生。",
+    "meaning": "n. 学生；小学生；瞳孔",
+    "example": "Each pupil has a new book.",
+    "exampleCn": "每个学生都有一本新书。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -759,6 +759,18 @@
     "ieltsList": "12",
     "ieltsLists": [
       "12"
+    ],
+    "examples": [
+      {
+        "sense": "n. 学生",
+        "en": "Each pupil has a new book.",
+        "zh": "每个学生都有一本新书。"
+      },
+      {
+        "sense": "n. 瞳孔",
+        "en": "The pupil gets smaller in bright light.",
+        "zh": "瞳孔在强光下会缩小。"
+      }
     ]
   },
   {

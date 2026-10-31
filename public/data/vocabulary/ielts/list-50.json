@@ -183,10 +183,10 @@
     "id": 1048,
     "word": "sole",
     "phonetic": "/soʊl/",
-    "pos": "adj./n.",
+    "pos": "adj. / n.",
     "meaning": "唯一的/鞋底",
-    "example": "She was the sole winner of the prize./The sole of my shoe is worn out.",
-    "exampleCn": "她是这项奖的唯一获奖者。/我鞋子的鞋底磨坏了。",
+    "example": "She is the sole owner of the shop.",
+    "exampleCn": "她是这家商店的唯一店主。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -197,6 +197,18 @@
     "ieltsList": "50",
     "ieltsLists": [
       "50"
+    ],
+    "examples": [
+      {
+        "sense": "adj. 唯一的",
+        "en": "She is the sole owner of the shop.",
+        "zh": "她是这家商店的唯一店主。"
+      },
+      {
+        "sense": "n. 鞋底",
+        "en": "There is a hole in the sole.",
+        "zh": "鞋底有一个洞。"
+      }
     ]
   },
   {

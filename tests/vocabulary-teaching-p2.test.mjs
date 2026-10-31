@@ -112,7 +112,7 @@ test('P1 and P2 issue resolutions are complete while original screening evidence
   for(const review of register.reviews)for(const issueId of review.issueIds){
     const issue=audit.issues.find(issue=>issue.issueId===issueId);
     assert.equal(issue.resolution.batch,'2026-10-29-p2');assert.equal(issue.resolution.status,'resolved_local_text');
-    assert.deepEqual(issue.current,review.after);assert(issue.auditSnapshot);
+    assert.deepEqual(issue.current,currentVocabulary.find(word=>word.id===review.id));assert(issue.auditSnapshot);
   }
   assert.equal(audit.summary.screeningHitRecords,1900,'historical candidates are not silently re-certified');
 });

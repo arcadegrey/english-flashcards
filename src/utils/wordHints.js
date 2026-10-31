@@ -3,6 +3,9 @@ import { formatWordDefinition } from './wordHintPresentation.js';
 import { getReviewedWordHints } from '../data/reviewedWordNotes.js';
 import { CORE_WORD_NOTES, CORE_SYNONYM_GROUPS, CORE_WORD_FORMATIONS, WORD_NOTE_SOURCES } from '../data/coreWordNotes.js';
 import { vocabularyNoteKey } from '../../shared/vocabularyAliases.js';
+import multiSenseReview from '../../data/vocabulary-multi-sense-repair/reviews-2026-10-31.json' with { type: 'json' };
+
+const multiSenseNotes = new Map(multiSenseReview.reviews.map(review => [String(review.id), review]));
 
 const isSourceChecked = (section) => section?.review?.status === 'source-checked' &&
   /^\d{4}-\d{2}-\d{2}$/.test(section.review.checkedAt) &&
@@ -98,7 +101,12 @@ export const getWordHints = (word = {}) => {
 // Supplement existing comparisons and word families only for the reviewed record.
 // Historical snapshots and custom IDs retain their original hints.
 export const getCoreWordHints = (word = {}) => {
-  const hints = getExistingCoreWordHints(word);
+  let hints = getExistingCoreWordHints(word);
+  const multi = multiSenseNotes.get(String(word.id));
+  if (multi && ['word', 'pos', 'meaning', 'phonetic', 'example', 'exampleCn'].every(key => word[key] === multi.after[key])) {
+    hints = [{ label: '多义用法', scope: '按当前词条的常用义项区分', text: multi.note,
+      sources: multi.sourceIds.map(id => multiSenseReview.sources.find(source => source.id === id)) }, ...hints];
+  }
   const review = Object.hasOwn(commonSenses, String(word.id)) ? commonSenses[word.id] : null;
   return review && review.word === word.word && Object.entries(review.guards).every(([key, value]) => word[key] === value)
     ? [...hints, review.hint] : hints;

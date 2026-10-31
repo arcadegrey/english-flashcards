@@ -227,16 +227,28 @@
     "id": 771,
     "word": "hide",
     "phonetic": "/haɪd/",
-    "pos": "v.",
-    "meaning": "隐藏；躲藏；隐瞒",
-    "example": "Hide the money under the bed.",
-    "exampleCn": "把钱藏在床下。",
+    "pos": "v. / n.",
+    "meaning": "v. 隐藏；躲藏；隐瞒\nn. 兽皮",
+    "example": "Hide the gift under the bed.",
+    "exampleCn": "把礼物藏在床下面。",
     "category": "toefl",
     "categories": [
       "toefl"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "examples": [
+      {
+        "sense": "v. 隐藏",
+        "en": "Hide the gift under the bed.",
+        "zh": "把礼物藏在床下面。"
+      },
+      {
+        "sense": "n. 兽皮",
+        "en": "The hide is used to make leather.",
+        "zh": "这张兽皮用来制革。"
+      }
+    ]
   },
   {
     "id": 772,
@@ -1629,17 +1641,34 @@
   {
     "id": 850,
     "word": "wound",
-    "phonetic": "/wuːnd/",
-    "pos": "n./v.",
-    "meaning": "伤口/使受伤",
-    "example": "The wound healed quickly.",
-    "exampleCn": "伤口愈合很快。",
+    "phonetic": "/wuːnd/（伤口）；/waʊnd/（wind 的过去式）",
+    "pos": "n. / v.",
+    "meaning": "n. 伤口（/wuːnd/）\nv. 使受伤；伤害（/wuːnd/）\nwound 也是 wind（缠绕）的过去式和过去分词，此时读 /waʊnd/。",
+    "example": "The nurse cleaned the wound.",
+    "exampleCn": "护士清洗了伤口。",
     "category": "toefl",
     "categories": [
       "toefl"
     ],
     "level": "3",
-    "list": "4"
+    "list": "4",
+    "examples": [
+      {
+        "sense": "n. 伤口（/wuːnd/）",
+        "en": "The nurse cleaned the wound.",
+        "zh": "护士清洗了伤口。"
+      },
+      {
+        "sense": "v. 使受伤（/wuːnd/）",
+        "en": "The sharp glass may wound your hand.",
+        "zh": "锋利的玻璃可能划伤你的手。"
+      },
+      {
+        "sense": "v. 缠绕（wind 的过去式，/waʊnd/）",
+        "en": "He wound the string around the box.",
+        "zh": "他把细绳缠在盒子上。"
+      }
+    ]
   },
   {
     "id": 851,

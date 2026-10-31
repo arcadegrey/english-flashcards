@@ -531,10 +531,10 @@
     "id": 5024,
     "word": "sentence",
     "phonetic": "ˈsentəns",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "判决/句子",
-    "example": "He received a prison sentence of ten years.",
-    "exampleCn": "他被判十年监禁。",
+    "example": "Write one sentence about your family.",
+    "exampleCn": "写一句关于你家人的话。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -542,6 +542,23 @@
     "ieltsList": "45",
     "ieltsLists": [
       "45"
+    ],
+    "examples": [
+      {
+        "sense": "n. 句子",
+        "en": "Write one sentence about your family.",
+        "zh": "写一句关于你家人的话。"
+      },
+      {
+        "sense": "n. 判决；刑罚",
+        "en": "He received a short prison sentence.",
+        "zh": "他被判了一段较短的监禁刑期。"
+      },
+      {
+        "sense": "v. 判刑",
+        "en": "The judge sentenced him to prison.",
+        "zh": "法官判他入狱。"
+      }
     ]
   },
   {
@@ -905,10 +922,10 @@
     "id": 5046,
     "word": "fine",
     "phonetic": "faɪn",
-    "pos": "n./adj.",
-    "meaning": "罚款/好的/精细的",
-    "example": "He had to pay a fine for parking illegally.",
-    "exampleCn": "他因违章停车不得不缴纳罚款。",
+    "pos": "adj. / n. / v.",
+    "meaning": "罚款/好的/精细的\nv. 处以罚款",
+    "example": "She feels fine today.",
+    "exampleCn": "她今天感觉不错。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -916,6 +933,28 @@
     "ieltsList": "45",
     "ieltsLists": [
       "45"
+    ],
+    "examples": [
+      {
+        "sense": "adj. 好的；身体不错的",
+        "en": "She feels fine today.",
+        "zh": "她今天感觉不错。"
+      },
+      {
+        "sense": "n. 罚款",
+        "en": "He paid a fine for parking there.",
+        "zh": "他因在那里停车而交了罚款。"
+      },
+      {
+        "sense": "adj. 细的",
+        "en": "Use a brush with a fine tip.",
+        "zh": "用一支笔尖很细的画笔。"
+      },
+      {
+        "sense": "v. 处以罚款",
+        "en": "They fined him for speeding.",
+        "zh": "他们因他超速而罚了款。"
+      }
     ]
   },
   {

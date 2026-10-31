@@ -401,10 +401,10 @@
     "id": 2235,
     "word": "bound",
     "phonetic": "/baʊnd/",
-    "pos": "adj./v./n.",
+    "pos": "adj. / v. / n.",
     "meaning": "一定会的/受约束的/跳跃/边界",
-    "example": "The project is bound to succeed with enough support.",
-    "exampleCn": "有足够支持，这个项目一定会成功。",
+    "example": "You are bound to make mistakes.",
+    "exampleCn": "你难免会犯错。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -415,6 +415,28 @@
     "ieltsList": "44",
     "ieltsLists": [
       "44"
+    ],
+    "examples": [
+      {
+        "sense": "adj. 一定会的（be bound to）",
+        "en": "You are bound to make mistakes.",
+        "zh": "你难免会犯错。"
+      },
+      {
+        "sense": "v. 捆绑（bind 的过去分词）",
+        "en": "His hands were bound with rope.",
+        "zh": "他的双手被绳子捆住了。"
+      },
+      {
+        "sense": "v. 跳跃",
+        "en": "The dog will bound across the field.",
+        "zh": "那只狗会跳着跑过田野。"
+      },
+      {
+        "sense": "n. 界限（常用复数 bounds）",
+        "en": "Please keep within these bounds.",
+        "zh": "请不要超出这些界限。"
+      }
     ]
   },
   {
@@ -501,10 +523,10 @@
     "id": 2350,
     "word": "court",
     "phonetic": "/kɔːrt/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "法院/球场/宫廷/追求",
-    "example": "The case was settled in court.",
-    "exampleCn": "这个案件在法庭上解决了。",
+    "example": "The judge works in this court.",
+    "exampleCn": "这位法官在这家法院工作。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -515,6 +537,28 @@
     "ieltsList": "44",
     "ieltsLists": [
       "44"
+    ],
+    "examples": [
+      {
+        "sense": "n. 法院",
+        "en": "The judge works in this court.",
+        "zh": "这位法官在这家法院工作。"
+      },
+      {
+        "sense": "n. 球场",
+        "en": "The tennis court is empty.",
+        "zh": "网球场上没有人。"
+      },
+      {
+        "sense": "n. 宫廷",
+        "en": "She served at the royal court.",
+        "zh": "她曾在王室宫廷任职。"
+      },
+      {
+        "sense": "v. 追求（较正式）",
+        "en": "He hoped to court her.",
+        "zh": "他希望追求她。"
+      }
     ]
   },
   {

@@ -3,10 +3,10 @@
     "id": 218,
     "word": "bear",
     "phonetic": "/beə(r)/",
-    "pos": "v./n.",
+    "pos": "v. / n.",
     "meaning": "承受；忍受；生（孩子）；熊",
-    "example": "I can't bear the pain.",
-    "exampleCn": "我忍受不了这疼痛。",
+    "example": "I cannot bear this noise.",
+    "exampleCn": "我受不了这种噪声。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -19,6 +19,23 @@
     "ieltsLists": [
       "8",
       "51"
+    ],
+    "examples": [
+      {
+        "sense": "v. 忍受",
+        "en": "I cannot bear this noise.",
+        "zh": "我受不了这种噪声。"
+      },
+      {
+        "sense": "n. 熊",
+        "en": "A bear crossed the road.",
+        "zh": "一头熊穿过了马路。"
+      },
+      {
+        "sense": "v. 生育（较正式）",
+        "en": "She will bear a child in May.",
+        "zh": "她将在五月生孩子。"
+      }
     ]
   },
   {
@@ -102,10 +119,10 @@
     "id": 1482,
     "word": "seal",
     "phonetic": "/siːl/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "海豹/印章/封条/密封",
-    "example": "The container was sealed to keep the samples clean.",
-    "exampleCn": "容器被密封起来以保持样本洁净。",
+    "example": "The seal swam near the boat.",
+    "exampleCn": "那只海豹在船边游动。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -116,6 +133,28 @@
     "ieltsList": "8",
     "ieltsLists": [
       "8"
+    ],
+    "examples": [
+      {
+        "sense": "n. 海豹",
+        "en": "The seal swam near the boat.",
+        "zh": "那只海豹在船边游动。"
+      },
+      {
+        "sense": "n. 印章",
+        "en": "The letter bears an official seal.",
+        "zh": "这封信盖有官方印章。"
+      },
+      {
+        "sense": "n. 封条；密封层",
+        "en": "Do not break the seal.",
+        "zh": "不要破坏封条。"
+      },
+      {
+        "sense": "v. 密封",
+        "en": "Please seal the bag tightly.",
+        "zh": "请把袋子封严。"
+      }
     ]
   },
   {
@@ -143,9 +182,9 @@
     "word": "trunk",
     "phonetic": "/trʌŋk/",
     "pos": "n.",
-    "meaning": "树干/躯干/行李箱",
-    "example": "The trunk of the tree stores water during dry seasons.",
-    "exampleCn": "树干在旱季储存水分。",
+    "meaning": "树干/躯干/行李箱\nn. 象鼻；汽车后备箱（美式，英式常说 boot）",
+    "example": "The tree has a thick trunk.",
+    "exampleCn": "这棵树的树干很粗。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -157,6 +196,28 @@
     "ieltsLists": [
       "6",
       "8"
+    ],
+    "examples": [
+      {
+        "sense": "n. 树干",
+        "en": "The tree has a thick trunk.",
+        "zh": "这棵树的树干很粗。"
+      },
+      {
+        "sense": "n. 躯干",
+        "en": "Keep your trunk straight during this exercise.",
+        "zh": "做这个动作时保持躯干挺直。"
+      },
+      {
+        "sense": "n. 汽车后备箱（美式）",
+        "en": "Put the bags in the trunk.",
+        "zh": "把包放进汽车后备箱里。"
+      },
+      {
+        "sense": "n. 象鼻",
+        "en": "The elephant lifted its trunk.",
+        "zh": "大象抬起了鼻子。"
+      }
     ]
   },
   {

@@ -216,10 +216,10 @@
     "id": 1171,
     "word": "scale",
     "phonetic": "/skeɪl/",
-    "pos": "n./v.",
-    "meaning": "规模；刻度/攀登；测量",
-    "example": "The company expanded on a global scale.",
-    "exampleCn": "公司以全球规模扩张了。",
+    "pos": "n. / v.",
+    "meaning": "规模；刻度/攀登；测量\nv. 按比例缩放（scale down/up）",
+    "example": "We cannot work on this scale.",
+    "exampleCn": "我们无法以这种规模开展工作。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -230,6 +230,28 @@
     "ieltsList": "14",
     "ieltsLists": [
       "14"
+    ],
+    "examples": [
+      {
+        "sense": "n. 规模",
+        "en": "We cannot work on this scale.",
+        "zh": "我们无法以这种规模开展工作。"
+      },
+      {
+        "sense": "n. 刻度",
+        "en": "Read the scale on the thermometer.",
+        "zh": "读出温度计上的刻度。"
+      },
+      {
+        "sense": "v. 攀登",
+        "en": "They tried to scale the wall.",
+        "zh": "他们试图翻越这堵墙。"
+      },
+      {
+        "sense": "v. 按比例缩放",
+        "en": "Please scale the picture down.",
+        "zh": "请把这张图片按比例缩小。"
+      }
     ]
   },
   {
@@ -746,8 +768,8 @@
     "phonetic": "miːn",
     "pos": "v. / n. / adj.",
     "meaning": "v. 意思是；意味着；意指；打算\nn. 平均数；平均值\nadj. 吝啬的；刻薄的；平均的",
-    "example": "What does this word mean?",
-    "exampleCn": "这个词是什么意思？",
+    "example": "What does this sign mean?",
+    "exampleCn": "这个标志是什么意思？",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -755,6 +777,28 @@
     "ieltsList": "14",
     "ieltsLists": [
       "14"
+    ],
+    "examples": [
+      {
+        "sense": "v. 意思是",
+        "en": "What does this sign mean?",
+        "zh": "这个标志是什么意思？"
+      },
+      {
+        "sense": "n. 平均数",
+        "en": "The mean of two and four is three.",
+        "zh": "二和四的平均数是三。"
+      },
+      {
+        "sense": "adj. 刻薄的",
+        "en": "He was mean to his little sister.",
+        "zh": "他对妹妹很刻薄。"
+      },
+      {
+        "sense": "adj. 吝啬的",
+        "en": "He is mean with money.",
+        "zh": "他花钱很吝啬。"
+      }
     ]
   },
   {
@@ -882,8 +926,8 @@
     "phonetic": "ˈteɪbl",
     "pos": "n.",
     "meaning": "表格/桌子",
-    "example": "The results are presented in the table below.",
-    "exampleCn": "结果列在下表中。",
+    "example": "The keys are on the table.",
+    "exampleCn": "钥匙在桌上。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -891,6 +935,18 @@
     "ieltsList": "14",
     "ieltsLists": [
       "14"
+    ],
+    "examples": [
+      {
+        "sense": "n. 桌子",
+        "en": "The keys are on the table.",
+        "zh": "钥匙在桌上。"
+      },
+      {
+        "sense": "n. 表格",
+        "en": "This table shows our test scores.",
+        "zh": "这张表列出了我们的考试分数。"
+      }
     ]
   },
   {

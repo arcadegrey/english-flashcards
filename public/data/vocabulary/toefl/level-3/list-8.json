@@ -617,11 +617,11 @@
   {
     "id": 1170,
     "word": "object",
-    "phonetic": "/ˈɑːbdʒɪkt/;/əbˈdʒekt/",
-    "pos": "n./v.",
+    "phonetic": "/ˈɒbdʒɪkt/（名词）；/əbˈdʒekt/（动词）",
+    "pos": "n. / v.",
     "meaning": "物体；目标/反对",
-    "example": "Some students objected to the new rule.",
-    "exampleCn": "一些学生反对这项新规定。",
+    "example": "Please move this heavy object.",
+    "exampleCn": "请把这个重物挪开。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -632,16 +632,33 @@
     "ieltsList": "13",
     "ieltsLists": [
       "13"
+    ],
+    "examples": [
+      {
+        "sense": "n. 物体（/ˈɒbdʒekt/）",
+        "en": "Please move this heavy object.",
+        "zh": "请把这个重物挪开。"
+      },
+      {
+        "sense": "n. 目标（较正式）",
+        "en": "Our main object is to save time.",
+        "zh": "我们的主要目标是节省时间。"
+      },
+      {
+        "sense": "v. 反对（/əbˈdʒekt/）",
+        "en": "I object to this unfair rule.",
+        "zh": "我反对这条不公平的规定。"
+      }
     ]
   },
   {
     "id": 1171,
     "word": "scale",
     "phonetic": "/skeɪl/",
-    "pos": "n./v.",
-    "meaning": "规模；刻度/攀登；测量",
-    "example": "The company expanded on a global scale.",
-    "exampleCn": "公司以全球规模扩张了。",
+    "pos": "n. / v.",
+    "meaning": "规模；刻度/攀登；测量\nv. 按比例缩放（scale down/up）",
+    "example": "We cannot work on this scale.",
+    "exampleCn": "我们无法以这种规模开展工作。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -652,6 +669,28 @@
     "ieltsList": "14",
     "ieltsLists": [
       "14"
+    ],
+    "examples": [
+      {
+        "sense": "n. 规模",
+        "en": "We cannot work on this scale.",
+        "zh": "我们无法以这种规模开展工作。"
+      },
+      {
+        "sense": "n. 刻度",
+        "en": "Read the scale on the thermometer.",
+        "zh": "读出温度计上的刻度。"
+      },
+      {
+        "sense": "v. 攀登",
+        "en": "They tried to scale the wall.",
+        "zh": "他们试图翻越这堵墙。"
+      },
+      {
+        "sense": "v. 按比例缩放",
+        "en": "Please scale the picture down.",
+        "zh": "请把这张图片按比例缩小。"
+      }
     ]
   },
   {
@@ -1113,10 +1152,10 @@
     "id": 1198,
     "word": "stock",
     "phonetic": "/stɑːk/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "库存；股票/储备",
-    "example": "The store keeps a large stock of fresh fruit.",
-    "exampleCn": "这家商店储备了大量新鲜水果。",
+    "example": "The shop has no milk in stock.",
+    "exampleCn": "这家店没有牛奶库存。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -1127,6 +1166,23 @@
     "ieltsList": "42",
     "ieltsLists": [
       "42"
+    ],
+    "examples": [
+      {
+        "sense": "n. 库存",
+        "en": "The shop has no milk in stock.",
+        "zh": "这家店没有牛奶库存。"
+      },
+      {
+        "sense": "n. 股票",
+        "en": "She bought stock in the company.",
+        "zh": "她买了这家公司的股票。"
+      },
+      {
+        "sense": "v. 备有；储备",
+        "en": "This shop stocks fresh fruit.",
+        "zh": "这家店备有新鲜水果。"
+      }
     ]
   },
   {

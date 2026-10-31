@@ -1519,10 +1519,10 @@
     "id": 2350,
     "word": "court",
     "phonetic": "/kɔːrt/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "法院/球场/宫廷/追求",
-    "example": "The case was settled in court.",
-    "exampleCn": "这个案件在法庭上解决了。",
+    "example": "The judge works in this court.",
+    "exampleCn": "这位法官在这家法院工作。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -1533,6 +1533,28 @@
     "ieltsList": "44",
     "ieltsLists": [
       "44"
+    ],
+    "examples": [
+      {
+        "sense": "n. 法院",
+        "en": "The judge works in this court.",
+        "zh": "这位法官在这家法院工作。"
+      },
+      {
+        "sense": "n. 球场",
+        "en": "The tennis court is empty.",
+        "zh": "网球场上没有人。"
+      },
+      {
+        "sense": "n. 宫廷",
+        "en": "She served at the royal court.",
+        "zh": "她曾在王室宫廷任职。"
+      },
+      {
+        "sense": "v. 追求（较正式）",
+        "en": "He hoped to court her.",
+        "zh": "他希望追求她。"
+      }
     ]
   },
   {

@@ -2,7 +2,7 @@
   "auditDate": "2026-10-29",
   "input": "public/data/vocabulary.json",
   "inputSha256": "eb08780f5f05aa663c2b67121a358f9429b4c0450c6ced98debf3594f70df752",
-  "currentSourceSha256": "0dd67cbe46ea45012baad0ab598c6594bb5073be6b229208754167551befbb08",
+  "currentSourceSha256": "c2a7ade0fe5774f96e7bd737edf74da8bdc45fbf3ff0b16f531456b257f7328e",
   "screeningAppliesTo": "captured pre-short-repair snapshot; counts are historical candidates, not errors in the new examples",
   "repairStatus": {
     "batch": "2026-10-29-short-examples",
@@ -743,14 +743,26 @@
         "id": 7308,
         "word": "pretty",
         "phonetic": "'priti",
-        "pos": "adv./adj.",
+        "pos": "adj. / adv.",
         "meaning": "a. 漂亮的, 优美的, 机灵的, 狡猾的, 恰当的\\nadv. 相当, 颇",
-        "example": "She wore a pretty blue hat.",
-        "exampleCn": "她戴了一顶漂亮的蓝色帽子。",
+        "example": "That is a pretty little garden.",
+        "exampleCn": "那是一个漂亮的小花园。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "adj. 漂亮的",
+            "en": "That is a pretty little garden.",
+            "zh": "那是一个漂亮的小花园。"
+          },
+          {
+            "sense": "adv. 相当（非正式）",
+            "en": "The test was pretty easy.",
+            "zh": "这次考试相当容易。"
+          }
         ]
       },
       "resolution": {
@@ -2696,14 +2708,26 @@
         "id": 7235,
         "word": "patient",
         "phonetic": "'peiʃәnt",
-        "pos": "n./adj.",
+        "pos": "n. / adj.",
         "meaning": "n. 病人, 承受者\\na. 忍耐的, 容忍的, 有耐性的, 坚忍的",
-        "example": "Please be patient while we check your ticket.",
-        "exampleCn": "我们检查您的票时，请耐心等候。",
+        "example": "The patient is resting now.",
+        "exampleCn": "病人现在正在休息。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "n. 病人",
+            "en": "The patient is resting now.",
+            "zh": "病人现在正在休息。"
+          },
+          {
+            "sense": "adj. 有耐心的",
+            "en": "Please be patient with the children.",
+            "zh": "请对孩子们耐心一点。"
+          }
         ]
       },
       "resolution": {
@@ -2906,14 +2930,26 @@
         "id": 7373,
         "word": "safe",
         "phonetic": "seif",
-        "pos": "n./adj.",
+        "pos": "adj. / n.",
         "meaning": "n. 保险箱, 冷藏室\\na. 安全的, 可靠的, 平安的, 稳健的, 有把握的",
-        "example": "Keep your money in a safe place.",
-        "exampleCn": "把钱放在安全的地方。",
+        "example": "Your bags are safe here.",
+        "exampleCn": "你的包放在这里很安全。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "adj. 安全的",
+            "en": "Your bags are safe here.",
+            "zh": "你的包放在这里很安全。"
+          },
+          {
+            "sense": "n. 保险箱",
+            "en": "Put the money in the safe.",
+            "zh": "把钱放进保险箱里。"
+          }
         ]
       },
       "resolution": {
@@ -3081,14 +3117,31 @@
         "id": 7483,
         "word": "pool",
         "phonetic": "pu:l",
-        "pos": "v./n.",
-        "meaning": "n. 池, 水塘, 石油层, 联营\\nvt. 合伙经营, 共享, 采掘, 汇聚成\\nvi. 汇合成塘, 淤积, 联营",
-        "example": "The children played in the pool.",
-        "exampleCn": "孩子们在游泳池里玩耍。",
+        "pos": "n. / v.",
+        "meaning": "n. 池, 水塘, 石油层, 联营\\nvt. 合伙经营, 共享, 采掘, 汇聚成\\nvi. 汇合成塘, 淤积, 联营\nn. 台球（pool）",
+        "example": "The pool is full of children.",
+        "exampleCn": "游泳池里有很多孩子。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "n. 水池；游泳池",
+            "en": "The pool is full of children.",
+            "zh": "游泳池里有很多孩子。"
+          },
+          {
+            "sense": "n. 台球",
+            "en": "We play pool after work.",
+            "zh": "我们下班后打台球。"
+          },
+          {
+            "sense": "v. 汇集；共享",
+            "en": "We can pool our money.",
+            "zh": "我们可以把钱凑在一起。"
+          }
         ]
       },
       "resolution": {
@@ -6796,14 +6849,36 @@
         "id": 7572,
         "word": "sharp",
         "phonetic": "ʃɑ:p",
-        "pos": "adv./n./adj.",
-        "meaning": "n. 半升音调, 利刃, 骗子\\na. 锋利的, 明显的, 敏锐的, 急剧的, 尖刻的, 严厉的, 刺耳的, 精明的\\nadv. 锐利地, 急速地",
-        "example": "Be careful with that sharp knife.",
-        "exampleCn": "小心那把锋利的刀。",
+        "pos": "adj. / adv. / n.",
+        "meaning": "n. 半升音调, 利刃, 骗子\\na. 锋利的, 明显的, 敏锐的, 急剧的, 尖刻的, 严厉的, 刺耳的, 精明的\\nadv. 锐利地, 急速地\nadv. 正好在某时刻；整（用于时间之后）",
+        "example": "This knife is very sharp.",
+        "exampleCn": "这把刀很锋利。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "adj. 锋利的",
+            "en": "This knife is very sharp.",
+            "zh": "这把刀很锋利。"
+          },
+          {
+            "sense": "adj. 敏锐的",
+            "en": "She has a sharp mind.",
+            "zh": "她思维敏锐。"
+          },
+          {
+            "sense": "adv. 准时；整",
+            "en": "The train leaves at six sharp.",
+            "zh": "火车六点整发车。"
+          },
+          {
+            "sense": "n. 升半音的音符",
+            "en": "Play an F sharp.",
+            "zh": "弹一个升 F 音。"
+          }
         ]
       },
       "resolution": {
@@ -7689,13 +7764,35 @@
         "id": 5488,
         "word": "still",
         "phonetic": "stil",
-        "pos": "conj./n./v./adj./adv.",
+        "pos": "adv. / adj. / n. / conj. / v.",
         "meaning": "n. 蒸馏室, 寂静, 剧照\\nv. 蒸馏, (使)平静, (使)静止\\na. 静止的, 不动的, 静寂的, 不起泡的, 静物摄影的\\nadv. 仍然, 更, 静止地\\nconj. 然而, 但是",
-        "example": "Please sit still for a moment.",
-        "exampleCn": "请坐着别动一会儿。",
+        "example": "He is still at school.",
+        "exampleCn": "他仍在上学。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "adv. 仍然",
+            "en": "He is still at school.",
+            "zh": "他仍在上学。"
+          },
+          {
+            "sense": "adj. 静止的",
+            "en": "Keep the camera still.",
+            "zh": "保持相机不动。"
+          },
+          {
+            "sense": "n. 电影剧照",
+            "en": "This is a still from the film.",
+            "zh": "这是那部电影的一张剧照。"
+          },
+          {
+            "sense": "adv. 尽管如此",
+            "en": "Still, we decided to try.",
+            "zh": "尽管如此，我们还是决定试一试。"
+          }
         ]
       },
       "resolution": {

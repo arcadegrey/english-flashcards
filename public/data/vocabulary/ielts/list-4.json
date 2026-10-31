@@ -439,13 +439,25 @@
     "phonetic": "pleɪt",
     "pos": "n.",
     "meaning": "板块/盘子",
-    "example": "The Pacific Plate is moving slowly westward.",
-    "exampleCn": "太平洋板块正缓慢向西移动。",
+    "example": "Put the bread on this plate.",
+    "exampleCn": "把面包放在这个盘子上。",
     "category": "ielts",
     "categories": [
       "ielts"
     ],
-    "ieltsList": "4"
+    "ieltsList": "4",
+    "examples": [
+      {
+        "sense": "n. 盘子",
+        "en": "Put the bread on this plate.",
+        "zh": "把面包放在这个盘子上。"
+      },
+      {
+        "sense": "n. 地壳板块",
+        "en": "The two plates move slowly apart.",
+        "zh": "这两个板块正缓慢地分离。"
+      }
+    ]
   },
   {
     "id": 3670,
@@ -709,8 +721,8 @@
     "phonetic": "sprɪŋ",
     "pos": "n.",
     "meaning": "泉水/春天/弹簧",
-    "example": "The village gets its water from a natural spring.",
-    "exampleCn": "这个村庄从一处天然泉水中取水。",
+    "example": "Spring brings warm days.",
+    "exampleCn": "春天带来温暖的日子。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -719,6 +731,23 @@
     "ieltsLists": [
       "4",
       "24"
+    ],
+    "examples": [
+      {
+        "sense": "n. 春天",
+        "en": "Spring brings warm days.",
+        "zh": "春天带来温暖的日子。"
+      },
+      {
+        "sense": "n. 泉水；泉",
+        "en": "This spring has clear water.",
+        "zh": "这口泉的水很清澈。"
+      },
+      {
+        "sense": "n. 弹簧",
+        "en": "The spring inside the pen is broken.",
+        "zh": "笔里的弹簧坏了。"
+      }
     ]
   },
   {

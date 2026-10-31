@@ -2,7 +2,7 @@
   "auditDate": "2026-10-29",
   "input": "public/data/vocabulary.json",
   "inputSha256": "ae4abc959df187f198e54477dc7a69a4f7baa283f10f07854915ba74c1a4c163",
-  "currentSourceSha256": "0dd67cbe46ea45012baad0ab598c6594bb5073be6b229208754167551befbb08",
+  "currentSourceSha256": "c2a7ade0fe5774f96e7bd737edf74da8bdc45fbf3ff0b16f531456b257f7328e",
   "screeningAppliesTo": "captured pre-P1/P2 audit snapshot, not the repaired canonical examples",
   "scope": "Reported four repaired IDs excluded; all other active entries screened, bounded candidates reviewed. No runtime or vocabulary edits.",
   "reviewer": "single-model editorial review; not independent human language review",
@@ -450,13 +450,30 @@
         "id": 5497,
         "word": "school",
         "phonetic": "sku:l",
-        "pos": "n./v.",
+        "pos": "n. / v.",
         "meaning": "n. 学校, 鱼群, 门派, 学派\\nvt. 教育, 训练, 培养\\nvi. 成群地游",
-        "example": "The school was founded in 1900.",
-        "exampleCn": "学校始建于1900年。",
+        "example": "The school is near my home.",
+        "exampleCn": "学校在我家附近。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "n. 学校",
+            "en": "The school is near my home.",
+            "zh": "学校在我家附近。"
+          },
+          {
+            "sense": "n. 鱼群",
+            "en": "A school of fish swam past.",
+            "zh": "一群鱼游了过去。"
+          },
+          {
+            "sense": "v. 训练（较正式）",
+            "en": "She schooled herself to stay calm.",
+            "zh": "她训练自己保持冷静。"
+          }
         ]
       },
       "auditSnapshot": {
@@ -1140,13 +1157,40 @@
         "id": 5569,
         "word": "set",
         "phonetic": "set",
-        "pos": "n./v./adj.",
-        "meaning": "n. 日落, 同伙, 组合, 集合, 装置\\nvt. 放, 安置, 放置, 设定, 使凝结, 点燃, 确定, 点缀, 使就位, 树立, 分配, 调整\\nvi. 日落, 凝固, 定型, 搁住, 结果, 适合\\na. 决心的, 规定的, 故意的",
-        "example": "A set of books.",
-        "exampleCn": "一套书。",
+        "pos": "n. / v. / adj.",
+        "meaning": "n. 一套；一组；集合；装置\nv. 放；安置；设定；确定；使就位；日落；凝固\nadj. 固定的；规定的；准备好的",
+        "example": "This set of cups is new.",
+        "exampleCn": "这套杯子是新的。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "n. 一套；一组",
+            "en": "This set of cups is new.",
+            "zh": "这套杯子是新的。"
+          },
+          {
+            "sense": "v. 放置",
+            "en": "Set the bag by the door.",
+            "zh": "把包放在门旁边。"
+          },
+          {
+            "sense": "v. 设定",
+            "en": "Please set the alarm for six.",
+            "zh": "请把闹钟设为六点。"
+          },
+          {
+            "sense": "v. 日落",
+            "en": "The sun will set soon.",
+            "zh": "太阳很快就要落山了。"
+          },
+          {
+            "sense": "v. 凝固",
+            "en": "The jelly will set in the fridge.",
+            "zh": "果冻会在冰箱里凝固。"
+          }
         ]
       },
       "auditSnapshot": {
@@ -3482,14 +3526,26 @@
         "id": 7501,
         "word": "novel",
         "phonetic": "'nɒvl",
-        "pos": "adj./n.",
+        "pos": "n. / adj.",
         "meaning": "n. 小说, 长篇故事\\na. 新奇的, 异常的",
-        "example": "The computer produced a completely novel proof of a well-known theorem.",
-        "exampleCn": "计算机为一个众所周知的定理提供了一个全新的证明。",
+        "example": "This novel has a happy ending.",
+        "exampleCn": "这部小说有一个圆满的结局。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "n. 小说",
+            "en": "This novel has a happy ending.",
+            "zh": "这部小说有一个圆满的结局。"
+          },
+          {
+            "sense": "adj. 新颖的",
+            "en": "A novel idea saved us time.",
+            "zh": "一个新颖的想法为我们节省了时间。"
+          }
         ]
       },
       "auditSnapshot": {
@@ -5572,13 +5628,30 @@
         "id": 5572,
         "word": "long",
         "phonetic": "lɒŋ",
-        "pos": "adj./v./adv./n.",
+        "pos": "adj. / adv. / v. / n.",
         "meaning": "a. 长的, 长久的, 冗长的, 做多头的\\nvi. 渴望, 热望, 极想\\nadv. 长久, 始终\\nn. 长时间, 长信号, 长整型\\n[计] 长, 长整型",
-        "example": "This road is long.",
-        "exampleCn": "这条路很长。",
+        "example": "This bridge is very long.",
+        "exampleCn": "这座桥很长。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "adj. 长的",
+            "en": "This bridge is very long.",
+            "zh": "这座桥很长。"
+          },
+          {
+            "sense": "adv. 长时间地",
+            "en": "Have you been waiting long?",
+            "zh": "你已经等很久了吗？"
+          },
+          {
+            "sense": "v. 渴望",
+            "en": "I long to see my family.",
+            "zh": "我渴望见到家人。"
+          }
         ]
       },
       "auditSnapshot": {
@@ -7543,14 +7616,31 @@
         "id": 6158,
         "word": "kid",
         "phonetic": "kid",
-        "pos": "n./adj./v.",
+        "pos": "n. / v. / adj.",
         "meaning": "n. 小山羊, 小山羊肉, 小孩, 欺骗\\na. 小山羊皮制的\\nv. 哄骗, 嘲弄",
-        "example": "The kid is playing in the garden.",
-        "exampleCn": "那个孩子正在花园里玩。",
+        "example": "The kid is learning to swim.",
+        "exampleCn": "那个孩子正在学游泳。",
         "category": "daily",
         "categories": [
           "daily",
           "cet4"
+        ],
+        "examples": [
+          {
+            "sense": "n. 小孩",
+            "en": "The kid is learning to swim.",
+            "zh": "那个孩子正在学游泳。"
+          },
+          {
+            "sense": "n. 小山羊",
+            "en": "A young goat is called a kid.",
+            "zh": "小山羊叫作 kid。"
+          },
+          {
+            "sense": "v. 开玩笑",
+            "en": "I am only kidding.",
+            "zh": "我只是开个玩笑。"
+          }
         ]
       },
       "auditSnapshot": {
@@ -17293,9 +17383,9 @@
         "word": "trunk",
         "phonetic": "/trʌŋk/",
         "pos": "n.",
-        "meaning": "树干/躯干/行李箱",
-        "example": "The trunk of the tree stores water during dry seasons.",
-        "exampleCn": "树干在旱季储存水分。",
+        "meaning": "树干/躯干/行李箱\nn. 象鼻；汽车后备箱（美式，英式常说 boot）",
+        "example": "The tree has a thick trunk.",
+        "exampleCn": "这棵树的树干很粗。",
         "category": "toefl",
         "categories": [
           "toefl",
@@ -17307,6 +17397,28 @@
         "ieltsLists": [
           "6",
           "8"
+        ],
+        "examples": [
+          {
+            "sense": "n. 树干",
+            "en": "The tree has a thick trunk.",
+            "zh": "这棵树的树干很粗。"
+          },
+          {
+            "sense": "n. 躯干",
+            "en": "Keep your trunk straight during this exercise.",
+            "zh": "做这个动作时保持躯干挺直。"
+          },
+          {
+            "sense": "n. 汽车后备箱（美式）",
+            "en": "Put the bags in the trunk.",
+            "zh": "把包放进汽车后备箱里。"
+          },
+          {
+            "sense": "n. 象鼻",
+            "en": "The elephant lifted its trunk.",
+            "zh": "大象抬起了鼻子。"
+          }
         ]
       },
       "syntaxCue": {
@@ -23298,13 +23410,35 @@
         "id": 5451,
         "word": "like",
         "phonetic": "laik",
-        "pos": "v. / prep. / adj. / n. / adv.",
+        "pos": "v. / prep. / n. / adj. / adv.",
         "meaning": "v. 喜欢；想要（常用 would like）\nprep. 像；如同；例如\nadj. 相似的；同样的\nn. 喜好；同样的人或物\nadv. 大约（非正式）；可能（方言用法）",
-        "example": "I like reading before bed.",
-        "exampleCn": "我喜欢在睡前阅读。",
+        "example": "I like these songs.",
+        "exampleCn": "我喜欢这些歌。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "v. 喜欢",
+            "en": "I like these songs.",
+            "zh": "我喜欢这些歌。"
+          },
+          {
+            "sense": "prep. 像",
+            "en": "This cloud looks like a rabbit.",
+            "zh": "这朵云看起来像一只兔子。"
+          },
+          {
+            "sense": "v. 想要（would like）",
+            "en": "I would like some water.",
+            "zh": "我想要一些水。"
+          },
+          {
+            "sense": "n. 喜好（常用复数 likes）",
+            "en": "Tell me your likes and dislikes.",
+            "zh": "告诉我你的喜好和厌恶。"
+          }
         ]
       },
       "syntaxCue": {
@@ -23895,13 +24029,35 @@
         "id": 5465,
         "word": "well",
         "phonetic": "wel",
-        "pos": "adv.",
+        "pos": "adv. / adj. / n. / interj.",
         "meaning": "n. 井, 泉水, 源泉, 好\\nv. 涌出\\na. 健康的, 良好的, 适宜的, 恰当的\\nadv. 很好地, 适当地, 好意地, 很, 完全\\ninterj. 好啦",
-        "example": "She was a well of information.",
-        "exampleCn": "她是个消息灵通的人。",
+        "example": "She reads very well.",
+        "exampleCn": "她读得很好。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "adv. 好地",
+            "en": "She reads very well.",
+            "zh": "她读得很好。"
+          },
+          {
+            "sense": "adj. 身体好的",
+            "en": "I feel well again.",
+            "zh": "我身体又好了。"
+          },
+          {
+            "sense": "n. 井",
+            "en": "The well is full of water.",
+            "zh": "井里满是水。"
+          },
+          {
+            "sense": "interj. 好了；那么",
+            "en": "Well, what do you think?",
+            "zh": "那么，你怎么看？"
+          }
         ]
       },
       "syntaxCue": {
@@ -24618,13 +24774,35 @@
         "id": 5488,
         "word": "still",
         "phonetic": "stil",
-        "pos": "conj./n./v./adj./adv.",
+        "pos": "adv. / adj. / n. / conj. / v.",
         "meaning": "n. 蒸馏室, 寂静, 剧照\\nv. 蒸馏, (使)平静, (使)静止\\na. 静止的, 不动的, 静寂的, 不起泡的, 静物摄影的\\nadv. 仍然, 更, 静止地\\nconj. 然而, 但是",
-        "example": "Please sit still for a moment.",
-        "exampleCn": "请坐着别动一会儿。",
+        "example": "He is still at school.",
+        "exampleCn": "他仍在上学。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "adv. 仍然",
+            "en": "He is still at school.",
+            "zh": "他仍在上学。"
+          },
+          {
+            "sense": "adj. 静止的",
+            "en": "Keep the camera still.",
+            "zh": "保持相机不动。"
+          },
+          {
+            "sense": "n. 电影剧照",
+            "en": "This is a still from the film.",
+            "zh": "这是那部电影的一张剧照。"
+          },
+          {
+            "sense": "adv. 尽管如此",
+            "en": "Still, we decided to try.",
+            "zh": "尽管如此，我们还是决定试一试。"
+          }
         ]
       },
       "syntaxCue": {
@@ -27205,13 +27383,40 @@
         "id": 5569,
         "word": "set",
         "phonetic": "set",
-        "pos": "n./v./adj.",
-        "meaning": "n. 日落, 同伙, 组合, 集合, 装置\\nvt. 放, 安置, 放置, 设定, 使凝结, 点燃, 确定, 点缀, 使就位, 树立, 分配, 调整\\nvi. 日落, 凝固, 定型, 搁住, 结果, 适合\\na. 决心的, 规定的, 故意的",
-        "example": "A set of books.",
-        "exampleCn": "一套书。",
+        "pos": "n. / v. / adj.",
+        "meaning": "n. 一套；一组；集合；装置\nv. 放；安置；设定；确定；使就位；日落；凝固\nadj. 固定的；规定的；准备好的",
+        "example": "This set of cups is new.",
+        "exampleCn": "这套杯子是新的。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "n. 一套；一组",
+            "en": "This set of cups is new.",
+            "zh": "这套杯子是新的。"
+          },
+          {
+            "sense": "v. 放置",
+            "en": "Set the bag by the door.",
+            "zh": "把包放在门旁边。"
+          },
+          {
+            "sense": "v. 设定",
+            "en": "Please set the alarm for six.",
+            "zh": "请把闹钟设为六点。"
+          },
+          {
+            "sense": "v. 日落",
+            "en": "The sun will set soon.",
+            "zh": "太阳很快就要落山了。"
+          },
+          {
+            "sense": "v. 凝固",
+            "en": "The jelly will set in the fridge.",
+            "zh": "果冻会在冰箱里凝固。"
+          }
         ]
       },
       "syntaxCue": {
@@ -27340,13 +27545,30 @@
         "id": 5572,
         "word": "long",
         "phonetic": "lɒŋ",
-        "pos": "adj./v./adv./n.",
+        "pos": "adj. / adv. / v. / n.",
         "meaning": "a. 长的, 长久的, 冗长的, 做多头的\\nvi. 渴望, 热望, 极想\\nadv. 长久, 始终\\nn. 长时间, 长信号, 长整型\\n[计] 长, 长整型",
-        "example": "This road is long.",
-        "exampleCn": "这条路很长。",
+        "example": "This bridge is very long.",
+        "exampleCn": "这座桥很长。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "adj. 长的",
+            "en": "This bridge is very long.",
+            "zh": "这座桥很长。"
+          },
+          {
+            "sense": "adv. 长时间地",
+            "en": "Have you been waiting long?",
+            "zh": "你已经等很久了吗？"
+          },
+          {
+            "sense": "v. 渴望",
+            "en": "I long to see my family.",
+            "zh": "我渴望见到家人。"
+          }
         ]
       },
       "syntaxCue": {
@@ -27866,13 +28088,30 @@
         "id": 5589,
         "word": "lot",
         "phonetic": "lɒt",
-        "pos": "v.",
-        "meaning": "n. 运气, 签, 抽签, 份额, 许多, 一堆\\nvt. 划分\\nvi. 抽签, 抓阄",
-        "example": "A lot of money.",
-        "exampleCn": "很多钱！",
+        "pos": "n. / v.",
+        "meaning": "n. 运气, 签, 抽签, 份额, 许多, 一堆\\nvt. 划分\\nvi. 抽签, 抓阄\nn. 地块；一块地",
+        "example": "We have a lot of work.",
+        "exampleCn": "我们有很多工作。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "n. 许多（a lot of）",
+            "en": "We have a lot of work.",
+            "zh": "我们有很多工作。"
+          },
+          {
+            "sense": "n. 地块",
+            "en": "They bought a small lot to build on.",
+            "zh": "他们买了一小块地用来盖房。"
+          },
+          {
+            "sense": "n. 签（draw lots）",
+            "en": "We drew lots to choose a team.",
+            "zh": "我们抽签选队伍。"
+          }
         ]
       },
       "syntaxCue": {
@@ -27932,13 +28171,30 @@
         "id": 5591,
         "word": "second",
         "phonetic": "'sekәnd",
-        "pos": "v.",
+        "pos": "num. / n. / v.",
         "meaning": "n. 秒, 瞬间, 第二名, 支持者, 助手\\na. 第二的, 其次的, 次要的, 附加的, 辅助的\\nnum. 第二\\nvt. 当...助手, 支持",
-        "example": "He came in a close second.",
-        "exampleCn": "他紧随其后。",
+        "example": "This is my second visit.",
+        "exampleCn": "这是我第二次来访。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "num. 第二",
+            "en": "This is my second visit.",
+            "zh": "这是我第二次来访。"
+          },
+          {
+            "sense": "n. 秒",
+            "en": "Wait a second, please.",
+            "zh": "请稍等一秒。"
+          },
+          {
+            "sense": "v. 附议（较正式）",
+            "en": "I second that proposal.",
+            "zh": "我附议那个提案。"
+          }
         ]
       },
       "syntaxCue": {
@@ -28133,11 +28389,23 @@
         "phonetic": "kaind",
         "pos": "adj. / n.",
         "meaning": "adj. 友善的；体贴的；仁慈的\nn. 种类；性质；方式",
-        "example": "Our neighbor is kind to everyone.",
-        "exampleCn": "我们的邻居对每个人都很友善。",
+        "example": "She is kind to new students.",
+        "exampleCn": "她对新同学很友善。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "adj. 友善的",
+            "en": "She is kind to new students.",
+            "zh": "她对新同学很友善。"
+          },
+          {
+            "sense": "n. 种类",
+            "en": "What kind of music do you like?",
+            "zh": "你喜欢哪种音乐？"
+          }
         ]
       },
       "syntaxCue": {
@@ -31175,13 +31443,35 @@
         "id": 5705,
         "word": "ground",
         "phonetic": "graund",
-        "pos": "v.",
-        "meaning": "n. 土地, 战场, 场地, 地面, 范围\\na. 土地的, 地面上的\\nvt. 放在地上, 使搁浅, 打基础, 给...以训练\\nvi. 搁浅, 落地, 根据, 基于\\na. 磨过的\\ngrind的过去式和过去分词",
-        "example": "He dropped the logs on the ground.",
-        "exampleCn": "他把原木扔在地上。",
+        "pos": "n. / adj. / v.",
+        "meaning": "n. 土地, 战场, 场地, 地面, 范围\\na. 土地的, 地面上的\\nvt. 放在地上, 使搁浅, 打基础, 给...以训练\\nvi. 搁浅, 落地, 根据, 基于\\na. 磨过的\\ngrind的过去式和过去分词\nn. 理由（常用复数 grounds）\nv. 使停飞",
+        "example": "The keys fell on the ground.",
+        "exampleCn": "钥匙掉到了地上。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "n. 地面",
+            "en": "The keys fell on the ground.",
+            "zh": "钥匙掉到了地上。"
+          },
+          {
+            "sense": "adj. 磨碎的（grind 的过去分词）",
+            "en": "Add some ground pepper.",
+            "zh": "加一些胡椒粉。"
+          },
+          {
+            "sense": "v. 使停飞",
+            "en": "The storm grounded the planes.",
+            "zh": "暴风雨使飞机停飞。"
+          },
+          {
+            "sense": "n. 理由（常用复数 grounds）",
+            "en": "We have grounds for concern.",
+            "zh": "我们有理由担忧。"
+          }
         ]
       },
       "syntaxCue": {
@@ -31311,11 +31601,38 @@
         "phonetic": "lait",
         "pos": "adj. / n. / v. / adv.",
         "meaning": "adj. 轻的；少量的；轻微的；轻快的；轻浮的；明亮的；浅色的；容易的\nn. 光；光亮；灯；日光；光源；杰出人物；火花；看法\nv. 点燃；照亮；变亮；落下；偶然碰到（light on）\nadv. 轻轻地；轻装地",
-        "example": "This bag is light enough to carry.",
-        "exampleCn": "这个包很轻，可以提得动。",
+        "example": "This box is light.",
+        "exampleCn": "这个盒子很轻。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "adj. 轻的",
+            "en": "This box is light.",
+            "zh": "这个盒子很轻。"
+          },
+          {
+            "sense": "adj. 明亮的",
+            "en": "This room is light and warm.",
+            "zh": "这个房间明亮又温暖。"
+          },
+          {
+            "sense": "n. 光",
+            "en": "The light hurts my eyes.",
+            "zh": "这光刺得我眼睛疼。"
+          },
+          {
+            "sense": "v. 点燃",
+            "en": "Please light the candle.",
+            "zh": "请点燃蜡烛。"
+          },
+          {
+            "sense": "adv. 轻装地",
+            "en": "They always travel light.",
+            "zh": "他们旅行总是轻装上阵。"
+          }
         ]
       },
       "syntaxCue": {
@@ -31846,13 +32163,35 @@
         "id": 5719,
         "word": "lie",
         "phonetic": "lai",
-        "pos": "v.",
+        "pos": "v. / n.",
         "meaning": "n. 谎言, 假象, 位置\\nvi. 躺着, 说谎, 位于, 展现, 存在, 停泊\\nvt. 谎骗",
-        "example": "Lie dormant.",
-        "exampleCn": "躺着休眠。",
+        "example": "Please lie on the bed.",
+        "exampleCn": "请躺在床上。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "v. 躺",
+            "en": "Please lie on the bed.",
+            "zh": "请躺在床上。"
+          },
+          {
+            "sense": "v. 说谎",
+            "en": "Do not lie to your parents.",
+            "zh": "不要对父母说谎。"
+          },
+          {
+            "sense": "n. 谎言",
+            "en": "That story is a lie.",
+            "zh": "那个故事是谎话。"
+          },
+          {
+            "sense": "v. 位于",
+            "en": "The village lies near a river.",
+            "zh": "这个村庄位于一条河附近。"
+          }
         ]
       },
       "syntaxCue": {
@@ -32732,13 +33071,30 @@
         "id": 5757,
         "word": "bit",
         "phonetic": "bit",
-        "pos": "v.",
-        "meaning": "n. 少量, 马嚼子, 辅币\\nvt. 给马上嚼子, 控制\\nbite的过去式和过去分词\\n[计] 比特, 二进制数位, 机内测试",
-        "example": "A bit of paper.",
-        "exampleCn": "一张纸。",
+        "pos": "n. / v.",
+        "meaning": "n. 少量；一点；（马的）嚼子；辅币；比特（二进制数位）\nv. 给马上嚼子；控制（较少见）\nbit 是 bite 的过去式，bite 的过去分词通常是 bitten。",
+        "example": "Add a bit of salt.",
+        "exampleCn": "加一点盐。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "n. 少量（a bit of）",
+            "en": "Add a bit of salt.",
+            "zh": "加一点盐。"
+          },
+          {
+            "sense": "v. 咬（bite 的过去式）",
+            "en": "The dog bit my shoe.",
+            "zh": "那只狗咬了我的鞋。"
+          },
+          {
+            "sense": "n. 比特",
+            "en": "A bit can be zero or one.",
+            "zh": "一个比特可以是零或一。"
+          }
         ]
       },
       "syntaxCue": {
@@ -34061,14 +34417,36 @@
       "current": {
         "id": 5798,
         "word": "present",
-        "phonetic": "'preznt",
-        "pos": "v.",
+        "phonetic": "/ˈprezənt/（名词、形容词）；/prɪˈzent/（动词）",
+        "pos": "n. / adj. / v.",
         "meaning": "n. 现在, 礼品, 瞄准\\na. 现在的, 出席的\\nvt. 介绍, 引见, 赠送, 提出, 呈现, 上演\\nvi. 举枪瞄准",
-        "example": "That is enough for the present.",
-        "exampleCn": "就目前而言，这已经足够了。",
+        "example": "This present is for you.",
+        "exampleCn": "这份礼物是给你的。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "n. 礼物（/ˈprezənt/）",
+            "en": "This present is for you.",
+            "zh": "这份礼物是给你的。"
+          },
+          {
+            "sense": "adj. 在场的（/ˈprezənt/）",
+            "en": "All the students are present.",
+            "zh": "所有学生都到场了。"
+          },
+          {
+            "sense": "adj. 现在的（/ˈprezənt/）",
+            "en": "We like our present home.",
+            "zh": "我们喜欢现在的家。"
+          },
+          {
+            "sense": "v. 提出；展示（/prɪˈzent/）",
+            "en": "Please present your plan to the class.",
+            "zh": "请向全班展示你的计划。"
+          }
         ]
       },
       "syntaxCue": {
@@ -34389,13 +34767,40 @@
         "id": 5809,
         "word": "sound",
         "phonetic": "saund",
-        "pos": "adv.",
-        "meaning": "n. 声音, 语音, 吵闹, 声调, 听力范围, 探条, 海峡\\na. 健全的, 可靠的, 合理的, 健康的, 彻底的, 资金充实的\\nadv. 彻底地, 充分地\\nvi. 发出声音, 回响, 测深, 试探, 听起来\\nvt. 使发声, 宣",
-        "example": "The sound of rain on the roof.",
-        "exampleCn": "屋顶上的雨声。",
+        "pos": "n. / v. / adj. / adv.",
+        "meaning": "n. 声音；语音；音质；声调；海峡；海湾\nv. 听起来；发声；鸣响；测深\nadj. 完好的；健康的；可靠的；合理的；酣畅的\nadv. 酣畅地（sound asleep）",
+        "example": "I heard a strange sound.",
+        "exampleCn": "我听到了一种奇怪的声音。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "n. 声音",
+            "en": "I heard a strange sound.",
+            "zh": "我听到了一种奇怪的声音。"
+          },
+          {
+            "sense": "v. 听起来",
+            "en": "That idea sounds good.",
+            "zh": "那个想法听起来不错。"
+          },
+          {
+            "sense": "adj. 可靠的",
+            "en": "She gave me sound advice.",
+            "zh": "她给了我可靠的建议。"
+          },
+          {
+            "sense": "n. 海峡；海湾",
+            "en": "The ferry crosses the sound every day.",
+            "zh": "渡船每天横渡这片海峡。"
+          },
+          {
+            "sense": "adv. 酣畅地（sound asleep）",
+            "en": "He is sound asleep.",
+            "zh": "他睡得很熟。"
+          }
         ]
       },
       "syntaxCue": {
@@ -35982,13 +36387,30 @@
         "id": 5867,
         "word": "fly",
         "phonetic": "flai",
-        "pos": "v.",
+        "pos": "v. / n.",
         "meaning": "n. 苍蝇, 两翼昆虫, 飞行\\nvi. 飞, 飞翔, 飘扬, 逃走\\nvt. 飞, 飞越, 使飘扬, 逃出\\na. 敏捷的",
-        "example": "Man cannot fly.",
-        "exampleCn": "人不能飞。",
+        "example": "Birds can fly over the wall.",
+        "exampleCn": "鸟能飞过这堵墙。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "v. 飞",
+            "en": "Birds can fly over the wall.",
+            "zh": "鸟能飞过这堵墙。"
+          },
+          {
+            "sense": "n. 苍蝇",
+            "en": "A fly landed on my cup.",
+            "zh": "一只苍蝇落在了我的杯子上。"
+          },
+          {
+            "sense": "v. 乘飞机",
+            "en": "We fly to Rome tomorrow.",
+            "zh": "我们明天坐飞机去罗马。"
+          }
         ]
       },
       "syntaxCue": {
@@ -36857,13 +37279,35 @@
         "id": 5903,
         "word": "fit",
         "phonetic": "fit",
-        "pos": "v.",
-        "meaning": "n. 适宜, 合身, 发作, 痉挛\\na. 适宜的, 对的, 准备好的\\nvt. 适合, 安装, 使合身, 使适应, 使合格\\nvi. 适合, 符合, 合身\\n[计] 非特",
-        "example": "He had a fit.",
-        "exampleCn": "他发脾气了。",
+        "pos": "v. / adj. / n.",
+        "meaning": "n. 适宜, 合身, 发作, 痉挛\\na. 适宜的, 对的, 准备好的\\nvt. 适合, 安装, 使合身, 使适应, 使合格\\nvi. 适合, 符合, 合身\\n[计] 非特\nadj. 健康的；身体强健的",
+        "example": "These shoes fit me well.",
+        "exampleCn": "这双鞋很合我的脚。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "v. 合身；适合",
+            "en": "These shoes fit me well.",
+            "zh": "这双鞋很合我的脚。"
+          },
+          {
+            "sense": "adj. 健康的",
+            "en": "She keeps fit by swimming.",
+            "zh": "她通过游泳保持健康。"
+          },
+          {
+            "sense": "n. 一阵发作",
+            "en": "He had a fit of coughing.",
+            "zh": "他一阵咳嗽。"
+          },
+          {
+            "sense": "v. 安装",
+            "en": "Please fit a new lock.",
+            "zh": "请安装一把新锁。"
+          }
         ]
       },
       "syntaxCue": {
@@ -44578,14 +45022,31 @@
         "id": 6158,
         "word": "kid",
         "phonetic": "kid",
-        "pos": "n./adj./v.",
+        "pos": "n. / v. / adj.",
         "meaning": "n. 小山羊, 小山羊肉, 小孩, 欺骗\\na. 小山羊皮制的\\nv. 哄骗, 嘲弄",
-        "example": "The kid is playing in the garden.",
-        "exampleCn": "那个孩子正在花园里玩。",
+        "example": "The kid is learning to swim.",
+        "exampleCn": "那个孩子正在学游泳。",
         "category": "daily",
         "categories": [
           "daily",
           "cet4"
+        ],
+        "examples": [
+          {
+            "sense": "n. 小孩",
+            "en": "The kid is learning to swim.",
+            "zh": "那个孩子正在学游泳。"
+          },
+          {
+            "sense": "n. 小山羊",
+            "en": "A young goat is called a kid.",
+            "zh": "小山羊叫作 kid。"
+          },
+          {
+            "sense": "v. 开玩笑",
+            "en": "I am only kidding.",
+            "zh": "我只是开个玩笑。"
+          }
         ]
       },
       "syntaxCue": {
@@ -45187,14 +45648,36 @@
         "id": 6172,
         "word": "base",
         "phonetic": "beis",
-        "pos": "v.",
+        "pos": "n. / v. / adj.",
         "meaning": "n. 底部, 垒, 基础, 基地\\nvt. 以...作基础\\na. 卑鄙的, 低劣的\\n[计] 基准",
-        "example": "It was built on a base of solid rock.",
-        "exampleCn": "它建在坚固的岩石基础上。",
+        "example": "The vase has a wide base.",
+        "exampleCn": "这个花瓶底部很宽。",
         "category": "daily",
         "categories": [
           "daily",
           "cet4"
+        ],
+        "examples": [
+          {
+            "sense": "n. 底部",
+            "en": "The vase has a wide base.",
+            "zh": "这个花瓶底部很宽。"
+          },
+          {
+            "sense": "n. 基地",
+            "en": "We built a base near the river.",
+            "zh": "我们在河边建了一个基地。"
+          },
+          {
+            "sense": "v. 以……为基础",
+            "en": "We base our plan on the facts.",
+            "zh": "我们以事实为依据制定计划。"
+          },
+          {
+            "sense": "adj. 卑鄙的（较正式）",
+            "en": "Greed is a base motive.",
+            "zh": "贪婪是一种卑鄙的动机。"
+          }
         ]
       },
       "syntaxCue": {
@@ -53879,14 +54362,31 @@
         "id": 6456,
         "word": "pen",
         "phonetic": "pen",
-        "pos": "v.",
+        "pos": "n. / v.",
         "meaning": "n. 钢笔, 笔, 笔调, 笔杆子, 作家, 围栏, 栅栏, 禽畜\\nvt. 写, 关入栏中, 囚禁\\nvi. 动笔, 写作",
-        "example": "She pulled out a pen and quickly scribbled her phone number on the back of an old receipt.",
-        "exampleCn": "她掏出一支钢笔在旧收据背面迅速写下她的电话号码。",
+        "example": "Please write with a blue pen.",
+        "exampleCn": "请用蓝色钢笔书写。",
         "category": "daily",
         "categories": [
           "daily",
           "cet4"
+        ],
+        "examples": [
+          {
+            "sense": "n. 钢笔",
+            "en": "Please write with a blue pen.",
+            "zh": "请用蓝色钢笔书写。"
+          },
+          {
+            "sense": "n. 牲畜圈",
+            "en": "The sheep are in their pen.",
+            "zh": "羊在羊圈里。"
+          },
+          {
+            "sense": "v. 写（较正式）",
+            "en": "She penned a letter to her son.",
+            "zh": "她给儿子写了一封信。"
+          }
         ]
       },
       "syntaxCue": {
@@ -80981,14 +81481,46 @@
         "id": 7210,
         "word": "line",
         "phonetic": "lain",
-        "pos": "v.",
-        "meaning": "n. 列, 线, 绳, 电线, 线路, 路线, 航线, 作业线, 界线, 战线, 外形, 排, 家系\\nvt. 排成一行, 顺...排列, 划线于, 加衬里, 使有线条, 使起皱纹\\nvi. 排队\\n[计] 线路",
-        "example": "The line of soldiers advanced with their bayonets fixed.",
-        "exampleCn": "士兵们列好刺刀，向前推进。",
+        "pos": "n. / v.",
+        "meaning": "n. 列, 线, 绳, 电线, 线路, 路线, 航线, 作业线, 界线, 战线, 外形, 排, 家系\\nvt. 排成一行, 顺...排列, 划线于, 加衬里, 使有线条, 使起皱纹\\nvi. 排队\\n[计] 线路\nn. 台词",
+        "example": "Draw a straight line here.",
+        "exampleCn": "在这里画一条直线。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "n. 线",
+            "en": "Draw a straight line here.",
+            "zh": "在这里画一条直线。"
+          },
+          {
+            "sense": "n. 队列",
+            "en": "Wait at the end of the line.",
+            "zh": "在线尾等候。"
+          },
+          {
+            "sense": "n. 台词",
+            "en": "She forgot her next line.",
+            "zh": "她忘了下一句台词。"
+          },
+          {
+            "sense": "n. 线路",
+            "en": "This train runs on the blue line.",
+            "zh": "这列火车在蓝色线路上运行。"
+          },
+          {
+            "sense": "v. 加衬里",
+            "en": "We line the box with soft paper.",
+            "zh": "我们用柔软的纸给盒子加衬。"
+          },
+          {
+            "sense": "v. 排队（line up）",
+            "en": "Please line up by the door.",
+            "zh": "请在门旁排队。"
+          }
         ]
       },
       "syntaxCue": {
@@ -81869,14 +82401,26 @@
         "id": 7235,
         "word": "patient",
         "phonetic": "'peiʃәnt",
-        "pos": "n./adj.",
+        "pos": "n. / adj.",
         "meaning": "n. 病人, 承受者\\na. 忍耐的, 容忍的, 有耐性的, 坚忍的",
-        "example": "Please be patient while we check your ticket.",
-        "exampleCn": "我们检查您的票时，请耐心等候。",
+        "example": "The patient is resting now.",
+        "exampleCn": "病人现在正在休息。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "n. 病人",
+            "en": "The patient is resting now.",
+            "zh": "病人现在正在休息。"
+          },
+          {
+            "sense": "adj. 有耐心的",
+            "en": "Please be patient with the children.",
+            "zh": "请对孩子们耐心一点。"
+          }
         ]
       },
       "syntaxCue": {
@@ -82140,14 +82684,31 @@
         "id": 7242,
         "word": "staff",
         "phonetic": "stɑ:f",
-        "pos": "v.",
+        "pos": "n. / v.",
         "meaning": "n. 全体人员, 工作班子, 棍棒, 杆, 拐杖, 支柱, 权杖\\na. 职员的, 雇员的, 参谋的\\nvt. 为...配备人员",
-        "example": "The hospital has an excellent nursing staff.",
-        "exampleCn": "医院拥有一支优秀的护理人员队伍。",
+        "example": "The staff are very helpful.",
+        "exampleCn": "全体员工都很热心。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "n. 全体员工",
+            "en": "The staff are very helpful.",
+            "zh": "全体员工都很热心。"
+          },
+          {
+            "sense": "n. 长棍；手杖",
+            "en": "He walked with a wooden staff.",
+            "zh": "他拄着一根木杖走路。"
+          },
+          {
+            "sense": "v. 为……配备人员",
+            "en": "Volunteers staff the front desk.",
+            "zh": "志愿者负责前台工作。"
+          }
         ]
       },
       "syntaxCue": {
@@ -83311,14 +83872,36 @@
         "id": 7283,
         "word": "top",
         "phonetic": "tɒp",
-        "pos": "v.",
+        "pos": "n. / adj. / v.",
         "meaning": "n. 顶部, 顶端, 极点, 上面, 上部, 顶篷, 最高地位, 首位, 陀螺\\na. 最高的, 顶上的, 头等的\\nvt. 盖, 加以顶, 高达, 超越\\nvi. 结束, 达到顶点, 高出\\n[计] TOP协议",
-        "example": "The title should be written at the top of the first page.",
-        "exampleCn": "标题应写在第一页的顶部。",
+        "example": "Write your name at the top.",
+        "exampleCn": "在顶部写上你的名字。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "n. 顶部",
+            "en": "Write your name at the top.",
+            "zh": "在顶部写上你的名字。"
+          },
+          {
+            "sense": "n. 陀螺",
+            "en": "The top spun across the floor.",
+            "zh": "陀螺旋转着滑过地板。"
+          },
+          {
+            "sense": "adj. 最好的；顶尖的",
+            "en": "This is a top team.",
+            "zh": "这是一支顶尖球队。"
+          },
+          {
+            "sense": "v. 居……之首",
+            "en": "Her score topped the list.",
+            "zh": "她的分数位居榜首。"
+          }
         ]
       },
       "syntaxCue": {
@@ -84063,14 +84646,26 @@
         "id": 7308,
         "word": "pretty",
         "phonetic": "'priti",
-        "pos": "adv./adj.",
+        "pos": "adj. / adv.",
         "meaning": "a. 漂亮的, 优美的, 机灵的, 狡猾的, 恰当的\\nadv. 相当, 颇",
-        "example": "She wore a pretty blue hat.",
-        "exampleCn": "她戴了一顶漂亮的蓝色帽子。",
+        "example": "That is a pretty little garden.",
+        "exampleCn": "那是一个漂亮的小花园。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "adj. 漂亮的",
+            "en": "That is a pretty little garden.",
+            "zh": "那是一个漂亮的小花园。"
+          },
+          {
+            "sense": "adv. 相当（非正式）",
+            "en": "The test was pretty easy.",
+            "zh": "这次考试相当容易。"
+          }
         ]
       },
       "syntaxCue": {
@@ -86362,14 +86957,26 @@
         "id": 7373,
         "word": "safe",
         "phonetic": "seif",
-        "pos": "n./adj.",
+        "pos": "adj. / n.",
         "meaning": "n. 保险箱, 冷藏室\\na. 安全的, 可靠的, 平安的, 稳健的, 有把握的",
-        "example": "Keep your money in a safe place.",
-        "exampleCn": "把钱放在安全的地方。",
+        "example": "Your bags are safe here.",
+        "exampleCn": "你的包放在这里很安全。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "adj. 安全的",
+            "en": "Your bags are safe here.",
+            "zh": "你的包放在这里很安全。"
+          },
+          {
+            "sense": "n. 保险箱",
+            "en": "Put the money in the safe.",
+            "zh": "把钱放进保险箱里。"
+          }
         ]
       },
       "syntaxCue": {
@@ -87236,14 +87843,31 @@
         "id": 7394,
         "word": "trust",
         "phonetic": "trʌst",
-        "pos": "v.",
-        "meaning": "n. 信任, 信赖, 相信, 受托, 职责, 信心, 托拉斯\\na. 信托的, 托拉斯的\\nvt. 信赖, 信任, 相信, 盼望, 赊卖给\\nvi. 相信, 信赖, 依靠\\n[计] 委托, 信任",
-        "example": "He is the beneficiary of a generous trust set up by his father.",
-        "exampleCn": "他是他父亲设立的慷慨信托的受益人。",
+        "pos": "v. / n.",
+        "meaning": "n. 信任, 信赖, 相信, 受托, 职责, 信心, 托拉斯\\na. 信托的, 托拉斯的\\nvt. 信赖, 信任, 相信, 盼望, 赊卖给\\nvi. 相信, 信赖, 依靠\\n[计] 委托, 信任\nn. 信托（财产或资金管理安排）",
+        "example": "I trust my close friends.",
+        "exampleCn": "我信任我的好朋友。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "v. 信任",
+            "en": "I trust my close friends.",
+            "zh": "我信任我的好朋友。"
+          },
+          {
+            "sense": "n. 信任",
+            "en": "Trust takes time to build.",
+            "zh": "建立信任需要时间。"
+          },
+          {
+            "sense": "n. 信托",
+            "en": "The money is held in a trust.",
+            "zh": "这笔钱由信托持有。"
+          }
         ]
       },
       "syntaxCue": {
@@ -89337,14 +89961,31 @@
         "id": 7445,
         "word": "wave",
         "phonetic": "weiv",
-        "pos": "v.",
+        "pos": "n. / v.",
         "meaning": "n. 波, 波浪, 波动, 起伏, 高潮, 潮涌, 挥手致意, (气压)突变\\nvi. 波动, 飘动, 挥手示意, 起伏\\nvt. 使波动, 使飘扬, 挥舞, 使成波浪形",
-        "example": "A wave of settlers.",
-        "exampleCn": "一波定居者。",
+        "example": "A large wave hit the boat.",
+        "exampleCn": "一个大浪打在船上。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "n. 波浪",
+            "en": "A large wave hit the boat.",
+            "zh": "一个大浪打在船上。"
+          },
+          {
+            "sense": "v. 挥手",
+            "en": "Wave to your friends.",
+            "zh": "向你的朋友们挥挥手。"
+          },
+          {
+            "sense": "n. 一阵；一波",
+            "en": "A wave of laughter filled the room.",
+            "zh": "一阵笑声充满了房间。"
+          }
         ]
       },
       "syntaxCue": {
@@ -90695,14 +91336,31 @@
         "id": 7483,
         "word": "pool",
         "phonetic": "pu:l",
-        "pos": "v./n.",
-        "meaning": "n. 池, 水塘, 石油层, 联营\\nvt. 合伙经营, 共享, 采掘, 汇聚成\\nvi. 汇合成塘, 淤积, 联营",
-        "example": "The children played in the pool.",
-        "exampleCn": "孩子们在游泳池里玩耍。",
+        "pos": "n. / v.",
+        "meaning": "n. 池, 水塘, 石油层, 联营\\nvt. 合伙经营, 共享, 采掘, 汇聚成\\nvi. 汇合成塘, 淤积, 联营\nn. 台球（pool）",
+        "example": "The pool is full of children.",
+        "exampleCn": "游泳池里有很多孩子。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "n. 水池；游泳池",
+            "en": "The pool is full of children.",
+            "zh": "游泳池里有很多孩子。"
+          },
+          {
+            "sense": "n. 台球",
+            "en": "We play pool after work.",
+            "zh": "我们下班后打台球。"
+          },
+          {
+            "sense": "v. 汇集；共享",
+            "en": "We can pool our money.",
+            "zh": "我们可以把钱凑在一起。"
+          }
         ]
       },
       "syntaxCue": {
@@ -91373,14 +92031,26 @@
         "id": 7501,
         "word": "novel",
         "phonetic": "'nɒvl",
-        "pos": "adj./n.",
+        "pos": "n. / adj.",
         "meaning": "n. 小说, 长篇故事\\na. 新奇的, 异常的",
-        "example": "The computer produced a completely novel proof of a well-known theorem.",
-        "exampleCn": "计算机为一个众所周知的定理提供了一个全新的证明。",
+        "example": "This novel has a happy ending.",
+        "exampleCn": "这部小说有一个圆满的结局。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "n. 小说",
+            "en": "This novel has a happy ending.",
+            "zh": "这部小说有一个圆满的结局。"
+          },
+          {
+            "sense": "adj. 新颖的",
+            "en": "A novel idea saved us time.",
+            "zh": "一个新颖的想法为我们节省了时间。"
+          }
         ]
       },
       "syntaxCue": {
@@ -94109,14 +94779,36 @@
         "id": 7572,
         "word": "sharp",
         "phonetic": "ʃɑ:p",
-        "pos": "adv./n./adj.",
-        "meaning": "n. 半升音调, 利刃, 骗子\\na. 锋利的, 明显的, 敏锐的, 急剧的, 尖刻的, 严厉的, 刺耳的, 精明的\\nadv. 锐利地, 急速地",
-        "example": "Be careful with that sharp knife.",
-        "exampleCn": "小心那把锋利的刀。",
+        "pos": "adj. / adv. / n.",
+        "meaning": "n. 半升音调, 利刃, 骗子\\na. 锋利的, 明显的, 敏锐的, 急剧的, 尖刻的, 严厉的, 刺耳的, 精明的\\nadv. 锐利地, 急速地\nadv. 正好在某时刻；整（用于时间之后）",
+        "example": "This knife is very sharp.",
+        "exampleCn": "这把刀很锋利。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "adj. 锋利的",
+            "en": "This knife is very sharp.",
+            "zh": "这把刀很锋利。"
+          },
+          {
+            "sense": "adj. 敏锐的",
+            "en": "She has a sharp mind.",
+            "zh": "她思维敏锐。"
+          },
+          {
+            "sense": "adv. 准时；整",
+            "en": "The train leaves at six sharp.",
+            "zh": "火车六点整发车。"
+          },
+          {
+            "sense": "n. 升半音的音符",
+            "en": "Play an F sharp.",
+            "zh": "弹一个升 F 音。"
+          }
         ]
       },
       "syntaxCue": {
@@ -95545,14 +96237,36 @@
         "id": 7606,
         "word": "net",
         "phonetic": "net",
-        "pos": "v.",
-        "meaning": "n. 网, 网状物, 罗网, 净利, 净价\\na. 净的, 最终的\\nvt. 用网捕, 撒网, 净赚, 得到\\nvi. 编网\\n[计] 网络, 网络分析程序",
-        "example": "Net a fish.",
-        "exampleCn": "网一条鱼。",
+        "pos": "n. / adj. / v.",
+        "meaning": "n. 网, 网状物, 罗网, 净利, 净价\\na. 净的, 最终的\\nvt. 用网捕, 撒网, 净赚, 得到\\nvi. 编网\\n[计] 网络, 网络分析程序\nn. 互联网（非正式用语，the net）",
+        "example": "The fish got caught in the net.",
+        "exampleCn": "那条鱼被网住了。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "n. 网",
+            "en": "The fish got caught in the net.",
+            "zh": "那条鱼被网住了。"
+          },
+          {
+            "sense": "adj. 净的",
+            "en": "Our net profit rose this year.",
+            "zh": "我们今年的净利润增长了。"
+          },
+          {
+            "sense": "v. 用网捕捉",
+            "en": "They net fish in the river.",
+            "zh": "他们在河里网鱼。"
+          },
+          {
+            "sense": "n. 互联网（非正式）",
+            "en": "I found the answer on the net.",
+            "zh": "我在网上找到了答案。"
+          }
         ]
       },
       "syntaxCue": {
@@ -102782,14 +103496,31 @@
         "id": 7775,
         "word": "spell",
         "phonetic": "spel",
-        "pos": "v.",
-        "meaning": "n. 符咒, 魅力, 轮值, 轮班, 工作时间, 一次发作\\nvt. 拼写, 拼成, 琢磨, 理解, 招致, 轮换, 迷住\\nvi. 轮换, 拼字",
-        "example": "A spell of work.",
-        "exampleCn": "工作的咒语。",
+        "pos": "v. / n.",
+        "meaning": "n. 符咒, 魅力, 轮值, 轮班, 工作时间, 一次发作\\nvt. 拼写, 拼成, 琢磨, 理解, 招致, 轮换, 迷住\\nvi. 轮换, 拼字\nn. 一段持续的时间（a spell of）",
+        "example": "Can you spell your name?",
+        "exampleCn": "你会拼写自己的名字吗？",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "v. 拼写",
+            "en": "Can you spell your name?",
+            "zh": "你会拼写自己的名字吗？"
+          },
+          {
+            "sense": "n. 咒语",
+            "en": "The witch cast a spell.",
+            "zh": "女巫施了一个咒语。"
+          },
+          {
+            "sense": "n. 一段时间",
+            "en": "We had a long spell of rain.",
+            "zh": "我们遇上了很长一段雨天。"
+          }
         ]
       },
       "syntaxCue": {
@@ -106452,14 +107183,36 @@
         "id": 7864,
         "word": "tender",
         "phonetic": "'tendә",
-        "pos": "v.",
+        "pos": "adj. / n. / v.",
         "meaning": "a. 嫩的, 柔软的, 脆弱的, 温柔的, 亲切的, 未成熟的, 微妙的, 棘手的, 审慎的\\nvt. 使变嫩, 提供, 偿还\\nvi. 变柔软, 投标\\nn. 照料, 看管人, 供应船, 小船, 提出, 偿付, 投标",
-        "example": "A tender heart.",
-        "exampleCn": "一颗温柔的心。",
+        "example": "The meat is tender and juicy.",
+        "exampleCn": "这块肉又嫩又多汁。",
         "category": "cet4",
         "categories": [
           "cet4",
           "cet6"
+        ],
+        "examples": [
+          {
+            "sense": "adj. 嫩的",
+            "en": "The meat is tender and juicy.",
+            "zh": "这块肉又嫩又多汁。"
+          },
+          {
+            "sense": "adj. 温柔的",
+            "en": "She gave him a tender smile.",
+            "zh": "她温柔地朝他笑了笑。"
+          },
+          {
+            "sense": "n. 投标书",
+            "en": "The company submitted a tender.",
+            "zh": "这家公司递交了一份投标书。"
+          },
+          {
+            "sense": "v. 正式提交",
+            "en": "He tendered his resignation yesterday.",
+            "zh": "他昨天递交了辞呈。"
+          }
         ]
       },
       "syntaxCue": {

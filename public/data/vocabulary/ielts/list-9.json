@@ -188,10 +188,10 @@
     "id": 1086,
     "word": "bark",
     "phonetic": "/bɑːrk/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "树皮/吠叫",
-    "example": "The bark of this tree is very thick./The dog barked loudly at night.",
-    "exampleCn": "这棵树的树皮很厚。/那只狗晚上大声吠叫。",
+    "example": "The bark is rough and thick.",
+    "exampleCn": "这层树皮粗糙而厚实。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -199,7 +199,19 @@
     ],
     "level": "3",
     "list": "7",
-    "ieltsList": "9"
+    "ieltsList": "9",
+    "examples": [
+      {
+        "sense": "n. 树皮",
+        "en": "The bark is rough and thick.",
+        "zh": "这层树皮粗糙而厚实。"
+      },
+      {
+        "sense": "v. 吠叫",
+        "en": "Dogs often bark at strangers.",
+        "zh": "狗常常对陌生人叫。"
+      }
+    ]
   },
   {
     "id": 1147,

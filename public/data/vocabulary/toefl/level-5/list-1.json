@@ -501,10 +501,10 @@
     "id": 2464,
     "word": "crane",
     "phonetic": "/kreɪn/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "鹤/起重机/伸长脖子看",
-    "example": "A crane lifted the heavy steel beam.",
-    "exampleCn": "一台起重机吊起了沉重的钢梁。",
+    "example": "A crane stood by the lake.",
+    "exampleCn": "一只鹤站在湖边。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -515,6 +515,23 @@
     "ieltsList": "34",
     "ieltsLists": [
       "34"
+    ],
+    "examples": [
+      {
+        "sense": "n. 鹤",
+        "en": "A crane stood by the lake.",
+        "zh": "一只鹤站在湖边。"
+      },
+      {
+        "sense": "n. 起重机",
+        "en": "The crane lifted a heavy box.",
+        "zh": "起重机吊起了一个重箱子。"
+      },
+      {
+        "sense": "v. 伸长脖子看",
+        "en": "She craned her neck to see.",
+        "zh": "她伸长脖子张望。"
+      }
     ]
   },
   {

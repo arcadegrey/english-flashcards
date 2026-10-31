@@ -15,6 +15,7 @@ const root=new URL('../',import.meta.url),read=async p=>JSON.parse(await readFil
 const hash=v=>createHash('sha256').update(v).digest('hex'),serialize=v=>JSON.stringify(v,null,2)+'\n';
 const register=await read('data/vocabulary-common-senses-repair/reviews-2026-10-29.json');
 const words=beforeExpansion50Review(await read('public/data/vocabulary.json')),byId=new Map(words.map(w=>[w.id,w]));
+const currentById=new Map((await read('public/data/vocabulary.json')).map(word=>[word.id,word]));
 const proposal=await read('data/vocabulary-coverage-2026-10-29/first-batch-proposal.json');
 const oldHints=await read('data/vocabulary-common-senses-repair/previous-hints.json');
 const hints=await read('data/vocabulary-common-senses-repair/hints-2026-10-29.json');
@@ -60,15 +61,15 @@ test('new hints supplement existing comparisons and word families, with exact re
 test('every complete core/IELTS copy agrees; shared List membership and counts remain intact',async()=>{
  const copies=[await read('public/data/vocabulary/core.json')];
  for(const name of await readdir(new URL('public/data/vocabulary/ielts/',root)))if(name.startsWith('list-'))copies.push(await read(`public/data/vocabulary/ielts/${name}`));
- for(const entries of copies)for(const w of entries)if(hints[w.id])assert.deepEqual(w,byId.get(w.id));
- for(const list of ['24','39'])assert.deepEqual((await read(`public/data/vocabulary/ielts/list-${list}.json`)).find(w=>w.id===4326),byId.get(4326));
+ for(const entries of copies)for(const w of entries)if(hints[w.id])assert.deepEqual(w,currentById.get(w.id));
+ for(const list of ['24','39'])assert.deepEqual((await read(`public/data/vocabulary/ielts/list-${list}.json`)).find(w=>w.id===4326),currentById.get(4326));
 });
 
 test('cold mixed core/IELTS catalog loading and deferred details return all ten corrected entries',async()=>{
  const requests=[],index=await read('src/data/vocabularyIndex.json');
  const delivery=createVocabularyDelivery({index,fetchJson:async p=>{requests.push(p);return read(`public${p}`);}});
  const summaries=await delivery.loadCatalogIds(register.reviews.map(r=>r.id));assert.equal(summaries.length,10);
- for(const w of summaries)assert.deepEqual(applyWordDetails(w,await delivery.loadDetails(w)),byId.get(w.id));
+ for(const w of summaries)assert.deepEqual(applyWordDetails(w,await delivery.loadDetails(w)),currentById.get(w.id));
  assert(requests.some(p=>p.includes('/catalog/core-')));assert(requests.some(p=>p.includes('/catalog/ielts-')));assert(requests.some(p=>p.includes('/details/')));
 });
 
@@ -77,7 +78,7 @@ test('existing assignment snapshots retain their exact meanings and scores; new 
  const scores=gradeWordAssignment(saved,answers),current=buildWordAssignment(register.reviews.map(r=>r.after));
  assert.deepEqual(gradeWordAssignment(JSON.parse(snapshot),answers),scores);assert.equal(serialize(saved),snapshot);
  const catalog=await read('worker/data/assignment-vocabulary.json');
- for(const r of register.reviews){assert.equal(current.find(w=>w.id===String(r.id)).meaning,r.after.meaning);assert.equal(saved.find(w=>w.id===String(r.id)).meaning,r.before.meaning);assert.equal(catalog.find(w=>w.id===r.id)?.meaning,r.after.meaning);}
+ for(const r of register.reviews){assert.equal(current.find(w=>w.id===String(r.id)).meaning,r.after.meaning);assert.equal(saved.find(w=>w.id===String(r.id)).meaning,r.before.meaning);assert.equal(catalog.find(w=>w.id===r.id)?.meaning,currentById.get(r.id).meaning);}
 });
 
 test('all forty exact-text versioned audio mappings preserve old examples and unchanged word recordings',async()=>{

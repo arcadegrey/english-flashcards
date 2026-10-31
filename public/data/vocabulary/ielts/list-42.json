@@ -341,10 +341,10 @@
     "id": 1198,
     "word": "stock",
     "phonetic": "/stɑːk/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "库存；股票/储备",
-    "example": "The store keeps a large stock of fresh fruit.",
-    "exampleCn": "这家商店储备了大量新鲜水果。",
+    "example": "The shop has no milk in stock.",
+    "exampleCn": "这家店没有牛奶库存。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -355,6 +355,23 @@
     "ieltsList": "42",
     "ieltsLists": [
       "42"
+    ],
+    "examples": [
+      {
+        "sense": "n. 库存",
+        "en": "The shop has no milk in stock.",
+        "zh": "这家店没有牛奶库存。"
+      },
+      {
+        "sense": "n. 股票",
+        "en": "She bought stock in the company.",
+        "zh": "她买了这家公司的股票。"
+      },
+      {
+        "sense": "v. 备有；储备",
+        "en": "This shop stocks fresh fruit.",
+        "zh": "这家店备有新鲜水果。"
+      }
     ]
   },
   {
@@ -998,10 +1015,10 @@
     "id": 4947,
     "word": "deal",
     "phonetic": "diːl",
-    "pos": "n./v.",
-    "meaning": "交易/协议/处理",
-    "example": "They signed a deal worth millions of dollars.",
-    "exampleCn": "他们签署了一笔价值数百万美元的交易。",
+    "pos": "n. / v.",
+    "meaning": "交易/协议/处理\nv. 发牌",
+    "example": "They agreed to a fair deal.",
+    "exampleCn": "他们达成了一项公平的协议。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -1009,6 +1026,23 @@
     "ieltsList": "42",
     "ieltsLists": [
       "42"
+    ],
+    "examples": [
+      {
+        "sense": "n. 交易；协议",
+        "en": "They agreed to a fair deal.",
+        "zh": "他们达成了一项公平的协议。"
+      },
+      {
+        "sense": "v. 处理（deal with）",
+        "en": "We must deal with this problem.",
+        "zh": "我们必须处理这个问题。"
+      },
+      {
+        "sense": "v. 发牌",
+        "en": "Please deal the cards.",
+        "zh": "请发牌。"
+      }
     ]
   },
   {

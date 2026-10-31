@@ -452,7 +452,7 @@
 - 执行 `node scripts/audit-vocabulary-teaching.mjs` 只重建本 Markdown 与同名 JSON，依次撤销登记的 P2／P1 before 快照重建原筛查输入，同时严格核对当前库等于登记的最新 after 状态；不接受未登记的新修改，也不把旧句法线索当成修复后结论。
 - spaCy 3.8.18／en_core_web_sm 3.8.0 的句法解析仅作用于基础英文例句；完整解析日志在忽略目录 `output/vocabulary-quality-audit/`。
 - 输入 SHA-256：`ae4abc959df187f198e54477dc7a69a4f7baa283f10f07854915ba74c1a4c163`。
-- 修复后当前词库 SHA-256：`0dd67cbe46ea45012baad0ab598c6594bb5073be6b229208754167551befbb08`。本生成器不改业务数据；实际应用回归及音频发布以 P1／P2 交接为准。
+- 修复后当前词库 SHA-256：`c2a7ade0fe5774f96e7bd737edf74da8bdc45fbf3ff0b16f531456b257f7328e`。本生成器不改业务数据；实际应用回归及音频发布以 P1／P2 交接为准。
 
 ## 核对来源
 

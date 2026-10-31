@@ -65,11 +65,11 @@
   {
     "id": 290,
     "word": "bow",
-    "phonetic": "/baʊ/",
-    "pos": "v./n.",
+    "phonetic": "/baʊ/（鞠躬）；/bəʊ/（弓、蝴蝶结）",
+    "pos": "v. / n.",
     "meaning": "鞠躬；弓",
-    "example": "The actor took a bow after the show.",
-    "exampleCn": "演员在演出结束后鞠躬致谢。",
+    "example": "Please bow to the audience.",
+    "exampleCn": "请向观众鞠躬。",
     "category": "daily",
     "categories": [
       "daily",
@@ -80,6 +80,23 @@
       "24",
       "37",
       "46"
+    ],
+    "examples": [
+      {
+        "sense": "v. 鞠躬（/baʊ/）",
+        "en": "Please bow to the audience.",
+        "zh": "请向观众鞠躬。"
+      },
+      {
+        "sense": "n. 弓（/bəʊ/）",
+        "en": "He carried a bow and arrows.",
+        "zh": "他带着一把弓和一些箭。"
+      },
+      {
+        "sense": "n. 蝴蝶结（/bəʊ/）",
+        "en": "She tied the ribbon in a bow.",
+        "zh": "她把丝带打成蝴蝶结。"
+      }
     ]
   },
   {
@@ -444,10 +461,10 @@
     "id": 2205,
     "word": "pitch",
     "phonetic": "/pɪtʃ/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "音高/球场/投掷/推销",
-    "example": "The singer’s pitch was clear and accurate.",
-    "exampleCn": "歌手的音高清晰而准确。",
+    "example": "The note has a high pitch.",
+    "exampleCn": "这个音的音高很高。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -459,6 +476,28 @@
     "ieltsLists": [
       "24",
       "27"
+    ],
+    "examples": [
+      {
+        "sense": "n. 音高",
+        "en": "The note has a high pitch.",
+        "zh": "这个音的音高很高。"
+      },
+      {
+        "sense": "n. 球场（英式）",
+        "en": "The players ran onto the pitch.",
+        "zh": "球员们跑进球场。"
+      },
+      {
+        "sense": "v. 投掷",
+        "en": "He can pitch the ball fast.",
+        "zh": "他能把球投得很快。"
+      },
+      {
+        "sense": "v. 推销想法",
+        "en": "I will pitch my idea tomorrow.",
+        "zh": "我明天要推介自己的想法。"
+      }
     ]
   },
   {
@@ -648,8 +687,8 @@
     "phonetic": "sprɪŋ",
     "pos": "n.",
     "meaning": "泉水/春天/弹簧",
-    "example": "The village gets its water from a natural spring.",
-    "exampleCn": "这个村庄从一处天然泉水中取水。",
+    "example": "Spring brings warm days.",
+    "exampleCn": "春天带来温暖的日子。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -658,6 +697,23 @@
     "ieltsLists": [
       "4",
       "24"
+    ],
+    "examples": [
+      {
+        "sense": "n. 春天",
+        "en": "Spring brings warm days.",
+        "zh": "春天带来温暖的日子。"
+      },
+      {
+        "sense": "n. 泉水；泉",
+        "en": "This spring has clear water.",
+        "zh": "这口泉的水很清澈。"
+      },
+      {
+        "sense": "n. 弹簧",
+        "en": "The spring inside the pen is broken.",
+        "zh": "笔里的弹簧坏了。"
+      }
     ]
   },
   {
@@ -1279,10 +1335,10 @@
     "id": 4326,
     "word": "race",
     "phonetic": "reɪs",
-    "pos": "v. / n.",
+    "pos": "n. / v.",
     "meaning": "v. 赛跑；参加竞速比赛；快速移动\nn. 赛跑；竞赛；种族；族群",
-    "example": "We race each other across the playground.",
-    "exampleCn": "我们在操场上互相比赛跑步。",
+    "example": "The race starts after lunch.",
+    "exampleCn": "比赛在午饭后开始。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -1291,6 +1347,23 @@
     "ieltsLists": [
       "24",
       "39"
+    ],
+    "examples": [
+      {
+        "sense": "n. 比赛",
+        "en": "The race starts after lunch.",
+        "zh": "比赛在午饭后开始。"
+      },
+      {
+        "sense": "v. 赛跑",
+        "en": "We race each other to the gate.",
+        "zh": "我们比赛看谁先跑到大门。"
+      },
+      {
+        "sense": "n. 种族；族群",
+        "en": "People of every race are welcome.",
+        "zh": "我们欢迎各个族群的人。"
+      }
     ]
   },
   {
@@ -1382,10 +1455,10 @@
     "id": 4332,
     "word": "trip",
     "phonetic": "trɪp",
-    "pos": "n.",
-    "meaning": "旅行/出行",
-    "example": "The school trip to Paris was very exciting.",
-    "exampleCn": "学校的巴黎之旅非常令人兴奋。",
+    "pos": "n. / v.",
+    "meaning": "n. 旅行；出行\nv. 绊倒；使绊倒（如 trip over）",
+    "example": "Our trip begins on Friday.",
+    "exampleCn": "我们的旅行周五开始。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -1393,6 +1466,18 @@
     "ieltsList": "24",
     "ieltsLists": [
       "24"
+    ],
+    "examples": [
+      {
+        "sense": "n. 旅行",
+        "en": "Our trip begins on Friday.",
+        "zh": "我们的旅行周五开始。"
+      },
+      {
+        "sense": "v. 绊倒",
+        "en": "Do not trip over the bag.",
+        "zh": "不要被那个包绊倒。"
+      }
     ]
   },
   {

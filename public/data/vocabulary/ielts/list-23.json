@@ -745,10 +745,10 @@
     "id": 4239,
     "word": "press",
     "phonetic": "pres",
-    "pos": "n.",
-    "meaning": "新闻界/出版社",
-    "example": "The press plays an important role in a democracy.",
-    "exampleCn": "新闻界在民主中扮演着重要角色。",
+    "pos": "n. / v.",
+    "meaning": "新闻界/出版社\nv. 按；压",
+    "example": "The press reported the news.",
+    "exampleCn": "新闻界报道了这则消息。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -756,6 +756,23 @@
     "ieltsList": "23",
     "ieltsLists": [
       "23"
+    ],
+    "examples": [
+      {
+        "sense": "n. 新闻界",
+        "en": "The press reported the news.",
+        "zh": "新闻界报道了这则消息。"
+      },
+      {
+        "sense": "n. 出版社",
+        "en": "She works for a university press.",
+        "zh": "她在一家大学出版社工作。"
+      },
+      {
+        "sense": "v. 按压",
+        "en": "Press this button to start.",
+        "zh": "按这个按钮开始。"
+      }
     ]
   },
   {

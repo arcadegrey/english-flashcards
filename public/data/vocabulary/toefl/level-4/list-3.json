@@ -563,16 +563,38 @@
     "id": 1648,
     "word": "stroke",
     "phonetic": "/stroʊk/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "一击/笔画/中风/轻抚",
-    "example": "A single stroke of the brush changed the painting.",
-    "exampleCn": "画笔的一笔改变了这幅画。",
+    "example": "One stroke of the axe split it.",
+    "exampleCn": "斧子一劈就把它劈开了。",
     "category": "toefl",
     "categories": [
       "toefl"
     ],
     "level": "4",
-    "list": "3"
+    "list": "3",
+    "examples": [
+      {
+        "sense": "n. 一击",
+        "en": "One stroke of the axe split it.",
+        "zh": "斧子一劈就把它劈开了。"
+      },
+      {
+        "sense": "n. 笔画",
+        "en": "Add one stroke to this character.",
+        "zh": "给这个字加一笔。"
+      },
+      {
+        "sense": "n. 中风",
+        "en": "She had a stroke last year.",
+        "zh": "她去年中风了。"
+      },
+      {
+        "sense": "v. 轻抚",
+        "en": "Please stroke the cat gently.",
+        "zh": "请轻轻抚摸这只猫。"
+      }
+    ]
   },
   {
     "id": 1649,
@@ -798,7 +820,7 @@
     "id": 1662,
     "word": "shed",
     "phonetic": "/ʃed/",
-    "pos": "v./n.",
+    "pos": "v. / n.",
     "meaning": "脱落/流出/棚屋",
     "example": "Trees shed their leaves in autumn.",
     "exampleCn": "树木在秋天落叶。",
@@ -812,6 +834,18 @@
     "ieltsList": "33",
     "ieltsLists": [
       "33"
+    ],
+    "examples": [
+      {
+        "sense": "v. 脱落",
+        "en": "Trees shed their leaves in autumn.",
+        "zh": "树木在秋天落叶。"
+      },
+      {
+        "sense": "n. 棚屋",
+        "en": "We keep bikes in the shed.",
+        "zh": "我们把自行车放在棚屋里。"
+      }
     ]
   },
   {
@@ -1348,10 +1382,10 @@
     "id": 1694,
     "word": "switch",
     "phonetic": "/swɪtʃ/",
-    "pos": "v./n.",
+    "pos": "v. / n.",
     "meaning": "转换/开关",
-    "example": "You can switch off the lights before leaving.",
-    "exampleCn": "离开前你可以关灯。",
+    "example": "We can switch to another plan.",
+    "exampleCn": "我们可以改用另一个计划。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -1362,6 +1396,23 @@
     "ieltsList": "27",
     "ieltsLists": [
       "27"
+    ],
+    "examples": [
+      {
+        "sense": "v. 转换",
+        "en": "We can switch to another plan.",
+        "zh": "我们可以改用另一个计划。"
+      },
+      {
+        "sense": "n. 开关",
+        "en": "The switch is beside the door.",
+        "zh": "开关在门旁边。"
+      },
+      {
+        "sense": "v. 关掉（switch off）",
+        "en": "Please switch off the kitchen light.",
+        "zh": "请关掉厨房的灯。"
+      }
     ]
   },
   {

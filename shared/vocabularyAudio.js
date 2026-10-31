@@ -11,6 +11,7 @@ import { TEACHING_P2_VOCABULARY_AUDIO } from './teachingP2VocabularyAudio.js';
 
 import { SHORT_EXAMPLE_VOCABULARY_AUDIO } from './shortExampleVocabularyAudio.js';
 import { SINGLE_EXAMPLE_VOCABULARY_AUDIO } from './singleExampleVocabularyAudio.js';
+import { MULTI_SENSE_VOCABULARY_AUDIO } from './multiSenseVocabularyAudio.js';
 
 const voices = new Set(['af_bella', 'am_michael', 'bf_emma', 'bm_george']);
 export const AUDIO_UPDATES_BASE_URL = (import.meta.env?.VITE_AUDIO_UPDATES_BASE_URL
@@ -19,7 +20,7 @@ export const AUDIO_UPDATES_BASE_URL = (import.meta.env?.VITE_AUDIO_UPDATES_BASE_
 export function correctedVocabularyAudioUrl(word, field, voice) {
   if (!word || !['word', 'example'].includes(field) || !voices.has(voice)) return null;
   const id = String(word.id ?? '');
-  for (const [batch, updates] of [['2026-10-31-single-example', SINGLE_EXAMPLE_VOCABULARY_AUDIO], ['2026-10-29-expansion-50', EXPANSION_50_VOCABULARY_AUDIO], ['2026-10-29-common-senses', COMMON_SENSES_VOCABULARY_AUDIO], ['2026-10-29-short-examples', SHORT_EXAMPLE_VOCABULARY_AUDIO], ['2026-10-29-p2', TEACHING_P2_VOCABULARY_AUDIO], ['2026-10-29-p1', TEACHING_P1_VOCABULARY_AUDIO], ['2026-10-29-feedback', FEEDBACK_VOCABULARY_AUDIO], ['2026-10-26-sense', SENSE_REVIEW_VOCABULARY_AUDIO], ['2026-10-26-name-place', NAME_PLACE_VOCABULARY_AUDIO]]) {
+  for (const [batch, updates] of [['2026-10-31-multi-sense', MULTI_SENSE_VOCABULARY_AUDIO], ['2026-10-31-single-example', SINGLE_EXAMPLE_VOCABULARY_AUDIO], ['2026-10-29-expansion-50', EXPANSION_50_VOCABULARY_AUDIO], ['2026-10-29-common-senses', COMMON_SENSES_VOCABULARY_AUDIO], ['2026-10-29-short-examples', SHORT_EXAMPLE_VOCABULARY_AUDIO], ['2026-10-29-p2', TEACHING_P2_VOCABULARY_AUDIO], ['2026-10-29-p1', TEACHING_P1_VOCABULARY_AUDIO], ['2026-10-29-feedback', FEEDBACK_VOCABULARY_AUDIO], ['2026-10-26-sense', SENSE_REVIEW_VOCABULARY_AUDIO], ['2026-10-26-name-place', NAME_PLACE_VOCABULARY_AUDIO]]) {
     const revisions = Object.hasOwn(updates, id) ? updates[id][field] : null;
     for (const revision of Array.isArray(revisions) ? revisions : [revisions]) {
       if (revision && word[field] === revision.text

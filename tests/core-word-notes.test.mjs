@@ -210,7 +210,7 @@ test('all active and retired vocabulary retains its own notes without rewriting 
     assert(stored, word);
     const frozen = Object.freeze({ ...stored });
     const before = JSON.stringify(frozen);
-    const hints = getCoreWordHints(frozen);
+    const hints = getCoreWordHints(frozen).filter(hint => hint.label !== '多义用法');
     const type = CORE_SYNONYM_GROUPS[entry.synonymGroup].comparisonType;
     assert.equal(hints[0].label, type === 'usage' ? '用法提示' : type === 'confusable' ? '易混词辨析' : '近义词辨析');
     const supplement = Object.hasOwn(commonSenses, String(stored.id)) ? commonSenses[stored.id] : null;

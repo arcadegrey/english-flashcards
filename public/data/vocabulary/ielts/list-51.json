@@ -66,10 +66,10 @@
     "id": 218,
     "word": "bear",
     "phonetic": "/beə(r)/",
-    "pos": "v./n.",
+    "pos": "v. / n.",
     "meaning": "承受；忍受；生（孩子）；熊",
-    "example": "I can't bear the pain.",
-    "exampleCn": "我忍受不了这疼痛。",
+    "example": "I cannot bear this noise.",
+    "exampleCn": "我受不了这种噪声。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -82,6 +82,23 @@
     "ieltsLists": [
       "8",
       "51"
+    ],
+    "examples": [
+      {
+        "sense": "v. 忍受",
+        "en": "I cannot bear this noise.",
+        "zh": "我受不了这种噪声。"
+      },
+      {
+        "sense": "n. 熊",
+        "en": "A bear crossed the road.",
+        "zh": "一头熊穿过了马路。"
+      },
+      {
+        "sense": "v. 生育（较正式）",
+        "en": "She will bear a child in May.",
+        "zh": "她将在五月生孩子。"
+      }
     ]
   },
   {
@@ -447,10 +464,10 @@
     "id": 2254,
     "word": "tap",
     "phonetic": "/tæp/",
-    "pos": "v./n.",
+    "pos": "v. / n.",
     "meaning": "轻拍/水龙头/开发利用",
-    "example": "Please tap the screen to start the program.",
-    "exampleCn": "请轻点屏幕来启动程序。",
+    "example": "Tap the screen to continue.",
+    "exampleCn": "轻点屏幕以继续。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -462,6 +479,23 @@
     "ieltsLists": [
       "25",
       "51"
+    ],
+    "examples": [
+      {
+        "sense": "v. 轻拍",
+        "en": "Tap the screen to continue.",
+        "zh": "轻点屏幕以继续。"
+      },
+      {
+        "sense": "n. 水龙头（英式）",
+        "en": "Please turn off the tap.",
+        "zh": "请关掉水龙头。"
+      },
+      {
+        "sense": "v. 开发利用",
+        "en": "We can tap the sun's energy.",
+        "zh": "我们可以利用太阳能。"
+      }
     ]
   },
   {

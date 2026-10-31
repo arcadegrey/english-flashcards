@@ -1,0 +1,690 @@
+@218 bear
+v. 忍受|I cannot bear this noise.|我受不了这种噪声。
+n. 熊|A bear crossed the road.|一头熊穿过了马路。
+v. 生育（较正式）|She will bear a child in May.|她将在五月生孩子。
+# bear 表示“忍受”时常用于 cannot bear；动物“熊”是名词。生育义较正式，日常常说 have a baby。
+@290 bow
+v. 鞠躬（/baʊ/）|Please bow to the audience.|请向观众鞠躬。
+n. 弓（/bəʊ/）|He carried a bow and arrows.|他带着一把弓和一些箭。
+n. 蝴蝶结（/bəʊ/）|She tied the ribbon in a bow.|她把丝带打成蝴蝶结。
+# 鞠躬读 /baʊ/；弓和蝴蝶结读 /bəʊ/（美音 /boʊ/）。不要把同形词的读音混用。
+@850 wound
+n. 伤口（/wuːnd/）|The nurse cleaned the wound.|护士清洗了伤口。
+v. 使受伤（/wuːnd/）|The sharp glass may wound your hand.|锋利的玻璃可能划伤你的手。
+v. 缠绕（wind 的过去式，/waʊnd/）|He wound the string around the box.|他把细绳缠在盒子上。
+# wound 表示伤口或使受伤时读 /wuːnd/；作为 wind（缠绕）的过去式和过去分词时读 /waʊnd/。
+@1048 sole
+adj. 唯一的|She is the sole owner of the shop.|她是这家商店的唯一店主。
+n. 鞋底|There is a hole in the sole.|鞋底有一个洞。
+# sole 作形容词强调“唯一的”，常放在名词前；鞋底义是可数名词。
+@1086 bark
+n. 树皮|The bark is rough and thick.|这层树皮粗糙而厚实。
+v. 吠叫|Dogs often bark at strangers.|狗常常对陌生人叫。
+# 树皮义通常作不可数名词；狗叫可用动词 bark，或用名词 a bark 表示一声叫。
+@1170 object
+n. 物体（/ˈɒbdʒekt/）|Please move this heavy object.|请把这个重物挪开。
+n. 目标（较正式）|Our main object is to save time.|我们的主要目标是节省时间。
+v. 反对（/əbˈdʒekt/）|I object to this unfair rule.|我反对这条不公平的规定。
+# 名词 object 重音在前；动词重音在后。“反对”常用 object to，to 后接名词或动名词。
+@1171 scale
+n. 规模|We cannot work on this scale.|我们无法以这种规模开展工作。
+n. 刻度|Read the scale on the thermometer.|读出温度计上的刻度。
+v. 攀登|They tried to scale the wall.|他们试图翻越这堵墙。
+v. 按比例缩放|Please scale the picture down.|请把这张图片按比例缩小。
+# on a large scale 表示大规模地；scale down 表示按比例缩小，不是攀爬。
+@1198 stock
+n. 库存|The shop has no milk in stock.|这家店没有牛奶库存。
+n. 股票|She bought stock in the company.|她买了这家公司的股票。
+v. 备有；储备|This shop stocks fresh fruit.|这家店备有新鲜水果。
+# in stock 表示有现货；stock 作动词可指商店备有某种商品。
+@1413 sink
+v. 下沉|The boat began to sink.|船开始下沉。
+n. 水槽|Please wash the cups in the sink.|请在水槽里洗杯子。
+# 下沉是动词义，过去式 sank、过去分词 sunk；厨房里的水槽是可数名词。
+@1414 tie
+v. 系；绑|Please tie your shoes before running.|跑步前请系好鞋带。
+n. 领带|He wore a blue tie.|他戴着一条蓝色领带。
+n. 平局|The game ended in a tie.|比赛以平局结束。
+# tie 作动词可接鞋带等物体；领带和平局是两个不同的可数名词义。
+@1466 stake
+n. 桩|Push the stake into the ground.|把这根桩打进地里。
+n. 股份|She owns a stake in the company.|她持有这家公司的股份。
+n. 利害关系|They have a stake in its success.|这件事成功与否关系到他们的利益。
+v. 用桩支撑|He staked the young tree.|他给那棵小树打桩支撑。
+# a stake in 可以指所持股份，也可以指与某事有关的利益；不要都译成木桩。
+@1482 seal
+n. 海豹|The seal swam near the boat.|那只海豹在船边游动。
+n. 印章|The letter bears an official seal.|这封信盖有官方印章。
+n. 封条；密封层|Do not break the seal.|不要破坏封条。
+v. 密封|Please seal the bag tightly.|请把袋子封严。
+# seal 可以指动物海豹，也可以指印章、封条；作动词时常指把开口封好。
+@1535 rear
+adj. 后面的|Please use the rear door.|请走后门。
+n. 后部|The garden is at the rear.|花园在后面。
+v. 饲养|They rear sheep on the farm.|他们在农场养羊。
+# rear 作形容词通常放在名词前；at the rear 指在后面。饲养或抚养义作动词，较正式。
+@1577 plot
+n. 情节|The film has a simple plot.|这部电影的情节很简单。
+n. 小块土地|We grow beans on this plot.|我们在这小块地上种豆子。
+v. 密谋|They plot to escape at night.|他们密谋在夜间逃走。
+v. 绘制|We plot the results on a graph.|我们把结果绘制在图上。
+# plot 的故事情节、土地和密谋义要按语境区分；plot data 指把数据标在图上。
+@1648 stroke
+n. 一击|One stroke of the axe split it.|斧子一劈就把它劈开了。
+n. 笔画|Add one stroke to this character.|给这个字加一笔。
+n. 中风|She had a stroke last year.|她去年中风了。
+v. 轻抚|Please stroke the cat gently.|请轻轻抚摸这只猫。
+# stroke 作名词可指一次动作、笔画或中风；轻抚某人或动物时用动词。
+@1662 shed
+v. 脱落|Trees shed their leaves in autumn.|树木在秋天落叶。
+n. 棚屋|We keep bikes in the shed.|我们把自行车放在棚屋里。
+# shed 的过去式和过去分词仍是 shed；棚屋义是可数名词。
+@1694 switch
+v. 转换|We can switch to another plan.|我们可以改用另一个计划。
+n. 开关|The switch is beside the door.|开关在门旁边。
+v. 关掉（switch off）|Please switch off the kitchen light.|请关掉厨房的灯。
+# switch to 后接要改用的事物；switch off 是关掉，switch on 是打开。
+@1719 grave
+adj. 严重的|This is a grave mistake.|这是一个严重的错误。
+n. 坟墓|They placed flowers on the grave.|他们在坟墓上放了鲜花。
+# grave 作形容词表示严重或严肃，不表示“坟墓的”；坟墓义是可数名词。
+@1984 row
+n. 一排（/rəʊ/）|Please sit in the front row.|请坐在前排。
+v. 划船（/rəʊ/）|We row across the lake.|我们划船穿过湖面。
+n. 争吵（英式，/raʊ/）|They had a row after dinner.|他们晚饭后吵了一架。
+# 一排和划船读 /rəʊ/（美音 /roʊ/）；英式“争吵”读 /raʊ/。
+@2205 pitch
+n. 音高|The note has a high pitch.|这个音的音高很高。
+n. 球场（英式）|The players ran onto the pitch.|球员们跑进球场。
+v. 投掷|He can pitch the ball fast.|他能把球投得很快。
+v. 推销想法|I will pitch my idea tomorrow.|我明天要推介自己的想法。
+# pitch 可指音高，也可指英式用语中的球场；pitch an idea 是向别人推介想法。
+@2220 lap
+n. 大腿上部|The child sat on her lap.|孩子坐在她的大腿上。
+n. 一圈|Run one lap around the track.|绕跑道跑一圈。
+v. 舔着喝|The cat will lap up the milk.|猫会舔着喝牛奶。
+v. 轻拍|Small waves lap against the boat.|小浪轻拍着船身。
+# on someone's lap 是坐在某人大腿上；跑道的一圈是 a lap；lap up 可指动物舔着喝。
+@2235 bound
+adj. 一定会的（be bound to）|You are bound to make mistakes.|你难免会犯错。
+v. 捆绑（bind 的过去分词）|His hands were bound with rope.|他的双手被绳子捆住了。
+v. 跳跃|The dog will bound across the field.|那只狗会跳着跑过田野。
+n. 界限（常用复数 bounds）|Please keep within these bounds.|请不要超出这些界限。
+# be bound to do 表示一定或很可能做某事；bound 也可以是 bind 的过去式和过去分词。界限义常用复数 bounds。
+@2254 tap
+v. 轻拍|Tap the screen to continue.|轻点屏幕以继续。
+n. 水龙头（英式）|Please turn off the tap.|请关掉水龙头。
+v. 开发利用|We can tap the sun's energy.|我们可以利用太阳能。
+# 水龙头义在英式英语中常用 tap；美式常说 faucet。tap resources 指开发利用资源。
+@2350 court
+n. 法院|The judge works in this court.|这位法官在这家法院工作。
+n. 球场|The tennis court is empty.|网球场上没有人。
+n. 宫廷|She served at the royal court.|她曾在王室宫廷任职。
+v. 追求（较正式）|He hoped to court her.|他希望追求她。
+# court 可以指法院、球场或宫廷；作动词“追求”时较正式，也可表示争取支持。
+@2464 crane
+n. 鹤|A crane stood by the lake.|一只鹤站在湖边。
+n. 起重机|The crane lifted a heavy box.|起重机吊起了一个重箱子。
+v. 伸长脖子看|She craned her neck to see.|她伸长脖子张望。
+# 动物鹤与起重机都是名词；crane one's neck 指为了看清而伸长脖子。
+@2793 hail
+n. 冰雹|Hail hit the roof last night.|昨晚冰雹打在屋顶上。
+v. 招呼；拦车|He tried to hail a taxi.|他试图招手拦出租车。
+v. 称赞|They hail her as a hero.|他们称赞她是英雄。
+v. 来自（hail from）|My grandparents hail from Wales.|我的祖父母来自威尔士。
+# hail a taxi 是招手拦车；hail someone as 表示称赞某人为；hail from 表示来自某地。
+@2881 jar
+n. 罐子|Put the jam in this jar.|把果酱放进这个罐子里。
+v. 使不适；刺激|The sudden noise jarred my nerves.|突如其来的噪声让我心神不宁。
+# jar 作名词指罐子；动词可表示让人不舒服或不安，常与神经、感受等搭配。
+@3156 bolt
+n. 螺栓|Please tighten this loose bolt.|请拧紧这颗松动的螺栓。
+n. 闪电（a bolt of lightning）|A bolt of lightning lit the sky.|一道闪电照亮了天空。
+v. 猛冲|The dog may bolt through the gate.|那只狗可能会冲出大门。
+v. 闩上|Please bolt the back door.|请闩上后门。
+# 闪电常用 a bolt of lightning；bolt 作动词可指突然冲出去，也可指用门闩闩门。
+@3184 toll
+n. 通行费|We paid a toll at the bridge.|我们在桥边交了通行费。
+n. 死亡人数（death toll）|The death toll rose overnight.|死亡人数在一夜之间上升了。
+n. 代价；损害（take a toll）|The hard work took a toll on him.|繁重的工作损害了他的健康。
+v. 鸣钟|The bells toll at noon.|钟在中午敲响。
+# toll 可指通行费；death toll 指死亡人数；take a toll on 表示对某人或某物造成损害。
+@4002 mean
+v. 意思是|What does this sign mean?|这个标志是什么意思？
+n. 平均数|The mean of two and four is three.|二和四的平均数是三。
+adj. 刻薄的|He was mean to his little sister.|他对妹妹很刻薄。
+adj. 吝啬的|He is mean with money.|他花钱很吝啬。
+# mean 的动词、名词和形容词义要分开；mean to do 表示打算做某事，mean doing 表示意味着做某事。
+@4326 race
+n. 比赛|The race starts after lunch.|比赛在午饭后开始。
+v. 赛跑|We race each other to the gate.|我们比赛看谁先跑到大门。
+n. 种族；族群|People of every race are welcome.|我们欢迎各个族群的人。
+# race 作名词可指比赛，也可指种族或族群；动词可直接与其他参赛者或目的地搭配。
+@4378 match
+v. 相配|My shoes match this coat.|我的鞋和这件外套很配。
+n. 火柴|Light the candle with a match.|用一根火柴点燃蜡烛。
+n. 比赛|The match begins at seven.|比赛七点开始。
+# match 作动词可以直接接所搭配的物品；a match 可能是一根火柴，也可能是一场比赛。
+@4529 order
+v. 点餐|I would like to order some soup.|我想点一些汤。
+n. 命令|The soldier followed the order.|士兵服从了命令。
+n. 顺序|Put these numbers in order.|把这些数字按顺序排列。
+n. 订单|We placed an order for rice.|我们下了一份大米订单。
+# 点餐用 order food；排列顺序常用 in order；下订单可以说 place an order。
+@4672 store
+v. 储存|Store the cheese in the fridge.|把奶酪储存在冰箱里。
+n. 商店|This store sells fresh bread.|这家商店卖新鲜面包。
+# store 作动词可直接接要储存的东西；作可数名词时表示商店，美式英语中很常见。
+@4876 state
+v. 陈述|Please state your name.|请说出你的姓名。
+n. 州|Texas is a large state.|得克萨斯是一个大州。
+n. 状态|The house is in a poor state.|这座房子的状况很差。
+n. 国家|These states share a border.|这些国家有共同边界。
+# state 作动词表示清楚陈述；名词可指州、国家或状态，不能只按一个中文义理解。
+@4947 deal
+n. 交易；协议|They agreed to a fair deal.|他们达成了一项公平的协议。
+v. 处理（deal with）|We must deal with this problem.|我们必须处理这个问题。
+v. 发牌|Please deal the cards.|请发牌。
+# deal with 后接要处理的人或事情；发牌用 deal the cards。动词过去式和过去分词是 dealt。
+@5024 sentence
+n. 句子|Write one sentence about your family.|写一句关于你家人的话。
+n. 判决；刑罚|He received a short prison sentence.|他被判了一段较短的监禁刑期。
+v. 判刑|The judge sentenced him to prison.|法官判他入狱。
+# sentence 作名词可指句子或刑罚；动词常用 sentence someone to，后接刑罚。
+@5046 fine
+adj. 好的；身体不错的|She feels fine today.|她今天感觉不错。
+n. 罚款|He paid a fine for parking there.|他因在那里停车而交了罚款。
+adj. 细的|Use a brush with a fine tip.|用一支笔尖很细的画笔。
+v. 处以罚款|They fined him for speeding.|他们因他超速而罚了款。
+# fine 不只有“好的”；罚款可以用名词 a fine，也可以用动词 fine someone for something。
+@5118 matter
+n. 事情|This is a private matter.|这是一件私事。
+n. 物质|Matter can be solid, liquid, or gas.|物质可以呈固态、液态或气态。
+v. 要紧；重要|Your opinion matters to me.|你的看法对我很重要。
+# matter 作名词可指事情或物质；作动词表示重要，常见 it matters 和 it does not matter。
+@5353 mind
+n. 头脑；心智|You have a curious mind.|你有一颗好奇的心。
+v. 介意|Do you mind if I sit here?|你介意我坐在这里吗？
+v. 留心；注意|Mind the steps.|当心台阶。
+# mind 表示介意时，后面常接名词、动名词或 if 从句；Mind the steps 是提醒别人注意台阶。
+@5451 like
+v. 喜欢|I like these songs.|我喜欢这些歌。
+prep. 像|This cloud looks like a rabbit.|这朵云看起来像一只兔子。
+v. 想要（would like）|I would like some water.|我想要一些水。
+n. 喜好（常用复数 likes）|Tell me your likes and dislikes.|告诉我你的喜好和厌恶。
+# like 表示喜欢时作动词；look like 中的 like 表示像。would like 语气较委婉，不是一般现在时的“喜欢”。
+@5488 still
+adv. 仍然|He is still at school.|他仍在上学。
+adj. 静止的|Keep the camera still.|保持相机不动。
+n. 电影剧照|This is a still from the film.|这是那部电影的一张剧照。
+adv. 尽管如此|Still, we decided to try.|尽管如此，我们还是决定试一试。
+# still 可表示仍然，也可描述静止；a still 是一张剧照。句首 Still 还能表示尽管如此。
+@5497 school
+n. 学校|The school is near my home.|学校在我家附近。
+n. 鱼群|A school of fish swam past.|一群鱼游了过去。
+v. 训练（较正式）|She schooled herself to stay calm.|她训练自己保持冷静。
+# a school of fish 表示一群鱼，与学校义不同；school 作动词时可表示训练或教育。
+@5569 set
+n. 一套；一组|This set of cups is new.|这套杯子是新的。
+v. 放置|Set the bag by the door.|把包放在门旁边。
+v. 设定|Please set the alarm for six.|请把闹钟设为六点。
+v. 日落|The sun will set soon.|太阳很快就要落山了。
+v. 凝固|The jelly will set in the fridge.|果冻会在冰箱里凝固。
+# set 的过去式和过去分词仍是 set。a set of 后接一组物品；太阳落山和液体凝固也可用动词 set。
+@5572 long
+adj. 长的|This bridge is very long.|这座桥很长。
+adv. 长时间地|Have you been waiting long?|你已经等很久了吗？
+v. 渴望|I long to see my family.|我渴望见到家人。
+# long 可以描述长度，也可以表示时间久；动词 long 常用 long to do 或 long for something。
+@5596 kind
+adj. 友善的|She is kind to new students.|她对新同学很友善。
+n. 种类|What kind of music do you like?|你喜欢哪种音乐？
+# 友善义是形容词，常用 be kind to；种类义是名词，常用 a kind of 或 what kind of。
+@5709 light
+adj. 轻的|This box is light.|这个盒子很轻。
+adj. 明亮的|This room is light and warm.|这个房间明亮又温暖。
+n. 光|The light hurts my eyes.|这光刺得我眼睛疼。
+v. 点燃|Please light the candle.|请点燃蜡烛。
+adv. 轻装地|They always travel light.|他们旅行总是轻装上阵。
+# light 表示轻时与 heavy 相对，表示明亮时与 dark 相对；名词是光，动词可指点燃。
+@6158 kid
+n. 小孩|The kid is learning to swim.|那个孩子正在学游泳。
+n. 小山羊|A young goat is called a kid.|小山羊叫作 kid。
+v. 开玩笑|I am only kidding.|我只是开个玩笑。
+# kid 可以指孩子或小山羊；动词 kid 的进行式是 kidding，常见 I am kidding 表示我在开玩笑。
+@7235 patient
+n. 病人|The patient is resting now.|病人现在正在休息。
+adj. 有耐心的|Please be patient with the children.|请对孩子们耐心一点。
+# patient 作名词是病人；作形容词是有耐心的，常用 be patient with someone。
+@7308 pretty
+adj. 漂亮的|That is a pretty little garden.|那是一个漂亮的小花园。
+adv. 相当（非正式）|The test was pretty easy.|这次考试相当容易。
+# pretty 放在名词前可表示漂亮；放在形容词或副词前可表示相当，通常较口语化。
+@7373 safe
+adj. 安全的|Your bags are safe here.|你的包放在这里很安全。
+n. 保险箱|Put the money in the safe.|把钱放进保险箱里。
+# safe 作形容词可作表语；a safe 是一个保险箱，不是“一个安全的”。
+@7483 pool
+n. 水池；游泳池|The pool is full of children.|游泳池里有很多孩子。
+n. 台球|We play pool after work.|我们下班后打台球。
+v. 汇集；共享|We can pool our money.|我们可以把钱凑在一起。
+# pool 可以指水池或台球；pool money 或 resources 表示把钱或资源汇集起来共同使用。
+@7501 novel
+n. 小说|This novel has a happy ending.|这部小说有一个圆满的结局。
+adj. 新颖的|A novel idea saved us time.|一个新颖的想法为我们节省了时间。
+# novel 作名词指长篇小说；作形容词强调新颖，不只是新出版或刚买到。
+@7572 sharp
+adj. 锋利的|This knife is very sharp.|这把刀很锋利。
+adj. 敏锐的|She has a sharp mind.|她思维敏锐。
+adv. 准时；整|The train leaves at six sharp.|火车六点整发车。
+n. 升半音的音符|Play an F sharp.|弹一个升 F 音。
+# sharp 可以形容刀锋或头脑；时间后面的 sharp 表示整点、准时，音乐中可指升半音。
+@383 case
+n. 情况|In this case, we should wait.|在这种情况下，我们应该等一等。
+n. 箱子；盒子|Put the camera in its case.|把相机放进相机盒里。
+n. 案件|The police are working on this case.|警方正在调查这个案件。
+# case 可以指情况、案件或箱盒；in this case 常用来承接前文，表示在这种情况下。
+@434 chest
+n. 胸部|He felt pain in his chest.|他感到胸口疼。
+n. 箱子|The blankets are in that wooden chest.|毯子在那个木箱里。
+# chest 可指人的胸部，也可指一个较大的储物箱；要结合身体或物品语境判断。
+@707 organ
+n. 器官|The heart is an important organ.|心脏是一个重要器官。
+n. 机构（较正式）|The court is an organ of the state.|法院是国家的一个机构。
+n. 管风琴|She plays the organ at church.|她在教堂弹管风琴。
+# 器官、正式机构和管风琴是 organ 的不同名词义；演奏乐器时常用 play the organ。
+@1746 trunk
+n. 树干|The tree has a thick trunk.|这棵树的树干很粗。
+n. 躯干|Keep your trunk straight during this exercise.|做这个动作时保持躯干挺直。
+n. 汽车后备箱（美式）|Put the bags in the trunk.|把包放进汽车后备箱里。
+n. 象鼻|The elephant lifted its trunk.|大象抬起了鼻子。
+# trunk 可指树干、躯干、象鼻或汽车后备箱；汽车后备箱义主要用于美式英语，英式常说 boot。
+@1880 vessel
+n. 船只（较正式）|This vessel carries food to the island.|这艘船向岛上运送食物。
+n. 容器（较正式）|Fill the vessel with clean water.|往容器里装上干净的水。
+n. 血管（blood vessel）|A blood vessel carries blood.|血管输送血液。
+# vessel 是较正式的船只或容器用语；blood vessel 是血管，不是装血的普通器皿。
+@3669 plate
+n. 盘子|Put the bread on this plate.|把面包放在这个盘子上。
+n. 地壳板块|The two plates move slowly apart.|这两个板块正缓慢地分离。
+# plate 的盘子义与地壳板块义不同；地理语境中的 plates 不应译成餐盘。
+@3688 spring
+n. 春天|Spring brings warm days.|春天带来温暖的日子。
+n. 泉水；泉|This spring has clear water.|这口泉的水很清澈。
+n. 弹簧|The spring inside the pen is broken.|笔里的弹簧坏了。
+# spring 可指春季、泉或弹簧。季节名词通常不用冠词；a spring 可以是一口泉或一个弹簧。
+@3964 record
+n. 记录（/ˈrekɔːd/）|She set a new record.|她创造了一项新纪录。
+n. 唱片（/ˈrekɔːd/）|This record belonged to my grandfather.|这张唱片以前属于我的祖父。
+v. 录制（/rɪˈkɔːd/）|Please record the lesson.|请把这节课录下来。
+# record 作名词时重音在前，作动词时重音在后；唱片和纪录都用名词读音。
+@4010 table
+n. 桌子|The keys are on the table.|钥匙在桌上。
+n. 表格|This table shows our test scores.|这张表列出了我们的考试分数。
+# table 可以指家具，也可以指按行列排列的表格；表格义常见于 shows、lists 等数据说明中。
+@4239 press
+n. 新闻界|The press reported the news.|新闻界报道了这则消息。
+n. 出版社|She works for a university press.|她在一家大学出版社工作。
+v. 按压|Press this button to start.|按这个按钮开始。
+# the press 常指新闻界；a university press 是大学出版社；press the button 用的是动词。
+@4375 nail
+n. 钉子|Use a nail to hang the picture.|用一颗钉子把画挂起来。
+n. 指甲|There is paint on my nail.|我的指甲上沾着油漆。
+# nail 可指钉子或指甲；toenail 是脚趾甲。具体物体要结合钉画或手指的语境判断。
+@4418 iron
+n. 铁|Iron is a useful metal.|铁是一种有用的金属。
+n. 熨斗|The iron is too hot.|熨斗太烫了。
+v. 熨烫|Please iron this shirt.|请熨一下这件衬衫。
+# 金属铁通常是不可数名词；熨斗是可数名词，熨衣服时 iron 也可作动词。
+@4431 mine
+n. 矿井|It is dark inside the mine.|矿井里很暗。
+pron. 我的东西|This blue coat is mine.|这件蓝外套是我的。
+n. 地雷|The road was closed because of a mine.|这条路因发现地雷而封闭了。
+v. 采矿|They mine coal in this area.|他们在这个地区采煤。
+# mine 作代词可单独使用，不在后面再加名词；名词可指矿井或地雷，动词可指开采矿物。
+@4590 jam
+n. 果酱|I like jam on warm bread.|我喜欢在温热的面包上抹果酱。
+n. 堵塞（traffic jam）|We were late because of a traffic jam.|我们因为堵车而迟到了。
+v. 卡住；堵塞|The paper may jam the printer.|这张纸可能会卡住打印机。
+# jam 作果酱义通常不可数；a traffic jam 是一次交通堵塞；动词可指把机器卡住。
+@4658 vault
+n. 金库|The gold is stored in a vault.|黄金存放在金库里。
+n. 穹顶|The church has a stone vault.|这座教堂有一个石砌穹顶。
+n. 跳马（体操）|She practises the vault every day.|她每天练习跳马。
+# vault 的金库、拱顶和体操跳马义不同；跳马也可用作动词，表示借助支撑跃过障碍物。
+@4790 stamp
+n. 邮票|Put a stamp on the envelope.|在信封上贴一张邮票。
+n. 印章|Use this stamp on the form.|在表格上使用这个印章。
+v. 盖章|Please stamp this form.|请在这张表格上盖章。
+v. 跺脚|Do not stamp your feet.|不要跺脚。
+# 邮票和印章都是 stamp 的名词义；盖章和跺脚是动词义，要看后面的宾语。
+@5367 palm
+n. 手掌|Hold the coin in your palm.|把硬币握在手心里。
+n. 棕榈树|A tall palm grows near the beach.|海滩附近长着一棵高大的棕榈树。
+# palm 既可指手掌，也可指棕榈树；手心常用 in the palm of one's hand 表达。
+@5415 will
+modal v. 将会|I will call you tomorrow.|我明天会给你打电话。
+n. 意志|She has a strong will.|她意志坚强。
+n. 遗嘱|He left the house to me in his will.|他在遗嘱里把房子留给了我。
+# will 作情态动词时后接动词原形；a strong will 是坚强的意志；in a will 可指在遗嘱中。
+@5465 well
+adv. 好地|She reads very well.|她读得很好。
+adj. 身体好的|I feel well again.|我身体又好了。
+n. 井|The well is full of water.|井里满是水。
+interj. 好了；那么|Well, what do you think?|那么，你怎么看？
+# well 修饰动作时常作副词；表示身体好时可作形容词；井义是可数名词。
+@5589 lot
+n. 许多（a lot of）|We have a lot of work.|我们有很多工作。
+n. 地块|They bought a small lot to build on.|他们买了一小块地用来盖房。
+n. 签（draw lots）|We drew lots to choose a team.|我们抽签选队伍。
+# a lot of 后面可接可数或不可数名词；draw lots 表示抽签，不是画许多东西。
+@5591 second
+num. 第二|This is my second visit.|这是我第二次来访。
+n. 秒|Wait a second, please.|请稍等一秒。
+v. 附议（较正式）|I second that proposal.|我附议那个提案。
+# second 可以表示次序或时间单位；在议事场合，second a proposal 表示附议一个提案。
+@5644 watch
+v. 观看；观察|We watch birds by the lake.|我们在湖边观察鸟类。
+n. 手表|My watch has stopped.|我的手表停了。
+n. 值班；看守（on watch）|The guard is on watch tonight.|警卫今晚值班。
+# watch 作动词表示留意地看；手表是可数名词；on watch 表示正在值班或警戒。
+@5682 bank
+n. 银行|The bank opens at nine.|银行九点开门。
+n. 河岸|We sat on the river bank.|我们坐在河岸上。
+# bank 可能是银行，也可能是河岸；river bank 中的 bank 与金融业务无关。
+@5697 pass
+v. 经过|We pass the school every morning.|我们每天早上都经过学校。
+v. 通过考试|She hopes to pass the test.|她希望通过这次考试。
+v. 递给|Please pass me the salt.|请把盐递给我。
+n. 通行证|You need a pass to enter.|你需要通行证才能进去。
+# pass 可直接接地点、考试或要递的物品；a pass 是通行证，不能都理解成经过。
+@5705 ground
+n. 地面|The keys fell on the ground.|钥匙掉到了地上。
+adj. 磨碎的（grind 的过去分词）|Add some ground pepper.|加一些胡椒粉。
+v. 使停飞|The storm grounded the planes.|暴风雨使飞机停飞。
+n. 理由（常用复数 grounds）|We have grounds for concern.|我们有理由担忧。
+# ground 可指地面，也可以是 grind（磨碎）的过去式和过去分词；grounds for 表示做某事的理由。
+@5719 lie
+v. 躺|Please lie on the bed.|请躺在床上。
+v. 说谎|Do not lie to your parents.|不要对父母说谎。
+n. 谎言|That story is a lie.|那个故事是谎话。
+v. 位于|The village lies near a river.|这个村庄位于一条河附近。
+# 躺是 lie–lay–lain，说谎是 lie–lied–lied，两者都是不及物用法；lay（放置）通常还需要宾语。
+@5728 season
+n. 季节|Winter is my favorite season.|冬天是我最喜欢的季节。
+v. 调味|Season the soup with a little salt.|给汤加一点盐调味。
+n. 赛季|The football season starts in August.|足球赛季在八月开始。
+# season 作名词可指自然季节或活动赛季；season food with 后接调味品。
+@5731 wear
+v. 穿；戴|I wear glasses for reading.|我看书时戴眼镜。
+n. 磨损|The shoes show signs of wear.|这双鞋有磨损的痕迹。
+v. 磨损（wear out）|Rough roads wear out the tires.|崎岖的道路会磨坏轮胎。
+# wear 表示已经穿戴着的状态，put on 强调穿戴动作；wear out 可以表示用坏或磨损。
+@5757 bit
+n. 少量（a bit of）|Add a bit of salt.|加一点盐。
+v. 咬（bite 的过去式）|The dog bit my shoe.|那只狗咬了我的鞋。
+n. 比特|A bit can be zero or one.|一个比特可以是零或一。
+# a bit of 表示一点；bit 也是 bite（咬）的过去式。计算机里的 bit 指一个二进制数位。
+@5775 plant
+n. 植物|Water the plant near the window.|给窗边的植物浇水。
+n. 工厂|My uncle works at a car plant.|我叔叔在一家汽车厂工作。
+v. 种植|We plant beans every spring.|我们每年春天种豆子。
+# plant 不一定是植物；a car plant 是汽车厂，plant seeds 或 beans 中的 plant 是动词。
+@5791 page
+n. 页|Read the last page first.|先读最后一页。
+n. 网页|The page loads very slowly.|这个网页加载得很慢。
+v. 呼叫；寻呼|The nurse paged the doctor.|护士呼叫了医生。
+# page 可指纸页或网页；作动词时可指通过广播或寻呼设备呼叫某人。
+@5797 rest
+v. 休息|You should rest after lunch.|你午饭后应该休息一下。
+n. 剩余部分|Save the rest for tomorrow.|把剩下的留到明天。
+v. 支撑；靠在（rest on）|The roof rests on wooden posts.|屋顶由木柱支撑。
+# the rest 指其余部分；rest on 可以指靠在或支撑在某物上，不都是休息。
+@5798 present
+n. 礼物（/ˈprezənt/）|This present is for you.|这份礼物是给你的。
+adj. 在场的（/ˈprezənt/）|All the students are present.|所有学生都到场了。
+adj. 现在的（/ˈprezənt/）|We like our present home.|我们喜欢现在的家。
+v. 提出；展示（/prɪˈzent/）|Please present your plan to the class.|请向全班展示你的计划。
+# present 作名词或形容词时重音在前；作动词时重音在后。礼物、在场和展示是不同用法。
+@5809 sound
+n. 声音|I heard a strange sound.|我听到了一种奇怪的声音。
+v. 听起来|That idea sounds good.|那个想法听起来不错。
+adj. 可靠的|She gave me sound advice.|她给了我可靠的建议。
+n. 海峡；海湾|The ferry crosses the sound every day.|渡船每天横渡这片海峡。
+adv. 酣畅地（sound asleep）|He is sound asleep.|他睡得很熟。
+# sound 作系动词时后接形容词，如 sounds good；sound advice 表示可靠的建议，不是声音建议。
+@5841 miss
+v. 错过|Do not miss the last bus.|不要错过末班车。
+v. 想念|I miss my old friends.|我想念老朋友们。
+v. 未击中|The ball missed the goal.|球没有射进球门。
+n. 小姐（称呼 Miss）|Miss Lee teaches us music.|李老师教我们音乐。
+# miss 可指错过、想念或未击中；称呼人的 Miss 要大写，后面通常接姓氏。
+@5847 park
+n. 公园|We walk in the park after dinner.|我们晚饭后在公园散步。
+v. 停车|Do not park beside the gate.|不要把车停在大门旁。
+# park 作名词指公园；作动词时表示停车，后面可以接车辆或地点。
+@5867 fly
+v. 飞|Birds can fly over the wall.|鸟能飞过这堵墙。
+n. 苍蝇|A fly landed on my cup.|一只苍蝇落在了我的杯子上。
+v. 乘飞机|We fly to Rome tomorrow.|我们明天坐飞机去罗马。
+# fly 作名词时是一只苍蝇；作动词可指飞行或乘飞机。过去式 flew，过去分词 flown。
+@5903 fit
+v. 合身；适合|These shoes fit me well.|这双鞋很合我的脚。
+adj. 健康的|She keeps fit by swimming.|她通过游泳保持健康。
+n. 一阵发作|He had a fit of coughing.|他一阵咳嗽。
+v. 安装|Please fit a new lock.|请安装一把新锁。
+# fit 可指尺寸合适、身体健康或一阵发作；a fit of coughing 是一阵咳嗽，不是合身的咳嗽。
+@5918 wind
+n. 风（/wɪnd/）|The wind is cold today.|今天的风很冷。
+v. 缠绕（/waɪnd/）|Wind the rope around the pole.|把绳子缠在杆子上。
+v. 上发条（/waɪnd/）|Please wind the clock each morning.|请每天早上给钟上发条。
+# 风读 /wɪnd/；缠绕或上发条读 /waɪnd/，这两个动词义的过去式和过去分词都是 wound（/waʊnd/）。
+@5919 key
+n. 钥匙|I lost my house key.|我把家门钥匙弄丢了。
+n. 按键|Press the green key.|按绿色的键。
+n. 关键|Practice is the key to progress.|练习是进步的关键。
+v. 键入（key in）|Please key in your name.|请键入你的姓名。
+# the key to 后接名词或动名词，表示……的关键；key in 可指在设备上键入信息。
+@5966 ring
+n. 戒指|Her ring is made of silver.|她的戒指是银做的。
+n. 圆圈|The dancers formed a ring.|舞者们围成了一个圈。
+n. 铃声|I heard the ring of a bell.|我听到了一阵铃声。
+v. 响铃|The phone will ring soon.|电话很快就会响。
+# 戒指、圆圈和铃声是 ring 的名词义；响铃作动词时，过去式 rang，过去分词 rung。
+@6064 wake
+v. 醒来|I wake up at six.|我六点醒来。
+v. 叫醒|Please wake me before breakfast.|请在早餐前叫醒我。
+n. 船的尾迹|The boat left a white wake.|船后留下了一道白色的尾迹。
+n. 守灵聚会|Many people came to the wake.|很多人来参加守灵聚会。
+# wake up 可表示自己醒来，也可带宾语表示叫醒别人；名词 wake 可以指船尾的水迹或守灵聚会。
+@6172 base
+n. 底部|The vase has a wide base.|这个花瓶底部很宽。
+n. 基地|We built a base near the river.|我们在河边建了一个基地。
+v. 以……为基础|We base our plan on the facts.|我们以事实为依据制定计划。
+adj. 卑鄙的（较正式）|Greed is a base motive.|贪婪是一种卑鄙的动机。
+# base something on something 表示以某物为基础；base 作形容词时还可表示卑鄙，较正式。
+@6456 pen
+n. 钢笔|Please write with a blue pen.|请用蓝色钢笔书写。
+n. 牲畜圈|The sheep are in their pen.|羊在羊圈里。
+v. 写（较正式）|She penned a letter to her son.|她给儿子写了一封信。
+# pen 可指笔或牲畜围栏；pen a letter 中的 pen 是较正式的写作用语。
+@6659 bat
+n. 蝙蝠|The bat flew out at dusk.|蝙蝠在黄昏飞了出来。
+n. 球棒|He hit the ball with a bat.|他用球棒击球。
+v. 击球|You bat first in this game.|这局比赛你先击球。
+v. 眨眼（not bat an eyelid）|She did not bat an eyelid.|她连眼皮也没眨一下。
+# bat 可指蝙蝠或球棒；not bat an eyelid 常表示没有显出惊讶或不安，不只是描述眼皮动作。
+@7210 line
+n. 线|Draw a straight line here.|在这里画一条直线。
+n. 队列|Wait at the end of the line.|在线尾等候。
+n. 台词|She forgot her next line.|她忘了下一句台词。
+n. 线路|This train runs on the blue line.|这列火车在蓝色线路上运行。
+v. 加衬里|We line the box with soft paper.|我们用柔软的纸给盒子加衬。
+v. 排队（line up）|Please line up by the door.|请在门旁排队。
+# line 可指线、队伍、台词或交通线路；line a box with paper 是给盒子加衬，不是排队。
+@7230 type
+n. 类型|What type of music is this?|这是什么类型的音乐？
+v. 打字|I can type without looking.|我能不看键盘打字。
+n. 印刷字体|This type is too small to read.|这种印刷字体太小，看不清。
+# type 作动词表示打字；作名词可指类型，也可指印刷字样或字体。
+@7242 staff
+n. 全体员工|The staff are very helpful.|全体员工都很热心。
+n. 长棍；手杖|He walked with a wooden staff.|他拄着一根木杖走路。
+v. 为……配备人员|Volunteers staff the front desk.|志愿者负责前台工作。
+# staff 表示员工时是集合名词，英式英语可接复数谓语；a staff 也可以是一根手杖。
+@7262 rule
+n. 规则|That rule applies to everyone.|那条规则适用于所有人。
+v. 统治|The king may rule for years.|这位国王可能会统治多年。
+n. 通常做法（as a rule）|As a rule, we eat at home.|我们通常在家吃饭。
+# as a rule 表示通常、一般而言；rule 作动词可表示统治，不要都当成一条规定。
+@7263 pound
+n. 英镑|This book costs one pound.|这本书售价一英镑。
+n. 磅|The bag weighs one pound.|这个包重一磅。
+v. 连续猛击|Rain began to pound the roof.|雨开始猛烈地打在屋顶上。
+n. 流浪动物收容所|The dog was taken to the pound.|那只狗被送到了流浪动物收容所。
+# pound 可以是货币、重量单位或动词猛击；动物管理语境中的 pound 指收容所。
+@7283 top
+n. 顶部|Write your name at the top.|在顶部写上你的名字。
+n. 陀螺|The top spun across the floor.|陀螺旋转着滑过地板。
+adj. 最好的；顶尖的|This is a top team.|这是一支顶尖球队。
+v. 居……之首|Her score topped the list.|她的分数位居榜首。
+# top 作名词可能是顶端，也可能是玩具陀螺；top the list 表示位居榜首。
+@7292 shoot
+v. 拍摄|The team will shoot a film.|团队将拍摄一部电影。
+n. 嫩芽|A green shoot appeared in the soil.|土里冒出了一根绿芽。
+v. 射门|He tried to shoot at the goal.|他试图射门。
+n. 拍摄活动（photo shoot）|The photo shoot lasted an hour.|这次摄影拍摄持续了一个小时。
+# shoot a film 是拍电影；a green shoot 是绿芽；photo shoot 指一次摄影拍摄活动。
+@7327 rock
+n. 岩石；石头|He sat on a large rock.|他坐在一块大石头上。
+n. 摇滚乐|She listens to rock after work.|她下班后听摇滚乐。
+v. 摇动|Please rock the baby gently.|请轻轻摇哄宝宝。
+# rock 既可指岩石，也可指摇滚乐；作动词时可以表示轻轻摇动。
+@7364 yard
+n. 院子|The children play in the yard.|孩子们在院子里玩。
+n. 码（长度单位）|This piece of cloth is one yard long.|这块布长一码。
+# yard 可以指房屋旁的院子，也可以是英制长度单位；要结合场地或测量语境判断。
+@7394 trust
+v. 信任|I trust my close friends.|我信任我的好朋友。
+n. 信任|Trust takes time to build.|建立信任需要时间。
+n. 信托|The money is held in a trust.|这笔钱由信托持有。
+# trust 可作动词或表示信任的名词；法律和金融语境中的 a trust 指信托，不是普通的信任感。
+@7405 stick
+n. 棍；棒|The dog carried a long stick.|那只狗叼着一根长棍。
+v. 粘贴|Stick the label on the box.|把标签贴在盒子上。
+v. 坚持（stick to）|Please stick to the plan.|请坚持按计划行事。
+# stick to 可表示坚持某事；stick a label on 表示把标签粘上。过去式和过去分词都是 stuck。
+@7445 wave
+n. 波浪|A large wave hit the boat.|一个大浪打在船上。
+v. 挥手|Wave to your friends.|向你的朋友们挥挥手。
+n. 一阵；一波|A wave of laughter filled the room.|一阵笑声充满了房间。
+# wave 可以指水波，也可指一阵情绪或活动；向某人挥手常用 wave to someone。
+@7447 suit
+n. 套装|He wore a dark suit.|他穿着一套深色西装。
+n. 诉讼|They filed a suit against the company.|他们对这家公司提起了诉讼。
+v. 适合|This color suits you.|这个颜色适合你。
+# suit 常指款式、颜色或安排适合某人；fit 常指尺寸合适；名词 suit 还可指套装或诉讼。
+@7539 tear
+n. 眼泪（/tɪə/）|A tear rolled down her cheek.|一滴眼泪顺着她的脸颊流下。
+v. 撕裂（/teə/）|Do not tear the letter.|不要撕那封信。
+n. 裂口（/teə/）|There is a tear in my coat.|我的外套上有一道裂口。
+# 眼泪义读 /tɪə/，撕裂或裂口义读 /teə/；撕裂动词的过去式 tore，过去分词 torn。
+@7553 tip
+n. 小费|Leave a small tip for the waiter.|给服务员留一点小费。
+n. 尖端|The tip of the pencil broke.|铅笔尖断了。
+n. 建议；窍门|Here is a useful cooking tip.|这里有一个实用的烹饪窍门。
+v. 倾斜；翻倒|Do not tip the glass over.|不要把玻璃杯弄翻。
+# tip 可以是小费、物体尖端或小建议；tip something over 表示使某物翻倒。
+@7606 net
+n. 网|The fish got caught in the net.|那条鱼被网住了。
+adj. 净的|Our net profit rose this year.|我们今年的净利润增长了。
+v. 用网捕捉|They net fish in the river.|他们在河里网鱼。
+n. 互联网（非正式）|I found the answer on the net.|我在网上找到了答案。
+# net profit 是扣除相关支出后的净利润；on the net 中的 net 是非正式的互联网用语。
+@7775 spell
+v. 拼写|Can you spell your name?|你会拼写自己的名字吗？
+n. 咒语|The witch cast a spell.|女巫施了一个咒语。
+n. 一段时间|We had a long spell of rain.|我们遇上了很长一段雨天。
+# spell 可以表示拼写，也可指咒语或持续的一段时间；a spell of rain 是一段雨天。
+@7798 duck
+n. 鸭子|A duck swam across the pond.|一只鸭子游过池塘。
+v. 低头闪避|Duck under the low branch.|低头躲过那根低树枝。
+# duck 作动词时可以表示迅速低头或躲避，不是在描述鸭子这种动物。
+@7864 tender
+adj. 嫩的|The meat is tender and juicy.|这块肉又嫩又多汁。
+adj. 温柔的|She gave him a tender smile.|她温柔地朝他笑了笑。
+n. 投标书|The company submitted a tender.|这家公司递交了一份投标书。
+v. 正式提交|He tendered his resignation yesterday.|他昨天递交了辞呈。
+# tender 可描述食物嫩或态度温柔；投标书是名词义，正式递交文件时 tender 可作动词。
+@3936 pupil
+n. 学生|Each pupil has a new book.|每个学生都有一本新书。
+n. 瞳孔|The pupil gets smaller in bright light.|瞳孔在强光下会缩小。
+# pupil 可以指学生，也可以指眼睛的瞳孔；这里的瞳孔不是学生眼中的倒影。
+@4174 temple
+n. 庙宇；寺院|We visited a temple by the river.|我们参观了河边的一座寺庙。
+n. 太阳穴|He gently rubbed his temple.|他轻轻揉了揉太阳穴。
+# temple 可指宗教建筑，也可指头部耳朵上方附近的太阳穴；人体部位常用复数 temples。
+@4332 trip
+n. 旅行|Our trip begins on Friday.|我们的旅行周五开始。
+v. 绊倒|Do not trip over the bag.|不要被那个包绊倒。
+# trip 作旅行义时通常是可数名词；trip over 后接绊到的东西，不等同于任何失误。
+@4756 tire
+n. 轮胎（美式）|The front tire is flat.|前轮胎瘪了。
+v. 使疲劳|Long walks tire me out.|长距离步行让我疲惫不堪。
+# tire 表示轮胎时是美式拼写，英式通常写 tyre；作动词时可指疲劳，tire out 表示使筋疲力尽。
+@5364 shoulder
+n. 肩膀|My bag hangs from one shoulder.|我的包挂在一侧肩膀上。
+v. 承担|She will shoulder the responsibility.|她将承担这份责任。
+# shoulder 作动词可直接接 responsibility、burden 等宾语，表示承担责任或负担。
+@479 coach
+n. 教练|Our coach is patient with beginners.|我们的教练对初学者很耐心。
+v. 训练；指导|She coaches the school team.|她训练校队。
+n. 长途汽车（英式）|We went to the coast by coach.|我们乘长途汽车去了海边。
+n. 经济舱（美式）|We flew in coach to save money.|我们为了省钱坐了经济舱。
+# coach 不只有教练义；by coach 是乘长途汽车，in coach 可表示在飞机的经济舱中。
+@771 hide
+v. 隐藏|Hide the gift under the bed.|把礼物藏在床下面。
+n. 兽皮|The hide is used to make leather.|这张兽皮用来制革。
+# hide 作动词时表示藏，过去式 hid、过去分词 hidden；兽皮义是名词。
+@4568 crop
+n. 农作物|Rice is an important crop here.|水稻是这里的重要作物。
+n. 收成|The farm had a good crop this year.|农场今年收成不错。
+v. 裁剪|Please crop the photo before printing.|打印前请裁剪这张照片。
+# crop 可以指作物或收获量；crop a photo 是裁剪照片，不是种照片。
+@4407 fan
+n. 风扇；扇子|The fan keeps the room cool.|风扇让房间保持凉爽。
+n. 粉丝；爱好者|She is a big fan of this band.|她是这个乐队的忠实粉丝。
+v. 扇动|She fanned her face with a book.|她拿一本书给脸扇风。
+# a fan of 表示某人或某事的爱好者；风扇义与粉丝义不同，fan 也可以作动词扇风。
+@3965 file
+n. 文件|Save the file before closing.|关闭前保存文件。
+n. 锉刀|Use a file to smooth the edge.|用锉刀把边缘锉平。
+v. 列队行进|The pupils filed into the hall.|学生们排着队走进大厅。
+v. 归档|Please file these letters by date.|请按日期给这些信件归档。
+# file 可指文件或锉刀；file into 表示排成一列进入，file papers 表示给文件归档。
+@3957 story
+n. 故事|She told me a funny story.|她给我讲了一个有趣的故事。
+n. 新闻报道|The story appeared in today's newspaper.|这则报道刊登在今天的报纸上。
+n. 楼层（美式）|This house has only one story.|这栋房子只有一层。
+# 楼层义的 story 是美式拼写，复数 stories；英式通常写 storey，复数 storeys。
+@476 club
+n. 俱乐部；社团|I joined the school chess club.|我加入了学校的国际象棋社团。
+n. 高尔夫球杆|He chose a club for the shot.|他为这一杆选了一支球杆。
+n. 棍棒|His club was made of wood.|他的棍棒是木头做的。
+# 社团属于 club 已有的组织义，并非另一个完全缺失的意思；club 还可指高尔夫球杆或棍棒。
+@292 box
+n. 盒子|Please open this small box.|请打开这个小盒子。
+v. 拳击|They box at the sports club.|他们在体育俱乐部练拳击。
+n. 方框|Tick the box beside your name.|在你姓名旁的方框里打勾。
+# box 可指盒子或表格上的方框；作动词时可表示进行拳击运动。
+@4419 lead
+n. 铅（/led/）|Lead is a heavy metal.|铅是一种重金属。
+v. 带领（/liːd/）|Please lead us to the station.|请带我们去车站。
+n. 领先（/liːd/）|She has a lead of two points.|她领先两分。
+# 金属铅读 /led/；带领和领先读 /liːd/。带领的过去式、过去分词是 led（/led/），不是 lead。
+@472 close
+v. 关闭（/kləʊz/）|Please close the window.|请关上窗户。
+adj. 近的（/kləʊs/）|The school is close to my home.|学校离我家很近。
+adj. 亲密的（/kləʊs/）|They are close friends.|他们是亲密的朋友。
+adv. 近地（/kləʊs/）|Stay close to me.|待在我身边。
+# close 作关闭义时结尾读 /z/；表示近或亲密时结尾读 /s/。close to 后面可接地点或人。

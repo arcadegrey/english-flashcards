@@ -174,3 +174,13 @@ test('a stalled partial hint response is cancelled and a later retry can recover
   assert.equal(cancelled, true);
   assert.equal((await load({ id: 1, word: 'hello' })).hints[0].text, 'hello');
 });
+
+test('reviewed hint batches reject a conflicting historical meaning or example but accept current deferred metadata', async () => {
+  const guarded = { ...batch, entries: { 1: { ...batch.entries[1], guards: { meaning: '问候', example: 'Hello, everyone.' } } } };
+  const load = createWordHintLoader({ manifest: tinyManifest, cacheStorage: null, fetchImpl: async () => Response.json(guarded) });
+  const current = { id: 1, word: 'hello', meaning: '问候', example: 'Hello, everyone.' };
+  assert.equal((await load(current)).hints[0].text, 'hello');
+  assert.equal((await load({ id: 1, word: 'hello', meaning: '问候' })).hints[0].text, 'hello');
+  assert.equal(await load({ ...current, meaning: '私人旧释义' }), null);
+  assert.equal(await load({ ...current, example: 'An older saved sentence.' }), null);
+});

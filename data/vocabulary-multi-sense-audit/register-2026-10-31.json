@@ -1,0 +1,5841 @@
+{
+  "auditDate": "2026-10-31",
+  "input": "public/data/vocabulary.json",
+  "inputSha256": "0dd67cbe46ea45012baad0ab598c6594bb5073be6b229208754167551befbb08",
+  "scope": "用户提供的 DeepSeek 候选清单及逐词修复状态；原始统计是历史快照，不是当前词性分类。",
+  "method": [
+    "保留原始 118 条候选和 16 项缺义项线索；mine 重合，实际修复 133 个稳定 ID。",
+    "逐词读取主来源词典，独立编写常用义项的双语短句；不是独立人工专家签字。",
+    "只在完整当前词库与修复登记一致时报告完成；当前内容与原始候选分列。"
+  ],
+  "totals": {
+    "entries": 118,
+    "posVariants": 54,
+    "samePosVariants": 64,
+    "gapCandidates": 16
+  },
+  "limitations": [
+    "原始“同词性”分类有误：不少记录只是原词性字段漏标，不能照搬为语言学结论。",
+    "例句覆盖所选常用义项，不是词典所有罕见或专业义的穷尽枚举。",
+    "来源核对范围见修复登记；保留的旧专业释义不因此获得全量重新核验。"
+  ],
+  "entries": [
+    {
+      "id": 218,
+      "word": "bear",
+      "pos": "v./n.",
+      "meaning": "承受；忍受；生（孩子）；熊",
+      "example": "I can't bear the pain.",
+      "exampleCn": "我忍受不了这疼痛。",
+      "categories": [
+        "toefl",
+        "cet4",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "承受；忍受；生（孩子）；熊",
+        "phonetic": "/beə(r)/",
+        "example": "I cannot bear this noise.",
+        "exampleCn": "我受不了这种噪声。",
+        "examples": [
+          {
+            "sense": "v. 忍受",
+            "en": "I cannot bear this noise.",
+            "zh": "我受不了这种噪声。"
+          },
+          {
+            "sense": "n. 熊",
+            "en": "A bear crossed the road.",
+            "zh": "一头熊穿过了马路。"
+          },
+          {
+            "sense": "v. 生育（较正式）",
+            "en": "She will bear a child in May.",
+            "zh": "她将在五月生孩子。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 290,
+      "word": "bow",
+      "pos": "v./n.",
+      "meaning": "鞠躬；弓",
+      "example": "The actor took a bow after the show.",
+      "exampleCn": "演员在演出结束后鞠躬致谢。",
+      "categories": [
+        "daily",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "鞠躬；弓",
+        "phonetic": "/baʊ/（鞠躬）；/bəʊ/（弓、蝴蝶结）",
+        "example": "Please bow to the audience.",
+        "exampleCn": "请向观众鞠躬。",
+        "examples": [
+          {
+            "sense": "v. 鞠躬（/baʊ/）",
+            "en": "Please bow to the audience.",
+            "zh": "请向观众鞠躬。"
+          },
+          {
+            "sense": "n. 弓（/bəʊ/）",
+            "en": "He carried a bow and arrows.",
+            "zh": "他带着一把弓和一些箭。"
+          },
+          {
+            "sense": "n. 蝴蝶结（/bəʊ/）",
+            "en": "She tied the ribbon in a bow.",
+            "zh": "她把丝带打成蝴蝶结。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 850,
+      "word": "wound",
+      "pos": "n./v.",
+      "meaning": "伤口/使受伤",
+      "example": "The wound healed quickly.",
+      "exampleCn": "伤口愈合很快。",
+      "categories": [
+        "toefl"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 伤口（/wuːnd/）\nv. 使受伤；伤害（/wuːnd/）\nwound 也是 wind（缠绕）的过去式和过去分词，此时读 /waʊnd/。",
+        "phonetic": "/wuːnd/（伤口）；/waʊnd/（wind 的过去式）",
+        "example": "The nurse cleaned the wound.",
+        "exampleCn": "护士清洗了伤口。",
+        "examples": [
+          {
+            "sense": "n. 伤口（/wuːnd/）",
+            "en": "The nurse cleaned the wound.",
+            "zh": "护士清洗了伤口。"
+          },
+          {
+            "sense": "v. 使受伤（/wuːnd/）",
+            "en": "The sharp glass may wound your hand.",
+            "zh": "锋利的玻璃可能划伤你的手。"
+          },
+          {
+            "sense": "v. 缠绕（wind 的过去式，/waʊnd/）",
+            "en": "He wound the string around the box.",
+            "zh": "他把细绳缠在盒子上。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 1048,
+      "word": "sole",
+      "pos": "adj./n.",
+      "meaning": "唯一的/鞋底",
+      "example": "She was the sole winner of the prize./The sole of my shoe is worn out.",
+      "exampleCn": "她是这项奖的唯一获奖者。/我鞋子的鞋底磨坏了。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "adj. / n.",
+        "meaning": "唯一的/鞋底",
+        "phonetic": "/soʊl/",
+        "example": "She is the sole owner of the shop.",
+        "exampleCn": "她是这家商店的唯一店主。",
+        "examples": [
+          {
+            "sense": "adj. 唯一的",
+            "en": "She is the sole owner of the shop.",
+            "zh": "她是这家商店的唯一店主。"
+          },
+          {
+            "sense": "n. 鞋底",
+            "en": "There is a hole in the sole.",
+            "zh": "鞋底有一个洞。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 1086,
+      "word": "bark",
+      "pos": "n./v.",
+      "meaning": "树皮/吠叫",
+      "example": "The bark of this tree is very thick./The dog barked loudly at night.",
+      "exampleCn": "这棵树的树皮很厚。/那只狗晚上大声吠叫。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "树皮/吠叫",
+        "phonetic": "/bɑːrk/",
+        "example": "The bark is rough and thick.",
+        "exampleCn": "这层树皮粗糙而厚实。",
+        "examples": [
+          {
+            "sense": "n. 树皮",
+            "en": "The bark is rough and thick.",
+            "zh": "这层树皮粗糙而厚实。"
+          },
+          {
+            "sense": "v. 吠叫",
+            "en": "Dogs often bark at strangers.",
+            "zh": "狗常常对陌生人叫。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 1170,
+      "word": "object",
+      "pos": "n./v.",
+      "meaning": "物体；目标/反对",
+      "example": "Some students objected to the new rule.",
+      "exampleCn": "一些学生反对这项新规定。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "物体；目标/反对",
+        "phonetic": "/ˈɒbdʒɪkt/（名词）；/əbˈdʒekt/（动词）",
+        "example": "Please move this heavy object.",
+        "exampleCn": "请把这个重物挪开。",
+        "examples": [
+          {
+            "sense": "n. 物体（/ˈɒbdʒekt/）",
+            "en": "Please move this heavy object.",
+            "zh": "请把这个重物挪开。"
+          },
+          {
+            "sense": "n. 目标（较正式）",
+            "en": "Our main object is to save time.",
+            "zh": "我们的主要目标是节省时间。"
+          },
+          {
+            "sense": "v. 反对（/əbˈdʒekt/）",
+            "en": "I object to this unfair rule.",
+            "zh": "我反对这条不公平的规定。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 1171,
+      "word": "scale",
+      "pos": "n./v.",
+      "meaning": "规模；刻度/攀登；测量",
+      "example": "The company expanded on a global scale.",
+      "exampleCn": "公司以全球规模扩张了。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "规模；刻度/攀登；测量\nv. 按比例缩放（scale down/up）",
+        "phonetic": "/skeɪl/",
+        "example": "We cannot work on this scale.",
+        "exampleCn": "我们无法以这种规模开展工作。",
+        "examples": [
+          {
+            "sense": "n. 规模",
+            "en": "We cannot work on this scale.",
+            "zh": "我们无法以这种规模开展工作。"
+          },
+          {
+            "sense": "n. 刻度",
+            "en": "Read the scale on the thermometer.",
+            "zh": "读出温度计上的刻度。"
+          },
+          {
+            "sense": "v. 攀登",
+            "en": "They tried to scale the wall.",
+            "zh": "他们试图翻越这堵墙。"
+          },
+          {
+            "sense": "v. 按比例缩放",
+            "en": "Please scale the picture down.",
+            "zh": "请把这张图片按比例缩小。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 1198,
+      "word": "stock",
+      "pos": "n./v.",
+      "meaning": "库存；股票/储备",
+      "example": "The store keeps a large stock of fresh fruit.",
+      "exampleCn": "这家商店储备了大量新鲜水果。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "库存；股票/储备",
+        "phonetic": "/stɑːk/",
+        "example": "The shop has no milk in stock.",
+        "exampleCn": "这家店没有牛奶库存。",
+        "examples": [
+          {
+            "sense": "n. 库存",
+            "en": "The shop has no milk in stock.",
+            "zh": "这家店没有牛奶库存。"
+          },
+          {
+            "sense": "n. 股票",
+            "en": "She bought stock in the company.",
+            "zh": "她买了这家公司的股票。"
+          },
+          {
+            "sense": "v. 备有；储备",
+            "en": "This shop stocks fresh fruit.",
+            "zh": "这家店备有新鲜水果。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 1413,
+      "word": "sink",
+      "pos": "v./n.",
+      "meaning": "下沉；沉没/水槽",
+      "example": "The boat began to sink in the storm.",
+      "exampleCn": "这艘船在暴风雨中开始下沉。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "下沉；沉没/水槽",
+        "phonetic": "/sɪŋk/",
+        "example": "The boat began to sink.",
+        "exampleCn": "船开始下沉。",
+        "examples": [
+          {
+            "sense": "v. 下沉",
+            "en": "The boat began to sink.",
+            "zh": "船开始下沉。"
+          },
+          {
+            "sense": "n. 水槽",
+            "en": "Please wash the cups in the sink.",
+            "zh": "请在水槽里洗杯子。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 1414,
+      "word": "tie",
+      "pos": "v./n.",
+      "meaning": "系；连接/领带；平局",
+      "example": "Please tie the package with a strong rope.",
+      "exampleCn": "请用结实的绳子把包裹系好。",
+      "categories": [
+        "toefl"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "系；连接/领带；平局",
+        "phonetic": "/taɪ/",
+        "example": "Please tie your shoes before running.",
+        "exampleCn": "跑步前请系好鞋带。",
+        "examples": [
+          {
+            "sense": "v. 系；绑",
+            "en": "Please tie your shoes before running.",
+            "zh": "跑步前请系好鞋带。"
+          },
+          {
+            "sense": "n. 领带",
+            "en": "He wore a blue tie.",
+            "zh": "他戴着一条蓝色领带。"
+          },
+          {
+            "sense": "n. 平局",
+            "en": "The game ended in a tie.",
+            "zh": "比赛以平局结束。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 1466,
+      "word": "stake",
+      "pos": "n./v.",
+      "meaning": "桩/股份/利害关系/用桩支撑",
+      "example": "The company has a large stake in the success of the project.",
+      "exampleCn": "公司在这个项目的成功中有很大的利害关系。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "桩/股份/利害关系/用桩支撑",
+        "phonetic": "/steɪk/",
+        "example": "Push the stake into the ground.",
+        "exampleCn": "把这根桩打进地里。",
+        "examples": [
+          {
+            "sense": "n. 桩",
+            "en": "Push the stake into the ground.",
+            "zh": "把这根桩打进地里。"
+          },
+          {
+            "sense": "n. 股份",
+            "en": "She owns a stake in the company.",
+            "zh": "她持有这家公司的股份。"
+          },
+          {
+            "sense": "n. 利害关系",
+            "en": "They have a stake in its success.",
+            "zh": "这件事成功与否关系到他们的利益。"
+          },
+          {
+            "sense": "v. 用桩支撑",
+            "en": "He staked the young tree.",
+            "zh": "他给那棵小树打桩支撑。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 1482,
+      "word": "seal",
+      "pos": "n./v.",
+      "meaning": "海豹/印章/封条/密封",
+      "example": "The container was sealed to keep the samples clean.",
+      "exampleCn": "容器被密封起来以保持样本洁净。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "海豹/印章/封条/密封",
+        "phonetic": "/siːl/",
+        "example": "The seal swam near the boat.",
+        "exampleCn": "那只海豹在船边游动。",
+        "examples": [
+          {
+            "sense": "n. 海豹",
+            "en": "The seal swam near the boat.",
+            "zh": "那只海豹在船边游动。"
+          },
+          {
+            "sense": "n. 印章",
+            "en": "The letter bears an official seal.",
+            "zh": "这封信盖有官方印章。"
+          },
+          {
+            "sense": "n. 封条；密封层",
+            "en": "Do not break the seal.",
+            "zh": "不要破坏封条。"
+          },
+          {
+            "sense": "v. 密封",
+            "en": "Please seal the bag tightly.",
+            "zh": "请把袋子封严。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 1535,
+      "word": "rear",
+      "pos": "adj./n./v.",
+      "meaning": "后部的/后面/抚养/饲养",
+      "example": "The emergency exit is at the rear of the building.",
+      "exampleCn": "紧急出口在建筑物的后部。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 3,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "adj. / n. / v.",
+        "meaning": "后部的/后面/抚养/饲养",
+        "phonetic": "/rɪr/",
+        "example": "Please use the rear door.",
+        "exampleCn": "请走后门。",
+        "examples": [
+          {
+            "sense": "adj. 后面的",
+            "en": "Please use the rear door.",
+            "zh": "请走后门。"
+          },
+          {
+            "sense": "n. 后部",
+            "en": "The garden is at the rear.",
+            "zh": "花园在后面。"
+          },
+          {
+            "sense": "v. 饲养",
+            "en": "They rear sheep on the farm.",
+            "zh": "他们在农场养羊。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 1577,
+      "word": "plot",
+      "pos": "n./v.",
+      "meaning": "情节/小块土地/密谋/绘制",
+      "example": "The graph plots temperature changes over time.",
+      "exampleCn": "这张图绘制了温度随时间的变化。",
+      "categories": [
+        "toefl"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "情节/小块土地/密谋/绘制",
+        "phonetic": "/plɑːt/",
+        "example": "The film has a simple plot.",
+        "exampleCn": "这部电影的情节很简单。",
+        "examples": [
+          {
+            "sense": "n. 情节",
+            "en": "The film has a simple plot.",
+            "zh": "这部电影的情节很简单。"
+          },
+          {
+            "sense": "n. 小块土地",
+            "en": "We grow beans on this plot.",
+            "zh": "我们在这小块地上种豆子。"
+          },
+          {
+            "sense": "v. 密谋",
+            "en": "They plot to escape at night.",
+            "zh": "他们密谋在夜间逃走。"
+          },
+          {
+            "sense": "v. 绘制",
+            "en": "We plot the results on a graph.",
+            "zh": "我们把结果绘制在图上。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 1648,
+      "word": "stroke",
+      "pos": "n./v.",
+      "meaning": "一击/笔画/中风/轻抚",
+      "example": "A single stroke of the brush changed the painting.",
+      "exampleCn": "画笔的一笔改变了这幅画。",
+      "categories": [
+        "toefl"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "一击/笔画/中风/轻抚",
+        "phonetic": "/stroʊk/",
+        "example": "One stroke of the axe split it.",
+        "exampleCn": "斧子一劈就把它劈开了。",
+        "examples": [
+          {
+            "sense": "n. 一击",
+            "en": "One stroke of the axe split it.",
+            "zh": "斧子一劈就把它劈开了。"
+          },
+          {
+            "sense": "n. 笔画",
+            "en": "Add one stroke to this character.",
+            "zh": "给这个字加一笔。"
+          },
+          {
+            "sense": "n. 中风",
+            "en": "She had a stroke last year.",
+            "zh": "她去年中风了。"
+          },
+          {
+            "sense": "v. 轻抚",
+            "en": "Please stroke the cat gently.",
+            "zh": "请轻轻抚摸这只猫。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 1662,
+      "word": "shed",
+      "pos": "v./n.",
+      "meaning": "脱落/流出/棚屋",
+      "example": "Trees shed their leaves in autumn.",
+      "exampleCn": "树木在秋天落叶。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "脱落/流出/棚屋",
+        "phonetic": "/ʃed/",
+        "example": "Trees shed their leaves in autumn.",
+        "exampleCn": "树木在秋天落叶。",
+        "examples": [
+          {
+            "sense": "v. 脱落",
+            "en": "Trees shed their leaves in autumn.",
+            "zh": "树木在秋天落叶。"
+          },
+          {
+            "sense": "n. 棚屋",
+            "en": "We keep bikes in the shed.",
+            "zh": "我们把自行车放在棚屋里。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 1694,
+      "word": "switch",
+      "pos": "v./n.",
+      "meaning": "转换/开关",
+      "example": "You can switch off the lights before leaving.",
+      "exampleCn": "离开前你可以关灯。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "转换/开关",
+        "phonetic": "/swɪtʃ/",
+        "example": "We can switch to another plan.",
+        "exampleCn": "我们可以改用另一个计划。",
+        "examples": [
+          {
+            "sense": "v. 转换",
+            "en": "We can switch to another plan.",
+            "zh": "我们可以改用另一个计划。"
+          },
+          {
+            "sense": "n. 开关",
+            "en": "The switch is beside the door.",
+            "zh": "开关在门旁边。"
+          },
+          {
+            "sense": "v. 关掉（switch off）",
+            "en": "Please switch off the kitchen light.",
+            "zh": "请关掉厨房的灯。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 1719,
+      "word": "grave",
+      "pos": "adj./n.",
+      "meaning": "严重的/坟墓",
+      "example": "The scientist warned of grave damage to the ecosystem.",
+      "exampleCn": "这位科学家警告生态系统会受到严重破坏。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "adj. / n.",
+        "meaning": "严重的/坟墓",
+        "phonetic": "/ɡreɪv/",
+        "example": "This is a grave mistake.",
+        "exampleCn": "这是一个严重的错误。",
+        "examples": [
+          {
+            "sense": "adj. 严重的",
+            "en": "This is a grave mistake.",
+            "zh": "这是一个严重的错误。"
+          },
+          {
+            "sense": "n. 坟墓",
+            "en": "They placed flowers on the grave.",
+            "zh": "他们在坟墓上放了鲜花。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 1984,
+      "word": "row",
+      "pos": "n./v.",
+      "meaning": "一排/划船",
+      "example": "The students sat in the front row of the classroom.",
+      "exampleCn": "学生们坐在教室第一排。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "一排/划船",
+        "phonetic": "/rəʊ/（排、划船）；/raʊ/（争吵）",
+        "example": "Please sit in the front row.",
+        "exampleCn": "请坐在前排。",
+        "examples": [
+          {
+            "sense": "n. 一排（/rəʊ/）",
+            "en": "Please sit in the front row.",
+            "zh": "请坐在前排。"
+          },
+          {
+            "sense": "v. 划船（/rəʊ/）",
+            "en": "We row across the lake.",
+            "zh": "我们划船穿过湖面。"
+          },
+          {
+            "sense": "n. 争吵（英式，/raʊ/）",
+            "en": "They had a row after dinner.",
+            "zh": "他们晚饭后吵了一架。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 2205,
+      "word": "pitch",
+      "pos": "n./v.",
+      "meaning": "音高/球场/投掷/推销",
+      "example": "The singer’s pitch was clear and accurate.",
+      "exampleCn": "歌手的音高清晰而准确。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "音高/球场/投掷/推销",
+        "phonetic": "/pɪtʃ/",
+        "example": "The note has a high pitch.",
+        "exampleCn": "这个音的音高很高。",
+        "examples": [
+          {
+            "sense": "n. 音高",
+            "en": "The note has a high pitch.",
+            "zh": "这个音的音高很高。"
+          },
+          {
+            "sense": "n. 球场（英式）",
+            "en": "The players ran onto the pitch.",
+            "zh": "球员们跑进球场。"
+          },
+          {
+            "sense": "v. 投掷",
+            "en": "He can pitch the ball fast.",
+            "zh": "他能把球投得很快。"
+          },
+          {
+            "sense": "v. 推销想法",
+            "en": "I will pitch my idea tomorrow.",
+            "zh": "我明天要推介自己的想法。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 2220,
+      "word": "lap",
+      "pos": "n./v.",
+      "meaning": "大腿上部/一圈/舔/轻拍",
+      "example": "The runner completed one lap around the track.",
+      "exampleCn": "跑者绕跑道完成了一圈。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "大腿上部/一圈/舔/轻拍",
+        "phonetic": "/læp/",
+        "example": "The child sat on her lap.",
+        "exampleCn": "孩子坐在她的大腿上。",
+        "examples": [
+          {
+            "sense": "n. 大腿上部",
+            "en": "The child sat on her lap.",
+            "zh": "孩子坐在她的大腿上。"
+          },
+          {
+            "sense": "n. 一圈",
+            "en": "Run one lap around the track.",
+            "zh": "绕跑道跑一圈。"
+          },
+          {
+            "sense": "v. 舔着喝",
+            "en": "The cat will lap up the milk.",
+            "zh": "猫会舔着喝牛奶。"
+          },
+          {
+            "sense": "v. 轻拍",
+            "en": "Small waves lap against the boat.",
+            "zh": "小浪轻拍着船身。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 2235,
+      "word": "bound",
+      "pos": "adj./v./n.",
+      "meaning": "一定会的/受约束的/跳跃/边界",
+      "example": "The project is bound to succeed with enough support.",
+      "exampleCn": "有足够支持，这个项目一定会成功。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 3,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "adj. / v. / n.",
+        "meaning": "一定会的/受约束的/跳跃/边界",
+        "phonetic": "/baʊnd/",
+        "example": "You are bound to make mistakes.",
+        "exampleCn": "你难免会犯错。",
+        "examples": [
+          {
+            "sense": "adj. 一定会的（be bound to）",
+            "en": "You are bound to make mistakes.",
+            "zh": "你难免会犯错。"
+          },
+          {
+            "sense": "v. 捆绑（bind 的过去分词）",
+            "en": "His hands were bound with rope.",
+            "zh": "他的双手被绳子捆住了。"
+          },
+          {
+            "sense": "v. 跳跃",
+            "en": "The dog will bound across the field.",
+            "zh": "那只狗会跳着跑过田野。"
+          },
+          {
+            "sense": "n. 界限（常用复数 bounds）",
+            "en": "Please keep within these bounds.",
+            "zh": "请不要超出这些界限。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 2254,
+      "word": "tap",
+      "pos": "v./n.",
+      "meaning": "轻拍/水龙头/开发利用",
+      "example": "Please tap the screen to start the program.",
+      "exampleCn": "请轻点屏幕来启动程序。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "轻拍/水龙头/开发利用",
+        "phonetic": "/tæp/",
+        "example": "Tap the screen to continue.",
+        "exampleCn": "轻点屏幕以继续。",
+        "examples": [
+          {
+            "sense": "v. 轻拍",
+            "en": "Tap the screen to continue.",
+            "zh": "轻点屏幕以继续。"
+          },
+          {
+            "sense": "n. 水龙头（英式）",
+            "en": "Please turn off the tap.",
+            "zh": "请关掉水龙头。"
+          },
+          {
+            "sense": "v. 开发利用",
+            "en": "We can tap the sun's energy.",
+            "zh": "我们可以利用太阳能。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 2350,
+      "word": "court",
+      "pos": "n./v.",
+      "meaning": "法院/球场/宫廷/追求",
+      "example": "The case was settled in court.",
+      "exampleCn": "这个案件在法庭上解决了。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "法院/球场/宫廷/追求",
+        "phonetic": "/kɔːrt/",
+        "example": "The judge works in this court.",
+        "exampleCn": "这位法官在这家法院工作。",
+        "examples": [
+          {
+            "sense": "n. 法院",
+            "en": "The judge works in this court.",
+            "zh": "这位法官在这家法院工作。"
+          },
+          {
+            "sense": "n. 球场",
+            "en": "The tennis court is empty.",
+            "zh": "网球场上没有人。"
+          },
+          {
+            "sense": "n. 宫廷",
+            "en": "She served at the royal court.",
+            "zh": "她曾在王室宫廷任职。"
+          },
+          {
+            "sense": "v. 追求（较正式）",
+            "en": "He hoped to court her.",
+            "zh": "他希望追求她。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 2464,
+      "word": "crane",
+      "pos": "n./v.",
+      "meaning": "鹤/起重机/伸长脖子看",
+      "example": "A crane lifted the heavy steel beam.",
+      "exampleCn": "一台起重机吊起了沉重的钢梁。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "鹤/起重机/伸长脖子看",
+        "phonetic": "/kreɪn/",
+        "example": "A crane stood by the lake.",
+        "exampleCn": "一只鹤站在湖边。",
+        "examples": [
+          {
+            "sense": "n. 鹤",
+            "en": "A crane stood by the lake.",
+            "zh": "一只鹤站在湖边。"
+          },
+          {
+            "sense": "n. 起重机",
+            "en": "The crane lifted a heavy box.",
+            "zh": "起重机吊起了一个重箱子。"
+          },
+          {
+            "sense": "v. 伸长脖子看",
+            "en": "She craned her neck to see.",
+            "zh": "她伸长脖子张望。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 2793,
+      "word": "hail",
+      "pos": "n./v.",
+      "meaning": "冰雹/欢呼/招呼/来自",
+      "example": "The crops were damaged by hail.",
+      "exampleCn": "庄稼被冰雹损坏了。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "冰雹/欢呼/招呼/来自",
+        "phonetic": "/heɪl/",
+        "example": "Hail hit the roof last night.",
+        "exampleCn": "昨晚冰雹打在屋顶上。",
+        "examples": [
+          {
+            "sense": "n. 冰雹",
+            "en": "Hail hit the roof last night.",
+            "zh": "昨晚冰雹打在屋顶上。"
+          },
+          {
+            "sense": "v. 招呼；拦车",
+            "en": "He tried to hail a taxi.",
+            "zh": "他试图招手拦出租车。"
+          },
+          {
+            "sense": "v. 称赞",
+            "en": "They hail her as a hero.",
+            "zh": "他们称赞她是英雄。"
+          },
+          {
+            "sense": "v. 来自（hail from）",
+            "en": "My grandparents hail from Wales.",
+            "zh": "我的祖父母来自威尔士。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 2881,
+      "word": "jar",
+      "pos": "n./v.",
+      "meaning": "罐子/刺耳地震动/使不快",
+      "example": "The jam was stored in a glass jar.",
+      "exampleCn": "果酱被装在玻璃罐里。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "罐子/刺耳地震动/使不快",
+        "phonetic": "/dʒɑːr/",
+        "example": "Put the jam in this jar.",
+        "exampleCn": "把果酱放进这个罐子里。",
+        "examples": [
+          {
+            "sense": "n. 罐子",
+            "en": "Put the jam in this jar.",
+            "zh": "把果酱放进这个罐子里。"
+          },
+          {
+            "sense": "v. 使不适；刺激",
+            "en": "The sudden noise jarred my nerves.",
+            "zh": "突如其来的噪声让我心神不宁。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 3156,
+      "word": "bolt",
+      "pos": "n./v.",
+      "meaning": "螺栓/闪电/猛冲/闩上",
+      "example": "A loose bolt caused the machine to shake loudly.",
+      "exampleCn": "一颗松动的螺栓导致机器剧烈震动。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "螺栓/闪电/猛冲/闩上",
+        "phonetic": "/boʊlt/",
+        "example": "Please tighten this loose bolt.",
+        "exampleCn": "请拧紧这颗松动的螺栓。",
+        "examples": [
+          {
+            "sense": "n. 螺栓",
+            "en": "Please tighten this loose bolt.",
+            "zh": "请拧紧这颗松动的螺栓。"
+          },
+          {
+            "sense": "n. 闪电（a bolt of lightning）",
+            "en": "A bolt of lightning lit the sky.",
+            "zh": "一道闪电照亮了天空。"
+          },
+          {
+            "sense": "v. 猛冲",
+            "en": "The dog may bolt through the gate.",
+            "zh": "那只狗可能会冲出大门。"
+          },
+          {
+            "sense": "v. 闩上",
+            "en": "Please bolt the back door.",
+            "zh": "请闩上后门。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 3184,
+      "word": "toll",
+      "pos": "n./v.",
+      "meaning": "伤亡人数/代价/通行费/鸣钟",
+      "example": "The long drought took a heavy toll on local farms.",
+      "exampleCn": "长期干旱给当地农场造成了沉重代价。",
+      "categories": [
+        "toefl"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "伤亡人数/代价/通行费/鸣钟",
+        "phonetic": "/toʊl/",
+        "example": "We paid a toll at the bridge.",
+        "exampleCn": "我们在桥边交了通行费。",
+        "examples": [
+          {
+            "sense": "n. 通行费",
+            "en": "We paid a toll at the bridge.",
+            "zh": "我们在桥边交了通行费。"
+          },
+          {
+            "sense": "n. 死亡人数（death toll）",
+            "en": "The death toll rose overnight.",
+            "zh": "死亡人数在一夜之间上升了。"
+          },
+          {
+            "sense": "n. 代价；损害（take a toll）",
+            "en": "The hard work took a toll on him.",
+            "zh": "繁重的工作损害了他的健康。"
+          },
+          {
+            "sense": "v. 鸣钟",
+            "en": "The bells toll at noon.",
+            "zh": "钟在中午敲响。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 4002,
+      "word": "mean",
+      "pos": "v. / n. / adj.",
+      "meaning": "v. 意思是；意味着；意指；打算\nn. 平均数；平均值\nadj. 吝啬的；刻薄的；平均的",
+      "example": "What does this word mean?",
+      "exampleCn": "这个词是什么意思？",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 3,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "v. / n. / adj.",
+        "meaning": "v. 意思是；意味着；意指；打算\nn. 平均数；平均值\nadj. 吝啬的；刻薄的；平均的",
+        "phonetic": "miːn",
+        "example": "What does this sign mean?",
+        "exampleCn": "这个标志是什么意思？",
+        "examples": [
+          {
+            "sense": "v. 意思是",
+            "en": "What does this sign mean?",
+            "zh": "这个标志是什么意思？"
+          },
+          {
+            "sense": "n. 平均数",
+            "en": "The mean of two and four is three.",
+            "zh": "二和四的平均数是三。"
+          },
+          {
+            "sense": "adj. 刻薄的",
+            "en": "He was mean to his little sister.",
+            "zh": "他对妹妹很刻薄。"
+          },
+          {
+            "sense": "adj. 吝啬的",
+            "en": "He is mean with money.",
+            "zh": "他花钱很吝啬。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 4326,
+      "word": "race",
+      "pos": "v. / n.",
+      "meaning": "v. 赛跑；参加竞速比赛；快速移动\nn. 赛跑；竞赛；种族；族群",
+      "example": "We race each other across the playground.",
+      "exampleCn": "我们在操场上互相比赛跑步。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "v. 赛跑；参加竞速比赛；快速移动\nn. 赛跑；竞赛；种族；族群",
+        "phonetic": "reɪs",
+        "example": "The race starts after lunch.",
+        "exampleCn": "比赛在午饭后开始。",
+        "examples": [
+          {
+            "sense": "n. 比赛",
+            "en": "The race starts after lunch.",
+            "zh": "比赛在午饭后开始。"
+          },
+          {
+            "sense": "v. 赛跑",
+            "en": "We race each other to the gate.",
+            "zh": "我们比赛看谁先跑到大门。"
+          },
+          {
+            "sense": "n. 种族；族群",
+            "en": "People of every race are welcome.",
+            "zh": "我们欢迎各个族群的人。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 4378,
+      "word": "match",
+      "pos": "v. / n.",
+      "meaning": "v. 与……相配；匹配；使配对\nn. 火柴；比赛；相配的人或物",
+      "example": "Your shoes match your coat.",
+      "exampleCn": "你的鞋子和外套很相配。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "v. 与……相配；匹配；使配对\nn. 火柴；比赛；相配的人或物",
+        "phonetic": "mætʃ",
+        "example": "My shoes match this coat.",
+        "exampleCn": "我的鞋和这件外套很配。",
+        "examples": [
+          {
+            "sense": "v. 相配",
+            "en": "My shoes match this coat.",
+            "zh": "我的鞋和这件外套很配。"
+          },
+          {
+            "sense": "n. 火柴",
+            "en": "Light the candle with a match.",
+            "zh": "用一根火柴点燃蜡烛。"
+          },
+          {
+            "sense": "n. 比赛",
+            "en": "The match begins at seven.",
+            "zh": "比赛七点开始。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 4529,
+      "word": "order",
+      "pos": "v./n.",
+      "meaning": "点餐/命令/顺序",
+      "example": "Are you ready to order your food?",
+      "exampleCn": "你准备好点餐了吗？",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "点餐/命令/顺序\nn. 订单",
+        "phonetic": "ˈɔːdə",
+        "example": "I would like to order some soup.",
+        "exampleCn": "我想点一些汤。",
+        "examples": [
+          {
+            "sense": "v. 点餐",
+            "en": "I would like to order some soup.",
+            "zh": "我想点一些汤。"
+          },
+          {
+            "sense": "n. 命令",
+            "en": "The soldier followed the order.",
+            "zh": "士兵服从了命令。"
+          },
+          {
+            "sense": "n. 顺序",
+            "en": "Put these numbers in order.",
+            "zh": "把这些数字按顺序排列。"
+          },
+          {
+            "sense": "n. 订单",
+            "en": "We placed an order for rice.",
+            "zh": "我们下了一份大米订单。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 4672,
+      "word": "store",
+      "pos": "v./n.",
+      "meaning": "储存/商店",
+      "example": "She stored the jam in a cool place.",
+      "exampleCn": "她把果酱存放在阴凉处。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "储存/商店",
+        "phonetic": "stɔː",
+        "example": "Store the cheese in the fridge.",
+        "exampleCn": "把奶酪储存在冰箱里。",
+        "examples": [
+          {
+            "sense": "v. 储存",
+            "en": "Store the cheese in the fridge.",
+            "zh": "把奶酪储存在冰箱里。"
+          },
+          {
+            "sense": "n. 商店",
+            "en": "This store sells fresh bread.",
+            "zh": "这家商店卖新鲜面包。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 4876,
+      "word": "state",
+      "pos": "v./n.",
+      "meaning": "陈述/国家/州",
+      "example": "He stated his opinion clearly at the meeting.",
+      "exampleCn": "他在会上清楚地陈述了自己的意见。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "陈述/国家/州\nn. 状态；状况",
+        "phonetic": "steɪt",
+        "example": "Please state your name.",
+        "exampleCn": "请说出你的姓名。",
+        "examples": [
+          {
+            "sense": "v. 陈述",
+            "en": "Please state your name.",
+            "zh": "请说出你的姓名。"
+          },
+          {
+            "sense": "n. 州",
+            "en": "Texas is a large state.",
+            "zh": "得克萨斯是一个大州。"
+          },
+          {
+            "sense": "n. 状态",
+            "en": "The house is in a poor state.",
+            "zh": "这座房子的状况很差。"
+          },
+          {
+            "sense": "n. 国家",
+            "en": "These states share a border.",
+            "zh": "这些国家有共同边界。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 4947,
+      "word": "deal",
+      "pos": "n./v.",
+      "meaning": "交易/协议/处理",
+      "example": "They signed a deal worth millions of dollars.",
+      "exampleCn": "他们签署了一笔价值数百万美元的交易。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "交易/协议/处理\nv. 发牌",
+        "phonetic": "diːl",
+        "example": "They agreed to a fair deal.",
+        "exampleCn": "他们达成了一项公平的协议。",
+        "examples": [
+          {
+            "sense": "n. 交易；协议",
+            "en": "They agreed to a fair deal.",
+            "zh": "他们达成了一项公平的协议。"
+          },
+          {
+            "sense": "v. 处理（deal with）",
+            "en": "We must deal with this problem.",
+            "zh": "我们必须处理这个问题。"
+          },
+          {
+            "sense": "v. 发牌",
+            "en": "Please deal the cards.",
+            "zh": "请发牌。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 5024,
+      "word": "sentence",
+      "pos": "n./v.",
+      "meaning": "判决/句子",
+      "example": "He received a prison sentence of ten years.",
+      "exampleCn": "他被判十年监禁。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "判决/句子",
+        "phonetic": "ˈsentəns",
+        "example": "Write one sentence about your family.",
+        "exampleCn": "写一句关于你家人的话。",
+        "examples": [
+          {
+            "sense": "n. 句子",
+            "en": "Write one sentence about your family.",
+            "zh": "写一句关于你家人的话。"
+          },
+          {
+            "sense": "n. 判决；刑罚",
+            "en": "He received a short prison sentence.",
+            "zh": "他被判了一段较短的监禁刑期。"
+          },
+          {
+            "sense": "v. 判刑",
+            "en": "The judge sentenced him to prison.",
+            "zh": "法官判他入狱。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 5046,
+      "word": "fine",
+      "pos": "n./adj.",
+      "meaning": "罚款/好的/精细的",
+      "example": "He had to pay a fine for parking illegally.",
+      "exampleCn": "他因违章停车不得不缴纳罚款。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "adj. / n. / v.",
+        "meaning": "罚款/好的/精细的\nv. 处以罚款",
+        "phonetic": "faɪn",
+        "example": "She feels fine today.",
+        "exampleCn": "她今天感觉不错。",
+        "examples": [
+          {
+            "sense": "adj. 好的；身体不错的",
+            "en": "She feels fine today.",
+            "zh": "她今天感觉不错。"
+          },
+          {
+            "sense": "n. 罚款",
+            "en": "He paid a fine for parking there.",
+            "zh": "他因在那里停车而交了罚款。"
+          },
+          {
+            "sense": "adj. 细的",
+            "en": "Use a brush with a fine tip.",
+            "zh": "用一支笔尖很细的画笔。"
+          },
+          {
+            "sense": "v. 处以罚款",
+            "en": "They fined him for speeding.",
+            "zh": "他们因他超速而罚了款。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 5118,
+      "word": "matter",
+      "pos": "n./v.",
+      "meaning": "事情/物质/要紧",
+      "example": "What is the matter with your car?",
+      "exampleCn": "你的车出了什么问题？",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "事情/物质/要紧",
+        "phonetic": "ˈmætə",
+        "example": "This is a private matter.",
+        "exampleCn": "这是一件私事。",
+        "examples": [
+          {
+            "sense": "n. 事情",
+            "en": "This is a private matter.",
+            "zh": "这是一件私事。"
+          },
+          {
+            "sense": "n. 物质",
+            "en": "Matter can be solid, liquid, or gas.",
+            "zh": "物质可以呈固态、液态或气态。"
+          },
+          {
+            "sense": "v. 要紧；重要",
+            "en": "Your opinion matters to me.",
+            "zh": "你的看法对我很重要。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 5353,
+      "word": "mind",
+      "pos": "n./v.",
+      "meaning": "头脑/思想/介意",
+      "example": "She had a sharp mind even in old age.",
+      "exampleCn": "她年事已高仍头脑敏锐。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "头脑/思想/介意\nv. 留心；注意",
+        "phonetic": "maɪnd",
+        "example": "You have a curious mind.",
+        "exampleCn": "你有一颗好奇的心。",
+        "examples": [
+          {
+            "sense": "n. 头脑；心智",
+            "en": "You have a curious mind.",
+            "zh": "你有一颗好奇的心。"
+          },
+          {
+            "sense": "v. 介意",
+            "en": "Do you mind if I sit here?",
+            "zh": "你介意我坐在这里吗？"
+          },
+          {
+            "sense": "v. 留心；注意",
+            "en": "Mind the steps.",
+            "zh": "当心台阶。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 5451,
+      "word": "like",
+      "pos": "v. / prep. / adj. / n. / adv.",
+      "meaning": "v. 喜欢；想要（常用 would like）\nprep. 像；如同；例如\nadj. 相似的；同样的\nn. 喜好；同样的人或物\nadv. 大约（非正式）；可能（方言用法）",
+      "example": "I like reading before bed.",
+      "exampleCn": "我喜欢在睡前阅读。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 5,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "v. / prep. / n. / adj. / adv.",
+        "meaning": "v. 喜欢；想要（常用 would like）\nprep. 像；如同；例如\nadj. 相似的；同样的\nn. 喜好；同样的人或物\nadv. 大约（非正式）；可能（方言用法）",
+        "phonetic": "laik",
+        "example": "I like these songs.",
+        "exampleCn": "我喜欢这些歌。",
+        "examples": [
+          {
+            "sense": "v. 喜欢",
+            "en": "I like these songs.",
+            "zh": "我喜欢这些歌。"
+          },
+          {
+            "sense": "prep. 像",
+            "en": "This cloud looks like a rabbit.",
+            "zh": "这朵云看起来像一只兔子。"
+          },
+          {
+            "sense": "v. 想要（would like）",
+            "en": "I would like some water.",
+            "zh": "我想要一些水。"
+          },
+          {
+            "sense": "n. 喜好（常用复数 likes）",
+            "en": "Tell me your likes and dislikes.",
+            "zh": "告诉我你的喜好和厌恶。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 5488,
+      "word": "still",
+      "pos": "conj./n./v./adj./adv.",
+      "meaning": "n. 蒸馏室, 寂静, 剧照\\nv. 蒸馏, (使)平静, (使)静止\\na. 静止的, 不动的, 静寂的, 不起泡的, 静物摄影的\\nadv. 仍然, 更, 静止地\\nconj. 然而, 但是",
+      "example": "Please sit still for a moment.",
+      "exampleCn": "请坐着别动一会儿。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 5,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "adv. / adj. / n. / conj. / v.",
+        "meaning": "n. 蒸馏室, 寂静, 剧照\\nv. 蒸馏, (使)平静, (使)静止\\na. 静止的, 不动的, 静寂的, 不起泡的, 静物摄影的\\nadv. 仍然, 更, 静止地\\nconj. 然而, 但是",
+        "phonetic": "stil",
+        "example": "He is still at school.",
+        "exampleCn": "他仍在上学。",
+        "examples": [
+          {
+            "sense": "adv. 仍然",
+            "en": "He is still at school.",
+            "zh": "他仍在上学。"
+          },
+          {
+            "sense": "adj. 静止的",
+            "en": "Keep the camera still.",
+            "zh": "保持相机不动。"
+          },
+          {
+            "sense": "n. 电影剧照",
+            "en": "This is a still from the film.",
+            "zh": "这是那部电影的一张剧照。"
+          },
+          {
+            "sense": "adv. 尽管如此",
+            "en": "Still, we decided to try.",
+            "zh": "尽管如此，我们还是决定试一试。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 5497,
+      "word": "school",
+      "pos": "n./v.",
+      "meaning": "n. 学校, 鱼群, 门派, 学派\\nvt. 教育, 训练, 培养\\nvi. 成群地游",
+      "example": "The school was founded in 1900.",
+      "exampleCn": "学校始建于1900年。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 学校, 鱼群, 门派, 学派\\nvt. 教育, 训练, 培养\\nvi. 成群地游",
+        "phonetic": "sku:l",
+        "example": "The school is near my home.",
+        "exampleCn": "学校在我家附近。",
+        "examples": [
+          {
+            "sense": "n. 学校",
+            "en": "The school is near my home.",
+            "zh": "学校在我家附近。"
+          },
+          {
+            "sense": "n. 鱼群",
+            "en": "A school of fish swam past.",
+            "zh": "一群鱼游了过去。"
+          },
+          {
+            "sense": "v. 训练（较正式）",
+            "en": "She schooled herself to stay calm.",
+            "zh": "她训练自己保持冷静。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 5569,
+      "word": "set",
+      "pos": "n./v./adj.",
+      "meaning": "n. 日落, 同伙, 组合, 集合, 装置\\nvt. 放, 安置, 放置, 设定, 使凝结, 点燃, 确定, 点缀, 使就位, 树立, 分配, 调整\\nvi. 日落, 凝固, 定型, 搁住, 结果, 适合\\na. 决心的, 规定的, 故意的",
+      "example": "A set of books.",
+      "exampleCn": "一套书。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 3,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v. / adj.",
+        "meaning": "n. 一套；一组；集合；装置\nv. 放；安置；设定；确定；使就位；日落；凝固\nadj. 固定的；规定的；准备好的",
+        "phonetic": "set",
+        "example": "This set of cups is new.",
+        "exampleCn": "这套杯子是新的。",
+        "examples": [
+          {
+            "sense": "n. 一套；一组",
+            "en": "This set of cups is new.",
+            "zh": "这套杯子是新的。"
+          },
+          {
+            "sense": "v. 放置",
+            "en": "Set the bag by the door.",
+            "zh": "把包放在门旁边。"
+          },
+          {
+            "sense": "v. 设定",
+            "en": "Please set the alarm for six.",
+            "zh": "请把闹钟设为六点。"
+          },
+          {
+            "sense": "v. 日落",
+            "en": "The sun will set soon.",
+            "zh": "太阳很快就要落山了。"
+          },
+          {
+            "sense": "v. 凝固",
+            "en": "The jelly will set in the fridge.",
+            "zh": "果冻会在冰箱里凝固。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 5
+      }
+    },
+    {
+      "id": 5572,
+      "word": "long",
+      "pos": "adj./v./adv./n.",
+      "meaning": "a. 长的, 长久的, 冗长的, 做多头的\\nvi. 渴望, 热望, 极想\\nadv. 长久, 始终\\nn. 长时间, 长信号, 长整型\\n[计] 长, 长整型",
+      "example": "This road is long.",
+      "exampleCn": "这条路很长。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 4,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "adj. / adv. / v. / n.",
+        "meaning": "a. 长的, 长久的, 冗长的, 做多头的\\nvi. 渴望, 热望, 极想\\nadv. 长久, 始终\\nn. 长时间, 长信号, 长整型\\n[计] 长, 长整型",
+        "phonetic": "lɒŋ",
+        "example": "This bridge is very long.",
+        "exampleCn": "这座桥很长。",
+        "examples": [
+          {
+            "sense": "adj. 长的",
+            "en": "This bridge is very long.",
+            "zh": "这座桥很长。"
+          },
+          {
+            "sense": "adv. 长时间地",
+            "en": "Have you been waiting long?",
+            "zh": "你已经等很久了吗？"
+          },
+          {
+            "sense": "v. 渴望",
+            "en": "I long to see my family.",
+            "zh": "我渴望见到家人。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 5596,
+      "word": "kind",
+      "pos": "adj. / n.",
+      "meaning": "adj. 友善的；体贴的；仁慈的\nn. 种类；性质；方式",
+      "example": "Our neighbor is kind to everyone.",
+      "exampleCn": "我们的邻居对每个人都很友善。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "adj. / n.",
+        "meaning": "adj. 友善的；体贴的；仁慈的\nn. 种类；性质；方式",
+        "phonetic": "kaind",
+        "example": "She is kind to new students.",
+        "exampleCn": "她对新同学很友善。",
+        "examples": [
+          {
+            "sense": "adj. 友善的",
+            "en": "She is kind to new students.",
+            "zh": "她对新同学很友善。"
+          },
+          {
+            "sense": "n. 种类",
+            "en": "What kind of music do you like?",
+            "zh": "你喜欢哪种音乐？"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 5709,
+      "word": "light",
+      "pos": "adj. / n. / v. / adv.",
+      "meaning": "adj. 轻的；少量的；轻微的；轻快的；轻浮的；明亮的；浅色的；容易的\nn. 光；光亮；灯；日光；光源；杰出人物；火花；看法\nv. 点燃；照亮；变亮；落下；偶然碰到（light on）\nadv. 轻轻地；轻装地",
+      "example": "This bag is light enough to carry.",
+      "exampleCn": "这个包很轻，可以提得动。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 4,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "adj. / n. / v. / adv.",
+        "meaning": "adj. 轻的；少量的；轻微的；轻快的；轻浮的；明亮的；浅色的；容易的\nn. 光；光亮；灯；日光；光源；杰出人物；火花；看法\nv. 点燃；照亮；变亮；落下；偶然碰到（light on）\nadv. 轻轻地；轻装地",
+        "phonetic": "lait",
+        "example": "This box is light.",
+        "exampleCn": "这个盒子很轻。",
+        "examples": [
+          {
+            "sense": "adj. 轻的",
+            "en": "This box is light.",
+            "zh": "这个盒子很轻。"
+          },
+          {
+            "sense": "adj. 明亮的",
+            "en": "This room is light and warm.",
+            "zh": "这个房间明亮又温暖。"
+          },
+          {
+            "sense": "n. 光",
+            "en": "The light hurts my eyes.",
+            "zh": "这光刺得我眼睛疼。"
+          },
+          {
+            "sense": "v. 点燃",
+            "en": "Please light the candle.",
+            "zh": "请点燃蜡烛。"
+          },
+          {
+            "sense": "adv. 轻装地",
+            "en": "They always travel light.",
+            "zh": "他们旅行总是轻装上阵。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 5
+      }
+    },
+    {
+      "id": 6158,
+      "word": "kid",
+      "pos": "n./adj./v.",
+      "meaning": "n. 小山羊, 小山羊肉, 小孩, 欺骗\\na. 小山羊皮制的\\nv. 哄骗, 嘲弄",
+      "example": "The kid is playing in the garden.",
+      "exampleCn": "那个孩子正在花园里玩。",
+      "categories": [
+        "daily",
+        "cet4"
+      ],
+      "posCount": 3,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v. / adj.",
+        "meaning": "n. 小山羊, 小山羊肉, 小孩, 欺骗\\na. 小山羊皮制的\\nv. 哄骗, 嘲弄",
+        "phonetic": "kid",
+        "example": "The kid is learning to swim.",
+        "exampleCn": "那个孩子正在学游泳。",
+        "examples": [
+          {
+            "sense": "n. 小孩",
+            "en": "The kid is learning to swim.",
+            "zh": "那个孩子正在学游泳。"
+          },
+          {
+            "sense": "n. 小山羊",
+            "en": "A young goat is called a kid.",
+            "zh": "小山羊叫作 kid。"
+          },
+          {
+            "sense": "v. 开玩笑",
+            "en": "I am only kidding.",
+            "zh": "我只是开个玩笑。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 7235,
+      "word": "patient",
+      "pos": "n./adj.",
+      "meaning": "n. 病人, 承受者\\na. 忍耐的, 容忍的, 有耐性的, 坚忍的",
+      "example": "Please be patient while we check your ticket.",
+      "exampleCn": "我们检查您的票时，请耐心等候。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / adj.",
+        "meaning": "n. 病人, 承受者\\na. 忍耐的, 容忍的, 有耐性的, 坚忍的",
+        "phonetic": "'peiʃәnt",
+        "example": "The patient is resting now.",
+        "exampleCn": "病人现在正在休息。",
+        "examples": [
+          {
+            "sense": "n. 病人",
+            "en": "The patient is resting now.",
+            "zh": "病人现在正在休息。"
+          },
+          {
+            "sense": "adj. 有耐心的",
+            "en": "Please be patient with the children.",
+            "zh": "请对孩子们耐心一点。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 7308,
+      "word": "pretty",
+      "pos": "adv./adj.",
+      "meaning": "a. 漂亮的, 优美的, 机灵的, 狡猾的, 恰当的\\nadv. 相当, 颇",
+      "example": "She wore a pretty blue hat.",
+      "exampleCn": "她戴了一顶漂亮的蓝色帽子。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "adj. / adv.",
+        "meaning": "a. 漂亮的, 优美的, 机灵的, 狡猾的, 恰当的\\nadv. 相当, 颇",
+        "phonetic": "'priti",
+        "example": "That is a pretty little garden.",
+        "exampleCn": "那是一个漂亮的小花园。",
+        "examples": [
+          {
+            "sense": "adj. 漂亮的",
+            "en": "That is a pretty little garden.",
+            "zh": "那是一个漂亮的小花园。"
+          },
+          {
+            "sense": "adv. 相当（非正式）",
+            "en": "The test was pretty easy.",
+            "zh": "这次考试相当容易。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 7373,
+      "word": "safe",
+      "pos": "n./adj.",
+      "meaning": "n. 保险箱, 冷藏室\\na. 安全的, 可靠的, 平安的, 稳健的, 有把握的",
+      "example": "Keep your money in a safe place.",
+      "exampleCn": "把钱放在安全的地方。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "adj. / n.",
+        "meaning": "n. 保险箱, 冷藏室\\na. 安全的, 可靠的, 平安的, 稳健的, 有把握的",
+        "phonetic": "seif",
+        "example": "Your bags are safe here.",
+        "exampleCn": "你的包放在这里很安全。",
+        "examples": [
+          {
+            "sense": "adj. 安全的",
+            "en": "Your bags are safe here.",
+            "zh": "你的包放在这里很安全。"
+          },
+          {
+            "sense": "n. 保险箱",
+            "en": "Put the money in the safe.",
+            "zh": "把钱放进保险箱里。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 7483,
+      "word": "pool",
+      "pos": "v./n.",
+      "meaning": "n. 池, 水塘, 石油层, 联营\\nvt. 合伙经营, 共享, 采掘, 汇聚成\\nvi. 汇合成塘, 淤积, 联营",
+      "example": "The children played in the pool.",
+      "exampleCn": "孩子们在游泳池里玩耍。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 池, 水塘, 石油层, 联营\\nvt. 合伙经营, 共享, 采掘, 汇聚成\\nvi. 汇合成塘, 淤积, 联营\nn. 台球（pool）",
+        "phonetic": "pu:l",
+        "example": "The pool is full of children.",
+        "exampleCn": "游泳池里有很多孩子。",
+        "examples": [
+          {
+            "sense": "n. 水池；游泳池",
+            "en": "The pool is full of children.",
+            "zh": "游泳池里有很多孩子。"
+          },
+          {
+            "sense": "n. 台球",
+            "en": "We play pool after work.",
+            "zh": "我们下班后打台球。"
+          },
+          {
+            "sense": "v. 汇集；共享",
+            "en": "We can pool our money.",
+            "zh": "我们可以把钱凑在一起。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 7501,
+      "word": "novel",
+      "pos": "adj./n.",
+      "meaning": "n. 小说, 长篇故事\\na. 新奇的, 异常的",
+      "example": "The computer produced a completely novel proof of a well-known theorem.",
+      "exampleCn": "计算机为一个众所周知的定理提供了一个全新的证明。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 2,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "n. / adj.",
+        "meaning": "n. 小说, 长篇故事\\na. 新奇的, 异常的",
+        "phonetic": "'nɒvl",
+        "example": "This novel has a happy ending.",
+        "exampleCn": "这部小说有一个圆满的结局。",
+        "examples": [
+          {
+            "sense": "n. 小说",
+            "en": "This novel has a happy ending.",
+            "zh": "这部小说有一个圆满的结局。"
+          },
+          {
+            "sense": "adj. 新颖的",
+            "en": "A novel idea saved us time.",
+            "zh": "一个新颖的想法为我们节省了时间。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 7572,
+      "word": "sharp",
+      "pos": "adv./n./adj.",
+      "meaning": "n. 半升音调, 利刃, 骗子\\na. 锋利的, 明显的, 敏锐的, 急剧的, 尖刻的, 严厉的, 刺耳的, 精明的\\nadv. 锐利地, 急速地",
+      "example": "Be careful with that sharp knife.",
+      "exampleCn": "小心那把锋利的刀。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 3,
+      "kind": "pos",
+      "note": null,
+      "current": {
+        "pos": "adj. / adv. / n.",
+        "meaning": "n. 半升音调, 利刃, 骗子\\na. 锋利的, 明显的, 敏锐的, 急剧的, 尖刻的, 严厉的, 刺耳的, 精明的\\nadv. 锐利地, 急速地\nadv. 正好在某时刻；整（用于时间之后）",
+        "phonetic": "ʃɑ:p",
+        "example": "This knife is very sharp.",
+        "exampleCn": "这把刀很锋利。",
+        "examples": [
+          {
+            "sense": "adj. 锋利的",
+            "en": "This knife is very sharp.",
+            "zh": "这把刀很锋利。"
+          },
+          {
+            "sense": "adj. 敏锐的",
+            "en": "She has a sharp mind.",
+            "zh": "她思维敏锐。"
+          },
+          {
+            "sense": "adv. 准时；整",
+            "en": "The train leaves at six sharp.",
+            "zh": "火车六点整发车。"
+          },
+          {
+            "sense": "n. 升半音的音符",
+            "en": "Play an F sharp.",
+            "zh": "弹一个升 F 音。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 383,
+      "word": "case",
+      "pos": "n.",
+      "meaning": "情况；案例；箱子",
+      "example": "In that case, we should leave.",
+      "exampleCn": "那样的话，我们应该离开。",
+      "categories": [
+        "cet4"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n.",
+        "meaning": "情况；案例；箱子\nn. 案件",
+        "phonetic": "/keɪs/",
+        "example": "In this case, we should wait.",
+        "exampleCn": "在这种情况下，我们应该等一等。",
+        "examples": [
+          {
+            "sense": "n. 情况",
+            "en": "In this case, we should wait.",
+            "zh": "在这种情况下，我们应该等一等。"
+          },
+          {
+            "sense": "n. 箱子；盒子",
+            "en": "Put the camera in its case.",
+            "zh": "把相机放进相机盒里。"
+          },
+          {
+            "sense": "n. 案件",
+            "en": "The police are working on this case.",
+            "zh": "警方正在调查这个案件。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 434,
+      "word": "chest",
+      "pos": "n.",
+      "meaning": "胸部；箱子",
+      "example": "He has pain in his chest.",
+      "exampleCn": "他胸部疼痛。",
+      "categories": [
+        "daily",
+        "ielts"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n.",
+        "meaning": "胸部；箱子",
+        "phonetic": "/tʃest/",
+        "example": "He felt pain in his chest.",
+        "exampleCn": "他感到胸口疼。",
+        "examples": [
+          {
+            "sense": "n. 胸部",
+            "en": "He felt pain in his chest.",
+            "zh": "他感到胸口疼。"
+          },
+          {
+            "sense": "n. 箱子",
+            "en": "The blankets are in that wooden chest.",
+            "zh": "毯子在那个木箱里。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 707,
+      "word": "organ",
+      "pos": "n.",
+      "meaning": "器官；机构；风琴",
+      "example": "The heart is a vital organ.",
+      "exampleCn": "心脏是重要器官。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n.",
+        "meaning": "器官；机构；风琴",
+        "phonetic": "/ˈɔːɡən/",
+        "example": "The heart is an important organ.",
+        "exampleCn": "心脏是一个重要器官。",
+        "examples": [
+          {
+            "sense": "n. 器官",
+            "en": "The heart is an important organ.",
+            "zh": "心脏是一个重要器官。"
+          },
+          {
+            "sense": "n. 机构（较正式）",
+            "en": "The court is an organ of the state.",
+            "zh": "法院是国家的一个机构。"
+          },
+          {
+            "sense": "n. 管风琴",
+            "en": "She plays the organ at church.",
+            "zh": "她在教堂弹管风琴。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 1746,
+      "word": "trunk",
+      "pos": "n.",
+      "meaning": "树干/躯干/行李箱",
+      "example": "The trunk of the tree stores water during dry seasons.",
+      "exampleCn": "树干在旱季储存水分。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n.",
+        "meaning": "树干/躯干/行李箱\nn. 象鼻；汽车后备箱（美式，英式常说 boot）",
+        "phonetic": "/trʌŋk/",
+        "example": "The tree has a thick trunk.",
+        "exampleCn": "这棵树的树干很粗。",
+        "examples": [
+          {
+            "sense": "n. 树干",
+            "en": "The tree has a thick trunk.",
+            "zh": "这棵树的树干很粗。"
+          },
+          {
+            "sense": "n. 躯干",
+            "en": "Keep your trunk straight during this exercise.",
+            "zh": "做这个动作时保持躯干挺直。"
+          },
+          {
+            "sense": "n. 汽车后备箱（美式）",
+            "en": "Put the bags in the trunk.",
+            "zh": "把包放进汽车后备箱里。"
+          },
+          {
+            "sense": "n. 象鼻",
+            "en": "The elephant lifted its trunk.",
+            "zh": "大象抬起了鼻子。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 1880,
+      "word": "vessel",
+      "pos": "n.",
+      "meaning": "船只/容器/血管",
+      "example": "The vessel carried supplies across the ocean.",
+      "exampleCn": "这艘船把物资运过海洋。",
+      "categories": [
+        "toefl",
+        "ielts"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n.",
+        "meaning": "船只/容器/血管",
+        "phonetic": "/ˈvesl/",
+        "example": "This vessel carries food to the island.",
+        "exampleCn": "这艘船向岛上运送食物。",
+        "examples": [
+          {
+            "sense": "n. 船只（较正式）",
+            "en": "This vessel carries food to the island.",
+            "zh": "这艘船向岛上运送食物。"
+          },
+          {
+            "sense": "n. 容器（较正式）",
+            "en": "Fill the vessel with clean water.",
+            "zh": "往容器里装上干净的水。"
+          },
+          {
+            "sense": "n. 血管（blood vessel）",
+            "en": "A blood vessel carries blood.",
+            "zh": "血管输送血液。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 3669,
+      "word": "plate",
+      "pos": "n.",
+      "meaning": "板块/盘子",
+      "example": "The Pacific Plate is moving slowly westward.",
+      "exampleCn": "太平洋板块正缓慢向西移动。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n.",
+        "meaning": "板块/盘子",
+        "phonetic": "pleɪt",
+        "example": "Put the bread on this plate.",
+        "exampleCn": "把面包放在这个盘子上。",
+        "examples": [
+          {
+            "sense": "n. 盘子",
+            "en": "Put the bread on this plate.",
+            "zh": "把面包放在这个盘子上。"
+          },
+          {
+            "sense": "n. 地壳板块",
+            "en": "The two plates move slowly apart.",
+            "zh": "这两个板块正缓慢地分离。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 3688,
+      "word": "spring",
+      "pos": "n.",
+      "meaning": "泉水/春天/弹簧",
+      "example": "The village gets its water from a natural spring.",
+      "exampleCn": "这个村庄从一处天然泉水中取水。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n.",
+        "meaning": "泉水/春天/弹簧",
+        "phonetic": "sprɪŋ",
+        "example": "Spring brings warm days.",
+        "exampleCn": "春天带来温暖的日子。",
+        "examples": [
+          {
+            "sense": "n. 春天",
+            "en": "Spring brings warm days.",
+            "zh": "春天带来温暖的日子。"
+          },
+          {
+            "sense": "n. 泉水；泉",
+            "en": "This spring has clear water.",
+            "zh": "这口泉的水很清澈。"
+          },
+          {
+            "sense": "n. 弹簧",
+            "en": "The spring inside the pen is broken.",
+            "zh": "笔里的弹簧坏了。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 3964,
+      "word": "record",
+      "pos": "n.",
+      "meaning": "记录/唱片",
+      "example": "The athlete broke the world record.",
+      "exampleCn": "这位运动员打破了世界纪录。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "记录/唱片\nv. 录制；记录",
+        "phonetic": "/ˈrekɔːd/（名词）；/rɪˈkɔːd/（动词）",
+        "example": "She set a new record.",
+        "exampleCn": "她创造了一项新纪录。",
+        "examples": [
+          {
+            "sense": "n. 记录（/ˈrekɔːd/）",
+            "en": "She set a new record.",
+            "zh": "她创造了一项新纪录。"
+          },
+          {
+            "sense": "n. 唱片（/ˈrekɔːd/）",
+            "en": "This record belonged to my grandfather.",
+            "zh": "这张唱片以前属于我的祖父。"
+          },
+          {
+            "sense": "v. 录制（/rɪˈkɔːd/）",
+            "en": "Please record the lesson.",
+            "zh": "请把这节课录下来。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 4010,
+      "word": "table",
+      "pos": "n.",
+      "meaning": "表格/桌子",
+      "example": "The results are presented in the table below.",
+      "exampleCn": "结果列在下表中。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n.",
+        "meaning": "表格/桌子",
+        "phonetic": "ˈteɪbl",
+        "example": "The keys are on the table.",
+        "exampleCn": "钥匙在桌上。",
+        "examples": [
+          {
+            "sense": "n. 桌子",
+            "en": "The keys are on the table.",
+            "zh": "钥匙在桌上。"
+          },
+          {
+            "sense": "n. 表格",
+            "en": "This table shows our test scores.",
+            "zh": "这张表列出了我们的考试分数。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 4239,
+      "word": "press",
+      "pos": "n.",
+      "meaning": "新闻界/出版社",
+      "example": "The press plays an important role in a democracy.",
+      "exampleCn": "新闻界在民主中扮演着重要角色。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "新闻界/出版社\nv. 按；压",
+        "phonetic": "pres",
+        "example": "The press reported the news.",
+        "exampleCn": "新闻界报道了这则消息。",
+        "examples": [
+          {
+            "sense": "n. 新闻界",
+            "en": "The press reported the news.",
+            "zh": "新闻界报道了这则消息。"
+          },
+          {
+            "sense": "n. 出版社",
+            "en": "She works for a university press.",
+            "zh": "她在一家大学出版社工作。"
+          },
+          {
+            "sense": "v. 按压",
+            "en": "Press this button to start.",
+            "zh": "按这个按钮开始。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 4375,
+      "word": "nail",
+      "pos": "n.",
+      "meaning": "钉子/指甲",
+      "example": "He hammered a nail into the wall.",
+      "exampleCn": "他把钉子锤进了墙里。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n.",
+        "meaning": "钉子/指甲",
+        "phonetic": "neɪl",
+        "example": "Use a nail to hang the picture.",
+        "exampleCn": "用一颗钉子把画挂起来。",
+        "examples": [
+          {
+            "sense": "n. 钉子",
+            "en": "Use a nail to hang the picture.",
+            "zh": "用一颗钉子把画挂起来。"
+          },
+          {
+            "sense": "n. 指甲",
+            "en": "There is paint on my nail.",
+            "zh": "我的指甲上沾着油漆。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 4418,
+      "word": "iron",
+      "pos": "n.",
+      "meaning": "铁/熨斗",
+      "example": "The bridge is made of iron and steel.",
+      "exampleCn": "这座桥是由铁和钢制成的。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "铁/熨斗\nv. 熨烫",
+        "phonetic": "ˈaɪən",
+        "example": "Iron is a useful metal.",
+        "exampleCn": "铁是一种有用的金属。",
+        "examples": [
+          {
+            "sense": "n. 铁",
+            "en": "Iron is a useful metal.",
+            "zh": "铁是一种有用的金属。"
+          },
+          {
+            "sense": "n. 熨斗",
+            "en": "The iron is too hot.",
+            "zh": "熨斗太烫了。"
+          },
+          {
+            "sense": "v. 熨烫",
+            "en": "Please iron this shirt.",
+            "zh": "请熨一下这件衬衫。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 4431,
+      "word": "mine",
+      "pos": "n.",
+      "meaning": "矿/矿山",
+      "example": "He worked in a coal mine for twenty years.",
+      "exampleCn": "他在煤矿工作了二十年。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / pron. / v.",
+        "meaning": "n. 矿井；矿山；地雷\npron. 我的东西；属于我的人或物\nv. 采矿；开采",
+        "phonetic": "maɪn",
+        "example": "It is dark inside the mine.",
+        "exampleCn": "矿井里很暗。",
+        "examples": [
+          {
+            "sense": "n. 矿井",
+            "en": "It is dark inside the mine.",
+            "zh": "矿井里很暗。"
+          },
+          {
+            "sense": "pron. 我的东西",
+            "en": "This blue coat is mine.",
+            "zh": "这件蓝外套是我的。"
+          },
+          {
+            "sense": "n. 地雷",
+            "en": "The road was closed because of a mine.",
+            "zh": "这条路因发现地雷而封闭了。"
+          },
+          {
+            "sense": "v. 采矿",
+            "en": "They mine coal in this area.",
+            "zh": "他们在这个地区采煤。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 4590,
+      "word": "jam",
+      "pos": "n.",
+      "meaning": "果酱/堵塞",
+      "example": "She spread strawberry jam on her toast.",
+      "exampleCn": "她在吐司上抹了草莓果酱。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "果酱/堵塞",
+        "phonetic": "dʒæm",
+        "example": "I like jam on warm bread.",
+        "exampleCn": "我喜欢在温热的面包上抹果酱。",
+        "examples": [
+          {
+            "sense": "n. 果酱",
+            "en": "I like jam on warm bread.",
+            "zh": "我喜欢在温热的面包上抹果酱。"
+          },
+          {
+            "sense": "n. 堵塞（traffic jam）",
+            "en": "We were late because of a traffic jam.",
+            "zh": "我们因为堵车而迟到了。"
+          },
+          {
+            "sense": "v. 卡住；堵塞",
+            "en": "The paper may jam the printer.",
+            "zh": "这张纸可能会卡住打印机。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 4658,
+      "word": "vault",
+      "pos": "n.",
+      "meaning": "拱顶/金库/跳马",
+      "example": "The bank keeps the money in a secure vault.",
+      "exampleCn": "银行把钱存放在安全的金库里。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n.",
+        "meaning": "拱顶/金库/跳马",
+        "phonetic": "vɔːlt",
+        "example": "The gold is stored in a vault.",
+        "exampleCn": "黄金存放在金库里。",
+        "examples": [
+          {
+            "sense": "n. 金库",
+            "en": "The gold is stored in a vault.",
+            "zh": "黄金存放在金库里。"
+          },
+          {
+            "sense": "n. 穹顶",
+            "en": "The church has a stone vault.",
+            "zh": "这座教堂有一个石砌穹顶。"
+          },
+          {
+            "sense": "n. 跳马（体操）",
+            "en": "She practises the vault every day.",
+            "zh": "她每天练习跳马。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 4790,
+      "word": "stamp",
+      "pos": "n.",
+      "meaning": "邮票/印章",
+      "example": "He stuck a stamp on the envelope.",
+      "exampleCn": "他在信封上贴了一张邮票。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "邮票/印章\nv. 盖章；跺脚",
+        "phonetic": "stæmp",
+        "example": "Put a stamp on the envelope.",
+        "exampleCn": "在信封上贴一张邮票。",
+        "examples": [
+          {
+            "sense": "n. 邮票",
+            "en": "Put a stamp on the envelope.",
+            "zh": "在信封上贴一张邮票。"
+          },
+          {
+            "sense": "n. 印章",
+            "en": "Use this stamp on the form.",
+            "zh": "在表格上使用这个印章。"
+          },
+          {
+            "sense": "v. 盖章",
+            "en": "Please stamp this form.",
+            "zh": "请在这张表格上盖章。"
+          },
+          {
+            "sense": "v. 跺脚",
+            "en": "Do not stamp your feet.",
+            "zh": "不要跺脚。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 5367,
+      "word": "palm",
+      "pos": "n.",
+      "meaning": "手掌/掌心/棕榈树",
+      "example": "She held the coin tightly in her palm.",
+      "exampleCn": "她把硬币紧紧握在掌心。",
+      "categories": [
+        "ielts"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n.",
+        "meaning": "手掌/掌心/棕榈树",
+        "phonetic": "pɑːm",
+        "example": "Hold the coin in your palm.",
+        "exampleCn": "把硬币握在手心里。",
+        "examples": [
+          {
+            "sense": "n. 手掌",
+            "en": "Hold the coin in your palm.",
+            "zh": "把硬币握在手心里。"
+          },
+          {
+            "sense": "n. 棕榈树",
+            "en": "A tall palm grows near the beach.",
+            "zh": "海滩附近长着一棵高大的棕榈树。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 5415,
+      "word": "will",
+      "pos": "aux.",
+      "meaning": "n. 意志, 决心, 意愿, 意向, 干劲, 遗嘱\\nvt. 用意志的力量驱使, 决意, 愿意, 立遗嘱\\nvi. 下决心, 愿意\\naux. 将, 愿意, 必须",
+      "example": "Where there's a will there's a way.",
+      "exampleCn": "有志者事竟成。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "modal v. / n.",
+        "meaning": "n. 意志, 决心, 意愿, 意向, 干劲, 遗嘱\\nvt. 用意志的力量驱使, 决意, 愿意, 立遗嘱\\nvi. 下决心, 愿意\\naux. 将, 愿意, 必须",
+        "phonetic": "wil",
+        "example": "I will call you tomorrow.",
+        "exampleCn": "我明天会给你打电话。",
+        "examples": [
+          {
+            "sense": "modal v. 将会",
+            "en": "I will call you tomorrow.",
+            "zh": "我明天会给你打电话。"
+          },
+          {
+            "sense": "n. 意志",
+            "en": "She has a strong will.",
+            "zh": "她意志坚强。"
+          },
+          {
+            "sense": "n. 遗嘱",
+            "en": "He left the house to me in his will.",
+            "zh": "他在遗嘱里把房子留给了我。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 5465,
+      "word": "well",
+      "pos": "adv.",
+      "meaning": "n. 井, 泉水, 源泉, 好\\nv. 涌出\\na. 健康的, 良好的, 适宜的, 恰当的\\nadv. 很好地, 适当地, 好意地, 很, 完全\\ninterj. 好啦",
+      "example": "She was a well of information.",
+      "exampleCn": "她是个消息灵通的人。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "adv. / adj. / n. / interj.",
+        "meaning": "n. 井, 泉水, 源泉, 好\\nv. 涌出\\na. 健康的, 良好的, 适宜的, 恰当的\\nadv. 很好地, 适当地, 好意地, 很, 完全\\ninterj. 好啦",
+        "phonetic": "wel",
+        "example": "She reads very well.",
+        "exampleCn": "她读得很好。",
+        "examples": [
+          {
+            "sense": "adv. 好地",
+            "en": "She reads very well.",
+            "zh": "她读得很好。"
+          },
+          {
+            "sense": "adj. 身体好的",
+            "en": "I feel well again.",
+            "zh": "我身体又好了。"
+          },
+          {
+            "sense": "n. 井",
+            "en": "The well is full of water.",
+            "zh": "井里满是水。"
+          },
+          {
+            "sense": "interj. 好了；那么",
+            "en": "Well, what do you think?",
+            "zh": "那么，你怎么看？"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 5589,
+      "word": "lot",
+      "pos": "v.",
+      "meaning": "n. 运气, 签, 抽签, 份额, 许多, 一堆\\nvt. 划分\\nvi. 抽签, 抓阄",
+      "example": "A lot of money.",
+      "exampleCn": "很多钱！",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 运气, 签, 抽签, 份额, 许多, 一堆\\nvt. 划分\\nvi. 抽签, 抓阄\nn. 地块；一块地",
+        "phonetic": "lɒt",
+        "example": "We have a lot of work.",
+        "exampleCn": "我们有很多工作。",
+        "examples": [
+          {
+            "sense": "n. 许多（a lot of）",
+            "en": "We have a lot of work.",
+            "zh": "我们有很多工作。"
+          },
+          {
+            "sense": "n. 地块",
+            "en": "They bought a small lot to build on.",
+            "zh": "他们买了一小块地用来盖房。"
+          },
+          {
+            "sense": "n. 签（draw lots）",
+            "en": "We drew lots to choose a team.",
+            "zh": "我们抽签选队伍。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 5591,
+      "word": "second",
+      "pos": "v.",
+      "meaning": "n. 秒, 瞬间, 第二名, 支持者, 助手\\na. 第二的, 其次的, 次要的, 附加的, 辅助的\\nnum. 第二\\nvt. 当...助手, 支持",
+      "example": "He came in a close second.",
+      "exampleCn": "他紧随其后。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "num. / n. / v.",
+        "meaning": "n. 秒, 瞬间, 第二名, 支持者, 助手\\na. 第二的, 其次的, 次要的, 附加的, 辅助的\\nnum. 第二\\nvt. 当...助手, 支持",
+        "phonetic": "'sekәnd",
+        "example": "This is my second visit.",
+        "exampleCn": "这是我第二次来访。",
+        "examples": [
+          {
+            "sense": "num. 第二",
+            "en": "This is my second visit.",
+            "zh": "这是我第二次来访。"
+          },
+          {
+            "sense": "n. 秒",
+            "en": "Wait a second, please.",
+            "zh": "请稍等一秒。"
+          },
+          {
+            "sense": "v. 附议（较正式）",
+            "en": "I second that proposal.",
+            "zh": "我附议那个提案。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 5644,
+      "word": "watch",
+      "pos": "v.",
+      "meaning": "n. 观察, 手表, 看守, 守护, 监视, 值班人\\nvt. 看, 注视, 照顾, 看守, 守护, 监视\\nvi. 观看, 注视, 守侯",
+      "example": "Watch a basketball game.",
+      "exampleCn": "观看篮球比赛。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "n. 观察, 手表, 看守, 守护, 监视, 值班人\\nvt. 看, 注视, 照顾, 看守, 守护, 监视\\nvi. 观看, 注视, 守侯",
+        "phonetic": "wɒtʃ",
+        "example": "We watch birds by the lake.",
+        "exampleCn": "我们在湖边观察鸟类。",
+        "examples": [
+          {
+            "sense": "v. 观看；观察",
+            "en": "We watch birds by the lake.",
+            "zh": "我们在湖边观察鸟类。"
+          },
+          {
+            "sense": "n. 手表",
+            "en": "My watch has stopped.",
+            "zh": "我的手表停了。"
+          },
+          {
+            "sense": "n. 值班；看守（on watch）",
+            "en": "The guard is on watch tonight.",
+            "zh": "警卫今晚值班。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 5682,
+      "word": "bank",
+      "pos": "n.",
+      "meaning": "n. 银行, 堤, 岸\\n[医] 库",
+      "example": "They pulled the canoe up on the bank.",
+      "exampleCn": "他们把独木舟拉到岸边。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n.",
+        "meaning": "n. 银行, 堤, 岸\\n[医] 库",
+        "phonetic": "bæŋk",
+        "example": "The bank opens at nine.",
+        "exampleCn": "银行九点开门。",
+        "examples": [
+          {
+            "sense": "n. 银行",
+            "en": "The bank opens at nine.",
+            "zh": "银行九点开门。"
+          },
+          {
+            "sense": "n. 河岸",
+            "en": "We sat on the river bank.",
+            "zh": "我们坐在河岸上。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 5697,
+      "word": "pass",
+      "pos": "v.",
+      "meaning": "n. 经过, 要隘, 途径, 通行, 护照, 及格\\nvt. 经过, 越过, 通过, 批准, 度过, 传递, 忽略\\nvi. 经过, 变化, 流通, 及格, 宣判, 终止, 消逝, 被忽略, 不叫牌, 传递\\n[计] 遍",
+      "example": "He had a pass for three days.",
+      "exampleCn": "他有三天的通行证。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "n. 经过, 要隘, 途径, 通行, 护照, 及格\\nvt. 经过, 越过, 通过, 批准, 度过, 传递, 忽略\\nvi. 经过, 变化, 流通, 及格, 宣判, 终止, 消逝, 被忽略, 不叫牌, 传递\\n[计] 遍",
+        "phonetic": "pæs",
+        "example": "We pass the school every morning.",
+        "exampleCn": "我们每天早上都经过学校。",
+        "examples": [
+          {
+            "sense": "v. 经过",
+            "en": "We pass the school every morning.",
+            "zh": "我们每天早上都经过学校。"
+          },
+          {
+            "sense": "v. 通过考试",
+            "en": "She hopes to pass the test.",
+            "zh": "她希望通过这次考试。"
+          },
+          {
+            "sense": "v. 递给",
+            "en": "Please pass me the salt.",
+            "zh": "请把盐递给我。"
+          },
+          {
+            "sense": "n. 通行证",
+            "en": "You need a pass to enter.",
+            "zh": "你需要通行证才能进去。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 5705,
+      "word": "ground",
+      "pos": "v.",
+      "meaning": "n. 土地, 战场, 场地, 地面, 范围\\na. 土地的, 地面上的\\nvt. 放在地上, 使搁浅, 打基础, 给...以训练\\nvi. 搁浅, 落地, 根据, 基于\\na. 磨过的\\ngrind的过去式和过去分词",
+      "example": "He dropped the logs on the ground.",
+      "exampleCn": "他把原木扔在地上。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / adj. / v.",
+        "meaning": "n. 土地, 战场, 场地, 地面, 范围\\na. 土地的, 地面上的\\nvt. 放在地上, 使搁浅, 打基础, 给...以训练\\nvi. 搁浅, 落地, 根据, 基于\\na. 磨过的\\ngrind的过去式和过去分词\nn. 理由（常用复数 grounds）\nv. 使停飞",
+        "phonetic": "graund",
+        "example": "The keys fell on the ground.",
+        "exampleCn": "钥匙掉到了地上。",
+        "examples": [
+          {
+            "sense": "n. 地面",
+            "en": "The keys fell on the ground.",
+            "zh": "钥匙掉到了地上。"
+          },
+          {
+            "sense": "adj. 磨碎的（grind 的过去分词）",
+            "en": "Add some ground pepper.",
+            "zh": "加一些胡椒粉。"
+          },
+          {
+            "sense": "v. 使停飞",
+            "en": "The storm grounded the planes.",
+            "zh": "暴风雨使飞机停飞。"
+          },
+          {
+            "sense": "n. 理由（常用复数 grounds）",
+            "en": "We have grounds for concern.",
+            "zh": "我们有理由担忧。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 5719,
+      "word": "lie",
+      "pos": "v.",
+      "meaning": "n. 谎言, 假象, 位置\\nvi. 躺着, 说谎, 位于, 展现, 存在, 停泊\\nvt. 谎骗",
+      "example": "Lie dormant.",
+      "exampleCn": "躺着休眠。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "n. 谎言, 假象, 位置\\nvi. 躺着, 说谎, 位于, 展现, 存在, 停泊\\nvt. 谎骗",
+        "phonetic": "lai",
+        "example": "Please lie on the bed.",
+        "exampleCn": "请躺在床上。",
+        "examples": [
+          {
+            "sense": "v. 躺",
+            "en": "Please lie on the bed.",
+            "zh": "请躺在床上。"
+          },
+          {
+            "sense": "v. 说谎",
+            "en": "Do not lie to your parents.",
+            "zh": "不要对父母说谎。"
+          },
+          {
+            "sense": "n. 谎言",
+            "en": "That story is a lie.",
+            "zh": "那个故事是谎话。"
+          },
+          {
+            "sense": "v. 位于",
+            "en": "The village lies near a river.",
+            "zh": "这个村庄位于一条河附近。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 5728,
+      "word": "season",
+      "pos": "v.",
+      "meaning": "n. 季节, 时节, 当令期, 时期\\nvt. 给...调味, 使成熟, 使老练, 缓和\\nvi. 变干燥",
+      "example": "He celebrated his 10th season with the ballet company.",
+      "exampleCn": "他与芭蕾舞团一起庆祝了他的第10个赛季。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 季节, 时节, 当令期, 时期\\nvt. 给...调味, 使成熟, 使老练, 缓和\\nvi. 变干燥",
+        "phonetic": "'si:zn",
+        "example": "Winter is my favorite season.",
+        "exampleCn": "冬天是我最喜欢的季节。",
+        "examples": [
+          {
+            "sense": "n. 季节",
+            "en": "Winter is my favorite season.",
+            "zh": "冬天是我最喜欢的季节。"
+          },
+          {
+            "sense": "v. 调味",
+            "en": "Season the soup with a little salt.",
+            "zh": "给汤加一点盐调味。"
+          },
+          {
+            "sense": "n. 赛季",
+            "en": "The football season starts in August.",
+            "zh": "足球赛季在八月开始。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 5731,
+      "word": "wear",
+      "pos": "v.",
+      "meaning": "n. 穿着, 戴, 使用, 耗损, 服装, 耐久性\\nvt. 穿着, 戴, 留(须、发等), 呈现, 磨损, 磨成, 耗损, 使疲乏, 消磨\\nvi. 磨损, 变旧, 耐久, 渐变, 渐渐消失",
+      "example": "The tires showed uneven wear.",
+      "exampleCn": "轮胎磨损不均匀。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "n. 穿着, 戴, 使用, 耗损, 服装, 耐久性\\nvt. 穿着, 戴, 留(须、发等), 呈现, 磨损, 磨成, 耗损, 使疲乏, 消磨\\nvi. 磨损, 变旧, 耐久, 渐变, 渐渐消失",
+        "phonetic": "wєә",
+        "example": "I wear glasses for reading.",
+        "exampleCn": "我看书时戴眼镜。",
+        "examples": [
+          {
+            "sense": "v. 穿；戴",
+            "en": "I wear glasses for reading.",
+            "zh": "我看书时戴眼镜。"
+          },
+          {
+            "sense": "n. 磨损",
+            "en": "The shoes show signs of wear.",
+            "zh": "这双鞋有磨损的痕迹。"
+          },
+          {
+            "sense": "v. 磨损（wear out）",
+            "en": "Rough roads wear out the tires.",
+            "zh": "崎岖的道路会磨坏轮胎。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 5757,
+      "word": "bit",
+      "pos": "v.",
+      "meaning": "n. 少量, 马嚼子, 辅币\\nvt. 给马上嚼子, 控制\\nbite的过去式和过去分词\\n[计] 比特, 二进制数位, 机内测试",
+      "example": "A bit of paper.",
+      "exampleCn": "一张纸。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 少量；一点；（马的）嚼子；辅币；比特（二进制数位）\nv. 给马上嚼子；控制（较少见）\nbit 是 bite 的过去式，bite 的过去分词通常是 bitten。",
+        "phonetic": "bit",
+        "example": "Add a bit of salt.",
+        "exampleCn": "加一点盐。",
+        "examples": [
+          {
+            "sense": "n. 少量（a bit of）",
+            "en": "Add a bit of salt.",
+            "zh": "加一点盐。"
+          },
+          {
+            "sense": "v. 咬（bite 的过去式）",
+            "en": "The dog bit my shoe.",
+            "zh": "那只狗咬了我的鞋。"
+          },
+          {
+            "sense": "n. 比特",
+            "en": "A bit can be zero or one.",
+            "zh": "一个比特可以是零或一。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 5775,
+      "word": "plant",
+      "pos": "v.",
+      "meaning": "n. 植物, 作物, 工厂, 树枝, 生长, 设施, 成套设备\\nvt. 种植, 栽培, 播种, 培养, 安置, 殖民于, 使位于\\nvi. 种植",
+      "example": "They built a large plant to manufacture automobiles.",
+      "exampleCn": "他们建造了一个大型工厂来制造汽车。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 植物, 作物, 工厂, 树枝, 生长, 设施, 成套设备\\nvt. 种植, 栽培, 播种, 培养, 安置, 殖民于, 使位于\\nvi. 种植",
+        "phonetic": "plænt. plɑ:nt",
+        "example": "Water the plant near the window.",
+        "exampleCn": "给窗边的植物浇水。",
+        "examples": [
+          {
+            "sense": "n. 植物",
+            "en": "Water the plant near the window.",
+            "zh": "给窗边的植物浇水。"
+          },
+          {
+            "sense": "n. 工厂",
+            "en": "My uncle works at a car plant.",
+            "zh": "我叔叔在一家汽车厂工作。"
+          },
+          {
+            "sense": "v. 种植",
+            "en": "We plant beans every spring.",
+            "zh": "我们每年春天种豆子。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 5791,
+      "word": "page",
+      "pos": "v.",
+      "meaning": "n. 页, 记录, 事件, 专栏, 男侍\\nvt. 标明...的页数, 翻...的书页, 分页排版, 呼叫, 侍候\\nvi. 翻书页, 侍侯\\n[计] 页; 页面",
+      "example": "Please open your textbook and turn to page forty-seven for today's reading lesson.",
+      "exampleCn": "请打开课本翻到第四十七页，我们开始今天的阅读课。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 页, 记录, 事件, 专栏, 男侍\\nvt. 标明...的页数, 翻...的书页, 分页排版, 呼叫, 侍候\\nvi. 翻书页, 侍侯\\n[计] 页; 页面",
+        "phonetic": "peidʒ",
+        "example": "Read the last page first.",
+        "exampleCn": "先读最后一页。",
+        "examples": [
+          {
+            "sense": "n. 页",
+            "en": "Read the last page first.",
+            "zh": "先读最后一页。"
+          },
+          {
+            "sense": "n. 网页",
+            "en": "The page loads very slowly.",
+            "zh": "这个网页加载得很慢。"
+          },
+          {
+            "sense": "v. 呼叫；寻呼",
+            "en": "The nurse paged the doctor.",
+            "zh": "护士呼叫了医生。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 5797,
+      "word": "rest",
+      "pos": "v.",
+      "meaning": "n. 休息, 睡眠, 安息, 稍息, 静止, 支架, 休息处, 其余者, 剩余部分\\nvi. 休息, 睡, 长眠, 安心, 静止, 停止, 安置, 依赖\\nvt. 使休息, 使支撑, 把...寄托于",
+      "example": "He threw away the rest.",
+      "exampleCn": "他扔掉了剩下的。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "n. 休息, 睡眠, 安息, 稍息, 静止, 支架, 休息处, 其余者, 剩余部分\\nvi. 休息, 睡, 长眠, 安心, 静止, 停止, 安置, 依赖\\nvt. 使休息, 使支撑, 把...寄托于",
+        "phonetic": "rest",
+        "example": "You should rest after lunch.",
+        "exampleCn": "你午饭后应该休息一下。",
+        "examples": [
+          {
+            "sense": "v. 休息",
+            "en": "You should rest after lunch.",
+            "zh": "你午饭后应该休息一下。"
+          },
+          {
+            "sense": "n. 剩余部分",
+            "en": "Save the rest for tomorrow.",
+            "zh": "把剩下的留到明天。"
+          },
+          {
+            "sense": "v. 支撑；靠在（rest on）",
+            "en": "The roof rests on wooden posts.",
+            "zh": "屋顶由木柱支撑。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 5798,
+      "word": "present",
+      "pos": "v.",
+      "meaning": "n. 现在, 礼品, 瞄准\\na. 现在的, 出席的\\nvt. 介绍, 引见, 赠送, 提出, 呈现, 上演\\nvi. 举枪瞄准",
+      "example": "That is enough for the present.",
+      "exampleCn": "就目前而言，这已经足够了。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / adj. / v.",
+        "meaning": "n. 现在, 礼品, 瞄准\\na. 现在的, 出席的\\nvt. 介绍, 引见, 赠送, 提出, 呈现, 上演\\nvi. 举枪瞄准",
+        "phonetic": "/ˈprezənt/（名词、形容词）；/prɪˈzent/（动词）",
+        "example": "This present is for you.",
+        "exampleCn": "这份礼物是给你的。",
+        "examples": [
+          {
+            "sense": "n. 礼物（/ˈprezənt/）",
+            "en": "This present is for you.",
+            "zh": "这份礼物是给你的。"
+          },
+          {
+            "sense": "adj. 在场的（/ˈprezənt/）",
+            "en": "All the students are present.",
+            "zh": "所有学生都到场了。"
+          },
+          {
+            "sense": "adj. 现在的（/ˈprezənt/）",
+            "en": "We like our present home.",
+            "zh": "我们喜欢现在的家。"
+          },
+          {
+            "sense": "v. 提出；展示（/prɪˈzent/）",
+            "en": "Please present your plan to the class.",
+            "zh": "请向全班展示你的计划。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 5809,
+      "word": "sound",
+      "pos": "adv.",
+      "meaning": "n. 声音, 语音, 吵闹, 声调, 听力范围, 探条, 海峡\\na. 健全的, 可靠的, 合理的, 健康的, 彻底的, 资金充实的\\nadv. 彻底地, 充分地\\nvi. 发出声音, 回响, 测深, 试探, 听起来\\nvt. 使发声, 宣",
+      "example": "The sound of rain on the roof.",
+      "exampleCn": "屋顶上的雨声。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v. / adj. / adv.",
+        "meaning": "n. 声音；语音；音质；声调；海峡；海湾\nv. 听起来；发声；鸣响；测深\nadj. 完好的；健康的；可靠的；合理的；酣畅的\nadv. 酣畅地（sound asleep）",
+        "phonetic": "saund",
+        "example": "I heard a strange sound.",
+        "exampleCn": "我听到了一种奇怪的声音。",
+        "examples": [
+          {
+            "sense": "n. 声音",
+            "en": "I heard a strange sound.",
+            "zh": "我听到了一种奇怪的声音。"
+          },
+          {
+            "sense": "v. 听起来",
+            "en": "That idea sounds good.",
+            "zh": "那个想法听起来不错。"
+          },
+          {
+            "sense": "adj. 可靠的",
+            "en": "She gave me sound advice.",
+            "zh": "她给了我可靠的建议。"
+          },
+          {
+            "sense": "n. 海峡；海湾",
+            "en": "The ferry crosses the sound every day.",
+            "zh": "渡船每天横渡这片海峡。"
+          },
+          {
+            "sense": "adv. 酣畅地（sound asleep）",
+            "en": "He is sound asleep.",
+            "zh": "他睡得很熟。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 5
+      }
+    },
+    {
+      "id": 5841,
+      "word": "miss",
+      "pos": "v.",
+      "meaning": "n. 失误, 避免, 失败, 小姐\\nvt. 未得到, 未达到, 未听到, 未觉察, 逃脱, 遗漏, 错过, 思念\\nvi. 失败, 击不中",
+      "example": "How could I miss that typo?",
+      "exampleCn": "我怎么会错过这个拼写错误？",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "n. 失误, 避免, 失败, 小姐\\nvt. 未得到, 未达到, 未听到, 未觉察, 逃脱, 遗漏, 错过, 思念\\nvi. 失败, 击不中",
+        "phonetic": "mis",
+        "example": "Do not miss the last bus.",
+        "exampleCn": "不要错过末班车。",
+        "examples": [
+          {
+            "sense": "v. 错过",
+            "en": "Do not miss the last bus.",
+            "zh": "不要错过末班车。"
+          },
+          {
+            "sense": "v. 想念",
+            "en": "I miss my old friends.",
+            "zh": "我想念老朋友们。"
+          },
+          {
+            "sense": "v. 未击中",
+            "en": "The ball missed the goal.",
+            "zh": "球没有射进球门。"
+          },
+          {
+            "sense": "n. 小姐（称呼 Miss）",
+            "en": "Miss Lee teaches us music.",
+            "zh": "李老师教我们音乐。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 5847,
+      "word": "park",
+      "pos": "v.",
+      "meaning": "n. 公园, 停车处\\nvt. 停车, 置于\\nvi. 停车",
+      "example": "There are laws that protect the wildlife in this park.",
+      "exampleCn": "有法律保护这个公园的野生动物。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 公园, 停车处\\nvt. 停车, 置于\\nvi. 停车",
+        "phonetic": "pɑ:k",
+        "example": "We walk in the park after dinner.",
+        "exampleCn": "我们晚饭后在公园散步。",
+        "examples": [
+          {
+            "sense": "n. 公园",
+            "en": "We walk in the park after dinner.",
+            "zh": "我们晚饭后在公园散步。"
+          },
+          {
+            "sense": "v. 停车",
+            "en": "Do not park beside the gate.",
+            "zh": "不要把车停在大门旁。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 5867,
+      "word": "fly",
+      "pos": "v.",
+      "meaning": "n. 苍蝇, 两翼昆虫, 飞行\\nvi. 飞, 飞翔, 飘扬, 逃走\\nvt. 飞, 飞越, 使飘扬, 逃出\\na. 敏捷的",
+      "example": "Man cannot fly.",
+      "exampleCn": "人不能飞。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "n. 苍蝇, 两翼昆虫, 飞行\\nvi. 飞, 飞翔, 飘扬, 逃走\\nvt. 飞, 飞越, 使飘扬, 逃出\\na. 敏捷的",
+        "phonetic": "flai",
+        "example": "Birds can fly over the wall.",
+        "exampleCn": "鸟能飞过这堵墙。",
+        "examples": [
+          {
+            "sense": "v. 飞",
+            "en": "Birds can fly over the wall.",
+            "zh": "鸟能飞过这堵墙。"
+          },
+          {
+            "sense": "n. 苍蝇",
+            "en": "A fly landed on my cup.",
+            "zh": "一只苍蝇落在了我的杯子上。"
+          },
+          {
+            "sense": "v. 乘飞机",
+            "en": "We fly to Rome tomorrow.",
+            "zh": "我们明天坐飞机去罗马。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 5903,
+      "word": "fit",
+      "pos": "v.",
+      "meaning": "n. 适宜, 合身, 发作, 痉挛\\na. 适宜的, 对的, 准备好的\\nvt. 适合, 安装, 使合身, 使适应, 使合格\\nvi. 适合, 符合, 合身\\n[计] 非特",
+      "example": "He had a fit.",
+      "exampleCn": "他发脾气了。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "v. / adj. / n.",
+        "meaning": "n. 适宜, 合身, 发作, 痉挛\\na. 适宜的, 对的, 准备好的\\nvt. 适合, 安装, 使合身, 使适应, 使合格\\nvi. 适合, 符合, 合身\\n[计] 非特\nadj. 健康的；身体强健的",
+        "phonetic": "fit",
+        "example": "These shoes fit me well.",
+        "exampleCn": "这双鞋很合我的脚。",
+        "examples": [
+          {
+            "sense": "v. 合身；适合",
+            "en": "These shoes fit me well.",
+            "zh": "这双鞋很合我的脚。"
+          },
+          {
+            "sense": "adj. 健康的",
+            "en": "She keeps fit by swimming.",
+            "zh": "她通过游泳保持健康。"
+          },
+          {
+            "sense": "n. 一阵发作",
+            "en": "He had a fit of coughing.",
+            "zh": "他一阵咳嗽。"
+          },
+          {
+            "sense": "v. 安装",
+            "en": "Please fit a new lock.",
+            "zh": "请安装一把新锁。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 5918,
+      "word": "wind",
+      "pos": "v.",
+      "meaning": "n. 风, 气息, 气味, 呼吸, 风声, 趋势, 空谈, 卷绕, 弯曲\\nvt. 使通风, 嗅出, 使喘气, 吹号角, 上发条, 缠绕, 包, 绞起, 吊起, 使弯曲, 使迂回\\nvi. 嗅出猎物, 吹响号角, 卷曲, 蜿蜒, 迂回, 缠",
+      "example": "When there is no wind, row.",
+      "exampleCn": "当没有风时，划船。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 风；气息；呼吸（/wɪnd/）\nv. 使喘不过气（/wɪnd/）；缠绕；弯曲；蜿蜒；上发条（/waɪnd/）",
+        "phonetic": "/wɪnd/（风）；/waɪnd/（缠绕、上发条）",
+        "example": "The wind is cold today.",
+        "exampleCn": "今天的风很冷。",
+        "examples": [
+          {
+            "sense": "n. 风（/wɪnd/）",
+            "en": "The wind is cold today.",
+            "zh": "今天的风很冷。"
+          },
+          {
+            "sense": "v. 缠绕（/waɪnd/）",
+            "en": "Wind the rope around the pole.",
+            "zh": "把绳子缠在杆子上。"
+          },
+          {
+            "sense": "v. 上发条（/waɪnd/）",
+            "en": "Please wind the clock each morning.",
+            "zh": "请每天早上给钟上发条。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 5919,
+      "word": "key",
+      "pos": "v.",
+      "meaning": "n. 钥匙, 键, 解答, 关键, 要害, 基调, 线索, 答案, 暗礁\\nvt. 调音, 锁上, 提供线索\\nvi. 使用钥匙\\n[计] 键, 密钥",
+      "example": "The key to development is economic integration.",
+      "exampleCn": "发展的关键是经济一体化。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 钥匙, 键, 解答, 关键, 要害, 基调, 线索, 答案, 暗礁\\nvt. 调音, 锁上, 提供线索\\nvi. 使用钥匙\\n[计] 键, 密钥\nv. 键入（key in）",
+        "phonetic": "ki:",
+        "example": "I lost my house key.",
+        "exampleCn": "我把家门钥匙弄丢了。",
+        "examples": [
+          {
+            "sense": "n. 钥匙",
+            "en": "I lost my house key.",
+            "zh": "我把家门钥匙弄丢了。"
+          },
+          {
+            "sense": "n. 按键",
+            "en": "Press the green key.",
+            "zh": "按绿色的键。"
+          },
+          {
+            "sense": "n. 关键",
+            "en": "Practice is the key to progress.",
+            "zh": "练习是进步的关键。"
+          },
+          {
+            "sense": "v. 键入（key in）",
+            "en": "Please key in your name.",
+            "zh": "请键入你的姓名。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 5966,
+      "word": "ring",
+      "pos": "v.",
+      "meaning": "n. 环, 环形物, 拳击场, 戒指, 角逐, 小集团, 铃声, 钟声, 声调\\nvt. 包围, 套住, 按铃, 敲钟\\nvi. 成环形, 响, 鸣, 按铃, 敲钟, 回响",
+      "example": "It has the ring of sincerity.",
+      "exampleCn": "它有着真诚的戒指。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 环, 环形物, 拳击场, 戒指, 角逐, 小集团, 铃声, 钟声, 声调\\nvt. 包围, 套住, 按铃, 敲钟\\nvi. 成环形, 响, 鸣, 按铃, 敲钟, 回响",
+        "phonetic": "riŋ",
+        "example": "Her ring is made of silver.",
+        "exampleCn": "她的戒指是银做的。",
+        "examples": [
+          {
+            "sense": "n. 戒指",
+            "en": "Her ring is made of silver.",
+            "zh": "她的戒指是银做的。"
+          },
+          {
+            "sense": "n. 圆圈",
+            "en": "The dancers formed a ring.",
+            "zh": "舞者们围成了一个圈。"
+          },
+          {
+            "sense": "n. 铃声",
+            "en": "I heard the ring of a bell.",
+            "zh": "我听到了一阵铃声。"
+          },
+          {
+            "sense": "v. 响铃",
+            "en": "The phone will ring soon.",
+            "zh": "电话很快就会响。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 6064,
+      "word": "wake",
+      "pos": "v.",
+      "meaning": "vt. 叫醒, 激发\\nvi. 醒来, 醒着, 觉醒, 活跃起来\\nn. 守侯, 守夜, 尾迹, 痕迹",
+      "example": "In the wake of the accident no one knew how many had been injured.",
+      "exampleCn": "事故发生后，没有人知道有多少人受伤。",
+      "categories": [
+        "daily"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "vt. 叫醒, 激发\\nvi. 醒来, 醒着, 觉醒, 活跃起来\\nn. 守侯, 守夜, 尾迹, 痕迹",
+        "phonetic": "weik",
+        "example": "I wake up at six.",
+        "exampleCn": "我六点醒来。",
+        "examples": [
+          {
+            "sense": "v. 醒来",
+            "en": "I wake up at six.",
+            "zh": "我六点醒来。"
+          },
+          {
+            "sense": "v. 叫醒",
+            "en": "Please wake me before breakfast.",
+            "zh": "请在早餐前叫醒我。"
+          },
+          {
+            "sense": "n. 船的尾迹",
+            "en": "The boat left a white wake.",
+            "zh": "船后留下了一道白色的尾迹。"
+          },
+          {
+            "sense": "n. 守灵聚会",
+            "en": "Many people came to the wake.",
+            "zh": "很多人来参加守灵聚会。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 6172,
+      "word": "base",
+      "pos": "v.",
+      "meaning": "n. 底部, 垒, 基础, 基地\\nvt. 以...作基础\\na. 卑鄙的, 低劣的\\n[计] 基准",
+      "example": "It was built on a base of solid rock.",
+      "exampleCn": "它建在坚固的岩石基础上。",
+      "categories": [
+        "daily",
+        "cet4"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v. / adj.",
+        "meaning": "n. 底部, 垒, 基础, 基地\\nvt. 以...作基础\\na. 卑鄙的, 低劣的\\n[计] 基准",
+        "phonetic": "beis",
+        "example": "The vase has a wide base.",
+        "exampleCn": "这个花瓶底部很宽。",
+        "examples": [
+          {
+            "sense": "n. 底部",
+            "en": "The vase has a wide base.",
+            "zh": "这个花瓶底部很宽。"
+          },
+          {
+            "sense": "n. 基地",
+            "en": "We built a base near the river.",
+            "zh": "我们在河边建了一个基地。"
+          },
+          {
+            "sense": "v. 以……为基础",
+            "en": "We base our plan on the facts.",
+            "zh": "我们以事实为依据制定计划。"
+          },
+          {
+            "sense": "adj. 卑鄙的（较正式）",
+            "en": "Greed is a base motive.",
+            "zh": "贪婪是一种卑鄙的动机。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 6456,
+      "word": "pen",
+      "pos": "v.",
+      "meaning": "n. 钢笔, 笔, 笔调, 笔杆子, 作家, 围栏, 栅栏, 禽畜\\nvt. 写, 关入栏中, 囚禁\\nvi. 动笔, 写作",
+      "example": "She pulled out a pen and quickly scribbled her phone number on the back of an old receipt.",
+      "exampleCn": "她掏出一支钢笔在旧收据背面迅速写下她的电话号码。",
+      "categories": [
+        "daily",
+        "cet4"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 钢笔, 笔, 笔调, 笔杆子, 作家, 围栏, 栅栏, 禽畜\\nvt. 写, 关入栏中, 囚禁\\nvi. 动笔, 写作",
+        "phonetic": "pen",
+        "example": "Please write with a blue pen.",
+        "exampleCn": "请用蓝色钢笔书写。",
+        "examples": [
+          {
+            "sense": "n. 钢笔",
+            "en": "Please write with a blue pen.",
+            "zh": "请用蓝色钢笔书写。"
+          },
+          {
+            "sense": "n. 牲畜圈",
+            "en": "The sheep are in their pen.",
+            "zh": "羊在羊圈里。"
+          },
+          {
+            "sense": "v. 写（较正式）",
+            "en": "She penned a letter to her son.",
+            "zh": "她给儿子写了一封信。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 6659,
+      "word": "bat",
+      "pos": "v.",
+      "meaning": "n. 蝙蝠, 球棒\\nv. 用球棒打, 眨眼\\n[计] 成批",
+      "example": "He was at bat when it happened.",
+      "exampleCn": "事情发生时他正在击球。",
+      "categories": [
+        "daily",
+        "cet4"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 蝙蝠, 球棒\\nv. 用球棒打, 眨眼\\n[计] 成批",
+        "phonetic": "bæt",
+        "example": "The bat flew out at dusk.",
+        "exampleCn": "蝙蝠在黄昏飞了出来。",
+        "examples": [
+          {
+            "sense": "n. 蝙蝠",
+            "en": "The bat flew out at dusk.",
+            "zh": "蝙蝠在黄昏飞了出来。"
+          },
+          {
+            "sense": "n. 球棒",
+            "en": "He hit the ball with a bat.",
+            "zh": "他用球棒击球。"
+          },
+          {
+            "sense": "v. 击球",
+            "en": "You bat first in this game.",
+            "zh": "这局比赛你先击球。"
+          },
+          {
+            "sense": "v. 眨眼（not bat an eyelid）",
+            "en": "She did not bat an eyelid.",
+            "zh": "她连眼皮也没眨一下。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 7210,
+      "word": "line",
+      "pos": "v.",
+      "meaning": "n. 列, 线, 绳, 电线, 线路, 路线, 航线, 作业线, 界线, 战线, 外形, 排, 家系\\nvt. 排成一行, 顺...排列, 划线于, 加衬里, 使有线条, 使起皱纹\\nvi. 排队\\n[计] 线路",
+      "example": "The line of soldiers advanced with their bayonets fixed.",
+      "exampleCn": "士兵们列好刺刀，向前推进。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 列, 线, 绳, 电线, 线路, 路线, 航线, 作业线, 界线, 战线, 外形, 排, 家系\\nvt. 排成一行, 顺...排列, 划线于, 加衬里, 使有线条, 使起皱纹\\nvi. 排队\\n[计] 线路\nn. 台词",
+        "phonetic": "lain",
+        "example": "Draw a straight line here.",
+        "exampleCn": "在这里画一条直线。",
+        "examples": [
+          {
+            "sense": "n. 线",
+            "en": "Draw a straight line here.",
+            "zh": "在这里画一条直线。"
+          },
+          {
+            "sense": "n. 队列",
+            "en": "Wait at the end of the line.",
+            "zh": "在线尾等候。"
+          },
+          {
+            "sense": "n. 台词",
+            "en": "She forgot her next line.",
+            "zh": "她忘了下一句台词。"
+          },
+          {
+            "sense": "n. 线路",
+            "en": "This train runs on the blue line.",
+            "zh": "这列火车在蓝色线路上运行。"
+          },
+          {
+            "sense": "v. 加衬里",
+            "en": "We line the box with soft paper.",
+            "zh": "我们用柔软的纸给盒子加衬。"
+          },
+          {
+            "sense": "v. 排队（line up）",
+            "en": "Please line up by the door.",
+            "zh": "请在门旁排队。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 6
+      }
+    },
+    {
+      "id": 7230,
+      "word": "type",
+      "pos": "v.",
+      "meaning": "n. 类型, 样式, 典型, 榜样, 标志, 符号, 型, 式\\nvi. 打字\\nvt. 作为代表, 测定类型, 用打字机打\\n[计] 类型; 键入; DOS内部命令:在屏幕上显示指定文件的内容",
+      "example": "What type of sculpture do you prefer?",
+      "exampleCn": "您更喜欢什么类型的雕塑？",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 类型, 样式, 典型, 榜样, 标志, 符号, 型, 式\\nvi. 打字\\nvt. 作为代表, 测定类型, 用打字机打\\n[计] 类型; 键入; DOS内部命令:在屏幕上显示指定文件的内容\nn. 印刷字体；印刷字样",
+        "phonetic": "taip",
+        "example": "What type of music is this?",
+        "exampleCn": "这是什么类型的音乐？",
+        "examples": [
+          {
+            "sense": "n. 类型",
+            "en": "What type of music is this?",
+            "zh": "这是什么类型的音乐？"
+          },
+          {
+            "sense": "v. 打字",
+            "en": "I can type without looking.",
+            "zh": "我能不看键盘打字。"
+          },
+          {
+            "sense": "n. 印刷字体",
+            "en": "This type is too small to read.",
+            "zh": "这种印刷字体太小，看不清。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 7242,
+      "word": "staff",
+      "pos": "v.",
+      "meaning": "n. 全体人员, 工作班子, 棍棒, 杆, 拐杖, 支柱, 权杖\\na. 职员的, 雇员的, 参谋的\\nvt. 为...配备人员",
+      "example": "The hospital has an excellent nursing staff.",
+      "exampleCn": "医院拥有一支优秀的护理人员队伍。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 全体人员, 工作班子, 棍棒, 杆, 拐杖, 支柱, 权杖\\na. 职员的, 雇员的, 参谋的\\nvt. 为...配备人员",
+        "phonetic": "stɑ:f",
+        "example": "The staff are very helpful.",
+        "exampleCn": "全体员工都很热心。",
+        "examples": [
+          {
+            "sense": "n. 全体员工",
+            "en": "The staff are very helpful.",
+            "zh": "全体员工都很热心。"
+          },
+          {
+            "sense": "n. 长棍；手杖",
+            "en": "He walked with a wooden staff.",
+            "zh": "他拄着一根木杖走路。"
+          },
+          {
+            "sense": "v. 为……配备人员",
+            "en": "Volunteers staff the front desk.",
+            "zh": "志愿者负责前台工作。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 7262,
+      "word": "rule",
+      "pos": "v.",
+      "meaning": "n. 规则, 统治, 控制, 支配, 规律, 标准, 章程, 破折号, 铅线\\nvt. 规定, 统治, 管理, 控制, 支配, 裁决\\nvi. 统治, 管辖, 裁定\\n[计] 规则, 水线",
+      "example": "It was his rule to take a walk before breakfast.",
+      "exampleCn": "他的规定是早餐前散步。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 规则, 统治, 控制, 支配, 规律, 标准, 章程, 破折号, 铅线\\nvt. 规定, 统治, 管理, 控制, 支配, 裁决\\nvi. 统治, 管辖, 裁定\\n[计] 规则, 水线",
+        "phonetic": "ru:l",
+        "example": "That rule applies to everyone.",
+        "exampleCn": "那条规则适用于所有人。",
+        "examples": [
+          {
+            "sense": "n. 规则",
+            "en": "That rule applies to everyone.",
+            "zh": "那条规则适用于所有人。"
+          },
+          {
+            "sense": "v. 统治",
+            "en": "The king may rule for years.",
+            "zh": "这位国王可能会统治多年。"
+          },
+          {
+            "sense": "n. 通常做法（as a rule）",
+            "en": "As a rule, we eat at home.",
+            "zh": "我们通常在家吃饭。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 7263,
+      "word": "pound",
+      "pos": "v.",
+      "meaning": "n. 磅, 英镑, 重击, 鱼塘, 拘留所, 兽栏\\nvt. 强烈打击, 捣烂, 监禁, 关入栏内\\nvi. 连续重击, 苦干",
+      "example": "Unlicensed dogs will be taken to the pound.",
+      "exampleCn": "没有执照的狗将被带到收容所。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 磅, 英镑, 重击, 鱼塘, 拘留所, 兽栏\\nvt. 强烈打击, 捣烂, 监禁, 关入栏内\\nvi. 连续重击, 苦干",
+        "phonetic": "paund",
+        "example": "This book costs one pound.",
+        "exampleCn": "这本书售价一英镑。",
+        "examples": [
+          {
+            "sense": "n. 英镑",
+            "en": "This book costs one pound.",
+            "zh": "这本书售价一英镑。"
+          },
+          {
+            "sense": "n. 磅",
+            "en": "The bag weighs one pound.",
+            "zh": "这个包重一磅。"
+          },
+          {
+            "sense": "v. 连续猛击",
+            "en": "Rain began to pound the roof.",
+            "zh": "雨开始猛烈地打在屋顶上。"
+          },
+          {
+            "sense": "n. 流浪动物收容所",
+            "en": "The dog was taken to the pound.",
+            "zh": "那只狗被送到了流浪动物收容所。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 7283,
+      "word": "top",
+      "pos": "v.",
+      "meaning": "n. 顶部, 顶端, 极点, 上面, 上部, 顶篷, 最高地位, 首位, 陀螺\\na. 最高的, 顶上的, 头等的\\nvt. 盖, 加以顶, 高达, 超越\\nvi. 结束, 达到顶点, 高出\\n[计] TOP协议",
+      "example": "The title should be written at the top of the first page.",
+      "exampleCn": "标题应写在第一页的顶部。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / adj. / v.",
+        "meaning": "n. 顶部, 顶端, 极点, 上面, 上部, 顶篷, 最高地位, 首位, 陀螺\\na. 最高的, 顶上的, 头等的\\nvt. 盖, 加以顶, 高达, 超越\\nvi. 结束, 达到顶点, 高出\\n[计] TOP协议",
+        "phonetic": "tɒp",
+        "example": "Write your name at the top.",
+        "exampleCn": "在顶部写上你的名字。",
+        "examples": [
+          {
+            "sense": "n. 顶部",
+            "en": "Write your name at the top.",
+            "zh": "在顶部写上你的名字。"
+          },
+          {
+            "sense": "n. 陀螺",
+            "en": "The top spun across the floor.",
+            "zh": "陀螺旋转着滑过地板。"
+          },
+          {
+            "sense": "adj. 最好的；顶尖的",
+            "en": "This is a top team.",
+            "zh": "这是一支顶尖球队。"
+          },
+          {
+            "sense": "v. 居……之首",
+            "en": "Her score topped the list.",
+            "zh": "她的分数位居榜首。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 7292,
+      "word": "shoot",
+      "pos": "v.",
+      "meaning": "n. 射击, 狩猎, 芽, 射伤, 发射, 发芽, 急流, 推力, 摄影, 急送, 滑运道, 浪费\\nvt. 射击, 射中, 损毁, 拍摄, 喷出, 投射, 挥出, 飞速行进, 挥霍, 给...注射\\nvi. 射出, 射击, 发出, 拍电影",
+      "example": "They hold a shoot every weekend during the summer.",
+      "exampleCn": "夏天他们每个周末都会进行一次拍摄。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "n. 射击, 狩猎, 芽, 射伤, 发射, 发芽, 急流, 推力, 摄影, 急送, 滑运道, 浪费\\nvt. 射击, 射中, 损毁, 拍摄, 喷出, 投射, 挥出, 飞速行进, 挥霍, 给...注射\\nvi. 射出, 射击, 发出, 拍电影",
+        "phonetic": "ʃu:t",
+        "example": "The team will shoot a film.",
+        "exampleCn": "团队将拍摄一部电影。",
+        "examples": [
+          {
+            "sense": "v. 拍摄",
+            "en": "The team will shoot a film.",
+            "zh": "团队将拍摄一部电影。"
+          },
+          {
+            "sense": "n. 嫩芽",
+            "en": "A green shoot appeared in the soil.",
+            "zh": "土里冒出了一根绿芽。"
+          },
+          {
+            "sense": "v. 射门",
+            "en": "He tried to shoot at the goal.",
+            "zh": "他试图射门。"
+          },
+          {
+            "sense": "n. 拍摄活动（photo shoot）",
+            "en": "The photo shoot lasted an hour.",
+            "zh": "这次摄影拍摄持续了一个小时。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 7327,
+      "word": "rock",
+      "pos": "v.",
+      "meaning": "n. 岩石, 岩礁, 石头, 基石, 暗礁, 摇动, 摇滚乐\\nvt. 摇摆, 摇动, 使摇晃, 使动摇\\nvi. 摇, 摇动",
+      "example": "He threw a rock at me.",
+      "exampleCn": "他向我扔了一块石头。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 岩石, 岩礁, 石头, 基石, 暗礁, 摇动, 摇滚乐\\nvt. 摇摆, 摇动, 使摇晃, 使动摇\\nvi. 摇, 摇动",
+        "phonetic": "rɒk",
+        "example": "He sat on a large rock.",
+        "exampleCn": "他坐在一块大石头上。",
+        "examples": [
+          {
+            "sense": "n. 岩石；石头",
+            "en": "He sat on a large rock.",
+            "zh": "他坐在一块大石头上。"
+          },
+          {
+            "sense": "n. 摇滚乐",
+            "en": "She listens to rock after work.",
+            "zh": "她下班后听摇滚乐。"
+          },
+          {
+            "sense": "v. 摇动",
+            "en": "Please rock the baby gently.",
+            "zh": "请轻轻摇哄宝宝。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 7364,
+      "word": "yard",
+      "pos": "n.",
+      "meaning": "n. 码, 庭院, 工场\\n[化] 堆置场",
+      "example": "It was a small house with almost no yard.",
+      "exampleCn": "那是一栋小房子，几乎没有院子。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n.",
+        "meaning": "n. 码, 庭院, 工场\\n[化] 堆置场",
+        "phonetic": "jɑ:d",
+        "example": "The children play in the yard.",
+        "exampleCn": "孩子们在院子里玩。",
+        "examples": [
+          {
+            "sense": "n. 院子",
+            "en": "The children play in the yard.",
+            "zh": "孩子们在院子里玩。"
+          },
+          {
+            "sense": "n. 码（长度单位）",
+            "en": "This piece of cloth is one yard long.",
+            "zh": "这块布长一码。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 7394,
+      "word": "trust",
+      "pos": "v.",
+      "meaning": "n. 信任, 信赖, 相信, 受托, 职责, 信心, 托拉斯\\na. 信托的, 托拉斯的\\nvt. 信赖, 信任, 相信, 盼望, 赊卖给\\nvi. 相信, 信赖, 依靠\\n[计] 委托, 信任",
+      "example": "He is the beneficiary of a generous trust set up by his father.",
+      "exampleCn": "他是他父亲设立的慷慨信托的受益人。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "n. 信任, 信赖, 相信, 受托, 职责, 信心, 托拉斯\\na. 信托的, 托拉斯的\\nvt. 信赖, 信任, 相信, 盼望, 赊卖给\\nvi. 相信, 信赖, 依靠\\n[计] 委托, 信任\nn. 信托（财产或资金管理安排）",
+        "phonetic": "trʌst",
+        "example": "I trust my close friends.",
+        "exampleCn": "我信任我的好朋友。",
+        "examples": [
+          {
+            "sense": "v. 信任",
+            "en": "I trust my close friends.",
+            "zh": "我信任我的好朋友。"
+          },
+          {
+            "sense": "n. 信任",
+            "en": "Trust takes time to build.",
+            "zh": "建立信任需要时间。"
+          },
+          {
+            "sense": "n. 信托",
+            "en": "The money is held in a trust.",
+            "zh": "这笔钱由信托持有。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 7405,
+      "word": "stick",
+      "pos": "v.",
+      "meaning": "n. 棍, 棒, 刺, 枯枝, 茎, 条状物\\nvt. 插进, 刺入, 钉住, 伸出, 粘贴, 停止\\nvi. 粘住, 停留, 坚持, 陷住, 伸出",
+      "example": "The kid had a candied apple on a stick.",
+      "exampleCn": "那孩子有一根棍子上的蜜饯苹果。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 棍, 棒, 刺, 枯枝, 茎, 条状物\\nvt. 插进, 刺入, 钉住, 伸出, 粘贴, 停止\\nvi. 粘住, 停留, 坚持, 陷住, 伸出",
+        "phonetic": "stik",
+        "example": "The dog carried a long stick.",
+        "exampleCn": "那只狗叼着一根长棍。",
+        "examples": [
+          {
+            "sense": "n. 棍；棒",
+            "en": "The dog carried a long stick.",
+            "zh": "那只狗叼着一根长棍。"
+          },
+          {
+            "sense": "v. 粘贴",
+            "en": "Stick the label on the box.",
+            "zh": "把标签贴在盒子上。"
+          },
+          {
+            "sense": "v. 坚持（stick to）",
+            "en": "Please stick to the plan.",
+            "zh": "请坚持按计划行事。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 7445,
+      "word": "wave",
+      "pos": "v.",
+      "meaning": "n. 波, 波浪, 波动, 起伏, 高潮, 潮涌, 挥手致意, (气压)突变\\nvi. 波动, 飘动, 挥手示意, 起伏\\nvt. 使波动, 使飘扬, 挥舞, 使成波浪形",
+      "example": "A wave of settlers.",
+      "exampleCn": "一波定居者。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 波, 波浪, 波动, 起伏, 高潮, 潮涌, 挥手致意, (气压)突变\\nvi. 波动, 飘动, 挥手示意, 起伏\\nvt. 使波动, 使飘扬, 挥舞, 使成波浪形",
+        "phonetic": "weiv",
+        "example": "A large wave hit the boat.",
+        "exampleCn": "一个大浪打在船上。",
+        "examples": [
+          {
+            "sense": "n. 波浪",
+            "en": "A large wave hit the boat.",
+            "zh": "一个大浪打在船上。"
+          },
+          {
+            "sense": "v. 挥手",
+            "en": "Wave to your friends.",
+            "zh": "向你的朋友们挥挥手。"
+          },
+          {
+            "sense": "n. 一阵；一波",
+            "en": "A wave of laughter filled the room.",
+            "zh": "一阵笑声充满了房间。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 7447,
+      "word": "suit",
+      "pos": "v.",
+      "meaning": "n. 套装, 诉讼, 请求, 起诉, 套, 组\\nvt. 适合, 使适应\\nvi. 合适, 相称",
+      "example": "They buried him in his best suit.",
+      "exampleCn": "他们穿着他最好的衣服埋葬了他。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 套装, 诉讼, 请求, 起诉, 套, 组\\nvt. 适合, 使适应\\nvi. 合适, 相称",
+        "phonetic": "sju:t. su:t",
+        "example": "He wore a dark suit.",
+        "exampleCn": "他穿着一套深色西装。",
+        "examples": [
+          {
+            "sense": "n. 套装",
+            "en": "He wore a dark suit.",
+            "zh": "他穿着一套深色西装。"
+          },
+          {
+            "sense": "n. 诉讼",
+            "en": "They filed a suit against the company.",
+            "zh": "他们对这家公司提起了诉讼。"
+          },
+          {
+            "sense": "v. 适合",
+            "en": "This color suits you.",
+            "zh": "这个颜色适合你。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 7539,
+      "word": "tear",
+      "pos": "v.",
+      "meaning": "n. 泪滴, 眼泪, 撕, 扯, 裂缝, 激怒, 飞奔\\nvi. 流泪, 撕破, 赶快, 飞奔, 被撕破\\nvt. 撕裂, 戳破, 拉掉, 撕掉, 使分裂, 使精神不安, 折磨",
+      "example": "He took the manuscript in both hands and gave it a mighty tear.",
+      "exampleCn": "他双手捧起手稿，用力流泪。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 泪滴, 眼泪, 撕, 扯, 裂缝, 激怒, 飞奔\\nvi. 流泪, 撕破, 赶快, 飞奔, 被撕破\\nvt. 撕裂, 戳破, 拉掉, 撕掉, 使分裂, 使精神不安, 折磨",
+        "phonetic": "/tɪə/（眼泪）；/teə/（撕裂）",
+        "example": "A tear rolled down her cheek.",
+        "exampleCn": "一滴眼泪顺着她的脸颊流下。",
+        "examples": [
+          {
+            "sense": "n. 眼泪（/tɪə/）",
+            "en": "A tear rolled down her cheek.",
+            "zh": "一滴眼泪顺着她的脸颊流下。"
+          },
+          {
+            "sense": "v. 撕裂（/teə/）",
+            "en": "Do not tear the letter.",
+            "zh": "不要撕那封信。"
+          },
+          {
+            "sense": "n. 裂口（/teə/）",
+            "en": "There is a tear in my coat.",
+            "zh": "我的外套上有一道裂口。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 7553,
+      "word": "tip",
+      "pos": "v.",
+      "meaning": "n. 顶, 尖端, 梢, 末端, 倾斜, 垃圾场, 小费, 轻击, 指点, 秘密消息\\nvt. 装顶端, 使倾斜, 使翻倒, 泄露, 告诫, 暗示, 给...小费, 轻击\\nvi. 倾斜, 翻倒, 倾覆, 踮脚走, 给小费\\n[计] 终端接",
+      "example": "He got a tip on the stock market.",
+      "exampleCn": "他得到了有关股票市场的提示。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 顶, 尖端, 梢, 末端, 倾斜, 垃圾场, 小费, 轻击, 指点, 秘密消息\\nvt. 装顶端, 使倾斜, 使翻倒, 泄露, 告诫, 暗示, 给...小费, 轻击\\nvi. 倾斜, 翻倒, 倾覆, 踮脚走, 给小费\\n[计] 终端接",
+        "phonetic": "tip",
+        "example": "Leave a small tip for the waiter.",
+        "exampleCn": "给服务员留一点小费。",
+        "examples": [
+          {
+            "sense": "n. 小费",
+            "en": "Leave a small tip for the waiter.",
+            "zh": "给服务员留一点小费。"
+          },
+          {
+            "sense": "n. 尖端",
+            "en": "The tip of the pencil broke.",
+            "zh": "铅笔尖断了。"
+          },
+          {
+            "sense": "n. 建议；窍门",
+            "en": "Here is a useful cooking tip.",
+            "zh": "这里有一个实用的烹饪窍门。"
+          },
+          {
+            "sense": "v. 倾斜；翻倒",
+            "en": "Do not tip the glass over.",
+            "zh": "不要把玻璃杯弄翻。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 7606,
+      "word": "net",
+      "pos": "v.",
+      "meaning": "n. 网, 网状物, 罗网, 净利, 净价\\na. 净的, 最终的\\nvt. 用网捕, 撒网, 净赚, 得到\\nvi. 编网\\n[计] 网络, 网络分析程序",
+      "example": "Net a fish.",
+      "exampleCn": "网一条鱼。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / adj. / v.",
+        "meaning": "n. 网, 网状物, 罗网, 净利, 净价\\na. 净的, 最终的\\nvt. 用网捕, 撒网, 净赚, 得到\\nvi. 编网\\n[计] 网络, 网络分析程序\nn. 互联网（非正式用语，the net）",
+        "phonetic": "net",
+        "example": "The fish got caught in the net.",
+        "exampleCn": "那条鱼被网住了。",
+        "examples": [
+          {
+            "sense": "n. 网",
+            "en": "The fish got caught in the net.",
+            "zh": "那条鱼被网住了。"
+          },
+          {
+            "sense": "adj. 净的",
+            "en": "Our net profit rose this year.",
+            "zh": "我们今年的净利润增长了。"
+          },
+          {
+            "sense": "v. 用网捕捉",
+            "en": "They net fish in the river.",
+            "zh": "他们在河里网鱼。"
+          },
+          {
+            "sense": "n. 互联网（非正式）",
+            "en": "I found the answer on the net.",
+            "zh": "我在网上找到了答案。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    },
+    {
+      "id": 7775,
+      "word": "spell",
+      "pos": "v.",
+      "meaning": "n. 符咒, 魅力, 轮值, 轮班, 工作时间, 一次发作\\nvt. 拼写, 拼成, 琢磨, 理解, 招致, 轮换, 迷住\\nvi. 轮换, 拼字",
+      "example": "A spell of work.",
+      "exampleCn": "工作的咒语。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "n. 符咒, 魅力, 轮值, 轮班, 工作时间, 一次发作\\nvt. 拼写, 拼成, 琢磨, 理解, 招致, 轮换, 迷住\\nvi. 轮换, 拼字\nn. 一段持续的时间（a spell of）",
+        "phonetic": "spel",
+        "example": "Can you spell your name?",
+        "exampleCn": "你会拼写自己的名字吗？",
+        "examples": [
+          {
+            "sense": "v. 拼写",
+            "en": "Can you spell your name?",
+            "zh": "你会拼写自己的名字吗？"
+          },
+          {
+            "sense": "n. 咒语",
+            "en": "The witch cast a spell.",
+            "zh": "女巫施了一个咒语。"
+          },
+          {
+            "sense": "n. 一段时间",
+            "en": "We had a long spell of rain.",
+            "zh": "我们遇上了很长一段雨天。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 3
+      }
+    },
+    {
+      "id": 7798,
+      "word": "duck",
+      "pos": "v.",
+      "meaning": "n. 鸭子\\nvi. 没入水中, 闪避\\nvt. 猛按...入水, 躲避",
+      "example": "Before he could duck, another stone struck him.",
+      "exampleCn": "还没等他躲开，又一块石头击中了他。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 鸭子\\nvi. 没入水中, 闪避\\nvt. 猛按...入水, 躲避",
+        "phonetic": "dʌk",
+        "example": "A duck swam across the pond.",
+        "exampleCn": "一只鸭子游过池塘。",
+        "examples": [
+          {
+            "sense": "n. 鸭子",
+            "en": "A duck swam across the pond.",
+            "zh": "一只鸭子游过池塘。"
+          },
+          {
+            "sense": "v. 低头闪避",
+            "en": "Duck under the low branch.",
+            "zh": "低头躲过那根低树枝。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 2
+      }
+    },
+    {
+      "id": 7864,
+      "word": "tender",
+      "pos": "v.",
+      "meaning": "a. 嫩的, 柔软的, 脆弱的, 温柔的, 亲切的, 未成熟的, 微妙的, 棘手的, 审慎的\\nvt. 使变嫩, 提供, 偿还\\nvi. 变柔软, 投标\\nn. 照料, 看管人, 供应船, 小船, 提出, 偿付, 投标",
+      "example": "A tender heart.",
+      "exampleCn": "一颗温柔的心。",
+      "categories": [
+        "cet4",
+        "cet6"
+      ],
+      "posCount": 1,
+      "kind": "sense",
+      "note": null,
+      "current": {
+        "pos": "adj. / n. / v.",
+        "meaning": "a. 嫩的, 柔软的, 脆弱的, 温柔的, 亲切的, 未成熟的, 微妙的, 棘手的, 审慎的\\nvt. 使变嫩, 提供, 偿还\\nvi. 变柔软, 投标\\nn. 照料, 看管人, 供应船, 小船, 提出, 偿付, 投标",
+        "phonetic": "'tendә",
+        "example": "The meat is tender and juicy.",
+        "exampleCn": "这块肉又嫩又多汁。",
+        "examples": [
+          {
+            "sense": "adj. 嫩的",
+            "en": "The meat is tender and juicy.",
+            "zh": "这块肉又嫩又多汁。"
+          },
+          {
+            "sense": "adj. 温柔的",
+            "en": "She gave him a tender smile.",
+            "zh": "她温柔地朝他笑了笑。"
+          },
+          {
+            "sense": "n. 投标书",
+            "en": "The company submitted a tender.",
+            "zh": "这家公司递交了一份投标书。"
+          },
+          {
+            "sense": "v. 正式提交",
+            "en": "He tendered his resignation yesterday.",
+            "zh": "他昨天递交了辞呈。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "batch": "2026-10-31-multi-sense",
+        "examples": 4
+      }
+    }
+  ],
+  "gaps": [
+    {
+      "word": "pupil",
+      "id": 3936,
+      "meaning": "学生/小学生",
+      "reason": "缺少“瞳孔”义",
+      "current": {
+        "pos": "n.",
+        "meaning": "n. 学生；小学生；瞳孔",
+        "phonetic": "ˈpjuːpl",
+        "example": "Each pupil has a new book.",
+        "exampleCn": "每个学生都有一本新书。",
+        "examples": [
+          {
+            "sense": "n. 学生",
+            "en": "Each pupil has a new book.",
+            "zh": "每个学生都有一本新书。"
+          },
+          {
+            "sense": "n. 瞳孔",
+            "en": "The pupil gets smaller in bright light.",
+            "zh": "瞳孔在强光下会缩小。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "note": "按词典补充常用义项、词性与短例句。"
+      }
+    },
+    {
+      "word": "temple",
+      "id": 4174,
+      "meaning": "庙宇/寺院",
+      "reason": "缺少“太阳穴”义",
+      "current": {
+        "pos": "n.",
+        "meaning": "n. 庙宇；寺院；太阳穴",
+        "phonetic": "ˈtempl",
+        "example": "We visited a temple by the river.",
+        "exampleCn": "我们参观了河边的一座寺庙。",
+        "examples": [
+          {
+            "sense": "n. 庙宇；寺院",
+            "en": "We visited a temple by the river.",
+            "zh": "我们参观了河边的一座寺庙。"
+          },
+          {
+            "sense": "n. 太阳穴",
+            "en": "He gently rubbed his temple.",
+            "zh": "他轻轻揉了揉太阳穴。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "note": "按词典补充常用义项、词性与短例句。"
+      }
+    },
+    {
+      "word": "trip",
+      "id": 4332,
+      "meaning": "旅行/出行",
+      "reason": "缺少动词“绊倒／失误”",
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 旅行；出行\nv. 绊倒；使绊倒（如 trip over）",
+        "phonetic": "trɪp",
+        "example": "Our trip begins on Friday.",
+        "exampleCn": "我们的旅行周五开始。",
+        "examples": [
+          {
+            "sense": "n. 旅行",
+            "en": "Our trip begins on Friday.",
+            "zh": "我们的旅行周五开始。"
+          },
+          {
+            "sense": "v. 绊倒",
+            "en": "Do not trip over the bag.",
+            "zh": "不要被那个包绊倒。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "note": "补充动词绊倒；不把任何失误泛化为 trip 的一般义。"
+      }
+    },
+    {
+      "word": "tire",
+      "id": 4756,
+      "meaning": "轮胎",
+      "reason": "缺少动词“使疲劳”",
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 轮胎（美式拼写，英式为 tyre）\nv. 使疲劳；感到疲倦",
+        "phonetic": "ˈtaɪə",
+        "example": "The front tire is flat.",
+        "exampleCn": "前轮胎瘪了。",
+        "examples": [
+          {
+            "sense": "n. 轮胎（美式）",
+            "en": "The front tire is flat.",
+            "zh": "前轮胎瘪了。"
+          },
+          {
+            "sense": "v. 使疲劳",
+            "en": "Long walks tire me out.",
+            "zh": "长距离步行让我疲惫不堪。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "note": "按词典补充常用义项、词性与短例句。"
+      }
+    },
+    {
+      "word": "shoulder",
+      "id": 5364,
+      "meaning": "肩膀/肩部",
+      "reason": "缺少动词“承担（责任）”",
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 肩膀；肩部\nv. 承担（责任、负担等）",
+        "phonetic": "ˈʃəʊldə",
+        "example": "My bag hangs from one shoulder.",
+        "exampleCn": "我的包挂在一侧肩膀上。",
+        "examples": [
+          {
+            "sense": "n. 肩膀",
+            "en": "My bag hangs from one shoulder.",
+            "zh": "我的包挂在一侧肩膀上。"
+          },
+          {
+            "sense": "v. 承担",
+            "en": "She will shoulder the responsibility.",
+            "zh": "她将承担这份责任。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "note": "按词典补充常用义项、词性与短例句。"
+      }
+    },
+    {
+      "word": "coach",
+      "id": 479,
+      "meaning": "教练/指导，训练",
+      "reason": "缺少“长途汽车／经济舱”",
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 教练；长途汽车（英式）；车厢；经济舱（美式）\nv. 指导；训练",
+        "phonetic": "/koʊtʃ/",
+        "example": "Our coach is patient with beginners.",
+        "exampleCn": "我们的教练对初学者很耐心。",
+        "examples": [
+          {
+            "sense": "n. 教练",
+            "en": "Our coach is patient with beginners.",
+            "zh": "我们的教练对初学者很耐心。"
+          },
+          {
+            "sense": "v. 训练；指导",
+            "en": "She coaches the school team.",
+            "zh": "她训练校队。"
+          },
+          {
+            "sense": "n. 长途汽车（英式）",
+            "en": "We went to the coast by coach.",
+            "zh": "我们乘长途汽车去了海边。"
+          },
+          {
+            "sense": "n. 经济舱（美式）",
+            "en": "We flew in coach to save money.",
+            "zh": "我们为了省钱坐了经济舱。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "note": "按词典补充常用义项、词性与短例句。"
+      }
+    },
+    {
+      "word": "hide",
+      "id": 771,
+      "meaning": "隐藏；躲藏；隐瞒",
+      "reason": "缺少名词“兽皮”",
+      "current": {
+        "pos": "v. / n.",
+        "meaning": "v. 隐藏；躲藏；隐瞒\nn. 兽皮",
+        "phonetic": "/haɪd/",
+        "example": "Hide the gift under the bed.",
+        "exampleCn": "把礼物藏在床下面。",
+        "examples": [
+          {
+            "sense": "v. 隐藏",
+            "en": "Hide the gift under the bed.",
+            "zh": "把礼物藏在床下面。"
+          },
+          {
+            "sense": "n. 兽皮",
+            "en": "The hide is used to make leather.",
+            "zh": "这张兽皮用来制革。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "note": "按词典补充常用义项、词性与短例句。"
+      }
+    },
+    {
+      "word": "crop",
+      "id": 4568,
+      "meaning": "庄稼/农作物",
+      "reason": "缺少“收成／修剪”",
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 庄稼；农作物；收成\nv. 修剪；裁剪（如照片）",
+        "phonetic": "krɒp",
+        "example": "Rice is an important crop here.",
+        "exampleCn": "水稻是这里的重要作物。",
+        "examples": [
+          {
+            "sense": "n. 农作物",
+            "en": "Rice is an important crop here.",
+            "zh": "水稻是这里的重要作物。"
+          },
+          {
+            "sense": "n. 收成",
+            "en": "The farm had a good crop this year.",
+            "zh": "农场今年收成不错。"
+          },
+          {
+            "sense": "v. 裁剪",
+            "en": "Please crop the photo before printing.",
+            "zh": "打印前请裁剪这张照片。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "note": "按词典补充常用义项、词性与短例句。"
+      }
+    },
+    {
+      "word": "fan",
+      "id": 4407,
+      "meaning": "风扇/扇子",
+      "reason": "缺少“粉丝／爱好者”",
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 风扇；扇子；粉丝；爱好者\nv. 扇风；扇动",
+        "phonetic": "fæn",
+        "example": "The fan keeps the room cool.",
+        "exampleCn": "风扇让房间保持凉爽。",
+        "examples": [
+          {
+            "sense": "n. 风扇；扇子",
+            "en": "The fan keeps the room cool.",
+            "zh": "风扇让房间保持凉爽。"
+          },
+          {
+            "sense": "n. 粉丝；爱好者",
+            "en": "She is a big fan of this band.",
+            "zh": "她是这个乐队的忠实粉丝。"
+          },
+          {
+            "sense": "v. 扇动",
+            "en": "She fanned her face with a book.",
+            "zh": "她拿一本书给脸扇风。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "note": "按词典补充常用义项、词性与短例句。"
+      }
+    },
+    {
+      "word": "file",
+      "id": 3965,
+      "meaning": "文件/档案",
+      "reason": "缺少“锉刀／列队行进”",
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 文件；档案；锉刀；一列人或物\nv. 归档；提交文件；排成一列行进；用锉刀锉",
+        "phonetic": "faɪl",
+        "example": "Save the file before closing.",
+        "exampleCn": "关闭前保存文件。",
+        "examples": [
+          {
+            "sense": "n. 文件",
+            "en": "Save the file before closing.",
+            "zh": "关闭前保存文件。"
+          },
+          {
+            "sense": "n. 锉刀",
+            "en": "Use a file to smooth the edge.",
+            "zh": "用锉刀把边缘锉平。"
+          },
+          {
+            "sense": "v. 列队行进",
+            "en": "The pupils filed into the hall.",
+            "zh": "学生们排着队走进大厅。"
+          },
+          {
+            "sense": "v. 归档",
+            "en": "Please file these letters by date.",
+            "zh": "请按日期给这些信件归档。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "note": "按词典补充常用义项、词性与短例句。"
+      }
+    },
+    {
+      "word": "story",
+      "id": 3957,
+      "meaning": "故事/情节",
+      "reason": "缺少“楼层”",
+      "current": {
+        "pos": "n.",
+        "meaning": "n. 故事；情节；新闻报道；楼层（美式，英式拼写 storey）",
+        "phonetic": "ˈstɔːri",
+        "example": "She told me a funny story.",
+        "exampleCn": "她给我讲了一个有趣的故事。",
+        "examples": [
+          {
+            "sense": "n. 故事",
+            "en": "She told me a funny story.",
+            "zh": "她给我讲了一个有趣的故事。"
+          },
+          {
+            "sense": "n. 新闻报道",
+            "en": "The story appeared in today's newspaper.",
+            "zh": "这则报道刊登在今天的报纸上。"
+          },
+          {
+            "sense": "n. 楼层（美式）",
+            "en": "This house has only one story.",
+            "zh": "这栋房子只有一层。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "note": "按词典补充常用义项、词性与短例句。"
+      }
+    },
+    {
+      "word": "club",
+      "id": 476,
+      "meaning": "俱乐部",
+      "reason": "缺少“棍棒／社团活动”",
+      "current": {
+        "pos": "n.",
+        "meaning": "n. 俱乐部；社团；棍棒；高尔夫球杆",
+        "phonetic": "/klʌb/",
+        "example": "I joined the school chess club.",
+        "exampleCn": "我加入了学校的国际象棋社团。",
+        "examples": [
+          {
+            "sense": "n. 俱乐部；社团",
+            "en": "I joined the school chess club.",
+            "zh": "我加入了学校的国际象棋社团。"
+          },
+          {
+            "sense": "n. 高尔夫球杆",
+            "en": "He chose a club for the shot.",
+            "zh": "他为这一杆选了一支球杆。"
+          },
+          {
+            "sense": "n. 棍棒",
+            "en": "His club was made of wood.",
+            "zh": "他的棍棒是木头做的。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "note": "社团属于已有组织义；补充棍棒与高尔夫球杆，未另造社团义。"
+      }
+    },
+    {
+      "word": "box",
+      "id": 292,
+      "meaning": "盒子；箱子",
+      "reason": "缺少“拳击”",
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 盒子；箱子；方框\nv. 进行拳击；装箱",
+        "phonetic": "/bɒks/",
+        "example": "Please open this small box.",
+        "exampleCn": "请打开这个小盒子。",
+        "examples": [
+          {
+            "sense": "n. 盒子",
+            "en": "Please open this small box.",
+            "zh": "请打开这个小盒子。"
+          },
+          {
+            "sense": "v. 拳击",
+            "en": "They box at the sports club.",
+            "zh": "他们在体育俱乐部练拳击。"
+          },
+          {
+            "sense": "n. 方框",
+            "en": "Tick the box beside your name.",
+            "zh": "在你姓名旁的方框里打勾。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "note": "按词典补充常用义项、词性与短例句。"
+      }
+    },
+    {
+      "word": "mine",
+      "id": 4431,
+      "meaning": "矿/矿山",
+      "reason": "缺少代词“我的”和“地雷”",
+      "current": {
+        "pos": "n. / pron. / v.",
+        "meaning": "n. 矿井；矿山；地雷\npron. 我的东西；属于我的人或物\nv. 采矿；开采",
+        "phonetic": "maɪn",
+        "example": "It is dark inside the mine.",
+        "exampleCn": "矿井里很暗。",
+        "examples": [
+          {
+            "sense": "n. 矿井",
+            "en": "It is dark inside the mine.",
+            "zh": "矿井里很暗。"
+          },
+          {
+            "sense": "pron. 我的东西",
+            "en": "This blue coat is mine.",
+            "zh": "这件蓝外套是我的。"
+          },
+          {
+            "sense": "n. 地雷",
+            "en": "The road was closed because of a mine.",
+            "zh": "这条路因发现地雷而封闭了。"
+          },
+          {
+            "sense": "v. 采矿",
+            "en": "They mine coal in this area.",
+            "zh": "他们在这个地区采煤。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "note": "按词典补充常用义项、词性与短例句。"
+      }
+    },
+    {
+      "word": "lead",
+      "id": 4419,
+      "meaning": "铅",
+      "reason": "只有名词“铅”，没有“领导／带领”",
+      "current": {
+        "pos": "n. / v.",
+        "meaning": "n. 铅（读 /led/）；领先地位（读 /liːd/）\nv. 带领；领导；导致（读 /liːd/）",
+        "phonetic": "/led/（铅）；/liːd/（带领、领先）",
+        "example": "Lead is a heavy metal.",
+        "exampleCn": "铅是一种重金属。",
+        "examples": [
+          {
+            "sense": "n. 铅（/led/）",
+            "en": "Lead is a heavy metal.",
+            "zh": "铅是一种重金属。"
+          },
+          {
+            "sense": "v. 带领（/liːd/）",
+            "en": "Please lead us to the station.",
+            "zh": "请带我们去车站。"
+          },
+          {
+            "sense": "n. 领先（/liːd/）",
+            "en": "She has a lead of two points.",
+            "zh": "她领先两分。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "note": "按词典补充常用义项、词性与短例句。"
+      }
+    },
+    {
+      "word": "close",
+      "id": 472,
+      "meaning": "关闭；结束",
+      "reason": "只有动词“关闭”，没有形容词“近的／亲密的”",
+      "current": {
+        "pos": "v. / adj. / adv.",
+        "meaning": "v. 关闭；结束（结尾读 /z/）\nadj. 近的；亲密的（结尾读 /s/）\nadv. 接近地；紧挨着（结尾读 /s/）",
+        "phonetic": "/kləʊz/（关闭）；/kləʊs/（近、亲密）",
+        "example": "Please close the window.",
+        "exampleCn": "请关上窗户。",
+        "examples": [
+          {
+            "sense": "v. 关闭（/kləʊz/）",
+            "en": "Please close the window.",
+            "zh": "请关上窗户。"
+          },
+          {
+            "sense": "adj. 近的（/kləʊs/）",
+            "en": "The school is close to my home.",
+            "zh": "学校离我家很近。"
+          },
+          {
+            "sense": "adj. 亲密的（/kləʊs/）",
+            "en": "They are close friends.",
+            "zh": "他们是亲密的朋友。"
+          },
+          {
+            "sense": "adv. 近地（/kləʊs/）",
+            "en": "Stay close to me.",
+            "zh": "待在我身边。"
+          }
+        ]
+      },
+      "resolution": {
+        "status": "resolved",
+        "note": "按词典补充常用义项、词性与短例句。"
+      }
+    }
+  ],
+  "currentSourceSha256": "c2a7ade0fe5774f96e7bd737edf74da8bdc45fbf3ff0b16f531456b257f7328e",
+  "repairBatch": "2026-10-31-multi-sense",
+  "repairTotals": {
+    "words": 133,
+    "examples": 424,
+    "wordAudioReplacements": 10,
+    "repairedGapCandidates": 16,
+    "expectedAudioFiles": 1736
+  }
+}

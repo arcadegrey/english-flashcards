@@ -1541,11 +1541,11 @@
   {
     "id": 1984,
     "word": "row",
-    "phonetic": "/roʊ/",
-    "pos": "n./v.",
+    "phonetic": "/rəʊ/（排、划船）；/raʊ/（争吵）",
+    "pos": "n. / v.",
     "meaning": "一排/划船",
-    "example": "The students sat in the front row of the classroom.",
-    "exampleCn": "学生们坐在教室第一排。",
+    "example": "Please sit in the front row.",
+    "exampleCn": "请坐在前排。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -1556,6 +1556,23 @@
     "ieltsList": "17",
     "ieltsLists": [
       "17"
+    ],
+    "examples": [
+      {
+        "sense": "n. 一排（/rəʊ/）",
+        "en": "Please sit in the front row.",
+        "zh": "请坐在前排。"
+      },
+      {
+        "sense": "v. 划船（/rəʊ/）",
+        "en": "We row across the lake.",
+        "zh": "我们划船穿过湖面。"
+      },
+      {
+        "sense": "n. 争吵（英式，/raʊ/）",
+        "en": "They had a row after dinner.",
+        "zh": "他们晚饭后吵了一架。"
+      }
     ]
   },
   {

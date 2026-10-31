@@ -18,7 +18,8 @@ for (const word of [...vocabulary, ...RETIRED_VOCABULARY].sort((a, b) => a.id - 
         parts: getHintExampleParts(example, hint.exampleWords) })) } : {}),
     };
   });
-  batch.entries[word.id] = { word: word.word, hints };
+  batch.entries[word.id] = { word: word.word, hints,
+    ...(word.examples ? { guards: Object.fromEntries(['pos', 'meaning', 'phonetic', 'example', 'exampleCn'].map(key => [key, word[key]])) } : {}) };
   batches.set(key, batch);
 }
 const directory = new URL('public/data/word-hints/', root);

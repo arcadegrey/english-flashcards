@@ -586,10 +586,10 @@
     "id": 4326,
     "word": "race",
     "phonetic": "reɪs",
-    "pos": "v. / n.",
+    "pos": "n. / v.",
     "meaning": "v. 赛跑；参加竞速比赛；快速移动\nn. 赛跑；竞赛；种族；族群",
-    "example": "We race each other across the playground.",
-    "exampleCn": "我们在操场上互相比赛跑步。",
+    "example": "The race starts after lunch.",
+    "exampleCn": "比赛在午饭后开始。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -598,6 +598,23 @@
     "ieltsLists": [
       "24",
       "39"
+    ],
+    "examples": [
+      {
+        "sense": "n. 比赛",
+        "en": "The race starts after lunch.",
+        "zh": "比赛在午饭后开始。"
+      },
+      {
+        "sense": "v. 赛跑",
+        "en": "We race each other to the gate.",
+        "zh": "我们比赛看谁先跑到大门。"
+      },
+      {
+        "sense": "n. 种族；族群",
+        "en": "People of every race are welcome.",
+        "zh": "我们欢迎各个族群的人。"
+      }
     ]
   },
   {

@@ -376,10 +376,10 @@
     "id": 2464,
     "word": "crane",
     "phonetic": "/kreɪn/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "鹤/起重机/伸长脖子看",
-    "example": "A crane lifted the heavy steel beam.",
-    "exampleCn": "一台起重机吊起了沉重的钢梁。",
+    "example": "A crane stood by the lake.",
+    "exampleCn": "一只鹤站在湖边。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -390,6 +390,23 @@
     "ieltsList": "34",
     "ieltsLists": [
       "34"
+    ],
+    "examples": [
+      {
+        "sense": "n. 鹤",
+        "en": "A crane stood by the lake.",
+        "zh": "一只鹤站在湖边。"
+      },
+      {
+        "sense": "n. 起重机",
+        "en": "The crane lifted a heavy box.",
+        "zh": "起重机吊起了一个重箱子。"
+      },
+      {
+        "sense": "v. 伸长脖子看",
+        "en": "She craned her neck to see.",
+        "zh": "她伸长脖子张望。"
+      }
     ]
   },
   {
@@ -552,8 +569,8 @@
     "phonetic": "vɔːlt",
     "pos": "n.",
     "meaning": "拱顶/金库/跳马",
-    "example": "The bank keeps the money in a secure vault.",
-    "exampleCn": "银行把钱存放在安全的金库里。",
+    "example": "The gold is stored in a vault.",
+    "exampleCn": "黄金存放在金库里。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -561,6 +578,23 @@
     "ieltsList": "34",
     "ieltsLists": [
       "34"
+    ],
+    "examples": [
+      {
+        "sense": "n. 金库",
+        "en": "The gold is stored in a vault.",
+        "zh": "黄金存放在金库里。"
+      },
+      {
+        "sense": "n. 穹顶",
+        "en": "The church has a stone vault.",
+        "zh": "这座教堂有一个石砌穹顶。"
+      },
+      {
+        "sense": "n. 跳马（体操）",
+        "en": "She practises the vault every day.",
+        "zh": "她每天练习跳马。"
+      }
     ]
   },
   {
@@ -788,10 +822,10 @@
     "id": 4672,
     "word": "store",
     "phonetic": "stɔː",
-    "pos": "v./n.",
+    "pos": "v. / n.",
     "meaning": "储存/商店",
-    "example": "She stored the jam in a cool place.",
-    "exampleCn": "她把果酱存放在阴凉处。",
+    "example": "Store the cheese in the fridge.",
+    "exampleCn": "把奶酪储存在冰箱里。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -799,6 +833,18 @@
     "ieltsList": "34",
     "ieltsLists": [
       "34"
+    ],
+    "examples": [
+      {
+        "sense": "v. 储存",
+        "en": "Store the cheese in the fridge.",
+        "zh": "把奶酪储存在冰箱里。"
+      },
+      {
+        "sense": "n. 商店",
+        "en": "This store sells fresh bread.",
+        "zh": "这家商店卖新鲜面包。"
+      }
     ]
   },
   {

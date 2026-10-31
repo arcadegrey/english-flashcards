@@ -14,10 +14,11 @@ const read=async path=>JSON.parse(await readFile(new URL(`../${path}`,import.met
 const serialize=value=>JSON.stringify(value,null,2)+'\n';
 const hash=value=>createHash('sha256').update(value).digest('hex');
 const words=beforeCommonSensesReview(await read('public/data/vocabulary.json')),byId=new Map(words.map(w=>[w.id,w]));
+const currentById=new Map((await read('public/data/vocabulary.json')).map(word=>[word.id,word]));
 const register=await read('data/vocabulary-short-example-repair/reviews-2026-10-29.json');
 const audit=await read('data/vocabulary-short-example-audit/examples-2026-10-29.json');
 const p2=await read('data/vocabulary-p2-repair/reviews-2026-10-29.json');
-const latestRegister=await read('data/vocabulary-single-example/reviews-2026-10-31.json');
+const latestRegister=await read('data/vocabulary-multi-sense-repair/reviews-2026-10-31.json');
 const baseline=beforeShortExampleReview(words);
 
 test('237 reviewed short candidates and the explicitly requested smoking example retain all IDs, order, IPA, categories and unrelated records',()=>{
@@ -81,12 +82,12 @@ test('cold core catalog and deferred details deliver all 238 current records wit
  const summaries=await delivery.loadCatalogIds(register.reviews.map(r=>r.id));
  assert.equal(summaries.length,238);
  for(const summary of summaries){
-  assert.equal(summary.meaning,byId.get(summary.id).meaning);
-  assert.deepEqual(applyWordDetails(summary,await delivery.loadDetails(summary)),byId.get(summary.id));
+  assert.equal(summary.meaning,currentById.get(summary.id).meaning);
+  assert.deepEqual(applyWordDetails(summary,await delivery.loadDetails(summary)),currentById.get(summary.id));
  }
  assert(requests.some(path=>path.includes('/catalog/core-')));assert(requests.some(path=>path.includes('/details/')));
  const core=await read('public/data/vocabulary/core.json');
- for(const r of register.reviews)assert.deepEqual(core.find(w=>w.id===r.id),r.after);
+ for(const r of register.reviews)assert.deepEqual(core.find(w=>w.id===r.id),currentById.get(r.id));
 });
 
 test('old assignment snapshots keep their original meanings and scores; new assignments use the corrections',()=>{
@@ -108,7 +109,7 @@ test('the original 238 screening cues remain historical; one false positive is e
  assert.equal(audit.additionalUserRequests[0].before.example,'Smoking stinks.');
  for(const row of audit.examples){
   const previous=baseline.find(w=>w.id===row.id);assert.equal(row.example,previous.example);
-  assert.deepEqual(row.current,byId.get(row.id));
+  assert.deepEqual(row.current,currentById.get(row.id));
   assert.equal(row.resolution.status,row.id===700?'reviewed_exclusion':'resolved_local_text');
  }
  const oldById=new Map(baseline.map(w=>[w.id,w]));

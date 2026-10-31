@@ -9,7 +9,8 @@ export function createWordHintLoader({ manifest, fetchImpl = (...args) => fetch(
         (!hint.sourceIds || Array.isArray(hint.sourceIds) && hint.sourceIds.every(id => data.sources[id]?.url)) &&
         (!hint.examples || Array.isArray(hint.examples) && hint.examples.every(example =>
           typeof example?.en === 'string' && typeof example.zh === 'string' && Array.isArray(example.parts)))
-      ));
+      ) && (!entry.guards || typeof entry.guards === 'object' && !Array.isArray(entry.guards)
+        && Object.entries(entry.guards).every(([key, value]) => ['pos', 'meaning', 'phonetic', 'example', 'exampleCn'].includes(key) && typeof value === 'string')));
   let cacheRequest;
   const openCache = () => cacheRequest ??= Promise.resolve().then(() => cacheStorage?.open('flashcards-word-hints-v1')).catch(() => null);
   const boundedCache = async operation => {
@@ -115,7 +116,8 @@ export function createWordHintLoader({ manifest, fetchImpl = (...args) => fetch(
     const { data, cached } = memory.get(path);
     const entry = data.entries[word.id];
     // An old snapshot or custom word must not receive another text's notes.
-    if (!entry || entry.word !== word.word || !Array.isArray(entry.hints)) return null;
+    if (!entry || entry.word !== word.word || !Array.isArray(entry.hints)
+      || Object.entries(entry.guards || {}).some(([key, value]) => word[key] != null && word[key] !== value)) return null;
     return { cached, hints: entry.hints.map(({ sourceIds, ...hint }) => ({ ...hint,
       ...(sourceIds ? { sources: sourceIds.map(id => data.sources[id]).filter(Boolean) } : {}),
     })) };

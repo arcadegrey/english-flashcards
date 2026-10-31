@@ -114,10 +114,10 @@
     "id": 479,
     "word": "coach",
     "phonetic": "/koʊtʃ/",
-    "pos": "n./v.",
-    "meaning": "教练/指导，训练",
-    "example": "The coach encouraged the team before the game./She coaches young athletes on weekends.",
-    "exampleCn": "教练在比赛前鼓励了队员。/她周末训练年轻运动员。",
+    "pos": "n. / v.",
+    "meaning": "n. 教练；长途汽车（英式）；车厢；经济舱（美式）\nv. 指导；训练",
+    "example": "Our coach is patient with beginners.",
+    "exampleCn": "我们的教练对初学者很耐心。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -129,6 +129,28 @@
     "ieltsList": "36",
     "ieltsLists": [
       "36"
+    ],
+    "examples": [
+      {
+        "sense": "n. 教练",
+        "en": "Our coach is patient with beginners.",
+        "zh": "我们的教练对初学者很耐心。"
+      },
+      {
+        "sense": "v. 训练；指导",
+        "en": "She coaches the school team.",
+        "zh": "她训练校队。"
+      },
+      {
+        "sense": "n. 长途汽车（英式）",
+        "en": "We went to the coast by coach.",
+        "zh": "我们乘长途汽车去了海边。"
+      },
+      {
+        "sense": "n. 经济舱（美式）",
+        "en": "We flew in coach to save money.",
+        "zh": "我们为了省钱坐了经济舱。"
+      }
     ]
   },
   {
@@ -197,10 +219,10 @@
     "id": 1048,
     "word": "sole",
     "phonetic": "/soʊl/",
-    "pos": "adj./n.",
+    "pos": "adj. / n.",
     "meaning": "唯一的/鞋底",
-    "example": "She was the sole winner of the prize./The sole of my shoe is worn out.",
-    "exampleCn": "她是这项奖的唯一获奖者。/我鞋子的鞋底磨坏了。",
+    "example": "She is the sole owner of the shop.",
+    "exampleCn": "她是这家商店的唯一店主。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -211,6 +233,18 @@
     "ieltsList": "50",
     "ieltsLists": [
       "50"
+    ],
+    "examples": [
+      {
+        "sense": "adj. 唯一的",
+        "en": "She is the sole owner of the shop.",
+        "zh": "她是这家商店的唯一店主。"
+      },
+      {
+        "sense": "n. 鞋底",
+        "en": "There is a hole in the sole.",
+        "zh": "鞋底有一个洞。"
+      }
     ]
   },
   {
@@ -872,10 +906,10 @@
     "id": 1086,
     "word": "bark",
     "phonetic": "/bɑːrk/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "树皮/吠叫",
-    "example": "The bark of this tree is very thick./The dog barked loudly at night.",
-    "exampleCn": "这棵树的树皮很厚。/那只狗晚上大声吠叫。",
+    "example": "The bark is rough and thick.",
+    "exampleCn": "这层树皮粗糙而厚实。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -883,7 +917,19 @@
     ],
     "level": "3",
     "list": "7",
-    "ieltsList": "9"
+    "ieltsList": "9",
+    "examples": [
+      {
+        "sense": "n. 树皮",
+        "en": "The bark is rough and thick.",
+        "zh": "这层树皮粗糙而厚实。"
+      },
+      {
+        "sense": "v. 吠叫",
+        "en": "Dogs often bark at strangers.",
+        "zh": "狗常常对陌生人叫。"
+      }
+    ]
   },
   {
     "id": 1087,

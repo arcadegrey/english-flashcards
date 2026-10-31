@@ -768,10 +768,10 @@
     "id": 3156,
     "word": "bolt",
     "phonetic": "/boʊlt/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "螺栓/闪电/猛冲/闩上",
-    "example": "A loose bolt caused the machine to shake loudly.",
-    "exampleCn": "一颗松动的螺栓导致机器剧烈震动。",
+    "example": "Please tighten this loose bolt.",
+    "exampleCn": "请拧紧这颗松动的螺栓。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -782,6 +782,28 @@
     "ieltsList": "26",
     "ieltsLists": [
       "26"
+    ],
+    "examples": [
+      {
+        "sense": "n. 螺栓",
+        "en": "Please tighten this loose bolt.",
+        "zh": "请拧紧这颗松动的螺栓。"
+      },
+      {
+        "sense": "n. 闪电（a bolt of lightning）",
+        "en": "A bolt of lightning lit the sky.",
+        "zh": "一道闪电照亮了天空。"
+      },
+      {
+        "sense": "v. 猛冲",
+        "en": "The dog may bolt through the gate.",
+        "zh": "那只狗可能会冲出大门。"
+      },
+      {
+        "sense": "v. 闩上",
+        "en": "Please bolt the back door.",
+        "zh": "请闩上后门。"
+      }
     ]
   },
   {
@@ -1227,16 +1249,38 @@
     "id": 3184,
     "word": "toll",
     "phonetic": "/toʊl/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "伤亡人数/代价/通行费/鸣钟",
-    "example": "The long drought took a heavy toll on local farms.",
-    "exampleCn": "长期干旱给当地农场造成了沉重代价。",
+    "example": "We paid a toll at the bridge.",
+    "exampleCn": "我们在桥边交了通行费。",
     "category": "toefl",
     "categories": [
       "toefl"
     ],
     "level": "5",
-    "list": "8"
+    "list": "8",
+    "examples": [
+      {
+        "sense": "n. 通行费",
+        "en": "We paid a toll at the bridge.",
+        "zh": "我们在桥边交了通行费。"
+      },
+      {
+        "sense": "n. 死亡人数（death toll）",
+        "en": "The death toll rose overnight.",
+        "zh": "死亡人数在一夜之间上升了。"
+      },
+      {
+        "sense": "n. 代价；损害（take a toll）",
+        "en": "The hard work took a toll on him.",
+        "zh": "繁重的工作损害了他的健康。"
+      },
+      {
+        "sense": "v. 鸣钟",
+        "en": "The bells toll at noon.",
+        "zh": "钟在中午敲响。"
+      }
+    ]
   },
   {
     "id": 3185,

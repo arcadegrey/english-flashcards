@@ -614,10 +614,10 @@
     "id": 4529,
     "word": "order",
     "phonetic": "ˈɔːdə",
-    "pos": "v./n.",
-    "meaning": "点餐/命令/顺序",
-    "example": "Are you ready to order your food?",
-    "exampleCn": "你准备好点餐了吗？",
+    "pos": "v. / n.",
+    "meaning": "点餐/命令/顺序\nn. 订单",
+    "example": "I would like to order some soup.",
+    "exampleCn": "我想点一些汤。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -626,6 +626,28 @@
     "ieltsLists": [
       "30",
       "47"
+    ],
+    "examples": [
+      {
+        "sense": "v. 点餐",
+        "en": "I would like to order some soup.",
+        "zh": "我想点一些汤。"
+      },
+      {
+        "sense": "n. 命令",
+        "en": "The soldier followed the order.",
+        "zh": "士兵服从了命令。"
+      },
+      {
+        "sense": "n. 顺序",
+        "en": "Put these numbers in order.",
+        "zh": "把这些数字按顺序排列。"
+      },
+      {
+        "sense": "n. 订单",
+        "en": "We placed an order for rice.",
+        "zh": "我们下了一份大米订单。"
+      }
     ]
   },
   {

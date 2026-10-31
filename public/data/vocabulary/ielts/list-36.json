@@ -57,10 +57,10 @@
     "id": 479,
     "word": "coach",
     "phonetic": "/koʊtʃ/",
-    "pos": "n./v.",
-    "meaning": "教练/指导，训练",
-    "example": "The coach encouraged the team before the game./She coaches young athletes on weekends.",
-    "exampleCn": "教练在比赛前鼓励了队员。/她周末训练年轻运动员。",
+    "pos": "n. / v.",
+    "meaning": "n. 教练；长途汽车（英式）；车厢；经济舱（美式）\nv. 指导；训练",
+    "example": "Our coach is patient with beginners.",
+    "exampleCn": "我们的教练对初学者很耐心。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -72,6 +72,28 @@
     "ieltsList": "36",
     "ieltsLists": [
       "36"
+    ],
+    "examples": [
+      {
+        "sense": "n. 教练",
+        "en": "Our coach is patient with beginners.",
+        "zh": "我们的教练对初学者很耐心。"
+      },
+      {
+        "sense": "v. 训练；指导",
+        "en": "She coaches the school team.",
+        "zh": "她训练校队。"
+      },
+      {
+        "sense": "n. 长途汽车（英式）",
+        "en": "We went to the coast by coach.",
+        "zh": "我们乘长途汽车去了海边。"
+      },
+      {
+        "sense": "n. 经济舱（美式）",
+        "en": "We flew in coach to save money.",
+        "zh": "我们为了省钱坐了经济舱。"
+      }
     ]
   },
   {
@@ -1358,10 +1380,10 @@
     "id": 4756,
     "word": "tire",
     "phonetic": "ˈtaɪə",
-    "pos": "n.",
-    "meaning": "轮胎",
-    "example": "The car needs a new set of tyres.",
-    "exampleCn": "这辆车需要一套新轮胎。",
+    "pos": "n. / v.",
+    "meaning": "n. 轮胎（美式拼写，英式为 tyre）\nv. 使疲劳；感到疲倦",
+    "example": "The front tire is flat.",
+    "exampleCn": "前轮胎瘪了。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -1369,6 +1391,18 @@
     "ieltsList": "36",
     "ieltsLists": [
       "36"
+    ],
+    "examples": [
+      {
+        "sense": "n. 轮胎（美式）",
+        "en": "The front tire is flat.",
+        "zh": "前轮胎瘪了。"
+      },
+      {
+        "sense": "v. 使疲劳",
+        "en": "Long walks tire me out.",
+        "zh": "长距离步行让我疲惫不堪。"
+      }
     ]
   },
   {

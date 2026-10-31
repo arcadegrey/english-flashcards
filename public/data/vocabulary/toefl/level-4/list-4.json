@@ -210,10 +210,10 @@
     "id": 1719,
     "word": "grave",
     "phonetic": "/ɡreɪv/",
-    "pos": "adj./n.",
+    "pos": "adj. / n.",
     "meaning": "严重的/坟墓",
-    "example": "The scientist warned of grave damage to the ecosystem.",
-    "exampleCn": "这位科学家警告生态系统会受到严重破坏。",
+    "example": "This is a grave mistake.",
+    "exampleCn": "这是一个严重的错误。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -224,6 +224,18 @@
     "ieltsList": "48",
     "ieltsLists": [
       "48"
+    ],
+    "examples": [
+      {
+        "sense": "adj. 严重的",
+        "en": "This is a grave mistake.",
+        "zh": "这是一个严重的错误。"
+      },
+      {
+        "sense": "n. 坟墓",
+        "en": "They placed flowers on the grave.",
+        "zh": "他们在坟墓上放了鲜花。"
+      }
     ]
   },
   {
@@ -677,9 +689,9 @@
     "word": "trunk",
     "phonetic": "/trʌŋk/",
     "pos": "n.",
-    "meaning": "树干/躯干/行李箱",
-    "example": "The trunk of the tree stores water during dry seasons.",
-    "exampleCn": "树干在旱季储存水分。",
+    "meaning": "树干/躯干/行李箱\nn. 象鼻；汽车后备箱（美式，英式常说 boot）",
+    "example": "The tree has a thick trunk.",
+    "exampleCn": "这棵树的树干很粗。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -691,6 +703,28 @@
     "ieltsLists": [
       "6",
       "8"
+    ],
+    "examples": [
+      {
+        "sense": "n. 树干",
+        "en": "The tree has a thick trunk.",
+        "zh": "这棵树的树干很粗。"
+      },
+      {
+        "sense": "n. 躯干",
+        "en": "Keep your trunk straight during this exercise.",
+        "zh": "做这个动作时保持躯干挺直。"
+      },
+      {
+        "sense": "n. 汽车后备箱（美式）",
+        "en": "Put the bags in the trunk.",
+        "zh": "把包放进汽车后备箱里。"
+      },
+      {
+        "sense": "n. 象鼻",
+        "en": "The elephant lifted its trunk.",
+        "zh": "大象抬起了鼻子。"
+      }
     ]
   },
   {

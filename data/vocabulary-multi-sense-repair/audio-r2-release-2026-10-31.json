@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-31",
+  "batch": "2026-10-31-multi-sense",
+  "baseUrl": "https://audio.englishflashcards.cn",
+  "sourceSha256": "c2a7ade0fe5774f96e7bd737edf74da8bdc45fbf3ff0b16f531456b257f7328e",
+  "wordCount": 133,
+  "exampleCount": 424,
+  "wordAudioReplacements": 10,
+  "expectedFiles": 1736,
+  "validatedLocalFiles": 1736,
+  "verifiedPublicFiles": 1736,
+  "manifestSha256": "92e1d45430b0eca82d53aa9f5a69eba94c6405a359116aee16db2cbf3525e887",
+  "manifestMatched": true,
+  "failures": 0,
+  "bytes": 13488264,
+  "method": "Every local file: size, SHA-256, 24 kHz mono MP3, full finite decode and non-silence. Every public recording: HTTP 200, audio/mpeg, size and SHA-256; manifest byte-for-byte. Public reads used the existing local proxy, not mainland direct testing.",
+  "details": [
+    "output/multi-sense-audio-local.json",
+    "output/multi-sense-audio-public.json"
+  ]
+}

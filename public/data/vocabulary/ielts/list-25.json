@@ -86,10 +86,10 @@
     "id": 2254,
     "word": "tap",
     "phonetic": "/tæp/",
-    "pos": "v./n.",
+    "pos": "v. / n.",
     "meaning": "轻拍/水龙头/开发利用",
-    "example": "Please tap the screen to start the program.",
-    "exampleCn": "请轻点屏幕来启动程序。",
+    "example": "Tap the screen to continue.",
+    "exampleCn": "轻点屏幕以继续。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -101,6 +101,23 @@
     "ieltsLists": [
       "25",
       "51"
+    ],
+    "examples": [
+      {
+        "sense": "v. 轻拍",
+        "en": "Tap the screen to continue.",
+        "zh": "轻点屏幕以继续。"
+      },
+      {
+        "sense": "n. 水龙头（英式）",
+        "en": "Please turn off the tap.",
+        "zh": "请关掉水龙头。"
+      },
+      {
+        "sense": "v. 开发利用",
+        "en": "We can tap the sun's energy.",
+        "zh": "我们可以利用太阳能。"
+      }
     ]
   },
   {

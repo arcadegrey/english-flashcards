@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
-import { beforeSingleExampleReview } from '../shared/vocabularyHistory.js';
+import { beforeSingleExampleReview, beforeMultiSenseReview } from '../shared/vocabularyHistory.js';
 import { correctedVocabularyAudioUrl } from '../shared/vocabularyAudio.js';
 import { createVocabularyDelivery } from '../src/data/vocabularyDelivery.js';
 import { applyWordDetails, getWordExamples, summarizeVocabularyWord, validWordExamples } from '../src/data/vocabularySummary.js';
@@ -12,7 +12,7 @@ import { createSpeechService } from '../src/utils/speechEngine.js';
 const read = async path => JSON.parse(await readFile(new URL(`../${path}`, import.meta.url), 'utf8'));
 const hash = value => createHash('sha256').update(value).digest('hex');
 const serialize = value => JSON.stringify(value, null, 2) + '\n';
-const words = await read('public/data/vocabulary.json');
+const words = beforeMultiSenseReview(await read('public/data/vocabulary.json'));
 const register = await read('data/vocabulary-single-example/reviews-2026-10-31.json');
 const review = register.reviews[0], single = words.find(word => word.id === 5747);
 

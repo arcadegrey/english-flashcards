@@ -137,8 +137,8 @@
     "phonetic": "/tʃest/",
     "pos": "n.",
     "meaning": "胸部；箱子",
-    "example": "He has pain in his chest.",
-    "exampleCn": "他胸部疼痛。",
+    "example": "He felt pain in his chest.",
+    "exampleCn": "他感到胸口疼。",
     "category": "daily",
     "categories": [
       "daily",
@@ -147,6 +147,18 @@
     "ieltsList": "56",
     "ieltsLists": [
       "56"
+    ],
+    "examples": [
+      {
+        "sense": "n. 胸部",
+        "en": "He felt pain in his chest.",
+        "zh": "他感到胸口疼。"
+      },
+      {
+        "sense": "n. 箱子",
+        "en": "The blankets are in that wooden chest.",
+        "zh": "毯子在那个木箱里。"
+      }
     ]
   },
   {
@@ -215,8 +227,8 @@
     "phonetic": "/ˈɔːɡən/",
     "pos": "n.",
     "meaning": "器官；机构；风琴",
-    "example": "The heart is a vital organ.",
-    "exampleCn": "心脏是重要器官。",
+    "example": "The heart is an important organ.",
+    "exampleCn": "心脏是一个重要器官。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -227,6 +239,23 @@
     "ieltsList": "56",
     "ieltsLists": [
       "56"
+    ],
+    "examples": [
+      {
+        "sense": "n. 器官",
+        "en": "The heart is an important organ.",
+        "zh": "心脏是一个重要器官。"
+      },
+      {
+        "sense": "n. 机构（较正式）",
+        "en": "The court is an organ of the state.",
+        "zh": "法院是国家的一个机构。"
+      },
+      {
+        "sense": "n. 管风琴",
+        "en": "She plays the organ at church.",
+        "zh": "她在教堂弹管风琴。"
+      }
     ]
   },
   {
@@ -553,10 +582,10 @@
     "id": 2220,
     "word": "lap",
     "phonetic": "/læp/",
-    "pos": "n./v.",
+    "pos": "n. / v.",
     "meaning": "大腿上部/一圈/舔/轻拍",
-    "example": "The runner completed one lap around the track.",
-    "exampleCn": "跑者绕跑道完成了一圈。",
+    "example": "The child sat on her lap.",
+    "exampleCn": "孩子坐在她的大腿上。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -567,6 +596,28 @@
     "ieltsList": "56",
     "ieltsLists": [
       "56"
+    ],
+    "examples": [
+      {
+        "sense": "n. 大腿上部",
+        "en": "The child sat on her lap.",
+        "zh": "孩子坐在她的大腿上。"
+      },
+      {
+        "sense": "n. 一圈",
+        "en": "Run one lap around the track.",
+        "zh": "绕跑道跑一圈。"
+      },
+      {
+        "sense": "v. 舔着喝",
+        "en": "The cat will lap up the milk.",
+        "zh": "猫会舔着喝牛奶。"
+      },
+      {
+        "sense": "v. 轻拍",
+        "en": "Small waves lap against the boat.",
+        "zh": "小浪轻拍着船身。"
+      }
     ]
   },
   {
@@ -887,10 +938,10 @@
     "id": 5353,
     "word": "mind",
     "phonetic": "maɪnd",
-    "pos": "n./v.",
-    "meaning": "头脑/思想/介意",
-    "example": "She had a sharp mind even in old age.",
-    "exampleCn": "她年事已高仍头脑敏锐。",
+    "pos": "n. / v.",
+    "meaning": "头脑/思想/介意\nv. 留心；注意",
+    "example": "You have a curious mind.",
+    "exampleCn": "你有一颗好奇的心。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -898,6 +949,23 @@
     "ieltsList": "56",
     "ieltsLists": [
       "56"
+    ],
+    "examples": [
+      {
+        "sense": "n. 头脑；心智",
+        "en": "You have a curious mind.",
+        "zh": "你有一颗好奇的心。"
+      },
+      {
+        "sense": "v. 介意",
+        "en": "Do you mind if I sit here?",
+        "zh": "你介意我坐在这里吗？"
+      },
+      {
+        "sense": "v. 留心；注意",
+        "en": "Mind the steps.",
+        "zh": "当心台阶。"
+      }
     ]
   },
   {
@@ -1074,10 +1142,10 @@
     "id": 5364,
     "word": "shoulder",
     "phonetic": "ˈʃəʊldə",
-    "pos": "n.",
-    "meaning": "肩膀/肩部",
-    "example": "She carried the heavy bag on her shoulder.",
-    "exampleCn": "她扛着沉重的包。",
+    "pos": "n. / v.",
+    "meaning": "n. 肩膀；肩部\nv. 承担（责任、负担等）",
+    "example": "My bag hangs from one shoulder.",
+    "exampleCn": "我的包挂在一侧肩膀上。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -1085,6 +1153,18 @@
     "ieltsList": "56",
     "ieltsLists": [
       "56"
+    ],
+    "examples": [
+      {
+        "sense": "n. 肩膀",
+        "en": "My bag hangs from one shoulder.",
+        "zh": "我的包挂在一侧肩膀上。"
+      },
+      {
+        "sense": "v. 承担",
+        "en": "She will shoulder the responsibility.",
+        "zh": "她将承担这份责任。"
+      }
     ]
   },
   {
@@ -1127,8 +1207,8 @@
     "phonetic": "pɑːm",
     "pos": "n.",
     "meaning": "手掌/掌心/棕榈树",
-    "example": "She held the coin tightly in her palm.",
-    "exampleCn": "她把硬币紧紧握在掌心。",
+    "example": "Hold the coin in your palm.",
+    "exampleCn": "把硬币握在手心里。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -1136,6 +1216,18 @@
     "ieltsList": "56",
     "ieltsLists": [
       "56"
+    ],
+    "examples": [
+      {
+        "sense": "n. 手掌",
+        "en": "Hold the coin in your palm.",
+        "zh": "把硬币握在手心里。"
+      },
+      {
+        "sense": "n. 棕榈树",
+        "en": "A tall palm grows near the beach.",
+        "zh": "海滩附近长着一棵高大的棕榈树。"
+      }
     ]
   },
   {

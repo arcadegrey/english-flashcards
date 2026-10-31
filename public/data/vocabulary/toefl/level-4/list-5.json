@@ -1372,8 +1372,8 @@
     "phonetic": "/ˈvesl/",
     "pos": "n.",
     "meaning": "船只/容器/血管",
-    "example": "The vessel carried supplies across the ocean.",
-    "exampleCn": "这艘船把物资运过海洋。",
+    "example": "This vessel carries food to the island.",
+    "exampleCn": "这艘船向岛上运送食物。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -1384,6 +1384,23 @@
     "ieltsList": "37",
     "ieltsLists": [
       "37"
+    ],
+    "examples": [
+      {
+        "sense": "n. 船只（较正式）",
+        "en": "This vessel carries food to the island.",
+        "zh": "这艘船向岛上运送食物。"
+      },
+      {
+        "sense": "n. 容器（较正式）",
+        "en": "Fill the vessel with clean water.",
+        "zh": "往容器里装上干净的水。"
+      },
+      {
+        "sense": "n. 血管（blood vessel）",
+        "en": "A blood vessel carries blood.",
+        "zh": "血管输送血液。"
+      }
     ]
   },
   {

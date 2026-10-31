@@ -23,11 +23,11 @@
   {
     "id": 290,
     "word": "bow",
-    "phonetic": "/baʊ/",
-    "pos": "v./n.",
+    "phonetic": "/baʊ/（鞠躬）；/bəʊ/（弓、蝴蝶结）",
+    "pos": "v. / n.",
     "meaning": "鞠躬；弓",
-    "example": "The actor took a bow after the show.",
-    "exampleCn": "演员在演出结束后鞠躬致谢。",
+    "example": "Please bow to the audience.",
+    "exampleCn": "请向观众鞠躬。",
     "category": "daily",
     "categories": [
       "daily",
@@ -38,6 +38,23 @@
       "24",
       "37",
       "46"
+    ],
+    "examples": [
+      {
+        "sense": "v. 鞠躬（/baʊ/）",
+        "en": "Please bow to the audience.",
+        "zh": "请向观众鞠躬。"
+      },
+      {
+        "sense": "n. 弓（/bəʊ/）",
+        "en": "He carried a bow and arrows.",
+        "zh": "他带着一把弓和一些箭。"
+      },
+      {
+        "sense": "n. 蝴蝶结（/bəʊ/）",
+        "en": "She tied the ribbon in a bow.",
+        "zh": "她把丝带打成蝴蝶结。"
+      }
     ]
   },
   {
