@@ -5,6 +5,7 @@ import { getWordMeaningLine } from '../utils/wordHintPresentation.js';
 import { useWordHints } from '../hooks/useWordHints.js';
 import { useWordDetails } from '../hooks/useWordDetails.js';
 import { loadWordDetails } from '../data/vocabulary.js';
+import { getWordExamples } from '../data/vocabularySummary.js';
 import { prepareWordAudio, speakExample, speakWord } from '../utils/speech';
 import '../styles/study-word.css';
 
@@ -37,6 +38,7 @@ function WordCard({ word: entry, nextWord, showHint = false }) {
 
   const meaningLine = getWordMeaningLine(word);
   const wordFitLength = Math.max(String(word.word || '').trim().length, 1);
+  const examples = getWordExamples(word);
 
   return (
     <article className="learn-refresh-card learn-refresh-word-card learn-refresh-card-enter" aria-live="polite">
@@ -77,7 +79,7 @@ function WordCard({ word: entry, nextWord, showHint = false }) {
 
       <p className="learn-refresh-meaning">{meaningLine || '暂无释义'}</p>
 
-      <section className="learn-refresh-example-block" aria-label="例句">
+      {examples.map((example, index) => <section className="learn-refresh-example-block" aria-label={example.sense ? `例句 ${index + 1}：${example.sense}` : '例句'} key={example.en || 'empty-example'}>
         <div className="learn-refresh-example-head">
           <span className="learn-refresh-example-label">
             <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -85,14 +87,14 @@ function WordCard({ word: entry, nextWord, showHint = false }) {
               <path d="M8 8h7" />
               <path d="M8 12h5" />
             </svg>
-            例句
+            {examples.length > 1 ? `例句 ${index + 1}` : '例句'}
           </span>
           <button
             type="button"
             className="learn-refresh-example-audio"
-            onClick={() => speakExample(word, { rate: 1 })}
-            disabled={!word.example}
-            aria-label="播放例句"
+            onClick={() => speakExample({ ...word, example: example.en, exampleCn: example.zh }, { rate: 1 })}
+            disabled={!example.en}
+            aria-label={example.sense ? `播放例句 ${index + 1}：${example.sense}` : '播放例句'}
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M3 9v6h4l5 4V5L7 9H3z" />
@@ -103,8 +105,8 @@ function WordCard({ word: entry, nextWord, showHint = false }) {
         </div>
         {exampleLoading ? <LoadingState variant="inline" className="learn-refresh-hint-scope" title="正在加载例句…" />
           : exampleError ? <><p className="learn-refresh-hint-scope" role="status">例句暂时无法加载，当前词义仍可学习。</p><button type="button" className="learn-refresh-example-audio" onClick={retryExample}>重试加载例句</button></>
-          : <><p className="learn-refresh-example-en">{word.example || '暂无英文例句。'}</p><p className="learn-refresh-example-cn">{word.exampleCn || '暂无中文例句。'}</p></>}
-      </section>
+          : <>{example.sense && <p className="learn-refresh-hint-scope">词义：{example.sense}</p>}<p className="learn-refresh-example-en" lang="en">{example.en || '暂无英文例句。'}</p><p className="learn-refresh-example-cn">{example.zh || '暂无中文例句。'}</p></>}
+      </section>)}
 
       <section className={`learn-refresh-expandable ${showHint ? 'is-open' : ''}`} aria-hidden={!showHint} inert={!showHint}>
         <div className="learn-refresh-expandable-inner">

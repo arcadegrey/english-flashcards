@@ -1,6 +1,9 @@
 import expansion50 from '../data/vocabulary-expansion-50/register-2026-10-29.json' with { type: 'json' };
+import singleExample from '../data/vocabulary-single-example/reviews-2026-10-31.json' with { type: 'json' };
+const beforeSingle = new Map(singleExample.reviews.map(review => [review.id, review.before]));
+export const beforeSingleExampleReview = words => words.map(word => beforeSingle.get(word?.id) || word);
 const expansion50Ids = new Set(expansion50.ids);
-export const beforeExpansion50Review = words => words.filter(word => !expansion50Ids.has(word?.id));
+export const beforeExpansion50Review = words => beforeSingleExampleReview(words).filter(word => !expansion50Ids.has(word?.id));
 // Reconstruct earlier editorial stages for maintenance/audits, never user progress.
 import replacements from '../data/name-place-replacement/replacement-manifest.json' with { type: 'json' };
 import retired from '../data/name-place-replacement/retired-2026-10-26.json' with { type: 'json' };

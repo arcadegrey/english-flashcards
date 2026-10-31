@@ -32,12 +32,33 @@ export function createWordHintLoader({ manifest, fetchImpl = (...args) => fetch(
     if (cached) return cached;
 
     const controller = new AbortController();
-    let timer, fallbackTimer;
+    let timer, fallbackTimer, resetTimeout;
     try {
       const primary = async () => {
         const response = await fetchImpl(path, { signal: controller.signal });
+        controller.signal.throwIfAborted();
         if (!response.ok) throw new Error('学习提示暂时无法加载');
-        const data = await response.json();
+        resetTimeout?.();
+        let data;
+        if (response.body?.getReader) {
+          const reader = response.body.getReader(), decoder = new TextDecoder();
+          const cancel = () => { void reader.cancel().catch(() => {}); };
+          controller.signal.addEventListener('abort', cancel, { once: true });
+          let text = '';
+          try {
+            while (true) {
+              const { done, value } = await reader.read();
+              controller.signal.throwIfAborted();
+              if (done) break;
+              if (value.byteLength) resetTimeout?.();
+              text += decoder.decode(value, { stream: true });
+            }
+            data = JSON.parse(text + decoder.decode());
+          } finally {
+            controller.signal.removeEventListener('abort', cancel);
+            reader.releaseLock();
+          }
+        } else data = await response.json();
         if (!validBatch(data)) throw new Error('学习提示格式无效');
         return data;
       };
@@ -60,7 +81,14 @@ export function createWordHintLoader({ manifest, fetchImpl = (...args) => fetch(
         });
       });
       const data = await Promise.race([delivery,
-        new Promise((_, reject) => { timer = setTimeout(() => reject(new Error('学习提示加载超时，请重试')), timeoutMs); }),
+        new Promise((_, reject) => {
+          resetTimeout = () => {
+            if (controller.signal.aborted) return;
+            clearTimeout(timer);
+            timer = setTimeout(() => reject(new Error('学习提示加载超时，请重试')), timeoutMs);
+          };
+          resetTimeout();
+        }),
       ]);
       clearTimeout(timer);
       clearTimeout(fallbackTimer);

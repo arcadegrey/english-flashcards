@@ -10,6 +10,11 @@ const hash = value => createHash('sha256').update(value).digest('hex');
 const serialize = value => JSON.stringify(value, null, 2) + '\n';
 const vocabularyPath = new URL('public/data/vocabulary.json', root);
 const raw = await readFile(vocabularyPath, 'utf8'), vocabulary = JSON.parse(raw);
+const latestSingle = await read('data/vocabulary-single-example/reviews-2026-10-31.json');
+if (hash(serialize(vocabulary)) === latestSingle.afterSha256) {
+ console.log('Preserving the registered single example simplification.');
+ process.exit(0);
+}
 const expansion = await read('data/vocabulary-expansion-50/register-2026-10-29.json');
 if (hash(serialize(vocabulary)) === expansion.afterSha256) {
  console.log('Preserving the registered 50-unit expansion.');

@@ -52,7 +52,8 @@ test('all shipped shards and the server assignment catalog match the corrected s
           assert(source, `${child}: unknown word ${word.id}`);
           const expected = child.startsWith('public/data/vocabulary/catalog/') ? summarizeVocabularyWord(source)
             : child.startsWith('public/data/vocabulary/details/')
-              ? { id: source.id, word: source.word, example: source.example, exampleCn: source.exampleCn }
+              ? { id: source.id, word: source.word, example: source.example, exampleCn: source.exampleCn,
+                ...(source.examples ? { examples: source.examples } : {}) }
               : source;
           assert.deepEqual(word, expected, child);
         }

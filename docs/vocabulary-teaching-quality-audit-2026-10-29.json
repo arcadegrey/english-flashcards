@@ -2,7 +2,7 @@
   "auditDate": "2026-10-29",
   "input": "public/data/vocabulary.json",
   "inputSha256": "ae4abc959df187f198e54477dc7a69a4f7baa283f10f07854915ba74c1a4c163",
-  "currentSourceSha256": "a64fe9ac333f29f9730f734b3c29d1fe5b57a75f4b4442fb603228df616efcbe",
+  "currentSourceSha256": "0dd67cbe46ea45012baad0ab598c6594bb5073be6b229208754167551befbb08",
   "screeningAppliesTo": "captured pre-P1/P2 audit snapshot, not the repaired canonical examples",
   "scope": "Reported four repaired IDs excluded; all other active entries screened, bounded candidates reviewed. No runtime or vocabulary edits.",
   "reviewer": "single-model editorial review; not independent human language review",
@@ -32383,11 +32383,28 @@
         "phonetic": "'siŋgl",
         "pos": "v.",
         "meaning": "a. 单身的, 单程的, 单一的, 个别的, 孤独的, 专一的\\nn. 一个, 单打, 单程票\\nvt. 选出\\nvi. 击出一垒打\\n[计] 单精度型",
-        "example": "Single chrysanthemums resemble daisies and may have more than one row of petals.",
-        "exampleCn": "单株菊花类似于雏菊，可能有一排以上的花瓣。",
+        "example": "She is single.",
+        "exampleCn": "她是单身。",
         "category": "daily",
         "categories": [
           "daily"
+        ],
+        "examples": [
+          {
+            "sense": "单身的",
+            "en": "She is single.",
+            "zh": "她是单身。"
+          },
+          {
+            "sense": "单个的；仅一个",
+            "en": "I have a single question.",
+            "zh": "我只有一个问题。"
+          },
+          {
+            "sense": "单程的（英式用法）",
+            "en": "I need a single ticket.",
+            "zh": "我需要一张单程票。"
+          }
         ]
       },
       "syntaxCue": {

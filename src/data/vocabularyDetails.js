@@ -1,16 +1,17 @@
-import { needsWordDetails } from './vocabularySummary.js'
+import { needsWordDetails, validWordExamples } from './vocabularySummary.js'
 
 // The same detail validation/cache is used by the legacy full delivery service
 // and the small detail-only locator. Public identity stays ID + exact headword.
 export function createVocabularyDetailsLoader({ fetchJson, hasWord, config, getLegacyPaths }) {
   const details = new Map()
   const keyFor = word => `${word?.id}\0${word?.word}`
-  const completeExample = word => typeof word?.example === 'string' && typeof word?.exampleCn === 'string'
+  const completeExample = word => typeof word?.example === 'string' && typeof word?.exampleCn === 'string' && validWordExamples(word)
   const peekDetails = word => completeExample(word) ? word : details.get(keyFor(word)) || null
   const matchDetails = (words, word) => {
     const entry = words?.find(item => String(item.id) === String(word.id) && item.word === word.word)
     if (!completeExample(entry)) return null
-    const result = { id: entry.id, word: entry.word, example: entry.example, exampleCn: entry.exampleCn }
+    const result = { id: entry.id, word: entry.word, example: entry.example, exampleCn: entry.exampleCn,
+      ...(Array.isArray(entry.examples) ? { examples: entry.examples } : {}) }
     details.set(keyFor(word), result)
     return result
   }

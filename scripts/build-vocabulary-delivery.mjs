@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto';
 import { isDeepStrictEqual } from 'node:util';
 import { pathToFileURL } from 'node:url';
 import { getWordCategories } from '../src/utils/wordCategories.js';
-import { summarizeVocabularyWord } from '../src/data/vocabularySummary.js';
+import { summarizeVocabularyWord, validWordExamples } from '../src/data/vocabularySummary.js';
 import { PLAN_CATEGORY_IDS } from '../shared/planPreferences.js';
 
 const toIdRanges = words => {
@@ -95,10 +95,12 @@ export async function buildVocabularyDelivery() {
   }
   await writeIfChanged('src/data/vocabularyCategoryIndex.json', categories);
   const details = { batchSize: 50, batches: {} }, batches = new Map();
-  for (const { id, word, example, exampleCn } of vocabulary) {
+  for (const entry of vocabulary) {
+    const { id, word, example, exampleCn, examples } = entry;
+    if (!validWordExamples(entry)) throw new Error(`Invalid sense examples: ${id}`);
     const key = Math.floor(Number(id) / details.batchSize);
     if (!batches.has(key)) batches.set(key, []);
-    batches.get(key).push({ id, word, example, exampleCn });
+    batches.get(key).push({ id, word, example, exampleCn, ...(examples ? { examples } : {}) });
   }
   for (const [key, entries] of batches) details.batches[key] = (await writeHashed('details', String(key), entries)).path;
   const index = { total: vocabulary.length, counts, core: '/data/vocabulary/core.json', extended: '/data/vocabulary/extended.json',

@@ -140,3 +140,37 @@ test('published fallback modules retain all reviewed JSON exactly, including ret
       await read(`../public${path}`));
   }
 });
+
+test('slow hint transfers keep loading beyond the original deadline while bytes continue arriving', async t => {
+  t.mock.timers.enable({ apis: ['setTimeout'] });
+  let stream;
+  const load = createWordHintLoader({ manifest: tinyManifest, cacheStorage: null, timeoutMs: 10,
+    fetchImpl: async () => new Response(new ReadableStream({ start(controller) { stream = controller; } })) });
+  const pending = load({ id: 1, word: 'hello' });
+  const tick = () => new Promise(resolve => setImmediate(resolve));
+  await tick();
+  const bytes = new TextEncoder().encode(JSON.stringify(batch));
+  for (let offset = 0; offset < bytes.length; offset += 30) {
+    t.mock.timers.tick(8);
+    stream.enqueue(bytes.slice(offset, offset + 30));
+    await tick();
+  }
+  stream.close();
+  assert.equal((await pending).hints[0].text, 'hello');
+});
+
+test('a stalled partial hint response is cancelled and a later retry can recover', async t => {
+  t.mock.timers.enable({ apis: ['setTimeout'] });
+  let stream, cancelled = false, calls = 0;
+  const load = createWordHintLoader({ manifest: tinyManifest, cacheStorage: null, timeoutMs: 10,
+    fetchImpl: async () => ++calls > 1 ? Response.json(batch) : new Response(new ReadableStream({
+      start(controller) { stream = controller; }, cancel() { cancelled = true; },
+    })) });
+  const pending = load({ id: 1, word: 'hello' }), failed = assert.rejects(pending, /超时/);
+  await new Promise(resolve => setImmediate(resolve));
+  stream.enqueue(new TextEncoder().encode('{"entries":'));
+  await new Promise(resolve => setImmediate(resolve));
+  t.mock.timers.tick(11); await failed;
+  assert.equal(cancelled, true);
+  assert.equal((await load({ id: 1, word: 'hello' })).hints[0].text, 'hello');
+});

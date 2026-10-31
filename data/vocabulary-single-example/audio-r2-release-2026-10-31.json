@@ -1,0 +1,70 @@
+{
+  "verified": 12,
+  "manifestMatched": true,
+  "files": [
+    {
+      "path": "/audio-updates/2026-10-31-single-example/example/af_bella/5747-c6a3545cce51.mp3",
+      "sha256": "dfdba8f6d055116a7f518f06b8a645ae187e7e27665130aea68a7310b988271e",
+      "bytes": 5472
+    },
+    {
+      "path": "/audio-updates/2026-10-31-single-example/example/af_bella/5747-3352d475c18b.mp3",
+      "sha256": "cdb47558ecb9b278cb0d3a5cd5e98a4e4a2ead4d0440d93c333883c7f115f675",
+      "bytes": 7128
+    },
+    {
+      "path": "/audio-updates/2026-10-31-single-example/example/af_bella/5747-71f3ae252e36.mp3",
+      "sha256": "d4e0177fcb231b8b4d7cdfbc4ba0f663aab8f91ede8af94363e90e26c65ecedb",
+      "bytes": 6768
+    },
+    {
+      "path": "/audio-updates/2026-10-31-single-example/example/am_michael/5747-c6a3545cce51.mp3",
+      "sha256": "d87929b0d80c5dedf1b7a51f437f1fda06a503e2227fd4b407732c9a46738409",
+      "bytes": 5760
+    },
+    {
+      "path": "/audio-updates/2026-10-31-single-example/example/am_michael/5747-3352d475c18b.mp3",
+      "sha256": "6ff236401bc6cb22b118e145f6702126e2a71a22fcdae34bf56e423878e129ee",
+      "bytes": 7200
+    },
+    {
+      "path": "/audio-updates/2026-10-31-single-example/example/am_michael/5747-71f3ae252e36.mp3",
+      "sha256": "3349ae68696e646bb99ed41eeb60fcd5bc4683d9af11d1b8a243af40c73adc11",
+      "bytes": 7488
+    },
+    {
+      "path": "/audio-updates/2026-10-31-single-example/example/bf_emma/5747-c6a3545cce51.mp3",
+      "sha256": "d22f5045f39ff309c46bb034dcd3fda49a5c4b0507540df85c58982ffc8825f4",
+      "bytes": 5472
+    },
+    {
+      "path": "/audio-updates/2026-10-31-single-example/example/bf_emma/5747-3352d475c18b.mp3",
+      "sha256": "8607e048a022786377e5c33aab4b4b85329c0c323873792fb70807f642d7b9bb",
+      "bytes": 7488
+    },
+    {
+      "path": "/audio-updates/2026-10-31-single-example/example/bf_emma/5747-71f3ae252e36.mp3",
+      "sha256": "a8aff23c7701816eafe45b330d7e6286d28f2fb6cbe3484354ba8960e70e23c9",
+      "bytes": 7560
+    },
+    {
+      "path": "/audio-updates/2026-10-31-single-example/example/bm_george/5747-c6a3545cce51.mp3",
+      "sha256": "fc50af43cddb04933dccfb00b514f64e677f0c02a80b9dfbead42ff077cf5344",
+      "bytes": 5400
+    },
+    {
+      "path": "/audio-updates/2026-10-31-single-example/example/bm_george/5747-3352d475c18b.mp3",
+      "sha256": "63da6d2b4a53093b8a07e1b9c6c1466096c3d3caa249e87ae7bd9bf0551cfb66",
+      "bytes": 7344
+    },
+    {
+      "path": "/audio-updates/2026-10-31-single-example/example/bm_george/5747-71f3ae252e36.mp3",
+      "sha256": "d28441037b9f11689c89486fb9ebf2a8300726cd3376bc48b70ac65824eb16f7",
+      "bytes": 7704
+    }
+  ],
+  "date": "2026-10-31",
+  "batch": "2026-10-31-single-example",
+  "baseUrl": "https://audio.englishflashcards.cn",
+  "method": "Public HTTPS GET via the existing local proxy; exact byte size and SHA-256 for every recording, manifest compared byte-for-byte."
+}

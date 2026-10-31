@@ -7052,11 +7052,28 @@
     "phonetic": "'siŋgl",
     "pos": "v.",
     "meaning": "a. 单身的, 单程的, 单一的, 个别的, 孤独的, 专一的\\nn. 一个, 单打, 单程票\\nvt. 选出\\nvi. 击出一垒打\\n[计] 单精度型",
-    "example": "Single chrysanthemums resemble daisies and may have more than one row of petals.",
-    "exampleCn": "单株菊花类似于雏菊，可能有一排以上的花瓣。",
+    "example": "She is single.",
+    "exampleCn": "她是单身。",
     "category": "daily",
     "categories": [
       "daily"
+    ],
+    "examples": [
+      {
+        "sense": "单身的",
+        "en": "She is single.",
+        "zh": "她是单身。"
+      },
+      {
+        "sense": "单个的；仅一个",
+        "en": "I have a single question.",
+        "zh": "我只有一个问题。"
+      },
+      {
+        "sense": "单程的（英式用法）",
+        "en": "I need a single ticket.",
+        "zh": "我需要一张单程票。"
+      }
     ]
   },
   {

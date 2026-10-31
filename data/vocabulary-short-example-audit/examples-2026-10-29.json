@@ -2,7 +2,7 @@
   "auditDate": "2026-10-29",
   "input": "public/data/vocabulary.json",
   "inputSha256": "eb08780f5f05aa663c2b67121a358f9429b4c0450c6ced98debf3594f70df752",
-  "currentSourceSha256": "a64fe9ac333f29f9730f734b3c29d1fe5b57a75f4b4442fb603228df616efcbe",
+  "currentSourceSha256": "0dd67cbe46ea45012baad0ab598c6594bb5073be6b229208754167551befbb08",
   "screeningAppliesTo": "captured pre-short-repair snapshot; counts are historical candidates, not errors in the new examples",
   "repairStatus": {
     "batch": "2026-10-29-short-examples",

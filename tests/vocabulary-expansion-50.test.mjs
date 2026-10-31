@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import {beforeExpansion50Review} from '../shared/vocabularyHistory.js';
+import {beforeExpansion50Review,beforeSingleExampleReview} from '../shared/vocabularyHistory.js';
 import {RETIRED_VOCABULARY,activeProgressIds} from '../shared/retiredVocabulary.js';
 import {getCoreWordHints,getHintExampleParts} from '../src/utils/wordHints.js';
 import {createVocabularyDelivery} from '../src/data/vocabularyDelivery.js';
@@ -14,7 +14,7 @@ import {createSpeechService} from '../src/utils/speechEngine.js';
 import {getPlanWordStats} from '../src/utils/studyPlan.js';
 const read=async p=>JSON.parse(await readFile(new URL('../'+p,import.meta.url),'utf8'));
 const hash=v=>createHash('sha256').update(v).digest('hex'),serialize=v=>JSON.stringify(v,null,2)+'\n';
-const words=await read('public/data/vocabulary.json'),entries=await read('data/vocabulary-expansion-50/entries-2026-10-29.json');
+const words=beforeSingleExampleReview(await read('public/data/vocabulary.json')),entries=await read('data/vocabulary-expansion-50/entries-2026-10-29.json');
 const register=await read('data/vocabulary-expansion-50/register-2026-10-29.json'),base=beforeExpansion50Review(words);
 const proposal=await read('data/vocabulary-coverage-2026-10-29/first-batch-proposal.json');
 
@@ -52,7 +52,7 @@ test('core startup, cold ID loads, full study and deferred details all include t
  for(const w of summaries)assert.deepEqual(applyWordDetails(w,await delivery.loadDetails(w)),entries.find(e=>e.id===w.id));
  assert(requests.some(p=>p.includes('/catalog/core-')));assert(!requests.some(p=>p.includes('/ielts/')||p.includes('/toefl/')));
  const full=await delivery.loadFullCatalog();assert.equal(full.length,8749);
- const core=await read('public/data/vocabulary/core.json');assert.equal(core.length,3545);assert.equal(hash(serialize(core)),register.coreAfterSha256);
+ const core=await read('public/data/vocabulary/core.json');assert.equal(core.length,3545);assert.equal(hash(serialize(beforeSingleExampleReview(core))),register.coreAfterSha256);
 });
 
 test('existing personal IDs remain associated with the same words; additions start as remaining new vocabulary',()=>{

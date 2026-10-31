@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-31",
+  "batch": "2026-10-31-single-example",
+  "scope": "User-requested short, sense-labelled examples for single; existing default example fields and all word identities remain compatible.",
+  "baselineSha256": "a64fe9ac333f29f9730f734b3c29d1fe5b57a75f4b4442fb603228df616efcbe",
+  "afterSha256": "0dd67cbe46ea45012baad0ab598c6594bb5073be6b229208754167551befbb08",
+  "sources": [
+    {
+      "id": "cambridge-single",
+      "title": "Cambridge Dictionary · single",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/single",
+      "checkedAt": "2026-10-31",
+      "note": "Confirms the not-married, one-only and UK one-way-ticket uses. Sentences and Chinese translations are independently written."
+    }
+  ],
+  "reviews": [
+    {
+      "id": 5747,
+      "word": "single",
+      "checkedAt": "2026-10-31",
+      "changedFields": [
+        "example",
+        "exampleCn",
+        "examples"
+      ],
+      "audioFields": [
+        "example"
+      ],
+      "reason": "Replace the specialist flower example with three short examples labelled by common sense; keep the first as the default for existing practice modes.",
+      "before": {
+        "id": 5747,
+        "word": "single",
+        "phonetic": "'siŋgl",
+        "pos": "v.",
+        "meaning": "a. 单身的, 单程的, 单一的, 个别的, 孤独的, 专一的\\nn. 一个, 单打, 单程票\\nvt. 选出\\nvi. 击出一垒打\\n[计] 单精度型",
+        "example": "Single chrysanthemums resemble daisies and may have more than one row of petals.",
+        "exampleCn": "单株菊花类似于雏菊，可能有一排以上的花瓣。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ]
+      },
+      "after": {
+        "id": 5747,
+        "word": "single",
+        "phonetic": "'siŋgl",
+        "pos": "v.",
+        "meaning": "a. 单身的, 单程的, 单一的, 个别的, 孤独的, 专一的\\nn. 一个, 单打, 单程票\\nvt. 选出\\nvi. 击出一垒打\\n[计] 单精度型",
+        "example": "She is single.",
+        "exampleCn": "她是单身。",
+        "category": "daily",
+        "categories": [
+          "daily"
+        ],
+        "examples": [
+          {
+            "sense": "单身的",
+            "en": "She is single.",
+            "zh": "她是单身。"
+          },
+          {
+            "sense": "单个的；仅一个",
+            "en": "I have a single question.",
+            "zh": "我只有一个问题。"
+          },
+          {
+            "sense": "单程的（英式用法）",
+            "en": "I need a single ticket.",
+            "zh": "我需要一张单程票。"
+          }
+        ]
+      }
+    }
+  ]
+}
