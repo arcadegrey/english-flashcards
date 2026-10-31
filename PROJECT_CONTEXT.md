@@ -15,6 +15,13 @@ This file is intentionally short for Codex startup context. Detailed data/audio/
 - On 2026-10-31, local checks passed: 404 tests, lint, production-R2 build/PWA, 6 timezone checks, Worker dry-run and 52 browser assertions (15 reading + 23 dictation/PWA + 14 real-R2/recording-only checks). Generated tracked files remain unchanged. Production browser reads confirmed HTML, `/sw.js` (200) and anonymous `/api/exam-attempts` (401); other resource reads timed out. This is partial delivery evidence, not full live UI acceptance.
 - Real-account/classroom, multi-device, old-PWA upgrade, full production resource delivery, iOS/Safari and independent pronunciation acceptance remain open. Local PWA offline checks do not close old production-client upgrade acceptance. Evidence: [docs/p1-release-verification-2026-10-31.md](docs/p1-release-verification-2026-10-31.md); current boundaries: [docs/release-status.md](docs/release-status.md).
 
+## Latest P1 acceptance (2026-10-31)
+
+- Real deployed Worker origin (`https://english-flashcards.arcadeshan-28c.workers.dev/`) passed 45 browser assertions: reading 153/45 lookup, original questions/fruit, recorded dictation playback/failure recovery, guest grading/history, and actual production-origin PWA offline/reconnect. No production resource/API fixtures, authenticated accounts or cloud writes were used.
+- A clean old client reconstructed from deployed `5de1c1f` source passed 23 assertions for actual SW upgrade to the current build, unchanged old word/history/draft records, the 44→45 reading correction, offline dictation/reading save and reconnection. This is a historical-source reconstruction, not an old production installation on a user's device.
+- Custom-domain acceptance remains open: `www.englishflashcards.cn` loaded home and 26 article rows after native retries, but article/reading-vocabulary requests timed out and the reading session did not complete; an HTTP/1.1 cross-check also failed to render promptly. Worker-origin success does not close this domain-specific delivery check. Real old installations, iOS/Safari and authenticated offline cloud sync remain separate P1 items.
+- Evidence and scope: [docs/p1-online-pwa-acceptance-2026-10-31.md](docs/p1-online-pwa-acceptance-2026-10-31.md). These 68 assertions supplement earlier checks; no business code, schema, storage or audio content changed.
+
 ## Commands
 
 - Frontend dev: `npm run dev`
@@ -225,7 +232,7 @@ P2 adds personal test results (four modes, local drafts, account-scoped history 
 
 Use `docs/release-status.md` for release evidence and `docs/open-items-review-2026-10-29.md` for the bounded backlog; the previously referenced `plan.md` is absent from this checkout.
 
-1. Reading vocabulary independence and sentence dictation are released together in `b8075a7` (verified Actions #152). Complete full production resource/UI acceptance and old-PWA upgrade checks; see `docs/p1-release-verification-2026-10-31.md`.
+1. Reading vocabulary independence and sentence dictation are released together. Worker-origin functionality/offline recovery (45 assertions) and reconstructed historical PWA upgrades (23) pass; complete custom-domain resource/UI checks and real old-installation upgrades. See `docs/p1-online-pwa-acceptance-2026-10-31.md`.
 2. Complete real-account, classroom, multi-device, offline-recovery and iOS/Safari acceptance.
 3. Consolidate remaining language-review candidates by stable ID and issue type; independently listen to priority audio. The registered 303 teaching issues, original 111 base candidates and former 38-item sense/register queue are closed within their documented scope.
 4. Align IELTS selector visuals with shared components and review the old vocabulary maintenance generator before reusing it.
