@@ -77,6 +77,9 @@ export async function buildVocabularyDelivery() {
     extended: await writeHashed('catalog', 'extended', extended.map(summarizeVocabularyWord)),
     lists: {},
   };
+  // On-demand code fallback for a failed/stalled public core JSON request.
+  // Same summaries, never examples/full vocabulary in the eager startup graph.
+  await writeIfChanged('src/data/coreVocabularyCatalog.json', core.map(summarizeVocabularyWord));
   for (const shard of shards) {
     catalog.lists[shard.path] = await writeHashed('catalog', shard.path.replace('/data/vocabulary/', '').replace(/\.json$/, '').replaceAll('/', '-'), shard.words.map(summarizeVocabularyWord));
   }
@@ -106,7 +109,7 @@ export async function buildVocabularyDelivery() {
   await writeIfChanged('src/data/vocabularyDetailsIndex.json', details);
   const idRanges = toIdRanges(vocabulary);
   await writeIfChanged('src/data/vocabularyStartup.json', {
-    total: index.total, counts, core: index.core, coreCatalog: catalog.core,
+    total: index.total, counts, core: index.core, coreCatalog: catalog.core, coreIdRanges: toIdRanges(core),
     extended: index.extended, catalog: { extended: catalog.extended }, idRanges,
   });
   for (const [directory, files] of Object.entries(generated)) {
