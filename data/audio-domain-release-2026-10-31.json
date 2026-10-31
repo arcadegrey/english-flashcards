@@ -50,5 +50,23 @@
     "oldDomainRequests": 0,
     "unhandledErrors": 0
   },
-  "acceptanceBoundary": "Browser checks use an isolated local production build and the existing local proxy for genuine public MP3 requests. Not mainland direct-network latency or human pronunciation certification."
+  "acceptanceBoundary": "Browser checks use an isolated local production build and the existing local proxy for genuine public MP3 requests. Not mainland direct-network latency or human pronunciation certification.",
+  "applicationDeployment": {
+    "commit": "75c0299e07ba9061fdc9ee22078b45222a89da55",
+    "workflowRun": 160,
+    "runId": 41182730589,
+    "url": "https://github.com/arcadegrey/english-flashcards/actions/runs/41182730589",
+    "conclusion": "success",
+    "completedAt": "2026-10-31T08:02:09Z"
+  },
+  "liveProductionBrowser": {
+    "origin": "https://www.englishflashcards.cn",
+    "assertions": 19,
+    "nativeCompletedRecordings": 5,
+    "oldDomainRequests": 0,
+    "productionApiWrites": 0,
+    "unhandledErrors": 0,
+    "usesExistingLocalProxy": true,
+    "mainlandDirectLatencyVerified": false
+  }
 }
