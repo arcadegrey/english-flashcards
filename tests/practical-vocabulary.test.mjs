@@ -46,7 +46,7 @@ test('new words have scoped notes and four-voice versioned paths; unrelated and 
     for (const voice of ['af_bella', 'am_michael', 'bf_emma', 'bm_george']) {
       for (const field of ['word', 'example']) {
         const url = correctedVocabularyAudioUrl(word, field, voice);
-        assert.equal(new URL(url).origin, 'https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev');
+        assert.equal(new URL(url).origin, 'https://audio.englishflashcards.cn');
         assert(new URL(url).pathname.startsWith(`/audio-updates/2026-10-25/${field}/${voice}/${word.id}-`));
         assert.equal(correctedVocabularyAudioUrl({ ...word, [field]: 'different historical text' }, field, voice), null);
       }

@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-31",
+  "bucket": "english-flashcards-audio",
+  "domain": "audio.englishflashcards.cn",
+  "enabled": true,
+  "ownershipStatus": "active",
+  "sslStatus": "active",
+  "minimumTlsVersion": "1.2",
+  "oldPublicDomainRetained": true,
+  "corsChanged": false,
+  "zoneCacheRulesChanged": false,
+  "recordingObjectsUploaded": 0,
+  "manifestMetadataCorrection": {
+    "path": "/audio-updates/2026-10-29-expansion-50/manifest.json",
+    "contentUnchanged": true,
+    "sha256": "56a9f37e6fc78e668058196619b2fdb0cfb4a3732e1386d361582f5e63506dc1",
+    "previousCacheControl": null,
+    "cacheControl": "public, max-age=300"
+  },
+  "publicVerification": {
+    "checkedAt": "2026-10-31T07:55:44.887Z",
+    "manifests": 11,
+    "sampledMp3s": 84,
+    "matchingFiles": 95,
+    "failures": 0,
+    "protocolChecks": [
+      {
+        "path": "/audio/words/af_bella/1124.mp3",
+        "repeatedGet": "HIT",
+        "rangeStatus": 206,
+        "conditionalStatus": 304
+      },
+      {
+        "path": "/audio-updates/2026-10-24/word/af_bella/1234-9d08a0c22d5c.mp3",
+        "repeatedGet": "HIT",
+        "rangeStatus": 206,
+        "conditionalStatus": 304
+      }
+    ]
+  },
+  "localProductionBuildBrowser": {
+    "assertions": 41,
+    "completedNativeRecordings": 12,
+    "voices": [
+      "af_bella",
+      "am_michael",
+      "bf_emma",
+      "bm_george"
+    ],
+    "oldDomainRequests": 0,
+    "unhandledErrors": 0
+  },
+  "acceptanceBoundary": "Browser checks use an isolated local production build and the existing local proxy for genuine public MP3 requests. Not mainland direct-network latency or human pronunciation certification."
+}

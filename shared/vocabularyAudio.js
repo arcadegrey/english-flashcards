@@ -13,7 +13,7 @@ import { SHORT_EXAMPLE_VOCABULARY_AUDIO } from './shortExampleVocabularyAudio.js
 
 const voices = new Set(['af_bella', 'am_michael', 'bf_emma', 'bm_george']);
 export const AUDIO_UPDATES_BASE_URL = (import.meta.env?.VITE_AUDIO_UPDATES_BASE_URL
-  || 'https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates').replace(/\/+$/, '');
+  || 'https://audio.englishflashcards.cn/audio-updates').replace(/\/+$/, '');
 
 export function correctedVocabularyAudioUrl(word, field, voice) {
   if (!word || !['word', 'example'].includes(field) || !voices.has(voice)) return null;

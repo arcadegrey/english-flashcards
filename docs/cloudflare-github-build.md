@@ -1,5 +1,7 @@
 # Cloudflare Worker（Static Assets + API）GitHub Actions 部署
 
+> 2026-10-31 音频正式域名：生产构建改用 `audio.englishflashcards.cn`，复用原桶和全部录音路径，MP3 已实测边缘 HIT。旧 r2.dev 继续保留。验证、清单短缓存修正和回滚见[交接](audio-custom-domain-2026-10-31.md)。
+
 本项目使用 `wrangler deploy` 同时部署：
 
 - 前端静态资源（`dist/`）
@@ -29,9 +31,9 @@
 
 公开构建变量：
 
-- `VITE_WORD_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/words`
-- `VITE_EXAMPLE_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio/examples`
-- `VITE_AUDIO_UPDATES_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/audio-updates`
+- `VITE_WORD_AUDIO_BASE_URL=https://audio.englishflashcards.cn/audio/words`
+- `VITE_EXAMPLE_AUDIO_BASE_URL=https://audio.englishflashcards.cn/audio/examples`
+- `VITE_AUDIO_UPDATES_BASE_URL=https://audio.englishflashcards.cn/audio-updates`
 
 ## 音频先发布到R2
 

@@ -1,5 +1,7 @@
 # Project Reference
 
+Current audio delivery (2026-10-31): production word/example/versioned recordings use `https://audio.englishflashcards.cn` with their existing paths. The original R2 bucket and old public endpoint are retained. See `audio-custom-domain-2026-10-31.md`; the dated legacy values below are historical.
+
 Current expansion (2026-10-29): 50 new units under IDs 9027–9076 bring active/core/daily totals to 8749/3545/2097; old entries and personal records are preserved. Four-voice word/example audio (400 files) is published and verified on R2. Current startup counts take precedence over stale manifest totals; publish frontend and Worker assignment catalog together, no migration. See `vocabulary-expansion-50-2026-10-29.md`. Earlier snapshots below retain their dated historical counts.
 
 Daily plan loop (2026-10-26): task order/eligibility, cold-catalog review restoration and a Beijing tomorrow preview are implemented. Scoped daily exam counters use optional `studyHistory[].examByCategory`, carry known legacy local totals without adding answers, retain max-count merging, and survive old-client exact-version saves. No new schema; publish Worker and frontend together. Checks and limits: `daily-plan-loop-2026-10-26.md`.

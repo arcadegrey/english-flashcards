@@ -27,6 +27,10 @@ This file is intentionally short for Codex startup context. Detailed data/audio/
 
 The user's same-Wi-Fi phone/Windows failure was at core preparation, not an optional exam manifest gate. Startup retains the original validated cache/JSON route and adds a shared, lazy generated core-summary code fallback after failure or 2 seconds. Both paths require exact complete 3545-core membership; full vocabulary, examples and account state stay separate. A fallback cannot promise recovery if both delivery paths fail on the direct network. 412 tests, lint/build/PWA, timezone 6, Worker dry-run and 39 local production-build browser assertions passed. The PWA adds ~159 KiB gzip, 105 entries / 2879.31 KiB uncompressed. Handoff: [docs/core-vocabulary-fallback-2026-10-31.md](docs/core-vocabulary-fallback-2026-10-31.md). Deployed as `e84e27a` via successful [Actions #157](https://github.com/arcadegrey/english-flashcards/actions/runs/41176811214) at 2026-10-31 14:32:44 Asia/Shanghai; 10 additional proxy-assisted production recovery assertions passed. Subsequent user direct retests report fast entry on phone/Android and Windows Chrome/Edge private windows; broader networks, old installations and authenticated workflows remain separate acceptance items.
 
+## Audio custom-domain delivery (2026-10-31)
+
+Production word/example/versioned audio is prepared to use `https://audio.englishflashcards.cn` on the existing R2 bucket, with TLS 1.2+, original paths and old r2.dev access retained. No MP3 upload or data migration. 11 manifests/84 representative MP3s hash-match; actual edge HIT, CORS, Range 206 and conditional 304 pass. One existing manifest gained a missing 300-second Cache-Control with identical bytes. Local production-build native playback passes 41 assertions/12 recordings across all four voices; 412 tests and existing checks pass. These are proxy-assisted checks, not mainland latency certification. Handoff: [docs/audio-custom-domain-2026-10-31.md](docs/audio-custom-domain-2026-10-31.md).
+
 ## Commands
 
 - Frontend dev: `npm run dev`
