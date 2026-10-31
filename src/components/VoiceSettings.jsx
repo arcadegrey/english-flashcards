@@ -1,8 +1,9 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { LoadingAnimation } from './ui/LoadingState';
 import { createPortal } from 'react-dom';
 import {
-  speakWord,
+  speakStaticKokoroWordAudio,
+  prepareWordAudio,
   setTtsProvider as setGlobalProvider,
   KOKORO_WORD_AUDIO_VOICES,
   stopSpeak,
@@ -16,6 +17,7 @@ const KOKORO_VOICE_DETAILS = {
   bf_emma: '英音女声，发音圆润，适合英式口音练习',
   bm_george: '英音男声，清晰稳重，适合例句跟读',
 };
+const PREVIEW_WORD = { id: 1, word: 'abandon' };
 
 const getVoiceLabelParts = (label = '') => {
   const [name, description] = String(label).split(' · ');
@@ -27,34 +29,43 @@ const getVoiceLabelParts = (label = '') => {
 
 function VoiceSettings({ onClose }) {
   const [isPlaying, setIsPlaying] = useState(null);
-  const [kokoroVoice, setKokoroVoiceState] = useState(storage.getKokoroVoice());
-  const [kokoroSpeed, setKokoroSpeedState] = useState(storage.getKokoroSpeed());
+  const [kokoroVoice, setKokoroVoiceState] = useState(() => storage.getKokoroVoice());
+  const [kokoroSpeed, setKokoroSpeedState] = useState(() => storage.getKokoroSpeed());
   const [kokoroHint, setKokoroHint] = useState('');
+  const previewRequest = useRef(0);
 
   useEffect(() => {
-    storage.setTtsProvider('kokoro');
+    const request = previewRequest;
     setGlobalProvider('kokoro');
-    return stopSpeak;
+    return () => { request.current++; stopSpeak(); };
   }, []);
 
-  const handleKokoroVoiceChange = (voiceId) => {
+  useEffect(() => { void prepareWordAudio(PREVIEW_WORD); }, [kokoroVoice]);
+
+  const cancelPreview = () => {
+    previewRequest.current++;
     stopSpeak();
+    setIsPlaying(null);
+    setKokoroHint('');
+  };
+  const handleKokoroVoiceChange = (voiceId) => {
+    cancelPreview();
     setKokoroVoiceState(voiceId);
     storage.setKokoroVoice(voiceId);
   };
 
   const handleKokoroPreview = async () => {
+    const request = ++previewRequest.current;
     setIsPlaying('kokoro');
     setKokoroHint('');
-    storage.setTtsProvider('kokoro');
     setGlobalProvider('kokoro');
 
     try {
-      await speakWord({ id: 1, word: 'abandon' });
+      await speakStaticKokoroWordAudio(PREVIEW_WORD);
     } catch (error) {
-      setKokoroHint(`Kokoro 试听失败：${error?.message || '静态音频暂不可用'}`);
+      if (request === previewRequest.current) setKokoroHint(`试听失败：${error?.message || '音频暂不可用，请重试'}`);
     } finally {
-      setIsPlaying(null);
+      if (request === previewRequest.current) setIsPlaying(null);
     }
   };
 
@@ -96,7 +107,7 @@ function VoiceSettings({ onClose }) {
                 step="0.05"
                 value={kokoroSpeed}
                 onChange={(event) => {
-                  stopSpeak();
+                  cancelPreview();
                   const value = Number(event.target.value);
                   setKokoroSpeedState(value);
                   storage.setKokoroSpeed(value);
@@ -122,6 +133,7 @@ function VoiceSettings({ onClose }) {
                     key={voice.id}
                     type="button"
                     className={`voice-settings-voice-card ${kokoroVoice === voice.id ? 'is-selected' : ''}`}
+                    aria-pressed={kokoroVoice === voice.id}
                     onClick={() => handleKokoroVoiceChange(voice.id)}
                   >
                     <span className="voice-settings-voice-name">{labelParts.name}</span>

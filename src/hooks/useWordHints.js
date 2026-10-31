@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react';
 import manifest from '../data/wordHintsManifest.json';
 import { createWordHintLoader } from '../data/wordHintCache.js';
 import { getEntryWordHints } from '../utils/wordHintPresentation.js';
+import { loadWordHintFallback } from '../data/wordHintFallback.js';
 
-const load = createWordHintLoader({ manifest });
+const load = createWordHintLoader({ manifest, loadFallback: loadWordHintFallback });
 export function useWordHints(word, { enabled = true } = {}) {
   const [state, setState] = useState(null);
   const [attempt, setAttempt] = useState(0);

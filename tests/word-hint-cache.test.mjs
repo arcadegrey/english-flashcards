@@ -5,6 +5,7 @@ import { createHash } from 'node:crypto';
 import { createWordHintLoader } from '../src/data/wordHintCache.js';
 import { getWordHints, getHintExampleParts } from '../src/utils/wordHints.js';
 import { RETIRED_VOCABULARY } from '../shared/retiredVocabulary.js';
+import { wordHintFallbacks } from '../scripts/word-hint-fallbacks.mjs';
 
 const read = async path => JSON.parse(await readFile(new URL(path, import.meta.url), 'utf8'));
 const manifest = await read('../src/data/wordHintsManifest.json');
@@ -77,4 +78,65 @@ test('hung loads time out and an unknown word does not trigger a content request
   const load = createWordHintLoader({ manifest: tinyManifest, timeoutMs: 15, cacheStorage: null, fetchImpl: () => new Promise(() => {}) });
   assert.equal(await load({ id: 'custom', word: 'hello' }), null);
   await assert.rejects(load({ id: 1, word: 'hello' }), /超时/);
+});
+
+test('hung cache open, read or write cannot block valid online hints or falsely claim offline readiness', async () => {
+  const hang = () => new Promise(() => {});
+  for (const cacheStorage of [{ open: hang }, { open: async () => ({ match: hang, put: hang }) },
+    { open: async () => ({ match: async () => null, put: hang }) }]) {
+    const load = createWordHintLoader({ manifest: tinyManifest, cacheStorage, cacheTimeoutMs: 5,
+      fetchImpl: async () => Response.json(batch) });
+    const result = await load({ id: 1, word: 'hello' });
+    assert.equal(result.hints[0].text, 'hello'); assert.equal(result.cached, false);
+  }
+});
+
+test('a stalled JSON request recovers through a shared validated fallback and saves the same offline batch', async () => {
+  const cacheStorage = fakeCache(); let calls = 0, signal;
+  const load = createWordHintLoader({ manifest: tinyManifest, cacheStorage, fallbackDelayMs: 5,
+    fetchImpl: async (path, options) => { signal = options.signal; return new Promise(() => {}); },
+    loadFallback: async path => { calls++; assert.equal(path, tinyManifest.batches[0]); return batch; } });
+  const word = { id: 1, word: 'hello' };
+  const [first, second] = await Promise.all([load(word), load(word)]);
+  assert.deepEqual(first, second); assert.equal(calls, 1); assert.equal(signal.aborted, true);
+  assert.equal(first.cached, true);
+  const offline = createWordHintLoader({ manifest: tinyManifest, cacheStorage,
+    fetchImpl: () => assert.fail('must use offline hints'), loadFallback: () => assert.fail('no fallback request') });
+  assert.deepEqual(await offline(word), first);
+});
+
+test('fast primary avoids the fallback, and rejected primary starts it without waiting for the delay', async () => {
+  const fast = createWordHintLoader({ manifest: tinyManifest, cacheStorage: null, fallbackDelayMs: 1,
+    fetchImpl: async () => Response.json(batch), loadFallback: () => assert.fail('no duplicate download') });
+  await fast({ id: 1, word: 'hello' });
+  await new Promise(resolve => setTimeout(resolve, 5));
+  const recover = createWordHintLoader({ manifest: tinyManifest, cacheStorage: null, fallbackDelayMs: 60000,
+    fetchImpl: async () => { throw new Error('blocked JSON'); }, loadFallback: async () => batch });
+  assert.equal((await recover({ id: 1, word: 'hello' })).hints[0].text, 'hello');
+});
+
+test('invalid fallbacks cannot poison hints; both failures and both stalled paths allow retry', async () => {
+  let attempt = 0;
+  const load = createWordHintLoader({ manifest: tinyManifest, cacheStorage: null,
+    fetchImpl: async () => { throw new Error('blocked JSON'); },
+    loadFallback: async () => ++attempt === 1 ? { entries: {}, sources: {} } : batch });
+  await assert.rejects(load({ id: 1, word: 'hello' }), /blocked JSON/);
+  assert.equal((await load({ id: 1, word: 'hello' })).hints[0].text, 'hello');
+  const stalled = createWordHintLoader({ manifest: tinyManifest, cacheStorage: null, timeoutMs: 10, fallbackDelayMs: 1,
+    fetchImpl: () => new Promise(() => {}), loadFallback: () => new Promise(() => {}) });
+  await assert.rejects(stalled({ id: 1, word: 'hello' }), /超时/);
+  await assert.rejects(stalled({ id: 1, word: 'hello' }), /超时/);
+});
+
+test('published fallback modules retain all reviewed JSON exactly, including retired words and sources', async () => {
+  const plugin = wordHintFallbacks(), emitted = [];
+  plugin.configResolved({ command: 'build' });
+  await plugin.buildStart.call({ emitFile: asset => emitted.push(asset) });
+  assert.equal(emitted.length, Object.keys(manifest.batches).length);
+  for (const path of Object.values(manifest.batches)) {
+    const module = emitted.find(asset => asset.fileName === path.replace('/data/word-hints/', 'assets/word-hints/').replace(/\.json$/, '.js'));
+    assert(module);
+    assert.deepEqual((await import(`data:text/javascript;base64,${Buffer.from(module.source).toString('base64')}`)).default,
+      await read(`../public${path}`));
+  }
 });

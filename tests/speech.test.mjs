@@ -4,24 +4,28 @@ import { createSpeechService } from '../src/utils/speechEngine.js';
 
 const tick = () => new Promise(resolve => setImmediate(resolve));
 function harness({ provider = 'kokoro', globalRate = 1, speed = 1, staticFails = false, autoEnd = true,
-  browser = true, emptyVoices = false, correctedAudioUrl, endpoint = '' } = {}) {
-  const played = [], requests = [], utterances = [];
+  browser = true, emptyVoices = false, correctedAudioUrl, endpoint = '', stalledAudio = false } = {}) {
+  const played = [], requests = [], utterances = [], created = [];
+  let voice = 'af_bella', browserCancels = 0;
   const events = new EventTarget();
   let voices = emptyVoices ? [] : [{ name: 'Saved Voice', lang: 'en-GB' }];
   const storage = {
     getTtsProvider: () => provider, setTtsProvider: value => { provider = value; },
     getSpeechRate: () => globalRate, setSpeechRate: value => { globalRate = value; },
-    getKokoroSpeed: () => speed, getKokoroVoice: () => 'af_bella',
+    getKokoroSpeed: () => speed, getKokoroVoice: () => voice,
     getKokoroEndpoint: () => endpoint, getSelectedVoice: () => 'Saved Voice', setSelectedVoice() {},
   };
   const runtime = {
     Audio: class {
+      constructor() { created.push(this); }
       defaultPlaybackRate = 1;
-      set src(value) { this.source = value; this.playbackRate = this.defaultPlaybackRate; }
+      set src(value) { this.source = value; this.sourceChanges = (this.sourceChanges || 0) + 1; this.playbackRate = this.defaultPlaybackRate; }
       get src() { return this.source; }
       pause() { this.paused = true; }
+      load() { this.loads = (this.loads || 0) + 1; }
       play() {
         played.push(this);
+        if (stalledAudio) return new Promise(() => {});
         if (staticFails) return Promise.reject(new Error('recording unavailable'));
         if (autoEnd) queueMicrotask(() => this.onended?.());
         return Promise.resolve();
@@ -30,7 +34,7 @@ function harness({ provider = 'kokoro', globalRate = 1, speed = 1, staticFails =
     SpeechSynthesisUtterance: class { constructor(text) { this.text = text; } },
     fetch: (...args) => { requests.push(args); throw new Error('No live TTS request is allowed'); },
     ...(browser ? { speechSynthesis: {
-      getVoices: () => voices, cancel() {},
+      getVoices: () => voices, cancel() { browserCancels++; },
       addEventListener: events.addEventListener.bind(events), removeEventListener: events.removeEventListener.bind(events),
       speak(utterance) { utterances.push(utterance); if (autoEnd) queueMicrotask(() => { utterance.onstart?.(); utterance.onend?.(); }); },
     } } : {}),
@@ -38,7 +42,8 @@ function harness({ provider = 'kokoro', globalRate = 1, speed = 1, staticFails =
   const service = createSpeechService({ storage, runtime,
     env: { VITE_KOKORO_TTS_URL: 'https://retired-service.invalid/v1/audio/speech' },
     correctedAudioUrl: correctedAudioUrl || ((word, field) => `/versioned/${field}/${word.id}.mp3`) });
-  return { ...service, played, requests, utterances,
+  return { ...service, played, requests, utterances, created,
+    setKokoroVoice(value) { voice = value; }, get browserCancels() { return browserCancels; },
     loadVoices() { voices = [{ name: 'Saved Voice', lang: 'en-GB' }]; events.dispatchEvent(new Event('voiceschanged')); } };
 }
 const word = { id: 1, word: 'abandon', example: 'Do not abandon the plan.' };
@@ -223,4 +228,62 @@ test('browser start has a bounded wait; an already started sentence is not cut o
   t.mock.timers.tick(30000);
   assert.equal(typeof h.utterances[1].onend, 'function');
   h.utterances[1].onend(); await playing;
+});
+
+test('stalled recordings release playback and remain retryable without synthesizing recording-only audio', async t => {
+  t.mock.timers.enable({ apis: ['setTimeout'] });
+  const h = harness({ stalledAudio: true });
+  const pending = h.speakStaticKokoroWordAudio(word);
+  const failed = assert.rejects(pending, /加载超时/);
+  t.mock.timers.tick(6001); await failed;
+  assert.equal(h.played[0].paused, true);
+  assert.equal(h.played[0].onplaying, null);
+  assert.equal(h.utterances.length, 0);
+  const retry = h.speakStaticKokoroWordAudio(word);
+  assert.equal(h.played.length, 2);
+  h.stopSpeak(); assert.deepEqual(await retry, { cancelled: true });
+});
+
+test('mapping timeout uses the normal browser fallback but recording-only fails; late mappings never play', async t => {
+  t.mock.timers.enable({ apis: ['setTimeout'] });
+  let release;
+  const h = harness({ correctedAudioUrl: () => new Promise(resolve => { release = resolve; }) });
+  const pending = h.speakWord(word);
+  t.mock.timers.tick(6001); await pending;
+  assert.equal(h.utterances[0].text, word.word);
+  release('/late.mp3'); await tick(); assert.equal(h.played.length, 0);
+  const strict = h.speakStaticKokoroWordAudio(word), failed = assert.rejects(strict, /准备超时/);
+  t.mock.timers.tick(6001); await failed;
+  assert.equal(h.utterances.length, 1);
+});
+
+test('warming a word never plays, reuses its source, and releases the previous voice preload', async () => {
+  const h = harness({ correctedAudioUrl: (word, field, voice) => `/${voice}/${field}/${word.id}.mp3` });
+  await h.prepareWordAudio(word);
+  assert.equal(h.played.length, 0); assert.equal(h.created[0].loads, 1);
+  await h.speakWord(word);
+  assert.strictEqual(h.played[0], h.created[0]); assert.equal(h.created[0].sourceChanges, 1);
+  await h.prepareWordAudio(word);
+  h.setKokoroVoice('bf_emma'); await h.prepareWordAudio(word);
+  assert.equal(h.created[1].paused, true);
+  await h.speakWord(word);
+  assert.match(h.played.at(-1).src, /bf_emma/);
+});
+
+test('static speech and idle menu/rate changes do not cancel the system speech synthesizer', async () => {
+  const h = harness(); h.setTtsProvider('kokoro'); h.setSpeechRate(1);
+  await h.speakWord(word); h.stopSpeak();
+  assert.equal(h.browserCancels, 0);
+  const live = harness({ autoEnd: false });
+  const pending = live.speak('owned sentence'); await tick(); live.stopSpeak(); await pending;
+  assert.equal(live.browserCancels, 1);
+});
+
+test('a long playing recording is allowed to finish, but a stalled buffer has a bounded wait', async t => {
+  t.mock.timers.enable({ apis: ['setTimeout'] });
+  const h = harness({ autoEnd: false });
+  const pending = h.speakStaticKokoroWordAudio(word); await tick();
+  t.mock.timers.tick(30000); assert.equal(typeof h.played[0].onended, 'function');
+  h.played[0].onwaiting();
+  const failed = assert.rejects(pending, /加载超时/); t.mock.timers.tick(6001); await failed;
 });

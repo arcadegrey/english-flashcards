@@ -32,12 +32,14 @@ const number = value => Number.isFinite(Number(value)) ? Number(value) : 1;
 const cancelled = () => new DOMException('Speech cancelled', 'AbortError');
 
 // All backends share one cancellable operation and one effective playback rate.
-export function createSpeechService({ storage, correctedAudioUrl = () => '', env = {}, runtime = globalThis }) {
+export function createSpeechService({ storage, correctedAudioUrl = () => '', env = {}, runtime = globalThis, startupTimeoutMs = 6000 }) {
   const synthesis = runtime.speechSynthesis;
   let provider = storage.getTtsProvider();
   let selectedVoice = null;
   let active = null;
   let voicesReady = null;
+  let preparedAudio = null;
+  let preparation = 0;
 
   const getVoices = () => synthesis?.getVoices() || [];
   const bestVoice = () => {
@@ -67,51 +69,101 @@ export function createSpeechService({ storage, correctedAudioUrl = () => '', env
     if (session.signal.aborted || active !== session) throw cancelled();
   };
   const stopSpeak = () => {
+    const browserStarted = active?.browserStarted;
     active?.controller.abort();
     active = null;
-    synthesis?.cancel();
+    if (browserStarted) synthesis?.cancel();
+  };
+  const releaseAudio = audio => {
+    audio.pause();
+    audio.removeAttribute?.('src');
+    audio.load?.();
   };
   const playSource = (src, session, rate, onStart) => {
     assertActive(session);
     return new Promise((resolve, reject) => {
-      const audio = new runtime.Audio();
+      const warmed = preparedAudio?.src === src;
+      const audio = warmed ? preparedAudio.audio : new runtime.Audio();
+      if (preparedAudio?.audio === audio) preparedAudio = null;
       let settled = false;
+      let startTimer;
       const finish = error => {
         if (settled) return;
         settled = true;
         audio.onended = null;
         audio.onerror = null;
+        audio.onplaying = null;
+        audio.onwaiting = null;
+        clearTimeout(startTimer);
         session.signal.removeEventListener('abort', abort);
-        audio.pause();
-        audio.removeAttribute?.('src');
-        audio.load?.();
+        releaseAudio(audio);
         if (error) reject(error); else resolve();
       };
       const abort = () => finish(cancelled());
       session.signal.addEventListener('abort', abort, { once: true });
       audio.onended = () => finish();
       audio.onerror = () => finish(new Error(`音频文件不可播放: ${src}`));
-      audio.src = src;
+      const waitForAudio = () => {
+        clearTimeout(startTimer);
+        startTimer = setTimeout(() => finish(new Error('音频加载超时，请检查网络后重试。')), startupTimeoutMs);
+      };
+      let started = false;
+      const playing = () => {
+        if (settled || active !== session || session.signal.aborted) return;
+        clearTimeout(startTimer);
+        if (!started) { started = true; onStart?.(); }
+      };
+      audio.onplaying = playing;
+      audio.onwaiting = waitForAudio;
+      if (!warmed) audio.src = src;
       // Resource loading can reset playbackRate to defaultPlaybackRate.
       audio.defaultPlaybackRate = rate;
       audio.playbackRate = rate;
-      try { Promise.resolve(audio.play()).then(() => {
-        if (!settled && active === session && !session.signal.aborted) onStart?.();
-      }).catch(finish); } catch (error) { finish(error); }
+      waitForAudio();
+      try { Promise.resolve(audio.play()).then(playing).catch(finish); } catch (error) { finish(error); }
     });
   };
-  const staticSpeech = async (word, field, session, rate, onStart) => {
+  const resolveAudioSource = (word, field, voice) => {
     const id = String(word?.id ?? '').trim();
     if (!id) throw new Error('缺少单词音频 id');
-    const voice = storage.getKokoroVoice();
     if (!KOKORO_WORD_AUDIO_VOICES.some(item => item.id === voice)) throw new Error(`未预生成音色: ${voice}`);
     const base = field === 'word' ? env.VITE_WORD_AUDIO_BASE_URL || '/audio/words' : env.VITE_EXAMPLE_AUDIO_BASE_URL || '/audio/examples';
     const correction = correctedAudioUrl(word, field, voice);
-    const mappedUrl = correction && typeof correction.then === 'function' ? await correction : correction;
-    assertActive(session);
-    const url = mappedUrl
+    const source = mappedUrl => mappedUrl
       || `${base.trim().replace(/\/$/, '')}/${encodeURIComponent(voice)}/${encodeURIComponent(id)}.mp3`;
+    return correction && typeof correction.then === 'function' ? correction.then(source) : source(correction);
+  };
+  const staticSpeech = async (word, field, session, rate, onStart) => {
+    let timer;
+    let abort;
+    let url = resolveAudioSource(word, field, storage.getKokoroVoice());
+    try {
+      if (url && typeof url.then === 'function') url = await Promise.race([url, new Promise((_, reject) => {
+        timer = setTimeout(() => reject(new Error('音频准备超时，请重试。')), startupTimeoutMs);
+        abort = () => reject(cancelled());
+        session.signal.addEventListener('abort', abort, { once: true });
+      })]);
+    } finally {
+      clearTimeout(timer);
+      if (abort) session.signal.removeEventListener('abort', abort);
+    }
+    assertActive(session);
     await playSource(url, session, rate, onStart);
+  };
+  const prepareWordAudio = async word => {
+    const request = ++preparation;
+    try {
+      const src = await resolveAudioSource(word, 'word', storage.getKokoroVoice());
+      if (request !== preparation || preparedAudio?.src === src) return;
+      if (preparedAudio) releaseAudio(preparedAudio.audio);
+      preparedAudio = null;
+      // This only downloads the current word/preview; it never starts playback.
+      const audio = new runtime.Audio();
+      audio.preload = 'auto';
+      audio.src = src;
+      preparedAudio = { src, audio };
+      audio.load?.();
+    } catch { /* A failed warmup must not block the menu or create an unhandled rejection. */ }
   };
   const browserSpeech = async (text, session, options) => {
     if (!synthesis) throw new Error('当前环境不支持浏览器语音合成');
@@ -153,7 +205,7 @@ export function createSpeechService({ storage, correctedAudioUrl = () => '', env
         finish(new Error('浏览器语音暂未启动，请重试。'));
         if (current) synthesis.cancel();
       }, 5000);
-      try { synthesis.speak(utterance); } catch (error) { finish(error); }
+      try { session.browserStarted = true; synthesis.speak(utterance); } catch (error) { finish(error); }
     });
   };
   const run = async (text, options = {}, word, field, staticOnly = false) => {
@@ -202,6 +254,7 @@ export function createSpeechService({ storage, correctedAudioUrl = () => '', env
     speakWord: (word, options) => run(typeof word === 'string' ? word : word?.word, options, word, 'word'),
     speakExample: (word, options) => run(typeof word === 'string' ? word : word?.example, options, word, 'example'),
     speakStaticKokoroWordAudio: (word, options) => run(word?.word, options, word, 'word', true),
+    prepareWordAudio,
     stopSpeak,
     getAvailableVoices: () => getVoices().filter(voice => voice.lang.startsWith('en')),
     setVoice: voice => { stopSpeak(); selectedVoice = voice; storage.setSelectedVoice(voice?.name || ''); },

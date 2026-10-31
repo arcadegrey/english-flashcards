@@ -21,7 +21,7 @@ const speech = createSpeechService({ storage, correctedAudioUrl, env: {
   VITE_EXAMPLE_AUDIO_BASE_URL: import.meta.env?.VITE_EXAMPLE_AUDIO_BASE_URL,
 } });
 export const {
-  speak, speakWord, speakExample, speakStaticKokoroWordAudio, stopSpeak,
+  speak, speakWord, speakExample, speakStaticKokoroWordAudio, prepareWordAudio, stopSpeak,
   getAvailableVoices, setVoice, getCurrentVoice, setTtsProvider, getTtsProvider,
   getSpeechRate, setSpeechRate,
 } = speech;

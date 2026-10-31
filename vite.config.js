@@ -5,6 +5,7 @@ import { cp, mkdir, readdir } from 'node:fs/promises'
 import path from 'node:path'
 import { createHash } from 'node:crypto'
 import { readFileSync, readdirSync } from 'node:fs'
+import { wordHintFallbacks } from './scripts/word-hint-fallbacks.mjs'
 
 // Refresh persistent caches only when vocabulary content changes, not on login
 // or unrelated app deployments. Include shards so direct list edits also invalidate.
@@ -90,6 +91,7 @@ export default defineConfig({
   },
   plugins: [
     react(),
+    wordHintFallbacks(),
     copyPublicAppAssets(),
     VitePWA({
       registerType: 'autoUpdate',
@@ -131,7 +133,7 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,json,ico,txt,woff2,webmanifest}'],
-        globIgnores: ['**/audio/**', '**/audio-updates/**', '**/data/**/*.json', '**/images/**'],
+        globIgnores: ['**/audio/**', '**/audio-updates/**', '**/data/**/*.json', '**/images/**', '**/assets/word-hints/**'],
         runtimeCaching: [
           {
             urlPattern: ({ url }) => url.origin === self.location.origin && url.pathname.startsWith('/images/') && url.pathname.endsWith('.webp'),

@@ -3,7 +3,7 @@ import LoadingState from './components/ui/LoadingState'
 import PageLoadBoundary from './components/PageLoadBoundary.jsx'
 import { useStudyDay } from './hooks/useStudyDay.js'
 import { WordBookmarksContext } from './context/word-bookmarks-context'
-import { useState, useMemo, lazy, Suspense } from 'react'
+import { useState, useMemo, Suspense } from 'react'
 import { ThemeProvider } from './context/ThemeContext'
 import { useTheme } from './context/theme-context'
 import ExamHistoryProvider from './context/ExamHistoryProvider'
@@ -16,7 +16,7 @@ import { useAppNavigationState } from './hooks/app/useAppNavigationState.js'
 import { useStudyNavigation } from './hooks/app/useStudyNavigation.js'
 import AppPages from './components/app/AppPages.jsx'
 
-const VoiceSettings = lazy(() => import('./components/VoiceSettings'))
+import VoiceSettings from './components/VoiceSettings'
 
 function AppContent() {
   const studyDay = useStudyDay()
@@ -134,7 +134,7 @@ function AppContent() {
           </PageLoadBoundary>
         </ExamHistoryProvider>
       </WordBookmarksContext.Provider>
-      {showVoiceSettings && <PageLoadBoundary><Suspense fallback={<LoadingState variant="overlay" title="正在准备语音设置…" />}><VoiceSettings onClose={() => setShowVoiceSettings(false)} /></Suspense></PageLoadBoundary>}
+      {showVoiceSettings && <VoiceSettings onClose={() => setShowVoiceSettings(false)} />}
       <AccountModal
         open={account.showAuthModal}
         onClose={account.closeAuthModal}

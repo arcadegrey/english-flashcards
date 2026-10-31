@@ -5,7 +5,7 @@ import { getWordMeaningLine } from '../utils/wordHintPresentation.js';
 import { useWordHints } from '../hooks/useWordHints.js';
 import { useWordDetails } from '../hooks/useWordDetails.js';
 import { loadWordDetails } from '../data/vocabulary.js';
-import { speakExample, speakWord } from '../utils/speech';
+import { prepareWordAudio, speakExample, speakWord } from '../utils/speech';
 import '../styles/study-word.css';
 
 function WordCard({ word: entry, nextWord, showHint = false }) {
@@ -13,7 +13,8 @@ function WordCard({ word: entry, nextWord, showHint = false }) {
   const bookmarks = useWordBookmarks();
   const [notice, setNotice] = useState(null);
   const isSaved = Boolean(bookmarks?.entries?.[String(word?.id)]?.saved);
-  const { hints, status: hintStatus, loading: hintLoading, error: hintError, retry: retryHints } = useWordHints(word, { enabled: showHint });
+  const { hints, status: hintStatus, loading: hintLoading, error: hintError, retry: retryHints } = useWordHints(word);
+  useEffect(() => { if (word?.id != null) void prepareWordAudio(word); }, [word]);
   useEffect(() => {
     if (word && !exampleLoading && !exampleError && nextWord) void loadWordDetails(nextWord).catch(() => {});
   }, [word, nextWord, exampleLoading, exampleError]);
