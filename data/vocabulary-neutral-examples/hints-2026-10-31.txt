@@ -1,0 +1,167 @@
+52|0|0|The club decided to abolish its old dress rule.|俱乐部决定废除旧的着装规定。
+95|0|1|The family repaired the roof in the storm's aftermath.|风暴过后，这家人修好了屋顶。
+331|0|1|Please pronounce the word 'bullet'.|请读出 bullet 这个词。
+494|0|0|The coach explained how exercise helps combat stress.|教练解释了锻炼如何帮助缓解压力。
+499|0|1|The trainer can command the dog to sit.|训犬师能命令狗坐下。
+551|0|0|The story has an evil dragon.|这个故事里有一条邪恶的龙。
+561|0|1|He reached out to seize the falling cup.|他伸手抓住正在掉落的杯子。
+635|0|1|The cat stayed within its territory.|那只猫待在自己的领地内。
+704|0|0|The ants live in a large colony.|这些蚂蚁生活在一个很大的群体中。
+704|0|1|We watched the colony of bees from a distance.|我们远远地观察那群蜜蜂。
+766|0|1|A small board will govern the reading club.|一个小型理事会将管理读书俱乐部。
+851|0|1|We need to confront the cost of repairs.|我们需要面对维修费用问题。
+897|0|0|The teacher will declare the contest open.|老师将宣布比赛开始。
+939|0|1|The shop faced a staffing crisis.|这家店面临人手不足的危机。
+959|0|0|Ants often invade the kitchen in warm weather.|天气暖和时蚂蚁常侵入厨房。
+984|0|0|Each book club member has one vote.|读书俱乐部的每位成员有一票。
+984|0|1|Our vote chose the next book to read.|我们的投票选出了下一本读物。
+1177|0|1|Visitors waited outside the company's headquarters.|访客们在公司总部外等候。
+1208|0|0|The school may grant permission for the trip.|学校可能批准这次旅行。
+1297|0|0|The instability of the shelf worried us.|架子不稳让我们担心。
+1338|0|0|Club members elect a chair each year.|俱乐部成员每年选一位负责人。
+1338|0|1|The chess club will elect its captain next week.|国际象棋俱乐部下周将选队长。
+1354|0|0|The manager will investigate the missing delivery.|经理将调查丢失的货物。
+1365|0|0|We heard about a legendary musician.|我们听说了一位传奇音乐家。
+1466|1|1|Her stake in the shop increased this year.|她在商店中的股份今年增加了。
+1514|0|0|The club made a commitment to repair the playground.|俱乐部承诺修复游乐场。
+1516|0|1|The club passed a resolution to repair the shelves.|俱乐部通过了修理书架的决议。
+1567|0|0|Her cake showed supreme skill.|她的蛋糕展现了高超的技艺。
+1610|0|1|The dissolution of the partnership took several weeks.|解除合伙关系花了几周时间。
+1664|0|0|Tiny plants can colonize bare stone.|微小的植物能在裸石上定植繁殖。
+1670|0|1|A good review may sway hesitant shoppers.|一篇好评可能影响犹豫的顾客。
+1682|0|0|She used diplomacy to settle the seating dispute.|她用得体的交际技巧解决了座位争执。
+1702|0|1|The opportunist took credit for our work.|那个投机取巧的人把我们的工作说成自己的功劳。
+1721|0|1|Please follow the protocol for cleaning these tools.|请遵守这些工具的清洁规程。
+1780|0|1|The exhibit displays tribal pottery.|展览陈列着部落陶器。
+1841|0|0|The school council discussed new playground equipment.|校务委员会讨论了新的游乐设备。
+1841|0|1|Parents sent ideas to the school council.|家长们向校务委员会提交了想法。
+1870|0|1|The club trains a small sporting elite.|这个俱乐部培养一小批体育精英。
+2005|0|0|The club may impose limits on practice time.|俱乐部可能限制练习时间。
+2126|0|0|The dancer wore a ceremonial costume.|舞者穿着仪式服装。
+2452|0|0|Her reign as club champion ended last year.|她在俱乐部的冠军地位去年结束了。
+2452|0|1|His reign as team captain lasted five years.|他担任队长的时期持续了五年。
+2508|0|0|The play uses satire to mock office routines.|戏剧用讽刺手法调侃办公室惯例。
+2517|0|0|The school will designate a quiet reading room.|学校将指定一间安静的阅览室。
+2530|0|1|The club will mobilize extra helpers for the sale.|俱乐部将为义卖调集更多帮手。
+2591|0|0|The chef can be a tyrant about tidiness.|这位厨师在整洁问题上很专横。
+2591|0|1|Nobody likes a tyrant in a shared kitchen.|没人喜欢在共用厨房里独断专行的人。
+2594|0|0|Moving into her first home was a momentous change.|搬进自己的第一个家对她来说是一个重大变化。
+2620|0|0|She began a new exercise regime.|她开始了一套新的锻炼方案。
+2707|0|0|Find the antecedent of the pronoun in this sentence.|找出这个句子中代词的先行词。
+2733|0|1|The shop may backtrack on its delivery promise.|商店可能收回送货承诺。
+2805|0|1|The story follows a captive bird learning to fly.|故事讲述了一只被圈养的鸟学飞的经历。
+2877|0|0|The student checked the meaning of 'sovereign'.|学生查了 sovereign 的含义。
+2877|0|1|Can you spell 'sovereign' correctly?|你能正确拼写 sovereign 吗？
+2895|0|0|We may defer the picnic until next week.|我们可能把野餐推迟到下周。
+2981|0|0|She escaped the tyranny of a rigid timetable.|她摆脱了死板时间表的束缚。
+2981|0|1|He dislikes the tyranny of the alarm clock.|他不喜欢闹钟对生活的支配。
+2990|0|1|She attended the club meeting as his proxy.|她作为他的代理人参加了俱乐部会议。
+3007|0|1|Months of practice culminate in today's concert.|数月的练习最终迎来今天的音乐会。
+3036|0|0|The club uses a democratic way to choose activities.|俱乐部用大家共同决定的方式选择活动。
+3036|0|1|Our reading group follows a democratic process.|我们的读书小组遵循共同商议的程序。
+3166|0|1|The oppressive heat made walking difficult.|闷热的天气让步行变得困难。
+3308|0|0|The artist will unveil her new painting.|艺术家将揭开她的新画作。
+3484|0|0|Online lessons support the democratization of learning.|在线课程有助于让学习机会普及。
+3484|0|1|The library encourages the democratization of knowledge.|图书馆推动知识向更多人开放。
+3489|0|1|A sudden convulsion shook his arm.|他的手臂突然抽搐了一下。
+4029|0|0|The class examined a philosophical doctrine.|全班研究了一种哲学学说。
+4177|0|0|The student checked the spelling of 'king'.|学生检查了 king 的拼写。
+4177|0|1|Can you pronounce 'king' clearly?|你能清楚地读出 king 吗？
+4178|0|0|Please look up the word 'queen'.|请查一下 queen 这个词。
+4178|0|1|The teacher explained the meaning of 'queen'.|老师解释了 queen 的含义。
+4241|0|1|A sports commentator described the final goal.|一位体育评论员描述了最后那个进球。
+4673|0|1|She entered the photo booth.|她走进照相亭。
+4815|0|0|The motor makes one revolution per second.|这个电动机每秒转一圈。
+4816|0|0|The new printing method was a revolutionary change.|这种新印刷方法是一项革新。
+4820|0|1|She entered the sporting arena with confidence.|她满怀信心地踏入体育领域。
+4822|0|0|The club president welcomed our new members.|俱乐部主席欢迎了新成员。
+4822|0|1|The president of the music club plays the piano.|音乐俱乐部主席会弹钢琴。
+4878|0|0|The club promised to take action on litter.|俱乐部承诺采取行动处理垃圾问题。
+4919|0|0|The club may levy a small service charge.|俱乐部可能收取一笔小额服务费。
+4998|0|1|We plan to charter a small boat.|我们计划租一条小船。
+5003|0|0|The students will enact a scene from the book.|学生们将表演书中的一个场景。
+5003|0|1|They enact a short story on the stage.|他们在舞台上表演一个小故事。
+5090|0|1|The noise felt like an assault on my ears.|噪声像是在攻击我的耳朵。
+5094|0|0|The heavy heat seemed to oppress everyone.|闷热的天气让大家都感到压抑。
+5098|0|0|The children were in revolt over early bedtimes.|孩子们都在反对太早上床睡觉。
+5098|0|1|The whole class was in revolt over extra homework.|全班都反对额外的家庭作业。
+5109|0|1|The kitchen was in turmoil before the party.|聚会前厨房里忙乱不堪。
+5113|0|0|Too much moisture is the enemy of these books.|过多的湿气是这些书的大敌。
+5142|0|0|He refused to surrender his place in the queue.|他不愿让出排队的位置。
+5148|0|1|Our team defeated the visitors by two goals.|我们队以两球优势击败了客队。
+5160|0|0|The veteran baker taught us to make bread.|这位经验丰富的面包师教我们做面包。
+5160|0|1|She is a veteran of many cooking contests.|她是参加过许多烹饪比赛的老手。
+5188|0|1|The new ship completed its maiden voyage.|这艘新船完成了处女航。
+5202|0|0|The letter recalls his old school comrades.|这封信回忆了他的老同学们。
+5205|0|1|The university chancellor welcomed new students.|大学校监欢迎新生。
+5223|0|1|Do not call yourself a coward for feeling afraid.|不要因为害怕就说自己是胆小鬼。
+5284|0|1|The teacher may intervene in the argument.|老师可能会介入这场争执。
+5329|0|0|We salute the volunteers for their hard work.|我们向辛勤工作的志愿者致敬。
+5806|0|1|The children march in time with the drum.|孩子们跟着鼓点齐步走。
+6154|0|0|The ladder rests against the wall.|梯子靠在墙上。
+6165|0|0|The novel begins with the death of an old dog.|小说以一只老狗的去世开篇。
+6412|0|1|Please check the spelling of 'sergeant'.|请检查 sergeant 的拼写。
+6416|0|1|The amendment changes the club's opening time.|这项修改调整了俱乐部的开放时间。
+6459|0|1|The school publicly announced the concert date.|学校公开宣布了音乐会的日期。
+6557|0|0|The dictionary explains the meaning of 'statute'.|词典解释了 statute 的含义。
+6594|0|0|Please pronounce the word 'capitalist'.|请读出 capitalist 这个词。
+6594|0|1|We checked the spelling of 'capitalist'.|我们检查了 capitalist 的拼写。
+6597|0|0|Please look up the meaning of 'jurisdiction'.|请查一下 jurisdiction 的含义。
+6661|0|0|A freshman joined the school art club.|一名新生加入了学校美术社团。
+6669|0|1|A wide stance helps you keep your balance.|双脚分开站有助于保持平衡。
+6671|0|1|The team has a mandate to repair the bridge.|这个团队受命修复桥梁。
+7071|0|0|The club reduced its borrowing this year.|俱乐部今年减少了借款。
+7646|0|0|An observer watched the cooking lesson quietly.|一名旁观者安静地观看烹饪课。
+7893|0|0|We plan to widen the garden path.|我们计划拓宽花园小径。
+7946|0|0|The story describes a wicked dragon.|故事描写了一条邪恶的龙。
+8004|0|0|Thick ice can imprison a small boat.|厚冰能困住一条小船。
+8050|0|0|He seemed indifferent to the weather forecast.|他似乎不关心天气预报。
+8108|0|1|Every mortal needs food and rest.|每个凡人都需要食物和休息。
+8122|0|1|The museum displayed an old telegram about a wedding.|博物馆展示了一封关于婚礼的旧电报。
+8157|0|1|The portrait gives the actor a manly appearance.|肖像画让演员显得有男子气概。
+8195|0|0|The club is funding repairs to the bookshelves.|俱乐部正在资助维修书架。
+8198|0|1|The clubs formed a coalition to clean the park.|这些俱乐部联合起来清扫公园。
+8265|0|0|She gave a diplomatic answer to the complaint.|她对投诉作出了得体的回答。
+8265|0|1|His diplomatic manner helped settle the seating dispute.|他得体的处事方式有助于解决座位争执。
+8279|0|0|Our book club used a ballot to choose a story.|我们的读书俱乐部通过投票选了一篇故事。
+8279|0|1|Please mark your favorite book on the ballot.|请在选票上勾出你最喜欢的书。
+8366|0|0|The winter brought brutal cold.|这个冬天带来了严寒。
+8434|0|0|The notice contains a decree about quiet hours.|告示中有一项关于安静时段的规定。
+8463|0|1|The corrupt file would not open.|损坏的文件无法打开。
+8478|0|0|Please look up the meaning of 'royalty'.|请查一下 royalty 的含义。
+8478|0|1|The student checked the spelling of 'royalty'.|学生检查了 royalty 的拼写。
+8625|0|0|My sister has a veto over the film choice.|姐姐对电影的选择有否决权。
+8636|0|0|Her persistence persuaded the club to repair the path.|她的坚持说服了俱乐部修理小径。
+494|0|1|Good sleep helps combat tiredness.|充足睡眠有助于缓解疲倦。
+860|0|0|The dictionary explains the noun 'union'.|词典解释了 union 这个名词。
+860|0|1|Please check the spelling of 'union'.|请检查 union 的拼写。
+6784|0|0|The student asked about the meaning of 'striker'.|学生询问了 striker 的含义。
+6784|0|1|Can you pronounce the word 'striker'?|你能读出 striker 这个词吗？
+7788|0|0|The children rebel against early bedtimes.|孩子们反对太早上床睡觉。
+8641|0|1|A quick repair can avert a breakdown.|及时维修可以避免故障。
+8681|0|1|The manager explained the proposed layoff.|经理解释了拟议裁员的情况。
+563|0|0|The school issued a statement about the concert.|学校发布了一份关于音乐会的声明。
+1146|0|0|We plan to pave the garden path.|我们计划铺设花园小径。
+1192|0|1|The class discussed a critique of the new novel.|全班讨论了一篇对新小说的评论。
+1386|0|0|The club will finance the new bookshelves.|俱乐部将为新书架提供资金。
+1462|0|0|A tennis rally lasted several minutes.|一次网球连续对打持续了几分钟。
+1526|0|1|Volunteers joined a civic cleanup project.|志愿者们参加了社区清扫活动。
+1530|0|0|The school will initiate a reading project.|学校将发起一个阅读项目。
+1828|0|0|The club may shelve the trip until spring.|俱乐部可能把旅行搁置到春天。
+1854|0|1|The dog showed no aggression toward visitors.|那只狗没有对访客表现出攻击性。
+2022|0|0|The child made a protest about bedtime.|孩子对睡觉时间提出了异议。
+2289|0|1|The club asked an independent person to mediate.|俱乐部请了一位独立人士调解。
+2310|0|1|The backup protects against data corruption.|备份能防止数据损坏造成损失。
+2325|0|1|The club must enforce its own safety rules.|俱乐部必须执行自己的安全规定。
+3021|0|1|The team showed solidarity after the defeat.|球队失败后表现得很团结。
+3046|0|1|The report estimates the prize's monetary value.|报告估算了这个奖的金钱价值。
+3902|0|0|The club approved the controversial seating plan.|俱乐部批准了有争议的座位安排。
+6266|0|0|The club promised stricter enforcement of safety rules.|俱乐部承诺更严格地执行安全规定。
+6284|0|1|The teacher explained the meaning of 'armed'.|老师解释了 armed 的含义。
+6647|0|1|Our club's fiscal year ends in March.|我们俱乐部的财政年度在三月结束。
+8114|0|1|The players objected to an unjust scoring rule.|队员们反对一条不公正的计分规则。
+8433|0|0|The team helped with the formulation of a recipe.|团队帮助拟定了一个食谱。
+1463|0|0|Please look up the meaning of 'conquest'.|请查一下 conquest 的含义。
+1463|0|1|The teacher explained the spelling of 'conquest'.|老师解释了 conquest 的拼写。
+7037|0|0|Please check the spelling of 'brigade'.|请检查 brigade 的拼写。
+7037|0|1|The teacher explained the meaning of 'brigade'.|老师解释了 brigade 的含义。

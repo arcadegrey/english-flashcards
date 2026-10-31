@@ -14,7 +14,7 @@ const inputSha256 = createHash('sha256').update(JSON.stringify(vocabulary,null,2
 const currentSourceSha256 = createHash('sha256').update(raw).digest('hex');
 const repair = JSON.parse(await readFile(new URL('data/vocabulary-short-example-repair/reviews-2026-10-29.json',root),'utf8'));
 assert.equal(inputSha256,repair.baselineSha256,'Do not overwrite the captured short-example baseline.');
-const latestRepair = JSON.parse(await readFile(new URL('data/vocabulary-multi-sense-repair/reviews-2026-10-31.json',root),'utf8'));
+const latestRepair = JSON.parse(await readFile(new URL('data/vocabulary-neutral-examples/reviews-2026-10-31.json',root),'utf8'));
 assert.equal(currentSourceSha256,latestRepair.afterSha256,'Unknown current edits: review before reporting resolutions.');
 const repairById = new Map(repair.reviews.map(review=>[review.id,review]));
 const excludedById = new Map(repair.exclusions.map(review=>[review.id,review]));

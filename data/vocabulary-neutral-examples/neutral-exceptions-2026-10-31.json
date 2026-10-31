@@ -1,0 +1,372 @@
+[
+  {
+    "en": "The dishes are in the kitchen cabinet.",
+    "zh": "盘子在厨房的橱柜里。",
+    "reason": "cabinet refers to furniture, not a government cabinet."
+  },
+  {
+    "en": "The cups are in the cabinet above the sink.",
+    "zh": "杯子在水槽上方的柜子里。",
+    "reason": "cabinet refers to furniture, not a government cabinet."
+  },
+  {
+    "en": "He locked the documents in a metal cabinet.",
+    "zh": "他把文件锁进了一个金属柜。",
+    "reason": "cabinet refers to furniture, not a government cabinet."
+  },
+  {
+    "en": "The ants built a colony.",
+    "zh": "蚂蚁建了一个群体。",
+    "reason": "colony refers to ants or bees, not a political colony."
+  },
+  {
+    "en": "The ants live in a large colony.",
+    "zh": "这些蚂蚁生活在一个很大的群体中。",
+    "reason": "colony refers to ants or bees, not a political colony."
+  },
+  {
+    "en": "We watched the colony of bees from a distance.",
+    "zh": "我们远远地观察那群蜜蜂。",
+    "reason": "colony refers to ants or bees, not a political colony."
+  },
+  {
+    "en": "Some plants can colonize empty land quickly.",
+    "zh": "一些植物能迅速在空地上生长繁殖。",
+    "reason": "colonize describes plants establishing themselves."
+  },
+  {
+    "en": "Tiny plants can colonize bare stone.",
+    "zh": "微小的植物能在裸石上定植繁殖。",
+    "reason": "colonize describes plants establishing themselves."
+  },
+  {
+    "en": "Moss can quickly colonize bare rock.",
+    "zh": "苔藓可以很快在裸岩上形成种群。",
+    "reason": "colonize describes plants establishing themselves."
+  },
+  {
+    "en": "Resolving the complaint required patience and diplomacy.",
+    "zh": "解决这起投诉需要耐心和交际技巧。",
+    "reason": "diplomacy means tact in a seating dispute or complaint."
+  },
+  {
+    "en": "She used diplomacy to settle the seating dispute.",
+    "zh": "她用得体的交际技巧解决了座位争执。",
+    "reason": "diplomacy means tact in a seating dispute or complaint."
+  },
+  {
+    "en": "The discussion required patience and diplomacy.",
+    "zh": "讨论需要耐心和交际技巧。",
+    "reason": "diplomacy means tact in a seating dispute or complaint."
+  },
+  {
+    "en": "Cut a strip of paper about ten centimetres long.",
+    "zh": "剪一条约十厘米长的纸。",
+    "reason": "Reviewed everyday expression; the candidate is a polysemous term or a substring overlap, not a political narrative."
+  },
+  {
+    "en": "A troop of monkeys crossed the path.",
+    "zh": "一群猴子穿过了小径。",
+    "reason": "troop refers to monkeys or a scout camping group."
+  },
+  {
+    "en": "A troop of monkeys crossed the path.",
+    "zh": "一群猴子穿过小径。",
+    "reason": "troop refers to monkeys or a scout camping group."
+  },
+  {
+    "en": "The scout troop camped near the lake.",
+    "zh": "童子军小队在湖边扎营。",
+    "reason": "troop refers to monkeys or a scout camping group."
+  },
+  {
+    "en": "The city is a premier center for medical research.",
+    "zh": "这座城市是重要的医学研究中心。",
+    "reason": "premier means leading or foremost, not a prime minister."
+  },
+  {
+    "en": "The hall became the region's premier music venue.",
+    "zh": "这座大厅成为该地区首屈一指的音乐场所。",
+    "reason": "premier means leading or foremost, not a prime minister."
+  },
+  {
+    "en": "The museum is one of the city's premier attractions.",
+    "zh": "博物馆是这座城市最重要的景点之一。",
+    "reason": "premier means leading or foremost, not a prime minister."
+  },
+  {
+    "en": "She follows a gentle exercise regime.",
+    "zh": "她坚持一套温和的锻炼方案。",
+    "reason": "regime describes an exercise or inspection routine."
+  },
+  {
+    "en": "She began a new exercise regime.",
+    "zh": "她开始了一套新的锻炼方案。",
+    "reason": "regime describes an exercise or inspection routine."
+  },
+  {
+    "en": "The factory introduced a stricter inspection regime.",
+    "zh": "工厂实行了更严格的检查制度。",
+    "reason": "regime describes an exercise or inspection routine."
+  },
+  {
+    "en": "Dust had blocked the vent behind the cabinet.",
+    "zh": "灰尘堵住了柜子后面的通风口。",
+    "reason": "Reviewed everyday expression; the candidate is a polysemous term or a substring overlap, not a political narrative."
+  },
+  {
+    "en": "There was little overt opposition at the meeting.",
+    "zh": "会上几乎没有公开反对。",
+    "reason": "Ordinary disagreement at a meeting."
+  },
+  {
+    "en": "She escaped the tyranny of a rigid timetable.",
+    "zh": "她摆脱了死板时间表的束缚。",
+    "reason": "tyranny is a metaphor for an alarm clock or rigid timetable."
+  },
+  {
+    "en": "He dislikes the tyranny of the alarm clock.",
+    "zh": "他不喜欢闹钟对生活的支配。",
+    "reason": "tyranny is a metaphor for an alarm clock or rigid timetable."
+  },
+  {
+    "en": "The club uses a democratic way to choose activities.",
+    "zh": "俱乐部用大家共同决定的方式选择活动。",
+    "reason": "A hobby club jointly chooses activities; no political actors or institutions."
+  },
+  {
+    "en": "Our reading group follows a democratic process.",
+    "zh": "我们的读书小组遵循共同商议的程序。",
+    "reason": "A hobby club jointly chooses activities; no political actors or institutions."
+  },
+  {
+    "en": "I presume the meeting will start on time.",
+    "zh": "我想会议会准时开始。",
+    "reason": "Reviewed everyday expression; the candidate is a polysemous term or a substring overlap, not a political narrative."
+  },
+  {
+    "en": "The colony belongs to a stingless species.",
+    "zh": "这个蜂群属于一种无刺蜂。",
+    "reason": "colony is a bee group."
+  },
+  {
+    "en": "The course discusses the democratization of online learning.",
+    "zh": "这门课探讨在线学习如何变得人人可及。",
+    "reason": "The educational sense describes access to knowledge."
+  },
+  {
+    "en": "Online lessons support the democratization of learning.",
+    "zh": "在线课程有助于让学习机会普及。",
+    "reason": "The educational sense describes access to knowledge."
+  },
+  {
+    "en": "The library encourages the democratization of knowledge.",
+    "zh": "图书馆推动知识向更多人开放。",
+    "reason": "The educational sense describes access to knowledge."
+  },
+  {
+    "en": "The repairer will weld a plate over the crack.",
+    "zh": "修理工会在裂缝上焊块板。",
+    "reason": "Reviewed everyday expression; the candidate is a polysemous term or a substring overlap, not a political narrative."
+  },
+  {
+    "en": "The wheel makes one revolution per second.",
+    "zh": "这个轮子每秒转一圈。",
+    "reason": "revolution means one turn of a wheel or motor."
+  },
+  {
+    "en": "The motor makes one revolution per second.",
+    "zh": "这个电动机每秒转一圈。",
+    "reason": "revolution means one turn of a wheel or motor."
+  },
+  {
+    "en": "The wheel completes one revolution per second.",
+    "zh": "车轮每秒转一圈。",
+    "reason": "revolution means one turn of a wheel or motor."
+  },
+  {
+    "en": "The new treatment was a revolutionary breakthrough.",
+    "zh": "新疗法是一次革命性的突破。",
+    "reason": "revolutionary describes a technical innovation."
+  },
+  {
+    "en": "The new printing method was a revolutionary change.",
+    "zh": "这种新印刷方法是一项革新。",
+    "reason": "revolutionary describes a technical innovation."
+  },
+  {
+    "en": "The new printing method was revolutionary.",
+    "zh": "新印刷方法具有革新意义。",
+    "reason": "revolutionary describes a technical innovation."
+  },
+  {
+    "en": "The club president welcomed the new members.",
+    "zh": "俱乐部主席欢迎新成员。",
+    "reason": "president refers to a hobby-club officer."
+  },
+  {
+    "en": "The club president welcomed our new members.",
+    "zh": "俱乐部主席欢迎了新成员。",
+    "reason": "president refers to a hobby-club officer."
+  },
+  {
+    "en": "The president of the music club plays the piano.",
+    "zh": "音乐俱乐部主席会弹钢琴。",
+    "reason": "president refers to a hobby-club officer."
+  },
+  {
+    "en": "Her father-in-law offered to collect the children.",
+    "zh": "她公公主动提出去接孩子。",
+    "reason": "Reviewed everyday expression; the candidate is a polysemous term or a substring overlap, not a political narrative."
+  },
+  {
+    "en": "The novel follows a young musician's life in a new city.",
+    "zh": "这部长篇小说讲述一位年轻音乐人在新城市的生活。",
+    "reason": "Reviewed everyday expression; the candidate is a polysemous term or a substring overlap, not a political narrative."
+  },
+  {
+    "en": "Plants may die if their roots stay too wet.",
+    "zh": "根部长时间过湿，植物可能死亡。",
+    "reason": "Reviewed everyday expression; the candidate is a polysemous term or a substring overlap, not a political narrative."
+  },
+  {
+    "en": "The residents were united in their opposition to the closure.",
+    "zh": "居民们一致反对关闭该设施。",
+    "reason": "Ordinary opinions about a local facility, without political actors or elections."
+  },
+  {
+    "en": "Despite opposition from the newspapers he went ahead.",
+    "zh": "尽管遭到报纸的反对，他还是继续前进。",
+    "reason": "opposition is ordinary disagreement about a daily arrangement."
+  },
+  {
+    "en": "The parking plan met strong opposition from residents.",
+    "zh": "停车方案遭到了居民的强烈反对。",
+    "reason": "opposition is ordinary disagreement about a daily arrangement."
+  },
+  {
+    "en": "She expressed opposition to the removal of the trees.",
+    "zh": "她表示反对移走这些树。",
+    "reason": "opposition is ordinary disagreement about a daily arrangement."
+  },
+  {
+    "en": "The cabinet contains delicate china.",
+    "zh": "柜子里放着精巧瓷器。",
+    "reason": "Reviewed everyday expression; the candidate is a polysemous term or a substring overlap, not a political narrative."
+  },
+  {
+    "en": "The purchaser collected the cabinet on Friday.",
+    "zh": "买主星期五取走了柜子。",
+    "reason": "Reviewed everyday expression; the candidate is a polysemous term or a substring overlap, not a political narrative."
+  },
+  {
+    "en": "She placed an ace beside the king.",
+    "zh": "她把一张A牌放在K牌旁边。",
+    "reason": "king is a playing card."
+  },
+  {
+    "en": "The lab stores water samples in a locked cabinet.",
+    "zh": "实验室把水样存放在上锁的柜子里。",
+    "reason": "Reviewed everyday expression; the candidate is a polysemous term or a substring overlap, not a political narrative."
+  },
+  {
+    "en": "The children rebel against early bedtimes.",
+    "zh": "孩子们反对太早上床睡觉。",
+    "reason": "rebel describes bedtime resistance, not a political rebellion."
+  },
+  {
+    "en": "The story asks why the young characters rebel.",
+    "zh": "故事探讨年轻人物为什么反抗。",
+    "reason": "rebel describes bedtime resistance, not a political rebellion."
+  },
+  {
+    "en": "We carried the glass cabinet safely through the narrow doorway.",
+    "zh": "我们把玻璃柜安全搬过了狭窄门口。",
+    "reason": "Reviewed everyday expression; the candidate is a polysemous term or a substring overlap, not a political narrative."
+  },
+  {
+    "en": "She gave a diplomatic answer to the complaint.",
+    "zh": "她对投诉作出了得体的回答。",
+    "reason": "diplomatic describes a tactful answer to a complaint."
+  },
+  {
+    "en": "His diplomatic manner helped settle the seating dispute.",
+    "zh": "他得体的处事方式有助于解决座位争执。",
+    "reason": "diplomatic describes a tactful answer to a complaint."
+  },
+  {
+    "en": "We used a secret ballot to choose a book.",
+    "zh": "我们以不记名投票的方式选书。",
+    "reason": "ballot is a book-club choice of reading material."
+  },
+  {
+    "en": "Our book club used a ballot to choose a story.",
+    "zh": "我们的读书俱乐部通过投票选了一篇故事。",
+    "reason": "ballot is a book-club choice of reading material."
+  },
+  {
+    "en": "Please mark your favorite book on the ballot.",
+    "zh": "请在选票上勾出你最喜欢的书。",
+    "reason": "ballot is a book-club choice of reading material."
+  },
+  {
+    "en": "A small faction in the club preferred a different route.",
+    "zh": "俱乐部里一小部分人更喜欢另一条路线。",
+    "reason": "faction describes groups within a hobby club."
+  },
+  {
+    "en": "A faction within the committee opposed the plan.",
+    "zh": "委员会内一个派别反对计划。",
+    "reason": "faction describes groups within a hobby club."
+  },
+  {
+    "en": "The debate split the club into two factions.",
+    "zh": "辩论使俱乐部分成两个派别。",
+    "reason": "faction describes groups within a hobby club."
+  },
+  {
+    "en": "The author received a royalty for each book sold.",
+    "zh": "作者每售出一本书都会获得一笔版税。",
+    "reason": "royalty is an author payment."
+  },
+  {
+    "en": "We watched a troop of monkeys in the trees.",
+    "zh": "我们看着树上的一群猴子。",
+    "reason": "troop refers to a group of monkeys, not a military unit."
+  },
+  {
+    "en": "The climb was a conquest of her fear.",
+    "zh": "这次攀登让她战胜了恐惧。",
+    "reason": "Reviewed metaphor in ordinary life: overcoming fear, a strict coach or resistance to bedtimes/homework; no political actors, institutions or events."
+  },
+  {
+    "en": "The coach became a tyrant about punctuality.",
+    "zh": "教练在守时问题上变得专横。",
+    "reason": "Reviewed metaphor in ordinary life: overcoming fear, a strict coach or resistance to bedtimes/homework; no political actors, institutions or events."
+  },
+  {
+    "en": "The chef can be a tyrant about tidiness.",
+    "zh": "这位厨师在整洁问题上很专横。",
+    "reason": "Reviewed metaphor in ordinary life: overcoming fear, a strict coach or resistance to bedtimes/homework; no political actors, institutions or events."
+  },
+  {
+    "en": "Nobody likes a tyrant in a shared kitchen.",
+    "zh": "没人喜欢在共用厨房里独断专行的人。",
+    "reason": "Reviewed metaphor in ordinary life: overcoming fear, a strict coach or resistance to bedtimes/homework; no political actors, institutions or events."
+  },
+  {
+    "en": "The children were in revolt over early bedtimes.",
+    "zh": "孩子们都在反对过早上床睡觉。",
+    "reason": "Reviewed metaphor in ordinary life: overcoming fear, a strict coach or resistance to bedtimes/homework; no political actors, institutions or events."
+  },
+  {
+    "en": "The children were in revolt over early bedtimes.",
+    "zh": "孩子们都在反对太早上床睡觉。",
+    "reason": "Reviewed metaphor in ordinary life: overcoming fear, a strict coach or resistance to bedtimes/homework; no political actors, institutions or events."
+  },
+  {
+    "en": "The whole class was in revolt over extra homework.",
+    "zh": "全班都反对额外的家庭作业。",
+    "reason": "Reviewed metaphor in ordinary life: overcoming fear, a strict coach or resistance to bedtimes/homework; no political actors, institutions or events."
+  }
+]

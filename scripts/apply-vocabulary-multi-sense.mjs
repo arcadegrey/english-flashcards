@@ -11,6 +11,8 @@ const source = await read(`${dir}/source-register-2026-10-31.json`);
 const metadata = await read(`${dir}/metadata-2026-10-31.json`);
 const sources = await read(`${dir}/sources-2026-10-31.json`);
 const words = await read('public/data/vocabulary.json');
+const latestNeutral=await read('data/vocabulary-neutral-examples/reviews-2026-10-31.json');
+if(hash(serialize(words))===latestNeutral.afterSha256){console.log('Preserving the registered neutral-example repair.');process.exit(0);}
 let previous;
 try { previous = await read(`${dir}/reviews-2026-10-31.json`); } catch (error) { if (error.code !== 'ENOENT') throw error; }
 const expected = new Set([...source.entries, ...source.gaps].map(row => row.id));

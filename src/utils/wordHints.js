@@ -4,8 +4,21 @@ import { getReviewedWordHints } from '../data/reviewedWordNotes.js';
 import { CORE_WORD_NOTES, CORE_SYNONYM_GROUPS, CORE_WORD_FORMATIONS, WORD_NOTE_SOURCES } from '../data/coreWordNotes.js';
 import { vocabularyNoteKey } from '../../shared/vocabularyAliases.js';
 import multiSenseReview from '../../data/vocabulary-multi-sense-repair/reviews-2026-10-31.json' with { type: 'json' };
+import neutralReview from '../../data/vocabulary-neutral-examples/reviews-2026-10-31.json' with { type: 'json' };
 
 const multiSenseNotes = new Map(multiSenseReview.reviews.map(review => [String(review.id), review]));
+const neutralWords = new Map(neutralReview.reviews.map(review => [String(review.id), review]));
+const neutralHints = new Map();
+const hintKey = hint => JSON.stringify([hint.label, hint.scope, hint.text, hint.examples?.map(example => [example.en, example.zh])]);
+for (const review of neutralReview.hintReviews) {
+  const notes = neutralHints.get(String(review.id)) || new Map();
+  notes.set(hintKey(review.before), review);
+  neutralHints.set(String(review.id), notes);
+}
+const neutralizeHints = (word, hints) => hints.map(hint => {
+  const review = neutralHints.get(String(word.id))?.get(hintKey(hint));
+  return review?.word === word.word ? { ...hint, ...review.after } : hint;
+});
 
 const isSourceChecked = (section) => section?.review?.status === 'source-checked' &&
   /^\d{4}-\d{2}-\d{2}$/.test(section.review.checkedAt) &&
@@ -101,6 +114,8 @@ export const getWordHints = (word = {}) => {
 // Supplement existing comparisons and word families only for the reviewed record.
 // Historical snapshots and custom IDs retain their original hints.
 export const getCoreWordHints = (word = {}) => {
+  const neutral = neutralWords.get(String(word.id));
+  if (neutral && ['word', 'pos', 'meaning', 'phonetic', 'example', 'exampleCn'].every(key => word[key] === neutral.after[key])) word = neutral.before;
   let hints = getExistingCoreWordHints(word);
   const multi = multiSenseNotes.get(String(word.id));
   if (multi && ['word', 'pos', 'meaning', 'phonetic', 'example', 'exampleCn'].every(key => word[key] === multi.after[key])) {
@@ -108,6 +123,6 @@ export const getCoreWordHints = (word = {}) => {
       sources: multi.sourceIds.map(id => multiSenseReview.sources.find(source => source.id === id)) }, ...hints];
   }
   const review = Object.hasOwn(commonSenses, String(word.id)) ? commonSenses[word.id] : null;
-  return review && review.word === word.word && Object.entries(review.guards).every(([key, value]) => word[key] === value)
-    ? [...hints, review.hint] : hints;
+  return neutralizeHints(word, review && review.word === word.word && Object.entries(review.guards).every(([key, value]) => word[key] === value)
+    ? [...hints, review.hint] : hints);
 };

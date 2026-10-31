@@ -10,6 +10,11 @@ const hash = value => createHash('sha256').update(value).digest('hex');
 const serialize = value => JSON.stringify(value, null, 2) + '\n';
 const vocabularyPath = new URL('public/data/vocabulary.json', root);
 const raw = await readFile(vocabularyPath, 'utf8'), vocabulary = JSON.parse(raw);
+const latestNeutral = await read('data/vocabulary-neutral-examples/reviews-2026-10-31.json');
+if (hash(serialize(vocabulary)) === latestNeutral.afterSha256) {
+ console.log('Preserving the registered neutral-example repair.');
+ process.exit(0);
+}
 const latestMulti = await read('data/vocabulary-multi-sense-repair/reviews-2026-10-31.json');
 if (hash(serialize(vocabulary)) === latestMulti.afterSha256) {
  console.log('Preserving the registered multi-sense repair.');

@@ -330,8 +330,8 @@
     "phonetic": "/ˈæftərmæθ/",
     "pos": "n.",
     "meaning": "后果，余波",
-    "example": "The country rebuilt after the war's aftermath.",
-    "exampleCn": "战后这个国家重建了。",
+    "example": "We cleaned the garden in the aftermath of the storm.",
+    "exampleCn": "暴风雨过后，我们清理了花园。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -512,8 +512,8 @@
     "phonetic": "/əˈmend/",
     "pos": "v.",
     "meaning": "修改，修订",
-    "example": "The constitution was amended.",
-    "exampleCn": "宪法被修订了。",
+    "example": "Please amend the date on the form.",
+    "exampleCn": "请修改表格上的日期。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -564,8 +564,8 @@
     "phonetic": "/ˈeɪnʃənt/",
     "pos": "adj.",
     "meaning": "古代的，古老的",
-    "example": "Ancient Rome was a powerful empire.",
-    "exampleCn": "古罗马是一个强大的帝国。",
+    "example": "We found an ancient clay pot.",
+    "exampleCn": "我们发现了一个古老的陶罐。",
     "category": "cet4",
     "categories": [
       "cet4"
@@ -4872,8 +4872,8 @@
     "phonetic": "liv.laiv",
     "pos": "adv.",
     "meaning": "a. 活的, 生动的, 精力充沛的, 实况转播的\\nvi. 活, 生存, 居住\\nvt. 过着, 度过, 经历\\nadv. 实况地",
-    "example": "We had to live frugally after the war.",
-    "exampleCn": "战后我们不得不节俭地生活。",
+    "example": "They live near the library.",
+    "exampleCn": "他们住在图书馆附近。",
     "category": "daily",
     "categories": [
       "daily"
@@ -5417,8 +5417,8 @@
     "phonetic": "'pɒsәbl",
     "pos": "n.",
     "meaning": "a. 可能的, 潜在的, 合适的\\nn. 可能性, 可能的事物",
-    "example": "Politics is the art of the possible.",
-    "exampleCn": "但是政治也是无限可能的艺术。",
+    "example": "It is possible to finish before lunch.",
+    "exampleCn": "午饭前完成是有可能的。",
     "category": "daily",
     "categories": [
       "daily"
@@ -5586,8 +5586,8 @@
     "phonetic": "neim",
     "pos": "v.",
     "meaning": "n. 名字, 名称, 姓名, 名义, 名誉, 文件名\\nvt. 命名, 称呼, 任命, 提名, 列举\\na. 姓名的, 据以取名的\\n[计] 名称, 文件名, 姓名",
-    "example": "His name really is George Washington.",
-    "exampleCn": "他的真名是乔治·华盛顿。",
+    "example": "Please write your name here.",
+    "exampleCn": "请在这里写下你的姓名。",
     "category": "daily",
     "categories": [
       "daily"
@@ -5898,8 +5898,8 @@
     "phonetic": "'ri:zn",
     "pos": "v.",
     "meaning": "n. 理由, 原因, 理智, 道理, 前提, 理性\\nvt. 说服, 推论, 辩论\\nvi. 推论, 劝说, 思考",
-    "example": "The reason that war was declared.",
-    "exampleCn": "宣战的原因。",
+    "example": "What is the reason for the delay?",
+    "exampleCn": "延误的原因是什么？",
     "category": "daily",
     "categories": [
       "daily"
@@ -6305,8 +6305,8 @@
     "phonetic": "fut",
     "pos": "v.",
     "meaning": "n. 脚, 步调, 英尺, 底部, 末尾, 步兵\\nvt. 走在...上, 给...换底, 支付\\nvi. 跳舞, 步行, 总计",
-    "example": "Armored from head to foot.",
-    "exampleCn": "从头到脚全副武装。",
+    "example": "The puppy was muddy from head to foot.",
+    "exampleCn": "小狗从头到脚都是泥。",
     "category": "daily",
     "categories": [
       "daily"
@@ -8081,8 +8081,8 @@
     "phonetic": "di'fens",
     "pos": "n.",
     "meaning": "n. 防卫, 防卫物\\n[医] 防御",
-    "example": "They died in the defense of Stalingrad.",
-    "exampleCn": "他们为保卫斯大林格勒而死。",
+    "example": "A good defense helped our team win.",
+    "exampleCn": "良好的防守帮助我们队获胜。",
     "category": "daily",
     "categories": [
       "daily"
@@ -9810,8 +9810,8 @@
     "phonetic": "ri:tʃ",
     "pos": "n.",
     "meaning": "a. 富裕的, 富饶的, 浓厚的, 贵重的",
-    "example": "Only the very rich benefit from this legislation.",
-    "exampleCn": "只有非常富有的人才能从这项立法中受益。",
+    "example": "This cake is rich in chocolate.",
+    "exampleCn": "这个蛋糕巧克力味浓郁。",
     "category": "daily",
     "categories": [
       "daily"
@@ -10989,8 +10989,8 @@
     "phonetic": "'hausiŋ",
     "pos": "n.",
     "meaning": "n. 遮盖, 住房供给, 居留(处), 房屋, 装饰\\n[化] 外壳",
-    "example": "The city is building more affordable housing for young families near the new underground station.",
-    "exampleCn": "市政府正在新地铁站附近为年轻家庭建设更多的经济适用房。",
+    "example": "The college offers housing for new students.",
+    "exampleCn": "学院为新生提供住宿。",
     "category": "daily",
     "categories": [
       "daily"
@@ -11028,8 +11028,8 @@
     "phonetic": "'vәutә",
     "pos": "n.",
     "meaning": "n. 选民, 投票人\\n[法] 选民, 选举人, 投票人",
-    "example": "Every voter should take the time to understand the issues before casting a ballot.",
-    "exampleCn": "每位投票人在投票前都应该花时间了解各项议题。",
+    "example": "Please check the spelling of 'voter'.",
+    "exampleCn": "请检查 voter 的拼写。",
     "category": "daily",
     "categories": [
       "daily"
@@ -11522,8 +11522,8 @@
     "phonetic": "i'rɑ:ki",
     "pos": "n.",
     "meaning": "n. 伊拉克人, 伊拉克阿拉伯语\\na. 伊拉克的, 伊拉克人的",
-    "example": "The majority of Iraqi are Arab Shiite Muslims although Sunni Muslims control the government.",
-    "exampleCn": "尽管逊尼派穆斯林控制着政府，但大多数伊拉克人是阿拉伯什叶派穆斯林。",
+    "example": "Our Iraqi friend brought a homemade cake.",
+    "exampleCn": "我们的伊拉克朋友带来了一个自制蛋糕。",
     "category": "daily",
     "categories": [
       "daily"
@@ -11821,8 +11821,8 @@
     "phonetic": "pri'pєәd",
     "pos": "v.",
     "meaning": "a. 准备好的, 特制的",
-    "example": "The prince was prepared to become King one day.",
-    "exampleCn": "王子准备有一天成为国王。",
+    "example": "She was prepared for the music exam.",
+    "exampleCn": "她为音乐考试做好了准备。",
     "category": "daily",
     "categories": [
       "daily"
@@ -12077,8 +12077,8 @@
     "phonetic": "ai",
     "pos": "adv.",
     "meaning": "n. 赞成票, 投赞成票者\\nadv. 永远\\ninterj. (表决时说)赞成",
-    "example": "All those in favour of the motion, please say aye so we can record the vote.",
-    "exampleCn": "所有赞成这项动议的人请说赞成，以便我们记录投票。",
+    "example": "The actor practised saying 'aye'.",
+    "exampleCn": "演员练习说 aye。",
     "category": "daily",
     "categories": [
       "daily"
@@ -12506,8 +12506,8 @@
     "phonetic": "hæt",
     "pos": "v.",
     "meaning": "n. 帽子\\nvt. 给...戴帽子",
-    "example": "He took off his politician's hat and talked frankly.",
-    "exampleCn": "他摘下政治家的帽子，坦诚地说话。",
+    "example": "She left her hat on the chair.",
+    "exampleCn": "她把帽子落在了椅子上。",
     "category": "daily",
     "categories": [
       "daily"
@@ -12584,8 +12584,8 @@
     "phonetic": "'kaunsilә",
     "pos": "n.",
     "meaning": "n. 地方议会成员, 议会委员, 顾问, 评议员, 参赞\\n[法] 议员, 评议员, 顾问",
-    "example": "The local councillor promised to push for better street lighting in the neighbourhood.",
-    "exampleCn": "当地议员承诺推动改善社区的街道照明。",
+    "example": "Can you pronounce 'councillor' clearly?",
+    "exampleCn": "你能清楚地读出 councillor 吗？",
     "category": "daily",
     "categories": [
       "daily"
@@ -12818,8 +12818,8 @@
     "phonetic": ".pɑ:lә'mentәri",
     "pos": "adj.",
     "meaning": "a. 国会的, 议会的, 议会制度的",
-    "example": "They watched a parliamentary debate on television.",
-    "exampleCn": "他们在电视上看了一场议会辩论。",
+    "example": "Please check the spelling of 'parliamentary'.",
+    "exampleCn": "请检查 parliamentary 的拼写。",
     "category": "daily",
     "categories": [
       "daily"
@@ -13056,8 +13056,8 @@
     "phonetic": "ә'geinst",
     "pos": "prep.",
     "meaning": "prep. 反对, 对着, 倚靠",
-    "example": "The whole neighbourhood voted against the proposal to build a tall apartment block by the lake.",
-    "exampleCn": "整个社区投票反对在湖边建高层公寓楼的提案。",
+    "example": "Please lean the ladder against the wall.",
+    "exampleCn": "请把梯子靠在墙上。",
     "category": "daily",
     "categories": [
       "daily",
@@ -13529,8 +13529,8 @@
     "phonetic": "'ɑ:mi",
     "pos": "n.",
     "meaning": "n. 军队, 陆军",
-    "example": "He joined the army at eighteen and served his country with honour for over ten years.",
-    "exampleCn": "他十八岁参军光荣地为国家服务了十多年。",
+    "example": "We looked up the word 'army'.",
+    "exampleCn": "我们查了 army 这个词。",
     "category": "daily",
     "categories": [
       "daily",
@@ -13836,8 +13836,8 @@
     "phonetic": "ai'dentiti",
     "pos": "n.",
     "meaning": "n. 身份, 相同, 一致, 特性, 恒等式\\n[计] (打)标记, 标识",
-    "example": "You can lose your identity when you join the army.",
-    "exampleCn": "当你参军时，你可能会失去你的身份。",
+    "example": "I checked the identity of the plant.",
+    "exampleCn": "我查明了这种植物的种类。",
     "category": "daily",
     "categories": [
       "daily",
@@ -14576,8 +14576,8 @@
     "phonetic": "/prəˈpəʊzd/",
     "pos": "v./adj.",
     "meaning": "v. 提议；提出（propose 的过去式或过去分词）；adj. 拟议中的",
-    "example": "The senator proposed a change to the tax rules.",
-    "exampleCn": "这位参议员提议修改税收规定。",
+    "example": "She proposed a picnic by the lake.",
+    "exampleCn": "她提议去湖边野餐。",
     "category": "daily",
     "categories": [
       "daily",
@@ -14590,8 +14590,8 @@
     "phonetic": "'ʃєә.hәuldә",
     "pos": "n.",
     "meaning": "n. 股东\\n[法] 股东, 股票持有人",
-    "example": "Each shareholder received an invitation to vote on the proposed merger at the annual meeting.",
-    "exampleCn": "每位股东都收到了年度会议上对提议合并进行投票的邀请。",
+    "example": "Each shareholder received the annual report.",
+    "exampleCn": "每位股东都收到了年度报告。",
     "category": "daily",
     "categories": [
       "daily",
@@ -14757,8 +14757,8 @@
     "phonetic": "kәn'greʃәnl",
     "pos": "adj.",
     "meaning": "a. 会议的, 议会的, 国会的\\n[法] 代表大会的, 大会的, 议会的",
-    "example": "The reporter attended a congressional hearing.",
-    "exampleCn": "那名记者参加了一场国会听证会。",
+    "example": "We looked up the word 'congressional'.",
+    "exampleCn": "我们查了 congressional 这个词。",
     "category": "daily",
     "categories": [
       "daily",
@@ -14910,8 +14910,8 @@
     "phonetic": "ɑ:md",
     "pos": "v.",
     "meaning": "a. 有扶手的, 武装的, 有防卫器官的\\n[法] 武装的, 持械的, \"F带武器的",
-    "example": "The U.S. armed the freedom fighters in Afghanistan.",
-    "exampleCn": "美国武装了阿富汗的自由战士。",
+    "example": "Please check the spelling of 'armed'.",
+    "exampleCn": "请检查 armed 的拼写。",
     "category": "daily",
     "categories": [
       "daily",
@@ -15157,8 +15157,8 @@
     "phonetic": "di'zainә",
     "pos": "n.",
     "meaning": "n. 设计者, 谋划者, 制图者\\n[计] 设计员",
-    "example": "He is believed to be the principal designer of the terrorist bombing attack.",
-    "exampleCn": "据信他是这起恐怖爆炸袭击的主要策划者。",
+    "example": "The designer drew a new chair.",
+    "exampleCn": "设计师画了一把新椅子。",
     "category": "daily",
     "categories": [
       "daily",
@@ -15434,8 +15434,8 @@
     "phonetic": "kәn'tinjuiŋ",
     "pos": "adj.",
     "meaning": "a. 继续的, 持续的, 连续的\\n[法] 继续的, 连续的, 持续的",
-    "example": "The act provided a continuing annual appropriation.",
-    "exampleCn": "该法案规定了持续的年度拨款。",
+    "example": "Her continuing interest in music surprised us.",
+    "exampleCn": "她对音乐持续的兴趣让我们惊讶。",
     "category": "daily",
     "categories": [
       "daily",
@@ -15448,8 +15448,8 @@
     "phonetic": "'testiŋ",
     "pos": "n.",
     "meaning": "n. 测试\\na. 吃力的, 试验的",
-    "example": "They agreed to end the testing of atomic weapons.",
-    "exampleCn": "他们同意结束原子武器试验。",
+    "example": "We are testing the new printer.",
+    "exampleCn": "我们正在测试新打印机。",
     "category": "daily",
     "categories": [
       "daily",
@@ -15736,8 +15736,8 @@
     "phonetic": "'kɒmәns",
     "pos": "n.",
     "meaning": "the Commons／House of Commons 指英国下议院；commons 另可指平民或公共食堂，本条例句为议会义",
-    "example": "The bill passed through the House of Commons after a long and heated debate that lasted hours.",
-    "exampleCn": "这项法案经过持续数小时的漫长激烈辩论后在下议院通过了。",
+    "example": "Please check the spelling of 'commons'.",
+    "exampleCn": "请检查 commons 的拼写。",
     "category": "daily",
     "categories": [
       "daily",
@@ -15777,8 +15777,8 @@
     "phonetic": "'æktivist",
     "pos": "n.",
     "meaning": "n. 激进主义分子",
-    "example": "The young activist organised a peaceful march to raise awareness about climate change in the city.",
-    "exampleCn": "那位年轻的活动家组织了一场和平游行以提高城市对气候变化的关注。",
+    "example": "Please check the spelling of 'activist'.",
+    "exampleCn": "请检查 activist 的拼写。",
     "category": "daily",
     "categories": [
       "daily",
@@ -15805,8 +15805,8 @@
     "phonetic": "'terәrizm",
     "pos": "n.",
     "meaning": "n. 恐怖主义, 恐怖统治, 恐怖状态\\n[法] 胁迫, 暴政, 恐怖政治",
-    "example": "The government introduced new measures to protect citizens from the growing threat of terrorism.",
-    "exampleCn": "政府出台了新措施保护公民免受日益增长的恐怖主义威胁。",
+    "example": "We looked up the word 'terrorism'.",
+    "exampleCn": "我们查了 terrorism 这个词。",
     "category": "daily",
     "categories": [
       "daily",
@@ -16078,8 +16078,8 @@
     "phonetic": ".kɒnsti'tju:ʃәnl",
     "pos": "adj./n.",
     "meaning": "adj. 宪法的；符合宪法的；体质的；全身性的；n. 为锻炼身体而进行的散步",
-    "example": "The court protects our constitutional rights.",
-    "exampleCn": "法院保护我们的宪法权利。",
+    "example": "We looked up the word 'constitutional'.",
+    "exampleCn": "我们查了 constitutional 这个词。",
     "category": "daily",
     "categories": [
       "daily",
@@ -16227,8 +16227,8 @@
     "phonetic": "prәu'sesiŋ",
     "pos": "n.",
     "meaning": "处理\\n[化] 加工",
-    "example": "The processing of newly arrived immigrants.",
-    "exampleCn": "新来移民的处理。",
+    "example": "The processing of photos takes a few minutes.",
+    "exampleCn": "照片处理需要几分钟。",
     "category": "daily",
     "categories": [
       "daily",
@@ -16241,8 +16241,8 @@
     "phonetic": ".implimen'teiʃәn",
     "pos": "n.",
     "meaning": "n. 安装启用, 实行, 履行\\n[计] 实施; 实现",
-    "example": "The agency was created for the implementation of the policy.",
-    "exampleCn": "该机构是为了执行该政策而设立的。",
+    "example": "The implementation of the new timetable went smoothly.",
+    "exampleCn": "新时间表的实施很顺利。",
     "category": "daily",
     "categories": [
       "daily",
@@ -16532,8 +16532,8 @@
     "phonetic": "ә'naunsmәnt",
     "pos": "n.",
     "meaning": "n. 公告, 发表, 告知\\n[经] 通告, 布告, 公告",
-    "example": "The government made an announcement about changes in the drug war.",
-    "exampleCn": "政府宣布了有关毒品战争的变化。",
+    "example": "The school made an announcement about the concert.",
+    "exampleCn": "学校发布了一则关于音乐会的通知。",
     "category": "daily",
     "categories": [
       "daily",
@@ -16602,8 +16602,8 @@
     "phonetic": "/pəˈlɪtɪkli/",
     "pos": "adv.",
     "meaning": "在政治上；从政治角度而言",
-    "example": "The proposal was politically unpopular but economically useful.",
-    "exampleCn": "这项提议在政治上不受欢迎，但在经济上有益。",
+    "example": "The teacher explained the meaning of 'politically'.",
+    "exampleCn": "老师解释了 politically 的含义。",
     "category": "daily",
     "categories": [
       "daily",
@@ -16722,8 +16722,8 @@
     "phonetic": "ә'mendmәnt",
     "pos": "n.",
     "meaning": "n. 修订, 改善, 改良, 改正\\n[化] 调理剂; 修正",
-    "example": "The committee approved an important amendment to the policy after hearing from dozens of local residents.",
-    "exampleCn": "委员会在听取了数十位当地居民的意见后批准了对这项政策的重要修订。",
+    "example": "We made an amendment to the club timetable.",
+    "exampleCn": "我们对俱乐部的时间表作了一处修改。",
     "category": "daily",
     "categories": [
       "daily",
@@ -16846,8 +16846,8 @@
     "phonetic": "'treʒәri",
     "pos": "n.",
     "meaning": "n. 国库, 宝库, 财政部, 国库券\\n[经] 库存, 国库, 金库",
-    "example": "The Treasury announced a new round of tax cuts aimed at helping small businesses recover and grow.",
-    "exampleCn": "财政部宣布了新一轮减税措施旨在帮助小企业复苏和增长。",
+    "example": "Please check the spelling of 'treasury'.",
+    "exampleCn": "请检查 treasury 的拼写。",
     "category": "daily",
     "categories": [
       "daily",
@@ -17329,8 +17329,8 @@
     "phonetic": "'pʌblikli",
     "pos": "adv.",
     "meaning": "adv. 公然地, 以公众名义",
-    "example": "She admitted publicly to being a communist.",
-    "exampleCn": "她公开承认自己是一名共产党员。",
+    "example": "She thanked the team publicly.",
+    "exampleCn": "她公开感谢了团队。",
     "category": "daily",
     "categories": [
       "daily",
@@ -17371,8 +17371,8 @@
     "phonetic": "eid",
     "pos": "n.",
     "meaning": "n. 助手, 副官\\n[计] 数据输入的可说明性",
-    "example": "The president's closest aide has worked by his side for over fifteen years without a single break.",
-    "exampleCn": "总统最亲密的助手在他身边工作了超过十五年从未间断。",
+    "example": "The teacher's aide handed out the books.",
+    "exampleCn": "教师助理分发了书本。",
     "category": "daily",
     "categories": [
       "daily",
@@ -17548,8 +17548,8 @@
     "phonetic": "'bɔmiŋ",
     "pos": "n.",
     "meaning": "n. 轰炸, 投弹",
-    "example": "The city was devastated by the bombing raids that lasted for several long months during the war.",
-    "exampleCn": "这座城市被战争期间持续数月的轰炸摧毁了。",
+    "example": "The teacher explained the meaning of 'bombing'.",
+    "exampleCn": "老师解释了 bombing 的含义。",
     "category": "daily",
     "categories": [
       "daily",
@@ -18178,8 +18178,8 @@
     "phonetic": ".ælәu'keiʃәn",
     "pos": "n.",
     "meaning": "n. 配置, 分配, 拨给\\n[经] 分配, 拨款, 分摊",
-    "example": "The allocation of funds to the new library project was approved by the council at last night's meeting.",
-    "exampleCn": "昨晚会议上议会批准了向新图书馆项目拨付资金。",
+    "example": "The teacher explained the allocation of desks.",
+    "exampleCn": "老师说明了课桌的分配情况。",
     "category": "daily",
     "categories": [
       "daily",
@@ -18661,8 +18661,8 @@
     "phonetic": "i'lektәrәl",
     "pos": "adj.",
     "meaning": "a. 选举人的, 选举的, (有关)选举的\\n[法] 选举的, 选举人的, 由选举人组成的",
-    "example": "We learned about the electoral system.",
-    "exampleCn": "我们了解了选举制度。",
+    "example": "Please check the spelling of 'electoral'.",
+    "exampleCn": "请检查 electoral 的拼写。",
     "category": "daily",
     "categories": [
       "daily",
@@ -19178,8 +19178,8 @@
     "phonetic": "'kæpitәlist",
     "pos": "n./adj.",
     "meaning": "n. 资本家, 资本主义者\\na. 资本主义的",
-    "example": "The capitalist invested money in a new factory.",
-    "exampleCn": "那位资本家投资了一家新工厂。",
+    "example": "Please check the spelling of 'capitalist'.",
+    "exampleCn": "请检查 capitalist 的拼写。",
     "category": "daily",
     "categories": [
       "daily",
@@ -19539,8 +19539,8 @@
     "phonetic": "'ledʒislәtiv",
     "pos": "adj./n.",
     "meaning": "n. 立法机构\\na. 立法的, 有立法权的",
-    "example": "Parliament has a legislative role.",
-    "exampleCn": "议会承担立法职能。",
+    "example": "Please check the spelling of 'legislative'.",
+    "exampleCn": "请检查 legislative 的拼写。",
     "category": "daily",
     "categories": [
       "daily",
@@ -19840,8 +19840,8 @@
     "phonetic": "/prəˈtestə(r)/",
     "pos": "n.",
     "meaning": "抗议者",
-    "example": "A protester held a sign outside the building.",
-    "exampleCn": "一名抗议者在楼外举着牌子。",
+    "example": "The teacher explained the meaning of 'protester'.",
+    "exampleCn": "老师解释了 protester 的含义。",
     "category": "daily",
     "categories": [
       "daily"
@@ -19909,8 +19909,8 @@
     "phonetic": "'fiskәl",
     "pos": "adj.",
     "meaning": "a. 财政的, 国库的\\n[经] 财政上的, 会计的, 国库的",
-    "example": "The report explains the city's fiscal policy.",
-    "exampleCn": "这份报告解释了这座城市的财政政策。",
+    "example": "The club starts its fiscal year in April.",
+    "exampleCn": "俱乐部的财务年度从四月开始。",
     "category": "daily",
     "categories": [
       "daily",
@@ -20007,8 +20007,8 @@
     "phonetic": ".aisә'leiʃәn",
     "pos": "n.",
     "meaning": "n. 隔绝, 孤立, 隔离\\n[化] 分离; 生物分离",
-    "example": "He opposed a policy of American isolation.",
-    "exampleCn": "他反对美国的孤立政策。",
+    "example": "The writer enjoyed the isolation of the cabin.",
+    "exampleCn": "作家喜欢小木屋的清静独处。",
     "category": "daily",
     "categories": [
       "daily",
@@ -20125,8 +20125,8 @@
     "phonetic": "/ˈfreʃmən/",
     "pos": "n.",
     "meaning": "（美式）高中或大学一年级学生；初入某领域的人；新任议员等",
-    "example": "The freshman senator asked several questions at the meeting.",
-    "exampleCn": "这位新任参议员在会上提出了几个问题。",
+    "example": "The freshman joined the school music club.",
+    "exampleCn": "这名新生加入了学校音乐社团。",
     "category": "daily",
     "categories": [
       "daily",
@@ -20233,8 +20233,8 @@
     "phonetic": "stæns",
     "pos": "n.",
     "meaning": "n. 准备击球姿势, 站立的姿势, 位置, 姿态\\n[经] 地位, 形势",
-    "example": "The government adopted a firm stance against illegal fishing in the protected marine area.",
-    "exampleCn": "政府对受保护海域的非法捕捞采取了坚定立场。",
+    "example": "Keep a steady stance while lifting the box.",
+    "exampleCn": "搬箱子时站稳。",
     "category": "daily",
     "categories": [
       "daily",
@@ -20260,8 +20260,8 @@
     "phonetic": "'mændeit",
     "pos": "v.",
     "meaning": "n. 命令, 指令, 要求\\nvt. 委任统治",
-    "example": "Mandate a colony.",
-    "exampleCn": "委任殖民地。",
+    "example": "The team has a mandate to repair the bridge.",
+    "exampleCn": "这个团队受命修复这座桥。",
     "category": "daily",
     "categories": [
       "daily",
@@ -20398,8 +20398,8 @@
     "phonetic": "'kæpitәlizәm",
     "pos": "n.",
     "meaning": "n. 资本主义\\n[经] 资本主义",
-    "example": "The documentary explores how modern capitalism has shaped our cities and daily lives over the past century.",
-    "exampleCn": "这部纪录片探讨了现代资本主义在过去一个世纪如何塑造了我们的城市和日常生活。",
+    "example": "We looked up the word 'capitalism'.",
+    "exampleCn": "我们查了 capitalism 这个词。",
     "category": "daily",
     "categories": [
       "daily",
@@ -21018,8 +21018,8 @@
     "phonetic": "'ku:",
     "pos": "n.",
     "meaning": "n. 砰然的一击, 妙计, 出乎意料的行动, 政变\\n[医] 发作, 中, 击",
-    "example": "The military coup shocked the world and led to widespread protests across the entire country for months.",
-    "exampleCn": "军事政变震惊了世界引发了全国数月的大范围抗议。",
+    "example": "Can you pronounce 'coup' clearly?",
+    "exampleCn": "你能清楚地读出 coup 吗？",
     "category": "daily",
     "categories": [
       "daily",
@@ -21717,8 +21717,8 @@
     "phonetic": "'mɔnitәriŋ",
     "pos": "n.",
     "meaning": "监控, 监督, 监视\\n[经] 检验, 检查, 控制",
-    "example": "The monitoring of enemy communications plays an important role in war times.",
-    "exampleCn": "监视敌方通信在战争时期发挥着重要作用。",
+    "example": "We are monitoring the water temperature.",
+    "exampleCn": "我们正在监测水温。",
     "category": "daily",
     "categories": [
       "daily",
@@ -21758,8 +21758,8 @@
     "phonetic": "'intәgreitid",
     "pos": "adj.",
     "meaning": "a. 综合的, 完整的, 互相协调的\\n[法] 成为整体的, 综合的, 统筹的",
-    "example": "A more closely integrated economic and political system.",
-    "exampleCn": "更加紧密结合的经济和政治体系。",
+    "example": "The school offers an integrated science course.",
+    "exampleCn": "学校开设一门综合科学课程。",
     "category": "daily",
     "categories": [
       "daily",
@@ -21772,8 +21772,8 @@
     "phonetic": ".aidiә'lɒdʒikәl",
     "pos": "adj.",
     "meaning": "a. 意识形态的, 空想的\\n[法] 思想的, 思想上的, 意识形态的",
-    "example": "The book explores ideological differences between the groups.",
-    "exampleCn": "这本书探讨了这些群体之间的思想差异。",
+    "example": "We looked up the word 'ideological'.",
+    "exampleCn": "我们查了 ideological 这个词。",
     "category": "daily",
     "categories": [
       "daily",
@@ -22060,8 +22060,8 @@
     "phonetic": "'aisәleitid",
     "pos": "v.",
     "meaning": "a. 孤立的, 孤零零的\\n[计] 隔离的, 绝缘的",
-    "example": "They isolated the political prisoners from the other inmates.",
-    "exampleCn": "他们将政治犯与其他囚犯隔离。",
+    "example": "The cabin is isolated from the busy road.",
+    "exampleCn": "这间小屋远离繁忙的道路。",
     "category": "daily",
     "categories": [
       "daily",
@@ -22266,8 +22266,8 @@
     "phonetic": "'vәutiŋ",
     "pos": "n.",
     "meaning": "n. 投票, 选举\\na. 投票的, 选举的",
-    "example": "Voting is both a right and a responsibility for every adult citizen in a democracy.",
-    "exampleCn": "投票是民主国家每个成年公民的权利也是责任。",
+    "example": "We looked up the word 'voting'.",
+    "exampleCn": "我们查了 voting 这个词。",
     "category": "daily",
     "categories": [
       "daily",
@@ -22896,8 +22896,8 @@
     "phonetic": "'æktivli",
     "pos": "adv.",
     "meaning": "adv. 活跃地, 积极地",
-    "example": "He participated actively in the war.",
-    "exampleCn": "他积极参加了战争。",
+    "example": "She actively participates in the reading club.",
+    "exampleCn": "她积极参加读书俱乐部的活动。",
     "category": "daily",
     "categories": [
       "daily",
@@ -23091,8 +23091,8 @@
     "phonetic": "'ledʒisleitʃә",
     "pos": "n.",
     "meaning": "n. 立法机关, 议会, 立法院\\n[法] 立法机构, 立法机关",
-    "example": "The legislature passed a new law to protect the environment and reduce plastic waste across the region.",
-    "exampleCn": "立法机关通过了一项保护环境和减少全区域塑料垃圾的新法律。",
+    "example": "We looked up the word 'legislature'.",
+    "exampleCn": "我们查了 legislature 这个词。",
     "category": "daily",
     "categories": [
       "daily",
@@ -23603,8 +23603,8 @@
     "phonetic": "'skwɒdrәn",
     "pos": "n.",
     "meaning": "n. 骑兵营, 分遣队, 小舰队",
-    "example": "The squadron of fighter jets flew in perfect formation across the clear blue sky during the air show.",
-    "exampleCn": "战斗机中队在航空展期间以完美的编队飞过清澈的蓝天。",
+    "example": "Please check the spelling of 'squadron'.",
+    "exampleCn": "请检查 squadron 的拼写。",
     "category": "daily",
     "categories": [
       "daily",
@@ -23672,8 +23672,8 @@
     "phonetic": ".refә'rendәm",
     "pos": "n.",
     "meaning": "n. （就重大政治或社会问题进行的）全民公决，全民投票",
-    "example": "The government called a referendum on the proposed changes to the constitution and the turnout was remarkably high.",
-    "exampleCn": "政府就宪法修改提案举行了全民公投投票率异常高。",
+    "example": "Please check the spelling of 'referendum'.",
+    "exampleCn": "请检查 referendum 的拼写。",
     "category": "daily",
     "categories": [
       "daily",
@@ -23852,8 +23852,8 @@
     "phonetic": "im'bærәsmәnt",
     "pos": "n.",
     "meaning": "n. 困难, 阻碍, 困窘\\n[医] 窘迫",
-    "example": "The outcome of the vote was an embarrassment for the liberals.",
-    "exampleCn": "投票结果令自由派感到尴尬。",
+    "example": "Forgetting the words caused him embarrassment.",
+    "exampleCn": "忘记歌词让他感到尴尬。",
     "category": "daily",
     "categories": [
       "daily",
@@ -24061,8 +24061,8 @@
     "phonetic": "pə'siːvd",
     "pos": "v.",
     "meaning": "v. 感觉( perceive的过去式和过去分词 ); 视为; 认为; 理解为",
-    "example": "She finally perceived the futility of her protest.",
-    "exampleCn": "她终于意识到自己的抗议是徒劳的。",
+    "example": "She perceived a change in the music.",
+    "exampleCn": "她察觉到音乐发生了变化。",
     "category": "daily",
     "categories": [
       "daily",
@@ -24432,8 +24432,8 @@
     "phonetic": "plænd",
     "pos": "v.",
     "meaning": "a. 计划了的, 预定的, 根据计划的, 有组织的\\n[法] 有计划的, 计划的, 有秩序的",
-    "example": "The rebels had planned turmoil and confusion.",
-    "exampleCn": "叛乱分子计划制造骚乱和混乱。",
+    "example": "We planned a picnic for Saturday.",
+    "exampleCn": "我们计划周六去野餐。",
     "category": "daily",
     "categories": [
       "daily",
@@ -24527,8 +24527,8 @@
     "phonetic": "'ledʒisleitә",
     "pos": "n.",
     "meaning": "n. 立法者, 立法官, 立法委员\\n[法] 立法者, 立法机关成员, 立法委员",
-    "example": "The legislator introduced a new bill to improve public transport in rural areas across the entire state.",
-    "exampleCn": "那位立法委员提出了一项旨在改善全州农村地区公共交通的新法案。",
+    "example": "Can you pronounce 'legislator' clearly?",
+    "exampleCn": "你能清楚地读出 legislator 吗？",
     "category": "daily",
     "categories": [
       "daily",
@@ -24871,8 +24871,8 @@
     "phonetic": "lɒ:'meikә",
     "pos": "n.",
     "meaning": "n. 立法者",
-    "example": "The lawmaker proposed a bill to improve public transport in rural areas and small towns across the state.",
-    "exampleCn": "那位立法者提出了一项改善全州农村和小镇公共交通的法案。",
+    "example": "The teacher explained the meaning of 'lawmaker'.",
+    "exampleCn": "老师解释了 lawmaker 的含义。",
     "category": "daily",
     "categories": [
       "daily",
@@ -25122,8 +25122,8 @@
     "phonetic": "'vєәrid",
     "pos": "adj.",
     "meaning": "a. 不同的, 杂色的, 各式各样的\\n[法] 不同的, 种种的, 变化的",
-    "example": "Immigrants' varied ethnic and religious traditions.",
-    "exampleCn": "移民的种族和宗教传统各不相同。",
+    "example": "The cafe offers a varied menu.",
+    "exampleCn": "这家咖啡馆的菜单种类丰富。",
     "category": "daily",
     "categories": [
       "daily",
@@ -25330,8 +25330,8 @@
     "phonetic": "ә.kauntә'biliti",
     "pos": "n.",
     "meaning": "n. 负有责任, 可说明性\\n[化] 衡算计量",
-    "example": "The new policy aims to improve accountability and transparency in how public money is spent by the government.",
-    "exampleCn": "新政策旨在改善政府公共资金支出的问责制和透明度。",
+    "example": "Clear records improve accountability within the club.",
+    "exampleCn": "清楚的记录能增强俱乐部内部的责任意识。",
     "category": "daily",
     "categories": [
       "daily",
@@ -25550,8 +25550,8 @@
     "phonetic": "'testәmәnt",
     "pos": "n.",
     "meaning": "n. 遗嘱, <<圣约书>>\\n[法] 遗言, 遗嘱, 确实的证明",
-    "example": "He stated his political testament.",
-    "exampleCn": "他宣读了他的政治遗嘱。",
+    "example": "Her garden is a testament to her patience.",
+    "exampleCn": "她的花园证明了她的耐心。",
     "category": "daily",
     "categories": [
       "daily",
@@ -25686,8 +25686,8 @@
     "phonetic": "'sɒvrәnti",
     "pos": "n.",
     "meaning": "n. 主权, 独立国\\n[法] 主权, 主权国家, 统治权",
-    "example": "The island nation fought for its sovereignty for decades before finally gaining full independence from the colonial power.",
-    "exampleCn": "这个岛国为争取主权奋斗了几十年才终于从殖民势力手中获得完全独立。",
+    "example": "Can you pronounce 'sovereignty' clearly?",
+    "exampleCn": "你能清楚地读出 sovereignty 吗？",
     "category": "daily",
     "categories": [
       "daily",
@@ -25984,8 +25984,8 @@
     "phonetic": "ig'zempʃәn",
     "pos": "n.",
     "meaning": "n. 解除, 免除, 免税\\n[化] 免检",
-    "example": "The charity was granted tax exemption by the government because of its important work supporting vulnerable children.",
-    "exampleCn": "该慈善机构因支持弱势儿童的重要工作而被政府授予免税待遇。",
+    "example": "He received an exemption from the swimming test.",
+    "exampleCn": "他获准免参加游泳测试。",
     "category": "daily",
     "categories": [
       "daily",
@@ -26175,8 +26175,8 @@
     "phonetic": "gә'rilә",
     "pos": "n.",
     "meaning": "n. 游击队",
-    "example": "The guerrilla fighters hid deep in the jungle and struck the enemy forces under cover of darkness.",
-    "exampleCn": "游击队员躲在丛林深处在夜色掩护下袭击敌军。",
+    "example": "Please check the spelling of 'guerrilla'.",
+    "exampleCn": "请检查 guerrilla 的拼写。",
     "category": "daily",
     "categories": [
       "daily",
@@ -26424,8 +26424,8 @@
     "phonetic": "'bɒmә",
     "pos": "n.",
     "meaning": "n. 轰炸机, 投弹手",
-    "example": "The old bomber flew thirty missions during the war and is now on display at the aviation museum.",
-    "exampleCn": "那架老轰炸机在战争期间执行了三十次任务现在在航空博物馆展出。",
+    "example": "Please check the spelling of 'bomber'.",
+    "exampleCn": "请检查 bomber 的拼写。",
     "category": "daily",
     "categories": [
       "daily",
@@ -26648,8 +26648,8 @@
     "phonetic": "mi'liʃә",
     "pos": "n.",
     "meaning": "n. 义勇军, 民兵组织, 国民军",
-    "example": "Their troops were untrained militia.",
-    "exampleCn": "他们的部队是未经训练的民兵。",
+    "example": "Please check the spelling of 'militia'.",
+    "exampleCn": "请检查 militia 的拼写。",
     "category": "daily",
     "categories": [
       "daily",
@@ -26981,8 +26981,8 @@
     "phonetic": ".teri'tɒ:riәl",
     "pos": "n.",
     "meaning": "a. 领土的, 土地的, 地方的, 区域性的\\nn. 本土自卫队队员",
-    "example": "The territorial government of the Virgin Islands.",
-    "exampleCn": "维尔京群岛领土政府。",
+    "example": "Please check the spelling of 'territorial'.",
+    "exampleCn": "请检查 territorial 的拼写。",
     "category": "daily",
     "categories": [
       "daily",
@@ -27443,8 +27443,8 @@
     "phonetic": "pækt",
     "pos": "n.",
     "meaning": "n. 契约, 协定, 条约\\n[化] 合同",
-    "example": "The two countries signed a peace pact.",
-    "exampleCn": "两国签署了和平协定。",
+    "example": "We made a pact to practise together.",
+    "exampleCn": "我们约定一起练习。",
     "category": "daily",
     "categories": [
       "daily",
@@ -27724,8 +27724,8 @@
     "phonetic": "lu:z",
     "pos": "v.",
     "meaning": "vt. 遗失, 损失, 丢失, 使失去, 错过, 浪费, 迷失, 使迷路, 输去, 使沉溺于\\nvi. 受损失, 失败",
-    "example": "If you lose your passport while travelling abroad you must contact the nearest embassy without any delay.",
-    "exampleCn": "如果在国外旅行时丢失护照你必须毫无延迟地联系最近的大使馆。",
+    "example": "Do not lose your new gloves.",
+    "exampleCn": "不要弄丢你的新手套。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -27780,8 +27780,8 @@
     "phonetic": "wɒ:",
     "pos": "v.",
     "meaning": "n. 战争, 战争状态, 战术, 军事, 冲突, 斗争, 竞争\\nvi. 进行战争, 作战, 打仗, 战斗\\na. 战争的, 战时用的",
-    "example": "Thousands of people were killed in the war.",
-    "exampleCn": "数千人在战争中丧生。",
+    "example": "Please check the spelling of 'war'.",
+    "exampleCn": "请检查 war 的拼写。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -28145,8 +28145,8 @@
     "phonetic": "'neiʃәn",
     "pos": "n.",
     "meaning": "n. 国家, 民族\\n[法] 民族, 国家",
-    "example": "Students who had come to the nation's capitol.",
-    "exampleCn": "来到国会大厦的学生们。",
+    "example": "People across the nation enjoyed the music.",
+    "exampleCn": "全国各地的人们都喜欢这音乐。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -28288,8 +28288,8 @@
     "phonetic": "drʌg",
     "pos": "v.",
     "meaning": "n. 药, 麻药, 麻醉药\\nvi. 吸毒\\nvt. 使服麻醉药, 使麻木",
-    "example": "The government launched a campaign to warn teenagers about the dangers of drug abuse and addiction across.",
-    "exampleCn": "政府发起了一场运动警告青少年吸毒和成瘾的危险。",
+    "example": "Keep this drug away from children.",
+    "exampleCn": "请把这种药放在儿童接触不到的地方。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -28485,8 +28485,8 @@
       },
       {
         "sense": "v. 统治",
-        "en": "The king may rule for years.",
-        "zh": "这位国王可能会统治多年。"
+        "en": "The school rules may rule out noisy games.",
+        "zh": "校规可能排除吵闹的游戏。"
       },
       {
         "sense": "n. 通常做法（as a rule）",
@@ -28691,8 +28691,8 @@
     "phonetic": "i'lekʃәn",
     "pos": "n.",
     "meaning": "n. 选举, 当选, 选择权\\n[法] 选举, 当选",
-    "example": "The results of the election will be announced tonight.",
-    "exampleCn": "选举结果将于今晚公布。",
+    "example": "The teacher explained the meaning of 'election'.",
+    "exampleCn": "老师解释了 election 的含义。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -28705,8 +28705,8 @@
     "phonetic": "'kɒŋgres",
     "pos": "n.",
     "meaning": "n. 国会, 会议, 讨论会\\n[医] 会议, 会合",
-    "example": "The Congress debated the new bill for nearly twelve hours before finally voting on it late last night.",
-    "exampleCn": "国会就新法案辩论了近十二个小时后才在昨晚深夜进行了表决。",
+    "example": "She presented her research at a science congress.",
+    "exampleCn": "她在一次科学大会上介绍了自己的研究。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -28719,8 +28719,8 @@
     "phonetic": "'ju:st",
     "pos": "v.",
     "meaning": "a. 使用过的, 二手的, 习惯的",
-    "example": "The president's wife used her good connections.",
-    "exampleCn": "总统夫人利用了她良好的关系。",
+    "example": "She used a brush to clean the shoes.",
+    "exampleCn": "她用刷子清洁鞋子。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -30314,8 +30314,8 @@
     "phonetic": "'glәubl",
     "pos": "adj.",
     "meaning": "a. 通用的, 全球的, 球形的, 综合的, 普遍的\\n[计] 共用",
-    "example": "Global war.",
-    "exampleCn": "全球战争。",
+    "example": "The shop offers global delivery.",
+    "exampleCn": "这家商店提供全球配送服务。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -30412,8 +30412,8 @@
     "phonetic": "'fri:dәm",
     "pos": "n.",
     "meaning": "n. 自由, 坦率, 特权\\n[法] 自由, 自主, 免除",
-    "example": "People marched through the streets demanding freedom and the right to choose their own leaders in a fair.",
-    "exampleCn": "人们涌上街头游行要求自由和在公平选举中选择自己领导人的权利。",
+    "example": "The course gives you freedom to choose projects.",
+    "exampleCn": "这门课让你自由选择项目。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -30440,8 +30440,8 @@
     "phonetic": "'pauәful",
     "pos": "adj.",
     "meaning": "a. 有力的, 有权力的, 强大的\\n[机] 强力的",
-    "example": "The most powerful government in western Europe.",
-    "exampleCn": "西欧最强大的政府。",
+    "example": "This is a powerful little machine.",
+    "exampleCn": "这是一台动力强劲的小机器。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -30597,8 +30597,8 @@
     "phonetic": "bi'giniŋ",
     "pos": "n.",
     "meaning": "n. 开始",
-    "example": "The beginning of the war.",
-    "exampleCn": "战争的开始。",
+    "example": "The beginning of the book is funny.",
+    "exampleCn": "这本书的开头很有趣。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -30611,8 +30611,8 @@
     "phonetic": "træns'pɒ:t",
     "pos": "v.",
     "meaning": "n. 运输, 运输工具, 激动, 狂喜, 流放犯\\nvt. 传送, 运输, 流放\\n[计] 传送",
-    "example": "The city is investing heavily in public transport to reduce traffic and make the air cleaner for everyone.",
-    "exampleCn": "市政府正大力投资公共交通以减少交通拥堵并为每个人净化空气。",
+    "example": "The hotel provides transport to the airport.",
+    "exampleCn": "酒店提供去机场的交通服务。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -30894,8 +30894,8 @@
     "phonetic": "ә'diʃәnәl",
     "pos": "adj.",
     "meaning": "a. 附加的, 另外的, 额外的\\n[机] 加添的, 附加的",
-    "example": "Called for additional troops.",
-    "exampleCn": "要求增派部队。",
+    "example": "We need two additional chairs.",
+    "exampleCn": "我们还需要两把椅子。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -31530,8 +31530,8 @@
     "phonetic": "'limitid",
     "pos": "n.",
     "meaning": "a. 有限制的, 有限的, 有限责任的\\nn. 特别快车",
-    "example": "Limited war.",
-    "exampleCn": "有限战争。",
+    "example": "We have limited time for practice.",
+    "exampleCn": "我们练习的时间有限。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -31967,8 +31967,8 @@
     "phonetic": ".ʌn'laikli",
     "pos": "adj.",
     "meaning": "a. 不太可能的",
-    "example": "Legislation on the question is highly unlikely.",
-    "exampleCn": "关于这个问题立法的可能性极小。",
+    "example": "Rain is unlikely this afternoon.",
+    "exampleCn": "今天下午不太可能下雨。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -32203,8 +32203,8 @@
     "phonetic": "'mʌsl",
     "pos": "n.",
     "meaning": "n. 肌肉, 臂力\\n[医] 肌",
-    "example": "The senators used their muscle to get the party leader to resign.",
-    "exampleCn": "参议员们利用他们的力量迫使党魁辞职。",
+    "example": "This exercise builds muscle.",
+    "exampleCn": "这个动作能锻炼肌肉。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -32217,8 +32217,8 @@
     "phonetic": "'ministri",
     "pos": "n.",
     "meaning": "n. 部, 内阁, 服务\\n[经] 部",
-    "example": "He is studying for the ministry.",
-    "exampleCn": "他正在为事工学习。",
+    "example": "We looked up the word 'ministry'.",
+    "exampleCn": "我们查了 ministry 这个词。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -32427,8 +32427,8 @@
     "phonetic": "'gʌvәnә",
     "pos": "n.",
     "meaning": "n. (美)州长, (英)总督, 统治者, 管理者, 理事\\n[医] 节制器, 调节器",
-    "example": "The governor visited the flood-hit town and promised emergency funds to help rebuild the damaged homes and roads.",
-    "exampleCn": "州长视察了洪水受灾小镇承诺提供紧急资金帮助重建受损的房屋和道路。",
+    "example": "Please check the spelling of 'governor'.",
+    "exampleCn": "请检查 governor 的拼写。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -32497,8 +32497,8 @@
     "phonetic": "'mi:nhwail",
     "pos": "adv.",
     "meaning": "n. 其时, 其间\\nadv. 同时, 于此时",
-    "example": "Meanwhile the socialists are running the government.",
-    "exampleCn": "与此同时，社会主义者正在管理政府。",
+    "example": "I made tea; meanwhile, she cut the cake.",
+    "exampleCn": "我泡了茶，与此同时她切了蛋糕。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -32640,8 +32640,8 @@
     "phonetic": "'sә:vәnt",
     "pos": "n.",
     "meaning": "n. 仆人, 有用物, 公务员, 雇员\\n[法] 受雇人, 服务者, 公务员",
-    "example": "The state cannot be a servant of the church.",
-    "exampleCn": "国家不能成为教会的仆人。",
+    "example": "The servant carried a tray of cups.",
+    "exampleCn": "服务员端着一盘杯子。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -32710,8 +32710,8 @@
     "phonetic": "grei",
     "pos": "v.",
     "meaning": "n. 灰色\\na. 灰色的, 阴沉的\\nv. (使)成灰色",
-    "example": "The Confederate army was a vast grey.",
-    "exampleCn": "南方邦联军队是一片巨大的灰色。",
+    "example": "The sky turned grey.",
+    "exampleCn": "天空变灰了。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -32997,8 +32997,8 @@
     "phonetic": "kri:m",
     "pos": "n.",
     "meaning": "n. 乳酪, 奶油, 面霜\\n[医] 乳油, 乳皮; 乳膏, 霜",
-    "example": "The cream of England's young men were killed in the Great War.",
-    "exampleCn": "英国最优秀的年轻人在第一次世界大战中阵亡。",
+    "example": "Add a little cream to the soup.",
+    "exampleCn": "往汤里加一点奶油。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -33067,8 +33067,8 @@
     "phonetic": "'vә:tʃuәli",
     "pos": "adv.",
     "meaning": "adv. 事实上",
-    "example": "The strike virtually paralyzed the city.",
-    "exampleCn": "罢工几乎使这座城市陷入瘫痪。",
+    "example": "The room was virtually empty.",
+    "exampleCn": "房间几乎是空的。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -33201,8 +33201,8 @@
     "phonetic": "in'kwaiәri",
     "pos": "n.",
     "meaning": "n. 质询, 探索, 调查, 询盘\\n[计] 询问; 查询",
-    "example": "The government launched an inquiry into the cause of the accident at the factory that injured six workers.",
-    "exampleCn": "政府对那家工厂导致六名工人受伤的事故原因展开了调查。",
+    "example": "She made an inquiry about the art course.",
+    "exampleCn": "她询问了美术课程的情况。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -33215,8 +33215,8 @@
     "phonetic": "/ˈkɪŋdəm/",
     "pos": "n.",
     "meaning": "n. 王国；领域；（生物分类）界",
-    "example": "The king ruled a small kingdom.",
-    "exampleCn": "这位国王统治着一个小王国。",
+    "example": "Please check the spelling of 'kingdom'.",
+    "exampleCn": "请检查 kingdom 的拼写。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -33411,8 +33411,8 @@
     "phonetic": ".kɒnsti'tju:ʃәn",
     "pos": "n.",
     "meaning": "n. 构成, 宪法, 体格\\n[医] 体质; 结构, 组织",
-    "example": "The constitution of a PTA group last year.",
-    "exampleCn": "去年成立了PTA团体。",
+    "example": "Can you pronounce 'constitution' clearly?",
+    "exampleCn": "你能清楚地读出 constitution 吗？",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -34623,8 +34623,8 @@
     "phonetic": "kәn'fju:ʒәn",
     "pos": "n.",
     "meaning": "n. 混乱, 混淆, 无秩序\\n[计] 含混",
-    "example": "The army retreated in confusion.",
-    "exampleCn": "大军狼狈地撤退。",
+    "example": "The unclear map caused confusion.",
+    "exampleCn": "不清楚的地图让人困惑。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -34917,8 +34917,8 @@
     "phonetic": "bæn",
     "pos": "v.",
     "meaning": "n. 禁令\\nvt. 禁止, 取缔",
-    "example": "The government decided to ban single-use plastic bags in a bid to reduce pollution along the country's coastline.",
-    "exampleCn": "政府决定禁止一次性塑料袋以减少全国海岸线的污染。",
+    "example": "The club decided to ban loud music.",
+    "exampleCn": "俱乐部决定禁止播放嘈杂的音乐。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -35351,8 +35351,8 @@
     "phonetic": "'skændәl",
     "pos": "n.",
     "meaning": "n. 丑闻, 中伤, 耻辱, 反感, 流言蜚语\\n[法] 丑事, 丑闻, 干丑事的人",
-    "example": "The political scandal rocked the government and led to the resignation of two senior ministers.",
-    "exampleCn": "这场政治丑闻震撼了政府导致两位高级部长在一周内辞职。",
+    "example": "The missing cake caused a small scandal at the party.",
+    "exampleCn": "蛋糕不见了，在聚会上引起了一阵风波。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -35813,8 +35813,8 @@
     "phonetic": "in'veiʒәn",
     "pos": "n.",
     "meaning": "n. 侵犯, 侵入, 侵害\\n[医] 侵袭, 侵入, 发病",
-    "example": "The museum has an exhibition about the invasion.",
-    "exampleCn": "博物馆有一个关于那次入侵的展览。",
+    "example": "Please check the spelling of 'invasion'.",
+    "exampleCn": "请检查 invasion 的拼写。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -35925,8 +35925,8 @@
     "phonetic": "'neivi",
     "pos": "n.",
     "meaning": "n. 海军, 海军人员, 海军军力, 烟蒂",
-    "example": "He served in the navy for fifteen years and sailed across every major ocean on the planet.",
-    "exampleCn": "他在海军服役了十五年期间航行穿越了地球上每一个主要的大洋。",
+    "example": "Please check the spelling of 'navy'.",
+    "exampleCn": "请检查 navy 的拼写。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -35998,8 +35998,8 @@
     "phonetic": "'ledʒәnd",
     "pos": "n.",
     "meaning": "n. 传说, 传奇文学, 图例\\n[计] 图例",
-    "example": "According to ancient legend the castle was built by a king who wanted to protect his people.",
-    "exampleCn": "据古老传说这座城堡是由一位想保护人民免受凶猛恶龙侵害的国王建造的。",
+    "example": "The guide told us a legend about the lake.",
+    "exampleCn": "导游给我们讲了一个关于湖泊的传说。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -36166,8 +36166,8 @@
     "phonetic": "'rebl",
     "pos": "v.",
     "meaning": "n. 叛徒, 反叛者\\nvi. 造反, 反抗, 抵抗, 反感\\na. 造反的, 反抗的",
-    "example": "The young rebel refused to follow the rules and instead led a peaceful protest that changed the town.",
-    "exampleCn": "那位年轻的反叛者拒绝遵守规则而是领导了一场和平抗议永远改变了这个镇。",
+    "example": "The children rebel against early bedtimes.",
+    "exampleCn": "孩子们反对太早上床睡觉。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -36402,8 +36402,8 @@
     "phonetic": "'kә:nәl",
     "pos": "n.",
     "meaning": "n. 陆军上校, 长官",
-    "example": "The colonel stood before his troops and delivered a stirring speech the night before the final decisive battle.",
-    "exampleCn": "上校在最后一役前夕站在他的部队前发表了激动人心的演讲。",
+    "example": "Please check the spelling of 'colonel'.",
+    "exampleCn": "请检查 colonel 的拼写。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -36738,8 +36738,8 @@
     "phonetic": "skєә",
     "pos": "v.",
     "meaning": "n. 惊吓, 恐慌\\nvt. 惊吓, 使恐慌\\nvi. 受惊",
-    "example": "A war scare.",
-    "exampleCn": "战争恐慌。",
+    "example": "The sudden noise gave me a scare.",
+    "exampleCn": "突如其来的噪声吓了我一跳。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -37130,8 +37130,8 @@
     "phonetic": "'nauәdeiz",
     "pos": "adv.",
     "meaning": "n. 现在, 现时, 当今\\nadv. 时下, 现今",
-    "example": "It is solely by their language that the upper classes nowadays are distinguished.",
-    "exampleCn": "现在的上层阶级仅凭他们的语言来区分。",
+    "example": "People often read books on phones nowadays.",
+    "exampleCn": "如今人们常在手机上读书。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -37186,8 +37186,8 @@
     "phonetic": "'ru:lә",
     "pos": "n.",
     "meaning": "n. 统治者, 管理者, 尺, 直尺\\nn. 划线板\\n[计] 标尺",
-    "example": "The ancient ruler governed the kingdom with wisdom and the people lived in peace for more than forty.",
-    "exampleCn": "那位古代统治者以智慧治理王国人民安居乐业了四十多年。",
+    "example": "Use a ruler to draw the line.",
+    "exampleCn": "用尺子画这条线。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -38286,8 +38286,8 @@
     "phonetic": "'mɑ:ksist",
     "pos": "n.",
     "meaning": "a. 马克思主义的\\nn. 马克思主义者",
-    "example": "The Marxist scholar argued that economic forces are the primary driver of all major historical changes over time.",
-    "exampleCn": "这位马克思主义学者认为经济力量是长期所有重大历史变革的主要驱动力。",
+    "example": "We looked up the word 'marxist'.",
+    "exampleCn": "我们查了 marxist 这个词。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -39224,8 +39224,8 @@
     "phonetic": "im'prizn",
     "pos": "v.",
     "meaning": "vt. 使下狱, 关闭, 拘禁, 限制\\n[法] 关押, 监禁, 限制",
-    "example": "The king ordered his guards to imprison the traitor in the deepest darkest dungeon beneath the ancient castle.",
-    "exampleCn": "国王命令卫兵将叛徒终身囚禁在古老城墙下最深最暗的地牢里。",
+    "example": "Thick ice can imprison a boat.",
+    "exampleCn": "厚冰能把船困住。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -39490,8 +39490,8 @@
     "phonetic": "mɒ:n",
     "pos": "v.",
     "meaning": "v. 哀悼, 忧伤, 服丧",
-    "example": "The whole nation came together to mourn the loss of the beloved leader who had guided them.",
-    "exampleCn": "整个国家团结起来哀悼那位引导他们走过那么多艰难岁月的敬爱领导人的逝世。",
+    "example": "She took time to mourn her lost pet.",
+    "exampleCn": "她花了一些时间哀悼离世的宠物。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -39630,8 +39630,8 @@
     "phonetic": "'selfiʃ",
     "pos": "adj.",
     "meaning": "a. 自私的, 利己主义的, 自我中心的",
-    "example": "Selfish men were...trying to make capital for themselves out of the sacred cause of civil rights.",
-    "exampleCn": "自私的人……试图从公民权利的神圣事业中为自己谋取资本。",
+    "example": "It is selfish to take all the cake.",
+    "exampleCn": "把蛋糕都拿走很自私。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -39826,8 +39826,8 @@
     "phonetic": "'ni:dlis",
     "pos": "adj.",
     "meaning": "a. 不需要的, 不必要的",
-    "example": "A strikers' tent camp...was burned with needless loss of life.",
-    "exampleCn": "罢工者的帐篷营地……被烧毁，造成不必要的人员伤亡。",
+    "example": "A clear label prevents needless confusion.",
+    "exampleCn": "清楚的标签能避免不必要的困惑。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -40302,8 +40302,8 @@
     "phonetic": "ri'dʒɒis",
     "pos": "v.",
     "meaning": "vt. 使欢喜\\nvi. 欣喜, 高兴, 庆祝",
-    "example": "The whole village gathered to rejoice after the long war finally ended.",
-    "exampleCn": "漫长的战争终于结束后，全村人聚在一起欢庆。",
+    "example": "We rejoice at the good news.",
+    "exampleCn": "我们为这个好消息感到高兴。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -40736,8 +40736,8 @@
     "phonetic": "'flu:әnt",
     "pos": "adj.",
     "meaning": "a. 流利的, 流畅的",
-    "example": "She is fluent in four languages and works as a translator for the United Nations in Geneva.",
-    "exampleCn": "她能流利使用四种语言在日内瓦联合国担任翻译。",
+    "example": "She is fluent in four languages.",
+    "exampleCn": "她能流利地说四种语言。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -40960,8 +40960,8 @@
     "phonetic": "'tri:zn",
     "pos": "n.",
     "meaning": "n. 叛逆, 不忠, 叛国罪\\n[法] 叛逆, 通敌, 叛国罪",
-    "example": "He was found guilty of treason and sentenced to life in prison for betraying his country.",
-    "exampleCn": "他被判叛国罪成立因将国家出卖给外国势力被判处终身监禁。",
+    "example": "Please check the spelling of 'treason'.",
+    "exampleCn": "请检查 treason 的拼写。",
     "category": "cet4",
     "categories": [
       "cet4",
@@ -41763,8 +41763,8 @@
     "phonetic": "'reitiŋ",
     "pos": "n.",
     "meaning": "n. 等级, 额定功率, 责骂\\n[经] 等级评定",
-    "example": "The restaurant has a five-star rating and has been voted the best place to eat.",
-    "exampleCn": "这家餐厅有五星评级连续三年被评为全市最好的吃饭地方。",
+    "example": "The cafe has a high customer rating.",
+    "exampleCn": "这家咖啡馆的顾客评分很高。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -41880,8 +41880,8 @@
     "phonetic": "'fʌndiŋ",
     "pos": "n.",
     "meaning": "债务转期",
-    "example": "The new youth centre was built with funding from the local council and donations from businesses and residents.",
-    "exampleCn": "新的青少年中心由地方议会拨款和全城商家及居民捐款建成。",
+    "example": "The club is funding new library shelves.",
+    "exampleCn": "俱乐部正在资助添置图书馆书架。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -41919,8 +41919,8 @@
     "phonetic": ".kәuә'liʃәn",
     "pos": "n.",
     "meaning": "n. 结合体, 结合, 联合\\n[经] 联合, 联盟",
-    "example": "The two parties formed a coalition government after neither won enough seats to rule on their own.",
-    "exampleCn": "两个政党组成联合政府因为双方在大选中都未能赢得足够的席位单独执政。",
+    "example": "The clubs formed a coalition to clean the park.",
+    "exampleCn": "几个俱乐部联合起来清扫公园。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -42140,8 +42140,8 @@
     "phonetic": "'senәtә",
     "pos": "n.",
     "meaning": "n. 参议员, (某些大学的)理事\\n[法] 参议员, 上议员",
-    "example": "The senator gave a passionate speech about the need for better healthcare in rural communities across the state.",
-    "exampleCn": "参议员就她所代表的州内农村社区需要更好的医疗保健发表了热情洋溢的演讲。",
+    "example": "The teacher explained the meaning of 'senator'.",
+    "exampleCn": "老师解释了 senator 的含义。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -42153,8 +42153,8 @@
     "phonetic": "'terәrist",
     "pos": "n.",
     "meaning": "n. 恐怖分子\\n[法] 恐怖份子, 恐怖主义",
-    "example": "The police managed to track down the terrorist before he could carry out his planned attack.",
-    "exampleCn": "警方设法在恐怖分子实施对拥挤城市广场的计划袭击之前追踪到了他。",
+    "example": "Please check the spelling of 'terrorist'.",
+    "exampleCn": "请检查 terrorist 的拼写。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -42179,8 +42179,8 @@
     "phonetic": ".vaiә'leiʃәn",
     "pos": "n.",
     "meaning": "n. 违反, 违背, 妨碍\\n[法] 违犯, 违背, 违反",
-    "example": "He claimed a violation of his rights under the Fifth Amendment.",
-    "exampleCn": "他声称这侵犯了他根据第五修正案享有的权利。",
+    "example": "Parking here is a violation of the club rules.",
+    "exampleCn": "在这里停车违反俱乐部规定。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -42244,8 +42244,8 @@
     "phonetic": "kәm'pli:ʃәn",
     "pos": "n.",
     "meaning": "n. 完成\\n[经] 完井, 结束, 完工",
-    "example": "The completion of the new bridge was celebrated with a ceremony attended by the mayor and hundreds.",
-    "exampleCn": "新桥的竣工通过上周六市长和数百名当地居民参加的仪式来庆祝。",
+    "example": "The completion of the bridge took two years.",
+    "exampleCn": "这座桥花了两年建成。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -42764,8 +42764,8 @@
     "phonetic": "ә'rei",
     "pos": "v.",
     "meaning": "n. 排列, 衣服, 大批, 军队\\nvt. 布署, 打扮, 排列\\n[计] 数组; 阵列",
-    "example": "An array of troops in battle order.",
-    "exampleCn": "排列整齐的部队。",
+    "example": "An array of flowers filled the window.",
+    "exampleCn": "窗前摆满了各式各样的花。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -42790,8 +42790,8 @@
     "phonetic": ".diplә'mætik",
     "pos": "adj.",
     "meaning": "a. 外交的, 老练的\\n[法] 外交的, 外交上的, 文献上的",
-    "example": "She works in the diplomatic service.",
-    "exampleCn": "她从事外交工作。",
+    "example": "She gave a diplomatic answer to the complaint.",
+    "exampleCn": "她对投诉作出了得体的回答。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -42972,8 +42972,8 @@
     "phonetic": "'bælәt",
     "pos": "v.",
     "meaning": "n. 投票, 投票用纸, 抽签\\nvi. 投票, 抽签\\nvt. 投票选出, 拉选票",
-    "example": "The committee decided to hold a secret ballot so that members could vote freely without any fear.",
-    "exampleCn": "委员会决定进行无记名投票这样成员可以自由投票而不必担心他人评判。",
+    "example": "We used a secret ballot to choose a book.",
+    "exampleCn": "我们以不记名投票的方式选书。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -42985,8 +42985,8 @@
     "phonetic": ".dʒʌstifi'keiʃәn",
     "pos": "n.",
     "meaning": "n. 辩护, 证明正当, 释罪\\n[计] 调整",
-    "example": "He considered misrule a justification for revolution.",
-    "exampleCn": "他认为暴政是革命的理由。",
+    "example": "There is no justification for wasting food.",
+    "exampleCn": "浪费食物没有道理。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -43167,8 +43167,8 @@
     "phonetic": "'kɔmәnwelθ",
     "pos": "n.",
     "meaning": "n. 英联邦（写作 the Commonwealth）；联邦；共和国；国民整体",
-    "example": "Students from several Commonwealth countries attended the summer course.",
-    "exampleCn": "来自几个英联邦国家的学生参加了这门暑期课程。",
+    "example": "Please check the spelling of 'commonwealth'.",
+    "exampleCn": "请检查 commonwealth 的拼写。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -43206,8 +43206,8 @@
     "phonetic": "'straikiŋ",
     "pos": "n.",
     "meaning": "a. 醒目的, 惊人的, 打击的, 罢工的\\n[法] 罢工的, 罢市的, 罢课的",
-    "example": "The auto workers are striking for higher wages.",
-    "exampleCn": "汽车工人正在罢工要求提高工资。",
+    "example": "The red scarf is striking against her black coat.",
+    "exampleCn": "红围巾与她的黑外套形成鲜明对比。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -43765,8 +43765,8 @@
     "phonetic": "'embәsi",
     "pos": "n.",
     "meaning": "n. 大使馆, 大使馆全体人员\\n[经] 大使馆",
-    "example": "She rushed to the embassy as soon as she realised her passport had been stolen from her bag.",
-    "exampleCn": "她那天早上发现护照在拥挤的公交车上被从包里偷走后立刻赶去了大使馆。",
+    "example": "Please check the spelling of 'embassy'.",
+    "exampleCn": "请检查 embassy 的拼写。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -43804,8 +43804,8 @@
     "phonetic": ".kɔnfrʌn'teiʃәn",
     "pos": "n.",
     "meaning": "n. 对抗；对质；面对",
-    "example": "The government was not ready for a confrontation with the unions.",
-    "exampleCn": "政府还没有准备好与工会对抗。",
+    "example": "We avoided a confrontation over the seating plan.",
+    "exampleCn": "我们避免了因座位安排起争执。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -43947,8 +43947,8 @@
     "phonetic": "ә'laid",
     "pos": "v.",
     "meaning": "a. 联盟的, 联姻的, 联系起来的",
-    "example": "He allied himself with the Communists.",
-    "exampleCn": "他与共产党结盟。",
+    "example": "The two clubs are allied in this project.",
+    "exampleCn": "两个俱乐部在这个项目上合作。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -43986,8 +43986,8 @@
     "phonetic": "'fækʃәn",
     "pos": "n.",
     "meaning": "n. 小派系, 内讧\\n[法] 宗派, 派别, 小集团",
-    "example": "A small faction within the party opposed the new policy and threatened to block its passage.",
-    "exampleCn": "党内一个小派系反对新政策并威胁要在下周阻止其在议会通过。",
+    "example": "A small faction in the club preferred a different route.",
+    "exampleCn": "俱乐部里一小部分人更喜欢另一条路线。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -43999,8 +43999,8 @@
     "phonetic": "in'tækt",
     "pos": "adj.",
     "meaning": "a. 尚未被人碰过的, 原封不动的, 完整的\\n[医] 完整的, 无伤的",
-    "example": "Fought to keep the union intact.",
-    "exampleCn": "为保持工会的完整而奋斗。",
+    "example": "The cup remained intact after the fall.",
+    "exampleCn": "杯子掉下来后仍完好无损。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -44402,8 +44402,8 @@
     "phonetic": "di'saisiv",
     "pos": "adj.",
     "meaning": "a. 决定性的, 坚定的, 果断的",
-    "example": "Cast the decisive vote.",
-    "exampleCn": "投出决定性的一票。",
+    "example": "Her last goal was decisive.",
+    "exampleCn": "她最后那个进球决定了胜负。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -44662,8 +44662,8 @@
     "phonetic": "kɒ:",
     "pos": "n.",
     "meaning": "n. 军, 队, 部队, 兵种\\n[医] 对, 团; 体, 物体",
-    "example": "She joined the medical corps last year.",
-    "exampleCn": "她去年加入了医疗队。",
+    "example": "We looked up the word 'corps'.",
+    "exampleCn": "我们查了 corps 这个词。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -44805,8 +44805,8 @@
     "phonetic": "ri'zentmәnt",
     "pos": "n.",
     "meaning": "n. 怨恨, 愤恨",
-    "example": "Years of unfair treatment had built up a deep resentment among the workers and the union finally called.",
-    "exampleCn": "多年不公平的待遇在工人中积累了深深的怨恨工会终于在早春号召罢工。",
+    "example": "The unfair seating plan caused resentment.",
+    "exampleCn": "不公平的座位安排引起了不满。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -44987,8 +44987,8 @@
     "phonetic": "di'kri:",
     "pos": "v.",
     "meaning": "n. 法令, 判决, 天意\\nvt. 颁布, 判决\\nvi. 发布命令",
-    "example": "The King only can decree.",
-    "exampleCn": "只有国王才能颁布法令。",
+    "example": "Can you pronounce 'decree' clearly?",
+    "exampleCn": "你能清楚地读出 decree 吗？",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -45260,8 +45260,8 @@
     "phonetic": "'mɒnәk",
     "pos": "n.",
     "meaning": "n. 帝王, 统治者, 元首\\n[医] 单原型(植)",
-    "example": "The monarch had ruled the kingdom for over fifty years and was loved by the people.",
-    "exampleCn": "这位君主统治王国已超过五十年因其智慧和对人民福祉的不懈奉献而深受爱戴。",
+    "example": "The teacher explained the meaning of 'monarch'.",
+    "exampleCn": "老师解释了 monarch 的含义。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -45377,8 +45377,8 @@
     "phonetic": "buә'ʒwɑ:",
     "pos": "n./adj.",
     "meaning": "n. 中产阶级分子, 商人, 资产阶级\\na. 中产阶级的, 平庸的\\nn. 九点活字",
-    "example": "The novel describes bourgeois life in the city.",
-    "exampleCn": "这部小说描写了城市中产阶级的生活。",
+    "example": "Please check the spelling of 'bourgeois'.",
+    "exampleCn": "请检查 bourgeois 的拼写。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -45507,8 +45507,8 @@
     "phonetic": "di'nauns",
     "pos": "v.",
     "meaning": "vt. 告发, 抨击, 谴责\\n[法] 谴责, 斥责, 告发",
-    "example": "The opposition leader stood up in parliament to denounce the government's handling of the crisis as incompetent.",
-    "exampleCn": "反对党领袖在议会中站起来谴责政府对危机的处理无能且对国家造成了严重伤害。",
+    "example": "The club will denounce cheating in any form.",
+    "exampleCn": "俱乐部将谴责任何形式的作弊。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -45559,8 +45559,8 @@
     "phonetic": "'rɒiәlti",
     "pos": "n.",
     "meaning": "n. 皇室, 王族成员, 王权, 特权阶层, 庄严\\n[经] 特许权, 使用费, 使用税",
-    "example": "The wedding was attended by royalty.",
-    "exampleCn": "皇室成员出席了婚礼。",
+    "example": "The author received a royalty for each book sold.",
+    "exampleCn": "作者每售出一本书都会获得一笔版税。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -46014,8 +46014,8 @@
     "phonetic": "'sinikәl",
     "pos": "adj.",
     "meaning": "a. 愤世嫉俗的, 讽刺的, 冷嘲的",
-    "example": "She was cynical about the politician's promises having heard the same empty words spoken by countless others.",
-    "exampleCn": "她对那位政治家的承诺持怀疑态度因为过去听过无数其他人说过同样空洞却从未兑现的话。",
+    "example": "She was cynical about the shop's promises.",
+    "exampleCn": "她不相信商店作出的承诺。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -46118,8 +46118,8 @@
     "phonetic": "ә'li:dʒәns",
     "pos": "n.",
     "meaning": "n. 忠贞, 效忠",
-    "example": "The soldiers swore allegiance to the new king and pledged to defend the realm against all enemies.",
-    "exampleCn": "士兵们向新国王宣誓效忠承诺此后永远保卫王国抵御一切外敌和内敌。",
+    "example": "His allegiance to the team never changed.",
+    "exampleCn": "他对球队的忠诚从未改变。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -46326,8 +46326,8 @@
     "phonetic": "'kɒnsikwәnt",
     "pos": "n.",
     "meaning": "n. 随后发生的事情, 结果\\na. 作为结果的, 合乎逻辑的",
-    "example": "The period of tension and consequent need for military preparedness.",
-    "exampleCn": "紧张时期以及随之而来的军事准备的需要。",
+    "example": "The rain and consequent delay upset our plans.",
+    "exampleCn": "大雨和随之而来的延误打乱了我们的计划。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -46404,8 +46404,8 @@
     "phonetic": ".prәuhi'biʃәn",
     "pos": "n.",
     "meaning": "n. 禁令, 禁止",
-    "example": "In 1920 the 18th amendment to the Constitution established prohibition in the US.",
-    "exampleCn": "1920年，美国宪法第18修正案确立了禁酒令。",
+    "example": "The notice explains the prohibition on swimming here.",
+    "exampleCn": "告示说明这里禁止游泳。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -46482,8 +46482,8 @@
     "phonetic": "'dʒelәsi",
     "pos": "n.",
     "meaning": "n. 妒忌, 猜忌, 羡慕\\n[法] 妒忌, 嫉妒, 猜忌",
-    "example": "Cherish their official political freedom with fierce jealousy.",
-    "exampleCn": "怀着强烈的嫉妒心珍惜他们的官方政治自由。",
+    "example": "He felt jealousy when she won the prize.",
+    "exampleCn": "她获奖时，他感到嫉妒。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -46560,8 +46560,8 @@
     "phonetic": ".ʌn'limitid",
     "pos": "adj.",
     "meaning": "a. 无限的, 不受限制的, 无条件的\\n[经] 无限的, 不定的",
-    "example": "To start with a theory of unlimited freedom is to end up with unlimited despotism.",
-    "exampleCn": "以无限自由的理论开始，就会以无限的专制结束。",
+    "example": "The pass gives unlimited access to the pool.",
+    "exampleCn": "这张通行证让你不限次数使用游泳池。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -46651,8 +46651,8 @@
     "phonetic": "hʌm",
     "pos": "v.",
     "meaning": "n. 嗡嗡声, 哼声, 杂声\\nvi. 发低哼声\\nvt. 哼, 用哼声表示\\ninterj. 哼, 嗯",
-    "example": "There is a constant hum of military preparation.",
-    "exampleCn": "军事准备的嗡嗡声持续不断。",
+    "example": "I could hear the hum of the fridge.",
+    "exampleCn": "我能听见冰箱的嗡嗡声。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -47275,8 +47275,8 @@
     "phonetic": "'militәnt",
     "pos": "n./adj.",
     "meaning": "adj. 好战的；激进的；n. 激进分子",
-    "example": "A militant spoke at the meeting.",
-    "exampleCn": "一名激进分子在会上发了言。",
+    "example": "Please check the spelling of 'militant'.",
+    "exampleCn": "请检查 militant 的拼写。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -47366,8 +47366,8 @@
     "phonetic": "in'dʌkʃәn",
     "pos": "n.",
     "meaning": "n. 归纳法, 感应, 就职, 入门\\n[计] 归纳法",
-    "example": "He was ordered to report for induction into the army.",
-    "exampleCn": "他奉命去报到入伍。",
+    "example": "New staff attend an induction course.",
+    "exampleCn": "新员工参加入职课程。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -47470,8 +47470,8 @@
     "phonetic": "'vi:tәu",
     "pos": "n./v.",
     "meaning": "n. 否决权\\nvt. 否决, 禁止",
-    "example": "The president used his veto to block the bill.",
-    "exampleCn": "总统行使否决权，阻止了这项法案。",
+    "example": "My sister used her veto over the film choice.",
+    "exampleCn": "姐姐否决了选哪部电影的提议。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -47574,8 +47574,8 @@
     "phonetic": "wi:ld",
     "pos": "v.",
     "meaning": "vt. 挥舞, 运用",
-    "example": "Wield power and authority.",
-    "exampleCn": "行使权力和权威。",
+    "example": "She can wield a paintbrush with great skill.",
+    "exampleCn": "她能熟练运用画笔。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -47678,8 +47678,8 @@
     "phonetic": "ә'vә:t",
     "pos": "v.",
     "meaning": "vt. 转开, 避免, 防止",
-    "example": "Avert a strike.",
-    "exampleCn": "避免罢工。",
+    "example": "Quick repairs helped avert a breakdown.",
+    "exampleCn": "及时维修有助于避免故障。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -48003,8 +48003,8 @@
     "phonetic": "dʌv",
     "pos": "n.",
     "meaning": "n. 鸽子\\ndive的过去式",
-    "example": "A white dove flew over the square and landed on the fountain as the peace agreement was signed.",
-    "exampleCn": "一只白鸽飞过广场落在喷泉上与此同时两位领导人在附近的大楼里签署了和平协议。",
+    "example": "A white dove landed beside the fountain.",
+    "exampleCn": "一只白鸽落在喷泉旁边。",
     "category": "cet6",
     "categories": [
       "cet6"
@@ -48146,8 +48146,8 @@
     "phonetic": "'fɒ:tris",
     "pos": "v.",
     "meaning": "n. 城堡, 要塞\\nvt. 筑要塞, 以要塞防守",
-    "example": "The fortress was built on an island just off the coast and for centuries it guarded the entrance.",
-    "exampleCn": "这座堡垒建在离海岸不远的一个小岛上几个世纪以来一直守卫着下方繁忙海港的入口不受侵略者侵犯。",
+    "example": "The children built a small sand fortress.",
+    "exampleCn": "孩子们建了一座小沙堡。",
     "category": "cet6",
     "categories": [
       "cet6"

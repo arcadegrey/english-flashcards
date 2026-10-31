@@ -9,6 +9,8 @@ const read=async p=>JSON.parse(await readFile(new URL(p,root),'utf8'));
 const serialize=v=>JSON.stringify(v,null,2)+'\n',hash=v=>createHash('sha256').update(v).digest('hex');
 const entries=await read(`${dir}/entries-2026-10-29.json`),source=await read('data/vocabulary-common-senses-repair/reviews-2026-10-29.json');
 const words=await read('public/data/vocabulary.json'),core=await read('public/data/vocabulary/core.json');
+const latestNeutral=await read('data/vocabulary-neutral-examples/reviews-2026-10-31.json');
+if(hash(serialize(words))===latestNeutral.afterSha256){console.log('Preserving the registered neutral-example repair.');process.exit(0);}
 const latestMulti=await read('data/vocabulary-multi-sense-repair/reviews-2026-10-31.json');
 if(hash(serialize(words))===latestMulti.afterSha256){console.log('Preserving the registered multi-sense repair.');process.exit(0);}
 const latestSingle=await read('data/vocabulary-single-example/reviews-2026-10-31.json');

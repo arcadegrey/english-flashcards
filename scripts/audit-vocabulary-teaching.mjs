@@ -20,7 +20,7 @@ const syntax = await read('data/vocabulary-teaching-audit/syntax-screen-2026-10-
 const p1Repair = await read('data/vocabulary-p1-repair/reviews-2026-10-29.json');
 const p2Repair = await read('data/vocabulary-p2-repair/reviews-2026-10-29.json');
 const shortRepair = await read('data/vocabulary-short-example-repair/reviews-2026-10-29.json');
-const latestRepair = await read('data/vocabulary-multi-sense-repair/reviews-2026-10-31.json');
+const latestRepair = await read('data/vocabulary-neutral-examples/reviews-2026-10-31.json');
 assert.equal(latestRepair.afterSha256, currentSourceHash, 'Unregistered latest vocabulary edits.');
 assert.equal(shortRepair.afterSha256, hash(JSON.stringify(beforeCommonSensesReview(currentVocabulary),null,2)+'\n'), 'Unregistered latest vocabulary edits.');
 assert.equal(p2Repair.afterSha256, hash(JSON.stringify(beforeShortExampleReview(currentVocabulary),null,2)+'\n'), 'Unregistered vocabulary changes: do not claim current repair status.');

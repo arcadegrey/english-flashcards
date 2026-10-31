@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
-import { beforeMultiSenseReview } from '../shared/vocabularyHistory.js';
+import { beforeMultiSenseReview, beforeNeutralExampleReview } from '../shared/vocabularyHistory.js';
 import { correctedVocabularyAudioUrl } from '../shared/vocabularyAudio.js';
 import { createVocabularyDelivery } from '../src/data/vocabularyDelivery.js';
 import { summarizeVocabularyWord, applyWordDetails } from '../src/data/vocabularySummary.js';
@@ -12,7 +12,8 @@ import { buildWordAssignment, gradeWordAssignment } from '../shared/wordAssignme
 const read = async path => JSON.parse(await readFile(new URL(`../${path}`, import.meta.url), 'utf8'));
 const hash = value => createHash('sha256').update(value).digest('hex');
 const serialize = value => JSON.stringify(value, null, 2) + '\n';
-const words = await read('public/data/vocabulary.json'), byId = new Map(words.map(word => [word.id, word]));
+const currentWords = await read('public/data/vocabulary.json'), currentById = new Map(currentWords.map(word => [word.id, word]));
+const words = beforeNeutralExampleReview(currentWords), byId = new Map(words.map(word => [word.id, word]));
 const register = await read('data/vocabulary-multi-sense-repair/reviews-2026-10-31.json');
 const original = await read('data/vocabulary-multi-sense-repair/source-register-2026-10-31.json');
 const ids = new Set([...original.entries, ...original.gaps].map(entry => entry.id));
@@ -67,7 +68,7 @@ test('cold summaries and details reconstruct all current multi-sense records wit
   const summaries = await delivery.loadCatalogIds([...ids]); assert.equal(summaries.length, 133);
   assert(summaries.every(word => !Object.hasOwn(word, 'examples')));
   assert(requests.every(path => path.includes('/catalog/')));
-  for (const summary of summaries) assert.deepEqual(applyWordDetails(summary, await delivery.loadDetails(summary)), byId.get(summary.id));
+  for (const summary of summaries) assert.deepEqual(applyWordDetails(summary, await delivery.loadDetails(summary)), currentById.get(summary.id));
   const custom = { ...register.reviews[0].before, example: 'My own saved example.', exampleCn: '我自己保存的例句。' };
   assert.strictEqual(await delivery.loadDetails(custom), custom);
 });

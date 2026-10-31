@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-31",
+  "batch": "2026-10-31-neutral-examples",
+  "sourceSha256": "0331cc4f88bd961682c9c2725446e0ccd444f8f351f0950604e05bade4acb7a8",
+  "wordRecords": 413,
+  "newSentences": 413,
+  "expectedFiles": 1652,
+  "validatedLocalFiles": 1652,
+  "verifiedPublicFiles": 1652,
+  "manifestMatched": true,
+  "manifestSha256": "6f9216c56c9f6ddab1bafc7d259f69b8632519f875fe793aff8e312e195a693a",
+  "baseUrl": "https://audio.englishflashcards.cn",
+  "bytes": 16139664,
+  "failures": 0,
+  "method": "Every local recording: size, SHA-256, 24 kHz mono MP3 parameters, complete finite decode and non-silence. Every public recording: HTTP 200, audio/mpeg, size and SHA-256; manifest compared byte-for-byte. Existing local proxy used; TLS certificate verification remained enabled.",
+  "reports": [
+    "output/neutral-example-audio-local.json",
+    "output/neutral-example-audio-public.json"
+  ]
+}

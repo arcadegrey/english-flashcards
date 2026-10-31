@@ -110,6 +110,7 @@
 }
 
 .collection-study-panel .learn-refresh-word-card {
+  container-type: inline-size;
   width: min(100%, 860px);
   border-color: rgba(79, 124, 255, 0.14);
   box-shadow: 0 22px 46px rgba(79, 124, 255, 0.12);
@@ -390,6 +391,20 @@
     #111827;
 }
 
+.dark .collection-study-panel .learn-refresh-word-card {
+  background:
+    radial-gradient(circle at 50% 18%, rgba(79, 124, 255, 0.16), transparent 34%),
+    #111827;
+}
+
+.dark .collection-study-panel .learn-refresh-example-en {
+  color: var(--wl-text);
+}
+
+.dark .collection-study-panel .learn-refresh-example-cn {
+  color: var(--wl-subtext);
+}
+
 .dark .learn-refresh-save-word {
   background: #111827;
 }
@@ -529,6 +544,12 @@
     white-space: nowrap;
     word-break: normal;
     overflow-wrap: normal;
+  }
+
+  .collection-study-panel .learn-refresh-word-card .learn-refresh-word {
+    font-size: clamp(24px, min(17vw, calc(100cqw / (var(--word-fit-length, 8) * 0.65))), 78px);
+    white-space: normal;
+    overflow-wrap: anywhere;
   }
 
   .learn-refresh-word-card .learn-refresh-phonetic {

@@ -1,6 +1,7 @@
 /* Existing collection rules extracted from word-learning-refresh.css. */
 .collection-page-flow {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 18px;
   width: 100%;
   margin: 0 0 40px;
@@ -127,6 +128,7 @@
 
 .collection-work-card {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto auto auto auto;
   gap: 18px;
   border: 1px solid rgba(79, 124, 255, 0.14);
@@ -229,6 +231,7 @@
 
 .collection-study-panel {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
   justify-items: center;
 }

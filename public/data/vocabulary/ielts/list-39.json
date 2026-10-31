@@ -44,8 +44,8 @@
     "phonetic": "/ˈsɪvl/",
     "pos": "adj.",
     "meaning": "公民的，民事的/文明的",
-    "example": "The country suffered a civil war./Please remain civil during the debate.",
-    "exampleCn": "这个国家经历了一场内战。/辩论时请保持礼貌。",
+    "example": "Please remain civil during the discussion.",
+    "exampleCn": "讨论时请保持礼貌。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -166,8 +166,8 @@
     "phonetic": "/ˈjuːniən/",
     "pos": "n.",
     "meaning": "联合；工会",
-    "example": "The union asked for better working conditions.",
-    "exampleCn": "工会要求改善工作条件。",
+    "example": "The design is a union of wood and glass.",
+    "exampleCn": "这个设计将木材和玻璃融为一体。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -186,8 +186,8 @@
     "phonetic": "/ˈlɪbərti/",
     "pos": "n.",
     "meaning": "自由",
-    "example": "People fought for liberty and justice.",
-    "exampleCn": "人们为自由和正义而斗争。",
+    "example": "You are at liberty to leave now.",
+    "exampleCn": "你现在可以随意离开。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -226,8 +226,8 @@
     "phonetic": "/sɪɡˈnɪfɪkənt/",
     "pos": "adj.",
     "meaning": "重要的；显著的",
-    "example": "The policy caused a significant decline in costs.",
-    "exampleCn": "这项政策导致成本显著下降。",
+    "example": "Practice led to a significant improvement.",
+    "exampleCn": "练习带来了显著进步。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -307,8 +307,8 @@
     "phonetic": "/ˈemɪˌɡreɪt/",
     "pos": "v.",
     "meaning": "移居国外",
-    "example": "Many families chose to emigrate during the war.",
-    "exampleCn": "战争期间许多家庭选择移居国外。",
+    "example": "Her family plans to emigrate next year.",
+    "exampleCn": "她的家人计划明年移居国外。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -368,8 +368,8 @@
     "phonetic": "/kəˈloʊniəl/",
     "pos": "adj./n.",
     "meaning": "殖民地的/殖民时期的/殖民者",
-    "example": "Colonial architecture still influences the city’s appearance.",
-    "exampleCn": "殖民时期的建筑仍然影响着这座城市的外观。",
+    "example": "The teacher explained the meaning of 'colonial'.",
+    "exampleCn": "老师解释了 colonial 的含义。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -488,8 +488,8 @@
     "phonetic": "/θroʊn/",
     "pos": "n.",
     "meaning": "王位/宝座",
-    "example": "The prince hoped to inherit the throne.",
-    "exampleCn": "王子希望继承王位。",
+    "example": "The actor sat on a painted wooden throne.",
+    "exampleCn": "演员坐在一把涂过漆的木制王座上。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -508,8 +508,8 @@
     "phonetic": "/reɪn/",
     "pos": "n./v.",
     "meaning": "统治时期/统治",
-    "example": "The king’s reign lasted for nearly forty years.",
-    "exampleCn": "这位国王的统治持续了将近四十年。",
+    "example": "Her reign as club champion lasted five years.",
+    "exampleCn": "她连续五年保持俱乐部冠军地位。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -640,8 +640,8 @@
     "phonetic": "ˈpaʊə",
     "pos": "n.",
     "meaning": "权力/力量/电力",
-    "example": "The president holds the power to veto legislation.",
-    "exampleCn": "总统有权否决立法。",
+    "example": "The machine needs more power.",
+    "exampleCn": "这台机器需要更多电力。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -776,8 +776,8 @@
     "phonetic": "/ɪˈstæblɪʃ ə ˈneɪʃn/",
     "pos": "v. phr.",
     "meaning": "建国/建立国家",
-    "example": "They worked to establish a nation free from colonial rule.",
-    "exampleCn": "他们为建立摆脱殖民统治的国家而奋斗。",
+    "example": "Can you pronounce 'establish a nation' clearly?",
+    "exampleCn": "你能清楚地读出 establish a nation 吗？",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -810,8 +810,8 @@
     "phonetic": "ˈfedərəl",
     "pos": "adj.",
     "meaning": "联邦的/联邦制的",
-    "example": "The United States has a federal system of government.",
-    "exampleCn": "美国实行联邦制政府。",
+    "example": "Please check the spelling of 'federal'.",
+    "exampleCn": "请检查 federal 的拼写。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -827,8 +827,8 @@
     "phonetic": "ˌfedəˈreɪʃn",
     "pos": "n.",
     "meaning": "联邦/联合会",
-    "example": "The sport is governed by the international federation.",
-    "exampleCn": "这项运动由国际联合会管理。",
+    "example": "The sports federation announced a training course.",
+    "exampleCn": "体育联合会公布了一门培训课程。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -878,8 +878,8 @@
     "phonetic": "ˈpʌpɪt",
     "pos": "n.",
     "meaning": "傀儡/木偶",
-    "example": "The dictator was seen as a puppet of foreign powers.",
-    "exampleCn": "这个独裁者被视为外国势力的傀儡。",
+    "example": "The child made a puppet from a sock.",
+    "exampleCn": "孩子用一只袜子做了一个木偶。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -895,8 +895,8 @@
     "phonetic": "kraʊn",
     "pos": "n.",
     "meaning": "王冠/王权",
-    "example": "The crown was placed on the new king's head.",
-    "exampleCn": "王冠被戴在新国王的头上。",
+    "example": "She wore a paper crown at the party.",
+    "exampleCn": "她在聚会上戴着纸王冠。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -912,8 +912,8 @@
     "phonetic": "riːθ",
     "pos": "n.",
     "meaning": "花圈/花环/桂冠",
-    "example": "They laid a wreath at the war memorial.",
-    "exampleCn": "他们在战争纪念碑前敬献了花圈。",
+    "example": "We hung a flower wreath on the door.",
+    "exampleCn": "我们在门上挂了一个花环。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -980,8 +980,8 @@
     "phonetic": "əˈsaɪləm",
     "pos": "n.",
     "meaning": "庇护/收容所/精神病院",
-    "example": "He applied for political asylum.",
-    "exampleCn": "他申请了政治庇护。",
+    "example": "Can you pronounce 'asylum' clearly?",
+    "exampleCn": "你能清楚地读出 asylum 吗？",
     "category": "ielts",
     "categories": [
       "ielts"

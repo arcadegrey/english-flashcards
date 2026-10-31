@@ -18,7 +18,7 @@ const currentById=new Map((await read('public/data/vocabulary.json')).map(word=>
 const register=await read('data/vocabulary-short-example-repair/reviews-2026-10-29.json');
 const audit=await read('data/vocabulary-short-example-audit/examples-2026-10-29.json');
 const p2=await read('data/vocabulary-p2-repair/reviews-2026-10-29.json');
-const latestRegister=await read('data/vocabulary-multi-sense-repair/reviews-2026-10-31.json');
+const latestRegister=await read('data/vocabulary-neutral-examples/reviews-2026-10-31.json');
 const baseline=beforeShortExampleReview(words);
 
 test('237 reviewed short candidates and the explicitly requested smoking example retain all IDs, order, IPA, categories and unrelated records',()=>{

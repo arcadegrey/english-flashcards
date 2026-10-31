@@ -2,7 +2,7 @@
   "auditDate": "2026-10-29",
   "input": "public/data/vocabulary.json",
   "inputSha256": "eb08780f5f05aa663c2b67121a358f9429b4c0450c6ced98debf3594f70df752",
-  "currentSourceSha256": "c2a7ade0fe5774f96e7bd737edf74da8bdc45fbf3ff0b16f531456b257f7328e",
+  "currentSourceSha256": "0331cc4f88bd961682c9c2725446e0ccd444f8f351f0950604e05bade4acb7a8",
   "screeningAppliesTo": "captured pre-short-repair snapshot; counts are historical candidates, not errors in the new examples",
   "repairStatus": {
     "batch": "2026-10-29-short-examples",
@@ -1905,8 +1905,8 @@
         "phonetic": ".diplә'mætik",
         "pos": "adj.",
         "meaning": "a. 外交的, 老练的\\n[法] 外交的, 外交上的, 文献上的",
-        "example": "She works in the diplomatic service.",
-        "exampleCn": "她从事外交工作。",
+        "example": "She gave a diplomatic answer to the complaint.",
+        "exampleCn": "她对投诉作出了得体的回答。",
         "category": "cet6",
         "categories": [
           "cet6"
@@ -2202,8 +2202,8 @@
         "phonetic": "kɒ:",
         "pos": "n.",
         "meaning": "n. 军, 队, 部队, 兵种\\n[医] 对, 团; 体, 物体",
-        "example": "She joined the medical corps last year.",
-        "exampleCn": "她去年加入了医疗队。",
+        "example": "We looked up the word 'corps'.",
+        "exampleCn": "我们查了 corps 这个词。",
         "category": "cet6",
         "categories": [
           "cet6"
@@ -5322,8 +5322,8 @@
         "phonetic": "buә'ʒwɑ:",
         "pos": "n./adj.",
         "meaning": "n. 中产阶级分子, 商人, 资产阶级\\na. 中产阶级的, 平庸的\\nn. 九点活字",
-        "example": "The novel describes bourgeois life in the city.",
-        "exampleCn": "这部小说描写了城市中产阶级的生活。",
+        "example": "Please check the spelling of 'bourgeois'.",
+        "exampleCn": "请检查 bourgeois 的拼写。",
         "category": "cet6",
         "categories": [
           "cet6"
@@ -7153,8 +7153,8 @@
         "phonetic": "in'veiʒәn",
         "pos": "n.",
         "meaning": "n. 侵犯, 侵入, 侵害\\n[医] 侵袭, 侵入, 发病",
-        "example": "The museum has an exhibition about the invasion.",
-        "exampleCn": "博物馆有一个关于那次入侵的展览。",
+        "example": "Please check the spelling of 'invasion'.",
+        "exampleCn": "请检查 invasion 的拼写。",
         "category": "cet4",
         "categories": [
           "cet4",
@@ -7958,8 +7958,8 @@
         "phonetic": ".aidiә'lɒdʒikәl",
         "pos": "adj.",
         "meaning": "a. 意识形态的, 空想的\\n[法] 思想的, 思想上的, 意识形态的",
-        "example": "The book explores ideological differences between the groups.",
-        "exampleCn": "这本书探讨了这些群体之间的思想差异。",
+        "example": "We looked up the word 'ideological'.",
+        "exampleCn": "我们查了 ideological 这个词。",
         "category": "daily",
         "categories": [
           "daily",

@@ -1,0 +1,408 @@
+14|accord|They worked in accord with the safety rules.|他们按照安全规定工作。
+32|advocate|Many teachers advocate reading every day.|许多老师提倡每天阅读。
+47|alliance|The two shops formed an alliance.|这两家商店建立了合作联盟。
+52|abolish|The club decided to abolish the old rule.|俱乐部决定废除旧规定。
+56|academy|She studies art at a local academy.|她在当地一所学院学艺术。
+79|administration|The new system simplifies office administration.|新系统简化了办公室的管理工作。
+95|aftermath|We cleaned the garden in the aftermath of the storm.|暴风雨过后，我们清理了花园。
+115|ally|My sister is my closest ally.|姐姐是我最亲近的伙伴。
+128|amend|Please amend the date on the form.|请修改表格上的日期。
+138|ancient|We found an ancient clay pot.|我们发现了一个古老的陶罐。
+153|appeal|This colorful book has great appeal for children.|这本色彩鲜艳的书对孩子很有吸引力。
+194|authority|She is an authority on garden plants.|她是园艺植物方面的专家。
+220|beast|A large beast stood beside the river.|一头大野兽站在河边。
+238|benefit|Daily walks benefit our health.|每天散步有益健康。
+371|capture|The photo captures her happy smile.|这张照片捕捉到了她开心的笑容。
+455|civil|Please remain civil during the discussion.|讨论时请保持礼貌。
+494|combat|Regular exercise can help combat stress.|经常锻炼有助于缓解压力。
+546|destine|She was destined to become a musician.|她注定会成为一名音乐家。
+612|presidential|Please check the spelling of 'presidential'.|请检查 presidential 的拼写。
+636|recapture|These photos recapture the joy of our trip.|这些照片再现了旅行的快乐。
+716|emperor|Please check the spelling of 'emperor'.|请检查 emperor 的拼写。
+735|warfare|The teacher explained the meaning of 'warfare'.|老师解释了 warfare 的含义。
+753|occupy|These books occupy the whole shelf.|这些书占满了整个架子。
+766|govern|These rules govern how we use the tools.|这些规则规定我们如何使用工具。
+768|realist|A realist knows that practice takes time.|现实主义者知道练习需要时间。
+860|union|The design is a union of wood and glass.|这个设计将木材和玻璃融为一体。
+875|liberty|You are at liberty to leave now.|你现在可以随意离开。
+897|declare|The teacher will declare the contest open.|老师将宣布比赛开始。
+959|invade|Ants can invade the kitchen in summer.|夏天蚂蚁会侵入厨房。
+984|vote|We vote on the next book to read.|我们投票决定下一本读什么书。
+1004|cap|He wore a blue cap.|他戴着一顶蓝色帽子。
+1037|focus|Please focus on this question.|请专注于这个问题。
+1044|redistribution|The redistribution of desks gave us more space.|重新分配课桌给我们腾出了更多空间。
+1103|universal|The need for sleep is universal.|睡眠是普遍的需求。
+1106|general|I have a general idea of the plan.|我大致了解这个计划。
+1159|regularize|We need to regularize the delivery times.|我们需要让送货时间固定下来。
+1161|significant|Practice led to a significant improvement.|练习带来了显著进步。
+1213|series|She wrote a series of short stories.|她写了一系列短篇故事。
+1223|reunite|The trip will reunite old friends.|这次旅行将让老朋友重聚。
+1228|reduction|The shop offers a reduction in price.|这家店提供价格优惠。
+1236|democracy|Please check the spelling of 'democracy'.|请检查 democracy 的拼写。
+1269|monument|We visited a stone monument by the lake.|我们参观了湖边的一座石碑。
+1297|instability|Loose legs caused the table's instability.|桌腿松动导致桌子不稳。
+1311|outweigh|The benefits of exercise outweigh the effort.|锻炼的好处值得付出这些努力。
+1318|welfare|The shelter cares for animal welfare.|这家收容所关心动物福利。
+1335|royal|The teacher explained the meaning of 'royal'.|老师解释了 royal 的含义。
+1338|elect|Club members will elect a new chair.|俱乐部成员将选出新负责人。
+1345|negative|Too little sleep has a negative effect.|睡眠过少会产生负面影响。
+1352|emigrate|Her family plans to emigrate next year.|她的家人计划明年移居国外。
+1378|reform|The school plans to reform its timetable.|学校计划改革课程表。
+1382|realm|This question belongs to the realm of science.|这个问题属于科学领域。
+1399|military|The teacher explained the meaning of 'military'.|老师解释了 military 的含义。
+1405|unity|The team showed great unity.|这个团队表现得非常团结。
+1446|redistribute|Please redistribute the books among the groups.|请把这些书重新分配给各组。
+1447|debatable|Whether this method saves time is debatable.|这种方法是否省时还有待讨论。
+1463|conquest|The climb was a conquest of her fear.|这次攀登让她战胜了恐惧。
+1509|empire|We looked up the word 'empire'.|我们查了 empire 这个词。
+1526|civic|Students joined a civic cleanup project.|学生们参加了一项社区清扫活动。
+1533|editorial|The paper published an editorial about reading.|这家报纸刊登了一篇关于阅读的社论。
+1567|supreme|This cake is a supreme example of her skill.|这个蛋糕充分展现了她的高超技艺。
+1576|mercy|Please show mercy to the tired horse.|请善待这匹疲惫的马。
+1603|colonial|The teacher explained the meaning of 'colonial'.|老师解释了 colonial 的含义。
+1606|scribe|The scribe copied each word carefully.|抄写员认真抄写每一个词。
+1610|dissolution|The dissolution of sugar takes a few minutes.|糖的溶解需要几分钟。
+1641|medieval|The museum displays medieval bowls and clothing.|博物馆展出中世纪的碗和服装。
+1670|sway|The trees sway in the wind.|树木在风中摇摆。
+1682|diplomacy|Resolving the complaint required patience and diplomacy.|解决这起投诉需要耐心和交际技巧。
+1704|withdrawal|Her withdrawal from the race surprised us.|她退出比赛让我们很惊讶。
+1742|implicit|There was an implicit promise in her smile.|她的微笑中蕴含着一个承诺。
+1754|colonist|Can you pronounce 'colonist' clearly?|你能清楚地读出 colonist 吗？
+1757|provoke|The joke may provoke laughter.|这个笑话可能会引人发笑。
+1786|distrust|His broken promises caused distrust.|他屡次失信让人不再信任他。
+1808|presidency|Please check the spelling of 'presidency'.|请检查 presidency 的拼写。
+1821|municipal|We swim at the municipal pool.|我们在市立游泳池游泳。
+1839|unrest|There was unrest among the hungry children.|饥饿的孩子们开始不安起来。
+1841|council|The school council discussed the lunch menu.|校务委员会讨论了午餐菜单。
+1955|governance|The charity reviewed its governance arrangements.|这家慈善机构审查了自身的管理安排。
+1963|diplomat|The teacher explained the meaning of 'diplomat'.|老师解释了 diplomat 的含义。
+1985|strongman|The circus strongman lifted a heavy weight.|马戏团的大力士举起了重物。
+2005|impose|Please do not impose your taste on everyone.|请不要把自己的喜好强加给所有人。
+2018|troop|We watched a troop of monkeys in the trees.|我们看着树上的一群猴子。
+2022|protest|The child began to protest about bedtime.|孩子开始抗议上床睡觉的时间。
+2064|outlook|Her outlook improved after a restful holiday.|休息充分的假期过后，她变得更乐观了。
+2129|taxation|The course explains taxation for small shops.|这门课程介绍小商店的税务知识。
+2193|protectionist|We looked up the word 'protectionist'.|我们查了 protectionist 这个词。
+2226|retreat|We retreat indoors when it rains.|下雨时我们退回屋内。
+2237|commission|The artist received a commission to paint a portrait.|画家接到了一项画肖像的委托。
+2294|conception|Her conception of the project became clearer.|她对这个项目的构想更清楚了。
+2299|expenditure|We reduced our expenditure on snacks.|我们减少了零食开支。
+2310|corruption|File corruption prevented the photo from opening.|文件损坏导致照片无法打开。
+2311|thereby|We shared a taxi, thereby saving money.|我们合乘出租车，从而省了钱。
+2322|rebellion|Can you pronounce 'rebellion' clearly?|你能清楚地读出 rebellion 吗？
+2359|deficit|The club faced a small budget deficit.|俱乐部面临小额预算赤字。
+2371|dynasty|Please check the spelling of 'dynasty'.|请检查 dynasty 的拼写。
+2385|memorial|They planted a tree as a memorial.|他们种了一棵树作为纪念。
+2420|throne|The actor sat on a painted wooden throne.|演员坐在一把涂过漆的木制王座上。
+2452|reign|Her reign as club champion lasted five years.|她连续五年保持俱乐部冠军地位。
+2453|resonance|Her story had strong resonance with the class.|她的故事引起了全班的强烈共鸣。
+2479|zenith|The singer reached the zenith of her career.|这位歌手达到了事业的巅峰。
+2490|outpost|The research outpost stands beside the glacier.|科研基地位于冰川旁边。
+2497|agitate|The noise began to agitate the dog.|噪声开始让狗焦躁起来。
+2508|satire|The play uses satire to mock office life.|这出戏用讽刺手法调侃办公室生活。
+2516|census|The census counted all the birds on the island.|这次调查统计了岛上的所有鸟类。
+2569|democrat|We looked up the word 'democrat'.|我们查了 democrat 这个词。
+2591|tyrant|The coach became a tyrant about punctuality.|教练在守时问题上变得专横。
+2595|impetus|The prize gave fresh impetus to her work.|这个奖为她的工作注入了新的动力。
+2602|requisition|Please complete a requisition for new tools.|请填写一份新工具申请单。
+2620|regime|She follows a gentle exercise regime.|她坚持一套温和的锻炼方案。
+2638|escalate|Small delays can escalate into bigger problems.|小延误可能逐渐变成大问题。
+2648|grandiose|He had grandiose plans for his garden.|他对自己的花园有宏大的计划。
+2668|amass|She hopes to amass a collection of rare books.|她希望收藏一批珍本书。
+2673|repress|He tried to repress a laugh.|他努力忍住笑。
+2704|furious|The chef was furious about the wasted food.|厨师对浪费食物的事非常生气。
+2707|antecedent|Find the antecedent of this pronoun.|找出这个代词的先行词。
+2730|commemorate|We planted a tree to commemorate her visit.|我们种了一棵树纪念她的到访。
+2755|disproportionate|The repair took a disproportionate amount of time.|这次修理花的时间多得不成比例。
+2773|dictator|We looked up the word 'dictator'.|我们查了 dictator 这个词。
+2791|inevitable|Some mistakes are inevitable when learning.|学习时有些错误不可避免。
+2831|subsidy|The club offers a subsidy for travel costs.|俱乐部提供交通费用补助。
+2856|patriotic|Please check the spelling of 'patriotic'.|请检查 patriotic 的拼写。
+2877|sovereign|We looked up the word 'sovereign'.|我们查了 sovereign 这个词。
+2894|legislation|Please check the spelling of 'legislation'.|请检查 legislation 的拼写。
+2898|regiment|Can you pronounce 'regiment' clearly?|你能清楚地读出 regiment 吗？
+2925|senate|We looked up the word 'senate'.|我们查了 senate 这个词。
+2944|impoverish|High repair costs can impoverish a family.|高昂的修理费可能让一个家庭陷入贫困。
+2971|aristocrat|Please check the spelling of 'aristocrat'.|请检查 aristocrat 的拼写。
+2981|tyranny|She escaped the tyranny of a rigid timetable.|她摆脱了死板时间表的束缚。
+2990|proxy|He attended the club meeting as her proxy.|他作为她的代理人参加了俱乐部会议。
+3013|perception|The photo changed my perception of the building.|这张照片改变了我对这栋建筑的看法。
+3036|democratic|The club uses a democratic way to choose activities.|俱乐部用大家共同决定的方式选择活动。
+3046|monetary|The prize has little monetary value.|这个奖的金钱价值不高。
+3064|strike|Strike the ball gently.|轻轻击球。
+3128|imperial|Please check the spelling of 'imperial'.|请检查 imperial 的拼写。
+3185|judicial|We looked up the word 'judicial'.|我们查了 judicial 这个词。
+3188|riot|The garden is a riot of color.|花园里色彩缤纷。
+3207|reverse|Please reverse the order of these pictures.|请把这些图片的顺序倒过来。
+3214|counterpart|She works closely with her counterpart at another school.|她和另一所学校担任同样职务的人密切合作。
+3240|provincial|We visited a small provincial museum.|我们参观了一座外地的小博物馆。
+3278|renaissance|The town enjoyed a renaissance in local crafts.|小镇的本地手工艺迎来了复兴。
+3305|sentiment|Her letter expressed a warm sentiment.|她的信表达了温暖的情感。
+3355|conservatism|His conservatism in design favors familiar shapes.|他的设计风格保守，偏爱熟悉的形状。
+3364|empress|Please check the spelling of 'empress'.|请检查 empress 的拼写。
+3425|constituency|We looked up the word 'constituency'.|我们查了 constituency 这个词。
+3436|ameliorate|Better lighting can ameliorate these working conditions.|改善照明可以使这些工作条件有所好转。
+3461|chariot|The toy chariot has two wooden wheels.|这辆玩具马车有两个木轮。
+3484|democratization|The course discusses the democratization of online learning.|这门课探讨在线学习如何变得人人可及。
+3495|relic|This broken cup is a relic of childhood.|这个破杯子是童年的遗物。
+3900|illiteracy|The reading club helps adults overcome illiteracy.|读书俱乐部帮助成年人摆脱文盲状态。
+3904|affair|Choosing a cake became a family affair.|选蛋糕成了一家人共同参与的事。
+3975|politics|The teacher explained the meaning of 'politics'.|老师解释了 politics 的含义。
+4019|per cent|Sixty per cent of the class chose swimming.|班上百分之六十的人选择了游泳。
+4115|microcomputer|This old microcomputer still works.|这台旧微型计算机仍能使用。
+4148|ideology|Please check the spelling of 'ideology'.|请检查 ideology 的拼写。
+4159|heritage|These recipes are part of our family heritage.|这些食谱是我们家族传承的一部分。
+4177|king|We looked up the word 'king'.|我们查了 king 这个词。
+4178|queen|Can you pronounce 'queen' clearly?|你能清楚地读出 queen 吗？
+4179|prince|The teacher explained the meaning of 'prince'.|老师解释了 prince 的含义。
+4180|princess|Please check the spelling of 'princess'.|请检查 princess 的拼写。
+4181|majesty|We admired the majesty of the mountains.|我们赞叹群山的雄伟。
+4182|nobility|Please check the spelling of 'nobility'.|请检查 nobility 的拼写。
+4183|lord|Please check the spelling of 'lord'.|请检查 lord 的拼写。
+4237|negotiate|We need to negotiate a delivery date.|我们需要商定送货日期。
+4248|propaganda|Please check the spelling of 'propaganda'.|请检查 propaganda 的拼写。
+4386|memorandum|She sent a memorandum about the new printer.|她发了一份关于新打印机的备忘录。
+4665|lobbyist|We looked up the word 'lobbyist'.|我们查了 lobbyist 这个词。
+4717|pharaoh|We looked up the word 'pharaoh'.|我们查了 pharaoh 这个词。
+4798|republic|Can you pronounce 'republic' clearly?|你能清楚地读出 republic 吗？
+4799|republican|The teacher explained the meaning of 'republican'.|老师解释了 republican 的含义。
+4800|marxism|Please check the spelling of 'marxism'.|请检查 marxism 的拼写。
+4801|socialism|We looked up the word 'socialism'.|我们查了 socialism 这个词。
+4802|socialist|Can you pronounce 'socialist' clearly?|你能清楚地读出 socialist 吗？
+4803|communism|The teacher explained the meaning of 'communism'.|老师解释了 communism 的含义。
+4804|communist|Please check the spelling of 'communist'.|请检查 communist 的拼写。
+4805|government|We looked up the word 'government'.|我们查了 government 这个词。
+4807|political|The teacher explained the meaning of 'political'.|老师解释了 political 的含义。
+4809|politician|We looked up the word 'politician'.|我们查了 politician 这个词。
+4810|democratise|Can you pronounce 'democratise' clearly?|你能清楚地读出 democratise 吗？
+4812|bureaucratism|Please check the spelling of 'bureaucratism'.|请检查 bureaucratism 的拼写。
+4815|revolution|The wheel makes one revolution per second.|这个轮子每秒转一圈。
+4821|banner|The children painted a banner for sports day.|孩子们为运动会画了一条横幅。
+4822|president|The club president welcomed the new members.|俱乐部主席欢迎新成员。
+4823|premiership|The teacher explained the meaning of 'premiership'.|老师解释了 premiership 的含义。
+4824|minister|Please check the spelling of 'minister'.|请检查 minister 的拼写。
+4825|parliament|We looked up the word 'parliament'.|我们查了 parliament 这个词。
+4828|statesman|Please check the spelling of 'statesman'.|请检查 statesman 的拼写。
+4829|mayor|We looked up the word 'mayor'.|我们查了 mayor 这个词。
+4830|service|The shop provides a repair service.|这家店提供维修服务。
+4834|power|The machine needs more power.|这台机器需要更多电力。
+4842|establish a nation|Can you pronounce 'establish a nation' clearly?|你能清楚地读出 establish a nation 吗？
+4844|federal|Please check the spelling of 'federal'.|请检查 federal 的拼写。
+4845|federation|The sports federation announced a training course.|体育联合会公布了一门培训课程。
+4848|puppet|The child made a puppet from a sock.|孩子用一只袜子做了一个木偶。
+4849|crown|She wore a paper crown at the party.|她在聚会上戴着纸王冠。
+4850|wreath|We hung a flower wreath on the door.|我们在门上挂了一个花环。
+4854|asylum|Can you pronounce 'asylum' clearly?|你能清楚地读出 asylum 吗？
+4870|guideline|This guideline explains how to clean the filter.|这条指南说明如何清洗滤网。
+4875|proclaim|The poster proclaims the shop's opening date.|海报公布了商店的开业日期。
+4877|clarify|Please clarify the last step of the recipe.|请解释清楚食谱的最后一步。
+4878|action|Quick action saved the wet books.|及时行动挽救了这些被弄湿的书。
+4892|soviet|Please check the spelling of 'soviet'.|请检查 soviet 的拼写。
+4904|fund|The sale will fund new library books.|这次义卖将为图书馆添书筹款。
+4919|levy|The club may levy a small service charge.|俱乐部可能收取一笔小额服务费。
+4950|quota|I have finished my quota of practice today.|我已经完成了今天规定的练习量。
+4953|accountable|Each team is accountable for its own equipment.|每个团队都要对自己的设备负责。
+4994|sanction|The club gave its sanction to the trip.|俱乐部批准了这次旅行。
+4997|treaty|We looked up the word 'treaty'.|我们查了 treaty 这个词。
+4998|charter|We need to charter a boat.|我们需要租一条船。
+5003|enact|The teacher explained the meaning of 'enact'.|老师解释了 enact 的含义。
+5004|legislate|Please check the spelling of 'legislate'.|请检查 legislate 的拼写。
+5011|condemn|Do not condemn the cake before tasting it.|尝一口之前别急着批评这个蛋糕。
+5049|accredit|The board can accredit this training course.|评审委员会可以认证这门培训课程。
+5057|violence|The violence of the storm surprised us.|暴风雨的猛烈程度让我们吃惊。
+5060|battle|She faces a daily battle with tangled hair.|她每天都要和打结的头发作斗争。
+5065|weapon|We looked up the word 'weapon'.|我们查了 weapon 这个词。
+5067|rifle|The teacher explained the meaning of 'rifle'.|老师解释了 rifle 的含义。
+5069|mission|Our mission is to find the missing kitten.|我们的任务是找到走失的小猫。
+5078|equip|Please equip each desk with a lamp.|请给每张桌子配一盏灯。
+5081|deploy|We deploy extra staff during busy hours.|忙碌时段我们增派人手。
+5094|oppress|The heavy heat seemed to oppress everyone.|闷热的天气让每个人都感到压抑。
+5098|revolt|The children were in revolt over early bedtimes.|孩子们都在反对过早上床睡觉。
+5100|patriot|Please check the spelling of 'patriot'.|请检查 patriot 的拼写。
+5109|turmoil|The kitchen was in turmoil before dinner.|晚餐前厨房里忙乱不堪。
+5127|hell|Finding a parking space was hell.|找停车位简直令人受罪。
+5128|naval|Please check the spelling of 'naval'.|请检查 naval 的拼写。
+5133|nuclear|The class built a model of a nuclear reactor.|全班制作了一个核反应堆模型。
+5142|surrender|He refused to surrender his place in the queue.|他不愿让出自己排队的位置。
+5147|safeguard|This cover will safeguard the camera from dust.|这个罩子能保护相机不受灰尘侵扰。
+5148|defeat|We hope to defeat the visiting team.|我们希望战胜客队。
+5155|guard|A dog stood guard beside the gate.|一只狗守在门旁。
+5157|spy|I spy a red bird in the tree.|我看见树上有一只红鸟。
+5159|soldier|The teacher explained the meaning of 'soldier'.|老师解释了 soldier 的含义。
+5160|veteran|She is a veteran of many cooking contests.|她是参加过许多烹饪比赛的老手。
+5164|heir|He is the heir to a family bakery.|他是一家家族面包店的继承人。
+5167|female|The female bird built a nest.|那只雌鸟筑了一个巢。
+5170|grandfather|My grandfather grows flowers in his garden.|我祖父在花园里种花。
+5202|comrade|She welcomed an old school comrade.|她欢迎了一位老同学。
+5205|chancellor|The university chancellor attended the concert.|大学校监出席了音乐会。
+5237|pledge|I pledge to return the books on time.|我保证按时还书。
+5240|notify|Please notify us if the delivery is late.|如果送货延误，请通知我们。
+5289|disguise|He wore a hat as a disguise.|他戴了顶帽子来伪装自己。
+5300|tackle|Let us tackle this puzzle together.|我们一起解决这个难题吧。
+5316|trench|We dug a trench for the water pipe.|我们为水管挖了一条沟。
+5329|salute|We salute the volunteers for their hard work.|我们向辛勤工作的志愿者致敬。
+5566|live|They live near the library.|他们住在图书馆附近。
+5601|possible|It is possible to finish before lunch.|午饭前完成是有可能的。
+5638|reason|What is the reason for the delay?|延误的原因是什么？
+5668|foot|The puppy was muddy from head to foot.|小狗从头到脚都是泥。
+5790|defense|A good defense helped our team win.|良好的防守帮助我们队获胜。
+5911|rich|This cake is rich in chocolate.|这个蛋糕巧克力味浓郁。
+5997|housing|The college offers housing for new students.|学院为新生提供住宿。
+6000|voter|Please check the spelling of 'voter'.|请检查 voter 的拼写。
+6038|iraqi|Our Iraqi friend brought a homemade cake.|我们的伊拉克朋友带来了一个自制蛋糕。
+6061|prepared|She was prepared for the music exam.|她为音乐考试做好了准备。
+6079|aye|The actor practised saying 'aye'.|演员练习说 aye。
+6112|hat|She left her hat on the chair.|她把帽子落在了椅子上。
+6118|councillor|Can you pronounce 'councillor' clearly?|你能清楚地读出 councillor 吗？
+6136|parliamentary|Please check the spelling of 'parliamentary'.|请检查 parliamentary 的拼写。
+6154|against|Please lean the ladder against the wall.|请把梯子靠在墙上。
+6185|army|We looked up the word 'army'.|我们查了 army 这个词。
+6207|identity|I checked the identity of the plant.|我查明了这种植物的种类。
+6260|proposed|She proposed a picnic by the lake.|她提议去湖边野餐。
+6261|shareholder|Each shareholder received the annual report.|每位股东都收到了年度报告。
+6273|congressional|We looked up the word 'congressional'.|我们查了 congressional 这个词。
+6284|armed|Please check the spelling of 'armed'.|请检查 armed 的拼写。
+6302|designer|The designer drew a new chair.|设计师画了一把新椅子。
+6322|continuing|Her continuing interest in music surprised us.|她对音乐持续的兴趣让我们惊讶。
+6323|testing|We are testing the new printer.|我们正在测试新打印机。
+6344|commons|Please check the spelling of 'commons'.|请检查 commons 的拼写。
+6347|activist|Please check the spelling of 'activist'.|请检查 activist 的拼写。
+6349|terrorism|We looked up the word 'terrorism'.|我们查了 terrorism 这个词。
+6369|constitutional|We looked up the word 'constitutional'.|我们查了 constitutional 这个词。
+6380|processing|The processing of photos takes a few minutes.|照片处理需要几分钟。
+6381|implementation|The implementation of the new timetable went smoothly.|新时间表的实施很顺利。
+6402|announcement|The school made an announcement about the concert.|学校发布了一则关于音乐会的通知。
+6407|politically|The teacher explained the meaning of 'politically'.|老师解释了 politically 的含义。
+6416|amendment|We made an amendment to the club timetable.|我们对俱乐部的时间表作了一处修改。
+6425|treasury|Please check the spelling of 'treasury'.|请检查 treasury 的拼写。
+6459|publicly|She thanked the team publicly.|她公开感谢了团队。
+6462|aide|The teacher's aide handed out the books.|教师助理分发了书本。
+6475|bombing|The teacher explained the meaning of 'bombing'.|老师解释了 bombing 的含义。
+6521|allocation|The teacher explained the allocation of desks.|老师说明了课桌的分配情况。
+6556|electoral|Please check the spelling of 'electoral'.|请检查 electoral 的拼写。
+6594|capitalist|Please check the spelling of 'capitalist'.|请检查 capitalist 的拼写。
+6620|legislative|Please check the spelling of 'legislative'.|请检查 legislative 的拼写。
+6647|fiscal|The club starts its fiscal year in April.|俱乐部的财务年度从四月开始。
+6654|isolation|The writer enjoyed the isolation of the cabin.|作家喜欢小木屋的清静独处。
+6661|freshman|The freshman joined the school music club.|这名新生加入了学校音乐社团。
+6669|stance|Keep a steady stance while lifting the box.|搬箱子时站稳。
+6671|mandate|The team has a mandate to repair the bridge.|这个团队受命修复这座桥。
+6681|capitalism|We looked up the word 'capitalism'.|我们查了 capitalism 这个词。
+6726|coup|Can you pronounce 'coup' clearly?|你能清楚地读出 coup 吗？
+6777|monitoring|We are monitoring the water temperature.|我们正在监测水温。
+6780|integrated|The school offers an integrated science course.|学校开设一门综合科学课程。
+6781|ideological|We looked up the word 'ideological'.|我们查了 ideological 这个词。
+6802|isolated|The cabin is isolated from the busy road.|这间小屋远离繁忙的道路。
+6817|voting|We looked up the word 'voting'.|我们查了 voting 这个词。
+6863|actively|She actively participates in the reading club.|她积极参加读书俱乐部的活动。
+6877|legislature|We looked up the word 'legislature'.|我们查了 legislature 这个词。
+6915|squadron|Please check the spelling of 'squadron'.|请检查 squadron 的拼写。
+6920|referendum|Please check the spelling of 'referendum'.|请检查 referendum 的拼写。
+6933|embarrassment|Forgetting the words caused him embarrassment.|忘记歌词让他感到尴尬。
+6948|perceived|She perceived a change in the music.|她察觉到音乐发生了变化。
+6975|planned|We planned a picnic for Saturday.|我们计划周六去野餐。
+6982|legislator|Can you pronounce 'legislator' clearly?|你能清楚地读出 legislator 吗？
+7007|lawmaker|The teacher explained the meaning of 'lawmaker'.|老师解释了 lawmaker 的含义。
+7025|varied|The cafe offers a varied menu.|这家咖啡馆的菜单种类丰富。
+7040|accountability|Clear records improve accountability within the club.|清楚的记录能增强俱乐部内部的责任意识。
+7056|testament|Her garden is a testament to her patience.|她的花园证明了她的耐心。
+7066|sovereignty|Can you pronounce 'sovereignty' clearly?|你能清楚地读出 sovereignty 吗？
+7088|exemption|He received an exemption from the swimming test.|他获准免参加游泳测试。
+7120|bomber|Please check the spelling of 'bomber'.|请检查 bomber 的拼写。
+7136|militia|Please check the spelling of 'militia'.|请检查 militia 的拼写。
+7160|territorial|Please check the spelling of 'territorial'.|请检查 territorial 的拼写。
+7194|pact|We made a pact to practise together.|我们约定一起练习。
+7216|war|Please check the spelling of 'war'.|请检查 war 的拼写。
+7240|nation|People across the nation enjoyed the music.|全国各地的人们都喜欢这音乐。
+7249|drug|Keep this drug away from children.|请把这种药放在儿童接触不到的地方。
+7275|election|The teacher explained the meaning of 'election'.|老师解释了 election 的含义。
+7276|congress|She presented her research at a science congress.|她在一次科学大会上介绍了自己的研究。
+7277|used|She used a brush to clean the shoes.|她用刷子清洁鞋子。
+7384|global|The shop offers global delivery.|这家商店提供全球配送服务。
+7391|freedom|The course gives you freedom to choose projects.|这门课让你自由选择项目。
+7393|powerful|This is a powerful little machine.|这是一台动力强劲的小机器。
+7403|beginning|The beginning of the book is funny.|这本书的开头很有趣。
+7404|transport|The hotel provides transport to the airport.|酒店提供去机场的交通服务。
+7423|additional|We need two additional chairs.|我们还需要两把椅子。
+7466|limited|We have limited time for practice.|我们练习的时间有限。
+7496|unlikely|Rain is unlikely this afternoon.|今天下午不太可能下雨。
+7512|muscle|This exercise builds muscle.|这个动作能锻炼肌肉。
+7513|ministry|We looked up the word 'ministry'.|我们查了 ministry 这个词。
+7528|governor|Please check the spelling of 'governor'.|请检查 governor 的拼写。
+7533|meanwhile|I made tea; meanwhile, she cut the cake.|我泡了茶，与此同时她切了蛋糕。
+7542|servant|The servant carried a tray of cups.|服务员端着一盘杯子。
+7547|grey|The sky turned grey.|天空变灰了。
+7566|cream|Add a little cream to the soup.|往汤里加一点奶油。
+7571|virtually|The room was virtually empty.|房间几乎是空的。
+7579|inquiry|She made an inquiry about the art course.|她询问了美术课程的情况。
+7580|kingdom|Please check the spelling of 'kingdom'.|请检查 kingdom 的拼写。
+7594|constitution|Can you pronounce 'constitution' clearly?|你能清楚地读出 constitution 吗？
+7679|confusion|The unclear map caused confusion.|不清楚的地图让人困惑。
+7700|ban|The club decided to ban loud music.|俱乐部决定禁止播放嘈杂的音乐。
+7731|scandal|The missing cake caused a small scandal at the party.|蛋糕不见了，在聚会上引起了一阵风波。
+7772|navy|Please check the spelling of 'navy'.|请检查 navy 的拼写。
+7776|legend|The guide told us a legend about the lake.|导游给我们讲了一个关于湖泊的传说。
+7788|rebel|The children rebel against early bedtimes.|孩子们反对太早上床睡觉。
+7804|colonel|Please check the spelling of 'colonel'.|请检查 colonel 的拼写。
+7828|scare|The sudden noise gave me a scare.|突如其来的噪声吓了我一跳。
+7856|nowadays|People often read books on phones nowadays.|如今人们常在手机上读书。
+7860|ruler|Use a ruler to draw the line.|用尺子画这条线。
+7937|marxist|We looked up the word 'marxist'.|我们查了 marxist 这个词。
+8004|imprison|Thick ice can imprison a boat.|厚冰能把船困住。
+8023|mourn|She took time to mourn her lost pet.|她花了一些时间哀悼离世的宠物。
+8033|selfish|It is selfish to take all the cake.|把蛋糕都拿走很自私。
+8047|needless|A clear label prevents needless confusion.|清楚的标签能避免不必要的困惑。
+8081|rejoice|We rejoice at the good news.|我们为这个好消息感到高兴。
+8112|fluent|She is fluent in four languages.|她能流利地说四种语言。
+8128|treason|Please check the spelling of 'treason'.|请检查 treason 的拼写。
+8186|rating|The cafe has a high customer rating.|这家咖啡馆的顾客评分很高。
+8195|funding|The club is funding new library shelves.|俱乐部正在资助添置图书馆书架。
+8198|coalition|The clubs formed a coalition to clean the park.|几个俱乐部联合起来清扫公园。
+8215|senator|The teacher explained the meaning of 'senator'.|老师解释了 senator 的含义。
+8216|terrorist|Please check the spelling of 'terrorist'.|请检查 terrorist 的拼写。
+8218|violation|Parking here is a violation of the club rules.|在这里停车违反俱乐部规定。
+8223|completion|The completion of the bridge took two years.|这座桥花了两年建成。
+8263|array|An array of flowers filled the window.|窗前摆满了各式各样的花。
+8265|diplomatic|She gave a diplomatic answer to the complaint.|她对投诉作出了得体的回答。
+8279|ballot|We used a secret ballot to choose a book.|我们以不记名投票的方式选书。
+8280|justification|There is no justification for wasting food.|浪费食物没有道理。
+8294|commonwealth|Please check the spelling of 'commonwealth'.|请检查 commonwealth 的拼写。
+8297|striking|The red scarf is striking against her black coat.|红围巾与她的黑外套形成鲜明对比。
+8343|confrontation|We avoided a confrontation over the seating plan.|我们避免了因座位安排起争执。
+8354|allied|The two clubs are allied in this project.|两个俱乐部在这个项目上合作。
+8357|faction|A small faction in the club preferred a different route.|俱乐部里一小部分人更喜欢另一条路线。
+8358|intact|The cup remained intact after the fall.|杯子掉下来后仍完好无损。
+8389|decisive|Her last goal was decisive.|她最后那个进球决定了胜负。
+8409|corps|We looked up the word 'corps'.|我们查了 corps 这个词。
+8420|resentment|The unfair seating plan caused resentment.|不公平的座位安排引起了不满。
+8434|decree|Can you pronounce 'decree' clearly?|你能清楚地读出 decree 吗？
+8455|monarch|The teacher explained the meaning of 'monarch'.|老师解释了 monarch 的含义。
+8464|bourgeois|Please check the spelling of 'bourgeois'.|请检查 bourgeois 的拼写。
+8474|denounce|The club will denounce cheating in any form.|俱乐部将谴责任何形式的作弊。
+8478|royalty|The author received a royalty for each book sold.|作者每售出一本书都会获得一笔版税。
+8513|cynical|She was cynical about the shop's promises.|她不相信商店作出的承诺。
+8521|allegiance|His allegiance to the team never changed.|他对球队的忠诚从未改变。
+8537|consequent|The rain and consequent delay upset our plans.|大雨和随之而来的延误打乱了我们的计划。
+8543|prohibition|The notice explains the prohibition on swimming here.|告示说明这里禁止游泳。
+8549|jealousy|He felt jealousy when she won the prize.|她获奖时，他感到嫉妒。
+8555|unlimited|The pass gives unlimited access to the pool.|这张通行证让你不限次数使用游泳池。
+8562|hum|I could hear the hum of the fridge.|我能听见冰箱的嗡嗡声。
+8610|militant|Please check the spelling of 'militant'.|请检查 militant 的拼写。
+8617|induction|New staff attend an induction course.|新员工参加入职课程。
+8625|veto|My sister used her veto over the film choice.|姐姐否决了选哪部电影的提议。
+8633|wield|She can wield a paintbrush with great skill.|她能熟练运用画笔。
+8641|avert|Quick repairs helped avert a breakdown.|及时维修有助于避免故障。
+8666|dove|A white dove landed beside the fountain.|一只白鸽落在喷泉旁边。
+8677|fortress|The children built a small sand fortress.|孩子们建了一座小沙堡。
+8823|protester|The teacher explained the meaning of 'protester'.|老师解释了 protester 的含义。
+3519|fortification|Please check the spelling of 'fortification'.|请检查 fortification 的拼写。
+7102|guerrilla|Please check the spelling of 'guerrilla'.|请检查 guerrilla 的拼写。
+7764|invasion|Please check the spelling of 'invasion'.|请检查 invasion 的拼写。
+5614|name|Please write your name here.|请在这里写下你的姓名。
+1609|residence|Her residence is near the library.|她的住所在图书馆附近。
+2918|urbane|The teacher has an urbane manner.|这位老师举止温文尔雅。
+7212|lose|Do not lose your new gloves.|不要弄丢你的新手套。
+125|ambassador|Please check the spelling of 'ambassador'.|请检查 ambassador 的拼写。
+2441|consulate|Please check the spelling of 'consulate'.|请检查 consulate 的拼写。
+5064|missile|Please check the spelling of 'missile'.|请检查 missile 的拼写。
+8340|embassy|Please check the spelling of 'embassy'.|请检查 embassy 的拼写。

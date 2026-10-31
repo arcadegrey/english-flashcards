@@ -9,13 +9,15 @@ const original = await read(`${dir}/source-register-2026-10-31.json`);
 const repair = await read(`${dir}/reviews-2026-10-31.json`);
 const bytes = await readFile(new URL('public/data/vocabulary.json', root));
 const currentSha256 = createHash('sha256').update(bytes).digest('hex');
-assert.equal(currentSha256, repair.afterSha256, 'Review unexpected changes before reporting completion');
+const neutral=await read('data/vocabulary-neutral-examples/reviews-2026-10-31.json');
+assert([repair.afterSha256,neutral.afterSha256].includes(currentSha256),'Review unexpected changes before reporting completion');
+const neutralById=new Map(neutral.reviews.map(review=>[review.id,review]));
 assert.equal(repair.baselineSha256, original.inputSha256);
 const words = JSON.parse(bytes), byId = new Map(words.map(word => [word.id, word]));
 const byReview = new Map(repair.reviews.map(review => [review.id, review]));
 const current = id => {
   const word = byId.get(id), review = byReview.get(id);
-  assert(review && isDeepStrictEqual(word, review.after), `Unregistered ${id}`);
+  assert(review && (isDeepStrictEqual(word, review.after)||isDeepStrictEqual(word,neutralById.get(id)?.after)), `Unregistered ${id}`);
   return { pos: word.pos, meaning: word.meaning, phonetic: word.phonetic,
     example: word.example, exampleCn: word.exampleCn, examples: word.examples };
 };
@@ -28,7 +30,7 @@ const register = { ...original, scope: '用户提供的 DeepSeek 候选清单及
   method: ['保留原始 118 条候选和 16 项缺义项线索；mine 重合，实际修复 133 个稳定 ID。',
     '逐词读取主来源词典，独立编写常用义项的双语短句；不是独立人工专家签字。',
     '只在完整当前词库与修复登记一致时报告完成；当前内容与原始候选分列。'],
-  currentSourceSha256: currentSha256, repairBatch: repair.batch,
+  currentSourceSha256: currentSha256, repairBatch: repair.batch, laterExampleBatch: currentSha256===neutral.afterSha256?neutral.batch:null,
   repairTotals: { ...repair.counts, repairedGapCandidates: gaps.length, expectedAudioFiles: (repair.counts.examples + repair.counts.wordAudioReplacements) * 4 },
   entries, gaps, limitations: ['原始“同词性”分类有误：不少记录只是原词性字段漏标，不能照搬为语言学结论。',
     '例句覆盖所选常用义项，不是词典所有罕见或专业义的穷尽枚举。',

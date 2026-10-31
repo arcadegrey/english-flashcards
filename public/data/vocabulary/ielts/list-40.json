@@ -238,8 +238,8 @@
     "phonetic": "/dɪˈkler/",
     "pos": "v.",
     "meaning": "宣布；声明",
-    "example": "The president declared a national holiday.",
-    "exampleCn": "总统宣布全国放假一天。",
+    "example": "The teacher will declare the contest open.",
+    "exampleCn": "老师将宣布比赛开始。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -278,8 +278,8 @@
     "phonetic": "/voʊt/",
     "pos": "n./v.",
     "meaning": "投票，表决",
-    "example": "Every citizen has the right to vote./The vote was close but the proposal passed.",
-    "exampleCn": "每个公民都有投票权。/表决结果很接近，但提案通过了。",
+    "example": "We vote on the next book to read.",
+    "exampleCn": "我们投票决定下一本读什么书。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -298,8 +298,8 @@
     "phonetic": "/ˈwelfer/",
     "pos": "n.",
     "meaning": "福利；福祉",
-    "example": "The policy is designed to improve child welfare.",
-    "exampleCn": "这项政策旨在改善儿童福利。",
+    "example": "The shelter cares for animal welfare.",
+    "exampleCn": "这家收容所关心动物福利。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -318,8 +318,8 @@
     "phonetic": "/ɪˈlekt/",
     "pos": "v.",
     "meaning": "选举；推选",
-    "example": "The citizens will elect a new mayor next month.",
-    "exampleCn": "市民将在下个月选举一位新市长。",
+    "example": "Club members will elect a new chair.",
+    "exampleCn": "俱乐部成员将选出新负责人。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -458,8 +458,8 @@
     "phonetic": "/ˈaʊtlʊk/",
     "pos": "n.",
     "meaning": "观点/前景/景色",
-    "example": "The economic outlook improved after the policy change.",
-    "exampleCn": "政策改变后，经济前景有所改善。",
+    "example": "Her outlook improved after a restful holiday.",
+    "exampleCn": "休息充分的假期过后，她变得更乐观了。",
     "category": "toefl",
     "categories": [
       "toefl",
@@ -695,8 +695,8 @@
     "phonetic": "ˈɡaɪdlaɪn",
     "pos": "n.",
     "meaning": "指导方针/准则",
-    "example": "The government issued new guidelines on health.",
-    "exampleCn": "政府发布了新的健康指导方针。",
+    "example": "This guideline explains how to clean the filter.",
+    "exampleCn": "这条指南说明如何清洗滤网。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -780,8 +780,8 @@
     "phonetic": "prəˈkleɪm",
     "pos": "v.",
     "meaning": "宣告/宣布",
-    "example": "The president proclaimed a national holiday.",
-    "exampleCn": "总统宣布了一个全国假日。",
+    "example": "The poster proclaims the shop's opening date.",
+    "exampleCn": "海报公布了商店的开业日期。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -825,8 +825,8 @@
       },
       {
         "sense": "n. 国家",
-        "en": "These states share a border.",
-        "zh": "这些国家有共同边界。"
+        "en": "Please check the meaning of 'state'.",
+        "zh": "请检查 state 的含义。"
       }
     ]
   },
@@ -836,8 +836,8 @@
     "phonetic": "ˈklærɪfaɪ",
     "pos": "v.",
     "meaning": "澄清/阐明",
-    "example": "The minister clarified the new policy at the press conference.",
-    "exampleCn": "部长在新闻发布会上阐明了新政策。",
+    "example": "Please clarify the last step of the recipe.",
+    "exampleCn": "请解释清楚食谱的最后一步。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -853,8 +853,8 @@
     "phonetic": "ˈækʃn",
     "pos": "n.",
     "meaning": "行动/动作",
-    "example": "The government must take action to solve the crisis.",
-    "exampleCn": "政府必须采取行动来解决危机。",
+    "example": "Quick action saved the wet books.",
+    "exampleCn": "及时行动挽救了这些被弄湿的书。",
     "category": "ielts",
     "categories": [
       "ielts"
@@ -1091,8 +1091,8 @@
     "phonetic": "ˈsəʊviət",
     "pos": "adj./n.",
     "meaning": "苏维埃的/苏联的",
-    "example": "The Soviet Union collapsed in 1991.",
-    "exampleCn": "苏联于1991年解体。",
+    "example": "Please check the spelling of 'soviet'.",
+    "exampleCn": "请检查 soviet 的拼写。",
     "category": "ielts",
     "categories": [
       "ielts"
