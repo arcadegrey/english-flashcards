@@ -76,4 +76,6 @@ npm run audio:verify-updates-r2
 
 ## 已记录的发布状态
 
-截至 `5de1c1f` 的推送及 Actions #150 部署已在 2026-10-29 核对成功，包含 P2 和首批 50 单元扩充。其后的阅读查词修复 `85fe4ef` 仅记录本地提交，交接记录为未推送／未部署。以上为已有证据，本次未重新确认远端或生产网页。凭据、后续交付要求与验收边界统一见[发布状态](release-status.md)。
+`5de1c1f` / Actions #150 包含 P2 和首批 50 单元扩充。后续阅读查词修复 `85fe4ef` 与句子听写已一起包含在 `b8075a7de41a179170151435588e51a9dfceb332` 中，远端 `main` 与 [Actions #152](https://github.com/arcadegrey/english-flashcards/actions/runs/41070849932) 已于 2026-10-31 实时核实；该流程在 2026-10-30 22:22:08（北京时间）成功完成质量检查、D1 幂等步骤及 Worker／静态资源部署。Cloudflare 版本为 `1a2cd898-aadc-4853-a1d6-53f91bfd8433`。本轮没有另行手动触发功能重部署或上传音频；交接提交仍沿用 `main` 的既有自动发布流程。
+
+本地检查和部分生产只读检查已补做，完整生产 UI、真实账号、多设备、旧 PWA 更新和真机验收仍开放。见[发布核验](p1-release-verification-2026-10-31.md)与[发布状态](release-status.md)。
