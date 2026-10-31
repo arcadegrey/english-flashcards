@@ -59,8 +59,12 @@
 
 后续工作从这些验收继续，不再将阅读修复或句子听写列为“未开发／等待首次发布”。
 
-## 本轮交接文档同步状态
+## 本轮交接文档同步状态（已解决）
 
-七份交接 Markdown 已保存到本地 Git 提交，业务代码未改变。推送 `origin main` 因终端缺少 GitHub HTTPS 凭据失败；已连接 GitHub 插件的 Git tree 写入接口也返回 `403 Resource not accessible by integration`。远端分支未被本次文档操作更新，未触发新的文档提交部署；这不影响已经核实成功的功能发布 Actions #152。
+原阻塞来自终端没有 GitHub HTTPS 凭据，连接的 GitHub Git tree 写接口也返回 `403 Resource not accessible by integration`。后续确认 GitHub Desktop 已有有效登录，使用它的现有认证成功推送 `09e81cb6eb45b78c784ef5c4c98fc54199302adc`；远端 `main`、本地 `HEAD` 与 `origin/main` 已核对一致，Desktop 显示 `push complete`。
 
-恢复本机 Git 凭据或连接的仓库写权限后，先核对远端变化，再正常推送本地交接提交，并检查现有自动工作流。当前不要声称这些文档已推送或新工作流已完成。
+该提交包含上述七份交接 Markdown，业务代码未改变。[Actions #153](https://github.com/arcadegrey/english-flashcards/actions/runs/41164056603) 于北京时间 2026-10-31 11:24:23 完成，`completed / success`；质量检查（lint、全量测试、跨时区、构建、Worker dry-run）与部署（D1 幂等步骤、Worker／静态资源）全部通过。Cloudflare 版本为 `18682bb5-a005-459e-886f-72d9a4c69001`。
+
+当前可用的推送通道为已登录的 GitHub Desktop。没有新增令牌、读取或导出私密凭据，也没有扩大 GitHub 插件权限；普通终端 HTTPS 凭据和插件写权限不因此被视为已配置。后续同类交接推送可沿用 Desktop，先确认目标仓库、提交和远端状态，再检查对应 Actions。
+
+本节状态补记另作 Markdown 提交并沿用现有自动工作流；该后续提交不改变已核实的业务实现，最终工作流结果以其对应 Actions 为准。
