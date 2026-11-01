@@ -23,5 +23,7 @@ jobs:
       - name: Check timezone independence
         run: TZ=America/Los_Angeles node --test tests/study-date.test.mjs tests/study-day-subscription.test.mjs tests/vocabulary-merge.test.mjs
       - run: npm run build
+      - name: Audit versioned assets and cache boundaries
+        run: npm run performance:audit
       - name: Validate Worker bundle without deploying
         run: npx --no-install wrangler deploy --dry-run

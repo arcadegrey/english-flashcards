@@ -35,7 +35,7 @@ function retryStylesheet(href) {
   return request
 }
 
-const withStylesheetRetry = importView => async () => {
+export const withStylesheetRetry = importView => async () => {
   // Vite remembers preload URLs even after a CSS failure. Restore failed links
   // explicitly before retrying the import, so retry cannot enter an unstyled page.
   const recordFailure = event => {

@@ -75,6 +75,7 @@ export function ReadingArticleRow({ article, index, onClick, completion }) {
       type="button"
       className={`reading-article-row is-tone-${index % 5} ${completion?.completed ? 'is-completed' : ''}`}
       onClick={onClick}
+      data-prepare-reading={article.id}
     >
       <span className="reading-article-thumb" aria-hidden="true">
         <ReadingArticleIcon index={index} />

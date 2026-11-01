@@ -12,7 +12,8 @@ export const loadReadingVocabulary = createReadingVocabularyLoader({
   // Explicit data requests can retry without a page reload. The lazy fallback
   // is precached by the existing PWA policy for unopened articles offline.
   // Examples still use the original detail API.
-  loadCatalog: valid => fetchJson(readingVocabularyCatalog.path, '阅读词汇加载失败', valid).catch(async error => {
+  loadCatalog: (valid, options) => fetchJson(readingVocabularyCatalog.path, '阅读词汇加载失败', valid).catch(async error => {
+    if (options?.fallback === false) throw error
     try { return (await import('./readingVocabulary.json')).default }
     catch { throw error }
   }),

@@ -7,6 +7,7 @@ import { handleWordAssignments } from './wordAssignments.js';
 import { handleReadingAttempts } from './readingAttempts.js';
 import { handleExamAttempts } from './examAttempts.js';
 import { handleWeeklyReport } from './weeklyReport.js';
+import { serveStaticAsset } from './staticAssets.js';
 
 const COOKIE_NAME = 'ef_session';
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -640,7 +641,7 @@ export default {
       }
 
       if (env?.ASSETS?.fetch) {
-        return env.ASSETS.fetch(request);
+        return await serveStaticAsset(request, env.ASSETS);
       }
 
       return new Response('Not Found', { status: 404 });

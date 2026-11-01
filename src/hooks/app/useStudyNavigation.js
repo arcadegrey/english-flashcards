@@ -11,6 +11,9 @@ import { loadLearningView } from '../../utils/learningViewLoader.js'
 import { useReadingArticle } from '../useReadingArticle.js'
 import { useReadingVocabulary } from '../useReadingVocabulary.js'
 import { createStudyWordOrder } from '../../utils/studyOrder.js'
+import { loadReadingView } from '../../utils/pageViewLoader.js'
+import { loadReadingArticle } from '../../data/readingDelivery.js'
+import { loadReadingVocabulary } from '../../data/readingVocabulary.js'
 
 // Coordinate view transitions and invalidate late study preparation responses.
 export function useStudyNavigation(navigationState, learning, catalog, overview, account) {
@@ -244,6 +247,14 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
   }
 
   const handleOpenReadingSession = (readingId) => {
+    // Explicit navigation starts code, canonical prose and lookup in the same
+    // event. Hooks reuse these public requests and still own validation/adoption.
+    const article = readingLibrary.find(item => String(item.id) === String(readingId))
+    void loadReadingView().catch(() => {})
+    if (article?.contentDeferred) {
+      void loadReadingArticle(readingId).catch(() => {})
+      void loadReadingVocabulary(article).catch(() => {})
+    }
     setActiveReadingAssignment(null)
     setActiveWordAssignment(null)
     setReadingRetry(null)

@@ -77,6 +77,20 @@ export default defineConfig({
     copyPublicDir: false,
     minify: 'esbuild',
     reportCompressedSize: false,
+    manifest: true,
+    rolldownOptions: {
+      output: {
+        codeSplitting: {
+          groups: [{
+            name: 'shell-shared',
+            // These small UI/identity helpers already belong to the eager shell.
+            // Keep pages, large catalogs, audio mappings and GSAP lazy.
+            test: /\/(?:src\/(?:components\/(?:layout\/|ui\/)|utils\/(?:vocabularyMerge|vocabularyAliases|wordCategories|readingText|learningMetrics|studyRewards|classroom)\.js$)|shared\/(?:planPreferences|studyHistory|studyRewards|readingAttempts)\.js$)/,
+            includeDependenciesRecursively: false,
+          }],
+        },
+      },
+    },
   },
   server: {
     watch: {

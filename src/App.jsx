@@ -15,6 +15,7 @@ import { useStudyOverview } from './hooks/app/useStudyOverview.js'
 import { useAppNavigationState } from './hooks/app/useAppNavigationState.js'
 import { useStudyNavigation } from './hooks/app/useStudyNavigation.js'
 import AppPages from './components/app/AppPages.jsx'
+import { useNavigationIntent } from './hooks/useNavigationIntent.js'
 
 import VoiceSettings from './components/VoiceSettings'
 
@@ -28,6 +29,10 @@ function AppContent() {
   const account = useAccountSession(learning, navigationState)
   const actions = useStudyNavigation(navigationState, learning, catalog, overview, account)
   const navigation = { ...navigationState, ...actions }
+  useNavigationIntent(`${account.authUser?.id || 'guest'}:${navigation.view}:${learning.studyPlanCategory}`,
+    catalog.vocabularyLoading || !overview.planDataReady || overview.planPreparing || navigation.examPreparing
+      || navigation.vocabularyPreparing || Boolean(account.authTransition)
+      || ['learn', 'readingSession', 'wordAssignment'].includes(navigation.view))
   const [showVoiceSettings, setShowVoiceSettings] = useState(false)
 
   const renderAuthTransitionOverlay = () => {

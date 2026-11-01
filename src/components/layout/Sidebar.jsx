@@ -1,5 +1,6 @@
 import { calculateStudyStreak, getWeekStudyDays } from '../../utils/learningMetrics.js';
 import { appShellIcons } from './icons';
+import { navigationPreparationViews } from '../../utils/navigationIntent.js';
 
 function Sidebar({ active = 'plan', items = [], studyHistory = [] }) {
   const streak = calculateStudyStreak(studyHistory);
@@ -19,6 +20,7 @@ function Sidebar({ active = 'plan', items = [], studyHistory = [] }) {
             type="button"
             className={`ds-sidebar-item ${active === item.id ? 'is-active' : ''}`}
             onClick={item.onClick}
+            data-prepare-view={active !== item.id ? navigationPreparationViews[item.id] : undefined}
           >
             <span className="ds-sidebar-icon">{appShellIcons[item.icon] || appShellIcons.plan}</span>
             <span className="ds-sidebar-label">{item.label}</span>

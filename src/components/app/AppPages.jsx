@@ -6,16 +6,17 @@ import AppLayout from '../layout/AppLayout'
 import { getAccountRoleLabel } from '../../utils/classroom'
 import { speak } from '../../utils/speech'
 import { loadLearningView } from '../../utils/learningViewLoader.js'
+import { loadHomeView, loadStatisticsView, loadCollectionView, loadReadingView, loadExamView, loadPlanView } from '../../utils/pageViewLoader.js'
 
 const WordAssignmentSession = lazy(() => import('../classroom/WordAssignmentSession'))
-const HomeScreen = lazy(() => import('../HomeScreen'))
+const HomeScreen = lazy(loadHomeView)
 const LearningView = lazy(loadLearningView)
-const Statistics = lazy(() => import('../Statistics'))
-const WordCollectionView = lazy(() => import('../WordCollectionView'))
+const Statistics = lazy(loadStatisticsView)
+const WordCollectionView = lazy(loadCollectionView)
 const ToeflSelectionView = lazy(() => import('../ToeflSelectionView'))
-const ReadingSessionView = lazy(() => import('../ReadingSessionView'))
-const ExamPracticeView = lazy(() => import('../ExamPracticeView'))
-const PlanSettingsView = lazy(() => import('../PlanSettingsView'))
+const ReadingSessionView = lazy(loadReadingView)
+const ExamPracticeView = lazy(loadExamView)
+const PlanSettingsView = lazy(loadPlanView)
 const ClassroomView = lazy(() => import('../ClassroomView'))
 
 // Route-to-screen wiring only; state and async operations stay in the feature hooks.

@@ -10,6 +10,7 @@ import { calculateStudyStreak } from '../utils/learningMetrics'
 import { getAccountRoleLabel } from '../utils/classroom'
 import StudyMomentum from './StudyMomentum'
 import { buildDailyPlan } from '../utils/dailyPlan.js'
+import { actionPreparation } from '../utils/navigationIntent.js'
 
 function StudyHub({
   onOpenWordStudy,
@@ -72,6 +73,7 @@ function StudyHub({
     retry: onRetryPlan || onOpenWordStudy,
   };
   const act = action => actions[action]?.();
+  const prepareAction = action => actionPreparation(action, suggestedReading?.id);
   const catalog = onOpenWordCatalog || onOpenTraining || onOpenWordStudy;
   const tomorrowLabel = tomorrowPlan ? `${Number(tomorrowPlan.date.slice(5, 7))} 月 ${Number(tomorrowPlan.date.slice(8))} 日` : '';
 
@@ -145,7 +147,7 @@ function StudyHub({
         <div className="study-mobile-greeting">
           <h1>{dashboardGreeting(authUser)}</h1>
         </div>
-        <StudyCarousel cards={cards} initialId={plan.priority} onAction={act} />
+        <StudyCarousel cards={cards} initialId={plan.priority} onAction={act} prepareAction={prepareAction} />
 
         {authUser?.profileConfigured && authUser.role === 'student' && <StudentReadingAssignments userId={authUser.id} onStart={onStartAssignment} />}
 
@@ -159,7 +161,7 @@ function StudyHub({
         <DashboardStats plan={plan} streak={streak} history={studyHistory} wordCount={wordCount} categoryName={planCategoryName}
           onAdjustPlan={onAdjustPlan} onStatistics={onOpenStatistics} onCatalog={catalog} />
         <div className="study-dashboard-workspace">
-          <DashboardTasks cards={cards} priority={plan.priority} ready={plan.priority !== 'preparing'} plan={plan} onAction={act} onAdjustPlan={onAdjustPlan} />
+          <DashboardTasks cards={cards} priority={plan.priority} ready={plan.priority !== 'preparing'} plan={plan} onAction={act} prepareAction={prepareAction} onAdjustPlan={onAdjustPlan} />
           <DashboardQuickStart reviewCount={reviewCount} wrongCount={wrongCount} onReview={onOpenTodayReview} onCatalog={catalog}
             onWrongWords={onOpenWrongWords} onExam={onOpenExamPractice} />
         </div>

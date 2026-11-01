@@ -1,5 +1,6 @@
 import { IconButton } from '../ui/Buttons';
 import { appShellIcons } from './icons';
+import { navigationPreparationViews } from '../../utils/navigationIntent.js';
 
 export function MobileTopbar({
   title,
@@ -58,6 +59,7 @@ export function MobileBottomNav({ active, items = [], onUserClick }) {
           className={`ds-mobile-nav-item ${active === item.id ? 'is-active' : ''}`}
           aria-current={active === item.id ? 'page' : undefined}
           onClick={item.onClick}
+          data-prepare-view={active !== item.id ? navigationPreparationViews[item.id] : undefined}
         >
           <span className="ds-mobile-nav-icon" aria-hidden="true">
             {appShellIcons[item.id === 'training' ? 'reading' : item.icon] || appShellIcons.plan}

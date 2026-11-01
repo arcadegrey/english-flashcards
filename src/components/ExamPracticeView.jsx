@@ -171,7 +171,7 @@ function ExamPracticeView({
           {preparationError && <div className="test-preparation is-error" role="alert"><span>{preparationError}</span><SecondaryButton onClick={onRetryPreparation}>重试</SecondaryButton></div>}
           {!isPreparing && !preparationError && selectedScopeCount === 0 && <p className="test-preparation" role="status">当前范围暂无单词，可以切换范围后继续。</p>}
           <div className="test-mode-grid">
-            {EXAM_MODES.map(item => <ModuleCard key={item.id} variant={item.tone}
+            {EXAM_MODES.map(item => <ModuleCard key={item.id} variant={item.tone} data-prepare-view="assessment"
               title={item.title} meta={<><span className="test-mode-meta">{item.meta}</span><span className="test-mode-helper">{item.helper}</span></>}
               iconSrc={item.iconSrc} disabled={isPreparing || selectedScopeCount === 0}
               onClick={() => onSelectMode?.(item.id, selectedScope)} />)}

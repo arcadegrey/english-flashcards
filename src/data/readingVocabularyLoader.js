@@ -20,7 +20,7 @@ export function createReadingVocabularyLoader({ entries, vocabularyIndex, loadCa
     }).catch(error => { catalogRequest = null; throw error })
     return catalogRequest
   }
-  return async article => {
+  const load = async article => {
     if (article?.contentDeferred && knownPaths.has(article.contentPath)) return catalog()
     if (typeof article?.content !== 'string') throw new Error('缺少阅读正文，无法准备查词。')
     const tokens = tokenizeReadingText(article.content).filter(isEnglishWordToken)
@@ -29,6 +29,14 @@ export function createReadingVocabularyLoader({ entries, vocabularyIndex, loadCa
     // replace their text/questions with a canonical article sharing the same ID.
     return tokens.every(token => knownTokens.has(token.toLowerCase())) ? catalog() : loadFullCatalog()
   }
+  // The fixed public lookup is shared by all canonical articles. Speculation
+  // must not escalate to full vocabulary or lazy offline fallback downloads.
+  load.prefetch = async () => {
+    const words = await loadCatalog(valid, { fallback: false })
+    if (!valid(words)) throw new Error('阅读词汇数据不完整，请重试。')
+    return words
+  }
+  return load
 }
 
 export function buildReadingWordLookup(words, customWords = []) {

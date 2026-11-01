@@ -26,6 +26,22 @@ const deferred = () => { let resolve; const promise = new Promise(done => { reso
 const english = article => tokenizeReadingText(article.content).filter(isEnglishWordToken)
 const matchedIds = (article, lookup) => english(article).map(token => resolveVocabularyWord(token, lookup)?.id || null)
 
+test('speculation validates only the fixed public lookup and forbids fallback escalation', async () => {
+  let options, attempts = 0
+  const load = makeLoader({ loadCatalog: async (valid, policy) => {
+    options = policy; attempts++
+    assert.equal(valid(summaries), true)
+    if (attempts === 1) throw new Error('isolated primary failure')
+    return attempts === 2 ? summaries.slice(1) : summaries
+  } })
+  await assert.rejects(load.prefetch(), /primary failure/)
+  assert.deepEqual(options, { fallback: false })
+  await assert.rejects(load.prefetch(), /不完整/)
+  assert.strictEqual(await load.prefetch(), summaries)
+  // Bound the payload of the complete fixed lookup, not the 8749-word study pool.
+  assert(gzipSync(JSON.stringify(summaries)).length < 64 * 1024)
+})
+
 test('all 26 canonical readings resolve the same IDs as the complete vocabulary, including custom exact/derived forms', async () => {
   const load = makeLoader()
   for (const custom of [[], [

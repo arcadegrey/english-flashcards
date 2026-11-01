@@ -72,6 +72,27 @@ test('only the selected article is fetched; concurrent calls dedupe and every ca
   assert.equal(calls.length, readings.length)
 })
 
+test('article intent and explicit navigation share a validated public request without adopting a session', async () => {
+  const { load, calls } = loader()
+  const [prepared, opened] = await Promise.all([load.prefetch(13), load(13)])
+  assert.deepEqual(prepared, readings.find(article => article.id === 13))
+  assert.strictEqual(prepared, opened)
+  assert.equal(calls.length, 1)
+  await assert.rejects(load.prefetch('unknown'), /未找到/)
+  assert.equal(calls.length, 1)
+})
+
+test('failed speculation never downloads the whole legacy library; explicit offline navigation still can', async () => {
+  let fallbacks = 0
+  const { load, calls } = loader({ fetchImpl: () => { throw new Error('offline') },
+    loadLegacyArticles: async () => { fallbacks++; return readings } })
+  await assert.rejects(load.prefetch(13), /offline/)
+  assert.equal(fallbacks, 0)
+  assert.deepEqual(await load(13), readings.find(article => article.id === 13))
+  assert.equal(fallbacks, 1)
+  assert.equal(calls.length, 2)
+})
+
 test('bad revision, wrong article ID, missing content and missing questions cannot enter a session; failures release retry', async () => {
   const entry = metadata.find(article => article.questionCount)
   const good = await read(`public${entry.contentPath}`)

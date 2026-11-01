@@ -6,6 +6,10 @@ Vite + React English learning app for flashcards, tests, spelling, matching, rea
 
 This file is intentionally short for Codex startup context. Detailed data/audio/import/Worker notes live in `docs/project-reference.md`.
 
+## Delivery follow-up (2026-11-01, local only)
+
+Cache rules now distinguish hashed JS/public JSON from revalidated HTML/SW and private APIs. Bounded dwell/focus preparation shares page loaders and prepares one article plus the fixed public reading lookup; shared shell chunks reduce measured startup JS requests from 33 to 22. Missing resource navigations return 404/no-store instead of immutable SPA HTML; publish the updated Worker, ASSETS binding/`not_found_handling=none` and static build together. No D1/personal-data migration or audio upload. 454 tests, lint/build, 6 timezone checks, Worker dry-run, cache audit and 37 browser assertions pass. **Included in this local commit; not pushed/deployed. Mainland cold/warm/navigation acceptance remains open**; local no-proxy production reads include success and TLS/browser timeouts, with no valid full direct-browser timing set. Commands, measurements, exact changed files and rollback: [docs/delivery-performance-2026-11-01.md](docs/delivery-performance-2026-11-01.md).
+
 ## Release Status (verified 2026-10-31)
 
 - The latest verified feature deployment is `b8075a7de41a179170151435588e51a9dfceb332`, including reading vocabulary independence (`85fe4ef`) and recorded sentence dictation. The initial live GitHub API check confirmed remote `main` at this commit and [Actions #152](https://github.com/arcadegrey/english-flashcards/actions/runs/41070849932) successful on 2026-10-30 at 22:22:08 Asia/Shanghai. Quality, idempotent D1 schema and Worker/static-assets deployment all passed; Cloudflare version: `1a2cd898-aadc-4853-a1d6-53f91bfd8433`.

@@ -14,6 +14,7 @@ export default function StudyCarousel({
   cards,
   initialId,
   onAction,
+  prepareAction,
   className = '',
   label = '学习内容预览',
   previousLabel = '上一个学习内容',
@@ -93,7 +94,7 @@ export default function StudyCarousel({
             <span className="study-carousel-eyebrow"><span aria-hidden="true" />{card.eyebrow}</span>
             <h2>{card.levelCode ? <><span className="study-carousel-level-code">{card.levelCode}</span><span className="study-carousel-level-title">{card.heading || card.title}</span></> : card.title}</h2><p className="study-carousel-meta">{card.meta}</p>
             <p className="study-carousel-description">{card.description}</p>
-            <PrimaryButton className="study-carousel-start" disabled={!card.action} onClick={() => onAction(card.action)}>
+            <PrimaryButton className="study-carousel-start" disabled={!card.action} {...prepareAction?.(card.action)} onClick={() => onAction(card.action)}>
               {card.actionLabel}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5" /></svg>
             </PrimaryButton>
           </div>

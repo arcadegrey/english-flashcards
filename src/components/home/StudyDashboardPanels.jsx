@@ -56,7 +56,7 @@ export function DashboardStats({ plan, streak, history, wordCount, categoryName,
   </button>)}</div>;
 }
 
-export function DashboardTasks({ cards, priority, ready, plan, onAction, onAdjustPlan }) {
+export function DashboardTasks({ cards, priority, ready, plan, onAction, prepareAction, onAdjustPlan }) {
   const tasks = ['review', 'words', 'reading', 'exam'].map(id => cards.find(card => card.id === id))
     .filter(card => card && (card.id !== 'review' || plan.tasks.review.count > 0));
   return <BaseCard className="study-dashboard-tasks" aria-label="今日学习计划">
@@ -72,7 +72,7 @@ export function DashboardTasks({ cards, priority, ready, plan, onAction, onAdjus
       </div>
       <div className="study-dashboard-task-action">
         {task.complete && plan.priority !== 'preparing' && (task.available || task.id === 'review') && <span className="study-dashboard-task-status">已完成</span>}
-        <button type="button" disabled={!task.action} onClick={() => onAction(task.action)}>{task.action ? task.actionLabel : '暂不可用'}<Chevron /></button>
+        <button type="button" disabled={!task.action} {...prepareAction?.(task.action)} onClick={() => onAction(task.action)}>{task.action ? task.actionLabel : '暂不可用'}<Chevron /></button>
       </div>
     </div>)}</div>
   </BaseCard>;
