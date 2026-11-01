@@ -44,7 +44,7 @@ for (const rule of rules.filter(rule => rule.cache.includes('immutable'))) {
     if (rules.filter(other => other.pattern.endsWith('*') ? `/${file}`.startsWith(other.pattern.slice(0, -1)) : other.pattern === `/${file}`).length !== 1) failures.push(`Overlapping headers: ${file}`)
   }
 }
-for (const url of ['/', '/index.html', '/sw.js', '/registerSW.js', '/manifest.webmanifest']) {
+for (const url of ['/', '/index.html', '/sw.js', '/pwa-update-guard.js', '/registerSW.js', '/manifest.webmanifest']) {
   if (rules.find(rule => rule.pattern === url)?.cache !== 'public, max-age=0, must-revalidate') failures.push(`Missing revalidation: ${url}`)
 }
 if (rules.some(rule => rule.pattern.startsWith('/api'))) failures.push('Static headers must not override private API responses')

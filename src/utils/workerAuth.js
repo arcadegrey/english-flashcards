@@ -1,7 +1,8 @@
 import { normalizePreferences } from '../../shared/planPreferences.js';
 import { normalizeStudyHistory } from '../../shared/studyHistory.js';
+import { pwaUpdates } from './pwaUpdates.js';
 
-const API_BASE = String(import.meta.env.VITE_API_BASE || '/api').trim().replace(/\/$/, '');
+const API_BASE = String(import.meta.env?.VITE_API_BASE || '/api').trim().replace(/\/$/, '');
 const FALLBACK_SESSION_TTL_SECONDS = 60 * 60 * 24 * 30;
 
 const EMPTY_PROGRESS = {
@@ -62,28 +63,31 @@ const buildSessionFromUser = (user, expiresAt) => ({
 });
 
 export const requestApi = async (path, { method = 'GET', body, allowUnauthorized = false, signal, expectedUserId } = {}) => {
-  const response = await fetch(`${API_BASE}${path}`, {
-    method,
-    credentials: 'include',
-    headers: { ...(body ? { 'content-type': 'application/json' } : {}), ...(expectedUserId ? { 'x-flashcards-user': String(expectedUserId) } : {}) },
-    body: body ? JSON.stringify(body) : undefined,
-    signal: signal || AbortSignal.timeout(20000),
-  });
+  const releaseUpdateGuard = pwaUpdates.beginRequest();
+  try {
+    const response = await fetch(`${API_BASE}${path}`, {
+      method,
+      credentials: 'include',
+      headers: { ...(body ? { 'content-type': 'application/json' } : {}), ...(expectedUserId ? { 'x-flashcards-user': String(expectedUserId) } : {}) },
+      body: body ? JSON.stringify(body) : undefined,
+      signal: signal || AbortSignal.timeout(20000),
+    });
 
-  const contentType = response.headers.get('content-type') || '';
-  const isJson = contentType.includes('application/json');
-  const payload = isJson ? await response.json().catch(() => null) : await response.text();
+    const contentType = response.headers.get('content-type') || '';
+    const isJson = contentType.includes('application/json');
+    const payload = isJson ? await response.json().catch(() => null) : await response.text();
 
-  if (!response.ok) {
-    if (allowUnauthorized && response.status === 401) {
-      return { unauthorized: true, payload };
+    if (!response.ok) {
+      if (allowUnauthorized && response.status === 401) {
+        return { unauthorized: true, payload };
+      }
+      const error = new Error(getErrorMessage(payload, response.status));
+      error.status = response.status;
+      throw error;
     }
-    const error = new Error(getErrorMessage(payload, response.status));
-    error.status = response.status;
-    throw error;
-  }
 
-  return payload;
+    return payload;
+  } finally { releaseUpdateGuard(); }
 };
 
 export const isWorkerAuthConfigured = () => Boolean(API_BASE);

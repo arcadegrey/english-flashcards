@@ -1,11 +1,20 @@
 // Run with playwright-cli run-code --filename=scripts/check-delivery-browser.cjs
 // against the local production server. Uses fresh guest contexts, no accounts.
-async page => {
+async (page, { artifacts } = {}) => {
   for (const context of page.context().browser().contexts()) if (context !== page.context()) await context.close();
-  const origin = new URL(page.url()).origin, results = [];
+  const origin = new URL(page.url()).origin, results = [], contexts = new Set();
+  let trace = 0;
+  const close = async context => {
+    if (artifacts) await context.tracing.stop({ path: `${artifacts}/delivery-${++trace}.zip` });
+    contexts.delete(context); await context.close();
+  };
   const check = (condition, name) => { if (!condition) throw new Error(name); results.push(name); };
   const open = async (connection, serviceWorkers = 'block') => {
     const context = await page.context().browser().newContext({ serviceWorkers, reducedMotion: 'reduce', viewport: { width: 1440, height: 1000 } });
+    contexts.add(context);
+    if (artifacts) await context.tracing.start({ screenshots: true, snapshots: true });
+    await context.route('**/*', route => new URL(route.request().url()).origin === origin
+      ? route.continue() : route.abort('blockedbyclient'));
     if (connection) await context.addInitScript(value => Object.defineProperty(navigator, 'connection', { value, configurable: true }), connection);
     const p = await context.newPage(), requests = [], errors = [];
     p.on('request', r => requests.push(new URL(r.url()).pathname));
@@ -14,6 +23,7 @@ async page => {
     return { context, p, requests, errors };
   };
   const protectedState = p => p.evaluate(() => Object.fromEntries(Object.entries(localStorage).filter(([key]) => /learned|mastered|bookmark|word_progress|study_history|wrong_words/.test(key))));
+  try {
   {
     const { context, p, requests, errors } = await open({ effectiveType: '4g' });
     const before = await protectedState(p), button = p.locator('.study-dashboard-task button[data-prepare-reading]').first();
@@ -41,7 +51,7 @@ async page => {
     await p.locator('.ds-sidebar button[data-prepare-view="statistics"]').hover(); await p.waitForTimeout(300);
     check(!requests.slice(n).some(path => /Statistics.*\.js$/.test(path)), 'active reading blocks unrelated speculative work');
     check(errors.length === 0, 'reading flow has no page errors');
-    await context.close();
+    await close(context);
   }
   for (const connection of [{ effectiveType: '3g' }, { effectiveType: '4g', saveData: true }]) {
     const { context, p, requests } = await open(connection);
@@ -49,7 +59,7 @@ async page => {
     check(!requests.some(path => /^\/data\/readings\//.test(path)), `no speculation on ${connection.saveData ? 'data saver' : '3g'}`);
     await p.locator('.study-dashboard-task button[data-prepare-reading]').first().click(); await p.locator('.reading-session-content').waitFor();
     check(true, 'explicit navigation still works when speculation is disabled');
-    await context.close();
+    await close(context);
   }
   {
     const { context, p, requests, errors } = await open({ effectiveType: '4g' });
@@ -78,7 +88,7 @@ async page => {
     await p.setViewportSize({ width: 390, height: 844 });
     check(await p.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), 'mobile word study retains its dedicated layout without overflow');
     check(errors.length === 0, 'navigation flow has no page errors');
-    await context.close();
+    await close(context);
   }
   {
     const { context, p, requests, errors } = await open({ effectiveType: '4g' }, 'allow');
@@ -95,7 +105,13 @@ async page => {
     await context.setOffline(false);
     check(!(await p.evaluate(() => performance.getEntriesByType('resource').some(r => /r2\.dev/.test(r.name)))), 'no legacy audio route in this guest flow');
     check(errors.length === 0, 'PWA offline flow has no page errors');
-    await context.close();
+    await close(context);
   }
   return { passed: results.length, results };
+  } finally {
+    for (const context of contexts) {
+      if (artifacts) await context.pages()[0]?.screenshot({ path: `${artifacts}/delivery-failure.png`, fullPage: true }).catch(() => {});
+      await close(context);
+    }
+  }
 }

@@ -1,7 +1,9 @@
 import { loadCoreVocabularyCatalog } from './data/vocabularyStartup.js'
 import { applyInitialTheme } from './utils/initialTheme.js'
+import { pwaUpdates } from './utils/pwaUpdates.js'
 
 applyInitialTheme()
+if (import.meta.env.PROD) pwaUpdates.start()
 // Start the same cache-first request while React/App code downloads. App still
 // owns readiness, errors and explicit retry; an early failure is never unhandled.
 void loadCoreVocabularyCatalog().catch(() => {})

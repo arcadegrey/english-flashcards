@@ -16,6 +16,7 @@ import { useAppNavigationState } from './hooks/app/useAppNavigationState.js'
 import { useStudyNavigation } from './hooks/app/useStudyNavigation.js'
 import AppPages from './components/app/AppPages.jsx'
 import { useNavigationIntent } from './hooks/useNavigationIntent.js'
+import { usePwaUpdateSafety } from './hooks/usePwaUpdateSafety.js'
 
 import VoiceSettings from './components/VoiceSettings'
 
@@ -34,6 +35,12 @@ function AppContent() {
       || navigation.vocabularyPreparing || Boolean(account.authTransition)
       || ['learn', 'readingSession', 'wordAssignment'].includes(navigation.view))
   const [showVoiceSettings, setShowVoiceSettings] = useState(false)
+  const update = usePwaUpdateSafety(catalog.vocabularyLoading || account.authLoading
+    || navigation.examPreparing || overview.planPreparing || navigation.vocabularyPreparing
+    || Boolean(account.authTransition) || account.showAuthModal || showVoiceSettings
+    || ['pending', 'syncing', 'error'].includes(account.syncState)
+    || !['studyHub', 'home', 'statistics', 'examPractice', 'planSettings',
+      'toeflLevels', 'toeflLists', 'ieltsTopics', 'ieltsLists'].includes(navigation.view))
 
   const renderAuthTransitionOverlay = () => {
     if (!account.authTransition) return null
@@ -129,7 +136,7 @@ function AppContent() {
   const shell = { selectionNavItems, selectionTopbarProps, isDark, toggleTheme, setShowVoiceSettings }
 
   return (
-    <div className={`min-h-screen ${appBackground}`}>
+    <div className={`min-h-screen ${appBackground}`} data-app-build={update.buildId}>
       <WordBookmarksContext.Provider value={wordBookmarkContext}>
         <ExamHistoryProvider key={account.authUser?.id || 'guest'} ownerId={account.authUser?.id}>
           <PageLoadBoundary key={navigation.view}>
@@ -158,6 +165,7 @@ function AppContent() {
         onOpenClassroom={navigation.handleOpenClassroom}
       />
       {renderAuthTransitionOverlay()}
+      {['checking', 'updating'].includes(update.phase) && <LoadingState variant="overlay" title={update.phase === 'checking' ? '正在确认更新…' : '正在更新应用…'} detail="请稍候，已保存的学习记录会保留。" />}
     </div>
   )
 }

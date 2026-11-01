@@ -18,6 +18,8 @@
   Cache-Control: public, max-age=0, must-revalidate
 /sw.js
   Cache-Control: public, max-age=0, must-revalidate
+/pwa-update-guard.js
+  Cache-Control: public, max-age=0, must-revalidate
 /registerSW.js
   Cache-Control: public, max-age=0, must-revalidate
 /manifest.webmanifest

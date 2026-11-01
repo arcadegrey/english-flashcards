@@ -27,3 +27,19 @@ jobs:
         run: npm run performance:audit
       - name: Validate Worker bundle without deploying
         run: npx --no-install wrangler deploy --dry-run
+      - name: Install browser for production smoke tests
+        run: npx --no-install playwright install --with-deps chromium
+      - name: Check browser flows and PWA upgrades
+        run: npm run test:browser
+        timeout-minutes: 10
+      - name: Save browser diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-diagnostics
+          path: |
+            output/browser-ci/*.json
+            output/browser-ci/*.png
+            output/browser-ci/*.zip
+          if-no-files-found: ignore
+          retention-days: 7

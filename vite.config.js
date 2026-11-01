@@ -29,45 +29,52 @@ vocabularyHash.update(readFileSync('public/data/vocabulary.json'))
 hashVocabularyDirectory('public/data/vocabulary')
 const vocabularyVersion = vocabularyHash.digest('hex').slice(0, 16)
 
-const copyPublicAppAssets = () => ({
-  name: 'copy-public-app-assets',
-  apply: 'build',
-  async writeBundle() {
-    const publicDir = path.resolve('public')
-    const outDir = path.resolve('dist')
-    const ignored = new Set(['audio', 'audio-updates', 'data', '.DS_Store'])
+const copyPublicAppAssets = () => {
+  let outDir
+  return {
+    name: 'copy-public-app-assets',
+    apply: 'build',
+    configResolved(config) { outDir = path.resolve(config.root, config.build.outDir) },
+    async writeBundle() {
+      const publicDir = path.resolve('public')
+      const ignored = new Set(['audio', 'audio-updates', 'data', '.DS_Store'])
 
-    await mkdir(outDir, { recursive: true })
+      await mkdir(outDir, { recursive: true })
 
-    const entries = await readdir(publicDir, { withFileTypes: true })
-    await Promise.all(
-      entries
-        .filter((entry) => !ignored.has(entry.name))
-        .map((entry) =>
-          cp(path.join(publicDir, entry.name), path.join(outDir, entry.name), {
-            recursive: true,
-            force: true,
-            // Original design sheets are retained in source, never shipped.
-            filter: source => !/(?:-source|-alpha|sprite[^/]*)\.png$/.test(source),
-          })
-        )
-    )
-  },
-})
-
-const copyPublicDataAfterPwa = () => ({
-  name: 'copy-public-data-after-pwa',
-  apply: 'build',
-  closeBundle: {
-    order: 'post',
-    async handler() {
-      await cp(path.resolve('public/data'), path.resolve('dist/data'), {
-        recursive: true,
-        force: true,
-      })
+      const entries = await readdir(publicDir, { withFileTypes: true })
+      await Promise.all(
+        entries
+          .filter((entry) => !ignored.has(entry.name))
+          .map((entry) =>
+            cp(path.join(publicDir, entry.name), path.join(outDir, entry.name), {
+              recursive: true,
+              force: true,
+              // Original design sheets are retained in source, never shipped.
+              filter: source => !/(?:-source|-alpha|sprite[^/]*)\.png$/.test(source),
+            })
+          )
+      )
     },
-  },
-})
+  }
+}
+
+const copyPublicDataAfterPwa = () => {
+  let outDir
+  return {
+    name: 'copy-public-data-after-pwa',
+    apply: 'build',
+    configResolved(config) { outDir = path.resolve(config.root, config.build.outDir) },
+    closeBundle: {
+      order: 'post',
+      async handler() {
+        await cp(path.resolve('public/data'), path.join(outDir, 'data'), {
+          recursive: true,
+          force: true,
+        })
+      },
+    },
+  }
+}
 
 export default defineConfig({
   define: {
@@ -108,7 +115,8 @@ export default defineConfig({
     wordHintFallbacks(),
     copyPublicAppAssets(),
     VitePWA({
-      registerType: 'autoUpdate',
+      registerType: 'prompt',
+      injectRegister: false,
       includeAssets: ['favicon.svg', 'icons/*.svg'],
       manifest: {
         id: '/',
@@ -146,6 +154,9 @@ export default defineConfig({
         ]
       },
       workbox: {
+        skipWaiting: false,
+        clientsClaim: true,
+        importScripts: ['/pwa-update-guard.js'],
         globPatterns: ['**/*.{js,css,html,svg,png,json,ico,txt,woff2,webmanifest}'],
         globIgnores: ['**/audio/**', '**/audio-updates/**', '**/data/**/*.json', '**/images/**', '**/assets/word-hints/**'],
         runtimeCaching: [

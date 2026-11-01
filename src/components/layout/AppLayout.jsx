@@ -1,13 +1,14 @@
 import Sidebar from './Sidebar';
 import Topbar from './Topbar';
 import { MobileBottomNav, MobileTopbar } from './MobileAppChrome';
+import PwaUpdateNotice from './PwaUpdateNotice.jsx';
 import '../../styles/mobile-learning.css';
 import '../../styles/dark-home.css';
 
 export { Sidebar, Topbar, MobileBottomNav, MobileTopbar };
 
 export function Content({ children }) {
-  return <main className="ds-content">{children}</main>;
+  return <main className="ds-content"><PwaUpdateNotice />{children}</main>;
 }
 
 function AppLayout({ active, navItems, title, subtitle, topbarProps = {}, sidebarProps = {}, className = '', children }) {

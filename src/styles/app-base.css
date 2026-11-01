@@ -2,3 +2,14 @@
    styles arrive later, so their cascade never depends on shared chunk order. */
 @import "../index.css";
 @import "./study-core.css";
+
+.ds-update-notice { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; padding: 16px 20px; }
+.ds-update-notice strong { color: var(--ds-text); }
+.ds-update-notice p { margin: 6px 0 0; color: var(--ds-muted); font-size: 14px; }
+.ds-update-actions { display: flex; gap: 8px; flex-shrink: 0; }
+.ds-update-actions .ds-button-secondary { background: var(--ds-card); color: var(--ds-text); border: 1px solid var(--ds-line); }
+.ds-app-layout--mobile-study .ds-update-notice { display: none; }
+@media (max-width: 640px) {
+  .ds-update-notice { flex-direction: column; align-items: stretch; }
+  .ds-update-actions { justify-content: flex-end; }
+}
