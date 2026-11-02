@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import { storage, WORD_BOOKMARKS_STORAGE_KEY } from '../../utils/storage'
 import {
   fetchCurrentUser, isCloudAuthConfigured, refreshSession, signInWithEmail, signOut, signUpWithEmail,
+  requestPasswordCode, resetPasswordWithCode, setAccountPassword,
 } from '../../utils/workerAuth'
 import { useCloudProgressSync } from './useCloudProgressSync.js'
 
@@ -150,7 +151,7 @@ export function useAccountSession(learning, navigationState) {
     bootstrap()
   }, [applyMergedProgress, cloudEnabled, cloudProgressVersionRef, ensureFreshSession, hydrateFromCloud, latestProgressRef, localDataLoaded, setPlanExamActivity, setSyncError, setSyncState])
 
-  const handleAuthLogin = async ({ email, password, verificationCode }) => {
+  const handleAuthLogin = async ({ email, password, verificationCode, method }) => {
     if (!cloudEnabled) {
       throw new Error('云端账号服务未配置')
     }
@@ -173,6 +174,7 @@ export function useAccountSession(learning, navigationState) {
         email,
         password,
         verificationCode,
+        method,
       })
       if (!session || pendingVerification) {
         return {
@@ -203,7 +205,7 @@ export function useAccountSession(learning, navigationState) {
     }
   }
 
-  const handleAuthRegister = async ({ email, verificationCode, role, displayName }) => {
+  const handleAuthRegister = async ({ email, verificationCode, password, role, displayName }) => {
     if (!cloudEnabled) {
       throw new Error('云端账号服务未配置')
     }
@@ -225,6 +227,7 @@ export function useAccountSession(learning, navigationState) {
       const { session, user, emailConfirmationRequired, message } = await signUpWithEmail({
         email,
         verificationCode,
+        password,
         role,
         displayName,
       })
@@ -369,6 +372,26 @@ export function useAccountSession(learning, navigationState) {
     return result
   }
 
+  const handleRequestPasswordCode = ({ purpose, email }) => {
+    if (purpose === 'set' && !authUser?.id) throw new Error('请先登录账号。')
+    return requestPasswordCode({ purpose, email, expectedUserId: purpose === 'set' ? authUser.id : undefined })
+  }
+
+  const handleSavePassword = async (payload) => {
+    const expectedUserId = authUser?.id
+    if (!expectedUserId) throw new Error('请先登录账号。')
+    try { await flushCloudProgress() } catch { /* Unsent progress remains account-local. */ }
+    const result = await setAccountPassword({ ...payload, expectedUserId })
+    if (String(storage.getAuthSession()?.user?.id) !== String(expectedUserId)) throw new Error('账号已切换，请刷新页面。')
+    beginProgressSession()
+    storage.setAuthSession(result.session)
+    setAuthSession(result.session)
+    setAuthUser(result.user)
+    try { await hydrateFromCloud({ session: result.session, user: result.user }) }
+    catch (error) { setSyncState('error'); setSyncError(error.message || '本机进度已保留，请重试同步。') }
+    return { message: result.message }
+  }
+
   const handleClassroomProfileUpdated = useCallback((user) => {
     setAuthUser((current) => JSON.stringify(current) === JSON.stringify(user) ? current : user)
     const session = storage.getAuthSession()
@@ -388,5 +411,6 @@ export function useAccountSession(learning, navigationState) {
     setShowAuthModal, closeAuthModal, homeAccountNotice, authTransition, handleAuthLogin, handleAuthRegister,
     handleAuthLogout, handleManualSync, handleHomeSync, handleModalLogin, handleModalRegister,
     handleModalLogout, handleModalSyncNow, handleClassroomProfileUpdated, getSyncStatusText,
+    handleRequestPasswordCode, handleSavePassword, handleResetPassword: resetPasswordWithCode,
   }
 }

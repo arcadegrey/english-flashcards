@@ -1,23 +1,34 @@
 import { DatabaseSync } from 'node:sqlite'
 import { readFile } from 'node:fs/promises'
 import worker from '../../worker/index.js'
+import { PasswordHasher } from '../../worker/passwordHasher.js'
 
 export const createClassroomFixture = async () => {
   const sqlite = new DatabaseSync(':memory:')
   const schema = await readFile(new URL('../../worker/schema.sql', import.meta.url), 'utf8')
   sqlite.exec(schema)
+  const runStatement = (sql, params) => {
+    const result = sqlite.prepare(sql).run(...params)
+    return { success: true, meta: { changes: Number(result.changes), last_row_id: Number(result.lastInsertRowid) } }
+  }
   const statement = (sql, params = []) => ({
     bind: (...values) => statement(sql, values),
     async first() { return sqlite.prepare(sql).get(...params) || null },
     async all() { return { results: sqlite.prepare(sql).all(...params) } },
-    async run() {
-      const result = sqlite.prepare(sql).run(...params)
-      return { success: true, meta: { changes: Number(result.changes), last_row_id: Number(result.lastInsertRowid) } }
-    },
+    async run() { return runStatement(sql, params) },
+    runSync() { return runStatement(sql, params) },
   })
   const env = {
-    DB: { prepare: statement }, SESSION_SECRET: 'classroom-integration-tests-only',
+    DB: { prepare: statement, async batch(statements) {
+      sqlite.exec('BEGIN')
+      try { const results = statements.map(value => value.runSync()); sqlite.exec('COMMIT'); return results }
+      catch (error) { sqlite.exec('ROLLBACK'); throw error }
+    } }, SESSION_SECRET: 'classroom-integration-tests-only',
     RESEND_API_KEY: 'unused-test-value', RESEND_FROM_EMAIL: 'test@example.test',
+    PASSWORD_HASHER: {
+      idFromName: name => name,
+      get: () => ({ fetch: (input, init) => new PasswordHasher().fetch(new Request(input, init)) }),
+    },
   }
   const users = new Map()
   const addUser = async (id, role, displayName = `用户${id}`) => {

@@ -1,7 +1,7 @@
 import LoadingState from './ui/LoadingState';
 import AssetImage from './ui/AssetImage';
 import { useState } from 'react';
-import AccountRoleChoice from './AccountRoleChoice';
+import AuthCredentialsForm from './account/AuthCredentialsForm';
 import { getAccountRoleLabel } from '../utils/classroom';
 import { IconButton, PrimaryButton, SecondaryButton } from './ui/Buttons';
 
@@ -43,20 +43,20 @@ function AuthPanel({
   syncError = '',
   onLogin,
   onRegister,
+  onRequestPasswordCode,
+  onSavePassword,
+  onResetPassword,
   onLogout,
   onSyncNow,
   onOpenClassroom,
   onOpenSavedWords,
 }) {
-  const [mode, setMode] = useState('login');
-  const [email, setEmail] = useState('');
-  const [verificationCode, setVerificationCode] = useState('');
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
   const [syncRequestError, setSyncRequestError] = useState('');
-  const [role, setRole] = useState('student');
-  const [displayName, setDisplayName] = useState('');
+  const [editingPassword, setEditingPassword] = useState(false);
+  const [passwordNotice, setPasswordNotice] = useState('');
 
   const isLoggedIn = Boolean(user?.id);
   const accountName = user?.displayName || user?.email?.split('@')[0] || '学习者';
@@ -69,37 +69,6 @@ function AuthPanel({
   const hasSyncFailure = syncStatusText === '同步失败' || (visibleSyncError && syncStatusText !== '待同步');
   const syncTone = hasSyncFailure
     ? 'error' : isSynced ? 'success' : 'pending';
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-
-    if (!email.trim()) {
-      setError('请填写邮箱地址。');
-      return;
-    }
-
-    setBusy(true);
-    setError('');
-    setMessage('');
-
-    try {
-      const action = mode === 'register' ? onRegister : onLogin;
-      const result = await action?.({
-        email: email.trim(),
-        verificationCode: verificationCode.trim(),
-        role,
-        displayName: displayName.trim(),
-      });
-      setMessage(result?.message || (mode === 'register' ? '注册成功。' : '登录成功。'));
-      if (result?.sessionReady) {
-        setVerificationCode('');
-      }
-    } catch (submitError) {
-      setError(normalizeError(submitError?.message || submitError));
-    } finally {
-      setBusy(false);
-    }
-  };
 
   const handleSyncNow = async () => {
     if (!onSyncNow) return;
@@ -125,8 +94,6 @@ function AuthPanel({
     setMessage('');
     try {
       await onLogout({ allDevices });
-      setEmail('');
-      setVerificationCode('');
       setMessage(allDevices ? '已退出全部设备。' : '已退出当前设备。');
     } catch (logoutError) {
       setError(normalizeError(logoutError?.message || logoutError));
@@ -237,6 +204,14 @@ function AuthPanel({
               </div>
               {visibleSyncError && <p className={hasSyncFailure ? 'auth-error' : 'auth-sync-notice'} role={hasSyncFailure ? 'alert' : 'status'}>{visibleSyncError}</p>}
             </div>
+            <div className="auth-password-section">
+              {editingPassword ? <AuthCredentialsForm user={user} onRequestPasswordCode={onRequestPasswordCode} onSavePassword={onSavePassword}
+                onDone={notice => { setEditingPassword(false); setPasswordNotice(notice || ''); }} /> : <>
+                <div className="auth-password-summary"><div><h3>密码登录</h3><p>{user.hasPassword ? '已设置登录密码，可在不同设备使用。' : '设置密码，以后无需每次接收验证码。'}</p></div>
+                  <SecondaryButton disabled={busy} onClick={() => { setPasswordNotice(''); setEditingPassword(true); }}>{user.hasPassword ? '修改密码' : '设置密码'}</SecondaryButton></div>
+                {passwordNotice && <p className="auth-message" role="status">{passwordNotice}</p>}
+              </>}
+            </div>
             <div className="auth-account-footer">
               <button
                 type="button"
@@ -252,96 +227,8 @@ function AuthPanel({
             </div>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="auth-form">
-            <div className="auth-mode-toggle">
-              <button
-                type="button"
-                onClick={() => setMode('login')}
-                className={mode === 'login' ? 'is-active' : ''}
-              >
-                登录
-              </button>
-              <button
-                type="button"
-                onClick={() => setMode('register')}
-                className={mode === 'register' ? 'is-active' : ''}
-              >
-                注册
-              </button>
-            </div>
-
-            {mode === 'register' && (
-              <>
-                <AccountRoleChoice value={role} onChange={setRole} disabled={busy} />
-                <label className="auth-input-field">
-                  <input aria-label="姓名或昵称" type="text" maxLength={40} value={displayName}
-                    onChange={(event) => setDisplayName(event.target.value)} placeholder="姓名 / 昵称（可选，方便师生辨认）" />
-                </label>
-              </>
-            )}
-
-            <label className="auth-input-field">
-              <span aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M4 6h16v12H4z" />
-                  <path d="m4 7 8 6 8-6" />
-                </svg>
-              </span>
-              <input
-                type="email"
-                aria-label="邮箱地址"
-                autoComplete="email"
-                value={email}
-                onChange={(event) => setEmail(event.target.value)}
-                placeholder="请输入邮箱"
-              />
-            </label>
-
-            <label className="auth-input-field">
-              <span aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M12 3 19 6v5c0 4.4-2.8 7.8-7 10-4.2-2.2-7-5.6-7-10V6l7-3Z" />
-                  <path d="M9 12h6" />
-                </svg>
-              </span>
-              <input
-                type="text"
-                aria-label="验证码"
-                autoComplete="one-time-code"
-                value={verificationCode}
-                onChange={(event) => setVerificationCode(event.target.value)}
-                placeholder="请输入验证码（首次可留空）"
-              />
-            </label>
-
-            <PrimaryButton
-              type="submit"
-              loading={busy}
-              disabled={busy}
-              className="auth-primary-button"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="m5 12 14-7-5 14-3-5-6-2Z" />
-                <path d="m11 14 3-3" />
-              </svg>
-              {busy
-                ? '处理中...'
-                : verificationCode.trim()
-                  ? mode === 'register'
-                    ? '完成注册'
-                    : '完成登录'
-                  : mode === 'register'
-                    ? '发送注册验证码'
-                    : '发送登录验证码'}
-            </PrimaryButton>
-
-            <p className="auth-form-hint">
-              <span aria-hidden="true">i</span>
-              {mode === 'register'
-                ? '先发送注册验证码，再输入验证码完成注册并自动登录'
-                : '先发送登录验证码，再输入验证码完成登录'}
-            </p>
-          </form>
+          <AuthCredentialsForm onLogin={onLogin} onRegister={onRegister}
+            onRequestPasswordCode={onRequestPasswordCode} onResetPassword={onResetPassword} />
         )}
 
       {error && <p className="auth-error" role="alert">{error}</p>}

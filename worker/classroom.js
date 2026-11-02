@@ -66,7 +66,7 @@ export const handleClassroomApi = async (request, env, user) => {
         NOT EXISTS (SELECT 1 FROM class_memberships WHERE student_id = excluded.user_id))`)
       .bind(user.id, role, name, now, now).run();
     if (!result.meta.changes) return error('已有班级关联，不能切换身份。学生请先退出班级。', 409);
-    return json({ user: { id: user.id, email: user.email, role, displayName: name, profileConfigured: true } });
+    return json({ user: { id: user.id, email: user.email, role, displayName: name, profileConfigured: true, hasPassword: Boolean(user.hasPassword) } });
   }
 
   if (path === '/api/classroom' && request.method === 'GET') {

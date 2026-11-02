@@ -8,6 +8,9 @@ import { handleReadingAttempts } from './readingAttempts.js';
 import { handleExamAttempts } from './examAttempts.js';
 import { handleWeeklyReport } from './weeklyReport.js';
 import { serveStaticAsset } from './staticAssets.js';
+import { handlePasswordAuth } from './passwordAuth.js';
+import { checkEmailCode, validCodeSql, validCodeParams } from './emailCodes.js';
+export { PasswordHasher } from './passwordHasher.js';
 
 const COOKIE_NAME = 'ef_session';
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -228,14 +231,16 @@ const ensureEnv = (env) => {
 };
 
 const getUserByEmail = async (env, email) =>
-  env.DB.prepare(`SELECT u.id, u.email, p.role, p.display_name FROM users u
-    LEFT JOIN account_profiles p ON p.user_id = u.id WHERE u.email = ? LIMIT 1`).bind(email).first();
+  env.DB.prepare(`SELECT u.id, u.email, p.role, p.display_name, c.password_hash FROM users u
+    LEFT JOIN account_profiles p ON p.user_id = u.id
+    LEFT JOIN password_credentials c ON c.user_id = u.id WHERE u.email = ? LIMIT 1`).bind(email).first();
 
 const sendCodeEmail = async (env, email, code, mode) => {
-  const modeText = mode === 'register' ? '注册' : '登录';
-  const subject = `英语单词卡片 ${modeText}验证码：${code}`;
-  const text = `你的${modeText}验证码是 ${code}，10 分钟内有效。`; 
-  const html = `<p>你的${modeText}验证码是 <strong>${code}</strong>，10 分钟内有效。</p>`;
+  const modeText = ({ register: '注册', login: '登录', 'set-password': '设置密码', 'reset-password': '重置密码' })[mode] || '登录';
+  const changed = mode === 'password-changed';
+  const subject = changed ? '英语单词卡片：密码已更新' : `英语单词卡片 ${modeText}验证码：${code}`;
+  const text = changed ? '你的账号密码已更新，旧会话已退出。如非本人操作，请立即通过邮箱找回密码。' : `你的${modeText}验证码是 ${code}，10 分钟内有效。`;
+  const html = changed ? `<p>${text}</p>` : `<p>你的${modeText}验证码是 <strong>${code}</strong>，10 分钟内有效。</p>`;
 
   const response = await fetch('https://api.resend.com/emails', {
     method: 'POST',
@@ -265,10 +270,11 @@ const getSessionUser = async (env, request) => {
 
   const sessionHash = await hashSessionToken(sessionToken, env.SESSION_SECRET);
   const row = await env.DB.prepare(
-    `SELECT s.id, s.expires_at, u.id AS user_id, u.email, p.role, p.display_name
+    `SELECT s.id, s.expires_at, u.id AS user_id, u.email, p.role, p.display_name, c.user_id AS has_password
      FROM sessions s
      JOIN users u ON u.id = s.user_id
      LEFT JOIN account_profiles p ON p.user_id = u.id
+     LEFT JOIN password_credentials c ON c.user_id = u.id
      WHERE s.id = ?
      LIMIT 1`
   )
@@ -285,6 +291,7 @@ const getSessionUser = async (env, request) => {
   return {
     id: String(row.user_id),
     email: String(row.email || ''),
+    hasPassword: Boolean(row.has_password),
     ...profileFields(row),
   };
 };
@@ -299,6 +306,24 @@ const clearSessionCookie = (request) => {
   const protocol = new URL(request.url).protocol;
   const secure = protocol === 'https:' ? '; Secure' : '';
   return `${COOKIE_NAME}=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0${secure}`;
+};
+
+const issueSession = async (request, env, user, message, expectedPasswordHash) => {
+  const sessionTtlSeconds = toInt(env.SESSION_TTL_SECONDS, 60 * 60 * 24 * 30);
+  const rawToken = randomToken(32), sessionHash = await hashSessionToken(rawToken, env.SESSION_SECRET);
+  const now = nowIso();
+  const condition = expectedPasswordHash
+    ? 'EXISTS(SELECT 1 FROM password_credentials WHERE user_id=? AND password_hash=?)'
+    : 'NOT EXISTS(SELECT 1 FROM password_credentials WHERE user_id=?)';
+  const saved = await env.DB.prepare(`INSERT INTO sessions(id,user_id,expires_at,created_at) SELECT ?,?,?,? WHERE ${condition}`)
+    .bind(sessionHash, user.id, addSecondsIso(sessionTtlSeconds), now, user.id, ...(expectedPasswordHash ? [expectedPasswordHash] : [])).run();
+  if (!saved.meta.changes) return errorJson('登录状态已变化，请使用当前密码或新的验证码重新登录。', 409, 'CREDENTIAL_CHANGED');
+  await env.DB.prepare('UPDATE users SET last_login_at=? WHERE id=?').bind(now, user.id).run();
+  await env.DB.prepare('DELETE FROM sessions WHERE expires_at <= ?').bind(now).run();
+  const userPayload = { id: String(user.id), email: String(user.email), hasPassword: Boolean(user.password_hash), ...profileFields(user) };
+  return json({ message, user: userPayload, session: buildClientSession(userPayload, sessionTtlSeconds) }, 200, {
+    'Set-Cookie': createSessionCookie(rawToken, request, sessionTtlSeconds),
+  });
 };
 
 const handleSendCode = async (request, env) => {
@@ -377,39 +402,12 @@ const handleVerifyCode = async (request, env) => {
     return errorJson('请输入 6 位数字验证码。', 400, 'INVALID_CODE_FORMAT');
   }
 
-  const codeRow = await env.DB.prepare(
-    `SELECT id, code_hash, expires_at, attempts
-     FROM login_codes
-     WHERE email = ? AND mode = ? AND consumed_at IS NULL
-     ORDER BY created_at DESC
-     LIMIT 1`
-  )
-    .bind(email, mode)
-    .first();
-
-  if (!codeRow) {
-    return errorJson('请先发送验证码。', 400, 'CODE_NOT_FOUND');
-  }
-
-  if (new Date(codeRow.expires_at).getTime() <= Date.now()) {
-    await env.DB.prepare('UPDATE login_codes SET consumed_at = ? WHERE id = ?').bind(nowIso(), codeRow.id).run();
-    return errorJson('验证码已过期，请重新发送。', 400, 'CODE_EXPIRED');
-  }
-
-  if (toInt(codeRow.attempts, 0) >= 5) {
-    return errorJson('验证码尝试次数过多，请重新发送。', 429, 'TOO_MANY_ATTEMPTS');
-  }
-
-  const expectedHash = await hashCode(email, mode, code, env.SESSION_SECRET);
-  if (expectedHash !== String(codeRow.code_hash || '')) {
-    await env.DB.prepare('UPDATE login_codes SET attempts = attempts + 1 WHERE id = ?').bind(codeRow.id).run();
-    return errorJson('验证码错误，请重试。', 400, 'CODE_MISMATCH');
-  }
-
+  const credentialAtStart = await getUserByEmail(env, email);
+  const checked = await checkEmailCode(env, email, mode, code);
+  if (checked.response) return checked.response;
   const claimedAt = nowIso();
-  const claimed = await env.DB.prepare(`UPDATE login_codes SET consumed_at = ?
-    WHERE id = ? AND consumed_at IS NULL AND attempts < 5 AND expires_at > ?`)
-    .bind(claimedAt, codeRow.id, claimedAt).run();
+  const claimed = await env.DB.prepare(`UPDATE login_codes SET consumed_at = ? WHERE id = ? AND ${validCodeSql}`)
+    .bind(claimedAt, checked.row.id, ...validCodeParams(checked.row, email, mode, claimedAt)).run();
   if (!claimed.meta.changes) return errorJson('验证码已使用或失效，请重新发送。', 400, 'CODE_ALREADY_USED');
 
   let user = await getUserByEmail(env, email);
@@ -434,38 +432,8 @@ const handleVerifyCode = async (request, env) => {
     return errorJson('账号不存在，请先注册。', 404, 'USER_NOT_FOUND');
   }
 
-  await env.DB.prepare('UPDATE users SET last_login_at = ? WHERE id = ?').bind(loginAt, user.id).run();
-  // A new device gets its own session; other active devices remain signed in.
-  await env.DB.prepare('DELETE FROM sessions WHERE expires_at <= ?').bind(nowIso()).run();
-
-  const sessionTtlSeconds = toInt(env.SESSION_TTL_SECONDS, 60 * 60 * 24 * 30);
-  const rawToken = randomToken(32);
-  const sessionHash = await hashSessionToken(rawToken, env.SESSION_SECRET);
-  const expiresAt = addSecondsIso(sessionTtlSeconds);
-
-  await env.DB.prepare('INSERT INTO sessions (id, user_id, expires_at, created_at) VALUES (?, ?, ?, ?)')
-    .bind(sessionHash, user.id, expiresAt, nowIso())
-    .run();
-
-  const userPayload = {
-    id: String(user.id),
-    email: String(user.email || email),
-    ...profileFields(user),
-  };
-
-  const sessionPayload = buildClientSession(userPayload, sessionTtlSeconds);
-
-  return json(
-    {
-      message: mode === 'register' ? '注册并登录成功。' : '登录成功。',
-      user: userPayload,
-      session: sessionPayload,
-    },
-    200,
-    {
-      'Set-Cookie': createSessionCookie(rawToken, request, sessionTtlSeconds),
-    }
-  );
+  return issueSession(request, env, user, mode === 'register' ? '注册并登录成功。' : '登录成功。',
+    mode === 'register' ? user.password_hash : credentialAtStart?.password_hash);
 };
 
 const handleAuthMe = async (request, env) => {
@@ -578,9 +546,14 @@ const handlePutProgress = async (request, env) => {
   return errorJson('进度正在其他设备更新，请重试同步。', 409, 'SYNC_CONFLICT');
 };
 
-const handleApi = async (request, env) => {
+const handleApi = async (request, env, context) => {
   const url = new URL(request.url);
   const { pathname } = url;
+  if (request.method === 'POST' && pathname.startsWith('/api/auth/')) {
+    const origin = request.headers.get('origin');
+    if (request.headers.get('sec-fetch-site') === 'cross-site' || origin && origin !== url.origin) return errorJson('不允许跨站操作。', 403, 'CROSS_SITE');
+    if (!request.headers.get('content-type')?.startsWith('application/json')) return errorJson('请使用 JSON 提交。', 415);
+  }
   const expectedUserId = request.headers.get('x-flashcards-user');
   if (expectedUserId) {
     const currentUser = await getSessionUser(env, request);
@@ -601,6 +574,14 @@ const handleApi = async (request, env) => {
 
   if (pathname === '/api/classroom' || pathname.startsWith('/api/classroom/') || pathname === '/api/classes' || pathname.startsWith('/api/classes/')) {
     return handleClassroomApi(request, env, await getSessionUser(env, request));
+  }
+
+  if (pathname.startsWith('/api/auth/password/')) {
+    try {
+      return await handlePasswordAuth(request, env, { getUserByEmail, getSessionUser, issueSession, sendCodeEmail }, context);
+    } catch {
+      return errorJson('账号服务暂不可用，请稍后重试。', 503, 'AUTH_UNAVAILABLE');
+    }
   }
 
   if (request.method === 'POST' && pathname === '/api/auth/send-code') {
@@ -629,11 +610,11 @@ const handleApi = async (request, env) => {
 };
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, context) {
     try {
       const url = new URL(request.url);
       if (url.pathname.startsWith('/api/')) {
-        return await handleApi(request, env);
+        return await handleApi(request, env, context);
       }
 
       if (env?.ASSETS?.fetch) {

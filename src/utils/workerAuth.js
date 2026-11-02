@@ -93,7 +93,7 @@ export const requestApi = async (path, { method = 'GET', body, allowUnauthorized
 export const isWorkerAuthConfigured = () => Boolean(API_BASE);
 export const isCloudAuthConfigured = isWorkerAuthConfigured;
 
-export const signUpWithEmail = async ({ email, verificationCode = '', role = 'student', displayName = '' }) => {
+export const signUpWithEmail = async ({ email, verificationCode = '', password, role = 'student', displayName = '' }) => {
   const safeEmail = String(email || '').trim().toLowerCase();
   const safeCode = String(verificationCode || '').trim();
 
@@ -119,11 +119,12 @@ export const signUpWithEmail = async ({ email, verificationCode = '', role = 'st
     };
   }
 
-  const payload = await requestApi('/auth/verify-code', {
+  const payload = await requestApi(password !== undefined ? '/auth/password/register' : '/auth/verify-code', {
     method: 'POST',
     body: {
       email: safeEmail,
       code: safeCode,
+      ...(password !== undefined ? { verificationCode: safeCode, password } : {}),
       mode: 'register',
       role,
       displayName,
@@ -146,12 +147,18 @@ export const signUpWithEmail = async ({ email, verificationCode = '', role = 'st
   };
 };
 
-export const signInWithEmail = async ({ email, verificationCode = '', password = '' }) => {
+export const signInWithEmail = async ({ email, verificationCode = '', password = '', method }) => {
   const safeEmail = String(email || '').trim().toLowerCase();
-  const safeCode = String(verificationCode || password || '').trim();
+  const safeCode = String(verificationCode || '').trim();
 
   if (!safeEmail) {
     throw new Error('请先填写邮箱地址。');
+  }
+
+  if (method === 'password' || password) {
+    const payload = await requestApi('/auth/password/login', { method: 'POST', body: { email: safeEmail, password } });
+    if (!payload?.user?.id || !payload.session) throw new Error('登录会话创建失败，请重试。');
+    return { user: payload.user, session: payload.session, message: payload.message };
   }
 
   if (!safeCode) {
@@ -190,6 +197,19 @@ export const signInWithEmail = async ({ email, verificationCode = '', password =
 
   return { session, user };
 };
+
+export const requestPasswordCode = ({ purpose, email, expectedUserId }) => requestApi(
+  purpose === 'set' ? '/auth/password/set-code' : '/auth/password/reset-code',
+  { method: 'POST', body: purpose === 'set' ? {} : { email }, expectedUserId }
+);
+
+export const resetPasswordWithCode = ({ email, verificationCode, password }) => requestApi('/auth/password/reset', {
+  method: 'POST', body: { email, verificationCode, password },
+});
+
+export const setAccountPassword = ({ verificationCode, password, expectedUserId }) => requestApi('/auth/password/set', {
+  method: 'POST', body: { verificationCode, password }, expectedUserId,
+});
 
 export const signOut = async ({ allDevices = false, expectedUserId } = {}) => {
   await requestApi(allDevices ? '/auth/logout-all' : '/auth/logout', {

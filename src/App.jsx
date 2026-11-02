@@ -160,6 +160,9 @@ function AppContent() {
         syncError={account.syncError || account.authError}
         onLogin={account.handleModalLogin}
         onRegister={account.handleModalRegister}
+        onRequestPasswordCode={account.handleRequestPasswordCode}
+        onSavePassword={account.handleSavePassword}
+        onResetPassword={account.handleResetPassword}
         onLogout={account.handleModalLogout}
         onSyncNow={account.handleModalSyncNow}
         onOpenClassroom={navigation.handleOpenClassroom}

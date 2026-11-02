@@ -1,6 +1,15 @@
 main = "worker/index.js"
 name = "english-flashcards"
 compatibility_date = "2026-04-07"
+compatibility_flags = ["nodejs_compat"]
+
+[[durable_objects.bindings]]
+name = "PASSWORD_HASHER"
+class_name = "PasswordHasher"
+
+[[migrations]]
+tag = "v1-password-hasher"
+new_sqlite_classes = ["PasswordHasher"]
 
 [assets]
 directory = "./dist"
