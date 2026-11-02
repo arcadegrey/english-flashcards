@@ -1,4 +1,4 @@
-import { mergeWordProgress } from '../../shared/wordProgress.js';
+import { mergeWordProgress, mergeWordRecognition } from '../../shared/wordProgress.js';
 import { normalizePreferences, mergePreferences } from '../../shared/planPreferences.js';
 import { normalizeStudyHistory, mergeStudyHistory } from '../../shared/studyHistory.js';
 import { pickRicherWord } from './vocabularyMerge.js';
@@ -62,8 +62,7 @@ export const normalizeProgressState = (progress) => {
 
 export const mergeProgress = (localProgress, cloudProgress) => {
   return normalizeProgressState({
-    learnedWords: [...(cloudProgress.learnedWords || []), ...(localProgress.learnedWords || [])],
-    masteredWords: [...(cloudProgress.masteredWords || []), ...(localProgress.masteredWords || [])],
+    ...mergeWordRecognition(cloudProgress, localProgress),
     customWords: mergeCustomWordList(cloudProgress.customWords || [], localProgress.customWords || []),
     wordProgress: mergeWordProgress(cloudProgress.wordProgress, localProgress.wordProgress),
     wrongWords: [...(cloudProgress.wrongWords || []), ...(localProgress.wrongWords || [])],

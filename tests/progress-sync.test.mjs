@@ -66,6 +66,34 @@ test('normalized states and guest/cloud merges retain existing recognition prece
   assert.deepEqual(normalizeProgressState(next), next);
 });
 
+test('recognition follows the newer review when two devices disagree, in either merge order', () => {
+  const known = { masteredWords: [1], wordProgress: { 1: { lastReviewed: time, interval: 6 } } };
+  const forgotten = { learnedWords: ['1'], wrongWords: [1],
+    wordProgress: { 1: { lastReviewed: '2026-10-26T04:00:00Z', interval: 1 } } };
+  for (const [local, cloud] of [[known, forgotten], [forgotten, known]]) {
+    const next = mergeProgress(local, cloud);
+    assert.deepEqual(next.masteredWords, []);
+    assert.deepEqual(next.learnedWords.map(String), ['1']);
+    assert.deepEqual(next.wrongWords, [1]);
+    assert.equal(next.wordProgress[1].interval, 1);
+  }
+});
+
+test('recognition keeps newer mastery, preserves unrelated IDs, and retains legacy and equal-time precedence', () => {
+  const known = { masteredWords: [1, 2], wordProgress: { 1: { lastReviewed: time }, 2: { lastReviewed: time } } };
+  for (const lastReviewed of [undefined, 'invalid', time, '2026-10-25T03:00:00Z']) {
+    const forgotten = { learnedWords: ['1', 3], wrongWords: [1, 3], wordProgress: { 1: { lastReviewed } } };
+    for (const [local, cloud] of [[known, forgotten], [forgotten, known]]) {
+      const merged = mergeProgress(local, cloud);
+      assert.deepEqual(merged.masteredWords, [1, 2]);
+      assert.deepEqual(merged.learnedWords, [3]);
+      assert.deepEqual(merged.wrongWords, [3]);
+    }
+  }
+  const modern = { learnedWords: ['1'], wordProgress: { 1: { lastReviewed: time } } };
+  assert.deepEqual(mergeProgress({ masteredWords: [1, 2] }, modern).masteredWords, [2]);
+});
+
 test('sync queue serializes writes and reads updated state/version at execution time', async () => {
   const queue = createProgressSyncQueue(), first = deferred();
   const sent = []; let latest = 1, version = 'v1';

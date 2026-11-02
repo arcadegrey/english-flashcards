@@ -1,5 +1,5 @@
 import { normalizePreferences, mergePreferences } from '../shared/planPreferences.js';
-import { mergeWordProgress } from '../shared/wordProgress.js';
+import { mergeWordProgress, mergeWordRecognition } from '../shared/wordProgress.js';
 import { normalizeStudyHistory, mergeStudyHistory, preserveExamCategoryHistory } from '../shared/studyHistory.js';
 import { handleClassroomApi, profileFields } from './classroom.js';
 import { handleReadingApi } from './readingAssignments.js';
@@ -165,12 +165,8 @@ export const mergeProgress = (baseProgress, incomingProgress) => {
   const base = normalizeProgress(baseProgress);
   const incoming = normalizeProgress(incomingProgress);
 
-  const masteredWords = normalizeIdArray([...(base.masteredWords || []), ...(incoming.masteredWords || [])]);
+  const { masteredWords, learnedWords } = mergeWordRecognition(base, incoming);
   const masteredSet = new Set(masteredWords.map((item) => String(item)));
-  const learnedWords = normalizeIdArray([
-    ...(base.learnedWords || []),
-    ...(incoming.learnedWords || []),
-  ]).filter((item) => !masteredSet.has(String(item)));
   const customWords = mergeCustomWordList(base.customWords || [], incoming.customWords || []);
   const wordProgress = mergeWordProgress(base.wordProgress, incoming.wordProgress);
   const wrongWords = normalizeIdArray([...(base.wrongWords || []), ...(incoming.wrongWords || [])]).filter(
