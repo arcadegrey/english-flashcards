@@ -1,8 +1,8 @@
 # 邮箱验证与密码登录（2026-11-02）
 
-**发布补记：`c6f625c` 已由 [Actions #171](https://github.com/arcadegrey/english-flashcards/actions/runs/41450259457) 于北京时间 2026-11-02 21:12:15 成功发布，远端 quality、D1 与 Worker／SQLite Durable Object 部署均通过；Cloudflare 版本 `d5bf910b-a02f-4057-98f6-ada58708edde`。** 下方实现验证发生于首次发布前。生产已通过八项匿名接口检查，用户亲自完成旧账号设置密码及另一独立客户端密码登录；其余结果待本轮验收结束补记。
+**发布补记：`c6f625c` 已由 [Actions #171](https://github.com/arcadegrey/english-flashcards/actions/runs/41450259457) 于北京时间 2026-11-02 21:12:15 成功发布，远端 quality、D1 与 Worker／SQLite Durable Object 部署均通过；Cloudflare 版本 `d5bf910b-a02f-4057-98f6-ada58708edde`。** 下方实现验证发生于首次发布前。生产已通过八项匿名接口检查，用户亲自完成旧账号设置密码及另一独立客户端密码登录。最低八字符版本发布后，用户确认已可用并要求停止后续测试；验收范围见下表。
 
-用户在上线验收时明确要求放宽最少 15 字符，后续改为 **8–128 字符**，同时扩充常见弱密码拦截；八字符设置／重置会进入固定回归。该长度调整以随后提交与发布回执为准。
+用户在上线验收时明确要求放宽最少 15 字符，现为 **8–128 字符**，同时扩充常见弱密码拦截。调整提交 `9e461a9` 已由 [Actions #172](https://github.com/arcadegrey/english-flashcards/actions/runs/41453303062) 于北京时间 2026-11-02 21:32:15 成功发布，远端 quality（482 项测试、37＋24＋24 项浏览器检查）、幂等 D1 与 Worker／DO 发布均通过；Cloudflare 版本 `27f15b6f-5042-4ff6-88b3-81ad469d5b78`。设置／重置的固定测试和浏览器测试已改用八字符新密码。
 
 ## 用户流程
 
@@ -37,6 +37,21 @@
 - 保留原 cookie 名、HttpOnly／SameSite／HTTPS Secure、30 天会话期限、expected-user、账号缓存与学习同步协议。所有认证 POST，包括备用验证码入口，拒绝跨站来源和非 JSON 请求。
 
 找回流程参考 [OWASP Forgot Password](https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html)，恢复后需正常登录。没有声称已经完成独立安全审计。
+
+## 生产发布与验收
+
+生产核验使用既有本机代理与独立 Chrome 会话，没有复制 cookie。真实密码均由用户在页面亲自输入、确认和提交；没有获取、记录或提交用户密码。没有为真实账号开启浏览器 trace／保存认证状态。
+
+| 场景 | 生产结果 |
+| --- | --- |
+| 发布与资源 | `c6f625c`／#171 和 `9e461a9`／#172 均成功；D1 新表和 SQLite DO binding 已发布。首页、SW、更新保护文件 HTTP 200，保护文件与源码一致。 |
+| 匿名接口 | 八项通过：新路由可用、匿名会话／设置被拒绝、保留假邮箱的密码 KDF 正常返回 401、跨站被拒绝、找回未知邮箱统一提示、错误找回码与弱注册密码被拒绝。没有给保留假邮箱发送邮件或创建账号。 |
+| 长度边界 | 生产注册接口拒绝七字符；八字符通过长度检查并进入验证码校验。因未提供有效邮箱证明，测试不会创建账号。新找回页面显示 8–128 字符。 |
+| 真实旧账号设密 | 用户通过邮件验证码登录后，在账号面板亲自设置并保存密码；服务端 `hasPassword=true`，账号 ID 保留，学习数据可读取。 |
+| 独立密码登录 | 用户在另一份无共享 cookie 的会话亲自输入密码登录；捕获到密码登录接口 HTTP 200，两份会话均保持认证，进度读取正常。 |
+| 真实邮箱找回 | 已在生产请求真实邮箱重置验证码并打开八字符找回表单。用户随后确认已可用并要求停止测试；未独立完成生产重置成功、旧会话撤销及新密码重登入的最终核验，不将这些项记为自动通过。 |
+
+以上不等于大陆直连测速、物理双设备或 iOS/Safari 认证；真实全新注册账号的完整邮件闭环未另行执行，本轮使用原账号完成设置／登录／找回链路。
 
 ## 接口
 
@@ -84,7 +99,7 @@ PLAYWRIGHT_CHANNEL=chrome npm run test:browser
 WRANGLER_SEND_METRICS=false npx --no-install wrangler deploy --dry-run
 ```
 
-CI 新密码检查脚本和测试邮箱服务受版本管理；截图／trace 在忽略目录 `output/browser-ci/`。额外原生运行时临时配置、假邮箱与独立数据库仅在忽略目录 `output/playwright/password-auth/`，不是生产入口，不进入构建或 Git。尚未进行新密码功能的真实生产账号或 iOS/Safari 验收。
+CI 新密码检查脚本和测试邮箱服务受版本管理；截图／trace 在忽略目录 `output/browser-ci/`。额外原生运行时临时配置、假邮箱与独立数据库仅在忽略目录 `output/playwright/password-auth/`，不是生产入口，不进入构建或 Git。真实生产账号检查见上表；iOS/Safari 仍待独立验收。
 
 ## 变更文件
 
