@@ -4,7 +4,7 @@ import { startAccountAuditServer } from './lib/account-audit-server.mjs';
 export async function checkPasswordAuth(browser, { artifacts = 'output/browser-ci' } = {}) {
   await mkdir(artifacts, { recursive: true });
   const site = await startAccountAuditServer(), contexts = [], results = [], errors = [];
-  const password = 'An original study passphrase', updated = 'A new independent study passphrase';
+  const password = 'An original study passphrase', updated = 'Study8Ok';
   const check = (condition, name) => { if (!condition) throw new Error(name); results.push(name); };
   const request = (page, route, body) => page.evaluate(async ({ route, body }) => {
     const response = await fetch(`/api${route}`, { method: body ? 'POST' : 'GET',

@@ -8,7 +8,7 @@ import { passwordError } from '../shared/passwordPolicy.js';
 import { signInWithEmail, signUpWithEmail, requestPasswordCode, resetPasswordWithCode, setAccountPassword } from '../src/utils/workerAuth.js';
 
 const initialPassword = 'An original study passphrase';
-const nextPassword = 'A different learning passphrase';
+const nextPassword = 'Study8Ok';
 async function addCode(f, email, mode, code = '123456', extra = {}) {
   const last = f.sqlite.prepare('SELECT MAX(created_at) AS value FROM login_codes').get().value;
   const now = new Date(Math.max(Date.now(), (Date.parse(last) || 0) + 1)).toISOString();
@@ -41,6 +41,10 @@ test('password KDF salts identical passwords, rejects wrong/malformed hashes and
   assert(!await verifyPassword(password.trim(), one));
   assert(!await verifyPassword(password, 'damaged'));
   assert(passwordError('short'));
+  assert(passwordError('Study7x'));
+  assert.equal(passwordError('Study8Ok'), '');
+  assert(passwordError('12345678'));
+  assert(passwordError('password'));
   assert(passwordError('123456789012345'));
   assert(passwordError('\n \t'.repeat(6)));
   assert.equal(passwordError('我的学习计划是每天坚持背十五个单词'), '');
