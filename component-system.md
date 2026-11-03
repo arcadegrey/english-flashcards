@@ -85,6 +85,7 @@ Reading session:
 Word learning:
 
 - Word card UI lives in `src/components/WordCard.jsx`.
+- `LearningView.jsx` composes `components/learning/WordStudyWorkspace.jsx`, `WordStudyActions.jsx` and `WordStudySidebar.jsx`; it retains hint, feedback, mode and animation ownership. These are presentation boundaries using the original DOM/classes and callbacks.
 - Mobile word-learning shows only the dedicated header, goal strip, word card, and three bottom actions: 不认识 / 显示提示 / 认识了.
 - Do not restore old `CategorySelector.jsx`, old `components/Progress.jsx`, or generic `Card.jsx`.
 

@@ -7,6 +7,7 @@ import { startDeliveryServer } from './lib/delivery-server.mjs'
 import { checkPwaUpgrade } from './check-pwa-upgrade.mjs'
 import { checkPasswordAuth } from './check-password-auth-browser.mjs'
 import { checkReadingSession } from './check-reading-session-browser.mjs'
+import { checkLearningPages } from './check-learning-pages-browser.mjs'
 
 await mkdir('output/browser-ci', { recursive: true })
 const releaseB = path.resolve('output/browser-ci/release-b')
@@ -33,7 +34,8 @@ try {
   const upgrade = await checkPwaUpgrade(browser, site, releaseB)
   const password = await checkPasswordAuth(browser)
   const reading = await checkReadingSession(browser)
-  const report = { browser: browser.version(), delivery, upgrade, password, reading }
+  const learning = await checkLearningPages(browser)
+  const report = { browser: browser.version(), delivery, upgrade, password, reading, learning }
   await writeFile('output/browser-ci/results.json', JSON.stringify(report, null, 2))
-  console.log(`Browser CI passed: ${delivery.passed} delivery + ${upgrade.passed} upgrade + ${password.passed} password + ${reading.passed} reading assertions`)
+  console.log(`Browser CI passed: ${delivery.passed} delivery + ${upgrade.passed} upgrade + ${password.passed} password + ${reading.passed} reading + ${learning.passed} learning assertions`)
 } finally { await browser?.close(); await site.close() }

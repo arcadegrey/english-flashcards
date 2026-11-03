@@ -1,10 +1,10 @@
-import LoadingState, { LoadingAnimation } from './ui/LoadingState';
+import { LoadingAnimation } from './ui/LoadingState';
+import WordStudyWorkspace from './learning/WordStudyWorkspace';
+import WordStudySidebar from './learning/WordStudySidebar';
 import { lazy, useEffect, useMemo, useRef, useState } from 'react';
-import WordCard from './WordCard';
 import { loadAssessmentSession } from '../utils/learningViewLoader.js';
 import QuickMenu from './QuickMenu';
 import AppLayout from './layout/AppLayout';
-import { appShellIcons } from './layout/icons';
 import { QUICK_MENU_MODE_OPTIONS } from './quickMenuOptions';
 import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
 import { calculateStudyStreak, getWeekStudyDays } from '../utils/learningMetrics';
@@ -159,197 +159,6 @@ function LearningView({
     { id: 'stats', label: '统计', icon: 'stats', onClick: onOpenStatistics },
   ].filter((item) => typeof item.onClick === 'function');
 
-  const studyContent = (
-    <div className="learn-refresh-study-layout">
-      <section className="learn-refresh-study-workspace" aria-label="单词学习">
-        <header className="learn-refresh-mobile-study-header">
-          <button type="button" className="learn-refresh-mobile-back" onClick={onBack} aria-label="返回">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="m15 18-6-6 6-6" />
-            </svg>
-          </button>
-          <h1>背单词</h1>
-          {typeof onVoiceSettings === 'function' && (
-            <button
-              type="button"
-              className="learn-refresh-mobile-voice"
-              onClick={onVoiceSettings}
-              aria-label="语音设置"
-            >
-              {appShellIcons.voice}
-            </button>
-          )}
-          <div className="learn-refresh-mobile-progress-pill" aria-label={`当前进度 ${progressCurrent}/${totalCount}`}>
-            <strong>{progressCurrent}</strong>
-            <span>/ {totalCount}</span>
-          </div>
-        </header>
-
-        <div className="learn-refresh-goal-strip">
-          <span className="learn-refresh-goal-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24">
-              <circle cx="12" cy="12" r="8" />
-              <circle cx="12" cy="12" r="3" />
-              <path d="m15.5 8.5 3-3" />
-              <path d="M17 5.5h3v3" />
-            </svg>
-          </span>
-          <span className="learn-refresh-goal-label">今日目标</span>
-          <strong>{hasDailyGoal ? `${studyGoalCurrent}/${studyGoalTarget}` : studyGoalTarget}</strong>
-          <div className="learn-refresh-goal-track" aria-hidden="true">
-            <span style={{ width: `${studyGoalPercent}%` }} />
-          </div>
-          <span className="learn-refresh-goal-percent">{studyGoalPercent}%</span>
-        </div>
-
-        {vocabularyLoading && currentWord && <LoadingState variant="inline" title="正在加载所选词库…" />}
-        {vocabularyLoading && !currentWord ? <LoadingState title="正在加载所选词库…" /> : <WordCard
-          key={`${currentWord?.id || 'learn-empty'}-${currentIndex}`}
-          word={currentWord}
-          nextWord={nextWord}
-          showHint={showHint}
-        />}
-
-        <footer className="learn-refresh-bottombar">
-          <div className="learn-refresh-bottombar-inner">
-            <button
-              type="button"
-              className="learn-refresh-action learn-refresh-action-secondary"
-              onClick={handleMarkUnknown}
-            >
-              <span className="learn-refresh-action-icon" aria-hidden="true">?</span>
-              <span>不认识</span>
-            </button>
-            <button
-              type="button"
-              className="learn-refresh-action learn-refresh-action-ghost"
-              onClick={handleToggleHint}
-            >
-              <span className="learn-refresh-action-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M9 18h6" />
-                  <path d="M10 22h4" />
-                  <path d="M8.5 14.5A6 6 0 1 1 15.5 14c-.9.7-1.5 1.7-1.5 3h-4c0-1.2-.5-2-1.5-2.5Z" />
-                </svg>
-              </span>
-              <span>{showHint ? '收起提示' : '显示提示'}</span>
-            </button>
-            <button
-              type="button"
-              className="learn-refresh-action learn-refresh-action-primary"
-              onClick={handleMarkKnown}
-            >
-              <span className="learn-refresh-action-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="m6 12 4 4 8-8" />
-                </svg>
-              </span>
-              <span>认识了</span>
-            </button>
-          </div>
-        </footer>
-      </section>
-
-      <aside className="learn-refresh-study-aside" aria-label="学习状态">
-        <div className="learn-refresh-side-tools">
-          <button type="button" className="learn-refresh-side-tool" onClick={handleSyncAccount}>
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M20 6v5h-5" />
-              <path d="M4 18v-5h5" />
-              <path d="M6.2 9A7 7 0 0118.5 7.5L20 11" />
-              <path d="M17.8 15A7 7 0 015.5 16.5L4 13" />
-            </svg>
-            <span>同步进度</span>
-          </button>
-          <QuickMenu
-            mode={mode}
-            onOpenMode={setMode}
-            onOpenReading={onOpenReading}
-            onSlowSpeechChange={setToast}
-          />
-        </div>
-
-        <div className="learn-refresh-side-summary">
-          <div className="learn-refresh-side-row">
-            <span className="learn-refresh-side-icon is-flame" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path d="M12 22c4 0 7-2.8 7-6.9 0-2.7-1.4-4.9-4.1-6.7.1 1.8-.5 3.1-1.7 4-1-3.2-2.9-5.7-5.7-7.4.4 3-.1 5.1-1.7 6.9A6.4 6.4 0 0 0 5 15.1C5 19.2 8 22 12 22Z" />
-              </svg>
-            </span>
-            <span>连续打卡</span>
-            <strong>{streak > 0 ? `${streak} 天` : '今天开始'}</strong>
-          </div>
-          <div className="learn-refresh-side-row">
-            <span className="learn-refresh-side-icon is-target" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="8" />
-                <circle cx="12" cy="12" r="3" />
-                <path d="m15.5 8.5 3-3" />
-              </svg>
-            </span>
-            <span>今日目标</span>
-            <strong>{studyGoalTarget} 词</strong>
-          </div>
-          <div className="learn-refresh-side-row">
-            <span className="learn-refresh-side-icon is-star" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path d="m12 3 2.6 5.4 5.9.8-4.2 4.1 1 5.8L12 16.4 6.7 19.1l1-5.8-4.2-4.1 5.9-.8L12 3Z" />
-              </svg>
-            </span>
-            <span>剩余词汇</span>
-            <strong>{remainingCount} 词</strong>
-          </div>
-        </div>
-
-        <div className="learn-refresh-side-card">
-          <h2>学习进度</h2>
-          <div className="learn-refresh-ring-row">
-            <div className="learn-refresh-ring" style={{ '--study-progress': `${studyGoalPercent}%` }}>
-              <div>
-                <strong>{studyGoalPercent}%</strong>
-                <span>今日进度</span>
-              </div>
-            </div>
-            <dl className="learn-refresh-ring-stats">
-              <div>
-                <dt><span className="is-blue" />已学单词</dt>
-                <dd>{learnedTotal}</dd>
-              </div>
-              <div>
-                <dt><span className="is-purple" />今日目标</dt>
-                <dd>{studyGoalTarget}</dd>
-              </div>
-              <div>
-                <dt><span className="is-gray" />标记认识</dt>
-                <dd>{masteredTotal}</dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-
-        <div className="learn-refresh-side-card learn-refresh-week-card">
-          <h2>坚持每天进步一点点</h2>
-          <p>积累现在，收获未来</p>
-          <div className="learn-refresh-week-row" aria-label="本周打卡">
-            {weekDays.map((day) => (
-              <span
-                key={day.date}
-                className={[day.isDone ? 'is-done' : '', day.isToday ? 'is-today' : ''].filter(Boolean).join(' ')}
-              >
-                <small>{day.label}</small>
-                <b aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path d="m6 12 4 4 8-8" />
-                  </svg>
-                </b>
-              </span>
-            ))}
-          </div>
-        </div>
-      </aside>
-    </div>
-  );
-
   if (mode === 'learn') {
     return (
       <AppLayout
@@ -370,7 +179,18 @@ function LearningView({
         }}
       >
         <div ref={mainRef} className="learn-refresh-main learn-refresh-main--study">
-          {studyContent}
+          <div className="learn-refresh-study-layout">
+            <WordStudyWorkspace onBack={onBack} onVoiceSettings={onVoiceSettings}
+              progressCurrent={progressCurrent} totalCount={totalCount} hasDailyGoal={hasDailyGoal}
+              studyGoalCurrent={studyGoalCurrent} studyGoalTarget={studyGoalTarget} studyGoalPercent={studyGoalPercent}
+              vocabularyLoading={vocabularyLoading} currentWord={currentWord} currentIndex={currentIndex}
+              nextWord={nextWord} showHint={showHint} onMarkUnknown={handleMarkUnknown}
+              onToggleHint={handleToggleHint} onMarkKnown={handleMarkKnown} />
+            <WordStudySidebar mode={mode} onOpenMode={setMode} onOpenReading={onOpenReading}
+              onNotice={setToast} onSyncAccount={handleSyncAccount} streak={streak}
+              studyGoalTarget={studyGoalTarget} remainingCount={remainingCount} studyGoalPercent={studyGoalPercent}
+              learnedTotal={learnedTotal} masteredTotal={masteredTotal} weekDays={weekDays} />
+          </div>
         </div>
         {toast && (
           <div className="learn-refresh-toast" role="status" aria-live="polite">

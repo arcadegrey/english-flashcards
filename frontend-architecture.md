@@ -77,6 +77,7 @@ AppLayout -> control card -> thin progress bar -> centered answer card
 - `src/hooks/useNavigationHistory.js` mirrors feature-owned navigation state into browser history and resets scroll on view changes. Keep its setters stable and preserve old history compatibility.
 - `src/components/account/AccountModal.jsx` owns account-dialog presentation, lazy content and focus/scroll lifecycle. Auth and progress actions remain in the feature hooks; pass a stable close callback.
 - `App.jsx` composes feature hooks, app providers, canonical chrome and global modals. Screen wiring lives in `components/app/AppPages.jsx`, with feature objects rather than a flat setter list.
+- `AppPages.jsx` delegates pure assembly to dashboard, learning, classroom, vocabulary-directory and collection modules under `components/app/`. Assembly functions return the real page element directly, preserving page types/keys and reconciliation across sibling routes. Shared lazy types live in `pageComponents.jsx` and retain the existing preparation loaders; do not turn these functions into extra route wrappers or move state/fetching into them.
 - `hooks/app/useLearningProgress.js` owns local progress, events, bookmarks and reset revisions; pure history updates live in `utils/learningEvents.js`.
 - `hooks/app/useAccountSession.js` owns identity and account transitions; `useCloudProgressSync.js` owns the internal queue, versions, rebasing, debounce and reconnect lifecycle. Keep their stable refs and expected-account checks together.
 - `hooks/app/useVocabularyCatalog.js` owns resource loading and `useStudyOverview.js` owns daily plan/reading/collection projections and plan preparation.
@@ -86,6 +87,7 @@ AppLayout -> control card -> thin progress bar -> centered answer card
 
 ## Behavior Boundaries
 
+- `src/utils/storage.js` remains the public storage facade. Its account/progress/plan/device implementations live under `utils/storage/`; factories reference the same facade without cyclic imports. Keep existing storage keys, account archive ordering, legacy defaults and error reporting. Account data and device preferences must retain their distinct ownership.
 - `HomeScreen` is the Training Center view.
 - 背单词 opens `#word-category-panel`; 做阅读 opens `#reading-category-panel`.
 - The 阅读 navigation entry returns to Training Center and opens the reading picker, not a standalone reading list.
@@ -110,6 +112,13 @@ AppLayout -> control card -> thin progress bar -> centered answer card
 - `components/reading/session/` contains `ReadingArticle`, `ReadingQuestions`, `ReadingSessionSidebar`, `ReadingSessionActions`, `ReadingCompletionSummary` and `ReadingWordDialog`. They reuse the existing DOM/classes and shared `AppLayout`; they do not create separate drafts, grades, sync queues or navigation state.
 - The word dialog owns details hydration and its existing scoped animation. Keep it mounted with a nullable word, so cleanup and details retry lifecycle remain coherent. Sentence playback stays with the session and stops before opening word details.
 - Scope and verification: `docs/reading-style-refactor-2026-11-03.md`.
+
+## Word Study Presentation Boundaries (2026-11-03)
+
+- `LearningView.jsx` still owns hint/toast state, scope and goal projections, menu/navigation callbacks, assessment selection and the existing GSAP scope. Preserve its assessment key and shared lazy loader, so changing word membership does not reset an active round.
+- `components/learning/WordStudyWorkspace.jsx` renders the original mobile study header, goal strip and keyed WordCard. `WordStudyActions.jsx` renders the three original actions; `WordStudySidebar.jsx` renders desktop tools, status and weekly progress. They receive state and callbacks, with no separate study state, fetching, storage or app chrome.
+- All CSS imports stay at their existing feature entry points. Mobile word-learning remains `.ds-app-layout--mobile-study`, with the dedicated header and horizontal actions; desktop status remains hidden on mobile.
+- Scope and verification: `docs/app-learning-presentation-refactor-2026-11-03.md`.
 
 ## Verification
 

@@ -6,7 +6,15 @@ Vite + React English learning app for flashcards, tests, spelling, matching, rea
 
 This file is intentionally short for Codex startup context. Detailed data/audio/import/Worker notes live in `docs/project-reference.md`.
 
-## Reading / global-style maintenance (2026-11-03, local)
+## Page assembly / word-study maintenance (2026-11-03)
+
+`AppPages.jsx` is now a 37-line dispatcher into five pure page-assembly modules; stable lazy types retain the existing loaders and return real page elements without extra React wrappers. `LearningView.jsx` is 249 lines and composes word workspace/actions/desktop sidebar, retaining all state, mode, assessment keys and animation ownership. 152 page-prop scenarios and 1116 callbacks agree with baseline; 30 controller statements/default props are unchanged. 490 tests, 137 browser assertions, 40 page comparisons and engineering checks pass; all 14 built CSS files remain byte-identical. Existing Worker/storage changes remain intact. Details: [docs/app-learning-presentation-refactor-2026-11-03.md](docs/app-learning-presentation-refactor-2026-11-03.md). The user requested committing and pushing this batch together with the preceding Worker/storage batch; production status requires the corresponding Actions deployment receipt.
+
+## Worker / storage maintenance (2026-11-03)
+
+Worker auth/session/progress responsibilities now live in six modules; `worker/index.js` retains routing and shared guards plus its existing exports. `src/utils/storage.js` remains a stable facade over account, progress, plan/bookmark and device modules, using the original keys and failure semantics. No UI, API, database or personal-data migration. 490 tests, 107 browser assertions, 14 native workerd/D1/DO checks, lint/build/budgets/timezones/dry-run pass. Local validation and boundaries: [docs/worker-storage-refactor-2026-11-03.md](docs/worker-storage-refactor-2026-11-03.md). The user requested committing and pushing this batch together with the page-assembly/word-study batch; production status requires the corresponding Actions deployment receipt.
+
+## Reading / global-style maintenance (2026-11-03, pushed as 4249cdd)
 
 `ReadingSessionView.jsx` now composes six presentation components under `components/reading/session/`, retaining draft/history, grading, completion and sentence-playback ownership. The former 5004-line `design-system/tokens.css` is an ordered compatibility entry for twelve style files; all global styles remain eager and preserve the original cascade. No Worker, schema, storage-key, learning-data or UI changes. 482 tests, 107 browser assertions, lint/build/budgets/timezones/dry-run pass; 22 page comparisons agree and all 14 built CSS files are byte-identical to baseline. The user requested committing and pushing this batch; production status requires the corresponding Actions deployment receipt. Details: [docs/reading-style-refactor-2026-11-03.md](docs/reading-style-refactor-2026-11-03.md).
 

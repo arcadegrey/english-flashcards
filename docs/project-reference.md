@@ -114,6 +114,7 @@ VITE_EXAMPLE_AUDIO_BASE_URL=https://pub-47e027cd6ce64af29a76f038ecb22373.r2.dev/
 
 ## Cloudflare Worker / D1
 
+- Maintenance boundary (2026-11-03): `worker/index.js` keeps API-wide guards, route dispatch, static assets, error handling and the existing `PasswordHasher` / `mergeProgress` exports. Sessions live in `authSession.js`, email-code routes/mail in `emailAuth.js`, authentication primitives in `authSupport.js`, progress normalization/merge in `progressModel.js`, and D1 progress reads/CAS writes in `progressRoutes.js`; response/body helpers live in `http.js`. Preserve guard order, credential-version checks and CAS retries. This split changes no protocol or schema. See `worker-storage-refactor-2026-11-03.md`.
 - API wrapper: `src/utils/workerAuth.js`
 - Default API prefix: `VITE_API_BASE` or `/api`
 - Worker supports email-code login, session restore, logout, progress read, and progress write.
