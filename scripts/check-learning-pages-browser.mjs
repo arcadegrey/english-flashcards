@@ -84,12 +84,29 @@ export async function checkLearningPages(browser, { artifacts = 'output/browser-
     check(await page.getByRole('heading', { name: '今日复习', exact: true }).count() > 0, 'review route still uses the collection page');
     await page.locator('.collection-tool-button').filter({ hasText: '首页' }).click();
     await page.locator('.study-dashboard').waitFor();
-    await page.setViewportSize({ width: 390, height: 932 });
-    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-    await page.locator('.ds-mobile-bottom-nav').getByRole('button', { name: /训练/ }).click();
-    await page.locator('.training-main-modules').waitFor();
-    await page.waitForFunction(() => window.scrollY === 0);
-    check(true, 'mobile navigation resets scroll to the top');
+    for (const [label, panel] of [['单词', 'word-category-panel'], ['阅读', 'reading-category-panel']]) {
+      await page.setViewportSize({ width: 1440, height: 1000 });
+      await side('统计').click(); await page.locator('.statistics-dashboard').waitFor();
+      await side(label).click(); await page.locator(`#${panel}.is-open`).waitFor();
+      check(true, `${label} navigation still opens its requested panel`);
+      await side('今日计划').click(); await page.locator('.study-dashboard').waitFor();
+      await page.setViewportSize({ width: 390, height: 932 });
+      await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+      check(await page.evaluate(() => scrollY > 0), `${label} return starts from a scrolled mobile page`);
+      await page.locator('.ds-mobile-bottom-nav').getByRole('button', { name: '训练', exact: true }).click();
+      await page.locator('.training-main-modules').waitFor();
+      const positions = await page.evaluate(async () => {
+        const nextFrame = () => new Promise(resolve => requestAnimationFrame(resolve));
+        // Panel requests use two nested frames. A transient first-frame zero
+        // must not hide a later scrollIntoView from a previous visit.
+        await nextFrame(); await nextFrame();
+        const samples = [];
+        for (let i = 0; i < 5; i++) { await nextFrame(); samples.push(scrollY); }
+        return samples;
+      });
+      check(positions.every(y => y === 0), `mobile training stays at the top after leaving ${label}: ${positions.join(',')}`);
+      check(await page.locator('.training-picker-panel.is-open').count() === 0, `generic training entry does not replay the old ${label} panel`);
+    }
     check(errors.length === 0, 'learning and directory flows have no browser page errors');
     const report = { passed: results.length, results };
     await writeFile(`${artifacts}/learning-pages-results.json`, JSON.stringify(report, null, 2));

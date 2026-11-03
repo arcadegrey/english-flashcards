@@ -6,6 +6,10 @@ Vite + React English learning app for flashcards, tests, spelling, matching, rea
 
 This file is intentionally short for Codex startup context. Detailed data/audio/import/Worker notes live in `docs/project-reference.md`.
 
+## CI / mobile training scroll follow-up (2026-11-03)
+
+`9fc28fe` / Actions #175 passed engineering checks but failed the last mobile navigation browser assertion; deployment was skipped. A stale word/reading `homePanelRequest` replayed after the first top reset (stable reproduction: 0 then 526px). Generic training entry now clears that intent; dedicated word/reading entry behavior stays intact. The stronger five-frame regression passes both paths; local 490 tests, 144 browser assertions and engineering checks pass. Browser stages now persist partial success/failure diagnostics. The user authorized fixing and pushing this release blocker; production status requires the fix commit's quality and deploy receipts. Evidence: [docs/ci-mobile-training-scroll-2026-11-03.md](docs/ci-mobile-training-scroll-2026-11-03.md).
+
 ## Page assembly / word-study maintenance (2026-11-03)
 
 `AppPages.jsx` is now a 37-line dispatcher into five pure page-assembly modules; stable lazy types retain the existing loaders and return real page elements without extra React wrappers. `LearningView.jsx` is 249 lines and composes word workspace/actions/desktop sidebar, retaining all state, mode, assessment keys and animation ownership. 152 page-prop scenarios and 1116 callbacks agree with baseline; 30 controller statements/default props are unchanged. 490 tests, 137 browser assertions, 40 page comparisons and engineering checks pass; all 14 built CSS files remain byte-identical. Existing Worker/storage changes remain intact. Details: [docs/app-learning-presentation-refactor-2026-11-03.md](docs/app-learning-presentation-refactor-2026-11-03.md). The user requested committing and pushing this batch together with the preceding Worker/storage batch; production status requires the corresponding Actions deployment receipt.

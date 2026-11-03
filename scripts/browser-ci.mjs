@@ -24,18 +24,36 @@ const site = await startDeliveryServer({ root: 'dist' })
 let browser
 try {
   browser = await chromium.launch({ headless: true, ...(process.env.PLAYWRIGHT_CHANNEL ? { channel: process.env.PLAYWRIGHT_CHANNEL } : {}) })
+  const report = { browser: browser.version(), stages: {} }
+  const runStage = async (name, check) => {
+    report.stages[name] = { status: 'running' }
+    await writeFile('output/browser-ci/results.json', JSON.stringify(report, null, 2))
+    console.log(`Browser CI: starting ${name}`)
+    try {
+      const result = await check()
+      report[name] = result
+      report.stages[name] = { status: 'passed', passed: result.passed }
+      console.log(`Browser CI: ${name} passed ${result.passed} assertions`)
+      return result
+    } catch (error) {
+      report.stages[name] = { status: 'failed', message: error.message, stack: error.stack }
+      throw error
+    } finally {
+      await writeFile('output/browser-ci/results.json', JSON.stringify(report, null, 2))
+    }
+  }
   const context = await browser.newContext(), page = await context.newPage()
   await context.tracing.start({ screenshots: true, snapshots: true })
   await page.goto(site.url)
   const smoke = vm.runInThisContext(`(${await readFile('scripts/check-delivery-browser.cjs', 'utf8')})`)
-  let delivery
-  try { delivery = await smoke(page, { artifacts: 'output/browser-ci' }) }
-  finally { await context.tracing.stop({ path: 'output/browser-ci/delivery-trace.zip' }); await context.close() }
-  const upgrade = await checkPwaUpgrade(browser, site, releaseB)
-  const password = await checkPasswordAuth(browser)
-  const reading = await checkReadingSession(browser)
-  const learning = await checkLearningPages(browser)
-  const report = { browser: browser.version(), delivery, upgrade, password, reading, learning }
+  const delivery = await runStage('delivery', async () => {
+    try { return await smoke(page, { artifacts: 'output/browser-ci' }) }
+    finally { await context.tracing.stop({ path: 'output/browser-ci/delivery-trace.zip' }); await context.close() }
+  })
+  const upgrade = await runStage('upgrade', () => checkPwaUpgrade(browser, site, releaseB))
+  const password = await runStage('password', () => checkPasswordAuth(browser))
+  const reading = await runStage('reading', () => checkReadingSession(browser))
+  const learning = await runStage('learning', () => checkLearningPages(browser))
   await writeFile('output/browser-ci/results.json', JSON.stringify(report, null, 2))
   console.log(`Browser CI passed: ${delivery.passed} delivery + ${upgrade.passed} upgrade + ${password.passed} password + ${reading.passed} reading + ${learning.passed} learning assertions`)
 } finally { await browser?.close(); await site.close() }

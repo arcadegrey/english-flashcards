@@ -96,6 +96,9 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
 
   const handleBackToHome = () => {
     setAssessmentBackTarget('home')
+    // A generic training visit must not replay a previous word/reading request
+    // after navigation history has reset the mobile page scroll.
+    setHomePanelRequest((request) => ({ panel: '', nonce: request.nonce + 1 }))
     setView('home')
   }
 
