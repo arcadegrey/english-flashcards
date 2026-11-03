@@ -78,6 +78,7 @@ Training Center:
 Reading session:
 
 - Lives in `src/components/ReadingSessionView.jsx`.
+- Presentation is split under `src/components/reading/session/`: article, questions, sidebar, actions, completion summary and word dialog. Keep draft/history/submission ownership in the session controller.
 - Uses shared `AppLayout`.
 - Keeps goal strip, large reading card, desktop status aside, real bottom actions, and QuickMenu inside content.
 

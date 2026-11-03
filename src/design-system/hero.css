@@ -1,0 +1,372 @@
+.ds-hero-card {
+  position: relative;
+  min-height: 352px;
+  padding: 32px;
+  border: 0;
+  border-radius: var(--ds-radius-md);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 86% 18%, rgba(255, 255, 255, 0.28), transparent 16%),
+    radial-gradient(circle at 66% 88%, rgba(110, 194, 255, 0.18), transparent 20%),
+    linear-gradient(135deg, #4f7dff 0%, #5362f6 52%, #8b62f4 100%);
+  box-shadow: 0 24px 54px rgba(77, 91, 180, 0.18);
+  color: #ffffff;
+}
+
+.ds-hero-content {
+  position: relative;
+  z-index: 2;
+  min-height: 288px;
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(392px, 0.94fr) minmax(252px, 0.7fr);
+  align-items: center;
+  gap: 24px;
+}
+
+.ds-hero-card.is-soft {
+  min-height: 214px;
+  padding: 24px 42px;
+  color: var(--ds-text);
+  background:
+    radial-gradient(circle at 88% 22%, rgba(126, 166, 255, 0.2), transparent 24%),
+    radial-gradient(circle at 70% 92%, rgba(255, 200, 87, 0.12), transparent 18%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(247, 250, 255, 0.92));
+  border: 1px solid rgba(126, 166, 255, 0.18);
+  box-shadow: 0 18px 40px rgba(79, 124, 255, 0.11);
+}
+
+.ds-hero-card.is-soft .ds-hero-content {
+  min-height: 166px;
+  grid-template-columns: minmax(360px, 0.78fr) minmax(220px, 0.42fr);
+  justify-content: space-between;
+}
+
+.ds-hero-card.is-soft::before {
+  content: "A";
+  position: absolute;
+  right: 120px;
+  bottom: -12px;
+  color: rgba(79, 124, 255, 0.07);
+  font-size: 118px;
+  line-height: 1;
+  font-weight: 900;
+  transform: rotate(-8deg);
+}
+
+.ds-hero-card.is-soft::after {
+  content: "B  C";
+  position: absolute;
+  right: 28px;
+  bottom: 38px;
+  color: rgba(126, 166, 255, 0.09);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: 12px;
+}
+
+.dark .ds-hero-card.is-soft {
+  background:
+    radial-gradient(circle at 88% 22%, rgba(126, 166, 255, 0.18), transparent 24%),
+    rgba(21, 31, 53, 0.92);
+}
+
+.ds-hero-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 520px;
+}
+
+.ds-hero-card.is-soft .ds-hero-copy {
+  max-width: 680px;
+}
+
+.ds-hero-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 0 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.16);
+  color: inherit;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.ds-hero-card.is-soft .ds-hero-label {
+  background: rgba(79, 124, 255, 0.1);
+  color: #2f6dff;
+  letter-spacing: 0;
+}
+
+.ds-hero-title {
+  margin: 24px 0 0;
+  font-size: clamp(40px, 4vw, 56px);
+  line-height: 1.08;
+  font-weight: 900;
+}
+
+.ds-hero-card.is-soft .ds-hero-title {
+  margin-top: 18px;
+  font-size: clamp(38px, 3.4vw, 48px);
+  text-shadow: none;
+}
+
+.ds-hero-card.is-soft .ds-hero-subtitle {
+  margin-top: 14px;
+  font-size: clamp(20px, 1.6vw, 23px);
+  line-height: 1.35;
+}
+
+.ds-hero-subtitle {
+  margin: 16px 0 0;
+  font-size: clamp(20px, 2vw, 28px);
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+.ds-hero-meta {
+  margin-top: 24px;
+  display: block;
+  min-height: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 820;
+}
+
+.ds-hero-card.is-soft .ds-hero-meta {
+  background: transparent;
+  color: var(--ds-muted);
+  font-size: 18px;
+  padding: 0;
+}
+
+.ds-hero-visual {
+  position: relative;
+  right: auto;
+  top: auto;
+  width: min(100%, 304px);
+  aspect-ratio: 1;
+  z-index: 1;
+  justify-self: end;
+}
+
+.ds-hero-asset {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 24px 28px rgba(49, 60, 160, 0.18));
+}
+
+.ds-hero-card.is-soft .ds-hero-visual {
+  top: auto;
+  right: auto;
+  width: min(100%, 212px);
+  justify-self: center;
+}
+
+.ds-hero-card.is-soft .ds-hero-asset {
+  filter:
+    drop-shadow(0 24px 26px rgba(79, 124, 255, 0.18))
+    drop-shadow(0 0 28px rgba(255, 255, 255, 0.2));
+}
+
+.ds-aa-orbit {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.ds-aa-card {
+  position: absolute;
+  left: 26%;
+  top: 6%;
+  width: 50%;
+  height: 62%;
+  border-radius: 24px;
+  background: linear-gradient(145deg, rgba(246, 240, 255, 0.98), rgba(126, 111, 252, 0.96));
+  box-shadow: 0 30px 44px rgba(54, 64, 176, 0.34), inset 0 0 0 3px rgba(255, 255, 255, 0.46);
+  transform: rotate(10deg);
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  font-size: clamp(44px, 6vw, 76px);
+  font-weight: 900;
+  text-shadow: 0 8px 18px rgba(63, 54, 160, 0.36);
+}
+
+.ds-aa-card::before,
+.ds-aa-card::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  transform: translate(28px, 16px) rotate(-2deg);
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.34);
+}
+
+.ds-aa-card::after {
+  transform: translate(48px, 28px) rotate(-5deg);
+  opacity: 0.7;
+}
+
+.ds-aa-base {
+  position: absolute;
+  left: 13%;
+  bottom: 6%;
+  width: 78%;
+  height: 24%;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #f4f8ff 0%, #a9c1ff 45%, #6077ff 100%);
+  box-shadow: 0 24px 36px rgba(69, 84, 210, 0.3), inset 0 -10px 22px rgba(62, 77, 217, 0.28);
+}
+
+.ds-aa-base::before {
+  content: "";
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: -12%;
+  height: 42%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.ds-aa-ring {
+  position: absolute;
+  left: 7%;
+  top: 38%;
+  width: 86%;
+  height: 22%;
+  border: 3px solid rgba(255, 255, 255, 0.65);
+  border-radius: 50%;
+  transform: rotate(-10deg);
+}
+
+.ds-sparkle {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 32px;
+}
+
+.ds-sparkle.one {
+  left: 4%;
+  top: 28%;
+}
+
+.ds-sparkle.two {
+  right: 4%;
+  top: 24%;
+  font-size: 24px;
+}
+
+.ds-sparkle.three {
+  right: 18%;
+  bottom: 26%;
+  font-size: 20px;
+}
+
+.ds-hero-control {
+  position: relative;
+  left: auto;
+  bottom: auto;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 184px 248px;
+  align-items: center;
+  gap: 0;
+  min-height: 184px;
+  padding: 0 24px 0 0;
+  border-radius: 32px;
+  background: transparent;
+  color: var(--ds-text);
+  transform: none;
+  justify-self: center;
+}
+
+.ds-hero-control::before {
+  content: "";
+  position: absolute;
+  left: 92px;
+  right: 0;
+  top: 36px;
+  bottom: 12px;
+  z-index: -2;
+  border-radius: 0 24px 24px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
+  box-shadow: 0 16px 32px rgba(63, 71, 151, 0.16);
+}
+
+.ds-hero-control::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 184px;
+  height: 184px;
+  z-index: -1;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
+  box-shadow: 0 16px 32px rgba(63, 71, 151, 0.16);
+}
+
+.ds-circular-progress {
+  --progress: 0%;
+  width: 156px;
+  height: 156px;
+  border-radius: 999px;
+  background: conic-gradient(var(--ds-primary-start) var(--progress), #e7eaf2 0);
+  display: grid;
+  place-items: center;
+  position: relative;
+  justify-self: center;
+  box-shadow: inset 0 0 0 12px rgba(255, 255, 255, 0.88);
+}
+
+.ds-circular-progress::before {
+  content: "";
+  position: absolute;
+  inset: 28px;
+  border-radius: inherit;
+  background: #ffffff;
+}
+
+.dark .ds-circular-progress::before {
+  background: var(--ds-card);
+}
+
+.ds-circular-progress span,
+.ds-circular-progress small {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.ds-circular-progress span {
+  display: block;
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.ds-circular-progress small {
+  margin-top: 8px;
+  display: block;
+  color: var(--ds-muted);
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.ds-hero-control-actions {
+  display: grid;
+  gap: 16px;
+  padding: 44px 0 28px;
+}

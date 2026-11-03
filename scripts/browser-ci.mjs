@@ -6,6 +6,7 @@ import { spawn } from 'node:child_process'
 import { startDeliveryServer } from './lib/delivery-server.mjs'
 import { checkPwaUpgrade } from './check-pwa-upgrade.mjs'
 import { checkPasswordAuth } from './check-password-auth-browser.mjs'
+import { checkReadingSession } from './check-reading-session-browser.mjs'
 
 await mkdir('output/browser-ci', { recursive: true })
 const releaseB = path.resolve('output/browser-ci/release-b')
@@ -31,7 +32,8 @@ try {
   finally { await context.tracing.stop({ path: 'output/browser-ci/delivery-trace.zip' }); await context.close() }
   const upgrade = await checkPwaUpgrade(browser, site, releaseB)
   const password = await checkPasswordAuth(browser)
-  const report = { browser: browser.version(), delivery, upgrade, password }
+  const reading = await checkReadingSession(browser)
+  const report = { browser: browser.version(), delivery, upgrade, password, reading }
   await writeFile('output/browser-ci/results.json', JSON.stringify(report, null, 2))
-  console.log(`Browser CI passed: ${delivery.passed} delivery + ${upgrade.passed} upgrade + ${password.passed} password assertions`)
+  console.log(`Browser CI passed: ${delivery.passed} delivery + ${upgrade.passed} upgrade + ${password.passed} password + ${reading.passed} reading assertions`)
 } finally { await browser?.close(); await site.close() }

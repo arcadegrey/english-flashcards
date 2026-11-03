@@ -1,14 +1,16 @@
+import ReadingArticle from './reading/session/ReadingArticle';
+import ReadingQuestions from './reading/session/ReadingQuestions';
+import ReadingSessionSidebar from './reading/session/ReadingSessionSidebar';
+import ReadingWordDialog from './reading/session/ReadingWordDialog';
+import ReadingCompletionSummary from './reading/session/ReadingCompletionSummary';
+import ReadingSessionActions from './reading/session/ReadingSessionActions';
 import LoadingState, { LoadingAnimation } from './ui/LoadingState';
 import useReadingAttempts from '../hooks/useReadingAttempts';
 import { normalizeReadingQuestions } from '../../shared/readingQuestions.js';
 import useReadingDraft from '../hooks/useReadingDraft';
-import { useEffect, useMemo, useRef, useState } from 'react';
-import QuickMenu from './QuickMenu';
+import { useEffect, useMemo, useState } from 'react';
 import AppLayout from './layout/AppLayout';
-import { speakWord } from '../utils/speech';
 import { isEnglishWordToken, resolveVocabularyWord, tokenizeReadingText } from '../utils/readingText';
-import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
-import { useWordDetails } from '../hooks/useWordDetails.js';
 import { useSentencePlayback } from '../hooks/useSentencePlayback.js';
 import { buildReadingSentences } from '../utils/readingSentences.js';
 import '../styles/study-reading.css';
@@ -36,19 +38,16 @@ function ReadingSessionView({
 }) {
   const [showTranslation, setShowTranslation] = useState(false);
   const [activeWord, setActiveWord] = useState(null);
-  const activeDetails = useWordDetails(activeWord);
   const history = useReadingAttempts(userId);
   const draft = useReadingDraft(userId, retryAttempt ? `retry:${retryAttempt.id}` : assignment ? `assignment:${assignment.id}` : `reading:${article?.id}`);
   const [submissionBusy, setSubmissionBusy] = useState(false);
   const [submissionError, setSubmissionError] = useState('');
   const [completionSummary, setCompletionSummary] = useState(null);
   const [toast, setToast] = useState('');
-  const wordModalRef = useRef(null);
   const paragraphs = useMemo(() => buildReadingSentences(article?.content), [article?.content]);
   const speechScope = JSON.stringify([userId || 'guest', article?.id, assignment?.id, retryAttempt?.id]);
   const sentencePlayback = useSentencePlayback(article?.content, speechScope);
-  const { sentenceId: activeSentenceId, status: speechStatus, toggle: toggleSentence, stop: stopSentence } = sentencePlayback;
-  const activeSentence = paragraphs.flatMap(paragraph => paragraph.sentences).find(sentence => sentence.id === activeSentenceId);
+  const { sentenceId: activeSentenceId, toggle: toggleSentence, stop: stopSentence } = sentencePlayback;
   const masteredWordSet = useMemo(
     () => new Set((masteredWords || []).map((item) => String(item))),
     [masteredWords]
@@ -68,24 +67,6 @@ function ReadingSessionView({
     const timer = setTimeout(() => setToast(''), 1600);
     return () => clearTimeout(timer);
   }, [toast]);
-
-  useGSAP(() => {
-    if (!activeWord || prefersReducedMotion()) return;
-    const layer = wordModalRef.current;
-    if (!layer) return;
-
-    const mask = layer.querySelector('.reading-word-modal-mask');
-    const modal = layer.querySelector('.reading-word-modal');
-
-    const tl = gsap.timeline({ defaults: { ease: 'power2.out' } });
-    tl.fromTo(mask, { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.18 })
-      .fromTo(
-        modal,
-        { y: 18, scale: 0.975, autoAlpha: 0 },
-        { y: 0, scale: 1, autoAlpha: 1, duration: 0.32, clearProps: 'transform,opacity,visibility' },
-        0.03
-      );
-  }, { dependencies: [activeWord?.id], scope: wordModalRef, revertOnUpdate: true });
 
   const readingStats = useMemo(() => {
     const tokens = tokenizeReadingText(article?.content || '');
@@ -162,11 +143,6 @@ function ReadingSessionView({
     }
   };
 
-  const handleSpeakActiveWord = () => {
-    if (!activeWord?.word) return;
-    speakWord(activeWord, { rate: 1 });
-  };
-
   const handleMarkUnknown = () => {
     if (!activeWord?.id) return;
     onMarkAsLearned?.(activeWord.id);
@@ -228,60 +204,6 @@ function ReadingSessionView({
     setToast(retryAttempt ? '错题练习已保存，原成绩保持不变' : '本次练习已保存，今日计划已更新');
   };
 
-  const contentBlocks = useMemo(() => {
-    return paragraphs.map((paragraph) => {
-      return (
-        <p key={paragraph.id} className="reading-session-paragraph">
-          {paragraph.sentences.map(sentence => <span key={sentence.id}
-            className={`reading-session-sentence${activeSentenceId === sentence.id ? ' is-active' : ''}`}>
-            <span className="reading-sentence-text">{tokenizeReadingText(sentence.text).map((token, tokenIndex) => {
-            if (!isEnglishWordToken(token)) {
-              return (
-                <span key={tokenIndex} className="reading-token-plain">
-                  {token}
-                </span>
-              );
-            }
-
-            const matchedWord = resolveVocabularyWord(token, wordLookup);
-            const isHighlight = Boolean(
-              matchedWord?.id && !masteredWordSet.has(String(matchedWord.id))
-            );
-
-            if (!isHighlight) {
-              return (
-                <span key={tokenIndex} className="reading-token-plain">
-                  {token}
-                </span>
-              );
-            }
-
-            return (
-              <button
-                key={tokenIndex}
-                type="button"
-                className="reading-token-highlight"
-                onClick={() => { stopSentence(); setActiveWord(matchedWord); }}
-              >
-                {token}
-              </button>
-            );
-          })}</span>
-            <button type="button" className="learn-refresh-example-audio reading-sentence-play"
-              aria-label={`${activeSentenceId === sentence.id ? '停止朗读' : '朗读'}第 ${sentence.ordinal} 句`}
-              title={`${activeSentenceId === sentence.id ? '停止朗读' : '朗读'}第 ${sentence.ordinal} 句`}
-              aria-pressed={activeSentenceId === sentence.id}
-              onClick={() => { void toggleSentence(sentence); }}>
-              {activeSentenceId === sentence.id && speechStatus === 'preparing' ? <LoadingAnimation compact />
-                : activeSentenceId === sentence.id ? <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2" /></svg>
-                : <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 10 7-10 7Z" /></svg>}
-            </button>
-          </span>)}
-        </p>
-      );
-    });
-  }, [paragraphs, masteredWordSet, wordLookup, activeSentenceId, speechStatus, toggleSentence, stopSentence]);
-
   if (!article) {
     return (
       <AppLayout
@@ -329,135 +251,18 @@ function ReadingSessionView({
             </div>
 
             <article className="learn-refresh-card learn-refresh-card-enter reading-session-card reading-session-study-card">
-              <header className="reading-session-header">
-                <h1 className="reading-session-title">{article.title}</h1>
-                <div className="reading-session-meta">
-                  <span className="reading-session-chip">{article.level || 'B1'}</span>
-                  <span className="reading-session-chip">{articleMinutes} 分钟</span>
-                  <span className="reading-session-chip">{readingStats.unmasteredCount} 个未标记认识词</span>
-                  {readingQuestions.length > 0 && (
-                    <span className="reading-session-chip">{readingQuestions.length} 道阅读题</span>
-                  )}
-                </div>
-              </header>
-
-              <section className="reading-session-content">
-                <p className="reading-speech-status" role={sentencePlayback.error ? 'alert' : 'status'} aria-live="polite">
-                  {sentencePlayback.error || (activeSentence ? `${speechStatus === 'preparing' ? '正在准备' : '正在朗读'}第 ${activeSentence.ordinal} 句，点击同一按钮可停止。`
-                    : '点击句末的朗读按钮，每次播放一句。')}
-                </p>
-                {contentBlocks}
-              </section>
-
-              {article.translation && (
-                <section className="learn-refresh-example-block reading-session-translation">
-                  <div className="learn-refresh-example-head">
-                    <span className="learn-refresh-example-label">
-                      <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M5 4h9a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3V4Z" />
-                        <path d="M9 8h5" />
-                        <path d="M9 12h6" />
-                      </svg>
-                      全文翻译
-                    </span>
-                    <button
-                      type="button"
-                      onClick={() => setShowTranslation((prev) => !prev)}
-                      className="learn-refresh-example-audio"
-                    >
-                      {showTranslation ? '收起翻译' : '显示翻译'}
-                    </button>
-                  </div>
-                  {showTranslation && <p className="learn-refresh-example-cn">{article.translation}</p>}
-                </section>
-              )}
+              <ReadingArticle article={article} articleMinutes={articleMinutes} readingStats={readingStats}
+                questionCount={readingQuestions.length} paragraphs={paragraphs} masteredWordSet={masteredWordSet}
+                wordLookup={wordLookup} sentencePlayback={sentencePlayback} showTranslation={showTranslation}
+                onToggleTranslation={() => setShowTranslation((prev) => !prev)} onSelectWord={setActiveWord} />
 
               {readingQuestions.length > 0 && (
-                <section className="reading-question-section" aria-label="阅读题">
-                  <div className="reading-question-head">
-                    <h2 className="reading-question-title">阅读题</h2>
-                    <p className="reading-question-sub">根据文章选择最合适的答案。</p>
-                  </div>
-
-                  <div className="reading-question-list">
-                    {readingQuestions.map((question, questionIndex) => {
-                      const answerState = questionAnswers[question.id];
-
-                      return (
-                        <article key={question.id} className="reading-question-card">
-                          <p className="reading-question-prompt">
-                            {questionIndex + 1}. {question.prompt}
-                          </p>
-                          <div className="reading-question-options">
-                            {question.options.map((option) => {
-                              const isSelected = answerState?.selected === option.id;
-                              const isCorrectAnswer =
-                                Boolean(question.answer) &&
-                                option.id.toLowerCase() === question.answer.toLowerCase();
-
-                              return (
-                                <button
-                                  key={option.id}
-                                  type="button"
-                                  aria-pressed={isSelected}
-                                  disabled={Boolean(assignment?.submittedAt) || submissionBusy}
-                                  className={[
-                                    'reading-question-option',
-                                    isSelected ? 'is-selected' : '',
-                                    isSelected && answerState?.isCorrect === true ? 'is-correct' : '',
-                                    isSelected && answerState?.isCorrect === false ? 'is-wrong' : '',
-                                    answerState && isCorrectAnswer ? 'is-answer' : '',
-                                  ]
-                                    .filter(Boolean)
-                                    .join(' ')}
-                                  onClick={() =>
-                                    handleSelectQuestionOption(question.id, option.id, question.answer)
-                                  }
-                                >
-                                  <span className="reading-question-option-key">{option.id}</span>
-                                  <span className="reading-question-option-label">{option.label}</span>
-                                  <span className="reading-question-option-mark" aria-hidden="true">
-                                    {isSelected && <svg viewBox="0 0 20 20"><path d={answerState?.isCorrect === false ? 'm6 6 8 8M14 6l-8 8' : 'm5 10 3 3 7-7'} /></svg>}
-                                  </span>
-                                </button>
-                              );
-                            })}
-                          </div>
-                          {answerState && question.answer && (
-                            <p className="reading-question-feedback">
-                              {answerState.isCorrect ? '回答正确' : `正确答案：${question.answer}`}
-                              {question.explanation ? `。${question.explanation}` : ''}
-                            </p>
-                          )}
-                        </article>
-                      );
-                    })}
-                  </div>
-                </section>
+                <ReadingQuestions questions={readingQuestions} questionAnswers={questionAnswers}
+                  disabled={Boolean(assignment?.submittedAt) || submissionBusy} onSelectOption={handleSelectQuestionOption} />
               )}
 
               {effectiveSummary && (
-                <section className="reading-completion-summary" aria-label="阅读完成总结">
-                  <div className="reading-completion-head">
-                    <span>完成总结</span>
-                    <strong>{effectiveSummary.hasQuestions ? `${effectiveSummary.accuracy}%` : '已读完'}</strong>
-                  </div>
-                  <div className="reading-completion-grid">
-                    <span>
-                      <b>{effectiveSummary.hasQuestions ? `${effectiveSummary.correct}/${effectiveSummary.answered}` : '暂无'}</b>
-                      {effectiveSummary.hasQuestions ? '阅读题' : '阅读题目'}
-                    </span>
-                    <span>
-                      <b>{effectiveSummary.unmasteredCount}</b>
-                      未标记认识词
-                    </span>
-                    <span>
-                      <b>{articleMinutes} 分钟</b>
-                      训练时长
-                    </span>
-                  </div>
-                  <p>{effectiveSummary.nextStep}</p>
-                </section>
+                <ReadingCompletionSummary effectiveSummary={effectiveSummary} articleMinutes={articleMinutes} />
               )}
             </article>
 
@@ -470,204 +275,22 @@ function ReadingSessionView({
               {retryAttempt && <p>正在重做错题，保存后可在训练中心查看本次成绩。</p>}
               {submissionError && <p role="alert" className="auth-error">{submissionError}</p>}
             </div>
-            <footer className="learn-refresh-bottombar reading-session-actions">
-              <div className="learn-refresh-bottombar-inner">
-                <button
-                  type="button"
-                  className="learn-refresh-action learn-refresh-action-secondary"
-                  onClick={onBack}
-                >
-                  <span className="learn-refresh-action-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24">
-                      <path d="m15 18-6-6 6-6" />
-                    </svg>
-                  </span>
-                  <span>返回列表</span>
-                </button>
-                <button
-                  type="button"
-                  className="learn-refresh-action learn-refresh-action-ghost"
-                  onClick={() => setShowTranslation((prev) => !prev)}
-                  disabled={!article.translation}
-                >
-                  <span className="learn-refresh-action-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M4 5h9a3 3 0 0 1 3 3v11H7a3 3 0 0 1-3-3V5Z" />
-                      <path d="M8 9h5" />
-                      <path d="M8 13h4" />
-                    </svg>
-                  </span>
-                  <span>{article.translation ? (showTranslation ? '收起翻译' : '显示翻译') : '暂无翻译'}</span>
-                </button>
-                <button
-                  type="button"
-                  className="learn-refresh-action learn-refresh-action-ghost"
-                  onClick={handleSpeakArticle}
-                  disabled={!paragraphs[0]?.sentences.length}
-                >
-                  <span className="learn-refresh-action-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M3 9v6h4l5 4V5L7 9H3z" />
-                      <path d="M16.5 8.5a4.5 4.5 0 0 1 0 7" />
-                      <path d="M19.5 6a8 8 0 0 1 0 12" />
-                    </svg>
-                  </span>
-                  <span>{activeSentenceId ? '停止朗读' : '朗读首句'}</span>
-                </button>
-                <button
-                  type="button"
-                  className="learn-refresh-action learn-refresh-action-primary"
-                  onClick={handleCompleteReading}
-                  disabled={assignment ? Boolean(assignment.submittedAt) || submissionBusy || draft.status === 'loading' : Boolean(completionSummary) || (hasReadingQuestions && answeredQuestionCount !== readingQuestions.length)}
-                >
-                  <span className="learn-refresh-action-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24">
-                      <path d="M5 12.5 10 17l9-10" />
-                    </svg>
-                  </span>
-                  <span>{submissionBusy && <LoadingAnimation compact />} {assignment ? assignment.submittedAt ? '作业已提交' : submissionBusy ? '提交中…' : '提交阅读作业' : completionSummary ? '练习已保存' : retryAttempt ? '保存错题练习' : hasReadingQuestions ? '保存本次练习' : '完成阅读'}</span>
-                </button>
-              </div>
-            </footer>
+            <ReadingSessionActions article={article} onBack={onBack} showTranslation={showTranslation}
+              onToggleTranslation={() => setShowTranslation((prev) => !prev)} onSpeakArticle={handleSpeakArticle}
+              canSpeak={Boolean(paragraphs[0]?.sentences.length)} activeSentenceId={activeSentenceId}
+              onCompleteReading={handleCompleteReading} assignment={assignment} retryAttempt={retryAttempt} submissionBusy={submissionBusy}
+              draftLoading={draft.status === 'loading'} completionSummary={completionSummary}
+              hasReadingQuestions={hasReadingQuestions} allQuestionsAnswered={answeredQuestionCount === readingQuestions.length} />
           </section>
 
-          <aside className="learn-refresh-study-aside reading-session-aside" aria-label="阅读状态">
-            <div className="learn-refresh-side-tools">
-              <button type="button" className="learn-refresh-side-tool" onClick={handleSyncAccount}>
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M20 6v5h-5" />
-                  <path d="M4 18v-5h5" />
-                  <path d="M6.2 9A7 7 0 0 1 18.5 7.5L20 11" />
-                  <path d="M17.8 15A7 7 0 0 1 5.5 16.5L4 13" />
-                </svg>
-                <span>同步进度</span>
-              </button>
-              <QuickMenu
-                mode={mode}
-                onOpenMode={onOpenMode}
-                onOpenReading={onBack}
-                onSlowSpeechChange={setToast}
-              />
-            </div>
-
-            <div className="learn-refresh-side-summary">
-              <div className="learn-refresh-side-row">
-                <span className="learn-refresh-side-icon is-target" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="8" />
-                    <circle cx="12" cy="12" r="3" />
-                    <path d="m15.5 8.5 3-3" />
-                  </svg>
-                </span>
-                <span>未标记认识词</span>
-                <strong>{readingStats.unmasteredCount}</strong>
-              </div>
-              <div className="learn-refresh-side-row">
-                <span className="learn-refresh-side-icon is-flame" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path d="M5 4h14v16H5z" />
-                    <path d="M8 8h8" />
-                    <path d="M8 12h7" />
-                  </svg>
-                </span>
-                <span>阅读时长</span>
-                <strong>{articleMinutes} 分</strong>
-              </div>
-              <div className="learn-refresh-side-row">
-                <span className="learn-refresh-side-icon is-star" aria-hidden="true">
-                  <svg viewBox="0 0 24 24">
-                    <path d="m12 3 2.6 5.4 5.9.8-4.2 4.1 1 5.8L12 16.4 6.7 19.1l1-5.8-4.2-4.1 5.9-.8L12 3Z" />
-                  </svg>
-                </span>
-                <span>阅读题</span>
-                <strong>{readingQuestions.length}</strong>
-              </div>
-            </div>
-
-            <div className="learn-refresh-side-card">
-              <h2>阅读进度</h2>
-              <div className="learn-refresh-ring-row">
-                <div className="learn-refresh-ring" style={{ '--study-progress': `${readingProgressPercent}%` }}>
-                  <div>
-                    <strong>{readingProgressPercent}%</strong>
-                    <span>难词认识记录</span>
-                  </div>
-                </div>
-                <dl className="learn-refresh-ring-stats">
-                  <div>
-                    <dt><span className="is-blue" />标记认识</dt>
-                    <dd>{readingStats.masteredCount}</dd>
-                  </div>
-                  <div>
-                    <dt><span className="is-purple" />总词数</dt>
-                    <dd>{readingStats.totalTracked}</dd>
-                  </div>
-                  <div>
-                    <dt><span className="is-gray" />未标记认识</dt>
-                    <dd>{readingStats.unmasteredCount}</dd>
-                  </div>
-                </dl>
-              </div>
-            </div>
-          </aside>
+          <ReadingSessionSidebar mode={mode} onOpenMode={onOpenMode} onBack={onBack}
+            onSyncAccount={handleSyncAccount} onNotice={setToast} readingStats={readingStats}
+            articleMinutes={articleMinutes} questionCount={readingQuestions.length} readingProgressPercent={readingProgressPercent} />
         </div>
       </div>
 
-      {activeWord && (
-        <div ref={wordModalRef} className="reading-word-modal-layer" role="dialog" aria-modal="true" aria-label="单词详情">
-          <button
-            type="button"
-            className="reading-word-modal-mask"
-            aria-label="关闭单词详情"
-            onClick={() => setActiveWord(null)}
-          />
-          <section className="reading-word-modal learn-refresh-card learn-refresh-card-enter">
-            <div className="reading-word-modal-head">
-              <h2 className="learn-refresh-word">{activeWord.word}</h2>
-              <button
-                type="button"
-                className="learn-refresh-inline-audio"
-                onClick={handleSpeakActiveWord}
-                aria-label="播放发音"
-              >
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M3 9v6h4l5 4V5L7 9H3z" />
-                  <path d="M16.5 8.5a4.5 4.5 0 010 7" />
-                  <path d="M19.5 6a8 8 0 010 12" />
-                </svg>
-              </button>
-            </div>
-            <p className="learn-refresh-phonetic">{activeWord.phonetic || '暂无音标'}</p>
-            <p className="learn-refresh-meaning">
-              {[activeWord.pos, activeWord.meaning].filter(Boolean).join(' ')}
-            </p>
-            <section className="learn-refresh-example-block">
-              <div className="learn-refresh-example-head">
-                <span className="learn-refresh-example-label">例句</span>
-              </div>
-              {activeDetails.loading ? <LoadingState variant="inline" className="learn-refresh-hint-scope" title="正在加载例句…" />
-                : activeDetails.error ? <><p className="learn-refresh-hint-scope" role="status">例句暂时无法加载。</p><button type="button" className="learn-refresh-example-audio" onClick={activeDetails.retry}>重试加载例句</button></>
-                : <><p className="learn-refresh-example-en">{activeDetails.word.example || '暂无英文例句。'}</p><p className="learn-refresh-example-cn">{activeDetails.word.exampleCn || '暂无中文例句。'}</p></>}
-            </section>
-            <div className="reading-word-modal-actions">
-              <button
-                type="button"
-                className="learn-refresh-action learn-refresh-action-secondary"
-                onClick={handleMarkUnknown}
-              >
-                不认识
-              </button>
-              <button
-                type="button"
-                className="learn-refresh-action learn-refresh-action-primary"
-                onClick={handleMarkKnown}
-              >
-                认识了
-              </button>
-            </div>
-          </section>
-        </div>
-      )}
+      <ReadingWordDialog activeWord={activeWord} onClose={() => setActiveWord(null)}
+        onMarkUnknown={handleMarkUnknown} onMarkKnown={handleMarkKnown} />
 
       {toast && (
         <div className="learn-refresh-toast" role="status" aria-live="polite">

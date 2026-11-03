@@ -1,0 +1,507 @@
+@media (max-width: 1180px) {
+  .ds-app-layout {
+    grid-template-columns: 96px minmax(0, 1fr);
+  }
+
+  .ds-sidebar {
+    padding: 32px 16px;
+    align-items: center;
+  }
+
+  .ds-brand-name,
+  .ds-sidebar-label,
+  .ds-streak-card {
+    display: none;
+  }
+
+  .ds-sidebar-item {
+    width: 64px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .ds-hero-content {
+    grid-template-columns: minmax(280px, 1fr) minmax(360px, 1fr);
+  }
+
+  .ds-hero-visual {
+    display: none;
+  }
+
+  .ds-hero-control {
+    grid-template-columns: 140px 212px;
+    min-height: 140px;
+    padding-right: 16px;
+  }
+
+  .ds-hero-control::before {
+    left: 70px;
+    top: 24px;
+    bottom: 8px;
+  }
+
+  .ds-hero-control::after {
+    width: 140px;
+    height: 140px;
+  }
+
+  .reading-level-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .exam-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .exam-hero-panel {
+    grid-template-columns: 160px minmax(0, 1fr);
+    align-items: center;
+  }
+
+  .exam-orbit {
+    width: 128px;
+    height: 128px;
+  }
+
+  .exam-scope-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .exam-overview-card {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .exam-overview-stats {
+    width: 100%;
+  }
+
+  .exam-overview-actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 900px) {
+  .ds-app-layout {
+    display: block;
+  }
+
+  .ds-sidebar {
+    position: static;
+    min-height: auto;
+    padding: 16px;
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: auto;
+  }
+
+  .ds-brand {
+    flex: 0 0 auto;
+  }
+
+  .ds-sidebar-nav {
+    display: flex;
+    gap: 8px;
+  }
+
+  .ds-sidebar-foot {
+    display: none;
+  }
+
+  .ds-topbar {
+    padding: 24px 16px 16px;
+    flex-wrap: wrap;
+  }
+
+  .ds-topbar-search {
+    order: 3;
+    width: 100%;
+  }
+
+  .ds-content {
+    padding: 16px 16px 32px;
+  }
+
+  .ds-hero-card,
+  .ds-hero-card.is-soft {
+    min-height: auto;
+    padding: 32px;
+  }
+
+  .ds-hero-content {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .ds-hero-control {
+    justify-self: stretch;
+    grid-template-columns: 112px 1fr;
+    min-height: 112px;
+    padding: 16px;
+  }
+
+  .ds-hero-control::before {
+    left: 72px;
+    top: 32px;
+    bottom: 16px;
+  }
+
+  .ds-hero-control::after {
+    left: 16px;
+    top: 16px;
+    width: 112px;
+    height: 112px;
+  }
+
+  .ds-circular-progress {
+    width: 112px;
+    height: 112px;
+  }
+
+  .ds-circular-progress span {
+    font-size: 28px;
+  }
+
+  .ds-module-grid,
+  .ds-status-grid,
+  .ds-categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ds-stat-row {
+    grid-template-columns: 1fr;
+  }
+
+  .ds-stat-card + .ds-stat-card {
+    border-left: 0;
+    border-top: 1px solid var(--ds-line);
+  }
+
+  .reading-home-category-panel {
+    padding: 28px;
+  }
+
+  .exam-hero {
+    min-height: auto;
+    padding: 28px;
+  }
+
+  .exam-hero::before {
+    right: 32px;
+    bottom: 120px;
+    font-size: 96px;
+  }
+
+  .exam-hero-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .exam-mode-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exam-scope-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .exam-section-head {
+    display: grid;
+    gap: 12px;
+  }
+
+  .exam-section-tools,
+  .exam-section-actions {
+    justify-content: flex-start;
+  }
+
+  .exam-section-pill,
+  .exam-empty-note {
+    width: fit-content;
+  }
+
+  .exam-overview-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .ds-sidebar {
+    border-right: 0;
+    border-bottom: 1px solid var(--ds-line);
+  }
+
+  .ds-brand-mark {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+  }
+
+  .ds-topbar-title h1 {
+    font-size: 28px;
+  }
+
+  .ds-topbar-title p {
+    font-size: 14px;
+  }
+
+  .ds-user-chip span:last-child {
+    display: none;
+  }
+
+  .ds-hero-card,
+  .ds-hero-card.is-soft {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .ds-hero-title,
+  .ds-hero-card.is-soft .ds-hero-title {
+    font-size: 36px;
+  }
+
+  .ds-hero-subtitle {
+    font-size: 20px;
+  }
+
+  .ds-hero-meta {
+    font-size: 18px;
+  }
+
+  .ds-hero-control {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .ds-circular-progress {
+    justify-self: center;
+  }
+
+  .ds-status-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .ds-status-side {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .exam-hero {
+    padding: 24px;
+    border-radius: 20px;
+  }
+
+  .exam-hero-panel {
+    display: none;
+  }
+
+  .exam-hero h2 {
+    font-size: 32px;
+  }
+
+  .exam-hero-copy > p:not(.exam-hero-label) {
+    font-size: 15px;
+  }
+
+  .exam-hero-actions {
+    align-items: stretch;
+  }
+
+  .exam-back-button {
+    flex: 1 1 auto;
+  }
+
+  .exam-sync-button {
+    flex: 1 1 auto;
+  }
+
+  .exam-section-tools,
+  .exam-section-actions {
+    width: 100%;
+  }
+
+  .exam-overview-card {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .exam-overview-card h2 {
+    font-size: 24px;
+  }
+
+  .exam-scope-card,
+  .exam-mode-card,
+  .plan-settings-card {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .exam-scope-card {
+    padding: 14px;
+  }
+
+  .exam-scope-card .exam-section-head {
+    display: grid;
+    align-items: stretch;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .exam-scope-card .exam-section-head > div:first-child {
+    min-width: 0;
+  }
+
+  .exam-section-head h3 {
+    font-size: 24px;
+    line-height: 1.15;
+  }
+
+  .exam-section-head p {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .exam-section-tools {
+    order: -1;
+    min-width: 0;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .exam-section-tools .exam-section-pill {
+    display: none;
+  }
+
+  .exam-section-actions {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+
+  .exam-section-actions .learn-refresh-icon-btn {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 14px;
+  }
+
+  .exam-section-actions .exam-back-button,
+  .exam-section-actions .exam-sync-button {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 40px;
+    border-radius: 14px;
+    padding: 0 10px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .plan-settings-summary {
+    padding: 16px;
+    margin-bottom: 18px;
+  }
+
+  .plan-settings-summary strong {
+    font-size: 24px;
+  }
+
+  .plan-target-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .plan-target-option {
+    min-height: 104px;
+    padding: 14px;
+  }
+
+  .exam-scope-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .exam-scope-option {
+    min-height: 76px;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: start;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 18px;
+  }
+
+  .exam-scope-icon,
+  .exam-scope-copy > span:not(.exam-scope-label),
+  .exam-scope-copy small,
+  .exam-scope-start {
+    display: none;
+  }
+
+  .exam-scope-option::after {
+    width: 80px;
+    height: 80px;
+    right: -34px;
+    bottom: -34px;
+  }
+
+  .exam-scope-check {
+    right: 9px;
+    top: 9px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .exam-scope-check svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .exam-scope-label,
+  .exam-scope-option strong {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .exam-scope-label {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  .exam-scope-option strong {
+    padding-right: 0;
+    font-size: 17px;
+    align-self: auto;
+  }
+
+  .exam-scope-track {
+    margin-top: 10px;
+  }
+
+  .exam-mode-option {
+    min-height: 136px;
+    grid-template-columns: 58px minmax(0, 1fr) 34px;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .exam-mode-icon {
+    width: 58px;
+    height: 58px;
+  }
+
+  .exam-mode-copy strong {
+    font-size: 19px;
+  }
+
+  .exam-mode-arrow {
+    width: 34px;
+    height: 34px;
+  }
+}

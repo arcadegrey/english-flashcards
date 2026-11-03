@@ -1,0 +1,373 @@
+.plan-settings-page {
+  gap: 20px;
+  padding-bottom: 32px;
+}
+
+.plan-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.plan-category-grid .ds-module-card.is-category.has-art {
+  min-width: 0;
+  min-height: 96px;
+  padding: 18px 100px 18px 18px;
+  border-radius: 18px;
+  display: grid;
+  align-content: center;
+}
+
+.plan-category-grid .ds-module-card.is-category.has-art h3 {
+  max-width: none;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.plan-category-grid .ds-module-art-image {
+  top: 50%;
+  right: 44px;
+  width: 48px;
+  height: 48px;
+  transform: translateY(-50%);
+}
+
+.plan-category-grid .ds-module-arrow {
+  top: 50%;
+  right: 12px;
+  bottom: auto;
+  width: 28px;
+  height: 28px;
+  transform: translateY(-50%);
+}
+
+.plan-settings-card > .exam-preparation-feedback {
+  margin-top: 16px;
+}
+
+@media (max-width: 1000px) {
+  .plan-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .plan-category-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.plan-settings-card {
+  padding: 22px;
+  border: 1px solid rgba(126, 166, 255, 0.16);
+  background:
+    radial-gradient(circle at 8% 14%, rgba(126, 166, 255, 0.12), transparent 26%),
+    radial-gradient(circle at 94% 18%, rgba(139, 92, 246, 0.08), transparent 28%),
+    rgba(255, 255, 255, 0.9);
+  box-shadow: 0 22px 48px rgba(79, 124, 255, 0.1);
+}
+
+.plan-settings-card > .exam-section-head {
+  margin-bottom: 18px;
+  gap: 16px;
+}
+
+.plan-settings-card .exam-section-head h3 {
+  font-size: 24px;
+}
+
+.plan-settings-card .exam-section-head p {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.plan-settings-card--targets {
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(79, 124, 255, 0.06);
+}
+
+.plan-settings-card--targets .exam-section-pill {
+  border: 1px solid #e6eaf0;
+  background: #ffffff;
+}
+
+.plan-settings-summary {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 16px;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid #e6eaf0;
+  background: #ffffff;
+}
+
+.plan-settings-summary div:first-child {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.plan-settings-summary span {
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.plan-settings-summary strong {
+  color: var(--ds-text);
+  font-size: 26px;
+  line-height: 1.1;
+  font-weight: 950;
+}
+
+.plan-settings-summary small {
+  color: var(--ds-muted);
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.plan-settings-progress {
+  height: 7px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #edf2fa;
+}
+
+.plan-settings-progress span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #4f7cff, #7ea6ff);
+  transition: width 220ms ease;
+}
+
+.plan-target-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.plan-target-option {
+  --plan-art-color: #4f7cff;
+  position: relative;
+  width: 100%;
+  min-height: 104px;
+  overflow: hidden;
+  border: 1px solid #e6eaf0;
+  border-radius: 18px;
+  background: #ffffff;
+  color: var(--ds-text);
+  padding: 16px;
+  text-align: left;
+  display: grid;
+  align-content: center;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.025);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.plan-target-option:hover {
+  transform: translateY(-2px);
+  border-color: rgba(79, 124, 255, 0.4);
+  box-shadow: 0 8px 20px rgba(79, 124, 255, 0.08);
+}
+
+.plan-target-option.is-active {
+  border-color: #4f7cff;
+  background: linear-gradient(110deg, #ffffff, #f2f6ff);
+  box-shadow: 0 6px 18px rgba(79, 124, 255, 0.08), inset 0 0 0 1px rgba(79, 124, 255, 0.08);
+}
+
+.plan-target-option.is-active .plan-target-copy > span {
+  color: #2f6dff;
+}
+
+.plan-target-option.is-green {
+  --plan-art-color: #7d9f90;
+}
+
+.plan-target-option.is-blue {
+  --plan-art-color: #4f7cff;
+}
+
+.plan-target-option.is-violet {
+  --plan-art-color: #a092d0;
+}
+
+.plan-target-option.is-orange {
+  --plan-art-color: #e7b64e;
+}
+
+.plan-target-option.is-slate {
+  --plan-art-color: #8b9ebd;
+}
+
+.plan-target-option.is-amber {
+  --plan-art-color: #eba184;
+}
+
+.plan-target-artwork {
+  position: absolute;
+  right: -10px;
+  bottom: -22px;
+  width: 120px;
+  height: 120px;
+  fill: none;
+  color: var(--plan-art-color);
+  stroke: currentColor;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.plan-target-flame-inner {
+  stroke: #e8b342;
+}
+
+.plan-target-copy {
+  min-width: 0;
+  max-width: calc(100% - 68px);
+  display: grid;
+  gap: 8px;
+  z-index: 1;
+}
+
+.plan-target-copy span {
+  color: #334155;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 850;
+}
+
+.plan-target-copy strong {
+  color: var(--ds-text);
+  font-size: 26px;
+  line-height: 1.15;
+  font-weight: 950;
+}
+
+.plan-target-check {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #4f7cff, #0f68ff);
+  color: #ffffff;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 180ms ease, transform 180ms ease;
+  z-index: 2;
+}
+
+.plan-target-option.is-active .plan-target-check {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.plan-target-check svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media (min-width: 1200px) {
+  .plan-target-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plan-target-option,
+  .plan-target-check,
+  .plan-settings-progress span {
+    transition: none;
+  }
+
+  .plan-target-option:hover {
+    transform: none;
+  }
+}
+
+.exam-back-button:focus-visible,
+.exam-scope-option:focus-visible,
+.exam-scope-start:focus-visible,
+.exam-mode-option:focus-visible,
+.plan-target-option:focus-visible,
+.exam-tool-button:focus-visible {
+  outline: 2px solid var(--ds-primary-start);
+  outline-offset: 3px;
+}
+
+.dark .exam-scope-card,
+.dark .exam-mode-card,
+.dark .plan-settings-card,
+.dark .exam-overview-card {
+  background: rgba(21, 31, 53, 0.92);
+}
+
+.dark .exam-overview-stats div,
+.dark .exam-sync-button,
+.dark .exam-section-actions .learn-refresh-icon-btn,
+.dark .exam-overview-actions .learn-refresh-icon-btn {
+  border-color: rgba(126, 166, 255, 0.16);
+  background: rgba(126, 166, 255, 0.12);
+  color: #bcd1ff;
+}
+
+.dark .exam-section-pill,
+.dark .exam-scope-option,
+.dark .exam-mode-option,
+.dark .plan-target-option,
+.dark .plan-settings-summary {
+  border-color: rgba(126, 166, 255, 0.16);
+}
+
+.dark .exam-section-pill {
+  background: rgba(126, 166, 255, 0.14);
+  color: #bcd1ff;
+}
+
+.dark .exam-empty-note {
+  background: rgba(255, 200, 87, 0.13);
+  color: #ffd985;
+}
+
+.dark .exam-scope-option,
+.dark .exam-mode-option,
+.dark .plan-target-option {
+  background:
+    radial-gradient(circle at 88% 18%, rgba(126, 166, 255, 0.1), transparent 26%),
+    rgba(17, 24, 39, 0.86);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.16);
+}
+
+.dark .plan-settings-summary {
+  background: rgba(17, 24, 39, 0.72);
+}
+
+.dark .exam-scope-option.is-active {
+  background:
+    radial-gradient(circle at 88% 18%, rgba(79, 124, 255, 0.18), transparent 24%),
+    rgba(23, 34, 58, 0.92);
+}
+
+.dark .exam-scope-label,
+.dark .exam-mode-copy span,
+.dark .exam-mode-arrow {
+  color: #bcd1ff;
+}
+
+.dark .exam-scope-icon,
+.dark .exam-mode-arrow {
+  background: rgba(126, 166, 255, 0.12);
+}
