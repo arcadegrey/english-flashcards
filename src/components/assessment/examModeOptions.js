@@ -1,0 +1,42 @@
+export const EXAM_MODES = [
+  {
+    id: 'quiz',
+    iconSrc: '/images/ui-assets/exam-mode-quiz-blue-v1.png',
+    title: '测验',
+    meta: '选择正确释义',
+    helper: '看单词，选择对应的中文释义。',
+    tone: 'blue',
+  },
+  {
+    id: 'fillblank',
+    iconSrc: '/images/ui-assets/exam-mode-fillblank-violet-v1.png',
+    title: '填空',
+    meta: '根据例句补全单词',
+    helper: '结合例句，找出缺少的单词。',
+    tone: 'violet',
+  },
+  {
+    id: 'spelling',
+    iconSrc: '/images/ui-assets/exam-mode-spelling-cyan-v1.png',
+    title: '拼写',
+    meta: '听发音拼写单词',
+    helper: '播放发音，输入你听到的单词。',
+    tone: 'cyan',
+  },
+  {
+    id: 'matching',
+    iconSrc: '/images/ui-assets/exam-mode-matching-orange-v1.png',
+    title: '连线',
+    meta: '单词和释义配对',
+    helper: '将一组单词与释义逐一配对。',
+    tone: 'orange',
+  },
+  {
+    id: 'dictation',
+    iconSrc: '/images/ui-assets/exam-mode-spelling-cyan-v1.png',
+    title: '句子听写',
+    meta: '精听例句 · 写下整句',
+    helper: '重播、慢速听音，答后逐词核对。',
+    tone: 'blue',
+  },
+];

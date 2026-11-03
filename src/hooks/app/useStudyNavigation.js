@@ -7,6 +7,7 @@ import { storage } from '../../utils/storage'
 import { normalizePlanCategory } from '../../utils/studyPlan'
 import { stopSpeak } from '../../utils/speech'
 import { useVocabularyNavigation } from './useVocabularyNavigation.js'
+import { useCollectionPractice } from './useCollectionPractice.js'
 import { loadLearningView } from '../../utils/learningViewLoader.js'
 import { useReadingArticle } from '../useReadingArticle.js'
 import { useReadingVocabulary } from '../useReadingVocabulary.js'
@@ -41,6 +42,7 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
   } = account
 
   const vocabularyNavigation = useVocabularyNavigation(navigationState, catalog, authUser?.id)
+  const collectionPractice = useCollectionPractice(navigationState, learning, authUser?.id)
   const planStartRetryRef = useRef(false)
 
   useEffect(() => {
@@ -78,9 +80,11 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
 
   useNavigationHistory({
     view, mode, selectedCategory, selectedToeflLevel, selectedToeflList, selectedIeltsTopic, selectedIeltsList, selectedReadingId,
+    collectionRoute: navigationState.collectionRoute,
   }, {
     setView, setMode, setSelectedCategory, setSelectedToeflLevel, setSelectedToeflList, setSelectedIeltsTopic, setSelectedIeltsList, setSelectedReadingId,
     setActiveReadingAssignment, setActiveWordAssignment, setReadingRetry, setHomePanelRequest,
+    setCollectionRoute: navigationState.setCollectionRoute,
   })
 
   const currentWord = shuffledWords[currentIndex]
@@ -330,8 +334,9 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
     else handleStartExamPractice(nextMode, examScope, 'home')
   }
 
-  const handleOpenModeFromCollection = (nextMode) => {
+  const handleOpenModeFromCollection = (nextMode, collection) => {
     if (nextMode === 'learn') handleStartPlanLearning()
+    else if (collection) collectionPractice.open(collection.source, collection.words, nextMode)
     else handleStartExamPractice(nextMode, examScope, 'home')
   }
 
@@ -393,6 +398,6 @@ export function useStudyNavigation(navigationState, learning, catalog, overview,
     handleRetryReading, handleSubmitReadingAssignment, handleOpenSuggestedReading, handleBackToStudyHub,
     handleBackToReadingList, handleOpenModeFromReading, handleOpenModeFromHome, handleOpenModeFromCollection,
     handleLearningBack, markAsLearned, markAsMastered, markLearnedWordAsMastered, markMasteredWordAsLearned,
-    resetProgress, ...vocabularyNavigation,
+    resetProgress, collectionPractice, ...vocabularyNavigation,
   }
 }

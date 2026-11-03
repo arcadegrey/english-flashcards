@@ -133,10 +133,10 @@ export function useLearningProgress() {
     setStudyHistory(history => applyReadingCompletion(history, result, date))
   }
 
-  const recordAssessmentAnswer = (isCorrect) => {
+  const recordAssessmentAnswer = (isCorrect, category = studyPlanCategory) => {
     const date = getStudyDateKey()
-    setPlanExamActivity((activity) => recordPlanExamAnswer(activity, studyPlanCategory, isCorrect, date))
-    setStudyHistory(history => recordDailyExamAnswer(history, { category: studyPlanCategory, correct: isCorrect,
+    setPlanExamActivity((activity) => recordPlanExamAnswer(activity, category, isCorrect, date))
+    setStudyHistory(history => recordDailyExamAnswer(history, { category, correct: isCorrect,
       date, legacy: planExamActivity }))
   }
 

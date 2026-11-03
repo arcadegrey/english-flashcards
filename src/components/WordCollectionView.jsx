@@ -9,6 +9,8 @@ import { matchesVocabularyQuery } from '../../shared/vocabularyAliases.js';
 import { RETIRED_VOCABULARY, isRetiredVocabularyId } from '../../shared/retiredVocabulary.js';
 import { resolveCollectionWords } from '../utils/collectionVocabulary.js';
 import '../styles/study-collection.css';
+import { PrimaryButton } from './ui/Buttons';
+import { collectionPracticeWords, readCollectionDrafts } from '../utils/collectionPractice.js';
 
 const SearchIcon = (
   <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -50,6 +52,7 @@ function WordCollectionView({
   topbarProps,
   active = 'review',
   emptyArtSrc = '/images/ui-assets/training-card-review-blue-v1.png',
+  practiceSource, practiceOwner, onStartPractice, practiceBusy = false, practiceError = '',
 }) {
   const words = useMemo(() => resolveCollectionWords(activeWords, wordIds, RETIRED_VOCABULARY), [activeWords, wordIds]);
   const [query, setQuery] = useState('');
@@ -64,6 +67,9 @@ function WordCollectionView({
 
     return words.filter((word) => matchesVocabularyQuery(word, keyword));
   }, [query, words]);
+  const practiceWords = useMemo(() => practiceSource ? collectionPracticeWords(filteredWords) : [], [practiceSource, filteredWords]);
+  const hasPracticeDraft = practiceSource && Object.values(readCollectionDrafts(practiceOwner, practiceSource)).some(Boolean);
+  const openMode = nextMode => onOpenMode?.(nextMode, practiceSource ? { source: practiceSource, words: practiceWords } : undefined);
 
   const safeCurrentIndex =
     filteredWords.length > 0 ? Math.min(currentIndex, filteredWords.length - 1) : 0;
@@ -215,14 +221,23 @@ function WordCollectionView({
             </svg>
             <span>发音</span>
           </button>
+          {practiceSource && <PrimaryButton loading={practiceBusy} disabled={loading || !practiceWords.length && !hasPracticeDraft}
+            aria-label="定向练习" onClick={() => onStartPractice?.(practiceSource, practiceWords)}>
+            定向练习 · {practiceWords.length} 词
+          </PrimaryButton>}
           <QuickMenu
             mode={mode}
-            onOpenMode={onOpenMode}
+            onOpenMode={openMode}
             onOpenReading={onOpenReading}
             onSlowSpeechChange={setToast}
             extraItems={quickMenuExtraItems}
           />
         </div>
+
+        {practiceSource && practiceError && <p className="classroom-alert" role="alert">{practiceError}</p>}
+        {practiceSource && filteredWords.length > practiceWords.length && <p className="classroom-helper">
+          {filteredWords.length - practiceWords.length} 个历史或不可练习词条保留展示，不加入新的定向练习。
+        </p>}
 
         {showSearch && (
           <section className="collection-search-panel">

@@ -16,6 +16,8 @@ export default function AppPages(features) {
     case 'learn':
     case 'readingSession':
     case 'examPractice':
+    case 'collectionPractice':
+    case 'collectionAssessment':
       return renderLearningPage(features)
     case 'classroom':
     case 'wordAssignment':

@@ -1,54 +1,13 @@
 import LoadingState from './ui/LoadingState';
 import { useRef } from 'react';
-import { BaseCard, ModuleCard } from './ui/Cards';
+import { BaseCard } from './ui/Cards';
+import ExamModeGrid from './assessment/ExamModeGrid';
 import { SecondaryButton } from './ui/Buttons';
 import '../styles/test-workspace.css';
 import AppLayout from './layout/AppLayout';
 import QuickMenu from './QuickMenu';
 import ExamHistoryPanel from './assessment/ExamHistoryPanel';
 
-const EXAM_MODES = [
-  {
-    id: 'quiz',
-    iconSrc: '/images/ui-assets/exam-mode-quiz-blue-v1.png',
-    title: '测验',
-    meta: '选择正确释义',
-    helper: '看单词，选择对应的中文释义。',
-    tone: 'blue',
-  },
-  {
-    id: 'fillblank',
-    iconSrc: '/images/ui-assets/exam-mode-fillblank-violet-v1.png',
-    title: '填空',
-    meta: '根据例句补全单词',
-    helper: '结合例句，找出缺少的单词。',
-    tone: 'violet',
-  },
-  {
-    id: 'spelling',
-    iconSrc: '/images/ui-assets/exam-mode-spelling-cyan-v1.png',
-    title: '拼写',
-    meta: '听发音拼写单词',
-    helper: '播放发音，输入你听到的单词。',
-    tone: 'cyan',
-  },
-  {
-    id: 'matching',
-    iconSrc: '/images/ui-assets/exam-mode-matching-orange-v1.png',
-    title: '连线',
-    meta: '单词和释义配对',
-    helper: '将一组单词与释义逐一配对。',
-    tone: 'orange',
-  },
-  {
-    id: 'dictation',
-    iconSrc: '/images/ui-assets/exam-mode-spelling-cyan-v1.png',
-    title: '句子听写',
-    meta: '精听例句 · 写下整句',
-    helper: '重播、慢速听音，答后逐词核对。',
-    tone: 'blue',
-  },
-];
 
 const EXAM_SCOPES = [
   {
@@ -170,12 +129,8 @@ function ExamPracticeView({
           {isPreparing && <LoadingState variant="inline" className="test-preparation" title={`正在准备${categoryName === '全部单词' ? '全范围词库' : categoryName}`} />}
           {preparationError && <div className="test-preparation is-error" role="alert"><span>{preparationError}</span><SecondaryButton onClick={onRetryPreparation}>重试</SecondaryButton></div>}
           {!isPreparing && !preparationError && selectedScopeCount === 0 && <p className="test-preparation" role="status">当前范围暂无单词，可以切换范围后继续。</p>}
-          <div className="test-mode-grid">
-            {EXAM_MODES.map(item => <ModuleCard key={item.id} variant={item.tone} data-prepare-view="assessment"
-              title={item.title} meta={<><span className="test-mode-meta">{item.meta}</span><span className="test-mode-helper">{item.helper}</span></>}
-              iconSrc={item.iconSrc} disabled={isPreparing || selectedScopeCount === 0}
-              onClick={() => onSelectMode?.(item.id, selectedScope)} />)}
-          </div>
+          <ExamModeGrid disabled={isPreparing || selectedScopeCount === 0}
+            onSelectMode={nextMode => onSelectMode?.(nextMode, selectedScope)} />
         </BaseCard>
         <ExamHistoryPanel />
       </div>

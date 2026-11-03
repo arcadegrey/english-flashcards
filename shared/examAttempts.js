@@ -1,5 +1,6 @@
 import { WORD_ASSIGNMENT_CATEGORIES } from './wordAssignments.js';
 import { DICTATION_MAX_LENGTH, evaluateDictation, isDictationExample } from './dictation.js';
+import { normalizeCollectionFocus } from './collectionPractice.js';
 
 export const EXAM_MODE_LABELS = { quiz: '选择测验', fillblank: '例句填空', spelling: '听音拼写', matching: '单词配对', dictation: '句子听写' };
 export const EXAM_ROUND_SIZE = 20;
@@ -14,6 +15,8 @@ export function createExamAttempt(value, catalog, dictationCatalog) {
   const start = Date.parse(value.startedAt), end = Date.parse(value.completedAt);
   if (!Number.isFinite(start) || !Number.isFinite(end) || end < start || end > Date.now() + 300000) throw new Error('测试时间无效。');
   if (!Array.isArray(value.answers) || !value.answers.length || value.answers.length > EXAM_ROUND_SIZE) throw new Error('每组测试需记录 1–20 次答题。');
+  const focus = value.focus === undefined ? null : normalizeCollectionFocus(value.focus);
+  if (focus && (value.category !== 'all' || value.scope !== 'all')) throw new Error('定向练习不能混用计划测试范围。');
   const lookup = catalog && new Map(catalog.map(word => [String(word.id), word]));
   const answers = value.answers.map(answer => {
     const word = lookup ? lookup.get(String(answer?.wordId)) : answer;
@@ -43,15 +46,23 @@ export function createExamAttempt(value, catalog, dictationCatalog) {
     return { wordId, word: word.word, meaning: word.meaning,
       ...(value.mode === 'spelling' ? { input } : { selectedWordId: input }), correct };
   });
+  if (focus && new Set(answers.map(answer => answer.wordId)).size > focus.wordCount) throw new Error('定向练习词数与答题记录不符。');
   return { id: value.id, mode: value.mode, category: value.category, scope: value.scope,
     startedAt: new Date(start).toISOString(), completedAt: new Date(end).toISOString(), answers,
-    questionsAnswered: answers.length, questionsCorrect: answers.filter(answer => answer.correct).length };
+    questionsAnswered: answers.length, questionsCorrect: answers.filter(answer => answer.correct).length,
+    ...(focus ? { focus } : {}) };
 }
 
 export function mergeExamAttempts(...lists) {
   const map = new Map();
   for (const value of lists.flat()) {
-    try { const attempt = createExamAttempt(value); map.set(attempt.id, attempt); } catch { /* Ignore damaged cache entries. */ }
+    try {
+      const attempt = createExamAttempt(value), previous = map.get(attempt.id);
+      // An old client can omit additive provenance without erasing a newer copy.
+      if (!attempt.focus && previous?.focus && ['mode', 'category', 'scope', 'startedAt', 'completedAt']
+        .every(field => previous[field] === attempt[field])) attempt.focus = previous.focus;
+      map.set(attempt.id, attempt);
+    } catch { /* Ignore damaged cache entries. */ }
   }
   return [...map.values()].sort((a, b) => b.completedAt.localeCompare(a.completedAt) || a.id.localeCompare(b.id));
 }

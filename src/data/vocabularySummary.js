@@ -1,4 +1,4 @@
-import { buildHiddenSentence } from '../utils/assessmentRounds.js'
+import { buildHiddenSentence } from '../../shared/sentenceBlank.js'
 
 export function summarizeVocabularyWord(word) {
   const summary = { ...word, exampleDeferred: true }

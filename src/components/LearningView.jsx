@@ -10,6 +10,7 @@ import { gsap, prefersReducedMotion, useGSAP } from '../utils/gsapMotion';
 import { calculateStudyStreak, getWeekStudyDays } from '../utils/learningMetrics';
 import { getExamVocabulary, getPlanVocabulary } from '../utils/studyPlan';
 import { getCategoryById } from '../data/categories';
+import { COLLECTION_PRACTICE_SOURCES } from '../../shared/collectionPractice.js';
 import '../styles/study-word.css';
 
 const AssessmentSession = lazy(loadAssessmentSession);
@@ -51,17 +52,19 @@ function LearningView({
   onUserClick,
   userLabel = '学习者',
   studyHistory = [],
+  focusedPractice,
 }) {
   const [hintOpenForWordId, setHintOpenForWordId] = useState(null);
   const [toast, setToast] = useState('');
   const mainRef = useRef(null);
 
-  const examOptionVocabulary = useMemo(() => getPlanVocabulary(allVocabulary, examCategory), [allVocabulary, examCategory]);
+  const examOptionVocabulary = useMemo(() => focusedPractice?.words || getPlanVocabulary(allVocabulary, examCategory), [allVocabulary, examCategory, focusedPractice?.words]);
   const examVocabulary = useMemo(() => {
+    if (focusedPractice) return focusedPractice.words;
     // Recording an answer must not replace the full-category pool and reset the round.
     if (examScope === 'all') return examOptionVocabulary;
     return getExamVocabulary(examOptionVocabulary, { scope: examScope, learnedWords, masteredWords });
-  }, [examOptionVocabulary, examScope, learnedWords, masteredWords]);
+  }, [examOptionVocabulary, examScope, learnedWords, masteredWords, focusedPractice]);
   const examCategoryName = getCategoryById(examCategory).name;
   const examSourceLabel =
     examScope === 'mastered'
@@ -69,8 +72,9 @@ function LearningView({
       : examScope === 'all'
         ? examCategory === 'all' ? '全范围随机' : `${examCategoryName}随机`
         : '已学习范围';
-  const examSourceTitle = examCategory === 'all' || examScope === 'all'
-    ? examSourceLabel : `${examCategoryName} · ${examSourceLabel}`;
+  const examSourceTitle = focusedPractice
+    ? `${COLLECTION_PRACTICE_SOURCES[focusedPractice.snapshot.source]} · 定向练习`
+    : examCategory === 'all' || examScope === 'all' ? examSourceLabel : `${examCategoryName} · ${examSourceLabel}`;
 
   const totalCount = mode === 'learn' ? filteredVocabulary.length : examVocabulary.length;
   const progressCurrent = totalCount > 0 ? Math.min(currentIndex + 1, totalCount) : 0;
@@ -221,7 +225,7 @@ function LearningView({
       <main ref={mainRef} className="learn-refresh-main learn-refresh-main--assessment">
         <section className={`assessment-study-shell test-workspace is-${mode}`} aria-label="测试进行中">
           <AssessmentSession
-            key={`${mode}:${examCategory}:${examScope}`}
+            key={`${mode}:${examCategory}:${examScope}${focusedPractice ? `:${focusedPractice.snapshot.key}` : ''}`}
             mode={mode}
             category={examCategory}
             scope={examScope}
@@ -233,6 +237,7 @@ function LearningView({
             onWrongAnswer={onWrongAnswer}
             onAnswer={onAssessmentAnswer}
             onBack={onBack}
+            collectionSnapshot={focusedPractice?.snapshot}
           />
         </section>
       </main>

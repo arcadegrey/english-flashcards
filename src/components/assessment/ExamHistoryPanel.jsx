@@ -7,6 +7,7 @@ import { formatClassroomDate } from '../../utils/classroom';
 import '../../styles/classroom.css';
 import DictationFeedback from './DictationFeedback';
 import '../../styles/sentence-dictation.css';
+import { COLLECTION_PRACTICE_SOURCES } from '../../../shared/collectionPractice.js';
 
 export function ExamAttemptList({ attempts = [] }) {
   const [page, setPage] = useState(1);
@@ -14,8 +15,8 @@ export function ExamAttemptList({ attempts = [] }) {
   const currentPage = Math.min(page, pages);
   return <>
     {attempts.length ? attempts.slice((currentPage - 1) * 10, currentPage * 10).map(attempt => <details key={attempt.id} className="reading-review-detail">
-      <summary>{EXAM_MODE_LABELS[attempt.mode]} · {WORD_ASSIGNMENT_CATEGORIES[attempt.category]} · {Math.round(attempt.questionsCorrect / attempt.questionsAnswered * 100)}%（{attempt.questionsCorrect}/{attempt.questionsAnswered} 次） · {formatClassroomDate(attempt.completedAt)}</summary>
-      <p className="classroom-helper">范围：{({ all: '随机抽测', learned: '已学习', mastered: '标记认识' })[attempt.scope]} · {attempt.questionsAnswered < 20 ? '提前结束' : '完成一组'}</p>
+      <summary>{EXAM_MODE_LABELS[attempt.mode]} · {attempt.focus ? `${COLLECTION_PRACTICE_SOURCES[attempt.focus.source]}定向` : attempt.practiceKind === 'collection' ? '定向练习' : WORD_ASSIGNMENT_CATEGORIES[attempt.category]} · {Math.round(attempt.questionsCorrect / attempt.questionsAnswered * 100)}%（{attempt.questionsCorrect}/{attempt.questionsAnswered} 次） · {formatClassroomDate(attempt.completedAt)}</summary>
+      <p className="classroom-helper">范围：{attempt.focus ? `选定列表 ${attempt.focus.wordCount} 词` : attempt.practiceKind === 'collection' ? '定向词表' : ({ all: '随机抽测', learned: '已学习', mastered: '标记认识' })[attempt.scope]} · {attempt.questionsAnswered < 20 ? '提前结束' : '完成一组'}</p>
       <ul className="classroom-assignment-list">{attempt.answers.map((answer, index) => <li key={index}>
         <div><strong lang="en">{attempt.mode === 'dictation' ? answer.example : answer.word}</strong><p>{attempt.mode === 'dictation' ? answer.exampleCn : answer.meaning}</p>{['spelling', 'dictation'].includes(attempt.mode) && <p>输入：<span lang="en">{answer.input || '未填写'}</span></p>}{attempt.mode === 'dictation' && <><p className="classroom-helper">{answer.hintUsed ? '使用中文提示' : '未使用中文提示'}{answer.revealed ? ' · 查看原文' : ''}</p><DictationFeedback example={answer.example} input={answer.input} /></>}</div>
         <span className={`classroom-badge ${answer.correct ? 'is-mastered' : 'is-wrong'}`}>{answer.correct ? '正确' : '需巩固'}</span>
@@ -25,12 +26,12 @@ export function ExamAttemptList({ attempts = [] }) {
   </>;
 }
 
-export default function ExamHistoryPanel() {
+export default function ExamHistoryPanel({ source } = {}) {
   const history = useExamHistory();
   return <section className="exam-scope-card ds-card test-history-panel" aria-label="我的测试成绩">
-    <div className="classroom-heading"><div><h3>我的测试成绩</h3><p>查看最近 100 次练习的成绩与答题记录。</p></div>{history.ownerId && <SecondaryButton loading={history.busy} disabled={history.busy} onClick={history.sync}>{history.busy ? '同步中…' : '同步成绩'}</SecondaryButton>}</div>
+    <div className="classroom-heading"><div><h3>{source ? `${COLLECTION_PRACTICE_SOURCES[source]}练习成绩` : '我的测试成绩'}</h3><p>查看最近 100 次练习的成绩与答题记录。</p></div>{history.ownerId && <SecondaryButton loading={history.busy} disabled={history.busy} onClick={history.sync}>{history.busy ? '同步中…' : '同步成绩'}</SecondaryButton>}</div>
     <p className="classroom-helper">{!history.ownerId ? '访客成绩仅保存在当前设备，与登录账号分开。' : history.pending.length ? `${history.pending.length} 次成绩待同步，已保留本机记录。` : '已同步的成绩可由当前班级老师查看。'} 自主练习允许提示和重试，成绩用于学习反馈。</p>
     {history.error && <p role="alert" className="classroom-alert">{history.error} 请点击同步成绩重试。</p>}
-    <ExamAttemptList attempts={history.attempts} />
+    <ExamAttemptList attempts={source ? history.attempts.filter(attempt => attempt.focus?.source === source) : history.attempts} />
   </section>;
 }

@@ -8,6 +8,7 @@ import { checkPwaUpgrade } from './check-pwa-upgrade.mjs'
 import { checkPasswordAuth } from './check-password-auth-browser.mjs'
 import { checkReadingSession } from './check-reading-session-browser.mjs'
 import { checkLearningPages } from './check-learning-pages-browser.mjs'
+import { checkCollectionPractice } from './check-collection-practice-browser.mjs'
 
 await mkdir('output/browser-ci', { recursive: true })
 const releaseB = path.resolve('output/browser-ci/release-b')
@@ -54,6 +55,7 @@ try {
   const password = await runStage('password', () => checkPasswordAuth(browser))
   const reading = await runStage('reading', () => checkReadingSession(browser))
   const learning = await runStage('learning', () => checkLearningPages(browser))
+  const collection = await runStage('collection', () => checkCollectionPractice(browser))
   await writeFile('output/browser-ci/results.json', JSON.stringify(report, null, 2))
-  console.log(`Browser CI passed: ${delivery.passed} delivery + ${upgrade.passed} upgrade + ${password.passed} password + ${reading.passed} reading + ${learning.passed} learning assertions`)
+  console.log(`Browser CI passed: ${delivery.passed} delivery + ${upgrade.passed} upgrade + ${password.passed} password + ${reading.passed} reading + ${learning.passed} learning + ${collection.passed} collection assertions`)
 } finally { await browser?.close(); await site.close() }

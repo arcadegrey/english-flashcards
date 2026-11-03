@@ -33,7 +33,7 @@ function AppContent() {
   useNavigationIntent(`${account.authUser?.id || 'guest'}:${navigation.view}:${learning.studyPlanCategory}`,
     catalog.vocabularyLoading || !overview.planDataReady || overview.planPreparing || navigation.examPreparing
       || navigation.vocabularyPreparing || Boolean(account.authTransition)
-      || ['learn', 'readingSession', 'wordAssignment'].includes(navigation.view))
+      || ['learn', 'readingSession', 'wordAssignment', 'collectionPractice', 'collectionAssessment'].includes(navigation.view))
   const [showVoiceSettings, setShowVoiceSettings] = useState(false)
   const update = usePwaUpdateSafety(catalog.vocabularyLoading || account.authLoading
     || navigation.examPreparing || overview.planPreparing || navigation.vocabularyPreparing

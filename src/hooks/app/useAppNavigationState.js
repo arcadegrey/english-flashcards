@@ -21,6 +21,7 @@ export function useAppNavigationState() {
   const [readingRetry, setReadingRetry] = useState(null)
   const [assignmentReturnView, setAssignmentReturnView] = useState('studyHub')
   const [homePanelRequest, setHomePanelRequest] = useState({ panel: '', nonce: 0 })
+  const [collectionRoute, setCollectionRoute] = useState(null)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [shuffledWords, setShuffledWords] = useState([])
   const pendingStartWordIdRef = useRef(null)
@@ -32,7 +33,7 @@ export function useAppNavigationState() {
     selectedToeflList, setSelectedToeflList, selectedIeltsTopic, setSelectedIeltsTopic, selectedIeltsList,
     setSelectedIeltsList, selectedReadingId, setSelectedReadingId, activeReadingAssignment,
     setActiveReadingAssignment, activeWordAssignment, setActiveWordAssignment, readingRetry, setReadingRetry,
-    assignmentReturnView, setAssignmentReturnView, homePanelRequest, setHomePanelRequest, currentIndex,
+    assignmentReturnView, setAssignmentReturnView, homePanelRequest, setHomePanelRequest, collectionRoute, setCollectionRoute, currentIndex,
     setCurrentIndex, shuffledWords, setShuffledWords, pendingStartWordIdRef,
   }
 }

@@ -257,3 +257,6 @@
   .test-center *, .test-workspace * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .test-center .test-mode-grid .ds-module-card:hover:not(:disabled) { transform: none; }
 }
+.collection-practice-mode { display: grid; gap: 8px; align-content: start; min-width: 0; }
+.collection-practice-mode > .ds-module-card { width: 100%; }
+.collection-practice-mode > .ds-button { min-width: 0; padding-inline: 12px; font-size: 12px; }

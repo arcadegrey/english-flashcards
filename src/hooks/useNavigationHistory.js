@@ -4,10 +4,10 @@ const NAVIGATION_STATE_KEY = 'english_flashcards_navigation_v1'
 
 // Browser history mirrors view state; it never restores assignment sessions or learning data.
 export function useNavigationHistory({
-  view, mode, selectedCategory, selectedToeflLevel, selectedToeflList, selectedIeltsTopic, selectedIeltsList, selectedReadingId,
+  view, mode, selectedCategory, selectedToeflLevel, selectedToeflList, selectedIeltsTopic, selectedIeltsList, selectedReadingId, collectionRoute,
 }, {
   setView, setMode, setSelectedCategory, setSelectedToeflLevel, setSelectedToeflList, setSelectedIeltsTopic, setSelectedIeltsList, setSelectedReadingId,
-  setActiveReadingAssignment, setActiveWordAssignment, setReadingRetry, setHomePanelRequest,
+  setActiveReadingAssignment, setActiveWordAssignment, setReadingRetry, setHomePanelRequest, setCollectionRoute,
 }) {
   const historyReadyRef = useRef(false)
   const restoringFromHistoryRef = useRef(false)
@@ -35,6 +35,7 @@ export function useNavigationHistory({
       restoringFromHistoryRef.current = true
 
       if (!state || state.__appNavigation !== NAVIGATION_STATE_KEY) {
+        setCollectionRoute?.(null)
         setView('studyHub')
         setMode('learn')
         setSelectedCategory('all')
@@ -49,6 +50,7 @@ export function useNavigationHistory({
       setActiveReadingAssignment(null)
       setActiveWordAssignment(null)
       setReadingRetry(null)
+      setCollectionRoute?.(state.collectionRoute || null)
       const restoredView = typeof state.view === 'string' ? state.view : 'studyHub'
       if (restoredView === 'readingList') {
         setHomePanelRequest((request) => ({ panel: 'reading', nonce: request.nonce + 1 }))
@@ -71,7 +73,7 @@ export function useNavigationHistory({
     return () => {
       window.removeEventListener('popstate', handlePopState)
     }
-  }, [setView, setMode, setSelectedCategory, setSelectedToeflLevel, setSelectedToeflList, setSelectedIeltsTopic, setSelectedIeltsList, setSelectedReadingId, setActiveReadingAssignment, setActiveWordAssignment, setReadingRetry, setHomePanelRequest])
+  }, [setView, setMode, setSelectedCategory, setSelectedToeflLevel, setSelectedToeflList, setSelectedIeltsTopic, setSelectedIeltsList, setSelectedReadingId, setActiveReadingAssignment, setActiveWordAssignment, setReadingRetry, setHomePanelRequest, setCollectionRoute])
 
   useEffect(() => {
     if (typeof window === 'undefined' || !historyReadyRef.current) return
@@ -86,6 +88,7 @@ export function useNavigationHistory({
       selectedIeltsTopic,
       selectedIeltsList,
       selectedReadingId,
+      ...(collectionRoute ? { collectionRoute } : {}),
     }
 
     if (restoringFromHistoryRef.current) {
@@ -109,11 +112,12 @@ export function useNavigationHistory({
       currentState.selectedToeflList === nextState.selectedToeflList &&
       currentState.selectedIeltsTopic === nextState.selectedIeltsTopic &&
       currentState.selectedIeltsList === nextState.selectedIeltsList &&
-      currentState.selectedReadingId === nextState.selectedReadingId
+      currentState.selectedReadingId === nextState.selectedReadingId &&
+      JSON.stringify(currentState.collectionRoute || null) === JSON.stringify(nextState.collectionRoute || null)
 
     if (isSameState) return
     window.history.pushState(nextState, '', window.location.href)
-  }, [view, mode, selectedCategory, selectedToeflLevel, selectedToeflList, selectedIeltsTopic, selectedIeltsList, selectedReadingId])
+  }, [view, mode, selectedCategory, selectedToeflLevel, selectedToeflList, selectedIeltsTopic, selectedIeltsList, selectedReadingId, collectionRoute])
 
   useEffect(() => {
     if (typeof window === 'undefined') return

@@ -92,7 +92,7 @@ export default defineConfig({
             name: 'shell-shared',
             // These small UI/identity helpers already belong to the eager shell.
             // Keep pages, large catalogs, audio mappings and GSAP lazy.
-            test: /\/(?:src\/(?:components\/(?:layout\/|ui\/)|utils\/(?:vocabularyMerge|vocabularyAliases|wordCategories|readingText|learningMetrics|studyRewards|classroom)\.js$)|shared\/(?:planPreferences|studyHistory|studyRewards|readingAttempts)\.js$)/,
+            test: /\/(?:src\/(?:components\/(?:layout\/|ui\/)|utils\/(?:(?:vocabularyMerge|vocabularyAliases|wordCategories|readingText|learningMetrics|studyRewards|classroom|storage)\.js$|storage\/))|shared\/(?:planPreferences|studyHistory|studyRewards|readingAttempts|collectionPractice|sentenceBlank)\.js$)/,
             includeDependenciesRecursively: false,
           }],
         },

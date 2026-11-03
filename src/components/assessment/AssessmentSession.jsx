@@ -12,14 +12,18 @@ import { EXAM_ROUND_SIZE, EXAM_MODE_LABELS, createExamAttempt } from '../../../s
 import { useExamHistory } from '../../context/exam-history-context';
 import { examDraftKey } from '../../utils/examHistory';
 import { practiceVocabulary } from '../../../shared/vocabularyPracticePolicy.js';
+import { collectionDraftKey, collectionFocus, readCollectionDraft } from '../../utils/collectionPractice.js';
 import '../../styles/study-assessment.css';
 import '../../styles/test-workspace.css';
 
 function readDraft(key, meta, history) {
   try {
-    const saved = JSON.parse(localStorage.getItem(key));
+    const saved = meta.collectionSnapshot
+      ? readCollectionDraft(history.ownerId, meta.collectionSnapshot.source, meta.mode)
+      : JSON.parse(localStorage.getItem(key));
     if (saved && Array.isArray(saved.answers) && saved.mode === meta.mode && saved.category === meta.category && saved.scope === meta.scope && !history.attempts.some(item => item.id === saved.id)) {
-      if (saved.answers.length || meta.mode !== 'dictation') createExamAttempt({ ...saved, completedAt: new Date().toISOString() });
+      if (meta.collectionSnapshot && saved.collectionSnapshot.key !== meta.collectionSnapshot.key) throw new Error('草稿词表不同。');
+      if (saved.answers.length || !meta.collectionSnapshot && meta.mode !== 'dictation') createExamAttempt({ ...saved, completedAt: new Date().toISOString() });
       else if (typeof saved.id !== 'string' || !/^[\w-]{1,80}$/.test(saved.id) || !Number.isFinite(Date.parse(saved.startedAt))) throw new Error('无效草稿');
       return saved;
     }
@@ -27,10 +31,12 @@ function readDraft(key, meta, history) {
   return { ...meta, id: crypto.randomUUID(), startedAt: new Date().toISOString(), answers: [] };
 }
 
-export default function AssessmentSession({ mode, category, scope, vocabulary, optionVocabulary, sourceLabel, onAddMastered, onWrongAnswer, onAnswer, onBack, tools }) {
+export default function AssessmentSession({ mode, category, scope, vocabulary, optionVocabulary, sourceLabel, onAddMastered, onWrongAnswer, onAnswer, onBack, tools, collectionSnapshot }) {
   const history = useExamHistory();
-  const key = examDraftKey(history.ownerId, mode, category, scope);
-  const [draft, setDraft] = useState(() => readDraft(key, { mode, category, scope }, history));
+  const key = collectionSnapshot ? collectionDraftKey(history.ownerId, collectionSnapshot.source, mode)
+    : examDraftKey(history.ownerId, mode, category, scope);
+  const meta = { mode, category, scope, ...(collectionSnapshot ? { collectionSnapshot, focus: collectionFocus(collectionSnapshot) } : {}) };
+  const [draft, setDraft] = useState(() => readDraft(key, meta, history));
   const latest = useRef(draft);
   // Keep the scope stable as correct answers update learned/mastered membership.
   const [pool] = useState(() => practiceVocabulary(vocabulary));
@@ -73,7 +79,11 @@ export default function AssessmentSession({ mode, category, scope, vocabulary, o
     if (latest.current.answers.length >= EXAM_ROUND_SIZE) finish();
   };
   const nextRound = () => {
-    const next = { mode, category, scope, id: crypto.randomUUID(), startedAt: new Date().toISOString(), answers: [] };
+    const next = { ...meta, id: crypto.randomUUID(), startedAt: new Date().toISOString(), answers: [] };
+    if (collectionSnapshot) {
+      try { localStorage.setItem(key, JSON.stringify(next)); }
+      catch { setError('新一组未保存，请释放空间后重试。'); return; }
+    }
     latest.current = next; setDraft(next); setResult(null);
   };
   const count = draft.answers.length;

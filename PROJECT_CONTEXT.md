@@ -6,6 +6,10 @@ Vite + React English learning app for flashcards, tests, spelling, matching, rea
 
 This file is intentionally short for Codex startup context. Detailed data/audio/import/Worker notes live in `docs/project-reference.md`.
 
+## Personal collection practice (2026-11-03, local only)
+
+Wrong words, bookmarks and today's review now capture their filtered active-word list for all five assessment modes. Questions/options stay in that snapshot while live memberships change; each account/source/mode has an independent local draft with explicit continue or replacement. Finished results use the existing offline/cloud queue with optional compact provenance; teachers receive a generic collection label rather than private bookmark provenance. Global assessment counts update without crediting an unrelated category plan. Ordinary exam drafts remain independent. 505 Node tests, 199 browser assertions, lint/build/PWA, budgets, 6 timezone checks and Worker dry-run pass; desktop/mobile/dark screenshots inspected. No D1 migration or new environment variables; publish frontend and Worker together. Committed locally at the user's request; not pushed or deployed. Contract, compatibility and validation: [docs/collection-practice-2026-11-03.md](docs/collection-practice-2026-11-03.md).
+
 ## CI / mobile training scroll follow-up (2026-11-03)
 
 `9fc28fe` / Actions #175 passed engineering checks but failed the last mobile navigation browser assertion; deployment was skipped. A stale word/reading `homePanelRequest` replayed after the first top reset (stable reproduction: 0 then 526px). Generic training entry now clears that intent; dedicated word/reading entry behavior stays intact. The stronger five-frame regression passes both paths; local 490 tests, 144 browser assertions and engineering checks pass. Browser stages now persist partial success/failure diagnostics. The user authorized fixing and pushing this release blocker; production status requires the fix commit's quality and deploy receipts. Evidence: [docs/ci-mobile-training-scroll-2026-11-03.md](docs/ci-mobile-training-scroll-2026-11-03.md).

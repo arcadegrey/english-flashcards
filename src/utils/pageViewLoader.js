@@ -9,6 +9,8 @@ export const loadCollectionView = page(() => import('../components/WordCollectio
 export const loadReadingView = page(() => import('../components/ReadingSessionView.jsx'))
 export const loadExamView = page(() => import('../components/ExamPracticeView.jsx'))
 export const loadPlanView = page(() => import('../components/PlanSettingsView.jsx'))
+export const loadCollectionPracticeView = page(() => import('../components/assessment/CollectionPracticeView.jsx'))
+export const loadCollectionAssessmentView = page(() => import('../components/assessment/CollectionAssessmentPage.jsx'))
 
 const loaders = { home: loadHomeView, statistics: loadStatisticsView, collection: loadCollectionView,
   readingSession: loadReadingView, examPractice: loadExamView, planSettings: loadPlanView,

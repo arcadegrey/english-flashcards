@@ -1,4 +1,5 @@
 import { WordCollectionView } from './pageComponents'
+import { COLLECTION_PRACTICE_SOURCES } from '../../../shared/collectionPractice.js'
 
 export function renderWordCollectionPage({ navigation, learning, catalog, overview, account, shell }) {
   const commonProps = {
@@ -9,6 +10,11 @@ export function renderWordCollectionPage({ navigation, learning, catalog, overvi
     onOpenReading: navigation.handleOpenReadingList,
     navItems: shell.selectionNavItems,
     topbarProps: shell.selectionTopbarProps,
+    practiceSource: Object.hasOwn(COLLECTION_PRACTICE_SOURCES, navigation.view) ? navigation.view : undefined,
+    practiceOwner: navigation.collectionPractice.owner,
+    onStartPractice: navigation.collectionPractice.open,
+    practiceBusy: Boolean(navigation.collectionPractice.preparation?.loading),
+    practiceError: navigation.collectionPractice.preparation?.error || '',
   }
   switch (navigation.view) {
     case 'savedWords':

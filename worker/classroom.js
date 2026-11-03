@@ -148,7 +148,12 @@ export const handleClassroomApi = async (request, env, user) => {
       JOIN class_memberships m ON m.student_id=e.user_id AND m.class_id=?
       JOIN classes c ON c.id=m.class_id AND c.teacher_id=?
       WHERE e.user_id=? ORDER BY e.completed_at DESC, e.id LIMIT 100`).bind(classId, user.id, studentId).all();
-    return json({ student: summary(row), updatedAt: row.updated_at || '', examAttempts: attempts.results.map(item => JSON.parse(item.attempt_json)), progress: {
+    return json({ student: summary(row), updatedAt: row.updated_at || '', examAttempts: attempts.results.map(item => {
+      const attempt = JSON.parse(item.attempt_json);
+      // Share the practice result, not private bookmark/collection provenance.
+      if (attempt.focus) { delete attempt.focus; attempt.practiceKind = 'collection'; }
+      return attempt;
+    }), progress: {
       learnedWords, masteredWords, wrongWords,
       // Unstudied private custom words and unrelated scheduling entries are not shared.
       customWords: array(row.custom_words).filter((word) => tracked.has(String(word.id))),
