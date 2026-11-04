@@ -44,7 +44,7 @@ export const createVocabularyLoader = ({
     }
   }
 
-  const load = async (url, errorLabel, validate) => {
+  const load = async (url, errorLabel, validate, onProgress) => {
     const cacheKey = `${url}?v=${encodeURIComponent(version)}`
     const cached = await readCache(cacheKey, validate)
     if (cached) return cached
@@ -65,6 +65,7 @@ export const createVocabularyLoader = ({
           const touch = () => {
             clearTimeout(timer)
             timer = setTimeout(() => controller.abort(), timeoutMs)
+            onProgress?.()
           }
 
           controller.signal.throwIfAborted()
@@ -117,7 +118,7 @@ export const createVocabularyLoader = ({
     }
   }
 
-  const fetchJson = (url, errorLabel, validate = Array.isArray) => {
+  const fetchJson = (url, errorLabel, validate = Array.isArray, onProgress) => {
     if (memory.has(url)) {
       const data = memory.get(url)
       if (validate(data)) return Promise.resolve(data)
@@ -125,7 +126,7 @@ export const createVocabularyLoader = ({
     }
     if (pending.has(url)) return pending.get(url)
 
-    const request = load(url, errorLabel, validate)
+    const request = load(url, errorLabel, validate, onProgress)
       .then((data) => {
         memory.set(url, data)
         return data

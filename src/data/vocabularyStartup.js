@@ -12,8 +12,8 @@ export const fetchVocabularyJson = createVocabularyLoader({
 export const VOCABULARY_COUNTS = startup.counts
 export const hasBundledVocabularyId = createVocabularyMembership(startup.idRanges)
 export const loadCoreVocabularyCatalog = createCoreVocabularyPreparation({
-  loadPrimary: () => loadVocabularyCatalogEntry(
-    fetchVocabularyJson, startup.core, startup.coreCatalog, hasBundledVocabularyId,
+  loadPrimary: onProgress => loadVocabularyCatalogEntry(
+    fetchVocabularyJson, startup.core, startup.coreCatalog, hasBundledVocabularyId, onProgress,
   ),
   loadFallback: () => import('./coreVocabularyCatalog.json').then(module => module.default),
   count: startup.coreCatalog.count,

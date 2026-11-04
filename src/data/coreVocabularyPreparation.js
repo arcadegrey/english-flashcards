@@ -1,8 +1,8 @@
-// Keep the complete core readiness gate even when the public JSON route stalls.
+// Keep the complete core readiness gate and try the alternate route only when JSON stops progressing.
 // The alternate code chunk contains the same generated summaries and is PWA cached.
 export function createCoreVocabularyPreparation({
   loadPrimary, loadFallback, count, hasCoreWord,
-  fallbackDelayMs = 2000, fallbackTimeoutMs = 15000,
+  fallbackDelayMs = 2500, fallbackTimeoutMs = 15000,
 }) {
   let request
   const complete = words => Array.isArray(words) && words.length === count
@@ -47,8 +47,13 @@ export function createCoreVocabularyPreparation({
         deadlineTimer = setTimeout(() => finish(null, new Error('核心词库后备加载超时，请重试。')), fallbackTimeoutMs)
         Promise.resolve().then(loadFallback).then(words => finish(words), error => finish(null, error))
       }
-      delayTimer = setTimeout(startFallback, fallbackDelayMs)
-      Promise.resolve().then(loadPrimary).then(accept).catch(error => fail(true, error))
+      const waitForPrimaryProgress = () => {
+        if (settled || fallbackStarted) return
+        clearTimeout(delayTimer)
+        delayTimer = setTimeout(startFallback, fallbackDelayMs)
+      }
+      waitForPrimaryProgress()
+      Promise.resolve().then(() => loadPrimary(waitForPrimaryProgress)).then(accept).catch(error => fail(true, error))
     }).catch(error => { request = undefined; throw error })
     return request
   }

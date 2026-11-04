@@ -2,6 +2,8 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { createCoreVocabularyPreparation } from '../src/data/coreVocabularyPreparation.js'
+import { createVocabularyLoader } from '../src/data/vocabularyCache.js'
+import { loadVocabularyCatalogEntry } from '../src/data/vocabularyCatalogEntry.js'
 import { createVocabularyMembership } from '../src/data/vocabularyMembership.js'
 
 const words = [{ id: 1, word: 'one', meaning: '一' }, { id: 2, word: 'two', meaning: '二' }]
@@ -35,6 +37,43 @@ test('fast or legacy-cache primary results are shared and do not download the fa
   assert.strictEqual(await a, cached)
   assert.strictEqual(await load(), cached)
   assert.equal(calls, 1)
+})
+
+test('slow JSON transfers avoid a duplicate core download while bytes arrive, but recover after a stall', async t => {
+  t.mock.timers.enable({ apis: ['setTimeout'] })
+  const encode = new TextEncoder()
+  const json = JSON.stringify(words)
+  for (const stalled of [false, true]) {
+    let stream, fallbackCalls = 0
+    const fetchJson = createVocabularyLoader({
+      version: 'progress',
+      cacheStorage: null,
+      fetchImpl: async () => new Response(new ReadableStream({ start: controller => { stream = controller } })),
+    })
+    const load = prepare({
+      loadPrimary: onProgress => loadVocabularyCatalogEntry(
+        fetchJson, '/old-core.json', { path: '/core.json', count: 2 }, id => id === 1 || id === 2, onProgress,
+      ),
+      loadFallback: () => { fallbackCalls++; return words },
+    })
+    const request = load()
+    await nextTurn()
+    for (const chunk of [json.slice(0, 10), json.slice(10, 20)]) {
+      t.mock.timers.tick(4)
+      stream.enqueue(encode.encode(chunk))
+      await nextTurn()
+    }
+    assert.equal(fallbackCalls, 0)
+    if (stalled) {
+      t.mock.timers.tick(5)
+      assert.strictEqual(await request, words)
+    }
+    stream.enqueue(encode.encode(json.slice(20)))
+    stream.close()
+    assert.deepEqual(await request, words)
+    await nextTurn()
+    assert.equal(fallbackCalls, Number(stalled))
+  }
 })
 
 test('a stalled primary cannot strand bootstrap; the alternate route supplies the complete validated core', async () => {
